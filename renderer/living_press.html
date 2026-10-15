@@ -1,0 +1,234 @@
+<title>Living Press</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Special+Elite&display=swap">
+<style>
+/* Layout: a telegram band across the top, a dispatch list on the left, the three living cards side by side, then the press kit as copy slips. */
+:root {
+  --paper: #EDE4CF;
+  --slip: #F6F0E1;
+  --ink: #1A1612;
+  --ink-soft: #5A5246;
+  --navy: #3D5884;
+  --red: #B04A3E;
+  --rule: #CFC3A6;
+  --ok: #5E6B3A;
+  --s-battle: #B04A3E;
+  --s-home: #5E6B3A;
+  --s-blueprint: #3D5884;
+  --s-statecraft: #B8862B;
+  --display: "Oswald", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --type: "Special Elite", "Courier New", Courier, monospace;
+  --body: "Oswald", "Arial Narrow", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #1C1915; --slip: #26221C; --ink: #EDE4CF; --ink-soft: #B3A88F;
+    --navy: #93A9D0; --red: #D9796B; --rule: #403A30; --ok: #A3B178;
+    --s-battle: #D9796B; --s-home: #A3B178; --s-blueprint: #93A9D0; --s-statecraft: #D8A94F;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #1C1915; --slip: #26221C; --ink: #EDE4CF; --ink-soft: #B3A88F;
+  --navy: #93A9D0; --red: #D9796B; --rule: #403A30; --ok: #A3B178;
+  --s-battle: #D9796B; --s-home: #A3B178; --s-blueprint: #93A9D0; --s-statecraft: #D8A94F;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--paper); color: var(--ink); font-family: var(--body); font-weight: 400; line-height: 1.45; }
+.wrap { max-width: 1240px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+
+/* Top band */
+.band { border-bottom: 2px solid var(--ink); }
+.band .wrap { padding-block: 18px 14px; display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 8px 24px; }
+.word { font-family: var(--display); font-weight: 700; font-size: clamp(26px, 4vw, 38px); letter-spacing: .02em; line-height: 1; text-transform: uppercase; }
+.word small { display: block; font-family: var(--type); font-weight: 400; font-size: 15px; letter-spacing: .04em; color: var(--navy); text-transform: none; margin-top: 6px; }
+.band-note { font-family: var(--type); font-size: 13px; color: var(--ink-soft); }
+.priority { display: inline-block; background: var(--red); color: var(--paper); font-family: var(--display); font-weight: 600; font-size: 12px; letter-spacing: .14em; padding: 3px 8px; text-transform: uppercase; margin-right: 8px; }
+
+/* Main grid */
+.layout { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 32px; padding-block: 28px 56px; }
+@media (max-width: 860px) { .layout { grid-template-columns: minmax(0, 1fr); gap: 20px; } }
+
+.list-label, .h3 { font-family: var(--display); font-weight: 600; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-soft); }
+.list { display: flex; flex-direction: column; gap: 8px; margin-top: 10px; }
+@media (max-width: 860px) { .list { flex-direction: row; overflow-x: auto; padding-bottom: 4px; } .list button { min-width: 200px; } }
+.list button { text-align: left; font: inherit; color: inherit; background: transparent; border: 1px solid var(--rule); border-left: 4px solid var(--sc, var(--rule)); padding: 10px 12px; cursor: pointer; display: grid; gap: 2px; }
+.list button:hover { background: var(--slip); }
+.list button[aria-current="true"] { background: var(--slip); border-color: var(--ink); border-left-color: var(--sc); }
+.list .n { font-family: var(--type); font-size: 12px; color: var(--navy); }
+.list .t { font-family: var(--display); font-weight: 500; font-size: 15px; line-height: 1.2; }
+.list .d { font-family: var(--type); font-size: 12px; color: var(--ink-soft); }
+
+/* Dispatch header */
+.head { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px; align-items: start; border-bottom: 1px solid var(--rule); padding-bottom: 18px; }
+.serial { font-family: var(--type); color: var(--navy); font-size: 15px; }
+h1 { font-family: var(--display); font-weight: 700; font-size: clamp(30px, 4.6vw, 48px); line-height: 1.02; text-transform: uppercase; margin: 6px 0 10px; text-wrap: balance; letter-spacing: .01em; }
+.dateline { font-family: var(--display); font-weight: 600; font-size: 20px; letter-spacing: .04em; text-transform: uppercase; }
+.place { font-family: var(--type); color: var(--navy); font-size: 14px; margin-top: 2px; }
+.stamp { font-family: var(--display); font-weight: 700; text-transform: uppercase; letter-spacing: .1em; font-size: 15px; color: var(--sc); border: 3px solid var(--sc); padding: 6px 12px; transform: rotate(-4deg); margin-top: 8px; white-space: nowrap; opacity: .92; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.chip { font-family: var(--display); font-weight: 500; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; border: 1px solid var(--rule); padding: 3px 9px; color: var(--ink-soft); }
+.chip.ok { color: var(--ok); border-color: currentColor; }
+.chip.wait { color: var(--red); border-color: currentColor; }
+
+/* Videos */
+.sec { margin-top: 28px; }
+.sec-top { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px 16px; margin-bottom: 12px; }
+.reels { display: grid; grid-template-columns: 1.111fr .8fr .5625fr; gap: 16px; align-items: end; }
+@media (max-width: 700px) { .reels { grid-template-columns: minmax(0, 1fr); } .reels video { max-height: 70vh; width: auto; max-width: 100%; margin: 0 auto; } }
+figure { margin: 0; min-width: 0; display: flex; flex-direction: column; gap: 8px; }
+video { display: block; width: 100%; max-width: 100%; background: #000; border: 1px solid var(--ink); }
+figcaption { display: grid; gap: 1px; }
+figcaption b { font-family: var(--display); font-weight: 600; font-size: 14px; letter-spacing: .04em; text-transform: uppercase; }
+figcaption span { font-family: var(--type); font-size: 12px; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+figcaption a { font-family: var(--type); font-size: 12px; color: var(--navy); }
+
+.btn { font-family: var(--display); font-weight: 600; font-size: 13px; letter-spacing: .1em; text-transform: uppercase; background: var(--ink); color: var(--paper); border: 0; padding: 8px 14px; cursor: pointer; }
+.btn:hover { background: var(--red); }
+.btn.ghost { background: transparent; color: var(--ink); border: 1px solid var(--ink); }
+.btn.ghost:hover { background: var(--ink); color: var(--paper); }
+.btn.done { background: var(--ok); color: var(--paper); }
+:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+
+/* Kit */
+.kit { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 24px; }
+@media (max-width: 1000px) { .kit { grid-template-columns: minmax(0, 1fr); } }
+.slips { display: grid; gap: 14px; }
+.slip { background: var(--slip); border: 1px solid var(--rule); padding: 14px 16px; display: grid; gap: 8px; min-width: 0; }
+.slip-top { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px; }
+.slip-top .where { font-family: var(--type); font-size: 12px; color: var(--navy); }
+.slip pre { margin: 0; white-space: pre-wrap; word-wrap: break-word; font-family: var(--type); font-size: 14px; line-height: 1.55; color: var(--ink); max-width: 72ch; }
+.count { font-family: var(--type); font-size: 12px; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+.count.over { color: var(--red); }
+
+.facts { display: grid; gap: 18px; align-content: start; }
+.facts ul { margin: 6px 0 0; padding: 0; list-style: none; display: grid; gap: 8px; }
+.facts li { font-family: var(--type); font-size: 13px; line-height: 1.5; border-left: 2px solid var(--rule); padding-left: 10px; }
+.facts p { font-family: var(--type); font-size: 13px; line-height: 1.55; margin: 6px 0 0; }
+.facts a { color: var(--navy); }
+
+.foot { font-family: var(--type); font-size: 12px; color: var(--ink-soft); border-top: 1px solid var(--rule); padding-top: 14px; margin-top: 36px; max-width: 80ch; }
+.empty { font-family: var(--type); padding: 40px 0; }
+@media (prefers-reduced-motion: reduce) { .stamp { transform: none; } }
+</style>
+
+<header class="band">
+  <div class="wrap">
+    <div class="word">WW2 Dispatches<small>Living Press · film cards and press kits</small></div>
+    <div class="band-note"><span class="priority">Film</span><span id="tally"></span></div>
+  </div>
+</header>
+
+<main class="wrap layout">
+  <nav aria-label="Living cards">
+    <div class="list-label">Living cards</div>
+    <div class="list" id="list"></div>
+  </nav>
+  <section id="view" aria-live="polite"></section>
+</main>
+
+<script>
+const DATA = /*DATA*/[];
+const SERIES = { battle: "Battle Lines", home: "Home Front", blueprint: "Blueprint", statecraft: "Statecraft" };
+const MONTHS = ["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"];
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const no = n => "No. " + String(n).padStart(3, "0");
+const bigDate = iso => { const [y, m, d] = iso.split("-"); return `${+d} ${MONTHS[+m - 1]} ${y}`; };
+
+const listEl = document.getElementById("list");
+const view = document.getElementById("view");
+document.getElementById("tally").textContent = DATA.length === 1 ? "1 living card" : DATA.length + " living cards";
+
+function pick(id) {
+  const d = DATA.find(x => x.id === id) || DATA[0];
+  if (!d) { view.innerHTML = '<p class="empty">No living cards yet. Ask Claude to build one for a major dispatch, and it will appear here.</p>'; return; }
+  try { localStorage.setItem("lp-current", d.id); } catch (e) {}
+  [...listEl.children].forEach(b => b.setAttribute("aria-current", b.dataset.id === d.id ? "true" : "false"));
+  render(d);
+}
+
+function slip(label, where, text, limit) {
+  const len = [...text].length;
+  const count = limit ? `<span class="count${len > limit ? " over" : ""}">${len} / ${limit}</span>` : `<span class="count">${len} characters</span>`;
+  return `<div class="slip">
+    <div class="slip-top"><div><div class="h3">${esc(label)}</div><div class="where">${esc(where)}</div></div>
+      <div style="display:flex;align-items:center;gap:10px">${count}<button class="btn" data-copy>Copy</button></div></div>
+    <pre>${esc(text)}</pre></div>`;
+}
+
+function render(d) {
+  const k = d.kit, sc = `var(--s-${d.series})`;
+  const reel = (kind, label, dims) => {
+    const v = d.videos[kind];
+    if (!v) return "";
+    return `<figure><video src="${esc(v.src)}" poster="${esc(v.poster)}" muted loop playsinline preload="metadata" controls></video>
+      <figcaption><b>${label}</b><span>${dims} · ${v.seconds} s · ${v.mb} MB</span><a href="${esc(v.raw)}" target="_blank" rel="noopener">Open file on GitHub</a></figcaption></figure>`;
+  };
+  view.innerHTML = `
+    <div class="head" style="--sc:${sc}">
+      <div>
+        <div class="serial">Dispatch ${no(d.num)}</div>
+        <h1>${esc(d.title)}</h1>
+        <div class="dateline">${bigDate(d.date)}</div>
+        <div class="place">${esc(d.place)}</div>
+        <div class="chips">
+          ${d.approved ? `<span class="chip ok">Approved ${esc(d.approved)}</span>` : `<span class="chip wait">Waiting for review</span>`}
+          <span class="chip ${d.scheduled ? "ok" : "wait"}">${d.scheduled ? "Scheduled" : "Not scheduled yet"}</span>
+          <span class="chip">Posts ${esc(d.postDay)}</span>
+        </div>
+      </div>
+      <div class="stamp" style="--sc:${sc}">${SERIES[d.series] || d.series}</div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-top"><div class="h3">The three living cards</div>
+        <div style="display:flex;gap:8px"><button class="btn" id="playAll">Play all</button><button class="btn ghost" id="stopAll">Stop</button></div></div>
+      <div class="reels">
+        ${reel("x", "X", "1600 × 1440")}
+        ${reel("instagram", "Instagram Reel · Threads", "1080 × 1350")}
+        ${reel("vertical", "TikTok · YouTube Shorts", "1080 × 1920")}
+      </div>
+    </div>
+
+    <div class="sec kit">
+      <div class="slips">
+        <div class="h3">Press kit</div>
+        ${k.filmCaption ? slip("Film caption", "X quote post, Instagram Reel, Threads", k.filmCaption, 280) : ""}
+        ${k.ytTitle ? slip("YouTube Shorts title", "YouTube Shorts", k.ytTitle, 100) : ""}
+        ${k.ytDesc ? slip("YouTube Shorts description", "YouTube Shorts", k.ytDesc, 5000) : ""}
+        ${k.tiktok ? slip("TikTok caption", "TikTok", k.tiktok, 2200) : ""}
+      </div>
+      <aside class="facts">
+        ${k.schedule.length ? `<div><div class="h3">Posting plan</div><ul>${k.schedule.map(s => `<li>${esc(s)}</li>`).join("")}</ul></div>` : ""}
+        ${k.thumbnail ? `<div><div class="h3">Thumbnail check</div><p>${esc(k.thumbnail)}</p></div>` : ""}
+        ${d.source ? `<div><div class="h3">Source film</div><p>${esc(d.source.note)}</p><p><a href="${esc(d.source.url)}" target="_blank" rel="noopener">Open the film record at the National Archives</a></p></div>` : ""}
+        <div><div class="h3">Full kit</div><p><a href="${esc(d.kitUrl)}" target="_blank" rel="noopener">Open the kit file on GitHub</a></p></div>
+      </aside>
+    </div>`;
+
+  const vids = () => [...view.querySelectorAll("video")];
+  view.querySelector("#playAll").onclick = () => vids().forEach(v => { v.currentTime = 0; v.play().catch(() => {}); });
+  view.querySelector("#stopAll").onclick = () => vids().forEach(v => { v.pause(); v.currentTime = 0; });
+  view.querySelectorAll("[data-copy]").forEach(btn => btn.onclick = () => {
+    const pre = btn.closest(".slip").querySelector("pre");
+    const done = () => { btn.textContent = "Copied"; btn.classList.add("done"); setTimeout(() => { btn.textContent = "Copy"; btn.classList.remove("done"); }, 1600); };
+    const fallback = () => { const r = document.createRange(); r.selectNodeContents(pre); const s = getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = "Selected, press Ctrl+C"; };
+    try { navigator.clipboard.writeText(pre.textContent).then(done, fallback); } catch (e) { fallback(); }
+  });
+}
+
+DATA.forEach(d => {
+  const b = document.createElement("button");
+  b.type = "button"; b.dataset.id = d.id; b.style.setProperty("--sc", `var(--s-${d.series})`);
+  b.innerHTML = `<span class="n">Dispatch ${no(d.num)}</span><span class="t">${esc(d.title)}</span><span class="d">${bigDate(d.date)} · ${SERIES[d.series]}</span>`;
+  b.onclick = () => pick(d.id);
+  listEl.appendChild(b);
+});
+
+let start = (location.hash || "").replace("#", "");
+if (!DATA.some(d => d.id === start)) { try { start = localStorage.getItem("lp-current") || ""; } catch (e) { start = ""; } }
+pick(start);
+</script>
