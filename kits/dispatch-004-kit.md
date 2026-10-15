@@ -1,15 +1,15 @@
-# Video Press Kit: Dispatch No. 002, MacArthur returns to Leyte
+# Video Press Kit: Dispatch No. 004, MacArthur returns to Leyte
 
 Event date: 20 October 1944 · Series: Battle Lines · Status: approved by Brian 15 Oct 2026
 
 ## Video files
 | Use | File | Size |
 |---|---|---|
-| X | videos/dispatch-002-x.mp4 | 1600 x 1440, 17.6 s |
-| Instagram Reel, Threads | videos/dispatch-002-instagram.mp4 | 1080 x 1350, 17.6 s |
-| TikTok, YouTube Shorts | videos/dispatch-002-vertical.mp4 | 1080 x 1920, 17.6 s |
+| X | videos/dispatch-004-x.mp4 | 1600 x 1440, 17.6 s |
+| Instagram Reel, Threads | videos/dispatch-004-instagram.mp4 | 1080 x 1350, 17.6 s |
+| TikTok, YouTube Shorts | videos/dispatch-004-vertical.mp4 | 1080 x 1920, 17.6 s |
 
-Public links: https://raw.githubusercontent.com/ww2dispatches/ww2dispatches-cards/main/videos/dispatch-002-<x|instagram|vertical>.mp4
+Public links: https://raw.githubusercontent.com/ww2dispatches/ww2dispatches-cards/main/videos/dispatch-004-<x|instagram|vertical>.mp4
 
 ## Thumbnail check
 Passed. The first frame is MacArthur, in his sunglasses and peaked cap, riding the landing craft with his staff. Recognizable at feed size.
