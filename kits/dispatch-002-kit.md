@@ -16,8 +16,9 @@ Passed. The first frame is MacArthur, in his sunglasses and peaked cap, riding t
 
 ## Schedule (20 Oct 2026)
 * 8:00 a.m. Mountain: still card with the full story caption (Buffer: X, Instagram, Threads).
-* 12:00 p.m. Mountain: living card (Buffer: X as a quote post of the morning still, Instagram as a Reel, Threads with the 4:5 video).
-* 12:00 p.m. Mountain: vertical video (Metricool: TikTok and YouTube Shorts).
+* 12:00 p.m. Mountain: living card (Buffer: X as its own video post, Instagram as a Reel, Threads with the 4:5 video).
+* After noon: Brian replies to the 8 a.m. X still with "Watch the film from that day:" and a link to the noon film post (about one minute by hand).
+* 12:00 p.m. Mountain: vertical video to YouTube Shorts, 12:05 p.m. to TikTok (Metricool).
 
 ## Short caption: X, Instagram, Threads
 Film from Leyte, 20 October 1944. General MacArthur rides a landing craft toward Red Beach with President Sergio Osmeña of the Philippines, then heads inland. U.S. Army Signal Corps footage.
