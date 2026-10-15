@@ -19,5 +19,12 @@
       "url": "https://www.docsteach.org/documents/document/general-douglas-macarthur-wades-ashore-during-initial-landings-at-leyte-philippine-islands"
     }
   ],
-  "photo": "photos/1944-10-20-leyte.jpg"
+  "photo": "photos/1944-10-20-leyte.jpg",
+  "video": {
+    "footage": "footage/1944-10-20-leyte.mp4",
+    "focusX": 50,
+    "focusY": 50,
+    "sourceUrl": "https://catalog.archives.gov/id/16878",
+    "note": "PHILIPPINE OPERATIONS, LEYTE, 20 Oct 1944. U.S. Army Signal Corps film 111-ADC-3075 (NARA 16878), silent. Troops of the 24th Infantry Division at Red Beach. U.S. government work, public domain. Clip uses 0:12 to 0:17, 0:21 to 0:25.5, and 4:24 to 4:31."
+  }
 }
