@@ -176,7 +176,7 @@ function render(d) {
         <div class="place">${esc(d.place)}</div>
         <div class="chips">
           ${d.approved ? `<span class="chip ok">Approved ${esc(d.approved)}</span>` : `<span class="chip wait">Waiting for review</span>`}
-          <span class="chip ${d.scheduled ? "ok" : "wait"}">${d.scheduled ? "Scheduled" : "Not scheduled yet"}</span>
+          <span class="chip ${d.scheduled && !/not yet/i.test(d.scheduled) ? "ok" : "wait"}">${d.scheduled === true ? "Scheduled" : esc(d.scheduled || "Not scheduled yet")}</span>
           <span class="chip">Posts ${esc(d.postDay)}</span>
         </div>
       </div>

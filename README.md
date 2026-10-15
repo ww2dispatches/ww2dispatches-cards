@@ -29,4 +29,4 @@ Same card bands with archival footage playing in the photo window, for big dispa
 ```
 python3 renderer/living_press.py <out_dir>   # writes living-press.html plus videos/ to publish
 ```
-Rebuild and republish to the same artifact (https://claude.ai/artifact/7bCSGHeexkFYyn6s1vxRSe) whenever a living card is added or a kit changes. Set `"scheduled": true` in a dispatch's `kit` block once its videos are scheduled.
+Rebuild and republish to the same artifact (https://claude.ai/artifact/7bCSGHeexkFYyn6s1vxRSe) whenever a living card is added or a kit changes. Set `"scheduled"` in a dispatch's `kit` block to `true` or a short status line (for example "Buffer and YouTube Shorts scheduled · TikTok not yet").

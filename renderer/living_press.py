@@ -77,7 +77,7 @@ def main(out_dir):
             "num": d["num"], "id": d["id"], "title": d["title"], "date": d["date"], "place": d["place"],
             "series": d["series"],
             "approved": nice_date(kitmeta.get("approved", "")),
-            "scheduled": bool(kitmeta.get("scheduled")),
+            "scheduled": kitmeta.get("scheduled") or "",
             "postDay": m.group(1) if m else d["date"][5:],
             "videos": vids,
             "kit": {
