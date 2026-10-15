@@ -33,5 +33,14 @@
     "focusY": 50,
     "sourceUrl": "https://catalog.archives.gov/id/16878",
     "note": "PHILIPPINE OPERATIONS, LEYTE, 20 Oct 1944. U.S. Army Signal Corps film 111-ADC-3075 (NARA 16878), silent. Troops of the 24th Infantry Division at Red Beach. U.S. government work, public domain. Clip uses 0:12 to 0:17, 0:21 to 0:25.5, and 4:24 to 4:31."
+  },
+  "kit": {
+    "file": "kits/dispatch-002-kit.md",
+    "approved": "2026-10-15",
+    "filmCaption": "Film from Leyte, 20 October 1944. General MacArthur rides a landing craft toward Red Beach with President Sergio Osmeña of the Philippines, then heads inland. U.S. Army Signal Corps footage.",
+    "youtubeTitle": "\"I Have Returned\": MacArthur Lands on Leyte, 1944",
+    "tiktokCaption": "He promised he would come back. On 20 Oct 1944, he did. MacArthur heads for Red Beach on Leyte, filmed by the U.S. Army Signal Corps. #WW2 #OnThisDay #History #MacArthur #Philippines",
+    "thumbnailCheck": "pass: first frame is MacArthur in the landing craft",
+    "videoTime": "12:00 America/Denver"
   }
 }
