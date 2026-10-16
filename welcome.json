@@ -1,0 +1,17 @@
+{
+  "id": "welcome",
+  "title": "Start here: welcome to WW2 Dispatches",
+  "subline": "Welcome dispatch",
+  "stamp": "START HERE",
+  "headline": "ONE DAY AT A TIME",
+  "line": "World War II on this day in history. A new dispatch every morning.",
+  "tiles": [
+    {"series": "battle", "photo": "photos/1944-10-20-leyte.jpg", "focusX": 50, "focusY": 45},
+    {"series": "home", "photo": "photos/1942-10-19-tin-cans.jpg", "focusX": 50, "focusY": 8},
+    {"series": "blue", "photo": "photos/1946-10-24-v2.jpg", "focusX": 50, "focusY": 50},
+    {"series": "state", "photo": "photos/1945-10-18-nuremberg-indictment.jpg", "focusX": 50, "focusY": 45}
+  ],
+  "body": "Every day of World War II, something happened that changed someone's world. We file one dispatch for each of them.\n\nWelcome to WW2 Dispatches. Every morning a new dispatch goes out, tied to something that happened on that calendar date. It might be 1938 or 1946. It might be a beach landing, a ration book, a radar set, or a deal made behind closed doors.\n\nEach dispatch carries a series stamp:\nBattle Lines: the battles and operations\nHome Front: civilian life and the people who kept things running\nBlueprint: the engineering and inventions behind the war\nStatecraft: the politics and diplomacy, from the road to war to the peace that followed\n\nEvery dispatch is checked against sources and paired with a real archival photo or film.\n\nFollow along and the war unfolds one day at a time. What part of WW2 do you most want to see covered? Tell us below.\n\n#OnThisDay #WW2",
+  "threads": "Welcome to WW2 Dispatches. 📜\n\nEvery morning we file one dispatch from World War II, tied to something that happened on that date. Four series: Battle Lines, Home Front, Blueprint, and Statecraft.\n\nEvery one is checked against sources and paired with a real archival photo.\n\nWhat part of the war do you most want to see covered? Tell us below.\n\n#OnThisDay",
+  "photoNote": "Tiles reuse the photos from Nos. 004 (Leyte, NARA 531424), 003 (tin can drive, INP 1942), 009 (V-2 photo of Earth, 1946), and 002 (IMT session, Nuremberg). All public domain, see each dispatch file."
+}
