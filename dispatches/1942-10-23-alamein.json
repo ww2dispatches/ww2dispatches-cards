@@ -25,5 +25,22 @@
     "instagram": "6ad1286029e9cdc489e15260",
     "threads": "6ad12864e8f41b92261eecbd",
     "facebook": "6ad2d00952adf2bfae6de141"
+  },
+  "video": {
+    "footage": "footage/1942-10-23-alamein.mp4",
+    "focusX": 50,
+    "focusY": 50,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Desert_Victory_(1943).webm",
+    "note": "Desert Victory (1943), British Ministry of Information documentary with film shot by the Army Film and Photographic Unit; Crown copyright expired, public domain (PD-UKGov on Wikimedia Commons; Commons 480p copy). The night gun flashes of the 23 Oct 1942 barrage are genuine footage (the staged Pinewood close ups of soldiers are not used). Clip uses 29:21.27 to 29:24.0, then 27:07.36 to 27:20.2."
+  },
+  "kit": {
+    "file": "kits/dispatch-013-kit.md",
+    "approved": null,
+    "filmCaption": "Film from El Alamein, 23 October 1942. At 9:40 p.m. nearly 900 British and Commonwealth guns opened fire, and army cameramen filmed the flashes in the dark. From the 1943 British documentary Desert Victory.",
+    "youtubeTitle": "The Night 900 Guns Fired at Once: El Alamein, 1942",
+    "tiktokCaption": "9:40 p.m., 23 Oct 1942. Nearly 900 guns fire at once and the desert lights up. Real film of the barrage at El Alamein. #WW2 #OnThisDay #History #ElAlamein #Montgomery",
+    "thumbnailCheck": "pass: first frame is a gun firing on the horizon line",
+    "videoTime": "12:00 America/Denver",
+    "scheduled": "waiting for Brian's approval"
   }
 }
