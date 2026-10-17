@@ -204,7 +204,7 @@ function render(d) {
       <aside class="facts">
         ${k.schedule.length ? `<div><div class="h3">Posting plan</div><ul>${k.schedule.map(s => `<li>${esc(s)}</li>`).join("")}</ul></div>` : ""}
         ${k.thumbnail ? `<div><div class="h3">Thumbnail check</div><p>${esc(k.thumbnail)}</p></div>` : ""}
-        ${d.source ? `<div><div class="h3">Source film</div><p>${esc(d.source.note)}</p><p><a href="${esc(d.source.url)}" target="_blank" rel="noopener">Open the film record at the National Archives</a></p></div>` : ""}
+        ${d.source ? `<div><div class="h3">Source film</div><p>${esc(d.source.note)}</p><p><a href="${esc(d.source.url)}" target="_blank" rel="noopener">${/archives\.gov/.test(d.source.url) ? "Open the film record at the National Archives" : "Open the source film"}</a></p></div>` : ""}
         <div><div class="h3">Full kit</div><p><a href="${esc(d.kitUrl)}" target="_blank" rel="noopener">Open the kit file on GitHub</a></p></div>
       </aside>
     </div>`;
