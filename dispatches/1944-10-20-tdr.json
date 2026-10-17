@@ -1,0 +1,59 @@
+{
+  "num": 8,
+  "id": "1944-10-20-tdr",
+  "title": "A 1944 drone strike",
+  "date": "1944-10-20",
+  "time": "17:00",
+  "format": "spec",
+  "place": "Bougainville · Solomon Islands",
+  "series": "blue",
+  "pull": "A drone strike in 1944",
+  "photo": "photos/1944-10-20-tdr.jpg",
+  "specTitle": "Interstate TDR-1",
+  "specs": [
+    [
+      "Builder",
+      "Interstate"
+    ],
+    [
+      "Wingspan",
+      "48 ft"
+    ],
+    [
+      "Engines",
+      "2 x 220 hp"
+    ],
+    [
+      "Cruise",
+      "140 mph"
+    ],
+    [
+      "Payload",
+      "2,000 lb bomb"
+    ],
+    [
+      "Guidance",
+      "TV camera"
+    ]
+  ],
+  "body": "A drone strike, guided by television, in 1944.\n\n20 October 1944. Near Bougainville, Navy drones of Special Task Air Group 1 went after Japanese gun positions on Ballale and a beached cargo ship. One made a good bomb drop on the guns before control was lost. Another straddled the guns, then slammed into the ship almost amidships.\n\nNo one was aboard. The TDR-1 was flown by radio from a TBM Avenger that followed it in, where an operator watched a crude TV picture from a camera in the drone's nose.\n\nIts frame was steel tube, reportedly built by the Schwinn bicycle company, under a skin of molded wood. By the end of October 1944 the drones were grounded and the program wound down.",
+  "threads": "A drone strike, guided by television, in 1944.\n\n20 October 1944. Near Bougainville, a Navy TDR-1 drone, flown by radio from a TBM Avenger whose operator watched a TV picture from the drone's nose, straddled Japanese guns on Ballale and hit a beached ship almost amidships.\n\nIts frame was steel tube under a skin of molded wood.",
+  "sources": [
+    {
+      "title": "STAG-1 chronology, Pacific Wrecks",
+      "url": "https://pacificwrecks.com/unit/usn/stag-1/index.html"
+    },
+    {
+      "title": "20 Oct 1944, World War II Database",
+      "url": "https://ww2db.com/event/today/10/20/1944"
+    },
+    {
+      "title": "Interstate TDR, Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Interstate_TDR"
+    },
+    {
+      "title": "The First Drone Strike, in 1944, Air & Space / Smithsonian",
+      "url": "https://www.smithsonianmag.com/air-space-magazine/drone-strike-180964753/"
+    }
+  ]
+}
