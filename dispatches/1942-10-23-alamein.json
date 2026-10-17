@@ -31,7 +31,8 @@
     "focusX": 50,
     "focusY": 50,
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Desert_Victory_(1943).webm",
-    "note": "Desert Victory (1943), British Ministry of Information documentary with film shot by the Army Film and Photographic Unit; Crown copyright expired, public domain (PD-UKGov on Wikimedia Commons; Commons 480p copy). The night gun flashes of the 23 Oct 1942 barrage are genuine footage (the staged Pinewood close ups of soldiers are not used). Clip uses 29:21.27 to 29:24.0, then 27:07.36 to 27:20.2."
+    "note": "Desert Victory (1943), British Ministry of Information documentary with film shot by the Army Film and Photographic Unit; Crown copyright expired, public domain (PD-UKGov on Wikimedia Commons; Commons 480p copy). The night gun flashes of the 23 Oct 1942 barrage are genuine footage (the staged Pinewood close ups of soldiers are not used). Clip uses 29:21.27 to 29:24.0, then 27:07.36 to 27:20.2. Sound: the film's own soundtrack under these shots (gunfire, no music or narration), mixed for the 1943 film, cut with the picture and loudness normalized.",
+    "sound": true
   },
   "kit": {
     "file": "kits/dispatch-013-kit.md",

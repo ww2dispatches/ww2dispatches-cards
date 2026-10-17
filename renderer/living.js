@@ -1,7 +1,8 @@
 // Renders WW2 Dispatches living cards: the post card bands with archival footage playing in the photo window.
 // Usage: node renderer/living.js <dispatch-id> [...]
 // The dispatch JSON needs a "video" block: { "footage": "footage/<id>.mp4", "focusX": 50, "focusY": 50 }
-// footage/<id>.mp4 is the already trimmed clip (square pixels). Output goes to videos/:
+// footage/<id>.mp4 is the already trimmed clip (square pixels). Add "sound": true to the video block to keep
+// the clip's own audio (period film sound, never music); otherwise a silent track is added. Output goes to videos/:
 //   dispatch-NNN-x.mp4 (1600 x 1440), dispatch-NNN-instagram.mp4 (1080 x 1350), dispatch-NNN-vertical.mp4 (1080 x 1920)
 const { chromium } = require("playwright");
 const { execFileSync } = require("child_process");
@@ -45,9 +46,9 @@ const TONE = "colorchannelmixer=.927:.092:.023:0:.042:.962:.020:0:.033:.064:.896
         `[b][1:v]overlay=0:0:shortest=1,format=yuv420p[v]`;
       execFileSync("ffmpeg", ["-v", "error", "-y", "-i", src, "-loop", "1", "-i", overlay,
         "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo",
-        "-filter_complex", fc, "-map", "[v]", "-map", "2:a", "-t", dur,
+        "-filter_complex", fc, "-map", "[v]", "-map", d.video.sound ? "0:a" : "2:a", "-t", dur,
         "-c:v", "libx264", "-preset", "slow", "-crf", "20", "-profile:v", "high", "-r", "30",
-        "-c:a", "aac", "-b:a", "64k", "-movflags", "+faststart", file]);
+        "-c:a", "aac", "-b:a", d.video.sound ? "160k" : "64k", "-movflags", "+faststart", file]);
       // First frame as a still, for checking the thumbnail
       execFileSync("ffmpeg", ["-v", "error", "-y", "-i", file, "-frames:v", "1", "-q:v", "3", file.replace(/\.mp4$/, "-poster.jpg")]);
       console.log("wrote", path.relative(ROOT, file));
