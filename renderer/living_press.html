@@ -21,6 +21,7 @@
   --display: "Oswald", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
   --type: "Special Elite", "Courier New", Courier, monospace;
   --body: "Oswald", "Arial Narrow", Arial, sans-serif;
+  --read: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
@@ -58,9 +59,9 @@ body { background: var(--paper); color: var(--ink); font-family: var(--body); fo
 .list button { text-align: left; font: inherit; color: inherit; background: transparent; border: 1px solid var(--rule); border-left: 4px solid var(--sc, var(--rule)); padding: 10px 12px; cursor: pointer; display: grid; gap: 2px; }
 .list button:hover { background: var(--slip); }
 .list button[aria-current="true"] { background: var(--slip); border-color: var(--ink); border-left-color: var(--sc); }
-.list .n { font-family: var(--type); font-size: 12px; color: var(--navy); }
+.list .n { font-family: var(--read); font-size: 13px; color: var(--navy); }
 .list .t { font-family: var(--display); font-weight: 500; font-size: 15px; line-height: 1.2; }
-.list .d { font-family: var(--type); font-size: 12px; color: var(--ink-soft); }
+.list .d { font-family: var(--read); font-size: 13px; color: var(--ink-soft); }
 
 /* Dispatch header */
 .head { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px; align-items: start; border-bottom: 1px solid var(--rule); padding-bottom: 18px; }
@@ -83,8 +84,8 @@ figure { margin: 0; min-width: 0; display: flex; flex-direction: column; gap: 8p
 video { display: block; width: 100%; max-width: 100%; background: #000; border: 1px solid var(--ink); }
 figcaption { display: grid; gap: 1px; }
 figcaption b { font-family: var(--display); font-weight: 600; font-size: 14px; letter-spacing: .04em; text-transform: uppercase; }
-figcaption span { font-family: var(--type); font-size: 12px; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
-figcaption a { font-family: var(--type); font-size: 12px; color: var(--navy); }
+figcaption span { font-family: var(--read); font-size: 13px; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+figcaption a { font-family: var(--read); font-size: 13px; color: var(--navy); }
 
 .btn { font-family: var(--display); font-weight: 600; font-size: 13px; letter-spacing: .1em; text-transform: uppercase; background: var(--ink); color: var(--paper); border: 0; padding: 8px 14px; cursor: pointer; }
 .btn:hover { background: var(--red); }
@@ -99,19 +100,19 @@ figcaption a { font-family: var(--type); font-size: 12px; color: var(--navy); }
 .slips { display: grid; gap: 14px; }
 .slip { background: var(--slip); border: 1px solid var(--rule); padding: 14px 16px; display: grid; gap: 8px; min-width: 0; }
 .slip-top { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px; }
-.slip-top .where { font-family: var(--type); font-size: 12px; color: var(--navy); }
-.slip pre { margin: 0; white-space: pre-wrap; word-wrap: break-word; font-family: var(--type); font-size: 14px; line-height: 1.55; color: var(--ink); max-width: 72ch; }
-.count { font-family: var(--type); font-size: 12px; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+.slip-top .where { font-family: var(--read); font-size: 14px; color: var(--navy); }
+.slip pre { margin: 0; white-space: pre-wrap; word-wrap: break-word; font-family: var(--read); font-size: 16px; line-height: 1.6; color: var(--ink); max-width: 72ch; }
+.count { font-family: var(--read); font-size: 13px; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
 .count.over { color: var(--red); }
 
 .facts { display: grid; gap: 18px; align-content: start; }
 .facts ul { margin: 6px 0 0; padding: 0; list-style: none; display: grid; gap: 8px; }
-.facts li { font-family: var(--type); font-size: 13px; line-height: 1.5; border-left: 2px solid var(--rule); padding-left: 10px; }
-.facts p { font-family: var(--type); font-size: 13px; line-height: 1.55; margin: 6px 0 0; }
+.facts li { font-family: var(--read); font-size: 15px; line-height: 1.55; border-left: 2px solid var(--rule); padding-left: 10px; }
+.facts p { font-family: var(--read); font-size: 15px; line-height: 1.6; margin: 6px 0 0; }
 .facts a { color: var(--navy); }
 
-.foot { font-family: var(--type); font-size: 12px; color: var(--ink-soft); border-top: 1px solid var(--rule); padding-top: 14px; margin-top: 36px; max-width: 80ch; }
-.empty { font-family: var(--type); padding: 40px 0; }
+.foot { font-family: var(--read); font-size: 14px; color: var(--ink-soft); border-top: 1px solid var(--rule); padding-top: 14px; margin-top: 36px; max-width: 80ch; }
+.empty { font-family: var(--read); padding: 40px 0; }
 @media (prefers-reduced-motion: reduce) { .stamp { transform: none; } }
 </style>
 
