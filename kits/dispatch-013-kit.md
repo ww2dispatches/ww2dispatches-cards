@@ -1,6 +1,6 @@
 # Video Press Kit: Dispatch No. 013, The barrage at El Alamein
 
-Event date: 23 October 1942 · Series: Battle Lines · Status: built 17 Oct 2026, waiting for Brian's approval
+Event date: 23 October 1942 · Series: Battle Lines · Status: approved by Brian 17 Oct 2026, scheduled in Buffer for noon Fri 23 Oct 2026
 
 ## Video files
 | Use | File | Size |

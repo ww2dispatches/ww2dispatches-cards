@@ -24,7 +24,13 @@
     "x": "6ad1285e29e9cdc489e1521b",
     "instagram": "6ad1286029e9cdc489e15260",
     "threads": "6ad12864e8f41b92261eecbd",
-    "facebook": "6ad2d00952adf2bfae6de141"
+    "facebook": "6ad2d00952adf2bfae6de141",
+    "x_film": "6ad394f00a208cb32328e774",
+    "instagram_reel": "6ad394f3938409f1d0910df4",
+    "threads_film": "6ad394f5e272c4918f8f93fc",
+    "facebook_film": "6ad394f8e272c4918f8f945c",
+    "youtube": "6ad394fd938409f1d0910f3f",
+    "tiktok": "6ad39500ae173d6e00c22ebf"
   },
   "video": {
     "footage": "footage/1942-10-23-alamein.mp4",
@@ -36,12 +42,12 @@
   },
   "kit": {
     "file": "kits/dispatch-013-kit.md",
-    "approved": null,
+    "approved": "2026-10-17",
     "filmCaption": "Film from El Alamein, 23 October 1942. At 9:40 p.m. nearly 900 British and Commonwealth guns opened fire, and army cameramen filmed the flashes in the dark. From the 1943 British documentary Desert Victory.",
     "youtubeTitle": "The Night 900 Guns Fired at Once: El Alamein, 1942",
     "tiktokCaption": "9:40 p.m., 23 Oct 1942. Nearly 900 guns fire at once and the desert lights up. Real film of the barrage at El Alamein. #WW2 #OnThisDay #History #ElAlamein #Montgomery",
     "thumbnailCheck": "pass: first frame is a gun firing on the horizon line",
     "videoTime": "12:00 America/Denver",
-    "scheduled": "waiting for Brian's approval"
+    "scheduled": true
   }
 }
