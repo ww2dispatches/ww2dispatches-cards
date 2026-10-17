@@ -76,7 +76,11 @@ Event: 1944 | Battle Lines | Battle of Leyte Gulf ends with the Japanese fleet w
 * Every Event line is true for this exact calendar date.
 * Every pick has two Source lines, and Wikipedia is never the only one.
 * Every pick has a Photo 1 with a record number and an exact page link.
+* Every pick has a Photo 1 with a record number and an exact page link on the archive itself (NARA, LOC, NHHC, IWM, Commons file page). A museum article image, a fan site like navsource, or a bare image file is not enough.
+* A photo marked "rights status not evaluated" or "no known restrictions" is not cleared. Say so on the Photo line instead of calling it public domain.
+* Variety: no event fills more than two slots in the week, and the two slots on one date are different events (except a Spec Sheet or Quote that adds something new). Never use the same event for two 8 AM Stories.
+* "From the day: yes" only for photos taken on that exact date. Art made later is "from the day: no".
 * Nothing repeats our live dispatch log or Covered Events.md.
 * Every Spec number has a source link; every Quote is word for word on its linked page.
-* The Week check counts are correct, with at least one Home Front and two Spec Sheets.
+* The Week check counts are correct: count all 14 slots (8 AM and 5 PM) by series, and recount before saving. At least one Home Front, two Spec Sheets, and every series at least twice.
 * No dashes anywhere in your own writing.

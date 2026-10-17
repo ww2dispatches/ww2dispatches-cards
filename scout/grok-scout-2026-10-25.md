@@ -1,3 +1,12 @@
+# Review notes for the prep run (added by Claude, 17 Oct 2026)
+* Oct 25: Grok dropped the Battle off Samar and the first organized kamikaze attacks as a "continuation" of Leyte. It is a separate major battle and the strongest event of the week; strongly consider it for 8 AM (or a Spec Sheet at 5 PM). Davis fills both Oct 25 slots, so at most one slot should be Davis.
+* Oct 26 to 27: Santa Cruz and Hornet fill four slots and three backups, and Hornet is the 8 AM story twice. Use Hornet once. The Chikuma photo is from the 26 Oct battle, not 27 Oct.
+* Oct 28: Greece (Ochi Day) is a strong Statecraft pick; the photo is OPEN, so find one or re-pick.
+* Oct 29: draft lottery is a strong Home Front pick, but the LOC photo is "rights status not evaluated", which is not cleared; check for a NARA or other cleared copy. Verify the Alaska Highway "opens to traffic 29 October 1942" claim carefully; the formal opening may have been later in November. Re-pick if it does not hold.
+* Oct 30: U 559 Source 1 is a page on US submarine losses, not about U 559. Needs real sources and a photo.
+* Oct 31: Reuben James Photo 1 is on navsource, not an archive record page. The NH 86699 KN art was made later, so it is not "from the day".
+* P 51 photo link is a museum article image, not a record page. Statecraft has only one slot all week; the Week check counts are off.
+
 # Grok Scout: Oct 25 to Oct 31
 
 ## Oct 25
