@@ -99,7 +99,7 @@ function run(args) { execFileSync("ffmpeg", ["-loglevel", "error", "-y", ...args
 function save(dataUrl, file) { fs.writeFileSync(file, Buffer.from(dataUrl.split(",")[1], "base64")); }
 
 (async () => {
-  const [sid, voice = "bm_daniel"] = process.argv.slice(2);
+  const [sid, voice = "am_onyx"] = process.argv.slice(2);
   const story = JSON.parse(fs.readFileSync(path.join(ROOT, "stories", sid + ".json"), "utf8"));
   const p = JSON.parse(fs.readFileSync(path.join(ROOT, "dispatches", story.dispatch + ".json"), "utf8"));
   const adir = path.join(ROOT, "stories", "audio", sid, voice);

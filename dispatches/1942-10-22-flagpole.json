@@ -28,5 +28,16 @@
     "instagram": "6ad137834fd04e4eb3ac9d16",
     "threads": "6ad137862aec0f0a6da65987",
     "facebook": "6ad2d0058ac6cfe54425c95e"
+  },
+  "story": {
+    "video": "videos/dispatch-011-story-am_onyx.mp4",
+    "script": "stories/1942-10-22-flagpole.json",
+    "voice": "am_onyx",
+    "speed": 0.95,
+    "time": "12:00",
+    "buffer": {
+      "tiktok": "6ad2f6a087c4935770ae55fa",
+      "youtube": "6ad2f6a487c4935770ae56bb"
+    }
   }
 }
