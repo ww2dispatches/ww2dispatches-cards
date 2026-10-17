@@ -1,0 +1,152 @@
+{
+  "dispatch": "1942-10-22-flagpole",
+  "note": "Story video for Dispatch No. 011. Photos: HMS Seraph (IWM A 21106 and the card photo, British official, out of Crown Copyright), Robert Murphy (U.S. government photo), Torch landing craft off Oran (IWM A 12661), Torch landing near Algiers (NARA 195516). Clark portrait: U.S. Army Signal Corps, taken after his 1945 promotion to four star general, supplied by Brian 16 Oct 2026.",
+  "segments": [
+    {
+      "id": "s01",
+      "say": "An American general hid from the police in a wine cellar, lost his trousers in the surf, and helped open the door to North Africa.",
+      "caption": "An American general hid from the police in a wine cellar, lost his trousers in the surf, and helped open the door to North Africa.",
+      "visual": {
+        "type": "photo",
+        "src": "stories/img/seraph_brian.jpg",
+        "focusX": 40,
+        "focusY": 50,
+        "zoom": "in"
+      }
+    },
+    {
+      "id": "s02",
+      "say": "October, nineteen forty two. The British submarine H.M.S. Seraph creeps toward the coast of Algeria in the dark.",
+      "caption": "October 1942. The British submarine HMS Seraph creeps toward the coast of Algeria in the dark.",
+      "visual": {
+        "type": "photo",
+        "src": "stories/img/seraph_a21106.jpg",
+        "focusX": 55,
+        "focusY": 55,
+        "zoom": "out"
+      }
+    },
+    {
+      "id": "s03",
+      "say": "On board is Major General Mark Clark, on one of the most secret missions of the war.",
+      "caption": "On board is Major General Mark Clark, on one of the most secret missions of the war.",
+      "visual": {
+        "type": "card",
+        "kicker": "Passenger, HMS Seraph",
+        "lines": [
+          "MARK W. CLARK",
+          "Major general",
+          "Eisenhower's deputy"
+        ],
+        "inset": "stories/img/clark.jpg",
+        "insetName": "Mark W. Clark"
+      }
+    },
+    {
+      "id": "s04",
+      "say": "Just after midnight on October twenty second, Clark and his officers paddle ashore in folding canoes.",
+      "caption": "Just after midnight on 22 October, Clark and his officers paddle ashore in folding canoes.",
+      "visual": {
+        "type": "card",
+        "kicker": "Landing",
+        "lines": [
+          "22 OCT 1942",
+          "After midnight",
+          "Near Cherchell, Algeria",
+          "55 miles west of Algiers"
+        ]
+      }
+    },
+    {
+      "id": "s05",
+      "say": "At a seaside villa near Shershell, they meet French General Charles Mast, and American diplomat Robert Murphy.",
+      "caption": "At a seaside villa near Cherchell, they meet French General Charles Mast and American diplomat Robert Murphy.",
+      "visual": {
+        "type": "card",
+        "kicker": "The meeting",
+        "inset": "stories/img/murphy.jpg",
+        "insetName": "Robert Murphy",
+        "lines": [
+          "THE VILLA",
+          "Gen. Charles Mast",
+          "French Army",
+          "Robert Murphy",
+          "U.S. diplomat"
+        ]
+      }
+    },
+    {
+      "id": "s06",
+      "say": "Clark needs the French army in North Africa to help an Allied invasion, not fight it. Mast agrees.",
+      "caption": "Clark needs the French army in North Africa to help an Allied invasion, not fight it. Mast agrees.",
+      "visual": {
+        "type": "photo",
+        "src": "stories/img/torch_a12661.jpg",
+        "focusX": 50,
+        "focusY": 55,
+        "zoom": "in"
+      }
+    },
+    {
+      "id": "s07",
+      "say": "Then the police knock at the door. Clark and his men drop into the wine cellar, while their hosts fake a drunken party upstairs.",
+      "caption": "Then the police knock at the door. Clark and his men drop into the wine cellar, while their hosts fake a drunken party upstairs.",
+      "visual": {
+        "type": "card",
+        "kicker": "That evening",
+        "lines": [
+          "POLICE AT THE DOOR",
+          "Americans in the cellar",
+          "A \"party\" upstairs"
+        ]
+      }
+    },
+    {
+      "id": "s08",
+      "say": "As they escape through heavy surf, a canoe capsizes. Clark loses his trousers, and the gold coins he carried, to the sea.",
+      "caption": "As they escape through heavy surf, a canoe capsizes. Clark loses his trousers, and the gold coins he carried, to the sea.",
+      "visual": {
+        "type": "card",
+        "kicker": "Lost at sea",
+        "lines": [
+          "ONE CANOE",
+          "One pair of trousers",
+          "The general's gold"
+        ]
+      }
+    },
+    {
+      "id": "s09",
+      "say": "Soaked and half dressed, he makes it back to the submarine.",
+      "caption": "Soaked and half dressed, he makes it back to the submarine.",
+      "visual": {
+        "type": "photo",
+        "src": "stories/img/seraph_brian.jpg",
+        "focusX": 55,
+        "focusY": 55,
+        "zoom": "in",
+        "start": 1.35
+      }
+    },
+    {
+      "id": "s10",
+      "say": "Seventeen days later, more than a hundred thousand Allied troops landed in North Africa. Operation Torch had begun.",
+      "caption": "17 days later, more than 100,000 Allied troops landed in North Africa. Operation Torch had begun.",
+      "visual": {
+        "type": "photo",
+        "src": "stories/img/torch_nara.jpg",
+        "focusX": 45,
+        "focusY": 50,
+        "zoom": "out"
+      }
+    },
+    {
+      "id": "s11",
+      "say": "Follow W W Two Dispatches. The war, on the day it happened.",
+      "caption": "Follow WW2 Dispatches. The war, on the day it happened.",
+      "visual": {
+        "type": "end"
+      }
+    }
+  ]
+}
