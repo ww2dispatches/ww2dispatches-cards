@@ -1,0 +1,62 @@
+{
+  "num": 2,
+  "id": "1941-10-17-kearny-spec",
+  "title": "Why Kearny stayed afloat",
+  "date": "1941-10-17",
+  "time": "17:00",
+  "format": "spec",
+  "place": "Off Iceland · North Atlantic",
+  "series": "blue",
+  "pull": "Built to stay afloat",
+  "specTitle": "USS Kearny (DD-432)",
+  "specs": [
+    [
+      "Class",
+      "Gleaves"
+    ],
+    [
+      "Displacement",
+      "1,630 tons"
+    ],
+    [
+      "Length",
+      "348 ft"
+    ],
+    [
+      "Power",
+      "50,000 hp"
+    ],
+    [
+      "Guns",
+      "5 x 5 inch"
+    ],
+    [
+      "Torpedo tubes",
+      "10"
+    ]
+  ],
+  "body": "Why didn't USS Kearny sink?\n\nThis morning's dispatch told how a U-boat torpedo tore into her off Iceland on 17 October 1941. Part of the answer to how she got home was built into her hull.\n\nKearny was a Gleaves class destroyer. Her designers split the machinery into two separate units, each with its own fireroom and engine room. The idea was simple: a single torpedo should not be able to cripple the whole ship.\n\nThat night it worked. Her crew held the flooding to the forward fire room, and power from the aft fire room carried her out of danger. She reached Iceland two days later.",
+  "threads": "Why didn't USS Kearny sink after a U-boat torpedo hit her on 17 October 1941?\n\nHer Gleaves class design split the machinery into two separate units, each with its own fireroom and engine room, so one hit could not stop the whole ship.\n\nHer crew held the flooding to the forward fire room, and power from the aft fire room carried her out of danger.",
+  "focusY": 50,
+  "photo": "photos/1941-10-17-kearny-spec.jpg",
+  "photoUrl": "https://commons.wikimedia.org/wiki/File:USS_Kearny_(DD-432)_underway_in_1942.jpg",
+  "photoNote": "Kearny in Boston Harbor on 31 March 1942, after the repair of her torpedo damage. Official U.S. Navy Bureau of Ships photo 19-N-28745, public domain.",
+  "sources": [
+    {
+      "title": "Kearny (DD-432), Dictionary of American Naval Fighting Ships, Naval History and Heritage Command",
+      "url": "https://www.history.navy.mil/research/histories/ship-histories/danfs/k/kearny.html"
+    },
+    {
+      "title": "Gleaves class destroyer, Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gleaves-class_destroyer"
+    },
+    {
+      "title": "USS Kearny (DD-432), Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/USS_Kearny_(DD-432)"
+    },
+    {
+      "title": "Benson and Gleaves classes, Destroyer History Foundation",
+      "url": "https://destroyerhistory.org/benson-gleavesclass/"
+    }
+  ]
+}

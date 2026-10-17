@@ -109,7 +109,7 @@ function draw(cv,img,p){
   const fmt=(p.format||"dispatch").toLowerCase();
   if(img && fmt==="spec"){
     /* Spec Sheet: photo in the upper part of the window, data panel below. */
-    const split=W>H*1.1?0.5:0.52, ph2=ph*split;
+    const split=W>H*1.1?0.58:0.52, ph2=ph*split;
     const s2=Math.max(pw/iw,ph2/ih)*z, dw2=iw*s2, dh2=ih*s2;
     const dx2=px-(dw2-pw)*(fx/100), dy2=py-(dh2-ph2)*(fy/100);
     ctx.save(); ctx.beginPath(); ctx.rect(px,py,pw,ph2); ctx.clip();
