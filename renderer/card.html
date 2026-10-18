@@ -35,6 +35,7 @@ function shortDate(v){const [y,m,d]=v.split("-").map(Number); return `${d} ${MON
 
 /* Evening formats (5 p.m. slot). The 8 a.m. story dispatch has no format label. */
 const FORMATS={photo:"Photo of the Day",quote:"Quote of the Day",spec:"Spec Sheet"};
+const NAME_THIS_VIOLET="#5B4B8A"; /* Name This stamp, seal and clue: Mimeograph Violet */
 
 function fitLines(ctx,text,font,maxW,maxH,lineK,startPx,minPx){
   for(let s=startPx;s>=minPx;s-=Math.max(1,startPx*.03)){
@@ -127,18 +128,32 @@ function draw(cv,img,p){
   ctx.fillStyle=INK; ctx.font=`700 ${4.4*u}px Oswald`; ctx.letterSpacing=`${.02*4.4*u}px`;
   ctx.fillText("WW2 DISPATCHES",m,7.7*u);
   ctx.fillStyle=NAVY; ctx.font=`400 ${2.4*u}px "Special Elite"`; ctx.letterSpacing=`${.04*2.4*u}px`;
-  ctx.fillText("Dispatch "+pad(p.num)+(FORMATS[fmt]?"  ·  "+FORMATS[fmt]:""),m,11.3*u);
+  ctx.fillText(fmt==="namethis"?(p.subline||"Can you name it?"):("Dispatch "+pad(p.num)+(FORMATS[fmt]?"  ·  "+FORMATS[fmt]:"")),m,11.3*u);
 
   ctx.font=`600 ${2.9*u}px Oswald`; ctx.letterSpacing=`${.14*2.9*u}px`;
-  const label=sName.toUpperCase(), tw=ctx.measureText(label).width;
+  const NT=fmt==="namethis";
+  const label=NT?"NAME THIS":sName.toUpperCase(), tw=ctx.measureText(label).width;
+  const stampFill=NT?(p.stampColor||NAME_THIS_VIOLET):accent;
   const sw=tw+4*u, sh=5*u, cx=W-m-sw/2-.4*u, cy=topH/2+.2*u;
   ctx.save(); ctx.translate(cx,cy); ctx.rotate(-2*Math.PI/180);
-  ctx.fillStyle=accent; ctx.fillRect(-sw/2,-sh/2,sw,sh);
+  ctx.fillStyle=stampFill; ctx.fillRect(-sw/2,-sh/2,sw,sh);
   ctx.strokeStyle=PAPER; ctx.lineWidth=.32*u; ctx.strokeRect(-sw/2+.55*u,-sh/2+.55*u,sw-1.1*u,sh-1.1*u);
   ctx.fillStyle=PAPER; ctx.textAlign="center"; ctx.textBaseline="middle"; ctx.fillText(label,.07*u,.15*u);
   const r=rng(31); ctx.fillStyle=PAPER;
   for(let i=0;i<Math.floor(sw*sh/(u*u)*5);i++){ctx.globalAlpha=.12+r()*.3; const rr=(.04+r()*r()*.22)*u; ctx.beginPath(); ctx.arc(-sw/2+r()*sw,-sh/2+r()*sh,rr,0,Math.PI*2); ctx.fill();}
   ctx.globalAlpha=1; ctx.restore();
+
+  if(NT){
+    /* question seal in the top band, just left of the stamp, never over the photo */
+    const R=4.6*u, sx=cx-sw/2-R-2.6*u, sy=cy;
+    ctx.save(); ctx.translate(sx,sy); ctx.rotate(-6*Math.PI/180);
+    ctx.fillStyle=stampFill; ctx.beginPath(); ctx.arc(0,0,R,0,Math.PI*2); ctx.fill();
+    ctx.strokeStyle=PAPER; ctx.lineWidth=.32*u; ctx.beginPath(); ctx.arc(0,0,R-.75*u,0,Math.PI*2); ctx.stroke();
+    ctx.fillStyle=PAPER; ctx.textAlign="center"; ctx.textBaseline="middle";
+    ctx.font=`700 ${5.6*u}px Oswald`; ctx.letterSpacing="0px"; ctx.fillText("?",0,.35*u);
+    const r2=rng(17); for(let i=0;i<160;i++){ctx.globalAlpha=.12+r2()*.3; const a=r2()*Math.PI*2, d=r2()*R; ctx.beginPath(); ctx.arc(Math.cos(a)*d,Math.sin(a)*d,(.04+r2()*r2()*.2)*u,0,Math.PI*2); ctx.fill();}
+    ctx.globalAlpha=1; ctx.restore();
+  }
 
   const dateBase=H-botH+7.7*u, placeBase=dateBase+3.5*u;
   ctx.textAlign="left"; ctx.textBaseline="alphabetic";
@@ -152,7 +167,7 @@ function draw(cv,img,p){
   ctx.fillText("@ww2dispatches",W-m,placeBase);
   const pull=(p.pull||"").trim();
   if(pull){
-    ctx.fillStyle=accent; ctx.font=`600 ${3.3*u}px Oswald`; ctx.letterSpacing=`${.03*3.3*u}px`;
+    ctx.fillStyle=(fmt==="namethis")?(p.clueColor||NAME_THIS_VIOLET):accent; ctx.font=`600 ${3.3*u}px Oswald`; ctx.letterSpacing=`${.03*3.3*u}px`;
     const lines=wrap(ctx,pull.toUpperCase(),(W-2*m)*.48,2);
     lines.reverse().forEach((ln,i)=>ctx.fillText(ln,W-m,placeBase-3.6*u-i*3.7*u));
   }

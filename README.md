@@ -30,3 +30,9 @@ Same card bands with archival footage playing in the photo window, for big dispa
 python3 renderer/living_press.py <out_dir>   # writes living-press.html plus videos/ to publish
 ```
 Rebuild and republish to the same artifact (https://claude.ai/artifact/7bCSGHeexkFYyn6s1vxRSe) whenever a living card is added or a kit changes. Set `"scheduled"` in a dispatch's `kit` block to `true` or a short status line (for example "Buffer and YouTube Shorts scheduled · TikTok not yet").
+
+## Name This cards
+Puzzle cards for X Communities, posted twice a week through Typefully. No dispatch number, so they never affect the dispatch serial.
+* `namethis/` one JSON file per card: id, answer, date, place, clue (`pull`), photo, framing, target community, and sources.
+* Stamp, ? seal, and clue are Mimeograph Violet `#5B4B8A`. Pick photos with no visible names, hull numbers, or markings that give the answer away.
+* `node renderer/namethis.js [id ...]` writes `cards/namethis-<id>-x.jpg`.
