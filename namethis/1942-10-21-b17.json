@@ -11,5 +11,16 @@
   "community": "Modern History",
   "photoUrl": "https://commons.wikimedia.org/wiki/File:Boeing_B-17D_at_Wright_Field.jpg",
   "photoNote": "Early B-17D at Wright Field, about 1941. U.S. Air Force photo, public domain. Not the ditched aircraft (40-3089). Photo file not yet in the repo: the card was rendered in the browser and uploaded straight to Typefully.",
-  "sources": [{"title": "B-17D 40-3089, Pacific Wrecks", "url": "https://pacificwrecks.com/aircraft/b-17/40-3089.html"}]
+  "sources": [
+    {
+      "title": "B-17D 40-3089, Pacific Wrecks",
+      "url": "https://pacificwrecks.com/aircraft/b-17/40-3089.html"
+    }
+  ],
+  "typefully": 11329485,
+  "buffer": {
+    "threads": "6ad50a1d0b0d72757a3320ec",
+    "facebook": "6ad50b31ae173d6e001242fd"
+  },
+  "post_date": "2026-10-21"
 }

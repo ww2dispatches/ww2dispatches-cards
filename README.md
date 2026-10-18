@@ -33,6 +33,6 @@ Rebuild and republish to the same artifact (https://claude.ai/artifact/7bCSGHeex
 
 ## Name This cards
 Puzzle cards for X Communities, posted twice a week through Typefully. No dispatch number, so they never affect the dispatch serial.
-* `namethis/` one JSON file per card: id, answer, date, place, clue (`pull`), photo, framing, target community, and sources.
+* `namethis/` one JSON file per card: id, answer, date, place, clue (`pull`), photo, framing, target X community, sources, and once scheduled the Typefully draft id, Buffer ids (threads, facebook), post_date, and links. Full rules: the Project doc "WW2 Dispatches Name This".
 * Stamp, ? seal, and clue are Mimeograph Violet `#5B4B8A`. Pick photos with no visible names, hull numbers, or markings that give the answer away.
 * `node renderer/namethis.js [id ...]` writes `cards/namethis-<id>-x.jpg`.
