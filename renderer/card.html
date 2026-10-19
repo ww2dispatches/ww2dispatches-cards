@@ -34,7 +34,8 @@ function pad(n){return "No. "+String(Math.max(1,parseInt(n)||1)).padStart(3,"0")
 function shortDate(v){const [y,m,d]=v.split("-").map(Number); return `${d} ${MON[m-1]} ${y}`;}
 
 /* Evening formats (5 p.m. slot). The 8 a.m. story dispatch has no format label. */
-const FORMATS={photo:"Photo of the Day",quote:"Quote of the Day",spec:"Spec Sheet"};
+const FORMATS={photo:"Photo of the Day",quote:"Quote of the Day",spec:"Spec Sheet",footage:"The Footage"};
+/* "footage" is set by renderOverlays for Living Cards (label chosen by Brian 19 Oct 2026; Story Cards say "The Story"). */
 const NAME_THIS_VIOLET="#5B4B8A"; /* Name This stamp, seal and clue: Mimeograph Violet */
 
 function fitLines(ctx,text,font,maxW,maxH,lineK,startPx,minPx){
@@ -217,7 +218,8 @@ function drawVertical(cv,p){
   ctx.fillStyle=INK; ctx.font=`700 ${6.6*u}px Oswald`; ctx.letterSpacing=`${.02*6.6*u}px`;
   ctx.fillText("WW2 DISPATCHES",m,py-10.5*u);
   ctx.fillStyle=NAVY; ctx.font=`400 ${3.2*u}px "Special Elite"`; ctx.letterSpacing=`${.04*3.2*u}px`;
-  ctx.fillText("Dispatch "+pad(p.num),m,py-5*u);
+  const vf=(p.format||"").toLowerCase();
+  ctx.fillText("Dispatch "+pad(p.num)+(FORMATS[vf]?" · "+FORMATS[vf]:""),m,py-5*u);
   stamp(ctx,u,sName.toUpperCase(),accent,W-m-.4*u,py-8.2*u);
   ctx.textAlign="right"; ctx.fillStyle=NAVY; ctx.font=`400 ${3*u}px "Special Elite"`; ctx.letterSpacing=`${.02*3*u}px`;
   ctx.fillText("@ww2dispatches",W-m,py-16.5*u);
@@ -237,7 +239,8 @@ function drawVertical(cv,p){
 }
 
 /* Called by living.js: transparent PNG overlays plus the footage window for each shape. */
-window.renderOverlays = async function(p){
+window.renderOverlays = async function(p0){
+  const p={...p0,format:"footage"};
   await Promise.all(["700 10px Oswald","600 10px Oswald","500 10px Oswald",'400 10px "Special Elite"'].map(f=>document.fonts.load(f)));
   const out={};
   for (const [kind,w,h] of [["x",1600,1440],["instagram",1080,1350],["vertical",1080,1920]]) {
