@@ -1,4 +1,4 @@
-"""Narration for WW2 Dispatches story videos (Kokoro TTS, Apache 2.0).
+"""Narration for WW2 Dispatches Story Cards (Kokoro TTS, Apache 2.0).
 Usage: python3 renderer/story_tts.py <story-id> [voice] [speed]
 Reads stories/<id>.json, writes stories/audio/<id>/<voice>/<seg>.wav and dur.json.
 Model files live in $KOKORO_DIR (model.onnx, voices.npz). Default voice am_onyx at 0.95 (chosen 16 Oct 2026)."""

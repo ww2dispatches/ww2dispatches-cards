@@ -9,7 +9,7 @@ Two scheduled runs fill each Sunday to Saturday week: Thursday 7:47 p.m. Mountai
 * `dispatches/` one JSON file per dispatch: number, date, place, series, pull line, caption, photo framing, and sources.
 * `photos/` the public domain source photos.
 * `renderer/` the card renderer, a copy of the Dispatch Press drawing code run in headless Chromium, plus the video, story, slide, Name This, series log, and Living Press scripts.
-* `stories/` story video scripts, `kits/` Video Press Kits, `log/` the series log (rebuilt by `renderer/series_log.py`, never edited by hand), `newsletter/` weekly issue drafts.
+* `stories/` Story Card scripts, `kits/` Video Press Kits, `log/` the series log (rebuilt by `renderer/series_log.py`, never edited by hand), `newsletter/` weekly issue drafts.
 * `archive/` retired files (the Grok scout and the old Facebook queue). Not used; do not edit.
 
 ## Rendering
@@ -22,14 +22,14 @@ Framing fields in a dispatch file work like the Dispatch Press sliders: `focusX`
 
 Public link pattern: `https://raw.githubusercontent.com/ww2dispatches/ww2dispatches-cards/main/cards/dispatch-NNN-x.jpg`
 
-## Living cards (video)
+## Living Cards (video)
 Same card bands with archival footage playing in the photo window, for big dispatches that have film.
 * Since 18 Oct 2026 trimmed clips and finished videos are committed to ww2dispatches/ww2dispatches-videos (`footage/` and `videos/`), and Buffer links to `https://raw.githubusercontent.com/ww2dispatches/ww2dispatches-videos/main/videos/<file>`. This repo's `footage/` and `videos/` are working folders that ignore .mp4 files (a few older .mp4 files stay until the 20 to 23 Oct 2026 posts that use them have gone out).
 * Finished clips: `dispatch-NNN-x.mp4` (1600 x 1440), `dispatch-NNN-instagram.mp4` (1080 x 1350), `dispatch-NNN-vertical.mp4` (1080 x 1920, for Reels, TikTok, and Shorts), each with a `-poster.jpg` of the first frame.
 * Add a `video` block to the dispatch JSON (`footage`, optional `focusX` and `focusY`, plus `sourceUrl` and `note`), then run `node renderer/living.js <id>`.
 
 ## Living Press page
-`renderer/living_press.py` builds the Living Press review page (a pinned claude.ai artifact) from every dispatch that has living card videos and a kit (story video support is added by the next Friday video run).
+`renderer/living_press.py` builds the Living Press review page (a pinned claude.ai artifact) from every dispatch that has Living Card videos and a kit (Story Card support is added by the next Friday video run).
 ```
 python3 renderer/living_press.py <out_dir>   # writes living-press.html plus videos/ to publish
 ```

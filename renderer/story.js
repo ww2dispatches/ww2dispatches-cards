@@ -1,4 +1,4 @@
-// Renders a WW2 Dispatches story video: archival photos and typed cards in the living card frame,
+// Renders a WW2 Dispatches Story Card: archival photos and typed cards in the Living Card frame,
 // with narration and captions. No music.
 // Usage: node renderer/story.js <story-id> [voice]
 // Needs stories/<id>.json and narration from renderer/story_tts.py (stories/audio/<id>/<voice>/).

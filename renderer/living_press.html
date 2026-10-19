@@ -4,7 +4,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Special+Elite&display=swap">
 <style>
-/* Layout: a telegram band across the top, a dispatch list on the left, the three living cards side by side, then the press kit as copy slips. */
+/* Layout: a telegram band across the top, a dispatch list on the left, the three Living Cards side by side, then the press kit as copy slips. */
 :root {
   --paper: #EDE4CF;
   --slip: #F6F0E1;
@@ -118,14 +118,14 @@ figcaption a { font-family: var(--read); font-size: 13px; color: var(--navy); }
 
 <header class="band">
   <div class="wrap">
-    <div class="word">WW2 Dispatches<small>Living Press · living cards, story videos, and press kits</small></div>
+    <div class="word">WW2 Dispatches<small>Living Press · Living Cards, Story Cards, and press kits</small></div>
     <div class="band-note"><span class="priority">Film</span><span id="tally"></span></div>
   </div>
 </header>
 
 <main class="wrap layout">
   <nav aria-label="Videos">
-    <div class="list-label">Living cards and story videos</div>
+    <div class="list-label">Living Cards and Story Cards</div>
     <div class="list" id="list"></div>
   </nav>
   <section id="view" aria-live="polite"></section>
@@ -145,7 +145,7 @@ document.getElementById("tally").textContent = DATA.length === 1 ? "1 video" : D
 
 function pick(id) {
   const d = DATA.find(x => x.id === id) || DATA[0];
-  if (!d) { view.innerHTML = '<p class="empty">No videos yet. Ask Claude to build a living card or a story video, and it will appear here.</p>'; return; }
+  if (!d) { view.innerHTML = '<p class="empty">No videos yet. Ask Claude to build a Living Card or a Story Card, and it will appear here.</p>'; return; }
   try { localStorage.setItem("lp-current", d.id); } catch (e) {}
   [...listEl.children].forEach(b => b.setAttribute("aria-current", b.dataset.id === d.id ? "true" : "false"));
   render(d);
@@ -185,7 +185,7 @@ function render(d) {
     </div>
 
     <div class="sec">
-      <div class="sec-top"><div class="h3">${d.type === "story" ? "The Story (narrated photo video)" : "The three living cards"}</div>
+      <div class="sec-top"><div class="h3">${d.type === "story" ? "Story Card (narrated photos)" : "The three Living Cards"}</div>
         <div style="display:flex;gap:8px"><button class="btn" id="playAll">Play all</button><button class="btn ghost" id="stopAll">Stop</button></div></div>
       <div class="reels">
         ${reel("x", "X", "1600 × 1440")}
@@ -225,7 +225,7 @@ function render(d) {
 DATA.forEach(d => {
   const b = document.createElement("button");
   b.type = "button"; b.dataset.id = d.id; b.style.setProperty("--sc", `var(--s-${d.series})`);
-  b.innerHTML = `<span class="n">Dispatch ${no(d.num)}</span><span class="t">${esc(d.title)}</span><span class="d">${bigDate(d.date)} · ${d.type === "story" ? "The Story" : "Living card"}</span>`;
+  b.innerHTML = `<span class="n">Dispatch ${no(d.num)}</span><span class="t">${esc(d.title)}</span><span class="d">${bigDate(d.date)} · ${d.type === "story" ? "Story Card" : "Living Card"}</span>`;
   b.onclick = () => pick(d.id);
   listEl.appendChild(b);
 });

@@ -1,4 +1,4 @@
-"""Builds the Living Press page: every dispatch that has a living card (archival film) or a story video
+"""Builds the Living Press page: every dispatch that has a Living Card (archival film) or a Story Card
 (narrated archival photos, labelled "The Story"), with its press kit.
 
 Usage: python3 renderer/living_press.py <out_dir>
