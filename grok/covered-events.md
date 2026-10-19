@@ -1,12 +1,13 @@
 # Covered Events
 
 ## Live list (check every time)
-Our full list of posted and scheduled dispatches is kept up to date automatically every Friday here:
+Our full list of posted and scheduled dispatches is kept up to date automatically every Friday here (on a Thursday run it covers everything through the coming Saturday, which is all you need):
 https://raw.githubusercontent.com/ww2dispatches/ww2dispatches-cards/main/log/series-log.csv
 Each row has the event date and title. Skip anything on it. The two week continuation rule means another day of the same action (a second day of the El Alamein barrage). A separate major battle in the same campaign, like Samar after the Leyte landing, is a new event and fair game.
 
 ## Already planned (do not suggest as new)
 * Also skip any week that already has a report in the scout/ folder of the repo, unless I ask for a redo.
+* Earlier scout reports in scout/ are not a do not use list. A pick that was suggested before but never posted (it is not in the live log) is fair game.
 * Oct 25, 1944 | Battle off Samar and the first organized kamikaze attacks (a separate major battle, not a repeat of the Oct 20 Leyte landing)
 * Nov 8, 1942 | Operation Torch landings
 * Nov 9, 1938 | Kristallnacht

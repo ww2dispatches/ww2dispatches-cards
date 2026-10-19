@@ -1,5 +1,11 @@
 # Scout Report Format
 
+## File name and title
+* Save to scout/grok-scout-YYYY-MM-DD.md, where the date is the SUNDAY that starts the scouted week (never the day you run). Example: a run on Thursday 22 Oct 2026 scouts Sun 25 Oct to Sat 31 Oct and saves scout/grok-scout-2026-10-25.md. Claude's Friday batch looks for exactly that name.
+* Title line: "# Grok Scout: Oct 25 to Oct 31". Commit message: "Scout report Oct 25 to Oct 31".
+* If that file already exists, do not overwrite it. Stop and say so.
+
+## Report structure
 Use this exact structure. Keep every label exactly as written, because Claude reads the report by these labels. Write OPEN in place of a slot you could not fill to the quality bar, with one line saying why. Use * for list items, never dashes.
 
 ## Template
@@ -16,6 +22,7 @@ Source 1: strong source link
 Source 2: second strong source link (required if anything is surprising)
 Photo 1: what it shows | from the day: yes or no | license | record number | exact page link
 Photo 2: optional, same layout
+Photo 3 to Photo 6: optional extra photos of the same event, same layout (see "Extra photos" below)
 Film: what it shows | record number | exact page link (or: none found)
 
 ### 5 PM Evening
@@ -38,11 +45,15 @@ Event: 1941 | Home Front | one line | photo page link
 Series: Battle Lines n, Home Front n, Blueprint n, Statecraft n
 Spec Sheets: n
 Open slots: list them, or none
+Video ready days: dates whose 8 AM Story has four or more usable photos (Photo 1 to Photo 6), or none
 Living card candidate: event and film link, or none
 
 ## Dropped
 * Date | event | reason (wrong date, already covered, no usable photo, minor)
 ```
+
+## Extra photos (for story videos and Instagram carousels)
+Story videos need four to six real photos of one event, and Instagram carousels use two to four extra photos. So for the 8 AM Story, list up to six photos whenever good ones exist, aiming for at least four days a week with four or more. Every extra photo follows the same rules as Photo 1: the same event, a record number, an exact archive page, a cleared license. Never pad with weak or unrelated photos; fewer good photos beats more weak ones.
 
 ## Filled example (one date)
 
@@ -75,7 +86,6 @@ Event: 1944 | Battle Lines | Battle of Leyte Gulf ends with the Japanese fleet w
 * Every date has an 8 AM Story, a 5 PM Evening, and a Backup, or a clear OPEN with a reason.
 * Every Event line is true for this exact calendar date.
 * Every pick has two Source lines, and Wikipedia is never the only one.
-* Every pick has a Photo 1 with a record number and an exact page link.
 * Every pick has a Photo 1 with a record number and an exact page link on the archive itself (NARA, LOC, NHHC, IWM, Commons file page). A museum article image, a fan site like navsource, or a bare image file is not enough.
 * A photo marked "rights status not evaluated" or "no known restrictions" is not cleared. Say so on the Photo line instead of calling it public domain.
 * Variety: no event fills more than two slots in the week, and the two slots on one date are different events (except a Spec Sheet or Quote that adds something new). Never use the same event for two 8 AM Stories.
@@ -83,4 +93,6 @@ Event: 1944 | Battle Lines | Battle of Leyte Gulf ends with the Japanese fleet w
 * Nothing repeats our live dispatch log or Covered Events.md.
 * Every Spec number has a source link; every Quote is word for word on its linked page.
 * The Week check counts are correct: count all 14 slots (8 AM and 5 PM) by series, and recount before saving. At least one Home Front, two Spec Sheets, and every series at least twice.
+* Video ready days lists only dates with four or more photos that pass the same checks as Photo 1.
+* The file name uses the Sunday's date and the title matches the week.
 * No dashes anywhere in your own writing.
