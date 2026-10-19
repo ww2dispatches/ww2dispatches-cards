@@ -2,3 +2,4 @@
 # Renderers still write here; copy finished files to that repo and commit them there.
 videos/*.mp4
 footage/*.mp4
+node_modules/
