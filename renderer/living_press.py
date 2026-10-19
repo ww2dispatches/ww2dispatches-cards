@@ -1,4 +1,5 @@
-"""Builds the Living Press page: every dispatch that has living card videos, with its press kit.
+"""Builds the Living Press page: every dispatch that has a living card (archival film) or a story video
+(narrated archival photos, labelled "The Story"), with its press kit.
 
 Usage: python3 renderer/living_press.py <out_dir>
 Writes <out_dir>/living-press.html and copies the videos and posters into <out_dir>/videos/,
@@ -55,6 +56,31 @@ def main(out_dir):
     for f in sorted((ROOT / "dispatches").glob("*.json")):
         d = json.loads(f.read_text())
         stem = f"dispatch-{d['num']:03d}"
+        st = d.get("story") or {}
+        story_mp4 = ROOT / st.get("video", f"videos/{stem}-story-am_onyx.mp4")
+        if st and story_mp4.exists():
+            dest = out / "videos" / story_mp4.name
+            if story_mp4.stat().st_size > 14e6:
+                # Artifacts take at most 15 MB per file, so the page gets a lighter review copy; Buffer uses the full file.
+                subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(story_mp4), "-c:v", "libx264", "-crf", "30", "-preset", "slow",
+                                "-c:a", "aac", "-b:a", "96k", "-movflags", "+faststart", str(dest)], check=True)
+            else:
+                shutil.copy(story_mp4, dest)
+            sk = st.get("kit", {})
+            items.append({
+                "type": "story", "num": d["num"], "id": d["id"] + "-story", "title": d["title"], "date": d["date"],
+                "place": d["place"], "series": d["series"],
+                "approved": nice_date(sk.get("approved", "")),
+                "scheduled": sk.get("scheduled") or ("Scheduled on all six channels" if len(st.get("buffer", {})) >= 6 else ""),
+                "postDay": nice_date(d["date"])[:-5] if not st.get("postDate") else nice_date(st["postDate"]),
+                "videos": {"story": {"src": f"videos/{story_mp4.name}", "poster": "", "raw": VIDEO_RAW + f"videos/{story_mp4.name}",
+                                     "seconds": seconds(story_mp4), "mb": round(story_mp4.stat().st_size / 1e6, 1)}},
+                "kit": {"filmCaption": sk.get("caption", ""), "ytTitle": sk.get("youtubeTitle", ""),
+                        "ytDesc": sk.get("youtubeDescription", ""), "tiktok": sk.get("tiktokCaption", ""),
+                        "schedule": sk.get("schedule", []), "thumbnail": sk.get("thumbnail", "")},
+                "source": {"url": "", "note": json.loads((ROOT / st["script"]).read_text()).get("note", "")} if st.get("script") else None,
+                "kitUrl": BLOB + st.get("script", ""),
+            })
         if not (ROOT / "videos" / f"{stem}-x.mp4").exists():
             continue
         vids = {}
@@ -77,7 +103,7 @@ def main(out_dir):
         _, film = find(secs, "Short caption")
         _, thumb = find(secs, "Thumbnail check")
         items.append({
-            "num": d["num"], "id": d["id"], "title": d["title"], "date": d["date"], "place": d["place"],
+            "type": "living", "num": d["num"], "id": d["id"], "title": d["title"], "date": d["date"], "place": d["place"],
             "series": d["series"],
             "approved": nice_date(kitmeta.get("approved", "")),
             "scheduled": kitmeta.get("scheduled") or "",
@@ -98,7 +124,7 @@ def main(out_dir):
     tpl = (Path(__file__).parent / "living_press.html").read_text()
     html = tpl.replace("/*DATA*/[]", json.dumps(items, ensure_ascii=False).replace("</", "<\\/"))
     (out / "living-press.html").write_text(html)
-    print(f"{len(items)} living card(s) -> {out / 'living-press.html'}")
+    print(f"{len(items)} video(s) -> {out / 'living-press.html'}")
 
 
 if __name__ == "__main__":

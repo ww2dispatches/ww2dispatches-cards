@@ -23,5 +23,31 @@
     "instagram": "6ad11072146fd001b11dced3",
     "threads": "6ad11084dd8e15df34b203e3",
     "facebook": "6ad2d00d52adf2bfae6de18b"
+  },
+  "story": {
+    "video": "videos/dispatch-015-story-am_onyx.mp4",
+    "script": "stories/1945-10-24-un.json",
+    "voice": "am_onyx",
+    "speed": 0.95,
+    "time": "12:00",
+    "buffer": {
+      "x": "6ad687dc4d4b435031505b4f",
+      "instagram": "6ad687df46c9e2453ba0a2a1",
+      "threads": "6ad687e24d814f3c383a271e",
+      "facebook": "6ad687e64d4b435031505e1f",
+      "youtube": "6ad687f57b002f7cbe4fa7bf",
+      "tiktok": "6ad687f8e61f3ff983516497"
+    },
+    "kit": {
+      "caption": "The world had just survived its deadliest war. On this day, a new organization was built to stop the next one.\n\nOn 24 October 1945, the United Nations Charter took effect. Fifty nations had signed it in San Francisco that June, and Poland made 51. October 24 is still United Nations Day.\n\nDispatch No. 015, the full story. Narration is AI generated; the photos are real archival images.",
+      "youtubeTitle": "The Day the United Nations Was Born, 24 October 1945 #shorts",
+      "tiktokCaption": "The world had just survived its deadliest war. On 24 Oct 1945, the United Nations Charter took effect to stop the next one. Narration is AI generated. #WW2 #OnThisDay #History #UnitedNations #UNDay",
+      "schedule": [
+        "12:00 p.m. Mountain, Sat 24 Oct 2026, all six channels in Buffer",
+        "X and Facebook end #OTD #WW2 #OnThisDay #History #UnitedNations; Threads has no tags (History Threads topic)",
+        "Flagged AI generated on X, Instagram, TikTok, and YouTube; Facebook as a Reel"
+      ],
+      "thumbnail": "Opens on the overhead view of the Charter signing hall, San Francisco, June 1945."
+    }
   }
 }

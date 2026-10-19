@@ -22,6 +22,28 @@
     "x": "6ad110354fdae32ad394f7fb",
     "instagram": "6ad1104cdd8e15df34b1fea6",
     "threads": "6ad1104e4fdae32ad394fe9f",
-    "facebook": "6ad2d00087c4935770a7790a"
+    "facebook": "6ad2d00087c4935770a7790a",
+    "x_film": "6ad687c5e61f3ff98351591c",
+    "instagram_reel": "6ad687c852bb7ebd605f2283",
+    "threads_film": "6ad687cae61f3ff983515bf0",
+    "facebook_film": "6ad687cd46c9e2453ba0a09e",
+    "youtube": "6ad687d24d4b4350315059ba",
+    "tiktok": "6ad687d552bb7ebd605f2404"
+  },
+  "video": {
+    "footage": "footage/1944-10-21-aachen.mp4",
+    "focusX": 50,
+    "focusY": 50,
+    "sourceUrl": "https://catalog.archives.gov/id/16458",
+    "note": "AACHEN, GERMANY, 15 October 1944. U.S. Army Signal Corps film 111-ADC-2654 (NARA 16458), cameraman Sgt. Newman, silent. An M-10 tank destroyer fires point blank into a building, infantry climb over a wall between houses, and a crew pushes a 57mm antitank gun through the streets. Filmed during the battle, six days before the surrender. U.S. government work, public domain (NARA's blanket 'possibly copyright' flag on Signal Corps reels, as on Leyte's 111-ADC-3205). Clip uses 1:42.0 to 1:47.6, 4:18.5 to 4:23.5, and 5:45.3 to 5:50.3."
+  },
+  "kit": {
+    "file": "kits/dispatch-009-kit.md",
+    "filmCaption": "Film from Aachen, 15 October 1944. Six days before the city surrendered, U.S. Army cameramen filmed the house to house fighting: a tank destroyer firing point blank into a building, infantry going over walls, and a crew pushing an antitank gun through the streets.",
+    "youtubeTitle": "Street Fighting in Aachen, the First German City to Fall, 1944 #shorts",
+    "tiktokCaption": "The first German city to fall. Real film of the street fighting in Aachen, shot 15 Oct 1944, six days before it surrendered. #WW2 #OnThisDay #History #Aachen",
+    "thumbnailCheck": "pass: first frame is an M-10 tank destroyer aimed at a shattered building",
+    "videoTime": "12:00 America/Denver",
+    "scheduled": "Buffer, all six channels, noon 21 Oct"
   }
 }

@@ -1,0 +1,66 @@
+{
+  "dispatch": "1945-10-24-un",
+  "note": "Story video for Dispatch No. 015. Photos: Charter signing ceremony at the San Francisco Veterans War Memorial Building, June 1945, Office of War Information photographs by Nick Parrino (NARA 208-UNC-538 British delegation signing, 208-UNC-627 Stettinius signing as Truman watches, 208-UNC-498 Gromyko signing for the Soviet Union, 208-UNC-741 press and spectators after the last signature), U.S. government works, public domain. Poster: \"We the peoples of the United Nations\", NARA 516086, public domain. No public domain film of 24 Oct 1945 is online at NARA (Universal Newsreel for late October 1945 is not digitized), so this is a story video.",
+  "segments": [
+    {
+      "id": "s01",
+      "say": "The world had just survived its deadliest war. On this day, a new organization was built to stop the next one.",
+      "caption": "The world had just survived its deadliest war. On this day, a new organization was built to stop the next one.",
+      "visual": {"type": "photo", "src": "stories/img/un_hall_538.jpg", "focusX": 50, "focusY": 50, "zoom": "in"}
+    },
+    {
+      "id": "s02",
+      "say": "October twenty fourth, nineteen forty five. The United Nations Charter takes effect.",
+      "caption": "24 October 1945. The United Nations Charter takes effect.",
+      "visual": {"type": "card", "kicker": "In force", "lines": ["24 OCT 1945", "The Charter", "takes effect"]}
+    },
+    {
+      "id": "s03",
+      "say": "China, France, the Soviet Union, the United Kingdom, and the United States have all ratified it, along with a majority of the other signers.",
+      "caption": "China, France, the Soviet Union, the United Kingdom, and the United States have all ratified it, along with a majority of the other signers.",
+      "visual": {"type": "card", "kicker": "Ratified by", "lines": ["THE BIG FIVE", "China · France", "Soviet Union", "United Kingdom", "United States"]}
+    },
+    {
+      "id": "s04",
+      "say": "Fifty nations had signed the Charter in San Francisco that June.",
+      "caption": "Fifty nations had signed the Charter in San Francisco that June.",
+      "visual": {"type": "photo", "src": "stories/img/un_stettinius_627.jpg", "focusX": 35, "focusY": 60, "zoom": "in"}
+    },
+    {
+      "id": "s05",
+      "say": "Poland, not represented at the conference, signed in October, making fifty one founding members.",
+      "caption": "Poland, not represented at the conference, signed in October, making 51 founding members.",
+      "visual": {"type": "card", "kicker": "Founding members", "lines": ["51 NATIONS", "50 signed in June", "Poland signed in October"]}
+    },
+    {
+      "id": "s06",
+      "say": "Its opening words still echo. We the peoples of the United Nations.",
+      "caption": "Its opening words still echo: \"We the peoples of the United Nations.\"",
+      "visual": {"type": "photo", "src": "stories/img/un_poster_516086.jpg", "focusX": 50, "focusY": 15, "zoom": "out"}
+    },
+    {
+      "id": "s07",
+      "say": "The League of Nations had failed to stop the road to war in the nineteen thirties.",
+      "caption": "The League of Nations had failed to stop the road to war in the 1930s.",
+      "visual": {"type": "card", "kicker": "The lesson", "lines": ["LEAGUE OF NATIONS", "Could not stop", "the road to war"]}
+    },
+    {
+      "id": "s08",
+      "say": "The U N was designed with a stronger Security Council, and a permanent seat for each of the great powers that won the war.",
+      "caption": "The UN was designed with a stronger Security Council, and a permanent seat for each of the great powers that won the war.",
+      "visual": {"type": "photo", "src": "stories/img/un_gromyko_498.jpg", "focusX": 55, "focusY": 55, "zoom": "out"}
+    },
+    {
+      "id": "s09",
+      "say": "October twenty fourth is still marked every year as United Nations Day.",
+      "caption": "October 24 is still marked every year as United Nations Day.",
+      "visual": {"type": "photo", "src": "stories/img/un_crowd_741.jpg", "focusX": 50, "focusY": 40, "zoom": "in"}
+    },
+    {
+      "id": "s10",
+      "say": "Follow W W Two Dispatches. The war, on the day it happened.",
+      "caption": "Follow WW2 Dispatches. The war, on the day it happened.",
+      "visual": {"type": "end"}
+    }
+  ]
+}

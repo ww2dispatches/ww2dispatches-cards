@@ -17,7 +17,7 @@
   --s-battle: #B04A3E;
   --s-home: #5E6B3A;
   --s-blueprint: #3D5884;
-  --s-statecraft: #B8862B;
+  --s-statecraft: #B8862B; --s-state: #B8862B; --s-blue: #3D5884;
   --display: "Oswald", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
   --type: "Special Elite", "Courier New", Courier, monospace;
   --body: "Oswald", "Arial Narrow", Arial, sans-serif;
@@ -27,14 +27,14 @@
   :root:not([data-theme="light"]) {
     --paper: #1C1915; --slip: #26221C; --ink: #EDE4CF; --ink-soft: #B3A88F;
     --navy: #93A9D0; --red: #D9796B; --rule: #403A30; --ok: #A3B178;
-    --s-battle: #D9796B; --s-home: #A3B178; --s-blueprint: #93A9D0; --s-statecraft: #D8A94F;
+    --s-battle: #D9796B; --s-home: #A3B178; --s-blueprint: #93A9D0; --s-statecraft: #D8A94F; --s-state: #D8A94F; --s-blue: #93A9D0;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --paper: #1C1915; --slip: #26221C; --ink: #EDE4CF; --ink-soft: #B3A88F;
   --navy: #93A9D0; --red: #D9796B; --rule: #403A30; --ok: #A3B178;
-  --s-battle: #D9796B; --s-home: #A3B178; --s-blueprint: #93A9D0; --s-statecraft: #D8A94F;
+  --s-battle: #D9796B; --s-home: #A3B178; --s-blueprint: #93A9D0; --s-statecraft: #D8A94F; --s-state: #D8A94F; --s-blue: #93A9D0;
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
@@ -118,14 +118,14 @@ figcaption a { font-family: var(--read); font-size: 13px; color: var(--navy); }
 
 <header class="band">
   <div class="wrap">
-    <div class="word">WW2 Dispatches<small>Living Press · film cards and press kits</small></div>
+    <div class="word">WW2 Dispatches<small>Living Press · living cards, story videos, and press kits</small></div>
     <div class="band-note"><span class="priority">Film</span><span id="tally"></span></div>
   </div>
 </header>
 
 <main class="wrap layout">
-  <nav aria-label="Living cards">
-    <div class="list-label">Living cards</div>
+  <nav aria-label="Videos">
+    <div class="list-label">Living cards and story videos</div>
     <div class="list" id="list"></div>
   </nav>
   <section id="view" aria-live="polite"></section>
@@ -133,7 +133,7 @@ figcaption a { font-family: var(--read); font-size: 13px; color: var(--navy); }
 
 <script>
 const DATA = /*DATA*/[];
-const SERIES = { battle: "Battle Lines", home: "Home Front", blueprint: "Blueprint", statecraft: "Statecraft" };
+const SERIES = { battle: "Battle Lines", home: "Home Front", blue: "Blueprint", blueprint: "Blueprint", state: "Statecraft", statecraft: "Statecraft" };
 const MONTHS = ["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"];
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const no = n => "No. " + String(n).padStart(3, "0");
@@ -141,11 +141,11 @@ const bigDate = iso => { const [y, m, d] = iso.split("-"); return `${+d} ${MONTH
 
 const listEl = document.getElementById("list");
 const view = document.getElementById("view");
-document.getElementById("tally").textContent = DATA.length === 1 ? "1 living card" : DATA.length + " living cards";
+document.getElementById("tally").textContent = DATA.length === 1 ? "1 video" : DATA.length + " videos";
 
 function pick(id) {
   const d = DATA.find(x => x.id === id) || DATA[0];
-  if (!d) { view.innerHTML = '<p class="empty">No living cards yet. Ask Claude to build one for a major dispatch, and it will appear here.</p>'; return; }
+  if (!d) { view.innerHTML = '<p class="empty">No videos yet. Ask Claude to build a living card or a story video, and it will appear here.</p>'; return; }
   try { localStorage.setItem("lp-current", d.id); } catch (e) {}
   [...listEl.children].forEach(b => b.setAttribute("aria-current", b.dataset.id === d.id ? "true" : "false"));
   render(d);
@@ -185,19 +185,20 @@ function render(d) {
     </div>
 
     <div class="sec">
-      <div class="sec-top"><div class="h3">The three living cards</div>
+      <div class="sec-top"><div class="h3">${d.type === "story" ? "The Story (narrated photo video)" : "The three living cards"}</div>
         <div style="display:flex;gap:8px"><button class="btn" id="playAll">Play all</button><button class="btn ghost" id="stopAll">Stop</button></div></div>
       <div class="reels">
         ${reel("x", "X", "1600 × 1440")}
         ${reel("instagram", "Instagram Reel · Threads", "1080 × 1350")}
         ${reel("vertical", "TikTok · YouTube Shorts", "1080 × 1920")}
+        ${reel("story", "All six channels · unmute to hear the narration", "1080 × 1920")}
       </div>
     </div>
 
     <div class="sec kit">
       <div class="slips">
         <div class="h3">Press kit</div>
-        ${k.filmCaption ? slip("Film caption", "X quote post, Instagram Reel, Threads", k.filmCaption, 280) : ""}
+        ${k.filmCaption ? slip(d.type === "story" ? "Caption" : "Film caption", d.type === "story" ? "X, Instagram Reel, Threads, Facebook Reel" : "X, Instagram Reel, Threads, Facebook", k.filmCaption, d.type === "story" ? 500 : 280) : ""}
         ${k.ytTitle ? slip("YouTube Shorts title", "YouTube Shorts", k.ytTitle, 100) : ""}
         ${k.ytDesc ? slip("YouTube Shorts description", "YouTube Shorts", k.ytDesc, 5000) : ""}
         ${k.tiktok ? slip("TikTok caption", "TikTok", k.tiktok, 2200) : ""}
@@ -205,8 +206,8 @@ function render(d) {
       <aside class="facts">
         ${k.schedule.length ? `<div><div class="h3">Posting plan</div><ul>${k.schedule.map(s => `<li>${esc(s)}</li>`).join("")}</ul></div>` : ""}
         ${k.thumbnail ? `<div><div class="h3">Thumbnail check</div><p>${esc(k.thumbnail)}</p></div>` : ""}
-        ${d.source ? `<div><div class="h3">Source film</div><p>${esc(d.source.note)}</p><p><a href="${esc(d.source.url)}" target="_blank" rel="noopener">${/archives\.gov/.test(d.source.url) ? "Open the film record at the National Archives" : "Open the source film"}</a></p></div>` : ""}
-        <div><div class="h3">Full kit</div><p><a href="${esc(d.kitUrl)}" target="_blank" rel="noopener">Open the kit file on GitHub</a></p></div>
+        ${d.source ? `<div><div class="h3">${d.type === "story" ? "Photos and sources" : "Source film"}</div><p>${esc(d.source.note)}</p>${d.source.url ? `<p><a href="${esc(d.source.url)}" target="_blank" rel="noopener">${/archives\.gov/.test(d.source.url) ? "Open the film record at the National Archives" : "Open the source film"}</a></p>` : ""}</div>` : ""}
+        <div><div class="h3">${d.type === "story" ? "Script" : "Full kit"}</div><p><a href="${esc(d.kitUrl)}" target="_blank" rel="noopener">${d.type === "story" ? "Open the story script on GitHub" : "Open the kit file on GitHub"}</a></p></div>
       </aside>
     </div>`;
 
@@ -224,7 +225,7 @@ function render(d) {
 DATA.forEach(d => {
   const b = document.createElement("button");
   b.type = "button"; b.dataset.id = d.id; b.style.setProperty("--sc", `var(--s-${d.series})`);
-  b.innerHTML = `<span class="n">Dispatch ${no(d.num)}</span><span class="t">${esc(d.title)}</span><span class="d">${bigDate(d.date)} · ${SERIES[d.series]}</span>`;
+  b.innerHTML = `<span class="n">Dispatch ${no(d.num)}</span><span class="t">${esc(d.title)}</span><span class="d">${bigDate(d.date)} · ${d.type === "story" ? "The Story" : "Living card"}</span>`;
   b.onclick = () => pick(d.id);
   listEl.appendChild(b);
 });
