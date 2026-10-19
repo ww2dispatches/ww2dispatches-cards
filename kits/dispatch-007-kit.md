@@ -9,16 +9,15 @@ Event date: 20 October 1944 · Series: Battle Lines · Status: approved by Brian
 | Instagram Reel, Threads | videos/dispatch-007-instagram.mp4 | 1080 x 1350, 17.6 s |
 | TikTok, YouTube Shorts | videos/dispatch-007-vertical.mp4 | 1080 x 1920, 17.6 s |
 
-Public links: https://raw.githubusercontent.com/ww2dispatches/ww2dispatches-cards/main/videos/dispatch-007-<x|instagram|vertical>.mp4
+Public links: https://raw.githubusercontent.com/ww2dispatches/ww2dispatches-videos/main/videos/dispatch-007-<x|instagram|vertical>.mp4 (the posts scheduled before 18 Oct 2026 still point at the old copies in this repo until they go out)
 
 ## Thumbnail check
 Passed. The first frame is MacArthur, in his sunglasses and peaked cap, riding the landing craft with his staff. Recognizable at feed size.
 
 ## Schedule (20 Oct 2026)
-* 8:00 a.m. Mountain: still card with the full story caption (Buffer: X, Instagram, Threads).
-* 12:00 p.m. Mountain: living card (Buffer: X as its own video post, Instagram as a Reel, Threads with the 4:5 video).
-* After noon: Brian replies to the 8 a.m. X still with "Watch the film from that day:" and a link to the noon film post (about one minute by hand).
-* 12:00 p.m. Mountain: vertical video to YouTube Shorts, 12:05 p.m. to TikTok (Metricool).
+* 8:00 a.m. Mountain: still card with the full story caption (Buffer: X, Instagram, Threads, Facebook).
+* 12:00 p.m. Mountain: living card on all six channels in Buffer: X as its own video post, Instagram as a Reel, Threads and Facebook with the 4:5 video, and the vertical video on YouTube Shorts and TikTok (moved off Metricool 18 Oct 2026).
+* No reply links the film to the 8 a.m. still (dropped 18 Oct 2026).
 
 ## Short caption: X, Instagram, Threads
 Film from Leyte, 20 October 1944. General MacArthur rides a landing craft toward Red Beach with President Sergio Osmeña of the Philippines, then heads inland. U.S. Army Signal Corps footage.

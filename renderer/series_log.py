@@ -5,7 +5,7 @@ Writes two files:
   log/series-counts.csv  running totals per series
 
 Run from the repo root:  python3 renderer/series_log.py
-The Friday batch runs this after scheduling, so the log never needs typing by hand.
+Both weekly runs (Thursday cards, Friday videos) run this after scheduling, so the log never needs typing by hand.
 """
 import csv, glob, json, os
 from collections import Counter
