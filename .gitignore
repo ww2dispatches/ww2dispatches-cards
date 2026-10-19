@@ -1,0 +1,4 @@
+# Videos and trimmed footage live in the ww2dispatches-videos repo (moved 18 Oct 2026).
+# Renderers still write here; copy finished files to that repo and commit them there.
+videos/*.mp4
+footage/*.mp4

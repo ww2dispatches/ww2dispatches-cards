@@ -10,6 +10,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 RAW = "https://raw.githubusercontent.com/ww2dispatches/ww2dispatches-cards/main/"
 BLOB = "https://github.com/ww2dispatches/ww2dispatches-cards/blob/main/"
+# Videos live in the separate ww2dispatches-videos repo since 18 Oct 2026; clone it and copy its videos/ into
+# this repo's videos/ (ignored by git) before running this script.
+VIDEO_RAW = "https://raw.githubusercontent.com/ww2dispatches/ww2dispatches-videos/main/"
 
 
 def sections(md):
@@ -64,7 +67,7 @@ def main(out_dir):
             if poster.exists():
                 shutil.copy(poster, out / "videos" / poster.name)
             vids[kind] = {"src": f"videos/{mp4.name}", "poster": f"videos/{poster.name}" if poster.exists() else "",
-                          "raw": RAW + f"videos/{mp4.name}", "seconds": seconds(mp4),
+                          "raw": VIDEO_RAW + f"videos/{mp4.name}", "seconds": seconds(mp4),
                           "mb": round(mp4.stat().st_size / 1e6, 1)}
         kitmeta = d.get("kit", {})
         kitfile = ROOT / kitmeta.get("file", f"kits/{stem}-kit.md")
