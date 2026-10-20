@@ -17,39 +17,29 @@ const FPS = 30, LEAD = 0.3, GAP = 0.45, TAIL = 1.2;
 // Drawn inside card.html so fonts, grain, and the stamp match the cards exactly.
 const PAGE_CODE = String.raw`
 window.storyFrame = function(p, caption){
-  const W=1080,H=1920,cv=document.createElement("canvas"); cv.width=W; cv.height=H;
-  const ctx=cv.getContext("2d"),u=W/100,m=3.2*u;
-  const [sName,accent]=SERIES[SKEY[(p.series||"").toLowerCase()]||"battle"];
-  ctx.fillStyle=PAPER; ctx.fillRect(0,0,W,H);
-  if(!grainTile) grainTile=makeGrain();
-  ctx.fillStyle=ctx.createPattern(grainTile,"repeat"); ctx.fillRect(0,0,W,H);
-  const vg=ctx.createRadialGradient(W/2,H/2,Math.min(W,H)*.35,W/2,H/2,Math.max(W,H)*.72);
-  vg.addColorStop(0,"rgba(120,88,48,0)"); vg.addColorStop(1,"rgba(120,88,48,.24)"); ctx.fillStyle=vg; ctx.fillRect(0,0,W,H);
-  const py=Math.round(36*u), ph=Math.round(68*u), px=Math.round(m), pw=Math.round(W-2*m);
-  ctx.clearRect(px,py,pw,ph);
-  ctx.lineWidth=.35*u; ctx.strokeStyle=INK; ctx.strokeRect(px+.175*u,py+.175*u,pw-.35*u,ph-.35*u);
-  ctx.textAlign="left"; ctx.textBaseline="alphabetic";
-  ctx.fillStyle=INK; ctx.font="700 "+(6.6*u)+"px Oswald"; ctx.letterSpacing=(.02*6.6*u)+"px";
-  ctx.fillText("WW2 DISPATCHES",m,py-10.5*u);
-  ctx.fillStyle=NAVY; ctx.font='400 '+(3.2*u)+'px "Special Elite"'; ctx.letterSpacing=(.04*3.2*u)+"px";
-  ctx.fillText("Dispatch "+pad(p.num)+" · The Story",m,py-5*u);
-  stamp(ctx,u,sName.toUpperCase(),accent,W-m-.4*u,py-8.2*u);
-  ctx.textAlign="right"; ctx.fillStyle=NAVY; ctx.font='400 '+(3*u)+'px "Special Elite"'; ctx.letterSpacing=(.02*3*u)+"px";
-  ctx.fillText("@ww2dispatches",W-m,py-16.5*u);
-  const dateBase=py+ph+9.5*u, placeBase=dateBase+4.4*u;
-  ctx.textAlign="left"; ctx.fillStyle=INK; ctx.font="700 "+(7.4*u)+"px Oswald"; ctx.letterSpacing=(.01*7.4*u)+"px";
+  // Same frame as the vertical Living Card (vFrame in card.html), kept inside the phone safe zone.
+  const cv=document.createElement("canvas"); cv.width=1080; cv.height=1920;
+  const py=Math.round(36*10.8), ph=Math.round(48*10.8);
+  const {ctx,u,m,accent,win}=vFrame(cv,p,"Dispatch "+pad(p.num)+" · The Story",py,ph);
+  const dateBase=py+ph+7.5*u, base=dateBase+4.2*u;
+  ctx.textAlign="left"; ctx.fillStyle=INK; ctx.font="700 "+(6*u)+"px Oswald"; ctx.letterSpacing=(.01*6*u)+"px";
   ctx.fillText(shortDate(p.date),m,dateBase);
   ctx.fillStyle=NAVY; ctx.font='400 '+(3.1*u)+'px "Special Elite"'; ctx.letterSpacing=(.04*3.1*u)+"px";
-  ctx.fillText(p.place||"",m,placeBase);
-  ctx.fillStyle=accent; ctx.fillRect(m,placeBase+3*u,10*u,.5*u);
+  wrap(ctx,p.place||"",VSAFE.textRight*u-m,1).forEach(ln=>ctx.fillText(ln,m,base));
+  ctx.fillStyle=accent; ctx.fillRect(m,base+2.6*u,10*u,.5*u);
+  let lines=0;
   if(caption){
-    ctx.fillStyle=INK; ctx.font='400 '+(4.8*u)+'px "Special Elite"'; ctx.letterSpacing="0px";
-    wrap(ctx,caption,W-2*m-12*u,5).forEach((ln,i)=>ctx.fillText(ln,m,placeBase+10.5*u+i*6.2*u));
+    ctx.fillStyle=INK; ctx.font='400 '+(4.4*u)+'px "Special Elite"'; ctx.letterSpacing="0px";
+    const all=wrap(ctx,caption,VSAFE.textRight*u-m,99); lines=all.length;
+    all.slice(0,6).forEach((ln,i)=>ctx.fillText(ln,m,base+9*u+i*5.6*u));
   }
-  return {png:cv.toDataURL("image/png"),win:[px,py,pw,ph]};
+  return {png:cv.toDataURL("image/png"),win,lines};
 };
+const iw0=u=>30*u;
 window.storyCard = async function(p, v, w, h){
-  const cv=document.createElement("canvas"); cv.width=w; cv.height=h; const ctx=cv.getContext("2d"),u=w/100;
+  const cv=document.createElement("canvas"); cv.width=w; cv.height=h; const ctx=cv.getContext("2d"),u0=w/100;
+  // Type scales with the window height (designed for a 734 px window); side margins stay at the safe 12u.
+  const u=u0*Math.min(1,h/(68*u0));
   const [sName,accent]=SERIES[SKEY[(p.series||"").toLowerCase()]||"battle"];
   const DARK="#221D17", LIGHT="#EDE4CF";
   ctx.fillStyle=DARK; ctx.fillRect(0,0,w,h);
@@ -69,10 +59,10 @@ window.storyCard = async function(p, v, w, h){
     ctx.fillText("Follow @ww2dispatches",w/2,h*.44+21*u);
     return cv.toDataURL("image/png");
   }
-  let x=8*u, top=h*.2;
+  let x=12*u0, top=h*.2;
   if(v.inset){
     const img=new Image(); img.src=v.inset; await img.decode();
-    const iw=30*u, ih=iw*img.height/img.width, ix=w-8*u-iw, iy=h*.2;
+    const iw=30*u, ih=iw*img.height/img.width, ix=w-12*u0-iw, iy=h*.2;
     ctx.save(); ctx.translate(ix+iw/2,iy+ih/2); ctx.rotate(2.2*Math.PI/180);
     ctx.fillStyle=LIGHT; ctx.fillRect(-iw/2-1.4*u,-ih/2-1.4*u,iw+2.8*u,ih+7*u);
     ctx.filter="grayscale(1) sepia(.15) contrast(1.05)"; ctx.drawImage(img,-iw/2,-ih/2,iw,ih); ctx.filter="none";
@@ -87,7 +77,7 @@ window.storyCard = async function(p, v, w, h){
     const head=(i===0);
     if(head){ctx.fillStyle=LIGHT; ctx.font="700 "+(8*u)+"px Oswald"; ctx.letterSpacing=(.015*8*u)+"px";}
     else {ctx.fillStyle=(v.inset&&i%2===0)?"#C9B98F":LIGHT; ctx.font='400 '+(4.8*u)+'px "Special Elite"'; ctx.letterSpacing=(.03*4.8*u)+"px";}
-    const maxW=v.inset?(w-50*u):(w-16*u);
+    const maxW=v.inset?(w-24*u0-iw0(u)-4*u):(w-24*u0);
     const parts=wrap(ctx,ln,maxW,3);
     parts.forEach(pt=>{ctx.fillText(pt,x,y); y+=head?9.5*u:6.6*u;});
     if(head) y+=2.5*u; else if(v.inset&&i%2===0) y+=3*u;
@@ -115,7 +105,8 @@ function save(dataUrl, file) { fs.writeFileSync(file, Buffer.from(dataUrl.split(
   const segs = story.segments;
   for (let i = 0; i < segs.length; i++) {
     const s = segs[i], v = s.visual;
-    const { png, win } = await page.evaluate(([p, c]) => window.storyFrame(p, c), [p, s.caption]);
+    const { png, win, lines } = await page.evaluate(([p, c]) => window.storyFrame(p, c), [p, s.caption]);
+    if (lines > 6) throw new Error(`${s.id}: caption needs ${lines} lines, the frame holds 6. Shorten it.`);
     const frame = path.join(tmp, s.id + "-frame.png"); save(png, frame);
     const [wx, wy, ww, wh] = win;
     const len = dur[s.id] + GAP + (i === 0 ? LEAD : 0) + (i === segs.length - 1 ? TAIL : 0);

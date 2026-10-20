@@ -187,7 +187,7 @@ window.renderCards = async function(p, photoDataUrl){
   return out;
 };
 /* Living card, vertical 1080 x 1920 for Reels, TikTok, and Shorts. Same parts as the post card,
-   rearranged so nothing important sits under the app buttons: top 140 px, bottom 340 px, right edge. */
+   rearranged to stay inside the phone safe zone (VSAFE below). */
 function stamp(ctx,U,label,accent,cx,cy){
   const u=U*1.35;
   ctx.font=`600 ${2.9*u}px Oswald`; ctx.letterSpacing=`${.14*2.9*u}px`;
@@ -200,42 +200,47 @@ function stamp(ctx,U,label,accent,cx,cy){
   for(let i=0;i<Math.floor(sw*sh/(u*u)*5);i++){ctx.globalAlpha=.12+r()*.3; const rr=(.04+r()*r()*.22)*u; ctx.beginPath(); ctx.arc(-sw/2+r()*sw,-sh/2+r()*sh,rr,0,Math.PI*2); ctx.fill();}
   ctx.globalAlpha=1; ctx.restore();
 }
-function drawVertical(cv,p){
-  const W=cv.width,H=cv.height,ctx=cv.getContext("2d"),u=W/100,m=3.2*u;
+/* Phone safe zone for 1080 x 1920 (u = 10.8 px). Tall phones zoom a 9:16 video to fill the screen and trim
+   about 100 px off each side, the app buttons cover the top 150 px, a right column from about the middle
+   down, and the bottom 25%. So all text keeps an 11u side margin, text beside the buttons ends by 76u,
+   and nothing important sits below 133u (about 1440 px). Footage and photos may run under the buttons. */
+const VSAFE={m:11,textRight:76,bottom:133};
+function vFrame(cv,p,label,py,ph){
+  const W=cv.width,H=cv.height,ctx=cv.getContext("2d"),u=W/100,m=VSAFE.m*u;
   const [sName,accent]=SERIES[SKEY[(p.series||"").toLowerCase()]||"battle"];
-  ctx.save(); ctx.clearRect(0,0,W,H);
   ctx.fillStyle=PAPER; ctx.fillRect(0,0,W,H);
   if(!grainTile) grainTile=makeGrain();
   ctx.fillStyle=ctx.createPattern(grainTile,"repeat"); ctx.fillRect(0,0,W,H);
   const vg=ctx.createRadialGradient(W/2,H/2,Math.min(W,H)*.35,W/2,H/2,Math.max(W,H)*.72);
   vg.addColorStop(0,"rgba(120,88,48,0)"); vg.addColorStop(1,"rgba(120,88,48,.24)"); ctx.fillStyle=vg; ctx.fillRect(0,0,W,H);
-
-  const py=Math.round(36*u), ph=Math.round(84*u), px=m, pw=W-2*m;
-  ctx.clearRect(px,py,pw,ph); cv.win=[px,py,pw,ph];
-  ctx.lineWidth=.35*u; ctx.strokeStyle=INK; ctx.strokeRect(px+.175*u,py+.175*u,pw-.35*u,ph-.35*u);
-
+  // Footage window runs edge to edge, so a trimmed side never cuts into a border.
+  ctx.clearRect(0,py,W,ph);
+  ctx.fillStyle=INK; ctx.fillRect(0,py-.5*u,W,.5*u); ctx.fillRect(0,py+ph,W,.5*u);
   ctx.textAlign="left"; ctx.textBaseline="alphabetic";
-  ctx.fillStyle=INK; ctx.font=`700 ${6.6*u}px Oswald`; ctx.letterSpacing=`${.02*6.6*u}px`;
-  ctx.fillText("WW2 DISPATCHES",m,py-10.5*u);
-  ctx.fillStyle=NAVY; ctx.font=`400 ${3.2*u}px "Special Elite"`; ctx.letterSpacing=`${.04*3.2*u}px`;
+  ctx.fillStyle=INK; ctx.font=`700 ${6.2*u}px Oswald`; ctx.letterSpacing=`${.02*6.2*u}px`;
+  ctx.fillText("WW2 DISPATCHES",m,py-10*u);
+  ctx.fillStyle=NAVY; ctx.font=`400 ${3.1*u}px "Special Elite"`; ctx.letterSpacing=`${.04*3.1*u}px`;
+  ctx.fillText(label,m,py-4.6*u);
+  stamp(ctx,u*.78,sName.toUpperCase(),accent,W-m,py-9*u);
+  return {ctx,u,m,accent,win:[0,py,W,ph]};
+}
+function drawVertical(cv,p){
+  const W=cv.width;
   const vf=(p.format||"").toLowerCase();
-  ctx.fillText("Dispatch "+pad(p.num)+(FORMATS[vf]?" · "+FORMATS[vf]:""),m,py-5*u);
-  stamp(ctx,u,sName.toUpperCase(),accent,W-m-.4*u,py-8.2*u);
-  ctx.textAlign="right"; ctx.fillStyle=NAVY; ctx.font=`400 ${3*u}px "Special Elite"`; ctx.letterSpacing=`${.02*3*u}px`;
-  ctx.fillText("@ww2dispatches",W-m,py-16.5*u);
-
-  const dateBase=py+ph+11*u, placeBase=dateBase+4.6*u;
+  const py=Math.round(36*W/100), ph=Math.round(68*W/100);
+  const {ctx,u,m,accent,win}=vFrame(cv,p,"Dispatch "+pad(p.num)+(FORMATS[vf]?" · "+FORMATS[vf]:""),py,ph);
+  cv.win=win;
+  const dateBase=py+ph+10.5*u, placeBase=dateBase+4.6*u;
   ctx.textAlign="left";
-  ctx.fillStyle=INK; ctx.font=`700 ${9*u}px Oswald`; ctx.letterSpacing=`${.01*9*u}px`;
+  ctx.fillStyle=INK; ctx.font=`700 ${8.4*u}px Oswald`; ctx.letterSpacing=`${.01*8.4*u}px`;
   ctx.fillText(shortDate(p.date),m,dateBase);
-  ctx.fillStyle=NAVY; ctx.font=`400 ${3.3*u}px "Special Elite"`; ctx.letterSpacing=`${.04*3.3*u}px`;
-  ctx.fillText(p.place||"",m,placeBase);
+  ctx.fillStyle=NAVY; ctx.font=`400 ${3.2*u}px "Special Elite"`; ctx.letterSpacing=`${.04*3.2*u}px`;
+  wrap(ctx,p.place||"",VSAFE.textRight*u-m,1).forEach(ln=>ctx.fillText(ln,m,placeBase));
   const pull=(p.pull||"").trim();
   if(pull){
-    ctx.fillStyle=accent; ctx.font=`600 ${5.4*u}px Oswald`; ctx.letterSpacing=`${.03*5.4*u}px`;
-    wrap(ctx,pull.toUpperCase(),W-2*m-14*u,2).forEach((ln,i)=>ctx.fillText(ln,m,placeBase+8.4*u+i*6*u));
+    ctx.fillStyle=accent; ctx.font=`600 ${5*u}px Oswald`; ctx.letterSpacing=`${.03*5*u}px`;
+    wrap(ctx,pull.toUpperCase(),VSAFE.textRight*u-m,2).forEach((ln,i)=>ctx.fillText(ln,m,placeBase+7.8*u+i*5.6*u));
   }
-  ctx.restore();
 }
 
 /* Called by living.js: transparent PNG overlays plus the footage window for each shape. */
