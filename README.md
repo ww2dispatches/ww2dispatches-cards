@@ -9,7 +9,9 @@ Two scheduled runs fill each Sunday to Saturday week: Thursday 7:47 p.m. Mountai
 * `dispatches/` one JSON file per dispatch: number, date, place, series, pull line, caption, photo framing, and sources.
 * `photos/` the public domain source photos.
 * `renderer/` the card renderer, a copy of the Dispatch Press drawing code run in headless Chromium, plus the video, story, slide, Name This, series log, and Living Press scripts.
-* `stories/` Story Card scripts, `kits/` Video Press Kits, `log/` the series log (rebuilt by `renderer/series_log.py`, never edited by hand), `newsletter/` weekly issue drafts.
+* `stories/` Story Card scripts, `kits/` Video Press Kits, `newsletter/` weekly issue drafts.
+* `log/` the permanent record in spreadsheet form: `series-log.csv` (one row per card with every field worth keeping, including live post links), `series-counts.csv` (series totals), and `namethis-log.csv`. Rebuilt from the JSON by `renderer/series_log.py`; never edited by hand.
+* `status.md` the small working state the weekly runs keep (dispatch bank, video bank, pending one time jobs, open checks).
 * `archive/` retired files (the Grok scout and the old Facebook queue). Not used; do not edit.
 
 ## Rendering
