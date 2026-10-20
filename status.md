@@ -17,7 +17,7 @@ Finished noon videos not yet scheduled (aim for 3 to 5). One line each: file in 
 * (empty)
 
 ## Pending one time jobs
-* **Old .mp4 cleanup:** remove the old .mp4 files committed in this repo's videos/ and footage/ with git rm, on the first Friday run after No. 011's noon video (Thu 22 Oct 2026) has gone out. See the Videos doc.
+* **Old .mp4 cleanup:** remove the old .mp4 files committed in this repo's videos/ and footage/ with git rm. Ready on any run: no scheduled post uses a cards repo video link since No. 011 moved to the videos repo (20 Oct 2026). See the Videos doc.
 * **Newsletter launch announcement:** goes in the 1 to 7 Nov 2026 batch (Thursday 29 Oct cards run). See the Newsletter doc.
 
 ## Open checks
