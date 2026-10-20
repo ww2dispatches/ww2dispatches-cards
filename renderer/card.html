@@ -163,14 +163,17 @@ function draw(cv,img,p){
   ctx.fillStyle=NAVY; ctx.font=`400 ${2.5*u}px "Special Elite"`; ctx.letterSpacing=`${.04*2.5*u}px`;
   ctx.fillText(p.place||"",m,placeBase);
 
+  /* Video players on X, Threads, Instagram, and Facebook put a mute button in the bottom right corner,
+     so on Living Cards the pull line and handle end short of it (about 11u in from the edge). */
+  const VID=fmt==="footage", R=VID?W-m-11*u:W-m;
   ctx.textAlign="right";
   ctx.fillStyle=NAVY; ctx.font=`400 ${2.4*u}px "Special Elite"`; ctx.letterSpacing=`${.02*2.4*u}px`;
-  ctx.fillText("@ww2dispatches",W-m,placeBase);
+  ctx.fillText("@ww2dispatches",R,placeBase);
   const pull=(p.pull||"").trim();
   if(pull){
     ctx.fillStyle=(fmt==="namethis")?(p.clueColor||NAME_THIS_VIOLET):accent; ctx.font=`600 ${3.3*u}px Oswald`; ctx.letterSpacing=`${.03*3.3*u}px`;
     const lines=wrap(ctx,pull.toUpperCase(),(W-2*m)*.48,2);
-    lines.reverse().forEach((ln,i)=>ctx.fillText(ln,W-m,placeBase-3.6*u-i*3.7*u));
+    lines.reverse().forEach((ln,i)=>ctx.fillText(ln,R,placeBase-3.6*u-i*3.7*u));
   }
   ctx.restore();
 }
