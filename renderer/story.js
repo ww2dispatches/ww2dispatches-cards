@@ -19,7 +19,7 @@ const PAGE_CODE = String.raw`
 window.storyFrame = function(p, caption){
   // Same frame as the vertical Living Card (vFrame in card.html), kept inside the phone safe zone.
   const cv=document.createElement("canvas"); cv.width=1080; cv.height=1920;
-  const py=Math.round(36*10.8), ph=Math.round(48*10.8);
+  const py=Math.round(VSAFE.top*10.8), ph=Math.round(52*10.8);
   const {ctx,u,m,accent,win}=vFrame(cv,p,"Dispatch "+pad(p.num)+" · The Story",py,ph);
   const dateBase=py+ph+7.5*u, base=dateBase+4.2*u;
   ctx.textAlign="left"; ctx.fillStyle=INK; ctx.font="700 "+(6*u)+"px Oswald"; ctx.letterSpacing=(.01*6*u)+"px";

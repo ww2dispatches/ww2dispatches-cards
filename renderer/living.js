@@ -1,6 +1,7 @@
 // Renders WW2 Dispatches living cards: the post card bands with archival footage playing in the photo window.
 // Usage: node renderer/living.js <dispatch-id> [...]
-// The dispatch JSON needs a "video" block: { "footage": "footage/<id>.mp4", "focusX": 50, "focusY": 50 }
+// The dispatch JSON needs a "video" block: { "footage": "footage/<id>.mp4", "focusX": 50, "focusY": 50, "hook": "..." }
+// "hook" is the short line under the pull line on the vertical video (about 45 characters, two lines at most).
 // footage/<id>.mp4 is the already trimmed clip (square pixels). Add "sound": true to the video block to keep
 // the clip's own audio (period film sound, never music); otherwise a silent track is added. Output goes to videos/:
 //   dispatch-NNN-x.mp4 (1600 x 1440), dispatch-NNN-instagram.mp4 (1080 x 1350), dispatch-NNN-vertical.mp4 (1080 x 1920)
@@ -33,6 +34,8 @@ const TONE = "colorchannelmixer=.927:.092:.023:0:.042:.962:.020:0:.033:.064:.896
     const dur = execFileSync("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", src]).toString().trim();
     const stem = "dispatch-" + String(d.num).padStart(3, "0");
 
+    const problems = out.vertical.problems;
+    if (problems.length) throw new Error(`${id}: ${problems.join("; ")}. Fix the dispatch JSON and render again.`);
     for (const [kind, { png, win }] of Object.entries(out)) {
       const overlay = path.join(tmp, `${stem}-${kind}.png`);
       fs.writeFileSync(overlay, Buffer.from(png.split(",")[1], "base64"));

@@ -200,11 +200,12 @@ function stamp(ctx,U,label,accent,cx,cy){
   for(let i=0;i<Math.floor(sw*sh/(u*u)*5);i++){ctx.globalAlpha=.12+r()*.3; const rr=(.04+r()*r()*.22)*u; ctx.beginPath(); ctx.arc(-sw/2+r()*sw,-sh/2+r()*sh,rr,0,Math.PI*2); ctx.fill();}
   ctx.globalAlpha=1; ctx.restore();
 }
-/* Phone safe zone for 1080 x 1920 (u = 10.8 px). Tall phones zoom a 9:16 video to fill the screen and trim
-   about 100 px off each side, the app buttons cover the top 150 px, a right column from about the middle
-   down, and the bottom 25%. So all text keeps an 11u side margin, text beside the buttons ends by 76u,
-   and nothing important sits below 133u (about 1440 px). Footage and photos may run under the buttons. */
-const VSAFE={m:11,textRight:76,bottom:133};
+/* Phone safe zone for 1080 x 1920 (u = 10.8 px), measured from YouTube Shorts and TikTok on an iPhone.
+   Tall phones zoom a 9:16 video to fill the screen and trim about 100 px off each side. TikTok's search bar and
+   tabs cover the top 250 px, the app buttons cover a right column from about the middle down, and the username
+   and caption start near 1640 px. So all text keeps an 11u side margin, the header starts below 250 px, text
+   beside the buttons ends by 76u, and nothing sits below 148u (about 1600 px). Footage may run under the buttons. */
+const VSAFE={m:11,textRight:76,bottom:148,top:40};
 function vFrame(cv,p,label,py,ph){
   const W=cv.width,H=cv.height,ctx=cv.getContext("2d"),u=W/100,m=VSAFE.m*u;
   const [sName,accent]=SERIES[SKEY[(p.series||"").toLowerCase()]||"battle"];
@@ -227,19 +228,31 @@ function vFrame(cv,p,label,py,ph){
 function drawVertical(cv,p){
   const W=cv.width;
   const vf=(p.format||"").toLowerCase();
-  const py=Math.round(36*W/100), ph=Math.round(68*W/100);
+  const py=Math.round(VSAFE.top*W/100), ph=Math.round(68*W/100);
   const {ctx,u,m,accent,win}=vFrame(cv,p,"Dispatch "+pad(p.num)+(FORMATS[vf]?" · "+FORMATS[vf]:""),py,ph);
-  cv.win=win;
-  const dateBase=py+ph+10.5*u, placeBase=dateBase+4.6*u;
+  cv.win=win; cv.problems=[];
+  const dateBase=py+ph+10.5*u, placeBase=dateBase+4.6*u, maxW=VSAFE.textRight*u-m;
   ctx.textAlign="left";
   ctx.fillStyle=INK; ctx.font=`700 ${8.4*u}px Oswald`; ctx.letterSpacing=`${.01*8.4*u}px`;
   ctx.fillText(shortDate(p.date),m,dateBase);
   ctx.fillStyle=NAVY; ctx.font=`400 ${3.2*u}px "Special Elite"`; ctx.letterSpacing=`${.04*3.2*u}px`;
-  wrap(ctx,p.place||"",VSAFE.textRight*u-m,1).forEach(ln=>ctx.fillText(ln,m,placeBase));
+  wrap(ctx,p.place||"",maxW,1).forEach(ln=>ctx.fillText(ln,m,placeBase));
+  let y=placeBase;
   const pull=(p.pull||"").trim();
   if(pull){
     ctx.fillStyle=accent; ctx.font=`600 ${5*u}px Oswald`; ctx.letterSpacing=`${.03*5*u}px`;
-    wrap(ctx,pull.toUpperCase(),VSAFE.textRight*u-m,2).forEach((ln,i)=>ctx.fillText(ln,m,placeBase+7.8*u+i*5.6*u));
+    const pl=wrap(ctx,pull.toUpperCase(),maxW,99);
+    if(pl.length>2) cv.problems.push("pull line needs "+pl.length+" lines, the frame holds 2");
+    pl.slice(0,2).forEach((ln,i)=>{y=placeBase+7.8*u+i*5.6*u; ctx.fillText(ln,m,y);});
+  }
+  // The hook: one short typewriter line (two at most) that adds something the pull line doesn't.
+  const hook=((p.video&&p.video.hook)||"").trim();
+  if(!hook) cv.problems.push("no video.hook in the dispatch JSON");
+  else{
+    ctx.fillStyle=INK; ctx.font=`400 ${3.6*u}px "Special Elite"`; ctx.letterSpacing="0px";
+    const hl=wrap(ctx,hook,maxW,99);
+    if(hl.length>2) cv.problems.push("hook needs "+hl.length+" lines, the frame holds 2 (about 45 characters)");
+    hl.slice(0,2).forEach((ln,i)=>ctx.fillText(ln,m,y+6.6*u+i*4.8*u));
   }
 }
 
@@ -251,7 +264,7 @@ window.renderOverlays = async function(p0){
   for (const [kind,w,h] of [["x",1600,1440],["instagram",1080,1350],["vertical",1080,1920]]) {
     const cv=document.createElement("canvas"); cv.width=w; cv.height=h;
     if(kind==="vertical") drawVertical(cv,p); else draw(cv,null,p);
-    out[kind]={png:cv.toDataURL("image/png"),win:cv.win.map(Math.round)};
+    out[kind]={png:cv.toDataURL("image/png"),win:cv.win.map(Math.round),problems:cv.problems||[]};
   }
   return out;
 };
