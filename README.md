@@ -2,7 +2,7 @@
 
 Post card images for WW2 Dispatches, a World War II this day in history account. Images are hosted here for scheduled posts on X, Instagram, Threads, and Facebook (all through Buffer). Videos live in the separate repo ww2dispatches/ww2dispatches-videos.
 
-Two scheduled runs fill each Sunday to Saturday week: Thursday 7:47 p.m. Mountain writes and schedules the 14 cards, and Friday 7:47 p.m. builds and schedules the 7 noon videos, records live links, and drafts the newsletter. Saturday 6:13 a.m. prepares the Name This cards. The full rules live in the claude.ai Project docs (Project Brief, Roadmap, Scale Up Plan, Name This).
+Two scheduled runs fill each Sunday to Saturday week: Thursday 7:47 p.m. Mountain writes and schedules the 14 cards, and Friday 7:47 p.m. builds and schedules the 7 noon videos, records live links, and drafts the newsletter. Saturday 6:13 a.m. prepares the Name This cards. The full rules live in the claude.ai Project docs: Project Brief (the hub), Roadmap, Cards, Videos, Newsletter, Name This, and Queue Status.
 
 ## Layout
 * `cards/` finished images, one pair per dispatch: `dispatch-NNN-x.jpg` (1600 x 1440) and `dispatch-NNN-instagram.jpg` (1080 x 1350). These are the files Buffer links to.
@@ -29,14 +29,14 @@ Same card bands with archival footage playing in the photo window, for big dispa
 * Add a `video` block to the dispatch JSON (`footage`, optional `focusX` and `focusY`, plus `sourceUrl` and `note`), then run `node renderer/living.js <id>`.
 
 ## Living Press page
-`renderer/living_press.py` builds the Living Press review page (a pinned claude.ai artifact) from every dispatch that has Living Card videos and a kit (Story Card support is added by the next Friday video run).
+`renderer/living_press.py` builds the Living Press review page (a pinned claude.ai artifact) from every dispatch that has a Living Card (with its kit) or a Story Card (with its `story.kit` block).
 ```
 python3 renderer/living_press.py <out_dir>   # writes living-press.html plus videos/ to publish
 ```
 Rebuild and republish to the same artifact (https://claude.ai/artifact/7bCSGHeexkFYyn6s1vxRSe) whenever a video is added or a kit changes. Set `"scheduled"` in a dispatch's `kit` block to `true` or a short status line (for example "Buffer and YouTube Shorts scheduled · TikTok not yet").
 
 ## Name This cards
-Puzzle cards posted Wednesday and Saturday at 10 a.m. Mountain: X Communities through Typefully, Threads and Facebook through Buffer. No dispatch number, so they never affect the dispatch serial.
-* `namethis/` one JSON file per card: id, answer, date, place, clue (`pull`), photo, framing, target X community, sources, and once scheduled the Typefully draft id, Buffer ids (threads, facebook), post_date, and links. Full rules: the Project doc "WW2 Dispatches Name This".
+Puzzle cards posted Wednesday and Saturday at 10 a.m. Mountain: X Communities through Typefully, Threads, Facebook, and Instagram through Buffer. No dispatch number, so they never affect the dispatch serial.
+* `namethis/` one JSON file per card: id, answer, date, place, clue (`pull`), photo, framing, target X community, sources, and once scheduled the Typefully draft id, Buffer ids (threads, facebook, instagram), post_date, and links. Full rules: the Project doc "WW2 Dispatches Name This".
 * Stamp, ? seal, and clue are Mimeograph Violet `#5B4B8A`. Pick photos with no visible names, hull numbers, or markings that give the answer away.
 * `node renderer/namethis.js [id ...]` writes `cards/namethis-<id>-x.jpg`.
