@@ -41,6 +41,19 @@
   },
   {
    "date": "2026-10-18",
+   "time": "10:00",
+   "kind": "namethis",
+   "num": "",
+   "label": "10 a.m.",
+   "title": "Name This",
+   "series": "",
+   "img": "https://d3e0luujhwn38u.cloudfront.net/original/img/original/347031/e469f89f-4416-4742-a5d9-d226e05e0d91.jpg",
+   "alt": "WW2 Dispatches Name This card. Can you name it?",
+   "link": "https://x.com/ww2dispatches/status/2111878684076618184",
+   "linkLabel": "Guess on X"
+  },
+  {
+   "date": "2026-10-18",
    "time": "17:00",
    "kind": "card",
    "num": "004",
@@ -129,6 +142,19 @@
    "alt": "WW2 Dispatches card, Dispatch No. 009, Battle Lines. Aachen surrenders.",
    "link": "https://x.com/ww2dispatches",
    "linkLabel": "Read on X"
+  },
+  {
+   "date": "2026-10-21",
+   "time": "10:00",
+   "kind": "namethis",
+   "num": "",
+   "label": "10 a.m.",
+   "title": "Name This",
+   "series": "",
+   "img": "https://d3e0luujhwn38u.cloudfront.net/original/img/original/347031/88511888-fed4-4a8a-ac71-84697b25deca.jpg",
+   "alt": "WW2 Dispatches Name This card. Can you name it?",
+   "link": "https://x.com/ww2dispatches",
+   "linkLabel": "Guess on X"
   },
   {
    "date": "2026-10-21",
@@ -285,6 +311,31 @@
    "alt": "WW2 Dispatches card, Dispatch No. 016, Blueprint. First photo of Earth from space.",
    "link": "https://x.com/ww2dispatches",
    "linkLabel": "Read on X"
+  }
+ ],
+ "namethis": [
+  {
+   "date": "2026-10-18",
+   "time": "10:00",
+   "img": "https://d3e0luujhwn38u.cloudfront.net/original/img/original/347031/e469f89f-4416-4742-a5d9-d226e05e0d91.jpg",
+   "clue": "Churchill called her The Beast",
+   "link": "https://x.com/ww2dispatches/status/2111878684076618184",
+   "a": "R2VybWFuIGJhdHRsZXNoaXAgVGlycGl0eg=="
+  },
+  {
+   "date": "2026-10-21",
+   "time": "10:00",
+   "img": "https://d3e0luujhwn38u.cloudfront.net/original/img/original/347031/88511888-fed4-4a8a-ac71-84697b25deca.jpg",
+   "clue": "Its nickname was all about its guns",
+   "link": "https://x.com/ww2dispatches",
+   "a": "Qm9laW5nIEItMTcgRmx5aW5nIEZvcnRyZXNzIChCLTE3RCk="
+  },
+  {
+   "date": "2026-10-24",
+   "time": "10:00",
+   "img": "https://raw.githubusercontent.com/ww2dispatches/ww2dispatches-cards/main/cards/namethis-1944-10-24-musashi-x.jpg?v=7f4ee8c6",
+   "clue": "Her sister was even more famous",
+   "link": "https://x.com/ww2dispatches"
   }
  ]
 }

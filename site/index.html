@@ -131,6 +131,22 @@ a { color: inherit; }
 .slip strong { font-family: var(--display); font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; font-size: 18px; line-height: 1.15; }
 .slip small { font-family: var(--type); font-size: 13px; opacity: .8; overflow-wrap: anywhere; }
 
+/* ---------- name this ---------- */
+.puzzle { display: grid; grid-template-columns: 42% 1fr; gap: 14px; align-items: start; padding: 12px; border-radius: 6px;
+  background: var(--panel); border: 1px solid rgba(157,143,208,.45); }
+.pz-pic { display: block; border-radius: 3px; overflow: hidden; box-shadow: 0 0 0 1px rgba(237,228,207,.2); }
+.pz-pic img { display: block; width: 100%; max-width: 100%; aspect-ratio: 1600 / 1440; object-fit: cover; }
+.pz-text { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.pz-head { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+.pz-head h2 { margin: 0; font-family: var(--display); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; font-size: 14px;
+  color: #B9AEE3; border: 2px solid #9D8FD0; padding: 1px 7px; transform: rotate(-2deg); white-space: nowrap; }
+.pz-head span { font-family: var(--type); font-size: 12px; color: var(--sand); }
+.pz-clue { margin: 2px 0 0; font-family: var(--type); font-size: 14px; line-height: 1.35; }
+.pz-go { align-self: flex-start; font-family: var(--display); font-weight: 600; letter-spacing: 1px; text-transform: uppercase; font-size: 13px;
+  color: var(--paper); text-decoration: none; border-bottom: 2px solid #9D8FD0; }
+.pz-last { margin: 4px 0 0; padding-top: 6px; border-top: 1px dashed var(--line); font-size: 13px; line-height: 1.35; color: #DCD2BC; }
+.pz-last b { color: var(--paper); }
+
 /* ---------- series ---------- */
 .series h2 { margin-bottom: 12px; }
 .series ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
@@ -209,6 +225,16 @@ footer { text-align: center; font-family: var(--type); font-size: 13px; color: v
       <span class="t"><strong>Contact</strong><small>contact@ww2dispatches.com</small></span></a>
   </section>
 
+  <section class="puzzle" id="puzzle" aria-labelledby="puzzle-h" hidden>
+    <a class="pz-pic" id="pz-pic" href="https://x.com/ww2dispatches" target="_blank" rel="noopener"><img id="pz-img" src="" alt="WW2 Dispatches Name This card. Can you name it?" loading="lazy"></a>
+    <div class="pz-text">
+      <div class="pz-head"><h2 id="puzzle-h">Name This</h2><span id="pz-date"></span></div>
+      <p class="pz-clue" id="pz-clue"></p>
+      <a class="pz-go" id="pz-go" href="https://x.com/ww2dispatches" target="_blank" rel="noopener">Guess on X</a>
+      <p class="pz-last" id="pz-last" hidden></p>
+    </div>
+  </section>
+
   <section class="series" aria-labelledby="series-h">
     <h2 id="series-h">Four kinds of dispatch</h2>
     <ul>
@@ -254,10 +280,28 @@ footer { text-align: center; font-family: var(--type); font-size: 13px; color: v
 
   var track = document.getElementById("track"), dots = document.getElementById("dots");
   var prev = document.getElementById("prev"), next = document.getElementById("next");
-  var all = [], shownKey = "";
+  var all = [], puzzles = [], shownKey = "", shownPuzzle = "";
+  function decode(s) { try { return decodeURIComponent(escape(atob(s))); } catch (e) { return ""; } }
+  function renderPuzzle(now) {
+    var live = puzzles.filter(function (p) { return p.date < now.date || (p.date === now.date && p.time <= now.time); });
+    if (!live.length) return;
+    var cur = live[live.length - 1], prev = live[live.length - 2];
+    if (shownPuzzle === cur.date) return;
+    shownPuzzle = cur.date;
+    document.getElementById("pz-img").src = cur.img;
+    document.getElementById("pz-pic").href = cur.link;
+    document.getElementById("pz-go").href = cur.link;
+    document.getElementById("pz-date").textContent = prettyDate(cur.date);
+    document.getElementById("pz-clue").textContent = "Clue: " + cur.clue;
+    var last = document.getElementById("pz-last"), ans = prev && prev.a ? decode(prev.a) : "";
+    last.hidden = !ans;
+    if (ans) { last.innerHTML = "Last puzzle: <b></b>"; last.querySelector("b").textContent = ans; }
+    document.getElementById("puzzle").hidden = false;
+  }
 
   function render() {
     var now = denverNow();
+    renderPuzzle(now);
     var live = all.filter(function (s) { return s.date < now.date || (s.date === now.date && s.time <= now.time); });
     if (!live.length) { document.getElementById("today").hidden = true; return; }
     var day = live[live.length - 1].date;
@@ -303,6 +347,7 @@ footer { text-align: center; font-family: var(--type); font-size: 13px; color: v
 
   fetch("slides.json", { cache: "no-cache" }).then(function (r) { return r.json(); }).then(function (data) {
     all = (data.slides || []).sort(function (a, b) { return (a.date + a.time) < (b.date + b.time) ? -1 : 1; });
+    puzzles = data.namethis || [];
     render();
     setInterval(render, 60000); // picks up the next post while the page is open
   }).catch(function () {});

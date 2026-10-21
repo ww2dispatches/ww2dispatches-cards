@@ -16,7 +16,7 @@ Run from the repo root:  python3 renderer/site_data.py
 series_log.py runs this at the end, so every weekly run refreshes it on its own.
 Cloudflare Pages rebuilds the site whenever site/ changes. Never edit slides.json by hand.
 """
-import datetime, glob, hashlib, json, os, urllib.request
+import base64, datetime, glob, hashlib, json, os, urllib.request
 
 LAUNCH_YEAR = 2026
 KEEP_DAYS = 7  # keep a week of past slides so "yesterday" always works
@@ -94,14 +94,23 @@ for d in cards:
                 "link": links.get("youtube") or SHORTS, "linkLabel": "Watch",
             })
 
-# Name This, Wednesday and Saturday at 10 a.m.
+# Name This, Wednesday and Saturday at 10 a.m.: a slide on its day, plus the Name This panel,
+# which shows the newest puzzle and reveals the previous one's answer. Answers are only written
+# for puzzles dated on or before today, lightly encoded so they don't show up in search results.
+today = datetime.date.today().isoformat()
+puzzles = []
 for n in load("namethis"):
     if not n.get("post_date"):
         continue
-    img = card_url(f"cards/namethis-{n['id']}-x.jpg")
+    img = card_url(f"cards/namethis-{n['id']}-x.jpg") or n.get("cardImage")
     if not img:
         continue
     links = n.get("links") or {}
+    clue = (n.get("pull") or "").removeprefix("Clue:").strip()
+    p = {"date": n["post_date"], "time": "10:00", "img": img, "clue": clue, "link": links.get("x") or X_PROFILE}
+    if n["post_date"] <= today and n.get("answer"):
+        p["a"] = base64.b64encode(n["answer"].encode("utf-8")).decode("ascii")
+    puzzles.append(p)
     slides.append({
         "date": n["post_date"], "time": "10:00", "kind": "namethis", "num": "",
         "label": "10 a.m.", "title": "Name This", "series": "", "img": img,
@@ -113,5 +122,6 @@ cutoff = (datetime.date.today() - datetime.timedelta(days=KEEP_DAYS)).isoformat(
 slides = sorted((s for s in slides if s["date"] >= cutoff), key=lambda s: (s["date"], s["time"]))
 os.makedirs(os.path.join(root, "site"), exist_ok=True)
 with open(os.path.join(root, "site", "slides.json"), "w", encoding="utf-8") as f:
-    json.dump({"slides": slides}, f, ensure_ascii=False, indent=1)
+    puzzles.sort(key=lambda p: p["date"])
+    json.dump({"slides": slides, "namethis": puzzles[-6:]}, f, ensure_ascii=False, indent=1)
 print(f"site/slides.json: {len(slides)} slides, {slides[0]['date'] if slides else ''} to {slides[-1]['date'] if slides else ''}")
