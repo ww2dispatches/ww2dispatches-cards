@@ -105,6 +105,7 @@ a { color: inherit; }
 .arrow:disabled { opacity: 0; pointer-events: none; }
 .dots { display: flex; justify-content: center; gap: 8px; margin-top: 12px; }
 .dots button { width: 9px; height: 9px; padding: 0; border-radius: 50%; border: 0; background: var(--line); cursor: pointer; }
+.next-note { margin: 10px 0 0; text-align: center; font-family: var(--type); font-size: 13px; color: var(--sand); }
 .dots button[aria-current="true"] { background: var(--red); width: 26px; border-radius: 5px; }
 
 /* ---------- actions ---------- */
@@ -186,6 +187,7 @@ footer { text-align: center; font-family: var(--type); font-size: 13px; color: v
       <button class="arrow next" id="next" aria-label="Next">›</button>
       <div class="dots" id="dots"></div>
     </div>
+    <p class="next-note" id="next-note" hidden>Today's first dispatch posts at 8 a.m. Mountain.</p>
   </section>
 
   <section class="actions" aria-label="Links">
@@ -263,7 +265,10 @@ footer { text-align: center; font-family: var(--type); font-size: 13px; color: v
     var key = day + list.length;
     if (key === shownKey) return;
     shownKey = key;
-    document.getElementById("today-h").textContent = day === now.date ? "Today's Dispatches" : "Latest Dispatches";
+    var y = new Date(now.date + "T12:00:00Z"); y.setUTCDate(y.getUTCDate() - 1);
+    var yesterday = y.toISOString().slice(0, 10);
+    document.getElementById("today-h").textContent = day === now.date ? "Today's Dispatches" : day === yesterday ? "Yesterday's Dispatches" : "Latest Dispatches";
+    document.getElementById("next-note").hidden = day === now.date;
     document.getElementById("today-date").textContent = prettyDate(day);
     track.innerHTML = list.map(function (s) {
       var bits = [s.label];
