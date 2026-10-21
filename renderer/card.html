@@ -93,7 +93,13 @@ function drawSpecPanel(ctx,u,x,y,w,h,p,accent,wide){
 }
 
 function draw(cv,img,p){
-  const W=cv.width,H=cv.height,ctx=cv.getContext("2d"),u=W/100,m=3.2*u,topH=14.5*u,botH=14.5*u;
+  const W=cv.width,H=cv.height,ctx=cv.getContext("2d"),u=W/100,m=3.2*u,topH=14.5*u;
+  /* Players draw over the bottom of an image or video: X's ALT badge (bottom left of every image with alt text),
+     the video timestamp (bottom left), the mute button (bottom right), and the desktop control bar (along the
+     bottom). So the X image (1600 x 1440) and the X and 4:5 Living Card videos get 5u of extra paper at the
+     bottom of the band, and the date, place, pull line, and handle sit above it. The top band stays as it is
+     so the photo stays as large as possible (Brian, 21 Oct 2026). The 4:5 still card is unchanged. */
+  const altPad=(W>H||(p.format||"").toLowerCase()==="footage")?5*u:0, botH=14.5*u+altPad;
   const [sName,accent]=SERIES[SKEY[(p.series||"").toLowerCase()]||"battle"];
   ctx.save(); ctx.clearRect(0,0,W,H);
   ctx.fillStyle=PAPER; ctx.fillRect(0,0,W,H);
@@ -163,9 +169,8 @@ function draw(cv,img,p){
   ctx.fillStyle=NAVY; ctx.font=`400 ${2.5*u}px "Special Elite"`; ctx.letterSpacing=`${.04*2.5*u}px`;
   ctx.fillText(p.place||"",m,placeBase);
 
-  /* Video players on X, Threads, Instagram, and Facebook put a mute button in the bottom right corner,
-     so on Living Cards the pull line and handle end short of it (about 11u in from the edge). */
-  const VID=fmt==="footage", R=VID?W-m-11*u:W-m;
+  /* The mute button now sits in the extra bottom strip, so the pull line and handle use the normal right edge. */
+  const R=W-m;
   ctx.textAlign="right";
   ctx.fillStyle=NAVY; ctx.font=`400 ${2.4*u}px "Special Elite"`; ctx.letterSpacing=`${.02*2.4*u}px`;
   ctx.fillText("@ww2dispatches",R,placeBase);
