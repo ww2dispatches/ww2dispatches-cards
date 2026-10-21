@@ -2,37 +2,306 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>WW2 Dispatches</title>
-<meta name="description" content="World War II, one day at a time. Battles, inventions, politics, and people.">
+<meta name="description" content="World War II, one day at a time. Battles, inventions, politics, and people, told with real archival photos and film. New every day.">
+<meta name="theme-color" content="#120F0C">
+<link rel="canonical" href="https://ww2dispatches.com/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="WW2 Dispatches">
+<meta property="og:title" content="WW2 Dispatches">
+<meta property="og:description" content="World War II, one day at a time. Real archival photos and film, every day.">
+<meta property="og:url" content="https://ww2dispatches.com/">
+<meta property="og:image" content="https://ww2dispatches.com/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@ww2dispatches">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Special+Elite&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Special+Elite&family=Source+Sans+3:wght@400;600&display=swap">
 <style>
-  :root { --paper:#EDE4CF; --ink:#1A1612; --red:#B04A3E; --navy:#3D5884; }
-  * { box-sizing:border-box; }
-  body { margin:0; min-height:100vh; background:var(--paper); color:var(--ink);
-         font-family:"Oswald",sans-serif; display:flex; align-items:center; justify-content:center; padding:24px 16px; }
-  main { width:100%; max-width:440px; text-align:center; }
-  .badge { width:104px; height:104px; border-radius:50%; background:var(--red); color:var(--paper);
-           display:flex; align-items:center; justify-content:center; margin:0 auto 16px;
-           font-weight:700; font-size:40px; box-shadow:inset 0 0 0 5px var(--red), inset 0 0 0 8px var(--paper); }
-  h1 { font-size:32px; margin:0; letter-spacing:.5px; }
-  p { font-family:"Special Elite",monospace; color:var(--navy); margin:8px 0 28px; }
-  a.btn { display:block; padding:16px; margin:12px 0; background:var(--ink); color:var(--paper);
-          text-decoration:none; font-size:18px; letter-spacing:1px; text-transform:uppercase; border-radius:6px; }
-  a.btn:hover { background:var(--red); }
-  .note { font-size:13px; color:var(--navy); margin-top:28px; font-family:"Special Elite",monospace; }
+/* One narrow column (max 460px) over archival photos that rotate behind the whole page. */
+:root {
+  --night: #120F0C; --paper: #EDE4CF; --ink: #1A1612; --red: #B04A3E; --navy: #3D5884;
+  --sand: #C9B98F; --line: rgba(237,228,207,.18); --panel: rgba(18,15,12,.55);
+  --display: "Oswald", "Arial Narrow", Impact, sans-serif;
+  --type: "Special Elite", "Courier New", Courier, monospace;
+  --body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { background: var(--night); }
+body { margin: 0; background: var(--night); color: var(--paper); font-family: var(--body); min-height: 100vh; overflow-x: hidden; -webkit-text-size-adjust: 100%; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid #D9A84A; outline-offset: 3px; }
+
+/* ---------- rotating background ---------- */
+.backdrop { position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
+.backdrop::after { content: ""; position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(18,15,12,.36) 0px, rgba(18,15,12,.6) 333px, rgba(18,15,12,.86) 640px, rgba(18,15,12,.9) 100%); }
+.layer { position: absolute; left: 0; right: 0; top: 0; height: 100%; background-size: cover; background-repeat: no-repeat;
+  opacity: 0; transition: opacity 1.8s ease; filter: sepia(.35) contrast(1.05); will-change: opacity, transform; }
+.layer.top { height: 640px; -webkit-mask-image: linear-gradient(#000 85%, transparent 100%); mask-image: linear-gradient(#000 85%, transparent 100%); }
+.layer.on { opacity: 1; animation: drift 9s linear both; }
+@keyframes drift { from { transform: scale(1); } to { transform: scale(1.08); } }
+.bg-dday   { background-image: url("img/bg-dday.jpg");   background-position: center 45%; }
+.bg-b17    { background-image: url("img/bg-b17.jpg");    background-position: 70% 50%; filter: saturate(.45) sepia(.3) contrast(1.05); }
+.bg-ike    { background-image: url("img/bg-ike.jpg");    background-position: 40% 42%; }
+.bg-iwo    { background-image: url("img/bg-iwo.jpg");    background-position: 60% 50%; }
+.bg-tehran { background-image: url("img/bg-tehran.jpg"); background-position: 50% 30%; }
+.bg-leyte  { background-image: url("img/bg-leyte.jpg");  background-position: center 30%; }
+@media (max-width: 700px) {
+  .bg-dday { background-image: url("img/bg-dday-sm.jpg"); } .bg-b17 { background-image: url("img/bg-b17-sm.jpg"); }
+  .bg-ike { background-image: url("img/bg-ike-sm.jpg"); } .bg-iwo { background-image: url("img/bg-iwo-sm.jpg"); }
+  .bg-tehran { background-image: url("img/bg-tehran-sm.jpg"); } .bg-leyte { background-image: url("img/bg-leyte-sm.jpg"); }
+}
+
+/* ---------- page column ---------- */
+.page { position: relative; z-index: 1; max-width: 460px; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-top: calc(28px + env(safe-area-inset-top, 0px)); padding-bottom: calc(40px + env(safe-area-inset-bottom, 0px));
+  display: flex; flex-direction: column; gap: 30px; }
+@media (min-width: 700px) { .page { padding-top: 48px; } }
+
+.mast { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 10px; }
+.badge { width: 104px; height: 104px; display: block; filter: drop-shadow(0 0 18px rgba(176,74,62,.75)); }
+.mast h1 { font-family: var(--display); font-weight: 700; text-transform: uppercase; margin: 4px 0 0;
+  font-size: 48px; line-height: .95; letter-spacing: .5px; text-wrap: balance; text-shadow: 0 2px 18px rgba(0,0,0,.7); }
+.mast h1 span { display: block; }
+.tagline { font-family: var(--type); margin: 0; font-size: 16px; line-height: 1.4; text-shadow: 0 1px 8px rgba(0,0,0,.85); }
+.credit { margin: -2px 0 0; font-family: var(--type); font-size: 11.5px; color: rgba(237,228,207,.62); max-width: 34ch; line-height: 1.35;
+  text-shadow: 0 1px 6px rgba(0,0,0,.9); min-height: 2.7em; }
+.socials { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; margin-top: 4px; }
+.socials a { width: 42px; height: 42px; display: grid; place-items: center; border-radius: 50%; transition: transform .15s, background .15s; }
+.socials a:hover { transform: translateY(-2px); background: var(--line); }
+.socials svg { width: 21px; height: 21px; fill: currentColor; }
+
+/* ---------- today's dispatches ---------- */
+.eyebrow { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 10px; }
+.eyebrow h2, .series h2 { font-family: var(--display); font-weight: 600; text-transform: uppercase; letter-spacing: 2px; font-size: 15px; margin: 0; }
+.eyebrow span { font-family: var(--type); color: var(--sand); font-size: 14px; }
+.slider { position: relative; }
+.track { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; border-radius: 4px; }
+.track::-webkit-scrollbar { display: none; }
+.slide { flex: 0 0 100%; scroll-snap-align: center; margin: 0; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.slide .pic { position: relative; display: block; border-radius: 3px; overflow: hidden; box-shadow: 0 0 0 1px rgba(237,228,207,.25), 0 18px 40px rgba(0,0,0,.6); background: #2a241e; }
+.slide img { display: block; width: 100%; max-width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
+.slide.namethis img { aspect-ratio: 1600 / 1440; }
+.play { position: absolute; left: 50%; top: 50%; width: 72px; height: 72px; margin: -36px 0 0 -36px; border-radius: 50%;
+  background: rgba(18,15,12,.72); border: 2px solid rgba(237,228,207,.8); display: grid; place-items: center; }
+.play::after { content: ""; margin-left: 6px; border-left: 22px solid var(--paper); border-top: 14px solid transparent; border-bottom: 14px solid transparent; }
+.slide figcaption { display: flex; align-items: center; justify-content: space-between; gap: 10px; font-family: var(--type); font-size: 14px; color: var(--sand); }
+.slide figcaption span { min-width: 0; }
+.slide figcaption b { font-family: var(--display); font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--paper); font-size: 13px; }
+.slide figcaption a { font-family: var(--display); font-weight: 600; letter-spacing: 1px; text-transform: uppercase; font-size: 13px; color: var(--paper);
+  text-decoration: none; border-bottom: 2px solid var(--red); white-space: nowrap; }
+.arrow { position: absolute; top: calc(50% - 40px); width: 40px; height: 40px; border-radius: 50%; border: 0; cursor: pointer;
+  background: rgba(26,22,18,.72); color: var(--paper); font: 700 20px/1 var(--display); display: grid; place-items: center; }
+.arrow.prev { left: 8px; } .arrow.next { right: 8px; }
+.arrow:disabled { opacity: 0; pointer-events: none; }
+.dots { display: flex; justify-content: center; gap: 8px; margin-top: 12px; }
+.dots button { width: 9px; height: 9px; padding: 0; border-radius: 50%; border: 0; background: var(--line); cursor: pointer; }
+.dots button[aria-current="true"] { background: var(--red); width: 26px; border-radius: 5px; }
+
+/* ---------- actions ---------- */
+.actions { display: flex; flex-direction: column; gap: 14px; }
+.signup { background: var(--paper); color: var(--ink); border-radius: 6px; padding: 14px 14px 14px 18px; box-shadow: 0 0 0 2px var(--ink) inset, 0 10px 24px rgba(0,0,0,.45); }
+.signup .head { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 6px; }
+.signup h3 { font-family: var(--display); font-weight: 700; text-transform: uppercase; font-size: 19px; letter-spacing: 1px; margin: 0; line-height: 1.05; }
+.stampline { font-family: var(--display); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--red); border: 2px solid var(--red);
+  padding: 1px 6px; transform: rotate(-3deg); font-size: 11px; white-space: nowrap; }
+.signup p { font-family: var(--type); color: var(--navy); margin: 0 0 12px; font-size: 13.5px; line-height: 1.4; }
+.signup form { display: flex; gap: 6px; }
+.signup input { flex: 1 1 auto; min-width: 0; font: 16px var(--type); padding: 10px; border: 2px solid var(--ink); background: #F7F1E2; color: var(--ink); border-radius: 4px; }
+.signup button { flex: 0 0 auto; font: 600 15px var(--display); letter-spacing: 1.5px; text-transform: uppercase; padding: 10px 14px;
+  background: var(--red); color: var(--paper); border: 2px solid var(--ink); border-radius: 4px; cursor: pointer; }
+.signup button:hover { background: var(--ink); }
+.signup .sent { margin: 10px 0 0; font-size: 13px; color: #4E5A2F; }
+.slip { position: relative; display: flex; align-items: center; gap: 14px; min-height: 64px; padding: 12px 18px; text-decoration: none;
+  background: var(--paper); color: var(--ink); border-radius: 6px; box-shadow: 0 10px 24px rgba(0,0,0,.45); transition: transform .15s, background .15s; }
+.slip::after { content: ""; position: absolute; left: 0; top: 10px; bottom: 10px; width: 4px; background: var(--red); border-radius: 0 3px 3px 0; }
+.slip:hover { background: #F5D6A0; transform: translateY(-2px); }
+.slip svg { width: 26px; height: 26px; flex: none; fill: none; stroke: var(--red); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.slip .t { display: flex; flex-direction: column; min-width: 0; }
+.slip strong { font-family: var(--display); font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; font-size: 18px; line-height: 1.15; }
+.slip small { font-family: var(--type); font-size: 13px; opacity: .8; overflow-wrap: anywhere; }
+
+/* ---------- series ---------- */
+.series h2 { margin-bottom: 12px; }
+.series ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.series li { padding: 12px; border-radius: 4px; background: var(--panel); border: 1px solid var(--line); display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.stamp { align-self: flex-start; font-family: var(--display); font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; font-size: 13px;
+  border: 2px solid currentColor; padding: 2px 7px; transform: rotate(-2deg); }
+.series li p { margin: 0; font-size: 14px; line-height: 1.35; color: #DCD2BC; }
+.s-battle { color: #E07A6C; } .s-home { color: #A9B87A; } .s-blue { color: #8FA6D6; } .s-state { color: #D9A84A; }
+
+footer { text-align: center; font-family: var(--type); font-size: 13px; color: var(--sand); display: flex; flex-direction: column; gap: 4px; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; scroll-behavior: auto !important; }
+  .layer.on { animation: none; }
+}
 </style>
 </head>
 <body>
-<main>
-  <div class="badge">WW2</div>
-  <h1>WW2 Dispatches</h1>
-  <p>World War II, one day at a time.</p>
-  <a class="btn" href="https://ww2dispatches.substack.com/subscribe">Get the Weekly Dispatch</a>
-  <a class="btn" href="https://ko-fi.com/ww2dispatches">Support WW2 Dispatches</a>
-  <a class="btn" href="mailto:contact@ww2dispatches.com">Contact</a>
-  <div class="note">Placeholder page. The full design is coming soon.</div>
+<div class="backdrop" id="backdrop" aria-hidden="true">
+  <div class="layer top bg-dday on" data-credit="Omaha Beach, 6 June 1944. Robert F. Sargent, U.S. Coast Guard"></div>
+  <div class="layer top bg-b17" data-credit="B-17 Flying Fortresses of the Eighth Air Force. U.S. Army Air Forces"></div>
+  <div class="layer bg-ike" data-credit="Eisenhower with 101st Airborne paratroopers, 5 June 1944. U.S. Army"></div>
+  <div class="layer top bg-iwo" data-credit="Marines on the beach at Iwo Jima, 1945. U.S. Marine Corps"></div>
+  <div class="layer top bg-tehran" data-credit="Stalin, Roosevelt, and Churchill at Tehran, November 1943. U.S. Army"></div>
+  <div class="layer top bg-leyte" data-credit="MacArthur wades ashore at Leyte, 20 October 1944. Gaetano Faillace, U.S. Army"></div>
+</div>
+
+<main class="page">
+  <header class="mast">
+    <svg class="badge" viewBox="0 0 120 120" role="img" aria-label="WW2 Dispatches badge">
+      <circle cx="60" cy="60" r="58" fill="#B04A3E"/>
+      <circle cx="60" cy="60" r="50" fill="none" stroke="#EDE4CF" stroke-width="3"/>
+      <circle cx="60" cy="60" r="44" fill="none" stroke="#EDE4CF" stroke-width="1.5"/>
+      <text x="60" y="73" text-anchor="middle" font-family="Oswald, Arial Narrow, sans-serif" font-weight="700" font-size="38" fill="#EDE4CF">WW2</text>
+    </svg>
+    <h1>WW2 <span>Dispatches</span></h1>
+    <p class="tagline">World War II, one day at a time.</p>
+    <p class="credit" id="credit">Photo: Omaha Beach, 6 June 1944. Robert F. Sargent, U.S. Coast Guard</p>
+    <nav class="socials" aria-label="Follow WW2 Dispatches">
+      <a href="https://x.com/ww2dispatches" aria-label="X" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg></a>
+      <a href="https://www.instagram.com/ww2dispatches" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></a>
+      <a href="https://www.threads.com/@ww2dispatches" aria-label="Threads" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.589 12c.027 3.086.718 5.496 2.057 7.164 1.43 1.783 3.631 2.698 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.31-.71-.873-1.3-1.634-1.75-.192 1.352-.622 2.446-1.284 3.272-.886 1.102-2.14 1.704-3.73 1.79-1.202.065-2.361-.218-3.259-.801-1.063-.689-1.685-1.74-1.752-2.964-.065-1.19.408-2.285 1.33-3.082.88-.76 2.119-1.207 3.583-1.291a13.853 13.853 0 0 1 3.02.142c-.126-.742-.375-1.332-.75-1.757-.513-.586-1.308-.883-2.359-.89h-.029c-.844 0-1.992.232-2.721 1.32L7.734 7.847c.98-1.454 2.568-2.256 4.478-2.256h.044c3.194.02 5.097 1.975 5.287 5.388.108.046.216.094.321.142 1.49.7 2.58 1.761 3.154 3.07.797 1.82.871 4.79-1.548 7.158-1.85 1.81-4.094 2.628-7.277 2.65Zm1.003-11.69c-.242 0-.487.007-.739.021-1.836.103-2.98.946-2.916 2.143.067 1.256 1.452 1.839 2.784 1.767 1.224-.065 2.818-.543 3.086-3.71a10.5 10.5 0 0 0-2.215-.221z"/></svg></a>
+      <a href="https://www.facebook.com/ww2dispatches" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></a>
+      <a href="https://www.youtube.com/@ww2dispatcheshq" aria-label="YouTube" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+      <a href="https://www.tiktok.com/@ww2dispatches" aria-label="TikTok" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
+    </nav>
+  </header>
+
+  <section class="today" id="today" aria-labelledby="today-h" hidden>
+    <div class="eyebrow"><h2 id="today-h">Today's Dispatches</h2><span id="today-date"></span></div>
+    <div class="slider">
+      <div class="track" id="track" tabindex="0" aria-label="Today's posts, swipe for more"></div>
+      <button class="arrow prev" id="prev" aria-label="Previous">‹</button>
+      <button class="arrow next" id="next" aria-label="Next">›</button>
+      <div class="dots" id="dots"></div>
+    </div>
+  </section>
+
+  <section class="actions" aria-label="Links">
+    <div class="signup">
+      <div class="head"><h3>The Weekly Dispatch</h3><span class="stampline">Every Sunday</span></div>
+      <p>Seven days of the war, in your inbox.</p>
+      <form id="signup" action="https://ww2dispatches.substack.com/api/v1/free?nojs=true" method="post" target="_blank">
+        <label for="email" hidden>Email address</label>
+        <input id="email" name="email" type="email" placeholder="your@email.com" required autocomplete="email">
+        <button type="submit">Subscribe</button>
+      </form>
+      <p class="sent" id="sent" hidden>Almost done. Check your inbox to confirm.</p>
+    </div>
+    <a class="slip" href="https://ko-fi.com/ww2dispatches" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M17 10h1.5a2.5 2.5 0 0 1 0 5H17"/><path d="M8 3c0 1.5 1 1.5 1 3M12 3c0 1.5 1 1.5 1 3"/></svg>
+      <span class="t"><strong>Support WW2 Dispatches</strong><small>Buy us a coffee on Ko-fi</small></span></a>
+    <a class="slip" href="mailto:contact@ww2dispatches.com">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v12H8l-4 4z"/><path d="M8 9h8M8 12h5"/></svg>
+      <span class="t"><strong>Contact</strong><small>contact@ww2dispatches.com</small></span></a>
+  </section>
+
+  <section class="series" aria-labelledby="series-h">
+    <h2 id="series-h">Four kinds of dispatch</h2>
+    <ul>
+      <li><span class="stamp s-battle">Battle Lines</span><p>Battles and military operations.</p></li>
+      <li><span class="stamp s-home">Home Front</span><p>Rationing, factories, and everyday people.</p></li>
+      <li><span class="stamp s-blue">Blueprint</span><p>Radar, codebreakers, and the engineering that won it.</p></li>
+      <li><span class="stamp s-state">Statecraft</span><p>Politics and diplomacy, from Munich to Yalta.</p></li>
+    </ul>
+  </section>
+
+  <footer><span>@ww2dispatches</span><span>Every dispatch checked against sources.</span><span>© 2026 WW2 Dispatches</span></footer>
 </main>
+
+<script>
+(function () {
+  // Rotating background: each photo holds 7 seconds, then cross fades.
+  var layers = Array.prototype.slice.call(document.querySelectorAll(".layer"));
+  var credit = document.getElementById("credit"), i = 0;
+  var still = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (!still) setInterval(function () {
+    layers[i].classList.remove("on");
+    i = (i + 1) % layers.length;
+    void layers[i].offsetWidth;
+    layers[i].classList.add("on");
+    credit.textContent = "Photo: " + layers[i].dataset.credit;
+  }, 7000);
+
+  // Signup: Substack opens in a new tab to finish; show a note here too.
+  document.getElementById("signup").addEventListener("submit", function () {
+    document.getElementById("sent").hidden = false;
+  });
+
+  // Today's Dispatches: only posts whose time has passed in Denver.
+  var MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  function denverNow() {
+    var parts = {};
+    new Intl.DateTimeFormat("en-CA", { timeZone: "America/Denver", year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", hourCycle: "h23" })
+      .formatToParts(new Date()).forEach(function (p) { parts[p.type] = p.value; });
+    return { date: parts.year + "-" + parts.month + "-" + parts.day, time: parts.hour + ":" + parts.minute };
+  }
+  function prettyDate(d) { var p = d.split("-"); return parseInt(p[2], 10) + " " + MONTHS[parseInt(p[1], 10) - 1]; }
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+
+  var track = document.getElementById("track"), dots = document.getElementById("dots");
+  var prev = document.getElementById("prev"), next = document.getElementById("next");
+  var all = [], shownKey = "";
+
+  function render() {
+    var now = denverNow();
+    var live = all.filter(function (s) { return s.date < now.date || (s.date === now.date && s.time <= now.time); });
+    if (!live.length) { document.getElementById("today").hidden = true; return; }
+    var day = live[live.length - 1].date;
+    var list = live.filter(function (s) { return s.date === day; }).reverse(); // newest first
+    var key = day + list.length;
+    if (key === shownKey) return;
+    shownKey = key;
+    document.getElementById("today-h").textContent = day === now.date ? "Today's Dispatches" : "Latest Dispatches";
+    document.getElementById("today-date").textContent = prettyDate(day);
+    track.innerHTML = list.map(function (s) {
+      var bits = [s.label];
+      var meta = (s.num ? "No. " + s.num + " · " : "") + s.title;
+      return '<figure class="slide ' + esc(s.kind) + '">' +
+        '<a class="pic" href="' + esc(s.link) + '" target="_blank" rel="noopener"><img src="' + esc(s.img) + '" alt="' + esc(s.alt) + '" loading="lazy">' +
+        (s.kind === "video" ? '<span class="play" aria-hidden="true"></span>' : "") + "</a>" +
+        "<figcaption><span><b>" + esc(bits[0]) + "</b> · " + esc(meta) + '</span><a href="' + esc(s.link) + '" target="_blank" rel="noopener">' + esc(s.linkLabel) + "</a></figcaption></figure>";
+    }).join("");
+    var first = track.querySelector("img"); if (first) first.loading = "eager";
+    dots.innerHTML = "";
+    list.forEach(function (s, j) {
+      var d = document.createElement("button"); d.setAttribute("aria-label", "Post " + (j + 1));
+      d.addEventListener("click", function () { go(j); }); dots.appendChild(d);
+    });
+    dots.hidden = list.length < 2;
+    track.scrollLeft = 0;
+    document.getElementById("today").hidden = false;
+    update();
+  }
+  function count() { return track.children.length; }
+  function idx() { return Math.round(track.scrollLeft / (track.clientWidth + 12)); }
+  function go(j) { track.scrollTo({ left: j * (track.clientWidth + 12), behavior: still ? "auto" : "smooth" }); }
+  function update() {
+    var j = idx();
+    Array.prototype.forEach.call(dots.children, function (d, k) { d.setAttribute("aria-current", k === j ? "true" : "false"); });
+    prev.disabled = j <= 0; next.disabled = j >= count() - 1;
+  }
+  prev.addEventListener("click", function () { go(Math.max(0, idx() - 1)); });
+  next.addEventListener("click", function () { go(Math.min(count() - 1, idx() + 1)); });
+  track.addEventListener("scroll", function () { window.requestAnimationFrame(update); }, { passive: true });
+
+  fetch("slides.json", { cache: "no-cache" }).then(function (r) { return r.json(); }).then(function (data) {
+    all = (data.slides || []).sort(function (a, b) { return (a.date + a.time) < (b.date + b.time) ? -1 : 1; });
+    render();
+    setInterval(render, 60000); // picks up the next post while the page is open
+  }).catch(function () {});
+})();
+</script>
 </body>
 </html>

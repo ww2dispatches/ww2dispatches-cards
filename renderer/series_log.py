@@ -156,3 +156,11 @@ if nrows:
 
 print(f"{total} cards logged, through No. {rows[-1]['dispatch_no']} on {rows[-1]['post_date']}; "
       f"{len(nrows)} Name This cards logged")
+
+# Refresh the "Today's Dispatches" data for ww2dispatches.com (site/slides.json).
+# Kept separate so a problem there never stops the logs from being written.
+try:
+    import runpy
+    runpy.run_path(os.path.join(root, "renderer", "site_data.py"), run_name="__main__")
+except Exception as e:
+    print(f"site/slides.json not refreshed: {e}")
