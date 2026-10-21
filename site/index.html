@@ -209,12 +209,13 @@ footer { text-align: center; font-family: var(--type); font-size: 13px; color: v
     <div class="signup">
       <div class="head"><h3>The Weekly Dispatch</h3><span class="stampline">Every Sunday</span></div>
       <p>Seven days of the war, in your inbox.</p>
-      <form id="signup" action="https://ww2dispatches.substack.com/api/v1/free?nojs=true" method="post" target="_blank">
+      <form id="signup" action="https://ww2dispatches.substack.com/api/v1/free?nojs=true" method="post" target="substack-signup">
         <label for="email" hidden>Email address</label>
         <input id="email" name="email" type="email" placeholder="your@email.com" required autocomplete="email">
         <button type="submit">Subscribe</button>
       </form>
       <p class="sent" id="sent" hidden>Almost done. Check your inbox to confirm.</p>
+      <iframe name="substack-signup" title="Newsletter signup" hidden></iframe>
     </div>
     <a class="slip" href="https://ko-fi.com/ww2dispatches" target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M17 10h1.5a2.5 2.5 0 0 1 0 5H17"/><path d="M8 3c0 1.5 1 1.5 1 3M12 3c0 1.5 1 1.5 1 3"/></svg>
@@ -278,9 +279,11 @@ footer { text-align: center; font-family: var(--type); font-size: 13px; color: v
     credit.textContent = "Photo: " + layers[i].dataset.credit;
   }, 7000);
 
-  // Signup: Substack opens in a new tab to finish; show a note here too.
+    // Signup: the form posts to Substack in a hidden frame, so the visitor stays here.
   document.getElementById("signup").addEventListener("submit", function () {
+    var f = this;
     document.getElementById("sent").hidden = false;
+    setTimeout(function () { f.reset(); }, 300);
   });
 
   // Today's Dispatches: only posts whose time has passed in Denver.
