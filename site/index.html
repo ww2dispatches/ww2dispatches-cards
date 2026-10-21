@@ -45,7 +45,7 @@ a { color: inherit; }
   background: linear-gradient(180deg, rgba(18,15,12,.36) 0px, rgba(18,15,12,.6) 333px, rgba(18,15,12,.86) 640px, rgba(18,15,12,.9) 100%); }
 .layer { position: absolute; left: 0; right: 0; top: 0; height: 100%; background-size: cover; background-repeat: no-repeat;
   opacity: 0; transition: opacity 1.8s ease; filter: sepia(.35) contrast(1.05); will-change: opacity, transform; }
-.layer.top { height: 640px; -webkit-mask-image: linear-gradient(#000 85%, transparent 100%); mask-image: linear-gradient(#000 85%, transparent 100%); }
+/* .top photos keep the framing they have in a 640px header band, but extend down the whole page (sized by fitTop below). */
 .layer.on { opacity: 1; animation: drift 9s linear both; }
 @keyframes drift { from { transform: scale(1); } to { transform: scale(1.08); } }
 .bg-dday   { background-image: url("img/bg-dday.jpg");   background-position: center 45%; }
@@ -132,19 +132,18 @@ a { color: inherit; }
 .slip small { font-family: var(--type); font-size: 13px; opacity: .8; overflow-wrap: anywhere; }
 
 /* ---------- name this ---------- */
-.puzzle { display: grid; grid-template-columns: 42% 1fr; gap: 14px; align-items: start; padding: 12px; border-radius: 6px;
-  background: var(--panel); border: 1px solid rgba(157,143,208,.45); }
-.pz-pic { display: block; border-radius: 3px; overflow: hidden; box-shadow: 0 0 0 1px rgba(237,228,207,.2); }
-.pz-pic img { display: block; width: 100%; max-width: 100%; aspect-ratio: 1600 / 1440; object-fit: cover; }
-.pz-text { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.puzzle { display: flex; flex-direction: column; gap: 10px; }
 .pz-head { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
-.pz-head h2 { margin: 0; font-family: var(--display); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; font-size: 14px;
-  color: #B9AEE3; border: 2px solid #9D8FD0; padding: 1px 7px; transform: rotate(-2deg); white-space: nowrap; }
-.pz-head span { font-family: var(--type); font-size: 12px; color: var(--sand); }
-.pz-clue { margin: 2px 0 0; font-family: var(--type); font-size: 14px; line-height: 1.35; }
-.pz-go { align-self: flex-start; font-family: var(--display); font-weight: 600; letter-spacing: 1px; text-transform: uppercase; font-size: 13px;
-  color: var(--paper); text-decoration: none; border-bottom: 2px solid #9D8FD0; }
-.pz-last { margin: 4px 0 0; padding-top: 6px; border-top: 1px dashed var(--line); font-size: 13px; line-height: 1.35; color: #DCD2BC; }
+.pz-head h2 { margin: 0; font-family: var(--display); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; font-size: 15px;
+  color: #B9AEE3; border: 2px solid #9D8FD0; padding: 2px 8px; transform: rotate(-2deg); white-space: nowrap; }
+.pz-head span { font-family: var(--type); font-size: 14px; color: var(--sand); }
+.pz-pic { display: block; border-radius: 3px; overflow: hidden; box-shadow: 0 0 0 1px rgba(157,143,208,.5), 0 18px 40px rgba(0,0,0,.6); }
+.pz-pic img { display: block; width: 100%; max-width: 100%; aspect-ratio: 1600 / 1440; object-fit: cover; }
+.pz-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.pz-clue { margin: 0; font-family: var(--type); font-size: 15px; line-height: 1.4; min-width: 0; }
+.pz-go { flex: none; font-family: var(--display); font-weight: 600; letter-spacing: 1px; text-transform: uppercase; font-size: 14px;
+  color: var(--paper); text-decoration: none; border-bottom: 2px solid #9D8FD0; white-space: nowrap; }
+.pz-last { margin: 0; padding: 10px 12px; border-radius: 4px; background: var(--panel); border: 1px dashed rgba(157,143,208,.5); font-size: 14px; line-height: 1.35; color: #DCD2BC; }
 .pz-last b { color: var(--paper); }
 
 /* ---------- series ---------- */
@@ -166,12 +165,12 @@ footer { text-align: center; font-family: var(--type); font-size: 13px; color: v
 </head>
 <body>
 <div class="backdrop" id="backdrop" aria-hidden="true">
-  <div class="layer top bg-dday on" data-credit="Omaha Beach, 6 June 1944. Robert F. Sargent, U.S. Coast Guard"></div>
-  <div class="layer top bg-b17" data-credit="B-17 Flying Fortresses of the Eighth Air Force. U.S. Army Air Forces"></div>
+  <div data-ar="1.2998" data-px="50" data-py="45" class="layer top bg-dday on" data-credit="Omaha Beach, 6 June 1944. Robert F. Sargent, U.S. Coast Guard"></div>
+  <div data-ar="1.2955" data-px="70" data-py="50" class="layer top bg-b17" data-credit="B-17 Flying Fortresses of the Eighth Air Force. U.S. Army Air Forces"></div>
   <div class="layer bg-ike" data-credit="Eisenhower with 101st Airborne paratroopers, 5 June 1944. U.S. Army"></div>
-  <div class="layer top bg-iwo" data-credit="Marines on the beach at Iwo Jima, 1945. U.S. Marine Corps"></div>
-  <div class="layer top bg-tehran" data-credit="Stalin, Roosevelt, and Churchill at Tehran, November 1943. U.S. Army"></div>
-  <div class="layer top bg-leyte" data-credit="MacArthur wades ashore at Leyte, 20 October 1944. Gaetano Faillace, U.S. Army"></div>
+  <div data-ar="1.3311" data-px="60" data-py="50" class="layer top bg-iwo" data-credit="Marines on the beach at Iwo Jima, 1945. U.S. Marine Corps"></div>
+  <div data-ar="1.3223" data-px="50" data-py="30" class="layer top bg-tehran" data-credit="Stalin, Roosevelt, and Churchill at Tehran, November 1943. U.S. Army"></div>
+  <div data-ar="1.3344" data-px="50" data-py="30" class="layer top bg-leyte" data-credit="MacArthur wades ashore at Leyte, 20 October 1944. Gaetano Faillace, U.S. Army"></div>
 </div>
 
 <main class="page">
@@ -226,13 +225,10 @@ footer { text-align: center; font-family: var(--type); font-size: 13px; color: v
   </section>
 
   <section class="puzzle" id="puzzle" aria-labelledby="puzzle-h" hidden>
+    <div class="pz-head"><h2 id="puzzle-h">Name This</h2><span id="pz-date"></span></div>
     <a class="pz-pic" id="pz-pic" href="https://x.com/ww2dispatches" target="_blank" rel="noopener"><img id="pz-img" src="" alt="WW2 Dispatches Name This card. Can you name it?" loading="lazy"></a>
-    <div class="pz-text">
-      <div class="pz-head"><h2 id="puzzle-h">Name This</h2><span id="pz-date"></span></div>
-      <p class="pz-clue" id="pz-clue"></p>
-      <a class="pz-go" id="pz-go" href="https://x.com/ww2dispatches" target="_blank" rel="noopener">Guess on X</a>
-      <p class="pz-last" id="pz-last" hidden></p>
-    </div>
+    <div class="pz-row"><p class="pz-clue" id="pz-clue"></p><a class="pz-go" id="pz-go" href="https://x.com/ww2dispatches" target="_blank" rel="noopener">Guess on X</a></div>
+    <p class="pz-last" id="pz-last" hidden></p>
   </section>
 
   <section class="series" aria-labelledby="series-h">
@@ -250,6 +246,26 @@ footer { text-align: center; font-family: var(--type); font-size: 13px; color: v
 
 <script>
 (function () {
+  // Photos marked .top: size them as they would sit in a 640px band at the top of the screen,
+  // then let them run on down the page, so the subject stays high but the photo fills the screen.
+  function fitTop() {
+    var vw = window.innerWidth, vh = window.innerHeight, band = 640;
+    document.querySelectorAll(".layer.top").forEach(function (l) {
+      var ar = parseFloat(l.dataset.ar), px = l.dataset.px / 100, py = l.dataset.py / 100;
+      var w = vw, h = vw / ar;
+      if (h < band) { h = band; w = band * ar; }
+      var offX = px * (w - vw), offY = py * Math.max(0, h - band);
+      if (h - offY < vh) {                 // not enough photo below: shift down, then grow if needed
+        offY = Math.max(0, h - vh);
+        if (h < vh) { h = vh; w = vh * ar; offX = px * (w - vw); }
+      }
+      l.style.backgroundSize = w + "px " + h + "px";
+      l.style.backgroundPosition = (-offX) + "px " + (-offY) + "px";
+    });
+  }
+  fitTop();
+  window.addEventListener("resize", fitTop);
+
   // Rotating background: each photo holds 7 seconds, then cross fades.
   var layers = Array.prototype.slice.call(document.querySelectorAll(".layer"));
   var credit = document.getElementById("credit"), i = 0;
