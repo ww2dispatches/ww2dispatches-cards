@@ -165,7 +165,7 @@ footer { text-align: center; font-family: var(--type); font-size: 13px; color: v
 </head>
 <body>
 <div class="backdrop" id="backdrop" aria-hidden="true">
-  <div data-ar="1.2998" data-px="50" data-py="45" class="layer top bg-dday on" data-credit="Omaha Beach, 6 June 1944. Robert F. Sargent, U.S. Coast Guard"></div>
+  <div data-ar="1.2998" data-px="50" data-py="45" data-cx="39" class="layer top bg-dday on" data-credit="Omaha Beach, 6 June 1944. Robert F. Sargent, U.S. Coast Guard"></div>
   <div data-ar="1.2955" data-px="70" data-py="50" class="layer top bg-b17" data-credit="B-17 Flying Fortresses of the Eighth Air Force. U.S. Army Air Forces"></div>
   <div class="layer bg-ike" data-credit="Eisenhower with 101st Airborne paratroopers, 5 June 1944. U.S. Army"></div>
   <div data-ar="1.3311" data-px="60" data-py="50" class="layer top bg-iwo" data-credit="Marines on the beach at Iwo Jima, 1945. U.S. Marine Corps"></div>
@@ -259,6 +259,11 @@ footer { text-align: center; font-family: var(--type); font-size: 13px; color: v
       if (h - offY < vh) {                 // not enough photo below: shift down, then grow if needed
         offY = Math.max(0, h - vh);
         if (h < vh) { h = vh; w = vh * ar; offX = px * (w - vw); }
+      }
+      if (l.dataset.cx) {                  // keep this point of the photo (percent across) at the center of the screen
+        var cx = l.dataset.cx / 100, need = Math.max(vw / (2 * cx), vw / (2 * (1 - cx)));
+        if (w < need) { var k = need / w, a = 400; w = need; h *= k; offY = Math.max(0, (offY + a) * k - a); }  // zoom around the title area so the troops stay at the same height
+        offX = cx * w - vw / 2;
       }
       l.style.backgroundSize = w + "px " + h + "px";
       l.style.backgroundPosition = (-offX) + "px " + (-offY) + "px";
