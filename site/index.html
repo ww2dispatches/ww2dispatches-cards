@@ -166,7 +166,7 @@ footer { text-align: center; font-family: var(--type); font-size: 13px; color: v
 <body>
 <div class="backdrop" id="backdrop" aria-hidden="true">
   <div data-ar="1.2998" data-px="50" data-py="45" data-cx="39" class="layer top bg-dday on" data-credit="Omaha Beach, 6 June 1944. Robert F. Sargent, U.S. Coast Guard"></div>
-  <div data-ar="1.2955" data-px="70" data-py="50" class="layer top bg-b17" data-credit="B-17 Flying Fortresses of the Eighth Air Force. U.S. Army Air Forces"></div>
+  <div data-ar="1.2955" data-px="70" data-py="50" data-cy="64" data-ty="300" class="layer top bg-b17" data-credit="B-17 Flying Fortresses of the Eighth Air Force. U.S. Army Air Forces"></div>
   <div class="layer bg-ike" data-credit="Eisenhower with 101st Airborne paratroopers, 5 June 1944. U.S. Army"></div>
   <div data-ar="1.3311" data-px="60" data-py="50" class="layer top bg-iwo" data-credit="Marines on the beach at Iwo Jima, 1945. U.S. Marine Corps"></div>
   <div data-ar="1.3223" data-px="50" data-py="30" class="layer top bg-tehran" data-credit="Stalin, Roosevelt, and Churchill at Tehran, November 1943. U.S. Army"></div>
@@ -259,6 +259,12 @@ footer { text-align: center; font-family: var(--type); font-size: 13px; color: v
       if (h - offY < vh) {                 // not enough photo below: shift down, then grow if needed
         offY = Math.max(0, h - vh);
         if (h < vh) { h = vh; w = vh * ar; offX = px * (w - vw); }
+      }
+      if (l.dataset.cy) {                  // put this point of the photo (percent down) at ty px from the top of the screen
+        var cy = l.dataset.cy / 100, ty = parseFloat(l.dataset.ty || 300);
+        if (h * (1 - cy) + ty < vh) { var g = Math.min(1.15, (vh - ty) / (h * (1 - cy))); w *= g; h *= g; }   // zoom a little at most if the photo would run out at the bottom
+        offY = Math.max(0, Math.min(cy * h - ty, h - vh));
+        offX = px * Math.max(0, w - vw);
       }
       if (l.dataset.cx) {                  // keep this point of the photo (percent across) at the center of the screen
         var cx = l.dataset.cx / 100, need = Math.max(vw / (2 * cx), vw / (2 * (1 - cx)));
