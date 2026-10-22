@@ -45,5 +45,28 @@
     "thumbnailCheck": "pass: first frame is an M-10 tank destroyer aimed at a shattered building",
     "videoTime": "12:00 America/Denver",
     "scheduled": "Buffer, all six channels, noon 21 Oct"
+  },
+  "themes": {
+    "who": [
+      "soldiers and sailors"
+    ],
+    "story": [
+      "combat",
+      "turning point"
+    ],
+    "photo": "a group",
+    "theater": "Western Europe",
+    "branch": [
+      "Army"
+    ],
+    "nations": [
+      "US",
+      "Germany"
+    ],
+    "video": {
+      "kind": "Living Card",
+      "opening": "a place or scene",
+      "sound": "silent"
+    }
   }
 }

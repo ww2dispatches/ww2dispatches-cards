@@ -60,5 +60,28 @@
     "facebook_film": "6ad2cffcc34368e4b0a075d6",
     "youtube": "6ad7bf257e4feac55ce84272",
     "tiktok": "6ad7bf2a0ddd02d3bd13c6ff"
+  },
+  "themes": {
+    "who": [
+      "leaders",
+      "soldiers and sailors"
+    ],
+    "story": [
+      "turning point"
+    ],
+    "photo": "people in action",
+    "theater": "Pacific",
+    "branch": [
+      "Army"
+    ],
+    "nations": [
+      "US",
+      "Philippines"
+    ],
+    "video": {
+      "kind": "Living Card",
+      "opening": "people still",
+      "sound": "silent"
+    }
   }
 }

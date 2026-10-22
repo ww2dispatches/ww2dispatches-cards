@@ -49,5 +49,27 @@
     "thumbnailCheck": "pass: first frame is a gun firing on the horizon line",
     "videoTime": "12:00 America/Denver",
     "scheduled": true
+  },
+  "themes": {
+    "who": [
+      "soldiers and sailors"
+    ],
+    "story": [
+      "combat",
+      "turning point"
+    ],
+    "photo": "combat or action",
+    "theater": "Mediterranean and North Africa",
+    "branch": [
+      "Army"
+    ],
+    "nations": [
+      "Britain"
+    ],
+    "video": {
+      "kind": "Living Card",
+      "opening": "dark or unclear",
+      "sound": "period sound"
+    }
   }
 }

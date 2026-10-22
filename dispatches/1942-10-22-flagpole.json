@@ -52,5 +52,29 @@
       ],
       "thumbnail": "Opens on HMS Seraph."
     }
+  },
+  "themes": {
+    "who": [
+      "leaders"
+    ],
+    "story": [
+      "decision or diplomacy"
+    ],
+    "photo": "a machine",
+    "theater": "Mediterranean and North Africa",
+    "branch": [
+      "Army",
+      "Navy"
+    ],
+    "nations": [
+      "US",
+      "Britain",
+      "France"
+    ],
+    "video": {
+      "kind": "Story Card",
+      "opening": "a machine",
+      "sound": "narration"
+    }
   }
 }

@@ -4,7 +4,7 @@ Writes three files:
   log/series-log.csv     one row per dispatch card: everything worth keeping for later
                          (archive site, newsletter, analytics, shop): number, dates, series,
                          format, title, place, video kind and film source, photo credit,
-                         growth flags, newsletter issue, sources, and every live post link
+                         growth flags, newsletter issue, sources, theme tags, and every live post link
   log/series-counts.csv  running totals per series
   log/namethis-log.csv   one row per Name This card
 
@@ -40,6 +40,23 @@ def yes(v):
 def sources(d):
     urls = [s.get("url", "") if isinstance(s, dict) else str(s) for s in d.get("sources") or []]
     return len(urls), " | ".join(u for u in urls if u)
+
+
+def theme_cols(d):
+    """The themes block as flat columns (see analytics/themes.md)."""
+    t = d.get("themes") or {}
+    v = t.get("video") or {}
+    j = lambda x: " | ".join(x) if isinstance(x, list) else (x or "")
+    return {
+        "theme_who": j(t.get("who")),
+        "theme_story": j(t.get("story")),
+        "theme_photo": j(t.get("photo")),
+        "theater": j(t.get("theater")),
+        "branch": j(t.get("branch")),
+        "nations": j(t.get("nations")),
+        "video_opening": j(v.get("opening")),
+        "video_sound": j(v.get("sound")),
+    }
 
 
 # Dispatch cards
@@ -92,6 +109,7 @@ for d in cards:
         "newsletter_issue": d.get("newsletter", ""),
         "source_count": n_src,
         "sources": src,
+        **theme_cols(d),
         "link_x": links.get("x", ""),
         "link_instagram": links.get("instagram", ""),
         "link_threads": links.get("threads", ""),
@@ -141,6 +159,7 @@ for d in puzzles:
         "photo_page": d.get("photoUrl", ""),
         "source_count": n_src,
         "sources": src,
+        **{k: v for k, v in theme_cols(d).items() if not k.startswith("video_")},
         "link_x": links.get("x", ""),
         "link_threads": links.get("threads", ""),
         "link_facebook": links.get("facebook", ""),

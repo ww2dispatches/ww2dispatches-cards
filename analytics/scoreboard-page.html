@@ -1,0 +1,237 @@
+<title>Dispatch Scoreboard</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Special+Elite&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+/* Layout: one narrow column, a stamped telegram header, four tabs; cream paper by day, Night Dispatch by dark. */
+:root {
+  --paper: #EDE4CF; --sheet: #F6F0E1; --ink: #1A1612; --muted: #6B6052; --rule: #D3C7AC;
+  --stamp: #B04A3E; --navy: #3D5884; --good: #4E6B2F; --weak: #A0442F; --soft: #E3D8BE;
+  --display: "Oswald", "Arial Narrow", Arial, sans-serif;
+  --type: "Special Elite", "Courier New", Courier, monospace;
+  --body: "Source Sans 3", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --paper: #120F0C; --sheet: #1C1814; --ink: #EDE4CF; --muted: #A89C88; --rule: #3A322A;
+  --stamp: #D06A5C; --navy: #8EA6CF; --good: #9DBB6E; --weak: #E08A72; --soft: #2A241E; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --paper: #120F0C; --sheet: #1C1814; --ink: #EDE4CF; --muted: #A89C88; --rule: #3A322A;
+  --stamp: #D06A5C; --navy: #8EA6CF; --good: #9DBB6E; --weak: #E08A72; --soft: #2A241E; color-scheme: dark }
+
+[hidden] { display: none !important; }
+body { background: var(--paper); color: var(--ink); font: 16px/1.5 var(--body); }
+.wrap { max-width: 720px; margin: 0 auto; padding-block: 18px 48px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid; gap: 18px; }
+header { display: grid; gap: 4px; border-bottom: 3px double var(--stamp); padding-bottom: 12px; }
+.kicker { font: 13px var(--type); color: var(--stamp); letter-spacing: .08em; }
+h1 { font: 700 30px/1.1 var(--display); letter-spacing: .02em; margin: 0; text-transform: uppercase; }
+.meta { font: 13px var(--type); color: var(--navy); }
+nav { display: flex; gap: 6px; flex-wrap: wrap; }
+nav button { font: 500 15px var(--display); letter-spacing: .06em; text-transform: uppercase; border: 1.5px solid var(--rule);
+  background: transparent; color: var(--muted); padding: 6px 12px; border-radius: 3px; cursor: pointer; }
+nav button[aria-selected="true"] { border-color: var(--stamp); color: var(--stamp); background: var(--sheet); }
+nav button:focus-visible, .post summary:focus-visible, select:focus-visible, .chip:focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; }
+section { display: grid; gap: 16px; }
+h2 { font: 700 19px var(--display); letter-spacing: .05em; text-transform: uppercase; margin: 0; text-wrap: balance; }
+h3 { font: 600 16px var(--body); margin: 0; }
+.panel { background: var(--sheet); border: 1px solid var(--rule); border-radius: 4px; padding: 14px 16px; display: grid; gap: 10px; min-width: 0; }
+.empty { border-style: dashed; text-align: left; }
+.empty .stamp { justify-self: start; }
+.stamp { font: 700 12px var(--display); letter-spacing: .12em; text-transform: uppercase; color: var(--stamp);
+  border: 2px solid var(--stamp); padding: 2px 8px; transform: rotate(-2deg); display: inline-block; }
+.prose { display: grid; gap: 8px; max-width: 65ch; }
+.prose p, .prose ul, .prose ol { margin: 0; }
+.prose ul, .prose ol { padding-left: 20px; display: grid; gap: 6px; }
+.prose h2 { font-size: 17px; margin-top: 8px; }
+.prose code { font-size: 14px; background: var(--soft); padding: 0 4px; border-radius: 2px; }
+.list { display: grid; gap: 8px; }
+.post { background: var(--sheet); border: 1px solid var(--rule); border-radius: 4px; min-width: 0; }
+.post summary { list-style: none; display: grid; grid-template-columns: 56px 1fr auto; gap: 12px; align-items: center; padding: 10px 12px; cursor: pointer; }
+.post summary::-webkit-details-marker { display: none; }
+.thumb { width: 56px; height: 70px; object-fit: cover; border-radius: 2px; background: var(--soft); display: block; }
+.thumb.blank { display: grid; place-items: center; font: 11px var(--type); color: var(--muted); }
+.who { min-width: 0; display: grid; gap: 2px; }
+.who .line1 { font: 12px var(--type); color: var(--navy); }
+.who .title { font-weight: 600; line-height: 1.25; }
+.who .line3 { font-size: 13px; color: var(--muted); }
+.scores { display: grid; gap: 4px; justify-items: end; font-variant-numeric: tabular-nums; }
+.score { font: 700 15px var(--display); letter-spacing: .03em; }
+.score small { font: 11px var(--body); color: var(--muted); letter-spacing: 0; margin-right: 4px; text-transform: uppercase; }
+.hi { color: var(--good); } .lo { color: var(--weak); }
+.pill { font: 600 11px var(--body); text-transform: uppercase; letter-spacing: .06em; padding: 1px 7px; border-radius: 10px; border: 1px solid var(--rule); color: var(--muted); }
+.pill.final { border-color: var(--navy); color: var(--navy); }
+.detail { padding: 0 12px 12px; overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; font-variant-numeric: tabular-nums; }
+th { font: 600 12px var(--body); text-transform: uppercase; letter-spacing: .05em; color: var(--muted); text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--rule); }
+td { padding: 6px 8px; border-bottom: 1px solid var(--rule); white-space: nowrap; }
+td.num, th.num { text-align: right; }
+td a { color: var(--navy); }
+.dim { color: var(--muted); }
+.controls { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.chip { font: 600 13px var(--body); border: 1px solid var(--rule); background: transparent; color: var(--muted); padding: 4px 10px; border-radius: 14px; cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+select { font: 14px var(--body); padding: 4px 8px; background: var(--sheet); color: var(--ink); border: 1px solid var(--rule); border-radius: 3px; }
+.scroll { overflow-x: auto; }
+.chart text { fill: var(--muted); font: 11px var(--body); }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 13px; color: var(--muted); }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
+.note { font-size: 13px; color: var(--muted); }
+@media (prefers-reduced-motion: no-preference) { .post[open] .detail { animation: open .18s ease-out; } @keyframes open { from { opacity: .4 } } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="kicker">INCOMING DISPATCH · WEEKLY RETURNS</div>
+    <h1>WW2 Dispatches Scoreboard</h1>
+    <div class="meta" id="meta"></div>
+  </header>
+  <nav role="tablist" aria-label="Scoreboard views">
+    <button role="tab" id="tab-week" data-view="week">This week</button>
+    <button role="tab" id="tab-posts" data-view="posts">Posts</button>
+    <button role="tab" id="tab-trends" data-view="trends">Trends</button>
+    <button role="tab" id="tab-playbook" data-view="playbook">Playbook</button>
+  </nav>
+  <section id="view-week" role="tabpanel" aria-labelledby="tab-week"></section>
+  <section id="view-posts" role="tabpanel" aria-labelledby="tab-posts" hidden></section>
+  <section id="view-trends" role="tabpanel" aria-labelledby="tab-trends" hidden></section>
+  <section id="view-playbook" role="tabpanel" aria-labelledby="tab-playbook" hidden></section>
+</div>
+
+<script>
+const DATA = {"generated": "2026-10-21 21:28", "snapshots": [], "first_review": "2026-10-28", "rules": {"floor": 50, "min_posts": 5, "window_days": 28, "weights": "like 1, comment 3, repost, quote, share, or save 2"}, "baselines": [], "posts": [], "groups": {"Card": [], "Video": [], "Name This": []}, "weekly_views": [], "instagram_follows_from_posts": 0, "playbook": "# WW2 Dispatches Playbook\n\nThe current lessons from the Wednesday analytics review. The Thursday cards run and the Friday video run read this before picking events, writing hooks, and building videos. It holds lessons, not rules: the Project docs stay the rules, and anything here that would change a rule goes to Brian first as a Schedule Board task. The Wednesday review rewrites this file each week; older versions live in git and in `analytics/reviews/`.\n\nUpdated 21 Oct 2026, before the first real review (28 Oct 2026). The method is in the Project's Analytics doc.\n\n## How to read this\n* **Reach:** a post's views compared with a typical post of the same kind on the same platform (1.0 is typical).\n* **Response:** weighted reactions per 100 views (like 1, comment 3, repost, quote, share, or save 2), compared the same way.\n* Cards, Name This, and videos are each judged only against their own kind.\n* **Hunch:** seen in one review, or fewer than 5 posts. The runs may lean toward it but never treat it as settled.\n* **Pattern:** holds across 3 weekly reviews with 5 or more posts on each side. The runs follow it.\n* **Rule change:** a pattern that would change a Project doc. Filed for Brian to approve.\n\n## Patterns\nNone yet.\n\n## Hunches\nThese came from a test run on launch week data (17 to 21 Oct 2026), before the system was live. They still need real data.\n1. **People and faces lead evening photos.** The evening photos of people drew more than the objects and machines. *Runs:* when choosing a Photo of the Day, prefer a strong photo of a person or people.\n2. **Spec Sheets drew less on Threads.** Spec Sheets stay at two a week (Brian's call); Test A tries a better hook.\n3. **Barrier breaking stories about groups often left out of WW2 coverage get strong reactions.** The WAVES dispatch (the Navy's first Black women officers) had by far the best response. Brian's read: the subject drove it, more than the hook. *Runs:* when a date offers a genuine story of this kind (the Tuskegee Airmen, the 6888th, Navajo Code Talkers, the Nisei 442nd, the WASPs, women in war work), it is a strong pick on its merits. Choose it for the story, never as a token, and keep the usual verification and somber subject rules.\n4. **Quiet procedural events reach fewer people.** The indictment filing and the tin can order drew least. *Runs:* when a date offers a choice, favor the event with a vivid moment or person; save procedural events for days with nothing stronger.\n5. **Video hold depends on the opening shot.** Viewers left Living Cards within a few seconds. *Runs:* see Test B.\n\n## Active tests\nEach test changes one thing, so the result can be read clearly.\n* **Test A, Spec Sheet hooks** (approved by Brian 21 Oct 2026). The next two Spec Sheets open their captions with the human stakes, then the machine (for example \"Eleven men died, and the ship still made it home. Here is why.\" rather than the ship's class). Measure: Reach and Response against earlier Spec Sheets. Review 4 Nov 2026.\n* **Test B, action first openings** (approved by Brian 21 Oct 2026). From the Friday 23 Oct 2026 run, every Living Card opens on motion or action in its first two seconds; tag the actual opening in `themes.video.opening`. Measure: hold on Instagram and TikTok against earlier Living Cards. Review 4 Nov 2026.\n\n## Watch, do not act yet\n* X, Instagram cards, and Facebook get too few views to judge. The platform decisions on the Roadmap (around 2 Nov) use follower growth and Reels data instead.\n* Name This: compare after five cards (ship versus aircraft, clue difficulty).\n* Engagement questions start in the 25 to 31 Oct batch. Compare with and without once there are 5 of each.\n* The Alamein Living Card (No. 013) is night footage and opens nearly black. Watch its hold against the others.\n\n## For Brian to decide\nNothing yet.\n", "latest_review": "", "reviews": [], "unmatched": [], "tag_problems": []};
+const D = DATA || { posts: [], groups: {}, weekly_views: [], baselines: [], reviews: [], snapshots: [], playbook: "", latest_review: "", unmatched: [], tag_problems: [], first_review: "2026-10-28", rules: {} };
+const $ = (s, el = document) => el.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const fmtDate = s => { if (!s) return ""; const d = new Date(s.slice(0, 10) + "T12:00:00"); return d.toLocaleDateString("en-US", { weekday: "short", day: "numeric", month: "short" }); };
+const fmtLift = v => v == null || v === "" ? "·" : Number(v).toFixed(1);
+const cls = v => v == null || v === "" ? "dim" : v >= 1.25 ? "hi" : v <= 0.8 ? "lo" : "";
+
+function md(text) {
+  const out = []; let list = null;
+  const inline = s => esc(s).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>").replace(/\*(.+?)\*/g, "<em>$1</em>").replace(/`(.+?)`/g, "<code>$1</code>");
+  const close = () => { if (list) { out.push(`</${list}>`); list = null; } };
+  for (const raw of text.split("\n")) {
+    const line = raw.trimEnd();
+    let m;
+    if (!line.trim()) { close(); continue; }
+    if ((m = line.match(/^#{1}\s+(.*)/)) && !line.startsWith("##")) { close(); continue; } // page title is the header
+    if ((m = line.match(/^#{2,}\s+(.*)/))) { close(); out.push(`<h2>${inline(m[1])}</h2>`); continue; }
+    if ((m = line.match(/^\s*[\*\-]\s+(.*)/))) { if (list !== "ul") { close(); out.push("<ul>"); list = "ul"; } out.push(`<li>${inline(m[1])}</li>`); continue; }
+    if ((m = line.match(/^\s*\d+\.\s+(.*)/))) { if (list !== "ol") { close(); out.push("<ol>"); list = "ol"; } out.push(`<li>${inline(m[1])}</li>`); continue; }
+    close(); out.push(`<p>${inline(line)}</p>`);
+  }
+  close();
+  return out.join("");
+}
+
+function section(md, name) {
+  const re = new RegExp("^## " + name + "\\s*$", "m"); const m = md.match(re);
+  if (!m) return ""; const rest = md.slice(m.index + m[0].length); const end = rest.search(/^## /m);
+  return (end < 0 ? rest : rest.slice(0, end)).trim();
+}
+
+function postRow(p) {
+  const img = p.image ? `<img class="thumb" src="${p.image}" alt="">` : `<div class="thumb blank">${p.kind === "Video" ? "Video" : "Card"}</div>`;
+  const label = [p.num ? "No. " + p.num : p.kind, p.kind === "Video" ? p.format : p.kind === "Card" ? p.format : "", p.series].filter(Boolean).join(" · ");
+  const rows = p.platforms.map(q => `<tr><td>${q.link ? `<a href="${esc(q.link)}" target="_blank" rel="noopener">${esc(q.platform)}</a>` : esc(q.platform)}</td>
+    <td class="num">${q.views === "" ? "·" : Number(q.views).toLocaleString()}</td><td class="num">${q.likes === "" ? "·" : q.likes}</td>
+    <td class="num">${q.comments === "" ? "·" : q.comments}</td><td class="num ${cls(q.reach_lift)}">${fmtLift(q.reach_lift)}</td>
+    <td class="num ${cls(q.response_lift)}">${fmtLift(q.response_lift)}</td><td class="num">${q.hold_pct === "" ? "·" : q.hold_pct + "%"}</td>
+    <td class="dim">${q.counts === "yes" ? "counts" : "not yet"}</td></tr>`).join("");
+  return `<details class="post"><summary>${img}
+    <div class="who"><div class="line1">${esc(label)}</div><div class="title">${esc(p.title)}</div>
+      <div class="line3">${fmtDate(p.date)} · ${esc(p.slot)} · <span class="pill ${p.status === "final" ? "final" : ""}">${esc(p.status)}</span></div></div>
+    <div class="scores"><div class="score ${cls(p.reach)}"><small>Reach</small>${fmtLift(p.reach)}</div><div class="score ${cls(p.response)}"><small>Response</small>${fmtLift(p.response)}</div></div>
+  </summary><div class="detail"><table><thead><tr><th>Platform</th><th class="num">Views</th><th class="num">Likes</th><th class="num">Comments</th><th class="num">Reach</th><th class="num">Resp.</th><th class="num">Hold</th><th>Scored</th></tr></thead><tbody>${rows}</tbody></table></div></details>`;
+}
+
+function renderWeek() {
+  const el = $("#view-week");
+  const scored = D.posts.filter(p => p.reach != null);
+  if (!D.latest_review && !scored.length) {
+    el.innerHTML = `<div class="panel empty"><span class="stamp">Awaiting first returns</span>
+      <h2>First review ${fmtDate(D.first_review)}</h2>
+      <p class="prose">Every Wednesday evening this page fills in: the week's best and weakest posts, what changed, the tests running, and anything that needs your decision. Posts are scored once they are two days old, and a platform starts counting once its typical post reaches ${D.rules.floor || 50} views.</p></div>`;
+    return;
+  }
+  const decide = section(D.playbook, "For Brian to decide");
+  const recent = scored.slice().sort((a, b) => b.reach - a.reach);
+  const best = recent.slice(0, 3), weak = recent.slice(-3).reverse().filter(p => !best.includes(p));
+  el.innerHTML = `${decide && !/^Nothing/i.test(decide) ? `<div class="panel"><span class="stamp">Needs your decision</span><div class="prose">${md(decide)}</div></div>` : ""}
+    ${D.latest_review ? `<div class="panel"><div class="prose">${md(D.latest_review)}</div></div>` : ""}
+    <h2>Best</h2><div class="list">${best.map(postRow).join("") || '<p class="note">No scored posts yet.</p>'}</div>
+    ${weak.length ? `<h2>Weakest</h2><div class="list">${weak.map(postRow).join("")}</div>` : ""}`;
+}
+
+let kindFilter = "all", sortBy = "newest";
+function renderPosts() {
+  const el = $("#view-posts");
+  let ps = D.posts.filter(p => kindFilter === "all" || p.kind === kindFilter);
+  const key = { newest: null, reach: "reach", response: "response" }[sortBy];
+  if (key) ps = ps.slice().sort((a, b) => (b[key] ?? -1) - (a[key] ?? -1));
+  const chip = (v, t) => `<button class="chip" data-kind="${v}" aria-pressed="${kindFilter === v}">${t}</button>`;
+  el.innerHTML = `<div class="controls">${chip("all", "All")}${chip("Card", "Cards")}${chip("Video", "Videos")}${chip("Name This", "Name This")}
+    <label for="sort" class="note" style="margin-left:auto">Sort</label><select id="sort"><option value="newest">Newest</option><option value="reach">Reach</option><option value="response">Response</option></select></div>
+    <div class="list">${ps.map(postRow).join("") || '<div class="panel empty"><p class="note">Posts appear here after the first Wednesday review.</p></div>'}</div>
+    <p class="note">Reach and Response: 1.0 is a typical post of the same kind on the same platform. Tap a post for each platform.</p>`;
+  $("#sort").value = sortBy;
+  el.querySelectorAll(".chip").forEach(b => b.onclick = () => { kindFilter = b.dataset.kind; renderPosts(); });
+  $("#sort").onchange = e => { sortBy = e.target.value; renderPosts(); };
+}
+
+const PCOL = { Threads: "var(--ink)", YouTube: "var(--stamp)", Instagram: "#B8862B", TikTok: "var(--navy)", X: "#5E6B3A", Facebook: "var(--muted)" };
+function chart(weeks) {
+  const plats = Object.keys(PCOL).filter(k => weeks.some(w => w[k]));
+  if (!weeks.length || !plats.length) return '<p class="note">The weekly chart starts after the first review.</p>';
+  const W = 640, H = 220, L = 46, R = 12, T = 12, B = 30;
+  const max = Math.max(...weeks.flatMap(w => plats.map(k => w[k] || 0)), 1);
+  const step = Math.pow(10, Math.floor(Math.log10(max))); const top = Math.ceil(max / step) * step;
+  const x = i => weeks.length === 1 ? L + (W - L - R) / 2 : L + i * (W - L - R) / (weeks.length - 1);
+  const y = v => T + (H - T - B) * (1 - v / top);
+  let svg = `<svg class="chart" viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="Views per week by platform">`;
+  for (let g = 0; g <= 4; g++) { const v = top * g / 4; svg += `<line x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}" stroke="var(--rule)" fill="none"/><text x="${L - 6}" y="${y(v) + 4}" text-anchor="end">${v >= 1000 ? (v / 1000) + "k" : v}</text>`; }
+  weeks.forEach((w, i) => { svg += `<text x="${x(i)}" y="${H - 8}" text-anchor="middle">${fmtDate(w.week).replace(/^\w+, /, "")}</text>`; });
+  plats.forEach(k => { const pts = weeks.map((w, i) => `${x(i)},${y(w[k] || 0)}`).join(" ");
+    svg += `<polyline points="${pts}" fill="none" stroke="${PCOL[k]}" stroke-width="2.5"/>`;
+    weeks.forEach((w, i) => svg += `<circle cx="${x(i)}" cy="${y(w[k] || 0)}" r="${i === weeks.length - 1 ? 4 : 2.5}" fill="${PCOL[k]}"/>`); });
+  svg += "</svg>";
+  return `<div class="scroll">${svg}</div><div class="legend">${plats.map(k => `<span><i style="background:${PCOL[k]}"></i>${k}</span>`).join("")}</div>`;
+}
+function groupTable(rows) {
+  if (!rows || !rows.length) return '<p class="note">No scored posts yet.</p>';
+  let last = "";
+  return `<div class="scroll"><table><thead><tr><th>Group</th><th class="num">Posts</th><th class="num">Reach</th><th class="num">Resp.</th><th></th></tr></thead><tbody>${rows.map(r => {
+    const head = r.group !== last ? `<tr><td colspan="5" style="padding-top:12px"><strong>${esc(r.group)}</strong></td></tr>` : ""; last = r.group;
+    return head + `<tr><td>${esc(r.value)}</td><td class="num">${r.posts}</td><td class="num ${r.usable ? cls(r.reach) : "dim"}">${fmtLift(r.reach)}</td><td class="num ${r.usable ? cls(r.response) : "dim"}">${fmtLift(r.response)}</td><td class="dim">${r.usable ? "" : "not enough data"}</td></tr>`; }).join("")}</tbody></table></div>`;
+}
+function renderTrends() {
+  const el = $("#view-trends");
+  const base = D.baselines.map(b => `<tr><td>${esc({ card: "Cards", video: "Videos", namethis: "Name This" }[b.kind] || b.kind)}</td><td>${esc(b.platform)}</td><td class="num">${Math.round(b.typical_views).toLocaleString()}</td><td class="num">${b.posts}</td><td class="${b.counts ? "" : "dim"}">${b.counts ? "counts" : "not yet"}</td></tr>`).join("");
+  el.innerHTML = `<div class="panel"><h2>Views per week</h2>${chart(D.weekly_views)}<p class="note">Weeks run Sunday to Saturday, by the day each post went out.</p></div>
+    <div class="panel"><h2>Typical post, last 4 weeks</h2>${base ? `<div class="scroll"><table><thead><tr><th>Kind</th><th>Platform</th><th class="num">Views</th><th class="num">Posts</th><th>Scored</th></tr></thead><tbody>${base}</tbody></table></div>` : '<p class="note">Fills in after the first review.</p>'}
+      <p class="note">A platform starts counting once its typical post reaches ${D.rules.floor || 50} views over ${D.rules.min_posts || 5} or more posts.</p></div>
+    <div class="panel"><h2>Cards by group</h2>${groupTable(D.groups.Card)}</div>
+    <div class="panel"><h2>Videos by group</h2>${groupTable(D.groups.Video)}</div>
+    <div class="panel"><h2>Name This by group</h2>${groupTable(D.groups["Name This"])}</div>`;
+}
+function renderPlaybook() {
+  const el = $("#view-playbook");
+  const checks = [...(D.tag_problems || []).map(t => "Tag: " + t), ...(D.unmatched || []).map(u => `Unmatched ${u.service} post sent ${fmtDate(u.sent)} (${u.id})`)];
+  el.innerHTML = `<div class="panel"><div class="prose">${md(D.playbook || "The playbook appears here.")}</div></div>
+    ${D.reviews.length ? `<div class="panel"><h2>Past reviews</h2><p class="note">${D.reviews.map(fmtDate).join(" · ")}. Each is saved in the cards repo under analytics/reviews.</p></div>` : ""}
+    ${checks.length ? `<details class="panel"><summary class="note">Data checks (${checks.length})</summary><ul class="note">${checks.map(c => `<li>${esc(c)}</li>`).join("")}</ul></details>` : ""}`;
+}
+
+function show(view) {
+  document.querySelectorAll("nav button").forEach(b => b.setAttribute("aria-selected", b.dataset.view === view));
+  document.querySelectorAll("section[role=tabpanel]").forEach(s => s.hidden = s.id !== "view-" + view);
+  try { localStorage.setItem("scoreboard-view", view); } catch (e) {}
+}
+$("#meta").textContent = D.generated ? `Updated ${fmtDate(D.generated)} · ${D.snapshots.length} weekly pull${D.snapshots.length === 1 ? "" : "s"} · ${D.posts.length} posts` : `First review ${fmtDate(D.first_review)}`;
+renderWeek(); renderPosts(); renderTrends(); renderPlaybook();
+document.querySelectorAll("nav button").forEach(b => b.onclick = () => show(b.dataset.view));
+let start = "week"; const h = location.hash.slice(1);
+if (["week", "posts", "trends", "playbook"].includes(h)) start = h; else { try { start = localStorage.getItem("scoreboard-view") || "week"; } catch (e) {} }
+show(start);
+</script>

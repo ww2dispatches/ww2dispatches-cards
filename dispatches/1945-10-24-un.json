@@ -49,5 +49,28 @@
       ],
       "thumbnail": "Opens on the overhead view of the Charter signing hall, San Francisco, June 1945."
     }
+  },
+  "themes": {
+    "who": [
+      "leaders"
+    ],
+    "story": [
+      "decision or diplomacy"
+    ],
+    "photo": "a document or poster",
+    "theater": "worldwide",
+    "branch": [],
+    "nations": [
+      "US",
+      "Britain",
+      "France",
+      "Soviet Union",
+      "China"
+    ],
+    "video": {
+      "kind": "Story Card",
+      "opening": "a place or scene",
+      "sound": "narration"
+    }
   }
 }

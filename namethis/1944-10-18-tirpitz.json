@@ -27,5 +27,20 @@
     "x": "https://x.com/ww2dispatches/status/2111878684076618184",
     "posted": "2026-10-18"
   },
-  "cardImage": "https://d3e0luujhwn38u.cloudfront.net/original/img/original/347031/e469f89f-4416-4742-a5d9-d226e05e0d91.jpg"
+  "cardImage": "https://d3e0luujhwn38u.cloudfront.net/original/img/original/347031/e469f89f-4416-4742-a5d9-d226e05e0d91.jpg",
+  "themes": {
+    "who": [],
+    "story": [
+      "combat"
+    ],
+    "photo": "a machine",
+    "theater": "Atlantic",
+    "branch": [
+      "Navy"
+    ],
+    "nations": [
+      "Germany",
+      "Britain"
+    ]
+  }
 }
