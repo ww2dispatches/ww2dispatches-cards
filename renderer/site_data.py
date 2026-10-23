@@ -22,7 +22,13 @@ LAUNCH_YEAR = 2026
 KEEP_DAYS = 7  # keep a week of past slides so "yesterday" always works
 SERIES = {"battle": "Battle Lines", "home": "Home Front", "blue": "Blueprint", "state": "Statecraft"}
 FORMATS = {"photo": "Photo of the Day", "quote": "Quote of the Day", "spec": "Spec Sheet"}
-CARDS_RAW = "https://raw.githubusercontent.com/ww2dispatches/ww2dispatches-cards/main/"
+# Images are served through jsDelivr, a free CDN that mirrors public GitHub repos (no account,
+# just a URL pattern). raw.githubusercontent.com stalled on 23 Oct 2026 and left the cards blank,
+# so the site points at the CDN copy instead. The ?v= hash keeps a re-rendered card from being
+# served stale from the CDN cache.
+CARDS_CDN = "https://cdn.jsdelivr.net/gh/ww2dispatches/ww2dispatches-cards@main/"
+VIDEOS_CDN = "https://cdn.jsdelivr.net/gh/ww2dispatches/ww2dispatches-videos@main/videos/"
+# Existence checks still go to GitHub itself, so a poster pushed minutes ago is found at once.
 VIDEOS_RAW = "https://raw.githubusercontent.com/ww2dispatches/ww2dispatches-videos/main/videos/"
 X_PROFILE = "https://x.com/ww2dispatches"
 SHORTS = "https://www.youtube.com/@ww2dispatcheshq/shorts"
@@ -35,12 +41,12 @@ def load(folder):
 
 
 def card_url(rel):
-    """Raw GitHub link with a short content hash, so a re-rendered card is never served stale."""
+    """CDN link with a short content hash, so a re-rendered card is never served stale."""
     path = os.path.join(root, rel)
     if not os.path.exists(path):
         return None
     v = hashlib.sha1(open(path, "rb").read()).hexdigest()[:8]
-    return f"{CARDS_RAW}{rel}?v={v}"
+    return f"{CARDS_CDN}{rel}?v={v}"
 
 
 def exists(url):
@@ -82,9 +88,8 @@ for d in cards:
     story = d.get("story") or {}
     is_living = bool((d.get("buffer") or {}).get("youtube")) and bool(d.get("video")) and not story
     if story or is_living:
-        poster = f"{VIDEOS_RAW}dispatch-{num}-instagram-poster.jpg"
-        if not exists(poster):
-            poster = img
+        poster_file = f"dispatch-{num}-instagram-poster.jpg"
+        poster = f"{VIDEOS_CDN}{poster_file}" if exists(f"{VIDEOS_RAW}{poster_file}") else img
         if poster:
             slides.append({
                 "date": post_date, "time": "12:00", "kind": "video", "num": num,
