@@ -1,0 +1,93 @@
+{
+  "num": 24,
+  "id": "1942-10-28-alamein-counterattack",
+  "title": "Rommel's counterattack broken",
+  "date": "1942-10-28",
+  "time": "17:00",
+  "format": "photo",
+  "place": "El Alamein · Egypt",
+  "series": "battle",
+  "pull": "Broken before it began",
+  "photo": "photos/1942-10-28-alamein-counterattack.jpg",
+  "photoUrl": "",
+  "photoNote": "PENDING: Desert Air Force bomber photo, to be supplied by Brian.",
+  "body": "Rommel gathered his panzers for one more blow at El Alamein. The bombers found them first.\n\n28 October 1942. Rommel's 15th and 21st Panzer Divisions attacked the British line near Kidney Ridge and were stopped by gun and tank fire. That afternoon they massed to try again. Allied aircraft bombed them as they formed up, and the second attack never got going.\n\nRommel never seized the initiative at El Alamein again. Within a week, his army was in retreat.\n\n#OnThisDay #WW2",
+  "threads": "Rommel gathered his panzers for one more blow at El Alamein. The bombers found them first.\n\n28 October 1942. Rommel's 15th and 21st Panzer Divisions attacked the British line near Kidney Ridge and were stopped by gun and tank fire. That afternoon they massed to try again. Allied aircraft bombed them as they formed up, and the second attack never got going.\n\nRommel never seized the initiative at El Alamein again. Within a week, his army was in retreat.",
+  "sources": [
+    {
+      "title": "Second Battle of El Alamein, Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Second_Battle_of_El_Alamein"
+    },
+    {
+      "title": "Today in World War II History, Oct. 28, 1942, Sarah Sundin",
+      "url": "https://www.goodreads.com/author_blog_posts/15922418-today-in-world-war-ii-history-oct-28-1942?tab=book"
+    },
+    {
+      "title": "The Tide Turns at El Alamein, Michael D. Hull, Warfare History Network",
+      "url": "https://warfarehistorynetwork.com/article/the-tide-turns-at-el-alamein/"
+    },
+    {
+      "title": "Desert Victory (1943), narration at 39:50 to 40:06: the air force 'began the task of preventing them from concentrating'",
+      "url": "https://commons.wikimedia.org/wiki/File:Desert_Victory_(1943).webm"
+    }
+  ],
+  "question": false,
+  "alt": "",
+  "themes": {
+    "who": [
+      "airmen",
+      "soldiers and sailors"
+    ],
+    "story": [
+      "combat",
+      "turning point"
+    ],
+    "photo": "a machine",
+    "theater": "Mediterranean and North Africa",
+    "branch": [
+      "Army Air Forces",
+      "Army"
+    ],
+    "nations": [
+      "Britain",
+      "US",
+      "Germany"
+    ],
+    "video": {
+      "kind": "Living Card",
+      "opening": "combat or firing",
+      "sound": "period sound"
+    }
+  },
+  "buffer": {
+    "x": "6adac940d447d56a647205f2",
+    "instagram": "6adac940cc1b7cdc08c84d85",
+    "threads": "6adac9411dc335d347ed8ce0",
+    "facebook": "6adac9411dc335d347ed8d08",
+    "x_film": "6adc6264bd33ce99c30fe42e",
+    "instagram_reel": "6adc6267bd33ce99c30fe4a8",
+    "threads_film": "6adc62690b5343d0706fea9a",
+    "facebook_film": "6adc626c8b3d437ddca8d5f3",
+    "youtube": "6adc6271bd33ce99c30fe690",
+    "tiktok": "6adc62748b3d437ddca8d709"
+  },
+  "video": {
+    "footage": "footage/1942-10-28-alamein-counterattack.mp4",
+    "focusX": 50,
+    "focusY": 50,
+    "sound": true,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Desert_Victory_(1943).webm",
+    "note": "Desert Victory (1943), British Ministry of Information documentary with film shot by the Army Film and Photographic Unit and RAF cameramen; Crown copyright expired, public domain (PD-UKGov on Wikimedia Commons; 480p copy from Brian's Source Film folder). From the film's air attack sequence, which its narrator introduces with the enemy armor moving north and 'the air force began the task of preventing them from concentrating'. Clip uses 41:14.45 to 41:16.10 (bombers in formation, bomb released), 41:18.95 to 41:20.95 (bombs falling over the desert), 41:10.40 to 41:12.60 (guns firing up), 41:16.18 to 41:17.93 (gun firing), 41:21.02 to 41:22.60 (bomber releasing), and 41:33.00 to 41:39.30 (cockpit, then bombs bursting below). Sound: the film's own soundtrack under these shots (bombs, guns, engine drone). The film's score plays under the formation shots at 40:41 to 41:05 and in a short run at 41:23 to 41:31, so those are left out; checked by spectrogram, and no narration by speech recognition. Normalized to -16 LUFS.",
+    "hook": "The bombers found the panzers first."
+  },
+  "kit": {
+    "file": "kits/dispatch-024-kit.md",
+    "filmCaption": "Film of Allied bombers over El Alamein, October 1942, with the film's own sound: bombs released over the desert, guns firing up at them, and the bursts below. On 28 October, air attacks broke up Rommel's panzers as they gathered to counterattack. From the 1943 British documentary Desert Victory.",
+    "youtubeTitle": "Bombed Before the Blow: Rommel's Counterattack at El Alamein, 1942 #shorts",
+    "tiktokCaption": "Rommel massed his panzers for one more counterattack. The bombers found them first. Real film from El Alamein, October 1942. #WW2 #OnThisDay #History #ElAlamein",
+    "thumbnailCheck": "pass: first frame is a bomber formation over the desert with a bomb falling away; bombs are falling toward the ground by the second second",
+    "videoTime": "12:00 America/Denver",
+    "scheduled": "Buffer, all six channels, noon 28 Oct"
+  },
+  "replaced": "Took the place of No. 024 The Alaska Highway breaks through (1942) on 24 Oct 2026 at Brian's request, so the noon video could carry real period sound. That dispatch is kept in bank/1942-10-28-alcan.json."
+}
