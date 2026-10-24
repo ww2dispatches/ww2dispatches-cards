@@ -7,9 +7,9 @@
   "place": "Washington, D.C. · USA",
   "series": "home",
   "pull": "Number 158",
-  "photo": "photos/1940-10-29-draft-lottery.jpg",
-  "photoUrl": "https://catalog.archives.gov/id/6012221",
-  "photoNote": "\"Waiting for his number!\" Clifford K. Berryman cartoon, 29 October 1940: Mars, blindfolded, draws from the draft bowl while Uncle Sam waits and the warring nations march past. Berryman Political Cartoon Collection, Records of the U.S. Senate, NARA 6012221, unrestricted. A drawing, not a photo.",
+  "photo": "photos/1940-10-29-draft-lottery-drawing.jpg",
+  "photoUrl": "https://www.loc.gov/pictures/collection/hec/",
+  "photoNote": "Secretary of War Henry L. Stimson, blindfolded, draws the first capsule of the 1940 draft lottery as President Roosevelt watches from the microphones, Washington, 29 October 1940. Harris and Ewing Collection, Library of Congress, public domain (no known restrictions). Supplied by Brian 24 Oct 2026; replaced the Berryman cartoon (NARA 6012221), which still appears in the Story Card.",
   "body": "A blindfolded man reached into a giant glass bowl in Washington, and millions of young American men waited to hear their number.\n\n29 October 1940. Two weeks after registration day, the government drew the lottery for America's first peacetime draft. Every registered man had a number. Now the order they would be called in came out of a bowl last used for the draft of the First World War.\n\nSecretary of War Henry Stimson, blindfolded, pulled out the first capsule. President Franklin D. Roosevelt read the number aloud: 158.\n\nFamilies listened on the radio, and newspapers printed every number as fast as it came in. Cartoonist Clifford Berryman drew the scene that day with Mars, the god of war, at the bowl and Uncle Sam waiting his turn.\n\nThe men called that winter expected to serve one year. Thirteen months later came Pearl Harbor.\n\nDid anyone in your family get the call in 1940 or 1941?\n\n#OnThisDay #WW2",
   "threads": "A blindfolded man reached into a giant glass bowl, and millions of young American men waited for their number.\n\n29 October 1940. The lottery for America's first peacetime draft. Secretary of War Henry Stimson drew the first capsule, and President Roosevelt read it aloud: 158.\n\nThose men expected to serve one year.\n\nDid anyone in your family get the call in 1940 or 1941?",
   "sources": [
@@ -35,7 +35,7 @@
     }
   ],
   "question": true,
-  "alt": "Archival 1940 cartoon by Clifford Berryman: Mars, the god of war, blindfolded, draws capsules from a glass bowl while Uncle Sam waits and soldiers of the warring nations march past. Caption: Waiting for his number! Text: 29 OCT 1940, Washington, D.C. Number 158.",
+  "alt": "Archival 1940 photo: Secretary of War Henry Stimson, blindfolded, reaches into a tall glass bowl packed with draft capsules while President Roosevelt stands at the microphones. Text: 29 OCT 1940, Washington, D.C. Number 158.",
   "videoPhotos": [
     {
       "page": "https://commons.wikimedia.org/wiki/File:SelectiveServiceActRoosevelt.jpg",
@@ -61,7 +61,7 @@
       "everyday life",
       "decision or diplomacy"
     ],
-    "photo": "a document or poster",
+    "photo": "people in action",
     "theater": "home front",
     "branch": [
       "civilian agency"
@@ -75,7 +75,6 @@
       "sound": "narration"
     }
   },
-  "focusY": 78,
   "buffer": {
     "x": "6adac95d8d2197cb2a102679",
     "instagram": "6adac95d9ef33e7811b38907",
@@ -107,5 +106,7 @@
       ],
       "thumbnail": "Opens on the Harris and Ewing photo of Secretary of War Stimson, blindfolded, drawing from the draft bowl as President Roosevelt watches (Library of Congress). Instagram and TikTok cover at 1.5 s."
     }
-  }
+  },
+  "focusX": 72,
+  "focusY": 40
 }
