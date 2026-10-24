@@ -77,13 +77,41 @@
     "nations": [
       "US",
       "Japan"
-    ]
+    ],
+    "video": {
+      "kind": "Living Card",
+      "opening": "combat or firing",
+      "sound": "silent"
+    }
   },
   "focusY": 58,
   "buffer": {
     "x": "6adac8b41dc335d347ed70f6",
     "instagram": "6adac8b4535235087b793fcf",
     "threads": "6adac8b51dc335d347ed714e",
-    "facebook": "6adac8b51dc335d347ed7176"
+    "facebook": "6adac8b51dc335d347ed7176",
+    "x_film": "6adc62386887a2efc1a53a4e",
+    "instagram_reel": "6adc623b8b3d437ddca8ce29",
+    "threads_film": "6adc623d8b3d437ddca8ce71",
+    "facebook_film": "6adc62403d5b27036b720a6a",
+    "youtube": "6adc6245e4be8a4d86485e7c",
+    "tiktok": "6adc62473d5b27036b720b71"
+  },
+  "video": {
+    "footage": "footage/1942-10-26-hornet.mp4",
+    "focusX": 50,
+    "focusY": 50,
+    "sourceUrl": "https://catalog.archives.gov/id/79581",
+    "note": "BATTLE OF SANTA CRUZ ISLANDS, 26 October 1942. U.S. Navy film 428-NPC-13399 (NARA 79581), silent. A bomb bursts beside a carrier crowded with planes during the air attacks, then a burning, listing carrier lies dead in the water and is taken under tow by a cruiser. The film does not name each carrier, so the caption does not either. U.S. government work, public domain. Clip uses 10:03.0 to 10:08.5, 3:00.0 to 3:06.0, and 3:24.0 to 3:28.0. The reel 428-NPC-13400 was not used because NARA flags it for possible copyright.",
+    "hook": "Six months earlier she carried Doolittle's raiders."
+  },
+  "kit": {
+    "file": "kits/dispatch-019-kit.md",
+    "filmCaption": "U.S. Navy film from the Battle of the Santa Cruz Islands, 26 October 1942. A bomb bursts beside a carrier deck packed with planes, then a burning carrier lies dead in the water and is taken under tow.",
+    "youtubeTitle": "Santa Cruz, 1942: The Battle That Cost Doolittle's Carrier #shorts",
+    "tiktokCaption": "Six months after the Doolittle Raid, USS Hornet fought her last battle. Real Navy film from Santa Cruz, 26 Oct 1942. #WW2 #OnThisDay #History #USSHornet",
+    "thumbnailCheck": "pass: first frame is a carrier deck crowded with planes as smoke rolls up beside it; the burst fills the frame by the second second",
+    "videoTime": "12:00 America/Denver",
+    "scheduled": "Buffer, all six channels, noon 26 Oct"
   }
 }

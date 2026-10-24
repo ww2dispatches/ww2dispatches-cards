@@ -1,0 +1,72 @@
+{
+  "dispatch": "1940-10-29-draft-lottery",
+  "note": "Story video for Dispatch No. 025, drawn only from the verified captions of Nos. 025 and 026. Photos: Clifford K. Berryman cartoon \"Waiting for his number!\", 29 October 1940, NARA 6012221, unrestricted; President Roosevelt signs the Selective Training and Service Act, 16 September 1940, public domain (Wikimedia Commons, SelectiveServiceActRoosevelt.jpg); Secretary of War Newton D. Baker draws the first number of the 1917 draft lottery, 20 July 1917, War Department, public domain (Wikimedia Commons, U.S._draft_lottery.jpg), shown where the script says the 1940 bowl was last used for the First World War draft; Henry L. Stimson, Harris and Ewing, Library of Congress, public domain. No public domain film of the 1940 drawing is online: Universal Newsreel vol. 12 release 924 (NARA 234272595) has it but NARA flags possible copyright, so this is a Story Card.",
+  "segments": [
+    {
+      "id": "s01",
+      "say": "A blindfolded man reached into a giant glass bowl, and millions of young American men waited to hear their number.",
+      "caption": "A blindfolded man reached into a giant glass bowl, and millions of young American men waited to hear their number.",
+      "visual": {"type": "photo", "src": "photos/1940-10-29-draft-lottery.jpg", "focusX": 45, "focusY": 35, "zoom": "in"}
+    },
+    {
+      "id": "s02",
+      "say": "October twenty ninth, nineteen forty. Washington draws the lottery for America's first peacetime draft.",
+      "caption": "29 October 1940. Washington draws the lottery for America's first peacetime draft.",
+      "visual": {"type": "card", "kicker": "Washington, D.C.", "lines": ["29 OCT 1940", "The draft lottery", "America's first", "peacetime draft"]}
+    },
+    {
+      "id": "s03",
+      "say": "President Roosevelt had signed the Selective Training and Service Act on September sixteenth.",
+      "caption": "President Roosevelt had signed the Selective Training and Service Act on 16 September.",
+      "visual": {"type": "photo", "src": "photos/1940-10-29-draft-spec.jpg", "focusX": 50, "focusY": 40, "zoom": "in"}
+    },
+    {
+      "id": "s04",
+      "say": "Men from twenty one to thirty five had registered two weeks before. Every one of them had a number.",
+      "caption": "Men from 21 to 35 had registered two weeks before. Every one of them had a number.",
+      "visual": {"type": "card", "kicker": "Registered", "lines": ["AGES 21 TO 35", "Every registered man", "had a number"]}
+    },
+    {
+      "id": "s05",
+      "say": "The order they would be called in came out of a bowl last used for the draft of the First World War.",
+      "caption": "The order they would be called in came out of a bowl last used for the draft of the First World War.",
+      "visual": {"type": "photo", "src": "stories/img/draft_1917_lottery.jpg", "focusX": 50, "focusY": 45, "zoom": "out"}
+    },
+    {
+      "id": "s06",
+      "say": "Secretary of War Henry Stimson, blindfolded, pulled out the first capsule.",
+      "caption": "Secretary of War Henry Stimson, blindfolded, pulled out the first capsule.",
+      "visual": {"type": "photo", "src": "stories/img/draft_stimson.jpg", "focusX": 50, "focusY": 30, "zoom": "in"}
+    },
+    {
+      "id": "s07",
+      "say": "President Roosevelt read the number aloud. One fifty eight.",
+      "caption": "President Roosevelt read the number aloud: 158.",
+      "visual": {"type": "card", "kicker": "The first number", "lines": ["No. 158", "Read aloud by", "President Roosevelt"]}
+    },
+    {
+      "id": "s08",
+      "say": "Six thousand, one hundred seventy five men across America held that number.",
+      "caption": "6,175 men across America held that number.",
+      "visual": {"type": "card", "kicker": "Holding No. 158", "lines": ["6,175 MEN", "across America", "found out at once"]}
+    },
+    {
+      "id": "s09",
+      "say": "Cartoonist Clifford Berryman drew the scene that day, with Mars, the god of war, at the bowl, and Uncle Sam waiting his turn.",
+      "caption": "Cartoonist Clifford Berryman drew the scene that day, with Mars, the god of war, at the bowl and Uncle Sam waiting his turn.",
+      "visual": {"type": "photo", "src": "photos/1940-10-29-draft-lottery.jpg", "focusX": 60, "focusY": 60, "zoom": "out"}
+    },
+    {
+      "id": "s10",
+      "say": "The men called that winter expected to serve one year. Thirteen months later came Pearl Harbor.",
+      "caption": "The men called that winter expected to serve one year. Thirteen months later came Pearl Harbor.",
+      "visual": {"type": "card", "kicker": "One year, they said", "lines": ["12 MONTHS", "The term of service", "Pearl Harbor came", "13 months later"]}
+    },
+    {
+      "id": "s11",
+      "say": "Follow W W Two Dispatches. The war, on the day it happened.",
+      "caption": "Follow WW2 Dispatches. The war, on the day it happened.",
+      "visual": {"type": "end"}
+    }
+  ]
+}

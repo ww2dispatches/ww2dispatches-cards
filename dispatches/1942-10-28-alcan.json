@@ -88,12 +88,40 @@
     "nations": [
       "US",
       "Canada"
-    ]
+    ],
+    "video": {
+      "kind": "Living Card",
+      "opening": "motion",
+      "sound": "silent"
+    }
   },
   "buffer": {
     "x": "6adac940d447d56a647205f2",
     "instagram": "6adac940cc1b7cdc08c84d85",
     "threads": "6adac9411dc335d347ed8ce0",
-    "facebook": "6adac9411dc335d347ed8d08"
+    "facebook": "6adac9411dc335d347ed8d08",
+    "x_film": "6adc6264bd33ce99c30fe42e",
+    "instagram_reel": "6adc6267bd33ce99c30fe4a8",
+    "threads_film": "6adc62690b5343d0706fea9a",
+    "facebook_film": "6adc626c8b3d437ddca8d5f3",
+    "youtube": "6adc6271bd33ce99c30fe690",
+    "tiktok": "6adc62748b3d437ddca8d709"
+  },
+  "video": {
+    "footage": "footage/1942-10-28-alcan.mp4",
+    "focusX": 50,
+    "focusY": 50,
+    "sourceUrl": "https://catalog.archives.gov/id/15613",
+    "note": "US ARMY CAMP IN ROCKY MOUNTAIN REGION, CANADA, sometime in 1942. U.S. Army Signal Corps film 111-ADC-1806 (NARA 15613), silent. Shot card: the Alcan Highway east of Kluane Lake, Yukon, a truck convoy on the highway, and road machinery at work on a new section. Army trucks pass on the new road, a bulldozer works a new section, and a convoy winds through the mountains. The exact filming date is not recorded, so the caption says 1942, not 28 October. U.S. government work, public domain (NARA's blanket 'possibly copyright' flag on Signal Corps reels). Clip uses 4:44.5 to 4:50.0, 7:46.6 to 7:51.6, and 5:00.0 to 5:05.0. The Alaska Highway compilation 111-ADC-9672 was not used because NARA notes possible copyright.",
+    "hook": "1,500 miles of road in about eight months."
+  },
+  "kit": {
+    "file": "kits/dispatch-024-kit.md",
+    "filmCaption": "U.S. Army film of the Alcan Highway in the Yukon, shot in 1942 (the exact day is not recorded): Army trucks on the new road, a bulldozer cutting a fresh section, and a convoy winding through the mountains. On 28 October 1942 the pioneer road was declared finished.",
+    "youtubeTitle": "1,500 Miles in About Eight Months: The Alaska Highway, 1942 #shorts",
+    "tiktokCaption": "The Army cut more than 1,500 miles of road through the wilderness in about eight months. Real film of the Alcan Highway, 1942. #WW2 #OnThisDay #History #AlaskaHighway",
+    "thumbnailCheck": "pass: first frame is an Army truck rolling past the camera on the new road, with more trucks coming",
+    "videoTime": "12:00 America/Denver",
+    "scheduled": "Buffer, all six channels, noon 28 Oct"
   }
 }

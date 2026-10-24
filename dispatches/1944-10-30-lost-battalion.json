@@ -59,12 +59,40 @@
     "nations": [
       "US",
       "Germany"
-    ]
+    ],
+    "video": {
+      "kind": "Living Card",
+      "opening": "motion",
+      "sound": "silent"
+    }
   },
   "buffer": {
     "x": "6adac9968d2197cb2a103a50",
     "instagram": "6adac997d447d56a64721ae7",
     "threads": "6adac997d447d56a64721b1a",
-    "facebook": "6adac9981dc335d347eda329"
+    "facebook": "6adac9981dc335d347eda329",
+    "x_film": "6adc62976887a2efc1a55b21",
+    "instagram_reel": "6adc629ae4be8a4d86486923",
+    "threads_film": "6adc629d3d5b27036b721c48",
+    "facebook_film": "6adc629f0b5343d0706ff264",
+    "youtube": "6adc62a53d5b27036b721da8",
+    "tiktok": "6adc62a76887a2efc1a55e3e"
+  },
+  "video": {
+    "footage": "footage/1944-10-30-lost-battalion.mp4",
+    "focusX": 50,
+    "focusY": 50,
+    "sourceUrl": "https://catalog.archives.gov/id/17226",
+    "note": "AMERICAN-JAPANESE TROOPS, MEURTHE MOSELLE, FRANCE, 30 and 31 October 1944. U.S. Army Signal Corps film 111-ADC-3423 (NARA 17226), silent. Shot card: Japanese American infantrymen advance through the woods of the Vosges, and 'soldiers of the 1st Bn in a group walk toward the camera in the woods. The men look tired; some have several days growth of beard.' Clip: Nisei soldiers climb a forest trail, a Nisei soldier on a field phone, then the men of the 1st Battalion walking out. U.S. government work, public domain (NARA's blanket 'possibly copyright' flag on Signal Corps reels). Clip uses 4:59.0 to 5:02.8, 5:24.0 to 5:26.8, and 7:34.0 to 7:43.0.",
+    "hook": "Cut off since 24 October. Here they walk out."
+  },
+  "kit": {
+    "file": "kits/dispatch-027-kit.md",
+    "filmCaption": "U.S. Army film from the Vosges Mountains, France, 30 and 31 October 1944. Nisei soldiers of the 442nd move up through the forest, then the tired men of the rescued 1st Battalion, 141st Infantry, walk out of the woods.",
+    "youtubeTitle": "The Rescue of the Lost Battalion: Real Film, October 1944 #shorts",
+    "tiktokCaption": "Japanese American soldiers of the 442nd broke through to 211 trapped Texans. Real film from the Vosges, 30 and 31 Oct 1944. #WW2 #OnThisDay #History #442nd #GoForBroke",
+    "thumbnailCheck": "pass: first frame is Nisei soldiers walking up a forest trail toward the camera",
+    "videoTime": "12:00 America/Denver",
+    "scheduled": "Buffer, all six channels, noon 30 Oct"
   }
 }

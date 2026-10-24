@@ -1,0 +1,72 @@
+{
+  "dispatch": "1941-10-31-rushmore",
+  "note": "Story video for Dispatch No. 030, drawn only from its verified caption and Spec Sheet. Photos, all U.S. government works at NARA, unrestricted: Rushmore in July 1939 with scaffolding over Roosevelt's head (Public Roads Administration 30-N-40-2431, NARA 135804230); Washington completed, Jefferson in progress, September 1935 (South Dakota Projects, NARA 5604020); Mount Rushmore National Monument, May 1939 (NARA 5604046); Washington's head above the rubble, Forest Service photo (95-GP-340-344861, NARA 7004388); Mount Rushmore Memorial practically finished, June 1942 (NARA 5604049); the finished carving (NPS 79-MORU-294, NARA 404575438, dated 1952). No film of the work ending in October 1941 was found at NARA, so this is a Story Card. The 8 a.m. dispatch that day (No. 029, Reuben James) has only two public domain photos, too few for a Story Card.",
+  "segments": [
+    {
+      "id": "s01",
+      "say": "For fourteen years, nearly four hundred workers rode down a granite cliff on steel cables to carve it with dynamite. Not one of them died.",
+      "caption": "For fourteen years, nearly 400 workers rode down a granite cliff on steel cables to carve it with dynamite. Not one of them died.",
+      "visual": {"type": "photo", "src": "photos/1941-10-31-rushmore.jpg", "focusX": 55, "focusY": 35, "zoom": "in"}
+    },
+    {
+      "id": "s02",
+      "say": "October thirty first, nineteen forty one. Work on Mount Rushmore comes to an end.",
+      "caption": "31 October 1941. Work on Mount Rushmore comes to an end.",
+      "visual": {"type": "card", "kicker": "Black Hills, South Dakota", "lines": ["31 OCT 1941", "Work ends on", "Mount Rushmore"]}
+    },
+    {
+      "id": "s03",
+      "say": "It had begun in October, nineteen twenty seven.",
+      "caption": "It had begun in October 1927.",
+      "visual": {"type": "photo", "src": "stories/img/rushmore_1935.jpg", "focusX": 55, "focusY": 40, "zoom": "in"}
+    },
+    {
+      "id": "s04",
+      "say": "About ninety percent of the carving was done with dynamite, blasting until only inches of rock were left.",
+      "caption": "About 90 percent of the carving was done with dynamite, blasting until only inches of rock were left.",
+      "visual": {"type": "photo", "src": "stories/img/rushmore_washington_95gp.jpg", "focusX": 45, "focusY": 25, "zoom": "out"}
+    },
+    {
+      "id": "s05",
+      "say": "Workers climbed seven hundred stairs to the top each morning, then were lowered over the face in bosun chairs.",
+      "caption": "Workers climbed 700 stairs to the top each morning, then were lowered over the face in bosun chairs.",
+      "visual": {"type": "photo", "src": "stories/img/rushmore_1939.jpg", "focusX": 55, "focusY": 35, "zoom": "in"}
+    },
+    {
+      "id": "s06",
+      "say": "One remembered the pay as eight dollars a day.",
+      "caption": "One remembered the pay as $8 a day.",
+      "visual": {"type": "card", "kicker": "The pay", "lines": ["$8 A DAY", "as one worker", "remembered it"]}
+    },
+    {
+      "id": "s07",
+      "say": "Gutzon Borglum, the sculptor who designed it, had died that March.",
+      "caption": "Gutzon Borglum, the sculptor who designed it, had died that March.",
+      "visual": {"type": "card", "kicker": "The sculptor", "lines": ["GUTZON BORGLUM", "Designed the memorial", "Died March 1941"]}
+    },
+    {
+      "id": "s08",
+      "say": "His son, Lincoln Borglum, carried the job to its finish.",
+      "caption": "His son, Lincoln Borglum, carried the job to its finish.",
+      "visual": {"type": "photo", "src": "stories/img/rushmore_1942.jpg", "focusX": 50, "focusY": 40, "zoom": "in"}
+    },
+    {
+      "id": "s09",
+      "say": "Each head is about sixty feet tall.",
+      "caption": "Each head is about 60 feet tall.",
+      "visual": {"type": "card", "kicker": "By the numbers", "lines": ["60 FEET", "Each head, about", "Nearly 400 workers", "No deaths"]}
+    },
+    {
+      "id": "s10",
+      "say": "Five weeks later came Pearl Harbor.",
+      "caption": "Five weeks later came Pearl Harbor.",
+      "visual": {"type": "photo", "src": "stories/img/rushmore_1952.jpg", "focusX": 50, "focusY": 30, "zoom": "out"}
+    },
+    {
+      "id": "s11",
+      "say": "Follow W W Two Dispatches. The war, on the day it happened.",
+      "caption": "Follow WW2 Dispatches. The war, on the day it happened.",
+      "visual": {"type": "end"}
+    }
+  ]
+}

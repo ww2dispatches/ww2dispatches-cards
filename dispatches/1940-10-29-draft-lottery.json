@@ -68,7 +68,12 @@
     ],
     "nations": [
       "US"
-    ]
+    ],
+    "video": {
+      "kind": "Story Card",
+      "opening": "a map or text card",
+      "sound": "narration"
+    }
   },
   "focusY": 78,
   "buffer": {
@@ -76,5 +81,31 @@
     "instagram": "6adac95d9ef33e7811b38907",
     "threads": "6adac95ecc1b7cdc08c851c2",
     "facebook": "6adac95e535235087b796ce3"
+  },
+  "story": {
+    "video": "videos/dispatch-025-story-am_onyx.mp4",
+    "script": "stories/1940-10-29-draft-lottery.json",
+    "voice": "am_onyx",
+    "speed": 0.95,
+    "time": "12:00",
+    "buffer": {
+      "x": "6adc627e3d5b27036b721708",
+      "instagram": "6adc62813d5b27036b721778",
+      "threads": "6adc62838b3d437ddca8d8de",
+      "facebook": "6adc6286bd33ce99c30fe9e7",
+      "youtube": "6adc628be4be8a4d86486765",
+      "tiktok": "6adc628ee4be8a4d864867ac"
+    },
+    "kit": {
+      "caption": "A blindfolded man reached into a giant glass bowl, and millions of young American men waited to hear their number.\n\nOn 29 October 1940, America drew the lottery for its first peacetime draft. The first number out of the bowl was 158.\n\nDispatch No. 025, the full story. Narration is AI generated; the photos are real archival images.",
+      "youtubeTitle": "Number 158: America's First Peacetime Draft Lottery, 1940 #shorts",
+      "tiktokCaption": "A blindfolded man, a glass bowl, and number 158. America's first peacetime draft lottery, 29 Oct 1940. Narration is AI generated. #WW2 #OnThisDay #History #Draft",
+      "schedule": [
+        "12:00 p.m. Mountain, Thu 29 Oct 2026, all six channels in Buffer",
+        "X and Facebook end #OTD #WW2 #OnThisDay #History; Instagram ends #WW2 #OnThisDay #History #WorldWar2; Threads has no tags (History Threads topic)",
+        "Flagged AI generated on X, Instagram, TikTok, and YouTube; Facebook as a Reel; Instagram and TikTok cover at 1.5 s"
+      ],
+      "thumbnail": "Opens on the Berryman cartoon of Mars, blindfolded, drawing from the draft bowl."
+    }
   }
 }

@@ -98,7 +98,12 @@
     "branch": [],
     "nations": [
       "US"
-    ]
+    ],
+    "video": {
+      "kind": "Story Card",
+      "opening": "a place or scene",
+      "sound": "narration"
+    }
   },
   "focusY": 45,
   "buffer": {
@@ -106,5 +111,31 @@
     "instagram": "6adac9f1d447d56a64722d9c",
     "threads": "6adac9f1535235087b79a2dd",
     "facebook": "6adac9f28d2197cb2a10502c"
+  },
+  "story": {
+    "video": "videos/dispatch-030-story-am_onyx.mp4",
+    "script": "stories/1941-10-31-rushmore.json",
+    "voice": "am_onyx",
+    "speed": 0.95,
+    "time": "12:00",
+    "buffer": {
+      "x": "6adc62ace4be8a4d86486b3a",
+      "instagram": "6adc62af6887a2efc1a55f25",
+      "threads": "6adc62b2e4be8a4d86486c8e",
+      "facebook": "6adc62b53d5b27036b722079",
+      "youtube": "6adc62ba6887a2efc1a560c9",
+      "tiktok": "6adc62bde4be8a4d86486e05"
+    },
+    "kit": {
+      "caption": "For fourteen years, nearly 400 workers rode down a granite cliff on steel cables to carve it with dynamite. Not one of them died.\n\nOn 31 October 1941, work on Mount Rushmore came to an end. Five weeks later came Pearl Harbor.\n\nDispatch No. 030, the full story. Narration is AI generated; the photos are real archival images.",
+      "youtubeTitle": "Mount Rushmore's Last Day of Work, 31 October 1941 #shorts",
+      "tiktokCaption": "Nearly 400 workers, 14 years, dynamite and steel cables, and not one death. Work on Mount Rushmore ended 31 Oct 1941. Narration is AI generated. #OnThisDay #History #MountRushmore #WW2",
+      "schedule": [
+        "12:00 p.m. Mountain, Sat 31 Oct 2026, all six channels in Buffer",
+        "X and Facebook end #OTD #WW2 #OnThisDay #History #MountRushmore; Instagram ends #WW2 #OnThisDay #History #MountRushmore; Threads has no tags (History Threads topic)",
+        "Flagged AI generated on X, Instagram, TikTok, and YouTube; Facebook as a Reel; Instagram and TikTok cover at 1.5 s"
+      ],
+      "thumbnail": "Opens on Mount Rushmore in July 1939, scaffolding over the unfinished Roosevelt."
+    }
   }
 }
