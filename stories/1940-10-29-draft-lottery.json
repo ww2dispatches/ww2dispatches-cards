@@ -1,12 +1,12 @@
 {
   "dispatch": "1940-10-29-draft-lottery",
-  "note": "Story video for Dispatch No. 025, drawn only from the verified captions of Nos. 025 and 026. Photos: Clifford K. Berryman cartoon \"Waiting for his number!\", 29 October 1940, NARA 6012221, unrestricted; President Roosevelt signs the Selective Training and Service Act, 16 September 1940, public domain (Wikimedia Commons, SelectiveServiceActRoosevelt.jpg); Secretary of War Newton D. Baker draws the first number of the 1917 draft lottery, 20 July 1917, War Department, public domain (Wikimedia Commons, U.S._draft_lottery.jpg), shown where the script says the 1940 bowl was last used for the First World War draft; Henry L. Stimson, Harris and Ewing, Library of Congress, public domain. No public domain film of the 1940 drawing is online: Universal Newsreel vol. 12 release 924 (NARA 234272595) has it but NARA flags possible copyright, so this is a Story Card.",
+  "note": "Story video for Dispatch No. 025, drawn only from the verified captions of Nos. 025 and 026. Photos: Clifford K. Berryman cartoon \"Waiting for his number!\", 29 October 1940, NARA 6012221, unrestricted; President Roosevelt signs the Selective Training and Service Act, 16 September 1940, public domain (Wikimedia Commons, SelectiveServiceActRoosevelt.jpg); Secretary of War Newton D. Baker draws the first number of the 1917 draft lottery, 20 July 1917, War Department, public domain (Wikimedia Commons, U.S._draft_lottery.jpg), shown where the script says the 1940 bowl was last used for the First World War draft; Secretary of War Henry L. Stimson, blindfolded, draws the first capsule as President Roosevelt watches from the microphones, 29 October 1940, Harris and Ewing, Library of Congress, public domain (supplied by Brian 24 Oct 2026; opens the video and returns for the draw). The earlier Stimson portrait is no longer used. No public domain film of the 1940 drawing is online: Universal Newsreel vol. 12 release 924 (NARA 234272595) has it but NARA flags possible copyright, so this is a Story Card.",
   "segments": [
     {
       "id": "s01",
       "say": "A blindfolded man reached into a giant glass bowl, and millions of young American men waited to hear their number.",
       "caption": "A blindfolded man reached into a giant glass bowl, and millions of young American men waited to hear their number.",
-      "visual": {"type": "photo", "src": "photos/1940-10-29-draft-lottery.jpg", "focusX": 45, "focusY": 35, "zoom": "in"}
+      "visual": {"type": "photo", "src": "stories/img/draft_1940_drawing.jpg", "focusX": 62, "focusY": 40, "zoom": "in"}
     },
     {
       "id": "s02",
@@ -36,11 +36,11 @@
       "id": "s06",
       "say": "Secretary of War Henry Stimson, blindfolded, pulled out the first capsule.",
       "caption": "Secretary of War Henry Stimson, blindfolded, pulled out the first capsule.",
-      "visual": {"type": "photo", "src": "stories/img/draft_stimson.jpg", "focusX": 50, "focusY": 30, "zoom": "in"}
+      "visual": {"type": "photo", "src": "stories/img/draft_1940_drawing.jpg", "focusX": 70, "focusY": 35, "zoom": "in"}
     },
     {
       "id": "s07",
-      "say": "President Roosevelt read the number aloud. One fifty eight.",
+      "say": "President Roosevelt red the number aloud. One fifty eight.",
       "caption": "President Roosevelt read the number aloud: 158.",
       "visual": {"type": "card", "kicker": "The first number", "lines": ["No. 158", "Read aloud by", "President Roosevelt"]}
     },
