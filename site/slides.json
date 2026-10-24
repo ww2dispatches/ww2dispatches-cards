@@ -444,6 +444,19 @@
   },
   {
    "date": "2026-10-28",
+   "time": "10:00",
+   "kind": "namethis",
+   "num": "",
+   "label": "10 a.m.",
+   "title": "Name This",
+   "series": "",
+   "img": "https://cdn.jsdelivr.net/gh/ww2dispatches/ww2dispatches-cards@main/cards/namethis-1942-10-28-gable-x.jpg?v=7c0bb5f3",
+   "alt": "WW2 Dispatches Name This card. Can you name it?",
+   "link": "https://x.com/ww2dispatches",
+   "linkLabel": "Guess on X"
+  },
+  {
+   "date": "2026-10-28",
    "time": "12:00",
    "kind": "video",
    "num": "024",
@@ -561,6 +574,19 @@
   },
   {
    "date": "2026-10-31",
+   "time": "10:00",
+   "kind": "namethis",
+   "num": "",
+   "label": "10 a.m.",
+   "title": "Name This",
+   "series": "",
+   "img": "https://cdn.jsdelivr.net/gh/ww2dispatches/ww2dispatches-cards@main/cards/namethis-1944-10-31-mosquito-x.jpg?v=5bc9e6b8",
+   "alt": "WW2 Dispatches Name This card. Can you name it?",
+   "link": "https://x.com/ww2dispatches",
+   "linkLabel": "Guess on X"
+  },
+  {
+   "date": "2026-10-31",
    "time": "12:00",
    "kind": "video",
    "num": "030",
@@ -610,6 +636,20 @@
    "clue": "Her sister was even more famous",
    "link": "https://x.com/ww2dispatches",
    "a": "SmFwYW5lc2UgYmF0dGxlc2hpcCBNdXNhc2hp"
+  },
+  {
+   "date": "2026-10-28",
+   "time": "10:00",
+   "img": "https://cdn.jsdelivr.net/gh/ww2dispatches/ww2dispatches-cards@main/cards/namethis-1942-10-28-gable-x.jpg?v=7c0bb5f3",
+   "clue": "Hollywood called him The King",
+   "link": "https://x.com/ww2dispatches"
+  },
+  {
+   "date": "2026-10-31",
+   "time": "10:00",
+   "img": "https://cdn.jsdelivr.net/gh/ww2dispatches/ww2dispatches-cards@main/cards/namethis-1944-10-31-mosquito-x.jpg?v=5bc9e6b8",
+   "clue": "Built mostly of wood",
+   "link": "https://x.com/ww2dispatches"
   }
  ]
 }

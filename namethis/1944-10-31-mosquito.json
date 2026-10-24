@@ -26,12 +26,29 @@
       "url": "https://www.awm.gov.au/collection/UK1753"
     }
   ],
+  "typefully": 11449382,
+  "buffer": {
+    "threads": "6adca3a38b3d437ddcba36fd",
+    "facebook": "6adca3a68b3d437ddcba383a",
+    "instagram": "6adca3aa6887a2efc1b6db68"
+  },
+  "post_date": "2026-10-31",
   "themes": {
-    "who": ["airmen"],
-    "story": ["combat"],
+    "who": [
+      "airmen"
+    ],
+    "story": [
+      "combat"
+    ],
     "photo": "a machine",
     "theater": "Western Europe",
-    "branch": ["Army Air Forces"],
-    "nations": ["Britain", "Germany", "Denmark"]
+    "branch": [
+      "Army Air Forces"
+    ],
+    "nations": [
+      "Britain",
+      "Germany",
+      "Denmark"
+    ]
   }
 }

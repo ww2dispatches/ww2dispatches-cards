@@ -22,12 +22,27 @@
       "url": "https://en.wikipedia.org/wiki/Clark_Gable"
     }
   ],
+  "typefully": 11449380,
+  "buffer": {
+    "threads": "6adca3998b3d437ddcba3511",
+    "facebook": "6adca39c8b3d437ddcba3590",
+    "instagram": "6adca3a06887a2efc1b6d9c7"
+  },
+  "post_date": "2026-10-28",
   "themes": {
-    "who": ["airmen"],
-    "story": ["everyday life"],
+    "who": [
+      "airmen"
+    ],
+    "story": [
+      "everyday life"
+    ],
     "photo": "a face or portrait",
     "theater": "home front",
-    "branch": ["Army Air Forces"],
-    "nations": ["US"]
+    "branch": [
+      "Army Air Forces"
+    ],
+    "nations": [
+      "US"
+    ]
   }
 }
