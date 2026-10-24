@@ -1,0 +1,90 @@
+# WW2 Dispatches: Newsletter
+
+The rules for **The Weekly Dispatch**, the WW2 Dispatches newsletter on Substack. The Friday video run drafts each issue from this doc; the Thursday cards run writes the launch announcement and the occasional caption mention (rules for the mention are in the Cards doc). Shared setup is in the Project Brief.
+
+## Why
+An email list is the one audience WW2 Dispatches owns outright. It survives algorithm changes and account problems, it's the best place for sponsorships and affiliate links at small sizes, and it's what makes the archive pay off later. That's why signups started the day before launch instead of waiting for months two and three.
+
+## Platform: Substack, free plan
+* Chosen over beehiiv: free for a free newsletter at any list size, with Substack's reader network for discovery. beehiiv's free plan caps at 2,500 subscribers and its growth, automation, and ad tools sit behind paid plans after its 1 Oct 2026 price change. Substack only takes 10% if paid subscriptions are ever turned on. Both export the subscriber list, so moving later is possible.
+* Rechecked 21 Oct 2026 against Kit, MailerLite, and Buttondown (none is free with automated sending above a small cap, and none has Substack's reader network): **Substack stays.** Brian is happy pasting each issue himself.
+* **Publication:** https://ww2dispatches.substack.com, on the project Gmail. Name "WW2 Dispatches" (the sender); the newsletter is called **The Weekly Dispatch** (chosen 21 Oct 2026 over "The WW2 Dispatches Weekly", matching the home page box and the Substack cover). **Custom Website style** (not Profile or Social Feed: the Profile style shows Notes, not the newsletter issues). WW2 badge as the logo. Category: History.
+* Substack has no connector, so pasting each issue is Brian's one manual step.
+
+## Look (matches the ww2dispatches.com home page, set 21 Oct 2026)
+* **Theme:** background #120F0C (the home page's night), accent #B04A3E (stamp red), the closest condensed bold heading font on Substack's list, a readable body font. Substack allows no custom code, so it can only come close.
+* **Wordmark:** the badge and "WW2 DISPATCHES" in cream on a transparent background (1344 x 256, substack-wordmark.png).
+* **Welcome page cover:** the D-Day photo with the badge, name, tagline, and "The Weekly Dispatch · Every Sunday" (1200 x 1200, substack-cover.png). Welcome page uses custom colors with background #120F0C; Show name off (the name is in the image), Show description on.
+* **Email banner** (above every issue): the D-Day photo with the badge, "The Weekly Dispatch", and "Seven days of the war, in your inbox." (1100 x 220, substack-email-banner.png).
+* **Header for all posts:** left empty; the banner does that job. Use it only for a temporary notice or a sponsor line later.
+* **Footer for all posts:**
+  > WW2 Dispatches brings you World War II, one day at a time, with a new dispatch every morning and evening and a video every day at noon.
+  > See today's dispatches at ww2dispatches.com, or follow along on X, Instagram, Threads, Facebook, YouTube, and TikTok.
+  > Forwarded this email? Subscribe free to get the next one.
+  > Enjoy these? You can buy us a coffee to help keep the dispatches coming.
+  > Have a question, a correction, or a family story from the war? Just reply to this email.
+
+  Linked: ww2dispatches.com, each platform's page, "Subscribe free" to https://ww2dispatches.substack.com/subscribe, "buy us a coffee" to https://ko-fi.com/ww2dispatches.
+* The three images were made by Claude from the home page's D-Day photo and badge; Brian keeps copies in the Brand folder. If they ever change, remake all three together.
+* To see what a new reader sees, open the Substack pages in a private window (signed in, Substack skips to its "recommend" step).
+
+## Settings
+* Sender name "WW2 Dispatches", from Substack's address for now.
+* Mailing address: the ARC Automotive business PO Box, entered as "WW2 Dispatches, PO Box ..." (Brian holds the only key). **Never use a home address.**
+* Copyright owner "WW2 Dispatches"; RSS email contact@ww2dispatches.com; private mode off; listing on Substack.com on; cross posting on.
+* No custom domain for now ($50 one time, and it may remove the publication from Substack's recommendation network; newsletter.ww2dispatches.com is the option later).
+* YouTube connection off (videos go through Buffer). No Bluesky.
+* Substack has no Google indexing switch; the "noindex" tag on a new publication clears once the first post is published.
+* Two factor authentication: recommended for the Substack account (Substack prompts for it).
+
+## Publication text
+* **Short description (Basics, under 250 characters):** World War II, one day at a time. A free weekly roundup of every WW2 Dispatches post: the battles, inventions, politics, and people behind each date, checked against sources and paired with real archival photos. 📜 (Still accurate after the 21 Oct 2026 review; it says photos, not film, because the issues carry the card images, not the videos.)
+* **Introduction (Details):** WW2 Dispatches tells the story of World War II one day at a time, from the road to war in the 1930s through the battles, the engineering, and the aftermath. Every day brings new dispatches on X, Instagram, Threads, Facebook, TikTok, and YouTube, each tied to something that happened on that date and told with real archival photos and film. Once a week, the newsletter gathers them all in one place, with the full story behind each one.
+* **"How I make this" statement (Details):** WW2 Dispatches is made by a history buff and engineering teacher, with help from AI. I use Claude to research events, check them against sources, and draft the text, and I review everything before it goes out. Photos and film are real public domain archival material, never AI generated. Some of the daily videos use an AI narration voice, and they are always labelled. Every dispatch lists its sources.
+* **About page ("Why subscribe?" block, rewritten 21 Oct 2026, replacing Substack's default text):** sections Why subscribe? (free, every Sunday, the week's dispatches with the story behind each), the Subscribe now button, What's in each issue (morning dispatches with photo and short story, the evening cards, links to the full posts, checked against sources), Four kinds of dispatch (the four series), Follow along every day (daily dispatches and a short video on all six platforms, ww2dispatches.com), Join the conversation (reply with questions, corrections, or family stories), and "Free to read, always."
+* **Welcome email** (subject "Welcome to WW2 Dispatches 📜", rewritten 21 Oct 2026): thanks; what the account is (new dispatches and a short video every day, each tied to that date, told with real archival photos and film, checked against sources); what the Sunday issue brings; links to ww2dispatches.com ("Today's dispatches") and all six platforms (X, Instagram, Threads, Facebook, YouTube @ww2dispatcheshq, TikTok); and an invitation to reply with questions, corrections, or family stories from the war.
+
+## Schedule
+Weekly, sent **Sunday 8 a.m. Mountain**. Each issue covers the Sunday through Saturday just finished. **First issue: Sunday 1 Nov 2026**, covering launch (Sat 17 Oct) through Sat 31 Oct, drafted in the Fri 30 Oct run. Runs before 30 Oct draft no issue.
+
+## Issue format
+* Subject line "This Week in WW2 Dispatches: <the week's best hook>" and a one line preview.
+* A two or three sentence intro.
+* Each **8 a.m. dispatch** in date order: its X card image, the heading "Dispatch No. NNN: <Title>", date and series, a three or four sentence short version drawn from its `body` (no new facts), and a "Read the full dispatch on X" link from its `links.x`.
+* A short **"From the evening desk"** gallery of the week's 5 p.m. cards: each card image with one line (number, format, title, date) and its X link.
+* Closes with a short sign off. **No Ko-fi line in the issue body:** the email footer carries it on every issue (changed 21 Oct 2026).
+* No dashes. Built only from the dispatch JSON on GitHub; no new facts.
+* Optional extras when they come cheap: a Blueprint deep dive, a book recommendation (affiliate link later), sponsorships once the list grows.
+
+## Workflow
+1. The Friday run writes the issue to `newsletter/issue-NNN.md` in the cards repo (it renders on github.com with the card images) and records `"newsletter": NNN` in each covered dispatch JSON.
+2. It files a Schedule Board task due Saturday 09:00, **"Paste and schedule the weekly newsletter"**, with the github.com link, subject line, and preview line, plus a push reminder at that time (Brief, "Shared run procedures").
+3. During the Saturday review Brian opens the file on github.com, copies the rendered issue into a new Substack post, checks it, and schedules it for Sunday 8 a.m. Mountain (about 10 minutes).
+4. On the first issue, check that the images paste cleanly; if not, upload the cards in the Substack editor instead.
+
+## Signup points
+* The Weekly Dispatch signup box on the ww2dispatches.com home page. It posts to Substack's free signup in a hidden frame, so the visitor stays on our page and sees "Almost done. Check your inbox to confirm." Substack logs these as "external form / api". Tested 21 Oct 2026.
+* "Subscribe free" in the email footer, for forwarded issues.
+* A line in the YouTube description ("Get the weekly roundup: ww2dispatches.substack.com").
+* No signup link in every caption. The occasional newsletter mention (Cards doc) is enough.
+
+## Issue archive on ww2dispatches.com (planned)
+Most readers never see the Substack site: they sign up on our home page and read the emails. To keep anyone browsing back issues in our own look, add an issue archive to the home page site **after the first few issues are out** (around late November).
+* Each issue gets its own page in the Night Dispatch look, built automatically from `newsletter/issue-NNN.md` (the file the Friday run already writes), plus a list page of all issues and a link from the home page.
+* Substack keeps sending the emails and bringing in readers through its network; it just stops being the place people browse.
+* No extra weekly work for Brian. It grows into the dispatch archive later (Roadmap, Archive plan).
+
+## Launch announcement
+In the 1 to 7 Nov batch (prepared Thu 29 Oct): one post on X, Instagram, Threads, and Facebook in the first week of November saying The Weekly Dispatch is live, with a short look at what issue 001 covered and "Sign up free at the link in our bio." It is its own post (not a dispatch, no dispatch number, like the welcome post), using the email banner or a simple card in the Field Telegram look. Schedule it at 1 p.m. or another quiet time, since noon is the daily video, and on a different day from that week's Ko-fi soft ask. Remove its item from `status.md` in the cards repo once it is scheduled.
+
+## Growing the list
+* **After the first month:** check open rates and signups, and test the Sunday send time.
+* **Substack recommendations (around month two):** once a few issues are out, Brian recommends a couple of other WW2 or history Substacks and asks them to recommend WW2 Dispatches back. This is the main way Substack's network sends new readers.
+* **Daily posts on Substack:** not as a daily email, which would hurt the weekly issue. The only idea worth testing is Substack Notes (the short feed that surfaces a publication to people outside its list), with only the best card or video of the day, judged after two weeks by new subscribers. It depends on the Facebook versus Substack decision in the Roadmap's open decisions. Buffer lists a Substack channel, but what it posts is unconfirmed (likely Notes); Typefully also lists Substack.
+* **Paid tier:** available any time with no gate (Substack keeps 10% plus Stripe fees), but only worth it with a large, engaged list. See the Roadmap's Subscriptions plan.
+
+## Changelog
+* 15 Oct 2026: Newsletter plan added to the Roadmap.
+* 16 Oct 2026: Substack chosen over beehiiv; publication set up and taking signups; settings, description, Introduction, About page, "How I make this", and welcome email written; Linktree button added.
+* 19 Oct 2026: Substack Notes idea raised. Drafting moved to the Friday video run. Rules gathered here from the Project Brief and the Roadmap.
+* 21 Oct 2026: Introduction updated to name all six platforms and the archival film; "How I make this" updated to cover film and the labelled AI narration on some videos. The short description was reviewed and kept as is. Later: the welcome email rewritten to cover the daily video, archival film, the home page, and all six platforms; signup points now lead with the home page box instead of the Linktree. The About page's "Why subscribe?" block was still Substack's default text (with dashes and paid subscription wording) and was rewritten. Later still: Substack restyled to match the home page (night background, stamp red accent, new wordmark, welcome cover, and email banner), Custom Website style kept over Profile, the email footer rewritten (Ko-fi line moved there from the issue body), the home page signup kept on our page, Substack reconfirmed over the alternatives, and an issue archive on ww2dispatches.com planned for after the first few issues. The newsletter is named The Weekly Dispatch everywhere; the email banner was remade to match.

@@ -1,0 +1,151 @@
+# WW2 Dispatches: Videos
+
+The rules for the **daily noon video**. The Friday video run follows this doc. Shared setup (series, brand, writing rules, photo rules and workarounds, Buffer channel IDs, Schedule Board tasks, record keeping) is in the Project Brief. The slot layout is in the Roadmap. The card frame the videos share is in the Cards doc. What the analytics have taught so far is in `analytics/playbook.md` (Analytics doc); **read it before building the week's videos** and follow its patterns and any active test that touches video.
+
+**This doc is the one place for how many videos each batch makes.**
+
+## The goal
+**One video every day at noon Mountain**, on all six channels: X, Threads, Instagram Reels (shared to the feed), Facebook, YouTube Shorts, and TikTok. On the card platforms it doubles as the third post of the day. Video is the priority because it is the best way to reach new people on X, Instagram, TikTok, and YouTube. Brian's weekly time should stay at about 45 minutes or less.
+
+## Two kinds of noon video
+* **Living Card:** real archival film playing in the card frame, labelled "Dispatch No. NNN · The Footage" on screen (`renderer/living.js` adds it). Keeps the film's own sound. **No AI label.**
+* **Story Card:** archival photos with the Onyx narration, labelled "Dispatch No. NNN · The Story" on screen. **Always** says "Narration is AI generated" in the caption and is flagged AI generated in Buffer.
+* Both keep the day's dispatch number. A video usually covers the 8 a.m. story; use the 5 p.m. card's story when its film or photos make the stronger video.
+* **No music, ever.** This is a period piece.
+
+## Video count
+* **Every day gets a noon video**, from the 25 to 31 Oct 2026 batch on.
+* **Film first:** for every day, first look for real public domain film of that day's event. Whenever usable film exists, make a **Living Card**, with no weekly limit. All other days are **Story Cards**.
+* Film shot a few days before or after the event is fine **if the caption says so honestly** (Aachen, No. 009, is the model).
+* The Friday run also fills any other empty noon slot it finds in the next seven days, including the current week if a slot is still in the future. Never duplicate an existing noon video.
+* **Video bank:** extra finished videos go into a bank (aim for 3 to 5 ready), so a hard week never leaves a gap. If a day's photos can't be fetched, use a bank video rather than pad. If there is none, file a Schedule Board task naming the photos Brian could supply and say so in the summary. The bank is listed in `status.md` in the cards repo.
+* If the run is running long, finish and schedule videos in date order and say exactly what was left over and why.
+
+## Major dispatches: the iconic shot rule
+For huge moments in the war (MacArthur's return to Leyte is the model), always go after the iconic image and the iconic footage first, the photo and film people remember. If the famous shot can't be had (not digitized, copyright, no public domain copy), say so and offer the next best real footage. Big dates are the first place to hunt for film; start the hunt early for the dates in the Roadmap's "Upcoming big dates" so it isn't rushed.
+
+## Vertical safe zone (1080 x 1920)
+Tall phones zoom a 9:16 video to fill the screen and trim about 100 px off each side. TikTok's search bar and tabs cover the top 250 px, the app buttons cover a column down the right side from about the middle, and the username and caption start near 1640 px. YouTube Shorts showed the problem on Leyte (No. 007): the wordmark, date, and pull line were cut off on a phone but looked fine on a computer. The numbers were measured from Brian's YouTube and TikTok screenshots on an iPhone.
+* `renderer/card.html` (VSAFE) keeps all text 11% in from each side, starts the header below TikTok's top bar, ends any text beside the buttons at 76% of the width, and keeps nothing below about 1600 px. The footage or photo window runs edge to edge, so a trimmed side never cuts a border.
+* Living Cards and Story Cards share this frame (`vFrame`). Story Card captions hold six lines; `renderer/story.js` stops with an error if a caption needs more, so shorten it.
+* Check a new layout with a simulated phone view (the frame cropped to 9:19.5 with the app overlays shaded) before posting.
+
+### The hook line (Living Cards)
+Under the pull line, every vertical Living Card carries one short typewriter line, the **hook**, stored as `video.hook` in the dispatch JSON. It fills the space above the app captions and gives a viewer with the sound off a reason to keep watching.
+* **About 45 characters**, two lines at most. Model: "He promised in 1942 to come back. Here he is." (Leyte).
+* It must **add something the pull line doesn't**: the stakes, the before, or the payoff. Never restate the pull line or the date.
+* Facts only from the verified caption, like every script. No dashes.
+* `renderer/living.js` stops with an error if the hook is missing or runs past two lines. The X and 4:5 videos don't show it.
+
+## Bottom strip (X and 4:5 videos)
+Video players draw over the bottom of a video: the timestamp in the bottom left, the mute button in the bottom right (Brian's X and Threads screenshots, 20 and 21 Oct 2026), and on a desktop the play, progress, volume, and speed bar along the bottom with dark shading behind it. So the X and 4:5 Living Card videos get the same extra paper at the bottom of the bottom band as the X still card (Cards doc), and the date, place, pull line, and handle all sit above it, with the pull line and handle at the normal right edge. The top band stays the same so the film window stays as large as possible. If the desktop bar is ever seen touching the place line on a large monitor, add a little more room to the videos only. The vertical videos use the vertical safe zone instead.
+
+## Living Cards
+The post card with archival footage playing in the photo window. Same bands, same stamp, no added effects, so it reads as the same brand in a feed.
+* **Three shapes from one clip:** X 1600 x 1440 and Instagram, Threads, and Facebook 1080 x 1350 (both with the bottom strip kept clear); vertical 1080 x 1920 for TikTok and YouTube Shorts (inside the vertical safe zone, with the hook line).
+* **Clips** are short and loopable, about 15 seconds. The first frame doubles as the thumbnail, so it must be a strong shot. **Open on motion or action in the first two seconds** (Test B, from the Friday 23 Oct 2026 run; see the playbook): viewers leave within a few seconds, so start the cut on the strongest moving shot rather than people standing or a still street.
+* **Sound:** keep the film's own period sound whenever the source has it, especially battle sounds on Battle Lines. Cut the audio together with the picture so each sound stays with its shot, and normalize loudness to about -16 LUFS. Set `"sound": true` in the dispatch JSON's `video` block so `renderer/living.js` keeps the clip's audio (otherwise it adds a quiet blank track for compatibility, as on silent Signal Corps film). Never use a stretch where music or narration plays under the shots. Note in the YouTube description that the sound is the original soundtrack of the source film.
+* **Stamp:** the normal series stamps. A special video stamp was considered ("Elite" rejected); revisit only if the normal stamps don't feel distinct enough.
+* **Hook:** a `video.hook` line for the vertical video (see the hook rules above).
+* **Files:** dispatch-NNN-x.mp4, -instagram.mp4, -vertical.mp4.
+
+### Film sources
+* **U.S. government film:** Army Signal Corps film (NARA Record Group 111, 111-ADC series) and Navy film (428-NPC) are U.S. government works, and many have MP4s on the NARA catalog that download from Claude's workspace. Search the NARA catalog with typeOfMaterials=Moving Images. Signal Corps shot cards (PDFs on each record) describe every shot, which makes finding the right moments fast. Other U.S. government film at NARA is fair game too.
+* **Wartime British official film** whose Crown copyright has expired (for example Desert Victory, PD-UKGov on Commons).
+* **Universal Newsreel:** believed donated to the public domain; confirm its status at NARA before relying on it.
+* **Avoid:** United News reels (NARA flags possible copyright from pooled commercial footage), British Pathé, Movietone, and colorized or remastered versions. Leave out any staged or reconstructed shots in a documentary, and any captured enemy newsreel inside it.
+* The Internet Archive is blocked from Claude's workspace.
+* **Wikimedia Commons video:** Commons hosts many public domain wartime films, but upload.wikimedia.org refuses large video downloads from Claude's workspace (429, asks for a 10 minute wait, and keeps refusing). What works: Brian opens the file link in his browser, saves it into the WW2 Dispatches\Source Film folder, and Claude pulls it from there. Files must be under 400 MB to transfer, so use Commons' 480p transcode for long films (.../transcoded/<path>/<file>.480p.vp9.webm); Brian deletes the big download once the clip is cut.
+* **Hard to get footage:** the famous Leyte wading ashore shot is on Signal Corps reel 111-ADC-2704 (NARA 16508), not digitized online. NARA's Motion Picture branch (mopix@nara.gov) can make copies for a fee if it's ever worth it.
+
+### Living Cards so far (models)
+* **No. 007, Leyte (20 Oct 1944):** Signal Corps reel 111-ADC-3205 (NARA 17008): MacArthur in a landing craft headed for Red Beach, boats at the beach, then MacArthur and his party walking inland. An earlier cut of 24th Division troops at Red Beach (111-ADC-3075) is kept in the dispatch file as an alternate. Opens on MacArthur and his staff seated in the landing craft (tagged "people still"). Kit: kits/dispatch-007-kit.md. YouTube and TikTok were reposted at 1:21 p.m. on 20 Oct 2026 with the safe zone layout.
+* **No. 009, Aachen (21 Oct 1944):** Signal Corps reel 111-ADC-2654 (NARA 16458), filmed in Aachen on 15 Oct 1944 by Sgt. Newman: an M-10 tank destroyer firing point blank, infantry going over walls, a 57mm antitank gun crew in the streets. Silent, 15.6 s. Opens on a ruined street with the tank destroyer at the edge of frame (tagged "a place or scene"). The caption says honestly that the film is from six days before the surrender. **The model for Living Card captions and settings.** Kit: kits/dispatch-009-kit.md.
+* **No. 013, El Alamein barrage (23 Oct 1942):** from Desert Victory (1943, British Ministry of Information, Army Film and Photographic Unit footage, Crown copyright expired). Genuine night gun flashes (the film's staged Pinewood close ups left out) with the film's own gun sound, 15.6 s. Night footage: it opens nearly black (tagged "dark or unclear"). The brightest frame, a full muzzle flash, is at 3.0 seconds, so the Instagram Reel and TikTok covers were set there (thumbnailOffset 3000, 21 Oct 2026). For any dark opening, set the Instagram and TikTok cover to the strongest frame. The first Living Card with sound. Kit: kits/dispatch-013-kit.md.
+
+## Story Cards
+Archival photos with slow movement, plus typed cards for scenes no camera caught, captions on screen for every line, and an AI narration of a short script.
+* **Script:** drawn only from the verified caption. **Never add facts.** Stored in `stories/<dispatch-id>.json` as segments (spoken line, caption, visual). Keep each on screen caption to six lines (about 140 characters).
+* **Photos:** four to six real archival photos per Story Card. Start from the `videoPhotos` the Thursday run lined up. NARA still pictures (such as the 208 and 111-SC series) download reliably. Never pad with weak or unrelated photos. Expect Brian to attach some named photos each week; if that passes about 20 minutes a week, pick story days whose photos are easy to fetch and say so in the summary.
+* **Voice: Onyx** (Kokoro TTS voice am_onyx at 0.95 speed, American male), one voice for everything. Kokoro is open source (Apache 2.0), free for commercial use, and runs in Claude's workspace. Setup: download kokoro-v1.0.onnx and voices-v1.0.bin from github.com/thewh1teagle/kokoro-onnx releases (model-files-v1.0) into /home/claude/tts as model.onnx and voices.npz, and pip install kokoro-onnx soundfile. The narration audio is not kept in the repo; `renderer/story_tts.py` regenerates it identically when a Story Card needs re-rendering. Revisit the voice after a month of analytics.
+* **Pronunciation (spoken script only):** write years as words ("nineteen forty two"), U-boat numbers as digits spoken ("U five sixty eight"), and spell tricky names phonetically ("Karny" for Kearny, "Shershell" for Cherchell). The on screen captions keep the real spelling.
+* **Build:** `renderer/story_tts.py` voices it; `renderer/story.js` renders videos/dispatch-NNN-story-am_onyx.mp4 (1080 x 1920, about 60 to 75 seconds, inside the vertical safe zone) in the card frame. A Story Card render takes 10 to 15 minutes, so run it in the background with a long timeout. Then **watch the finished video's frames** and check the captions match the narration.
+* **Models:** No. 011 (Clark's secret landing, the first Story Card) and **No. 015 (UN Charter), the model for Story Card captions and settings**.
+
+## Tagging each video
+After a video is finished, add `video` to the dispatch's `themes` block: `kind` (Living Card or Story Card), `opening`, and `sound` (period sound, silent, or narration), using only the values in `analytics/themes.md`. **Tag `opening` from the finished video's actual frames at about 0.3 and 2 seconds**, never from memory or the source description. The Wednesday analytics review compares hold by opening shot, so this tag is what measures Test B.
+
+## Captions and text for noon videos
+* Noon videos keep **short captions**; the full story lives in the 8 a.m. still. A Living Card caption points at the film (for example, "Film from Red Beach, 20 October 1944. MacArthur heading ashore on Leyte."). No "film at noon" line in the 8 a.m. caption.
+* Each noon video stands on its own: **no reply links it to the 8 a.m. post**, and no reminder or task is ever made for one.
+* **Hashtags:** X and Facebook put #OTD first; video posts with their own tag set (Story Cards, Facebook Reels) also open with #OTD. Threads has no hashtag (History Threads topic). Anniversary event tags follow the Cards doc.
+* **Story Cards:** every caption says "Narration is AI generated". The YouTube description lists the photo credits.
+* **YouTube Shorts:** a short, hook first title and a description with the story, sources, a channel line, and "Support WW2 Dispatches: ko-fi.com/ww2dispatches" at the end. Category Education.
+* **TikTok:** a shorter, punchier caption with a few hashtags.
+
+## Posting in Buffer
+Every noon video posts at **12:00 p.m. America/Denver on all six channels** (channel IDs in the Brief):
+* **X:** the X video.
+* **Instagram:** a Reel, shouldShareToFeed true. The still stays in the feed separately.
+* **Threads:** the 4:5 video, metadata {threads: {type: "post", topic: "History Threads"}}.
+* **Facebook:** the 4:5 video, type **"post" for Living Cards** (as Nos. 009 and 013 were) and **"reel" for Story Cards** (as Nos. 011 and 015 were).
+* **YouTube Shorts:** the vertical video, with a title and categoryId "27" (Education).
+* **TikTok:** the vertical video, with a title.
+* Story Cards have one vertical file, used on all six channels.
+* **AI flags:** Story Cards are flagged AI generated wherever Buffer offers it (X, Instagram, TikTok, YouTube isAiGenerated true). Living Cards carry no AI flag.
+* **Swapping a file in a scheduled post:** Buffer re-checks the whole post on edit, so send the new video link together with the post's current metadata (YouTube title and category, TikTok title, Instagram type and share to feed, Facebook type, Threads topic, AI flags).
+* **Record the Buffer ids** in the dispatch JSON: for Story Cards a `story` block with the buffer ids and a `kit` sub block {caption, youtubeTitle, tiktokCaption, schedule, thumbnail}; for Living Cards the film keys (`x_film`, `instagram_reel`, `threads_film`, `facebook_film`, `youtube`, `tiktok`) under `buffer`, a `kit` block, and kits/dispatch-NNN-kit.md. The analytics match each video post by these ids, so when a post is reposted, record the new id in place of the old one.
+* **Poster on the Schedule Board:** every noon video needs a `dispatch-NNN-instagram-poster.jpg` in the videos repo (Story Cards too; take the strongest frame, the same one used for the Instagram and TikTok cover). After scheduling, upload a review copy of each poster to the Schedule Board and record it in `images` (Brief, "Shared run procedures", Board pictures), so the board shows the video's cover with a play mark and a link to Living Press.
+* If Buffer refuses a post because of a daily channel limit, say so with the channel and day.
+
+## Video Press Kit
+Every Living Card gets a kit, stored with the dispatch on GitHub (kits/dispatch-NNN-kit.md, with the key fields also in the JSON `kit` block, including a `scheduled` field, true or a short status line, which Living Press shows):
+* The three video files (X, 4:5, vertical).
+* YouTube Shorts title and description.
+* TikTok caption.
+* The short "points at the film" caption for X, Instagram, Threads, and Facebook.
+* The vertical video's hook line.
+* Thumbnail check: the first frame must be a strong shot.
+* Posting plan and the source film record.
+Story Cards keep the same information in their `story.kit` block.
+
+## Where videos live
+* Every video, poster, and trimmed clip lives in the public repo **ww2dispatches/ww2dispatches-videos** (`videos/` and `footage/`), never in ww2dispatches-cards. The cards repo ignores .mp4 files in videos/ and footage/, node_modules/, and stories/audio/.
+* **Steps:** before rendering a Living Card, copy the clip it needs from the videos repo's footage/ into the cards repo's footage/. The renderers write to the cards repo's videos/ folder; copy each finished video and poster into the videos repo's videos/ (new trimmed clips into footage/), commit and push there, confirm the raw link returns the file, and give Buffer https://raw.githubusercontent.com/ww2dispatches/ww2dispatches-videos/main/videos/<file>?v=<short commit id>. Before running `renderer/living_press.py`, copy the videos repo's videos/ into the cards repo's videos/.
+* **One time cleanup:** the cards repo still has old .mp4 files committed in videos/ and footage/. No unsent post uses a cards repo video link any more (No. 011 moved to the videos repo on 20 Oct 2026), so the next run can remove those .mp4 files with git rm (they are already in the videos repo), commit and push, note it in the summary, and remove the item from `status.md`. Never rewrite history or force push.
+* GitHub doesn't let Claude's sessions create Releases, which is why the separate repo exists.
+
+## Living Press (review page)
+A pinned artifact (https://claude.ai/artifact/7bCSGHeexkFYyn6s1vxRSe) for reviewing Living Cards and Story Cards. It is a review and copy station, not an editor: Claude makes the videos, Brian checks them here. The Schedule Board shows each video's poster frame and links here; the videos themselves play only on this page.
+* Left: every dispatch with a video, sorted by calendar day.
+* For the selected dispatch: number, title, date, place, series stamp, approval and scheduling status, and the posting day.
+* The three videos side by side (X, Instagram Reel and Threads, TikTok and YouTube Shorts) with "Play all", plus a link to each file on GitHub.
+* Press kit slips with Copy buttons and character counts (film caption, YouTube title and description, TikTok caption), posting plan, thumbnail check, and the source film record. Story Cards show their caption, YouTube and TikTok text, posting plan, and photo credits from `story.kit`. Reading text is a plain sans serif at a larger size; headings keep the brand fonts.
+* The page plays its own copies of the videos (artifacts can't load video from GitHub) and takes files up to 15 MB, so it plays lighter review copies of large files; Buffer always uses the full file.
+* **Claude rebuilds and republishes it whenever a video is added or a kit changes:** `python3 renderer/living_press.py <out_dir>`, then publish to the same artifact URL. Read the artifact first (the publish is refused until the live version has been viewed, including any video files being replaced). At most 15 MB per file and 64 MB per publish, so split publishes if needed.
+* Brian watches the week's videos here on Saturday (about 10 to 15 minutes) and flags any mispronunciation. **Check the vertical videos on a phone**, since a computer shows the whole frame and hides any trimming.
+
+## Checks and review by exception
+* **Platform checks:** Buffer's per channel daily limits, a YouTube title and category on every Short, TikTok and YouTube AI content labels, and "Narration is AI generated" in each Story Card caption. Report any posting limit hit.
+* **Review by exception:** the Schedule Board flags only what needs a human eye: any fact with fewer than two sources, a photo whose public domain status is unconfirmed, any quote, and anything changed after the source check.
+
+## Watch items and risks
+These inform decisions but do not block the daily pace.
+* The Saturday review time (about 45 minutes), any factual corrections, the video bank size, the real Claude usage per week, and how many photos Brian has to supply.
+* A factual slip in a narrated script or a hook line. Neither ever adds facts beyond the verified caption.
+* Weak photo videos on filler days. Never pad; use a bank video instead.
+* AI narration labelling and the pronunciation rules.
+* Run length and Claude usage with seven videos a week. Review the real figures after the first week.
+* Photo supply with no scout and Wikimedia blocks. If Brian's photo time grows past about 20 minutes a week, say so and adjust rather than pad.
+* Repetition. Seven narrated photo videos a week can feel samey; the Wednesday analytics review watches hold and reach by video kind and opening, and proposes a change if they drop.
+
+## Changelog
+* 15 Oct 2026: First Living Card sample (Leyte) built and approved; Video Press Kit and Living Press created; the iconic shot rule decided.
+* 16 Oct 2026: No music, ever. Broader film hunt. Onyx chosen over ten other voices (including Daniel, British) after a side by side test.
+* 17 Oct 2026: Living Cards keep the film's period sound (Alamein the first). Wikimedia video handled through Brian's browser and the Source Film folder. This plan started as the Scale Up Plan.
+* 18 Oct 2026: Every noon video posts on all six channels. Videos moved to the ww2dispatches-videos repo. The X reply linking a noon film to its 8 a.m. still was dropped. Leyte's YouTube and TikTok moved from Metricool to Buffer.
+* 19 Oct 2026: A video every day, film first (Option A), no weekly limit on Living Cards; this replaced the earlier four a week step and the rule that Living Cards were rare. Living Card and Story Card names chosen; Nos. 007, 009, and 013 re-rendered with "The Footage" label. Aachen (Living Card) and UN Charter (Story Card) filled the two empty noon slots. Story Cards added to Living Press. Videos moved to their own Friday run. Spend is not a constraint. Renamed from the Scale Up Plan, with the video rules moved here from the Project Brief.
+* 20 Oct 2026: Leyte's Short was cut off at the edges on a phone. Vertical videos now keep all text inside a phone safe zone with an edge to edge footage window; Nos. 009, 011, 013, and 015 re-rendered and swapped into their scheduled Buffer posts, and Leyte's YouTube and TikTok reposted. Later the same day, from Brian's screenshots: a hook line under the pull line on vertical Living Cards (chosen over a taller film window), the header lowered below TikTok's top bar, the safe zone bottom moved to about 1600 px, and the pull line and handle on X and 4:5 Living Card videos moved clear of the mute button (chosen over moving the handle to the top band). These apply from the next Friday run; videos already scheduled stay as they are.
+* 21 Oct 2026: From Brian's screenshots of Aachen (No. 009), the timestamp and the desktop control bar also cover the bottom of the X and 4:5 videos. Those videos now get the same extra bottom room as the X still card, so the timestamp, mute button, and control bar all sit in an empty strip, and the pull line and handle went back to the normal right edge (this replaced the 20 Oct mute button corner rule). Starts with the Friday 23 Oct run; videos already scheduled stay as they are.
+* 21 Oct 2026 (night): The Friday run reads the playbook first and tags each video's kind, opening shot (from its real first frames), and sound. Test B starts with the 23 Oct run: Living Cards open on motion or action. Checking the first frames showed Alamein (No. 013) opens nearly black and Aachen on a still street, so their model notes were corrected, and Alamein's Instagram and TikTok covers were moved to its muzzle flash at 3.0 seconds.
+* 23 Oct 2026: Every noon video gets an Instagram poster file (Story Cards included), and the Friday run uploads a review copy of each poster to the Schedule Board, which now shows card pictures and a Review the week view. The videos still play only in Living Press.
