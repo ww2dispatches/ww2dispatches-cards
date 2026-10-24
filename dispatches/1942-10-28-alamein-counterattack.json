@@ -9,8 +9,8 @@
   "series": "battle",
   "pull": "Broken before it began",
   "photo": "photos/1942-10-28-alamein-counterattack.jpg",
-  "photoUrl": "",
-  "photoNote": "PENDING: Desert Air Force bomber photo, to be supplied by Brian.",
+  "photoUrl": "https://catalog.archives.gov/id/204943770",
+  "photoNote": "\"North American B-25 and other unidentified planes on a mission over Western Desert, Egypt.\" U.S. Air Force photo 23326 A.C. (filed under Bombing; mount stamped received 28 Dec 1942 from the Western Desert, released 24 Dec 1942, credit Yank, the Army newspaper). NARA 342-FH, naId 204943770, unrestricted, public domain. A falling bomb and a stick of bombs are visible below the formation. Exact mission date not recorded; American B-25s of the 12th Bombardment Group flew with the Desert Air Force during El Alamein. Cropped from the mounted print.",
   "body": "Rommel gathered his panzers for one more blow at El Alamein. The bombers found them first.\n\n28 October 1942. Rommel's 15th and 21st Panzer Divisions attacked the British line near Kidney Ridge and were stopped by gun and tank fire. That afternoon they massed to try again. Allied aircraft bombed them as they formed up, and the second attack never got going.\n\nRommel never seized the initiative at El Alamein again. Within a week, his army was in retreat.\n\n#OnThisDay #WW2",
   "threads": "Rommel gathered his panzers for one more blow at El Alamein. The bombers found them first.\n\n28 October 1942. Rommel's 15th and 21st Panzer Divisions attacked the British line near Kidney Ridge and were stopped by gun and tank fire. That afternoon they massed to try again. Allied aircraft bombed them as they formed up, and the second attack never got going.\n\nRommel never seized the initiative at El Alamein again. Within a week, his army was in retreat.",
   "sources": [
@@ -32,7 +32,7 @@
     }
   ],
   "question": false,
-  "alt": "",
+  "alt": "Archival 1942 photo taken from a bomber: an American B-25 over the Western Desert with a formation of bombers and fighters ahead, a stick of bombs falling toward the ground and one more bomb dropping below. Text: 28 OCT 1942, El Alamein, Egypt. Broken before it began.",
   "themes": {
     "who": [
       "airmen",
@@ -42,7 +42,7 @@
       "combat",
       "turning point"
     ],
-    "photo": "a machine",
+    "photo": "combat or action",
     "theater": "Mediterranean and North Africa",
     "branch": [
       "Army Air Forces",
@@ -89,5 +89,7 @@
     "videoTime": "12:00 America/Denver",
     "scheduled": "Buffer, all six channels, noon 28 Oct"
   },
-  "replaced": "Took the place of No. 024 The Alaska Highway breaks through (1942) on 24 Oct 2026 at Brian's request, so the noon video could carry real period sound. That dispatch is kept in bank/1942-10-28-alcan.json."
+  "replaced": "Took the place of No. 024 The Alaska Highway breaks through (1942) on 24 Oct 2026 at Brian's request, so the noon video could carry real period sound. That dispatch is kept in bank/1942-10-28-alcan.json.",
+  "focusX": 50,
+  "focusY": 55
 }
