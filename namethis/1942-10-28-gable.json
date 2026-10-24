@@ -1,0 +1,33 @@
+{
+  "id": "1942-10-28-gable",
+  "format": "namethis",
+  "answer": "Clark Gable",
+  "date": "1942-10-28",
+  "place": "Miami Beach · Florida",
+  "pull": "Clue: Hollywood called him The King",
+  "photo": "photos/1942-10-28-gable.jpg",
+  "zoom": 100,
+  "focusX": 70,
+  "focusY": 30,
+  "community": "History Hub",
+  "photoUrl": "https://commons.wikimedia.org/wiki/File:Clark_Gable_8th-AF-Britain1943.jpg",
+  "photoNote": "Clark Gable beside the waist gun of a B-17 with the Eighth Air Force in England, 1943 (published in the Illustrated London News, 12 June 1943). About eight months after the event, not the commissioning itself. U.S. Army Air Forces photo, public domain as a work of the U.S. federal government; the Commons page lacks author details.",
+  "sources": [
+    {
+      "title": "Maj. Clark Gable, National Museum of the U.S. Air Force fact sheet",
+      "url": "https://www.nationalmuseum.af.mil/Visit/Museum-Exhibits/Fact-Sheets/Display/Article/196680/maj-clark-gable/"
+    },
+    {
+      "title": "Clark Gable, Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Clark_Gable"
+    }
+  ],
+  "themes": {
+    "who": ["airmen"],
+    "story": ["everyday life"],
+    "photo": "a face or portrait",
+    "theater": "home front",
+    "branch": ["Army Air Forces"],
+    "nations": ["US"]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "1944-10-31-mosquito",
+  "format": "namethis",
+  "answer": "de Havilland Mosquito (FB.VI)",
+  "date": "1944-10-31",
+  "place": "Aarhus · Denmark",
+  "pull": "Clue: Built mostly of wood",
+  "photo": "photos/1944-10-31-mosquito.jpg",
+  "zoom": 115,
+  "focusX": 50,
+  "focusY": 50,
+  "community": "Modern History",
+  "photoUrl": "https://commons.wikimedia.org/wiki/File:464_Sqn_RAAF_(UK1753).jpg",
+  "photoNote": "A formation of Mosquito FB.VI aircraft of No. 464 Squadron RAAF (one of the squadrons on the Aarhus raid) setting out from RAF Thorney Island to attack a target behind the Normandy front, about August 1944. Not the Aarhus raid itself. Australian War Memorial UK1753, copyright expired, public domain.",
+  "sources": [
+    {
+      "title": "Aarhus air raid, Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Aarhus_air_raid"
+    },
+    {
+      "title": "Air raid on Gestapo headquarters on 31.10.1944, Aarhus University history",
+      "url": "https://auhist.au.dk/en/showroom/galleri/lokaliteterogbygninger/parkkollegierne/air-raid-on-gestapo-headquarters-on-31101944"
+    },
+    {
+      "title": "Formation of Mosquito aircraft of No. 464 Squadron RAAF, Australian War Memorial UK1753",
+      "url": "https://www.awm.gov.au/collection/UK1753"
+    }
+  ],
+  "themes": {
+    "who": ["airmen"],
+    "story": ["combat"],
+    "photo": "a machine",
+    "theater": "Western Europe",
+    "branch": ["Army Air Forces"],
+    "nations": ["Britain", "Germany", "Denmark"]
+  }
+}
