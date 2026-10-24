@@ -1,9 +1,9 @@
 # WW2 Dispatches: Analytics
 
-The rules for the **Wednesday analytics review**: how posts are measured, scored, and turned into lessons for the Thursday and Friday builds. The Wednesday run follows this doc. Shared setup (Buffer, GitHub, Schedule Board tasks, push reminders, record keeping) is in the Project Brief. The files and the snapshot format are in `analytics/README.md` in the cards repo.
+The rules for the **Tuesday analytics review**: how posts are measured, scored, and turned into lessons for the Wednesday research run, the Thursday video run, and the Friday cards run. The Tuesday run follows this doc. Shared setup (Buffer, GitHub, Schedule Board tasks, push reminders, record keeping) is in the Project Brief. The files and the snapshot format are in `analytics/README.md` in the cards repo.
 
 ## The goal
-Learn what works, a little more each week, without adding to Brian's time. Each Wednesday night the review measures every post, scores it fairly, updates the playbook the Thursday and Friday runs read, and sends Brian a short summary. Brian's part is about five minutes reading it, plus any decision it files for him.
+Learn what works, a little more each week, without adding to Brian's time. Each Tuesday night the review measures every post, scores it fairly, updates the playbook the next three runs read, and sends Brian a short summary. Brian's part is about five minutes reading it, plus any decision it files for him.
 
 ## What gets measured
 Buffer is the source: it reads each platform's numbers about once a day, so its figures trail the apps by up to a day. That is fine, because every post is compared with other posts that have the same lag. Exact counts will always trail what the apps show.
@@ -27,7 +27,7 @@ Engagement rate as Buffer reports it is not used; on small numbers it misleads (
 * **Groups** (series, format, slot, the theme tags, engagement question or not, and for videos the opening shot and sound) need 5 or more posts, or they show "not enough data".
 
 ## Theme tags
-Every dispatch and Name This record carries a `themes` block, so the review can tell what a post was about as well as its series: who it centers on, the kind of story, what the photo shows, theater, branch, and nations, plus the opening shot, kind, and sound for videos. The fixed list of values is `analytics/themes.md`; only the Wednesday review adds new ones. The Thursday cards run tags each dispatch, the Saturday Name This run tags each Name This card, and the Friday video run tags each video from its actual first frame. The era (road to war, the war, the aftermath) comes from the event date.
+Every dispatch and Name This record carries a `themes` block, so the review can tell what a post was about as well as its series: who it centers on, the kind of story, what the photo shows, theater, branch, and nations, plus the opening shot, kind, and sound for videos. The fixed list of values is `analytics/themes.md`; only the Tuesday review adds new ones. The Wednesday research run tags each dispatch (who, story, photo, theater, branch, nations), the Saturday Name This run tags each Name This card, and the Thursday video run tags each video from its actual first frame. The era (road to war, the war, the aftermath) comes from the event date.
 
 The tags exist to separate causes that travel together. Example: the WAVES dispatch drew the best response of launch week; the tags let later weeks show whether that came from the subject (a barrier broken by Black women) or the hook.
 
@@ -40,13 +40,13 @@ Every finding sits on one rung:
 **Tests** change one thing at a time so the result can be read clearly, each with a review date. New tests start only with Brian's OK; the review proposes them in its summary.
 
 ## Where it lives
-* **The playbook** (`analytics/playbook.md`): the current patterns, hunches, active tests, things to watch, and anything for Brian to decide. The Thursday cards run and the Friday video run read it before picking events, writing hooks, and building videos.
-* **The Scoreboard** (pinned, https://claude.ai/artifact/H3ry2Cg3jM8mkxsTYrV7hP): This week (the summary, best and weakest posts, decisions needed), Posts (every post with Reach, Response, and each platform), Trends (views per week, typical posts, groups), and Playbook. Rebuilt every Wednesday.
+* **The playbook** (`analytics/playbook.md`): the current patterns, hunches, active tests, things to watch, and anything for Brian to decide. The Wednesday research run reads it before picking events, the Thursday video run before building videos, and the Friday cards run before writing hooks and captions.
+* **The Scoreboard** (pinned, https://claude.ai/artifact/H3ry2Cg3jM8mkxsTYrV7hP): This week (the summary, best and weakest posts, decisions needed), Posts (every post with Reach, Response, and each platform), Trends (views per week, typical posts, groups), and Playbook. Rebuilt every Tuesday.
 * **The log** (`log/performance-log.csv`): one row per post per platform with every number, score, and tag. Opens in Excel. Never edited by hand.
 * **The record:** `analytics/snapshots/` (each week's raw pull, never edited) and `analytics/reviews/` (each week's written review).
 
-## The Wednesday run
-"WW2 Dispatches weekly analytics review", Wednesday 7:47 p.m. Mountain, on Opus 5.5, in Claude's cloud with Buffer and GitHub connected, push and email when done.
+## The Tuesday run
+"WW2 Dispatches weekly analytics review", Tuesday 7:47 p.m. Mountain, on Opus 5.5, a Claude Code scheduled task with both repos attached, Buffer connected, push and email when done. Posts from Sunday and Monday are still "too early" on Tuesday and get their score the following week.
 1. Attach and clone the cards repo (Brief, "GitHub repos and hosting").
 2. Pull every post sent in the last 14 days from Buffer with the query in `analytics/README.md`, and save it as `analytics/snapshots/YYYY-MM-DD.json` in the format given there.
 3. Run `python3 renderer/analytics.py`. Fix any tag problems it lists using `analytics/themes.md` (the opening shot tag needs the video's real first frame), and look over any unmatched posts.
@@ -56,10 +56,11 @@ Every finding sits on one rung:
 7. Send Brian the summary with SendUserMessage: three things that worked, two that didn't, the tests running, and whether anything needs him. About five lines.
 
 ## Gaps
-* **Followers:** Buffer gives no follower totals. Once a month, around the first Wednesday, the review asks Brian for a screenshot of each app's follower count (or reads public counts where it can), and records them in the review. Instagram's per post follows are summed every week.
+* **Followers:** Buffer gives no follower totals. Once a month, around the first Tuesday, the review asks Brian for a screenshot of each app's follower count (or reads public counts where it can), and records them in the review. Instagram's per post follows are summed every week.
 * **YouTube retention curves and Threads viewers** aren't in Buffer. Views and average watch time are enough to compare posts.
 * **Spot check:** once a month Brian can send one or two app screenshots so the review can confirm Buffer is tracking in the right direction.
 * **Substack:** open rates and signups come from Substack itself; the review notes them when Brian shares them.
 
 ## Changelog
 * 21 Oct 2026: Analytics started. Method settled step by step with Brian on launch week data (a test run, then erased): the 48 hour and 7 day age rules, the 50 view floor, scoring each kind only against itself, Reach and weighted Response, the 5 post group minimum, and the hunch, pattern, rule change ladder. Theme tags added to every dispatch, Name This card, and video. Tests A (human first Spec Sheet hooks) and B (action first Living Card openings) approved, reviewed 4 Nov. Scoreboard built and pinned; first real review Wed 28 Oct 2026.
+* 24 Oct 2026: The review moved to Tuesday night so its playbook is fresh for the new Wednesday research run, the Thursday video run, and the Friday cards run (Project Brief, "Weekly workflow"). First real review Tue 27 Oct 2026; Tests A and B are reviewed 3 Nov. Research now tags each dispatch's themes; the video run still tags each video.

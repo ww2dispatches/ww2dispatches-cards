@@ -1,6 +1,6 @@
 # WW2 Dispatches run status
 
-The small working state the weekly runs need that isn't recorded anywhere else. The Thursday cards run and the Friday video run keep it current. **Edit it in place: replace a line when it changes, and remove an item once it is done. Never add history here;** history lives in the dispatch and Name This JSON, the logs in `log/`, and git.
+The small working state the weekly runs need that isn't recorded anywhere else. The Wednesday research run, the Thursday video run, and the Friday cards run keep it current. **Edit it in place: replace a line when it changes, and remove an item once it is done. Never add history here;** history lives in the dispatch and Name This JSON, the logs in `log/`, and git.
 
 Things the runs work out for themselves instead of tracking here:
 * Next dispatch number: one more than the highest `num` in `dispatches/`.
@@ -17,7 +17,7 @@ Finished noon videos not yet scheduled (aim for 3 to 5). One line each: file in 
 * (empty)
 
 ## Pending one time jobs
-* **Newsletter launch announcement:** goes in the 1 to 7 Nov 2026 batch (Thursday 29 Oct cards run). See the Newsletter doc.
+* **Newsletter launch announcement:** goes in the 1 to 7 Nov 2026 batch (Friday 30 Oct cards run). See the Newsletter doc.
 
 ## Open checks
 Small loose ends a run can settle when it has a moment.

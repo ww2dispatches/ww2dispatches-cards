@@ -1,6 +1,6 @@
 # WW2 Dispatches: Newsletter
 
-The rules for **The Weekly Dispatch**, the WW2 Dispatches newsletter on Substack. The Friday video run drafts each issue from this doc; the Thursday cards run writes the launch announcement and the occasional caption mention (rules for the mention are in the Cards doc). Shared setup is in the Project Brief.
+The rules for **The Weekly Dispatch**, the WW2 Dispatches newsletter on Substack. The Friday cards run drafts each issue from this doc and writes the launch announcement and the occasional caption mention (rules for the mention are in the Cards doc). Each dispatch's short version draws from its `body` and `facts` block only, no new facts (Research doc). Shared setup is in the Project Brief.
 
 ## Why
 An email list is the one audience WW2 Dispatches owns outright. It survives algorithm changes and account problems, it's the best place for sponsorships and affiliate links at small sizes, and it's what makes the archive pay off later. That's why signups started the day before launch instead of waiting for months two and three.
@@ -57,7 +57,7 @@ Weekly, sent **Sunday 8 a.m. Mountain**. Each issue covers the Sunday through Sa
 * Optional extras when they come cheap: a Blueprint deep dive, a book recommendation (affiliate link later), sponsorships once the list grows.
 
 ## Workflow
-1. The Friday run writes the issue to `newsletter/issue-NNN.md` in the cards repo (it renders on github.com with the card images) and records `"newsletter": NNN` in each covered dispatch JSON.
+1. The Friday cards run writes the issue to `newsletter/issue-NNN.md` in the cards repo (it renders on github.com with the card images) and records `"newsletter": NNN` in each covered dispatch JSON.
 2. It files a Schedule Board task due Saturday 09:00, **"Paste and schedule the weekly newsletter"**, with the github.com link, subject line, and preview line, plus a push reminder at that time (Brief, "Shared run procedures").
 3. During the Saturday review Brian opens the file on github.com, copies the rendered issue into a new Substack post, checks it, and schedules it for Sunday 8 a.m. Mountain (about 10 minutes).
 4. On the first issue, check that the images paste cleanly; if not, upload the cards in the Substack editor instead.
@@ -75,7 +75,7 @@ Most readers never see the Substack site: they sign up on our home page and read
 * No extra weekly work for Brian. It grows into the dispatch archive later (Roadmap, Archive plan).
 
 ## Launch announcement
-In the 1 to 7 Nov batch (prepared Thu 29 Oct): one post on X, Instagram, Threads, and Facebook in the first week of November saying The Weekly Dispatch is live, with a short look at what issue 001 covered and "Sign up free at the link in our bio." It is its own post (not a dispatch, no dispatch number, like the welcome post), using the email banner or a simple card in the Field Telegram look. Schedule it at 1 p.m. or another quiet time, since noon is the daily video, and on a different day from that week's Ko-fi soft ask. Remove its item from `status.md` in the cards repo once it is scheduled.
+In the 1 to 7 Nov batch (prepared by the Fri 30 Oct cards run): one post on X, Instagram, Threads, and Facebook in the first week of November saying The Weekly Dispatch is live, with a short look at what issue 001 covered and "Sign up free at the link in our bio." It is its own post (not a dispatch, no dispatch number, like the welcome post), using the email banner or a simple card in the Field Telegram look. Schedule it at 1 p.m. or another quiet time, since noon is the daily video, and on a different day from that week's Ko-fi soft ask. Remove its item from `status.md` in the cards repo once it is scheduled.
 
 ## Growing the list
 * **After the first month:** check open rates and signups, and test the Sunday send time.
@@ -88,3 +88,4 @@ In the 1 to 7 Nov batch (prepared Thu 29 Oct): one post on X, Instagram, Threads
 * 16 Oct 2026: Substack chosen over beehiiv; publication set up and taking signups; settings, description, Introduction, About page, "How I make this", and welcome email written; Linktree button added.
 * 19 Oct 2026: Substack Notes idea raised. Drafting moved to the Friday video run. Rules gathered here from the Project Brief and the Roadmap.
 * 21 Oct 2026: Introduction updated to name all six platforms and the archival film; "How I make this" updated to cover film and the labelled AI narration on some videos. The short description was reviewed and kept as is. Later: the welcome email rewritten to cover the daily video, archival film, the home page, and all six platforms; signup points now lead with the home page box instead of the Linktree. The About page's "Why subscribe?" block was still Substack's default text (with dashes and paid subscription wording) and was rewritten. Later still: Substack restyled to match the home page (night background, stamp red accent, new wordmark, welcome cover, and email banner), Custom Website style kept over Profile, the email footer rewritten (Ko-fi line moved there from the issue body), the home page signup kept on our page, Substack reconfirmed over the alternatives, and an issue archive on ww2dispatches.com planned for after the first few issues. The newsletter is named The Weekly Dispatch everywhere; the email banner was remade to match.
+* 24 Oct 2026: With the weekly runs reordered (Project Brief, "Weekly workflow"), the issue draft and the launch announcement both belong to the Friday cards run, which now writes the captions. Each short version draws only from the dispatch's `body` and `facts` block.
