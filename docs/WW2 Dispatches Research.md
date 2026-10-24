@@ -8,7 +8,7 @@ By the end of Wednesday night, for each of the seven days from the coming Sunday
 * both dispatch numbers are assigned and locked,
 * the film for the noon video is downloaded and checked, or the day is marked a Story Card,
 * the lead photo for each card and the photos for any Story Card are downloaded,
-* the dispatch JSON holds the fact sheet, the sources, the photo and film records, and the theme tags,
+* the dispatch JSON holds the fact sheet, the sources, the photo and film records, the short name and photo credit, and the theme tags,
 * and the slate lists it all, with alternates, for Brian.
 
 Research writes no captions, cuts no film, and renders nothing. Thursday and Friday do that.
@@ -38,7 +38,7 @@ Finding film is not enough; a film that can't be fetched on Thursday night is a 
 
 ## Securing the photos
 * Follow the Brief's photo rules and fetching workarounds. Start early and space requests out; photo fetching is the slow, flaky part of the week, which is why it lives in this run.
-* **Every card** gets its lead photo downloaded into `photos/` with its source page, license, and credit recorded.
+* **Every card** gets its lead photo downloaded into `photos/` with its source page, license, and credit recorded (`photoUrl`, `photoNote`, and the clean `photoCredit` line).
 * **Every Story Card day** gets four to six real archival photos of the event downloaded into `photos/` and listed in `videoPhotos` (file, page, credit). Living Card days get three to five photo leads as links only, in case the film falls through.
 * **If a photo can't be fetched**, first try another event with one. If the event is worth keeping, file a Schedule Board task naming the photo wanted and its exact page, due Thursday 5:00 p.m. Mountain for a video photo or Friday 5:00 p.m. Mountain for a card photo, with a push reminder. Never leave a slot without a plan.
 
@@ -53,9 +53,13 @@ Every dispatch JSON gets a `facts` block: six to twelve verified facts in plain 
 * A noon video shares the number of the 8 a.m. dispatch it covers. Name This and the welcome post never take a number.
 
 ## What research writes in each dispatch JSON
-Research owns: the file name and `id`, `num`, `date`, `time`, `series`, `title`, `place`, `pull`, `format` and its `quote`/`quoteBy` or `specTitle`/`specs` on evening cards, `facts`, `sources`, `photo` (the file in `photos/`) with `photoUrl` and `photoNote`, `videoPhotos`, `film`, `somber`, `kind` (the planned noon video kind, `living` or `story`), and the `themes` block (who, story, photo, theater, branch, nations) using only the values in `analytics/themes.md`.
+Research owns: the file name and `id`, `num`, `date`, `time`, `series`, `title`, `short`, `place`, `pull`, `format` and its `quote`/`quoteBy` or `specTitle`/`specs` on evening cards, `facts`, `sources`, `photo` (the file in `photos/`) with `photoUrl`, `photoNote`, and `photoCredit`, `videoPhotos`, `film`, `somber`, `kind` (the planned noon video kind, `living` or `story`), and the `themes` block (who, story, photo, theater, branch, nations) using only the values in `analytics/themes.md`.
 
-Research leaves to Thursday: the `video` block (footage, focus, hook, source note), `themes.video`, `kit`, `story`, the film keys under `buffer`, and the cut clips. It leaves to Friday: `body`, `threads`, the framing (focusX, focusY, zoom), `slides`, `question`, `soft_ask`, `newsletter_mention`, `newsletter`, the card keys under `buffer`, and `links`.
+Two of those are kept for the Declass game (Envelope doc) under the Brief's "Record now, use later" rule, and cost nothing extra once the research is done:
+* **`short`:** a one or two word name for the dispatch, the way people would say it ("Aachen", "Leyte", "Taffy 3", "Reuben James"). It names the card in share lines and dossier labels, so it should be distinct from other dispatches where it can be (the Kearny story is "Kearny" and its Spec Sheet is "Kearny Hull").
+* **`photoCredit`:** one clean public line about the lead photo: what it shows, when, the archive and number, and the license, such as "Tirpitz in Bogen Bay, Norway, 1943 to 1944. NHHC NH 71390, public domain." No working notes, no "supplied by Brian", no framing advice; those stay in `photoNote`, which remains the team's working note.
+
+Research leaves to Thursday: the `video` block (footage, focus, hook, source note), `themes.video`, `kit`, `story`, the film keys under `buffer`, and the cut clips. It leaves to Friday: `body`, `threads`, `addons`, `hashtags`, the framing (focusX, focusY, zoom), `slides`, `question`, `soft_ask`, `newsletter_mention`, `newsletter`, the card keys under `buffer`, and `links`.
 
 The `film` block: `status` (`secured`, `needs brian`, or `none`), `record` (for example "111-ADC-2654 (NARA 16458)"), `url`, `file` (the path in the videos repo once downloaded), `sound` (true or false), `shot_notes` (which stretch holds the shots and what they show), `license`, and `date_note` when the film is from a different day than the event.
 
@@ -83,3 +87,4 @@ File Schedule Board tasks and push reminders per the Brief's "Shared run procedu
 
 ## Changelog
 * 24 Oct 2026: Doc created. Research moved out of the Thursday cards run into its own Wednesday run, picking for film first, locking the numbers, writing one fact sheet per dispatch, and securing film and photos before the build runs. The week's order became Tuesday analytics, Wednesday research, Thursday videos, Friday cards.
+* 24 Oct 2026 (evening): Research also writes `short` and `photoCredit` on every dispatch, for the Declass game (Envelope doc). Every existing dispatch and bank record was filled in once.
