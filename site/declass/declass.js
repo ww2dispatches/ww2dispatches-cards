@@ -156,11 +156,13 @@
   function envHTML(i, env) {
     const k = env.kind, pr = k === 'priority', st = k === 'starter', cm = k === 'commemorative';
     const c = cm ? ['#1d1a17', '#24201c', '#2a2520'] : pr ? ['#C9A774', '#C5A26E', '#CDAB79'] : ['#E8DFC7', '#E6DCC3', '#EAE1C9'];
-    const lbl = cm ? 'THREE DAYS ONLY' : pr ? 'DEEP ARCHIVE' : st ? 'FIRST FILE' : env.last ? 'LAST CALL' : env.deep ? 'DEEP ARCHIVE' : etTime(env.at).toUpperCase();
+    const lbl = cm ? 'THREE DAYS ONLY' : pr ? 'DEEP ARCHIVE' : st ? 'FIRST FILE' : etTime(env.at).toUpperCase();
     const stamp = cm ? `<div class="prio">${esc(env.stamp).replace(' · ', '<br>')}</div><div class="lbl">COMMEMORATIVE<br>· ${lbl}<b>WW2 DISPATCHES</b></div>`
       : pr ? `<div class="prio">PRIORITY</div><div class="lbl">STREAK REWARD<br>· ${lbl}<b>WW2 DISPATCHES</b></div>`
       : st ? `<div class="prio stpk">STARTER PACK</div><div class="lbl">YOUR ${lbl}<br>· FIVE CARDS<b>WW2 DISPATCHES</b></div>`
-      : `<div class="lbl">INCOMING DISPATCH<br>· ${esc(lbl)}<b>WW2 DISPATCHES</b></div>`;
+      : env.last ? `<div class="prio lastk">LAST CALL</div><div class="lbl">INCOMING DISPATCH<br>· ${esc(lbl)}<b>WW2 DISPATCHES</b></div>`
+      : env.deep ? `<div class="prio deepk">SUNDAY<br>DEEP ARCHIVE</div><div class="lbl">INCOMING DISPATCH<br>· ${esc(lbl)}<b>WW2 DISPATCHES</b></div>`
+      : `<div class="prio dayk">${etHour(env.at) < 12 ? 'MORNING' : 'EVENING'}<br>DISPATCH</div><div class="lbl">INCOMING DISPATCH<br>· ${esc(lbl)}<b>WW2 DISPATCHES</b></div>`;
     return `<svg class="body" viewBox="0 0 360 200" preserveAspectRatio="none" aria-hidden="true"><rect width="360" height="200" fill="${c[0]}"/><polygon points="0,0 180,126 0,200" fill="${c[1]}"/><polygon points="360,0 180,126 360,200" fill="${c[1]}"/><polygon points="0,200 180,126 360,200" fill="${c[2]}"/><polyline points="0,200 180,126 360,200" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="1.5"/></svg>
       <div class="flap"></div><div class="seal">SEALED<br>WW2</div><div class="no">${i ? 'No. ' + i + ' of 3' : ''}</div>${stamp}<div class="cstamp">CLASSIFIED</div><div class="dstamp">DECLASS</div><div class="edge"></div>`;
   }
