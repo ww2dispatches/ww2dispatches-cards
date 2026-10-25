@@ -160,7 +160,7 @@
     const stamp = cm ? `<div class="prio">${esc(env.stamp)}</div><div class="lbl">COMMEMORATIVE FILE · ${lbl}<b>WW2 DISPATCHES</b></div>`
       : pr ? `<div class="prio">PRIORITY</div><div class="lbl">STREAK REWARD · ${lbl}<b>WW2 DISPATCHES</b></div>`
       : st ? `<div class="prio stp">STARTER PACK</div><div class="lbl">YOUR ${lbl} · FIVE CARDS<b>WW2 DISPATCHES</b></div>`
-      : `<div class="lbl">INCOMING DISPATCH · ${esc(lbl)}<b>WW2 DISPATCHES</b></div>`;
+      : `<div class="lbl">INCOMING DISPATCH<br>· ${esc(lbl)}<b>WW2 DISPATCHES</b></div>`;
     return `<svg class="body" viewBox="0 0 360 200" preserveAspectRatio="none" aria-hidden="true"><rect width="360" height="200" fill="${c[0]}"/><polygon points="0,0 180,126 0,200" fill="${c[1]}"/><polygon points="360,0 180,126 360,200" fill="${c[1]}"/><polygon points="0,200 180,126 360,200" fill="${c[2]}"/><polyline points="0,200 180,126 360,200" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="1.5"/></svg>
       <div class="flap"></div><div class="seal">SEALED<br>WW2</div><div class="no">${i ? 'No. ' + i + ' of 3' : ''}</div>${stamp}<div class="cstamp">CLASSIFIED</div><div class="dstamp">DECLASS</div><div class="edge"></div>`;
   }
