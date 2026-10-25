@@ -1014,14 +1014,14 @@
     months.filter(m => !m.stamp).forEach(m => {
       const full = m.held === m.all;
       const end = monthEnd(m.ym).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', timeZone: 'UTC' });
-      const txt = !m.closed ? (full ? 'Currently complete · the stamp lands when the month closes' : `${m.held} of ${m.all} · closes ${end}`) : `${m.held} of ${m.all} · closed, still collectable`;
+      const txt = !m.closed ? (full ? 'Currently complete · the stamp lands when the month closes' : `${m.held} of ${m.all} Declassed · Closes ${end}`) : `${m.held} of ${m.all} Declassed · Closed, still collectable`;
       h += `<div class="srow" style="--c:#7a5c2e"><div class="nm"><b>${esc(m.name)} files</b><small class="${full ? 'cc' : m.all - m.held === 1 ? 'near' : ''}">${txt}</small><i><em style="width:${m.all ? m.held / m.all * 100 : 0}%"></em></i></div></div>`;
     });
     groups.forEach(([g, list]) => {
       h += `<h2>${esc(g)}</h2>`;
       list.forEach(x => {
         const full = x.held === x.all;
-        h += `<div class="srow" style="--c:${x.col}"><div class="nm"><b>${esc(x.name)}</b><small class="${full ? 'cc' : ''}">${full ? 'Currently complete · ' + x.held + ' cards' : x.held + ' of ' + x.all}${x.next ? ' · next pin at ' + x.next[0] : ''}</small><i><em style="width:${x.held / x.all * 100}%"></em></i></div><div class="spins">${x.pins.map(([k, m]) => `<div class="spin">${pinSVG(k, m)}</div>`).join('')}</div></div>`;
+        h += `<div class="srow" style="--c:${x.col}"><div class="nm"><b>${esc(x.name)}</b><small class="${full ? 'cc' : ''}">${full ? 'Currently complete · ' + x.held + ' cards' : x.held + ' of ' + x.all + ' Declassed'}${x.next ? (x.pins.length ? ' · Next pin at ' : ' · First pin at ') + x.next[0] : ''}</small><i><em style="width:${x.held / x.all * 100}%"></em></i></div><div class="spins">${x.pins.map(([k, m]) => `<div class="spin">${pinSVG(k, m)}</div>`).join('')}</div></div>`;
       });
     });
     h += '<p class="snote">A month\'s stamp is permanent once the month closes with every card held, even if you catch up later. Collections appear once they have five cards, and say "Currently complete" until the next card posts. Pins count different cards, never duplicates.</p>';
