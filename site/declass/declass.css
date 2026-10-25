@@ -70,8 +70,8 @@ button:focus-visible,.env:focus-visible{outline:3px solid var(--brass);outline-o
 .tile>i{position:absolute;left:0;top:0;bottom:0;width:4px}
 .tile:disabled{opacity:.55;cursor:default}
 .tile.wide{grid-column:1/-1}
-.tile.flash>i{background:linear-gradient(180deg,#B04A3E 0 25%,#5E6B3A 25% 50%,#3D5884 50% 75%,#B8862B 75%)}
-.tile.flash .bar>i{background:linear-gradient(90deg,#B04A3E 0 25%,#5E6B3A 25% 50%,#3D5884 50% 75%,#B8862B 75%)}
+.tile.flash>i{background:linear-gradient(180deg,#d9a0a8,#e6d39a,#9fd9b8,#9dbbe3,#c9a2e0)}
+.tile.flash .bar>i{background:linear-gradient(90deg,#d9a0a8,#e6d39a,#9fd9b8,#9dbbe3,#c9a2e0)}
 #yearTiles{grid-template-columns:repeat(3,1fr)}
 #yearTiles .tile{padding:9px 10px 9px 12px}
 #yearTiles .tile b{font-size:14px;line-height:1.15}
