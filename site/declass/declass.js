@@ -111,7 +111,10 @@
     r.setProperty('--pos', (50 + x * 80) + '% ' + (50 + y * 80) + '%');
     r.setProperty('--gang', (118 + x * 50) + 'deg');
   }
-  document.addEventListener('pointermove', e => setLight(e.clientX / innerWidth - 0.5, e.clientY / innerHeight - 0.5, true));
+  // A real mouse moves the light. On phones only a finger drag does: iPhone Safari sends a fake
+  // mouse move before each tap, and if the page changes during it, Safari swallows the tap.
+  document.addEventListener('pointermove', e => { if (e.pointerType === 'mouse') setLight(e.clientX / innerWidth - 0.5, e.clientY / innerHeight - 0.5, true); });
+  document.addEventListener('touchmove', e => { const t = e.touches[0]; if (t) setLight(t.clientX / innerWidth - 0.5, t.clientY / innerHeight - 0.5, true); }, { passive: true });
   window.addEventListener('deviceorientation', e => { if (e.gamma != null) setLight(Math.max(-0.5, Math.min(0.5, e.gamma / 60)), Math.max(-0.5, Math.min(0.5, (e.beta - 45) / 60)), true); });
   (function idle() {
     if (!document.hidden && Date.now() - lightTouched > 1500) { lightT += 0.01; setLight(Math.sin(lightT) * 0.35, Math.cos(lightT * 0.7) * 0.35); }
