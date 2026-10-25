@@ -157,7 +157,7 @@
     const k = env.kind, pr = k === 'priority', st = k === 'starter', cm = k === 'commemorative';
     const c = cm ? ['#1d1a17', '#24201c', '#2a2520'] : pr ? ['#C9A774', '#C5A26E', '#CDAB79'] : ['#E8DFC7', '#E6DCC3', '#EAE1C9'];
     const lbl = cm ? 'THREE DAYS ONLY' : pr ? 'DEEP ARCHIVE' : st ? 'FIRST FILE' : env.last ? 'LAST CALL' : env.deep ? 'DEEP ARCHIVE' : etTime(env.at).toUpperCase();
-    const stamp = cm ? `<div class="prio">${esc(env.stamp)}</div><div class="lbl">COMMEMORATIVE<br>· ${lbl}<b>WW2 DISPATCHES</b></div>`
+    const stamp = cm ? `<div class="prio">${esc(env.stamp).replace(' · ', '<br>')}</div><div class="lbl">COMMEMORATIVE<br>· ${lbl}<b>WW2 DISPATCHES</b></div>`
       : pr ? `<div class="prio">PRIORITY</div><div class="lbl">STREAK REWARD<br>· ${lbl}<b>WW2 DISPATCHES</b></div>`
       : st ? `<div class="prio stpk">STARTER PACK</div><div class="lbl">YOUR ${lbl}<br>· FIVE CARDS<b>WW2 DISPATCHES</b></div>`
       : `<div class="lbl">INCOMING DISPATCH<br>· ${esc(lbl)}<b>WW2 DISPATCHES</b></div>`;

@@ -366,20 +366,22 @@ button:focus-visible,.env:focus-visible{outline:3px solid var(--brass);outline-o
 .slotbtn span span.help,.slotbtn.locked span span.help{display:inline-grid;padding:0;width:18px;height:18px;margin:0 6px 0 0;box-sizing:border-box;font-size:11px;vertical-align:1px;color:var(--navy);border-color:var(--navy);opacity:1}
 .slotbtn.comm span span.help{color:#e3c25e;border-color:#e3c25e}
 
-/* Envelope layout, 25 Oct 2026: label, number, and CLASSIFIED moved off the creases.
-   Label upper left, number top right of center, CLASSIFIED top center (the DECLASS stamp lands beside it).
-   Priority, starter, and commemorative envelopes keep CLASSIFIED on the right, since their own stamp sits top left. */
-.env .lbl{top:50%;left:3.5%;bottom:auto;max-width:36%;z-index:5}
-.env .lbl{letter-spacing:.05em;font-size:10px;max-width:none;white-space:nowrap}
-.env .lbl b{font-size:10.5px;letter-spacing:.04em}
-.env .no{right:auto;left:67.5%;top:7%}
-.env .cstamp{left:0;right:0;margin:0 auto;width:max-content;top:10%}
-.env .dstamp{right:auto;left:53%;top:21%}
-/* priority, starter, commemorative: their own stamp takes the top center, CLASSIFIED moves into the right panel */
-.env .prio{left:0;right:0;margin:0 auto;width:max-content;top:18%;font-size:clamp(10px,2.8vw,13px);letter-spacing:.14em}
-.env.commem .prio{font-size:clamp(9px,2.4vw,11px);letter-spacing:.08em}
-.env.priority .cstamp,.env.commem .cstamp,.env.starter .cstamp{left:auto;margin:0;right:3.5%;top:50%;font-size:clamp(9px,2.5vw,12px);letter-spacing:.12em;padding:1px 6px}
-.env.priority .dstamp,.env.commem .dstamp,.env.starter .dstamp{left:auto;right:5%;top:62%}
+/* Envelope layout, 25 Oct 2026 (uniform pass): every envelope type puts each piece in the same spot,
+   all clear of the creases and the seal. Sizes are in container units so the choose screen and the
+   opening screen envelopes match exactly (px first as a fallback).
+   Left panel: the label. Top center (inside the flap): the type stamp on priority, starter, commemorative.
+   Top right: No. x of 3. Right panel: CLASSIFIED, with DECLASS landing just below it. */
+.env{container-type:inline-size}
+.big .env{aspect-ratio:1.8}
+.env .lbl{top:50%;left:3.5%;bottom:auto;z-index:5;letter-spacing:.05em;font-size:10px;font-size:2.8cqw;max-width:none;white-space:nowrap}
+.env .lbl b{font-size:10.5px;font-size:2.93cqw;letter-spacing:.04em}
+.env .no{right:auto;left:71%;top:5%;font-size:11px;font-size:3.07cqw}
+.env .seal{font-size:9.4px;font-size:2.6cqw}
+.env .prio{left:0;right:0;margin:0 auto;width:max-content;top:18%;font-size:11px;font-size:3.05cqw;letter-spacing:.14em}
+.env.commem .prio{font-size:9px;font-size:2.5cqw;letter-spacing:.08em;max-width:none;white-space:nowrap;text-align:center;line-height:1.3;top:16%}
+.env .cstamp,.env .dstamp{left:auto;right:3.5%;margin:0;width:max-content;font-size:9.8px;font-size:2.72cqw;letter-spacing:.12em;padding:1px 6px}
+.env .cstamp{top:47%}
+.env .dstamp{top:61%;right:5%}
 /* Envelope looks match the Field manual drawings (25 Oct 2026) */
 .env.deep{border-color:var(--navy);box-shadow:0 0 0 3px var(--navy),0 2px 0 #cbbd98,0 10px 22px rgba(26,22,18,.16)}
 .env.deep .lbl{color:var(--navy)}
