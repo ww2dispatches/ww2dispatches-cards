@@ -18,4 +18,6 @@ server and a throwaway database, never the live site.
    30 players racing for Top Secret serials, signatures, and the gate.
 6. Put the real catalog back: `git checkout functions/_data/catalog.json`. Never commit the synthetic one.
 
-First run, 24 Oct 2026: 548 passed, 0 failed.
+First run, 24 Oct 2026: 548 passed, 0 failed. Session 4 rerun: 548 passed after fixing the serial check (the slot card can also come up as an archive pull, so it can get more than 30 serials).
+
+The page itself was tested in a headless phone browser (390 by 844) with card images served from the repo. Locally, `x-declass-fake-google: <name>` on `/api/auth/google` signs in a test player without Google (only with `ALLOW_FAKE_NOW=1`).

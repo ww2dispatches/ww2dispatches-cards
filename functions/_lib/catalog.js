@@ -57,6 +57,7 @@ export function summary(card, t) {
     format: card.format, postAt: card.postAt, img: card.img, hasFilm: filmReleased(card, t),
     subjects: card.subjects, theater: card.theater, nations: card.nations,
   };
+  if (s.hasFilm) Object.assign(s, { filmMp4: card.film.mp4, filmPoster: card.film.poster, filmSound: card.film.sound });
   if (card.kind === 'namethis') Object.assign(s, { answer: card.answer, clue: card.clue, imgPuzzle: card.imgPuzzle });
   return s;
 }

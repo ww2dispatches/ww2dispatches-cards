@@ -1,0 +1,13 @@
+{
+  "name": "Declass: a WW2 Dispatches game",
+  "short_name": "Declass",
+  "start_url": "/declass",
+  "scope": "/declass",
+  "display": "standalone",
+  "background_color": "#EDE4CF",
+  "theme_color": "#EDE4CF",
+  "icons": [
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

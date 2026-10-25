@@ -148,7 +148,7 @@ const serials = {};
 for (const x of rs) for (const p of x.data.pulls) (serials[p.card + '/' + p.variant] ||= []).push(p.serial);
 const slotId = cat.find(c => c.kind === 'dispatch' && c.postAt === slot.slice(2)).id;
 const s = serials[slotId + '/still'].sort((a, b) => a - b);
-ok(s.length === 30 && s.every((v, i) => v === i + 1), `slot card serials 1 to 30: ${s.join(',')}`);
+ok(s.length >= 30 && s.every((v, i) => v === i + 1), `slot card serials run 1 to n with no gaps (it can come up again as an archive pull): ${s.join(',')}`);
 let allGood = true;
 for (const [k, v] of Object.entries(serials)) { v.sort((a, b) => a - b); if (!v.every((x, i) => x === i + 1)) allGood = false; }
 ok(allGood, 'every card numbered 1..n with no gaps or repeats');
