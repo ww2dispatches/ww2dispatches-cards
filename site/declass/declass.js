@@ -1022,11 +1022,18 @@
     let h = '<h2>Monthly files</h2>';
     const stamps = months.filter(m => m.stamp);
     if (stamps.length) h += `<div class="sshelf">${stamps.map(m => `<div class="stp" title="${esc(m.name)}">${stampSVG(m.name, m.stamp)}</div>`).join('')}</div>`;
-    months.filter(m => !m.stamp).forEach(m => {
+    const monthRow = m => {
       const full = m.held === m.all;
       const end = monthEnd(m.ym).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', timeZone: 'UTC' });
       const txt = !m.closed ? (full ? 'Currently complete · the stamp lands when the month closes' : `${m.held} of ${m.all} Declassed · Closes ${end}`) : `${m.held} of ${m.all} Declassed · Closed, still collectable`;
-      h += `<div class="srow" style="--c:#7a5c2e"><div class="nm"><b>${esc(m.name)} files</b><small class="${full ? 'cc' : m.all - m.held === 1 ? 'near' : ''}">${txt}</small><i><em style="width:${m.all ? m.held / m.all * 100 : 0}%"></em></i></div></div>`;
+      return `<div class="srow" style="--c:#7a5c2e"><div class="nm"><b>${esc(m.name)} files</b><small class="${full ? 'cc' : m.all - m.held === 1 ? 'near' : ''}">${txt}</small><i><em style="width:${m.all ? m.held / m.all * 100 : 0}%"></em></i></div></div>`;
+    };
+    // The current month always shows; unfinished past months fold by calendar year (25 Oct 2026).
+    months.filter(m => !m.stamp && !m.closed).forEach(m => { h += monthRow(m); });
+    const past = months.filter(m => !m.stamp && m.closed), years = [...new Set(past.map(m => m.ym.slice(0, 4)))];
+    years.forEach(y => {
+      const list = past.filter(m => m.ym.startsWith(y));
+      h += `<details class="syear"><summary><b>${y} monthly files</b><small>${list.length} month${list.length === 1 ? '' : 's'} still collectable</small></summary>${list.map(monthRow).join('')}</details>`;
     });
     groups.forEach(([g, list]) => {
       h += `<h2>${esc(g)}</h2>`;

@@ -410,3 +410,16 @@ body{font-variant-emoji:text}
 .filters .subj select{font-family:var(--type);font-size:16px;color:var(--ink);background:var(--env);border:1px solid var(--line);border-radius:14px;padding:6px 28px 6px 12px;-webkit-appearance:none;appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--ink) 50%),linear-gradient(135deg,var(--ink) 50%,transparent 50%);background-position:calc(100% - 15px) 52%,calc(100% - 10px) 52%;background-size:5px 5px;background-repeat:no-repeat;max-width:100%}
 .filters .subj.on select{background-color:var(--ink);color:var(--paper);border-color:var(--ink);background-image:linear-gradient(45deg,transparent 50%,var(--paper) 50%),linear-gradient(135deg,var(--paper) 50%,transparent 50%)}
 .filters .subj select{width:min(250px,64vw);text-overflow:ellipsis}
+/* Past monthly files fold by year */
+.syear{margin-bottom:6px}
+.syear summary{list-style:none;display:flex;align-items:baseline;gap:10px;cursor:pointer;background:#efe5cc;border:1px solid var(--line);border-left:5px solid #7a5c2e;padding:9px 10px;color:var(--ink)}
+.syear summary::-webkit-details-marker{display:none}
+.syear summary b{font-family:var(--display);font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:14px}
+.syear summary small{flex:1;font-family:var(--type);font-size:10.5px;color:var(--mute)}
+.syear summary::after{content:"▸\FE0E";font-size:13px;color:var(--mute);transition:transform .2s}
+.syear[open] summary::after{transform:rotate(90deg)}
+.syear[open] summary{margin-bottom:6px}
+.syear .srow{margin-left:12px;width:calc(100% - 12px)}
+.syear summary{display:grid;grid-template-columns:1fr auto;column-gap:10px;row-gap:3px;align-items:center}
+.syear summary b{grid-column:1;grid-row:1}.syear summary small{grid-column:1;grid-row:2}
+.syear summary::after{grid-column:2;grid-row:1/3}
