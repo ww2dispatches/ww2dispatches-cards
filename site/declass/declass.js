@@ -204,9 +204,10 @@
           b => guard(b, () => pick({ kind: 'priority' }))));
       }
       for (const e of ST.envelopes.slice().reverse()) {
-        const name = (etHour(e.at) < 12 ? 'Morning' : 'Evening') + ' envelope' + (e.deep ? ' · deep archive' : '');
+        const name = (etHour(e.at) < 12 ? 'Morning' : 'Evening') + ' envelope';
+        const deep = e.deep ? 'Sunday deep archive · ' : '';
         files.appendChild(slotButton(e.opened ? 'done' : locked ? 'locked' : 'live', name,
-          e.opened ? 'Opened · out since ' + localTime(e.at) : 'Out since ' + localTime(e.at) + ' · ' + leftText(e.closes),
+          e.opened ? deep + 'Opened · out since ' + localTime(e.at) : deep + 'Out since ' + localTime(e.at) + ' · ' + leftText(e.closes),
           b => { if (!e.opened) guard(b, () => pick(e)); }));
       }
     }
