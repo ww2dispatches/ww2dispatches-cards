@@ -328,3 +328,4 @@ button:focus-visible,.env:focus-visible{outline:3px solid var(--brass);outline-o
 .top .wordmark small{font-size:13px;margin-top:5px}
 .top .streak{text-align:center}
 .top .streak b{font-size:30px;margin-bottom:2px}
+.files-sub{line-height:1.7;letter-spacing:.02em;margin-top:6px}
