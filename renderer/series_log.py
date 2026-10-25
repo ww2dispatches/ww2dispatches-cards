@@ -8,7 +8,7 @@ Writes three files:
   log/series-counts.csv  running totals per series
   log/namethis-log.csv   one row per Name This card
 
-Run from the repo root:  python3 renderer/series_log.py
+Run from the repo root:  python3 renderer/series_log.py  (it also refreshes site/slides.json and the Declass catalog)
 Both weekly runs (Thursday cards, Friday videos) and the Saturday Name This run run this
 after their changes, so the logs never need typing by hand. The CSVs are written
 with a UTF-8 byte order mark so Excel shows accented names and the · separator correctly. Never edit the CSVs by hand;
@@ -185,3 +185,9 @@ try:
     runpy.run_path(os.path.join(root, "renderer", "site_data.py"), run_name="__main__")
 except Exception as e:
     print(f"site/slides.json not refreshed: {e}")
+
+# Refresh the Declass game catalog (functions/_data/catalog.json), also kept separate.
+try:
+    runpy.run_path(os.path.join(root, "renderer", "catalog.py"), run_name="__main__")
+except Exception as e:
+    print(f"functions/_data/catalog.json not refreshed: {e}")

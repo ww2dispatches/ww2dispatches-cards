@@ -12,6 +12,7 @@ Two scheduled runs fill each Sunday to Saturday week: Thursday 7:47 p.m. Mountai
 * `stories/` Story Card scripts, `kits/` Video Press Kits, `newsletter/` weekly issue drafts.
 * `log/` the permanent record in spreadsheet form: `series-log.csv` (one row per card with every field worth keeping, including live post links), `series-counts.csv` (series totals), and `namethis-log.csv`. Rebuilt from the JSON by `renderer/series_log.py`; never edited by hand.
 * `status.md` the small working state the weekly runs keep (dispatch bank, video bank, pending one time jobs, open checks).
+* `functions/` the Declass game server (Cloudflare Pages Functions) and `migrations/` its database setup. `functions/_data/catalog.json` is the game's card catalog, rebuilt from the JSON by `renderer/catalog.py` (run by `series_log.py`); never edited by hand. Full plan: the Project doc "WW2 Dispatches Declass Build".
 * `archive/` retired files (the Grok scout and the old Facebook queue). Not used; do not edit.
 
 ## Rendering
