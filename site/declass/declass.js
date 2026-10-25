@@ -829,7 +829,7 @@
     const g = c.createRadialGradient(W / 2, H * 0.48, W * 0.1, W / 2, H * 0.5, H * 0.75); g.addColorStop(0, 'rgba(176,74,62,.22)'); g.addColorStop(1, 'rgba(0,0,0,0)'); c.fillStyle = g; c.fillRect(0, 0, W, H);
     c.globalAlpha = 0.05; c.fillStyle = '#EDE4CF'; for (let y = 0; y < H; y += 6) c.fillRect(0, y, W, 1); c.globalAlpha = 1;
     // blue DECLASSED stamp, top left
-    c.save(); c.translate(56, 46); c.rotate(-4 * Math.PI / 180); c.strokeStyle = '#5b8fd6'; c.fillStyle = '#5b8fd6'; c.lineWidth = 4; c.font = '700 30px Oswald'; c.textAlign = 'left';
+    c.save(); c.translate(58, 58); c.rotate(-4 * Math.PI / 180); c.strokeStyle = '#5b8fd6'; c.fillStyle = '#5b8fd6'; c.lineWidth = 4; c.font = '700 30px Oswald'; c.textAlign = 'left';
     const tw = c.measureText('D E C L A S S E D').width; c.strokeRect(-14, -30, tw + 28, 41); c.fillText('D E C L A S S E D', 0, 0); c.restore();
     // the name, then the finish chip and the dispatch line (Option B)
     const best = items[0];
