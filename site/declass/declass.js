@@ -232,7 +232,7 @@
       const all = CAT.filter(c => c.series === k), h = all.filter(c => H.has(c.id)).length;
       return `<button class="tile${k === 'namethis' ? ' wide' : ''}" data-series="${k}"><i style="background:${col}"></i><b>${name}</b><span>${h} of ${all.length}</span><div class="bar"><i style="width:${all.length ? h / all.length * 100 : 0}%"></i></div></button>`;
     }).join('');
-    $('seriesTiles').insertAdjacentHTML('beforeend', '<button class="tile wide" id="tileSets" style="border-color:var(--navy)"><b>Sets</b><span>monthly files and collections</span></button>');
+    $('seriesTiles').insertAdjacentHTML('beforeend', '<button class="tile wide" id="tileSets" style="border-color:var(--navy)"><b>Sets</b><span>Monthly files and collections</span></button>');
     $('tileSets').onclick = renderSets;
     $('seriesTiles').querySelectorAll('[data-series]').forEach(b => { b.onclick = () => section('series', b.dataset.series); });
     $('yearTiles').innerHTML = ERAS.map(([k, name, span]) => {
@@ -284,7 +284,7 @@
     }
     $('sectionTitle').textContent = title;
     const h = list.filter(c => H.has(c.id)).length;
-    $('sectionSub').textContent = `${h} of ${list.length} cards · swatches show the finishes you hold, ▶ a Living Card`;
+    $('sectionSub').textContent = `${h} of ${list.length} cards · Swatches show the finishes you hold, ▶ a Living Card`;
     $('sectionGrid').innerHTML = list.length ? list.map(c => miniHTML(c.id, H)).join('') : '<p class="sub" style="grid-column:1/-1">Nothing here yet.</p>';
     wireMinis($('sectionGrid'), list.map(c => c.id));
     viewFrom = 'sSection';
@@ -383,10 +383,10 @@
   function backText(p, i) {
     const k = (cardEnv && cardEnv.kind) || (p.slot && p.slot.startsWith('p:') ? 'priority' : p.slot && p.slot.startsWith('c:') ? 'commemorative' : p.slot === 's:starter' ? 'starter' : 'daily');
     const first = i === 0 && (!p.slot || p.slot.startsWith('d:') || p.slot === 's:starter');
-    if (k === 'priority' || k === 'commemorative') return 'from the deep archive';
-    if (k === 'starter') return first ? "today's dispatch" : 'your starter pack';
-    if (first && p.cardInfo && p.cardInfo.kind === 'dispatch' && p.variant === 'still' && i === 0) return "today's dispatch";
-    return cardEnv && cardEnv.deep ? 'from the deep archive' : 'from the archive';
+    if (k === 'priority' || k === 'commemorative') return 'From the deep archive';
+    if (k === 'starter') return first ? "Today's dispatch" : 'Your starter pack';
+    if (first && p.cardInfo && p.cardInfo.kind === 'dispatch' && p.variant === 'still' && i === 0) return "Today's dispatch";
+    return cardEnv && cardEnv.deep ? 'From the deep archive' : 'From the archive';
   }
   function renderCard(dir) {
     const p = pulls[idx], info = p.cardInfo;
@@ -556,7 +556,7 @@
     $('vPrev').disabled = vi === 0; $('vNext').disabled = vi === viewList.length - 1;
     const row = (variant, lbl) => `<div class="rowlbl">${lbl}</div>` + FIN.map(f => {
       const n = h[variant][f] || 0;
-      return n ? `<button class="s4 f-${f}${variant === viewSel.variant && f === viewSel.finish ? ' cur' : ''}" data-v="${variant}" data-f="${f}">${FNAME[f]}<small>×${n}</small></button>` : '<div class="s4 off">?<small>sealed</small></div>';
+      return n ? `<button class="s4 f-${f}${variant === viewSel.variant && f === viewSel.finish ? ' cur' : ''}" data-v="${variant}" data-f="${f}">${FNAME[f]}<small>×${n}</small></button>` : '<div class="s4 off">?<small>Sealed</small></div>';
     }).join('');
     $('slots4').innerHTML = row('still', 'Still') + (info.hasFilm ? row('living', 'Living Card') : '');
     $('slots4').querySelectorAll('button.s4').forEach(b => { b.onclick = () => { viewSel = { variant: b.dataset.v, finish: b.dataset.f }; renderView(); }; });
