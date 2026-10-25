@@ -397,3 +397,7 @@ button:focus-visible,.env:focus-visible{outline:3px solid var(--brass);outline-o
    and never show through the cards rising out (bug report 25 Oct 2026). */
 .big .env .prio,.big .env .no,.big .env .edge{transition:opacity .35s}
 .big.go .env .prio,.big.go .env .no,.big.go .env .edge{opacity:0}
+.fmodds tr.tot td{font-family:var(--display);font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--mute);border-bottom:none;padding-top:7px}
+.fmlead{margin:0 0 4px}
+.fmodds tr.tot td{font-family:var(--display);font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--mute);border-bottom:none;padding-top:7px}
+.fmlead{margin:0 0 4px}
