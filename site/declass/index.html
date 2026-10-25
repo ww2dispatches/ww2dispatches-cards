@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Special+Elite&family=Source+Sans+3:wght@400;600&display=swap">
 <style>
-/* Build session 1: a bare page that proves sign in works. The full game page replaces this in session 4. */
+/* Build sessions 1 and 2: a bare page that proves sign in works and lists the posted cards. The full game page replaces this in session 4. */
 :root { --night:#120F0C; --paper:#EDE4CF; --sand:#C9B98F; --red:#B04A3E; --line:rgba(237,228,207,.18);
   --display:"Oswald","Arial Narrow",Impact,sans-serif; --type:"Special Elite","Courier New",monospace; --body:"Source Sans 3",system-ui,sans-serif; color-scheme:dark; }
 * { box-sizing:border-box; }
@@ -27,6 +27,18 @@ button { font:600 15px var(--body); color:var(--paper); background:transparent; 
 button:hover { border-color:var(--sand); }
 #gbtn { display:flex; justify-content:center; min-height:44px; }
 .err { color:#E08A7E; margin-top:14px; min-height:1.2em; }
+#catalog { margin-top:28px; text-align:left; }
+#catalog h2 { font-family:var(--display); font-weight:600; letter-spacing:.06em; text-transform:uppercase; font-size:18px; margin:0 0 4px; }
+#catalog .note { color:var(--sand); font-size:14px; margin:0 0 14px; }
+.grid { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; }
+.grid button { padding:0; border:0; background:none; display:block; text-align:left; color:var(--paper); }
+.grid img { width:100%; aspect-ratio:4/5; object-fit:cover; display:block; border-radius:3px; background:#2a241d; }
+.grid span { display:block; font-size:12px; color:var(--sand); margin-top:3px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+#view { margin-top:18px; border:1px solid var(--line); border-radius:6px; padding:16px; background:rgba(255,255,255,.03); }
+#view img { width:100%; border-radius:3px; display:block; }
+#view .kicker { font-family:var(--type); color:var(--sand); font-size:13px; margin:12px 0 4px; }
+#view h3 { font-family:var(--display); font-weight:600; font-size:22px; margin:0 0 8px; }
+#view p { line-height:1.5; }
 [hidden] { display:none !important; }
 </style>
 </head>
@@ -55,6 +67,13 @@ button:hover { border-color:var(--sand); }
       <dt>Tester</dt><dd id="tester"></dd>
     </dl>
     <button id="signout">Sign out</button>
+  </section>
+
+  <section id="catalog" hidden>
+    <h2>Posted so far</h2>
+    <p class="note" id="catnote"></p>
+    <div id="view" hidden></div>
+    <div class="grid" id="grid"></div>
   </section>
 
   <p class="err" id="err"></p>
@@ -112,8 +131,36 @@ button:hover { border-color:var(--sand); }
     api('auth/signout', {}).then(function () { location.reload(); });
   };
 
+  // Session 2 check: the catalog the server serves, newest first. Only cards that have posted appear.
+  function esc(t) { return String(t || '').replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  function openCard(id) {
+    api('card?id=' + encodeURIComponent(id)).then(function (d) {
+      var c = d.card, v = $('view');
+      var kicker = (c.num ? 'No. ' + String(c.num).padStart(3, '0') + ' · ' : '') + c.seriesName + ' · ' + c.date + (c.place ? ' · ' + c.place : '');
+      v.innerHTML = '<img alt="" src="' + esc(c.img) + '"><p class="kicker">' + esc(kicker) + '</p><h3>' + esc(c.title) + '</h3>' +
+        (c.clue ? '<p class="kicker">The clue was: ' + esc(c.clue) + '</p>' : '') +
+        '<p>' + esc((c.story || '').split('\n\n')[0]) + '</p>' +
+        (c.film ? '<p class="kicker">Living Card: ' + esc(c.film.caption) + '</p>' : '') +
+        '<p class="kicker">' + esc(c.photoCredit) + '</p>';
+      v.hidden = false; v.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }).catch(function (e) { $('err').textContent = 'Could not open that card (' + e.message + ').'; });
+  }
+  function loadCatalog() {
+    api('catalog').then(function (d) {
+      var cards = d.cards.slice().reverse(), films = cards.filter(function (c) { return c.hasFilm; }).length;
+      var nt = cards.filter(function (c) { return c.kind === 'namethis'; }).length;
+      $('catnote').textContent = (cards.length - nt) + ' dispatch cards (' + films + ' with a Living Card) and ' + nt + ' Name This cards. Tap one.';
+      $('grid').innerHTML = cards.map(function (c) {
+        return '<button data-id="' + esc(c.id) + '"><img loading="lazy" alt="' + esc(c.short) + '" src="' + esc(c.img) + '"><span>' + esc(c.short) + '</span></button>';
+      }).join('');
+      $('grid').onclick = function (e) { var b = e.target.closest('button'); if (b) openCard(b.getAttribute('data-id')); };
+      $('catalog').hidden = false;
+    }).catch(function () {});
+  }
+
   api('config').then(function (cfg) {
     if (!cfg.open) return show('soon');
+    loadCatalog();
     return api('me').then(function (d) {
       if (d.player) showPlayer(d.player);
       else { show('signin'); startGoogle(cfg.googleClientId); }
