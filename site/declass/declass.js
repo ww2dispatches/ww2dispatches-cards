@@ -794,6 +794,33 @@
     }
   }
   function fitFont(c, text, weight, size, family, maxW) { let s = size; c.font = `${weight} ${s}px ${family}`; while (c.measureText(text).width > maxW && s > 18) { s -= 2; c.font = `${weight} ${s}px ${family}`; } return s; }
+  // The finish chip (in the finish's own material) and the dispatch line beside it, centered as one row.
+  // Both texts are centered on their capital letters so they sit level with the chip.
+  const FORMAT_LABEL = { spec: 'Spec Sheet', photo: 'Photo of the Day', quote: 'Quote of the Day' };
+  function shareChipRow(c, W, cy, x) {
+    const chipText = (x.finish === 'topsecret' ? 'TOP SECRET' + (x.serial ? ' · ' + ser4(x.serial) : '') : FNAME[x.finish].toUpperCase()) + (x.variant === 'living' ? ' · LIVING CARD' : '');
+    const info = x.info;
+    const line = info.kind === 'namethis' ? 'Name This' : 'Dispatch No. ' + pad3(info.num) + (FORMAT_LABEL[info.format] ? ' · ' + FORMAT_LABEL[info.format] : '');
+    const spaced = t => t.split('').join(String.fromCharCode(8202)); // hair spaces for the chip's letter spacing
+    c.font = '700 26px Oswald'; const chipLabel = spaced(chipText); const chipTW = c.measureText(chipLabel).width; const capChip = c.measureText('H').actualBoundingBoxAscent || 19;
+    c.font = '400 28px "Special Elite"'; const lineW = c.measureText(line).width; const capLine = c.measureText('H').actualBoundingBoxAscent || 19;
+    const padX = 16, chipH = 42, chipW = chipTW + padX * 2, gap = 16, total = chipW + gap + lineW;
+    const x0 = (W - total) / 2, top = cy - chipH / 2;
+    const fills = {
+      copper: () => '#9C5B2E',
+      silver: () => grad(c, x0, top, chipW, 0, [[0, '#7e838c'], [0.5, '#dde1e6'], [1, '#7e838c']]),
+      gold: () => grad(c, x0, top, chipW, 0, [[0, '#a67c1e'], [0.5, '#f0cf68'], [1, '#a67c1e']]),
+      topsecret: () => grad(c, x0, top, chipW, 0, [[0, '#c9d2dd'], [0.25, '#f2c6d8'], [0.5, '#e9eef5'], [0.75, '#c9f0dc'], [1, '#c7d6f5']]),
+    };
+    const ink = { copper: '#f6ead8', silver: '#1A1612', gold: '#2a1f08', topsecret: '#8e2a20' };
+    c.fillStyle = fills[x.finish](); c.beginPath();
+    if (c.roundRect) c.roundRect(x0, top, chipW, chipH, 5); else c.rect(x0, top, chipW, chipH);
+    c.fill();
+    c.textAlign = 'left';
+    c.fillStyle = ink[x.finish]; c.font = '700 26px Oswald'; c.fillText(chipLabel, x0 + padX, cy + capChip / 2);
+    c.fillStyle = '#b9ad92'; c.font = '400 28px "Special Elite"'; c.fillText(line, x0 + chipW + gap, cy + capLine / 2);
+    c.textAlign = 'center';
+  }
   async function paintShare(cv, items) {
     await Promise.all(['700 40px Oswald', '400 20px "Special Elite"'].map(f => document.fonts.load(f).catch(() => {})));
     const imgs = await Promise.all(items.map(x => loadImg(shareSrc(x)).catch(() => null)));
@@ -801,27 +828,28 @@
     c.textAlign = 'left'; c.fillStyle = '#17140f'; c.fillRect(0, 0, W, H);
     const g = c.createRadialGradient(W / 2, H * 0.48, W * 0.1, W / 2, H * 0.5, H * 0.75); g.addColorStop(0, 'rgba(176,74,62,.22)'); g.addColorStop(1, 'rgba(0,0,0,0)'); c.fillStyle = g; c.fillRect(0, 0, W, H);
     c.globalAlpha = 0.05; c.fillStyle = '#EDE4CF'; for (let y = 0; y < H; y += 6) c.fillRect(0, y, W, 1); c.globalAlpha = 1;
-    // blue DECLASSED stamp and the headline
-    c.save(); c.translate(W / 2, 78); c.rotate(-4 * Math.PI / 180); c.strokeStyle = '#5b8fd6'; c.fillStyle = '#5b8fd6'; c.lineWidth = 5; c.font = '700 40px Oswald'; c.textAlign = 'center';
-    const tw = c.measureText('D E C L A S S E D').width; c.strokeRect(-tw / 2 - 18, -38, tw + 36, 52); c.fillText('D E C L A S S E D', 0, 0); c.restore();
+    // blue DECLASSED stamp, top left
+    c.save(); c.translate(56, 58); c.rotate(-4 * Math.PI / 180); c.strokeStyle = '#5b8fd6'; c.fillStyle = '#5b8fd6'; c.lineWidth = 4; c.font = '700 30px Oswald'; c.textAlign = 'left';
+    const tw = c.measureText('D E C L A S S E D').width; c.strokeRect(-14, -30, tw + 28, 41); c.fillText('D E C L A S S E D', 0, 0); c.restore();
+    // the name, then the finish chip and the dispatch line (Option B)
+    const best = items[0];
     c.textAlign = 'center'; c.fillStyle = '#EDE4CF';
-    // the headline leaves out the serial, which is on the frame and in the caption
-    const head = phrase(Object.assign({}, items[0], { serial: null })).toUpperCase();
-    fitFont(c, head, 700, 72, 'Oswald', W - 80);
-    c.fillText(head, W / 2, 170);
-    if (items.length > 1) { c.fillStyle = '#b9ad92'; const sub = 'and ' + items.slice(1).map(phrase).join(' and '); fitFont(c, sub, 400, 30, '"Special Elite"', W - 80); c.fillText(sub, W / 2, 216); }
+    fitFont(c, best.info.short.toUpperCase(), 700, 68, 'Oswald', W - 120);
+    c.fillText(best.info.short.toUpperCase(), W / 2, 130);
+    shareChipRow(c, W, 168, best);
+    if (items.length > 1) { c.textAlign = 'center'; c.fillStyle = '#b9ad92'; const sub = 'with ' + listText(items.slice(1)); fitFont(c, sub, 400, 28, '"Special Elite"', W - 100); c.fillText(sub, W / 2, 226); }
     // cards: cy is roughly the card's middle
     const draw = (x, k, cx, cy, w, rot) => { c.save(); c.translate(cx, cy); c.rotate(rot * Math.PI / 180); if (imgs[k]) framed(c, imgs[k], -w / 2, -w * 0.62, w, x.finish, x.serial); c.restore(); };
-    if (items.length === 1) draw(items[0], 0, W / 2, 205 + 800 * 0.62, 800, 0);
-    else if (items.length === 2) { const cw = 580; draw(items[1], 1, W / 2 + 200, 735, cw, 7); draw(items[0], 0, W / 2 - 200, 720, cw, -5); }
-    else { const cw = 545; draw(items[1], 1, W / 2 - 238, 760, cw, -9); draw(items[2], 2, W / 2 + 238, 760, cw, 9); draw(items[0], 0, W / 2, 715, cw, 0); }
-    // footer, larger so it reads on a phone
-    c.textAlign = 'center'; c.fillStyle = '#EDE4CF'; c.font = '700 46px Oswald'; c.fillText('DECLASS', W / 2, 1262);
-    c.fillStyle = '#c9bd9f'; c.font = '400 30px "Special Elite"'; fitFont(c, 'a WW2 Dispatches game · ww2dispatches.com/declass', 400, 30, '"Special Elite"', W - 60);
-    c.fillText('a WW2 Dispatches game · ww2dispatches.com/declass', W / 2, 1302);
-    const file = items[0].file;
-    c.fillStyle = '#9a8f78'; c.font = '400 24px "Special Elite"';
-    c.fillText((file ? 'File ' + file + ' · ' : '') + new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }), W / 2, 1336);
+    if (items.length === 1) draw(items[0], 0, W / 2, 210 + 830 * 0.62, 830, 0);
+    else if (items.length === 2) { const cw = 610; draw(items[1], 1, W / 2 + 205, 752, cw, 7); draw(items[0], 0, W / 2 - 205, 738, cw, -5); }
+    else { const cw = 560; draw(items[1], 1, W / 2 - 240, 778, cw, -9); draw(items[2], 2, W / 2 + 240, 778, cw, 9); draw(items[0], 0, W / 2, 735, cw, 0); }
+    // footer
+    c.textAlign = 'center'; c.fillStyle = '#EDE4CF'; c.font = '700 46px Oswald'; c.fillText('DECLASS', W / 2, 1280);
+    c.fillStyle = '#c9bd9f'; fitFont(c, 'a WW2 Dispatches game · ww2dispatches.com/declass', 400, 30, '"Special Elite"', W - 60);
+    c.fillText('a WW2 Dispatches game · ww2dispatches.com/declass', W / 2, 1316);
+    const file = best.file;
+    c.fillStyle = '#9a8f78'; c.font = '400 22px "Special Elite"';
+    c.fillText((file ? 'File ' + file + ' · ' : '') + new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }), W / 2, 1341);
     c.textAlign = 'left';
   }
   let shAll = [], shSel = [], shBlob = null, shText = '';
