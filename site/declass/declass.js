@@ -802,20 +802,26 @@
     const g = c.createRadialGradient(W / 2, H * 0.48, W * 0.1, W / 2, H * 0.5, H * 0.75); g.addColorStop(0, 'rgba(176,74,62,.22)'); g.addColorStop(1, 'rgba(0,0,0,0)'); c.fillStyle = g; c.fillRect(0, 0, W, H);
     c.globalAlpha = 0.05; c.fillStyle = '#EDE4CF'; for (let y = 0; y < H; y += 6) c.fillRect(0, y, W, 1); c.globalAlpha = 1;
     // blue DECLASSED stamp and the headline
-    c.save(); c.translate(W / 2, 110); c.rotate(-4 * Math.PI / 180); c.strokeStyle = '#5b8fd6'; c.fillStyle = '#5b8fd6'; c.lineWidth = 5; c.font = '700 40px Oswald'; c.textAlign = 'center';
+    c.save(); c.translate(W / 2, 78); c.rotate(-4 * Math.PI / 180); c.strokeStyle = '#5b8fd6'; c.fillStyle = '#5b8fd6'; c.lineWidth = 5; c.font = '700 40px Oswald'; c.textAlign = 'center';
     const tw = c.measureText('D E C L A S S E D').width; c.strokeRect(-tw / 2 - 18, -38, tw + 36, 52); c.fillText('D E C L A S S E D', 0, 0); c.restore();
     c.textAlign = 'center'; c.fillStyle = '#EDE4CF';
-    const head = phrase(Object.assign({}, items[0], { serial: null })).toUpperCase(); // the serial is on the frame and in the caption fitFont(c, head, 700, 76, 'Oswald', W - 80); c.fillText(head, W / 2, 206);
-    if (items.length > 1) { c.fillStyle = '#b9ad92'; const sub = 'and ' + items.slice(1).map(phrase).join(' and '); fitFont(c, sub, 400, 30, '"Special Elite"', W - 80); c.fillText(sub, W / 2, 262); }
+    // the headline leaves out the serial, which is on the frame and in the caption
+    const head = phrase(Object.assign({}, items[0], { serial: null })).toUpperCase();
+    fitFont(c, head, 700, 72, 'Oswald', W - 80);
+    c.fillText(head, W / 2, 170);
+    if (items.length > 1) { c.fillStyle = '#b9ad92'; const sub = 'and ' + items.slice(1).map(phrase).join(' and '); fitFont(c, sub, 400, 30, '"Special Elite"', W - 80); c.fillText(sub, W / 2, 216); }
+    // cards: cy is roughly the card's middle
     const draw = (x, k, cx, cy, w, rot) => { c.save(); c.translate(cx, cy); c.rotate(rot * Math.PI / 180); if (imgs[k]) framed(c, imgs[k], -w / 2, -w * 0.62, w, x.finish, x.serial); c.restore(); };
-    if (items.length === 1) draw(items[0], 0, W / 2, 300 + 680 * 0.62, 680, 0);
-    else if (items.length === 2) { const cw = 470; draw(items[1], 1, W / 2 + 190, 330 + cw * 0.62, cw, 7); draw(items[0], 0, W / 2 - 190, 330 + cw * 0.62, cw, -5); }
-    else { const cw = 500; draw(items[1], 1, W / 2 - 245, 390 + cw * 0.62, cw, -9); draw(items[2], 2, W / 2 + 245, 390 + cw * 0.62, cw, 9); draw(items[0], 0, W / 2, 330 + cw * 0.62, cw, 0); }
-    c.textAlign = 'center'; c.fillStyle = '#EDE4CF'; c.font = '700 34px Oswald'; c.fillText('DECLASS', W / 2, H - 112);
-    c.fillStyle = '#b9ad92'; c.font = '400 24px "Special Elite"'; c.fillText('a WW2 Dispatches game · ww2dispatches.com/declass', W / 2, H - 74);
+    if (items.length === 1) draw(items[0], 0, W / 2, 205 + 800 * 0.62, 800, 0);
+    else if (items.length === 2) { const cw = 580; draw(items[1], 1, W / 2 + 200, 735, cw, 7); draw(items[0], 0, W / 2 - 200, 720, cw, -5); }
+    else { const cw = 545; draw(items[1], 1, W / 2 - 238, 760, cw, -9); draw(items[2], 2, W / 2 + 238, 760, cw, 9); draw(items[0], 0, W / 2, 715, cw, 0); }
+    // footer, larger so it reads on a phone
+    c.textAlign = 'center'; c.fillStyle = '#EDE4CF'; c.font = '700 46px Oswald'; c.fillText('DECLASS', W / 2, 1262);
+    c.fillStyle = '#c9bd9f'; c.font = '400 30px "Special Elite"'; fitFont(c, 'a WW2 Dispatches game · ww2dispatches.com/declass', 400, 30, '"Special Elite"', W - 60);
+    c.fillText('a WW2 Dispatches game · ww2dispatches.com/declass', W / 2, 1302);
     const file = items[0].file;
-    c.fillStyle = '#7d735f'; c.font = '400 18px "Special Elite"';
-    c.fillText((file ? 'File ' + file + ' · ' : '') + new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }), W / 2, H - 40);
+    c.fillStyle = '#9a8f78'; c.font = '400 24px "Special Elite"';
+    c.fillText((file ? 'File ' + file + ' · ' : '') + new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }), W / 2, 1336);
     c.textAlign = 'left';
   }
   let shAll = [], shSel = [], shBlob = null, shText = '';
