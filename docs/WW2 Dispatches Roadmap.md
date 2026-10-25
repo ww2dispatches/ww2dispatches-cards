@@ -29,7 +29,7 @@ Big dates already have people searching and talking, so these get the strongest 
 * **19 Nov 1942, Operation Uranus** encircles the Germans at Stalingrad. Battle Lines. Batch of 15 to 21 Nov.
 * **20 Nov 1945, the Nuremberg trial opens.** Statecraft, Living Card candidate (Signal Corps film of the courtroom). Callback to No. 003. Batch of 15 to 21 Nov.
 * **28 Nov 1943, Tehran Conference opens.** Statecraft. Batch of 22 to 28 Nov. Thanksgiving is 26 Nov 2026; a verified Home Front Thanksgiving story is a good fit that week.
-* **7 Dec 1941, Pearl Harbor, the 85th anniversary** (Mon 7 Dec 2026). Major dispatch with the iconic photo and Navy film. Start the footage hunt in the November batches so it isn't rushed. Batch of 6 to 12 Dec (research Wed 2 Dec, videos Thu 3 Dec, cards Fri 4 Dec).
+* **7 Dec 1941, Pearl Harbor, the 85th anniversary** (Mon 7 Dec 2026). **The first Flash card** (Flash cards plan). Major dispatch with the iconic photo and Navy film. Start the footage hunt in the November batches so it isn't rushed. Batch of 6 to 12 Dec (research Wed 2 Dec, videos Thu 3 Dec, cards Fri 4 Dec).
 * **Battle of the Bulge** (Dec 1944) comes next; add it here when the December batches are planned.
 
 ## Open decisions
@@ -75,6 +75,28 @@ These can be tested first in the 5 p.m. rotation at no extra volume.
 * **Dispatch archive** on ww2dispatches.com, growing out of the home page (see Archive plan). At two cards a day a few hundred cards could arrive within four or five months.
 * Paid tier or Patreon only with a few thousand engaged followers and a cheap to make bonus product. A paid Substack tier is the easiest version, since the list already lives there.
 * **Expansion to a new topic:** candidates are the Civil War, WW1, the Cold War and the Space Race, and Vietnam.
+* **Flash cards:** a rare card type for the war's biggest days (see Flash cards plan).
+
+## Flash cards plan
+A long term idea, agreed in principle 25 Oct 2026, not yet built into the weekly runs.
+* **The name:** FLASH, the top designation on the WW2 news wires (AP's D Day flash in 1944 broke into network radio within seconds). It sits above the PRIORITY envelopes in Declass.
+* **What it is:** the one card type that spans all four series at once (Battle Lines, Home Front, Blueprint, Statecraft). Rare, and a big moment when it lands.
+* **When (decided):** Flash days are the Declass commemorative days, so a Flash card and a commemorative file always arrive together. The set list, ten Flash cards (1 and 2 September are two separate Flash cards sharing one commemorative file):
+  1. 19 Feb 1945, the landing on Iwo Jima
+  2. 8 May 1945, VE Day
+  3. 4 Jun 1942, the Battle of Midway
+  4. 6 Jun 1944, D Day
+  5. 15 Aug 1945, VJ Day (Japan announces its surrender)
+  6. 1 Sep 1939, Germany invades Poland
+  7. 2 Sep 1945, the formal surrender aboard USS Missouri
+  8. 15 Sep 1940, Battle of Britain Day
+  9. 7 Dec 1941, Pearl Harbor
+  10. 16 Dec 1944, the Battle of the Bulge begins
+* **Debut (decided):** Pearl Harbor, Mon 7 Dec 2026, the 85th anniversary. The Flash card layout in the renderer, the `flash` field in the catalog, and the Research doc rules need to be in place before that batch's research run (Wed 2 Dec).
+* **In the Declass dossier (decided):** Name This shrinks to a half width tile like the four series, and a **Flash** tile sits beside it, edged in all four series colors. It shows "None posted yet" until the first Flash posts. The tile is coded but waits on repo access to push; the catalog will mark Flash cards with a `flash` field.
+* **Proposed, not yet decided:** the card keeps the normal frame, with a FLASH stamp in place of the series stamp and a thin rule in all four series colors; the 8 a.m. card on a Flash day becomes the Flash, with a four slide Instagram carousel (one slide per series angle); in Declass a Flash card counts toward all four series collections, gets its own reveal sound (a teletype burst), and pulls rarer from the archive.
+* **Every year (decided):** each Flash date gets a new, revamped Flash card every year, with a new angle, new graphics, and a new image, so ten new Flash cards arrive each year. This is the one exception to the research rule that never repeats an event: the event repeats, the card never does.
+* **Open:** how somber Flash days (Pearl Harbor) handle the growth rules (they skip them, as any somber dispatch does).
 
 ## Subscriptions plan
 A long term goal, not a short term one. The model is @VoicesofWW2's X subscription ($2 a month, exclusive posts, "tell me what content you'd like to see more of"). On 16 Oct 2026 it showed 15 subscribers, about $30 a month before fees, so subscriptions only pay once the account is large. Growth comes first.
@@ -114,3 +136,4 @@ Why: old social posts are close to invisible because feeds favor new content, so
 * 21 Oct 2026: ww2dispatches.com home page live on Cloudflare Pages, replacing the Linktree; the Archive plan now builds on it. Web Analytics and a Home Front background photo added to small polish. Later: weekly analytics reviews start Wed 28 Oct; the open decisions and the first month checkpoints now run through them (the 26 Oct video comparison folded into the 28 Oct review, the 2 Nov decisions moved to the 4 Nov review).
 * 23 Oct 2026: X verification (blue check) confirmed, so every account setup step for X Creator Subscriptions is done; what remains is account age, Premium followers, and impressions.
 * 24 Oct 2026: The weekly runs reordered so the video comes first (Tuesday analytics, Wednesday research, Thursday videos, Friday cards; Project Brief and Research doc). The analytics reviews moved to Tuesday, so the 28 Oct and 4 Nov checkpoints became 27 Oct and 3 Nov, and the Pearl Harbor batch dates changed to match.
+* 25 Oct 2026: Flash cards plan added: a rare card spanning all four series, tied to the Declass commemorative days, with a Flash tile beside a half width Name This tile in the dossier. Later: a set list of ten Flash dates (1 and 2 September are two cards) and a debut on Pearl Harbor, 7 Dec 2026. Each Flash date gets a new, revamped Flash card every year.

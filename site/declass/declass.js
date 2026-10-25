@@ -261,8 +261,11 @@
     $('dossierSummary').textContent = `${have} of ${total} cards`;
     $('seriesTiles').innerHTML = SERIES.map(([k, name, col]) => {
       const all = CAT.filter(c => c.series === k), h = all.filter(c => H.has(c.id)).length;
-      return `<button class="tile${k === 'namethis' ? ' wide' : ''}" data-series="${k}"><i style="background:${col}"></i><b>${name}</b><span>${h} of ${all.length}</span><div class="bar"><i style="background:${col};width:${all.length ? h / all.length * 100 : 0}%"></i></div></button>`;
+      return `<button class="tile" data-series="${k}"><i style="background:${col}"></i><b>${name}</b><span>${h} of ${all.length}</span><div class="bar"><i style="background:${col};width:${all.length ? h / all.length * 100 : 0}%"></i></div></button>`;
     }).join('');
+    // Flash: the rare card that spans all four series, posted only on commemorative days
+    const fAll = CAT.filter(c => c.flash), fH = fAll.filter(c => H.has(c.id)).length;
+    $('seriesTiles').insertAdjacentHTML('beforeend', `<button class="tile flash" id="tileFlash" ${fAll.length ? '' : 'disabled'}><i></i><b>Flash</b><span>${fAll.length ? fH + ' of ' + fAll.length : 'None posted yet'}</span><div class="bar"><i style="width:${fAll.length ? fH / fAll.length * 100 : 0}%"></i></div></button>`);
     $('seriesTiles').insertAdjacentHTML('beforeend', '<button class="tile wide" id="tileSets" style="border-color:var(--navy)"><b>Sets</b><span>Monthly files and collections</span></button>');
     $('tileSets').onclick = renderSets;
     $('seriesTiles').querySelectorAll('[data-series]').forEach(b => { b.onclick = () => section('series', b.dataset.series); });
