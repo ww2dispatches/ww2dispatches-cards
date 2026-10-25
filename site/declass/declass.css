@@ -326,3 +326,5 @@ button:focus-visible,.env:focus-visible{outline:3px solid var(--brass);outline-o
 /* home header: a bigger DECLASS wordmark (24 Oct 2026 night) */
 .top .wordmark{font-size:34px;letter-spacing:.05em}
 .top .wordmark small{font-size:13px;margin-top:5px}
+.top .streak{text-align:center}
+.top .streak b{font-size:30px;margin-bottom:2px}
