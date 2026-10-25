@@ -322,3 +322,7 @@ button:focus-visible,.env:focus-visible{outline:3px solid var(--brass);outline-o
 .tbtn svg{width:15px;height:15px;flex:0 0 auto;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .tbtn.off{color:#8a8170;border-color:#b9ae94;border-style:dashed;text-decoration:none}
 .top{padding-top:8px}
+
+/* home header: a bigger DECLASS wordmark (24 Oct 2026 night) */
+.top .wordmark{font-size:34px;letter-spacing:.05em}
+.top .wordmark small{font-size:13px;margin-top:5px}
