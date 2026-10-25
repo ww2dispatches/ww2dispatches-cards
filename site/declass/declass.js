@@ -77,7 +77,7 @@
     renderGoogleButtons();
   }
   function toast(t) { const el = $('toast'); el.textContent = t; el.hidden = false; clearTimeout(toast.t); toast.t = setTimeout(() => { el.hidden = true; }, 2800); }
-  function nudge(el) { el.classList.remove('shake'); void el.offsetWidth; el.classList.add('shake'); }
+  function nudge(el) { sfx('locked'); el.classList.remove('shake'); void el.offsetWidth; el.classList.add('shake'); }
 
   // What the player holds: card id -> {still: {finish: n}, living: {finish: n}, n}
   function holdings(pulls) {
@@ -232,6 +232,8 @@
       const all = CAT.filter(c => c.series === k), h = all.filter(c => H.has(c.id)).length;
       return `<button class="tile${k === 'namethis' ? ' wide' : ''}" data-series="${k}"><i style="background:${col}"></i><b>${name}</b><span>${h} of ${all.length}</span><div class="bar"><i style="width:${all.length ? h / all.length * 100 : 0}%"></i></div></button>`;
     }).join('');
+    $('seriesTiles').insertAdjacentHTML('beforeend', '<button class="tile wide" id="tileSets" style="border-color:var(--navy)"><b>Sets</b><span>monthly files and collections</span></button>');
+    $('tileSets').onclick = renderSets;
     $('seriesTiles').querySelectorAll('[data-series]').forEach(b => { b.onclick = () => section('series', b.dataset.series); });
     $('yearTiles').innerHTML = ERAS.map(([k, name, span]) => {
       const all = CAT.filter(c => c.kind === 'dispatch' && c.era === k), h = all.filter(c => H.has(c.id)).length;
@@ -239,6 +241,7 @@
     }).join('');
     $('yearTiles').querySelectorAll('[data-year]').forEach(b => { b.onclick = () => section('year', b.dataset.year); });
     $('allSub').textContent = `${have} of ${total} cards`;
+    $('footDelete').hidden = !p;
     $('footWho').innerHTML = p ? `File ${esc(p.fileNumber)} · <button id="signOut">Sign out</button>` : '';
     if (p) $('signOut').onclick = () => { try { google.accounts.id.disableAutoSelect(); } catch (e) {} api('auth/signout', {}).then(() => location.reload()); };
   }
@@ -312,7 +315,7 @@
   }
 
   // ---------- the opening ----------
-  let busy = false;
+  let busy = false, pendingTeletype = false;
   function chosen(i) {
     if (busy) return;
     busy = true;
@@ -322,13 +325,14 @@
     const b = $('bigEnv');
     b.className = 'big';
     b.innerHTML = `<div class="env${envClass(env.kind)}">${envHTML(i, env)}</div><div class="cardsout"><i></i><i></i><i></i></div>`;
-    $('tearing').textContent = env.kind === 'commemorative' ? env.stamp : 'Declassifying…';
+    $('tearing').textContent = env.kind === 'commemorative' ? (env.title || env.stamp) : 'Declassifying…';
+    duckMusic(true); sfx('slide'); sfx('stampA', 0.25); sfx('seal', 0.95);
     $('tearing').classList.toggle('goldt', env.kind === 'commemorative');
     show('sOpen');
     // preload the pictures (and films) as soon as the server answers
     req.then(d => d.pulls.forEach(p => { if (p.cardInfo) { new Image().src = p.cardInfo.img; if (p.variant === 'living' && p.cardInfo.filmMp4) { const v = document.createElement('video'); v.preload = 'auto'; v.muted = true; v.src = p.cardInfo.filmMp4; } } })).catch(() => {});
     setTimeout(() => b.classList.add('stamp'), 250);
-    setTimeout(() => { b.classList.add('go'); $('tearing').textContent = env.kind === 'starter' ? 'Five cards inside.' : env.kind === 'commemorative' ? env.stamp : 'Three cards inside.'; }, 950);
+    setTimeout(() => { b.classList.add('go'); $('tearing').textContent = env.kind === 'starter' ? 'Five cards inside.' : env.kind === 'commemorative' ? (env.title || env.stamp) : 'Three cards inside.'; }, 950);
     setTimeout(() => b.classList.add('fade'), 2100);
     Promise.all([req, delay(2850)]).then(([d]) => {
       busy = false;
@@ -339,6 +343,7 @@
       } else {
         startCards(d.pulls, 'server', before, env);
         if (d.player && ST) ST.player = d.player;
+        pendingTeletype = Boolean(d.earnedPriority);
       }
     }).catch(err => {
       busy = false;
@@ -411,11 +416,13 @@
     if (revealed[idx]) { answerNT(); return; }
     revealed[idx] = true;
     glow(p.finish);
+    sfx(FINISH_SOUND[p.finish][p.variant === 'living' ? 1 : 0]);
     $('flip').classList.add('up');
     if (p.cardInfo && p.variant === 'living') startFilm($('flip'), p.cardInfo);
     if (cardMode === 'starterLocal') { STARTER.revealed = revealed.slice(); saveStarterLocal(); }
     else if (p.id) api('turn', { ids: [p.id] }).catch(() => {});
     $('hint').innerHTML = hintAfter(p, idx);
+    maybeTiltPrompt(p.finish);
     $('nextBtn').disabled = idx === pulls.length - 1;
     if (revealed.every(Boolean)) {
       if (cardMode === 'starterLocal') { $('hint').textContent = "That's your starter pack."; setTimeout(showSave, 1100); return; }
@@ -426,6 +433,7 @@
     const p = pulls[idx];
     if (!p.cardInfo || p.cardInfo.kind !== 'namethis' || answered[idx]) return;
     answered[idx] = true;
+    sfx('stampA');
     const st = document.querySelector('#flip .ansst');
     if (st) { st.classList.remove('hit'); void st.offsetWidth; st.classList.add('hit'); }
     if (p.cardInfo.img && p.cardInfo.img !== p.cardInfo.imgPuzzle) { const im = document.querySelector('#flip .card img'); if (im) setTimeout(() => { im.src = p.cardInfo.img; }, 250); }
@@ -443,6 +451,7 @@
     const p = pulls[idx];
     if (p && p.cardInfo && p.cardInfo.kind === 'namethis') answered[idx] = true;
     $('flip').classList.add('out');
+    document.querySelectorAll('.tiltask').forEach(el => el.remove());
     setTimeout(() => { idx = n; renderCard(true); }, 220);
   }
   $('nextBtn').onclick = () => go(idx + 1);
@@ -461,6 +470,9 @@
   });
   function leaveCards() {
     document.querySelectorAll('#stage video').forEach(v => v.pause());
+    document.querySelectorAll('.tiltask').forEach(el => el.remove());
+    duckMusic(false);
+    if (pendingTeletype) { pendingTeletype = false; setTimeout(() => sfx('teletype'), 500); }
     if (cardMode === 'starterLocal') {
       if (revealed.every(Boolean) && !signedIn()) return showSave();
       renderHome(); return show('sHome');
@@ -602,8 +614,351 @@
   $('landEnv').innerHTML = `<div class="env">${envHTML(0, { kind: 'starter' })}</div>`;
   const openStarter = () => pick({ kind: 'starter' });
   $('openStarter').onclick = openStarter;
-  $('landEnv').onclick = openStarter;
+  $('landEnv').onclick = () => { sfx('rustle'); setTimeout(openStarter, 250); };
   $('landEnv').onkeydown = e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openStarter(); } };
+
+  // ---------- sound effects (made live in the browser) and music (Declass Sound Kit) ----------
+  const SNDKEY = 'declass-sound';
+  const SND = { sfx: true, music: true };
+  try { Object.assign(SND, JSON.parse(localStorage.getItem(SNDKEY) || '{}')); } catch (e) {}
+  let actx = null, master = null, sfxGain = null, nbuf = null;
+  function ac() {
+    if (!actx) {
+      actx = new (window.AudioContext || window.webkitAudioContext)();
+      master = actx.createGain(); master.gain.value = 0.8; master.connect(actx.destination);
+      sfxGain = actx.createGain(); sfxGain.gain.value = SND.sfx ? 1 : 0; sfxGain.connect(master);
+    }
+    if (actx.state === 'suspended') actx.resume();
+    return actx;
+  }
+  function noise() { if (!nbuf) { const c = ac(); nbuf = c.createBuffer(1, c.sampleRate * 2, c.sampleRate); const d = nbuf.getChannelData(0); for (let i = 0; i < d.length; i++) d[i] = Math.random() * 2 - 1; } return nbuf; }
+  function genv(g, t, a, peak, dec) { g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(peak, t + a); g.gain.exponentialRampToValueAtTime(0.0001, t + a + dec); }
+  function nz(t, dur, type, freq, q, peak, attack) { const c = ac(); const s = c.createBufferSource(); s.buffer = noise(); const f = c.createBiquadFilter(); f.type = type; f.frequency.value = freq; f.Q.value = q || 1; const g = c.createGain(); genv(g, t, attack || 0.002, peak, dur); s.connect(f).connect(g).connect(sfxGain); s.start(t, Math.random()); s.stop(t + dur + 0.1); return { f, g, s }; }
+  function tone(t, freq, dur, type, peak, attack, endFreq) { const c = ac(); const o = c.createOscillator(); o.type = type || 'sine'; o.frequency.setValueAtTime(freq, t); if (endFreq) o.frequency.exponentialRampToValueAtTime(endFreq, t + dur); const g = c.createGain(); genv(g, t, attack || 0.004, peak, dur); o.connect(g).connect(sfxGain); o.start(t); o.stop(t + dur + 0.1); return o; }
+  function bell(t, f, dur, peak) { [[1, 1], [2.76, 0.5], [5.4, 0.25], [8.9, 0.12]].forEach(([m, a]) => tone(t, f * m, dur * (1 / m ** 0.3), 'sine', peak * a, 0.003)); }
+  function chime(t, f, dur, peak) { [[1, 1], [2, 0.35], [3, 0.12]].forEach(([m, a]) => tone(t, f * m, dur, 'sine', peak * a, 0.005)); }
+  const Sx = {
+    stampA(t) { tone(t, 140, 0.18, 'sine', 0.9, 0.002, 45); nz(t, 0.09, 'lowpass', 900, 0.7, 0.8); nz(t + 0.01, 0.05, 'bandpass', 2200, 1.2, 0.25); },
+    seal(t) { for (let i = 0; i < 5; i++) nz(t + i * 0.018 + Math.random() * 0.01, 0.012, 'bandpass', 3000 + Math.random() * 2500, 4, 0.5); const r = nz(t + 0.12, 0.38, 'bandpass', 2400, 0.6, 0.35, 0.03); r.f.frequency.setValueAtTime(1600, t + 0.12); r.f.frequency.linearRampToValueAtTime(3800, t + 0.5); },
+    slide(t) { const r = nz(t, 0.26, 'bandpass', 1200, 0.8, 0.28, 0.06); r.f.frequency.setValueAtTime(800, t); r.f.frequency.linearRampToValueAtTime(2000, t + 0.26); },
+    snapA(t) { nz(t, 0.025, 'highpass', 2500, 0.7, 0.8); tone(t, 900, 0.03, 'triangle', 0.15, 0.001, 500); },
+    silverB(t) { Sx.snapA(t); [1318.5, 1567.98, 1975.5].forEach((f, i) => chime(t + 0.04 + i * 0.05, f, 0.6, 0.12)); },
+    goldA(t) { Sx.snapA(t); [1046.5, 1318.5, 1567.98, 2093].forEach((f, i) => chime(t + 0.05 + i * 0.09, f, 0.9, 0.18)); },
+    tsC(t) {
+      Sx.snapA(t); let x = t + 0.15;
+      for (let i = 0; i < 8; i++) { nz(x, 0.012, 'bandpass', 2600, 3, 0.55); tone(x, 1800, 0.01, 'square', 0.06, 0.001); x += 0.06 - i * 0.004; }
+      const sw = nz(x, 0.55, 'bandpass', 500, 2, 0.35, 0.4); sw.f.frequency.setValueAtTime(400, x); sw.f.frequency.exponentialRampToValueAtTime(5000, x + 0.55);
+      const hit = x + 0.58; tone(hit, 90, 0.5, 'sine', 0.7, 0.003, 45); nz(hit, 0.25, 'lowpass', 1200, 0.7, 0.5);
+      [261.63, 329.63, 392, 523.25, 659.25].forEach(f => { tone(hit, f, 1.8, 'sawtooth', 0.045, 0.03); tone(hit, f * 1.003, 1.8, 'sawtooth', 0.035, 0.03); });
+      bell(hit + 0.05, 1046.5, 2.2, 0.32);
+      for (let i = 0; i < 14; i++) chime(hit + 0.25 + i * 0.07, [2093, 2637, 3136, 2349, 2794][i % 5], 0.5, 0.07 * (1 - i / 16));
+    },
+    lCopper(t) { Sx.snapA(t); Sx.projector(t + 0.12, 0.75); },
+    lSilver(t) { Sx.silverB(t); Sx.projector(t + 0.35, 0.7); },
+    lGold(t) { Sx.goldA(t); Sx.projector(t + 0.6, 0.7); },
+    lTS(t) { Sx.tsC(t); Sx.projector(t + 2.0, 0.65); },
+    projector(t, vol) {
+      vol = vol || 1; const c = ac(); const D = 3.2;
+      const s = c.createBufferSource(); s.buffer = noise(); const f = c.createBiquadFilter(); f.type = 'lowpass'; f.frequency.value = 650; const g = c.createGain();
+      g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(0.22 * vol, t + 0.6); g.gain.setValueAtTime(0.22 * vol, t + D - 0.7); g.gain.exponentialRampToValueAtTime(0.0001, t + D);
+      s.connect(f).connect(g).connect(sfxGain); s.start(t, Math.random()); s.stop(t + D + 0.1);
+      const lfo = c.createOscillator(); lfo.frequency.setValueAtTime(6, t); lfo.frequency.linearRampToValueAtTime(24, t + 1); const lg = c.createGain(); lg.gain.value = 0.08; lfo.connect(lg).connect(g.gain); lfo.start(t); lfo.stop(t + D);
+      const m = c.createOscillator(); m.type = 'sawtooth'; m.frequency.setValueAtTime(45, t); m.frequency.exponentialRampToValueAtTime(96, t + 1); const mg = c.createGain();
+      mg.gain.setValueAtTime(0.0001, t); mg.gain.exponentialRampToValueAtTime(0.035 * vol, t + 0.7); mg.gain.setValueAtTime(0.035 * vol, t + D - 0.7); mg.gain.exponentialRampToValueAtTime(0.0001, t + D); m.connect(mg).connect(sfxGain); m.start(t); m.stop(t + D + 0.1);
+      let x = t + 0.2, gap = 0.14; while (x < t + D - 0.3) { nz(x, 0.007, 'bandpass', 3200, 4, 0.11 * vol); x += gap; gap = Math.max(0.042, gap * 0.9); }
+    },
+    rustle(t) { for (let i = 0; i < 6; i++) nz(t + i * 0.05 + Math.random() * 0.03, 0.06, 'bandpass', 1500 + Math.random() * 2500, 0.9, 0.18, 0.01); },
+    teletype(t) { for (let i = 0; i < 9; i++) nz(t + i * 0.055 + Math.random() * 0.012, 0.018, 'bandpass', 2000 + Math.random() * 1500, 2.5, 0.45); bell(t + 0.58, 1975.5, 1.1, 0.25); },
+    locked(t) { tone(t, 160, 0.08, 'sine', 0.35, 0.002, 110); nz(t, 0.03, 'lowpass', 600, 0.8, 0.25); },
+  };
+  function sfx(k, d) { if (!SND.sfx) return; try { const c = ac(); Sx[k](c.currentTime + 0.02 + (d || 0)); } catch (e) {} }
+  const FINISH_SOUND = { copper: ['snapA', 'lCopper'], silver: ['silverB', 'lSilver'], gold: ['goldA', 'lGold'], topsecret: ['tsC', 'lTS'] };
+  let audio = null, duck = null, musicStarted = false;
+  function musicNode() {
+    ac();
+    if (!audio) {
+      audio = new Audio('/declass/theme.mp3'); audio.loop = true; audio.preload = 'auto';
+      try {
+        const src = actx.createMediaElementSource(audio);
+        duck = actx.createGain(); const mg = actx.createGain(); mg.gain.value = 0.35;
+        src.connect(duck).connect(mg).connect(master);
+      } catch (e) { audio.volume = 0.35; }
+    }
+  }
+  function startMusic() { if (!SND.music) return; musicNode(); audio.play().catch(() => {}); musicStarted = true; }
+  function stopMusic() { if (audio) audio.pause(); }
+  function duckMusic(down) {
+    if (!duck) return;
+    const t = actx.currentTime; duck.gain.cancelScheduledValues(t); duck.gain.setValueAtTime(duck.gain.value, t);
+    duck.gain.linearRampToValueAtTime(down ? 0.18 : 1, t + (down ? 0.4 : 1.2));
+  }
+  document.addEventListener('pointerdown', () => { ac(); if (SND.music && !musicStarted) startMusic(); tiltResume(); }, { capture: true });
+  function paintSnd() {
+    document.querySelectorAll('.sndbtn').forEach(b => {
+      const on = SND[b.dataset.t];
+      if (b.dataset.t === 'sfx') b.textContent = on ? '🔊' : '🔇';
+      b.title = (b.dataset.t === 'sfx' ? 'Sound effects ' : 'Music ') + (on ? 'on' : 'off');
+      b.classList.toggle('off', !on); b.setAttribute('aria-pressed', String(on));
+    });
+  }
+  document.querySelectorAll('.sndbtn').forEach(b => {
+    b.onclick = e => {
+      e.stopPropagation();
+      const t = b.dataset.t; SND[t] = !SND[t];
+      try { localStorage.setItem(SNDKEY, JSON.stringify(SND)); } catch (err) {}
+      if (t === 'sfx') { ac(); sfxGain.gain.value = SND.sfx ? 1 : 0; } else { SND.music ? startMusic() : stopMusic(); }
+      paintSnd();
+    };
+  });
+  paintSnd();
+
+  // ---------- iPhone tilt (asked once, on the first gold or Top Secret card) ----------
+  const TILT_KEY = 'declass_tilt';
+  const tiltNeedsAsk = () => typeof DeviceOrientationEvent !== 'undefined' && typeof DeviceOrientationEvent.requestPermission === 'function';
+  const lsGet = k => { try { return localStorage.getItem(k); } catch (e) { return null; } };
+  const lsSet = (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} };
+  function askTilt() {
+    return DeviceOrientationEvent.requestPermission().then(r => {
+      lsSet(TILT_KEY, r === 'granted' ? 'granted' : 'declined');
+      toast(r === 'granted' ? 'Tilt is on. Move your phone to catch the light.' : 'Tilt stays off. Drag a finger across the card to move the light.');
+    }).catch(() => lsSet(TILT_KEY, 'declined'));
+  }
+  let tiltResumed = false;
+  function tiltResume() { // a permission given earlier still needs a tap each visit to switch back on
+    if (tiltResumed || !tiltNeedsAsk() || lsGet(TILT_KEY) !== 'granted') return;
+    tiltResumed = true; DeviceOrientationEvent.requestPermission().catch(() => {});
+  }
+  function maybeTiltPrompt(finish) {
+    if ((finish !== 'gold' && finish !== 'topsecret') || !tiltNeedsAsk() || lsGet(TILT_KEY)) return;
+    const box = document.createElement('div');
+    box.className = 'tiltask';
+    box.innerHTML = '✨ Tilt your phone to catch the light.<br><button class="yes" type="button">Turn on tilt</button><button class="no" type="button">Not now</button>';
+    box.querySelector('.yes').onclick = e => { e.stopPropagation(); box.remove(); askTilt(); };
+    box.querySelector('.no').onclick = e => { e.stopPropagation(); box.remove(); lsSet(TILT_KEY, 'notnow'); };
+    $('hint').after(box);
+  }
+  if (tiltNeedsAsk()) { $('howTilt').hidden = false; $('howTilt').onclick = () => askTilt(); }
+
+  // ---------- sharing (Declass Share Button mockup) ----------
+  const RANK = f => FIN.indexOf(f);
+  const phrase = x => 'a ' + (x.variant === 'living' ? 'living ' : '') + (x.finish === 'topsecret' ? 'Top Secret' : FNAME[x.finish].toLowerCase()) + ' ' + x.info.short + (x.finish === 'topsecret' && x.serial ? ', worldwide serial ' + ser4(x.serial) : '');
+  function listText(items) { const n = items.map(phrase); return n.length < 3 ? n.join(' and ') : n.slice(0, -1).join(', ') + ', and ' + n[n.length - 1]; }
+  let shPrefix = 'Declassed ';
+  const shLine = items => shPrefix + listText(items) + '. ww2dispatches.com/declass #Declass';
+  const imgCache = new Map();
+  function loadImg(src) {
+    if (!imgCache.has(src)) imgCache.set(src, new Promise((ok, bad) => { const i = new Image(); i.crossOrigin = 'anonymous'; i.onload = () => ok(i); i.onerror = bad; i.src = src; }));
+    return imgCache.get(src);
+  }
+  const shareSrc = x => x.variant === 'living' && x.info.filmPoster ? x.info.filmPoster : x.info.img;
+  function grad(c, x, y, w, h, stops) { const g = c.createLinearGradient(x, y, x + w, y + h); stops.forEach(([o, col]) => g.addColorStop(o, col)); return g; }
+  function framed(c, img, x, y, w, f, serial) {
+    const pad = { copper: 0.014, silver: 0.03, gold: 0.06, topsecret: 0.06 }[f] * w, cw = w - 2 * pad, ch = cw * 1.25, fh = ch + 2 * pad;
+    c.save(); c.shadowColor = 'rgba(0,0,0,.55)'; c.shadowBlur = w * 0.06; c.shadowOffsetY = w * 0.025;
+    if (f === 'copper') c.fillStyle = '#9C5B2E';
+    if (f === 'silver') c.fillStyle = grad(c, x, y, w, fh, [[0, '#7f858e'], [0.35, '#cfd4da'], [0.5, '#9ea4ad'], [0.65, '#dde1e6'], [1, '#7f858e']]);
+    if (f === 'gold') c.fillStyle = grad(c, x, y, w, fh, [[0, '#8f6612'], [0.28, '#e8c65a'], [0.46, '#b8902a'], [0.62, '#f3dc7f'], [0.86, '#9a6f14'], [1, '#c9a23a']]);
+    if (f === 'topsecret') c.fillStyle = grad(c, x, y, w, fh, [[0, '#8e97a4'], [0.18, '#e9eef5'], [0.3, '#c7cfdb'], [0.45, '#f6f8fb'], [0.58, '#aeb6c2'], [0.72, '#e9eef5'], [1, '#8e97a4']]);
+    c.fillRect(x, y, w, fh); c.restore();
+    if (f === 'topsecret') { c.save(); c.globalCompositeOperation = 'color'; c.globalAlpha = 0.45; c.fillStyle = grad(c, x, y + fh, w, -fh, [[0, '#ff6e6e'], [0.25, '#ffe16e'], [0.5, '#6effaa'], [0.75, '#6eaaff'], [1, '#d76eff']]); c.fillRect(x, y, w, fh); c.restore(); }
+    if (f === 'gold' || f === 'topsecret') {
+      const ink = f === 'gold' ? 'rgba(70,45,5,.6)' : 'rgba(40,44,50,.55)'; c.strokeStyle = ink; c.lineWidth = Math.max(1, w * 0.003); const ins = w * 0.016; c.strokeRect(x + ins, y + ins, w - 2 * ins, fh - 2 * ins);
+      const b = w * 0.07; c.lineWidth = Math.max(2, w * 0.005);
+      [[x + ins, y + ins, 1, 1], [x + w - ins, y + ins, -1, 1], [x + ins, y + fh - ins, 1, -1], [x + w - ins, y + fh - ins, -1, -1]].forEach(([cx, cy, sx, sy]) => { c.beginPath(); c.moveTo(cx, cy + sy * b); c.lineTo(cx, cy); c.lineTo(cx + sx * b, cy); c.stroke(); });
+      const m = w * 0.022; c.fillStyle = '#EDE4CF'; c.fillRect(x + pad - m, y + pad - m, cw + 2 * m, ch + 2 * m); c.strokeStyle = ink; c.lineWidth = Math.max(1, w * 0.003); c.strokeRect(x + pad - m, y + pad - m, cw + 2 * m, ch + 2 * m);
+    }
+    if (f === 'silver') { c.strokeStyle = 'rgba(40,44,50,.4)'; c.lineWidth = 1; c.strokeRect(x + pad, y + pad, cw, ch); }
+    c.drawImage(img, x + pad, y + pad, cw, ch);
+    if (f === 'gold') { c.save(); c.globalCompositeOperation = 'screen'; c.fillStyle = grad(c, x, y, w, fh, [[0, 'rgba(255,228,150,0)'], [0.42, 'rgba(255,228,150,0)'], [0.5, 'rgba(255,235,170,.35)'], [0.58, 'rgba(255,228,150,0)'], [1, 'rgba(255,228,150,0)']]); c.fillRect(x + pad, y + pad, cw, ch); c.restore(); }
+    if (f === 'topsecret') {
+      c.save(); c.globalCompositeOperation = 'screen'; c.fillStyle = grad(c, x, y, w, fh, [[0, 'rgba(255,120,120,.22)'], [0.25, 'rgba(255,235,120,.22)'], [0.5, 'rgba(120,255,190,.22)'], [0.75, 'rgba(120,190,255,.22)'], [1, 'rgba(230,120,255,.22)']]); c.fillRect(x + pad, y + pad, cw, ch); c.restore();
+      c.save(); c.translate(x + pad + cw * 0.39, y + pad + ch * 0.06); c.rotate(-8 * Math.PI / 180); c.font = `700 ${w * 0.026}px Oswald`; const t = 'TOP SECRET', tw = c.measureText(t).width; c.strokeStyle = '#b02a1f'; c.lineWidth = Math.max(1.5, w * 0.004); c.strokeRect(-w * 0.01, -w * 0.026, tw + w * 0.02, w * 0.036); c.fillStyle = '#b02a1f'; c.fillText(t, 0, 0); c.restore();
+      if (serial) { c.font = `400 ${w * 0.03}px "Special Elite"`; c.fillStyle = '#8e2a20'; c.textAlign = 'center'; c.fillText('Worldwide serial ' + ser4(serial), x + w / 2, y + fh - pad * 0.32); c.textAlign = 'left'; }
+    }
+  }
+  function fitFont(c, text, weight, size, family, maxW) { let s = size; c.font = `${weight} ${s}px ${family}`; while (c.measureText(text).width > maxW && s > 18) { s -= 2; c.font = `${weight} ${s}px ${family}`; } return s; }
+  async function paintShare(cv, items) {
+    await Promise.all(['700 40px Oswald', '400 20px "Special Elite"'].map(f => document.fonts.load(f).catch(() => {})));
+    const imgs = await Promise.all(items.map(x => loadImg(shareSrc(x)).catch(() => null)));
+    const W = 1080, H = 1350, c = cv.getContext('2d');
+    c.textAlign = 'left'; c.fillStyle = '#17140f'; c.fillRect(0, 0, W, H);
+    const g = c.createRadialGradient(W / 2, H * 0.48, W * 0.1, W / 2, H * 0.5, H * 0.75); g.addColorStop(0, 'rgba(176,74,62,.22)'); g.addColorStop(1, 'rgba(0,0,0,0)'); c.fillStyle = g; c.fillRect(0, 0, W, H);
+    c.globalAlpha = 0.05; c.fillStyle = '#EDE4CF'; for (let y = 0; y < H; y += 6) c.fillRect(0, y, W, 1); c.globalAlpha = 1;
+    // blue DECLASSED stamp and the headline
+    c.save(); c.translate(W / 2, 110); c.rotate(-4 * Math.PI / 180); c.strokeStyle = '#5b8fd6'; c.fillStyle = '#5b8fd6'; c.lineWidth = 5; c.font = '700 40px Oswald'; c.textAlign = 'center';
+    const tw = c.measureText('D E C L A S S E D').width; c.strokeRect(-tw / 2 - 18, -38, tw + 36, 52); c.fillText('D E C L A S S E D', 0, 0); c.restore();
+    c.textAlign = 'center'; c.fillStyle = '#EDE4CF';
+    const head = phrase(Object.assign({}, items[0], { serial: null })).toUpperCase(); // the serial is on the frame and in the caption fitFont(c, head, 700, 76, 'Oswald', W - 80); c.fillText(head, W / 2, 206);
+    if (items.length > 1) { c.fillStyle = '#b9ad92'; const sub = 'and ' + items.slice(1).map(phrase).join(' and '); fitFont(c, sub, 400, 30, '"Special Elite"', W - 80); c.fillText(sub, W / 2, 262); }
+    const draw = (x, k, cx, cy, w, rot) => { c.save(); c.translate(cx, cy); c.rotate(rot * Math.PI / 180); if (imgs[k]) framed(c, imgs[k], -w / 2, -w * 0.62, w, x.finish, x.serial); c.restore(); };
+    if (items.length === 1) draw(items[0], 0, W / 2, 300 + 680 * 0.62, 680, 0);
+    else if (items.length === 2) { const cw = 470; draw(items[1], 1, W / 2 + 190, 330 + cw * 0.62, cw, 7); draw(items[0], 0, W / 2 - 190, 330 + cw * 0.62, cw, -5); }
+    else { const cw = 500; draw(items[1], 1, W / 2 - 245, 390 + cw * 0.62, cw, -9); draw(items[2], 2, W / 2 + 245, 390 + cw * 0.62, cw, 9); draw(items[0], 0, W / 2, 330 + cw * 0.62, cw, 0); }
+    c.textAlign = 'center'; c.fillStyle = '#EDE4CF'; c.font = '700 34px Oswald'; c.fillText('DECLASS', W / 2, H - 112);
+    c.fillStyle = '#b9ad92'; c.font = '400 24px "Special Elite"'; c.fillText('a WW2 Dispatches game · ww2dispatches.com/declass', W / 2, H - 74);
+    const file = items[0].file;
+    c.fillStyle = '#7d735f'; c.font = '400 18px "Special Elite"';
+    c.fillText((file ? 'File ' + file + ' · ' : '') + new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }), W / 2, H - 40);
+    c.textAlign = 'left';
+  }
+  let shAll = [], shSel = [], shBlob = null, shText = '';
+  const shChosen = () => shAll.filter((x, i) => shSel[i]).sort((a, b) => RANK(b.finish) - RANK(a.finish) || (b.variant === 'living') - (a.variant === 'living'));
+  async function shRefresh() {
+    const items = shChosen();
+    shBlob = null; shText = shLine(items);
+    $('shLine').textContent = shText;
+    $('shGo').disabled = true;
+    try {
+      await paintShare($('shPv'), items);
+      shBlob = await new Promise(r => $('shPv').toBlob(r, 'image/png'));
+    } catch (e) { shBlob = null; }
+    $('shGo').disabled = false;
+  }
+  function shDrawPicks() {
+    const row = $('shCards'); row.innerHTML = '';
+    if (shAll.length < 2) { $('shLbl').textContent = ''; return; }
+    shAll.forEach((x, i) => {
+      const b = document.createElement('button');
+      b.className = 'shpc' + (shSel[i] ? '' : ' off'); b.type = 'button';
+      b.innerHTML = `<img src="${esc(x.info.img)}" alt=""><b>✓</b><small>${esc(FNAME[x.finish] + ' ' + x.info.short)}</small>`;
+      b.onclick = () => { if (shSel[i] && shSel.filter(Boolean).length === 1) return; shSel[i] = !shSel[i]; shDrawPicks(); shRefresh(); };
+      row.appendChild(b);
+    });
+    const n = shSel.filter(Boolean).length;
+    $('shLbl').textContent = n === 1 ? 'Starts with your best card. Tap a card to add or remove it.' : n + ' cards in the picture';
+  }
+  // items: [{info, finish, variant, serial, file}]
+  function openShare(items, prefix) {
+    shPrefix = prefix || 'Declassed ';
+    shAll = items.filter(x => x.info);
+    if (!shAll.length) return;
+    const best = shAll.reduce((m, x, i) => RANK(x.finish) > RANK(shAll[m].finish) ? i : m, 0);
+    shSel = shAll.map((_, i) => i === best);
+    $('shTitle').textContent = shAll.length > 1 ? 'Pick what to share' : 'Share this card';
+    $('shui').hidden = false; $('shui').scrollTop = 0;
+    shDrawPicks(); shRefresh();
+  }
+  $('shBack').onclick = () => { $('shui').hidden = true; };
+  $('shGo').onclick = () => {
+    const text = shText;
+    if (navigator.clipboard) navigator.clipboard.writeText(text).catch(() => {});
+    const file = shBlob ? new File([shBlob], 'declass.png', { type: 'image/png' }) : null;
+    if (file && navigator.canShare && navigator.canShare({ files: [file] })) {
+      navigator.share({ files: [file], text }).then(() => { $('shui').hidden = true; }).catch(() => {});
+      return;
+    }
+    if (shBlob) {
+      const a = document.createElement('a'); a.href = URL.createObjectURL(shBlob); a.download = 'declass.png';
+      document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+      toast('Picture saved. The caption is copied, ready to paste.');
+    } else toast('The caption is copied, ready to paste.');
+  };
+  const pullItem = p => ({ info: p.cardInfo || BYID.get(p.card), finish: p.finish, variant: p.variant, serial: p.serial, file: p.file });
+  $('shareBtn').onclick = () => openShare(pulls.map(pullItem), cardEnv && cardEnv.kind === 'commemorative' ? `Declassed the ${cardEnv.name} file: ` : 'Declassed ');
+  $('vShare').onclick = () => {
+    const id = viewList[vi], pl = myPulls();
+    const p = pl.filter(x => x.card === id && x.variant === viewSel.variant && x.finish === viewSel.finish).sort((a, b) => (b.serial ? 1 : 0) - (a.serial ? 1 : 0))[0];
+    if (p) openShare([pullItem(p)]);
+  };
+
+  // ---------- sets: monthly files (stamps) and collections (pins) ----------
+  const PINS = [[25, 'copper'], [50, 'silver'], [100, 'gold']];
+  const MET = { copper: ['#6e3a17', '#c98652', '#9C5B2E'], silver: ['#6f757e', '#e3e7ec', '#9ea4ad'], gold: ['#7a560c', '#f3dc7f', '#b8902a'] };
+  let suid = 0;
+  function stampSVG(name, date) {
+    const id = 'sp' + (suid++);
+    return `<svg viewBox="0 0 100 100"><defs><path id="${id}" d="M50,50 m-36,0 a36,36 0 1,1 72,0 a36,36 0 1,1 -72,0"/></defs><circle cx="50" cy="50" r="46" fill="none" stroke="currentColor" stroke-width="4"/><circle cx="50" cy="50" r="31" fill="none" stroke="currentColor" stroke-width="1.5"/><text font-family="Oswald" font-weight="700" font-size="9" letter-spacing="1.5" fill="currentColor"><textPath href="#${id}" startOffset="25%" text-anchor="middle">${esc(name.toUpperCase())}</textPath></text><text x="50" y="55" text-anchor="middle" font-family="Oswald" font-weight="700" font-size="13" fill="currentColor" textLength="48" lengthAdjust="spacingAndGlyphs">COMPLETE</text><text x="50" y="66" text-anchor="middle" font-family="Special Elite" font-size="6" fill="currentColor">${esc(date)}</text></svg>`;
+  }
+  function pinSVG(n, metal) {
+    const id = 'pg' + (suid++), m = MET[metal];
+    return `<svg viewBox="0 0 60 60"><defs><linearGradient id="${id}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${m[1]}"/><stop offset=".5" stop-color="${m[2]}"/><stop offset="1" stop-color="${m[0]}"/></linearGradient></defs><circle cx="30" cy="30" r="27" fill="url(#${id})"/><circle cx="30" cy="30" r="21" fill="none" stroke="${m[0]}" stroke-width="1.4" opacity=".7"/><text x="30" y="37.5" text-anchor="middle" font-family="Oswald" font-weight="700" font-size="20" fill="${m[0]}">${n}</text></svg>`;
+  }
+  const etMonth = iso => new Date(iso).toLocaleDateString('en-CA', { timeZone: 'America/New_York', year: 'numeric', month: '2-digit' }).slice(0, 7);
+  const monthName = ym => new Date(ym + '-15T12:00:00Z').toLocaleDateString('en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' });
+  const monthEnd = ym => { const [y, m] = ym.split('-').map(Number); return new Date(Date.UTC(y, m, 0, 12)); };
+  const stampDate = d => d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' }).toUpperCase();
+  function setsModel() {
+    const H = holdingsNow(), firstAt = new Map();
+    for (const p of myPulls()) { const t = p.at || new Date().toISOString(); if (!firstAt.has(p.card) || t < firstAt.get(p.card)) firstAt.set(p.card, t); }
+    const nowYm = etMonth(new Date().toISOString());
+    const byMonth = new Map();
+    CAT.filter(c => c.kind === 'dispatch').forEach(c => { const ym = etMonth(c.postAt); if (!byMonth.has(ym)) byMonth.set(ym, []); byMonth.get(ym).push(c); });
+    const months = [...byMonth.keys()].sort().reverse().map(ym => {
+      const all = byMonth.get(ym), held = all.filter(c => H.has(c.id)).length, closed = ym < nowYm;
+      let stamp = null;
+      if (closed && held === all.length) {
+        const last = all.reduce((m, c) => (firstAt.get(c.id) > m ? firstAt.get(c.id) : m), '');
+        const end = monthEnd(ym);
+        stamp = stampDate(last && new Date(last) > end ? new Date(last) : end);
+      }
+      return { ym, name: monthName(ym), all: all.length, held, closed, stamp };
+    });
+    const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
+    const distinct = key => [...new Set(CAT.flatMap(c => c[key] || []))].sort();
+    const groups = [
+      ['Series', SERIES.map(([k, name, col]) => [name, col, c => c.series === k])],
+      ['Years', ERAS.map(([k, name]) => [name || k, '#1A1612', c => c.kind === 'dispatch' && c.era === k])],
+      ['Theaters', distinct('theater').map(t => [cap(t), '#3D5884', c => (c.theater || []).includes(t)])],
+      ['Nations', ['US', 'Britain', 'Soviet Union', 'Germany', 'Japan'].map(n => [n, '#6b3d2e', c => (c.nations || []).includes(n)])],
+      ['Subjects', distinct('subjects').map(t => [cap(t), '#5E6B3A', c => (c.subjects || []).includes(t)])],
+    ].map(([g, list]) => [g, list.map(([name, col, fn]) => {
+      const all = CAT.filter(fn), held = all.filter(c => H.has(c.id)).length;
+      return { name, col, all: all.length, held, pins: PINS.filter(([k]) => held >= k), next: PINS.find(([k]) => held < k) };
+    }).filter(x => x.all >= 5)]).filter(([, list]) => list.length);
+    return { months, groups };
+  }
+  function renderSets() {
+    const { months, groups } = setsModel();
+    let h = '<h2>Monthly files</h2>';
+    const stamps = months.filter(m => m.stamp);
+    if (stamps.length) h += `<div class="sshelf">${stamps.map(m => `<div class="stp" title="${esc(m.name)}">${stampSVG(m.name, m.stamp)}</div>`).join('')}</div>`;
+    months.filter(m => !m.stamp).forEach(m => {
+      const full = m.held === m.all;
+      const end = monthEnd(m.ym).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', timeZone: 'UTC' });
+      const txt = !m.closed ? (full ? 'Currently complete · the stamp lands when the month closes' : `${m.held} of ${m.all} · closes ${end}`) : `${m.held} of ${m.all} · closed, still collectable`;
+      h += `<div class="srow" style="--c:#7a5c2e"><div class="nm"><b>${esc(m.name)} files</b><small class="${full ? 'cc' : m.all - m.held === 1 ? 'near' : ''}">${txt}</small><i><em style="width:${m.all ? m.held / m.all * 100 : 0}%"></em></i></div></div>`;
+    });
+    groups.forEach(([g, list]) => {
+      h += `<h2>${esc(g)}</h2>`;
+      list.forEach(x => {
+        const full = x.held === x.all;
+        h += `<div class="srow" style="--c:${x.col}"><div class="nm"><b>${esc(x.name)}</b><small class="${full ? 'cc' : ''}">${full ? 'Currently complete · ' + x.held + ' cards' : x.held + ' of ' + x.all}${x.next ? ' · next pin at ' + x.next[0] : ''}</small><i><em style="width:${x.held / x.all * 100}%"></em></i></div><div class="spins">${x.pins.map(([k, m]) => `<div class="spin">${pinSVG(k, m)}</div>`).join('')}</div></div>`;
+      });
+    });
+    h += '<p class="snote">A month\'s stamp is permanent once the month closes with every card held, even if you catch up later. Collections appear once they have five cards, and say "Currently complete" until the next card posts. Pins count different cards, never duplicates.</p>';
+    $('sets').innerHTML = h;
+    show('sSets');
+  }
+  $('backSets').onclick = () => { renderHome(); show('sHome'); };
+
+  // ---------- Delete my dossier ----------
+  $('deleteBtn').onclick = () => show('sDelete');
+  $('deleteNo').onclick = () => { renderHome(); show('sHome'); };
+  $('deleteYes').onclick = () => {
+    $('deleteYes').disabled = true;
+    api('delete', {}).then(() => {
+      try { google.accounts.id.disableAutoSelect(); } catch (e) {}
+      ST = null; STARTER = null; saveStarterLocal(); show('sDeleted');
+    }).catch(e => toast('That did not work (' + e.message + ').')).finally(() => { $('deleteYes').disabled = false; });
+  };
+  $('deletedOk').onclick = () => location.replace('/declass');
+
+  // ---------- checking a file number from a share picture ----------
+  function checkFile(n) {
+    show('sFile');
+    $('backFile').onclick = () => { history.replaceState(null, '', '/declass'); route(); };
+    api('file?n=' + encodeURIComponent(n)).then(d => {
+      const x = { info: d.card, finish: d.finish, variant: d.variant, serial: d.serial };
+      $('fileTitle').innerHTML = '<span class="filegood">GENUINE</span><br>File ' + esc(d.file);
+      $('fileSub').textContent = `${phrase(x).replace(/^a /, 'A ')}, declassed ${localDate(d.at)}.`;
+      $('fileCard').innerHTML = cardFace(d.card, d.finish, d.variant, d.serial, { autoplay: true });
+      if (d.variant === 'living') startFilm($('fileCard'), d.card);
+    }).catch(() => {
+      $('fileTitle').textContent = 'No file matches that number';
+      $('fileSub').textContent = 'Check the number on the picture and try again. Every card pulled in Declass has a file number that checks out here.';
+      $('fileCard').innerHTML = '';
+    });
+  }
 
   // ---------- boot ----------
   function route() {
@@ -623,6 +978,10 @@
     CFG = cfg;
     if (!cfg.open) return show('sSoon');
     loadGoogle();
-    return Promise.all([api('catalog'), api('state')]).then(([c, s]) => { setCatalog(c.cards); ST = s; route(); });
+    return Promise.all([api('catalog'), api('state')]).then(([c, s]) => {
+      setCatalog(c.cards); ST = s;
+      const file = new URLSearchParams(location.search).get('file');
+      if (file) checkFile(file); else route();
+    });
   }).catch(() => show('sSoon'));
 })();

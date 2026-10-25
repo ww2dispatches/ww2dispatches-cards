@@ -15,15 +15,15 @@ const CARDS_PER_ENVELOPE = 3;
 
 // Nine a year (Envelope doc, Commemorative files). 1 and 2 September share one file.
 export const COMMEMORATIVE = [
-  { md: '02-19', name: 'Iwo Jima', stamp: 'IWO JIMA · 19 FEBRUARY 1945' },
-  { md: '05-08', name: 'VE Day', stamp: 'VE DAY · 8 MAY 1945' },
-  { md: '06-04', name: 'Midway', stamp: 'MIDWAY · 4 JUNE 1942' },
-  { md: '06-06', name: 'D Day', stamp: 'D DAY · 6 JUNE 1944' },
-  { md: '08-15', name: 'VJ Day', stamp: 'VJ DAY · 15 AUGUST 1945' },
-  { md: '09-01', name: 'First and last days', stamp: '1 SEPTEMBER 1939 · 2 SEPTEMBER 1945' },
-  { md: '09-15', name: 'Battle of Britain Day', stamp: 'BATTLE OF BRITAIN · 15 SEPTEMBER 1940' },
-  { md: '12-07', name: 'Pearl Harbor', stamp: 'PEARL HARBOR · 7 DECEMBER 1941' },
-  { md: '12-16', name: 'The Bulge', stamp: 'THE BULGE · 16 DECEMBER 1944' },
+  { md: '02-19', title: '19 February 1945 · Iwo Jima', name: 'Iwo Jima', stamp: 'IWO JIMA · 19 FEBRUARY 1945' },
+  { md: '05-08', title: '8 May 1945 · VE Day', name: 'VE Day', stamp: 'VE DAY · 8 MAY 1945' },
+  { md: '06-04', title: '4 June 1942 · Midway', name: 'Midway', stamp: 'MIDWAY · 4 JUNE 1942' },
+  { md: '06-06', title: '6 June 1944 · D Day', name: 'D Day', stamp: 'D DAY · 6 JUNE 1944' },
+  { md: '08-15', title: '15 August 1945 · VJ Day', name: 'VJ Day', stamp: 'VJ DAY · 15 AUGUST 1945' },
+  { md: '09-01', title: '1 September 1939 · 2 September 1945', name: 'First and last days', stamp: '1 SEPTEMBER 1939 · 2 SEPTEMBER 1945' },
+  { md: '09-15', title: '15 September 1940 · Battle of Britain Day', name: 'Battle of Britain Day', stamp: 'BATTLE OF BRITAIN · 15 SEPTEMBER 1940' },
+  { md: '12-07', title: '7 December 1941 · Pearl Harbor', name: 'Pearl Harbor', stamp: 'PEARL HARBOR · 7 DECEMBER 1941' },
+  { md: '12-16', title: '16 December 1944 · The Bulge', name: 'The Bulge', stamp: 'THE BULGE · 16 DECEMBER 1944' },
 ];
 
 // Daily envelopes out right now (posted within the last 24 hours), oldest first.
@@ -44,7 +44,7 @@ export const nextSlot = t => SLOT_TIMES.find(s => Date.parse(s) > t.getTime()) |
 function commemorativeFor(year, c) {
   const day = `${year}-${c.md}`;
   const opens = zonedTime(day, '10:00');
-  return { key: 'c:' + day, kind: 'commemorative', name: c.name, stamp: c.stamp,
+  return { key: 'c:' + day, kind: 'commemorative', name: c.name, title: c.title, stamp: c.stamp,
     at: isoSec(opens), closes: isoSec(new Date(opens.getTime() + COMMEMORATIVE_HOURS * HOUR)), deep: true };
 }
 

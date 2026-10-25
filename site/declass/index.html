@@ -30,7 +30,7 @@
 
 <section class="screen" id="sLanding">
   <div class="land">
-    <div class="landtop"><span class="landfrom">WW2 DISPATCHES PRESENTS</span><button class="howbtn" data-how>How to play</button></div>
+    <div class="landtop"><span class="landfrom">WW2 DISPATCHES PRESENTS</span><div class="hdr-col"><div class="sndbar"><button class="sndbtn" data-t="sfx" aria-label="Sound effects">🔊</button><button class="sndbtn" data-t="music" aria-label="Music">♪</button></div><button class="howbtn" data-how>How to play</button></div></div>
     <h1 class="landname">DECLASS</h1>
     <p class="landtag">a WW2 Dispatches game</p>
     <p class="landline">Every dispatch we post comes with a classified file. Open it, collect the cards, and build your dossier of the war.</p>
@@ -55,7 +55,7 @@
 <section class="screen" id="sHome">
   <header class="top">
     <div class="wordmark">DECLASS<small>a WW2 Dispatches game</small></div>
-    <div class="hdr-r"><button class="howbtn" data-how>How to play</button><div class="streak"><b id="streakN">0</b>day streak<br><span id="streakHint" style="font-size:10px"></span></div></div>
+    <div class="hdr-r"><div class="hdr-col"><div class="sndbar"><button class="sndbtn" data-t="sfx" aria-label="Sound effects">🔊</button><button class="sndbtn" data-t="music" aria-label="Music">♪</button></div><button class="howbtn" data-how>How to play</button></div><div class="streak"><b id="streakN">0</b>day streak<br><span id="streakHint" style="font-size:10px"></span></div></div>
   </header>
   <h1>Today's files</h1>
   <p class="sub">Today's files are ready to declassify. Three cards in every envelope.</p>
@@ -71,6 +71,7 @@
   <button class="allbtn" id="allBtn">All cards<span id="allSub"></span></button>
 
   <p class="foot">@ww2dispatches · <a href="https://ww2dispatches.com/">ww2dispatches.com</a> · <a href="/privacy">Privacy</a><br><span id="footWho"></span></p>
+  <p class="foot" id="footDelete" hidden><button id="deleteBtn">Delete my dossier</button></p>
 </section>
 
 <section class="screen" id="sPick">
@@ -96,8 +97,34 @@
   <div class="summary" id="summary" hidden>
     <h2 style="justify-content:center;border:0">All declassed</h2>
     <div class="recent" id="summaryRow"></div>
-    <button class="btn" id="doneBtn">Done</button>
+    <button class="btn alt" id="shareBtn">Share</button><button class="btn" id="doneBtn">Done</button>
   </div>
+</section>
+
+<section class="screen" id="sSets">
+  <button class="back" id="backSets">◀ Dossier</button>
+  <h1>Sets</h1>
+  <p class="sub">Monthly files earn a stamp. Collections earn pins at 25, 50, and 100 cards.</p>
+  <div class="sets2" id="sets"></div>
+</section>
+
+<section class="screen" id="sDelete">
+  <h1 style="margin-top:40px">Delete your dossier?</h1>
+  <p class="landline" style="margin:12px auto 22px;text-align:center">This removes every card, finish, serial, and your streak from our records for good. It can't be undone.</p>
+  <div style="text-align:center"><button class="btn danger" id="deleteYes">Delete everything</button><button class="btn alt" id="deleteNo">Keep my dossier</button></div>
+</section>
+
+<section class="screen" id="sDeleted">
+  <h1 style="margin-top:40px">Your dossier is deleted</h1>
+  <p class="landline" style="margin:12px auto 22px;text-align:center">We no longer keep anything about you. You can start fresh anytime with a new starter pack.</p>
+  <div style="text-align:center"><button class="btn" id="deletedOk">Back to Declass</button></div>
+</section>
+
+<section class="screen" id="sFile">
+  <button class="back" id="backFile">◀ Declass</button>
+  <h1 id="fileTitle">Checking the file…</h1>
+  <p class="sub" id="fileSub"></p>
+  <div class="viewer" id="fileCard"></div>
 </section>
 
 <section class="screen" id="sSection">
@@ -116,6 +143,7 @@
     <div class="nav"><button id="vPrev">◀ Prev</button><span class="count" id="viewPos" style="margin:0"></span><button id="vNext">Next ▶</button></div>
   </div>
   <div class="slots4" id="slots4"></div>
+  <button class="btn alt vshare" id="vShare">Share this card</button>
   <div class="ctext" id="ctext"></div>
   <div class="history" id="history"></div>
 </section>
@@ -147,9 +175,22 @@
   <ul><li>Open at least one envelope a day (Eastern time) to keep your streak going. Miss a day and it starts over.</li>
   <li>Every third day of your streak earns a priority envelope: three cards from anywhere in the archive, all the way back to the first dispatch. It never expires.</li></ul>
   <h3>Your dossier</h3>
-  <ul><li>Browse your cards by series, by year, or all at once. The four small squares under each card show which finishes you hold, and ▶ means a Living Card exists for it.</li>
+  <ul><li>Browse your cards by series, by year, or all at once. Sets collect a month's files for a stamp, and collections (a series, a year, a theater, a nation) for pins at 25, 50, and 100 cards.</li>
+  <li>The four small squares under each card show which finishes you hold, and ▶ means a Living Card exists for it.</li>
   <li>Tap any card to read its story, see its finishes, and every time you've pulled it.</li></ul>
+  <button class="btn alt" id="howTilt" hidden>Turn on tilt</button>
   <button class="btn" id="howGo">Got it</button>
+ </div>
+</div>
+<div class="shui" id="shui" hidden>
+ <div class="shpick">
+  <button class="back" id="shBack">◀ Back</button>
+  <h2 class="shh" id="shTitle">Pick what to share</h2>
+  <div class="shrow" id="shCards"></div>
+  <p class="shlbl" id="shLbl"></p>
+  <canvas id="shPv" width="1080" height="1350"></canvas>
+  <p class="shline" id="shLine"></p>
+  <button class="btn" id="shGo">Share</button>
  </div>
 </div>
 <div class="toast" id="toast" hidden></div>
