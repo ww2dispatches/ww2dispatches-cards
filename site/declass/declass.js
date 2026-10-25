@@ -829,20 +829,20 @@
     const g = c.createRadialGradient(W / 2, H * 0.48, W * 0.1, W / 2, H * 0.5, H * 0.75); g.addColorStop(0, 'rgba(176,74,62,.22)'); g.addColorStop(1, 'rgba(0,0,0,0)'); c.fillStyle = g; c.fillRect(0, 0, W, H);
     c.globalAlpha = 0.05; c.fillStyle = '#EDE4CF'; for (let y = 0; y < H; y += 6) c.fillRect(0, y, W, 1); c.globalAlpha = 1;
     // blue DECLASSED stamp, top left
-    c.save(); c.translate(56, 58); c.rotate(-4 * Math.PI / 180); c.strokeStyle = '#5b8fd6'; c.fillStyle = '#5b8fd6'; c.lineWidth = 4; c.font = '700 30px Oswald'; c.textAlign = 'left';
+    c.save(); c.translate(56, 46); c.rotate(-4 * Math.PI / 180); c.strokeStyle = '#5b8fd6'; c.fillStyle = '#5b8fd6'; c.lineWidth = 4; c.font = '700 30px Oswald'; c.textAlign = 'left';
     const tw = c.measureText('D E C L A S S E D').width; c.strokeRect(-14, -30, tw + 28, 41); c.fillText('D E C L A S S E D', 0, 0); c.restore();
     // the name, then the finish chip and the dispatch line (Option B)
     const best = items[0];
     c.textAlign = 'center'; c.fillStyle = '#EDE4CF';
     fitFont(c, best.info.short.toUpperCase(), 700, 68, 'Oswald', W - 120);
-    c.fillText(best.info.short.toUpperCase(), W / 2, 130);
-    shareChipRow(c, W, 168, best);
-    if (items.length > 1) { c.textAlign = 'center'; c.fillStyle = '#b9ad92'; const sub = 'with ' + listText(items.slice(1)); fitFont(c, sub, 400, 28, '"Special Elite"', W - 100); c.fillText(sub, W / 2, 226); }
+    c.fillText(best.info.short.toUpperCase(), W / 2, 110);
+    shareChipRow(c, W, 148, best);
+    if (items.length > 1) { c.textAlign = 'center'; c.fillStyle = '#b9ad92'; const sub = 'with ' + listText(items.slice(1)); fitFont(c, sub, 400, 28, '"Special Elite"', W - 100); c.fillText(sub, W / 2, 204); }
     // cards: cy is roughly the card's middle
     const draw = (x, k, cx, cy, w, rot) => { c.save(); c.translate(cx, cy); c.rotate(rot * Math.PI / 180); if (imgs[k]) framed(c, imgs[k], -w / 2, -w * 0.62, w, x.finish, x.serial); c.restore(); };
-    if (items.length === 1) draw(items[0], 0, W / 2, 210 + 830 * 0.62, 830, 0);
-    else if (items.length === 2) { const cw = 610; draw(items[1], 1, W / 2 + 205, 752, cw, 7); draw(items[0], 0, W / 2 - 205, 738, cw, -5); }
-    else { const cw = 560; draw(items[1], 1, W / 2 - 240, 778, cw, -9); draw(items[2], 2, W / 2 + 240, 778, cw, 9); draw(items[0], 0, W / 2, 735, cw, 0); }
+    if (items.length === 1) draw(items[0], 0, W / 2, 188 + 830 * 0.62, 830, 0);
+    else if (items.length === 2) { const cw = 610; draw(items[1], 1, W / 2 + 205, 730, cw, 7); draw(items[0], 0, W / 2 - 205, 716, cw, -5); }
+    else { const cw = 560; draw(items[1], 1, W / 2 - 240, 756, cw, -9); draw(items[2], 2, W / 2 + 240, 756, cw, 9); draw(items[0], 0, W / 2, 713, cw, 0); }
     // footer
     c.textAlign = 'center'; c.fillStyle = '#EDE4CF'; c.font = '700 46px Oswald'; c.fillText('DECLASS', W / 2, 1280);
     c.fillStyle = '#c9bd9f'; fitFont(c, 'a WW2 Dispatches game · ww2dispatches.com/declass', 400, 30, '"Special Elite"', W - 60);
