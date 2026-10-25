@@ -1,0 +1,5 @@
+# Make browsers check for a newer copy of the game files on every visit (Declass build).
+/declass/*
+  Cache-Control: no-cache
+/declass
+  Cache-Control: no-cache
