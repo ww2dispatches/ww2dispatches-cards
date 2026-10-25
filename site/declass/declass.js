@@ -146,7 +146,7 @@
     if (p && p.catch) p.catch(() => {
       if (root.querySelector('.play')) return;
       const b = document.createElement('button');
-      b.className = 'play'; b.type = 'button'; b.textContent = '▶'; b.setAttribute('aria-label', 'Play film');
+      b.className = 'play'; b.type = 'button'; b.textContent = '▶︎'; b.setAttribute('aria-label', 'Play film');
       b.onclick = e => { e.stopPropagation(); v.play().then(() => b.remove()).catch(() => {}); };
       v.parentNode.appendChild(b);
     });
@@ -283,7 +283,7 @@
     const info = BYID.get(id);
     if (!info) return '';
     const h = H.get(id), best = bestFinish(h);
-    const dots = `<div class="fd">${FIN.map(f => `<i class="f-${f}${h && (h.still[f] || h.living[f]) ? ' on' : ''}" title="${FNAME[f]}"></i>`).join('')}${info.hasFilm ? `<b class="${h && FIN.some(f => h.living[f]) ? 'on' : ''}" title="Living Card">▶</b>` : ''}</div>`;
+    const dots = `<div class="fd">${FIN.map(f => `<i class="f-${f}${h && (h.still[f] || h.living[f]) ? ' on' : ''}" title="${FNAME[f]}"></i>`).join('')}${info.hasFilm ? `<b class="${h && FIN.some(f => h.living[f]) ? 'on' : ''}" title="Living Card">▶︎</b>` : ''}</div>`;
     if (!best) return `<div class="mini sealed"><span class="thumb">?</span><span class="no">${esc(label(info))}</span><span class="nm">${esc(info.short)}</span>${dots}</div>`;
     return `<button class="mini" data-id="${esc(id)}"><img class="thumb f-${best}" loading="lazy" src="${esc(info.img)}" alt="${esc(info.short)}"><span class="no">${esc(label(info))}</span><span class="nm">${esc(info.short)}</span>${dots}</button>`;
   }
@@ -315,7 +315,7 @@
     }
     $('sectionTitle').textContent = title;
     const h = list.filter(c => H.has(c.id)).length;
-    $('sectionSub').textContent = `${h} of ${list.length} cards · Swatches show the finishes you hold, ▶ a Living Card`;
+    $('sectionSub').textContent = `${h} of ${list.length} cards · Swatches show the finishes you hold, ▶︎ a Living Card`;
     $('sectionGrid').innerHTML = list.length ? list.map(c => miniHTML(c.id, H)).join('') : '<p class="sub" style="grid-column:1/-1">Nothing here yet.</p>';
     wireMinis($('sectionGrid'), list.map(c => c.id));
     viewFrom = 'sSection';
@@ -592,7 +592,7 @@
     $('slots4').innerHTML = row('still', 'Still') + (info.hasFilm ? row('living', 'Living Card') : '');
     $('slots4').querySelectorAll('button.s4').forEach(b => { b.onclick = () => { viewSel = { variant: b.dataset.v, finish: b.dataset.f }; renderView(); }; });
     const mine = pl.filter(p => p.card === id).slice().sort((a, b) => (b.at || '').localeCompare(a.at || ''));
-    $('history').innerHTML = `<h3>Pulled ${mine.length} time${mine.length === 1 ? '' : 's'}</h3><ul>${mine.map(p => `<li><span>${p.at ? esc(localDate(p.at)) + ' · ' : ''}${esc(slotName(p.slot) || 'Starter pack')}${p.variant === 'living' ? ' · ▶ living' : ''}</span><span class="fin f-${p.finish}">${FNAME[p.finish]}${p.serial ? ' · Serial ' + ser4(p.serial) : ''}</span></li>`).join('')}</ul>`;
+    $('history').innerHTML = `<h3>Pulled ${mine.length} time${mine.length === 1 ? '' : 's'}</h3><ul>${mine.map(p => `<li><span>${p.at ? esc(localDate(p.at)) + ' · ' : ''}${esc(slotName(p.slot) || 'Starter pack')}${p.variant === 'living' ? ' · ▶︎ living' : ''}</span><span class="fin f-${p.finish}">${FNAME[p.finish]}${p.serial ? ' · Serial ' + ser4(p.serial) : ''}</span></li>`).join('')}</ul>`;
     renderText(info, h);
   }
   function renderText(info, h) {

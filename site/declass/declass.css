@@ -401,3 +401,5 @@ button:focus-visible,.env:focus-visible{outline:3px solid var(--brass);outline-o
 .fmlead{margin:0 0 4px}
 .fmodds tr.tot td{font-family:var(--display);font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--mute);border-bottom:none;padding-top:7px}
 .fmlead{margin:0 0 4px}
+/* iPhones draw ◀ and ▶ as blue emoji keys; the text selector in the markup plus this keeps them plain (25 Oct 2026) */
+body{font-variant-emoji:text}
