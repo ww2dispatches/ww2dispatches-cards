@@ -992,18 +992,16 @@
       }
       return { ym, name: monthName(ym), all: all.length, held, closed, stamp };
     });
-    const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
-    const distinct = key => [...new Set(CAT.flatMap(c => c[key] || []))].sort();
     const groups = [
       ['Series', SERIES.map(([k, name, col]) => [name, col, c => c.series === k])],
       ['Years', ERAS.map(([k, name]) => [name || k, '#1A1612', c => c.kind === 'dispatch' && c.era === k])],
-      ['Theaters', distinct('theater').map(t => [cap(t), '#3D5884', c => (c.theater || []).includes(t)])],
+      // Fixed lists, always shown (25 Oct 2026): nothing pops in or out; empty ones are greyed.
+      ['Theaters', [['Western Europe', 'Western Europe'], ['Mediterranean and North Africa', 'Mediterranean and North Africa'], ['Atlantic', 'Atlantic'], ['Pacific', 'Pacific'], ['Home Front', 'home front'], ['Worldwide', 'worldwide']].map(([n, t]) => [n, '#3D5884', c => (c.theater || []).includes(t)])],
       ['Nations', ['US', 'Britain', 'Soviet Union', 'Germany', 'Japan'].map(n => [n, '#6b3d2e', c => (c.nations || []).includes(n)])],
-      ['Subjects', distinct('subjects').map(t => [cap(t), '#5E6B3A', c => (c.subjects || []).includes(t)])],
     ].map(([g, list]) => [g, list.map(([name, col, fn]) => {
       const all = CAT.filter(fn), held = all.filter(c => H.has(c.id)).length;
       return { name, col, all: all.length, held, pins: PINS.filter(([k]) => held >= k), next: PINS.find(([k]) => held < k) };
-    }).filter(x => x.all >= 5)]).filter(([, list]) => list.length);
+    })]);
     return { months, groups };
   }
   function renderSets() {
@@ -1020,11 +1018,12 @@
     groups.forEach(([g, list]) => {
       h += `<h2>${esc(g)}</h2>`;
       list.forEach(x => {
+        if (!x.all) { h += `<div class="srow none" style="--c:${x.col}"><div class="nm"><b>${esc(x.name)}</b><small>None posted yet</small><i></i></div></div>`; return; }
         const full = x.held === x.all;
         h += `<div class="srow" style="--c:${x.col}"><div class="nm"><b>${esc(x.name)}</b><small class="${full ? 'cc' : ''}">${full ? 'Currently complete · ' + x.held + ' cards' : x.held + ' of ' + x.all + ' Declassed'}${x.next ? (x.pins.length ? ' · Next pin at ' : ' · First pin at ') + x.next[0] : ''}</small><i><em style="width:${x.held / x.all * 100}%"></em></i></div><div class="spins">${x.pins.map(([k, m]) => `<div class="spin">${pinSVG(k, m)}</div>`).join('')}</div></div>`;
       });
     });
-    h += '<p class="snote">A month\'s stamp is permanent once the month closes with every card held, even if you catch up later. Collections appear once they have five cards, and say "Currently complete" until the next card posts. Pins count different cards, never duplicates.</p>';
+    h += '<p class="snote">A month\'s stamp is permanent once the month closes with every card held, even if you catch up later. Every collection is always listed, greyed until its first card posts, and says "Currently complete" until the next card posts. Pins count different cards, never duplicates.</p>';
     $('sets').innerHTML = h;
     show('sSets');
   }
