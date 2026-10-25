@@ -32,7 +32,7 @@ from zoneinfo import ZoneInfo
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MOUNTAIN = ZoneInfo("America/Denver")
-SERIES = {"battle": "Battle Lines", "home": "Home Front", "blue": "Blueprint", "state": "Statecraft"}
+SERIES = {"battle": "Battle Lines", "home": "Home Front", "blue": "Blueprint", "state": "Statecraft", "flash": "Flash"}
 FORMATS = {None: "Story", "photo": "Photo of the Day", "quote": "Quote of the Day", "spec": "Spec Sheet"}
 PLATFORM = {"twitter": "X", "instagram": "Instagram", "threads": "Threads", "facebook": "Facebook",
             "youtube": "YouTube", "tiktok": "TikTok"}

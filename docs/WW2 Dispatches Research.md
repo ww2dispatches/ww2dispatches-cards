@@ -27,6 +27,20 @@ The 8 a.m. event is always the noon video's event. The noon video never switches
 * Check the Roadmap's "Upcoming big dates" for anniversaries in the batch week; those get the strongest treatment and the hardest film hunt (the iconic shot rule, Videos doc).
 * Verify every fact per the Brief's writing rules. Never guess.
 * Mark somber subjects `"somber": true` so Friday never adds an engagement question, a Ko-fi soft ask, or a newsletter mention to them.
+* **Flash days** have their own rules (next section); on those days the 8 a.m. slot is already decided.
+
+## Flash days
+A **Flash card** is the rare fifth card type, for the war's biggest days (Roadmap, "Flash cards plan"). It has `"series": "flash"` and `"flash": true`, and it is a full art card made from prepared art rather than a photo hunt. The ten Flash dates are the Declass commemorative days: 19 Feb (Iwo Jima), 8 May (VE Day), 4 Jun (Midway), 6 Jun (D Day), 15 Aug (VJ Day), 1 Sep (the invasion of Poland), 2 Sep (the formal surrender), 15 Sep (Battle of Britain Day), 7 Dec (Pearl Harbor), 16 Dec (the Bulge). The first is **Mon 7 Dec 2026, Pearl Harbor** (the 85th anniversary).
+
+When a Flash date falls in the batch week:
+* **The 8 a.m. slot is the Flash card, always.** The event is the one on the list; the "never repeat" rule does not apply to it (each Flash date gets a new card every year, with a fresh angle and new art). No alternates are needed for that slot.
+* **Start from the prepared record in `flash/`** (`flash/README.md`): copy `flash/YYYY-MM-DD-<event>.json` into `dispatches/<id>.json`, keep every field it carries (id, date, series, flash, title, short, place, pull, photo, photoUrl, photoNote, photoCredit, framing, somber) exactly as prepared, and add the fields research always writes: `num`, `facts`, `sources`, `themes`, `film`, `kind`, `videoPhotos`. The `photo` path points into `flash/`; that is the finished full art, already colorized and approved by Brian, so **do not download or swap the lead photo**. If no prepared record exists for the date, file a Schedule Board task and push reminder for Brian at once, and research the day as a normal 8 a.m. dispatch in the event's usual series, saying so in the summary.
+* **The fact sheet, sources, and themes are researched as for any dispatch.** Verify every fact. The facts are what Friday writes the caption from.
+* **Film is hunted as hard as for any big date** (the iconic shot rule, Videos doc): the noon video that day is the event's Living Card when usable film exists (Navy film of Pearl Harbor is in NARA's 428-NPC series), otherwise a Story Card. The video keeps the normal card frame with a FLASH stamp (Videos doc).
+* **Numbers:** the Flash card takes its slot's number like any other card.
+* **The 5 p.m. card that day** is picked and verified as usual, in a normal series. A Spec Sheet or Quote tied to the same event fits well.
+* **Somber:** the prepared record carries `somber` where it applies (Pearl Harbor does); Friday skips the growth rules on it.
+* **Never change the art.** The flash/ art is the card. Framing (focusX, focusY, zoom) is set in the prepared record and Friday keeps it.
 
 ## Securing the film
 Finding film is not enough; a film that can't be fetched on Thursday night is a Story Card by default. So the research run gets the film into the repos.
@@ -53,7 +67,7 @@ Every dispatch JSON gets a `facts` block: six to twelve verified facts in plain 
 * A noon video shares the number of the 8 a.m. dispatch it covers. Name This and the welcome post never take a number.
 
 ## What research writes in each dispatch JSON
-Research owns: the file name and `id`, `num`, `date`, `time`, `series`, `title`, `short`, `place`, `pull`, `format` and its `quote`/`quoteBy` or `specTitle`/`specs` on evening cards, `facts`, `sources`, `photo` (the file in `photos/`) with `photoUrl`, `photoNote`, and `photoCredit`, `videoPhotos`, `film`, `somber`, `kind` (the planned noon video kind, `living` or `story`), and the `themes` block (who, story, photo, theater, branch, nations) using only the values in `analytics/themes.md`.
+Research owns: the file name and `id`, `num`, `date`, `time`, `series` (one of the four, or `flash` on a Flash day with `flash: true`), `title`, `short`, `place`, `pull`, `format` and its `quote`/`quoteBy` or `specTitle`/`specs` on evening cards, `facts`, `sources`, `photo` (the file in `photos/`) with `photoUrl`, `photoNote`, and `photoCredit`, `videoPhotos`, `film`, `somber`, `kind` (the planned noon video kind, `living` or `story`), and the `themes` block (who, story, photo, theater, branch, nations) using only the values in `analytics/themes.md`.
 
 Two of those are kept for the Declass game (Envelope doc) under the Brief's "Record now, use later" rule, and cost nothing extra once the research is done:
 * **`short`:** a one to three word name for the card's subject, the way people would say it ("Aachen", "Leyte", "Taffy 3", "USS Reuben James"). It is the headline on Declass share pictures and the card's dossier label, so it names the subject only, never the card type: an evening card about the same event keeps the same name (the Kearny story and its Spec Sheet are both "USS Kearny"), because the game shows the format (Spec Sheet, Photo of the Day, Quote of the Day) on its own line. Ships take their prefix ("USS Hornet").
@@ -89,3 +103,4 @@ File Schedule Board tasks and push reminders per the Brief's "Shared run procedu
 * 24 Oct 2026: Doc created. Research moved out of the Thursday cards run into its own Wednesday run, picking for film first, locking the numbers, writing one fact sheet per dispatch, and securing film and photos before the build runs. The week's order became Tuesday analytics, Wednesday research, Thursday videos, Friday cards.
 * 24 Oct 2026 (evening): Research also writes `short` and `photoCredit` on every dispatch, for the Declass game (Envelope doc). Every existing dispatch and bank record was filled in once.
 * 24 Oct 2026 (night): `short` now names the subject only, never the card type, since the Declass share picture shows the format on its own line. Twelve existing short names were cleaned up (for example "Kearny Hull" became "USS Kearny", "V-2 Photo" became "Earth from Space").
+* 25 Oct 2026: Flash days added. On the ten Flash dates (the Declass commemorative days, first Pearl Harbor on 7 Dec 2026) the 8 a.m. slot is the Flash card, built from the prepared art and record in `flash/`; the never repeat rule does not apply to it, and research adds the number, facts, sources, themes, and film as usual.

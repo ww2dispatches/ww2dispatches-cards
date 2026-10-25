@@ -17,7 +17,7 @@ from zoneinfo import ZoneInfo
 
 LAUNCH_YEAR = 2026
 POST_TZ = ZoneInfo("America/Denver")  # Buffer posting times are Mountain
-SERIES = {"battle": "Battle Lines", "home": "Home Front", "blue": "Blueprint", "state": "Statecraft"}
+SERIES = {"battle": "Battle Lines", "home": "Home Front", "blue": "Blueprint", "state": "Statecraft", "flash": "Flash"}
 CARDS_CDN = "https://cdn.jsdelivr.net/gh/ww2dispatches/ww2dispatches-cards@main/"
 VIDEOS_CDN = "https://cdn.jsdelivr.net/gh/ww2dispatches/ww2dispatches-videos@main/videos/"
 CARD_LINKS = {"x": "x", "instagram": "instagram", "threads": "threads", "facebook": "facebook"}
@@ -126,6 +126,9 @@ for d in dispatches:
         "num": d["num"],
         "series": d["series"],
         "seriesName": SERIES.get(d["series"], d["series"]),
+        # Flash cards (Roadmap, Flash cards plan): always Top Secret in the game, no serial, guaranteed
+        # in that day's commemorative file, 1 in 200 as an archive pull.
+        "flash": d["series"] == "flash",
         "short": d.get("short") or d.get("title", ""),
         "title": d.get("title", ""),
         "date": d["date"],

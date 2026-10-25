@@ -20,7 +20,7 @@ import base64, datetime, glob, hashlib, json, os, urllib.request
 
 LAUNCH_YEAR = 2026
 KEEP_DAYS = 7  # keep a week of past slides so "yesterday" always works
-SERIES = {"battle": "Battle Lines", "home": "Home Front", "blue": "Blueprint", "state": "Statecraft"}
+SERIES = {"battle": "Battle Lines", "home": "Home Front", "blue": "Blueprint", "state": "Statecraft", "flash": "Flash"}
 FORMATS = {"photo": "Photo of the Day", "quote": "Quote of the Day", "spec": "Spec Sheet"}
 # Images are served through jsDelivr, a free CDN that mirrors public GitHub repos (no account,
 # just a URL pattern). raw.githubusercontent.com stalled on 23 Oct 2026 and left the cards blank,

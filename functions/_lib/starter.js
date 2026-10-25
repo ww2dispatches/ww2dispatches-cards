@@ -14,7 +14,7 @@ const SERIES = ['battle', 'home', 'blue', 'state'];
 const TOKEN_DAYS = 30;
 
 export function drawStarter(t, rnd = secureInt) {
-  const dispatches = postedCards(t).filter(c => c.kind === 'dispatch');
+  const dispatches = postedCards(t).filter(c => c.kind === 'dispatch' && !c.flash); // Flash cards come only from their file or the 1 in 200 roll
   if (!dispatches.length) return [];
   const today = dispatches[dispatches.length - 1]; // the newest posted dispatch
   const cards = [today];

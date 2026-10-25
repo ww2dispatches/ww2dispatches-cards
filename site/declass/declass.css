@@ -183,6 +183,17 @@ button:focus-visible,.env:focus-visible{outline:3px solid var(--brass);outline-o
 .cf .corner{position:absolute;width:7%;aspect-ratio:1;border:2px solid rgba(70,45,5,.7);display:none}
 .cf .c1{left:1.6%;top:1.3%;border-right:0;border-bottom:0}.cf .c2{right:1.6%;top:1.3%;border-left:0;border-bottom:0}.cf .c3{left:1.6%;bottom:1.3%;border-right:0;border-top:0}.cf .c4{right:1.6%;bottom:1.3%;border-left:0;border-top:0}
 .cf .serial{position:absolute;left:0;right:0;bottom:0;height:6cqw;display:none;align-items:center;justify-content:center;font-family:var(--type);font-size:2.9cqw;color:#8e2a20;white-space:nowrap;text-shadow:0 1px 0 rgba(255,255,255,.6)}
+/* Flash card: full art, borderless (take A, 25 Oct 2026). Rounded corners, a drop shadow, and a soft
+   holographic shine that drifts with the light; no frame, rim, badge, or serial. */
+.cf.flash .frame{padding:0;background:none;border-radius:3.4%/2.7%;box-shadow:0 10px 26px rgba(26,22,18,.38),0 2px 6px rgba(26,22,18,.25)}
+.cf.flash .card{border-radius:3.4%/2.7%;background:#111}
+.cf.flash .holo,.cf.flash .glare{position:absolute;inset:0;pointer-events:none;z-index:2;border-radius:inherit}
+.cf.flash .holo{background:linear-gradient(var(--ang2,45deg),hsl(0 100% 70%),hsl(50 100% 70%),hsl(140 100% 70%),hsl(200 100% 70%),hsl(280 100% 72%),hsl(340 100% 70%),hsl(0 100% 70%));background-size:300% 300%;background-position:var(--pos,50% 50%);mix-blend-mode:soft-light;opacity:.5;-webkit-mask-image:radial-gradient(ellipse at var(--pos,50% 50%),#000 0,rgba(0,0,0,.25) 40%,transparent 70%);mask-image:radial-gradient(ellipse at var(--pos,50% 50%),#000 0,rgba(0,0,0,.25) 40%,transparent 70%)}
+.cf.flash .glare{background:radial-gradient(circle at var(--pos,50% 50%),rgba(255,255,255,.5),rgba(255,255,255,.12) 25%,transparent 55%);mix-blend-mode:overlay;opacity:.8}
+.mini .thumb.flash{border:0;border-radius:6px;box-shadow:0 3px 8px rgba(26,22,18,.35)}
+.fd i.flash{border-radius:50%}
+.fd i.flash.on{background:linear-gradient(135deg,#d9a0a8,#e6d39a,#9fd9b8,#9dbbe3,#c9a2e0);border-color:transparent}
+.s4.flashnote{font-family:var(--type);font-size:10px;cursor:default}
 .cf.f-copper .frame{padding:1.4%;background:#9C5B2E}
 .cf.f-silver .frame{padding:3%;background:linear-gradient(135deg,#7f858e,#cfd4da 35%,#9ea4ad 50%,#dde1e6 65%,#7f858e);box-shadow:inset 0 0 0 1px rgba(255,255,255,.55),0 10px 24px rgba(26,22,18,.22)}
 .cf.f-silver .frame::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(255,255,255,.08) 0 1px,transparent 1px 3px);pointer-events:none}

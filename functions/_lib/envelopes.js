@@ -4,8 +4,8 @@
 //   d:<UTC post time>   a daily envelope, one per dispatch post time, open for 24 hours
 //   c:<YYYY-MM-DD>      a commemorative file, opening 10 a.m. Eastern on the anniversary for 3 days
 //   p:<random>          a priority envelope (streak reward), drawn when opened
-import { SLOT_TIMES, slotCards, archivePool, deepPool, filmReleased } from './catalog.js';
-import { rollFinish, rollLiving, secureInt } from './odds.js';
+import { SLOT_TIMES, slotCards, archivePool, deepPool, flashPool, flashForFile, filmReleased } from './catalog.js';
+import { rollFinish, rollLiving, rollFlash, secureInt } from './odds.js';
 import { isSundayMorning, zonedTime, gameDay, isoSec } from './time.js';
 
 const HOUR = 3600000;
@@ -52,9 +52,12 @@ export function upcomingSlots(t) {
 function commemorativeFor(year, c) {
   const day = `${year}-${c.md}`;
   const opens = zonedTime(day, '10:00');
-  return { key: 'c:' + day, kind: 'commemorative', name: c.name, title: c.title, stamp: c.stamp,
+  return { key: 'c:' + day, day, kind: 'commemorative', name: c.name, title: c.title, stamp: c.stamp,
     at: isoSec(opens), closes: isoSec(new Date(opens.getTime() + COMMEMORATIVE_HOURS * HOUR)), deep: true };
 }
+
+// A Flash card is always Top Secret, with no worldwide serial (Roadmap, Flash cards plan).
+const flashPick = card => ({ card, variant: 'still', finish: 'topsecret' });
 
 // Commemorative files open right now (two can overlap, Midway and D Day).
 export function commemorativeOpen(t) {
@@ -77,9 +80,14 @@ export function resolveEnvelope(slot, t, player) {
   return null;
 }
 
-// One archive slot: roll living first, then pick a card, then roll the finish.
+// One archive slot: roll Flash first (1 in 200, from the Flash cards already posted), then living,
+// then pick a card and roll the finish.
 function archivePick(pool, t, rnd) {
   if (!pool.length) return null;
+  if (rollFlash(rnd)) {
+    const flashes = flashPool(t);
+    if (flashes.length) return flashPick(flashes[rnd(flashes.length)]);
+  }
   if (rollLiving(rnd)) {
     const films = pool.filter(c => filmReleased(c, t));
     if (films.length) {
@@ -91,19 +99,26 @@ function archivePick(pool, t, rnd) {
   return { card, variant: 'still', finish: rollFinish('still', rnd) };
 }
 
-// The three cards in an envelope. Daily: that slot's dispatch (always the still card), then
-// archive pulls from the last 90 days, or the whole history on Sunday mornings. Priority and
-// commemorative: three cards from the whole history.
+// The cards in an envelope. Daily: that slot's dispatch (always the still card; a Flash dispatch
+// comes Top Secret), then archive pulls from the last 90 days, or the whole history on Sunday
+// mornings. Priority: three cards from the whole history. Commemorative: the day's Flash card
+// (or cards, on 1 and 2 September) plus three cards from the whole history.
 export function drawCards(env, t, rnd = secureInt) {
   const picks = [];
+  let want = CARDS_PER_ENVELOPE;
   if (env.kind === 'daily') {
     for (const card of slotCards(env.at).slice(0, CARDS_PER_ENVELOPE)) {
-      picks.push({ card, variant: 'still', finish: rollFinish('still', rnd) });
+      picks.push(card.flash ? flashPick(card) : { card, variant: 'still', finish: rollFinish('still', rnd) });
     }
+  }
+  if (env.kind === 'commemorative') {
+    const flashes = flashForFile(env.day, t);
+    flashes.forEach(card => picks.push(flashPick(card)));
+    want = flashes.length + CARDS_PER_ENVELOPE;
   }
   let pool = env.deep ? deepPool(t) : archivePool(t);
   if (!pool.length) pool = deepPool(t);
-  while (picks.length < CARDS_PER_ENVELOPE) {
+  while (picks.length < want) {
     const p = archivePick(pool, t, rnd);
     if (!p) break;
     picks.push(p);

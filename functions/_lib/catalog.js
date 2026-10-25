@@ -43,18 +43,35 @@ export const SLOT_TIMES = [...new Set(CARDS.filter(c => c.kind === 'dispatch').m
 
 // Archive pools for envelopes. Weekday archive pulls: dispatches posted in the last 90 days.
 // Deep archive (Sunday morning, priority, commemorative): everything posted, Name This included.
+// Flash cards never sit in the ordinary pools: they come only from their commemorative file and
+// from the separate 1 in 200 Flash roll on every archive slot (Roadmap, Flash cards plan).
 export function archivePool(t, days = 90) {
   const since = iso(new Date(t.getTime() - days * DAY_MS));
-  return CARDS.filter(c => c.kind === 'dispatch' && released(c, t) && c.postAt >= since);
+  return CARDS.filter(c => c.kind === 'dispatch' && !c.flash && released(c, t) && c.postAt >= since);
 }
-export const deepPool = t => postedCards(t);
+export const deepPool = t => postedCards(t).filter(c => !c.flash);
+export const flashPool = t => CARDS.filter(c => c.flash && released(c, t));
+
+// The Flash cards a commemorative file hands out: this year's Flash card for the file's date (and the
+// next day's too, so the 1 and 2 September file carries both), posted and released by the moment it is
+// opened. Each date gets a new Flash card every year, so the newest posted one for each event date wins.
+export function flashForFile(fileDay, t) {
+  const md = fileDay.slice(5), next = nextDay(fileDay).slice(5);
+  const out = new Map();
+  for (const c of flashPool(t).sort((a, b) => a.postAt.localeCompare(b.postAt))) {
+    const emd = c.date.slice(5);
+    if (emd === md || emd === next) out.set(emd, c);
+  }
+  return [...out.values()];
+}
+function nextDay(day) { const d = new Date(day + 'T12:00:00Z'); d.setUTCDate(d.getUTCDate() + 1); return d.toISOString().slice(0, 10); }
 
 // What the dossier grid needs for each card.
 export function summary(card, t) {
   const s = {
     kind: card.kind, id: card.id, num: card.num, series: card.series, seriesName: card.seriesName,
     short: card.short, title: card.title, date: card.date, place: card.place, era: card.era,
-    format: card.format, postAt: card.postAt, img: card.img, hasFilm: filmReleased(card, t),
+    format: card.format, postAt: card.postAt, img: card.img, hasFilm: filmReleased(card, t), flash: Boolean(card.flash),
     subjects: card.subjects, theater: card.theater, nations: card.nations, who: card.who, story: card.story, branch: card.branch,
   };
   if (s.hasFilm) Object.assign(s, { filmMp4: card.film.mp4, filmPoster: card.film.poster, filmSound: card.film.sound });

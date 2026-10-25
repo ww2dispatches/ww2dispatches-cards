@@ -1,6 +1,8 @@
 // The odds (Envelope doc, starting values 23 Oct 2026). Rolled independently: whether an archive
 // slot is living, then the finish from the matching table. Out of 10,000 so 0.25% is exact.
 export const LIVING_ONE_IN = 6;
+// A Flash card as an archive pull, for anyone who missed its commemorative file (Roadmap, Flash cards plan).
+export const FLASH_ONE_IN = 200;
 export const FINISHES = {
   //            Top Secret, Gold, Silver (cumulative edges); the rest is Copper
   still:  { topsecret: 25,  gold: 525,  silver: 2500 },  // 0.25, 5, 19.75, 75
@@ -26,3 +28,4 @@ export function rollFinish(variant, rnd = secureInt) {
 }
 
 export const rollLiving = (rnd = secureInt) => rnd(LIVING_ONE_IN) === 0;
+export const rollFlash = (rnd = secureInt) => rnd(FLASH_ONE_IN) === 0;

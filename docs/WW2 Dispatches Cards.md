@@ -28,6 +28,15 @@ Style: **photo with Field Telegram band**. The archival photo is the hero; cream
 * **Sizes:** X image 1600 x 1440; Instagram image 1080 x 1350 (4:5 portrait), also used for Threads and Facebook.
 * First mockup: Leyte landing, October 20, 1944 (MacArthur at Red Beach, NARA 531424).
 
+## The Flash card (decided 25 Oct 2026)
+The rare fifth card type, for the war's biggest days (Roadmap, "Flash cards plan"; the research rules are in the Research doc, "Flash days"). A Flash dispatch has `"series": "flash"` and `"flash": true`, and its `photo` points at prepared, approved full art in `flash/`. The Friday run treats it like any 8 a.m. dispatch except for the points below.
+* **Full art, not the Field Telegram bands.** `renderer/card.html` draws it edge to edge (`drawFlash`): the art fills the whole card, with a dark fade at the top carrying the wordmark and "Dispatch No. NNN · Flash" on the left and a cream FLASH tape stamp on the right, and a dark fade at the bottom carrying the big date, the place line, the pull line in gold at right, and the handle. No paper, no grain, no series stamp. The X image keeps X's ALT badge corner clear by lifting the bottom block. The same renderer command makes both sizes: `node renderer/render.js <id>`.
+* **Never change the art or the framing.** The art is already colorized and approved by Brian; the prepared record sets focusX, focusY, and zoom. Look at both rendered images as usual.
+* **Caption:** the normal long story caption from the `facts` block, hook first. Pearl Harbor is somber, so no engagement question, soft ask, or newsletter mention. Instagram may add the event hashtag after `#OnThisDay #WW2` (for example `#PearlHarbor`); X and Facebook swap #OnThisDay for it (`#OTD #WW2 #PearlHarbor`), per the anniversary rule below.
+* **Alt text** begins "WW2 Dispatches card, Dispatch No. NNN, Flash." The photo credit line in the caption or alt text says the photo is colorized, as the record's `photoCredit` does.
+* **Carousel:** a Flash day is a natural carousel day on Instagram, with the real black and white archival photos of the event as the extra slides (never a second colorized image).
+* **The Declass game** gives the Flash card out as always Top Secret, with no serial, in that day's commemorative file (Envelope doc). Nothing extra for this run to do; the catalog rebuild carries the `flash` field.
+
 ## Dispatch numbers (one serial)
 * The dispatch number counts up by one with every card, 8 a.m. and 5 p.m. alike, in the order they post (date, then time). It counts cards, not events.
 * **Numbers are assigned and locked by the Wednesday research run** (Research doc). The cards run never renumbers; by Friday the numbers are already rendered into the week's videos.
@@ -93,3 +102,4 @@ A few verified, evergreen dispatches (inventions, home front stories), aim for 5
 * 23 Oct 2026: Step 7 added: the run uploads review copies of the cards and slides to the Schedule Board, so Brian reviews the pictures there instead of in Buffer.
 * 24 Oct 2026 (evening): For the Declass game (Envelope doc), `body` now holds the story only; add on lines live in `addons` and the hashtag line in `hashtags`, joined only when the Buffer caption is built, so nothing posted changes. Caption fixes go to the JSON first, then the Buffer post. Every existing record was split once (the extras were always at the end); launch week records that never carried a hashtag line in `body` got the standard "#OnThisDay #WW2".
 * 24 Oct 2026: The cards run moved to Friday and now builds from the Wednesday research run's slate. Picking the events, the series mix, the never repeat rule, the photo hunt, the `videoPhotos` handoff, the theme tagging, and the dispatch numbers moved to the new Research doc; numbers are locked on Wednesday and never renumbered here. Every caption is written only from the dispatch's `facts` block. Research marks somber dispatches; the growth rules skip them.
+* 25 Oct 2026: The Flash card added: full art from prepared, approved art in `flash/`, rendered by `drawFlash` in the renderer, with the normal caption rules; first one is Pearl Harbor, 7 Dec 2026.

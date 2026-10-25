@@ -38,7 +38,7 @@ export async function onRequestPost({ request, env }) {
 
   // Test copies only: force a finish to check serials without waiting for luck.
   const forced = env.ALLOW_FAKE_NOW === '1' && request.headers.get('x-declass-force-finish');
-  if (forced && FINISHES.has(forced)) picks.forEach(p => { p.finish = forced; });
+  if (forced && FINISHES.has(forced)) picks.forEach(p => { if (!p.card.flash) p.finish = forced; });
 
   const pid = player.id, key = envl.key, at = t.toISOString();
   const mine = 'EXISTS (SELECT 1 FROM opened WHERE player_id = ?1 AND slot_key = ?2)';
@@ -53,10 +53,11 @@ export async function onRequestPost({ request, env }) {
 
   const pullIdx = [];
   for (const p of picks) {
-    if (p.finish === 'topsecret') {
+    const serialled = p.finish === 'topsecret' && !p.card.flash; // Flash cards carry no worldwide serial
+    if (serialled) {
       stmts.push(db.prepare(`INSERT INTO serials (card_id, variant, last) SELECT ?3, ?4, 1 WHERE ${mine} ON CONFLICT (card_id, variant) DO UPDATE SET last = last + 1`).bind(pid, key, p.card.id, p.variant));
     }
-    const serial = p.finish === 'topsecret' ? '(SELECT last FROM serials WHERE card_id = ?3 AND variant = ?4)' : 'NULL';
+    const serial = serialled ? '(SELECT last FROM serials WHERE card_id = ?3 AND variant = ?4)' : 'NULL';
     pullIdx.push(stmts.length);
     stmts.push(db.prepare(
       `INSERT INTO pulls (player_id, card_id, variant, finish, serial, slot_key, pulled_at, signature, turned)

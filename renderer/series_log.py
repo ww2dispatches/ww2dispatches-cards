@@ -18,7 +18,7 @@ import csv, glob, json, os
 from collections import Counter
 
 LAUNCH_YEAR = 2026
-SERIES = {"battle": "Battle Lines", "home": "Home Front", "blue": "Blueprint", "state": "Statecraft"}
+SERIES = {"battle": "Battle Lines", "home": "Home Front", "blue": "Blueprint", "state": "Statecraft", "flash": "Flash"}
 FORMATS = {None: "Story", "photo": "Photo of the Day", "quote": "Quote of the Day", "spec": "Spec Sheet"}
 
 root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

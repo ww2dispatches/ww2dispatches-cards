@@ -129,6 +129,9 @@
     const media = living
       ? `<video class="film" src="${esc(info.filmMp4)}" poster="${esc(info.filmPoster || info.img)}" muted loop playsinline preload="auto"${opts.autoplay ? ' autoplay' : ''}></video><button class="spk" type="button" aria-label="Film sound">🔈</button>`
       : `<img src="${esc(src)}" alt="${esc(info.short)}${info.kind === 'namethis' ? '' : ', ' + esc(info.title)}" draggable="false">`;
+    // A Flash card (Roadmap, Flash cards plan) is full art and always Top Secret: no frame, no rim, no badge,
+    // no serial. The holographic shine drifts over the art itself (decided 25 Oct 2026, take A).
+    if (info.flash) return `<div class="cf flash"><div class="frame"><div class="card">${media}<span class="holo"></span><span class="glare"></span></div></div></div>`;
     return `<div class="cf f-${finish}"><div class="frame"><div class="card">${media}<span class="sheen"></span><span class="badge">Top Secret</span>${info.kind === 'namethis' ? '<span class="ansst">ANSWER</span>' : ''}</div><span class="corner c1"></span><span class="corner c2"></span><span class="corner c3"></span><span class="corner c4"></span><span class="serial">${serial ? 'Worldwide serial ' + ser4(serial) : ''}</span></div></div>`;
   }
   // Start a Living Card's film (muted). If the phone blocks it, show a play button.
@@ -268,6 +271,7 @@
     $('seriesTiles').insertAdjacentHTML('beforeend', `<button class="tile flash" id="tileFlash" ${fAll.length ? '' : 'disabled'}><i></i><b>Flash</b><span>${fAll.length ? fH + ' of ' + fAll.length : 'None posted yet'}</span><div class="bar"><i style="width:${fAll.length ? fH / fAll.length * 100 : 0}%"></i></div></button>`);
     $('seriesTiles').insertAdjacentHTML('beforeend', '<button class="tile wide" id="tileSets" style="border-color:var(--navy)"><b>Sets</b><span>Monthly files and collections</span></button>');
     $('tileSets').onclick = renderSets;
+    $('tileFlash').onclick = () => section('series', 'flash');
     $('seriesTiles').querySelectorAll('[data-series]').forEach(b => { b.onclick = () => section('series', b.dataset.series); });
     $('yearTiles').innerHTML = ERAS.map(([k, name, span]) => {
       const all = CAT.filter(c => c.kind === 'dispatch' && c.era === k), h = all.filter(c => H.has(c.id)).length;
@@ -286,9 +290,11 @@
     const info = BYID.get(id);
     if (!info) return '';
     const h = H.get(id), best = bestFinish(h);
-    const dots = `<div class="fd">${FIN.map(f => `<i class="f-${f}${h && (h.still[f] || h.living[f]) ? ' on' : ''}" title="${FNAME[f]}"></i>`).join('')}${info.hasFilm ? `<b class="${h && FIN.some(f => h.living[f]) ? 'on' : ''}" title="Living Card">▶︎</b>` : ''}</div>`;
+    const dots = info.flash
+      ? `<div class="fd"><i class="flash${h ? ' on' : ''}" title="Flash · always Top Secret"></i></div>`
+      : `<div class="fd">${FIN.map(f => `<i class="f-${f}${h && (h.still[f] || h.living[f]) ? ' on' : ''}" title="${FNAME[f]}"></i>`).join('')}${info.hasFilm ? `<b class="${h && FIN.some(f => h.living[f]) ? 'on' : ''}" title="Living Card">▶︎</b>` : ''}</div>`;
     if (!best) return `<div class="mini sealed"><span class="thumb">?</span><span class="no">${esc(label(info))}</span><span class="nm">${esc(info.short)}</span>${dots}</div>`;
-    return `<button class="mini" data-id="${esc(id)}"><img class="thumb f-${best}" loading="lazy" src="${esc(info.img)}" alt="${esc(info.short)}"><span class="no">${esc(label(info))}</span><span class="nm">${esc(info.short)}</span>${dots}</button>`;
+    return `<button class="mini" data-id="${esc(id)}"><img class="thumb ${info.flash ? 'flash' : 'f-' + best}" loading="lazy" src="${esc(info.img)}" alt="${esc(info.short)}"><span class="no">${esc(label(info))}</span><span class="nm">${esc(info.short)}</span>${dots}</button>`;
   }
   function wireMinis(el, list) {
     el.querySelectorAll('.mini[data-id]').forEach(b => { b.onclick = () => view(b.dataset.id, list.filter((x, i, a) => holdingsNow().has(x) && a.indexOf(x) === i)); });
@@ -317,17 +323,17 @@
       title = key.title;
     } else if (kind === 'series') {
       list = CAT.filter(c => c.series === key);
-      title = SERIES.find(s => s[0] === key)[1];
+      title = key === 'flash' ? 'Flash' : SERIES.find(s => s[0] === key)[1];
     } else if (kind === 'year') {
       list = CAT.filter(c => c.kind === 'dispatch' && c.era === key).sort((a, b) => a.date < b.date ? -1 : a.date > b.date ? 1 : 0);
       const e = ERAS.find(x => x[0] === key); title = e[1] || key;
     } else {
-      const F = { all: () => true, missing: c => !H.has(c.id), living: c => c.hasFilm };
+      const F = { all: () => true, missing: c => !H.has(c.id), living: c => c.hasFilm, flash: c => c.flash };
       SERIES.forEach(([k]) => { F[k] = c => c.series === k; });
       const st = subjTest(allSubject);
       list = CAT.filter(c => F[allFilter](c) && st(c)).slice().reverse();
       title = 'All cards';
-      $('filters').innerHTML = [['all', 'All'], ['missing', 'Missing'], ...SERIES.map(s => [s[0], s[1]]), ['living', 'Has a Living Card']]
+      $('filters').innerHTML = [['all', 'All'], ['missing', 'Missing'], ...SERIES.map(s => [s[0], s[1]]), ['flash', 'Flash'], ['living', 'Has a Living Card']]
         .map(([k, l]) => `<button data-f="${k}" class="${k === allFilter ? 'on' : ''}">${l}</button>`).join('');
       $('filters').querySelectorAll('button').forEach(b => { b.onclick = () => { allFilter = b.dataset.f; section('all'); }; });
       const opts = SUBJ.map(([g, k, vals]) => { const o = vals.map(([t, l]) => [t, l, CAT.filter(c => (c[k] || []).includes(t)).length]).filter(x => x[2]);
@@ -435,6 +441,7 @@
   function backText(p, i) {
     const k = (cardEnv && cardEnv.kind) || (p.slot && p.slot.startsWith('p:') ? 'priority' : p.slot && p.slot.startsWith('c:') ? 'commemorative' : p.slot === 's:starter' ? 'starter' : 'daily');
     const first = i === 0 && (!p.slot || p.slot.startsWith('d:') || p.slot === 's:starter');
+    if (p.cardInfo && p.cardInfo.flash) return k === 'commemorative' || k === 'daily' ? 'The Flash card' : 'A Flash card from the archive';
     if (k === 'priority' || k === 'commemorative') return 'From the deep archive';
     if (k === 'starter') return first ? "Today's dispatch" : 'Your starter pack';
     if (first && p.cardInfo && p.cardInfo.kind === 'dispatch' && p.variant === 'still' && i === 0) return "Today's dispatch";
@@ -459,6 +466,7 @@
   function hintAfter(p, i) {
     const info = p.cardInfo || {};
     if (info.kind === 'namethis') return answered[i] ? `<span class="answer">Answer: ${esc(info.answer)}</span>` : 'Can you name it? Tap to reveal the answer.';
+    if (info.flash) return `<b>A Flash card. ${esc(info.short)}, always Top Secret, and yours for good.</b>`;
     if (p.finish === 'topsecret' && p.serial) return `<b>The ${ord(p.serial)} Top Secret ${p.variant === 'living' ? 'living ' : ''}${esc(info.short)} pulled anywhere in the world.</b>`;
     return i < pulls.length - 1 ? 'Swipe or tap Next' : "That's the envelope.";
   }
@@ -610,7 +618,9 @@
       const n = h[variant][f] || 0;
       return n ? `<button class="s4 f-${f}${variant === viewSel.variant && f === viewSel.finish ? ' cur' : ''}" data-v="${variant}" data-f="${f}">${FNAME[f]}<small>×${n}</small></button>` : '<div class="s4 off">?<small>Sealed</small></div>';
     }).join('');
-    $('slots4').innerHTML = row('still', 'Still') + (info.hasFilm ? row('living', 'Living Card') : '');
+    $('slots4').innerHTML = info.flash
+      ? `<div class="rowlbl">Flash</div><button class="s4 f-topsecret cur" data-v="still" data-f="topsecret">Top Secret<small>×${h.still.topsecret || 0}</small></button><div class="s4 off flashnote">Always Top Secret</div>`
+      : row('still', 'Still') + (info.hasFilm ? row('living', 'Living Card') : '');
     $('slots4').querySelectorAll('button.s4').forEach(b => { b.onclick = () => { viewSel = { variant: b.dataset.v, finish: b.dataset.f }; renderView(); }; });
     const mine = pl.filter(p => p.card === id).slice().sort((a, b) => (b.at || '').localeCompare(a.at || ''));
     $('history').innerHTML = `<h3>Pulled ${mine.length} time${mine.length === 1 ? '' : 's'}</h3><ul>${mine.map(p => `<li><span>${p.at ? esc(localDate(p.at)) + ' · ' : ''}${esc(slotName(p.slot) || 'Starter pack')}${p.variant === 'living' ? ' · ▶︎ living' : ''}</span><span class="fin f-${p.finish}">${FNAME[p.finish]}${p.serial ? ' · Serial ' + ser4(p.serial) : ''}</span></li>`).join('')}</ul>`;
@@ -827,7 +837,7 @@
 
   // ---------- sharing (Declass Share Button mockup) ----------
   const RANK = f => FIN.indexOf(f);
-  const phrase = x => 'a ' + (x.variant === 'living' ? 'living ' : '') + (x.finish === 'topsecret' ? 'Top Secret' : FNAME[x.finish].toLowerCase()) + ' ' + x.info.short + (x.finish === 'topsecret' && x.serial ? ', worldwide serial ' + ser4(x.serial) : '');
+  const phrase = x => x.info.flash ? 'the ' + x.info.short + ' Flash card' : 'a ' + (x.variant === 'living' ? 'living ' : '') + (x.finish === 'topsecret' ? 'Top Secret' : FNAME[x.finish].toLowerCase()) + ' ' + x.info.short + (x.finish === 'topsecret' && x.serial ? ', worldwide serial ' + ser4(x.serial) : '');
   function listText(items) { const n = items.map(phrase); return n.length < 3 ? n.join(' and ') : n.slice(0, -1).join(', ') + ', and ' + n[n.length - 1]; }
   let shPrefix = 'Declassed ';
   const shLine = items => shPrefix + listText(items) + '. ww2dispatches.com/declass #Declass';
@@ -838,7 +848,15 @@
   }
   const shareSrc = x => x.variant === 'living' && x.info.filmPoster ? x.info.filmPoster : x.info.img;
   function grad(c, x, y, w, h, stops) { const g = c.createLinearGradient(x, y, x + w, y + h); stops.forEach(([o, col]) => g.addColorStop(o, col)); return g; }
-  function framed(c, img, x, y, w, f, serial) {
+  function framed(c, img, x, y, w, f, serial, flash) {
+    if (flash) { // full art: no frame, rounded corners, the holographic sheen over the art
+      const ch = w * 1.25, r = w * 0.034;
+      c.save(); c.shadowColor = 'rgba(0,0,0,.55)'; c.shadowBlur = w * 0.06; c.shadowOffsetY = w * 0.025; c.fillStyle = '#111'; c.beginPath(); c.roundRect(x, y, w, ch, r); c.fill(); c.restore();
+      c.save(); c.beginPath(); c.roundRect(x, y, w, ch, r); c.clip(); c.drawImage(img, x, y, w, ch);
+      c.globalCompositeOperation = 'screen'; c.fillStyle = grad(c, x, y, w, ch, [[0, 'rgba(255,120,120,.16)'], [0.25, 'rgba(255,235,120,.16)'], [0.5, 'rgba(120,255,190,.16)'], [0.75, 'rgba(120,190,255,.16)'], [1, 'rgba(230,120,255,.16)']]); c.fillRect(x, y, w, ch);
+      c.globalCompositeOperation = 'overlay'; const rg = c.createRadialGradient(x + w * 0.35, y + ch * 0.3, 0, x + w * 0.35, y + ch * 0.3, w * 0.7); rg.addColorStop(0, 'rgba(255,255,255,.45)'); rg.addColorStop(1, 'rgba(255,255,255,0)'); c.fillStyle = rg; c.fillRect(x, y, w, ch);
+      c.restore(); return;
+    }
     const pad = { copper: 0.014, silver: 0.03, gold: 0.06, topsecret: 0.06 }[f] * w, cw = w - 2 * pad, ch = cw * 1.25, fh = ch + 2 * pad;
     c.save(); c.shadowColor = 'rgba(0,0,0,.55)'; c.shadowBlur = w * 0.06; c.shadowOffsetY = w * 0.025;
     if (f === 'copper') c.fillStyle = '#9C5B2E';
@@ -867,7 +885,7 @@
   // Both texts are centered on their capital letters so they sit level with the chip.
   const FORMAT_LABEL = { spec: 'Spec Sheet', photo: 'Photo of the Day', quote: 'Quote of the Day' };
   function shareChipRow(c, W, cy, x) {
-    const chipText = (x.finish === 'topsecret' ? 'TOP SECRET' + (x.serial ? ' · ' + ser4(x.serial) : '') : FNAME[x.finish].toUpperCase()) + (x.variant === 'living' ? ' · LIVING CARD' : '');
+    const chipText = x.info.flash ? 'FLASH · TOP SECRET' : (x.finish === 'topsecret' ? 'TOP SECRET' + (x.serial ? ' · ' + ser4(x.serial) : '') : FNAME[x.finish].toUpperCase()) + (x.variant === 'living' ? ' · LIVING CARD' : '');
     const info = x.info;
     const line = info.kind === 'namethis' ? 'Name This' : 'Dispatch No. ' + pad3(info.num) + (FORMAT_LABEL[info.format] ? ' · ' + FORMAT_LABEL[info.format] : '');
     const spaced = t => t.split('').join(String.fromCharCode(8202)); // hair spaces for the chip's letter spacing
@@ -908,7 +926,7 @@
     shareChipRow(c, W, 148, best);
     if (items.length > 1) { c.textAlign = 'center'; c.fillStyle = '#b9ad92'; const sub = 'with ' + listText(items.slice(1)); fitFont(c, sub, 400, 28, '"Special Elite"', W - 100); c.fillText(sub, W / 2, 204); }
     // cards: cy is roughly the card's middle
-    const draw = (x, k, cx, cy, w, rot) => { c.save(); c.translate(cx, cy); c.rotate(rot * Math.PI / 180); if (imgs[k]) framed(c, imgs[k], -w / 2, -w * 0.62, w, x.finish, x.serial); c.restore(); };
+    const draw = (x, k, cx, cy, w, rot) => { c.save(); c.translate(cx, cy); c.rotate(rot * Math.PI / 180); if (imgs[k]) framed(c, imgs[k], -w / 2, -w * 0.62, w, x.finish, x.serial, x.info.flash); c.restore(); };
     if (items.length === 1) draw(items[0], 0, W / 2, 188 + 830 * 0.62, 830, 0);
     else if (items.length === 2) { const cw = 610; draw(items[1], 1, W / 2 + 205, 730, cw, 7); draw(items[0], 0, W / 2 - 205, 716, cw, -5); }
     else { const cw = 560; draw(items[1], 1, W / 2 - 240, 756, cw, -9); draw(items[2], 2, W / 2 + 240, 756, cw, 9); draw(items[0], 0, W / 2, 713, cw, 0); }

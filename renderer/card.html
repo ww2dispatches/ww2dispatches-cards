@@ -11,8 +11,10 @@ body{margin:0}
 <script>
 /* Server side copy of the Dispatch Press draw() routine. Keep in step with the artifact
    so cards rendered here match cards saved by hand. */
-const SERIES = {battle:["Battle Lines","#B04A3E"],home:["Home Front","#5E6B3A"],blue:["Blueprint","#3D5884"],state:["Statecraft","#B8862B"]};
-const SKEY={battle:"battle",home:"home",blue:"blue",blueprint:"blue",state:"state",statecraft:"state","battle lines":"battle","home front":"home"};
+/* "flash" is the rare fifth card type (Roadmap, Flash cards plan): a full art card for the war's biggest days.
+   Its stamp on video frames is ink with cream type; the still card uses drawFlash below instead of the bands. */
+const SERIES = {battle:["Battle Lines","#B04A3E"],home:["Home Front","#5E6B3A"],blue:["Blueprint","#3D5884"],state:["Statecraft","#B8862B"],flash:["Flash","#1A1612"]};
+const SKEY={battle:"battle",home:"home",blue:"blue",blueprint:"blue",state:"state",statecraft:"state","battle lines":"battle","home front":"home",flash:"flash"};
 const PAPER="#EDE4CF", INK="#1A1612", NAVY="#3D5884";
 const MON=["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"];
 let grainTile=null;
@@ -92,7 +94,61 @@ function drawSpecPanel(ctx,u,x,y,w,h,p,accent,wide){
   ctx.textAlign="left";
 }
 
+
+/* Flash card (decided 25 Oct 2026): full art. The prepared art (already colorized, flash/ folder) fills the whole
+   card with no paper, no bands, and no frame. Type sits on dark fades at the top and bottom: the wordmark and
+   dispatch number top left, a cream FLASH tape top right, the big date, place, pull line, and handle at the
+   bottom. The X image keeps X's ALT badge corner clear (bottom left, about 10u by 6u) by lifting the bottom block. */
+const FLASH_CREAM="#F1E8D2", FLASH_TAPE="#EFE3C4", FLASH_RED="#A8392E", FLASH_GOLD="#E7BE68";
+function drawFlash(cv,img,p){
+  const W=cv.width,H=cv.height,ctx=cv.getContext("2d"),u=W/100,wide=W>H;
+  const altPad=wide?5*u:0;
+  ctx.save(); ctx.clearRect(0,0,W,H); ctx.fillStyle="#111"; ctx.fillRect(0,0,W,H);
+  const iw=img.naturalWidth, ih=img.naturalHeight, z=(p.zoom||100)/100, s=Math.max(W/iw,H/ih)*z;
+  const dw=iw*s, dh=ih*s, fx=p.focusX!=null?p.focusX:50, fy=p.focusY!=null?p.focusY:40;
+  ctx.drawImage(img,-(dw-W)*(fx/100),-(dh-H)*(fy/100),dw,dh);
+  /* fades: top 27%, bottom 36% of the height (the same proportions as the approved mockup) */
+  let g=ctx.createLinearGradient(0,0,0,H*(wide?.3:.27));
+  g.addColorStop(0,"rgba(8,9,12,.74)"); g.addColorStop(.6,"rgba(8,9,12,.3)"); g.addColorStop(1,"rgba(8,9,12,0)");
+  ctx.fillStyle=g; ctx.fillRect(0,0,W,H*(wide?.3:.27));
+  g=ctx.createLinearGradient(0,H*(wide?.56:.64),0,H);
+  g.addColorStop(0,"rgba(8,9,12,0)"); g.addColorStop(.4,"rgba(8,9,12,.5)"); g.addColorStop(1,"rgba(8,9,12,.86)");
+  ctx.fillStyle=g; ctx.fillRect(0,H*(wide?.56:.64),W,H*(wide?.44:.36));
+  /* top left: wordmark and number */
+  const m=5.5*u, k=wide?.78:1;
+  ctx.textAlign="left"; ctx.textBaseline="alphabetic";
+  ctx.fillStyle=FLASH_CREAM; ctx.font=`700 ${5.4*u*k}px Oswald`; ctx.letterSpacing=`${.03*5.4*u}px`;
+  ctx.fillText("WW2 DISPATCHES",m,5*u+5.4*u*k*.78);
+  ctx.font=`400 ${3*u*k}px "Special Elite"`; ctx.letterSpacing=`${.02*3*u}px`; ctx.globalAlpha=.9;
+  ctx.fillText("Dispatch "+pad(p.num)+"  ·  Flash",m,5*u+5.4*u*k*.78+1.2*u+3*u*k*.8); ctx.globalAlpha=1;
+  /* top right: the FLASH tape, tilted 3 degrees, with a red dot */
+  ctx.font=`700 ${6.4*u*k}px Oswald`; ctx.letterSpacing=`${.12*6.4*u*k}px`;
+  const tw=ctx.measureText("FLASH").width+.12*6.4*u*k, th=6.4*u*k*1.34, tpw=tw+5.2*u*k;
+  const tx=W-5*u-tpw, ty=4.6*u;
+  ctx.save(); ctx.translate(tx+tpw/2,ty+th/2); ctx.rotate(-3*Math.PI/180);
+  ctx.shadowColor="rgba(0,0,0,.45)"; ctx.shadowBlur=1.4*u; ctx.shadowOffsetY=.6*u;
+  ctx.fillStyle=FLASH_TAPE; ctx.fillRect(-tpw/2,-th/2,tpw,th); ctx.shadowColor="transparent";
+  ctx.fillStyle=FLASH_RED; ctx.beginPath(); ctx.arc(-tpw/2+1.55*u*k,0,.45*u*k,0,Math.PI*2); ctx.fill();
+  ctx.fillStyle="#1B1A17"; ctx.textAlign="left"; ctx.textBaseline="middle"; ctx.fillText("FLASH",-tpw/2+3*u*k,.15*u);
+  ctx.restore();
+  /* bottom block: date, place left, pull right, handle under the pull. Sits above the X ALT corner. */
+  const bottom=H-5*u-altPad;
+  ctx.textAlign="left"; ctx.textBaseline="alphabetic";
+  const handleBase=bottom, rowBase=bottom-(2.6*u*k)-1.2*u, dateBase=rowBase-3.6*u*k-1.6*u;
+  ctx.fillStyle=FLASH_CREAM; ctx.font=`700 ${13*u*k}px Oswald`; ctx.letterSpacing=`${.01*13*u}px`;
+  ctx.fillText(shortDate(p.date),m,dateBase);
+  ctx.font=`400 ${3.6*u*k}px "Special Elite"`; ctx.letterSpacing="0px";
+  ctx.fillText(p.place||"",m,rowBase);
+  ctx.textAlign="right";
+  const pull=(p.pull||"").trim();
+  if(pull){ ctx.fillStyle=FLASH_GOLD; ctx.font=`400 ${3.2*u*k}px "Special Elite"`; wrap(ctx,pull,(W-2*m)*.5,2).reverse().forEach((ln,i)=>ctx.fillText(ln,W-m,rowBase-i*3.9*u*k)); }
+  ctx.fillStyle=FLASH_CREAM; ctx.globalAlpha=.85; ctx.font=`400 ${2.6*u*k}px "Special Elite"`;
+  ctx.fillText("@ww2dispatches",W-m,handleBase); ctx.globalAlpha=1;
+  ctx.restore();
+}
+
 function draw(cv,img,p){
+  if(img && SKEY[(p.series||"").toLowerCase()]==="flash" && (p.format||"dispatch").toLowerCase()!=="footage") return drawFlash(cv,img,p);
   const W=cv.width,H=cv.height,ctx=cv.getContext("2d"),u=W/100,m=3.2*u,topH=14.5*u;
   /* Players draw over the bottom of an image or video: X's ALT badge (bottom left of every image with alt text),
      the video timestamp (bottom left), the mute button (bottom right), and the desktop control bar (along the
