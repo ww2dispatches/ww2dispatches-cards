@@ -156,15 +156,17 @@
   function envHTML(i, env) {
     const k = env.kind, pr = k === 'priority', st = k === 'starter', cm = k === 'commemorative';
     const c = cm ? ['#1d1a17', '#24201c', '#2a2520'] : pr ? ['#C9A774', '#C5A26E', '#CDAB79'] : ['#E8DFC7', '#E6DCC3', '#EAE1C9'];
-    const lbl = cm ? 'THREE DAYS ONLY' : pr ? 'DEEP ARCHIVE' : st ? 'FIRST FILE' : env.deep ? 'DEEP ARCHIVE' : etTime(env.at).toUpperCase();
-    const stamp = cm ? `<div class="prio">${esc(env.stamp)}</div><div class="lbl">COMMEMORATIVE FILE · ${lbl}<b>WW2 DISPATCHES</b></div>`
-      : pr ? `<div class="prio">PRIORITY</div><div class="lbl">STREAK REWARD · ${lbl}<b>WW2 DISPATCHES</b></div>`
-      : st ? `<div class="prio stp">STARTER PACK</div><div class="lbl">YOUR ${lbl} · FIVE CARDS<b>WW2 DISPATCHES</b></div>`
+    const lbl = cm ? 'THREE DAYS ONLY' : pr ? 'DEEP ARCHIVE' : st ? 'FIRST FILE' : env.last ? 'LAST CALL' : env.deep ? 'DEEP ARCHIVE' : etTime(env.at).toUpperCase();
+    const stamp = cm ? `<div class="prio">${esc(env.stamp)}</div><div class="lbl">COMMEMORATIVE<br>· ${lbl}<b>WW2 DISPATCHES</b></div>`
+      : pr ? `<div class="prio">PRIORITY</div><div class="lbl">STREAK REWARD<br>· ${lbl}<b>WW2 DISPATCHES</b></div>`
+      : st ? `<div class="prio stpk">STARTER PACK</div><div class="lbl">YOUR ${lbl}<br>· FIVE CARDS<b>WW2 DISPATCHES</b></div>`
       : `<div class="lbl">INCOMING DISPATCH<br>· ${esc(lbl)}<b>WW2 DISPATCHES</b></div>`;
     return `<svg class="body" viewBox="0 0 360 200" preserveAspectRatio="none" aria-hidden="true"><rect width="360" height="200" fill="${c[0]}"/><polygon points="0,0 180,126 0,200" fill="${c[1]}"/><polygon points="360,0 180,126 360,200" fill="${c[1]}"/><polygon points="0,200 180,126 360,200" fill="${c[2]}"/><polyline points="0,200 180,126 360,200" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="1.5"/></svg>
       <div class="flap"></div><div class="seal">SEALED<br>WW2</div><div class="no">${i ? 'No. ' + i + ' of 3' : ''}</div>${stamp}<div class="cstamp">CLASSIFIED</div><div class="dstamp">DECLASS</div><div class="edge"></div>`;
   }
-  const envClass = k => k === 'priority' ? ' priority' : k === 'commemorative' ? ' commem' : k === 'starter' ? ' starter' : '';
+  // Each envelope type wears the look drawn for it in the Field manual: priority manila, commemorative
+  // black and gold, starter green ring, Sunday deep archive navy ring, Last call dashed red.
+  const envClass = env => { const k = env.kind; return k === 'priority' ? ' priority' : k === 'commemorative' ? ' commem' : k === 'starter' ? ' starter' : (env.deep ? ' deep' : '') + (env.last ? ' last' : ''); };
 
   // ---------- home ----------
   function slotButton(cls, title, sub, onclick, help) {
@@ -214,7 +216,7 @@
       for (const e of ST.envelopes.filter(e => !isToday(e.at) && !e.opened)) {
         files.appendChild(slotButton(locked ? 'locked' : 'live', 'Last call',
           (etHour(e.at) < 12 ? "Yesterday's morning" : "Yesterday's evening") + (e.deep ? ' · Sunday deep archive' : '') + ' · Closes ' + localTime(e.closes) + ' · ' + leftText(e.closes),
-          b => guard(b, () => pick(e)), 'fm-lastcall'));
+          b => guard(b, () => pick(Object.assign({ last: true }, e))), 'fm-lastcall'));
       }
       const today = ST.envelopes.filter(e => isToday(e.at)).map(e => Object.assign({ out: true }, e))
         .concat((ST.upcoming || []).filter(u => isToday(u.at)).map(u => Object.assign({ out: false }, u)))
@@ -332,7 +334,7 @@
     const st = $('stack'); st.innerHTML = '';
     for (let i = 1; i <= 3; i++) {
       const e = document.createElement('div');
-      e.className = 'env' + envClass(env.kind); e.tabIndex = 0; e.setAttribute('role', 'button'); e.setAttribute('aria-label', 'Sealed envelope ' + i);
+      e.className = 'env' + envClass(env); e.tabIndex = 0; e.setAttribute('role', 'button'); e.setAttribute('aria-label', 'Sealed envelope ' + i);
       e.innerHTML = envHTML(i, env);
       e.onclick = () => chosen(i);
       e.onkeydown = ev => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); chosen(i); } };
@@ -351,7 +353,7 @@
     const before = holdingsNow();
     const b = $('bigEnv');
     b.className = 'big';
-    b.innerHTML = `<div class="env${envClass(env.kind)}">${envHTML(i, env)}</div><div class="cardsout"><i></i><i></i><i></i></div>`;
+    b.innerHTML = `<div class="env${envClass(env)}">${envHTML(i, env)}</div><div class="cardsout"><i></i><i></i><i></i></div>`;
     $('tearing').textContent = env.kind === 'commemorative' ? (env.title || env.stamp) : 'Declassifying…';
     duckMusic(true); sfx('slide'); sfx('stampA', 0.25); sfx('seal', 0.95);
     $('tearing').classList.toggle('goldt', env.kind === 'commemorative');

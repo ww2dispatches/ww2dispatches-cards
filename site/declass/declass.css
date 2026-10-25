@@ -113,7 +113,7 @@ button:focus-visible,.env:focus-visible{outline:3px solid var(--brass);outline-o
 .env .lbl b{display:block;white-space:nowrap;font-family:var(--display);font-size:14px;color:var(--ink);letter-spacing:.06em;font-weight:500}
 .env .no{position:absolute;right:5%;top:6%;font-family:var(--type);font-size:11px;color:var(--navy);z-index:5}
 .env .prio{position:absolute;left:5%;top:7%;z-index:5;font-family:var(--display);font-weight:700;letter-spacing:.18em;font-size:clamp(11px,3vw,15px);color:#a8261c;border:3px double #a8261c;padding:2px 9px;transform:rotate(-6deg);mix-blend-mode:multiply}
-.env .prio.stp{color:#2f5a2a;border-color:#2f5a2a}
+.env .prio.stpk{color:#2f5a2a;border-color:#2f5a2a}
 .env .cstamp,.env .dstamp{position:absolute;right:5%;top:24%;z-index:5;font-family:var(--display);font-weight:700;letter-spacing:.16em;font-size:clamp(11px,3vw,15px);color:#a8261c;border:3px solid #a8261c;border-radius:3px;padding:1px 8px;transform:rotate(-8deg);mix-blend-mode:multiply;opacity:.85}
 .env .dstamp{right:4%;top:34%;transform:rotate(6deg) scale(2.2);opacity:0;color:#1f3f6e;border-color:#1f3f6e;transition:transform .22s cubic-bezier(.2,1.6,.4,1),opacity .15s}
 .env .edge{position:absolute;inset:0;box-shadow:inset 0 0 0 1px rgba(255,255,255,.6),inset 0 -2px 0 rgba(120,100,70,.18);pointer-events:none;z-index:5}
@@ -370,11 +370,20 @@ button:focus-visible,.env:focus-visible{outline:3px solid var(--brass);outline-o
    Label upper left, number top right of center, CLASSIFIED top center (the DECLASS stamp lands beside it).
    Priority, starter, and commemorative envelopes keep CLASSIFIED on the right, since their own stamp sits top left. */
 .env .lbl{top:50%;left:3.5%;bottom:auto;max-width:36%;z-index:5}
-.env:not(.priority):not(.commem):not(.starter) .lbl{letter-spacing:.05em;font-size:10px;max-width:none;white-space:nowrap}
-.env:not(.priority):not(.commem):not(.starter) .lbl b{font-size:10.5px;letter-spacing:.04em}
+.env .lbl{letter-spacing:.05em;font-size:10px;max-width:none;white-space:nowrap}
+.env .lbl b{font-size:10.5px;letter-spacing:.04em}
 .env .no{right:auto;left:67.5%;top:7%}
 .env .cstamp{left:0;right:0;margin:0 auto;width:max-content;top:10%}
 .env .dstamp{right:auto;left:53%;top:21%}
-.env.priority .cstamp,.env.commem .cstamp,.env.starter .cstamp{left:auto;margin:0;right:5%;top:24%}
-.env.priority .dstamp,.env.commem .dstamp,.env.starter .dstamp{left:auto;right:4%;top:34%}
-.env.priority .lbl,.env.commem .lbl,.env.starter .lbl{top:auto;bottom:6%;left:5%}
+/* priority, starter, commemorative: their own stamp takes the top center, CLASSIFIED moves into the right panel */
+.env .prio{left:0;right:0;margin:0 auto;width:max-content;top:18%;font-size:clamp(10px,2.8vw,13px);letter-spacing:.14em}
+.env.commem .prio{font-size:clamp(9px,2.4vw,11px);letter-spacing:.08em}
+.env.priority .cstamp,.env.commem .cstamp,.env.starter .cstamp{left:auto;margin:0;right:3.5%;top:50%;font-size:clamp(9px,2.5vw,12px);letter-spacing:.12em;padding:1px 6px}
+.env.priority .dstamp,.env.commem .dstamp,.env.starter .dstamp{left:auto;right:5%;top:62%}
+/* Envelope looks match the Field manual drawings (25 Oct 2026) */
+.env.deep{border-color:var(--navy);box-shadow:0 0 0 3px var(--navy),0 2px 0 #cbbd98,0 10px 22px rgba(26,22,18,.16)}
+.env.deep .lbl{color:var(--navy)}
+.env.starter{border-color:#2f5a2a;box-shadow:0 0 0 3px #2f5a2a,0 2px 0 #cbbd98,0 10px 22px rgba(26,22,18,.16)}
+.env.last{border:2px dashed var(--red);box-shadow:0 10px 22px rgba(26,22,18,.12)}
+.env.last .body{opacity:.88}
+.stack .env.deep,.stack .env.starter{margin:3px}
