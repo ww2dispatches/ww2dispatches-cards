@@ -261,14 +261,14 @@
     $('dossierSummary').textContent = `${have} of ${total} cards`;
     $('seriesTiles').innerHTML = SERIES.map(([k, name, col]) => {
       const all = CAT.filter(c => c.series === k), h = all.filter(c => H.has(c.id)).length;
-      return `<button class="tile${k === 'namethis' ? ' wide' : ''}" data-series="${k}"><i style="background:${col}"></i><b>${name}</b><span>${h} of ${all.length}</span><div class="bar"><i style="width:${all.length ? h / all.length * 100 : 0}%"></i></div></button>`;
+      return `<button class="tile${k === 'namethis' ? ' wide' : ''}" data-series="${k}"><i style="background:${col}"></i><b>${name}</b><span>${h} of ${all.length}</span><div class="bar"><i style="background:${col};width:${all.length ? h / all.length * 100 : 0}%"></i></div></button>`;
     }).join('');
     $('seriesTiles').insertAdjacentHTML('beforeend', '<button class="tile wide" id="tileSets" style="border-color:var(--navy)"><b>Sets</b><span>Monthly files and collections</span></button>');
     $('tileSets').onclick = renderSets;
     $('seriesTiles').querySelectorAll('[data-series]').forEach(b => { b.onclick = () => section('series', b.dataset.series); });
     $('yearTiles').innerHTML = ERAS.map(([k, name, span]) => {
       const all = CAT.filter(c => c.kind === 'dispatch' && c.era === k), h = all.filter(c => H.has(c.id)).length;
-      return `<button class="tile" data-year="${k}" ${all.length ? '' : 'disabled'}><i style="background:var(--ink)"></i><b>${name || k}</b><span>${all.length ? h + ' of ' + all.length : 'None posted yet'}</span>${span ? `<span>${span}</span>` : ''}<div class="bar"><i style="width:${all.length ? h / all.length * 100 : 0}%"></i></div></button>`;
+      return `<button class="tile" data-year="${k}" ${all.length ? '' : 'disabled'}><i style="background:var(--ink)"></i><b>${name || k}</b><span>${all.length ? h + ' of ' + all.length : 'None posted yet'}</span>${span ? `<span>${span}</span>` : ''}<div class="bar"><i style="background:var(--ink);width:${all.length ? h / all.length * 100 : 0}%"></i></div></button>`;
     }).join('');
     $('yearTiles').querySelectorAll('[data-year]').forEach(b => { b.onclick = () => section('year', b.dataset.year); });
     $('allSub').textContent = `${have} of ${total} cards`;
