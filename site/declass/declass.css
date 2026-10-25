@@ -369,11 +369,11 @@ button:focus-visible,.env:focus-visible{outline:3px solid var(--brass);outline-o
 /* Envelope layout, 25 Oct 2026: label, number, and CLASSIFIED moved off the creases.
    Label upper left, number top right of center, CLASSIFIED top center (the DECLASS stamp lands beside it).
    Priority, starter, and commemorative envelopes keep CLASSIFIED on the right, since their own stamp sits top left. */
-.env .lbl{top:27%;bottom:auto;max-width:36%;z-index:5}
+.env .lbl{top:50%;transform:translateY(-50%);bottom:auto;max-width:36%;z-index:5}
 .env:not(.priority):not(.commem):not(.starter) .lbl b{font-size:11.5px;letter-spacing:.04em}
-.env .no{right:auto;left:63%;top:7%}
-.env .cstamp{right:auto;left:31%;top:10%}
-.env .dstamp{right:auto;left:49%;top:21%}
-.env.priority .cstamp,.env.commem .cstamp,.env.starter .cstamp{left:auto;right:5%;top:24%}
+.env .no{right:auto;left:67.5%;top:7%}
+.env .cstamp{left:0;right:0;margin:0 auto;width:max-content;top:10%}
+.env .dstamp{right:auto;left:53%;top:21%}
+.env.priority .cstamp,.env.commem .cstamp,.env.starter .cstamp{left:auto;margin:0;right:5%;top:24%}
 .env.priority .dstamp,.env.commem .dstamp,.env.starter .dstamp{left:auto;right:4%;top:34%}
-.env.priority .lbl,.env.commem .lbl,.env.starter .lbl{top:auto;bottom:6%}
+.env.priority .lbl,.env.commem .lbl,.env.starter .lbl{top:auto;bottom:6%;transform:none}
