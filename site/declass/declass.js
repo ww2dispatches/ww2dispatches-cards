@@ -1035,7 +1035,7 @@
       ['Series', SERIES.map(([k, name, col]) => [name, col, c => c.series === k, ['series', k]])],
       ['Years', ERAS.map(([k, name]) => [name || k, '#1A1612', c => c.kind === 'dispatch' && c.era === k, ['year', k]])],
       // Fixed lists, always shown (25 Oct 2026): nothing pops in or out; empty ones are greyed.
-      ['Theaters', [['Western Europe', 'Western Europe'], ['Mediterranean and North Africa', 'Mediterranean and North Africa'], ['Atlantic', 'Atlantic'], ['Pacific', 'Pacific'], ['Home Front', 'home front'], ['Worldwide', 'worldwide']].map(([n, t]) => [n, '#3D5884', c => (c.theater || []).includes(t)])],
+      ['Theaters', [['Western Europe', 'Western Europe'], ['Mediterranean and North Africa', 'Mediterranean and North Africa'], ['Atlantic', 'Atlantic'], ['Pacific', 'Pacific'], ['Home Front', 'home front'], ['Worldwide', 'worldwide']].map(([n, t]) => [n, '#2F6E6A', c => (c.theater || []).includes(t)])],
       ['Nations', ['US', 'Britain', 'Soviet Union', 'Germany', 'Japan'].map(n => [n, '#6b3d2e', c => (c.nations || []).includes(n)])],
     ].map(([g, list]) => [g, list.map(([name, col, fn, open]) => {
       const all = CAT.filter(fn), held = all.filter(c => H.has(c.id)).length;
