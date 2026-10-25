@@ -301,12 +301,18 @@
     ['Branch', 'branch', [['Army', 'Army'], ['Navy', 'Navy'], ['Marines', 'Marines'], ['Army Air Forces', 'Air forces'], ['Coast Guard', 'Coast Guard'], ["women's services", "Women's services"], ['civilian agency', 'Civilian agencies']]],
   ];
   const subjTest = v => { if (!v) return () => true; const i = v.indexOf('|'), k = v.slice(0, i), t = v.slice(i + 1); return c => (c[k] || []).includes(t); };
-  function section(kind, key) {
-    lastSection = [kind, key];
+  function section(kind, key, fromSets) {
+    lastSection = [kind, key, fromSets];
     const H = holdingsNow();
     let list, title;
     $('filters').hidden = kind !== 'all';
-    if (kind === 'series') {
+    // Opened from the Sets page, the back button returns there (25 Oct 2026).
+    $('backSection').textContent = fromSets ? '◀\ufe0e Sets' : '◀\ufe0e Dossier';
+    $('backSection').onclick = fromSets ? renderSets : () => { renderHome(); show('sHome'); };
+    if (kind === 'set') {
+      list = CAT.filter(key.fn).sort((a, b) => (a[key.by] || '').localeCompare(b[key.by] || ''));
+      title = key.title;
+    } else if (kind === 'series') {
       list = CAT.filter(c => c.series === key);
       title = SERIES.find(s => s[0] === key)[1];
     } else if (kind === 'year') {
@@ -334,7 +340,6 @@
     viewFrom = 'sSection';
     show('sSection');
   }
-  $('backSection').onclick = () => { renderHome(); show('sHome'); };
   $('allBtn').onclick = () => { allFilter = 'all'; allSubject = ''; section('all'); };
 
   // ---------- choose your envelope ----------
@@ -641,7 +646,7 @@
   swipe($('viewer2'), () => $('vNext').click(), () => $('vPrev').click());
   $('backView').onclick = () => {
     document.querySelectorAll('#stage2 video').forEach(v => v.pause());
-    if (viewFrom === 'sSection' && lastSection) section(lastSection[0], lastSection[1]);
+    if (viewFrom === 'sSection' && lastSection) section(lastSection[0], lastSection[1], lastSection[2]);
     else if (viewFrom === 'sCards') show('sCards');
     else { renderHome(); show('sHome'); }
   };
@@ -1003,30 +1008,32 @@
         const end = monthEnd(ym);
         stamp = stampDate(last && new Date(last) > end ? new Date(last) : end);
       }
-      return { ym, name: monthName(ym), all: all.length, held, closed, stamp };
+      return { ym, name: monthName(ym), all: all.length, held, closed, stamp, open: ['set', { title: monthName(ym) + ' files', fn: c => c.kind === 'dispatch' && etMonth(c.postAt) === ym, by: 'postAt' }] };
     });
     const groups = [
-      ['Series', SERIES.map(([k, name, col]) => [name, col, c => c.series === k])],
-      ['Years', ERAS.map(([k, name]) => [name || k, '#1A1612', c => c.kind === 'dispatch' && c.era === k])],
+      ['Series', SERIES.map(([k, name, col]) => [name, col, c => c.series === k, ['series', k]])],
+      ['Years', ERAS.map(([k, name]) => [name || k, '#1A1612', c => c.kind === 'dispatch' && c.era === k, ['year', k]])],
       // Fixed lists, always shown (25 Oct 2026): nothing pops in or out; empty ones are greyed.
       ['Theaters', [['Western Europe', 'Western Europe'], ['Mediterranean and North Africa', 'Mediterranean and North Africa'], ['Atlantic', 'Atlantic'], ['Pacific', 'Pacific'], ['Home Front', 'home front'], ['Worldwide', 'worldwide']].map(([n, t]) => [n, '#3D5884', c => (c.theater || []).includes(t)])],
       ['Nations', ['US', 'Britain', 'Soviet Union', 'Germany', 'Japan'].map(n => [n, '#6b3d2e', c => (c.nations || []).includes(n)])],
-    ].map(([g, list]) => [g, list.map(([name, col, fn]) => {
+    ].map(([g, list]) => [g, list.map(([name, col, fn, open]) => {
       const all = CAT.filter(fn), held = all.filter(c => H.has(c.id)).length;
-      return { name, col, all: all.length, held, pins: PINS.filter(([k]) => held >= k), next: PINS.find(([k]) => held < k) };
+      return { name, col, all: all.length, held, pins: PINS.filter(([k]) => held >= k), next: PINS.find(([k]) => held < k), open: open || ['set', { title: name, fn, by: 'date' }] };
     })]);
     return { months, groups };
   }
   function renderSets() {
     const { months, groups } = setsModel();
+    // Every set opens its cards in the dossier grid (25 Oct 2026).
+    const links = [], go = open => `data-go="${links.push(open) - 1}" role="button" tabindex="0"`;
     let h = '<h2>Monthly files</h2>';
     const stamps = months.filter(m => m.stamp);
-    if (stamps.length) h += `<div class="sshelf">${stamps.map(m => `<div class="stp" title="${esc(m.name)}">${stampSVG(m.name, m.stamp)}</div>`).join('')}</div>`;
+    if (stamps.length) h += `<div class="sshelf">${stamps.map(m => `<div class="stp go" ${go(m.open)} title="${esc(m.name)}">${stampSVG(m.name, m.stamp)}</div>`).join('')}</div>`;
     const monthRow = m => {
       const full = m.held === m.all;
       const end = monthEnd(m.ym).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', timeZone: 'UTC' });
       const txt = !m.closed ? (full ? 'Currently complete · the stamp lands when the month closes' : `${m.held} of ${m.all} Declassed · Closes ${end}`) : `${m.held} of ${m.all} Declassed · Closed, still collectable`;
-      return `<div class="srow" style="--c:#7a5c2e"><div class="nm"><b>${esc(m.name)} files</b><small class="${full ? 'cc' : m.all - m.held === 1 ? 'near' : ''}">${txt}</small><i><em style="width:${m.all ? m.held / m.all * 100 : 0}%"></em></i></div></div>`;
+      return `<div class="srow go" ${go(m.open)} style="--c:#7a5c2e"><div class="nm"><b>${esc(m.name)} files</b><small class="${full ? 'cc' : m.all - m.held === 1 ? 'near' : ''}">${txt}</small><i><em style="width:${m.all ? m.held / m.all * 100 : 0}%"></em></i></div></div>`;
     };
     // The current month always shows; unfinished past months fold by calendar year (25 Oct 2026).
     months.filter(m => !m.stamp && !m.closed).forEach(m => { h += monthRow(m); });
@@ -1040,11 +1047,15 @@
       list.forEach(x => {
         if (!x.all) { h += `<div class="srow none" style="--c:${x.col}"><div class="nm"><b>${esc(x.name)}</b><small>None posted yet</small><i></i></div></div>`; return; }
         const full = x.held === x.all;
-        h += `<div class="srow" style="--c:${x.col}"><div class="nm"><b>${esc(x.name)}</b><small class="${full ? 'cc' : ''}">${full ? 'Currently complete · ' + x.held + ' cards' : x.held + ' of ' + x.all + ' Declassed'}${x.next ? (x.pins.length ? ' · Next pin at ' : ' · First pin at ') + x.next[0] : ''}</small><i><em style="width:${x.held / x.all * 100}%"></em></i></div><div class="spins">${x.pins.map(([k, m]) => `<div class="spin">${pinSVG(k, m)}</div>`).join('')}</div></div>`;
+        h += `<div class="srow go" ${go(x.open)} style="--c:${x.col}"><div class="nm"><b>${esc(x.name)}</b><small class="${full ? 'cc' : ''}">${full ? 'Currently complete · ' + x.held + ' cards' : x.held + ' of ' + x.all + ' Declassed'}${x.next ? (x.pins.length ? ' · Next pin at ' : ' · First pin at ') + x.next[0] : ''}</small><i><em style="width:${x.held / x.all * 100}%"></em></i></div><div class="spins">${x.pins.map(([k, m]) => `<div class="spin">${pinSVG(k, m)}</div>`).join('')}</div></div>`;
       });
     });
     h += '<p class="snote">A month\'s stamp is permanent once the month closes with every card held, even if you catch up later. Every collection is always listed, greyed until its first card posts, and says "Currently complete" until the next card posts. Pins count different cards, never duplicates.</p>';
     $('sets').innerHTML = h;
+    $('sets').querySelectorAll('[data-go]').forEach(el => {
+      const open = () => { const [k, key] = links[+el.dataset.go]; section(k, key, true); window.scrollTo(0, 0); };
+      el.onclick = open; el.onkeydown = e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } };
+    });
     show('sSets');
   }
   $('backSets').onclick = () => { renderHome(); show('sHome'); };

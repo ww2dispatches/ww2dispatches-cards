@@ -423,3 +423,8 @@ body{font-variant-emoji:text}
 .syear summary{display:grid;grid-template-columns:1fr auto;column-gap:10px;row-gap:3px;align-items:center}
 .syear summary b{grid-column:1;grid-row:1}.syear summary small{grid-column:1;grid-row:2}
 .syear summary::after{grid-column:2;grid-row:1/3}
+/* Sets rows open their cards */
+.srow.go{cursor:pointer;position:relative;padding-right:26px}
+.srow.go::after{content:"›";position:absolute;right:10px;top:50%;transform:translateY(-55%);font-size:22px;line-height:1;color:var(--mute)}
+.srow.go:active{background:#efe4c8}
+.stp.go{cursor:pointer}
