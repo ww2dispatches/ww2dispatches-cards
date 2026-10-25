@@ -164,14 +164,14 @@
     return `<svg class="body" viewBox="0 0 360 200" preserveAspectRatio="none" aria-hidden="true"><rect width="360" height="200" fill="${c[0]}"/><polygon points="0,0 180,126 0,200" fill="${c[1]}"/><polygon points="360,0 180,126 360,200" fill="${c[1]}"/><polygon points="0,200 180,126 360,200" fill="${c[2]}"/><polyline points="0,200 180,126 360,200" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="1.5"/></svg>
       <div class="flap"></div><div class="seal">SEALED<br>WW2</div><div class="no">${i ? 'No. ' + i + ' of 3' : ''}</div>${stamp}<div class="cstamp">CLASSIFIED</div><div class="dstamp">DECLASS</div><div class="edge"></div>`;
   }
-  const envClass = k => k === 'priority' ? ' priority' : k === 'commemorative' ? ' commem' : '';
+  const envClass = k => k === 'priority' ? ' priority' : k === 'commemorative' ? ' commem' : k === 'starter' ? ' starter' : '';
 
   // ---------- home ----------
-  function slotButton(cls, title, sub, onclick) {
+  function slotButton(cls, title, sub, onclick, help) {
     const b = document.createElement('button');
     b.className = 'slotbtn ' + cls;
-    b.innerHTML = `<b>${title}</b><span>${sub}</span>`;
-    b.onclick = () => onclick(b);
+    b.innerHTML = `<b>${title}</b><span>${help ? `<span class="help" data-help="${help}" aria-label="What is this?" title="What is this?">i</span>` : ''}${sub}</span>`;
+    b.onclick = e => { const h = e.target.closest('.help'); if (h) { e.stopPropagation(); openHow(h.dataset.help); return; } onclick(b); };
     return b;
   }
   function renderHome() {
@@ -189,20 +189,20 @@
     if (p) {
       if (locked) {
         const n = ST.waiting.length;
-        files.appendChild(slotButton('pend', n + ' card' + (n > 1 ? 's' : '') + ' waiting to be turned', 'They are already in your dossier. Tap to see them.', resumeWaiting));
+        files.appendChild(slotButton('pend', n + ' card' + (n > 1 ? 's' : '') + ' waiting to be turned', 'They are already in your dossier. Tap to see them.', resumeWaiting, 'fm-locked'));
       }
       for (const e of ST.commemorative) {
         files.appendChild(slotButton('comm ' + (e.opened ? 'done' : locked ? 'locked' : 'live'), 'Commemorative file · ' + esc(e.name),
           e.opened ? 'Opened · back next commemorative day' : 'Everyone gets one · ' + leftText(e.closes),
-          b => { if (!e.opened) guard(b, () => pick(e)); }));
+          b => { if (!e.opened) guard(b, () => pick(e)); }, 'fm-comm'));
       }
       if (!p.starterDone) {
         files.appendChild(slotButton('starter ' + (locked ? 'locked' : 'live'), 'Starter pack', 'Five cards, free: today\'s dispatch and one from each series',
-          b => guard(b, () => pick({ kind: 'starter' }))));
+          b => guard(b, () => pick({ kind: 'starter' })), 'fm-starter'));
       }
       if (ST.priority > 0) {
         files.appendChild(slotButton('prio ' + (locked ? 'locked' : 'live'), 'Priority envelope' + (ST.priority > 1 ? 's ×' + ST.priority : ''), 'Three cards from the deep archive · never expires',
-          b => guard(b, () => pick({ kind: 'priority' }))));
+          b => guard(b, () => pick({ kind: 'priority' })), 'fm-priority'));
       }
       // Today's files (option A, 25 Oct 2026): one row per envelope time today in the player's own
       // day, each not out yet, out, or opened. Yesterday's envelopes drop off once opened; one still
@@ -212,9 +212,9 @@
       const isToday = iso => { const x = Date.parse(iso); return x >= dayStart.getTime() && x < dayEnd.getTime(); };
       const slotTitle = at => (etHour(at) < 12 ? 'Morning' : 'Evening') + ' envelope';
       for (const e of ST.envelopes.filter(e => !isToday(e.at) && !e.opened)) {
-        files.appendChild(slotButton(locked ? 'locked' : 'live', 'Last call · ' + (etHour(e.at) < 12 ? "Yesterday's morning" : "Yesterday's evening"),
-          (e.deep ? 'Sunday deep archive · ' : '') + 'Closes ' + localTime(e.closes) + ' · ' + leftText(e.closes),
-          b => guard(b, () => pick(e))));
+        files.appendChild(slotButton(locked ? 'locked' : 'live', 'Last call',
+          (etHour(e.at) < 12 ? "Yesterday's morning" : "Yesterday's evening") + (e.deep ? ' · Sunday deep archive' : '') + ' · Closes ' + localTime(e.closes) + ' · ' + leftText(e.closes),
+          b => guard(b, () => pick(e)), 'fm-lastcall'));
       }
       const today = ST.envelopes.filter(e => isToday(e.at)).map(e => Object.assign({ out: true }, e))
         .concat((ST.upcoming || []).filter(u => isToday(u.at)).map(u => Object.assign({ out: false }, u)))
@@ -222,12 +222,12 @@
       for (const e of today) {
         const deep = e.deep ? 'Sunday deep archive · ' : '';
         if (!e.out) {
-          files.appendChild(slotButton('wait', slotTitle(e.at), deep + 'Arrives ' + localTime(e.at), () => {}));
+          files.appendChild(slotButton('wait', slotTitle(e.at), deep + 'Arrives ' + localTime(e.at), () => {}, e.deep ? 'fm-sunday' : null));
           continue;
         }
         files.appendChild(slotButton(e.opened ? 'done' : locked ? 'locked' : 'live', slotTitle(e.at),
           e.opened ? deep + 'Opened · out since ' + localTime(e.at) : deep + 'Out since ' + localTime(e.at) + ' · ' + leftText(e.closes),
-          b => { if (!e.opened) guard(b, () => pick(e)); }));
+          b => { if (!e.opened) guard(b, () => pick(e)); }, e.deep ? 'fm-sunday' : null));
       }
       todayHasUpcoming = today.some(e => !e.out);
     }
@@ -630,9 +630,26 @@
   };
 
   // ---------- How to play ----------
-  function openHow() { $('how').hidden = false; document.body.style.overflow = 'hidden'; $('how').scrollTop = 0; }
+  function howTab(tab) {
+    document.querySelectorAll('.howtab').forEach(b => { const on = b.dataset.tab === tab; b.classList.toggle('on', on); b.setAttribute('aria-selected', String(on)); });
+    $('howBasics').hidden = tab !== 'basics'; $('howManual').hidden = tab !== 'manual';
+  }
+  // openHow() opens The basics; openHow('fm-sunday') opens the Field manual at that section.
+  function openHow(section) {
+    $('how').hidden = false; document.body.style.overflow = 'hidden'; $('how').scrollTop = 0;
+    const target = typeof section === 'string' ? document.getElementById(section) : null;
+    howTab(target ? 'manual' : 'basics');
+    if (target) {
+      requestAnimationFrame(() => {
+        target.scrollIntoView({ block: 'start' });
+        if (target.classList.contains('fmenv')) { target.classList.add('flash'); setTimeout(() => target.classList.remove('flash'), 1400); }
+      });
+    }
+  }
+  document.querySelectorAll('[data-tab]').forEach(b => { b.onclick = () => { howTab(b.dataset.tab); $('how').scrollTop = 0; }; });
+  document.querySelectorAll('.fmnav [data-go]').forEach(b => { b.onclick = () => document.getElementById(b.dataset.go).scrollIntoView({ block: 'start', behavior: 'smooth' }); });
   function closeHow() { $('how').hidden = true; document.body.style.overflow = ''; }
-  document.querySelectorAll('[data-how]').forEach(b => { b.onclick = openHow; });
+  document.querySelectorAll('[data-how]').forEach(b => { b.onclick = () => openHow(); });
   $('howGo').onclick = closeHow; $('howX').onclick = closeHow;
   $('how').addEventListener('click', e => { if (e.target.id === 'how') closeHow(); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && !$('how').hidden) closeHow(); });

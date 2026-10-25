@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Special+Elite&display=swap">
-<link rel="stylesheet" href="/declass/declass.css?v=710f8802">
+<link rel="stylesheet" href="/declass/declass.css?v=efe2abb6">
 </head>
 <body>
 <div class="wrap">
@@ -156,34 +156,103 @@
  <div class="howcard">
   <div class="howtop"><span class="howstamp">Field orders</span><button class="howx" id="howX" aria-label="Close">✕</button></div>
   <h2 id="howTitle">How Declass works</h2>
-  <p class="howlead">WW2 Dispatches posts cards from history every day. Each one comes with a classified envelope here. Declassify it, turn the cards, and build your dossier.</p>
-  <h3>Daily envelopes</h3>
-  <ul><li>An envelope comes out with each card the account posts, usually in the morning (10:00 a.m. ET) and the evening (7:00 p.m. ET). Big anniversaries can bring more.</li>
-  <li>Each stays open for 24 hours, so wherever you live you have a full day to open it.</li>
-  <li>When you see a new post on our accounts, that's your signal: the envelope is out.</li></ul>
-  <h3>Declassifying one</h3>
-  <ul><li>Choose one of the three sealed envelopes. Each holds three cards: the day's dispatch and two from the archive.</li>
-  <li>Tap a card to turn it over, then swipe to the next.</li>
-  <li>The cards are yours the moment the envelope opens. If you leave early, they're already in your dossier, and a button on the home screen takes you back to turn them. A new envelope stays locked until you do.</li></ul>
-  <h3>Finishes</h3>
-  <ul><li>Every card comes in one of four finishes, set by luck: <b>Copper</b> (most cards), <b>Silver</b> (about 1 in 5), <b>Gold</b> (about 1 in 20), and <b>Top Secret</b> (about 1 in 400, numbered worldwide).</li>
-  <li>Each finish is its own slot. A copper and a gold of the same card are two different cards in your dossier. You won't see what a finish looks like until you pull it.</li>
-  <li>The odds are the same in every envelope, for everyone.</li></ul>
-  <h3>Living Cards</h3>
-  <ul><li>When a day has real archival film, that card also exists as a Living Card: the same card with the film playing on it. They turn up in about 1 in 6 archive cards, and they come in better finishes.</li></ul>
-  <h3>Name This cards</h3>
-  <ul><li>Our Name This puzzles join the archive once their answer is public. Turn one over, take a guess, then tap again for the answer.</li></ul>
-  <h3>Streaks and priority envelopes</h3>
-  <ul><li>Open at least one envelope a day (Eastern time) to keep your streak going. Miss a day and it starts over.</li>
-  <li>Every third day of your streak earns a priority envelope: three cards from anywhere in the archive, all the way back to the first dispatch. It never expires.</li></ul>
-  <h3>Your dossier</h3>
-  <ul><li>Browse your cards by series, by year, or all at once. Sets collect a month's files for a stamp, and collections (a series, a year, a theater, a nation) for pins at 25, 50, and 100 cards.</li>
-  <li>The four small squares under each card show which finishes you hold, and ▶ means a Living Card exists for it.</li>
-  <li>Tap any card to read its story, see its finishes, and every time you've pulled it.</li></ul>
+  <div class="howtabs" role="tablist">
+   <button type="button" role="tab" class="howtab on" data-tab="basics" aria-selected="true">The basics</button>
+   <button type="button" role="tab" class="howtab" data-tab="manual" aria-selected="false">Field manual</button>
+  </div>
+
+  <div class="howpanel" id="howBasics" role="tabpanel">
+   <p class="howlead">WW2 Dispatches posts cards from history every day. Each one comes with a classified envelope here. Declassify it, turn the cards, and build your dossier of the war.</p>
+   <h3>Every post brings an envelope</h3>
+   <ul><li>Envelopes usually come out in the morning (10:00 a.m. ET) and the evening (7:00 p.m. ET), and each stays open for 24 hours.</li>
+   <li>A new post on our accounts is your signal that an envelope is out.</li></ul>
+   <h3>Open one</h3>
+   <ul><li>Choose one of three sealed envelopes. Inside are three cards: the day's dispatch and two from the archive.</li>
+   <li>Tap a card to turn it over, then swipe to the next.</li></ul>
+   <h3>Collect the finishes</h3>
+   <ul><li>Every card comes in <b>Copper</b>, <b>Silver</b>, <b>Gold</b>, or the rare <b>Top Secret</b>, set by luck. Each finish is its own spot in your dossier.</li>
+   <li>Some cards also come as <b>Living Cards</b>, with real archival film playing on them.</li></ul>
+   <h3>Keep your streak</h3>
+   <ul><li>Open at least one envelope a day. Every third day earns a priority envelope full of cards from the deep archive.</li></ul>
+   <p class="howmore">Want the details? Open the <button type="button" class="linkish" data-tab="manual">Field manual</button>.</p>
+  </div>
+
+  <div class="howpanel" id="howManual" role="tabpanel" hidden>
+   <nav class="fmnav" aria-label="Field manual sections">
+    <button type="button" data-go="fm-envelopes">Envelopes</button><button type="button" data-go="fm-finishes">Finishes and odds</button><button type="button" data-go="fm-living">Living Cards</button><button type="button" data-go="fm-namethis">Name This</button><button type="button" data-go="fm-streaks">Streaks</button><button type="button" data-go="fm-locked">Locked envelopes</button><button type="button" data-go="fm-dossier">Dossier and sets</button><button type="button" data-go="fm-sharing">Sharing</button>
+   </nav>
+
+   <section id="fm-envelopes">
+    <h3>Envelope types</h3>
+    <div class="fmenv" id="fm-daily"><span class="mini-env"></span><div><b>Morning and evening envelopes</b><p>One comes out with each card we post, open for 24 hours. Inside: that day's dispatch and two cards from the last 90 days of the archive.</p></div></div>
+    <div class="fmenv" id="fm-sunday"><span class="mini-env deep"></span><div><b>Sunday deep archive</b><p>The Sunday morning envelope reaches much further back. Its two archive cards can come from anywhere in the archive, all the way to the first dispatch, and it is one of the few places Name This cards turn up.</p></div></div>
+    <div class="fmenv" id="fm-priority"><span class="mini-env prio"></span><div><b>Priority envelope</b><p>Your reward for every third day of a streak. All three cards come from the whole archive. Priority envelopes never expire, and you can save up as many as you like.</p></div></div>
+    <div class="fmenv" id="fm-comm"><span class="mini-env comm"></span><div><b>Commemorative file</b><p>On nine big anniversaries a year (Iwo Jima, VE Day, Midway, D Day, VJ Day, the first and last days of the war, Battle of Britain Day, Pearl Harbor, and the Bulge) everyone gets an extra black and gold file with three cards from the whole archive. It stays open for three days and does not count toward your streak.</p></div></div>
+    <div class="fmenv" id="fm-starter"><span class="mini-env starter"></span><div><b>Starter pack</b><p>Your first file, free: five cards, today's dispatch plus one from each series, with at least one Silver or better. You can open it before signing in.</p></div></div>
+    <div class="fmenv" id="fm-lastcall"><span class="mini-env last"></span><div><b>Last call</b><p>Missed yesterday's envelope? It stays at the top of Today's files, marked Last call, until its 24 hours run out. After that it is gone, though its card can still turn up later in the archive.</p></div></div>
+    <p class="fmnote">The odds are the same in every envelope, for everyone. Choosing one of the three envelopes adds suspense, not luck.</p>
+   </section>
+
+   <section id="fm-finishes">
+    <h3>Finishes and odds</h3>
+    <table class="fmodds">
+     <thead><tr><th>Finish</th><th>Still card</th><th>Living Card</th></tr></thead>
+     <tbody>
+      <tr><td><i class="sw f-copper"></i>Copper</td><td>about 3 in 4</td><td>about 3 in 5</td></tr>
+      <tr><td><i class="sw f-silver"></i>Silver</td><td>about 1 in 5</td><td>about 1 in 4</td></tr>
+      <tr><td><i class="sw f-gold"></i>Gold</td><td>about 1 in 20</td><td>about 1 in 8</td></tr>
+      <tr><td><i class="sw f-topsecret"></i>Top Secret</td><td>about 1 in 400</td><td>about 1 in 67</td></tr>
+     </tbody>
+    </table>
+    <ul><li>Each card has a spot for every finish. A Copper and a Gold of the same card are two different cards in your dossier, and you won't see what a finish looks like until you pull it.</li>
+    <li><b>Top Secret</b> cards carry a <b>worldwide serial</b>: the order that copy was pulled among every player in the world. Serial 0014 means it was the 14th Top Secret of that card anyone pulled.</li>
+    <li>The starter pack never holds a Top Secret.</li></ul>
+   </section>
+
+   <section id="fm-living">
+    <h3>Living Cards</h3>
+    <ul><li>When a dispatch has real archival film, it also exists as a Living Card: the same card with the film playing on it. Tap the speaker for the film's period sound when it has one.</li>
+    <li>Living Cards only come from the archive, in about 1 in 6 archive cards, and they come in better finishes. A Living Card has its own four finish spots.</li></ul>
+   </section>
+
+   <section id="fm-namethis">
+    <h3>Name This cards</h3>
+    <ul><li>Our Name This puzzles are their own suit. They join the archive once their answer is public, and they only turn up in deep archive envelopes: the Sunday morning envelope, priority envelopes, and commemorative files.</li>
+    <li>Turn one over, take a guess, then tap again to stamp the answer.</li></ul>
+   </section>
+
+   <section id="fm-streaks">
+    <h3>Streaks</h3>
+    <ul><li>A day counts when you open at least one morning or evening envelope. Days run midnight to midnight Eastern time.</li>
+    <li>Every third day of a streak earns a priority envelope. Miss a day and the streak starts over.</li>
+    <li>Priority envelopes, commemorative files, and the starter pack don't count toward the streak.</li></ul>
+   </section>
+
+   <section id="fm-locked">
+    <h3>Locked envelopes</h3>
+    <ul><li>Your cards are yours the moment an envelope opens. If you leave before turning them all, they wait for you on the home screen.</li>
+    <li>Until you turn them, your other envelopes stay locked. Tap the waiting cards button to finish turning them.</li></ul>
+   </section>
+
+   <section id="fm-dossier">
+    <h3>Your dossier and sets</h3>
+    <ul><li>Browse by series, by year, or all at once. The four small squares under each card show which finishes you hold, and ▶ means a Living Card exists for it.</li>
+    <li><b>Monthly files:</b> hold every card posted in a month to earn that month's COMPLETE stamp when the month closes. Catch up later and the stamp still comes, dated the day you finished.</li>
+    <li><b>Collections</b> (a series, a year, a theater, a nation) earn copper, silver, and gold pins at 25, 50, and 100 different cards. Duplicates don't count toward pins.</li></ul>
+   </section>
+
+   <section id="fm-sharing">
+    <h3>Sharing and file numbers</h3>
+    <ul><li>Share any envelope's cards, or any single card from your dossier, as a picture with a caption ready to post.</li>
+    <li>Every picture carries a <b>file number</b>. Anyone can check it at ww2dispatches.com/declass to see that the card was really pulled. A made up number won't check out.</li></ul>
+   </section>
+  </div>
+
   <button class="btn alt" id="howTilt" hidden>Turn on tilt</button>
   <button class="btn" id="howGo">Got it</button>
  </div>
 </div>
+
 <div class="shui" id="shui" hidden>
  <div class="shpick">
   <button class="back" id="shBack">◀ Back</button>
@@ -197,6 +266,6 @@
 </div>
 <div class="toast" id="toast" hidden></div>
 <div class="glow" id="glow"></div>
-<script src="/declass/declass.js?v=209dc7ca"></script>
+<script src="/declass/declass.js?v=ba849cc9"></script>
 </body>
 </html>

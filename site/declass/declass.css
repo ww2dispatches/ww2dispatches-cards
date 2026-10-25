@@ -332,3 +332,48 @@ button:focus-visible,.env:focus-visible{outline:3px solid var(--brass);outline-o
 /* even space above (to the last envelope button) and below (to the divider) */
 .nextfile{margin:0;padding-top:10px} /* padding, since margins next to the button collapse */
 .slotbtn.wait{opacity:.6;border-style:dashed} /* not out yet: Arrives 5:00 PM */
+
+/* How to play: tabs and the Field manual (25 Oct 2026) */
+.howtabs{display:flex;gap:6px;margin:6px 0 10px;border-bottom:2px solid var(--line)}
+.howtab{font-family:var(--display);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:13px;color:var(--mute);background:none;border:0;border-bottom:3px solid transparent;margin-bottom:-2px;padding:8px 10px;cursor:pointer}
+.howtab.on{color:var(--red);border-bottom-color:var(--red)}
+.howmore{font-size:14px;margin:16px 0 0}
+.linkish{font:inherit;color:var(--navy);text-decoration:underline;background:none;border:0;padding:0;cursor:pointer}
+.fmnav{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 6px}
+.fmnav button{font-family:var(--type);font-size:12px;border:1px solid var(--line);background:var(--env);color:var(--ink);padding:5px 9px;border-radius:14px;cursor:pointer}
+#howManual section{scroll-margin-top:12px}
+.fmenv{display:flex;gap:12px;align-items:flex-start;margin:10px 0;padding:8px;border-radius:3px}
+.fmenv b{font-family:var(--display);font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:14px}
+.fmenv p{margin:2px 0 0;font-size:14px;line-height:1.45}
+.fmenv.flash{background:#fff3cf;transition:background 1.2s}
+.mini-env{flex:0 0 52px;height:31px;position:relative;background:#E8DFC7;border:1px solid #cdbf9f;box-shadow:0 2px 5px rgba(0,0,0,.15);overflow:hidden;margin-top:2px}
+.mini-env::before{content:"";position:absolute;left:0;right:0;top:0;height:62%;background:#ECE3CB;clip-path:polygon(0 0,100% 0,50% 100%);filter:drop-shadow(0 1px 1px rgba(60,45,20,.3))}
+.mini-env::after{content:"";position:absolute;left:50%;top:62%;width:10px;height:10px;margin:-5px 0 0 -5px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#c95d50,#8e3a30 70%)}
+.mini-env.deep{box-shadow:0 0 0 2px var(--navy),0 2px 5px rgba(0,0,0,.15)}
+.mini-env.prio{background:#C9A774;border-color:#9e7f4f}.mini-env.prio::before{background:#D3B383}
+.mini-env.comm{background:#1d1a17;border-color:#b8902a}.mini-env.comm::before{background:#2b2621}.mini-env.comm::after{background:radial-gradient(circle at 35% 30%,#f3dc7f,#b8902a 55%,#7a560c)}
+.mini-env.starter{box-shadow:0 0 0 2px #2f5a2a,0 2px 5px rgba(0,0,0,.15)}
+.mini-env.last{opacity:.85;border-style:dashed;border-color:var(--red)}
+.fmnote{font-family:var(--type);font-size:12px;color:var(--mute);margin:6px 0 0}
+.fmodds{width:100%;border-collapse:collapse;font-size:13px;margin:4px 0 8px}
+.fmodds th{font-family:var(--display);font-weight:500;text-transform:uppercase;letter-spacing:.08em;font-size:11px;color:var(--mute);text-align:left;border-bottom:1px solid var(--line);padding:4px}
+.fmodds td{padding:5px 4px;border-bottom:1px dotted var(--line)}
+.fmodds .sw{display:inline-block;width:11px;height:11px;margin-right:6px;vertical-align:-1px;border-radius:1px}
+.sw.f-copper{background:var(--copper)}.sw.f-silver{background:linear-gradient(135deg,#7e838c,#c9ced6,#7e838c)}.sw.f-gold{background:linear-gradient(135deg,#a67c1e,#e9c45a,#a67c1e)}.sw.f-topsecret{background:linear-gradient(135deg,#8e97a4,#f6f8fb,#aeb6c2);outline:1px solid var(--red)}
+/* the small "what's this" hint on home rows */
+.slotbtn .help{display:inline-grid;place-items:center;width:20px;height:20px;margin-left:6px;border-radius:50%;border:1.5px solid currentColor;font-family:Georgia,serif;font-style:italic;font-weight:700;font-size:12px;line-height:1;vertical-align:3px;opacity:.75;cursor:help}
+.slotbtn b .help,.slotbtn.locked b .help{display:inline-grid;padding:0;width:20px;height:20px;box-sizing:border-box;color:inherit;font-size:12px;letter-spacing:0;text-transform:none}
+.slotbtn span span.help,.slotbtn.locked span span.help{display:inline-grid;padding:0;width:18px;height:18px;margin:0 6px 0 0;box-sizing:border-box;font-size:11px;vertical-align:1px;color:var(--navy);border-color:var(--navy);opacity:1}
+.slotbtn.comm span span.help{color:#e3c25e;border-color:#e3c25e}
+
+/* Envelope layout, 25 Oct 2026: label, number, and CLASSIFIED moved off the creases.
+   Label upper left, number top right of center, CLASSIFIED top center (the DECLASS stamp lands beside it).
+   Priority, starter, and commemorative envelopes keep CLASSIFIED on the right, since their own stamp sits top left. */
+.env .lbl{top:27%;bottom:auto;max-width:36%;z-index:5}
+.env:not(.priority):not(.commem):not(.starter) .lbl b{font-size:11.5px;letter-spacing:.04em}
+.env .no{right:auto;left:63%;top:7%}
+.env .cstamp{right:auto;left:31%;top:10%}
+.env .dstamp{right:auto;left:49%;top:21%}
+.env.priority .cstamp,.env.commem .cstamp,.env.starter .cstamp{left:auto;right:5%;top:24%}
+.env.priority .dstamp,.env.commem .dstamp,.env.starter .dstamp{left:auto;right:4%;top:34%}
+.env.priority .lbl,.env.commem .lbl,.env.starter .lbl{top:auto;bottom:6%}
