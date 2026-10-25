@@ -292,7 +292,15 @@
   }
 
   // ---------- sections ----------
-  let allFilter = 'all', lastSection = null;
+  let allFilter = 'all', allSubject = '', lastSection = null;
+  // Subject filter for All cards (25 Oct 2026), built from the theme tags every card already carries
+  // (analytics/themes.md). Only subjects with posted cards are offered.
+  const SUBJ = [
+    ['Who', 'who', [['leaders', 'Leaders'], ['soldiers and sailors', 'Soldiers and sailors'], ['airmen', 'Airmen'], ['civilians', 'Civilians'], ['women', 'Women'], ['children', 'Children'], ['African Americans', 'African Americans'], ['Japanese Americans', 'Japanese Americans'], ['Native Americans', 'Native Americans'], ['Jewish people', 'Jewish people']]],
+    ['What happened', 'story', [['combat', 'Combat'], ['turning point', 'Turning points'], ['invention or machine', 'Inventions and machines'], ['decision or diplomacy', 'Decisions and diplomacy'], ['survival or rescue', 'Survival and rescue'], ['first or barrier broken', 'Firsts and barriers broken'], ['everyday life', 'Everyday life'], ['loss or atrocity', 'Loss and tragedy']]],
+    ['Branch', 'branch', [['Army', 'Army'], ['Navy', 'Navy'], ['Marines', 'Marines'], ['Army Air Forces', 'Air forces'], ['Coast Guard', 'Coast Guard'], ["women's services", "Women's services"], ['civilian agency', 'Civilian agencies']]],
+  ];
+  const subjTest = v => { if (!v) return () => true; const i = v.indexOf('|'), k = v.slice(0, i), t = v.slice(i + 1); return c => (c[k] || []).includes(t); };
   function section(kind, key) {
     lastSection = [kind, key];
     const H = holdingsNow();
@@ -307,11 +315,16 @@
     } else {
       const F = { all: () => true, missing: c => !H.has(c.id), living: c => c.hasFilm };
       SERIES.forEach(([k]) => { F[k] = c => c.series === k; });
-      list = CAT.filter(F[allFilter]).slice().reverse();
+      const st = subjTest(allSubject);
+      list = CAT.filter(c => F[allFilter](c) && st(c)).slice().reverse();
       title = 'All cards';
       $('filters').innerHTML = [['all', 'All'], ['missing', 'Missing'], ...SERIES.map(s => [s[0], s[1]]), ['living', 'Has a Living Card']]
         .map(([k, l]) => `<button data-f="${k}" class="${k === allFilter ? 'on' : ''}">${l}</button>`).join('');
       $('filters').querySelectorAll('button').forEach(b => { b.onclick = () => { allFilter = b.dataset.f; section('all'); }; });
+      const opts = SUBJ.map(([g, k, vals]) => { const o = vals.map(([t, l]) => [t, l, CAT.filter(c => (c[k] || []).includes(t)).length]).filter(x => x[2]);
+        return o.length ? `<optgroup label="${g}">${o.map(([t, l, n]) => `<option value="${esc(k + '|' + t)}"${allSubject === k + '|' + t ? ' selected' : ''}>${esc(l)} (${n})</option>`).join('')}</optgroup>` : ''; }).join('');
+      $('filters').insertAdjacentHTML('beforeend', `<label class="subj${allSubject ? ' on' : ''}"><span>Subject</span><select id="subjSel"><option value="">Any subject</option>${opts}</select></label>`);
+      $('subjSel').onchange = e => { allSubject = e.target.value; section('all'); };
     }
     $('sectionTitle').textContent = title;
     const h = list.filter(c => H.has(c.id)).length;
@@ -322,7 +335,7 @@
     show('sSection');
   }
   $('backSection').onclick = () => { renderHome(); show('sHome'); };
-  $('allBtn').onclick = () => { allFilter = 'all'; section('all'); };
+  $('allBtn').onclick = () => { allFilter = 'all'; allSubject = ''; section('all'); };
 
   // ---------- choose your envelope ----------
   let cur = null;

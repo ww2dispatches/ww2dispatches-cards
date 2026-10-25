@@ -404,3 +404,9 @@ button:focus-visible,.env:focus-visible{outline:3px solid var(--brass);outline-o
 /* iPhones draw ◀ and ▶ as blue emoji keys; the text selector in the markup plus this keeps them plain (25 Oct 2026) */
 body{font-variant-emoji:text}
 .srow.none{opacity:.55}
+/* Subject filter in All cards */
+.filters .subj{flex-basis:100%;display:flex;align-items:center;justify-content:center;gap:8px;margin-top:4px}
+.filters .subj span{font-family:var(--display);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
+.filters .subj select{font-family:var(--type);font-size:16px;color:var(--ink);background:var(--env);border:1px solid var(--line);border-radius:14px;padding:6px 28px 6px 12px;-webkit-appearance:none;appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--ink) 50%),linear-gradient(135deg,var(--ink) 50%,transparent 50%);background-position:calc(100% - 15px) 52%,calc(100% - 10px) 52%;background-size:5px 5px;background-repeat:no-repeat;max-width:100%}
+.filters .subj.on select{background-color:var(--ink);color:var(--paper);border-color:var(--ink);background-image:linear-gradient(45deg,transparent 50%,var(--paper) 50%),linear-gradient(135deg,var(--paper) 50%,transparent 50%)}
+.filters .subj select{width:min(250px,64vw);text-overflow:ellipsis}

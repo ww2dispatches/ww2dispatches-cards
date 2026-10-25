@@ -80,6 +80,10 @@ def tags(d):
         "subjects": as_list(d.get("subject")),
         "theater": as_list(t.get("theater")),
         "nations": as_list(t.get("nations")),
+        # who, story, and branch drive the Declass subject filter (values from analytics/themes.md)
+        "who": as_list(t.get("who")),
+        "story": as_list(t.get("story")),
+        "branch": as_list(t.get("branch")),
     }
 
 

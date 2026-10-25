@@ -55,7 +55,7 @@ export function summary(card, t) {
     kind: card.kind, id: card.id, num: card.num, series: card.series, seriesName: card.seriesName,
     short: card.short, title: card.title, date: card.date, place: card.place, era: card.era,
     format: card.format, postAt: card.postAt, img: card.img, hasFilm: filmReleased(card, t),
-    subjects: card.subjects, theater: card.theater, nations: card.nations,
+    subjects: card.subjects, theater: card.theater, nations: card.nations, who: card.who, story: card.story, branch: card.branch,
   };
   if (s.hasFilm) Object.assign(s, { filmMp4: card.film.mp4, filmPoster: card.film.poster, filmSound: card.film.sound });
   if (card.kind === 'namethis') Object.assign(s, { answer: card.answer, clue: card.clue, imgPuzzle: card.imgPuzzle });

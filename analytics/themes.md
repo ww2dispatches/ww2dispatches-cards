@@ -2,6 +2,8 @@
 
 Every dispatch JSON in `dispatches/` and every Name This JSON in `namethis/` carries a `themes` block, so the Wednesday analytics review can tell what a post was about, not just its series. The Thursday cards run tags each new dispatch, the Saturday Name This run tags each Name This card, and the Friday video run adds the `video` part after looking at the finished video's first frame.
 
+Declass also reads `who`, `story`, and `branch` for the Subject filter in All cards (renderer/catalog.py carries them into the game catalog, and site/declass/declass.js maps each value to a player facing label), so a new value here needs a label added there.
+
 **Use only the values listed here, spelled exactly as written.** A new value can be added only by the Wednesday review, which adds it to this file and says so in its summary. `renderer/analytics.py` flags any value that is not on this list.
 
 ```json
