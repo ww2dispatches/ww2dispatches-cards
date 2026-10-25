@@ -685,19 +685,36 @@
       } catch (e) { audio.volume = 0.35; }
     }
   }
-  function startMusic() { if (!SND.music) return; musicNode(); audio.play().catch(() => {}); musicStarted = true; }
-  function stopMusic() { if (audio) audio.pause(); }
+  // iPhone browsers only let audio start on a finished tap, so keep trying on each tap until it plays.
+  let musicTrying = false;
+  function startMusic() {
+    if (!SND.music || musicTrying) return;
+    musicNode();
+    musicTrying = true;
+    const p = audio.play();
+    if (p && p.then) p.then(() => { musicStarted = true; musicTrying = false; }).catch(() => { musicTrying = false; });
+    else { musicStarted = true; musicTrying = false; }
+  }
+  function stopMusic() { if (audio) audio.pause(); musicStarted = false; }
   function duckMusic(down) {
     if (!duck) return;
     const t = actx.currentTime; duck.gain.cancelScheduledValues(t); duck.gain.setValueAtTime(duck.gain.value, t);
     duck.gain.linearRampToValueAtTime(down ? 0.18 : 1, t + (down ? 0.4 : 1.2));
   }
-  document.addEventListener('pointerdown', () => { ac(); if (SND.music && !musicStarted) startMusic(); tiltResume(); }, { capture: true });
+  const onGesture = () => { ac(); if (SND.music && !musicStarted) startMusic(); tiltResume(); };
+  ['touchend', 'click', 'keydown'].forEach(ev => document.addEventListener(ev, onGesture, { capture: true }));
+  const ICON = {
+    sfx: '<path d="M4 9h4l5-4v14l-5-4H4z"/>',
+    sfxOn: '<path d="M16 9.5a4 4 0 0 1 0 5M18.5 7a7.5 7.5 0 0 1 0 10"/>',
+    music: '<path d="M9 18V5l11-2v13"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="17.5" cy="16" r="2.5"/>',
+    slash: '<path d="M3 3l18 18"/>',
+  };
   function paintSnd() {
     document.querySelectorAll('.sndbtn').forEach(b => {
-      const on = SND[b.dataset.t];
-      if (b.dataset.t === 'sfx') b.textContent = on ? '🔊' : '🔇';
-      b.title = (b.dataset.t === 'sfx' ? 'Sound effects ' : 'Music ') + (on ? 'on' : 'off');
+      const t = b.dataset.t, on = SND[t], name = t === 'sfx' ? 'Sound' : 'Music';
+      b.innerHTML = `<svg viewBox="0 0 24 24" aria-hidden="true">${ICON[t]}${t === 'sfx' && on ? ICON.sfxOn : ''}${on ? '' : ICON.slash}</svg>${name}${on ? '' : ' off'}`;
+      b.title = (t === 'sfx' ? 'Sound effects ' : 'Music ') + (on ? 'on, tap to turn off' : 'off, tap to turn on');
+      b.setAttribute('aria-label', b.title);
       b.classList.toggle('off', !on); b.setAttribute('aria-pressed', String(on));
     });
   }
