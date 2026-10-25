@@ -175,6 +175,7 @@
     return b;
   }
   function renderHome() {
+    let todayHasUpcoming = false;
     const p = ST && ST.player, files = $('files');
     files.innerHTML = '';
     const locked = signedIn() && ST.waiting.length > 0;
@@ -203,19 +204,44 @@
         files.appendChild(slotButton('prio ' + (locked ? 'locked' : 'live'), 'Priority envelope' + (ST.priority > 1 ? 's ×' + ST.priority : ''), 'Three cards from the deep archive · never expires',
           b => guard(b, () => pick({ kind: 'priority' }))));
       }
-      for (const e of ST.envelopes.slice().reverse()) {
-        const name = (etHour(e.at) < 12 ? 'Morning' : 'Evening') + ' envelope';
+      // Today's files (option A, 25 Oct 2026): one row per envelope time today in the player's own
+      // day, each not out yet, out, or opened. Yesterday's envelopes drop off once opened; one still
+      // unopened gets a Last call row while its 24 hours run.
+      const dayStart = new Date(); dayStart.setHours(0, 0, 0, 0);
+      const dayEnd = new Date(dayStart.getTime()); dayEnd.setDate(dayEnd.getDate() + 1);
+      const isToday = iso => { const x = Date.parse(iso); return x >= dayStart.getTime() && x < dayEnd.getTime(); };
+      const slotTitle = at => (etHour(at) < 12 ? 'Morning' : 'Evening') + ' envelope';
+      for (const e of ST.envelopes.filter(e => !isToday(e.at) && !e.opened)) {
+        files.appendChild(slotButton(locked ? 'locked' : 'live', 'Last call · ' + (etHour(e.at) < 12 ? "Yesterday's morning" : "Yesterday's evening"),
+          (e.deep ? 'Sunday deep archive · ' : '') + 'Closes ' + localTime(e.closes) + ' · ' + leftText(e.closes),
+          b => guard(b, () => pick(e))));
+      }
+      const today = ST.envelopes.filter(e => isToday(e.at)).map(e => Object.assign({ out: true }, e))
+        .concat((ST.upcoming || []).filter(u => isToday(u.at)).map(u => Object.assign({ out: false }, u)))
+        .sort((a, b) => a.at.localeCompare(b.at));
+      for (const e of today) {
         const deep = e.deep ? 'Sunday deep archive · ' : '';
-        files.appendChild(slotButton(e.opened ? 'done' : locked ? 'locked' : 'live', name,
+        if (!e.out) {
+          files.appendChild(slotButton('wait', slotTitle(e.at), deep + 'Arrives ' + localTime(e.at), () => {}));
+          continue;
+        }
+        files.appendChild(slotButton(e.opened ? 'done' : locked ? 'locked' : 'live', slotTitle(e.at),
           e.opened ? deep + 'Opened · out since ' + localTime(e.at) : deep + 'Out since ' + localTime(e.at) + ' · ' + leftText(e.closes),
           b => { if (!e.opened) guard(b, () => pick(e)); }));
       }
+      todayHasUpcoming = today.some(e => !e.out);
     }
     $('signBar').hidden = Boolean(p);
     $('signBar').querySelector('span').textContent = STARTER
       ? 'Your starter pack is waiting in this browser. Save your dossier to keep it and collect every day.'
       : 'Sign in to keep a dossier and open a new envelope file every day.';
-    $('nextFile').textContent = ST && ST.next ? 'Next file arrives ' + localDayTime(ST.next) : '';
+    let nextText = '';
+    if (ST && ST.next && !(signedIn() && todayHasUpcoming)) {
+      const n = new Date(ST.next), tmr = new Date(); tmr.setDate(tmr.getDate() + 1);
+      const when = n.toDateString() === new Date().toDateString() ? 'today at ' : n.toDateString() === tmr.toDateString() ? 'tomorrow at ' : n.toLocaleDateString([], { weekday: 'long' }) + ' at ';
+      nextText = 'Next file arrives ' + when + localTime(ST.next);
+    }
+    $('nextFile').textContent = nextText;
 
     // the last envelope's cards
     const pulls = myPulls();

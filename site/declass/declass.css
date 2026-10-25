@@ -331,3 +331,4 @@ button:focus-visible,.env:focus-visible{outline:3px solid var(--brass);outline-o
 .files-sub{line-height:1.7;letter-spacing:.02em;margin-top:6px}
 /* even space above (to the last envelope button) and below (to the divider) */
 .nextfile{margin:0;padding-top:10px} /* padding, since margins next to the button collapse */
+.slotbtn.wait{opacity:.6;border-style:dashed} /* not out yet: Arrives 5:00 PM */

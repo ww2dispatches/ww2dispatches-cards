@@ -4,14 +4,14 @@
 import { json } from '../_lib/util.js';
 import { now } from '../_lib/catalog.js';
 import { signedInPlayer, publicPlayer } from '../_lib/player.js';
-import { dailyOpen, commemorativeOpen, nextSlot } from '../_lib/envelopes.js';
+import { dailyOpen, commemorativeOpen, nextSlot, upcomingSlots } from '../_lib/envelopes.js';
 import { signPending, publicPull, withCard } from '../_lib/pulls.js';
 
 export async function onRequestGet({ request, env }) {
   const t = now(env, request);
   const daily = dailyOpen(t);
   const commemorative = commemorativeOpen(t);
-  const base = { now: t.toISOString(), next: nextSlot(t) };
+  const base = { now: t.toISOString(), next: nextSlot(t), upcoming: upcomingSlots(t) };
 
   const player = await signedInPlayer(env, request);
   if (!player) return json({ ...base, player: null, envelopes: daily, commemorative, priority: 0, waiting: [], pulls: [] });

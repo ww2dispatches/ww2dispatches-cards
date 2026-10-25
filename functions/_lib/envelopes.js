@@ -41,6 +41,14 @@ export function dailyOpen(t) {
 // The next envelope time after now (just the time; nothing about the card).
 export const nextSlot = t => SLOT_TIMES.find(s => Date.parse(s) > t.getTime()) || null;
 
+// Envelope times still to come in the next 24 hours (times only, nothing about the cards), so the
+// page can show tonight's envelope as "Arrives 5:00 PM".
+export function upcomingSlots(t) {
+  const now = t.getTime();
+  return SLOT_TIMES.filter(s => { const at = Date.parse(s); return at > now && at <= now + DAILY_HOURS * HOUR; })
+    .map(s => ({ at: s, deep: isSundayMorning(new Date(s)) }));
+}
+
 function commemorativeFor(year, c) {
   const day = `${year}-${c.md}`;
   const opens = zonedTime(day, '10:00');
