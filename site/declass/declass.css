@@ -227,7 +227,7 @@ button:focus-visible,.env:focus-visible{outline:3px solid var(--brass);outline-o
 .prow span{font-family:var(--type);font-size:11px;color:var(--mute);width:34px}
 .icons{display:flex;gap:8px;flex-wrap:wrap}
 .icons a{width:32px;height:32px;border-radius:50%;border:1px solid var(--line);background:#f4ecd8;display:grid;place-items:center;color:var(--ink)}
-.icons svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.icons svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .notyet{font-family:var(--type);font-size:10.5px;color:var(--red);margin:6px 0 0 44px}
 .history{max-width:440px;margin:18px auto 0;font-family:var(--type);font-size:12px}
 .history h3{font-family:var(--display);font-size:13px;font-weight:500;text-transform:uppercase;letter-spacing:.08em;margin:0 0 6px;color:var(--red)}
