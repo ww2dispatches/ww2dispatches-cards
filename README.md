@@ -28,7 +28,7 @@ Public link pattern: `https://raw.githubusercontent.com/ww2dispatches/ww2dispatc
 ## Living Cards (video)
 Same card bands with archival footage playing in the photo window, for big dispatches that have film.
 * Since 18 Oct 2026 trimmed clips and finished videos are committed to ww2dispatches/ww2dispatches-videos (`footage/` and `videos/`), and Buffer links to `https://raw.githubusercontent.com/ww2dispatches/ww2dispatches-videos/main/videos/<file>`. This repo's `footage/` and `videos/` are working folders that ignore .mp4 files (a few older .mp4 files stay until the 20 to 23 Oct 2026 posts that use them have gone out).
-* Finished clips: `dispatch-NNN-x.mp4` (1600 x 1440), `dispatch-NNN-instagram.mp4` (1080 x 1350), `dispatch-NNN-vertical.mp4` (1080 x 1920, for Reels, TikTok, and Shorts), each with a `-poster.jpg` of the first frame.
+* Finished clips: `dispatch-NNN-x.mp4` (1600 x 1440), `dispatch-NNN-instagram.mp4` (1080 x 1350, Instagram and Facebook), `dispatch-NNN-threads.mp4` (1080 x 1350, taller bottom strip for Threads), `dispatch-NNN-vertical.mp4` (1080 x 1920, for Reels, TikTok, and Shorts), each with a `-poster.jpg` of the first frame.
 * Add a `video` block to the dispatch JSON (`footage`, optional `focusX` and `focusY`, plus `sourceUrl` and `note`), then run `node renderer/living.js <id>`.
 
 ## Living Press page

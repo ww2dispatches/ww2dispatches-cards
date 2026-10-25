@@ -40,15 +40,16 @@ Under the pull line, every vertical Living Card carries one short typewriter lin
 
 ## Bottom strip (X and 4:5 videos)
 Video players draw over the bottom of a video: the timestamp in the bottom left, the mute button in the bottom right (Brian's X and Threads screenshots, 20 and 21 Oct 2026), and on a desktop the play, progress, volume, and speed bar along the bottom with dark shading behind it. So the X and 4:5 Living Card videos get the same extra paper at the bottom of the bottom band as the X still card (Cards doc), and the date, place, pull line, and handle all sit above it, with the pull line and handle at the normal right edge. The top band stays the same so the film window stays as large as possible. If the desktop bar is ever seen touching the place line on a large monitor, add a little more room to the videos only. The vertical videos use the vertical safe zone instead.
+* **Taller strip for X and Threads (25 Oct 2026, from Brian's No. 017 screenshots):** the phone mute button on X and Threads reaches about 10% of the card width up from the bottom, and the Threads desktop button about 12.5%, so it covered the handle. The X video now gets a 9 unit strip and Threads gets its own 4:5 file, `dispatch-NNN-threads.mp4`, with a 10.5 unit strip (1 unit is 1% of the card width). Only the bottom edge of the film window moves up, with the date, place, pull line, and handle moving up with it; the layout is otherwise unchanged. The Instagram and Facebook 4:5 file keeps the 5 unit strip, and the vertical video is never touched. The strips live in `STRIP` in `renderer/card.html`.
 
 ## Living Cards
 The post card with archival footage playing in the photo window. Same bands, same stamp, no added effects, so it reads as the same brand in a feed.
-* **Three shapes from one clip:** X 1600 x 1440 and Instagram, Threads, and Facebook 1080 x 1350 (both with the bottom strip kept clear); vertical 1080 x 1920 for TikTok and YouTube Shorts (inside the vertical safe zone, with the hook line).
+* **Three shapes from one clip:** X 1600 x 1440, Instagram and Facebook 1080 x 1350, and Threads 1080 x 1350 (all with the bottom strip kept clear, taller on X and Threads); vertical 1080 x 1920 for TikTok and YouTube Shorts (inside the vertical safe zone, with the hook line).
 * **Clips** are cut on Thursday from the source film research secured (the `film` block names the file and the stretch that holds the shots). They are short and loopable, about 15 seconds. The first frame doubles as the thumbnail, so it must be a strong shot. **Open on motion or action in the first two seconds** (Test B, from the 23 Oct 2026 run; see the playbook): viewers leave within a few seconds, so start the cut on the strongest moving shot rather than people standing or a still street.
 * **Sound:** keep the film's own period sound whenever the source has it, especially battle sounds on Battle Lines. Cut the audio together with the picture so each sound stays with its shot, and normalize loudness to about -16 LUFS. Set `"sound": true` in the dispatch JSON's `video` block so `renderer/living.js` keeps the clip's audio (otherwise it adds a quiet blank track for compatibility, as on silent Signal Corps film). Never use a stretch where music or narration plays under the shots. Note in the YouTube description that the sound is the original soundtrack of the source film.
 * **Stamp:** the normal series stamps. A special video stamp was considered ("Elite" rejected); revisit only if the normal stamps don't feel distinct enough.
 * **Hook:** a `video.hook` line for the vertical video (see the hook rules above).
-* **Files:** dispatch-NNN-x.mp4, -instagram.mp4, -vertical.mp4.
+* **Files:** dispatch-NNN-x.mp4, -instagram.mp4, -threads.mp4, -vertical.mp4. `node renderer/living.js <id> --only=x,threads` renders just those shapes and leaves the others alone.
 
 ### Film sources
 **The Wednesday research run does the film hunt and the downloads (Research doc); this section is the source list it uses.** Thursday only goes back to these when a secured film fails and a quick replacement exists.
@@ -89,7 +90,7 @@ After a video is finished, add `video` to the dispatch's `themes` block: `kind` 
 Every noon video posts at **12:00 p.m. America/Denver on all six channels** (channel IDs in the Brief):
 * **X:** the X video.
 * **Instagram:** a Reel, shouldShareToFeed true. The still stays in the feed separately.
-* **Threads:** the 4:5 video, metadata {threads: {type: "post", topic: "History Threads"}}.
+* **Threads:** the Threads video (dispatch-NNN-threads.mp4), metadata {threads: {type: "post", topic: "History Threads"}}.
 * **Facebook:** the 4:5 video, type **"post" for Living Cards** (as Nos. 009 and 013 were) and **"reel" for Story Cards** (as Nos. 011 and 015 were).
 * **YouTube Shorts:** the vertical video, with a title and categoryId "27" (Education).
 * **TikTok:** the vertical video, with a title.
@@ -102,7 +103,7 @@ Every noon video posts at **12:00 p.m. America/Denver on all six channels** (cha
 
 ## Video Press Kit
 Every Living Card gets a kit, stored with the dispatch on GitHub (kits/dispatch-NNN-kit.md, with the key fields also in the JSON `kit` block, including a `scheduled` field, true or a short status line, which Living Press shows):
-* The three video files (X, 4:5, vertical).
+* The four video files (X, 4:5, Threads, vertical).
 * YouTube Shorts title and description.
 * TikTok caption.
 * The short "points at the film" caption for X, Instagram, Threads, and Facebook.
@@ -151,3 +152,4 @@ These inform decisions but do not block the daily pace.
 * 21 Oct 2026 (night): The Friday run reads the playbook first and tags each video's kind, opening shot (from its real first frames), and sound. Test B starts with the 23 Oct run: Living Cards open on motion or action. Checking the first frames showed Alamein (No. 013) opens nearly black and Aachen on a still street, so their model notes were corrected, and Alamein's Instagram and TikTok covers were moved to its muzzle flash at 3.0 seconds.
 * 23 Oct 2026: Every noon video gets an Instagram poster file (Story Cards included), and the Friday run uploads a review copy of each poster to the Schedule Board, which now shows card pictures and a Review the week view. The videos still play only in Living Press.
 * 24 Oct 2026: The video run moved to Thursday, ahead of the cards, and now builds from the Wednesday research run's slate: research picks each 8 a.m. event for the best usable film, downloads the film into the videos repo, and downloads the Story Card photos. The video always covers the 8 a.m. dispatch. If a secured film falls through on Thursday, the day becomes a Story Card for the same event; the event, number, and facts never change. Scripts, hook lines, and captions draw only from the dispatch's `facts` block.
+* 25 Oct 2026: From Brian's X and Threads screenshots of No. 017, the mute button still covered the handle on phones and on Threads desktop. Living Card videos for X get a 9 unit bottom strip and a new Threads file gets 10.5 units; the layout stays the same, with the film window bottom and everything below it moved up. Instagram, Facebook, YouTube, and TikTok files are unchanged. Nos. 019, 021, 024, and 027 had their X and Threads videos re-rendered and swapped into the scheduled Buffer posts (commit 2080246 in the videos repo).

@@ -4,7 +4,9 @@
 // "hook" is the short line under the pull line on the vertical video (about 45 characters, two lines at most).
 // footage/<id>.mp4 is the already trimmed clip (square pixels). Add "sound": true to the video block to keep
 // the clip's own audio (period film sound, never music); otherwise a silent track is added. Output goes to videos/:
-//   dispatch-NNN-x.mp4 (1600 x 1440), dispatch-NNN-instagram.mp4 (1080 x 1350), dispatch-NNN-vertical.mp4 (1080 x 1920)
+//   dispatch-NNN-x.mp4 (1600 x 1440), dispatch-NNN-instagram.mp4 (1080 x 1350, Instagram and Facebook),
+//   dispatch-NNN-threads.mp4 (1080 x 1350, taller bottom strip for the Threads mute button), dispatch-NNN-vertical.mp4 (1080 x 1920)
+// Add --only=x,threads to render just those shapes (the other files are left as they are).
 const { chromium } = require("playwright");
 const { execFileSync } = require("child_process");
 const fs = require("fs");
@@ -17,7 +19,8 @@ const CHROME = process.env.CHROME_PATH || "/opt/pw-browsers/chromium-1194/chrome
 const TONE = "colorchannelmixer=.927:.092:.023:0:.042:.962:.020:0:.033:.064:.896,eq=contrast=1.04";
 
 (async () => {
-  const ids = process.argv.slice(2);
+  const only = (process.argv.find(a => a.startsWith("--only=")) || "").slice(7).split(",").filter(Boolean);
+  const ids = process.argv.slice(2).filter(a => !a.startsWith("--"));
   if (!ids.length) { console.error("Give one or more dispatch ids."); process.exit(1); }
   const browser = await chromium.launch({ executablePath: fs.existsSync(CHROME) ? CHROME : undefined });
   const page = await browser.newPage();
@@ -37,10 +40,11 @@ const TONE = "colorchannelmixer=.927:.092:.023:0:.042:.962:.020:0:.033:.064:.896
     const problems = out.vertical.problems;
     if (problems.length) throw new Error(`${id}: ${problems.join("; ")}. Fix the dispatch JSON and render again.`);
     for (const [kind, { png, win }] of Object.entries(out)) {
+      if (only.length && !only.includes(kind)) continue;
       const overlay = path.join(tmp, `${stem}-${kind}.png`);
       fs.writeFileSync(overlay, Buffer.from(png.split(",")[1], "base64"));
       const [x, y, w, h] = win;
-      const [W, H] = { x: [1600, 1440], instagram: [1080, 1350], vertical: [1080, 1920] }[kind];
+      const [W, H] = { x: [1600, 1440], instagram: [1080, 1350], threads: [1080, 1350], vertical: [1080, 1920] }[kind];
       const file = path.join(ROOT, "videos", `${stem}-${kind}.mp4`);
       const fc =
         `[0:v]scale=${w}:${h}:force_original_aspect_ratio=increase:flags=lanczos,` +
