@@ -316,7 +316,7 @@ button:focus-visible,.env:focus-visible{outline:3px solid var(--brass);outline-o
 .filegood{font-family:var(--display);font-weight:700;letter-spacing:.14em;color:#1f3f6e;border:3px solid #1f3f6e;border-radius:3px;padding:2px 10px;display:inline-block;transform:rotate(-4deg);margin:0 0 8px}
 
 /* one toolbar row: Sound, Music, How to play */
-.toolbar{display:flex;justify-content:flex-end;gap:6px;padding-top:12px}
+.toolbar{display:flex;justify-content:flex-start;gap:6px;padding-top:12px}
 .land .toolbar{width:100%;padding-top:0;margin-bottom:10px}
 .tbtn{display:inline-flex;align-items:center;gap:5px;height:30px;font-family:var(--display);font-weight:500;letter-spacing:.06em;text-transform:uppercase;font-size:11px;color:var(--navy);background:transparent;border:1.5px solid var(--navy);border-radius:3px;padding:0 9px;cursor:pointer;white-space:nowrap;margin:0;width:auto}
 .tbtn svg{width:15px;height:15px;flex:0 0 auto;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
