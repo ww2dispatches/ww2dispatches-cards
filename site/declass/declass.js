@@ -181,9 +181,9 @@
     const guard = (b, fn) => { if (locked) return nudge(b); fn(); };
 
     $('streakN').textContent = p ? p.streak : 0;
-    $('streakHint').textContent = !p ? 'sign in to start a streak'
-      : p.streak ? (p.nextPriorityIn === 3 ? 'priority envelope earned' : 'priority envelope in ' + p.nextPriorityIn + ' day' + (p.nextPriorityIn > 1 ? 's' : ''))
-      : 'open an envelope to start';
+    $('streakHint').textContent = !p ? 'Sign in to start a streak'
+      : p.streak ? (p.nextPriorityIn === 3 ? 'Priority envelope earned' : 'Priority envelope in ' + p.nextPriorityIn + ' day' + (p.nextPriorityIn > 1 ? 's' : ''))
+      : 'Open an envelope to start';
 
     if (p) {
       if (locked) {
