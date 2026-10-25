@@ -38,6 +38,9 @@ export const postedCards = t => CARDS.filter(c => released(c, t));
 // The dispatch card that posts at exactly this slot time (an envelope's guaranteed card).
 export const slotCards = slotIso => CARDS.filter(c => c.kind === 'dispatch' && c.postAt === slotIso);
 
+// Every envelope time: one per distinct dispatch post time, oldest first.
+export const SLOT_TIMES = [...new Set(CARDS.filter(c => c.kind === 'dispatch').map(c => c.postAt))].sort();
+
 // Archive pools for envelopes. Weekday archive pulls: dispatches posted in the last 90 days.
 // Deep archive (Sunday morning, priority, commemorative): everything posted, Name This included.
 export function archivePool(t, days = 90) {

@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Special+Elite&family=Source+Sans+3:wght@400;600&display=swap">
 <style>
-/* Build sessions 1 and 2: a bare page that proves sign in works and lists the posted cards. The full game page replaces this in session 4. */
+/* Build sessions 1 to 3: a bare page that proves sign in works, opens real envelopes, and lists the posted cards. The full game page replaces this in session 4. */
 :root { --night:#120F0C; --paper:#EDE4CF; --sand:#C9B98F; --red:#B04A3E; --line:rgba(237,228,207,.18);
   --display:"Oswald","Arial Narrow",Impact,sans-serif; --type:"Special Elite","Courier New",monospace; --body:"Source Sans 3",system-ui,sans-serif; color-scheme:dark; }
 * { box-sizing:border-box; }
@@ -39,6 +39,15 @@ button:hover { border-color:var(--sand); }
 #view .kicker { font-family:var(--type); color:var(--sand); font-size:13px; margin:12px 0 4px; }
 #view h3 { font-family:var(--display); font-weight:600; font-size:22px; margin:0 0 8px; }
 #view p { line-height:1.5; }
+.files { margin:0 0 22px; display:grid; gap:8px; }
+.files button { width:100%; text-align:left; display:flex; justify-content:space-between; gap:10px; }
+.files button:disabled { opacity:.45; cursor:default; }
+.files .prio { border-color:#A0743B; } .files .comm { border-color:#B8862B; background:#000; }
+.files .next { color:var(--sand); font-size:14px; }
+.pulled { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin:6px 0 10px; }
+.pulled img { width:100%; aspect-ratio:4/5; object-fit:cover; display:block; border-radius:3px; background:#2a241d; }
+.pulled span { display:block; font-size:12px; margin-top:3px; }
+.f-copper { color:#C8865A; } .f-silver { color:#D9DDE2; } .f-gold { color:#E7C35A; } .f-topsecret { color:#F08AD8; }
 [hidden] { display:none !important; }
 </style>
 </head>
@@ -66,6 +75,7 @@ button:hover { border-color:var(--sand); }
       <dt>Streak</dt><dd id="streak"></dd>
       <dt>Tester</dt><dd id="tester"></dd>
     </dl>
+    <div class="files" id="files"></div>
     <button id="signout">Sign out</button>
   </section>
 
@@ -98,14 +108,57 @@ button:hover { border-color:var(--sand); }
       credentials: 'same-origin'
     }).then(function (r) { return r.json().then(function (d) { if (!r.ok) throw new Error(d.error || r.status); return d; }); });
   }
-  function showPlayer(p) {
+  var FIN = { copper: 'Copper', silver: 'Silver', gold: 'Gold', topsecret: 'Top Secret' };
+  function localTime(at) { return new Date(at).toLocaleString([], { weekday: 'short', hour: 'numeric', minute: '2-digit' }); }
+  function slotName(e) {
+    var h = Number(new Date(e.at).toLocaleString('en-US', { timeZone: 'America/New_York', hour: 'numeric', hourCycle: 'h23' }));
+    return (h < 12 ? 'Morning file' : 'Evening file') + (e.deep ? ' (deep archive)' : '');
+  }
+  function cardTile(p) {
+    var c = p.cardInfo || {};
+    return '<div><img alt="" src="' + esc(c.img) + '"><span class="f-' + p.finish + '">' + FIN[p.finish] +
+      (p.variant === 'living' ? ' Living' : '') + (p.serial ? ' · Serial ' + String(p.serial).padStart(4, '0') : '') +
+      '</span><span>' + esc(c.short || p.card) + '</span></div>';
+  }
+  // Session 3 check: today's real envelopes, opened and turned on the server.
+  function showState(d) {
+    var p = d.player;
     $('fileno').textContent = p.fileNumber;
     $('since').textContent = new Date(p.since).toLocaleDateString();
-    $('cards').textContent = p.cards || 0;
-    $('streak').textContent = p.streak;
+    var tally = {}; d.pulls.forEach(function (x) { tally[x.finish] = (tally[x.finish] || 0) + 1; });
+    $('cards').textContent = d.pulls.length + (d.pulls.length ? ' (' + Object.keys(FIN).filter(function (f) { return tally[f]; }).map(function (f) { return tally[f] + ' ' + FIN[f]; }).join(', ') + ')' : '');
+    $('streak').textContent = p.streak + ' day' + (p.streak === 1 ? '' : 's') + ', next priority envelope in ' + p.nextPriorityIn;
     $('tester').textContent = p.tester ? 'Yes' : 'No';
+    var locked = d.waiting.length > 0, h = '';
+    if (locked) {
+      h += '<p>' + d.waiting.length + ' cards waiting to be turned</p><div class="pulled">' + d.waiting.map(cardTile).join('') + '</div>' +
+        '<button data-turn="1">Turn them over</button>';
+    }
+    d.commemorative.forEach(function (e) {
+      h += '<button class="comm" data-slot="' + esc(e.key) + '"' + (e.opened || locked ? ' disabled' : '') + '><span>Commemorative file · ' + esc(e.name) + '</span><span>' + (e.opened ? 'Declassed' : 'until ' + localTime(e.closes)) + '</span></button>';
+    });
+    for (var i = 0; i < d.priority; i++) {
+      h += '<button class="prio" data-slot="priority"' + (locked ? ' disabled' : '') + '><span>Priority envelope</span><span>Deep archive</span></button>';
+    }
+    d.envelopes.slice().reverse().forEach(function (e) {
+      h += '<button data-slot="' + esc(e.key) + '"' + (e.opened || locked ? ' disabled' : '') + '><span>' + slotName(e) + '</span><span>' + (e.opened ? 'Declassed' : localTime(e.at)) + '</span></button>';
+    });
+    if (d.next) h += '<p class="next">Next file: ' + localTime(d.next) + '</p>';
+    $('files').innerHTML = h;
     show('who');
   }
+  function loadState() {
+    return api('state').then(function (d) {
+      if (d.player) showState(d);
+      return d;
+    });
+  }
+  $('files').onclick = function (e) {
+    var b = e.target.closest('button'); if (!b || b.disabled) return;
+    $('err').textContent = ''; b.disabled = true;
+    var go = b.getAttribute('data-turn') ? api('turn', {}) : api('open', { slot: b.getAttribute('data-slot') });
+    go.then(loadState).catch(function (err) { $('err').textContent = 'That did not work (' + err.message + ').'; loadState(); });
+  };
 
   function startGoogle(clientId) {
     var s = document.createElement('script');
@@ -116,8 +169,7 @@ button:hover { border-color:var(--sand); }
         callback: function (res) {
           $('err').textContent = '';
           api('auth/google', { credential: res.credential })
-            .then(function () { return api('me'); })
-            .then(function (d) { showPlayer(d.player); })
+            .then(loadState)
             .catch(function (e) { $('err').textContent = 'Sign in did not work (' + e.message + ').'; });
         }
       });
@@ -161,9 +213,8 @@ button:hover { border-color:var(--sand); }
   api('config').then(function (cfg) {
     if (!cfg.open) return show('soon');
     loadCatalog();
-    return api('me').then(function (d) {
-      if (d.player) showPlayer(d.player);
-      else { show('signin'); startGoogle(cfg.googleClientId); }
+    return loadState().then(function (d) {
+      if (!d.player) { show('signin'); startGoogle(cfg.googleClientId); }
     });
   }).catch(function (e) {
     show('soon');
