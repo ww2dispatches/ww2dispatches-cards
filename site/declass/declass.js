@@ -1373,7 +1373,8 @@
   const TOUR = [
     { sel: '#files', h: "Today's files", t: 'A new file arrives with every dispatch we post. Each one stays open for 24 hours, so you can open it whenever you like that day.' },
     { sel: '#sHome .top .streak', h: 'Your streak', t: 'Open at least one file a day to build your streak. Every third day earns a priority envelope, drawn from the whole archive.' },
-    { sel: '#statRow', h: 'Rank and Intel', t: "Every file you open earns Intel, and duplicates turn into more. Spend it to request any card you're missing. Your rank goes up as your dossier grows." },
+    { sel: '#rankBtn', h: 'Your rank', t: 'Every new card, and every new finish of a card, fills a spot in your dossier. Fill enough spots and you get promoted, starting from Private. Each new rank is a surprise, and you never lose one. Tap your rank to see how close the next one is.' },
+    { sel: '#intelBtn', h: 'Intel', t: "Every file you open earns 5 Intel, and duplicates turn into more. Spend it to request any card you're missing. Tap Intel to see your balance and what you can request." },
     { sel: '#sHome .howbtn', h: "That's it", t: 'How to play has the rest whenever you want it: Living Cards, Name This, sets, and the odds. Now go open your first file.', last: true },
   ];
   let tourAt = -1, tourEl = null;
@@ -1396,7 +1397,7 @@
     const b = $('tourBub');
     b.innerHTML = `<i class="arw"></i><h3>${s.h}</h3><p>${s.t}</p><div class="tfoot">`
       + (s.last ? '<span></span><button class="btn" type="button" id="tourGo">Start declassifying</button>'
-        : `<span class="tstep">${i + 1} of 3</span><span><button class="tskip" type="button" id="tourSkip">Skip</button><button class="btn" type="button" id="tourGo">${i === 2 ? 'Got it' : 'Next'}</button></span>`)
+        : `<span class="tstep">${i + 1} of ${TOUR.length - 1}</span><span><button class="tskip" type="button" id="tourSkip">Skip</button><button class="btn" type="button" id="tourGo">${i === TOUR.length - 2 ? 'Got it' : 'Next'}</button></span>`)
       + '</div>';
     b.hidden = false;
     $('tourGo').onclick = () => s.last ? endTour(true) : tourStep(i + 1);
