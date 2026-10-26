@@ -6,7 +6,7 @@ import { now } from '../_lib/catalog.js';
 import { signedInPlayer, publicPlayer } from '../_lib/player.js';
 import { dailyOpen, commemorativeOpen, nextSlot, upcomingSlots } from '../_lib/envelopes.js';
 import { signPending, publicPull, withCard } from '../_lib/pulls.js';
-import { intelSummary, priceTable } from '../_lib/intel.js';
+import { intelSummary, priceTable, convertLegacyDuplicates } from '../_lib/intel.js';
 import { filledSlots, rankInfo } from '../_lib/rank.js';
 
 export async function onRequestGet({ request, env }) {
@@ -19,6 +19,8 @@ export async function onRequestGet({ request, env }) {
   if (!player) return json({ ...base, player: null, envelopes: daily, commemorative, priority: 0, waiting: [], pulls: [] });
 
   await signPending(env, player.id);
+  const converted = await convertLegacyDuplicates(env.DB, player.id, t);
+  if (converted) player.intel = (player.intel || 0) + converted;
   const [opened, pulls] = await env.DB.batch([
     env.DB.prepare('SELECT slot_key FROM opened WHERE player_id = ?').bind(player.id),
     env.DB.prepare('SELECT * FROM pulls WHERE player_id = ? ORDER BY id DESC').bind(player.id),

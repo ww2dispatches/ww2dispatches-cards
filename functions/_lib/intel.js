@@ -41,3 +41,28 @@ export async function intelSummary(db, player, t) {
     recent: recent.results.map(r => ({ at: r.at, delta: r.delta, reason: r.reason, card: r.card_id, variant: r.variant, finish: r.finish })),
   };
 }
+
+// Duplicates pulled before Intel existed (25 Oct 2026) were never converted. Convert them once, the
+// same way the reveal would have: the first copy of each slot stays, later Copper, Silver, and Gold
+// copies turn into Intel; Top Secret never converts. New pulls are always converted at the reveal, so
+// after the first run this finds nothing. The UPDATE only touches rows still at 0, so two state
+// requests at once can't pay twice. Returns the Intel added.
+export async function convertLegacyDuplicates(db, playerId, t) {
+  const res = await db.prepare(
+    `UPDATE pulls SET intel = CASE finish WHEN 'copper' THEN ${DUPLICATE_INTEL.copper} WHEN 'silver' THEN ${DUPLICATE_INTEL.silver} ELSE ${DUPLICATE_INTEL.gold} END
+     WHERE player_id = ?1 AND intel = 0 AND finish IN ('copper', 'silver', 'gold')
+       AND EXISTS (SELECT 1 FROM pulls p2 WHERE p2.player_id = pulls.player_id AND p2.card_id = pulls.card_id
+                   AND p2.variant = pulls.variant AND p2.finish = pulls.finish AND p2.id < pulls.id)
+     RETURNING card_id, variant, finish, intel, slot_key`
+  ).bind(playerId).all();
+  const rows = res.results || [];
+  if (!rows.length) return 0;
+  const gained = rows.reduce((s, r) => s + r.intel, 0);
+  const at = t.toISOString();
+  await db.batch([
+    db.prepare('UPDATE players SET intel = intel + ? WHERE id = ?').bind(gained, playerId),
+    ...rows.map(r => db.prepare(`INSERT INTO intel_log (player_id, at, delta, reason, slot_key, card_id, variant, finish) VALUES (?, ?, ?, 'duplicate', ?, ?, ?, ?)`)
+      .bind(playerId, at, r.intel, r.slot_key, r.card_id, r.variant, r.finish)),
+  ]);
+  return gained;
+}

@@ -655,12 +655,13 @@
     $('vPrev').disabled = vi === 0; $('vNext').disabled = vi === viewList.length - 1;
     const row = (variant, lbl) => `<div class="rowlbl">${lbl}</div>` + FIN.map(f => {
       const n = h[variant][f] || 0;
-      if (n) return `<button class="s4 f-${f}${variant === viewSel.variant && f === viewSel.finish ? ' cur' : ''}" data-v="${variant}" data-f="${f}">${FNAME[f]}<small>×${n}</small></button>`;
+      // Duplicates turn into Intel, so a count only shows where extra copies can exist: Top Secret, two or more.
+      if (n) return `<button class="s4 f-${f}${variant === viewSel.variant && f === viewSel.finish ? ' cur' : ''}" data-v="${variant}" data-f="${f}">${FNAME[f]}${f === 'topsecret' && n > 1 ? `<small>×${n}</small>` : ''}</button>`;
       if (signedIn() && !info.today) return `<button class="s4 off reqs" data-rv="${variant}" data-rf="${f}" title="Request this file">?<small>${priceOf(info, variant, f)} Intel</small></button>`;
       return '<div class="s4 off">?<small>Sealed</small></div>';
     }).join('');
     $('slots4').innerHTML = info.flash
-      ? `<div class="rowlbl">Flash</div><button class="s4 f-topsecret cur" data-v="still" data-f="topsecret">Top Secret<small>×${h.still.topsecret || 0}</small></button><div class="s4 off flashnote">Always Top Secret</div>`
+      ? `<div class="rowlbl">Flash</div><button class="s4 f-topsecret cur" data-v="still" data-f="topsecret">Top Secret${(h.still.topsecret || 0) > 1 ? `<small>×${h.still.topsecret}</small>` : ''}</button><div class="s4 off flashnote">Always Top Secret</div>`
       : row('still', 'Still') + (info.hasFilm ? row('living', 'Living Card') : '');
     $('slots4').querySelectorAll('button.s4:not(.reqs)').forEach(b => { b.onclick = () => { viewSel = { variant: b.dataset.v, finish: b.dataset.f }; renderView(); }; });
     $('slots4').querySelectorAll('button.reqs').forEach(b => { b.onclick = () => confirmRequest(info, b.dataset.rv, b.dataset.rf); });
