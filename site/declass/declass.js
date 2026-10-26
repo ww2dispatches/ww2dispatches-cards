@@ -1200,7 +1200,7 @@
       <p class="sheetline"><b>${esc(info.short)}</b> · ${esc(what)}</p>
       <p class="sheetline big">${pr} Intel</p>
       <p class="sheetnote">${short ? `You have ${bal} Intel, ${pr - bal} short. Open more envelopes to earn the rest.` : `You have ${bal} Intel, ${bal - pr} after this. Requests can't be refunded.`}</p>
-      <button class="btn" id="reqGo"${short ? ' disabled' : ''}>Request this file · ${pr} Intel${short ? ' (you have ' + bal + ')' : ''}</button>
+      <button class="btn reqgo" id="reqGo"${short ? ' disabled' : ''}>Request this file<small>${pr} Intel</small></button>
       <button class="btn alt" data-close>Cancel</button>`);
     if (short) return;
     $('reqGo').onclick = () => {

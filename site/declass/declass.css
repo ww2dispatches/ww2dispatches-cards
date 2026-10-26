@@ -524,3 +524,6 @@ button.stat{cursor:pointer;color:var(--mute)}
 #sHome .top .wordmark{flex:0 1 auto;min-width:0}
 #sHome .top .streak{max-width:none;flex:0 0 auto}
 #sHome .top .streak span{white-space:nowrap}
+/* Request button: the action on one line, the price beneath it */
+.btn.reqgo{line-height:1.2;padding-top:10px;padding-bottom:9px}
+.btn.reqgo small{display:block;margin-top:3px;font-size:11px;letter-spacing:.1em;opacity:.85}
