@@ -549,3 +549,4 @@ button.stat{cursor:pointer;color:var(--mute)}
 .slimrow .stat .sl,.slimrow .intelst span:last-child{line-height:1}
 .slimrow .stat b{line-height:1}
 .slimrow .intelst .itok{transform:translateY(-.5px)}
+.slimrow .intelst span:last-child{position:relative;top:1.5px}
