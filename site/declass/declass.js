@@ -321,7 +321,7 @@
   // (analytics/themes.md). Only subjects with posted cards are offered.
   const SUBJ = [
     ['Who', 'who', [['leaders', 'Leaders'], ['soldiers and sailors', 'Soldiers and sailors'], ['airmen', 'Airmen'], ['civilians', 'Civilians'], ['women', 'Women'], ['children', 'Children'], ['African Americans', 'African Americans'], ['Japanese Americans', 'Japanese Americans'], ['Native Americans', 'Native Americans'], ['Jewish people', 'Jewish people']]],
-    ['What happened', 'story', [['combat', 'Combat'], ['turning point', 'Turning points'], ['invention or machine', 'Inventions and machines'], ['decision or diplomacy', 'Decisions and diplomacy'], ['survival or rescue', 'Survival and rescue'], ['first or barrier broken', 'Firsts and barriers broken'], ['everyday life', 'Everyday life'], ['loss or atrocity', 'Loss and tragedy']]],
+    ['What happened', 'happened', [['combat', 'Combat'], ['turning point', 'Turning points'], ['invention or machine', 'Inventions and machines'], ['decision or diplomacy', 'Decisions and diplomacy'], ['survival or rescue', 'Survival and rescue'], ['first or barrier broken', 'Firsts and barriers broken'], ['everyday life', 'Everyday life'], ['loss or atrocity', 'Loss and tragedy']]],
     ['Branch', 'branch', [['Army', 'Army'], ['Navy', 'Navy'], ['Marines', 'Marines'], ['Army Air Forces', 'Air forces'], ['Coast Guard', 'Coast Guard'], ["women's services", "Women's services"], ['civilian agency', 'Civilian agencies']]],
   ];
   const subjTest = v => { if (!v) return () => true; const i = v.indexOf('|'), k = v.slice(0, i), t = v.slice(i + 1); return c => (c[k] || []).includes(t); };
@@ -521,7 +521,7 @@
   function intelChip(n) {
     const c = document.createElement('div');
     c.className = 'ichip'; c.setAttribute('aria-hidden', 'true');
-    c.innerHTML = '<i></i>+' + n + ' INTEL';
+    c.innerHTML = '<img class="itok" src="/declass/icons/intel.svg" alt="">+' + n + ' INTEL';
     $('stage').appendChild(c);
     setTimeout(() => c.remove(), 2200);
   }
@@ -668,7 +668,7 @@
       const n = h[variant][f] || 0;
       // Duplicates turn into Intel, so a count only shows where extra copies can exist: Top Secret, two or more.
       if (n) return `<button class="s4 f-${f}${variant === viewSel.variant && f === viewSel.finish ? ' cur' : ''}" data-v="${variant}" data-f="${f}">${FNAME[f]}${f === 'topsecret' && n > 1 ? `<small>×${n}</small>` : ''}</button>`;
-      if (signedIn() && !info.today) return `<button class="s4 off reqs" data-rv="${variant}" data-rf="${f}" title="Request the ${variant === 'living' ? 'Living ' : ''}${FNAME[f]} for ${priceOf(info, variant, f)} Intel">?<small>${priceOf(info, variant, f)} Intel</small></button>`;
+      if (signedIn() && !info.today) return `<button class="s4 off reqs" data-rv="${variant}" data-rf="${f}" title="Request the ${variant === 'living' ? 'Living ' : ''}${FNAME[f]} for ${priceOf(info, variant, f)} Intel">?<small><img class="itok" src="/declass/icons/intel.svg" alt="">${priceOf(info, variant, f)}</small></button>`;
       return '<div class="s4 off">?<small>Sealed</small></div>';
     }).join('');
     $('slots4').innerHTML = info.flash
@@ -1173,7 +1173,7 @@
     const it = ST && ST.intel; if (!it) return;
     const P = ST.prices;
     sheet(`<div class="sheettop"><span class="howstamp">Intel</span><button class="howx" data-close aria-label="Close">✕</button></div>
-      <h2 class="intelbig">${it.balance.toLocaleString()} <small>Intel</small></h2>
+      <h2 class="intelbig"><img class="itok" src="/declass/icons/intel.svg" alt="">${it.balance.toLocaleString()} <small>Intel</small></h2>
       <p class="sheetline">+${it.today} today</p>
       ${it.recent.length ? `<h3>Recent</h3><ul class="intlog">${it.recent.map(x => `<li><span>${esc(reasonText(x))}</span><b class="${x.delta < 0 ? 'neg' : ''}">${x.delta > 0 ? '+' : ''}${x.delta}</b></li>`).join('')}</ul>` : '<p class="sheetnote">Open an envelope to earn your first Intel.</p>'}
       <h3>How to earn it</h3><ul><li>5 Intel for every envelope you open.</li><li>Duplicates turn into Intel when you turn them: Copper 1, Silver 4, Gold 15.</li></ul>
@@ -1208,7 +1208,7 @@
     sheet(`<div class="sheettop"><span class="howstamp">Requisition</span><button class="howx" data-close aria-label="Close">✕</button></div>
       <h2>Request this file?</h2>
       <p class="sheetline"><b>${esc(info.short)}</b> · ${esc(what)}</p>
-      <p class="sheetline big">${pr} Intel</p>
+      <p class="sheetline big"><img class="itok" src="/declass/icons/intel.svg" alt="">${pr} Intel</p>
       <p class="sheetnote">${short ? `You have ${bal} Intel, ${pr - bal} short. Open more envelopes to earn the rest.` : `You have ${bal} Intel, ${bal - pr} after this. Requests can't be refunded.`}</p>
       <button class="btn reqgo" id="reqGo"${short ? ' disabled' : ''}>Request this file<small>${pr} Intel</small></button>
       <button class="btn alt" data-close>Cancel</button>`);

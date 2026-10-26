@@ -538,3 +538,9 @@ button.stat{cursor:pointer;color:var(--mute)}
 .ichip i{width:17px;height:17px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff3c4,#e3c25e 45%,#9a7416);border:1.5px solid #fbf0c8}
 @keyframes ichip{0%{opacity:0;transform:translate(-50%,-50%) scale(.6)}15%{opacity:1;transform:translate(-50%,-50%) scale(1.15)}25%{opacity:1;transform:translate(-50%,-50%) scale(1)}55%{opacity:1;transform:translate(-50%,calc(-50% - 50px)) scale(1)}100%{opacity:0;transform:translate(-50%,calc(-50% - 120px)) scale(1)}}
 @media (prefers-reduced-motion:reduce){.ichip{animation-duration:.01s;animation-delay:0s}}
+/* The Intel token (25 Oct 2026) */
+.itok{display:inline-block;width:1em;height:1em;vertical-align:-.14em;margin-right:.25em}
+.slimrow .intelst .itok{width:18px;height:18px;align-self:center;margin:0}
+.ichip .itok{width:18px;height:18px;margin:0}
+.s4 small .itok{width:11px;height:11px;vertical-align:-1px;margin-right:3px}
+.intelbig .itok{width:.85em;height:.85em;vertical-align:-.08em}
