@@ -299,7 +299,8 @@
     $('allSub').textContent = `${have} of ${total} cards`;
     $('footDelete').hidden = !p;
     $('footWho').innerHTML = p ? `File ${esc(p.fileNumber)} · <button id="signOut">Sign out</button>` : '';
-    if (homeRing) { const h = $('files').querySelector('.help[data-help="' + homeRing + '"]'); if (h) h.closest('.slotbtn').classList.add('coached'); }
+    if (homeRing === 'signbar') $('signBar').classList.add('coached');
+    else if (homeRing) { const h = $('files').querySelector('.help[data-help="' + homeRing + '"]'); if (h) h.closest('.slotbtn').classList.add('coached'); }
     if (p) $('signOut').onclick = () => { try { google.accounts.id.disableAutoSelect(); } catch (e) {} api('auth/signout', {}).then(() => location.reload()); };
   }
   const holdingsNow = () => holdings(myPulls());
@@ -638,7 +639,7 @@
     $('saveGrid').querySelectorAll('button').forEach(b => { b.disabled = true; b.style.cursor = 'default'; });
     show('sSave');
   }
-  $('skipSave').onclick = () => { renderHome(); show('sHome'); toast('Your starter pack is saved in this browser for now.'); };
+  $('skipSave').onclick = () => { renderHome(); show('sHome'); if (seen('guest')) toast('Your starter pack is saved in this browser for now.'); };
 
   // ---------- Google sign in ----------
   let gisReady = false;
@@ -1350,7 +1351,7 @@
   function hideNote(scope) {
     if (noteScope !== scope) return;
     $('fnote').hidden = true; noteScope = null;
-    if (scope === 'home' && homeRing) { homeRing = null; document.querySelectorAll('.slotbtn.coached').forEach(b => b.classList.remove('coached')); }
+    if (scope === 'home' && homeRing) { homeRing = null; document.querySelectorAll('.coached').forEach(b => b.classList.remove('coached')); }
   }
   // On the cards: the first Living Card and the first duplicate that turned into Intel.
   function firstNotes(p) {
@@ -1427,7 +1428,15 @@
   // Home, after the tour: the first priority envelope and the first Last call each get a note.
   function coachHomeNow() {
     if (!$('sHome').classList.contains('on') || !$('promo').hidden || !$('sheet').hidden || tourAt >= 0 || noteScope) return;
-    if (maybeTour() || !signedIn()) return;
+    if (maybeTour()) return;
+    if (!signedIn()) {
+      // A guest who chose Not now: point at the sign in box once (26 Oct 2026).
+      if (STARTER && !seen('guest') && !$('signBar').hidden) {
+        homeRing = 'signbar'; $('signBar').classList.add('coached');
+        note('home', 'guest', 'Your five cards are saved in this browser for now. Sign in to keep them for good, start a streak, and open a new file every day.');
+      }
+      return;
+    }
     const ring = help => { const h = $('files').querySelector('.help[data-help="' + help + '"]'); if (!h) return false; homeRing = help; h.closest('.slotbtn').classList.add('coached'); return true; };
     if (ST.priority > 0 && !seen('prio')) {
       if ((ST.pulls || []).some(x => x.slot && x.slot.startsWith('p:'))) mark('prio');
