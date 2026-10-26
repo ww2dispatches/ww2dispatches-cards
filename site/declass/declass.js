@@ -1139,11 +1139,12 @@
     const p = ST && ST.player, r = ST && ST.rank, it = ST && ST.intel;
     $('rankBtn').style.visibility = p && r ? '' : 'hidden';
     $('intelBtn').style.visibility = p && it ? '' : 'hidden';
+    $('statRow').hidden = !(p && (r || it));
     if (r) {
       $('rankT').textContent = r.short;
       $('rankBar').style.width = (r.nextAt ? Math.max(0, Math.min(1, (r.filled - r.from) / (r.nextAt - r.from))) * 100 : 100) + '%';
     }
-    if (it) { $('intelN').textContent = it.balance.toLocaleString(); $('intelToday').textContent = '+' + it.today + ' today'; }
+    if (it) { $('intelN').textContent = it.balance.toLocaleString(); $('intelToday').textContent = 'Today +' + it.today; }
   }
   $('rankBtn').onclick = () => {
     const r = ST && ST.rank; if (!r) return;
