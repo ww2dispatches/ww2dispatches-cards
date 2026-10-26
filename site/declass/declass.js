@@ -310,7 +310,7 @@
       : `<div class="fd">${FIN.map(f => `<i class="f-${f}${h && (h.still[f] || h.living[f]) ? ' on' : ''}" title="${FNAME[f]}"></i>`).join('')}${info.hasFilm ? `<b class="${h && FIN.some(f => h.living[f]) ? 'on' : ''}" title="Living Card">▶︎</b>` : ''}</div>`;
     if (!best) {
       // Signed in, a sealed card can be requested (25 Oct 2026); one of today's cards can't.
-      if (signedIn() && !info.today) return `<button class="mini sealed req" data-req="${esc(id)}"><span class="thumb">?</span><span class="no">${esc(label(info))}</span><span class="nm">${esc(info.short)}</span>${dots}<span class="reqline">Request this file</span></button>`;
+      if (signedIn() && !info.today) return `<button class="mini sealed req" data-req="${esc(id)}"><span class="thumb">?</span><span class="no">${esc(label(info))}</span><span class="nm">${esc(info.short)}</span>${dots}<span class="reqline">Request this card</span></button>`;
       return `<div class="mini sealed"><span class="thumb">?</span><span class="no">${esc(label(info))}</span><span class="nm">${esc(info.short)}</span>${dots}</div>`;
     }
     return `<button class="mini" data-id="${esc(id)}"><img class="thumb ${info.flash ? 'flash' : 'f-' + best}" loading="lazy" src="${esc(info.img)}" alt="${esc(info.short)}"><span class="no">${esc(label(info))}</span><span class="nm">${esc(info.short)}</span>${dots}</button>`;
@@ -367,7 +367,7 @@
     const oneShort = fromSets && list.length > 1 && list.length - h === 1 ? list.find(c => !H.has(c.id)) : null;
     if (oneShort) list = [oneShort].concat(list.filter(c => c !== oneShort));
     $('sectionSub').textContent = `${h} of ${list.length} cards · Swatches show the finishes you hold, ▶︎ a Living Card`;
-    $('sectionGrid').innerHTML = (oneShort ? `<p class="oneshort">One card to go: <b>${esc(oneShort.short)}</b>${signedIn() && !oneShort.today ? ` · <button class="linkish" id="reqOne">Request this file · ${priceOf(oneShort, 'still', 'copper')} Intel${haveIntel() < priceOf(oneShort, 'still', 'copper') ? ' (you have ' + haveIntel() + ')' : ''}</button>` : ''}</p>` : '')
+    $('sectionGrid').innerHTML = (oneShort ? `<p class="oneshort">One card to go: <b>${esc(oneShort.short)}</b>${signedIn() && !oneShort.today ? ` · <button class="linkish" id="reqOne">Request this card · ${priceOf(oneShort, 'still', 'copper')} Intel${haveIntel() < priceOf(oneShort, 'still', 'copper') ? ' (you have ' + haveIntel() + ')' : ''}</button>` : ''}</p>` : '')
       + (list.length ? list.map(c => miniHTML(c.id, H)).join('') : '<p class="sub" style="grid-column:1/-1">Nothing here yet.</p>');
     if (oneShort && $('reqOne')) $('reqOne').onclick = () => requestPicker(oneShort.id);
     wireMinis($('sectionGrid'), list.map(c => c.id));
@@ -1234,11 +1234,11 @@
     const pr = priceOf(info, variant, finish), bal = haveIntel(), short = bal < pr;
     const what = (variant === 'living' ? 'Living ' : '') + (info.flash ? 'Flash' : FNAME[finish]);
     sheet(`<div class="sheettop"><span class="howstamp">Requisition</span><button class="howx" data-close aria-label="Close">✕</button></div>
-      <h2>Request this file?</h2>
+      <h2>Request this card?</h2>
       <p class="sheetline"><b>${esc(info.short)}</b> · ${esc(what)}</p>
       <p class="sheetline big"><img class="itok" src="/declass/icons/intel.svg" alt="">${pr} Intel</p>
       <p class="sheetnote">${short ? `You have ${bal} Intel, ${pr - bal} short. Open more envelopes to earn the rest.` : `You have ${bal} Intel, ${bal - pr} after this. Requests can't be refunded.`}</p>
-      <button class="btn reqgo" id="reqGo"${short ? ' disabled' : ''}>Request this file<small>${pr} Intel</small></button>
+      <button class="btn reqgo" id="reqGo"${short ? ' disabled' : ''}>Request this card<small>${pr} Intel</small></button>
       <button class="btn alt" data-close>Cancel</button>`);
     if (short) return;
     $('reqGo').onclick = () => {
