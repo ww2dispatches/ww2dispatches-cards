@@ -459,7 +459,7 @@
     answered = list.map(() => false);
     tags = computeTags(list, before || new Map());
     // A duplicate that converted shows its Intel on the tag (25 Oct 2026).
-    tags = tags.map((t, i) => t && t[0] === 'dup' && list[i].intel ? ['dup', 'DUPLICATE · +' + list[i].intel + ' INTEL'] : t);
+    tags = tags.map((t, i) => t && t[0] === 'dup' && list[i].intel ? ['dup earn', 'DUPLICATE · +' + list[i].intel + ' INTEL'] : t);
     idx = Math.max(0, revealed.indexOf(false));
     renderCard();
     show('sCards');
@@ -506,6 +506,7 @@
     sfx(FINISH_SOUND[p.finish][p.variant === 'living' ? 1 : 0]);
     $('flip').classList.add('up');
     if (p.cardInfo && p.variant === 'living') startFilm($('flip'), p.cardInfo);
+    if (p.intel && tags[idx] && tags[idx][0].startsWith('dup')) intelChip(p.intel);
     if (cardMode === 'starterLocal') { STARTER.revealed = revealed.slice(); saveStarterLocal(); }
     else if (p.id) api('turn', { ids: [p.id] }).catch(() => {});
     $('hint').innerHTML = hintAfter(p, idx);
@@ -515,6 +516,14 @@
       if (cardMode === 'starterLocal') { $('hint').textContent = "That's your starter pack."; setTimeout(showSave, 1100); return; }
       $('summary').hidden = false; renderSummary();
     }
+  }
+  // A duplicate's Intel floats up off the card as it turns (25 Oct 2026). Never blocks a swipe.
+  function intelChip(n) {
+    const c = document.createElement('div');
+    c.className = 'ichip'; c.setAttribute('aria-hidden', 'true');
+    c.innerHTML = '<i></i>+' + n + ' INTEL';
+    $('stage').appendChild(c);
+    setTimeout(() => c.remove(), 2200);
   }
   function answerNT() {
     const p = pulls[idx];
