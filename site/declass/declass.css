@@ -441,3 +441,65 @@ body{font-variant-emoji:text}
 .srow.go::after{content:"›";position:absolute;right:10px;top:50%;transform:translateY(-55%);font-size:22px;line-height:1;color:var(--mute)}
 .srow.go:active{background:#efe4c8}
 .stp.go{cursor:pointer}
+
+/* Rank, streak, and Intel under the wordmark (25 Oct 2026). Streak stays centered and largest. */
+.statrow{display:grid;grid-template-columns:1fr auto 1fr;align-items:end;gap:8px;padding:8px 0 10px;border-bottom:3px double var(--red)}
+.top{border-bottom:0;padding-bottom:0}
+.stat{font-family:var(--type);font-size:11px;color:var(--mute);line-height:1.25;background:none;border:0;padding:0;min-width:0}
+button.stat{cursor:pointer;color:var(--mute)}
+.stat .sl{display:block;font-family:var(--display);font-weight:500;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+.stat b{display:block;font-family:var(--display);font-weight:700;color:var(--ink);white-space:nowrap;line-height:1.1}
+.rankst{text-align:left;justify-self:start;max-width:100%}
+.rankst b{font-size:14px;letter-spacing:.01em;overflow:hidden;text-overflow:ellipsis}
+@media (max-width:374px){.rankst b{font-size:13px}}
+.rbar{display:block;height:4px;background:#e2d6b8;border-radius:2px;margin-top:4px;width:96px;max-width:100%;overflow:hidden}
+.rbar em{display:block;height:100%;background:var(--olive)}
+.rbar.big{width:100%;height:8px;margin:6px 0 4px}
+.statrow .streak{text-align:center;max-width:none}
+.statrow .streak b{font-size:30px;color:var(--red);margin-bottom:2px}
+.statrow .streak span{display:block;font-size:10px;max-width:100px;margin:0 auto;line-height:1.3}
+.intelst{text-align:right;justify-self:end}
+.intelst b{font-size:20px;color:var(--brass)}
+.intelst span:last-child{display:block;font-size:10px;white-space:nowrap}
+/* the earnings line after an envelope */
+.earn{font-family:var(--type);font-size:13px;color:var(--brass);margin:2px 0 10px;min-height:1em}
+/* sheets: rank, Intel, request, confirm */
+.sheetcard h2{margin:6px 0 2px}
+.sheettop{display:flex;justify-content:space-between;align-items:center}
+.sheetline{font-family:var(--type);font-size:13px;margin:6px 0}
+.sheetline.big{font-family:var(--display);font-weight:700;font-size:28px;color:var(--brass);margin:4px 0}
+.sheetnote{font-size:14px;line-height:1.45;color:var(--mute);margin:8px 0}
+.sheetcard .btn{display:block;width:100%;margin-top:10px}
+.sheetcard .btn:disabled{opacity:.55;cursor:default}
+.intelbig{font-family:var(--display);font-size:40px;color:var(--brass);margin:4px 0 0}
+.intelbig small{font-size:16px;color:var(--mute)}
+.intlog{list-style:none;padding:0;margin:4px 0}
+.intlog li{display:flex;justify-content:space-between;gap:10px;font-family:var(--type);font-size:12px;padding:5px 0;border-bottom:1px dotted var(--line)}
+.intlog b{font-family:var(--display);color:var(--olive)}.intlog b.neg{color:var(--red)}
+.rankbig{text-align:center;color:var(--olive)}
+.rbadge{width:84px;height:84px;display:block;margin:6px auto 0}
+.reqopts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0}
+.reqopt{display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:10px 12px;border:1px solid var(--line);border-left:6px solid var(--c,var(--ink));background:var(--env);border-radius:3px;cursor:pointer;font-family:var(--display);text-align:left;color:var(--ink)}
+.reqopt b{font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+.reqopt span{font-family:var(--type);font-size:12px;color:var(--brass)}
+.reqopt.short span{color:var(--mute)}
+.reqopt.f-copper{--c:var(--copper)}.reqopt.f-silver{--c:#9ea4ad}.reqopt.f-gold{--c:#c9a23a}.reqopt.f-topsecret{--c:#8e97a4}
+/* sealed cards that can be requested */
+.mini.sealed.req{cursor:pointer}
+.mini .reqline{display:block;font-family:var(--type);font-size:10px;color:var(--brass);margin-top:2px}
+.s4.reqs{cursor:pointer;font-size:12px}
+.s4.reqs small{color:var(--brass)}
+.oneshort{grid-column:1/-1;font-family:var(--type);font-size:13px;margin:0 0 6px;padding:8px 10px;border:1px dashed var(--brass);border-radius:3px}
+/* the small Requisition envelope */
+.env.req{transform:scale(.82);transform-origin:center}
+.big .env.req{transform:scale(.82)}
+.env .prio.reqk{color:#4f6b2f;border-color:#4f6b2f}
+/* the promotion moment */
+.promo{position:fixed;inset:0;z-index:70;background:rgba(237,228,207,.96);display:flex;align-items:center;justify-content:center;padding:20px}
+.promocard{text-align:center;max-width:340px}
+.promostamp{color:var(--olive);width:170px;height:170px;margin:0 auto;animation:promoslam .6s cubic-bezier(.2,1.4,.4,1) both}
+.promostamp .rbadge{width:100%;height:100%}
+@keyframes promoslam{0%{transform:rotate(-10deg) scale(2.4);opacity:0}60%{opacity:1}100%{transform:rotate(-8deg) scale(1)}}
+.promokick{font-family:var(--display);font-weight:700;letter-spacing:.3em;color:var(--red);margin:14px 0 0}
+.promocard h2{display:block;border:0;font-size:32px;margin:2px 0 6px;text-transform:uppercase}
+.promocard .btn{display:block;width:100%;margin-top:14px}

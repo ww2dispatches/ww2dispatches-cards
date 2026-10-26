@@ -12,6 +12,7 @@ export async function onRequestPost({ request, env }) {
     db.prepare('DELETE FROM pulls WHERE player_id = ?').bind(id),
     db.prepare('DELETE FROM opened WHERE player_id = ?').bind(id),
     db.prepare('DELETE FROM months WHERE player_id = ?').bind(id),
+    db.prepare('DELETE FROM intel_log WHERE player_id = ?').bind(id),
     db.prepare('DELETE FROM players WHERE id = ?').bind(id),
   ]);
   return json({ deleted: true }, 200, { 'set-cookie': clearSessionCookie() });

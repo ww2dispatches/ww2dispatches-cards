@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Special+Elite&display=swap">
-<link rel="stylesheet" href="/declass/declass.css?v=5b02e719">
+<link rel="stylesheet" href="/declass/declass.css?v=57299b35">
 </head>
 <body>
 <div class="wrap">
@@ -57,8 +57,12 @@
   <div class="toolbar"><button class="tbtn howbtn" data-how type="button">How to play</button><button class="tbtn sndbtn" data-t="music" type="button"></button><button class="tbtn sndbtn" data-t="sfx" type="button"></button></div>
   <header class="top">
     <div class="wordmark">DECLASS<small>a WW2 Dispatches game</small></div>
-    <div class="hdr-r"><div class="streak"><b id="streakN">0</b>Day Streak<br><span id="streakHint" style="font-size:10px"></span></div></div>
   </header>
+  <div class="statrow" id="statRow">
+    <button class="stat rankst" id="rankBtn" type="button" aria-label="Your rank"><span class="sl">Rank</span><b id="rankT">Private</b><i class="rbar"><em id="rankBar"></em></i></button>
+    <div class="stat streak"><b id="streakN">0</b>Day Streak<span id="streakHint"></span></div>
+    <button class="stat intelst" id="intelBtn" type="button" aria-label="Your Intel"><span class="sl">Intel</span><b id="intelN">0</b><span id="intelToday">+0 today</span></button>
+  </div>
   <h1>Today's files</h1>
   <p class="sub files-sub">Today's files are ready to declassify.<br>Three cards in every envelope.</p>
   <div id="files"></div>
@@ -99,6 +103,7 @@
   <div class="summary" id="summary" hidden>
     <h2 style="justify-content:center;border:0">All declassed</h2>
     <div class="recent" id="summaryRow"></div>
+    <p class="earn" id="earnLine"></p>
     <button class="btn alt" id="shareBtn">Share</button><button class="btn" id="doneBtn">Done</button>
   </div>
 </section>
@@ -174,12 +179,15 @@
    <li>Some cards also come as <b>Living Cards</b>, with real archival film playing on them.</li></ul>
    <h3>Keep your streak</h3>
    <ul><li>Open at least one envelope a day. Every third day earns a priority envelope full of cards from the deep archive.</li></ul>
+   <h3>Earn Intel, request files</h3>
+   <ul><li>Every envelope earns <b>Intel</b>, and duplicates turn into Intel too. Spend it to request any card you're missing, in any finish.</li>
+   <li>As your dossier grows, you're promoted up the ranks.</li></ul>
    <p class="howmore">Want the details? Open the <button type="button" class="linkish" data-tab="manual">Field manual</button>.</p>
   </div>
 
   <div class="howpanel" id="howManual" role="tabpanel" hidden>
    <nav class="fmnav" aria-label="Field manual sections">
-    <button type="button" data-go="fm-envelopes">Envelopes</button><button type="button" data-go="fm-finishes">Finishes and odds</button><button type="button" data-go="fm-living">Living Cards</button><button type="button" data-go="fm-namethis">Name This</button><button type="button" data-go="fm-streaks">Streaks</button><button type="button" data-go="fm-locked">Locked envelopes</button><button type="button" data-go="fm-dossier">Dossier and sets</button><button type="button" data-go="fm-sharing">Sharing</button>
+    <button type="button" data-go="fm-envelopes">Envelopes</button><button type="button" data-go="fm-finishes">Finishes and odds</button><button type="button" data-go="fm-living">Living Cards</button><button type="button" data-go="fm-namethis">Name This</button><button type="button" data-go="fm-streaks">Streaks</button><button type="button" data-go="fm-intel">Intel and requests</button><button type="button" data-go="fm-ranks">Ranks</button><button type="button" data-go="fm-locked">Locked envelopes</button><button type="button" data-go="fm-dossier">Dossier and sets</button><button type="button" data-go="fm-sharing">Sharing</button>
    </nav>
 
    <section id="fm-envelopes">
@@ -238,6 +246,20 @@
     <li>Priority envelopes, commemorative files, and the starter pack don't count toward the streak.</li></ul>
    </section>
 
+   <section id="fm-intel">
+    <h3>Intel and requests</h3>
+    <ul><li>Every envelope you open earns <b>5 Intel</b>: morning, evening, Sunday deep archive, priority, and commemorative.</li>
+    <li><b>Duplicates turn into Intel</b> the moment you turn them: a duplicate Copper is worth 1, Silver 4, Gold 15. The first copy of every finish is always kept. Top Secret copies are never converted; each keeps its worldwide serial.</li>
+    <li><b>Request any card</b> ever posted, in any finish, from a sealed spot in your dossier or a missing card in Sets. Copper costs 20 Intel, Silver 75, Gold 250, Top Secret 750, and a Flash card 750. A Living Card costs half again as much. Today's cards can't be requested; open today's envelope instead.</li>
+    <li>A requested card arrives in a small Requisition envelope. A requested Top Secret takes the next worldwide serial, just like one pulled from an envelope. Requests can't be refunded.</li></ul>
+   </section>
+
+   <section id="fm-ranks">
+    <h3>Ranks</h3>
+    <ul><li>Every finish of every card you hold fills a spot in your dossier. As your dossier grows, you're promoted. Requested cards count too.</li>
+    <li>Ranks are never lost. Your rank and your progress to the next one sit at the top of the home screen.</li></ul>
+   </section>
+
    <section id="fm-locked">
     <h3>Locked envelopes</h3>
     <ul><li>Your cards are yours the moment an envelope opens. If you leave before turning them all, they wait for you on the home screen.</li>
@@ -274,8 +296,10 @@
   <button class="btn" id="shGo">Share</button>
  </div>
 </div>
+<div class="how" id="sheet" hidden><div class="howcard sheetcard" id="sheetCard" role="dialog" aria-modal="true"></div></div>
+<div class="promo" id="promo" hidden></div>
 <div class="toast" id="toast" hidden></div>
 <div class="glow" id="glow"></div>
-<script src="/declass/declass.js?v=bae7a7b8"></script>
+<script src="/declass/declass.js?v=5b56c578"></script>
 </body>
 </html>

@@ -6,12 +6,14 @@ import { now } from '../_lib/catalog.js';
 import { signedInPlayer, publicPlayer } from '../_lib/player.js';
 import { dailyOpen, commemorativeOpen, nextSlot, upcomingSlots } from '../_lib/envelopes.js';
 import { signPending, publicPull, withCard } from '../_lib/pulls.js';
+import { intelSummary, priceTable } from '../_lib/intel.js';
+import { filledSlots, rankInfo } from '../_lib/rank.js';
 
 export async function onRequestGet({ request, env }) {
   const t = now(env, request);
   const daily = dailyOpen(t);
   const commemorative = commemorativeOpen(t);
-  const base = { now: t.toISOString(), next: nextSlot(t), upcoming: upcomingSlots(t) };
+  const base = { now: t.toISOString(), next: nextSlot(t), upcoming: upcomingSlots(t), prices: priceTable() };
 
   const player = await signedInPlayer(env, request);
   if (!player) return json({ ...base, player: null, envelopes: daily, commemorative, priority: 0, waiting: [], pulls: [] });
@@ -32,5 +34,7 @@ export async function onRequestGet({ request, env }) {
     priority: player.priority_waiting,
     waiting: pulls.results.filter(r => !r.turned).reverse().map(r => withCard(r, t)),
     pulls: pulls.results.map(publicPull),
+    intel: await intelSummary(env.DB, player, t),
+    rank: rankInfo(filledSlots(pulls.results), player.rank_seen || 0),
   });
 }

@@ -11,6 +11,7 @@ export function publicPlayer(p, t = new Date()) {
     priorityWaiting: p.priority_waiting,
     starterDone: Boolean(p.starter_done),
     tester: Boolean(p.tester),
+    intel: p.intel || 0,
   };
 }
 

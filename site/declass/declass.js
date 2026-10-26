@@ -69,6 +69,7 @@
     if (key.startsWith('p:')) return 'Priority envelope';
     if (key.startsWith('c:')) return 'Commemorative file';
     if (key === 's:starter') return 'Starter pack';
+    if (key.startsWith('q:')) return 'Requisition';
     return 'Envelope';
   }
   function show(id) {
@@ -159,6 +160,7 @@
   function envHTML(i, env) {
     const k = env.kind, pr = k === 'priority', st = k === 'starter', cm = k === 'commemorative';
     const c = cm ? ['#1d1a17', '#24201c', '#2a2520'] : pr ? ['#C9A774', '#C5A26E', '#CDAB79'] : ['#E8DFC7', '#E6DCC3', '#EAE1C9'];
+    if (k === 'request') return reqEnvHTML(env);
     const lbl = cm ? 'THREE DAYS ONLY' : pr ? 'DEEP ARCHIVE' : st ? 'FIRST FILE' : etTime(env.at).toUpperCase();
     const stamp = cm ? `<div class="prio">${esc(env.stamp).replace(' · ', '<br>')}</div><div class="lbl">COMMEMORATIVE<br>· ${lbl}<b>WW2 DISPATCHES</b></div>`
       : pr ? `<div class="prio">PRIORITY</div><div class="lbl">STREAK REWARD<br>· ${lbl}<b>WW2 DISPATCHES</b></div>`
@@ -169,9 +171,14 @@
     return `<svg class="body" viewBox="0 0 360 200" preserveAspectRatio="none" aria-hidden="true"><rect width="360" height="200" fill="${c[0]}"/><polygon points="0,0 180,126 0,200" fill="${c[1]}"/><polygon points="360,0 180,126 360,200" fill="${c[1]}"/><polygon points="0,200 180,126 360,200" fill="${c[2]}"/><polyline points="0,200 180,126 360,200" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="1.5"/></svg>
       <div class="flap"></div><div class="seal">SEALED<br>WW2</div><div class="no">${i ? 'No. ' + i + ' of 3' : ''}</div>${stamp}<div class="cstamp">CLASSIFIED</div><div class="dstamp">DECLASS</div><div class="edge"></div>`;
   }
+  // The small Requisition envelope a requested card arrives in (25 Oct 2026).
+  function reqEnvHTML(env) {
+    return `<svg class="body" viewBox="0 0 360 200" preserveAspectRatio="none" aria-hidden="true"><rect width="360" height="200" fill="#D9D2B4"/><polygon points="0,0 180,126 0,200" fill="#D3CCAD"/><polygon points="360,0 180,126 360,200" fill="#D3CCAD"/><polygon points="0,200 180,126 360,200" fill="#DDD6B9"/><polyline points="0,200 180,126 360,200" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="1.5"/></svg>
+      <div class="flap"></div><div class="seal">SEALED<br>WW2</div><div class="no"></div><div class="prio reqk">REQUISITION</div><div class="lbl">REQUESTED FILE<br>· ${esc(String(env.price || ''))} INTEL<b>WW2 DISPATCHES</b></div><div class="cstamp">CLASSIFIED</div><div class="dstamp">DECLASS</div><div class="edge"></div>`;
+  }
   // Each envelope type wears the look drawn for it in the Field manual: priority manila, commemorative
   // black and gold, starter green ring, Sunday deep archive navy ring, Last call dashed red.
-  const envClass = env => { const k = env.kind; return k === 'priority' ? ' priority' : k === 'commemorative' ? ' commem' : k === 'starter' ? ' starter' : (env.deep ? ' deep' : '') + (env.last ? ' last' : ''); };
+  const envClass = env => { const k = env.kind; return k === 'request' ? ' req' : k === 'priority' ? ' priority' : k === 'commemorative' ? ' commem' : k === 'starter' ? ' starter' : (env.deep ? ' deep' : '') + (env.last ? ' last' : ''); };
 
   // ---------- home ----------
   function slotButton(cls, title, sub, onclick, help) {
@@ -189,6 +196,7 @@
     const guard = (b, fn) => { if (locked) return nudge(b); fn(); };
 
     $('streakN').textContent = p ? p.streak : 0;
+    renderStats();
     $('streakHint').textContent = !p ? 'Sign in to start a streak'
       : p.streak ? (p.nextPriorityIn === 3 ? 'Priority envelope earned' : 'Priority envelope in ' + p.nextPriorityIn + ' day' + (p.nextPriorityIn > 1 ? 's' : ''))
       : 'Open an envelope to start';
@@ -293,11 +301,16 @@
     const dots = info.flash
       ? `<div class="fd"><i class="flash${h ? ' on' : ''}" title="Flash · always Top Secret"></i></div>`
       : `<div class="fd">${FIN.map(f => `<i class="f-${f}${h && (h.still[f] || h.living[f]) ? ' on' : ''}" title="${FNAME[f]}"></i>`).join('')}${info.hasFilm ? `<b class="${h && FIN.some(f => h.living[f]) ? 'on' : ''}" title="Living Card">▶︎</b>` : ''}</div>`;
-    if (!best) return `<div class="mini sealed"><span class="thumb">?</span><span class="no">${esc(label(info))}</span><span class="nm">${esc(info.short)}</span>${dots}</div>`;
+    if (!best) {
+      // Signed in, a sealed card can be requested (25 Oct 2026); one of today's cards can't.
+      if (signedIn() && !info.today) return `<button class="mini sealed req" data-req="${esc(id)}"><span class="thumb">?</span><span class="no">${esc(label(info))}</span><span class="nm">${esc(info.short)}</span>${dots}<span class="reqline">Request this file</span></button>`;
+      return `<div class="mini sealed"><span class="thumb">?</span><span class="no">${esc(label(info))}</span><span class="nm">${esc(info.short)}</span>${dots}</div>`;
+    }
     return `<button class="mini" data-id="${esc(id)}"><img class="thumb ${info.flash ? 'flash' : 'f-' + best}" loading="lazy" src="${esc(info.img)}" alt="${esc(info.short)}"><span class="no">${esc(label(info))}</span><span class="nm">${esc(info.short)}</span>${dots}</button>`;
   }
   function wireMinis(el, list) {
     el.querySelectorAll('.mini[data-id]').forEach(b => { b.onclick = () => view(b.dataset.id, list.filter((x, i, a) => holdingsNow().has(x) && a.indexOf(x) === i)); });
+    el.querySelectorAll('.mini[data-req]').forEach(b => { b.onclick = () => requestPicker(b.dataset.req); });
   }
 
   // ---------- sections ----------
@@ -343,8 +356,13 @@
     }
     $('sectionTitle').textContent = title;
     const h = list.filter(c => H.has(c.id)).length;
+    // A set one card short shows that card first, ready to request (25 Oct 2026).
+    const oneShort = fromSets && list.length > 1 && list.length - h === 1 ? list.find(c => !H.has(c.id)) : null;
+    if (oneShort) list = [oneShort].concat(list.filter(c => c !== oneShort));
     $('sectionSub').textContent = `${h} of ${list.length} cards · Swatches show the finishes you hold, ▶︎ a Living Card`;
-    $('sectionGrid').innerHTML = list.length ? list.map(c => miniHTML(c.id, H)).join('') : '<p class="sub" style="grid-column:1/-1">Nothing here yet.</p>';
+    $('sectionGrid').innerHTML = (oneShort ? `<p class="oneshort">One card to go: <b>${esc(oneShort.short)}</b>${signedIn() && !oneShort.today ? ` · <button class="linkish" id="reqOne">Request this file · ${priceOf(oneShort, 'still', 'copper')} Intel${haveIntel() < priceOf(oneShort, 'still', 'copper') ? ' (you have ' + haveIntel() + ')' : ''}</button>` : ''}</p>` : '')
+      + (list.length ? list.map(c => miniHTML(c.id, H)).join('') : '<p class="sub" style="grid-column:1/-1">Nothing here yet.</p>');
+    if (oneShort && $('reqOne')) $('reqOne').onclick = () => requestPicker(oneShort.id);
     wireMinis($('sectionGrid'), list.map(c => c.id));
     viewFrom = 'sSection';
     show('sSection');
@@ -373,12 +391,12 @@
   }
 
   // ---------- the opening ----------
-  let busy = false, pendingTeletype = false;
+  let busy = false, pendingTeletype = false, lastEarn = null;
   function chosen(i) {
     if (busy) return;
     busy = true;
     const env = cur;
-    const req = env.kind === 'starter' ? api('starter', {}) : api('open', { slot: env.kind === 'priority' ? 'priority' : env.key });
+    const req = env.kind === 'request' ? Promise.resolve(env.result) : env.kind === 'starter' ? api('starter', {}) : api('open', { slot: env.kind === 'priority' ? 'priority' : env.key });
     const before = holdingsNow();
     const b = $('bigEnv');
     b.className = 'big';
@@ -390,7 +408,7 @@
     // preload the pictures (and films) as soon as the server answers
     req.then(d => d.pulls.forEach(p => { if (p.cardInfo) { new Image().src = p.cardInfo.img; if (p.variant === 'living' && p.cardInfo.filmMp4) { const v = document.createElement('video'); v.preload = 'auto'; v.muted = true; v.src = p.cardInfo.filmMp4; } } })).catch(() => {});
     setTimeout(() => b.classList.add('stamp'), 250);
-    setTimeout(() => { b.classList.add('go'); $('tearing').textContent = env.kind === 'starter' ? 'Five cards inside.' : env.kind === 'commemorative' ? (env.title || env.stamp) : 'Three cards inside.'; }, 950);
+    setTimeout(() => { b.classList.add('go'); $('tearing').textContent = env.kind === 'request' ? 'Your requested file.' : env.kind === 'starter' ? 'Five cards inside.' : env.kind === 'commemorative' ? (env.title || env.stamp) : 'Three cards inside.'; }, 950);
     setTimeout(() => b.classList.add('fade'), 2100);
     Promise.all([req, delay(2850)]).then(([d]) => {
       busy = false;
@@ -399,6 +417,7 @@
         saveStarterLocal();
         startCards(d.pulls, 'starterLocal', before, env);
       } else {
+        lastEarn = env.kind === 'request' ? { request: env.price } : d.intel || null;
         startCards(d.pulls, 'server', before, env);
         if (d.player && ST) ST.player = d.player;
         pendingTeletype = Boolean(d.earnedPriority);
@@ -431,9 +450,14 @@
   }
   function startCards(list, mode, before, env) {
     pulls = list; cardMode = mode; cardEnv = env || null;
+    // The cards are the player's at the tap: add them to the dossier now, so the summary and the
+    // card view show them before the next refresh.
+    if (mode === 'server' && ST && ST.pulls) { const have = new Set(ST.pulls.map(p => p.id)); ST.pulls = list.filter(p => p.id && !have.has(p.id)).slice().reverse().concat(ST.pulls); }
     revealed = mode === 'starterLocal' ? STARTER.revealed.slice() : list.map(() => false);
     answered = list.map(() => false);
     tags = computeTags(list, before || new Map());
+    // A duplicate that converted shows its Intel on the tag (25 Oct 2026).
+    tags = tags.map((t, i) => t && t[0] === 'dup' && list[i].intel ? ['dup', 'DUPLICATE · +' + list[i].intel + ' INTEL'] : t);
     idx = Math.max(0, revealed.indexOf(false));
     renderCard();
     show('sCards');
@@ -441,6 +465,7 @@
   function backText(p, i) {
     const k = (cardEnv && cardEnv.kind) || (p.slot && p.slot.startsWith('p:') ? 'priority' : p.slot && p.slot.startsWith('c:') ? 'commemorative' : p.slot === 's:starter' ? 'starter' : 'daily');
     const first = i === 0 && (!p.slot || p.slot.startsWith('d:') || p.slot === 's:starter');
+    if (k === 'request') return 'Your requested file';
     if (p.cardInfo && p.cardInfo.flash) return k === 'commemorative' || k === 'daily' ? 'The Flash card' : 'A Flash card from the archive';
     if (k === 'priority' || k === 'commemorative') return 'From the deep archive';
     if (k === 'starter') return first ? "Today's dispatch" : 'Your starter pack';
@@ -499,7 +524,21 @@
     if (p.cardInfo.img && p.cardInfo.img !== p.cardInfo.imgPuzzle) { const im = document.querySelector('#flip .card img'); if (im) setTimeout(() => { im.src = p.cardInfo.img; }, 250); }
     $('hint').innerHTML = hintAfter(p, idx);
   }
+  function earnText(e) {
+    if (!e) return '';
+    if (e.request) return 'Requested for ' + e.request + ' Intel.';
+    // Duplicates of the same kind are grouped: "+5 Intel, +2 for 2 duplicate Coppers."
+    const parts = [], dup = new Map();
+    for (const x of e.earned || []) {
+      if (x.reason === 'envelope') { parts.push('+' + x.delta + ' Intel'); continue; }
+      const k = (x.variant === 'living' ? 'living ' : '') + FNAME[x.finish];
+      const d = dup.get(k) || { n: 0, sum: 0 }; d.n++; d.sum += x.delta; dup.set(k, d);
+    }
+    dup.forEach((d, k) => parts.push('+' + d.sum + ' for ' + (d.n > 1 ? d.n + ' duplicate ' + k + 's' : 'a duplicate ' + k)));
+    return parts.length ? parts.join(', ') + '.' : '';
+  }
   function renderSummary() {
+    $('earnLine').textContent = cardMode === 'server' && cardEnv ? earnText(lastEarn) : '';
     const H = holdingsNow();
     const ids = pulls.map(p => p.card);
     $('summaryRow').innerHTML = pulls.slice(0, 3).map(p => miniHTML(p.card, H)).join('');
@@ -537,11 +576,11 @@
       if (revealed.every(Boolean) && !signedIn()) return showSave();
       renderHome(); return show('sHome');
     }
-    Promise.all([refreshState(), refreshCatalog()]).then(() => { renderHome(); show('sHome'); }).catch(() => { renderHome(); show('sHome'); });
+    Promise.all([refreshState(), refreshCatalog()]).then(() => { renderHome(); show('sHome'); maybePromote(); }).catch(() => { renderHome(); show('sHome'); });
   }
   $('doneBtn').onclick = leaveCards;
   $('backCards').onclick = leaveCards;
-  function resumeWaiting() { startCards(ST.waiting, 'server', holdings(ST.pulls.filter(p => p.turned)), null); }
+  function resumeWaiting() { lastEarn = null; startCards(ST.waiting, 'server', holdings(ST.pulls.filter(p => p.turned)), null); }
 
   // ---------- save your dossier ----------
   function showSave() {
@@ -616,14 +655,17 @@
     $('vPrev').disabled = vi === 0; $('vNext').disabled = vi === viewList.length - 1;
     const row = (variant, lbl) => `<div class="rowlbl">${lbl}</div>` + FIN.map(f => {
       const n = h[variant][f] || 0;
-      return n ? `<button class="s4 f-${f}${variant === viewSel.variant && f === viewSel.finish ? ' cur' : ''}" data-v="${variant}" data-f="${f}">${FNAME[f]}<small>×${n}</small></button>` : '<div class="s4 off">?<small>Sealed</small></div>';
+      if (n) return `<button class="s4 f-${f}${variant === viewSel.variant && f === viewSel.finish ? ' cur' : ''}" data-v="${variant}" data-f="${f}">${FNAME[f]}<small>×${n}</small></button>`;
+      if (signedIn() && !info.today) return `<button class="s4 off reqs" data-rv="${variant}" data-rf="${f}" title="Request this file">?<small>${priceOf(info, variant, f)} Intel</small></button>`;
+      return '<div class="s4 off">?<small>Sealed</small></div>';
     }).join('');
     $('slots4').innerHTML = info.flash
       ? `<div class="rowlbl">Flash</div><button class="s4 f-topsecret cur" data-v="still" data-f="topsecret">Top Secret<small>×${h.still.topsecret || 0}</small></button><div class="s4 off flashnote">Always Top Secret</div>`
       : row('still', 'Still') + (info.hasFilm ? row('living', 'Living Card') : '');
-    $('slots4').querySelectorAll('button.s4').forEach(b => { b.onclick = () => { viewSel = { variant: b.dataset.v, finish: b.dataset.f }; renderView(); }; });
+    $('slots4').querySelectorAll('button.s4:not(.reqs)').forEach(b => { b.onclick = () => { viewSel = { variant: b.dataset.v, finish: b.dataset.f }; renderView(); }; });
+    $('slots4').querySelectorAll('button.reqs').forEach(b => { b.onclick = () => confirmRequest(info, b.dataset.rv, b.dataset.rf); });
     const mine = pl.filter(p => p.card === id).slice().sort((a, b) => (b.at || '').localeCompare(a.at || ''));
-    $('history').innerHTML = `<h3>Pulled ${mine.length} time${mine.length === 1 ? '' : 's'}</h3><ul>${mine.map(p => `<li><span>${p.at ? esc(localDate(p.at)) + ' · ' : ''}${esc(slotName(p.slot) || 'Starter pack')}${p.variant === 'living' ? ' · ▶︎ living' : ''}</span><span class="fin f-${p.finish}">${FNAME[p.finish]}${p.serial ? ' · Serial ' + ser4(p.serial) : ''}</span></li>`).join('')}</ul>`;
+    $('history').innerHTML = `<h3>Pulled ${mine.length} time${mine.length === 1 ? '' : 's'}</h3><ul>${mine.map(p => `<li><span>${p.at ? esc(localDate(p.at)) + ' · ' : ''}${esc(slotName(p.slot) || 'Starter pack')}${p.variant === 'living' ? ' · ▶︎ living' : ''}${p.intel ? ' · +' + p.intel + ' Intel' : ''}</span><span class="fin f-${p.finish}">${FNAME[p.finish]}${p.serial ? ' · Serial ' + ser4(p.serial) : ''}</span></li>`).join('')}</ul>`;
     renderText(info, h);
   }
   function renderText(info, h) {
@@ -936,7 +978,7 @@
     c.fillText('a WW2 Dispatches game · ww2dispatches.com/declass', W / 2, 1316);
     const file = best.file;
     c.fillStyle = '#9a8f78'; c.font = '400 22px "Special Elite"';
-    c.fillText((file ? 'File ' + file + ' · ' : '') + new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }), W / 2, 1341);
+    c.fillText((file ? 'File ' + file + ' · ' : '') + (ST && ST.rank ? ST.rank.title + ' · ' : '') + new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }), W / 2, 1341);
     c.textAlign = 'left';
   }
   let shAll = [], shSel = [], shBlob = null, shText = '';
@@ -1081,6 +1123,113 @@
   }
   $('backSets').onclick = () => { renderHome(); show('sHome'); };
 
+  // ---------- Intel, requests, and ranks (25 Oct 2026) ----------
+  const haveIntel = () => (ST && ST.intel ? ST.intel.balance : 0);
+  function priceOf(info, variant, finish) {
+    const P = (ST && ST.prices) || { still: { copper: 20, silver: 75, gold: 250, topsecret: 750 }, living: { copper: 30, silver: 113, gold: 375, topsecret: 1125 }, flash: 750 };
+    return info.flash ? P.flash : P[variant][finish];
+  }
+  function sheet(html) { $('sheetCard').innerHTML = html; $('sheet').hidden = false; document.body.style.overflow = 'hidden'; $('sheet').scrollTop = 0; }
+  function closeSheet() { $('sheet').hidden = true; document.body.style.overflow = ''; }
+  $('sheet').addEventListener('click', e => { if (e.target.id === 'sheet' || e.target.closest('[data-close]')) closeSheet(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !$('sheet').hidden) closeSheet(); });
+
+  // The three items under the wordmark: rank, streak, Intel.
+  function renderStats() {
+    const p = ST && ST.player, r = ST && ST.rank, it = ST && ST.intel;
+    $('rankBtn').style.visibility = p && r ? '' : 'hidden';
+    $('intelBtn').style.visibility = p && it ? '' : 'hidden';
+    if (r) {
+      $('rankT').textContent = r.short;
+      $('rankBar').style.width = (r.nextAt ? Math.max(0, Math.min(1, (r.filled - r.from) / (r.nextAt - r.from))) * 100 : 100) + '%';
+    }
+    if (it) { $('intelN').textContent = it.balance.toLocaleString(); $('intelToday').textContent = '+' + it.today + ' today'; }
+  }
+  $('rankBtn').onclick = () => {
+    const r = ST && ST.rank; if (!r) return;
+    sheet(`<div class="sheettop"><span class="howstamp">Service record</span><button class="howx" data-close aria-label="Close">✕</button></div>
+      <div class="rankbig">${rankBadge(r.title)}<h2>${esc(r.title)}</h2></div>
+      ${r.nextAt ? `<p class="sheetline"><b>${r.filled.toLocaleString()} of ${r.nextAt.toLocaleString()}</b> to ${esc(r.nextTitle)}</p><div class="rbar big"><em style="width:${Math.max(0, Math.min(1, (r.filled - r.from) / (r.nextAt - r.from))) * 100}%"></em></div>` : `<p class="sheetline"><b>${r.filled.toLocaleString()}</b> spots filled. The highest rank there is.</p>`}
+      <p class="sheetnote">You're promoted as your dossier grows. Every finish of every card you hold fills a spot, requested cards included. Ranks are never lost.</p>
+      <button class="btn" data-close>Got it</button>`);
+  };
+  const reasonText = x => x.reason === 'envelope' ? 'Envelope opened' : x.reason === 'duplicate' ? 'Duplicate ' + (x.variant === 'living' ? 'living ' : '') + (FNAME[x.finish] || '') + ' ' + ((BYID.get(x.card) || {}).short || '')
+    : x.reason === 'request' ? 'Requested ' + (FNAME[x.finish] || '') + ' ' + ((BYID.get(x.card) || {}).short || '') : x.reason;
+  $('intelBtn').onclick = () => {
+    const it = ST && ST.intel; if (!it) return;
+    const P = ST.prices;
+    sheet(`<div class="sheettop"><span class="howstamp">Intel</span><button class="howx" data-close aria-label="Close">✕</button></div>
+      <h2 class="intelbig">${it.balance.toLocaleString()} <small>Intel</small></h2>
+      <p class="sheetline">+${it.today} today</p>
+      ${it.recent.length ? `<h3>Recent</h3><ul class="intlog">${it.recent.map(x => `<li><span>${esc(reasonText(x))}</span><b class="${x.delta < 0 ? 'neg' : ''}">${x.delta > 0 ? '+' : ''}${x.delta}</b></li>`).join('')}</ul>` : '<p class="sheetnote">Open an envelope to earn your first Intel.</p>'}
+      <h3>How to earn it</h3><ul><li>5 Intel for every envelope you open.</li><li>Duplicates turn into Intel when you turn them: Copper 1, Silver 4, Gold 15.</li></ul>
+      <h3>How to spend it</h3><ul><li>Request any card you're missing, in any finish: tap a sealed spot on a card, or a sealed card in your dossier or Sets.</li>
+      <li>Copper ${P.still.copper}, Silver ${P.still.silver}, Gold ${P.still.gold}, Top Secret ${P.still.topsecret}, Flash ${P.flash}. Living Cards cost half again as much. Today's cards can't be requested.</li></ul>
+      <button class="btn" data-close>Got it</button>`);
+  };
+
+  // A card the player doesn't hold at all: pick the finish to request.
+  function requestPicker(id) {
+    const info = BYID.get(id); if (!info) return;
+    if (info.today) { toast("Today's cards can't be requested. Open today's envelope instead."); return; }
+    const h = holdingsNow().get(id) || { still: {}, living: {} };
+    const opt = (variant, f) => {
+      if (h[variant][f]) return '';
+      const pr = priceOf(info, variant, f), short = haveIntel() < pr;
+      return `<button class="reqopt f-${f}${short ? ' short' : ''}" data-v="${variant}" data-f="${f}"><b>${variant === 'living' ? 'Living ' : ''}${FNAME[f]}</b><span>${pr} Intel</span></button>`;
+    };
+    const rows = info.flash ? opt('still', 'topsecret') : FIN.map(f => opt('still', f)).join('') + (info.hasFilm ? FIN.map(f => opt('living', f)).join('') : '');
+    sheet(`<div class="sheettop"><span class="howstamp">Request a file</span><button class="howx" data-close aria-label="Close">✕</button></div>
+      <h2>${esc(info.short)}</h2><p class="sheetline">${esc(label(info))} · ${esc(info.date)}</p>
+      <p class="sheetnote">Choose a finish. You have ${haveIntel().toLocaleString()} Intel.</p>
+      <div class="reqopts">${rows || '<p class="sheetnote">You hold every finish of this card.</p>'}</div>
+      <button class="btn alt" data-close>Cancel</button>`);
+    $('sheetCard').querySelectorAll('.reqopt').forEach(b => { b.onclick = () => confirmRequest(info, b.dataset.v, b.dataset.f); });
+  }
+  // The plain confirm screen. No refunds.
+  function confirmRequest(info, variant, finish) {
+    if (signedIn() && ST.waiting.length) { closeSheet(); toast('Turn your waiting cards first.'); return; }
+    const pr = priceOf(info, variant, finish), bal = haveIntel(), short = bal < pr;
+    const what = (variant === 'living' ? 'Living ' : '') + (info.flash ? 'Flash' : FNAME[finish]);
+    sheet(`<div class="sheettop"><span class="howstamp">Requisition</span><button class="howx" data-close aria-label="Close">✕</button></div>
+      <h2>Request this file?</h2>
+      <p class="sheetline"><b>${esc(info.short)}</b> · ${esc(what)}</p>
+      <p class="sheetline big">${pr} Intel</p>
+      <p class="sheetnote">${short ? `You have ${bal} Intel, ${pr - bal} short. Open more envelopes to earn the rest.` : `You have ${bal} Intel, ${bal - pr} after this. Requests can't be refunded.`}</p>
+      <button class="btn" id="reqGo"${short ? ' disabled' : ''}>Request this file · ${pr} Intel${short ? ' (you have ' + bal + ')' : ''}</button>
+      <button class="btn alt" data-close>Cancel</button>`);
+    if (short) return;
+    $('reqGo').onclick = () => {
+      $('reqGo').disabled = true;
+      api('request', { card: info.id, variant, finish }).then(d => {
+        closeSheet();
+        if (ST && ST.intel) ST.intel.balance = d.player.intel;
+        cur = { kind: 'request', price: d.price, result: d };
+        chosen(0);
+      }).catch(e => {
+        closeSheet();
+        const m = e.message;
+        toast(m === 'not enough intel' ? 'Not enough Intel for that one yet.' : m === 'today' ? "Today's cards can't be requested." : m === 'already held' ? 'You already hold that one.' : m === 'cards waiting' ? 'Turn your waiting cards first.' : 'That request did not go through. Try again in a moment.');
+        refreshState().then(renderHome).catch(() => {});
+      });
+    };
+  }
+
+  // Rank badges: plain, generic art, no real insignia (neutral between Allied and Axis).
+  function rankBadge(title) {
+    return `<svg class="rbadge" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="46" fill="none" stroke="currentColor" stroke-width="4"/><circle cx="50" cy="50" r="36" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M50 22 l7 15 16 2 -12 11 3 16 -14 -8 -14 8 3 -16 -12 -11 16 -2z" fill="currentColor"/><text x="50" y="86" text-anchor="middle" font-family="Oswald" font-weight="700" font-size="8" letter-spacing="1" fill="currentColor">DECLASS</text></svg>`;
+  }
+  // The promotion moment, after the envelope (a rank stamp). Each new title is a surprise.
+  function maybePromote() {
+    const r = ST && ST.rank;
+    if (!r || !r.promoted) return;
+    r.promoted = false;
+    $('promo').innerHTML = `<div class="promocard"><div class="promostamp">${rankBadge(r.title)}</div><p class="promokick">PROMOTED</p><h2>${esc(r.title)}</h2><p class="sheetnote">Your dossier now fills ${r.filled.toLocaleString()} spots.${r.nextAt ? ' Keep collecting for your next promotion.' : ''}</p><button class="btn" id="promoOk">Carry on</button></div>`;
+    $('promo').hidden = false;
+    sfx('stampA'); sfx('goldA', 0.35);
+    $('promoOk').onclick = () => { $('promo').hidden = true; api('rank', {}).catch(() => {}); };
+  }
+
   // ---------- Delete my dossier ----------
   $('deleteBtn').onclick = () => show('sDelete');
   $('deleteNo').onclick = () => { renderHome(); show('sHome'); };
@@ -1131,7 +1280,7 @@
     return Promise.all([api('catalog'), api('state')]).then(([c, s]) => {
       setCatalog(c.cards); ST = s;
       const file = new URLSearchParams(location.search).get('file');
-      if (file) checkFile(file); else route();
+      if (file) checkFile(file); else { route(); if (signedIn()) maybePromote(); }
     });
   }).catch(() => show('sSoon'));
 })();

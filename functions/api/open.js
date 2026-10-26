@@ -12,6 +12,7 @@ import { signedInPlayer, publicPlayer } from '../_lib/player.js';
 import { resolveEnvelope, drawCards } from '../_lib/envelopes.js';
 import { streakAfterOpen } from '../_lib/streak.js';
 import { signPending, withCard } from '../_lib/pulls.js';
+import { ENVELOPE_INTEL, DUPLICATE_INTEL } from '../_lib/intel.js';
 
 const FINISHES = new Set(['copper', 'silver', 'gold', 'topsecret']);
 
@@ -36,6 +37,11 @@ export async function onRequestPost({ request, env }) {
   const picks = drawCards(envl, t);
   if (!picks.length) return fail(409, 'not available');
 
+  // Duplicates convert to Intel at the reveal (Envelope doc, Intel and requests). The first copy of
+  // each slot is protected; a slot already held, or filled earlier in this same envelope, converts.
+  const heldRows = await db.prepare('SELECT DISTINCT card_id, variant, finish FROM pulls WHERE player_id = ?').bind(player.id).all();
+  const held = new Set(heldRows.results.map(r => `${r.card_id}|${r.variant}|${r.finish}`));
+
   // Test copies only: force a finish to check serials without waiting for luck.
   const forced = env.ALLOW_FAKE_NOW === '1' && request.headers.get('x-declass-force-finish');
   if (forced && FINISHES.has(forced)) picks.forEach(p => { if (!p.card.flash) p.finish = forced; });
@@ -51,8 +57,12 @@ export async function onRequestPost({ request, env }) {
     stmts.push(db.prepare('INSERT INTO opened (player_id, slot_key, opened_at) VALUES (?1, ?2, ?3)').bind(pid, key, at));
   }
 
-  const pullIdx = [];
+  const pullIdx = [], earned = [{ reason: 'envelope', delta: ENVELOPE_INTEL }];
   for (const p of picks) {
+    const slot = `${p.card.id}|${p.variant}|${p.finish}`;
+    p.intel = held.has(slot) ? (DUPLICATE_INTEL[p.finish] || 0) : 0;
+    held.add(slot);
+    if (p.intel) earned.push({ reason: 'duplicate', delta: p.intel, card: p.card.id, variant: p.variant, finish: p.finish });
     const serialled = p.finish === 'topsecret' && !p.card.flash; // Flash cards carry no worldwide serial
     if (serialled) {
       stmts.push(db.prepare(`INSERT INTO serials (card_id, variant, last) SELECT ?3, ?4, 1 WHERE ${mine} ON CONFLICT (card_id, variant) DO UPDATE SET last = last + 1`).bind(pid, key, p.card.id, p.variant));
@@ -60,9 +70,17 @@ export async function onRequestPost({ request, env }) {
     const serial = serialled ? '(SELECT last FROM serials WHERE card_id = ?3 AND variant = ?4)' : 'NULL';
     pullIdx.push(stmts.length);
     stmts.push(db.prepare(
-      `INSERT INTO pulls (player_id, card_id, variant, finish, serial, slot_key, pulled_at, signature, turned)
-       SELECT ?1, ?3, ?4, ?5, ${serial}, ?2, ?6, '', 0 WHERE ${mine} RETURNING *`
-    ).bind(pid, key, p.card.id, p.variant, p.finish, at));
+      `INSERT INTO pulls (player_id, card_id, variant, finish, serial, slot_key, pulled_at, signature, turned, intel)
+       SELECT ?1, ?3, ?4, ?5, ${serial}, ?2, ?6, '', 0, ?7 WHERE ${mine} RETURNING *`
+    ).bind(pid, key, p.card.id, p.variant, p.finish, at, p.intel));
+  }
+
+  // Intel: 5 for the envelope plus every converted duplicate, credited only if this open went through.
+  const gained = earned.reduce((s, e) => s + e.delta, 0);
+  stmts.push(db.prepare(`UPDATE players SET intel = intel + ?3 WHERE id = ?1 AND ${mine}`).bind(pid, key, gained));
+  for (const e of earned) {
+    stmts.push(db.prepare(`INSERT INTO intel_log (player_id, at, delta, reason, slot_key, card_id, variant, finish) SELECT ?1, ?3, ?4, ?5, ?2, ?6, ?7, ?8 WHERE ${mine}`)
+      .bind(pid, key, at, e.delta, e.reason, e.card || null, e.variant || null, e.finish || null));
   }
 
   // The streak counts daily envelopes only. The last_day_played check means two requests racing
@@ -91,6 +109,7 @@ export async function onRequestPost({ request, env }) {
     envelope: { key, kind: envl.kind, deep: Boolean(envl.deep) },
     pulls: signed.results.map(r => withCard(r, t)),
     earnedPriority: Boolean(s && s.earned && fresh.last_day_played === s.day && fresh.streak === s.streak),
+    intel: { gained, earned, balance: fresh.intel },
     player: publicPlayer(fresh, t),
   });
 }

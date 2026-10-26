@@ -21,7 +21,7 @@ export async function signPending(env, playerId) {
 export function publicPull(r) {
   return {
     id: r.id, card: r.card_id, variant: r.variant, finish: r.finish, serial: r.serial ?? null,
-    slot: r.slot_key, at: r.pulled_at, turned: Boolean(r.turned), signed: Boolean(r.signature), file: fileNumber(r),
+    slot: r.slot_key, at: r.pulled_at, turned: Boolean(r.turned), signed: Boolean(r.signature), file: fileNumber(r), intel: r.intel || 0,
   };
 }
 

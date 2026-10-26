@@ -3,6 +3,7 @@
 // a dispatch card at its post time, its film at the noon video, a Name This card only once its
 // answer is public (when the next Name This posts).
 import data from '../_data/catalog.json';
+import { gameDay } from './time.js';
 
 const CARDS = data.cards;
 const BY_ID = new Map(CARDS.map(c => [c.id, c]));
@@ -66,6 +67,13 @@ export function flashForFile(fileDay, t) {
 }
 function nextDay(day) { const d = new Date(day + 'T12:00:00Z'); d.setUTCDate(d.getUTCDate() + 1); return d.toISOString().slice(0, 10); }
 
+// "Today's cards" (never requestable): released during the current Eastern game day, or still in their
+// 24 hour daily envelope.
+export function isTodayCard(card, t) {
+  const rel = Date.parse(card.kind === 'namethis' ? card.answerAt : card.postAt);
+  return gameDay(new Date(rel)) === gameDay(t) || t.getTime() - rel < DAY_MS;
+}
+
 // What the dossier grid needs for each card.
 export function summary(card, t) {
   const s = {
@@ -74,6 +82,7 @@ export function summary(card, t) {
     format: card.format, postAt: card.postAt, img: card.img, hasFilm: filmReleased(card, t), flash: Boolean(card.flash),
     subjects: card.subjects, theater: card.theater, nations: card.nations, who: card.who, story: card.story, branch: card.branch,
   };
+  s.today = isTodayCard(card, t); // today's cards can never be requested
   if (s.hasFilm) Object.assign(s, { filmMp4: card.film.mp4, filmPoster: card.film.poster, filmSound: card.film.sound });
   if (card.kind === 'namethis') Object.assign(s, { answer: card.answer, clue: card.clue, imgPuzzle: card.imgPuzzle });
   return s;
