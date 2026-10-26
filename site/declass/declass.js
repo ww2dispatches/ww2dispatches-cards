@@ -773,7 +773,7 @@
 
   // ---------- sound effects (made live in the browser) and music (Declass Sound Kit) ----------
   const SNDKEY = 'declass-sound';
-  const SND = { sfx: true, music: true };
+  const SND = { sfx: true, music: false }; // music starts off (26 Oct 2026); effects on
   try { Object.assign(SND, JSON.parse(localStorage.getItem(SNDKEY) || '{}')); } catch (e) {}
   let actx = null, master = null, sfxGain = null, nbuf = null;
   function ac() {
