@@ -60,7 +60,14 @@ export async function onRequestPost({ request, env }) {
     .bind(pid, key, at, -price, card.id, variant, finish));
 
   const results = await db.batch(stmts);
-  if (!(results[pullAt].results || []).length) return fail(402, 'not enough intel');
+  if (!(results[pullAt].results || []).length) {
+    // Refused inside the batch: say why (a double tap usually lands here as 'cards waiting').
+    const w = await db.prepare('SELECT COUNT(*) AS n FROM pulls WHERE player_id = ? AND turned = 0').bind(pid).first();
+    if (w.n > 0) return fail(409, 'cards waiting');
+    const h = await db.prepare('SELECT 1 FROM pulls WHERE player_id = ? AND card_id = ? AND variant = ? AND finish = ?').bind(pid, card.id, variant, finish).first();
+    if (h) return fail(409, 'already held');
+    return fail(402, 'not enough intel');
+  }
 
   await signPending(env, pid);
   const signed = await db.prepare('SELECT * FROM pulls WHERE player_id = ? AND slot_key = ?').bind(pid, key).all();
