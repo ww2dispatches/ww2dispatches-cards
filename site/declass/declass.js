@@ -506,7 +506,7 @@
   const coachPill = html => '<span class="coachp"><i></i>' + html + '</span>';
   function hintFor(p, i) {
     if (!revealed[i]) return packCoach(i, 'turn') ? coachPill('Tap to turn it over.') : 'Tap to turn it over';
-    return packCoach(i, 'swipe') ? coachPill('<span class="nudge" aria-hidden="true">◀</span>Swipe for the next one.') : hintAfter(p, i);
+    return packCoach(i, 'swipe') ? coachPill(matchMedia('(pointer: coarse)').matches ? '<span class="nudge" aria-hidden="true">◀</span>Swipe or tap Next for the next one.' : 'Click Next for the next one.') : hintAfter(p, i);
   }
   function hintAfter(p, i) {
     const info = p.cardInfo || {};
