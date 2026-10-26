@@ -5,9 +5,10 @@ export const LADDER = [
   [0, 'Private'], [50, 'Corporal'], [150, 'Sergeant'], [300, 'Staff Sergeant'], [500, 'Lieutenant'],
   [750, 'Captain'], [1000, 'Major'], [1500, 'Lieutenant Colonel'], [2000, 'Colonel'],
   [3000, 'Brigadier General'], [4000, 'Major General'], [5000, 'Lieutenant General'],
-  [6500, 'General'], [8000, 'Field Marshal'],
+  [6500, 'General'], [8000, 'General of the Army'],
 ];
-const SHORT = { 'Lieutenant Colonel': 'Lt. Colonel' }; // header only
+// US Army ranks (25 Oct 2026): the top rank is General of the Army, the five star rank of December 1944.
+const SHORT = { 'Lieutenant Colonel': 'Lt. Colonel', 'General of the Army': 'Gen. of the Army' }; // header only
 
 // Filled slots from a player's pull rows.
 export function filledSlots(rows) {

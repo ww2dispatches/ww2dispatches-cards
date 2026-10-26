@@ -527,3 +527,8 @@ button.stat{cursor:pointer;color:var(--mute)}
 /* Request button: the action on one line, the price beneath it */
 .btn.reqgo{line-height:1.2;padding-top:10px;padding-bottom:9px}
 .btn.reqgo small{display:block;margin-top:3px;font-size:11px;letter-spacing:.1em;opacity:.85}
+/* Rank insignia (US Army, WW2 era) */
+.slimrow .rkicon{height:22px;width:auto;max-width:40px;align-self:center;flex:0 0 auto}
+.rankbig .rbadge{width:auto;height:90px;max-width:180px}
+.promostamp{display:grid;place-items:center}
+.promostamp .rbadge{width:auto;height:auto;max-width:100%;max-height:100%}

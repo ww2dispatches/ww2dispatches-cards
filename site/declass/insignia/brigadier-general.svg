@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs>
+<linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6e08a"/><stop offset=".5" stop-color="#d1a93f"/><stop offset="1" stop-color="#8f6a14"/></linearGradient>
+<linearGradient id="silver" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f4f6f8"/><stop offset=".5" stop-color="#b9c0c8"/><stop offset="1" stop-color="#6f7882"/></linearGradient>
+<linearGradient id="od" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9b77c"/><stop offset="1" stop-color="#9c8a52"/></linearGradient></defs><path d="M50.00 35.00L54.00 46.50L66.17 46.75L56.47 54.10L59.99 65.75L50.00 58.80L40.01 65.75L43.53 54.10L33.83 46.75L46.00 46.50Z" fill="url(#silver)" stroke="#4d555e" stroke-width="1.5" stroke-linejoin="round"/></svg>

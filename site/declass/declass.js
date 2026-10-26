@@ -1145,6 +1145,7 @@
     $('statRow').hidden = !(p && (r || it));
     if (r) {
       $('rankT').textContent = r.short;
+      $('rankI').src = '/declass/insignia/' + rankSlug(r.title) + '.svg';
       $('rankBar').style.width = (r.nextAt ? Math.max(0, Math.min(1, (r.filled - r.from) / (r.nextAt - r.from))) * 100 : 100) + '%';
     }
     if (it) { $('intelN').textContent = it.balance.toLocaleString(); $('intelToday').textContent = 'Today +' + it.today; }
@@ -1220,8 +1221,10 @@
   }
 
   // Rank badges: plain, generic art, no real insignia (neutral between Allied and Axis).
-  function rankBadge(title) {
-    return `<svg class="rbadge" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="46" fill="none" stroke="currentColor" stroke-width="4"/><circle cx="50" cy="50" r="36" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M50 22 l7 15 16 2 -12 11 3 16 -14 -8 -14 8 3 -16 -12 -11 16 -2z" fill="currentColor"/><text x="50" y="86" text-anchor="middle" font-family="Oswald" font-weight="700" font-size="8" letter-spacing="1" fill="currentColor">DECLASS</text></svg>`;
+  // US Army insignia, WW2 era (25 Oct 2026), one file per rank in /declass/insignia/.
+  const rankSlug = title => String(title || 'Private').toLowerCase().replace(/[^a-z]+/g, '-');
+  function rankBadge(title, cls) {
+    return `<img class="${cls || 'rbadge'}" src="/declass/insignia/${rankSlug(title)}.svg" alt="" aria-hidden="true">`;
   }
   // The promotion moment, after the envelope (a rank stamp). Each new title is a surprise.
   function maybePromote() {
