@@ -82,13 +82,10 @@ export function resolveEnvelope(slot, t, player) {
 
 // One archive slot: roll Flash first (1 in 200, from the Flash cards already posted), then living,
 // then pick a card and roll the finish.
-// Cards already in this envelope are left out while any others remain (bug sweep, 26 Oct 2026: with a
-// small archive the same card often came twice in one envelope).
-function archivePick(fullPool, t, rnd, taken = new Set()) {
-  if (!fullPool.length) return null;
-  const fresh = fullPool.filter(c => !taken.has(c.id)), pool = fresh.length ? fresh : fullPool;
+function archivePick(pool, t, rnd) {
+  if (!pool.length) return null;
   if (rollFlash(rnd)) {
-    const all = flashPool(t), left = all.filter(c => !taken.has(c.id)), flashes = left.length ? left : all;
+    const flashes = flashPool(t);
     if (flashes.length) return flashPick(flashes[rnd(flashes.length)]);
   }
   if (rollLiving(rnd)) {
@@ -121,11 +118,9 @@ export function drawCards(env, t, rnd = secureInt) {
   }
   let pool = env.deep ? deepPool(t) : archivePool(t);
   if (!pool.length) pool = deepPool(t);
-  const taken = new Set(picks.map(p => p.card.id));
   while (picks.length < want) {
-    const p = archivePick(pool, t, rnd, taken);
+    const p = archivePick(pool, t, rnd);
     if (!p) break;
-    taken.add(p.card.id);
     picks.push(p);
   }
   return picks;
