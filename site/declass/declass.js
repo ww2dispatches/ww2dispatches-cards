@@ -226,6 +226,8 @@
       const dayEnd = new Date(dayStart.getTime()); dayEnd.setDate(dayEnd.getDate() + 1);
       const isToday = iso => { const x = Date.parse(iso); return x >= dayStart.getTime() && x < dayEnd.getTime(); };
       const slotTitle = at => (etHour(at) < 12 ? 'Morning' : 'Evening') + ' envelope';
+      // When the player opened it (the first pull saved under that envelope), else when it came out.
+      const openedAt = e => { const x = myPulls().find(q => q.slot === e.key && q.at); return x ? x.at : e.at; };
       for (const e of ST.envelopes.filter(e => !isToday(e.at) && !e.opened)) {
         files.appendChild(slotButton(locked ? 'locked' : 'live', 'Last call',
           (etHour(e.at) < 12 ? "Yesterday's morning" : "Yesterday's evening") + (e.deep ? ' · Sunday deep archive' : '') + ' · Closes ' + localTime(e.closes) + ' · ' + leftText(e.closes),
@@ -241,7 +243,7 @@
           continue;
         }
         files.appendChild(slotButton(e.opened ? 'done' : locked ? 'locked' : 'live', slotTitle(e.at),
-          e.opened ? deep + 'Opened · out since ' + localTime(e.at) : deep + 'Out since ' + localTime(e.at) + ' · ' + leftText(e.closes),
+          e.opened ? deep + 'Opened at ' + localTime(openedAt(e)) : deep + 'Out since ' + localTime(e.at) + ' · ' + leftText(e.closes),
           b => { if (!e.opened) guard(b, () => pick(e)); }, e.deep ? 'fm-sunday' : null));
       }
       todayHasUpcoming = today.some(e => !e.out);
