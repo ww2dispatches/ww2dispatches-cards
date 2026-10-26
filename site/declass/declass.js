@@ -248,6 +248,11 @@
       }
       todayHasUpcoming = today.some(e => !e.out);
     }
+    // A guest who left the starter pack partway can finish it from home (bug sweep, 26 Oct 2026).
+    if (!p && STARTER && STARTER.revealed.some(r => !r)) {
+      files.appendChild(slotButton('starter live', 'Finish your starter pack', STARTER.revealed.filter(r => !r).length + ' cards still to turn',
+        () => startCards(STARTER.pulls, 'starterLocal', new Map(), { kind: 'starter' }), 'fm-starter'));
+    }
     $('signBar').hidden = Boolean(p);
     $('signBar').querySelector('span').textContent = STARTER
       ? 'Your starter pack is waiting in this browser. Save your dossier to keep it and collect every day.'
@@ -296,10 +301,10 @@
   const holdingsNow = () => holdings(myPulls());
 
   // ---------- small cards in grids ----------
-  function miniHTML(id, H) {
+  function miniHTML(id, H, shown) {
     const info = BYID.get(id);
     if (!info) return '';
-    const h = H.get(id), best = bestFinish(h);
+    const h = H.get(id), best = h ? (shown || bestFinish(h)) : bestFinish(h);
     const dots = info.flash
       ? `<div class="fd"><i class="flash${h ? ' on' : ''}" title="Flash · always Top Secret"></i></div>`
       : `<div class="fd">${FIN.map(f => `<i class="f-${f}${h && (h.still[f] || h.living[f]) ? ' on' : ''}" title="${FNAME[f]}"></i>`).join('')}${info.hasFilm ? `<b class="${h && FIN.some(f => h.living[f]) ? 'on' : ''}" title="Living Card">▶︎</b>` : ''}</div>`;
@@ -459,7 +464,7 @@
     answered = list.map(() => false);
     tags = computeTags(list, before || new Map());
     // A duplicate that converted shows its Intel on the tag (25 Oct 2026).
-    tags = tags.map((t, i) => t && t[0] === 'dup' && list[i].intel ? ['dup earn', 'DUPLICATE · +' + list[i].intel + ' INTEL'] : t);
+    tags = tags.map((t, i) => t && t[0] === 'dup' && list[i].intel ? ['dup gain', 'DUPLICATE · +' + list[i].intel + ' INTEL'] : t);
     idx = Math.max(0, revealed.indexOf(false));
     renderCard();
     show('sCards');
@@ -471,7 +476,7 @@
     if (p.cardInfo && p.cardInfo.flash) return k === 'commemorative' || k === 'daily' ? 'The Flash card' : 'A Flash card from the archive';
     if (k === 'priority' || k === 'commemorative') return 'From the deep archive';
     if (k === 'starter') return first ? "Today's dispatch" : 'Your starter pack';
-    if (first && p.cardInfo && p.cardInfo.kind === 'dispatch' && p.variant === 'still' && i === 0) return "Today's dispatch";
+    if (first && p.cardInfo && p.cardInfo.kind === 'dispatch' && p.variant === 'still' && i === 0) return cardEnv && cardEnv.last ? "Yesterday's dispatch" : "Today's dispatch";
     return cardEnv && cardEnv.deep ? 'From the deep archive' : 'From the archive';
   }
   function renderCard(dir) {
@@ -552,7 +557,8 @@
     $('earnLine').textContent = cardMode === 'server' && cardEnv ? earnText(lastEarn) : '';
     const H = holdingsNow();
     const ids = pulls.map(p => p.card);
-    $('summaryRow').innerHTML = pulls.slice(0, 3).map(p => miniHTML(p.card, H)).join('');
+    // Every card in the envelope (a starter pack has five, a commemorative file four), each in the finish pulled.
+    $('summaryRow').innerHTML = pulls.map(p => miniHTML(p.card, H, p.finish)).join('');
     wireMinis($('summaryRow'), ids);
   }
   function go(n) {
@@ -626,7 +632,7 @@
   }
   function onCredential(res) {
     const hadStarter = Boolean(STARTER);
-    api('auth/google', { credential: res.credential, starter: STARTER ? STARTER.token : undefined })
+    api('auth/google', { credential: res.credential, starter: STARTER ? STARTER.token : undefined, starterTurned: STARTER ? STARTER.revealed.every(Boolean) : undefined })
       .then(d => {
         if (d.starterSaved || (d.player && d.player.starterDone)) { STARTER = null; saveStarterLocal(); }
         return refreshState().then(() => d);
@@ -902,11 +908,13 @@
   }
   const shareSrc = x => x.variant === 'living' && x.info.filmPoster ? x.info.filmPoster : x.info.img;
   function grad(c, x, y, w, h, stops) { const g = c.createLinearGradient(x, y, x + w, y + h); stops.forEach(([o, col]) => g.addColorStop(o, col)); return g; }
+  // Rounded rectangle, with a plain one on older Safari (before 16) that lacks roundRect.
+  const rrect = (c, x, y, w, h, r) => c.roundRect ? c.roundRect(x, y, w, h, r) : c.rect(x, y, w, h);
   function framed(c, img, x, y, w, f, serial, flash) {
     if (flash) { // full art: no frame, rounded corners, the holographic sheen over the art
       const ch = w * 1.25, r = w * 0.034;
-      c.save(); c.shadowColor = 'rgba(0,0,0,.55)'; c.shadowBlur = w * 0.06; c.shadowOffsetY = w * 0.025; c.fillStyle = '#111'; c.beginPath(); c.roundRect(x, y, w, ch, r); c.fill(); c.restore();
-      c.save(); c.beginPath(); c.roundRect(x, y, w, ch, r); c.clip(); c.drawImage(img, x, y, w, ch);
+      c.save(); c.shadowColor = 'rgba(0,0,0,.55)'; c.shadowBlur = w * 0.06; c.shadowOffsetY = w * 0.025; c.fillStyle = '#111'; c.beginPath(); rrect(c, x, y, w, ch, r); c.fill(); c.restore();
+      c.save(); c.beginPath(); rrect(c, x, y, w, ch, r); c.clip(); c.drawImage(img, x, y, w, ch);
       c.globalCompositeOperation = 'screen'; c.fillStyle = grad(c, x, y, w, ch, [[0, 'rgba(255,120,120,.16)'], [0.25, 'rgba(255,235,120,.16)'], [0.5, 'rgba(120,255,190,.16)'], [0.75, 'rgba(120,190,255,.16)'], [1, 'rgba(230,120,255,.16)']]); c.fillRect(x, y, w, ch);
       c.globalCompositeOperation = 'overlay'; const rg = c.createRadialGradient(x + w * 0.35, y + ch * 0.3, 0, x + w * 0.35, y + ch * 0.3, w * 0.7); rg.addColorStop(0, 'rgba(255,255,255,.45)'); rg.addColorStop(1, 'rgba(255,255,255,0)'); c.fillStyle = rg; c.fillRect(x, y, w, ch);
       c.restore(); return;
@@ -1012,7 +1020,7 @@
     shAll.forEach((x, i) => {
       const b = document.createElement('button');
       b.className = 'shpc' + (shSel[i] ? '' : ' off'); b.type = 'button';
-      b.innerHTML = `<img src="${esc(x.info.img)}" alt=""><b>✓</b><small>${esc(FNAME[x.finish] + ' ' + x.info.short)}</small>`;
+      b.innerHTML = `<img src="${esc(x.info.img)}" alt=""><b>✓</b><small>${esc((x.variant === 'living' ? 'Living ' : '') + FNAME[x.finish] + ' ' + x.info.short)}</small>`;
       b.onclick = () => { if (shSel[i] && shSel.filter(Boolean).length === 1) return; shSel[i] = !shSel[i]; shDrawPicks(); shRefresh(); };
       row.appendChild(b);
     });
@@ -1154,10 +1162,12 @@
     $('statRow').hidden = !(p && (r || it));
     if (r) {
       $('rankT').textContent = r.short;
+      $('rankT').classList.toggle('long', r.short.length > 12);
+      document.querySelector('.slimrow .rbar').hidden = !r.nextAt; // top rank: no next step, so no bar
       $('rankI').src = '/declass/insignia/' + rankSlug(r.title) + '.svg';
       $('rankBar').style.width = (r.nextAt ? Math.max(0, Math.min(1, (r.filled - r.from) / (r.nextAt - r.from))) * 100 : 100) + '%';
     }
-    if (it) { $('intelN').textContent = it.balance.toLocaleString(); $('intelToday').textContent = 'Today +' + it.today; }
+    if (it) { $('intelN').textContent = it.balance.toLocaleString(); $('intelToday').textContent = 'Today +' + it.today.toLocaleString(); }
   }
   $('rankBtn').onclick = () => {
     const r = ST && ST.rank; if (!r) return;

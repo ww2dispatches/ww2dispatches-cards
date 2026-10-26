@@ -533,7 +533,6 @@ button.stat{cursor:pointer;color:var(--mute)}
 .promostamp{display:grid;place-items:center}
 .promostamp .rbadge{width:auto;height:auto;max-width:100%;max-height:100%}
 /* Intel from a duplicate: a brass tag, and a chip that pops, floats up, and fades */
-.tag.dup.earn{background:linear-gradient(135deg,#d9b24c,#a07a1c);box-shadow:0 0 0 1.5px #f3dc7f inset}
 .ichip{position:absolute;left:50%;top:44%;z-index:9;pointer-events:none;display:flex;align-items:center;gap:6px;white-space:nowrap;font-family:var(--display);font-weight:700;font-size:17px;letter-spacing:.08em;color:#fbf6ea;background:linear-gradient(135deg,#d9b24c,#a07a1c);border:1.5px solid #f3dc7f;border-radius:20px;padding:5px 13px 5px 7px;box-shadow:0 6px 16px rgba(80,55,0,.35);opacity:0;transform:translate(-50%,-50%) scale(.6);animation:ichip 1.05s .45s ease-out both}
 .ichip i{width:17px;height:17px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff3c4,#e3c25e 45%,#9a7416);border:1.5px solid #fbf0c8}
 @keyframes ichip{0%{opacity:0;transform:translate(-50%,-50%) scale(.6)}15%{opacity:1;transform:translate(-50%,-50%) scale(1.15)}25%{opacity:1;transform:translate(-50%,-50%) scale(1)}55%{opacity:1;transform:translate(-50%,calc(-50% - 50px)) scale(1)}100%{opacity:0;transform:translate(-50%,calc(-50% - 120px)) scale(1)}}
@@ -550,3 +549,10 @@ button.stat{cursor:pointer;color:var(--mute)}
 .slimrow .stat b{line-height:1}
 .slimrow .intelst .itok{transform:translateY(-.5px)}
 .slimrow .intelst span:last-child{position:relative;top:1.5px}
+
+/* tag for a duplicate that earned Intel (was class earn, which clashed with the summary line) */
+.tag.dup.gain{background:linear-gradient(135deg,#d9b24c,#a07a1c);box-shadow:0 0 0 1.5px #f3dc7f inset}
+.slimrow #rankT{overflow:hidden;text-overflow:ellipsis;min-width:0}
+.slimrow .rankst .rbar{min-width:28px}
+.slimrow #rankT.long{font-size:12px;letter-spacing:0}
+.slimrow .rbar[hidden]{display:none}

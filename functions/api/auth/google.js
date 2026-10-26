@@ -31,7 +31,7 @@ export async function onRequestPost({ request, env }) {
   if (body.starter && !player.starter_done) {
     const t = now(env, request);
     const picks = await readToken(env, body.starter, t);
-    if (picks && (await saveStarter(env, playerId, picks, t, true))) {
+    if (picks && (await saveStarter(env, playerId, picks, t, body.starterTurned !== false))) {
       starterSaved = true;
       await signPending(env, playerId);
       player = await env.DB.prepare('SELECT * FROM players WHERE id = ?').bind(playerId).first();
