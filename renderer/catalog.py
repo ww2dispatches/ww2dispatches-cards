@@ -87,6 +87,17 @@ def tags(d):
     }
 
 
+def merge_tags(card, record):
+    """Add a record's set tags to its card, refusing any tag that shares a name with a card field.
+    (25 Oct 2026: a themes tag named "story" once silently replaced the card's story text.)"""
+    t = tags(record)
+    clash = sorted(set(card) & set(t))
+    if clash:
+        # Raised (not sys.exit) so the log rebuild reports it and carries on; the old catalog stays.
+        raise ValueError(f"catalog.py: tag field(s) {', '.join(clash)} would overwrite card fields on {card.get('id')}. Rename the tag in tags().")
+    return {**card, **t}
+
+
 catalog, skipped = [], []
 
 # Dispatch cards. Same post date rule as series_log.py: the recorded posted date, otherwise the
@@ -120,7 +131,7 @@ for d in dispatches:
             "links": link_row(links, FILM_LINKS),
         }
 
-    catalog.append({
+    catalog.append(merge_tags({
         "kind": "dispatch",
         "id": d["id"],
         "num": d["num"],
@@ -143,8 +154,7 @@ for d in dispatches:
         "sources": sources(d),
         "links": link_row(links, CARD_LINKS),
         "film": film,
-        **tags(d),
-    })
+    }, d))
 
 # Name This cards. One joins the pool only when its answer is public, which is when the next
 # Name This posts; the newest puzzle has no answer time yet and is never handed out.
@@ -158,7 +168,7 @@ for i, n in enumerate(puzzles):
         skipped.append(f"Name This {n['id']} (no card image yet)")
         continue
     links = n.get("links") or {}
-    catalog.append({
+    catalog.append(merge_tags({
         "kind": "namethis",
         "id": f"namethis-{n['id']}",
         "num": None,
@@ -183,8 +193,7 @@ for i, n in enumerate(puzzles):
         "sources": sources(n),
         "links": link_row(links, CARD_LINKS),
         "film": None,
-        **tags(n),
-    })
+    }, n))
 
 catalog.sort(key=lambda c: (c["postAt"], c["id"]))
 out = os.path.join(root, "functions", "_data", "catalog.json")
