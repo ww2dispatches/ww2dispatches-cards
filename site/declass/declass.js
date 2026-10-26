@@ -337,7 +337,7 @@
     $('filters').hidden = kind !== 'all';
     // Opened from the Sets page, the back button returns there (25 Oct 2026).
     $('backSection').textContent = fromSets ? '◀\ufe0e Sets' : '◀\ufe0e Dossier';
-    $('backSection').onclick = fromSets ? renderSets : () => { renderHome(); show('sHome'); };
+    $('backSection').onclick = fromSets ? backToSets : () => { renderHome(); show('sHome'); };
     if (kind === 'set') {
       list = CAT.filter(key.fn).sort((a, b) => (a[key.by] || '').localeCompare(b[key.by] || ''));
       title = key.title;
@@ -398,7 +398,7 @@
   }
 
   // ---------- the opening ----------
-  let busy = false, pendingTeletype = false, lastEarn = null;
+  let busy = false, pendingTeletype = false, lastEarn = null, reqFrom = null;
   function chosen(i) {
     if (busy) return;
     busy = true;
@@ -593,11 +593,26 @@
       if (revealed.every(Boolean) && !signedIn()) return showSave();
       renderHome(); return show('sHome');
     }
-    Promise.all([refreshState(), refreshCatalog()]).then(() => { renderHome(); show('sHome'); maybePromote(); }).catch(() => { renderHome(); show('sHome'); });
+    const back = cardEnv && cardEnv.kind === 'request' ? reqFrom : null;
+    reqFrom = null;
+    const home = () => { renderHome(); show('sHome'); };
+    // After a request, go back to the card or set it came from (bug sweep, 26 Oct 2026).
+    const done = () => {
+      if (back && back.screen === 'sView') { view(back.id, back.list); viewFrom = back.viewFrom === 'sCards' ? 'sHome' : back.viewFrom; }
+      else if (back && back.screen === 'sSection' && back.section) section(back.section[0], back.section[1], back.section[2]);
+      else home();
+    };
+    Promise.all([refreshState(), refreshCatalog()]).then(() => { done(); maybePromote(); }).catch(home);
   }
   $('doneBtn').onclick = leaveCards;
   $('backCards').onclick = leaveCards;
-  function resumeWaiting() { lastEarn = null; startCards(ST.waiting, 'server', holdings(ST.pulls.filter(p => p.turned)), null); }
+  // Finishing cards left waiting: rebuild the envelope's kind and its Intel line from the cards themselves.
+  function resumeWaiting() {
+    const w = ST.waiting, slot = (w[0] && w[0].slot) || '';
+    const kind = slot.startsWith('p:') ? 'priority' : slot.startsWith('c:') ? 'commemorative' : slot.startsWith('q:') ? 'request' : slot === 's:starter' ? 'starter' : 'daily';
+    lastEarn = kind === 'request' || kind === 'starter' ? null : { earned: [{ reason: 'envelope', delta: 5 }].concat(w.filter(p => p.intel).map(p => ({ reason: 'duplicate', delta: p.intel, variant: p.variant, finish: p.finish }))) };
+    startCards(w, 'server', holdings(ST.pulls.filter(p => p.turned)), { kind });
+  }
 
   // ---------- save your dossier ----------
   function showSave() {
@@ -972,7 +987,7 @@
   }
   async function paintShare(cv, items) {
     await Promise.all(['700 40px Oswald', '400 20px "Special Elite"'].map(f => document.fonts.load(f).catch(() => {})));
-    const imgs = await Promise.all(items.map(x => loadImg(shareSrc(x)).catch(() => null)));
+    const imgs = await Promise.all(items.map(x => loadImg(shareSrc(x)).catch(() => loadImg(x.info.img)).catch(() => null)));
     const W = 1080, H = 1350, c = cv.getContext('2d');
     c.textAlign = 'left'; c.fillStyle = '#17140f'; c.fillRect(0, 0, W, H);
     const g = c.createRadialGradient(W / 2, H * 0.48, W * 0.1, W / 2, H * 0.5, H * 0.75); g.addColorStop(0, 'rgba(176,74,62,.22)'); g.addColorStop(1, 'rgba(0,0,0,0)'); c.fillStyle = g; c.fillRect(0, 0, W, H);
@@ -1105,6 +1120,7 @@
     })]);
     return { months, groups };
   }
+  let setsOpenYears = new Set(), setsScroll = 0;
   function renderSets() {
     const { months, groups } = setsModel();
     // Every set opens its cards in the dossier grid (25 Oct 2026).
@@ -1123,7 +1139,7 @@
     const past = months.filter(m => !m.stamp && m.closed), years = [...new Set(past.map(m => m.ym.slice(0, 4)))];
     years.forEach(y => {
       const list = past.filter(m => m.ym.startsWith(y));
-      h += `<details class="syear"><summary><b>${y} monthly files</b><small>${list.length} month${list.length === 1 ? '' : 's'} still collectable</small></summary>${list.map(monthRow).join('')}</details>`;
+      h += `<details class="syear" data-y="${y}"${setsOpenYears.has(y) ? ' open' : ''}><summary><b>${y} monthly files</b><small>${list.length} month${list.length === 1 ? '' : 's'} still collectable</small></summary>${list.map(monthRow).join('')}</details>`;
     });
     groups.forEach(([g, list]) => {
       h += `<h2>${esc(g)}</h2>`;
@@ -1136,11 +1152,13 @@
     h += '<p class="snote">A month\'s stamp is permanent once the month closes with every card held, even if you catch up later. Every collection is always listed, greyed until its first card posts, and says "Currently complete" until the next card posts. Pins count different cards, never duplicates.</p>';
     $('sets').innerHTML = h;
     $('sets').querySelectorAll('[data-go]').forEach(el => {
-      const open = () => { const [k, key] = links[+el.dataset.go]; section(k, key, true); window.scrollTo(0, 0); };
+      const open = () => { setsScroll = window.scrollY; const [k, key] = links[+el.dataset.go]; section(k, key, true); window.scrollTo(0, 0); };
       el.onclick = open; el.onkeydown = e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } };
     });
+    $('sets').querySelectorAll('details.syear').forEach(d => { d.ontoggle = () => { if (d.open) setsOpenYears.add(d.dataset.y); else setsOpenYears.delete(d.dataset.y); }; });
     show('sSets');
   }
+  function backToSets() { renderSets(); window.scrollTo(0, setsScroll); }
   $('backSets').onclick = () => { renderHome(); show('sHome'); };
 
   // ---------- Intel, requests, and ranks (25 Oct 2026) ----------
@@ -1167,7 +1185,7 @@
       $('rankI').src = '/declass/insignia/' + rankSlug(r.title) + '.svg';
       $('rankBar').style.width = (r.nextAt ? Math.max(0, Math.min(1, (r.filled - r.from) / (r.nextAt - r.from))) * 100 : 100) + '%';
     }
-    if (it) { $('intelN').textContent = it.balance.toLocaleString(); $('intelToday').textContent = 'Today +' + it.today.toLocaleString(); }
+    if (it) { $('intelN').textContent = it.balance.toLocaleString(); $('intelN').classList.toggle('long', it.balance >= 10000); $('intelToday').textContent = 'Today +' + it.today.toLocaleString(); }
   }
   $('rankBtn').onclick = () => {
     const r = ST && ST.rank; if (!r) return;
@@ -1225,6 +1243,8 @@
     if (short) return;
     $('reqGo').onclick = () => {
       $('reqGo').disabled = true;
+      const scr = (document.querySelector('.screen.on') || {}).id;
+      reqFrom = { screen: scr, id: info.id, list: viewList.slice(), viewFrom, section: lastSection };
       api('request', { card: info.id, variant, finish }).then(d => {
         closeSheet();
         if (ST && ST.intel) ST.intel.balance = d.player.intel;

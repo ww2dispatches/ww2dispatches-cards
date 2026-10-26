@@ -556,3 +556,4 @@ button.stat{cursor:pointer;color:var(--mute)}
 .slimrow .rankst .rbar{min-width:28px}
 .slimrow #rankT.long{font-size:12px;letter-spacing:0}
 .slimrow .rbar[hidden]{display:none}
+.slimrow #intelN.long{font-size:15px}
