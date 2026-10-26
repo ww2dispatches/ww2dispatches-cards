@@ -519,3 +519,8 @@ button.stat{cursor:pointer;color:var(--mute)}
 .slimrow .intelst b{font-size:18px}
 .slimrow .intelst span:last-child{font-size:10px;white-space:nowrap}
 #sHome h1{margin-top:14px}#sHome .files-sub{margin-top:2px;line-height:1.4}
+/* Streak block keeps to two lines: "Day Streak" then the hint on one line (25 Oct 2026) */
+#sHome .top{gap:8px}
+#sHome .top .wordmark{flex:0 1 auto;min-width:0}
+#sHome .top .streak{max-width:none;flex:0 0 auto}
+#sHome .top .streak span{white-space:nowrap}
