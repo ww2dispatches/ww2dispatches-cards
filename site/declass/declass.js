@@ -855,7 +855,7 @@
     const t = actx.currentTime; duck.gain.cancelScheduledValues(t); duck.gain.setValueAtTime(duck.gain.value, t);
     duck.gain.linearRampToValueAtTime(down ? 0.18 : 1, t + (down ? 0.4 : 1.2));
   }
-  const onGesture = () => { ac(); if (SND.music && !musicStarted) startMusic(); tiltResume(); };
+  const onGesture = () => { ac(); if (SND.music && !musicStarted) startMusic(); };
   ['touchend', 'click', 'keydown'].forEach(ev => document.addEventListener(ev, onGesture, { capture: true }));
   const ICON = {
     sfx: '<path d="M4 9h4l5-4v14l-5-4H4z"/>',
@@ -895,12 +895,18 @@
     }).catch(() => lsSet(TILT_KEY, 'declined'));
   }
   let tiltResumed = false;
-  function tiltResume() { // a permission given earlier still needs a tap each visit to switch back on
+  // A permission given earlier still needs a tap each visit to switch back on. Ask only when the light
+  // matters (a gold or Top Secret card turning), never on just any tap (26 Oct 2026: iPhones showed
+  // Apple's motion prompt again on the first tap of a visit).
+  function tiltResume() {
     if (tiltResumed || !tiltNeedsAsk() || lsGet(TILT_KEY) !== 'granted') return;
     tiltResumed = true; DeviceOrientationEvent.requestPermission().catch(() => {});
   }
   function maybeTiltPrompt(finish) {
-    if ((finish !== 'gold' && finish !== 'topsecret') || !tiltNeedsAsk() || lsGet(TILT_KEY)) return;
+    if (finish !== 'gold' && finish !== 'topsecret') return;
+    tiltResume();
+    if (!tiltNeedsAsk() || lsGet(TILT_KEY)) return;
+    lsSet(TILT_KEY, 'asked'); // asked once, even if the player just swipes past it
     const box = document.createElement('div');
     box.className = 'tiltask';
     box.innerHTML = '✨ Tilt your phone to catch the light.<br><button class="yes" type="button">Turn on tilt</button><button class="no" type="button">Not now</button>';
