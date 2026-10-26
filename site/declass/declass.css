@@ -594,3 +594,4 @@ button.stat{cursor:pointer;color:var(--mute)}
 #sOpen.on{display:flex;flex-direction:column;justify-content:center;min-height:calc(100vh - 24px);min-height:calc(100dvh - 24px)}
 #sOpen .theatre{min-height:0;padding-top:clamp(90px,14vh,130px)}
 #sOpen .tearing{margin-top:18px;font-size:14px}
+.fnote.inline{position:static;margin:12px auto 4px;left:auto;right:auto;bottom:auto;box-shadow:0 4px 12px rgba(26,22,18,.25)}

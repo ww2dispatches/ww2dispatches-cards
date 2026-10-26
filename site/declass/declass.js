@@ -1346,6 +1346,10 @@
     noteScope = scope;
     n.innerHTML = '<div class="k"><i></i>FIRST TIME</div><p>' + text + '</p><button type="button">Got it</button>';
     n.querySelector('button').onclick = () => hideNote(scope);
+    // On the cards the note sits right under the card's line, beside what it explains; on a tall screen
+    // a note pinned to the bottom ended up far from the card (26 Oct 2026). Home notes stay pinned.
+    if (scope === 'cards') { n.classList.add('inline'); $('hint').after(n); }
+    else { n.classList.remove('inline'); document.body.appendChild(n); }
     n.hidden = false;
   }
   function hideNote(scope) {
