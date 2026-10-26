@@ -544,3 +544,8 @@ button.stat{cursor:pointer;color:var(--mute)}
 .ichip .itok{width:18px;height:18px;margin:0}
 .s4 small .itok{width:11px;height:11px;vertical-align:-1px;margin-right:3px}
 .intelbig .itok{width:.85em;height:.85em;vertical-align:-.08em}
+/* Rank and Intel line: icon, label, number, and "Today +N" all centered on one line (26 Oct 2026) */
+.slimrow .stat{align-items:center}
+.slimrow .stat .sl,.slimrow .intelst span:last-child{line-height:1}
+.slimrow .stat b{line-height:1}
+.slimrow .intelst .itok{transform:translateY(-.5px)}
