@@ -472,7 +472,7 @@
   function backText(p, i) {
     const k = (cardEnv && cardEnv.kind) || (p.slot && p.slot.startsWith('p:') ? 'priority' : p.slot && p.slot.startsWith('c:') ? 'commemorative' : p.slot === 's:starter' ? 'starter' : 'daily');
     const first = i === 0 && (!p.slot || p.slot.startsWith('d:') || p.slot === 's:starter');
-    if (k === 'request') return 'Your requested file';
+    if (k === 'request') return 'Your requested card';
     if (p.cardInfo && p.cardInfo.flash) return k === 'commemorative' || k === 'daily' ? 'The Flash card' : 'A Flash card from the archive';
     if (k === 'priority' || k === 'commemorative') return 'From the deep archive';
     if (k === 'starter') return first ? "Today's dispatch" : 'Your starter pack';
@@ -1221,7 +1221,7 @@
       return `<button class="reqopt f-${f}${short ? ' short' : ''}" data-v="${variant}" data-f="${f}"><b>${variant === 'living' ? 'Living ' : ''}${FNAME[f]}</b><span>${pr} Intel</span></button>`;
     };
     const rows = info.flash ? opt('still', 'topsecret') : FIN.map(f => opt('still', f)).join('') + (info.hasFilm ? FIN.map(f => opt('living', f)).join('') : '');
-    sheet(`<div class="sheettop"><span class="howstamp">Request a file</span><button class="howx" data-close aria-label="Close">✕</button></div>
+    sheet(`<div class="sheettop"><span class="howstamp">Request a card</span><button class="howx" data-close aria-label="Close">✕</button></div>
       <h2>${esc(info.short)}</h2><p class="sheetline">${esc(label(info))} · ${esc(info.date)}</p>
       <p class="sheetnote">Choose a finish. You have ${haveIntel().toLocaleString()} Intel.</p>
       <div class="reqopts">${rows || '<p class="sheetnote">You hold every finish of this card.</p>'}</div>
