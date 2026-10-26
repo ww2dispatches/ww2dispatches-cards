@@ -57,7 +57,8 @@ export const flashPool = t => CARDS.filter(c => c.flash && released(c, t));
 // next day's too, so the 1 and 2 September file carries both), posted and released by the moment it is
 // opened. Each date gets a new Flash card every year, so the newest posted one for each event date wins.
 export function flashForFile(fileDay, t) {
-  const md = fileDay.slice(5), next = nextDay(fileDay).slice(5);
+  // Only the 1 and 2 September file carries two days (bug sweep, 26 Oct 2026).
+  const md = fileDay.slice(5), next = md === '09-01' ? nextDay(fileDay).slice(5) : null;
   const out = new Map();
   for (const c of flashPool(t).sort((a, b) => a.postAt.localeCompare(b.postAt))) {
     const emd = c.date.slice(5);

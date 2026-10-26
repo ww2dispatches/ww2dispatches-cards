@@ -39,7 +39,12 @@ export async function onRequestPost({ request, env }) {
   const mine = 'EXISTS (SELECT 1 FROM opened WHERE player_id = ?1 AND slot_key = ?2)';
   const serialled = finish === 'topsecret' && !card.flash; // Flash cards carry no worldwide serial
   const stmts = [
-    db.prepare('INSERT INTO opened (player_id, slot_key, opened_at) SELECT ?1, ?2, ?3 WHERE (SELECT intel FROM players WHERE id = ?1) >= ?4').bind(pid, key, at, price),
+    // Balance, waiting lock, and already held are all rechecked inside the batch, so a double tap or two
+    // requests at once can never charge twice or skip the lock (bug sweep, 26 Oct 2026).
+    db.prepare(`INSERT INTO opened (player_id, slot_key, opened_at) SELECT ?1, ?2, ?3
+      WHERE (SELECT intel FROM players WHERE id = ?1) >= ?4
+        AND NOT EXISTS (SELECT 1 FROM pulls WHERE player_id = ?1 AND turned = 0)
+        AND NOT EXISTS (SELECT 1 FROM pulls WHERE player_id = ?1 AND card_id = ?5 AND variant = ?6 AND finish = ?7)`).bind(pid, key, at, price, card.id, variant, finish),
     db.prepare(`UPDATE players SET intel = intel - ?3 WHERE id = ?1 AND ${mine}`).bind(pid, key, price),
   ];
   if (serialled) {

@@ -11,7 +11,7 @@ import { signPending } from '../../_lib/pulls.js';
 
 export async function onRequestPost({ request, env }) {
   let body;
-  try { body = await request.json(); } catch { return fail(400, 'bad request'); }
+  try { body = (await request.json()) || {}; } catch { return fail(400, 'bad request'); }
 
   let sub;
   const fakeSub = env.ALLOW_FAKE_NOW === '1' && request.headers.get('x-declass-fake-google'); // test copies only
@@ -38,5 +38,5 @@ export async function onRequestPost({ request, env }) {
     }
   }
 
-  return json({ player: publicPlayer(player), starterSaved }, 200, { 'set-cookie': await makeSessionCookie(env, playerId) });
+  return json({ player: publicPlayer(player, now(env, request)), starterSaved }, 200, { 'set-cookie': await makeSessionCookie(env, playerId) });
 }

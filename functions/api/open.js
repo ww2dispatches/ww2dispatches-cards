@@ -51,10 +51,11 @@ export async function onRequestPost({ request, env }) {
   const stmts = [];
 
   if (envl.kind === 'priority') {
-    stmts.push(db.prepare('INSERT INTO opened (player_id, slot_key, opened_at) SELECT ?1, ?2, ?3 WHERE (SELECT priority_waiting FROM players WHERE id = ?1) > 0').bind(pid, key, at));
+    stmts.push(db.prepare('INSERT INTO opened (player_id, slot_key, opened_at) SELECT ?1, ?2, ?3 WHERE (SELECT priority_waiting FROM players WHERE id = ?1) > 0 AND NOT EXISTS (SELECT 1 FROM pulls WHERE player_id = ?1 AND turned = 0)').bind(pid, key, at));
     stmts.push(db.prepare(`UPDATE players SET priority_waiting = priority_waiting - 1 WHERE id = ?1 AND ${mine}`).bind(pid, key));
   } else {
-    stmts.push(db.prepare('INSERT INTO opened (player_id, slot_key, opened_at) VALUES (?1, ?2, ?3)').bind(pid, key, at));
+    // The waiting lock is rechecked inside the batch so two envelopes tapped at once can't both open.
+    stmts.push(db.prepare('INSERT INTO opened (player_id, slot_key, opened_at) SELECT ?1, ?2, ?3 WHERE NOT EXISTS (SELECT 1 FROM pulls WHERE player_id = ?1 AND turned = 0)').bind(pid, key, at));
   }
 
   const pullIdx = [], earned = [{ reason: 'envelope', delta: ENVELOPE_INTEL }];

@@ -44,25 +44,24 @@ export async function intelSummary(db, player, t) {
 
 // Duplicates pulled before Intel existed (25 Oct 2026) were never converted. Convert them once, the
 // same way the reveal would have: the first copy of each slot stays, later Copper, Silver, and Gold
-// copies turn into Intel; Top Secret never converts. New pulls are always converted at the reveal, so
-// after the first run this finds nothing. The UPDATE only touches rows still at 0, so two state
-// requests at once can't pay twice. Returns the Intel added.
+// copies turn into Intel; Top Secret never converts. Starter pack copies are left alone (the starter
+// earns nothing). New pulls are always converted at the reveal, so after the first run this finds
+// nothing. One batch logs, credits, and marks the rows together, so nothing is lost halfway, and a
+// second state request at the same moment finds the rows already marked. Returns the Intel added.
+const LEGACY = `player_id = ?1 AND intel = 0 AND finish IN ('copper', 'silver', 'gold') AND slot_key <> 's:starter'
+  AND EXISTS (SELECT 1 FROM pulls p2 WHERE p2.player_id = pulls.player_id AND p2.card_id = pulls.card_id
+              AND p2.variant = pulls.variant AND p2.finish = pulls.finish AND p2.id < pulls.id)`;
+const VALUE = `CASE finish WHEN 'copper' THEN ${DUPLICATE_INTEL.copper} WHEN 'silver' THEN ${DUPLICATE_INTEL.silver} ELSE ${DUPLICATE_INTEL.gold} END`;
 export async function convertLegacyDuplicates(db, playerId, t) {
-  const res = await db.prepare(
-    `UPDATE pulls SET intel = CASE finish WHEN 'copper' THEN ${DUPLICATE_INTEL.copper} WHEN 'silver' THEN ${DUPLICATE_INTEL.silver} ELSE ${DUPLICATE_INTEL.gold} END
-     WHERE player_id = ?1 AND intel = 0 AND finish IN ('copper', 'silver', 'gold')
-       AND EXISTS (SELECT 1 FROM pulls p2 WHERE p2.player_id = pulls.player_id AND p2.card_id = pulls.card_id
-                   AND p2.variant = pulls.variant AND p2.finish = pulls.finish AND p2.id < pulls.id)
-     RETURNING card_id, variant, finish, intel, slot_key`
-  ).bind(playerId).all();
-  const rows = res.results || [];
-  if (!rows.length) return 0;
-  const gained = rows.reduce((s, r) => s + r.intel, 0);
+  const found = await db.prepare(`SELECT COUNT(*) AS n FROM pulls WHERE ${LEGACY}`).bind(playerId).first();
+  if (!found || !found.n) return 0;
   const at = t.toISOString();
-  await db.batch([
-    db.prepare('UPDATE players SET intel = intel + ? WHERE id = ?').bind(gained, playerId),
-    ...rows.map(r => db.prepare(`INSERT INTO intel_log (player_id, at, delta, reason, slot_key, card_id, variant, finish) VALUES (?, ?, ?, 'duplicate', ?, ?, ?, ?)`)
-      .bind(playerId, at, r.intel, r.slot_key, r.card_id, r.variant, r.finish)),
+  const [, credit] = await db.batch([
+    db.prepare(`INSERT INTO intel_log (player_id, at, delta, reason, slot_key, card_id, variant, finish)
+      SELECT player_id, ?2, ${VALUE}, 'duplicate', slot_key, card_id, variant, finish FROM pulls WHERE ${LEGACY}`).bind(playerId, at),
+    db.prepare(`UPDATE players SET intel = intel + COALESCE((SELECT SUM(${VALUE}) FROM pulls WHERE ${LEGACY}), 0) WHERE id = ?1
+      RETURNING COALESCE((SELECT SUM(${VALUE}) FROM pulls WHERE ${LEGACY}), 0) AS added`).bind(playerId),
+    db.prepare(`UPDATE pulls SET intel = ${VALUE} WHERE ${LEGACY}`).bind(playerId),
   ]);
-  return gained;
+  return (credit.results && credit.results[0] && credit.results[0].added) || 0;
 }

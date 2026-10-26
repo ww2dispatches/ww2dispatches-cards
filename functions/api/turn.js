@@ -7,7 +7,7 @@ export async function onRequestPost({ request, env }) {
   const player = await signedInPlayer(env, request);
   if (!player) return fail(401, 'sign in');
   let body = {};
-  try { body = await request.json(); } catch {}
+  try { body = (await request.json()) || {}; } catch {}
   const ids = Array.isArray(body.ids) ? body.ids.map(Number).filter(Number.isInteger).slice(0, 50) : null;
 
   if (ids && ids.length) {
