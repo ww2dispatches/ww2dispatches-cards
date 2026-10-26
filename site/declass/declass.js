@@ -76,6 +76,9 @@
     document.querySelectorAll('.screen').forEach(s => s.classList.toggle('on', s.id === id));
     window.scrollTo(0, 0);
     renderGoogleButtons();
+    if (id !== 'sHome') { endTour(); hideNote('home'); }
+    if (id !== 'sCards') hideNote('cards');
+    if (id === 'sHome') setTimeout(coachHomeNow, 450);
   }
   function toast(t) { const el = $('toast'); el.textContent = t; el.hidden = false; clearTimeout(toast.t); toast.t = setTimeout(() => { el.hidden = true; }, 2800); }
   function nudge(el) { sfx('locked'); el.classList.remove('shake'); void el.offsetWidth; el.classList.add('shake'); }
@@ -296,6 +299,7 @@
     $('allSub').textContent = `${have} of ${total} cards`;
     $('footDelete').hidden = !p;
     $('footWho').innerHTML = p ? `File ${esc(p.fileNumber)} · <button id="signOut">Sign out</button>` : '';
+    if (homeRing) { const h = $('files').querySelector('.help[data-help="' + homeRing + '"]'); if (h) h.closest('.slotbtn').classList.add('coached'); }
     if (p) $('signOut').onclick = () => { try { google.accounts.id.disableAutoSelect(); } catch (e) {} api('auth/signout', {}).then(() => location.reload()); };
   }
   const holdingsNow = () => holdings(myPulls());
@@ -394,6 +398,7 @@
       e.onkeydown = ev => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); chosen(i); } };
       st.appendChild(e);
     }
+    $('pickCoach').hidden = !(env.kind === 'starter' && !seen('pick'));
     show('sPick');
   }
 
@@ -403,6 +408,7 @@
     if (busy) return;
     busy = true;
     const env = cur;
+    if (env.kind === 'starter') mark('pick');
     const req = env.kind === 'request' ? Promise.resolve(env.result) : env.kind === 'starter' ? api('starter', {}) : api('open', { slot: env.kind === 'priority' ? 'priority' : env.key });
     const before = holdingsNow();
     const b = $('bigEnv');
@@ -488,12 +494,19 @@
     if (dir) { f.classList.add('in'); requestAnimationFrame(() => requestAnimationFrame(() => f.classList.remove('in'))); }
     f.onclick = reveal;
     if (revealed[idx] && info && p.variant === 'living') startFilm(f, info);
-    $('hint').innerHTML = !revealed[idx] ? 'Tap to turn it over' : hintAfter(p, idx);
+    $('hint').innerHTML = hintFor(p, idx);
     $('prevBtn').disabled = idx === 0;
     $('nextBtn').disabled = !revealed[idx] || idx === pulls.length - 1;
     $('dots').innerHTML = pulls.map((_, i) => `<i class="${i === idx ? 'cur' : ''}"></i>`).join('');
     $('summary').hidden = !(revealed.every(Boolean) && cardMode !== 'starterLocal');
     if (!$('summary').hidden) renderSummary();
+  }
+  // The first pack teaches itself (26 Oct 2026): the first card's turn and swipe hints show as coach pills, once.
+  const packCoach = (i, k) => Boolean(cardEnv && cardEnv.kind === 'starter' && i === 0 && pulls.length > 1 && !seen(k));
+  const coachPill = html => '<span class="coachp"><i></i>' + html + '</span>';
+  function hintFor(p, i) {
+    if (!revealed[i]) return packCoach(i, 'turn') ? coachPill('Tap to turn it over.') : 'Tap to turn it over';
+    return packCoach(i, 'swipe') ? coachPill('<span class="nudge" aria-hidden="true">◀</span>Swipe for the next one.') : hintAfter(p, i);
   }
   function hintAfter(p, i) {
     const info = p.cardInfo || {};
@@ -514,7 +527,9 @@
     if (p.intel && tags[idx] && tags[idx][0].startsWith('dup')) intelChip(p.intel);
     if (cardMode === 'starterLocal') { STARTER.revealed = revealed.slice(); saveStarterLocal(); }
     else if (p.id) api('turn', { ids: [p.id] }).catch(() => {});
-    $('hint').innerHTML = hintAfter(p, idx);
+    $('hint').innerHTML = hintFor(p, idx);
+    if (packCoach(idx, 'turn')) mark('turn');
+    firstNotes(p);
     maybeTiltPrompt(p.finish);
     $('nextBtn').disabled = idx === pulls.length - 1;
     if (revealed.every(Boolean)) {
@@ -564,6 +579,8 @@
   function go(n) {
     if (n < 0 || n >= pulls.length) return;
     if (n > idx && !revealed[idx]) return;
+    if (n === 1 && idx === 0 && cardEnv && cardEnv.kind === 'starter') mark('swipe');
+    hideNote('cards');
     const p = pulls[idx];
     if (p && p.cardInfo && p.cardInfo.kind === 'namethis') answered[idx] = true;
     $('flip').classList.add('out');
@@ -1279,7 +1296,7 @@
     $('promo').innerHTML = `<div class="promocard"><div class="promostamp">${rankBadge(r.title)}</div><p class="promokick">PROMOTED</p><h2>${esc(r.title)}</h2><p class="sheetnote">Your dossier now fills ${r.filled.toLocaleString()} spots.${r.nextAt ? ' Keep collecting for your next promotion.' : ''}</p><button class="btn" id="promoOk">Carry on</button></div>`;
     $('promo').hidden = false;
     sfx('stampA'); sfx('goldA', 0.35);
-    $('promoOk').onclick = () => { $('promo').hidden = true; api('rank', {}).catch(() => {}); };
+    $('promoOk').onclick = () => { $('promo').hidden = true; api('rank', {}).catch(() => {}); coachHomeNow(); };
   }
 
   // ---------- Delete my dossier ----------
@@ -1309,6 +1326,118 @@
       $('fileSub').textContent = 'Check the number on the picture and try again. Every card pulled in Declass has a file number that checks out here.';
       $('fileCard').innerHTML = '';
     });
+  }
+
+  // ---------- first visit coaching (26 Oct 2026, Declass First Visit Tutorial mockup) ----------
+  // Each hint, the tour, and each first time note shows once. Remembered in this browser, and also worked
+  // out from the dossier itself (a player who has opened a daily envelope never sees the tour; one who has
+  // had a duplicate never sees the duplicate note), so a player on a second phone isn't taught again.
+  const COACH_KEY = 'declass_coach';
+  let COACH = {};
+  try { COACH = JSON.parse(localStorage.getItem(COACH_KEY) || '{}') || {}; } catch (e) {}
+  const seen = k => Boolean(COACH[k]);
+  function mark(k) { if (COACH[k]) return; COACH[k] = 1; try { localStorage.setItem(COACH_KEY, JSON.stringify(COACH)); } catch (e) {} }
+
+  let noteScope = null, homeRing = null;
+  function note(scope, key, text) {
+    mark(key);
+    const n = $('fnote');
+    noteScope = scope;
+    n.innerHTML = '<div class="k"><i></i>FIRST TIME</div><p>' + text + '</p><button type="button">Got it</button>';
+    n.querySelector('button').onclick = () => hideNote(scope);
+    n.hidden = false;
+  }
+  function hideNote(scope) {
+    if (noteScope !== scope) return;
+    $('fnote').hidden = true; noteScope = null;
+    if (scope === 'home' && homeRing) { homeRing = null; document.querySelectorAll('.slotbtn.coached').forEach(b => b.classList.remove('coached')); }
+  }
+  // On the cards: the first Living Card and the first duplicate that turned into Intel.
+  function firstNotes(p) {
+    if (cardMode !== 'server' || !signedIn()) return;
+    const mine = new Set(pulls.map(x => x.id));
+    const before = (ST.pulls || []).filter(x => !mine.has(x.id));
+    const info = p.cardInfo || {};
+    if (p.variant === 'living' && !seen('living')) {
+      if (before.some(x => x.variant === 'living')) return mark('living');
+      note('cards', 'living', "A Living Card. That's real archival film from the day, playing right on the card. "
+        + (info.filmSound ? 'Tap the speaker for its sound.' : 'This one was filmed without sound, as most wartime footage was.'));
+    } else if (p.intel > 0 && !seen('dup')) {
+      if (before.some(x => x.intel > 0)) return mark('dup');
+      note('cards', 'dup', 'You already had this one, so it turned into Intel. Tap Intel at the top of your home screen to see what you can request with it.');
+    }
+  }
+
+  // The three stop tour on the first visit to home, signed in.
+  const TOUR = [
+    { sel: '#files', h: "Today's files", t: 'A new file arrives with every dispatch we post. Each one stays open for 24 hours, so you can open it whenever you like that day.' },
+    { sel: '#sHome .top .streak', h: 'Your streak', t: 'Open at least one file a day to build your streak. Every third day earns a priority envelope, drawn from the whole archive.' },
+    { sel: '#statRow', h: 'Rank and Intel', t: "Every file you open earns Intel, and duplicates turn into more. Spend it to request any card you're missing. Your rank goes up as your dossier grows." },
+    { sel: '#sHome .howbtn', h: "That's it", t: 'How to play has the rest whenever you want it: Living Cards, Name This, sets, and the odds. Now go open your first file.', last: true },
+  ];
+  let tourAt = -1, tourEl = null;
+  function maybeTour() {
+    if (tourAt >= 0 || !signedIn() || seen('tour')) return false;
+    if ((ST.pulls || []).some(x => x.slot && x.slot.startsWith('d:'))) { mark('tour'); return false; }
+    mark('tour');
+    window.scrollTo(0, 0);
+    $('tourDim').hidden = false;
+    tourStep(0);
+    window.addEventListener('resize', placeTour);
+    return true;
+  }
+  function tourStep(i) {
+    if (tourEl) tourEl.classList.remove('tourlit');
+    const s = TOUR[i], el = document.querySelector(s.sel);
+    if (!el || !el.offsetParent) return i + 1 < TOUR.length ? tourStep(i + 1) : endTour();
+    tourAt = i; tourEl = el;
+    el.classList.add('tourlit');
+    const b = $('tourBub');
+    b.innerHTML = `<i class="arw"></i><h3>${s.h}</h3><p>${s.t}</p><div class="tfoot">`
+      + (s.last ? '<span></span><button class="btn" type="button" id="tourGo">Start declassifying</button>'
+        : `<span class="tstep">${i + 1} of 3</span><span><button class="tskip" type="button" id="tourSkip">Skip</button><button class="btn" type="button" id="tourGo">${i === 2 ? 'Got it' : 'Next'}</button></span>`)
+      + '</div>';
+    b.hidden = false;
+    $('tourGo').onclick = () => s.last ? endTour(true) : tourStep(i + 1);
+    if ($('tourSkip')) $('tourSkip').onclick = () => tourStep(TOUR.length - 1);
+    placeTour();
+    $('tourGo').focus({ preventScroll: true });
+  }
+  function placeTour() {
+    if (!tourEl) return;
+    const b = $('tourBub'), r = tourEl.getBoundingClientRect(), bh = b.offsetHeight, a = b.querySelector('.arw');
+    const below = r.bottom + 16 + bh < window.innerHeight - 8 || r.top - 16 - bh < 8;
+    b.style.top = (below ? r.bottom + 16 : r.top - 16 - bh) + 'px';
+    a.className = 'arw ' + (below ? 'up' : 'down');
+    const br = b.getBoundingClientRect();
+    a.style.left = Math.max(22, Math.min(br.width - 22, r.left + r.width / 2 - br.left)) + 'px';
+  }
+  function endTour(pulse) {
+    if (tourAt < 0) return;
+    if (tourEl) tourEl.classList.remove('tourlit');
+    tourAt = -1; tourEl = null;
+    $('tourDim').hidden = true; $('tourBub').hidden = true;
+    window.removeEventListener('resize', placeTour);
+    if (pulse) {
+      const h = document.querySelector('#sHome .howbtn');
+      if (h) { h.classList.remove('pulse'); void h.offsetWidth; h.classList.add('pulse'); }
+      setTimeout(coachHomeNow, 600);
+    }
+  }
+  // Home, after the tour: the first priority envelope and the first Last call each get a note.
+  function coachHomeNow() {
+    if (!$('sHome').classList.contains('on') || !$('promo').hidden || !$('sheet').hidden || tourAt >= 0 || noteScope) return;
+    if (maybeTour() || !signedIn()) return;
+    const ring = help => { const h = $('files').querySelector('.help[data-help="' + help + '"]'); if (!h) return false; homeRing = help; h.closest('.slotbtn').classList.add('coached'); return true; };
+    if (ST.priority > 0 && !seen('prio')) {
+      if ((ST.pulls || []).some(x => x.slot && x.slot.startsWith('p:'))) mark('prio');
+      else if (ring('fm-priority')) return note('home', 'prio', 'Three days in a row earned you a priority envelope. All three cards come from the whole archive, and it never expires.');
+    }
+    if (!seen('last')) {
+      const dayStart = new Date(); dayStart.setHours(0, 0, 0, 0);
+      const e = ST.envelopes.find(x => Date.parse(x.at) < dayStart.getTime() && !x.opened);
+      if (e && ring('fm-lastcall')) note('home', 'last', `Last call. You missed yesterday's ${etHour(e.at) < 12 ? 'morning' : 'evening'} file, but it's still open until ${localTime(e.closes)}. Open it before it closes for good.`);
+    }
   }
 
   // ---------- boot ----------
