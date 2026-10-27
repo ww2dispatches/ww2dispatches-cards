@@ -6,19 +6,20 @@ body.night{background:#120F0C;color:#EDE4CF;
 body.night .sheettop .howstamp{color:var(--red)}
 
 /* the home tile (on the paper page) */
-.icptile{display:block;width:100%;text-align:left;margin:12px 0;padding:14px 16px;border-radius:3px;position:relative;cursor:pointer;
+.icptile{display:block;width:100%;text-align:left;line-height:normal;margin:12px 0;padding:14px 16px;border-radius:3px;position:relative;cursor:pointer;
   background:#17140f;border:2px solid #3D5884;color:#EDE4CF;font-family:var(--body)}
-.icptile b{display:block;font-family:var(--display);font-size:18px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:#9fbbe8;padding-right:110px}
-.icptile span{display:block;font-family:var(--type);font-size:12px;color:#c9bd9f;padding-right:110px}
+.icptile b{display:block;font-family:var(--display);font-size:18px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:#9fbbe8;padding-right:118px}
+.icptile span{display:block;font-family:var(--type);font-size:12px;color:#c9bd9f;padding-right:118px}
 .icptile::after{position:absolute;right:14px;top:50%;transform:translateY(-50%);font-family:var(--display);font-weight:700;font-size:13px;letter-spacing:.1em;color:#9fbbe8}
 .icptile.live::after{content:"CRACK IT ▸"}
 .icptile.done{opacity:.8}.icptile.done::after{content:"FILED ✓";color:#a8b58a}
 .icptile.wait::after{content:"SIGN IN";color:#c9bd9f}
 /* Coming soon: a quiet paper tile (option 1, 27 Oct 2026). The dark Night Dispatch look waits for launch. */
-.icptile.soon{cursor:default;background:transparent;border:2px dashed #8a97ad;padding:10px 16px}
-.icptile.soon b{color:#6b6354;font-size:15px}
-.icptile.soon span{color:#8a8070;font-size:11px;padding-right:64px}
-.icptile.soon::after{content:"SOON";color:#8a97ad;font-size:11px}
+/* Same type as the envelope rows: 18 px title, 12 px subtext, 13 px status word (27 Oct 2026). */
+.icptile.soon{cursor:default;background:transparent;border:2px dashed #8a97ad}
+.icptile.soon b{color:#6b6354}
+.icptile.soon span{color:var(--mute);padding-right:80px}
+.icptile.soon::after{content:"SOON";color:#8a97ad}
 
 /* the screen */
 .icp .icptop{display:flex;justify-content:space-between;align-items:center}
