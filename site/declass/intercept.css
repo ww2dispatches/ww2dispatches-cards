@@ -14,8 +14,11 @@ body.night .sheettop .howstamp{color:var(--red)}
 .icptile.live::after{content:"CRACK IT ▸"}
 .icptile.done{opacity:.8}.icptile.done::after{content:"FILED ✓";color:#a8b58a}
 .icptile.wait::after{content:"SIGN IN";color:#c9bd9f}
-.icptile.soon{cursor:default;border-style:dashed;border-color:#5a6a85;opacity:.92}
-.icptile.soon b{color:#c9bd9f}.icptile.soon::after{content:"SOON";color:#8f97a6}
+/* Coming soon: a quiet paper tile (option 1, 27 Oct 2026). The dark Night Dispatch look waits for launch. */
+.icptile.soon{cursor:default;background:transparent;border:1.5px dashed #8a97ad;padding:10px 16px}
+.icptile.soon b{color:#6b6354;font-size:15px}
+.icptile.soon span{color:#8a8070;font-size:11px;padding-right:64px}
+.icptile.soon::after{content:"SOON";color:#8a97ad;font-size:11px}
 
 /* the screen */
 .icp .icptop{display:flex;justify-content:space-between;align-items:center}
