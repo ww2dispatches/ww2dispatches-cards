@@ -17,8 +17,9 @@ body.night .sheettop .howstamp{color:var(--red)}
 /* Coming soon: a quiet paper tile (option 1, 27 Oct 2026). The dark Night Dispatch look waits for launch. */
 /* Same type as the envelope rows: 18 px title, 12 px subtext, 13 px status word (27 Oct 2026). */
 .icptile.soon{cursor:default;background:transparent;border:2px dashed #8a97ad}
-.icptile.soon b{color:#6b6354}
-.icptile.soon span{color:var(--mute);padding-right:80px}
+/* Text colored and faded like an envelope that hasn't arrived yet (.slotbtn.wait). */
+.icptile.soon b{color:var(--ink);opacity:.6}
+.icptile.soon span{color:var(--mute);opacity:.6;padding-right:80px}
 .icptile.soon::after{content:"SOON";color:#8a97ad}
 
 /* the screen */
