@@ -730,7 +730,7 @@
       const paras = String(d.story || '').split(/\n\s*\n/).filter(Boolean);
       let s = `<div class="kick">${info.kind === 'namethis' ? 'NAME THIS' : 'DISPATCH ' + pad3(info.num) + ' · ' + esc(info.seriesName.toUpperCase())} · ${esc(info.date)}${info.place ? ' · ' + esc(info.place.toUpperCase()) : ''}</div><h3>${esc(info.title)}</h3>`;
       if (info.kind === 'namethis' && d.clue) s += `<p class="ntclue">The clue was: ${esc(d.clue)}</p>`;
-      if (paras.length) s += `<div class="story clip" id="ctStory">${paras.map(x => `<p>${esc(x)}</p>`).join('')}</div>` + (paras.length > 1 ? '<button class="more" id="ctMore">Read the full dispatch</button>' : '');
+      if (paras.length) s += `<div class="story clip" id="ctStory">${paras.map(x => `<p>${esc(x)}</p>`).join('')}</div>` + (paras.length > 1 ? '<button class="more" id="ctMore" aria-expanded="false">Read more ▾\ufe0e</button>' : '');
       if (d.photoCredit) s += `<h4>The photo</h4><p class="m">${esc(d.photoCredit)}${d.photoUrl ? ` <a href="${esc(d.photoUrl)}" target="_blank" rel="noopener">Source</a>` : ''}</p>`;
       if (d.film && holdsLiving) s += `<h4>The film</h4><p class="m">${esc(d.film.caption)}${d.film.sourceUrl ? ` <a href="${esc(d.film.sourceUrl)}" target="_blank" rel="noopener">National Archives</a>` : ''}</p>`;
       if (d.sources && d.sources.length) s += `<h4>Sources</h4><p class="m">${d.sources.map(x => `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a>`).join('<br>')}</p>`;
@@ -741,7 +741,7 @@
       } else s += '<h4>See the original posts</h4><p class="m">Links appear here once the posts go out.</p>';
       $('ctext').innerHTML = s;
       const mb = $('ctMore');
-      if (mb) mb.onclick = () => { const st = $('ctStory'); st.classList.toggle('clip'); mb.textContent = st.classList.contains('clip') ? 'Read the full dispatch' : 'Show less'; };
+      if (mb) mb.onclick = () => { const st = $('ctStory'); st.classList.toggle('clip'); const shut = st.classList.contains('clip'); mb.textContent = shut ? 'Read more ▾\ufe0e' : 'Show less ▴\ufe0e'; mb.setAttribute('aria-expanded', String(!shut)); };
     };
     if (DETAIL.has(info.id)) return paint(DETAIL.get(info.id));
     $('ctext').innerHTML = '<p class="m">Loading the file…</p>';
