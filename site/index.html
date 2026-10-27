@@ -99,6 +99,10 @@ a { color: inherit; }
 .slide figcaption b { font-family: var(--display); font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--paper); font-size: 13px; }
 .slide figcaption a { font-family: var(--display); font-weight: 600; letter-spacing: 1px; text-transform: uppercase; font-size: 13px; color: var(--paper);
   text-decoration: none; border-bottom: 2px solid var(--red); white-space: nowrap; }
+.slide figcaption .go, .pz-links { flex: none; display: flex; align-items: center; gap: 12px; }
+.slide figcaption a.ig, .pz-ig { border: 0; width: 30px; height: 30px; display: grid; place-items: center; border-radius: 50%; color: var(--paper); transition: background .15s; }
+.slide figcaption a.ig:hover, .pz-ig:hover { background: var(--line); }
+.slide figcaption a.ig svg, .pz-ig svg { width: 17px; height: 17px; fill: currentColor; }
 .arrow { position: absolute; top: calc(50% - 40px); width: 40px; height: 40px; border-radius: 50%; border: 0; cursor: pointer;
   background: rgba(26,22,18,.72); color: var(--paper); font: 700 20px/1 var(--display); display: grid; place-items: center; }
 .arrow.prev { left: 8px; } .arrow.next { right: 8px; }
@@ -276,7 +280,7 @@ footer { text-align: center; font-family: var(--type); font-size: 13px; color: v
   <section class="puzzle" id="puzzle" aria-labelledby="puzzle-h" hidden>
     <div class="pz-head"><h2 id="puzzle-h">Name This</h2><span id="pz-date"></span></div>
     <a class="pz-pic" id="pz-pic" href="https://www.threads.com/@ww2dispatches" target="_blank" rel="noopener"><img id="pz-img" src="" alt="WW2 Dispatches Name This card. Can you name it?" loading="lazy"></a>
-    <div class="pz-row"><p class="pz-clue" id="pz-clue"></p><a class="pz-go" id="pz-go" href="https://www.threads.com/@ww2dispatches" target="_blank" rel="noopener">Guess on Threads</a></div>
+    <div class="pz-row"><p class="pz-clue" id="pz-clue"></p><span class="pz-links"><a class="pz-go" id="pz-go" href="https://www.threads.com/@ww2dispatches" target="_blank" rel="noopener">Guess on Threads</a><a class="pz-ig" id="pz-ig" href="https://www.instagram.com/ww2dispatches" target="_blank" rel="noopener" aria-label="Guess on Instagram"></a></span></div>
     <p class="pz-last" id="pz-last" hidden></p>
   </section>
 
@@ -359,6 +363,9 @@ footer { text-align: center; font-family: var(--type); font-size: 13px; color: v
   var track = document.getElementById("track"), dots = document.getElementById("dots");
   var prev = document.getElementById("prev"), next = document.getElementById("next");
   var all = [], puzzles = [], shownKey = "", shownPuzzle = "";
+  // The Instagram glyph, borrowed from the header icons, for the small link beside each Threads link.
+  var IG = document.querySelector('.socials a[aria-label="Instagram"] svg').outerHTML;
+  document.getElementById("pz-ig").innerHTML = IG;
   function decode(s) { try { return decodeURIComponent(escape(atob(s))); } catch (e) { return ""; } }
   function renderPuzzle(now) {
     var live = puzzles.filter(function (p) { return p.date < now.date || (p.date === now.date && p.time <= now.time); });
@@ -369,6 +376,7 @@ footer { text-align: center; font-family: var(--type); font-size: 13px; color: v
     document.getElementById("pz-img").src = cur.img;
     document.getElementById("pz-pic").href = cur.link;
     document.getElementById("pz-go").href = cur.link;
+    if (cur.ig) document.getElementById("pz-ig").href = cur.ig;
     document.getElementById("pz-date").textContent = prettyDate(cur.date);
     document.getElementById("pz-clue").textContent = "Clue: " + cur.clue;
     var last = document.getElementById("pz-last"), ans = prev && prev.a ? decode(prev.a) : "";
@@ -398,7 +406,9 @@ footer { text-align: center; font-family: var(--type); font-size: 13px; color: v
       return '<figure class="slide ' + esc(s.kind) + '">' +
         '<a class="pic" href="' + esc(s.link) + '" target="_blank" rel="noopener"><img src="' + esc(s.img) + '" alt="' + esc(s.alt) + '" loading="lazy">' +
         (s.kind === "video" ? '<span class="play" aria-hidden="true"></span>' : "") + "</a>" +
-        "<figcaption><span><b>" + esc(bits[0]) + "</b> · " + esc(meta) + '</span><a href="' + esc(s.link) + '" target="_blank" rel="noopener">' + esc(s.linkLabel) + "</a></figcaption></figure>";
+        "<figcaption><span><b>" + esc(bits[0]) + "</b> · " + esc(meta) + '</span><span class="go"><a href="' + esc(s.link) + '" target="_blank" rel="noopener">' + esc(s.linkLabel) + "</a>" +
+        (s.ig ? '<a class="ig" href="' + esc(s.ig) + '" target="_blank" rel="noopener" aria-label="View on Instagram">' + IG + "</a>" : "") +
+        "</span></figcaption></figure>";
     }).join("");
     var first = track.querySelector("img"); if (first) first.loading = "eager";
     dots.innerHTML = "";
