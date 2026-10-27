@@ -1,0 +1,186 @@
+{
+  "about": "Intercept master list (a Declass daily puzzle). Each group: id (never reused), link (the typed line shown when it locks), difficulty (easy, medium, hard; never shown to players), cards (every card the group can be dealt from, posted or planned), alsoFits (cards that also fit the link but are never dealt in it, so the conflict check keeps them off any board that holds this group), source (what backs the link), added, and optional vetoed. Maintained by the Wednesday research run (Research doc, Intercept master list). The server deals only cards that have posted.",
+  "version": 1,
+  "groups": [
+    {
+      "id": "e-warships",
+      "link": "All three photos show a warship.",
+      "difficulty": "easy",
+      "cards": ["1941-10-17-kearny", "1941-10-17-kearny-spec", "namethis-1944-10-18-tirpitz", "1942-10-22-flagpole", "namethis-1944-10-24-musashi", "1944-10-25-johnston", "1942-10-26-hornet", "1942-10-30-u559", "1941-10-31-reuben-james"],
+      "alsoFits": ["1944-10-25-samar", "1944-10-20-leyte"],
+      "source": "Photo credits in each record: Kearny (twice), Tirpitz, HMS Seraph (Cherchell), Musashi, Johnston, Hornet under attack, HMS Petard (U-559), Reuben James. Samar shows ships through smoke and Leyte a landing craft, so both are kept off boards with this group.",
+      "added": "2026-10-27"
+    },
+    {
+      "id": "e-aircraft",
+      "link": "All three photos show aircraft.",
+      "difficulty": "easy",
+      "cards": ["1944-10-20-tdr", "namethis-1942-10-21-b17", "1940-10-26-mustang", "1942-10-28-alamein-counterattack", "namethis-1944-10-31-mosquito"],
+      "alsoFits": ["1942-10-26-hornet", "namethis-1942-10-28-gable"],
+      "source": "Photo credits: TDR-1 in flight, B-17D at Wright Field, NA-73X prototype, B-25s over the Western Desert, Mosquito FB.VIs. Hornet's photo shows a diving Japanese bomber and Gable's a B-17 waist gun.",
+      "added": "2026-10-27"
+    },
+    {
+      "id": "e-leaders",
+      "link": "All three photos show a national leader.",
+      "difficulty": "easy",
+      "cards": ["1941-10-18-tojo", "1940-10-28-ochi", "1940-10-21-churchill", "1941-10-27-fdr-navy-day"],
+      "alsoFits": ["1940-10-29-draft-spec", "1940-10-29-draft-lottery", "1944-10-20-leyte"],
+      "source": "Photo credits: Tojo (prime minister from 18 Oct 1941), Metaxas (prime minister of Greece), Churchill (prime minister), Roosevelt (president). Roosevelt is also in both draft photos, and Philippine President Osmena waded ashore with MacArthur at Leyte.",
+      "added": "2026-10-27"
+    },
+    {
+      "id": "m-pacific",
+      "link": "All three are from the war in the Pacific.",
+      "difficulty": "medium",
+      "cards": ["1944-10-20-leyte", "1944-10-20-tdr", "1944-10-25-samar", "1944-10-25-johnston", "1942-10-26-hornet", "namethis-1944-10-24-musashi", "namethis-1942-10-21-b17"],
+      "alsoFits": ["1941-10-18-tojo", "1945-10-22-this-is-the-army"],
+      "source": "Places in each record: Leyte, Bougainville, off Samar, Santa Cruz Islands, Sibuyan Sea, Central Pacific. Tojo led Japan into the Pacific war, and This Is the Army toured the Pacific, so both stay off boards with this group.",
+      "added": "2026-10-27"
+    },
+    {
+      "id": "m-north-africa",
+      "link": "All three are from the war in North Africa.",
+      "difficulty": "medium",
+      "cards": ["1942-10-22-flagpole", "1942-10-23-alamein", "1942-10-23-sherman", "1942-10-27-snipe", "1942-10-28-alamein-counterattack"],
+      "alsoFits": ["1942-10-30-u559"],
+      "source": "Places in each record: Cherchell, Algeria (the run up to Operation Torch) and El Alamein, Egypt. U-559 was sunk off Port Said, Egypt, so it stays off boards with this group.",
+      "added": "2026-10-27"
+    },
+    {
+      "id": "m-alamein",
+      "link": "All three are from the Second Battle of El Alamein.",
+      "difficulty": "medium",
+      "cards": ["1942-10-23-alamein", "1942-10-23-sherman", "1942-10-27-snipe", "1942-10-28-alamein-counterattack"],
+      "alsoFits": [],
+      "source": "The battle ran 23 Oct to 11 Nov 1942. Records: the opening barrage (23 Oct), the Sherman's first action (24 Oct), Outpost Snipe (27 Oct), Rommel's counterattack (28 Oct). Medium, not hard, because every card prints El Alamein as its place.",
+      "added": "2026-10-27"
+    },
+    {
+      "id": "m-north-atlantic",
+      "link": "All three took place in the North Atlantic.",
+      "difficulty": "medium",
+      "cards": ["1941-10-17-kearny", "1941-10-17-kearny-spec", "1941-10-31-reuben-james"],
+      "alsoFits": ["namethis-1944-10-18-tirpitz", "1941-10-27-fdr-navy-day"],
+      "source": "Kearny was torpedoed off Iceland (17 Oct 1941); Reuben James was sunk near Iceland escorting HX 156 (31 Oct 1941). Tirpitz in Norway and FDR's speech about Kearny stay off boards with this group.",
+      "added": "2026-10-27"
+    },
+    {
+      "id": "m-philippines",
+      "link": "All three took place in the Philippines.",
+      "difficulty": "medium",
+      "cards": ["1944-10-20-leyte", "1944-10-25-samar", "1944-10-25-johnston", "namethis-1944-10-24-musashi"],
+      "alsoFits": [],
+      "source": "Red Beach, Leyte; off Samar (Samar and Johnston); the Sibuyan Sea, where Musashi was sunk.",
+      "added": "2026-10-27"
+    },
+    {
+      "id": "m-destroyers",
+      "link": "All three photos show a destroyer.",
+      "difficulty": "medium",
+      "cards": ["1941-10-17-kearny", "1941-10-17-kearny-spec", "1944-10-25-johnston", "1941-10-31-reuben-james", "1942-10-30-u559"],
+      "alsoFits": ["1944-10-25-samar"],
+      "source": "Photo credits: USS Kearny (Gleaves class, twice), USS Johnston (Fletcher class), USS Reuben James (Clemson class), HMS Petard (P class) on the U-559 card. Samar shows destroyer escorts making smoke. Medium because it takes knowing ship types.",
+      "added": "2026-10-27"
+    },
+    {
+      "id": "m-bombers",
+      "link": "All three involve American bombers.",
+      "difficulty": "medium",
+      "cards": ["namethis-1942-10-21-b17", "namethis-1942-10-28-gable", "1942-10-28-alamein-counterattack"],
+      "alsoFits": ["1942-10-26-hornet", "1944-10-20-tdr"],
+      "source": "B-17 (Rickenbacker's ditching), Gable (flew in B-17s, photo beside a B-17 waist gun), the Alamein counterattack card (B-25s). Hornet launched the Doolittle B-25s and the TDR-1 carried a bomb under an Avenger's control, so both stay off boards with this group.",
+      "added": "2026-10-27"
+    },
+    {
+      "id": "m-fdr",
+      "link": "All three involve Franklin D. Roosevelt.",
+      "difficulty": "medium",
+      "cards": ["1941-10-27-fdr-navy-day", "1940-10-29-draft-lottery", "1940-10-29-draft-spec"],
+      "alsoFits": ["1944-10-19-waves", "1945-10-24-un", "1941-10-17-kearny", "1941-10-31-reuben-james"],
+      "source": "Navy Day address (27 Oct 1941); Roosevelt watched the draft lottery and signed the Selective Training and Service Act (records 025 and 026). He approved the WAVES change, named the United Nations, and spoke about Kearny and Reuben James, so those stay off boards with this group.",
+      "added": "2026-10-27"
+    },
+    {
+      "id": "m-famous-words",
+      "link": "All three are remembered for a famous line.",
+      "difficulty": "medium",
+      "cards": ["1944-10-20-leyte", "1940-10-21-churchill", "1941-10-27-fdr-navy-day", "1940-10-28-ochi"],
+      "alsoFits": ["1945-10-24-un", "1944-10-25-johnston"],
+      "source": "MacArthur's \"I have returned\" (Leyte), Churchill's \"For the morning will come\" (broadcast to France), Roosevelt's \"The shooting has started\", Metaxas's \"Then it is war\" (Ochi). The UN Charter's \"We the peoples\" and Evans's \"fighting ship\" stay off boards with this group.",
+      "added": "2026-10-27"
+    },
+    {
+      "id": "h-uboats",
+      "link": "All three involve German U-boats.",
+      "difficulty": "hard",
+      "cards": ["1941-10-17-kearny", "1941-10-17-kearny-spec", "1941-10-31-reuben-james", "1942-10-30-u559"],
+      "alsoFits": ["1941-10-27-fdr-navy-day"],
+      "source": "U-568 torpedoed Kearny (17 Oct 1941), U-552 sank Reuben James (31 Oct 1941), HMS Petard forced U-559 to the surface (30 Oct 1942). FDR's Navy Day speech was about Kearny, so it stays off boards with this group.",
+      "added": "2026-10-27"
+    },
+    {
+      "id": "h-submarines",
+      "link": "All three involve a submarine.",
+      "difficulty": "hard",
+      "cards": ["1942-10-22-flagpole", "1942-10-30-u559", "1941-10-17-kearny", "1941-10-17-kearny-spec", "1941-10-31-reuben-james"],
+      "alsoFits": ["1941-10-27-fdr-navy-day"],
+      "source": "Mark Clark landed at Cherchell from the submarine HMS Seraph (22 Oct 1942); U-559; U-568 hit Kearny; U-552 sank Reuben James.",
+      "added": "2026-10-27"
+    },
+    {
+      "id": "h-leyte-gulf",
+      "link": "All three are from the Battle of Leyte Gulf.",
+      "difficulty": "hard",
+      "cards": ["1944-10-25-samar", "1944-10-25-johnston", "namethis-1944-10-24-musashi"],
+      "alsoFits": ["1944-10-20-leyte"],
+      "source": "The Battle off Samar (25 Oct 1944, Taffy 3 and Johnston) and the Battle of the Sibuyan Sea (24 Oct 1944, where Musashi was sunk) are two of the four main actions of Leyte Gulf. The Leyte landing set the battle off, so it stays off boards with this group.",
+      "added": "2026-10-27"
+    },
+    {
+      "id": "h-navy-namesakes",
+      "link": "Each ship was named for a man of the U.S. Navy.",
+      "difficulty": "hard",
+      "cards": ["1941-10-17-kearny", "1941-10-17-kearny-spec", "1941-10-31-reuben-james", "1944-10-25-johnston"],
+      "alsoFits": [],
+      "source": "Navy ship histories (DANFS): Kearny for Commodore Lawrence Kearny, Reuben James for the boatswain's mate of the Barbary Wars, Johnston for John V. Johnston, Union Navy officer. Tirpitz was named for a German admiral and makes a fair red herring.",
+      "added": "2026-10-27"
+    },
+    {
+      "id": "h-aid-britain",
+      "link": "All three involve the United States backing Britain before Pearl Harbor.",
+      "difficulty": "hard",
+      "cards": ["1941-10-17-kearny", "1941-10-17-kearny-spec", "1941-10-31-reuben-james", "1940-10-26-mustang"],
+      "alsoFits": ["1941-10-27-fdr-navy-day"],
+      "source": "Kearny went to help a British convoy's escorts (SC 48); Reuben James was escorting HX 156 toward Britain; North American built the Mustang to a British order in 1940. FDR's speech about Kearny stays off boards with this group.",
+      "added": "2026-10-27"
+    },
+    {
+      "id": "h-captured",
+      "link": "In all three, the Allies captured something German.",
+      "difficulty": "hard",
+      "cards": ["1944-10-21-aachen", "1942-10-30-u559", "1946-10-24-v2"],
+      "alsoFits": ["1945-10-18-nuremberg-indictment", "1942-10-23-sherman"],
+      "source": "Aachen's garrison surrendered and was marched off (21 Oct 1944); Petard's boarders took U-559's codebooks (30 Oct 1942); the White Sands photo came from a captured V-2 (24 Oct 1946). The Nuremberg defendants were in Allied custody, and the Sherman record quotes a captured German document, so both stay off boards with this group.",
+      "added": "2026-10-27"
+    },
+    {
+      "id": "h-raf",
+      "link": "All three involve the Royal Air Force.",
+      "difficulty": "hard",
+      "cards": ["namethis-1944-10-31-mosquito", "1940-10-26-mustang", "namethis-1944-10-18-tirpitz"],
+      "alsoFits": ["1942-10-28-alamein-counterattack", "1942-10-23-alamein"],
+      "source": "Mosquitoes struck the Aarhus Gestapo headquarters (31 Oct 1944); the RAF flew the first Mustangs; an RAF reconnaissance plane photographed Tirpitz on 18 Oct 1944 and RAF Lancasters sank her that November. The Desert Air Force bombed Rommel's panzers and flew over the Alamein barrage, so those cards stay off boards with this group.",
+      "added": "2026-10-27"
+    },
+    {
+      "id": "h-royal-navy",
+      "link": "All three involve the Royal Navy.",
+      "difficulty": "hard",
+      "cards": ["1942-10-30-u559", "1942-10-22-flagpole", "namethis-1944-10-18-tirpitz"],
+      "alsoFits": [],
+      "source": "HMS Petard sank U-559; HMS Seraph carried Mark Clark to Cherchell; the Royal Navy hunted Tirpitz for years (X-craft and Fleet Air Arm attacks, 1943 and 1944).",
+      "added": "2026-10-27"
+    }
+  ]
+}

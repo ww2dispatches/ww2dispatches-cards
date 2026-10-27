@@ -1,8 +1,14 @@
 // Intercept master list check, run by the Wednesday research run after editing
 // functions/_data/intercept.json (Research doc, "Intercept master list"):
-//   node --import ./tests/declass/json-loader.mjs tests/declass/intercept-check.mjs [YYYY-MM-DD]
+//   node --import ./tests/declass/json-loader.mjs tests/declass/intercept-check.mjs [YYYY-MM-DD] [--prune]
 // It refuses a broken list (exit 1) and reports how ready the puzzle is: groups live and dormant by
 // difficulty, how often a fair grid deals, how many different grids exist, and the weak spots.
+//
+// The posted only rule (decided 27 Oct 2026): the list may name only cards that have already posted
+// (a Name This card once its answer is public). Nothing planned, scheduled, or merely reviewed: a day
+// can still be dropped or swapped at the Saturday review, and the game must never hold a link to a
+// card that never existed. Any other id is an error; --prune removes it and rewrites the file.
+import { readFileSync, writeFileSync } from 'node:fs';
 import data from '../../functions/_data/intercept.json' with { type: 'json' };
 import cat from '../../functions/_data/catalog.json' with { type: 'json' };
 import { dealGrid, liveGroups, scoreOf, bonusOf, applyGuess, checkBoard } from '../../functions/_lib/intercept.js';
@@ -10,7 +16,12 @@ import { rollFinishNoCopper } from '../../functions/_lib/odds.js';
 
 let errors = 0;
 const err = m => { errors++; console.log('ERROR:', m); };
-const ids = new Set(cat.cards.map(c => c.id));
+const args = process.argv.slice(2), prune = args.includes('--prune');
+const nowIso = new Date().toISOString();
+// Posted right now, the same test the server uses (catalog.js released): a dispatch at its post time,
+// a Name This card once its answer is public. The catalog itself only holds cards with a rendered image.
+const posted = new Set(cat.cards.filter(c => c.kind === 'namethis' ? (c.answerAt && c.answerAt <= nowIso) : c.postAt <= nowIso).map(c => c.id));
+const ids = posted;
 
 // 1. The list itself.
 const seen = new Set();
@@ -23,12 +34,20 @@ for (const g of data.groups) {
   const both = (g.cards || []).filter(c => (g.alsoFits || []).includes(c));
   if (both.length) err(g.id + ': in both cards and alsoFits: ' + both.join(', '));
   if (/connections/i.test(JSON.stringify(g))) err(g.id + ': never use that word');
-  const planned = [...(g.cards || []), ...(g.alsoFits || [])].filter(c => !ids.has(c));
-  if (planned.length) console.log(`note: ${g.id} lists ${planned.length} card(s) not in the catalog yet (planned): ${planned.join(', ')}`);
+  const notPosted = [...(g.cards || []), ...(g.alsoFits || [])].filter(c => !posted.has(c));
+  if (notPosted.length) {
+    if (prune) { g.cards = (g.cards || []).filter(c => posted.has(c)); g.alsoFits = (g.alsoFits || []).filter(c => posted.has(c)); console.log(`pruned from ${g.id} (not posted): ${notPosted.join(', ')}`); }
+    else err(`${g.id} names card(s) that have not posted (planned, scheduled, or dropped): ${notPosted.join(', ')}. Only posted cards may be listed; run with --prune to remove them.`);
+  }
+}
+if (prune) {
+  const path = new URL('../../functions/_data/intercept.json', import.meta.url);
+  writeFileSync(path, JSON.stringify(data, null, 2) + '\n');
+  console.log('intercept.json rewritten with only posted cards');
 }
 
 // 2. Readiness on a given day (default: a week from today).
-const day = process.argv[2] || new Date(Date.now() + 7 * 86400000).toISOString().slice(0, 10);
+const day = args.find(a => /^\d{4}-\d{2}-\d{2}$/.test(a)) || new Date(Date.now() + 7 * 86400000).toISOString().slice(0, 10);
 const t = new Date(day + 'T17:00:00Z');
 const live = liveGroups(t), liveIds = new Set(live.map(x => x.g.id));
 const by = d => live.filter(x => x.g.difficulty === d).length;
