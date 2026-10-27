@@ -8,6 +8,7 @@ import { dailyOpen, commemorativeOpen, nextSlot, upcomingSlots } from '../_lib/e
 import { signPending, publicPull, withCard } from '../_lib/pulls.js';
 import { intelSummary, priceTable, convertLegacyDuplicates } from '../_lib/intel.js';
 import { filledSlots, rankInfo } from '../_lib/rank.js';
+import { interceptSummary } from '../_lib/intercept.js';
 
 export async function onRequestGet({ request, env }) {
   const t = now(env, request);
@@ -16,7 +17,7 @@ export async function onRequestGet({ request, env }) {
   const base = { now: t.toISOString(), next: nextSlot(t), upcoming: upcomingSlots(t), prices: priceTable() };
 
   const player = await signedInPlayer(env, request);
-  if (!player) return json({ ...base, player: null, envelopes: daily, commemorative, priority: 0, waiting: [], pulls: [] });
+  if (!player) return json({ ...base, player: null, envelopes: daily, commemorative, priority: 0, waiting: [], pulls: [], intercept: await interceptSummary(env, request, null, t) });
 
   await signPending(env, player.id);
   const converted = await convertLegacyDuplicates(env.DB, player.id, t);
@@ -38,5 +39,6 @@ export async function onRequestGet({ request, env }) {
     pulls: pulls.results.map(publicPull),
     intel: await intelSummary(env.DB, player, t),
     rank: rankInfo(filledSlots(pulls.results), player.rank_seen || 0),
+    intercept: await interceptSummary(env, request, player, t),
   });
 }

@@ -14,10 +14,21 @@
     testerKey = localStorage.getItem(KEY_STORE) || '';
   } catch (e) { testerKey = new URLSearchParams(location.search).get('key') || ''; }
 
+  // Intercept preview (27 Oct 2026): until launch, ?intercept=preview lets a tester play it in this
+  // browser; ?intercept=off turns it back off.
+  let icpPreview = '';
+  try {
+    const url = new URL(location.href), v = url.searchParams.get('intercept');
+    if (v === 'preview') localStorage.setItem('declass_icp', '1');
+    if (v === 'off') localStorage.removeItem('declass_icp');
+    if (v) { url.searchParams.delete('intercept'); history.replaceState(null, '', url.pathname + url.search + url.hash); }
+    icpPreview = localStorage.getItem('declass_icp') || '';
+  } catch (e) {}
+
   function api(path, body) {
     return fetch('/api/' + path, {
       method: body ? 'POST' : 'GET',
-      headers: Object.assign({ 'x-declass-key': testerKey }, body ? { 'content-type': 'application/json' } : {}),
+      headers: Object.assign({ 'x-declass-key': testerKey }, icpPreview ? { 'x-intercept-preview': '1' } : {}, body ? { 'content-type': 'application/json' } : {}),
       body: body ? JSON.stringify(body) : undefined,
       credentials: 'same-origin',
     }).then(r => r.json().catch(() => ({})).then(d => { if (!r.ok) throw new Error(d.error || String(r.status)); return d; }));
@@ -70,10 +81,12 @@
     if (key.startsWith('c:')) return 'Commemorative file';
     if (key === 's:starter') return 'Starter pack';
     if (key.startsWith('q:')) return 'Requisition';
+    if (key.startsWith('i:')) return 'Intercept';
     return 'Envelope';
   }
   function show(id) {
     document.querySelectorAll('.screen').forEach(s => s.classList.toggle('on', s.id === id));
+    document.body.classList.toggle('night', id === 'sIntercept'); // Intercept sits on the dark Night Dispatch desk
     window.scrollTo(0, 0);
     renderGoogleButtons();
     if (id !== 'sHome') { endTour(); hideNote('home'); }
@@ -163,7 +176,7 @@
   function envHTML(i, env) {
     const k = env.kind, pr = k === 'priority', st = k === 'starter', cm = k === 'commemorative';
     const c = cm ? ['#1d1a17', '#24201c', '#2a2520'] : pr ? ['#C9A774', '#C5A26E', '#CDAB79'] : ['#E8DFC7', '#E6DCC3', '#EAE1C9'];
-    if (k === 'request') return reqEnvHTML(env);
+    if (k === 'request' || k === 'intercept') return reqEnvHTML(env);
     const lbl = cm ? 'THREE DAYS ONLY' : pr ? 'DEEP ARCHIVE' : st ? 'FIRST FILE' : etTime(env.at).toUpperCase();
     const stamp = cm ? `<div class="prio">${esc(env.stamp).replace(' · ', '<br>')}</div><div class="lbl">COMMEMORATIVE<br>· ${lbl}<b>WW2 DISPATCHES</b></div>`
       : pr ? `<div class="prio">PRIORITY</div><div class="lbl">STREAK REWARD<br>· ${lbl}<b>WW2 DISPATCHES</b></div>`
@@ -177,11 +190,11 @@
   // The small Requisition envelope a requested card arrives in (25 Oct 2026).
   function reqEnvHTML(env) {
     return `<svg class="body" viewBox="0 0 360 200" preserveAspectRatio="none" aria-hidden="true"><rect width="360" height="200" fill="#D9D2B4"/><polygon points="0,0 180,126 0,200" fill="#D3CCAD"/><polygon points="360,0 180,126 360,200" fill="#D3CCAD"/><polygon points="0,200 180,126 360,200" fill="#DDD6B9"/><polyline points="0,200 180,126 360,200" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="1.5"/></svg>
-      <div class="flap"></div><div class="seal">SEALED<br>WW2</div><div class="no"></div><div class="prio reqk">REQUISITION</div><div class="lbl">REQUESTED FILE<br>· ${esc(String(env.price || ''))} INTEL<b>WW2 DISPATCHES</b></div><div class="cstamp">CLASSIFIED</div><div class="dstamp">DECLASS</div><div class="edge"></div>`;
+      <div class="flap"></div><div class="seal">SEALED<br>WW2</div><div class="no"></div>${env.kind === 'intercept' ? '<div class="prio reqk icpk">INTERCEPT</div><div class="lbl">DECODED FILE<br>· TODAY\'S PICK<b>WW2 DISPATCHES</b></div>' : `<div class="prio reqk">REQUISITION</div><div class="lbl">REQUESTED FILE<br>· ${esc(String(env.price || ''))} INTEL<b>WW2 DISPATCHES</b></div>`}<div class="cstamp">CLASSIFIED</div><div class="dstamp">DECLASS</div><div class="edge"></div>`;
   }
   // Each envelope type wears the look drawn for it in the Field manual: priority manila, commemorative
   // black and gold, starter green ring, Sunday deep archive navy ring, Last call dashed red.
-  const envClass = env => { const k = env.kind; return k === 'request' ? ' req' : k === 'priority' ? ' priority' : k === 'commemorative' ? ' commem' : k === 'starter' ? ' starter' : (env.deep ? ' deep' : '') + (env.last ? ' last' : ''); };
+  const envClass = env => { const k = env.kind; return k === 'request' ? ' req' : k === 'intercept' ? ' req icpt' : k === 'priority' ? ' priority' : k === 'commemorative' ? ' commem' : k === 'starter' ? ' starter' : (env.deep ? ' deep' : '') + (env.last ? ' last' : ''); };
 
   // ---------- home ----------
   function slotButton(cls, title, sub, onclick, help) {
@@ -267,6 +280,7 @@
       nextText = 'Next file arrives ' + when + localTime(ST.next);
     }
     $('nextFile').textContent = nextText;
+    if (window.Intercept) window.Intercept.tile($('icpSlot'));
 
     // the last envelope's cards
     const pulls = myPulls();
@@ -410,7 +424,7 @@
     busy = true;
     const env = cur;
     if (env.kind === 'starter') mark('pick');
-    const req = env.kind === 'request' ? Promise.resolve(env.result) : env.kind === 'starter' ? api('starter', {}) : api('open', { slot: env.kind === 'priority' ? 'priority' : env.key });
+    const req = env.kind === 'request' || env.kind === 'intercept' ? Promise.resolve(env.result) : env.kind === 'starter' ? api('starter', {}) : api('open', { slot: env.kind === 'priority' ? 'priority' : env.key });
     const before = holdingsNow();
     const b = $('bigEnv');
     b.className = 'big';
@@ -422,7 +436,7 @@
     // preload the pictures (and films) as soon as the server answers
     req.then(d => d.pulls.forEach(p => { if (p.cardInfo) { new Image().src = p.cardInfo.img; if (p.variant === 'living' && p.cardInfo.filmMp4) { const v = document.createElement('video'); v.preload = 'auto'; v.muted = true; v.src = p.cardInfo.filmMp4; } } })).catch(() => {});
     setTimeout(() => b.classList.add('stamp'), 250);
-    setTimeout(() => { b.classList.add('go'); $('tearing').textContent = env.kind === 'request' ? 'Your requested file.' : env.kind === 'starter' ? 'Five cards inside.' : env.kind === 'commemorative' ? (env.title || env.stamp) : 'Three cards inside.'; }, 950);
+    setTimeout(() => { b.classList.add('go'); $('tearing').textContent = env.kind === 'request' ? 'Your requested file.' : env.kind === 'intercept' ? "Your pick from today's files." : env.kind === 'starter' ? 'Five cards inside.' : env.kind === 'commemorative' ? (env.title || env.stamp) : 'Three cards inside.'; }, 950);
     setTimeout(() => b.classList.add('fade'), 2100);
     Promise.all([req, delay(2850)]).then(([d]) => {
       busy = false;
@@ -431,7 +445,7 @@
         saveStarterLocal();
         startCards(d.pulls, 'starterLocal', before, env);
       } else {
-        lastEarn = env.kind === 'request' ? { request: env.price } : d.intel || null;
+        lastEarn = env.kind === 'request' ? { request: env.price } : env.kind === 'intercept' ? (d.intel && d.intel.gained ? { earned: d.intel.earned } : null) : d.intel || null;
         startCards(d.pulls, 'server', before, env);
         if (d.player && ST) ST.player = d.player;
         pendingTeletype = Boolean(d.earnedPriority);
@@ -480,6 +494,7 @@
     const k = (cardEnv && cardEnv.kind) || (p.slot && p.slot.startsWith('p:') ? 'priority' : p.slot && p.slot.startsWith('c:') ? 'commemorative' : p.slot === 's:starter' ? 'starter' : 'daily');
     const first = i === 0 && (!p.slot || p.slot.startsWith('d:') || p.slot === 's:starter');
     if (k === 'request') return 'Your requested card';
+    if (k === 'intercept') return 'Your Intercept card';
     if (p.cardInfo && p.cardInfo.flash) return k === 'commemorative' || k === 'daily' ? 'The Flash card' : 'A Flash card from the archive';
     if (k === 'priority' || k === 'commemorative') return 'From the deep archive';
     if (k === 'starter') return first ? "Today's dispatch" : 'Your starter pack';
@@ -514,7 +529,7 @@
     if (info.kind === 'namethis') return answered[i] ? `<span class="answer">Answer: ${esc(info.answer)}</span>` : 'Can you name it? Tap to reveal the answer.';
     if (info.flash) return `<b>A Flash card. ${esc(info.short)}, always Top Secret, and yours for good.</b>`;
     if (p.finish === 'topsecret' && p.serial) return `<b>The ${ord(p.serial)} Top Secret ${p.variant === 'living' ? 'living ' : ''}${esc(info.short)} pulled anywhere in the world.</b>`;
-    return i < pulls.length - 1 ? 'Swipe or tap Next' : "That's the envelope.";
+    return i < pulls.length - 1 ? 'Swipe or tap Next' : cardEnv && cardEnv.kind === 'intercept' ? "That's today's pick." : "That's the envelope.";
   }
   function glow(f) { if (f === 'copper') return; const g = $('glow'); g.className = 'glow'; void g.offsetWidth; g.className = 'glow ' + f; }
   function reveal() {
@@ -613,6 +628,11 @@
     }
     const back = cardEnv && cardEnv.kind === 'request' ? reqFrom : null;
     reqFrom = null;
+    // After the Intercept pick, back to the solved puzzle.
+    if (cardEnv && cardEnv.kind === 'intercept' && window.Intercept) {
+      Promise.all([refreshState(), refreshCatalog()]).then(() => { window.Intercept.open(); maybePromote(); }).catch(() => window.Intercept.open());
+      return;
+    }
     const home = () => { renderHome(); show('sHome'); };
     // After a request, go back to the card or set it came from (bug sweep, 26 Oct 2026).
     const done = () => {
@@ -627,8 +647,8 @@
   // Finishing cards left waiting: rebuild the envelope's kind and its Intel line from the cards themselves.
   function resumeWaiting() {
     const w = ST.waiting, slot = (w[0] && w[0].slot) || '';
-    const kind = slot.startsWith('p:') ? 'priority' : slot.startsWith('c:') ? 'commemorative' : slot.startsWith('q:') ? 'request' : slot === 's:starter' ? 'starter' : 'daily';
-    lastEarn = kind === 'request' || kind === 'starter' ? null : { earned: [{ reason: 'envelope', delta: 5 }].concat(w.filter(p => p.intel).map(p => ({ reason: 'duplicate', delta: p.intel, variant: p.variant, finish: p.finish }))) };
+    const kind = slot.startsWith('p:') ? 'priority' : slot.startsWith('c:') ? 'commemorative' : slot.startsWith('q:') ? 'request' : slot.startsWith('i:') ? 'intercept' : slot === 's:starter' ? 'starter' : 'daily';
+    lastEarn = kind === 'intercept' ? { earned: w.filter(p => p.intel).map(p => ({ reason: 'duplicate', delta: p.intel, variant: p.variant, finish: p.finish })) } : kind === 'request' || kind === 'starter' ? null : { earned: [{ reason: 'envelope', delta: 5 }].concat(w.filter(p => p.intel).map(p => ({ reason: 'duplicate', delta: p.intel, variant: p.variant, finish: p.finish }))) };
     startCards(w, 'server', holdings(ST.pulls.filter(p => p.turned)), { kind });
   }
 
@@ -777,7 +797,7 @@
   document.querySelectorAll('[data-tab]').forEach(b => { b.onclick = () => { howTab(b.dataset.tab); $('how').scrollTop = 0; }; });
   document.querySelectorAll('.fmnav [data-go]').forEach(b => { b.onclick = () => document.getElementById(b.dataset.go).scrollIntoView({ block: 'start', behavior: 'smooth' }); });
   function closeHow() { $('how').hidden = true; document.body.style.overflow = ''; }
-  document.querySelectorAll('[data-how]').forEach(b => { b.onclick = () => openHow(); });
+  document.querySelectorAll('[data-how]').forEach(b => { b.onclick = () => openHow(b.dataset.how || undefined); });
   $('howGo').onclick = closeHow; $('howX').onclick = closeHow;
   $('how').addEventListener('click', e => { if (e.target.id === 'how') closeHow(); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && !$('how').hidden) closeHow(); });
@@ -1220,7 +1240,7 @@
       <button class="btn" data-close>Got it</button>`);
   };
   const reasonText = x => x.reason === 'envelope' ? 'Envelope opened' : x.reason === 'duplicate' ? 'Duplicate ' + (x.variant === 'living' ? 'living ' : '') + (FNAME[x.finish] || '') + ' ' + ((BYID.get(x.card) || {}).short || '')
-    : x.reason === 'request' ? 'Requested ' + (FNAME[x.finish] || '') + ' ' + ((BYID.get(x.card) || {}).short || '') : x.reason;
+    : x.reason === 'request' ? 'Requested ' + (FNAME[x.finish] || '') + ' ' + ((BYID.get(x.card) || {}).short || '') : x.reason === 'intercept' ? 'Intercept puzzle' : x.reason;
   $('intelBtn').onclick = () => {
     const it = ST && ST.intel; if (!it) return;
     const P = ST.prices;
@@ -1453,6 +1473,16 @@
       if (e && ring('fm-lastcall')) note('home', 'last', `Last call. You missed yesterday's ${etHour(e.at) < 12 ? 'morning' : 'evening'} file, but it's still open until ${localTime(e.closes)}. Open it before it closes for good.`);
     }
   }
+
+  // ---------- what Intercept (intercept.js) may use ----------
+  window.Declass = {
+    api, show, toast, sfx, nudge, sheet, closeSheet, seen, mark, loadImg, localTime, FNAME, openHow,
+    card: id => BYID.get(id), state: () => ST, holdings: () => holdingsNow(), glowFor: f => glow(f),
+    refresh: () => refreshState().then(() => { if ($('sHome').classList.contains('on')) renderHome(); }),
+    goHome: () => Promise.all([refreshState(), refreshCatalog()]).then(() => { renderHome(); show('sHome'); }).catch(() => { renderHome(); show('sHome'); }),
+    // The picked card arrives in its own small envelope with the normal turn and reveal.
+    claimReveal: d => { if (d.player && ST) ST.player = d.player; cur = { kind: 'intercept', result: d }; chosen(0); },
+  };
 
   // ---------- boot ----------
   function route() {

@@ -16,6 +16,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Special+Elite&display=swap">
 <link rel="stylesheet" href="/declass/declass.css?v=e3542db6">
+<link rel="stylesheet" href="/declass/intercept.css?v=6109b351">
 </head>
 <body>
 <div class="wrap">
@@ -68,6 +69,7 @@
   <div id="files"></div>
   <div class="signbar" id="signBar" hidden><b>Sign in to open today's files</b><span>Your starter pack is waiting in this browser. Save your dossier to keep it and collect every day.</span><div class="gslot" id="gHome"></div></div>
   <p class="nextfile" id="nextFile"></p>
+  <div id="icpSlot"></div>
   <div id="recent"></div>
 
   <h2>Dossier <small id="dossierSummary"></small></h2>
@@ -143,6 +145,13 @@
   <div class="grid" id="sectionGrid"></div>
 </section>
 
+<section class="screen icp" id="sIntercept">
+  <div class="icptop"><button class="back" id="icpBack" type="button">◀︎ Declass</button><button class="tbtn howbtn icphow" type="button" data-how="fm-intercept">How to play</button></div>
+  <h1 class="icpname">INTERCEPT</h1>
+  <p class="icptag">a Declass daily puzzle</p>
+  <div id="icpBody"></div>
+</section>
+
 <section class="screen" id="sView">
   <button class="back" id="backView">◀︎ Back</button>
   <p class="count" id="viewCount"></p>
@@ -188,7 +197,7 @@
 
   <div class="howpanel" id="howManual" role="tabpanel" hidden>
    <nav class="fmnav" aria-label="Field manual sections">
-    <button type="button" data-go="fm-envelopes">Envelopes</button><button type="button" data-go="fm-finishes">Finishes and odds</button><button type="button" data-go="fm-living">Living Cards</button><button type="button" data-go="fm-namethis">Name This</button><button type="button" data-go="fm-streaks">Streaks</button><button type="button" data-go="fm-intel">Intel and requests</button><button type="button" data-go="fm-ranks">Ranks</button><button type="button" data-go="fm-locked">Locked envelopes</button><button type="button" data-go="fm-dossier">Dossier and sets</button><button type="button" data-go="fm-sharing">Sharing</button>
+    <button type="button" data-go="fm-envelopes">Envelopes</button><button type="button" data-go="fm-finishes">Finishes and odds</button><button type="button" data-go="fm-living">Living Cards</button><button type="button" data-go="fm-namethis">Name This</button><button type="button" data-go="fm-streaks">Streaks</button><button type="button" data-go="fm-intel">Intel and requests</button><button type="button" data-go="fm-ranks">Ranks</button><button type="button" data-go="fm-locked">Locked envelopes</button><button type="button" data-go="fm-dossier">Dossier and sets</button><button type="button" data-go="fm-sharing">Sharing</button><button type="button" data-go="fm-intercept">Intercept</button>
    </nav>
 
    <section id="fm-envelopes">
@@ -279,6 +288,21 @@
     <ul><li>Share any envelope's cards, or any single card from your dossier, as a picture with a caption ready to post.</li>
     <li>Every picture carries a <b>file number</b>. Anyone can check it at ww2dispatches.com/declass to see that the card was really pulled. A made up number won't check out.</li></ul>
    </section>
+
+   <section id="fm-intercept">
+    <h3>Intercept · a Declass daily puzzle</h3>
+    <p class="fmnote fmlead">Find the links between the files.</p>
+    <ul><li>Every day brings twelve cards hiding four links, three cards to a link. A link can be something in the photos, a place or a subject, or a ship, battle, or person they share.</li>
+    <li>Select three cards and tap <b>File it</b>. Right, and they're clipped together with the link. Wrong, and you get a <b>REJECTED</b> stamp. Three stamps and the files close, and you see every link you missed.</li>
+    <li>The same three cards twice never counts against you. Find three links and the last one files itself.</li>
+    <li>The date and series on a card are never the link. Tap and hold any card to see it full size.</li>
+    <li>No clock: take as long as you like. Today's files close at midnight Eastern time, and new ones are dealt.</li>
+    <li>Every player gets their own grid, so there are no answers to look up.</li>
+    <li><b>Score:</b> 25 for every link, minus 10 for every mistake. A perfect solve scores 100.</li>
+    <li><b>Intel:</b> 3 for playing, plus 15 for a perfect 100, 10 for 90, 5 for 80 or 70, and 2 if the files beat you.</li>
+    <li><b>Solve it, pick a card. Solve it perfectly, it's Silver or better.</b> Pick any one of the twelve, even one you don't own yet (those carry a wax seal). The finish is set by luck, and a finish you already hold turns into Intel like any duplicate. Flash cards can turn up in the files, but they can't be picked.</li>
+    <li>Intercept doesn't count toward your streak.</li></ul>
+   </section>
   </div>
 
   <button class="btn alt" id="howTilt" hidden>Turn on tilt</button>
@@ -302,8 +326,10 @@
 <div class="tourdim" id="tourDim" hidden></div>
 <div class="tourbub" id="tourBub" hidden role="dialog" aria-label="Quick tour"></div>
 <div class="fnote" id="fnote" hidden role="status"></div>
+<div class="icpzoom" id="icpZoom" hidden role="dialog" aria-label="Card full size"></div>
 <div class="toast" id="toast" hidden></div>
 <div class="glow" id="glow"></div>
-<script src="/declass/declass.js?v=620f62d6"></script>
+<script src="/declass/declass.js?v=cbfe9b1a"></script>
+<script src="/declass/intercept.js?v=9cfa7a0d"></script>
 </body>
 </html>

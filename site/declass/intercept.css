@@ -1,0 +1,106 @@
+/* Intercept · a Declass daily puzzle (27 Oct 2026). Files spread on the dark Night Dispatch desk:
+   paperclips on selected cards, clipped groups with a typed label, REJECTED stamps, wax seals. */
+body.night{background:#120F0C;color:#EDE4CF;
+  background-image:radial-gradient(ellipse at 50% 30%,rgba(61,88,132,.18),rgba(0,0,0,0) 65%),repeating-linear-gradient(0deg,rgba(237,228,207,.025) 0 1px,transparent 1px 6px);
+  background-attachment:fixed}
+body.night .sheettop .howstamp{color:var(--red)}
+
+/* the home tile (on the paper page) */
+.icptile{display:block;width:100%;text-align:left;margin:12px 0;padding:14px 16px;border-radius:3px;position:relative;cursor:pointer;
+  background:#17140f;border:2px solid #3D5884;color:#EDE4CF;font-family:var(--body)}
+.icptile b{display:block;font-family:var(--display);font-size:18px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:#9fbbe8;padding-right:110px}
+.icptile span{display:block;font-family:var(--type);font-size:12px;color:#c9bd9f;padding-right:110px}
+.icptile::after{position:absolute;right:14px;top:50%;transform:translateY(-50%);font-family:var(--display);font-weight:700;font-size:13px;letter-spacing:.1em;color:#9fbbe8}
+.icptile.live::after{content:"CRACK IT ▸"}
+.icptile.done{opacity:.8}.icptile.done::after{content:"FILED ✓";color:#a8b58a}
+.icptile.wait::after{content:"SIGN IN";color:#c9bd9f}
+.icptile.soon{cursor:default;border-style:dashed;border-color:#5a6a85;opacity:.92}
+.icptile.soon b{color:#c9bd9f}.icptile.soon::after{content:"SOON";color:#8f97a6}
+
+/* the screen */
+.icp .icptop{display:flex;justify-content:space-between;align-items:center}
+.icp .back{color:#e08a7f}
+.icp .howbtn{color:#c9d6ef;border-color:#5b7fb8}
+.icpname{font-family:var(--display);font-weight:700;font-size:40px;letter-spacing:.16em;color:#EDE4CF;margin:6px 0 0;text-align:center}
+.icptag{font-family:var(--type);font-size:13px;color:#b9ad92;text-align:center;margin:2px 0 14px}
+.icpline{font-family:var(--type);font-size:13px;color:#d8ccb0;text-align:center;margin:6px 0 10px}
+.icplead{font-family:var(--type);font-size:13px;color:#d8ccb0;text-align:center;line-height:1.5;margin:6px auto 12px;max-width:380px}
+.icpsmall{font-family:var(--type);font-size:11px;color:#9a8f78;text-align:center;margin:10px 0 4px}
+.icpwarn{font-family:var(--type);font-size:13px;color:#f0b27a;text-align:center;margin:10px 0}
+.icph{font-family:var(--display);font-size:20px;color:#EDE4CF;justify-content:center;border-top:1px solid rgba(237,228,207,.18);margin-top:22px}
+.icprules{font-family:var(--type);font-size:13px;color:#d8ccb0;max-width:330px;margin:0 auto 10px;padding-left:22px;line-height:1.6}
+.icp .btn.alt{color:#EDE4CF;border-color:rgba(237,228,207,.6)}
+.icp .btn:disabled{opacity:.4;cursor:default}
+.icpgo{display:block;margin:16px auto 0}
+
+/* mistake marks */
+.icpmarks{display:flex;justify-content:center;align-items:center;gap:8px;margin:0 0 14px}
+.icpmarks .ml{font-family:var(--display);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#9a8f78;margin-right:4px}
+.icpmarks .mark{width:62px;height:30px;border:1.5px dashed rgba(237,228,207,.3);border-radius:3px;position:relative;overflow:visible}
+.icpmarks .mark i{display:none;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-9deg);font-style:normal;font-family:var(--display);font-weight:700;font-size:10px;letter-spacing:.08em;color:#e0574a;border:2px solid #e0574a;padding:1px 4px;white-space:nowrap;background:rgba(18,15,12,.6)}
+.icpmarks .mark.used{border-style:solid;border-color:rgba(224,87,74,.45)}
+.icpmarks .mark.used i{display:block}
+@media (prefers-reduced-motion:no-preference){.icpmarks .mark.hit i{animation:icpstamp .35s cubic-bezier(.2,1.6,.4,1)}}
+@keyframes icpstamp{0%{transform:translate(-50%,-50%) rotate(-9deg) scale(2.2);opacity:0}100%{transform:translate(-50%,-50%) rotate(-9deg) scale(1);opacity:1}}
+
+/* the desk */
+.icpdesk{display:grid;grid-template-columns:repeat(3,1fr);gap:12px 10px;margin:4px 0 6px;padding-top:10px}
+.icpcard{position:relative;border:0;padding:0;background:none;cursor:pointer;border-radius:3px;-webkit-touch-callout:none;user-select:none;-webkit-user-select:none;touch-action:manipulation;transition:transform .15s ease}
+.icpcard img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:3px;box-shadow:0 6px 14px rgba(0,0,0,.55),0 0 0 1px rgba(237,228,207,.12);pointer-events:none}
+.icpdesk .icpcard:nth-child(3n+1){transform:rotate(-1.1deg)}.icpdesk .icpcard:nth-child(3n+2){transform:rotate(.7deg)}.icpdesk .icpcard:nth-child(3n){transform:rotate(-.4deg)}
+.icpcard .pclip{position:absolute;top:-16px;left:16%;width:14px;height:38px;color:#cfd3da;filter:drop-shadow(0 1px 1px rgba(0,0,0,.6));display:none;z-index:2}
+.icpcard.sel{transform:translateY(-7px) rotate(0) scale(1.03)!important}
+.icpcard.sel img{box-shadow:0 12px 22px rgba(0,0,0,.65),0 0 0 2px #d9b65a}
+.icpcard.sel .pclip{display:block}
+@media (prefers-reduced-motion:no-preference){.icpcard.shake{animation:icpshake .38s}}
+@keyframes icpshake{20%{transform:translateX(-6px)}40%{transform:translateX(6px)}60%{transform:translateX(-4px)}80%{transform:translateX(3px)}}
+.icpctl{display:flex;justify-content:center;gap:10px;margin:14px 0 4px}
+.icpctl .btn{margin:0;min-width:120px}
+.icpfile{background:#3D5884}
+
+/* clipped groups */
+.icpgroups{display:grid;gap:14px;margin:0 0 6px}
+.icpgroup{position:relative;background:rgba(237,228,207,.05);border:1px solid rgba(237,228,207,.1);border-radius:4px;padding:16px 10px 10px}
+.icpgroup .gclip .pclip{position:absolute;top:-12px;left:22px;width:16px;height:44px;color:#cfd3da;filter:drop-shadow(0 1px 1px rgba(0,0,0,.6))}
+.icpgroup .gcards{display:flex;justify-content:center}
+.icpgroup .gcard{border:0;padding:0;background:none;width:30%;margin:0 -2%;cursor:zoom-in;-webkit-touch-callout:none;user-select:none;-webkit-user-select:none}
+.icpgroup .gcard:nth-child(1){transform:rotate(-3deg)}.icpgroup .gcard:nth-child(3){transform:rotate(3deg)}.icpgroup .gcard:nth-child(2){position:relative;z-index:1}
+.icpgroup .gcard img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:2px;box-shadow:0 4px 10px rgba(0,0,0,.6);pointer-events:none}
+.icpgroup .glink{background:#EDE4CF;color:#1A1612;font-family:var(--type);font-size:14px;line-height:1.35;padding:8px 12px;margin:10px 4px 0;transform:rotate(-.5deg);box-shadow:0 3px 8px rgba(0,0,0,.45);text-align:center}
+.icpgroup.missed{opacity:.75}
+.icpgroup.missed .glink{background:#b8ad95}
+.icpgroup .gmiss{color:#8e2a20;font-weight:bold}
+@media (prefers-reduced-motion:no-preference){.icpgroup.fresh{animation:icpclip .45s ease-out}}
+@keyframes icpclip{0%{transform:scale(.9);opacity:0}100%{transform:scale(1);opacity:1}}
+
+/* the result */
+.icpscore{text-align:center;margin:6px 0 4px}
+.icpscore .sstamp{display:inline-block;font-family:var(--display);font-weight:700;letter-spacing:.14em;font-size:15px;color:#9fbbe8;border:3px solid #9fbbe8;padding:3px 10px;transform:rotate(-3deg)}
+.icpscore.lost .sstamp{color:#e0574a;border-color:#e0574a}
+.icpscore b{display:block;font-family:var(--display);font-size:64px;line-height:1;margin-top:8px;color:#EDE4CF}
+.icpscore small{display:block;font-family:var(--type);font-size:13px;color:#b9ad92;margin-top:2px}
+.icpintel{font-family:var(--type);font-size:13px;color:#e3c25e;text-align:center;margin:8px 0 16px}
+.icpintel .itok{width:18px;height:18px;vertical-align:-4px;margin-right:4px}
+
+/* pick a card */
+.icpdesk.pick .icpcard.unowned img{box-shadow:0 6px 14px rgba(0,0,0,.55),0 0 0 2px rgba(227,194,94,.55),0 0 16px rgba(227,194,94,.35)}
+@media (prefers-reduced-motion:no-preference){.icpdesk.pick .icpcard.unowned img{animation:icpglow 2.4s ease-in-out infinite}}
+@keyframes icpglow{50%{box-shadow:0 6px 14px rgba(0,0,0,.55),0 0 0 2px rgba(227,194,94,.85),0 0 24px rgba(227,194,94,.55)}}
+.icpcard .wax{position:absolute;top:-5px;right:-5px;width:24px;height:24px;border-radius:50%;z-index:2;
+  background:radial-gradient(circle at 36% 32%,#e7766a 0,#b23426 38%,#7d1a12 72%);box-shadow:0 2px 4px rgba(0,0,0,.6),inset 0 0 0 3px rgba(125,26,18,.55)}
+.icpcard .wax::after{content:"";position:absolute;inset:7px;border-radius:50%;border:1.5px solid rgba(255,214,200,.45)}
+.icpcard .ptag{position:absolute;left:50%;bottom:6px;transform:translateX(-50%);font-family:var(--display);font-size:10px;letter-spacing:.06em;text-transform:uppercase;background:rgba(18,15,12,.85);color:#EDE4CF;padding:2px 6px;border-radius:2px;white-space:nowrap}
+.icpcard .ptag.live{color:#e3c25e}
+.icpcard.nopick{cursor:default;opacity:.5}
+.icpcard.nopick .ptag{white-space:normal;width:90%;text-align:center}
+
+/* full size view */
+.icpzoom{position:fixed;inset:0;z-index:60;background:rgba(10,8,6,.9);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:16px}
+.icpzoom img{max-width:min(92vw,520px);max-height:82vh;border-radius:4px;box-shadow:0 18px 40px rgba(0,0,0,.7)}
+.icpzoom p{font-family:var(--type);font-size:12px;color:#b9ad92;margin-top:10px}
+
+/* the picked card's envelope */
+.prio.icpk{color:#3D5884;border-color:#3D5884}
+
+/* sheets and How to play keep their paper look on the dark desk */
+body.night .howcard,body.night .sheetcard{color:var(--ink)}

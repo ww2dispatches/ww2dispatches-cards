@@ -29,3 +29,13 @@ export function rollFinish(variant, rnd = secureInt) {
 
 export const rollLiving = (rnd = secureInt) => rnd(LIVING_ONE_IN) === 0;
 export const rollFlash = (rnd = secureInt) => rnd(FLASH_ONE_IN) === 0;
+
+// Intercept's perfect solve (26 Oct 2026): Silver or better, the same table with Copper removed and the
+// rest scaled up. Still: Silver 79%, Gold 20%, Top Secret 1%. Living: Silver 65%, Gold 31.25%, Top Secret 3.75%.
+export function rollFinishNoCopper(variant, rnd = secureInt) {
+  const t = FINISHES[variant] || FINISHES.still;
+  const x = rnd(t.silver);
+  if (x < t.topsecret) return 'topsecret';
+  if (x < t.gold) return 'gold';
+  return 'silver';
+}
