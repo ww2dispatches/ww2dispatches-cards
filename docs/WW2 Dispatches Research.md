@@ -77,28 +77,6 @@ Research leaves to Thursday: the `video` block (footage, focus, hook, source not
 
 The `film` block: `status` (`secured`, `needs brian`, or `none`), `record` (for example "111-ADC-2654 (NARA 16458)"), `url`, `file` (the path in the videos repo once downloaded), `sound` (true or false), `shot_notes` (which stretch holds the shots and what they show), `license`, and `date_note` when the film is from a different day than the event.
 
-## Intercept master list
-**Intercept** is the daily puzzle inside Declass (Declass Build doc, "Intercept"): twelve cards in four hidden groups of three. Each player's grid is dealt from the master list, `functions/_data/intercept.json` in the cards repo, which research keeps growing every week. It is a short step after the dispatches are done, and nothing in it waits on Brian.
-
-Each group has: `id` (short, never reused: `e-`, `m-`, or `h-` plus a name), `link` (the typed line shown when it locks, a full sentence such as "All three involve the USS Hornet."), `difficulty`, `cards` (every posted card the group can be dealt from), `alsoFits` (posted cards that also fit the link but shouldn't be dealt in it; the server keeps them off any board holding this group), `source` (one or two lines backing the link), and `added`.
-
-**The posted only rule (decided 27 Oct 2026):** the list names only cards that have already posted (a Name This card once its answer is public). Never the coming week's cards, never a scheduled card, never a card from the slate. A day can still be dropped or swapped at the Saturday review, so a card is only certain once it has gone out. The check (step 3) refuses any other id. In practice the Wednesday run adds the cards that posted since the last run, the previous Wednesday through this Wednesday morning, and the cards posting Thursday to Saturday wait for the following Wednesday.
-
-Every week:
-1. **Add the newly posted cards to every existing group they fit.** Ask of every group, not just the obvious ones. A card that clearly fits goes in `cards`; one that fits only on a generous reading goes in `alsoFits`. Getting this complete is what keeps grids fair: a card left out of a group it fits can sit on a board where a player files it with that group and is wrongly rejected.
-2. **Add 5 to 10 new hard groups** from posted cards: shared operations, campaigns, ships, commanders, units, and clever links ("Each ship was named for a man of the U.S. Navy"). A group needs 3 posted cards before the server can deal it, ideally 5 or more; with fewer it sits dormant and grows.
-3. **Run the check** and fix anything it flags: `node --import ./tests/declass/json-loader.mjs tests/declass/intercept-check.mjs`. It refuses a broken list or any card that hasn't posted (`--prune` removes those and rewrites the file), and reports live and dormant groups, how often a fair grid deals, how many different grids exist, hard groups that never deal, and launch readiness.
-
-The rules for links:
-* **Historically airtight.** History buffs will publicly challenge anything debatable. Verify every link against the dispatch records and a solid source, and when in doubt leave it out.
-* **Easy** is visible in the photo (aircraft, warships, a national leader). **Medium** is knowable from the place or subject (a theater, a battle named on every card, a nation, a branch, a person). **Hard** takes real knowledge: shared operations, ships, commanders, and clever links. A link the cards print outright (the place line, a kicker naming it) is medium at most.
-* **Printed details are never links:** the date and the series stamp are just reading. No group may be "all from 1942" or "all Battle Lines".
-* **Tone:** a link must never treat tragedy as a gimmick. Sensitive cards (Loss and tragedy) can be in groups, but never grouped by the loss itself ("ships that sank", "men who died").
-* **Card faces only:** players see only the card face during play, never the story. A link must be reachable from what the face shows plus real knowledge.
-* Never use the word Connections anywhere in the list.
-
-**Saturday review (optional):** the research summary lists the week's new hard groups with their link lines. Brian can veto any by telling Claude in the Project; Claude then sets `"vetoed": true` on it (never deletes it, so it isn't added again) and pushes. Nothing waits on him.
-
 ## The slate
 `slate/YYYY-MM-DD.md` in the cards repo, named for the Sunday the week starts, committed and pushed with the dispatch JSON. One section per day, with for each slot: the number, time, series, event and year, planned kind (Living Card or Story Card), film record and sound, photo status, and anything open (a Brian task, an unconfirmed license). Under each 8 a.m. slot, **one or two alternates**: the event, the film record if known, and one line on why it is the backup. Alternates are lightly checked (event, date, likely film and photo), not fully verified; whichever is chosen gets full verification.
 
@@ -119,12 +97,11 @@ Research owns the dispatch bank in `status.md` (aim for 5 to 7 verified evergree
 No run ever changes a locked number, a verified fact, or another run's fields to recover.
 
 ## Tasks, reminders, and the summary
-File Schedule Board tasks and push reminders per the Brief's "Shared run procedures" for every film or photo Brian needs to supply and for anything uncertain. The summary to Brian (SendUserMessage) is the slate in short form: each day's 8 a.m. event, planned kind, film source and sound, and its alternates; each 5 p.m. card's format and subject; which playbook items shaped the picks; what Brian needs to supply and by when; the week's new Intercept hard groups (link lines only) and the check's readiness line, with "Veto any Intercept group by telling me here"; and the line "Swap any day by telling me here before Thursday 7 p.m."
+File Schedule Board tasks and push reminders per the Brief's "Shared run procedures" for every film or photo Brian needs to supply and for anything uncertain. The summary to Brian (SendUserMessage) is the slate in short form: each day's 8 a.m. event, planned kind, film source and sound, and its alternates; each 5 p.m. card's format and subject; which playbook items shaped the picks; what Brian needs to supply and by when; and the line "Swap any day by telling me here before Thursday 7 p.m."
 
 ## Changelog
 * 24 Oct 2026: Doc created. Research moved out of the Thursday cards run into its own Wednesday run, picking for film first, locking the numbers, writing one fact sheet per dispatch, and securing film and photos before the build runs. The week's order became Tuesday analytics, Wednesday research, Thursday videos, Friday cards.
 * 24 Oct 2026 (evening): Research also writes `short` and `photoCredit` on every dispatch, for the Declass game (Envelope doc). Every existing dispatch and bank record was filled in once.
 * 24 Oct 2026 (night): `short` now names the subject only, never the card type, since the Declass share picture shows the format on its own line. Twelve existing short names were cleaned up (for example "Kearny Hull" became "USS Kearny", "V-2 Photo" became "Earth from Space").
 * 25 Oct 2026: Flash days added. On the ten Flash dates (the Declass commemorative days, first Pearl Harbor on 7 Dec 2026) the 8 a.m. slot is the Flash card, built from the prepared art and record in `flash/`; the never repeat rule does not apply to it, and research adds the number, facts, sources, themes, and film as usual.
-* 27 Oct 2026: Intercept master list added. Each Wednesday research adds the new cards to every group they fit, adds 5 to 10 new hard groups, and runs the check; the summary lists the new hard groups for Brian's optional veto.
-* 27 Oct 2026 (later): The posted only rule. The master list names only cards that have posted, never planned or scheduled ones, since a day can still change at the Saturday review; the check tool enforces it and can prune.
+* 27 Oct 2026: The Intercept master list upkeep was briefly written into this run, then moved the same day to the Tuesday analytics run (Analytics doc), so it only ever works from posted cards. Research does nothing for Intercept.
