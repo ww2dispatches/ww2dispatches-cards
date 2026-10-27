@@ -104,3 +104,6 @@ body.night .sheettop .howstamp{color:var(--red)}
 
 /* sheets and How to play keep their paper look on the dark desk */
 body.night .howcard,body.night .sheetcard{color:var(--ink)}
+
+/* An empty "Next file arrives" line takes no room, so the tile sits as close as the envelopes do (27 Oct 2026). */
+.nextfile:empty{display:none}
