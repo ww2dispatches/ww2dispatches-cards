@@ -30,7 +30,9 @@ CARDS_CDN = "https://cdn.jsdelivr.net/gh/ww2dispatches/ww2dispatches-cards@main/
 VIDEOS_CDN = "https://cdn.jsdelivr.net/gh/ww2dispatches/ww2dispatches-videos@main/videos/"
 # Existence checks still go to GitHub itself, so a poster pushed minutes ago is found at once.
 VIDEOS_RAW = "https://raw.githubusercontent.com/ww2dispatches/ww2dispatches-videos/main/videos/"
-X_PROFILE = "https://x.com/ww2dispatches"
+# Card and Name This links go to Threads, the strongest platform (27 Oct 2026 ranking:
+# Threads, Instagram, YouTube, TikTok, Facebook, X).
+THREADS_PROFILE = "https://www.threads.com/@ww2dispatches"
 SHORTS = "https://www.youtube.com/@ww2dispatcheshq/shorts"
 
 root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -81,7 +83,7 @@ for d in cards:
             "title": fmt or d.get("title", ""), "series": SERIES.get(d.get("series"), ""),
             "img": img,
             "alt": f"WW2 Dispatches card, Dispatch No. {num}, {SERIES.get(d.get('series'), '')}. {d.get('title', '')}.",
-            "link": links.get("x") or X_PROFILE, "linkLabel": "Read on X",
+            "link": links.get("threads") or THREADS_PROFILE, "linkLabel": "Read on Threads",
         })
 
     # The noon video that goes with this dispatch, if it has one.
@@ -112,7 +114,7 @@ for n in load("namethis"):
         continue
     links = n.get("links") or {}
     clue = (n.get("pull") or "").removeprefix("Clue:").strip()
-    p = {"date": n["post_date"], "time": "10:00", "img": img, "clue": clue, "link": links.get("x") or X_PROFILE}
+    p = {"date": n["post_date"], "time": "10:00", "img": img, "clue": clue, "link": links.get("threads") or THREADS_PROFILE}
     if n["post_date"] <= today and n.get("answer"):
         p["a"] = base64.b64encode(n["answer"].encode("utf-8")).decode("ascii")
     puzzles.append(p)
@@ -120,7 +122,7 @@ for n in load("namethis"):
         "date": n["post_date"], "time": "10:00", "kind": "namethis", "num": "",
         "label": "10 a.m.", "title": "Name This", "series": "", "img": img,
         "alt": "WW2 Dispatches Name This card. Can you name it?",
-        "link": links.get("x") or X_PROFILE, "linkLabel": "Guess on X",
+        "link": links.get("threads") or THREADS_PROFILE, "linkLabel": "Guess on Threads",
     })
 
 cutoff = (datetime.date.today() - datetime.timedelta(days=KEEP_DAYS)).isoformat()
