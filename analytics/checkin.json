@@ -1,0 +1,114 @@
+{
+ "week": "2026-10-27",
+ "summary": "**Worked:** Threads cards led by a famous face or voice (Tojo 1,902 views, Churchill's broadcast 1,614 with 90 reactions); the Aachen and El Alamein Living Cards (800 to 1,600 YouTube views each, Alamein holding 45 percent on TikTok); the Tirpitz Name This, the most viewed post of the fortnight at 2,364.\n\n**Didn't:** the two narrated Story Cards (36 and 18 YouTube views against 537 typical); quiet procedural subjects and the pre Test A Spec Sheets (Reach 0.26 to 0.76). Two odd ones: the Alamein 8 a.m. card and the Musashi Name This drew only 11 and 6 views on Threads.\n\n**Tests running:** A (human first Spec Sheet hooks) and B (action first video openings), both reviewed 3 Nov. Early reads are promising.\n\n**Decisions:** none forced this week. Test C is proposed below. The 3 Nov review brings Facebook versus Substack, Name This on Instagram, and the Test A and B results.",
+ "questions": [
+  {
+   "id": "test-c",
+   "type": "choice",
+   "ask": "Start Test C, shorter Story Cards?",
+   "why": "The two narrated Story Cards were the weakest videos of the fortnight. Both ran over a minute and opened on a still, so we can't yet tell whether length, the still opening, or the narration itself loses viewers.",
+   "options": [
+    "Yes, start it",
+    "No",
+    "Ask me again next week"
+   ],
+   "if_yes": "The next two Story Cards run under 30 seconds and open on the most dramatic still in the kit. Measured against the first two Story Cards on YouTube views and Instagram and TikTok hold. Reviewed 17 Nov.",
+   "if_blank": "Story Cards stay as they are and the question comes back next week."
+  },
+  {
+   "id": "threads-check",
+   "type": "choice",
+   "ask": "In the Threads app, do the Alamein 8 a.m. card (23 Oct) and the Musashi Name This (24 Oct) really show about 11 and 6 views?",
+   "why": "Buffer reports those numbers against a typical 456. If the app agrees, Threads held the posts back and that's worth watching. If the app shows far more, Buffer is lagging and the scores are wrong. Optional, two minutes.",
+   "options": [
+    "Yes, the app matches Buffer",
+    "No, the app shows far more",
+    "Didn't check"
+   ],
+   "if_blank": "Treated as not checked; the review keeps both posts flagged as odd."
+  },
+  {
+   "id": "intercept-veto",
+   "type": "veto",
+   "ask": "Veto any of this week's new Intercept hard groups",
+   "why": "These 13 hard groups were added to the Intercept master list from posted cards. Veto any link you don't want dealt; vetoed groups are kept but never dealt and never re added. Leaving all of them alone is fine.",
+   "groups": [
+    {
+     "id": "h-uboats",
+     "link": "All three involve German U-boats."
+    },
+    {
+     "id": "h-submarines",
+     "link": "All three involve a submarine."
+    },
+    {
+     "id": "h-leyte-gulf",
+     "link": "All three are from the Battle of Leyte Gulf."
+    },
+    {
+     "id": "h-navy-namesakes",
+     "link": "Each ship was named for a man of the U.S. Navy."
+    },
+    {
+     "id": "h-aid-britain",
+     "link": "All three involve the United States backing Britain before Pearl Harbor."
+    },
+    {
+     "id": "h-captured",
+     "link": "In all three, the Allies captured something German."
+    },
+    {
+     "id": "h-raf",
+     "link": "All three involve the Royal Air Force."
+    },
+    {
+     "id": "h-royal-navy",
+     "link": "All three involve the Royal Navy."
+    },
+    {
+     "id": "h-top-valor",
+     "link": "Each involves a commander who won his nation's highest award for valor."
+    },
+    {
+     "id": "h-anglo-american",
+     "link": "Each is a story of Americans and the British working together."
+    },
+    {
+     "id": "h-war-crimes",
+     "link": "Each involves men later tried for war crimes."
+    },
+    {
+     "id": "h-tokyo",
+     "link": "Each is tied to the city of Tokyo."
+    },
+    {
+     "id": "h-planes-vs-ships",
+     "link": "In each, aircraft attacked warships."
+    }
+   ],
+   "if_blank": "All 13 stay live."
+  },
+  {
+   "id": "followers",
+   "type": "numbers",
+   "ask": "Follower counts right now (optional this week)",
+   "why": "Buffer gives no follower totals, so the review asks for them around the first Tuesday of each month. A first reading now gives the 3 Nov review a baseline. Open each app and type the count; skip any you don't have handy.",
+   "fields": [
+    "X",
+    "Instagram",
+    "Threads",
+    "TikTok",
+    "YouTube",
+    "Facebook"
+   ],
+   "if_blank": "Asked again on 3 Nov."
+  },
+  {
+   "id": "notes",
+   "type": "text",
+   "ask": "Anything the numbers missed?",
+   "why": "A post that got a reply worth knowing about, something you saw in an app that Buffer can't, a subject you want more or less of. Plain words; the research run reads this.",
+   "placeholder": "Optional."
+  }
+ ]
+}

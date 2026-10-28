@@ -3,7 +3,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Special+Elite&family=Source+Sans+3:wght@400;600;700&display=swap">
 <style>
-/* Layout: one narrow column, a stamped telegram header, four tabs; cream paper by day, Night Dispatch by dark. */
+/* Layout: one narrow column, a stamped telegram header, five tabs; cream paper by day, Night Dispatch by dark. */
 :root {
   --paper: #EDE4CF; --sheet: #F6F0E1; --ink: #1A1612; --muted: #6B6052; --rule: #D3C7AC;
   --stamp: #B04A3E; --navy: #3D5884; --good: #4E6B2F; --weak: #A0442F; --soft: #E3D8BE;
@@ -77,6 +77,35 @@ select { font: 14px var(--body); padding: 4px 8px; background: var(--sheet); col
 .legend { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 13px; color: var(--muted); }
 .legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
 .note { font-size: 13px; color: var(--muted); }
+/* Your Call: plain, scannable form controls in the body font. */
+.q { display: grid; gap: 8px; }
+.q .ask { font-weight: 600; font-size: 17px; }
+.q .why { font-size: 14px; color: var(--muted); max-width: 65ch; }
+.q .effects { font-size: 14px; display: grid; gap: 2px; }
+.q .effects b { font-weight: 600; }
+.opts { display: grid; gap: 6px; }
+.opts label { display: flex; gap: 10px; align-items: baseline; cursor: pointer; font-size: 16px; }
+.opts input[type=radio] { width: 18px; height: 18px; accent-color: var(--stamp); flex: none; }
+.veto { display: grid; gap: 6px; }
+.veto .row { display: grid; grid-template-columns: 1fr auto; gap: 10px; align-items: center; padding: 6px 0; border-bottom: 1px solid var(--rule); }
+.veto .row:last-child { border-bottom: 0; }
+.veto .gid { font: 12px var(--type); color: var(--navy); }
+.veto button { font: 600 13px var(--body); border: 1.5px solid var(--rule); background: transparent; color: var(--muted); padding: 4px 12px; border-radius: 3px; cursor: pointer; }
+.veto button[aria-pressed="true"] { border-color: var(--weak); color: var(--weak); background: var(--soft); }
+.nums { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 8px; }
+.nums label { display: grid; gap: 3px; font-size: 13px; color: var(--muted); }
+.nums input, textarea.answer { font: 16px var(--body); padding: 6px 8px; background: var(--paper); color: var(--ink); border: 1px solid var(--rule); border-radius: 3px; width: 100%; box-sizing: border-box; }
+textarea.answer { min-height: 90px; resize: vertical; }
+.q.carried .ask::after { content: "Still open from last week"; font: 600 11px var(--body); letter-spacing: .06em; text-transform: uppercase; color: var(--stamp); border: 1px solid var(--stamp); border-radius: 10px; padding: 1px 7px; margin-left: 8px; vertical-align: middle; }
+.submit { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+.submit button { font: 700 15px var(--display); letter-spacing: .1em; text-transform: uppercase; background: var(--stamp); color: #fff; border: 0; padding: 10px 20px; border-radius: 3px; cursor: pointer; }
+.submit button[disabled] { opacity: .5; cursor: default; }
+.submit button.quiet { background: transparent; color: var(--navy); border: 1.5px solid var(--navy); }
+.status { font-size: 14px; color: var(--muted); }
+.status.ok { color: var(--good); font-weight: 600; }
+.status.bad { color: var(--weak); }
+.q[data-locked] .opts label, .q[data-locked] .veto button { pointer-events: none; }
+.q[data-locked] .opts input:not(:checked) + span, .q[data-locked] .veto button[aria-pressed="false"] { opacity: .45; }
 @media (prefers-reduced-motion: no-preference) { .post[open] .detail { animation: open .18s ease-out; } @keyframes open { from { opacity: .4 } } }
 </style>
 
@@ -91,11 +120,13 @@ select { font: 14px var(--body); padding: 4px 8px; background: var(--sheet); col
     <button role="tab" id="tab-posts" data-view="posts">Posts</button>
     <button role="tab" id="tab-trends" data-view="trends">Trends</button>
     <button role="tab" id="tab-playbook" data-view="playbook">Playbook</button>
+    <button role="tab" id="tab-yourcall" data-view="yourcall">Your Call</button>
   </nav>
   <section id="view-week" role="tabpanel" aria-labelledby="tab-week"></section>
   <section id="view-posts" role="tabpanel" aria-labelledby="tab-posts" hidden></section>
   <section id="view-trends" role="tabpanel" aria-labelledby="tab-trends" hidden></section>
   <section id="view-playbook" role="tabpanel" aria-labelledby="tab-playbook" hidden></section>
+  <section id="view-yourcall" role="tabpanel" aria-labelledby="tab-yourcall" hidden></section>
 </div>
 
 <script>
@@ -223,15 +254,102 @@ function renderPlaybook() {
     ${checks.length ? `<details class="panel"><summary class="note">Data checks (${checks.length})</summary><ul class="note">${checks.map(c => `<li>${esc(c)}</li>`).join("")}</ul></details>` : ""}`;
 }
 
+/* Your Call: the Tuesday review's summary and its questions, answered here and saved in the
+   artifact's database (one document per week, answers/<week>), which the Wednesday research
+   run and the next Tuesday review read back. The page never writes to the repo. */
+let yc = { db: null, doc: null, saved: null, locked: false, answers: {} };
+function ycValues() {
+  const C = D.checkin; const out = {};
+  for (const q of C.questions || []) {
+    if (q.type === "veto") out[q.id] = [...document.querySelectorAll(`.veto button[data-q="${q.id}"][aria-pressed="true"]`)].map(b => b.dataset.gid);
+    else if (q.type === "numbers") { const o = {}; for (const f of q.fields) { const v = $(`[data-q="${q.id}"][data-f="${f}"]`)?.value; if (v !== "" && v != null) o[f] = Number(v); } out[q.id] = o; }
+    else if (q.type === "text") out[q.id] = ($(`[data-q="${q.id}"]`)?.value || "").trim();
+    else out[q.id] = document.querySelector(`input[name="${q.id}"]:checked`)?.value || "";
+  }
+  return out;
+}
+function ycAnswered(q, a) {
+  const v = a?.[q.id];
+  if (v == null) return false;
+  if (q.type === "veto") return true;  // a saved submission with no vetoes is still an answer
+  if (q.type === "numbers") return Object.keys(v).length > 0;
+  return String(v).trim() !== "";
+}
+function questionHtml(q, a) {
+  const v = a?.[q.id];
+  let body = "";
+  if (q.type === "veto") body = `<div class="veto">${(q.groups || []).map(g => `<div class="row"><div><div class="gid">${esc(g.id)}</div><div>${esc(g.link)}</div></div>
+      <button type="button" data-q="${esc(q.id)}" data-gid="${esc(g.id)}" aria-pressed="${Array.isArray(v) && v.includes(g.id)}">${Array.isArray(v) && v.includes(g.id) ? "Vetoed" : "Veto"}</button></div>`).join("")}</div>`;
+  else if (q.type === "numbers") body = `<div class="nums">${q.fields.map(f => `<label>${esc(f)}<input type="number" min="0" inputmode="numeric" data-q="${esc(q.id)}" data-f="${esc(f)}" value="${v?.[f] ?? ""}"></label>`).join("")}</div>`;
+  else if (q.type === "text") body = `<textarea class="answer" data-q="${esc(q.id)}" placeholder="${esc(q.placeholder || "")}">${esc(v || "")}</textarea>`;
+  else body = `<div class="opts">${(q.options || []).map(o => `<label><input type="radio" name="${esc(q.id)}" value="${esc(o)}" ${v === o ? "checked" : ""}><span>${esc(o)}</span></label>`).join("")}</div>`;
+  const effects = [q.if_yes ? `<div><b>If yes:</b> ${esc(q.if_yes)}</div>` : "", q.if_blank ? `<div><b>If left blank:</b> ${esc(q.if_blank)}</div>` : ""].join("");
+  return `<div class="panel q ${q.carried ? "carried" : ""}" data-id="${esc(q.id)}"><div class="ask">${esc(q.ask)}</div>
+    ${q.why ? `<div class="why">${esc(q.why)}</div>` : ""}${body}${effects ? `<div class="effects">${effects}</div>` : ""}</div>`;
+}
+function ycRefreshTab() {
+  const C = D.checkin; const b = $("#tab-yourcall");
+  if (!C || !C.questions) { b.textContent = "Your Call"; return; }
+  const open = C.questions.filter(q => !ycAnswered(q, yc.saved?.answers)).length;
+  b.textContent = open && !yc.saved ? `Your Call · ${open} open` : open ? `Your Call · ${open} left` : "Your Call ✓";
+}
+function renderYourCall() {
+  const el = $("#view-yourcall"); const C = D.checkin;
+  if (!C || !C.questions) {
+    el.innerHTML = `<div class="panel empty"><span class="stamp">Nothing to call yet</span><p class="note">Each Tuesday review leaves its summary and its questions for you here. Your answers are saved in this page and read by the Wednesday research run.</p></div>`;
+    ycRefreshTab(); return;
+  }
+  const a = yc.saved?.answers;
+  const when = yc.saved?.submitted ? new Date(yc.saved.submitted).toLocaleString("en-US", { weekday: "short", day: "numeric", month: "short", hour: "numeric", minute: "2-digit" }) : "";
+  el.innerHTML = `<div class="panel"><span class="stamp">Your call · week of ${esc(fmtDate(C.week))}</span>${C.summary ? `<div class="prose">${md(C.summary)}</div>` : ""}</div>
+    ${C.questions.map(q => questionHtml(q, a)).join("")}
+    <div class="submit"><button type="button" id="yc-submit">Submit answers</button><button type="button" class="quiet" id="yc-edit" hidden>Edit answers</button><span class="status" id="yc-status"></span></div>
+    <p class="note">The Wednesday research run reads these first thing; the next Tuesday review records them. You can change an answer any time before then. Anything else, tell Claude in the Project.</p>`;
+  el.querySelectorAll(".veto button").forEach(b => b.onclick = () => { const on = b.getAttribute("aria-pressed") !== "true"; b.setAttribute("aria-pressed", on); b.textContent = on ? "Vetoed" : "Veto"; });
+  $("#yc-submit").onclick = ycSubmit;
+  $("#yc-edit").onclick = () => { yc.locked = false; ycLock(false); $("#yc-status").textContent = "Editing. Submit again when done."; $("#yc-status").className = "status"; };
+  if (yc.saved) { ycLock(true); $("#yc-status").textContent = `Submitted ${when}.`; $("#yc-status").className = "status ok"; }
+  else if (yc.db === null && yc.ready) { $("#yc-submit").disabled = true; $("#yc-status").textContent = "Answers can't be saved from this view. Tell Claude in the Project instead."; $("#yc-status").className = "status bad"; }
+  ycRefreshTab();
+}
+function ycLock(on) {
+  document.querySelectorAll("#view-yourcall .q").forEach(q => on ? q.setAttribute("data-locked", "") : q.removeAttribute("data-locked"));
+  document.querySelectorAll("#view-yourcall input, #view-yourcall textarea").forEach(i => i.disabled = on);
+  $("#yc-submit").hidden = on; $("#yc-edit").hidden = !on;
+}
+async function ycSubmit() {
+  const C = D.checkin; const st = $("#yc-status"); const btn = $("#yc-submit");
+  if (!yc.db) { st.textContent = "Not connected; nothing saved. Tell Claude in the Project instead."; st.className = "status bad"; return; }
+  btn.disabled = true; st.textContent = "Saving…"; st.className = "status";
+  const body = { week: C.week, submitted: new Date().toISOString(), answers: ycValues() };
+  try {
+    await yc.db.doc("answers/" + C.week).set(body);
+    yc.saved = body; renderYourCall();
+  } catch (e) {
+    btn.disabled = false; st.className = "status bad";
+    st.textContent = e?.code === "invalid_argument" ? "This view can't write answers (sign in as the owner). Nothing saved." : "Couldn't save (" + (e?.code || "error") + "). Try again in a moment.";
+  }
+}
+async function ycInit() {
+  renderYourCall();
+  const C = D.checkin; if (!C || !C.questions) return;
+  try { yc.db = window.claude?.use ? await window.claude.use("db") : null; } catch (e) { yc.db = null; }
+  yc.ready = true;
+  if (yc.db) {
+    try { const s = await yc.db.doc("answers/" + C.week).get(); if (s.exists) yc.saved = s.data(); } catch (e) {}
+  }
+  renderYourCall();
+}
+
 function show(view) {
   document.querySelectorAll("nav button").forEach(b => b.setAttribute("aria-selected", b.dataset.view === view));
   document.querySelectorAll("section[role=tabpanel]").forEach(s => s.hidden = s.id !== "view-" + view);
   try { localStorage.setItem("scoreboard-view", view); } catch (e) {}
 }
 $("#meta").textContent = D.generated ? `Updated ${fmtDate(D.generated)} · ${D.snapshots.length} weekly pull${D.snapshots.length === 1 ? "" : "s"} · ${D.posts.length} posts` : `First review ${fmtDate(D.first_review)}`;
-renderWeek(); renderPosts(); renderTrends(); renderPlaybook();
+renderWeek(); renderPosts(); renderTrends(); renderPlaybook(); ycInit();
 document.querySelectorAll("nav button").forEach(b => b.onclick = () => show(b.dataset.view));
 let start = "week"; const h = location.hash.slice(1);
-if (["week", "posts", "trends", "playbook"].includes(h)) start = h; else { try { start = localStorage.getItem("scoreboard-view") || "week"; } catch (e) {} }
+if (["week", "posts", "trends", "playbook", "yourcall"].includes(h)) start = h; else { try { start = localStorage.getItem("scoreboard-view") || "week"; } catch (e) {} }
 show(start);
 </script>

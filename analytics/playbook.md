@@ -1,6 +1,6 @@
 # WW2 Dispatches Playbook
 
-The current lessons from the Tuesday analytics review. The Wednesday research run, the Thursday video run, and the Friday cards run read this before picking events, building videos, and writing hooks and captions. It holds lessons, not rules: the Project docs stay the rules, and anything here that would change a rule goes to Brian first as a Schedule Board task. The Tuesday review rewrites this file each week; older versions live in git and in `analytics/reviews/`.
+The current lessons from the Tuesday analytics review. The Wednesday research run, the Thursday video run, and the Friday cards run read this before picking events, building videos, and writing hooks and captions. It holds lessons, not rules: the Project docs stay the rules, and anything here that would change a rule goes to Brian first as a question on the Scoreboard's Your Call tab. The Tuesday review rewrites this file each week; older versions live in git and in `analytics/reviews/`.
 
 Updated Tue 27 Oct 2026, after the first real review (`analytics/reviews/2026-10-27.md`). The method is in the Project's Analytics doc.
 

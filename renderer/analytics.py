@@ -19,6 +19,10 @@ then runs this script. The method is in the Project's Analytics doc; in short:
   * Groups (series, format, slot, themes) need 5+ posts or they show "not enough data".
   * Videos also get hold: average seconds watched as a share of the video's length.
 
+Also reads analytics/checkin.json (the Your Call tab: the week's summary and the questions for
+Brian), written by the Tuesday review; the page saves his answers in the Scoreboard artifact's
+database, never in the repo.
+
 Writes:
   log/performance-log.csv      one row per post per platform (Excel friendly)
   analytics/scoreboard.json    everything the Scoreboard page shows
@@ -357,6 +361,9 @@ def main():
         if r["follows"] not in ("", None):
             follows[r["platform"]] += r["follows"]
 
+    # Your Call: the week's summary and questions for Brian, written by the Tuesday review (analytics/README.md).
+    checkin = json.load(open(p("analytics", "checkin.json"), encoding="utf-8")) if os.path.exists(p("analytics", "checkin.json")) else None
+
     playbook = open(p("analytics", "playbook.md"), encoding="utf-8").read() if os.path.exists(p("analytics", "playbook.md")) else ""
     reviews = sorted(os.path.basename(f)[:-3] for f in glob.glob(p("analytics", "reviews", "*.md")))
     latest_review = open(p("analytics", "reviews", reviews[-1] + ".md"), encoding="utf-8").read() if reviews else ""
@@ -374,6 +381,7 @@ def main():
         "instagram_follows_from_posts": follows.get("Instagram", 0),
         "playbook": playbook,
         "latest_review": latest_review,
+        "checkin": checkin,
         "reviews": reviews,
         "unmatched": [{"id": u["id"], "service": u["service"], "sent": u["sent"], "link": u.get("link")}
                       for u in unmatched.values()],
