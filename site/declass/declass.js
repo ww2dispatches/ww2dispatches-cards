@@ -549,7 +549,7 @@
     t.innerHTML = pulls.map((p, i) => {
       const info = p.cardInfo, can = revealed[i] || i === open;
       const cls = (i === idx ? ' cur' : '') + (can ? '' : ' lock');
-      if (!revealed[i] || !info) return `<button class="tr back${cls}" data-i="${i}" aria-label="Card ${i + 1}"><span>WW2</span></button>`;
+      if (!revealed[i] || !info) return `<button class="tr back${cls}" data-i="${i}" aria-label="Card ${i + 1}"><span><i>WW2</i></span></button>`;
       const src = info.kind === 'namethis' && !answered[i] && info.imgPuzzle ? info.imgPuzzle : info.img;
       return `<button class="tr${cls}" data-i="${i}" aria-label="Card ${i + 1}, ${esc(info.short)}"><img class="${info.flash ? 'flash' : 'f-' + p.finish}" src="${esc(src)}" alt=""></button>`;
     }).join('');
