@@ -47,7 +47,7 @@ button:focus-visible,.env:focus-visible{outline:3px solid var(--brass);outline-o
 .slotbtn.live{border-color:var(--red);background:#fff6e4}.slotbtn.live b{color:var(--red)}
 .slotbtn.live::after{content:"OPEN IT ▸";color:var(--red)}
 .slotbtn.done{opacity:.7;cursor:default}.slotbtn.done::after{content:"OPENED ✓";color:var(--olive)}
-.slotbtn.wait{cursor:default}.slotbtn.wait::after{content:"";}
+.slotbtn.wait{cursor:default}.slotbtn.wait::after{content:"SEALED";color:var(--brass)}
 .slotbtn.locked b,.slotbtn.locked span{padding-right:150px}
 .slotbtn.locked{border-color:var(--line);border-style:dashed;cursor:default;opacity:.75}
 .slotbtn.locked::after{content:"TURN CARDS FIRST";font-size:12px;color:var(--mute)}
