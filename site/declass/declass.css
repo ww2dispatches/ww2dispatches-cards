@@ -172,8 +172,8 @@ button:focus-visible,.env:focus-visible{outline:3px solid var(--brass);outline-o
 .tray .tr{flex:0 1 96px;min-width:0;padding:0;border:0;background:none;cursor:pointer;transition:transform .2s}
 .tray .tr img,.tray .tr.back span{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border:3px solid var(--line);border-radius:3px;box-shadow:0 2px 6px rgba(26,22,18,.22);background:#d8ccb0}
 .tray .tr img.f-copper{border-color:var(--copper)}.tray .tr img.f-silver{border-color:#aab0b8}.tray .tr img.f-gold{border-color:#c49a2a}.tray .tr img.f-topsecret,.tray .tr img.flash{border-color:#c7cfdb}
-.tray .tr.back span{display:grid;place-items:center;background:repeating-linear-gradient(135deg,#efe6cf 0 6px,#e6dbbe 6px 12px);border:1px solid #cbbd98}
-.tray .tr.back i{width:44%;aspect-ratio:1;border-radius:50%;background:var(--red);color:var(--paper);display:grid;place-items:center;font-family:var(--display);font-weight:700;font-style:normal;font-size:12px;border:2px solid var(--paper);outline:1px solid var(--red)}
+.tray .tr.back span{display:grid;place-items:center;container-type:inline-size;background:repeating-linear-gradient(135deg,#efe6cf 0 6px,#e6dbbe 6px 12px);border:1px solid #cbbd98}
+.tray .tr.back i{width:44%;aspect-ratio:1;border-radius:50%;background:var(--red);color:var(--paper);display:grid;place-items:center;font-family:var(--display);font-weight:700;font-style:normal;font-size:12cqw;line-height:1;border:2px solid var(--paper);outline:1px solid var(--red)}
 .tray .tr.cur{transform:translateY(-5px)}
 .tray .tr.cur img,.tray .tr.cur.back span{outline:3px solid var(--red);outline-offset:2px}
 .tray .tr.lock{cursor:default;opacity:.6}
