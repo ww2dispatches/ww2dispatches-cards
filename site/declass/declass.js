@@ -118,6 +118,22 @@
     return null;
   }
 
+  // ---------- card pictures that fail to load (28 Oct 2026) ----------
+  // A phone on a weak signal sometimes drops a card picture, leaving the alt text and a broken icon until
+  // the card is redrawn. Retry it twice, then fetch the same file straight from GitHub.
+  document.addEventListener('error', e => {
+    const im = e.target;
+    if (!(im instanceof HTMLImageElement) || !/cdn\.jsdelivr\.net\/gh\/ww2dispatches\//.test(im.src)) return;
+    const n = +(im.dataset.retry || 0);
+    if (n >= 3) return;
+    im.dataset.retry = n + 1;
+    const base = im.src.replace(/([?&])r=\d+&?/, '$1').replace(/[?&]$/, '');
+    setTimeout(() => {
+      if (n < 2) im.src = base + (base.includes('?') ? '&' : '?') + 'r=' + (n + 1);
+      else im.src = base.replace(/^https:\/\/cdn\.jsdelivr\.net\/gh\/(ww2dispatches)\/([^@]+)@main\//, 'https://raw.githubusercontent.com/$1/$2/main/');
+    }, 600 * (n + 1));
+  }, true);
+
   // ---------- the light on gold and Top Secret (Card Finishes mockup) ----------
   let lightTouched = 0, lightT = 0;
   function setLight(x, y, manual) {
