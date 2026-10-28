@@ -528,10 +528,44 @@
     if (revealed[idx] && info && p.variant === 'living') startFilm(f, info);
     $('hint').innerHTML = hintFor(p, idx);
     $('prevBtn').disabled = idx === 0;
-    $('nextBtn').disabled = !revealed[idx] || idx === pulls.length - 1;
     $('dots').innerHTML = pulls.map((_, i) => `<i class="${i === idx ? 'cur' : ''}"></i>`).join('');
-    $('summary').hidden = !(revealed.every(Boolean) && cardMode !== 'starterLocal');
-    if (!$('summary').hidden) renderSummary();
+    $('sCards').classList.remove('summ');
+    $('summary').hidden = true;
+    navState();
+  }
+  // End of the envelope (28 Oct 2026): a tray of the envelope's cards sits under the buttons, the last
+  // card's Next turns into Finish, and Finish opens a one screen summary.
+  function navState() {
+    const last = idx === pulls.length - 1, n = $('nextBtn');
+    n.textContent = last ? 'Finish ▶︎' : 'Next ▶︎';
+    n.classList.toggle('fin', last);
+    n.disabled = !revealed[idx];
+    renderTray();
+  }
+  function renderTray() {
+    const t = $('tray');
+    if (pulls.length < 2) { t.innerHTML = ''; return; }
+    const open = revealed.indexOf(false);
+    t.innerHTML = pulls.map((p, i) => {
+      const info = p.cardInfo, can = revealed[i] || i === open;
+      const cls = (i === idx ? ' cur' : '') + (can ? '' : ' lock');
+      if (!revealed[i] || !info) return `<button class="tr back${cls}" data-i="${i}" aria-label="Card ${i + 1}"><span>WW2</span></button>`;
+      const src = info.kind === 'namethis' && !answered[i] && info.imgPuzzle ? info.imgPuzzle : info.img;
+      return `<button class="tr${cls}" data-i="${i}" aria-label="Card ${i + 1}, ${esc(info.short)}"><img class="${info.flash ? 'flash' : 'f-' + p.finish}" src="${esc(src)}" alt=""></button>`;
+    }).join('');
+    t.querySelectorAll('.tr').forEach(b => { b.onclick = () => { const i = +b.dataset.i; if (i !== idx && (revealed[i] || i === revealed.indexOf(false))) go(i, true); }; });
+  }
+  function finish() {
+    if (!revealed.every(Boolean)) return;
+    if (cardMode === 'starterLocal') { showSave(); return; }
+    document.querySelectorAll('#stage video').forEach(v => v.pause());
+    document.querySelectorAll('.tiltask').forEach(el => el.remove());
+    hideNote('cards');
+    $('sumSub').textContent = (cardEnv && cardEnv.kind === 'request' ? 'Your requested card' : cardEnv && cardEnv.kind === 'intercept' ? 'Intercept' : slotName(pulls[0] && pulls[0].slot)) + ' · tap a card to see it again';
+    $('sCards').classList.add('summ');
+    $('summary').hidden = false;
+    renderSummary();
+    window.scrollTo(0, 0);
   }
   // The first pack teaches itself (26 Oct 2026): the first card's turn and swipe hints show as coach pills, once.
   const packCoach = (i, k) => Boolean(cardEnv && cardEnv.kind === 'starter' && i === 0 && pulls.length > 1 && !seen(k));
@@ -563,11 +597,8 @@
     if (packCoach(idx, 'turn')) mark('turn');
     firstNotes(p);
     maybeTiltPrompt(p.finish);
-    $('nextBtn').disabled = idx === pulls.length - 1;
-    if (revealed.every(Boolean)) {
-      if (cardMode === 'starterLocal') { $('hint').textContent = "That's your starter pack."; setTimeout(showSave, 1100); return; }
-      $('summary').hidden = false; renderSummary();
-    }
+    navState();
+    if (revealed.every(Boolean) && cardMode === 'starterLocal') { $('hint').textContent = "That's your starter pack."; setTimeout(showSave, 1100); }
   }
   // A duplicate's Intel floats up off the card as it turns (25 Oct 2026). Never blocks a swipe.
   function intelChip(n) {
@@ -586,6 +617,7 @@
     if (st) { st.classList.remove('hit'); void st.offsetWidth; st.classList.add('hit'); }
     if (p.cardInfo.img && p.cardInfo.img !== p.cardInfo.imgPuzzle) { const im = document.querySelector('#flip .card img'); if (im) setTimeout(() => { im.src = p.cardInfo.img; }, 250); }
     $('hint').innerHTML = hintAfter(p, idx);
+    renderTray();
   }
   function earnText(e) {
     if (!e) return '';
@@ -608,9 +640,11 @@
     $('summaryRow').innerHTML = pulls.map(p => miniHTML(p.card, H, p.finish)).join('');
     wireMinis($('summaryRow'), ids);
   }
-  function go(n) {
+  function go(n, jump) {
+    if ($('sCards').classList.contains('summ')) return;
+    if (n === pulls.length && idx === pulls.length - 1) { finish(); return; }
     if (n < 0 || n >= pulls.length) return;
-    if (n > idx && !revealed[idx]) return;
+    if (n > idx && !revealed[idx] && !jump) return;
     if (n === 1 && idx === 0 && cardEnv && cardEnv.kind === 'starter') mark('swipe');
     hideNote('cards');
     const p = pulls[idx];
