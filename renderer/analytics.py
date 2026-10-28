@@ -75,7 +75,7 @@ def theme_vocab():
             if line.startswith("* **"):
                 m = re.match(r"\* \*\*(\w+):\*\* (.*)", line.strip())
                 if m:
-                    vocab["video." + m.group(1)].update(v.strip() for v in m.group(2).split(" · "))
+                    vocab["video." + m.group(1)].update(v.strip() for v in m.group(2).split(": ")[-1].split(" · "))
             else:
                 vocab[section].update(v.strip() for v in line.strip().split(" · "))
     return vocab
