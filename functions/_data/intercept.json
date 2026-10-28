@@ -1,5 +1,5 @@
 {
-  "about": "Intercept master list (a Declass daily puzzle). Each group: id (never reused), link (the typed line shown when it locks), difficulty (easy, medium, hard; never shown to players), cards (every card the group can be dealt from, posted or planned), alsoFits (cards that also fit the link but are never dealt in it, so the conflict check keeps them off any board that holds this group), source (what backs the link), added, and optional vetoed. Maintained by the Wednesday research run (Research doc, Intercept master list). The server deals only cards that have posted.",
+  "about": "Intercept master list (a Declass daily puzzle). Each group: id (never reused), link (the typed line shown when it locks), difficulty (easy, medium, hard; never shown to players), cards (every posted card the group can be dealt from), alsoFits (posted cards that also fit the link but are never dealt in it, so the conflict check keeps them off any board that holds this group), source (what backs the link), added, and optional vetoed. Only cards that have already posted are ever listed (a Name This card once its answer is public). Maintained by the Tuesday analytics review (Analytics doc, Intercept master list).",
   "version": 1,
   "groups": [
     {
@@ -42,7 +42,8 @@
       "difficulty": "easy",
       "cards": [
         "1941-10-18-tojo",
-        "1940-10-21-churchill"
+        "1940-10-21-churchill",
+        "1941-10-27-fdr-navy-day"
       ],
       "alsoFits": [
         "1944-10-20-leyte"
@@ -105,7 +106,8 @@
         "1941-10-17-kearny-spec"
       ],
       "alsoFits": [
-        "namethis-1944-10-18-tirpitz"
+        "namethis-1944-10-18-tirpitz",
+        "1941-10-27-fdr-navy-day"
       ],
       "source": "Kearny was torpedoed off Iceland (17 Oct 1941); Reuben James was sunk near Iceland escorting HX 156 (31 Oct 1941). Tirpitz in Norway and FDR's speech about Kearny stay off boards with this group.",
       "added": "2026-10-27"
@@ -156,7 +158,9 @@
       "id": "m-fdr",
       "link": "All three involve Franklin D. Roosevelt.",
       "difficulty": "medium",
-      "cards": [],
+      "cards": [
+        "1941-10-27-fdr-navy-day"
+      ],
       "alsoFits": [
         "1944-10-19-waves",
         "1945-10-24-un",
@@ -171,7 +175,8 @@
       "difficulty": "medium",
       "cards": [
         "1944-10-20-leyte",
-        "1940-10-21-churchill"
+        "1940-10-21-churchill",
+        "1941-10-27-fdr-navy-day"
       ],
       "alsoFits": [
         "1945-10-24-un",
@@ -186,7 +191,8 @@
       "difficulty": "hard",
       "cards": [
         "1941-10-17-kearny",
-        "1941-10-17-kearny-spec"
+        "1941-10-17-kearny-spec",
+        "1941-10-27-fdr-navy-day"
       ],
       "alsoFits": [],
       "source": "U-568 torpedoed Kearny (17 Oct 1941), U-552 sank Reuben James (31 Oct 1941), HMS Petard forced U-559 to the surface (30 Oct 1942). FDR's Navy Day speech was about Kearny, so it stays off boards with this group.",
@@ -199,7 +205,8 @@
       "cards": [
         "1942-10-22-flagpole",
         "1941-10-17-kearny",
-        "1941-10-17-kearny-spec"
+        "1941-10-17-kearny-spec",
+        "1941-10-27-fdr-navy-day"
       ],
       "alsoFits": [],
       "source": "Mark Clark landed at Cherchell from the submarine HMS Seraph (22 Oct 1942); U-559; U-568 hit Kearny; U-552 sank Reuben James.",
@@ -241,7 +248,9 @@
         "1941-10-17-kearny-spec",
         "1940-10-26-mustang"
       ],
-      "alsoFits": [],
+      "alsoFits": [
+        "1941-10-27-fdr-navy-day"
+      ],
       "source": "Kearny went to help a British convoy's escorts (SC 48); Reuben James was escorting HX 156 toward Britain; North American built the Mustang to a British order in 1940. FDR's speech about Kearny stays off boards with this group.",
       "added": "2026-10-27"
     },
@@ -284,6 +293,127 @@
       ],
       "alsoFits": [],
       "source": "HMS Petard sank U-559; HMS Seraph carried Mark Clark to Cherchell; the Royal Navy hunted Tirpitz for years (X-craft and Fleet Air Arm attacks, 1943 and 1944).",
+      "added": "2026-10-27"
+    },
+    {
+      "id": "h-top-valor",
+      "link": "Each involves a commander who won his nation's highest award for valor.",
+      "difficulty": "hard",
+      "cards": [
+        "1942-10-27-snipe",
+        "1944-10-25-johnston",
+        "1944-10-25-samar"
+      ],
+      "alsoFits": [
+        "1944-10-20-leyte",
+        "namethis-1944-10-18-tirpitz"
+      ],
+      "source": "Lt. Col. Victor Turner won the Victoria Cross for Outpost Snipe (London Gazette, 20 Nov 1942). Cmdr. Ernest E. Evans of USS Johnston won the Medal of Honor, posthumously, for the Battle off Samar (NHHC). MacArthur already held the Medal of Honor (1942) and the 1943 X-craft attack on Tirpitz won two VCs, so those cards stay off boards with this group.",
+      "added": "2026-10-27"
+    },
+    {
+      "id": "h-anglo-american",
+      "link": "Each is a story of Americans and the British working together.",
+      "difficulty": "hard",
+      "cards": [
+        "1942-10-22-flagpole",
+        "1942-10-23-sherman",
+        "1940-10-26-mustang"
+      ],
+      "alsoFits": [
+        "1941-10-17-kearny",
+        "1941-10-17-kearny-spec",
+        "1945-10-18-nuremberg-indictment",
+        "1945-10-24-un"
+      ],
+      "source": "Mark Clark, an American general, landed from the British submarine HMS Seraph (dispatch No. 011). The Shermans at Alamein were American built tanks rushed to Britain's Eighth Army after Tobruk fell (No. 014). North American Aviation designed the Mustang for a British order (No. 020). Kearny's convoy work, the Nuremberg prosecution, and the UN also fit loosely, so they stay off boards with this group.",
+      "added": "2026-10-27"
+    },
+    {
+      "id": "h-war-crimes",
+      "link": "Each involves men later tried for war crimes.",
+      "difficulty": "hard",
+      "cards": [
+        "1945-10-18-nuremberg-indictment",
+        "1941-10-18-tojo"
+      ],
+      "alsoFits": [],
+      "source": "The Nuremberg indictment named 24 leading Nazis (No. 003). Hideki Tojo was tried by the International Military Tribunal for the Far East and executed in December 1948 (IMTFE judgment). Dormant until a third posted card fits.",
+      "added": "2026-10-27"
+    },
+    {
+      "id": "h-tokyo",
+      "link": "Each is tied to the city of Tokyo.",
+      "difficulty": "hard",
+      "cards": [
+        "1941-10-18-tojo",
+        "1942-10-26-hornet"
+      ],
+      "alsoFits": [],
+      "source": "Tojo became prime minister in Tokyo (No. 004). USS Hornet launched the Doolittle Raid on Tokyo in April 1942 (No. 019, 'Doolittle's carrier lost'). Dormant until a third posted card fits.",
+      "added": "2026-10-27"
+    },
+    {
+      "id": "h-planes-vs-ships",
+      "link": "In each, aircraft attacked warships.",
+      "difficulty": "hard",
+      "cards": [
+        "1942-10-26-hornet",
+        "namethis-1944-10-18-tirpitz",
+        "1944-10-25-samar"
+      ],
+      "alsoFits": [
+        "1944-10-25-johnston"
+      ],
+      "source": "Japanese carrier planes struck USS Hornet at Santa Cruz (No. 019). RAF Lancasters attacked Tirpitz in September, October, and November 1944, the last raid sinking her. Taffy 3's aircraft attacked Kurita's ships off Samar while kamikazes struck the escort carriers (No. 017). Johnston also fits loosely.",
+      "added": "2026-10-27"
+    },
+    {
+      "id": "m-churchill",
+      "link": "All three involve Winston Churchill.",
+      "difficulty": "medium",
+      "cards": [
+        "1940-10-21-churchill",
+        "namethis-1944-10-18-tirpitz",
+        "1942-10-23-sherman"
+      ],
+      "alsoFits": [
+        "1942-10-23-alamein",
+        "1942-10-22-flagpole"
+      ],
+      "source": "Churchill's broadcast to France (No. 010). Churchill called Tirpitz The Beast (the Name This clue). Churchill was with Roosevelt at the White House when Tobruk fell in June 1942, and the Shermans at Alamein were the United States' answer to his plea (No. 014). Alamein and Torch also involve him, so they stay off boards with this group.",
+      "added": "2026-10-27"
+    },
+    {
+      "id": "m-france",
+      "link": "All three involve France.",
+      "difficulty": "medium",
+      "cards": [
+        "1940-10-21-churchill",
+        "1942-10-22-flagpole",
+        "1945-10-18-nuremberg-indictment"
+      ],
+      "alsoFits": [
+        "1945-10-24-un"
+      ],
+      "source": "Churchill's broadcast to the French people (No. 010). Mark Clark met French General Charles Mast in French Algeria (No. 011). France was one of the four prosecuting powers at the International Military Tribunal (No. 003). The UN (France a permanent member) also fits loosely.",
+      "added": "2026-10-27"
+    },
+    {
+      "id": "m-continental-us",
+      "link": "All three took place in the continental United States.",
+      "difficulty": "medium",
+      "cards": [
+        "1942-10-19-tin-cans",
+        "1944-10-19-waves",
+        "1946-10-24-v2",
+        "1940-10-26-mustang",
+        "1941-10-27-fdr-navy-day"
+      ],
+      "alsoFits": [
+        "1945-10-22-this-is-the-army"
+      ],
+      "source": "The tin can order and the WAVES decision were national U.S. orders (Nos. 005 and 006); the V-2 flew from White Sands, New Mexico (No. 016); the Mustang first flew at Mines Field, Los Angeles (No. 020); FDR spoke in Washington (No. 022). This Is the Army closed in Hawaii, then a territory, so it stays off boards with this group.",
       "added": "2026-10-27"
     }
   ]
