@@ -143,6 +143,7 @@
   "photoCredit": "HMS Jervis Bay at Dakar, 1940. Photo by J. F. Aylard, via the HMS Jervis Bay Association, public domain.",
   "videoPhotos": [
     {
+      "file": "photos/1940-11-05-jervis-bay.jpg",
       "page": "https://commons.wikimedia.org/wiki/File:JervisBayatDakar1940.jpg",
       "credit": "HMS Jervis Bay at Dakar, 1940. Photo by J. F. Aylard, public domain."
     },
@@ -161,6 +162,11 @@
     {
       "page": "https://commons.wikimedia.org/wiki/File:The_Royal_Navy_during_the_Second_World_War_A2113.jpg",
       "credit": "Memorial service for HMS Jervis Bay aboard HMS Rodney, November 1940. Lt R. G. G. Coote, IWM A 2113, public domain."
+    },
+    {
+      "file": "photos/1940-11-05-jervis-bay-6.jpg",
+      "page": "https://catalog.archives.gov/id/204904804",
+      "credit": "Admiral Scheer capsized at Kiel after an Allied air attack, 1945. NARA 342-FH-3A21728-58038AC, public domain."
     }
   ],
   "kind": "story",
