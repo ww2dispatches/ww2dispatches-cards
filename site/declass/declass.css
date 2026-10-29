@@ -1,10 +1,11 @@
 /* Declass game page. Ported from the Declass mockup (Field Telegram paper) and the Card Finishes
    mockup (frames, mats, sheens). One page, several screens. */
 :root{
-  --paper:#EDE4CF; --paper2:#E3D8BE; --env:#F3EBD6; --ink:#1A1612; --navy:#3D5884; --red:#B04A3E; --olive:#5E6B3A; --brass:#B8862B; --violet:#5B4B8A;
-  --mute:#6B6354; --line:#C9BC9E; --copper:#9C5B2E;
+  /* Night Dispatch (29 Oct 2026): the page is a dark desk; envelopes, cards, and sheets stay paper (see the end of this file) */
+  --paper:#17140f; --paper2:#2a241d; --env:#1c1814; --ink:#EDE4CF; --navy:#9fbbe8; --red:#D8644F; --olive:#9DAA62; --brass:#D9A93E; --violet:#a89be0;
+  --mute:#b9ad92; --line:#3b3229; --copper:#9C5B2E;
   --display:'Oswald',Impact,'Arial Narrow',sans-serif; --type:'Special Elite','Courier New',monospace; --body:Georgia,serif;
-  color-scheme:light;
+  color-scheme:dark;
 }
 *{box-sizing:border-box}
 [hidden]{display:none!important}
@@ -613,3 +614,71 @@ button.stat{cursor:pointer;color:var(--mute)}
 #sOpen .theatre{min-height:0;padding-top:clamp(90px,14vh,130px)}
 #sOpen .tearing{margin-top:18px;font-size:14px}
 .fnote.inline{position:static;margin:12px auto 4px;left:auto;right:auto;bottom:auto;box-shadow:0 4px 12px rgba(26,22,18,.25)}
+
+/* ============ Night Dispatch theme (29 Oct 2026, visual pass step 2, option B "Darkroom") ============
+   One theme only: the page is a dark desk under a warm red safelight, matching the share picture.
+   Paper things stay paper: envelopes, cards and card backs, the How to play and info sheets, and the
+   story panel in the card view. They take the old cream tokens back so their text stays dark ink. */
+.env,.mini-env,.cf,.backf,.tray .tr.back,.big .cardsout,.howcard,.ctext{
+  --paper:#EDE4CF;--paper2:#E3D8BE;--env:#F3EBD6;--ink:#1A1612;--navy:#3D5884;--red:#B04A3E;--olive:#5E6B3A;--brass:#B8862B;--violet:#5B4B8A;
+  --mute:#5f5849;--line:#C9BC9E;color-scheme:light}
+body{background-color:#17140f;background-attachment:fixed;
+  background-image:radial-gradient(ellipse at 50% 46%,rgba(176,74,62,.19),rgba(0,0,0,0) 70%),repeating-linear-gradient(0deg,rgba(237,228,207,.035) 0 1px,transparent 1px 6px)}
+.top,.statrow{border-bottom-color:#B04A3E}
+/* buttons keep the brand red with cream lettering */
+.btn{background:#B04A3E;color:#FFF4E2}.btn.alt{background:transparent;color:var(--red);border-color:var(--red)}
+.btn.danger{background:#a8382c}
+.nav button.fin:not(:disabled){background:#B04A3E}
+/* today's files */
+.slotbtn{background:#1c1814;border-color:#3b3229}
+.slotbtn.live,.slotbtn.pend{background:linear-gradient(180deg,#2a1914,#211512);border-color:var(--red);box-shadow:0 0 0 1px rgba(216,100,79,.2),0 0 18px rgba(216,100,79,.14)}
+.slotbtn.locked,.slotbtn.wait{background:transparent}
+.slotbtn.prio{background:linear-gradient(180deg,#3a2c1a,#2e2214);border-color:#C9A774}.slotbtn.prio b,.slotbtn.prio.live::after{color:#E3C48E}
+.slotbtn.starter{background:#18211a;border-color:#6f9a62}.slotbtn.starter b,.slotbtn.starter.live::after{color:#a9cf98}
+.slotbtn.comm{background:#0e0c0a}
+.signbar{background:#241713}
+.icptile{background:#0b1220;border-color:#4d6ea3}
+/* tiles, bars, rows */
+.tile,.allbtn{background:#1c1814;border-color:#3b3229}.allbtn{border-color:#5a4f41}
+.bar{background:#2a241d;border-color:#3b3229}.rbar,.srow i{background:#2e2820}
+.srow,.syear summary{background:#1c1814}.srow.go:active{background:#2a241d}
+.srow small.cc{color:#a9c77a}
+.stp{color:#d3b07a}
+.filters button.on,.filters .subj.on select{background:#EDE4CF;color:#17140f;border-color:#EDE4CF}
+/* thumbnails sit on the desk; the better finishes give off a little light */
+.mini .thumb,.tray .tr img{box-shadow:0 6px 16px rgba(0,0,0,.55)}
+.mini .thumb.f-gold,.tray .tr img.f-gold{border-color:#d9ae3a;box-shadow:0 0 14px rgba(227,190,80,.35),0 6px 16px rgba(0,0,0,.55)}
+.mini .thumb.f-silver,.tray .tr img.f-silver{border-color:#c3c8cf;box-shadow:0 0 12px rgba(220,225,232,.22),0 6px 16px rgba(0,0,0,.55)}
+.mini .thumb.f-topsecret,.mini .thumb.flash,.tray .tr img.f-topsecret,.tray .tr img.flash{box-shadow:0 0 14px rgba(160,190,255,.3),0 6px 16px rgba(0,0,0,.55)}
+.mini.sealed .thumb{background:repeating-linear-gradient(135deg,#1e1a16 0 10px,#191612 10px 20px);color:#4a4136}
+.fd i{border-color:#5a4f41}.fd b{color:#5a4f41}
+/* envelopes and cards cast deeper shadows on the dark desk */
+.env{box-shadow:0 2px 0 #a99b78,0 16px 34px rgba(0,0,0,.6)}
+.env.deep{box-shadow:0 0 0 3px var(--navy),0 2px 0 #a99b78,0 16px 34px rgba(0,0,0,.6)}
+.env.starter{box-shadow:0 0 0 3px #2f5a2a,0 2px 0 #a99b78,0 16px 34px rgba(0,0,0,.6)}
+.env.commem{box-shadow:0 0 0 1px #6e520f,0 0 30px rgba(227,194,94,.18),0 16px 34px rgba(0,0,0,.7)}
+.env .seal{color:#EDE4CF}
+.landenv .env{box-shadow:0 2px 0 #a99b78,0 18px 40px rgba(0,0,0,.7),0 0 60px rgba(216,100,79,.12)}
+.backf{box-shadow:0 14px 30px rgba(0,0,0,.6)}
+.cf .frame{box-shadow:0 14px 34px rgba(0,0,0,.7)}
+.cf.f-gold .frame{box-shadow:0 0 0 1px rgba(255,220,120,.25),0 0 46px rgba(227,190,80,.28),0 14px 34px rgba(0,0,0,.7)}
+.cf.f-topsecret .frame{box-shadow:0 0 0 1px rgba(200,215,255,.25),0 0 46px rgba(160,190,255,.22),0 14px 34px rgba(0,0,0,.7)}
+.cf.flash .frame{box-shadow:0 0 40px rgba(200,170,255,.22),0 14px 34px rgba(0,0,0,.7)}
+/* card view: finish slots, and the story on a paper panel */
+.s4:not(.off){color:#FFF8EA}.s4.f-topsecret{color:#B04A3E}
+.s4.off{border-color:#4a4036}.s4.cur{outline-color:#EDE4CF}
+.history .fin,.tag,.backf .badge,.tray .tr.back i{color:#FFF8EA}
+.ctext{background:#EDE4CF;color:#1A1612;padding:18px 18px 16px;border-radius:3px;box-shadow:0 12px 30px rgba(0,0,0,.55)}
+.icons a{background:#f4ecd8}
+/* toolbar buttons that are switched off */
+.tbtn.off,.sndbtn.off{color:#8f8573;border-color:#5a4f41}
+/* overlays */
+.how{background:rgba(8,6,5,.7)}
+.howcard{color:#1A1612;border-color:#cbbd98;box-shadow:0 14px 40px rgba(0,0,0,.6)}
+.promo{background:rgba(18,15,12,.96)}
+.toast,.coachp,.fnote{background:#EDE4CF;color:#1A1612}
+.fnote button{background:#17140f;color:#EDE4CF}
+.tourdim{background:rgba(8,6,5,.66)}
+.tourlit{box-shadow:0 0 0 5px var(--paper),0 0 0 8px var(--red)}
+.shpc.off b{background:#2a241d;border-color:#5a4f41}
+.landsmall{color:#a99d83}
