@@ -1,0 +1,127 @@
+{
+  "num": 42,
+  "id": "1945-11-06-fireball",
+  "title": "The first jet lands aboard",
+  "date": "1945-11-06",
+  "time": "17:00",
+  "place": "USS Wake Island · at sea",
+  "series": "blue",
+  "pull": "Saved by the jet in the tail",
+  "format": "photo",
+  "short": "FR-1 Fireball",
+  "facts": [
+    {
+      "text": "On 6 November 1945, Ensign Jake C. West of Fighting Squadron 41 landed a Ryan FR-1 Fireball on the escort carrier USS Wake Island (CVE-65). It was the first landing of a jet powered aircraft on an aircraft carrier.",
+      "sources": [
+        0,
+        1
+      ]
+    },
+    {
+      "text": "The Fireball had two engines. A Wright R-1820 Cyclone radial engine turned a propeller in the nose, and a General Electric J31 turbojet sat in the tail, fed by air intakes in the wing roots.",
+      "sources": [
+        1,
+        2
+      ]
+    },
+    {
+      "text": "The mixed power idea was a safety net. Early jets were slow to speed up, which was dangerous when a carrier pilot had to wave off and go around, so the piston engine handled takeoffs and landings while the jet added speed.",
+      "sources": [
+        1,
+        2
+      ]
+    },
+    {
+      "text": "Pilots normally shut the jet down for landing and came aboard on the propeller alone.",
+      "sources": [
+        1
+      ]
+    },
+    {
+      "text": "On his approach, West's radial engine failed. He feathered the dead propeller and restarted the jet, a process that could take about 30 seconds, while his plane sank toward the sea.",
+      "sources": [
+        0,
+        1
+      ]
+    },
+    {
+      "text": "He came aboard on jet power alone, and his tailhook caught the last arresting wire.",
+      "sources": [
+        0,
+        1
+      ]
+    },
+    {
+      "text": "The landing was an accident, not a planned test. Some historians argue the failing piston engine may still have given a little power.",
+      "sources": [
+        1,
+        2
+      ]
+    },
+    {
+      "text": "On 3 December 1945, Lieutenant Commander Eric \"Winkle\" Brown of the Royal Navy landed a de Havilland Sea Vampire on HMS Ocean, the first planned landing and takeoff of a pure jet on a carrier.",
+      "sources": [
+        1,
+        3
+      ]
+    },
+    {
+      "text": "On 21 July 1946, Lieutenant Commander James Davidson landed the McDonnell XFD-1 Phantom on USS Franklin D. Roosevelt (CVB-42), the first pure jet landing on an American carrier.",
+      "sources": [
+        1,
+        4,
+        5
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "This Day in Airpower: November 6, 1945, Air and Space Forces Magazine",
+      "url": "https://www.airandspaceforces.com/this-day-in-airpower/november-06-1945/"
+    },
+    {
+      "title": "The Forgotten Fireball Made The First Jet-Powered Carrier Landing By Accident, The War Zone",
+      "url": "https://www.twz.com/36750/the-forgotten-fireball-made-the-first-jet-powered-carrier-landing-by-accident"
+    },
+    {
+      "title": "Ryan FR Fireball, Wikipedia (cites Ginter 1995; Swanborough and Bowers 1990)",
+      "url": "https://en.wikipedia.org/wiki/Ryan_FR_Fireball"
+    },
+    {
+      "title": "First landing on an aircraft carrier (jet), Guinness World Records",
+      "url": "https://www.guinnessworldrecords.com/world-records/first-landing-on-an-aircraft-carrier/"
+    },
+    {
+      "title": "FH-1 Phantom, National Naval Aviation Museum (NHHC)",
+      "url": "https://history.navy.mil/content/history/museums/nnam/explore/collections/aircraft/f/fh-1-phantom.html"
+    },
+    {
+      "title": "McDonnell FH Phantom, Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/McDonnell_FH_Phantom"
+    }
+  ],
+  "photo": "photos/1945-11-06-fireball.jpg",
+  "photoUrl": "https://commons.wikimedia.org/wiki/File:Ryan_FR-1_Fireballs_aboard_USS_Ranger_(CV-4),_in_May_1945_(USN_1053774).jpg",
+  "photoNote": "Ryan FR-1 Fireballs on the flight deck of USS Ranger during carrier qualifications, May 1945. U.S. Navy photo 1053774 (NHHC copy on Wikimedia Commons), public domain. Six months before Ensign West's landing on USS Wake Island; no photo of that landing was found.",
+  "photoCredit": "Ryan FR-1 Fireballs aboard USS Ranger, May 1945. U.S. Navy photo 1053774, public domain.",
+  "videoPhotos": [],
+  "somber": false,
+  "themes": {
+    "who": [
+      "airmen"
+    ],
+    "story": [
+      "first or barrier broken",
+      "invention or machine"
+    ],
+    "photo": "a machine",
+    "theater": "Pacific",
+    "branch": [
+      "Navy"
+    ],
+    "nations": [
+      "US",
+      "Britain"
+    ]
+  }
+}

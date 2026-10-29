@@ -1,0 +1,158 @@
+{
+  "num": 36,
+  "id": "1944-11-03-fugo-spec",
+  "title": "Fu-Go balloon bomb",
+  "date": "1944-11-03",
+  "time": "17:00",
+  "place": "Honshu · Japan",
+  "series": "blue",
+  "pull": "Paper, paste and hydrogen",
+  "format": "spec",
+  "specTitle": "Fu-Go balloon bomb",
+  "specs": [
+    [
+      "Diameter",
+      "About 33 ft (10 m)"
+    ],
+    [
+      "Lift gas",
+      "Hydrogen"
+    ],
+    [
+      "Envelope",
+      "Kozo mulberry paper"
+    ],
+    [
+      "Glue",
+      "Konnyaku paste"
+    ],
+    [
+      "Main bomb",
+      "15 kg antipersonnel"
+    ],
+    [
+      "Launched",
+      "Over 9,000"
+    ]
+  ],
+  "short": "Fu-Go",
+  "facts": [
+    {
+      "text": "The Fu-Go was an unmanned hydrogen balloon about 33 feet (10 meters) across, holding about 19,000 cubic feet of gas when full.",
+      "sources": [
+        0,
+        3
+      ]
+    },
+    {
+      "text": "Its envelope was washi paper made from the bark of the kozo, or paper mulberry, bush. Four to five thin layers were glued together.",
+      "sources": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "text": "The glue was a paste made from konnyaku, a starchy root also eaten as food.",
+      "sources": [
+        0,
+        4
+      ]
+    },
+    {
+      "text": "Japanese schoolgirls were drafted to make the paper and glue the panels, working long shifts without being told what they were building.",
+      "sources": [
+        2,
+        4,
+        0
+      ]
+    },
+    {
+      "text": "Below the balloon hung a metal ring of sandbags. Barometers fired small charges to drop a sandbag whenever the balloon sank too low, and a valve vented hydrogen if it rose too high.",
+      "sources": [
+        0,
+        3
+      ]
+    },
+    {
+      "text": "When the ballast ran out, the ring released the bombs: usually one antipersonnel bomb of about 15 kg and several incendiaries. A final charge was meant to destroy the balloon.",
+      "sources": [
+        0,
+        5,
+        2
+      ]
+    },
+    {
+      "text": "U.S. geologists studied the sand in captured ballast bags and traced it to beaches in Japan.",
+      "sources": [
+        2,
+        0
+      ]
+    },
+    {
+      "text": "More than 9,000 were launched from Honshu between 3 November 1944 and April 1945. About 300 were found or seen in North America.",
+      "sources": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "text": "Japan ended the program in April 1945, short of paper and hydrogen and with no word that the balloons had done any damage.",
+      "sources": [
+        0,
+        2
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Fu-Go balloon bomb, Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Fu-Go_balloon_bomb"
+    },
+    {
+      "title": "Japan's Killer WWII Balloons, History.com",
+      "url": "https://history.com/articles/japans-killer-wwii-balloons"
+    },
+    {
+      "title": "Japanese Balloon Bombs (Fu-Go), Atomic Heritage Foundation, National Museum of Nuclear Science and History",
+      "url": "https://ahf.nuclearmuseum.org/ahf/history/japanese-balloon-bombs-fu-go/"
+    },
+    {
+      "title": "When Japanese balloon bombs landed in Sonoma County, Press Democrat",
+      "url": "https://www.pressdemocrat.com/article/news/when-japanese-balloon-bombs-landed-in-sonoma-county/"
+    },
+    {
+      "title": "In 1945, a Japanese Balloon Bomb Killed Six Americans, Five of Them Children, in Oregon, Smithsonian Magazine",
+      "url": "https://www.smithsonianmag.com/history/1945-japanese-balloon-bomb-killed-six-americansfive-them-children-oregon-180972259/"
+    },
+    {
+      "title": "Japanese Balloon Bombs (Fu-Go), Pacific Wrecks",
+      "url": "https://pacificwrecks.com/ordnance/balloon/"
+    }
+  ],
+  "photo": "photos/1944-11-03-fugo-spec.jpg",
+  "photoUrl": "https://catalog.archives.gov/id/404794462",
+  "photoNote": "A recovered Japanese paper balloon at NAS Moffett Field, California, 24 May 1945, showing the envelope, shroud lines and hanging gear. U.S. Navy photo 80-G-326353 (NARA 404794462), public domain. A different frame from the morning card. Cropped from the mount card and rotated upright. Alternative: the antipersonnel bomb, 80-G-326345.",
+  "photoCredit": "A captured Japanese paper balloon at NAS Moffett Field, California, 24 May 1945. U.S. Navy photo, NARA 80-G-326353, public domain.",
+  "videoPhotos": [],
+  "somber": false,
+  "themes": {
+    "who": [
+      "children",
+      "women"
+    ],
+    "story": [
+      "invention or machine"
+    ],
+    "photo": "a machine",
+    "theater": "home front",
+    "branch": [
+      "Army"
+    ],
+    "nations": [
+      "Japan",
+      "US"
+    ]
+  }
+}
