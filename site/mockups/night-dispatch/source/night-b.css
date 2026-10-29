@@ -1,0 +1,4 @@
+/* B: Darkroom, warm red safelight (matches the share picture) */
+:root{--paper:#17140f}
+body{background-color:#17140f;background-image:radial-gradient(ellipse at 50% 46%,rgba(176,74,62,.22),rgba(0,0,0,0) 70%),repeating-linear-gradient(0deg,rgba(237,228,207,.05) 0 1px,transparent 1px 6px)}
+.top,.statrow{border-bottom-color:#B04A3E}
