@@ -23,6 +23,7 @@ const iso = ms => new Date(ms).toISOString();
 
 // A: daily player, 35 days from Mon 9 Nov 2026, opening every envelope about an hour after it posts.
 let priorityEarned = 0, lastStreak = 0, deepOld = 0, weekdayOld = 0, nameThisDeep = 0, nameThisWeekday = 0, living = 0, archiveSlots = 0, slotCardOk = 0, opens = 0;
+const slotPos = [0, 0, 0];
 const start = Date.parse('2026-11-09T05:00:00Z'); // midnight Eastern
 for (let d = 0; d < 35; d++) {
   for (const hourEt of [11, 20]) { // 11 a.m. and 8 p.m. Eastern (an hour after each post, roughly)
@@ -37,8 +38,10 @@ for (let d = 0; d < 35; d++) {
       ok(pulls.length === 3, 'three cards');
       ok(pulls.every(p => p.signed), 'signed');
       const slotCard = cat.find(c => c.kind === 'dispatch' && c.postAt === e.at);
-      if (pulls[0].card === slotCard.id && pulls[0].variant === 'still') slotCardOk++;
-      for (const p of pulls.slice(1)) {
+      // The day's dispatch lands at a random spot (29 Oct 2026).
+      const si = pulls.findIndex(p => p.card === slotCard.id && p.variant === 'still');
+      if (si >= 0) { slotCardOk++; slotPos[si]++; }
+      for (const p of pulls.filter((_, j) => j !== si)) {
         archiveSlots++;
         const c = byId.get(p.card);
         ok(c.postAt <= iso(t), 'archive card already posted');
@@ -56,7 +59,8 @@ for (let d = 0; d < 35; d++) {
   lastStreak = st.player.streak;
 }
 ok(priorityEarned === Math.floor(35 / 3), `priority earned ${priorityEarned}`);
-ok(slotCardOk === opens, `slot card first and still in every daily (${slotCardOk}/${opens})`);
+ok(slotCardOk === opens, `slot card still in every daily (${slotCardOk}/${opens})`);
+ok(slotPos.every(n => n > 0), `slot card spot varies (${slotPos.join(" / ")})`);
 ok(weekdayOld === 0, `weekday archive older than 90 days: ${weekdayOld}`);
 ok(nameThisWeekday === 0, `Name This in weekday envelope: ${nameThisWeekday}`);
 console.log(`A: ${opens} envelopes, streak ${lastStreak}, priority earned ${priorityEarned}, living ${living}/${archiveSlots} archive slots (${(100*living/archiveSlots).toFixed(1)}%), deep pulls older than 90 days ${deepOld}, Name This in deep ${nameThisDeep}`);
