@@ -977,8 +977,7 @@
     const f = d && d.dfile;
     if (!opensFile(h)) {
       const canReq = signedIn() && !info.today && !info.flash;
-      const what = f ? [f.photo && 'a photo', 'a detail', f.video && 'the narrated story'].filter(Boolean) : ['a photo', 'a detail'];
-      box.innerHTML = `<button class="dbar sealed" id="dbarBtn"><span class="dic"><i>🔒\ufe0e</i></span><span class="dtx"><b>Declassified file</b><small>${esc(what.length > 2 ? what[0] + ', ' + what[1] + ', and ' + what[2] : what.join(' and '))} not in the post</small></span><span class="dst">GOLD OPENS</span></button>`;
+      box.innerHTML = `<button class="dbar sealed" id="dbarBtn"><span class="dic"><i>🔒\ufe0e</i></span><span class="dtx"><b>Declassified file</b><small>What the post left out</small></span><span class="dst">GOLD OPENS</span></button>`;
       $('dbarBtn').onclick = () => canReq ? confirmRequest(info, 'still', 'gold') : toast(info.today ? 'Pull this card in Gold to open its file.' : 'Hold this card in Gold or better to open its file.');
       return;
     }
