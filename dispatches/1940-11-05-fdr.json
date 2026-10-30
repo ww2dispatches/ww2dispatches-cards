@@ -132,6 +132,23 @@
   "photoUrl": "https://catalog.archives.gov/id/289578796",
   "photoNote": "Franklin D. Roosevelt speaks into microphones from his car, surrounded by crowds, during the 1940 campaign. NARA 79-XAR-9, public domain. From the campaign, not election night; no public domain photo of election night 1940 at Hyde Park was found (the FDR Library torchlight parade photos are from 1944). Quote check: the American Presidency Project has no transcript of these remarks, so the quote is verified word for word against the Evening Star staff report of 6 November 1940, page 2, which TIME matches; the United Press and AP versions differ slightly (listed in the slate).",
   "photoCredit": "Franklin D. Roosevelt speaks from his car during the 1940 campaign. NARA 79-XAR-9, public domain.",
+  "declassified": {
+    "fact": "Willkie did not stay a rival for long. In January 1941 he flew to Britain carrying a handwritten letter from Roosevelt to Churchill, dated 20 January, the day of the third inauguration. It quoted Longfellow's lines beginning \"Sail on, O Ship of State.\" Churchill read the verse aloud in a broadcast weeks later.",
+    "sources": [
+      {
+        "title": "Letter from President Roosevelt, 20 January 1941, International Churchill Society",
+        "url": "https://winstonchurchill.org/churchill-central/image/letter-from-president-roosevelt/"
+      },
+      {
+        "title": "Sail On, O Ship of State, FDR Presidential Library artifact collection",
+        "url": "https://fdr.artifacts.archives.gov/objects/26513/sail-on-o-ship-of-state"
+      },
+      {
+        "title": "Give us the tools and we will finish the job, World War II Today",
+        "url": "https://www.ww2today.com/p/41-02-09-give-us-the-tools-and-we-will-finish"
+      }
+    ]
+  },
   "videoPhotos": [],
   "somber": false,
   "themes": {

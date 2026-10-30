@@ -91,6 +91,25 @@
   },
   "short": "USS Kearny",
   "photoCredit": "USS Kearny in Boston Harbor after repairs, 31 March 1942. U.S. Navy Bureau of Ships 19-N-28745, public domain.",
+  "declassified": {
+    "fact": "Iceland had no dry dock, so the crew improvised. They moored Kearny alongside the repair ship USS Vulcan and flooded her port side until she listed enough to lift the torpedo hole out of the water. Vulcan's men cut away the torn plating and welded on a patch. Kearny sailed for Boston on Christmas Day 1941.",
+    "sources": [
+      {
+        "title": "Vulcan III (AR-5), Dictionary of American Naval Fighting Ships, Naval History and Heritage Command",
+        "url": "https://history.navy.mil/research/histories/ship-histories/danfs/v/vulcan-iii.html"
+      },
+      {
+        "title": "USS Kearny (DD-432), History of War",
+        "url": "https://www.historyofwar.org/articles/weapons_USS_Kearny_DD432.html"
+      }
+    ],
+    "photo": {
+      "file": "photos/1941-10-17-kearny.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Torpedoed_USS_Kearny_(DD-432)_alongside_USS_Monssen_(DD-436)_at_Iceland,_19_October_1941_(80-G-28788).jpg",
+      "credit": "USS Kearny at Reykjavik with the torpedo hole visible midships, 19 October 1941. U.S. Navy 80-G-28788, public domain.",
+      "caption": "Two days after the hit, Kearny lies at Iceland with the torpedo hole in her side still open."
+    }
+  },
   "addons": [],
   "hashtags": "#OnThisDay #WW2"
 }

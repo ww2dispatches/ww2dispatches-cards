@@ -111,6 +111,25 @@
   "focusY": 40,
   "short": "Draft Lottery",
   "photoCredit": "Secretary of War Henry L. Stimson, blindfolded, draws the first capsule of the draft lottery as President Roosevelt looks on, Washington, 29 October 1940. Harris and Ewing Collection, Library of Congress, public domain.",
+  "declassified": {
+    "fact": "The ceremony was packed with relics. The capsules were stirred with a wooden ladle said to be cut from a rafter of Independence Hall in Philadelphia, and 500 veterans of the First World War escorted them to the auditorium. Outside, warplanes flew past while Roosevelt spoke.",
+    "sources": [
+      {
+        "title": "October 16, 1940: Uncle Sam's got your number, guys, HistoryNet",
+        "url": "https://www.historynet.com/october-16-1940-uncle-sams-got-your-number-guys/"
+      },
+      {
+        "title": "The 1940 draft lottery, Carl Zebrowski",
+        "url": "https://jenk.com/Media_Legacy/Stephenson_%28Walter_James_%28Jim%29%29/1940_draft_lottery.html"
+      }
+    ],
+    "photo": {
+      "file": "photos/1940-10-29-draft-lottery.jpg",
+      "page": "https://catalog.archives.gov/id/6012221",
+      "credit": "Cartoon by Clifford K. Berryman, \"Waiting for his number\", 29 October 1940. National Archives, NARA 6012221, unrestricted.",
+      "caption": "Berryman's cartoon of the lottery shows Mars, the god of war, blindfolded at the bowl while Uncle Sam waits his turn."
+    }
+  },
   "addons": [
     "Did anyone in your family get the call in 1940 or 1941?"
   ],

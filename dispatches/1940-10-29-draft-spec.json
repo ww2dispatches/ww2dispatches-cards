@@ -86,6 +86,25 @@
   },
   "short": "Draft Lottery",
   "photoCredit": "President Roosevelt signs the Selective Training and Service Act, 16 September 1940. Public domain.",
+  "declassified": {
+    "fact": "Even Stimson's blindfold had a pedigree. It was a strip of yellow linen cut from the upholstery of the chair used at the signing of the Declaration of Independence. After he drew the capsule, he handed it straight to Roosevelt to read out.",
+    "sources": [
+      {
+        "title": "October 16, 1940: Uncle Sam's got your number, guys, HistoryNet",
+        "url": "https://www.historynet.com/october-16-1940-uncle-sams-got-your-number-guys/"
+      },
+      {
+        "title": "Tuesday, October 29, 1940: First American draftees selected, The Few Good Men",
+        "url": "https://thefewgoodmen.com/thefgmforum/threads/tuesday-october-29-1940-first-american-draftees-selected.19965"
+      }
+    ],
+    "photo": {
+      "file": "stories/img/draft_1940_drawing.jpg",
+      "page": "https://www.loc.gov/pictures/collection/hec/",
+      "credit": "Secretary of War Henry L. Stimson, blindfolded, draws the first capsule of the draft lottery as President Roosevelt looks on, Washington, 29 October 1940. Harris and Ewing Collection, Library of Congress, public domain.",
+      "caption": "Blindfolded, Stimson reaches into the bowl for the first capsule while Roosevelt waits at the microphones."
+    }
+  },
   "addons": [],
   "hashtags": "#OnThisDay #WW2"
 }

@@ -51,6 +51,25 @@
   },
   "short": "USS Kearny",
   "photoCredit": "USS Kearny at Reykjavik with the torpedo hole visible midships, 19 October 1941. U.S. Navy 80-G-28788, public domain.",
+  "declassified": {
+    "fact": "The U-boat that hit Kearny did not last the next spring. On 28 May 1942, British destroyers caught U-568 northeast of Tobruk in the Mediterranean and sank her with depth charges. All 47 men aboard survived and were taken prisoner, including her commander, Joachim Preuss.",
+    "sources": [
+      {
+        "title": "U-568, uboat.net",
+        "url": "https://uboat.net/boats/u568.htm"
+      },
+      {
+        "title": "German submarine U-568, Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/German_submarine_U-568"
+      }
+    ],
+    "photo": {
+      "file": "photos/1941-10-17-kearny-spec.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:USS_Kearny_(DD-432)_underway_in_1942.jpg",
+      "credit": "USS Kearny in Boston Harbor after repairs, 31 March 1942. U.S. Navy Bureau of Ships 19-N-28745, public domain.",
+      "caption": "Kearny back in service at Boston in March 1942, five months after the torpedo hit."
+    }
+  },
   "addons": [],
   "hashtags": "#OnThisDay #WW2"
 }
