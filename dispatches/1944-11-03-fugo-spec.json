@@ -135,6 +135,25 @@
   "photoUrl": "https://catalog.archives.gov/id/404794462",
   "photoNote": "A recovered Japanese paper balloon at NAS Moffett Field, California, 24 May 1945, showing the envelope, shroud lines and hanging gear. U.S. Navy photo 80-G-326353 (NARA 404794462), public domain. A different frame from the morning card. Cropped from the mount card and rotated upright. Alternative: the antipersonnel bomb, 80-G-326345.",
   "photoCredit": "A captured Japanese paper balloon at NAS Moffett Field, California, 24 May 1945. U.S. Navy photo, NARA 80-G-326353, public domain.",
+  "declassified": {
+    "fact": "On 10 March 1945 one balloon drifted into a power line in Washington State that fed the Hanford site, where the Manhattan Project was making plutonium for the atomic bomb. The short circuit cut Hanford's power. It was pure coincidence, since the balloons could not be aimed.",
+    "sources": [
+      {
+        "title": "Japanese Balloon Attack Almost Interrupted Building of First Atomic Bombs, Inside Science, American Institute of Physics",
+        "url": "https://www.aip.org/inside-science/japanese-balloon-attack-almost-interrupted-building-first-atomic-bombs"
+      },
+      {
+        "title": "Japanese Balloon Bombs (Fu-Go), Atomic Heritage Foundation, National Museum of Nuclear Science and History",
+        "url": "https://ahf.nuclearmuseum.org/ahf/history/japanese-balloon-bombs-fu-go/"
+      }
+    ],
+    "photo": {
+      "file": "photos/1944-11-03-fugo.jpg",
+      "page": "https://catalog.archives.gov/id/404794460",
+      "credit": "A captured Japanese balloon bomb reinflated at NAS Moffett Field, California, 24 May 1945. U.S. Navy photo, NARA 80-G-326352, public domain.",
+      "caption": "Navy men steady the hanging gear of a captured Fu-Go balloon, refilled for study beside a giant airship hangar at Moffett Field."
+    }
+  },
   "videoPhotos": [],
   "somber": false,
   "themes": {

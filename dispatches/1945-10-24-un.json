@@ -75,6 +75,21 @@
   },
   "short": "UN Charter",
   "photoCredit": "Wartime poster quoting the opening words of the United Nations Charter. NARA 516086, public domain.",
+  "declassified": {
+    "fact": "The UN came into being with a signature in Washington. On 24 October 1945 Secretary of State James Byrnes signed the protocol recording that 29 nations had deposited their ratifications. The paperwork sat with the United States because the Charter named its government the keeper of every ratification.",
+    "sources": [
+      {
+        "title": "Circular telegram from the Secretary of State, 24 October 1945, Foreign Relations of the United States 1945, Volume I, Office of the Historian",
+        "url": "https://history.state.gov/historicaldocuments/frus1945v01/d340"
+      }
+    ],
+    "photo": {
+      "file": "stories/img/un_stettinius_627.jpg",
+      "page": "https://catalog.archives.gov/search?q=208-UNC-627",
+      "credit": "Edward Stettinius signs the Charter for the United States as President Truman watches, Veterans War Memorial Building, San Francisco, June 1945. Office of War Information photo by Nick Parrino, NARA 208-UNC-627, public domain.",
+      "caption": "Secretary of State Edward Stettinius signs the Charter for the United States while President Truman looks on at left."
+    }
+  },
   "addons": [],
   "hashtags": "#OnThisDay #WW2"
 }

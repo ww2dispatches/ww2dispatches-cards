@@ -170,6 +170,25 @@
   "photoUrl": "https://commons.wikimedia.org/wiki/File:80-G-287019_Japanese_cruiser_NACHI.jpg",
   "photoNote": "The heavy cruiser Nachi circles at full speed under bomb hits and near misses in Manila Bay, 5 November 1944, photographed by a U.S. Navy carrier plane. U.S. Navy photo 80-G-287019 (NARA record 221950473 has no digital file; full size copy from Wikimedia Commons, supplied by Brian on 29 Oct). Mount border trimmed. The companion photo, 80-G-287018 (bomb splashes around Nachi), is photos/1944-11-05-manila-2.jpg; Brian attached them in that order, so if the two numbers turn out swapped, swap the credits.",
   "photoCredit": "The Japanese cruiser Nachi under attack by U.S. carrier planes in Manila Bay, 5 November 1944. U.S. Navy photo 80-G-287019, public domain.",
+  "declassified": {
+    "fact": "Vice Adm. John S. McCain, whose carriers struck Manila Bay, stood in the front row of senior officers at the Japanese surrender aboard USS Missouri on 2 September 1945. Four days later he died of a heart attack in Coronado, California, after a welcome home party. In 1949 Congress promoted him to full admiral.",
+    "sources": [
+      {
+        "title": "John S. McCain Sr., Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/John_S._McCain_Sr."
+      },
+      {
+        "title": "Admiral John S. McCain, Pacific Wrecks",
+        "url": "https://pacificwrecks.com/people/veterans/mccain/index.html"
+      }
+    ],
+    "photo": {
+      "file": "photos/1944-11-05-manila-2.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:80-G-287018_Japanese_cruiser_NACHI.jpg",
+      "credit": "Bomb splashes around the cruiser Nachi in Manila Bay, 5 November 1944. NARA 80-G-287018, public domain.",
+      "caption": "Bombs from U.S. carrier planes burst in the water around the cruiser Nachi as she races through Manila Bay."
+    }
+  },
   "videoPhotos": [
     {
       "file": "photos/1944-11-05-manila.jpg",

@@ -142,6 +142,25 @@
   "photoUrl": "https://catalog.archives.gov/id/404794460",
   "photoNote": "A recovered Japanese balloon, inflated beside a hangar at NAS Moffett Field, California, 24 May 1945. U.S. Navy photo 80-G-326352 (NARA 404794460), public domain. Cropped from the Bureau of Aeronautics mount card and rotated upright (the print was mounted sideways). Six months after the first launch.",
   "photoCredit": "A captured Japanese balloon bomb reinflated at NAS Moffett Field, California, 24 May 1945. U.S. Navy photo, NARA 80-G-326352, public domain.",
+  "declassified": {
+    "fact": "Decades after the war, women who had helped build the balloons as Japanese schoolgirls folded 1,000 paper cranes for Bly, Oregon, as a symbol of regret for the six lives lost there. The gesture grew out of letters between the women and Bly residents, brought together by Yuzuru \"John\" Takeshita.",
+    "sources": [
+      {
+        "title": "In 1945, a Japanese Balloon Bomb Killed Six Americans, Five of Them Children, in Oregon, Smithsonian Magazine",
+        "url": "https://www.smithsonianmag.com/history/1945-japanese-balloon-bomb-killed-six-americansfive-them-children-oregon-180972259/"
+      },
+      {
+        "title": "Forgiveness decades later, Lookout Magazine (2015)",
+        "url": "https://lookoutmag.com/2015/forgiveness-decades-later/"
+      }
+    ],
+    "photo": {
+      "file": "photos/1944-11-03-fugo-spec.jpg",
+      "page": "https://catalog.archives.gov/id/404794462",
+      "credit": "A captured Japanese paper balloon at NAS Moffett Field, California, 24 May 1945. U.S. Navy photo, NARA 80-G-326353, public domain.",
+      "caption": "A recovered Fu-Go balloon floats on its shroud lines at Moffett Field as Navy men inspect the gear below."
+    }
+  },
   "videoPhotos": [
     {
       "page": "https://catalog.archives.gov/id/404794464",

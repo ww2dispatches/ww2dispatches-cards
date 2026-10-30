@@ -42,6 +42,19 @@
   },
   "short": "Earth from Space",
   "photoCredit": "The first photograph of Earth from space, taken by a camera aboard a V-2 rocket over White Sands, New Mexico, 24 October 1946. U.S. Army, public domain.",
+  "declassified": {
+    "fact": "The camera was set to snap one frame every second and a half. It was rigged by Clyde Holliday, an engineer at the Johns Hopkins Applied Physics Laboratory, who later wrote in National Geographic that the pictures showed how Earth would look to visitors from another planet \"coming in on a space ship.\"",
+    "sources": [
+      {
+        "title": "The First Photo From Space, Air & Space Magazine, Smithsonian",
+        "url": "https://www.smithsonianmag.com/air-space-magazine/the-first-photo-from-space-13721411/"
+      },
+      {
+        "title": "24 October 1946, This Day in Aviation",
+        "url": "https://www.thisdayinaviation.com/24-october-1946/"
+      }
+    ]
+  },
   "addons": [],
   "hashtags": "#OnThisDay #WW2"
 }
