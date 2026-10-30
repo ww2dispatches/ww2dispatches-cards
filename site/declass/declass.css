@@ -1015,3 +1015,4 @@ html.ztrial #stage2{cursor:zoom-in}
 .big.go .cardsclip .cardsout{transform:translate(-50%,-186%)}
 .big .env::before{content:"";position:absolute;inset:0;clip-path:polygon(0 0,100% 0,50% 63%);background:linear-gradient(180deg,rgba(40,28,14,.42),rgba(40,28,14,.12));opacity:0;transition:opacity .6s .4s;z-index:1;pointer-events:none}
 .big.go .env::before{opacity:1}
+.cup .cupln{align-items:baseline} /* tag text and the line share one baseline, so they read level (30 Oct 2026) */
