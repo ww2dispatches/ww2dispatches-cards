@@ -29,8 +29,8 @@ Big dates already have people searching and talking, so these get the strongest 
 * **19 Nov 1942, Operation Uranus** encircles the Germans at Stalingrad. Battle Lines. Batch of 15 to 21 Nov.
 * **20 Nov 1945, the Nuremberg trial opens.** Statecraft, Living Card candidate (Signal Corps film of the courtroom). Callback to No. 003. Batch of 15 to 21 Nov.
 * **28 Nov 1943, Tehran Conference opens.** Statecraft. Batch of 22 to 28 Nov. Thanksgiving is 26 Nov 2026; a verified Home Front Thanksgiving story is a good fit that week.
-* **7 Dec 1941, Pearl Harbor, the 85th anniversary** (Mon 7 Dec 2026). **The first Flash card** (Flash cards plan). Major dispatch with the iconic photo and Navy film. Start the footage hunt in the November batches so it isn't rushed. Batch of 6 to 12 Dec (research Wed 2 Dec, videos Thu 3 Dec, cards Fri 4 Dec).
-* **Battle of the Bulge** (Dec 1944) comes next; add it here when the December batches are planned.
+* **7 Dec 1941, Pearl Harbor, the 85th anniversary** (Mon 7 Dec 2026). **The first Flash card** (Flash cards plan). Major dispatch with the iconic photo and Navy film. Start the footage hunt in the November batches so it isn't rushed. Batch of 6 to 12 Dec (research Wed 2 Dec, videos Thu 3 Dec, cards Fri 4 Dec). The day's extra posts are added by hand after the cards run, not by the runs (see Pearl Harbor Flash day plan).
+* **16 Dec 1944, the Battle of the Bulge**, the second Flash card (Wed 16 Dec 2026). Batch of 13 to 19 Dec (research Wed 9 Dec); its art is due in `flash/` by Wed 2 Dec (Flash prep calendar).
 
 ## Open decisions
 Each open question lives here only. The Tuesday analytics review supplies the numbers for each one and files a Schedule Board task when the data is ready for Brian to decide.
@@ -81,17 +81,24 @@ These can be tested first in the 5 p.m. rotation at no extra volume.
 A long term idea, agreed in principle 25 Oct 2026, not yet built into the weekly runs.
 * **The name:** FLASH, the top designation on the WW2 news wires (AP's D Day flash in 1944 broke into network radio within seconds). It sits above the PRIORITY envelopes in Declass.
 * **What it is:** the one card type that spans all four series at once (Battle Lines, Home Front, Blueprint, Statecraft). Rare, and a big moment when it lands.
-* **When (decided):** Flash days are the Declass commemorative days, so a Flash card and a commemorative file always arrive together. The set list, ten Flash cards (1 and 2 September are two separate Flash cards sharing one commemorative file):
-  1. 19 Feb 1945, the landing on Iwo Jima
-  2. 8 May 1945, VE Day
-  3. 4 Jun 1942, the Battle of Midway
-  4. 6 Jun 1944, D Day
-  5. 15 Aug 1945, VJ Day (Japan announces its surrender)
-  6. 1 Sep 1939, Germany invades Poland
-  7. 2 Sep 1945, the formal surrender aboard USS Missouri
-  8. 15 Sep 1940, Battle of Britain Day
-  9. 7 Dec 1941, Pearl Harbor
-  10. 16 Dec 1944, the Battle of the Bulge begins
+* **When (decided; at least one a month since 30 Oct 2026):** Flash days are the Declass commemorative days, so a Flash card and a commemorative file always arrive together. **Sixteen Flash cards a year on fifteen commemorative files** (1 and 2 September are two Flash cards sharing one file). Flash days are turning points, never atrocities (a sparkly always Top Secret collectible is wrong for, say, Auschwitz or Hiroshima; those get a somber dispatch). The set list:
+  1. 31 Jan 1943, Paulus surrenders at Stalingrad (from 2027)
+  2. 19 Feb 1945, the landing on Iwo Jima
+  3. 7 Mar 1945, the bridge at Remagen is captured (from 2027)
+  4. 18 Apr 1942, the Doolittle Raid (from 2027)
+  5. 8 May 1945, VE Day
+  6. 4 Jun 1942, the Battle of Midway
+  7. 6 Jun 1944, D Day
+  8. 16 Jul 1945, the Trinity test (from 2027)
+  9. 15 Aug 1945, VJ Day (Japan announces its surrender)
+  10. 1 Sep 1939, Germany invades Poland
+  11. 2 Sep 1945, the formal surrender aboard USS Missouri
+  12. 15 Sep 1940, Battle of Britain Day
+  13. 25 Oct 1944, Leyte Gulf, the largest naval battle in history (from 2027; a fresh angle, not a repeat of the Taffy 3 card)
+  14. 20 Nov 1943, Tarawa (from 2027; chosen over Operation Torch, Taranto, and the Nuremberg trial for the Marine Corps' real wartime color film, *With the Marines at Tarawa*, whose public domain status is to be confirmed)
+  15. 7 Dec 1941, Pearl Harbor
+  16. 16 Dec 1944, the Battle of the Bulge begins
+  The six marked "from 2027" were added 30 Oct 2026 to fill the empty months; they start in 2027 so Pearl Harbor stays the first Flash card. All sixteen get the extra posts hand session.
 * **Debut (decided):** Pearl Harbor, Mon 7 Dec 2026, the 85th anniversary. **Everything the three runs need is built and pushed (25 Oct 2026):** the renderer's full art layout (`drawFlash` in `renderer/card.html`, both sizes, with a FLASH stamp on the video frames), the `flash` series value in the logs, the home page, the analytics, and the Declass catalog, the game's server and page changes, the prepared art and record in `flash/`, and the rules in the Research doc ("Flash days"), the Cards doc ("The Flash card"), and the Videos doc. The Wednesday 2 Dec research run reads those docs as its rulebook, so no change to the scheduled tasks themselves was needed.
 * **In the Declass dossier (decided, built):** Name This is a half width tile like the four series, and a **Flash** tile sits beside it, edged in the Top Secret holographic tint. It shows "None posted yet" until the first Flash posts, then opens the Flash section. The catalog marks Flash cards with a `flash` field; All cards has a Flash filter.
 * **Always Top Secret (decided):** a Flash card only ever comes in the Top Secret finish, with the holographic frame and sheen, which makes it unlike any other card in the game. It has a single finish slot. **No worldwide serial** (decided): every player gets one, and it should never be a race to log on first.
@@ -100,9 +107,51 @@ A long term idea, agreed in principle 25 Oct 2026, not yet built into the weekly
 * **In Declass (decided 25 Oct 2026):** take **A, borderless**. No frame and no rim: the art runs to every edge with rounded corners and a drop shadow, and a soft holographic shine drifts across the art and follows a finger or the phone's tilt. A thin holo rim (take B) and an etched line foil (take C) were passed over. If a future Flash photo has a pale edge that blurs into the cream dossier, research picks a darker crop rather than adding a rim. No swirl or wavy foil patterns, to stay clear of Pokémon's look.
 * **Card layout from the mockup:** WW2 DISPATCHES wordmark and dispatch number top left on a dark fade, a cream FLASH tape stamp top right, the big date, place, and pull line at the bottom on a dark fade, handle bottom right. The same art and type serve the posted card.
 * **Proposed, not yet decided:** on the posted card, a FLASH stamp in place of the series stamp; the 8 a.m. card on a Flash day becomes the Flash, with a four slide Instagram carousel (one slide per series angle); in Declass a Flash card counts toward all four series collections and gets its own reveal sound (a teletype burst).
-* **Every year (decided):** each Flash date gets a new, revamped Flash card every year, with a new angle, new graphics, and a new image, so ten new Flash cards arrive each year. This is the one exception to the research rule that never repeats an event: the event repeats, the card never does.
-* **Planned (Brian, 25 Oct 2026):** Flash days will carry additional posts across all platforms. Brian is working that out in a separate chat; until it is decided, the weekly runs keep the normal slot layout on Flash days.
+* **Every year (decided):** each Flash date gets a new, revamped Flash card every year, with a new angle, new graphics, and a new image, so sixteen new Flash cards arrive each year. This is the one exception to the research rule that never repeats an event: the event repeats, the card never does.
+* **Extra posts on Flash days (decided 25 Oct 2026):** the weekly runs build only the normal slots (8 a.m. Flash card, noon video, 5 p.m. card). Brian and Claude add the extra posts by hand in Buffer after the Friday cards run, in a working session together, and shift the normal posts' times if needed. The scheduled tasks are never changed for a Flash day. The first plan is below.
 * **Open:** the Flash reveal in the envelope (today it gets the Top Secret glow and fanfare; a teletype burst is the idea for later); a line for the attorney consult on the Flash design against Pokémon's trade dress; the 1 and 2 September file opens on 1 September, so a player who opens it that day gets only the Poland card (moving that file's opening to 2 September would give both; decide before September 2027); preparing each year's Flash art a few weeks ahead (the prepared art and record go in `flash/`; the Research doc says what happens if one is missing).
+
+* **Incoming Flash traffic (decided and built 30 Oct 2026):** the Declass home screen shows the next three Flash days as sealed cards (a cream FLASH tape, "Sealed until 7 Dec", the event name, and "In 38 days"), names and dates only, never the art before it posts. The Field manual lists all sixteen. The server's `flashUpcoming` serves the list from the commemorative calendar in `functions/_lib/envelopes.js`, signed in or not.
+
+### Flash prep calendar
+Each Flash card needs its art chosen, colorized in the C2 Kodachrome look, and approved by Brian, then saved with its prepared record in `flash/` (`flash/README.md`) **by the Wednesday before its research run**. Each also gets an extra posts plan for the hand session after its Friday cards run. Research dates come from the batch week (Sunday to Saturday) the Flash day falls in.
+| Flash day | Art and record in `flash/` by | Research | Cards run | Hand session |
+|---|---|---|---|---|
+| Pearl Harbor, Mon 7 Dec 2026 | done (approval pending) | Wed 2 Dec | Fri 4 Dec | Sat 5 Dec |
+| The Bulge, Wed 16 Dec 2026 | Wed 2 Dec | Wed 9 Dec | Fri 11 Dec | Sat 12 Dec |
+| Stalingrad, Sun 31 Jan 2027 | Wed 20 Jan | Wed 27 Jan | Fri 29 Jan | Sat 30 Jan |
+| Iwo Jima, Fri 19 Feb 2027 | Wed 3 Feb | Wed 10 Feb | Fri 12 Feb | Sat 13 Feb |
+| Remagen, Sun 7 Mar 2027 | Wed 24 Feb | Wed 3 Mar | Fri 5 Mar | Sat 6 Mar |
+| Doolittle Raid, Sun 18 Apr 2027 | Wed 7 Apr | Wed 14 Apr | Fri 16 Apr | Sat 17 Apr |
+| VE Day, Sat 8 May 2027 | Wed 21 Apr | Wed 28 Apr | Fri 30 Apr | Sat 1 May |
+| Midway, Fri 4 Jun 2027 | Wed 19 May | Wed 26 May | Fri 28 May | Sat 29 May |
+| D Day, Sun 6 Jun 2027 | Wed 26 May | Wed 2 Jun | Fri 4 Jun | Sat 5 Jun |
+| Trinity, Fri 16 Jul 2027 | Wed 30 Jun | Wed 7 Jul | Fri 9 Jul | Sat 10 Jul |
+| VJ Day, Sun 15 Aug 2027 | Wed 4 Aug | Wed 11 Aug | Fri 13 Aug | Sat 14 Aug |
+| Poland and the surrender, Wed 1 and Thu 2 Sep 2027 | Wed 18 Aug | Wed 25 Aug | Fri 27 Aug | Sat 28 Aug |
+| Battle of Britain Day, Wed 15 Sep 2027 | Wed 1 Sep | Wed 8 Sep | Fri 10 Sep | Sat 11 Sep |
+| Leyte Gulf, Mon 25 Oct 2027 | Wed 13 Oct | Wed 20 Oct | Fri 22 Oct | Sat 23 Oct |
+| Tarawa, Sat 20 Nov 2027 | Wed 3 Nov | Wed 10 Nov | Fri 12 Nov | Sat 13 Nov |
+| Pearl Harbor, Tue 7 Dec 2027 | Wed 24 Nov | Wed 1 Dec | Fri 3 Dec | Sat 4 Dec |
+
+**The Bulge is the tight one:** its art has to be ready by Wed 2 Dec, the same day Pearl Harbor's research runs. Do it in November.
+
+### Pearl Harbor Flash day plan (Mon 7 Dec 2026)
+**For the hand session only. The scheduled runs do not act on this section;** they build the normal three slots as usual. Working session: Sat 5 Dec, after the Fri 4 Dec cards run (a reminder is set).
+* **Only one full art card:** the 8 a.m. Flash card. Nothing added by hand takes a dispatch number or joins Declass.
+* **Flash Traffic bulletins:** short text posts on X and Threads, each posted 85 years to the minute after the event on the Hawaii clock (the convention the memorial ceremonies use; Hawaii ran a half hour off modern time in 1941). Two or three sentences each, wire style, with a timestamp. Somber: no questions, soft asks, newsletter or Declass lines. Times below are Mountain (Hawaii plus 3 hours), to be re-verified in the session:
+  * 6:50 a.m. (3:50 a.m. Hawaii): the minesweeper Condor sights a periscope off the harbor entrance. Some sources say 3:42; say "before dawn" unless settled.
+  * 9:37 a.m. (6:37): USS Ward sights a midget submarine and attacks, America's first shots of the Pacific War.
+  * 10:02 a.m. (7:02): Opana radar detects the incoming formation; the report is taken for B 17s due in from the mainland.
+  * 10:55 a.m. (7:55): the attack begins. "AIR RAID PEARL HARBOR. THIS IS NOT DRILL."
+  * 11:10 a.m. (about 8:10): Arizona explodes; 1,177 of her crew are killed.
+  * About 12:30 p.m. (shortly after 9:30): Shaw's forward magazine explodes, the moment in the Flash card's art; this bulletin can point back to the card. Sits close to the noon video.
+  * 12:20 p.m. (2:20 p.m. Eastern): Nomura and Kurusu hand Hull Japan's note in Washington, after the attack has begun. Statecraft angle.
+  * 12:26 p.m. (about 2:26 p.m. Eastern): WOR breaks into the Giants vs. Dodgers football broadcast; America finds out. Home Front angle.
+* **Moment of silence at 10:55 a.m. (7:55 Hawaii), all six channels:** a plain black image reading "7:55 a.m., Hawaii. 85 years ago." with no caption beyond that. Not a card, no number.
+* **5 p.m. card (normal run):** a Pearl Harbor tie in picked by the Wednesday research run as usual; strong options are a Photo of the Day of the "NOT DRILL" dispatch (National Archives) or a Spec Sheet on the SCR 270 radar at Opana.
+* **Noon video (normal run):** the Living Card from Navy film, as planned.
+* **In the session:** re-verify every time against Navy and Park Service sources, draft the bulletins and the silence image, schedule them in Buffer, and move any normal post that collides.
 
 ## Subscriptions plan
 A long term goal, not a short term one. The model is @VoicesofWW2's X subscription ($2 a month, exclusive posts, "tell me what content you'd like to see more of"). On 16 Oct 2026 it showed 15 subscribers, about $30 a month before fees, so subscriptions only pay once the account is large. Growth comes first.
@@ -135,6 +184,8 @@ Why: old social posts are close to invisible because feeds favor new content, so
 * Later options: search, a printable "this day" card shop on Ko-fi, and a classroom friendly version of the archive.
 
 ## Changelog
+* 30 Oct 2026: Flash days now at least one a month: six dates added from 2027 (Stalingrad, Remagen, the Doolittle Raid, Trinity, Leyte Gulf, Tarawa) for sixteen Flash cards a year, all with the extra posts session; Pearl Harbor stays first. Flash prep calendar added. Incoming Flash traffic built on the Declass home screen.
+* 25 Oct 2026 (Pearl Harbor extras): Flash day extra posts decided as a hand session after the Friday cards run, with no changes to the scheduled tasks; the Pearl Harbor Flash day plan added (Flash Traffic bulletins on the Hawaii clock, a 7:55 moment of silence, one full art card only).
 * 15 Oct 2026: Roadmap started; Archive plan and Newsletter plan added; automatic weekly prep decided.
 * 16 Oct 2026: Two cards a day from launch; Subscriptions plan added (long term goal); Buffer upgraded to Essentials; Ko-fi and the newsletter live; the anniversary plan drawn up.
 * 18 Oct 2026: Name This added at 10 a.m. (moved off noon); Metricool retired; the X film reply dropped.

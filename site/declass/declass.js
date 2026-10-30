@@ -307,6 +307,13 @@
       nextText = 'Next file arrives ' + when + localTime(ST.next);
     }
     $('nextFile').textContent = nextText;
+    // Incoming Flash traffic (30 Oct 2026): the next Flash days, names and dates only. The card itself
+    // stays sealed until it posts.
+    const fx = (ST && ST.flashNext) || [];
+    const untilText = iso => { const d = Math.round((new Date(iso).setHours(0, 0, 0, 0) - new Date().setHours(0, 0, 0, 0)) / 86400000);
+      return d <= 0 ? 'Today' : d === 1 ? 'Tomorrow' : 'In ' + d + ' days'; };
+    $('flashNext').innerHTML = fx.length ? `<h2>Incoming Flash traffic <small>Always Top Secret · everyone gets one</small></h2><div class="fxrow">${fx.map(e =>
+      `<div class="fx"><div class="fxcard"><span class="fxtape">FLASH</span><span class="fxseal">Sealed until<br>${esc(new Date(e.at).toLocaleDateString([], { day: 'numeric', month: 'short' }))}</span><span class="holo"></span></div><b>${esc(e.name)}</b><span>${esc(untilText(e.at))}</span></div>`).join('')}</div>` : '';
     if (window.Intercept) window.Intercept.tile($('icpSlot'));
 
     // the last envelope's cards

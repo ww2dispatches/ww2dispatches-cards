@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Special+Elite&display=swap">
-<link rel="stylesheet" href="/declass/declass.css?v=4f9e6e90">
+<link rel="stylesheet" href="/declass/declass.css?v=8f5fdcdc">
 <link rel="stylesheet" href="/declass/intercept.css?v=f4f5eba2">
 </head>
 <body>
@@ -70,6 +70,7 @@
   <div id="files"></div>
   <div class="signbar" id="signBar" hidden><b>Sign in to open today's files</b><span>Your starter pack is waiting in this browser. Save your dossier to keep it and collect every day.</span><div class="gslot" id="gHome"></div></div>
   <p class="nextfile" id="nextFile"></p>
+  <div id="flashNext"></div>
   <div id="icpSlot"></div>
   <div id="recent"></div>
 
@@ -213,7 +214,7 @@
     <div class="fmenv" id="fm-daily"><span class="mini-env"></span><div><b>Morning and evening envelopes</b><p>One comes out with each card we post, open for 24 hours. The morning envelope holds that day's dispatch and two cards from the last 90 days of the archive. The evening envelope holds three archive cards, so the day's evening card has to be found or requested.</p></div></div>
     <div class="fmenv" id="fm-sunday"><span class="mini-env deep"></span><div><b>Sunday deep archive</b><p>The Sunday morning envelope reaches much further back. Its two archive cards can come from anywhere in the archive, all the way to the first dispatch, and it is one of the few places Name This cards turn up.</p></div></div>
     <div class="fmenv" id="fm-priority"><span class="mini-env prio"></span><div><b>Priority envelope</b><p>Your reward for every third day of a streak. All three cards come from the whole archive. Priority envelopes never expire, and you can save up as many as you like.</p></div></div>
-    <div class="fmenv" id="fm-comm"><span class="mini-env comm"></span><div><b>Commemorative file</b><p>On nine big anniversaries a year (Iwo Jima, VE Day, Midway, D Day, VJ Day, the first and last days of the war, Battle of Britain Day, Pearl Harbor, and the Bulge) everyone gets an extra black and gold file: that day's <b>Flash card</b> plus three cards from the whole archive. It stays open for three days and does not count toward your streak.</p></div></div>
+    <div class="fmenv" id="fm-comm"><span class="mini-env comm"></span><div><b>Commemorative file</b><p>On the war's biggest days, at least one every month, everyone gets an extra black and gold file: that day's <b>Flash card</b> plus three cards from the whole archive. The next ones are always listed under Incoming Flash traffic on the home screen. It stays open for three days and does not count toward your streak.</p></div></div>
     <div class="fmenv" id="fm-starter"><span class="mini-env starter"></span><div><b>Starter pack</b><p>Your first file, free: five cards, today's dispatch plus one from each series, with at least one Silver or better. You can open it before signing in.</p></div></div>
     <div class="fmenv" id="fm-lastcall"><span class="mini-env last"></span><div><b>Last call</b><p>Missed yesterday's envelope? It stays at the top of Today's files, marked Last call, until its 24 hours run out. After that it is gone, though its card can still turn up later in the archive.</p></div></div>
     <p class="fmnote">The odds are the same in every envelope, for everyone. Choosing one of the three envelopes adds suspense, not luck.</p>
@@ -247,6 +248,7 @@
    <section id="fm-flash">
     <h3>Flash cards</h3>
     <ul><li>On the war's biggest days we post a <b>Flash card</b>: a full art card unlike anything else in the dossier, with no frame at all. There are only a handful a year, and every one is <b>always Top Secret</b>.</li>
+    <li>The Flash days, at least one every month: Stalingrad (31 January), Iwo Jima (19 February), Remagen (7 March), the Doolittle Raid (18 April), VE Day (8 May), Midway (4 June), D Day (6 June), Trinity (16 July), VJ Day (15 August), the first and last days of the war (1 and 2 September), Battle of Britain Day (15 September), Leyte Gulf (25 October), Tarawa (20 November), Pearl Harbor (7 December), and the Bulge (16 December). A new Flash card every year for each.</li>
     <li>Everyone who opens that day's commemorative file gets it. Miss the file and it can still turn up later, about 1 in 200 archive cards.</li>
     <li>Flash cards carry no worldwide serial. It is not a race to log on first.</li></ul>
    </section>
@@ -338,7 +340,7 @@
 <div class="toast" id="toast" hidden></div>
 <div class="glow" id="glow"></div>
 <div class="zoomer" id="zoomer" hidden role="dialog" aria-label="Card up close"><div class="zstage" id="zstage"></div><button class="zx" id="zx" aria-label="Close">✕</button><p class="zhint">Pinch or double tap to zoom</p></div>
-<script src="/declass/declass.js?v=103b1115"></script>
+<script src="/declass/declass.js?v=cb2722d8"></script>
 <script src="/declass/intercept.js?v=ca515581"></script>
 </body>
 </html>
