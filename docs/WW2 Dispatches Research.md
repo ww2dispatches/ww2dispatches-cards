@@ -8,7 +8,7 @@ By the end of Wednesday night, for each of the seven days from the coming Sunday
 * both dispatch numbers are assigned and locked,
 * the film for the noon video is downloaded and checked, or the day is marked a Story Card,
 * the lead photo for each card and the photos for any Story Card are downloaded,
-* the dispatch JSON holds the fact sheet, the sources, the photo and film records, the short name and photo credit, and the theme tags,
+* the dispatch JSON holds the fact sheet, the sources, the photo and film records, the short name and photo credit, the Declassified extra, and the theme tags,
 * and the slate lists it all, with alternates, for Brian.
 
 Research writes no captions, cuts no film, and renders nothing. Thursday and Friday do that.
@@ -67,11 +67,16 @@ Every dispatch JSON gets a `facts` block: six to twelve verified facts in plain 
 * A noon video shares the number of the 8 a.m. dispatch it covers. Name This and the welcome post never take a number.
 
 ## What research writes in each dispatch JSON
-Research owns: the file name and `id`, `num`, `date`, `time`, `series` (one of the four, or `flash` on a Flash day with `flash: true`), `title`, `short`, `place`, `pull`, `format` and its `quote`/`quoteBy` or `specTitle`/`specs` on evening cards, `facts`, `sources`, `photo` (the file in `photos/`) with `photoUrl`, `photoNote`, and `photoCredit`, `videoPhotos`, `film`, `somber`, `kind` (the planned noon video kind, `living` or `story`), and the `themes` block (who, story, photo, theater, branch, nations) using only the values in `analytics/themes.md`.
+Research owns: the file name and `id`, `num`, `date`, `time`, `series` (one of the four, or `flash` on a Flash day with `flash: true`), `title`, `short`, `place`, `pull`, `format` and its `quote`/`quoteBy` or `specTitle`/`specs` on evening cards, `facts`, `sources`, `photo` (the file in `photos/`) with `photoUrl`, `photoNote`, and `photoCredit`, `videoPhotos`, `film`, `somber`, `kind` (the planned noon video kind, `living` or `story`), and the `themes` block (who, story, photo, theater, branch, nations) using only the values in `analytics/themes.md`, and `declassified` (below).
 
 Two of those are kept for the Declass game (Envelope doc) under the Brief's "Record now, use later" rule, and cost nothing extra once the research is done:
 * **`short`:** a one to three word name for the card's subject, the way people would say it ("Aachen", "Leyte", "Taffy 3", "USS Reuben James"). It is the headline on Declass share pictures and the card's dossier label, so it names the subject only, never the card type: an evening card about the same event keeps the same name (the Kearny story and its Spec Sheet are both "USS Kearny"), because the game shows the format (Spec Sheet, Photo of the Day, Quote of the Day) on its own line. Ships take their prefix ("USS Hornet").
 * **`photoCredit`:** one clean public line about the lead photo: what it shows, when, the archive and number, and the license, such as "Tirpitz in Bogen Bay, Norway, 1943 to 1944. NHHC NH 71390, public domain." No working notes, no "supplied by Brian", no framing advice; those stay in `photoNote`, which remains the team's working note.
+
+**`declassified` (added 29 Oct 2026):** the reward a Declass player unlocks by holding the card in Gold, Top Secret, or Flash (Envelope doc). Research always finds more than one card can carry; this keeps the best leftover. Every dispatch gets one:
+* `fact`: two or three plain sentences with one verified detail the card and its caption won't use, the kind a reader would want to repeat to someone: a behind the scenes moment, an odd number, what happened to a person afterward. Verified like any fact, never a guess. It must not repeat a fact sheet line, and Friday never uses it in the caption, Threads, or newsletter, so it stays a reward.
+* `sources`: the source or sources for it (title and url, as in `sources`).
+* `photo` (optional): one more real archival photo of the event that is not the card's lead photo, when a good one exists: `file` (in `photos/`), `page`, `credit` (a clean public line like `photoCredit`), and `caption` (one sentence on what it shows). On a Story Card day one of the `videoPhotos` that isn't the lead can be named here with no extra download. Leave it out rather than use a weak or unrelated picture.
 
 Research leaves to Thursday: the `video` block (footage, focus, hook, source note), `themes.video`, `kit`, `story`, the film keys under `buffer`, and the cut clips. It leaves to Friday: `body`, `threads`, `addons`, `hashtags`, the framing (focusX, focusY, zoom), `slides`, `question`, `soft_ask`, `newsletter_mention`, `newsletter`, the card keys under `buffer`, and `links`.
 
@@ -105,3 +110,4 @@ File Schedule Board tasks and push reminders per the Brief's "Shared run procedu
 * 24 Oct 2026 (night): `short` now names the subject only, never the card type, since the Declass share picture shows the format on its own line. Twelve existing short names were cleaned up (for example "Kearny Hull" became "USS Kearny", "V-2 Photo" became "Earth from Space").
 * 25 Oct 2026: Flash days added. On the ten Flash dates (the Declass commemorative days, first Pearl Harbor on 7 Dec 2026) the 8 a.m. slot is the Flash card, built from the prepared art and record in `flash/`; the never repeat rule does not apply to it, and research adds the number, facts, sources, themes, and film as usual.
 * 27 Oct 2026: The Intercept master list upkeep was briefly written into this run, then moved the same day to the Tuesday analytics run (Analytics doc), so it only ever works from posted cards. Research does nothing for Intercept.
+* 29 Oct 2026: Research also writes a `declassified` block on every dispatch (one unused verified fact with its source, and optionally one extra archival photo), for the Declass gold reward. Friday never uses it in captions. The 30 existing dispatches are being back filled once.
