@@ -155,13 +155,17 @@
     requestAnimationFrame(idle);
   })();
 
+  // Film speaker icons (29 Oct 2026): muted shows a cross, playing shows sound waves on red, a silent film a slashed speaker.
+  const SPK_OFF = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9h4l5-4v14l-5-4H3z" fill="currentColor"/><path d="M16 9.5l5 5M21 9.5l-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>';
+  const SPK_ON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9h4l5-4v14l-5-4H3z" fill="currentColor"/><path d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>';
+  const SPK_SILENT = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9h4l5-4v14l-5-4H3z" fill="currentColor"/><path d="M3 3l18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
   // ---------- a card in its finish frame ----------
   function cardFace(info, finish, variant, serial, opts) {
     opts = opts || {};
     const living = variant === 'living' && info.filmMp4;
     const src = opts.puzzle && info.imgPuzzle ? info.imgPuzzle : info.img;
     const media = living
-      ? `<video class="film" src="${esc(info.filmMp4)}" poster="${esc(info.filmPoster || info.img)}" muted loop playsinline preload="auto"${opts.autoplay ? ' autoplay' : ''}></video><button class="spk" type="button" aria-label="Film sound">🔈</button>`
+      ? `<video class="film" src="${esc(info.filmMp4)}" poster="${esc(info.filmPoster || info.img)}" muted loop playsinline preload="auto"${opts.autoplay ? ' autoplay' : ''}></video><button class="spk${info.filmSound ? '' : ' silent'}" type="button" aria-label="${info.filmSound ? 'Turn the film sound on' : 'Silent film'}">${info.filmSound ? SPK_OFF : SPK_SILENT}</button>`
       : `<img src="${esc(src)}" alt="${esc(info.short)}${info.kind === 'namethis' ? '' : ', ' + esc(info.title)}" draggable="false">`;
     // A Flash card (Roadmap, Flash cards plan) is full art and always Top Secret: no frame, no rim, no badge,
     // no serial. The holographic shine drifts over the art itself (decided 25 Oct 2026, take A).
@@ -175,8 +179,9 @@
     const spk = root.querySelector('.spk');
     if (spk) spk.onclick = e => {
       e.stopPropagation();
-      if (!info.filmSound) { toast('This one is silent film.'); return; }
-      v.muted = !v.muted; spk.textContent = v.muted ? '🔈' : '🔊';
+      if (!info.filmSound) { toast('This film was shot without sound, as most wartime footage was.'); return; }
+      v.muted = !v.muted; spk.innerHTML = v.muted ? SPK_OFF : SPK_ON; spk.classList.toggle('on', !v.muted);
+      spk.setAttribute('aria-label', v.muted ? 'Turn the film sound on' : 'Turn the film sound off');
       if (!v.muted) v.play().catch(() => {});
     };
     const p = v.play();

@@ -939,3 +939,9 @@ button:not(.tr):not(.mini):active,.slotbtn:active,.tile:active,.allbtn:active,.s
 /* Request picker: every price in the same ink; a finish you can't afford yet says how much more (29 Oct 2026). */
 .reqopt span,.reqopt.short span{color:var(--ink)}
 .reqopt em{font-style:normal;font-family:var(--type);font-size:12px;color:var(--mute)}
+
+/* Living Card speaker (29 Oct 2026): tucked into the card's bottom right corner; red with waves while the sound plays. */
+.cf .spk{right:2.2%;bottom:1.8%;width:30px;height:30px;padding:6px;background:rgba(26,22,18,.78);box-shadow:0 1px 4px rgba(0,0,0,.4)}
+.cf .spk svg{width:100%;height:100%;display:block}
+.cf .spk.on{background:#B04A3E;color:#FFF8EA}
+.cf .spk.silent{opacity:.7}
