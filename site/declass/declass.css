@@ -981,3 +981,19 @@ html.ztrial #stage2{cursor:zoom-in}
 .fxcal b{font-family:var(--display);font-weight:500;text-transform:uppercase;letter-spacing:.04em;font-size:15px;min-width:0}
 .fxcal .fu{font-family:var(--type);font-size:12px;opacity:.75;white-space:nowrap}
 .fxcal li.next b{color:#A8392E}
+
+/* Today's files tidy up (30 Oct 2026): the coming up list of slim lines, and the gold Flash row in the final week. */
+.cup{margin:2px 0 10px}
+.cup:not(:has(.cupln)){display:none}
+.cup .cupln{display:flex;align-items:center;gap:10px;width:100%;background:none;border:0;border-bottom:1px solid rgba(201,188,158,.22);padding:11px 2px;color:#d8cdb6;font-family:var(--type);font-size:14px;text-align:left;line-height:1.2}
+.cup #flashNext .cupln,.cup>div:first-child:empty+div .cupln{border-top:1px solid rgba(201,188,158,.22)}
+.cup button.cupln{cursor:pointer}
+.cupln .tg{flex:none;width:84px;text-align:center;font-family:var(--display);font-weight:700;letter-spacing:.1em;font-size:11px;padding:3px 0;border-radius:2px}
+.cupln .tg.fl{background:#EDE4CF;color:#1a1612}
+.cupln .tg.ic{border:1.5px solid #8a97ad;color:#a9b6cc;padding:2px 0}
+.cupln .cw{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cupln b{font-family:var(--display);font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:14px;color:#EDE4CF}
+.cupln .r{flex:none;margin-left:auto;color:#8f8573;font-size:13px}
+.slotbtn.flashsoon{border-color:#e3c25e;background:linear-gradient(90deg,rgba(227,194,94,.10),rgba(227,194,94,0));cursor:pointer}
+.slotbtn.flashsoon b{color:#e3c25e}
+.slotbtn.flashsoon::after{content:attr(data-tag);color:#e3c25e}

@@ -309,10 +309,27 @@
     $('nextFile').textContent = nextText;
     // Incoming Flash traffic (30 Oct 2026, slimmed the same day): one line with the next Flash day; tap
     // for the full calendar. Names and dates only; the card stays sealed until it posts.
+    // Today's files tidy up (30 Oct 2026): only things you can act on are boxes. The next Flash day and
+    // Intercept (until it launches) sit below as slim lines; a Flash day 7 days out or closer moves up
+    // into Today's files as a gold row, and on the day its commemorative file takes over.
     const fx = (ST && ST.flashNext) || [];
-    $('flashNext').innerHTML = fx.length ? `<button class="fxline" id="fxLine" type="button"><span class="ft">FLASH</span><span class="fw"><b>${esc(fx[0].name)}</b> · ${esc(untilText(fx[0].at).toLowerCase())}</span><span class="fa" aria-hidden="true">›</span></button>` : '';
-    if (fx.length) $('fxLine').onclick = flashCalendar;
-    if (window.Intercept) window.Intercept.tile($('icpSlot'));
+    const fxDays = fx.length ? Math.round((new Date(fx[0].at).setHours(0, 0, 0, 0) - new Date().setHours(0, 0, 0, 0)) / 86400000) : 99;
+    if (fx.length && fxDays <= 7) {
+      const when = new Date(fx[0].at);
+      const b = slotButton('flashsoon', esc(fx[0].name) + ' Flash', 'Opens ' + (fxDays <= 0 ? 'today' : fxDays === 1 ? 'tomorrow' : when.toLocaleDateString([], { weekday: 'short', day: 'numeric', month: 'short' })) + ' · ' + localTime(fx[0].at), flashCalendar);
+      b.dataset.tag = untilText(fx[0].at).toUpperCase();
+      files.appendChild(b);
+      $('flashNext').innerHTML = '';
+    } else {
+      $('flashNext').innerHTML = fx.length ? `<button class="cupln" id="fxLine" type="button"><span class="tg fl">FLASH</span><span class="cw"><b>${esc(fx[0].name)}</b> · ${esc(untilText(fx[0].at).toLowerCase())}</span><span class="r" aria-hidden="true">›</span></button>` : '';
+      if (fx.length) $('fxLine').onclick = flashCalendar;
+    }
+    $('cupIcp').innerHTML = '';
+    if (window.Intercept) {
+      window.Intercept.tile($('icpSlot'));
+      const soon = $('icpSlot').querySelector('.icpsoon');
+      if (soon) { $('cupIcp').appendChild(soon); $('icpSlot').innerHTML = ''; }
+    }
 
     // the last envelope's cards
     const pulls = myPulls();
