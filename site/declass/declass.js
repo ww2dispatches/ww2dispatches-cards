@@ -231,7 +231,7 @@
     $('streakN').textContent = p ? p.streak : 0;
     renderStats();
     $('streakHint').textContent = !p ? 'Sign in to start a streak'
-      : p.streak ? (p.nextPriorityIn === 3 ? 'Priority envelope earned' : 'Priority envelope in ' + p.nextPriorityIn + ' day' + (p.nextPriorityIn > 1 ? 's' : ''))
+      : p.streak ? (p.nextPriorityIn === 3 ? 'Priority earned' : 'Priority in ' + p.nextPriorityIn + ' day' + (p.nextPriorityIn > 1 ? 's' : ''))
       : 'Open an envelope to start';
 
     if (p) {
@@ -1280,11 +1280,10 @@
     const p = ST && ST.player, r = ST && ST.rank, it = ST && ST.intel;
     $('rankBtn').style.visibility = p && r ? '' : 'hidden';
     $('intelBtn').style.visibility = p && it ? '' : 'hidden';
-    $('statRow').hidden = !(p && (r || it));
     if (r) {
       $('rankT').textContent = r.short;
-      $('rankT').classList.toggle('long', r.short.length > 12);
-      document.querySelector('.slimrow .rbar').hidden = !r.nextAt; // top rank: no next step, so no bar
+      $('rankT').classList.toggle('long', r.short.length > 12); // long names step down a size so the badge stays beside them on one line
+      document.querySelector('#rankBtn .rbar').hidden = !r.nextAt; // top rank: no next step, so no bar
       $('rankI').src = '/declass/insignia/' + rankSlug(r.title) + '.svg';
       $('rankBar').style.width = (r.nextAt ? Math.max(0, Math.min(1, (r.filled - r.from) / (r.nextAt - r.from))) * 100 : 100) + '%';
     }
@@ -1455,7 +1454,7 @@
   // The three stop tour on the first visit to home, signed in.
   const TOUR = [
     { sel: '#files', h: "Today's files", t: 'A new file arrives with every dispatch we post. Each one stays open for 24 hours, so you can open it whenever you like that day.' },
-    { sel: '#sHome .top .streak', h: 'Your streak', t: 'Open at least one file a day to build your streak. Every third day earns a priority envelope, drawn from the whole archive.' },
+    { sel: '#sHome .hstreak', h: 'Your streak', t: 'Open at least one file a day to build your streak. Every third day earns a priority envelope, drawn from the whole archive.' },
     { sel: '#rankBtn', h: 'Your rank', t: 'Every new card, and every new finish of a card, fills a spot in your dossier. Fill enough spots and you get promoted, starting from Private. Each new rank is a surprise, and you never lose one. Tap your rank to see how close the next one is.' },
     { sel: '#intelBtn', h: 'Intel', t: "Every file you open earns 5 Intel, and duplicates turn into more. Spend it to request any card you're missing. Tap Intel to see your balance and what you can request." },
     { sel: '#sHome .howbtn', h: "That's it", t: 'How to play has the rest whenever you want it: Living Cards, Name This, sets, and the odds. Now go open your first file.', last: true },
@@ -1566,5 +1565,5 @@
       const file = new URLSearchParams(location.search).get('file');
       if (file) checkFile(file); else { route(); if (signedIn()) maybePromote(); }
     });
-  }).catch(() => show('sSoon'));
+  }).catch(e => { console.error('declass boot', e); show('sSoon'); });
 })();

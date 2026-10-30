@@ -733,16 +733,31 @@ h2{flex-wrap:wrap;row-gap:2px}
 #icpSlot .icptile span{font-size:14px}
 @media (max-width:400px){#yearTiles .tile span.rng{display:none}}
 #yearTiles .tile{display:flex;flex-direction:column;justify-content:flex-start}#yearTiles .tile .bar{margin-top:auto;width:100%}#yearTiles .tile b{margin-bottom:2px}
-/* Rank and Intel header (29 Oct 2026): labels on top, value below, bar and today's Intel underneath,
-   so the longest rank name and a five digit Intel balance both fit at 360 wide */
-#statRow{align-items:start}
-#statRow .rankst{display:grid;grid-template-columns:auto minmax(0,1fr);grid-template-areas:"sl sl" "ic nm" ". br";column-gap:7px;row-gap:3px;align-items:center;flex:1 1 auto;min-width:0;text-align:left}
-#statRow .rankst .sl{grid-area:sl}#statRow .rankst .rkicon{grid-area:ic}#statRow .rankst b{grid-area:nm;min-width:0}
-#statRow .rankst .rbar{grid-area:br;width:100%;max-width:140px;margin:0;align-self:center}
-#statRow .intelst{display:grid;grid-template-columns:auto auto;grid-template-areas:"sl sl" "ic nm" "td td";column-gap:6px;row-gap:3px;align-items:center;justify-content:end;flex:0 0 auto;text-align:right}
-#statRow .intelst .sl{grid-area:sl}#statRow .intelst .itok{grid-area:ic}#statRow .intelst b{grid-area:nm}
-#statRow .intelst span:last-child{grid-area:td;top:0;text-align:right}
+
 /* card grids: every card starts at the top of its cell (a stretched button centers its content, which pushed
    held cards down beside a sealed card with a request line), and the request line stays on one line */
 .grid,.recent,.savegrid{align-items:start}
 .mini .reqline{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* Home header, option C (29 Oct 2026): rank beside the DECLASS name; streak and Intel share one slim row below,
+   both laid out the same way (big number with a small label, a short line underneath). The rank badge always
+   sits right beside the rank name: they share one line that never wraps, and long names step down a size. */
+#sHome .top{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0 10px;border-bottom:1px solid var(--line)}
+#sHome .top .wordmark{flex:0 0 auto}
+.hrank{display:flex;flex-direction:column;align-items:flex-end;gap:4px;min-width:0;background:none;border:0;padding:0;cursor:pointer;color:var(--ink);text-align:right}
+.hl{font-family:var(--display);font-weight:500;font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);line-height:1}
+.hv{display:inline-flex;align-items:center;gap:7px;white-space:nowrap;max-width:100%}
+.hrank .rkicon{height:22px;width:auto;max-width:40px;flex:0 0 auto}
+.hrank #rankT{font-family:var(--display);font-weight:700;font-size:17px;line-height:1.1;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.hrank #rankT.long{font-size:15px;letter-spacing:0}
+@media (max-width:374px){.hrank #rankT{font-size:16px}.hrank #rankT.long{font-size:14px}}
+.hrank .rbar{display:block;width:120px;max-width:100%;height:6px;margin:0;border-radius:3px}
+.hrow{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 0;border-bottom:3px double #B04A3E}
+.hstat{display:flex;flex-direction:column;gap:3px;min-width:0;font-family:var(--body)}
+.hintel{align-items:flex-end;text-align:right;background:none;border:0;padding:0;cursor:pointer;color:var(--ink)}
+.hstat .hv{align-items:baseline}
+.hstat .hv b{font-family:var(--display);font-weight:700;font-size:26px;line-height:1}
+.hstreak .hv b{color:var(--red)}.hintel .hv b{color:var(--brass)}
+.hintel .itok{width:20px;height:20px;align-self:center;margin:0;vertical-align:0}
+.hintel #intelN.long{font-size:22px}
+.hs{font-family:var(--type);font-size:14px;color:var(--mute);line-height:1.2}

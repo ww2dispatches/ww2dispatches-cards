@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Special+Elite&display=swap">
-<link rel="stylesheet" href="/declass/declass.css?v=b3da85e5">
+<link rel="stylesheet" href="/declass/declass.css?v=08761011">
 <link rel="stylesheet" href="/declass/intercept.css?v=e7832322">
 </head>
 <body>
@@ -59,11 +59,11 @@
   <div class="toolbar"><button class="tbtn howbtn" data-how type="button">How to play</button><button class="tbtn sndbtn" data-t="music" type="button"></button><button class="tbtn sndbtn" data-t="sfx" type="button"></button></div>
   <header class="top">
     <div class="wordmark">DECLASS<small>a WW2 Dispatches game</small></div>
-    <div class="stat streak"><b id="streakN">0</b>Day Streak<span id="streakHint"></span></div>
+    <button class="hrank" id="rankBtn" type="button" aria-label="Your rank"><span class="hl">Rank</span><span class="hv"><img class="rkicon" id="rankI" src="/declass/insignia/private.svg" alt="" aria-hidden="true"><b id="rankT">Private</b></span><i class="rbar"><em id="rankBar"></em></i></button>
   </header>
-  <div class="slimrow" id="statRow">
-    <button class="stat rankst" id="rankBtn" type="button" aria-label="Your rank"><span class="sl">Rank</span><img class="rkicon" id="rankI" src="/declass/insignia/private.svg" alt="" aria-hidden="true"><b id="rankT">Private</b><i class="rbar"><em id="rankBar"></em></i></button>
-    <button class="stat intelst" id="intelBtn" type="button" aria-label="Your Intel"><span class="sl">Intel</span><img class="itok" src="/declass/icons/intel.svg" alt=""><b id="intelN">0</b><span id="intelToday">Today +0</span></button>
+  <div class="hrow" id="statRow">
+    <div class="hstat hstreak"><span class="hv"><b id="streakN">0</b><span class="hl">Day streak</span></span><span class="hs" id="streakHint"></span></div>
+    <button class="hstat hintel" id="intelBtn" type="button" aria-label="Your Intel"><span class="hv"><span class="hl">Intel</span><img class="itok" src="/declass/icons/intel.svg" alt=""><b id="intelN">0</b></span><span class="hs" id="intelToday">Today +0</span></button>
   </div>
   <h1>Today's files</h1>
   <p class="sub files-sub">Three cards in every envelope.</p>
@@ -333,7 +333,7 @@
 <div class="icpzoom" id="icpZoom" hidden role="dialog" aria-label="Card full size"></div>
 <div class="toast" id="toast" hidden></div>
 <div class="glow" id="glow"></div>
-<script src="/declass/declass.js?v=571fb47a"></script>
+<script src="/declass/declass.js?v=5cd262e6"></script>
 <script src="/declass/intercept.js?v=898d5398"></script>
 </body>
 </html>
