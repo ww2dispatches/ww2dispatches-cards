@@ -428,18 +428,42 @@
       : env.kind === 'priority' ? 'Three came in for your streak. Choose the one you want.'
       : env.kind === 'starter' ? 'Your first file. Three came in. Choose the one you want.'
       : 'Three came in with this dispatch. Choose the one you want.';
+    if (window.matchMedia && matchMedia('(pointer:coarse)').matches) $('pickSub').textContent += ' Tap it, or drag across the seal to tear it open.';
     $('backPick').onclick = () => show(env.kind === 'starter' && !signedIn() ? 'sLanding' : 'sHome');
     const st = $('stack'); st.innerHTML = '';
     for (let i = 1; i <= 3; i++) {
       const e = document.createElement('div');
       e.className = 'env' + envClass(env); e.tabIndex = 0; e.setAttribute('role', 'button'); e.setAttribute('aria-label', 'Sealed envelope ' + i);
       e.innerHTML = envHTML(i, env);
-      e.onclick = () => chosen(i);
+      e.onclick = () => { if (e.dataset.dragged) { delete e.dataset.dragged; return; } chosen(i); };
+      tearDrag(e, i);
       e.onkeydown = ev => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); chosen(i); } };
       st.appendChild(e);
     }
     $('pickCoach').hidden = !(env.kind === 'starter' && !seen('pick'));
     show('sPick');
+  }
+
+  // Drag across the wax seal to tear an envelope open (visual pass step 4, 29 Oct 2026). Tapping still opens it.
+  // The seal follows the finger and the flap starts to lift; past the threshold the envelope opens as if tapped.
+  function tearDrag(e, i) {
+    const seal = e.querySelector('.seal');
+    if (!seal || !window.PointerEvent) return;
+    let x0 = 0, y0 = 0, on = false, moved = false, done = false;
+    const reset = () => { e.classList.remove('tearing'); e.classList.add('snap'); e.style.removeProperty('--tx'); e.style.removeProperty('--p'); setTimeout(() => e.classList.remove('snap'), 260); };
+    seal.addEventListener('pointerdown', ev => { if (busy) return; on = true; moved = false; done = false; x0 = ev.clientX; y0 = ev.clientY; try { seal.setPointerCapture(ev.pointerId); } catch (err) {} });
+    seal.addEventListener('pointermove', ev => {
+      if (!on || done) return;
+      const dx = ev.clientX - x0, dy = ev.clientY - y0;
+      if (!moved && Math.abs(dx) < 6 && Math.abs(dy) < 6) return;
+      moved = true; e.dataset.dragged = '1';
+      const p = Math.min(1, Math.abs(dx) / (e.clientWidth * 0.32));
+      e.classList.add('tearing');
+      e.style.setProperty('--tx', (dx * 0.55) + 'px'); e.style.setProperty('--p', p.toFixed(3));
+      if (p >= 1) { done = true; on = false; if (navigator.vibrate) navigator.vibrate(12); chosen(i); }
+    });
+    const up = () => { if (!on) return; on = false; if (moved && !done) reset(); };
+    seal.addEventListener('pointerup', up); seal.addEventListener('pointercancel', up);
   }
 
   // ---------- the opening ----------

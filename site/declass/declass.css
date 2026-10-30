@@ -809,3 +809,10 @@ h2{flex-wrap:wrap;row-gap:2px}
 .big .cardsout i{display:grid;place-items:center;container-type:inline-size;border:1px solid #cbbd98;box-shadow:0 8px 18px rgba(0,0,0,.45)}
 .big .cardsout i::after{content:"WW2";width:46%;aspect-ratio:1;border-radius:50%;background:#B04A3E;color:#FFF8EA;display:grid;place-items:center;font-family:var(--display);font-weight:700;font-size:13cqw;border:3.2cqw solid #EDE4CF;outline:1.3cqw solid #B04A3E;box-sizing:border-box}
 .big.fade{opacity:0;transition:opacity .35s}
+/* drag the seal to tear it open: the seal slides with the finger and the flap starts to lift */
+.stack .env{perspective:700px}
+.stack .env .seal{touch-action:none;cursor:grab}
+.stack .env.tearing{transform:none}
+.stack .env.tearing .seal{transition:none;transform:translate(calc(-50% + var(--tx,0px)),-50%) rotate(calc(-6deg + var(--p,0) * 24deg)) scale(calc(1 - var(--p,0) * .15))}
+.stack .env.tearing .flap{transition:none;transform:rotateX(calc(var(--p,0) * -32deg))}
+.stack .env.snap .seal,.stack .env.snap .flap{transition:transform .25s ease-out}
