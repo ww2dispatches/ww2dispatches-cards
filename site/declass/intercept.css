@@ -1,8 +1,10 @@
 /* Intercept · a Declass daily puzzle (27 Oct 2026). Files spread on the dark Night Dispatch desk:
    paperclips on selected cards, clipped groups with a typed label, REJECTED stamps, wax seals. */
-/* Intercept sits on the same Darkroom desk as the rest of Declass (decided 30 Oct 2026, after the visual pass
-   made Night Dispatch the one theme): no background of its own, only its blue accents. */
-body.night{color:#EDE4CF}
+/* Intercept's own room (decided 30 Oct 2026): the "Night Desk" option A from the visual pass, the same
+   #17140f desk and scanlines as the rest of Declass, lit by a cool blue lamp near the top instead of the
+   Darkroom's warm red glow in the middle. */
+body.night{color:#EDE4CF;background-color:#17140f;background-attachment:fixed;
+  background-image:radial-gradient(ellipse at 50% 18%,rgba(61,88,132,.26),rgba(0,0,0,0) 62%),repeating-linear-gradient(0deg,rgba(237,228,207,.035) 0 1px,transparent 1px 6px)}
 body.night .sheettop .howstamp{color:var(--red)}
 
 /* the home tile (on the paper page) */

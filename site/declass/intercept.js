@@ -269,9 +269,9 @@
   async function paint(cv) {
     await Promise.all(['700 40px Oswald', '400 20px "Special Elite"'].map(f => document.fonts.load(f).catch(() => {})));
     const W = 1080, H = 1350, c = cv.getContext('2d');
-    // The same Darkroom desk as the Declass share picture (30 Oct 2026).
+    // Intercept's Night Desk (30 Oct 2026): the Declass share picture's desk, lit blue near the top.
     c.fillStyle = '#17140f'; c.fillRect(0, 0, W, H);
-    const g = c.createRadialGradient(W / 2, H * 0.48, W * 0.1, W / 2, H * 0.5, H * 0.75); g.addColorStop(0, 'rgba(176,74,62,.22)'); g.addColorStop(1, 'rgba(0,0,0,0)'); c.fillStyle = g; c.fillRect(0, 0, W, H);
+    const g = c.createRadialGradient(W / 2, H * 0.18, W * 0.1, W / 2, H * 0.2, H * 0.62); g.addColorStop(0, 'rgba(61,88,132,.26)'); g.addColorStop(1, 'rgba(0,0,0,0)'); c.fillStyle = g; c.fillRect(0, 0, W, H);
     c.globalAlpha = 0.05; c.fillStyle = '#EDE4CF'; for (let y = 0; y < H; y += 6) c.fillRect(0, y, W, 1); c.globalAlpha = 1;
     c.textAlign = 'center'; c.fillStyle = '#EDE4CF'; c.font = '700 84px Oswald'; c.fillText('INTERCEPT', W / 2, 112);
     c.fillStyle = '#b9ad92'; c.font = '400 30px "Special Elite"'; c.fillText('a Declass daily puzzle · ' + new Date(P.day + 'T12:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }), W / 2, 158);
