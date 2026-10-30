@@ -14,7 +14,7 @@
 
   // ---------- home tile ----------
   function tileHTML(s) {
-    if (!s || s.status === 'soon') return `<div class="icptile soon" aria-label="Intercept, a Declass daily puzzle, coming soon"><b>Intercept</b><span>a Declass daily puzzle</span><span>Coming soon</span></div>`;
+    if (!s || s.status === 'soon') return `<div class="icptile soon" aria-label="Intercept, a Declass daily puzzle, coming soon"><b>Intercept</b><span>a Declass daily puzzle</span></div>`;
     // the first part sits on its own line, the rest below it (29 Oct 2026)
     const two = sub => { const i = sub.indexOf(' · '); return i < 0 ? `<span>${sub}</span>` : `<span>${sub.slice(0, i)}</span><span>${sub.slice(i + 3)}</span>`; };
     const go = (sub, cls) => `<button class="icptile ${cls || 'live'}" id="icpTile" type="button"><b>Intercept</b>${two(sub)}</button>`;
