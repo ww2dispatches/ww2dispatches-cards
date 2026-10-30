@@ -865,6 +865,21 @@
   $('landEnv').innerHTML = `<div class="env">${envHTML(0, { kind: 'starter' })}</div>`;
   const openStarter = () => pick({ kind: 'starter' });
   $('openStarter').onclick = openStarter;
+  // Landing page cards (visual pass step 3, 29 Oct 2026): three real cards spill out of the starter envelope,
+  // the newest dispatch in Gold at the front with its sheen moving, so the prize shows before the button.
+  function landFan() {
+    const posted = CAT.filter(c => c.kind === 'dispatch' && !c.flash && c.img).sort((a, b) => (b.postAt || '').localeCompare(a.postAt || ''));
+    const gold = posted[0];
+    if (!gold || $('landEnv').querySelector('.lfan')) return;
+    const used = new Set([gold.series]), pick = () => { const c = posted.find(x => !used.has(x.series) && x !== gold) || posted.find(x => x !== gold && !picked.includes(x)); if (c) { used.add(c.series); picked.push(c); } return c; };
+    const picked = [], copper = pick(), silver = pick();
+    if (!copper || !silver) return;
+    const d = document.createElement('div');
+    d.className = 'lfan'; d.setAttribute('aria-hidden', 'true');
+    d.innerHTML = `<div class="l">${cardFace(copper, 'copper', 'still')}</div><div class="r">${cardFace(silver, 'silver', 'still')}</div><div class="m">${cardFace(gold, 'gold', 'still')}</div>`;
+    $('landEnv').prepend(d);
+    $('sLanding').classList.add('fanned');
+  }
   $('landEnv').onclick = () => { sfx('rustle'); setTimeout(openStarter, 250); };
   $('landEnv').onkeydown = e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openStarter(); } };
 
@@ -1561,7 +1576,7 @@
     if (!cfg.open) return show('sSoon');
     loadGoogle();
     return Promise.all([api('catalog'), api('state')]).then(([c, s]) => {
-      setCatalog(c.cards); ST = s;
+      setCatalog(c.cards); ST = s; landFan();
       const file = new URLSearchParams(location.search).get('file');
       if (file) checkFile(file); else { route(); if (signedIn()) maybePromote(); }
     });

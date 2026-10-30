@@ -761,3 +761,26 @@ h2{flex-wrap:wrap;row-gap:2px}
 .hintel .itok{width:20px;height:20px;align-self:center;margin:0;vertical-align:0}
 .hintel #intelN.long{font-size:22px}
 .hs{font-family:var(--type);font-size:14px;color:var(--mute);line-height:1.2}
+
+/* Visual pass step 3 (29 Oct 2026): three real cards spill out of the starter envelope on the landing page.
+   The intro line steps aside to make room; How to play still explains the game. */
+#sLanding.fanned .landline{display:none}
+#sLanding.fanned .landtag{margin-bottom:8px}
+#sLanding.fanned .landenv{position:relative;margin-top:162px}
+.landenv .env{position:relative;z-index:1}
+.lfan{position:absolute;left:50%;top:-150px;width:0;height:0;z-index:2;pointer-events:none}
+.lfan>div{position:absolute;width:132px;left:-66px;top:0;transform-origin:50% 100%}
+.lfan .l{transform:translateX(-92px) translateY(26px) rotate(-13deg)}
+.lfan .r{transform:translateX(92px) translateY(26px) rotate(13deg)}
+.lfan .m{transform:translateY(-8px);z-index:2}
+.lfan .cf .frame{box-shadow:0 12px 28px rgba(0,0,0,.65)}
+.lfan .m .cf .frame{box-shadow:0 0 0 1px rgba(255,220,120,.25),0 0 40px rgba(227,190,80,.3),0 12px 28px rgba(0,0,0,.65)}
+@media (max-width:400px){.lfan>div{width:118px;left:-59px}.lfan .l{transform:translateX(-80px) translateY(26px) rotate(-13deg)}.lfan .r{transform:translateX(80px) translateY(26px) rotate(13deg)}#sLanding.fanned .landenv{margin-top:148px}.lfan{top:-136px}}
+@media (prefers-reduced-motion:no-preference){
+  /* the cards shake with the envelope, and the Gold's sheen sweeps slowly across */
+  #sLanding.fanned .landenv .env{animation:none}
+  #sLanding.fanned .landenv{animation:rattle 3.2s ease-in-out infinite;transform-origin:50% 70%}
+  .lfan .m .sheen{background-size:300% 100%;animation:lsheen 3.6s ease-in-out infinite}
+  .lfan .m .frame::after{background-size:300% 100%;animation:lsheen 3.6s ease-in-out infinite}
+}
+@keyframes lsheen{0%{background-position:100% 0}55%,100%{background-position:0 0}}
