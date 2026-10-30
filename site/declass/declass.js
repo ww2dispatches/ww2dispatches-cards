@@ -772,19 +772,23 @@
       if (!moving) { if (Math.abs(dx) < 10 || Math.abs(dy) > Math.abs(dx)) { if (Math.abs(dy) > 14) on = false; return; } moving = true; try { st.setPointerCapture(ev.pointerId); } catch (e) {} }
       ang = Math.max(-175, Math.min(175, dx / w * 200));
       f.style.transition = 'none'; f.style.transform = `rotateY(${ang}deg)`;
+      // a big card builds its glow while you turn it yourself, instead of holding after you let go
+      if (bigMoment(pulls[idx])) { const on2 = Math.abs(ang) > 20; if (on2 && !st.classList.contains('charging')) sfx('charge'); st.classList.toggle('charging', on2); }
     });
     const end = () => {
       if (!on) return; on = false;
       if (!moving) return;
       const f = $('flip'); flipDrag.used = true; flipDrag.at = Date.now();
       f.style.transition = '';
-      if (Math.abs(ang) >= 70 && !bigMoment(pulls[idx])) {
+      st.classList.remove('charging');
+      if (Math.abs(ang) >= 70) {
+        // turned by hand: it carries on over from where the finger left it. A big card skips the hold (the slow
+        // turn was the suspense) but still gets its bigger glow, sheen sweep, and heavier sound.
         f.style.transform = `rotateY(${ang < 0 ? -180 : 180}deg)`;
-        reveal();
+        reveal.go = true; reveal(); reveal.go = false;
         setTimeout(() => { if ($('flip') === f) { f.style.transition = 'none'; f.style.transform = ''; void f.offsetWidth; f.style.transition = ''; } }, 850);
       } else {
         f.style.transform = '';
-        if (Math.abs(ang) >= 70) setTimeout(reveal, 300); // a big card springs back, then gets its held reveal
       }
       setTimeout(() => { flipDrag.used = false; }, 400);
     };
