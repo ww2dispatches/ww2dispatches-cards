@@ -1,6 +1,6 @@
 {
   "week": "2026-10-25",
-  "note": "First Lunch Drop, built by hand on Fri 30 Oct 2026 to test the page. Covers Fri 30 and Sat 31 Oct only.",
+  "note": "First Lunch Drop, built by hand on Fri 30 Oct 2026 to test the page. Covers Fri 30 and Sat 31 Oct only. On 30 Oct the Lunch Drop switched from the 8 a.m. card to a plain archival photo of the same event; Fri 30 Oct had already posted with the card.",
   "days": [
     {
       "date": "2026-10-30",
@@ -9,7 +9,6 @@
       "series": "battle",
       "title": "Rescue of the Lost Battalion",
       "community": "History Hub",
-      "card": "cards/dispatch-027-x.jpg",
       "video": "videos/dispatch-027-x.mp4",
       "videoKind": "Living Card",
       "somber": false,
@@ -29,9 +28,17 @@
         "In 1962 Texas made the 442nd's veterans honorary Texans."
       ],
       "sources": [
-        {"title": "100th/442nd RCT and the Rescue of the Lost Battalion, Go For Broke National Education Center", "url": "https://goforbroke.org/rhineland-campaign-rescue-of-the-lost-battalion/"},
-        {"title": "Lost Battalion (Europe, World War II), Wikipedia", "url": "https://en.wikipedia.org/wiki/Lost_Battalion_(Europe,_World_War_II)"}
-      ]
+        {
+          "title": "100th/442nd RCT and the Rescue of the Lost Battalion, Go For Broke National Education Center",
+          "url": "https://goforbroke.org/rhineland-campaign-rescue-of-the-lost-battalion/"
+        },
+        {
+          "title": "Lost Battalion (Europe, World War II), Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Lost_Battalion_(Europe,_World_War_II)"
+        }
+      ],
+      "image": "cards/dispatch-027-x.jpg",
+      "imageCredit": "Posted with the 8 a.m. card, before the Lunch Drop switched to plain photos."
     },
     {
       "date": "2026-10-31",
@@ -40,16 +47,15 @@
       "series": "battle",
       "title": "Reuben James is sunk",
       "community": "History",
-      "card": "cards/dispatch-029-x.jpg",
       "video": null,
       "videoKind": null,
       "somber": false,
       "post": "Five weeks before Pearl Harbor, American sailors were already dying in the Atlantic.\n\nOn 31 October 1941, USS Reuben James was escorting convoy HX 156 near Iceland when U-552 fired a torpedo meant for a merchant ship. It struck the destroyer instead. Her magazine exploded and tore off the bow. Only 44 of her crew survived, and not one officer was among them.\n\nFour days earlier, Roosevelt had said, \"The shooting has started.\" Did America's war with Germany really begin here, not in December?",
       "replies": [
         "As her stern went down, its depth charges went off among the men in the water. The destroyers Niblack and Hilary P. Jones pulled the survivors from the sea. Reuben James was the first U.S. Navy ship sunk by enemy action in the war against Germany.",
-        "Photo: USS Reuben James in the Panama Canal, between the wars. U.S. Navy Bureau of Ships 19-N-10982 (NARA 496085338), public domain.\n\nSources: USS Reuben James (DD-245), Wikipedia; MaritimeQuest; National Archives."
+        "Photo: USS Reuben James on the Hudson River, New York, 29 April 1939. U.S. Navy photo NH 66334, public domain.\n\nSources: USS Reuben James (DD-245), Wikipedia; MaritimeQuest; National Archives."
       ],
-      "alt": "Archival photo of the four stack destroyer USS Reuben James, hull number 245, passing through the Panama Canal between the wars. Text: 31 OCT 1941, Near Iceland, North Atlantic. Only 44 survived.",
+      "alt": "Archival photo of the four stack destroyer USS Reuben James, hull number 245, under way on the Hudson River in New York, April 1939, with sailors lining her deck.",
       "facts": [
         "She was escorting convoy HX 156 toward Britain, near Iceland, when U-552 fired at dawn.",
         "The torpedo was meant for a merchant ship and struck the destroyer forward instead.",
@@ -61,10 +67,25 @@
         "Woody Guthrie wrote a song about her."
       ],
       "sources": [
-        {"title": "USS Reuben James (DD-245), Wikipedia", "url": "https://en.wikipedia.org/wiki/USS_Reuben_James_(DD-245)"},
-        {"title": "USS Reuben James (DD-245), MaritimeQuest daily event", "url": "https://maritimequest.com/daily_event_archive/2005/oct/31_uss_reuben_james_dd245.htm"},
-        {"title": "Photograph of USS Reuben James (DD-245), NARA 496085338", "url": "https://catalog.archives.gov/id/496085338"}
-      ]
+        {
+          "title": "USS Reuben James (DD-245), Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/USS_Reuben_James_(DD-245)"
+        },
+        {
+          "title": "USS Reuben James (DD-245), MaritimeQuest daily event",
+          "url": "https://maritimequest.com/daily_event_archive/2005/oct/31_uss_reuben_james_dd245.htm"
+        },
+        {
+          "title": "Photograph of USS Reuben James (DD-245), NARA 496085338",
+          "url": "https://catalog.archives.gov/id/496085338"
+        },
+        {
+          "title": "USS Reuben James (DD-245) on 29 April 1939, Wikimedia Commons (NH 66334)",
+          "url": "https://commons.wikimedia.org/wiki/File:USS_Reuben_James_(DD-245)_on_29_April_1939.jpg"
+        }
+      ],
+      "image": "lunch/img/2026-10-31.jpg",
+      "imageCredit": "USS Reuben James on the Hudson River, New York, 29 April 1939. U.S. Navy photo NH 66334, public domain."
     }
   ]
 }

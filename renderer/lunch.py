@@ -26,7 +26,7 @@ SERIES = {
     "state": ("Statecraft", "#B8862B"),
     "flash": ("Flash", "#6E5A8A"),
 }
-REQUIRED = ["date", "dispatch", "num", "series", "title", "community", "card", "post", "replies", "facts"]
+REQUIRED = ["date", "dispatch", "num", "series", "title", "community", "image", "imageCredit", "post", "replies", "facts"]
 
 
 def preview(path):
@@ -65,11 +65,12 @@ def build(src):
         d2 = dict(d)
         d2["seriesName"], d2["seriesColor"] = name, color
         d2["communityUrl"] = "https://x.com/i/communities/" + COMMUNITIES.get(d.get("community"), "")
-        d2["cardFull"] = RAW_CARDS + d["card"]
-        d2["videoFull"] = (RAW_VIDEOS + d["video"]) if d.get("video") else None
-        d2["img"] = preview(d["card"])
+        d2["imageFull"] = RAW_CARDS + d["image"]
+        d2["img"] = preview(d["image"])
         if not d2["img"]:
-            problems.append(f"{d['date']}: card file {d['card']} not found")
+            problems.append(f"{d['date']}: image file {d['image']} not found")
+        if d["image"].startswith("cards/"):
+            problems.append(f"{d['date']}: the image is a posted card; use a plain photo of the event (Lunch Drop doc)")
         d2["weekday"] = date.fromisoformat(d["date"]).strftime("%a %d %b").replace(" 0", " ")
         days.append(d2)
     page = TEMPLATE.replace("__DATA__", json.dumps({"week": week["week"], "days": days}).replace("</", "<\\/"))
@@ -148,8 +149,8 @@ async function copyImage(src){
     c.getContext("2d").drawImage(img,0,0);
     const blob=await new Promise(r=>c.toBlob(r,"image/png"));
     await navigator.clipboard.write([new ClipboardItem({"image/png":blob})]);
-    toast("Card copied. Paste it into the X post.");
-  } catch(e){ toast("Image copy blocked here. Use Open full card, then press and hold to save."); }
+    toast("Photo copied. Paste it into the X post.");
+  } catch(e){ toast("Image copy blocked here. Use Open full photo, then press and hold to save."); }
 }
 
 let current=null;
@@ -169,11 +170,10 @@ function render(){
   if(d.somber) h+=`<div class="warn"><b>Somber day.</b> No question, no jokes, keep replies respectful.</div>`;
   h+=`<div class="box"><p class="label">Post to</p>
       <div class="row" style="margin-top:0"><a class="btn go" href="${esc(d.communityUrl)}" target="_blank" rel="noopener">Open ${esc(d.community)} community</a></div>
-      <ol class="steps" style="margin-top:10px"><li>Open the community and tap post.</li><li>Copy the card below and paste it in (or attach the saved card).</li><li>Copy the post text and paste it.</li><li>Leave "also post to followers" off. It already went out at 8 a.m.</li><li>Post, then reply to your own post with Reply 1 and Reply 2.</li></ol></div>`;
-  h+=`<div class="box"><p class="label">The card</p>${d.img?`<img class="card" src="${d.img}" alt="${esc(d.alt||"")}">`:`<div class="warn">Card preview missing.</div>`}
-      <div class="row"><button onclick="copyImage(DAY.img)">Copy card</button><a class="btn ghost" href="${esc(d.cardFull)}" target="_blank" rel="noopener">Open full card</a>
-      ${d.videoFull?`<a class="btn ghost" href="${esc(d.videoFull)}" target="_blank" rel="noopener">Open the ${esc(d.videoKind||"video")}</a>`:""}</div>
-      ${d.videoFull?`<div class="count">Today's noon video can go up instead of the card. Open it, save it, and attach it.</div>`:""}
+      <ol class="steps" style="margin-top:10px"><li>Open the community and tap post.</li><li>Copy the photo below and paste it in (or attach the saved photo).</li><li>Copy the post text and paste it.</li><li>Leave "also post to followers" off.</li><li>Post, then reply to your own post with Reply 1 and Reply 2.</li></ol></div>`;
+  h+=`<div class="box"><p class="label">The photo</p>${d.img?`<img class="card" src="${d.img}" alt="${esc(d.alt||"")}">`:`<div class="warn">Photo preview missing.</div>`}
+      <div class="count">${esc(d.imageCredit||"")}</div>
+      <div class="row"><button onclick="copyImage(DAY.img)">Copy photo</button><a class="btn ghost" href="${esc(d.imageFull)}" target="_blank" rel="noopener">Open full photo</a></div>
       ${d.alt?`<div class="row"><button class="ghost" onclick="copyText(DAY.alt)">Copy alt text</button></div>`:""}</div>`;
   h+=`<div class="box"><p class="label">Post text</p><div class="text">${esc(d.post)}</div>
       <div class="count">${d.post.length} characters</div>
