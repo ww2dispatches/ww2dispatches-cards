@@ -14,7 +14,7 @@ export async function onRequestGet({ request, env }) {
   const t = now(env, request);
   const daily = dailyOpen(t);
   const commemorative = commemorativeOpen(t);
-  const base = { now: t.toISOString(), next: nextSlot(t), upcoming: upcomingSlots(t), flashNext: flashUpcoming(t), prices: priceTable() };
+  const base = { now: t.toISOString(), next: nextSlot(t), upcoming: upcomingSlots(t), flashNext: flashUpcoming(t, 16), prices: priceTable() };
 
   const player = await signedInPlayer(env, request);
   if (!player) return json({ ...base, player: null, envelopes: daily, commemorative, priority: 0, waiting: [], pulls: [], intercept: await interceptSummary(env, request, null, t) });

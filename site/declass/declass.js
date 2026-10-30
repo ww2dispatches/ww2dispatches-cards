@@ -307,13 +307,11 @@
       nextText = 'Next file arrives ' + when + localTime(ST.next);
     }
     $('nextFile').textContent = nextText;
-    // Incoming Flash traffic (30 Oct 2026): the next Flash days, names and dates only. The card itself
-    // stays sealed until it posts.
+    // Incoming Flash traffic (30 Oct 2026, slimmed the same day): one line with the next Flash day; tap
+    // for the full calendar. Names and dates only; the card stays sealed until it posts.
     const fx = (ST && ST.flashNext) || [];
-    const untilText = iso => { const d = Math.round((new Date(iso).setHours(0, 0, 0, 0) - new Date().setHours(0, 0, 0, 0)) / 86400000);
-      return d <= 0 ? 'Today' : d === 1 ? 'Tomorrow' : 'In ' + d + ' days'; };
-    $('flashNext').innerHTML = fx.length ? `<h2>Incoming Flash traffic <small>Always Top Secret · everyone gets one</small></h2><div class="fxrow">${fx.map(e =>
-      `<div class="fx"><div class="fxcard"><span class="fxtape">FLASH</span><span class="fxseal">Sealed until<br>${esc(new Date(e.at).toLocaleDateString([], { day: 'numeric', month: 'short' }))}</span><span class="holo"></span></div><b>${esc(e.name)}</b><span>${esc(untilText(e.at))}</span></div>`).join('')}</div>` : '';
+    $('flashNext').innerHTML = fx.length ? `<button class="fxline" id="fxLine" type="button"><span class="ft">FLASH</span><span class="fw"><b>${esc(fx[0].name)}</b> · ${esc(untilText(fx[0].at).toLowerCase())}</span><span class="fa" aria-hidden="true">›</span></button>` : '';
+    if (fx.length) $('fxLine').onclick = flashCalendar;
     if (window.Intercept) window.Intercept.tile($('icpSlot'));
 
     // the last envelope's cards
@@ -334,10 +332,12 @@
     }).join('');
     // Flash: the rare card that spans all four series, posted only on commemorative days
     const fAll = CAT.filter(c => c.flash), fH = fAll.filter(c => H.has(c.id)).length;
-    $('seriesTiles').insertAdjacentHTML('beforeend', `<button class="tile flash" id="tileFlash" ${fAll.length ? '' : 'disabled'}><i></i><b>Flash</b><span>${fAll.length ? fH + ' of ' + fAll.length : 'None posted yet'}</span><div class="bar"><i style="width:${fAll.length ? fH / fAll.length * 100 : 0}%"></i></div></button>`);
+    const fN = ((ST && ST.flashNext) || [])[0];
+    const fNext = fN ? `<span class="fxnext">Next: ${esc(fN.name)} · ${esc(untilText(fN.at).toLowerCase())}</span>` : '';
+    $('seriesTiles').insertAdjacentHTML('beforeend', `<button class="tile flash" id="tileFlash" ${fAll.length || fN ? '' : 'disabled'}><i></i><b>Flash</b>${fAll.length ? `<span>${fH} of ${fAll.length}</span>` : ''}${fNext || (fAll.length ? '' : '<span>None posted yet</span>')}<div class="bar"><i style="width:${fAll.length ? fH / fAll.length * 100 : 0}%"></i></div></button>`);
     $('seriesTiles').insertAdjacentHTML('beforeend', '<button class="tile wide" id="tileSets" style="border-color:var(--navy)"><b>Sets</b><span>Monthly files and collections</span></button>');
     $('tileSets').onclick = renderSets;
-    $('tileFlash').onclick = () => section('series', 'flash');
+    $('tileFlash').onclick = flashCalendar;
     $('seriesTiles').querySelectorAll('[data-series]').forEach(b => { b.onclick = () => section('series', b.dataset.series); });
     $('yearTiles').innerHTML = ERAS.map(([k, name, span]) => {
       const all = CAT.filter(c => c.kind === 'dispatch' && c.era === k), h = all.filter(c => H.has(c.id)).length;
@@ -1674,6 +1674,22 @@
   };
   const reasonText = x => x.reason === 'envelope' ? 'Envelope opened' : x.reason === 'duplicate' ? 'Duplicate ' + (x.variant === 'living' ? 'living ' : '') + (FNAME[x.finish] || '') + ' ' + ((BYID.get(x.card) || {}).short || '')
     : x.reason === 'request' ? 'Requested ' + (FNAME[x.finish] || '') + ' ' + ((BYID.get(x.card) || {}).short || '') : x.reason === 'intercept' ? 'Intercept puzzle' : x.reason;
+  // Days until a Flash day, in the player's own calendar.
+  function untilText(iso) {
+    const d = Math.round((new Date(iso).setHours(0, 0, 0, 0) - new Date().setHours(0, 0, 0, 0)) / 86400000);
+    return d <= 0 ? 'Today' : d === 1 ? 'Tomorrow' : 'In ' + d + ' days';
+  }
+  // The Flash calendar sheet (Incoming Flash traffic): the coming year of Flash days, names and dates only.
+  function flashCalendar() {
+    const fx = (ST && ST.flashNext) || [];
+    const held = CAT.filter(c => c.flash).length;
+    sheet(`<div class="sheettop"><span class="howstamp">Incoming Flash traffic</span><button class="howx" data-close aria-label="Close">✕</button></div>
+      <p class="sheetnote">On the war's biggest days, at least one a month, we post a Flash card: full art, always Top Secret. Everyone who opens that day's commemorative file gets it. Each card stays sealed until it posts.</p>
+      <ul class="fxcal">${fx.map((e, i) => `<li class="${i === 0 ? 'next' : ''}"><span class="fd">${esc(new Date(e.at).toLocaleDateString([], { day: 'numeric', month: 'short', year: 'numeric' }))}</span><b>${esc(e.name)}</b><span class="fu">${esc(untilText(e.at))}</span></li>`).join('')}</ul>
+      ${held ? '<button class="btn alt" id="fxCards" type="button">Your Flash cards</button> ' : ''}<button class="btn" data-close>Got it</button>`);
+    if (held) $('fxCards').onclick = () => { $('sheet').hidden = true; document.body.style.overflow = ''; section('series', 'flash'); };
+  }
+
   $('intelBtn').onclick = () => {
     const it = ST && ST.intel; if (!it) return;
     const P = ST.prices;

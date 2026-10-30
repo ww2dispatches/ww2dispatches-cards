@@ -968,12 +968,16 @@ html.ztrial #stage2{cursor:zoom-in}
 #sView .nav button{padding:5px 12px}
 #sView .slots4{margin-top:8px}
 
-/* Incoming Flash traffic (30 Oct 2026): sealed Flash cards for the next Flash days, art hidden until they post */
-.fxrow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
-.fx{min-width:0;font-family:var(--type);font-size:11px;color:var(--mute)}
-.fx b{display:block;font-family:var(--display);font-weight:500;font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:var(--ink);margin-top:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.fxcard{position:relative;aspect-ratio:4/5;border-radius:6px;overflow:hidden;background:radial-gradient(120% 90% at 30% 20%,#2c2620,#0d0b09 70%);box-shadow:0 3px 8px rgba(0,0,0,.45);container-type:inline-size}
-.fxtape{position:absolute;right:7cqw;top:8cqw;font-family:var(--display);font-weight:700;font-size:11cqw;letter-spacing:.12em;color:#1B1A17;background:#EFE3C4;padding:1.5cqw 3cqw 1.5cqw 4.5cqw;transform:rotate(-3deg)}
-.fxtape::before{content:"";position:absolute;left:1.6cqw;top:50%;width:1.4cqw;height:1.4cqw;border-radius:50%;background:#A8392E;transform:translateY(-50%)}
-.fxseal{position:absolute;left:8cqw;right:8cqw;bottom:9cqw;font-family:var(--type);font-size:8.5cqw;line-height:1.25;color:#EFE3C4;opacity:.85}
-.fxcard .holo{position:absolute;inset:0;pointer-events:none;background:linear-gradient(var(--ang2,45deg),hsl(0 100% 70%),hsl(50 100% 70%),hsl(140 100% 70%),hsl(200 100% 70%),hsl(280 100% 72%),hsl(340 100% 70%),hsl(0 100% 70%));background-size:300% 300%;background-position:var(--pos,50% 50%);mix-blend-mode:soft-light;opacity:.35}
+/* Incoming Flash traffic (30 Oct 2026, slimmed the same day): one line on home, a calendar sheet on tap */
+.fxline{display:flex;align-items:center;gap:10px;width:100%;margin:6px 0 4px;padding:9px 12px;border:1px solid var(--line);border-radius:6px;background:linear-gradient(90deg,rgba(217,169,62,.08),transparent 60%);color:var(--ink);font-family:var(--type);font-size:14px;cursor:pointer;text-align:left}
+.fxline .ft{flex:none;font-family:var(--display);font-weight:700;font-size:12px;letter-spacing:.12em;color:#1B1A17;background:#EFE3C4;padding:2px 7px;transform:rotate(-2deg)}
+.fxline .fw{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.fxline .fw b{font-family:var(--display);font-weight:500;letter-spacing:.04em;text-transform:uppercase}
+.fxline .fa{color:var(--mute);font-size:18px;line-height:1}
+.tile .fxnext{display:block;font-family:var(--type);font-size:12px;color:var(--mute);margin-top:2px}
+.fxcal{list-style:none;padding:0 !important;margin:8px 0 14px}
+.fxcal li{display:grid;grid-template-columns:7.6em minmax(0,1fr) auto;gap:10px;align-items:baseline;padding:7px 0;border-bottom:1px dotted currentColor;border-bottom-color:rgba(0,0,0,.25)}
+.fxcal .fd{font-family:var(--type);font-size:13px;white-space:nowrap}
+.fxcal b{font-family:var(--display);font-weight:500;text-transform:uppercase;letter-spacing:.04em;font-size:15px;min-width:0}
+.fxcal .fu{font-family:var(--type);font-size:12px;opacity:.75;white-space:nowrap}
+.fxcal li.next b{color:#A8392E}
