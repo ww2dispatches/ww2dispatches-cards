@@ -952,14 +952,15 @@
       // Duplicates turn into Intel, so a count only shows where extra copies can exist: Top Secret, two or more.
       const fold = info.hasFile && (f === 'gold' || f === 'topsecret') ? '<span class="fold" aria-hidden="true"></span>' : '';
       if (n) return `<button class="s4 f-${f}${variant === viewSel.variant && f === viewSel.finish ? ' cur' : ''}" data-v="${variant}" data-f="${f}">${FNAME[f]}${f === 'topsecret' && n > 1 ? `<small>×${n}</small>` : ''}${fold}</button>`;
-      if (signedIn() && !info.today) return `<button class="s4 off reqs" data-rv="${variant}" data-rf="${f}" title="Request the ${variant === 'living' ? 'Living ' : ''}${FNAME[f]} for ${priceOf(info, variant, f)} Intel">?<small><img class="itok" src="/declass/icons/intel.svg" alt="">${priceOf(info, variant, f)}</small>${fold}</button>`;
+      // Today's cards show their price too (29 Oct 2026, so every sealed square looks the same); tapping one explains.
+      if (signedIn()) return `<button class="s4 off reqs${info.today ? ' today' : ''}" data-rv="${variant}" data-rf="${f}" title="Request the ${variant === 'living' ? 'Living ' : ''}${FNAME[f]} for ${priceOf(info, variant, f)} Intel">?<small><img class="itok" src="/declass/icons/intel.svg" alt="">${priceOf(info, variant, f)}</small>${fold}</button>`;
       return `<div class="s4 off">?<small>Sealed</small>${fold}</div>`;
     }).join('');
     $('slots4').innerHTML = info.flash
       ? `<div class="rowlbl">Flash</div><button class="s4 f-topsecret cur" data-v="still" data-f="topsecret">Top Secret${(h.still.topsecret || 0) > 1 ? `<small>×${h.still.topsecret}</small>` : ''}</button><div class="s4 off flashnote">Always Top Secret</div>`
       : row('still', 'Still') + (info.hasFilm ? row('living', 'Living Card') : '');
     $('slots4').querySelectorAll('button.s4:not(.reqs)').forEach(b => { b.onclick = () => { viewSel = { variant: b.dataset.v, finish: b.dataset.f }; renderView(); }; });
-    $('slots4').querySelectorAll('button.reqs').forEach(b => { b.onclick = () => confirmRequest(info, b.dataset.rv, b.dataset.rf); });
+    $('slots4').querySelectorAll('button.reqs').forEach(b => { b.onclick = () => info.today ? toast("Today's cards can be requested starting tomorrow.") : confirmRequest(info, b.dataset.rv, b.dataset.rf); });
     const mine = pl.filter(p => p.card === id).slice().sort((a, b) => (b.at || '').localeCompare(a.at || ''));
     $('history').innerHTML = `<h3>Pulled ${mine.length} time${mine.length === 1 ? '' : 's'}</h3><ul>${mine.map(p => `<li><span>${p.at ? esc(localDate(p.at)) + ' · ' : ''}${esc(slotName(p.slot) || 'Starter pack')}${p.variant === 'living' ? ' · ▶︎ living' : ''}${p.intel ? ' · +' + p.intel + ' Intel' : ''}</span><span class="fin f-${p.finish}">${FNAME[p.finish]}${p.serial ? ' · Serial ' + ser4(p.serial) : ''}</span></li>`).join('')}</ul>`;
     dfileOpenUI = dfileOpenUI && dfileOpenUI === id ? id : null;

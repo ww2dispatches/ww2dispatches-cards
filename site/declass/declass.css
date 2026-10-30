@@ -927,3 +927,7 @@ button:not(.tr):not(.mini):active,.slotbtn:active,.tile:active,.allbtn:active,.s
 .dvid b{font-family:var(--display);font-weight:700;letter-spacing:.06em;font-size:14px;text-transform:uppercase}
 .dvideo{display:block;width:100%;max-height:70vh;margin-top:12px;background:#000;border-radius:3px}
 .hint .fline{display:block;margin-top:4px;color:var(--brass);font-weight:700}
+
+/* Every finish square the same size whatever it holds (29 Oct 2026). */
+.slots4 .s4{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:54px;box-sizing:border-box;line-height:1.15}
+.slots4 .s4 small{margin-top:3px}
