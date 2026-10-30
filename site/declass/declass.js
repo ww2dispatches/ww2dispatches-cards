@@ -526,7 +526,28 @@
       return tag;
     });
   }
-  let cIntel = null;
+  let cIntel = null, setsBefore = null;
+  // Sets a player has completed right now: monthly files and collections (premium pass, 29 Oct 2026).
+  function completeSets() {
+    const out = new Map();
+    try {
+      const { months, groups } = setsModel();
+      months.forEach(m => { if (m.all && m.held === m.all) out.set('m:' + m.ym, { name: m.name + ' files', kind: 'month', ym: m.ym }); });
+      groups.forEach(([g, list]) => list.forEach(x => { if (x.all && x.held === x.all) out.set(g + ':' + x.name, { name: x.name, kind: g, all: x.all }); }));
+    } catch (e) {}
+    return out;
+  }
+  // The ceremony: the round COMPLETE stamp slams down for each set this envelope finished, one after another.
+  function showComplete(list) {
+    if (!list.length) return;
+    const x = list[0], rest = list.slice(1);
+    const note = x.kind === 'month' ? (x.ym < etMonth(new Date().toISOString()) ? 'Every dispatch from that month is in your dossier. The stamp is yours for good.' : 'Every dispatch so far this month is in your dossier. Hold them all when the month closes and the stamp is yours for good.')
+      : `All ${x.all} ${x.kind === 'Series' ? 'cards in the series' : x.kind === 'Years' ? 'cards from the year' : x.kind === 'Theaters' ? 'cards from the theater' : 'cards'} are in your dossier.`;
+    $('promo').innerHTML = `<div class="promocard"><div class="promostamp setstamp">${stampSVG(x.name.toUpperCase(), stampDate((n => new Date(Date.UTC(n.getFullYear(), n.getMonth(), n.getDate(), 12)))(new Date())))}</div><p class="promokick">SET COMPLETE</p><h2>${esc(x.name)}</h2><p class="sheetnote">${esc(note)}</p><button class="btn" id="promoOk">${rest.length ? 'Next' : 'Carry on'}</button></div>`;
+    $('promo').hidden = false;
+    sfx('stampA'); sfx('goldA', 0.3); sfx('boom', 0.05);
+    $('promoOk').onclick = () => { $('promo').hidden = true; if (rest.length) setTimeout(() => showComplete(rest), 250); };
+  }
   function bumpIntel(n) {
     if (cIntel == null) return;
     const from = cIntel, to = cIntel + n, t0 = performance.now(), el = $('cIntelN'); cIntel = to;
@@ -538,6 +559,7 @@
     pulls = list; cardMode = mode; cardEnv = env || null;
     // The cards are the player's at the tap: add them to the dossier now, so the summary and the
     // card view show them before the next refresh.
+    setsBefore = mode === 'server' && signedIn() ? completeSets() : null; // to spot sets this envelope finishes
     if (mode === 'server' && ST && ST.pulls) { const have = new Set(ST.pulls.map(p => p.id)); ST.pulls = list.filter(p => p.id && !have.has(p.id)).slice().reverse().concat(ST.pulls); }
     revealed = mode === 'starterLocal' ? STARTER.revealed.slice() : list.map(() => false);
     answered = list.map(() => false);
@@ -564,11 +586,14 @@
     if (first && p.cardInfo && p.cardInfo.kind === 'dispatch' && p.variant === 'still' && i === 0) return cardEnv && cardEnv.last ? "Yesterday's dispatch" : "Today's dispatch";
     return cardEnv && cardEnv.deep ? 'From the deep archive' : 'From the archive';
   }
+  // A face down card hints at its finish (premium pass, 29 Oct 2026), the way Hearthstone's backs glow by rarity:
+  // a Silver gives off a faint cool light at its edges, a Gold a warm pulse, a Top Secret or Flash a slow shimmer.
+  const backHint = p => (p.cardInfo && p.cardInfo.flash) || p.finish === 'topsecret' ? ' hint-ts' : p.finish === 'gold' ? ' hint-gold' : p.finish === 'silver' ? ' hint-silver' : '';
   function renderCard(dir) {
     const p = pulls[idx], info = p.cardInfo;
     $('count').textContent = `Card ${idx + 1} of ${pulls.length}`;
     const tag = tags[idx];
-    $('stage').innerHTML = `<div class="flip${revealed[idx] ? ' up' : ''}" id="flip"><div class="face backf"><div class="badge">WW2</div><small>${esc(backText(p, idx))}</small></div><div class="face frontf">${tag ? `<span class="tag ${tag[0]}">${tag[1]}</span>` : ''}${info ? cardFace(info, p.finish, p.variant, p.serial, { puzzle: info.kind === 'namethis' }) : '<p class="sub">This card has left the archive.</p>'}${tag && tag[0] === 'dup gain' ? `<span class="filedst${revealed[idx] ? ' set' : ''}">FILED</span>` : ''}</div></div>`;
+    $('stage').innerHTML = `<div class="flip${revealed[idx] ? ' up' : ''}" id="flip"><div class="face backf${backHint(p)}"><div class="badge">WW2</div><small>${esc(backText(p, idx))}</small></div><div class="face frontf">${tag ? `<span class="tag ${tag[0]}">${tag[1]}</span>` : ''}${info ? cardFace(info, p.finish, p.variant, p.serial, { puzzle: info.kind === 'namethis' }) : '<p class="sub">This card has left the archive.</p>'}${tag && tag[0] === 'dup gain' ? `<span class="filedst${revealed[idx] ? ' set' : ''}">FILED</span>` : ''}</div></div>`;
     const f = $('flip');
     if (dir) { f.classList.add('in'); requestAnimationFrame(() => requestAnimationFrame(() => f.classList.remove('in'))); }
     f.onclick = () => { if (flipDrag.used) { flipDrag.used = false; return; } reveal(); };
@@ -612,6 +637,12 @@
     $('sCards').classList.add('summ');
     $('summary').hidden = false;
     renderSummary();
+    if (setsBefore) {
+      const after = completeSets(), fresh = [...after].filter(([k]) => !setsBefore.has(k)).map(([, v]) => v);
+      setsBefore = null;
+      // months first, then collections; shown once the finale has fanned in
+      if (fresh.length) setTimeout(() => { if ($('sCards').classList.contains('summ')) showComplete(fresh.sort((a, b) => (b.kind === 'month') - (a.kind === 'month'))); }, 2600);
+    }
     window.scrollTo(0, 0);
   }
   // The first pack teaches itself (26 Oct 2026): the first card's turn and swipe hints show as coach pills, once.

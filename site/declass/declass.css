@@ -879,3 +879,17 @@ button:not(.tr):not(.mini):active,.slotbtn:active,.tile:active,.allbtn:active,.s
 .earntot b{font-size:34px;color:var(--brass);letter-spacing:.02em;font-weight:700}
 .earntot .itok{width:26px;height:26px;margin:0}
 #sCards.summ .summary .earntot+.earn{margin-top:4px}
+/* 1 · a face down card hints at its finish */
+.backf.hint-silver{box-shadow:0 0 0 2px rgba(225,232,242,.55),0 0 22px rgba(220,230,245,.35),0 14px 30px rgba(0,0,0,.6)}
+.backf.hint-gold{box-shadow:0 0 0 2px rgba(232,196,90,.85),0 0 30px rgba(255,195,80,.55),0 14px 30px rgba(0,0,0,.6)}
+.backf.hint-ts{box-shadow:0 0 0 2px rgba(255,255,255,.6),0 14px 30px rgba(0,0,0,.6)}
+.backf.hint-ts::before{content:"";position:absolute;inset:-5px;z-index:-1;border-radius:3px;background:conic-gradient(from var(--ha,0deg),#ff7aa8,#ffd86a,#6ef0b0,#7ab0ff,#c98aff,#ff7aa8);filter:blur(7px);opacity:.85}
+@property --ha{syntax:'<angle>';inherits:false;initial-value:0deg}
+@media (prefers-reduced-motion:no-preference){
+  .backf.hint-gold{animation:hgold 1.8s ease-in-out infinite}
+  .backf.hint-ts::before{animation:hts 3s linear infinite}
+}
+@keyframes hgold{50%{box-shadow:0 0 0 2px rgba(240,205,100,1),0 0 44px rgba(255,200,85,.8),0 14px 30px rgba(0,0,0,.6)}}
+@keyframes hts{to{--ha:360deg}}
+/* 4 · set complete: the dated round stamp in brass */
+.promostamp.setstamp{color:#D9A93E;width:190px;height:190px}
