@@ -526,6 +526,14 @@
       return tag;
     });
   }
+  let cIntel = null;
+  function bumpIntel(n) {
+    if (cIntel == null) return;
+    const from = cIntel, to = cIntel + n, t0 = performance.now(), el = $('cIntelN'); cIntel = to;
+    const pill = $('cIntel'); pill.classList.remove('bump'); void pill.offsetWidth; pill.classList.add('bump');
+    const step = t => { const k = Math.min(1, (t - t0) / 500); el.textContent = Math.round(from + (to - from) * k).toLocaleString(); if (k < 1) requestAnimationFrame(step); };
+    requestAnimationFrame(step); sfx('coin');
+  }
   function startCards(list, mode, before, env) {
     pulls = list; cardMode = mode; cardEnv = env || null;
     // The cards are the player's at the tap: add them to the dossier now, so the summary and the
@@ -537,6 +545,11 @@
     // A duplicate that converted shows its Intel on the tag (25 Oct 2026).
     tags = tags.map((t, i) => t && t[0] === 'dup' && list[i].intel ? ['dup gain', 'DUPLICATE · +' + list[i].intel + ' INTEL'] : t);
     idx = Math.max(0, revealed.indexOf(false));
+    // A live Intel tally on the cards screen (premium pass, 29 Oct 2026): it starts at the balance before this
+    // envelope's duplicates, and each converted duplicate's Intel flies up into it as the card turns.
+    const bal = lastEarn && lastEarn.balance != null ? lastEarn.balance : ST && ST.player && typeof ST.player.intel === 'number' ? ST.player.intel : null;
+    cIntel = mode === 'server' && bal != null ? bal - list.reduce((a, p, i) => a + (!revealed[i] && p.intel && tags[i] && tags[i][0] === 'dup gain' ? p.intel : 0), 0) : null;
+    $('cIntel').hidden = cIntel == null; if (cIntel != null) $('cIntelN').textContent = cIntel.toLocaleString();
     renderCard();
     show('sCards');
   }
@@ -555,7 +568,7 @@
     const p = pulls[idx], info = p.cardInfo;
     $('count').textContent = `Card ${idx + 1} of ${pulls.length}`;
     const tag = tags[idx];
-    $('stage').innerHTML = `<div class="flip${revealed[idx] ? ' up' : ''}" id="flip"><div class="face backf"><div class="badge">WW2</div><small>${esc(backText(p, idx))}</small></div><div class="face frontf">${tag ? `<span class="tag ${tag[0]}">${tag[1]}</span>` : ''}${info ? cardFace(info, p.finish, p.variant, p.serial, { puzzle: info.kind === 'namethis' }) : '<p class="sub">This card has left the archive.</p>'}</div></div>`;
+    $('stage').innerHTML = `<div class="flip${revealed[idx] ? ' up' : ''}" id="flip"><div class="face backf"><div class="badge">WW2</div><small>${esc(backText(p, idx))}</small></div><div class="face frontf">${tag ? `<span class="tag ${tag[0]}">${tag[1]}</span>` : ''}${info ? cardFace(info, p.finish, p.variant, p.serial, { puzzle: info.kind === 'namethis' }) : '<p class="sub">This card has left the archive.</p>'}${tag && tag[0] === 'dup gain' ? `<span class="filedst${revealed[idx] ? ' set' : ''}">FILED</span>` : ''}</div></div>`;
     const f = $('flip');
     if (dir) { f.classList.add('in'); requestAnimationFrame(() => requestAnimationFrame(() => f.classList.remove('in'))); }
     f.onclick = () => { if (flipDrag.used) { flipDrag.used = false; return; } reveal(); };
@@ -658,11 +671,18 @@
   }
   // A duplicate's Intel floats up off the card as it turns (25 Oct 2026). Never blocks a swipe.
   function intelChip(n) {
+    const st = document.querySelector('#flip .filedst'); if (st) setTimeout(() => { st.classList.add('hit'); sfx('stampA'); }, 520);
     const c = document.createElement('div');
     c.className = 'ichip'; c.setAttribute('aria-hidden', 'true');
     c.innerHTML = '<img class="itok" src="/declass/icons/intel.svg" alt="">+' + n + ' INTEL';
-    $('stage').appendChild(c);
-    setTimeout(() => c.remove(), 2200);
+    const pill = $('cIntel');
+    if (cIntel == null || pill.hidden || !c.animate || matchMedia('(prefers-reduced-motion: reduce)').matches) { $('stage').appendChild(c); setTimeout(() => c.remove(), 2200); bumpIntel(n); return; }
+    // the chip rises off the card, then flies up into the Intel tally, which counts up as it lands
+    const sr = $('stage').getBoundingClientRect(), pr = pill.getBoundingClientRect();
+    c.classList.add('fly'); c.style.left = (sr.left + sr.width / 2) + 'px'; c.style.top = (sr.top + sr.height * 0.44) + 'px';
+    document.body.appendChild(c);
+    const dx = pr.left + pr.width / 2 - (sr.left + sr.width / 2), dy = pr.top + pr.height / 2 - (sr.top + sr.height * 0.44);
+    c.animate([{ opacity: 0, transform: 'translate(-50%,-50%) scale(.6)' }, { opacity: 1, transform: 'translate(-50%,calc(-50% - 46px)) scale(1)', offset: .35 }, { opacity: 1, transform: 'translate(-50%,calc(-50% - 46px)) scale(1)', offset: .55 }, { opacity: .2, transform: `translate(calc(-50% + ${dx}px),calc(-50% + ${dy}px)) scale(.45)` }], { duration: 1500, delay: 900, easing: 'cubic-bezier(.4,0,.2,1)', fill: 'both' }).onfinish = () => { c.remove(); bumpIntel(n); };
   }
   function answerNT() {
     const p = pulls[idx];
@@ -693,8 +713,31 @@
     const H = holdingsNow();
     const ids = pulls.map(p => p.card);
     // Every card in the envelope (a starter pack has five, a commemorative file four), each in the finish pulled.
-    $('summaryRow').innerHTML = pulls.map(p => miniHTML(p.card, H, p.finish)).join('');
-    wireMinis($('summaryRow'), ids);
+    // The finale (premium pass, 29 Oct 2026): the best card sits in the middle, a little larger; the cards
+    // fan in one after another with a soft paper sound each; the Intel earned counts up.
+    const R = p => (p.cardInfo && p.cardInfo.flash ? 5 : FIN.indexOf(p.finish)) + (p.variant === 'living' ? 0.5 : 0);
+    const sorted = pulls.slice().sort((a, b) => R(b) - R(a)), order = new Array(sorted.length), mid = Math.floor(sorted.length / 2);
+    sorted.forEach((p, k) => { const off = Math.ceil(k / 2) * (k % 2 ? -1 : 1); order[mid + off] = p; });
+    const arranged = order.filter(Boolean);
+    $('summaryRow').innerHTML = arranged.map(p => miniHTML(p.card, H, p.finish)).join('');
+    const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    [...$('summaryRow').children].forEach((el, k) => {
+      if (arranged[k] === sorted[0] && sorted.length > 1) el.classList.add('best');
+      const delay = k === arranged.indexOf(sorted[0]) ? arranged.length * 0.16 : k * 0.16; // the best card lands last
+      el.style.setProperty('--fd', delay + 's'); el.style.setProperty('--fr', ((k - mid) * 5) + 'deg');
+      if (!still) sfx('place', 0.15 + delay + 0.35);
+    });
+    $('summaryRow').classList.remove('fan'); void $('summaryRow').offsetWidth; $('summaryRow').classList.add('fan');
+    const tot = lastEarn && lastEarn.earned ? lastEarn.earned.reduce((a, x) => a + (x.delta || 0), 0) : 0;
+    const et = $('earnTot');
+    et.hidden = !(cardMode === 'server' && cardEnv && tot > 0);
+    if (!et.hidden) {
+      const b = et.querySelector('b'); b.textContent = '+0';
+      const t0 = performance.now() + (arranged.length + 1) * 160 + 300;
+      const step = t => { const k = Math.max(0, Math.min(1, (t - t0) / 700)); b.textContent = '+' + Math.round(tot * k); if (k < 1) requestAnimationFrame(step); else sfx('coin'); };
+      requestAnimationFrame(step);
+    }
+    wireMinis($('summaryRow'), arranged.map(p => p.card));
   }
   function go(n, jump) {
     if (holding || $('sCards').classList.contains('summ')) return;
@@ -1020,6 +1063,7 @@
     charge(t) { const sw = nz(t, 0.78, 'bandpass', 300, 1.6, 0.24, 0.55); sw.f.frequency.setValueAtTime(260, t); sw.f.frequency.exponentialRampToValueAtTime(3200, t + 0.76); tone(t + 0.02, 58, 0.14, 'sine', 0.55, 0.003, 40); tone(t + 0.4, 58, 0.14, 'sine', 0.7, 0.003, 40); },
     boom(t) { tone(t, 82, 0.7, 'sine', 0.75, 0.003, 38); nz(t, 0.22, 'lowpass', 900, 0.7, 0.45); },
     page(t) { const r = nz(t, 0.2, 'bandpass', 2600, 0.7, 0.12, 0.05); r.f.frequency.setValueAtTime(3200, t); r.f.frequency.exponentialRampToValueAtTime(1400, t + 0.2); },
+    coin(t) { [1567.98, 2093].forEach((f, i) => chime(t + i * 0.06, f, 0.35, 0.08)); },
     place(t) { tone(t, 140, 0.1, 'sine', 0.22, 0.002, 70); nz(t, 0.05, 'lowpass', 700, 0.7, 0.14); },
     rustle(t) { for (let i = 0; i < 6; i++) nz(t + i * 0.05 + Math.random() * 0.03, 0.06, 'bandpass', 1500 + Math.random() * 2500, 0.9, 0.18, 0.01); },
     teletype(t) { for (let i = 0; i < 9; i++) nz(t + i * 0.055 + Math.random() * 0.012, 0.018, 'bandpass', 2000 + Math.random() * 1500, 2.5, 0.45); bell(t + 0.58, 1975.5, 1.1, 0.25); },
