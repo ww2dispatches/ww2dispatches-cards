@@ -37,7 +37,8 @@
   // ---------- constants ----------
   const FIN = ['copper', 'silver', 'gold', 'topsecret'];
   const FNAME = { copper: 'Copper', silver: 'Silver', gold: 'Gold', topsecret: 'Top Secret' };
-  const SERIES = [['battle', 'Battle Lines', '#B04A3E'], ['home', 'Home Front', '#5E6B3A'], ['blue', 'Blueprint', '#3D5884'], ['state', 'Statecraft', '#B8862B'], ['namethis', 'Name This', '#5B4B8A']];
+  // Series colors lifted for the dark Night Dispatch page (29 Oct 2026); same hues as the brand colors, lighter so bars read on dark.
+  const SERIES = [['battle', 'Battle Lines', '#D8644F'], ['home', 'Home Front', '#9DAA62'], ['blue', 'Blueprint', '#7FA0D6'], ['state', 'Statecraft', '#D9A93E'], ['namethis', 'Name This', '#9A8AD6']];
   const ERAS = [['leadup', 'The lead up', '1933 to August 1939'], ['1939'], ['1940'], ['1941'], ['1942'], ['1943'], ['1944'], ['1945'], ['aftermath', 'The aftermath', 'September 1945 on']];
   const IC = { x: '<path fill="currentColor" stroke="none" d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.8-6.3L5.4 21H2.3l7.2-8.2L2 3h6.3l4.4 5.8zm-1.1 16.2h1.7L7.4 4.7H5.6z"/>', instagram: '<rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="12" cy="12" r="3.6"/><circle cx="17" cy="7" r=".6" fill="currentColor"/>', threads: '<path d="M18.6 8.2C17.5 5.1 15.1 3.6 12 3.6 7 3.6 4 7.1 4 12s3 8.4 8 8.4c4.3 0 7.1-2.4 7.1-5.8 0-3.1-2.4-4.9-5.8-4.9-3 0-5 1.5-5 3.6 0 1.8 1.5 3.1 3.5 3.1 3.2 0 4.8-2.6 4.8-7"/>', facebook: '<path fill="currentColor" stroke="none" d="M13.6 21.5v-8h2.7l.4-3.1h-3.1V8.5c0-.9.3-1.5 1.6-1.5h1.6V4.2c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4.1v2.2H7.7v3.1h2.7v8z"/>', youtube: '<rect x="3.5" y="6" width="17" height="12" rx="3.5"/><path d="M10.5 9.5v5l4.2-2.5z" fill="currentColor"/>', tiktok: '<path d="M13 4v10.5a3 3 0 1 1-3-3M13 4c.5 2.5 2.3 4 5 4"/>' };
   const PNAME = { x: 'X', instagram: 'Instagram', threads: 'Threads', facebook: 'Facebook', youtube: 'YouTube', tiktok: 'TikTok' };
@@ -323,7 +324,7 @@
     $('seriesTiles').querySelectorAll('[data-series]').forEach(b => { b.onclick = () => section('series', b.dataset.series); });
     $('yearTiles').innerHTML = ERAS.map(([k, name, span]) => {
       const all = CAT.filter(c => c.kind === 'dispatch' && c.era === k), h = all.filter(c => H.has(c.id)).length;
-      return `<button class="tile" data-year="${k}" ${all.length ? '' : 'disabled'}><i style="background:var(--ink)"></i><b>${name || k}</b><span>${all.length ? h + ' of ' + all.length : 'None posted yet'}</span>${span ? `<span>${span}</span>` : ''}<div class="bar"><i style="background:var(--ink);width:${all.length ? h / all.length * 100 : 0}%"></i></div></button>`;
+      return `<button class="tile" data-year="${k}" ${all.length ? '' : 'disabled'}><i style="background:#CDB98A"></i><b>${name || k}</b><span>${all.length ? h + ' of ' + all.length : 'None posted yet'}</span>${span ? `<span>${span}</span>` : ''}<div class="bar"><i style="background:#CDB98A;width:${all.length ? h / all.length * 100 : 0}%"></i></div></button>`;
     }).join('');
     $('yearTiles').querySelectorAll('[data-year]').forEach(b => { b.onclick = () => section('year', b.dataset.year); });
     $('allSub').textContent = `${have} of ${total} cards`;
@@ -1204,10 +1205,10 @@
     });
     const groups = [
       ['Series', SERIES.map(([k, name, col]) => [name, col, c => c.series === k, ['series', k]])],
-      ['Years', ERAS.map(([k, name]) => [name || k, '#1A1612', c => c.kind === 'dispatch' && c.era === k, ['year', k]])],
+      ['Years', ERAS.map(([k, name]) => [name || k, '#CDB98A', c => c.kind === 'dispatch' && c.era === k, ['year', k]])],
       // Fixed lists, always shown (25 Oct 2026): nothing pops in or out; empty ones are greyed.
-      ['Theaters', [['Western Europe', 'Western Europe'], ['Mediterranean and North Africa', 'Mediterranean and North Africa'], ['Atlantic', 'Atlantic'], ['Pacific', 'Pacific'], ['Home Front', 'home front'], ['Worldwide', 'worldwide']].map(([n, t]) => [n, '#2F6E6A', c => (c.theater || []).includes(t)])],
-      ['Nations', ['US', 'Britain', 'Soviet Union', 'Germany', 'Japan'].map(n => [n, '#6b3d2e', c => (c.nations || []).includes(n)])],
+      ['Theaters', [['Western Europe', 'Western Europe'], ['Mediterranean and North Africa', 'Mediterranean and North Africa'], ['Atlantic', 'Atlantic'], ['Pacific', 'Pacific'], ['Home Front', 'home front'], ['Worldwide', 'worldwide']].map(([n, t]) => [n, '#5FA8A2', c => (c.theater || []).includes(t)])],
+      ['Nations', ['US', 'Britain', 'Soviet Union', 'Germany', 'Japan'].map(n => [n, '#B9785F', c => (c.nations || []).includes(n)])],
     ].map(([g, list]) => [g, list.map(([name, col, fn, open]) => {
       const all = CAT.filter(fn), held = all.filter(c => H.has(c.id)).length;
       return { name, col, all: all.length, held, pins: PINS.filter(([k]) => held >= k), next: PINS.find(([k]) => held < k), open: open || ['set', { title: name, fn, by: 'date' }] };
@@ -1226,7 +1227,7 @@
       const full = m.held === m.all;
       const end = monthEnd(m.ym).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', timeZone: 'UTC' });
       const txt = !m.closed ? (full ? 'Currently complete · the stamp lands when the month closes' : `${m.held} of ${m.all} Declassed · Closes ${end}`) : `${m.held} of ${m.all} Declassed · Closed, still collectable`;
-      return `<div class="srow go" ${go(m.open)} style="--c:#7a5c2e"><div class="nm"><b>${esc(m.name)} files</b><small class="${full ? 'cc' : m.all - m.held === 1 ? 'near' : ''}">${txt}</small><i><em style="width:${m.all ? m.held / m.all * 100 : 0}%"></em></i></div></div>`;
+      return `<div class="srow go" ${go(m.open)} style="--c:#C99A55"><div class="nm"><b>${esc(m.name)} files</b><small class="${full ? 'cc' : m.all - m.held === 1 ? 'near' : ''}">${txt}</small><i><em style="width:${m.all ? m.held / m.all * 100 : 0}%"></em></i></div></div>`;
     };
     // The current month always shows; unfinished past months fold by calendar year (25 Oct 2026).
     months.filter(m => !m.stamp && !m.closed).forEach(m => { h += monthRow(m); });
