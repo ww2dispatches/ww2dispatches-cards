@@ -796,3 +796,16 @@ h2{flex-wrap:wrap;row-gap:2px}
 #sCards .viewer>.hint,#sCards .viewer>.tiltask{order:-1}
 #sCards .viewer>.hint{margin:0 0 10px;min-height:0}
 #sCards .tray{margin-top:14px;width:100%;align-self:stretch}
+
+/* Visual pass step 4 (29 Oct 2026): the opening. The flap swings up in 3D and stays visible above the
+   envelope; then real card backs rise out from inside, clipped at the envelope's top edge so they look
+   like they are being pulled out of it. */
+.big .env{overflow:visible;perspective:800px}
+.big .env .flap{transition:transform 1.3s cubic-bezier(.25,.8,.3,1),filter 1.3s}
+.big.go .env .flap{z-index:0;filter:brightness(.92) drop-shadow(0 -2px 3px rgba(0,0,0,.3))}
+.cardsclip{position:absolute;left:-20%;right:-20%;bottom:100%;height:240%;overflow:hidden;pointer-events:none;z-index:4}
+.big .cardsclip .cardsout{left:50%;top:100%;bottom:auto;width:28.6%;transform:translate(-50%,4%);opacity:1;transition:transform 1s .8s cubic-bezier(.2,.8,.3,1)}
+.big.go .cardsclip .cardsout{opacity:1;transform:translate(-50%,-78%)}
+.big .cardsout i{display:grid;place-items:center;container-type:inline-size;border:1px solid #cbbd98;box-shadow:0 8px 18px rgba(0,0,0,.45)}
+.big .cardsout i::after{content:"WW2";width:46%;aspect-ratio:1;border-radius:50%;background:#B04A3E;color:#FFF8EA;display:grid;place-items:center;font-family:var(--display);font-weight:700;font-size:13cqw;border:3.2cqw solid #EDE4CF;outline:1.3cqw solid #B04A3E;box-sizing:border-box}
+.big.fade{opacity:0;transition:opacity .35s}

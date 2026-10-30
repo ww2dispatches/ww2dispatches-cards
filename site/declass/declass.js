@@ -453,7 +453,7 @@
     const before = holdingsNow();
     const b = $('bigEnv');
     b.className = 'big';
-    b.innerHTML = `<div class="env${envClass(env)}">${envHTML(i, env)}</div><div class="cardsout"><i></i><i></i><i></i></div>`;
+    b.innerHTML = `<div class="env${envClass(env)}">${envHTML(i, env)}</div><div class="cardsclip"><div class="cardsout"><i></i><i></i><i></i></div></div>`;
     $('tearing').textContent = env.kind === 'commemorative' ? (env.title || env.stamp) : 'Declassifying…';
     duckMusic(true); sfx('slide'); sfx('stampA', 0.25); sfx('seal', 0.95);
     $('tearing').classList.toggle('goldt', env.kind === 'commemorative');
@@ -462,8 +462,9 @@
     req.then(d => d.pulls.forEach(p => { if (p.cardInfo) { new Image().src = p.cardInfo.img; if (p.variant === 'living' && p.cardInfo.filmMp4) { const v = document.createElement('video'); v.preload = 'auto'; v.muted = true; v.src = p.cardInfo.filmMp4; } } })).catch(() => {});
     setTimeout(() => b.classList.add('stamp'), 250);
     setTimeout(() => { b.classList.add('go'); $('tearing').textContent = env.kind === 'request' ? 'Your requested file.' : env.kind === 'intercept' ? "Your pick from today's files." : env.kind === 'starter' ? 'Five cards inside.' : env.kind === 'commemorative' ? (env.title || env.stamp) : 'Three cards inside.'; }, 950);
-    setTimeout(() => b.classList.add('fade'), 2100);
-    Promise.all([req, delay(2850)]).then(([d]) => {
+    // the flap swings open, then the cards rise out of the envelope (visual pass step 4, 29 Oct 2026)
+    setTimeout(() => b.classList.add('fade'), 3000);
+    Promise.all([req, delay(3350)]).then(([d]) => {
       busy = false;
       if (env.kind === 'starter' && !signedIn()) {
         STARTER = { token: d.token, pulls: d.pulls, revealed: d.pulls.map(() => false) };
