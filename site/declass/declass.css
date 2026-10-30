@@ -646,7 +646,10 @@ body{background-color:#17140f;background-attachment:fixed;
 .srow,.syear summary{background:#1c1814}.syear summary{border-left-color:#C99A55}.srow.go:active{background:#2a241d}
 .srow small.cc{color:#a9c77a}
 .stp{color:#d3b07a}
-.filters button.on,.filters .subj.on select{background:#EDE4CF;color:#17140f;border-color:#EDE4CF}
+.filters button.on,.filters .subj.on select{background-color:#EDE4CF;color:#17140f;border-color:#EDE4CF}
+/* Special Elite sits high in its line box (tall ascent, deep descent), so pills get a little more room on top to look centered */
+.filters button,.fmnav button{line-height:1.2;padding:.62em .95em .38em}
+.filters .subj select{line-height:1.2;padding-top:8px;padding-bottom:4px}
 /* thumbnails sit on the desk; the better finishes give off a little light */
 .mini .thumb,.tray .tr img{box-shadow:0 6px 16px rgba(0,0,0,.55)}
 .mini .thumb.f-gold,.tray .tr img.f-gold{border-color:#d9ae3a;box-shadow:0 0 14px rgba(227,190,80,.35),0 6px 16px rgba(0,0,0,.55)}
