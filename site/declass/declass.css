@@ -893,3 +893,4 @@ button:not(.tr):not(.mini):active,.slotbtn:active,.tile:active,.allbtn:active,.s
 @keyframes hts{to{--ha:360deg}}
 /* 4 · set complete: the dated round stamp in brass */
 .promostamp.setstamp{color:#D9A93E;width:190px;height:190px}
+#sCards .viewer>.tiltask{margin:0 0 16px}
