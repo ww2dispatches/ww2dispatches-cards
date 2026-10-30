@@ -1006,3 +1006,4 @@ html.ztrial #stage2{cursor:zoom-in}
 .cup .cupln .r{font-size:14px}
 .cup button.cupln:active{transform:translateY(1px)}
 .cup .cupln.icpsoon{border:2px dashed #5e6f8c;padding:8px 11px} /* same width as the envelope rows, so the dashes match (30 Oct 2026) */
+.slotbtn span.ph{display:inline;padding:0;white-space:nowrap;font:inherit;color:inherit}

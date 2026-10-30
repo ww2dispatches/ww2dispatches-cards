@@ -77,7 +77,8 @@
     const ms = Date.parse(iso) - Date.now();
     if (ms <= 0) return 'closing now';
     const h = Math.floor(ms / 3600000), m = Math.floor(ms % 3600000 / 60000);
-    return h >= 24 ? Math.floor(h / 24) + ' day' + (h >= 48 ? 's' : '') + ' left' : (h ? h + 'h ' : '') + m + 'm left';
+    // Hours only from 2 hours out, so envelope rows stay on one line (30 Oct 2026).
+    return h >= 24 ? Math.floor(h / 24) + ' day' + (h >= 48 ? 's' : '') + ' left' : h >= 2 ? h + 'h left' : (h ? h + 'h ' : '') + m + 'm left';
   }
   const label = info => info.kind === 'namethis' ? 'Name This' : 'No. ' + pad3(info.num);
   function slotName(key) {
@@ -227,7 +228,9 @@
   function slotButton(cls, title, sub, onclick, help) {
     const b = document.createElement('button');
     b.className = 'slotbtn ' + cls;
-    b.innerHTML = `<b>${title}</b><span>${help ? `<span class="help" data-help="${help}" aria-label="What is this?" title="What is this?">i</span>` : ''}${sub}</span>`;
+    // The small line wraps only between whole phrases, never mid phrase (30 Oct 2026).
+    const subH = String(sub).split(' · ').map((x, i, all) => `<span class="ph">${x}${i < all.length - 1 ? ' ·' : ''}</span>`).join(' ');
+    b.innerHTML = `<b>${title}${help ? `<span class="help" data-help="${help}" aria-label="What is this?" title="What is this?">i</span>` : ''}</b><span>${subH}</span>`;
     b.onclick = e => { const h = e.target.closest('.help'); if (h) { e.stopPropagation(); openHow(h.dataset.help); return; } onclick(b); };
     return b;
   }
@@ -273,7 +276,7 @@
       const openedAt = e => { const x = myPulls().find(q => q.slot === e.key && q.at); return x ? x.at : e.at; };
       for (const e of ST.envelopes.filter(e => !isToday(e.at) && !e.opened)) {
         files.appendChild(slotButton(locked ? 'locked' : 'live', 'Last call',
-          (etHour(e.at) < 12 ? "Yesterday's morning" : "Yesterday's evening") + (e.deep ? ' · Sunday deep archive' : '') + ' · Closes ' + localTime(e.closes) + ' · ' + leftText(e.closes),
+          (etHour(e.at) < 12 ? 'Yesterday morning' : 'Yesterday evening') + (e.deep ? ' · Sunday deep archive' : '') + ' · ' + leftText(e.closes),
           b => guard(b, () => pick(Object.assign({ last: true }, e))), 'fm-lastcall'));
       }
       const today = ST.envelopes.filter(e => isToday(e.at)).map(e => Object.assign({ out: true }, e))
