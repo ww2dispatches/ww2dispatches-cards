@@ -1,13 +1,13 @@
 # WW2 Dispatches: Lunch Drop
 
-Brian's daily hand post into an X Community at lunch, around 1 p.m. Mountain, plus the page that makes it a two minute job. Added 30 Oct 2026 to help X grow: Communities put a card in front of history people who don't follow the account yet, the same way the History Threads community does on Threads. The Sunday Lunch Drop run follows this doc. Shared setup (writing rules, GitHub, Schedule Board tasks, push reminders) is in the Project Brief.
+Brian's daily hand post into an X Community at lunch, around 1 p.m. Mountain, plus the page that makes it a two minute job. Added 30 Oct 2026 to help X grow: Communities put the day's story in front of history people who don't follow the account yet, the same way the History Threads community does on Threads. The Sunday Lunch Drop run follows this doc. Shared setup (writing rules, GitHub, Schedule Board tasks, push reminders) is in the Project Brief.
 
 ## What Brian does (about 2 minutes, then replies)
 Open the pinned **Lunch Drop** page on his phone. It opens on today. Tap the community button (it opens X), copy the photo and the post text into a new Community post, leave "also post to followers" off, post, then add Reply 1 and Reply 2 under it. He spends the rest of lunch answering comments on that post and the morning posts, using the quick facts on the page. **Mark posted** turns the day's tab green on that device.
 
 ## The Lunch Drop page
 * Pinned artifact **Lunch Drop**: https://claude.ai/artifact/VvRUuFWpKjJaqbWefzhqdg (slug ea3563a7-5bda-400f-bdbb-6f737401195f). Rebuilt every Sunday, one tab per day, opening on today in Denver time.
-* Built by `python3 renderer/lunch.py` from `lunch/YYYY-MM-DD.json` (named for the week's Sunday) into `lunch/lunch-page.html`, one self contained file with the card previews embedded. Publish it to the same artifact with the Artifact tool's publish from files (`index.html` from that file), passing the slug and the live version (read it first with get_artifact). Never create a second Lunch Drop artifact.
+* Built by `python3 renderer/lunch.py` from `lunch/YYYY-MM-DD.json` (named for the week's Sunday) into `lunch/lunch-page.html`, one self contained file with the photo previews embedded. Publish it to the same artifact with the Artifact tool's publish from files (`index.html` from that file), passing the slug and the live version (read it first with get_artifact). Never create a second Lunch Drop artifact.
 * Each day shows: the series stamp, number, and title; a button that opens the day's X Community; the photo with its credit, Copy photo, and Open full photo (the raw GitHub link, for press and hold to save); Copy alt text; the post text; each reply; the quick facts; the sources; Mark posted.
 * The script prints PROBLEM lines (missing fields, a missing image, a posted card used as the image, a dash, a link in the post). Fix every one before publishing.
 
@@ -25,10 +25,10 @@ Written for history people in a Community, not the general feed, so it is differ
 
 ## The replies
 * **Reply 1:** one more strong detail or what happened next, from the facts.
-* **Reply 2:** the photo credit (the dispatch's `photoCredit`) and the sources by name, no links.
+* **Reply 2:** the credit for the day's photo (its `imageCredit`) and the sources by name, no links.
 * A third reply only when the facts hold a second strong detail worth it. Never more than three.
 * **Quick facts:** five to eight short lines from the facts block that Brian can paste when he answers comments.
-* **alt:** the card's alt text from its dispatch JSON.
+* **alt:** plain alt text describing the day's photo.
 
 ## The record (`lunch/YYYY-MM-DD.json`)
 `week` (the Sunday) and `days`, one per day Sunday to Saturday, each with: date, dispatch (the file id), num, series, title, community, image (`lunch/img/YYYY-MM-DD.jpg`), imageCredit, somber, post, replies, alt (written for this photo), facts, sources ({title, url}, including the photo's page). Brian's posts are by hand, so Buffer never sees them; the record is what the Tuesday review can compare against when Brian shares results.
