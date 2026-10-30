@@ -304,7 +304,7 @@
     let last = [];
     if (signedIn() && pulls.length) { const k = pulls[0].slot; last = pulls.filter(x => x.slot === k).slice().reverse(); }
     else if (STARTER) last = STARTER.pulls.filter((x, i) => STARTER.revealed[i]);
-    $('recent').innerHTML = last.length ? `<h2>Last envelope <small>${esc(signedIn() ? slotName(last[0].slot) + ' · ' + localDate(last[0].at) : 'Starter pack')}</small></h2><div class="recent">${last.map(x => miniHTML(x.card, holdingsNow())).join('')}</div>` : '';
+    $('recent').innerHTML = last.length ? `<h2>Last envelope <small>${esc(signedIn() ? slotName(last[0].slot) + ' · ' + localDate(last[0].at) : 'Starter pack')}</small></h2><div class="recent">${last.map(x => miniHTML(x.card, holdingsNow())).join('')}</div>${legendHTML()}` : '';
     wireMinis($('recent'), last.map(x => x.card));
 
     // dossier tiles
@@ -324,7 +324,7 @@
     $('seriesTiles').querySelectorAll('[data-series]').forEach(b => { b.onclick = () => section('series', b.dataset.series); });
     $('yearTiles').innerHTML = ERAS.map(([k, name, span]) => {
       const all = CAT.filter(c => c.kind === 'dispatch' && c.era === k), h = all.filter(c => H.has(c.id)).length;
-      return `<button class="tile" data-year="${k}" ${all.length ? '' : 'disabled'}><i style="background:#CDB98A"></i><b>${name || k}</b><span>${all.length ? h + ' of ' + all.length : 'None posted yet'}</span>${span ? `<span>${span}</span>` : ''}<div class="bar"><i style="background:#CDB98A;width:${all.length ? h / all.length * 100 : 0}%"></i></div></button>`;
+      return `<button class="tile" data-year="${k}" ${all.length ? '' : 'disabled'}><i style="background:#CDB98A"></i><b>${name || k}</b><span>${all.length ? h + ' of ' + all.length : 'None yet'}</span>${span ? `<span class="rng">${span}</span>` : ''}<div class="bar"><i style="background:#CDB98A;width:${all.length ? h / all.length * 100 : 0}%"></i></div></button>`;
     }).join('');
     $('yearTiles').querySelectorAll('[data-year]').forEach(b => { b.onclick = () => section('year', b.dataset.year); });
     $('allSub').textContent = `${have} of ${total} cards`;
@@ -337,6 +337,11 @@
   const holdingsNow = () => holdings(myPulls());
 
   // ---------- small cards in grids ----------
+  // A key for the finish squares under each card (visual pass step 1, 29 Oct 2026): new players don't know what the squares mean.
+  function legendHTML(flash) {
+    const items = flash ? [['flash', 'Flash · always Top Secret']] : FIN.map(f => [f, FNAME[f]]);
+    return `<p class="fd fleg" aria-label="What the squares mean">${items.map(([f, n]) => `<span><i class="${f === 'flash' ? 'flash' : 'f-' + f} on"></i>${esc(n)}</span>`).join('')}${flash ? '' : '<span><b>▶︎</b>Living Card</span>'}</p>`;
+  }
   function miniHTML(id, H, shown) {
     const info = BYID.get(id);
     if (!info) return '';
@@ -402,7 +407,8 @@
     // A set one card short shows that card first, ready to request (25 Oct 2026).
     const oneShort = fromSets && list.length > 1 && list.length - h === 1 ? list.find(c => !H.has(c.id)) : null;
     if (oneShort) list = [oneShort].concat(list.filter(c => c !== oneShort));
-    $('sectionSub').textContent = `${h} of ${list.length} cards · Swatches show the finishes you hold, ▶︎ a Living Card`;
+    $('sectionSub').textContent = `${h} of ${list.length} cards`;
+    $('sectionLeg').innerHTML = legendHTML(key === 'flash');
     $('sectionGrid').innerHTML = (oneShort ? `<p class="oneshort">One card to go: <b>${esc(oneShort.short)}</b>${signedIn() && !oneShort.today ? ` · <button class="linkish" id="reqOne">Request this card · ${priceOf(oneShort, 'still', 'copper')} Intel${haveIntel() < priceOf(oneShort, 'still', 'copper') ? ' (you have ' + haveIntel() + ')' : ''}</button>` : ''}</p>` : '')
       + (list.length ? list.map(c => miniHTML(c.id, H)).join('') : '<p class="sub" style="grid-column:1/-1">Nothing here yet.</p>');
     if (oneShort && $('reqOne')) $('reqOne').onclick = () => requestPicker(oneShort.id);

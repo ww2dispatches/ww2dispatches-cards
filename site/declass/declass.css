@@ -687,3 +687,48 @@ body{background-color:#17140f;background-attachment:fixed;
 .tourlit{box-shadow:0 0 0 5px var(--paper),0 0 0 8px var(--red)}
 .shpc.off b{background:#2a241d;border-color:#5a4f41}
 .landsmall{color:#a99d83}
+
+/* ============ Visual pass step 1 (29 Oct 2026): a type floor ============
+   Nothing functional under 14px on a phone, body copy 16px or more. Envelope and card artwork
+   (labels, stamps, seals, card faces) keep their sizes, since they are drawn to fit the envelope. */
+.wordmark small,.top .wordmark small,.streak,#sHome .top .streak,#sHome .top .streak span,.statrow .streak span,
+.sub,h2 small,.linkbtn,.slotbtn span,.signbar span,.nextfile,.tile span,#yearTiles .tile span,.allbtn span,.filters button,
+.mini .no,.tearing,.count,.backf small,.hint,.summary .sumsub,.s4.flashnote,.rowlbl,.ctext .kick,.ctext .m,.ntclue,.prow span,.notyet,
+.history,.landfrom,.landtag,.landsmall,.toast,.foot,.shpc small,.shlbl,.shline,.srow small,.snote,.tiltask,.fmnav button,.fmnote,
+.syear summary small,.stat,.earn,.sheetline,.intlog li,.reqopt span,.mini .reqline,.oneshort,.tourbub .tstep,.tourbub .tskip,.fnote .k,
+.icptile span{font-size:14px}
+.s4 small{font-size:13px}
+.slimrow .intelst span:last-child,.intelst span:last-child{font-size:14px}
+/* display caps labels */
+.back,.nav button,.ctext .more,.history h3,.tiltask button,.howtab,.fnote button,.mini .nm,.slotbtn::after,.icptile::after{font-size:14px}
+.slotbtn.locked::after{font-size:13px}
+.howbtn,.tbtn{font-size:13px}
+.tag,.s4,.ctext h4,.howstamp,.sets2 h2,.fmodds th,.fmodds tr.tot td,.filters .subj span,.btn.reqgo small,.stat .sl,.history .fin{font-size:13px}
+.howcard h3{font-size:15px}
+.btn{font-size:15px}
+.fd b{font-size:12px}
+/* body copy */
+.ctext .story p,.howlead{font-size:17px}
+.howcard ul,.howmore,.fmenv p,.fmodds,.tourbub p,.fnote p,.sheetnote,.coachp{font-size:16px}
+/* the tighter spots: let long lines wrap instead of spilling */
+.slotbtn b,.slotbtn span{padding-right:128px}
+.slotbtn.locked b,.slotbtn.locked span{padding-right:150px}
+.mini .no{margin-top:5px}
+/* finish key under card grids (new players don't know what the squares mean) */
+.fleg{flex-wrap:wrap;justify-content:center;gap:6px 14px;margin:10px 0 14px;font-family:var(--type);font-size:14px;color:var(--mute)}
+.fleg span{display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.fleg i{width:13px;height:13px}
+.fleg b{font-size:12px;margin:0;color:var(--red)}
+#sectionLeg .fleg{margin-top:-8px}
+/* desktop sign in: Google's iframe button sometimes shows its fallback text beside it; hide the fallback once the iframe is there */
+@media (hover:hover) and (pointer:fine){.gslot div:has(> iframe) > :not(iframe){display:none!important}}
+/* caps labels up to the floor too */
+.tbtn,.howbtn,.tag,.s4,.s4 small,.ctext h4,.howstamp,.sets2 h2,.fmodds th,.fmodds tr.tot td,.filters .subj span,.btn.reqgo small,.history .fin,.slotbtn.locked::after{font-size:14px}
+.slimrow .stat .sl,.slimrow .rankst b,.slimrow #rankT.long{font-size:14px}
+.icptile span{font-size:14px}
+/* narrow phones: header hint wraps under the streak, section headings let their note drop below */
+#sHome .top .streak span{white-space:normal;max-width:150px;margin:0 auto}
+h2{flex-wrap:wrap;row-gap:2px}
+#icpSlot .icptile span{font-size:14px}
+@media (max-width:400px){#yearTiles .tile span.rng{display:none}}
+#yearTiles .tile{display:flex;flex-direction:column;justify-content:flex-start}#yearTiles .tile .bar{margin-top:auto;width:100%}#yearTiles .tile b{margin-bottom:2px}
