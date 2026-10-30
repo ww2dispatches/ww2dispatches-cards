@@ -1,10 +1,11 @@
 /* Declass game page. Ported from the Declass mockup (Field Telegram paper) and the Card Finishes
    mockup (frames, mats, sheens). One page, several screens. */
 :root{
-  --paper:#EDE4CF; --paper2:#E3D8BE; --env:#F3EBD6; --ink:#1A1612; --navy:#3D5884; --red:#B04A3E; --olive:#5E6B3A; --brass:#B8862B; --violet:#5B4B8A;
-  --mute:#6B6354; --line:#C9BC9E; --copper:#9C5B2E;
+  /* Night Dispatch (29 Oct 2026): the page is a dark desk; envelopes, cards, and sheets stay paper (see the end of this file) */
+  --paper:#17140f; --paper2:#2a241d; --env:#1c1814; --ink:#EDE4CF; --navy:#9fbbe8; --red:#D8644F; --olive:#9DAA62; --brass:#D9A93E; --violet:#a89be0;
+  --mute:#b9ad92; --line:#6a5c4a; --copper:#9C5B2E;
   --display:'Oswald',Impact,'Arial Narrow',sans-serif; --type:'Special Elite','Courier New',monospace; --body:Georgia,serif;
-  color-scheme:light;
+  color-scheme:dark;
 }
 *{box-sizing:border-box}
 [hidden]{display:none!important}
@@ -613,3 +614,283 @@ button.stat{cursor:pointer;color:var(--mute)}
 #sOpen .theatre{min-height:0;padding-top:clamp(90px,14vh,130px)}
 #sOpen .tearing{margin-top:18px;font-size:14px}
 .fnote.inline{position:static;margin:12px auto 4px;left:auto;right:auto;bottom:auto;box-shadow:0 4px 12px rgba(26,22,18,.25)}
+
+/* ============ Night Dispatch theme (29 Oct 2026, visual pass step 2, option B "Darkroom") ============
+   One theme only: the page is a dark desk under a warm red safelight, matching the share picture.
+   Paper things stay paper: envelopes, cards and card backs, the How to play and info sheets, and the
+   story panel in the card view. They take the old cream tokens back so their text stays dark ink. */
+.env,.mini-env,.cf,.backf,.tray .tr.back,.big .cardsout,.howcard,.ctext{
+  --paper:#EDE4CF;--paper2:#E3D8BE;--env:#F3EBD6;--ink:#1A1612;--navy:#3D5884;--red:#B04A3E;--olive:#5E6B3A;--brass:#B8862B;--violet:#5B4B8A;
+  --mute:#5f5849;--line:#C9BC9E;color-scheme:light}
+body{background-color:#17140f;background-attachment:fixed;
+  background-image:radial-gradient(ellipse at 50% 46%,rgba(176,74,62,.19),rgba(0,0,0,0) 70%),repeating-linear-gradient(0deg,rgba(237,228,207,.035) 0 1px,transparent 1px 6px)}
+.top,.statrow{border-bottom-color:#B04A3E}
+/* buttons keep the brand red with cream lettering */
+.btn{background:#B04A3E;color:#FFF4E2}.btn.alt{background:transparent;color:var(--red);border-color:var(--red)}
+.btn.danger{background:#a8382c}
+.nav button.fin:not(:disabled){background:#B04A3E}
+/* today's files */
+.slotbtn{background:#1c1814;border-color:#7a6b56}
+.slotbtn.done{opacity:.85}
+.slotbtn.live,.slotbtn.pend{background:linear-gradient(180deg,#2a1914,#211512);border-color:var(--red);box-shadow:0 0 0 1px rgba(216,100,79,.2),0 0 18px rgba(216,100,79,.14)}
+.slotbtn.locked,.slotbtn.wait{background:transparent}
+.slotbtn.prio{background:linear-gradient(180deg,#3a2c1a,#2e2214);border-color:#C9A774}.slotbtn.prio b,.slotbtn.prio.live::after{color:#E3C48E}
+.slotbtn.starter{background:#18211a;border-color:#6f9a62}.slotbtn.starter b,.slotbtn.starter.live::after{color:#a9cf98}
+.slotbtn.comm{background:#0e0c0a}
+.signbar{background:#241713}
+.icptile{background:#0b1220;border-color:#4d6ea3}
+/* tiles, bars, rows */
+.tile,.allbtn{background:#1c1814;border-color:#6a5c4a}.allbtn{border-color:#8a7a62}
+.bar,.srow i{background:#4a4036;border:0;box-shadow:inset 0 0 0 1px rgba(237,228,207,.18)}
+.rbar{background:#4a4036;box-shadow:inset 0 0 0 1px rgba(237,228,207,.18)}
+.srow,.syear summary{background:#1c1814}.syear summary{border-left-color:#C99A55}.srow.go:active{background:#2a241d}
+.srow small.cc{color:#a9c77a}
+.stp{color:#d3b07a}
+.filters button.on,.filters .subj.on select{background-color:#EDE4CF;color:#17140f;border-color:#EDE4CF}
+/* Special Elite sits high in its line box (tall ascent, deep descent), so pills get a little more room on top to look centered */
+.filters button,.fmnav button{line-height:1.2;padding:.62em .95em .38em}
+.filters .subj select{line-height:1.2;padding-top:8px;padding-bottom:4px}
+/* thumbnails sit on the desk; the better finishes give off a little light */
+.mini .thumb,.tray .tr img{box-shadow:0 6px 16px rgba(0,0,0,.55)}
+.mini .thumb.f-gold,.tray .tr img.f-gold{border-color:#d9ae3a;box-shadow:0 0 14px rgba(227,190,80,.35),0 6px 16px rgba(0,0,0,.55)}
+.mini .thumb.f-silver,.tray .tr img.f-silver{border-color:#c3c8cf;box-shadow:0 0 12px rgba(220,225,232,.22),0 6px 16px rgba(0,0,0,.55)}
+.mini .thumb.f-topsecret,.mini .thumb.flash,.tray .tr img.f-topsecret,.tray .tr img.flash{box-shadow:0 0 14px rgba(160,190,255,.3),0 6px 16px rgba(0,0,0,.55)}
+.mini.sealed .thumb{background:repeating-linear-gradient(135deg,#1e1a16 0 10px,#191612 10px 20px);color:#4a4136}
+.fd i{border-color:#7a6b56}.fd b{color:#5a4f41}
+/* envelopes and cards cast deeper shadows on the dark desk */
+.env{box-shadow:0 2px 0 #a99b78,0 16px 34px rgba(0,0,0,.6)}
+.env.deep{box-shadow:0 0 0 3px var(--navy),0 2px 0 #a99b78,0 16px 34px rgba(0,0,0,.6)}
+.env.starter{box-shadow:0 0 0 3px #2f5a2a,0 2px 0 #a99b78,0 16px 34px rgba(0,0,0,.6)}
+.env.commem{box-shadow:0 0 0 1px #6e520f,0 0 30px rgba(227,194,94,.18),0 16px 34px rgba(0,0,0,.7)}
+.env .seal{color:#EDE4CF}
+.landenv .env{box-shadow:0 2px 0 #a99b78,0 18px 40px rgba(0,0,0,.7),0 0 60px rgba(216,100,79,.12)}
+.backf{box-shadow:0 14px 30px rgba(0,0,0,.6)}
+.cf .frame{box-shadow:0 14px 34px rgba(0,0,0,.7)}
+.cf.f-gold .frame{box-shadow:0 0 0 1px rgba(255,220,120,.25),0 0 46px rgba(227,190,80,.28),0 14px 34px rgba(0,0,0,.7)}
+.cf.f-topsecret .frame{box-shadow:0 0 0 1px rgba(200,215,255,.25),0 0 46px rgba(160,190,255,.22),0 14px 34px rgba(0,0,0,.7)}
+.cf.flash .frame{box-shadow:0 0 40px rgba(200,170,255,.22),0 14px 34px rgba(0,0,0,.7)}
+/* card view: finish slots, and the story on a paper panel */
+.s4:not(.off){color:#FFF8EA}.s4.f-topsecret{color:#B04A3E}
+.s4.off{border-color:#7a6b56}.s4.cur{outline-color:#EDE4CF}
+.history .fin,.tag,.backf .badge,.tray .tr.back i{color:#FFF8EA}
+.ctext{background:#EDE4CF;color:#1A1612;padding:18px 18px 16px;border-radius:3px;box-shadow:0 12px 30px rgba(0,0,0,.55)}
+.icons a{background:#f4ecd8}
+/* toolbar buttons that are switched off */
+.tbtn.off,.sndbtn.off{color:#8f8573;border-color:#5a4f41}
+/* overlays */
+.how{background:rgba(8,6,5,.7)}
+.howcard{color:#1A1612;border-color:#cbbd98;box-shadow:0 14px 40px rgba(0,0,0,.6)}
+.promo{background:rgba(18,15,12,.96)}
+.toast,.coachp,.fnote{background:#EDE4CF;color:#1A1612}
+.fnote button{background:#17140f;color:#EDE4CF}
+.tourdim{background:rgba(8,6,5,.66)}
+.tourlit{box-shadow:0 0 0 5px var(--paper),0 0 0 8px var(--red)}
+.shpc.off b{background:#2a241d;border-color:#5a4f41}
+.landsmall{color:#a99d83}
+
+/* ============ Visual pass step 1 (29 Oct 2026): a type floor ============
+   Nothing functional under 14px on a phone, body copy 16px or more. Envelope and card artwork
+   (labels, stamps, seals, card faces) keep their sizes, since they are drawn to fit the envelope. */
+.wordmark small,.top .wordmark small,.streak,#sHome .top .streak,#sHome .top .streak span,.statrow .streak span,
+.sub,h2 small,.linkbtn,.slotbtn span,.signbar span,.nextfile,.tile span,#yearTiles .tile span,.allbtn span,.filters button,
+.mini .no,.tearing,.count,.backf small,.hint,.summary .sumsub,.s4.flashnote,.rowlbl,.ctext .kick,.ctext .m,.ntclue,.prow span,.notyet,
+.history,.landfrom,.landtag,.landsmall,.toast,.foot,.shpc small,.shlbl,.shline,.srow small,.snote,.tiltask,.fmnav button,.fmnote,
+.syear summary small,.stat,.earn,.sheetline,.intlog li,.reqopt span,.mini .reqline,.oneshort,.tourbub .tstep,.tourbub .tskip,.fnote .k,
+.icptile span{font-size:14px}
+.s4 small{font-size:13px}
+.slimrow .intelst span:last-child,.intelst span:last-child{font-size:14px}
+/* display caps labels */
+.back,.nav button,.ctext .more,.history h3,.tiltask button,.howtab,.fnote button,.mini .nm,.slotbtn::after,.icptile::after{font-size:14px}
+.slotbtn.locked::after{font-size:13px}
+.howbtn,.tbtn{font-size:13px}
+.tag,.s4,.ctext h4,.howstamp,.sets2 h2,.fmodds th,.fmodds tr.tot td,.filters .subj span,.btn.reqgo small,.stat .sl,.history .fin{font-size:13px}
+.howcard h3{font-size:15px}
+.btn{font-size:15px}
+.fd b{font-size:12px}
+/* body copy */
+.ctext .story p,.howlead{font-size:17px}
+.howcard ul,.howmore,.fmenv p,.fmodds,.tourbub p,.fnote p,.sheetnote,.coachp{font-size:16px}
+/* the tighter spots: let long lines wrap instead of spilling */
+.slotbtn b,.slotbtn span{padding-right:128px}
+.slotbtn.locked b,.slotbtn.locked span{padding-right:150px}
+.mini .no{margin-top:5px}
+/* finish key under card grids (new players don't know what the squares mean) */
+.fleg{margin:10px 0 14px;font-family:var(--type);font-size:14px;color:var(--mute)}
+.fleg .fd{flex-wrap:wrap;justify-content:center;gap:6px 16px;margin:0}.fleg .fd+.fd{margin-top:6px}
+.fleg span{display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.fleg i{width:13px;height:13px}
+.fleg b{font-size:12px;margin:0;color:var(--red)}
+#sectionLeg .fleg{margin-top:-8px}
+/* desktop sign in: Google's iframe button sometimes shows its fallback text beside it; hide the fallback once the iframe is there */
+@media (hover:hover) and (pointer:fine){.gslot div:has(> iframe) > :not(iframe){display:none!important}}
+/* caps labels up to the floor too */
+.tbtn,.howbtn,.tag,.s4,.s4 small,.ctext h4,.howstamp,.sets2 h2,.fmodds th,.fmodds tr.tot td,.filters .subj span,.btn.reqgo small,.history .fin,.slotbtn.locked::after{font-size:14px}
+.slimrow .stat .sl,.slimrow .rankst b,.slimrow #rankT.long{font-size:14px}
+.icptile span{font-size:14px}
+/* narrow phones: header hint wraps under the streak, section headings let their note drop below */
+#sHome .top .streak span{white-space:normal;max-width:150px;margin:0 auto}
+h2{flex-wrap:wrap;row-gap:2px}
+#icpSlot .icptile span{font-size:14px}
+@media (max-width:400px){#yearTiles .tile span.rng{display:none}}
+#yearTiles .tile{display:flex;flex-direction:column;justify-content:flex-start}#yearTiles .tile .bar{margin-top:auto;width:100%}#yearTiles .tile b{margin-bottom:2px}
+
+/* card grids: every card starts at the top of its cell (a stretched button centers its content, which pushed
+   held cards down beside a sealed card with a request line), and the request line stays on one line */
+.grid,.recent,.savegrid{align-items:start}
+.mini .reqline{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* Home header, option C (29 Oct 2026): rank beside the DECLASS name; streak and Intel share one slim row below,
+   both laid out the same way (big number with a small label, a short line underneath). The rank badge always
+   sits right beside the rank name: they share one line that never wraps, and long names step down a size. */
+#sHome .top{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0 10px;border-bottom:1px solid var(--line)}
+#sHome .top .wordmark{flex:0 0 auto}
+.hrank{display:flex;flex-direction:column;align-items:flex-end;gap:4px;min-width:0;background:none;border:0;padding:0;cursor:pointer;color:var(--ink);text-align:right}
+.hl{font-family:var(--display);font-weight:500;font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);line-height:1}
+.hv{display:inline-flex;align-items:center;gap:7px;white-space:nowrap;max-width:100%}
+.hrank .rkicon{height:22px;width:auto;max-width:40px;flex:0 0 auto}
+.hrank #rankT{font-family:var(--display);font-weight:700;font-size:17px;line-height:1.1;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.hrank #rankT.long{font-size:15px;letter-spacing:0}
+@media (max-width:374px){.hrank #rankT{font-size:16px}.hrank #rankT.long{font-size:14px}}
+.hrank .rbar{display:block;width:120px;max-width:100%;height:6px;margin:0;border-radius:3px}
+.hrow{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 0;border-bottom:3px double #B04A3E}
+.hstat{display:flex;flex-direction:column;gap:3px;min-width:0;font-family:var(--body)}
+.hintel{align-items:flex-end;text-align:right;background:none;border:0;padding:0;cursor:pointer;color:var(--ink)}
+.hstat .hv{align-items:baseline}
+.hstat .hv b{font-family:var(--display);font-weight:700;font-size:26px;line-height:1}
+.hstreak .hv b{color:var(--red)}.hintel .hv b{color:var(--brass)}
+.hintel .itok{width:20px;height:20px;align-self:center;margin:0;vertical-align:0}
+.hintel #intelN.long{font-size:22px}
+.hs{font-family:var(--type);font-size:14px;color:var(--mute);line-height:1.2}
+
+/* Visual pass step 3 (29 Oct 2026): three real cards spill out of the starter envelope on the landing page.
+   The intro line steps aside to make room; How to play still explains the game. */
+#sLanding.fanned .landline{display:none}
+#sLanding.fanned .landtag{margin-bottom:8px}
+#sLanding.fanned .landenv{position:relative;margin-top:162px}
+.landenv .env{position:relative;z-index:1}
+.lfan{position:absolute;left:50%;top:-150px;width:0;height:0;z-index:2;pointer-events:none}
+.lfan>div{position:absolute;width:132px;left:-66px;top:0;transform-origin:50% 100%}
+.lfan .l{transform:translateX(-92px) translateY(26px) rotate(-13deg)}
+.lfan .r{transform:translateX(92px) translateY(26px) rotate(13deg)}
+.lfan .m{transform:translateY(-8px);z-index:2}
+.lfan .cf .frame{box-shadow:0 12px 28px rgba(0,0,0,.65)}
+.lfan .m .cf .frame{box-shadow:0 0 0 1px rgba(255,220,120,.25),0 0 40px rgba(227,190,80,.3),0 12px 28px rgba(0,0,0,.65)}
+@media (max-width:400px){.lfan>div{width:118px;left:-59px}.lfan .l{transform:translateX(-80px) translateY(26px) rotate(-13deg)}.lfan .r{transform:translateX(80px) translateY(26px) rotate(13deg)}#sLanding.fanned .landenv{margin-top:148px}.lfan{top:-136px}}
+@media (prefers-reduced-motion:no-preference){
+  /* the cards shake with the envelope, and the Gold's sheen sweeps slowly across */
+  #sLanding.fanned .landenv .env{animation:none}
+  #sLanding.fanned .landenv{animation:rattle 3.2s ease-in-out infinite;transform-origin:50% 70%}
+  .lfan .m .sheen{background-size:300% 100%;animation:lsheen 3.6s ease-in-out infinite}
+  .lfan .m .frame::after{background-size:300% 100%;animation:lsheen 3.6s ease-in-out infinite}
+}
+@keyframes lsheen{0%{background-position:100% 0}55%,100%{background-position:0 0}}
+
+/* Turning cards (29 Oct 2026, after Brian's iPhone check): Done and "Card 1 of 5" share one row, the tip sits
+   above the card, and the card scales to the screen height so the tray of cards below is never cut off. */
+#sCards.on{display:grid;grid-template-columns:auto 1fr;align-items:center;column-gap:10px}
+#sCards>*{grid-column:1/-1}
+#sCards>#backCards{grid-column:1}
+#sCards>#count{grid-column:2;text-align:right;margin:0}
+#sCards.summ>#backCards{grid-column:1/-1}
+#sCards .viewer{display:flex;flex-direction:column;width:100%;max-width:min(340px,calc((100vh - 215px) / 1.5));max-width:min(340px,calc((100svh - 215px) / 1.5))}
+#sCards .viewer>.hint,#sCards .viewer>.tiltask{order:-1}
+#sCards .viewer>.hint{margin:0 0 10px;min-height:0}
+#sCards .tray{margin-top:14px;width:100%;align-self:stretch}
+
+/* Visual pass step 4 (29 Oct 2026): the opening. The flap swings up in 3D and stays visible above the
+   envelope; then real card backs rise out from inside, clipped at the envelope's top edge so they look
+   like they are being pulled out of it. */
+.big .env{overflow:visible;perspective:800px}
+.big .env .flap{transition:transform 1.3s cubic-bezier(.25,.8,.3,1),filter 1.3s}
+.big.go .env .flap{z-index:0;filter:brightness(.92) drop-shadow(0 -2px 3px rgba(0,0,0,.3))}
+.cardsclip{position:absolute;left:-20%;right:-20%;bottom:100%;height:240%;overflow:hidden;pointer-events:none;z-index:4}
+.big .cardsclip .cardsout{left:50%;top:100%;bottom:auto;width:28.6%;transform:translate(-50%,4%);opacity:1;transition:transform 1s .8s cubic-bezier(.2,.8,.3,1)}
+.big.go .cardsclip .cardsout{opacity:1;transform:translate(-50%,-78%)}
+.big .cardsout i{display:grid;place-items:center;container-type:inline-size;border:1px solid #cbbd98;box-shadow:0 8px 18px rgba(0,0,0,.45)}
+.big .cardsout i::after{content:"WW2";width:46%;aspect-ratio:1;border-radius:50%;background:#B04A3E;color:#FFF8EA;display:grid;place-items:center;font-family:var(--display);font-weight:700;font-size:13cqw;border:3.2cqw solid #EDE4CF;outline:1.3cqw solid #B04A3E;box-sizing:border-box}
+.big.fade{opacity:0;transition:opacity .35s}
+/* drag the seal to tear it open: the seal slides with the finger and the flap starts to lift */
+.stack .env{perspective:700px}
+.stack .env .seal{touch-action:none;cursor:grab}
+.stack .env.tearing{transform:none}
+.stack .env.tearing .seal{transition:none;transform:translate(calc(-50% + var(--tx,0px)),-50%) rotate(calc(-6deg + var(--p,0) * 24deg)) scale(calc(1 - var(--p,0) * .15))}
+.stack .env.tearing .flap{transition:none;transform:rotateX(calc(var(--p,0) * -32deg))}
+.stack .env.snap .seal,.stack .env.snap .flap{transition:transform .25s ease-out}
+
+/* Visual pass step 5 (29 Oct 2026): the held reveal for a Gold, Top Secret, or Flash card, and for the best
+   card of a starter pack. The card trembles while a glow builds behind it, then turns with a bigger glow and a
+   sheen that sweeps once across the frame. */
+#stage::before{content:"";position:absolute;inset:-26%;border-radius:50%;background:radial-gradient(closest-side,rgba(255,214,120,.95),rgba(255,180,80,.4) 60%,transparent 82%);opacity:0;pointer-events:none;transform:scale(.8)}
+#stage.charging::before{animation:charge .8s ease-out forwards}
+@keyframes charge{to{opacity:1;transform:scale(1.05)}}
+@media (prefers-reduced-motion:no-preference){
+  .flip.charge{animation:tremble .8s ease-in}
+}
+@keyframes tremble{0%{transform:none}20%{transform:translate(-1px,0) rotate(-.4deg)}35%{transform:translate(1px,-1px) rotate(.4deg)}50%{transform:translate(-2px,1px) rotate(-.7deg) scale(1.01)}65%{transform:translate(2px,-1px) rotate(.7deg) scale(1.015)}80%{transform:translate(-3px,0) rotate(-1deg) scale(1.02)}100%{transform:translate(0,-2px) scale(1.03)}}
+.glow.held{animation-duration:2.6s}
+.glow.silver.held{--gc:rgba(255,255,255,.95)}
+.glow.gold.held{--gc:rgba(255,200,80,1)}
+.cf.sweep .sheen{display:block;background-size:260% 100%;animation:sweep 1.2s .55s ease-out both}
+.cf.f-gold.sweep .frame::after{background-size:260% 100%;animation:sweep 1.2s .55s ease-out both}
+@keyframes sweep{from{background-position:120% 0}to{background-position:-20% 0}}
+
+/* Premium pass (29 Oct 2026) */
+/* 6 · screens fade in instead of snapping */
+@media (prefers-reduced-motion:no-preference){.screen.on{animation:scrIn .24s ease-out}}
+@keyframes scrIn{from{opacity:0}to{opacity:1}}
+/* 9 · buttons press down under the finger */
+button,.env,.slotbtn,.mini,.tile,.allbtn,.srow.go{transition:transform .09s ease-out}
+button:not(.tr):not(.mini):active,.slotbtn:active,.tile:active,.allbtn:active,.srow.go:active{transform:scale(.97)}
+.mini:active{transform:scale(.96)}
+.stack .env:active:not(.tearing){transform:scale(.985)}
+.btn:active{filter:brightness(.92)}
+/* the loading screen: a DECLASS stamp thumps down while the files open */
+#sLoading{text-align:center;padding-top:90px}
+.loadstamp{display:inline-block;font-family:var(--display);font-weight:700;font-size:30px;letter-spacing:.2em;color:var(--red);border:4px double var(--red);padding:4px 14px 2px 18px;transform:rotate(-6deg);margin-bottom:18px;opacity:.9}
+@media (prefers-reduced-motion:no-preference){.loadstamp{animation:lstamp 1.6s cubic-bezier(.2,1.4,.4,1) infinite}}
+@keyframes lstamp{0%{transform:rotate(-6deg) scale(1.8);opacity:0}22%{transform:rotate(-6deg) scale(1);opacity:.95}80%{transform:rotate(-6deg) scale(1);opacity:.95}100%{transform:rotate(-6deg) scale(1);opacity:0}}
+/* 1 · a card being turned by hand */
+#stage{touch-action:pan-y}
+#flip{will-change:transform}
+#stage{user-select:none;-webkit-user-select:none}
+/* 4 · duplicates become Intel you can see: a FILED stamp lands on the card, and its Intel flies into a live tally */
+#sCards.on{grid-template-columns:auto 1fr auto}
+#sCards>#cIntel{grid-column:2;justify-self:center}
+#sCards>#count{grid-column:3}
+#sCards.summ>#cIntel{display:none}
+.cintel{display:inline-flex;align-items:center;gap:6px;font-family:var(--display);color:var(--mute);font-size:14px;letter-spacing:.1em;text-transform:uppercase}
+.cintel b{font-size:20px;color:var(--brass);letter-spacing:.02em}
+.cintel .itok{width:18px;height:18px;margin:0}
+.cintel.bump{animation:cbump .5s ease-out}
+@keyframes cbump{30%{transform:scale(1.18)}100%{transform:scale(1)}}
+.ichip.fly{position:fixed;z-index:80;animation:none;opacity:0;transform:translate(-50%,-50%)}
+.frontf .filedst{position:absolute;left:50%;top:58%;z-index:7;transform:translate(-50%,-50%) rotate(-14deg) scale(1.9);opacity:0;pointer-events:none;
+  font-family:var(--display);font-weight:700;font-size:44px;letter-spacing:.22em;color:#2f4f86;border:5px double #2f4f86;border-radius:4px;padding:2px 10px 0 18px;mix-blend-mode:multiply}
+.frontf .filedst.set{opacity:.8;transform:translate(-50%,-50%) rotate(-14deg) scale(1)}
+.frontf .filedst.hit{animation:fslam .32s cubic-bezier(.3,1.5,.5,1) forwards}
+@keyframes fslam{to{opacity:.8;transform:translate(-50%,-50%) rotate(-14deg) scale(1)}}
+@media (max-width:400px){.frontf .filedst{font-size:36px}}
+/* 5 · the finale: cards fan in one after another, the best one larger in the middle, the Intel counts up */
+#summaryRow .mini{transform:scale(var(--sc,1));transform-origin:50% 60%}
+#summaryRow .mini.best{--sc:1.1;z-index:2;position:relative}
+@media (prefers-reduced-motion:no-preference){#summaryRow.fan .mini{animation:fanIn .55s var(--fd,0s) cubic-bezier(.2,.9,.3,1.15) both}}
+@keyframes fanIn{from{opacity:0;transform:translateY(46px) rotate(var(--fr,0deg)) scale(.82)}to{opacity:1;transform:scale(var(--sc,1))}}
+.earntot{display:flex;align-items:center;justify-content:center;gap:8px;margin:18px 0 0;font-family:var(--display);font-weight:500;font-size:18px;letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
+.earntot b{font-size:34px;color:var(--brass);letter-spacing:.02em;font-weight:700}
+.earntot .itok{width:26px;height:26px;margin:0}
+#sCards.summ .summary .earntot+.earn{margin-top:4px}
+/* 1 · a face down card hints at its finish */
+.backf.hint-silver{box-shadow:0 0 0 2px rgba(225,232,242,.55),0 0 22px rgba(220,230,245,.35),0 14px 30px rgba(0,0,0,.6)}
+.backf.hint-gold{box-shadow:0 0 0 2px rgba(232,196,90,.85),0 0 30px rgba(255,195,80,.55),0 14px 30px rgba(0,0,0,.6)}
+.backf.hint-ts{box-shadow:0 0 0 2px rgba(255,255,255,.6),0 14px 30px rgba(0,0,0,.6)}
+.backf.hint-ts::before{content:"";position:absolute;inset:-5px;z-index:-1;border-radius:3px;background:conic-gradient(from var(--ha,0deg),#ff7aa8,#ffd86a,#6ef0b0,#7ab0ff,#c98aff,#ff7aa8);filter:blur(7px);opacity:.85}
+@property --ha{syntax:'<angle>';inherits:false;initial-value:0deg}
+@media (prefers-reduced-motion:no-preference){
+  .backf.hint-gold{animation:hgold 1.8s ease-in-out infinite}
+  .backf.hint-ts::before{animation:hts 3s linear infinite}
+}
+@keyframes hgold{50%{box-shadow:0 0 0 2px rgba(240,205,100,1),0 0 44px rgba(255,200,85,.8),0 14px 30px rgba(0,0,0,.6)}}
+@keyframes hts{to{--ha:360deg}}
+/* 4 · set complete: the dated round stamp in brass */
+.promostamp.setstamp{color:#D9A93E;width:190px;height:190px}
+#sCards .viewer>.tiltask{margin:0 0 16px}

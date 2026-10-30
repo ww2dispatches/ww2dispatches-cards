@@ -19,8 +19,8 @@ body.night .sheettop .howstamp{color:var(--red)}
 .icptile.soon{cursor:default;background:transparent;border:2px dashed #8a97ad}
 /* Text colored and faded like an envelope that hasn't arrived yet (.slotbtn.wait). */
 .icptile.soon b{color:var(--ink);opacity:.6}
-.icptile.soon span{color:var(--mute);opacity:.6;padding-right:80px}
-.icptile.soon::after{content:"SOON";color:#8a97ad}
+.icptile.soon span{color:var(--mute);opacity:.6;padding-right:130px}
+.icptile.soon::after{content:"COMING SOON";color:#8a97ad}
 
 /* the screen */
 .icp .icptop{display:flex;justify-content:space-between;align-items:center}

@@ -6,7 +6,8 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Declass</title>
 <meta name="description" content="Declass: a WW2 Dispatches game. Open a classified file with every dispatch and build your dossier of the war.">
-<meta name="theme-color" content="#EDE4CF">
+<meta name="theme-color" content="#17140f">
+<meta name="color-scheme" content="dark">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/declass/manifest.webmanifest">
@@ -15,13 +16,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Special+Elite&display=swap">
-<link rel="stylesheet" href="/declass/declass.css?v=5376f776">
-<link rel="stylesheet" href="/declass/intercept.css?v=e7832322">
+<link rel="stylesheet" href="/declass/declass.css?v=2c9147e8">
+<link rel="stylesheet" href="/declass/intercept.css?v=456273ca">
 </head>
 <body>
 <div class="wrap">
 
-<section class="screen" id="sLoading"><p class="sub" style="padding-top:60px">Opening the files…</p></section>
+<section class="screen" id="sLoading"><div class="loadstamp" aria-hidden="true">DECLASS</div><p class="sub">Opening the files…</p></section>
 
 <section class="screen soon" id="sSoon">
   <h1 class="landname">DECLASS</h1>
@@ -58,11 +59,11 @@
   <div class="toolbar"><button class="tbtn howbtn" data-how type="button">How to play</button><button class="tbtn sndbtn" data-t="music" type="button"></button><button class="tbtn sndbtn" data-t="sfx" type="button"></button></div>
   <header class="top">
     <div class="wordmark">DECLASS<small>a WW2 Dispatches game</small></div>
-    <div class="stat streak"><b id="streakN">0</b>Day Streak<span id="streakHint"></span></div>
+    <button class="hrank" id="rankBtn" type="button" aria-label="Your rank"><span class="hl">Rank</span><span class="hv"><img class="rkicon" id="rankI" src="/declass/insignia/private.svg" alt="" aria-hidden="true"><b id="rankT">Private</b></span><i class="rbar"><em id="rankBar"></em></i></button>
   </header>
-  <div class="slimrow" id="statRow">
-    <button class="stat rankst" id="rankBtn" type="button" aria-label="Your rank"><span class="sl">Rank</span><img class="rkicon" id="rankI" src="/declass/insignia/private.svg" alt="" aria-hidden="true"><b id="rankT">Private</b><i class="rbar"><em id="rankBar"></em></i></button>
-    <button class="stat intelst" id="intelBtn" type="button" aria-label="Your Intel"><span class="sl">Intel</span><img class="itok" src="/declass/icons/intel.svg" alt=""><b id="intelN">0</b><span id="intelToday">Today +0</span></button>
+  <div class="hrow" id="statRow">
+    <div class="hstat hstreak"><span class="hv"><b id="streakN">0</b><span class="hl">Day streak</span></span><span class="hs" id="streakHint"></span></div>
+    <button class="hstat hintel" id="intelBtn" type="button" aria-label="Your Intel"><span class="hv"><span class="hl">Intel</span><img class="itok" src="/declass/icons/intel.svg" alt=""><b id="intelN">0</b></span><span class="hs" id="intelToday">Today +0</span></button>
   </div>
   <h1>Today's files</h1>
   <p class="sub files-sub">Three cards in every envelope.</p>
@@ -97,6 +98,7 @@
 
 <section class="screen" id="sCards">
   <button class="back" id="backCards">◀︎ Done</button>
+  <span class="cintel" id="cIntel" hidden><img class="itok" src="/declass/icons/intel.svg" alt=""><b id="cIntelN">0</b><span>Intel</span></span>
   <p class="count" id="count">Card 1 of 3</p>
   <div class="viewer" id="viewer">
     <div class="stage" id="stage"></div>
@@ -108,6 +110,7 @@
     <h2 style="justify-content:center;border:0">All declassed</h2>
     <p class="sumsub" id="sumSub"></p>
     <div class="recent" id="summaryRow"></div>
+    <p class="earntot" id="earnTot" hidden><img class="itok" src="/declass/icons/intel.svg" alt=""><b>+0</b> Intel</p>
     <p class="earn" id="earnLine"></p>
     <div class="sumbtns"><button class="btn alt" id="shareBtn">Share</button><button class="btn" id="doneBtn">Done</button></div>
   </div>
@@ -143,6 +146,7 @@
   <button class="back" id="backSection">◀︎ Dossier</button>
   <h1 id="sectionTitle"></h1>
   <p class="sub" id="sectionSub"></p>
+  <div id="sectionLeg"></div>
   <div class="filters" id="filters" hidden></div>
   <div class="grid" id="sectionGrid"></div>
 </section>
@@ -331,7 +335,7 @@
 <div class="icpzoom" id="icpZoom" hidden role="dialog" aria-label="Card full size"></div>
 <div class="toast" id="toast" hidden></div>
 <div class="glow" id="glow"></div>
-<script src="/declass/declass.js?v=1ecd9c72"></script>
-<script src="/declass/intercept.js?v=9cfa7a0d"></script>
+<script src="/declass/declass.js?v=2e462a8e"></script>
+<script src="/declass/intercept.js?v=b04ffd4d"></script>
 </body>
 </html>

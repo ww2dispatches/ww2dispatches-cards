@@ -37,7 +37,8 @@
   // ---------- constants ----------
   const FIN = ['copper', 'silver', 'gold', 'topsecret'];
   const FNAME = { copper: 'Copper', silver: 'Silver', gold: 'Gold', topsecret: 'Top Secret' };
-  const SERIES = [['battle', 'Battle Lines', '#B04A3E'], ['home', 'Home Front', '#5E6B3A'], ['blue', 'Blueprint', '#3D5884'], ['state', 'Statecraft', '#B8862B'], ['namethis', 'Name This', '#5B4B8A']];
+  // Series colors lifted for the dark Night Dispatch page (29 Oct 2026); same hues as the brand colors, lighter so bars read on dark.
+  const SERIES = [['battle', 'Battle Lines', '#D8644F'], ['home', 'Home Front', '#9DAA62'], ['blue', 'Blueprint', '#7FA0D6'], ['state', 'Statecraft', '#D9A93E'], ['namethis', 'Name This', '#9A8AD6']];
   const ERAS = [['leadup', 'The lead up', '1933 to August 1939'], ['1939'], ['1940'], ['1941'], ['1942'], ['1943'], ['1944'], ['1945'], ['aftermath', 'The aftermath', 'September 1945 on']];
   const IC = { x: '<path fill="currentColor" stroke="none" d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.8-6.3L5.4 21H2.3l7.2-8.2L2 3h6.3l4.4 5.8zm-1.1 16.2h1.7L7.4 4.7H5.6z"/>', instagram: '<rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="12" cy="12" r="3.6"/><circle cx="17" cy="7" r=".6" fill="currentColor"/>', threads: '<path d="M18.6 8.2C17.5 5.1 15.1 3.6 12 3.6 7 3.6 4 7.1 4 12s3 8.4 8 8.4c4.3 0 7.1-2.4 7.1-5.8 0-3.1-2.4-4.9-5.8-4.9-3 0-5 1.5-5 3.6 0 1.8 1.5 3.1 3.5 3.1 3.2 0 4.8-2.6 4.8-7"/>', facebook: '<path fill="currentColor" stroke="none" d="M13.6 21.5v-8h2.7l.4-3.1h-3.1V8.5c0-.9.3-1.5 1.6-1.5h1.6V4.2c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4.1v2.2H7.7v3.1h2.7v8z"/>', youtube: '<rect x="3.5" y="6" width="17" height="12" rx="3.5"/><path d="M10.5 9.5v5l4.2-2.5z" fill="currentColor"/>', tiktok: '<path d="M13 4v10.5a3 3 0 1 1-3-3M13 4c.5 2.5 2.3 4 5 4"/>' };
   const PNAME = { x: 'X', instagram: 'Instagram', threads: 'Threads', facebook: 'Facebook', youtube: 'YouTube', tiktok: 'TikTok' };
@@ -230,7 +231,7 @@
     $('streakN').textContent = p ? p.streak : 0;
     renderStats();
     $('streakHint').textContent = !p ? 'Sign in to start a streak'
-      : p.streak ? (p.nextPriorityIn === 3 ? 'Priority envelope earned' : 'Priority envelope in ' + p.nextPriorityIn + ' day' + (p.nextPriorityIn > 1 ? 's' : ''))
+      : p.streak ? (p.nextPriorityIn === 3 ? 'Priority earned' : 'Priority in ' + p.nextPriorityIn + ' day' + (p.nextPriorityIn > 1 ? 's' : ''))
       : 'Open an envelope to start';
 
     if (p) {
@@ -303,7 +304,7 @@
     let last = [];
     if (signedIn() && pulls.length) { const k = pulls[0].slot; last = pulls.filter(x => x.slot === k).slice().reverse(); }
     else if (STARTER) last = STARTER.pulls.filter((x, i) => STARTER.revealed[i]);
-    $('recent').innerHTML = last.length ? `<h2>Last envelope <small>${esc(signedIn() ? slotName(last[0].slot) + ' · ' + localDate(last[0].at) : 'Starter pack')}</small></h2><div class="recent">${last.map(x => miniHTML(x.card, holdingsNow())).join('')}</div>` : '';
+    $('recent').innerHTML = last.length ? `<h2>Last envelope <small>${esc(signedIn() ? slotName(last[0].slot) + ' · ' + localDate(last[0].at) : 'Starter pack')}</small></h2><div class="recent">${last.map(x => miniHTML(x.card, holdingsNow())).join('')}</div>${legendHTML()}` : '';
     wireMinis($('recent'), last.map(x => x.card));
 
     // dossier tiles
@@ -323,7 +324,7 @@
     $('seriesTiles').querySelectorAll('[data-series]').forEach(b => { b.onclick = () => section('series', b.dataset.series); });
     $('yearTiles').innerHTML = ERAS.map(([k, name, span]) => {
       const all = CAT.filter(c => c.kind === 'dispatch' && c.era === k), h = all.filter(c => H.has(c.id)).length;
-      return `<button class="tile" data-year="${k}" ${all.length ? '' : 'disabled'}><i style="background:var(--ink)"></i><b>${name || k}</b><span>${all.length ? h + ' of ' + all.length : 'None posted yet'}</span>${span ? `<span>${span}</span>` : ''}<div class="bar"><i style="background:var(--ink);width:${all.length ? h / all.length * 100 : 0}%"></i></div></button>`;
+      return `<button class="tile" data-year="${k}" ${all.length ? '' : 'disabled'}><i style="background:#CDB98A"></i><b>${name || k}</b><span>${all.length ? h + ' of ' + all.length : 'None yet'}</span><div class="bar"><i style="background:#CDB98A;width:${all.length ? h / all.length * 100 : 0}%"></i></div></button>`;
     }).join('');
     $('yearTiles').querySelectorAll('[data-year]').forEach(b => { b.onclick = () => section('year', b.dataset.year); });
     $('allSub').textContent = `${have} of ${total} cards`;
@@ -336,6 +337,13 @@
   const holdingsNow = () => holdings(myPulls());
 
   // ---------- small cards in grids ----------
+  // A key for the finish squares under each card (visual pass step 1, 29 Oct 2026): new players don't know what the squares mean.
+  function legendHTML(flash) {
+    const sw = ([f, n]) => `<span><i class="${f === 'flash' ? 'flash' : 'f-' + f} on"></i>${esc(n)}</span>`;
+    if (flash) return `<div class="fleg" aria-label="What the square means"><p class="fd">${sw(['flash', 'Flash · always Top Secret'])}</p></div>`;
+    // Copper, Silver, Gold on one line; Top Secret and Living Card together below (29 Oct 2026)
+    return `<div class="fleg" aria-label="What the squares mean"><p class="fd">${['copper', 'silver', 'gold'].map(f => sw([f, FNAME[f]])).join('')}</p><p class="fd">${sw(['topsecret', FNAME.topsecret])}<span><b>▶︎</b>Living Card</span></p></div>`;
+  }
   function miniHTML(id, H, shown) {
     const info = BYID.get(id);
     if (!info) return '';
@@ -345,7 +353,7 @@
       : `<div class="fd">${FIN.map(f => `<i class="f-${f}${h && (h.still[f] || h.living[f]) ? ' on' : ''}" title="${FNAME[f]}"></i>`).join('')}${info.hasFilm ? `<b class="${h && FIN.some(f => h.living[f]) ? 'on' : ''}" title="Living Card">▶︎</b>` : ''}</div>`;
     if (!best) {
       // Signed in, a sealed card can be requested (25 Oct 2026); one of today's cards can't.
-      if (signedIn() && !info.today) return `<button class="mini sealed req" data-req="${esc(id)}"><span class="thumb">?</span><span class="no">${esc(label(info))}</span><span class="nm">${esc(info.short)}</span>${dots}<span class="reqline">Request this card</span></button>`;
+      if (signedIn() && !info.today) return `<button class="mini sealed req" data-req="${esc(id)}"><span class="thumb">?</span><span class="no">${esc(label(info))}</span><span class="nm">${esc(info.short)}</span>${dots}<span class="reqline">Request card</span></button>`;
       return `<div class="mini sealed"><span class="thumb">?</span><span class="no">${esc(label(info))}</span><span class="nm">${esc(info.short)}</span>${dots}</div>`;
     }
     return `<button class="mini" data-id="${esc(id)}"><img class="thumb ${info.flash ? 'flash' : 'f-' + best}" loading="lazy" src="${esc(info.img)}" alt="${esc(info.short)}"><span class="no">${esc(label(info))}</span><span class="nm">${esc(info.short)}</span>${dots}</button>`;
@@ -368,7 +376,7 @@
   function section(kind, key, fromSets) {
     lastSection = [kind, key, fromSets];
     const H = holdingsNow();
-    let list, title;
+    let list, title, note = '';
     $('filters').hidden = kind !== 'all';
     // Opened from the Sets page, the back button returns there (25 Oct 2026).
     $('backSection').textContent = fromSets ? '◀\ufe0e Sets' : '◀\ufe0e Dossier';
@@ -381,7 +389,7 @@
       title = key === 'flash' ? 'Flash' : SERIES.find(s => s[0] === key)[1];
     } else if (kind === 'year') {
       list = CAT.filter(c => c.kind === 'dispatch' && c.era === key).sort((a, b) => a.date < b.date ? -1 : a.date > b.date ? 1 : 0);
-      const e = ERAS.find(x => x[0] === key); title = e[1] || key;
+      const e = ERAS.find(x => x[0] === key); title = e[1] || key; note = e[2] || ''; // the date range shows here, not on the small tile
     } else {
       const F = { all: () => true, missing: c => !H.has(c.id), living: c => c.hasFilm, flash: c => c.flash };
       SERIES.forEach(([k]) => { F[k] = c => c.series === k; });
@@ -401,7 +409,8 @@
     // A set one card short shows that card first, ready to request (25 Oct 2026).
     const oneShort = fromSets && list.length > 1 && list.length - h === 1 ? list.find(c => !H.has(c.id)) : null;
     if (oneShort) list = [oneShort].concat(list.filter(c => c !== oneShort));
-    $('sectionSub').textContent = `${h} of ${list.length} cards · Swatches show the finishes you hold, ▶︎ a Living Card`;
+    $('sectionSub').textContent = (note ? note + ' · ' : '') + `${h} of ${list.length} cards`;
+    $('sectionLeg').innerHTML = legendHTML(key === 'flash');
     $('sectionGrid').innerHTML = (oneShort ? `<p class="oneshort">One card to go: <b>${esc(oneShort.short)}</b>${signedIn() && !oneShort.today ? ` · <button class="linkish" id="reqOne">Request this card · ${priceOf(oneShort, 'still', 'copper')} Intel${haveIntel() < priceOf(oneShort, 'still', 'copper') ? ' (you have ' + haveIntel() + ')' : ''}</button>` : ''}</p>` : '')
       + (list.length ? list.map(c => miniHTML(c.id, H)).join('') : '<p class="sub" style="grid-column:1/-1">Nothing here yet.</p>');
     if (oneShort && $('reqOne')) $('reqOne').onclick = () => requestPicker(oneShort.id);
@@ -419,18 +428,42 @@
       : env.kind === 'priority' ? 'Three came in for your streak. Choose the one you want.'
       : env.kind === 'starter' ? 'Your first file. Three came in. Choose the one you want.'
       : 'Three came in with this dispatch. Choose the one you want.';
+    if (window.matchMedia && matchMedia('(pointer:coarse)').matches) $('pickSub').textContent += ' Tap it, or drag across the seal to tear it open.';
     $('backPick').onclick = () => show(env.kind === 'starter' && !signedIn() ? 'sLanding' : 'sHome');
     const st = $('stack'); st.innerHTML = '';
     for (let i = 1; i <= 3; i++) {
       const e = document.createElement('div');
       e.className = 'env' + envClass(env); e.tabIndex = 0; e.setAttribute('role', 'button'); e.setAttribute('aria-label', 'Sealed envelope ' + i);
       e.innerHTML = envHTML(i, env);
-      e.onclick = () => chosen(i);
+      e.onclick = () => { if (e.dataset.dragged) { delete e.dataset.dragged; return; } chosen(i); };
+      tearDrag(e, i);
       e.onkeydown = ev => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); chosen(i); } };
       st.appendChild(e);
     }
     $('pickCoach').hidden = !(env.kind === 'starter' && !seen('pick'));
     show('sPick');
+  }
+
+  // Drag across the wax seal to tear an envelope open (visual pass step 4, 29 Oct 2026). Tapping still opens it.
+  // The seal follows the finger and the flap starts to lift; past the threshold the envelope opens as if tapped.
+  function tearDrag(e, i) {
+    const seal = e.querySelector('.seal');
+    if (!seal || !window.PointerEvent) return;
+    let x0 = 0, y0 = 0, on = false, moved = false, done = false;
+    const reset = () => { e.classList.remove('tearing'); e.classList.add('snap'); e.style.removeProperty('--tx'); e.style.removeProperty('--p'); setTimeout(() => e.classList.remove('snap'), 260); };
+    seal.addEventListener('pointerdown', ev => { if (busy) return; on = true; moved = false; done = false; x0 = ev.clientX; y0 = ev.clientY; try { seal.setPointerCapture(ev.pointerId); } catch (err) {} });
+    seal.addEventListener('pointermove', ev => {
+      if (!on || done) return;
+      const dx = ev.clientX - x0, dy = ev.clientY - y0;
+      if (!moved && Math.abs(dx) < 6 && Math.abs(dy) < 6) return;
+      moved = true; e.dataset.dragged = '1';
+      const p = Math.min(1, Math.abs(dx) / (e.clientWidth * 0.32));
+      e.classList.add('tearing');
+      e.style.setProperty('--tx', (dx * 0.55) + 'px'); e.style.setProperty('--p', p.toFixed(3));
+      if (p >= 1) { done = true; on = false; if (navigator.vibrate) navigator.vibrate(12); chosen(i); }
+    });
+    const up = () => { if (!on) return; on = false; if (moved && !done) reset(); };
+    seal.addEventListener('pointerup', up); seal.addEventListener('pointercancel', up);
   }
 
   // ---------- the opening ----------
@@ -444,7 +477,7 @@
     const before = holdingsNow();
     const b = $('bigEnv');
     b.className = 'big';
-    b.innerHTML = `<div class="env${envClass(env)}">${envHTML(i, env)}</div><div class="cardsout"><i></i><i></i><i></i></div>`;
+    b.innerHTML = `<div class="env${envClass(env)}">${envHTML(i, env)}</div><div class="cardsclip"><div class="cardsout"><i></i><i></i><i></i></div></div>`;
     $('tearing').textContent = env.kind === 'commemorative' ? (env.title || env.stamp) : 'Declassifying…';
     duckMusic(true); sfx('slide'); sfx('stampA', 0.25); sfx('seal', 0.95);
     $('tearing').classList.toggle('goldt', env.kind === 'commemorative');
@@ -453,8 +486,9 @@
     req.then(d => d.pulls.forEach(p => { if (p.cardInfo) { new Image().src = p.cardInfo.img; if (p.variant === 'living' && p.cardInfo.filmMp4) { const v = document.createElement('video'); v.preload = 'auto'; v.muted = true; v.src = p.cardInfo.filmMp4; } } })).catch(() => {});
     setTimeout(() => b.classList.add('stamp'), 250);
     setTimeout(() => { b.classList.add('go'); $('tearing').textContent = env.kind === 'request' ? 'Your requested file.' : env.kind === 'intercept' ? "Your pick from today's files." : env.kind === 'starter' ? 'Five cards inside.' : env.kind === 'commemorative' ? (env.title || env.stamp) : 'Three cards inside.'; }, 950);
-    setTimeout(() => b.classList.add('fade'), 2100);
-    Promise.all([req, delay(2850)]).then(([d]) => {
+    // the flap swings open, then the cards rise out of the envelope (visual pass step 4, 29 Oct 2026)
+    setTimeout(() => b.classList.add('fade'), 3000);
+    Promise.all([req, delay(3350)]).then(([d]) => {
       busy = false;
       if (env.kind === 'starter' && !signedIn()) {
         STARTER = { token: d.token, pulls: d.pulls, revealed: d.pulls.map(() => false) };
@@ -492,10 +526,40 @@
       return tag;
     });
   }
+  let cIntel = null, setsBefore = null;
+  // Sets a player has completed right now: monthly files and collections (premium pass, 29 Oct 2026).
+  function completeSets() {
+    const out = new Map();
+    try {
+      const { months, groups } = setsModel();
+      months.forEach(m => { if (m.all && m.held === m.all) out.set('m:' + m.ym, { name: m.name + ' files', kind: 'month', ym: m.ym }); });
+      groups.forEach(([g, list]) => list.forEach(x => { if (x.all && x.held === x.all) out.set(g + ':' + x.name, { name: x.name, kind: g, all: x.all }); }));
+    } catch (e) {}
+    return out;
+  }
+  // The ceremony: the round COMPLETE stamp slams down for each set this envelope finished, one after another.
+  function showComplete(list) {
+    if (!list.length) return;
+    const x = list[0], rest = list.slice(1);
+    const note = x.kind === 'month' ? (x.ym < etMonth(new Date().toISOString()) ? 'Every dispatch from that month is in your dossier. The stamp is yours for good.' : 'Every dispatch so far this month is in your dossier. Hold them all when the month closes and the stamp is yours for good.')
+      : `All ${x.all} ${x.kind === 'Series' ? 'cards in the series' : x.kind === 'Years' ? 'cards from the year' : x.kind === 'Theaters' ? 'cards from the theater' : 'cards'} are in your dossier.`;
+    $('promo').innerHTML = `<div class="promocard"><div class="promostamp setstamp">${stampSVG(x.name.toUpperCase(), stampDate((n => new Date(Date.UTC(n.getFullYear(), n.getMonth(), n.getDate(), 12)))(new Date())))}</div><p class="promokick">SET COMPLETE</p><h2>${esc(x.name)}</h2><p class="sheetnote">${esc(note)}</p><button class="btn" id="promoOk">${rest.length ? 'Next' : 'Carry on'}</button></div>`;
+    $('promo').hidden = false;
+    sfx('stampA'); sfx('goldA', 0.3); sfx('boom', 0.05);
+    $('promoOk').onclick = () => { $('promo').hidden = true; if (rest.length) setTimeout(() => showComplete(rest), 250); };
+  }
+  function bumpIntel(n) {
+    if (cIntel == null) return;
+    const from = cIntel, to = cIntel + n, t0 = performance.now(), el = $('cIntelN'); cIntel = to;
+    const pill = $('cIntel'); pill.classList.remove('bump'); void pill.offsetWidth; pill.classList.add('bump');
+    const step = t => { const k = Math.min(1, (t - t0) / 500); el.textContent = Math.round(from + (to - from) * k).toLocaleString(); if (k < 1) requestAnimationFrame(step); };
+    requestAnimationFrame(step); sfx('coin');
+  }
   function startCards(list, mode, before, env) {
     pulls = list; cardMode = mode; cardEnv = env || null;
     // The cards are the player's at the tap: add them to the dossier now, so the summary and the
     // card view show them before the next refresh.
+    setsBefore = mode === 'server' && signedIn() ? completeSets() : null; // to spot sets this envelope finishes
     if (mode === 'server' && ST && ST.pulls) { const have = new Set(ST.pulls.map(p => p.id)); ST.pulls = list.filter(p => p.id && !have.has(p.id)).slice().reverse().concat(ST.pulls); }
     revealed = mode === 'starterLocal' ? STARTER.revealed.slice() : list.map(() => false);
     answered = list.map(() => false);
@@ -503,6 +567,11 @@
     // A duplicate that converted shows its Intel on the tag (25 Oct 2026).
     tags = tags.map((t, i) => t && t[0] === 'dup' && list[i].intel ? ['dup gain', 'DUPLICATE · +' + list[i].intel + ' INTEL'] : t);
     idx = Math.max(0, revealed.indexOf(false));
+    // A live Intel tally on the cards screen (premium pass, 29 Oct 2026): it starts at the balance before this
+    // envelope's duplicates, and each converted duplicate's Intel flies up into it as the card turns.
+    const bal = lastEarn && lastEarn.balance != null ? lastEarn.balance : ST && ST.player && typeof ST.player.intel === 'number' ? ST.player.intel : null;
+    cIntel = mode === 'server' && bal != null ? bal - list.reduce((a, p, i) => a + (!revealed[i] && p.intel && tags[i] && tags[i][0] === 'dup gain' ? p.intel : 0), 0) : null;
+    $('cIntel').hidden = cIntel == null; if (cIntel != null) $('cIntelN').textContent = cIntel.toLocaleString();
     renderCard();
     show('sCards');
   }
@@ -519,14 +588,17 @@
     if (isSlot(p) && pulls.findIndex(isSlot) === i) return cardEnv && cardEnv.last ? "Yesterday's dispatch" : "Today's dispatch";
     return cardEnv && cardEnv.deep ? 'From the deep archive' : 'From the archive';
   }
+  // A face down card hints at its finish (premium pass, 29 Oct 2026), the way Hearthstone's backs glow by rarity:
+  // a Silver gives off a faint cool light at its edges, a Gold a warm pulse, a Top Secret or Flash a slow shimmer.
+  const backHint = p => (p.cardInfo && p.cardInfo.flash) || p.finish === 'topsecret' ? ' hint-ts' : p.finish === 'gold' ? ' hint-gold' : p.finish === 'silver' ? ' hint-silver' : '';
   function renderCard(dir) {
     const p = pulls[idx], info = p.cardInfo;
     $('count').textContent = `Card ${idx + 1} of ${pulls.length}`;
     const tag = tags[idx];
-    $('stage').innerHTML = `<div class="flip${revealed[idx] ? ' up' : ''}" id="flip"><div class="face backf"><div class="badge">WW2</div><small>${esc(backText(p, idx))}</small></div><div class="face frontf">${tag ? `<span class="tag ${tag[0]}">${tag[1]}</span>` : ''}${info ? cardFace(info, p.finish, p.variant, p.serial, { puzzle: info.kind === 'namethis' }) : '<p class="sub">This card has left the archive.</p>'}</div></div>`;
+    $('stage').innerHTML = `<div class="flip${revealed[idx] ? ' up' : ''}" id="flip"><div class="face backf${backHint(p)}"><div class="badge">WW2</div><small>${esc(backText(p, idx))}</small></div><div class="face frontf">${tag ? `<span class="tag ${tag[0]}">${tag[1]}</span>` : ''}${info ? cardFace(info, p.finish, p.variant, p.serial, { puzzle: info.kind === 'namethis' }) : '<p class="sub">This card has left the archive.</p>'}${tag && tag[0] === 'dup gain' ? `<span class="filedst${revealed[idx] ? ' set' : ''}">FILED</span>` : ''}</div></div>`;
     const f = $('flip');
     if (dir) { f.classList.add('in'); requestAnimationFrame(() => requestAnimationFrame(() => f.classList.remove('in'))); }
-    f.onclick = reveal;
+    f.onclick = () => { if (flipDrag.used) { flipDrag.used = false; return; } reveal(); };
     if (revealed[idx] && info && p.variant === 'living') startFilm(f, info);
     $('hint').innerHTML = hintFor(p, idx);
     $('prevBtn').disabled = idx === 0;
@@ -567,6 +639,12 @@
     $('sCards').classList.add('summ');
     $('summary').hidden = false;
     renderSummary();
+    if (setsBefore) {
+      const after = completeSets(), fresh = [...after].filter(([k]) => !setsBefore.has(k)).map(([, v]) => v);
+      setsBefore = null;
+      // months first, then collections; shown once the finale has fanned in
+      if (fresh.length) setTimeout(() => { if ($('sCards').classList.contains('summ')) showComplete(fresh.sort((a, b) => (b.kind === 'month') - (a.kind === 'month'))); }, 2600);
+    }
     window.scrollTo(0, 0);
   }
   // The first pack teaches itself (26 Oct 2026): the first card's turn and swipe hints show as coach pills, once.
@@ -583,14 +661,36 @@
     if (p.finish === 'topsecret' && p.serial) return `<b>The ${ord(p.serial)} Top Secret ${p.variant === 'living' ? 'living ' : ''}${esc(info.short)} pulled anywhere in the world.</b>`;
     return i < pulls.length - 1 ? 'Swipe or tap Next' : cardEnv && cardEnv.kind === 'intercept' ? "That's today's pick." : "That's the envelope.";
   }
-  function glow(f) { if (f === 'copper') return; const g = $('glow'); g.className = 'glow'; void g.offsetWidth; g.className = 'glow ' + f; }
+  function glow(f, big) { if (f === 'copper' && !big) return; const g = $('glow'); g.className = 'glow'; void g.offsetWidth; g.className = 'glow ' + f + (big ? ' held' : ''); }
+  // The held reveal (visual pass step 5, 29 Oct 2026): a Gold, Top Secret, or Flash card, and the best card of a
+  // starter pack, holds for a beat before it turns: the card trembles, a glow builds behind it and a low riser
+  // plays; then it turns with a bigger glow, a sheen sweep across the frame, and a heavier hit.
+  let holding = false;
+  function bigMoment(p) {
+    if (p.finish === 'gold' || p.finish === 'topsecret' || (p.cardInfo && p.cardInfo.flash)) return true;
+    if (!cardEnv || cardEnv.kind !== 'starter' || p.finish === 'copper') return false;
+    const rank = f => FIN.indexOf(f), best = Math.max(...pulls.map(x => rank(x.finish)));
+    return rank(p.finish) === best && pulls.find(x => rank(x.finish) === best) === p;
+  }
   function reveal() {
     const p = pulls[idx];
+    if (holding) return;
     if (revealed[idx]) { answerNT(); return; }
+    const big = bigMoment(p);
+    if (big && !reveal.go) {
+      holding = true;
+      const still = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+      $('flip').classList.add('charge'); $('stage').classList.add('charging');
+      sfx('charge');
+      setTimeout(() => { holding = false; $('flip').classList.remove('charge'); $('stage').classList.remove('charging'); reveal.go = true; reveal(); reveal.go = false; }, still ? 250 : 800);
+      return;
+    }
     revealed[idx] = true;
-    glow(p.finish);
+    glow(p.finish, big);
     sfx(FINISH_SOUND[p.finish][p.variant === 'living' ? 1 : 0]);
+    if (big) { sfx('boom'); const cf = document.querySelector('#flip .cf'); if (cf) { cf.classList.remove('sweep'); void cf.offsetWidth; cf.classList.add('sweep'); } }
     $('flip').classList.add('up');
+    sfx('place', 0.55); // the card settles face up
     if (p.cardInfo && p.variant === 'living') startFilm($('flip'), p.cardInfo);
     if (p.intel && tags[idx] && tags[idx][0].startsWith('dup')) intelChip(p.intel);
     if (cardMode === 'starterLocal') { STARTER.revealed = revealed.slice(); saveStarterLocal(); }
@@ -604,11 +704,18 @@
   }
   // A duplicate's Intel floats up off the card as it turns (25 Oct 2026). Never blocks a swipe.
   function intelChip(n) {
+    const st = document.querySelector('#flip .filedst'); if (st) setTimeout(() => { st.classList.add('hit'); sfx('stampA'); }, 520);
     const c = document.createElement('div');
     c.className = 'ichip'; c.setAttribute('aria-hidden', 'true');
     c.innerHTML = '<img class="itok" src="/declass/icons/intel.svg" alt="">+' + n + ' INTEL';
-    $('stage').appendChild(c);
-    setTimeout(() => c.remove(), 2200);
+    const pill = $('cIntel');
+    if (cIntel == null || pill.hidden || !c.animate || matchMedia('(prefers-reduced-motion: reduce)').matches) { $('stage').appendChild(c); setTimeout(() => c.remove(), 2200); bumpIntel(n); return; }
+    // the chip rises off the card, then flies up into the Intel tally, which counts up as it lands
+    const sr = $('stage').getBoundingClientRect(), pr = pill.getBoundingClientRect();
+    c.classList.add('fly'); c.style.left = (sr.left + sr.width / 2) + 'px'; c.style.top = (sr.top + sr.height * 0.44) + 'px';
+    document.body.appendChild(c);
+    const dx = pr.left + pr.width / 2 - (sr.left + sr.width / 2), dy = pr.top + pr.height / 2 - (sr.top + sr.height * 0.44);
+    c.animate([{ opacity: 0, transform: 'translate(-50%,-50%) scale(.6)' }, { opacity: 1, transform: 'translate(-50%,calc(-50% - 46px)) scale(1)', offset: .35 }, { opacity: 1, transform: 'translate(-50%,calc(-50% - 46px)) scale(1)', offset: .55 }, { opacity: .2, transform: `translate(calc(-50% + ${dx}px),calc(-50% + ${dy}px)) scale(.45)` }], { duration: 1500, delay: 900, easing: 'cubic-bezier(.4,0,.2,1)', fill: 'both' }).onfinish = () => { c.remove(); bumpIntel(n); };
   }
   function answerNT() {
     const p = pulls[idx];
@@ -639,11 +746,34 @@
     const H = holdingsNow();
     const ids = pulls.map(p => p.card);
     // Every card in the envelope (a starter pack has five, a commemorative file four), each in the finish pulled.
-    $('summaryRow').innerHTML = pulls.map(p => miniHTML(p.card, H, p.finish)).join('');
-    wireMinis($('summaryRow'), ids);
+    // The finale (premium pass, 29 Oct 2026): the best card sits in the middle, a little larger; the cards
+    // fan in one after another with a soft paper sound each; the Intel earned counts up.
+    const R = p => (p.cardInfo && p.cardInfo.flash ? 5 : FIN.indexOf(p.finish)) + (p.variant === 'living' ? 0.5 : 0);
+    const sorted = pulls.slice().sort((a, b) => R(b) - R(a)), order = new Array(sorted.length), mid = Math.floor(sorted.length / 2);
+    sorted.forEach((p, k) => { const off = Math.ceil(k / 2) * (k % 2 ? -1 : 1); order[mid + off] = p; });
+    const arranged = order.filter(Boolean);
+    $('summaryRow').innerHTML = arranged.map(p => miniHTML(p.card, H, p.finish)).join('');
+    const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    [...$('summaryRow').children].forEach((el, k) => {
+      if (arranged[k] === sorted[0] && sorted.length > 1) el.classList.add('best');
+      const delay = k === arranged.indexOf(sorted[0]) ? arranged.length * 0.16 : k * 0.16; // the best card lands last
+      el.style.setProperty('--fd', delay + 's'); el.style.setProperty('--fr', ((k - mid) * 5) + 'deg');
+      if (!still) sfx('place', 0.15 + delay + 0.35);
+    });
+    $('summaryRow').classList.remove('fan'); void $('summaryRow').offsetWidth; $('summaryRow').classList.add('fan');
+    const tot = lastEarn && lastEarn.earned ? lastEarn.earned.reduce((a, x) => a + (x.delta || 0), 0) : 0;
+    const et = $('earnTot');
+    et.hidden = !(cardMode === 'server' && cardEnv && tot > 0);
+    if (!et.hidden) {
+      const b = et.querySelector('b'); b.textContent = '+0';
+      const t0 = performance.now() + (arranged.length + 1) * 160 + 300;
+      const step = t => { const k = Math.max(0, Math.min(1, (t - t0) / 700)); b.textContent = '+' + Math.round(tot * k); if (k < 1) requestAnimationFrame(step); else sfx('coin'); };
+      requestAnimationFrame(step);
+    }
+    wireMinis($('summaryRow'), arranged.map(p => p.card));
   }
   function go(n, jump) {
-    if ($('sCards').classList.contains('summ')) return;
+    if (holding || $('sCards').classList.contains('summ')) return;
     if (n === pulls.length && idx === pulls.length - 1) { finish(); return; }
     if (n < 0 || n >= pulls.length) return;
     if (n > idx && !revealed[idx] && !jump) return;
@@ -652,15 +782,55 @@
     const p = pulls[idx];
     if (p && p.cardInfo && p.cardInfo.kind === 'namethis') answered[idx] = true;
     $('flip').classList.add('out');
+    sfx('page'); // a soft paper slide between cards (premium pass, 29 Oct 2026)
     document.querySelectorAll('.tiltask').forEach(el => el.remove());
     setTimeout(() => { idx = n; renderCard(true); }, 220);
   }
   $('nextBtn').onclick = () => go(idx + 1);
   $('prevBtn').onclick = () => go(idx - 1);
+  // Turn a card with your finger (premium pass, 29 Oct 2026): drag sideways on an unturned card and it rotates in 3D
+  // under the finger; let go past a quarter turn and it flips the rest of the way, otherwise it springs back.
+  const flipDrag = { used: false, at: 0 };
+  (() => {
+    const st = $('stage');
+    let on = false, x0 = 0, y0 = 0, w = 1, ang = 0, moving = false;
+    st.addEventListener('pointerdown', ev => {
+      const f = $('flip');
+      if (!f || revealed[idx] || holding || ev.button > 0) return;
+      on = true; moving = false; x0 = ev.clientX; y0 = ev.clientY; w = st.clientWidth || 1; ang = 0;
+    });
+    st.addEventListener('pointermove', ev => {
+      if (!on) return;
+      const dx = ev.clientX - x0, dy = ev.clientY - y0, f = $('flip');
+      if (!moving) { if (Math.abs(dx) < 10 || Math.abs(dy) > Math.abs(dx)) { if (Math.abs(dy) > 14) on = false; return; } moving = true; try { st.setPointerCapture(ev.pointerId); } catch (e) {} }
+      ang = Math.max(-175, Math.min(175, dx / w * 200));
+      f.style.transition = 'none'; f.style.transform = `rotateY(${ang}deg)`;
+      // a big card builds its glow while you turn it yourself, instead of holding after you let go
+      if (bigMoment(pulls[idx])) { const on2 = Math.abs(ang) > 20; if (on2 && !st.classList.contains('charging')) sfx('charge'); st.classList.toggle('charging', on2); }
+    });
+    const end = () => {
+      if (!on) return; on = false;
+      if (!moving) return;
+      const f = $('flip'); flipDrag.used = true; flipDrag.at = Date.now();
+      f.style.transition = '';
+      st.classList.remove('charging');
+      if (Math.abs(ang) >= 70) {
+        // turned by hand: it carries on over from where the finger left it. A big card skips the hold (the slow
+        // turn was the suspense) but still gets its bigger glow, sheen sweep, and heavier sound.
+        f.style.transform = `rotateY(${ang < 0 ? -180 : 180}deg)`;
+        reveal.go = true; reveal(); reveal.go = false;
+        setTimeout(() => { if ($('flip') === f) { f.style.transition = 'none'; f.style.transform = ''; void f.offsetWidth; f.style.transition = ''; } }, 850);
+      } else {
+        f.style.transform = '';
+      }
+      setTimeout(() => { flipDrag.used = false; }, 400);
+    };
+    st.addEventListener('pointerup', end); st.addEventListener('pointercancel', end);
+  })();
   function swipe(el, left, right) {
     let sx = null;
     el.addEventListener('touchstart', e => { sx = e.touches[0].clientX; }, { passive: true });
-    el.addEventListener('touchend', e => { if (sx === null) return; const dx = e.changedTouches[0].clientX - sx; sx = null; if (Math.abs(dx) > 50) (dx < 0 ? left : right)(); });
+    el.addEventListener('touchend', e => { if (sx === null) return; const dx = e.changedTouches[0].clientX - sx; sx = null; if (Date.now() - flipDrag.at < 500) return; if (Math.abs(dx) > 50) (dx < 0 ? left : right)(); });
   }
   swipe($('viewer'), () => go(idx + 1), () => go(idx - 1));
   document.addEventListener('keydown', e => {
@@ -858,6 +1028,21 @@
   $('landEnv').innerHTML = `<div class="env">${envHTML(0, { kind: 'starter' })}</div>`;
   const openStarter = () => pick({ kind: 'starter' });
   $('openStarter').onclick = openStarter;
+  // Landing page cards (visual pass step 3, 29 Oct 2026): three real cards spill out of the starter envelope,
+  // the newest dispatch in Gold at the front with its sheen moving, so the prize shows before the button.
+  function landFan() {
+    const posted = CAT.filter(c => c.kind === 'dispatch' && !c.flash && c.img).sort((a, b) => (b.postAt || '').localeCompare(a.postAt || ''));
+    const gold = posted[0];
+    if (!gold || $('landEnv').querySelector('.lfan')) return;
+    const used = new Set([gold.series]), pick = () => { const c = posted.find(x => !used.has(x.series) && x !== gold) || posted.find(x => x !== gold && !picked.includes(x)); if (c) { used.add(c.series); picked.push(c); } return c; };
+    const picked = [], copper = pick(), silver = pick();
+    if (!copper || !silver) return;
+    const d = document.createElement('div');
+    d.className = 'lfan'; d.setAttribute('aria-hidden', 'true');
+    d.innerHTML = `<div class="l">${cardFace(copper, 'copper', 'still')}</div><div class="r">${cardFace(silver, 'silver', 'still')}</div><div class="m">${cardFace(gold, 'gold', 'still')}</div>`;
+    $('landEnv').prepend(d);
+    $('sLanding').classList.add('fanned');
+  }
   $('landEnv').onclick = () => { sfx('rustle'); setTimeout(openStarter, 250); };
   $('landEnv').onkeydown = e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openStarter(); } };
 
@@ -911,6 +1096,12 @@
       mg.gain.setValueAtTime(0.0001, t); mg.gain.exponentialRampToValueAtTime(0.035 * vol, t + 0.7); mg.gain.setValueAtTime(0.035 * vol, t + D - 0.7); mg.gain.exponentialRampToValueAtTime(0.0001, t + D); m.connect(mg).connect(sfxGain); m.start(t); m.stop(t + D + 0.1);
       let x = t + 0.2, gap = 0.14; while (x < t + D - 0.3) { nz(x, 0.007, 'bandpass', 3200, 4, 0.11 * vol); x += gap; gap = Math.max(0.042, gap * 0.9); }
     },
+    // the held reveal: a riser under two low heartbeats, then a low hit as the card turns
+    charge(t) { const sw = nz(t, 0.78, 'bandpass', 300, 1.6, 0.24, 0.55); sw.f.frequency.setValueAtTime(260, t); sw.f.frequency.exponentialRampToValueAtTime(3200, t + 0.76); tone(t + 0.02, 58, 0.14, 'sine', 0.55, 0.003, 40); tone(t + 0.4, 58, 0.14, 'sine', 0.7, 0.003, 40); },
+    boom(t) { tone(t, 82, 0.7, 'sine', 0.75, 0.003, 38); nz(t, 0.22, 'lowpass', 900, 0.7, 0.45); },
+    page(t) { const r = nz(t, 0.2, 'bandpass', 2600, 0.7, 0.12, 0.05); r.f.frequency.setValueAtTime(3200, t); r.f.frequency.exponentialRampToValueAtTime(1400, t + 0.2); },
+    coin(t) { [1567.98, 2093].forEach((f, i) => chime(t + i * 0.06, f, 0.35, 0.08)); },
+    place(t) { tone(t, 140, 0.1, 'sine', 0.22, 0.002, 70); nz(t, 0.05, 'lowpass', 700, 0.7, 0.14); },
     rustle(t) { for (let i = 0; i < 6; i++) nz(t + i * 0.05 + Math.random() * 0.03, 0.06, 'bandpass', 1500 + Math.random() * 2500, 0.9, 0.18, 0.01); },
     teletype(t) { for (let i = 0; i < 9; i++) nz(t + i * 0.055 + Math.random() * 0.012, 0.018, 'bandpass', 2000 + Math.random() * 1500, 2.5, 0.45); bell(t + 0.58, 1975.5, 1.1, 0.25); },
     locked(t) { tone(t, 160, 0.08, 'sine', 0.35, 0.002, 110); nz(t, 0.03, 'lowpass', 600, 0.8, 0.25); },
@@ -1057,14 +1248,24 @@
   // The finish chip (in the finish's own material) and the dispatch line beside it, centered as one row.
   // Both texts are centered on their capital letters so they sit level with the chip.
   const FORMAT_LABEL = { spec: 'Spec Sheet', photo: 'Photo of the Day', quote: 'Quote of the Day' };
+  function shareHalo(c, x, cx, cy, w) {
+    const f = x.info.flash ? 'topsecret' : x.finish;
+    if (f === 'copper') return;
+    const blob = (bx, by, r, col) => { const g = c.createRadialGradient(bx, by, 0, bx, by, r); g.addColorStop(0, col); g.addColorStop(1, 'rgba(0,0,0,0)'); c.fillStyle = g; c.fillRect(bx - r, by - r, r * 2, r * 2); };
+    c.save(); c.globalCompositeOperation = 'lighter';
+    if (f === 'gold') { blob(cx, cy, w * 1.05, 'rgba(255,185,60,.8)'); blob(cx, cy - w * 0.5, w * 0.7, 'rgba(255,210,110,.35)'); }
+    else if (f === 'silver') blob(cx, cy, w * 0.9, 'rgba(210,225,245,.32)');
+    else { const h = w * 0.62; [[-1, -1, 'rgba(255,110,160,.5)'], [1, -1, 'rgba(255,215,90,.5)'], [1, 1, 'rgba(90,240,170,.5)'], [-1, 1, 'rgba(110,160,255,.55)']].forEach(([sx, sy, col]) => blob(cx + sx * w * 0.42, cy + sy * h * 0.7, w * 0.6, col)); }
+    c.restore();
+  }
   function shareChipRow(c, W, cy, x) {
     const chipText = x.info.flash ? 'FLASH · TOP SECRET' : (x.finish === 'topsecret' ? 'TOP SECRET' + (x.serial ? ' · ' + ser4(x.serial) : '') : FNAME[x.finish].toUpperCase()) + (x.variant === 'living' ? ' · LIVING CARD' : '');
     const info = x.info;
     const line = info.kind === 'namethis' ? 'Name This' : 'Dispatch No. ' + pad3(info.num) + (FORMAT_LABEL[info.format] ? ' · ' + FORMAT_LABEL[info.format] : '');
     const spaced = t => t.split('').join(String.fromCharCode(8202)); // hair spaces for the chip's letter spacing
-    c.font = '700 26px Oswald'; const chipLabel = spaced(chipText); const chipTW = c.measureText(chipLabel).width; const capChip = c.measureText('H').actualBoundingBoxAscent || 19;
+    c.font = '700 34px Oswald'; const chipLabel = spaced(chipText); const chipTW = c.measureText(chipLabel).width; const capChip = c.measureText('H').actualBoundingBoxAscent || 19;
     c.font = '400 28px "Special Elite"'; const lineW = c.measureText(line).width; const capLine = c.measureText('H').actualBoundingBoxAscent || 19;
-    const padX = 16, chipH = 42, chipW = chipTW + padX * 2, gap = 16, total = chipW + gap + lineW;
+    const padX = 18, chipH = 52, chipW = chipTW + padX * 2, gap = 16, total = chipW + gap + lineW; // a bigger chip so the finish reads at thumbnail size (step 6)
     const x0 = (W - total) / 2, top = cy - chipH / 2;
     const fills = {
       copper: () => '#9C5B2E',
@@ -1077,7 +1278,7 @@
     if (c.roundRect) c.roundRect(x0, top, chipW, chipH, 5); else c.rect(x0, top, chipW, chipH);
     c.fill();
     c.textAlign = 'left';
-    c.fillStyle = ink[x.finish]; c.font = '700 26px Oswald'; c.fillText(chipLabel, x0 + padX, cy + capChip / 2);
+    c.fillStyle = ink[x.finish]; c.font = '700 34px Oswald'; c.fillText(chipLabel, x0 + padX, cy + capChip / 2);
     c.fillStyle = '#b9ad92'; c.font = '400 28px "Special Elite"'; c.fillText(line, x0 + chipW + gap, cy + capLine / 2);
     c.textAlign = 'center';
   }
@@ -1100,6 +1301,10 @@
     if (items.length > 1) { c.textAlign = 'center'; c.fillStyle = '#b9ad92'; const sub = 'with ' + listText(items.slice(1)); fitFont(c, sub, 400, 28, '"Special Elite"', W - 100); c.fillText(sub, W / 2, 204); }
     // cards: cy is roughly the card's middle
     const draw = (x, k, cx, cy, w, rot) => { c.save(); c.translate(cx, cy); c.rotate(rot * Math.PI / 180); if (imgs[k]) framed(c, imgs[k], -w / 2, -w * 0.62, w, x.finish, x.serial, x.info.flash); c.restore(); };
+    // A soft light behind the best card in its finish's colour (visual pass step 6, 29 Oct 2026), so a Gold or a
+    // Top Secret reads at a glance even as a small thumbnail in a feed or a profile grid.
+    const hp = items.length === 1 ? [W / 2, 188 + 830 * 0.62, 830] : items.length === 2 ? [W / 2 - 205, 716, 610] : [W / 2, 713, 560];
+    shareHalo(c, items[0], hp[0], hp[1], hp[2]);
     if (items.length === 1) draw(items[0], 0, W / 2, 188 + 830 * 0.62, 830, 0);
     else if (items.length === 2) { const cw = 610; draw(items[1], 1, W / 2 + 205, 730, cw, 7); draw(items[0], 0, W / 2 - 205, 716, cw, -5); }
     else { const cw = 560; draw(items[1], 1, W / 2 - 240, 756, cw, -9); draw(items[2], 2, W / 2 + 240, 756, cw, 9); draw(items[0], 0, W / 2, 713, cw, 0); }
@@ -1206,10 +1411,10 @@
     });
     const groups = [
       ['Series', SERIES.map(([k, name, col]) => [name, col, c => c.series === k, ['series', k]])],
-      ['Years', ERAS.map(([k, name]) => [name || k, '#1A1612', c => c.kind === 'dispatch' && c.era === k, ['year', k]])],
+      ['Years', ERAS.map(([k, name]) => [name || k, '#CDB98A', c => c.kind === 'dispatch' && c.era === k, ['year', k]])],
       // Fixed lists, always shown (25 Oct 2026): nothing pops in or out; empty ones are greyed.
-      ['Theaters', [['Western Europe', 'Western Europe'], ['Mediterranean and North Africa', 'Mediterranean and North Africa'], ['Atlantic', 'Atlantic'], ['Pacific', 'Pacific'], ['Home Front', 'home front'], ['Worldwide', 'worldwide']].map(([n, t]) => [n, '#2F6E6A', c => (c.theater || []).includes(t)])],
-      ['Nations', ['US', 'Britain', 'Soviet Union', 'Germany', 'Japan'].map(n => [n, '#6b3d2e', c => (c.nations || []).includes(n)])],
+      ['Theaters', [['Western Europe', 'Western Europe'], ['Mediterranean and North Africa', 'Mediterranean and North Africa'], ['Atlantic', 'Atlantic'], ['Pacific', 'Pacific'], ['Home Front', 'home front'], ['Worldwide', 'worldwide']].map(([n, t]) => [n, '#5FA8A2', c => (c.theater || []).includes(t)])],
+      ['Nations', ['US', 'Britain', 'Soviet Union', 'Germany', 'Japan'].map(n => [n, '#B9785F', c => (c.nations || []).includes(n)])],
     ].map(([g, list]) => [g, list.map(([name, col, fn, open]) => {
       const all = CAT.filter(fn), held = all.filter(c => H.has(c.id)).length;
       return { name, col, all: all.length, held, pins: PINS.filter(([k]) => held >= k), next: PINS.find(([k]) => held < k), open: open || ['set', { title: name, fn, by: 'date' }] };
@@ -1228,7 +1433,7 @@
       const full = m.held === m.all;
       const end = monthEnd(m.ym).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', timeZone: 'UTC' });
       const txt = !m.closed ? (full ? 'Currently complete · the stamp lands when the month closes' : `${m.held} of ${m.all} Declassed · Closes ${end}`) : `${m.held} of ${m.all} Declassed · Closed, still collectable`;
-      return `<div class="srow go" ${go(m.open)} style="--c:#7a5c2e"><div class="nm"><b>${esc(m.name)} files</b><small class="${full ? 'cc' : m.all - m.held === 1 ? 'near' : ''}">${txt}</small><i><em style="width:${m.all ? m.held / m.all * 100 : 0}%"></em></i></div></div>`;
+      return `<div class="srow go" ${go(m.open)} style="--c:#C99A55"><div class="nm"><b>${esc(m.name)} files</b><small class="${full ? 'cc' : m.all - m.held === 1 ? 'near' : ''}">${txt}</small><i><em style="width:${m.all ? m.held / m.all * 100 : 0}%"></em></i></div></div>`;
     };
     // The current month always shows; unfinished past months fold by calendar year (25 Oct 2026).
     months.filter(m => !m.stamp && !m.closed).forEach(m => { h += monthRow(m); });
@@ -1273,11 +1478,10 @@
     const p = ST && ST.player, r = ST && ST.rank, it = ST && ST.intel;
     $('rankBtn').style.visibility = p && r ? '' : 'hidden';
     $('intelBtn').style.visibility = p && it ? '' : 'hidden';
-    $('statRow').hidden = !(p && (r || it));
     if (r) {
       $('rankT').textContent = r.short;
-      $('rankT').classList.toggle('long', r.short.length > 12);
-      document.querySelector('.slimrow .rbar').hidden = !r.nextAt; // top rank: no next step, so no bar
+      $('rankT').classList.toggle('long', r.short.length > 12); // long names step down a size so the badge stays beside them on one line
+      document.querySelector('#rankBtn .rbar').hidden = !r.nextAt; // top rank: no next step, so no bar
       $('rankI').src = '/declass/insignia/' + rankSlug(r.title) + '.svg';
       $('rankBar').style.width = (r.nextAt ? Math.max(0, Math.min(1, (r.filled - r.from) / (r.nextAt - r.from))) * 100 : 100) + '%';
     }
@@ -1448,7 +1652,7 @@
   // The three stop tour on the first visit to home, signed in.
   const TOUR = [
     { sel: '#files', h: "Today's files", t: 'A new file arrives with every dispatch we post. Each one stays open for 24 hours, so you can open it whenever you like that day.' },
-    { sel: '#sHome .top .streak', h: 'Your streak', t: 'Open at least one file a day to build your streak. Every third day earns a priority envelope, drawn from the whole archive.' },
+    { sel: '#sHome .hstreak', h: 'Your streak', t: 'Open at least one file a day to build your streak. Every third day earns a priority envelope, drawn from the whole archive.' },
     { sel: '#rankBtn', h: 'Your rank', t: 'Every new card, and every new finish of a card, fills a spot in your dossier. Fill enough spots and you get promoted, starting from Private. Each new rank is a surprise, and you never lose one. Tap your rank to see how close the next one is.' },
     { sel: '#intelBtn', h: 'Intel', t: "Every file you open earns 5 Intel, and duplicates turn into more. Spend it to request any card you're missing. Tap Intel to see your balance and what you can request." },
     { sel: '#sHome .howbtn', h: "That's it", t: 'How to play has the rest whenever you want it: Living Cards, Name This, sets, and the odds. Now go open your first file.', last: true },
@@ -1555,9 +1759,9 @@
     if (!cfg.open) return show('sSoon');
     loadGoogle();
     return Promise.all([api('catalog'), api('state')]).then(([c, s]) => {
-      setCatalog(c.cards); ST = s;
+      setCatalog(c.cards); ST = s; landFan();
       const file = new URLSearchParams(location.search).get('file');
       if (file) checkFile(file); else { route(); if (signedIn()) maybePromote(); }
     });
-  }).catch(() => show('sSoon'));
+  }).catch(e => { console.error('declass boot', e); show('sSoon'); });
 })();

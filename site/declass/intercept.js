@@ -14,8 +14,10 @@
 
   // ---------- home tile ----------
   function tileHTML(s) {
-    if (!s || s.status === 'soon') return `<div class="icptile soon" aria-label="Intercept, a Declass daily puzzle, coming soon"><b>Intercept</b><span>a Declass daily puzzle · Coming soon</span></div>`;
-    const go = (sub, cls) => `<button class="icptile ${cls || 'live'}" id="icpTile" type="button"><b>Intercept</b><span>${sub}</span></button>`;
+    if (!s || s.status === 'soon') return `<div class="icptile soon" aria-label="Intercept, a Declass daily puzzle, coming soon"><b>Intercept</b><span>a Declass daily puzzle</span></div>`;
+    // the first part sits on its own line, the rest below it (29 Oct 2026)
+    const two = sub => { const i = sub.indexOf(' · '); return i < 0 ? `<span>${sub}</span>` : `<span>${sub.slice(0, i)}</span><span>${sub.slice(i + 3)}</span>`; };
+    const go = (sub, cls) => `<button class="icptile ${cls || 'live'}" id="icpTile" type="button"><b>Intercept</b>${two(sub)}</button>`;
     if (s.status === 'signin') return go('a Declass daily puzzle · Sign in to crack today\'s files', 'wait');
     if (s.status === 'new') return go('a Declass daily puzzle · Crack today\'s files');
     if (s.status === 'play') return go(`In progress · ${s.found} of 4 links · ${s.mistakes} of 3 mistakes`);
