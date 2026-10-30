@@ -615,7 +615,7 @@
     if (p.finish === 'topsecret' && p.serial) return `<b>The ${ord(p.serial)} Top Secret ${p.variant === 'living' ? 'living ' : ''}${esc(info.short)} pulled anywhere in the world.</b>`;
     return i < pulls.length - 1 ? 'Swipe or tap Next' : cardEnv && cardEnv.kind === 'intercept' ? "That's today's pick." : "That's the envelope.";
   }
-  function glow(f, big) { if (f === 'copper' && !big) return; const g = $('glow'); g.className = 'glow'; void g.offsetWidth; g.className = 'glow ' + f + (big ? ' big' : ''); }
+  function glow(f, big) { if (f === 'copper' && !big) return; const g = $('glow'); g.className = 'glow'; void g.offsetWidth; g.className = 'glow ' + f + (big ? ' held' : ''); }
   // The held reveal (visual pass step 5, 29 Oct 2026): a Gold, Top Secret, or Flash card, and the best card of a
   // starter pack, holds for a beat before it turns: the card trembles, a glow builds behind it and a low riser
   // plays; then it turns with a bigger glow, a sheen sweep across the frame, and a heavier hit.
