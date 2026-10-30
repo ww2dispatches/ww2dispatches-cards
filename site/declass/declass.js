@@ -962,7 +962,7 @@
     $('viewPos').textContent = `${vi + 1} of ${viewList.length}`;
     $('viewCtx').textContent = viewLabel ? `${viewLabel} · ${vi + 1} of ${viewList.length}` : '';
     $('vPrev').disabled = vi === 0; $('vNext').disabled = vi === viewList.length - 1;
-    const row = (variant, lbl) => `<div class="rowlbl">${lbl}</div>` + FIN.map(f => {
+    const row = (variant, lbl) => (lbl ? `<div class="rowlbl">${lbl}</div>` : '') + FIN.map(f => {
       const n = h[variant][f] || 0;
       // Duplicates turn into Intel, so a count only shows where extra copies can exist: Top Secret, two or more.
       const fold = info.hasFile && (f === 'gold' || f === 'topsecret') ? '<span class="fold" aria-hidden="true"></span>' : '';
@@ -973,7 +973,7 @@
     }).join('');
     $('slots4').innerHTML = info.flash
       ? `<div class="rowlbl">Flash</div><button class="s4 f-topsecret cur" data-v="still" data-f="topsecret">Top Secret${(h.still.topsecret || 0) > 1 ? `<small>×${h.still.topsecret}</small>` : ''}</button><div class="s4 off flashnote">Always Top Secret</div>`
-      : row('still', 'Still') + (info.hasFilm ? row('living', 'Living Card') : '');
+      : row('still', '') + (info.hasFilm ? row('living', '▶\ufe0e Living Card') : ''); // no label on the regular row (29 Oct 2026)
     $('slots4').querySelectorAll('button.s4:not(.reqs)').forEach(b => { b.onclick = () => { viewSel = { variant: b.dataset.v, finish: b.dataset.f }; renderView(); }; });
     $('slots4').querySelectorAll('button.reqs').forEach(b => { b.onclick = () => info.today ? toast("Today's cards can be requested starting tomorrow.") : confirmRequest(info, b.dataset.rv, b.dataset.rf); });
     const mine = pl.filter(p => p.card === id).slice().sort((a, b) => (b.at || '').localeCompare(a.at || ''));
