@@ -615,13 +615,34 @@
     if (p.finish === 'topsecret' && p.serial) return `<b>The ${ord(p.serial)} Top Secret ${p.variant === 'living' ? 'living ' : ''}${esc(info.short)} pulled anywhere in the world.</b>`;
     return i < pulls.length - 1 ? 'Swipe or tap Next' : cardEnv && cardEnv.kind === 'intercept' ? "That's today's pick." : "That's the envelope.";
   }
-  function glow(f) { if (f === 'copper') return; const g = $('glow'); g.className = 'glow'; void g.offsetWidth; g.className = 'glow ' + f; }
+  function glow(f, big) { if (f === 'copper' && !big) return; const g = $('glow'); g.className = 'glow'; void g.offsetWidth; g.className = 'glow ' + f + (big ? ' big' : ''); }
+  // The held reveal (visual pass step 5, 29 Oct 2026): a Gold, Top Secret, or Flash card, and the best card of a
+  // starter pack, holds for a beat before it turns: the card trembles, a glow builds behind it and a low riser
+  // plays; then it turns with a bigger glow, a sheen sweep across the frame, and a heavier hit.
+  let holding = false;
+  function bigMoment(p) {
+    if (p.finish === 'gold' || p.finish === 'topsecret' || (p.cardInfo && p.cardInfo.flash)) return true;
+    if (!cardEnv || cardEnv.kind !== 'starter' || p.finish === 'copper') return false;
+    const rank = f => FIN.indexOf(f), best = Math.max(...pulls.map(x => rank(x.finish)));
+    return rank(p.finish) === best && pulls.find(x => rank(x.finish) === best) === p;
+  }
   function reveal() {
     const p = pulls[idx];
+    if (holding) return;
     if (revealed[idx]) { answerNT(); return; }
+    const big = bigMoment(p);
+    if (big && !reveal.go) {
+      holding = true;
+      const still = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+      $('flip').classList.add('charge'); $('stage').classList.add('charging');
+      sfx('charge');
+      setTimeout(() => { holding = false; $('flip').classList.remove('charge'); $('stage').classList.remove('charging'); reveal.go = true; reveal(); reveal.go = false; }, still ? 250 : 800);
+      return;
+    }
     revealed[idx] = true;
-    glow(p.finish);
+    glow(p.finish, big);
     sfx(FINISH_SOUND[p.finish][p.variant === 'living' ? 1 : 0]);
+    if (big) { sfx('boom'); const cf = document.querySelector('#flip .cf'); if (cf) { cf.classList.remove('sweep'); void cf.offsetWidth; cf.classList.add('sweep'); } }
     $('flip').classList.add('up');
     if (p.cardInfo && p.variant === 'living') startFilm($('flip'), p.cardInfo);
     if (p.intel && tags[idx] && tags[idx][0].startsWith('dup')) intelChip(p.intel);
@@ -675,7 +696,7 @@
     wireMinis($('summaryRow'), ids);
   }
   function go(n, jump) {
-    if ($('sCards').classList.contains('summ')) return;
+    if (holding || $('sCards').classList.contains('summ')) return;
     if (n === pulls.length && idx === pulls.length - 1) { finish(); return; }
     if (n < 0 || n >= pulls.length) return;
     if (n > idx && !revealed[idx] && !jump) return;
@@ -958,6 +979,9 @@
       mg.gain.setValueAtTime(0.0001, t); mg.gain.exponentialRampToValueAtTime(0.035 * vol, t + 0.7); mg.gain.setValueAtTime(0.035 * vol, t + D - 0.7); mg.gain.exponentialRampToValueAtTime(0.0001, t + D); m.connect(mg).connect(sfxGain); m.start(t); m.stop(t + D + 0.1);
       let x = t + 0.2, gap = 0.14; while (x < t + D - 0.3) { nz(x, 0.007, 'bandpass', 3200, 4, 0.11 * vol); x += gap; gap = Math.max(0.042, gap * 0.9); }
     },
+    // the held reveal: a riser under two low heartbeats, then a low hit as the card turns
+    charge(t) { const sw = nz(t, 0.78, 'bandpass', 300, 1.6, 0.24, 0.55); sw.f.frequency.setValueAtTime(260, t); sw.f.frequency.exponentialRampToValueAtTime(3200, t + 0.76); tone(t + 0.02, 58, 0.14, 'sine', 0.55, 0.003, 40); tone(t + 0.4, 58, 0.14, 'sine', 0.7, 0.003, 40); },
+    boom(t) { tone(t, 82, 0.7, 'sine', 0.75, 0.003, 38); nz(t, 0.22, 'lowpass', 900, 0.7, 0.45); },
     rustle(t) { for (let i = 0; i < 6; i++) nz(t + i * 0.05 + Math.random() * 0.03, 0.06, 'bandpass', 1500 + Math.random() * 2500, 0.9, 0.18, 0.01); },
     teletype(t) { for (let i = 0; i < 9; i++) nz(t + i * 0.055 + Math.random() * 0.012, 0.018, 'bandpass', 2000 + Math.random() * 1500, 2.5, 0.45); bell(t + 0.58, 1975.5, 1.1, 0.25); },
     locked(t) { tone(t, 160, 0.08, 'sine', 0.35, 0.002, 110); nz(t, 0.03, 'lowpass', 600, 0.8, 0.25); },

@@ -816,3 +816,20 @@ h2{flex-wrap:wrap;row-gap:2px}
 .stack .env.tearing .seal{transition:none;transform:translate(calc(-50% + var(--tx,0px)),-50%) rotate(calc(-6deg + var(--p,0) * 24deg)) scale(calc(1 - var(--p,0) * .15))}
 .stack .env.tearing .flap{transition:none;transform:rotateX(calc(var(--p,0) * -32deg))}
 .stack .env.snap .seal,.stack .env.snap .flap{transition:transform .25s ease-out}
+
+/* Visual pass step 5 (29 Oct 2026): the held reveal for a Gold, Top Secret, or Flash card, and for the best
+   card of a starter pack. The card trembles while a glow builds behind it, then turns with a bigger glow and a
+   sheen that sweeps once across the frame. */
+#stage::before{content:"";position:absolute;inset:-26%;border-radius:50%;background:radial-gradient(closest-side,rgba(255,214,120,.95),rgba(255,180,80,.4) 60%,transparent 82%);opacity:0;pointer-events:none;transform:scale(.8)}
+#stage.charging::before{animation:charge .8s ease-out forwards}
+@keyframes charge{to{opacity:1;transform:scale(1.05)}}
+@media (prefers-reduced-motion:no-preference){
+  .flip.charge{animation:tremble .8s ease-in}
+}
+@keyframes tremble{0%{transform:none}20%{transform:translate(-1px,0) rotate(-.4deg)}35%{transform:translate(1px,-1px) rotate(.4deg)}50%{transform:translate(-2px,1px) rotate(-.7deg) scale(1.01)}65%{transform:translate(2px,-1px) rotate(.7deg) scale(1.015)}80%{transform:translate(-3px,0) rotate(-1deg) scale(1.02)}100%{transform:translate(0,-2px) scale(1.03)}}
+.glow.big{animation-duration:2.6s}
+.glow.silver.big{--gc:rgba(255,255,255,.95)}
+.glow.gold.big{--gc:rgba(255,200,80,1)}
+.cf.sweep .sheen{display:block;background-size:260% 100%;animation:sweep 1.2s .55s ease-out both}
+.cf.f-gold.sweep .frame::after{background-size:260% 100%;animation:sweep 1.2s .55s ease-out both}
+@keyframes sweep{from{background-position:120% 0}to{background-position:-20% 0}}
