@@ -960,3 +960,10 @@ body.zopen{overflow:hidden}
 html.ztrial #stage2{cursor:zoom-in}
 .zoomer.zoomed .cf .sheen,.zoomer.zoomed .cf .holo,.zoomer.zoomed .cf .glare{opacity:0;transition:opacity .2s}
 .srow small .ph{white-space:nowrap}
+/* Card view, tightened (29 Oct 2026): header rows closer, slimmer Prev and Next, finish row closer, card size unchanged. */
+#sView #backView{padding:6px 0 2px}
+#sView .vctx{margin:0;line-height:1.15}
+#sView #viewCount{margin:2px 0 8px}
+#sView .nav{margin-top:8px}
+#sView .nav button{padding:5px 12px}
+#sView .slots4{margin-top:8px}
