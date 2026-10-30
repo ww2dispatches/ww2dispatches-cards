@@ -25,6 +25,17 @@
     icpPreview = localStorage.getItem('declass_icp') || '';
   } catch (e) {}
 
+  // Full screen card with zoom (29 Oct 2026), on trial: ?zoom=on turns it on in this browser, ?zoom=off turns it off.
+  let zoomTrial = false;
+  try {
+    const url = new URL(location.href), v = url.searchParams.get('zoom');
+    if (v === 'on') localStorage.setItem('declass_zoom', '1');
+    if (v === 'off') localStorage.removeItem('declass_zoom');
+    if (v) { url.searchParams.delete('zoom'); history.replaceState(null, '', url.pathname + url.search + url.hash); }
+    zoomTrial = Boolean(localStorage.getItem('declass_zoom'));
+  } catch (e) {}
+  if (zoomTrial) document.documentElement.classList.add('ztrial');
+
   function api(path, body) {
     return fetch('/api/' + path, {
       method: body ? 'POST' : 'GET',
@@ -940,6 +951,7 @@
     $('backView').textContent = '◀\ufe0e ' + (viewFrom === 'sSection' && label ? label : viewFrom === 'sCards' ? 'Envelope' : 'Back');
     renderView();
     show('sView');
+    if (zoomTrial && !seen('zoom')) setTimeout(() => toast('Tap the card to see it up close.'), 700);
   }
   function serialFor(pl, id, variant, finish) {
     const p = pl.find(x => x.card === id && x.variant === variant && x.finish === finish && x.serial);
@@ -1045,6 +1057,111 @@
     $('ctext').innerHTML = '<p class="m">Loading the file…</p>';
     api('card?id=' + encodeURIComponent(info.id)).then(d => { DETAIL.set(info.id, d.card); paint(d.card); if (viewList[vi] === info.id) paintFile(info, h, d.card); }).catch(() => { $('ctext').innerHTML = ''; });
   }
+  // ---------- full screen card with zoom (29 Oct 2026) ----------
+  // Tap the card in the card view: it fills the screen on a dark backdrop in its finish. Pinch or double
+  // tap to zoom, drag to move around, then the X, a tap on the backdrop, a swipe down, or Esc to close.
+  // Sideways swipes never page to the next card here.
+  const Z = { s: 1, x: 0, y: 0, pts: new Map(), pinch: null, pan: null, tap: null, lastTap: null, moved: false };
+  function zApply(anim) {
+    const w = $('zcard'); if (!w) return;
+    w.style.transition = anim ? 'transform .22s ease-out' : 'none';
+    w.style.transform = `translate(${Z.x}px, ${Z.y}px) scale(${Z.s})`;
+    $('zoomer').classList.toggle('zoomed', Z.s > 1.01);
+  }
+  function zClamp() {
+    const w = $('zcard'); if (!w) return;
+    Z.s = Math.min(4, Math.max(1, Z.s));
+    if (Z.s <= 1.01) { Z.s = 1; Z.x = 0; Z.y = 0; return; }
+    const W = w.offsetWidth, H = w.offsetHeight, mx = Math.max(0, (W * Z.s - innerWidth) / 2 + 20), my = Math.max(0, (H * Z.s - innerHeight) / 2 + 20);
+    const ex = (W * Z.s - W) / 2, ey = (H * Z.s - H) / 2;
+    Z.x = Math.max(-Math.max(mx, ex), Math.min(Math.max(mx, ex), Z.x));
+    Z.y = Math.max(-Math.max(my, ey), Math.min(Math.max(my, ey), Z.y));
+  }
+  // Zoom to scale s keeping the screen point (px, py) still.
+  function zZoomAt(s, px, py, anim) {
+    const w = $('zcard'), r = w.getBoundingClientRect();
+    const cx = r.left + r.width / 2, cy = r.top + r.height / 2, k = s / Z.s;
+    Z.x += (px - cx) * (1 - k); Z.y += (py - cy) * (1 - k); Z.s = s;
+    zClamp(); zApply(anim);
+  }
+  function openZoom() {
+    const id = viewList[vi], info = BYID.get(id); if (!info || !viewSel) return;
+    document.querySelectorAll('#stage2 video').forEach(v => v.pause());
+    $('zstage').innerHTML = `<div id="zcard">${cardFace(info, viewSel.finish, viewSel.variant, serialFor(myPulls(), id, viewSel.variant, viewSel.finish), { autoplay: true })}</div>`;
+    if (viewSel.variant === 'living') startFilm($('zstage'), info);
+    Object.assign(Z, { s: 1, x: 0, y: 0, pinch: null, pan: null, tap: null, lastTap: null }); Z.pts.clear();
+    $('zoomer').hidden = false; document.body.classList.add('zopen');
+    requestAnimationFrame(() => $('zoomer').classList.add('on'));
+    zApply(false); sfx('slide', 0.5);
+  }
+  function closeZoom() {
+    if ($('zoomer').hidden) return;
+    document.querySelectorAll('#zstage video').forEach(v => v.pause());
+    $('zoomer').classList.remove('on', 'zoomed'); document.body.classList.remove('zopen');
+    setTimeout(() => { $('zoomer').hidden = true; $('zstage').innerHTML = ''; const v = document.querySelector('#stage2 video'); if (v) v.play().catch(() => {}); }, 200);
+  }
+  (function wireZoom() {
+    const zs = $('zstage');
+    $('zx').onclick = closeZoom;
+    zs.addEventListener('pointerdown', e => {
+      if (e.target.closest('.spk, .play')) return;
+      zs.setPointerCapture(e.pointerId);
+      Z.pts.set(e.pointerId, { x: e.clientX, y: e.clientY });
+      if (Z.pts.size === 2) {
+        const [a, b] = [...Z.pts.values()];
+        Z.pinch = { d: Math.hypot(a.x - b.x, a.y - b.y), s: Z.s, mx: (a.x + b.x) / 2, my: (a.y + b.y) / 2, x: Z.x, y: Z.y }; Z.pan = null; Z.moved = true;
+      } else if (Z.pts.size === 1) {
+        Z.pan = { x: e.clientX, y: e.clientY, ox: Z.x, oy: Z.y }; Z.moved = false; Z.tap = { x: e.clientX, y: e.clientY, t: Date.now() };
+      }
+    });
+    zs.addEventListener('pointermove', e => {
+      if (!Z.pts.has(e.pointerId)) return;
+      Z.pts.set(e.pointerId, { x: e.clientX, y: e.clientY });
+      if (Z.pinch && Z.pts.size >= 2) {
+        const [a, b] = [...Z.pts.values()], d = Math.hypot(a.x - b.x, a.y - b.y);
+        const mx = (a.x + b.x) / 2, my = (a.y + b.y) / 2;
+        Z.s = Z.pinch.s; Z.x = Z.pinch.x; Z.y = Z.pinch.y;
+        zZoomAt(Math.min(4, Math.max(1, Z.pinch.s * d / Z.pinch.d)), Z.pinch.mx, Z.pinch.my, false);
+        Z.x += mx - Z.pinch.mx; Z.y += my - Z.pinch.my; zClamp(); zApply(false);
+        return;
+      }
+      if (Z.pan) {
+        const dx = e.clientX - Z.pan.x, dy = e.clientY - Z.pan.y;
+        if (Math.hypot(dx, dy) > 8) Z.moved = true;
+        if (Z.s > 1) { Z.x = Z.pan.ox + dx; Z.y = Z.pan.oy + dy; zClamp(); zApply(false); }
+        else if (dy > 0) { $('zcard').style.transition = 'none'; $('zcard').style.transform = `translateY(${dy}px)`; $('zoomer').style.setProperty('--zfade', String(Math.max(0.3, 1 - dy / 400))); }
+      }
+    });
+    const up = e => {
+      if (!Z.pts.has(e.pointerId)) return;
+      Z.pts.delete(e.pointerId);
+      if (Z.pinch) { if (Z.pts.size < 2) { Z.pinch = null; const p = [...Z.pts.values()][0]; Z.pan = p ? { x: p.x, y: p.y, ox: Z.x, oy: Z.y } : null; } return; }
+      const pan = Z.pan; Z.pan = null; $('zoomer').style.removeProperty('--zfade');
+      if (!pan) return;
+      const dy = e.clientY - pan.y;
+      if (Z.s === 1 && Z.moved) { if (dy > 90) closeZoom(); else zApply(true); return; }
+      if (Z.moved) return;
+      // A tap: a double tap zooms in to 2.5x at that spot (or back out); a single tap on the backdrop closes.
+      const now = Date.now(), onCard = e.target.closest('#zcard');
+      if (Z.lastTap && now - Z.lastTap.t < 320 && Math.hypot(e.clientX - Z.lastTap.x, e.clientY - Z.lastTap.y) < 40) {
+        clearTimeout(Z.lastTap.timer); Z.lastTap = null;
+        if (Z.s > 1) { Z.s = 1; Z.x = 0; Z.y = 0; zApply(true); } else zZoomAt(2.5, e.clientX, e.clientY, true);
+        return;
+      }
+      Z.lastTap = { t: now, x: e.clientX, y: e.clientY, timer: setTimeout(() => { Z.lastTap = null; if (!onCard && Z.s === 1) closeZoom(); }, 330) };
+    };
+    zs.addEventListener('pointerup', up); zs.addEventListener('pointercancel', up);
+    zs.addEventListener('wheel', e => { e.preventDefault(); zZoomAt(Math.min(4, Math.max(1, Z.s * Math.exp(-e.deltaY * 0.0022))), e.clientX, e.clientY, false); }, { passive: false });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeZoom(); });
+    // Open: a clean tap on the card in the card view (not the speaker, not a swipe).
+    let down = null;
+    $('stage2').addEventListener('pointerdown', e => { down = { x: e.clientX, y: e.clientY, t: Date.now() }; });
+    $('stage2').addEventListener('click', e => {
+      if (!zoomTrial || e.target.closest('.spk, .play') || !down) return;
+      if (Math.hypot(e.clientX - down.x, e.clientY - down.y) > 10 || Date.now() - down.t > 600) return;
+      mark('zoom'); openZoom();
+    });
+  })();
   $('vPrev').onclick = () => { if (vi > 0) { vi--; viewSel = null; renderView(); } };
   $('vNext').onclick = () => { if (vi < viewList.length - 1) { vi++; viewSel = null; renderView(); } };
   swipe($('viewer2'), () => $('vNext').click(), () => $('vPrev').click());
