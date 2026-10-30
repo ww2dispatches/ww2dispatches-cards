@@ -32,6 +32,9 @@ export function isSundayMorning(date) {
   return p.weekday === 'Sun' && Number(p.hour) < 12;
 }
 
+// Is this envelope time a morning one (before noon Eastern)? Only the morning envelope carries the day's dispatch.
+export const isMorning = iso => Number(parts(new Date(iso), GAME_TZ).hour) < 12;
+
 // A wall clock time in a zone ("2026-12-07", "10:00") as a UTC Date, daylight saving handled.
 export function zonedTime(day, hhmm, tz = GAME_TZ) {
   const want = Date.parse(`${day}T${hhmm}:00Z`);

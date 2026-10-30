@@ -6,7 +6,7 @@
 //   p:<random>          a priority envelope (streak reward), drawn when opened
 import { SLOT_TIMES, slotCards, archivePool, deepPool, flashPool, flashForFile, filmReleased } from './catalog.js';
 import { rollFinish, rollLiving, rollFlash, secureInt } from './odds.js';
-import { isSundayMorning, zonedTime, gameDay, isoSec } from './time.js';
+import { isSundayMorning, isMorning, zonedTime, gameDay, isoSec } from './time.js';
 
 const HOUR = 3600000;
 export const DAILY_HOURS = 24;
@@ -99,14 +99,17 @@ function archivePick(pool, t, rnd) {
   return { card, variant: 'still', finish: rollFinish('still', rnd) };
 }
 
-// The cards in an envelope. Daily: that slot's dispatch (always the still card; a Flash dispatch
+// The cards in an envelope. Daily morning: that slot's dispatch (evening: archive cards only) (always the still card; a Flash dispatch
 // comes Top Secret), then archive pulls from the last 90 days, or the whole history on Sunday
 // mornings. Priority: three cards from the whole history. Commemorative: the day's Flash card
 // (or cards, on 1 and 2 September) plus three cards from the whole history.
 export function drawCards(env, t, rnd = secureInt) {
   const picks = [];
   let want = CARDS_PER_ENVELOPE;
-  if (env.kind === 'daily') {
+  // Only the morning envelope carries the day's dispatch (29 Oct 2026); the evening envelope is
+  // three archive cards, so a full month takes some luck or Intel, not just showing up.
+  const morning = env.kind === 'daily' && isMorning(env.at);
+  if (morning) {
     for (const card of slotCards(env.at).slice(0, CARDS_PER_ENVELOPE)) {
       picks.push(card.flash ? flashPick(card) : { card, variant: 'still', finish: rollFinish('still', rnd) });
     }
@@ -125,7 +128,7 @@ export function drawCards(env, t, rnd = secureInt) {
   }
   // The day's dispatch is guaranteed but lands at a random spot in the envelope (29 Oct 2026), so
   // the newest card isn't always card 1.
-  if (env.kind === 'daily') {
+  if (morning) {
     const k = Math.min(slotCards(env.at).length, CARDS_PER_ENVELOPE);
     const mixed = picks.slice(k);
     picks.slice(0, k).forEach(d => mixed.splice(rnd(mixed.length + 1), 0, d));
