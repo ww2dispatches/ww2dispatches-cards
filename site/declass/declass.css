@@ -959,3 +959,4 @@ button:not(.tr):not(.mini):active,.slotbtn:active,.tile:active,.allbtn:active,.s
 body.zopen{overflow:hidden}
 html.ztrial #stage2{cursor:zoom-in}
 .zoomer.zoomed .cf .sheen,.zoomer.zoomed .cf .holo,.zoomer.zoomed .cf .glare{opacity:0;transition:opacity .2s}
+.srow small .ph{white-space:nowrap}

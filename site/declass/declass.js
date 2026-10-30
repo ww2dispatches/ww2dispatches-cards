@@ -1596,10 +1596,13 @@
     let h = '<h2>Monthly files</h2>';
     const stamps = months.filter(m => m.stamp);
     if (stamps.length) h += `<div class="sshelf">${stamps.map(m => `<div class="stp go" ${go(m.open)} title="${esc(m.name)}">${stampSVG(m.name, m.stamp)}</div>`).join('')}</div>`;
+    // Set rows (29 Oct 2026): short phrases that wrap whole, never mid phrase, so a narrow phone breaks
+    // between "Complete · 8 cards ·" and "Pin at 25" instead of stranding a number.
+    const phr = parts => parts.map((x, i) => `<span class="ph">${esc(x)}${i < parts.length - 1 ? ' ·' : ''}</span>`).join(' ');
     const monthRow = m => {
       const full = m.held === m.all;
       const end = monthEnd(m.ym).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', timeZone: 'UTC' });
-      const txt = !m.closed ? (full ? 'Currently complete · the stamp lands when the month closes' : `${m.held} of ${m.all} Declassed · Closes ${end}`) : `${m.held} of ${m.all} Declassed · Closed, still collectable`;
+      const txt = phr(!m.closed ? (full ? ['Complete', 'Stamp lands ' + end] : [`${m.held} of ${m.all} Declassed`, 'Closes ' + end]) : [`${m.held} of ${m.all} Declassed`, 'Still collectable']);
       return `<div class="srow go" ${go(m.open)} style="--c:#C99A55"><div class="nm"><b>${esc(m.name)} files</b><small class="${full ? 'cc' : m.all - m.held === 1 ? 'near' : ''}">${txt}</small><i><em style="width:${m.all ? m.held / m.all * 100 : 0}%"></em></i></div></div>`;
     };
     // The current month always shows; unfinished past months fold by calendar year (25 Oct 2026).
@@ -1614,10 +1617,10 @@
       list.forEach(x => {
         if (!x.all) { h += `<div class="srow none" style="--c:${x.col}"><div class="nm"><b>${esc(x.name)}</b><small>None posted yet</small><i></i></div></div>`; return; }
         const full = x.held === x.all;
-        h += `<div class="srow go" ${go(x.open)} style="--c:${x.col}"><div class="nm"><b>${esc(x.name)}</b><small class="${full ? 'cc' : ''}">${full ? 'Currently complete · ' + x.held + ' cards' : x.held + ' of ' + x.all + ' Declassed'}${x.next ? (x.pins.length ? ' · Next pin at ' : ' · First pin at ') + x.next[0] : ''}</small><i><em style="width:${x.held / x.all * 100}%"></em></i></div><div class="spins">${x.pins.map(([k, m]) => `<div class="spin">${pinSVG(k, m)}</div>`).join('')}</div></div>`;
+        h += `<div class="srow go" ${go(x.open)} style="--c:${x.col}"><div class="nm"><b>${esc(x.name)}</b><small class="${full ? 'cc' : ''}">${phr((full ? ['Complete', x.held + ' cards'] : [x.held + ' of ' + x.all + ' Declassed']).concat(x.next ? [(x.pins.length ? 'Next pin at ' : 'Pin at ') + x.next[0]] : []))}</small><i><em style="width:${x.held / x.all * 100}%"></em></i></div><div class="spins">${x.pins.map(([k, m]) => `<div class="spin">${pinSVG(k, m)}</div>`).join('')}</div></div>`;
       });
     });
-    h += '<p class="snote">A month\'s stamp is permanent once the month closes with every card held, even if you catch up later. Every collection is always listed, greyed until its first card posts, and says "Currently complete" until the next card posts. Pins count different cards, never duplicates.</p>';
+    h += '<p class="snote">A month\'s stamp is permanent once the month closes with every card held, even if you catch up later. Every collection is always listed, greyed until its first card posts, and says "Complete" until the next card posts. Pins count different cards, never duplicates.</p>';
     $('sets').innerHTML = h;
     $('sets').querySelectorAll('[data-go]').forEach(el => {
       const open = () => { setsScroll = window.scrollY; const [k, key] = links[+el.dataset.go]; section(k, key, true); window.scrollTo(0, 0); };
