@@ -324,7 +324,7 @@
     $('seriesTiles').querySelectorAll('[data-series]').forEach(b => { b.onclick = () => section('series', b.dataset.series); });
     $('yearTiles').innerHTML = ERAS.map(([k, name, span]) => {
       const all = CAT.filter(c => c.kind === 'dispatch' && c.era === k), h = all.filter(c => H.has(c.id)).length;
-      return `<button class="tile" data-year="${k}" ${all.length ? '' : 'disabled'}><i style="background:#CDB98A"></i><b>${name || k}</b><span>${all.length ? h + ' of ' + all.length : 'None yet'}</span>${span ? `<span class="rng">${span}</span>` : ''}<div class="bar"><i style="background:#CDB98A;width:${all.length ? h / all.length * 100 : 0}%"></i></div></button>`;
+      return `<button class="tile" data-year="${k}" ${all.length ? '' : 'disabled'}><i style="background:#CDB98A"></i><b>${name || k}</b><span>${all.length ? h + ' of ' + all.length : 'None yet'}</span><div class="bar"><i style="background:#CDB98A;width:${all.length ? h / all.length * 100 : 0}%"></i></div></button>`;
     }).join('');
     $('yearTiles').querySelectorAll('[data-year]').forEach(b => { b.onclick = () => section('year', b.dataset.year); });
     $('allSub').textContent = `${have} of ${total} cards`;
@@ -339,8 +339,10 @@
   // ---------- small cards in grids ----------
   // A key for the finish squares under each card (visual pass step 1, 29 Oct 2026): new players don't know what the squares mean.
   function legendHTML(flash) {
-    const items = flash ? [['flash', 'Flash · always Top Secret']] : FIN.map(f => [f, FNAME[f]]);
-    return `<p class="fd fleg" aria-label="What the squares mean">${items.map(([f, n]) => `<span><i class="${f === 'flash' ? 'flash' : 'f-' + f} on"></i>${esc(n)}</span>`).join('')}${flash ? '' : '<span><b>▶︎</b>Living Card</span>'}</p>`;
+    const sw = ([f, n]) => `<span><i class="${f === 'flash' ? 'flash' : 'f-' + f} on"></i>${esc(n)}</span>`;
+    if (flash) return `<div class="fleg" aria-label="What the square means"><p class="fd">${sw(['flash', 'Flash · always Top Secret'])}</p></div>`;
+    // Copper, Silver, Gold on one line; Top Secret and Living Card together below (29 Oct 2026)
+    return `<div class="fleg" aria-label="What the squares mean"><p class="fd">${['copper', 'silver', 'gold'].map(f => sw([f, FNAME[f]])).join('')}</p><p class="fd">${sw(['topsecret', FNAME.topsecret])}<span><b>▶︎</b>Living Card</span></p></div>`;
   }
   function miniHTML(id, H, shown) {
     const info = BYID.get(id);
@@ -374,7 +376,7 @@
   function section(kind, key, fromSets) {
     lastSection = [kind, key, fromSets];
     const H = holdingsNow();
-    let list, title;
+    let list, title, note = '';
     $('filters').hidden = kind !== 'all';
     // Opened from the Sets page, the back button returns there (25 Oct 2026).
     $('backSection').textContent = fromSets ? '◀\ufe0e Sets' : '◀\ufe0e Dossier';
@@ -387,7 +389,7 @@
       title = key === 'flash' ? 'Flash' : SERIES.find(s => s[0] === key)[1];
     } else if (kind === 'year') {
       list = CAT.filter(c => c.kind === 'dispatch' && c.era === key).sort((a, b) => a.date < b.date ? -1 : a.date > b.date ? 1 : 0);
-      const e = ERAS.find(x => x[0] === key); title = e[1] || key;
+      const e = ERAS.find(x => x[0] === key); title = e[1] || key; note = e[2] || ''; // the date range shows here, not on the small tile
     } else {
       const F = { all: () => true, missing: c => !H.has(c.id), living: c => c.hasFilm, flash: c => c.flash };
       SERIES.forEach(([k]) => { F[k] = c => c.series === k; });
@@ -407,7 +409,7 @@
     // A set one card short shows that card first, ready to request (25 Oct 2026).
     const oneShort = fromSets && list.length > 1 && list.length - h === 1 ? list.find(c => !H.has(c.id)) : null;
     if (oneShort) list = [oneShort].concat(list.filter(c => c !== oneShort));
-    $('sectionSub').textContent = `${h} of ${list.length} cards`;
+    $('sectionSub').textContent = (note ? note + ' · ' : '') + `${h} of ${list.length} cards`;
     $('sectionLeg').innerHTML = legendHTML(key === 'flash');
     $('sectionGrid').innerHTML = (oneShort ? `<p class="oneshort">One card to go: <b>${esc(oneShort.short)}</b>${signedIn() && !oneShort.today ? ` · <button class="linkish" id="reqOne">Request this card · ${priceOf(oneShort, 'still', 'copper')} Intel${haveIntel() < priceOf(oneShort, 'still', 'copper') ? ' (you have ' + haveIntel() + ')' : ''}</button>` : ''}</p>` : '')
       + (list.length ? list.map(c => miniHTML(c.id, H)).join('') : '<p class="sub" style="grid-column:1/-1">Nothing here yet.</p>');

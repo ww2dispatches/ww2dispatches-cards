@@ -715,7 +715,8 @@ body{background-color:#17140f;background-attachment:fixed;
 .slotbtn.locked b,.slotbtn.locked span{padding-right:150px}
 .mini .no{margin-top:5px}
 /* finish key under card grids (new players don't know what the squares mean) */
-.fleg{flex-wrap:wrap;justify-content:center;gap:6px 14px;margin:10px 0 14px;font-family:var(--type);font-size:14px;color:var(--mute)}
+.fleg{margin:10px 0 14px;font-family:var(--type);font-size:14px;color:var(--mute)}
+.fleg .fd{flex-wrap:wrap;justify-content:center;gap:6px 16px;margin:0}.fleg .fd+.fd{margin-top:6px}
 .fleg span{display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
 .fleg i{width:13px;height:13px}
 .fleg b{font-size:12px;margin:0;color:var(--red)}
@@ -732,3 +733,12 @@ h2{flex-wrap:wrap;row-gap:2px}
 #icpSlot .icptile span{font-size:14px}
 @media (max-width:400px){#yearTiles .tile span.rng{display:none}}
 #yearTiles .tile{display:flex;flex-direction:column;justify-content:flex-start}#yearTiles .tile .bar{margin-top:auto;width:100%}#yearTiles .tile b{margin-bottom:2px}
+/* Rank and Intel header (29 Oct 2026): labels on top, value below, bar and today's Intel underneath,
+   so the longest rank name and a five digit Intel balance both fit at 360 wide */
+#statRow{align-items:start}
+#statRow .rankst{display:grid;grid-template-columns:auto minmax(0,1fr);grid-template-areas:"sl sl" "ic nm" ". br";column-gap:7px;row-gap:3px;align-items:center;flex:1 1 auto;min-width:0;text-align:left}
+#statRow .rankst .sl{grid-area:sl}#statRow .rankst .rkicon{grid-area:ic}#statRow .rankst b{grid-area:nm;min-width:0}
+#statRow .rankst .rbar{grid-area:br;width:100%;max-width:140px;margin:0;align-self:center}
+#statRow .intelst{display:grid;grid-template-columns:auto auto;grid-template-areas:"sl sl" "ic nm" "td td";column-gap:6px;row-gap:3px;align-items:center;justify-content:end;flex:0 0 auto;text-align:right}
+#statRow .intelst .sl{grid-area:sl}#statRow .intelst .itok{grid-area:ic}#statRow .intelst b{grid-area:nm}
+#statRow .intelst span:last-child{grid-area:td;top:0;text-align:right}
