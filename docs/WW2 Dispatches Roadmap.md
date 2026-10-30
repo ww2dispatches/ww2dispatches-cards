@@ -15,7 +15,7 @@ Started 15 Oct 2026. Goal: post every day from launch (Sat 17 Oct 2026) and keep
 * **10:00 a.m., Name This.** X (into an X Community, through Typefully), Threads (History Threads community), Facebook Page, and Instagram (a two week test, see Open decisions), the last three through Buffer. No dispatch number. (Name This doc)
 
 **Every day, by hand**
-* **About 1:00 p.m., Lunch Drop.** Brian posts the day's 8 a.m. story into one X Community, with a plain archival photo (never the card), a new hook, a debate question, and two replies, from the pinned Lunch Drop page. Not scheduled anywhere; the Sunday run prepares it. (Lunch Drop doc)
+* **About 1:00 p.m., Lunch Drop.** Brian posts the day's 8 a.m. story into one X Community, with a plain archival photo, a new hook, a debate question, and two replies (the card rides on the first), from the pinned Lunch Drop page. Not scheduled anywhere; the Sunday run prepares it. (Lunch Drop doc)
 
 **Sunday**
 * **8:00 a.m., the weekly newsletter** on Substack (first issue Sun 1 Nov 2026). (Newsletter doc)

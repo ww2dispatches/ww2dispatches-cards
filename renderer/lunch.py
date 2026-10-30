@@ -71,6 +71,12 @@ def build(src):
             problems.append(f"{d['date']}: image file {d['image']} not found")
         if d["image"].startswith("cards/"):
             problems.append(f"{d['date']}: the image is a posted card; use a plain photo of the event (Lunch Drop doc)")
+        d2["cardImg"] = preview(d["replyCard"]) if d.get("replyCard") else None
+        d2["cardFull"] = (RAW_CARDS + d["replyCard"]) if d.get("replyCard") else None
+        if not d.get("replyCard"):
+            problems.append(f"{d['date']}: no replyCard (the day's 8 a.m. card goes on Reply 1)")
+        elif not d2["cardImg"]:
+            problems.append(f"{d['date']}: card file {d['replyCard']} not found")
         d2["weekday"] = date.fromisoformat(d["date"]).strftime("%a %d %b").replace(" 0", " ")
         days.append(d2)
     page = TEMPLATE.replace("__DATA__", json.dumps({"week": week["week"], "days": days}).replace("</", "<\\/"))
@@ -149,7 +155,7 @@ async function copyImage(src){
     c.getContext("2d").drawImage(img,0,0);
     const blob=await new Promise(r=>c.toBlob(r,"image/png"));
     await navigator.clipboard.write([new ClipboardItem({"image/png":blob})]);
-    toast("Photo copied. Paste it into the X post.");
+    toast("Image copied. Paste it into X.");
   } catch(e){ toast("Image copy blocked here. Use Open full photo, then press and hold to save."); }
 }
 
@@ -170,7 +176,7 @@ function render(){
   if(d.somber) h+=`<div class="warn"><b>Somber day.</b> No question, no jokes, keep replies respectful.</div>`;
   h+=`<div class="box"><p class="label">Post to</p>
       <div class="row" style="margin-top:0"><a class="btn go" href="${esc(d.communityUrl)}" target="_blank" rel="noopener">Open ${esc(d.community)} community</a></div>
-      <ol class="steps" style="margin-top:10px"><li>Open the community and tap post.</li><li>Copy the photo below and paste it in (or attach the saved photo).</li><li>Copy the post text and paste it.</li><li>Leave "also post to followers" off.</li><li>Post, then reply to your own post with Reply 1 and Reply 2.</li></ol></div>`;
+      <ol class="steps" style="margin-top:10px"><li>Open the community and tap post.</li><li>Copy the photo below and paste it in (or attach the saved photo).</li><li>Copy the post text and paste it.</li><li>Leave "also post to followers" off.</li><li>Post, then reply to your own post with Reply 1 and the card, then reply to Reply 1 with Reply 2.</li></ol></div>`;
   h+=`<div class="box"><p class="label">The photo</p>${d.img?`<img class="card" src="${d.img}" alt="${esc(d.alt||"")}">`:`<div class="warn">Photo preview missing.</div>`}
       <div class="count">${esc(d.imageCredit||"")}</div>
       <div class="row"><button onclick="copyImage(DAY.img)">Copy photo</button><a class="btn ghost" href="${esc(d.imageFull)}" target="_blank" rel="noopener">Open full photo</a></div>
@@ -179,8 +185,10 @@ function render(){
       <div class="count">${d.post.length} characters</div>
       <div class="row"><button onclick="copyText(DAY.post)">Copy post text</button></div></div>`;
   d.replies.forEach((r,i)=>{
-    h+=`<div class="box"><p class="label">Reply ${i+1}</p><div class="text">${esc(r)}</div>
-        <div class="row"><button onclick="copyText(DAY.replies[${i}])">Copy reply ${i+1}</button></div></div>`;
+    h+=`<div class="box"><p class="label">Reply ${i+1}${i===0&&d.cardImg?" (with the card)":""}</p><div class="text">${esc(r)}</div>
+        <div class="row"><button onclick="copyText(DAY.replies[${i}])">Copy reply ${i+1}</button></div>
+        ${i===0&&d.cardImg?`<img class="card" style="margin-top:10px" src="${d.cardImg}" alt="WW2 Dispatches card">
+        <div class="row"><button onclick="copyImage(DAY.cardImg)">Copy card</button><a class="btn ghost" href="${esc(d.cardFull)}" target="_blank" rel="noopener">Open full card</a></div>`:""}</div>`;
   });
   h+=`<div class="box"><p class="label">Quick facts for answering comments</p><ul class="facts">${d.facts.map((f,i)=>`<li>${esc(f)} <a href="#" onclick="copyText(DAY.facts[${i}]);return false" class="small">copy</a></li>`).join("")}</ul>
       ${(d.sources||[]).length?`<p class="small" style="margin:10px 0 0">Sources: ${d.sources.map(s=>`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>`).join(" · ")}</p>`:""}</div>`;

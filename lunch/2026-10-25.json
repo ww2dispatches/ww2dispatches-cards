@@ -38,7 +38,8 @@
         }
       ],
       "image": "cards/dispatch-027-x.jpg",
-      "imageCredit": "Posted with the 8 a.m. card, before the Lunch Drop switched to plain photos."
+      "imageCredit": "Posted with the 8 a.m. card, before the Lunch Drop switched to plain photos.",
+      "replyCard": null
     },
     {
       "date": "2026-10-31",
@@ -53,7 +54,7 @@
       "post": "Five weeks before Pearl Harbor, American sailors were already dying in the Atlantic.\n\nOn 31 October 1941, USS Reuben James was escorting convoy HX 156 near Iceland when U-552 fired a torpedo meant for a merchant ship. It struck the destroyer instead. Her magazine exploded and tore off the bow. Only 44 of her crew survived, and not one officer was among them.\n\nFour days earlier, Roosevelt had said, \"The shooting has started.\" Did America's war with Germany really begin here, not in December?",
       "replies": [
         "As her stern went down, its depth charges went off among the men in the water. The destroyers Niblack and Hilary P. Jones pulled the survivors from the sea. Reuben James was the first U.S. Navy ship sunk by enemy action in the war against Germany.",
-        "Photo: USS Reuben James on the Hudson River, New York, 29 April 1939. U.S. Navy photo NH 66334, public domain.\n\nSources: USS Reuben James (DD-245), Wikipedia; MaritimeQuest; National Archives."
+        "Photos: USS Reuben James on the Hudson River, New York, 29 April 1939, U.S. Navy photo NH 66334. On the card, Reuben James in the Panama Canal between the wars, U.S. Navy Bureau of Ships 19-N-10982 (NARA 496085338). Both public domain.\n\nSources: USS Reuben James (DD-245), Wikipedia; MaritimeQuest; National Archives."
       ],
       "alt": "Archival photo of the four stack destroyer USS Reuben James, hull number 245, under way on the Hudson River in New York, April 1939, with sailors lining her deck.",
       "facts": [
@@ -85,7 +86,8 @@
         }
       ],
       "image": "lunch/img/2026-10-31.jpg",
-      "imageCredit": "USS Reuben James on the Hudson River, New York, 29 April 1939. U.S. Navy photo NH 66334, public domain."
+      "imageCredit": "USS Reuben James on the Hudson River, New York, 29 April 1939. U.S. Navy photo NH 66334, public domain.",
+      "replyCard": "cards/dispatch-029-x.jpg"
     }
   ]
 }
