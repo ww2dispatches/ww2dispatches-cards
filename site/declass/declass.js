@@ -25,15 +25,9 @@
     icpPreview = localStorage.getItem('declass_icp') || '';
   } catch (e) {}
 
-  // Full screen card with zoom (29 Oct 2026), on trial: ?zoom=on turns it on in this browser, ?zoom=off turns it off.
-  let zoomTrial = false;
-  try {
-    const url = new URL(location.href), v = url.searchParams.get('zoom');
-    if (v === 'on') localStorage.setItem('declass_zoom', '1');
-    if (v === 'off') localStorage.removeItem('declass_zoom');
-    if (v) { url.searchParams.delete('zoom'); history.replaceState(null, '', url.pathname + url.search + url.hash); }
-    zoomTrial = Boolean(localStorage.getItem('declass_zoom'));
-  } catch (e) {}
+  // Full screen card with zoom (29 Oct 2026): on for everyone after Brian's phone trial.
+  const zoomTrial = true;
+  try { localStorage.removeItem('declass_zoom'); } catch (e) {}
   if (zoomTrial) document.documentElement.classList.add('ztrial');
 
   function api(path, body) {
