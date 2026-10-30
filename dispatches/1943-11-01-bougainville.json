@@ -150,6 +150,21 @@
   "photoUrl": "https://catalog.archives.gov/id/205584203",
   "photoNote": "The first wave of Marines heads for the beach at Empress Augusta Bay, Bougainville. U.S. Coast Guard photo 26-G-3123 (NARA 205584203), public domain. The record has no date, but the caption names the first wave, so 1 November 1943. Cropped from the mounted print; a sliver of mount may remain at the right edge.",
   "photoCredit": "The first wave heads for the beach at Empress Augusta Bay, Bougainville, 1 November 1943. U.S. Coast Guard photo, NARA 26-G-3123, public domain.",
+  "declassified": {
+    "fact": "The landing had a decoy. In late October, Marines raided nearby Choiseul to make the Japanese expect an attack there. On 2 November, PT-59, commanded by a young John F. Kennedy, pulled stranded raiders off the island and fed them canned peaches, their first real food in six days, before running out of fuel and needing a tow home.",
+    "sources": [
+      {
+        "title": "Operation Blissful, Prologue Magazine, National Archives, Fall 2010",
+        "url": "https://www.archives.gov/publications/prologue/2010/fall/blissful.html"
+      }
+    ],
+    "photo": {
+      "file": "photos/1943-11-01-bougainville-2.jpg",
+      "page": "https://catalog.archives.gov/id/205584157",
+      "credit": "Marines rush ashore from Coast Guard landing craft at Empress Augusta Bay, 1 November 1943. U.S. Coast Guard photo, NARA 26-G-3120, public domain.",
+      "caption": "Marines jump from a Coast Guard landing craft and run for the tree line at Cape Torokina."
+    }
+  },
   "videoPhotos": [
     {
       "file": "photos/1943-11-01-bougainville-2.jpg",

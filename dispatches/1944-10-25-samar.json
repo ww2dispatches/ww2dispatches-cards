@@ -126,6 +126,25 @@
   },
   "short": "Taffy 3",
   "photoCredit": "USS Gambier Bay and her escorts making smoke during the Battle off Samar, 25 October 1944. U.S. Navy, public domain.",
+  "declassified": {
+    "fact": "The Japanese often fired armor piercing shells, made to pierce battleships and big fleet carriers. Against the thin hulls of Taffy 3's little ships, many punched clean through and out the other side without exploding. Yamato's gunners mistook Gambier Bay for a full sized carrier, and their shells went right through her.",
+    "sources": [
+      {
+        "title": "H-Gram Special Edition: Samar, Naval History and Heritage Command",
+        "url": "https://www.history.navy.mil/about-us/leadership/director/directors-corner/h-grams/h-gram-special-edition-samar.html"
+      },
+      {
+        "title": "USS Gambier Bay, Wikipedia (citing Lundgren 2014)",
+        "url": "https://en.wikipedia.org/wiki/USS_Gambier_Bay"
+      }
+    ],
+    "photo": {
+      "file": "photos/1944-10-25-samar-4.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Japanese_battleship_Yamato_and_a_heavy_cruiser_underway_during_the_Battle_off_Samar,_25_October_1944_(80-G-378525).jpg",
+      "credit": "Yamato and a Japanese heavy cruiser under way during the Battle off Samar, 25 October 1944. U.S. Navy, NARA 80-G-378525, public domain.",
+      "caption": "Yamato, the biggest battleship in the world, steams toward Taffy 3 with a heavy cruiser beyond her."
+    }
+  },
   "addons": [],
   "hashtags": "#OnThisDay #WW2 #LeyteGulf"
 }

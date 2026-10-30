@@ -136,6 +136,25 @@
   "photoUrl": "https://commons.wikimedia.org/wiki/File:Von_Thoma_and_Montgomery.JPG",
   "photoNote": "Supplied by Brian on 29 Oct (620 x 409 px, small, may look soft). Montgomery talks with the captured Afrika Korps commander, General Wilhelm Ritter von Thoma, at Eighth Army headquarters, El Alamein. Photo by Lt Knight, No 1 Army Film and Photographic Unit, IWM E 19130, Crown copyright expired (PD UKGov), via Wikimedia Commons. The IWM film record of the same meeting is dated 4 November 1942. Backup: Sherman tanks of the 9th Lancers racing west, 5 November 1942 (IWM E 18972).",
   "photoCredit": "Montgomery with the captured General von Thoma, El Alamein, 4 November 1942. No 1 Army Film and Photographic Unit, IWM E 19130, public domain.",
+  "declassified": {
+    "fact": "Rommel's escape got help from the weather. Around midday on 6 November rain began to fall on the desert, and by the next day waterlogged ground and empty fuel tanks had stranded the British 1st and 7th Armoured Divisions. The British attempt to trap his army near Mersa Matruh came up short.",
+    "sources": [
+      {
+        "title": "North Africa campaigns: Montgomery in the desert, Britannica",
+        "url": "https://www.britannica.com/event/North-Africa-campaigns/Montgomery-in-the-desert"
+      },
+      {
+        "title": "Second Battle of El Alamein, Wikipedia (citing Playfair official history)",
+        "url": "https://en.wikipedia.org/wiki/Second_Battle_of_El_Alamein"
+      }
+    ],
+    "photo": {
+      "file": "photos/1942-11-04-alamein-retreat-3.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Lieutenant_General_Bernard_Montgomery,_commanding_the_British_Eighth_Army_in_North_Africa,_in_the_turret_of_his_Grant_command_tank_at_El_Alamein,_5_November_1942._E18980.jpg",
+      "credit": "Montgomery in his Grant command tank at El Alamein, 5 November 1942. No 1 Army Film and Photographic Unit, IWM E 18980, public domain.",
+      "caption": "Montgomery watches from the turret of his Grant command tank the day after the breakthrough."
+    }
+  },
   "videoPhotos": [
     {
       "page": "https://commons.wikimedia.org/wiki/File:Sherman_tanks_of_9th_Queen%27s_Royal_Lancers_during_the_Battle_of_El_Alamein,_5_November_1942._E18972.jpg",

@@ -89,6 +89,19 @@
   },
   "short": "TDR-1 Drone",
   "photoCredit": "An Interstate TDR-1 assault drone in flight, about 1944. U.S. Navy, public domain.",
+  "declassified": {
+    "fact": "Only one TDR-1 survives, hanging from the ceiling of the National Naval Aviation Museum in Pensacola, Florida. Restored in the 1990s, it wears the markings of Edna III, the STAG-1 drone used in a July 1944 test attack on the wreck of the Japanese ship Yamazuki Maru on Guadalcanal.",
+    "sources": [
+      {
+        "title": "TDR-1 Bureau Number 33529, Pacific Wrecks",
+        "url": "https://pacificwrecks.com/aircraft/tdr/33529.html"
+      },
+      {
+        "title": "The First Drone Strike, in 1944, Air & Space / Smithsonian",
+        "url": "https://www.smithsonianmag.com/air-space-magazine/drone-strike-180964753/"
+      }
+    ]
+  },
   "addons": [],
   "hashtags": "#OnThisDay #WW2"
 }
