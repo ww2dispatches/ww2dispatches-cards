@@ -833,3 +833,23 @@ h2{flex-wrap:wrap;row-gap:2px}
 .cf.sweep .sheen{display:block;background-size:260% 100%;animation:sweep 1.2s .55s ease-out both}
 .cf.f-gold.sweep .frame::after{background-size:260% 100%;animation:sweep 1.2s .55s ease-out both}
 @keyframes sweep{from{background-position:120% 0}to{background-position:-20% 0}}
+
+/* Premium pass (29 Oct 2026) */
+/* 6 · screens fade in instead of snapping */
+@media (prefers-reduced-motion:no-preference){.screen.on{animation:scrIn .24s ease-out}}
+@keyframes scrIn{from{opacity:0}to{opacity:1}}
+/* 9 · buttons press down under the finger */
+button,.env,.slotbtn,.mini,.tile,.allbtn,.srow.go{transition:transform .09s ease-out}
+button:not(.tr):not(.mini):active,.slotbtn:active,.tile:active,.allbtn:active,.srow.go:active{transform:scale(.97)}
+.mini:active{transform:scale(.96)}
+.stack .env:active:not(.tearing){transform:scale(.985)}
+.btn:active{filter:brightness(.92)}
+/* the loading screen: a DECLASS stamp thumps down while the files open */
+#sLoading{text-align:center;padding-top:90px}
+.loadstamp{display:inline-block;font-family:var(--display);font-weight:700;font-size:30px;letter-spacing:.2em;color:var(--red);border:4px double var(--red);padding:4px 14px 2px 18px;transform:rotate(-6deg);margin-bottom:18px;opacity:.9}
+@media (prefers-reduced-motion:no-preference){.loadstamp{animation:lstamp 1.6s cubic-bezier(.2,1.4,.4,1) infinite}}
+@keyframes lstamp{0%{transform:rotate(-6deg) scale(1.8);opacity:0}22%{transform:rotate(-6deg) scale(1);opacity:.95}80%{transform:rotate(-6deg) scale(1);opacity:.95}100%{transform:rotate(-6deg) scale(1);opacity:0}}
+/* 1 · a card being turned by hand */
+#stage{touch-action:pan-y}
+#flip{will-change:transform}
+#stage{user-select:none;-webkit-user-select:none}

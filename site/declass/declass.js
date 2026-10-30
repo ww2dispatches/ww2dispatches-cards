@@ -558,7 +558,7 @@
     $('stage').innerHTML = `<div class="flip${revealed[idx] ? ' up' : ''}" id="flip"><div class="face backf"><div class="badge">WW2</div><small>${esc(backText(p, idx))}</small></div><div class="face frontf">${tag ? `<span class="tag ${tag[0]}">${tag[1]}</span>` : ''}${info ? cardFace(info, p.finish, p.variant, p.serial, { puzzle: info.kind === 'namethis' }) : '<p class="sub">This card has left the archive.</p>'}</div></div>`;
     const f = $('flip');
     if (dir) { f.classList.add('in'); requestAnimationFrame(() => requestAnimationFrame(() => f.classList.remove('in'))); }
-    f.onclick = reveal;
+    f.onclick = () => { if (flipDrag.used) { flipDrag.used = false; return; } reveal(); };
     if (revealed[idx] && info && p.variant === 'living') startFilm(f, info);
     $('hint').innerHTML = hintFor(p, idx);
     $('prevBtn').disabled = idx === 0;
@@ -644,6 +644,7 @@
     sfx(FINISH_SOUND[p.finish][p.variant === 'living' ? 1 : 0]);
     if (big) { sfx('boom'); const cf = document.querySelector('#flip .cf'); if (cf) { cf.classList.remove('sweep'); void cf.offsetWidth; cf.classList.add('sweep'); } }
     $('flip').classList.add('up');
+    sfx('place', 0.55); // the card settles face up
     if (p.cardInfo && p.variant === 'living') startFilm($('flip'), p.cardInfo);
     if (p.intel && tags[idx] && tags[idx][0].startsWith('dup')) intelChip(p.intel);
     if (cardMode === 'starterLocal') { STARTER.revealed = revealed.slice(); saveStarterLocal(); }
@@ -705,15 +706,51 @@
     const p = pulls[idx];
     if (p && p.cardInfo && p.cardInfo.kind === 'namethis') answered[idx] = true;
     $('flip').classList.add('out');
+    sfx('page'); // a soft paper slide between cards (premium pass, 29 Oct 2026)
     document.querySelectorAll('.tiltask').forEach(el => el.remove());
     setTimeout(() => { idx = n; renderCard(true); }, 220);
   }
   $('nextBtn').onclick = () => go(idx + 1);
   $('prevBtn').onclick = () => go(idx - 1);
+  // Turn a card with your finger (premium pass, 29 Oct 2026): drag sideways on an unturned card and it rotates in 3D
+  // under the finger; let go past a quarter turn and it flips the rest of the way, otherwise it springs back.
+  const flipDrag = { used: false, at: 0 };
+  (() => {
+    const st = $('stage');
+    let on = false, x0 = 0, y0 = 0, w = 1, ang = 0, moving = false;
+    st.addEventListener('pointerdown', ev => {
+      const f = $('flip');
+      if (!f || revealed[idx] || holding || ev.button > 0) return;
+      on = true; moving = false; x0 = ev.clientX; y0 = ev.clientY; w = st.clientWidth || 1; ang = 0;
+    });
+    st.addEventListener('pointermove', ev => {
+      if (!on) return;
+      const dx = ev.clientX - x0, dy = ev.clientY - y0, f = $('flip');
+      if (!moving) { if (Math.abs(dx) < 10 || Math.abs(dy) > Math.abs(dx)) { if (Math.abs(dy) > 14) on = false; return; } moving = true; try { st.setPointerCapture(ev.pointerId); } catch (e) {} }
+      ang = Math.max(-175, Math.min(175, dx / w * 200));
+      f.style.transition = 'none'; f.style.transform = `rotateY(${ang}deg)`;
+    });
+    const end = () => {
+      if (!on) return; on = false;
+      if (!moving) return;
+      const f = $('flip'); flipDrag.used = true; flipDrag.at = Date.now();
+      f.style.transition = '';
+      if (Math.abs(ang) >= 70 && !bigMoment(pulls[idx])) {
+        f.style.transform = `rotateY(${ang < 0 ? -180 : 180}deg)`;
+        reveal();
+        setTimeout(() => { if ($('flip') === f) { f.style.transition = 'none'; f.style.transform = ''; void f.offsetWidth; f.style.transition = ''; } }, 850);
+      } else {
+        f.style.transform = '';
+        if (Math.abs(ang) >= 70) setTimeout(reveal, 300); // a big card springs back, then gets its held reveal
+      }
+      setTimeout(() => { flipDrag.used = false; }, 400);
+    };
+    st.addEventListener('pointerup', end); st.addEventListener('pointercancel', end);
+  })();
   function swipe(el, left, right) {
     let sx = null;
     el.addEventListener('touchstart', e => { sx = e.touches[0].clientX; }, { passive: true });
-    el.addEventListener('touchend', e => { if (sx === null) return; const dx = e.changedTouches[0].clientX - sx; sx = null; if (Math.abs(dx) > 50) (dx < 0 ? left : right)(); });
+    el.addEventListener('touchend', e => { if (sx === null) return; const dx = e.changedTouches[0].clientX - sx; sx = null; if (Date.now() - flipDrag.at < 500) return; if (Math.abs(dx) > 50) (dx < 0 ? left : right)(); });
   }
   swipe($('viewer'), () => go(idx + 1), () => go(idx - 1));
   document.addEventListener('keydown', e => {
@@ -982,6 +1019,8 @@
     // the held reveal: a riser under two low heartbeats, then a low hit as the card turns
     charge(t) { const sw = nz(t, 0.78, 'bandpass', 300, 1.6, 0.24, 0.55); sw.f.frequency.setValueAtTime(260, t); sw.f.frequency.exponentialRampToValueAtTime(3200, t + 0.76); tone(t + 0.02, 58, 0.14, 'sine', 0.55, 0.003, 40); tone(t + 0.4, 58, 0.14, 'sine', 0.7, 0.003, 40); },
     boom(t) { tone(t, 82, 0.7, 'sine', 0.75, 0.003, 38); nz(t, 0.22, 'lowpass', 900, 0.7, 0.45); },
+    page(t) { const r = nz(t, 0.2, 'bandpass', 2600, 0.7, 0.12, 0.05); r.f.frequency.setValueAtTime(3200, t); r.f.frequency.exponentialRampToValueAtTime(1400, t + 0.2); },
+    place(t) { tone(t, 140, 0.1, 'sine', 0.22, 0.002, 70); nz(t, 0.05, 'lowpass', 700, 0.7, 0.14); },
     rustle(t) { for (let i = 0; i < 6; i++) nz(t + i * 0.05 + Math.random() * 0.03, 0.06, 'bandpass', 1500 + Math.random() * 2500, 0.9, 0.18, 0.01); },
     teletype(t) { for (let i = 0; i < 9; i++) nz(t + i * 0.055 + Math.random() * 0.012, 0.018, 'bandpass', 2000 + Math.random() * 1500, 2.5, 0.45); bell(t + 0.58, 1975.5, 1.1, 0.25); },
     locked(t) { tone(t, 160, 0.08, 'sine', 0.35, 0.002, 110); nz(t, 0.03, 'lowpass', 600, 0.8, 0.25); },
