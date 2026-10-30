@@ -1,0 +1,131 @@
+{
+  "dispatch": "1942-11-04-alamein-retreat",
+  "note": "Story video for Dispatch No. 037, drawn only from its verified facts block. Planned as a Living Card from Desert Victory (1943), but the 480p copy is in Brian's Source Film folder on his computer, which the Thursday cloud run cannot reach, and upload.wikimedia.org refused the download (429), so per the Videos doc this is a Story Card for the same event. Photos, all public domain: Montgomery with the captured General von Thoma, 4 November 1942 (IWM E 19130); Montgomery in his Grant command tank, 5 November 1942 (IWM E 18980); Churchill III tanks of Kingforce, 1st Armoured Division, 5 November 1942 (IWM E 18991). The Sherman photo research lined up (IWM E 18972) could not be fetched (429).",
+  "segments": [
+    {
+      "id": "s01",
+      "say": "Hitler's order was to yield not a yard of ground, and to show his troops no other road than that to victory or death.",
+      "caption": "Hitler's order: yield not a yard of ground, and show the troops no other road than that to victory or death.",
+      "visual": {
+        "type": "photo",
+        "src": "photos/1942-11-04-alamein-retreat-4.jpg",
+        "focusX": 35,
+        "focusY": 50,
+        "zoom": "in"
+      }
+    },
+    {
+      "id": "s02",
+      "say": "November fourth, nineteen forty two. El Alamein, Egypt.",
+      "caption": "4 November 1942. El Alamein, Egypt.",
+      "visual": {
+        "type": "card",
+        "kicker": "El Alamein, Egypt",
+        "lines": [
+          "4 NOV 1942",
+          "Rommel",
+          "retreats"
+        ]
+      }
+    },
+    {
+      "id": "s03",
+      "say": "The order reached Rommel the afternoon before. We were completely stunned, he wrote. He obeyed, and ordered his men to hold.",
+      "caption": "The order reached Rommel the afternoon before. \"We were completely stunned,\" he wrote. He obeyed, and ordered his men to hold.",
+      "visual": {
+        "type": "card",
+        "kicker": "1:30 p.m., 3 November",
+        "lines": [
+          "STAND FAST",
+          "Hitler's order",
+          "to Rommel"
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "say": "On the morning of November fourth, the British broke through. Rommel wrote that by early afternoon, a nineteen kilometre hole had been burst in his front.",
+      "caption": "On the morning of 4 November, the British broke through. By early afternoon, Rommel wrote, a 19 kilometre hole had been burst in his front.",
+      "visual": {
+        "type": "photo",
+        "src": "photos/1942-11-04-alamein-retreat-3.jpg",
+        "focusX": 50,
+        "focusY": 40,
+        "zoom": "in"
+      }
+    },
+    {
+      "id": "s06",
+      "say": "That same day, General fon Toe mah, commander of the Afrika Korps, was captured. Montgomery met him, and later invited him to dinner.",
+      "caption": "That same day General Wilhelm Ritter von Thoma, commander of the Afrika Korps, was captured. Montgomery met him, and later invited him to dinner.",
+      "visual": {
+        "type": "photo",
+        "src": "photos/1942-11-04-alamein-retreat.jpg",
+        "focusX": 50,
+        "focusY": 40,
+        "zoom": "in"
+      }
+    },
+    {
+      "id": "s07",
+      "say": "At five thirty that evening, Rommel ordered a general retreat without waiting for Hitler's reply. He had to save what could be saved.",
+      "caption": "At 17:30 Rommel ordered a general retreat without waiting for Hitler's reply. He had to save what could be saved.",
+      "visual": {
+        "type": "card",
+        "kicker": "5:30 p.m., 4 November",
+        "lines": [
+          "RETREAT",
+          "without waiting",
+          "for Hitler"
+        ]
+      }
+    },
+    {
+      "id": "s08",
+      "say": "With little transport, much of the Italian infantry was left behind. About thirty thousand Axis soldiers were taken prisoner in the battle.",
+      "caption": "With little transport, much of the Italian infantry was left behind. About 30,000 Axis soldiers were taken prisoner in the battle.",
+      "visual": {
+        "type": "photo",
+        "src": "photos/1942-11-04-alamein-retreat-4.jpg",
+        "focusX": 75,
+        "focusY": 55,
+        "zoom": "out"
+      }
+    },
+    {
+      "id": "s09",
+      "say": "On November fifteenth, church bells rang across Britain for its first great land victory over the German army.",
+      "caption": "On 15 November, church bells rang across Britain for its first great land victory over the German army.",
+      "visual": {
+        "type": "card",
+        "kicker": "Back home",
+        "lines": [
+          "CHURCH BELLS",
+          "rang across Britain",
+          "15 November 1942"
+        ]
+      }
+    },
+    {
+      "id": "s10",
+      "say": "Churchill said: Now this is not the end. It is not even the beginning of the end. But it is, perhaps, the end of the beginning.",
+      "caption": "Churchill: \"Now this is not the end. It is not even the beginning of the end. But it is, perhaps, the end of the beginning.\"",
+      "visual": {
+        "type": "card",
+        "kicker": "Churchill, 10 November 1942",
+        "lines": [
+          "THE END OF",
+          "THE BEGINNING"
+        ]
+      }
+    },
+    {
+      "id": "s11",
+      "say": "Follow W W Two Dispatches. The war, on the day it happened.",
+      "caption": "Follow WW2 Dispatches. The war, on the day it happened.",
+      "visual": {
+        "type": "end"
+      }
+    }
+  ]
+}

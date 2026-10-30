@@ -583,7 +583,9 @@
     if (p.cardInfo && p.cardInfo.flash) return k === 'commemorative' || k === 'daily' ? 'The Flash card' : 'A Flash card from the archive';
     if (k === 'priority' || k === 'commemorative') return 'From the deep archive';
     if (k === 'starter') return first ? "Today's dispatch" : 'Your starter pack';
-    if (first && p.cardInfo && p.cardInfo.kind === 'dispatch' && p.variant === 'still' && i === 0) return cardEnv && cardEnv.last ? "Yesterday's dispatch" : "Today's dispatch";
+    // The envelope's own dispatch can sit at any spot (29 Oct 2026): it's the first still copy of the card posted at this envelope's time.
+    const isSlot = q => q.slot && q.slot.startsWith('d:') && q.cardInfo && q.cardInfo.kind === 'dispatch' && q.variant === 'still' && Date.parse(q.cardInfo.postAt) === Date.parse(q.slot.slice(2));
+    if (isSlot(p) && pulls.findIndex(isSlot) === i) return cardEnv && cardEnv.last ? "Yesterday's dispatch" : "Today's dispatch";
     return cardEnv && cardEnv.deep ? 'From the deep archive' : 'From the archive';
   }
   // A face down card hints at its finish (premium pass, 29 Oct 2026), the way Hearthstone's backs glow by rarity:

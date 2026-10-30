@@ -123,5 +123,13 @@ export function drawCards(env, t, rnd = secureInt) {
     if (!p) break;
     picks.push(p);
   }
+  // The day's dispatch is guaranteed but lands at a random spot in the envelope (29 Oct 2026), so
+  // the newest card isn't always card 1.
+  if (env.kind === 'daily') {
+    const k = Math.min(slotCards(env.at).length, CARDS_PER_ENVELOPE);
+    const mixed = picks.slice(k);
+    picks.slice(0, k).forEach(d => mixed.splice(rnd(mixed.length + 1), 0, d));
+    return mixed;
+  }
   return picks;
 }
