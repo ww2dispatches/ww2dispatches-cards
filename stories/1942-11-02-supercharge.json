@@ -1,0 +1,130 @@
+{
+  "dispatch": "1942-11-02-supercharge",
+  "note": "Story video for Dispatch No. 033, drawn only from its verified facts block. Planned as a Living Card from Desert Victory (1943), but the 480p copy is in Brian's Source Film folder on his computer, which the Thursday cloud run cannot reach, and upload.wikimedia.org refused the download (429), so per the Videos doc this is a Story Card for the same event. Photos, all public domain: a knocked out German 88 mm gun near Tel el Aqqaqir, November 1942 (AWM 040977); a Priest self propelled gun of 1st Armoured Division, 2 November 1942 (IWM E 18869); an 88 mm shell hole in the turret of a Churchill tank, 2 November 1942 (IWM E 18839); burnt out vehicles on the Alamein battlefield, 3 November 1942 (IWM E 18900).",
+  "segments": [
+    {
+      "id": "s01",
+      "say": "One tank brigade was sent straight at the German guns. Its commander was told Montgomery had accepted the possibility of one hundred percent casualties.",
+      "caption": "One tank brigade was sent straight at the German guns. Its commander was told Montgomery had accepted the possibility of 100% casualties.",
+      "visual": {
+        "type": "photo",
+        "src": "photos/1942-11-02-supercharge-3.jpg",
+        "focusX": 50,
+        "focusY": 35,
+        "zoom": "in"
+      }
+    },
+    {
+      "id": "s02",
+      "say": "November second, nineteen forty two. At five past one in the morning, the British Eighth Army launches Operation Supercharge, its final push to break Rommel's line at El Alamein.",
+      "caption": "2 November 1942. At 1:05 a.m., the British Eighth Army launches Operation Supercharge, its final push to break Rommel's line at El Alamein.",
+      "visual": {
+        "type": "card",
+        "kicker": "El Alamein, Egypt",
+        "lines": [
+          "2 NOV 1942",
+          "Operation",
+          "Supercharge"
+        ]
+      }
+    },
+    {
+      "id": "s03",
+      "say": "The infantry moved off in the dark behind a creeping barrage from about three hundred sixty guns.",
+      "caption": "The infantry moved off in the dark behind a creeping barrage from about 360 guns.",
+      "visual": {
+        "type": "photo",
+        "src": "photos/1942-11-02-supercharge-2.jpg",
+        "focusX": 50,
+        "focusY": 45,
+        "zoom": "in"
+      }
+    },
+    {
+      "id": "s04",
+      "say": "Most of them were British, the Durham and Highland brigades, with the New Zealand Mow ree Battalion. They took their objectives before dawn.",
+      "caption": "Most of them were British, the Durham and Highland brigades, with the New Zealand Maori Battalion. They took their objectives before dawn.",
+      "visual": {
+        "type": "card",
+        "kicker": "The infantry",
+        "lines": [
+          "BEFORE DAWN",
+          "151st (Durham) Brigade",
+          "152nd (Highland) Brigade",
+          "28th (Maori) Battalion"
+        ]
+      }
+    },
+    {
+      "id": "s05",
+      "say": "Then the Ninth Armoured Brigade, under Brigadier John Currie, had to charge a screen of antitank guns, including deadly eighty eights.",
+      "caption": "Then the 9th Armoured Brigade, under Brigadier John Currie, had to charge a screen of antitank guns, including deadly 88s.",
+      "visual": {
+        "type": "photo",
+        "src": "photos/1942-11-02-supercharge.jpg",
+        "focusX": 45,
+        "focusY": 50,
+        "zoom": "in"
+      }
+    },
+    {
+      "id": "s07",
+      "say": "The tanks went in at sunrise. The brigade began with ninety four. By the end, fewer than twenty five were still running.",
+      "caption": "The tanks went in at sunrise. The brigade began with 94. By the end, fewer than 25 were still running.",
+      "visual": {
+        "type": "photo",
+        "src": "photos/1942-11-02-supercharge-3.jpg",
+        "focusX": 50,
+        "focusY": 55,
+        "zoom": "out"
+      }
+    },
+    {
+      "id": "s08",
+      "say": "Asked where his tanks were, Currie pointed to the handful around him. These are my regiments.",
+      "caption": "Asked where his tanks were, Currie pointed to the handful around him: \"These are my regiments.\"",
+      "visual": {
+        "type": "card",
+        "kicker": "Brigadier John Currie",
+        "lines": [
+          "MY REGIMENTS",
+          "94 tanks at the start",
+          "fewer than 25 at the end"
+        ]
+      }
+    },
+    {
+      "id": "s09",
+      "say": "Rommel threw his panzers at the British near Tel el Akka keer. The counterattack failed, and the Afrika Korps lost about seventy tanks that day.",
+      "caption": "Rommel threw his panzers at the British near Tel el Aqqaqir. The counterattack failed, and the Afrika Korps lost about 70 tanks that day.",
+      "visual": {
+        "type": "photo",
+        "src": "photos/1942-11-02-supercharge-4.jpg",
+        "focusX": 50,
+        "focusY": 60,
+        "zoom": "in"
+      }
+    },
+    {
+      "id": "s10",
+      "say": "Rommel decided to fall back. On November fourth, the British broke through, and the long Axis retreat began.",
+      "caption": "Rommel decided to fall back. On 4 November, the British broke through, and the long Axis retreat began.",
+      "visual": {
+        "type": "card",
+        "kicker": "What came next",
+        "lines": [
+          "4 NOV 1942",
+          "The breakthrough"
+        ]
+      }
+    },
+    {
+      "id": "s11",
+      "say": "Follow W W Two Dispatches. The war, on the day it happened.",
+      "caption": "Follow WW2 Dispatches. The war, on the day it happened.",
+      "visual": {
+        "type": "end"
+      }
+    }
+  ]
+}

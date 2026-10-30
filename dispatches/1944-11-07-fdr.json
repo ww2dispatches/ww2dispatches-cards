@@ -183,6 +183,37 @@
     ],
     "nations": [
       "US"
-    ]
+    ],
+    "video": {
+      "kind": "Living Card",
+      "opening": "motion",
+      "sound": "silent"
+    }
+  },
+  "video": {
+    "footage": "footage/1944-11-07-election.mp4",
+    "focusX": 50,
+    "focusY": 50,
+    "sourceUrl": "https://catalog.archives.gov/id/16455",
+    "note": "U.S. Army Signal Corps film 111-ADC-2651 (NARA 16455), filmed 8 November 1944 in Moyeuvre, France, the day after the election, silent. U.S. government work, public domain (NARA's blanket 'possibly copyright' flag on 111-ADC reels). Clip from the research copy footage/1944-11-07-election-reel.mp4 (3:35 to 6:40 of the NARA reel): 0:15.0 to 0:19.5 soldiers of the 95th Signal Company run alongside a jeep carrying a 'Roosevelt Elected' sign; 0:41.0 to 0:47.0 the jeep and the cheering soldiers in the town square; 0:59.5 to 1:04.5 the soldiers crowd around the sign. The Army's shot card calls the show of joy 'very stagey'. Converted to square pixels.",
+    "hook": "A day later, GIs in France paraded the news."
+  },
+  "kit": {
+    "file": "kits/dispatch-043-kit.md",
+    "filmCaption": "U.S. Army Signal Corps film from Moyeuvre, France, 8 November 1944, the day after the election. Soldiers of the 95th Signal Company parade behind a jeep carrying a sign: Roosevelt Elected. The Army's own film notes called their show of joy \"very stagey.\"",
+    "youtubeTitle": "Roosevelt Wins a Fourth Term: GIs in France Celebrate on Film, 1944 #shorts",
+    "youtubeDescription": "On 7 November 1944, President Franklin D. Roosevelt won a fourth term, defeating Thomas E. Dewey with 432 electoral votes to 99. It was the closest of his four presidential elections, held in the middle of the war, with millions of service members voting by absentee ballot. His new running mate was Senator Harry S. Truman. Roosevelt is the only president ever elected four times; less than three months after his inauguration he died at Warm Springs, Georgia.\n\nThis is real U.S. Army Signal Corps film shot the next day, 8 November 1944, in Moyeuvre, France: soldiers of the 95th Signal Company parade behind a jeep carrying a sign that reads \"Roosevelt Elected.\" The Army's film notes call the soldiers' show of joy \"very stagey.\" The original film is silent.\n\nFilm: U.S. Army Signal Corps, 111-ADC-2651, U.S. National Archives (catalog.archives.gov/id/16455), public domain.\nSources: Election of 1944, The American Presidency Project; The Soldier Voting Act and Absentee Ballots in World War II, The National WWII Museum; Amendment XXII, National Constitution Center.\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\nSupport WW2 Dispatches: ko-fi.com/ww2dispatches\n\n#Shorts #WW2 #OnThisDay #History",
+    "tiktokCaption": "The only president ever elected four times. A day later, GIs in France paraded the news. Real film, 8 Nov 1944. #WW2 #OnThisDay #History #FDR",
+    "thumbnailCheck": "Pass: first frame is a jeep with a Roosevelt Elected sign driving toward the camera with soldiers running alongside; at 2 seconds the sign is clear and the crowd is cheering.",
+    "videoTime": "12:00 America/Denver",
+    "scheduled": "Buffer, all six channels, noon 7 Nov"
+  },
+  "buffer": {
+    "x_film": "6ae3fee9ba1ca51fd3ee8590",
+    "instagram_reel": "6ae3feeb4b8768bfb2d599b3",
+    "threads_film": "6ae3feee6385db216a1dcbb0",
+    "facebook_film": "6ae3fef1ba1ca51fd3ee86ab",
+    "youtube": "6ae3fef76385db216a1dce17",
+    "tiktok": "6ae3fef94b8768bfb2d59cab"
   }
 }

@@ -143,19 +143,23 @@
   "videoPhotos": [
     {
       "page": "https://commons.wikimedia.org/wiki/File:88_mm_Flak_36_near_El_Aqqaqir_1942.jpg",
-      "credit": "Knocked out German 88 mm gun near Tel el Aqqaqir, November 1942. AWM 040977, public domain."
+      "credit": "Knocked out German 88 mm gun near Tel el Aqqaqir, November 1942. AWM 040977, public domain.",
+      "file": "photos/1942-11-02-supercharge.jpg"
     },
     {
       "page": "https://commons.wikimedia.org/wiki/File:Priest_of_1st_Armoured_Division_in_North_Africa,_2_November_1942_(E_18869).jpg",
-      "credit": "A Priest self propelled gun of 1st Armoured Division, 2 November 1942. IWM E 18869, public domain."
+      "credit": "A Priest self propelled gun of 1st Armoured Division, 2 November 1942. IWM E 18869, public domain.",
+      "file": "photos/1942-11-02-supercharge-2.jpg"
     },
     {
       "page": "https://commons.wikimedia.org/wiki/File:The_British_Army_in_North_Africa_1942_E18839.jpg",
-      "credit": "An 88 mm shell hole in the turret of a Churchill tank, 2 November 1942. IWM E 18839, public domain."
+      "credit": "An 88 mm shell hole in the turret of a Churchill tank, 2 November 1942. IWM E 18839, public domain.",
+      "file": "photos/1942-11-02-supercharge-3.jpg"
     },
     {
       "page": "https://commons.wikimedia.org/wiki/File:The_British_Army_in_North_Africa_1942_E18900.jpg",
-      "credit": "Burnt out vehicles on the Alamein battlefield, 3 November 1942. IWM E 18900, public domain."
+      "credit": "Burnt out vehicles on the Alamein battlefield, 3 November 1942. IWM E 18900, public domain.",
+      "file": "photos/1942-11-02-supercharge-4.jpg"
     }
   ],
   "kind": "living",
@@ -189,6 +193,39 @@
       "New Zealand",
       "Germany",
       "Italy"
-    ]
+    ],
+    "video": {
+      "kind": "Story Card",
+      "opening": "a machine",
+      "sound": "narration"
+    }
+  },
+  "story": {
+    "video": "videos/dispatch-033-story-am_onyx.mp4",
+    "script": "stories/1942-11-02-supercharge.json",
+    "voice": "am_onyx",
+    "speed": 0.95,
+    "time": "12:00",
+    "buffer": {
+      "x": "6ae3fe5aa83a7fb63c8d095e",
+      "instagram": "6ae3fe5da83a7fb63c8d099e",
+      "threads": "6ae3fe604b8768bfb2d57178",
+      "facebook": "6ae3fe63ba1ca51fd3ee55c1",
+      "youtube": "6ae3fe684b8768bfb2d5748a",
+      "tiktok": "6ae3fe6ba83a7fb63c8d0bf3"
+    },
+    "kit": {
+      "caption": "One tank brigade was sent straight at the German guns. Its commander was told Montgomery had accepted the possibility of 100% casualties.\n\nOn 2 November 1942, the British Eighth Army launched Operation Supercharge, its final push to break Rommel's line at El Alamein. On 4 November the British broke through.\n\nDispatch No. 033, the full story. Narration is AI generated; the photos are real archival images.",
+      "youtubeTitle": "94 Tanks Against the 88s: Operation Supercharge, 2 November 1942 #shorts",
+      "youtubeDescription": "One tank brigade was sent straight at the German guns. Its commander was told Montgomery had accepted the possibility of 100% casualties.\n\nOn 2 November 1942, the British Eighth Army launched Operation Supercharge, its final push to break Rommel's line at El Alamein. On 4 November the British broke through.\n\nNarration is AI generated; the photos are real archival images.\n\nPhotos: knocked out German 88 mm gun near Tel el Aqqaqir, November 1942, Australian War Memorial 040977; a Priest self propelled gun of 1st Armoured Division, 2 November 1942, IWM E 18869; an 88 mm shell hole in a Churchill tank turret, 2 November 1942, IWM E 18839; burnt out vehicles on the Alamein battlefield, 3 November 1942, IWM E 18900. All public domain.\nSources: Operation Supercharge, NZHistory (Ministry for Culture and Heritage); Second Battle of El Alamein, Wikipedia (citing Playfair and Barr); John Cecil Currie, Wikipedia.\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\nSupport WW2 Dispatches: ko-fi.com/ww2dispatches\n\n#Shorts #WW2 #OnThisDay #History",
+      "tiktokCaption": "94 tanks charged the German guns at sunrise. Fewer than 25 were still running. Operation Supercharge, El Alamein, 2 Nov 1942. Narration is AI generated. #WW2 #OnThisDay #History #ElAlamein",
+      "schedule": [
+        "12:00 p.m. Mountain, Mon 2 Nov 2026, all six channels in Buffer",
+        "X and Facebook end #OTD #WW2 #OnThisDay #History #ElAlamein; Instagram ends #WW2 #OnThisDay #History #ElAlamein; Threads has no tags (History Threads topic)",
+        "Flagged AI generated on X, Instagram, TikTok, and YouTube; Facebook as a Reel; Instagram and TikTok cover at 1.5 s"
+      ],
+      "thumbnail": "Opens on the barrel and shell holed turret of a Churchill tank, 2 November 1942.",
+      "scheduled": "Buffer, all six channels, noon 2 Nov"
+    }
   }
 }

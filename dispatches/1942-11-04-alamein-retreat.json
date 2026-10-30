@@ -143,11 +143,13 @@
     },
     {
       "page": "https://commons.wikimedia.org/wiki/File:Lieutenant_General_Bernard_Montgomery,_commanding_the_British_Eighth_Army_in_North_Africa,_in_the_turret_of_his_Grant_command_tank_at_El_Alamein,_5_November_1942._E18980.jpg",
-      "credit": "Montgomery in his Grant command tank at El Alamein, 5 November 1942. IWM E 18980, public domain."
+      "credit": "Montgomery in his Grant command tank at El Alamein, 5 November 1942. IWM E 18980, public domain.",
+      "file": "photos/1942-11-04-alamein-retreat-3.jpg"
     },
     {
       "page": "https://commons.wikimedia.org/wiki/File:Churchill_III_tanks_of_%27Kingforce%27,_1st_Armoured_Division,_in_the_Western_Desert,_5_November_1942._E18991_(cropped).jpg",
-      "credit": "Churchill III tanks of Kingforce, 5 November 1942. IWM E 18991, public domain."
+      "credit": "Churchill III tanks of Kingforce, 5 November 1942. IWM E 18991, public domain.",
+      "file": "photos/1942-11-04-alamein-retreat-4.jpg"
     }
   ],
   "kind": "living",
@@ -184,6 +186,39 @@
       "New Zealand",
       "India",
       "South Africa"
-    ]
+    ],
+    "video": {
+      "kind": "Story Card",
+      "opening": "a machine",
+      "sound": "narration"
+    }
+  },
+  "story": {
+    "video": "videos/dispatch-037-story-am_onyx.mp4",
+    "script": "stories/1942-11-04-alamein-retreat.json",
+    "voice": "am_onyx",
+    "speed": 0.95,
+    "time": "12:00",
+    "buffer": {
+      "x": "6ae3fe93ba1ca51fd3ee6a3b",
+      "instagram": "6ae3fe966385db216a1dadf6",
+      "threads": "6ae3fe99a83a7fb63c8d1ba3",
+      "facebook": "6ae3fe9cba1ca51fd3ee6c95",
+      "youtube": "6ae3fea1ba1ca51fd3ee6d0e",
+      "tiktok": "6ae3fea456e01b9763806e9a"
+    },
+    "kit": {
+      "caption": "Hitler's order: yield not a yard of ground, and show the troops no other road than that to victory or death.\n\nOn 4 November 1942 the British broke through at El Alamein, and Rommel ordered a general retreat without waiting for Hitler's reply.\n\nDispatch No. 037, the full story. Narration is AI generated; the photos are real archival images.",
+      "youtubeTitle": "Victory or Death? Rommel Retreats from El Alamein, 4 November 1942 #shorts",
+      "youtubeDescription": "Hitler's order: yield not a yard of ground, and show the troops no other road than that to victory or death.\n\nOn 4 November 1942 the British broke through at El Alamein, and Rommel ordered a general retreat without waiting for Hitler's reply.\n\nNarration is AI generated; the photos are real archival images.\n\nPhotos: Churchill III tanks of Kingforce, 1st Armoured Division, 5 November 1942, IWM E 18991; Montgomery in his Grant command tank, 5 November 1942, IWM E 18980; Montgomery with the captured General von Thoma, 4 November 1942, No 1 Army Film and Photographic Unit, IWM E 19130. All public domain.\nSources: Erwin Rommel on his Defeat in Africa, German History in Documents and Images; The End of the Beginning, National Army Museum; The Bright Gleam of Victory, International Churchill Society; Second Battle of El Alamein, Wikipedia.\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\nSupport WW2 Dispatches: ko-fi.com/ww2dispatches\n\n#Shorts #WW2 #OnThisDay #History",
+      "tiktokCaption": "Hitler said victory or death. Rommel chose retreat. El Alamein, 4 Nov 1942. Narration is AI generated. #WW2 #OnThisDay #History #ElAlamein #Rommel",
+      "schedule": [
+        "12:00 p.m. Mountain, Wed 4 Nov 2026, all six channels in Buffer",
+        "X and Facebook end #OTD #WW2 #OnThisDay #History #ElAlamein; Instagram ends #WW2 #OnThisDay #History #ElAlamein; Threads has no tags (History Threads topic)",
+        "Flagged AI generated on X, Instagram, TikTok, and YouTube; Facebook as a Reel; Instagram and TikTok cover at 1.5 s"
+      ],
+      "thumbnail": "Opens on Churchill tanks of Kingforce kicking up dust across the desert, 5 November 1942.",
+      "scheduled": "Buffer, all six channels, noon 4 Nov"
+    }
   }
 }

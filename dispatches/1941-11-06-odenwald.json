@@ -198,6 +198,39 @@
       "US",
       "Germany",
       "Japan"
-    ]
+    ],
+    "video": {
+      "kind": "Story Card",
+      "opening": "a machine",
+      "sound": "narration"
+    }
+  },
+  "story": {
+    "video": "videos/dispatch-041-story-am_onyx.mp4",
+    "script": "stories/1941-11-06-odenwald.json",
+    "voice": "am_onyx",
+    "speed": 0.95,
+    "time": "12:00",
+    "buffer": {
+      "x": "6ae3fecd2782e7f331c99b02",
+      "instagram": "6ae3fed0a83a7fb63c8d2eae",
+      "threads": "6ae3fed3ba1ca51fd3ee7f45",
+      "facebook": "6ae3fed64b8768bfb2d593af",
+      "youtube": "6ae3fedb56e01b976380808e",
+      "tiktok": "6ae3fede2782e7f331c9a210"
+    },
+    "kit": {
+      "caption": "She flew the American flag, and her stern said Philadelphia. She was a German ship.\n\nOn 6 November 1941, a month and a day before Pearl Harbor, USS Omaha and USS Somers stopped the disguised German blockade runner Odenwald and her cargo of raw rubber in the Atlantic.\n\nDispatch No. 041, the full story. Narration is AI generated; the photos are real archival images.",
+      "youtubeTitle": "The German Ship That Flew the American Flag, 6 November 1941 #shorts",
+      "youtubeDescription": "She flew the American flag, and her stern said Philadelphia. She was a German ship.\n\nOn 6 November 1941, a month and a day before Pearl Harbor, USS Omaha and USS Somers stopped the disguised German blockade runner Odenwald and her cargo of raw rubber in the Atlantic.\n\nNarration is AI generated; the photos are real archival images.\n\nPhotos: Odenwald under way after her capture, November 1941, U.S. Navy NH 123749; USS Omaha alongside the disguised Odenwald, 6 November 1941, U.S. Navy NH 49935; USS Omaha's prize crew aboard Odenwald, 18 November 1941, NARA 80-G-464023. All public domain.\nSources: Office of Naval Intelligence report on the M.S. Odenwald (uboatarchive.net); Hamburg-American Line v. United States, 168 F.2d 47 (1st Cir. 1948); USS Omaha (CL-4), Wikipedia; U.S. National Archives 80-CF-1058-1.\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\nSupport WW2 Dispatches: ko-fi.com/ww2dispatches\n\n#Shorts #WW2 #OnThisDay #History",
+      "tiktokCaption": "A German ship disguised as an American freighter, caught by the U.S. Navy a month before Pearl Harbor. 6 Nov 1941. Narration is AI generated. #WW2 #OnThisDay #History #USNavy",
+      "schedule": [
+        "12:00 p.m. Mountain, Fri 6 Nov 2026, all six channels in Buffer",
+        "X and Facebook end #OTD #WW2 #OnThisDay #History #USNavy; Instagram ends #WW2 #OnThisDay #History #USNavy; Threads has no tags (History Threads topic)",
+        "Flagged AI generated on X, Instagram, TikTok, and YouTube; Facebook as a Reel; Instagram and TikTok cover at 1.5 s"
+      ],
+      "thumbnail": "Opens on the captured Odenwald under way at sea, November 1941.",
+      "scheduled": "Buffer, all six channels, noon 6 Nov"
+    }
   }
 }

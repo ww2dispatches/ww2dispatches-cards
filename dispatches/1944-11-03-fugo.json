@@ -188,6 +188,37 @@
       "Japan",
       "US",
       "Canada"
-    ]
+    ],
+    "video": {
+      "kind": "Living Card",
+      "opening": "motion",
+      "sound": "silent"
+    }
+  },
+  "video": {
+    "footage": "footage/1944-11-03-fugo.mp4",
+    "focusX": 50,
+    "focusY": 50,
+    "sourceUrl": "https://catalog.archives.gov/id/23754",
+    "note": "U.S. Army film 'Japanese Paper Balloon', 111-ADC-9990 (NARA 23754), dated 1946 by NARA, silent. It shows captured or test balloons in 1945 or 1946, not the 3 November 1944 launch. U.S. Army Signal Corps film, U.S. government work, public domain (NARA's blanket 'possibly copyright' flag on 111-ADC reels). Clip from the research copy footage/1944-11-03-fugo-reel.mp4 (0:25 to 3:00 of the NARA reel): 0:12.2 to 0:16.7 a balloon drifting over a coastline, filmed from the air; 1:02.0 to 1:06.0 the film's animated map of the balloon's path across the Pacific; 1:28.0 to 1:31.5 an inflated balloon aloft; 1:44.0 to 1:47.5 a serviceman examines the ballast ring with its hanging gear. Converted to square pixels.",
+    "hook": "Over 9,000 launched. About 300 were found."
+  },
+  "kit": {
+    "file": "kits/dispatch-035-kit.md",
+    "filmCaption": "U.S. Army film of a captured Japanese paper balloon, dated 1946. On 3 November 1944, Japan launched its first Fu-Go balloon bombs, meant to ride the jet stream more than 5,000 miles across the Pacific to North America.",
+    "youtubeTitle": "Japan's Paper Balloon Bombs, First Launched 3 November 1944 #shorts",
+    "youtubeDescription": "Before dawn on 3 November 1944, the Imperial Japanese Army launched its first Fu-Go balloon bombs toward North America. Each balloon was made of kozo mulberry paper and filled with hydrogen, and the winter jet stream was meant to carry it more than 5,000 miles across the Pacific in a few days. A ring of sandbags kept it aloft at night, and when the sandbags were gone the same ring dropped the bombs. Japan launched more than 9,000; only about 300 were found or seen in North America. On 5 May 1945, one killed Elsie Mitchell and five children near Bly, Oregon, the only people killed by enemy action in the continental United States during the war.\n\nThis is real U.S. Army film of a captured balloon, dated 1946 by the National Archives: a balloon in flight, the film's own map of its route, and the ring that carried the ballast and bombs. It does not show the 1944 launch. The original film is silent.\n\nFilm: U.S. Army Signal Corps, 111-ADC-9990, U.S. National Archives (catalog.archives.gov/id/23754), public domain.\nSources: Japan's World War II Balloon Bomb Attacks on North America, Robert C. Mikesh, Smithsonian Annals of Flight No. 9; Smithsonian Magazine; Atomic Heritage Foundation.\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\nSupport WW2 Dispatches: ko-fi.com/ww2dispatches\n\n#Shorts #WW2 #OnThisDay #History",
+    "tiktokCaption": "Paper, hydrogen, and the jet stream. Japan launched more than 9,000 balloon bombs at North America. Real U.S. Army film of a captured one. #WW2 #OnThisDay #History #FuGo",
+    "thumbnailCheck": "Pass: first frame is a paper balloon drifting high over a coastline, filmed from the air; still drifting past the coast at 2 seconds.",
+    "videoTime": "12:00 America/Denver",
+    "scheduled": "Buffer, all six channels, noon 3 Nov"
+  },
+  "buffer": {
+    "x_film": "6ae3fe786385db216a1da771",
+    "instagram_reel": "6ae3fe7a6385db216a1da7de",
+    "threads_film": "6ae3fe7d56e01b97638061d4",
+    "facebook_film": "6ae3fe80ba1ca51fd3ee5fca",
+    "youtube": "6ae3fe85a83a7fb63c8d1355",
+    "tiktok": "6ae3fe8856e01b97638063b7"
   }
 }

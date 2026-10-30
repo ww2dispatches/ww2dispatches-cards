@@ -197,6 +197,37 @@
     "nations": [
       "US",
       "Japan"
-    ]
+    ],
+    "video": {
+      "kind": "Living Card",
+      "opening": "motion",
+      "sound": "silent"
+    }
+  },
+  "video": {
+    "footage": "footage/1943-11-01-bougainville.mp4",
+    "focusX": 50,
+    "focusY": 50,
+    "sourceUrl": "https://catalog.archives.gov/id/75959",
+    "note": "U.S. Navy film 428-NPC-1350 (NARA 75959), 'Marines, war dogs, Seabee activity, removal wounded sailors, Cape Torokina, Bougainville Island', dated 1 November 1943, silent. U.S. government work, public domain (NARA use status undetermined). Clip from the research copy footage/1943-11-01-bougainville-reel.mp4 (6:15 to 9:35 of the NARA reel): 0:31.6 to 0:38.0 Marines with packs and rifles walking along the black sand beach toward the camera, 0:44.6 to 0:49.6 a long column with rifles on the beach, 0:19.4 to 0:23.4 the column moving away along the shore. Converted to square pixels.",
+    "hook": "By nightfall, about 14,000 men were ashore."
+  },
+  "kit": {
+    "file": "kits/dispatch-031-kit.md",
+    "filmCaption": "U.S. Navy film from Cape Torokina, Bougainville, dated 1 November 1943. Marines with packs and rifles move along the beach at Empress Augusta Bay, where the 3rd Marine Division landed that morning to win ground for airfields within reach of Rabaul.",
+    "youtubeTitle": "Marines Land on Bougainville: Real Film, 1 November 1943 #shorts",
+    "youtubeDescription": "Just after sunrise on 1 November 1943, the 3rd Marine Division began landing at Cape Torokina on Empress Augusta Bay, Bougainville, in Operation Cherryblossom. Almost 7,500 Marines made the run to 12 beaches through heavy surf, and a single Japanese 75mm gun raked the boats. The goal was ground for airfields: Rabaul, Japan's main base in the region, lay less than 250 miles away. By the end of the day about 14,000 men were ashore.\n\nThis is real U.S. Navy film from Cape Torokina, dated 1 November 1943: Marines with packs and rifles moving along the beach. The original film is silent.\n\nFilm: U.S. Navy, 428-NPC-1350, U.S. National Archives (catalog.archives.gov/id/75959), public domain.\nSources: Top of the Ladder: Marine Operations in the Northern Solomons, USMC History and Museums Division; H-Gram 024, Naval History and Heritage Command; Landings at Cape Torokina, Wikipedia.\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\nSupport WW2 Dispatches: ko-fi.com/ww2dispatches\n\n#Shorts #WW2 #OnThisDay #History",
+    "tiktokCaption": "Almost 7,500 Marines, 12 beaches, heavy surf, and one Japanese gun. Real Navy film from Bougainville, 1 Nov 1943. #WW2 #OnThisDay #History #Marines #Bougainville",
+    "thumbnailCheck": "Pass: first frame is Marines with packs and rifles walking along the curving beach toward the camera, a long column behind them; still walking at 2 seconds.",
+    "videoTime": "12:00 America/Denver",
+    "scheduled": "Buffer, all six channels, noon 1 Nov"
+  },
+  "buffer": {
+    "x_film": "6ae3fe382782e7f331c97179",
+    "instagram_reel": "6ae3fe4056e01b9763804c4c",
+    "threads_film": "6ae3fe4256e01b9763804c93",
+    "facebook_film": "6ae3fe456385db216a1d9332",
+    "youtube": "6ae3fe4a56e01b9763804ffb",
+    "tiktok": "6ae3fe4c56e01b9763805064"
   }
 }

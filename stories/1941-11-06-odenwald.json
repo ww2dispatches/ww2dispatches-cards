@@ -1,0 +1,131 @@
+{
+  "dispatch": "1941-11-06-odenwald",
+  "note": "Story video for Dispatch No. 041, drawn only from its verified facts block. Photos, all U.S. Navy photos, public domain: Odenwald under way after her capture, November 1941 (NH 123749); USS Omaha alongside the disguised Odenwald, 6 November 1941, photographed from USS Somers (NH 49935); USS Omaha's prize crew aboard Odenwald, 18 November 1941 (NARA 80-G-464023). No film of the capture was found at NARA, so this is a Story Card, as research planned.",
+  "segments": [
+    {
+      "id": "s01",
+      "say": "She flew the American flag, and her stern said Philadelphia. She was a German ship.",
+      "caption": "She flew the American flag, and her stern said Philadelphia. She was a German ship.",
+      "visual": {
+        "type": "photo",
+        "src": "photos/1941-11-06-odenwald-3.jpg",
+        "focusX": 55,
+        "focusY": 50,
+        "zoom": "in"
+      }
+    },
+    {
+      "id": "s02",
+      "say": "November sixth, nineteen forty one. A month and a day before Pearl Harbor.",
+      "caption": "6 November 1941. A month and a day before Pearl Harbor.",
+      "visual": {
+        "type": "card",
+        "kicker": "Mid Atlantic, near the equator",
+        "lines": [
+          "6 NOV 1941",
+          "The ship",
+          "that lied"
+        ]
+      }
+    },
+    {
+      "id": "s03",
+      "say": "The cruiser U S S Omaha and the destroyer U S S Somers, on Neutrality Patrol, sighted her at dawn between Brazil and Africa.",
+      "caption": "The cruiser USS Omaha and the destroyer USS Somers, on Neutrality Patrol, sighted her at dawn between Brazil and Africa.",
+      "visual": {
+        "type": "photo",
+        "src": "photos/1941-11-06-odenwald-2.jpg",
+        "focusX": 55,
+        "focusY": 55,
+        "zoom": "in"
+      }
+    },
+    {
+      "id": "s05",
+      "say": "She was really the German motorship Odenwald, out of Yokohama, carrying about three thousand, eight hundred fifty seven metric tons of raw rubber.",
+      "caption": "She was really the German motorship Odenwald, out of Yokohama, Japan, carrying about 3,857 metric tons of raw rubber.",
+      "visual": {
+        "type": "card",
+        "kicker": "The truth",
+        "lines": [
+          "ODENWALD",
+          "Hamburg America Line",
+          "Raw rubber from Asia"
+        ]
+      }
+    },
+    {
+      "id": "s06",
+      "say": "Omaha's captain, Theodore Chandler, ordered her to stop and sent over an armed boarding party.",
+      "caption": "Omaha's captain, Theodore Chandler, ordered her to stop and sent over an armed boarding party.",
+      "visual": {
+        "type": "photo",
+        "src": "photos/1941-11-06-odenwald-2.jpg",
+        "focusX": 38,
+        "focusY": 52,
+        "zoom": "out"
+      }
+    },
+    {
+      "id": "s07",
+      "say": "As the sailors came aboard, two explosions went off in the stern. The Germans signaled that the ship was sinking and took to the lifeboats.",
+      "caption": "As the sailors came aboard, two explosions went off in the stern. The Germans signaled that the ship was sinking and took to the lifeboats.",
+      "visual": {
+        "type": "card",
+        "kicker": "Scuttling charges",
+        "lines": [
+          "TWO BLASTS",
+          "in the stern"
+        ]
+      }
+    },
+    {
+      "id": "s09",
+      "say": "The United States was not at war. A National Archives caption says Chandler, unsure of his legal ground, boarded her on suspicion of slave trading.",
+      "caption": "The U.S. was not at war. A National Archives caption says Chandler, unsure of his legal ground, boarded her on \"suspicion of slave trading.\"",
+      "visual": {
+        "type": "card",
+        "kicker": "The excuse",
+        "lines": [
+          "SLAVE TRADING?",
+          "Suspicion, the",
+          "National Archives says"
+        ]
+      }
+    },
+    {
+      "id": "s10",
+      "say": "The Americans plugged the flooding and got her engines running. With a prize crew aboard, she reached San Juan, Puerto Rico, on November seventeenth.",
+      "caption": "The Americans plugged the flooding and got her engines running. With a prize crew aboard, she reached San Juan, Puerto Rico, on 17 November.",
+      "visual": {
+        "type": "photo",
+        "src": "photos/1941-11-06-odenwald.jpg",
+        "focusX": 50,
+        "focusY": 40,
+        "zoom": "in"
+      }
+    },
+    {
+      "id": "s11",
+      "say": "Each man in the boarding party later got three thousand dollars. It is often called the Navy's last prize money, though the court called it salvage.",
+      "caption": "Each man in the boarding party later got $3,000. It is often called the Navy's last prize money, though the court called it salvage.",
+      "visual": {
+        "type": "card",
+        "kicker": "The reward",
+        "lines": [
+          "$3,000",
+          "each, for the",
+          "boarding party"
+        ]
+      }
+    },
+    {
+      "id": "s12",
+      "say": "Follow W W Two Dispatches. The war, on the day it happened.",
+      "caption": "Follow WW2 Dispatches. The war, on the day it happened.",
+      "visual": {
+        "type": "end"
+      }
+    }
+  ]
+}
