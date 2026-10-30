@@ -1362,7 +1362,9 @@
 
   // ---------- iPhone tilt (asked once, on the first gold or Top Secret card) ----------
   const TILT_KEY = 'declass_tilt';
-  const tiltNeedsAsk = () => typeof DeviceOrientationEvent !== 'undefined' && typeof DeviceOrientationEvent.requestPermission === 'function';
+  // Only phones and tablets: Safari on a Mac also has the permission call, but no motion sensor (30 Oct 2026).
+  const tiltNeedsAsk = () => typeof DeviceOrientationEvent !== 'undefined' && typeof DeviceOrientationEvent.requestPermission === 'function'
+    && navigator.maxTouchPoints > 0 && matchMedia('(pointer: coarse)').matches;
   const lsGet = k => { try { return localStorage.getItem(k); } catch (e) { return null; } };
   const lsSet = (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} };
   function askTilt() {
