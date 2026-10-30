@@ -1128,14 +1128,24 @@
   // The finish chip (in the finish's own material) and the dispatch line beside it, centered as one row.
   // Both texts are centered on their capital letters so they sit level with the chip.
   const FORMAT_LABEL = { spec: 'Spec Sheet', photo: 'Photo of the Day', quote: 'Quote of the Day' };
+  function shareHalo(c, x, cx, cy, w) {
+    const f = x.info.flash ? 'topsecret' : x.finish;
+    if (f === 'copper') return;
+    const blob = (bx, by, r, col) => { const g = c.createRadialGradient(bx, by, 0, bx, by, r); g.addColorStop(0, col); g.addColorStop(1, 'rgba(0,0,0,0)'); c.fillStyle = g; c.fillRect(bx - r, by - r, r * 2, r * 2); };
+    c.save(); c.globalCompositeOperation = 'lighter';
+    if (f === 'gold') { blob(cx, cy, w * 1.05, 'rgba(255,185,60,.8)'); blob(cx, cy - w * 0.5, w * 0.7, 'rgba(255,210,110,.35)'); }
+    else if (f === 'silver') blob(cx, cy, w * 0.9, 'rgba(210,225,245,.32)');
+    else { const h = w * 0.62; [[-1, -1, 'rgba(255,110,160,.5)'], [1, -1, 'rgba(255,215,90,.5)'], [1, 1, 'rgba(90,240,170,.5)'], [-1, 1, 'rgba(110,160,255,.55)']].forEach(([sx, sy, col]) => blob(cx + sx * w * 0.42, cy + sy * h * 0.7, w * 0.6, col)); }
+    c.restore();
+  }
   function shareChipRow(c, W, cy, x) {
     const chipText = x.info.flash ? 'FLASH · TOP SECRET' : (x.finish === 'topsecret' ? 'TOP SECRET' + (x.serial ? ' · ' + ser4(x.serial) : '') : FNAME[x.finish].toUpperCase()) + (x.variant === 'living' ? ' · LIVING CARD' : '');
     const info = x.info;
     const line = info.kind === 'namethis' ? 'Name This' : 'Dispatch No. ' + pad3(info.num) + (FORMAT_LABEL[info.format] ? ' · ' + FORMAT_LABEL[info.format] : '');
     const spaced = t => t.split('').join(String.fromCharCode(8202)); // hair spaces for the chip's letter spacing
-    c.font = '700 26px Oswald'; const chipLabel = spaced(chipText); const chipTW = c.measureText(chipLabel).width; const capChip = c.measureText('H').actualBoundingBoxAscent || 19;
+    c.font = '700 34px Oswald'; const chipLabel = spaced(chipText); const chipTW = c.measureText(chipLabel).width; const capChip = c.measureText('H').actualBoundingBoxAscent || 19;
     c.font = '400 28px "Special Elite"'; const lineW = c.measureText(line).width; const capLine = c.measureText('H').actualBoundingBoxAscent || 19;
-    const padX = 16, chipH = 42, chipW = chipTW + padX * 2, gap = 16, total = chipW + gap + lineW;
+    const padX = 18, chipH = 52, chipW = chipTW + padX * 2, gap = 16, total = chipW + gap + lineW; // a bigger chip so the finish reads at thumbnail size (step 6)
     const x0 = (W - total) / 2, top = cy - chipH / 2;
     const fills = {
       copper: () => '#9C5B2E',
@@ -1148,7 +1158,7 @@
     if (c.roundRect) c.roundRect(x0, top, chipW, chipH, 5); else c.rect(x0, top, chipW, chipH);
     c.fill();
     c.textAlign = 'left';
-    c.fillStyle = ink[x.finish]; c.font = '700 26px Oswald'; c.fillText(chipLabel, x0 + padX, cy + capChip / 2);
+    c.fillStyle = ink[x.finish]; c.font = '700 34px Oswald'; c.fillText(chipLabel, x0 + padX, cy + capChip / 2);
     c.fillStyle = '#b9ad92'; c.font = '400 28px "Special Elite"'; c.fillText(line, x0 + chipW + gap, cy + capLine / 2);
     c.textAlign = 'center';
   }
@@ -1171,6 +1181,10 @@
     if (items.length > 1) { c.textAlign = 'center'; c.fillStyle = '#b9ad92'; const sub = 'with ' + listText(items.slice(1)); fitFont(c, sub, 400, 28, '"Special Elite"', W - 100); c.fillText(sub, W / 2, 204); }
     // cards: cy is roughly the card's middle
     const draw = (x, k, cx, cy, w, rot) => { c.save(); c.translate(cx, cy); c.rotate(rot * Math.PI / 180); if (imgs[k]) framed(c, imgs[k], -w / 2, -w * 0.62, w, x.finish, x.serial, x.info.flash); c.restore(); };
+    // A soft light behind the best card in its finish's colour (visual pass step 6, 29 Oct 2026), so a Gold or a
+    // Top Secret reads at a glance even as a small thumbnail in a feed or a profile grid.
+    const hp = items.length === 1 ? [W / 2, 188 + 830 * 0.62, 830] : items.length === 2 ? [W / 2 - 205, 716, 610] : [W / 2, 713, 560];
+    shareHalo(c, items[0], hp[0], hp[1], hp[2]);
     if (items.length === 1) draw(items[0], 0, W / 2, 188 + 830 * 0.62, 830, 0);
     else if (items.length === 2) { const cw = 610; draw(items[1], 1, W / 2 + 205, 730, cw, 7); draw(items[0], 0, W / 2 - 205, 716, cw, -5); }
     else { const cw = 560; draw(items[1], 1, W / 2 - 240, 756, cw, -9); draw(items[2], 2, W / 2 + 240, 756, cw, 9); draw(items[0], 0, W / 2, 713, cw, 0); }
