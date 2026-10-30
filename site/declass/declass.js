@@ -1564,12 +1564,12 @@
   // A card the player doesn't hold at all: pick the finish to request.
   function requestPicker(id) {
     const info = BYID.get(id); if (!info) return;
-    if (info.today) { toast("Today's cards can't be requested. Open today's envelope instead."); return; }
+    if (info.today) { toast("Today's cards can be requested starting tomorrow."); return; }
     const h = holdingsNow().get(id) || { still: {}, living: {} };
     const opt = (variant, f) => {
       if (h[variant][f]) return '';
       const pr = priceOf(info, variant, f), short = haveIntel() < pr;
-      return `<button class="reqopt f-${f}${short ? ' short' : ''}" data-v="${variant}" data-f="${f}"><b>${variant === 'living' ? 'Living ' : ''}${FNAME[f]}</b><span>${pr} Intel</span></button>`;
+      return `<button class="reqopt f-${f}${short ? ' short' : ''}" data-v="${variant}" data-f="${f}"><b>${variant === 'living' ? 'Living ' : ''}${FNAME[f]}</b><span>${pr.toLocaleString()} Intel</span>${short ? `<em>Need ${(pr - haveIntel()).toLocaleString()} more</em>` : ''}</button>`;
     };
     const rows = info.flash ? opt('still', 'topsecret') : FIN.map(f => opt('still', f)).join('') + (info.hasFilm ? FIN.map(f => opt('living', f)).join('') : '');
     sheet(`<div class="sheettop"><span class="howstamp">Request a card</span><button class="howx" data-close aria-label="Close">✕</button></div>

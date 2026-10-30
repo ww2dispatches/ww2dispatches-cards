@@ -935,3 +935,7 @@ button:not(.tr):not(.mini):active,.slotbtn:active,.tile:active,.allbtn:active,.s
 /* Card view: which group you are paging through (29 Oct 2026). */
 .vctx{font-family:var(--display);font-weight:700;font-size:18px;letter-spacing:.1em;text-transform:uppercase;color:var(--brass);text-align:center;margin:0 0 2px}
 .vctx:empty{display:none}
+
+/* Request picker: every price in the same ink; a finish you can't afford yet says how much more (29 Oct 2026). */
+.reqopt span,.reqopt.short span{color:var(--ink)}
+.reqopt em{font-style:normal;font-family:var(--type);font-size:12px;color:var(--mute)}
