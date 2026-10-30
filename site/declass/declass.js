@@ -658,7 +658,9 @@
     const info = p.cardInfo || {};
     if (info.kind === 'namethis') return answered[i] ? `<span class="answer">Answer: ${esc(info.answer)}</span>` : 'Can you name it? Tap to reveal the answer.';
     if (info.flash) return `<b>A Flash card. ${esc(info.short)}, always Top Secret, and yours for good.</b>`;
-    if (p.finish === 'topsecret' && p.serial) return `<b>The ${ord(p.serial)} Top Secret ${p.variant === 'living' ? 'living ' : ''}${esc(info.short)} pulled anywhere in the world.</b>`;
+    const fileLine = info.hasFile && (p.finish === 'gold' || p.finish === 'topsecret') ? '<span class="fline">File declassified. Open it from the card in your dossier.</span>' : '';
+    if (p.finish === 'topsecret' && p.serial) return `<b>The ${ord(p.serial)} Top Secret ${p.variant === 'living' ? 'living ' : ''}${esc(info.short)} pulled anywhere in the world.</b>${fileLine}`;
+    if (fileLine) return fileLine;
     return i < pulls.length - 1 ? 'Swipe or tap Next' : cardEnv && cardEnv.kind === 'intercept' ? "That's today's pick." : "That's the envelope.";
   }
   function glow(f, big) { if (f === 'copper' && !big) return; const g = $('glow'); g.className = 'glow'; void g.offsetWidth; g.className = 'glow ' + f + (big ? ' held' : ''); }
@@ -940,7 +942,7 @@
     if (!info || !h) return;
     if (!viewSel || !h[viewSel.variant][viewSel.finish]) viewSel = bestOf(h);
     $('viewCount').textContent = info.kind === 'namethis' ? 'Name This · ' + info.short : `Dispatch No. ${pad3(info.num)} · ${info.seriesName}`;
-    document.querySelectorAll('#stage2 video').forEach(v => v.pause());
+    document.querySelectorAll('#stage2 video, #dfile video').forEach(v => v.pause());
     $('stage2').innerHTML = cardFace(info, viewSel.finish, viewSel.variant, serialFor(pl, id, viewSel.variant, viewSel.finish), { autoplay: true });
     if (viewSel.variant === 'living') startFilm($('stage2'), info);
     $('viewPos').textContent = `${vi + 1} of ${viewList.length}`;
@@ -948,9 +950,10 @@
     const row = (variant, lbl) => `<div class="rowlbl">${lbl}</div>` + FIN.map(f => {
       const n = h[variant][f] || 0;
       // Duplicates turn into Intel, so a count only shows where extra copies can exist: Top Secret, two or more.
-      if (n) return `<button class="s4 f-${f}${variant === viewSel.variant && f === viewSel.finish ? ' cur' : ''}" data-v="${variant}" data-f="${f}">${FNAME[f]}${f === 'topsecret' && n > 1 ? `<small>×${n}</small>` : ''}</button>`;
-      if (signedIn() && !info.today) return `<button class="s4 off reqs" data-rv="${variant}" data-rf="${f}" title="Request the ${variant === 'living' ? 'Living ' : ''}${FNAME[f]} for ${priceOf(info, variant, f)} Intel">?<small><img class="itok" src="/declass/icons/intel.svg" alt="">${priceOf(info, variant, f)}</small></button>`;
-      return '<div class="s4 off">?<small>Sealed</small></div>';
+      const fold = info.hasFile && (f === 'gold' || f === 'topsecret') ? '<span class="fold" aria-hidden="true"></span>' : '';
+      if (n) return `<button class="s4 f-${f}${variant === viewSel.variant && f === viewSel.finish ? ' cur' : ''}" data-v="${variant}" data-f="${f}">${FNAME[f]}${f === 'topsecret' && n > 1 ? `<small>×${n}</small>` : ''}${fold}</button>`;
+      if (signedIn() && !info.today) return `<button class="s4 off reqs" data-rv="${variant}" data-rf="${f}" title="Request the ${variant === 'living' ? 'Living ' : ''}${FNAME[f]} for ${priceOf(info, variant, f)} Intel">?<small><img class="itok" src="/declass/icons/intel.svg" alt="">${priceOf(info, variant, f)}</small>${fold}</button>`;
+      return `<div class="s4 off">?<small>Sealed</small>${fold}</div>`;
     }).join('');
     $('slots4').innerHTML = info.flash
       ? `<div class="rowlbl">Flash</div><button class="s4 f-topsecret cur" data-v="still" data-f="topsecret">Top Secret${(h.still.topsecret || 0) > 1 ? `<small>×${h.still.topsecret}</small>` : ''}</button><div class="s4 off flashnote">Always Top Secret</div>`
@@ -959,7 +962,49 @@
     $('slots4').querySelectorAll('button.reqs').forEach(b => { b.onclick = () => confirmRequest(info, b.dataset.rv, b.dataset.rf); });
     const mine = pl.filter(p => p.card === id).slice().sort((a, b) => (b.at || '').localeCompare(a.at || ''));
     $('history').innerHTML = `<h3>Pulled ${mine.length} time${mine.length === 1 ? '' : 's'}</h3><ul>${mine.map(p => `<li><span>${p.at ? esc(localDate(p.at)) + ' · ' : ''}${esc(slotName(p.slot) || 'Starter pack')}${p.variant === 'living' ? ' · ▶︎ living' : ''}${p.intel ? ' · +' + p.intel + ' Intel' : ''}</span><span class="fin f-${p.finish}">${FNAME[p.finish]}${p.serial ? ' · Serial ' + ser4(p.serial) : ''}</span></li>`).join('')}</ul>`;
+    dfileOpenUI = dfileOpenUI && dfileOpenUI === id ? id : null;
+    paintFile(info, h, DETAIL.get(id));
     renderText(info, h);
+  }
+  // The Declassified file (29 Oct 2026): a bar under the finish row, sealed until the player holds the
+  // card in Gold, Top Secret, or Flash; then it unfolds in place to the extra photo, the fact the post
+  // didn't use, and the narrated story. The server only sends the contents to those holders.
+  let dfileOpenUI = null;
+  const opensFile = h => ['gold', 'topsecret'].some(f => h.still[f] || h.living[f]);
+  function paintFile(info, h, d) {
+    const box = $('dfile');
+    if (!info.hasFile) { box.innerHTML = ''; return; }
+    const f = d && d.dfile;
+    if (!opensFile(h)) {
+      const canReq = signedIn() && !info.today && !info.flash;
+      const what = f ? [f.photo && 'a photo', 'a detail', f.video && 'the narrated story'].filter(Boolean) : ['a photo', 'a detail'];
+      box.innerHTML = `<button class="dbar sealed" id="dbarBtn"><span class="dic"><i>🔒\ufe0e</i></span><span class="dtx"><b>Declassified file</b><small>${esc(what.length > 2 ? what[0] + ', ' + what[1] + ', and ' + what[2] : what.join(' and '))} not in the post</small></span><span class="dst">GOLD OPENS</span></button>`;
+      $('dbarBtn').onclick = () => canReq ? confirmRequest(info, 'still', 'gold') : toast(info.today ? 'Pull this card in Gold to open its file.' : 'Hold this card in Gold or better to open its file.');
+      return;
+    }
+    const by = info.flash ? 'Flash' : h.still.topsecret || h.living.topsecret ? 'Top Secret' : 'Gold';
+    const unf = dfileOpenUI === info.id && f && f.open;
+    let html = `<button class="dbar open${unf ? ' unf' : ''}" id="dbarBtn" aria-expanded="${unf}"><span class="dic"></span><span class="dtx"><b>Declassified file</b><small>Opened by your ${by} card</small></span><span class="dchev">${unf ? 'Close ▴\ufe0e' : 'Open ▾\ufe0e'}</span></button>`;
+    if (unf) {
+      html += '<div class="dpanel">';
+      if (f.photo) html += `<figure><img src="${esc(f.photo.img)}" alt="${esc(f.photo.caption || '')}" loading="lazy"><figcaption>${esc(f.photo.caption || '')}${f.photo.credit ? `<span>${esc(f.photo.credit)}</span>` : ''}</figcaption></figure>`;
+      html += `<div class="dfact"><b>Not in the post</b>${esc(f.fact)}</div>`;
+      if (f.sources && f.sources.length) html += `<p class="dsrc">Source: ${f.sources.map(x => `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a>`).join(', ')}</p>`;
+      if (f.video) html += `<button class="dvid" id="dVid"><span>▶\ufe0e</span><b>The narrated story</b></button>`;
+      html += '</div>';
+    }
+    box.innerHTML = html;
+    $('dbarBtn').onclick = () => {
+      if (!f || !f.open) { // detail still loading, or cached from before the Gold: fetch it fresh
+        $('dbarBtn').querySelector('small').textContent = 'Opening the file…';
+        api('card?id=' + encodeURIComponent(info.id)).then(r => { DETAIL.set(info.id, r.card); dfileOpenUI = info.id; if (viewList[vi] === info.id) paintFile(info, h, r.card); }).catch(() => toast('The file did not open. Try again in a moment.'));
+        return;
+      }
+      dfileOpenUI = unf ? null : info.id; sfx('slide');
+      paintFile(info, h, d);
+    };
+    const v = $('dVid');
+    if (v) v.onclick = () => { document.querySelectorAll('#stage2 video').forEach(x => x.pause()); v.outerHTML = `<video class="dvideo" src="${esc(f.video.mp4)}" controls playsinline autoplay></video>`; };
   }
   function renderText(info, h) {
     const holdsLiving = FIN.some(f => h.living[f]);
@@ -985,15 +1030,17 @@
       const mb = $('ctMore');
       if (mb) mb.onclick = () => { const st = $('ctStory'); st.classList.toggle('clip'); const shut = st.classList.contains('clip'); mb.textContent = shut ? 'Read more ▾\ufe0e' : 'Show less ▴\ufe0e'; mb.setAttribute('aria-expanded', String(!shut)); };
     };
-    if (DETAIL.has(info.id)) return paint(DETAIL.get(info.id));
+    // A detail cached before the player held a Gold carries a sealed file: fetch it again.
+    const c = DETAIL.get(info.id);
+    if (c && !(c.dfile && !c.dfile.open && opensFile(h))) return paint(c);
     $('ctext').innerHTML = '<p class="m">Loading the file…</p>';
-    api('card?id=' + encodeURIComponent(info.id)).then(d => { DETAIL.set(info.id, d.card); paint(d.card); }).catch(() => { $('ctext').innerHTML = ''; });
+    api('card?id=' + encodeURIComponent(info.id)).then(d => { DETAIL.set(info.id, d.card); paint(d.card); if (viewList[vi] === info.id) paintFile(info, h, d.card); }).catch(() => { $('ctext').innerHTML = ''; });
   }
   $('vPrev').onclick = () => { if (vi > 0) { vi--; viewSel = null; renderView(); } };
   $('vNext').onclick = () => { if (vi < viewList.length - 1) { vi++; viewSel = null; renderView(); } };
   swipe($('viewer2'), () => $('vNext').click(), () => $('vPrev').click());
   $('backView').onclick = () => {
-    document.querySelectorAll('#stage2 video').forEach(v => v.pause());
+    document.querySelectorAll('#stage2 video, #dfile video').forEach(v => v.pause());
     if (viewFrom === 'sSection' && lastSection) section(lastSection[0], lastSection[1], lastSection[2]);
     else if (viewFrom === 'sCards') show('sCards');
     else { renderHome(); show('sHome'); }

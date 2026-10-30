@@ -80,7 +80,7 @@ export function summary(card, t) {
   const s = {
     kind: card.kind, id: card.id, num: card.num, series: card.series, seriesName: card.seriesName,
     short: card.short, title: card.title, date: card.date, place: card.place, era: card.era,
-    format: card.format, postAt: card.postAt, img: card.img, hasFilm: filmReleased(card, t), flash: Boolean(card.flash),
+    format: card.format, postAt: card.postAt, img: card.img, hasFilm: filmReleased(card, t), flash: Boolean(card.flash), hasFile: Boolean(card.dfile),
     subjects: card.subjects, theater: card.theater, nations: card.nations, who: card.who, happened: card.happened, branch: card.branch,
   };
   s.today = isTodayCard(card, t); // today's cards can never be requested
@@ -89,7 +89,23 @@ export function summary(card, t) {
   return s;
 }
 
-// Everything the card view needs; the film only once the noon video has posted.
-export function detail(card, t) {
-  return { ...card, film: filmReleased(card, t) ? card.film : null };
+// Everything the card view needs; the film only once the noon video has posted. The Declassified file
+// (29 Oct 2026) only for a player holding the card in Gold, Top Secret, or Flash; anyone else learns
+// only that it exists and whether it holds a photo and a video.
+export function detail(card, t, opened = false) {
+  const out = { ...card, film: filmReleased(card, t) ? card.film : null, dfile: null };
+  const f = card.dfile;
+  if (f) {
+    const video = f.video && f.video.postAt <= iso(t) ? f.video : null;
+    out.dfile = opened ? { open: true, fact: f.fact, sources: f.sources, photo: f.photo || null, video }
+      : { open: false, photo: Boolean(f.photo), video: Boolean(video) };
+  }
+  return out;
+}
+
+// Does this player hold the card in a finish that opens its Declassified file?
+export async function opensFile(db, playerId, cardId) {
+  if (!playerId) return false;
+  const r = await db.prepare("SELECT 1 FROM pulls WHERE player_id = ? AND card_id = ? AND finish IN ('gold', 'topsecret') LIMIT 1").bind(playerId, cardId).first();
+  return Boolean(r);
 }

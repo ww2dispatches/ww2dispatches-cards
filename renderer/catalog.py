@@ -131,6 +131,19 @@ for d in dispatches:
             "links": link_row(links, FILM_LINKS),
         }
 
+    # The Declassified file (29 Oct 2026): opened in Declass by holding the card in Gold, Top Secret, or
+    # Flash. The server only sends it to those holders; the Story Card video joins it at its noon post.
+    dfile = None
+    dc = d.get("declassified") or {}
+    if dc.get("fact"):
+        dfile = {"fact": dc["fact"], "sources": [s for s in as_list(dc.get("sources")) if isinstance(s, dict) and s.get("url")]}
+        ph = dc.get("photo") or {}
+        ph_url = card_url(ph["file"]) if ph.get("file") else None
+        if ph_url:
+            dfile["photo"] = {"img": ph_url, "credit": ph.get("credit", ""), "caption": ph.get("caption", ""), "page": ph.get("page", "")}
+        if d.get("story"):  # a Story Card: its narrated vertical video (Videos doc), from the noon post
+            dfile["video"] = {"postAt": utc(post_date, "12:00"), "mp4": f"{VIDEOS_CDN}dispatch-{num}-story-am_onyx.mp4"}
+
     catalog.append(merge_tags({
         "kind": "dispatch",
         "id": d["id"],
@@ -154,6 +167,7 @@ for d in dispatches:
         "sources": sources(d),
         "links": link_row(links, CARD_LINKS),
         "film": film,
+        "dfile": dfile,
     }, d))
 
 # Name This cards. One joins the pool only when its answer is public, which is when the next

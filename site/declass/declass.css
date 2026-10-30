@@ -894,3 +894,36 @@ button:not(.tr):not(.mini):active,.slotbtn:active,.tile:active,.allbtn:active,.s
 /* 4 · set complete: the dated round stamp in brass */
 .promostamp.setstamp{color:#D9A93E;width:190px;height:190px}
 #sCards .viewer>.tiltask{margin:0 0 16px}
+
+/* Declassified file (29 Oct 2026): the bar under the finish row, the unfolded panel, and the folder mark on Gold and Top Secret squares. */
+.s4{position:relative}
+.s4 .fold{position:absolute;right:5px;top:5px;width:13px;height:10px;pointer-events:none}
+.s4 .fold::before{content:"";position:absolute;left:0;top:0;width:6px;height:3px;background:#c9a96b;border-radius:1px 1px 0 0}
+.s4 .fold::after{content:"";position:absolute;left:0;top:2px;right:0;bottom:0;background:#c9a96b;border-radius:1px}
+#dfile:empty{display:none}
+.dbar{display:flex;align-items:center;gap:12px;width:100%;margin:14px 0 4px;padding:11px 14px;background:#d9bd85;border:0;border-radius:3px;box-shadow:0 6px 16px rgba(0,0,0,.45);color:#2a2117;text-align:left;cursor:pointer;font:inherit}
+.dbar .dic{width:34px;height:26px;flex:none;position:relative}
+.dbar .dic::before{content:"";position:absolute;left:0;top:0;width:14px;height:6px;background:#a8823f;border-radius:2px 2px 0 0}
+.dbar .dic::after{content:"";position:absolute;left:0;top:4px;right:0;bottom:0;background:#b8904a;border-radius:1px 3px 3px 3px}
+.dbar .dic i{position:absolute;z-index:2;left:50%;top:58%;transform:translate(-50%,-50%);font-style:normal;font-size:12px;line-height:1}
+.dbar .dtx{min-width:0}
+.dbar b{display:block;font-family:var(--display);font-weight:700;letter-spacing:.1em;font-size:15px;text-transform:uppercase}
+.dbar small{display:block;font-family:var(--type);font-size:14px;color:#5a4a33;margin-top:1px}
+.dbar .dst{margin-left:auto;flex:none;font-family:var(--display);font-weight:700;letter-spacing:.1em;font-size:12px;line-height:1.15;text-align:center;border:2px solid #b02a1f;color:#b02a1f;padding:3px 7px;transform:rotate(-6deg);border-radius:2px;max-width:64px}
+.dbar .dchev{margin-left:auto;flex:none;font-family:var(--display);font-weight:700;color:#6a4212;font-size:14px;letter-spacing:.08em;text-transform:uppercase}
+.dbar.unf{border-radius:3px 3px 0 0;box-shadow:none;margin-bottom:0}
+.dpanel{background:#d9bd85;border-radius:0 0 3px 3px;padding:4px 14px 16px;box-shadow:0 10px 22px rgba(0,0,0,.5);color:#2a2117;margin-bottom:6px;animation:dunf .3s ease-out both}
+@keyframes dunf{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+.dpanel figure{margin:6px 0 12px;background:#f3ead4;padding:8px 8px 10px;box-shadow:0 3px 8px rgba(0,0,0,.25);transform:rotate(-1deg)}
+.dpanel figure img{display:block;width:100%;filter:grayscale(1)}
+.dpanel figcaption{font-family:var(--type);font-size:14px;color:#4a3d2c;margin-top:7px;line-height:1.35}
+.dpanel figcaption span{display:block;font-size:12px;color:#6b5a40;margin-top:4px}
+.dfact{background:#f3ead4;padding:12px 14px;font-family:var(--body);font-size:16px;line-height:1.5;color:#221a12}
+.dfact b{display:block;font-family:var(--display);font-size:13px;letter-spacing:.14em;color:#b02a1f;margin-bottom:5px;text-transform:uppercase}
+.dsrc{font-family:var(--type);font-size:13px;color:#4a3d2c;margin:9px 2px 0}
+.dsrc a{color:#2d4f86}
+.dvid{display:flex;align-items:center;gap:12px;width:100%;margin-top:12px;background:#1d1a17;color:#efe6cf;padding:9px 12px;border-radius:3px;border:0;cursor:pointer;text-align:left}
+.dvid span{width:30px;height:30px;border-radius:50%;background:#b02a1f;display:grid;place-items:center;font-size:13px;flex:none}
+.dvid b{font-family:var(--display);font-weight:700;letter-spacing:.06em;font-size:14px;text-transform:uppercase}
+.dvideo{display:block;width:100%;max-height:70vh;margin-top:12px;background:#000;border-radius:3px}
+.hint .fline{display:block;margin-top:4px;color:var(--brass);font-weight:700}
