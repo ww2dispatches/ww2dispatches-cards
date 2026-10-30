@@ -13,6 +13,7 @@ The hub doc. It holds the identity, the brand, the accounts and tools, the share
 | **Newsletter** | The Weekly Dispatch, the newsletter on Substack | Friday cards run |
 | **Name This** | The Wednesday and Saturday puzzle card | Saturday Name This run |
 | **Analytics** | How posts are measured and scored, theme tags, the playbook, the Scoreboard | Tuesday analytics review |
+| **Lunch Drop** | Brian's daily X Community post at lunch, the Lunch Drop page, writing the post and replies | Sunday Lunch Drop run |
 
 Working state lives outside the docs, where it is already recorded:
 * **What is scheduled:** Buffer, Typefully, and the Schedule Board.
@@ -99,7 +100,7 @@ Style: **Field Telegram**, a wartime telegram and rubber stamp feel.
 * Video specific sourcing (film, Wikimedia video) is in the Videos doc.
 
 ## Pinned tools
-Pinned in Brian's claude.ai sidebar: the **Schedule Board** (open this first), **Living Press**, and the **Scoreboard**. Working pages Brian reads use a plain, easy to read font for their reading text; the brand fonts stay on headings only.
+Pinned in Brian's claude.ai sidebar: the **Schedule Board** (open this first), **Living Press**, the **Scoreboard**, and the **Lunch Drop**. Working pages Brian reads use a plain, easy to read font for their reading text; the brand fonts stay on headings only.
 
 ### Schedule Board
 A pinned artifact named Dispatch Schedule (https://claude.ai/artifact/3cc4opKEo8D62zoRH8fZJt) that reads **Buffer and Typefully** live with Brian's own connections every time it opens, and refreshes every few minutes while open. Nothing to maintain by hand. Everything that posts anywhere shows on this board, labelled by the tool that sends it; if a new posting tool is ever added, add it here too. It has two views, switched with the buttons in the header: **Schedule** (the default) and **Review the week**.
@@ -114,6 +115,9 @@ A pinned artifact named Dispatch Schedule (https://claude.ai/artifact/3cc4opKEo8
 
 ### Living Press
 The video review page. Details in the Videos doc.
+
+### Lunch Drop
+The phone page for Brian's daily X Community post at lunch (https://claude.ai/artifact/VvRUuFWpKjJaqbWefzhqdg), rebuilt each Sunday morning. Details in the Lunch Drop doc.
 
 ### Scoreboard
 How every post performed, rebuilt each Wednesday night (https://claude.ai/artifact/H3ry2Cg3jM8mkxsTYrV7hP). Details in the Analytics doc.
@@ -136,6 +140,7 @@ A "Start here" card (four photo tiles, one per series, red START HERE stamp, "On
   * `namethis/`: one JSON per Name This card
   * `newsletter/`: the weekly issue drafts (issue-NNN.md)
   * `log/`: the CSV logs (see "Record now, use later")
+  * `lunch/`: the week's Lunch Drop record (`YYYY-MM-DD.json`, named for the Sunday) and the page built from it (Lunch Drop doc).
   * `analytics/`: the Wednesday review's folder: weekly Buffer snapshots, the theme tag list (`themes.md`), the playbook, the weekly reviews, and the Scoreboard page. See the Analytics doc and `analytics/README.md`.
   * `site/`: the ww2dispatches.com home page (index.html, slides.json, the six background photos in img/, icons, share image). See "Domain and website".
   * `status.md`: the small run state (dispatch bank, video bank, pending one time jobs, open checks). The Wednesday, Thursday, and Friday runs keep it current by editing lines in place and removing finished items; it never collects history.
@@ -183,7 +188,8 @@ Each batch covers the following Sunday through Saturday: **14 cards** (an 8 a.m.
 5. **Saturday 6:13 a.m. Mountain, "WW2 Dispatches Name This prep"** (follows the Name This doc). Prepares the coming Wednesday and Saturday Name This cards, uploads them to the board, and rebuilds the logs.
 6. **Saturday morning, Brian's review** (about 20 to 30 minutes): open the Schedule Board's Review the week view and go through next week's cards and captions, marking each Looks good or Needs a change with a note; watch the week's videos in Living Press; paste and schedule the newsletter issue in Substack for Sunday 8 a.m. Then ask Claude in this project to fix the flagged posts. Buffer is no longer part of the review. Because research locks each day on Wednesday, nothing built on Thursday or Friday changes the event, so the Saturday review is the one review.
 7. **Tuesday night, Brian reads the analytics summary** (about 5 minutes), with the Scoreboard for detail and any decision filed on the Schedule Board. **Wednesday night he can glance at the slate** (optional, about two minutes) and supply any film or photo asked for by Thursday 5 p.m.
-8. **Brian's daily habit:** about 10 to 15 minutes at lunch replying to comments and adding value in the replies of big WW2 accounts (@VoicesofWW2, @I_W_M, @RealTimeWWII, the National WWII Museum).
+8. **Brian's daily habit:** at lunch, around 1 p.m. Mountain, the **Lunch Drop**: post the day's 8 a.m. card into one X Community from the pinned Lunch Drop page (about 2 minutes), then spend the rest of lunch replying to comments and adding value in the replies of big WW2 accounts (@VoicesofWW2, @I_W_M, @RealTimeWWII, the National WWII Museum).
+9. **Sunday 5:43 a.m. Mountain, "WW2 Dispatches Lunch Drop prep"** (follows the Lunch Drop doc). Writes the week's Lunch Drop posts from the final cards, rebuilds the Lunch Drop page, and sends Brian a short summary. Runs after the Saturday review so every card is final.
 * Every run's log rebuild (`series_log.py`) also refreshes the home page's `site/slides.json`, so the site needs no step of its own.
 * There is no outside scout. The research run researches every event, photo, film, quote, and spec fact itself.
 * **If a run fails,** the next one covers the minimum and says so; the rules are in the Research doc's "If a run fails".
@@ -259,3 +265,4 @@ Folder: D:\OneDrive\Personal\Claude\WW2 Dispatches on the desktop (C:\Users\bria
 * 24 Oct 2026 (evening): Record changes for the Declass game (Envelope doc), per "Record now, use later": research adds `short` and `photoCredit` to every dispatch; the cards run keeps `body` as the story only, with the add on lines in `addons` and the hashtag line in `hashtags`, joined only when the Buffer caption is built; caption fixes go to the JSON before Buffer; the Name This run saves the post text in `body` plus `short` and `photoCredit`. Every existing record was backfilled once and the CSV logs gained a short name column. Nothing that gets posted changed.
 * 25 Oct 2026: Flash, the rare fifth card type, added (Roadmap, Research doc, Cards doc). The logs, the home page, the analytics, and the Declass catalog all know the `flash` series value.
 * 30 Oct 2026: Flash runs on sixteen fixed dates a year, at least one a month (Roadmap, Flash cards plan).
+* 30 Oct 2026: Lunch Drop added to help X grow: Brian posts the day's 8 a.m. card into one X Community at lunch from a pinned page, built each Sunday by a new run (Lunch Drop doc). The page and the `lunch/` folder were added, and the daily habit now starts with it.

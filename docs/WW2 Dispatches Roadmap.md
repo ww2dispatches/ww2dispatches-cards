@@ -14,6 +14,9 @@ Started 15 Oct 2026. Goal: post every day from launch (Sat 17 Oct 2026) and keep
 **Wednesday and Saturday only**
 * **10:00 a.m., Name This.** X (into an X Community, through Typefully), Threads (History Threads community), Facebook Page, and Instagram (a two week test, see Open decisions), the last three through Buffer. No dispatch number. (Name This doc)
 
+**Every day, by hand**
+* **About 1:00 p.m., Lunch Drop.** Brian posts the day's 8 a.m. card into one X Community with a new hook, a debate question, and two replies, from the pinned Lunch Drop page. Not scheduled anywhere; the Sunday run prepares it. (Lunch Drop doc)
+
 **Sunday**
 * **8:00 a.m., the weekly newsletter** on Substack (first issue Sun 1 Nov 2026). (Newsletter doc)
 
@@ -184,6 +187,7 @@ Why: old social posts are close to invisible because feeds favor new content, so
 * Later options: search, a printable "this day" card shop on Ko-fi, and a classroom friendly version of the archive.
 
 ## Changelog
+* 30 Oct 2026: Lunch Drop added to the daily layout (a hand posted X Community card at about 1 p.m.) to help X grow.
 * 30 Oct 2026: Flash days now at least one a month: six dates added from 2027 (Stalingrad, Remagen, the Doolittle Raid, Trinity, Leyte Gulf, Tarawa) for sixteen Flash cards a year, all with the extra posts session; Pearl Harbor stays first. Flash prep calendar added. Incoming Flash traffic built on the Declass home screen.
 * 25 Oct 2026 (Pearl Harbor extras): Flash day extra posts decided as a hand session after the Friday cards run, with no changes to the scheduled tasks; the Pearl Harbor Flash day plan added (Flash Traffic bulletins on the Hawaii clock, a 7:55 moment of silence, one full art card only).
 * 15 Oct 2026: Roadmap started; Archive plan and Newsletter plan added; automatic weekly prep decided.

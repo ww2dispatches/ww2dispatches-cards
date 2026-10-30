@@ -1,0 +1,70 @@
+{
+  "week": "2026-10-25",
+  "note": "First Lunch Drop, built by hand on Fri 30 Oct 2026 to test the page. Covers Fri 30 and Sat 31 Oct only.",
+  "days": [
+    {
+      "date": "2026-10-30",
+      "dispatch": "1944-10-30-lost-battalion",
+      "num": 27,
+      "series": "battle",
+      "title": "Rescue of the Lost Battalion",
+      "community": "History Hub",
+      "card": "cards/dispatch-027-x.jpg",
+      "video": "videos/dispatch-027-x.mp4",
+      "videoKind": "Living Card",
+      "somber": false,
+      "post": "The 442nd had just been pulled out of the line for a rest. Then it was sent back into the forest to get the Texans out.\n\nSince 24 October 1944, the 1st Battalion of the 141st Infantry had been cut off by German troops in the Vosges Mountains of eastern France. The 442nd Regimental Combat Team, a segregated unit of Japanese American soldiers, attacked uphill through the trees for days. On 30 October they broke through, and 211 men walked out.\n\nBy most counts the 442nd took more casualties in the rescue than the number of men it saved. How do you weigh a rescue like that?",
+      "replies": [
+        "The men of the 442nd were Nisei, the American born sons of Japanese immigrants. Just before the rescue they had liberated the French towns of Bruyères and Biffontaine. In 1962 Texas made the unit's veterans honorary Texans.",
+        "Photo: Soldiers of the 442nd Regimental Combat Team on a muddy road in France, late 1944. U.S. Army Signal Corps, public domain.\n\nSources: Go For Broke National Education Center; Lost Battalion (Europe, World War II), Wikipedia."
+      ],
+      "alt": "Archival photo of Japanese American soldiers of the 442nd Regimental Combat Team hiking up a muddy road in France in late 1944. Text: 30 OCT 1944, Vosges Mountains, France. 211 men walked out.",
+      "facts": [
+        "The 1st Battalion, 141st Infantry was cut off by German troops on 24 October 1944. About 275 men were surrounded.",
+        "It happened in the cold, wet forests of the Vosges Mountains in eastern France.",
+        "The 442nd Regimental Combat Team was a segregated unit of Nisei, American born sons of Japanese immigrants.",
+        "The 442nd had just liberated Bruyères and Biffontaine and was pulled out of a rest for the rescue.",
+        "They broke through on 30 October 1944, and 211 men walked out.",
+        "By most counts the 442nd's casualties in the rescue were higher than the number of men saved.",
+        "In 1962 Texas made the 442nd's veterans honorary Texans."
+      ],
+      "sources": [
+        {"title": "100th/442nd RCT and the Rescue of the Lost Battalion, Go For Broke National Education Center", "url": "https://goforbroke.org/rhineland-campaign-rescue-of-the-lost-battalion/"},
+        {"title": "Lost Battalion (Europe, World War II), Wikipedia", "url": "https://en.wikipedia.org/wiki/Lost_Battalion_(Europe,_World_War_II)"}
+      ]
+    },
+    {
+      "date": "2026-10-31",
+      "dispatch": "1941-10-31-reuben-james",
+      "num": 29,
+      "series": "battle",
+      "title": "Reuben James is sunk",
+      "community": "History",
+      "card": "cards/dispatch-029-x.jpg",
+      "video": null,
+      "videoKind": null,
+      "somber": false,
+      "post": "Five weeks before Pearl Harbor, American sailors were already dying in the Atlantic.\n\nOn 31 October 1941, USS Reuben James was escorting convoy HX 156 near Iceland when U-552 fired a torpedo meant for a merchant ship. It struck the destroyer instead. Her magazine exploded and tore off the bow. Only 44 of her crew survived, and not one officer was among them.\n\nFour days earlier, Roosevelt had said, \"The shooting has started.\" Did America's war with Germany really begin here, not in December?",
+      "replies": [
+        "As her stern went down, its depth charges went off among the men in the water. The destroyers Niblack and Hilary P. Jones pulled the survivors from the sea. Reuben James was the first U.S. Navy ship sunk by enemy action in the war against Germany.",
+        "Photo: USS Reuben James in the Panama Canal, between the wars. U.S. Navy Bureau of Ships 19-N-10982 (NARA 496085338), public domain.\n\nSources: USS Reuben James (DD-245), Wikipedia; MaritimeQuest; National Archives."
+      ],
+      "alt": "Archival photo of the four stack destroyer USS Reuben James, hull number 245, passing through the Panama Canal between the wars. Text: 31 OCT 1941, Near Iceland, North Atlantic. Only 44 survived.",
+      "facts": [
+        "She was escorting convoy HX 156 toward Britain, near Iceland, when U-552 fired at dawn.",
+        "The torpedo was meant for a merchant ship and struck the destroyer forward instead.",
+        "Her magazine exploded and tore off the bow, which sank at once.",
+        "As the stern sank, its depth charges went off among the men in the water.",
+        "Only 44 of her crew survived, rescued by the destroyers Niblack and Hilary P. Jones. No officers survived.",
+        "The U.S. was not yet at war. She was the first U.S. Navy ship sunk by enemy action in the war against Germany.",
+        "Four days earlier, Roosevelt had said, \"The shooting has started.\"",
+        "Woody Guthrie wrote a song about her."
+      ],
+      "sources": [
+        {"title": "USS Reuben James (DD-245), Wikipedia", "url": "https://en.wikipedia.org/wiki/USS_Reuben_James_(DD-245)"},
+        {"title": "USS Reuben James (DD-245), MaritimeQuest daily event", "url": "https://maritimequest.com/daily_event_archive/2005/oct/31_uss_reuben_james_dd245.htm"},
+        {"title": "Photograph of USS Reuben James (DD-245), NARA 496085338", "url": "https://catalog.archives.gov/id/496085338"}
+      ]
+    }
+  ]
+}
