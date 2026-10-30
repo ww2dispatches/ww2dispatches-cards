@@ -784,3 +784,15 @@ h2{flex-wrap:wrap;row-gap:2px}
   .lfan .m .frame::after{background-size:300% 100%;animation:lsheen 3.6s ease-in-out infinite}
 }
 @keyframes lsheen{0%{background-position:100% 0}55%,100%{background-position:0 0}}
+
+/* Turning cards (29 Oct 2026, after Brian's iPhone check): Done and "Card 1 of 5" share one row, the tip sits
+   above the card, and the card scales to the screen height so the tray of cards below is never cut off. */
+#sCards.on{display:grid;grid-template-columns:auto 1fr;align-items:center;column-gap:10px}
+#sCards>*{grid-column:1/-1}
+#sCards>#backCards{grid-column:1}
+#sCards>#count{grid-column:2;text-align:right;margin:0}
+#sCards.summ>#backCards{grid-column:1/-1}
+#sCards .viewer{display:flex;flex-direction:column;width:100%;max-width:min(340px,calc((100vh - 215px) / 1.5));max-width:min(340px,calc((100svh - 215px) / 1.5))}
+#sCards .viewer>.hint,#sCards .viewer>.tiltask{order:-1}
+#sCards .viewer>.hint{margin:0 0 10px;min-height:0}
+#sCards .tray{margin-top:14px;width:100%;align-self:stretch}
