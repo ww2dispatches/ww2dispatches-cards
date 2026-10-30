@@ -742,3 +742,7 @@ h2{flex-wrap:wrap;row-gap:2px}
 #statRow .intelst{display:grid;grid-template-columns:auto auto;grid-template-areas:"sl sl" "ic nm" "td td";column-gap:6px;row-gap:3px;align-items:center;justify-content:end;flex:0 0 auto;text-align:right}
 #statRow .intelst .sl{grid-area:sl}#statRow .intelst .itok{grid-area:ic}#statRow .intelst b{grid-area:nm}
 #statRow .intelst span:last-child{grid-area:td;top:0;text-align:right}
+/* card grids: every card starts at the top of its cell (a stretched button centers its content, which pushed
+   held cards down beside a sealed card with a request line), and the request line stays on one line */
+.grid,.recent,.savegrid{align-items:start}
+.mini .reqline{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
