@@ -1007,3 +1007,11 @@ html.ztrial #stage2{cursor:zoom-in}
 .cup button.cupln:active{transform:translateY(1px)}
 .cup .cupln.icpsoon{border:2px dashed #5e6f8c;padding:8px 11px} /* same width as the envelope rows, so the dashes match (30 Oct 2026) */
 .slotbtn span.ph{display:inline;padding:0;white-space:nowrap;font:inherit;color:inherit}
+/* The cards rise out of the envelope's V (30 Oct 2026): the opening runs from the top edge down to the
+   point where the side flaps meet, so the clip follows that V and the inside of the envelope darkens
+   once the flap is open. */
+.big .cardsclip{bottom:0;height:340%;clip-path:polygon(0 0,100% 0,100% 70.588%,85.714% 70.588%,50% 89.118%,14.286% 70.588%,0 70.588%)}
+.big .cardsclip .cardsout{transform:translate(-50%,-30%)}
+.big.go .cardsclip .cardsout{transform:translate(-50%,-186%)}
+.big .env::before{content:"";position:absolute;inset:0;clip-path:polygon(0 0,100% 0,50% 63%);background:linear-gradient(180deg,rgba(40,28,14,.42),rgba(40,28,14,.12));opacity:0;transition:opacity .6s .4s;z-index:1;pointer-events:none}
+.big.go .env::before{opacity:1}
