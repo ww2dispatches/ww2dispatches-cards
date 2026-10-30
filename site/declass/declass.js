@@ -305,7 +305,7 @@
     if (signedIn() && pulls.length) { const k = pulls[0].slot; last = pulls.filter(x => x.slot === k).slice().reverse(); }
     else if (STARTER) last = STARTER.pulls.filter((x, i) => STARTER.revealed[i]);
     $('recent').innerHTML = last.length ? `<h2>Last envelope <small>${esc(signedIn() ? slotName(last[0].slot) + ' · ' + localDate(last[0].at) : 'Starter pack')}</small></h2><div class="recent">${last.map(x => miniHTML(x.card, holdingsNow())).join('')}</div>${legendHTML()}` : '';
-    wireMinis($('recent'), last.map(x => x.card));
+    wireMinis($('recent'), last.map(x => x.card), signedIn() ? 'Last envelope' : 'Starter pack');
 
     // dossier tiles
     const H = holdingsNow();
@@ -358,8 +358,9 @@
     }
     return `<button class="mini" data-id="${esc(id)}"><img class="thumb ${info.flash ? 'flash' : 'f-' + best}" loading="lazy" src="${esc(info.img)}" alt="${esc(info.short)}"><span class="no">${esc(label(info))}</span><span class="nm">${esc(info.short)}</span>${dots}</button>`;
   }
-  function wireMinis(el, list) {
-    el.querySelectorAll('.mini[data-id]').forEach(b => { b.onclick = () => view(b.dataset.id, list.filter((x, i, a) => holdingsNow().has(x) && a.indexOf(x) === i)); });
+  // label names the group the card view pages through ("Battle Lines", "Last envelope"), shown at its top (29 Oct 2026).
+  function wireMinis(el, list, label) {
+    el.querySelectorAll('.mini[data-id]').forEach(b => { b.onclick = () => view(b.dataset.id, list.filter((x, i, a) => holdingsNow().has(x) && a.indexOf(x) === i), label); });
     el.querySelectorAll('.mini[data-req]').forEach(b => { b.onclick = () => requestPicker(b.dataset.req); });
   }
 
@@ -414,7 +415,7 @@
     $('sectionGrid').innerHTML = (oneShort ? `<p class="oneshort">One card to go: <b>${esc(oneShort.short)}</b>${signedIn() && !oneShort.today ? ` · <button class="linkish" id="reqOne">Request this card · ${priceOf(oneShort, 'still', 'copper')} Intel${haveIntel() < priceOf(oneShort, 'still', 'copper') ? ' (you have ' + haveIntel() + ')' : ''}</button>` : ''}</p>` : '')
       + (list.length ? list.map(c => miniHTML(c.id, H)).join('') : '<p class="sub" style="grid-column:1/-1">Nothing here yet.</p>');
     if (oneShort && $('reqOne')) $('reqOne').onclick = () => requestPicker(oneShort.id);
-    wireMinis($('sectionGrid'), list.map(c => c.id));
+    wireMinis($('sectionGrid'), list.map(c => c.id), title);
     viewFrom = 'sSection';
     show('sSection');
   }
@@ -772,7 +773,7 @@
       const step = t => { const k = Math.max(0, Math.min(1, (t - t0) / 700)); b.textContent = '+' + Math.round(tot * k); if (k < 1) requestAnimationFrame(step); else sfx('coin'); };
       requestAnimationFrame(step);
     }
-    wireMinis($('summaryRow'), arranged.map(p => p.card));
+    wireMinis($('summaryRow'), arranged.map(p => p.card), 'This envelope');
   }
   function go(n, jump) {
     if (holding || $('sCards').classList.contains('summ')) return;
@@ -922,14 +923,16 @@
   }
 
   // ---------- card view ----------
-  let viewList = [], vi = 0, viewSel = null, viewFrom = 'sHome';
-  function view(id, list) {
+  let viewList = [], vi = 0, viewSel = null, viewFrom = 'sHome', viewLabel = '';
+  function view(id, list, label) {
     viewList = list && list.length ? list : [id];
+    viewLabel = viewList.length > 1 ? label || '' : '';
     vi = Math.max(0, viewList.indexOf(id));
     viewSel = null;
     if ($('sSection').classList.contains('on')) viewFrom = 'sSection';
     else if ($('sCards').classList.contains('on')) viewFrom = 'sCards';
     else viewFrom = 'sHome';
+    $('backView').textContent = '◀\ufe0e ' + (viewFrom === 'sSection' && label ? label : viewFrom === 'sCards' ? 'Envelope' : 'Back');
     renderView();
     show('sView');
   }
@@ -946,6 +949,7 @@
     $('stage2').innerHTML = cardFace(info, viewSel.finish, viewSel.variant, serialFor(pl, id, viewSel.variant, viewSel.finish), { autoplay: true });
     if (viewSel.variant === 'living') startFilm($('stage2'), info);
     $('viewPos').textContent = `${vi + 1} of ${viewList.length}`;
+    $('viewCtx').textContent = viewLabel ? `${viewLabel} · ${vi + 1} of ${viewList.length}` : '';
     $('vPrev').disabled = vi === 0; $('vNext').disabled = vi === viewList.length - 1;
     const row = (variant, lbl) => `<div class="rowlbl">${lbl}</div>` + FIN.map(f => {
       const n = h[variant][f] || 0;

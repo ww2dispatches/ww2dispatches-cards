@@ -931,3 +931,7 @@ button:not(.tr):not(.mini):active,.slotbtn:active,.tile:active,.allbtn:active,.s
 /* Every finish square the same size whatever it holds (29 Oct 2026). */
 .slots4 .s4{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:54px;box-sizing:border-box;line-height:1.15}
 .slots4 .s4 small{margin-top:3px}
+
+/* Card view: which group you are paging through (29 Oct 2026). */
+.vctx{font-family:var(--display);font-weight:700;font-size:18px;letter-spacing:.1em;text-transform:uppercase;color:var(--brass);text-align:center;margin:0 0 2px}
+.vctx:empty{display:none}
