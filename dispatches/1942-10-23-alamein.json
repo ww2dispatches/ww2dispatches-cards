@@ -87,6 +87,19 @@
   },
   "short": "Alamein",
   "photoCredit": "A 25 pounder gun firing during the night barrage that opened the Second Battle of El Alamein, 23 October 1942. IWM E 18469, Crown copyright expired, public domain.",
+  "declassified": {
+    "fact": "The British worked hard to hide the timing. Camouflage teams built a fake water pipeline running south, laid slowly so the attack would seem days away, and hid tanks under canvas sunshields that looked like trucks from the air. When the guns opened fire, the dummy pipeline still had days of building left.",
+    "sources": [
+      {
+        "title": "Operation Bertram, History of War",
+        "url": "https://www.historyofwar.org/articles/operation_bertram.html"
+      },
+      {
+        "title": "Operation Bertram, Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Operation_Bertram"
+      }
+    ]
+  },
   "addons": [],
   "hashtags": "#OnThisDay #WW2"
 }

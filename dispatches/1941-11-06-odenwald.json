@@ -149,6 +149,21 @@
   "photoUrl": "https://catalog.archives.gov/id/404794586",
   "photoNote": "The prize crew from USS Omaha poses aboard the captured Odenwald with the American flag above the German swastika flag, 18 November 1941, at San Juan. U.S. Navy photo 80-G-464023 (NARA 404794586), public domain. Twelve days after the capture. Cropped from the Navy print card.",
   "photoCredit": "USS Omaha's prize crew aboard the captured German blockade runner Odenwald, 18 November 1941. U.S. Navy photo, NARA 80-G-464023, public domain.",
+  "declassified": {
+    "fact": "Captain Theodore Chandler, who ordered the boarding, rose to rear admiral. In January 1945, in the Philippines, a kamikaze struck the flag bridge of his flagship, USS Louisville. Badly burned, he hauled fire hoses alongside his enlisted sailors, then waited his turn for first aid with them. He died the next day.",
+    "sources": [
+      {
+        "title": "Theodore E. Chandler I (DD-717), Dictionary of American Naval Fighting Ships, Naval History and Heritage Command",
+        "url": "https://www.history.navy.mil/research/histories/ship-histories/danfs/t/theodore-e-chandler-i.html"
+      }
+    ],
+    "photo": {
+      "file": "photos/1941-11-06-odenwald-2.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:USS_Omaha_(CL-4)_with_German_blockade_runner_Odenwald,_6_November_1941_(NH_49935).jpg",
+      "credit": "USS Omaha alongside the disguised Odenwald, 6 November 1941, photographed from USS Somers. U.S. Navy photo NH 49935, public domain.",
+      "caption": "Omaha lies alongside the captured freighter on the day of the boarding, seen from the destroyer Somers."
+    }
+  },
   "videoPhotos": [
     {
       "file": "photos/1941-11-06-odenwald-2.jpg",

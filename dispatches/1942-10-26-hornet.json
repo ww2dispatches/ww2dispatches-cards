@@ -116,6 +116,21 @@
   },
   "short": "USS Hornet",
   "photoCredit": "A Japanese dive bomber trails smoke as it dives on USS Hornet, 26 October 1942. U.S. Navy 80-G-33947 (NARA), public domain.",
+  "declassified": {
+    "fact": "Hornet stayed lost for 76 years. In late January 2019, the crew of Paul Allen's research ship Petrel found her on the floor of the South Pacific near the Solomon Islands, nearly 17,500 feet down. The underwater robot found the wreck on its very first dive.",
+    "sources": [
+      {
+        "title": "Final resting place of USS Hornet (CV-8) located in South Pacific, U.S. Pacific Fleet",
+        "url": "https://www.cpf.navy.mil/Newsroom/News/Article/2664467/final-resting-place-of-uss-hornet-cv-8-located-in-south-pacific"
+      }
+    ],
+    "photo": {
+      "file": "photos/1942-10-26-hornet-3.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Listing_USS_Hornet_(CV-8)_is_abandoned_in_the_late_afternoon_of_26_October_1942.jpg",
+      "credit": "USS Hornet listing and abandoned, late afternoon of 26 October 1942. U.S. Navy photo, public domain.",
+      "caption": "Hornet lists heavily after her crew abandoned ship, hours before Japanese destroyers finished her off."
+    }
+  },
   "addons": [],
   "hashtags": "#OnThisDay #WW2"
 }

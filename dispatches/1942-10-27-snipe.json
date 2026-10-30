@@ -90,6 +90,19 @@
   "focusY": 50,
   "short": "Outpost Snipe",
   "photoCredit": "A 6 pounder anti tank gun in the Western Desert, 29 October 1942. IWM E 18802, Crown copyright expired, public domain.",
+  "declassified": {
+    "fact": "Victor Turner was not the first in his family to win the Victoria Cross. His older brother, Second Lieutenant Alexander Turner, earned one in September 1915 leading a bombing attack near Vermelles, France, and died of his wounds three days later. Victor lived until 1972 and spent his later years in the royal household's Yeomen of the Guard.",
+    "sources": [
+      {
+        "title": "Alexander Buller Turner, Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Alexander_Buller_Turner"
+      },
+      {
+        "title": "Victor Buller Turner VC CVO, Victoria Cross Online",
+        "url": "https://victoriacrossonline.co.uk/victor-buller-turner-vc-cvo/"
+      }
+    ]
+  },
   "addons": [],
   "hashtags": "#OnThisDay #WW2"
 }

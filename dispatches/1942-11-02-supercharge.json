@@ -140,6 +140,25 @@
   "photoUrl": "https://commons.wikimedia.org/wiki/File:88_mm_Flak_36_near_El_Aqqaqir_1942.jpg",
   "photoNote": "Soldiers look over a knocked out German 88 mm gun in its pit near Tel el Aqqaqir, November 1942. Australian War Memorial 040977, public domain, via Wikimedia Commons. Small file (640 px wide), so it may look soft on the card. Backups if a sharper one is wanted: IWM E 18869, a Priest self propelled gun of 1st Armoured Division readied on 2 November 1942; IWM E 18839, an 88 mm shell hole in a Churchill tank turret, 2 November 1942. No photo of Currie or of the 2 November barrage was found; the well known barrage photo (IWM E 18465) is from 23 October and was used for No. 013's story.",
   "photoCredit": "Soldiers look over a knocked out German 88 mm gun near Tel el Aqqaqir, El Alamein, November 1942. Australian War Memorial 040977, public domain.",
+  "declassified": {
+    "fact": "Brigadier John Currie survived the charge but not the war. On 26 June 1944, commanding the 4th Armoured Brigade in Normandy, he was killed by shellfire while walking to his tank, just after giving orders to his officers. He was 46.",
+    "sources": [
+      {
+        "title": "John Cecil Currie, British Normandy Memorial",
+        "url": "https://www.britishnormandymemorial.org/normandy-story/john-cecil-currie/"
+      },
+      {
+        "title": "Brigadier John Cecil Currie, Commonwealth War Graves Commission",
+        "url": "https://www.cwgc.org/find-war-dead/casualty/2956014"
+      }
+    ],
+    "photo": {
+      "file": "photos/1942-11-02-supercharge-2.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Priest_of_1st_Armoured_Division_in_North_Africa,_2_November_1942_(E_18869).jpg",
+      "credit": "A Priest self propelled gun of 1st Armoured Division, 2 November 1942. IWM E 18869, Crown copyright expired, public domain.",
+      "caption": "A Priest self propelled gun of the British 1st Armoured Division on the day Supercharge was launched."
+    }
+  },
   "videoPhotos": [
     {
       "page": "https://commons.wikimedia.org/wiki/File:88_mm_Flak_36_near_El_Aqqaqir_1942.jpg",

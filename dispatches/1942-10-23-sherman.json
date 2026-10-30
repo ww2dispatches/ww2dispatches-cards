@@ -83,6 +83,19 @@
   },
   "short": "Sherman",
   "photoCredit": "Sherman II tanks of the Queen's Bays moving up to the Alamein line, 24 October 1942. IWM E 18380, Crown copyright expired, public domain.",
+  "declassified": {
+    "fact": "These Shermans almost never made it. On 16 July 1942, the U-boat U-161 sank the freighter Fairport, carrying a deck load of tanks bound for the British in Egypt, though all 123 people aboard were rescued. The Americans sent replacements on the Seatrain Texas, which sailed alone, without escort, around Africa to Suez.",
+    "sources": [
+      {
+        "title": "Seatrain Texas to the Rescue, Defense Media Network",
+        "url": "https://www.defensemedianetwork.com/stories/seatrain-texas-to-the-rescue/"
+      },
+      {
+        "title": "Fairport, Ships hit by U-boats, uboat.net",
+        "url": "https://www.uboat.net/allies/merchants/1939.html"
+      }
+    ]
+  },
   "addons": [],
   "hashtags": "#OnThisDay #WW2"
 }

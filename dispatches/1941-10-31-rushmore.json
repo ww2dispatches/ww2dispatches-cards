@@ -140,6 +140,21 @@
   },
   "short": "Mount Rushmore",
   "photoCredit": "Mount Rushmore under scaffolding, July 1939. Public Roads Administration 30-N-40-2431 (NARA 135804230), public domain.",
+  "declassified": {
+    "fact": "Thomas Jefferson was first carved on the other side of Washington. The granite there proved too weak to hold a face, so crews blasted the unfinished head off the mountain and started Jefferson again on Washington's left. The Jefferson visitors see today is the second try.",
+    "sources": [
+      {
+        "title": "Mount Rushmore timeline, American Experience, PBS",
+        "url": "https://www.pbs.org/wgbh/americanexperience/features/timeline/rushmore"
+      }
+    ],
+    "photo": {
+      "file": "stories/img/rushmore_1942.jpg",
+      "page": "https://catalog.archives.gov/id/5604049",
+      "credit": "Mount Rushmore Memorial practically finished, June 1942. South Dakota Projects, NARA 5604049, U.S. government work, public domain.",
+      "caption": "The memorial in June 1942, eight months after carving stopped, seen past a viewing telescope with Jefferson in his second spot beside Washington."
+    }
+  },
   "addons": [
     "Would you have ridden down that mountain in a bosun chair?"
   ],
