@@ -333,8 +333,10 @@
     // Flash: the rare card that spans all four series, posted only on commemorative days
     const fAll = CAT.filter(c => c.flash), fH = fAll.filter(c => H.has(c.id)).length;
     const fN = ((ST && ST.flashNext) || [])[0];
-    const fNext = fN ? `<span class="fxnext">Next: ${esc(fN.name)} · ${esc(untilText(fN.at).toLowerCase())}</span>` : '';
-    $('seriesTiles').insertAdjacentHTML('beforeend', `<button class="tile flash" id="tileFlash" ${fAll.length || fN ? '' : 'disabled'}><i></i><b>Flash</b>${fAll.length ? `<span>${fH} of ${fAll.length}</span>` : ''}${fNext || (fAll.length ? '' : '<span>None posted yet</span>')}<div class="bar"><i style="width:${fAll.length ? fH / fAll.length * 100 : 0}%"></i></div></button>`);
+    // One short line, the same height as every other tile (30 Oct 2026): the count once Flash cards exist,
+    // otherwise when the next one arrives. The full calendar is one tap away.
+    const fLine = fAll.length ? `${fH} of ${fAll.length}` : fN ? untilText(fN.at) : 'None posted yet';
+    $('seriesTiles').insertAdjacentHTML('beforeend', `<button class="tile flash" id="tileFlash" ${fAll.length || fN ? '' : 'disabled'}><i></i><b>Flash</b><span class="fxnext">${esc(fLine)}</span><div class="bar"><i style="width:${fAll.length ? fH / fAll.length * 100 : 0}%"></i></div></button>`);
     $('seriesTiles').insertAdjacentHTML('beforeend', '<button class="tile wide" id="tileSets" style="border-color:var(--navy)"><b>Sets</b><span>Monthly files and collections</span></button>');
     $('tileSets').onclick = renderSets;
     $('tileFlash').onclick = flashCalendar;
