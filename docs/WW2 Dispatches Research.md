@@ -43,10 +43,10 @@ When a Flash date falls in the batch week:
 * **Never change the art.** The flash/ art is the card. Framing (focusX, focusY, zoom) is set in the prepared record and Friday keeps it.
 
 ## Securing the film
-Finding film is not enough; a film that can't be fetched on Thursday night is a Story Card by default. So the research run gets the film into the repos.
+Finding film is not enough; a film that can't be fetched before Thursday night needs Brian's hand. So the research run gets the film into the repos whenever it can.
 * Use the film sources and the avoid list in the Videos doc. Read the Signal Corps shot cards to find the right moments.
 * **U.S. government film on the NARA catalog:** download the MP4 into the videos repo's `footage/` (the whole reel if it is a reasonable size, otherwise the stretch that holds the shots), play enough of it to confirm it shows what the record says, note whether it carries its own period sound, and commit and push it.
-* **Wikimedia Commons film** (the workspace can't download it): file a Schedule Board task for Brian with the exact file link and the 480p transcode link, due **Thursday 5:00 p.m. Mountain**, with a push reminder, asking him to save it into the WW2 Dispatches\Source Film folder. Mark the day's film `needs brian`. On Thursday the video run looks in Source Film first; if the file isn't there, the day becomes a Story Card for the same event.
+* **Wikimedia Commons film** (the workspace can't download it): file a Schedule Board task for Brian with the exact file link and the 480p transcode link, due **Thursday 5:00 p.m. Mountain**, with a push reminder, asking him to save it into the WW2 Dispatches\Source Film folder. Mark the day's film `needs brian`. The Thursday cloud run can't reach Source Film on Brian's computer, so it **never builds a Story Card for a `needs brian` day**: it leaves that noon slot open and files a task for Brian to have Claude cut the Living Card in the Project with his computer linked (Videos doc, "Video count").
 * **Universal Newsreel:** confirm its public domain status on the NARA record before relying on it.
 * Record everything in the dispatch JSON's `film` block (below). Also note promising film that wasn't used, in the slate's alternates, for later weeks.
 
@@ -116,3 +116,4 @@ File Schedule Board tasks and push reminders per the Brief's "Shared run procedu
 * 29 Oct 2026: Research also writes a `declassified` block on every dispatch (one unused verified fact with its source, and optionally one extra archival photo), for the Declass gold reward. Friday never uses it in captions. The 30 existing dispatches are being back filled once.
 * 30 Oct 2026: Sixteen Flash dates (six monthly dates added from 2027: Stalingrad, Remagen, the Doolittle Raid, Trinity, Leyte Gulf, Tarawa).
 * 30 Oct 2026 (night): Research now also picks and researches the weekly newsletter story (a full article each Sunday) and writes `newsletter/story-NNN.json` with facts, quotes, and photos (Newsletter doc).
+* 31 Oct 2026: A `needs brian` film day no longer falls back to a Story Card. Brian always prefers a Living Card when real film exists, and a Story Card built only to be replaced wastes usage. The Thursday run leaves that noon slot open and files a task; Claude cuts the Living Card in the Project with Brian's computer linked (Videos doc).
