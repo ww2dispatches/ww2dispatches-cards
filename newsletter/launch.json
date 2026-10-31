@@ -1,20 +1,23 @@
 {
-  "what": "The Weekly Dispatch launch announcement (Newsletter doc, Launch announcement). Not a dispatch, no number.",
+  "what": "The Weekly Dispatch launch announcement and issue 001's share post (Newsletter doc). Not a dispatch, no number.",
   "time": "2026-11-01 10:00",
   "issue": 1,
   "cards": {
-    "x": "cards/newsletter-launch-x-teal.jpg",
-    "instagram": "cards/newsletter-launch-instagram-teal.jpg",
-    "renderer": "renderer/launch.js",
+    "x": "cards/newsletter-001-share-x.jpg",
+    "instagram": "cards/newsletter-001-share-instagram.jpg",
+    "renderer": "renderer/newsletter_share.js 1 (renamed to -share- so GitHub serves the fresh file)",
     "version": ""
   },
-  "caption": "The Weekly Dispatch is live.\n\nEvery Sunday, one free email tells one remarkable story from that week in the war, in full, with archival photos and the sources behind it.\n\nIssue 001 is out today: the last stand of Taffy 3, six little carriers and seven escorts against the biggest battleship ever built, off Samar on 25 October 1944.\n\nSign up free at the link in our bio.\n\n#WW2",
-  "threads": "The Weekly Dispatch is live.\n\nEvery Sunday, one free email tells one remarkable story from that week in the war, in full, with archival photos and sources.\n\nIssue 001 is out today: the last stand of Taffy 3, six little carriers and seven escorts against the biggest battleship ever built.\n\nSign up free at the link in our bio.",
+  "caption": "The Weekly Dispatch is live, and issue 001 is out this morning.\n\nOn 25 October 1944, six little carriers and seven escorts woke up to find the biggest battleship ever built bearing down on them. This is the story of what they did next.\n\nEvery Sunday, one free email tells one remarkable story from that week in the war, in full, with archival photos and the sources behind it.\n\nRead it free: https://ww2dispatches.substack.com/p/the-last-stand-of-taffy-3\n\n#WW2",
+  "threads": "The Weekly Dispatch is live, and issue 001 is out this morning.\n\nOn 25 October 1944, six little carriers and seven escorts woke up to find the biggest battleship ever built bearing down on them. This is what they did next.\n\nOne free story from the war, every Sunday. Read it free: https://ww2dispatches.substack.com/p/the-last-stand-of-taffy-3",
   "buffer": {
     "x": "6ae54b07eaa24d6f9a4db6eb",
     "instagram": "6ae54b0db84259308bb13161",
     "threads": "6ae54b111891472093aaf39b",
     "facebook": "6ae54b14406ab8a01892ef68"
   },
-  "alt": "WW2 Dispatches newsletter announcement. Archival photo of American troops wading ashore from a landing craft on D Day, under the headline The Weekly Dispatch, with a teal Now Live stamp. One story from the war, told in full. Every Sunday. Sign up free at the link in our bio."
+  "alt": "WW2 Dispatches newsletter card, The Weekly Dispatch, Issue 001, with a teal New Issue stamp. Archival photo of USS Gambier Bay and her escorts making smoke off Samar, 25 October 1944, under the headline The Last Stand of Taffy 3. One story from the war, told in full. Free every Sunday. Read it free at ww2dispatches.substack.com.",
+  "link": "https://ww2dispatches.substack.com/p/the-last-stand-of-taffy-3",
+  "facebook": "The Weekly Dispatch is live, and issue 001 is out this morning.\n\nOn 25 October 1944, six little carriers and seven escorts woke up to find the biggest battleship ever built bearing down on them. This is the story of what they did next.\n\nEvery Sunday, one free email tells one remarkable story from that week in the war, in full, with archival photos and the sources behind it.\n\nRead it free: https://ww2dispatches.substack.com/p/the-last-stand-of-taffy-3",
+  "instagram": "The Weekly Dispatch is live, and issue 001 is out this morning.\n\nOn 25 October 1944, six little carriers and seven escorts woke up to find the biggest battleship ever built bearing down on them. This is the story of what they did next.\n\nEvery Sunday, one free email tells one remarkable story from that week in the war, in full, with archival photos and the sources behind it.\n\nRead it free at the link in our bio.\n\n#WW2"
 }
