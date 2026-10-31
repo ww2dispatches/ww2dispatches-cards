@@ -170,7 +170,7 @@ Requirements, verified 16 Oct 2026 (recheck before applying; platforms change th
 
 Perks, chosen so a subscription never becomes a second job. Each one reuses work the weekly runs already do:
 * **Early access:** subscribers see next week's dispatches the weekend before they post.
-* **The weekly roundup** (the newsletter issue) as a subscriber post.
+* **The weekly story** (the newsletter issue) as a subscriber post.
 * **Topic vote:** once a month, subscribers pick a date or event for a future dispatch.
 * **Blueprint notes:** one extra engineering detail per week that didn't fit the caption.
 

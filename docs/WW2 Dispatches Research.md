@@ -59,7 +59,7 @@ Finding film is not enough; a film that can't be fetched on Thursday night is a 
 ## The fact sheet
 Every dispatch JSON gets a `facts` block: six to twelve verified facts in plain sentences, each with its source or sources, covering what happened, when, where, who, why it mattered, one vivid human or technical detail, and what came next. Dates, numbers, names, and ranks are exact.
 
-**Everything written later draws only from the fact sheet:** the card caption and its Threads version (Friday), the Living Card caption, the Story Card script, and the vertical hook line (Thursday), and the newsletter's short version. No run adds a fact the sheet doesn't hold. If a later run needs a fact that isn't there, it writes around it rather than looking it up and adding it.
+**Everything written later draws only from the fact sheet:** the card caption and its Threads version (Friday), the Living Card caption, the Story Card script, and the vertical hook line (Thursday). (The newsletter article has its own, larger fact sheet; see "The newsletter story" below.) No run adds a fact the sheet doesn't hold. If a later run needs a fact that isn't there, it writes around it rather than looking it up and adding it.
 
 ## Numbers are locked on Wednesday
 * Work out the next dispatch number (one more than the highest `num` in `dispatches/`) and assign all 14 in date and time order: Sunday 8 a.m., Sunday 5 p.m., Monday 8 a.m., and so on.
@@ -82,6 +82,9 @@ Research leaves to Thursday: the `video` block (footage, focus, hook, source not
 
 The `film` block: `status` (`secured`, `needs brian`, or `none`), `record` (for example "111-ADC-2654 (NARA 16458)"), `url`, `file` (the path in the videos repo once downloaded), `sound` (true or false), `shot_notes` (which stretch holds the shots and what they show), `license`, and `date_note` when the film is from a different day than the event.
 
+## The newsletter story
+Each week research also picks and researches the story for that Friday's newsletter issue, which covers the **current** Sunday through Saturday (the week the run falls in, not the coming one). Follow the Newsletter doc's "Picking the story" and "The story file": choose the most compelling event from those seven dates (posted or not, never an earlier issue's subject), verify 20 to 40 facts and every quote against strong sources, download three to five public domain photos to `newsletter/img/`, and write `newsletter/story-NNN.json`. Commit and push it with the batch. The summary to Brian names the story and its alternates in one line, and he may swap it the same way as a slot, by telling Claude before Thursday 7 p.m.
+
 ## The slate
 `slate/YYYY-MM-DD.md` in the cards repo, named for the Sunday the week starts, committed and pushed with the dispatch JSON. One section per day, with for each slot: the number, time, series, event and year, planned kind (Living Card or Story Card), film record and sound, photo status, and anything open (a Brian task, an unconfirmed license). Under each 8 a.m. slot, **one or two alternates**: the event, the film record if known, and one line on why it is the backup. Alternates are lightly checked (event, date, likely film and photo), not fully verified; whichever is chosen gets full verification.
 
@@ -102,7 +105,7 @@ Research owns the dispatch bank in `status.md` (aim for 5 to 7 verified evergree
 No run ever changes a locked number, a verified fact, or another run's fields to recover.
 
 ## Tasks, reminders, and the summary
-File Schedule Board tasks and push reminders per the Brief's "Shared run procedures" for every film or photo Brian needs to supply and for anything uncertain. The summary to Brian (SendUserMessage) is the slate in short form: each day's 8 a.m. event, planned kind, film source and sound, and its alternates; each 5 p.m. card's format and subject; which playbook items shaped the picks; what Brian needs to supply and by when; and the line "Swap any day by telling me here before Thursday 7 p.m."
+File Schedule Board tasks and push reminders per the Brief's "Shared run procedures" for every film or photo Brian needs to supply and for anything uncertain. The summary to Brian (SendUserMessage) is the slate in short form: each day's 8 a.m. event, planned kind, film source and sound, and its alternates; each 5 p.m. card's format and subject; which playbook items shaped the picks; what Brian needs to supply and by when; the newsletter story picked for Sunday's issue with its alternates; and the line "Swap any day, or the newsletter story, by telling me here before Thursday 7 p.m."
 
 ## Changelog
 * 24 Oct 2026: Doc created. Research moved out of the Thursday cards run into its own Wednesday run, picking for film first, locking the numbers, writing one fact sheet per dispatch, and securing film and photos before the build runs. The week's order became Tuesday analytics, Wednesday research, Thursday videos, Friday cards.
@@ -112,3 +115,4 @@ File Schedule Board tasks and push reminders per the Brief's "Shared run procedu
 * 27 Oct 2026: The Intercept master list upkeep was briefly written into this run, then moved the same day to the Tuesday analytics run (Analytics doc), so it only ever works from posted cards. Research does nothing for Intercept.
 * 29 Oct 2026: Research also writes a `declassified` block on every dispatch (one unused verified fact with its source, and optionally one extra archival photo), for the Declass gold reward. Friday never uses it in captions. The 30 existing dispatches are being back filled once.
 * 30 Oct 2026: Sixteen Flash dates (six monthly dates added from 2027: Stalingrad, Remagen, the Doolittle Raid, Trinity, Leyte Gulf, Tarawa).
+* 30 Oct 2026 (night): Research now also picks and researches the weekly newsletter story (a full article each Sunday) and writes `newsletter/story-NNN.json` with facts, quotes, and photos (Newsletter doc).
