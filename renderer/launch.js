@@ -13,7 +13,7 @@ function drawLaunch(photoUrl, W, H) {
     await Promise.all(["700 10px Oswald","600 10px Oswald",'400 10px "Special Elite"'].map(f=>document.fonts.load(f)));
     const img = await new Promise((ok,bad)=>{const i=new Image(); i.onload=()=>ok(i); i.onerror=bad; i.src=photoUrl;});
     const cv=document.createElement("canvas"); cv.width=W; cv.height=H;
-    const ctx=cv.getContext("2d"), u=W/100, m=4*u, RED="#B04A3E";
+    const ctx=cv.getContext("2d"), u=W/100, m=4*u, TEAL="#2B6A6C";
     ctx.fillStyle=PAPER; ctx.fillRect(0,0,W,H);
     if(!grainTile) grainTile=makeGrain();
     ctx.fillStyle=ctx.createPattern(grainTile,"repeat"); ctx.fillRect(0,0,W,H);
@@ -23,7 +23,7 @@ function drawLaunch(photoUrl, W, H) {
     ctx.textBaseline="alphabetic"; ctx.textAlign="left"; ctx.fillStyle=INK;
     ctx.font=`700 ${4.2*u}px Oswald`; ctx.letterSpacing=`${.02*4.2*u}px`; ctx.fillText("WW2 DISPATCHES",m,8*u);
     ctx.fillStyle=NAVY; ctx.font=`400 ${2.5*u}px "Special Elite"`; ctx.letterSpacing="0px"; ctx.fillText("Incoming dispatch · Priority",m,11.6*u);
-    stamp(ctx,u,"NOW LIVE",RED,W-m,8*u);
+    stamp(ctx,u,"NOW LIVE",TEAL,W-m,8*u);
     // photo window
     const top=15*u, bottomBand=(H/W>1.1?33:30)*u, ph=H-top-bottomBand, pw=W-2*m;
     const s=Math.max(pw/img.naturalWidth,ph/img.naturalHeight), dw=img.naturalWidth*s, dh=img.naturalHeight*s;
@@ -34,7 +34,7 @@ function drawLaunch(photoUrl, W, H) {
     let y=top+ph+8*u;
     ctx.fillStyle=INK; ctx.font=`700 ${7*u}px Oswald`; ctx.letterSpacing=`${.01*7*u}px`; ctx.fillText("THE WEEKLY DISPATCH",m,y);
     y+=5*u; ctx.fillStyle=NAVY; ctx.font=`400 ${2.9*u}px "Special Elite"`; ctx.fillText("One story from the war, told in full. Every Sunday.",m,y);
-    y+=6*u; ctx.fillStyle=RED; ctx.font=`600 ${3.6*u}px Oswald`; ctx.letterSpacing=`${.04*3.6*u}px`; ctx.fillText("SIGN UP FREE AT THE LINK IN OUR BIO",m,y);
+    y+=6*u; ctx.fillStyle=TEAL; ctx.font=`600 ${3.6*u}px Oswald`; ctx.letterSpacing=`${.04*3.6*u}px`; ctx.fillText("SIGN UP FREE AT THE LINK IN OUR BIO",m,y);
     ctx.textAlign="right"; ctx.fillStyle=NAVY; ctx.font=`400 ${2.3*u}px "Special Elite"`; ctx.letterSpacing="0px";
     ctx.fillText("@ww2dispatches",W-m,H-(H/W>1.1?3:6)*u);
     return cv.toDataURL("image/jpeg",.9);
