@@ -166,13 +166,17 @@
         <li><h3>Check it</h3>
           <p>Scroll through once: every photo shows with its caption, and the links open. Optional: use Preview, then Send test email, to see it in your inbox.</p>
           <p id="postflags" class="small"></p></li>
+        <li><h3>Tags and subscribe buttons</h3>
+          <p>Tap Continue. Under Add tags, pick these two (create them the first time): <b id="tagsline"></b></p>
+          <p class="small">When Substack offers to add subscribe buttons, tap Add subscribe buttons. If one lands inside the story, drag it down to just before the links list at the end. Keep the title exactly as above, since the Sunday share post links to it.</p></li>
         <li><h3>Schedule it</h3>
-          <p>Tap Continue. Audience <b>Everyone</b>, send by email on. Choose <b>Schedule</b> and set <b id="sendwhen"></b>, 7:00 a.m. Check the time zone shows Mountain, then confirm.</p></li>
+          <p>Audience <b>Everyone</b>, send by email on. Choose <b>Schedule</b> and set <b id="sendwhen"></b>, 7:00 a.m. Check the time zone shows Mountain, then confirm.</p></li>
         <li><h3>Mark it scheduled</h3>
           <p>Tap below, then mark the "Paste and schedule the weekly newsletter" task done on the Schedule Board.</p>
           <div class="row"><button class="ok" id="markscheduled">Mark scheduled</button><button id="undo" hidden>Undo</button></div></li>
       </ol>
     </div>
+    {{SHARE}}
   </section>
 </main>
 <div class="toast" id="toast"></div>
@@ -190,6 +194,7 @@ const sendDate = new Date(D.send + 'T12:00:00');
 const sendWhen = sendDate.toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric'});
 $('#sendline').textContent = 'Sends ' + sendWhen + ', 7 a.m. Mountain';
 $('#sendwhen').textContent = sendWhen;
+$('#tagsline').textContent = (D.tags && D.tags.length) ? D.tags.join(' and ') : 'the series (Battle Lines, Home Front, Blueprint, or Statecraft) and the theater';
 $('#c-subject').textContent = D.subject;
 $('#c-preview').textContent = D.preview;
 $('#built').textContent = D.built;

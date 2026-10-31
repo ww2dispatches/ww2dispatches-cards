@@ -211,11 +211,34 @@ def build(src, send):
         "copyHtml": "".join(copy_html),
         "copyText": "\n\n".join(copy_text).strip(),
     }
+    share_html, share = "", None
+    sp = os.path.join(ROOT, "newsletter", f"share-{num:03d}.json")
+    if os.path.exists(sp):
+        share = json.load(open(sp, encoding="utf-8"))
+        data["tags"] = share.get("tags", [])
+        card = os.path.join(ROOT, share.get("cards", {}).get("instagram", ""))
+        thumb = ""
+        if os.path.isfile(card):
+            from PIL import Image
+            import io, base64
+            im = Image.open(card).convert("RGB"); im.thumbnail((540, 675))
+            buf = io.BytesIO(); im.save(buf, "JPEG", quality=82)
+            thumb = f'<img src="data:image/jpeg;base64,{base64.b64encode(buf.getvalue()).decode()}" alt="Share card" style="max-width:100%;border:1px solid #ccc;margin:8px 0">'
+        else:
+            problems.append("share card missing: " + share.get("cards", {}).get("instagram", "(none)"))
+        when = share.get("time", "")
+        share_html = ('<div class="box"><h2>Sunday share post</h2>'
+                      f'<p>Scheduled in Buffer for {html.escape(when)} on X, Instagram, Threads, and Facebook. Nothing to do; it links to the issue once it is out.</p>'
+                      f'{thumb}<p class="small"><b>Caption (X):</b><br>{html.escape(share.get("caption", "")).replace(chr(10), "<br>")}</p>'
+                      '<p class="small">If you decide not to send this issue, delete the Sunday share posts in Buffer, or tell Claude.</p></div>')
+    elif num > 1:  # issue 001 was announced by the Monday launch post instead
+        problems.append(f"no newsletter/share-{num:03d}.json yet (the Sunday share post)")
     tpl = open(os.path.join(ROOT, "renderer", "newsletter_page.html"), encoding="utf-8").read()
     page = (tpl.replace("{{ISSUE_ID}}", data["issueId"])
                .replace("{{SUBJECT}}", html.escape(subject))
                .replace("{{PREVIEW}}", html.escape(preview_line))
                .replace("{{REVIEW}}", "".join(review))
+               .replace("{{SHARE}}", share_html)
                .replace("{{DATA}}", json.dumps(data).replace("</", "<\\/")))
     out = os.path.join(ROOT, "newsletter", "review-page.html")
     open(out, "w", encoding="utf-8").write(page)
