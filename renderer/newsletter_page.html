@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Weekly Dispatch</title>
+<style>
+  :root{--night:#120F0C;--panel:#1D1915;--line:#3A332B;--ink:#EEE7DA;--dim:#B3A893;--red:#B04A3E;--green:#5E8A4A;--gold:#B8862B;--paper:#FBF8F2;--pink:#2A1C18}
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--night);color:var(--ink);font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  a{color:#E39A8F}
+  header{padding:16px 16px 8px;max-width:760px;margin:0 auto}
+  .kicker{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
+  h1{font-size:22px;margin:4px 0 6px;line-height:1.25}
+  .meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:14px;color:var(--dim)}
+  .pill{display:inline-block;padding:3px 10px;border-radius:99px;font-size:13px;font-weight:600;background:#3A332B;color:var(--ink)}
+  .pill.approved{background:var(--green);color:#fff}
+  .pill.scheduled{background:var(--gold);color:#120F0C}
+  .pill.changes{background:var(--red);color:#fff}
+  nav{position:sticky;top:0;z-index:5;background:var(--night);border-bottom:1px solid var(--line)}
+  nav .in{max-width:760px;margin:0 auto;display:flex}
+  nav a{flex:1;text-align:center;padding:12px 4px;color:var(--dim);text-decoration:none;font-weight:600;border-bottom:3px solid transparent}
+  nav a.on{color:var(--ink);border-bottom-color:var(--red)}
+  main{max-width:760px;margin:0 auto;padding:16px}
+  .view{display:none}.view.on{display:block}
+  .box{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:0 0 16px}
+  .box h2{font-size:17px;margin:0 0 8px}
+  .box p{margin:6px 0}
+  .warn{border-color:#7A4A2A;background:#241A13}
+  .note-banner{border-color:var(--red);background:var(--pink)}
+  button,.btn{font:inherit;font-weight:600;border:0;border-radius:8px;padding:10px 14px;cursor:pointer;background:#3A332B;color:var(--ink);text-decoration:none;display:inline-block}
+  button.primary,.btn.primary{background:var(--red);color:#fff}
+  button.ok{background:var(--green);color:#fff}
+  button:disabled{opacity:.5;cursor:default}
+  .mini{font-size:13px;padding:5px 10px;border-radius:6px;background:#E9E2D4;color:#2A241C;text-decoration:none;font-weight:600;border:0;cursor:pointer}
+  .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+  .copyline{display:flex;gap:8px;align-items:flex-start;background:#15120F;border:1px solid var(--line);border-radius:8px;padding:10px;margin:6px 0}
+  .copyline .txt{flex:1;font-size:15px}
+  .copyline button{flex:none;padding:6px 12px;font-size:14px}
+  .toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:var(--ink);color:var(--night);padding:10px 16px;border-radius:8px;font-weight:600;opacity:0;transition:opacity .2s;pointer-events:none;z-index:9;max-width:90vw;text-align:center}
+  .toast.show{opacity:1}
+  /* The issue, as it reads */
+  .paper{background:var(--paper);color:#1E1A15;border-radius:10px;padding:8px 18px 18px;font-family:Georgia,"Times New Roman",serif;font-size:17px;line-height:1.6}
+  .paper a{color:#9A3B30}
+  .paper h2{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:20px;line-height:1.3;margin:10px 0 4px}
+  .paper figure{margin:12px 0 6px}
+  .paper img{width:100%;height:auto;display:block;border-radius:4px}
+  .paper figcaption{display:flex;gap:6px;margin-top:6px;font-family:-apple-system,Segoe UI,Roboto,sans-serif}
+  .sec{border-top:1px solid #DDD3C2;padding:6px 0 4px;position:relative}
+  .sec:first-child{border-top:0}
+  .sechead{display:flex;justify-content:flex-end;margin-top:6px}
+  .notebtn{font-family:-apple-system,Segoe UI,Roboto,sans-serif;font-size:13px;padding:5px 10px;background:#EFE6D6;color:#7A2F27;border:1px solid #D9C8AE;border-radius:6px}
+  .sec.has-notes{background:#FFF1E8;margin:0 -18px;padding-left:18px;padding-right:18px}
+  .secnotes{font-family:-apple-system,Segoe UI,Roboto,sans-serif;font-size:14px;background:#F6E3D6;border-left:4px solid var(--red);padding:6px 10px;margin:6px 0;border-radius:4px;color:#3A2A20}
+  p.flag{background:#FCE9B8;border-radius:4px;padding:2px 6px}
+  .subjectbox{font-family:-apple-system,Segoe UI,Roboto,sans-serif;background:#EFE6D6;border-radius:8px;padding:10px 12px;margin:12px 0 4px;font-size:15px}
+  .subjectbox b{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#7A6A55}
+  /* Notes */
+  textarea,select{width:100%;font:inherit;background:#15120F;color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:10px}
+  textarea{min-height:110px;resize:vertical}
+  label{display:block;font-size:14px;color:var(--dim);margin:10px 0 4px}
+  .note{border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin:8px 0;background:#15120F}
+  .note .where{font-size:13px;color:var(--dim)}
+  .note .body{white-space:pre-wrap;margin:4px 0 8px}
+  .note .reply{font-size:14px;color:#BFD3B0;border-left:3px solid var(--green);padding-left:8px;margin:4px 0 8px;white-space:pre-wrap}
+  .note.done{opacity:.7}
+  .steps{counter-reset:s;list-style:none;padding:0;margin:0}
+  .steps>li{counter-increment:s;position:relative;padding:0 0 16px 40px}
+  .steps>li:before{content:counter(s);position:absolute;left:0;top:0;width:28px;height:28px;border-radius:50%;background:var(--red);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:14px}
+  .steps h3{margin:2px 0 4px;font-size:16px}
+  .steps p{margin:4px 0;color:#DCD3C2}
+  .small{font-size:13px;color:var(--dim)}
+  .offline{display:none}
+  [hidden]{display:none!important}
+</style>
+</head>
+<body>
+<header>
+  <div class="kicker">WW2 Dispatches · The Weekly Dispatch</div>
+  <h1>Issue {{ISSUE_ID}} review</h1>
+  <div class="meta"><span class="pill" id="status">Loading</span><span id="sendline"></span></div>
+</header>
+<nav><div class="in">
+  <a href="#review" data-v="review">Review</a>
+  <a href="#notes" data-v="notes">Notes <span id="notecount"></span></a>
+  <a href="#post" data-v="post">Post it</a>
+</div></nav>
+<main>
+  <div class="box note-banner offline" id="offline"><p><b>Notes and approval can't be saved right now.</b> Open this page on claude.ai while signed in. The copy buttons still work.</p></div>
+
+  <!-- REVIEW -->
+  <section class="view" id="v-review">
+    <div class="box">
+      <h2>How to review</h2>
+      <p>Read the issue below, as it will read in the email. Tap <b>+ Note</b> on any part to ask for a change. When it's right, tap <b>Approve</b> at the bottom, then go to <b>Post it</b>.</p>
+      <p class="small">The email banner and the footer (links, Ko-fi, reply line) are added by Substack, so they aren't shown here.</p>
+    </div>
+    <div class="box warn" id="flagbox" hidden>
+      <h2>Links to check</h2>
+      <div id="flaglist"></div>
+    </div>
+    <div class="paper">
+      <div class="subjectbox"><b>Subject (the post title)</b>{{SUBJECT}}</div>
+      <div class="subjectbox"><b>Preview line (the subtitle)</b>{{PREVIEW}}</div>
+      {{REVIEW}}
+    </div>
+    <div class="box" style="margin-top:16px">
+      <h2>Your call</h2>
+      <p id="approvetext">Happy with it? Approve, then follow the steps in Post it.</p>
+      <div class="row">
+        <button class="ok" id="approve">Approve issue</button>
+        <a class="btn" href="#notes">Request changes</a>
+      </div>
+    </div>
+    <p class="small">Built <span id="built"></span> from <a id="ghlink" href="#">the issue file on GitHub</a>.</p>
+  </section>
+
+  <!-- NOTES -->
+  <section class="view" id="v-notes">
+    <div class="box">
+      <h2>Leave a note</h2>
+      <label for="notesec">Which part</label>
+      <select id="notesec"></select>
+      <label for="notetext">What to change</label>
+      <textarea id="notetext" placeholder="For example: swap the hook in the intro, or cut the last sentence of No. 011."></textarea>
+      <div class="row" style="margin-top:10px"><button class="primary" id="savenote">Save note</button></div>
+    </div>
+    <div class="box">
+      <h2>Getting changes made</h2>
+      <p>Once your notes are saved, tell Claude in the WW2 Dispatches project:</p>
+      <div class="copyline"><span class="txt">Apply my newsletter notes.</span><button data-copy="Apply my newsletter notes.">Copy</button></div>
+      <p>Claude edits the issue, rebuilds this page, and marks each note done with what changed. Reload this page after it says it's done.</p>
+    </div>
+    <div class="box">
+      <h2>Open notes</h2>
+      <div id="opennotes"><p class="small">None yet.</p></div>
+    </div>
+    <div class="box">
+      <h2>Done</h2>
+      <div id="donenotes"><p class="small">None yet.</p></div>
+    </div>
+  </section>
+
+  <!-- POST -->
+  <section class="view" id="v-post">
+    <div class="box warn" id="notapproved"><p><b>Not approved yet.</b> You can still copy everything, but approve it in Review first so the record is right.</p></div>
+    <div class="box">
+      <h2>Paste and schedule (about 10 minutes)</h2>
+      <ol class="steps">
+        <li><h3>Start a new post in Substack</h3>
+          <p>Best on the desktop PC. Sign in to Substack, then:</p>
+          <div class="row"><a class="btn primary" href="https://ww2dispatches.substack.com/publish/post">New post in Substack</a></div>
+          <p class="small">If that link opens the dashboard instead, tap Create new, then Text post.</p></li>
+        <li><h3>Title</h3>
+          <p>Paste this into the Title box. It becomes the email subject.</p>
+          <div class="copyline"><span class="txt" id="c-subject"></span><button data-copyid="c-subject">Copy</button></div></li>
+        <li><h3>Subtitle</h3>
+          <p>Paste this into the Subtitle box. It's the preview line people see in their inbox.</p>
+          <div class="copyline"><span class="txt" id="c-preview"></span><button data-copyid="c-preview">Copy</button></div></li>
+        <li><h3>Body</h3>
+          <p>Click into the body and paste. The headings, links, and card images come with it.</p>
+          <div class="row"><button class="primary" id="copybody">Copy issue body</button><button id="copyplain">Copy as plain text</button></div>
+          <p class="small">If the cards don't show up after pasting, delete the empty spots and add each card with Substack's image button. Use Copy card or Open full card under each card in Review.</p></li>
+        <li><h3>Check it</h3>
+          <p>Scroll through once: every dispatch has its card, and the X links open. Optional: use Preview, then Send test email, to see it in your inbox.</p>
+          <p id="postflags" class="small"></p></li>
+        <li><h3>Schedule it</h3>
+          <p>Tap Continue. Audience <b>Everyone</b>, send by email on. Choose <b>Schedule</b> and set <b id="sendwhen"></b>, 8:00 a.m. Check the time zone shows Mountain, then confirm.</p></li>
+        <li><h3>Mark it scheduled</h3>
+          <p>Tap below, then mark the "Paste and schedule the weekly newsletter" task done on the Schedule Board.</p>
+          <div class="row"><button class="ok" id="markscheduled">Mark scheduled</button><button id="undo" hidden>Undo</button></div></li>
+      </ol>
+    </div>
+  </section>
+</main>
+<div class="toast" id="toast"></div>
+<script id="data" type="application/json">{{DATA}}</script>
+<script>
+const D = JSON.parse(document.getElementById('data').textContent);
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+let db = null, issueData = {}, notes = [];
+
+function toast(msg){ const t=$('#toast'); t.textContent=msg; t.classList.add('show'); clearTimeout(toast.t); toast.t=setTimeout(()=>t.classList.remove('show'),1800); }
+
+/* ---------- static fill ---------- */
+const sendDate = new Date(D.send + 'T12:00:00');
+const sendWhen = sendDate.toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric'});
+$('#sendline').textContent = 'Sends ' + sendWhen + ', 8 a.m. Mountain';
+$('#sendwhen').textContent = sendWhen;
+$('#c-subject').textContent = D.subject;
+$('#c-preview').textContent = D.preview;
+$('#built').textContent = D.built;
+$('#ghlink').href = D.github;
+const sel = $('#notesec');
+sel.innerHTML = '<option value="general">Whole issue / general</option><option value="subject">Subject or preview line</option>' +
+  D.sections.map(s => `<option value="${esc(s.id)}">${esc(s.label)}</option>`).join('');
+const labelOf = id => id==='general' ? 'Whole issue' : id==='subject' ? 'Subject or preview line' : ((D.sections.find(s=>s.id===id)||{}).label || id);
+
+if (D.flags.length){
+  $('#flagbox').hidden = false;
+  $('#flaglist').innerHTML = D.flags.map(f => `<p>No. ${esc(f.num)} (${esc(f.title)}) hasn't posted yet, so its link goes to the X profile, not the post. That's fine to send: on Sunday morning it sits near the top of the profile.</p>`).join('');
+  $('#postflags').textContent = 'Expected: ' + D.flags.map(f=>'No. '+f.num).join(' and ') + ' link to the X profile because they post after this was built.';
+}
+
+/* ---------- tabs ---------- */
+function show(){
+  const v = ['review','notes','post'].includes(location.hash.slice(1)) ? location.hash.slice(1) : 'review';
+  document.querySelectorAll('.view').forEach(e => e.classList.toggle('on', e.id === 'v-' + v));
+  document.querySelectorAll('nav a').forEach(a => a.classList.toggle('on', a.dataset.v === v));
+}
+addEventListener('hashchange', () => { show(); scrollTo(0,0); });
+show();
+
+/* ---------- copying ---------- */
+async function copyText(t){
+  try { await navigator.clipboard.writeText(t); toast('Copied'); return; } catch(e){}
+  const ta=document.createElement('textarea'); ta.value=t; ta.style.position='fixed'; ta.style.opacity='0'; document.body.appendChild(ta); ta.select();
+  try { document.execCommand('copy'); toast('Copied'); } catch(e){ toast('Copy failed, select the text instead'); }
+  ta.remove();
+}
+async function copyRich(h, t){
+  try {
+    await navigator.clipboard.write([new ClipboardItem({'text/html': new Blob([h],{type:'text/html'}), 'text/plain': new Blob([t],{type:'text/plain'})})]);
+    toast('Issue body copied'); return;
+  } catch(e){}
+  const div=document.createElement('div'); div.contentEditable='true'; div.style.cssText='position:fixed;left:-9999px;top:0;width:600px';
+  div.innerHTML=h; document.body.appendChild(div);
+  const r=document.createRange(); r.selectNodeContents(div); const s=getSelection(); s.removeAllRanges(); s.addRange(r);
+  try { document.execCommand('copy'); toast('Issue body copied'); } catch(e){ toast('Copy failed'); }
+  s.removeAllRanges(); div.remove();
+}
+document.addEventListener('click', async e => {
+  const b = e.target.closest('button'); if (!b) return;
+  if (b.dataset.copy) copyText(b.dataset.copy);
+  if (b.dataset.copyid) copyText(document.getElementById(b.dataset.copyid).textContent);
+  if (b.hasAttribute('data-copyimg')){
+    const img = b.closest('figure').querySelector('img');
+    try {
+      const c=document.createElement('canvas'); c.width=img.naturalWidth; c.height=img.naturalHeight; c.getContext('2d').drawImage(img,0,0);
+      const blob = await new Promise(r=>c.toBlob(r,'image/png'));
+      await navigator.clipboard.write([new ClipboardItem({'image/png':blob})]); toast('Card copied');
+    } catch(err){ toast('Image copy not allowed here, use Open full card'); }
+  }
+  if (b.classList.contains('notebtn')){ sel.value = b.dataset.sec; location.hash = '#notes'; setTimeout(()=>$('#notetext').focus(),50); }
+});
+$('#copybody').onclick = () => copyRich(D.copyHtml, D.copyText);
+$('#copyplain').onclick = () => copyText(D.copyText);
+
+/* ---------- status ---------- */
+const STATUS = {review:['In review',''], changes:['Changes requested','changes'], approved:['Approved','approved'], scheduled:['Scheduled','scheduled']};
+function renderStatus(){
+  const open = notes.filter(n=>!n.done).length;
+  let st = issueData.status || 'review';
+  if (st === 'review' && open) st = 'changes';
+  const [label, cls] = STATUS[st] || STATUS.review;
+  const p = $('#status'); p.textContent = label; p.className = 'pill ' + cls;
+  $('#notapproved').hidden = (issueData.status === 'approved' || issueData.status === 'scheduled');
+  const ap = $('#approve');
+  if (issueData.status === 'approved' || issueData.status === 'scheduled'){
+    ap.textContent = 'Approved ✓'; ap.disabled = true;
+    $('#approvetext').textContent = 'Approved' + (issueData.approvedAt ? ' ' + new Date(issueData.approvedAt).toLocaleString('en-US',{weekday:'short',hour:'numeric',minute:'2-digit'}) : '') + '. Next: Post it.';
+  } else {
+    ap.textContent = open ? `Approve anyway (${open} open note${open>1?'s':''})` : 'Approve issue'; ap.disabled = !db;
+    $('#approvetext').textContent = open ? 'You have open notes. Approve anyway, or ask Claude to apply them first (see Notes).' : 'Happy with it? Approve, then follow the steps in Post it.';
+  }
+  const ms = $('#markscheduled');
+  ms.disabled = !db || issueData.status === 'scheduled';
+  ms.textContent = issueData.status === 'scheduled' ? 'Scheduled ✓' : 'Mark scheduled';
+  $('#undo').hidden = !(issueData.status === 'approved' || issueData.status === 'scheduled');
+  $('#notecount').textContent = open ? `(${open})` : '';
+}
+async function setStatus(status){
+  if (!db) return;
+  const now = new Date().toISOString();
+  const next = Object.assign({}, issueData, {issue: D.issueId, status, updatedAt: now});
+  if (status === 'approved') next.approvedAt = now;
+  if (status === 'scheduled'){ next.scheduledAt = now; if (!next.approvedAt) next.approvedAt = now; }
+  if (status === 'review'){ delete next.approvedAt; delete next.scheduledAt; }
+  try { await db.doc('issues/' + D.issueId).set(next); toast(status === 'review' ? 'Back in review' : 'Saved'); }
+  catch(e){ toast('Could not save: ' + (e.code || 'error')); }
+}
+$('#approve').onclick = () => setStatus('approved');
+$('#markscheduled').onclick = () => setStatus('scheduled');
+$('#undo').onclick = () => setStatus(issueData.status === 'scheduled' ? 'approved' : 'review');
+
+/* ---------- notes ---------- */
+function renderNotes(){
+  const open = notes.filter(n=>!n.done).sort((a,b)=>a.at<b.at?-1:1);
+  const done = notes.filter(n=>n.done).sort((a,b)=>a.at>b.at?-1:1);
+  const card = n => `<div class="note ${n.done?'done':''}"><div class="where">${esc(labelOf(n.section))} · ${new Date(n.at).toLocaleString('en-US',{weekday:'short',hour:'numeric',minute:'2-digit'})}</div>
+    <div class="body">${esc(n.text)}</div>${n.reply?`<div class="reply">Claude: ${esc(n.reply)}</div>`:''}
+    <div class="row">${n.done?`<button class="mini" data-reopen="${esc(n.id)}">Reopen</button>`:`<button class="mini" data-done="${esc(n.id)}">Mark done</button>`}<button class="mini" data-del="${esc(n.id)}">Delete</button></div></div>`;
+  $('#opennotes').innerHTML = open.length ? open.map(card).join('') : '<p class="small">None. Tap + Note on any part of the issue, or use the form above.</p>';
+  $('#donenotes').innerHTML = done.length ? done.map(card).join('') : '<p class="small">None yet.</p>';
+  document.querySelectorAll('.sec').forEach(s => {
+    s.querySelectorAll('.secnotes').forEach(x=>x.remove());
+    const mine = open.filter(n=>n.section===s.id);
+    s.classList.toggle('has-notes', mine.length>0);
+    const head = s.querySelector('.sechead');
+    mine.forEach(n => head.insertAdjacentHTML('afterend', `<div class="secnotes">Your note: ${esc(n.text)}</div>`));
+  });
+  renderStatus();
+}
+document.addEventListener('click', async e => {
+  const b = e.target.closest('button'); if (!b || !db) return;
+  try {
+    if (b.dataset.done) await db.doc('notes/' + b.dataset.done).update({done:true, doneAt:new Date().toISOString()});
+    if (b.dataset.reopen) await db.doc('notes/' + b.dataset.reopen).update({done:false});
+    if (b.dataset.del){ await db.doc('notes/' + b.dataset.del).delete(); toast('Note deleted'); }
+  } catch(err){ toast('Could not save: ' + (err.code || 'error')); }
+});
+$('#savenote').onclick = async () => {
+  const text = $('#notetext').value.trim();
+  if (!text){ toast('Write the note first'); return; }
+  if (!db){ toast('Notes need you signed in on claude.ai'); return; }
+  const b = $('#savenote'); b.disabled = true;
+  try {
+    await db.collection('notes').add({issue: D.issueId, section: sel.value, label: labelOf(sel.value), text, at: new Date().toISOString(), done: false});
+    $('#notetext').value = ''; toast('Note saved');
+  } catch(err){ toast('Could not save: ' + (err.code || 'error')); }
+  b.disabled = false;
+};
+
+/* ---------- db ---------- */
+renderStatus();
+(async () => {
+  try { db = window.claude && claude.use ? await claude.use('db') : null; } catch(e){ db = null; }
+  if (!db){ $('#offline').classList.remove('offline'); $('#status').textContent = 'Not saved'; renderStatus(); return; }
+  const timer = setTimeout(()=>{ $('#offline').classList.remove('offline'); }, 10000);
+  db.doc('issues/' + D.issueId).onSnapshot(s => { if(!s.metadata.fromCache) clearTimeout(timer); $('#offline').classList.add('offline'); issueData = s.exists ? Object.assign({}, s.data()) : {}; renderStatus(); },
+    e => { clearTimeout(timer); });
+  db.collection('notes').where('issue','==',D.issueId).onSnapshot(q => { notes = q.docs.map(d => Object.assign({id:d.id}, d.data())); renderNotes(); },
+    e => { toast('Notes could not load'); });
+})();
+</script>
+</body>
+</html>
