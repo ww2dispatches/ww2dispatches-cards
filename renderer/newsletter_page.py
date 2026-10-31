@@ -83,6 +83,9 @@ def parse(md):
         m = re.match(r"^!\[([^\]]*)\]\(([^)]+)\)$", s)
         if m:
             flush(); blocks.append(("img", (m.group(1), m.group(2)))); continue
+        # An italic line right after a photo is its caption.
+        if not para and blocks and blocks[-1][0] == "img" and re.fullmatch(r"\*[^*].*[^*]\*", s):
+            blocks.append(("cap", s[1:-1])); continue
         para.append(s)
     flush()
     return subject, preview_line, blocks
@@ -95,8 +98,13 @@ def sections(blocks):
         if kind == "hr":
             if cur["blocks"]:
                 secs.append(cur)
-            cur = {"id": f"s{len(secs)}", "label": "", "blocks": []}
+            cur = {"id": f"s{len(secs)}", "label": "", "blocks": [], "hr": True}
             continue
+        # In an article each subhead starts a new review section (a story
+        # dispatch's heading follows its card image, so that stays together).
+        if kind == "h2" and any(k in ("h2", "p") for k, _ in cur["blocks"]):
+            secs.append(cur)
+            cur = {"id": "", "label": "", "blocks": []}
         if kind == "h2" and not cur["label"]:
             cur["label"] = val
         cur["blocks"].append((kind, val))
@@ -142,7 +150,7 @@ def build(src, send):
     # Review HTML (embedded previews) and copy HTML (raw GitHub image URLs).
     review, copy_html, copy_text, link_flags = [], [], [], []
     for i, s in enumerate(secs):
-        if i:
+        if i and s.get("hr"):
             copy_html.append("<hr>")
             copy_text.append("")
         inner = []
@@ -151,12 +159,16 @@ def build(src, send):
                 inner.append(f"<h2>{inline(val)}</h2>")
                 copy_html.append(f"<h2>{inline(val)}</h2>")
                 copy_text.append(val)
+            elif kind == "cap":
+                inner.append(f'<p class="cap">{inline(val)}</p>')
+                copy_html.append(f"<p><em>{inline(val)}</em></p>")
+                copy_text.append(re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r"\1 (\2)", val))
             elif kind == "img":
                 alt, url = val
                 inner.append(
                     f'<figure><img src="{preview(url)}" alt="{html.escape(alt)}" data-raw="{html.escape(url)}">'
-                    f'<figcaption><button class="mini" data-copyimg>Copy card</button> '
-                    f'<a class="mini" href="{html.escape(url)}">Open full card</a></figcaption></figure>')
+                    f'<figcaption><button class="mini" data-copyimg>Copy image</button> '
+                    f'<a class="mini" href="{html.escape(url)}">Open full image</a></figcaption></figure>')
                 copy_html.append(f'<p><img src="{html.escape(url)}" alt="{html.escape(alt)}"></p>')
             else:
                 profile = re.findall(r"\]\((https://x\.com/ww2dispatches/?)\)", val)

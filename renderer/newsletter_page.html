@@ -46,6 +46,8 @@
   .paper figure{margin:12px 0 6px}
   .paper img{width:100%;height:auto;display:block;border-radius:4px}
   .paper figcaption{display:flex;gap:6px;margin-top:6px;font-family:-apple-system,Segoe UI,Roboto,sans-serif}
+  .paper p.cap{font-size:14px;line-height:1.45;color:#6B5E4C;font-style:italic;margin:2px 0 14px}
+  .paper h2{font-family:Georgia,"Times New Roman",serif;font-weight:700;letter-spacing:.01em}
   .sec{border-top:1px solid #DDD3C2;padding:6px 0 4px;position:relative}
   .sec:first-child{border-top:0}
   .sechead{display:flex;justify-content:flex-end;margin-top:6px}
@@ -158,11 +160,11 @@
           <p>Paste this into the Subtitle box. It's the preview line people see in their inbox.</p>
           <div class="copyline"><span class="txt" id="c-preview"></span><button data-copyid="c-preview">Copy</button></div></li>
         <li><h3>Body</h3>
-          <p>Click into the body and paste. The headings, links, and card images come with it.</p>
+          <p>Click into the body and paste. The headings, photos, captions, and links come with it.</p>
           <div class="row"><button class="primary" id="copybody">Copy issue body</button><button id="copyplain">Copy as plain text</button></div>
-          <p class="small">If the cards don't show up after pasting, delete the empty spots and add each card with Substack's image button. Use Copy card or Open full card under each card in Review.</p></li>
+          <p class="small">If the photos don't show up after pasting, delete the empty spots and add each photo with Substack's image button. Use Copy image or Open full image under each photo in Review.</p></li>
         <li><h3>Check it</h3>
-          <p>Scroll through once: every dispatch has its card, and the X links open. Optional: use Preview, then Send test email, to see it in your inbox.</p>
+          <p>Scroll through once: every photo shows with its caption, and the links open. Optional: use Preview, then Send test email, to see it in your inbox.</p>
           <p id="postflags" class="small"></p></li>
         <li><h3>Schedule it</h3>
           <p>Tap Continue. Audience <b>Everyone</b>, send by email on. Choose <b>Schedule</b> and set <b id="sendwhen"></b>, 8:00 a.m. Check the time zone shows Mountain, then confirm.</p></li>
@@ -239,8 +241,8 @@ document.addEventListener('click', async e => {
     try {
       const c=document.createElement('canvas'); c.width=img.naturalWidth; c.height=img.naturalHeight; c.getContext('2d').drawImage(img,0,0);
       const blob = await new Promise(r=>c.toBlob(r,'image/png'));
-      await navigator.clipboard.write([new ClipboardItem({'image/png':blob})]); toast('Card copied');
-    } catch(err){ toast('Image copy not allowed here, use Open full card'); }
+      await navigator.clipboard.write([new ClipboardItem({'image/png':blob})]); toast('Image copied');
+    } catch(err){ toast('Image copy not allowed here, use Open full image'); }
   }
   if (b.classList.contains('notebtn')){ sel.value = b.dataset.sec; location.hash = '#notes'; setTimeout(()=>$('#notetext').focus(),50); }
 });
