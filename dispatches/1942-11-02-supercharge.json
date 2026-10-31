@@ -183,10 +183,10 @@
   ],
   "kind": "living",
   "film": {
-    "status": "needs brian",
+    "status": "secured",
     "record": "Desert Victory (1943), British Ministry of Information, Army Film and Photographic Unit footage",
     "url": "https://commons.wikimedia.org/wiki/File:Desert_Victory_(1943).webm",
-    "file": "Source Film folder (the 480p copy used for Nos. 021 and 024; also No. 037)",
+    "file": "footage/1942-11-02-supercharge.mp4 in the videos repo (cut 31 Oct 2026 from the Source Film copy)",
     "sound": true,
     "shot_notes": "Use the film's Supercharge section, the final night attack and the dawn armored fighting before the breakout: infantry moving up in the dark behind the barrage, tanks advancing at first light, antitank guns in action. Do not reuse No. 013's barrage clip (29:21 to 29:24 and 27:07 to 27:20), No. 021's Kidney Ridge shots (35:15 to 35:50) or No. 024's air attack shots (40:41 to 41:39), and keep the breakthrough, prisoner and pursuit shots for No. 037 on Wednesday. Leave out staged close ups, captured enemy newsreel, and any stretch with music or narration under it. Keep the film's own battle sound if a clean stretch exists.",
     "license": "Crown copyright expired, public domain (PD UKGov on Wikimedia Commons)",
@@ -214,37 +214,9 @@
       "Italy"
     ],
     "video": {
-      "kind": "Story Card",
-      "opening": "a machine",
-      "sound": "narration"
-    }
-  },
-  "story": {
-    "video": "videos/dispatch-033-story-am_onyx.mp4",
-    "script": "stories/1942-11-02-supercharge.json",
-    "voice": "am_onyx",
-    "speed": 0.95,
-    "time": "12:00",
-    "buffer": {
-      "x": "6ae3fe5aa83a7fb63c8d095e",
-      "instagram": "6ae3fe5da83a7fb63c8d099e",
-      "threads": "6ae3fe604b8768bfb2d57178",
-      "facebook": "6ae3fe63ba1ca51fd3ee55c1",
-      "youtube": "6ae3fe684b8768bfb2d5748a",
-      "tiktok": "6ae3fe6ba83a7fb63c8d0bf3"
-    },
-    "kit": {
-      "caption": "One tank brigade was sent straight at the German guns. Its commander was told Montgomery had accepted the possibility of 100% casualties.\n\nOn 2 November 1942, the British Eighth Army launched Operation Supercharge, its final push to break Rommel's line at El Alamein. On 4 November the British broke through.\n\nDispatch No. 033, the full story. Narration is AI generated; the photos are real archival images.",
-      "youtubeTitle": "94 Tanks Against the 88s: Operation Supercharge, 2 November 1942 #shorts",
-      "youtubeDescription": "One tank brigade was sent straight at the German guns. Its commander was told Montgomery had accepted the possibility of 100% casualties.\n\nOn 2 November 1942, the British Eighth Army launched Operation Supercharge, its final push to break Rommel's line at El Alamein. On 4 November the British broke through.\n\nNarration is AI generated; the photos are real archival images.\n\nPhotos: knocked out German 88 mm gun near Tel el Aqqaqir, November 1942, Australian War Memorial 040977; a Priest self propelled gun of 1st Armoured Division, 2 November 1942, IWM E 18869; an 88 mm shell hole in a Churchill tank turret, 2 November 1942, IWM E 18839; burnt out vehicles on the Alamein battlefield, 3 November 1942, IWM E 18900. All public domain.\nSources: Operation Supercharge, NZHistory (Ministry for Culture and Heritage); Second Battle of El Alamein, Wikipedia (citing Playfair and Barr); John Cecil Currie, Wikipedia.\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\nSupport WW2 Dispatches: ko-fi.com/ww2dispatches\n\n#Shorts #WW2 #OnThisDay #History",
-      "tiktokCaption": "94 tanks charged the German guns at sunrise. Fewer than 25 were still running. Operation Supercharge, El Alamein, 2 Nov 1942. Narration is AI generated. #WW2 #OnThisDay #History #ElAlamein",
-      "schedule": [
-        "12:00 p.m. Mountain, Mon 2 Nov 2026, all six channels in Buffer",
-        "X and Facebook end #OTD #WW2 #OnThisDay #History #ElAlamein; Instagram ends #WW2 #OnThisDay #History #ElAlamein; Threads has no tags (History Threads topic)",
-        "Flagged AI generated on X, Instagram, TikTok, and YouTube; Facebook as a Reel; Instagram and TikTok cover at 1.5 s"
-      ],
-      "thumbnail": "Opens on the barrel and shell holed turret of a Churchill tank, 2 November 1942.",
-      "scheduled": "Buffer, all six channels, noon 2 Nov"
+      "kind": "Living Card",
+      "opening": "combat or firing",
+      "sound": "period sound"
     }
   },
   "focusX": 50,
@@ -273,6 +245,61 @@
     "x": "6ae54ad91891472093aae111",
     "instagram": "6ae54ae0b84259308bb11cd6",
     "threads": "6ae54ae41891472093aae2ab",
-    "facebook": "6ae54ae8406ab8a01892dd1d"
+    "facebook": "6ae54ae8406ab8a01892dd1d",
+    "x_film": "6ae3fe5aa83a7fb63c8d095e",
+    "instagram_reel": "6ae3fe5da83a7fb63c8d099e",
+    "threads_film": "6ae3fe604b8768bfb2d57178",
+    "facebook_film": "6ae3fe63ba1ca51fd3ee55c1",
+    "youtube": "6ae3fe684b8768bfb2d5748a",
+    "tiktok": "6ae3fe6ba83a7fb63c8d0bf3"
+  },
+  "video": {
+    "footage": "footage/1942-11-02-supercharge.mp4",
+    "focusX": 50,
+    "focusY": 50,
+    "sound": true,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Desert_Victory_(1943).webm",
+    "note": "Desert Victory (1943), British Ministry of Information documentary with film shot by the Army Film and Photographic Unit; Crown copyright expired, public domain (PD-UKGov on Wikimedia Commons; 480p copy from Brian's Source Film folder). From the film's Supercharge section, which its narrator introduces at 42:21 ('the blow we meant to be mortal was struck'); the narrator is silent from 42:45 to 44:07. Clip uses 43:57.10 to 44:04.50 (infantry running through a huge shell burst), 43:11.50 to 43:17.20 (infantry pinned down as shells land, with a close shot of a Bren gunner), and 43:48.10 to 43:51.10 (a vehicle in the dust of a shell burst). The film does not date each shot, so the caption says it shows the final days of the battle. Left out: the tank shot at 42:46 to 42:55 (the film's score plays under it) and the shots of German vehicles at 43:25 to 43:30 and 43:44 (possible captured enemy newsreel). Sound: the film's own soundtrack under these shots (shell bursts and gunfire; no narration by speech recognition, no music by spectrogram), cut with the picture and normalized to -16 LUFS.",
+    "hook": "94 tanks went in. Fewer than 25 still ran."
+  },
+  "kit": {
+    "file": "kits/dispatch-033-kit.md",
+    "filmCaption": "Film from the final days of the battle of El Alamein, November 1942, with the film's own sound: infantry running through shellfire, men pinned down as the shells land, and a vehicle lost in the dust. On 2 November, Operation Supercharge sent the 9th Armoured Brigade straight at the German and Italian antitank guns. It began with 94 tanks. Fewer than 25 were still running at the end. From the 1943 British documentary Desert Victory.",
+    "youtubeTitle": "94 Tanks Against the 88s: Operation Supercharge, 2 November 1942 #shorts",
+    "youtubeDescription": "At 1:05 a.m. on 2 November 1942, the British Eighth Army launched Operation Supercharge, its final push to break Rommel's line at El Alamein. The infantry moved off in the dark behind a creeping barrage from about 360 guns. At 6:15 a.m. the 9th Armoured Brigade charged straight at a screen of German and Italian antitank guns, with the rising sun behind the tanks lighting them up for the enemy gunners. Its commander, Brigadier John Currie, had been told Montgomery accepted the possibility of losing 100% casualties to make the break. The brigade began with 94 tanks; fewer than 25 were still running at the end, and 230 of its men were killed, wounded or missing. It did not open the gap, but Rommel's counterattack that day failed, and the Afrika Korps lost about 70 tanks.\n\nThis is real film from the final days of the battle, shot by the British Army Film and Photographic Unit and used in the 1943 documentary Desert Victory: infantry under shellfire and the dust of the fighting. The film does not date each shot, so these may not be from 2 November itself. The sound is the original soundtrack of the source film.\n\nFilm: Desert Victory (1943), British Ministry of Information, Army Film and Photographic Unit footage. Crown copyright expired, public domain (Wikimedia Commons).\nSources: Operation Supercharge, NZHistory (Ministry for Culture and Heritage); Second Battle of El Alamein, Wikipedia (citing Playfair and Barr); John Cecil Currie, Wikipedia.\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\nSupport WW2 Dispatches: ko-fi.com/ww2dispatches\n\n#Shorts #WW2 #OnThisDay #History",
+    "tiktokCaption": "94 tanks charged the German guns at sunrise. Fewer than 25 were still running. Real film from El Alamein, November 1942. #WW2 #OnThisDay #History #ElAlamein",
+    "thumbnailCheck": "Pass: first frame is British infantry running across open desert in front of a wall of shell smoke; by 2 seconds a huge burst erupts behind them as they run. Opening tagged \"combat or firing\" from the frames at 0.3 and 2 seconds.",
+    "videoTime": "12:00 America/Denver",
+    "scheduled": "Buffer, all six channels, noon 2 Nov"
+  },
+  "replacedStory": {
+    "video": "videos/dispatch-033-story-am_onyx.mp4",
+    "script": "stories/1942-11-02-supercharge.json",
+    "voice": "am_onyx",
+    "speed": 0.95,
+    "time": "12:00",
+    "buffer": {
+      "x": "6ae3fe5aa83a7fb63c8d095e",
+      "instagram": "6ae3fe5da83a7fb63c8d099e",
+      "threads": "6ae3fe604b8768bfb2d57178",
+      "facebook": "6ae3fe63ba1ca51fd3ee55c1",
+      "youtube": "6ae3fe684b8768bfb2d5748a",
+      "tiktok": "6ae3fe6ba83a7fb63c8d0bf3"
+    },
+    "kit": {
+      "caption": "One tank brigade was sent straight at the German guns. Its commander was told Montgomery had accepted the possibility of 100% casualties.\n\nOn 2 November 1942, the British Eighth Army launched Operation Supercharge, its final push to break Rommel's line at El Alamein. On 4 November the British broke through.\n\nDispatch No. 033, the full story. Narration is AI generated; the photos are real archival images.",
+      "youtubeTitle": "94 Tanks Against the 88s: Operation Supercharge, 2 November 1942 #shorts",
+      "youtubeDescription": "One tank brigade was sent straight at the German guns. Its commander was told Montgomery had accepted the possibility of 100% casualties.\n\nOn 2 November 1942, the British Eighth Army launched Operation Supercharge, its final push to break Rommel's line at El Alamein. On 4 November the British broke through.\n\nNarration is AI generated; the photos are real archival images.\n\nPhotos: knocked out German 88 mm gun near Tel el Aqqaqir, November 1942, Australian War Memorial 040977; a Priest self propelled gun of 1st Armoured Division, 2 November 1942, IWM E 18869; an 88 mm shell hole in a Churchill tank turret, 2 November 1942, IWM E 18839; burnt out vehicles on the Alamein battlefield, 3 November 1942, IWM E 18900. All public domain.\nSources: Operation Supercharge, NZHistory (Ministry for Culture and Heritage); Second Battle of El Alamein, Wikipedia (citing Playfair and Barr); John Cecil Currie, Wikipedia.\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\nSupport WW2 Dispatches: ko-fi.com/ww2dispatches\n\n#Shorts #WW2 #OnThisDay #History",
+      "tiktokCaption": "94 tanks charged the German guns at sunrise. Fewer than 25 were still running. Operation Supercharge, El Alamein, 2 Nov 1942. Narration is AI generated. #WW2 #OnThisDay #History #ElAlamein",
+      "schedule": [
+        "12:00 p.m. Mountain, Mon 2 Nov 2026, all six channels in Buffer",
+        "X and Facebook end #OTD #WW2 #OnThisDay #History #ElAlamein; Instagram ends #WW2 #OnThisDay #History #ElAlamein; Threads has no tags (History Threads topic)",
+        "Flagged AI generated on X, Instagram, TikTok, and YouTube; Facebook as a Reel; Instagram and TikTok cover at 1.5 s"
+      ],
+      "thumbnail": "Opens on the barrel and shell holed turret of a Churchill tank, 2 November 1942.",
+      "scheduled": "Buffer, all six channels, noon 2 Nov"
+    },
+    "replacedOn": "2026-10-31: replaced by a Living Card at Brian's request (he prefers Living Cards over Story Cards); the noon Buffer posts were switched to the film",
+    "buffer_note": "These Buffer posts were edited in place on 31 Oct 2026 to carry the Living Card; the ids now live under buffer as the film keys."
   }
 }

@@ -173,10 +173,10 @@
   ],
   "kind": "living",
   "film": {
-    "status": "needs brian",
+    "status": "secured",
     "record": "Desert Victory (1943), British Ministry of Information, Army Film and Photographic Unit footage",
     "url": "https://commons.wikimedia.org/wiki/File:Desert_Victory_(1943).webm",
-    "file": "Source Film folder (the 480p copy used for Nos. 021 and 024)",
+    "file": "footage/1942-11-04-alamein-retreat.mp4 in the videos repo (cut 31 Oct 2026 from the Source Film copy)",
     "sound": true,
     "shot_notes": "Use the film's end of battle section, after the air attack sequence used for No. 024 (about 41:40 on): the breakthrough, the advance and the Axis surrender and retreat. Look for genuine combat camera shots of tanks and infantry moving west and of prisoners; leave out staged close ups, captured enemy newsreel, and any stretch with music or narration under it. Keep the film's own battle sound if a clean stretch exists. The workspace could not download it (upload.wikimedia.org returned 429).",
     "license": "Crown copyright expired, public domain (PD UKGov on Wikimedia Commons)",
@@ -207,37 +207,9 @@
       "South Africa"
     ],
     "video": {
-      "kind": "Story Card",
-      "opening": "a machine",
-      "sound": "narration"
-    }
-  },
-  "story": {
-    "video": "videos/dispatch-037-story-am_onyx.mp4",
-    "script": "stories/1942-11-04-alamein-retreat.json",
-    "voice": "am_onyx",
-    "speed": 0.95,
-    "time": "12:00",
-    "buffer": {
-      "x": "6ae3fe93ba1ca51fd3ee6a3b",
-      "instagram": "6ae3fe966385db216a1dadf6",
-      "threads": "6ae3fe99a83a7fb63c8d1ba3",
-      "facebook": "6ae3fe9cba1ca51fd3ee6c95",
-      "youtube": "6ae3fea1ba1ca51fd3ee6d0e",
-      "tiktok": "6ae3fea456e01b9763806e9a"
-    },
-    "kit": {
-      "caption": "Hitler's order: yield not a yard of ground, and show the troops no other road than that to victory or death.\n\nOn 4 November 1942 the British broke through at El Alamein, and Rommel ordered a general retreat without waiting for Hitler's reply.\n\nDispatch No. 037, the full story. Narration is AI generated; the photos are real archival images.",
-      "youtubeTitle": "Victory or Death? Rommel Retreats from El Alamein, 4 November 1942 #shorts",
-      "youtubeDescription": "Hitler's order: yield not a yard of ground, and show the troops no other road than that to victory or death.\n\nOn 4 November 1942 the British broke through at El Alamein, and Rommel ordered a general retreat without waiting for Hitler's reply.\n\nNarration is AI generated; the photos are real archival images.\n\nPhotos: Churchill III tanks of Kingforce, 1st Armoured Division, 5 November 1942, IWM E 18991; Montgomery in his Grant command tank, 5 November 1942, IWM E 18980; Montgomery with the captured General von Thoma, 4 November 1942, No 1 Army Film and Photographic Unit, IWM E 19130. All public domain.\nSources: Erwin Rommel on his Defeat in Africa, German History in Documents and Images; The End of the Beginning, National Army Museum; The Bright Gleam of Victory, International Churchill Society; Second Battle of El Alamein, Wikipedia.\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\nSupport WW2 Dispatches: ko-fi.com/ww2dispatches\n\n#Shorts #WW2 #OnThisDay #History",
-      "tiktokCaption": "Hitler said victory or death. Rommel chose retreat. El Alamein, 4 Nov 1942. Narration is AI generated. #WW2 #OnThisDay #History #ElAlamein #Rommel",
-      "schedule": [
-        "12:00 p.m. Mountain, Wed 4 Nov 2026, all six channels in Buffer",
-        "X and Facebook end #OTD #WW2 #OnThisDay #History #ElAlamein; Instagram ends #WW2 #OnThisDay #History #ElAlamein; Threads has no tags (History Threads topic)",
-        "Flagged AI generated on X, Instagram, TikTok, and YouTube; Facebook as a Reel; Instagram and TikTok cover at 1.5 s"
-      ],
-      "thumbnail": "Opens on Churchill tanks of Kingforce kicking up dust across the desert, 5 November 1942.",
-      "scheduled": "Buffer, all six channels, noon 4 Nov"
+      "kind": "Living Card",
+      "opening": "combat or firing",
+      "sound": "period sound"
     }
   },
   "focusX": 62,
@@ -263,6 +235,61 @@
     "x": "6ae54af5b84259308bb1233c",
     "instagram": "6ae54afbceb491e585d03ea8",
     "threads": "6ae54affb84259308bb12835",
-    "facebook": "6ae54b041891472093aaf018"
+    "facebook": "6ae54b041891472093aaf018",
+    "x_film": "6ae3fe93ba1ca51fd3ee6a3b",
+    "instagram_reel": "6ae3fe966385db216a1dadf6",
+    "threads_film": "6ae3fe99a83a7fb63c8d1ba3",
+    "facebook_film": "6ae3fe9cba1ca51fd3ee6c95",
+    "youtube": "6ae3fea1ba1ca51fd3ee6d0e",
+    "tiktok": "6ae3fea456e01b9763806e9a"
+  },
+  "video": {
+    "footage": "footage/1942-11-04-alamein-retreat.mp4",
+    "focusX": 50,
+    "focusY": 50,
+    "sound": true,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Desert_Victory_(1943).webm",
+    "note": "Desert Victory (1943), British Ministry of Information documentary with film shot by the Army Film and Photographic Unit; Crown copyright expired, public domain (PD-UKGov on Wikimedia Commons; 480p copy from Brian's Source Film folder). From the film's breakthrough section, which its narrator introduces at 44:37 to 44:53 ('the entire weight of their armour was in readiness... it sailed through the gap. Its purpose was simple, to destroy Rommel's armour'); the narrator is silent from 44:53 to 48:12, apart from a shouted 'Fire!' in the scene at 47:24, which is left out. Clip uses 45:49.65 to 45:53.25 (Grant tanks charging through smoke as a shell bursts), 47:18.80 to 47:21.35 (a tank racing forward in its own dust), 45:44.45 to 45:45.55 (two Shermans crossing the desert), 45:20.60 to 45:26.00 (a line of tanks rolling forward) and 45:40.20 to 45:41.90 (a tank passing toward the horizon). The film does not date each shot, so the caption says it shows the end of the battle. Left out: the shots of German officers with binoculars at 45:28 to 45:33 (captured enemy newsreel) and any shot under the narration. Sound: the film's own soundtrack under these shots (engines, shell bursts and gunfire; no narration by speech recognition, no music by spectrogram), cut with the picture and normalized to -16 LUFS.",
+    "hook": "Rommel retreated without waiting for Hitler."
+  },
+  "kit": {
+    "file": "kits/dispatch-037-kit.md",
+    "filmCaption": "Film from the end of the battle of El Alamein, November 1942, with the film's own sound: British tanks charging through the smoke and rolling west across the desert. On 4 November the British broke through, and Rommel ordered a general retreat without waiting for Hitler's reply. From the 1943 British documentary Desert Victory.",
+    "youtubeTitle": "Victory or Death? Rommel Retreats from El Alamein, 4 November 1942 #shorts",
+    "youtubeDescription": "On 3 November 1942, Hitler ordered Rommel to stand fast at El Alamein, to yield not a yard of ground, and to show his troops no other road than that to victory or death. Rommel wrote that the order demanded the impossible, but he obeyed and ordered his men to hold. On the morning of 4 November the British broke through, and by early afternoon, Rommel wrote, enemy armour had burst a 19 kilometre hole in his front. By his own figures the Germans were down to 36 tanks, from 249 at the start of the battle. That same day the Afrika Korps commander, General Wilhelm Ritter von Thoma, was captured. At 17:30 Rommel ordered a general retreat without waiting for Hitler's reply. Alamein was the first great British land victory over the German army.\n\nThis is real film from the end of the battle, shot by the British Army Film and Photographic Unit and used in the 1943 documentary Desert Victory: British tanks pushing through the smoke and heading west. The film does not date each shot, so these may not be from 4 November itself. The sound is the original soundtrack of the source film.\n\nFilm: Desert Victory (1943), British Ministry of Information, Army Film and Photographic Unit footage. Crown copyright expired, public domain (Wikimedia Commons).\nSources: Erwin Rommel on his Defeat in Africa, German History in Documents and Images; The End of the Beginning, National Army Museum; The Bright Gleam of Victory, International Churchill Society; Second Battle of El Alamein, Wikipedia.\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\nSupport WW2 Dispatches: ko-fi.com/ww2dispatches\n\n#Shorts #WW2 #OnThisDay #History",
+    "tiktokCaption": "Hitler said victory or death. Rommel chose retreat. Real film from El Alamein, November 1942. #WW2 #OnThisDay #History #ElAlamein #Rommel",
+    "thumbnailCheck": "Pass: first frame is a Grant tank and a second tank charging out of the smoke toward the camera; at 2 seconds a burst throws debris across the frame as they come on. Opening tagged \"combat or firing\" from the frames at 0.3 and 2 seconds.",
+    "videoTime": "12:00 America/Denver",
+    "scheduled": "Buffer, all six channels, noon 4 Nov"
+  },
+  "replacedStory": {
+    "video": "videos/dispatch-037-story-am_onyx.mp4",
+    "script": "stories/1942-11-04-alamein-retreat.json",
+    "voice": "am_onyx",
+    "speed": 0.95,
+    "time": "12:00",
+    "buffer": {
+      "x": "6ae3fe93ba1ca51fd3ee6a3b",
+      "instagram": "6ae3fe966385db216a1dadf6",
+      "threads": "6ae3fe99a83a7fb63c8d1ba3",
+      "facebook": "6ae3fe9cba1ca51fd3ee6c95",
+      "youtube": "6ae3fea1ba1ca51fd3ee6d0e",
+      "tiktok": "6ae3fea456e01b9763806e9a"
+    },
+    "kit": {
+      "caption": "Hitler's order: yield not a yard of ground, and show the troops no other road than that to victory or death.\n\nOn 4 November 1942 the British broke through at El Alamein, and Rommel ordered a general retreat without waiting for Hitler's reply.\n\nDispatch No. 037, the full story. Narration is AI generated; the photos are real archival images.",
+      "youtubeTitle": "Victory or Death? Rommel Retreats from El Alamein, 4 November 1942 #shorts",
+      "youtubeDescription": "Hitler's order: yield not a yard of ground, and show the troops no other road than that to victory or death.\n\nOn 4 November 1942 the British broke through at El Alamein, and Rommel ordered a general retreat without waiting for Hitler's reply.\n\nNarration is AI generated; the photos are real archival images.\n\nPhotos: Churchill III tanks of Kingforce, 1st Armoured Division, 5 November 1942, IWM E 18991; Montgomery in his Grant command tank, 5 November 1942, IWM E 18980; Montgomery with the captured General von Thoma, 4 November 1942, No 1 Army Film and Photographic Unit, IWM E 19130. All public domain.\nSources: Erwin Rommel on his Defeat in Africa, German History in Documents and Images; The End of the Beginning, National Army Museum; The Bright Gleam of Victory, International Churchill Society; Second Battle of El Alamein, Wikipedia.\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\nSupport WW2 Dispatches: ko-fi.com/ww2dispatches\n\n#Shorts #WW2 #OnThisDay #History",
+      "tiktokCaption": "Hitler said victory or death. Rommel chose retreat. El Alamein, 4 Nov 1942. Narration is AI generated. #WW2 #OnThisDay #History #ElAlamein #Rommel",
+      "schedule": [
+        "12:00 p.m. Mountain, Wed 4 Nov 2026, all six channels in Buffer",
+        "X and Facebook end #OTD #WW2 #OnThisDay #History #ElAlamein; Instagram ends #WW2 #OnThisDay #History #ElAlamein; Threads has no tags (History Threads topic)",
+        "Flagged AI generated on X, Instagram, TikTok, and YouTube; Facebook as a Reel; Instagram and TikTok cover at 1.5 s"
+      ],
+      "thumbnail": "Opens on Churchill tanks of Kingforce kicking up dust across the desert, 5 November 1942.",
+      "scheduled": "Buffer, all six channels, noon 4 Nov"
+    },
+    "replacedOn": "2026-10-31: replaced by a Living Card at Brian's request (he prefers Living Cards over Story Cards); the noon Buffer posts were switched to the film",
+    "buffer_note": "These Buffer posts were edited in place on 31 Oct 2026 to carry the Living Card; the ids now live under buffer as the film keys."
   }
 }
