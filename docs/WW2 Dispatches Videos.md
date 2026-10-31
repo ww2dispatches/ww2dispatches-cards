@@ -89,7 +89,7 @@ After a video is finished, add `video` to the dispatch's `themes` block: `kind` 
 * Each noon video stands on its own: **no reply links it to the 8 a.m. post**, and no reminder or task is ever made for one.
 * **Hashtags:** X and Facebook put #OTD first; video posts with their own tag set (Story Cards, Facebook Reels) also open with #OTD. Threads has no hashtag (History Threads topic). Anniversary event tags follow the Cards doc.
 * **Story Cards:** every caption says "Narration is AI generated". The YouTube description lists the photo credits.
-* **YouTube Shorts:** a short, hook first title and a description with the story, sources, a channel line, and "Support WW2 Dispatches: ko-fi.com/ww2dispatches" at the end. Category Education.
+* **YouTube Shorts:** a short, hook first title and a description with the story, sources, and a channel line. **No support line until the support page launches** (Project Brief, Support); at launch it becomes "Support WW2 Dispatches: ww2dispatches.com/support" at the end. Never a Ko-fi line. Category Education.
 * **TikTok:** a shorter, punchier caption with a few hashtags.
 
 ## Posting in Buffer
@@ -162,3 +162,4 @@ These inform decisions but do not block the daily pace.
 * 25 Oct 2026: Flash days: the noon video keeps the normal frame with a FLASH stamp; the still card is the full art one (Cards doc).
 * 29 Oct 2026: Brian flagged Montgomery, El Alamein, objectives, and antitank (said as one run together word) in No. 033, and El Alamein in No. 037. Added the pronunciation dictionary (`renderer/pron.json`); both Story Cards re-voiced, re-rendered, and swapped into all twelve scheduled Buffer posts (videos repo commit 9b23ef1).
 * 31 Oct 2026: Brian always prefers a Living Card when real film exists. Nos. 033 and 037 were cut from Desert Victory in Source Film in a Project chat with his computer linked, and their Story Card posts were switched to Living Cards in place. From now on a `needs brian` film day gets **no Story Card**: Thursday leaves the noon slot open and files a task for Brian, due by his Saturday review, to have Claude cut the Living Card with his computer linked. The Microsoft 365 connector can't reach Source Film (it only sees the ARC work account).
+* 31 Oct 2026: Ko-fi paused. The "Support WW2 Dispatches: ko-fi.com/ww2dispatches" line came off the YouTube Shorts scheduled 31 Oct to 7 Nov and kits 031 to 043; Shorts carry no support line until ww2dispatches.com/support launches.

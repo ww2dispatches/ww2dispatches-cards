@@ -22,10 +22,10 @@ An email list is the one audience WW2 Dispatches owns outright. It survives algo
   > WW2 Dispatches brings you World War II, one day at a time, with a new dispatch every morning and evening and a video every day at noon.
   > See today's dispatches at ww2dispatches.com, or follow along on X, Instagram, Threads, Facebook, YouTube, and TikTok.
   > Forwarded this email? Subscribe free to get the next one.
-  > Enjoy these? You can buy us a coffee to help keep the dispatches coming.
   > Have a question, a correction, or a family story from the war? Just reply to this email.
 
-  Linked: ww2dispatches.com, each platform's page, "Subscribe free" to https://ww2dispatches.substack.com/subscribe, "buy us a coffee" to https://ko-fi.com/ww2dispatches.
+  Linked: ww2dispatches.com, each platform's page, "Subscribe free" to https://ww2dispatches.substack.com/subscribe.
+* **Support line (Ko-fi paused 31 Oct 2026):** the old line "Enjoy these? You can buy us a coffee to help keep the dispatches coming." linked to Ko-fi is to be removed from Substack's footer by Brian (Settings, footer). At the support page launch (Project Brief, Support) it returns above the "Have a question" line as "Enjoy these? You can support WW2 Dispatches to help keep the dispatches coming." linked to https://ww2dispatches.com/support.
 * The images were made by Claude from the home page's D-Day photo and badge; copies are in the Brand folder and in `newsletter/brand/` in the cards repo. If they ever change, remake all three together.
 * To see what a new reader sees, open the Substack pages in a private window (signed in, Substack skips to its "recommend" step).
 
@@ -68,7 +68,7 @@ Weekly, sent **Sunday 7 a.m. Mountain** (changed from 8 a.m. on 31 Oct 2026). Ea
 * **The article: about 1,500 words** (1,300 to 1,800), in the WW2 Dispatches voice: clear, vivid, for a general reader, built as a story (open on a moment, set the scene, build, turn, aftermath, and a closing line that lands). Five to eight short subheads (`##`). Two to four more photos placed where the story reaches them, each followed by its caption as one italic line (the renderer turns it into the photo's own Substack image caption, so the drop cap lands on the article's first paragraph; no kicker line above the article). Quotes sparingly, verbatim from `quotes`.
 * After a `---`, **"Also this week"** (for issue 001, "Also from our first two weeks"): one line per 8 a.m. dispatch of the week in date order, `**No. NNN · <Title>**, <date> · [Read on X](<links.x>)`, with a one line lead in. Saturday's dispatch links to the X profile, since it posts after the build.
 * After a `---`, **Sources**: the main sources behind the article as linked titles with the publisher. Encode parentheses in URLs (%28 and %29).
-* After a `---`, a two sentence **sign off** ("Thank you for reading..."), with a one line tease of next week only when the coming week's slate already shows a strong story, then *WW2 Dispatches*. **No Ko-fi line in the issue body:** the email footer carries it.
+* After a `---`, a two sentence **sign off** ("Thank you for reading..."), with a one line tease of next week only when the coming week's slate already shows a strong story, then *WW2 Dispatches*. **No support line in the issue body:** the email footer carries it (from the support page launch).
 * **Facts come only from the story file** (and the listed dispatches' `facts` for the links list). If the article needs a fact the file lacks, the Friday run verifies it against a source first and adds it to the file, never from memory. No dashes.
 * Optional extras when they come cheap: a book recommendation at the end (affiliate link later), sponsorships once the list grows.
 
@@ -134,3 +134,4 @@ Done: scheduled for **Sun 1 Nov 2026 at 10 a.m.**, the morning issue 001 lands, 
 * 31 Oct 2026: The launch card recolored to Dispatch Teal (the NOW LIVE stamp and the sign up line were Battle Lines red), saved as `cards/newsletter-launch-x-teal.jpg` and `-instagram-teal.jpg` (a new name, because GitHub kept serving the old red image under the old name even with a new `?v=`), and swapped into the four Sunday 10 a.m. posts.
 * 31 Oct 2026 (later): Brian wanted the launch post to look like Taffy 3 in the feed, so it now uses issue 001's share card (the Taffy 3 photo and headline, teal NEW ISSUE stamp) instead of the D-Day launch card, with a direct link to the article on X, Threads, and Facebook (slug confirmed in Substack: /p/the-last-stand-of-taffy-3). Same time, Sun 1 Nov at 10 a.m.
 * 31 Oct 2026: Facebook share posts dropped the link because of Meta's two link posts a month cap on some Pages; they point to the Page's About links instead, where https://ww2dispatches.substack.com was added beside ww2dispatches.com. Tomorrow's Facebook launch post changed to match.
+* 31 Oct 2026: Ko-fi paused. The footer's "buy us a coffee" line comes out of Substack (Brian) and returns at the support page launch pointing to ww2dispatches.com/support.

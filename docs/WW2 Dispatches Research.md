@@ -26,7 +26,7 @@ The 8 a.m. event is always the noon video's event. The noon video never switches
 * **Never repeat** an event already covered: check `log/series-log.csv` and `dispatches/`.
 * Check the Roadmap's "Upcoming big dates" for anniversaries in the batch week; those get the strongest treatment and the hardest film hunt (the iconic shot rule, Videos doc).
 * Verify every fact per the Brief's writing rules. Never guess.
-* Mark somber subjects `"somber": true` so Friday never adds an engagement question, a Ko-fi soft ask, or a newsletter mention to them.
+* Mark somber subjects `"somber": true` so Friday never adds an engagement question, a support soft ask, or a newsletter mention to them.
 * **Flash days** have their own rules (next section); on those days the 8 a.m. slot is already decided.
 
 ## Flash days

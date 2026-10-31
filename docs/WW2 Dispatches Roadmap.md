@@ -50,7 +50,7 @@ Short term goal: maximize presence and follows in the first month, without addin
 * **The new run order** (Tuesday analytics, Wednesday research, Thursday videos, Friday cards) starts with the 1 to 7 Nov batch: research Wed 28 Oct, videos Thu 29 Oct, cards Fri 30 Oct. Watch the first two weeks for run length and the share of Living Cards.
 * Start the dispatch bank (aim for 5 to 7 ready) and the video bank (aim for 3 to 5).
 * Growth rules from the 25 to 31 Oct batch on: engagement questions and Instagram carousels (Cards doc).
-* First newsletter issue Sun 1 Nov 2026; launch announcement in the 1 to 7 Nov batch; first Ko-fi soft ask in the 1 to 7 Nov batch; first newsletter mention in the 8 to 14 Nov batch at the earliest.
+* First newsletter issue Sun 1 Nov 2026; launch announcement in the 1 to 7 Nov batch; the first support soft ask moves to the support page launch week (after the LLC and the Stripe account are ready; Project Brief, Support); first newsletter mention in the 8 to 14 Nov batch at the earliest.
 * Plan the big dates above, verifying dates and footage first.
 * Work out what a post costs now (Buffer Essentials, Claude usage at a daily video pace, any paid voice, and any generated images).
 
@@ -63,7 +63,7 @@ Short term goal: maximize presence and follows in the first month, without addin
 ## Months three to six
 * Review growth against the subscription gates below (X, YouTube, Instagram, Facebook).
 * Explore sponsorships and affiliate links that fit the audience (history books, documentaries, museums, model kits). The newsletter is the natural first home for these.
-* Consider a Ko-fi shop item (for example printed dispatch cards or Spec Sheet prints).
+* Consider shop items (for example printed dispatch cards or Spec Sheet prints), sold through Stripe on the support page or the archive site, not a Ko-fi shop.
 * Review the video rhythm against each platform's retention numbers and vary the story shape if it drops.
 * Consider a custom domain for the newsletter (newsletter.ww2dispatches.com) once the list is growing, after checking whether it affects Substack's recommendation network.
 
@@ -175,7 +175,7 @@ Perks, chosen so a subscription never becomes a second job. Each one reuses work
 * **Topic vote:** once a month, subscribers pick a date or event for a future dispatch.
 * **Blueprint notes:** one extra engineering detail per week that didn't fit the caption.
 
-Starting price idea: $2 to $3 a month, in line with comparable accounts. Ko-fi memberships stay off until then; Ko-fi stays tips only.
+Starting price idea: $2 to $3 a month, in line with comparable accounts. **Monthly pledges on our own support page** (Stripe subscriptions, $3, $5, and $10 a month) can start at the support page launch **without perks**; the perks list above stays for later. Ko-fi is retired.
 
 ## Archive plan
 Why: old social posts are close to invisible because feeds favor new content, so an archive doesn't take views away from the social pages. It reaches people the feeds never will (someone searching "what happened on October 20 in WW2"), turns them into followers and subscribers, and is an asset the account owns.
@@ -183,11 +183,12 @@ Why: old social posts are close to invisible because feeds favor new content, so
 * **Build:** generated from the dispatch JSON, cards, and photos already in the ww2dispatches-cards repo, added to the existing home page in the repo's `site/` folder on Cloudflare Pages (live since 21 Oct 2026). The home page stays the front door, with a link into the archive.
 * **Pages:** one page per calendar date (all years together), one page per dispatch, a page per series, and a page per evening format (all the Spec Sheets together make a strong Blueprint reference). A simple calendar view linked from the home page, which already shows today's posts. The performance log can feed a "most popular dispatches" page.
 * **Every dispatch page sends people back to social:** the card, the story caption, the sources, and links to the original posts (plus TikTok and YouTube for videos), using the `links` field recorded since launch.
-* **Every page carries the follow buttons, the newsletter signup, and the Ko-fi button.** The archive's job is to grow the accounts and the list, not to replace them.
+* **Every page carries the follow buttons, the newsletter signup, and the Support button (to ww2dispatches.com/support).** The archive's job is to grow the accounts and the list, not to replace them.
 * **Low effort upkeep:** the weekly runs rebuild the site from GitHub each week, so new dispatches appear on their own. Brian's weekly time doesn't change.
-* Later options: search, a printable "this day" card shop on Ko-fi, and a classroom friendly version of the archive.
+* Later options: search, a printable "this day" card shop through Stripe, and a classroom friendly version of the archive.
 
 ## Changelog
+* 31 Oct 2026: Ko-fi paused and to be retired. Support moves to ww2dispatches.com/support with Stripe one time gifts and monthly pledges (no perks yet); the first soft ask waits for its launch week, and shop items go through Stripe.
 * 31 Oct 2026: Sunday 10 a.m. slot added for the newsletter's Sunday share post (a Sunday morning read; the issue lands at 7).
 * 30 Oct 2026: Lunch Drop added to the daily layout (a hand posted X Community card at about 1 p.m.) to help X grow.
 * 30 Oct 2026: Flash days now at least one a month: six dates added from 2027 (Stalingrad, Remagen, the Doolittle Raid, Trinity, Leyte Gulf, Tarawa) for sixteen Flash cards a year, all with the extra posts session; Pearl Harbor stays first. Flash prep calendar added. Incoming Flash traffic built on the Declass home screen.
