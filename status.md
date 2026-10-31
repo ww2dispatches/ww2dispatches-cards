@@ -17,7 +17,7 @@ Finished noon videos not yet scheduled (aim for 3 to 5). One line each: file in 
 * (empty)
 
 ## Pending one time jobs
-* **Newsletter launch announcement:** goes in the 1 to 7 Nov 2026 batch (Friday 30 Oct cards run). See the Newsletter doc.
+* (none)
 
 ## Open checks
 Small loose ends a run can settle when it has a moment.

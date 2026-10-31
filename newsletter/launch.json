@@ -1,0 +1,18 @@
+{
+  "what": "The Weekly Dispatch launch announcement (Newsletter doc, Launch announcement). Not a dispatch, no number.",
+  "time": "2026-11-02 13:00",
+  "issue": 1,
+  "cards": {
+    "x": "cards/newsletter-launch-x.jpg",
+    "instagram": "cards/newsletter-launch-instagram.jpg",
+    "renderer": "renderer/launch.js"
+  },
+  "caption": "The Weekly Dispatch is live.\n\nEvery Sunday, one free email gathers the week's dispatches in one place: the morning stories, the evening cards, and the story behind each one.\n\nIssue 001 covered our first two weeks, from the torpedoed USS Kearny to the loss of USS Reuben James, with MacArthur's return to Leyte, the last stand of Taffy 3, and the rescue of the Lost Battalion along the way.\n\nSign up free at the link in our bio.\n\n#WW2",
+  "threads": "The Weekly Dispatch is live.\n\nEvery Sunday, one free email gathers the week's dispatches in one place, with the story behind each one.\n\nIssue 001 covered our first two weeks, from the torpedoed USS Kearny to the loss of USS Reuben James, with MacArthur's return and the last stand of Taffy 3 along the way.\n\nSign up free at the link in our bio.",
+  "buffer": {
+    "x": "6ae54b07eaa24d6f9a4db6eb",
+    "instagram": "6ae54b0db84259308bb13161",
+    "threads": "6ae54b111891472093aaf39b",
+    "facebook": "6ae54b14406ab8a01892ef68"
+  }
+}
