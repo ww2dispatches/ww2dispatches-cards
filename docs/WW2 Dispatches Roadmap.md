@@ -18,7 +18,7 @@ Started 15 Oct 2026. Goal: post every day from launch (Sat 17 Oct 2026) and keep
 * **About 1:00 p.m., Lunch Drop.** Brian posts the day's 8 a.m. story into one X Community, with a plain archival photo, a new hook, a debate question, and two replies (the card rides on the first), from the pinned Lunch Drop page. Not scheduled anywhere; the Sunday run prepares it. (Lunch Drop doc)
 
 **Sunday**
-* **8:00 a.m., the weekly newsletter** on Substack (first issue Sun 1 Nov 2026). (Newsletter doc)
+* **7:00 a.m., the weekly newsletter** on Substack (first issue Sun 1 Nov 2026). (Newsletter doc)
 
 That makes three posts a day on the card platforms (four on Wednesday and Saturday with Name This) and one a day on TikTok and YouTube. Everything publishes through Buffer except Name This on X (Typefully) and the newsletter (pasted into Substack by Brian). Each post also appears on the ww2dispatches.com home page at its time (Project Brief, "Domain and website").
 
