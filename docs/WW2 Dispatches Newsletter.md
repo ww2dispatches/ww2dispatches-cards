@@ -15,8 +15,8 @@ An email list is the one audience WW2 Dispatches owns outright. It survives algo
 * **Theme** (Website editor, Edit theme; changed 31 Oct 2026): background #120F0C (the home page's night), accent #B8862B (brass gold, was stamp red #B04A3E), post titles and section titles in **Anton** (bold condensed, the closest to Oswald on Substack's list; was Courier Prime). Substack allows no custom code, so it can only come close.
 * **Post page** (Website editor, Posts; set 31 Oct 2026 for the journal style articles): title in Anton, body in Libre Baskerville (serif), links underlined, drop caps on, bylines and byline photos on, previous and next post buttons on.
 * **Wordmark:** the badge and "WW2 DISPATCHES" in cream on a transparent background (1344 x 256, substack-wordmark.png).
-* **Welcome page cover:** the D-Day photo with the badge, name, tagline, and "The Weekly Dispatch · Every Sunday" (1200 x 1200, substack-cover.png). Welcome page uses custom colors with background #120F0C; Show name off (the name is in the image), Show description on.
-* **Email banner** (above every issue): the D-Day photo with the badge, "The Weekly Dispatch", and "Seven days of the war, in your inbox." (1100 x 220, substack-email-banner.png). Its line no longer fits the article format; remake it with "One story from the war, told in full." when convenient (with the welcome cover, per the rule below).
+* **Welcome page cover:** the D-Day photo with the badge, name, "One story from the war, told in full.", and "The Weekly Dispatch · Every Sunday" in gold (1200 x 1200, ww2-dispatches-substack-cover-gold.png, remade 31 Oct 2026). Welcome page uses custom colors with background #120F0C; Show name off (the name is in the image), Show description on.
+* **Email banner** (above every issue): the D-Day photo with the badge, "The Weekly Dispatch", "One story from the war, told in full.", and "Every Sunday" in gold (1100 x 220, ww2-dispatches-email-banner-gold.png, with a @2x copy; remade 31 Oct 2026).
 * **Header for all posts:** left empty; the banner does that job. Use it only for a temporary notice or a sponsor line later.
 * **Footer for all posts:**
   > WW2 Dispatches brings you World War II, one day at a time, with a new dispatch every morning and evening and a video every day at noon.
@@ -26,7 +26,7 @@ An email list is the one audience WW2 Dispatches owns outright. It survives algo
   > Have a question, a correction, or a family story from the war? Just reply to this email.
 
   Linked: ww2dispatches.com, each platform's page, "Subscribe free" to https://ww2dispatches.substack.com/subscribe, "buy us a coffee" to https://ko-fi.com/ww2dispatches.
-* The three images were made by Claude from the home page's D-Day photo and badge; Brian keeps copies in the Brand folder. If they ever change, remake all three together.
+* The images were made by Claude from the home page's D-Day photo and badge; copies are in the Brand folder and in `newsletter/brand/` in the cards repo. If they ever change, remake all three together.
 * To see what a new reader sees, open the Substack pages in a private window (signed in, Substack skips to its "recommend" step).
 
 ## Settings
@@ -117,3 +117,4 @@ Done: scheduled for Mon 2 Nov 2026 at 1 p.m. on X, Instagram, Threads, and Faceb
 * 30 Oct 2026 (night): **The newsletter became one feature article per issue**, in the style of a historical journal, about the most compelling event from the week's dates (posted or not), about 1,500 words with three to five captioned archival photos, then a short Also this week list of the 8 a.m. dispatches and a Sources section. The Wednesday research run now picks the story and writes `newsletter/story-NNN.json` (facts, quotes, photos); the Friday run writes the article. Issue 001 was rewritten as "The Last Stand of Taffy 3". The review page shows photo captions and takes notes per subhead. The launch announcement, the Substack description, Introduction, About page, and welcome email wording were updated to match (the Substack text is Brian's to paste).
 * 31 Oct 2026: Send time moved to Sunday 7 a.m. Mountain (was 8 a.m.). Later: Substack theme accent changed to brass gold #B8862B and title fonts to Anton. The post page set to the journal style: Anton titles, Libre Baskerville body, drop caps, previous and next buttons. The new short description pasted into Substack; the welcome page checked (gold Subscribe button, night background). The Introduction, About page, and welcome email updated in Substack to the Sunday story wording.
 * 31 Oct 2026: Issue 001 was pasted into Substack and reviewed in preview. The kicker line was dropped (it stole the drop cap) and photo captions now paste as native Substack image captions. Issue 001 is set for Sun 1 Nov at 7 a.m. Mountain.
+* 31 Oct 2026: The email banner and welcome page cover remade with "One story from the war, told in full." and the gold accent, and uploaded to Substack.
