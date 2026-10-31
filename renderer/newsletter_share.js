@@ -16,7 +16,7 @@ function drawShare(photoUrl, W, H, title, issue) {
     await Promise.all(["700 10px Oswald","600 10px Oswald",'400 10px "Special Elite"'].map(f=>document.fonts.load(f)));
     const img = await new Promise((ok,bad)=>{const i=new Image(); i.onload=()=>ok(i); i.onerror=bad; i.src=photoUrl;});
     const cv=document.createElement("canvas"); cv.width=W; cv.height=H;
-    const ctx=cv.getContext("2d"), u=W/100, m=4*u, GOLD="#B8862B", RED="#B04A3E";
+    const ctx=cv.getContext("2d"), u=W/100, m=4*u, TEAL="#2B6A6C";
     ctx.fillStyle=PAPER; ctx.fillRect(0,0,W,H);
     if(!grainTile) grainTile=makeGrain();
     ctx.fillStyle=ctx.createPattern(grainTile,"repeat"); ctx.fillRect(0,0,W,H);
@@ -25,7 +25,7 @@ function drawShare(photoUrl, W, H, title, issue) {
     ctx.textBaseline="alphabetic"; ctx.textAlign="left"; ctx.fillStyle=INK;
     ctx.font=`700 ${4.2*u}px Oswald`; ctx.letterSpacing=`${.02*4.2*u}px`; ctx.fillText("THE WEEKLY DISPATCH",m,8*u);
     ctx.fillStyle=NAVY; ctx.font=`400 ${2.5*u}px "Special Elite"`; ctx.letterSpacing="0px"; ctx.fillText(`WW2 Dispatches · Issue ${issue}`,m,11.6*u);
-    stamp(ctx,u,"NEW ISSUE",GOLD,W-m,8*u);
+    stamp(ctx,u,"NEW ISSUE",TEAL,W-m,8*u);
     // headline: wrap to at most two lines, shrinking if needed
     let fs=7*u, lines;
     const wrap=(size)=>{ctx.font=`700 ${size}px Oswald`; ctx.letterSpacing=`${.01*size}px`;
@@ -43,7 +43,7 @@ function drawShare(photoUrl, W, H, title, issue) {
     for(const l of lines){ctx.fillText(l,m,y); y+=fs*1.02;}
     y+=2.6*u-fs*1.02+3*u; ctx.fillStyle=NAVY; ctx.font=`400 ${2.9*u}px "Special Elite"`; ctx.letterSpacing="0px";
     ctx.fillText("One story from the war, told in full. Free every Sunday.",m,y);
-    y+=6*u; ctx.fillStyle=RED; ctx.font=`600 ${3.4*u}px Oswald`; ctx.letterSpacing=`${.04*3.4*u}px`;
+    y+=6*u; ctx.fillStyle=TEAL; ctx.font=`600 ${3.4*u}px Oswald`; ctx.letterSpacing=`${.04*3.4*u}px`;
     ctx.fillText("READ IT FREE: WW2DISPATCHES.SUBSTACK.COM",m,y);
     return cv.toDataURL("image/jpeg",.9);
   })();
