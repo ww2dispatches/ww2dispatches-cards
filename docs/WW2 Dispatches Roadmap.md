@@ -14,14 +14,12 @@ Started 15 Oct 2026. Goal: post every day from launch (Sat 17 Oct 2026) and keep
 **Wednesday and Saturday only**
 * **10:00 a.m., Name This.** X (into an X Community, through Typefully), Threads (History Threads community), Facebook Page, and Instagram (a two week test, see Open decisions), the last three through Buffer. No dispatch number. (Name This doc)
 
-**Sunday only**
-* **10:00 a.m., the Sunday share post** for that morning's newsletter issue (the issue itself lands in inboxes at 7). Its own card, not a dispatch, no number. X, Instagram, Threads, Facebook. (Newsletter doc, "Sunday share post")
-
 **Every day, by hand**
 * **About 1:00 p.m., Lunch Drop.** Brian posts the day's 8 a.m. story into one X Community, with a plain archival photo, a new hook, a debate question, and two replies (the card rides on the first), from the pinned Lunch Drop page. Not scheduled anywhere; the Sunday run prepares it. (Lunch Drop doc)
 
 **Sunday**
 * **7:00 a.m., the weekly newsletter** on Substack (first issue Sun 1 Nov 2026). (Newsletter doc)
+* **10:00 a.m., the Sunday share post** for that morning's issue: its own card, not a dispatch, no number. X, Instagram, Threads, Facebook. (Newsletter doc, "Sunday share post")
 
 That makes three posts a day on the card platforms (four on Wednesday and Saturday with Name This) and one a day on TikTok and YouTube. Everything publishes through Buffer except Name This on X (Typefully) and the newsletter (pasted into Substack by Brian). Each post also appears on the ww2dispatches.com home page at its time (Project Brief, "Domain and website").
 
