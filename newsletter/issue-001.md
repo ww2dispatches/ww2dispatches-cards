@@ -2,8 +2,6 @@
 
 *Preview line: On 25 October 1944, six little carriers and seven escorts woke up to find the biggest battleship ever built bearing down on them. This is what they did next.*
 
-*The Weekly Dispatch · Issue 001 · Off Samar, the Philippines · 25 October 1944*
-
 ![USS Gambier Bay and her escorts making smoke off Samar](https://raw.githubusercontent.com/ww2dispatches/ww2dispatches-cards/main/photos/1944-10-25-samar.jpg)
 
 *Gambier Bay and her escorts lay smoke at the start of the battle. The Japanese fleet is somewhere beyond the haze. U.S. Navy, public domain.*
@@ -126,7 +124,7 @@ Each morning brought a new dispatch. Catch up on any you missed:
 
 **No. 027 · Rescue of the Lost Battalion**, 30 October 1944 · [Read on X](https://x.com/ww2dispatches/status/2116169393218470164)
 
-**No. 029 · Reuben James is sunk**, 31 October 1941 · [Read on X](https://x.com/ww2dispatches)
+**No. 029 · Reuben James is sunk**, 31 October 1941 · [Read on X](https://x.com/ww2dispatches/status/2116531620773576719)
 
 ---
 

@@ -161,7 +161,12 @@ def build(src, send):
                 copy_text.append(val)
             elif kind == "cap":
                 inner.append(f'<p class="cap">{inline(val)}</p>')
-                copy_html.append(f"<p><em>{inline(val)}</em></p>")
+                # A photo's caption pastes as Substack's own image caption, so the
+                # post's first paragraph (and its drop cap) is the story, not a caption.
+                if copy_html and copy_html[-1].startswith("<figure>"):
+                    copy_html[-1] = copy_html[-1].replace("</figure>", f"<figcaption>{inline(val)}</figcaption></figure>")
+                else:
+                    copy_html.append(f"<p><em>{inline(val)}</em></p>")
                 copy_text.append(re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r"\1 (\2)", val))
             elif kind == "img":
                 alt, url = val
@@ -169,7 +174,7 @@ def build(src, send):
                     f'<figure><img src="{preview(url)}" alt="{html.escape(alt)}" data-raw="{html.escape(url)}">'
                     f'<figcaption><button class="mini" data-copyimg>Copy image</button> '
                     f'<a class="mini" href="{html.escape(url)}">Open full image</a></figcaption></figure>')
-                copy_html.append(f'<p><img src="{html.escape(url)}" alt="{html.escape(alt)}"></p>')
+                copy_html.append(f'<figure><img src="{html.escape(url)}" alt="{html.escape(alt)}"></figure>')
             else:
                 profile = re.findall(r"\]\((https://x\.com/ww2dispatches/?)\)", val)
                 cls = ' class="flag"' if profile else ""
