@@ -38,7 +38,6 @@ Film: U.S. Army Signal Corps, 111-ADC-9990, U.S. National Archives (catalog.arch
 Sources: Japan's World War II Balloon Bomb Attacks on North America, Robert C. Mikesh, Smithsonian Annals of Flight No. 9; Smithsonian Magazine; Atomic Heritage Foundation.
 
 WW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.
-Support WW2 Dispatches: ko-fi.com/ww2dispatches
 
 #Shorts #WW2 #OnThisDay #History
 

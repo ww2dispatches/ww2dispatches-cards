@@ -38,7 +38,6 @@ Film: U.S. Navy, 428-NPC-6204, U.S. National Archives (catalog.archives.gov/id/7
 Sources: IJN Nachi Tabular Record of Movement, Combinedfleet.com; Lexington V (CV-16), Dictionary of American Naval Fighting Ships, Naval History and Heritage Command; USS Ticonderoga (CV-14), Wikipedia.
 
 WW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.
-Support WW2 Dispatches: ko-fi.com/ww2dispatches
 
 #Shorts #WW2 #OnThisDay #History
 

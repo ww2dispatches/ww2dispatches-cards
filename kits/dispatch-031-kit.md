@@ -38,7 +38,6 @@ Film: U.S. Navy, 428-NPC-1350, U.S. National Archives (catalog.archives.gov/id/7
 Sources: Top of the Ladder: Marine Operations in the Northern Solomons, USMC History and Museums Division; H-Gram 024, Naval History and Heritage Command; Landings at Cape Torokina, Wikipedia.
 
 WW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.
-Support WW2 Dispatches: ko-fi.com/ww2dispatches
 
 #Shorts #WW2 #OnThisDay #History
 

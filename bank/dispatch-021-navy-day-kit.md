@@ -38,7 +38,6 @@ Sources: Address on Foreign Policy at the Navy Day Celebration in New York City,
 
 WW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.
 Get the weekly roundup: ww2dispatches.substack.com
-Support WW2 Dispatches: ko-fi.com/ww2dispatches
 
 #Shorts #WW2 #OnThisDay #History
 

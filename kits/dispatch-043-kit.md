@@ -38,7 +38,6 @@ Film: U.S. Army Signal Corps, 111-ADC-2651, U.S. National Archives (catalog.arch
 Sources: Election of 1944, The American Presidency Project; The Soldier Voting Act and Absentee Ballots in World War II, The National WWII Museum; Amendment XXII, National Constitution Center.
 
 WW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.
-Support WW2 Dispatches: ko-fi.com/ww2dispatches
 
 #Shorts #WW2 #OnThisDay #History
 

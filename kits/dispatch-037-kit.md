@@ -38,7 +38,6 @@ Film: Desert Victory (1943), British Ministry of Information, Army Film and Phot
 Sources: Erwin Rommel on his Defeat in Africa, German History in Documents and Images; The End of the Beginning, National Army Museum; The Bright Gleam of Victory, International Churchill Society; Second Battle of El Alamein, Wikipedia.
 
 WW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.
-Support WW2 Dispatches: ko-fi.com/ww2dispatches
 
 #Shorts #WW2 #OnThisDay #History
 

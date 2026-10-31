@@ -38,7 +38,6 @@ Film: Desert Victory (1943), British Ministry of Information, Army Film and Phot
 Sources: Operation Supercharge, NZHistory (Ministry for Culture and Heritage); Second Battle of El Alamein, Wikipedia (citing Playfair and Barr); John Cecil Currie, Wikipedia.
 
 WW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.
-Support WW2 Dispatches: ko-fi.com/ww2dispatches
 
 #Shorts #WW2 #OnThisDay #History
 
