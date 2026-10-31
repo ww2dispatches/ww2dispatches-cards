@@ -21,7 +21,7 @@ Started 15 Oct 2026. Goal: post every day from launch (Sat 17 Oct 2026) and keep
 * **7:00 a.m., the weekly newsletter** on Substack (first issue Sun 1 Nov 2026). (Newsletter doc)
 * **10:00 a.m., the Sunday share post** for that morning's issue: its own card, not a dispatch, no number. X, Instagram, Threads, Facebook. (Newsletter doc, "Sunday share post")
 
-That makes three posts a day on the card platforms (four on Wednesday and Saturday with Name This) and one a day on TikTok and YouTube. Everything publishes through Buffer except Name This on X (Typefully) and the newsletter (pasted into Substack by Brian). Each post also appears on the ww2dispatches.com home page at its time (Project Brief, "Domain and website").
+That makes three posts a day on the card platforms (four on Wednesday and Saturday with Name This, and on Sunday with the share post) and one a day on TikTok and YouTube. Everything publishes through Buffer except Name This on X (Typefully) and the newsletter (pasted into Substack by Brian). Each post also appears on the ww2dispatches.com home page at its time (Project Brief, "Domain and website").
 
 ## Upcoming big dates
 Big dates already have people searching and talking, so these get the strongest treatment. Each still has to be verified like any dispatch. They are the first place the Wednesday research run hunts for film for a Living Card; with no film, the noon video is a Story Card. The 5 p.m. card on an anniversary day is a good place for a Spec Sheet or Quote tied to the same event. Hashtag rules for anniversary days are in the Cards doc.
