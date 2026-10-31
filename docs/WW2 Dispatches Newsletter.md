@@ -90,7 +90,7 @@ Weekly, sent **Sunday 7 a.m. Mountain** (changed from 8 a.m. on 31 Oct 2026). Ea
 ## Signup points
 * The Weekly Dispatch signup box on the ww2dispatches.com home page. It posts to Substack's free signup in a hidden frame, so the visitor stays on our page and sees "Almost done. Check your inbox to confirm." Substack logs these as "external form / api". Tested 21 Oct 2026.
 * "Subscribe free" in the email footer, for forwarded issues.
-* A line in the YouTube description ("Get the Sunday story: ww2dispatches.substack.com", changed 30 Oct 2026).
+* A line in the YouTube description ("Get the Sunday story: ww2dispatches.substack.com", live since 31 Oct 2026). The Instagram and Threads bios end "Free Sunday story ⬇️"..
 * No signup link in every caption. The occasional newsletter mention (Cards doc) is enough.
 
 ## Issue archive on ww2dispatches.com (planned)
