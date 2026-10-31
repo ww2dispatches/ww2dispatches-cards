@@ -49,7 +49,7 @@ function drawLaunch(photoUrl, W, H) {
   const photo = "data:image/jpeg;base64," + fs.readFileSync(path.join(ROOT, "site/img/bg-dday.jpg")).toString("base64");
   for (const [kind, W, H] of [["x", 1600, 1440], ["instagram", 1080, 1350]]) {
     const out = await page.evaluate(([p, w, h]) => window.drawLaunch(p, w, h), [photo, W, H]);
-    const file = path.join(ROOT, "cards", `newsletter-launch-${kind}.jpg`);
+    const file = path.join(ROOT, "cards", `newsletter-launch-${kind}-teal.jpg`);
     fs.writeFileSync(file, Buffer.from(out.split(",")[1], "base64"));
     console.log("wrote", path.relative(ROOT, file));
   }
