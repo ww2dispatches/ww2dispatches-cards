@@ -33,7 +33,7 @@ function drawLaunch(photoUrl, W, H) {
     // bottom band
     let y=top+ph+8*u;
     ctx.fillStyle=INK; ctx.font=`700 ${7*u}px Oswald`; ctx.letterSpacing=`${.01*7*u}px`; ctx.fillText("THE WEEKLY DISPATCH",m,y);
-    y+=5*u; ctx.fillStyle=NAVY; ctx.font=`400 ${2.9*u}px "Special Elite"`; ctx.fillText("Seven days of the war, in your inbox. Every Sunday.",m,y);
+    y+=5*u; ctx.fillStyle=NAVY; ctx.font=`400 ${2.9*u}px "Special Elite"`; ctx.fillText("One story from the war, told in full. Every Sunday.",m,y);
     y+=6*u; ctx.fillStyle=RED; ctx.font=`600 ${3.6*u}px Oswald`; ctx.letterSpacing=`${.04*3.6*u}px`; ctx.fillText("SIGN UP FREE AT THE LINK IN OUR BIO",m,y);
     ctx.textAlign="right"; ctx.fillStyle=NAVY; ctx.font=`400 ${2.3*u}px "Special Elite"`; ctx.letterSpacing="0px";
     ctx.fillText("@ww2dispatches",W-m,H-(H/W>1.1?3:6)*u);
