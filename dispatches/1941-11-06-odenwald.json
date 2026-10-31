@@ -247,5 +247,24 @@
       "thumbnail": "Opens on the captured Odenwald under way at sea, November 1941.",
       "scheduled": "Buffer, all six channels, noon 6 Nov"
     }
-  }
+  },
+  "focusX": 48,
+  "focusY": 30,
+  "zoom": 105,
+  "body": "She flew the American flag and had \"Willmoto, Philadelphia\" painted on her stern. She was German, and her holds were full of rubber.\n\n6 November 1941. A month and a day before Pearl Harbor, the cruiser USS Omaha and the destroyer USS Somers were on Neutrality Patrol when they sighted a freighter at dawn near the equator. She was really the German blockade runner Odenwald, out of Yokohama with about 3,857 metric tons of raw rubber.\n\nShe steered to dodge them and gave poor answers to their signals, so Captain Theodore E. Chandler sent over an armed boarding party. As the sailors climbed aboard, two explosions went off in the stern. The Germans had set scuttling charges and taken to the lifeboats.\n\nThe Americans ordered the crew back aboard, plugged the flooding and got the engines running. By evening she was under way.\n\nThe United States was not at war, and the legal ground was shaky. In 1947 a court awarded each man in the boarding party $3,000, often called the last prize money the U.S. Navy ever paid.",
+  "addons": [
+    "Was the Navy right to seize her before America was at war?"
+  ],
+  "hashtags": "#OnThisDay #WW2",
+  "threads": "She flew the American flag, with \"Philadelphia\" painted on her stern. She was German, and full of rubber.\n\n6 November 1941, near the equator. USS Omaha's boarding party climbed aboard the blockade runner Odenwald as scuttling charges went off. They plugged the flooding and sailed her away.\n\nThe U.S. was not yet at war.\n\nWas the Navy right to seize her before America was at war?",
+  "alt": "Archival photo of USS Omaha's prize crew posed on the deck of the captured Odenwald, with an American flag and a swastika flag hanging behind them and life rings reading Odenwald and Willmoto. Text: 6 NOV 1941, Mid Atlantic, near the equator. A fake flag, a real prize.",
+  "question": true,
+  "slides": [
+    {
+      "photo": "photos/1941-11-06-odenwald-3.jpg",
+      "caption": "Odenwald under way after her capture, November 1941.",
+      "credit": "U.S. Navy photo NH 123749, public domain.",
+      "alt": "Archival photo of the freighter Odenwald steaming across open sea."
+    }
+  ]
 }

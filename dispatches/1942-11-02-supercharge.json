@@ -246,5 +246,27 @@
       "thumbnail": "Opens on the barrel and shell holed turret of a Churchill tank, 2 November 1942.",
       "scheduled": "Buffer, all six channels, noon 2 Nov"
     }
-  }
+  },
+  "focusX": 50,
+  "focusY": 40,
+  "zoom": 100,
+  "body": "\"These are my regiments.\" The brigadier pointed to a handful of tanks. He had started the morning with 94.\n\n2 November 1942. At 1:05 a.m., Montgomery's Eighth Army launched Operation Supercharge, its final push to break Rommel's line at El Alamein. British and New Zealand infantry moved off in the dark behind a creeping barrage from about 360 guns.\n\nThen the 9th Armoured Brigade had to charge straight at a screen of German and Italian antitank guns, including deadly 88s. Brigadier John Currie warned he could lose half his strength. He was told Montgomery had \"accepted the possibility of losing 100% casualties\" to make the break.\n\nThe tanks went in at 6:15 a.m., with the rising sun behind them lighting them up for the gunners. Fewer than 25 were still running at the end, and 230 men were killed, wounded or missing. They smashed many guns but did not open the gap.\n\nRommel's counterattack failed, and the Afrika Korps lost about 70 tanks that day. That night he decided to fall back. Two days later his army was in retreat.",
+  "addons": [],
+  "hashtags": "#OnThisDay #WW2",
+  "threads": "\"These are my regiments.\" The brigadier pointed to a handful of tanks. He had started the morning with 94.\n\n2 November 1942, El Alamein. Operation Supercharge, the Eighth Army's final push. The 9th Armoured Brigade charged straight at the German and Italian antitank guns, with the sunrise lighting them up for the gunners.\n\nFewer than 25 tanks were still running at the end. Two days later Rommel's army was in retreat.",
+  "alt": "Archival photo of soldiers looking over a knocked out German 88 mm gun in its sandy pit in the desert near Tel el Aqqaqir. Text: 2 NOV 1942, El Alamein, Egypt. The last push at Alamein.",
+  "slides": [
+    {
+      "photo": "photos/1942-11-02-supercharge-3.jpg",
+      "caption": "An 88 mm shell hole in the turret of a Churchill tank, 2 November 1942.",
+      "credit": "IWM E 18839, public domain.",
+      "alt": "Archival photo of a Churchill tank turret with a round shell hole beside its gun, seen against a bright desert sky."
+    },
+    {
+      "photo": "photos/1942-11-02-supercharge-4.jpg",
+      "caption": "Burnt out vehicles on the Alamein battlefield, 3 November 1942.",
+      "credit": "IWM E 18900, public domain.",
+      "alt": "Archival photo of wrecked and burnt out vehicles scattered across flat open desert, with smoke on the horizon."
+    }
+  ]
 }

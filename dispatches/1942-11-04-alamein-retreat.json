@@ -239,5 +239,24 @@
       "thumbnail": "Opens on Churchill tanks of Kingforce kicking up dust across the desert, 5 November 1942.",
       "scheduled": "Buffer, all six channels, noon 4 Nov"
     }
-  }
+  },
+  "focusX": 62,
+  "focusY": 40,
+  "zoom": 100,
+  "body": "Hitler's order was victory or death. Rommel chose neither.\n\n4 November 1942. The morning after Hitler ordered him to yield not a yard of ground, the British broke through at El Alamein. By early afternoon, Rommel wrote, enemy armour had burst a 19 kilometre hole in his front, and he had no reserves left.\n\nBy his own figures the Germans were down to 36 tanks, from 249 at the start of the battle. That same day the commander of the Afrika Korps, General Wilhelm Ritter von Thoma, surrendered to men of the 10th Hussars. Montgomery met him and later invited him to dinner.\n\nAt 5:30 p.m., Rommel ordered a general retreat without waiting for Hitler's reply. With little transport, much of the Italian infantry was left behind. About 30,000 Axis soldiers were taken prisoner in the battle.\n\nIt was the first great British land victory over the German army. On 15 November church bells rang across Britain, the first time most people had heard them in over two years.",
+  "addons": [
+    "If you had been in Rommel's place, would you have obeyed the order?"
+  ],
+  "hashtags": "#OnThisDay #WW2",
+  "threads": "Hitler's order was victory or death. Rommel chose neither.\n\n4 November 1942. The British broke through at El Alamein, and Rommel's Germans were down to 36 tanks. At 5:30 p.m. he ordered a retreat without waiting for Hitler's reply.\n\nThat day the captured Afrika Korps commander, von Thoma, met Montgomery.\n\nIf you had been in Rommel's place, would you have obeyed the order?",
+  "alt": "Archival photo of the captured German General Wilhelm von Thoma, in uniform with a scarf, standing beside Montgomery in a sweater outside a tent. Text: 4 NOV 1942, El Alamein, Egypt. Victory or death? Neither.",
+  "question": true,
+  "slides": [
+    {
+      "photo": "photos/1942-11-04-alamein-retreat-4.jpg",
+      "caption": "Churchill tanks of Kingforce in the desert, 5 November 1942, the day after the breakthrough.",
+      "credit": "No 1 AFPU, IWM E 18991, public domain.",
+      "alt": "Archival photo of two Churchill tanks in camouflage paint driving across sand, kicking up dust."
+    }
+  ]
 }
