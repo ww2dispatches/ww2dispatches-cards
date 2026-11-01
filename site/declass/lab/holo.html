@@ -61,7 +61,7 @@ body{margin:0}
    faint prism through the photo on Top Secret (F); twinkling stars; a glare that moves against the tilt. ===== */
 .t3d{perspective:900px}
 .optE .cf,.optF .cf{transform:rotateX(calc(var(--ry,0) * 1deg)) rotateY(calc(var(--rx,0) * 1deg));transform-style:preserve-3d;will-change:transform}
-.optE .cf.rest,.optF .cf.rest{transition:transform .55s cubic-bezier(.2,1.4,.4,1)}
+.optE .cf.rest,.optF .cf.rest{transition:transform 1.15s cubic-bezier(.22,1.25,.36,1)}
 .optE .cf .sheen,.optF .cf .sheen,.optE .cf .hl,.optF .cf .hl{display:none !important}
 .cf .pf,.cf .ps,.cf .ps2,.cf .pg,.cf .pp{position:absolute;inset:0;pointer-events:none;z-index:2;display:none}
 .optE .cf .pf,.optF .cf .pf,.optE .cf .ps,.optF .cf .ps,.optE .cf .ps2,.optF .cf .ps2,.optE .cf .pg,.optF .cf .pg{display:block}
@@ -75,9 +75,9 @@ body{margin:0}
 .cf.f-gold{--streaks:repeating-linear-gradient(118deg,#f7e3a8 0,#e2a93a 6%,#fff3c9 11%,#f2b56a 16%,#f7e3a8 22%)}
 .cf.f-topsecret{--streaks:repeating-linear-gradient(118deg,#ffd6e0 0,#fff2c4 4%,#d4f7dc 8%,#cfe6ff 12%,#e6d4ff 16%,#ffd6e0 20%)}
 /* stars: two layers at different phases; each lights up where its window is, so they twinkle as the light passes */
-.cf .ps,.cf .ps2{background-image:var(--star);background-size:58px 58px,83px 83px,41px 41px;background-position:3px 5px,27px 39px,9px 2px;mix-blend-mode:screen;opacity:.9;-webkit-mask-image:linear-gradient(#000 0 0),linear-gradient(#000 0 0),radial-gradient(circle at var(--sx,50%) var(--sy,50%),#000 0,rgba(0,0,0,.7) 18%,transparent 42%);mask-image:linear-gradient(#000 0 0),linear-gradient(#000 0 0),radial-gradient(circle at var(--sx,50%) var(--sy,50%),#000 0,rgba(0,0,0,.7) 18%,transparent 42%)}
-.cf .ps{-webkit-mask:radial-gradient(circle at var(--sx,50%) var(--sy,50%),#000 0,rgba(0,0,0,.45) 9%,transparent 24%),linear-gradient(#000 0 0) center/93.6% 76.7% no-repeat;-webkit-mask-composite:source-out;mask:radial-gradient(circle at var(--sx,50%) var(--sy,50%),#000 0,rgba(0,0,0,.45) 9%,transparent 24%),linear-gradient(#000 0 0) center/93.6% 76.7% no-repeat;mask-composite:subtract}
-.cf .ps2{background-position:31px 25px,2px 7px,23px 17px;-webkit-mask:radial-gradient(circle at var(--sx2,50%) var(--sy2,50%),#000 0,rgba(0,0,0,.45) 9%,transparent 24%),linear-gradient(#000 0 0) center/93.6% 76.7% no-repeat;-webkit-mask-composite:source-out;mask:radial-gradient(circle at var(--sx2,50%) var(--sy2,50%),#000 0,rgba(0,0,0,.45) 9%,transparent 24%),linear-gradient(#000 0 0) center/93.6% 76.7% no-repeat;mask-composite:subtract}
+.cf .ps,.cf .ps2{background-image:var(--star);background-size:52px 52px,74px 74px,38px 38px;background-position:3px 5px,27px 39px,9px 2px;mix-blend-mode:screen;opacity:1;-webkit-mask-image:linear-gradient(#000 0 0),linear-gradient(#000 0 0),radial-gradient(circle at var(--sx,50%) var(--sy,50%),#000 0,rgba(0,0,0,.7) 18%,transparent 42%);mask-image:linear-gradient(#000 0 0),linear-gradient(#000 0 0),radial-gradient(circle at var(--sx,50%) var(--sy,50%),#000 0,rgba(0,0,0,.7) 18%,transparent 42%)}
+.cf .ps{-webkit-mask:radial-gradient(circle at var(--sx,50%) var(--sy,50%),#000 0,rgba(0,0,0,.6) 13%,transparent 32%),linear-gradient(#000 0 0) center/93.6% 76.7% no-repeat;-webkit-mask-composite:source-out;mask:radial-gradient(circle at var(--sx,50%) var(--sy,50%),#000 0,rgba(0,0,0,.6) 13%,transparent 32%),linear-gradient(#000 0 0) center/93.6% 76.7% no-repeat;mask-composite:subtract}
+.cf .ps2{background-position:31px 25px,2px 7px,23px 17px;-webkit-mask:radial-gradient(circle at var(--sx2,50%) var(--sy2,50%),#000 0,rgba(0,0,0,.6) 13%,transparent 32%),linear-gradient(#000 0 0) center/93.6% 76.7% no-repeat;-webkit-mask-composite:source-out;mask:radial-gradient(circle at var(--sx2,50%) var(--sy2,50%),#000 0,rgba(0,0,0,.6) 13%,transparent 32%),linear-gradient(#000 0 0) center/93.6% 76.7% no-repeat;mask-composite:subtract}
 .cf.f-silver .ps,.cf.f-silver .ps2{opacity:.7}
 /* glare: an overhead light reflecting off the card, moving against the tilt, over the photo too */
 .cf .pg{background:radial-gradient(ellipse 55% 45% at var(--gx2,50%) var(--gy2,50%),rgba(255,255,255,.55),rgba(255,255,255,.18) 35%,transparent 70%);mix-blend-mode:screen}
@@ -103,15 +103,15 @@ body{margin:0}
 </div>
 <script>
 // a small four point star centered in a roomy tile, so tiles can be large and the stars sparse
-const STAR = (c, r) => `url("data:image/svg+xml,${encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'><path d='M30 ${30 - r} L${30 + r * .18} ${30 - r * .18} L${30 + r} 30 L${30 + r * .18} ${30 + r * .18} L30 ${30 + r} L${30 - r * .18} ${30 + r * .18} L${30 - r} 30 L${30 - r * .18} ${30 - r * .18} Z' fill='${c}'/></svg>`)}")`;
-document.documentElement.style.setProperty('--star', [STAR('#fff', 9), STAR('#fff6d6', 6), STAR('#ffffff', 4)].join(','));
+const STAR = (c, r) => `url("data:image/svg+xml,${encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'><circle cx='30' cy='30' r='${r * .55}' fill='${c}' opacity='.35'/><path d='M30 ${30 - r} L${30 + r * .2} ${30 - r * .2} L${30 + r} 30 L${30 + r * .2} ${30 + r * .2} L30 ${30 + r} L${30 - r * .2} ${30 + r * .2} L${30 - r} 30 L${30 - r * .2} ${30 - r * .2} Z' fill='${c}'/></svg>`)}")`;
+document.documentElement.style.setProperty('--star', [STAR('#fff', 12), STAR('#fff6d6', 8), STAR('#ffffff', 5)].join(','));
 const IMG = 'https://cdn.jsdelivr.net/gh/ww2dispatches/ww2dispatches-cards@main/cards/dispatch-008-instagram.jpg';
 const DESC = {
   A: '<b>A · Today.</b> What the game shows now: a mostly fixed shine on Silver, a gentle angle change on Gold, the rainbow wash on Top Secret.',
   B: '<b>B · Moving light.</b> A bright band travels all the way across the card as you tilt, with a soft hot spot where the light lands.',
   C: '<b>C · Foil.</b> B, plus a texture for each finish that only shows in the light: brushed metal on Silver, fine glitter on Gold, sliding prism bands on Top Secret.',
   D: '<b>D · Full holo.</b> C turned up, and the frame itself shimmers and glows as it catches the light.',
-  E: '<b>E · Pocket.</b> Drag the card and it turns in 3D, springing back when you let go. Foil streaks slide across the frame and the paper, stars twinkle as the light passes, and a glare moves against the tilt. The photo stays matte.',
+  E: '<b>E · Pocket.</b> Finger only, no phone tilt. Drag the card and it turns in 3D, springing back when you let go. Foil streaks slide across the frame and the paper, stars twinkle as the light passes, and a glare moves against the tilt. The photo stays matte.',
   F: '<b>F · Pocket, rainbow rare.</b> E, plus a faint prism running through the photo on Top Secret.'
 };
 let fin = 'gold', opt = 'E';
@@ -169,8 +169,8 @@ const drag = e => { const p = e.touches ? e.touches[0] : e; const b = stage.getB
 stage.addEventListener('pointermove', e => { if (e.pointerType === 'mouse' || e.buttons) drag(e); });
 stage.addEventListener('touchmove', e => { e.preventDefault(); drag(e); }, { passive: false });
 let tiltOn = false;
-window.addEventListener('deviceorientation', e => { if (e.gamma == null) return; tiltOn = true; const x = Math.max(-.5, Math.min(.5, e.gamma / 50)), y = Math.max(-.5, Math.min(.5, (e.beta - 45) / 50)); light(x, y, true); if (!fingerDown && /optE|optF/.test($('lab').className)) set3d(x * .6, y * .6, false); });
-(function idle() { if (Date.now() - touched > 1500) { t += 0.012; light(Math.sin(t) * 0.38, Math.cos(t * 0.7) * 0.3); if (!fingerDown && !tiltOn && /optE|optF/.test($('lab').className)) set3d(Math.sin(t) * 0.22, Math.cos(t * 0.7) * 0.16, false); } requestAnimationFrame(idle); })();
+window.addEventListener('deviceorientation', e => { if (e.gamma == null) return; tiltOn = true; const x = Math.max(-.5, Math.min(.5, e.gamma / 50)), y = Math.max(-.5, Math.min(.5, (e.beta - 45) / 50)); light(x, y, true); });
+(function idle() { if (Date.now() - touched > 1500) { t += 0.012; light(Math.sin(t) * 0.38, Math.cos(t * 0.7) * 0.3); if (!fingerDown && /optE|optF/.test($('lab').className)) set3d(Math.sin(t) * 0.22, Math.cos(t * 0.7) * 0.16, false); } requestAnimationFrame(idle); })();
 if (typeof DeviceOrientationEvent !== 'undefined' && typeof DeviceOrientationEvent.requestPermission === 'function') {
   $('tilt').hidden = false;
   $('tilt').onclick = () => DeviceOrientationEvent.requestPermission().then(r => { $('tilt').hidden = r === 'granted'; $('tnote').textContent = r === 'granted' ? 'Tilt is on.' : 'Tilt was not allowed; drag on the card instead.'; }).catch(() => { $('tnote').textContent = 'Tilt is not available here; drag on the card instead.'; });
