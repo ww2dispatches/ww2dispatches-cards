@@ -1070,3 +1070,14 @@ html.ztrial #stage2{cursor:zoom-in}
 .cf.lv .pg{mix-blend-mode:normal;opacity:.45}
 .setline{font-family:var(--type);font-size:14px;color:#a8c48a;text-align:center;margin:-8px 0 14px}.setline:empty{display:none}
 .promostamp.pinstamp svg{width:70%;height:70%}
+
+/* several honors at once (1 Nov 2026): side by side, slamming down one after another, a line each below */
+.honors{display:flex;justify-content:center;align-items:center;gap:10px;margin:0 auto 4px;min-height:130px}
+.hon{animation:promoslam .6s cubic-bezier(.2,1.4,.4,1) both;animation-delay:var(--d,0s)}
+.hon.hm{width:130px;height:130px;color:#D9A93E}
+.hon.hp{width:78px;height:78px}
+.hon svg{width:100%;height:100%;display:block}
+.honlist{list-style:none;padding:0;margin:10px 0 4px;text-align:left}
+.honlist li{display:flex;justify-content:space-between;gap:10px;padding:8px 2px;border-bottom:1px solid rgba(201,188,158,.25)}
+.honlist b{font-family:var(--display);font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:15px;color:#EDE4CF}
+.honlist span{font-family:var(--type);font-size:14px;color:#cbbf9f;white-space:nowrap}

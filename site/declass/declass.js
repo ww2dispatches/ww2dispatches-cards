@@ -30,6 +30,14 @@
   try { localStorage.removeItem('declass_zoom'); } catch (e) {}
   if (zoomTrial) document.documentElement.classList.add('ztrial');
 
+  // Ceremony preview (1 Nov 2026): ?ceremony=demo plays a month stamp, a pin, then several at once, with sample
+  // names, so the moments can be checked without waiting for a month to close. Nothing is saved.
+  let ceremonyDemo = false;
+  try {
+    const url = new URL(location.href);
+    if (url.searchParams.get('ceremony') === 'demo') { ceremonyDemo = true; url.searchParams.delete('ceremony'); history.replaceState(null, '', url.pathname + url.search + url.hash); }
+  } catch (e) {}
+
   function api(path, body) {
     return fetch('/api/' + path, {
       method: body ? 'POST' : 'GET',
@@ -631,6 +639,13 @@
   // A month that closed since the player last looked: its stamp lands on the next visit to home, once.
   // Only stamps from the last two weeks, so a new phone or browser doesn't replay old ones.
   function homeStamps() {
+    if (ceremonyDemo && $('promo').hidden) {
+      ceremonyDemo = false;
+      const month = { kind: 'month', name: 'October 2026 files', stamp: '31 OCT 2026' };
+      const pin = (name, n, m) => ({ kind: 'pin', name, pin: [n, m] });
+      showComplete([month], () => showComplete([pin('Battle Lines', 25, 'copper')], () => showComplete([month, pin('Battle Lines', 25, 'copper'), pin('Pacific', 50, 'silver')])));
+      return;
+    }
     if (!signedIn() || !$('promo').hidden) return;
     const seen = stampsSeen(), recent = Date.now() - 14 * 86400000, fresh = [];
     setsSnap().stamps.forEach((v, k) => { if (!seen.has(k) && monthEnd(v.ym).getTime() > recent) fresh.push(Object.assign({ key: k }, v)); });
@@ -638,22 +653,28 @@
     markStamps(fresh.map(x => x.key));
     setTimeout(() => showComplete(fresh), 900);
   }
-  // The ceremony: a month's dated stamp, or a collection pin, slams down; several show one after another.
-  function showComplete(list) {
+  // The ceremony: a month's dated stamp, or a collection pin, slams down. When several land at once they share
+  // one screen (1 Nov 2026): the stamp and pins slam down side by side, one after another, with a line each below.
+  function honorArt(x) { return x.kind === 'month' ? stampSVG(x.name.toUpperCase(), x.stamp) : pinSVG(x.pin[0], x.pin[1]); }
+  function showComplete(list, then) {
     if (!list.length) return;
-    const x = list[0], rest = list.slice(1);
-    let art, kick, title, note;
-    if (x.kind === 'month') {
-      art = stampSVG(x.name.toUpperCase(), x.stamp); kick = 'MONTH STAMPED'; title = x.name;
-      note = 'Every dispatch from that month is in your dossier. The stamp is yours for good.';
+    const done = () => { $('promo').hidden = true; if (then) setTimeout(then, 250); };
+    if (list.length === 1) {
+      const x = list[0];
+      const kick = x.kind === 'month' ? 'MONTH STAMPED' : 'PIN EARNED';
+      const note = x.kind === 'month' ? 'Every dispatch from that month is in your dossier. The stamp is yours for good.'
+        : `${x.pin[0]} different cards in ${x.name}.` + (x.pin[0] < 100 ? ` Next pin at ${x.pin[0] === 25 ? 50 : 100}.` : ' The top pin.');
+      $('promo').innerHTML = `<div class="promocard"><div class="promostamp setstamp${x.kind === 'pin' ? ' pinstamp' : ''}">${honorArt(x)}</div><p class="promokick">${kick}</p><h2>${esc(x.name)}</h2><p class="sheetnote">${esc(note)}</p><button class="btn" id="promoOk">Carry on</button></div>`;
+      $('promo').hidden = false;
+      sfx('stampA'); sfx('goldA', 0.3); sfx('boom', 0.05);
     } else {
-      art = pinSVG(x.pin[0], x.pin[1]); kick = 'PIN EARNED'; title = x.name;
-      note = `${x.pin[0]} different cards in ${x.name}.` + (x.pin[0] < 100 ? ` Next pin at ${x.pin[0] === 25 ? 50 : 100}.` : ' The top pin.');
+      const items = list.slice(0, 4);
+      const line = x => x.kind === 'month' ? `<li><b>${esc(x.name)}</b><span>Stamped for good</span></li>` : `<li><b>${esc(x.name)}</b><span>${x.pin[0]} card pin</span></li>`;
+      $('promo').innerHTML = `<div class="promocard"><div class="honors">${items.map((x, i) => `<div class="hon ${x.kind === 'month' ? 'hm' : 'hp'}" style="--d:${i * 0.45}s">${honorArt(x)}</div>`).join('')}</div><p class="promokick">${items.length} NEW HONORS</p><ul class="honlist">${items.map(line).join('')}</ul><button class="btn" id="promoOk">Carry on</button></div>`;
+      $('promo').hidden = false;
+      items.forEach((x, i) => setTimeout(() => { sfx('stampA'); if (i === items.length - 1) { sfx('goldA', 0.3); sfx('boom', 0.05); } }, i * 450 + 150));
     }
-    $('promo').innerHTML = `<div class="promocard"><div class="promostamp setstamp${x.kind === 'pin' ? ' pinstamp' : ''}">${art}</div><p class="promokick">${kick}</p><h2>${esc(title)}</h2><p class="sheetnote">${esc(note)}</p><button class="btn" id="promoOk">${rest.length ? 'Next' : 'Carry on'}</button></div>`;
-    $('promo').hidden = false;
-    sfx('stampA'); sfx('goldA', 0.3); sfx('boom', 0.05);
-    $('promoOk').onclick = () => { $('promo').hidden = true; if (rest.length) setTimeout(() => showComplete(rest), 250); };
+    $('promoOk').onclick = done;
   }
   function bumpIntel(n) {
     if (cIntel == null) return;
