@@ -141,25 +141,54 @@
     }, 600 * (n + 1));
   }, true);
 
-  // ---------- the light on gold and Top Secret (Card Finishes mockup) ----------
+  // ---------- the light on the finishes ----------
+  // The light drifts slowly on its own, so every foil card shimmers a little at rest. A mouse moves it on a
+  // computer. On a phone only the full screen view takes a finger (the card turns in 3D there); phone tilt
+  // was dropped on 31 Oct 2026, the way Pokémon TCG Pocket does it, so there is no motion permission to ask for.
   let lightTouched = 0, lightT = 0;
-  function setLight(x, y, manual) {
-    if (manual) lightTouched = Date.now();
-    const r = document.documentElement.style;
+  // x and y run -0.5..0.5; el takes the variables (the root by default, or one card in the full screen view)
+  function foilVars(el, x, y) {
+    const r = el.style, tx = x * 2, ty = y * 2;
     r.setProperty('--ang', (135 + x * 60) + 'deg');
     r.setProperty('--ang2', (45 + y * 90) + 'deg');
     r.setProperty('--pos', (50 + x * 80) + '% ' + (50 + y * 80) + '%');
     r.setProperty('--gang', (118 + x * 50) + 'deg');
+    r.setProperty('--tx', tx.toFixed(3)); r.setProperty('--ty', ty.toFixed(3));
+    r.setProperty('--gx', (50 + tx * 70) + '%');
+    r.setProperty('--gx2', (50 - tx * 45) + '%'); r.setProperty('--gy2', (50 - ty * 45) + '%');
+    r.setProperty('--sx', (50 + tx * 60) + '%'); r.setProperty('--sy', (50 + ty * 60) + '%');
+    r.setProperty('--sx2', (50 - tx * 50) + '%'); r.setProperty('--sy2', (30 - ty * 50) + '%');
   }
-  // A real mouse moves the light. On phones only a finger drag does: iPhone Safari sends a fake
-  // mouse move before each tap, and if the page changes during it, Safari swallows the tap.
+  function setLight(x, y, manual) {
+    if (manual) lightTouched = Date.now();
+    foilVars(document.documentElement, x, y);
+  }
+  // A real mouse moves the light; iPhone Safari sends a fake mouse move before each tap, so touch never does here.
   document.addEventListener('pointermove', e => { if (e.pointerType === 'mouse') setLight(e.clientX / innerWidth - 0.5, e.clientY / innerHeight - 0.5, true); });
-  document.addEventListener('touchmove', e => { const t = e.touches[0]; if (t) setLight(t.clientX / innerWidth - 0.5, t.clientY / innerHeight - 0.5, true); }, { passive: true });
-  window.addEventListener('deviceorientation', e => { if (e.gamma != null) setLight(Math.max(-0.5, Math.min(0.5, e.gamma / 60)), Math.max(-0.5, Math.min(0.5, (e.beta - 45) / 60)), true); });
   (function idle() {
     if (!document.hidden && Date.now() - lightTouched > 1500) { lightT += 0.01; setLight(Math.sin(lightT) * 0.35, Math.cos(lightT * 0.7) * 0.35); }
     requestAnimationFrame(idle);
   })();
+  // The reveal rock: a foil card turns on its own for a moment as it lands face up, so the foil sweeps across
+  // and everyone sees it shimmer. Silver short and gentle, Gold fuller, Top Secret the full swing and a second sway.
+  function rockCard(cf, finish) {
+    if (!cf || finish === 'copper') return;
+    if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const R = { silver: [1700, 0.55, 0.3, 0], gold: [2400, 0.85, 0.45, 0], topsecret: [3000, 1, 0.5, 1] }[finish] || [2400, 0.85, 0.45, 0];
+    const t0 = performance.now(), D = R[0] + R[3] * 1100;
+    cf.classList.add('rock'); cf.classList.remove('rest');
+    const step = now => {
+      if (!cf.isConnected) return;
+      const k1 = Math.min(1, (now - t0) / R[0]), e = Math.sin(k1 * Math.PI);
+      let tx = Math.sin(k1 * Math.PI * 2) * R[1] * e, ty = Math.sin(k1 * Math.PI + 0.6) * R[2] * e;
+      if (R[3] && now - t0 > R[0]) { const k2 = (now - t0 - R[0]) / 1100, e2 = Math.sin(Math.min(1, k2) * Math.PI); tx = Math.sin(k2 * Math.PI * 2) * 0.35 * e2; ty = -Math.sin(k2 * Math.PI) * 0.2 * e2; }
+      foilVars(cf, tx / 2, ty / 2);
+      cf.style.setProperty('--rx', (tx * 22).toFixed(2)); cf.style.setProperty('--ry', (-ty * 22).toFixed(2));
+      if (now - t0 < D) requestAnimationFrame(step);
+      else { cf.classList.add('rest'); cf.style.setProperty('--rx', '0'); cf.style.setProperty('--ry', '0'); setTimeout(() => { if (cf.isConnected) { cf.classList.remove('rock', 'rest'); ['--ang', '--ang2', '--pos', '--gang', '--tx', '--ty', '--gx', '--gx2', '--gy2', '--sx', '--sy', '--sx2', '--sy2', '--rx', '--ry'].forEach(v => cf.style.removeProperty(v)); } }, 1200); }
+    };
+    requestAnimationFrame(step);
+  }
 
   // Film speaker icons (29 Oct 2026): muted shows a cross, playing shows sound waves on red, a silent film a slashed speaker.
   const SPK_OFF = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9h4l5-4v14l-5-4H3z" fill="currentColor"/><path d="M16 9.5l5 5M21 9.5l-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>';
@@ -176,7 +205,9 @@
     // A Flash card (Roadmap, Flash cards plan) is full art and always Top Secret: no frame, no rim, no badge,
     // no serial. The holographic shine drifts over the art itself (decided 25 Oct 2026, take A).
     if (info.flash) return `<div class="cf flash"><div class="frame"><div class="card">${media}<span class="holo"></span><span class="glare"></span></div></div></div>`;
-    return `<div class="cf f-${finish}"><div class="frame"><div class="card">${media}<span class="sheen"></span><span class="badge">Top Secret</span>${info.kind === 'namethis' ? '<span class="ansst">ANSWER</span>' : ''}</div><span class="corner c1"></span><span class="corner c2"></span><span class="corner c3"></span><span class="corner c4"></span><span class="serial">${serial ? 'Worldwide serial ' + ser4(serial) : ''}</span></div></div>`;
+    // The foil (31 Oct 2026, the Pocket system from the holo lab): streaks on the border, a texture per finish, a glare.
+    const foil = finish === 'copper' ? '' : '<span class="pf"></span><span class="ps"></span><span class="ps2"></span><span class="pg"></span>';
+    return `<div class="cf f-${finish}"><div class="frame"><div class="card">${media}<span class="sheen"></span>${foil}<span class="badge">Top Secret</span>${info.kind === 'namethis' ? '<span class="ansst">ANSWER</span>' : ''}</div><span class="corner c1"></span><span class="corner c2"></span><span class="corner c3"></span><span class="corner c4"></span><span class="serial">${serial ? 'Worldwide serial ' + ser4(serial) : ''}</span></div></div>`;
   }
   // Start a Living Card's film (muted). If the phone blocks it, show a play button.
   function startFilm(root, info) {
@@ -673,7 +704,6 @@
     if (!revealed.every(Boolean)) return;
     if (cardMode === 'starterLocal') { showSave(); return; }
     document.querySelectorAll('#stage video').forEach(v => v.pause());
-    document.querySelectorAll('.tiltask').forEach(el => el.remove());
     hideNote('cards');
     $('sumSub').textContent = (cardEnv && cardEnv.kind === 'request' ? 'Your requested card' : cardEnv && cardEnv.kind === 'intercept' ? 'Intercept' : slotName(pulls[0] && pulls[0].slot)) + ' · tap a card to see it again';
     $('sCards').classList.add('summ');
@@ -740,7 +770,7 @@
     $('hint').innerHTML = hintFor(p, idx);
     if (packCoach(idx, 'turn')) mark('turn');
     firstNotes(p);
-    maybeTiltPrompt(p.finish);
+    if (p.finish !== 'copper' && !(p.cardInfo && p.cardInfo.flash)) setTimeout(() => rockCard(document.querySelector('#flip .cf'), p.finish), big ? 900 : 650);
     navState();
     if (revealed.every(Boolean) && cardMode === 'starterLocal') { $('hint').textContent = "That's your starter pack."; setTimeout(showSave, 1100); }
   }
@@ -825,7 +855,6 @@
     if (p && p.cardInfo && p.cardInfo.kind === 'namethis') answered[idx] = true;
     $('flip').classList.add('out');
     sfx('page'); // a soft paper slide between cards (premium pass, 29 Oct 2026)
-    document.querySelectorAll('.tiltask').forEach(el => el.remove());
     setTimeout(() => { idx = n; renderCard(true); }, 220);
   }
   $('nextBtn').onclick = () => go(idx + 1);
@@ -883,7 +912,6 @@
   });
   function leaveCards() {
     document.querySelectorAll('#stage video').forEach(v => v.pause());
-    document.querySelectorAll('.tiltask').forEach(el => el.remove());
     duckMusic(false);
     if (pendingTeletype) { pendingTeletype = false; setTimeout(() => sfx('teletype'), 500); }
     if (cardMode === 'starterLocal') {
@@ -974,7 +1002,7 @@
     $('backView').textContent = '◀\ufe0e ' + (viewFrom === 'sSection' && label ? label : viewFrom === 'sCards' ? 'Envelope' : 'Back');
     renderView();
     show('sView');
-    if (zoomTrial && !seen('zoom')) setTimeout(() => toast('Tap the card to see it up close.'), 700);
+    if (zoomTrial && !seen('zoom')) setTimeout(() => toast('Tap the card to see it up close, then drag to turn it.'), 700);
   }
   function serialFor(pl, id, variant, finish) {
     const p = pl.find(x => x.card === id && x.variant === variant && x.finish === finish && x.serial);
@@ -1081,8 +1109,9 @@
     api('card?id=' + encodeURIComponent(info.id)).then(d => { DETAIL.set(info.id, d.card); paint(d.card); if (viewList[vi] === info.id) paintFile(info, h, d.card); }).catch(() => { $('ctext').innerHTML = ''; });
   }
   // ---------- full screen card with zoom (29 Oct 2026) ----------
-  // Tap the card in the card view: it fills the screen on a dark backdrop in its finish. Pinch or double
-  // tap to zoom, drag to move around, then the X, a tap on the backdrop, a swipe down, or Esc to close.
+  // Tap the card in the card view: it fills the screen on a dark backdrop in its finish. Drag the card and it
+  // turns in 3D under the finger and springs back when let go (31 Oct 2026, the Pocket system); double tap or
+  // pinch to zoom, and when zoomed a drag moves around instead. The X, a tap on the backdrop, or Esc closes.
   // Sideways swipes never page to the next card here.
   const Z = { s: 1, x: 0, y: 0, pts: new Map(), pinch: null, pan: null, tap: null, lastTap: null, moved: false };
   function zApply(anim) {
@@ -1116,12 +1145,29 @@
     $('zoomer').hidden = false; document.body.classList.add('zopen');
     requestAnimationFrame(() => $('zoomer').classList.add('on'));
     zApply(false); sfx('slide', 0.5);
+    if (viewSel.finish !== 'copper' && !info.flash) setTimeout(() => { if (!Z.pan) rockCard(document.querySelector('#zcard .cf'), 'silver'); }, 350);
   }
   function closeZoom() {
     if ($('zoomer').hidden) return;
     document.querySelectorAll('#zstage video').forEach(v => v.pause());
     $('zoomer').classList.remove('on', 'zoomed'); document.body.classList.remove('zopen');
     setTimeout(() => { $('zoomer').hidden = true; $('zstage').innerHTML = ''; const v = document.querySelector('#stage2 video'); if (v) v.play().catch(() => {}); }, 200);
+  }
+  // The 3D turn in the full screen view: the finger's place on the card sets the angle (up to 22 degrees).
+  function zTurn(px, py, rest) {
+    const cf = document.querySelector('#zcard .cf'); if (!cf) return;
+    const r = cf.getBoundingClientRect();
+    const tx = Math.max(-1, Math.min(1, ((px - r.left) / r.width - 0.5) * 2)), ty = Math.max(-1, Math.min(1, ((py - r.top) / r.height - 0.5) * 2));
+    cf.classList.add('rock'); cf.classList.toggle('rest', Boolean(rest));
+    foilVars(cf, tx / 2, ty / 2);
+    cf.style.setProperty('--rx', (tx * 22).toFixed(2)); cf.style.setProperty('--ry', (-ty * 22).toFixed(2));
+    lightTouched = Date.now();
+  }
+  function zTurnRest() {
+    const cf = document.querySelector('#zcard .cf'); if (!cf) return;
+    cf.classList.add('rest'); cf.style.setProperty('--rx', '0'); cf.style.setProperty('--ry', '0');
+    // hand the light back to the drift once it has settled
+    setTimeout(() => { if (cf.isConnected && !Z.pan) ['--ang', '--ang2', '--pos', '--gang', '--tx', '--ty', '--gx', '--gx2', '--gy2', '--sx', '--sy', '--sx2', '--sy2'].forEach(v => cf.style.removeProperty(v)); }, 1200);
   }
   (function wireZoom() {
     const zs = $('zstage');
@@ -1135,6 +1181,7 @@
         Z.pinch = { d: Math.hypot(a.x - b.x, a.y - b.y), s: Z.s, mx: (a.x + b.x) / 2, my: (a.y + b.y) / 2, x: Z.x, y: Z.y }; Z.pan = null; Z.moved = true;
       } else if (Z.pts.size === 1) {
         Z.pan = { x: e.clientX, y: e.clientY, ox: Z.x, oy: Z.y }; Z.moved = false; Z.tap = { x: e.clientX, y: e.clientY, t: Date.now() };
+        if (Z.s === 1 && e.target.closest('#zcard')) { zTurn(e.clientX, e.clientY, true); setTimeout(() => { const cf = document.querySelector('#zcard .cf'); if (cf && Z.pan) cf.classList.remove('rest'); }, 250); }
       }
     });
     zs.addEventListener('pointermove', e => {
@@ -1152,7 +1199,7 @@
         const dx = e.clientX - Z.pan.x, dy = e.clientY - Z.pan.y;
         if (Math.hypot(dx, dy) > 8) Z.moved = true;
         if (Z.s > 1) { Z.x = Z.pan.ox + dx; Z.y = Z.pan.oy + dy; zClamp(); zApply(false); }
-        else if (dy > 0) { $('zcard').style.transition = 'none'; $('zcard').style.transform = `translateY(${dy}px)`; $('zoomer').style.setProperty('--zfade', String(Math.max(0.3, 1 - dy / 400))); }
+        else zTurn(e.clientX, e.clientY, false);
       }
     });
     const up = e => {
@@ -1161,8 +1208,7 @@
       if (Z.pinch) { if (Z.pts.size < 2) { Z.pinch = null; const p = [...Z.pts.values()][0]; Z.pan = p ? { x: p.x, y: p.y, ox: Z.x, oy: Z.y } : null; } return; }
       const pan = Z.pan; Z.pan = null; $('zoomer').style.removeProperty('--zfade');
       if (!pan) return;
-      const dy = e.clientY - pan.y;
-      if (Z.s === 1 && Z.moved) { if (dy > 90) closeZoom(); else zApply(true); return; }
+      if (Z.s === 1 && Z.moved) { zTurnRest(); return; }
       if (Z.moved) return;
       // A tap: a double tap zooms in to 2.5x at that spot (or back out); a single tap on the backdrop closes.
       const now = Date.now(), onCard = e.target.closest('#zcard');
@@ -1360,40 +1406,8 @@
   });
   paintSnd();
 
-  // ---------- iPhone tilt (asked once, on the first gold or Top Secret card) ----------
-  const TILT_KEY = 'declass_tilt';
-  // Only phones and tablets: Safari on a Mac also has the permission call, but no motion sensor (30 Oct 2026).
-  const tiltNeedsAsk = () => typeof DeviceOrientationEvent !== 'undefined' && typeof DeviceOrientationEvent.requestPermission === 'function'
-    && navigator.maxTouchPoints > 0 && matchMedia('(pointer: coarse)').matches;
   const lsGet = k => { try { return localStorage.getItem(k); } catch (e) { return null; } };
   const lsSet = (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} };
-  function askTilt() {
-    return DeviceOrientationEvent.requestPermission().then(r => {
-      lsSet(TILT_KEY, r === 'granted' ? 'granted' : 'declined');
-      toast(r === 'granted' ? 'Tilt is on. Move your phone to catch the light.' : 'Tilt stays off. Drag a finger across the card to move the light.');
-    }).catch(() => lsSet(TILT_KEY, 'declined'));
-  }
-  let tiltResumed = false;
-  // A permission given earlier still needs a tap each visit to switch back on. Ask only when the light
-  // matters (a gold or Top Secret card turning), never on just any tap (26 Oct 2026: iPhones showed
-  // Apple's motion prompt again on the first tap of a visit).
-  function tiltResume() {
-    if (tiltResumed || !tiltNeedsAsk() || lsGet(TILT_KEY) !== 'granted') return;
-    tiltResumed = true; DeviceOrientationEvent.requestPermission().catch(() => {});
-  }
-  function maybeTiltPrompt(finish) {
-    if (finish !== 'gold' && finish !== 'topsecret') return;
-    tiltResume();
-    if (!tiltNeedsAsk() || lsGet(TILT_KEY)) return;
-    lsSet(TILT_KEY, 'asked'); // asked once, even if the player just swipes past it
-    const box = document.createElement('div');
-    box.className = 'tiltask';
-    box.innerHTML = '✨ Tilt your phone to catch the light.<br><button class="yes" type="button">Turn on tilt</button><button class="no" type="button">Not now</button>';
-    box.querySelector('.yes').onclick = e => { e.stopPropagation(); box.remove(); askTilt(); };
-    box.querySelector('.no').onclick = e => { e.stopPropagation(); box.remove(); lsSet(TILT_KEY, 'notnow'); };
-    $('hint').after(box);
-  }
-  if (tiltNeedsAsk()) { $('howTilt').hidden = false; $('howTilt').onclick = () => askTilt(); }
 
   // ---------- sharing (Declass Share Button mockup) ----------
   const RANK = f => FIN.indexOf(f);

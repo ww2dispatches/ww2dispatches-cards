@@ -342,9 +342,6 @@ button:focus-visible,.env:focus-visible{outline:3px solid var(--brass);outline-o
 .srow i{display:block;height:4px;background:#e2d6b8;margin-top:5px}.srow i em{display:block;height:100%;background:var(--c)}
 .spins{display:flex;gap:3px}.spin{width:26px;height:26px}
 .snote{font-family:var(--type);font-size:10.5px;color:var(--mute);margin:12px 0 0;line-height:1.5}
-.tiltask{margin:8px auto 0;text-align:center;font-family:var(--type);font-size:12px;color:var(--ink)}
-.tiltask button{font-family:var(--display);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:12px;border-radius:3px;padding:7px 12px;margin:6px 4px 0;cursor:pointer}
-.tiltask .yes{background:var(--red);color:var(--paper);border:0}.tiltask .no{background:none;border:0;color:var(--mute);text-decoration:underline}
 .filegood{font-family:var(--display);font-weight:700;letter-spacing:.14em;color:#1f3f6e;border:3px solid #1f3f6e;border-radius:3px;padding:2px 10px;display:inline-block;transform:rotate(-4deg);margin:0 0 8px}
 
 /* one toolbar row: Sound, Music, How to play */
@@ -694,13 +691,13 @@ body{background-color:#17140f;background-attachment:fixed;
 .wordmark small,.top .wordmark small,.streak,#sHome .top .streak,#sHome .top .streak span,.statrow .streak span,
 .sub,h2 small,.linkbtn,.slotbtn span,.signbar span,.nextfile,.tile span,#yearTiles .tile span,.allbtn span,.filters button,
 .mini .no,.tearing,.count,.backf small,.hint,.summary .sumsub,.s4.flashnote,.rowlbl,.ctext .kick,.ctext .m,.ntclue,.prow span,.notyet,
-.history,.landfrom,.landtag,.landsmall,.toast,.foot,.shpc small,.shlbl,.shline,.srow small,.snote,.tiltask,.fmnav button,.fmnote,
+.history,.landfrom,.landtag,.landsmall,.toast,.foot,.shpc small,.shlbl,.shline,.srow small,.snote,.fmnav button,.fmnote,
 .syear summary small,.stat,.earn,.sheetline,.intlog li,.reqopt span,.mini .reqline,.oneshort,.tourbub .tstep,.tourbub .tskip,.fnote .k,
 .icptile span{font-size:14px}
 .s4 small{font-size:13px}
 .slimrow .intelst span:last-child,.intelst span:last-child{font-size:14px}
 /* display caps labels */
-.back,.nav button,.ctext .more,.history h3,.tiltask button,.howtab,.fnote button,.mini .nm,.slotbtn::after,.icptile::after{font-size:14px}
+.back,.nav button,.ctext .more,.history h3,.howtab,.fnote button,.mini .nm,.slotbtn::after,.icptile::after{font-size:14px}
 .slotbtn.locked::after{font-size:13px}
 .howbtn,.tbtn{font-size:13px}
 .tag,.s4,.ctext h4,.howstamp,.sets2 h2,.fmodds th,.fmodds tr.tot td,.filters .subj span,.btn.reqgo small,.stat .sl,.history .fin{font-size:13px}
@@ -793,7 +790,7 @@ h2{flex-wrap:wrap;row-gap:2px}
 #sCards>#count{grid-column:2;text-align:right;margin:0}
 #sCards.summ>#backCards{grid-column:1/-1}
 #sCards .viewer{display:flex;flex-direction:column;width:100%;max-width:min(340px,calc((100vh - 215px) / 1.5));max-width:min(340px,calc((100svh - 215px) / 1.5))}
-#sCards .viewer>.hint,#sCards .viewer>.tiltask{order:-1}
+#sCards .viewer>.hint{order:-1}
 #sCards .viewer>.hint{margin:0 0 10px;min-height:0}
 #sCards .tray{margin-top:14px;width:100%;align-self:stretch}
 
@@ -893,7 +890,6 @@ button:not(.tr):not(.mini):active,.slotbtn:active,.tile:active,.allbtn:active,.s
 @keyframes hts{to{--ha:360deg}}
 /* 4 · set complete: the dated round stamp in brass */
 .promostamp.setstamp{color:#D9A93E;width:190px;height:190px}
-#sCards .viewer>.tiltask{margin:0 0 16px}
 
 /* Declassified file (29 Oct 2026): the bar under the finish row, the unfolded panel, and the folder mark on Gold and Top Secret squares. */
 .s4{position:relative}
@@ -958,7 +954,7 @@ button:not(.tr):not(.mini):active,.slotbtn:active,.tile:active,.allbtn:active,.s
 .zoomer.zoomed .zhint{opacity:0}
 body.zopen{overflow:hidden}
 html.ztrial #stage2{cursor:zoom-in}
-.zoomer.zoomed .cf .sheen,.zoomer.zoomed .cf .holo,.zoomer.zoomed .cf .glare{opacity:0;transition:opacity .2s}
+.zoomer.zoomed .cf .sheen,.zoomer.zoomed .cf .holo,.zoomer.zoomed .cf .glare,.zoomer.zoomed .cf .pf,.zoomer.zoomed .cf .ps,.zoomer.zoomed .cf .ps2,.zoomer.zoomed .cf .pg{opacity:0;transition:opacity .2s}
 .srow small .ph{white-space:nowrap}
 /* Card view, tightened (29 Oct 2026): header rows closer, slimmer Prev and Next, finish row closer, card size unchanged. */
 #sView #backView{padding:6px 0 2px}
@@ -1020,3 +1016,46 @@ html.ztrial #stage2{cursor:zoom-in}
 /* Top Secret serial (31 Oct 2026): it sat on the frame's inner rule, which struck through it. It now sits
    between that rule and the card on a small pale label, readable over the holographic frame. */
 .cf.f-topsecret .serial{left:50%;right:auto;transform:translateX(-50%);bottom:2.3cqw;height:3.4cqw;padding:0 1.8cqw;font-size:2.5cqw;line-height:1;background:rgba(246,248,251,.9);border-radius:.6cqw;box-shadow:0 0 0 1px rgba(40,44,50,.25)}
+
+/* ============ The foil (31 Oct 2026): the Pocket system, built in the holo lab ============
+   Silver, Gold, and Top Secret cards carry foil on the border (the frame and the cream bands above and below the
+   photo; the photo box, 3.2% in and 11.6% to 88.3% down on every card, stays matte), a texture per finish, and a
+   glare that moves against the tilt. The light drifts on its own; in the full screen view a finger turns the card
+   in 3D (.rock), and a card rocks on its own as it lands face up in an envelope. Copper and Flash are untouched. */
+:root{--star:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'%3E%3Ccircle cx='30' cy='30' r='7.2' fill='%23ffd3e0' opacity='.4'/%3E%3Cpath d='M30 18 L32.4 27.6 L42 30 L32.4 32.4 L30 42 L27.6 32.4 L18 30 L27.6 27.6 Z' fill='%23fff'/%3E%3C/svg%3E"), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'%3E%3Ccircle cx='30' cy='30' r='4.8' fill='%23cfe8ff' opacity='.4'/%3E%3Cpath d='M30 22 L31.6 28.4 L38 30 L31.6 31.6 L30 38 L28.4 31.6 L22 30 L28.4 28.4 Z' fill='%23fff6d6'/%3E%3C/svg%3E"), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'%3E%3Ccircle cx='30' cy='30' r='3.0' fill='%23fff6c4' opacity='.4'/%3E%3Cpath d='M30 25 L31.0 29.0 L35 30 L31.0 31.0 L30 35 L29.0 31.0 L25 30 L29.0 29.0 Z' fill='%23ffffff'/%3E%3C/svg%3E");--star2:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'%3E%3Ccircle cx='30' cy='30' r='5.4' fill='%23e6d4ff' opacity='.4'/%3E%3Cpath d='M30 21 L31.8 28.2 L39 30 L31.8 31.8 L30 39 L28.2 31.8 L21 30 L28.2 28.2 Z' fill='%23ffffff'/%3E%3C/svg%3E");--glint:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'%3E%3Ccircle cx='30' cy='30' r='3.0' fill='%239fc4ff' opacity='.4'/%3E%3Cpath d='M30 25 L31.0 29.0 L35 30 L31.0 31.0 L30 35 L29.0 31.0 L25 30 L29.0 29.0 Z' fill='%23eaf2ff'/%3E%3C/svg%3E"), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'%3E%3Ccircle cx='30' cy='30' r='2.4' fill='%23b9d4ff' opacity='.4'/%3E%3Cpath d='M30 26 L30.8 29.2 L34 30 L30.8 30.8 L30 34 L29.2 30.8 L26 30 L29.2 29.2 Z' fill='%23ffffff'/%3E%3C/svg%3E")}
+.cf.f-silver .sheen,.cf.f-gold .sheen,.cf.f-topsecret .sheen{display:none}
+.cf.f-gold .frame::after{display:none}
+.cf .pf,.cf .ps,.cf .ps2,.cf .pg{position:absolute;inset:0;pointer-events:none;z-index:2}
+.cf .pf{-webkit-mask:linear-gradient(#000 0 0),linear-gradient(#000 0 0) center/93.6% 76.7% no-repeat;-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0),linear-gradient(#000 0 0) center/93.6% 76.7% no-repeat;mask-composite:exclude}
+.cf .pf{background:var(--streaks);background-size:260% 260%;background-position:calc(50% + var(--tx,0) * 45%) calc(50% + var(--ty,0) * 45%);mix-blend-mode:multiply;opacity:.95}
+.cf .pf::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 0%,transparent calc(var(--gx,50%) - 18%),rgba(255,255,255,.55) calc(var(--gx,50%) - 3%),rgba(255,255,255,.85) var(--gx,50%),rgba(255,255,255,.55) calc(var(--gx,50%) + 3%),transparent calc(var(--gx,50%) + 18%));mix-blend-mode:screen}
+.cf.f-silver{--streaks:repeating-linear-gradient(118deg,#dfe7f0 0,#aebfd6 6%,#f3f6fa 11%,#c9b8d8 16%,#dfe7f0 22%)}
+.cf.f-gold{--streaks:repeating-linear-gradient(118deg,#f7e3a8 0,#e2a93a 6%,#fff3c9 11%,#f2b56a 16%,#f7e3a8 22%)}
+.cf.f-topsecret{--streaks:repeating-linear-gradient(118deg,#ffd6e0 0,#fff2c4 4%,#d4f7dc 8%,#cfe6ff 12%,#e6d4ff 16%,#ffd6e0 20%)}
+.cf .ps,.cf .ps2{mix-blend-mode:screen;opacity:1}
+.cf .ps{-webkit-mask:var(--winA),linear-gradient(#000 0 0) center/93.6% 76.7% no-repeat;-webkit-mask-composite:source-out;mask:var(--winA),linear-gradient(#000 0 0) center/93.6% 76.7% no-repeat;mask-composite:subtract}
+.cf .ps2{-webkit-mask:var(--winB),linear-gradient(#000 0 0) center/93.6% 76.7% no-repeat;-webkit-mask-composite:source-out;mask:var(--winB),linear-gradient(#000 0 0) center/93.6% 76.7% no-repeat;mask-composite:subtract}
+/* Silver: brushed metal lit by a narrow streak, and a few cool glints */
+.cf.f-silver .ps{background:repeating-linear-gradient(0deg,rgba(255,255,255,.3) 0 1px,transparent 1px 3px);opacity:.75;--winA:linear-gradient(115deg,transparent calc(var(--gx,50%) - 14%),#000 calc(var(--gx,50%) - 2%),#000 calc(var(--gx,50%) + 2%),transparent calc(var(--gx,50%) + 14%))}
+.cf.f-silver .ps2{background-image:var(--glint);background-size:96px 96px,131px 131px;background-position:11px 7px,53px 61px;opacity:.9;--winB:radial-gradient(circle at var(--sx,50%) var(--sy,50%),#000 0,rgba(0,0,0,.5) 10%,transparent 26%)}
+/* Gold: fine glitter inside a broad warm window, two layers so it sparkles */
+.cf.f-gold .ps{background:radial-gradient(circle,#fff8dc 0 .7px,rgba(255,215,120,.9) 1px,transparent 1.5px) 0 0/7px 7px,radial-gradient(circle,#ffe9a8 0 .6px,transparent 1.2px) 3px 4px/9px 9px;--winA:radial-gradient(ellipse 60% 50% at var(--sx,50%) var(--sy,50%),#000 0,rgba(0,0,0,.55) 30%,transparent 62%)}
+.cf.f-gold .ps2{background:radial-gradient(circle,#fff 0 .8px,rgba(255,200,90,.9) 1.1px,transparent 1.7px) 2px 1px/11px 11px,radial-gradient(circle,#fff3c4 0 .6px,transparent 1.2px) 6px 7px/13px 13px;--winB:radial-gradient(ellipse 50% 42% at var(--sx2,50%) var(--sy2,50%),#000 0,rgba(0,0,0,.5) 28%,transparent 58%)}
+/* Top Secret: the stars, with tinted halos, and tiny prismatic dots between them */
+.cf.f-topsecret .ps{background-image:var(--star);background-size:52px 52px,74px 74px,38px 38px;background-position:3px 5px,27px 39px,9px 2px;--winA:radial-gradient(circle at var(--sx,50%) var(--sy,50%),#000 0,rgba(0,0,0,.65) 16%,transparent 38%)}
+.cf.f-topsecret .ps2{background:var(--star2),radial-gradient(circle,#ffd3e0 0 .7px,transparent 1.3px) 0 0/13px 13px,radial-gradient(circle,#cfe8ff 0 .7px,transparent 1.3px) 5px 7px/17px 17px,radial-gradient(circle,#fff6c4 0 .6px,transparent 1.2px) 9px 3px/11px 11px;background-size:64px 64px,13px 13px,17px 17px,11px 11px;background-position:31px 25px,0 0,5px 7px,9px 3px;--winB:radial-gradient(circle at var(--sx2,50%) var(--sy2,50%),#000 0,rgba(0,0,0,.6) 16%,transparent 40%)}
+.cf.f-topsecret .frame::before{border:2px solid transparent;border-image:conic-gradient(from calc(var(--tx,0) * 200deg + var(--ty,0) * 120deg + 20deg),#ff7a7a,#ffe27a,#8dffb5,#7ac8ff,#d38bff,#ff7ad1,#ff7a7a) 1;box-shadow:none}
+/* glare per finish */
+.cf .pg{background:radial-gradient(ellipse var(--gw,55%) var(--gh,45%) at var(--gx2,50%) var(--gy2,50%),var(--gc,rgba(255,255,255,.55)),var(--gc2,rgba(255,255,255,.18)) 35%,transparent 70%);mix-blend-mode:screen}
+.cf.f-silver .pg{--gw:38%;--gh:34%;--gc:rgba(235,242,255,.5);--gc2:rgba(235,242,255,.12)}
+.cf.f-gold .pg{--gw:64%;--gh:52%;--gc:rgba(255,238,190,.6);--gc2:rgba(255,225,150,.2)}
+.cf.f-topsecret .pg{--gw:62%;--gh:50%;--gc:rgba(255,255,255,.7);--gc2:rgba(255,255,255,.22)}
+/* the frame catches the edge light as the light moves */
+.cf.f-silver .frame,.cf.f-gold .frame,.cf.f-topsecret .frame{background-size:220% 220%;background-position:calc(50% - var(--tx,0) * 40%) calc(50% - var(--ty,0) * 40%)}
+.cf.f-topsecret .frame::after{background-size:220% 220%;background-position:calc(50% + var(--tx,0) * 40%) calc(50% + var(--ty,0) * 40%);opacity:1}
+/* the 3D turn: under a finger in the full screen view, and the reveal rock */
+.cf.rock{transform:rotateX(calc(var(--ry,0) * 1deg)) rotateY(calc(var(--rx,0) * 1deg));transform-style:preserve-3d;will-change:transform}
+.cf.rock.rest{transition:transform 1.15s cubic-bezier(.22,1.25,.36,1)}
+#zstage,#flip .frontf{perspective:900px}
+.zoomer .zhint{transition:opacity .2s}
+@media (prefers-reduced-motion:reduce){.cf.rock{transform:none}}
