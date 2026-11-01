@@ -40,5 +40,7 @@ export async function onRequestGet({ request, env }) {
     intel: await intelSummary(env.DB, player, t),
     rank: rankInfo(filledSlots(pulls.results), player.rank_seen || 0),
     intercept: await interceptSummary(env, request, player, t),
+    // monthly stamps whose ceremony has already been shown on any device (1 Nov 2026)
+    honorsSeen: [...done].filter(k => k.startsWith('h:')).map(k => k.slice(2)),
   });
 }

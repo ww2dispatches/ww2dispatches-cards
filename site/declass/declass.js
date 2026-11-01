@@ -626,8 +626,14 @@
     return snap;
   }
   const STAMPS_SEEN = 'declass_stamps_seen';
-  const stampsSeen = () => { try { return new Set(JSON.parse(localStorage.getItem(STAMPS_SEEN) || '[]')); } catch (e) { return new Set(); } };
-  const markStamps = keys => { try { const s = stampsSeen(); keys.forEach(k => s.add(k)); localStorage.setItem(STAMPS_SEEN, JSON.stringify([...s])); } catch (e) {} };
+  // Seen on any device: the server remembers each stamp shown (honorsSeen), this browser keeps its own copy too.
+  const stampsSeen = () => { let s; try { s = new Set(JSON.parse(localStorage.getItem(STAMPS_SEEN) || '[]')); } catch (e) { s = new Set(); } ((ST && ST.honorsSeen) || []).forEach(k => s.add(k)); return s; };
+  const markStamps = keys => {
+    if (!keys.length) return;
+    try { const s = stampsSeen(); keys.forEach(k => s.add(k)); localStorage.setItem(STAMPS_SEEN, JSON.stringify([...s])); } catch (e) {}
+    if (ST) ST.honorsSeen = [...new Set((ST.honorsSeen || []).concat(keys))];
+    if (signedIn()) api('honor', { keys }).catch(() => {});
+  };
   // What an envelope earned: ceremonies for new stamps and new pins, a quiet line for sets filled in.
   function setMoments(before, after) {
     const big = [], quiet = [];
