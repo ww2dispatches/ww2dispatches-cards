@@ -1059,3 +1059,12 @@ html.ztrial #stage2{cursor:zoom-in}
 #zstage,#flip .frontf{perspective:900px}
 .zoomer .zhint{transition:opacity .2s}
 @media (prefers-reduced-motion:reduce){.cf.rock{transform:none}}
+
+/* Living Cards (31 Oct 2026): iPhone Safari draws a playing video on its own layer, so blend modes over it are
+   ignored and the multiply foil turned into a solid wash that hid the card's text. Over a film the foil uses plain
+   see-through layers instead: a light tint, a soft glint, the textures, and a gentler glare. */
+.cf.lv .pf{mix-blend-mode:normal;opacity:.22}
+.cf.lv .pf::after{mix-blend-mode:normal;opacity:.35}
+.cf.lv .ps,.cf.lv .ps2{mix-blend-mode:normal;opacity:.85}
+.cf.lv.f-silver .ps{opacity:.45}
+.cf.lv .pg{mix-blend-mode:normal;opacity:.45}

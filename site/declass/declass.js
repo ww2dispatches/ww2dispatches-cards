@@ -207,7 +207,7 @@
     if (info.flash) return `<div class="cf flash"><div class="frame"><div class="card">${media}<span class="holo"></span><span class="glare"></span></div></div></div>`;
     // The foil (31 Oct 2026, the Pocket system from the holo lab): streaks on the border, a texture per finish, a glare.
     const foil = finish === 'copper' ? '' : '<span class="pf"></span><span class="ps"></span><span class="ps2"></span><span class="pg"></span>';
-    return `<div class="cf f-${finish}"><div class="frame"><div class="card">${media}<span class="sheen"></span>${foil}<span class="badge">Top Secret</span>${info.kind === 'namethis' ? '<span class="ansst">ANSWER</span>' : ''}</div><span class="corner c1"></span><span class="corner c2"></span><span class="corner c3"></span><span class="corner c4"></span><span class="serial">${serial ? 'Worldwide serial ' + ser4(serial) : ''}</span></div></div>`;
+    return `<div class="cf f-${finish}${living ? ' lv' : ''}"><div class="frame"><div class="card">${media}<span class="sheen"></span>${foil}<span class="badge">Top Secret</span>${info.kind === 'namethis' ? '<span class="ansst">ANSWER</span>' : ''}</div><span class="corner c1"></span><span class="corner c2"></span><span class="corner c3"></span><span class="corner c4"></span><span class="serial">${serial ? 'Worldwide serial ' + ser4(serial) : ''}</span></div></div>`;
   }
   // Start a Living Card's film (muted). If the phone blocks it, show a play button.
   function startFilm(root, info) {
