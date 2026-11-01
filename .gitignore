@@ -7,3 +7,4 @@ node_modules/
 stories/audio/
 # Local Wrangler test files
 .wrangler/
+__pycache__/
