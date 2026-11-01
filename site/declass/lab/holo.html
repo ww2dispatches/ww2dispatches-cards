@@ -98,6 +98,7 @@ body{margin:0}
   <div class="seg" id="opt"><button data-o="A">A</button><button data-o="B">B</button><button data-o="C" class="on">C</button><button data-o="D">D</button><button data-o="E">E</button><button data-o="F">F</button></div>
   <p class="desc" id="desc"></p>
   <div class="stagel" id="stage"></div>
+  <button class="tiltbtn" id="reveal">Play reveal</button>
   <button class="tiltbtn" id="tilt" hidden>Turn on tilt</button>
   <p class="tnote" id="tnote"></p>
 </div>
@@ -149,7 +150,7 @@ function set3d(tx, ty, rest) {
   const r = document.documentElement.style, cf = document.querySelector('#stage .cf');
   if (cf) cf.classList.toggle('rest', Boolean(rest));
   r.setProperty('--tx', tx.toFixed(3)); r.setProperty('--ty', ty.toFixed(3));
-  r.setProperty('--rx', (tx * 13).toFixed(2)); r.setProperty('--ry', (-ty * 13).toFixed(2));
+  r.setProperty('--rx', (tx * 22).toFixed(2)); r.setProperty('--ry', (-ty * 22).toFixed(2));
   r.setProperty('--gx', (50 + tx * 70) + '%');
   r.setProperty('--gx2', (50 - tx * 45) + '%'); r.setProperty('--gy2', (50 - ty * 45) + '%');
   r.setProperty('--sx', (50 + tx * 60) + '%'); r.setProperty('--sy', (50 + ty * 60) + '%');
@@ -164,6 +165,21 @@ function wire3d() {
   cf.addEventListener('pointerup', up); cf.addEventListener('pointercancel', up); cf.addEventListener('pointerleave', e => { if (e.pointerType === 'mouse') up(); });
   cf.addEventListener('touchmove', e => e.preventDefault(), { passive: false });
 }
+// The reveal rock: the card turns on its own for a moment so the foil sweeps across, then settles.
+let rocking = false;
+function playReveal() {
+  if (rocking) return; rocking = true; touched = Date.now() + 4000;
+  const cf = document.querySelector('#stage .cf'); if (cf) cf.classList.remove('rest');
+  const t0 = performance.now(), D = 2600;
+  const step = now => {
+    const k = Math.min(1, (now - t0) / D), e = Math.sin(k * Math.PI); // swells then fades
+    const tx = Math.sin(k * Math.PI * 2) * 0.9 * e, ty = Math.sin(k * Math.PI * 1 + 0.6) * 0.45 * e;
+    set3d(tx, ty, false); light(tx / 2, ty / 2, true);
+    if (k < 1 && !fingerDown) requestAnimationFrame(step); else { rocking = false; set3d(0, 0, true); }
+  };
+  requestAnimationFrame(step);
+}
+$('reveal').onclick = playReveal;
 const stage = $('stage');
 const drag = e => { const p = e.touches ? e.touches[0] : e; const b = stage.getBoundingClientRect(); light(Math.max(-.5, Math.min(.5, (p.clientX - b.left) / b.width - .5)), Math.max(-.5, Math.min(.5, (p.clientY - b.top) / b.height - .5)), true); };
 stage.addEventListener('pointermove', e => { if (e.pointerType === 'mouse' || e.buttons) drag(e); });
