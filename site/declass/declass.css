@@ -1017,3 +1017,6 @@ html.ztrial #stage2{cursor:zoom-in}
 .big.go .env::before{opacity:1}
 .cup .cupln{align-items:baseline} /* tag text and the line share one baseline, so they read level (30 Oct 2026) */
 .cup .cupln.icpsoon .r{font-family:var(--display);font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:13px;color:#8a97ad} /* same lettering as OPENED and SEALED (30 Oct 2026) */
+/* Top Secret serial (31 Oct 2026): it sat on the frame's inner rule, which struck through it. It now sits
+   between that rule and the card on a small pale label, readable over the holographic frame. */
+.cf.f-topsecret .serial{left:50%;right:auto;transform:translateX(-50%);bottom:2.3cqw;height:3.4cqw;padding:0 1.8cqw;font-size:2.5cqw;line-height:1;background:rgba(246,248,251,.9);border-radius:.6cqw;box-shadow:0 0 0 1px rgba(40,44,50,.25)}
