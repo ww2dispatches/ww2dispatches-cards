@@ -1,6 +1,7 @@
 // Weekly Dispatch archive (/newsletter): keeps each issue hidden until it is sent,
 // Sunday 7 a.m. Mountain. Release times come from renderer/newsletter_archive.py.
-// An unreleased issue page sends the reader to the list; on any page, an element
+// An unreleased issue page sends the reader to the list, issues.json lists only
+// released issues (the home page's Latest line), and on any page an element
 // with a data-release time still in the future is removed before it is served.
 import releases from '../_data/newsletter.json';
 
@@ -17,6 +18,12 @@ export async function onRequest(context) {
   req.headers.delete('If-None-Match');
   req.headers.delete('If-Modified-Since');
   const res = await context.next(req);
+  if (url.pathname === '/newsletter/issues.json' && res.ok) {
+    const list = (await res.json()).filter((it) => Date.parse(it.release) <= now);
+    return new Response(JSON.stringify(list), {
+      headers: { 'content-type': 'application/json; charset=utf-8', 'Cache-Control': 'public, max-age=300' },
+    });
+  }
   if (!(res.headers.get('content-type') || '').includes('text/html')) return res;
   const out = new HTMLRewriter()
     .on('[data-release]', {

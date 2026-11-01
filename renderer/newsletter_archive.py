@@ -6,6 +6,7 @@ Usage: python3 renderer/newsletter_archive.py
 Reads every newsletter/issue-NNN.md and writes, in the site's Night Dispatch look:
   site/newsletter/index.html   the list of issues (newest first), at /newsletter
   site/newsletter/NNN.html     one page per issue, at /newsletter/NNN
+  site/newsletter/issues.json  newest first, for the home page's Latest line
   functions/_data/newsletter.json   each issue's release time (UTC)
 
 An issue is released at its send time, Sunday 7 a.m. Mountain. The pages for an
@@ -408,8 +409,11 @@ def main():
     year = max([it["sent"].year for it in issues] + [2026])
     open(os.path.join(out_dir, "index.html"), "w", encoding="utf-8").write(build_list(issues, year))
     for f in os.listdir(out_dir):  # an issue file that was removed takes its page with it
-        if f.endswith(".html") and f not in keep:
+        if f.endswith(".html") and f not in keep:  # issues.json is rewritten above
             os.remove(os.path.join(out_dir, f))
+    # The home page's Latest line reads issues.json; the middleware drops unreleased issues from it.
+    feed = [{"id": it["id"], "title": it["title"], "date": it["sent"].isoformat(), "release": it["release"]} for it in reversed(issues)]
+    open(os.path.join(out_dir, "issues.json"), "w", encoding="utf-8").write(json.dumps(feed, indent=1, ensure_ascii=False) + "\n")
     data = {it["id"]: it["release"] for it in issues}
     open(os.path.join(ROOT, "functions", "_data", "newsletter.json"), "w", encoding="utf-8").write(json.dumps(data, indent=2) + "\n")
     now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
