@@ -145,7 +145,7 @@ A "Start here" card (four photo tiles, one per series, red START HERE stamp, "On
   * `log/`: the CSV logs (see "Record now, use later")
   * `lunch/`: the week's Lunch Drop record (`YYYY-MM-DD.json`, named for the Sunday) and the page built from it (Lunch Drop doc).
   * `analytics/`: the Wednesday review's folder: weekly Buffer snapshots, the theme tag list (`themes.md`), the playbook, the weekly reviews, and the Scoreboard page. See the Analytics doc and `analytics/README.md`.
-  * `site/`: the ww2dispatches.com home page (index.html, slides.json, the six background photos in img/, icons, share image). See "Domain and website".
+  * `site/`: the ww2dispatches.com home page (index.html, slides.json, the six background photos in img/, icons, share image) and `site/newsletter/`, the Weekly Dispatch issue archive built by `renderer/newsletter_archive.py` (Newsletter doc). See "Domain and website".
   * `status.md`: the small run state (dispatch bank, video bank, pending one time jobs, open checks). The Wednesday, Thursday, and Friday runs keep it current by editing lines in place and removing finished items; it never collects history.
   * `archive/`: retired files (the Grok scout files and the old Facebook queue). Never use, edit, or delete anything there.
 * **ww2dispatches/ww2dispatches-videos** (public): every video, poster, trimmed clip, and the source film research downloads (`videos/` and `footage/`). Details in the Videos doc. It is not cloned to Brian's computer.
@@ -248,6 +248,7 @@ An idea for later: a short `summary` line for the newsletter and archive listing
 * **Today's Dispatches** (newest first) shows only posts whose time has passed in Denver: the 8 a.m. card, Name This at 10 a.m. on Wednesday and Saturday, the noon video (poster frame with a play button, linking to the Short), and the 5 p.m. card. Before 8 a.m. it shows "Yesterday's Dispatches" with yesterday's date and "Today's first dispatch posts at 8 a.m. Mountain." Links go to the live post once the Friday run records it in `links`, otherwise to the account.
 * **Name This panel:** the newest puzzle card at full width with its date and clue, "Guess on X", and "Last puzzle:" with the previous puzzle's answer. It never shows the current answer.
 * **How it stays current:** `renderer/site_data.py` writes `site/slides.json` from the dispatch and Name This JSON, and `series_log.py` runs it at the end, so every weekly run refreshes the site with no extra step. Card and Name This images load from the repo's raw links (a Name This card missing from `cards/` falls back to its `cardImage` field, the Buffer hosted copy); video posters come from the videos repo (`dispatch-NNN-instagram-poster.jpg`), falling back to the card. Never edit slides.json by hand.
+* **Newsletter archive (1 Nov 2026):** ww2dispatches.com/newsletter lists every Weekly Dispatch issue, each with its own page, released automatically at send time; the signup box links to it ("Read past issues"). Details in the Newsletter doc.
 * **Later:** the archive (one page per date) grows on this same site; see the Roadmap's Archive plan. Cloudflare Web Analytics (free) can be switched on for visitor counts.
 
 ## Files

@@ -126,6 +126,8 @@ a { color: inherit; }
   background: var(--red); color: var(--paper); border: 2px solid var(--ink); border-radius: 4px; cursor: pointer; }
 .signup button:hover { background: var(--ink); }
 .signup .sent { margin: 10px 0 0; font-size: 13px; color: #4E5A2F; }
+.signup .past { display: inline-block; margin-top: 10px; font-family: var(--display); font-weight: 600; letter-spacing: 1px; text-transform: uppercase; font-size: 13px; color: var(--ink); text-decoration: none; border-bottom: 2px solid var(--red); }
+.signup .past:hover { color: var(--red); }
 .slip { position: relative; display: flex; align-items: center; gap: 14px; min-height: 64px; padding: 12px 18px; text-decoration: none;
   background: var(--paper); color: var(--ink); border-radius: 6px; box-shadow: 0 10px 24px rgba(0,0,0,.45); transition: transform .15s, background .15s; }
 .slip::after { content: ""; position: absolute; left: 0; top: 10px; bottom: 10px; width: 4px; background: var(--red); border-radius: 0 3px 3px 0; }
@@ -267,6 +269,7 @@ footer { text-align: center; font-family: var(--type); font-size: 13px; color: v
         <button type="submit">Subscribe</button>
       </form>
       <p class="sent" id="sent" hidden>Almost done. Check your inbox to confirm.</p>
+      <a class="past" href="/newsletter/">Read past issues</a>
       <iframe name="substack-signup" title="Newsletter signup" hidden></iframe>
     </div>
     <a class="slip" href="mailto:contact@ww2dispatches.com">
