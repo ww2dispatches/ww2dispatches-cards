@@ -1068,3 +1068,5 @@ html.ztrial #stage2{cursor:zoom-in}
 .cf.lv .ps,.cf.lv .ps2{mix-blend-mode:normal;opacity:.85}
 .cf.lv.f-silver .ps{opacity:.45}
 .cf.lv .pg{mix-blend-mode:normal;opacity:.45}
+.setline{font-family:var(--type);font-size:14px;color:#a8c48a;text-align:center;margin:-8px 0 14px}.setline:empty{display:none}
+.promostamp.pinstamp svg{width:70%;height:70%}

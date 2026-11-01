@@ -98,7 +98,7 @@
     renderGoogleButtons();
     if (id !== 'sHome') { endTour(); hideNote('home'); }
     if (id !== 'sCards') hideNote('cards');
-    if (id === 'sHome') setTimeout(coachHomeNow, 450);
+    if (id === 'sHome') { setTimeout(coachHomeNow, 450); setTimeout(() => { if ($('sHome').classList.contains('on') && $('tourDim').hidden !== false) homeStamps(); }, 1300); }
   }
   function toast(t) { const el = $('toast'); el.textContent = t; el.hidden = false; clearTimeout(toast.t); toast.t = setTimeout(() => { el.hidden = true; }, 2800); }
   function nudge(el) { sfx('locked'); el.classList.remove('shake'); void el.offsetWidth; el.classList.add('shake'); }
@@ -598,23 +598,59 @@
     });
   }
   let cIntel = null, setsBefore = null;
-  // Sets a player has completed right now: monthly files and collections (premium pass, 29 Oct 2026).
-  function completeSets() {
-    const out = new Map();
+  // Set moments (1 Nov 2026): the stamp ceremony is only for what can't be undone. A monthly file's stamp
+  // (the month closed with every card held, or a closed month caught up later) and a collection pin at 25, 50,
+  // or 100 different cards. Filling a set in again after a new card posted is a quiet line on the summary.
+  function setsSnap() {
+    const snap = { stamps: new Map(), pins: new Map(), full: new Map() };
     try {
       const { months, groups } = setsModel();
-      months.forEach(m => { if (m.all && m.held === m.all) out.set('m:' + m.ym, { name: m.name + ' files', kind: 'month', ym: m.ym }); });
-      groups.forEach(([g, list]) => list.forEach(x => { if (x.all && x.held === x.all) out.set(g + ':' + x.name, { name: x.name, kind: g, all: x.all }); }));
+      months.forEach(m => {
+        if (m.stamp) snap.stamps.set('m:' + m.ym, { name: m.name + ' files', kind: 'month', ym: m.ym, stamp: m.stamp });
+        else if (m.all && m.held === m.all) snap.full.set('m:' + m.ym, m.name + ' files');
+      });
+      groups.forEach(([g, list]) => list.forEach(x => {
+        const k = g + ':' + x.name;
+        if (x.pins.length) snap.pins.set(k, { name: x.name, kind: 'pin', group: g, pin: x.pins[x.pins.length - 1], count: x.pins.length });
+        if (x.all && x.held === x.all) snap.full.set(k, x.name);
+      }));
     } catch (e) {}
-    return out;
+    return snap;
   }
-  // The ceremony: the round COMPLETE stamp slams down for each set this envelope finished, one after another.
+  const STAMPS_SEEN = 'declass_stamps_seen';
+  const stampsSeen = () => { try { return new Set(JSON.parse(localStorage.getItem(STAMPS_SEEN) || '[]')); } catch (e) { return new Set(); } };
+  const markStamps = keys => { try { const s = stampsSeen(); keys.forEach(k => s.add(k)); localStorage.setItem(STAMPS_SEEN, JSON.stringify([...s])); } catch (e) {} };
+  // What an envelope earned: ceremonies for new stamps and new pins, a quiet line for sets filled in.
+  function setMoments(before, after) {
+    const big = [], quiet = [];
+    after.stamps.forEach((v, k) => { if (!before.stamps.has(k)) big.push(Object.assign({ key: k }, v)); });
+    after.pins.forEach((v, k) => { const b = before.pins.get(k); if (!b || v.count > b.count) big.push(Object.assign({ key: k }, v)); });
+    after.full.forEach((name, k) => { if (!before.full.has(k)) quiet.push(name); });
+    return { big, quiet };
+  }
+  // A month that closed since the player last looked: its stamp lands on the next visit to home, once.
+  // Only stamps from the last two weeks, so a new phone or browser doesn't replay old ones.
+  function homeStamps() {
+    if (!signedIn() || !$('promo').hidden) return;
+    const seen = stampsSeen(), recent = Date.now() - 14 * 86400000, fresh = [];
+    setsSnap().stamps.forEach((v, k) => { if (!seen.has(k) && monthEnd(v.ym).getTime() > recent) fresh.push(Object.assign({ key: k }, v)); });
+    if (!fresh.length) return;
+    markStamps(fresh.map(x => x.key));
+    setTimeout(() => showComplete(fresh), 900);
+  }
+  // The ceremony: a month's dated stamp, or a collection pin, slams down; several show one after another.
   function showComplete(list) {
     if (!list.length) return;
     const x = list[0], rest = list.slice(1);
-    const note = x.kind === 'month' ? (x.ym < etMonth(new Date().toISOString()) ? 'Every dispatch from that month is in your dossier. The stamp is yours for good.' : 'Every dispatch so far this month is in your dossier. Hold them all when the month closes and the stamp is yours for good.')
-      : `All ${x.all} ${x.kind === 'Series' ? 'cards in the series' : x.kind === 'Years' ? 'cards from the year' : x.kind === 'Theaters' ? 'cards from the theater' : 'cards'} are in your dossier.`;
-    $('promo').innerHTML = `<div class="promocard"><div class="promostamp setstamp">${stampSVG(x.name.toUpperCase(), stampDate((n => new Date(Date.UTC(n.getFullYear(), n.getMonth(), n.getDate(), 12)))(new Date())))}</div><p class="promokick">SET COMPLETE</p><h2>${esc(x.name)}</h2><p class="sheetnote">${esc(note)}</p><button class="btn" id="promoOk">${rest.length ? 'Next' : 'Carry on'}</button></div>`;
+    let art, kick, title, note;
+    if (x.kind === 'month') {
+      art = stampSVG(x.name.toUpperCase(), x.stamp); kick = 'MONTH STAMPED'; title = x.name;
+      note = 'Every dispatch from that month is in your dossier. The stamp is yours for good.';
+    } else {
+      art = pinSVG(x.pin[0], x.pin[1]); kick = 'PIN EARNED'; title = x.name;
+      note = `${x.pin[0]} different cards in ${x.name}.` + (x.pin[0] < 100 ? ` Next pin at ${x.pin[0] === 25 ? 50 : 100}.` : ' The top pin.');
+    }
+    $('promo').innerHTML = `<div class="promocard"><div class="promostamp setstamp${x.kind === 'pin' ? ' pinstamp' : ''}">${art}</div><p class="promokick">${kick}</p><h2>${esc(title)}</h2><p class="sheetnote">${esc(note)}</p><button class="btn" id="promoOk">${rest.length ? 'Next' : 'Carry on'}</button></div>`;
     $('promo').hidden = false;
     sfx('stampA'); sfx('goldA', 0.3); sfx('boom', 0.05);
     $('promoOk').onclick = () => { $('promo').hidden = true; if (rest.length) setTimeout(() => showComplete(rest), 250); };
@@ -630,7 +666,7 @@
     pulls = list; cardMode = mode; cardEnv = env || null;
     // The cards are the player's at the tap: add them to the dossier now, so the summary and the
     // card view show them before the next refresh.
-    setsBefore = mode === 'server' && signedIn() ? completeSets() : null; // to spot sets this envelope finishes
+    setsBefore = mode === 'server' && signedIn() ? setsSnap() : null; // to spot stamps and pins this envelope earns
     if (mode === 'server' && ST && ST.pulls) { const have = new Set(ST.pulls.map(p => p.id)); ST.pulls = list.filter(p => p.id && !have.has(p.id)).slice().reverse().concat(ST.pulls); }
     revealed = mode === 'starterLocal' ? STARTER.revealed.slice() : list.map(() => false);
     answered = list.map(() => false);
@@ -709,11 +745,14 @@
     $('sCards').classList.add('summ');
     $('summary').hidden = false;
     renderSummary();
+    $('setLine').textContent = '';
     if (setsBefore) {
-      const after = completeSets(), fresh = [...after].filter(([k]) => !setsBefore.has(k)).map(([, v]) => v);
+      const { big, quiet } = setMoments(setsBefore, setsSnap());
       setsBefore = null;
-      // months first, then collections; shown once the finale has fanned in
-      if (fresh.length) setTimeout(() => { if ($('sCards').classList.contains('summ')) showComplete(fresh.sort((a, b) => (b.kind === 'month') - (a.kind === 'month'))); }, 2600);
+      if (quiet.length) $('setLine').textContent = (quiet.length > 2 ? quiet.slice(0, -1).join(', ') + ', and ' + quiet[quiet.length - 1] : quiet.join(' and ')) + ' complete again.';
+      // stamps first, then pins; shown once the finale has fanned in
+      markStamps(big.filter(x => x.kind === 'month').map(x => x.key));
+      if (big.length) setTimeout(() => { if ($('sCards').classList.contains('summ')) showComplete(big.sort((a, b) => (b.kind === 'month') - (a.kind === 'month'))); }, 2600);
     }
     window.scrollTo(0, 0);
   }
