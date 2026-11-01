@@ -772,7 +772,10 @@
     firstNotes(p);
     if (p.finish !== 'copper' && !(p.cardInfo && p.cardInfo.flash)) setTimeout(() => rockCard(document.querySelector('#flip .cf'), p.finish), big ? 900 : 650);
     navState();
-    if (revealed.every(Boolean) && cardMode === 'starterLocal') { $('hint').textContent = "That's your starter pack."; setTimeout(showSave, 1100); }
+    // The starter pack moves on to Save your dossier after the last card, but a foil card first gets to finish
+    // its rock (31 Oct 2026): the delay before it starts, plus its length, plus a beat to look at it.
+    const rockWait = p.finish === 'copper' || (p.cardInfo && p.cardInfo.flash) ? 0 : (big ? 900 : 650) + ({ silver: 1700, gold: 2400, topsecret: 4100 }[p.finish] || 0) + 600;
+    if (revealed.every(Boolean) && cardMode === 'starterLocal') { $('hint').textContent = "That's your starter pack."; setTimeout(showSave, Math.max(1100, rockWait)); }
   }
   // A duplicate's Intel floats up off the card as it turns (25 Oct 2026). Never blocks a swipe.
   function intelChip(n) {
