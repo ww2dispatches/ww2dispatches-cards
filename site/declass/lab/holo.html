@@ -56,32 +56,70 @@ body{margin:0}
 .optD .cf.f-topsecret .frame::after{opacity:1;background-size:240% 240%;background-position:var(--mx) var(--my)}
 .optD .cf .frame{box-shadow:0 0 34px var(--fglow,transparent),0 14px 34px rgba(0,0,0,.7) !important}
 .optD .cf.f-gold{--fglow:rgba(240,200,90,.35)}.optD .cf.f-silver{--fglow:rgba(220,230,240,.22)}.optD .cf.f-topsecret{--fglow:rgba(170,200,255,.35)}
+
+/* ===== E / F: the Pocket system (31 Oct 2026). Finger turns the card in 3D; foil on the border, matte photo (E) or a
+   faint prism through the photo on Top Secret (F); twinkling stars; a glare that moves against the tilt. ===== */
+.t3d{perspective:900px}
+.optE .cf,.optF .cf{transform:rotateX(calc(var(--ry,0) * 1deg)) rotateY(calc(var(--rx,0) * 1deg));transform-style:preserve-3d;will-change:transform}
+.optE .cf.rest,.optF .cf.rest{transition:transform .55s cubic-bezier(.2,1.4,.4,1)}
+.optE .cf .sheen,.optF .cf .sheen,.optE .cf .hl,.optF .cf .hl{display:none !important}
+.cf .pf,.cf .ps,.cf .ps2,.cf .pg,.cf .pp{position:absolute;inset:0;pointer-events:none;z-index:2;display:none}
+.optE .cf .pf,.optF .cf .pf,.optE .cf .ps,.optF .cf .ps,.optE .cf .ps2,.optF .cf .ps2,.optE .cf .pg,.optF .cf .pg{display:block}
+.optF .cf.f-topsecret .pp{display:block}
+/* the cutout: everything but the photo box (3.2% in, 11.6% to 88.3% down), same on every card */
+.cf .pf,.cf .ps,.cf .ps2{-webkit-mask:linear-gradient(#000 0 0),linear-gradient(#000 0 0) center/93.6% 76.7% no-repeat;-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0),linear-gradient(#000 0 0) center/93.6% 76.7% no-repeat;mask-composite:exclude}
+/* foil: broad soft diagonal streaks that slide with the tilt, tinting the cream; a white glint rides on top */
+.cf .pf{background:var(--streaks);background-size:260% 260%;background-position:calc(50% + var(--tx,0) * 45%) calc(50% + var(--ty,0) * 45%);mix-blend-mode:multiply;opacity:.95}
+.cf .pf::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 0%,transparent calc(var(--gx,50%) - 18%),rgba(255,255,255,.55) calc(var(--gx,50%) - 3%),rgba(255,255,255,.85) var(--gx,50%),rgba(255,255,255,.55) calc(var(--gx,50%) + 3%),transparent calc(var(--gx,50%) + 18%));mix-blend-mode:screen}
+.cf.f-silver{--streaks:repeating-linear-gradient(118deg,#dfe7f0 0,#aebfd6 6%,#f3f6fa 11%,#c9b8d8 16%,#dfe7f0 22%)}
+.cf.f-gold{--streaks:repeating-linear-gradient(118deg,#f7e3a8 0,#e2a93a 6%,#fff3c9 11%,#f2b56a 16%,#f7e3a8 22%)}
+.cf.f-topsecret{--streaks:repeating-linear-gradient(118deg,#ffd6e0 0,#fff2c4 4%,#d4f7dc 8%,#cfe6ff 12%,#e6d4ff 16%,#ffd6e0 20%)}
+/* stars: two layers at different phases; each lights up where its window is, so they twinkle as the light passes */
+.cf .ps,.cf .ps2{background-image:var(--star);background-size:58px 58px,83px 83px,41px 41px;background-position:3px 5px,27px 39px,9px 2px;mix-blend-mode:screen;opacity:.9;-webkit-mask-image:linear-gradient(#000 0 0),linear-gradient(#000 0 0),radial-gradient(circle at var(--sx,50%) var(--sy,50%),#000 0,rgba(0,0,0,.7) 18%,transparent 42%);mask-image:linear-gradient(#000 0 0),linear-gradient(#000 0 0),radial-gradient(circle at var(--sx,50%) var(--sy,50%),#000 0,rgba(0,0,0,.7) 18%,transparent 42%)}
+.cf .ps{-webkit-mask:radial-gradient(circle at var(--sx,50%) var(--sy,50%),#000 0,rgba(0,0,0,.45) 9%,transparent 24%),linear-gradient(#000 0 0) center/93.6% 76.7% no-repeat;-webkit-mask-composite:source-out;mask:radial-gradient(circle at var(--sx,50%) var(--sy,50%),#000 0,rgba(0,0,0,.45) 9%,transparent 24%),linear-gradient(#000 0 0) center/93.6% 76.7% no-repeat;mask-composite:subtract}
+.cf .ps2{background-position:31px 25px,2px 7px,23px 17px;-webkit-mask:radial-gradient(circle at var(--sx2,50%) var(--sy2,50%),#000 0,rgba(0,0,0,.45) 9%,transparent 24%),linear-gradient(#000 0 0) center/93.6% 76.7% no-repeat;-webkit-mask-composite:source-out;mask:radial-gradient(circle at var(--sx2,50%) var(--sy2,50%),#000 0,rgba(0,0,0,.45) 9%,transparent 24%),linear-gradient(#000 0 0) center/93.6% 76.7% no-repeat;mask-composite:subtract}
+.cf.f-silver .ps,.cf.f-silver .ps2{opacity:.7}
+/* glare: an overhead light reflecting off the card, moving against the tilt, over the photo too */
+.cf .pg{background:radial-gradient(ellipse 55% 45% at var(--gx2,50%) var(--gy2,50%),rgba(255,255,255,.55),rgba(255,255,255,.18) 35%,transparent 70%);mix-blend-mode:screen}
+/* F: a faint prism through the photo on Top Secret (the "rainbow rare" treatment) */
+.cf .pp{background:repeating-linear-gradient(115deg,hsl(0 100% 65%) 0,hsl(45 100% 60%) 4%,hsl(120 90% 55%) 8%,hsl(195 100% 60%) 12%,hsl(270 95% 65%) 16%,hsl(330 100% 65%) 20%,hsl(0 100% 65%) 24%);background-size:240% 240%;background-position:calc(50% + var(--tx,0) * 40%) calc(50% + var(--ty,0) * 40%);mix-blend-mode:color;opacity:.3;-webkit-mask:linear-gradient(#000 0 0) center/93.6% 76.7% no-repeat;mask:linear-gradient(#000 0 0) center/93.6% 76.7% no-repeat}
+/* the metal frame catches the edge light as the card turns */
+.optE .cf .frame,.optF .cf .frame{background-size:220% 220% !important;background-position:calc(50% - var(--tx,0) * 40%) calc(50% - var(--ty,0) * 40%) !important}
+.optE .cf.f-topsecret .frame::after,.optF .cf.f-topsecret .frame::after{background-size:220% 220%;background-position:calc(50% + var(--tx,0) * 40%) calc(50% + var(--ty,0) * 40%);opacity:1}
+.optE .cf .frame,.optF .cf .frame{box-shadow:0 0 30px var(--fglow,transparent),0 18px 40px rgba(0,0,0,.65) !important}
+.optE .cf.f-gold,.optF .cf.f-gold{--fglow:rgba(240,200,90,.3)}.optE .cf.f-silver,.optF .cf.f-silver{--fglow:rgba(220,230,240,.18)}.optE .cf.f-topsecret,.optF .cf.f-topsecret{--fglow:rgba(170,200,255,.32)}
 </style>
 </head>
 <body>
 <div class="lab" id="lab">
   <h1>Holo lab</h1>
-  <p class="sub">Tilt your phone, or drag a finger across the card.</p>
+  <p class="sub">Drag a finger across the card, or tilt your phone.</p>
   <div class="seg" id="fin"><button data-f="silver">Silver</button><button data-f="gold" class="on">Gold</button><button data-f="topsecret">Top Secret</button></div>
-  <div class="seg" id="opt"><button data-o="A">A</button><button data-o="B">B</button><button data-o="C" class="on">C</button><button data-o="D">D</button></div>
+  <div class="seg" id="opt"><button data-o="A">A</button><button data-o="B">B</button><button data-o="C" class="on">C</button><button data-o="D">D</button><button data-o="E">E</button><button data-o="F">F</button></div>
   <p class="desc" id="desc"></p>
   <div class="stagel" id="stage"></div>
   <button class="tiltbtn" id="tilt" hidden>Turn on tilt</button>
   <p class="tnote" id="tnote"></p>
 </div>
 <script>
+// a small four point star centered in a roomy tile, so tiles can be large and the stars sparse
+const STAR = (c, r) => `url("data:image/svg+xml,${encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'><path d='M30 ${30 - r} L${30 + r * .18} ${30 - r * .18} L${30 + r} 30 L${30 + r * .18} ${30 + r * .18} L30 ${30 + r} L${30 - r * .18} ${30 + r * .18} L${30 - r} 30 L${30 - r * .18} ${30 - r * .18} Z' fill='${c}'/></svg>`)}")`;
+document.documentElement.style.setProperty('--star', [STAR('#fff', 9), STAR('#fff6d6', 6), STAR('#ffffff', 4)].join(','));
 const IMG = 'https://cdn.jsdelivr.net/gh/ww2dispatches/ww2dispatches-cards@main/cards/dispatch-008-instagram.jpg';
 const DESC = {
   A: '<b>A · Today.</b> What the game shows now: a mostly fixed shine on Silver, a gentle angle change on Gold, the rainbow wash on Top Secret.',
   B: '<b>B · Moving light.</b> A bright band travels all the way across the card as you tilt, with a soft hot spot where the light lands.',
   C: '<b>C · Foil.</b> B, plus a texture for each finish that only shows in the light: brushed metal on Silver, fine glitter on Gold, sliding prism bands on Top Secret.',
-  D: '<b>D · Full holo.</b> C turned up, and the frame itself shimmers and glows as it catches the light.'
+  D: '<b>D · Full holo.</b> C turned up, and the frame itself shimmers and glows as it catches the light.',
+  E: '<b>E · Pocket.</b> Drag the card and it turns in 3D, springing back when you let go. Foil streaks slide across the frame and the paper, stars twinkle as the light passes, and a glare moves against the tilt. The photo stays matte.',
+  F: '<b>F · Pocket, rainbow rare.</b> E, plus a faint prism running through the photo on Top Secret.'
 };
-let fin = 'gold', opt = 'C';
+let fin = 'gold', opt = 'E';
 const $ = id => document.getElementById(id);
 function render() {
   const serial = fin === 'topsecret' ? 'Worldwide serial 0001' : '';
-  $('stage').innerHTML = `<div class="cf f-${fin}"><div class="frame"><div class="card"><img src="${IMG}" alt=""><span class="sheen"></span><span class="hl hb"></span><span class="hl hx"></span><span class="hl hg"></span><span class="badge">Top Secret</span></div><span class="corner c1"></span><span class="corner c2"></span><span class="corner c3"></span><span class="corner c4"></span><span class="serial">${serial}</span></div></div>`;
+  $('stage').innerHTML = `<div class="t3d"><div class="cf f-${fin}"><div class="frame"><div class="card"><img src="${IMG}" alt=""><span class="sheen"></span><span class="hl hb"></span><span class="hl hx"></span><span class="hl hg"></span><span class="pf"></span><span class="ps"></span><span class="ps2"></span><span class="pp"></span><span class="pg"></span><span class="badge">Top Secret</span></div><span class="corner c1"></span><span class="corner c2"></span><span class="corner c3"></span><span class="corner c4"></span><span class="serial">${serial}</span></div></div></div>`;
+  wire3d();
   $('lab').className = 'lab opt' + opt;
   $('desc').innerHTML = DESC[opt];
   document.querySelectorAll('#fin button').forEach(b => b.classList.toggle('on', b.dataset.f === fin));
@@ -105,13 +143,34 @@ function light(x, y, manual) {
   r.setProperty('--tx', (x * 2).toFixed(3));
   r.setProperty('--ty', (y * 2).toFixed(3));
 }
+// E/F: the finger turns the card; let go and it springs back. Tilt nudges it when nothing is touching.
+let fingerDown = false;
+function set3d(tx, ty, rest) {
+  const r = document.documentElement.style, cf = document.querySelector('#stage .cf');
+  if (cf) cf.classList.toggle('rest', Boolean(rest));
+  r.setProperty('--tx', tx.toFixed(3)); r.setProperty('--ty', ty.toFixed(3));
+  r.setProperty('--rx', (tx * 13).toFixed(2)); r.setProperty('--ry', (-ty * 13).toFixed(2));
+  r.setProperty('--gx', (50 + tx * 70) + '%');
+  r.setProperty('--gx2', (50 - tx * 45) + '%'); r.setProperty('--gy2', (50 - ty * 45) + '%');
+  r.setProperty('--sx', (50 + tx * 60) + '%'); r.setProperty('--sy', (50 + ty * 60) + '%');
+  r.setProperty('--sx2', (50 - tx * 50) + '%'); r.setProperty('--sy2', (30 - ty * 50) + '%');
+}
+function wire3d() {
+  const cf = document.querySelector('#stage .cf'); if (!cf) return;
+  const at = e => { const p = e.touches ? e.touches[0] : e, b = cf.getBoundingClientRect(); return [Math.max(-1, Math.min(1, ((p.clientX - b.left) / b.width - .5) * 2)), Math.max(-1, Math.min(1, ((p.clientY - b.top) / b.height - .5) * 2))]; };
+  cf.addEventListener('pointerdown', e => { fingerDown = true; touched = Date.now(); const [x, y] = at(e); set3d(x, y, true); setTimeout(() => cf.classList.remove('rest'), 300); });
+  cf.addEventListener('pointermove', e => { if (!fingerDown && e.pointerType !== 'mouse') return; touched = Date.now(); const [x, y] = at(e); set3d(x, y, false); });
+  const up = () => { if (!fingerDown) return; fingerDown = false; touched = Date.now(); set3d(0, 0, true); };
+  cf.addEventListener('pointerup', up); cf.addEventListener('pointercancel', up); cf.addEventListener('pointerleave', e => { if (e.pointerType === 'mouse') up(); });
+  cf.addEventListener('touchmove', e => e.preventDefault(), { passive: false });
+}
 const stage = $('stage');
 const drag = e => { const p = e.touches ? e.touches[0] : e; const b = stage.getBoundingClientRect(); light(Math.max(-.5, Math.min(.5, (p.clientX - b.left) / b.width - .5)), Math.max(-.5, Math.min(.5, (p.clientY - b.top) / b.height - .5)), true); };
 stage.addEventListener('pointermove', e => { if (e.pointerType === 'mouse' || e.buttons) drag(e); });
 stage.addEventListener('touchmove', e => { e.preventDefault(); drag(e); }, { passive: false });
 let tiltOn = false;
-window.addEventListener('deviceorientation', e => { if (e.gamma == null) return; tiltOn = true; light(Math.max(-.5, Math.min(.5, e.gamma / 50)), Math.max(-.5, Math.min(.5, (e.beta - 45) / 50)), true); });
-(function idle() { if (Date.now() - touched > 1500) { t += 0.012; light(Math.sin(t) * 0.38, Math.cos(t * 0.7) * 0.3); } requestAnimationFrame(idle); })();
+window.addEventListener('deviceorientation', e => { if (e.gamma == null) return; tiltOn = true; const x = Math.max(-.5, Math.min(.5, e.gamma / 50)), y = Math.max(-.5, Math.min(.5, (e.beta - 45) / 50)); light(x, y, true); if (!fingerDown && /optE|optF/.test($('lab').className)) set3d(x * .6, y * .6, false); });
+(function idle() { if (Date.now() - touched > 1500) { t += 0.012; light(Math.sin(t) * 0.38, Math.cos(t * 0.7) * 0.3); if (!fingerDown && !tiltOn && /optE|optF/.test($('lab').className)) set3d(Math.sin(t) * 0.22, Math.cos(t * 0.7) * 0.16, false); } requestAnimationFrame(idle); })();
 if (typeof DeviceOrientationEvent !== 'undefined' && typeof DeviceOrientationEvent.requestPermission === 'function') {
   $('tilt').hidden = false;
   $('tilt').onclick = () => DeviceOrientationEvent.requestPermission().then(r => { $('tilt').hidden = r === 'granted'; $('tnote').textContent = r === 'granted' ? 'Tilt is on.' : 'Tilt was not allowed; drag on the card instead.'; }).catch(() => { $('tnote').textContent = 'Tilt is not available here; drag on the card instead.'; });
