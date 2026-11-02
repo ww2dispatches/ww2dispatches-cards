@@ -10,6 +10,7 @@ import { playerFileNumber } from '../_lib/fileno.js';
 import { FINISHES, LIVING_ONE_IN, FLASH_ONE_IN } from '../_lib/odds.js';
 import { isMorning, gameDay, addDays } from '../_lib/time.js';
 import { filledSlots, rankInfo } from '../_lib/rank.js';
+import { ensureTally } from '../_lib/tally.js';
 import data from '../_data/catalog.json';
 
 const ADMINS = new Set(['WKB9MK5Y']); // Brian; add a file number here (or in the ADMIN_FILES variable) to give someone else access
@@ -207,6 +208,39 @@ export async function onRequestGet({ request, env }) {
   const intercept = { plays: IC.length, solved: IC.filter(r => r.status === 'solved').length, failed: IC.filter(r => r.status === 'failed').length, perfect: IC.filter(r => r.score === 100).length, avgScore: IC.filter(r => r.score != null).length ? Math.round(IC.filter(r => r.score != null).reduce((s, r) => s + r.score, 0) / IC.filter(r => r.score != null).length) : null, claimed: IC.filter(r => r.claimed).length,
     days: Object.entries(icDays).sort((a, b) => b[0].localeCompare(a[0])).slice(0, 14).map(([day, d]) => ({ day, plays: d.plays, solved: d.solved, failed: d.failed, perfect: d.perfect, avgScore: d.scores.length ? Math.round(d.scores.reduce((s, x) => s + x, 0) / d.scores.length) : null, avgMistakes: d.mistakes.length ? +(d.mistakes.reduce((s, x) => s + x, 0) / d.mistakes.length).toFixed(1) : null })) };
 
+  // ---------- growth: new players, site visits, sources, game actions (tallies start 2 Nov 2026) ----------
+  let T = [];
+  try { await ensureTally(db); T = (await db.prepare('SELECT day, metric, k, n FROM tally WHERE day >= ?').bind(addDays(today, -60)).all()).results; } catch (e) {}
+  const sumT = (m, from, to, k) => T.filter(r => r.metric === m && r.day >= from && r.day <= to && (k === undefined || r.k === k)).reduce((s, r) => s + r.n, 0);
+  const byK = (m, from, to) => { const o = {}; T.filter(r => r.metric === m && r.day >= from && r.day <= to).forEach(r => { o[r.k] = (o[r.k] || 0) + r.n; }); return o; };
+  const joinDay = new Map(players.map(p => [p.id, gameDay(new Date(p.created_at))]));
+  const signupsIn = (a, b) => [...joinDay.values()].filter(d => d >= a && d <= b).length;
+  const opensIn = (a, b) => opened.filter(o => ENV_KINDS.has(kindOf(o.slot_key))).filter(o => { const d = gameDay(new Date(o.opened_at)); return d >= a && d <= b; }).length;
+  const activeIn = (a, b) => [...playDays.values()].filter(s => [...s].some(d => d >= a && d <= b)).length;
+  const playDaySum = (a, b) => [...playDays.values()].reduce((n, s) => n + [...s].filter(d => d >= a && d <= b).length, 0);
+  const icIn = (a, b) => IC.filter(r => r.day >= a && r.day <= b).length;
+  const period = (a, b) => ({
+    visitors: sumT('visitors', a, b), views: sumT('view', a, b), newVisitors: sumT('new', a, b), declassVisitors: sumT('visitor', a, b, 'declass'),
+    signups: signupsIn(a, b), activePlayers: activeIn(a, b), playerDays: playDaySum(a, b),
+    envelopes: opensIn(a, b), intercepts: icIn(a, b), actions: sumT('ev', a, b),
+    engagements: opensIn(a, b) + icIn(a, b) + sumT('ev', a, b), guestStarters: sumT('ev', a, b, 'guest_starter'),
+  });
+  const firstTally = T.reduce((m, r) => !m || r.day < m ? r.day : m, null);
+  const firstJoin = [...joinDay.values()].sort()[0] || today;
+  const days30 = [];
+  for (let i = 29; i >= 0; i--) { const d = addDays(today, -i); days30.push({ day: d, views: sumT('view', d, d), visitors: sumT('visitors', d, d), newVisitors: sumT('new', d, d), declass: sumT('visitor', d, d, 'declass'), signups: signupsIn(d, d), total: signupsIn('0000', d), active: activeOn(d), engagements: opensIn(d, d) + icIn(d, d) + sumT('ev', d, d) }); }
+  const growth = {
+    since: firstTally, firstJoin,
+    week: period(addDays(today, -6), today), lastWeek: period(addDays(today, -13), addDays(today, -7)), month: period(addDays(today, -29), today),
+    days30,
+    pages: { views: byK('view', addDays(today, -29), today), visitors: byK('visitor', addDays(today, -29), today) },
+    sources: byK('source', addDays(today, -29), today), sourcesWeek: byK('source', addDays(today, -6), today),
+    devices: byK('device', addDays(today, -29), today),
+    actions: byK('ev', addDays(today, -29), today), actionsWeek: byK('ev', addDays(today, -6), today),
+    signupSources: byK('signup', '0000', today),
+    newest: players.slice().sort((a, b) => b.created_at.localeCompare(a.created_at)).slice(0, 10).map(p => ({ file: fileOf.get(p.id), joined: p.created_at, daysPlayed: (playDays.get(p.id) || new Set()).size, starter: Boolean(p.starter_done) })),
+  };
+
   // ---------- catalog checks ----------
   const iso = t.toISOString(), week = new Date(t.getTime() + 7 * DAY).toISOString();
   const catalog = {
@@ -232,7 +266,7 @@ export async function onRequestGet({ request, env }) {
     rates, expected: { still: expected('still'), living: expected('living') },
     living: { draws: archiveDraws, living: archiveLiving, expected: 1 / LIVING_ONE_IN },
     flash: { draws: archiveDraws, flash: archiveFlash, expected: 1 / FLASH_ONE_IN },
-    envelopes: envShape, cards: cardTable, intercept, catalog,
+    envelopes: envShape, cards: cardTable, intercept, catalog, growth,
     players: summaries.sort((a, b) => (b.lastActive || '').localeCompare(a.lastActive || '')),
   });
 }

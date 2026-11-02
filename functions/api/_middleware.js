@@ -2,7 +2,7 @@
 import { fail } from '../_lib/util.js';
 import { testerKeyOk, sameOrigin } from '../_lib/gate.js';
 
-const OPEN_PATHS = new Set(['/api/config']); // safe without the key
+const OPEN_PATHS = new Set(['/api/config', '/api/hit']); // safe without the key (hit: visit counts from every page)
 
 export async function onRequest(context) {
   const { request, env } = context;

@@ -99,7 +99,11 @@
     if (key.startsWith('i:')) return 'Intercept';
     return 'Envelope';
   }
+  // Game actions counted for the admin console (2 Nov 2026): tallies only, through /hit.js.
+  const hit = n => { try { if (window.wwHit) window.wwHit(n); } catch (e) {} };
+  const SCREEN_HIT = { sFile: 'dossier', sSets: 'sets', sIntercept: 'intercept', sSave: 'save_screen' };
   function show(id) {
+    if (SCREEN_HIT[id]) hit(SCREEN_HIT[id]);
     document.querySelectorAll('.screen').forEach(s => s.classList.toggle('on', s.id === id));
     document.body.classList.toggle('night', id === 'sIntercept'); // Intercept sits on the dark Night Dispatch desk
     window.scrollTo(0, 0);
@@ -570,6 +574,7 @@
     Promise.all([req, delay(3350)]).then(([d]) => {
       busy = false;
       if (env.kind === 'starter' && !signedIn()) {
+        hit('guest_starter');
         STARTER = { token: d.token, pulls: d.pulls, revealed: d.pulls.map(() => false) };
         saveStarterLocal();
         startCards(d.pulls, 'starterLocal', before, env);
@@ -1056,7 +1061,7 @@
   }
   function onCredential(res) {
     const hadStarter = Boolean(STARTER);
-    api('auth/google', { credential: res.credential, starter: STARTER ? STARTER.token : undefined, starterTurned: STARTER ? STARTER.revealed.every(Boolean) : undefined })
+    api('auth/google', { src: lsGet('ww_src') || '', credential: res.credential, starter: STARTER ? STARTER.token : undefined, starterTurned: STARTER ? STARTER.revealed.every(Boolean) : undefined })
       .then(d => {
         if (d.starterSaved || (d.player && d.player.starterDone)) { STARTER = null; saveStarterLocal(); }
         return refreshState().then(() => d);
@@ -1090,6 +1095,7 @@
   function renderView() {
     const id = viewList[vi], info = BYID.get(id), pl = myPulls(), h = holdings(pl).get(id);
     if (!info || !h) return;
+    if (renderView.last !== id) { renderView.last = id; hit('card'); }
     if (!viewSel || !h[viewSel.variant][viewSel.finish]) viewSel = bestOf(h);
     $('viewCount').textContent = info.kind === 'namethis' ? 'Name This · ' + info.short : `Dispatch No. ${pad3(info.num)} · ${info.seriesName}`;
     document.querySelectorAll('#stage2 video, #dfile video').forEach(v => v.pause());
@@ -1148,10 +1154,10 @@
     $('dbarBtn').onclick = () => {
       if (!f || !f.open) { // detail still loading, or cached from before the Gold: fetch it fresh
         $('dbarBtn').querySelector('small').textContent = 'Opening the file…';
-        api('card?id=' + encodeURIComponent(info.id)).then(r => { DETAIL.set(info.id, r.card); dfileOpenUI = info.id; if (viewList[vi] === info.id) paintFile(info, h, r.card); }).catch(() => toast('The file did not open. Try again in a moment.'));
+        api('card?id=' + encodeURIComponent(info.id)).then(r => { DETAIL.set(info.id, r.card); dfileOpenUI = info.id; hit('file'); if (viewList[vi] === info.id) paintFile(info, h, r.card); }).catch(() => toast('The file did not open. Try again in a moment.'));
         return;
       }
-      dfileOpenUI = unf ? null : info.id; sfx('slide');
+      dfileOpenUI = unf ? null : info.id; sfx('slide'); if (!unf) hit('file');
       paintFile(info, h, d);
     };
     const v = $('dVid');
@@ -1220,6 +1226,7 @@
     document.querySelectorAll('#stage2 video').forEach(v => v.pause());
     $('zstage').innerHTML = `<div id="zcard">${cardFace(info, viewSel.finish, viewSel.variant, serialFor(myPulls(), id, viewSel.variant, viewSel.finish), { autoplay: true })}</div>`;
     if (viewSel.variant === 'living') startFilm($('zstage'), info);
+    hit('zoom');
     Object.assign(Z, { s: 1, x: 0, y: 0, pinch: null, pan: null, tap: null, lastTap: null }); Z.pts.clear();
     $('zoomer').hidden = false; document.body.classList.add('zopen');
     requestAnimationFrame(() => $('zoomer').classList.add('on'));
@@ -1639,6 +1646,7 @@
     shPrefix = prefix || 'Declassed ';
     shAll = items.filter(x => x.info);
     if (!shAll.length) return;
+    hit('share');
     const best = shAll.reduce((m, x, i) => RANK(x.finish) > RANK(shAll[m].finish) ? i : m, 0);
     shSel = shAll.map((_, i) => i === best);
     $('shTitle').textContent = shAll.length > 1 ? 'Pick what to share' : 'Share this card';
@@ -1648,6 +1656,7 @@
   $('shBack').onclick = () => { $('shui').hidden = true; };
   $('shGo').onclick = () => {
     const text = shText;
+    hit('shared');
     if (navigator.clipboard) navigator.clipboard.writeText(text).catch(() => {});
     const file = shBlob ? new File([shBlob], 'declass.png', { type: 'image/png' }) : null;
     if (file && navigator.canShare && navigator.canShare({ files: [file] })) {
@@ -1990,8 +1999,8 @@
         : `<span class="tstep">${i + 1} of ${TOUR.length - 1}</span><span><button class="tskip" type="button" id="tourSkip">Skip</button><button class="btn" type="button" id="tourGo">${i === TOUR.length - 2 ? 'Got it' : 'Next'}</button></span>`)
       + '</div>';
     b.hidden = false;
-    $('tourGo').onclick = () => s.last ? endTour(true) : tourStep(i + 1);
-    if ($('tourSkip')) $('tourSkip').onclick = () => tourStep(TOUR.length - 1);
+    $('tourGo').onclick = () => { if (s.last) { hit(tourStep.skipped ? 'tour_skip' : 'tour_done'); endTour(true); } else tourStep(i + 1); };
+    if ($('tourSkip')) $('tourSkip').onclick = () => { tourStep.skipped = true; tourStep(TOUR.length - 1); };
     placeTour();
     $('tourGo').focus({ preventScroll: true });
   }

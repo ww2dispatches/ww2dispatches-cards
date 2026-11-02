@@ -41,6 +41,13 @@ textarea{width:100%;min-height:220px;background:#0f0c0a;color:#d8cdb6;border:1px
 .f-copper{background:#9C5B2E;color:#fff}.f-silver{background:#b5bac2;color:#1a1612}.f-gold{background:#d9a93e;color:#1a1612}.f-topsecret{background:#e9eef5;color:#B04A3E}
 .err{font-family:var(--type);text-align:center;color:#e07a6a;margin-top:40px}
 .back{margin:6px 0}
+table.wrap td:first-child{white-space:normal}
+.kp small{display:block;font-family:var(--type);font-size:11.5px;margin-top:3px}
+.up{color:#a8c48a}.down{color:#e07a6a}.flat{color:#a89d88}
+.chart{margin:4px 0 2px}.chart svg{display:block;width:100%;height:auto}
+.legend{font-family:var(--type);font-size:12px;color:#a89d88;display:flex;gap:14px;flex-wrap:wrap;margin:2px 0 8px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+.sorts{display:flex;gap:6px;margin:4px 0 8px}.sorts button{font-family:var(--display);font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:5px 9px;border-radius:3px;border:1px solid #5a4f41;background:transparent;color:#d8cdb6;cursor:pointer}.sorts button.on{border-color:#e3c25e;color:#e3c25e}
 </style>
 </head>
 <body>
@@ -52,7 +59,7 @@ const pct = x => x == null || isNaN(x) ? '·' : (x * 100).toFixed(x !== 0 && x <
 const day = iso => iso ? new Date(iso).toLocaleDateString([], { month: 'short', day: 'numeric' }) : '·';
 const when = iso => iso ? new Date(iso).toLocaleString([], { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) : '·';
 const FN = { copper: 'Copper', silver: 'Silver', gold: 'Gold', topsecret: 'Top Secret' };
-let key = ''; try { key = localStorage.getItem('declass_key') || ''; } catch (e) {}
+let key = ''; try { key = localStorage.getItem('declass_key') || ''; localStorage.setItem('ww_me', '1'); } catch (e) {} // ww_me: this browser's own visits stay out of the counts
 const get = q => fetch('/api/stats' + (q || ''), { headers: { 'x-declass-key': key }, credentials: 'same-origin' }).then(r => r.ok ? r.json() : Promise.reject(r.status));
 let D = null, tab = 'overview';
 try { tab = (location.hash || '#overview').slice(1) || 'overview'; } catch (e) {}
@@ -80,10 +87,10 @@ function healthList() {
   ];
 }
 function render() {
-  const tabs = [['overview', 'Overview'], ['players', 'Players'], ['cards', 'Cards'], ['engagement', 'Engagement'], ['economy', 'Economy'], ['intercept', 'Intercept'], ['catalog', 'Catalog']];
+  const tabs = [['overview', 'Overview'], ['growth', 'Growth'], ['players', 'Players'], ['cards', 'Cards'], ['engagement', 'Engagement'], ['economy', 'Economy'], ['intercept', 'Intercept'], ['catalog', 'Catalog']];
   $('st').innerHTML = `<h1>Declass console</h1><p class="sub note">As of ${when(D.at)} · all players, all time unless noted</p><div class="tabs">${tabs.map(([k, l]) => `<button data-t="${k}" class="${tab === k ? 'on' : ''}">${l}</button>`).join('')}</div><div id="body"></div>`;
   document.querySelectorAll('.tabs button').forEach(b => b.onclick = () => { tab = b.dataset.t; try { history.replaceState(null, '', '#' + tab); } catch (e) {} render(); });
-  ({ overview, players, cards, engagement, economy, intercept, catalog }[tab] || overview)();
+  ({ overview, growth, players, cards, engagement, economy, intercept, catalog }[tab] || overview)();
 }
 function overview() {
   const E = D.engagement, h = healthList(), bad = h.filter(r => r[1]);
@@ -103,6 +110,10 @@ function report() {
   const bad = healthList().filter(r => r[1]).map(r => `${r[0]}: ${r[1]}${r[2] ? ' (' + r[2] + ')' : ''}`);
   return [
     `DECLASS WEEKLY REPORT, ${D.today}`,
+    ``,
+    `GROWTH (7 days vs the 7 before): visitors ${D.growth.week.visitors} (was ${D.growth.lastWeek.visitors}), page views ${D.growth.week.views} (${D.growth.lastWeek.views}), first time visitors ${D.growth.week.newVisitors} (${D.growth.lastWeek.newVisitors}), Declass visitors ${D.growth.week.declassVisitors} (${D.growth.lastWeek.declassVisitors}), new players ${D.growth.week.signups} (${D.growth.lastWeek.signups}), guest starter packs ${D.growth.week.guestStarters}, engagements ${D.growth.week.engagements} (${D.growth.lastWeek.engagements}). Visit counts since ${D.growth.since || 'n/a'}.`,
+    `Sources this week: ${ranked(D.growth.sourcesWeek, SRC).map(r => r.k + ' ' + r.v).join(', ') || 'none yet'}. New players by source (all time): ${ranked(D.growth.signupSources, SRC).map(r => r.k + ' ' + r.v).join(', ') || 'none yet'}. Devices (30 days): ${ranked(D.growth.devices, {}).map(r => r.k + ' ' + r.v).join(', ') || 'none yet'}.`,
+    `Game actions this week: ${Object.keys(ACT).filter(k => D.growth.actionsWeek[k]).map(k => ACT[k].toLowerCase() + ' ' + D.growth.actionsWeek[k]).join(', ') || 'none yet'}.`,
     ``,
     `PLAYERS: ${D.totals.players} accounts. Played today ${E.active1}, this week ${E.active7}, this month ${E.active30}.`,
     `Daily players, last 7 days: ${wk.map(x => x.day.slice(5) + ' ' + x.players).join(', ')}.`,
@@ -129,10 +140,51 @@ function report() {
     `HEALTH: ${bad.length ? bad.join('; ') : 'all clear'}.`,
   ].join('\n');
 }
-function players() {
-  $('body').innerHTML = `<p class="note">Every account, by file number, most recently active first. Tap a row for that player.</p><div class="tw"><table><tr><th>File</th><th>Last active</th><th>Days</th><th>Env.</th><th>Cards</th><th>Dossier</th><th>Streak</th><th>Intel</th><th>Rank</th><th>Gold+</th></tr>
-  ${D.players.map(p => `<tr class="go" data-f="${esc(p.file)}"><td>${esc(p.file)}${p.intelLogOk ? '' : ' <span class="bad">!</span>'}</td><td>${day(p.lastActive)}</td><td>${p.daysPlayed}</td><td>${p.envelopes}</td><td>${p.pulls}</td><td>${pct(p.completion)}</td><td>${p.streak}</td><td>${p.intel}</td><td>${esc(p.rank)}</td><td>${p.goldPlus}</td></tr>`).join('')}</table></div>`;
+let psort = 'active';
+const chg = (a, b) => { if (!b) return a ? '<small class="up">new this week</small>' : '<small class="flat">·</small>'; const x = (a - b) / b; return `<small class="${x > 0.005 ? 'up' : x < -0.005 ? 'down' : 'flat'}">${x > 0.005 ? '▲' : x < -0.005 ? '▼' : '■'} ${Math.abs(x * 100).toFixed(0)}% vs last week</small>`; };
+const tile = (v, label, now, before) => `<div><b>${v}</b><span>${label}</span>${before === undefined ? '' : chg(now, before)}</div>`;
+// day columns (bars) with an optional line on top, inline SVG
+function chart(rows, series, line) {
+  const W = 700, H = 170, pad = 22, n = rows.length, bw = (W - pad) / n;
+  const mx = Math.max(1, ...rows.flatMap(r => series.map(s => r[s.k])));
+  let g = '';
+  rows.forEach((r, i) => series.forEach((s, j) => { const h = r[s.k] / mx * (H - 30), w = bw * 0.8 / series.length; g += `<rect x="${pad + i * bw + bw * 0.1 + j * w}" y="${H - 18 - h}" width="${Math.max(1, w - 1)}" height="${h}" fill="${s.c}" rx="1"><title>${r.day.slice(5)} ${s.l}: ${r[s.k]}</title></rect>`; }));
+  if (line) { const lm = Math.max(1, ...rows.map(r => r[line.k])); g += `<polyline fill="none" stroke="${line.c}" stroke-width="2" points="${rows.map((r, i) => `${pad + i * bw + bw / 2},${H - 18 - r[line.k] / lm * (H - 30)}`).join(' ')}"/>`; g += `<text x="${W - 2}" y="12" text-anchor="end" fill="${line.c}" font-size="11" font-family="Special Elite">${line.l} ${rows[n - 1][line.k]}</text>`; }
+  g += `<text x="2" y="16" fill="#a89d88" font-size="11" font-family="Special Elite">${mx}</text>`;
+  rows.forEach((r, i) => { if (i % Math.ceil(n / 7) === 0 || i === n - 1) g += `<text x="${pad + i * bw + bw / 2}" y="${H - 4}" text-anchor="middle" fill="#a89d88" font-size="10.5" font-family="Special Elite">${r.day.slice(5)}</text>`; });
+  return `<div class="chart"><svg viewBox="0 0 ${W} ${H}" role="img">${g}</svg></div><div class="legend">${series.map(s => `<span><i style="background:${s.c}"></i>${s.l}</span>`).join('')}${line ? `<span><i style="background:${line.c};height:3px;vertical-align:3px"></i>${line.l}</span>` : ''}</div>`;
+}
+const ACT = { card: 'Cards looked at', zoom: 'Full screen views', file: 'Declassified files opened', share: 'Share screen opened', shared: 'Cards shared or saved', guest_starter: 'Starter packs opened before signing in', save_screen: 'Saw the save your dossier screen', dossier: 'Dossier visits', sets: 'Sets visits', intercept: 'Intercept visits', tour_done: 'Finished the home tour', tour_skip: 'Skipped the home tour' };
+const PG = { home: 'Home page', declass: 'Declass', newsletter: 'Newsletter archive', issue: 'Newsletter issues', privacy: 'Privacy', support: 'Support', other: 'Other' };
+const SRC = { x: 'X', instagram: 'Instagram', threads: 'Threads', tiktok: 'TikTok', youtube: 'YouTube', facebook: 'Facebook', reddit: 'Reddit', newsletter: 'Newsletter', google: 'Google', search: 'Other search', 'link in bio': 'Link in bio', 'ko-fi': 'Ko-fi', email: 'Email', direct: 'Direct or typed in', other: 'Other sites' };
+const ranked = (o, names) => Object.entries(o || {}).sort((a, b) => b[1] - a[1]).map(([k, v]) => ({ k: names[k] || k, v }));
+function growth() {
+  const G = D.growth, w = G.week, l = G.lastWeek, m = G.month;
+  const rate = (a, b) => b ? pct(a / b) : '·';
+  $('body').innerHTML = `<p class="note">Last 7 days against the 7 before, like Buffer's summary. Visit counts began ${G.since ? day(G.since + 'T12:00') : 'today'}${G.since ? '' : ' and fill in as people come by'}; accounts go back to the first player (${day(G.firstJoin + 'T12:00')}). Your own browser is left out of visit counts.</p>
+  <h2>Audience</h2><div class="kp">${tile(w.visitors, 'visitors', w.visitors, l.visitors)}${tile(w.views, 'page views', w.views, l.views)}${tile(w.newVisitors, 'first time visitors', w.newVisitors, l.newVisitors)}${tile(w.declassVisitors, 'Declass visitors', w.declassVisitors, l.declassVisitors)}</div>
+  <h2>Players</h2><div class="kp">${tile(w.signups, 'new players', w.signups, l.signups)}${tile(D.totals.players, 'total players')}${tile(w.activePlayers, 'played this week', w.activePlayers, l.activePlayers)}${tile(w.guestStarters, 'tried it as a guest', w.guestStarters, l.guestStarters)}</div>
+  <h2>Engagement</h2><div class="kp">${tile(w.engagements, 'engagements', w.engagements, l.engagements)}${tile(w.envelopes, 'envelopes opened', w.envelopes, l.envelopes)}${tile(w.actions, 'card actions', w.actions, l.actions)}${tile(rate(w.playerDays, w.declassVisitors), 'play rate')}</div>
+  <p class="note">Visitors are counted once per browser per day. Engagements are envelopes opened, Intercept games, and card actions (looking at a card, full screen, a Declassified file, sharing). Play rate is how many of the day's Declass visitors opened an envelope that day.</p>
+  <h2>Visitors, last 30 days</h2>${chart(G.days30, [{ k: 'visitors', l: 'Visitors', c: '#7FA0D6' }, { k: 'declass', l: 'Declass visitors', c: '#D9A93E' }])}
+  <h2>Players, last 30 days</h2>${chart(G.days30, [{ k: 'signups', l: 'New players', c: '#9DAA62' }, { k: 'active', l: 'Played that day', c: '#B04A3E' }], { k: 'total', l: 'Total players', c: '#e3c25e' })}
+  <h2>Engagements, last 30 days</h2>${chart(G.days30, [{ k: 'engagements', l: 'Engagements', c: '#D8644F' }])}
+  <h2>Where visitors come from, 30 days</h2>${Object.keys(G.sources).length ? bars(ranked(G.sources, SRC), r => r.k, r => r.v) : '<p class="note">Nothing yet.</p>'}
+  <p class="note">Counted once per visit. Links from the social profiles show as that platform when the app passes it along; many apps (Instagram and TikTok especially) open links without saying where they came from, so those land in "Direct". Adding ?ref=instagram to a profile link fixes that.</p>
+  <h2>New players by where they first came from</h2>${Object.keys(G.signupSources).length ? bars(ranked(G.signupSources, SRC), r => r.k, r => r.v) : '<p class="note">Starts with the next new account.</p>'}
+  <h2>Pages, 30 days</h2><div class="tw"><table><tr><th>Page</th><th>Views</th><th>Visitors</th></tr>${ranked(G.pages.views, {}).map(r => `<tr><td>${esc(PG[r.k] || r.k)}</td><td>${r.v}</td><td>${G.pages.visitors[r.k] || 0}</td></tr>`).join('') || '<tr><td>Nothing yet</td><td></td><td></td></tr>'}</table></div>
+  <h2>Phone or computer, 30 days</h2>${Object.keys(G.devices).length ? bars(ranked(G.devices, { phone: 'Phone', computer: 'Computer', tablet: 'Tablet' }), r => r.k, r => r.v, r => r.v + ' · ' + pct(r.v / Object.values(G.devices).reduce((s, x) => s + x, 0))) : '<p class="note">Nothing yet.</p>'}
+  <h2>What players do in the game</h2><div class="tw"><table class="wrap"><tr><th>Action</th><th>7 days</th><th>30 days</th></tr>${Object.keys(ACT).map(k => `<tr><td>${ACT[k]}</td><td>${G.actionsWeek[k] || 0}</td><td>${G.actions[k] || 0}</td></tr>`).join('')}</table></div>
+  <h2>From visitor to player, 30 days</h2><ul class="hl">${[['First time visitors (whole site)', m.newVisitors], ['Declass visitors', m.declassVisitors], ['Opened a starter pack as a guest', m.guestStarters], ['Made an account', m.signups], ['Played at least once', m.activePlayers]].map(([lb, n]) => `<li><span>${lb}</span><b>${n}</b></li>`).join('')}</ul>
+  <h2>Newest players</h2><div class="tw"><table><tr><th>File</th><th>Joined</th><th>Days played</th><th>Starter</th></tr>${G.newest.map(p => `<tr class="go" data-f="${esc(p.file)}"><td>${esc(p.file)}</td><td>${when(p.joined)}</td><td>${p.daysPlayed}</td><td>${p.starter ? '✓' : '·'}</td></tr>`).join('')}</table></div>`;
   document.querySelectorAll('tr.go').forEach(r => r.onclick = () => playerView(r.dataset.f));
+}
+function players() {
+  const list = D.players.slice().sort((a, b) => psort === 'joined' ? b.joined.localeCompare(a.joined) : psort === 'days' ? b.daysPlayed - a.daysPlayed : (b.lastActive || '').localeCompare(a.lastActive || ''));
+  $('body').innerHTML = `<p class="note">Every account, by file number. Tap a row for that player.</p><div class="sorts">${[['active', 'Last active'], ['joined', 'Newest'], ['days', 'Most days']].map(([k, l]) => `<button data-s="${k}" class="${psort === k ? 'on' : ''}">${l}</button>`).join('')}</div><div class="tw"><table><tr><th>File</th><th>Joined</th><th>Last active</th><th>Days</th><th>Env.</th><th>Cards</th><th>Dossier</th><th>Streak</th><th>Intel</th><th>Rank</th><th>Gold+</th></tr>
+  ${list.map(p => `<tr class="go" data-f="${esc(p.file)}"><td>${esc(p.file)}${p.intelLogOk ? '' : ' <span class="bad">!</span>'}</td><td>${day(p.joined)}</td><td>${day(p.lastActive)}</td><td>${p.daysPlayed}</td><td>${p.envelopes}</td><td>${p.pulls}</td><td>${pct(p.completion)}</td><td>${p.streak}</td><td>${p.intel}</td><td>${esc(p.rank)}</td><td>${p.goldPlus}</td></tr>`).join('')}</table></div>`;
+  document.querySelectorAll('tr.go').forEach(r => r.onclick = () => playerView(r.dataset.f));
+  document.querySelectorAll('.sorts button').forEach(b => b.onclick = () => { psort = b.dataset.s; players(); });
 }
 function playerView(file) {
   $('body').innerHTML = '<p class="note">Loading…</p>';
