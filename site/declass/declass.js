@@ -645,6 +645,7 @@
   // A month that closed since the player last looked: its stamp lands on the next visit to home, once.
   // Only stamps from the last two weeks, so a new phone or browser doesn't replay old ones.
   function homeStamps() {
+    syncStampsSeen();
     if (ceremonyDemo && $('promo').hidden) {
       ceremonyDemo = false;
       const month = { kind: 'month', name: 'October 2026 files', stamp: '31 OCT 2026' };
@@ -656,8 +657,17 @@
     const seen = stampsSeen(), recent = Date.now() - 14 * 86400000, fresh = [];
     setsSnap().stamps.forEach((v, k) => { if (!seen.has(k) && monthEnd(v.ym).getTime() > recent) fresh.push(Object.assign({ key: k }, v)); });
     if (!fresh.length) return;
-    markStamps(fresh.map(x => x.key));
-    setTimeout(() => showComplete(fresh), 900);
+    // only over the home screen: if the player has already moved on, it waits for the next visit home
+    setTimeout(() => { if (!$('sHome').classList.contains('on') || !$('promo').hidden) return; markStamps(fresh.map(x => x.key)); showComplete(fresh); }, 900);
+  }
+  // Stamps this browser showed before the server kept track (before 1 Nov 2026) are reported once, so the
+  // player's other devices skip them too.
+  function syncStampsSeen() {
+    if (!signedIn() || !ST) return;
+    let local = [];
+    try { local = JSON.parse(localStorage.getItem(STAMPS_SEEN) || '[]'); } catch (e) {}
+    const server = new Set(ST.honorsSeen || []), missing = local.filter(k => !server.has(k));
+    if (missing.length) { ST.honorsSeen = [...server, ...missing]; api('honor', { keys: missing }).catch(() => {}); }
   }
   // The ceremony: a month's dated stamp, or a collection pin, slams down. When several land at once they share
   // one screen (1 Nov 2026): the stamp and pins slam down side by side, one after another, with a line each below.
