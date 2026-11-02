@@ -96,7 +96,7 @@
     if (key.startsWith('c:')) return 'Commemorative file';
     if (key === 's:starter') return 'Starter pack';
     if (key.startsWith('q:')) return 'Requisition';
-    if (key.startsWith('i:')) return 'Intercept';
+    if (key.startsWith('i:')) return 'Code Room';
     return 'Envelope';
   }
   // Game actions counted for the admin console (2 Nov 2026): tallies only, through /hit.js.
@@ -261,7 +261,7 @@
   // The small Requisition envelope a requested card arrives in (25 Oct 2026).
   function reqEnvHTML(env) {
     return `<svg class="body" viewBox="0 0 360 200" preserveAspectRatio="none" aria-hidden="true"><rect width="360" height="200" fill="#D9D2B4"/><polygon points="0,0 180,126 0,200" fill="#D3CCAD"/><polygon points="360,0 180,126 360,200" fill="#D3CCAD"/><polygon points="0,200 180,126 360,200" fill="#DDD6B9"/><polyline points="0,200 180,126 360,200" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="1.5"/></svg>
-      <div class="flap"></div><div class="seal">SEALED<br>WW2</div><div class="no"></div>${env.kind === 'intercept' ? '<div class="prio reqk icpk">INTERCEPT</div><div class="lbl">DECODED FILE<br>· TODAY\'S PICK<b>WW2 DISPATCHES</b></div>' : `<div class="prio reqk">REQUISITION</div><div class="lbl">REQUESTED FILE<br>· ${esc(String(env.price || ''))} INTEL<b>WW2 DISPATCHES</b></div>`}<div class="cstamp">CLASSIFIED</div><div class="dstamp">DECLASS</div><div class="edge"></div>`;
+      <div class="flap"></div><div class="seal">SEALED<br>WW2</div><div class="no"></div>${env.kind === 'intercept' ? '<div class="prio reqk icpk">CODE ROOM</div><div class="lbl">DECODED FILE<br>· TODAY\'S PICK<b>WW2 DISPATCHES</b></div>' : `<div class="prio reqk">REQUISITION</div><div class="lbl">REQUESTED FILE<br>· ${esc(String(env.price || ''))} INTEL<b>WW2 DISPATCHES</b></div>`}<div class="cstamp">CLASSIFIED</div><div class="dstamp">DECLASS</div><div class="edge"></div>`;
   }
   // Each envelope type wears the look drawn for it in the Field manual: priority manila, commemorative
   // black and gold, starter green ring, Sunday deep archive navy ring, Last call dashed red.
@@ -728,7 +728,7 @@
     const k = (cardEnv && cardEnv.kind) || (p.slot && p.slot.startsWith('p:') ? 'priority' : p.slot && p.slot.startsWith('c:') ? 'commemorative' : p.slot === 's:starter' ? 'starter' : 'daily');
     const first = i === 0 && (!p.slot || p.slot.startsWith('d:') || p.slot === 's:starter');
     if (k === 'request') return 'Your requested card';
-    if (k === 'intercept') return 'Your Intercept card';
+    if (k === 'intercept') return 'Your Code Room card';
     if (p.cardInfo && p.cardInfo.flash) return k === 'commemorative' || k === 'daily' ? 'The Flash card' : 'A Flash card from the archive';
     if (k === 'priority' || k === 'commemorative') return 'From the deep archive';
     if (k === 'starter') return first ? "Today's dispatch" : 'Your starter pack';
@@ -783,7 +783,7 @@
     if (cardMode === 'starterLocal') { showSave(); return; }
     document.querySelectorAll('#stage video').forEach(v => v.pause());
     hideNote('cards');
-    $('sumSub').textContent = (cardEnv && cardEnv.kind === 'request' ? 'Your requested card' : cardEnv && cardEnv.kind === 'intercept' ? 'Intercept' : slotName(pulls[0] && pulls[0].slot)) + ' · tap a card to see it again';
+    $('sumSub').textContent = (cardEnv && cardEnv.kind === 'request' ? 'Your requested card' : cardEnv && cardEnv.kind === 'intercept' ? 'Code Room' : slotName(pulls[0] && pulls[0].slot)) + ' · tap a card to see it again';
     $('sCards').classList.add('summ');
     $('summary').hidden = false;
     renderSummary();
@@ -1799,7 +1799,7 @@
       <button class="btn" data-close>Got it</button>`);
   };
   const reasonText = x => x.reason === 'envelope' ? 'Envelope opened' : x.reason === 'duplicate' ? 'Duplicate ' + (x.variant === 'living' ? 'living ' : '') + (FNAME[x.finish] || '') + ' ' + ((BYID.get(x.card) || {}).short || '')
-    : x.reason === 'request' ? 'Requested ' + (FNAME[x.finish] || '') + ' ' + ((BYID.get(x.card) || {}).short || '') : x.reason === 'intercept' ? 'Intercept puzzle' : x.reason;
+    : x.reason === 'request' ? 'Requested ' + (FNAME[x.finish] || '') + ' ' + ((BYID.get(x.card) || {}).short || '') : x.reason === 'intercept' ? 'Code Room puzzle' : x.reason;
   // Days until a Flash day, in the player's own calendar.
   function untilText(iso) {
     const d = Math.round((new Date(iso).setHours(0, 0, 0, 0) - new Date().setHours(0, 0, 0, 0)) / 86400000);

@@ -15,10 +15,10 @@
   // ---------- home tile ----------
   function tileHTML(s) {
     // Coming soon is one slim line in the home page's coming up list (30 Oct 2026); live, it is a full Today's files row.
-    if (!s || s.status === 'soon') return `<div class="cupln icpsoon" aria-label="Intercept, a Declass daily puzzle, coming soon"><span class="tg ic">INTERCEPT</span><span class="cw">Daily puzzle</span><span class="r">Coming soon</span></div>`;
+    if (!s || s.status === 'soon') return `<div class="cupln icpsoon" aria-label="Code Room, a Declass daily puzzle, coming soon"><span class="tg ic">CODE ROOM</span><span class="cw">Daily puzzle</span><span class="r">Coming soon</span></div>`;
     // the first part sits on its own line, the rest below it (29 Oct 2026)
     const two = sub => { const i = sub.indexOf(' · '); return i < 0 ? `<span>${sub}</span>` : `<span>${sub.slice(0, i)}</span><span>${sub.slice(i + 3)}</span>`; };
-    const go = (sub, cls) => `<button class="icptile ${cls || 'live'}" id="icpTile" type="button"><b>Intercept</b>${two(sub)}</button>`;
+    const go = (sub, cls) => `<button class="icptile ${cls || 'live'}" id="icpTile" type="button"><b>Code Room</b>${two(sub)}</button>`;
     if (s.status === 'signin') return go('a Declass daily puzzle · Sign in to crack today\'s files', 'wait');
     if (s.status === 'new') return go('a Declass daily puzzle · Crack today\'s files');
     if (s.status === 'play') return go(`In progress · ${s.found} of 4 links · ${s.mistakes} of 3 mistakes`);
@@ -32,7 +32,7 @@
     const soon = !s || s.status === 'soon';
     document.querySelectorAll('#fm-intercept, [data-go="fm-intercept"]').forEach(x => { x.hidden = soon; });
     const b = $('icpTile');
-    if (b) b.onclick = () => { if (s.status === 'signin') { D().toast('Sign in to play Intercept.'); return; } open(); };
+    if (b) b.onclick = () => { if (s.status === 'signin') { D().toast('Sign in to play the Code Room.'); return; } open(); };
   }
 
   // ---------- the screen ----------
@@ -223,7 +223,7 @@
     const living = c.v === 'living';
     const odds = P.perfect ? 'A perfect solve: it comes Silver, Gold, or Top Secret.' : 'The finish is set by luck: Copper, Silver, Gold, or Top Secret.';
     const have = !own ? 'This card isn\'t in your dossier yet.' : 'You already hold this card. If the finish lands on one you hold, it turns into Intel like any duplicate.';
-    D().sheet(`<div class="sheettop"><span class="howstamp">Intercept</span><button class="howx" data-close aria-label="Close">✕</button></div>
+    D().sheet(`<div class="sheettop"><span class="howstamp">Code Room</span><button class="howx" data-close aria-label="Close">✕</button></div>
       <h2>Take ${esc(inf.short)}?</h2>
       <p class="sheetline">${esc(inf.kind === 'namethis' ? 'Name This' : 'No. ' + String(inf.num).padStart(3, '0'))}${living ? ' · Living Card' : ''}</p>
       <p class="sheetnote">${odds} ${have}</p>
@@ -257,7 +257,7 @@
     let k = 0;
     const step = () => {
       const [h, p] = GUIDE[k];
-      D().sheet(`<div class="sheettop"><span class="howstamp">Your first Intercept · ${k + 1} of ${GUIDE.length}</span><button class="howx" data-close aria-label="Close">✕</button></div>
+      D().sheet(`<div class="sheettop"><span class="howstamp">Your first Code Room · ${k + 1} of ${GUIDE.length}</span><button class="howx" data-close aria-label="Close">✕</button></div>
         <h2>${h}</h2><p class="sheetnote">${p}</p>
         <button class="btn" id="icpGuideGo">${k < GUIDE.length - 1 ? 'Next' : 'Crack the files'}</button>`);
       $('icpGuideGo').onclick = () => { k++; if (k < GUIDE.length) step(); else { D().closeSheet(); D().mark('icpGuide'); } };
@@ -274,7 +274,7 @@
     c.fillStyle = '#17140f'; c.fillRect(0, 0, W, H);
     const g = c.createRadialGradient(W / 2, H * 0.18, W * 0.1, W / 2, H * 0.2, H * 0.62); g.addColorStop(0, 'rgba(61,88,132,.26)'); g.addColorStop(1, 'rgba(0,0,0,0)'); c.fillStyle = g; c.fillRect(0, 0, W, H);
     c.globalAlpha = 0.05; c.fillStyle = '#EDE4CF'; for (let y = 0; y < H; y += 6) c.fillRect(0, y, W, 1); c.globalAlpha = 1;
-    c.textAlign = 'center'; c.fillStyle = '#EDE4CF'; c.font = '700 84px Oswald'; c.fillText('INTERCEPT', W / 2, 112);
+    c.textAlign = 'center'; c.fillStyle = '#EDE4CF'; c.font = '700 84px Oswald'; c.fillText('CODE ROOM', W / 2, 112);
     c.fillStyle = '#b9ad92'; c.font = '400 30px "Special Elite"'; c.fillText('a Declass daily puzzle · ' + new Date(P.day + 'T12:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }), W / 2, 158);
     const solved = P.status === 'solved';
     const res = solved ? `CRACKED · ${P.score} · ${P.mistakes === 0 ? 'NO MISTAKES' : P.mistakes + ' MISTAKE' + (P.mistakes > 1 ? 'S' : '')}` : `FILES CLOSED · ${P.found} OF 4 LINKS`;
@@ -301,8 +301,8 @@
   async function share() {
     const solved = P.status === 'solved';
     const text = solved
-      ? `Cracked today's Intercept files: ${P.score}, ${P.mistakes === 0 ? 'no mistakes' : P.mistakes + ' mistake' + (P.mistakes > 1 ? 's' : '')}. ww2dispatches.com/declass #Declass`
-      : `Today's Intercept files beat me: ${P.found} of 4 links. ww2dispatches.com/declass #Declass`;
+      ? `Cracked today's Code Room files: ${P.score}, ${P.mistakes === 0 ? 'no mistakes' : P.mistakes + ' mistake' + (P.mistakes > 1 ? 's' : '')}. ww2dispatches.com/declass #Declass`
+      : `Today's Code Room files beat me: ${P.found} of 4 links. ww2dispatches.com/declass #Declass`;
     if (navigator.clipboard) navigator.clipboard.writeText(text).catch(() => {});
     const cv = document.createElement('canvas'); cv.width = 1080; cv.height = 1350;
     let blob = null;
