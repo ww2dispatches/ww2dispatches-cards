@@ -4,91 +4,199 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Declass stats</title>
+<title>Declass console</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Special+Elite&display=swap">
 <link rel="stylesheet" href="/declass/declass.css">
 <style>
-/* Tester stats (2 Nov 2026): totals across every player, the designed odds beside the real ones, and health checks. Not linked from the game. */
+/* The Declass admin console (2 Nov 2026). Brian only: the server answers this page for his file number alone. */
 body{margin:0}
-.st{max-width:560px;margin:0 auto;padding:16px 16px 48px;color:#EDE4CF}
-.st h1{font-size:28px;margin:6px 0 2px;text-align:center}
-.st .sub{text-align:center;margin:0 0 14px}
-.st h2{font-size:17px;letter-spacing:.12em;margin:26px 0 8px;border-bottom:1px solid rgba(201,188,158,.3);padding-bottom:6px}
-.st .note{font-family:var(--type);font-size:13px;color:#a89d88;margin:4px 0 10px;line-height:1.45}
-.kp{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.st{max-width:760px;margin:0 auto;padding:14px 16px 56px;color:#EDE4CF}
+.st h1{font-size:28px;margin:6px 0 0;text-align:center}
+.st .sub{text-align:center;margin:2px 0 12px}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 4px;position:sticky;top:0;background:#16120f;padding:8px 0;z-index:5}
+.tabs button{font-family:var(--display);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:12px;padding:7px 10px;border-radius:3px;border:1.5px solid #5a4f41;background:transparent;color:#d8cdb6;cursor:pointer}
+.tabs button.on{background:#e3c25e;border-color:#e3c25e;color:#1a1612}
+.st h2{font-size:16px;letter-spacing:.12em;margin:24px 0 8px;border-bottom:1px solid rgba(201,188,158,.3);padding-bottom:6px}
+.note{font-family:var(--type);font-size:13px;color:#a89d88;margin:4px 0 10px;line-height:1.45}
+.kp{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:8px}
 .kp div{border:1px solid #5a4f41;border-radius:3px;padding:9px 8px;text-align:center}
-.kp b{display:block;font-family:var(--display);font-size:24px;color:#e3c25e}
+.kp b{display:block;font-family:var(--display);font-size:22px;color:#e3c25e}
 .kp span{font-family:var(--type);font-size:12px;color:#cbbf9f}
-table{width:100%;border-collapse:collapse;font-family:var(--type);font-size:14px}
-th{font-family:var(--display);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:12px;color:#a89d88;text-align:right;padding:6px 4px}
+.tw{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-family:var(--type);font-size:13.5px}
+th{font-family:var(--display);font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:11.5px;color:#a89d88;text-align:right;padding:6px 5px;white-space:nowrap}
 th:first-child,td:first-child{text-align:left}
-td{padding:7px 4px;border-top:1px solid rgba(201,188,158,.15);text-align:right}
+td{padding:7px 5px;border-top:1px solid rgba(201,188,158,.15);text-align:right;white-space:nowrap}
+tr.go{cursor:pointer}tr.go:hover td{background:rgba(227,194,94,.08)}
 .ok{color:#a8c48a}.warn{color:#e3a94e}.bad{color:#e07a6a}
 .hl{list-style:none;padding:0;margin:0}
 .hl li{display:flex;justify-content:space-between;gap:12px;padding:8px 2px;border-top:1px solid rgba(201,188,158,.15);font-family:var(--type);font-size:14px}
-.hl li b{font-family:var(--display);letter-spacing:.04em}
-.bars div{display:grid;grid-template-columns:70px 1fr 36px;gap:8px;align-items:center;font-family:var(--type);font-size:13px;margin:3px 0}
-.bars i{display:block;height:10px;background:#B04A3E;border-radius:2px}
+.bars div{display:grid;grid-template-columns:62px 1fr 64px;gap:8px;align-items:center;font-family:var(--type);font-size:12.5px;margin:3px 0}
+.bars i{display:block;height:10px;background:#B04A3E;border-radius:2px;min-width:1px}
+.btnrow{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.btnrow button{font-family:var(--display);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:13px;padding:10px 14px;border-radius:3px;border:0;background:#B04A3E;color:#FFF8EA;cursor:pointer}
+.btnrow button.alt{background:transparent;border:2px solid #B04A3E;color:#e07a6a}
+textarea{width:100%;min-height:220px;background:#0f0c0a;color:#d8cdb6;border:1px solid #5a4f41;border-radius:3px;font-family:var(--type);font-size:12.5px;padding:10px;box-sizing:border-box}
+.pill{display:inline-block;font-family:var(--display);font-size:11px;font-weight:700;letter-spacing:.06em;padding:1px 6px;border-radius:2px;margin:0 2px 2px 0}
+.f-copper{background:#9C5B2E;color:#fff}.f-silver{background:#b5bac2;color:#1a1612}.f-gold{background:#d9a93e;color:#1a1612}.f-topsecret{background:#e9eef5;color:#B04A3E}
 .err{font-family:var(--type);text-align:center;color:#e07a6a;margin-top:40px}
+.back{margin:6px 0}
 </style>
 </head>
 <body>
-<div class="st" id="st"><h1>Declass stats</h1><p class="sub">Loading…</p></div>
+<div class="st" id="st"><h1>Declass console</h1><p class="sub">Loading…</p></div>
 <script>
 const $ = id => document.getElementById(id);
-const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
-const pct = x => (x * 100).toFixed(x < 0.01 ? 2 : 1) + '%';
+const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+const pct = x => x == null || isNaN(x) ? '·' : (x * 100).toFixed(x !== 0 && x < 0.01 ? 2 : 1) + '%';
+const day = iso => iso ? new Date(iso).toLocaleDateString([], { month: 'short', day: 'numeric' }) : '·';
+const when = iso => iso ? new Date(iso).toLocaleString([], { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) : '·';
+const FN = { copper: 'Copper', silver: 'Silver', gold: 'Gold', topsecret: 'Top Secret' };
 let key = ''; try { key = localStorage.getItem('declass_key') || ''; } catch (e) {}
-fetch('/api/stats', { headers: { 'x-declass-key': key }, credentials: 'same-origin' }).then(r => r.ok ? r.json() : Promise.reject(r.status)).then(render).catch(e => {
-  $('st').innerHTML = `<h1>Declass stats</h1><p class="err">${e === 403 ? 'Open the game once with your tester link on this device, then come back.' : 'The stats did not load (' + esc(e) + ').'}</p>`;
+const get = q => fetch('/api/stats' + (q || ''), { headers: { 'x-declass-key': key }, credentials: 'same-origin' }).then(r => r.ok ? r.json() : Promise.reject(r.status));
+let D = null, tab = 'overview';
+try { tab = (location.hash || '#overview').slice(1) || 'overview'; } catch (e) {}
+get().then(d => { D = d; render(); }).catch(e => {
+  $('st').innerHTML = `<h1>Declass console</h1><p class="err">${e === 404 ? 'This page is for the game’s admin only. Sign in to Declass on this device with the admin account first.' : e === 403 ? 'Open the game once with the tester link on this device, then come back.' : 'The console did not load (' + esc(e) + ').'}</p>`;
 });
-// A rate is flagged when it sits more than 3 standard errors from the design, once there are 30 or more pulls.
 function verdict(actual, n, p) {
   if (n < 30) return '<span class="note">too few</span>';
   const se = Math.sqrt(p * (1 - p) / n), z = se ? Math.abs(actual / n - p) / se : 0;
   return z > 3 ? '<span class="bad">check</span>' : z > 2 ? '<span class="warn">watch</span>' : '<span class="ok">ok</span>';
 }
+const flagOf = (actual, n, p) => { if (n < 30) return null; const se = Math.sqrt(p * (1 - p) / n), z = se ? Math.abs(actual / n - p) / se : 0; return z > 3 ? 'check' : z > 2 ? 'watch' : null; };
 function rateTable(t, exp) {
-  const rows = ['copper', 'silver', 'gold', 'topsecret'].map(f => `<tr><td>${f === 'topsecret' ? 'Top Secret' : f[0].toUpperCase() + f.slice(1)}</td><td>${t[f]}</td><td>${t.n ? pct(t[f] / t.n) : '·'}</td><td>${exp ? pct(exp[f]) : '·'}</td><td>${exp ? verdict(t[f], t.n, exp[f]) : ''}</td></tr>`).join('');
-  return `<table><tr><th>Finish</th><th>Pulls</th><th>Actual</th><th>Designed</th><th></th></tr>${rows}</table>`;
+  return `<div class="tw"><table><tr><th>Finish</th><th>Pulls</th><th>Actual</th><th>Designed</th><th></th></tr>${['copper', 'silver', 'gold', 'topsecret'].map(f => `<tr><td>${FN[f]}</td><td>${t[f]}</td><td>${t.n ? pct(t[f] / t.n) : '·'}</td><td>${exp ? pct(exp[f]) : '·'}</td><td>${exp ? verdict(t[f], t.n, exp[f]) : ''}</td></tr>`).join('')}</table></div>`;
 }
-function render(d) {
-  const P = d.players, H = d.health, E = d.envelopes;
-  const healthRows = [
+const bars = (rows, label, val, fmt) => { const mx = Math.max(1, ...rows.map(val)); return `<div class="bars">${rows.map(r => `<div><span>${esc(label(r))}</span><i style="width:${val(r) / mx * 100}%"></i><span>${fmt ? fmt(r) : val(r)}</span></div>`).join('')}</div>`; };
+function healthList() {
+  const H = D.health, E = D.envelopes;
+  return [
     ['Daily envelopes without 3 cards', E.daily.wrongCount], ['Priority envelopes without 3 cards', E.priority.wrongCount], ['Commemorative files without 3 archive cards', E.commemorative.wrongCount],
     ['Morning envelopes missing the day card', E.daily.morningMissingDayCard], ['Pulls not signed', H.unsignedPulls], ['Cards stuck waiting over 2 days', H.stuckWaiting],
     ['Pulls of a card the catalog does not know', H.unknownCards], ['Cards pulled before they posted', H.cardsBeforePost], ['Top Secret turned into Intel', H.topSecretConverted],
     ['Top Secret serial gaps', H.serialGaps], ['Top Secret serials used twice', H.serialDupes], ['Serials past the counter', H.serialPastCounter],
-    ['Players whose Intel does not match their log', H.intelMismatch], ['Envelopes opened with no cards', H.openedWithoutPulls], ['Cards with no opened envelope', H.pullsWithoutOpened],
+    ['Players whose Intel does not match their log', H.intelMismatch.length, H.intelMismatch.join(', ')], ['Envelopes opened with no cards', H.openedWithoutPulls], ['Cards with no opened envelope', H.pullsWithoutOpened],
   ];
-  const maxOpens = Math.max(1, ...d.days.map(x => x.opens));
-  $('st').innerHTML = `<h1>Declass stats</h1><p class="sub">Every tester, all time · ${new Date(d.at).toLocaleString()}</p>
-  <div class="kp"><div><b>${P.total}</b><span>players</span></div><div><b>${P.active24h}</b><span>active today</span></div><div><b>${P.active7d}</b><span>active this week</span></div>
-  <div><b>${d.totals.pulls}</b><span>cards pulled</span></div><div><b>${d.totals.envelopes}</b><span>envelopes</span></div><div><b>${d.totals.postedCards}</b><span>cards posted</span></div></div>
-  <p class="note">Cards per player: fewest ${P.pullsMin}, middle ${P.pullsMedian}, most ${P.pullsMax}.</p>
-
-  <h2>Health checks</h2><p class="note">All should be zero. Anything red is worth telling Claude about.</p>
-  <ul class="hl">${healthRows.map(([l, n]) => `<li><span>${esc(l)}</span><b class="${n ? 'bad' : 'ok'}">${n ? n : '✓'}</b></li>`).join('')}</ul>
-
-  <h2>Archive draws, regular cards</h2><p class="note">The random cards in envelopes, against the odds table. "Watch" and "check" mean further from the design than chance usually goes.</p>${rateTable(d.rates.archiveStill, d.expected.still)}
-  <h2>Archive draws, Living Cards</h2>${rateTable(d.rates.archiveLiving, d.expected.living)}
-  <h2>Living and Flash rates</h2><table><tr><th>Draw</th><th>Pulls</th><th>Actual</th><th>Designed</th><th></th></tr>
-  <tr><td>Living Card</td><td>${d.living.living} of ${d.living.draws}</td><td>${d.living.draws ? pct(d.living.living / d.living.draws) : '·'}</td><td>${pct(d.living.expected)}</td><td>${verdict(d.living.living, d.living.draws, d.living.expected)}</td></tr>
-  <tr><td>Flash</td><td>${d.flash.flash} of ${d.flash.draws}</td><td>${d.flash.draws ? pct(d.flash.flash / d.flash.draws) : '·'}</td><td>${pct(d.flash.expected)}</td><td>${verdict(d.flash.flash, d.flash.draws, d.flash.expected)}</td></tr></table>
-  <p class="note">The Living rate runs a little under 1 in 6 until most cards have films, since a Living roll needs a card whose film has posted.</p>
-  <h2>The morning day card</h2>${rateTable(d.rates.dayCard, d.expected.still)}
-  <h2>Starter packs, requests, Intercept picks</h2><p class="note">These follow their own rules (starter packs always hold a Silver or better, requests are chosen), so there is nothing to compare.</p>
-  <table><tr><th>Source</th><th>Copper</th><th>Silver</th><th>Gold</th><th>Top Secret</th></tr>${['starter', 'request', 'intercept'].map(k => `<tr><td>${k[0].toUpperCase() + k.slice(1)}</td><td>${d.rates[k].copper}</td><td>${d.rates[k].silver}</td><td>${d.rates[k].gold}</td><td>${d.rates[k].topsecret}</td></tr>`).join('')}</table>
-
-  <h2>Envelopes</h2><table><tr><th>Kind</th><th>Opened</th><th>Same card twice</th></tr>
-  <tr><td>Daily</td><td>${E.daily.envelopes}</td><td>${E.daily.withRepeat}${E.daily.envelopes ? ' (' + pct(E.daily.withRepeat / E.daily.envelopes) + ')' : ''}</td></tr>
-  <tr><td>Priority</td><td>${E.priority.envelopes}</td><td>·</td></tr><tr><td>Commemorative</td><td>${E.commemorative.envelopes}</td><td>·</td></tr></table>
-
-  <h2>Last 14 days</h2><div class="bars">${d.days.map(x => `<div><span>${x.day.slice(5)}</span><i style="width:${x.opens / maxOpens * 100}%"></i><span>${x.opens}</span></div>`).join('')}</div>
-  <p class="note">Envelopes opened each day (UTC).</p>
-
-  <h2>Cards</h2><p class="note">Pulled most:</p><ul class="hl">${d.most.map(c => `<li><span>${esc(c.short)}</span><b>${c.n}</b></li>`).join('')}</ul>
-  <p class="note">${d.never.length ? 'Posted but never pulled by anyone: ' + d.never.map(esc).join(', ') + '.' : 'Every posted card has been pulled by someone.'}</p>`;
+}
+function render() {
+  const tabs = [['overview', 'Overview'], ['players', 'Players'], ['cards', 'Cards'], ['engagement', 'Engagement'], ['economy', 'Economy'], ['intercept', 'Intercept'], ['catalog', 'Catalog']];
+  $('st').innerHTML = `<h1>Declass console</h1><p class="sub note">As of ${when(D.at)} · all players, all time unless noted</p><div class="tabs">${tabs.map(([k, l]) => `<button data-t="${k}" class="${tab === k ? 'on' : ''}">${l}</button>`).join('')}</div><div id="body"></div>`;
+  document.querySelectorAll('.tabs button').forEach(b => b.onclick = () => { tab = b.dataset.t; try { history.replaceState(null, '', '#' + tab); } catch (e) {} render(); });
+  ({ overview, players, cards, engagement, economy, intercept, catalog }[tab] || overview)();
+}
+function overview() {
+  const E = D.engagement, h = healthList(), bad = h.filter(r => r[1]);
+  $('body').innerHTML = `<div class="kp"><div><b>${D.totals.players}</b><span>players</span></div><div><b>${E.active1}</b><span>played today</span></div><div><b>${E.active7}</b><span>this week</span></div><div><b>${D.totals.envelopes}</b><span>envelopes</span></div><div><b>${D.totals.pulls}</b><span>cards pulled</span></div><div><b>${D.totals.posted}</b><span>cards posted</span></div></div>
+  <h2>Weekly review</h2><p class="note">Copy this and paste it into the chat with Claude for the weekly review. It covers the last 7 days, the rates, and anything flagged.</p>
+  <div class="btnrow"><button id="copyRep">Copy weekly report</button></div><textarea id="rep" readonly>${esc(report())}</textarea>
+  <h2>Health checks</h2><p class="note">${bad.length ? bad.length + ' flagged. Worth raising in the review.' : 'All clear.'}</p>
+  <ul class="hl">${h.map(([l, n, x]) => `<li><span>${esc(l)}${x ? ` <span class="note">(${esc(x)})</span>` : ''}</span><b class="${n ? 'bad' : 'ok'}">${n ? n : '✓'}</b></li>`).join('')}</ul>`;
+  $('copyRep').onclick = () => { const ta = $('rep'); ta.select(); (navigator.clipboard ? navigator.clipboard.writeText(ta.value) : Promise.reject()).then(() => { $('copyRep').textContent = 'Copied'; }).catch(() => { document.execCommand('copy'); $('copyRep').textContent = 'Copied'; }); setTimeout(() => { $('copyRep').textContent = 'Copy weekly report'; }, 2000); };
+}
+function report() {
+  const E = D.engagement, Ec = D.economy, C = D.collecting, F = D.funnel, I = D.intercept, K = D.catalog;
+  const wk = E.days14.slice(-7);
+  const flags = [];
+  [['archive regular', D.rates.archiveStill, D.expected.still], ['archive Living', D.rates.archiveLiving, D.expected.living], ['morning day card', D.rates.dayCard, D.expected.still]].forEach(([n, t, ex]) => ['copper', 'silver', 'gold', 'topsecret'].forEach(f => { const v = flagOf(t[f], t.n, ex[f]); if (v) flags.push(`${n} ${FN[f]}: ${pct(t[f] / t.n)} vs ${pct(ex[f])} designed (${v}, ${t.n} pulls)`); }));
+  const lv = flagOf(D.living.living, D.living.draws, D.living.expected); if (lv) flags.push(`Living rate ${pct(D.living.living / D.living.draws)} vs ${pct(D.living.expected)} (${lv})`);
+  const bad = healthList().filter(r => r[1]).map(r => `${r[0]}: ${r[1]}${r[2] ? ' (' + r[2] + ')' : ''}`);
+  return [
+    `DECLASS WEEKLY REPORT, ${D.today}`,
+    ``,
+    `PLAYERS: ${D.totals.players} accounts. Played today ${E.active1}, this week ${E.active7}, this month ${E.active30}.`,
+    `Daily players, last 7 days: ${wk.map(x => x.day.slice(5) + ' ' + x.players).join(', ')}.`,
+    `Envelopes opened, last 7 days: ${wk.reduce((s, x) => s + x.opens, 0)}. Missed rate (all time): ${pct(E.missedRate)}. Last Call rescues: ${E.lastCall} of ${E.dailyOpens} daily opens. Median time to open: ${E.medianOpenMinutes} min.`,
+    `Came back next day: ${E.retentionDay1[0]} of ${E.retentionDay1[1]}. Came back around day 7: ${E.retentionDay7[0]} of ${E.retentionDay7[1]}.`,
+    `Streaks: ${Object.entries(E.streaks).map(([k, v]) => k + ': ' + v).join(', ')}.`,
+    `New player path: ${F.accounts} accounts, ${F.starterDone} starter packs, ${F.firstDaily} opened a daily envelope, ${F.played3Days} played 3+ days, ${F.played7Days} played 7+ days.`,
+    ``,
+    `ECONOMY: ${Ec.earned7} Intel earned in 7 days by ${Ec.active7} active players, ${Ec.perActiveWeek} each (design about ${Ec.design}). Balances: median ${Ec.balances.median}, max ${Ec.balances.max}, ${Ec.balances.over500} over 500. Requests all time: ${Ec.requests.n} (${['copper', 'silver', 'gold', 'topsecret'].map(f => FN[f] + ' ' + Ec.requests[f]).join(', ')}).`,
+    `By reason: ${Object.entries(Ec.byReason).map(([k, v]) => `${k} ${v.total} (${v.n})`).join(', ')}.`,
+    ``,
+    `COLLECTING: average dossier ${pct(C.avgCompletion)} of posted cards. Month stamps earned ${C.stampsEarned}, pins ${C.pinsEarned}, players holding a Gold or better ${C.goldPlusHolders}. Ranks: ${Object.entries(C.ranks).map(([k, v]) => k + ' ' + v).join(', ')}.`,
+    `Finishes out there: ${['copper', 'silver', 'gold', 'topsecret'].map(f => FN[f] + ' ' + C.finishesOut[f]).join(', ')}.`,
+    ``,
+    `RATES: ${D.rates.archiveStill.n} archive regular, ${D.rates.archiveLiving.n} archive Living, ${D.rates.dayCard.n} morning day cards. Living ${D.living.living} of ${D.living.draws} draws, Flash ${D.flash.flash}.`,
+    flags.length ? `Flagged: ${flags.join('; ')}.` : `No rate is far enough from the design to flag.`,
+    `Daily envelopes with the same card twice: ${D.envelopes.daily.withRepeat} of ${D.envelopes.daily.envelopes}.`,
+    `Most pulled: ${D.cards.slice(0, 5).map(c => c.short + ' ' + c.pulls).join(', ')}. Never pulled: ${D.cards.filter(c => !c.pulls).map(c => c.short).join(', ') || 'none'}.`,
+    ``,
+    `INTERCEPT: ${I.plays} plays, ${I.solved} solved, ${I.failed} failed, ${I.perfect} perfect, average score ${I.avgScore == null ? 'n/a' : I.avgScore}, ${I.claimed} cards claimed.`,
+    ``,
+    `CATALOG: ${K.dispatchPosted} dispatches posted, ${K.comingWeek} coming in the next 7 days, next at ${K.nextPost || 'none scheduled'}. ${K.livingPosted} with film. Without a Declassified file: ${K.noFile.join(', ') || 'none'}. Name This waiting on an answer: ${K.nameThisWaiting.join(', ') || 'none'}.`,
+    ``,
+    `HEALTH: ${bad.length ? bad.join('; ') : 'all clear'}.`,
+  ].join('\n');
+}
+function players() {
+  $('body').innerHTML = `<p class="note">Every account, by file number, most recently active first. Tap a row for that player.</p><div class="tw"><table><tr><th>File</th><th>Last active</th><th>Days</th><th>Env.</th><th>Cards</th><th>Dossier</th><th>Streak</th><th>Intel</th><th>Rank</th><th>Gold+</th></tr>
+  ${D.players.map(p => `<tr class="go" data-f="${esc(p.file)}"><td>${esc(p.file)}${p.intelLogOk ? '' : ' <span class="bad">!</span>'}</td><td>${day(p.lastActive)}</td><td>${p.daysPlayed}</td><td>${p.envelopes}</td><td>${p.pulls}</td><td>${pct(p.completion)}</td><td>${p.streak}</td><td>${p.intel}</td><td>${esc(p.rank)}</td><td>${p.goldPlus}</td></tr>`).join('')}</table></div>`;
+  document.querySelectorAll('tr.go').forEach(r => r.onclick = () => playerView(r.dataset.f));
+}
+function playerView(file) {
+  $('body').innerHTML = '<p class="note">Loading…</p>';
+  get('?player=' + encodeURIComponent(file)).then(d => {
+    const s = d.summary;
+    $('body').innerHTML = `<button class="back" id="pback">◀︎ Players</button><h2>File ${esc(s.file)}</h2>
+    <div class="kp"><div><b>${s.daysPlayed}</b><span>days played</span></div><div><b>${s.envelopes}</b><span>envelopes</span></div><div><b>${s.pulls}</b><span>cards pulled</span></div><div><b>${pct(s.completion)}</b><span>dossier (${s.held})</span></div><div><b>${s.streak}</b><span>streak</span></div><div><b>${s.intel}</b><span>Intel${s.intelLogOk ? '' : ' (log off!)'}</span></div><div><b>${esc(s.rank)}</b><span>rank</span></div><div><b>${s.stamps} / ${s.pins}</b><span>stamps / pins</span></div><div><b>${s.requests}</b><span>requests</span></div><div><b>${s.intercepts}</b><span>Intercepts</span></div><div><b>${s.waiting}</b><span>waiting</span></div><div><b>${s.priority}</b><span>priority waiting</span></div></div>
+    <p class="note">Joined ${when(s.joined)} · last active ${when(s.lastActive)} · starter pack ${s.starter ? 'done' : 'not done'} · stamps already shown: ${esc(d.honorsSeen.join(', ') || 'none')}</p>
+    <h2>Recent envelopes</h2><div class="tw"><table><tr><th>When</th><th>Kind</th><th>Cards</th></tr>${d.envelopes.map(e => `<tr><td>${when(e.at)}</td><td>${esc(e.kind)}</td><td style="white-space:normal;text-align:left">${e.cards.map(c => `<span class="pill f-${c.finish}">${esc(c.short)}${c.living ? ' ▶' : ''}${c.serial ? ' #' + c.serial : ''}${c.intel ? ' +' + c.intel : ''}${c.turned ? '' : ' (waiting)'}</span>`).join('')}</td></tr>`).join('')}</table></div>
+    <h2>Intel history</h2><div class="tw"><table><tr><th>When</th><th>Reason</th><th>Card</th><th>Change</th></tr>${d.intelLog.map(r => `<tr><td>${when(r.at)}</td><td>${esc(r.reason)}</td><td>${esc(r.card || '')}${r.finish ? ' · ' + FN[r.finish] : ''}</td><td class="${r.delta < 0 ? 'bad' : 'ok'}">${r.delta > 0 ? '+' : ''}${r.delta}</td></tr>`).join('')}</table></div>
+    ${d.intercept.length ? `<h2>Intercept</h2><div class="tw"><table><tr><th>Day</th><th>Result</th><th>Score</th><th>Mistakes</th><th>Claimed</th></tr>${d.intercept.map(r => `<tr><td>${esc(r.day)}</td><td>${esc(r.status)}</td><td>${r.score == null ? '·' : r.score}</td><td>${r.mistakes}</td><td>${r.claimed ? 'yes' : '·'}</td></tr>`).join('')}</table></div>` : ''}
+    <h2>Still missing</h2><p class="note">${d.missing.length ? d.missing.map(esc).join(', ') : 'Holds every posted card.'}</p>
+    <h2>Days played</h2><p class="note">${d.playDays.map(esc).join(', ') || 'none'}</p>`;
+    $('pback').onclick = players;
+  }).catch(e => { $('body').innerHTML = `<p class="err">Could not load that player (${esc(e)}).</p>`; });
+}
+function cards() {
+  const C = D.collecting;
+  $('body').innerHTML = `<h2>Archive draws, regular cards</h2><p class="note">The random cards in envelopes against the odds table. "Watch" and "check" mean further from the design than chance usually goes (2 and 3 standard errors), shown once a row has 30 pulls.</p>${rateTable(D.rates.archiveStill, D.expected.still)}
+  <h2>Archive draws, Living Cards</h2>${rateTable(D.rates.archiveLiving, D.expected.living)}
+  <h2>Living and Flash rates</h2><div class="tw"><table><tr><th>Draw</th><th>Pulls</th><th>Actual</th><th>Designed</th><th></th></tr>
+  <tr><td>Living Card</td><td>${D.living.living} of ${D.living.draws}</td><td>${D.living.draws ? pct(D.living.living / D.living.draws) : '·'}</td><td>${pct(D.living.expected)}</td><td>${verdict(D.living.living, D.living.draws, D.living.expected)}</td></tr>
+  <tr><td>Flash</td><td>${D.flash.flash} of ${D.flash.draws}</td><td>${D.flash.draws ? pct(D.flash.flash / D.flash.draws) : '·'}</td><td>${pct(D.flash.expected)}</td><td>${verdict(D.flash.flash, D.flash.draws, D.flash.expected)}</td></tr></table></div>
+  <p class="note">The Living rate runs a little under 1 in 6 while few cards have films, since a Living roll needs a card whose film has posted.</p>
+  <h2>The morning day card</h2>${rateTable(D.rates.dayCard, D.expected.still)}
+  <h2>Starter packs, requests, Intercept picks</h2><div class="tw"><table><tr><th>Source</th><th>Copper</th><th>Silver</th><th>Gold</th><th>Top Secret</th></tr>${['starter', 'request', 'intercept'].map(k => `<tr><td>${k[0].toUpperCase() + k.slice(1)}</td><td>${D.rates[k].copper}</td><td>${D.rates[k].silver}</td><td>${D.rates[k].gold}</td><td>${D.rates[k].topsecret}</td></tr>`).join('')}</table></div>
+  <h2>Collecting</h2><div class="kp"><div><b>${pct(C.avgCompletion)}</b><span>average dossier</span></div><div><b>${C.stampsEarned}</b><span>month stamps</span></div><div><b>${C.pinsEarned}</b><span>pins</span></div><div><b>${C.goldPlusHolders}</b><span>hold a Gold+</span></div></div>
+  <p class="note">Ranks: ${Object.entries(C.ranks).map(([k, v]) => esc(k) + ' ' + v).join(' · ')}. Finishes out there: ${['copper', 'silver', 'gold', 'topsecret'].map(f => FN[f] + ' ' + C.finishesOut[f]).join(' · ')}.</p>
+  ${C.tsPerCard.length ? `<h2>Top Secret serials issued</h2><ul class="hl">${C.tsPerCard.map(x => `<li><span>${esc(x.card)}${x.living ? ' ▶' : ''}</span><b>${x.issued}</b></li>`).join('')}</ul>` : ''}
+  <h2>Envelopes</h2><p class="note">Daily envelopes ${D.envelopes.daily.envelopes} (same card twice in ${D.envelopes.daily.withRepeat}), priority ${D.envelopes.priority.envelopes}, commemorative ${D.envelopes.commemorative.envelopes}.</p>
+  <h2>Every posted card</h2><div class="tw"><table><tr><th>Card</th><th>Posted</th><th>Pulls</th><th>Owners</th></tr>${D.cards.map(c => `<tr><td>${esc(c.short)}${c.kind === 'namethis' ? ' <span class="note">Name This</span>' : ''}${c.flash ? ' <span class="note">Flash</span>' : ''}</td><td>${day(c.postAt)}</td><td>${c.pulls}</td><td>${c.owners} of ${D.totals.players}</td></tr>`).join('')}</table></div>`;
+}
+function engagement() {
+  const E = D.engagement, F = D.funnel;
+  const hrs = E.hoursET.map((n, h) => ({ h, n })).filter(x => x.n);
+  $('body').innerHTML = `<div class="kp"><div><b>${E.active1}</b><span>played today</span></div><div><b>${E.active7}</b><span>7 days</span></div><div><b>${E.active30}</b><span>30 days</span></div><div><b>${E.retentionDay1[0]}/${E.retentionDay1[1]}</b><span>back next day</span></div><div><b>${E.retentionDay7[0]}/${E.retentionDay7[1]}</b><span>back by day 7</span></div><div><b>${pct(E.missedRate)}</b><span>envelopes missed</span></div><div><b>${E.lastCall}</b><span>Last Call rescues</span></div><div><b>${E.medianOpenMinutes}m</b><span>median to open</span></div></div>
+  <p class="note">Missed: daily envelopes since each player's first day that they never opened (${E.offered - E.taken} of ${E.offered}). Last Call: opened on a later game day than it dropped. Days are Eastern game days.</p>
+  <h2>Players and envelopes, last 14 days</h2>${bars(E.days14, r => r.day.slice(5), r => r.opens, r => r.players + ' pl · ' + r.opens)}
+  <h2>New player path</h2><ul class="hl">${[['Accounts', F.accounts], ['Opened the starter pack', F.starterDone], ['Opened a daily envelope', F.firstDaily], ['Played 3 or more days', F.played3Days], ['Played 7 or more days', F.played7Days]].map(([l, n]) => `<li><span>${l}</span><b>${n}${F.accounts ? ' <span class="note">' + pct(n / F.accounts) + '</span>' : ''}</b></li>`).join('')}</ul>
+  <p class="note">Guests who open a starter pack and never save their dossier have no account, so they don't show here.</p>
+  <h2>Streaks right now</h2>${bars(Object.entries(E.streaks).map(([k, v]) => ({ k, v })), r => r.k, r => r.v)}
+  <h2>What time people open envelopes (Eastern)</h2>${hrs.length ? bars(hrs, r => (r.h % 12 || 12) + (r.h < 12 ? ' am' : ' pm'), r => r.n) : '<p class="note">No envelopes yet.</p>'}`;
+}
+function economy() {
+  const Ec = D.economy;
+  $('body').innerHTML = `<div class="kp"><div><b>${Ec.perActiveWeek}</b><span>Intel per active player, 7 days</span></div><div><b>~${Ec.design}</b><span>designed per week</span></div><div><b>${Ec.balances.median}</b><span>median balance</span></div><div><b>${Ec.balances.max}</b><span>largest balance</span></div><div><b>${Ec.balances.over500}</b><span>over 500</span></div><div><b>${Ec.requests.n}</b><span>requests</span></div></div>
+  <h2>Intel earned and spent, last 14 days</h2>${bars(D.engagement.days14, r => r.day.slice(5), r => r.intelEarned, r => '+' + r.intelEarned + ' / −' + r.intelSpent)}
+  <h2>By reason, all time</h2><ul class="hl">${Object.entries(Ec.byReason).map(([k, v]) => `<li><span>${esc(k)} <span class="note">(${v.n})</span></span><b class="${v.total < 0 ? 'bad' : 'ok'}">${v.total > 0 ? '+' : ''}${v.total}</b></li>`).join('')}</ul>
+  <h2>Requests by finish</h2><ul class="hl">${['copper', 'silver', 'gold', 'topsecret'].map(f => `<li><span>${FN[f]}</span><b>${Ec.requests[f]}</b></li>`).join('')}</ul>
+  <p class="note">A lot of players sitting on big balances with few requests would mean there isn't enough worth spending Intel on.</p>`;
+}
+function intercept() {
+  const I = D.intercept;
+  $('body').innerHTML = `<div class="kp"><div><b>${I.plays}</b><span>plays</span></div><div><b>${I.solved}</b><span>solved</span></div><div><b>${I.failed}</b><span>failed</span></div><div><b>${I.perfect}</b><span>perfect</span></div><div><b>${I.avgScore == null ? '·' : I.avgScore}</b><span>average score</span></div><div><b>${I.claimed}</b><span>cards claimed</span></div></div>
+  <h2>By day</h2>${I.days.length ? `<div class="tw"><table><tr><th>Day</th><th>Plays</th><th>Solved</th><th>Failed</th><th>Perfect</th><th>Avg score</th><th>Avg mistakes</th></tr>${I.days.map(d => `<tr><td>${esc(d.day)}</td><td>${d.plays}</td><td>${d.solved}</td><td>${d.failed}</td><td>${d.perfect}</td><td>${d.avgScore == null ? '·' : d.avgScore}</td><td>${d.avgMistakes == null ? '·' : d.avgMistakes}</td></tr>`).join('')}</table></div>` : '<p class="note">No Intercept games yet.</p>'}`;
+}
+function catalog() {
+  const K = D.catalog;
+  $('body').innerHTML = `<div class="kp"><div><b>${K.dispatchPosted}</b><span>dispatches posted</span></div><div><b>${K.comingWeek}</b><span>coming in 7 days</span></div><div><b>${K.livingPosted}</b><span>with film</span></div><div><b>${K.flashPosted}</b><span>Flash cards</span></div></div>
+  <ul class="hl"><li><span>Last card posted</span><b>${when(K.lastPost)}</b></li><li><span>Next card scheduled</span><b class="${K.nextPost ? 'ok' : 'bad'}">${K.nextPost ? when(K.nextPost) : 'none!'}</b></li>
+  <li><span>Posted cards without a Declassified file</span><b class="${K.noFile.length ? 'bad' : 'ok'}">${K.noFile.length || '✓'}</b></li><li><span>Declassified files without an extra photo</span><b>${K.fileNoPhoto}</b></li>
+  <li><span>Name This cards waiting on an answer</span><b>${K.nameThisWaiting.length}</b></li></ul>
+  ${K.noFile.length ? `<p class="note">No file yet: ${K.noFile.map(esc).join(', ')}.</p>` : ''}
+  <p class="note">"Next card scheduled: none" or a short "coming in 7 days" means the weekly runs have fallen behind. A posted card without a Declassified file means research skipped the new block.</p>`;
 }
 </script>
 </body>
