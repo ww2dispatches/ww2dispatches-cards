@@ -804,7 +804,7 @@ h2{flex-wrap:wrap;row-gap:2px}
 .big .cardsclip .cardsout{left:50%;top:100%;bottom:auto;width:28.6%;transform:translate(-50%,4%);opacity:1;transition:transform 1s .8s cubic-bezier(.2,.8,.3,1)}
 .big.go .cardsclip .cardsout{opacity:1;transform:translate(-50%,-78%)}
 .big .cardsout i{display:grid;place-items:center;container-type:inline-size;border:1px solid #cbbd98;box-shadow:0 8px 18px rgba(0,0,0,.45)}
-.big .cardsout i::after{content:"WW2";width:46%;aspect-ratio:1;border-radius:50%;background:#B04A3E;color:#FFF8EA;display:grid;place-items:center;font-family:var(--display);font-weight:700;font-size:13cqw;border:3.2cqw solid #EDE4CF;outline:1.3cqw solid #B04A3E;box-sizing:border-box}
+.big .cardsout i::after{content:"WW2";width:46%;aspect-ratio:1;border-radius:50%;background:#B04A3E;color:#FFF8EA;display:grid;place-items:center;font-family:var(--display);font-weight:700;font-style:normal;font-size:13cqw;border:3.2cqw solid #EDE4CF;outline:1.3cqw solid #B04A3E;box-sizing:border-box}
 .big.fade{opacity:0;transition:opacity .35s}
 /* drag the seal to tear it open: the seal slides with the finger and the flap starts to lift */
 .stack .env{perspective:700px}
