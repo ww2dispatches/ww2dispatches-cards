@@ -802,7 +802,8 @@
     const tag = tags[idx];
     $('stage').innerHTML = `<div class="flip${revealed[idx] ? ' up' : ''}" id="flip"><div class="face backf${backHint(p)}"><div class="badge">WW2</div><small>${esc(backText(p, idx))}</small></div><div class="face frontf">${tag ? `<span class="tag ${tag[0]}">${tag[1]}</span>` : ''}${info ? cardFace(info, p.finish, p.variant, p.serial, { puzzle: info.kind === 'namethis' }) : '<p class="sub">This card has left the archive.</p>'}${tag && tag[0] === 'dup gain' ? `<span class="filedst${revealed[idx] ? ' set' : ''}">FILED</span>` : ''}</div></div>`;
     const f = $('flip');
-    if (dir) { f.classList.add('in'); requestAnimationFrame(() => requestAnimationFrame(() => f.classList.remove('in'))); }
+    if (dir) { f.classList.add('in'); $('stage').classList.add('fade'); requestAnimationFrame(() => requestAnimationFrame(() => { f.classList.remove('in'); $('stage').classList.remove('fade'); })); }
+    else $('stage').classList.remove('fade');
     f.onclick = () => { if (flipDrag.used) { flipDrag.used = false; return; } reveal(); };
     if (revealed[idx] && info && p.variant === 'living') startFilm(f, info);
     $('hint').innerHTML = hintFor(p, idx);
@@ -993,7 +994,7 @@
     hideNote('cards');
     const p = pulls[idx];
     if (p && p.cardInfo && p.cardInfo.kind === 'namethis') answered[idx] = true;
-    $('flip').classList.add('out');
+    $('flip').classList.add('out'); $('stage').classList.add('fade');
     sfx('page'); // a soft paper slide between cards (premium pass, 29 Oct 2026)
     setTimeout(() => { idx = n; renderCard(true); }, 220);
   }
