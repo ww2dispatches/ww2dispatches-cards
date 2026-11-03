@@ -239,7 +239,7 @@
     const t0 = performance.now(), D = R[0] + R[3] * 1100;
     cf.classList.add('rock'); cf.classList.remove('rest');
     const step = now => {
-      if (!cf.isConnected) return;
+      if (!cf.isConnected || cf.dataset.held) return;
       const k1 = Math.min(1, (now - t0) / R[0]), e = Math.sin(k1 * Math.PI);
       let tx = Math.sin(k1 * Math.PI * 2) * R[1] * e, ty = Math.sin(k1 * Math.PI + 0.6) * R[2] * e;
       if (R[3] && now - t0 > R[0]) { const k2 = (now - t0 - R[0]) / 1100, e2 = Math.sin(Math.min(1, k2) * Math.PI); tx = Math.sin(k2 * Math.PI * 2) * 0.35 * e2; ty = -Math.sin(k2 * Math.PI) * 0.2 * e2; }
@@ -1295,21 +1295,47 @@
     $('zoomer').classList.remove('on', 'zoomed'); document.body.classList.remove('zopen');
     setTimeout(() => { $('zoomer').hidden = true; $('zstage').innerHTML = ''; const v = document.querySelector('#stage2 video'); if (v) v.play().catch(() => {}); }, 200);
   }
-  // The 3D turn in the full screen view: the finger's place on the card sets the angle (up to 22 degrees).
-  function zTurn(px, py, rest) {
-    const cf = document.querySelector('#zcard .cf'); if (!cf) return;
-    const r = cf.getBoundingClientRect();
-    const tx = Math.max(-1, Math.min(1, ((px - r.left) / r.width - 0.5) * 2)), ty = Math.max(-1, Math.min(1, ((py - r.top) / r.height - 0.5) * 2));
-    cf.classList.add('rock'); cf.classList.toggle('rest', Boolean(rest));
-    foilVars(cf, tx / 2, ty / 2);
-    cf.style.setProperty('--rx', (tx * 22).toFixed(2)); cf.style.setProperty('--ry', (-ty * 22).toFixed(2));
+  // The 3D turn in the full screen view (reworked 2 Nov 2026): the card follows how far the finger drags, not where it
+  // sits, so touching it never makes it jump. Drag right and the face turns right (the left edge comes toward you);
+  // drag down and it tips down. Easing toward the finger, a soft stop near 22 degrees, and a springy settle on release.
+  const ZT = { rx: 0, ry: 0, vx: 0, vy: 0, tx: 0, ty: 0, bx: 0, by: 0, sx: 0, sy: 0, w: 1, mode: '', raf: 0 };
+  const LIM = 22, soft = v => LIM * Math.tanh(v / LIM), unsoft = v => LIM * Math.atanh(Math.max(-0.995, Math.min(0.995, v / LIM)));
+  function zTurnApply(cf) {
+    foilVars(cf, ZT.rx / (LIM * 2), ZT.ry / (LIM * 2));
+    cf.style.setProperty('--rx', ZT.rx.toFixed(2)); cf.style.setProperty('--ry', (-ZT.ry).toFixed(2));
+  }
+  function zTurnLoop() {
+    const cf = document.querySelector('#zcard .cf'); if (!cf) { ZT.raf = 0; return; }
+    if (ZT.mode === 'drag') { ZT.rx += (ZT.tx - ZT.rx) * 0.3; ZT.ry += (ZT.ty - ZT.ry) * 0.3; }
+    else { ZT.vx = ZT.vx * 0.88 - ZT.rx * 0.045; ZT.vy = ZT.vy * 0.88 - ZT.ry * 0.045; ZT.rx += ZT.vx; ZT.ry += ZT.vy; }
+    zTurnApply(cf);
     lightTouched = Date.now();
+    const still = ZT.mode !== 'drag' && Math.abs(ZT.rx) + Math.abs(ZT.ry) + Math.abs(ZT.vx) + Math.abs(ZT.vy) < 0.03;
+    if (still) { // settled: hand the card back to the gentle drift
+      ZT.raf = 0; ZT.rx = ZT.ry = ZT.vx = ZT.vy = 0; delete cf.dataset.held; cf.classList.remove('rock');
+      ['--ang', '--ang2', '--pos', '--gang', '--tx', '--ty', '--gx', '--gx2', '--gy2', '--sx', '--sy', '--sx2', '--sy2', '--rx', '--ry'].forEach(v => cf.style.removeProperty(v));
+      return;
+    }
+    ZT.raf = requestAnimationFrame(zTurnLoop);
+  }
+  function zTurnStart(px, py) {
+    const cf = document.querySelector('#zcard .cf'); if (!cf) return;
+    if (!cf.dataset.held) { // pick up from wherever the opening rock left it
+      ZT.rx = parseFloat(cf.style.getPropertyValue('--rx')) || 0; ZT.ry = -(parseFloat(cf.style.getPropertyValue('--ry')) || 0); ZT.vx = ZT.vy = 0;
+    }
+    cf.dataset.held = '1'; cf.classList.add('rock'); cf.classList.remove('rest');
+    ZT.mode = 'drag'; ZT.sx = px; ZT.sy = py; ZT.w = ($('zcard').offsetWidth || 300);
+    ZT.bx = unsoft(ZT.rx); ZT.by = unsoft(ZT.ry); ZT.tx = ZT.rx; ZT.ty = ZT.ry;
+    if (!ZT.raf) ZT.raf = requestAnimationFrame(zTurnLoop);
+  }
+  function zTurnMove(px, py) {
+    if (ZT.mode !== 'drag') return;
+    const k = 60 / ZT.w; // dragging half the card's width turns it about 22 degrees
+    ZT.tx = soft(ZT.bx + (px - ZT.sx) * k); ZT.ty = soft(ZT.by + (py - ZT.sy) * k);
   }
   function zTurnRest() {
-    const cf = document.querySelector('#zcard .cf'); if (!cf) return;
-    cf.classList.add('rest'); cf.style.setProperty('--rx', '0'); cf.style.setProperty('--ry', '0');
-    // hand the light back to the drift once it has settled
-    setTimeout(() => { if (cf.isConnected && !Z.pan) ['--ang', '--ang2', '--pos', '--gang', '--tx', '--ty', '--gx', '--gx2', '--gy2', '--sx', '--sy', '--sx2', '--sy2'].forEach(v => cf.style.removeProperty(v)); }, 1200);
+    ZT.mode = 'spring';
+    if (!ZT.raf) ZT.raf = requestAnimationFrame(zTurnLoop);
   }
   (function wireZoom() {
     const zs = $('zstage');
@@ -1321,9 +1347,10 @@
       if (Z.pts.size === 2) {
         const [a, b] = [...Z.pts.values()];
         Z.pinch = { d: Math.hypot(a.x - b.x, a.y - b.y), s: Z.s, mx: (a.x + b.x) / 2, my: (a.y + b.y) / 2, x: Z.x, y: Z.y }; Z.pan = null; Z.moved = true;
+        if (ZT.mode === 'drag') zTurnRest(); // a second finger means zoom: let the card settle flat
       } else if (Z.pts.size === 1) {
         Z.pan = { x: e.clientX, y: e.clientY, ox: Z.x, oy: Z.y }; Z.moved = false; Z.tap = { x: e.clientX, y: e.clientY, t: Date.now() };
-        if (Z.s === 1 && e.target.closest('#zcard')) { zTurn(e.clientX, e.clientY, true); setTimeout(() => { const cf = document.querySelector('#zcard .cf'); if (cf && Z.pan) cf.classList.remove('rest'); }, 250); }
+        if (Z.s === 1 && e.target.closest('#zcard')) zTurnStart(e.clientX, e.clientY);
       }
     });
     zs.addEventListener('pointermove', e => {
@@ -1341,7 +1368,7 @@
         const dx = e.clientX - Z.pan.x, dy = e.clientY - Z.pan.y;
         if (Math.hypot(dx, dy) > 8) Z.moved = true;
         if (Z.s > 1) { Z.x = Z.pan.ox + dx; Z.y = Z.pan.oy + dy; zClamp(); zApply(false); }
-        else zTurn(e.clientX, e.clientY, false);
+        else zTurnMove(e.clientX, e.clientY);
       }
     });
     const up = e => {
@@ -1350,7 +1377,8 @@
       if (Z.pinch) { if (Z.pts.size < 2) { Z.pinch = null; const p = [...Z.pts.values()][0]; Z.pan = p ? { x: p.x, y: p.y, ox: Z.x, oy: Z.y } : null; } return; }
       const pan = Z.pan; Z.pan = null; $('zoomer').style.removeProperty('--zfade');
       if (!pan) return;
-      if (Z.s === 1 && Z.moved) { zTurnRest(); return; }
+      if (Z.s === 1 && ZT.mode === 'drag') zTurnRest();
+      if (Z.s === 1 && Z.moved) return;
       if (Z.moved) return;
       // A tap: a double tap zooms in to 2.5x at that spot (or back out); a single tap on the backdrop closes.
       const now = Date.now(), onCard = e.target.closest('#zcard');
