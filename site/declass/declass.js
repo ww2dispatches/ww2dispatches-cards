@@ -1306,7 +1306,7 @@
   }
   function zTurnLoop() {
     const cf = document.querySelector('#zcard .cf'); if (!cf) { ZT.raf = 0; return; }
-    if (ZT.mode === 'drag') { ZT.rx += (ZT.tx - ZT.rx) * 0.3; ZT.ry += (ZT.ty - ZT.ry) * 0.3; }
+    if (ZT.mode === 'drag') { ZT.rx += (ZT.tx - ZT.rx) * 0.4; ZT.ry += (ZT.ty - ZT.ry) * 0.4; }
     else { ZT.vx = ZT.vx * 0.88 - ZT.rx * 0.045; ZT.vy = ZT.vy * 0.88 - ZT.ry * 0.045; ZT.rx += ZT.vx; ZT.ry += ZT.vy; }
     zTurnApply(cf);
     lightTouched = Date.now();
@@ -1330,7 +1330,7 @@
   }
   function zTurnMove(px, py) {
     if (ZT.mode !== 'drag') return;
-    const k = 60 / ZT.w; // dragging half the card's width turns it about 22 degrees
+    const k = 140 / ZT.w; // about twice the earlier rate: a fifth of the card's width turns it most of the way
     ZT.tx = soft(ZT.bx + (px - ZT.sx) * k); ZT.ty = soft(ZT.by + (py - ZT.sy) * k);
   }
   function zTurnRest() {
