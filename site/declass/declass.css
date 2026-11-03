@@ -1139,5 +1139,9 @@ html.ztrial #stage2{cursor:zoom-in}
 .cf.lv .fk1{mix-blend-mode:normal;opacity:.85}
 .cf.lv .fk1::after{mix-blend-mode:normal;opacity:.4}
 .cf.lv .sheen,.cf.lv .mir{mix-blend-mode:normal;opacity:.35}
+/* Living Cards (2 Nov 2026): the general sheen rule above outranked the line before, so a Gold Living Card ran the full
+   white sheen straight over the film (plain white on iPhone, which ignores blend modes over video). This one wins: the
+   light stays on the paper border and only a faint fifth of it crosses the film window. */
+.cf.lv:not(.flash):not(.f-copper) .sheen{mix-blend-mode:normal;opacity:.6;-webkit-mask:linear-gradient(#000 0 0),linear-gradient(rgba(0,0,0,.8) 0 0) center/92.9% 76.4% no-repeat;-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0),linear-gradient(rgba(0,0,0,.8) 0 0) center/92.9% 76.4% no-repeat;mask-composite:exclude}
 .zoomer.zoomed .cf .fk1,.zoomer.zoomed .cf .mir{opacity:0;transition:opacity .2s}
 @media (prefers-reduced-motion:reduce){.cf.f-gold .frame,.cf.f-topsecret .frame::before{animation:none!important}}
