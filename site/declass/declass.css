@@ -1081,3 +1081,63 @@ html.ztrial #stage2{cursor:zoom-in}
 .honlist li{display:flex;justify-content:space-between;gap:10px;padding:8px 2px;border-bottom:1px solid rgba(201,188,158,.25)}
 .honlist b{font-family:var(--display);font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:15px;color:#EDE4CF}
 .honlist span{font-family:var(--type);font-size:14px;color:#cbbf9f;white-space:nowrap}
+
+/* ============ Card finishes: Edge and Glow (2 Nov 2026, Card Design doc) ============
+   Every tier wears the same slim metal edge, so every card is the same size and the card never shrinks as rarity
+   climbs. The tier shows in the metal and in the light the card throws onto the desk. Light on the card face is
+   white only, so the photo stays true. Gold and Top Secret carry gold leaf flecks in the paper (platinum on Top
+   Secret), masked under the printed ink; Top Secret adds silver mirroring on the photo's edges, a point of light
+   running around the edge, and its TOP SECRET stamp with the serial in the photo's top left corner. This block
+   replaces the older frames, mats, corner brackets, badge, frame serial, and the Pocket foil. Flash is untouched. */
+@property --run{syntax:'<angle>';inherits:false;initial-value:0deg}
+.cf:not(.flash) .frame{padding:1.3cqw!important;border-radius:2cqw!important;background-size:100% 100%!important;background-position:0 0!important}
+.cf:not(.flash) .card{border-radius:1cqw;box-shadow:none!important;outline:0!important}
+.cf:not(.flash) .frame::before,.cf:not(.flash) .frame::after{content:""!important;position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:none;border:0!important;border-image:none!important;box-shadow:none!important;-webkit-mask:none;mask:none;padding:0;opacity:1;display:block!important;mix-blend-mode:normal;animation:none;z-index:0}
+.cf .corner,.cf .serial,.cf .badge{display:none!important}
+/* Copper: matte, no light. The darkest value on the desk. */
+.cf.f-copper .frame{background:linear-gradient(140deg,#6e3b1d,#9a5c33 38%,#7f4726 62%,#5f321a)!important;box-shadow:0 14px 34px rgba(0,0,0,.7)!important}
+/* Silver: brushed pewter, a mid value, a soft fixed gloss and a cool haze. */
+.cf.f-silver .frame{background:linear-gradient(140deg,#5f656d,#9aa0a8 36%,#7a8088 54%,#a3a9b1 70%,#5c626a)!important;box-shadow:0 0 5cqw rgba(210,218,230,.2),0 14px 34px rgba(0,0,0,.7)!important}
+.cf.f-silver .frame::before{background:repeating-linear-gradient(90deg,rgba(255,255,255,.07) 0 1px,transparent 1px 3px)!important;box-shadow:inset 0 0 0 .25cqw rgba(255,255,255,.25)!important}
+/* Gold: polished, a warm glow that slowly breathes, and a sweep of light across the metal. */
+.cf.f-gold .frame{background:linear-gradient(140deg,#8a6110,#e2bf55 28%,#b38a26 46%,#f1d97c 62%,#946a12 86%,#c49d36)!important;box-shadow:0 0 9cqw rgba(232,190,80,.38),0 0 2cqw rgba(255,215,120,.35),0 14px 34px rgba(0,0,0,.7)!important;animation:edBreathe 4s ease-in-out infinite}
+.cf.f-gold .frame::after{background:linear-gradient(var(--ang,120deg),transparent 35%,rgba(255,250,225,.8) 50%,transparent 65%)!important;background-size:260% 260%!important;background-position:var(--sx,50%) var(--sy,50%)!important;mix-blend-mode:soft-light}
+@keyframes edBreathe{50%{box-shadow:0 0 12cqw rgba(232,190,80,.5),0 0 3cqw rgba(255,215,120,.45),0 14px 34px rgba(0,0,0,.7)}}
+/* Top Secret: holographic platinum, the brightest, color in the edge only, and a point of light running round it. */
+.cf.f-topsecret .frame{background:linear-gradient(140deg,#9aa2ae,#eef2f7 20%,#c5ccd6 34%,#f8fafc 48%,#b3bbc6 62%,#e9edf3 76%,#9aa2ae)!important;box-shadow:0 0 10cqw hsl(calc(200 + var(--tx,0) * 120) 90% 72% / .42),0 0 2.4cqw hsl(calc(200 + var(--tx,0) * 120) 90% 82% / .45),0 14px 34px rgba(0,0,0,.7)!important}
+.cf.f-topsecret .frame::after,.cf.f-topsecret .frame::before{padding:1.3cqw;-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0)!important;-webkit-mask-composite:xor!important;mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0)!important;mask-composite:exclude!important}
+.cf.f-topsecret .frame::after{background:linear-gradient(var(--ang,120deg),#ff8a8a,#ffe08a,#8affc0,#8ac2ff,#d98aff,#ff8a8a)!important;background-size:300% 300%!important;background-position:var(--sx,50%) var(--sy,50%)!important;mix-blend-mode:color;opacity:.75}
+.cf.f-topsecret .frame::before{z-index:3;background:conic-gradient(from var(--run),transparent 0deg,transparent 300deg,rgba(255,255,255,.95) 340deg,transparent 360deg)!important;filter:blur(.3cqw);animation:edRun 3.2s linear infinite!important}
+@keyframes edRun{to{--run:360deg}}
+/* the white light on the card face */
+.cf:not(.flash):not(.f-copper) .sheen{display:block!important;position:absolute;inset:0;pointer-events:none;z-index:2;mix-blend-mode:screen;background:linear-gradient(var(--ang,120deg),transparent 38%,rgba(255,255,255,.16) 47%,rgba(255,255,255,.3) 50%,rgba(255,255,255,.16) 53%,transparent 62%)!important;background-size:260% 260%!important;background-position:var(--sx,50%) var(--sy,50%)!important;opacity:.85}
+.cf.f-silver .sheen{opacity:.45;background-position:35% 35%!important}
+.cf.f-topsecret .sheen{opacity:1}
+.cf.f-copper .sheen{display:none!important}
+/* gold leaf flecks: the paper bands only (the photo box stays matte), under the printed ink */
+.cf .bands{position:absolute;inset:0;pointer-events:none;z-index:1;-webkit-mask:linear-gradient(#000 0 0),linear-gradient(#000 0 0) center/93.6% 76.7% no-repeat;-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0),linear-gradient(#000 0 0) center/93.6% 76.7% no-repeat;mask-composite:exclude}
+.cf .paper{position:absolute;inset:0;opacity:0;transition:opacity .4s;-webkit-mask:var(--pm) 0 0/100% 100%;mask:var(--pm) 0 0/100% 100%}
+.cf.pm .paper{opacity:1}
+.cf.nopm .paper{-webkit-mask:none;mask:none}
+.cf .fk0,.cf .fk1{position:absolute;inset:0;background-size:100% 100%}
+.cf.f-gold .fk0{background-image:var(--fkG0);mix-blend-mode:multiply;opacity:.8}
+.cf.f-gold .fk1{background-image:var(--fkG1);mix-blend-mode:color-dodge}
+.cf.f-topsecret .fk0{background-image:var(--fkT0);mix-blend-mode:multiply;opacity:.7}
+.cf.f-topsecret .fk1{background-image:var(--fkT1);mix-blend-mode:color-dodge}
+.cf .fk1{-webkit-mask-image:radial-gradient(ellipse 55% 45% at var(--sx,50%) var(--sy,50%),#000,rgba(0,0,0,.3) 55%,transparent 82%);mask-image:radial-gradient(ellipse 55% 45% at var(--sx,50%) var(--sy,50%),#000,rgba(0,0,0,.3) 55%,transparent 82%)}
+.cf.f-topsecret .fk1::after{content:"";position:absolute;inset:0;background:linear-gradient(var(--ang,120deg),#ff8a8a,#ffe08a,#8affc0,#8ac2ff,#d98aff,#ff8a8a);background-size:300% 300%;background-position:var(--sx,50%) var(--sy,50%);-webkit-mask-image:var(--fkT1);mask-image:var(--fkT1);-webkit-mask-size:100% 100%;mask-size:100% 100%;mix-blend-mode:color}
+/* Top Secret: silver mirroring, the blue metallic sheen old silver prints show at their edges. Edges only. */
+.cf .mir{position:absolute;left:3.2%;top:11.6%;width:93.6%;height:76.7%;pointer-events:none;z-index:2;mix-blend-mode:screen;
+  background:radial-gradient(ellipse 72% 68% at 50% 50%,transparent 58%,rgba(170,200,255,.55) 82%,rgba(230,215,255,.8) 100%);
+  -webkit-mask-image:radial-gradient(circle at var(--sx,50%) var(--sy,50%),#000 0,rgba(0,0,0,.35) 35%,transparent 70%);mask-image:radial-gradient(circle at var(--sx,50%) var(--sy,50%),#000 0,rgba(0,0,0,.35) 35%,transparent 70%)}
+/* Top Secret: one red rubber stamp in the photo's top left corner, TOP SECRET over the worldwide serial */
+.cf .tsst{position:absolute;z-index:4;left:6%;top:14.2%;display:flex;flex-direction:column;align-items:flex-start;gap:.6cqw;color:#b3241a;transform:rotate(-6deg);transform-origin:left top;pointer-events:none}
+.cf .tsc{font:700 3.6cqw/1.1 var(--display);letter-spacing:.1em;text-transform:uppercase;border:.6cqw solid currentColor;border-radius:.6cqw;padding:.3cqw 1.3cqw;background:rgba(240,232,214,.82)}
+.cf .tsn{font:400 3.4cqw/1 var(--type);letter-spacing:.14em;padding:.4cqw 1cqw;background:rgba(240,232,214,.82);border-radius:.4cqw}
+/* Living Cards: iPhone Safari ignores blend modes over a playing video, so the flecks and sheen go plain there */
+.cf.lv .fk0{mix-blend-mode:normal;opacity:.45}
+.cf.lv .fk1{mix-blend-mode:normal;opacity:.85}
+.cf.lv .fk1::after{mix-blend-mode:normal;opacity:.4}
+.cf.lv .sheen,.cf.lv .mir{mix-blend-mode:normal;opacity:.35}
+.zoomer.zoomed .cf .fk1,.zoomer.zoomed .cf .mir{opacity:0;transition:opacity .2s}
+@media (prefers-reduced-motion:reduce){.cf.f-gold .frame,.cf.f-topsecret .frame::before{animation:none!important}}

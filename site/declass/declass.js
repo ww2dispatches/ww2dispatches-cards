@@ -181,6 +181,55 @@
     if (!document.hidden && Date.now() - lightTouched > 1500) { lightT += 0.01; setLight(Math.sin(lightT) * 0.35, Math.cos(lightT * 0.7) * 0.35); }
     requestAnimationFrame(idle);
   })();
+  // ---------- gold leaf flecks (2 Nov 2026, Card Design doc) ----------
+  // Small irregular flakes of leaf drawn once into textures: gold for Gold, platinum for Top Secret. A rest layer
+  // shows at all times; a lit layer flashes where the light passes.
+  function leafTex(colors, n, alpha, seed, size) {
+    const c = document.createElement('canvas'); c.width = 640; c.height = 800; const g = c.getContext('2d'); let s = seed;
+    const r = () => (s = (s * 9301 + 49297) % 233280) / 233280;
+    for (let i = 0; i < n; i++) {
+      const x = r() * 640, y = r() * 800, rad = size * (0.6 + r() * 1.1), k = 4 + Math.floor(r() * 3);
+      g.globalAlpha = alpha * (0.55 + r() * 0.45); g.fillStyle = colors[Math.floor(r() * colors.length)];
+      g.beginPath(); for (let j = 0; j < k; j++) { const t = j / k * Math.PI * 2 + r() * 0.6, rr = rad * (0.55 + r() * 0.6); g.lineTo(x + Math.cos(t) * rr, y + Math.sin(t) * rr); } g.closePath(); g.fill();
+    }
+    return 'url(' + c.toDataURL() + ')';
+  }
+  try {
+    const rs = document.documentElement.style;
+    rs.setProperty('--fkG0', leafTex(['#c9a040', '#b8862b', '#d8b35a'], 420, 0.75, 31, 3.2));
+    rs.setProperty('--fkG1', leafTex(['#fff3c4', '#ffe08a', '#ffffff'], 420, 1, 31, 3.2));
+    rs.setProperty('--fkT0', leafTex(['#a9b3c2', '#9aa5b6', '#c3cad4'], 520, 0.85, 33, 3));
+    rs.setProperty('--fkT1', leafTex(['#ffffff', '#f2f5fa'], 520, 1, 33, 3));
+  } catch (e) { /* no canvas: the cards simply show without flecks */ }
+  // The paper mask: the card's cream paper with the printed ink cut out, so the flecks sit under the type the way
+  // real flecked paper does. Made once per picture from a small copy of the card image.
+  const pmCache = new Map();
+  function paperMask(src) {
+    if (!pmCache.has(src)) pmCache.set(src, loadImg(src).then(im => {
+      const w = 400, h = 500, c = document.createElement('canvas'); c.width = w; c.height = h;
+      const x = c.getContext('2d'); x.drawImage(im, 0, 0, w, h);
+      const d = x.getImageData(0, 0, w, h), p = d.data, a = new Uint8Array(w * h);
+      for (let i = 0; i < w * h; i++) a[i] = 0.3 * p[i * 4] + 0.59 * p[i * 4 + 1] + 0.11 * p[i * 4 + 2] > 150 ? 1 : 0;
+      for (let yy = 0; yy < h; yy++) for (let xx = 0; xx < w; xx++) {
+        let ok = a[yy * w + xx];
+        if (ok) for (let dy = -1; dy <= 1 && ok; dy++) for (let dx = -1; dx <= 1; dx++) { const X = xx + dx, Y = yy + dy; if (X >= 0 && Y >= 0 && X < w && Y < h && !a[Y * w + X]) { ok = 0; break; } }
+        const q = (yy * w + xx) * 4; p[q] = p[q + 1] = p[q + 2] = 0; p[q + 3] = ok ? 255 : 0;
+      }
+      x.putImageData(d, 0, 0); return 'url(' + c.toDataURL() + ')';
+    }).catch(() => null));
+    return pmCache.get(src);
+  }
+  function applyPaper(cf) {
+    if (cf.dataset.pmDone) return; cf.dataset.pmDone = '1';
+    paperMask(cf.dataset.pm).then(u => { if (u) cf.style.setProperty('--pm', u); else cf.classList.add('nopm'); cf.classList.add('pm'); });
+  }
+  new MutationObserver(ms => {
+    for (const m of ms) for (const n of m.addedNodes) {
+      if (n.nodeType !== 1) continue;
+      if (n.matches('.cf[data-pm]')) applyPaper(n);
+      n.querySelectorAll('.cf[data-pm]').forEach(applyPaper);
+    }
+  }).observe(document.documentElement, { childList: true, subtree: true });
   // The reveal rock: a foil card turns on its own for a moment as it lands face up, so the foil sweeps across
   // and everyone sees it shimmer. Silver short and gentle, Gold fuller, Top Secret the full swing and a second sway.
   function rockCard(cf, finish) {
@@ -217,9 +266,16 @@
     // A Flash card (Roadmap, Flash cards plan) is full art and always Top Secret: no frame, no rim, no badge,
     // no serial. The holographic shine drifts over the art itself (decided 25 Oct 2026, take A).
     if (info.flash) return `<div class="cf flash"><div class="frame"><div class="card">${media}<span class="holo"></span><span class="glare"></span></div></div></div>`;
-    // The foil (31 Oct 2026, the Pocket system from the holo lab): streaks on the border, a texture per finish, a glare.
-    const foil = finish === 'copper' ? '' : '<span class="pf"></span><span class="ps"></span><span class="ps2"></span><span class="pg"></span>';
-    return `<div class="cf f-${finish}${living ? ' lv' : ''}"><div class="frame"><div class="card">${media}<span class="sheen"></span>${foil}<span class="badge">Top Secret</span>${info.kind === 'namethis' ? '<span class="ansst">ANSWER</span>' : ''}</div><span class="corner c1"></span><span class="corner c2"></span><span class="corner c3"></span><span class="corner c4"></span><span class="serial">${serial ? 'Worldwide serial ' + ser4(serial) : ''}</span></div></div>`;
+    // Edge and Glow (2 Nov 2026, Card Design doc): every tier the same slim metal edge, so every card is the same
+    // size. Gold and Top Secret get gold leaf flecks in the paper (platinum on Top Secret), kept under the printed
+    // ink by a paper mask made from the card picture. Top Secret also gets silver mirroring on the photo's edges and
+    // one red stamp in the photo's top left corner carrying TOP SECRET and its worldwide serial.
+    const leaf = finish === 'gold' || finish === 'topsecret';
+    const paper = leaf ? '<span class="bands"><span class="paper"><i class="fk0"></i><i class="fk1"></i></span></span>' : '';
+    const mir = finish === 'topsecret' ? '<span class="mir"></span>' : '';
+    const tsst = finish === 'topsecret' ? `<span class="tsst"><span class="tsc">Top Secret</span>${serial ? `<span class="tsn">No. ${ser4(serial)}</span>` : ''}</span>` : '';
+    const pm = leaf ? ` data-pm="${esc(living ? (info.filmPoster || info.img) : src)}"` : '';
+    return `<div class="cf f-${finish}${living ? ' lv' : ''}"${pm}><div class="frame"><div class="card">${media}${paper}${mir}<span class="sheen"></span>${tsst}${info.kind === 'namethis' ? '<span class="ansst">ANSWER</span>' : ''}</div></div></div>`;
   }
   // Start a Living Card's film (muted). If the phone blocks it, show a play button.
   function startFilm(root, info) {
@@ -1519,27 +1575,50 @@
       c.globalCompositeOperation = 'overlay'; const rg = c.createRadialGradient(x + w * 0.35, y + ch * 0.3, 0, x + w * 0.35, y + ch * 0.3, w * 0.7); rg.addColorStop(0, 'rgba(255,255,255,.45)'); rg.addColorStop(1, 'rgba(255,255,255,0)'); c.fillStyle = rg; c.fillRect(x, y, w, ch);
       c.restore(); return;
     }
-    const pad = { copper: 0.014, silver: 0.03, gold: 0.06, topsecret: 0.06 }[f] * w, cw = w - 2 * pad, ch = cw * 1.25, fh = ch + 2 * pad;
+    // Edge and Glow (2 Nov 2026): the same slim metal edge at every tier, gold leaf flecks on the paper of Gold and
+    // Top Secret, and Top Secret's stamp with its serial in the photo's top left corner, matching the game.
+    const pad = 0.013 * w, cw = w - 2 * pad, ch = cw * 1.25, fh = ch + 2 * pad, cx = x + pad, cy = y + pad;
+    const metal = {
+      copper: [[0, '#6e3b1d'], [0.38, '#9a5c33'], [0.62, '#7f4726'], [1, '#5f321a']],
+      silver: [[0, '#5f656d'], [0.36, '#9aa0a8'], [0.54, '#7a8088'], [0.7, '#a3a9b1'], [1, '#5c626a']],
+      gold: [[0, '#8a6110'], [0.28, '#e2bf55'], [0.46, '#b38a26'], [0.62, '#f1d97c'], [0.86, '#946a12'], [1, '#c49d36']],
+      topsecret: [[0, '#9aa2ae'], [0.2, '#eef2f7'], [0.34, '#c5ccd6'], [0.48, '#f8fafc'], [0.62, '#b3bbc6'], [0.76, '#e9edf3'], [1, '#9aa2ae']],
+    }[f];
     c.save(); c.shadowColor = 'rgba(0,0,0,.55)'; c.shadowBlur = w * 0.06; c.shadowOffsetY = w * 0.025;
-    if (f === 'copper') c.fillStyle = '#9C5B2E';
-    if (f === 'silver') c.fillStyle = grad(c, x, y, w, fh, [[0, '#7f858e'], [0.35, '#cfd4da'], [0.5, '#9ea4ad'], [0.65, '#dde1e6'], [1, '#7f858e']]);
-    if (f === 'gold') c.fillStyle = grad(c, x, y, w, fh, [[0, '#8f6612'], [0.28, '#e8c65a'], [0.46, '#b8902a'], [0.62, '#f3dc7f'], [0.86, '#9a6f14'], [1, '#c9a23a']]);
-    if (f === 'topsecret') c.fillStyle = grad(c, x, y, w, fh, [[0, '#8e97a4'], [0.18, '#e9eef5'], [0.3, '#c7cfdb'], [0.45, '#f6f8fb'], [0.58, '#aeb6c2'], [0.72, '#e9eef5'], [1, '#8e97a4']]);
-    c.fillRect(x, y, w, fh); c.restore();
-    if (f === 'topsecret') { c.save(); c.globalCompositeOperation = 'color'; c.globalAlpha = 0.45; c.fillStyle = grad(c, x, y + fh, w, -fh, [[0, '#ff6e6e'], [0.25, '#ffe16e'], [0.5, '#6effaa'], [0.75, '#6eaaff'], [1, '#d76eff']]); c.fillRect(x, y, w, fh); c.restore(); }
+    c.fillStyle = grad(c, x, y, w, fh, metal); c.beginPath(); rrect(c, x, y, w, fh, w * 0.02); c.fill(); c.restore();
+    if (f === 'topsecret') { c.save(); c.beginPath(); rrect(c, x, y, w, fh, w * 0.02); c.clip(); c.globalCompositeOperation = 'color'; c.globalAlpha = 0.55; c.fillStyle = grad(c, x, y + fh, w, -fh, [[0, '#ff6e6e'], [0.25, '#ffe16e'], [0.5, '#6effaa'], [0.75, '#6eaaff'], [1, '#d76eff']]); c.fillRect(x, y, w, fh); c.restore(); }
+    c.save(); c.beginPath(); rrect(c, cx, cy, cw, ch, w * 0.01); c.clip(); c.drawImage(img, cx, cy, cw, ch);
     if (f === 'gold' || f === 'topsecret') {
-      const ink = f === 'gold' ? 'rgba(70,45,5,.6)' : 'rgba(40,44,50,.55)'; c.strokeStyle = ink; c.lineWidth = Math.max(1, w * 0.003); const ins = w * 0.016; c.strokeRect(x + ins, y + ins, w - 2 * ins, fh - 2 * ins);
-      const b = w * 0.07; c.lineWidth = Math.max(2, w * 0.005);
-      [[x + ins, y + ins, 1, 1], [x + w - ins, y + ins, -1, 1], [x + ins, y + fh - ins, 1, -1], [x + w - ins, y + fh - ins, -1, -1]].forEach(([cx, cy, sx, sy]) => { c.beginPath(); c.moveTo(cx, cy + sy * b); c.lineTo(cx, cy); c.lineTo(cx + sx * b, cy); c.stroke(); });
-      const m = w * 0.022; c.fillStyle = '#EDE4CF'; c.fillRect(x + pad - m, y + pad - m, cw + 2 * m, ch + 2 * m); c.strokeStyle = ink; c.lineWidth = Math.max(1, w * 0.003); c.strokeRect(x + pad - m, y + pad - m, cw + 2 * m, ch + 2 * m);
+      // flecks on the paper bands only (multiply leaves the printed ink dark), the photo box left clear
+      c.save(); c.beginPath(); c.rect(cx, cy, cw, ch); c.rect(cx + cw * 0.032, cy + ch * 0.116, cw * 0.936, ch * 0.767); c.clip('evenodd');
+      c.globalCompositeOperation = 'multiply'; let sd = f === 'gold' ? 31 : 33; const rnd = () => (sd = (sd * 9301 + 49297) % 233280) / 233280;
+      const cols = f === 'gold' ? ['#c9a040', '#b8862b', '#d8b35a'] : ['#a9b3c2', '#9aa5b6', '#c3cad4'], sz = cw * 0.0055;
+      for (let i = 0; i < 420; i++) {
+        const px = cx + rnd() * cw, py = cy + rnd() * ch, rad = sz * (0.6 + rnd() * 1.1), k = 4 + Math.floor(rnd() * 3);
+        c.globalAlpha = 0.75 * (0.55 + rnd() * 0.45); c.fillStyle = cols[Math.floor(rnd() * cols.length)];
+        c.beginPath(); for (let j = 0; j < k; j++) { const t = j / k * Math.PI * 2 + rnd() * 0.6, rr = rad * (0.55 + rnd() * 0.6); c.lineTo(px + Math.cos(t) * rr, py + Math.sin(t) * rr); } c.closePath(); c.fill();
+      }
+      c.restore();
+      // a soft white sweep of light across the card, never a color on the photo
+      c.globalCompositeOperation = 'screen'; c.fillStyle = grad(c, cx, cy, cw, ch, [[0, 'rgba(255,255,255,0)'], [0.42, 'rgba(255,255,255,0)'], [0.5, 'rgba(255,255,255,.22)'], [0.58, 'rgba(255,255,255,0)'], [1, 'rgba(255,255,255,0)']]); c.fillRect(cx, cy, cw, ch);
+      c.globalCompositeOperation = 'source-over';
     }
-    if (f === 'silver') { c.strokeStyle = 'rgba(40,44,50,.4)'; c.lineWidth = 1; c.strokeRect(x + pad, y + pad, cw, ch); }
-    c.drawImage(img, x + pad, y + pad, cw, ch);
-    if (f === 'gold') { c.save(); c.globalCompositeOperation = 'screen'; c.fillStyle = grad(c, x, y, w, fh, [[0, 'rgba(255,228,150,0)'], [0.42, 'rgba(255,228,150,0)'], [0.5, 'rgba(255,235,170,.35)'], [0.58, 'rgba(255,228,150,0)'], [1, 'rgba(255,228,150,0)']]); c.fillRect(x + pad, y + pad, cw, ch); c.restore(); }
+    c.restore();
     if (f === 'topsecret') {
-      c.save(); c.globalCompositeOperation = 'screen'; c.fillStyle = grad(c, x, y, w, fh, [[0, 'rgba(255,120,120,.22)'], [0.25, 'rgba(255,235,120,.22)'], [0.5, 'rgba(120,255,190,.22)'], [0.75, 'rgba(120,190,255,.22)'], [1, 'rgba(230,120,255,.22)']]); c.fillRect(x + pad, y + pad, cw, ch); c.restore();
-      c.save(); c.translate(x + pad + cw * 0.39, y + pad + ch * 0.06); c.rotate(-8 * Math.PI / 180); c.font = `700 ${w * 0.026}px Oswald`; const t = 'TOP SECRET', tw = c.measureText(t).width; c.strokeStyle = '#b02a1f'; c.lineWidth = Math.max(1.5, w * 0.004); c.strokeRect(-w * 0.01, -w * 0.026, tw + w * 0.02, w * 0.036); c.fillStyle = '#b02a1f'; c.fillText(t, 0, 0); c.restore();
-      if (serial) { c.font = `400 ${w * 0.03}px "Special Elite"`; c.fillStyle = '#8e2a20'; c.textAlign = 'center'; c.fillText('Worldwide serial ' + ser4(serial), x + w / 2, y + fh - pad * 0.32); c.textAlign = 'left'; }
+      // one red rubber stamp in the photo's top left corner: TOP SECRET over the worldwide serial
+      c.save(); c.translate(cx + cw * 0.06, cy + ch * 0.142); c.rotate(-6 * Math.PI / 180); c.textAlign = 'left';
+      const fs1 = cw * 0.036, fs2 = cw * 0.034; c.font = `700 ${fs1}px Oswald`; c.letterSpacing = (fs1 * 0.1) + 'px';
+      const t1 = 'TOP SECRET', w1 = c.measureText(t1).width, bx = cw * 0.013, bh = fs1 * 1.35;
+      c.fillStyle = 'rgba(240,232,214,.85)'; c.fillRect(0, 0, w1 + bx * 2, bh);
+      c.strokeStyle = '#b3241a'; c.lineWidth = Math.max(2, cw * 0.006); c.strokeRect(0, 0, w1 + bx * 2, bh);
+      c.fillStyle = '#b3241a'; c.textBaseline = 'middle'; c.fillText(t1, bx, bh / 2 + fs1 * 0.04);
+      if (serial) {
+        c.font = `400 ${fs2}px "Special Elite"`; c.letterSpacing = (fs2 * 0.14) + 'px';
+        const t2 = 'No. ' + ser4(serial), w2 = c.measureText(t2).width, y2 = bh + cw * 0.006;
+        c.fillStyle = 'rgba(240,232,214,.85)'; c.fillRect(0, y2, w2 + cw * 0.02, fs2 * 1.3);
+        c.fillStyle = '#b3241a'; c.fillText(t2, cw * 0.01, y2 + fs2 * 0.68);
+      }
+      c.letterSpacing = '0px'; c.textBaseline = 'alphabetic'; c.restore();
     }
   }
   function fitFont(c, text, weight, size, family, maxW) { let s = size; c.font = `${weight} ${s}px ${family}`; while (c.measureText(text).width > maxW && s > 18) { s -= 2; c.font = `${weight} ${s}px ${family}`; } return s; }
