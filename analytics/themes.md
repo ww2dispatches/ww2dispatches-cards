@@ -49,4 +49,6 @@ Any other nation is written by name (for example "Philippines", "Poland", "Canad
 ## video (Living Cards and Story Cards only)
 * **kind:** Living Card · Story Card
 * **opening:** what the first two seconds show, from the finished video, never from memory: combat or firing · motion · people still · a face · a machine · a place or scene · a map or text card · dark or unclear
-* **sound:** period sound · silent · narration
+* **sound:** period sound · silent · narration · music
+
+"music" was added by the 3 Nov 2026 review for No. 039 (Manila Bay), the one video with a music bed, by Brian's exception of 28 Oct 2026; the Videos doc's no music rule still stands.

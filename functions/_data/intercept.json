@@ -12,11 +12,15 @@
         "namethis-1944-10-18-tirpitz",
         "1942-10-22-flagpole",
         "1944-10-25-johnston",
-        "1942-10-26-hornet"
+        "1942-10-26-hornet",
+        "namethis-1944-10-24-musashi",
+        "1942-10-30-u559",
+        "1941-10-31-reuben-james"
       ],
       "alsoFits": [
         "1944-10-25-samar",
-        "1944-10-20-leyte"
+        "1944-10-20-leyte",
+        "1943-11-01-bougainville"
       ],
       "source": "Photo credits in each record: Kearny (twice), Tirpitz, HMS Seraph (Cherchell), Musashi, Johnston, Hornet under attack, HMS Petard (U-559), Reuben James. Samar shows ships through smoke and Leyte a landing craft, so both are kept off boards with this group.",
       "added": "2026-10-27"
@@ -28,10 +32,15 @@
       "cards": [
         "1944-10-20-tdr",
         "namethis-1942-10-21-b17",
-        "1940-10-26-mustang"
+        "1940-10-26-mustang",
+        "1942-10-28-alamein-counterattack",
+        "1947-11-02-h4-hercules"
       ],
       "alsoFits": [
-        "1942-10-26-hornet"
+        "1942-10-26-hornet",
+        "1944-11-03-fugo",
+        "1944-11-03-fugo-spec",
+        "namethis-1942-10-28-gable"
       ],
       "source": "Photo credits: TDR-1 in flight, B-17D at Wright Field, NA-73X prototype, B-25s over the Western Desert, Mosquito FB.VIs. Hornet's photo shows a diving Japanese bomber and Gable's a B-17 waist gun.",
       "added": "2026-10-27"
@@ -43,12 +52,15 @@
       "cards": [
         "1941-10-18-tojo",
         "1940-10-21-churchill",
-        "1941-10-27-fdr-navy-day"
+        "1941-10-27-fdr-navy-day",
+        "1940-10-28-ochi",
+        "1940-10-29-draft-spec",
+        "1940-10-29-draft-lottery"
       ],
       "alsoFits": [
         "1944-10-20-leyte"
       ],
-      "source": "Photo credits: Tojo (prime minister from 18 Oct 1941), Metaxas (prime minister of Greece), Churchill (prime minister), Roosevelt (president). Roosevelt is also in both draft photos, and Philippine President Osmena waded ashore with MacArthur at Leyte.",
+      "source": "Photo credits: Tojo (prime minister from 18 Oct 1941), Metaxas (prime minister of Greece), Churchill (prime minister), Roosevelt (president). Roosevelt appears in both draft photos (Stimson drawing the first capsule with Roosevelt at the microphones; Roosevelt signing the act), so both are in the group. Philippine President Osmena waded ashore with MacArthur at Leyte.",
       "added": "2026-10-27"
     },
     {
@@ -61,11 +73,16 @@
         "1944-10-25-samar",
         "1944-10-25-johnston",
         "1942-10-26-hornet",
-        "namethis-1942-10-21-b17"
+        "namethis-1942-10-21-b17",
+        "namethis-1944-10-24-musashi",
+        "1943-11-01-bougainville",
+        "1943-11-01-code-talkers"
       ],
       "alsoFits": [
         "1941-10-18-tojo",
-        "1945-10-22-this-is-the-army"
+        "1945-10-22-this-is-the-army",
+        "1944-11-03-fugo",
+        "1944-11-03-fugo-spec"
       ],
       "source": "Places in each record: Leyte, Bougainville, off Samar, Santa Cruz Islands, Sibuyan Sea, Central Pacific. Tojo led Japan into the Pacific war, and This Is the Army toured the Pacific, so both stay off boards with this group.",
       "added": "2026-10-27"
@@ -78,9 +95,13 @@
         "1942-10-22-flagpole",
         "1942-10-23-alamein",
         "1942-10-23-sherman",
-        "1942-10-27-snipe"
+        "1942-10-27-snipe",
+        "1942-10-28-alamein-counterattack",
+        "1942-11-02-supercharge"
       ],
-      "alsoFits": [],
+      "alsoFits": [
+        "1942-10-30-u559"
+      ],
       "source": "Places in each record: Cherchell, Algeria (the run up to Operation Torch) and El Alamein, Egypt. U-559 was sunk off Port Said, Egypt, so it stays off boards with this group.",
       "added": "2026-10-27"
     },
@@ -91,7 +112,9 @@
       "cards": [
         "1942-10-23-alamein",
         "1942-10-23-sherman",
-        "1942-10-27-snipe"
+        "1942-10-27-snipe",
+        "1942-10-28-alamein-counterattack",
+        "1942-11-02-supercharge"
       ],
       "alsoFits": [],
       "source": "The battle ran 23 Oct to 11 Nov 1942. Records: the opening barrage (23 Oct), the Sherman's first action (24 Oct), Outpost Snipe (27 Oct), Rommel's counterattack (28 Oct). Medium, not hard, because every card prints El Alamein as its place.",
@@ -103,7 +126,8 @@
       "difficulty": "medium",
       "cards": [
         "1941-10-17-kearny",
-        "1941-10-17-kearny-spec"
+        "1941-10-17-kearny-spec",
+        "1941-10-31-reuben-james"
       ],
       "alsoFits": [
         "namethis-1944-10-18-tirpitz",
@@ -119,7 +143,8 @@
       "cards": [
         "1944-10-20-leyte",
         "1944-10-25-samar",
-        "1944-10-25-johnston"
+        "1944-10-25-johnston",
+        "namethis-1944-10-24-musashi"
       ],
       "alsoFits": [],
       "source": "Red Beach, Leyte; off Samar (Samar and Johnston); the Sibuyan Sea, where Musashi was sunk.",
@@ -132,7 +157,9 @@
       "cards": [
         "1941-10-17-kearny",
         "1941-10-17-kearny-spec",
-        "1944-10-25-johnston"
+        "1944-10-25-johnston",
+        "1941-10-31-reuben-james",
+        "1942-10-30-u559"
       ],
       "alsoFits": [
         "1944-10-25-samar"
@@ -145,7 +172,9 @@
       "link": "All three involve American bombers.",
       "difficulty": "medium",
       "cards": [
-        "namethis-1942-10-21-b17"
+        "namethis-1942-10-21-b17",
+        "1942-10-28-alamein-counterattack",
+        "namethis-1942-10-28-gable"
       ],
       "alsoFits": [
         "1942-10-26-hornet",
@@ -159,12 +188,15 @@
       "link": "All three involve Franklin D. Roosevelt.",
       "difficulty": "medium",
       "cards": [
-        "1941-10-27-fdr-navy-day"
+        "1941-10-27-fdr-navy-day",
+        "1940-10-29-draft-lottery",
+        "1940-10-29-draft-spec"
       ],
       "alsoFits": [
         "1944-10-19-waves",
         "1945-10-24-un",
-        "1941-10-17-kearny"
+        "1941-10-17-kearny",
+        "1941-10-31-reuben-james"
       ],
       "source": "Navy Day address (27 Oct 1941); Roosevelt watched the draft lottery and signed the Selective Training and Service Act (records 025 and 026). He approved the WAVES change, named the United Nations, and spoke about Kearny and Reuben James, so those stay off boards with this group.",
       "added": "2026-10-27"
@@ -176,7 +208,8 @@
       "cards": [
         "1944-10-20-leyte",
         "1940-10-21-churchill",
-        "1941-10-27-fdr-navy-day"
+        "1941-10-27-fdr-navy-day",
+        "1940-10-28-ochi"
       ],
       "alsoFits": [
         "1945-10-24-un",
@@ -192,7 +225,9 @@
       "cards": [
         "1941-10-17-kearny",
         "1941-10-17-kearny-spec",
-        "1941-10-27-fdr-navy-day"
+        "1941-10-27-fdr-navy-day",
+        "1941-10-31-reuben-james",
+        "1942-10-30-u559"
       ],
       "alsoFits": [],
       "source": "U-568 torpedoed Kearny (17 Oct 1941), U-552 sank Reuben James (31 Oct 1941), HMS Petard forced U-559 to the surface (30 Oct 1942). FDR's Navy Day speech was about Kearny, so it stays off boards with this group.",
@@ -206,7 +241,9 @@
         "1942-10-22-flagpole",
         "1941-10-17-kearny",
         "1941-10-17-kearny-spec",
-        "1941-10-27-fdr-navy-day"
+        "1941-10-27-fdr-navy-day",
+        "1941-10-31-reuben-james",
+        "1942-10-30-u559"
       ],
       "alsoFits": [],
       "source": "Mark Clark landed at Cherchell from the submarine HMS Seraph (22 Oct 1942); U-559; U-568 hit Kearny; U-552 sank Reuben James.",
@@ -218,7 +255,8 @@
       "difficulty": "hard",
       "cards": [
         "1944-10-25-samar",
-        "1944-10-25-johnston"
+        "1944-10-25-johnston",
+        "namethis-1944-10-24-musashi"
       ],
       "alsoFits": [
         "1944-10-20-leyte"
@@ -233,7 +271,8 @@
       "cards": [
         "1941-10-17-kearny",
         "1941-10-17-kearny-spec",
-        "1944-10-25-johnston"
+        "1944-10-25-johnston",
+        "1941-10-31-reuben-james"
       ],
       "alsoFits": [],
       "source": "Navy ship histories (DANFS): Kearny for Commodore Lawrence Kearny, Reuben James for the boatswain's mate of the Barbary Wars, Johnston for John V. Johnston, Union Navy officer. Tirpitz was named for a German admiral and makes a fair red herring.",
@@ -251,8 +290,9 @@
       "alsoFits": [
         "1941-10-27-fdr-navy-day"
       ],
-      "source": "Kearny went to help a British convoy's escorts (SC 48); Reuben James was escorting HX 156 toward Britain; North American built the Mustang to a British order in 1940. FDR's speech about Kearny stays off boards with this group.",
-      "added": "2026-10-27"
+      "source": "Kearny went to help a British convoy's escorts (SC 48); Reuben James was escorting HX 156 toward Britain; North American built the Mustang to a British order in 1940. FDR's speech about Kearny stays off boards with this group. Vetoed by Brian on the Scoreboard, 28 Oct 2026; kept so it is never added again.",
+      "added": "2026-10-27",
+      "vetoed": true
     },
     {
       "id": "h-captured",
@@ -260,7 +300,8 @@
       "difficulty": "hard",
       "cards": [
         "1944-10-21-aachen",
-        "1946-10-24-v2"
+        "1946-10-24-v2",
+        "1942-10-30-u559"
       ],
       "alsoFits": [
         "1945-10-18-nuremberg-indictment",
@@ -278,7 +319,8 @@
         "namethis-1944-10-18-tirpitz"
       ],
       "alsoFits": [
-        "1942-10-23-alamein"
+        "1942-10-23-alamein",
+        "1942-10-28-alamein-counterattack"
       ],
       "source": "Mosquitoes struck the Aarhus Gestapo headquarters (31 Oct 1944); the RAF flew the first Mustangs; an RAF reconnaissance plane photographed Tirpitz on 18 Oct 1944 and RAF Lancasters sank her that November. The Desert Air Force bombed Rommel's panzers and flew over the Alamein barrage, so those cards stay off boards with this group.",
       "added": "2026-10-27"
@@ -289,7 +331,8 @@
       "difficulty": "hard",
       "cards": [
         "1942-10-22-flagpole",
-        "namethis-1944-10-18-tirpitz"
+        "namethis-1944-10-18-tirpitz",
+        "1942-10-30-u559"
       ],
       "alsoFits": [],
       "source": "HMS Petard sank U-559; HMS Seraph carried Mark Clark to Cherchell; the Royal Navy hunted Tirpitz for years (X-craft and Fleet Air Arm attacks, 1943 and 1944).",
@@ -306,7 +349,9 @@
       ],
       "alsoFits": [
         "1944-10-20-leyte",
-        "namethis-1944-10-18-tirpitz"
+        "namethis-1944-10-18-tirpitz",
+        "1943-11-01-bougainville",
+        "1944-10-30-lost-battalion"
       ],
       "source": "Lt. Col. Victor Turner won the Victoria Cross for Outpost Snipe (London Gazette, 20 Nov 1942). Cmdr. Ernest E. Evans of USS Johnston won the Medal of Honor, posthumously, for the Battle off Samar (NHHC). MacArthur already held the Medal of Honor (1942) and the 1943 X-craft attack on Tirpitz won two VCs, so those cards stay off boards with this group.",
       "added": "2026-10-27"
@@ -318,13 +363,15 @@
       "cards": [
         "1942-10-22-flagpole",
         "1942-10-23-sherman",
-        "1940-10-26-mustang"
+        "1940-10-26-mustang",
+        "1942-10-28-alamein-counterattack"
       ],
       "alsoFits": [
         "1941-10-17-kearny",
         "1941-10-17-kearny-spec",
         "1945-10-18-nuremberg-indictment",
-        "1945-10-24-un"
+        "1945-10-24-un",
+        "1941-10-31-reuben-james"
       ],
       "source": "Mark Clark, an American general, landed from the British submarine HMS Seraph (dispatch No. 011). The Shermans at Alamein were American built tanks rushed to Britain's Eighth Army after Tobruk fell (No. 014). North American Aviation designed the Mustang for a British order (No. 020). Kearny's convoy work, the Nuremberg prosecution, and the UN also fit loosely, so they stay off boards with this group.",
       "added": "2026-10-27"
@@ -360,7 +407,8 @@
       "cards": [
         "1942-10-26-hornet",
         "namethis-1944-10-18-tirpitz",
-        "1944-10-25-samar"
+        "1944-10-25-samar",
+        "namethis-1944-10-24-musashi"
       ],
       "alsoFits": [
         "1944-10-25-johnston"
@@ -379,7 +427,9 @@
       ],
       "alsoFits": [
         "1942-10-23-alamein",
-        "1942-10-22-flagpole"
+        "1942-10-22-flagpole",
+        "1942-10-28-alamein-counterattack",
+        "1942-11-02-supercharge"
       ],
       "source": "Churchill's broadcast to France (No. 010). Churchill called Tirpitz The Beast (the Name This clue). Churchill was with Roosevelt at the White House when Tobruk fell in June 1942, and the Shermans at Alamein were the United States' answer to his plea (No. 014). Alamein and Torch also involve him, so they stay off boards with this group.",
       "added": "2026-10-27"
@@ -391,7 +441,8 @@
       "cards": [
         "1940-10-21-churchill",
         "1942-10-22-flagpole",
-        "1945-10-18-nuremberg-indictment"
+        "1945-10-18-nuremberg-indictment",
+        "1944-10-30-lost-battalion"
       ],
       "alsoFits": [
         "1945-10-24-un"
@@ -408,13 +459,123 @@
         "1944-10-19-waves",
         "1946-10-24-v2",
         "1940-10-26-mustang",
-        "1941-10-27-fdr-navy-day"
+        "1941-10-27-fdr-navy-day",
+        "1940-10-29-draft-lottery",
+        "1940-10-29-draft-spec",
+        "1941-10-31-rushmore",
+        "1947-11-02-h4-hercules",
+        "namethis-1942-10-28-gable"
+      ],
+      "alsoFits": [
+        "1945-10-22-this-is-the-army",
+        "1944-11-03-fugo",
+        "1944-11-03-fugo-spec"
+      ],
+      "source": "The tin can order and the WAVES decision were national U.S. orders (Nos. 005 and 006); the V-2 flew from White Sands, New Mexico (No. 016); the Mustang first flew at Mines Field, Los Angeles (No. 020); FDR spoke in Washington (No. 022). This Is the Army closed in Hawaii, then a territory, so it stays off boards with this group.",
+      "added": "2026-10-27"
+    },
+    {
+      "id": "h-minority-service",
+      "link": "Each honors service by Americans from a minority group.",
+      "difficulty": "hard",
+      "cards": [
+        "1944-10-19-waves",
+        "1944-10-30-lost-battalion",
+        "1943-11-01-code-talkers"
       ],
       "alsoFits": [
         "1945-10-22-this-is-the-army"
       ],
-      "source": "The tin can order and the WAVES decision were national U.S. orders (Nos. 005 and 006); the V-2 flew from White Sands, New Mexico (No. 016); the Mustang first flew at Mines Field, Los Angeles (No. 020); FDR spoke in Washington (No. 022). This Is the Army closed in Hawaii, then a territory, so it stays off boards with this group.",
-      "added": "2026-10-27"
+      "source": "The WAVES opened to Black women in October 1944 (No. 006); the 442nd Regimental Combat Team, Japanese American Nisei, rescued the Lost Battalion (No. 027); Navajo code talkers served with the 3rd Marine Division on Bougainville (No. 032). This Is the Army had an integrated cast, so it stays off boards with this group.",
+      "added": "2026-11-03"
+    },
+    {
+      "id": "h-hollywood",
+      "link": "Each is tied to Hollywood.",
+      "difficulty": "hard",
+      "cards": [
+        "namethis-1942-10-28-gable",
+        "1945-10-22-this-is-the-army",
+        "1947-11-02-h4-hercules"
+      ],
+      "alsoFits": [],
+      "source": "Clark Gable was Hollywood's leading man before joining the Army Air Forces (Name This, 28 Oct). This Is the Army became a 1943 Warner Bros. film with Ronald Reagan (No. 012). Howard Hughes produced and directed Hollywood films such as Hell's Angels (1930) before the H-4 flew (No. 034).",
+      "added": "2026-11-03"
+    },
+    {
+      "id": "h-medal-of-honor",
+      "link": "Each involves a Medal of Honor earned in that very action.",
+      "difficulty": "hard",
+      "cards": [
+        "1944-10-25-johnston",
+        "1944-10-25-samar",
+        "1943-11-01-bougainville",
+        "1944-10-30-lost-battalion"
+      ],
+      "alsoFits": [
+        "1944-10-20-leyte",
+        "1942-10-26-hornet",
+        "namethis-1942-10-21-b17"
+      ],
+      "source": "Cmdr. Ernest E. Evans of USS Johnston, off Samar, 25 Oct 1944 (NHHC). Sgt. Robert A. Owens, 3rd Marine Division, Cape Torokina, 1 Nov 1943, posthumous. Pvt. George Sakato and Pvt. Barney Hajiro of the 442nd, near Biffontaine on 29 Oct 1944 during the drive to the Lost Battalion (awarded 2000; Army citations). MacArthur (Leyte), Doolittle (Hornet's raid), and Rickenbacker (the B-17 ditching) held the medal for other actions, so those stay off boards with this group.",
+      "added": "2026-11-03"
+    },
+    {
+      "id": "h-allied-secrets",
+      "link": "Each involves a wartime secret the Allies guarded.",
+      "difficulty": "hard",
+      "cards": [
+        "1942-10-30-u559",
+        "1943-11-01-code-talkers",
+        "1942-10-22-flagpole",
+        "1944-11-03-fugo"
+      ],
+      "alsoFits": [
+        "1944-11-03-fugo-spec"
+      ],
+      "source": "The U-559 codebooks let Bletchley Park break the U-boat cipher, kept secret as part of Ultra for decades (No. 028). The Navajo code stayed secret until 1968 (No. 032). Mark Clark's meeting at Cherchell was a secret mission before Operation Torch (No. 011). The U.S. Office of Censorship kept balloon bomb landings out of the press until May 1945 (No. 035). The Fu-Go Spec Sheet is the same subject, so it stays off boards with this group.",
+      "added": "2026-11-03"
+    },
+    {
+      "id": "h-giants",
+      "link": "Each involves one of the largest machines of its kind ever built.",
+      "difficulty": "hard",
+      "cards": [
+        "namethis-1944-10-24-musashi",
+        "1947-11-02-h4-hercules",
+        "namethis-1944-10-18-tirpitz",
+        "1944-10-25-samar"
+      ],
+      "alsoFits": [
+        "1944-10-25-johnston"
+      ],
+      "source": "Musashi and her sister Yamato were the largest battleships ever built (Name This, 24 Oct). The H-4 Hercules had the widest wingspan of any aircraft to fly until 2019 (No. 034). Tirpitz and Bismarck were the largest battleships built by a European navy (Name This, 18 Oct). Taffy 3 faced Yamato off Samar (No. 017); Johnston fought the same fleet, so it stays off boards with this group.",
+      "added": "2026-11-03"
+    },
+    {
+      "id": "h-ultimatum-refused",
+      "link": "Each involves an ultimatum that was refused.",
+      "difficulty": "hard",
+      "cards": [
+        "1940-10-28-ochi",
+        "1944-10-21-aachen"
+      ],
+      "alsoFits": [],
+      "source": "Metaxas refused Mussolini's ultimatum on 28 Oct 1940 (No. 023). The U.S. 1st Infantry Division sent Aachen's garrison a surrender ultimatum on 10 Oct 1944, and it was refused; the city held until 21 Oct (No. 009; U.S. Army official history, Siegfried Line Campaign). Dormant until a third posted card fits.",
+      "added": "2026-11-03"
+    },
+    {
+      "id": "m-bougainville",
+      "link": "All three took place on or near Bougainville.",
+      "difficulty": "medium",
+      "cards": [
+        "1944-10-20-tdr",
+        "1943-11-01-bougainville",
+        "1943-11-01-code-talkers"
+      ],
+      "alsoFits": [],
+      "source": "Places in each record: the TDR-1 drone strike near Bougainville (No. 008), the Cape Torokina landing on Empress Augusta Bay (No. 031), and the Navajo code talkers on Bougainville (No. 032). Medium, not hard, because every card prints Bougainville.",
+      "added": "2026-11-03"
     }
   ]
 }

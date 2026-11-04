@@ -242,8 +242,7 @@
     "video": {
       "kind": "Living Card",
       "opening": "motion",
-      "sound": "silent",
-      "note": "music bed added by Brian's decision (film itself silent); no allowed value for music"
+      "sound": "music"
     }
   },
   "video": {
