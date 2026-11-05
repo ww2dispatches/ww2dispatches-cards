@@ -492,6 +492,8 @@
     if (!best) {
       // Signed in, a sealed card can be requested (25 Oct 2026); one of today's cards can't.
       if (signedIn() && !info.today) return `<button class="mini sealed req" data-req="${esc(id)}"><span class="thumb">?</span><span class="no">${esc(label(info))}</span><span class="nm">${esc(info.short)}</span>${dots}<span class="reqline">Request card</span></button>`;
+      // Today's cards (and a Name This whose answer went public today) can't be requested yet: still tappable, so it explains (4 Nov 2026).
+      if (signedIn()) return `<button class="mini sealed req today" data-today="${esc(id)}"><span class="thumb">?</span><span class="no">${esc(label(info))}</span><span class="nm">${esc(info.short)}</span>${dots}<span class="reqline">Request tomorrow</span></button>`;
       return `<div class="mini sealed"><span class="thumb">?</span><span class="no">${esc(label(info))}</span><span class="nm">${esc(info.short)}</span>${dots}</div>`;
     }
     return `<button class="mini" data-id="${esc(id)}"><img class="thumb ${info.flash ? 'flash' : 'f-' + best}" loading="lazy" src="${esc(info.img)}" alt="${esc(info.short)}"><span class="no">${esc(label(info))}</span><span class="nm">${esc(info.short)}</span>${dots}</button>`;
@@ -500,6 +502,7 @@
   function wireMinis(el, list, label) {
     el.querySelectorAll('.mini[data-id]').forEach(b => { b.onclick = () => view(b.dataset.id, list.filter((x, i, a) => holdingsNow().has(x) && a.indexOf(x) === i), label); });
     el.querySelectorAll('.mini[data-req]').forEach(b => { b.onclick = () => requestPicker(b.dataset.req); });
+    el.querySelectorAll('.mini[data-today]').forEach(b => { b.onclick = () => { const i = BYID.get(b.dataset.today); toast(i && i.kind === 'namethis' ? 'This answer went public today. You can request it starting tomorrow.' : "Today's cards can be requested starting tomorrow."); }; });
   }
 
   // ---------- sections ----------

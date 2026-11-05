@@ -738,6 +738,7 @@ h2{flex-wrap:wrap;row-gap:2px}
    held cards down beside a sealed card with a request line), and the request line stays on one line */
 .grid,.recent,.savegrid{align-items:start}
 .mini .reqline{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mini.today .reqline{color:var(--mute)} /* not yet requestable: quieter than Request card (4 Nov 2026) */
 
 /* Home header, option C (29 Oct 2026): rank beside the DECLASS name; streak and Intel share one slim row below,
    both laid out the same way (big number with a small label, a short line underneath). The rank badge always
