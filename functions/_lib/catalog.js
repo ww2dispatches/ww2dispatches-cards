@@ -94,6 +94,9 @@ export function summary(card, t) {
 // only that it exists and whether it holds a photo and a video.
 export function detail(card, t, opened = false) {
   const out = { ...card, film: filmReleased(card, t) ? card.film : null, dfile: null };
+  // The Campaigns game fields (5 Nov 2026) stay on the server until the seal reveal, so nobody can read
+  // the scores from the page. The reveal build sends them (Seal Reveal and Keywords doc).
+  delete out.game;
   const f = card.dfile;
   if (f) {
     const video = f.video && f.video.postAt <= iso(t) ? f.video : null;

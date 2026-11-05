@@ -16,5 +16,10 @@
   "focusY": 45,
   "zoom": 100,
   "somber": true,
-  "_note": "Prepared 25 Oct 2026 for the Wednesday 2 Dec 2026 research run. Research copies this record into dispatches/ (same id), adds num, facts, sources, themes, film, kind, and videoPhotos, and never changes the fields above (Research doc, Flash days)."
+  "_note": "Prepared 25 Oct 2026 for the Wednesday 2 Dec 2026 research run. Research copies this record into dispatches/ (same id), adds num, facts, sources, themes, film, kind, and videoPhotos, and never changes the fields above (Research doc, Flash days).",
+  "game": {
+    "value": null,
+    "branches": [],
+    "role": null
+  }
 }

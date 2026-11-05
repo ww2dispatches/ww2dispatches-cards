@@ -291,5 +291,9 @@
     },
     "replacedOn": "2026-10-31: replaced by a Living Card at Brian's request (he prefers Living Cards over Story Cards); the noon Buffer posts were switched to the film",
     "buffer_note": "These Buffer posts were edited in place on 31 Oct 2026 to carry the Living Card; the ids now live under buffer as the film keys."
+  },
+  "game": {
+    "value": null,
+    "branches": []
   }
 }

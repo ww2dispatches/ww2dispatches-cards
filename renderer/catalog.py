@@ -98,6 +98,34 @@ def merge_tags(card, record):
     return {**card, **t}
 
 
+# Campaigns game fields (5 Nov 2026, Seal Reveal and Keywords doc). Every card carries the same block;
+# nothing in Declass shows it, and the server never sends it to the page until the seal reveal.
+#   value     1 to 7 on the card number ladder; empty for postwar, noPlay, and Name This cards
+#   branches  any of land, sea, air (Battle Lines and Blueprint)
+#   role      operation, machine, rally, or ally; Flash cards only (every other card's role is its series)
+#   noPlay    true for a card that can never be played (atrocities and their victims)
+#   keyword   one name from the keyword library; Statecraft only
+# The cards repo is public, so the real scores stay out of these records until the reveal; any filled
+# in early is flagged below so it can be taken back out.
+BRANCHES, ROLES = ("land", "sea", "air"), ("operation", "machine", "rally", "ally")
+game_early = []
+
+
+def game(record, series, label):
+    g = record.get("game") or {}
+    v = g.get("value")
+    out = {
+        "value": v if isinstance(v, int) and 1 <= v <= 7 else None,
+        "branches": [b for b in BRANCHES if b in as_list(g.get("branches"))],
+        "role": g.get("role") if series == "flash" and g.get("role") in ROLES else None,
+        "noPlay": bool(g.get("noPlay")),
+        "keyword": (g.get("keyword") or None) if series == "state" else None,
+    }
+    if out["value"] or out["branches"] or out["role"] or out["noPlay"] or out["keyword"]:
+        game_early.append(label)
+    return out
+
+
 catalog, skipped = [], []
 
 # Dispatch cards. Same post date rule as series_log.py: the recorded posted date, otherwise the
@@ -168,6 +196,7 @@ for d in dispatches:
         "links": link_row(links, CARD_LINKS),
         "film": film,
         "dfile": dfile,
+        "game": game(d, d["series"], f"No. {num}"),
     }, d))
 
 # Name This cards. One joins the pool only when its answer is public, which is when the next
@@ -207,6 +236,7 @@ for i, n in enumerate(puzzles):
         "sources": sources(n),
         "links": link_row(links, CARD_LINKS),
         "film": None,
+        "game": game({}, "namethis", ""),
     }, n))
 
 catalog.sort(key=lambda c: (c["postAt"], c["id"]))
@@ -222,3 +252,6 @@ n_disp = sum(1 for c in catalog if c["kind"] == "dispatch")
 n_film = sum(1 for c in catalog if c["film"])
 print(f"functions/_data/catalog.json: {n_disp} dispatch cards ({n_film} with film), "
       f"{len(catalog) - n_disp} Name This cards" + (f"; skipped {', '.join(skipped)}" if skipped else ""))
+if game_early:
+    print(f"WARNING: Campaigns game scores are in the public records before the seal reveal ({', '.join(game_early)}). "
+          "Keep them in the private score sheet and take them out of the records (Seal Reveal and Keywords doc).")

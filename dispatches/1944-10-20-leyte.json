@@ -114,5 +114,9 @@
   },
   "addons": [],
   "hashtags": "#OnThisDay #WW2",
-  "newsletter": 1
+  "newsletter": 1,
+  "game": {
+    "value": null,
+    "branches": []
+  }
 }

@@ -78,5 +78,10 @@
     "facebook": "https://www.facebook.com/122101493613512139/posts/122109357849512139",
     "posted": "2026-10-27"
   },
-  "newsletter": 1
+  "newsletter": 1,
+  "game": {
+    "value": null,
+    "branches": [],
+    "keyword": null
+  }
 }
