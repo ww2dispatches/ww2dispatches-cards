@@ -1,0 +1,171 @@
+{
+ "num": 53,
+ "id": "1944-11-12-tirpitz",
+ "title": "The Tirpitz goes down",
+ "date": "1944-11-12",
+ "time": "08:00",
+ "place": "Tromso · Norway",
+ "series": "battle",
+ "pull": "Twelve thousand pounds, dropped from the sky",
+ "short": "Tirpitz",
+ "facts": [
+  {
+   "text": "On the morning of 12 November 1944, RAF Lancaster bombers of No. 9 and No. 617 Squadrons, led by Wing Commander J. B. Tait, attacked the German battleship Tirpitz near Tromso, in the far north of Norway.",
+   "sources": [
+    0,
+    1
+   ]
+  },
+  {
+   "text": "Each Lancaster carried a single Tallboy, a 12,000 pound deep penetration bomb.",
+   "sources": [
+    1,
+    0
+   ]
+  },
+  {
+   "text": "Sources give between 29 and 32 bombers. They scored at least two direct hits and more near misses.",
+   "sources": [
+    0,
+    2,
+    4
+   ]
+  },
+  {
+   "text": "The bombers began their run at 09:35. Within minutes the ship was listing hard, and after a magazine exploded she rolled over and capsized.",
+   "sources": [
+    0
+   ]
+  },
+  {
+   "text": "Somewhere between about 950 and 1,204 German sailors died. The RAF Museum puts it at about a thousand.",
+   "sources": [
+    0,
+    2,
+    1
+   ]
+  },
+  {
+   "text": "Men trapped inside the upturned hull were cut free through her exposed bottom; 82 were rescued that way.",
+   "sources": [
+    0
+   ]
+  },
+  {
+   "text": "Tirpitz displaced about 42,900 tonnes and carried eight 15 inch guns. She had hardly fought, but simply by existing she forced the Royal Navy to keep powerful forces in home waters to watch her.",
+   "sources": [
+    0
+   ]
+  },
+  {
+   "text": "Britain had tried for years to sink her: midget submarines in September 1943, carrier dive bombers in April 1944, and Lancasters with Tallboys in September 1944.",
+   "sources": [
+    0,
+    2
+   ]
+  },
+  {
+   "text": "An Australian film crew from No. 463 Squadron RAAF flew with the raid and filmed the attack and the end of the ship.",
+   "sources": [
+    3
+   ]
+  },
+  {
+   "text": "With Tirpitz gone, the last German battleship threat to the Arctic convoys and the North Atlantic was over.",
+   "sources": [
+    0,
+    1
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "title": "German battleship Tirpitz, Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/German_battleship_Tirpitz"
+  },
+  {
+   "title": "Target the Tirpitz, RAF Museum blog (Gary Haines, 6 November 2019)",
+   "url": "https://www.rafmuseum.org.uk/blog/target-the-tirpitz/"
+  },
+  {
+   "title": "List of Allied attacks on the German battleship Tirpitz, Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/List_of_Allied_attacks_on_the_German_battleship_Tirpitz"
+  },
+  {
+   "title": "Operation Catechism, RAF sinks Tirpitz, film by No. 463 Squadron RAAF, Australian War Memorial C189542 (via Wikimedia Commons)",
+   "url": "https://commons.wikimedia.org/wiki/File:Operation-Catechism-RAF-sinks-Tirpitz.webm"
+  },
+  {
+   "title": "Sinking of the Battleship Tirpitz, Bomber Command Museum of Canada",
+   "url": "https://www.bombercommandmuseum.ca/bomber-command/sinking-of-the-battleship-tirpitz/"
+  }
+ ],
+ "photo": "photos/1944-11-12-tirpitz.jpg",
+ "photoUrl": "https://commons.wikimedia.org/wiki/File:Dramatic_End_of_the_Tirpitz_C4775.jpg",
+ "photoNote": "RAF air photo of the 12 November 1944 attack on Tirpitz near Tromso: a tall smoke column over the ship and a burst on the shore. RAF official photo, Imperial War Museum C 4775 (Dramatic End of the Tirpitz), Crown copyright expired, public domain (via Wikimedia Commons, 1920 px). Dark and grainy; frame on the smoke column. Alternative: the capsized hull, AWM SUK14095.",
+ "photoCredit": "RAF air photo of the attack on the Tirpitz near Tromso, Norway, 12 November 1944. Imperial War Museum C 4775, public domain.",
+ "declassified": {
+  "photo": {
+   "file": "photos/1944-11-12-tirpitz-2.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Tirpitz_(AWM_SUK14095).jpg",
+   "credit": "The capsized Tirpitz near Tromso after the attack of 12 November 1944. Australian War Memorial SUK14095, public domain.",
+   "caption": "Small boats lie alongside the upturned hull of the Tirpitz."
+  },
+  "fact": "The Tallboy was designed by Barnes Wallis. Dropped on concrete it could bore up to five meters down before it went off, and its shock wave did most of the damage. That is why near misses could still wreck a battleship.",
+  "sources": [
+   {
+    "title": "Tallboy (bomb), Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tallboy_(bomb)"
+   },
+   {
+    "title": "Target the Tirpitz, RAF Museum blog",
+    "url": "https://www.rafmuseum.org.uk/blog/target-the-tirpitz/"
+   }
+  ]
+ },
+ "videoPhotos": [
+  {
+   "page": "https://commons.wikimedia.org/wiki/File:Tirpitz_(AWM_SUK14095).jpg",
+   "credit": "The capsized Tirpitz near Tromso after the attack. Australian War Memorial SUK14095, public domain."
+  },
+  {
+   "page": "https://commons.wikimedia.org/wiki/File:Willie_Tait_on_the_wreck_of_Tirpitz.jpg",
+   "credit": "Wing Commander Willie Tait on the wreck of Tirpitz, 1945. Public domain per Commons; check before use."
+  },
+  {
+   "page": "https://commons.wikimedia.org/wiki/File:Battlehip_Tirpitz_capsized_at_Tromso_c1944.jpg",
+   "credit": "Tirpitz capsized at Tromso. Check license before use."
+  }
+ ],
+ "kind": "living",
+ "film": {
+  "status": "needs brian",
+  "record": "Australian War Memorial C189542, No. 463 Squadron RAAF film (Wikimedia Commons)",
+  "url": "https://commons.wikimedia.org/wiki/File:Operation-Catechism-RAF-sinks-Tirpitz.webm",
+  "file": "",
+  "sound": false,
+  "shot_notes": "Film of Operation Catechism shot from a No. 463 Squadron RAAF film aircraft on 12 November 1944: the attack and the destruction of the battleship. 3 min 39 s, 632 x 480, WebM (VP9). The current Commons version (18 March 2025) is flipped horizontally from the original and has the Operation Paravane footage cut from the start. Download the original file (small enough, no transcode needed): https://upload.wikimedia.org/wikipedia/commons/b/b5/Operation-Catechism-RAF-sinks-Tirpitz.webm . Sound not confirmed; check on cutting. Strong shots not yet logged; open on bomb bursts or the ship under smoke.",
+  "license": "Public domain, Australian Crown copyright expired (PD-AustraliaGov per Commons, AWM C189542)",
+  "date_note": "Filmed during the raid, 12 November 1944."
+ },
+ "somber": true,
+ "themes": {
+  "who": [
+   "airmen"
+  ],
+  "story": [
+   "combat",
+   "invention or machine"
+  ],
+  "photo": "a machine",
+  "theater": "Atlantic",
+  "branch": [
+   "Army Air Forces"
+  ],
+  "nations": [
+   "Britain",
+   "Germany",
+   "Australia"
+  ]
+ }
+}

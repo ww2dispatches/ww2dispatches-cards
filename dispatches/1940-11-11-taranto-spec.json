@@ -1,0 +1,148 @@
+{
+ "num": 52,
+ "id": "1940-11-11-taranto-spec",
+ "title": "The biplane that sank a fleet",
+ "date": "1940-11-11",
+ "time": "17:00",
+ "place": "Taranto · Italy",
+ "series": "blue",
+ "pull": "Canvas wings, battleship kills",
+ "format": "spec",
+ "specTitle": "Fairey Swordfish at Taranto",
+ "specs": [
+  [
+   "Type",
+   "Biplane torpedo bomber"
+  ],
+  [
+   "Engine",
+   "Bristol Pegasus, 690 hp"
+  ],
+  [
+   "Torpedo",
+   "One 18 in, 1,610 lb"
+  ],
+  [
+   "Crew",
+   "Up to 3"
+  ],
+  [
+   "Launched at Taranto",
+   "21, from HMS Illustrious"
+  ],
+  [
+   "Lost at Taranto",
+   "2 aircraft"
+  ]
+ ],
+ "short": "Taranto",
+ "facts": [
+  {
+   "text": "On the night of 11 to 12 November 1940, Fairey Swordfish biplanes from the carrier HMS Illustrious attacked the Italian fleet at anchor in Taranto harbor.",
+   "sources": [
+    0
+   ]
+  },
+  {
+   "text": "The Swordfish was a slow, open cockpit biplane with fabric covered wings.",
+   "sources": [
+    1,
+    3
+   ]
+  },
+  {
+   "text": "It was powered by a single Bristol Pegasus radial engine of 690 horsepower and could carry one 18 inch torpedo weighing 1,610 pounds.",
+   "sources": [
+    2,
+    3
+   ]
+  },
+  {
+   "text": "Illustrious launched the strike from about 170 miles away. The first wave of 12 aircraft took off from 20:30, and a second wave of nine followed about an hour later.",
+   "sources": [
+    0
+   ]
+  },
+  {
+   "text": "Only some carried torpedoes. Others dropped flares to light up the harbor or bombs on the ships and oil tanks.",
+   "sources": [
+    0
+   ]
+  },
+  {
+   "text": "Three Italian battleships were hit by torpedoes: Conte di Cavour, Littorio, and Caio Duilio. Conte di Cavour was left with a hole 27 feet wide.",
+   "sources": [
+    0
+   ]
+  },
+  {
+   "text": "Britain lost two aircraft. Two airmen were killed and two were taken prisoner.",
+   "sources": [
+    0
+   ]
+  },
+  {
+   "text": "Admiral Andrew Cunningham wrote that Taranto should be remembered forever as showing that the Fleet Air Arm was the Navy's most devastating weapon.",
+   "sources": [
+    0
+   ]
+  },
+  {
+   "text": "Japanese naval officers studied the raid closely while they planned their own attack on a shallow harbor, Pearl Harbor.",
+   "sources": [
+    0
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "title": "Battle of Taranto, Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Battle_of_Taranto"
+  },
+  {
+   "title": "Fairey Swordfish, Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Fairey_Swordfish"
+  },
+  {
+   "title": "Fairey Swordfish, Warbirds Resource Group",
+   "url": "https://warbirdsresourcegroup.org/AARG/swordfish.html"
+  },
+  {
+   "title": "Fairey Swordfish, Aeropedia Australia",
+   "url": "https://aeropedia.com.au/content/fairey-swordfish/"
+  }
+ ],
+ "photo": "photos/1940-11-11-taranto-spec.jpg",
+ "photoUrl": "https://commons.wikimedia.org/wiki/File:A_Fairey_Swordfish_in_Flight_TR1138.jpg",
+ "photoNote": "A Royal Navy Fairey Swordfish Mark II in flight over the sea, seen through the struts of another Swordfish, during the war (1939 to 1945; Mark II dates it to 1943 or later). Original wartime color transparency, not colorized. Imperial War Museum TR 1138, Crown copyright expired, public domain (via Wikimedia Commons). Not a Taranto photo; the caption should say it shows the type. IWM watermark bottom right; crop it out.",
+ "photoCredit": "A Royal Navy Fairey Swordfish in flight, Second World War. Imperial War Museum TR 1138, public domain.",
+ "declassified": {
+  "fact": "Japan sent a man to look. Lt. Cdr. Takeshi Naito, the assistant naval attache in Berlin, visited Taranto to study the raid, and in October 1941 he talked it over at length with Cdr. Mitsuo Fuchida, who would lead the air attack on Pearl Harbor.",
+  "sources": [
+   {
+    "title": "Battle of Taranto, Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Taranto"
+   }
+  ]
+ },
+ "videoPhotos": [],
+ "somber": false,
+ "themes": {
+  "who": [
+   "airmen"
+  ],
+  "story": [
+   "invention or machine",
+   "first or barrier broken"
+  ],
+  "photo": "a machine",
+  "theater": "Mediterranean and North Africa",
+  "branch": [
+   "Navy"
+  ],
+  "nations": [
+   "Britain",
+   "Italy"
+  ]
+ }
+}

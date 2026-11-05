@@ -1,0 +1,528 @@
+{
+  "issue": 2,
+  "week": {
+    "start": "2026-11-01",
+    "end": "2026-11-07"
+  },
+  "event": "Richard Sorge, Stalin's spy inside the German embassy in Tokyo, is hanged at Sugamo Prison with his Japanese source Ozaki Hotsumi",
+  "date": "1944-11-07",
+  "place": "Sugamo Prison, Tokyo, Japan",
+  "series": "state",
+  "why": "A named human arc with real stakes: the spy who warned Stalin and was ignored, then told him Japan would strike south and was believed, was disowned by Moscow and hanged on the anniversary of the Revolution, and a Tokyo waitress spent half a century keeping his grave.",
+  "alternates": [
+    "Fu-Go balloon bombs and the Bly, Oregon picnic (launched 3 Nov 1944): Japan began sending paper balloon bombs across the Pacific on the jet stream, and one killed a pregnant woman and five children near Bly in May 1945, the only deaths from enemy action on the American mainland.",
+    "The Odenwald, the German blockade runner disguised as an American ship, captured 6 Nov 1941 in the South Atlantic by the cruiser USS Omaha and the destroyer USS Somers, a month before Pearl Harbor, after her crew tried to scuttle her."
+  ],
+  "facts": [
+    {
+      "text": "Richard Sorge was born on 4 October 1895 in Sabunchi, an oil settlement outside Baku in the Russian Empire (now Azerbaijan), the son of a German oil engineer and his Russian wife, Nina.",
+      "sources": [
+        3,
+        1,
+        14,
+        12
+      ]
+    },
+    {
+      "text": "The family moved to Germany while he was small (Peake says when he was four; Wikipedia gives 1898), and he grew up in the Berlin suburb of Lichterfelde.",
+      "sources": [
+        1,
+        3,
+        12
+      ]
+    },
+    {
+      "text": "He enlisted in the German army in October 1914 and was wounded more than once, which left him with a permanent limp. Sources differ on the dates: Peake says he had been wounded twice by 1916, McClure dates the bad wound to near Minsk in March 1916, and Wikipedia gives Ypres in 1915 and again April 1917.",
+      "sources": [
+        1,
+        8,
+        3,
+        12
+      ]
+    },
+    {
+      "text": "In hospital a nurse brought him Marx, and he turned to communism. He joined the German Communist Party (KPD) in 1919, the year he took his doctorate in Hamburg.",
+      "sources": [
+        1,
+        3,
+        10
+      ]
+    },
+    {
+      "text": "In 1924 he moved to Moscow to work for the Communist International and became a member of the Soviet Communist Party (NDB says from 1924, the Encyclopedia of Russian History says 1925).",
+      "sources": [
+        3,
+        10,
+        6
+      ]
+    },
+    {
+      "text": "In 1929 he joined the Red Army's Fourth Department, the military intelligence service later known as the GRU, which sent him to Shanghai in 1930 and to Tokyo in 1933.",
+      "sources": [
+        8,
+        3,
+        12
+      ]
+    },
+    {
+      "text": "His cover in Japan was as correspondent of the Frankfurter Zeitung, the most respected paper in Germany, and he was a card carrying member of the Nazi Party. McClure notes he may have been the only man ever to belong to the Soviet Communist Party and the Nazi Party at the same time.",
+      "sources": [
+        8,
+        9,
+        5,
+        3
+      ]
+    },
+    {
+      "text": "Sources differ on when he joined the Nazi Party: the Neue Deutsche Biographie says he joined in Tokyo on 1 October 1934, on Soviet advice, while Wikipedia has him joining in Berlin in 1933 before he left for Japan.",
+      "sources": [
+        3,
+        12
+      ]
+    },
+    {
+      "text": "Sorge reached Japan in September 1933, landing at Yokohama on 6 September by Wikipedia's account, after travelling by way of the United States.",
+      "sources": [
+        6,
+        12
+      ]
+    },
+    {
+      "text": "His central task in Tokyo was to learn whether Japan meant to attack the Soviet Union. Japan's possible move north, and the Kwantung Army maneuvers of 1941, were the main subject of his reporting.",
+      "sources": [
+        2,
+        12
+      ]
+    },
+    {
+      "text": "His star recruit was Ozaki Hotsumi, an Asahi Shimbun journalist and China expert who sat in the circle around Prime Minister Konoe Fumimaro and gave Sorge access to the highest levels of the Japanese government.",
+      "sources": [
+        8,
+        6,
+        5,
+        13
+      ]
+    },
+    {
+      "text": "The radio man was Max Clausen, a German communist who reached Japan in 1935 and sent the ring's messages to Moscow in a numerical code using one time pads, which Japanese monitors could hear but never broke.",
+      "sources": [
+        4,
+        10,
+        12
+      ]
+    },
+    {
+      "text": "Branko Vukelić, a Croatian born in Osijek in 1904, came to Tokyo in 1933 as photo reporter for the French magazine Vu and correspondent of Belgrade's Politika, and joined the ring.",
+      "sources": [
+        11,
+        4
+      ]
+    },
+    {
+      "text": "Miyagi Yotoku, an Okinawan painter, was the ring's third main informant and worked under Ozaki.",
+      "sources": [
+        5,
+        4,
+        16
+      ]
+    },
+    {
+      "text": "Sorge's closest German contact was Eugen Ott, the military attaché who became ambassador in 1938. Ott leaned on Sorge's knowledge of Japan, Sorge helped write his reports to Berlin, and by the time of his arrest Sorge had an office inside the embassy where he was shown secret documents and telegrams.",
+      "sources": [
+        5,
+        6,
+        3,
+        12
+      ]
+    },
+    {
+      "text": "Sorge sent his first serious warning of a possible German attack on the Soviet Union on 28 December 1940. GRU readers marked one of his reports from that month as doubtful material, while still sending it on to Stalin.",
+      "sources": [
+        4,
+        7
+      ]
+    },
+    {
+      "text": "On 30 May 1941 he reported that Berlin had told Ott the German attack would come in the latter part of June. On 1 June he passed on word from the visiting Lieutenant Colonel Erwin Scholl that 170 to 190 divisions were massed on the border, and Moscow marked that report as suspicious.",
+      "sources": [
+        4,
+        7,
+        12
+      ]
+    },
+    {
+      "text": "Sources disagree over whether he gave the exact date. Neal Ascherson's 1966 review says he warned of the exact date in May 1941, and the Soviet press in 1964 claimed a 15 June message naming 22 June, but Gordon Prange concluded his closest date was 20 June, and Goldman's account has him naming 15 June on 1 June and sending a last warning drafted on 20 June.",
+      "sources": [
+        5,
+        12,
+        4
+      ]
+    },
+    {
+      "text": "Stalin ignored the warnings, and Germany attacked on 22 June 1941. Stalin is reported to have dismissed Sorge with an obscene remark about factories and brothels in Japan, though the exact wording differs between accounts.",
+      "sources": [
+        4,
+        1,
+        7,
+        12
+      ]
+    },
+    {
+      "text": "On 23 August 1941 Sorge reported that many Japanese soldiers were being issued short trousers, a sign they were bound for the tropics, not Siberia. On 25 August he reported, through Ozaki, that the high command had decided not to go to war with the Soviet Union that year.",
+      "sources": [
+        7,
+        4,
+        12
+      ]
+    },
+    {
+      "text": "On 6 September 1941 an Imperial Conference in Tokyo decided to prepare for war with the United States, Britain and the Netherlands. On 14 September Sorge told Moscow that the possibility of a Japanese attack had disappeared, and on 4 October, in the last message he sent, he reported it was certain Japan would not invade that year.",
+      "sources": [
+        2,
+        4
+      ]
+    },
+    {
+      "text": "The report freed Moscow to draw on its Far Eastern armies as the Germans closed on the capital. Goldman counts 15 infantry divisions, 3 cavalry divisions, 1,700 tanks and 1,500 aircraft moved west in the two months after mid September; McClure, reviewing Matthews, says Stalin shifted over half the available Siberian troops; the Wikipedia article on Ozaki gives 18 divisions.",
+      "sources": [
+        4,
+        8,
+        13
+      ]
+    },
+    {
+      "text": "How decisive Sorge was is debated. CIA reviewer Hayden Peake writes that Stalin did accept the strike south report, but Japan's National Institute for Defense Studies says the claims for the ring carry strong mythological elements from the Cold War and that the GRU weighed his reports against other sources and did not lower its guard against Japan. Wikipedia adds that Soviet codebreakers were reading Japanese diplomatic codes, a point this file could not confirm in a second strong source.",
+      "sources": [
+        1,
+        2,
+        8,
+        12
+      ]
+    },
+    {
+      "text": "Clausen, losing faith, cut or held back some of Sorge's reports without telling him. A final message, never sent, was found in Sorge's house, predicting war with the United States within a month or two.",
+      "sources": [
+        1,
+        7,
+        2
+      ]
+    },
+    {
+      "text": "Ozaki was arrested on 14 or 15 October 1941 (sources differ). Miyagi, arrested days before, survived a jump from a window and named Ozaki and Sorge under interrogation.",
+      "sources": [
+        2,
+        4,
+        6,
+        13
+      ]
+    },
+    {
+      "text": "Police arrested Sorge at his home on 18 October 1941, the same day General Tojo Hideki's cabinet took office after Prince Konoe's government resigned on 16 October. Clausen was arrested the same day, and the final arrests in the case totaled 35 people.",
+      "sources": [
+        2,
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "text": "After resisting for about a week, Sorge gave a full account of his work, on condition that his Japanese companion Ishii Hanako and the wives of his colleagues were not prosecuted. Ishii was never charged.",
+      "sources": [
+        4,
+        12
+      ]
+    },
+    {
+      "text": "Sorge's arrest ended Ott's career in Tokyo. He was replaced as ambassador by Heinrich Georg Stahmer and spent the rest of the war in Peking.",
+      "sources": [
+        5,
+        15
+      ]
+    },
+    {
+      "text": "The Tokyo District Court sentenced Sorge to death on 29 September 1943, and Ozaki was also condemned. Vukelić received a life sentence in 1943 and died in Abashiri prison in Hokkaido in 1945.",
+      "sources": [
+        3,
+        10,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "text": "Back in the Soviet Union, the NKVD arrested Sorge's Russian wife, Katya Maximova, in September 1942; she died in a labor camp about a year later.",
+      "sources": [
+        4,
+        3
+      ]
+    },
+    {
+      "text": "Japan offered to trade Sorge on three occasions, according to Goldman, and Moscow answered that it had never heard of him. Matthews, as summarized in the CIA's review, found no sign that Stalin ever tried to bargain for him, so whether offers were made and refused, or never made, is unsettled.",
+      "sources": [
+        4,
+        6,
+        1,
+        12
+      ]
+    },
+    {
+      "text": "On 7 November 1944, the anniversary of the Russian Revolution, the prison governor and a Buddhist chaplain walked Sorge to the gallows at Sugamo Prison, and the trap fell at 10:20 a.m. Ozaki had been hanged at Sugamo earlier the same day.",
+      "sources": [
+        5,
+        9,
+        12
+      ]
+    },
+    {
+      "text": "Sorge was buried in a common plot for Sugamo inmates. Wartime fuel shortages meant his body was not cremated.",
+      "sources": [
+        6,
+        12
+      ]
+    },
+    {
+      "text": "Ishii Hanako, a waitress at one of his regular bars, began living with him in 1936, when Goldman says she was 26, and was his companion for nearly six years.",
+      "sources": [
+        4,
+        6,
+        12
+      ]
+    },
+    {
+      "text": "After the war Ishii found his remains, identified by his dental work and a badly set leg, and paid to move them to Tama Cemetery in western Tokyo. Goldman and Wikipedia date the recovery to 1949 (Wikipedia gives 16 November 1949); Nippon.com dates the move to Tama to 1950.",
+      "sources": [
+        4,
+        6,
+        12
+      ]
+    },
+    {
+      "text": "His stone at Tama carries the words Hero of the Soviet Union in Russian, with Ishii's name in Japanese beneath his. She tended the grave until she died in 2000, at 89.",
+      "sources": [
+        9,
+        6,
+        4
+      ]
+    },
+    {
+      "text": "Moscow denied for twenty years that Sorge had been its spy. A Pravda article on 4 September 1964 began his rehabilitation, helped along by the 1961 French and Japanese film Qui êtes-vous, Monsieur Sorge?, which Khrushchev had seen.",
+      "sources": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "text": "A decree of 5 November 1964 made Sorge a Hero of the Soviet Union, twenty years after his death; Japan's defense institute calls him the first person outside the military to receive it. One encyclopedia entry gives 11 November 1962 instead, which conflicts with the CIA's contemporary account.",
+      "sources": [
+        0,
+        2,
+        9,
+        10
+      ]
+    },
+    {
+      "text": "In January 1965 Clausen, by then living in East Germany, received the Order of the Red Banner. Vukelić was awarded the Order of the Patriotic War, First Degree, after his death, and early in 1965 the Soviet Union issued a postage stamp bearing Sorge's portrait.",
+      "sources": [
+        0,
+        10
+      ]
+    },
+    {
+      "text": "A later legend that Sorge warned Moscow of the attack on Pearl Harbor has no support in the record: Japan's defense institute finds no evidence the ring ever identified Hawaii as the target.",
+      "sources": [
+        2
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Olivia Halebian, New Light on Old Spies: A Review of Recent Soviet Intelligence Revelations, CIA Center for the Study of Intelligence (released 1995)",
+      "url": "https://www.cia.gov/resources/csi/static/Recent-Soviet-Intelligence-Revelations.pdf"
+    },
+    {
+      "title": "Hayden Peake, review of Owen Matthews, An Impeccable Spy, Intelligence Officer's Bookshelf, Studies in Intelligence Vol. 63, No. 3 (September 2019), CIA",
+      "url": "https://www.cia.gov/resources/csi/static/Intel-Officers-Bookshelf-63.3.pdf"
+    },
+    {
+      "title": "Shimizu Ryotaro, Richard Sorge and the Japanese attack on Pearl Harbor in 1941, NIDS Commentary No. 249 (15 December 2022), National Institute for Defense Studies, Japan Ministry of Defense",
+      "url": "https://www.nids.mod.go.jp/english/publication/commentary/pdf/commentary249e.pdf"
+    },
+    {
+      "title": "Peter Herde, Sorge, Richard, Neue Deutsche Biographie 24 (2010)",
+      "url": "https://www.deutsche-biographie.de/sfz74845.html"
+    },
+    {
+      "title": "Stuart D. Goldman, The Spy Who Saved the Soviets, HistoryNet (World War II magazine, 2010)",
+      "url": "https://www.historynet.com/the-spy-who-saved-the-soviets/"
+    },
+    {
+      "title": "Neal Ascherson, Master Spy, The New York Review of Books (12 May 1966)",
+      "url": "https://www.nybooks.com/articles/1966/05/12/master-spy/"
+    },
+    {
+      "title": "Tokyo Espionage: Legendary Soviet Spy Richard Sorge, Nippon.com (17 August 2018)",
+      "url": "https://www.nippon.com/en/nipponblog/m00143/"
+    },
+    {
+      "title": "Saitō Katsuhisa, A Fresh Look at a Legendary Spy: New Japanese Translation of Richard Sorge's Reports from Tokyo, Nippon.com (21 July 2023)",
+      "url": "https://www.nippon.com/en/japan-topics/bg900461/"
+    },
+    {
+      "title": "Steve McClure, Impeccable Spy: Richard Sorge, Stalin's Master Agent, Number 1 Shimbun, Foreign Correspondents' Club of Japan (2020)",
+      "url": "https://www.fccj.or.jp/number-1-shimbun-article/impeccable-spy-richard-sorge-stalins-master-agent"
+    },
+    {
+      "title": "Mark Schreiber, Persons of interest, Number 1 Shimbun, Foreign Correspondents' Club of Japan (November 2025)",
+      "url": "https://www.fccj.or.jp/number-1-shimbun-article/persons-interest"
+    },
+    {
+      "title": "Michael Parrish, Sorge, Richard, Encyclopedia of Russian History, via Encyclopedia.com",
+      "url": "https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/sorge-richard"
+    },
+    {
+      "title": "Vukelić, Branko, Hrvatska enciklopedija (Miroslav Krleža Institute of Lexicography)",
+      "url": "https://www.enciklopedija.hr/clanak/vukelic-branko"
+    },
+    {
+      "title": "Richard Sorge, Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Richard_Sorge"
+    },
+    {
+      "title": "Hotsumi Ozaki, Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hotsumi_Ozaki"
+    },
+    {
+      "title": "Richard Sorge, Encyclopaedia Britannica",
+      "url": "https://www.britannica.com/biography/Richard-Sorge"
+    },
+    {
+      "title": "Eugen Ott (ambassador), Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Eugen_Ott_(ambassador)"
+    },
+    {
+      "title": "Sorge's Spy is Brought in From the Cold. A Soviet-Okinawan Connection, The Asia-Pacific Journal: Japan Focus (2010)",
+      "url": "https://apjjf.org/?p=28067"
+    }
+  ],
+  "quotes": [
+    {
+      "text": "Berlin informed Ott that German attack will commence in the latter part of June.",
+      "by": "Richard Sorge, radio report to Moscow (English translation)",
+      "when": "30 May 1941",
+      "source": 4,
+      "note": "Translations differ. Saitō (Nippon.com, from the Fesyun GRU files) renders it: Berlin has informed Ott that the German invasion will begin in the latter half of June. Wikipedia adds the next line: Ott 95 percent certain war will commence."
+    },
+    {
+      "text": "Suspicious. To be listed with telegrams intended as provocations.",
+      "by": "Sorge's superiors in Moscow, note on his dispatch",
+      "when": "June 1941 (on the 1 June dispatch)",
+      "source": 4
+    },
+    {
+      "text": "a shit who has set himself up with some little factories and brothels in Japan",
+      "by": "Attributed to Joseph Stalin, dismissing a Sorge warning",
+      "when": "1941, before the German invasion",
+      "source": 4,
+      "note": "Attribution flag: printed by Goldman (HistoryNet); Wikipedia prints a different, longer wording of the same remark. Treat as reported, not as a verified transcript."
+    },
+    {
+      "text": "Many Japanese soldiers are being issued short trousers",
+      "by": "Richard Sorge, report to Moscow (English translation of the Japanese edition of the GRU files)",
+      "when": "23 August 1941",
+      "source": 7
+    },
+    {
+      "text": "the possibility of [Japan] launching an attack, which existed until recently, has disappeared",
+      "by": "Richard Sorge, report to Moscow (English translation)",
+      "when": "14 September 1941",
+      "source": 4
+    },
+    {
+      "text": "In any case, the issues of the United States and Southbound are far more serious than the Northbound issue",
+      "by": "Richard Sorge, final draft message, never sent, found when police searched his house (NIDS English translation)",
+      "when": "October 1941",
+      "source": 2
+    },
+    {
+      "text": "We [Sorge and Clausen] are watching with deep sympathy the heroic war you are waging against Germany, and we greatly regret that we are here, where we are of no interest or importance to you.",
+      "by": "Richard Sorge and Max Clausen, same unsent final message (NIDS English translation)",
+      "when": "October 1941",
+      "source": 2
+    },
+    {
+      "text": "Normal espionage involves the search for weak spots in the structure of a nation.",
+      "by": "Richard Sorge, to his investigating magistrate, as printed by Neal Ascherson",
+      "when": "1942",
+      "source": 5
+    },
+    {
+      "text": "But my purpose was to keep the peace between Japan and the Soviet Union.",
+      "by": "Richard Sorge, to his investigating magistrate, as printed by Neal Ascherson",
+      "when": "1942",
+      "source": 5
+    },
+    {
+      "text": "And therefore I do not accept that my activities were directed against the national interests of Japan.",
+      "by": "Richard Sorge, to his investigating magistrate, as printed by Neal Ascherson",
+      "when": "1942",
+      "source": 5
+    },
+    {
+      "text": "The man called Richard Sorge is unknown to us.",
+      "by": "Moscow's reply to Japanese offers to exchange Sorge, as reported by Stuart Goldman",
+      "when": "1942 to 1944",
+      "source": 4,
+      "note": "Attribution flag: CIA reviewer Peake, summarizing Matthews, says no Soviet attempt to bargain appears to have been made; use as Goldman's account."
+    },
+    {
+      "text": "But Stalin did accept his report that the Japanese would go South rather than attack the Soviet Union, and this, plus his overall record, earned him belated rehabilitation and his picture on a postage stamp.",
+      "by": "Hayden Peake, CIA Studies in Intelligence",
+      "when": "September 2019",
+      "source": 1
+    },
+    {
+      "text": "By the time of his arrest Sorge had an office within the Embassy, and was constantly shown secret documents and telegrams.",
+      "by": "Neal Ascherson, The New York Review of Books",
+      "when": "12 May 1966",
+      "source": 5
+    }
+  ],
+  "photos": [
+    {
+      "file": "newsletter/img/002-sorge-press-pass.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Richard_Sorge_press_pass.jpg",
+      "caption": "Richard Sorge's Japanese foreign correspondent pass for the Frankfurter Zeitung, issued by the Cabinet Information Bureau on 4 July 1941, months before his arrest.",
+      "credit": "Cabinet Information Bureau, Third Department, Japan, 1941; reproduced in Showa 30 nenshi (Mainichi Shimbun, 1955), p. 106; Wikimedia Commons File:Richard_Sorge_press_pass.jpg; public domain (PD-Japan-oldphoto, Japanese photo published before 1957, and PD-1996).",
+      "note": "Downloaded at 960 px (original is 975 px wide). Not posted by the account before; the card used File:R_Sorge.jpg."
+    },
+    {
+      "file": "newsletter/img/002-ozaki-hotsumi.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Hotsumi_Ozaki.JPG",
+      "caption": "Ozaki Hotsumi, the Asahi Shimbun journalist and adviser in Prince Konoe's circle who was Sorge's best source, in the prewar Showa years.",
+      "credit": "Unknown photographer, from Pictorial History of Modern Japan Vol. 12 (Sanseido); Wikimedia Commons File:Hotsumi_Ozaki.JPG; public domain (PD-Japan-oldphoto, PD-1996).",
+      "note": "Downloaded as the 330 px Commons thumbnail (original 342 x 380 px; the original file request was rate limited). The other Commons Ozaki portrait (File:Hotsumi_Ozaki_Picture.jpg) is tagged CC BY SA and was not used."
+    },
+    {
+      "file": "newsletter/img/002-eugen-ott.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Eugen_Ott_(ambassador).jpg",
+      "caption": "Eugen Ott in 1933, the year before he went to Tokyo as military attaché; as ambassador from 1938 he gave Sorge the run of the German embassy.",
+      "credit": "Arno Moyzischewitz, 1933, from Ott's Berlin Document Center files; Wikimedia Commons File:Eugen_Ott_(ambassador).jpg; public domain (PD-old-80, the photographer died in 1937).",
+      "note": "Downloaded as the 330 px Commons thumbnail (original 492 x 722 px; the original file request was rate limited). Newspaper style halftone portrait in uniform."
+    },
+    {
+      "file": "newsletter/img/002-sugamo-prison-1949.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Sugamo-Prison-Tokyo-1949.png",
+      "caption": "Sugamo Prison in Tokyo from the air in 1949, five years after Sorge and Ozaki were hanged there.",
+      "credit": "Unknown photographer, 1949; Wikimedia Commons File:Sugamo-Prison-Tokyo-1949.png; public domain (PD-Japan-oldphoto, PD-1996).",
+      "note": "Postwar photo (1949), not of the event; flag for Brian. Downloaded at 960 px and converted from PNG to JPEG."
+    },
+    {
+      "file": "newsletter/img/002-soviet-stamp-1965.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Dr_Richard_Sorge_spy.jpg",
+      "caption": "The Soviet stamp of 1965 honoring Richard Sorge, issued months after he was named a Hero of the Soviet Union.",
+      "credit": "USSR postal administration, 1965, designed by Pyotr Bendel; Wikimedia Commons File:Dr_Richard_Sorge_spy.jpg; public domain (PD-RU-exempt, Russian law excludes official state signs, including postage stamps, from copyright).",
+      "note": "Downloaded as the 330 px Commons thumbnail (original 366 x 512 px). The stamp reads Pochta SSSR 1965, 4 kopeks, Hero of the Soviet Union, 1895 1944, Richard Sorge. The Commons file page lacks a machine readable source and author."
+    }
+  ]
+}

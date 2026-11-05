@@ -22,3 +22,5 @@ Finished noon videos not yet scheduled (aim for 3 to 5). One line each: file in 
 ## Open checks
 Small loose ends a run can settle when it has a moment.
 * No. 010 (Churchill): the British official photo was supplied by Brian; its catalogue number is not confirmed.
+* No. 053 (Tirpitz, Thu 12 Nov): Living Card film needs Brian (Commons WebM into Source Film; Schedule Board task film-053-tirpitz). If it never arrives, swap to the Tokyo verdict film already in the videos repo (`footage/1948-11-12-tokyo-verdict-reel.mp4`) or make a Story Card.
+* No. 048 (Kristallnacht): the lead photo is an anonymous 1938 German photo tagged public domain on Commons; confirm the credit wording on Friday.
