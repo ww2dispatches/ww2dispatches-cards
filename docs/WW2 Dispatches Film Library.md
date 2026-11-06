@@ -14,7 +14,7 @@ Every film here has a full index in its own Project doc under `claude/film-index
 4. **Mind the timeline.** Each index says which copy its times use (the Source Film file, or the NARA reel, "R3 01:01" meaning Reel 3 at 1 min 1 s). Times in another copy of the same film will drift.
 5. **Sound:** these films carry narration and score over almost everything, so **every clip runs silent by default.** The few natural sound stretches are listed per film; they were found with spectrograms, so listen before keeping any sound (Videos doc, Living Cards).
 6. **Caption honestly:** say whose camera it was when it isn't American ("Soviet film of the Ladoga ice road", "Japanese Navy film of the launch"), and say so when the film is from a few days around the event (the Aachen rule). Never caption a composite or generic shot as one dated event.
-7. **Lens:** the Axis and Eastern Front floors (Research doc, lens mix) lean on this library. Soviet films serve the Eastern Front; captured Japanese film, the German side pack, Trophies of Great Battles, and the Me 262 film serve Axis lens cards.
+7. **Lens:** the Axis and Eastern Front floors (Research doc, lens mix) lean on this library. Soviet films serve the Eastern Front; captured Japanese film, the German side pack, the German military packs (Cologne, Brest, the Ruhr prisoners, German leaders in custody, the U-boat surrenders, the Me 262 jets), Trophies of Great Battles, and the Me 262 film serve Axis lens cards.
 
 ## On hand
 **American and British films**
@@ -54,6 +54,16 @@ Every film here has a full index in its own Project doc under `claude/film-index
 | **Trophies of Great Battles** (1943, Soviet, color) | Captured German weapons in Gorky Park: Tiger, Ferdinand, Bf 109, Nebelwerfer, Flak | Source Film | Source Film | `claude/film-index/trophies-of-great-battles.md` |
 | **Nine War Gods** (captured Japanese newsreel, 1942) | Portraits of the nine midget submarine crewmen of 7 Dec; the capture of Hong Kong | NARA 428-NPC-10134 (naId 78848) | NARA file | `claude/film-index/nine-war-gods.md` |
 | **The Me 262** (1945, Soviet evaluation film) | The German jet fighter in detail and in flight | Source Film | Source Film | `claude/film-index/me-262-soviet-film.md` |
+| **Cologne, March 1945** (5 Signal Corps reels) | Pulheim to Cologne 5 Mar, German soldiers surrendering with hands up, captured officers, M26 Pershings passing white flags, the cathedral spires, Neuss under Military Government; German prisoners with a war dog, 6 Mar. **The cathedral tank duel is not in any of them.** | NARA 111-ADC-1955, 3508, 9703; 9704, 3535 | NARA file | `claude/film-index/cologne-march-1945.md`, `cologne-captured-1945.md` |
+| **Surrender of Brest** (Signal Corps, 18 Sep 1944) | A German paratroop colonel with the Knight's Cross surrenders face to face, hundreds of prisoners, the fortress and abandoned German stores | NARA 111-ADC-2350 | NARA file | `claude/film-index/brest-surrender.md` |
+| **Seine crossing and Aachen** (Signal Corps, Aug and Oct 1944) | German ammunition truck exploding, Montereau crossing under fire, Brest refugees; Aachen street fighting 15 Oct, Nazi newspaper sign, German prisoners (one stretch graphic) | NARA 111-ADC-2245; 111-ADC-2655 | NARA file | `claude/film-index/seine-crossing-august-1944.md`, `aachen-fall.md` |
+| **German prisoners, 1945** (3 Signal Corps reels) | Ruhr pocket: a German column driving itself into captivity, thousands in a field, three generals; German horse cavalry and wagons, a Red Cross nurse with boy soldiers; Roetgen boy soldiers, Feb 1945 | NARA 111-ADC-3341, 4204, 3281 | NARA file | `claude/film-index/german-prisoners-1945.md` |
+| **Tunisia 1943, Tiger wrecks in Italy, Remagen** (Signal Corps) | Captured 88 and Axis prisoners, Eisenhower (Feb 1943); two knocked out Tiger I tanks, turret 33 (late Jun 1944); Remagen bridge 9 Mar 1945, "Cross the Rhine with dry feet", Churchill at Julich | NARA 111-ADC-1954; 1326; 3612 | NARA file | `claude/film-index/tunisia-tank-action-1943.md`, `massa-marittima-german-wrecks.md`, `remagen-bridgehead.md` |
+| **Reims surrender** (Signal Corps, 7 May 1945) | Jodl signing, Bedell Smith, Susloparov, the pens; **Eisenhower's victory statement with live sound** | NARA 111-ADC-9759 | NARA file | `claude/film-index/german-surrender-reims.md` (fuller than the GS pack entry) |
+| **German leaders in custody** (3 Signal Corps reels, May 1945) | Goering at Kitzbuhel and Seventh Army, then at his press conference; Kesselring laughing with Maxwell Taylor; the Zell am See contact convoy | NARA 111-ADC-4420, 9795, 4326 | NARA file | `claude/film-index/german-leaders-captured-1945.md` (Mauthausen stretch in 4326, never) |
+| **Luftwaffe's end and the V-2** | Me 262 jets abandoned at Innsbruck on VE Day, engine and cannon open, German explosive motorboats; USAAF gun camera Fighter Kills Sep to Dec 1944 (Fw 190, Bf 109, Me 163, Me 262; two German camera stretches flagged); a V-2 launch at White Sands in color, 1946 | NARA 111-ADC-4524; 111-ADC-10508; 428-NPC-10804 | NARA file | `claude/film-index/luftwaffe-jets-innsbruck.md`, `fighter-kills-eto.md`, `v2-tests-white-sands.md` |
+| **U-boat surrenders, May 1945** (5 Navy reels) | U-858 off Cape May and her crew landed at Fort Miles, 14 May; U-873 under the U.S. flag over the black flag off the Azores, 11 May; U-805's crew at Portsmouth, 15 May; an unidentified boat from the air | NARA 428-NPC-12592, 12132, 12102; 7860, 7853 | NARA file | `claude/film-index/u-boat-surrenders-may-1945.md`, `u-boat-surrender-azores.md` |
+| **Siegfried Line** (Navy camera, slated 22 Sep 1944) | Low aerials along the dragon's teeth, a shell pocked pillbox, bunkers, wire | NARA 428-NPC-13442 | NARA file | `claude/film-index/siegfried-line-navy-reel.md` |
 
 **Soviet films (Eastern Front; all Commons PD-Russia-1996)**
 | Film | Covers | Copies | Times use | Index |
@@ -92,6 +102,7 @@ Usable shots by calendar day across every film on hand. "Verify" means the film 
 **February**
 * 4 to 11 Feb 1945, Yalta: the seated Big Three, 111-ADC-9701 00:04:03 to 00:04:18 and 00:03:01 to 00:03:17; Roosevelt close up 111-ADC-9700 00:00:26 (Paramount newsreel camera, rights caution; see the index).
 * 15 to 18 Feb 1944, Cassino (the abbey before and the town assaults, not the bombing itself): Cassino reel 00:00:43 to 00:00:52, 00:06:24 to 00:06:42.
+* 3 Feb 1945, boy soldiers taken prisoner at Roetgen (Axis lens, Home Front angle): German prisoners 1945, 111-ADC-3281 04:14 to 04:21 (a very young prisoner staring into the lens), 03:34 to 03:50.
 * 2 Feb 1943, Stalingrad ends; ruins, prisoner columns: STG 01:07:58 to 01:08:18 (POW columns), 01:13:42 to 01:13:56 (lone prisoner on the Volga ice), 01:03:05 to 01:03:37 (the silence); BoR Part 2 00:42:12 to 00:44:43.
 * 4 Feb 1943, victory rally in Stalingrad (verify): STG 01:11:00 to 01:13:28.
 * 3 Feb to 3 Mar 1945, Battle of Manila (aerial of the ruined city only): KYEJ R2 27:30 to 27:40.
@@ -102,14 +113,18 @@ Usable shots by calendar day across every film on hand. "Verify" means the film 
 * 18 Feb 1938 onward, bombing of Chungking: BoC R5 02:56 to 03:19, 03:44 to 03:58, 04:10 to 04:50.
 * **19 Feb 1945 (Iwo Jima Flash day):** Iwo Jima reel 00:01:05 to 00:01:20 (LSTs on the beach, filmed from Suribachi on D+4; say so) and 00:01:29 to 00:01:41, flag raising as the payoff at 00:01:41.
 * 19 Feb 1942, Darwin raid (generic, Japanese side): Japanese film naId 2521264 00:03:03 to 00:05:35.
-* 19 to 25 Feb 1943, Kasserine Pass: no real battle footage on hand.
+* 19 to 25 Feb 1943, Kasserine Pass: no battle footage on hand. For "Tunisia that month": Tunisia tank reel 111-ADC-1954, captured 88 00:01:15 to 00:01:24, Axis prisoner column 00:03:51 to 00:04:10, Eisenhower 00:06:36 to 00:07:12.
 * **23 Feb 1945, the flag raising on Suribachi, color:** Iwo Jima reel 00:01:41.0 to 00:02:16 (Genaust's film of the second flag; the first flag is not on film).
 * 26 Feb 1943, Wilhelmshaven (composite; verify): Memphis Belle 00:18:30 to 00:23:40.
 
 **March**
 * 6 Mar 1943, Medenine: Tunisian Victory R5 09:00 to 09:12.
-* 6 Mar 1945, Cologne: True Glory R8 00:07:12 to 00:07:30.
-* **7 Mar 1945 (Remagen Flash day from 2027):** True Glory R8 00:08:30 to 00:09:07.
+* 3 Mar 1945, Churchill visits Julich with Montgomery and Brooke: Remagen reel 111-ADC-3612 00:07:45 to 00:08:30. 3 to 6 Mar, U.S. Ninth Army meets the British near Geldern: same reel 00:10:03 to 00:10:20, 00:12:39 to 00:12:57.
+* 5 Mar 1945, 3rd Armored drives from Pulheim to Cologne; German soldiers walk in with hands up: Cologne 111-ADC-1955 04:36 to 04:51, 05:03 to 05:17; two captured German officers, 111-ADC-3508 05:15 to 05:22.
+* **6 Mar 1945, Cologne:** True Glory R8 00:07:12 to 00:07:30; armor toward the cathedral, Cologne captured 111-ADC-9704 06:15 to 06:30 (best cathedral shot); German prisoners in greatcoats with a war dog, 111-ADC-3535 01:24 to 01:37. The Pershing versus Panther duel is not on any reel we have.
+* **7 Mar 1945 (Remagen Flash day from 2027):** True Glory R8 00:08:30 to 00:09:07; the "Cross the Rhine with dry feet" sign on the bridge tower, Remagen reel 111-ADC-3612 00:03:50 to 00:04:06 and infantry onto the bridge 00:03:39 to 00:03:50 (filmed 9 Mar; say so).
+* 8 to 16 Mar 1945, German air attacks on the Remagen bridge: quad .50s firing, 111-ADC-3612 00:03:06 to 00:03:20 (no German plane is in frame).
+* 17 Mar 1945, Ludendorff bridge collapses: the bridge on 9 Mar as a "days before" image, 111-ADC-3612 00:01:48 to 00:01:56.
 * 8 Mar 1942, Japanese landings at Lae and Salamaua: Japanese film naId 2521264 00:00:15 to 00:02:45.
 * 10 Mar 1944, Uman taken (verify): RBU 00:24:20 to 00:25:20.
 * 13 to 22 Mar 1946, Göring on the stand at Nuremberg: GS 208-UN-202 00:00:21 to 00:02:20 (live exchange with Jackson 00:00:58 to 00:01:41, may keep its sound; United News, second choice after the Army film); GS 1948 film R7 00:01:12 to 00:02:10.
@@ -131,6 +146,9 @@ Usable shots by calendar day across every film on hand. "Verify" means the film 
 * 15 Apr 1942, Leningrad trams run again (verify): LF 01:05:00 to 01:06:45; BoR Part 2 00:26:16 to 00:26:34.
 * 15 Apr 1945, Belsen (somber only): True Glory R9 00:02:00 to 00:03:36.
 * 16 Apr 1945, the Oder barrage, **natural battle sound 00:15:00 to 00:16:57** (listen first): Berlin 00:12:45 to 00:13:50, 00:15:06 to 00:18:00.
+* 11 to 18 Apr 1945, the Ruhr pocket surrenders (Axis lens): a German column of half tracks, trucks and Kübelwagens drives itself into captivity, German prisoners 1945, 111-ADC-3341 03:34 to 03:53; thousands in a field 06:38 to 07:21; three generals 08:19 to 08:47 (names are the shot card's, verify).
+* 16 Apr 1945, German generals and troops taken near Müden (place per card, verify): 111-ADC-4204, horse cavalry and farm wagons 01:57 to 02:07, a German Red Cross nurse with boy soldiers 02:28 to 02:39, generals 04:54 to 05:03.
+* 16 Apr 1946, first V-2 fired at White Sands: V-2 reel 428-NPC-10804 00:03:47 to 00:03:59, corkscrew trail 00:04:14 to 00:04:33 (a 1946 launch, exact flight not identified).
 * **18 Apr 1942 (Doolittle Flash day from 2027):** Doolittle reel 00:07:55 to 00:07:59, 00:08:00 to 00:08:14, best 00:09:06 to 00:09:19 (B-25s overhead; the Hornet takeoffs themselves are specks in rain).
 * 19 Apr 1945, Seelow Heights: Berlin 00:18:12 to 00:20:45.
 * 20 Apr 1943, Enfidaville: Tunisian Victory R6 08:03 to 08:54.
@@ -147,14 +165,21 @@ Usable shots by calendar day across every film on hand. "Verify" means the film 
 * 4 May 1945, Lueneburg Heath (not named): True Glory R9 00:05:15 to 00:05:36.
 * 6 May 1942, Corregidor surrender, Japanese film (some shots may be restaged by Japanese cameramen): KYEJ R2 25:18 to 25:58.
 * 6 May 1943, final offensive in Tunisia: Tunisian Victory R7 07:06 to 08:54, R8 00:06 to 02:00.
-* **7 May 1945, Reims, Jodl signs:** GS 111-ADC-9759, Jodl at 00:00:59. Same day, Montgomery and Rokossovsky at Wismar: GS 111-ADC-1919 00:00:08 to 00:03:15.
+* **7 May 1945, Reims, Jodl signs:** GS 111-ADC-9759, Jodl at 00:00:59; fuller index in `german-surrender-reims.md`: Jodl signs 01:01 to 01:20, his face 01:45 to 02:03, Bedell Smith 02:06 to 02:20, the pens 06:12 to 06:30. Same day, Montgomery and Rokossovsky at Wismar: GS 111-ADC-1919 00:00:08 to 00:03:15.
 * 7 May 1943, Tunis and Bizerte fall: Tunisian Victory R8 03:04 to 03:22.
 * 7 May 1944, Sapun Gora stormed (Sevastopol, reference only): 00:23:41 to 00:30:09.
 * **7 to 8 May 1945 (VE Day Flash day):** True Glory R9 00:06:30 to 00:07:21; Eisenhower's own statement with live sound, GS 111-ADC-9759 00:03:27 to 00:04:39; **Keitel signing at Karlshorst**, GS 111-ADC-1919 00:05:27 to 00:08:50 (Keitel 00:06:15) and Berlin 00:56:45 to 01:00:00.
 * **8 May 1942, Coral Sea, Lexington lost:** Lexington reel 00:00:41 to 00:00:53 (check the rights flag first).
+* 8 May 1945, the Luftwaffe's end: Me 262 jets abandoned at Innsbruck on VE Day, 111-ADC-4524 00:00:30 to 00:00:47, 00:01:47 to 00:01:59.
+* 8 to 9 May 1945, Goering gives himself up to the 36th Division and is brought to Seventh Army: German leaders 111-ADC-4420 00:42 to 00:51 (Kitzbuhel), 02:33 to 02:54 (big close up and decorations).
+* 9 to 10 May 1945, Kesselring in U.S. custody, laughing with Maxwell Taylor at Berchtesgaden: 111-ADC-9795 03:45 to 03:59 (first choice), 111-ADC-4326 05:58 to 06:16.
+* 11 May 1945, U-873 surrenders off the Azores (per Coast Guard records), the U.S. flag over the black flag: U-boat Azores reel 428-NPC-7860 00:06:32 to 00:06:38, 00:06:39 to 00:06:57.
+* 11 May 1945, Goering's press conference (NARA says 15 May, verify): 111-ADC-9795 01:42 to 02:00, 00:57 to 01:12.
 * 9 May 1945, Soviet Victory Day: Berlin 01:01:15 to 01:02:44; GS 111-ADC-1919 00:06:15.
 * 9 and 12 May 1944, Sevastopol liberated; last Germans surrender at Chersonese (reference only): 00:30:42 to 00:31:30, 00:34:00 to 00:36:59.
 * 13 May 1943, Axis surrender in Tunisia: Tunisian Victory R8 02:57 to 04:54.
+* **14 May 1945, U-858 surrenders off Cape May; crew landed at Fort Miles:** 428-NPC-12592 00:00:49 to 00:01:08 (running pass, crew on deck), 00:05:52 to 00:05:57 (two German officers close); hands raised under the U.S. flag, 428-NPC-12132 00:02:36 to 00:02:49.
+* 15 May 1945, U-805's crew brought into Portsmouth (per the Navy record and the tug's number): 428-NPC-7853 00:03:36 to 00:03:49, officers at the rail 00:00:40 to 00:00:46, ashore 00:06:06 to 00:06:24.
 * 13 May 1946, Mauthausen trial verdicts: GS World in Film 43 00:01:57 to 00:02:57 (Welt im Film, clear first).
 * 17 May 1943, the Belle's 25th mission: Memphis Belle 00:34:30 to 00:36:39.
 * 17 May 1944, Myitkyina airfield taken: Brought to Action R3 02:40 to 02:56, 04:00 to 05:22.
@@ -177,6 +202,7 @@ Usable shots by calendar day across every film on hand. "Verify" means the film 
 * 22 Jun 1943, the trophy exhibition opens in Gorky Park (verify): Trophies 00:00:40 to 00:01:18.
 * 24 Jun 1945, Victory Parade on Red Square: Victory Parade 00:10:35 to 00:11:28, 00:34:17 to 00:35:16 (crop the logos).
 * 26 Jun 1944, Cherbourg falls: True Glory R4 00:04:48 to 00:05:24.
+* Late Jun 1944, Allied advance in southern Tuscany; two knocked out Tiger I tanks (turret 33): Massa Marittima reel 111-ADC-1326 00:00:30 to 00:01:00, 00:01:42 to 00:02:18 (NARA's 1 Jun date is a catalog date; say late June).
 
 **July**
 * **17 Jul 1945, Potsdam opens:** Potsdam 111-ADC-9854 00:02:12 (Big Three seated), 00:03:42 (Churchill and Stalin), 00:06:39 (Churchill greets Truman).
@@ -189,7 +215,7 @@ Usable shots by calendar day across every film on hand. "Verify" means the film 
 * July 1941, Leningrad people's militia and the Luga line (verify): LF 00:05:40 to 00:06:45, 00:10:46 to 00:11:58.
 * 9 and 18 Jul 1944, Caen: True Glory R4 00:07:21 to 00:09:54.
 * 13 Jul 1944, Lviv Sandomierz offensive (verify): RBU 00:44:20 to 00:48:50.
-* 18 Jul 1942, Me 262 first flight on jet power (verify): Me 262 film 00:08:14 to 00:08:45.
+* 18 Jul 1942, Me 262 first flight on jet power (verify): Me 262 film 00:08:14 to 00:08:45; captured jets at Innsbruck 111-ADC-4524 00:00:30 to 00:00:47 (label May 1945).
 * 18 to 19 Jul 1944, St Lo: True Glory R5 00:00:33 to 00:01:36.
 * 21 Jul 1944, Guam liberated (occupation background): Japanese film naId 80619 00:04:05 to 00:07:09.
 * 22 and 27 Jul 1944, Brody pocket; Lviv liberated: RBU 00:50:53 to 00:51:42, 00:52:28 to 00:54:45.
@@ -211,6 +237,7 @@ Usable shots by calendar day across every film on hand. "Verify" means the film 
 * **23 Aug 1942, the great bombing of Stalingrad, natural sound 00:14:47 to 00:17:56 (no voice or music; listen first):** STG 00:14:55 to 00:18:08; firemen at a burning block 00:15:54 to 00:16:14; the Barmaley fountain and a man carrying a double bass through the ruins 00:21:37 to 00:21:51.
 * 23 to 25 Aug 1942, Germans reach the Volga; tractor works fights: STG 00:18:40 to 00:20:15.
 * 25 Aug 1944, Paris liberated: True Glory R6 00:04:33 to 00:06:00.
+* 24 Aug 1944, Brest refugees at Ploudalmezeau (Home Front): Seine reel 111-ADC-2245, see index. 25 Aug 1944, the 10th Infantry crosses the Seine at Montereau under fire, shell spouts in the river: 00:04:48 to 00:04:50, raft with antitank gun 00:05:21 to 00:05:35; a German ammunition truck explodes at Maison Rouge 00:00:22 to 00:00:40.
 * 27 Aug 1941, U-570 surrenders to an RAF Hudson: GS 428-NPC-16294 00:01:18, 00:04:12 (the boat later in British service as HMS Graph; say so).
 * 31 Aug 1946, final statements at Nuremberg: GS 1948 film R7 00:03:12 to 00:07:41.
 * 31 Aug to 7 Sep 1942, Alam el Halfa: Desert Victory 00:11:40 to 00:12:15.
@@ -223,6 +250,8 @@ Usable shots by calendar day across every film on hand. "Verify" means the film 
 * 3 Sep 1944, Brussels: True Glory R6 00:06:54 to 00:07:30.
 * 8 Sep 1941, Leningrad blockade closes; Badayev warehouses fire (verify): LF 00:16:40 to 00:18:10; BoR Part 2 00:14:27 to 00:17:48.
 * 11 to 12 Sep 1944, first Allied troops into Germany: True Glory R6 00:07:30 to 00:07:45.
+* 11 to 22 Sep 1944, the Americans reach the Siegfried Line: Siegfried Line reel 428-NPC-13442 00:00:57 to 00:01:12 (low aerial along the dragon's teeth), 00:03:26 to 00:03:41 (shell pocked pillbox); slated 22 Sep.
+* **18 Sep 1944, Brest surrenders:** Brest reel 111-ADC-2350 00:05:14 to 00:05:34 (the German paratroop colonel surrenders with a salute), 00:01:21 to 00:01:36 (German officers shake hands), 00:09:09 to 00:09:27 (hundreds of prisoners).
 * 17 Sep 1944, Market Garden: True Glory R7 00:01:24 to 00:03:06.
 * 17 Sep 1945, Belsen trial opens: GS World in Film 43 00:04:48 to 00:05:44 (Welt im Film, clear first).
 * 18 Sep 1931, Mukden Incident: KYEJ R2 23:54 to 24:24, caution only; a headline works better.
@@ -233,6 +262,8 @@ Usable shots by calendar day across every film on hand. "Verify" means the film 
 
 **October**
 * 5 to 6 Oct 1943, the Navy raid on Wake (likely; verify): Wake reel 00:02:10 to 00:02:34.
+* 7 Oct 1944, first Me 262s shot down by USAAF fighters (as November gun camera, never as that kill): Fighter Kills 111-ADC-10508 00:02:31 to 00:02:39.
+* **15 to 21 Oct 1944, Aachen:** Aachen reel 111-ADC-2655 00:02:45 to 00:03:03 (tanks firing down a smoke filled street), 00:05:48 to 00:05:57 (tank destroyer in the rubble), 00:01:00 to 00:01:09 (shot up Nazi newspaper sign). Filmed 15 Oct, mid battle; for the 21 Oct surrender say so.
 * 26 to 27 Oct 1942, Santa Cruz; Hornet survivors moved by breeches buoy: Wake and Santa Cruz reel 00:02:52 to 00:05:46.
 * 24 Oct 1945, UN Day (Charter in force), signing footage labeled June 1945: San Francisco 1945 R2 03:51 to 04:03.
 * 1 Oct 1946, Nuremberg verdicts: GS 1948 film R8 00:05:04 to 00:05:56, 00:09:28 to 00:10:04; GS 111-ADC-10021.
@@ -259,6 +290,7 @@ Usable shots by calendar day across every film on hand. "Verify" means the film 
 * 14 Nov 1940, Coventry: Battle of Britain R5 07:02 to 08:30.
 * 20 Nov 1943, Tarawa cloud copy (when Source Film is out of reach): Tarawa Navy reel 428-NPC-12205 07:12 to 08:05 (Betio under bombardment), 08:28 to 09:45 (run in), 10:53 to 11:07 (amtrac 67).
 * 1 Nov 1944, Walcheren: True Glory R7 00:03:51 to 00:04:27.
+* 2, 26 and 27 Nov 1944, big fighter battles over Germany (USAAF gun camera, November 1944): Fighter Kills 111-ADC-10508 00:06:09 to 00:06:27 (Fw 190 at point blank range), 00:05:17 to 00:05:21, 00:04:00 to 00:04:18 (train strafed).
 * 2 Nov 1942, Supercharge (natural tank battle sound at 00:44:54): Desert Victory 00:42:19 to 00:48:40.
 * 3 and 6 Nov 1943, Kyiv offensive; Kyiv liberated: RBU 00:09:30 to 00:11:50, 00:11:50 to 00:13:50.
 * 4 Nov 1942, Rommel's retreat: Desert Victory 00:49:48 to 00:52:53.
@@ -289,7 +321,7 @@ Usable shots by calendar day across every film on hand. "Verify" means the film 
 * **7 Dec 1941, Pearl Harbor, aftermath** (with the Japanese launch film): Pearl Harbor damage 00:03:33 to 00:03:47 (Arizona, not named by NARA), 00:03:50 to 00:04:10, 00:01:26 to 00:01:40. Nine War Gods portraits 00:00:28 to 00:01:13 (captured Japanese film).
 * 8 to 25 Dec 1941, Hong Kong attacked, landed on, surrenders (Japanese film): Nine War Gods 00:04:04 to 00:07:13.
 * **16 Dec 1944, the Bulge:** The Enemy Strikes 06:30 to 06:58 (withdrawal, supplies), 08:12 to 08:51 (winter line); the attack itself is German film only.
-* 23 Dec 1944, skies clear over the Bulge: The Enemy Strikes 07:54 to 08:10 (natural sound 08:00 to 08:30); Bulge Signal Corps reel 111-ADC-9670 07:20 to 07:39.
+* 23 Dec 1944, skies clear over the Bulge: The Enemy Strikes 07:54 to 08:10 (natural sound 08:00 to 08:30); Bulge Signal Corps reel 111-ADC-9670 07:20 to 07:39; December gun camera, a German pilot bails out over snow, Fighter Kills 111-ADC-10508 00:08:25 to 00:08:38, Bf 109 fireball 00:07:58 to 00:08:03.
 * 29 Dec 1940, the London fire raid (verify): Battle of Britain R6 01:42 to 04:28, St Paul's in smoke R6 04:22 to 04:28.
 * 13 Dec 1939, Battle of the River Plate: **no free film** (all commercial newsreel). Make it a Story Card from public domain Graf Spee photos (AWM has them).
 * 4 Dec 1945, Shawcross opens the British case at Nuremberg: GS 1948 film R3 00:05:08 to 00:05:36.
@@ -328,7 +360,11 @@ Usable shots by calendar day across every film on hand. "Verify" means the film 
 * Japan at home: KYEJ (the Diet R2 01:12 to 01:26; war industry R2 05:24 to 06:00, 21:30 to 22:16).
 * Nuremberg defendants as a "then" image for Jodl or Keitel stories: GS 111-ADC-9759 00:00:59 to 00:01:16; 111-ADC-1919 00:06:15 to 00:07:21.
 * Blitz, any date Sep 1940 to May 1941: Battle of Britain R4 00:45 to 01:35, R5 00:50 to 02:11, R6 04:30 to 05:09.
-* Blueprint, U-boat interior (Type IXC): U-505 interior reel 00:00:18, 00:04:18.
+* Blueprint, U-boat interior (Type IXC): U-505 interior reel 00:00:18, 00:04:18. Type IX casing and tower close: 428-NPC-12592 00:10:35 to 00:10:53, 428-NPC-12132 00:02:51 to 00:03:00.
+* Blueprint, the Me 262 and its Jumo engine: Innsbruck 111-ADC-4524 00:00:58 to 00:01:08, 00:02:09 to 00:02:15. The Me 163 in American gun sights: 111-ADC-10508 00:01:03 to 00:01:08, 00:03:21 to 00:03:38.
+* Blueprint, the V-2 and its engine (as "the same rocket, fired in New Mexico"): 428-NPC-10804 00:00:06 to 00:00:17, 00:02:36 to 00:02:53.
+* Blueprint, the Westwall: Siegfried Line reel 00:02:33 to 00:02:50, 00:04:52 to 00:05:10.
+* Axis lens, German prisoners in Allied hands (any 1944 to 1945 date, labeled with place and date): German prisoners 1945, Brest, Cologne 3535, U-boat crews.
 * Memorial and Remembrance days: True Glory R9 00:07:24 to 00:07:47.
 
 ## Inside these films: never use
@@ -337,6 +373,7 @@ Each index lists exact times. The rules in short:
 * **Staged and reconstructed shots.** The Pinewood close ups in the Alamein barrage. Tunisian Victory's reenactments. Most of Ford's Midway carrier sequence. The Nanking atrocity reenactments in The Battle of China. The Reichstag flag scenes in Berlin. Brought to Action's staged Japanese officers, the reconstructed submarine attack, and its studio inserts. Japanese feature film in Know Your Enemy: Japan (samurai dramas, studio soldiers, miniatures). Posed inserts in Attack! (documents, watches, journals).
 * **Feature film clips.** The Battle of Russia's history section (Part 1 00:02:00 to 00:06:43).
 * **Graphic material.** Bodies are never shown (Nuremberg evidence film, the Iwo Jima reel 00:02:57 to 00:03:14, the atrocity stretches listed in each index). Camp and massacre film only on a somber dispatch, with care.
+* **German camera inside an Allied reel:** Fighter Kills 111-ADC-10508 00:02:40 to 00:02:49 and 00:03:39 to 00:03:53 (and 00:02:54 to 00:03:20, unclear); the Hitler snapshot in 111-ADC-9795 05:06 to 05:26. Mauthausen bodies in 111-ADC-4326 07:15 to 07:53, never.
 * **Third party additions.** The IHF Sevastopol copy (©, subtitles, logo); the TV logo and watermark on the Victory Parade copy. Crop, or find a better copy.
 * **Added sound.** Midway, Memphis Belle, the Japanese reels, the Iwo Jima, Doolittle and Lexington reels have no location sound; every clip is picture only.
 
@@ -351,6 +388,8 @@ Each index lists exact times. The rules in short:
 **Soviet film, rights basis:** Commons files tagged **PD-Russia-1996** (a studio film made 1929 to 1946) are public domain in Russia and the U.S. **Only that tag counts**; a plain "PD-Russia" tag does not. Treat all Soviet narration as propaganda; facts come only from the fact sheet. **Never use "Tragedy in the Katyn Forest" (1944)** except as an example of propaganda.
 
 **Leads not yet indexed**
+* **German military round two:** `claude/film-index/german-military-allied-film-leads.md` lists 20 more Signal Corps and Navy reels found on 6 Nov 2026 (a knocked out Tiger at Marticina, Kurtscheid prisoners, Varsity, the Caserta surrender, the Elbe meeting, Eschweiler, the V-1 battery, the Ludendorff collapse, Ramcke's surrender, Prinz Eugen at Bikini, Nuremberg rushes).
+* **The Cologne cathedral tank duel** (Jim Bates, 6 Mar 1945): checked and not in 111-ADC-1955, 3508, 9703, 9704 or 3535. Try 111-ADC-3530 (naId 17333) next.
 * **Waiting in Source Film:** nine films Brian saved on 5 Nov 2026 (Orel 1943, the Moscow prisoner march, Nikolaev, Christmas Under Fire, and four AWM films: Tobruk 1941, Balikpapan, the Tokyo surrender, Yamashita's surrender). See `claude/film-index/pending-source-film.md`.
 * **To the Shores of Iwo Jima** (80-MN-5124, naId 13089, 4.3 GB): indexing was started on 5 Nov 2026 and stopped before it finished. Run again before 19 Feb.
 * **More found 5 Nov 2026:** `claude/film-index/leads-2026-11-05.md` (NARA, unindexed: Hiroshima and Nagasaki surveys, Saipan, Peleliu, Sicily, Salerno, Guadalcanal, the bombing of London, Fighting Lady reels, Japanese Relocation, Normandy Navy reels) and `claude/film-index/commonwealth-sources.md` (Australian War Memorial public domain actuality and British Crown films).
@@ -383,6 +422,7 @@ When research or a Project chat finds a film worth keeping (one that covers seve
 5. Add the film to "On hand" and its dates to the Calendar here, and log it below.
 
 ## Changelog
+* 6 Nov 2026 (later): Indexed 28 NARA reels showing the German military on Allied film as 17 index docs, with no German newsreel: Cologne (5 reels), Brest, the Seine crossing, Aachen, German prisoners 1945 (Ruhr pocket, Müden, Roetgen), Tunisia 1943, the Tiger wrecks near Massa Marittima, Remagen, the Reims surrender, German leaders in custody (Goering, Kesselring), the Innsbruck Me 262s, USAAF Fighter Kills gun camera, the White Sands V-2, five U-boat surrender reels (U-858, U-873, U-805), and the Siegfried Line. Added them to On hand, the Calendar and Any date. Round two leads in `german-military-allied-film-leads.md`.
 * 6 Nov 2026: Cloud copies now go to `footage/` on Cloudflare R2 through `renderer/media.py` instead of the videos repo (Media Move doc). This doc now also has a copy in `docs/` in the cards repo, so the scheduled runs can read it; the film indexes stay Project only for now.
 * 5 Nov 2026: Indexed 21 more NARA reels as 16 index docs: The Battle of Britain, The Enemy Strikes and two Bulge Signal Corps reels, Pearl Harbor damage, Nine War Gods, the Missouri surrender, Anzio, Cassino, Yalta (5 reels), Potsdam (4), U-505 (2), Okinawa (2), San Francisco 1945, two Tarawa Navy reels, the Wake and Santa Cruz reel, and the Movietone Pearl Harbor reel (not usable). Found the Australian War Memorial as a public domain Commonwealth source. River Plate has no free film. To the Shores of Iwo Jima still to finish.
 * 1 Nov 2026 (later): Indexed 17 more: The Battle of China, Know Your Enemy: Japan, Brought to Action, the Iwo Jima flag raising (Genaust), the Doolittle launch, Lexington at Coral Sea, Attack! The Battle for New Britain, With the Marines at Tarawa, the German side pack (Reims, Karlshorst, Nuremberg, U-570), and eight Soviet films (Leningrad Fights, the 7 Nov 1941 parade, Right Bank Ukraine, Sevastopol, Berlin, the Victory Parade, Trophies of Great Battles, the Me 262). Calendar rebuilt with Eastern Front and Axis lens dates in every month. Sevastopol copy marked reference only. Then indexed Defeat of the German Armies near Moscow and Stalingrad from 240p copies (Stalingrad is the original Soviet release; its captured German stretches are flagged). German side index split into two docs.
