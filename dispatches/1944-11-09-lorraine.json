@@ -157,10 +157,41 @@
   "nations": [
    "US",
    "Germany"
-  ]
+  ],
+  "video": {
+   "kind": "Living Card",
+   "opening": "motion",
+   "sound": "silent"
+  }
  },
  "game": {
   "value": null,
   "branches": []
+ },
+ "video": {
+  "footage": "footage/1944-11-09-lorraine.mp4",
+  "focusX": 50,
+  "focusY": 50,
+  "sourceUrl": "https://catalog.archives.gov/id/16482",
+  "note": "U.S. Army Signal Corps film 111-ADC-2678 (NARA 16482), story LIB 537 'New Offensive', filmed 9 November 1944 near Delme in the XII Corps sector south of Metz, silent. U.S. government work, public domain (NARA's blanket 'possibly copyright' flag on 111-ADC reels). Clip from the research copy footage/1944-11-09-lorraine-reel.mp4 (3:20 to 7:30 of the NARA reel), leaving out the dead soldier at the start of the file: 0:10.2 to 0:13.7 a tank moves along a tree lined road; 0:17.0 to 0:19.5 armor and men by the road; 0:27.5 to 0:30.4 a GI fires a machine gun; 0:36.4 to 0:41.4 an infantry column moves up the road; 0:45.5 to 0:47.0 men of the 35th Division search German prisoners. Not the Moselle crossing at Koenigsmacker. Converted to square pixels.",
+  "hook": "Seven inches of rain. Patton attacked anyway."
+ },
+ "kit": {
+  "file": "kits/dispatch-047-kit.md",
+  "filmCaption": "U.S. Army Signal Corps film from near Delme, Lorraine, 9 November 1944, the second day of Patton's new offensive: tanks and infantry moving up, a machine gunner firing, and German prisoners searched. The weather was so bad his corps commander asked to postpone. Patton said attack, or name your successor.",
+  "youtubeTitle": "Patton Attacks in the Rain: Lorraine, 9 November 1944 #shorts",
+  "youtubeDescription": "On 8 November 1944, Lt. Gen. George S. Patton's Third Army opened a new offensive in Lorraine, aimed at Metz and the German border. The weather was so bad that Maj. Gen. Manton Eddy, commanding XII Corps, asked Patton to postpone. Patton told him to attack as scheduled or name his successor. The Germans thought the weather was too bad for an attack, so the assault caught them by surprise. Seven inches of rain fell in Lorraine that November, about twice the normal amount, and trench foot put almost as many men out of action that month as enemy fire. Third Army closed the ring around Metz on 19 November.\n\nThis is real U.S. Army Signal Corps film shot on 9 November 1944 near Delme, south of Metz: tanks and infantry moving up a tree lined road, a GI firing a machine gun, and men of the 35th Infantry Division searching German prisoners. The original film is silent.\n\nFilm: U.S. Army Signal Corps, 111-ADC-2678, U.S. National Archives (catalog.archives.gov/id/16482), public domain.\nSources: Christopher R. Gabel, The Lorraine Campaign: An Overview, September to December 1944, Combat Studies Institute, U.S. Army Command and General Staff College, 1985; Battle of Metz, Wikipedia; Lorraine campaign, Wikipedia.\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\n\n#Shorts #WW2 #OnThisDay #History",
+  "tiktokCaption": "His general asked to wait out the rain. Patton said attack, or name your successor. Real film, 9 Nov 1944. #WW2 #OnThisDay #History #Patton",
+  "thumbnailCheck": "Pass: first frame is a tank moving along a tree lined road toward the camera; at 2 seconds it is still rolling forward. Opening tagged \"motion\" from the frames at 0.3 and 2 seconds.",
+  "videoTime": "12:00 America/Denver",
+  "scheduled": "Buffer, all six channels, noon 9 Nov"
+ },
+ "buffer": {
+  "x_film": "6aed443ff3498efda7673d22",
+  "instagram_reel": "6aed444207f945cca93915a3",
+  "threads_film": "6aed444586fe9b83796bc491",
+  "facebook_film": "6aed4447f3498efda7673f44",
+  "youtube": "6aed444d86fe9b83796bc5ea",
+  "tiktok": "6aed444f7b7e47e8f403c319"
  }
 }

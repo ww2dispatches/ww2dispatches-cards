@@ -188,10 +188,41 @@
    "US",
    "Britain",
    "France"
-  ]
+  ],
+  "video": {
+   "kind": "Living Card",
+   "opening": "combat or firing",
+   "sound": "silent"
+  }
  },
  "game": {
   "value": null,
   "branches": []
+ },
+ "video": {
+  "footage": "footage/1942-11-08-torch.mp4",
+  "focusX": 50,
+  "focusY": 50,
+  "sourceUrl": "https://catalog.archives.gov/id/87706",
+  "note": "U.S. Navy film 428-NPC-44333 (NARA 87706), WW-II Navy Newsreel #30 on the North Africa landings, silent; individual shots are not dated. U.S. government work, public domain. Clip from the research copy footage/1942-11-08-torch-reel.mp4 (0:20 to 7:15 of the NARA reel): 0:41.3 to 0:46.0 shell splashes erupt in the sea; 0:48.5 to 0:51.0 a warship at sea, then a shell burst throws up a column of water; 1:16.0 to 1:20.5 a carrier plane takes off past the camera; 3:25.0 to 3:28.0 smoke pours from a wrecked ship in Casablanca harbor. Converted to square pixels.",
+  "hook": "Nobody knew if the French would fight. They did."
+ },
+ "kit": {
+  "file": "kits/dispatch-045-kit.md",
+  "filmCaption": "U.S. Navy film of the Operation Torch landings in North Africa, November 1942: shell splashes off the coast, carrier planes taking off, and wrecked ships in Casablanca harbor. About 107,000 Allied troops took part, and nobody knew whether Vichy France would fight.",
+  "youtubeTitle": "Operation Torch: Navy Film of the North Africa Landings, 1942 #shorts",
+  "youtubeDescription": "In the early morning darkness of 8 November 1942, American and British troops began landing in French North Africa in Operation Torch. About 107,000 Allied troops took part, landing around Casablanca in French Morocco and at Oran and Algiers in Algeria. The defenders were the forces of Vichy France, and nobody knew for certain whether they would fight. They did, hardest of all around Casablanca. It was the U.S. Army's first large scale amphibious landing under hostile fire. Most of the fighting was over within three days, and Casablanca surrendered on 11 November.\n\nThis is real U.S. Navy newsreel film of the landings: shell splashes off the coast, carrier planes taking off, and wrecked ships in Casablanca harbor. Individual shots are not dated. The original film is silent.\n\nFilm: U.S. Navy, WW-II Navy Newsreel #30, 428-NPC-44333, U.S. National Archives (catalog.archives.gov/id/87706), public domain.\nSources: Operation Torch, Wikipedia; Learning the Lessons of Victory (Operation TORCH), U.S. Army; Naval Battle of Casablanca, Wikipedia; Operation Torch, Encyclopaedia Britannica; French battleship Jean Bart (1940), Wikipedia.\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\n\n#Shorts #WW2 #OnThisDay #History",
+  "tiktokCaption": "107,000 troops, three landings, one dawn. Nobody knew if the French would fight. They did. Navy film of Operation Torch, Nov 1942. #WW2 #OnThisDay #History #OperationTorch",
+  "thumbnailCheck": "Pass: first frame is shell splashes erupting across the sea; at 2 seconds more splashes are rising. Opening tagged \"combat or firing\" from the frames at 0.3 and 2 seconds.",
+  "videoTime": "12:00 America/Denver",
+  "scheduled": "Buffer, all six channels, noon 8 Nov"
+ },
+ "buffer": {
+  "x_film": "6aed440307f945cca9390a37",
+  "instagram_reel": "6aed4406dbada656beec6cf2",
+  "threads_film": "6aed4409c1e74b84e5c1eaa8",
+  "facebook_film": "6aed440bdbada656beec6e36",
+  "youtube": "6aed441186fe9b83796bbaff",
+  "tiktok": "6aed441386fe9b83796bbb4a"
  }
 }

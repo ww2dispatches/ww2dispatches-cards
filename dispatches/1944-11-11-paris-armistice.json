@@ -152,11 +152,42 @@
   "nations": [
    "Britain",
    "France"
-  ]
+  ],
+  "video": {
+   "kind": "Living Card",
+   "opening": "motion",
+   "sound": "silent"
+  }
  },
  "game": {
   "value": null,
   "branches": [],
   "keyword": null
+ },
+ "video": {
+  "footage": "footage/1944-11-11-paris-armistice.mp4",
+  "focusX": 50,
+  "focusY": 50,
+  "sourceUrl": "https://catalog.archives.gov/id/16465",
+  "note": "U.S. Army Signal Corps film 111-ADC-2661 (NARA 16465), 'Armistice Parade, Paris, France', filmed 11 November 1944; the NARA copy's audio track is effectively silent. U.S. government work, public domain (NARA's blanket 'possibly copyright' flag on 111-ADC reels). Clip from the research copy footage/1944-11-11-paris-armistice-reel.mp4 (0:40 to 6:20 of the NARA reel): 0:12.0 to 0:17.0 the leaders' open cars drive up to the Arc; 0:43.0 to 0:47.0 cars and motorcycle escort push through the crowd with flags; 2:00.0 to 2:03.0 salutes at the Arc de Triomphe with the tricolor; 4:52.0 to 4:55.0 the party walks through the crowd after the ceremony. Converted to square pixels.",
+  "hook": "His cabinet tried to keep Churchill away."
+ },
+ "kit": {
+  "file": "kits/dispatch-051-kit.md",
+  "filmCaption": "U.S. Army Signal Corps film from Paris, Armistice Day, 11 November 1944. The open cars of Churchill and de Gaulle drive up to the Arc de Triomphe through cheering crowds, less than three months after the city was freed.",
+  "youtubeTitle": "Churchill and de Gaulle in Free Paris: Armistice Day 1944 #shorts",
+  "youtubeDescription": "On 11 November 1944, Armistice Day, Winston Churchill and General Charles de Gaulle rode together up the Champs-Elysees in Paris, less than three months after the city was freed from German occupation. Some members of Churchill's cabinet had tried to talk him out of going, since German stragglers were thought to be hiding in the city. Parisians packed the sidewalks, windows, and rooftops, chanting \"Vive de Gaulle! Vive Churchill!\" At the Arc de Triomphe, the two men laid a wreath at the Tomb of the Unknown Soldier and stood at the salute through a minute of silence, then walked through the crowd to watch an hour long parade.\n\nThis is real U.S. Army Signal Corps film of the day: the leaders' cars arriving with a motorcycle escort, the crowds and flags, the salute at the Arc, and the party walking through the crowd. The original film is silent.\n\nFilm: U.S. Army Signal Corps, 111-ADC-2661, U.S. National Archives (catalog.archives.gov/id/16465), public domain.\nSources: Churchill in Paris, Armistice Day 1944, The Churchill Project, Hillsdale College; Wild with joy, New Zealand Herald, 13 November 1944, Papers Past, National Library of New Zealand; Provisional Government of the French Republic, Wikipedia.\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\n\n#Shorts #WW2 #OnThisDay #History",
+  "tiktokCaption": "His cabinet tried to keep him away. Churchill rode into free Paris anyway. Real film, Armistice Day 1944. #WW2 #OnThisDay #History #VeteransDay",
+  "thumbnailCheck": "Pass: first frame is the leaders' open car driving toward the camera across the square by the Arc, with the crowd behind; at 2 seconds the car is closer and a second car follows. Opening tagged \"motion\" from the frames at 0.3 and 2 seconds.",
+  "videoTime": "12:00 America/Denver",
+  "scheduled": "Buffer, all six channels, noon 11 Nov"
+ },
+ "buffer": {
+  "x_film": "6aed447ec1e74b84e5c20d15",
+  "instagram_reel": "6aed448107f945cca93925a0",
+  "threads_film": "6aed4484c1e74b84e5c212e9",
+  "facebook_film": "6aed448607f945cca9392758",
+  "youtube": "6aed448cdbada656beec8bf1",
+  "tiktok": "6aed448edbada656beec8c61"
  }
 }

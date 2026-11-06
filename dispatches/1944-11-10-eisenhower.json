@@ -157,10 +157,41 @@
   ],
   "nations": [
    "US"
-  ]
+  ],
+  "video": {
+   "kind": "Living Card",
+   "opening": "motion",
+   "sound": "silent"
+  }
  },
  "game": {
   "value": null,
   "branches": []
+ },
+ "video": {
+  "footage": "footage/1944-11-10-eisenhower.mp4",
+  "focusX": 50,
+  "focusY": 50,
+  "sourceUrl": "https://catalog.archives.gov/id/16478",
+  "note": "U.S. Army Signal Corps film 111-ADC-2674 (NARA 16478), stories LIB 511 (Herzogenrath, Germany) and LIB 512 (Eigelshoven, Netherlands), filmed 10 November 1944, silent. U.S. government work, public domain (NARA's blanket 'possibly copyright' flag on 111-ADC reels). Clip from the research copy footage/1944-11-10-eisenhower-reel.mp4 (3:10 to 7:10 of the NARA reel): 0:13.0 to 0:16.0 Eisenhower's jeep drives up; 0:18.0 to 0:22.0 he climbs out and is greeted at Herzogenrath; 3:13.0 to 3:16.0 29th Division troops gathered in a wood; 3:24.0 to 3:29.0 close shot of Eisenhower among the troops. Converted to square pixels.",
+  "hook": "These men were about to attack toward the Roer."
+ },
+ "kit": {
+  "file": "kits/dispatch-049-kit.md",
+  "filmCaption": "U.S. Army Signal Corps film, 10 November 1944. Eisenhower's jeep pulls up at Herzogenrath, Germany, and the Supreme Allied Commander climbs out to greet his generals, then walks a muddy wood to talk with men of the 29th Infantry Division.",
+  "youtubeTitle": "Eisenhower at the Front: Real Film, 10 November 1944 #shorts",
+  "youtubeDescription": "On 10 November 1944, Gen. Dwight D. Eisenhower, the Supreme Allied Commander, went to the front lines of the U.S. Ninth Army on the German and Dutch border. At Herzogenrath, Germany, he climbed out of his jeep, pulled off his raincoat, and was greeted by Maj. Gen. Leland Hobbs of the 30th Infantry Division. Near Eigelshoven in the Netherlands, he walked a muddy wood to talk with men of the 29th Infantry Division. These were the men about to make Operation Queen, the big push toward the Roer River, which opened on 16 November with one of the heaviest air attacks of the war in support of ground troops.\n\nThis is real U.S. Army Signal Corps film of the visit, shot on 10 November 1944: his jeep arriving, Eisenhower greeting the generals, and Eisenhower among the troops in the wet woods. The original film is silent.\n\nFilm: U.S. Army Signal Corps, 111-ADC-2674, U.S. National Archives (catalog.archives.gov/id/16478), public domain.\nSources: Operation Queen, Wikipedia.\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\n\n#Shorts #WW2 #OnThisDay #History",
+  "tiktokCaption": "The Supreme Allied Commander, in the mud with the men about to attack toward the Roer. Real film, 10 Nov 1944. #WW2 #OnThisDay #History #Eisenhower",
+  "thumbnailCheck": "Pass: first frame is Eisenhower's jeep driving up a muddy track toward the camera; at 2 seconds the jeep fills the frame as it pulls in. Opening tagged \"motion\" from the frames at 0.3 and 2 seconds.",
+  "videoTime": "12:00 America/Denver",
+  "scheduled": "Buffer, all six channels, noon 10 Nov"
+ },
+ "buffer": {
+  "x_film": "6aed446286fe9b83796bcad3",
+  "instagram_reel": "6aed4464f3498efda7674b6a",
+  "threads_film": "6aed44677b7e47e8f403ceb0",
+  "facebook_film": "6aed446907f945cca9392210",
+  "youtube": "6aed446fdbada656beec84ec",
+  "tiktok": "6aed4471dbada656beec8546"
  }
 }
