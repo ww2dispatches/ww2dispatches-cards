@@ -326,6 +326,7 @@ button:focus-visible,.env:focus-visible{outline:3px solid var(--brass);outline-o
 @keyframes glowb{0%{opacity:0;transform:scale(.6) rotate(0deg)}15%{opacity:1}100%{opacity:0;transform:scale(1.4) rotate(40deg)}}
 .foot{font-family:var(--type);font-size:11px;color:var(--mute);text-align:center;margin-top:22px;line-height:1.6}
 .foot button{font:inherit;color:var(--navy);text-decoration:underline;background:none;border:0;cursor:pointer;padding:0}
+.foot.co{margin-top:14px;padding-bottom:18px} /* company line at the very bottom (6 Nov 2026) */
 @media (prefers-reduced-motion:reduce){*{transition:none!important}.glow{animation:none!important;opacity:0!important}}
 
 /* session 5: sound toggles, share, sets, delete, file check, tilt */
