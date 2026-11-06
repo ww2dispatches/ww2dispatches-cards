@@ -139,10 +139,10 @@
  ],
  "kind": "living",
  "film": {
-  "status": "needs brian",
+  "status": "secured",
   "record": "Australian War Memorial C189542, No. 463 Squadron RAAF film (Wikimedia Commons)",
   "url": "https://commons.wikimedia.org/wiki/File:Operation-Catechism-RAF-sinks-Tirpitz.webm",
-  "file": "",
+  "file": "footage/1944-11-12-tirpitz.mp4 in the videos repo (cut 5 Nov 2026 from the Source Film copy)",
   "sound": false,
   "shot_notes": "Film of Operation Catechism shot from a No. 463 Squadron RAAF film aircraft on 12 November 1944: the attack and the destruction of the battleship. 3 min 39 s, 632 x 480, WebM (VP9). The current Commons version (18 March 2025) is flipped horizontally from the original and has the Operation Paravane footage cut from the start. Download the original file (small enough, no transcode needed): https://upload.wikimedia.org/wikipedia/commons/b/b5/Operation-Catechism-RAF-sinks-Tirpitz.webm . Sound not confirmed; check on cutting. Strong shots not yet logged; open on bomb bursts or the ship under smoke. Brian saved the WebM into WW2 Dispatches\\Source Film as 1944-11-12-tirpitz.webm on 5 Nov 2026; Claude cuts the Living Card in the Project with his computer linked.",
   "license": "Public domain, Australian Crown copyright expired (PD-AustraliaGov per Commons, AWM C189542)",
@@ -166,10 +166,34 @@
    "Britain",
    "Germany",
    "Australia"
-  ]
+  ],
+  "video": {
+   "kind": "Living Card",
+   "opening": "combat or firing",
+   "sound": "silent"
+  }
  },
  "game": {
   "value": null,
   "branches": []
+ },
+ "video": {
+  "footage": "footage/1944-11-12-tirpitz.mp4",
+  "focusX": 50,
+  "focusY": 40,
+  "sound": false,
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Operation-Catechism-RAF-sinks-Tirpitz.webm",
+  "note": "Operation Catechism, film shot from a No. 463 Squadron RAAF film aircraft during the raid of 12 November 1944, Australian War Memorial C189542 (Wikimedia Commons, original 3 min 39 s WebM, 632 x 480, silent; saved by Brian in Source Film as Operation-Catechism-RAF-sinks-Tirpitz.webm). Clip uses 2:24.0 to 2:32.0 (Tallboy bursts erupting on the shore beside the smoke over the ship, new columns rising) and 2:39.5 to 2:47.0 (the bursts growing into towering smoke columns over the anchorage). Cropped to remove the film edges and the blurred frame counter burned in at the bottom. The ship herself is hidden under the smoke in these shots. No sound track in the source, so the clip runs silent.",
+  "hook": "Britain had tried for years to sink her."
+ },
+ "kit": {
+  "file": "kits/dispatch-053-kit.md",
+  "filmCaption": "Film shot from a No. 463 Squadron RAAF aircraft over Tromso, Norway, on 12 November 1944. Each Lancaster carried one Tallboy, a 12,000 pound bomb, and here they burst around the Tirpitz as she lies hidden under the smoke. Within minutes she was listing hard, and after a magazine exploded she rolled over and capsized. Australian film, Australian War Memorial.",
+  "youtubeTitle": "Sinking the Tirpitz: Real Film of the Tallboy Raid, 12 November 1944 #shorts",
+  "youtubeDescription": "On the morning of 12 November 1944, RAF Lancasters of No. 9 and No. 617 Squadrons, led by Wing Commander J. B. Tait, attacked the German battleship Tirpitz near Tromso, in the far north of Norway. Each bomber carried a single Tallboy, a 12,000 pound deep penetration bomb. They scored at least two direct hits and more near misses. The run began at 09:35. Within minutes the ship was listing hard, and after a magazine exploded she rolled over and capsized. Somewhere between about 950 and 1,204 German sailors died; 82 men trapped inside the upturned hull were cut free through her bottom.\n\nTirpitz had hardly fought, but simply by existing she forced the Royal Navy to keep powerful forces in home waters. Britain had tried for years to sink her: midget submarines in September 1943, carrier dive bombers in April 1944, and Lancasters with Tallboys in September 1944. With Tirpitz gone, the last German battleship threat to the Arctic convoys and the North Atlantic was over.\n\nThis is real film of the raid, shot by an Australian film crew flying with No. 463 Squadron RAAF: Tallboys bursting around the ship as she lies under the smoke. The original film is silent.\n\nFilm: Operation Catechism, No. 463 Squadron RAAF, Australian War Memorial C189542. Australian Crown copyright expired, public domain (Wikimedia Commons).\nSources: German battleship Tirpitz, Wikipedia; Target the Tirpitz, RAF Museum; List of Allied attacks on the German battleship Tirpitz, Wikipedia; Sinking of the Battleship Tirpitz, Bomber Command Museum of Canada.\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\n\n#Shorts #WW2 #OnThisDay #History",
+  "tiktokCaption": "Britain spent years trying to sink her. Real film from the Lancaster raid on the Tirpitz, 12 November 1944. #WW2 #OnThisDay #History #Tirpitz #RAF",
+  "thumbnailCheck": "Pass: the first frame shows a Tallboy burst flashing on the shore beside a towering smoke cloud over the anchorage; by 2 seconds a second burst has erupted on the beach. Opening tagged \"combat or firing\" from the frames at 0.3 and 2 seconds.",
+  "videoTime": "12:00 America/Denver",
+  "scheduled": "Not yet: rendered 5 Nov, waiting on the videos repo push before Buffer"
  }
 }
