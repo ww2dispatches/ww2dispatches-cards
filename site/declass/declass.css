@@ -211,7 +211,7 @@ button:focus-visible,.env:focus-visible{outline:3px solid var(--brass);outline-o
 .ph img{opacity:0;transition:opacity .25s}.ph img.ok{opacity:1}
 /* The same DECLASSIFYING face on small pictures (dossier grids, the tray, the share picker), 5 Nov 2026 */
 .ph{position:relative;display:block;container-type:inline-size}
-.ph::before{content:'DECLASSIFYING';position:absolute;left:0;right:0;top:0;aspect-ratio:4/5;box-sizing:border-box;display:grid;place-items:center;font-family:'Special Elite',monospace;font-size:7.4cqw;letter-spacing:.08em;color:#8a7c63;border:3px solid #6a5c4a;background:repeating-linear-gradient(135deg,#e9dfc8 0 8px,#e2d6bb 8px 16px);animation:dcl 1.4s ease-in-out infinite;pointer-events:none}
+.ph::before{content:none;position:absolute;left:0;right:0;top:0;aspect-ratio:4/5;box-sizing:border-box;display:grid;place-items:center;font-family:'Special Elite',monospace;font-size:7.4cqw;letter-spacing:.08em;color:#8a7c63;border:3px solid #6a5c4a;background:repeating-linear-gradient(135deg,#e9dfc8 0 8px,#e2d6bb 8px 16px);animation:dcl 1.4s ease-in-out infinite;pointer-events:none}
 .ph.fl::before{border:0;border-radius:6px}
 .ph:has(img.ok)::before{content:none}
 .ph:has(img.bad)::before{content:'UNAVAILABLE';animation:none}
