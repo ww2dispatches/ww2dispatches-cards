@@ -149,10 +149,11 @@
 
   // ---------- card pictures that fail to load (28 Oct 2026) ----------
   // A phone on a weak signal sometimes drops a card picture, leaving the alt text and a broken icon until
-  // the card is redrawn. Retry it twice, then fetch the same file straight from GitHub.
+  // the card is redrawn. Retry it twice, then fetch the same file straight from GitHub. Video posters on
+  // media.ww2dispatches.com (R2, since 6 Nov 2026) get the same two retries; they have no GitHub copy.
   document.addEventListener('error', e => {
     const im = e.target;
-    if (!(im instanceof HTMLImageElement) || !/cdn\.jsdelivr\.net\/gh\/ww2dispatches\//.test(im.src)) return;
+    if (!(im instanceof HTMLImageElement) || !/cdn\.jsdelivr\.net\/gh\/ww2dispatches\/|^https:\/\/media\.ww2dispatches\.com\//.test(im.src)) return;
     const n = +(im.dataset.retry || 0);
     im.classList.remove('ok');
     if (n >= 3) { im.classList.add('bad'); return; }
