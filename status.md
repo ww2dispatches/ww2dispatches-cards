@@ -13,7 +13,7 @@ Verified evergreen dispatches ready to drop into a day with no usable photo (aim
 * (empty)
 
 ## Video bank
-Finished noon videos not yet scheduled (aim for 3 to 5). One line each: file in ww2dispatches-videos, dispatch, kind.
+Finished noon videos not yet scheduled (aim for 3 to 5). One line each: file on R2 (videos/...), dispatch, kind.
 * (empty)
 
 ## Pending one time jobs

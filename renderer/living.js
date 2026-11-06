@@ -7,6 +7,9 @@
 //   dispatch-NNN-x.mp4 (1600 x 1440), dispatch-NNN-instagram.mp4 (1080 x 1350, Instagram and Facebook),
 //   dispatch-NNN-threads.mp4 (1080 x 1350, taller bottom strip for the Threads mute button), dispatch-NNN-vertical.mp4 (1080 x 1920)
 // Add --only=x,threads to render just those shapes (the other files are left as they are).
+// Every finished video and poster is uploaded to R2 (media.ww2dispatches.com) by renderer/media.py, which never
+// overwrites: a re-render goes up as dispatch-NNN-<kind>-r2.mp4 and so on, and media-keys.json records it.
+// The footage clip is fetched from R2 when it is not already in footage/. Add --no-upload for a local test render.
 const { chromium } = require("playwright");
 const { execFileSync } = require("child_process");
 const fs = require("fs");
@@ -15,6 +18,14 @@ const path = require("path");
 
 const ROOT = path.resolve(__dirname, "..");
 const CHROME = process.env.CHROME_PATH || "/opt/pw-browsers/chromium-1194/chrome-linux/chrome";
+const NO_UPLOAD = process.argv.includes("--no-upload");
+const MEDIA = path.join(__dirname, "media.py");
+// Upload one file to R2 and return its public URL (a new name if that path already holds different bytes).
+function upload(file) {
+  if (NO_UPLOAD) return null;
+  return execFileSync("python3", [MEDIA, "put", path.relative(ROOT, file)], { cwd: ROOT, stdio: ["ignore", "pipe", "inherit"] })
+    .toString().trim();
+}
 // Same tone as the still cards: CSS sepia(.12), contrast(1.04)
 const TONE = "colorchannelmixer=.927:.092:.023:0:.042:.962:.020:0:.033:.064:.896,eq=contrast=1.04";
 
@@ -32,6 +43,7 @@ const TONE = "colorchannelmixer=.927:.092:.023:0:.042:.962:.020:0:.033:.064:.896
     const d = JSON.parse(fs.readFileSync(path.join(ROOT, "dispatches", id + ".json"), "utf8"));
     if (!d.video) { console.error(id, "has no video block"); continue; }
     const src = path.join(ROOT, d.video.footage);
+    if (!fs.existsSync(src)) execFileSync("python3", [MEDIA, "get", d.video.footage], { cwd: ROOT, stdio: ["ignore", "ignore", "inherit"] });
     const fx = (d.video.focusX ?? 50) / 100, fy = (d.video.focusY ?? 50) / 100;
     const out = await page.evaluate(p => window.renderOverlays(p), d);
     const dur = execFileSync("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", src]).toString().trim();
@@ -57,8 +69,10 @@ const TONE = "colorchannelmixer=.927:.092:.023:0:.042:.962:.020:0:.033:.064:.896
         "-c:v", "libx264", "-preset", "slow", "-crf", "20", "-profile:v", "high", "-r", "30",
         "-c:a", "aac", "-b:a", d.video.sound ? "160k" : "64k", "-movflags", "+faststart", file]);
       // First frame as a still, for checking the thumbnail
-      execFileSync("ffmpeg", ["-v", "error", "-y", "-i", file, "-frames:v", "1", "-q:v", "3", file.replace(/\.mp4$/, "-poster.jpg")]);
+      const poster = file.replace(/\.mp4$/, "-poster.jpg");
+      execFileSync("ffmpeg", ["-v", "error", "-y", "-i", file, "-frames:v", "1", "-q:v", "3", poster]);
       console.log("wrote", path.relative(ROOT, file));
+      for (const f of [file, poster]) { const u = upload(f); if (u) console.log("  on R2", u); }
     }
   }
   await browser.close();

@@ -12,14 +12,16 @@ Run from the repo root:  python3 renderer/catalog.py
 series_log.py runs this at the end, so every weekly run refreshes it on its own.
 Never edit catalog.json by hand; the JSON records in dispatches/ and namethis/ are the source.
 """
-import datetime, glob, hashlib, json, os
+import datetime, glob, hashlib, json, os, sys
 from zoneinfo import ZoneInfo
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import media  # videos and posters live on R2 (media.ww2dispatches.com); media.url() gives the newest copy
 
 LAUNCH_YEAR = 2026
 POST_TZ = ZoneInfo("America/Denver")  # Buffer posting times are Mountain
 SERIES = {"battle": "Battle Lines", "home": "Home Front", "blue": "Blueprint", "state": "Statecraft", "flash": "Flash"}
 CARDS_CDN = "https://cdn.jsdelivr.net/gh/ww2dispatches/ww2dispatches-cards@main/"
-VIDEOS_CDN = "https://cdn.jsdelivr.net/gh/ww2dispatches/ww2dispatches-videos@main/videos/"
 CARD_LINKS = {"x": "x", "instagram": "instagram", "threads": "threads", "facebook": "facebook"}
 FILM_LINKS = {"youtube": "youtube", "tiktok": "tiktok", "x": "x_film", "instagram": "instagram_reel",
               "threads": "threads_film", "facebook": "facebook_film"}
@@ -151,8 +153,8 @@ for d in dispatches:
         sound = ((d.get("themes") or {}).get("video") or {}).get("sound")
         film = {
             "postAt": utc(post_date, "12:00"),
-            "mp4": f"{VIDEOS_CDN}dispatch-{num}-instagram.mp4",
-            "poster": f"{VIDEOS_CDN}dispatch-{num}-instagram-poster.jpg",
+            "mp4": media.url(f"videos/dispatch-{num}-instagram.mp4"),
+            "poster": media.url(f"videos/dispatch-{num}-instagram-poster.jpg"),
             "caption": kit.get("filmCaption", ""),
             "sourceUrl": video.get("sourceUrl", ""),
             "sound": bool(video.get("sound")) or bool(sound and sound != "silent"),
@@ -170,7 +172,7 @@ for d in dispatches:
         if ph_url:
             dfile["photo"] = {"img": ph_url, "credit": ph.get("credit", ""), "caption": ph.get("caption", ""), "page": ph.get("page", "")}
         if d.get("story"):  # a Story Card: its narrated vertical video (Videos doc), from the noon post
-            dfile["video"] = {"postAt": utc(post_date, "12:00"), "mp4": f"{VIDEOS_CDN}dispatch-{num}-story-am_onyx.mp4"}
+            dfile["video"] = {"postAt": utc(post_date, "12:00"), "mp4": media.url(f"videos/dispatch-{num}-story-am_onyx.mp4")}
 
     catalog.append(merge_tags({
         "kind": "dispatch",

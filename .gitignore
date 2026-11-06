@@ -1,5 +1,5 @@
-# Videos and trimmed footage live in the ww2dispatches-videos repo (moved 18 Oct 2026).
-# Renderers still write here; copy finished files to that repo and commit them there.
+# Videos and trimmed footage live on Cloudflare R2 (media.ww2dispatches.com) since 6 Nov 2026.
+# Renderers write here and upload through renderer/media.py; never commit them to any repo.
 videos/*.mp4
 footage/*.mp4
 node_modules/

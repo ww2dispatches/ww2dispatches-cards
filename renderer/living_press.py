@@ -4,16 +4,24 @@
 Usage: python3 renderer/living_press.py <out_dir>
 Writes <out_dir>/living-press.html and copies the videos and posters into <out_dir>/videos/,
 ready to publish as a claude.ai artifact (the page plays the videos from its own published files).
+Videos and posters come from R2 (media.ww2dispatches.com): a matching local copy in videos/ is used as it is,
+anything else is downloaded into ~/.cache/ww2dispatches-media/, so no separate copy step is needed.
 """
 import json, re, shutil, subprocess, sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import media
+
 ROOT = Path(__file__).resolve().parent.parent
 RAW = "https://raw.githubusercontent.com/ww2dispatches/ww2dispatches-cards/main/"
 BLOB = "https://github.com/ww2dispatches/ww2dispatches-cards/blob/main/"
-# Videos live in the separate ww2dispatches-videos repo since 18 Oct 2026; clone it and copy its videos/ into
-# this repo's videos/ (ignored by git) before running this script.
-VIDEO_RAW = "https://raw.githubusercontent.com/ww2dispatches/ww2dispatches-videos/main/"
+
+
+def have(rel):
+    """Local path of the newest R2 copy of a repo-relative file (downloaded if needed), or None if it isn't on R2."""
+    got = media.get(rel, cache=True)  # never overwrites files tracked in this repo
+    return Path(got) if got else None
 
 
 def sections(md):
@@ -57,8 +65,9 @@ def main(out_dir):
         d = json.loads(f.read_text())
         stem = f"dispatch-{d['num']:03d}"
         st = d.get("story") or {}
-        story_mp4 = ROOT / st.get("video", f"videos/{stem}-story-am_onyx.mp4")
-        if st and story_mp4.exists():
+        story_rel = st.get("video", f"videos/{stem}-story-am_onyx.mp4")
+        story_mp4 = have(story_rel) if st else None
+        if story_mp4:
             dest = out / "videos" / story_mp4.name
             if story_mp4.stat().st_size > 14e6:
                 # Artifacts take at most 15 MB per file, so the page gets a lighter review copy; Buffer uses the full file.
@@ -73,7 +82,7 @@ def main(out_dir):
                 "approved": nice_date(sk.get("approved", "")),
                 "scheduled": sk.get("scheduled") or ("Scheduled on all six channels" if len(st.get("buffer", {})) >= 6 else ""),
                 "postDay": nice_date(d["date"])[:-5] if not st.get("postDate") else nice_date(st["postDate"]),
-                "videos": {"story": {"src": f"videos/{story_mp4.name}", "poster": "", "raw": VIDEO_RAW + f"videos/{story_mp4.name}",
+                "videos": {"story": {"src": f"videos/{story_mp4.name}", "poster": "", "raw": media.url(story_rel),
                                      "seconds": seconds(story_mp4), "mb": round(story_mp4.stat().st_size / 1e6, 1)}},
                 "kit": {"filmCaption": sk.get("caption", ""), "ytTitle": sk.get("youtubeTitle", ""),
                         "ytDesc": sk.get("youtubeDescription", ""), "tiktok": sk.get("tiktokCaption", ""),
@@ -81,19 +90,19 @@ def main(out_dir):
                 "source": {"url": "", "note": json.loads((ROOT / st["script"]).read_text()).get("note", "")} if st.get("script") else None,
                 "kitUrl": BLOB + st.get("script", ""),
             })
-        if not (ROOT / "videos" / f"{stem}-x.mp4").exists():
+        if not media.exists(f"videos/{stem}-x.mp4"):
             continue
         vids = {}
         for kind in ("x", "instagram", "vertical"):
-            mp4 = ROOT / "videos" / f"{stem}-{kind}.mp4"
-            poster = ROOT / "videos" / f"{stem}-{kind}-poster.jpg"
-            if not mp4.exists():
+            mp4 = have(f"videos/{stem}-{kind}.mp4")
+            poster = have(f"videos/{stem}-{kind}-poster.jpg")
+            if not mp4:
                 continue
             shutil.copy(mp4, out / "videos" / mp4.name)
-            if poster.exists():
+            if poster:
                 shutil.copy(poster, out / "videos" / poster.name)
-            vids[kind] = {"src": f"videos/{mp4.name}", "poster": f"videos/{poster.name}" if poster.exists() else "",
-                          "raw": VIDEO_RAW + f"videos/{mp4.name}", "seconds": seconds(mp4),
+            vids[kind] = {"src": f"videos/{mp4.name}", "poster": f"videos/{poster.name}" if poster else "",
+                          "raw": media.url(f"videos/{stem}-{kind}.mp4"), "seconds": seconds(mp4),
                           "mb": round(mp4.stat().st_size / 1e6, 1)}
         kitmeta = d.get("kit", {})
         kitfile = ROOT / kitmeta.get("file", f"kits/{stem}-kit.md")

@@ -3,6 +3,9 @@
 // Usage: node renderer/story.js <story-id> [voice]
 // Needs stories/<id>.json and narration from renderer/story_tts.py (stories/audio/<id>/<voice>/).
 // Output: videos/dispatch-NNN-story-<voice>.mp4 (1080 x 1920, 30 fps) for TikTok and YouTube Shorts.
+// The finished video is uploaded to R2 (media.ww2dispatches.com) by renderer/media.py, which never overwrites:
+// a re-render goes up as dispatch-NNN-story-<voice>-r2.mp4 and so on, and media-keys.json records it.
+// Add --no-upload for a local test render.
 const { chromium } = require("playwright");
 const { execFileSync } = require("child_process");
 const fs = require("fs");
@@ -89,7 +92,7 @@ function run(args) { execFileSync("ffmpeg", ["-loglevel", "error", "-y", ...args
 function save(dataUrl, file) { fs.writeFileSync(file, Buffer.from(dataUrl.split(",")[1], "base64")); }
 
 (async () => {
-  const [sid, voice = "am_onyx"] = process.argv.slice(2);
+  const [sid, voice = "am_onyx"] = process.argv.slice(2).filter(a => !a.startsWith("--"));
   const story = JSON.parse(fs.readFileSync(path.join(ROOT, "stories", sid + ".json"), "utf8"));
   const p = JSON.parse(fs.readFileSync(path.join(ROOT, "dispatches", story.dispatch + ".json"), "utf8"));
   const adir = path.join(ROOT, "stories", "audio", sid, voice);
@@ -148,4 +151,9 @@ function save(dataUrl, file) { fs.writeFileSync(file, Buffer.from(dataUrl.split(
   run(["-f", "concat", "-safe", "0", "-i", list, "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p",
     "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", outFile]);
   console.log("wrote", outFile);
-})();
+  if (!process.argv.includes("--no-upload")) {
+    const u = execFileSync("python3", [path.join(__dirname, "media.py"), "put", path.relative(ROOT, outFile)],
+      { cwd: ROOT, stdio: ["ignore", "pipe", "inherit"] }).toString().trim();
+    console.log("on R2", u);
+  }
+})().catch(e => { console.error(e); process.exit(1); });

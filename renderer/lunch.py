@@ -13,7 +13,7 @@ from PIL import Image
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RAW_CARDS = "https://raw.githubusercontent.com/ww2dispatches/ww2dispatches-cards/main/"
-RAW_VIDEOS = "https://raw.githubusercontent.com/ww2dispatches/ww2dispatches-videos/main/"
+MEDIA = "https://media.ww2dispatches.com/"  # videos and posters (R2); see renderer/media.py
 COMMUNITIES = {
     "History Hub": "1670486568966946821",
     "Modern History": "1810183095208837171",

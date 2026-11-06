@@ -16,20 +16,21 @@ Run from the repo root:  python3 renderer/site_data.py
 series_log.py runs this at the end, so every weekly run refreshes it on its own.
 Cloudflare Pages rebuilds the site whenever site/ changes. Never edit slides.json by hand.
 """
-import base64, datetime, glob, hashlib, json, os, urllib.request
+import base64, datetime, glob, hashlib, json, os, sys
 
 LAUNCH_YEAR = 2026
 KEEP_DAYS = 7  # keep a week of past slides so "yesterday" always works
 SERIES = {"battle": "Battle Lines", "home": "Home Front", "blue": "Blueprint", "state": "Statecraft", "flash": "Flash"}
 FORMATS = {"photo": "Photo of the Day", "quote": "Quote of the Day", "spec": "Spec Sheet"}
-# Images are served through jsDelivr, a free CDN that mirrors public GitHub repos (no account,
+# Card images are served through jsDelivr, a free CDN that mirrors public GitHub repos (no account,
 # just a URL pattern). raw.githubusercontent.com stalled on 23 Oct 2026 and left the cards blank,
 # so the site points at the CDN copy instead. The ?v= hash keeps a re-rendered card from being
 # served stale from the CDN cache.
 CARDS_CDN = "https://cdn.jsdelivr.net/gh/ww2dispatches/ww2dispatches-cards@main/"
-VIDEOS_CDN = "https://cdn.jsdelivr.net/gh/ww2dispatches/ww2dispatches-videos@main/videos/"
-# Existence checks still go to GitHub itself, so a poster pushed minutes ago is found at once.
-VIDEOS_RAW = "https://raw.githubusercontent.com/ww2dispatches/ww2dispatches-videos/main/videos/"
+# Video posters live on R2 (media.ww2dispatches.com). A re-render never reuses a name, so media.url()
+# (the newest copy, from media-keys.json) is never stale and needs no ?v=.
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import media
 # Card and Name This links go to Threads, the strongest platform (27 Oct 2026 ranking:
 # Threads, Instagram, YouTube, TikTok, Facebook, X).
 THREADS_PROFILE = "https://www.threads.com/@ww2dispatches"
@@ -51,14 +52,6 @@ def card_url(rel):
         return None
     v = hashlib.sha1(open(path, "rb").read()).hexdigest()[:8]
     return f"{CARDS_CDN}{rel}?v={v}"
-
-
-def exists(url):
-    try:
-        req = urllib.request.Request(url, method="HEAD")
-        return urllib.request.urlopen(req, timeout=15).status == 200
-    except Exception:
-        return False
 
 
 slides = []
@@ -93,8 +86,8 @@ for d in cards:
     story = d.get("story") or {}
     is_living = bool((d.get("buffer") or {}).get("youtube")) and bool(d.get("video")) and not story
     if story or is_living:
-        poster_file = f"dispatch-{num}-instagram-poster.jpg"
-        poster = f"{VIDEOS_CDN}{poster_file}" if exists(f"{VIDEOS_RAW}{poster_file}") else img
+        poster_file = f"videos/dispatch-{num}-instagram-poster.jpg"
+        poster = media.url(poster_file) if media.exists(poster_file) else img
         if poster:
             slides.append({
                 "date": post_date, "time": "12:00", "kind": "video", "num": num,

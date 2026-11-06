@@ -1,6 +1,6 @@
 # WW2 Dispatches cards
 
-Post card images for WW2 Dispatches, a World War II this day in history account. Images are hosted here for scheduled posts on X, Instagram, Threads, and Facebook (all through Buffer). Videos live in the separate repo ww2dispatches/ww2dispatches-videos.
+Post card images for WW2 Dispatches, a World War II this day in history account. Images are hosted here for scheduled posts on X, Instagram, Threads, and Facebook (all through Buffer). Videos, posters, and footage live on Cloudflare R2 at https://media.ww2dispatches.com (since 6 Nov 2026; see `renderer/media.py`).
 
 Two scheduled runs fill each Sunday to Saturday week: Thursday 7:47 p.m. Mountain writes and schedules the 14 cards, and Friday 7:47 p.m. builds and schedules the 7 noon videos, records live links, and drafts the newsletter. Saturday 6:13 a.m. prepares the Name This cards. The full rules live in the claude.ai Project docs: Project Brief (the hub), Roadmap, Cards, Videos, Newsletter, Name This, and Queue Status.
 
@@ -27,9 +27,9 @@ Public link pattern: `https://raw.githubusercontent.com/ww2dispatches/ww2dispatc
 
 ## Living Cards (video)
 Same card bands with archival footage playing in the photo window, for big dispatches that have film.
-* Since 18 Oct 2026 trimmed clips and finished videos are committed to ww2dispatches/ww2dispatches-videos (`footage/` and `videos/`), and Buffer links to `https://raw.githubusercontent.com/ww2dispatches/ww2dispatches-videos/main/videos/<file>`. This repo's `footage/` and `videos/` are working folders that ignore .mp4 files (a few older .mp4 files stay until the 20 to 23 Oct 2026 posts that use them have gone out).
+* Since 6 Nov 2026 trimmed clips and finished videos live on Cloudflare R2 (`footage/` and `videos/`), uploaded by `renderer/media.py`, which never overwrites (a re-render gets a new `-rN` name, recorded in `media-keys.json`), and Buffer links to `https://media.ww2dispatches.com/videos/<file>`. The ww2dispatches/ww2dispatches-videos repo (18 Oct to 6 Nov 2026) is a frozen copy; never commit to it. This repo's `footage/` and `videos/` are working folders that ignore .mp4 files (a few older .mp4 files stay until the 20 to 23 Oct 2026 posts that use them have gone out).
 * Finished clips: `dispatch-NNN-x.mp4` (1600 x 1440), `dispatch-NNN-instagram.mp4` (1080 x 1350, Instagram and Facebook), `dispatch-NNN-threads.mp4` (1080 x 1350, taller bottom strip for Threads), `dispatch-NNN-vertical.mp4` (1080 x 1920, for Reels, TikTok, and Shorts), each with a `-poster.jpg` of the first frame.
-* Add a `video` block to the dispatch JSON (`footage`, optional `focusX` and `focusY`, plus `sourceUrl` and `note`), then run `node renderer/living.js <id>`.
+* Add a `video` block to the dispatch JSON (`footage`, optional `focusX` and `focusY`, plus `sourceUrl` and `note`), then run `node renderer/living.js <id>`; it fetches the clip from R2 if needed and uploads each finished video and poster (`--no-upload` for a local test).
 
 ## Living Press page
 `renderer/living_press.py` builds the Living Press review page (a pinned claude.ai artifact) from every dispatch that has a Living Card (with its kit) or a Story Card (with its `story.kit` block).
