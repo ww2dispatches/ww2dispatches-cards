@@ -208,7 +208,15 @@ button:focus-visible,.env:focus-visible{outline:3px solid var(--brass);outline-o
 .cf .card:has(img.bad)::before{content:'PICTURE UNAVAILABLE';animation:none}
 @keyframes dcl{50%{color:#b3a68b}}
 @media (prefers-reduced-motion:reduce){.cf .card::before{animation:none}}
-.mini img.thumb,.tray .tr img{opacity:0;transition:opacity .25s}.mini img.thumb.ok,.tray .tr img.ok{opacity:1}
+.ph img{opacity:0;transition:opacity .25s}.ph img.ok{opacity:1}
+/* The same DECLASSIFYING face on small pictures (dossier grids, the tray, the share picker), 5 Nov 2026 */
+.ph{position:relative;display:block;container-type:inline-size}
+.ph::before{content:'DECLASSIFYING';position:absolute;left:0;right:0;top:0;aspect-ratio:4/5;box-sizing:border-box;display:grid;place-items:center;font-family:'Special Elite',monospace;font-size:7.4cqw;letter-spacing:.08em;color:#8a7c63;border:3px solid #6a5c4a;background:repeating-linear-gradient(135deg,#e9dfc8 0 8px,#e2d6bb 8px 16px);animation:dcl 1.4s ease-in-out infinite;pointer-events:none}
+.ph.fl::before{border:0;border-radius:6px}
+.ph:has(img.ok)::before{content:none}
+.ph:has(img.bad)::before{content:'UNAVAILABLE';animation:none}
+@container (max-width:90px){.ph::before{content:'';animation:none}}
+@media (prefers-reduced-motion:reduce){.ph::before{animation:none}}
 .cf .sheen{position:absolute;inset:0;pointer-events:none;display:none;mix-blend-mode:screen;z-index:2}
 .cf .badge{position:absolute;left:39%;top:4.4%;transform:rotate(-8deg);transform-origin:left center;font-family:var(--display);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:2.4cqw;line-height:1.2;color:#b02a1f;border:2px solid #b02a1f;border-radius:3px;padding:1px 5px;opacity:.9;mix-blend-mode:multiply;display:none;z-index:3}
 .cf .corner{position:absolute;width:7%;aspect-ratio:1;border:2px solid rgba(70,45,5,.7);display:none}

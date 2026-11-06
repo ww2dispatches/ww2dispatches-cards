@@ -507,7 +507,7 @@
       if (signedIn()) return `<button class="mini sealed req today" data-today="${esc(id)}"><span class="thumb">?</span><span class="no">${esc(label(info))}</span><span class="nm">${esc(info.short)}</span>${dots}<span class="reqline">Tomorrow</span></button>`;
       return `<div class="mini sealed"><span class="thumb">?</span><span class="no">${esc(label(info))}</span><span class="nm">${esc(info.short)}</span>${dots}</div>`;
     }
-    return `<button class="mini" data-id="${esc(id)}"><img class="thumb ${info.flash ? 'flash' : 'f-' + best}" loading="lazy" src="${esc(info.img)}" alt="${esc(info.short)}"><span class="no">${esc(label(info))}</span><span class="nm">${esc(info.short)}</span>${dots}</button>`;
+    return `<button class="mini" data-id="${esc(id)}"><span class="ph${info.flash ? ' fl' : ''}"><img class="thumb ${info.flash ? 'flash' : 'f-' + best}" loading="lazy" src="${esc(info.img)}" alt="${esc(info.short)}"></span><span class="no">${esc(label(info))}</span><span class="nm">${esc(info.short)}</span>${dots}</button>`;
   }
   // label names the group the card view pages through ("Battle Lines", "Last envelope"), shown at its top (29 Oct 2026).
   function wireMinis(el, list, label) {
@@ -845,7 +845,7 @@
       const cls = (i === idx ? ' cur' : '') + (can ? '' : ' lock');
       if (!revealed[i] || !info) return `<button class="tr back${cls}" data-i="${i}" aria-label="Card ${i + 1}"><span><i>WW2</i></span></button>`;
       const src = info.kind === 'namethis' && !answered[i] && info.imgPuzzle ? info.imgPuzzle : info.img;
-      return `<button class="tr${cls}" data-i="${i}" aria-label="Card ${i + 1}, ${esc(info.short)}"><img class="${info.flash ? 'flash' : 'f-' + p.finish}" src="${esc(src)}" alt=""></button>`;
+      return `<button class="tr${cls}" data-i="${i}" aria-label="Card ${i + 1}, ${esc(info.short)}"><span class="ph"><img class="${info.flash ? 'flash' : 'f-' + p.finish}" src="${esc(src)}" alt=""></span></button>`;
     }).join('');
     t.querySelectorAll('.tr').forEach(b => { b.onclick = () => { const i = +b.dataset.i; if (i !== idx && (revealed[i] || i === revealed.indexOf(false))) go(i, true); }; });
   }
@@ -1756,7 +1756,7 @@
     shAll.forEach((x, i) => {
       const b = document.createElement('button');
       b.className = 'shpc' + (shSel[i] ? '' : ' off'); b.type = 'button';
-      b.innerHTML = `<img src="${esc(x.info.img)}" alt=""><b>✓</b><small>${esc((x.variant === 'living' ? 'Living ' : '') + FNAME[x.finish] + ' ' + x.info.short)}</small>`;
+      b.innerHTML = `<span class="ph"><img src="${esc(x.info.img)}" alt=""></span><b>✓</b><small>${esc((x.variant === 'living' ? 'Living ' : '') + FNAME[x.finish] + ' ' + x.info.short)}</small>`;
       b.onclick = () => { if (shSel[i] && shSel.filter(Boolean).length === 1) return; shSel[i] = !shSel[i]; shDrawPicks(); shRefresh(); };
       row.appendChild(b);
     });
