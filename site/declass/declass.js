@@ -137,6 +137,16 @@
     return null;
   }
 
+  // ---------- card pictures appear only once loaded (5 Nov 2026) ----------
+  // A card picture stays hidden over a "Declassifying" placeholder until it has loaded, so a slow first load
+  // or a retry below never shows the browser's broken image icon. Cached pictures are marked at once.
+  const markImg = im => { if (im.complete && im.naturalWidth) im.classList.add('ok'); };
+  document.addEventListener('load', e => { if (e.target instanceof HTMLImageElement) e.target.classList.add('ok'); }, true);
+  new MutationObserver(ms => ms.forEach(m => m.addedNodes.forEach(n => {
+    if (n.nodeType !== 1) return;
+    if (n.tagName === 'IMG') markImg(n); else n.querySelectorAll && n.querySelectorAll('img').forEach(markImg);
+  }))).observe(document.documentElement, { childList: true, subtree: true });
+
   // ---------- card pictures that fail to load (28 Oct 2026) ----------
   // A phone on a weak signal sometimes drops a card picture, leaving the alt text and a broken icon until
   // the card is redrawn. Retry it twice, then fetch the same file straight from GitHub.
@@ -144,7 +154,8 @@
     const im = e.target;
     if (!(im instanceof HTMLImageElement) || !/cdn\.jsdelivr\.net\/gh\/ww2dispatches\//.test(im.src)) return;
     const n = +(im.dataset.retry || 0);
-    if (n >= 3) return;
+    im.classList.remove('ok');
+    if (n >= 3) { im.classList.add('bad'); return; }
     im.dataset.retry = n + 1;
     const base = im.src.replace(/([?&])r=\d+&?/, '$1').replace(/[?&]$/, '');
     setTimeout(() => {

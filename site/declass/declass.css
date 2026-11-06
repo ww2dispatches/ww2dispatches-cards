@@ -200,6 +200,15 @@ button:focus-visible,.env:focus-visible{outline:3px solid var(--brass);outline-o
 .cf .frame{position:relative;box-shadow:0 10px 24px rgba(26,22,18,.22)}
 .cf .card{position:relative;aspect-ratio:4/5;overflow:hidden;background:#d8ccb0}
 .cf .card img,.cf .card video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+/* Pictures appear only once loaded (5 Nov 2026): the card shows a paper placeholder with DECLASSIFYING until then, and
+   never the browser's broken image icon. Grid thumbnails just fade in. */
+.cf .card img{opacity:0;transition:opacity .25s}.cf .card img.ok{opacity:1}
+.cf .card::before{content:'DECLASSIFYING';position:absolute;inset:0;display:grid;place-items:center;font-family:'Special Elite',monospace;font-size:clamp(11px,4.2cqw,17px);letter-spacing:.18em;color:#8a7c63;background:repeating-linear-gradient(135deg,#e9dfc8 0 12px,#e2d6bb 12px 24px);animation:dcl 1.4s ease-in-out infinite}
+.cf .card:has(img.ok)::before,.cf .card:has(video)::before{animation:none;content:''}
+.cf .card:has(img.bad)::before{content:'PICTURE UNAVAILABLE';animation:none}
+@keyframes dcl{50%{color:#b3a68b}}
+@media (prefers-reduced-motion:reduce){.cf .card::before{animation:none}}
+.mini img.thumb,.tray .tr img{opacity:0;transition:opacity .25s}.mini img.thumb.ok,.tray .tr img.ok{opacity:1}
 .cf .sheen{position:absolute;inset:0;pointer-events:none;display:none;mix-blend-mode:screen;z-index:2}
 .cf .badge{position:absolute;left:39%;top:4.4%;transform:rotate(-8deg);transform-origin:left center;font-family:var(--display);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:2.4cqw;line-height:1.2;color:#b02a1f;border:2px solid #b02a1f;border-radius:3px;padding:1px 5px;opacity:.9;mix-blend-mode:multiply;display:none;z-index:3}
 .cf .corner{position:absolute;width:7%;aspect-ratio:1;border:2px solid rgba(70,45,5,.7);display:none}
