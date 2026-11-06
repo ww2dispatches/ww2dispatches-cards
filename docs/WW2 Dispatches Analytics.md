@@ -47,9 +47,9 @@ Every finding sits on one rung:
 
 ## The Tuesday run
 "WW2 Dispatches weekly analytics review", Tuesday 7:47 p.m. Mountain, on Opus 5.5, a Claude Code scheduled task with both repos attached, Buffer connected, push and email when done. Posts from Sunday and Monday are still "too early" on Tuesday and get their score the following week.
-1. Attach and clone the cards repo (Brief, "GitHub repos and hosting").
+1. Attach and clone the cards repo (Brief, "GitHub repos and hosting"), and run `python3 renderer/media.py sweep` first (Brief, "Shared run procedures").
 2. Pull every post sent in the last 14 days from Buffer with the query in `analytics/README.md`, and save it as `analytics/snapshots/YYYY-MM-DD.json` in the format given there.
-3. Run `python3 renderer/analytics.py`. Fix any tag problems it lists using `analytics/themes.md` (the opening shot tag needs the video's real first frame), and look over any unmatched posts.
+3. Run `python3 renderer/analytics.py`. Fix any tag problems it lists using `analytics/themes.md` (the opening shot tag needs the video's real first frame: read the video from R2 with `python3 renderer/media.py get videos/<file>`, which also finds a copy media.py's fallback left in the videos repo, then grab frames at about 0.3 and 2 seconds with ffmpeg; never take it from GitHub or memory), and look over any unmatched posts.
 4. Read the scores against the playbook. Move findings up or down the ladder, close any test past its review date with its result, and write the week's review to `analytics/reviews/YYYY-MM-DD.md`: the summary, best and weakest posts and why, what changed, test results, and anything for Brian. Rewrite `analytics/playbook.md` to match. Plain words, no dashes.
 5. Run `python3 renderer/analytics.py` again so the Scoreboard picks up the new review and playbook, commit and push, then publish `analytics/scoreboard-page.html` to the Scoreboard artifact (read it first).
 6. File a Schedule Board task for each decision Brian needs to make, with a push reminder if it has a due time (Brief, "Shared run procedures").
@@ -89,3 +89,4 @@ The rules for links:
 * 24 Oct 2026: The review moved to Tuesday night so its playbook is fresh for the new Wednesday research run, the Thursday video run, and the Friday cards run (Project Brief, "Weekly workflow"). First real review Tue 27 Oct 2026; Tests A and B are reviewed 3 Nov. Research now tags each dispatch's themes; the video run still tags each video.
 * 27 Oct 2026: The Intercept (now Code Room) master list upkeep added as step 7, moved here from the Wednesday research run the same day, so it only ever works from posted cards (the posted only rule) and catches posts added by hand. The summary gains the week's new hard groups for Brian's optional veto.
 * 2 Nov 2026: Intercept renamed Code Room (a trademark precaution: Intercept Games is a registered Take-Two mark in the game classes). Only the player facing name changed; `intercept.json`, the check tool, and the Tuesday task's wording keep the old name where they refer to files.
+* 6 Nov 2026: Videos now live on Cloudflare R2 (https://media.ww2dispatches.com). The opening shot tag reads the video's frames from R2 with `renderer/media.py get`, and the run starts with the media sweep.

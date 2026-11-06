@@ -72,7 +72,7 @@ const TONE = "colorchannelmixer=.927:.092:.023:0:.042:.962:.020:0:.033:.064:.896
       const poster = file.replace(/\.mp4$/, "-poster.jpg");
       execFileSync("ffmpeg", ["-v", "error", "-y", "-i", file, "-frames:v", "1", "-q:v", "3", poster]);
       console.log("wrote", path.relative(ROOT, file));
-      for (const f of [file, poster]) { const u = upload(f); if (u) console.log("  on R2", u); }
+      for (const f of [file, poster]) { const u = upload(f); if (u) console.log("  stored", u); }
     }
   }
   await browser.close();

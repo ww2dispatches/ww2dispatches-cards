@@ -154,6 +154,6 @@ function save(dataUrl, file) { fs.writeFileSync(file, Buffer.from(dataUrl.split(
   if (!process.argv.includes("--no-upload")) {
     const u = execFileSync("python3", [path.join(__dirname, "media.py"), "put", path.relative(ROOT, outFile)],
       { cwd: ROOT, stdio: ["ignore", "pipe", "inherit"] }).toString().trim();
-    console.log("on R2", u);
+    console.log("stored", u);
   }
 })().catch(e => { console.error(e); process.exit(1); });
