@@ -71,7 +71,8 @@ Every week, after the review is written:
 
 The rules for links:
 * **Historically airtight.** History buffs will publicly challenge anything debatable. Verify every link against the dispatch records and a solid source, and when in doubt leave it out.
-* **Easy** is visible in the photo (aircraft, warships, a national leader). **Medium** is knowable from the place or subject (a theater, a battle named on every card, a nation, a branch, a person). **Hard** takes real knowledge: shared operations, ships, commanders, and clever links. A link the cards print outright (the place line, a kicker naming it) is medium at most.
+* **Easy** is visible in the photo (aircraft, warships, a national leader). **Medium** is knowable from the tile's title or subject (a theater, a battle the titles point to, a nation, a branch, a person); a group the cards only share by place is hard, since the board's tiles show only the title and year. **Hard** takes real knowledge: shared operations, ships, commanders, and clever links. A link the cards print outright (the place line, a kicker naming it) is medium at most.
+* **One event, one card:** a group never holds two cards of the same event, such as a story card and its spec sheet (ids "X" and "X-spec"); the deal enforces it and counts such a pair as one card toward a group's three.
 * **Printed details are never links:** the date and the series stamp are just reading. No group may be "all from 1942" or "all Battle Lines".
 * **Tone:** a link must never treat tragedy as a gimmick. Sensitive cards (Loss and tragedy) can be in groups, but never grouped by the loss itself ("ships that sank", "men who died").
 * **Card faces only:** players see only the card face during play, never the story. A link must be reachable from what the face shows plus real knowledge.
@@ -94,3 +95,4 @@ The rules for links:
 * 7 Nov 2026: The master list upkeep gained a step for groups Brian approves ahead of time in the Code Room: Planning chat (the Code Room doc's "Approved groups waiting for cards"); the check is now step 4. With Code Room launching 24 Nov, the run adds 10 hard groups a week through 31 Dec 2026, never padding with a weak link.
 * 7 Nov 2026 (later): The run no longer removes applied groups from the Code Room doc, since it never edits the docs; it skips any group already in the list and reports what it applied, and a Code Room chat clears the entries (decided with Brian in the Code Room: Build chat).
 * 7 Nov 2026 (later still): Code Room's board shows photo tiles with a typed label; the check now flags shared tile labels and missing tile photos, and the run commits new files in `tiles/` (Code Room doc, "Board tiles").
+* 7 Nov 2026 (Code Room medium recheck, Planning chat): Medium is now knowable from the tile's title or subject, and a group the cards only share by place is hard. A group never holds two cards of the same event, such as a story card and its spec sheet.
