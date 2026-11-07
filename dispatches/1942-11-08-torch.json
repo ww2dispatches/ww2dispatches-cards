@@ -235,5 +235,17 @@
  "focusX": 50,
  "focusY": 40,
  "zoom": 100,
- "question": true
+ "question": true,
+ "slides": [
+  {
+   "photo": "photos/1942-11-08-torch-3.jpg",
+   "caption": "American troops wade ashore from an assault boat onto a North African beach, November 1942.",
+   "credit": "U.S. Army Signal Corps SC 149955, public domain"
+  },
+  {
+   "photo": "photos/1942-11-08-torch-4.jpg",
+   "caption": "The cruiser USS Wichita under fire off Casablanca, 8 November 1942.",
+   "credit": "U.S. Navy photo 80-G-38835, public domain"
+  }
+ ]
 }
