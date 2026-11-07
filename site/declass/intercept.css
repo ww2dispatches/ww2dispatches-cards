@@ -14,6 +14,9 @@ body.night .sheettop .howstamp{color:var(--red)}
 .icptile span{display:block;font-family:var(--type);font-size:12px;color:#c9bd9f;padding-right:118px}
 .icptile::after{position:absolute;right:14px;top:50%;transform:translateY(-50%);font-family:var(--display);font-weight:700;font-size:13px;letter-spacing:.1em;color:#9fbbe8}
 .icptile.live::after{content:"CRACK IT ▸"}
+/* Solved with a card still to pick (7 Nov 2026). */
+.icptile.claim{border-color:#D9A93E}
+.icptile.claim::after{content:"PICK A CARD ▸";color:#e3c25e}
 .icptile.done{opacity:.8}.icptile.done::after{content:"FILED ✓";color:#a8b58a}
 .icptile.wait::after{content:"SIGN IN";color:#c9bd9f}
 /* Coming soon: a quiet paper tile (option 1, 27 Oct 2026). The dark Night Dispatch look waits for launch. */
@@ -25,7 +28,18 @@ body.night .sheettop .howstamp{color:var(--red)}
 .icptile.soon::after{content:"COMING SOON";color:#8a97ad}
 
 /* the screen */
-.icp .icptop{display:flex;justify-content:space-between;align-items:center}
+.icp .icptop{position:relative}
+.icp .icpbar{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.icp .icpmini{display:none;font-family:var(--display);font-weight:700;font-size:15px;letter-spacing:.16em;color:#EDE4CF}
+/* Slim mode (7 Nov 2026): once the files are open, the big title and tagline step aside and the top becomes
+   one bar pinned to the screen (Declass, a small CODE ROOM, How to play), with the mistake marks under it. */
+.icp.slim .icpname,.icp.slim .icptag{display:none}
+.icp.slim .icpmini{display:block}
+.icp.slim .icptop{position:sticky;top:0;z-index:30;margin:0 -16px 10px;padding:8px 16px 8px;background:rgba(23,20,15,.94);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);border-bottom:1px solid rgba(237,228,207,.1)}
+.icp.slim .icpbar .back{margin:0}
+.icp.slim .icpbar .howbtn{margin:0}
+#icpBarMarks .icpmarks{margin:8px 0 0;gap:6px}
+#icpBarMarks .icpmarks .mark{width:52px;height:24px}
 .icp .back{color:#e08a7f}
 .icp .howbtn{color:#c9d6ef;border-color:#5b7fb8}
 .icpname{font-family:var(--display);font-weight:700;font-size:40px;letter-spacing:.16em;color:#EDE4CF;margin:6px 0 0;text-align:center}
@@ -114,3 +128,49 @@ body.night .howcard,body.night .sheetcard{color:var(--ink)}
 
 /* An empty "Next file arrives" line takes no room, so the tile sits as close as the envelopes do (27 Oct 2026). */
 .nextfile:empty{display:none}
+
+/* The magnifier in each card's corner opens it full size (7 Nov 2026). */
+.zoomb{position:absolute;right:4px;bottom:4px;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  background:rgba(18,15,12,.78);color:#EDE4CF;box-shadow:0 1px 4px rgba(0,0,0,.6),0 0 0 1px rgba(237,228,207,.35);z-index:3;cursor:zoom-in}
+.zoomb svg{width:16px;height:16px;pointer-events:none}
+.icpgroup .gcard{position:relative}
+
+/* Found groups during play: one slim row each, three small cards and the link (7 Nov 2026). */
+.icprows{display:grid;gap:8px;margin:0 0 10px}
+.icprow{display:flex;align-items:center;gap:10px;background:rgba(237,228,207,.05);border:1px solid rgba(237,228,207,.12);border-radius:4px;padding:6px 8px}
+.icprow .rcards{display:flex;flex:0 0 auto}
+.icprow .gcard{border:0;padding:0;background:none;width:36px;margin-right:-6px;cursor:zoom-in;-webkit-touch-callout:none;user-select:none;-webkit-user-select:none}
+.icprow .gcard img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:2px;box-shadow:0 2px 5px rgba(0,0,0,.6);pointer-events:none}
+.icprow .rlink{flex:1;margin:0 0 0 8px;background:#EDE4CF;color:#1A1612;font-family:var(--type);font-size:12.5px;line-height:1.3;padding:5px 8px;transform:rotate(-.4deg);box-shadow:0 2px 5px rgba(0,0,0,.4)}
+@media (prefers-reduced-motion:no-preference){.icprow.fresh{animation:icpclip .45s ease-out}}
+
+/* A wrong guess stamps REJECTED across the screen for a moment (7 Nov 2026). */
+#icpReject{position:fixed;left:50%;top:42%;transform:translate(-50%,-50%) rotate(-8deg) scale(.9);z-index:60;pointer-events:none;opacity:0;
+  text-align:center;padding:10px 22px 8px;border:4px solid #e0574a;border-radius:4px;background:rgba(18,15,12,.88);box-shadow:0 10px 30px rgba(0,0,0,.6)}
+#icpReject b{display:block;font-family:var(--display);font-weight:700;font-size:34px;letter-spacing:.12em;color:#e0574a;line-height:1}
+#icpReject small{display:block;font-family:var(--type);font-size:13px;color:#EDE4CF;margin-top:6px}
+#icpReject.on{opacity:1;transform:translate(-50%,-50%) rotate(-8deg) scale(1);transition:opacity .12s ease,transform .25s cubic-bezier(.2,1.6,.4,1)}
+#icpReject:not(.on){transition:opacity .35s ease}
+
+/* A tester's practice round (7 Nov 2026). */
+.icppractice{font-family:var(--type);font-size:12px;color:#9fbbe8;text-align:center;margin:0 0 10px;border:1px dashed rgba(159,187,232,.5);border-radius:3px;padding:4px 8px}
+.icpreplay{color:#9fbbe8!important;border-color:rgba(159,187,232,.6)!important}
+
+/* The board's tiles (7 Nov 2026, concept D): the original photo over a typed label. A selected tile
+   lifts with a gold ring; no paperclip, so what's picked is plain to see. */
+.icpdesk .icpcard.tile{transform:none;background:#EDE4CF;border-radius:4px;overflow:hidden;text-align:left;box-shadow:0 6px 14px rgba(0,0,0,.55);display:flex;flex-direction:column}
+.icpcard.tile img{aspect-ratio:5/4;border-radius:0;box-shadow:none;object-position:50% 30%;background:#2a241d}
+.icpcard.tile .tl{display:block;padding:5px 6px 6px;color:#1A1612;flex:1}
+.icpcard.tile .tl b{display:block;font-family:var(--display);font-weight:700;font-size:14px;line-height:1.1;text-transform:uppercase;letter-spacing:.02em;overflow-wrap:break-word;word-break:normal;hyphens:none}
+.icpcard.tile .tl small{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-family:var(--type);font-size:10.5px;line-height:1.25;color:#4a4033;margin-top:2px}
+.icpcard.tile .zoomb{top:5px;right:5px;bottom:auto;width:28px;height:28px}
+.icpcard.tile .pclip{display:none!important}
+.icpdesk .icpcard.tile.sel{transform:translateY(-5px)!important;box-shadow:0 0 0 3px #D9A93E,0 12px 22px rgba(0,0,0,.65)}
+.icprow .rlink small{display:block;font-size:10.5px;color:#4a4033;margin-top:3px}
+
+/* Tile photos fade in when they arrive; until then the label is already readable (7 Nov 2026). */
+.icpcard.tile img,.icprow .gcard img{opacity:0;transition:opacity .25s ease}
+.icpcard.tile img.ok,.icprow .gcard img.ok{opacity:1}
+@media (prefers-reduced-motion:reduce){.icpcard.tile img,.icprow .gcard img{transition:none}}
+.icpcard.tile .tp{display:block;background:#2a241d}
+.icprow .gcard{background:#2a241d;border-radius:2px}

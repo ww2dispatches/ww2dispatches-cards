@@ -12,8 +12,9 @@ const id = p => p + 'x'.repeat(32 - p.length);
 for (const p of ['I0', 'I1', 'I2', 'I3', 'I4', 'I5', 'I6', 'I7', 'I8', 'I9']) {
   db.prepare("INSERT OR IGNORE INTO players (id, created_at, tester) VALUES (?, '2026-10-27T00:00:00Z', 1)").run(id(p));
 }
-async function req(path, { player, now, body } = {}) {
+async function req(path, { player, now, body, preview } = {}) {
   const h = { 'x-declass-key': 't' };
+  if (preview) h['x-intercept-preview'] = '1';
   if (player) h.cookie = cookie(id(player));
   if (now) h['x-declass-now'] = now;
   if (body) { h['content-type'] = 'application/json'; h.origin = BASE; }
@@ -138,6 +139,24 @@ for (let d = 0; d < 6; d++) {
 const firstRepeat = hards.findIndex((h, i) => hards.indexOf(h) !== i);
 ok(firstRepeat === -1 || (firstRepeat >= 5 && hards[firstRepeat] === hards[0]), 'no hard repeat while a fresh one deals; then the oldest: ' + hards.join(' '));
 ok(db.prepare('SELECT COUNT(*) AS n FROM intercept_seen WHERE player_id = ?').get(id('I7')).n === new Set(hards).size, 'hard groups seen recorded');
+
+// Tester practice replays (7 Nov 2026): testers only, with the preview flag; no Intel; their own claim key.
+db.prepare("INSERT OR IGNORE INTO players (id, created_at, tester) VALUES (?, '2026-10-27T00:00:00Z', 0)").run(id('N0'));
+r = await req('intercept/replay', { player: 'N0', now: NOW, body: {}, preview: true });
+ok(r.status === 404, 'a non tester cannot replay: ' + r.status);
+r = await req('intercept/replay', { player: 'I0', now: NOW, body: {} });
+ok(r.status === 404, 'no replay without the preview flag');
+const introI0 = intel('I0'), pullsI0 = () => db.prepare('SELECT COUNT(*) AS n FROM pulls WHERE player_id = ?').get(id('I0')).n, pb = pullsI0();
+r = await req('intercept/replay', { player: 'I0', now: NOW, body: {}, preview: true });
+ok(r.status === 200 && r.data.puzzle.practice === 1 && r.data.puzzle.status === 'play' && r.data.puzzle.cards.length === 12, 'a tester replay deals practice round 1');
+const gp = grid('I0', DAY);
+for (const g of gp.groups.slice(0, 3)) r = await guess('I0', g.idx);
+ok(r.data.puzzle.status === 'solved' && intel('I0') === introI0, 'a solved practice round pays no Intel');
+r = await req('intercept/claim', { player: 'I0', now: NOW, body: { day: DAY, index: gp.groups[0].idx[0] } });
+ok(r.status === 200 && pullsI0() === pb + 1 && db.prepare("SELECT COUNT(*) AS n FROM opened WHERE player_id = ? AND slot_key = ?").get(id('I0'), 'ip:' + DAY + ':1').n === 1, 'a practice pick gives the card under its own key: ' + r.status);
+ok(r.data.pulls.every(p => p.finish !== 'topsecret'), 'a practice pick is never Top Secret');
+r = await req('intercept/replay', { player: 'I0', now: NOW, body: {}, preview: true });
+ok(r.status === 200 && r.data.puzzle.practice === 2, 'replays can repeat (round 2)');
 
 // Playing does not touch the streak; Delete my dossier removes Intercept rows.
 ok(db.prepare('SELECT streak FROM players WHERE id = ?').get(id('I7')).streak === 0, 'no streak from Intercept');

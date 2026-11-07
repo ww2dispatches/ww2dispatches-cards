@@ -96,7 +96,7 @@
     if (key.startsWith('c:')) return 'Commemorative file';
     if (key === 's:starter') return 'Starter pack';
     if (key.startsWith('q:')) return 'Requisition';
-    if (key.startsWith('i:')) return 'Code Room';
+    if (key.startsWith('i:') || key.startsWith('ip:')) return 'Code Room';
     return 'Envelope';
   }
   // Game actions counted for the admin console (2 Nov 2026): tallies only, through /hit.js.
@@ -448,7 +448,9 @@
     // the last envelope's cards
     const pulls = myPulls();
     let last = [];
-    if (signedIn() && pulls.length) { const k = pulls[0].slot; last = pulls.filter(x => x.slot === k).slice().reverse(); }
+    // A Code Room pick isn't an envelope, so it never takes the Last envelope spot (7 Nov 2026).
+    const envPulls = pulls.filter(x => !/^ip?:/.test(x.slot || ''));
+    if (signedIn() && envPulls.length) { const k = envPulls[0].slot; last = envPulls.filter(x => x.slot === k).slice().reverse(); }
     else if (STARTER) last = STARTER.pulls.filter((x, i) => STARTER.revealed[i]);
     $('recent').innerHTML = last.length ? `<h2>Last envelope <small>${esc(signedIn() ? slotName(last[0].slot) + ' · ' + localDate(last[0].at) : 'Starter pack')}</small></h2><div class="recent">${last.map(x => miniHTML(x.card, holdingsNow())).join('')}</div>${legendHTML()}` : '';
     wireMinis($('recent'), last.map(x => x.card), signedIn() ? 'Last envelope' : 'Starter pack');
@@ -1095,7 +1097,7 @@
   // Finishing cards left waiting: rebuild the envelope's kind and its Intel line from the cards themselves.
   function resumeWaiting() {
     const w = ST.waiting, slot = (w[0] && w[0].slot) || '';
-    const kind = slot.startsWith('p:') ? 'priority' : slot.startsWith('c:') ? 'commemorative' : slot.startsWith('q:') ? 'request' : slot.startsWith('i:') ? 'intercept' : slot === 's:starter' ? 'starter' : 'daily';
+    const kind = slot.startsWith('p:') ? 'priority' : slot.startsWith('c:') ? 'commemorative' : slot.startsWith('q:') ? 'request' : slot.startsWith('i:') || slot.startsWith('ip:') ? 'intercept' : slot === 's:starter' ? 'starter' : 'daily';
     lastEarn = kind === 'intercept' ? { earned: w.filter(p => p.intel).map(p => ({ reason: 'duplicate', delta: p.intel, variant: p.variant, finish: p.finish })) } : kind === 'request' || kind === 'starter' ? null : { earned: [{ reason: 'envelope', delta: 5 }].concat(w.filter(p => p.intel).map(p => ({ reason: 'duplicate', delta: p.intel, variant: p.variant, finish: p.finish }))) };
     startCards(w, 'server', holdings(ST.pulls.filter(p => p.turned)), { kind });
   }
@@ -2179,7 +2181,15 @@
     refresh: () => refreshState().then(() => { if ($('sHome').classList.contains('on')) renderHome(); }),
     goHome: () => Promise.all([refreshState(), refreshCatalog()]).then(() => { renderHome(); show('sHome'); }).catch(() => { renderHome(); show('sHome'); }),
     // The picked card arrives in its own small envelope with the normal turn and reveal.
-    claimReveal: d => { if (d.player && ST) ST.player = d.player; cur = { kind: 'intercept', result: d }; chosen(0); },
+    // The Code Room pick goes straight to the card's turn and reveal, with no envelope (7 Nov 2026).
+    claimReveal: d => {
+      const before = holdingsNow();
+      if (d.player && ST) ST.player = d.player;
+      cur = { kind: 'intercept', result: d };
+      d.pulls.forEach(p => { if (p.cardInfo) new Image().src = p.cardInfo.img; });
+      lastEarn = d.intel && d.intel.gained ? { earned: d.intel.earned } : null;
+      startCards(d.pulls, 'server', before, { kind: 'intercept' });
+    },
   };
 
   // ---------- boot ----------

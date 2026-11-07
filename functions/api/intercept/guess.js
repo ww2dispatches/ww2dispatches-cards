@@ -28,7 +28,9 @@ export async function onRequestPost({ request, env }) {
 
   const next = r.state, done = next.status !== 'play';
   const score = done ? scoreOf(next.found.length, next.mistakes) : null;
-  const intel = done ? PLAY_INTEL + bonusOf(next.status, score) : null;
+  // A tester's practice replay (grid.practice, 7 Nov 2026) pays no Intel.
+  const practice = Boolean(state.grid.practice);
+  const intel = done ? (practice ? 0 : PLAY_INTEL + bonusOf(next.status, score)) : null;
   const fin = done ? token() : null, at = t.toISOString();
   const paid = 'EXISTS (SELECT 1 FROM intercept WHERE player_id = ?1 AND day = ?2 AND fin = ?3)';
   const stmts = [
@@ -37,7 +39,7 @@ export async function onRequestPost({ request, env }) {
       WHERE player_id = ? AND day = ? AND moves = ? AND status = 'play'`)
       .bind(JSON.stringify(next.found), JSON.stringify(next.tries), next.mistakes, next.status, score, intel, fin, player.id, day, row.moves),
   ];
-  if (done) {
+  if (done && !practice) {
     stmts.push(db.prepare(`UPDATE players SET intel = intel + ?4 WHERE id = ?1 AND ${paid}`).bind(player.id, day, fin, intel));
     stmts.push(db.prepare(`INSERT INTO intel_log (player_id, at, delta, reason, slot_key) SELECT ?1, ?4, ?5, 'intercept', ?6 WHERE ${paid}`)
       .bind(player.id, day, fin, at, intel, 'i:' + day));
@@ -46,6 +48,6 @@ export async function onRequestPost({ request, env }) {
   const fresh = await todayRow(db, player.id, day);
   if (!(results[0].meta && results[0].meta.changes)) return json({ result: 'stale', puzzle: publicPuzzle(fresh, t) }); // another guess landed first
   const out = { result: r.result, puzzle: publicPuzzle(fresh, t) };
-  if (done) out.intel = { gained: intel, play: PLAY_INTEL, bonus: intel - PLAY_INTEL };
+  if (done) out.intel = practice ? { gained: 0, play: 0, bonus: 0, practice: true } : { gained: intel, play: PLAY_INTEL, bonus: intel - PLAY_INTEL };
   return json(out);
 }

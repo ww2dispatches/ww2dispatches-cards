@@ -33,11 +33,15 @@ export async function onRequestPost({ request, env }) {
   // A card dealt as a Living Card shows its still frame in the grid and comes as the living variant.
   const variant = grid.cards[i].v === 'living' && filmReleased(card, t) ? 'living' : 'still';
   const perfect = row.mistakes === 0;
-  const finish = perfect ? rollFinishNoCopper(variant) : rollFinish(variant);
+  // A tester's practice replay (7 Nov 2026) gives the card but never a Top Secret, so it can't take a
+  // worldwide serial number, and a duplicate pays no Intel. Its claim key is its own, so replays can repeat.
+  const practice = grid.practice || 0;
+  let finish = perfect ? rollFinishNoCopper(variant) : rollFinish(variant);
+  if (practice && finish === 'topsecret') finish = 'gold';
   const held = await db.prepare('SELECT 1 FROM pulls WHERE player_id = ? AND card_id = ? AND variant = ? AND finish = ?').bind(player.id, card.id, variant, finish).first();
-  const dup = held ? (DUPLICATE_INTEL[finish] || 0) : 0;
+  const dup = held && !practice ? (DUPLICATE_INTEL[finish] || 0) : 0;
 
-  const pid = player.id, key = 'i:' + day, at = t.toISOString();
+  const pid = player.id, key = practice ? `ip:${day}:${practice}` : 'i:' + day, at = t.toISOString();
   const mine = 'EXISTS (SELECT 1 FROM opened WHERE player_id = ?1 AND slot_key = ?2)';
   const claimed = JSON.stringify({ idx: i, card: card.id, variant, finish });
   const stmts = [

@@ -256,6 +256,7 @@ export function publicPuzzle(row, t) {
     claimed, canClaim: row.status === 'solved' && !claimed,
     perfect: row.status === 'solved' && row.mistakes === 0,
     expired: !done && gameDay(t) !== row.day,
+    practice: grid.practice || 0, // a tester's replay (7 Nov 2026): no Intel, no Top Secret serial
   };
 }
 
