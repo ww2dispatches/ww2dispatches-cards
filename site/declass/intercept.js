@@ -23,7 +23,7 @@
     if (s.status === 'new') return go('a Declass daily puzzle · Crack today\'s files');
     if (s.status === 'play') return go(`In progress · ${s.found} of 4 links · ${s.mistakes} of 3 mistakes`);
     // The score is points out of 100 (25 a link, minus 10 a mistake), so the tile says so (7 Nov 2026).
-    if (s.status === 'solved') return go(`Cracked · Scored ${s.score} of 100 · ${s.canClaim ? 'Pick your card' : 'New files tomorrow'}`, s.canClaim ? 'live' : 'done');
+    if (s.status === 'solved') return go(`Cracked · Scored ${s.score} of 100 · ${s.canClaim ? 'Pick your card by midnight Eastern' : 'New files tomorrow'}`, s.canClaim ? 'live claim' : 'done');
     return go('Not cracked today · New files tomorrow', 'done');
   }
   function tile(el) {
@@ -146,9 +146,11 @@
     } else if (!solved) {
       pickBlock = '<p class="icplead">No card this time. New files tomorrow.</p>';
     }
+    // The card pick comes right under the score (7 Nov 2026), so nobody misses it below the groups.
+    const linksHead = solved && P.canClaim ? '<h2 class="icph">Today\'s links</h2>' : '';
     return `${head}${intel}
-      <div class="icpgroups">${P.groups.map(groupHTML).join('')}</div>
       ${pickBlock}
+      ${linksHead}<div class="icpgroups">${P.groups.map(groupHTML).join('')}</div>
       <div class="icpctl"><button class="btn alt" id="icpShare" type="button">Share</button><button class="btn" id="icpHome" type="button">Done</button></div>
       ${tester() ? '<div class="icpctl"><button class="btn alt icpreplay" id="icpReplay" type="button">Play again · tester practice</button></div>' : ''}`;
   }
@@ -205,7 +207,7 @@
     const c = $('icpClear'); if (c) c.onclick = () => { sel = []; refreshSel(); };
     document.querySelectorAll('#icpPick [data-pick]').forEach(b => holdable(b, () => confirmPick(Number(b.dataset.pick))));
     const s = $('icpShare'); if (s) s.onclick = share;
-    const h = $('icpHome'); if (h) h.onclick = home;
+    const h = $('icpHome'); if (h) h.onclick = leave;
     const rp = $('icpReplay'); if (rp) rp.onclick = replay;
   }
   function toggle(i, b) {
@@ -372,9 +374,19 @@
     } else D().toast('The caption is copied, ready to paste.');
   }
 
+  // Leaving with a card still to pick asks first (7 Nov 2026): the pick waits until midnight Eastern.
+  function leave() {
+    if (!(P && P.status === 'solved' && P.canClaim && document.getElementById('sIntercept').classList.contains('on'))) return home();
+    D().sheet(`<div class="sheettop"><span class="howstamp">Code Room</span><button class="howx" data-close aria-label="Close">✕</button></div>
+      <h2>You haven't picked your card yet</h2>
+      <p class="sheetnote">Solving today's files earns a card. Pick it now, or come back to it from the Code Room tile before the files close at midnight Eastern.</p>
+      <button class="btn" id="icpPickNow">Pick now</button><button class="btn alt" id="icpLater">Later</button>`);
+    $('icpPickNow').onclick = () => { D().closeSheet(); const pk = $('icpPick'); if (pk) pk.scrollIntoView({ behavior: 'smooth', block: 'center' }); };
+    $('icpLater').onclick = () => { D().closeSheet(); home(); };
+  }
   window.Intercept = { tile, open, paint, _state: () => P };
   const back = document.getElementById('icpBack');
-  if (back) back.onclick = home;
+  if (back) back.onclick = leave;
   // close the full size view
   const z = document.getElementById('icpZoom');
   if (z) z.addEventListener('click', () => { z.hidden = true; });

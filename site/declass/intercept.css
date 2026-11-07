@@ -14,6 +14,9 @@ body.night .sheettop .howstamp{color:var(--red)}
 .icptile span{display:block;font-family:var(--type);font-size:12px;color:#c9bd9f;padding-right:118px}
 .icptile::after{position:absolute;right:14px;top:50%;transform:translateY(-50%);font-family:var(--display);font-weight:700;font-size:13px;letter-spacing:.1em;color:#9fbbe8}
 .icptile.live::after{content:"CRACK IT ▸"}
+/* Solved with a card still to pick (7 Nov 2026). */
+.icptile.claim{border-color:#D9A93E}
+.icptile.claim::after{content:"PICK A CARD ▸";color:#e3c25e}
 .icptile.done{opacity:.8}.icptile.done::after{content:"FILED ✓";color:#a8b58a}
 .icptile.wait::after{content:"SIGN IN";color:#c9bd9f}
 /* Coming soon: a quiet paper tile (option 1, 27 Oct 2026). The dark Night Dispatch look waits for launch. */
