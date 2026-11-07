@@ -23,4 +23,3 @@ Finished noon videos not yet scheduled (aim for 3 to 5). One line each: file on 
 Small loose ends a run can settle when it has a moment.
 * No. 010 (Churchill): the British official photo was supplied by Brian; its catalogue number is not confirmed.
 * No. 053 (Tirpitz, Thu 12 Nov): the only noon slot of 8 to 14 Nov left open (film in Source Film, 1944-11-12-tirpitz.webm). Board task cut-living-card-053 asks Brian to have Claude cut it in the Project with his computer linked, due Sat 7 Nov 9 a.m. If it never arrives, the fallback that needs nothing from Brian is a Story Card for the same event.
-* No. 048 (Kristallnacht): the lead photo is an anonymous 1938 German photo tagged public domain on Commons; confirm the credit wording on Friday.
