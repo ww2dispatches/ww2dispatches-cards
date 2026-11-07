@@ -1,0 +1,243 @@
+{
+ "note": "Loaner cards: real but undated kinds of strength, used in every campaign. This is the test bench's set (5 Nov 2026), provisional until the loaner sets for each side and branch are designed alongside the backfill (Campaigns Build doc). Loaners carry the steel edge and are never collected.",
+ "loaners": [
+  {
+   "id": "a-radar-picket",
+   "side": "allied",
+   "title": "A radar picket",
+   "series": "blue",
+   "value": 1,
+   "branches": [
+    "air"
+   ]
+  },
+  {
+   "id": "a-hurricane-flight",
+   "side": "allied",
+   "title": "A Hurricane flight",
+   "series": "blue",
+   "value": 2,
+   "branches": [
+    "air"
+   ]
+  },
+  {
+   "id": "hurricanes-in-numbers",
+   "side": "allied",
+   "title": "Hurricanes in numbers",
+   "series": "blue",
+   "value": 3,
+   "branches": [
+    "air"
+   ]
+  },
+  {
+   "id": "hurricanes-in-mass-production",
+   "side": "allied",
+   "title": "Hurricanes in mass production",
+   "series": "blue",
+   "value": 4,
+   "branches": [
+    "air"
+   ]
+  },
+  {
+   "id": "spitfires-in-mass-production",
+   "side": "allied",
+   "title": "Spitfires in mass production",
+   "series": "blue",
+   "value": 4,
+   "branches": [
+    "air"
+   ]
+  },
+  {
+   "id": "a-pilot-s-sortie",
+   "side": "allied",
+   "title": "A pilot's sortie",
+   "series": "battle",
+   "value": 1,
+   "branches": [
+    "air"
+   ]
+  },
+  {
+   "id": "a-fighter-squadron-scrambles",
+   "side": "allied",
+   "title": "A fighter squadron scrambles",
+   "series": "battle",
+   "value": 2,
+   "branches": [
+    "air"
+   ]
+  },
+  {
+   "id": "a-squadron-s-second-sortie-of-the-day",
+   "side": "allied",
+   "title": "A squadron's second sortie of the day",
+   "series": "battle",
+   "value": 2,
+   "branches": [
+    "air"
+   ]
+  },
+  {
+   "id": "a-wing-intercepts-the-raid",
+   "side": "allied",
+   "title": "A wing intercepts the raid",
+   "series": "battle",
+   "value": 3,
+   "branches": [
+    "air"
+   ]
+  },
+  {
+   "id": "fighters-break-up-the-bomber-formation",
+   "side": "allied",
+   "title": "Fighters break up the bomber formation",
+   "series": "battle",
+   "value": 3,
+   "branches": [
+    "air"
+   ]
+  },
+  {
+   "id": "a-fighter-group-s-full-effort",
+   "side": "allied",
+   "title": "A fighter group's full effort",
+   "series": "battle",
+   "value": 4,
+   "branches": [
+    "air"
+   ]
+  },
+  {
+   "id": "anti-aircraft-guns-in-numbers",
+   "side": "allied",
+   "title": "Anti aircraft guns in numbers",
+   "series": "blue",
+   "value": 3,
+   "branches": [
+    "land"
+   ]
+  },
+  {
+   "id": "a-tank-in-mass-production",
+   "side": "allied",
+   "title": "A tank in mass production",
+   "series": "blue",
+   "value": 4,
+   "branches": [
+    "land"
+   ]
+  },
+  {
+   "id": "a-commando-raid",
+   "side": "allied",
+   "title": "A commando raid",
+   "series": "battle",
+   "value": 3,
+   "branches": [
+    "land"
+   ]
+  },
+  {
+   "id": "an-infantry-division-attacks",
+   "side": "allied",
+   "title": "An infantry division attacks",
+   "series": "battle",
+   "value": 4,
+   "branches": [
+    "land"
+   ]
+  },
+  {
+   "id": "a-corvette",
+   "side": "allied",
+   "title": "A corvette",
+   "series": "blue",
+   "value": 2,
+   "branches": [
+    "sea"
+   ]
+  },
+  {
+   "id": "a-destroyer-patrol",
+   "side": "allied",
+   "title": "A destroyer patrol",
+   "series": "battle",
+   "value": 2,
+   "branches": [
+    "sea"
+   ]
+  },
+  {
+   "id": "a-letter-from-home",
+   "side": "allied",
+   "title": "A letter from home",
+   "series": "home",
+   "value": 1,
+   "branches": []
+  },
+  {
+   "id": "a-town-s-scrap-drive",
+   "side": "allied",
+   "title": "A town's scrap drive",
+   "series": "home",
+   "value": 2,
+   "branches": []
+  },
+  {
+   "id": "a-city-s-air-raid-shelters",
+   "side": "allied",
+   "title": "A city's air raid shelters",
+   "series": "home",
+   "value": 3,
+   "branches": []
+  },
+  {
+   "id": "a-war-bonds-drive",
+   "side": "allied",
+   "title": "A war bonds drive",
+   "series": "home",
+   "value": 4,
+   "branches": []
+  },
+  {
+   "id": "an-embassy-cable",
+   "side": "allied",
+   "title": "An embassy cable",
+   "series": "state",
+   "value": 1,
+   "branches": [],
+   "keyword": "backchannel"
+  },
+  {
+   "id": "an-envoy-s-mission",
+   "side": "allied",
+   "title": "An envoy's mission",
+   "series": "state",
+   "value": 2,
+   "branches": [],
+   "keyword": "ultimatum"
+  },
+  {
+   "id": "a-broadcast-to-the-nation",
+   "side": "allied",
+   "title": "A broadcast to the nation",
+   "series": "state",
+   "value": 3,
+   "branches": [],
+   "keyword": "evac"
+  },
+  {
+   "id": "a-treaty-signed",
+   "side": "allied",
+   "title": "A treaty signed",
+   "series": "state",
+   "value": 4,
+   "branches": [],
+   "keyword": "lend"
+  }
+ ]
+}

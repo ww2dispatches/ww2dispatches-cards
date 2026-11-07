@@ -1,0 +1,5 @@
+{
+ "note": "Which campaign runs in each month, by Eastern month (YYYY-MM). Add a month here when its campaign file is added, shortly before the month starts (the repo is public). preview is the campaign a tester sees before launch, with every chapter open.",
+ "preview": "1940-08-battle-of-britain",
+ "months": {}
+}

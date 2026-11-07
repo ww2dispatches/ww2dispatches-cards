@@ -1,0 +1,6 @@
+-- Campaigns (build session 2, 6 Nov 2026). Created on first use by functions/_lib/campaigns.js; here for the record.
+CREATE TABLE IF NOT EXISTS campaign_runs (id TEXT PRIMARY KEY, player_id TEXT NOT NULL, campaign_id TEXT NOT NULL, chapter INTEGER NOT NULL, day TEXT NOT NULL, run_no INTEGER NOT NULL, deck TEXT NOT NULL, seed TEXT NOT NULL, started_at TEXT NOT NULL, status TEXT NOT NULL DEFAULT 'play', choices TEXT, won INTEGER, resolve INTEGER, rounds INTEGER, waves INTEGER, destroyed REAL, score INTEGER, finished_at TEXT, UNIQUE (player_id, campaign_id, chapter, day, run_no));
+CREATE INDEX IF NOT EXISTS campaign_runs_player ON campaign_runs(player_id, campaign_id);
+CREATE TABLE IF NOT EXISTS campaign_progress (player_id TEXT NOT NULL, campaign_id TEXT NOT NULL, year TEXT NOT NULL, chapter INTEGER NOT NULL, won_at TEXT, best INTEGER, best_day TEXT, PRIMARY KEY (player_id, campaign_id, year, chapter));
+CREATE TABLE IF NOT EXISTS campaign_day_best (player_id TEXT NOT NULL, campaign_id TEXT NOT NULL, chapter INTEGER NOT NULL, day TEXT NOT NULL, score INTEGER NOT NULL, PRIMARY KEY (player_id, campaign_id, chapter, day));
+CREATE TABLE IF NOT EXISTS campaign_ranks (campaign_id TEXT NOT NULL, chapter INTEGER NOT NULL, kind TEXT NOT NULL, k TEXT NOT NULL, score INTEGER NOT NULL, n INTEGER NOT NULL DEFAULT 0, PRIMARY KEY (campaign_id, chapter, kind, k, score));

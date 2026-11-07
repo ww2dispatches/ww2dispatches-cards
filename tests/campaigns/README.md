@@ -30,3 +30,25 @@ chapter 1 about 90% / 52%, chapter 2 about 50% / 13%, chapter 3 about 29% / 4%.
 
 One change from the test bench: an attack put off twice by Ultimatum no longer skips a step of its
 unit's script (the bench advanced the script on the second hold as well).
+
+## Server checks (build session 2, 6 Nov 2026)
+
+`functions/_lib/campaigns.js` and `functions/api/campaign/` (index, start, finish, rank). The tables are
+created on first use, like Intercept's; `migrations/0005_campaigns.sql` holds the same for the record, so
+there is nothing to run in the D1 console. Campaigns stays closed until `CAMPAIGNS_LIVE` is true, except
+to a tester sending `x-campaigns-preview: 1` (who gets the reference campaign with every chapter open).
+
+With a local server and database as in `tests/declass/README.md` (steps 3 and 4, migrations 0001 to 0005):
+
+```
+DB=<the local D1 sqlite file> node --import ./tests/declass/json-loader.mjs tests/campaigns/server.mjs
+```
+
+It checks the campaign view signed out and in, chapter locks, runs left, deck checks on the server (size,
+branch, dossier, no number yet, era), a full run replayed by the server with the same result as the page,
+finishing once, another player's ticket, shared seeds (same run number same day, new seeds for the next
+run and the next day), refused runs (unfinished, illegal) never ranked, three runs a day with abandoned runs
+counted, winning to unlock the next chapter, each player counted once in the histograms, the percentile,
+three finishes at once counted once, release dates to the minute, and the launch gate.
+
+First run, 6 Nov 2026: 40 passed, 0 failed.
