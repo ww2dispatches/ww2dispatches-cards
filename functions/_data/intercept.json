@@ -69,11 +69,9 @@
       "difficulty": "medium",
       "cards": [
         "1944-10-20-leyte",
-        "1944-10-20-tdr",
         "1944-10-25-samar",
         "1944-10-25-johnston",
         "1942-10-26-hornet",
-        "namethis-1942-10-21-b17",
         "namethis-1944-10-24-musashi",
         "1943-11-01-bougainville",
         "1943-11-01-code-talkers"
@@ -82,7 +80,9 @@
         "1941-10-18-tojo",
         "1945-10-22-this-is-the-army",
         "1944-11-03-fugo",
-        "1944-11-03-fugo-spec"
+        "1944-11-03-fugo-spec",
+        "namethis-1942-10-21-b17",
+        "1944-10-20-tdr"
       ],
       "source": "Places in each record: Leyte, Bougainville, off Samar, Santa Cruz Islands, Sibuyan Sea, Central Pacific. Tojo led Japan into the Pacific war, and This Is the Army toured the Pacific, so both stay off boards with this group.",
       "added": "2026-10-27"
@@ -108,7 +108,7 @@
     {
       "id": "m-alamein",
       "link": "All three are from the Second Battle of El Alamein.",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "cards": [
         "1942-10-23-alamein",
         "1942-10-23-sherman",
@@ -123,7 +123,7 @@
     {
       "id": "m-north-atlantic",
       "link": "All three took place in the North Atlantic.",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "cards": [
         "1941-10-17-kearny",
         "1941-10-17-kearny-spec",
@@ -419,7 +419,7 @@
     {
       "id": "m-churchill",
       "link": "All three involve Winston Churchill.",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "cards": [
         "1940-10-21-churchill",
         "namethis-1944-10-18-tirpitz",
@@ -441,11 +441,11 @@
       "cards": [
         "1940-10-21-churchill",
         "1942-10-22-flagpole",
-        "1945-10-18-nuremberg-indictment",
         "1944-10-30-lost-battalion"
       ],
       "alsoFits": [
-        "1945-10-24-un"
+        "1945-10-24-un",
+        "1945-10-18-nuremberg-indictment"
       ],
       "source": "Churchill's broadcast to the French people (No. 010). Mark Clark met French General Charles Mast in French Algeria (No. 011). France was one of the four prosecuting powers at the International Military Tribunal (No. 003). The UN (France a permanent member) also fits loosely.",
       "added": "2026-10-27"
@@ -457,19 +457,19 @@
       "cards": [
         "1942-10-19-tin-cans",
         "1944-10-19-waves",
-        "1946-10-24-v2",
         "1940-10-26-mustang",
         "1941-10-27-fdr-navy-day",
         "1940-10-29-draft-lottery",
         "1940-10-29-draft-spec",
         "1941-10-31-rushmore",
-        "1947-11-02-h4-hercules",
-        "namethis-1942-10-28-gable"
+        "1947-11-02-h4-hercules"
       ],
       "alsoFits": [
         "1945-10-22-this-is-the-army",
         "1944-11-03-fugo",
-        "1944-11-03-fugo-spec"
+        "1944-11-03-fugo-spec",
+        "namethis-1942-10-28-gable",
+        "1946-10-24-v2"
       ],
       "source": "The tin can order and the WAVES decision were national U.S. orders (Nos. 005 and 006); the V-2 flew from White Sands, New Mexico (No. 016); the Mustang first flew at Mines Field, Los Angeles (No. 020); FDR spoke in Washington (No. 022). This Is the Army closed in Hawaii, then a territory, so it stays off boards with this group.",
       "added": "2026-10-27"
@@ -567,7 +567,7 @@
     {
       "id": "m-bougainville",
       "link": "All three took place on or near Bougainville.",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "cards": [
         "1944-10-20-tdr",
         "1943-11-01-bougainville",
