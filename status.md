@@ -22,4 +22,4 @@ Finished noon videos not yet scheduled (aim for 3 to 5). One line each: file on 
 ## Open checks
 Small loose ends a run can settle when it has a moment.
 * No. 010 (Churchill): the British official photo was supplied by Brian; its catalogue number is not confirmed.
-* No. 053 (Tirpitz, Thu 12 Nov): the only noon slot of 8 to 14 Nov left open (film in Source Film, 1944-11-12-tirpitz.webm). Board task cut-living-card-053 asks Brian to have Claude cut it in the Project with his computer linked, due Sat 7 Nov 9 a.m. If it never arrives, the fallback that needs nothing from Brian is a Story Card for the same event.
+* No. 053 (Tirpitz, Thu 12 Nov): Living Card cut, rendered, and scheduled on all six channels on 7 Nov 2026 in the Project. Close board task cut-living-card-053.

@@ -1,6 +1,6 @@
 # Video Press Kit: Dispatch No. 053, The Tirpitz goes down
 
-Event date: 1944-11-12 · Series: Battle Lines · Living Card · Somber · Cut 5 Nov 2026 in the Project from Source Film (needs brian day)
+Event date: 1944-11-12 · Series: Battle Lines · Living Card · Somber · Cut 5 Nov 2026 in the Project from Source Film (needs brian day); the 5 Nov files were never pushed, so it was re-cut, rendered, and scheduled on 7 Nov 2026
 
 ## Video files
 | Use | File | Size |
@@ -17,7 +17,7 @@ Pass: the first frame shows a Tallboy burst flashing on the shore beside a tower
 Britain had tried for years to sink her.
 
 ## Schedule (Thu 12 Nov 2026)
-* 12:00 p.m. Mountain: Living Card on all six channels in Buffer (X video on X; 4:5 video on Instagram as a Reel shared to the feed and on Facebook as a post; Threads video on Threads; vertical video on YouTube Shorts and TikTok). No AI flag. Somber: no question or soft ask.
+* Scheduled 7 Nov 2026. 12:00 p.m. Mountain: Living Card on all six channels in Buffer (X video on X; 4:5 video on Instagram as a Reel shared to the feed and on Facebook as a post; Threads video on Threads; vertical video on YouTube Shorts and TikTok). No AI flag. Somber: no question or soft ask.
 
 ## Short caption: X, Instagram, Threads, Facebook
 Film shot from a No. 463 Squadron RAAF aircraft over Tromso, Norway, on 12 November 1944. Each Lancaster carried one Tallboy, a 12,000 pound bomb, and here they burst around the Tirpitz as she lies hidden under the smoke. Within minutes she was listing hard, and after a magazine exploded she rolled over and capsized. Australian film, Australian War Memorial.

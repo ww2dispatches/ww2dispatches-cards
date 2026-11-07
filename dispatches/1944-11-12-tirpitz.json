@@ -142,7 +142,7 @@
   "status": "secured",
   "record": "Australian War Memorial C189542, No. 463 Squadron RAAF film (Wikimedia Commons)",
   "url": "https://commons.wikimedia.org/wiki/File:Operation-Catechism-RAF-sinks-Tirpitz.webm",
-  "file": "footage/1944-11-12-tirpitz.mp4 in the videos repo (cut 5 Nov 2026 from the Source Film copy)",
+  "file": "footage/1944-11-12-tirpitz.mp4 (re-cut 7 Nov 2026 in the Project from the Source Film copy; committed to the videos repo inbox, the next sweep moves it to R2)",
   "sound": false,
   "shot_notes": "Film of Operation Catechism shot from a No. 463 Squadron RAAF film aircraft on 12 November 1944: the attack and the destruction of the battleship. 3 min 39 s, 632 x 480, WebM (VP9). The current Commons version (18 March 2025) is flipped horizontally from the original and has the Operation Paravane footage cut from the start. Download the original file (small enough, no transcode needed): https://upload.wikimedia.org/wikipedia/commons/b/b5/Operation-Catechism-RAF-sinks-Tirpitz.webm . Sound not confirmed; check on cutting. Strong shots not yet logged; open on bomb bursts or the ship under smoke. Brian saved the WebM into WW2 Dispatches\\Source Film as 1944-11-12-tirpitz.webm on 5 Nov 2026; Claude cuts the Living Card in the Project with his computer linked.",
   "license": "Public domain, Australian Crown copyright expired (PD-AustraliaGov per Commons, AWM C189542)",
@@ -194,7 +194,7 @@
   "tiktokCaption": "Britain spent years trying to sink her. Real film from the Lancaster raid on the Tirpitz, 12 November 1944. #WW2 #OnThisDay #History #Tirpitz #RAF",
   "thumbnailCheck": "Pass: the first frame shows a Tallboy burst flashing on the shore beside a towering smoke cloud over the anchorage; by 2 seconds a second burst has erupted on the beach. Opening tagged \"combat or firing\" from the frames at 0.3 and 2 seconds.",
   "videoTime": "12:00 America/Denver",
-  "scheduled": "Not yet: rendered 5 Nov, waiting on the videos repo push before Buffer"
+  "scheduled": true
  },
  "body": "Each bomber carried a single bomb weighing 12,000 pounds. Britain had been trying to sink this one ship for years.\n\n12 November 1944. RAF Lancasters of No. 9 and No. 617 Squadrons, led by Wing Commander J. B. Tait, attacked the German battleship Tirpitz near Tromso, in the far north of Norway. Each carried a Tallboy, a deep penetration bomb.\n\nThe bombers began their run at 09:35. At least two Tallboys hit her directly. Within minutes she was listing hard, and after a magazine exploded she rolled over and capsized.\n\nSomewhere between about 950 and 1,204 German sailors died. Men trapped inside the upturned hull were cut free through her exposed bottom; 82 were rescued that way.\n\nTirpitz carried eight 15 inch guns and had hardly fought. But simply by existing she forced the Royal Navy to keep powerful forces at home to watch her. Midget submarines, carrier dive bombers, and an earlier Tallboy raid had all tried to finish her.\n\nWith Tirpitz gone, the last German battleship threat to the Arctic convoys was over.",
  "addons": [],
@@ -208,6 +208,12 @@
   "x": "6aee9553229bf05daf247f4a",
   "instagram": "6aee9559004e4879a72de51b",
   "threads": "6aee955c9214322f68c7ee91",
-  "facebook": "6aee95619214322f68c7f356"
+  "facebook": "6aee95619214322f68c7f356",
+  "x_film": "6aef3b6d004e4879a7619066",
+  "instagram_reel": "6aef3b6d51492b796ee233a3",
+  "threads_film": "6aef3b6e229bf05daf586912",
+  "facebook_film": "6aef3b6ed6bbae6fa1933c28",
+  "youtube": "6aef3b6f229bf05daf586979",
+  "tiktok": "6aef3b70004e4879a761913e"
  }
 }
