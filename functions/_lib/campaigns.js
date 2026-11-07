@@ -24,10 +24,13 @@ export function runsPerDay(request) {
 }
 export const CHOICES_MAX = 4000;
 // Intel paid when a chapter's month ends, by the player's band in that chapter's month rank (Campaigns
-// doc, Ranking: top 5%, top 25%, top 50%, everyone who finished a run). Start values for Brian to approve.
+// doc, Ranking). Approved by Brian, 7 Nov 2026: top 5% 50, top 25% 30, top 50% 20, and 10 for everyone
+// else who won the chapter that month. The top three bands go purely by rank, so a strong run in a hard
+// chapter still counts; the last band needs a win (Brian: anyone who won the chapter).
 export const BAND_INTEL = { top5: 50, top25: 30, top50: 20, finished: 10 };
 export const bandOf = top => top <= 5 ? 'top5' : top <= 25 ? 'top25' : top <= 50 ? 'top50' : 'finished';
-export const BAND_NAME = { top5: 'top 5%', top25: 'top 25%', top50: 'top 50%', finished: 'finished' };        // a finished run is a few hundred choices; anything far past that is refused
+export const BAND_NAME = { top5: 'top 5%', top25: 'top 25%', top50: 'top 50%', finished: 'won the chapter' };
+const won_at = row => Boolean(row && row.won_at);        // a finished run is a few hundred choices; anything far past that is refused
 
 const CAMPAIGNS = new Map([battleOfBritain].map(c => [c.id, c]));
 export const LOANERS = loanerData.loaners;
@@ -195,17 +198,20 @@ export async function settleFor(env, playerId, t) {
     if (!campaign || !settles(env, r.campaign_id, r.year, campaign) || t < monthEndsAt(campaign, r.year)) continue;
     const pc = await percentile(db, r.campaign_id, r.chapter, 'chapter', r.year, r.best);
     if (!pc) continue;
-    const band = bandOf(pc.top), intel = BAND_INTEL[band], at = t.toISOString();
+    const won = await db.prepare('SELECT won_at FROM campaign_progress WHERE player_id = ? AND campaign_id = ? AND year = ? AND chapter = ?').bind(playerId, r.campaign_id, r.year, r.chapter).first();
+    let band = bandOf(pc.top);
+    if (band === 'finished' && !(won && won_at(won))) band = 'none'; // settled, but nothing to pay
+    const intel = band === 'none' ? 0 : BAND_INTEL[band], at = t.toISOString();
     const tok = newRunId();
     const mine = `EXISTS (SELECT 1 FROM campaign_payouts WHERE player_id = ?1 AND campaign_id = ?2 AND year = ?3 AND chapter = ?4 AND tok = ?5)`;
     const res = await db.batch([
       db.prepare('INSERT INTO campaign_payouts (player_id, campaign_id, year, chapter, top, players, band, intel, paid_at, tok) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) ON CONFLICT DO NOTHING')
         .bind(playerId, r.campaign_id, r.year, r.chapter, pc.top, pc.players, band, intel, at, tok),
       db.prepare(`UPDATE players SET intel = intel + ?6 WHERE id = ?1 AND ${mine}`).bind(playerId, r.campaign_id, r.year, r.chapter, tok, intel),
-      db.prepare(`INSERT INTO intel_log (player_id, at, delta, reason, slot_key) SELECT ?1, ?7, ?6, 'campaign', ?8 WHERE ${mine}`)
+      db.prepare(`INSERT INTO intel_log (player_id, at, delta, reason, slot_key) SELECT ?1, ?7, ?6, 'campaign', ?8 WHERE ?6 > 0 AND ${mine}`)
         .bind(playerId, r.campaign_id, r.year, r.chapter, tok, intel, at, `cmp:${r.campaign_id}:${r.year}:${r.chapter}`),
     ]);
-    if (res[0].meta && res[0].meta.changes) paid.push({ campaign: r.campaign_id, title: campaign.title, year: r.year, chapter: r.chapter, name: (campaign.chapters.find(c => c.n === r.chapter) || {}).name, top: pc.top, players: pc.players, band, intel });
+    if (res[0].meta && res[0].meta.changes && intel > 0) paid.push({ campaign: r.campaign_id, title: campaign.title, year: r.year, chapter: r.chapter, name: (campaign.chapters.find(c => c.n === r.chapter) || {}).name, top: pc.top, players: pc.players, band, intel });
   }
   return paid;
 }
@@ -213,7 +219,7 @@ export async function settleFor(env, playerId, t) {
 // browser), so a second load at the same moment can never swallow the notice.
 export async function recentPayouts(db, playerId, t) {
   const since = new Date(t.getTime() - 14 * 86400000).toISOString();
-  const rows = (await db.prepare('SELECT * FROM campaign_payouts WHERE player_id = ? AND paid_at >= ? ORDER BY paid_at').bind(playerId, since).all()).results || [];
+  const rows = (await db.prepare('SELECT * FROM campaign_payouts WHERE player_id = ? AND paid_at >= ? AND intel > 0 ORDER BY paid_at').bind(playerId, since).all()).results || [];
   return rows.map(r => { const c = CAMPAIGNS.get(r.campaign_id); return { key: `${r.campaign_id}:${r.year}:${r.chapter}`, campaign: r.campaign_id, title: c ? c.title : '', year: r.year, chapter: r.chapter, name: c ? (c.chapters.find(x => x.n === r.chapter) || {}).name : '', top: r.top, players: r.players, band: r.band, intel: r.intel }; });
 }
 export { gameDay, addDays };

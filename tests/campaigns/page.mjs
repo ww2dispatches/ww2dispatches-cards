@@ -196,10 +196,16 @@ ok(/2 of 3 runs left today/.test(await text('#cmpBody')), 'the finished run coun
 // pays the chapter and shows the results once.
 await page.click('#cmpBack').catch(() => {});
 if (!(await page.$('#cmpBack:not([hidden])'))) { await page.click('#chBack'); await page.click('#cmpBack'); }
-await page.waitForSelector('#sheet:not([hidden])', { timeout: 10000 }).catch(() => {});
-ok(/The month's ranks are settled/.test(await text('#sheetCard')) && /\+\d+ Intel/.test(await text('#sheetCard')), 'the month end results show on the home screen with the Intel paid');
-await shot('paid');
-await page.click('#sheet [data-close]');
+await page.waitForSelector('#sheet:not([hidden])', { timeout: 6000 }).catch(() => {});
+const payout = db.prepare('SELECT band, intel FROM campaign_payouts WHERE player_id = ?').get(P);
+if (payout && payout.intel > 0) {
+  ok(/The month's ranks are settled/.test(await text('#sheetCard')) && new RegExp(`\\+${payout.intel} Intel`).test(await text('#sheetCard')), 'the month end results show on the home screen with the Intel paid');
+  await shot('paid');
+  await page.click('#sheet [data-close]');
+} else {
+  // a lost run ranked below the top half pays nothing (the last band needs a win), so no notice
+  ok(payout && payout.band === 'none' && await page.$eval('#sheet', el => el.hidden), 'a lost run outside the top half settles with no payout and no notice');
+}
 ok(errs.length === 0, 'no page errors: ' + errs.join(' | '));
 await b.close();
 console.log(`${pass} passed, ${failN} failed`);

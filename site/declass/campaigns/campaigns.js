@@ -141,7 +141,7 @@ const lastDay = () => DATA && DATA.monthEnds ? new Date(Date.parse(DATA.monthEnd
 const rankText = r => r ? `top ${r.top}% of ${r.players} player${r.players === 1 ? '' : 's'}` : '';
 function bandsLine() {
   const b = (DATA && DATA.bands) || {};
-  return `When the month ends${lastDay() ? ' (' + lastDay() + ')' : ''}, each chapter's rank settles and pays Intel: top 5% get ${b.top5}, top 25% get ${b.top25}, top 50% get ${b.top50}, and anyone who finished a run gets ${b.finished}.`;
+  return `When the month ends${lastDay() ? ' (' + lastDay() + ')' : ''}, each chapter's rank settles and pays Intel: top 5% get ${b.top5}, top 25% get ${b.top25}, top 50% get ${b.top50}, and everyone else who won the chapter gets ${b.finished}.`;
 }
 function rankBoxHTML(ch) {
   if (!ch.rank || !ch.rank.month) return '';
@@ -184,7 +184,7 @@ function paidNotice() {
   const total = list.reduce((a, p) => a + p.intel, 0);
   D().sheet(`<div class="sheettop"><span class="howstamp">Campaign results</span><button class="howx" data-close aria-label="Close">✕</button></div>
     <h2>The month's ranks are settled</h2>
-    ${list.map(p => `<p class="sheetline"><b>${esc(p.title.split(':')[0])}, chapter ${p.chapter}: ${esc(p.name || '')}</b><br>${p.band === 'finished' ? `You finished a run (top ${p.top}% of ${p.players})` : `Top ${p.top}% of ${p.players} player${p.players === 1 ? "" : "s"}`} · <img class="itok" src="/declass/icons/intel.svg" alt="">+${p.intel} Intel</p>`).join('')}
+    ${list.map(p => `<p class="sheetline"><b>${esc(p.title.split(':')[0])}, chapter ${p.chapter}: ${esc(p.name || '')}</b><br>${p.band === 'finished' ? `You won the chapter (top ${p.top}% of ${p.players})` : `Top ${p.top}% of ${p.players} player${p.players === 1 ? "" : "s"}`} · <img class="itok" src="/declass/icons/intel.svg" alt="">+${p.intel} Intel</p>`).join('')}
     <p class="sheetnote">${total} Intel added to your balance. Ranks come from each player's best run of the month, with no names anywhere.</p>
     <button class="btn" data-close type="button">Back to Declass</button>`);
 }

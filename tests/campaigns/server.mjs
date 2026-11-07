@@ -179,6 +179,13 @@ const play = async (p, ch, now = NOW, deck = DECK, cheat = null) => {
   ok(db.prepare("SELECT COUNT(*) AS n FROM intel_log WHERE player_id = ? AND reason = 'campaign'").get(id('D0')).n === 1, 'and logged as Campaigns month end');
   const again = await Promise.all([1, 2, 3].map(() => req('state', { player: 'D0', now: '2026-09-02T12:00:00Z' })));
   ok(again.every(r => r.data.campaignPaid.length === 1 && r.data.campaignPaid[0].intel === paid[0].intel) && intel('D0') === i0 + (paid[0] ? paid[0].intel : 0), 'paid once, even with three loads at once; the result stays listed for the page to show once');
+  // The last band needs a win (Brian, 7 Nov 2026): a lost run at the bottom of the rank settles but pays nothing.
+  db.prepare("INSERT OR IGNORE INTO players (id, created_at, tester) VALUES (?, '2026-11-01T00:00:00Z', 1)").run(id('D2'));
+  db.prepare("INSERT INTO campaign_progress (player_id, campaign_id, year, chapter, won_at, best, best_day) VALUES (?, ?, '2026', 1, NULL, 0, '2026-08-20')").run(id('D2'), campaign.id);
+  db.prepare("INSERT INTO campaign_ranks (campaign_id, chapter, kind, k, score, n) VALUES (?, 1, 'chapter', '2026', 0, 1) ON CONFLICT DO UPDATE SET n = n + 1").run(campaign.id);
+  const lost = await req('state', { player: 'D2', now: '2026-09-02T12:00:00Z' });
+  const row = db.prepare('SELECT band, intel FROM campaign_payouts WHERE player_id = ?').get(id('D2'));
+  ok(lost.data.campaignPaid.length === 0 && intel('D2') === 0 && row && row.band === 'none' && row.intel === 0 && db.prepare('SELECT COUNT(*) AS n FROM intel_log WHERE player_id = ?').get(id('D2')).n === 0, 'a loss at the bottom of the rank settles but pays nothing: the last band needs a win');
   const none = await req('state', { player: 'D1', now: '2026-09-02T12:00:00Z' });
   ok(none.data.campaignPaid.length === 0 && intel('D1') === 0, 'no run, no payout');
   const v = await req('campaign', { player: 'D0', now: NOW });
