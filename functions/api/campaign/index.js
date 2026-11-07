@@ -13,7 +13,7 @@ export async function onRequestGet({ request, env }) {
   const slot = C.campaignFor(t, !C.CAMPAIGNS_LIVE);
   if (!slot) return json({ status: 'none' });
   const { campaign } = slot, day = C.gameDay(t);
-  const base = { status: 'open', day, runsPerDay: C.RUNS_PER_DAY, campaign: { id: campaign.id, title: campaign.title, council: campaign.council, side: campaign.side, year: campaign.year, startResolve: campaign.startResolve, table: campaign.table } };
+  const base = { status: 'open', day, runsPerDay: C.runsPerDay(request), campaign: { id: campaign.id, title: campaign.title, council: campaign.council, side: campaign.side, year: campaign.year, startResolve: campaign.startResolve, table: campaign.table } };
   if (!player) return json({ ...base, status: 'signin', chapters: campaign.chapters.map(ch => C.publicChapter(slot, ch, t, new Map())) });
   const db = env.DB;
   await C.ensureTables(db);
@@ -21,7 +21,7 @@ export async function onRequestGet({ request, env }) {
   const chapters = [];
   for (const ch of campaign.chapters) {
     const pc = C.publicChapter(slot, ch, t, progress);
-    if (pc.released) pc.runsLeft = Math.max(0, C.RUNS_PER_DAY - await C.runsToday(db, player.id, campaign.id, ch.n, day));
+    if (pc.released) pc.runsLeft = Math.max(0, C.runsPerDay(request) - await C.runsToday(db, player.id, campaign.id, ch.n, day));
     chapters.push(pc);
   }
   const owned = (await db.prepare('SELECT DISTINCT card_id FROM pulls WHERE player_id = ?').bind(player.id).all()).results || [];

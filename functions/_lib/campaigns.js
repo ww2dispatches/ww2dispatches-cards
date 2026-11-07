@@ -16,6 +16,12 @@ export const CAMPAIGNS_LIVE = false;
 
 // Settings (Campaigns Build doc, "Settings"): start values, tuned in the soft launch.
 export const RUNS_PER_DAY = 3;          // per chapter, per Eastern game day
+export const PREVIEW_RUNS_PER_DAY = 50; // on a preview deploy (*.pages.dev, its own database), so Brian can test freely
+// Runs a day for this request: the real setting on ww2dispatches.com (and locally), a high limit on a
+// branch preview, which uses the separate preview database and never reaches players.
+export function runsPerDay(request) {
+  try { return new URL(request.url).hostname.endsWith('.pages.dev') ? PREVIEW_RUNS_PER_DAY : RUNS_PER_DAY; } catch { return RUNS_PER_DAY; }
+}
 export const CHOICES_MAX = 4000;        // a finished run is a few hundred choices; anything far past that is refused
 
 const CAMPAIGNS = new Map([battleOfBritain].map(c => [c.id, c]));

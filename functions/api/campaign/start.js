@@ -27,7 +27,7 @@ export async function onRequestPost({ request, env }) {
   if (!pc.unlocked) return fail(409, 'locked');
   const day = C.gameDay(t);
   const used = await C.runsToday(db, player.id, campaign.id, chN, day);
-  if (used >= C.RUNS_PER_DAY) return fail(409, 'no runs left');
+  if (used >= C.runsPerDay(request)) return fail(409, 'no runs left');
   const owned = new Set(((await db.prepare('SELECT DISTINCT card_id FROM pulls WHERE player_id = ?').bind(player.id).all()).results || []).map(r => r.card_id));
   const { deck, problems } = C.buildDeck(campaign, chN, body.deck, owned, t);
   if (!deck) return json({ error: 'deck', problems }, 400);
@@ -39,5 +39,5 @@ export async function onRequestPost({ request, env }) {
     if (String(err && err.message).includes('UNIQUE')) return fail(409, 'try again'); // two starts at once took the same run number
     throw err;
   }
-  return json({ ticket: await C.ticketFor(env, id, player.id), seed, runNo, runsLeft: C.RUNS_PER_DAY - runNo, deck, engine: 1 });
+  return json({ ticket: await C.ticketFor(env, id, player.id), seed, runNo, runsLeft: C.runsPerDay(request) - runNo, deck, engine: 1 });
 }
