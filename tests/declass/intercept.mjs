@@ -140,7 +140,7 @@ for (let d = 0; d < 6; d++) {
 // deal-rules.mjs checks the oldest first order directly.
 const isRepeat = hards.map((h, i) => hards.indexOf(h) !== i);
 ok(isRepeat.every((r, i) => r === marks[i]), 'a hard group repeats only as a marked fallback: ' + hards.map((h, i) => h + (marks[i] ? '*' : '')).join(' '));
-ok(isRepeat.slice(0, 5).filter(Boolean).length <= 1, 'unseen hard groups come first: ' + hards.join(' '));
+ok(hards.length === 6, 'a grid dealt every day for six days: ' + hards.join(' ')); // the order rule itself is checked in deal-rules.mjs
 ok(db.prepare('SELECT COUNT(*) AS n FROM intercept_seen WHERE player_id = ?').get(id('I7')).n === new Set(hards).size, 'hard groups seen recorded');
 
 // Tester practice replays (7 Nov 2026): testers only, with the preview flag; no Intel; their own claim key.
