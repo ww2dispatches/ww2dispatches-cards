@@ -232,7 +232,7 @@
     // Answer the tap at once (7 Nov 2026): the guess goes to the server and the result can take a moment
     // on a phone, so the button says so and the three tiles pulse until it comes back.
     const fb = $('icpFile'); fb.disabled = true; fb.classList.add('wait'); fb.textContent = 'Filing…';
-    document.querySelectorAll('#icpDesk .icpcard.sel').forEach(b => b.classList.add('filing'));
+    document.querySelectorAll('#icpDesk .icpcard.sel').forEach(b => { b.classList.remove('shake'); b.classList.add('filing'); });
     D().sfx('slide', 0.5);
     const pick = sel.slice();
     D().api('intercept/guess', { day: P.day, pick }).then(d => {
@@ -249,7 +249,8 @@
         return;
       }
       if (d.result === 'wrong') {
-        document.querySelectorAll('#icpDesk .icpcard.sel').forEach(b => { b.classList.remove('shake'); void b.offsetWidth; b.classList.add('shake'); });
+        // The shake clears itself when it ends, so it can never replay later and look like a hint (7 Nov 2026).
+        document.querySelectorAll('#icpDesk .icpcard.sel').forEach(b => { b.classList.remove('shake'); void b.offsetWidth; b.classList.add('shake'); b.addEventListener('animationend', () => b.classList.remove('shake'), { once: true }); setTimeout(() => b.classList.remove('shake'), 600); });
         D().sfx('locked'); D().sfx('stampA', 0.15);
         rejectBanner(d.puzzle.mistakes);
         setTimeout(() => {
