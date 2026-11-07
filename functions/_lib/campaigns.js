@@ -209,10 +209,11 @@ export async function settleFor(env, playerId, t) {
   }
   return paid;
 }
-// Settled results the player hasn't been shown yet; marks them shown.
-export async function unseenPayouts(db, playerId) {
-  const rows = (await db.prepare('SELECT * FROM campaign_payouts WHERE player_id = ? AND seen = 0').bind(playerId).all()).results || [];
-  if (rows.length) await db.prepare('UPDATE campaign_payouts SET seen = 1 WHERE player_id = ? AND seen = 0').bind(playerId).run();
-  return rows.map(r => { const c = CAMPAIGNS.get(r.campaign_id); return { campaign: r.campaign_id, title: c ? c.title : '', year: r.year, chapter: r.chapter, name: c ? (c.chapters.find(x => x.n === r.chapter) || {}).name : '', top: r.top, players: r.players, band: r.band, intel: r.intel }; });
+// Settled results from the last two weeks. The page shows each one once (it remembers which in the
+// browser), so a second load at the same moment can never swallow the notice.
+export async function recentPayouts(db, playerId, t) {
+  const since = new Date(t.getTime() - 14 * 86400000).toISOString();
+  const rows = (await db.prepare('SELECT * FROM campaign_payouts WHERE player_id = ? AND paid_at >= ? ORDER BY paid_at').bind(playerId, since).all()).results || [];
+  return rows.map(r => { const c = CAMPAIGNS.get(r.campaign_id); return { key: `${r.campaign_id}:${r.year}:${r.chapter}`, campaign: r.campaign_id, title: c ? c.title : '', year: r.year, chapter: r.chapter, name: c ? (c.chapters.find(x => x.n === r.chapter) || {}).name : '', top: r.top, players: r.players, band: r.band, intel: r.intel }; });
 }
 export { gameDay, addDays };

@@ -213,7 +213,8 @@ body.cmpon{overflow:hidden}
 .hcard.up{transform:rotate(0) translateY(-34px) scale(1.08);z-index:5}
 .hcard.ult::after{content:"ULTIMATUM: TAP TO PLAY";position:absolute;left:50%;top:-14px;transform:translateX(-50%);white-space:nowrap;font-family:var(--type);font-size:8px;background:#B8862B;color:#1A1612;padding:1px 4px}
 /* the lifted card's plays */
-.liftbox{position:absolute;left:10px;right:10px;bottom:150px;z-index:20;padding:10px 12px 12px;background:#EDE4CF;color:#1A1612;border-radius:3px;box-shadow:0 8px 24px rgba(0,0,0,.6)}
+.liftbox{position:absolute;left:10px;right:10px;top:62px;z-index:20;padding:10px 12px 12px;background:#EDE4CF;color:#1A1612;border-radius:3px;box-shadow:0 8px 24px rgba(0,0,0,.6)}
+.liftbox.low{top:auto;bottom:150px}
 .liftbox .lbtop{display:flex;justify-content:space-between;align-items:center;gap:8px}
 .liftbox .lbtop b{font-family:var(--display);font-size:17px;line-height:1.15}
 .liftbox .howx{color:#1A1612}
@@ -263,6 +264,16 @@ body.cmpon{overflow:hidden}
 .cabinet{margin:4px 0 10px;padding:10px 12px;background:#1A1612;color:#EDE4CF;border-left:4px solid #B8862B}
 .cabinet span{display:block;font-family:var(--display);font-weight:700;letter-spacing:.12em;font-size:12px;color:#f0c46a;margin-bottom:4px}
 .cabinet p{margin:4px 0;font-family:var(--type);font-size:12.5px;line-height:1.4}
+/* a lifted card aims at the table (6 Nov 2026) */
+.lpiece.aim,.epiece.target{box-shadow:0 0 0 3px #f0c46a,0 0 14px rgba(240,196,106,.6),0 3px 6px rgba(0,0,0,.45)}
+.lpiece.aim{filter:none}
+.aimtag{position:absolute;left:50%;bottom:-17px;transform:translateX(-50%);white-space:nowrap;font-family:var(--display);font-weight:700;font-size:9px;letter-spacing:.06em;background:#f0c46a;color:#1A1612;padding:1px 5px;border-radius:2px;z-index:3;pointer-events:none}
+.ttile.res.aim{cursor:pointer;box-shadow:0 0 0 3px #f0c46a,0 0 14px rgba(240,196,106,.6)}
+.ttile.res .aimtag{bottom:-12px}
+.lslot.aim{display:grid;place-items:center;border:2px dashed #f0c46a;background:rgba(240,196,106,.18);cursor:pointer;padding:0}
+.lslot.aim i{font-style:normal;font-family:var(--display);font-weight:700;font-size:10px;letter-spacing:.1em;color:#7a5a1a}
+.lbhint{margin:6px 0 2px;font-family:var(--display);font-weight:500;font-size:14px;color:#7a5a1a}
+.sndrow{display:flex;gap:8px}.sndrow .btn{flex:1}
 /* debriefs and the end */
 .dbf{width:100%;max-width:440px;max-height:100%;padding:18px 18px 16px;background:#EDE4CF;color:#1A1612;border-radius:3px;box-shadow:0 10px 30px rgba(0,0,0,.6);text-align:left}
 .dbf .dstamp{display:inline-block;margin:0 0 6px;font-family:var(--display);font-weight:700;letter-spacing:.14em;font-size:15px;color:#5E6B3A;border:3px double #5E6B3A;padding:1px 9px;transform:rotate(-4deg)}

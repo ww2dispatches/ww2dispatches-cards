@@ -10,7 +10,7 @@ const { chromium } = await import(process.env.PLAYWRIGHT || 'playwright');
 const BASE = 'http://localhost:8799', P = 'B' + 'x'.repeat(31);
 const db = new DatabaseSync(process.env.DB);
 db.prepare("INSERT OR IGNORE INTO players (id, created_at, tester) VALUES (?, '2026-11-01T00:00:00Z', 1)").run(P);
-db.prepare('DELETE FROM campaign_runs WHERE player_id = ?').run(P);
+for (const t of ['campaign_runs', 'campaign_progress', 'campaign_day_best', 'campaign_payouts']) { try { db.prepare(`DELETE FROM ${t} WHERE player_id = ?`).run(P); } catch (e) {} } // a fresh start for player B
 let pass = 0, failN = 0;
 const ok = (cond, msg) => { if (cond) pass++; else { failN++; console.log('FAIL:', msg); } };
 
@@ -25,6 +25,10 @@ page.on('pageerror', e => errs.push(e.message));
 let n = 0;
 const shot = async name => { if (process.env.SHOTS) { await page.waitForTimeout(400); await page.screenshot({ path: `${process.env.SHOTS}/${String(++n).padStart(2, '0')}-${name}.png` }); } };
 const text = sel => page.$eval(sel, el => el.textContent);
+// Lifting a card redraws the table, so hand cards are found again by their place in the deck each time.
+const litCards = () => page.$$eval('.hcard.lit', els => els.map(e => e.dataset.h));
+const liftCard = h => page.click(`.hcard[data-h="${h}"]`);
+const dropCard = () => page.click('#lbX').catch(() => {});
 
 // The door only for a preview tester
 await page.goto(BASE + '/declass?key=t');
@@ -83,16 +87,15 @@ await shot('calm');
 await page.click('#cmpTele');
 
 // Round 1: put a machine down (the engine checks every play)
-const lit = await page.$$('.hcard.lit');
 let placed = false;
-for (const h of lit) { await h.click(); const p = await page.$('.lbplay'); if (p && /Put on your line/.test(await p.textContent())) { await p.click(); placed = true; break; } await h.click(); }
+for (const h of await litCards()) { await liftCard(h); const p = await page.$('.lbplay'); if (p && /Put on your line/.test(await p.textContent())) { await p.click(); placed = true; break; } await dropCard(); }
 ok(placed && (await page.$$('.lrow .lpiece.fresh')).length === 1, 'a machine goes on the line, SETTING UP');
 ok(/0\/2|1\/2/.test(await text('.ttile.sup')), 'Supply goes down by its cost');
 await shot('placed');
 // Undo it, then play it again
 await page.click('#cmpMenu'); await page.click('#mUndo');
 ok((await page.$$('.lrow .lpiece')).length === 0, 'Undo takes the move back');
-for (const h of await page.$$('.hcard.lit')) { await h.click(); const p = await page.$('.lbplay'); if (p && /Put on your line/.test(await p.textContent())) { await p.click(); break; } await h.click(); }
+for (const h of await litCards()) { await liftCard(h); const p = await page.$('.lslot.aim'); if (p) { await p.click(); break; } await dropCard(); }
 // A reload picks the run up where it was
 await page.reload();
 await page.waitForSelector('#cmpTile');
@@ -102,6 +105,16 @@ await page.click('#cmpResume');
 ok((await page.$$('.lrow .lpiece')).length === 1, 'a reloaded page picks the run up where it was');
 await page.click('#cmpAct');
 ok(/Round 2|round 3/.test(await text('.tlamp')) && (await page.$$('.lrow .lpiece.fresh')).length === 0, 'End turn: round 2, the machine has set up');
+// Arming by tapping the machine (Brian, 6 Nov 2026): a lifted operation lights the machines it can go on
+let armed = null;
+for (const h of await litCards()) {
+  await liftCard(h);
+  const m = await page.$('.lrow .lpiece.aim');
+  if (m && /ATTACK/.test(await m.textContent())) { await shot('aim'); await m.click(); armed = true; break; }
+  await dropCard();
+}
+if (armed) ok((await page.$$('.lrow .lpiece .batk')).length === 1, 'tapping the lit machine arms it: the red attack badge shows');
+else console.log('  (no operation in hand this run, arming by tap not checked)');
 await page.click('#cmpAct');
 ok(/THE RAID/.test(await text('.tlamp')) && (await page.$$('.band.chan .epiece')).length === 2, 'round 3: the raid comes into the Channel');
 await page.click('#cmpTele').catch(() => {});
@@ -117,6 +130,9 @@ ok((await page.$$('.col .lpiece')).length === 1 && (await page.$$('.col .plq')).
 ok(/Resolve/.test(await text('.fcast')), 'the forecast says what the raid will do to Resolve');
 await shot('blocking');
 await page.click('#cmpMenu');
+ok(/Sound: off/.test(await text('#mSnd')), 'sound is off until turned on in the round menu');
+await page.click('#mSnd');
+ok(/Sound: on/.test(await text('#mSnd')) && await page.evaluate(() => JSON.parse(localStorage.getItem('declass_cmp_sound')).on === true), 'the round menu turns sound on, and it is remembered');
 ok(/THE WAR CABINET ADVISES/.test(await text('#sheetCard')) && /This raid brings \d+ attack/.test(await text('#sheetCard')), 'the War Cabinet advises in the round menu');
 await page.click('#sheet [data-close]');
 const plan = await page.$eval('.fcast', el => el.textContent);
@@ -130,11 +146,11 @@ await shot('turn');
 async function playTurn() {
   for (let k = 0; k < 8; k++) {
     let played = false;
-    for (const h of await page.$$('.hcard.lit')) {
-      await h.click();
-      const p = await page.$('.lbplay');
-      if (p) { await p.click(); played = true; break; }
-      await page.click('#lbX').catch(() => {});
+    for (const h of await litCards()) {
+      await liftCard(h);
+      const t = (await page.$('.lrow .lpiece.aim')) || (await page.$('#cmpRes.aim')) || (await page.$('.lslot.aim')) || (await page.$('.lbplay'));
+      if (t) { await t.click(); played = true; break; }
+      await dropCard();
     }
     if (!played) break;
   }

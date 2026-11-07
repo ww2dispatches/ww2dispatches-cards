@@ -178,7 +178,7 @@ const play = async (p, ch, now = NOW, deck = DECK, cheat = null) => {
   ok(intel('D0') === i0 + (paid[0] ? paid[0].intel : -1) && after.data.intel.balance === intel('D0'), 'the Intel is added to the balance');
   ok(db.prepare("SELECT COUNT(*) AS n FROM intel_log WHERE player_id = ? AND reason = 'campaign'").get(id('D0')).n === 1, 'and logged as Campaigns month end');
   const again = await Promise.all([1, 2, 3].map(() => req('state', { player: 'D0', now: '2026-09-02T12:00:00Z' })));
-  ok(again.every(r => r.data.campaignPaid.length === 0) && intel('D0') === i0 + (paid[0] ? paid[0].intel : 0), 'paid once, even with three loads at once; the notice shows once');
+  ok(again.every(r => r.data.campaignPaid.length === 1 && r.data.campaignPaid[0].intel === paid[0].intel) && intel('D0') === i0 + (paid[0] ? paid[0].intel : 0), 'paid once, even with three loads at once; the result stays listed for the page to show once');
   const none = await req('state', { player: 'D1', now: '2026-09-02T12:00:00Z' });
   ok(none.data.campaignPaid.length === 0 && intel('D1') === 0, 'no run, no payout');
   const v = await req('campaign', { player: 'D0', now: NOW });

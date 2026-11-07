@@ -23,15 +23,15 @@ export async function onRequestGet({ request, env }) {
   await signPending(env, player.id);
   const converted = await convertLegacyDuplicates(env.DB, player.id, t);
   if (converted) player.intel = (player.intel || 0) + converted;
-  // Campaigns month end (build session 5): pay any chapter whose month has ended, and hand back results
-  // not yet shown. Only where Campaigns is open to this player; a failure here never blocks the home screen.
+  // Campaigns month end (build session 5): pay any chapter whose month has ended, and hand back the last two
+  // weeks of results (the page shows each once). Only where Campaigns is open to this player; a failure here never blocks the home screen.
   let campaignPaid = [];
   if (CMP.campaignsOpen(env, request, player)) {
     try {
       await CMP.ensureTables(env.DB);
       const paid = await CMP.settleFor(env, player.id, t);
       player.intel = (player.intel || 0) + paid.reduce((a, x) => a + x.intel, 0);
-      campaignPaid = await CMP.unseenPayouts(env.DB, player.id);
+      campaignPaid = await CMP.recentPayouts(env.DB, player.id, t);
     } catch (err) { console.error('campaign settle', err && err.stack || err); }
   }
   const [opened, pulls] = await env.DB.batch([

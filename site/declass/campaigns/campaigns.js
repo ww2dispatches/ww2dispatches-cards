@@ -174,11 +174,13 @@ function tileHTML() {
   return go(`Chapter ${ch.n}: ${esc(ch.name)} · ${left ? left + ' run' + (left > 1 ? 's' : '') + ' left today' : 'New runs tomorrow'}`, left ? 'live' : 'done');
 }
 // Month end results: shown once, the first time the home screen loads after a chapter's rank settles.
-const shownPaid = new Set();
+const PAID_STORE = 'declass_cmp_paid_seen';
 function paidNotice() {
-  const st = D().state(), list = ((st && st.campaignPaid) || []).filter(p => !shownPaid.has(p.campaign + p.year + p.chapter));
+  let seen = [];
+  try { seen = JSON.parse(localStorage.getItem(PAID_STORE) || '[]'); } catch (e) {}
+  const st = D().state(), list = ((st && st.campaignPaid) || []).filter(p => !seen.includes(p.key));
   if (!list.length || !$('sHome').classList.contains('on')) return;
-  list.forEach(p => shownPaid.add(p.campaign + p.year + p.chapter));
+  try { localStorage.setItem(PAID_STORE, JSON.stringify(seen.concat(list.map(p => p.key)).slice(-60))); } catch (e) {}
   const total = list.reduce((a, p) => a + p.intel, 0);
   D().sheet(`<div class="sheettop"><span class="howstamp">Campaign results</span><button class="howx" data-close aria-label="Close">✕</button></div>
     <h2>The month's ranks are settled</h2>
@@ -427,6 +429,108 @@ function choose(c) {
   return true;
 }
 
+// ---------- sound (Brian's generated set, from test bench version 12) ----------
+// Off until the player turns it on in the round menu (Card Design doc, point 8); the room hum is a second,
+// separate switch. The page never waits on a sound.
+const SFX = {
+  siren: ['alarm_air_raid_siren_v01'], stuka: ['air_dive_bomber_v03'], bigraid: ['air_bomber_raid_short_v01'], sweep: ['air_formation_flyby_v01'],
+  draw: ['card_draw_v01'], place: ['card_place_v01', 'card_place_v02', 'card_place_v03'], attach: ['card_attach_v01'], rally: ['card_rally_v01'],
+  mulligan: ['card_mulligan_v01'], lend: ['card_lend_lease_v01'], backchannel: ['card_back_channel_v01'], ultimatum: ['card_ultimatum_v01'], evac: ['card_evacuation_v01'],
+  lock: ['ui_lock_in_v01'], end: ['ui_end_turn_v01'], error: ['ui_error_v01'], undo: ['ui_undo_v01'], flip: ['ui_plaque_flip_v01', 'ui_plaque_flip_v02', 'ui_plaque_flip_v03'],
+  tick: ['ui_number_tick_v01', 'ui_number_tick_v02', 'ui_number_tick_v03'], lamp: ['ui_lamp_amber_v01'], quiet: ['ui_all_quiet_v02'], rake: ['ui_rake_push_v01'],
+  teleprinter: ['radio_teleprinter_v03'], squelch: ['radio_squelch_v01'], scramble: ['air_scramble_v01'], gunfire: ['battle_gunfire_v04', 'battle_gunfire_v05', 'battle_gunfire_v06'],
+  dive: ['air_dive_v01'], bomb: ['battle_bomb_thump_v01'], arrival: ['air_arrival_v01'], climb: ['air_climb_v01'], downed: ['air_fighter_shot_down_v06'],
+  cleared: ['result_wave_cleared_v01'], victory: ['result_victory_v01'], beat: ['result_beat_history_v03'], defeat: ['result_defeat_v02'],
+};
+const BATTLE_SFX = new Set(['squelch', 'scramble', 'gunfire', 'dive', 'bomb', 'arrival', 'climb', 'downed', 'siren', 'stuka', 'bigraid', 'sweep', 'cleared', 'victory', 'beat', 'defeat']);
+const SFX_CAP = { siren: 7, stuka: 4.5, sweep: 5 };            // long sounds fade out after this many seconds
+const SFX_LONGVOL = { siren: 0.6, stuka: 0.8, bigraid: 0.8, sweep: 0.7 };
+const HUM = 'ambience_ops_room_v02';
+const SND_STORE = 'declass_cmp_sound';
+const SND = { on: false, hum: false, ctx: null, buf: {}, loading: null, timers: [], humSrc: null };
+try { Object.assign(SND, JSON.parse(localStorage.getItem(SND_STORE) || '{}')); } catch (e) {}
+const sndSave = () => { try { localStorage.setItem(SND_STORE, JSON.stringify({ on: SND.on, hum: SND.hum })); } catch (e) {} };
+function sndCtx() {
+  if (!SND.ctx) { const C = window.AudioContext || window.webkitAudioContext; if (!C) return null; SND.ctx = new C(); }
+  if (SND.ctx.state === 'suspended') SND.ctx.resume().catch(() => {});
+  return SND.ctx;
+}
+const sndUrl = n => `/declass/campaigns/sounds/${n}.mp3`;
+function sndLoad() {
+  if (SND.loading) return SND.loading;
+  const ctx = sndCtx(); if (!ctx) return Promise.resolve();
+  const names = [...new Set(Object.values(SFX).flat())];
+  SND.loading = Promise.all(names.map(n => fetch(sndUrl(n)).then(r => r.arrayBuffer()).then(a => new Promise((ok, no) => ctx.decodeAudioData(a, ok, no))).then(b => { SND.buf[n] = b; }).catch(() => {})));
+  return SND.loading;
+}
+function sfx(key, delay, vol) {
+  if (!SND.on) return; const ctx = sndCtx(); if (!ctx) return;
+  const list = SFX[key]; if (!list) return;
+  const name = list[Math.floor(Math.random() * list.length)];
+  const go = () => {
+    const b = SND.buf[name]; if (!b) return;
+    const src = ctx.createBufferSource(); src.buffer = b;
+    const gn = ctx.createGain(), v = (vol || SFX_LONGVOL[key] || 1) * (BATTLE_SFX.has(key) ? 0.9 : 0.75);
+    gn.gain.value = v; src.connect(gn).connect(ctx.destination);
+    const t0 = ctx.currentTime; src.start();
+    const cap = SFX_CAP[key];
+    if (cap && b.duration > cap) { gn.gain.setValueAtTime(v, t0 + cap - 1.2); gn.gain.linearRampToValueAtTime(0.0001, t0 + cap); src.stop(t0 + cap + 0.05); }
+  };
+  if (delay) SND.timers.push(setTimeout(go, delay * 1000)); else go();
+}
+function sfxStop() { SND.timers.forEach(clearTimeout); SND.timers = []; }
+function humSync() {
+  const want = SND.on && SND.hum && $('sCmpRun') && $('sCmpRun').classList.contains('on');
+  if (!want && SND.humSrc) { try { SND.humSrc.stop(); } catch (e) {} SND.humSrc = null; }
+  if (want && !SND.humSrc) {
+    const ctx = sndCtx(); if (!ctx) return;
+    const start = b => { if (SND.humSrc || !SND.hum || !SND.on) return; const src = ctx.createBufferSource(); src.buffer = b; src.loop = true; const gn = ctx.createGain(); gn.gain.value = 0.16; src.connect(gn).connect(ctx.destination); src.start(); SND.humSrc = src; };
+    if (SND.buf[HUM]) start(SND.buf[HUM]);
+    else fetch(sndUrl(HUM)).then(r => r.arrayBuffer()).then(a => new Promise((ok, no) => ctx.decodeAudioData(a, ok, no))).then(b => { SND.buf[HUM] = b; start(b); }).catch(() => {});
+  }
+}
+function soundOn(on) { SND.on = on; sndSave(); if (on) { sndCtx(); sndLoad().then(() => sfx('lamp')); } else sfxStop(); humSync(); }
+function humOn(on) { SND.hum = on; if (on && !SND.on) { soundOn(true); return; } sndSave(); humSync(); }
+// The raid and your attacks, heard over the R/T: a short sequence from what the round's events say.
+function roundSounds(phase, ev, r0, stukas, big) {
+  if (!SND.on) return;
+  sfxStop();
+  let t = 0.35;
+  const win = ST.over && ST.over.won, lost = ST.over && !ST.over.won, cleared = ev.some(e => e.t === 'waveCleared');
+  if (phase === 'enemy') {
+    sfx('lock'); sfx('flip', 0.15); sfx('squelch', 0.45); t = 0.6;
+    if (ev.some(e => e.t === 'attack' && e.blocks.length)) { sfx('scramble', t); t += 0.7; }
+    if (big) { sfx('bigraid', t + 0.1); t += 1.4; }
+    if (stukas) { sfx('stuka', t + 0.1); t += 1.6; }
+    if (ev.some(e => e.t === 'attack' && e.hitBack)) { sfx('gunfire', t + 0.2); t += 1.6; }
+    if (ev.some(e => e.t === 'climb')) { sfx('climb', t + 0.1); t += 0.5; }
+    const loss = r0 - ST.resolve;
+    if (loss > 0) { sfx('bomb', t + 0.2); for (let k = 0; k < Math.min(loss, 6); k++) sfx('tick', t + 0.7 + k * 0.12, 0.8); t += 0.8 + Math.min(loss, 6) * 0.12; }
+    if (ev.some(e => e.t === 'knockedOut')) { sfx('dive', t + 0.2); t += 0.7; }
+    if (ev.some(e => e.t === 'attack' && e.hitBack && e.hitBack.to <= 0)) { sfx('downed', t + 0.2); t += 2.0; }
+  } else {
+    sfx('end');
+    const hits = ev.filter(e => e.t === 'strike');
+    hits.slice(0, 3).forEach((e, k) => sfx('gunfire', t + k * 0.5));
+    if (hits.length) t += Math.min(hits.length, 3) * 0.5 + 1.0;
+    if (hits.some(e => e.to <= 0)) { sfx('downed', t); t += 2.0; }
+  }
+  const arr = ev.filter(e => e.t === 'arrive');
+  if (arr.length) { sfx(arr.some(e => e.why === 'sweep') ? 'sweep' : 'arrival', t + 0.2); t += 1.2; }
+  if (lost) sfx('defeat', t + 0.4);
+  else if (win) sfx(ST.over.resolve > CH.benchmark ? 'beat' : 'victory', t + 0.4);
+  else if (cleared) sfx('cleared', t + 0.4);
+  return t;
+}
+const sirenHeard = new Set();
+function phaseSounds(after) {
+  if (!SND.on || ST.over) return;
+  const d = (after || 0) + 0.2;
+  if (E.calm(ST)) { sfx('quiet', d); return; }
+  if (ST.phase === 'enemy') { sfx('lamp', d); sfx('teleprinter', d + 0.15); const k = RUN.ticket + ':' + ST.wave; if (!sirenHeard.has(k)) { sirenHeard.add(k); sfx('siren', d + 0.9); } }
+  else if (ST.phase === 'yours') { sfx('lamp', d); sfx('draw', d + 0.2); }
+}
+
 // ---------- the run: the plotting table ----------
 // Build session 4 (6 Nov 2026): the whole round on one board (Card Design doc, points 2 to 7). In the raid
 // you send Ready machines up under the raiders and press Lock in blocks; in your turn you play cards, send
@@ -438,6 +542,7 @@ let PICK = null;        // the machine picked to go up (its uid)
 function playRun(isNew) {
   rebuild(); LIFT = null; PICK = null;
   D().show('sCmpRun');
+  humSync();
   drawRun();
   if (ST.over) { endScreen(); return; }
   if (ST.phase === 'opening') openingHand();
@@ -466,7 +571,7 @@ function topBarHTML() {
   const lamp = ST.over ? (ST.over.won ? 'WAVES BROKEN' : 'RESOLVE GONE') : opening ? 'OPENING HAND' : raid ? 'THE RAID' : 'YOUR TURN';
   const sub = opening || E.calm(ST) ? `Calm · first raid in round ${ST.calmRounds + 1}` : waveLabel();
   const sup = raid || ST.over ? '–' : `${ST.supply}/${E.supplyFor(ST, ST.round)}`;
-  return `<div class="tote"><div class="ttile res" id="cmpRes">${svgI('heart')}<b>${ST.resolve}</b><small>Resolve</small></div>
+  return `<div class="tote"><div class="ttile res" id="cmpRes" role="button" tabindex="-1">${svgI('heart')}<b>${ST.resolve}</b><small>Resolve</small></div>
     <div class="tlamp ${raid ? 'red' : 'amber'}"><b>${lamp}</b><small>${esc(sub)}</small></div>
     <div class="ttile sup"><b>${sup}</b><small>Supply</small></div></div>`;
 }
@@ -477,7 +582,7 @@ function enemyPieceHTML(u, where, inN) {
   else if (u.delayedNext != null && ST.phase !== 'enemy') tab = `<span class="etab atk">▼ ${u.delayedNext}</span>`;
   else { const nx = E.nextAttack(u); tab = nx > 0 ? `<span class="etab atk">▼ ${nx}</span>` : '<span class="etab climb">CLIMB</span>'; }
   const [type, role] = unitWords(u);
-  const target = PICK && where === 'chan' && validTargets().includes(u.uid);
+  const target = (PICK && where === 'chan' && validTargets().includes(u.uid)) || (where === 'chan' && AIM.units[u.uid]);
   return `<button type="button" class="epiece ${where}${u.escort ? ' esc' : ''}${target ? ' target' : ''}${ST.delays[u.uid] != null ? ' heldoff' : ''}" ${where === 'chan' ? `data-u="${u.uid}"` : 'disabled'} aria-label="${esc(u.name)}, Strength ${u.st}">${tab}<span class="eplaque">${u.st}</span><span class="ephoto" data-piece="${esc(u.piece || '')}"><i>${esc(type)}</i></span><span class="ename">${esc(u.escort ? 'Escort' : role || type)}</span>${u.airfield ? '<span class="eair">AIRFIELD</span>' : ''}</button>`;
 }
 function linePieceHTML(m, where) {
@@ -486,10 +591,11 @@ function linePieceHTML(m, where) {
   const rearm = m.state === 'out' || m.state === 'blocked';
   const going = where === 'col' && ST.phase === 'yours';
   const can = !ST.over && (ST.phase === 'enemy' ? E.canBlock(m) : ST.phase === 'yours' && E.canAttack(ST, m));
-  return `<button type="button" class="lpiece${c.loaner ? ' loan' : ''}${m.fresh ? ' fresh' : ''}${rearm ? ' rearm' : ''}${PICK === m.uid ? ' picked' : ''}${can && where !== 'col' ? ' can' : ''}" data-m="${m.uid}" aria-label="${esc(c.title)}, armor ${m.arm}${atk ? ', attack ' + atk : ''}">${face}
+  const aim = AIM.machines[m.uid];
+  return `<button type="button" class="lpiece${c.loaner ? ' loan' : ''}${m.fresh ? ' fresh' : ''}${rearm ? ' rearm' : ''}${PICK === m.uid ? ' picked' : ''}${aim ? ' aim' : can && where !== 'col' && LIFT == null ? ' can' : ''}" data-m="${m.uid}" aria-label="${esc(c.title)}, armor ${m.arm}${atk ? ', attack ' + atk : ''}">${face}
     <span class="btag">${(ST.cards[m.card].branches || []).map(b => svgI(b)).join('')}</span>
     <span class="bshield${m.arm < max ? ' hurt' : ''}">${svgI('shield')}<b>${m.arm < max ? m.arm + '/' + max : m.arm}</b></span>${atk ? `<span class="batk"><b>${atk}</b></span>` : ''}
-    ${going ? '<span class="chip" aria-hidden="true">▲</span>' : ''}${m.fresh ? '<span class="pslip set">SETTING UP</span>' : rearm ? '<span class="pslip rearm">REARMING</span>' : ''}</button>`;
+    ${aim ? `<span class="aimtag">${esc(aim.tag)}</span>` : ''}${going ? '<span class="chip" aria-hidden="true">▲</span>' : ''}${m.fresh ? '<span class="pslip set">SETTING UP</span>' : rearm ? '<span class="pslip rearm">REARMING</span>' : ''}</button>`;
 }
 // The plotting plaque under each raider: the sum, then the outcome, before the button is pressed.
 function plaqueFor(u, fc) {
@@ -558,11 +664,18 @@ function forecastText(fc) {
   return att ? `${att} going up · ${ST.line.length - att} kept back` : ready ? 'Nobody attacks this turn' : '';
 }
 function drawRun() {
+  if (LIFT != null && !ST.hand.includes(LIFT)) LIFT = null;
+  AIM = aimOf(LIFT);
   const calm = E.calm(ST) || ST.phase === 'opening';
   const fc = forecast();
   const slots = [];
   const away = new Set(ST.phase === 'enemy' ? Object.values(ST.blocks).flat() : ST.phase === 'yours' ? ST.line.filter(m => m.mode === 'attack').map(m => m.uid) : []);
-  for (let k = 0; k < ST.rules.line; k++) { const m = ST.line[k]; slots.push(!m ? '<div class="lslot"></div>' : away.has(m.uid) ? '<div class="lslot gone"></div>' : linePieceHTML(m, 'line')); }
+  let slotLit = false;
+  for (let k = 0; k < ST.rules.line; k++) {
+    const m = ST.line[k];
+    if (!m) { const lit = AIM.slot && !slotLit; slotLit = slotLit || lit; slots.push(lit ? '<button type="button" class="lslot aim" id="cmpSlotAim" aria-label="Put it here"><i>HERE</i></button>' : '<div class="lslot"></div>'); }
+    else slots.push(away.has(m.uid) ? '<div class="lslot gone"></div>' : linePieceHTML(m, 'line'));
+  }
   const btn = ST.phase === 'enemy' ? 'Lock in blocks' : calm ? 'End turn' : 'End turn: attack';
   const ft = forecastText(fc);
   $('cmpRun').innerHTML = `${topBarHTML()}
@@ -583,7 +696,9 @@ function drawRun() {
   $('cmpRun').querySelectorAll('[data-h]').forEach(b => { b.onclick = () => lift(Number(b.dataset.h)); });
   $('cmpRun').querySelectorAll('.lpiece[data-m]').forEach(b => { b.onclick = () => tapMachine(b.dataset.m, Boolean(b.closest('.col'))); });
   $('cmpRun').querySelectorAll('.epiece[data-u]').forEach(b => { b.onclick = () => tapUnit(b.dataset.u); });
-  if (LIFT != null && ST.hand.includes(LIFT)) showLift(LIFT); else LIFT = null;
+  if ($('cmpSlotAim')) $('cmpSlotAim').onclick = () => playAim(AIM.slot);
+  if (AIM.resolve) { $('cmpRes').classList.add('aim'); $('cmpRes').insertAdjacentHTML('beforeend', `<span class="aimtag">${esc(AIM.resolve.tag)}</span>`); $('cmpRes').onclick = () => playAim(AIM.resolve); }
+  if (LIFT != null) showLift(LIFT);
 }
 
 // ---------- sending machines up ----------
@@ -594,11 +709,11 @@ function validTargets() {
 }
 function tapMachine(uid, inColumn) {
   const m = machineOf(uid); if (!m || ST.over) return;
-  closeLift();
+  if (LIFT != null) { if (AIM.machines[uid]) { playAim(AIM.machines[uid]); return; } LIFT = null; }
   if (inColumn) { // bring it back to the line
     if (ST.phase === 'enemy') { const k = Object.keys(ST.blocks).find(x => ST.blocks[x].includes(uid)); choose({ a: 'block', unit: k, machines: ST.blocks[k].filter(x => x !== uid) }); }
     else choose({ a: 'hold', machine: uid });
-    PICK = null; drawRun(); return;
+    sfx('rake'); PICK = null; drawRun(); return;
   }
   const can = ST.phase === 'enemy' ? E.canBlock(m) : ST.phase === 'yours' && E.canAttack(ST, m);
   if (!can || PICK === uid) { PICK = null; drawRun(); if (!can) pieceInfo(uid); return; }
@@ -609,6 +724,7 @@ function tapMachine(uid, inColumn) {
   drawRun();
 }
 function tapUnit(uid) {
+  if (LIFT != null) { if (AIM.units[uid]) { playAim(AIM.units[uid]); return; } LIFT = null; drawRun(); return; }
   if (PICK) { if (validTargets().includes(uid)) sendUp(uid); else D().toast(ST.phase === 'yours' ? 'Escorts must be attacked first.' : 'That raider is not attacking in this raid.'); return; }
   unitInfo(uid);
 }
@@ -616,7 +732,7 @@ function sendUp(uid) {
   const m = machineOf(PICK);
   if (ST.phase === 'enemy') choose({ a: 'block', unit: uid, machines: (ST.blocks[uid] || []).concat([m.uid]) });
   else choose({ a: 'attack', machine: m.uid, unit: uid });
-  PICK = null; D().sfx && D().sfx('slide'); drawRun();
+  PICK = null; sfx('rake'); sfx('flip', 0.12); drawRun();
 }
 function unitInfo(uid) {
   const u = unitOf(uid); if (!u) return;
@@ -634,13 +750,17 @@ function act() {
   if (ST.over || !['enemy', 'yours'].includes(ST.phase)) return;
   LIFT = null; PICK = null;
   const before = { resolve: ST.resolve, wave: ST.wave, phase: ST.phase };
+  const hitters = E.alive(ST).filter(u => E.incoming(ST, u) > 0);
+  const stukas = hitters.some(u => /Stuka/.test(u.name)), big = hitters.some(u => E.incoming(ST, u) >= 5 && !/Stuka/.test(u.name));
   if (!choose({ a: before.phase === 'enemy' ? 'lock' : 'end' })) return;
   const ev = ST.events.slice();
+  const heard = roundSounds(before.phase, ev, before.resolve, stukas, big) || 0;
   drawRun();
   const cleared = ev.find(e => e.t === 'waveCleared');
   const next = () => {
     if (ST.over) { endScreen(); return; }
     if (cleared) newWave();
+    phaseSounds(cleared ? 0 : heard);
     if (ST.phase === 'yours') tele(E.calm(ST) ? 'ALL QUIET' : 'YOUR TURN', E.calm(ST) ? allQuietLines() : turnLines(before.resolve, ev));
     else if (ST.phase === 'enemy') tele('RAID INBOUND', (before.phase === 'yours' ? strikeLines(ev) : []).concat(raidLines()));
   };
@@ -750,8 +870,8 @@ function openingHand() {
     <button class="btn alt big" id="ohMull" type="button"${ST.mulliganed ? ' disabled' : ''}>${ST.mulliganed ? 'Mulligan used' : 'Mulligan · draw 5 new'}</button>
     <p class="oline small">One mulligan a run: your hand goes back into the deck and you draw 5 new cards. Everyone's run ${RUN.runNo} today uses the same shuffle.</p></div>`;
   o.hidden = false;
-  $('ohKeep').onclick = () => { if (choose({ a: 'keep' })) { o.hidden = true; drawRun(); tele('ALL QUIET', allQuietLines()); } };
-  $('ohMull').onclick = () => { if (!ST.mulliganed && choose({ a: 'mulligan' })) { D().sfx && D().sfx('slide'); openingHand(); } };
+  $('ohKeep').onclick = () => { if (choose({ a: 'keep' })) { o.hidden = true; drawRun(); sfx('quiet', 0.2); tele('ALL QUIET', allQuietLines()); } };
+  $('ohMull').onclick = () => { if (!ST.mulliganed && choose({ a: 'mulligan' })) { sfx('mulligan'); openingHand(); } };
 }
 function hostileNames(list) { return [...new Set(list.map(u => unitWords(u)[0]))].join(', '); }
 function allQuietLines() { return [`Hostiles massing over France: ${hostileNames(E.alive(ST))}.`, 'Build your line before they come.']; }
@@ -765,14 +885,13 @@ function tele(head, lines) {
 }
 
 // A hand card lifted: what it does, what it costs, and the plays it can make right now.
-function closeLift() { LIFT = null; const b = $('cmpLift'); if (b) b.hidden = true; $('cmpRun').querySelectorAll('.hcard.up').forEach(x => x.classList.remove('up')); }
+function closeLift() { if (LIFT == null) return; LIFT = null; drawRun(); }
 function lift(i) {
   if (ST.phase === 'opening' || ST.over) return;
-  if (PICK) { PICK = null; drawRun(); }
+  PICK = null;
   LIFT = LIFT === i ? null : i;
-  $('cmpRun').querySelectorAll('[data-h]').forEach(b => b.classList.toggle('up', Number(b.dataset.h) === LIFT));
-  if (LIFT == null) { $('cmpLift').hidden = true; return; }
-  showLift(i);
+  if (LIFT != null && E.whyNot(engineCampaign(), ST, LIFT)) sfx('error');
+  drawRun();
 }
 function playsFor(i) {
   // Every play the engine would accept for this card, found by trying it on a copy of the run.
@@ -792,14 +911,47 @@ function playsFor(i) {
   }
   return out;
 }
+// A lifted card aims at the table (Brian, 6 Nov 2026): the machines, the Resolve tile, the raiders, or
+// the empty places on your line that it can go on light up gold with what it would do, and tapping one
+// plays it there. Only plays with nothing on the table to tap (Back Channel, Lend Lease, Evacuation)
+// are buttons.
+function aimOf(i) {
+  const out = { machines: {}, units: {}, resolve: null, slot: null, other: [] };
+  if (i == null || E.whyNot(engineCampaign(), ST, i)) return out;
+  const c = ST.cards[i];
+  for (const p of playsFor(i)) {
+    const ch = p.choice;
+    if (ch.a === 'attach') { const m = machineOf(ch.machine); out.machines[ch.machine] = { p, tag: `ATTACK ${m && m.op != null ? E.opValue(ST, m) + ' TO ' : ''}${c.value}` }; }
+    else if (ch.a === 'rally' && ch.to === 'resolve') out.resolve = { p, tag: `${ST.resolve} TO ${Math.min(ST.rules.resolveCap, ST.resolve + c.value)}` };
+    else if (ch.a === 'rally') { const m = machineOf(ch.to), max = ST.cards[m.card].value; out.machines[ch.to] = { p, tag: `ARMOR ${m.arm} TO ${Math.min(max, m.arm + c.value)}` }; }
+    else if (ch.a === 'ultimatum') out.units[ch.unit] = { p, tag: 'HOLD OFF' };
+    else if (ch.a === 'place') out.slot = { p };
+    else out.other.push(p);
+  }
+  return out;
+}
+let AIM = aimOf(null);
+function aimHint(c, a) {
+  const n = Object.keys(a.machines).length;
+  if (c.series === 'battle') return n ? 'Tap a lit machine to arm it.' : '';
+  if (c.series === 'home') return a.resolve && n ? 'Tap Resolve to raise it, or a lit machine to repair it.' : a.resolve ? 'Tap Resolve to raise it.' : n ? 'Tap a lit machine to repair it.' : '';
+  if (c.series === 'blue') return a.slot ? 'Tap an empty place on your line, or the button.' : '';
+  if (c.keyword === 'ultimatum') return Object.keys(a.units).length ? 'Tap a lit raider to hold it off.' : '';
+  return '';
+}
+function playAim(t) { if (!t) return; if (choose(t.p.choice)) { const c = ST.cards[t.p.choice.card]; sfx(c.series === 'blue' && t.p.choice.a === 'place' ? 'place' : c.series === 'battle' ? 'attach' : c.series === 'home' ? 'rally' : c.keyword || 'place'); LIFT = null; drawRun(); } }
 function showLift(i) {
-  const c = deckCard(i), why = E.whyNot(engineCampaign(), ST, i), plays = why ? [] : playsFor(i);
+  const c = deckCard(i), why = E.whyNot(engineCampaign(), ST, i), a = AIM;
+  const hint = why ? '' : aimHint(c, a);
+  const buttons = (a.slot ? [a.slot.p] : []).concat(a.other);
+  const none = !why && !hint && !buttons.length;
   const box = $('cmpLift');
+  box.classList.toggle('low', c.keyword === 'ultimatum'); // raiders are at the top, so the Ultimatum's box sits low
   box.innerHTML = `<div class="lbtop"><b>${esc(c.title)}</b><button class="howx" id="lbX" aria-label="Close">✕</button></div><p class="lbrole">${esc(roleLine(c))}</p>
-    ${why ? `<p class="tslip">${esc(why)}</p>` : plays.length ? plays.map((p, k) => `<button class="lbplay" type="button" data-p="${k}">${esc(p.label)}</button>`).join('') : '<p class="tslip">Nothing to play it on right now.</p>'}`;
+    ${why ? `<p class="tslip">${esc(why)}</p>` : ''}${hint ? `<p class="lbhint">${esc(hint)}</p>` : ''}${buttons.map((p, k) => `<button class="lbplay" type="button" data-p="${k}">${esc(p.label)}</button>`).join('')}${none ? '<p class="tslip">Nothing to play it on right now.</p>' : ''}`;
   box.hidden = false;
   $('lbX').onclick = () => lift(i);
-  box.querySelectorAll('[data-p]').forEach(b => { b.onclick = () => { if (choose(plays[Number(b.dataset.p)].choice)) { LIFT = null; D().sfx && D().sfx('slide'); drawRun(); } }; });
+  box.querySelectorAll('[data-p]').forEach(b => { b.onclick = () => playAim({ p: buttons[Number(b.dataset.p)] }); });
 }
 function pieceInfo(uid) {
   const m = machineOf(uid); if (!m) return;
@@ -843,11 +995,14 @@ function menu() {
   const adv = cabinet();
   D().sheet(`<div class="sheettop"><span class="howstamp">Round menu</span><button class="howx" data-close aria-label="Close">✕</button></div>
     ${adv.length ? `<div class="cabinet"><span>${esc(DATA.campaign.council || 'THE WAR CABINET ADVISES')}</span>${adv.map(a => `<p>${esc(a)}</p>`).join('')}</div>` : ''}
+    <div class="sndrow"><button class="btn alt" id="mSnd" type="button" aria-pressed="${SND.on}">Sound: ${SND.on ? 'on' : 'off'}</button><button class="btn alt" id="mHum" type="button" aria-pressed="${SND.hum}">Room hum: ${SND.hum ? 'on' : 'off'}</button></div>
     <button class="btn alt" id="mUndo" type="button"${canUndo ? '' : ' disabled'}>Undo last move</button>
     <button class="btn alt" id="mDeck" type="button">Cards left in your deck</button>
     <button class="btn danger" id="mLeave" type="button">Leave the run</button>
     <p class="sheetnote">${canUndo ? 'Any move can be undone until you press the action button.' : 'Nothing to undo since the action button was last pressed.'}</p>`);
-  $('mUndo').onclick = () => { if (!canUndo) return; RUN.choices.pop(); saveRun(); rebuild(); D().closeSheet(); LIFT = null; PICK = null; drawRun(); };
+  $('mSnd').onclick = () => { soundOn(!SND.on); $('mSnd').textContent = 'Sound: ' + (SND.on ? 'on' : 'off'); $('mHum').textContent = 'Room hum: ' + (SND.hum && SND.on ? 'on' : 'off'); };
+  $('mHum').onclick = () => { humOn(!(SND.hum && SND.on)); $('mSnd').textContent = 'Sound: ' + (SND.on ? 'on' : 'off'); $('mHum').textContent = 'Room hum: ' + (SND.hum && SND.on ? 'on' : 'off'); };
+  $('mUndo').onclick = () => { if (!canUndo) return; sfx('undo'); RUN.choices.pop(); saveRun(); rebuild(); D().closeSheet(); LIFT = null; PICK = null; drawRun(); };
   $('mDeck').onclick = () => {
     const left = ST.draw.map(deckCard).sort((a, b) => ['blue', 'battle', 'home', 'state'].indexOf(a.series) - ['blue', 'battle', 'home', 'state'].indexOf(b.series) || a.value - b.value);
     D().sheet(`<div class="sheettop"><span class="howstamp">Your deck</span><button class="howx" data-close aria-label="Close">✕</button></div><h2>${left.length} card${left.length === 1 ? '' : 's'} left to draw</h2><p class="sheetnote">In no particular order. You draw 1 at the start of each of your turns after the first.</p>
@@ -860,8 +1015,8 @@ function menu() {
   };
 }
 function leaveRun() {
-  RUN = null; saveRun(); ST = null;
-  load(true).then(() => { D().show('sCampaigns'); if (CH) openChapter(CH.n); else drawCampaign(); }).catch(() => { D().goHome(); });
+  RUN = null; saveRun(); ST = null; sfxStop();
+  load(true).then(() => { D().show('sCampaigns'); humSync(); if (CH) openChapter(CH.n); else drawCampaign(); }).catch(() => { D().goHome(); });
 }
 
 // ---------- wiring ----------
