@@ -84,9 +84,14 @@ function drawSpecPanel(ctx,u,x,y,w,h,p,accent,wide){
   const colW=(w-2*padX-(cols-1)*4*u)/cols;
   rows.forEach(([label,val],i)=>{
     const c=Math.floor(i/per), r=i%per, cx=x+padX+c*(colW+4*u), base=top+r*rowH+rowH*.68;
-    ctx.fillStyle=NAVY; ctx.font=`400 ${(wide?2.1:2.5)*u}px "Special Elite"`; ctx.letterSpacing=`${.03*2.4*u}px`;
+    /* Shrink a row's type only when its label and value would collide (rows that fit are unchanged). */
+    const lf=s=>`400 ${(wide?2.1:2.5)*u*s}px "Special Elite"`, vf=s=>`600 ${(wide?2.5:3)*u*s}px Oswald`;
+    const need=s=>{ ctx.font=lf(s); ctx.letterSpacing=`${.03*2.4*u*s}px`; const a=ctx.measureText(String(label)).width;
+      ctx.font=vf(s); ctx.letterSpacing=`${.02*2.8*u*s}px`; return a+ctx.measureText(String(val)).width+1.5*u; };
+    let sc=1; while(sc>.6 && need(sc)>colW) sc-=.04;
+    ctx.fillStyle=NAVY; ctx.font=lf(sc); ctx.letterSpacing=`${.03*2.4*u*sc}px`;
     ctx.textAlign="left"; ctx.fillText(String(label),cx,base);
-    ctx.fillStyle=INK; ctx.font=`600 ${(wide?2.5:3)*u}px Oswald`; ctx.letterSpacing=`${.02*2.8*u}px`;
+    ctx.fillStyle=INK; ctx.font=vf(sc); ctx.letterSpacing=`${.02*2.8*u*sc}px`;
     ctx.textAlign="right"; ctx.fillText(String(val),cx+colW,base);
     ctx.strokeStyle="rgba(61,88,132,.45)"; ctx.lineWidth=.18*u; ctx.setLineDash([.6*u,.5*u]);
     ctx.beginPath(); ctx.moveTo(cx,top+(r+1)*rowH-.2*u); ctx.lineTo(cx+colW,top+(r+1)*rowH-.2*u); ctx.stroke(); ctx.setLineDash([]);
