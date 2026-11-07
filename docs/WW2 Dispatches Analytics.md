@@ -71,7 +71,7 @@ Every week, after the review is written:
 
 The rules for links:
 * **Historically airtight.** History buffs will publicly challenge anything debatable. Verify every link against the dispatch records and a solid source, and when in doubt leave it out.
-* **Easy** is visible in the photo (aircraft, warships, a national leader). **Medium** is knowable from the tile's title or subject (a theater, a battle the titles point to, a nation, a branch, a person); a group the cards only share by place is hard, since the board's tiles show only the title and year. **Hard** takes real knowledge: shared operations, ships, commanders, and clever links. A link the cards print outright (the place line, a kicker naming it) is medium at most.
+* **Easy** is visible in the photo (aircraft, warships, a national leader). **Medium** is knowable from the tile's title or subject (a theater, a battle the titles point to, a nation, a branch, a person); a group the cards only share by place is hard, since the board's tiles show only the title and year. **Hard** takes real knowledge: shared operations, ships, commanders, and clever links. A link the tiles print outright (a title naming it) is medium at most.
 * **One event, one card:** a group never holds two cards of the same event, such as a story card and its spec sheet (ids "X" and "X-spec"); the deal enforces it and counts such a pair as one card toward a group's three.
 * **Printed details are never links:** the date and the series stamp are just reading. No group may be "all from 1942" or "all Battle Lines".
 * **Tone:** a link must never treat tragedy as a gimmick. Sensitive cards (Loss and tragedy) can be in groups, but never grouped by the loss itself ("ships that sank", "men who died").
