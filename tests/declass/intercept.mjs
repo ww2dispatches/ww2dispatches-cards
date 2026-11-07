@@ -121,8 +121,8 @@ ok(r.data.error === 'expired', 'a guess after midnight Eastern on yesterday\'s f
 r = await req('intercept', { player: 'I6', now: '2026-11-02T05:01:00Z' });
 ok(r.data.status === 'new' && r.data.day === '2026-11-02', 'a new day, a new puzzle');
 
-// Hard groups never repeat within 90 days while a fresh one exists.
-const hards = [];
+// Hard groups never repeat within 90 days while a fresh one finds a board (strict first, Planning 7 Nov 2026).
+const hards = [], marks = [];
 for (let d = 0; d < 6; d++) {
   const day = new Date(Date.parse('2026-11-03T17:00:00Z') + d * 86400000).toISOString();
   // A deal can miss a fair grid within its try budget; the page then offers a retry, so the test retries too
@@ -132,12 +132,15 @@ for (let d = 0; d < 6; d++) {
     if (!(r.status === 409 && r.data.error === 'no grid')) break;
   }
   if (r.status !== 200) { ok(false, 'deal on ' + day + ' (3 tries): ' + JSON.stringify(r.data)); continue; }
-  hards.push(grid('I7', day.slice(0, 10)).groups.find(x => x.d === 'hard').id);
+  const gI7 = grid('I7', day.slice(0, 10));
+  hards.push(gI7.groups.find(x => x.d === 'hard').id); marks.push(!!gI7.repeat);
 }
 // With the October catalog five hard groups can be dealt (h-aid-britain's three ships all print 1941,
-// a giveaway). Once they're used up, the one seen longest ago comes back first.
-const firstRepeat = hards.findIndex((h, i) => hards.indexOf(h) !== i);
-ok(firstRepeat === -1 || (firstRepeat >= 5 && hards[firstRepeat] === hards[0]), 'no hard repeat while a fresh one deals; then the oldest: ' + hards.join(' '));
+// a giveaway). A seen one comes back only when no unseen one finds a fair board, and is marked a repeat;
+// deal-rules.mjs checks the oldest first order directly.
+const isRepeat = hards.map((h, i) => hards.indexOf(h) !== i);
+ok(isRepeat.every((r, i) => r === marks[i]), 'a hard group repeats only as a marked fallback: ' + hards.map((h, i) => h + (marks[i] ? '*' : '')).join(' '));
+ok(isRepeat.slice(0, 5).filter(Boolean).length <= 1, 'unseen hard groups come first: ' + hards.join(' '));
 ok(db.prepare('SELECT COUNT(*) AS n FROM intercept_seen WHERE player_id = ?').get(id('I7')).n === new Set(hards).size, 'hard groups seen recorded');
 
 // Tester practice replays (7 Nov 2026): testers only, with the preview flag; no Intel; their own claim key.

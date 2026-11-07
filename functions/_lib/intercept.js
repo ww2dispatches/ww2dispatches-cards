@@ -22,7 +22,7 @@ const HARD_REST_DAYS = 90;
 const KEEP_DAYS = 90;
 const ATTEMPTS = 15; // sets of groups tried for one hard group in each round (7 Nov 2026: was 80, see dealGrid)
 const CARD_DRAWS = 4; // card draws tried for each set of groups
-const FRESH_SHARE = 0.75; // the share of the budget unseen hard groups get before one seen in the last 90 days is tried
+const STALE_TRIES = 200; // boards tried with hard groups seen in the last 90 days, only after unseen ones found none
 const TOTAL_TRIES = 600; // the most boards checked in one deal, which keeps it inside the server's CPU allowance
 const LIVING_ONE_IN = 6; // the same living rate as an archive slot
 
@@ -153,8 +153,9 @@ export function dealGrid(t, ctx, rnd = batchRandom()) {
   // list finds a fair board within a few tries and one that doesn't almost never will, so spreading the
   // tries over many hard groups finds a grid far more often than spending 80 on each of the first few:
   // in a simulation of a daily player over two weeks, misses fell from about 7% of deals to about 0.5%.
-  // Unseen hard groups get up to FRESH_SHARE of the budget, in rounds, before one seen in the last 90 days
-  // is tried, oldest first, with what is left.
+  // Strict no repeat first (Planning, 7 Nov 2026): unseen hard groups get the whole budget. Only when they
+  // find no fair board does a hard group seen in the last 90 days come back, oldest first, with its own
+  // smaller budget, so a repeat only ever replaces what would have been a miss.
   let budget = TOTAL_TRIES;
   const tryHard = hard => {
     const easies = by.easy.filter(x => compat(x, hard));
@@ -195,7 +196,12 @@ export function dealGrid(t, ctx, rnd = batchRandom()) {
     }
     return null;
   };
-  return rounds(fresh, Math.round(TOTAL_TRIES * (1 - FRESH_SHARE))) || rounds(stale, 0);
+  const grid = rounds(fresh, 0);
+  if (grid || !stale.length) return grid;
+  budget = Math.max(budget, STALE_TRIES);
+  const again = rounds(stale, 0);
+  if (again) again.repeat = 1; // a hard group back inside 90 days, only because no unseen one dealt
+  return again;
 }
 
 function buildGrid(chosen, t, rnd) {
