@@ -11,6 +11,9 @@
   let sel = [];          // selected card positions
   let busy = false;
   let rejectedHit = -1;  // the mistake mark to stamp on the next draw
+  // A finished puzzle is a straight path (7 Nov 2026): the review (score and the four links, one screen,
+  // no way back but Done), then the card pick, then the reveal, then home.
+  let stage = 'review';
 
   // ---------- home tile ----------
   function tileHTML(s) {
@@ -45,7 +48,7 @@
       if (d.status === 'soon') { $('icpBody').innerHTML = '<p class="icpline">Coming soon.</p>'; return; }
       if (d.status === 'signin') { $('icpBody').innerHTML = '<p class="icpline">Sign in on the Declass home page to play.</p>'; return; }
       if (d.status === 'new') return intro(d);
-      P = d.puzzle; sel = []; draw();
+      P = d.puzzle; sel = []; stage = P.status === 'solved' && P.canClaim ? 'pick' : 'review'; draw();
     }).catch(() => { $('icpBody').innerHTML = '<p class="icpline">The files could not be opened. Try again in a moment.</p>'; });
   }
   function minutesLeft(iso) { return Math.max(0, Math.round((Date.parse(iso) - Date.now()) / 60000)); }
@@ -93,11 +96,9 @@
   // During play a found group is a slim row (three small cards and the link) so it doesn't push the open
   // files down the screen; the result screen shows the full clipped groups (7 Nov 2026).
   function rowHTML(g, k) {
-    return `<div class="icprow" style="--k:${k}"><div class="rcards">${g.idx.map(i => { const inf = info(P.cards[i].id) || {}; return `<button class="gcard" data-i="${i}" type="button" aria-label="See ${esc(inf.tileLabel || inf.short || 'this card')} full size"><img src="${esc(inf.tilePhoto || inf.img || '')}" alt="" draggable="false"></button>`; }).join('')}</div><p class="rlink">${esc(g.link)}<small>${g.idx.map(i => esc((info(P.cards[i].id) || {}).tileLabel || '')).join(' · ')}</small></p></div>`;
+    return `<div class="icprow${g.found === false ? ' missed' : ''}" style="--k:${k}"><div class="rcards">${g.idx.map(i => { const inf = info(P.cards[i].id) || {}; return `<button class="gcard" data-i="${i}" type="button" aria-label="See ${esc(inf.tileLabel || inf.short || 'this card')} full size"><img src="${esc(inf.tilePhoto || inf.img || '')}" alt="" draggable="false"></button>`; }).join('')}</div><p class="rlink">${g.found === false ? '<span class="gmiss">Not found · </span>' : ''}${esc(g.link)}<small>${g.idx.map(i => esc((info(P.cards[i].id) || {}).tileLabel || '')).join(' · ')}</small></p></div>`;
   }
-  function groupHTML(g, k) {
-    return `<div class="icpgroup${g.found ? '' : ' missed'}" style="--k:${k}"><span class="gclip">${clip}</span><div class="gcards">${g.idx.map(i => { const inf = info(P.cards[i].id); return `<button class="gcard" data-i="${i}" type="button"><img src="${esc(inf ? inf.img : '')}" alt="${esc(inf ? inf.short : '')}" draggable="false"></button>`; }).join('')}</div><p class="glink">${g.found ? '' : '<span class="gmiss">Not found · </span>'}${esc(g.link)}</p></div>`;
-  }
+
   function marksHTML() {
     return `<div class="icpmarks" aria-label="${P.mistakes} of 3 mistakes used"><span class="ml">Mistakes</span>${[0, 1, 2].map(i => `<span class="mark${i < P.mistakes ? ' used' : ''}${i === rejectedHit ? ' hit' : ''}"><i>REJECTED</i></span>`).join('')}</div>`;
   }
@@ -111,6 +112,7 @@
     // Once the files are open the big title steps aside for a slim bar pinned to the top, holding the
     // mistake marks so a REJECTED stamp is always in view, however far down the desk you are (7 Nov 2026).
     $('sIntercept').classList.add('slim');
+    $('sIntercept').classList.toggle('ended', done);
     $('icpBarMarks').innerHTML = done ? '' : marksHTML();
     if (P.practice) html += `<p class="icppractice">Practice round ${P.practice} · testers only · no Intel</p>`;
     if (!done) {
@@ -119,7 +121,7 @@
       html += `<div class="icpctl"><button class="btn alt" id="icpClear" type="button"${sel.length ? '' : ' disabled'}>Clear</button><button class="btn icpfile" id="icpFile" type="button"${sel.length === 3 ? '' : ' disabled'}>File it</button></div>`;
       html += `<p class="icpsmall">Tap the magnifier on a card to see it full size.</p>${P.expired ? '' : closesLine(P.closes)}`;
     } else {
-      html += resultHTML();
+      html += stage === 'pick' && P.status === 'solved' && P.canClaim ? pickScreenHTML() : resultHTML();
     }
     $('icpBody').innerHTML = html;
     rejectedHit = -1;
@@ -136,23 +138,23 @@
     const why = solved ? (P.score === 100 ? 'a perfect solve' : 'the solve') : 'trying';
     const intel = P.practice ? '<p class="icpintel">Practice round · no Intel, and the card can\'t come Top Secret</p>'
       : `<p class="icpintel"><img class="itok" src="/declass/icons/intel.svg" alt="">+${P.intel} Intel · 3 for playing, ${bonus} for ${why}</p>`;
-    let pickBlock = '';
-    if (solved && P.canClaim) {
-      pickBlock = `<h2 class="icph">Pick a card</h2><p class="icplead">${P.perfect ? 'A perfect solve. Whatever you pick comes Silver or better.' : 'Solve it, pick a card. Solve it perfectly, it\'s Silver or better.'} Any of the twelve, even one you don't own yet.</p>
-        <div class="icpdesk pick" id="icpPick">${P.cards.map((c, i) => pickHTML(c, i)).join('')}</div>`;
-    } else if (solved && P.claimed) {
+    let after = '';
+    if (solved && P.claimed) {
       const inf = info(P.claimed.card);
-      pickBlock = `<p class="icplead">You picked <b>${esc(inf ? inf.short : 'a card')}</b>${P.claimed.finish ? ', ' + esc(D().FNAME[P.claimed.finish]) + (P.claimed.variant === 'living' ? ' Living Card' : '') : ''}. New files tomorrow.</p>`;
-    } else if (!solved) {
-      pickBlock = '<p class="icplead">No card this time. New files tomorrow.</p>';
-    }
-    // The card pick comes right under the score (7 Nov 2026), so nobody misses it below the groups.
-    const linksHead = solved && P.canClaim ? '<h2 class="icph">Today\'s links</h2>' : '';
+      after = `<p class="icpnext">You picked <b>${esc(inf ? inf.short : 'a card')}</b>${P.claimed.finish ? ', ' + esc(D().FNAME[P.claimed.finish]) + (P.claimed.variant === 'living' ? ' Living Card' : '') : ''}. New files tomorrow.</p>`;
+    } else if (solved) after = '<p class="icpnext">Tap Done to pick your card.</p>';
+    else after = '<p class="icpnext">No card this time. New files tomorrow.</p>';
     return `${head}${intel}
-      ${pickBlock}
-      ${linksHead}<div class="icpgroups">${P.groups.map(groupHTML).join('')}</div>
-      <div class="icpctl"><button class="btn alt" id="icpShare" type="button">Share</button><button class="btn" id="icpHome" type="button">Done</button></div>
+      <div class="icprows review">${P.groups.map(rowHTML).join('')}</div>
+      ${after}
+      <div class="icpctl"><button class="btn alt" id="icpShare" type="button">Share</button><button class="btn" id="icpDone" type="button">Done</button></div>
       ${tester() ? '<div class="icpctl"><button class="btn alt icpreplay" id="icpReplay" type="button">Play again · tester practice</button></div>' : ''}`;
+  }
+  // The reward: pick any one of the twelve (7 Nov 2026, its own screen after the review).
+  function pickScreenHTML() {
+    return `<h2 class="icph">Pick a card</h2><p class="icplead">${P.perfect ? 'A perfect solve. Whatever you pick comes Silver or better.' : 'Solve it, pick a card. Solve it perfectly, it\'s Silver or better.'} Any of the twelve, even one you don't own yet.</p>
+      <div class="icpdesk pick" id="icpPick">${P.cards.map((c, i) => pickHTML(c, i)).join('')}</div>
+      <p class="icpsmall">Tap the magnifier on a card to see it full size.</p>`;
   }
   // Testers can replay as often as they like (7 Nov 2026): the button shows with the preview flag on, and
   // the server checks the account is a tester. Practice rounds pay no Intel and never roll Top Secret.
@@ -160,7 +162,7 @@
   function replay() {
     if (busy) return; busy = true;
     const b = $('icpReplay'); if (b) b.disabled = true;
-    D().api('intercept/replay', {}).then(d => { busy = false; P = d.puzzle; sel = []; draw(); window.scrollTo(0, 0); D().sfx('slide'); })
+    D().api('intercept/replay', {}).then(d => { busy = false; P = d.puzzle; sel = []; stage = 'review'; draw(); window.scrollTo(0, 0); D().sfx('slide'); })
       .catch(e => { busy = false; if (b) b.disabled = false; D().toast(e.message === 'no grid' ? 'The files are still being sorted. Try again.' : 'Practice rounds are for testers with the preview on.'); });
   }
   function pickHTML(c, i) {
@@ -207,7 +209,7 @@
     const c = $('icpClear'); if (c) c.onclick = () => { sel = []; refreshSel(); };
     document.querySelectorAll('#icpPick [data-pick]').forEach(b => holdable(b, () => confirmPick(Number(b.dataset.pick))));
     const s = $('icpShare'); if (s) s.onclick = share;
-    const h = $('icpHome'); if (h) h.onclick = leave;
+    const dn = $('icpDone'); if (dn) dn.onclick = done;
     const rp = $('icpReplay'); if (rp) rp.onclick = replay;
   }
   function toggle(i, b) {
@@ -237,7 +239,7 @@
       busy = false; unwait();
       if (d.result === 'tried') { D().toast('Already tried. That one doesn\'t count against you.'); P = d.puzzle; refreshSel(); return; }
       if (d.result === 'correct') {
-        P = d.puzzle; sel = [];
+        P = d.puzzle; sel = []; stage = 'review';
         D().sfx('stampA');
         if (P.status === 'solved') { D().sfx('goldA', 0.3); D().glowFor('gold'); }
         draw();
@@ -253,7 +255,7 @@
         setTimeout(() => {
           rejectedHit = d.puzzle.mistakes - 1;
           P = d.puzzle;
-          if (P.status !== 'play') { sel = []; draw(); refreshHome(); window.scrollTo(0, 0); return; }
+          if (P.status !== 'play') { sel = []; stage = 'review'; draw(); refreshHome(); window.scrollTo(0, 0); return; }
           const marks = document.querySelector('.icpmarks'); if (marks) marks.outerHTML = marksHTML();
           rejectedHit = -1; refreshSel();
         }, 380);
@@ -300,7 +302,7 @@
       D().api('intercept/claim', { day: P.day, index: i }).then(d => {
         D().closeSheet();
         P = d.puzzle;
-        D().claimReveal(d); // the normal turn and reveal, then back here
+        D().claimReveal(d); // the normal turn and reveal, then home (7 Nov 2026)
       }).catch(e => {
         D().closeSheet();
         D().toast(e.message === 'already claimed' ? 'You already picked today\'s card.' : e.message === 'not offered' ? 'Flash cards can\'t be picked.' : 'That did not go through. Try again in a moment.');
@@ -383,16 +385,13 @@
     } else D().toast('The caption is copied, ready to paste.');
   }
 
-  // Leaving with a card still to pick asks first (7 Nov 2026): the pick waits until midnight Eastern.
-  function leave() {
-    if (!(P && P.status === 'solved' && P.canClaim && document.getElementById('sIntercept').classList.contains('on'))) return home();
-    D().sheet(`<div class="sheettop"><span class="howstamp">Code Room</span><button class="howx" data-close aria-label="Close">✕</button></div>
-      <h2>You haven't picked your card yet</h2>
-      <p class="sheetnote">Solving today's files earns a card. Pick it now, or come back to it from the Code Room tile before the files close at midnight Eastern.</p>
-      <button class="btn" id="icpPickNow">Pick now</button><button class="btn alt" id="icpLater">Later</button>`);
-    $('icpPickNow').onclick = () => { D().closeSheet(); const pk = $('icpPick'); if (pk) pk.scrollIntoView({ behavior: 'smooth', block: 'center' }); };
-    $('icpLater').onclick = () => { D().closeSheet(); home(); };
+  // Done on the review: to the card pick if one is waiting, otherwise home (7 Nov 2026).
+  function done() {
+    if (P && P.status === 'solved' && P.canClaim) { stage = 'pick'; draw(); window.scrollTo(0, 0); D().sfx('slide'); return; }
+    home();
   }
+  // The Declass button only shows while the files are open; a finished puzzle leaves by Done.
+  function leave() { home(); }
   window.Intercept = { tile, open, paint, _state: () => P };
   const back = document.getElementById('icpBack');
   if (back) back.onclick = leave;

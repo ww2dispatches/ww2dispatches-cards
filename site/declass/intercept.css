@@ -178,3 +178,15 @@ body.night .howcard,body.night .sheetcard{color:var(--ink)}
 .icp .btn.icpfile.wait:disabled{opacity:.85}
 .icpcard.filing{animation:icpfiling .7s ease-in-out infinite alternate}
 @keyframes icpfiling{from{filter:brightness(1)}to{filter:brightness(.7)}}
+/* A finished puzzle (7 Nov 2026): no way back but Done, and the review fits on one phone screen */
+.icp.ended #icpBack{visibility:hidden}
+.icp.ended .icpscore{margin:0 0 2px}.icp.ended .icpscore b{font-size:52px;margin-top:6px}
+.icp.ended .icpintel{margin:4px 0 12px}
+.icprows.review{gap:10px;margin:0 0 12px}
+.icprows.review .icprow{padding:8px 10px}
+.icprows.review .gcard{width:52px;margin-right:-8px}
+.icprows.review .rlink{font-size:14px;padding:7px 10px}
+.icprows.review .rlink small{font-size:11.5px}
+.icprow.missed{opacity:.8}.icprow.missed .rlink{background:#b8ad95}
+.icprow .gmiss{color:#8e2a20;font-weight:bold}
+.icpnext{text-align:center;font-family:var(--type);font-size:14px;color:#d8ccb0;margin:4px 0 8px}

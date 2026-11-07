@@ -1078,9 +1078,10 @@
     }
     const back = cardEnv && cardEnv.kind === 'request' ? reqFrom : null;
     reqFrom = null;
-    // After the Intercept pick, back to the solved puzzle.
-    if (cardEnv && cardEnv.kind === 'intercept' && window.Intercept) {
-      Promise.all([refreshState(), refreshCatalog()]).then(() => { window.Intercept.open(); maybePromote(); }).catch(() => window.Intercept.open());
+    // After the Code Room pick, home: the end of the puzzle's straight path (7 Nov 2026).
+    if (cardEnv && cardEnv.kind === 'intercept') {
+      const toHome = () => { renderHome(); show('sHome'); };
+      Promise.all([refreshState(), refreshCatalog()]).then(() => { toHome(); maybePromote(); }).catch(toHome);
       return;
     }
     const home = () => { renderHome(); show('sHome'); };
