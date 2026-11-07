@@ -1,4 +1,4 @@
-// GET /api/stats: the Declass admin console (2 Nov 2026), for Brian only (file number on the ADMINS list below).
+// GET /api/stats: the Declass admin console (2 Nov 2026), for Brian only (file number on the admin list in functions/_lib/admins.js).
 // Everyone else gets "not found". Built from what the game already stores; nothing extra is logged.
 //   /api/stats            the whole picture: health, engagement, new players, economy, collecting, card rates,
 //                         Intercept, catalog checks, and every player as a row (by file number)
@@ -7,13 +7,14 @@ import { json, fail } from '../_lib/util.js';
 import { now, findCard, filmReleased } from '../_lib/catalog.js';
 import { signedInPlayer } from '../_lib/player.js';
 import { playerFileNumber } from '../_lib/fileno.js';
+import { isAdmin } from '../_lib/admins.js';
 import { FINISHES, LIVING_ONE_IN, FLASH_ONE_IN } from '../_lib/odds.js';
 import { isMorning, gameDay, addDays } from '../_lib/time.js';
 import { filledSlots, rankInfo } from '../_lib/rank.js';
 import { ensureTally } from '../_lib/tally.js';
 import data from '../_data/catalog.json';
 
-const ADMINS = new Set(['WKB9MK5Y']); // Brian; add a file number here (or in the ADMIN_FILES variable) to give someone else access
+// The admin list (Brian, plus the ADMIN_FILES variable) lives in functions/_lib/admins.js.
 
 const DAY = 86400000;
 const expected = v => { const t = FINISHES[v]; return { topsecret: t.topsecret / 1e4, gold: (t.gold - t.topsecret) / 1e4, silver: (t.silver - t.gold) / 1e4, copper: 1 - t.silver / 1e4 }; };
@@ -26,8 +27,7 @@ const tally = () => ({ n: 0, copper: 0, silver: 0, gold: 0, topsecret: 0 });
 
 export async function onRequestGet({ request, env }) {
   const player = await signedInPlayer(env, request);
-  const admins = new Set([...ADMINS, ...String(env.ADMIN_FILES || '').split(',').map(x => x.trim().toUpperCase()).filter(Boolean)]);
-  if (!player || !admins.has(playerFileNumber(player.id))) return fail(404, 'not found');
+  if (!isAdmin(env, player)) return fail(404, 'not found');
   const t = now(env, request), db = env.DB, today = gameDay(t);
   const [P, PL, O, S, L] = await db.batch([
     db.prepare('SELECT id, player_id, card_id, variant, finish, serial, slot_key, pulled_at, signature, turned, intel FROM pulls'),
