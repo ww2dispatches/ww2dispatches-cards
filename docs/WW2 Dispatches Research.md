@@ -89,7 +89,7 @@ Every new card also gets its data for Declass Campaigns, the card battle mode (a
 * **The blind check:** a fresh helper agent gets only `RULES.md` and each card's title, date, series, and facts, never the first scores, and scores the same cards. Where the two agree, record the card as `agreed`. Where they differ, record both with a one line reason each, as `check`, for Brian.
 * **Values are historical judgments, never changed for balance,** and never chosen to fill a gap in the distribution.
 * **Skipped:** postwar cards (after 2 September 1945) and Name This cards get no number; they get only their lens.
-* **If the private repo can't be reached,** finish everything else, leave those cards unscored, and say so in the summary; the next run scores them first. Never put the data anywhere public instead.
+* **If the private repo can't be reached,** finish everything else, leave those cards unscored, and say so in the summary; the next run scores that week's cards first. Cards posted before 7 Nov 2026 are not research's job; they wait for the Campaigns backfill. Never put the data anywhere public instead.
 
 Research leaves to Thursday: the `video` block (footage, focus, hook, source note), `themes.video`, `kit`, `story`, the film keys under `buffer`, and the cut clips. It leaves to Friday: `body`, `threads`, `addons`, `hashtags`, the framing (focusX, focusY, zoom), `slides`, `question`, `soft_ask`, `newsletter_mention`, `newsletter`, the card keys under `buffer`, and `links`.
 
