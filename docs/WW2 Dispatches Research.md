@@ -9,6 +9,7 @@ By the end of Wednesday night, for each of the seven days from the coming Sunday
 * the film for the noon video is downloaded and checked, or the day is marked a Story Card,
 * the lead photo for each card and the photos for any Story Card are downloaded,
 * the dispatch JSON holds the fact sheet, the sources, the photo and film records, the short name and photo credit, the Declassified extra, and the theme tags,
+* each card's Campaigns game data is scored, blind checked, and saved in the private scores repo (below),
 * and the slate lists it all, with alternates, for Brian.
 
 Research writes no captions, cuts no film, and renders nothing. Thursday and Friday do that.
@@ -67,7 +68,7 @@ Every dispatch JSON gets a `facts` block: six to twelve verified facts in plain 
 * A noon video shares the number of the 8 a.m. dispatch it covers. Name This and the welcome post never take a number.
 
 ## What research writes in each dispatch JSON
-Research owns: the file name and `id`, `num`, `date`, `time`, `series` (one of the four, or `flash` on a Flash day with `flash: true`), `title`, `short`, `place`, `pull`, `format` and its `quote`/`quoteBy` or `specTitle`/`specs` on evening cards, `facts`, `sources`, `photo` (the file in `photos/`) with `photoUrl`, `photoNote`, and `photoCredit`, `videoPhotos`, `film`, `somber`, `kind` (the planned noon video kind, `living` or `story`), and the `themes` block (who, story, photo, theater, branch, nations) using only the values in `analytics/themes.md`, and `declassified` (below).
+Research owns: the file name and `id`, `num`, `date`, `time`, `series` (one of the four, or `flash` on a Flash day with `flash: true`), `title`, `short`, `place`, `pull`, `format` and its `quote`/`quoteBy` or `specTitle`/`specs` on evening cards, `facts`, `sources`, `photo` (the file in `photos/`) with `photoUrl`, `photoNote`, and `photoCredit`, `videoPhotos`, `film`, `somber`, `kind` (the planned noon video kind, `living` or `story`), and the `themes` block (who, story, photo, theater, branch, nations, lens) using only the values in `analytics/themes.md`, and `declassified` (below).
 
 Two of those are kept for the Declass game (Envelope doc) under the Brief's "Record now, use later" rule, and cost nothing extra once the research is done:
 * **`short`:** a one to three word name for the card's subject, the way people would say it ("Aachen", "Leyte", "Taffy 3", "USS Reuben James"). It is the headline on Declass share pictures and the card's dossier label, so it names the subject only, never the card type: an evening card about the same event keeps the same name (the Kearny story and its Spec Sheet are both "USS Kearny"), because the game shows the format (Spec Sheet, Photo of the Day, Quote of the Day) on its own line. Ships take their prefix ("USS Hornet").
@@ -77,6 +78,16 @@ Two of those are kept for the Declass game (Envelope doc) under the Brief's "Rec
 * `fact`: two or three plain sentences with one verified detail the card and its caption won't use, the kind a reader would want to repeat to someone: a behind the scenes moment, an odd number, what happened to a person afterward. Verified like any fact, never a guess. It must not repeat a fact sheet line, and Friday never uses it in the caption, Threads, or newsletter, so it stays a reward.
 * `sources`: the source or sources for it (title and url, as in `sources`).
 * `photo` (optional): one more real archival photo of the event that is not the card's lead photo, when a good one exists: `file` (in `photos/`), `page`, `credit` (a clean public line like `photoCredit`), and `caption` (one sentence on what it shows). On a Story Card day one of the `videoPhotos` that isn't the lead can be named here with no extra download. Leave it out rather than use a weak or unrelated picture.
+
+## Campaigns game data (private until the seal reveal)
+Every new card also gets its data for Declass Campaigns, the card battle mode (added 7 Nov 2026, Brian), so the catalog never needs another big backfill.
+* **`themes.lens` goes in the dispatch JSON like any theme tag:** whose side the card is told from, one value from `analytics/themes.md`. It is public and gives nothing away.
+* **Everything else stays out of the cards repo,** which is public: the card's number (1 to 7), its branches (land, sea, air), its Statecraft keyword, the `noPlay` marker, and a Flash card's game role. Never write them into a dispatch JSON or its `game` block; `renderer/catalog.py` warns if any appear there. They go in the private repo **ww2dispatches/ww2dispatches-campaign-scores**, file `scores.json`.
+* **How:** attach the private repo with the add_repo tool (owner ww2dispatches, repo ww2dispatches-campaign-scores, access push) and clone it, then read its `RULES.md` in full. That file is the rulebook: the ladder, the scoring rules, the closed list of 7s, the anchors, the branch rule, the keywords, `noPlay`, and the blind check. Score all 14 of the week's cards from their facts blocks once the facts are verified.
+* **The blind check:** a fresh helper agent gets only `RULES.md` and each card's title, date, series, and facts, never the first scores, and scores the same cards. Where the two agree, record the card as `agreed`. Where they differ, record both with a one line reason each, as `check`, for Brian.
+* **Values are historical judgments, never changed for balance,** and never chosen to fill a gap in the distribution.
+* **Skipped:** postwar cards (after 2 September 1945) and Name This cards get no number; they get only their lens.
+* **If the private repo can't be reached,** finish everything else, leave those cards unscored, and say so in the summary; the next run scores them first. Never put the data anywhere public instead.
 
 Research leaves to Thursday: the `video` block (footage, focus, hook, source note), `themes.video`, `kit`, `story`, the film keys under `buffer`, and the cut clips. It leaves to Friday: `body`, `threads`, `addons`, `hashtags`, the framing (focusX, focusY, zoom), `slides`, `question`, `soft_ask`, `newsletter_mention`, `newsletter`, the card keys under `buffer`, and `links`.
 
@@ -105,7 +116,7 @@ Research owns the dispatch bank in `status.md` (aim for 5 to 7 verified evergree
 No run ever changes a locked number, a verified fact, or another run's fields to recover.
 
 ## Tasks, reminders, and the summary
-File Schedule Board tasks and push reminders per the Brief's "Shared run procedures" for every film or photo Brian needs to supply and for anything uncertain. The summary to Brian (SendUserMessage) is the slate in short form: each day's 8 a.m. event, planned kind, film source and sound, and its alternates; each 5 p.m. card's format and subject; which playbook items shaped the picks; what Brian needs to supply and by when; the newsletter story picked for Sunday's issue with its alternates; and the line "Swap any day, or the newsletter story, by telling me here before Thursday 7 p.m."
+File Schedule Board tasks and push reminders per the Brief's "Shared run procedures" for every film or photo Brian needs to supply and for anything uncertain. The summary to Brian (SendUserMessage) is the slate in short form: each day's 8 a.m. event, planned kind, film source and sound, and its alternates; each 5 p.m. card's format and subject; which playbook items shaped the picks; what Brian needs to supply and by when; the newsletter story picked for Sunday's issue with its alternates; one line per Campaigns score the blind check disagreed on (card, both numbers or keywords, the two reasons), or "Campaigns scores: all agreed"; and the line "Swap any day, or the newsletter story, by telling me here before Thursday 7 p.m."
 
 ## Changelog
 * 24 Oct 2026: Doc created. Research moved out of the Thursday cards run into its own Wednesday run, picking for film first, locking the numbers, writing one fact sheet per dispatch, and securing film and photos before the build runs. The week's order became Tuesday analytics, Wednesday research, Thursday videos, Friday cards.
@@ -119,3 +130,4 @@ File Schedule Board tasks and push reminders per the Brief's "Shared run procedu
 * 31 Oct 2026: A `needs brian` film day no longer falls back to a Story Card. Brian always prefers a Living Card when real film exists, and a Story Card built only to be replaced wastes usage. The Thursday run leaves that noon slot open and files a task; Claude cuts the Living Card in the Project with Brian's computer linked (Videos doc).
 * 6 Nov 2026: Film now goes to `footage/` on Cloudflare R2 (https://media.ww2dispatches.com) through `renderer/media.py`, which never overwrites a file, instead of being committed to the ww2dispatches-videos repo.
 * 6 Nov 2026 (later): Film for a `needs brian` day reaches R2 through the videos repo's inbox. A Project chat (no R2 credentials) commits a hand cut clip to `inbox/<filename>`, and every run starts with `python3 renderer/media.py sweep`, which moves it to `footage/<filename>` on R2. If R2 credentials are ever missing, media.py falls back to committing to the videos repo the old way with a loud WARNING the run's summary reports to Brian.
+* 7 Nov 2026: Research now also sets `themes.lens` on every dispatch and scores each card's Campaigns game data (number, branches, keyword, `noPlay`, Flash role) with a blind second check, saved in the private ww2dispatches-campaign-scores repo, never in the public cards repo, until the seal reveal (Campaigns Card Ladder and Seal Reveal and Keywords docs).

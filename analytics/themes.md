@@ -46,6 +46,12 @@ US · Britain · Soviet Union · France · China · Germany · Japan · Italy
 
 Any other nation is written by name (for example "Philippines", "Poland", "Canada").
 
+## lens (one)
+Whose side of the war the card is told from, for the Declass Campaigns decks (Campaigns Sides and Decks doc).
+us · commonwealth · soviet · other_allied · axis_germany · axis_japan · axis_italy · civilian_neutral
+
+Pick the side the card's subject belongs to, not the side that wins: a U-boat crew's story is axis_germany, Kearny's sailors are us. British, Canadian, Australian, Indian, and other Commonwealth forces are commonwealth; Free French, Polish, Chinese, Dutch, and other Allied forces are other_allied. Civilians are civilian_neutral when the card is about them as civilians (the Blitz, Hamburg, a neutral country); a nation's home front program (rationing, war bonds, the draft) takes that nation's lens. Added 7 Nov 2026 by Brian's decision (Campaigns chat). The research run sets it on every new dispatch; the Campaigns backfill adds it to the older ones.
+
 ## video (Living Cards and Story Cards only)
 * **kind:** Living Card · Story Card
 * **opening:** what the first two seconds show, from the finished video, never from memory: combat or firing · motion · people still · a face · a machine · a place or scene · a map or text card · dark or unclear

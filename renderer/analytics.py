@@ -92,7 +92,7 @@ def check_themes(recs, vocab):
         if not t:
             problems.append(f"{d['_file']}: no themes block")
             continue
-        for field in ("who", "story", "photo", "theater", "branch", "nations"):
+        for field in ("who", "story", "photo", "theater", "branch", "nations", "lens"):
             vals = t.get(field)
             vals = vals if isinstance(vals, list) else [vals] if vals else []
             for v in vals:
