@@ -75,3 +75,8 @@ plaque for damage getting through, the forecast beside the button (the check mak
 exactly as forecast), the War Cabinet in the round menu, attacks in your turn with escorts first, the
 Ultimatum's HELD OFF, debriefs when a wave breaks, and the end screen. The check then plays the whole run
 out by tapping, and the server must replay and save it with the same result: 37 passed, 0 failed.
+
+Build session 5, part 1 (7 Nov 2026): ranks on the chapter screens and end screen, and the month end
+payout. Server checks add the month end (midnight Eastern on the 1st), the bands, paying once even with
+three loads at once, the Intel log, and no payout without a run: 51 passed. The page check adds the rank
+on the end screen and the month end results on the home screen: 39 passed.
