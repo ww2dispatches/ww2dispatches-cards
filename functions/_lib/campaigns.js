@@ -22,7 +22,12 @@ export const PREVIEW_RUNS_PER_DAY = 50; // on a preview deploy (*.pages.dev, its
 export function runsPerDay(request) {
   try { return new URL(request.url).hostname.endsWith('.pages.dev') ? PREVIEW_RUNS_PER_DAY : RUNS_PER_DAY; } catch { return RUNS_PER_DAY; }
 }
-export const CHOICES_MAX = 4000;        // a finished run is a few hundred choices; anything far past that is refused
+export const CHOICES_MAX = 4000;
+// Intel paid when a chapter's month ends, by the player's band in that chapter's month rank (Campaigns
+// doc, Ranking: top 5%, top 25%, top 50%, everyone who finished a run). Start values for Brian to approve.
+export const BAND_INTEL = { top5: 50, top25: 30, top50: 20, finished: 10 };
+export const bandOf = top => top <= 5 ? 'top5' : top <= 25 ? 'top25' : top <= 50 ? 'top50' : 'finished';
+export const BAND_NAME = { top5: 'top 5%', top25: 'top 25%', top50: 'top 50%', finished: 'finished' };        // a finished run is a few hundred choices; anything far past that is refused
 
 const CAMPAIGNS = new Map([battleOfBritain].map(c => [c.id, c]));
 export const LOANERS = loanerData.loaners;
@@ -129,6 +134,8 @@ const SCHEMA = [
   `CREATE TABLE IF NOT EXISTS campaign_progress (player_id TEXT NOT NULL, campaign_id TEXT NOT NULL, year TEXT NOT NULL, chapter INTEGER NOT NULL, won_at TEXT, best INTEGER, best_day TEXT, PRIMARY KEY (player_id, campaign_id, year, chapter))`,
   `CREATE TABLE IF NOT EXISTS campaign_day_best (player_id TEXT NOT NULL, campaign_id TEXT NOT NULL, chapter INTEGER NOT NULL, day TEXT NOT NULL, score INTEGER NOT NULL, PRIMARY KEY (player_id, campaign_id, chapter, day))`,
   // Histograms, no names: one row per score with how many players have it. kind 'day' (k = the day) or 'chapter' (k = the year).
+  // Month end payouts (build session 5): one row per player and chapter, written once with the settled rank.
+  `CREATE TABLE IF NOT EXISTS campaign_payouts (player_id TEXT NOT NULL, campaign_id TEXT NOT NULL, year TEXT NOT NULL, chapter INTEGER NOT NULL, top INTEGER NOT NULL, players INTEGER NOT NULL, band TEXT NOT NULL, intel INTEGER NOT NULL, paid_at TEXT NOT NULL, tok TEXT NOT NULL, seen INTEGER NOT NULL DEFAULT 0, PRIMARY KEY (player_id, campaign_id, year, chapter))`,
   `CREATE TABLE IF NOT EXISTS campaign_ranks (campaign_id TEXT NOT NULL, chapter INTEGER NOT NULL, kind TEXT NOT NULL, k TEXT NOT NULL, score INTEGER NOT NULL, n INTEGER NOT NULL DEFAULT 0, PRIMARY KEY (campaign_id, chapter, kind, k, score))`,
 ];
 let ready = null;
@@ -162,5 +169,50 @@ export async function percentile(db, campaignId, chN, kind, k, score) {
   if (!r || !r.total) return null;
   // "Top 12%": the share of players at or above this score, ties counted halfway.
   return { top: Math.max(1, Math.round(100 - (100 * (r.below + r.tied / 2)) / r.total)), players: r.total };
+}
+// When a campaign's month ends (midnight Eastern on the 1st of the next month), its chapter ranks settle.
+export function monthEndsAt(campaign, year) {
+  const m = campaign.month, y = Number(year);
+  const next = m === 12 ? `${y + 1}-01-01` : `${y}-${String(m + 1).padStart(2, '0')}-01`;
+  return zonedTime(next, '00:00');
+}
+// Settled for real only when the month was a scheduled month for that campaign. Preview runs (any month,
+// before launch) never pay out, except on a local copy with the test clock, so the settle can be tested.
+function settles(env, campaignId, year, campaign) {
+  if (env.ALLOW_FAKE_NOW === '1') return true;
+  return schedule.months[`${year}-${String(campaign.month).padStart(2, '0')}`] === campaignId;
+}
+// Pay this player for every chapter whose month has ended and that isn't paid yet. Called when the home
+// screen or Campaigns loads, so nothing has to run on a timer. Each payout is written once (the primary
+// key), and the Intel moves only in the batch whose payout row went in. Returns the new payouts.
+export async function settleFor(env, playerId, t) {
+  const db = env.DB;
+  const rows = (await db.prepare(`SELECT p.campaign_id, p.year, p.chapter, p.best FROM campaign_progress p WHERE p.player_id = ? AND p.best IS NOT NULL
+    AND NOT EXISTS (SELECT 1 FROM campaign_payouts x WHERE x.player_id = p.player_id AND x.campaign_id = p.campaign_id AND x.year = p.year AND x.chapter = p.chapter)`).bind(playerId).all()).results || [];
+  const paid = [];
+  for (const r of rows) {
+    const campaign = CAMPAIGNS.get(r.campaign_id);
+    if (!campaign || !settles(env, r.campaign_id, r.year, campaign) || t < monthEndsAt(campaign, r.year)) continue;
+    const pc = await percentile(db, r.campaign_id, r.chapter, 'chapter', r.year, r.best);
+    if (!pc) continue;
+    const band = bandOf(pc.top), intel = BAND_INTEL[band], at = t.toISOString();
+    const tok = newRunId();
+    const mine = `EXISTS (SELECT 1 FROM campaign_payouts WHERE player_id = ?1 AND campaign_id = ?2 AND year = ?3 AND chapter = ?4 AND tok = ?5)`;
+    const res = await db.batch([
+      db.prepare('INSERT INTO campaign_payouts (player_id, campaign_id, year, chapter, top, players, band, intel, paid_at, tok) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) ON CONFLICT DO NOTHING')
+        .bind(playerId, r.campaign_id, r.year, r.chapter, pc.top, pc.players, band, intel, at, tok),
+      db.prepare(`UPDATE players SET intel = intel + ?6 WHERE id = ?1 AND ${mine}`).bind(playerId, r.campaign_id, r.year, r.chapter, tok, intel),
+      db.prepare(`INSERT INTO intel_log (player_id, at, delta, reason, slot_key) SELECT ?1, ?7, ?6, 'campaign', ?8 WHERE ${mine}`)
+        .bind(playerId, r.campaign_id, r.year, r.chapter, tok, intel, at, `cmp:${r.campaign_id}:${r.year}:${r.chapter}`),
+    ]);
+    if (res[0].meta && res[0].meta.changes) paid.push({ campaign: r.campaign_id, title: campaign.title, year: r.year, chapter: r.chapter, name: (campaign.chapters.find(c => c.n === r.chapter) || {}).name, top: pc.top, players: pc.players, band, intel });
+  }
+  return paid;
+}
+// Settled results the player hasn't been shown yet; marks them shown.
+export async function unseenPayouts(db, playerId) {
+  const rows = (await db.prepare('SELECT * FROM campaign_payouts WHERE player_id = ? AND seen = 0').bind(playerId).all()).results || [];
+  if (rows.length) await db.prepare('UPDATE campaign_payouts SET seen = 1 WHERE player_id = ? AND seen = 0').bind(playerId).run();
+  return rows.map(r => { const c = CAMPAIGNS.get(r.campaign_id); return { campaign: r.campaign_id, title: c ? c.title : '', year: r.year, chapter: r.chapter, name: c ? (c.chapters.find(x => x.n === r.chapter) || {}).name : '', top: r.top, players: r.players, band: r.band, intel: r.intel }; });
 }
 export { gameDay, addDays };

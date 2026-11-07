@@ -167,6 +167,7 @@ ok(/CHAPTER WON|RUN OVER/.test(end), 'the run ends with the end screen: ' + end.
 ok(/In real history, Britain came through these raids at a Resolve of 6|ran out in wave/.test(end), 'the verdict is said in full words');
 await page.waitForFunction(() => !document.getElementById('endGo').disabled, null, { timeout: 15000 });
 ok(/Checked and saved/.test(await text('#endRank')), 'the server replays the run and saves it: ' + (await text('#endRank')));
+ok(/YOUR RANK/.test(await text('#endRank')) && /This month: top \d+% of \d+ player/.test(await text('#endRank')) && /top 5% get \d+/.test(await text('#endRank')), 'the end screen shows the rank and what each band pays');
 await shot('end');
 const saved = db.prepare("SELECT status, won, resolve FROM campaign_runs WHERE player_id = ? AND status = 'done'").get(P);
 ok(saved && (saved.won === 1) === /CHAPTER WON/.test(end), 'the saved result matches the page');
@@ -175,6 +176,14 @@ await page.click('#endGo');
 await page.waitForSelector('#chGo');
 ok(/2 of 3 runs left today/.test(await text('#cmpBody')), 'the finished run counts: ' + (await text('#cmpBody')).match(/\d of 3 runs[^.]*|No runs[^.]*/));
 
+// The month end notice: on this local copy the test clock lets the preview month settle, so going home
+// pays the chapter and shows the results once.
+await page.click('#cmpBack').catch(() => {});
+if (!(await page.$('#cmpBack:not([hidden])'))) { await page.click('#chBack'); await page.click('#cmpBack'); }
+await page.waitForSelector('#sheet:not([hidden])', { timeout: 10000 }).catch(() => {});
+ok(/The month's ranks are settled/.test(await text('#sheetCard')) && /\+\d+ Intel/.test(await text('#sheetCard')), 'the month end results show on the home screen with the Intel paid');
+await shot('paid');
+await page.click('#sheet [data-close]');
 ok(errs.length === 0, 'no page errors: ' + errs.join(' | '));
 await b.close();
 console.log(`${pass} passed, ${failN} failed`);

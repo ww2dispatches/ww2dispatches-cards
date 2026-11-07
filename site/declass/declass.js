@@ -1935,7 +1935,7 @@
       <button class="btn" data-close>Got it</button>`);
   };
   const reasonText = x => x.reason === 'envelope' ? 'Envelope opened' : x.reason === 'duplicate' ? 'Duplicate ' + (x.variant === 'living' ? 'living ' : '') + (FNAME[x.finish] || '') + ' ' + ((BYID.get(x.card) || {}).short || '')
-    : x.reason === 'request' ? 'Requested ' + (FNAME[x.finish] || '') + ' ' + ((BYID.get(x.card) || {}).short || '') : x.reason === 'intercept' ? 'Code Room puzzle' : x.reason;
+    : x.reason === 'request' ? 'Requested ' + (FNAME[x.finish] || '') + ' ' + ((BYID.get(x.card) || {}).short || '') : x.reason === 'intercept' ? 'Code Room puzzle' : x.reason === 'campaign' ? 'Campaigns month end' : x.reason;
   // Days until a Flash day, in the player's own calendar.
   function untilText(iso) {
     const d = Math.round((new Date(iso).setHours(0, 0, 0, 0) - new Date().setHours(0, 0, 0, 0)) / 86400000);

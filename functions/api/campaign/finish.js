@@ -63,6 +63,6 @@ export async function onRequestPost({ request, env }) {
   if (!(res[0].meta && res[0].meta.changes)) return json({ result: 'already' });
   const dayRank = await C.percentile(db, cid, chN, 'day', day, Math.max(score, dayBest ? dayBest.score : -1));
   const chapterRank = await C.percentile(db, cid, chN, 'chapter', year, Math.max(score, prog && prog.best != null ? prog.best : -1));
-  return json({ result: o.won ? 'won' : 'lost', outcome: o, score, bestToday: !dayBest || score > dayBest.score, dayRank, chapterRank, unlocked: o.won && chN < campaign.chapters.length ? chN + 1 : null });
+  return json({ bands: C.BAND_INTEL, monthEnds: slot.preview ? null : C.monthEndsAt(campaign, year).toISOString(), result: o.won ? 'won' : 'lost', outcome: o, score, bestToday: !dayBest || score > dayBest.score, dayRank, chapterRank, unlocked: o.won && chN < campaign.chapters.length ? chN + 1 : null });
 }
 const publicRun = r => ({ chapter: r.chapter, day: r.day, runNo: r.run_no, status: r.status, won: Boolean(r.won), resolve: r.resolve, rounds: r.rounds, score: r.score });

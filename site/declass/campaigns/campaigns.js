@@ -135,6 +135,20 @@ function engineCampaign() {
   return { id: c.id, side: c.side, year: c.year, startResolve: c.startResolve, chapters: DATA.chapters.filter(ch => ch.released) };
 }
 const chapterN = n => DATA.chapters.find(c => c.n === n);
+// Ranks (build session 5): percentiles only, no names. Provisional until the month ends, when each
+// chapter's rank settles and Intel is paid by band.
+const lastDay = () => DATA && DATA.monthEnds ? new Date(Date.parse(DATA.monthEnds) - 3600000).toLocaleDateString('en-GB', { ...ET, day: 'numeric', month: 'long' }) : null;
+const rankText = r => r ? `top ${r.top}% of ${r.players} player${r.players === 1 ? '' : 's'}` : '';
+function bandsLine() {
+  const b = (DATA && DATA.bands) || {};
+  return `When the month ends${lastDay() ? ' (' + lastDay() + ')' : ''}, each chapter's rank settles and pays Intel: top 5% get ${b.top5}, top 25% get ${b.top25}, top 50% get ${b.top50}, and anyone who finished a run gets ${b.finished}.`;
+}
+function rankBoxHTML(ch) {
+  if (!ch.rank || !ch.rank.month) return '';
+  return `<div class="crank"><span>YOUR RANK IN THIS CHAPTER</span>
+    ${ch.rank.today ? `<p><b>Today:</b> ${esc(rankText(ch.rank.today))}</p>` : ''}<p><b>This month:</b> ${esc(rankText(ch.rank.month))}, from your best run. Provisional${lastDay() ? ' until ' + esc(lastDay()) : ' until the month ends'}.</p>
+    <p class="cmpsmall">${esc(bandsLine())}</p></div>`;
+}
 function bestText(ch) {
   if (ch.best == null) return '';
   if (ch.best >= 1e6) return `Best: won with a Resolve of ${Math.floor((ch.best - 1e6) / 1000)}`;
@@ -159,9 +173,23 @@ function tileHTML() {
   const left = ch.runsLeft;
   return go(`Chapter ${ch.n}: ${esc(ch.name)} · ${left ? left + ' run' + (left > 1 ? 's' : '') + ' left today' : 'New runs tomorrow'}`, left ? 'live' : 'done');
 }
+// Month end results: shown once, the first time the home screen loads after a chapter's rank settles.
+const shownPaid = new Set();
+function paidNotice() {
+  const st = D().state(), list = ((st && st.campaignPaid) || []).filter(p => !shownPaid.has(p.campaign + p.year + p.chapter));
+  if (!list.length || !$('sHome').classList.contains('on')) return;
+  list.forEach(p => shownPaid.add(p.campaign + p.year + p.chapter));
+  const total = list.reduce((a, p) => a + p.intel, 0);
+  D().sheet(`<div class="sheettop"><span class="howstamp">Campaign results</span><button class="howx" data-close aria-label="Close">✕</button></div>
+    <h2>The month's ranks are settled</h2>
+    ${list.map(p => `<p class="sheetline"><b>${esc(p.title.split(':')[0])}, chapter ${p.chapter}: ${esc(p.name || '')}</b><br>${p.band === 'finished' ? `You finished a run (top ${p.top}% of ${p.players})` : `Top ${p.top}% of ${p.players} player${p.players === 1 ? "" : "s"}`} · <img class="itok" src="/declass/icons/intel.svg" alt="">+${p.intel} Intel</p>`).join('')}
+    <p class="sheetnote">${total} Intel added to your balance. Ranks come from each player's best run of the month, with no names anywhere.</p>
+    <button class="btn" data-close type="button">Back to Declass</button>`);
+}
 function tile(el) {
   if (!el) return;
   if (!wanted()) { el.innerHTML = ''; return; }
+  setTimeout(paidNotice, 600);
   loadRun();
   if (!DATA) { el.innerHTML = ''; load().then(() => tile(el)).catch(() => {}); return; }
   el.innerHTML = tileHTML();
@@ -202,7 +230,7 @@ function chapterTileHTML(ch) {
   else if (ch.won) { state = 'Won' + (ch.runsLeft ? ` · ${ch.runsLeft} run${ch.runsLeft > 1 ? 's' : ''} left today` : ''); cls = 'won'; }
   else { state = ch.runsLeft ? `${ch.runsLeft} run${ch.runsLeft > 1 ? 's' : ''} left today` : 'New runs tomorrow'; cls = ch.runsLeft ? 'open' : 'spent'; }
   const files = ch.released ? `<span class="cdates">${ch.waves.map(w => esc(shortDate(w.date))).join(' · ')}</span>` : '';
-  return `<button class="chap ${cls}" type="button" data-ch="${ch.n}"><span class="cno">CHAPTER ${ch.n}</span><b>${esc(ch.name)}</b>${files}<span class="cstate">${state}</span>${ch.released ? `<span class="cbest">${esc(bestText(ch))}</span>` : ''}${ch.won ? '<span class="cwon">WON</span>' : ''}</button>`;
+  return `<button class="chap ${cls}" type="button" data-ch="${ch.n}"><span class="cno">CHAPTER ${ch.n}</span><b>${esc(ch.name)}</b>${files}<span class="cstate">${state}</span>${ch.released ? `<span class="cbest">${esc(bestText(ch))}${ch.rank && ch.rank.month ? ' · ' + esc(rankText(ch.rank.month)) + ' this month' : ''}</span>` : ''}${ch.won ? '<span class="cwon">WON</span>' : ''}</button>`;
 }
 
 // ---------- one chapter: the briefing ----------
@@ -219,6 +247,7 @@ function openChapter(n) {
     <p class="cmpsmall">Each file is one enemy wave. Clear it and the file ends; the next wave attacks in the very next raid. Clear all three to win.</p>
     <div class="cmark"><span>THE MARK TO BEAT · A RESOLVE OF ${ch.benchmark}</span><p>You start at a Resolve of ${c.startResolve}. Attacks you don't block take it down; Home Front cards raise it, up to ${E.RULES.resolveCap}. What is left when the last wave breaks is your score.</p></div>`;
   if (ch.twist) html += `<div class="ctwist"><span>THIS CHAPTER'S TWIST · ${esc(ch.twist.name.toUpperCase())}</span><p>${esc(ch.twist.text)}</p></div>`;
+  html += rankBoxHTML(ch);
   html += `<p class="cbranch">${br.map(b => svgI(b, 'bi')).join('')}This is ${br.length === 1 ? 'an ' + branchWords(br) : 'a ' + branchWords(br)} campaign. Machines and operations need ${branchNeed(br)}.</p>`;
   html += `<p class="cmpsmall">${ch.calm ? `Rounds 1 and 2 are calm: ${esc(ch.calm.text)} The first raid comes in round 3.` : ''}</p>`;
   const left = ch.runsLeft;
@@ -691,11 +720,16 @@ function finishRun() {
   const box = $('endRank'), go = $('endGo');
   D().api('campaign/finish', { ticket: RUN.ticket, choices: RUN.choices }).then(d => {
     const lines = [];
+    let rk = '';
     if (d.result === 'won' || d.result === 'lost') {
-      if (d.dayRank && d.dayRank.players) lines.push(`Today: top ${d.dayRank.top}% of ${d.dayRank.players} player${d.dayRank.players === 1 ? '' : 's'}${d.bestToday ? '' : ' (your best run today counts)'}.`);
+      if (DATA) { DATA.bands = d.bands || DATA.bands; DATA.monthEnds = d.monthEnds !== undefined ? d.monthEnds : DATA.monthEnds; }
+      rk = `<div class="crank end"><span>YOUR RANK</span>
+        ${d.dayRank ? `<p><b>Today:</b> ${esc(rankText(d.dayRank))}${d.bestToday ? '' : ', from your best run today'}</p>` : ''}
+        ${d.chapterRank ? `<p><b>This month:</b> ${esc(rankText(d.chapterRank))}, provisional${lastDay() ? ' until ' + esc(lastDay()) : ''}</p>` : ''}
+        <p class="cmpsmall">Every won run ranks above every lost run. Wins rank by Resolve left, then fewer rounds; losses by waves broken. ${esc(bandsLine())}</p></div>`;
       if (d.unlocked) lines.push(`Chapter ${d.unlocked} is open${chapterN(d.unlocked) && chapterN(d.unlocked).released ? '' : ' from ' + dayMonth(chapterN(d.unlocked).opensAt)}.`);
     } else if (d.result === 'already') lines.push('This run was already saved.');
-    box.innerHTML = `<p class="oline">Checked and saved.</p>${lines.map(l => `<p class="oline">${esc(l)}</p>`).join('')}`;
+    box.innerHTML = `<p class="oline">Checked and saved.</p>${rk}${lines.map(l => `<p class="oline">${esc(l)}</p>`).join('')}`;
     RUN = null; saveRun();
     go.disabled = false; go.onclick = leaveRun;
   }).catch(e => {

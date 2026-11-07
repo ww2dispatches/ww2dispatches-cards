@@ -17,13 +17,22 @@ export async function onRequestGet({ request, env }) {
   if (!player) return json({ ...base, status: 'signin', chapters: campaign.chapters.map(ch => C.publicChapter(slot, ch, t, new Map())) });
   const db = env.DB;
   await C.ensureTables(db);
+  await C.settleFor(env, player.id, t);
   const progress = await C.progressOf(db, player.id, slot);
   const chapters = [];
   for (const ch of campaign.chapters) {
     const pc = C.publicChapter(slot, ch, t, progress);
     if (pc.released) pc.runsLeft = Math.max(0, C.runsPerDay(request) - await C.runsToday(db, player.id, campaign.id, ch.n, day));
+    // Ranks (build session 5): today's best and the month's best as a percentile, provisional until the month ends.
+    const mine = progress.get(ch.n);
+    if (mine && mine.best != null) {
+      const d = await db.prepare('SELECT score FROM campaign_day_best WHERE player_id = ? AND campaign_id = ? AND chapter = ? AND day = ?').bind(player.id, campaign.id, ch.n, day).first();
+      pc.rank = { month: await C.percentile(db, campaign.id, ch.n, 'chapter', slot.year, mine.best), today: d ? await C.percentile(db, campaign.id, ch.n, 'day', day, d.score) : null };
+    }
     chapters.push(pc);
   }
+  base.monthEnds = slot.preview ? null : C.monthEndsAt(campaign, slot.year).toISOString();
+  base.bands = C.BAND_INTEL;
   const owned = (await db.prepare('SELECT DISTINCT card_id FROM pulls WHERE player_id = ?').bind(player.id).all()).results || [];
   const cards = [];
   for (const { card_id } of owned) {

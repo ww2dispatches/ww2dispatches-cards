@@ -159,5 +159,31 @@ const play = async (p, ch, now = NOW, deck = DECK, cheat = null) => {
   ok(!C.campaignsOpen({}, req0, { tester: 0 }) && !C.campaignsOpen({}, { headers: { get: () => null } }, { tester: 1 }) && C.campaignsOpen({}, req0, { tester: 1 }), 'before launch only a tester sending the preview header gets in');
   ok(C.campaignFor(new Date('2027-08-05'), false) === null, 'no month is scheduled yet');
 }
+// Month end: ranks settle and Intel is paid by band, once (build session 5). On the local copy the test
+// clock lets preview runs settle; on the real site only a scheduled month does.
+{
+  const C = await import('../../functions/_lib/campaigns.js');
+  for (const p of ['D0', 'D1']) db.prepare("INSERT OR IGNORE INTO players (id, created_at, tester) VALUES (?, '2026-11-01T00:00:00Z', 1)").run(id(p));
+  ok(C.monthEndsAt(campaign, '2026').toISOString() === '2026-09-01T04:00:00.000Z' && C.monthEndsAt({ ...campaign, month: 12 }, '2026').toISOString() === '2027-01-01T05:00:00.000Z', 'the month ends at midnight Eastern on the 1st');
+  ok(C.bandOf(5) === 'top5' && C.bandOf(6) === 'top25' && C.bandOf(25) === 'top25' && C.bandOf(50) === 'top50' && C.bandOf(51) === 'finished', 'the bands: top 5%, top 25%, top 50%, everyone else who finished');
+  const intel = p => db.prepare('SELECT intel FROM players WHERE id = ?').get(id(p)).intel;
+  const AUG = '2026-08-20T18:00:00Z';
+  await play('D0', 1, AUG);
+  const i0 = intel('D0');
+  const before = await req('state', { player: 'D0', now: '2026-09-01T03:59:00Z' });
+  ok(before.status === 200 && before.data.campaignPaid.length === 0 && intel('D0') === i0, 'nothing is paid before midnight Eastern on the 1st');
+  const after = await req('state', { player: 'D0', now: '2026-09-01T04:01:00Z' });
+  const paid = after.data.campaignPaid || [];
+  ok(paid.length === 1 && paid[0].chapter === 1 && C.BAND_INTEL[paid[0].band] === paid[0].intel && paid[0].top >= 1, 'after the month ends the chapter pays by band: ' + JSON.stringify(paid[0]));
+  ok(intel('D0') === i0 + (paid[0] ? paid[0].intel : -1) && after.data.intel.balance === intel('D0'), 'the Intel is added to the balance');
+  ok(db.prepare("SELECT COUNT(*) AS n FROM intel_log WHERE player_id = ? AND reason = 'campaign'").get(id('D0')).n === 1, 'and logged as Campaigns month end');
+  const again = await Promise.all([1, 2, 3].map(() => req('state', { player: 'D0', now: '2026-09-02T12:00:00Z' })));
+  ok(again.every(r => r.data.campaignPaid.length === 0) && intel('D0') === i0 + (paid[0] ? paid[0].intel : 0), 'paid once, even with three loads at once; the notice shows once');
+  const none = await req('state', { player: 'D1', now: '2026-09-02T12:00:00Z' });
+  ok(none.data.campaignPaid.length === 0 && intel('D1') === 0, 'no run, no payout');
+  const v = await req('campaign', { player: 'D0', now: NOW });
+  const ch1 = v.data.chapters[0];
+  ok(ch1.rank && ch1.rank.month && ch1.rank.month.top >= 1 && v.data.bands && v.data.bands.top5 === C.BAND_INTEL.top5, 'the campaign view shows the chapter rank and the bands');
+}
 console.log(`${pass} passed, ${failN} failed`);
 process.exit(failN ? 1 : 0);
