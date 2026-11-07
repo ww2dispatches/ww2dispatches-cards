@@ -128,5 +128,11 @@
  "focusX": 50,
  "focusY": 40,
  "zoom": 100,
- "newsletter_mention": true
+ "newsletter_mention": true,
+ "buffer": {
+  "x": "6aee9515d6bbae6fa15fea8b",
+  "instagram": "6aee9519af7e526d43f7c185",
+  "threads": "6aee951c9214322f68c7de96",
+  "facebook": "6aee9521af7e526d43f7c6f6"
+ }
 }
