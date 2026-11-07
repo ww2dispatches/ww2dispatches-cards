@@ -124,8 +124,13 @@ ok(r.data.status === 'new' && r.data.day === '2026-11-02', 'a new day, a new puz
 const hards = [];
 for (let d = 0; d < 6; d++) {
   const day = new Date(Date.parse('2026-11-03T17:00:00Z') + d * 86400000).toISOString();
-  r = await req('intercept/start', { player: 'I7', now: day, body: {} });
-  if (r.status !== 200) { ok(false, 'deal on ' + day + ': ' + JSON.stringify(r.data)); continue; }
+  // A deal can miss a fair grid within its try budget; the page then offers a retry, so the test retries too
+  // (up to three tries, as a player would). A miss leaves nothing saved, so the retry is a fresh deal.
+  for (let tries = 0; tries < 3; tries++) {
+    r = await req('intercept/start', { player: 'I7', now: day, body: {} });
+    if (!(r.status === 409 && r.data.error === 'no grid')) break;
+  }
+  if (r.status !== 200) { ok(false, 'deal on ' + day + ' (3 tries): ' + JSON.stringify(r.data)); continue; }
   hards.push(grid('I7', day.slice(0, 10)).groups.find(x => x.d === 'hard').id);
 }
 // With the October catalog five hard groups can be dealt (h-aid-britain's three ships all print 1941,
