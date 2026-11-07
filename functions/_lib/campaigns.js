@@ -50,7 +50,7 @@ export function chapterReleased(slot, ch, t) {
 
 // ---------- the deck ----------
 // A card from the catalog as the engine sees it, or null if it can never be played in this chapter.
-function playable(card) {
+export function playable(card) {
   const g = card.game || {};
   if (card.kind !== 'dispatch' || card.flash && !g.role) return null;
   const series = card.flash ? ({ operation: 'battle', machine: 'blue', rally: 'home', statecraft: 'state' })[g.role] : card.series;
@@ -63,14 +63,17 @@ function playable(card) {
 export function cardProblem(campaign, ch, c) {
   if (!c) return 'This card is not played in Campaigns.';
   if (c.noPlay) return 'This card can never be played.';
-  if (!(c.value >= 1 && c.value <= 7)) return 'This card has no number yet.';
   if (c.date) {
     if (c.date > '1945-09-02') return 'Postwar cards are for collecting only.';
     if (Number(c.date.slice(0, 4)) > campaign.year) return `Only cards from ${campaign.year} or earlier fit this campaign.`;
   }
+  if (!(c.value >= 1 && c.value <= 7)) return 'This card has no number yet.';
   const axis = campaign.side === 'axis';
   if (c.lens && c.lens !== 'civilian_neutral' && axis !== c.lens.startsWith('axis_')) return 'This card is from the other side.';
-  if (!E.fitsChapter(ch, c)) return `This is ${ch.branches.join(' and ')} only: no branch of this card fights here.`;
+  if (!E.fitsChapter(ch, c)) {
+    const need = { air: 'the plane', sea: 'the anchor', land: 'the tank' };
+    return `This chapter is ${ch.branches.join(' and ')} only: machines and operations need ${ch.branches.map(b => need[b] || b).join(' or ')}.`;
+  }
   return '';
 }
 // picks: [{ card: catalog id } | { loaner: loaner id }], 20 of them. Returns { deck, problems }.

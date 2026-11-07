@@ -30,7 +30,16 @@ export async function onRequestGet({ request, env }) {
     const card = findCard(card_id, t);
     if (!card || card.kind !== 'dispatch') continue;
     const g = card.game || {};
-    cards.push({ id: card.id, title: card.title, short: card.short, series: card.series, flash: Boolean(card.flash), date: card.date, img: card.img, value: g.value, branches: g.branches || [], keyword: g.keyword || null, role: g.role || null, noPlay: Boolean(g.noPlay) });
+    // why: for each released chapter, the reason this card can't go in its deck ('' when it can), the
+    // same check the server makes at the start of a run, so the deck builder can grey it out and say why.
+    const p = C.playable(card), why = {};
+    for (const ch of campaign.chapters) if (C.chapterReleased(slot, ch, t)) why[ch.n] = C.cardProblem(campaign, ch, p);
+    cards.push({ id: card.id, title: card.title, short: card.short, series: p ? p.series : card.series, flash: Boolean(card.flash), date: card.date, img: card.img, value: g.value, branches: g.branches || [], keyword: g.keyword || null, role: g.role || null, noPlay: Boolean(g.noPlay), why });
   }
-  return json({ ...base, chapters, loaners: C.LOANERS.filter(l => l.side === campaign.side), cards });
+  const loaners = C.LOANERS.filter(l => l.side === campaign.side).map(l => {
+    const why = {};
+    for (const ch of campaign.chapters) if (C.chapterReleased(slot, ch, t)) why[ch.n] = C.cardProblem(campaign, ch, { series: l.series, value: l.value, branches: l.branches, keyword: l.keyword || null });
+    return { ...l, why };
+  });
+  return json({ ...base, chapters, loaners, cards });
 }

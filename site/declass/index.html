@@ -28,6 +28,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Special+Elite&display=swap">
 <link rel="stylesheet" href="/declass/declass.css?v=9a7726c1">
 <link rel="stylesheet" href="/declass/intercept.css?v=f4f5eba2">
+<link rel="stylesheet" href="/declass/campaigns/campaigns.css?v=0e896ee8">
 </head>
 <body>
 <div class="wrap">
@@ -81,6 +82,7 @@
   <div class="signbar" id="signBar" hidden><b>Sign in to open today's files</b><span>Your starter pack is waiting in this browser. Save your dossier to keep it and collect every day.</span><div class="gslot" id="gHome"></div></div>
   <p class="nextfile" id="nextFile"></p>
   <div id="icpSlot"></div>
+  <div id="cmpSlot"></div>
   <div class="cup" id="cupList"><div id="flashNext"></div><div id="cupIcp"></div></div>
   <div id="recent"></div>
 
@@ -170,6 +172,15 @@
   <p class="icptag">a Declass daily puzzle</p>
   <div id="icpBody"></div>
 </section>
+
+<section class="screen cmp" id="sCampaigns">
+  <div class="cmptop"><button class="back" id="cmpBack" type="button">◀︎ Declass</button></div>
+  <h1 class="cmpname">CAMPAIGNS</h1>
+  <p class="cmptag">a Declass card battle</p>
+  <div id="cmpBody"></div>
+</section>
+
+<section class="screen" id="sCmpRun"><div class="cmprun" id="cmpRun"></div></section>
 
 <section class="screen" id="sView">
   <button class="back" id="backView">◀︎ Back</button>
@@ -352,7 +363,8 @@
 <div class="glow" id="glow"></div>
 <div class="zoomer" id="zoomer" hidden role="dialog" aria-label="Card up close"><div class="zstage" id="zstage"></div><button class="zx" id="zx" aria-label="Close">✕</button><p class="zhint">Drag to turn · double tap to zoom</p></div>
 <script src="/hit.js"></script>
-<script src="/declass/declass.js?v=67f8866a"></script>
+<script src="/declass/declass.js?v=7356e44f"></script>
 <script src="/declass/intercept.js?v=50979a24"></script>
+<script type="module" src="/declass/campaigns/campaigns.js?v=bded5ea6"></script>
 </body>
 </html>

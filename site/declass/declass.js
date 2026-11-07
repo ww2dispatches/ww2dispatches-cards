@@ -25,6 +25,17 @@
     icpPreview = localStorage.getItem('declass_icp') || '';
   } catch (e) {}
 
+  // Campaigns preview (6 Nov 2026): until launch, ?campaigns=preview lets a tester play Campaigns in this
+  // browser (the server also checks the tester flag); ?campaigns=off turns it back off.
+  let cmpPreview = '';
+  try {
+    const url = new URL(location.href), v = url.searchParams.get('campaigns');
+    if (v === 'preview') localStorage.setItem('declass_cmp', '1');
+    if (v === 'off') localStorage.removeItem('declass_cmp');
+    if (v) { url.searchParams.delete('campaigns'); history.replaceState(null, '', url.pathname + url.search + url.hash); }
+    cmpPreview = localStorage.getItem('declass_cmp') || '';
+  } catch (e) {}
+
   // Full screen card with zoom (29 Oct 2026): on for everyone after Brian's phone trial.
   const zoomTrial = true;
   try { localStorage.removeItem('declass_zoom'); } catch (e) {}
@@ -41,7 +52,7 @@
   function api(path, body) {
     return fetch('/api/' + path, {
       method: body ? 'POST' : 'GET',
-      headers: Object.assign({ 'x-declass-key': testerKey }, icpPreview ? { 'x-intercept-preview': '1' } : {}, body ? { 'content-type': 'application/json' } : {}),
+      headers: Object.assign({ 'x-declass-key': testerKey }, icpPreview ? { 'x-intercept-preview': '1' } : {}, cmpPreview ? { 'x-campaigns-preview': '1' } : {}, body ? { 'content-type': 'application/json' } : {}),
       body: body ? JSON.stringify(body) : undefined,
       credentials: 'same-origin',
     }).then(r => r.json().catch(() => ({})).then(d => { if (!r.ok) throw new Error(d.error || String(r.status)); return d; }));
@@ -101,11 +112,12 @@
   }
   // Game actions counted for the admin console (2 Nov 2026): tallies only, through /hit.js.
   const hit = n => { try { if (window.wwHit) window.wwHit(n); } catch (e) {} };
-  const SCREEN_HIT = { sFile: 'dossier', sSets: 'sets', sIntercept: 'intercept', sSave: 'save_screen' };
+  const SCREEN_HIT = { sFile: 'dossier', sSets: 'sets', sIntercept: 'intercept', sSave: 'save_screen', sCampaigns: 'campaigns' };
   function show(id) {
     if (SCREEN_HIT[id]) hit(SCREEN_HIT[id]);
     document.querySelectorAll('.screen').forEach(s => s.classList.toggle('on', s.id === id));
     document.body.classList.toggle('night', id === 'sIntercept'); // Intercept sits on the dark Night Dispatch desk
+    document.body.classList.toggle('cmpon', id === 'sCmpRun'); // a Campaigns run fills the screen (the plotting table)
     window.scrollTo(0, 0);
     renderGoogleButtons();
     if (id !== 'sHome') { endTour(); hideNote('home'); }
@@ -438,6 +450,7 @@
       $('flashNext').innerHTML = fx.length ? `<button class="cupln" id="fxLine" type="button"><span class="tg fl">FLASH</span><span class="cw"><b>${esc(fx[0].name)}</b> · ${esc(untilText(fx[0].at).toLowerCase())}</span><span class="r" aria-hidden="true">›</span></button>` : '';
       if (fx.length) $('fxLine').onclick = flashCalendar;
     }
+    if (window.Campaigns) window.Campaigns.tile($('cmpSlot'));
     $('cupIcp').innerHTML = '';
     if (window.Intercept) {
       window.Intercept.tile($('icpSlot'));
@@ -2172,8 +2185,9 @@
     }
   }
 
-  // ---------- what Intercept (intercept.js) may use ----------
+  // ---------- what Intercept (intercept.js) and Campaigns (campaigns/campaigns.js) may use ----------
   window.Declass = {
+    cmpPreview: () => Boolean(cmpPreview), esc,
     api, show, toast, sfx, nudge, sheet, closeSheet, seen, mark, loadImg, localTime, FNAME, openHow,
     card: id => BYID.get(id), state: () => ST, holdings: () => holdingsNow(), glowFor: f => glow(f),
     refresh: () => refreshState().then(() => { if ($('sHome').classList.contains('on')) renderHome(); }),

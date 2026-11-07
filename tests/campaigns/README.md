@@ -52,3 +52,20 @@ counted, winning to unlock the next chapter, each player counted once in the his
 three finishes at once counted once, release dates to the minute, and the launch gate.
 
 First run, 6 Nov 2026: 40 passed, 0 failed.
+
+Build session 3 added two checks for the deck builder's reasons (42 passed, 0 failed).
+
+## Page checks (build session 3, 6 Nov 2026)
+
+`site/declass/campaigns/campaigns.js` and `campaigns.css`: the Campaigns door on the Declass home (only for
+a preview tester: `?campaigns=preview` once in the browser, `?campaigns=off` to stop), the month and its
+three chapters with release dates and locks, the chapter briefing, the deck builder (suggested deck, the
+plain words check, greyed out cards stamped with the reason), and a run on the plotting table up to the
+first raid: the opening hand and mulligan, the calm opening, card plays checked by the engine, Undo, and a
+run that survives a reload. The raid itself is build session 4. With the same local server:
+
+```
+DB=<the local D1 sqlite file> PLAYWRIGHT=<path to playwright's index.mjs> node tests/campaigns/page.mjs
+```
+
+`SHOTS=<dir>` saves a phone sized screenshot of each step. First run, 6 Nov 2026: 27 passed, 0 failed.

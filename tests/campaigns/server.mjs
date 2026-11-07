@@ -58,6 +58,11 @@ const play = async (p, ch, now = NOW, deck = DECK, cheat = null) => {
   db.prepare("INSERT INTO pulls (player_id, card_id, variant, finish, slot_key, pulled_at, signature, turned) VALUES (?, '1941-10-17-kearny', 'still', 'copper', 'test', '2026-11-01T00:00:00Z', '', 1)").run(id('C1'));
   const r4 = await req('campaign/start', { player: 'C1', now: NOW, body: { chapter: 1, deck: [...DECK.slice(0, 19), { card: '1941-10-17-kearny' }] } });
   ok(r4.status === 400 && r4.data.problems.some(x => /no number yet|1940 or earlier/.test(x)), 'a dossier card with no number (or from 1941) is refused');
+  // The deck builder's reasons (build session 3): the same check as the start, for every released chapter.
+  const v = await req('campaign', { player: 'C1', now: NOW });
+  const k = v.data.cards.find(c => c.id === '1941-10-17-kearny'), cor = v.data.loaners.find(l => l.id === 'a-corvette'), hur = v.data.loaners.find(l => l.id === 'a-hurricane-flight');
+  ok(k && /1940 or earlier/.test(k.why[1]) && Object.keys(k.why).length === 3, 'the campaign view says why a dossier card is greyed out, per chapter');
+  ok(cor && /air only: machines and operations need the plane/.test(cor.why[1]) && hur && hur.why[1] === '', 'a sea loaner is greyed out with the reason; an air loaner fits');
   const r5 = await req('campaign/start', { player: 'C1', now: NOW, body: { chapter: 2, deck: DECK } });
   ok(r5.status === 409, 'chapter 2 cannot start while locked');
   ok(db.prepare('SELECT COUNT(*) AS n FROM campaign_runs WHERE player_id = ?').get(id('C1')).n === 0, 'refused starts use no runs');
