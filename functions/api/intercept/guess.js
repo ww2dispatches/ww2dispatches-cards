@@ -45,8 +45,9 @@ export async function onRequestPost({ request, env }) {
       .bind(player.id, day, fin, at, intel, 'i:' + day));
   }
   const results = await db.batch(stmts);
-  const fresh = await todayRow(db, player.id, day);
-  if (!(results[0].meta && results[0].meta.changes)) return json({ result: 'stale', puzzle: publicPuzzle(fresh, t) }); // another guess landed first
+  if (!(results[0].meta && results[0].meta.changes)) return json({ result: 'stale', puzzle: publicPuzzle(await todayRow(db, player.id, day), t) }); // another guess landed first
+  // The update landed, so the row is exactly what was written: no second read (7 Nov 2026, a faster answer to File it).
+  const fresh = { ...row, found: JSON.stringify(next.found), tries: JSON.stringify(next.tries), mistakes: next.mistakes, status: next.status, score, intel, fin, moves: row.moves + 1 };
   const out = { result: r.result, puzzle: publicPuzzle(fresh, t) };
   if (done) out.intel = practice ? { gained: 0, play: 0, bonus: 0, practice: true } : { gained: intel, play: PLAY_INTEL, bonus: intel - PLAY_INTEL };
   return json(out);

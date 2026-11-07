@@ -174,3 +174,7 @@ body.night .howcard,body.night .sheetcard{color:var(--ink)}
 @media (prefers-reduced-motion:reduce){.icpcard.tile img,.icprow .gcard img{transition:none}}
 .icpcard.tile .tp{display:block;background:#2a241d}
 .icprow .gcard{background:#2a241d;border-radius:2px}
+/* File it answers the tap at once while the guess is on its way (7 Nov 2026) */
+.icp .btn.icpfile.wait:disabled{opacity:.85}
+.icpcard.filing{animation:icpfiling .7s ease-in-out infinite alternate}
+@keyframes icpfiling{from{filter:brightness(1)}to{filter:brightness(.7)}}

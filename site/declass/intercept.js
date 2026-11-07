@@ -227,10 +227,14 @@
   function fileIt() {
     if (busy || sel.length !== 3) return;
     busy = true;
-    $('icpFile').disabled = true;
+    // Answer the tap at once (7 Nov 2026): the guess goes to the server and the result can take a moment
+    // on a phone, so the button says so and the three tiles pulse until it comes back.
+    const fb = $('icpFile'); fb.disabled = true; fb.classList.add('wait'); fb.textContent = 'Filing…';
+    document.querySelectorAll('#icpDesk .icpcard.sel').forEach(b => b.classList.add('filing'));
+    D().sfx('slide', 0.5);
     const pick = sel.slice();
     D().api('intercept/guess', { day: P.day, pick }).then(d => {
-      busy = false;
+      busy = false; unwait();
       if (d.result === 'tried') { D().toast('Already tried. That one doesn\'t count against you.'); P = d.puzzle; refreshSel(); return; }
       if (d.result === 'correct') {
         P = d.puzzle; sel = [];
@@ -257,10 +261,15 @@
       }
       P = d.puzzle; draw(); // finished or stale: show what the server has
     }).catch(e => {
-      busy = false;
+      busy = false; unwait();
       if (e.message === 'expired') { D().toast('That file closed at midnight Eastern. New files are ready.'); open(); return; }
       D().toast('That did not go through. Try again in a moment.'); refreshSel();
     });
+  }
+
+  function unwait() {
+    const fb = $('icpFile'); if (fb) { fb.classList.remove('wait'); fb.textContent = 'File it'; }
+    document.querySelectorAll('#icpDesk .icpcard.filing').forEach(b => b.classList.remove('filing'));
   }
 
   // A wrong guess stamps REJECTED across the screen for a moment, wherever you are on the desk (7 Nov 2026).
