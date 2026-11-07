@@ -190,3 +190,26 @@ body.night .howcard,body.night .sheetcard{color:var(--ink)}
 .icprow.missed{opacity:.8}.icprow.missed .rlink{background:#b8ad95}
 .icprow .gmiss{color:#8e2a20;font-weight:bold}
 .icpnext{text-align:center;font-family:var(--type);font-size:14px;color:#d8ccb0;margin:4px 0 8px}
+/* Pick 1 (7 Nov 2026): four across, with the finishes held under each card */
+.icpdesk.pick{grid-template-columns:repeat(4,1fr);gap:12px 8px;padding-top:6px}
+.icpdesk.pick .icpcard{transform:none;display:flex;flex-direction:column;align-items:center;gap:6px}
+.icpdesk.pick .pc{position:relative;display:block;width:100%}
+.icpdesk.pick .zoomb{width:24px;height:24px;right:3px;bottom:3px}
+.icpdesk.pick .zoomb svg{width:13px;height:13px}
+.icpdesk.pick .ptag{font-size:8.5px;bottom:3px;left:4px;transform:none;padding:1px 4px}
+.icpdesk.pick .wax{width:18px;height:18px;top:-4px;right:-4px}
+.icpdesk.pick .wax::after{inset:5px}
+.icpdesk.pick .icpcard.full{opacity:.45}
+.pfin{display:flex;gap:3px;justify-content:center;align-items:center;min-height:12px}
+.pfin i,.pleg i{display:block;width:11px;height:11px;border-radius:2px;box-sizing:border-box;border:1.5px solid rgba(237,228,207,.55)}
+.pfin i.off{border:1px dashed rgba(237,228,207,.2);opacity:.6}
+.pfin i.on,.pleg i.on{border:0}
+.pfin i.on.f-copper,.pleg i.f-copper{background:#9C5B2E}
+.pfin i.on.f-silver,.pleg i.f-silver{background:linear-gradient(135deg,#7e838c,#c9ced6,#7e838c)}
+.pfin i.on.f-gold,.pleg i.f-gold{background:linear-gradient(135deg,#a67c1e,#e9c45a,#a67c1e)}
+.pfin i.on.f-topsecret,.pleg i.f-topsecret{background:linear-gradient(135deg,#8e97a4,#f6f8fb,#aeb6c2);box-shadow:0 0 0 1px #c0392b}
+.pfin.new{font-family:var(--display);font-weight:700;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#e3c25e;white-space:nowrap}
+.pfin.note{font-family:var(--type);font-size:9.5px;color:#b9ad92;text-align:center;line-height:1.2}
+.pleg{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 10px;margin:0 0 8px;font-family:var(--display);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#b9ad92}
+.pleg span{display:flex;align-items:center;gap:4px}.pleg i{width:10px;height:10px}
+.pleg small{flex-basis:100%;text-align:center;font-family:var(--type);text-transform:none;letter-spacing:0;font-size:11px}

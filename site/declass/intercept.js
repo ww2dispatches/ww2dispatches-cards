@@ -153,6 +153,7 @@
   // The reward: pick any one of the twelve (7 Nov 2026, its own screen after the review).
   function pickScreenHTML() {
     return `<h2 class="icph">Pick a card</h2><p class="icplead">${P.perfect ? 'A perfect solve. Whatever you pick comes Silver or better.' : 'Solve it, pick a card. Solve it perfectly, it\'s Silver or better.'} Any of the twelve, even one you don't own yet.</p>
+      ${pickLegend()}
       <div class="icpdesk pick" id="icpPick">${P.cards.map((c, i) => pickHTML(c, i)).join('')}</div>
       <p class="icpsmall">Tap the magnifier on a card to see it full size.</p>`;
   }
@@ -165,11 +166,26 @@
     D().api('intercept/replay', {}).then(d => { busy = false; P = d.puzzle; sel = []; stage = 'review'; draw(); window.scrollTo(0, 0); D().sfx('slide'); })
       .catch(e => { busy = false; if (b) b.disabled = false; D().toast(e.message === 'no grid' ? 'The files are still being sorted. Try again.' : 'Practice rounds are for testers with the preview on.'); });
   }
+  // Pick 1 (7 Nov 2026, Brian's choice on the design canvas): the real cards four across, each with four
+  // squares under it for Copper, Silver, Gold, and Top Secret, filled for the finishes already in the
+  // dossier (for the variant on offer: a Living Card shows the living finishes held). A card not yet held
+  // says NEW TO YOU; one with every finish fades. On a perfect solve Copper can't drop, so its empty square fades.
+  const FINS = ['copper', 'silver', 'gold', 'topsecret'];
+  const FLABEL = { copper: 'Copper', silver: 'Silver', gold: 'Gold', topsecret: 'Top Secret' };
   function pickHTML(c, i) {
     const inf = info(c.id); if (!inf) return '';
-    const own = D().holdings().has(c.id);
-    if (inf.flash) return `<div class="icpcard flash nopick" data-zi="${i}"><img src="${esc(inf.img)}" alt="${esc(inf.short)}" draggable="false"><span class="ptag">Flash cards can't be picked</span>${mag}</div>`;
-    return `<button class="icpcard${own ? '' : ' unowned'}" data-pick="${i}" type="button" aria-label="Pick ${esc(inf.short)}${own ? '' : ', not in your dossier yet'}"><img src="${esc(inf.img)}" alt="" draggable="false">${own ? '' : '<span class="wax" title="Not in your dossier yet"></span>'}${c.v === 'living' ? '<span class="ptag live">▶︎ Living Card</span>' : ''}${mag}</button>`;
+    const h = D().holdings().get(c.id);
+    const v = c.v === 'living' ? 'living' : 'still';
+    const held = f => Boolean(h && h[v] && h[v][f]);
+    const own = Boolean(h && FINS.some(held));
+    const full = FINS.every(held);
+    if (inf.flash) return `<div class="icpcard flash nopick" data-zi="${i}"><span class="pc"><img src="${esc(inf.img)}" alt="${esc(inf.short)}" draggable="false">${mag}</span><span class="pfin note">Flash cards can't be picked</span></div>`;
+    const squares = FINS.map(f => `<i class="f-${f}${held(f) ? ' on' : ''}${!held(f) && f === 'copper' && P.perfect && !P.practice ? ' off' : ''}" title="${FLABEL[f]}${held(f) ? ', in your dossier' : ''}"></i>`).join('');
+    const say = !own ? 'not in your dossier yet' : full ? 'you hold every finish' : 'you hold ' + FINS.filter(held).map(f => FLABEL[f]).join(', ');
+    return `<button class="icpcard${own ? '' : ' unowned'}${full ? ' full' : ''}" data-pick="${i}" type="button" aria-label="Pick ${esc(inf.short)}${v === 'living' ? ', Living Card' : ''}, ${say}"><span class="pc"><img src="${esc(inf.img)}" alt="" draggable="false">${own ? '' : '<span class="wax" title="Not in your dossier yet"></span>'}${v === 'living' ? '<span class="ptag live">▶︎ Living</span>' : ''}${mag}</span>${own ? `<span class="pfin" aria-hidden="true">${squares}</span>` : '<span class="pfin new">New to you</span>'}</button>`;
+  }
+  function pickLegend() {
+    return `<div class="pleg" aria-hidden="true">${FINS.map(f => `<span><i class="f-${f} on"></i>${FLABEL[f]}</span>`).join('')}<small>Filled: in your dossier · empty: still to collect</small></div>`;
   }
 
   // ---------- touch: tap selects, tap and hold shows the card full size ----------
