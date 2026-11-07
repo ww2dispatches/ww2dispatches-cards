@@ -334,9 +334,9 @@
 
   // ---------- the guided first puzzle ----------
   const GUIDE = [
-    ['Four hidden links', 'These twelve files hide four links. Each link joins exactly three of them: a ship, a battle, a person, something in the photos.'],
-    ['File three at a time', 'Tap three files you think belong together, then tap File it. Right, and they\'re clipped together with the link. Tap the magnifier on a card to see it full size.'],
-    ['Three mistakes', 'A wrong guess gets a REJECTED stamp, and three stamps close the files. The date and series on a card are never the link.'],
+    ['Find what they have in common', 'Twelve files are on the desk. Hidden among them are four groups of three. The three files in a group share something in common: the same battle, the same ship, the same person, or something you can see in all three photos. Your job is to find all four groups.'],
+    ['File three at a time', 'Tap three files you think belong together, then tap File it. If you\'re right, the three are clipped together and the link is revealed, for example: "All three involve the USS Hornet." Tap the magnifier on any file to see the full card and its details.'],
+    ['Three mistakes and the files close', 'A wrong guess gets a REJECTED stamp. Three stamps and the files close, and every group is revealed. The date and series printed on a card are never the link, so look at who, what, and where. No clock, so take your time.'],
   ];
   function maybeGuide() {
     if (D().seen('icpGuide')) return;

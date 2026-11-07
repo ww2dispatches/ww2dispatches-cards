@@ -16,11 +16,17 @@
 
   // Intercept preview (27 Oct 2026): until launch, ?intercept=preview lets a tester play it in this
   // browser; ?intercept=off turns it back off.
-  let icpPreview = '';
+  let icpPreview = '', icpFresh = false;
   try {
     const url = new URL(location.href), v = url.searchParams.get('intercept');
     if (v === 'preview') localStorage.setItem('declass_icp', '1');
     if (v === 'off') localStorage.removeItem('declass_icp');
+    // ?intercept=fresh (7 Nov 2026): a tester sees the Code Room as a new player would. The preview turns on,
+    // the first puzzle guide is forgotten in this browser, and the server forgets today's puzzle.
+    if (v === 'fresh') {
+      localStorage.setItem('declass_icp', '1'); icpFresh = true;
+      const c = JSON.parse(localStorage.getItem('declass_coach') || '{}') || {}; delete c.icpGuide; localStorage.setItem('declass_coach', JSON.stringify(c));
+    }
     if (v) { url.searchParams.delete('intercept'); history.replaceState(null, '', url.pathname + url.search + url.hash); }
     icpPreview = localStorage.getItem('declass_icp') || '';
   } catch (e) {}
@@ -2211,7 +2217,8 @@
     CFG = cfg;
     if (!cfg.open) return show('sSoon');
     loadGoogle();
-    return Promise.all([api('catalog'), api('state')]).then(([c, s]) => {
+    const fresh = icpFresh ? api('intercept/reset', {}).then(() => toast('Code Room reset for today. Open it to start fresh.')).catch(() => toast('Code Room reset is for testers only.')) : Promise.resolve();
+    return fresh.then(() => Promise.all([api('catalog'), api('state')])).then(([c, s]) => {
       setCatalog(c.cards); ST = s; landFan();
       const file = new URLSearchParams(location.search).get('file');
       if (file) checkFile(file); else { route(); if (signedIn()) maybePromote(); }
