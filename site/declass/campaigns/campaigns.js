@@ -399,68 +399,150 @@ function choose(c) {
 }
 
 // ---------- the run: the plotting table ----------
+// Build session 4 (6 Nov 2026): the whole round on one board (Card Design doc, points 2 to 7). In the raid
+// you send Ready machines up under the raiders and press Lock in blocks; in your turn you play cards, send
+// armed machines up under their targets, and press End turn: attack. Every plaque, the forecast, and the
+// War Cabinet come from running the same engine on a copy of the run, so what the board promises is
+// exactly what happens.
 const UNDOABLE = new Set(['place', 'attach', 'rally', 'lend', 'backchannel', 'evac', 'block', 'attack', 'hold', 'ultimatum']);
+let PICK = null;        // the machine picked to go up (its uid)
 function playRun(isNew) {
-  rebuild(); LIFT = null;
+  rebuild(); LIFT = null; PICK = null;
   D().show('sCmpRun');
   drawRun();
+  if (ST.over) { endScreen(); return; }
   if (ST.phase === 'opening') openingHand();
-  else if (isNew === false && E.calm(ST)) tele('ALL QUIET', allQuietLines());
+  else if (E.calm(ST)) tele('ALL QUIET', allQuietLines());
+  else if (ST.phase === 'enemy') tele('RAID INBOUND', raidLines());
 }
-const deckCard = i => { const d = RUN.deck[i]; return { ...ST.cards[i], title: d.title || (d.card && D().card(d.card) ? D().card(d.card).short : 'Card'), card: d.card, loaner: d.loaner ? true : false, short: d.card && D().card(d.card) ? D().card(d.card).short : d.title }; };
+const deckCard = i => { const d = RUN.deck[i], inf = d.card ? D().card(d.card) : null; return { ...ST.cards[i], title: d.title || (inf ? inf.title : 'Card'), card: d.card, loaner: Boolean(d.loaner), short: inf ? inf.short : d.title }; };
+const mName = m => { const c = deckCard(m.card); return c.short || c.title; };
+const machineOf = uid => ST.line.find(m => m.uid === uid);
+const unitOf = uid => ST.units.find(u => u.uid === uid);
+// "Ju 87 Stukas over the convoy" -> ["Ju 87", "Stukas over the convoy"]: the type in Oswald, the role in type.
+const unitWords = u => { const m = String(u.name).match(/^(\S+ \d+\S*)\s*(.*)$/); return m ? [m[1], m[2]] : [u.name, '']; };
+const uName = u => u ? (u.escort ? `the ${unitWords(u)[0]} escort` : `the ${u.name}`) : 'the raid';
 function waveLabel() {
-  const ch = CH, w = ch.waves[ST.wave];
-  return `Wave ${ST.wave + 1} of ${ch.waves.length} · Round ${ST.round} · ${waveDate(w.date)}`;
+  const w = CH.waves[ST.wave];
+  return `Wave ${ST.wave + 1} of ${CH.waves.length} · Round ${ST.round} · ${waveDate(w.date)}`;
+}
+// What pressing the action button will do, from a copy of the run.
+function forecast() {
+  if (!['enemy', 'yours'].includes(ST.phase)) return null;
+  const s = E.copy(ST), r = E.act(engineCampaign(), s, { a: ST.phase === 'enemy' ? 'lock' : 'end' });
+  return r.ok ? { st: s, ev: s.events } : null;
 }
 function topBarHTML() {
   const raid = ST.phase === 'enemy', opening = ST.phase === 'opening';
-  const lamp = opening ? 'OPENING HAND' : raid ? 'THE RAID' : 'YOUR TURN';
-  const sub = E.calm(ST) || opening ? `Calm · first raid in round ${ST.calmRounds + 1}` : waveLabel();
-  const sup = raid ? '–' : `${ST.supply}/${E.supplyFor(ST, ST.round)}`;
-  return `<div class="tote"><div class="ttile res">${svgI('heart')}<b>${ST.resolve}</b><small>Resolve</small></div>
-    <div class="tlamp ${raid ? 'red' : 'amber'}"><span class="lamp"></span><b>${lamp}</b><small>${esc(sub)}</small></div>
+  const lamp = ST.over ? (ST.over.won ? 'WAVES BROKEN' : 'RESOLVE GONE') : opening ? 'OPENING HAND' : raid ? 'THE RAID' : 'YOUR TURN';
+  const sub = opening || E.calm(ST) ? `Calm · first raid in round ${ST.calmRounds + 1}` : waveLabel();
+  const sup = raid || ST.over ? '–' : `${ST.supply}/${E.supplyFor(ST, ST.round)}`;
+  return `<div class="tote"><div class="ttile res" id="cmpRes">${svgI('heart')}<b>${ST.resolve}</b><small>Resolve</small></div>
+    <div class="tlamp ${raid ? 'red' : 'amber'}"><b>${lamp}</b><small>${esc(sub)}</small></div>
     <div class="ttile sup"><b>${sup}</b><small>Supply</small></div></div>`;
 }
-// "Ju 87 Stukas over the convoy" -> ["Ju 87", "Stukas over the convoy"]: the type in Oswald, the role in type.
-const unitWords = u => { const m = String(u.name).match(/^(\S+ \d+\S*)\s*(.*)$/); return m ? [m[1], m[2]] : [u.name, '']; };
-function enemyPieceHTML(u, where) {
-  const firstRaid = ST.calmRounds + 1;
-  const inN = where === 'far' ? Math.max(1, firstRaid - ST.round) : 0;
-  const nx = E.nextAttack(u);
-  const tab = where === 'far' ? `<span class="etab wait">IN ${inN}</span>` : nx > 0 ? `<span class="etab atk">▼ ${nx}</span>` : '<span class="etab climb">CLIMB</span>';
+function enemyPieceHTML(u, where, inN) {
+  let tab;
+  if (where === 'far') tab = `<span class="etab wait">IN ${inN}</span>`;
+  else if (ST.delays[u.uid] != null) tab = `<span class="etab held">${svgI('ultimatum')}${E.nextAttack(u) + 1} next</span>`;
+  else if (u.delayedNext != null && ST.phase !== 'enemy') tab = `<span class="etab atk">▼ ${u.delayedNext}</span>`;
+  else { const nx = E.nextAttack(u); tab = nx > 0 ? `<span class="etab atk">▼ ${nx}</span>` : '<span class="etab climb">CLIMB</span>'; }
   const [type, role] = unitWords(u);
-  return `<div class="epiece ${where}${u.escort ? ' esc' : ''}" title="${esc(u.name)}">${tab}<span class="eplaque">${u.st}</span><span class="ephoto" data-piece="${esc(u.piece)}"><i>${esc(type)}</i></span><span class="ename">${esc(u.escort ? 'Escort' : role || type)}</span></div>`;
+  const target = PICK && where === 'chan' && validTargets().includes(u.uid);
+  return `<button type="button" class="epiece ${where}${u.escort ? ' esc' : ''}${target ? ' target' : ''}${ST.delays[u.uid] != null ? ' heldoff' : ''}" ${where === 'chan' ? `data-u="${u.uid}"` : 'disabled'} aria-label="${esc(u.name)}, Strength ${u.st}">${tab}<span class="eplaque">${u.st}</span><span class="ephoto" data-piece="${esc(u.piece || '')}"><i>${esc(type)}</i></span><span class="ename">${esc(u.escort ? 'Escort' : role || type)}</span>${u.airfield ? '<span class="eair">AIRFIELD</span>' : ''}</button>`;
 }
-function linePieceHTML(m) {
+function linePieceHTML(m, where) {
   const c = deckCard(m.card), max = ST.cards[m.card].value, atk = E.opValue(ST, m);
   const face = c.loaner ? `<span class="lpslip">${esc(c.title)}</span>` : `<img src="${esc(imgOf(c))}" alt="" draggable="false">`;
-  return `<div class="lpiece${c.loaner ? ' loan' : ''}${m.fresh ? ' fresh' : ''}${m.state === 'out' || m.state === 'blocked' ? ' rearm' : ''}" data-m="${m.uid}" title="${esc(c.title)}">${face}
+  const rearm = m.state === 'out' || m.state === 'blocked';
+  const going = where === 'col' && ST.phase === 'yours';
+  const can = !ST.over && (ST.phase === 'enemy' ? E.canBlock(m) : ST.phase === 'yours' && E.canAttack(ST, m));
+  return `<button type="button" class="lpiece${c.loaner ? ' loan' : ''}${m.fresh ? ' fresh' : ''}${rearm ? ' rearm' : ''}${PICK === m.uid ? ' picked' : ''}${can && where !== 'col' ? ' can' : ''}" data-m="${m.uid}" aria-label="${esc(c.title)}, armor ${m.arm}${atk ? ', attack ' + atk : ''}">${face}
     <span class="btag">${(ST.cards[m.card].branches || []).map(b => svgI(b)).join('')}</span>
-    <span class="bshield${m.arm < max ? ' hurt' : ''}">${svgI('shield')}<b>${m.arm < max ? m.arm + '/' + max : m.arm}</b></span>${atk ? `<span class="batk">${atk}</span>` : ''}
-    ${m.fresh ? '<span class="pslip set">SETTING UP</span>' : m.state === 'out' || m.state === 'blocked' ? '<span class="pslip rearm">REARMING</span>' : ''}</div>`;
+    <span class="bshield${m.arm < max ? ' hurt' : ''}">${svgI('shield')}<b>${m.arm < max ? m.arm + '/' + max : m.arm}</b></span>${atk ? `<span class="batk"><b>${atk}</b></span>` : ''}
+    ${going ? '<span class="chip" aria-hidden="true">▲</span>' : ''}${m.fresh ? '<span class="pslip set">SETTING UP</span>' : rearm ? '<span class="pslip rearm">REARMING</span>' : ''}</button>`;
+}
+// The plotting plaque under each raider: the sum, then the outcome, before the button is pressed.
+function plaqueFor(u, fc) {
+  if (!fc) return '';
+  if (ST.phase === 'enemy') {
+    if (ST.delays[u.uid] != null) return `<div class="plq gold"><b>HELD OFF</b><span>Back next round as ${E.nextAttack(u) + 1}</span></div>`;
+    const e = fc.ev.find(x => x.unit === u.uid && (x.t === 'attack' || x.t === 'climb'));
+    if (!e) return '';
+    if (e.t === 'climb') return '<div class="plq"><b>CLIMB</b><span>No attack this raid</span></div>';
+    if (!e.blocks.length) return '';
+    const lost = e.blocks.filter(b => b.to <= 0).map(b => mName(machineOf(b.machine)).toUpperCase());
+    const out = [e.through ? `${e.through} GETS THROUGH` : 'STOPPED'];
+    if (lost.length) out.push(lost.join(', ') + ' LOST');
+    if (e.hitBack) out.push(e.hitBack.to <= 0 ? 'HITS BACK, DESTROYED' : `HITS BACK ${e.hitBack.from - e.hitBack.to}`);
+    return `<div class="plq${e.through ? ' red' : ''}"><b><em>${e.attack}</em> vs <i>${e.blocks.map(b => b.from).join('+')}</i></b><span>${out.join(' · ')}</span></div>`;
+  }
+  const hits = fc.ev.filter(x => x.t === 'strike' && x.unit === u.uid);
+  if (!hits.length) return '';
+  const from = hits[0].from, to = hits[hits.length - 1].to;
+  const tail = to <= 0 ? 'DESTROYED' : `STRENGTH ${from} TO ${to} · IT STILL RAIDS NEXT`;
+  return `<div class="plq atk"><b><em>${hits.map(h => E.opValue(ST, machineOf(h.machine))).join('+')}</em> vs ${from}</b><span>${tail}</span></div>`;
+}
+// Where each raider's damage lands if nobody blocks it: a red plaque on the coast.
+function throughFor(u, fc) {
+  if (!fc || ST.phase !== 'enemy') return '';
+  const e = fc.ev.find(x => x.unit === u.uid && x.t === 'attack');
+  if (!e || e.blocks.length || !e.through) return '';
+  const g = fc.ev.find(x => x.t === 'ground' && x.unit === u.uid);
+  return `<div class="thru"><i></i><div class="plq red"><b>${e.through} THROUGH</b><span>RESOLVE ${e.resolve[0]} TO ${e.resolve[1]}${g ? ` · ${esc(mName(machineOf(g.machine)).toUpperCase())} ${g.from} TO ${g.to} ON THE GROUND` : ''}</span></div></div>`;
+}
+function columnsHTML(fc) {
+  const units = E.alive(ST);
+  return units.map(u => {
+    const ids = ST.phase === 'enemy' ? (ST.blocks[u.uid] || []) : ST.line.filter(m => m.mode === 'attack' && m.target === u.uid).map(m => m.uid);
+    const ms = ids.map(machineOf).filter(Boolean);
+    return `<div class="col">${enemyPieceHTML(u, 'chan')}${plaqueFor(u, fc)}<div class="cms">${ms.map(m => linePieceHTML(m, 'col')).join('')}</div>${throughFor(u, fc)}</div>`;
+  }).join('');
+}
+function farHTML() {
+  const camp = engineCampaign(), out = [];
+  if (ST.phase === 'opening' || E.calm(ST)) E.alive(ST).forEach(u => out.push(enemyPieceHTML(u, 'far', Math.max(1, ST.calmRounds + 1 - ST.round))));
+  else {
+    E.pendingReinforcements(camp, ST).forEach(r => out.push(enemyPieceHTML({ ...r.unit, st: r.unit.strength, uid: 'r' }, 'far', r.after - ST.waveRounds)));
+    const sw = CH.sweep;
+    if (sw && !ST.over) out.push(enemyPieceHTML({ ...sw.unit, st: sw.unit.strength, uid: 's' }, 'far', sw.every - (ST.waveRounds % sw.every)));
+  }
+  return out.join('');
 }
 function handHTML() {
-  const raid = ST.phase === 'enemy';
-  const camp = engineCampaign();
-  const n = ST.hand.length;
+  const raid = ST.phase === 'enemy', camp = engineCampaign(), n = ST.hand.length;
   return ST.hand.map((i, k) => {
     const c = deckCard(i), why = E.whyNot(camp, ST, i);
     const rot = n > 1 ? (k - (n - 1) / 2) * Math.min(6, 26 / n) : 0;
-    return `<button class="hcard${why ? ' dark' : ' lit'}${LIFT === i ? ' up' : ''}${raid && c.keyword === 'ultimatum' && !why ? ' ult' : ''}" type="button" data-h="${i}" style="--r:${rot}deg;--k:${k}" aria-label="${esc(c.title)}">${cardFaceHTML(c, 'hand')}</button>`;
+    return `<button class="hcard${why ? ' dark' : ' lit'}${LIFT === i ? ' up' : ''}${raid && c.keyword === 'ultimatum' && !why ? ' ult' : ''}" type="button" data-h="${i}" style="--r:${rot}deg" aria-label="${esc(c.title)}">${cardFaceHTML(c, 'hand')}</button>`;
   }).join('');
 }
+function forecastText(fc) {
+  if (!fc || ST.over) return '';
+  if (ST.phase === 'enemy') {
+    const lost = fc.st.resolve <= 0;
+    return lost ? `Resolve ${ST.resolve} to 0: the run ends` : fc.st.resolve === ST.resolve ? `Resolve stays ${ST.resolve}` : `Resolve ${ST.resolve} to ${fc.st.resolve}`;
+  }
+  if (E.calm(ST)) return '';
+  const att = ST.line.filter(m => m.mode === 'attack').length, ready = ST.line.filter(m => E.canAttack(ST, m)).length;
+  if (fc.ev.some(e => e.t === 'waveCleared')) return 'This breaks the wave';
+  return att ? `${att} going up · ${ST.line.length - att} kept back` : ready ? 'Nobody attacks this turn' : '';
+}
 function drawRun() {
-  const ch = CH, al = E.alive(ST), calm = E.calm(ST) || ST.phase === 'opening';
-  const far = calm ? al : [];
-  const channel = calm ? [] : al;
+  const calm = E.calm(ST) || ST.phase === 'opening';
+  const fc = forecast();
   const slots = [];
-  for (let k = 0; k < ST.rules.line; k++) slots.push(ST.line[k] ? linePieceHTML(ST.line[k]) : '<div class="lslot"></div>');
+  const away = new Set(ST.phase === 'enemy' ? Object.values(ST.blocks).flat() : ST.phase === 'yours' ? ST.line.filter(m => m.mode === 'attack').map(m => m.uid) : []);
+  for (let k = 0; k < ST.rules.line; k++) { const m = ST.line[k]; slots.push(!m ? '<div class="lslot"></div>' : away.has(m.uid) ? '<div class="lslot gone"></div>' : linePieceHTML(m, 'line')); }
   const btn = ST.phase === 'enemy' ? 'Lock in blocks' : calm ? 'End turn' : 'End turn: attack';
+  const ft = forecastText(fc);
   $('cmpRun').innerHTML = `${topBarHTML()}
     <div class="plot">
-      <div class="band far"><span class="pname l">BOULOGNE</span><span class="pname r">CALAIS</span><div class="erow">${far.map(u => enemyPieceHTML(u, 'far')).join('')}</div></div>
-      <div class="band chan"><span class="compass" aria-hidden="true"><i>S</i></span><span class="chname">THE CHANNEL</span><div class="erow">${channel.map(u => enemyPieceHTML(u, 'chan')).join('')}</div><div class="tele" id="cmpTele" hidden></div>
-        <div class="actbar"><button class="rmenu" id="cmpMenu" type="button" aria-label="Round menu">☰</button><button class="actbtn${ST.phase === 'enemy' ? ' raid' : ''}" id="cmpAct" type="button"${ST.phase === 'opening' ? ' disabled' : ''}>${btn}</button></div></div>
+      <div class="band far"><span class="pname l">BOULOGNE</span><span class="pname r">CALAIS</span><div class="erow">${farHTML()}</div></div>
+      <div class="band chan${PICK ? ' picking' : ''}"><span class="compass" aria-hidden="true"><i>S</i></span><span class="chname">THE CHANNEL</span><div class="cols n${Math.min(5, E.alive(ST).length)}">${calm ? '' : columnsHTML(fc)}</div>
+        ${PICK ? `<p class="pickhint">${ST.phase === 'enemy' ? 'Tap a raider to block it' : 'Tap a raider to attack it'} · <button type="button" id="cmpUnpick">Cancel</button></p>` : ''}
+        <div class="tele" id="cmpTele" hidden></div>
+        <div class="actbar">${ft ? `<span class="fcast">${esc(ft)}</span>` : ''}<button class="rmenu" id="cmpMenu" type="button" aria-label="Round menu">☰</button><button class="actbtn${ST.phase === 'enemy' ? ' raid' : ''}" id="cmpAct" type="button"${['enemy', 'yours'].includes(ST.phase) ? '' : ' disabled'}>${btn}</button></div></div>
       <div class="band coast"><span class="pname l">FOLKESTONE</span><span class="pname r">DOVER</span><div class="lrow">${slots.join('')}</div></div>
     </div>
     <div class="hand${ST.phase === 'enemy' ? ' down' : ''}" id="cmpHand">${handHTML()}</div>
@@ -468,10 +550,159 @@ function drawRun() {
     <div class="cmpover" id="cmpOver" hidden></div>`;
   $('cmpAct').onclick = act;
   $('cmpMenu').onclick = menu;
+  if ($('cmpUnpick')) $('cmpUnpick').onclick = () => { PICK = null; drawRun(); };
   $('cmpRun').querySelectorAll('[data-h]').forEach(b => { b.onclick = () => lift(Number(b.dataset.h)); });
-  $('cmpRun').querySelectorAll('[data-m]').forEach(b => { b.onclick = () => pieceInfo(b.dataset.m); });
+  $('cmpRun').querySelectorAll('.lpiece[data-m]').forEach(b => { b.onclick = () => tapMachine(b.dataset.m, Boolean(b.closest('.col'))); });
+  $('cmpRun').querySelectorAll('.epiece[data-u]').forEach(b => { b.onclick = () => tapUnit(b.dataset.u); });
   if (LIFT != null && ST.hand.includes(LIFT)) showLift(LIFT); else LIFT = null;
-  if (ST.phase === 'enemy') raidHold();
+}
+
+// ---------- sending machines up ----------
+function validTargets() {
+  const m = PICK && machineOf(PICK); if (!m) return [];
+  if (ST.phase === 'enemy') return E.alive(ST).filter(u => E.incoming(ST, u) > 0).map(u => u.uid);
+  return E.targetsFor(ST, m).map(u => u.uid);
+}
+function tapMachine(uid, inColumn) {
+  const m = machineOf(uid); if (!m || ST.over) return;
+  closeLift();
+  if (inColumn) { // bring it back to the line
+    if (ST.phase === 'enemy') { const k = Object.keys(ST.blocks).find(x => ST.blocks[x].includes(uid)); choose({ a: 'block', unit: k, machines: ST.blocks[k].filter(x => x !== uid) }); }
+    else choose({ a: 'hold', machine: uid });
+    PICK = null; drawRun(); return;
+  }
+  const can = ST.phase === 'enemy' ? E.canBlock(m) : ST.phase === 'yours' && E.canAttack(ST, m);
+  if (!can || PICK === uid) { PICK = null; drawRun(); if (!can) pieceInfo(uid); return; }
+  PICK = uid;
+  const ts = validTargets();
+  if (ts.length === 1) { sendUp(ts[0]); return; }
+  if (!ts.length) { PICK = null; D().toast(ST.phase === 'enemy' ? 'Nothing is attacking in this raid.' : 'Nothing to attack.'); }
+  drawRun();
+}
+function tapUnit(uid) {
+  if (PICK) { if (validTargets().includes(uid)) sendUp(uid); else D().toast(ST.phase === 'yours' ? 'Escorts must be attacked first.' : 'That raider is not attacking in this raid.'); return; }
+  unitInfo(uid);
+}
+function sendUp(uid) {
+  const m = machineOf(PICK);
+  if (ST.phase === 'enemy') choose({ a: 'block', unit: uid, machines: (ST.blocks[uid] || []).concat([m.uid]) });
+  else choose({ a: 'attack', machine: m.uid, unit: uid });
+  PICK = null; D().sfx && D().sfx('slide'); drawRun();
+}
+function unitInfo(uid) {
+  const u = unitOf(uid); if (!u) return;
+  const nx = E.nextAttack(u), held = ST.delays[u.uid] != null;
+  const move = held ? `Held off by your Ultimatum. It comes back next round with an attack of ${nx + 1}.` : nx > 0 ? `Its next move: an attack of ${nx}${ST.phase === 'enemy' ? ' in this raid' : ' in the next raid'}.` : 'Its next move: a climb, with no attack.';
+  D().sheet(`<div class="sheettop"><span class="howstamp">Enemy unit</span><button class="howx" data-close aria-label="Close">✕</button></div>
+    <h2>${esc(u.name)}</h2><p class="sheetline">Strength ${u.st} of ${u.max}. ${esc(move)}</p>
+    ${u.escort ? '<p class="sheetnote">An escort: your attacks must go at escorts first, until every escort is down or already has enough coming at it.</p>' : ''}
+    ${u.airfield ? `<p class="sheetnote">${esc(CH.twist ? CH.twist.text : 'It goes for your airfields.')}</p>` : ''}
+    <p class="sheetnote">Strength is the raid's fighting strength. Each hit takes it down; at 0 the raider is out of the fight.</p>`);
+}
+
+// ---------- the action button ----------
+function act() {
+  if (ST.over || !['enemy', 'yours'].includes(ST.phase)) return;
+  LIFT = null; PICK = null;
+  const before = { resolve: ST.resolve, wave: ST.wave, phase: ST.phase };
+  if (!choose({ a: before.phase === 'enemy' ? 'lock' : 'end' })) return;
+  const ev = ST.events.slice();
+  drawRun();
+  const cleared = ev.find(e => e.t === 'waveCleared');
+  const next = () => {
+    if (ST.over) { endScreen(); return; }
+    if (cleared) newWave();
+    if (ST.phase === 'yours') tele(E.calm(ST) ? 'ALL QUIET' : 'YOUR TURN', E.calm(ST) ? allQuietLines() : turnLines(before.resolve, ev));
+    else if (ST.phase === 'enemy') tele('RAID INBOUND', (before.phase === 'yours' ? strikeLines(ev) : []).concat(raidLines()));
+  };
+  if (cleared) debrief(cleared.wave, next); else next();
+}
+function raidLines() {
+  const coming = E.alive(ST).filter(u => E.incoming(ST, u) > 0);
+  return [`Hostiles plotted over the Channel: ${hostileNames(coming.length ? coming : E.alive(ST))}.`, 'Scramble your fighters to block them.'];
+}
+function turnLines(r0, ev) {
+  const lost = r0 - ST.resolve, out = [];
+  out.push(lost > 0 ? `The raid is over. It cost you ${lost} Resolve.` : 'The raid is over. Your blocks held: Resolve stays at ' + ST.resolve + '.');
+  const down = ev.filter(e => e.t === 'attack' && e.hitBack && e.hitBack.to <= 0).map(e => uName(unitOf(e.unit)));
+  const ko = ev.filter(e => e.t === 'knockedOut').map(e => deckCard(e.card).short || deckCard(e.card).title);
+  if (down.length) out.push(`Attrition: ${down.join(' and ')} went down hitting your blockers.`);
+  if (ko.length) out.push(`Knocked out: ${ko.join(', ')}.`);
+  out.push('Arm your fighters and send them up.');
+  return out.slice(0, 3);
+}
+function strikeLines(ev) {
+  const by = new Map();
+  ev.filter(e => e.t === 'strike').forEach(e => { const g = by.get(e.unit) || { from: e.from, to: e.to }; g.to = e.to; by.set(e.unit, g); });
+  const parts = [...by].map(([uid, g]) => g.to <= 0 ? `${uName(unitOf(uid))} destroyed` : `${uName(unitOf(uid))} Strength ${g.from} to ${g.to}`);
+  const arr = ev.filter(e => e.t === 'arrive').map(e => `${uName(unitOf(e.unit))} ${e.why === 'sweep' ? 'joins on a fighter sweep' : 'flies in'}`);
+  const out = [];
+  if (parts.length) out.push(`Your attacks: ${parts.join('; ')}.`);
+  if (arr.length) out.push(arr.join('; ').replace(/^t/, 'T') + '.');
+  return out;
+}
+
+// ---------- debriefs, the next wave, the end ----------
+function compareLine(w, r) {
+  const b = w.benchmark;
+  const mine = r > b ? `You came through it at a Resolve of ${r}, stronger than ${sideName()}'s ${b}.` : r === b ? `You came through it at a Resolve of ${r}, the same as ${sideName()}.` : `You came through it at a Resolve of ${r}. ${sideName()} stood at ${b}.`;
+  return `${w.compare} ${mine}`;
+}
+function debrief(k, then) {
+  const w = CH.waves[k], o = $('cmpOver');
+  o.innerHTML = `<div class="dbf"><p class="dstamp">FILE CLOSED</p><p class="ddate">${esc(waveDate(w.date))}</p><h2>${esc(w.name)}</h2>
+    <p class="dwhy">You broke wave ${k + 1} of ${CH.waves.length}.</p><p class="dtext">${esc(w.debrief)}</p><p class="dcmp">${esc(compareLine(w, ST.over ? ST.over.resolve || ST.resolve : ST.resolve))}</p>
+    <button class="btn big" id="dbGo" type="button">${ST.over ? 'See how you did' : 'Continue'}</button></div>`;
+  o.hidden = false; o.scrollTop = 0;
+  $('dbGo').onclick = () => { o.hidden = true; then(); };
+}
+function newWave() {
+  const w = CH.waves[ST.wave];
+  const lines = E.alive(ST).map(u => { const nx = E.nextAttack(u); return `${u.name}: Strength ${u.st}, ${nx > 0 ? 'attacks ' + nx : 'climbs'} first.`; });
+  D().toast(`${w.name} is coming in.`);
+  tele('NEW RAID PLOTTED', [`${waveDate(w.date)}, ${w.name}.`].concat(lines).slice(0, 3));
+}
+function endScreen() {
+  const o = $('cmpOver'), ov = ST.over, w = CH.waves[Math.min(ST.wave, CH.waves.length - 1)];
+  const bench = CH.benchmark;
+  let head, verdict, more = '';
+  if (ov.won) {
+    head = ov.resolve > bench ? 'YOU HELD BETTER THAN HISTORY' : ov.resolve === bench ? 'YOU MATCHED HISTORY' : 'HISTORY HELD BETTER';
+    verdict = `In real history, ${sideName()} came through these raids at a Resolve of ${bench}. You came through at ${ov.resolve}, in ${ov.rounds} rounds.`;
+  } else {
+    head = 'YOUR RESOLVE RAN OUT';
+    verdict = `It ran out in wave ${ST.wave + 1} of ${CH.waves.length}, ${w.name}, in round ${ov.rounds}. You broke ${ov.wavesCleared} wave${ov.wavesCleared === 1 ? '' : 's'} and took down ${Math.round(ov.destroyed * 100)}% of this one.`;
+    more = `<h3 class="cmph">What really happened</h3><p class="dtext">${esc(w.debrief)}</p>`;
+    const ops = ST.hand.filter(i => ST.cards[i].series === 'battle').length, ko = ST.lost.length;
+    const hurt = [];
+    if (ops >= 2) hurt.push(`${ops} operations were still in your hand with no machine ready to arm.`);
+    if (ko >= 3) hurt.push(`${ko} machines were knocked out. More machines, or Home Front cards to repair them, keep the line standing.`);
+    if (ST.line.length <= 1) hurt.push('Your line was down to ' + (ST.line.length ? 'one machine' : 'nothing') + ' at the end. Most winning decks carry at least 6 machines.');
+    if (hurt.length) more += `<h3 class="cmph">For your next deck</h3>${hurt.map(h => `<p class="dn warn">${esc(h)}</p>`).join('')}`;
+  }
+  o.innerHTML = `<div class="dbf end"><p class="dstamp${ov.won ? '' : ' lost'}">${ov.won ? 'CHAPTER WON' : 'RUN OVER'}</p><h2>${head}</h2><p class="dtext">${esc(verdict)}</p>${more}
+    <div id="endRank"><p class="oline">Sending your run to be checked…</p></div>
+    <button class="btn big" id="endGo" type="button" disabled>Back to the chapter</button></div>`;
+  o.hidden = false; o.scrollTop = 0;
+  finishRun();
+}
+function finishRun() {
+  if (!RUN) return;
+  const box = $('endRank'), go = $('endGo');
+  D().api('campaign/finish', { ticket: RUN.ticket, choices: RUN.choices }).then(d => {
+    const lines = [];
+    if (d.result === 'won' || d.result === 'lost') {
+      if (d.dayRank && d.dayRank.players) lines.push(`Today: top ${d.dayRank.top}% of ${d.dayRank.players} player${d.dayRank.players === 1 ? '' : 's'}${d.bestToday ? '' : ' (your best run today counts)'}.`);
+      if (d.unlocked) lines.push(`Chapter ${d.unlocked} is open${chapterN(d.unlocked) && chapterN(d.unlocked).released ? '' : ' from ' + dayMonth(chapterN(d.unlocked).opensAt)}.`);
+    } else if (d.result === 'already') lines.push('This run was already saved.');
+    box.innerHTML = `<p class="oline">Checked and saved.</p>${lines.map(l => `<p class="oline">${esc(l)}</p>`).join('')}`;
+    RUN = null; saveRun();
+    go.disabled = false; go.onclick = leaveRun;
+  }).catch(e => {
+    if (e.message === 'refused' || /refused/.test(e.message)) { box.innerHTML = '<p class="tslip">The server could not replay this run, so it was not ranked.</p>'; RUN = null; saveRun(); go.disabled = false; go.onclick = leaveRun; return; }
+    box.innerHTML = '<p class="tslip">Your run could not be sent. It is kept in this browser.</p><button class="btn alt" id="endRetry" type="button">Try again</button>';
+    $('endRetry').onclick = () => { box.innerHTML = '<p class="oline">Sending your run to be checked…</p>'; finishRun(); };
+  });
 }
 
 // The opening hand: five cards, keep them or take the one mulligan.
@@ -488,25 +719,22 @@ function openingHand() {
   $('ohKeep').onclick = () => { if (choose({ a: 'keep' })) { o.hidden = true; drawRun(); tele('ALL QUIET', allQuietLines()); } };
   $('ohMull').onclick = () => { if (!ST.mulliganed && choose({ a: 'mulligan' })) { D().sfx && D().sfx('slide'); openingHand(); } };
 }
-function hostileNames(list) {
-  const n = [...new Set(list.map(u => unitWords(u)[0]))];
-  return n.join(', ');
-}
-function allQuietLines() {
-  return [`Hostiles massing over France: ${hostileNames(E.alive(ST))}.`, 'Build your line before they come.'];
-}
+function hostileNames(list) { return [...new Set(list.map(u => unitWords(u)[0]))].join(', '); }
+function allQuietLines() { return [`Hostiles massing over France: ${hostileNames(E.alive(ST))}.`, 'Build your line before they come.']; }
 let teleT = 0;
 function tele(head, lines) {
   const t = $('cmpTele'); if (!t) return;
   t.innerHTML = `<b>${esc(head)}</b>${lines.map(l => `<span>${esc(l)}</span>`).join('')}`;
   t.hidden = false; t.classList.remove('go'); void t.offsetWidth; t.classList.add('go');
-  clearTimeout(teleT); teleT = setTimeout(() => { t.hidden = true; }, 3200);
+  clearTimeout(teleT); teleT = setTimeout(() => { t.hidden = true; }, 2600 + 900 * lines.length);
   t.onclick = () => { clearTimeout(teleT); t.hidden = true; };
 }
 
 // A hand card lifted: what it does, what it costs, and the plays it can make right now.
+function closeLift() { LIFT = null; const b = $('cmpLift'); if (b) b.hidden = true; $('cmpRun').querySelectorAll('.hcard.up').forEach(x => x.classList.remove('up')); }
 function lift(i) {
-  if (ST.phase === 'opening') return;
+  if (ST.phase === 'opening' || ST.over) return;
+  if (PICK) { PICK = null; drawRun(); }
   LIFT = LIFT === i ? null : i;
   $('cmpRun').querySelectorAll('[data-h]').forEach(b => b.classList.toggle('up', Number(b.dataset.h) === LIFT));
   if (LIFT == null) { $('cmpLift').hidden = true; return; }
@@ -516,17 +744,17 @@ function playsFor(i) {
   // Every play the engine would accept for this card, found by trying it on a copy of the run.
   const camp = engineCampaign(), c = ST.cards[i], out = [];
   const tryIt = (choice, label) => { const s = E.copy(ST); if (E.act(camp, s, choice).ok) out.push({ choice, label }); };
-  const nm = m => deckCard(m.card).short || deckCard(m.card).title;
   if (c.series === 'blue') tryIt({ a: 'place', card: i }, `Put on your line · ${c.value} Supply`);
-  if (c.series === 'battle') ST.line.forEach(m => tryIt({ a: 'attach', card: i, machine: m.uid }, `Arm ${nm(m)} · attack ${c.value} · ${c.value} Supply`));
+  if (c.series === 'battle') ST.line.forEach(m => tryIt({ a: 'attach', card: i, machine: m.uid }, `Arm ${mName(m)}: attack ${m.op != null ? E.opValue(ST, m) + ' to ' : ''}${c.value} · ${c.value} Supply`));
   if (c.series === 'home') {
     tryIt({ a: 'rally', card: i, to: 'resolve' }, `Raise Resolve from ${ST.resolve} to ${Math.min(ST.rules.resolveCap, ST.resolve + c.value)} · ${c.value} Supply`);
-    ST.line.forEach(m => { const max = ST.cards[m.card].value; tryIt({ a: 'rally', card: i, to: m.uid }, `Repair ${nm(m)} from ${m.arm} to ${Math.min(max, m.arm + c.value)} · ${c.value} Supply`); });
+    ST.line.forEach(m => { const max = ST.cards[m.card].value; tryIt({ a: 'rally', card: i, to: m.uid }, `Repair ${mName(m)}: armor ${m.arm} to ${Math.min(max, m.arm + c.value)} · ${c.value} Supply`); });
   }
   if (c.series === 'state') {
     if (c.keyword === 'backchannel') tryIt({ a: 'backchannel', card: i }, `Back Channel: draw ${E.BACK_CHANNEL_DRAW} cards · free`);
-    if (c.keyword === 'lend') E.lendable(camp, ST).forEach(p => tryIt({ a: 'lend', card: i, pick: p }, `Lend Lease: bring in ${deckCard(p).short || deckCard(p).title} (armor ${ST.cards[p].value}) · free`));
+    if (c.keyword === 'lend') E.lendable(camp, ST).forEach(p => tryIt({ a: 'lend', card: i, pick: p }, `Lend Lease: bring in ${deckCard(p).short || deckCard(p).title}, armor ${ST.cards[p].value} · free`));
     if (c.keyword === 'evac') E.evacuable(ST).forEach(p => tryIt({ a: 'evac', card: i, pick: p }, `Evacuation: bring ${deckCard(p).short || deckCard(p).title} back to your hand · free`));
+    if (c.keyword === 'ultimatum') E.ultimatumTargets(ST).forEach(u => tryIt({ a: 'ultimatum', card: i, unit: u.uid }, `Ultimatum: hold off ${uName(u)}, attack ${E.incoming(ST, u)}; back next round as ${E.incoming(ST, u) + 1} · free`));
   }
   return out;
 }
@@ -540,44 +768,52 @@ function showLift(i) {
   box.querySelectorAll('[data-p]').forEach(b => { b.onclick = () => { if (choose(plays[Number(b.dataset.p)].choice)) { LIFT = null; D().sfx && D().sfx('slide'); drawRun(); } }; });
 }
 function pieceInfo(uid) {
-  const m = ST.line.find(x => x.uid === uid); if (!m) return;
+  const m = machineOf(uid); if (!m) return;
   const c = deckCard(m.card), max = ST.cards[m.card].value, op = m.op != null ? deckCard(m.op) : null;
-  const state = m.fresh ? 'Setting up: it can block in the next raid, but it can\'t be armed until your next turn.' : m.state === 'out' ? 'Rearming: it attacked, so it sits out the next raid.' : m.state === 'blocked' ? 'Rearming: it blocked, so it can\'t attack this turn.' : 'Ready.';
+  const state = m.fresh ? 'Setting up: it can block in the next raid, but it can\'t be armed or attack until your next turn.'
+    : m.state === 'out' ? 'Rearming: it attacked, so it sits out this raid.'
+    : m.state === 'blocked' ? 'Rearming: it blocked, so it can\'t attack this turn.'
+    : ST.phase === 'yours' && m.op == null ? 'Ready. With no operation it can block but not attack: play a Battle Lines card on it.'
+    : E.calm(ST) ? 'Ready. Nobody attacks in the calm rounds.' : 'Ready.';
   D().sheet(`<div class="sheettop"><span class="howstamp">On your line</span><button class="howx" data-close aria-label="Close">✕</button></div>
-    <div class="cmpslip">${cardFaceHTML(c, 'md')}<div><h2>${esc(c.title)}</h2><p class="sheetline">Armor ${m.arm} of ${max}. ${op ? `Armed with ${esc(op.title)}: attack ${op.value}.` : 'No operation: it can block but not attack.'}</p><p class="sheetnote">${state}</p></div></div>`);
+    <div class="cmpslip">${cardFaceHTML(c, 'md')}<div><h2>${esc(c.title)}</h2><p class="sheetline">Armor ${m.arm} of ${max}. ${op ? `Armed with ${esc(op.title)}: attack ${op.value}.` : 'No operation yet.'}</p><p class="sheetnote">${esc(state)}</p></div></div>`);
 }
 
-// The action button: End turn in the calm rounds. The raid itself is the next build session.
-function act() {
-  if (ST.phase === 'yours') {
-    LIFT = null;
-    if (!choose({ a: 'end' })) return;
-    drawRun();
-    if (E.calm(ST)) tele('ALL QUIET', allQuietLines());
-    else if (ST.phase === 'enemy') tele('RAID INBOUND', [`Hostiles plotted over the Channel: ${hostileNames(E.alive(ST).filter(u => E.incoming(ST, u) > 0))}.`, 'Scramble your fighters to block them.']);
+// The War Cabinet: plain advice for the round, from the side's own leadership (Campaigns doc).
+function cabinet() {
+  const out = [], fc = forecast(), al = E.alive(ST);
+  if (ST.phase === 'enemy') {
+    const total = al.reduce((a, u) => a + E.incoming(ST, u), 0);
+    out.push(`This raid brings ${total} attack in all. Your Resolve is ${ST.resolve}.`);
+    const big = Math.max(0, ...al.map(u => E.incoming(ST, u))), best = Math.max(0, ...ST.line.filter(E.canBlock).map(m => m.arm));
+    if (big > best && big) out.push(`The biggest attack, ${big}, is more than any one machine can take. Send two up together.`);
+    if (fc) fc.ev.filter(e => e.t === 'attack' && e.blocks.length && e.through).forEach(e => out.push(`Your block on ${uName(unitOf(e.unit))} falls short: ${e.through} still gets through.`));
+    if (ST.hand.some(i => ST.cards[i].keyword === 'ultimatum' && !E.whyNot(engineCampaign(), ST, i))) out.push('You hold an Ultimatum. It can hold off one attack of 5 or less in this raid.');
+  } else if (ST.phase === 'yours') {
+    const next = al.reduce((a, u) => a + E.coming(ST, u), 0);
+    const kept = ST.line.filter(m => m.mode !== 'attack').reduce((a, m) => a + m.arm, 0);
+    if (!E.calm(ST)) out.push(`The next raid brings ${next} attack. You are keeping back ${kept} armor. Your Resolve is ${ST.resolve}.`);
+    else out.push(`The first raid comes in round ${ST.calmRounds + 1}. Build your line and arm it while it is quiet.`);
+    if (fc) {
+      fc.ev.filter(e => e.t === 'arrive' && e.why === 'early').forEach(e => out.push(`Clearing the sky brings ${uName(fc.st.units.find(u => u.uid === e.unit))} in early. It attacks in the next raid.`));
+      if (fc.ev.some(e => e.t === 'waveCleared') && !fc.st.over) out.push(`This breaks the wave. The next wave attacks in the very next raid.`);
+    }
+    const free = ST.hand.filter(i => ST.cards[i].series === 'state' && !E.whyNot(engineCampaign(), ST, i));
+    if (free.length) out.push('A Statecraft card in your hand is free to play this turn.');
   }
-}
-function raidHold() {
-  // Build session 3 stops here: the raid, blocking, attacks, and debriefs come with the battlefield.
-  const o = $('cmpOver');
-  setTimeout(() => {
-    if (!$('cmpOver') || ST.phase !== 'enemy') return;
-    o.innerHTML = `<div class="ohand hold"><p class="okick">PREVIEW · BUILD SESSION 3</p><p class="oline">The first raid comes in here. Blocking, attacking, and the debriefs arrive with the battlefield in the next build session, so this preview run stops at round ${ST.round}.</p>
-      <button class="btn big" id="holdLeave" type="button">Leave the run</button><button class="btn alt big" id="holdLook" type="button">Look at the table</button></div>`;
-    o.hidden = false;
-    $('holdLeave').onclick = leaveRun;
-    $('holdLook').onclick = () => { o.hidden = true; };
-  }, 1400);
+  return out;
 }
 function menu() {
   const last = RUN.choices[RUN.choices.length - 1];
   const canUndo = last && UNDOABLE.has(last.a);
+  const adv = cabinet();
   D().sheet(`<div class="sheettop"><span class="howstamp">Round menu</span><button class="howx" data-close aria-label="Close">✕</button></div>
+    ${adv.length ? `<div class="cabinet"><span>${esc(DATA.campaign.council || 'THE WAR CABINET ADVISES')}</span>${adv.map(a => `<p>${esc(a)}</p>`).join('')}</div>` : ''}
     <button class="btn alt" id="mUndo" type="button"${canUndo ? '' : ' disabled'}>Undo last move</button>
     <button class="btn alt" id="mDeck" type="button">Cards left in your deck</button>
     <button class="btn danger" id="mLeave" type="button">Leave the run</button>
     <p class="sheetnote">${canUndo ? 'Any move can be undone until you press the action button.' : 'Nothing to undo since the action button was last pressed.'}</p>`);
-  $('mUndo').onclick = () => { if (!canUndo) return; RUN.choices.pop(); saveRun(); rebuild(); D().closeSheet(); LIFT = null; drawRun(); };
+  $('mUndo').onclick = () => { if (!canUndo) return; RUN.choices.pop(); saveRun(); rebuild(); D().closeSheet(); LIFT = null; PICK = null; drawRun(); };
   $('mDeck').onclick = () => {
     const left = ST.draw.map(deckCard).sort((a, b) => ['blue', 'battle', 'home', 'state'].indexOf(a.series) - ['blue', 'battle', 'home', 'state'].indexOf(b.series) || a.value - b.value);
     D().sheet(`<div class="sheettop"><span class="howstamp">Your deck</span><button class="howx" data-close aria-label="Close">✕</button></div><h2>${left.length} card${left.length === 1 ? '' : 's'} left to draw</h2><p class="sheetnote">In no particular order. You draw 1 at the start of each of your turns after the first.</p>

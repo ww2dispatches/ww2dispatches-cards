@@ -1,8 +1,9 @@
 // Campaigns page checks (build session 3). Against the same local server as server.mjs, in a phone sized
 // headless browser, signed in as test player B (a tester holding a few cards):
 //   DB=<the local D1 sqlite file> PLAYWRIGHT=<path to playwright's index.mjs> node tests/campaigns/page.mjs
-// Walks the door, the month, a chapter, the deck builder, a run's opening hand and mulligan, and the calm
-// opening, and fails on any page error. SHOTS=<dir> saves a screenshot of each step.
+// Walks the door, the month, a chapter, the deck builder, a run's opening hand and mulligan, the calm
+// opening, a raid with a forecast that must come true, then plays the whole run out by tapping and checks the
+// end screen and that the server replayed and saved it. Fails on any page error. SHOTS=<dir> saves a screenshot of each step.
 import { cookie } from '../declass/cookie.mjs';
 import { DatabaseSync } from 'node:sqlite';
 const { chromium } = await import(process.env.PLAYWRIGHT || 'playwright');
@@ -103,11 +104,76 @@ await page.click('#cmpAct');
 ok(/Round 2|round 3/.test(await text('.tlamp')) && (await page.$$('.lrow .lpiece.fresh')).length === 0, 'End turn: round 2, the machine has set up');
 await page.click('#cmpAct');
 ok(/THE RAID/.test(await text('.tlamp')) && (await page.$$('.band.chan .epiece')).length === 2, 'round 3: the raid comes into the Channel');
-await page.waitForSelector('.ohand.hold');
+await page.click('#cmpTele').catch(() => {});
 await shot('raid');
-await page.click('#holdLeave');
+
+// The raid: send a machine up under a raider; the plaque shows the result before Lock in blocks
+const ready = await page.$$('.lrow .lpiece.can');
+ok(ready.length >= 1, 'Ready machines are lit for blocking');
+const r0 = Number(await text('#cmpRes b'));
+await ready[0].click();
+if (await page.$('.epiece.target')) await page.click('.epiece.target >> nth=0');
+ok((await page.$$('.col .lpiece')).length === 1 && (await page.$$('.col .plq')).length >= 1, 'the blocker rises under its raider with a plotting plaque');
+ok(/Resolve/.test(await text('.fcast')), 'the forecast says what the raid will do to Resolve');
+await shot('blocking');
+await page.click('#cmpMenu');
+ok(/THE WAR CABINET ADVISES/.test(await text('#sheetCard')) && /This raid brings \d+ attack/.test(await text('#sheetCard')), 'the War Cabinet advises in the round menu');
+await page.click('#sheet [data-close]');
+const plan = await page.$eval('.fcast', el => el.textContent);
+await page.click('#cmpAct');
+const r1 = Number(await text('#cmpRes b'));
+ok(new RegExp(`Resolve (stays ${r1}|${r0} to ${r1})`).test(plan), 'the raid lands exactly as forecast');
+ok(/YOUR TURN/.test(await text('.tlamp')) && (await page.$$('.lrow .lpiece.rearm')).length >= 1, 'your turn: the blocker is Rearming');
+await shot('turn');
+
+// Play the rest of the run through the page: a plain strategy, every move made by tapping.
+async function playTurn() {
+  for (let k = 0; k < 8; k++) {
+    let played = false;
+    for (const h of await page.$$('.hcard.lit')) {
+      await h.click();
+      const p = await page.$('.lbplay');
+      if (p) { await p.click(); played = true; break; }
+      await page.click('#lbX').catch(() => {});
+    }
+    if (!played) break;
+  }
+  for (let k = 0; k < 5; k++) {
+    const m = await page.$('.lrow .lpiece.can'); if (!m) break;
+    await m.click();
+    const t = await page.$('.epiece.target'); if (t) await t.click();
+    if (await page.$('.lpiece.picked')) { await page.click('#cmpUnpick'); break; }
+  }
+}
+async function playRaid() {
+  for (let k = 0; k < 5; k++) {
+    const m = await page.$('.lrow .lpiece.can'); if (!m) break;
+    await m.click();
+    const t = await page.$('.epiece.target'); if (t) await t.click();
+    if (await page.$('.lpiece.picked')) { await page.click('#cmpUnpick'); break; }
+  }
+}
+let debriefs = 0, guard = 0;
+while (guard++ < 80) {
+  if (await page.$('#cmpOver:not([hidden]) #dbGo')) { debriefs++; if (debriefs === 1) await shot('debrief'); await page.click('#dbGo'); continue; }
+  if (await page.$('#endGo')) break;
+  const lamp = await text('.tlamp');
+  if (/YOUR TURN/.test(lamp)) await playTurn(); else if (/THE RAID/.test(lamp)) await playRaid();
+  await page.click('#cmpAct');
+}
+await page.waitForSelector('#endGo');
+const end = await text('.dbf.end');
+ok(/CHAPTER WON|RUN OVER/.test(end), 'the run ends with the end screen: ' + end.slice(0, 40));
+ok(/In real history, Britain came through these raids at a Resolve of 6|ran out in wave/.test(end), 'the verdict is said in full words');
+await page.waitForFunction(() => !document.getElementById('endGo').disabled, null, { timeout: 15000 });
+ok(/Checked and saved/.test(await text('#endRank')), 'the server replays the run and saves it: ' + (await text('#endRank')));
+await shot('end');
+const saved = db.prepare("SELECT status, won, resolve FROM campaign_runs WHERE player_id = ? AND status = 'done'").get(P);
+ok(saved && (saved.won === 1) === /CHAPTER WON/.test(end), 'the saved result matches the page');
+console.log(`  played a whole run: ${/CHAPTER WON/.test(end) ? 'won' : 'lost'}, ${debriefs} debrief${debriefs === 1 ? '' : 's'}`);
+await page.click('#endGo');
 await page.waitForSelector('#chGo');
-ok(/2 of 3 runs left today/.test(await text('#cmpBody')), 'leaving the run still counts it');
+ok(/2 of 3 runs left today/.test(await text('#cmpBody')), 'the finished run counts: ' + (await text('#cmpBody')).match(/\d of 3 runs[^.]*|No runs[^.]*/));
 
 ok(errs.length === 0, 'no page errors: ' + errs.join(' | '));
 await b.close();

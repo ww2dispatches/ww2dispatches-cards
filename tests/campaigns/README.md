@@ -69,3 +69,9 @@ DB=<the local D1 sqlite file> PLAYWRIGHT=<path to playwright's index.mjs> node t
 ```
 
 `SHOTS=<dir>` saves a phone sized screenshot of each step. First run, 6 Nov 2026: 27 passed, 0 failed.
+
+Build session 4 (6 Nov 2026) added the battlefield: blocking in the raid with plotting plaques, the red
+plaque for damage getting through, the forecast beside the button (the check makes sure the raid lands
+exactly as forecast), the War Cabinet in the round menu, attacks in your turn with escorts first, the
+Ultimatum's HELD OFF, debriefs when a wave breaks, and the end screen. The check then plays the whole run
+out by tapping, and the server must replay and save it with the same result: 37 passed, 0 failed.
