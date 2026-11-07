@@ -41,6 +41,32 @@ def card_url(rel):
     return f"{CARDS_CDN}{rel}?v={v}"
 
 
+# Code Room tiles (7 Nov 2026): the board shows each card's original photo with a typed label, not the
+# finished card, so the subject reads at a glance on a phone. The photo comes from the record's "photo"
+# file (research downloads it for every card), shrunk to a light tile copy in tiles/ so twelve load fast.
+# The label is the short name, or the record's "tile" when two cards would otherwise share a name.
+TILE_MAX = 640
+
+
+def tile_photo(record, card_id):
+    src = record.get("photo")
+    if not src or not os.path.exists(os.path.join(root, src)):
+        return None
+    rel = f"tiles/{card_id}.jpg"
+    out = os.path.join(root, rel)
+    if not os.path.exists(out) or os.path.getmtime(out) < os.path.getmtime(os.path.join(root, src)):
+        try:
+            from PIL import Image, ImageOps
+            im = ImageOps.exif_transpose(Image.open(os.path.join(root, src))).convert("RGB")
+            im.thumbnail((TILE_MAX, TILE_MAX))
+            os.makedirs(os.path.dirname(out), exist_ok=True)
+            im.save(out, "JPEG", quality=78, optimize=True, progressive=True)
+        except Exception as e:  # no Pillow or a bad file: the board falls back to the card image
+            print(f"catalog.py: no tile photo for {card_id}: {e}")
+            return None
+    return card_url(rel)
+
+
 def utc(day, hhmm):
     """A Mountain post date and time as a UTC ISO string (daylight saving handled)."""
     local = datetime.datetime.fromisoformat(f"{day}T{hhmm}:00").replace(tzinfo=POST_TZ)
@@ -191,6 +217,8 @@ for d in dispatches:
         "format": d.get("format") or "story",
         "postAt": utc(post_date, d.get("time") or "08:00"),
         "img": img,
+        "tilePhoto": tile_photo(d, d["id"]),
+        "tileLabel": d.get("tile") or d.get("short") or d.get("title", ""),
         "story": d.get("body", ""),
         "photoCredit": d.get("photoCredit") or "",
         "photoUrl": d.get("photoUrl") or "",
@@ -231,6 +259,8 @@ for i, n in enumerate(puzzles):
         "answerAt": post_times[i + 1] if i + 1 < len(post_times) else None,
         "img": img_a,
         "imgPuzzle": img_q,
+        "tilePhoto": tile_photo(n, f"namethis-{n['id']}"),
+        "tileLabel": n.get("tile") or n.get("short") or n.get("answer", ""),
         "gameImages": bool(card_url(f"cards/namethis-{n['id']}-game-a.jpg")),
         "story": n.get("body", ""),
         "photoCredit": n.get("photoCredit") or "",

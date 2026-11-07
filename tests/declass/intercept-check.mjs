@@ -46,6 +46,20 @@ if (prune) {
   console.log('intercept.json rewritten with only posted cards');
 }
 
+// 1b. Board tiles (7 Nov 2026): two posted cards with the same tile label could land on one board and
+// read as the same file. Give one a "tile" label in its record (dispatches/ or namethis/), then rerun the
+// log rebuild. Every posted card also needs a tile photo (the record's "photo" file).
+{
+  const byLabel = new Map();
+  for (const c of cat.cards.filter(c => posted.has(c.id))) {
+    const k = String(c.tileLabel || c.short || '').trim().toLowerCase();
+    if (!byLabel.has(k)) byLabel.set(k, []);
+    byLabel.get(k).push(c.id);
+    if (!c.tilePhoto) err(c.id + ': no tile photo (its record needs a "photo" file)');
+  }
+  for (const [k, list] of byLabel) if (list.length > 1) err(`tile label "${k}" is shared by ${list.join(', ')}: give one a "tile" label in its record`);
+}
+
 // 2. Readiness on a given day (default: a week from today).
 const day = args.find(a => /^\d{4}-\d{2}-\d{2}$/.test(a)) || new Date(Date.now() + 7 * 86400000).toISOString().slice(0, 10);
 const t = new Date(day + 'T17:00:00Z');

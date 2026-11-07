@@ -79,15 +79,19 @@
   // but iOS can answer a long press on a picture with its own share menu, so the magnifier is the main way.
   const mag = '<span class="zoomb" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M15 15l5 5" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg></span>';
   const clip = '<svg class="pclip" viewBox="0 0 24 60" aria-hidden="true"><path d="M8 40V12a5 5 0 0 1 10 0v34a8 8 0 0 1-16 0V16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>';
+  // The board shows tiles made for the puzzle (decided 7 Nov 2026, concept D): the card's original photo
+  // and a typed label (title, year, place), so the subject reads at a glance on a phone. The magnifier
+  // opens the full card; the result screen and the pick show the full cards.
+  const tileLine = inf => [String(inf.date || '').slice(0, 4), String(inf.place || '').split(' · ')[0]].filter(Boolean).join(' · ');
   function fileHTML(i, extra) {
-    const c = P.cards[i], inf = info(c.id);
-    const img = inf ? inf.img : '';
-    return `<button class="icpcard${sel.includes(i) ? ' sel' : ''}${extra || ''}" data-i="${i}" type="button" aria-pressed="${sel.includes(i)}" aria-label="${esc(inf ? inf.short : 'File')}">${clip}<img src="${esc(img)}" alt="" draggable="false" loading="eager">${mag}</button>`;
+    const c = P.cards[i], inf = info(c.id) || {};
+    const label = inf.tileLabel || inf.short || 'File';
+    return `<button class="icpcard tile${sel.includes(i) ? ' sel' : ''}${extra || ''}" data-i="${i}" type="button" aria-pressed="${sel.includes(i)}" aria-label="${esc(label)}, ${esc(tileLine(inf))}"><img src="${esc(inf.tilePhoto || inf.img || '')}" data-fallback="${esc(inf.img || '')}" alt="" draggable="false" loading="eager"><span class="tl"><b>${esc(label)}</b><small>${esc(tileLine(inf))}</small></span>${mag}</button>`;
   }
   // During play a found group is a slim row (three small cards and the link) so it doesn't push the open
   // files down the screen; the result screen shows the full clipped groups (7 Nov 2026).
   function rowHTML(g, k) {
-    return `<div class="icprow" style="--k:${k}"><div class="rcards">${g.idx.map(i => { const inf = info(P.cards[i].id); return `<button class="gcard" data-i="${i}" type="button" aria-label="See ${esc(inf ? inf.short : 'this card')} full size"><img src="${esc(inf ? inf.img : '')}" alt="" draggable="false"></button>`; }).join('')}</div><p class="rlink">${esc(g.link)}</p></div>`;
+    return `<div class="icprow" style="--k:${k}"><div class="rcards">${g.idx.map(i => { const inf = info(P.cards[i].id) || {}; return `<button class="gcard" data-i="${i}" type="button" aria-label="See ${esc(inf.tileLabel || inf.short || 'this card')} full size"><img src="${esc(inf.tilePhoto || inf.img || '')}" alt="" draggable="false"></button>`; }).join('')}</div><p class="rlink">${esc(g.link)}<small>${g.idx.map(i => esc((info(P.cards[i].id) || {}).tileLabel || '')).join(' · ')}</small></p></div>`;
   }
   function groupHTML(g, k) {
     return `<div class="icpgroup${g.found ? '' : ' missed'}" style="--k:${k}"><span class="gclip">${clip}</span><div class="gcards">${g.idx.map(i => { const inf = info(P.cards[i].id); return `<button class="gcard" data-i="${i}" type="button"><img src="${esc(inf ? inf.img : '')}" alt="${esc(inf ? inf.short : '')}" draggable="false"></button>`; }).join('')}</div><p class="glink">${g.found ? '' : '<span class="gmiss">Not found · </span>'}${esc(g.link)}</p></div>`;
@@ -186,6 +190,8 @@
 
   function wire() {
     document.querySelectorAll('#icpDesk .icpcard').forEach(b => holdable(b, () => toggle(Number(b.dataset.i), b)));
+    // A tile photo not on GitHub yet falls back to the full card image.
+    document.querySelectorAll('#icpDesk .icpcard.tile img[data-fallback]').forEach(im => im.addEventListener('error', () => { if (im.dataset.fallback && im.src !== im.dataset.fallback) im.src = im.dataset.fallback; }, { once: true }));
     document.querySelectorAll('.icpgroup .gcard, .icprow .gcard').forEach(b => holdable(b, () => zoom(b)));
     document.querySelectorAll('#icpPick .nopick').forEach(b => holdable(b, () => {}));
     const f = $('icpFile'); if (f) f.onclick = fileIt;
