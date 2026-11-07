@@ -1,299 +1,312 @@
 {
-  "num": 37,
-  "id": "1942-11-04-alamein-retreat",
-  "title": "Rommel retreats from Alamein",
-  "date": "1942-11-04",
-  "time": "08:00",
-  "place": "El Alamein · Egypt",
-  "series": "battle",
-  "pull": "Victory or death? Neither.",
-  "short": "El Alamein",
-  "facts": [
-    {
-      "text": "Early on 2 November 1942 the Eighth Army opened Operation Supercharge, a fresh push aimed at Tel el Aqqaqir, the Axis defensive base on the Rahman track. The 9th Armoured Brigade attacked at 06:15 and lost most of its tanks, but the line held open.",
-      "sources": [
-        0
-      ]
-    },
-    {
-      "text": "Rommel saw that his army was bleeding to death and began to pull back. At 13:30 on 3 November he received a message from Hitler ordering him to stand fast, to yield not a yard of ground, and to show his troops no other road than that to victory or death.",
-      "sources": [
-        0,
-        8
-      ]
-    },
-    {
-      "text": "Rommel wrote that the order demanded the impossible. 'We were completely stunned,' he wrote, and for the first time in the African campaign he did not know what to do. He obeyed and ordered his men to hold their positions.",
-      "sources": [
-        0
-      ]
-    },
-    {
-      "text": "On the morning of 4 November the British broke through. Rommel wrote that by early afternoon enemy armour had burst a 19 kilometre hole in his front, and he had no reserves left.",
-      "sources": [
-        7,
-        0
-      ]
-    },
-    {
-      "text": "The Afrika Korps was down to a few dozen working tanks against hundreds of British tanks. Rommel's own figures put the Germans at 36 tanks on 4 November, from 249 at the start of the battle.",
-      "sources": [
-        0,
-        9
-      ]
-    },
-    {
-      "text": "That same day General Wilhelm Ritter von Thoma, commander of the Afrika Korps, was captured west of El Alamein after surrendering to men of the 10th Hussars. He was taken to Montgomery's headquarters, where Montgomery met him and later invited him to dinner.",
-      "sources": [
-        5,
-        6
-      ]
-    },
-    {
-      "text": "At 17:30 on 4 November Rommel ordered a general retreat without waiting for Hitler's reply, writing that superior orders could no longer count and he had to save what could be saved. Hitler's approval did come, but Rommel wrote that it arrived much too late in the day.",
-      "sources": [
-        0,
-        1,
-        7
-      ]
-    },
-    {
-      "text": "With little transport, much of the Italian infantry was left behind, and the Italian Ariete, Trento and Bologna divisions were destroyed. Thousands of Axis soldiers were taken prisoner, and the total for the battle came to about 30,000.",
-      "sources": [
-        0,
-        10
-      ]
-    },
-    {
-      "text": "Alamein was the first great British land victory over the German army. On Sunday 15 November 1942 church bells rang across Britain to mark it, the first time most people had heard them in over two years; they had been kept silent as an invasion alarm.",
-      "sources": [
-        2,
-        4
-      ]
-    },
-    {
-      "text": "At the Mansion House in London on 10 November 1942, Churchill said: 'Now this is not the end. It is not even the beginning of the end. But it is, perhaps, the end of the beginning.'",
-      "sources": [
-        3,
-        2
-      ]
-    },
-    {
-      "text": "On 8 November 1942 American and British troops landed in French North Africa in Operation Torch. Rommel's army was now caught between two Allied forces and began a long retreat of more than a thousand miles west toward Tunisia.",
-      "sources": [
-        0,
-        2
-      ]
-    }
-  ],
+ "num": 37,
+ "id": "1942-11-04-alamein-retreat",
+ "title": "Rommel retreats from Alamein",
+ "date": "1942-11-04",
+ "time": "08:00",
+ "place": "El Alamein · Egypt",
+ "series": "battle",
+ "pull": "Victory or death? Neither.",
+ "short": "El Alamein",
+ "facts": [
+  {
+   "text": "Early on 2 November 1942 the Eighth Army opened Operation Supercharge, a fresh push aimed at Tel el Aqqaqir, the Axis defensive base on the Rahman track. The 9th Armoured Brigade attacked at 06:15 and lost most of its tanks, but the line held open.",
+   "sources": [
+    0
+   ]
+  },
+  {
+   "text": "Rommel saw that his army was bleeding to death and began to pull back. At 13:30 on 3 November he received a message from Hitler ordering him to stand fast, to yield not a yard of ground, and to show his troops no other road than that to victory or death.",
+   "sources": [
+    0,
+    8
+   ]
+  },
+  {
+   "text": "Rommel wrote that the order demanded the impossible. 'We were completely stunned,' he wrote, and for the first time in the African campaign he did not know what to do. He obeyed and ordered his men to hold their positions.",
+   "sources": [
+    0
+   ]
+  },
+  {
+   "text": "On the morning of 4 November the British broke through. Rommel wrote that by early afternoon enemy armour had burst a 19 kilometre hole in his front, and he had no reserves left.",
+   "sources": [
+    7,
+    0
+   ]
+  },
+  {
+   "text": "The Afrika Korps was down to a few dozen working tanks against hundreds of British tanks. Rommel's own figures put the Germans at 36 tanks on 4 November, from 249 at the start of the battle.",
+   "sources": [
+    0,
+    9
+   ]
+  },
+  {
+   "text": "That same day General Wilhelm Ritter von Thoma, commander of the Afrika Korps, was captured west of El Alamein after surrendering to men of the 10th Hussars. He was taken to Montgomery's headquarters, where Montgomery met him and later invited him to dinner.",
+   "sources": [
+    5,
+    6
+   ]
+  },
+  {
+   "text": "At 17:30 on 4 November Rommel ordered a general retreat without waiting for Hitler's reply, writing that superior orders could no longer count and he had to save what could be saved. Hitler's approval did come, but Rommel wrote that it arrived much too late in the day.",
+   "sources": [
+    0,
+    1,
+    7
+   ]
+  },
+  {
+   "text": "With little transport, much of the Italian infantry was left behind, and the Italian Ariete, Trento and Bologna divisions were destroyed. Thousands of Axis soldiers were taken prisoner, and the total for the battle came to about 30,000.",
+   "sources": [
+    0,
+    10
+   ]
+  },
+  {
+   "text": "Alamein was the first great British land victory over the German army. On Sunday 15 November 1942 church bells rang across Britain to mark it, the first time most people had heard them in over two years; they had been kept silent as an invasion alarm.",
+   "sources": [
+    2,
+    4
+   ]
+  },
+  {
+   "text": "At the Mansion House in London on 10 November 1942, Churchill said: 'Now this is not the end. It is not even the beginning of the end. But it is, perhaps, the end of the beginning.'",
+   "sources": [
+    3,
+    2
+   ]
+  },
+  {
+   "text": "On 8 November 1942 American and British troops landed in French North Africa in Operation Torch. Rommel's army was now caught between two Allied forces and began a long retreat of more than a thousand miles west toward Tunisia.",
+   "sources": [
+    0,
+    2
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "title": "Second Battle of El Alamein, Wikipedia (citing Playfair official history, Rommel Papers, Barr)",
+   "url": "https://en.wikipedia.org/wiki/Second_Battle_of_El_Alamein"
+  },
+  {
+   "title": "Erwin Rommel on his Defeat in Africa (1942), German History in Documents and Images (from Pimlott, Rommel in his own Words)",
+   "url": "https://germanhistorydocs.org/en/nazi-germany-1933-1945/erwin-rommel-on-his-defeat-in-africa-1942"
+  },
+  {
+   "title": "The End of the Beginning: The Second Battle of El Alamein, National Army Museum",
+   "url": "https://www.nam.ac.uk/whats-on/end-beginning-second-battle-el-alamein"
+  },
+  {
+   "title": "The Bright Gleam of Victory, Mansion House, 10 November 1942, International Churchill Society",
+   "url": "https://winstonchurchill.org/resources/speeches/1941-1945-war-leader/the-bright-gleam-of-victory/"
+  },
+  {
+   "title": "Exactly like a hundred other November Sundays, Essex Record Office blog",
+   "url": "https://www.essexrecordofficeblog.co.uk/tag/egypt/"
+  },
+  {
+   "title": "Capture of Afrika Corps Commander von Thoma (AYY 272/3), IWM film record",
+   "url": "https://film.iwmcollections.org.uk/record/10311"
+  },
+  {
+   "title": "Wilhelm Ritter von Thoma, Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Wilhelm_Ritter_von_Thoma"
+  },
+  {
+   "title": "El Alamein: the chase is on, World War II Today (quoting Rommel Papers)",
+   "url": "https://www.ww2today.com/p/el-alamein-the-chase-is-on"
+  },
+  {
+   "title": "Chronology of World War II, 3 November 1942",
+   "url": "https://ron84z.neocities.org/42/11/421103.html"
+  },
+  {
+   "title": "North Africa campaigns: Montgomery in the desert, Britannica",
+   "url": "https://www.britannica.com/event/North-Africa-campaigns/Montgomery-in-the-desert"
+  },
+  {
+   "title": "Axis POWs boarding first train after El Alamein, History of War",
+   "url": "https://www.historyofwar.org/Pictures/pictures_axis_POWs_alamein.html"
+  }
+ ],
+ "photo": "photos/1942-11-04-alamein-retreat.jpg",
+ "photoUrl": "https://commons.wikimedia.org/wiki/File:Von_Thoma_and_Montgomery.JPG",
+ "photoNote": "Supplied by Brian on 29 Oct (620 x 409 px, small, may look soft). Montgomery talks with the captured Afrika Korps commander, General Wilhelm Ritter von Thoma, at Eighth Army headquarters, El Alamein. Photo by Lt Knight, No 1 Army Film and Photographic Unit, IWM E 19130, Crown copyright expired (PD UKGov), via Wikimedia Commons. The IWM film record of the same meeting is dated 4 November 1942. Backup: Sherman tanks of the 9th Lancers racing west, 5 November 1942 (IWM E 18972).",
+ "photoCredit": "Montgomery with the captured General von Thoma, El Alamein, 4 November 1942. No 1 Army Film and Photographic Unit, IWM E 19130, public domain.",
+ "declassified": {
+  "fact": "Rommel's escape got help from the weather. Around midday on 6 November rain began to fall on the desert, and by the next day waterlogged ground and empty fuel tanks had stranded the British 1st and 7th Armoured Divisions. The British attempt to trap his army near Mersa Matruh came up short.",
   "sources": [
-    {
-      "title": "Second Battle of El Alamein, Wikipedia (citing Playfair official history, Rommel Papers, Barr)",
-      "url": "https://en.wikipedia.org/wiki/Second_Battle_of_El_Alamein"
-    },
-    {
-      "title": "Erwin Rommel on his Defeat in Africa (1942), German History in Documents and Images (from Pimlott, Rommel in his own Words)",
-      "url": "https://germanhistorydocs.org/en/nazi-germany-1933-1945/erwin-rommel-on-his-defeat-in-africa-1942"
-    },
-    {
-      "title": "The End of the Beginning: The Second Battle of El Alamein, National Army Museum",
-      "url": "https://www.nam.ac.uk/whats-on/end-beginning-second-battle-el-alamein"
-    },
-    {
-      "title": "The Bright Gleam of Victory, Mansion House, 10 November 1942, International Churchill Society",
-      "url": "https://winstonchurchill.org/resources/speeches/1941-1945-war-leader/the-bright-gleam-of-victory/"
-    },
-    {
-      "title": "Exactly like a hundred other November Sundays, Essex Record Office blog",
-      "url": "https://www.essexrecordofficeblog.co.uk/tag/egypt/"
-    },
-    {
-      "title": "Capture of Afrika Corps Commander von Thoma (AYY 272/3), IWM film record",
-      "url": "https://film.iwmcollections.org.uk/record/10311"
-    },
-    {
-      "title": "Wilhelm Ritter von Thoma, Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Wilhelm_Ritter_von_Thoma"
-    },
-    {
-      "title": "El Alamein: the chase is on, World War II Today (quoting Rommel Papers)",
-      "url": "https://www.ww2today.com/p/el-alamein-the-chase-is-on"
-    },
-    {
-      "title": "Chronology of World War II, 3 November 1942",
-      "url": "https://ron84z.neocities.org/42/11/421103.html"
-    },
-    {
-      "title": "North Africa campaigns: Montgomery in the desert, Britannica",
-      "url": "https://www.britannica.com/event/North-Africa-campaigns/Montgomery-in-the-desert"
-    },
-    {
-      "title": "Axis POWs boarding first train after El Alamein, History of War",
-      "url": "https://www.historyofwar.org/Pictures/pictures_axis_POWs_alamein.html"
-    }
+   {
+    "title": "North Africa campaigns: Montgomery in the desert, Britannica",
+    "url": "https://www.britannica.com/event/North-Africa-campaigns/Montgomery-in-the-desert"
+   },
+   {
+    "title": "Second Battle of El Alamein, Wikipedia (citing Playfair official history)",
+    "url": "https://en.wikipedia.org/wiki/Second_Battle_of_El_Alamein"
+   }
   ],
-  "photo": "photos/1942-11-04-alamein-retreat.jpg",
-  "photoUrl": "https://commons.wikimedia.org/wiki/File:Von_Thoma_and_Montgomery.JPG",
-  "photoNote": "Supplied by Brian on 29 Oct (620 x 409 px, small, may look soft). Montgomery talks with the captured Afrika Korps commander, General Wilhelm Ritter von Thoma, at Eighth Army headquarters, El Alamein. Photo by Lt Knight, No 1 Army Film and Photographic Unit, IWM E 19130, Crown copyright expired (PD UKGov), via Wikimedia Commons. The IWM film record of the same meeting is dated 4 November 1942. Backup: Sherman tanks of the 9th Lancers racing west, 5 November 1942 (IWM E 18972).",
-  "photoCredit": "Montgomery with the captured General von Thoma, El Alamein, 4 November 1942. No 1 Army Film and Photographic Unit, IWM E 19130, public domain.",
-  "declassified": {
-    "fact": "Rommel's escape got help from the weather. Around midday on 6 November rain began to fall on the desert, and by the next day waterlogged ground and empty fuel tanks had stranded the British 1st and 7th Armoured Divisions. The British attempt to trap his army near Mersa Matruh came up short.",
-    "sources": [
-      {
-        "title": "North Africa campaigns: Montgomery in the desert, Britannica",
-        "url": "https://www.britannica.com/event/North-Africa-campaigns/Montgomery-in-the-desert"
-      },
-      {
-        "title": "Second Battle of El Alamein, Wikipedia (citing Playfair official history)",
-        "url": "https://en.wikipedia.org/wiki/Second_Battle_of_El_Alamein"
-      }
-    ],
-    "photo": {
-      "file": "photos/1942-11-04-alamein-retreat-3.jpg",
-      "page": "https://commons.wikimedia.org/wiki/File:Lieutenant_General_Bernard_Montgomery,_commanding_the_British_Eighth_Army_in_North_Africa,_in_the_turret_of_his_Grant_command_tank_at_El_Alamein,_5_November_1942._E18980.jpg",
-      "credit": "Montgomery in his Grant command tank at El Alamein, 5 November 1942. No 1 Army Film and Photographic Unit, IWM E 18980, public domain.",
-      "caption": "Montgomery watches from the turret of his Grant command tank the day after the breakthrough."
-    }
+  "photo": {
+   "file": "photos/1942-11-04-alamein-retreat-3.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Lieutenant_General_Bernard_Montgomery,_commanding_the_British_Eighth_Army_in_North_Africa,_in_the_turret_of_his_Grant_command_tank_at_El_Alamein,_5_November_1942._E18980.jpg",
+   "credit": "Montgomery in his Grant command tank at El Alamein, 5 November 1942. No 1 Army Film and Photographic Unit, IWM E 18980, public domain.",
+   "caption": "Montgomery watches from the turret of his Grant command tank the day after the breakthrough."
+  }
+ },
+ "videoPhotos": [
+  {
+   "page": "https://commons.wikimedia.org/wiki/File:Sherman_tanks_of_9th_Queen%27s_Royal_Lancers_during_the_Battle_of_El_Alamein,_5_November_1942._E18972.jpg",
+   "credit": "Sherman tanks of the 9th Queen's Royal Lancers race west, 5 November 1942. No 1 AFPU, IWM E 18972, public domain."
   },
-  "videoPhotos": [
-    {
-      "page": "https://commons.wikimedia.org/wiki/File:Sherman_tanks_of_9th_Queen%27s_Royal_Lancers_during_the_Battle_of_El_Alamein,_5_November_1942._E18972.jpg",
-      "credit": "Sherman tanks of the 9th Queen's Royal Lancers race west, 5 November 1942. No 1 AFPU, IWM E 18972, public domain."
-    },
-    {
-      "page": "https://commons.wikimedia.org/wiki/File:Lieutenant_General_Bernard_Montgomery,_commanding_the_British_Eighth_Army_in_North_Africa,_in_the_turret_of_his_Grant_command_tank_at_El_Alamein,_5_November_1942._E18980.jpg",
-      "credit": "Montgomery in his Grant command tank at El Alamein, 5 November 1942. IWM E 18980, public domain.",
-      "file": "photos/1942-11-04-alamein-retreat-3.jpg"
-    },
-    {
-      "page": "https://commons.wikimedia.org/wiki/File:Churchill_III_tanks_of_%27Kingforce%27,_1st_Armoured_Division,_in_the_Western_Desert,_5_November_1942._E18991_(cropped).jpg",
-      "credit": "Churchill III tanks of Kingforce, 5 November 1942. IWM E 18991, public domain.",
-      "file": "photos/1942-11-04-alamein-retreat-4.jpg"
-    }
+  {
+   "page": "https://commons.wikimedia.org/wiki/File:Lieutenant_General_Bernard_Montgomery,_commanding_the_British_Eighth_Army_in_North_Africa,_in_the_turret_of_his_Grant_command_tank_at_El_Alamein,_5_November_1942._E18980.jpg",
+   "credit": "Montgomery in his Grant command tank at El Alamein, 5 November 1942. IWM E 18980, public domain.",
+   "file": "photos/1942-11-04-alamein-retreat-3.jpg"
+  },
+  {
+   "page": "https://commons.wikimedia.org/wiki/File:Churchill_III_tanks_of_%27Kingforce%27,_1st_Armoured_Division,_in_the_Western_Desert,_5_November_1942._E18991_(cropped).jpg",
+   "credit": "Churchill III tanks of Kingforce, 5 November 1942. IWM E 18991, public domain.",
+   "file": "photos/1942-11-04-alamein-retreat-4.jpg"
+  }
+ ],
+ "kind": "living",
+ "film": {
+  "status": "secured",
+  "record": "Desert Victory (1943), British Ministry of Information, Army Film and Photographic Unit footage",
+  "url": "https://commons.wikimedia.org/wiki/File:Desert_Victory_(1943).webm",
+  "file": "footage/1942-11-04-alamein-retreat.mp4 in the videos repo (cut 31 Oct 2026 from the Source Film copy)",
+  "sound": true,
+  "shot_notes": "Use the film's end of battle section, after the air attack sequence used for No. 024 (about 41:40 on): the breakthrough, the advance and the Axis surrender and retreat. Look for genuine combat camera shots of tanks and infantry moving west and of prisoners; leave out staged close ups, captured enemy newsreel, and any stretch with music or narration under it. Keep the film's own battle sound if a clean stretch exists. The workspace could not download it (upload.wikimedia.org returned 429).",
+  "license": "Crown copyright expired, public domain (PD UKGov on Wikimedia Commons)",
+  "date_note": "Desert Victory does not date each shot; if the chosen shots are not clearly from 4 November, the caption should say the film shows the end of the Alamein battle."
+ },
+ "somber": false,
+ "themes": {
+  "who": [
+   "soldiers and sailors",
+   "leaders"
   ],
-  "kind": "living",
-  "film": {
-    "status": "secured",
-    "record": "Desert Victory (1943), British Ministry of Information, Army Film and Photographic Unit footage",
-    "url": "https://commons.wikimedia.org/wiki/File:Desert_Victory_(1943).webm",
-    "file": "footage/1942-11-04-alamein-retreat.mp4 in the videos repo (cut 31 Oct 2026 from the Source Film copy)",
-    "sound": true,
-    "shot_notes": "Use the film's end of battle section, after the air attack sequence used for No. 024 (about 41:40 on): the breakthrough, the advance and the Axis surrender and retreat. Look for genuine combat camera shots of tanks and infantry moving west and of prisoners; leave out staged close ups, captured enemy newsreel, and any stretch with music or narration under it. Keep the film's own battle sound if a clean stretch exists. The workspace could not download it (upload.wikimedia.org returned 429).",
-    "license": "Crown copyright expired, public domain (PD UKGov on Wikimedia Commons)",
-    "date_note": "Desert Victory does not date each shot; if the chosen shots are not clearly from 4 November, the caption should say the film shows the end of the Alamein battle."
-  },
-  "somber": false,
-  "themes": {
-    "who": [
-      "soldiers and sailors",
-      "leaders"
-    ],
-    "story": [
-      "turning point",
-      "combat"
-    ],
-    "photo": "a group",
-    "theater": "Mediterranean and North Africa",
-    "branch": [
-      "Army"
-    ],
-    "nations": [
-      "Britain",
-      "Germany",
-      "Italy",
-      "Australia",
-      "New Zealand",
-      "India",
-      "South Africa"
-    ],
-    "video": {
-      "kind": "Living Card",
-      "opening": "combat or firing",
-      "sound": "period sound"
-    }
-  },
-  "focusX": 62,
-  "focusY": 40,
-  "zoom": 100,
-  "body": "Hitler's order was victory or death. Rommel chose neither.\n\n4 November 1942. The morning after Hitler ordered him to yield not a yard of ground, the British broke through at El Alamein. By early afternoon, Rommel wrote, enemy armour had burst a 19 kilometre hole in his front, and he had no reserves left.\n\nBy his own figures the Germans were down to 36 tanks, from 249 at the start of the battle. That same day the commander of the Afrika Korps, General Wilhelm Ritter von Thoma, surrendered to men of the 10th Hussars. Montgomery met him and later invited him to dinner.\n\nAt 5:30 p.m., Rommel ordered a general retreat without waiting for Hitler's reply. With little transport, much of the Italian infantry was left behind. About 30,000 Axis soldiers were taken prisoner in the battle.\n\nIt was the first great British land victory over the German army. On 15 November church bells rang across Britain, the first time most people had heard them in over two years.",
-  "addons": [
-    "If you had been in Rommel's place, would you have obeyed the order?"
+  "story": [
+   "turning point",
+   "combat"
   ],
-  "hashtags": "#OnThisDay #WW2",
-  "threads": "Hitler's order was victory or death. Rommel chose neither.\n\n4 November 1942. The British broke through at El Alamein, and Rommel's Germans were down to 36 tanks. At 5:30 p.m. he ordered a retreat without waiting for Hitler's reply.\n\nThat day the captured Afrika Korps commander, von Thoma, met Montgomery.\n\nIf you had been in Rommel's place, would you have obeyed the order?",
-  "alt": "Archival photo of the captured German General Wilhelm von Thoma, in uniform with a scarf, standing beside Montgomery in a sweater outside a tent. Text: 4 NOV 1942, El Alamein, Egypt. Victory or death? Neither.",
-  "question": true,
-  "slides": [
-    {
-      "photo": "photos/1942-11-04-alamein-retreat-4.jpg",
-      "caption": "Churchill tanks of Kingforce in the desert, 5 November 1942, the day after the breakthrough.",
-      "credit": "No 1 AFPU, IWM E 18991, public domain.",
-      "alt": "Archival photo of two Churchill tanks in camouflage paint driving across sand, kicking up dust."
-    }
+  "photo": "a group",
+  "theater": "Mediterranean and North Africa",
+  "branch": [
+   "Army"
   ],
-  "buffer": {
-    "x": "6ae54af5b84259308bb1233c",
-    "instagram": "6ae54afbceb491e585d03ea8",
-    "threads": "6ae54affb84259308bb12835",
-    "facebook": "6ae54b041891472093aaf018",
-    "x_film": "6ae3fe93ba1ca51fd3ee6a3b",
-    "instagram_reel": "6ae3fe966385db216a1dadf6",
-    "threads_film": "6ae3fe99a83a7fb63c8d1ba3",
-    "facebook_film": "6ae3fe9cba1ca51fd3ee6c95",
-    "youtube": "6ae3fea1ba1ca51fd3ee6d0e",
-    "tiktok": "6ae3fea456e01b9763806e9a"
-  },
+  "nations": [
+   "Britain",
+   "Germany",
+   "Italy",
+   "Australia",
+   "New Zealand",
+   "India",
+   "South Africa"
+  ],
   "video": {
-    "footage": "footage/1942-11-04-alamein-retreat.mp4",
-    "focusX": 50,
-    "focusY": 50,
-    "sound": true,
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Desert_Victory_(1943).webm",
-    "note": "Desert Victory (1943), British Ministry of Information documentary with film shot by the Army Film and Photographic Unit; Crown copyright expired, public domain (PD-UKGov on Wikimedia Commons; 480p copy from Brian's Source Film folder). From the film's breakthrough section, which its narrator introduces at 44:37 to 44:53 ('the entire weight of their armour was in readiness... it sailed through the gap. Its purpose was simple, to destroy Rommel's armour'); the narrator is silent from 44:53 to 48:12, apart from a shouted 'Fire!' in the scene at 47:24, which is left out. Clip uses 45:49.65 to 45:53.25 (Grant tanks charging through smoke as a shell bursts), 47:18.80 to 47:21.35 (a tank racing forward in its own dust), 45:44.45 to 45:45.55 (two Shermans crossing the desert), 45:20.60 to 45:26.00 (a line of tanks rolling forward) and 45:40.20 to 45:41.90 (a tank passing toward the horizon). The film does not date each shot, so the caption says it shows the end of the battle. Left out: the shots of German officers with binoculars at 45:28 to 45:33 (captured enemy newsreel) and any shot under the narration. Sound: the film's own soundtrack under these shots (engines, shell bursts and gunfire; no narration by speech recognition, no music by spectrogram), cut with the picture and normalized to -16 LUFS.",
-    "hook": "Rommel retreated without waiting for Hitler."
+   "kind": "Living Card",
+   "opening": "combat or firing",
+   "sound": "period sound"
+  }
+ },
+ "focusX": 62,
+ "focusY": 40,
+ "zoom": 100,
+ "body": "Hitler's order was victory or death. Rommel chose neither.\n\n4 November 1942. The morning after Hitler ordered him to yield not a yard of ground, the British broke through at El Alamein. By early afternoon, Rommel wrote, enemy armour had burst a 19 kilometre hole in his front, and he had no reserves left.\n\nBy his own figures the Germans were down to 36 tanks, from 249 at the start of the battle. That same day the commander of the Afrika Korps, General Wilhelm Ritter von Thoma, surrendered to men of the 10th Hussars. Montgomery met him and later invited him to dinner.\n\nAt 5:30 p.m., Rommel ordered a general retreat without waiting for Hitler's reply. With little transport, much of the Italian infantry was left behind. About 30,000 Axis soldiers were taken prisoner in the battle.\n\nIt was the first great British land victory over the German army. On 15 November church bells rang across Britain, the first time most people had heard them in over two years.",
+ "addons": [
+  "If you had been in Rommel's place, would you have obeyed the order?"
+ ],
+ "hashtags": "#OnThisDay #WW2",
+ "threads": "Hitler's order was victory or death. Rommel chose neither.\n\n4 November 1942. The British broke through at El Alamein, and Rommel's Germans were down to 36 tanks. At 5:30 p.m. he ordered a retreat without waiting for Hitler's reply.\n\nThat day the captured Afrika Korps commander, von Thoma, met Montgomery.\n\nIf you had been in Rommel's place, would you have obeyed the order?",
+ "alt": "Archival photo of the captured German General Wilhelm von Thoma, in uniform with a scarf, standing beside Montgomery in a sweater outside a tent. Text: 4 NOV 1942, El Alamein, Egypt. Victory or death? Neither.",
+ "question": true,
+ "slides": [
+  {
+   "photo": "photos/1942-11-04-alamein-retreat-4.jpg",
+   "caption": "Churchill tanks of Kingforce in the desert, 5 November 1942, the day after the breakthrough.",
+   "credit": "No 1 AFPU, IWM E 18991, public domain.",
+   "alt": "Archival photo of two Churchill tanks in camouflage paint driving across sand, kicking up dust."
+  }
+ ],
+ "buffer": {
+  "x": "6ae54af5b84259308bb1233c",
+  "instagram": "6ae54afbceb491e585d03ea8",
+  "threads": "6ae54affb84259308bb12835",
+  "facebook": "6ae54b041891472093aaf018",
+  "x_film": "6ae3fe93ba1ca51fd3ee6a3b",
+  "instagram_reel": "6ae3fe966385db216a1dadf6",
+  "threads_film": "6ae3fe99a83a7fb63c8d1ba3",
+  "facebook_film": "6ae3fe9cba1ca51fd3ee6c95",
+  "youtube": "6ae3fea1ba1ca51fd3ee6d0e",
+  "tiktok": "6ae3fea456e01b9763806e9a"
+ },
+ "video": {
+  "footage": "footage/1942-11-04-alamein-retreat.mp4",
+  "focusX": 50,
+  "focusY": 50,
+  "sound": true,
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Desert_Victory_(1943).webm",
+  "note": "Desert Victory (1943), British Ministry of Information documentary with film shot by the Army Film and Photographic Unit; Crown copyright expired, public domain (PD-UKGov on Wikimedia Commons; 480p copy from Brian's Source Film folder). From the film's breakthrough section, which its narrator introduces at 44:37 to 44:53 ('the entire weight of their armour was in readiness... it sailed through the gap. Its purpose was simple, to destroy Rommel's armour'); the narrator is silent from 44:53 to 48:12, apart from a shouted 'Fire!' in the scene at 47:24, which is left out. Clip uses 45:49.65 to 45:53.25 (Grant tanks charging through smoke as a shell bursts), 47:18.80 to 47:21.35 (a tank racing forward in its own dust), 45:44.45 to 45:45.55 (two Shermans crossing the desert), 45:20.60 to 45:26.00 (a line of tanks rolling forward) and 45:40.20 to 45:41.90 (a tank passing toward the horizon). The film does not date each shot, so the caption says it shows the end of the battle. Left out: the shots of German officers with binoculars at 45:28 to 45:33 (captured enemy newsreel) and any shot under the narration. Sound: the film's own soundtrack under these shots (engines, shell bursts and gunfire; no narration by speech recognition, no music by spectrogram), cut with the picture and normalized to -16 LUFS.",
+  "hook": "Rommel retreated without waiting for Hitler."
+ },
+ "kit": {
+  "file": "kits/dispatch-037-kit.md",
+  "filmCaption": "Film from the end of the battle of El Alamein, November 1942, with the film's own sound: British tanks charging through the smoke and rolling west across the desert. On 4 November the British broke through, and Rommel ordered a general retreat without waiting for Hitler's reply. From the 1943 British documentary Desert Victory.",
+  "youtubeTitle": "Victory or Death? Rommel Retreats from El Alamein, 4 November 1942 #shorts",
+  "youtubeDescription": "On 3 November 1942, Hitler ordered Rommel to stand fast at El Alamein, to yield not a yard of ground, and to show his troops no other road than that to victory or death. Rommel wrote that the order demanded the impossible, but he obeyed and ordered his men to hold. On the morning of 4 November the British broke through, and by early afternoon, Rommel wrote, enemy armour had burst a 19 kilometre hole in his front. By his own figures the Germans were down to 36 tanks, from 249 at the start of the battle. That same day the Afrika Korps commander, General Wilhelm Ritter von Thoma, was captured. At 17:30 Rommel ordered a general retreat without waiting for Hitler's reply. Alamein was the first great British land victory over the German army.\n\nThis is real film from the end of the battle, shot by the British Army Film and Photographic Unit and used in the 1943 documentary Desert Victory: British tanks pushing through the smoke and heading west. The film does not date each shot, so these may not be from 4 November itself. The sound is the original soundtrack of the source film.\n\nFilm: Desert Victory (1943), British Ministry of Information, Army Film and Photographic Unit footage. Crown copyright expired, public domain (Wikimedia Commons).\nSources: Erwin Rommel on his Defeat in Africa, German History in Documents and Images; The End of the Beginning, National Army Museum; The Bright Gleam of Victory, International Churchill Society; Second Battle of El Alamein, Wikipedia.\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\n\n#Shorts #WW2 #OnThisDay #History",
+  "tiktokCaption": "Hitler said victory or death. Rommel chose retreat. Real film from El Alamein, November 1942. #WW2 #OnThisDay #History #ElAlamein #Rommel",
+  "thumbnailCheck": "Pass: first frame is a Grant tank and a second tank charging out of the smoke toward the camera; at 2 seconds a burst throws debris across the frame as they come on. Opening tagged \"combat or firing\" from the frames at 0.3 and 2 seconds.",
+  "videoTime": "12:00 America/Denver",
+  "scheduled": "Buffer, all six channels, noon 4 Nov"
+ },
+ "replacedStory": {
+  "video": "videos/dispatch-037-story-am_onyx.mp4",
+  "script": "stories/1942-11-04-alamein-retreat.json",
+  "voice": "am_onyx",
+  "speed": 0.95,
+  "time": "12:00",
+  "buffer": {
+   "x": "6ae3fe93ba1ca51fd3ee6a3b",
+   "instagram": "6ae3fe966385db216a1dadf6",
+   "threads": "6ae3fe99a83a7fb63c8d1ba3",
+   "facebook": "6ae3fe9cba1ca51fd3ee6c95",
+   "youtube": "6ae3fea1ba1ca51fd3ee6d0e",
+   "tiktok": "6ae3fea456e01b9763806e9a"
   },
   "kit": {
-    "file": "kits/dispatch-037-kit.md",
-    "filmCaption": "Film from the end of the battle of El Alamein, November 1942, with the film's own sound: British tanks charging through the smoke and rolling west across the desert. On 4 November the British broke through, and Rommel ordered a general retreat without waiting for Hitler's reply. From the 1943 British documentary Desert Victory.",
-    "youtubeTitle": "Victory or Death? Rommel Retreats from El Alamein, 4 November 1942 #shorts",
-    "youtubeDescription": "On 3 November 1942, Hitler ordered Rommel to stand fast at El Alamein, to yield not a yard of ground, and to show his troops no other road than that to victory or death. Rommel wrote that the order demanded the impossible, but he obeyed and ordered his men to hold. On the morning of 4 November the British broke through, and by early afternoon, Rommel wrote, enemy armour had burst a 19 kilometre hole in his front. By his own figures the Germans were down to 36 tanks, from 249 at the start of the battle. That same day the Afrika Korps commander, General Wilhelm Ritter von Thoma, was captured. At 17:30 Rommel ordered a general retreat without waiting for Hitler's reply. Alamein was the first great British land victory over the German army.\n\nThis is real film from the end of the battle, shot by the British Army Film and Photographic Unit and used in the 1943 documentary Desert Victory: British tanks pushing through the smoke and heading west. The film does not date each shot, so these may not be from 4 November itself. The sound is the original soundtrack of the source film.\n\nFilm: Desert Victory (1943), British Ministry of Information, Army Film and Photographic Unit footage. Crown copyright expired, public domain (Wikimedia Commons).\nSources: Erwin Rommel on his Defeat in Africa, German History in Documents and Images; The End of the Beginning, National Army Museum; The Bright Gleam of Victory, International Churchill Society; Second Battle of El Alamein, Wikipedia.\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\n\n#Shorts #WW2 #OnThisDay #History",
-    "tiktokCaption": "Hitler said victory or death. Rommel chose retreat. Real film from El Alamein, November 1942. #WW2 #OnThisDay #History #ElAlamein #Rommel",
-    "thumbnailCheck": "Pass: first frame is a Grant tank and a second tank charging out of the smoke toward the camera; at 2 seconds a burst throws debris across the frame as they come on. Opening tagged \"combat or firing\" from the frames at 0.3 and 2 seconds.",
-    "videoTime": "12:00 America/Denver",
-    "scheduled": "Buffer, all six channels, noon 4 Nov"
+   "caption": "Hitler's order: yield not a yard of ground, and show the troops no other road than that to victory or death.\n\nOn 4 November 1942 the British broke through at El Alamein, and Rommel ordered a general retreat without waiting for Hitler's reply.\n\nDispatch No. 037, the full story. Narration is AI generated; the photos are real archival images.",
+   "youtubeTitle": "Victory or Death? Rommel Retreats from El Alamein, 4 November 1942 #shorts",
+   "youtubeDescription": "Hitler's order: yield not a yard of ground, and show the troops no other road than that to victory or death.\n\nOn 4 November 1942 the British broke through at El Alamein, and Rommel ordered a general retreat without waiting for Hitler's reply.\n\nNarration is AI generated; the photos are real archival images.\n\nPhotos: Churchill III tanks of Kingforce, 1st Armoured Division, 5 November 1942, IWM E 18991; Montgomery in his Grant command tank, 5 November 1942, IWM E 18980; Montgomery with the captured General von Thoma, 4 November 1942, No 1 Army Film and Photographic Unit, IWM E 19130. All public domain.\nSources: Erwin Rommel on his Defeat in Africa, German History in Documents and Images; The End of the Beginning, National Army Museum; The Bright Gleam of Victory, International Churchill Society; Second Battle of El Alamein, Wikipedia.\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\n\n#Shorts #WW2 #OnThisDay #History",
+   "tiktokCaption": "Hitler said victory or death. Rommel chose retreat. El Alamein, 4 Nov 1942. Narration is AI generated. #WW2 #OnThisDay #History #ElAlamein #Rommel",
+   "schedule": [
+    "12:00 p.m. Mountain, Wed 4 Nov 2026, all six channels in Buffer",
+    "X and Facebook end #OTD #WW2 #OnThisDay #History #ElAlamein; Instagram ends #WW2 #OnThisDay #History #ElAlamein; Threads has no tags (History Threads topic)",
+    "Flagged AI generated on X, Instagram, TikTok, and YouTube; Facebook as a Reel; Instagram and TikTok cover at 1.5 s"
+   ],
+   "thumbnail": "Opens on Churchill tanks of Kingforce kicking up dust across the desert, 5 November 1942.",
+   "scheduled": "Buffer, all six channels, noon 4 Nov"
   },
-  "replacedStory": {
-    "video": "videos/dispatch-037-story-am_onyx.mp4",
-    "script": "stories/1942-11-04-alamein-retreat.json",
-    "voice": "am_onyx",
-    "speed": 0.95,
-    "time": "12:00",
-    "buffer": {
-      "x": "6ae3fe93ba1ca51fd3ee6a3b",
-      "instagram": "6ae3fe966385db216a1dadf6",
-      "threads": "6ae3fe99a83a7fb63c8d1ba3",
-      "facebook": "6ae3fe9cba1ca51fd3ee6c95",
-      "youtube": "6ae3fea1ba1ca51fd3ee6d0e",
-      "tiktok": "6ae3fea456e01b9763806e9a"
-    },
-    "kit": {
-      "caption": "Hitler's order: yield not a yard of ground, and show the troops no other road than that to victory or death.\n\nOn 4 November 1942 the British broke through at El Alamein, and Rommel ordered a general retreat without waiting for Hitler's reply.\n\nDispatch No. 037, the full story. Narration is AI generated; the photos are real archival images.",
-      "youtubeTitle": "Victory or Death? Rommel Retreats from El Alamein, 4 November 1942 #shorts",
-      "youtubeDescription": "Hitler's order: yield not a yard of ground, and show the troops no other road than that to victory or death.\n\nOn 4 November 1942 the British broke through at El Alamein, and Rommel ordered a general retreat without waiting for Hitler's reply.\n\nNarration is AI generated; the photos are real archival images.\n\nPhotos: Churchill III tanks of Kingforce, 1st Armoured Division, 5 November 1942, IWM E 18991; Montgomery in his Grant command tank, 5 November 1942, IWM E 18980; Montgomery with the captured General von Thoma, 4 November 1942, No 1 Army Film and Photographic Unit, IWM E 19130. All public domain.\nSources: Erwin Rommel on his Defeat in Africa, German History in Documents and Images; The End of the Beginning, National Army Museum; The Bright Gleam of Victory, International Churchill Society; Second Battle of El Alamein, Wikipedia.\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\n\n#Shorts #WW2 #OnThisDay #History",
-      "tiktokCaption": "Hitler said victory or death. Rommel chose retreat. El Alamein, 4 Nov 1942. Narration is AI generated. #WW2 #OnThisDay #History #ElAlamein #Rommel",
-      "schedule": [
-        "12:00 p.m. Mountain, Wed 4 Nov 2026, all six channels in Buffer",
-        "X and Facebook end #OTD #WW2 #OnThisDay #History #ElAlamein; Instagram ends #WW2 #OnThisDay #History #ElAlamein; Threads has no tags (History Threads topic)",
-        "Flagged AI generated on X, Instagram, TikTok, and YouTube; Facebook as a Reel; Instagram and TikTok cover at 1.5 s"
-      ],
-      "thumbnail": "Opens on Churchill tanks of Kingforce kicking up dust across the desert, 5 November 1942.",
-      "scheduled": "Buffer, all six channels, noon 4 Nov"
-    },
-    "replacedOn": "2026-10-31: replaced by a Living Card at Brian's request (he prefers Living Cards over Story Cards); the noon Buffer posts were switched to the film",
-    "buffer_note": "These Buffer posts were edited in place on 31 Oct 2026 to carry the Living Card; the ids now live under buffer as the film keys."
-  },
-  "game": {
-    "value": null,
-    "branches": []
-  }
+  "replacedOn": "2026-10-31: replaced by a Living Card at Brian's request (he prefers Living Cards over Story Cards); the noon Buffer posts were switched to the film",
+  "buffer_note": "These Buffer posts were edited in place on 31 Oct 2026 to carry the Living Card; the ids now live under buffer as the film keys."
+ },
+ "game": {
+  "value": null,
+  "branches": []
+ },
+ "links": {
+  "x": "https://x.com/ww2dispatches/status/2117996447995965825",
+  "instagram": "https://www.instagram.com/p/DfUvgJXFGjb/",
+  "threads": "https://www.threads.com/@ww2dispatches/post/DfUvJAOEZar",
+  "facebook": "https://www.facebook.com/122101493613512139/posts/122112195063512139",
+  "x_film": "https://x.com/ww2dispatches/status/2118056839614955779",
+  "instagram_reel": "https://www.instagram.com/reel/DfVKuORlSPw/",
+  "threads_film": "https://www.threads.com/@ww2dispatches/post/DfVKmzmxcmj",
+  "facebook_film": "https://www.facebook.com/reel/1308706814683366/",
+  "youtube": "https://www.youtube.com/shorts/fumZoB4QSR8",
+  "tiktok": "https://www.tiktok.com/@ww2dispatches/video/7704394131769953549?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
+  "posted": "2026-11-04"
+ }
 }
