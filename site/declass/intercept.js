@@ -249,8 +249,8 @@
   // ---------- the guided first puzzle ----------
   const GUIDE = [
     ['Four hidden links', 'These twelve files hide four links. Each link joins exactly three of them: a ship, a battle, a person, something in the photos.'],
-    ['File three at a time', 'Tap three files you think belong together, then tap File it. Right, and they\'re clipped together with the link.'],
-    ['Three mistakes', 'A wrong guess gets a REJECTED stamp, and three stamps close the files. The date and series on a card are never the link. Tap and hold a card to see it full size.'],
+    ['File three at a time', 'Tap three files you think belong together, then tap File it. Right, and they\'re clipped together with the link. Tap and hold a card to see it full size.'],
+    ['Three mistakes', 'A wrong guess gets a REJECTED stamp, and three stamps close the files. The date and series on a card are never the link.'],
   ];
   function maybeGuide() {
     if (D().seen('icpGuide')) return;
