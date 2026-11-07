@@ -1,0 +1,477 @@
+{
+ "format": 1,
+ "id": "1940-08-battle-of-britain",
+ "title": "Their Finest Hour: The Battle of Britain",
+ "month": 8,
+ "year": 1940,
+ "side": "allied",
+ "council": "THE WAR CABINET ADVISES",
+ "table": "fighter_command_plot",
+ "startResolve": 10,
+ "chapters": [
+  {
+   "n": 1,
+   "name": "The Channel Battle",
+   "opens": "08-01",
+   "branches": [
+    "air"
+   ],
+   "twist": null,
+   "intro": "July and early August 1940. The Luftwaffe is hunting British convoys in the Channel, trying to draw Fighter Command up to fight over the sea. Three days will test it: a convoy forcing the Channel, the biggest raid yet on Portland, and the first blows against the radar chain. In real history, Britain came through the Channel battle at a Resolve of 6. That is the mark to beat.",
+   "calm": {
+    "rounds": 2,
+    "text": "Little British shipping is moving through the Channel, and the Luftwaffe is quiet."
+   },
+   "benchmark": 6,
+   "sweep": {
+    "every": 4,
+    "unit": {
+     "id": "bf109_sweep",
+     "name": "Bf 109 sweep",
+     "piece": "bf109",
+     "strength": 2,
+     "script": [
+      1
+     ],
+     "escort": true
+    }
+   },
+   "waves": [
+    {
+     "date": "1940-08-08",
+     "name": "Convoy Peewit",
+     "benchmark": 8,
+     "units": [
+      {
+       "id": "bf109_escort",
+       "name": "Bf 109 escort",
+       "piece": "bf109",
+       "strength": 2,
+       "script": [
+        1
+       ],
+       "escort": true
+      },
+      {
+       "id": "ju87_convoy",
+       "name": "Ju 87 Stukas over the convoy",
+       "piece": "ju87",
+       "strength": 3,
+       "script": [
+        2,
+        1
+       ]
+      }
+     ],
+     "reinforcements": [],
+     "debrief": "About twenty colliers of Convoy CW9, codenamed Peewit, slipped west through the Strait of Dover in the night. E boats struck before dawn, and by day waves of Stukas with fighter cover dived on the ships off the Isle of Wight, in the heaviest fighting over the Channel yet. Only four of the merchant ships reached Swanage undamaged, and the Air Ministry at first counted this day as the start of the Battle of Britain.",
+     "compare": "The convoys were in trouble, but Fighter Command was holding firm."
+    },
+    {
+     "date": "1940-08-11",
+     "name": "Portland",
+     "benchmark": 7,
+     "units": [
+      {
+       "id": "bf110_escort",
+       "name": "Bf 110 escort",
+       "piece": "bf110",
+       "strength": 3,
+       "script": [
+        2
+       ],
+       "escort": true
+      },
+      {
+       "id": "ju88_portland",
+       "name": "Ju 88s over Portland",
+       "piece": "ju88",
+       "strength": 4,
+       "script": [
+        0,
+        5,
+        2
+       ]
+      }
+     ],
+     "reinforcements": [
+      {
+       "after": 3,
+       "unit": {
+        "id": "he111",
+        "name": "He 111 bombers",
+        "piece": "he111",
+        "strength": 4,
+        "script": [
+         2,
+         2
+        ]
+       }
+      }
+     ],
+     "debrief": "Radar at Ventnor picked up the largest German formation yet sent against Britain: Ju 88s and He 111s with a heavy fighter escort, bound for the naval base at Portland. Squadrons from two fighter groups met it, and the fighting ran over Portland and back across the Channel. It was one of the costliest days of the battle for Fighter Command's pilots.",
+     "compare": "Portland cost Fighter Command dearly."
+    },
+    {
+     "date": "1940-08-12",
+     "name": "The radar stations",
+     "benchmark": 6,
+     "units": [
+      {
+       "id": "bf109_escort",
+       "name": "Bf 109 escort",
+       "piece": "bf109",
+       "strength": 3,
+       "script": [
+        2,
+        2
+       ],
+       "escort": true
+      },
+      {
+       "id": "epgr210",
+       "name": "Erprobungsgruppe 210 fighter bombers",
+       "piece": "bf110",
+       "strength": 4,
+       "script": [
+        3,
+        3
+       ]
+      }
+     ],
+     "reinforcements": [
+      {
+       "after": 3,
+       "unit": {
+        "id": "ju88_ventnor",
+        "name": "Ju 88s over Ventnor",
+        "piece": "ju88",
+        "strength": 4,
+        "script": [
+         0,
+         5,
+         2
+        ]
+       }
+      }
+     ],
+     "debrief": "On the eve of Eagle Day, the fighter bombers of Erprobungsgruppe 210 came in low against the radar stations at Dover, Rye, Pevensey, and Dunkirk, while bombers struck the coastal airfields at Manston, Lympne, and Hawkinge. A raid on Portsmouth sent Ju 88s diving on the radar station at Ventnor, which stayed off the air until a new station opened on 23 August. The others were working again by the next morning: Fighter Command could still see what was coming.",
+     "compare": "The radar chain had taken its first blows."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "name": "Eagle Day to the Hardest Day",
+   "opens": "08-11",
+   "branches": [
+    "air"
+   ],
+   "twist": null,
+   "intro": "Mid August 1940. Eagle Day: the Luftwaffe opens its main assault on Fighter Command, three dates in one fight. In real history, Britain came through these raids at a Resolve of 4. That is the mark to beat.",
+   "calm": {
+    "rounds": 2,
+    "text": "The Luftwaffe is still forming up over France."
+   },
+   "benchmark": 4,
+   "sweep": {
+    "every": 4,
+    "unit": {
+     "id": "bf109_sweep",
+     "name": "Bf 109 sweep",
+     "piece": "bf109",
+     "strength": 2,
+     "script": [
+      1
+     ],
+     "escort": true
+    }
+   },
+   "waves": [
+    {
+     "date": "1940-08-13",
+     "name": "Adlertag",
+     "benchmark": 8,
+     "units": [
+      {
+       "id": "bf109_escort",
+       "name": "Bf 109 escort",
+       "piece": "bf109",
+       "strength": 3,
+       "script": [
+        1,
+        1
+       ],
+       "escort": true
+      },
+      {
+       "id": "ju87",
+       "name": "Ju 87 Stukas",
+       "piece": "ju87",
+       "strength": 3,
+       "script": [
+        2,
+        2
+       ]
+      }
+     ],
+     "reinforcements": [],
+     "debrief": "Eagle Day opened the Luftwaffe's main assault on Fighter Command. A recall order reached the escort fighters but not the bombers, so some flew on alone, and the day's attacks on the airfields did far less harm than the Luftwaffe believed.",
+     "compare": "Fighter Command met Eagle Day intact."
+    },
+    {
+     "date": "1940-08-15",
+     "name": "The Luftwaffe's biggest day",
+     "benchmark": 6,
+     "units": [
+      {
+       "id": "bf110_escort",
+       "name": "Bf 110 escort",
+       "piece": "bf110",
+       "strength": 4,
+       "script": [
+        2
+       ],
+       "escort": true
+      },
+      {
+       "id": "he111_norway",
+       "name": "He 111s from Norway",
+       "piece": "he111",
+       "strength": 4,
+       "script": [
+        0,
+        5,
+        2
+       ]
+      }
+     ],
+     "reinforcements": [
+      {
+       "after": 3,
+       "unit": {
+        "id": "ju88",
+        "name": "Ju 88 bombers",
+        "piece": "ju88",
+        "strength": 4,
+        "script": [
+         2,
+         2
+        ]
+       }
+      }
+     ],
+     "debrief": "The Luftwaffe flew more sorties than on any other day of the battle, including raids from Norway and Denmark on the north of England, which it believed was left undefended. Fighter squadrons rested in the north were waiting, and the raids were turned back. The Luftwaffe's crews remembered it as Black Thursday.",
+     "compare": "By 15 August Fighter Command was stretched thin."
+    },
+    {
+     "date": "1940-08-18",
+     "name": "The Hardest Day",
+     "benchmark": 4,
+     "units": [
+      {
+       "id": "bf109_escort",
+       "name": "Bf 109 escort",
+       "piece": "bf109",
+       "strength": 4,
+       "script": [
+        2,
+        4
+       ],
+       "escort": true
+      },
+      {
+       "id": "do17_kenley",
+       "name": "Do 17 low level raid",
+       "piece": "do17",
+       "strength": 5,
+       "script": [
+        0,
+        7,
+        2
+       ]
+      }
+     ],
+     "reinforcements": [
+      {
+       "after": 3,
+       "unit": {
+        "id": "ju87",
+        "name": "Ju 87 Stukas",
+        "piece": "ju87",
+        "strength": 4,
+        "script": [
+         4,
+         4
+        ]
+       }
+      }
+     ],
+     "debrief": "Both sides lost more aircraft than on any other day of the battle. A low level raid wrecked Kenley airfield, and the slow Stuka dive bombers suffered so badly that they were withdrawn from the battle over Britain.",
+     "compare": "Fighter Command had come through the Hardest Day."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "name": "The sector airfields",
+   "opens": "08-21",
+   "branches": [
+    "air"
+   ],
+   "twist": {
+    "id": "airfield_raids",
+    "name": "Airfield raids",
+    "text": "Raiders with the airfield tag go for your bases. If one is not blocked, its full attack hits your Resolve, and your Rearming machine with the most armor loses that much armor too, never below 1."
+   },
+   "intro": "Late August 1940. The Luftwaffe turns its full weight on the sector stations that guide Fighter Command's battle: Biggin Hill, Hornchurch, North Weald, Kenley. Every raid now aims at the airfields themselves, and aircraft caught on the ground are targets too. In real history, Britain came through these raids at a Resolve of 3. That is the mark to beat.",
+   "calm": {
+    "rounds": 2,
+    "text": "Cloud and rain keep the Luftwaffe to scattered raids while it plans the next blow."
+   },
+   "benchmark": 3,
+   "sweep": {
+    "every": 4,
+    "unit": {
+     "id": "bf109_sweep",
+     "name": "Bf 109 sweep",
+     "piece": "bf109",
+     "strength": 2,
+     "script": [
+      1
+     ],
+     "escort": true
+    }
+   },
+   "waves": [
+    {
+     "date": "1940-08-24",
+     "name": "Manston",
+     "benchmark": 7,
+     "units": [
+      {
+       "id": "bf109_escort",
+       "name": "Bf 109 escort",
+       "piece": "bf109",
+       "strength": 3,
+       "script": [
+        1,
+        1
+       ],
+       "escort": true
+      },
+      {
+       "id": "do17_manston",
+       "name": "Do 17s over Manston",
+       "piece": "do17",
+       "strength": 3,
+       "script": [
+        2,
+        2
+       ],
+       "airfield": true
+      }
+     ],
+     "reinforcements": [],
+     "debrief": "Göring ordered fresh, relentless attacks on Fighter Command's airfields. Repeated raids left Manston, the forward airfield on the Kent coast, unusable, and its squadrons pulled back, while Hornchurch and North Weald were bombed but kept flying. That night bombs fell on London, which was not among the intended targets, and the next night the RAF bombed Berlin.",
+     "compare": "Manston was lost, but the sector stations held."
+    },
+    {
+     "date": "1940-08-30",
+     "name": "Biggin Hill",
+     "benchmark": 5,
+     "units": [
+      {
+       "id": "bf110_escort",
+       "name": "Bf 110 escort",
+       "piece": "bf110",
+       "strength": 4,
+       "script": [
+        2,
+        2
+       ],
+       "escort": true
+      },
+      {
+       "id": "ju88_biggin",
+       "name": "Ju 88s low over Biggin Hill",
+       "piece": "ju88",
+       "strength": 5,
+       "script": [
+        0,
+        6,
+        2
+       ],
+       "airfield": true
+      }
+     ],
+     "reinforcements": [
+      {
+       "after": 3,
+       "unit": {
+        "id": "he111",
+        "name": "He 111 bombers",
+        "piece": "he111",
+        "strength": 4,
+        "script": [
+         3,
+         3
+        ]
+       }
+      }
+     ],
+     "debrief": "The Luftwaffe sent smaller raids every 20 to 30 minutes to wear the defenders down, and Fighter Command flew 1,054 sorties, its most in a single day yet. A small force of Ju 88s came in low over Biggin Hill and wrecked much of the station, cutting its power, its water, and the telephone lines to the operations rooms.",
+     "compare": "Biggin Hill was battered."
+    },
+    {
+     "date": "1940-08-31",
+     "name": "Fighter Command's heaviest losses",
+     "benchmark": 3,
+     "units": [
+      {
+       "id": "bf109_escort",
+       "name": "Bf 109 escort",
+       "piece": "bf109",
+       "strength": 4,
+       "script": [
+        2,
+        4
+       ],
+       "escort": true
+      },
+      {
+       "id": "do17_hornchurch",
+       "name": "Do 17s over Hornchurch",
+       "piece": "do17",
+       "strength": 5,
+       "script": [
+        4,
+        4
+       ],
+       "airfield": true
+      }
+     ],
+     "reinforcements": [
+      {
+       "after": 3,
+       "unit": {
+        "id": "ju88_biggin2",
+        "name": "Ju 88s over Biggin Hill",
+        "piece": "ju88",
+        "strength": 5,
+        "script": [
+         0,
+         7,
+         2
+        ],
+        "airfield": true
+       }
+      }
+     ],
+     "debrief": "Fighter Command suffered its heaviest losses of the whole battle. Hornchurch took its worst hammering of the war, with Spitfires caught as they took off, and a low raid on Biggin Hill wrecked its operations room. Both stations were working again the next morning: the sector airfields bent, but they did not break.",
+     "compare": "Fighter Command was stretched to its limit."
+    }
+   ]
+  }
+ ]
+}

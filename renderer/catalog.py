@@ -104,12 +104,14 @@ def merge_tags(card, record):
 # nothing in Declass shows it, and the server never sends it to the page until the seal reveal.
 #   value     1 to 7 on the card number ladder; empty for postwar, noPlay, and Name This cards
 #   branches  any of land, sea, air (Battle Lines and Blueprint)
-#   role      operation, machine, rally, or ally; Flash cards only (every other card's role is its series)
+#   role      operation, machine, rally, or statecraft; Flash cards only (every other card's role is its series).
+#             "ally" was the Statecraft role until allies were dropped on 5 Nov 2026.
 #   noPlay    true for a card that can never be played (atrocities and their victims)
-#   keyword   one name from the keyword library; Statecraft only
+#   keyword   lend, backchannel, ultimatum, or evac; Statecraft cards and Flash cards whose role is statecraft
 # The cards repo is public, so the real scores stay out of these records until the reveal; any filled
 # in early is flagged below so it can be taken back out.
-BRANCHES, ROLES = ("land", "sea", "air"), ("operation", "machine", "rally", "ally")
+BRANCHES, ROLES = ("land", "sea", "air"), ("operation", "machine", "rally", "statecraft")
+KEYWORDS = ("lend", "backchannel", "ultimatum", "evac")
 game_early = []
 
 
@@ -121,7 +123,8 @@ def game(record, series, label):
         "branches": [b for b in BRANCHES if b in as_list(g.get("branches"))],
         "role": g.get("role") if series == "flash" and g.get("role") in ROLES else None,
         "noPlay": bool(g.get("noPlay")),
-        "keyword": (g.get("keyword") or None) if series == "state" else None,
+        "keyword": g.get("keyword") if g.get("keyword") in KEYWORDS and (
+            series == "state" or (series == "flash" and g.get("role") == "statecraft")) else None,
     }
     if out["value"] or out["branches"] or out["role"] or out["noPlay"] or out["keyword"]:
         game_early.append(label)
