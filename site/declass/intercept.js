@@ -80,13 +80,15 @@
   const mag = '<span class="zoomb" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M15 15l5 5" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg></span>';
   const clip = '<svg class="pclip" viewBox="0 0 24 60" aria-hidden="true"><path d="M8 40V12a5 5 0 0 1 10 0v34a8 8 0 0 1-16 0V16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>';
   // The board shows tiles made for the puzzle (decided 7 Nov 2026, concept D): the card's original photo
-  // and a typed label (title, year, place), so the subject reads at a glance on a phone. The magnifier
-  // opens the full card; the result screen and the pick show the full cards.
-  const tileLine = inf => [String(inf.date || '').slice(0, 4), String(inf.place || '').split(' · ')[0]].filter(Boolean).join(' · ');
+  // and a typed label, so the subject reads at a glance on a phone. The label is the title and the year
+  // only: the place gave links away (Brian, 7 Nov), and it stays on the full card behind the magnifier.
+  // The label shows at once and the photo fades in when it arrives. The result screen and the pick show
+  // the full cards.
+  const tileLine = inf => String(inf.date || '').slice(0, 4);
   function fileHTML(i, extra) {
     const c = P.cards[i], inf = info(c.id) || {};
     const label = inf.tileLabel || inf.short || 'File';
-    return `<button class="icpcard tile${sel.includes(i) ? ' sel' : ''}${extra || ''}" data-i="${i}" type="button" aria-pressed="${sel.includes(i)}" aria-label="${esc(label)}, ${esc(tileLine(inf))}"><img src="${esc(inf.tilePhoto || inf.img || '')}" data-fallback="${esc(inf.img || '')}" alt="" draggable="false" loading="eager"><span class="tl"><b>${esc(label)}</b><small>${esc(tileLine(inf))}</small></span>${mag}</button>`;
+    return `<button class="icpcard tile${sel.includes(i) ? ' sel' : ''}${extra || ''}" data-i="${i}" type="button" aria-pressed="${sel.includes(i)}" aria-label="${esc(label)}, ${esc(tileLine(inf))}"><span class="tp"><img src="${esc(inf.tilePhoto || inf.img || '')}" data-fallback="${esc(inf.img || '')}" alt="" draggable="false" loading="eager"></span><span class="tl"><b>${esc(label)}</b><small>${esc(tileLine(inf))}</small></span>${mag}</button>`;
   }
   // During play a found group is a slim row (three small cards and the link) so it doesn't push the open
   // files down the screen; the result screen shows the full clipped groups (7 Nov 2026).
@@ -190,8 +192,13 @@
 
   function wire() {
     document.querySelectorAll('#icpDesk .icpcard').forEach(b => holdable(b, () => toggle(Number(b.dataset.i), b)));
-    // A tile photo not on GitHub yet falls back to the full card image.
-    document.querySelectorAll('#icpDesk .icpcard.tile img[data-fallback]').forEach(im => im.addEventListener('error', () => { if (im.dataset.fallback && im.src !== im.dataset.fallback) im.src = im.dataset.fallback; }, { once: true }));
+    // Each tile photo fades in once it arrives (instantly if the phone already has it); one that fails
+    // falls back to the full card image.
+    document.querySelectorAll('.icpcard.tile img, .icprow .gcard img').forEach(im => {
+      const shown = () => im.classList.add('ok');
+      if (im.complete && im.naturalWidth) shown(); else im.addEventListener('load', shown, { once: true });
+      if (im.dataset.fallback) im.addEventListener('error', () => { if (im.src !== im.dataset.fallback) im.src = im.dataset.fallback; }, { once: true });
+    });
     document.querySelectorAll('.icpgroup .gcard, .icprow .gcard').forEach(b => holdable(b, () => zoom(b)));
     document.querySelectorAll('#icpPick .nopick').forEach(b => holdable(b, () => {}));
     const f = $('icpFile'); if (f) f.onclick = fileIt;

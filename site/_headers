@@ -3,3 +3,8 @@
   Cache-Control: no-cache
 /declass
   Cache-Control: no-cache
+# Code Room tile photos (7 Nov 2026): each address carries a version tag that changes when the photo
+# does, so phones may keep them for a year and a returning card shows instantly.
+/declass/tiles/*
+  ! Cache-Control
+  Cache-Control: public, max-age=31536000, immutable

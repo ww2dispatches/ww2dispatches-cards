@@ -55,7 +55,7 @@ if (prune) {
     const k = String(c.tileLabel || c.short || '').trim().toLowerCase();
     if (!byLabel.has(k)) byLabel.set(k, []);
     byLabel.get(k).push(c.id);
-    if (!c.tilePhoto) err(c.id + ': no tile photo (its record needs a "photo" file)');
+    if (!c.tilePhoto) err(c.id + ': no tile photo (its record needs a "photo" file, then run python3 renderer/catalog.py)');
   }
   for (const [k, list] of byLabel) if (list.length > 1) err(`tile label "${k}" is shared by ${list.join(', ')}: give one a "tile" label in its record`);
 }

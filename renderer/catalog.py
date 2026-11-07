@@ -43,16 +43,19 @@ def card_url(rel):
 
 # Code Room tiles (7 Nov 2026): the board shows each card's original photo with a typed label, not the
 # finished card, so the subject reads at a glance on a phone. The photo comes from the record's "photo"
-# file (research downloads it for every card), shrunk to a light tile copy in tiles/ so twelve load fast.
-# The label is the short name, or the record's "tile" when two cards would otherwise share a name.
-TILE_MAX = 640
+# file (research downloads it for every card), shrunk to a light tile copy so twelve load fast. The copies
+# live in site/declass/tiles/ and are served by ww2dispatches.com itself (7 Nov 2026: faster than a second
+# host, and they deploy with the catalog that names them). The label is the short name, or the record's
+# "tile" when two cards would otherwise share a name.
+TILE_MAX = 400
+TILE_DIR = "site/declass/tiles"
 
 
 def tile_photo(record, card_id):
     src = record.get("photo")
     if not src or not os.path.exists(os.path.join(root, src)):
         return None
-    rel = f"tiles/{card_id}.jpg"
+    rel = f"{TILE_DIR}/{card_id}.jpg"
     out = os.path.join(root, rel)
     if not os.path.exists(out) or os.path.getmtime(out) < os.path.getmtime(os.path.join(root, src)):
         try:
@@ -60,11 +63,12 @@ def tile_photo(record, card_id):
             im = ImageOps.exif_transpose(Image.open(os.path.join(root, src))).convert("RGB")
             im.thumbnail((TILE_MAX, TILE_MAX))
             os.makedirs(os.path.dirname(out), exist_ok=True)
-            im.save(out, "JPEG", quality=78, optimize=True, progressive=True)
+            im.save(out, "JPEG", quality=74, optimize=True, progressive=True)
         except Exception as e:  # no Pillow or a bad file: the board falls back to the card image
             print(f"catalog.py: no tile photo for {card_id}: {e}")
             return None
-    return card_url(rel)
+    v = hashlib.sha1(open(out, "rb").read()).hexdigest()[:8]
+    return f"/declass/tiles/{card_id}.jpg?v={v}"
 
 
 def utc(day, hhmm):
