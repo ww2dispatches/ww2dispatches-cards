@@ -375,7 +375,7 @@
           b => { if (!e.opened) guard(b, () => pick(e)); }, 'fm-comm'));
       }
       if (!p.starterDone) {
-        files.appendChild(slotButton('starter ' + (locked ? 'locked' : 'live'), 'Starter pack', 'Five cards, free: today\'s dispatch and one from each series',
+        files.appendChild(slotButton('starter ' + (locked ? 'locked' : 'live'), 'Starter pack', 'Five cards: today\'s dispatch and one from each series',
           b => guard(b, () => pick({ kind: 'starter' })), 'fm-starter'));
       }
       if (ST.priority > 0) {

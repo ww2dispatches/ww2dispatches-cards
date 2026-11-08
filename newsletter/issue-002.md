@@ -142,6 +142,6 @@ Each morning brought a new dispatch. Catch up on any you missed:
 
 Thank you for reading the Weekly Dispatch. Every Sunday we pick the most remarkable story from the week's dates and tell it in full. Next week brings the anniversaries of Operation Torch and the sinking of the Tirpitz.
 
-**One more thing.** On Veterans Day, Wednesday 11 November, we open **Declass**, a free card collecting game built from these dispatches. Every story we post becomes a card you can collect, in finishes from Copper to Top Secret, and your first pack of five is free. It opens at [ww2dispatches.com/declass](https://ww2dispatches.com/declass).
+**One more thing.** On Veterans Day, Wednesday 11 November, we open **Declass**, a free card collecting game built from these dispatches. Every story we post becomes a card you can collect, in finishes from Copper to Top Secret. It opens at [ww2dispatches.com/declass](https://ww2dispatches.com/declass).
 
 *WW2 Dispatches*

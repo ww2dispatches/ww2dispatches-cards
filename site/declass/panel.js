@@ -32,7 +32,7 @@
       var p = s.player, next = s.next ? 'Next file ' + at(s.next) + '.' : '';
       if (!p && !hasStarter) {
         return set('waiting', 'FREE TO PLAY', 'Open your first file',
-          'A sealed file comes with every dispatch we post. Collect the cards. Your first pack of five is free.', 'Play free');
+          'A sealed file comes with every dispatch we post. Collect the cards and build your dossier of the war.', 'Play free');
       }
       if (!p) return set('waiting', 'PLAY', 'File waiting', 'Sign in to open it and keep your streak.', 'Sign in to open it');
       var ready = s.envelopes.filter(function (e) { return !e.opened; });
