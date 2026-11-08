@@ -1,6 +1,6 @@
 # WW2 Dispatches: Film Library
 
-What film we already have, exactly where the usable shots are, and where to look for more. **The Wednesday research run checks this doc before every film hunt** (Research doc), the Thursday video run uses its times to cut, and Claude in the Project uses it to cut `needs brian` Living Cards from Source Film. The rules for turning film into videos are in the Videos doc.
+What film we already have, exactly where the usable shots are, and where to look for more. **The Wednesday research run checks this doc before every film hunt** (Research doc), the Thursday video runs (noon and evening) use its times to cut, and Claude in the Project uses it to cut `needs brian` Living Cards from Source Film. The rules for turning film into videos are in the Videos doc.
 
 Every film here has a full index in its own Project doc under `claude/film-index/` (sequence by sequence, best shots with exact times, dates it can serve, and what not to use). Copies of the indexes are also in Brian's WW2 Dispatches\Film Library folder. This doc is the summary and the calendar.
 
@@ -14,7 +14,7 @@ Every film here has a full index in its own Project doc under `claude/film-index
 4. **Mind the timeline.** Each index says which copy its times use (the Source Film file, or the NARA reel, "R3 01:01" meaning Reel 3 at 1 min 1 s). Times in another copy of the same film will drift.
 5. **Sound:** these films carry narration and score over almost everything, so **every clip runs silent by default.** The few natural sound stretches are listed per film; they were found with spectrograms, so listen before keeping any sound (Videos doc, Living Cards).
 6. **Caption honestly:** say whose camera it was when it isn't American ("Soviet film of the Ladoga ice road", "Japanese Navy film of the launch"), and say so when the film is from a few days around the event (the Aachen rule). Never caption a composite or generic shot as one dated event.
-7. **Lens:** the Axis and Eastern Front floors (Research doc, lens mix) lean on this library. Soviet films serve the Eastern Front; captured Japanese film, the German side pack, the German military packs (Cologne, Brest, the Ruhr prisoners, German leaders in custody, the U-boat surrenders, the Me 262 jets), Trophies of Great Battles, and the Me 262 film serve Axis lens cards.
+7. **Lens:** the daily 2:30 p.m. Axis card and its film (Research doc, "Picking the events" and the 7 p.m. video order) lean on this library, and so does any Eastern Front story. Soviet films serve the Eastern Front; captured Japanese film, the German side pack, the German military packs (Cologne, Brest, the Ruhr prisoners, German leaders in custody, the U-boat surrenders, the Me 262 jets), Trophies of Great Battles, and the Me 262 film serve Axis lens cards.
 
 ## On hand
 **American and British films**
@@ -422,6 +422,7 @@ When research or a Project chat finds a film worth keeping (one that covers seve
 5. Add the film to "On hand" and its dates to the Calendar here, and log it below.
 
 ## Changelog
+* 7 Nov 2026 (night): How to use it, item 7, now points to the daily 2:30 p.m. Axis card and the 7 p.m. video order instead of the retired Axis and Eastern Front floors. The Thursday video runs (noon and evening) both cut from this library.
 * 6 Nov 2026 (later): Indexed 28 NARA reels showing the German military on Allied film as 17 index docs, with no German newsreel: Cologne (5 reels), Brest, the Seine crossing, Aachen, German prisoners 1945 (Ruhr pocket, Müden, Roetgen), Tunisia 1943, the Tiger wrecks near Massa Marittima, Remagen, the Reims surrender, German leaders in custody (Goering, Kesselring), the Innsbruck Me 262s, USAAF Fighter Kills gun camera, the White Sands V-2, five U-boat surrender reels (U-858, U-873, U-805), and the Siegfried Line. Added them to On hand, the Calendar and Any date. Round two leads in `german-military-allied-film-leads.md`.
 * 6 Nov 2026: Cloud copies now go to `footage/` on Cloudflare R2 through `renderer/media.py` instead of the videos repo (Media Move doc). This doc now also has a copy in `docs/` in the cards repo, so the scheduled runs can read it; the film indexes stay Project only for now.
 * 5 Nov 2026: Indexed 21 more NARA reels as 16 index docs: The Battle of Britain, The Enemy Strikes and two Bulge Signal Corps reels, Pearl Harbor damage, Nine War Gods, the Missouri surrender, Anzio, Cassino, Yalta (5 reels), Potsdam (4), U-505 (2), Okinawa (2), San Francisco 1945, two Tarawa Navy reels, the Wake and Santa Cruz reel, and the Movietone Pearl Harbor reel (not usable). Found the Australian War Memorial as a public domain Commonwealth source. River Plate has no free film. To the Shores of Iwo Jima still to finish.
