@@ -44,6 +44,20 @@
     if (url.searchParams.get('ceremony') === 'demo') { ceremonyDemo = true; url.searchParams.delete('ceremony'); history.replaceState(null, '', url.pathname + url.search + url.hash); }
   } catch (e) {}
 
+  // Staged starter pack for the launch video (8 Nov 2026): ?demo=45c,39g,31s,10c,7c plays the starter pack with
+  // these cards in this order (number plus c, s, or g for the finish). Page only: the server is never asked, and
+  // nothing is saved, counted, or signed. Remove after the launch video is recorded.
+  let demoPack = null;
+  try {
+    const url = new URL(location.href), v = url.searchParams.get('demo');
+    if (v) {
+      const F = { c: 'copper', s: 'silver', g: 'gold' };
+      const list = v.split(',').map(x => /^(\d+)([csg])$/.exec(x.trim())).filter(Boolean).map(m => ({ num: Number(m[1]), finish: F[m[2]] }));
+      if (list.length) demoPack = list;
+      url.searchParams.delete('demo'); history.replaceState(null, '', url.pathname + url.search + url.hash);
+    }
+  } catch (e) {}
+
   function api(path, body) {
     return fetch('/api/' + path, {
       method: body ? 'POST' : 'GET',
@@ -68,7 +82,7 @@
   const STARTER_STORE = 'declass_starter';
   let STARTER = null; // a pack opened before sign in: {token, pulls, revealed}
   try { STARTER = JSON.parse(localStorage.getItem(STARTER_STORE) || 'null'); } catch (e) {}
-  function saveStarterLocal() { try { STARTER ? localStorage.setItem(STARTER_STORE, JSON.stringify(STARTER)) : localStorage.removeItem(STARTER_STORE); } catch (e) {} }
+  function saveStarterLocal() { if (demoPack) return; try { STARTER ? localStorage.setItem(STARTER_STORE, JSON.stringify(STARTER)) : localStorage.removeItem(STARTER_STORE); } catch (e) {} }
 
   const signedIn = () => Boolean(ST && ST.player);
   const myPulls = () => signedIn() ? ST.pulls : (STARTER ? STARTER.pulls : []);
@@ -628,6 +642,15 @@
     seal.addEventListener('pointerup', up); seal.addEventListener('pointercancel', up);
   }
 
+  // The staged pack's cards, shaped like the server's starter answer (no token, so it can never be saved).
+  function demoStarter() {
+    const pulls = demoPack.map(d => {
+      const info = CAT.find(c => c.kind === 'dispatch' && c.num === d.num);
+      return info ? { card: info.id, variant: 'still', finish: d.finish, serial: null, cardInfo: info } : null;
+    }).filter(Boolean);
+    return pulls.length ? Promise.resolve({ token: null, pulls }) : Promise.reject(new Error('not available'));
+  }
+
   // ---------- the opening ----------
   let busy = false, pendingTeletype = false, lastEarn = null, reqFrom = null;
   function chosen(i) {
@@ -635,7 +658,7 @@
     busy = true;
     const env = cur;
     if (env.kind === 'starter') mark('pick');
-    const req = env.kind === 'request' || env.kind === 'intercept' ? Promise.resolve(env.result) : env.kind === 'starter' ? api('starter', {}) : api('open', { slot: env.kind === 'priority' ? 'priority' : env.key });
+    const req = env.kind === 'request' || env.kind === 'intercept' ? Promise.resolve(env.result) : env.kind === 'starter' ? (demoPack ? demoStarter() : api('starter', {})) : api('open', { slot: env.kind === 'priority' ? 'priority' : env.key });
     const before = holdingsNow();
     const b = $('bigEnv');
     b.className = 'big';
@@ -653,7 +676,7 @@
     Promise.all([req, delay(3350)]).then(([d]) => {
       busy = false;
       if (env.kind === 'starter' && !signedIn()) {
-        hit('guest_starter');
+        if (!demoPack) hit('guest_starter');
         STARTER = { token: d.token, pulls: d.pulls, revealed: d.pulls.map(() => false) };
         saveStarterLocal();
         startCards(d.pulls, 'starterLocal', before, env);
@@ -2213,6 +2236,8 @@
     if (signedIn()) {
       if (STARTER && ST.player.starterDone) { STARTER = null; saveStarterLocal(); }
       renderHome(); show('sHome');
+    } else if (demoPack) {
+      STARTER = null; show('sLanding');
     } else if (STARTER) {
       if (STARTER.revealed.some(r => !r)) startCards(STARTER.pulls, 'starterLocal', new Map(), { kind: 'starter' });
       else { renderHome(); show('sHome'); }
