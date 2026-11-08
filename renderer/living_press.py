@@ -90,45 +90,49 @@ def main(out_dir):
                 "source": {"url": "", "note": json.loads((ROOT / st["script"]).read_text()).get("note", "")} if st.get("script") else None,
                 "kitUrl": BLOB + st.get("script", ""),
             })
-        if not media.exists(f"videos/{stem}-x.mp4"):
-            continue
-        vids = {}
-        for kind in ("x", "instagram", "vertical"):
-            mp4 = have(f"videos/{stem}-{kind}.mp4")
-            poster = have(f"videos/{stem}-{kind}-poster.jpg")
-            if not mp4:
+        # The film video, and a second cut of the same film for the 7 p.m. slot (video_b, kit_b, dispatch-NNN-b-*).
+        for key in ("", "_b"):
+            vstem = stem + ("-b" if key else "")
+            if not media.exists(f"videos/{vstem}-x.mp4"):
                 continue
-            shutil.copy(mp4, out / "videos" / mp4.name)
-            if poster:
-                shutil.copy(poster, out / "videos" / poster.name)
-            vids[kind] = {"src": f"videos/{mp4.name}", "poster": f"videos/{poster.name}" if poster else "",
-                          "raw": media.url(f"videos/{stem}-{kind}.mp4"), "seconds": seconds(mp4),
-                          "mb": round(mp4.stat().st_size / 1e6, 1)}
-        kitmeta = d.get("kit", {})
-        kitfile = ROOT / kitmeta.get("file", f"kits/{stem}-kit.md")
-        secs = sections(kitfile.read_text()) if kitfile.exists() else {}
-        sched_head, sched = find(secs, "Schedule")
-        m = re.search(r"\(([^)]+)\)", sched_head or "")
-        _, film = find(secs, "Short caption")
-        _, thumb = find(secs, "Thumbnail check")
-        items.append({
-            "type": "living", "num": d["num"], "id": d["id"], "title": d["title"], "date": d["date"], "place": d["place"],
-            "series": d["series"],
-            "approved": nice_date(kitmeta.get("approved", "")),
-            "scheduled": kitmeta.get("scheduled") or "",
-            "postDay": m.group(1) if m else d["date"][5:],
-            "videos": vids,
-            "kit": {
-                "filmCaption": film or kitmeta.get("filmCaption", ""),
-                "ytTitle": find(secs, "YouTube Shorts title")[1] or kitmeta.get("youtubeTitle", ""),
-                "ytDesc": find(secs, "YouTube Shorts description")[1],
-                "tiktok": find(secs, "TikTok caption")[1] or kitmeta.get("tiktokCaption", ""),
-                "schedule": [re.sub(r"^[*-]\s*", "", l).strip() for l in sched.splitlines() if l.strip()],
-                "thumbnail": thumb,
-            },
-            "source": {"url": d["video"].get("sourceUrl", ""), "note": d["video"].get("note", "")} if d.get("video") else None,
-            "kitUrl": BLOB + str(kitfile.relative_to(ROOT)),
-        })
+            vids = {}
+            for kind in ("x", "instagram", "vertical"):
+                mp4 = have(f"videos/{vstem}-{kind}.mp4")
+                poster = have(f"videos/{vstem}-{kind}-poster.jpg")
+                if not mp4:
+                    continue
+                shutil.copy(mp4, out / "videos" / mp4.name)
+                if poster:
+                    shutil.copy(poster, out / "videos" / poster.name)
+                vids[kind] = {"src": f"videos/{mp4.name}", "poster": f"videos/{poster.name}" if poster else "",
+                              "raw": media.url(f"videos/{vstem}-{kind}.mp4"), "seconds": seconds(mp4),
+                              "mb": round(mp4.stat().st_size / 1e6, 1)}
+            kitmeta = d.get("kit" + key, {})
+            kitfile = ROOT / kitmeta.get("file", f"kits/{vstem}-kit.md")
+            secs = sections(kitfile.read_text()) if kitfile.exists() else {}
+            sched_head, sched = find(secs, "Schedule")
+            m = re.search(r"\(([^)]+)\)", sched_head or "")
+            _, film = find(secs, "Short caption")
+            _, thumb = find(secs, "Thumbnail check")
+            items.append({
+                "type": "living", "num": d["num"], "id": d["id"] + ("-b" if key else ""),
+                "title": d["title"] + (" (second cut, 7 p.m.)" if key else ""), "date": d["date"], "place": d["place"],
+                "series": d["series"],
+                "approved": nice_date(kitmeta.get("approved", "")),
+                "scheduled": kitmeta.get("scheduled") or "",
+                "postDay": m.group(1) if m else d["date"][5:],
+                "videos": vids,
+                "kit": {
+                    "filmCaption": film or kitmeta.get("filmCaption", ""),
+                    "ytTitle": find(secs, "YouTube Shorts title")[1] or kitmeta.get("youtubeTitle", ""),
+                    "ytDesc": find(secs, "YouTube Shorts description")[1],
+                    "tiktok": find(secs, "TikTok caption")[1] or kitmeta.get("tiktokCaption", ""),
+                    "schedule": [re.sub(r"^[*-]\s*", "", l).strip() for l in sched.splitlines() if l.strip()],
+                    "thumbnail": thumb,
+                },
+                "source": {"url": d["video" + key].get("sourceUrl", ""), "note": d["video" + key].get("note", "")} if d.get("video" + key) else None,
+                "kitUrl": BLOB + str(kitfile.relative_to(ROOT)),
+            })
     items.sort(key=lambda x: x["date"][5:])
     tpl = (Path(__file__).parent / "living_press.html").read_text()
     html = tpl.replace("/*DATA*/[]", json.dumps(items, ensure_ascii=False).replace("</", "<\\/"))

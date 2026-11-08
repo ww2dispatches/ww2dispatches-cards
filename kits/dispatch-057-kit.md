@@ -22,7 +22,9 @@ Five days before, this river was almost a mile wide.
 * 12:00 p.m. Mountain: Living Card on all six channels in Buffer (X video on X; 4:5 video on Instagram as a Reel shared to the feed and on Facebook as a post; Threads video on Threads; vertical video on YouTube Shorts and TikTok). No AI flag.
 
 ## Short caption: X, Instagram, Threads, Facebook
-U.S. Army Signal Corps film, 14 November 1944. Patton crosses the Moselle to see the bridgehead his 90th Infantry Division won at Koenigsmacker, riding in an armored car with his generals, then touring the freed town. Five days earlier his men had crossed a river almost a mile wide in flood.
+Patton on film, the day he went to see what his men had won.
+
+Real U.S. Army Signal Corps film from Koenigsmacker, north of Metz, 14 November 1944. An armored car in a muddy street, jeeps in a town just freed from German hands, and the general himself, come to see the bridgehead across the Moselle.
 
 #OTD #OnThisDay #WW2 (X and Facebook) · #OnThisDay #WW2 (Instagram) · no tags on Threads
 
