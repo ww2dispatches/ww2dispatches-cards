@@ -908,7 +908,11 @@
   function reveal() {
     const p = pulls[idx];
     if (holding) return;
-    if (revealed[idx]) { answerNT(); return; }
+    if (revealed[idx]) { // a turned card: Name This first shows its answer; after that a tap opens it full screen (8 Nov 2026)
+      if (p.cardInfo && p.cardInfo.kind === 'namethis' && !answered[idx]) { answerNT(); return; }
+      if (p.cardInfo) openZoomFace(p.cardInfo, p.finish, p.variant, p.serial);
+      return;
+    }
     const big = bigMoment(p);
     if (big && !reveal.go) {
       holding = true;
@@ -1304,9 +1308,14 @@
   }
   function openZoom() {
     const id = viewList[vi], info = BYID.get(id); if (!info || !viewSel) return;
-    document.querySelectorAll('#stage2 video').forEach(v => v.pause());
-    $('zstage').innerHTML = `<div id="zcard">${cardFace(info, viewSel.finish, viewSel.variant, serialFor(myPulls(), id, viewSel.variant, viewSel.finish), { autoplay: true })}</div>`;
-    if (viewSel.variant === 'living') startFilm($('zstage'), info);
+    openZoomFace(info, viewSel.finish, viewSel.variant, serialFor(myPulls(), id, viewSel.variant, viewSel.finish));
+  }
+  // Full screen for any card face: the card view above, and a turned card in an envelope or starter pack (8 Nov 2026).
+  function openZoomFace(info, finish, variant, serial) {
+    const viewSel = { finish, variant };
+    document.querySelectorAll('#stage2 video, #flip video').forEach(v => v.pause());
+    $('zstage').innerHTML = `<div id="zcard">${cardFace(info, finish, variant, serial, { autoplay: true })}</div>`;
+    if (variant === 'living') startFilm($('zstage'), info);
     hit('zoom');
     Object.assign(Z, { s: 1, x: 0, y: 0, pinch: null, pan: null, tap: null, lastTap: null }); Z.pts.clear();
     $('zoomer').hidden = false; document.body.classList.add('zopen');
@@ -1318,7 +1327,7 @@
     if ($('zoomer').hidden) return;
     document.querySelectorAll('#zstage video').forEach(v => v.pause());
     $('zoomer').classList.remove('on', 'zoomed'); document.body.classList.remove('zopen');
-    setTimeout(() => { $('zoomer').hidden = true; $('zstage').innerHTML = ''; const v = document.querySelector('#stage2 video'); if (v) v.play().catch(() => {}); }, 200);
+    setTimeout(() => { $('zoomer').hidden = true; $('zstage').innerHTML = ''; document.querySelectorAll('.screen.on #stage2 video, .screen.on #flip video').forEach(v => v.play().catch(() => {})); }, 200);
   }
   // The 3D turn in the full screen view (reworked 2 Nov 2026): the card follows how far the finger drags, not where it
   // sits, so touching it never makes it jump. Drag right and the face turns right (the left edge comes toward you);
