@@ -8,8 +8,10 @@ Started 15 Oct 2026. Goal: post every day from launch (Sat 17 Oct 2026) and keep
 **Every day**
 * **8:00 a.m., story dispatch.** The full card with a long story caption. X, Instagram, Threads, Facebook. (Cards doc)
 * **Noon, the daily video.** A Living Card (real archival film, whenever usable film exists) or a Story Card (archival photos, Onyx narration, no music). Short caption. X, Instagram (Reel), Threads, Facebook, TikTok, YouTube Shorts. (Videos doc)
+* **2:30 p.m., the Axis card** (from 15 Nov 2026). A card told from the Axis side (Axis forces, decisions, or the civilians of Axis nations), any series, as a story card or a Photo of the Day, Quote of the Day, or Spec Sheet, with a shorter caption. X, Instagram, Threads, Facebook. Opens no Declass envelope. (Cards doc, Research doc)
 * **5:00 p.m., evening card.** Photo of the Day, Quote of the Day, or Spec Sheet, with a shorter caption. X, Instagram, Threads, Facebook. No fixed weekday per format. (Cards doc)
-* The four series are not tied to any time. Any series can run in any slot.
+* **7:00 p.m., the evening video** (from 15 Nov 2026). A Living Card from the 5 p.m. or 2:30 card's film, or a second cut of the noon film, and only rarely a Story Card. Short caption. All six channels, X included. (Videos doc, "Evening video")
+* The four series are not tied to any time. Any series can run in any slot. The 2:30 slot is always Axis, but the other slots are not Allied only.
 
 **Wednesday and Saturday only**
 * **10:00 a.m., Name This.** X (into an X Community, through Typefully), Threads (History Threads community), Facebook Page, and Instagram (a two week test, see Open decisions), the last three through Buffer. No dispatch number. (Name This doc)
@@ -21,16 +23,16 @@ Started 15 Oct 2026. Goal: post every day from launch (Sat 17 Oct 2026) and keep
 * **7:00 a.m., the weekly newsletter** on Substack (first issue Sun 1 Nov 2026). (Newsletter doc)
 * **10:00 a.m., the Sunday share post** for that morning's issue: its own card, not a dispatch, no number. X, Instagram, Threads, Facebook. (Newsletter doc, "Sunday share post")
 
-That makes three posts a day on the card platforms (four on Wednesday and Saturday with Name This, and on Sunday with the share post) and one a day on TikTok and YouTube. Everything publishes through Buffer except Name This on X (Typefully) and the newsletter (pasted into Substack by Brian). Each post also appears on the ww2dispatches.com home page at its time (Project Brief, "Domain and website").
+That makes five posts a day on the card platforms (six on Wednesday and Saturday with Name This, and on Sunday with the share post) and two a day on TikTok and YouTube. Everything publishes through Buffer except Name This on X (Typefully) and the newsletter (pasted into Substack by Brian). Each post also appears on the ww2dispatches.com home page at its time (Project Brief, "Domain and website").
 
 ## Upcoming big dates
-Big dates already have people searching and talking, so these get the strongest treatment. Each still has to be verified like any dispatch. They are the first place the Wednesday research run hunts for film for a Living Card; with no film, the noon video is a Story Card. The 5 p.m. card on an anniversary day is a good place for a Spec Sheet or Quote tied to the same event. Hashtag rules for anniversary days are in the Cards doc.
+Big dates already have people searching and talking, so these get the strongest treatment. Each still has to be verified like any dispatch. They are the first place the Wednesday research run hunts for film for a Living Card; with no film, the noon video is a Story Card. The 5 p.m. card on an anniversary day is a good place for a Spec Sheet or Quote tied to the same event, the 2:30 card for the same day seen from the Axis side, and the 7 p.m. video for a second piece of film on it. Hashtag rules for anniversary days are in the Cards doc.
 * **25 Oct 1944, Battle off Samar** (Taffy 3) in the Battle of Leyte Gulf, and the first organized kamikaze attacks. Battle Lines. Living Card candidate if good Navy film (428-NPC) turns up. Batch of 25 to 31 Oct.
 * **8 Nov 1942, Operation Torch** landings in North Africa. Battle Lines, Living Card candidate. Callback to No. 011 (Mark Clark's secret landing). Batch of 8 to 14 Nov.
 * **9 to 10 Nov 1938, Kristallnacht.** Statecraft. Somber: no question, no soft ask. Batch of 8 to 14 Nov.
 * **11 Nov, Armistice Day and Veterans Day.** Pick a verified WW2 event on 11 Nov (candidates: the Taranto raid, 11 to 12 Nov 1940, Blueprint or Battle Lines; Germany occupies Vichy France, 11 Nov 1942) and add #VeteransDay. Batch of 8 to 14 Nov.
 * **12 to 15 Nov 1942, Naval Battle of Guadalcanal.** Battle Lines. Batches of 8 to 14 or 15 to 21 Nov.
-* **19 Nov 1942, Operation Uranus** encircles the Germans at Stalingrad. Battle Lines. Batch of 15 to 21 Nov.
+* **19 Nov 1942, Operation Uranus** encircles the Germans at Stalingrad. Battle Lines. Batch of 15 to 21 Nov (the first week of the 2:30 Axis card; the view from inside the pocket fits that slot).
 * **20 Nov 1945, the Nuremberg trial opens.** Statecraft, Living Card candidate (Signal Corps film of the courtroom). Callback to No. 003. Batch of 15 to 21 Nov.
 * **28 Nov 1943, Tehran Conference opens.** Statecraft. Batch of 22 to 28 Nov. Thanksgiving is 26 Nov 2026; a verified Home Front Thanksgiving story is a good fit that week.
 * **7 Dec 1941, Pearl Harbor, the 85th anniversary** (Mon 7 Dec 2026). **The first Flash card** (Flash cards plan). Major dispatch with the iconic photo and Navy film. Start the footage hunt in the November batches so it isn't rushed. Batch of 6 to 12 Dec (research Wed 2 Dec, videos Thu 3 Dec, cards Fri 4 Dec). The day's extra posts are added by hand after the cards run, not by the runs (see Pearl Harbor Flash day plan).
@@ -42,7 +44,9 @@ Each open question lives here only. The Tuesday analytics review supplies the nu
 * **Facebook versus Substack in Buffer** (raised 19 Oct 2026). Buffer Essentials is capped at six channels, so a Substack channel can only be added by swapping out Facebook or paying more. Facebook has had almost no traction in its first days, which is normal for a new Page, and it now gets a Reel every day. Claude's view: decide after the 3 Nov analytics review, comparing Facebook's Reels with its static cards, and first confirm what Buffer's Substack channel actually posts (likely Notes, not newsletter issues). Typefully also lists Substack. Until Brian decides, Facebook keeps getting every post.
 * **Name This on Instagram** (two week test, Wed 21 Oct to Sat 31 Oct). Decide at the 3 Nov analytics review; the comparison is in the Name This doc.
 * **Substack Notes** for the best card or video of the day: depends on the Facebook versus Substack decision (Newsletter doc).
-* **Posting times:** revisit 8 a.m., noon, and 5 p.m. once the Scoreboard's slot groups have 5 or more posts each and hold for three reviews.
+* **Posting times:** revisit 8 a.m., noon, 2:30 p.m., 5 p.m., and 7 p.m. once the Scoreboard's slot groups have 5 or more posts each and hold for three reviews.
+* **Five posts a day** (added 7 Nov 2026). From the 15 Nov posts on, the Tuesday analytics review reports reach per post and total daily reach per platform against the four weeks before the change (Analytics doc). Brian decides any trim, platform by platform; nothing is cut automatically.
+* **A third Declass envelope at 2:30** (raised 7 Nov 2026). For now 2:30 posts open no envelope and Declass stays at two a day; reassess once the 2:30 cards have filled the archive pool for a few weeks, alongside the Code Room and Campaigns rewards.
 * **Onyx voice:** revisit after a month of analytics, using Story Card hold on the Scoreboard (Videos doc).
 
 ## First month (through mid November)
@@ -58,7 +62,7 @@ Short term goal: maximize presence and follows in the first month, without addin
 ## Months two and three
 * Build a rolling content calendar a month ahead so major dates and footage hunts aren't rushed.
 * Grow the newsletter: check open rates and signups, test the send time, and start Substack recommendations (Newsletter doc).
-* Revisit the posting volume: with three posts a day on the card platforms, if reach per post drops on Instagram or Facebook, trim those to two a day; X and Threads reward frequency. The Scoreboard's weekly views per platform show this.
+* Revisit the posting volume: with five posts a day on the card platforms from 15 Nov, the Tuesday reach report (Open decisions) shows whether reach per post drops on any platform; Brian decides any trim. X and Threads reward frequency. The Scoreboard's weekly views per platform show this.
 * Small polish: Gmail "Send mail as" for contact@, optional hq@ address, retry renaming the YouTube channel to plain "WW2 Dispatches", and turn on Cloudflare Web Analytics (free) for home page visitor counts. A Home Front photo could join the home page rotation (a Library of Congress wartime factory photo, which Brian would download).
 
 ## Months three to six
@@ -71,13 +75,13 @@ Short term goal: maximize presence and follows in the first month, without addin
 ## Optional extra slots (around January)
 Only if the analytics after the daily video settles show that more posts lift reach rather than diluting it:
 * An 11 a.m. Poster of the Day or Map of the Day (public domain wartime posters and maps).
-* An 8 p.m. engagement post on X and Threads only (Also on This Day, a question, or a poll).
+* A 9 p.m. engagement post on X and Threads only (Also on This Day, a question, or a poll), clear of the 7 p.m. video.
 * A third weekly Name This card, if Name This clearly does better than regular posts.
 These can be tested first in the 5 p.m. rotation at no extra volume.
 
 ## Longer term
 * **Native subscriptions** once a platform's gates are met (see Subscriptions plan).
-* **Dispatch archive** on ww2dispatches.com, growing out of the home page (see Archive plan). At two cards a day a few hundred cards could arrive within four or five months.
+* **Dispatch archive** on ww2dispatches.com, growing out of the home page (see Archive plan). At three cards a day a few hundred cards arrive within about three months.
 * Paid tier or Patreon only with a few thousand engaged followers and a cheap to make bonus product. A paid Substack tier is the easiest version, since the list already lives there.
 * **Expansion to a new topic:** candidates are the Civil War, WW1, the Cold War and the Space Race, and Vietnam.
 * **Flash cards:** a rare card type for the war's biggest days (see Flash cards plan).
@@ -113,7 +117,7 @@ A long term idea, agreed in principle 25 Oct 2026, not yet built into the weekly
 * **Card layout from the mockup:** WW2 DISPATCHES wordmark and dispatch number top left on a dark fade, a cream FLASH tape stamp top right, the big date, place, and pull line at the bottom on a dark fade, handle bottom right. The same art and type serve the posted card.
 * **Proposed, not yet decided:** on the posted card, a FLASH stamp in place of the series stamp; the 8 a.m. card on a Flash day becomes the Flash, with a four slide Instagram carousel (one slide per series angle); in Declass a Flash card counts toward all four series collections and gets its own reveal sound (a teletype burst).
 * **Every year (decided):** each Flash date gets a new, revamped Flash card every year, with a new angle, new graphics, and a new image, so sixteen new Flash cards arrive each year. This is the one exception to the research rule that never repeats an event: the event repeats, the card never does.
-* **Extra posts on Flash days (decided 25 Oct 2026):** the weekly runs build only the normal slots (8 a.m. Flash card, noon video, 5 p.m. card). Brian and Claude add the extra posts by hand in Buffer after the Friday cards run, in a working session together, and shift the normal posts' times if needed. The scheduled tasks are never changed for a Flash day. The first plan is below.
+* **Extra posts on Flash days (decided 25 Oct 2026):** the weekly runs build only the normal slots (8 a.m. Flash card, noon video, 2:30 p.m. card, 5 p.m. card, 7 p.m. video). Brian and Claude add the extra posts by hand in Buffer after the Friday cards run, in a working session together, and shift the normal posts' times if needed. The scheduled tasks are never changed for a Flash day. The first plan is below.
 * **Open:** the Flash reveal in the envelope (today it gets the Top Secret glow and fanfare; a teletype burst is the idea for later); a line for the attorney consult on the Flash design against Pokémon's trade dress; the 1 and 2 September file opens on 1 September, so a player who opens it that day gets only the Poland card (moving that file's opening to 2 September would give both; decide before September 2027); preparing each year's Flash art a few weeks ahead (the prepared art and record go in `flash/`; the Research doc says what happens if one is missing).
 
 * **Incoming Flash traffic (decided and built 30 Oct 2026):** the Declass home screen shows the next three Flash days as sealed cards (a cream FLASH tape, "Sealed until 7 Dec", the event name, and "In 38 days"), names and dates only, never the art before it posts. The Field manual lists all sixteen. The server's `flashUpcoming` serves the list from the commemorative calendar in `functions/_lib/envelopes.js`, signed in or not.
@@ -142,7 +146,7 @@ Each Flash card needs its art chosen, colorized in the C2 Kodachrome look, and a
 **The Bulge is the tight one:** its art has to be ready by Wed 2 Dec, the same day Pearl Harbor's research runs. Do it in November.
 
 ### Pearl Harbor Flash day plan (Mon 7 Dec 2026)
-**For the hand session only. The scheduled runs do not act on this section;** they build the normal three slots as usual. Working session: Sat 5 Dec, after the Fri 4 Dec cards run (a reminder is set).
+**For the hand session only. The scheduled runs do not act on this section;** they build the normal five slots as usual (8 a.m. Flash card, noon video, 2:30 card, 5 p.m. card, 7 p.m. video). Working session: Sat 5 Dec, after the Fri 4 Dec cards run (a reminder is set).
 * **Only one full art card:** the 8 a.m. Flash card. Nothing added by hand takes a dispatch number or joins Declass.
 * **Flash Traffic bulletins:** short text posts on X and Threads, each posted 85 years to the minute after the event on the Hawaii clock (the convention the memorial ceremonies use; Hawaii ran a half hour off modern time in 1941). Two or three sentences each, wire style, with a timestamp. Somber: no questions, soft asks, newsletter or Declass lines. Times below are Mountain (Hawaii plus 3 hours), to be re-verified in the session:
   * 6:50 a.m. (3:50 a.m. Hawaii): the minesweeper Condor sights a periscope off the harbor entrance. Some sources say 3:42; say "before dawn" unless settled.
@@ -154,9 +158,11 @@ Each Flash card needs its art chosen, colorized in the C2 Kodachrome look, and a
   * 12:20 p.m. (2:20 p.m. Eastern): Nomura and Kurusu hand Hull Japan's note in Washington, after the attack has begun. Statecraft angle.
   * 12:26 p.m. (about 2:26 p.m. Eastern): WOR breaks into the Giants vs. Dodgers football broadcast; America finds out. Home Front angle.
 * **Moment of silence at 10:55 a.m. (7:55 Hawaii), all six channels:** a plain black image reading "7:55 a.m., Hawaii. 85 years ago." with no caption beyond that. Not a card, no number.
+* **2:30 p.m. card (normal run):** told from the Japanese side, picked by research as usual (the carriers launching at dawn is the obvious angle; the Japanese Navy's own film of the launch, naId 81567, could carry the 7 p.m. video). Somber where the subject is.
+* **7 p.m. video (normal run):** per the evening order, from the 5 p.m. or 2:30 card's film or a second cut of the Navy film. Somber captions.
 * **5 p.m. card (normal run):** a Pearl Harbor tie in picked by the Wednesday research run as usual; strong options are a Photo of the Day of the "NOT DRILL" dispatch (National Archives) or a Spec Sheet on the SCR 270 radar at Opana.
 * **Noon video (normal run):** the Living Card from Navy film, as planned.
-* **In the session:** re-verify every time against Navy and Park Service sources, draft the bulletins and the silence image, schedule them in Buffer, and move any normal post that collides.
+* **In the session:** re-verify every time against Navy and Park Service sources, draft the bulletins and the silence image, schedule them in Buffer, and move any normal post that collides. With five normal posts that day plus eight bulletins and the silence image, check each platform's daily limit in Buffer first.
 
 ## Subscriptions plan
 A long term goal, not a short term one. The model is @VoicesofWW2's X subscription ($2 a month, exclusive posts, "tell me what content you'd like to see more of"). On 16 Oct 2026 it showed 15 subscribers, about $30 a month before fees, so subscriptions only pay once the account is large. Growth comes first.
@@ -180,7 +186,7 @@ Starting price idea: $2 to $3 a month, in line with comparable accounts. **Month
 
 ## Archive plan
 Why: old social posts are close to invisible because feeds favor new content, so an archive doesn't take views away from the social pages. It reaches people the feeds never will (someone searching "what happened on October 20 in WW2"), turns them into followers and subscribers, and is an asset the account owns.
-* **When:** once there are a few hundred cards, roughly four to six months of two a day posting, so most calendar dates have something on them and the site looks full.
+* **When:** once there are a few hundred cards, roughly three to four months of three a day posting, so most calendar dates have something on them and the site looks full.
 * **Build:** generated from the dispatch JSON, cards, and photos already in the ww2dispatches-cards repo, added to the existing home page in the repo's `site/` folder on Cloudflare Pages (live since 21 Oct 2026). The home page stays the front door, with a link into the archive.
 * **Pages:** one page per calendar date (all years together), one page per dispatch, a page per series, and a page per evening format (all the Spec Sheets together make a strong Blueprint reference). A simple calendar view linked from the home page, which already shows today's posts. The performance log can feed a "most popular dispatches" page.
 * **Every dispatch page sends people back to social:** the card, the story caption, the sources, and links to the original posts (plus TikTok and YouTube for videos), using the `links` field recorded since launch.
@@ -189,6 +195,7 @@ Why: old social posts are close to invisible because feeds favor new content, so
 * Later options: search, a printable "this day" card shop through Stripe, and a classroom friendly version of the archive.
 
 ## Changelog
+* 7 Nov 2026 (night): **Five posts a day from 15 Nov 2026** (Brian): the 2:30 p.m. Axis card and the 7 p.m. video added to the layout. Two new open decisions: the Tuesday reach report on five posts a day (Brian decides any trim) and a possible third Declass envelope at 2:30 (two for now). The Pearl Harbor plan gains the 2:30 card and 7 p.m. video; the optional engagement post moves to 9 p.m.
 * 4 Nov 2026: 18 Jan 2027 reserved for a 5 p.m. card on B 25C "Algernon IV", the crew of follower Timothy Hale's uncle, with his blessing and a preview for him before it posts.
 * 31 Oct 2026: Ko-fi paused and to be retired. Support moves to ww2dispatches.com/support with Stripe one time gifts and monthly pledges (no perks yet); the first soft ask waits for its launch week, and shop items go through Stripe.
 * 31 Oct 2026: Sunday 10 a.m. slot added for the newsletter's Sunday share post (a Sunday morning read; the issue lands at 7).

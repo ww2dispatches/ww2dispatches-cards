@@ -365,6 +365,46 @@ def main():
         if r["follows"] not in ("", None):
             follows[r["platform"]] += r["follows"]
 
+    # Reach report for five posts a day (added 7 Nov 2026; Analytics doc, "Reach per post and per day"):
+    # each platform's views per post and total views per day, before and after the 15 Nov 2026 change.
+    # Only posts at least 48 hours old count, so a fresh post never drags a figure down.
+    CHANGE = "2026-11-15"
+    before_start = (datetime.strptime(CHANGE, "%Y-%m-%d") - timedelta(days=28)).strftime("%Y-%m-%d")
+    per = defaultdict(lambda: {"before": [], "after": []})
+    days = defaultdict(lambda: {"before": defaultdict(int), "after": defaultdict(int)})
+    for r in rows:
+        if r["views"] == "" or r["status"] == "too early" or r["post_date"] < before_start:
+            continue
+        side = "after" if r["post_date"] >= CHANGE else "before"
+        per[r["platform"]][side].append(r["views"])
+        days[r["platform"]][side][r["post_date"]] += r["views"]
+    reach_report = []
+    for plat in sorted(per):
+        row = {"platform": plat}
+        for side in ("before", "after"):
+            vs, dd = per[plat][side], days[plat][side]
+            row[side] = {"posts": len(vs), "days": len(dd),
+                         "median_per_post": statistics.median(vs) if vs else None,
+                         "mean_per_post": round(statistics.mean(vs), 1) if vs else None,
+                         "mean_per_day": round(sum(dd.values()) / len(dd), 1) if dd else None}
+        b, a = row["before"], row["after"]
+        row["per_post_change"] = (round(a["median_per_post"] / b["median_per_post"] - 1, 2)
+                                  if a["median_per_post"] and b["median_per_post"] else None)
+        row["per_day_change"] = (round(a["mean_per_day"] / b["mean_per_day"] - 1, 2)
+                                 if a["mean_per_day"] and b["mean_per_day"] else None)
+        reach_report.append(row)
+    lines = ["# Reach per post and per day", "",
+             f"Before: posts dated {before_start} to 2026-11-14. After: posts from {CHANGE} on (five a day).",
+             "Posts under 48 hours old are left out. Brian decides any trim.", "",
+             "| Platform | Per post before | Per post after | Change | Per day before | Per day after | Change |",
+             "|---|---|---|---|---|---|---|"]
+    pct = lambda x: "" if x is None else f"{x * 100:+.0f}%"
+    for row in reach_report:
+        b, a = row["before"], row["after"]
+        lines.append(f"| {row['platform']} | {b['median_per_post'] or ''} ({b['posts']}) | {a['median_per_post'] or ''} ({a['posts']}) | "
+                     f"{pct(row['per_post_change'])} | {b['mean_per_day'] or ''} | {a['mean_per_day'] or ''} | {pct(row['per_day_change'])} |")
+    open(p("analytics", "reach-report.md"), "w", encoding="utf-8").write("\n".join(lines) + "\n")
+
     # Your Call: the week's summary and questions for Brian, written by the Tuesday review (analytics/README.md).
     checkin = json.load(open(p("analytics", "checkin.json"), encoding="utf-8")) if os.path.exists(p("analytics", "checkin.json")) else None
 
@@ -382,6 +422,7 @@ def main():
         "posts": post_list,
         "groups": group_tables,
         "weekly_views": [{"week": w, **v} for w, v in sorted(weekly.items())],
+        "reach_report": reach_report,
         "instagram_follows_from_posts": follows.get("Instagram", 0),
         "playbook": playbook,
         "latest_review": latest_review,

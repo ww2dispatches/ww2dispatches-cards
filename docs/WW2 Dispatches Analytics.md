@@ -1,9 +1,9 @@
 # WW2 Dispatches: Analytics
 
-The rules for the **Tuesday analytics review**: how posts are measured, scored, and turned into lessons for the Wednesday research run, the Thursday video run, and the Friday cards run. The Tuesday run follows this doc. Shared setup (Buffer, GitHub, Schedule Board tasks, push reminders, record keeping) is in the Project Brief. The files and the snapshot format are in `analytics/README.md` in the cards repo.
+The rules for the **Tuesday analytics review**: how posts are measured, scored, and turned into lessons for the Wednesday research run, the two Thursday video runs, and the Friday cards run. The Tuesday run follows this doc. Shared setup (Buffer, GitHub, Schedule Board tasks, push reminders, record keeping) is in the Project Brief. The files and the snapshot format are in `analytics/README.md` in the cards repo.
 
 ## The goal
-Learn what works, a little more each week, without adding to Brian's time. Each Tuesday night the review measures every post, scores it fairly, updates the playbook the next three runs read, and sends Brian a short summary. Brian's part is about five minutes reading it, plus any decision it files for him.
+Learn what works, a little more each week, without adding to Brian's time. Each Tuesday night the review measures every post, scores it fairly, updates the playbook the next four runs read, and sends Brian a short summary. Brian's part is about five minutes reading it, plus any decision it files for him.
 
 ## What gets measured
 Buffer is the source: it reads each platform's numbers about once a day, so its figures trail the apps by up to a day. That is fine, because every post is compared with other posts that have the same lag. Exact counts will always trail what the apps show.
@@ -24,10 +24,11 @@ Engagement rate as Buffer reports it is not used; on small numbers it misleads (
 * **Response** = weighted actions per 100 views, divided by the typical figure. Weights: like 1, comment 3, repost, quote, share, or save 2. Only posts with 50 or more views get a Response.
 * **The floor.** A platform counts toward a post's score only once its typical post reaches 50 views and at least 5 posts of that kind have been scored there. Below that it is shown but not scored. At launch only Threads counted for cards.
 * **A post's score** is the average of its Reach (and Response) over the platforms that count.
-* **Groups** (series, format, slot, the theme tags, engagement question or not, and for videos the opening shot and sound) need 5 or more posts, or they show "not enough data".
+* **Groups** (series, format, slot, the theme tags, engagement question or not, and for videos the opening shot, sound, and slot) need 5 or more posts, or they show "not enough data". The slots are 8 a.m., 10 a.m. (Name This), noon, 2:30 p.m., 5 p.m., and 7 p.m.
+* **Two videos a day** (from 15 Nov 2026): the noon and 7 p.m. videos are each their own post, scored against all videos on the same platform. A second cut of a noon film (its Buffer ids end in `_b`) is a separate post from the noon video on the same dispatch, tagged from `themes.video_b`. The Video groups compare noon against 7 p.m.; the review also compares second cuts against first cuts once there are 5 of each.
 
 ## Theme tags
-Every dispatch and Name This record carries a `themes` block, so the review can tell what a post was about as well as its series: who it centers on, the kind of story, what the photo shows, theater, branch, and nations, plus the opening shot, kind, and sound for videos. The fixed list of values is `analytics/themes.md`; only the Tuesday review adds new ones. The Wednesday research run tags each dispatch (who, story, photo, theater, branch, nations), the Saturday Name This run tags each Name This card, and the Thursday video run tags each video from its actual first frame. The era (road to war, the war, the aftermath) comes from the event date.
+Every dispatch and Name This record carries a `themes` block, so the review can tell what a post was about as well as its series: who it centers on, the kind of story, what the photo shows, theater, branch, and nations, plus the opening shot, kind, and sound for videos. The fixed list of values is `analytics/themes.md`; only the Tuesday review adds new ones. The Wednesday research run tags each dispatch (who, story, photo, theater, branch, nations), the Saturday Name This run tags each Name This card, and the Thursday video runs tag each video (`themes.video`, or `themes.video_b` for a second cut) from its actual first frame. The era (road to war, the war, the aftermath) comes from the event date.
 
 The tags exist to separate causes that travel together. Example: the WAVES dispatch drew the best response of launch week; the tags let later weeks show whether that came from the subject (a barrier broken by Black women) or the hook.
 
@@ -40,10 +41,17 @@ Every finding sits on one rung:
 **Tests** change one thing at a time so the result can be read clearly, each with a review date. New tests start only with Brian's OK; the review proposes them in its summary.
 
 ## Where it lives
-* **The playbook** (`analytics/playbook.md`): the current patterns, hunches, active tests, things to watch, and anything for Brian to decide. The Wednesday research run reads it before picking events, the Thursday video run before building videos, and the Friday cards run before writing hooks and captions.
+* **The playbook** (`analytics/playbook.md`): the current patterns, hunches, active tests, things to watch, and anything for Brian to decide. The Wednesday research run reads it before picking events, the Thursday video runs before building videos, and the Friday cards run before writing hooks and captions.
 * **The Scoreboard** (pinned, https://claude.ai/artifact/H3ry2Cg3jM8mkxsTYrV7hP): This week (the summary, best and weakest posts, decisions needed), Posts (every post with Reach, Response, and each platform), Trends (views per week, typical posts, groups), and Playbook. Rebuilt every Tuesday.
 * **The log** (`log/performance-log.csv`): one row per post per platform with every number, score, and tag. Opens in Excel. Never edited by hand.
+* **The reach report** (`analytics/reach-report.md`, and `reach_report` on the Scoreboard data): see the next section.
 * **The record:** `analytics/snapshots/` (each week's raw pull, never edited) and `analytics/reviews/` (each week's written review).
+
+## Reach per post and per day (added 7 Nov 2026)
+From the 15 Nov 2026 posts on there are five posts a day on X, Instagram, Threads, and Facebook (three cards and two videos) and two a day on TikTok and YouTube. More posts can mean less reach for each one, so `renderer/analytics.py` writes a reach report every Tuesday: for each platform, the typical views per post and the average total views per day, for the four weeks before the change (posts dated 18 Oct to 14 Nov 2026) and for everything since, with the change as a percentage. Posts under 48 hours old are left out.
+* The review puts the report's lines in the week's review and the summary to Brian, and says plainly when a platform's views per post have dropped while its views per day have not grown, three reviews running (the pattern rung).
+* **Brian decides any trim**, platform by platform, through a Schedule Board task the review files once a platform shows that pattern. Nothing is cut automatically, and the review never changes a slot on its own.
+* It also notes how the 2:30 Axis cards and the 7 p.m. videos do against the other slots (the Slot groups) once each has 5 posts.
 
 ## The Tuesday run
 "WW2 Dispatches weekly analytics review", Tuesday 7:47 p.m. Mountain, on Opus 5.5, a Claude Code scheduled task with both repos attached, Buffer connected, push and email when done. Posts from Sunday and Monday are still "too early" on Tuesday and get their score the following week.
@@ -54,7 +62,7 @@ Every finding sits on one rung:
 5. Run `python3 renderer/analytics.py` again so the Scoreboard picks up the new review and playbook, commit and push, then publish `analytics/scoreboard-page.html` to the Scoreboard artifact (read it first).
 6. File a Schedule Board task for each decision Brian needs to make, with a push reminder if it has a due time (Brief, "Shared run procedures").
 7. **Code Room master list** (next section): add the week's posted cards to the groups they fit, add any approved groups whose cards have all posted, add new hard groups (10 a week through 31 Dec 2026, then 5 to 10), run the check, commit and push.
-8. Send Brian the summary with SendUserMessage: three things that worked, two that didn't, the tests running, whether anything needs him, and the week's new Code Room hard groups (link lines only) with the check's readiness line and "Veto any Code Room group by telling me here". About six lines.
+8. Send Brian the summary with SendUserMessage: three things that worked, two that didn't, the tests running, one line per platform from the reach report (from 17 Nov 2026), whether anything needs him, and the week's new Code Room hard groups (link lines only) with the check's readiness line and "Veto any Code Room group by telling me here". About eight lines.
 
 ## Code Room master list
 **Code Room** (called Intercept until 2 Nov 2026; the code, the data file, and the test tools keep the intercept name) is the daily puzzle inside Declass (Code Room doc): twelve cards in four hidden groups of three. Each player's grid is dealt from the master list, `functions/_data/intercept.json` in the cards repo, which this run grows every week. It lives here, not in research, because this run works on the week that has closed: every card it sees has posted, so a day dropped or swapped at the Saturday review can never reach the list, and anything added by hand (a Flash day's extra posts, a deep dive session) is caught too. Cards reach the list about a week after they post, which is fine.
@@ -96,3 +104,4 @@ The rules for links:
 * 7 Nov 2026 (later): The run no longer removes applied groups from the Code Room doc, since it never edits the docs; it skips any group already in the list and reports what it applied, and a Code Room chat clears the entries (decided with Brian in the Code Room: Build chat).
 * 7 Nov 2026 (later still): Code Room's board shows photo tiles with a typed label; the check now flags shared tile labels and missing tile photos, and the run commits new files in `tiles/` (Code Room doc, "Board tiles").
 * 7 Nov 2026 (Code Room medium recheck, Planning chat): Medium is now knowable from the tile's title or subject, and a group the cards only share by place is hard. A group never holds two cards of the same event, such as a story card and its spec sheet.
+* 7 Nov 2026 (night): Three cards and two videos a day from 15 Nov 2026. Slots now include 2:30 p.m. and 7 p.m.; videos are compared by slot, and a second cut (`_b` ids, `themes.video_b`) is its own post. A weekly reach report per platform (views per post and per day, against the four weeks before) goes in the review and the summary; Brian decides any trim.
