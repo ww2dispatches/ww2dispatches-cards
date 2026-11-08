@@ -99,8 +99,15 @@
     return `<div class="icprow${g.found === false ? ' missed' : ''}" style="--k:${k}"><div class="rcards">${g.idx.map(i => { const inf = info(P.cards[i].id) || {}; return `<button class="gcard" data-i="${i}" type="button" aria-label="See ${esc(inf.tileLabel || inf.short || 'this card')} full size"><img src="${esc(inf.tilePhoto || inf.img || '')}" alt="" draggable="false"></button>`; }).join('')}</div><p class="rlink">${g.found === false ? '<span class="gmiss">Not found · </span>' : ''}${esc(g.link)}<small>${g.idx.map(i => esc((info(P.cards[i].id) || {}).tileLabel || '')).join(' · ')}</small></p></div>`;
   }
 
+  // Bar 1 (7 Nov 2026, Brian's choice on the design canvas): the pinned bar holds Clear, three Xs for the
+  // mistakes, and File it, so the buttons stay in reach however far down the desk you are. A mistake turns
+  // its X red; the big REJECTED stamp across the screen still plays on each wrong guess.
+  const XSVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"></path></svg>';
   function marksHTML() {
-    return `<div class="icpmarks" aria-label="${P.mistakes} of 3 mistakes used"><span class="ml">Mistakes</span>${[0, 1, 2].map(i => `<span class="mark${i < P.mistakes ? ' used' : ''}${i === rejectedHit ? ' hit' : ''}"><i>REJECTED</i></span>`).join('')}</div>`;
+    return `<div class="icpmarks" role="img" aria-label="${P.mistakes} of 3 mistakes used">${[0, 1, 2].map(i => `<span class="mark${i < P.mistakes ? ' used' : ''}${i === rejectedHit ? ' hit' : ''}">${XSVG}</span>`).join('')}</div>`;
+  }
+  function barHTML() {
+    return `<div class="icpbar2"><button class="btn alt" id="icpClear" type="button"${sel.length ? '' : ' disabled'}>Clear</button>${marksHTML()}<button class="btn icpfile" id="icpFile" type="button"${sel.length === 3 ? '' : ' disabled'}>File it</button></div>`;
   }
 
   function draw() {
@@ -113,12 +120,11 @@
     // mistake marks so a REJECTED stamp is always in view, however far down the desk you are (7 Nov 2026).
     $('sIntercept').classList.add('slim');
     $('sIntercept').classList.toggle('ended', done);
-    $('icpBarMarks').innerHTML = done ? '' : marksHTML();
+    $('icpBarMarks').innerHTML = done ? '' : barHTML();
     if (P.practice) html += `<p class="icppractice">Practice round ${P.practice} · testers only · no Intel</p>`;
     if (!done) {
       html += P.groups.length ? `<div class="icprows">${P.groups.map(rowHTML).join('')}</div>` : '';
       html += `<div class="icpdesk" id="icpDesk">${left.map(i => fileHTML(i)).join('')}</div>`;
-      html += `<div class="icpctl"><button class="btn alt" id="icpClear" type="button"${sel.length ? '' : ' disabled'}>Clear</button><button class="btn icpfile" id="icpFile" type="button"${sel.length === 3 ? '' : ' disabled'}>File it</button></div>`;
       html += `<p class="icpsmall">Tap the magnifier on a card to see it full size.</p>${P.expired ? '' : closesLine(P.closes)}`;
     } else {
       html += stage === 'pick' && P.status === 'solved' && P.canClaim ? pickScreenHTML() : resultHTML();
