@@ -120,7 +120,7 @@
     return 'Envelope';
   }
   // Game actions counted for the admin console (2 Nov 2026): tallies only, through /hit.js.
-  const hit = n => { try { if (window.wwHit) window.wwHit(n); } catch (e) {} };
+  const hit = n => { if (demoPack) return; try { if (window.wwHit) window.wwHit(n); } catch (e) {} };
   const SCREEN_HIT = { sFile: 'dossier', sSets: 'sets', sIntercept: 'intercept', sSave: 'save_screen' };
   function show(id) {
     if (SCREEN_HIT[id]) hit(SCREEN_HIT[id]);
@@ -676,7 +676,7 @@
     Promise.all([req, delay(3350)]).then(([d]) => {
       busy = false;
       if (env.kind === 'starter' && !signedIn()) {
-        if (!demoPack) hit('guest_starter');
+        hit('guest_starter');
         STARTER = { token: d.token, pulls: d.pulls, revealed: d.pulls.map(() => false) };
         saveStarterLocal();
         startCards(d.pulls, 'starterLocal', before, env);

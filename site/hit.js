@@ -4,7 +4,7 @@
 (function () {
   var ls = function (k, v) { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) { return null; } };
   var ss = function (k, v) { try { if (v === undefined) return sessionStorage.getItem(k); sessionStorage.setItem(k, v); } catch (e) { return null; } };
-  var off = navigator.globalPrivacyControl || navigator.doNotTrack === '1' || ls('ww_me') === '1';
+  var off = navigator.globalPrivacyControl || navigator.doNotTrack === '1' || ls('ww_me') === '1' || /[?&]demo=/.test(location.search); // the staged launch video pack (8 Nov 2026) is never counted
   var queue = [], timer = null;
   function send(body) {
     if (off) return;
