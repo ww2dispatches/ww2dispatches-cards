@@ -729,7 +729,7 @@ body{background-color:#17140f;background-attachment:fixed;
 .ctext .story p,.howlead{font-size:17px}
 .howcard ul,.howmore,.fmenv p,.fmodds,.tourbub p,.fnote p,.sheetnote,.coachp{font-size:16px}
 /* the tighter spots: let long lines wrap instead of spilling */
-.slotbtn b,.slotbtn span{padding-right:128px}
+.slotbtn b,.slotbtn span,.icptile b,.icptile span{padding-right:128px}
 .slotbtn.locked b,.slotbtn.locked span{padding-right:150px}
 .mini .no{margin-top:5px}
 /* finish key under card grids (new players don't know what the squares mean) */

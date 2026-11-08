@@ -19,15 +19,17 @@
   function tileHTML(s) {
     // Coming soon is one slim line in the home page's coming up list (30 Oct 2026); live, it is a full Today's files row.
     if (!s || s.status === 'soon') return `<div class="cupln icpsoon" aria-label="Code Room, a Declass daily puzzle, coming soon"><span class="tg ic">CODE ROOM</span><span class="cw">Daily puzzle</span><span class="r">Coming soon</span></div>`;
-    // the first part sits on its own line, the rest below it (29 Oct 2026)
-    const two = sub => { const i = sub.indexOf(' · '); return i < 0 ? `<span>${sub}</span>` : `<span>${sub.slice(0, i)}</span><span>${sub.slice(i + 3)}</span>`; };
-    const go = (sub, cls) => `<button class="icptile ${cls || 'live'}" id="icpTile" type="button"><b>Code Room</b>${two(sub)}</button>`;
-    if (s.status === 'signin') return go('a Declass daily puzzle · Sign in to crack today\'s files', 'wait');
-    if (s.status === 'new') return go('a Declass daily puzzle · Crack today\'s files');
-    if (s.status === 'play') return go(`In progress · ${s.found} of 4 links · ${s.mistakes} of 3 mistakes`);
+    // One line under the title, like the envelope rows, so the tile is always the same height as them (7 Nov 2026, Brian's ask).
+    // The full status goes in the label for screen readers.
+    const go = (sub, cls, full) => `<button class="icptile ${cls || 'live'}" id="icpTile" type="button" aria-label="Code Room. ${full || sub}"><b>Code Room</b><span>${sub}</span></button>`;
+    if (s.status === 'signin') return go('Sign in to play', 'wait', 'Sign in to crack today\'s files');
+    if (s.status === 'new') return go('Crack today\'s files');
+    if (s.status === 'play') return go(`${s.found} of 4 links found`, 'live', `In progress, ${s.found} of 4 links, ${s.mistakes} of 3 mistakes`);
     // The score is points out of 100 (25 a link, minus 10 a mistake), so the tile says so (7 Nov 2026).
-    if (s.status === 'solved') return go(`Cracked · Scored ${s.score} of 100 · ${s.canClaim ? 'Pick your card by midnight Eastern' : 'New files tomorrow'}`, s.canClaim ? 'live claim' : 'done');
-    return go('Not cracked today · New files tomorrow', 'done');
+    if (s.status === 'solved') return s.canClaim
+      ? go('Pick by midnight ET', 'live claim', `Cracked, scored ${s.score} of 100. Pick your card by midnight Eastern`)
+      : go(`Cracked · ${s.score} of 100`, 'done', `Cracked, scored ${s.score} of 100. New files tomorrow`);
+    return go('Not cracked today', 'done', 'Not cracked today. New files tomorrow');
   }
   function tile(el) {
     const s = D().state() && D().state().intercept;
