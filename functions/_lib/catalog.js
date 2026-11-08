@@ -37,10 +37,11 @@ export function findCard(id, t) {
 export const postedCards = t => CARDS.filter(c => released(c, t));
 
 // The dispatch card that posts at exactly this slot time (an envelope's guaranteed card).
-export const slotCards = slotIso => CARDS.filter(c => c.kind === 'dispatch' && c.postAt === slotIso);
+export const slotCards = slotIso => CARDS.filter(c => c.kind === 'dispatch' && c.opensEnvelope !== false && c.postAt === slotIso);
 
-// Every envelope time: one per distinct dispatch post time, oldest first.
-export const SLOT_TIMES = [...new Set(CARDS.filter(c => c.kind === 'dispatch').map(c => c.postAt))].sort();
+// Every envelope time: one per distinct dispatch post time, oldest first. A card flagged opensEnvelope false
+// (the 2:30 p.m. Mountain Axis card, 7 Nov 2026) opens no envelope; it joins the archive pool like any card.
+export const SLOT_TIMES = [...new Set(CARDS.filter(c => c.kind === 'dispatch' && c.opensEnvelope !== false).map(c => c.postAt))].sort();
 
 // Archive pools for envelopes. Weekday archive pulls: dispatches posted in the last 90 days.
 // Deep archive (Sunday morning, priority, commemorative): everything posted, Name This included.

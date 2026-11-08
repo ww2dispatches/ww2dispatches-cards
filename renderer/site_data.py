@@ -74,7 +74,7 @@ for d in cards:
         fmt = FORMATS.get(d.get("format"))
         slides.append({
             "date": post_date, "time": time, "kind": "card", "num": num,
-            "label": "8 a.m." if time < "12:00" else "5 p.m.",
+            "label": {"08:00": "8 a.m.", "14:30": "2:30 p.m.", "17:00": "5 p.m."}.get(time, time),
             "title": fmt or d.get("title", ""), "series": SERIES.get(d.get("series"), ""),
             "img": img,
             "alt": f"WW2 Dispatches card, Dispatch No. {num}, {SERIES.get(d.get('series'), '')}. {d.get('title', '')}.",
@@ -82,19 +82,34 @@ for d in cards:
             "ig": links.get("instagram") or IG_PROFILE,
         })
 
-    # The noon video that goes with this dispatch, if it has one.
+    # The video that goes with this dispatch, if it has one: noon for an 8 a.m. card, 7 p.m. for a
+    # 5 p.m. or 2:30 card (videoTime), plus any 7 p.m. second cut of an 8 a.m. card's film (video_b).
     story = d.get("story") or {}
-    is_living = bool((d.get("buffer") or {}).get("youtube")) and bool(d.get("video")) and not story
+    buf = d.get("buffer") or {}
+    is_living = bool(buf.get("youtube")) and bool(d.get("video")) and not story
+    vtime = d.get("videoTime") or "12:00"
+    vlabel = "Noon" if vtime == "12:00" else "7 p.m."
     if story or is_living:
         poster_file = f"videos/dispatch-{num}-instagram-poster.jpg"
         poster = media.url(poster_file) if media.exists(poster_file) else img
         if poster:
             slides.append({
-                "date": post_date, "time": "12:00", "kind": "video", "num": num,
-                "label": "Noon", "title": "The Story" if story else "The Footage",
+                "date": post_date, "time": vtime, "kind": "video", "num": num,
+                "label": vlabel, "title": "The Story" if story else "The Footage",
                 "series": SERIES.get(d.get("series"), ""), "img": poster,
-                "alt": f"Noon video for Dispatch No. {num}: {d.get('title', '')}.",
+                "alt": f"{vlabel} video for Dispatch No. {num}: {d.get('title', '')}.",
                 "link": links.get("youtube") or SHORTS, "linkLabel": "Watch",
+            })
+    if buf.get("youtube_b") and d.get("video_b"):
+        poster_file = f"videos/dispatch-{num}-b-instagram-poster.jpg"
+        poster = media.url(poster_file) if media.exists(poster_file) else img
+        if poster:
+            slides.append({
+                "date": post_date, "time": "19:00", "kind": "video", "num": num,
+                "label": "7 p.m.", "title": "The Footage",
+                "series": SERIES.get(d.get("series"), ""), "img": poster,
+                "alt": f"7 p.m. video for Dispatch No. {num}: {d.get('title', '')}.",
+                "link": links.get("youtube_b") or SHORTS, "linkLabel": "Watch",
             })
 
 # Name This, Wednesday and Saturday at 10 a.m.: a slide on its day, plus the Name This panel,

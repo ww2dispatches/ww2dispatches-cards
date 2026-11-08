@@ -41,6 +41,8 @@ FORMATS = {None: "Story", "photo": "Photo of the Day", "quote": "Quote of the Da
 PLATFORM = {"twitter": "X", "instagram": "Instagram", "threads": "Threads", "facebook": "Facebook",
             "youtube": "YouTube", "tiktok": "TikTok"}
 VIDEO_KEYS = {"x_film", "instagram_reel", "threads_film", "facebook_film", "youtube", "tiktok"}
+# A 7 p.m. second cut of an 8 a.m. card's film (Videos doc) uses the same keys with _b; its tags are themes.video_b.
+VIDEO_KEYS |= {k + "_b" for k in VIDEO_KEYS}
 SMOOTH, FLOOR, MIN_POSTS, WINDOW_DAYS = 10, 50, 5, 28
 WEIGHTS = {"reactions": 1, "likes": 1, "comments": 3, "reposts": 2, "quotes": 2, "shares": 2, "saves": 2}
 
@@ -100,9 +102,10 @@ def check_themes(recs, vocab):
                     continue  # other nations are written by name
                 if vocab.get(field) and v not in vocab[field]:
                     problems.append(f"{d['_file']}: {field} '{v}' is not in analytics/themes.md")
-        for k, v in (t.get("video") or {}).items():
-            if vocab.get("video." + k) and v not in vocab["video." + k]:
-                problems.append(f"{d['_file']}: video {k} '{v}' is not in analytics/themes.md")
+        for vk in ("video", "video_b"):
+            for k, v in (t.get(vk) or {}).items():
+                if vocab.get("video." + k) and v not in vocab["video." + k]:
+                    problems.append(f"{d['_file']}: {vk} {k} '{v}' is not in analytics/themes.md")
     return problems
 
 
@@ -112,7 +115,7 @@ def id_map(recs):
     for d in recs:
         for k, v in (d.get("buffer") or {}).items():
             if isinstance(v, str):
-                out[v] = (d, k in VIDEO_KEYS)
+                out[v] = (d, ("b" if k.endswith("_b") else True) if k in VIDEO_KEYS else False)
         story = d.get("story") or {}
         for k, v in (story.get("buffer") or {}).items():
             if isinstance(v, str):
@@ -196,7 +199,7 @@ def main():
         status = "final" if age >= 168 else "provisional" if age >= 48 else "too early"
         kind = "video" if is_video else d["_kind"]
         t = d.get("themes") or {}
-        tv = t.get("video") or {}
+        tv = (t.get("video_b") if is_video == "b" else t.get("video")) or {}
         views = views_of(m)
         points = sum(WEIGHTS.get(k, 0) * (v or 0) for k, v in m.items())
         dur = post.get("dur") or 0
@@ -208,7 +211,7 @@ def main():
             "title": d.get("title") or d.get("answer", ""),
             "post_date": sent.astimezone(MOUNTAIN).strftime("%Y-%m-%d"),
             "post_time": sent.astimezone(MOUNTAIN).strftime("%H:%M"),
-            "slot": {"08": "8 a.m.", "10": "10 a.m.", "12": "Noon", "17": "5 p.m."}.get(
+            "slot": {"08": "8 a.m.", "10": "10 a.m.", "12": "Noon", "14": "2:30 p.m.", "17": "5 p.m.", "19": "7 p.m."}.get(
                 sent.astimezone(MOUNTAIN).strftime("%H"), sent.astimezone(MOUNTAIN).strftime("%H:%M")),
             "series": SERIES.get(d.get("series"), ""),
             "format": "" if d["_kind"] == "namethis" else
@@ -240,7 +243,7 @@ def main():
             "link": post.get("link", ""),
             "buffer_id": pid,
             "json_file": d["_file"],
-            "_kind": kind, "_sent": sent,
+            "_kind": kind, "_sent": sent, "_b": is_video == "b",
         })
 
     # Baselines: same kind, same platform, scored posts from the last 28 days.
@@ -281,7 +284,8 @@ def main():
     # One score per post: the average over the platforms that count.
     posts = defaultdict(lambda: {"reach": [], "response": [], "rows": []})
     for r in rows:
-        key = (r["json_file"], r["_kind"])
+        # A 7 p.m. second cut is its own post, apart from the same card's noon video.
+        key = (r["json_file"], r["_kind"] + ("_b" if r.get("_b") else ""))
         posts[key]["rows"].append(r)
         if r["counts"] == "yes":
             posts[key]["reach"].append(r["reach_lift"])
@@ -304,7 +308,7 @@ def main():
             "format": r0["format"], "status": status, "image": image,
             "reach": round(statistics.mean(v["reach"]), 2) if v["reach"] else None,
             "response": round(statistics.mean(v["response"]), 2) if v["response"] else None,
-            "themes": d.get("themes") or {},
+            "themes": dict(d.get("themes") or {}, video=(d.get("themes") or {}).get("video_b" if kind.endswith("_b") else "video")),
             "question": bool(d.get("question")),
             "platforms": [{k: r[k] for k in ("platform", "status", "views", "likes", "comments", "reach_lift",
                                                "response_lift", "counts", "hold_pct", "link")} for r in v["rows"]],
@@ -341,7 +345,7 @@ def main():
             ("Question", lambda x: "with question" if x["question"] else "no question")]
             for t in group_table("Card", *g)],
         "Video": [t for g in [
-            ("Kind", lambda x: x["format"]), ("Opening", lambda x: (x["themes"].get("video") or {}).get("opening")),
+            ("Kind", lambda x: x["format"]), ("Slot", lambda x: x["slot"]), ("Opening", lambda x: (x["themes"].get("video") or {}).get("opening")),
             ("Sound", lambda x: (x["themes"].get("video") or {}).get("sound")), ("Series", lambda x: x["series"])]
             for t in group_table("Video", *g)],
         "Name This": [t for g in [("Photo", th("photo")), ("Theater", th("theater"))]

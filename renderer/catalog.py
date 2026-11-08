@@ -23,6 +23,9 @@ POST_TZ = ZoneInfo("America/Denver")  # Buffer posting times are Mountain
 SERIES = {"battle": "Battle Lines", "home": "Home Front", "blue": "Blueprint", "state": "Statecraft", "flash": "Flash"}
 CARDS_CDN = "https://cdn.jsdelivr.net/gh/ww2dispatches/ww2dispatches-cards@main/"
 CARD_LINKS = {"x": "x", "instagram": "instagram", "threads": "threads", "facebook": "facebook"}
+# Posts at these Mountain times never open a Declass envelope (Brian, 7 Nov 2026: the 2:30 p.m. Axis card
+# joins the archive pool like the 5 p.m. card, and Declass stays at two daily envelopes for now).
+NO_ENVELOPE_TIMES = {"14:30"}
 FILM_LINKS = {"youtube": "youtube", "tiktok": "tiktok", "x": "x_film", "instagram": "instagram_reel",
               "threads": "threads_film", "facebook": "facebook_film"}
 
@@ -182,7 +185,8 @@ for d in dispatches:
     if video and kit and not d.get("story"):  # a real Living Card, not a Story Card
         sound = ((d.get("themes") or {}).get("video") or {}).get("sound")
         film = {
-            "postAt": utc(post_date, "12:00"),
+            # The card's own video posts at noon (an 8 a.m. card) or 7 p.m. (a 5 p.m. or 2:30 card), per videoTime.
+            "postAt": utc(post_date, d.get("videoTime") or "12:00"),
             "mp4": media.url(f"videos/dispatch-{num}-instagram.mp4"),
             "poster": media.url(f"videos/dispatch-{num}-instagram-poster.jpg"),
             "caption": kit.get("filmCaption", ""),
@@ -202,7 +206,7 @@ for d in dispatches:
         if ph_url:
             dfile["photo"] = {"img": ph_url, "credit": ph.get("credit", ""), "caption": ph.get("caption", ""), "page": ph.get("page", "")}
         if d.get("story"):  # a Story Card: its narrated vertical video (Videos doc), from the noon post
-            dfile["video"] = {"postAt": utc(post_date, "12:00"), "mp4": media.url(f"videos/dispatch-{num}-story-am_onyx.mp4")}
+            dfile["video"] = {"postAt": utc(post_date, d.get("videoTime") or "12:00"), "mp4": media.url(f"videos/dispatch-{num}-story-am_onyx.mp4")}
 
     catalog.append(merge_tags({
         "kind": "dispatch",
@@ -220,6 +224,7 @@ for d in dispatches:
         "era": era(d["date"]),
         "format": d.get("format") or "story",
         "postAt": utc(post_date, d.get("time") or "08:00"),
+        "opensEnvelope": (d.get("time") or "08:00") not in NO_ENVELOPE_TIMES,
         "img": img,
         "tilePhoto": tile_photo(d, d["id"]),
         "tileLabel": d.get("tile") or d.get("short") or d.get("title", ""),

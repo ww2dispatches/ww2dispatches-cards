@@ -88,7 +88,7 @@ for d in cards:
         "dispatch_no": f"{d['num']:03d}",
         "post_date": posted,
         "post_time": time,
-        "slot": "Evening" if time >= "12:00" else "Morning",
+        "slot": "Morning" if time < "12:00" else "Afternoon" if time < "16:00" else "Evening",
         "series": SERIES.get(d["series"], d["series"]),
         "format": FORMATS.get(d.get("format"), d.get("format")),
         "event_date": d["date"],
@@ -99,6 +99,8 @@ for d in cards:
         "quote_by": d.get("quoteBy", ""),
         "spec_title": d.get("specTitle", ""),
         "noon_video": kind,
+        "video_time": (d.get("videoTime") or "12:00") if kind else "",
+        "second_cut": "Living Card" if (d.get("kit_b") or d.get("video_b")) else "",
         "film_source": video.get("sourceUrl", ""),
         "film_sound": yes(video.get("sound")),
         "photo_credit": d.get("photoCredit") or d.get("photoNote", ""),
@@ -136,11 +138,12 @@ by_series = Counter(r["series"] for r in rows)
 by_slot = Counter((r["series"], r["slot"]) for r in rows)
 with open(os.path.join(root, "log", "series-counts.csv"), "w", newline="", encoding="utf-8-sig") as f:
     w = csv.writer(f)
-    w.writerow(["series", "cards", "morning", "evening", "share"])
+    w.writerow(["series", "cards", "morning", "afternoon", "evening", "share"])
     for s in SERIES.values():
         n = by_series[s]
-        w.writerow([s, n, by_slot[(s, "Morning")], by_slot[(s, "Evening")], f"{n / total:.0%}" if total else "0%"])
+        w.writerow([s, n, by_slot[(s, "Morning")], by_slot[(s, "Afternoon")], by_slot[(s, "Evening")], f"{n / total:.0%}" if total else "0%"])
     w.writerow(["All series", total, sum(1 for r in rows if r["slot"] == "Morning"),
+                sum(1 for r in rows if r["slot"] == "Afternoon"),
                 sum(1 for r in rows if r["slot"] == "Evening"), "100%"])
 
 # Name This cards
