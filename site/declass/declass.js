@@ -159,7 +159,11 @@
   // media.ww2dispatches.com (R2, since 6 Nov 2026) get the same two retries; they have no GitHub copy.
   document.addEventListener('error', e => {
     const im = e.target;
-    if (!(im instanceof HTMLImageElement) || !/cdn\.jsdelivr\.net\/gh\/ww2dispatches\/|^https:\/\/media\.ww2dispatches\.com\//.test(im.src)) return;
+    if (!(im instanceof HTMLImageElement)) return;
+    // a game sized copy on ww2dispatches.com (9 Nov 2026) that fails goes straight to the full picture on jsDelivr
+    const gm = im.src.match(/\/declass\/cards\/(?:t\/)?([\w-]+)\.webp/);
+    if (gm && !im.dataset.full) { im.dataset.full = '1'; im.classList.remove('ok'); im.src = 'https://cdn.jsdelivr.net/gh/ww2dispatches/ww2dispatches-cards@main/cards/' + gm[1] + '.jpg'; return; }
+    if (!/cdn\.jsdelivr\.net\/gh\/ww2dispatches\/|^https:\/\/media\.ww2dispatches\.com\//.test(im.src)) return;
     const n = +(im.dataset.retry || 0);
     im.classList.remove('ok');
     if (n >= 3) { im.classList.add('bad'); return; }
@@ -516,7 +520,7 @@
       if (signedIn()) return `<button class="mini sealed req today" data-today="${esc(id)}"><span class="thumb">?</span><span class="no">${esc(label(info))}</span><span class="nm">${esc(info.short)}</span>${dots}<span class="reqline">Tomorrow</span></button>`;
       return `<div class="mini sealed"><span class="thumb">?</span><span class="no">${esc(label(info))}</span><span class="nm">${esc(info.short)}</span>${dots}</div>`;
     }
-    return `<button class="mini" data-id="${esc(id)}"><span class="picw${info.flash ? ' fl' : ''}"><img class="thumb ${info.flash ? 'flash' : 'f-' + best}" loading="lazy" src="${esc(info.img)}" alt="${esc(info.short)}"></span><span class="no">${esc(label(info))}</span><span class="nm">${esc(info.short)}</span>${dots}</button>`;
+    return `<button class="mini" data-id="${esc(id)}"><span class="picw${info.flash ? ' fl' : ''}"><img class="thumb ${info.flash ? 'flash' : 'f-' + best}" loading="lazy" src="${esc(info.imgThumb || info.img)}" alt="${esc(info.short)}"></span><span class="no">${esc(label(info))}</span><span class="nm">${esc(info.short)}</span>${dots}</button>`;
   }
   // label names the group the card view pages through ("Battle Lines", "Last envelope"), shown at its top (29 Oct 2026).
   function wireMinis(el, list, label) {
@@ -1624,7 +1628,7 @@
     if (!imgCache.has(src)) imgCache.set(src, new Promise((ok, bad) => { const i = new Image(); i.crossOrigin = 'anonymous'; i.onload = () => ok(i); i.onerror = bad; i.src = src; }));
     return imgCache.get(src);
   }
-  const shareSrc = x => x.variant === 'living' && x.info.filmPoster ? x.info.filmPoster : x.info.img;
+  const shareSrc = x => x.variant === 'living' && x.info.filmPoster ? x.info.filmPoster : (x.info.imgFull || x.info.img); // the share picture keeps the full size card
   function grad(c, x, y, w, h, stops) { const g = c.createLinearGradient(x, y, x + w, y + h); stops.forEach(([o, col]) => g.addColorStop(o, col)); return g; }
   // Rounded rectangle, with a plain one on older Safari (before 16) that lacks roundRect.
   const rrect = (c, x, y, w, h, r) => c.roundRect ? c.roundRect(x, y, w, h, r) : c.rect(x, y, w, h);
@@ -1775,7 +1779,7 @@
     shAll.forEach((x, i) => {
       const b = document.createElement('button');
       b.className = 'shpc' + (shSel[i] ? '' : ' off'); b.type = 'button';
-      b.innerHTML = `<span class="picw"><img src="${esc(x.info.img)}" alt=""></span><b>✓</b><small>${esc((x.variant === 'living' ? 'Living ' : '') + FNAME[x.finish] + ' ' + x.info.short)}</small>`;
+      b.innerHTML = `<span class="picw"><img src="${esc(x.info.imgThumb || x.info.img)}" alt=""></span><b>✓</b><small>${esc((x.variant === 'living' ? 'Living ' : '') + FNAME[x.finish] + ' ' + x.info.short)}</small>`;
       b.onclick = () => { if (shSel[i] && shSel.filter(Boolean).length === 1) return; shSel[i] = !shSel[i]; shDrawPicks(); shRefresh(); };
       row.appendChild(b);
     });

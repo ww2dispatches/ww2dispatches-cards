@@ -74,6 +74,42 @@ def tile_photo(record, card_id):
     return f"/declass/tiles/{card_id}.jpg?v={v}"
 
 
+# Game sized card pictures (9 Nov 2026). The posted 1080 by 1350 JPEGs average about 430 KB and came through
+# jsDelivr, which is slow the first time anyone asks for a new card. Declass now loads a 720 by 900 WebP face
+# (about 80 KB) and a 288 by 360 WebP thumbnail for grids (about 13 KB), served by ww2dispatches.com itself and
+# cached for a year (the address carries a version tag). The full JPEG stays as imgFull for the share picture.
+# Made here, like the tiles, so every run that rebuilds the catalog makes them; without Pillow the game falls
+# back to the full JPEG.
+GAME_DIR = "site/declass/cards"
+GAME_SIZES = {"": ((720, 900), 80), "t/": ((288, 360), 74)}
+
+
+def game_imgs(rel):
+    """{img, imgThumb, imgFull} for a card picture in cards/, or None when the picture doesn't exist yet."""
+    full = card_url(rel)
+    if not full:
+        return None
+    src = os.path.join(root, rel)
+    stem = os.path.splitext(os.path.basename(rel))[0]
+    urls = {}
+    for sub, (size, q) in GAME_SIZES.items():
+        out_rel = f"{GAME_DIR}/{sub}{stem}.webp"
+        out = os.path.join(root, out_rel)
+        if not os.path.exists(out) or os.path.getmtime(out) < os.path.getmtime(src):
+            try:
+                from PIL import Image
+                im = Image.open(src).convert("RGB")
+                w = size[0]; im = im.resize((w, round(w * im.size[1] / im.size[0])), Image.LANCZOS)  # keep the shape
+                os.makedirs(os.path.dirname(out), exist_ok=True)
+                im.save(out, "WEBP", quality=q, method=6)
+            except Exception as e:  # no Pillow or a bad file: use the full picture
+                print(f"catalog.py: no game picture for {rel}: {e}")
+                return {"img": full, "imgThumb": full, "imgFull": full}
+        v = hashlib.sha1(open(out, "rb").read()).hexdigest()[:8]
+        urls[sub] = f"/declass/cards/{sub}{stem}.webp?v={v}"
+    return {"img": urls[""], "imgThumb": urls["t/"], "imgFull": full}
+
+
 def utc(day, hhmm):
     """A Mountain post date and time as a UTC ISO string (daylight saving handled)."""
     local = datetime.datetime.fromisoformat(f"{day}T{hhmm}:00").replace(tzinfo=POST_TZ)
@@ -175,7 +211,8 @@ for d in dispatches:
     links = d.get("links") or {}
     post_date = links.get("posted") or f"{year}-{md}"
     num = f"{d['num']:03d}"
-    img = card_url(f"cards/dispatch-{num}-instagram.jpg")
+    gi = game_imgs(f"cards/dispatch-{num}-instagram.jpg")
+    img = gi and gi["img"]
     if not img:
         skipped.append(f"No. {num} (no card image yet)")
         continue
@@ -226,6 +263,8 @@ for d in dispatches:
         "postAt": utc(post_date, d.get("time") or "08:00"),
         "opensEnvelope": (d.get("time") or "08:00") not in NO_ENVELOPE_TIMES,
         "img": img,
+        "imgThumb": gi["imgThumb"],
+        "imgFull": gi["imgFull"],
         "tilePhoto": tile_photo(d, d["id"]),
         "tileLabel": d.get("tile") or d.get("short") or d.get("title", ""),
         "story": d.get("body", ""),
@@ -244,8 +283,10 @@ puzzles = sorted([n for n in load("namethis") if n.get("post_date")], key=lambda
 post_times = [utc(n["post_date"], n.get("time") or "10:00") for n in puzzles]
 for i, n in enumerate(puzzles):
     fallback = card_url(f"cards/namethis-{n['id']}-x.jpg") or n.get("cardImage")
-    img_a = card_url(f"cards/namethis-{n['id']}-game-a.jpg") or fallback
-    img_q = card_url(f"cards/namethis-{n['id']}-game-q.jpg") or fallback
+    ga = game_imgs(f"cards/namethis-{n['id']}-game-a.jpg")
+    gq = game_imgs(f"cards/namethis-{n['id']}-game-q.jpg")
+    img_a = (ga and ga["img"]) or fallback
+    img_q = (gq and gq["img"]) or fallback
     if not img_a:
         skipped.append(f"Name This {n['id']} (no card image yet)")
         continue
@@ -268,6 +309,8 @@ for i, n in enumerate(puzzles):
         "answerAt": post_times[i + 1] if i + 1 < len(post_times) else None,
         "img": img_a,
         "imgPuzzle": img_q,
+        "imgThumb": (ga and ga["imgThumb"]) or img_a,
+        "imgFull": (ga and ga["imgFull"]) or img_a,
         "tilePhoto": tile_photo(n, f"namethis-{n['id']}"),
         "tileLabel": n.get("tile") or n.get("short") or n.get("answer", ""),
         "gameImages": bool(card_url(f"cards/namethis-{n['id']}-game-a.jpg")),

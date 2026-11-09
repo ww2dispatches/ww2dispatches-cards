@@ -81,7 +81,7 @@ export function summary(card, t) {
   const s = {
     kind: card.kind, id: card.id, num: card.num, series: card.series, seriesName: card.seriesName,
     short: card.short, title: card.title, date: card.date, place: card.place, era: card.era,
-    format: card.format, postAt: card.postAt, img: card.img, tilePhoto: card.tilePhoto || null, tileLabel: card.tileLabel || card.short, hasFilm: filmReleased(card, t), flash: Boolean(card.flash), hasFile: Boolean(card.dfile),
+    format: card.format, postAt: card.postAt, img: card.img, imgThumb: card.imgThumb || card.img, imgFull: card.imgFull || card.img, tilePhoto: card.tilePhoto || null, tileLabel: card.tileLabel || card.short, hasFilm: filmReleased(card, t), flash: Boolean(card.flash), hasFile: Boolean(card.dfile),
     subjects: card.subjects, theater: card.theater, nations: card.nations, who: card.who, happened: card.happened, branch: card.branch,
   };
   s.today = isTodayCard(card, t); // today's cards can never be requested

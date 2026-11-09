@@ -8,3 +8,7 @@
 /declass/tiles/*
   ! Cache-Control
   Cache-Control: public, max-age=31536000, immutable
+# Game sized card pictures (9 Nov 2026): versioned addresses, so phones keep them for a year.
+/declass/cards/*
+  ! Cache-Control
+  Cache-Control: public, max-age=31536000, immutable
