@@ -36,18 +36,18 @@
   {
    "piece": "stug",
    "machine": "StuG III",
-   "variant": "Ausf. G, late",
+   "variant": "Ausf. G",
    "role": "Assault gun",
    "side": "Germany",
    "branch": "land",
    "file": "stug.webp",
    "fileLarge": "stug-lg.webp",
-   "credit": "US Army Signal Corps photo, NARA 292586",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Assault-guns-knocked-out.jpg",
-   "recordId": "NARA 292586",
-   "license": "Public domain (US government work)",
+   "credit": "Finnish Army photo, Enso, 4 June 1944, photographer unknown",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:StuG_III_Ausf._G.jpg",
+   "recordId": "Wikimedia Commons: StuG III Ausf. G.jpg",
+   "license": "Public domain",
    "illustration": false,
-   "alt": "A StuG III assault gun, side view, long gun raised"
+   "alt": "A StuG III Ausf. G assault gun on a road, crew in the hatches, a column behind it"
   },
   {
    "piece": "halftrack",
