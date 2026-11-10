@@ -1167,3 +1167,13 @@ html.ztrial #stage2{cursor:zoom-in}
 .cf.lv:not(.flash):not(.f-copper) .sheen{mix-blend-mode:normal;opacity:.6;-webkit-mask:linear-gradient(#000 0 0),linear-gradient(rgba(0,0,0,.8) 0 0) center/92.9% 76.4% no-repeat;-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0),linear-gradient(rgba(0,0,0,.8) 0 0) center/92.9% 76.4% no-repeat;mask-composite:exclude}
 .zoomer.zoomed .cf .fk1,.zoomer.zoomed .cf .mir{opacity:0;transition:opacity .2s}
 @media (prefers-reduced-motion:reduce){.cf.f-gold .frame,.cf.f-topsecret .frame::before{animation:none!important}}
+
+/* Trademark mark after the DECLASS title (10 Nov 2026, for the USPTO specimen). Never the registered mark until registered. */
+.tm{font-size:.3em;vertical-align:super;line-height:0;letter-spacing:0;margin-left:.05em;font-weight:500}
+.wordmark .tm{font-size:.42em}
+/* On a computer screen the whole landing (title, envelope, Open your starter pack, and the company footer) fits in one
+   window without scrolling (10 Nov 2026, for the USPTO specimen). Phones are unchanged. */
+@media (min-width:900px) and (max-height:1000px){#sLanding{zoom:.92}}
+@media (min-width:900px) and (max-height:880px){#sLanding{zoom:.8}}
+@media (min-width:900px) and (max-height:770px){#sLanding{zoom:.72}}
+@media (min-width:900px) and (max-height:690px){#sLanding{zoom:.66}}
