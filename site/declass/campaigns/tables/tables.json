@@ -1,0 +1,21 @@
+{
+ "format": 1,
+ "tables": [
+  {
+   "table": "bastogne_perimeter",
+   "file": "bastogne_perimeter.svg",
+   "orientation": "North up: the German side to the north, the perimeter across the center band, Bastogne on your line",
+   "tracedFrom": "Village positions from Belgian postcode place data; the US perimeter and German line of 22 to 26 December 1944 drawn from the campaign history (Combat Studies Institute, The 101st Airborne Division's Defense of Bastogne; Cole, The Ardennes)",
+   "mapData": "Belgian postcode localities (jief/zipcode-belgium)",
+   "credit": "Map drawn for WW2 Dispatches from public place data"
+  },
+  {
+   "table": "alsace_moder",
+   "file": "alsace_moder.svg",
+   "orientation": "Northeast up (the compass shows true north): the Maginot line and the German side at the top, Hatten, Rittershoffen and the Haguenau Forest in the center band, the Moder and Haguenau on your line",
+   "tracedFrom": "Village positions and the Haguenau Forest from French commune boundaries; the Moder along its riverside villages; the lines of 9 and 21 January 1945 drawn from Clarke and Smith, Riviera to the Rhine (Center of Military History)",
+   "mapData": "French commune boundaries for Bas-Rhin (gregoiredavid/france-geojson, from IGN and OpenStreetMap)",
+   "credit": "Map drawn for WW2 Dispatches from public place data"
+  }
+ ]
+}

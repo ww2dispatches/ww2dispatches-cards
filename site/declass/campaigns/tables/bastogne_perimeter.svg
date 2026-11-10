@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 574" width="390" height="574" font-family="'Special Elite','Courier New',monospace">
+<defs>
+<pattern id="wd" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><rect width="6" height="6" fill="#9a9a6c" fill-opacity=".30"/><circle cx="3" cy="3" r="1.1" fill="#2a2016" fill-opacity=".22"/></pattern>
+<pattern id="eh" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><line x1="0" y1="0" x2="0" y2="5" stroke="#7a2f27" stroke-opacity=".17" stroke-width="1.3"/></pattern>
+<clipPath id="cl"><rect width="390" height="574"/></clipPath>
+</defs>
+<rect width="390" height="574" fill="#cdbf98"/>
+<g clip-path="url(#cl)">
+<path fill-rule="evenodd" d="M-20,-20 H410 V594 H-20 Z M95.5,285.2 C115.7,263.9 142.5,237.6 163.6,232.6 C184.7,227.6 207.8,236.4 222.0,255.2 C236.2,274.0 236.6,329.1 248.7,345.4 C260.9,361.7 275.1,346.6 295.0,352.9 C314.8,359.2 361.5,364.2 367.9,383.0 C374.4,401.8 339.6,445.6 333.9,465.7 C328.2,485.7 330.6,484.5 333.9,503.3 C337.1,522.1 361.5,560.3 353.3,578.5 C345.2,596.6 307.9,608.5 285.2,612.3 C262.5,616.1 236.6,607.3 217.1,601.0 C197.6,594.8 190.3,577.2 168.4,574.7 C146.6,572.2 106.8,594.1 85.7,586.0 C64.6,577.8 48.4,549.0 41.9,525.8 C35.5,502.7 48.4,466.3 46.8,446.9 C45.2,427.5 33.0,423.7 32.2,409.3 C31.4,394.9 31.4,381.1 41.9,360.4 Z" fill="url(#eh)"/>
+<path d="M329.0,334.1 C341.2,341.0 355.8,359.8 358.2,371.7 C360.6,383.6 353.3,401.8 343.6,405.5 C333.9,409.3 310.4,401.1 299.8,394.3 C289.3,387.4 282.8,374.8 280.4,364.2 C277.9,353.5 277.1,335.4 285.2,330.3 Z" fill="url(#wd)" stroke="#2a2016" stroke-opacity=".25" stroke-width=".6"/>
+<path d="M363.1,570.9 C374.4,576.6 389.0,597.3 387.4,608.5 C385.8,619.8 365.5,637.4 353.3,638.6 C341.2,639.9 320.1,626.7 314.4,616.1 C308.7,605.4 311.2,582.2 319.3,574.7 Z" fill="url(#wd)" stroke="#2a2016" stroke-opacity=".25" stroke-width=".6"/>
+<path d="M100.3,270.2 C110.5,274.0 122.6,297.8 119.8,307.8 C117.0,317.8 93.4,334.1 83.3,330.3 C73.2,326.6 56.1,295.3 59.0,285.2 Z" fill="url(#wd)" stroke="#2a2016" stroke-opacity=".25" stroke-width=".6"/>
+<path d="M76.0,480.7 C84.1,479.5 97.5,494.5 95.5,503.3 C93.4,512.1 71.9,532.1 63.8,533.4 C55.7,534.6 44.8,519.6 46.8,510.8 Z" fill="url(#wd)" stroke="#2a2016" stroke-opacity=".25" stroke-width=".6"/>
+<path d="M230.0,492.0 C232.3,481.3 239.1,451.9 243.9,428.1 C248.6,404.3 242.0,378.7 258.5,349.1 C275.0,319.6 323.4,288.9 342.9,250.6 C362.3,212.4 363.8,166.7 375.2,119.8 C386.7,73.0 405.6,-5.5 411.7,-30.6" fill="none" stroke="#2a2016" stroke-opacity=".5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M230.0,492.0 C245.1,482.3 290.2,458.2 320.5,433.7 C350.8,409.3 382.7,375.1 411.7,345.4 C440.7,315.6 466.1,280.2 494.4,255.2 C522.8,230.1 567.4,205.0 582.0,195.0" fill="none" stroke="#2a2016" stroke-opacity=".5" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M230.0,492.0 C247.7,490.1 307.6,488.2 336.3,480.7 C365.0,473.2 370.4,460.0 402.0,446.9 C433.6,433.7 505.4,409.3 526.1,401.8" fill="none" stroke="#2a2016" stroke-opacity=".5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M230.0,492.0 C241.2,501.7 268.8,543.5 297.4,550.3 C326.0,557.0 358.1,529.2 401.5,532.6 C444.9,536.0 531.7,564.6 557.7,570.9" fill="none" stroke="#2a2016" stroke-opacity=".5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M230.0,492.0 C233.1,502.0 242.8,526.5 248.7,552.2 C254.7,577.8 260.9,611.7 265.8,646.1 C270.6,680.6 275.9,740.1 277.9,758.9" fill="none" stroke="#2a2016" stroke-opacity=".5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M230.0,492.0 C221.8,496.4 203.0,505.2 180.6,518.3 C158.2,531.5 119.7,554.8 95.5,570.9 C71.2,587.0 45.2,607.6 35.1,614.9" fill="none" stroke="#2a2016" stroke-opacity=".5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M230.0,492.0 C221.0,487.0 198.2,470.7 175.7,461.9 C153.3,453.2 123.0,447.8 95.5,439.4 C67.9,430.9 33.1,422.7 10.3,411.2 C-12.4,399.6 -18.7,381.2 -41.0,370.2 C-63.3,359.2 -109.7,349.5 -123.5,345.4" fill="none" stroke="#2a2016" stroke-opacity=".5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M175.7,461.9 C171.3,457.5 162.8,448.8 149.0,435.6 C135.2,422.5 90.1,406.5 93.0,383.0 C96.0,359.5 163.0,328.7 166.5,294.6 C170.0,260.6 122.7,198.1 114.0,178.8" fill="none" stroke="#2a2016" stroke-opacity=".5" stroke-width="1.0" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M149.0,435.6 C148.2,419.3 141.2,361.4 144.1,337.9 C147.0,314.4 162.8,301.8 166.5,294.6" fill="none" stroke="#2a2016" stroke-opacity=".5" stroke-width="1.0" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M243.9,428.1 C241.0,419.9 243.5,394.3 226.8,379.2 C210.2,364.2 157.9,344.8 144.1,337.9" fill="none" stroke="#2a2016" stroke-opacity=".5" stroke-width="1.0" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M180.6,518.3 C167.6,520.5 123.4,525.2 102.8,531.5 C82.1,537.7 64.2,551.8 56.5,555.9" fill="none" stroke="#2a2016" stroke-opacity=".5" stroke-width="1.0" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M336.3,480.7 L320.5,433.7" fill="none" stroke="#2a2016" stroke-opacity=".5" stroke-width="1.0" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="0" y1="0" x2="0" y2="574" stroke="#283c46" stroke-opacity=".11" stroke-width="1"/>
+<line x1="34" y1="0" x2="34" y2="574" stroke="#283c46" stroke-opacity=".11" stroke-width="1"/>
+<line x1="68" y1="0" x2="68" y2="574" stroke="#283c46" stroke-opacity=".11" stroke-width="1"/>
+<line x1="102" y1="0" x2="102" y2="574" stroke="#283c46" stroke-opacity=".11" stroke-width="1"/>
+<line x1="136" y1="0" x2="136" y2="574" stroke="#283c46" stroke-opacity=".11" stroke-width="1"/>
+<line x1="170" y1="0" x2="170" y2="574" stroke="#283c46" stroke-opacity=".11" stroke-width="1"/>
+<line x1="204" y1="0" x2="204" y2="574" stroke="#283c46" stroke-opacity=".11" stroke-width="1"/>
+<line x1="238" y1="0" x2="238" y2="574" stroke="#283c46" stroke-opacity=".11" stroke-width="1"/>
+<line x1="272" y1="0" x2="272" y2="574" stroke="#283c46" stroke-opacity=".11" stroke-width="1"/>
+<line x1="306" y1="0" x2="306" y2="574" stroke="#283c46" stroke-opacity=".11" stroke-width="1"/>
+<line x1="340" y1="0" x2="340" y2="574" stroke="#283c46" stroke-opacity=".11" stroke-width="1"/>
+<line x1="374" y1="0" x2="374" y2="574" stroke="#283c46" stroke-opacity=".11" stroke-width="1"/>
+<line x1="0" y1="0" x2="390" y2="0" stroke="#283c46" stroke-opacity=".11" stroke-width="1"/>
+<line x1="0" y1="34" x2="390" y2="34" stroke="#283c46" stroke-opacity=".11" stroke-width="1"/>
+<line x1="0" y1="68" x2="390" y2="68" stroke="#283c46" stroke-opacity=".11" stroke-width="1"/>
+<line x1="0" y1="102" x2="390" y2="102" stroke="#283c46" stroke-opacity=".11" stroke-width="1"/>
+<line x1="0" y1="136" x2="390" y2="136" stroke="#283c46" stroke-opacity=".11" stroke-width="1"/>
+<line x1="0" y1="170" x2="390" y2="170" stroke="#283c46" stroke-opacity=".11" stroke-width="1"/>
+<line x1="0" y1="204" x2="390" y2="204" stroke="#283c46" stroke-opacity=".11" stroke-width="1"/>
+<line x1="0" y1="238" x2="390" y2="238" stroke="#283c46" stroke-opacity=".11" stroke-width="1"/>
+<line x1="0" y1="272" x2="390" y2="272" stroke="#283c46" stroke-opacity=".11" stroke-width="1"/>
+<line x1="0" y1="306" x2="390" y2="306" stroke="#283c46" stroke-opacity=".11" stroke-width="1"/>
+<line x1="0" y1="340" x2="390" y2="340" stroke="#283c46" stroke-opacity=".11" stroke-width="1"/>
+<line x1="0" y1="374" x2="390" y2="374" stroke="#283c46" stroke-opacity=".11" stroke-width="1"/>
+<line x1="0" y1="408" x2="390" y2="408" stroke="#283c46" stroke-opacity=".11" stroke-width="1"/>
+<line x1="0" y1="442" x2="390" y2="442" stroke="#283c46" stroke-opacity=".11" stroke-width="1"/>
+<line x1="0" y1="476" x2="390" y2="476" stroke="#283c46" stroke-opacity=".11" stroke-width="1"/>
+<line x1="0" y1="510" x2="390" y2="510" stroke="#283c46" stroke-opacity=".11" stroke-width="1"/>
+<line x1="0" y1="544" x2="390" y2="544" stroke="#283c46" stroke-opacity=".11" stroke-width="1"/>
+<path d="M119.8,307.8 C134.4,290.2 145.7,270.2 158.7,266.4 C171.7,262.7 184.7,267.7 197.6,285.2 C210.6,302.8 224.0,355.4 236.6,371.7 C249.1,388.0 256.0,376.7 273.1,383.0 C290.1,389.2 332.7,395.5 338.7,409.3 C344.8,423.1 314.8,450.6 309.6,465.7 C304.3,480.7 305.5,483.9 307.1,499.5 C308.7,515.2 324.2,545.3 319.3,559.7 C314.4,574.1 292.9,583.5 277.9,586.0 C262.9,588.5 246.3,581.0 229.3,574.7 C212.2,568.4 196.0,551.5 175.7,548.4 C155.5,545.3 124.3,561.5 107.6,555.9 C91.0,550.3 80.9,532.1 76.0,514.6 C71.1,497.0 80.1,467.6 78.4,450.6 C76.8,433.7 67.5,426.2 66.3,413.1 C65.1,399.9 62.2,389.2 71.1,371.7 Z" fill="none" stroke="#2a2016" stroke-opacity=".7" stroke-width="2" />
+<path d="M119.8,307.8 C134.4,290.2 145.7,270.2 158.7,266.4 C171.7,262.7 184.7,267.7 197.6,285.2 C210.6,302.8 224.0,355.4 236.6,371.7 C249.1,388.0 256.0,376.7 273.1,383.0 C290.1,389.2 332.7,395.5 338.7,409.3 C344.8,423.1 314.8,450.6 309.6,465.7 C304.3,480.7 305.5,483.9 307.1,499.5 C308.7,515.2 324.2,545.3 319.3,559.7 C314.4,574.1 292.9,583.5 277.9,586.0 C262.9,588.5 246.3,581.0 229.3,574.7 C212.2,568.4 196.0,551.5 175.7,548.4 C155.5,545.3 124.3,561.5 107.6,555.9 C91.0,550.3 80.9,532.1 76.0,514.6 C71.1,497.0 80.1,467.6 78.4,450.6 C76.8,433.7 67.5,426.2 66.3,413.1 C65.1,399.9 62.2,389.2 71.1,371.7 Z" fill="none" stroke="#2a2016" stroke-opacity=".5" stroke-width="5" stroke-dasharray="1.2 6"/>
+<circle cx="230.0" cy="492.0" r="0" fill="#cdbf98" fill-opacity=".85"/>
+<rect x="225.0" y="487.0" width="10" height="10" fill="#2a2016" fill-opacity=".72"/>
+<rect x="222.0" y="484.0" width="16" height="16" fill="none" stroke="#2a2016" stroke-opacity=".5" stroke-width=".8"/>
+<text x="241.0" y="506.0" font-size="11" letter-spacing=".08em" fill="#2a2016" fill-opacity=".72" text-anchor="start">BASTOGNE</text>
+<rect x="294.8" y="547.7" width="5.2" height="5.2" fill="#2a2016" fill-opacity=".62"/>
+<text x="302.4" y="561.3" font-size="8.2" letter-spacing=".08em" fill="#2a2016" fill-opacity=".72" text-anchor="start">MARVIE</text>
+<rect x="146.4" y="433.0" width="5.2" height="5.2" fill="#2a2016" fill-opacity=".62"/>
+<text x="144.0" y="446.6" font-size="8.2" letter-spacing=".08em" fill="#2a2016" fill-opacity=".72" text-anchor="end">HEMROULLE</text>
+<rect x="90.4" y="380.4" width="5.2" height="5.2" fill="#2a2016" fill-opacity=".62"/>
+<text x="88.0" y="378.0" font-size="8.2" letter-spacing=".08em" fill="#2a2016" fill-opacity=".72" text-anchor="end">CHAMPS</text>
+<rect x="163.9" y="292.0" width="5.2" height="5.2" fill="#2a2016" fill-opacity=".62"/>
+<text x="172.5" y="290.6" font-size="8.2" letter-spacing=".08em" fill="#2a2016" fill-opacity=".72" text-anchor="start">LONGCHAMPS</text>
+<rect x="141.5" y="335.3" width="5.2" height="5.2" fill="#2a2016" fill-opacity=".62"/>
+<text x="139.1" y="347.9" font-size="8.2" letter-spacing=".08em" fill="#2a2016" fill-opacity=".72" text-anchor="end">ROLLEY</text>
+<rect x="255.9" y="346.5" width="5.2" height="5.2" fill="#2a2016" fill-opacity=".62"/>
+<text x="264.5" y="345.1" font-size="8.2" letter-spacing=".08em" fill="#2a2016" fill-opacity=".72" text-anchor="start">FOY</text>
+<rect x="224.2" y="376.6" width="5.2" height="5.2" fill="#2a2016" fill-opacity=".62"/>
+<text x="221.8" y="389.2" font-size="8.2" letter-spacing=".08em" fill="#2a2016" fill-opacity=".72" text-anchor="end">RECOGNE</text>
+<rect x="340.3" y="248.0" width="5.2" height="5.2" fill="#2a2016" fill-opacity=".62"/>
+<text x="348.9" y="246.6" font-size="8.2" letter-spacing=".08em" fill="#2a2016" fill-opacity=".72" text-anchor="start">NOVILLE</text>
+<rect x="317.9" y="431.1" width="5.2" height="5.2" fill="#2a2016" fill-opacity=".62"/>
+<text x="326.5" y="429.7" font-size="8.2" letter-spacing=".08em" fill="#2a2016" fill-opacity=".72" text-anchor="start">BIZORY</text>
+<rect x="333.7" y="478.1" width="5.2" height="5.2" fill="#2a2016" fill-opacity=".62"/>
+<text x="341.3" y="490.7" font-size="8.2" letter-spacing=".08em" fill="#2a2016" fill-opacity=".72" text-anchor="start">NEFFE</text>
+<rect x="100.2" y="528.9" width="5.2" height="5.2" fill="#2a2016" fill-opacity=".62"/>
+<text x="100.8" y="543.5" font-size="8.2" letter-spacing=".08em" fill="#2a2016" fill-opacity=".72" text-anchor="middle">SENONCHAMPS</text>
+<rect x="53.9" y="553.3" width="5.2" height="5.2" fill="#2a2016" fill-opacity=".62"/>
+<text x="52.5" y="550.9" font-size="8.2" letter-spacing=".08em" fill="#2a2016" fill-opacity=".72" text-anchor="end">VILLEROUX</text>
+<rect x="7.7" y="408.6" width="5.2" height="5.2" fill="#2a2016" fill-opacity=".62"/>
+<text x="14.3" y="406.2" font-size="8.2" letter-spacing=".08em" fill="#2a2016" fill-opacity=".72" text-anchor="start">MANDE ST ETIENNE</text>
+<rect x="173.1" y="459.3" width="5.2" height="5.2" fill="#2a2016" fill-opacity=".62"/>
+<text x="171.7" y="457.9" font-size="8.2" letter-spacing=".08em" fill="#2a2016" fill-opacity=".72" text-anchor="end">SAVY</text>
+<rect x="178.0" y="515.7" width="5.2" height="5.2" fill="#2a2016" fill-opacity=".62"/>
+<text x="185.6" y="528.3" font-size="8.2" letter-spacing=".08em" fill="#2a2016" fill-opacity=".72" text-anchor="start">ISLE LA HESSE</text>
+<rect x="111.4" y="176.2" width="5.2" height="5.2" fill="#2a2016" fill-opacity=".62"/>
+<text x="120.0" y="174.8" font-size="8.2" letter-spacing=".08em" fill="#2a2016" fill-opacity=".72" text-anchor="start">BERTOGNE</text>
+<rect x="283.8" y="121.4" width="5.2" height="5.2" fill="#2a2016" fill-opacity=".62"/>
+<text x="292.4" y="120.0" font-size="8.2" letter-spacing=".08em" fill="#2a2016" fill-opacity=".72" text-anchor="start">MABOMPRE</text>
+<rect x="491.8" y="252.6" width="5.2" height="5.2" fill="#2a2016" fill-opacity=".62"/>
+<text x="490.4" y="266.2" font-size="8.2" letter-spacing=".08em" fill="#2a2016" fill-opacity=".72" text-anchor="end">BOURCY</text>
+<text x="376.0" y="30.0" font-size="7.5" letter-spacing=".2em" fill="#2a2016" fill-opacity="0.55" text-anchor="end" transform="rotate(0 376.0 30.0)">TO HOUFFALIZE</text>
+<text font-style="italic" x="319.3" y="345.4" font-size="6.5" letter-spacing=".2em" fill="#2a2016" fill-opacity="0.5" text-anchor="middle" transform="rotate(0 319.3 345.4)">BOIS JACQUES</text>
+<text x="12.0" y="40.0" font-size="7.5" letter-spacing=".2em" fill="#7a2f27" fill-opacity="0.55" text-anchor="start" transform="rotate(0 12.0 40.0)">GERMAN LINES</text>
+<text x="378.0" y="520.0" font-size="6.5" letter-spacing=".2em" fill="#2a2016" fill-opacity="0.55" text-anchor="end" transform="rotate(0 378.0 520.0)">TO WILTZ</text>
+</g>
+<g transform="translate(356,128) rotate(0)" fill="none" stroke="#2a2016" stroke-opacity=".6">
+<circle r="14" stroke-width="1.1"/><circle r="10" stroke-width=".5"/>
+<path d="M0,-17 L3.6,0 L0,3 L-3.6,0 Z" fill="#2a2016" fill-opacity=".65" stroke="none"/><path d="M0,17 L3,0 L-3,0 Z" fill="#2a2016" fill-opacity=".25" stroke="none"/>
+<text x="0" y="-20" font-size="9" text-anchor="middle" fill="#2a2016" fill-opacity=".75" stroke="none" transform="rotate(0 0 -23)">N</text>
+</g>
+<g stroke="#2a2016" stroke-opacity=".6" fill="#2a2016" fill-opacity=".6"><line x1="12" y1="562" x2="80.0" y2="562" stroke-width="1.2"/><line x1="12" y1="559" x2="12" y2="565"/><line x1="46.0" y1="560" x2="46.0" y2="564"/><line x1="80.0" y1="559" x2="80.0" y2="565"/><text x="85.0" y="565" font-size="7.5" stroke="none" letter-spacing=".1em">2 KM</text></g>
+<text x="12" y="18" font-size="8" letter-spacing=".25em" fill="#2a2016" fill-opacity=".6">BASTOGNE  22-26 DEC 1944</text>
+</svg>
