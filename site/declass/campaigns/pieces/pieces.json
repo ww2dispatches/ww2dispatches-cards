@@ -1,0 +1,69 @@
+{
+ "format": 1,
+ "pieces": [
+  {
+   "piece": "panzer4",
+   "machine": "Panzer IV",
+   "variant": "Ausf. H",
+   "role": "Tank",
+   "side": "Germany",
+   "branch": "land",
+   "file": "panzer4.webp",
+   "fileLarge": "panzer4-lg.webp",
+   "credit": "British Army Film and Photographic Unit photo, IWM B 6345 (Sgt Jim Mapham)",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_captured_German_PzKpfw_IV_tank_at_27th_Armoured_Brigade_workshops,_Normandy,_3_July_1944._B6345.jpg",
+   "recordId": "IWM B 6345",
+   "license": "Crown copyright expired",
+   "illustration": false,
+   "alt": "A captured Panzer IV tank, intact, standing in a field in Normandy, July 1944"
+  },
+  {
+   "piece": "panther",
+   "machine": "Panther",
+   "variant": "Ausf. A or G",
+   "role": "Tank",
+   "side": "Germany",
+   "branch": "land",
+   "file": "panther.webp",
+   "fileLarge": "panther-lg.webp",
+   "credit": "Panther tanks in Bucharest, 10 May 1946, photographer unknown",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Romanian_Panther_tanks.jpg",
+   "recordId": "Wikimedia Commons: Romanian Panther tanks.jpg",
+   "license": "Public domain",
+   "illustration": false,
+   "alt": "A Panther tank, three quarter front view, on a city street"
+  },
+  {
+   "piece": "stug",
+   "machine": "StuG III",
+   "variant": "Ausf. G, late",
+   "role": "Assault gun",
+   "side": "Germany",
+   "branch": "land",
+   "file": "stug.webp",
+   "fileLarge": "stug-lg.webp",
+   "credit": "US Army Signal Corps photo, NARA 292586",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Assault-guns-knocked-out.jpg",
+   "recordId": "NARA 292586",
+   "license": "Public domain (US government work)",
+   "illustration": false,
+   "alt": "A StuG III assault gun, side view, long gun raised"
+  },
+  {
+   "piece": "halftrack",
+   "machine": "SdKfz 251",
+   "variant": "Ausf. D",
+   "role": "Panzergrenadiers",
+   "side": "Germany",
+   "branch": "land",
+   "file": "halftrack.webp",
+   "fileLarge": "halftrack-lg.webp",
+   "credit": "Photo by Sylwester Braun, Warsaw, August 1944",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Warsaw_Uprising_-_Captured_SdKfz_251_(1944).jpg",
+   "recordId": "Wikimedia Commons: Warsaw Uprising - Captured SdKfz 251 (1944).jpg",
+   "license": "Public domain",
+   "illustration": false,
+   "alt": "An SdKfz 251 armored half track, side view, on a city street"
+  }
+ ]
+}
