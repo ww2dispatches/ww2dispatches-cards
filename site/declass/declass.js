@@ -1233,7 +1233,7 @@
     }
     const by = info.flash ? 'Flash' : h.still.topsecret || h.living.topsecret ? 'Top Secret' : 'Gold';
     const unf = dfileOpenUI === info.id && f && f.open;
-    let html = `<button class="dbar open${unf ? ' unf' : ''}" id="dbarBtn" aria-expanded="${unf}"><span class="dic"></span><span class="dtx"><b>Classified file</b><small>Opened by your ${by} card</small></span><span class="dchev">${unf ? 'Close ▴\ufe0e' : 'Open ▾\ufe0e'}</span></button>`;
+    let html = `<button class="dbar open${unf ? ' unf' : ''}" id="dbarBtn" aria-expanded="${unf}"><span class="dic"></span><span class="dtx"><b>File declassified</b><small>Opened by your ${by} card</small></span><span class="dchev">${unf ? 'Close ▴\ufe0e' : 'Open ▾\ufe0e'}</span></button>`;
     if (unf) {
       html += '<div class="dpanel">';
       if (f.photo) html += `<figure><img src="${esc(f.photo.img)}" alt="${esc(f.photo.caption || '')}" loading="lazy"><figcaption>${esc(f.photo.caption || '')}${f.photo.credit ? `<span>${esc(f.photo.credit)}</span>` : ''}</figcaption></figure>`;
