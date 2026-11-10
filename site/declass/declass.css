@@ -1170,6 +1170,11 @@ html.ztrial #stage2{cursor:zoom-in}
 
 /* Trademark mark after the DECLASS title (10 Nov 2026, for the USPTO specimen). Never the registered mark until registered. */
 .tm{font-size:.3em;vertical-align:super;line-height:0;letter-spacing:0;margin-left:.05em;font-weight:500}
+/* Landing (9 Nov 2026): the ™ hangs off the word instead of counting toward its width, and the trailing letter
+   spacing is balanced, so DECLASS sits truly centered over its subtitle. The subtitle is larger to read. */
+.landname{position:relative;display:table;margin-left:auto;margin-right:auto;padding-left:.06em}
+.landname .tm{position:absolute;left:100%;top:.12em;margin-left:-.02em;vertical-align:baseline;line-height:1}
+#sLanding .landtag{font-size:17px}
 .wordmark .tm{font-size:.42em}
 /* On a computer screen the whole landing (title, envelope, Open your starter pack, and the company footer) fits in one
    window without scrolling (10 Nov 2026, for the USPTO specimen). Phones are unchanged. */
