@@ -1124,7 +1124,7 @@
     $('saveGrid').querySelectorAll('button').forEach(b => { b.disabled = true; b.style.cursor = 'default'; });
     show('sSave');
   }
-  $('skipSave').onclick = () => { renderHome(); show('sHome'); if (seen('guest')) toast('Your starter pack is saved in this browser for now.'); };
+  $('skipSave').onclick = () => { hit('save_skip'); renderHome(); show('sHome'); if (seen('guest')) toast('Your starter pack is saved in this browser for now.'); };
 
   // ---------- Google sign in ----------
   let gisReady = false;
@@ -1150,6 +1150,8 @@
   }
   function onCredential(res) {
     const hadStarter = Boolean(STARTER);
+    const fromSave = $('sSave').classList.contains('on');
+    if (fromSave) hit('save_google');
     api('auth/google', { src: lsGet('ww_src') || '', credential: res.credential, starter: STARTER ? STARTER.token : undefined, starterTurned: STARTER ? STARTER.revealed.every(Boolean) : undefined })
       .then(d => {
         if (d.starterSaved || (d.player && d.player.starterDone)) { STARTER = null; saveStarterLocal(); }
@@ -1157,9 +1159,10 @@
       })
       .then(d => {
         renderHome(); show('sHome');
+        if (fromSave) hit('save_done');
         toast(d.starterSaved ? "Dossier saved. Today's files are ready." : hadStarter ? 'Welcome back. Your dossier is loaded.' : 'Signed in. Your dossier is loaded.');
       })
-      .catch(e => toast('Sign in did not work (' + e.message + ').'));
+      .catch(e => { hit(fromSave ? 'save_fail' : 'signin_fail'); toast('Sign in did not work (' + e.message + ').'); });
   }
 
   // ---------- card view ----------

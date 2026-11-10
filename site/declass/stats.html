@@ -104,6 +104,11 @@ function overview() {
   <ul class="hl">${h.map(([l, n, x]) => `<li><span>${esc(l)}${x ? ` <span class="note">(${esc(x)})</span>` : ''}</span><b class="${n ? 'bad' : 'ok'}">${n ? n : '✓'}</b></li>`).join('')}</ul>`;
   $('copyRep').onclick = () => { const ta = $('rep'); ta.select(); (navigator.clipboard ? navigator.clipboard.writeText(ta.value) : Promise.reject()).then(() => { $('copyRep').textContent = 'Copied'; }).catch(() => { document.execCommand('copy'); $('copyRep').textContent = 'Copied'; }); setTimeout(() => { $('copyRep').textContent = 'Copy weekly report'; }, 2000); };
 }
+function saveLine() {
+  const a = D.growth.actionsWeek, n = k => a[k] || 0;
+  const seen = n('save_screen'), left = Math.max(0, seen - n('save_skip') - n('save_google'));
+  return `Save screen this week: seen ${seen}, not now ${n('save_skip')}, Google said yes ${n('save_google')}, saved ${n('save_done')}, failed ${n('save_fail')}, left without either ${left}. Sign in failures elsewhere: ${n('signin_fail')}.`;
+}
 function report() {
   const E = D.engagement, Ec = D.economy, C = D.collecting, F = D.funnel, I = D.intercept, K = D.catalog;
   const wk = E.days14.slice(-7);
@@ -116,7 +121,8 @@ function report() {
     ``,
     `GROWTH (7 days vs the 7 before): visitors ${D.growth.week.visitors} (was ${D.growth.lastWeek.visitors}), page views ${D.growth.week.views} (${D.growth.lastWeek.views}), first time visitors ${D.growth.week.newVisitors} (${D.growth.lastWeek.newVisitors}), Declass visitors ${D.growth.week.declassVisitors} (${D.growth.lastWeek.declassVisitors}), new players ${D.growth.week.signups} (${D.growth.lastWeek.signups}), guest starter packs ${D.growth.week.guestStarters}, engagements ${D.growth.week.engagements} (${D.growth.lastWeek.engagements}). Visit counts since ${D.growth.since || 'n/a'}.`,
     `Sources this week: ${ranked(D.growth.sourcesWeek, SRC).map(r => r.k + ' ' + r.v).join(', ') || 'none yet'}. New players by source (all time): ${ranked(D.growth.signupSources, SRC).map(r => r.k + ' ' + r.v).join(', ') || 'none yet'}. Devices (30 days): ${ranked(D.growth.devices, {}).map(r => r.k + ' ' + r.v).join(', ') || 'none yet'}.`,
-    `Game actions this week: ${Object.keys(ACT).filter(k => D.growth.actionsWeek[k]).map(k => ACT[k].toLowerCase() + ' ' + D.growth.actionsWeek[k]).join(', ') || 'none yet'}.`,
+    `Game actions this week: ${Object.keys(ACT).filter(k => D.growth.actionsWeek[k] && !/^save_|^signin_/.test(k)).map(k => ACT[k].toLowerCase() + ' ' + D.growth.actionsWeek[k]).join(', ') || 'none yet'}.`,
+    saveLine(),
     ``,
     `PLAYERS: ${D.totals.players} accounts. Played today ${E.active1}, this week ${E.active7}, this month ${E.active30}.`,
     `Daily players, last 7 days: ${wk.map(x => x.day.slice(5) + ' ' + x.players).join(', ')}.`,
@@ -157,7 +163,7 @@ function chart(rows, series, line) {
   rows.forEach((r, i) => { if (i % Math.ceil(n / 7) === 0 || i === n - 1) g += `<text x="${pad + i * bw + bw / 2}" y="${H - 4}" text-anchor="middle" fill="#a89d88" font-size="10.5" font-family="Special Elite">${r.day.slice(5)}</text>`; });
   return `<div class="chart"><svg viewBox="0 0 ${W} ${H}" role="img">${g}</svg></div><div class="legend">${series.map(s => `<span><i style="background:${s.c}"></i>${s.l}</span>`).join('')}${line ? `<span><i style="background:${line.c};height:3px;vertical-align:3px"></i>${line.l}</span>` : ''}</div>`;
 }
-const ACT = { card: 'Cards looked at', zoom: 'Full screen views', file: 'Declassified files opened', share: 'Share screen opened', shared: 'Cards shared or saved', guest_starter: 'Starter packs opened before signing in', save_screen: 'Saw the save your dossier screen', dossier: 'Dossier visits', sets: 'Sets visits', intercept: 'Intercept visits', tour_done: 'Finished the home tour', tour_skip: 'Skipped the home tour' };
+const ACT = { card: 'Cards looked at', zoom: 'Full screen views', file: 'Declassified files opened', share: 'Share screen opened', shared: 'Cards shared or saved', guest_starter: 'Starter packs opened before signing in', save_screen: 'Saw the save your dossier screen', dossier: 'Dossier visits', sets: 'Sets visits', intercept: 'Intercept visits', tour_done: 'Finished the home tour', tour_skip: 'Skipped the home tour', save_skip: 'Save screen: tapped Not now', save_google: 'Save screen: Google said yes', save_done: 'Save screen: dossier saved', save_fail: 'Save screen: sign in failed', signin_fail: 'Sign in failed elsewhere' };
 const PG = { home: 'Home page', declass: 'Declass', newsletter: 'Newsletter archive', issue: 'Newsletter issues', privacy: 'Privacy', support: 'Support', other: 'Other' };
 const SRC = { x: 'X', instagram: 'Instagram', threads: 'Threads', tiktok: 'TikTok', youtube: 'YouTube', facebook: 'Facebook', reddit: 'Reddit', newsletter: 'Newsletter', google: 'Google', search: 'Other search', 'link in bio': 'Link in bio', 'ko-fi': 'Ko-fi', email: 'Email', direct: 'Direct or typed in', other: 'Other sites' };
 const ranked = (o, names) => Object.entries(o || {}).sort((a, b) => b[1] - a[1]).map(([k, v]) => ({ k: names[k] || k, v }));
