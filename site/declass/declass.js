@@ -1216,7 +1216,7 @@
     paintFile(info, h, DETAIL.get(id));
     renderText(info, h);
   }
-  // The Declassified file (29 Oct 2026): a bar under the finish row, sealed until the player holds the
+  // The Classified file (29 Oct 2026; called the Declassified file until 9 Nov 2026, renamed so no feature carries a name close to the registered board game DECLASSIFIED): a bar under the finish row, sealed until the player holds the
   // card in Gold, Top Secret, or Flash; then it unfolds in place to the extra photo, the fact the post
   // didn't use, and the narrated story. The server only sends the contents to those holders.
   let dfileOpenUI = null;
@@ -1227,13 +1227,13 @@
     const f = d && d.dfile;
     if (!opensFile(h)) {
       const canReq = signedIn() && !info.today && !info.flash;
-      box.innerHTML = `<button class="dbar sealed" id="dbarBtn"><span class="dic"><i>🔒\ufe0e</i></span><span class="dtx"><b>Declassified file</b><small>What the post left out</small></span><span class="dst">GOLD OPENS</span></button>`;
+      box.innerHTML = `<button class="dbar sealed" id="dbarBtn"><span class="dic"><i>🔒\ufe0e</i></span><span class="dtx"><b>Classified file</b><small>What the post left out</small></span><span class="dst">GOLD OPENS</span></button>`;
       $('dbarBtn').onclick = () => canReq ? confirmRequest(info, 'still', 'gold') : toast(info.today ? 'Pull this card in Gold to open its file.' : 'Hold this card in Gold or better to open its file.');
       return;
     }
     const by = info.flash ? 'Flash' : h.still.topsecret || h.living.topsecret ? 'Top Secret' : 'Gold';
     const unf = dfileOpenUI === info.id && f && f.open;
-    let html = `<button class="dbar open${unf ? ' unf' : ''}" id="dbarBtn" aria-expanded="${unf}"><span class="dic"></span><span class="dtx"><b>Declassified file</b><small>Opened by your ${by} card</small></span><span class="dchev">${unf ? 'Close ▴\ufe0e' : 'Open ▾\ufe0e'}</span></button>`;
+    let html = `<button class="dbar open${unf ? ' unf' : ''}" id="dbarBtn" aria-expanded="${unf}"><span class="dic"></span><span class="dtx"><b>Classified file</b><small>Opened by your ${by} card</small></span><span class="dchev">${unf ? 'Close ▴\ufe0e' : 'Open ▾\ufe0e'}</span></button>`;
     if (unf) {
       html += '<div class="dpanel">';
       if (f.photo) html += `<figure><img src="${esc(f.photo.img)}" alt="${esc(f.photo.caption || '')}" loading="lazy"><figcaption>${esc(f.photo.caption || '')}${f.photo.credit ? `<span>${esc(f.photo.credit)}</span>` : ''}</figcaption></figure>`;

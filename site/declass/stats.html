@@ -144,7 +144,7 @@ function report() {
     ``,
     `INTERCEPT: ${I.plays} plays, ${I.solved} solved, ${I.failed} failed, ${I.perfect} perfect, average score ${I.avgScore == null ? 'n/a' : I.avgScore}, ${I.claimed} cards claimed.`,
     ``,
-    `CATALOG: ${K.dispatchPosted} dispatches posted, ${K.comingWeek} coming in the next 7 days, next at ${K.nextPost || 'none scheduled'}. ${K.livingPosted} with film. Without a Declassified file: ${K.noFile.join(', ') || 'none'}. Name This waiting on an answer: ${K.nameThisWaiting.join(', ') || 'none'}.`,
+    `CATALOG: ${K.dispatchPosted} dispatches posted, ${K.comingWeek} coming in the next 7 days, next at ${K.nextPost || 'none scheduled'}. ${K.livingPosted} with film. Without a Classified file: ${K.noFile.join(', ') || 'none'}. Name This waiting on an answer: ${K.nameThisWaiting.join(', ') || 'none'}.`,
     ``,
     `HEALTH: ${bad.length ? bad.join('; ') : 'all clear'}.`,
   ].join('\n');
@@ -163,7 +163,7 @@ function chart(rows, series, line) {
   rows.forEach((r, i) => { if (i % Math.ceil(n / 7) === 0 || i === n - 1) g += `<text x="${pad + i * bw + bw / 2}" y="${H - 4}" text-anchor="middle" fill="#a89d88" font-size="10.5" font-family="Special Elite">${r.day.slice(5)}</text>`; });
   return `<div class="chart"><svg viewBox="0 0 ${W} ${H}" role="img">${g}</svg></div><div class="legend">${series.map(s => `<span><i style="background:${s.c}"></i>${s.l}</span>`).join('')}${line ? `<span><i style="background:${line.c};height:3px;vertical-align:3px"></i>${line.l}</span>` : ''}</div>`;
 }
-const ACT = { card: 'Cards looked at', zoom: 'Full screen views', file: 'Declassified files opened', share: 'Share screen opened', shared: 'Cards shared or saved', guest_starter: 'Starter packs opened before signing in', save_screen: 'Saw the save your dossier screen', dossier: 'Dossier visits', sets: 'Sets visits', intercept: 'Intercept visits', tour_done: 'Finished the home tour', tour_skip: 'Skipped the home tour', save_skip: 'Save screen: tapped Not now', save_google: 'Save screen: Google said yes', save_done: 'Save screen: dossier saved', save_fail: 'Save screen: sign in failed', signin_fail: 'Sign in failed elsewhere' };
+const ACT = { card: 'Cards looked at', zoom: 'Full screen views', file: 'Classified files opened', share: 'Share screen opened', shared: 'Cards shared or saved', guest_starter: 'Starter packs opened before signing in', save_screen: 'Saw the save your dossier screen', dossier: 'Dossier visits', sets: 'Sets visits', intercept: 'Intercept visits', tour_done: 'Finished the home tour', tour_skip: 'Skipped the home tour', save_skip: 'Save screen: tapped Not now', save_google: 'Save screen: Google said yes', save_done: 'Save screen: dossier saved', save_fail: 'Save screen: sign in failed', signin_fail: 'Sign in failed elsewhere' };
 const PG = { home: 'Home page', declass: 'Declass', newsletter: 'Newsletter archive', issue: 'Newsletter issues', privacy: 'Privacy', support: 'Support', other: 'Other' };
 const SRC = { x: 'X', instagram: 'Instagram', threads: 'Threads', tiktok: 'TikTok', youtube: 'YouTube', facebook: 'Facebook', reddit: 'Reddit', newsletter: 'Newsletter', google: 'Google', search: 'Other search', 'link in bio': 'Link in bio', 'ko-fi': 'Ko-fi', email: 'Email', direct: 'Direct or typed in', other: 'Other sites' };
 const ranked = (o, names) => Object.entries(o || {}).sort((a, b) => b[1] - a[1]).map(([k, v]) => ({ k: names[k] || k, v }));
@@ -174,7 +174,7 @@ function growth() {
   <h2>Audience</h2><div class="kp">${tile(w.visitors, 'visitors', w.visitors, l.visitors)}${tile(w.views, 'page views', w.views, l.views)}${tile(w.newVisitors, 'first time visitors', w.newVisitors, l.newVisitors)}${tile(w.declassVisitors, 'Declass visitors', w.declassVisitors, l.declassVisitors)}</div>
   <h2>Players</h2><div class="kp">${tile(w.signups, 'new players', w.signups, l.signups)}${tile(D.totals.players, 'total players')}${tile(w.activePlayers, 'played this week', w.activePlayers, l.activePlayers)}${tile(w.guestStarters, 'tried it as a guest', w.guestStarters, l.guestStarters)}</div>
   <h2>Engagement</h2><div class="kp">${tile(w.engagements, 'engagements', w.engagements, l.engagements)}${tile(w.envelopes, 'envelopes opened', w.envelopes, l.envelopes)}${tile(w.actions, 'card actions', w.actions, l.actions)}${tile(rate(w.playerDays, w.declassVisitors), 'play rate')}</div>
-  <p class="note">Visitors are counted once per browser per day. Engagements are envelopes opened, Intercept games, and card actions (looking at a card, full screen, a Declassified file, sharing). Play rate is how many of the day's Declass visitors opened an envelope that day.</p>
+  <p class="note">Visitors are counted once per browser per day. Engagements are envelopes opened, Intercept games, and card actions (looking at a card, full screen, a Classified file, sharing). Play rate is how many of the day's Declass visitors opened an envelope that day.</p>
   <h2>Visitors, last 30 days</h2>${chart(G.days30, [{ k: 'visitors', l: 'Visitors', c: '#7FA0D6' }, { k: 'declass', l: 'Declass visitors', c: '#D9A93E' }])}
   <h2>Players, last 30 days</h2>${chart(G.days30, [{ k: 'signups', l: 'New players', c: '#9DAA62' }, { k: 'active', l: 'Played that day', c: '#B04A3E' }], { k: 'total', l: 'Total players', c: '#e3c25e' })}
   <h2>Engagements, last 30 days</h2>${chart(G.days30, [{ k: 'engagements', l: 'Engagements', c: '#D8644F' }])}
@@ -254,10 +254,10 @@ function catalog() {
   const K = D.catalog;
   $('body').innerHTML = `<div class="kp"><div><b>${K.dispatchPosted}</b><span>dispatches posted</span></div><div><b>${K.comingWeek}</b><span>coming in 7 days</span></div><div><b>${K.livingPosted}</b><span>with film</span></div><div><b>${K.flashPosted}</b><span>Flash cards</span></div></div>
   <ul class="hl"><li><span>Last card posted</span><b>${when(K.lastPost)}</b></li><li><span>Next card scheduled</span><b class="${K.nextPost ? 'ok' : 'bad'}">${K.nextPost ? when(K.nextPost) : 'none!'}</b></li>
-  <li><span>Posted cards without a Declassified file</span><b class="${K.noFile.length ? 'bad' : 'ok'}">${K.noFile.length || '✓'}</b></li><li><span>Declassified files without an extra photo</span><b>${K.fileNoPhoto}</b></li>
+  <li><span>Posted cards without a Classified file</span><b class="${K.noFile.length ? 'bad' : 'ok'}">${K.noFile.length || '✓'}</b></li><li><span>Classified files without an extra photo</span><b>${K.fileNoPhoto}</b></li>
   <li><span>Name This cards waiting on an answer</span><b>${K.nameThisWaiting.length}</b></li></ul>
   ${K.noFile.length ? `<p class="note">No file yet: ${K.noFile.map(esc).join(', ')}.</p>` : ''}
-  <p class="note">"Next card scheduled: none" or a short "coming in 7 days" means the weekly runs have fallen behind. A posted card without a Declassified file means research skipped the new block.</p>`;
+  <p class="note">"Next card scheduled: none" or a short "coming in 7 days" means the weekly runs have fallen behind. A posted card without a Classified file means research skipped the new block.</p>`;
 }
 </script>
 </body>
