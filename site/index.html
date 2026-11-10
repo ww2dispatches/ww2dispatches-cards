@@ -179,6 +179,7 @@ footer { text-align: center; font-family: var(--type); font-size: 13px; color: v
 .dcl { background: var(--paper); color: var(--ink); border-radius: 6px; overflow: hidden; box-shadow: 0 0 0 2px var(--ink) inset, 0 10px 24px rgba(0,0,0,.45); margin: 0 0 22px; }
 .dcl-band { display: flex; align-items: center; justify-content: space-between; gap: 10px; background: var(--ink); color: var(--paper); padding: 12px 16px; text-decoration: none; }
 .dcl-band b { display: block; font-family: var(--display); font-weight: 700; font-size: 30px; letter-spacing: 4px; line-height: 1; }
+.dcl-band b .tm { font-size: .4em; vertical-align: super; line-height: 0; letter-spacing: 0; margin-left: .08em; font-weight: 500; } /* trademark mark (10 Nov 2026); never the registered mark until registered */
 .dcl-band small { display: block; font-family: var(--type); font-size: 12px; color: var(--sand); margin-top: 4px; }
 .dcl-band i { font-style: normal; font-family: var(--display); font-weight: 700; font-size: 12px; letter-spacing: 1.5px; color: #8fb4ea; border: 2px solid #8fb4ea; border-radius: 3px; padding: 2px 7px; transform: rotate(-6deg); white-space: nowrap; }
 .dcl-body { display: flex; gap: 14px; align-items: center; padding: 14px 16px 6px; }
@@ -248,7 +249,7 @@ footer { text-align: center; font-family: var(--type); font-size: 13px; color: v
 
   <!-- Declass panel: stays hidden for the public until launch; testers with the key see it. -->
   <section class="dcl" id="dcl" hidden aria-labelledby="dcl-h">
-    <a class="dcl-band" href="/declass"><span><b id="dcl-h">DECLASS</b><small>The daily WW2 card game</small></span><i id="dcl-stamp">FREE TO PLAY</i></a>
+    <a class="dcl-band" href="/declass"><span><b id="dcl-h">DECLASS<span class="tm" aria-label="trademark">™</span></b><small>The daily WW2 card game</small></span><i id="dcl-stamp">FREE TO PLAY</i></a>
     <div class="dcl-body">
       <div class="dcl-env" id="dcl-env" aria-hidden="true"><span class="dcl-seal"></span><span class="dcl-cl">CLASSIFIED</span><span class="dcl-dc">DECLASS</span></div>
       <div class="dcl-txt"><p class="dcl-t" id="dcl-t"></p><p class="dcl-s" id="dcl-s"></p></div>
