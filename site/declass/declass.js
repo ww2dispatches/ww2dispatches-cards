@@ -2333,7 +2333,7 @@
       const k = caseKey(o), where = draft.slots.findIndex(s => s && caseKey(s) === k);
       const b = document.createElement('button'); b.type = 'button';
       b.className = 'dctcard' + (where >= 0 ? ' pinned' : '');
-      b.innerHTML = `<span class="dcpic ${finCls(o)}"><span class="picw${o.info.flash ? ' fl' : ''}"><img loading="lazy" src="${esc(o.info.imgThumb || o.info.img)}" alt="" draggable="false"></span>${o.variant === 'living' ? '<i class="dclv" aria-hidden="true">▶︎</i>' : ''}</span><small>${where >= 0 ? 'In slot ' + (where + 1) : esc((o.variant === 'living' ? 'Living ' : '') + (o.info.flash ? 'Flash' : FNAME[o.finish]))}</small><span class="dcnm">${esc(o.info.short)}</span>`;
+      b.innerHTML = `<span class="dcpic ${finCls(o)}"><span class="picw${o.info.flash ? ' fl' : ''}"><img loading="lazy" src="${esc(o.info.imgThumb || o.info.img)}" alt="" draggable="false"></span>${o.variant === 'living' ? '<i class="dclv" aria-hidden="true">▶︎</i>' : ''}</span><small>${where >= 0 ? 'In slot ' + (where + 1) : esc(o.info.flash ? 'Flash' : FNAME[o.finish])}</small><span class="dcnm">${esc(o.info.short)}</span>`;
       b.setAttribute('aria-label', 'Pin ' + caseLabel(o) + (where >= 0 ? ', now in slot ' + (where + 1) : ''));
       b.onclick = () => {
         if (where === draftActive) return;
