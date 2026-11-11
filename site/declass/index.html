@@ -25,7 +25,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Special+Elite&display=swap">
-<link rel="stylesheet" href="/declass/declass.css?v=0c38ec99">
+<link rel="stylesheet" href="/declass/declass.css?v=27ab3c0a">
 <link rel="stylesheet" href="/declass/intercept.css?v=a2b6a5a8">
 </head>
 <body>
@@ -66,7 +66,7 @@
 </section>
 
 <section class="screen" id="sHome">
-  <div class="toolbar"><button class="tbtn howbtn" data-how type="button">How to play</button><button class="tbtn sndbtn" data-t="music" type="button"></button><button class="tbtn sndbtn" data-t="sfx" type="button"></button></div>
+  <div class="toolbar"><button class="tbtn howbtn" data-how type="button">How to play</button><button class="tbtn sndbtn" data-t="music" type="button"></button><button class="tbtn sndbtn" data-t="sfx" type="button"></button><button class="tbtn casebtn" id="caseBtn" type="button" aria-label="Display Case" hidden><svg viewBox="0 0 16 14" aria-hidden="true"><rect x="1" y="1" width="14" height="12" rx="1.5"/><path d="M1 7h14M6 1v12M11 1v12"/></svg><span id="caseBtnT">Call sign</span></button></div>
   <header class="top">
     <div class="wordmark">DECLASS<span class="tm" aria-label="trademark">™</span><small>a WW2 Dispatches game</small></div>
     <button class="hrank" id="rankBtn" type="button" aria-label="Your rank"><span class="hl">Rank</span><span class="hv"><img class="rkicon" id="rankI" src="/declass/insignia/private.svg" alt="" aria-hidden="true"><b id="rankT">Private</b></span><i class="rbar"><em id="rankBar"></em></i></button>
@@ -92,6 +92,41 @@
   <p class="foot">@ww2dispatches · <a href="https://ww2dispatches.com/">ww2dispatches.com</a> · <a href="/privacy">Privacy</a><br><span id="footWho"></span></p>
   <p class="foot" id="footDelete" hidden><button id="deleteBtn">Delete my dossier</button></p>
   <p class="foot co">Declass is a WW2 Dispatches game.<br>© 2026 Wraithlight Digital LLC.<br>Declass is a trademark of Wraithlight Digital LLC.</p>
+</section>
+
+<!-- Display Case (11 Nov 2026, Display Case doc): six cards the player picks, under an optional call sign -->
+<section class="screen dcase" id="sCase">
+  <div class="dcbar"><button class="back" id="caseBack" type="button">◀︎ Declass</button><span class="dcttl">Display Case</span><button class="dclink" id="caseEdit" type="button">Edit</button></div>
+  <div class="dcrec">
+    <p class="dcof">Service record of</p>
+    <div id="caseCall"></div>
+    <p class="dcrank" id="caseRank"></p>
+  </div>
+  <div class="dcshelf"><div class="dcgrid" id="caseGrid"></div></div>
+  <div class="dcfoot" id="caseFoot"></div>
+</section>
+
+<section class="screen dcase" id="sCaseEdit">
+  <div class="dcbar"><button class="dclink mute" id="editCancel" type="button">Cancel</button><span class="dcttl">Edit case</span><button class="dclink" id="editDone" type="button">Done</button></div>
+  <div class="dcrec">
+    <p class="dcof">Your call sign</p>
+    <div class="dccallrow"><span class="dccall sm" id="editCall"></span><button class="dcchip" id="editChange" type="button">Change</button></div>
+  </div>
+  <div class="dcshelf"><div class="dcgrid" id="editGrid"></div></div>
+  <div class="dctray" id="editTray">
+    <div class="dctrayhd"><b id="trayTitle">Pin to slot 1</b><span>From your dossier</span></div>
+    <div class="dcfilters" id="trayFilters"></div>
+    <div class="dcrow" id="trayRow"></div>
+  </div>
+</section>
+
+<section class="screen dcase" id="sCallSign">
+  <div class="dcbar"><button class="dclink mute" id="csCancel" type="button">Cancel</button><span class="dcttl">Call sign</span><button class="dclink" id="csSave" type="button">Save</button></div>
+  <div class="dcpair"><span class="dccall" id="csPair"></span><button class="dcchip" id="csRandom" type="button"><svg viewBox="0 0 18 18" aria-hidden="true"><rect x="1.5" y="1.5" width="15" height="15" rx="3"/><circle cx="6" cy="6" r="1.2"/><circle cx="12" cy="12" r="1.2"/><circle cx="9" cy="9" r="1.2"/></svg>Random</button><p class="dcnote">Built from two word lists. No typing.</p></div>
+  <div class="dccols">
+    <div class="dccol"><p>First word</p><div class="dclist" id="csA" role="listbox" aria-label="First word"></div></div>
+    <div class="dccol"><p>Second word</p><div class="dclist" id="csB" role="listbox" aria-label="Second word"></div></div>
+  </div>
 </section>
 
 <section class="screen" id="sPick">
@@ -351,7 +386,7 @@
 <div class="glow" id="glow"></div>
 <div class="zoomer" id="zoomer" hidden role="dialog" aria-label="Card up close"><div class="zstage" id="zstage"></div><button class="zx" id="zx" aria-label="Close">✕</button><p class="zhint">Drag to turn · double tap to zoom</p></div>
 <script src="/hit.js"></script>
-<script src="/declass/declass.js?v=4abb14ab"></script>
+<script src="/declass/declass.js?v=d796651c"></script>
 <script src="/declass/intercept.js?v=fc66c3de"></script>
 </body>
 </html>

@@ -107,7 +107,7 @@
   }
   // Game actions counted for the admin console (2 Nov 2026): tallies only, through /hit.js.
   const hit = n => { try { if (window.wwHit) window.wwHit(n); } catch (e) {} };
-  const SCREEN_HIT = { sFile: 'dossier', sSets: 'sets', sIntercept: 'intercept', sSave: 'save_screen' };
+  const SCREEN_HIT = { sFile: 'dossier', sSets: 'sets', sIntercept: 'intercept', sSave: 'save_screen', sCase: 'case_open' };
   function show(id) {
     if (SCREEN_HIT[id]) hit(SCREEN_HIT[id]);
     document.querySelectorAll('.screen').forEach(s => s.classList.toggle('on', s.id === id));
@@ -1174,8 +1174,9 @@
     viewSel = null;
     if ($('sSection').classList.contains('on')) viewFrom = 'sSection';
     else if ($('sCards').classList.contains('on')) viewFrom = 'sCards';
+    else if ($('sCase').classList.contains('on')) viewFrom = 'sCase';
     else viewFrom = 'sHome';
-    $('backView').textContent = '◀\ufe0e ' + (viewFrom === 'sSection' && label ? label : viewFrom === 'sCards' ? 'Envelope' : 'Back');
+    $('backView').textContent = '◀\ufe0e ' + (viewFrom === 'sSection' && label ? label : viewFrom === 'sCards' ? 'Envelope' : viewFrom === 'sCase' ? 'Display Case' : 'Back');
     renderView();
     show('sView');
     if (zoomTrial && !seen('zoom')) setTimeout(() => toast('Tap the card to see it up close, then drag to turn it.'), 700);
@@ -1449,6 +1450,7 @@
     document.querySelectorAll('#stage2 video, #dfile video').forEach(v => v.pause());
     if (viewFrom === 'sSection' && lastSection) section(lastSection[0], lastSection[1], lastSection[2]);
     else if (viewFrom === 'sCards') show('sCards');
+    else if (viewFrom === 'sCase') openCase();
     else { renderHome(); show('sHome'); }
   };
 
@@ -1763,15 +1765,15 @@
     c.fillText((file ? 'File ' + file + ' · ' : '') + (ST && ST.rank ? ST.rank.title + ' · ' : '') + new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }), W / 2, 1341);
     c.textAlign = 'left';
   }
-  let shAll = [], shSel = [], shBlob = null, shText = '';
+  let shAll = [], shSel = [], shBlob = null, shText = '', shCustom = null; // shCustom: another picture (the Display Case) with its own painter and caption
   const shChosen = () => shAll.filter((x, i) => shSel[i]).sort((a, b) => RANK(b.finish) - RANK(a.finish) || (b.variant === 'living') - (a.variant === 'living'));
   async function shRefresh() {
-    const items = shChosen();
-    shBlob = null; shText = shLine(items);
+    const items = shCustom ? null : shChosen();
+    shBlob = null; shText = shCustom ? shCustom.text : shLine(items);
     $('shLine').textContent = shText;
     $('shGo').disabled = true;
     try {
-      await paintShare($('shPv'), items);
+      await (shCustom ? shCustom.paint($('shPv')) : paintShare($('shPv'), items));
       shBlob = await new Promise(r => $('shPv').toBlob(r, 'image/png'));
     } catch (e) { shBlob = null; }
     $('shGo').disabled = false;
@@ -1792,6 +1794,7 @@
   // items: [{info, finish, variant, serial, file}]
   function openShare(items, prefix) {
     shPrefix = prefix || 'Declassed ';
+    shCustom = null;
     shAll = items.filter(x => x.info);
     if (!shAll.length) return;
     hit('share');
@@ -1806,13 +1809,13 @@
     const text = shText;
     hit('shared');
     if (navigator.clipboard) navigator.clipboard.writeText(text).catch(() => {});
-    const file = shBlob ? new File([shBlob], 'declass.png', { type: 'image/png' }) : null;
+    const file = shBlob ? new File([shBlob], shCustom ? shCustom.name : 'declass.png', { type: 'image/png' }) : null;
     if (file && navigator.canShare && navigator.canShare({ files: [file] })) {
       navigator.share({ files: [file], text }).then(() => { $('shui').hidden = true; }).catch(() => {});
       return;
     }
     if (shBlob) {
-      const a = document.createElement('a'); a.href = URL.createObjectURL(shBlob); a.download = 'declass.png';
+      const a = document.createElement('a'); a.href = URL.createObjectURL(shBlob); a.download = shCustom ? shCustom.name : 'declass.png';
       document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 4000);
       toast('Picture saved. The caption is copied, ready to paste.');
     } else toast('The caption is copied, ready to paste.');
@@ -1929,6 +1932,7 @@
     const p = ST && ST.player, r = ST && ST.rank, it = ST && ST.intel;
     $('rankBtn').style.visibility = p && r ? '' : 'hidden';
     $('intelBtn').style.visibility = p && it ? '' : 'hidden';
+    paintCaseBtn();
     if (r) {
       $('rankT').textContent = r.short;
       $('rankT').classList.toggle('long', r.short.length > 12); // long names step down a size so the badge stays beside them on one line
@@ -2083,11 +2087,11 @@
   function mark(k) { if (COACH[k]) return; COACH[k] = 1; try { localStorage.setItem(COACH_KEY, JSON.stringify(COACH)); } catch (e) {} }
 
   let noteScope = null, homeRing = null;
-  function note(scope, key, text) {
+  function note(scope, key, text, tag) {
     mark(key);
     const n = $('fnote');
     noteScope = scope;
-    n.innerHTML = '<div class="k"><i></i>FIRST TIME</div><p>' + text + '</p><button type="button">Got it</button>';
+    n.innerHTML = '<div class="k"><i></i>' + (tag || 'FIRST TIME') + '</div><p>' + text + '</p><button type="button">Got it</button>';
     n.querySelector('button').onclick = () => hideNote(scope);
     // On the cards the note sits right under the card's line, beside what it explains; on a tall screen
     // a note pinned to the bottom ended up far from the card (26 Oct 2026). Home notes stay pinned.
@@ -2122,13 +2126,15 @@
     { sel: '#sHome .hstreak', h: 'Your streak', t: 'Open at least one file a day to build your streak. Every third day earns a priority envelope, drawn from the whole archive.' },
     { sel: '#rankBtn', h: 'Your rank', t: 'Every new card, and every new finish of a card, fills a spot in your dossier. Fill enough spots and you get promoted, starting from Private. Each new rank is a surprise, and you never lose one. Tap your rank to see how close the next one is.' },
     { sel: '#intelBtn', h: 'Intel', t: "Every file you open earns 5 Intel, and duplicates turn into more. Spend it to request any card you're missing. Tap Intel to see your balance and what you can request." },
+    // the Display Case (11 Nov 2026): the gold pill above Rank
+    { sel: '#caseBtn', h: 'Your Display Case', t: 'Show off your best cards. Pin up to six in your Display Case, pick a call sign if you like, then share a picture of it anywhere. Tap here to open it.' },
     { sel: '#sHome .howbtn', h: "That's it", t: 'How to play has the rest whenever you want it: Living Cards, Name This, sets, and the odds. Now go open your first file.', last: true },
   ];
   let tourAt = -1, tourEl = null;
   function maybeTour() {
     if (tourAt >= 0 || !signedIn() || seen('tour')) return false;
     if ((ST.pulls || []).some(x => x.slot && x.slot.startsWith('d:'))) { mark('tour'); return false; }
-    mark('tour');
+    mark('tour'); mark('case'); // the tour has its own Display Case stop
     window.scrollTo(0, 0);
     $('tourDim').hidden = false;
     tourStep(0);
@@ -2193,8 +2199,306 @@
     if (!seen('last')) {
       const dayStart = new Date(); dayStart.setHours(0, 0, 0, 0);
       const e = ST.envelopes.find(x => Date.parse(x.at) < dayStart.getTime() && !x.opened);
-      if (e && ring('fm-lastcall')) note('home', 'last', `Last call. You missed yesterday's ${etHour(e.at) < 12 ? 'morning' : 'evening'} file, but it's still open until ${localTime(e.closes)}. Open it before it closes for good.`);
+      if (e && ring('fm-lastcall')) return note('home', 'last', `Last call. You missed yesterday's ${etHour(e.at) < 12 ? 'morning' : 'evening'} file, but it's still open until ${localTime(e.closes)}. Open it before it closes for good.`);
     }
+    // Players who took the tour before the Display Case existed get one NEW note pointing at the pill (11 Nov 2026).
+    if (!seen('case')) {
+      const cs = myCase();
+      if (cs.callA || cs.slots.some(Boolean)) return mark('case');
+      const b = $('caseBtn');
+      if (b.hidden) return;
+      homeRing = 'case'; b.classList.add('coached');
+      note('home', 'case', 'Your Display Case is here. Pin up to six of your best cards, pick a call sign if you like, and share a picture of it anywhere. Tap the gold button at the top to open it.', 'NEW');
+    }
+  }
+
+  // ---------- Display Case (11 Nov 2026, Display Case doc) ----------
+  // Six slots the player fills with cards they hold, under an optional call sign built from two word lists.
+  // Picture only: Share makes an image and the player decides where it goes. Nothing here is public.
+  const CASE_N = 6;
+  const caseKey = s => s.card + '|' + s.variant + '|' + s.finish;
+  const blankCase = () => ({ callA: null, callB: null, slots: Array(CASE_N).fill(null) });
+  const myCase = () => (ST && ST.case) || blankCase();
+  const callText = cs => cs && cs.callA && cs.callB ? cs.callA + ' ' + cs.callB : '';
+  const csLists = () => (ST && ST.callsigns) || { first: [], second: [], blocked: [] };
+  const csBlocked = (a, b) => csLists().blocked.includes(a + ' ' + b);
+  // Every distinct card the player holds (card, variant, finish), best first, with the lowest Top Secret serial.
+  function caseOwned() {
+    const m = new Map();
+    for (const p of (ST && ST.pulls) || []) {
+      const info = BYID.get(p.card);
+      if (!info) continue;
+      const k = caseKey(p);
+      const o = m.get(k) || { card: p.card, variant: p.variant, finish: p.finish, serial: null, last: 0, info };
+      if (p.serial && (!o.serial || p.serial < o.serial)) o.serial = p.serial;
+      o.last = Math.max(o.last, p.id || 0);
+      m.set(k, o);
+    }
+    const tier = o => o.info.flash ? 5 : RANK(o.finish);
+    return [...m.values()].sort((a, b) => tier(b) - tier(a) || (b.variant === 'living') - (a.variant === 'living') || b.last - a.last);
+  }
+  const ownedMap = () => new Map(caseOwned().map(o => [caseKey(o), o]));
+  // The brass plate under a card: TOP SECRET No. 0003, GOLD, SILVER, COPPER, plus FLASH and LIVING.
+  function plateLines(o) {
+    if (o.info.flash) return ['FLASH', o.variant === 'living' ? 'LIVING' : ''];
+    const top = o.finish === 'topsecret' ? 'TOP SECRET' : FNAME[o.finish].toUpperCase();
+    const sub = [o.finish === 'topsecret' && o.serial ? 'No. ' + ser4(o.serial) : '', o.variant === 'living' ? 'LIVING' : ''].filter(Boolean).join(' · ');
+    return [top, sub];
+  }
+  const finCls = o => o.info.flash ? 'flash' : 'f-' + o.finish;
+  function caseCardHTML(o, extra) {
+    const [l1, l2] = plateLines(o);
+    return `<span class="dcpic ${finCls(o)}"><span class="picw${o.info.flash ? ' fl' : ''}"><img src="${esc(o.info.imgThumb || o.info.img)}" alt="" draggable="false"></span>${o.variant === 'living' ? '<i class="dclv" aria-hidden="true">▶︎</i>' : ''}</span>${extra || ''}<span class="dcplate"><b>${l1}</b>${l2 ? `<small>${esc(l2)}</small>` : ''}</span>`;
+  }
+  const caseLabel = o => o.info.short + ', ' + plateLines(o).filter(Boolean).join(' ').toLowerCase();
+
+  function paintCaseBtn() {
+    const b = $('caseBtn');
+    b.hidden = !signedIn();
+    if (b.hidden) return;
+    const t = callText(myCase());
+    $('caseBtnT').textContent = t || 'Call sign';
+    b.setAttribute('aria-label', 'Display Case' + (t ? ', ' + t : ''));
+    // How to play, Music, and Sound already fill the row on a phone (356 of 358 px at 390), so the pill takes its
+    // own line at the right, just above Rank (checked at 360, 390, and 430, 11 Nov 2026).
+  }
+
+  // the case itself
+  function openCase() { mark('case'); renderCase(); show('sCase'); }
+  function renderCase() {
+    const cs = myCase(), own = ownedMap(), r = ST && ST.rank;
+    const t = callText(cs);
+    $('caseCall').innerHTML = t ? `<span class="dccall">${esc(t)}</span>` : '<button class="dcchoose" id="caseChoose" type="button">Choose your call sign</button>';
+    if (!t) $('caseChoose').onclick = () => openCallSign('case');
+    $('caseRank').innerHTML = r ? rankBadge(r.title, 'dcbadge') + '<b>' + esc(r.title) + '</b>' : '';
+    const filled = cs.slots.map(s => s && own.get(caseKey(s))).map(o => o || null);
+    const ids = filled.filter(Boolean).map(o => o.card);
+    const grid = $('caseGrid'); grid.innerHTML = '';
+    filled.forEach((o, i) => {
+      const b = document.createElement('button'); b.type = 'button';
+      if (o) {
+        b.className = 'dcslot full';
+        b.innerHTML = caseCardHTML(o);
+        b.setAttribute('aria-label', 'Slot ' + (i + 1) + ': ' + caseLabel(o));
+        b.onclick = () => { view(o.card, ids, 'Display Case'); viewSel = { variant: o.variant, finish: o.finish }; renderView(); };
+      } else {
+        b.className = 'dcslot empty';
+        b.innerHTML = '<span class="dcplus" aria-hidden="true">+</span>';
+        b.setAttribute('aria-label', 'Slot ' + (i + 1) + ': empty. Pin a card');
+        b.onclick = () => openEdit(i);
+      }
+      grid.appendChild(b);
+    });
+    const any = filled.some(Boolean);
+    $('caseFoot').innerHTML = any
+      ? '<button class="btn dcbig" id="caseShare" type="button">Share case</button><p class="dcline">Makes a picture of your case. You choose where it goes.</p>'
+      : '<p class="dcempty">Your case is empty</p><p class="dcline">Pin up to six cards you are proud of, in any order. Then share a picture of your case. Your call sign is optional.</p><button class="btn dcbig" id="caseFirst" type="button">Pin your first card</button>';
+    if (any) $('caseShare').onclick = openCaseShare; else $('caseFirst').onclick = () => openEdit(0);
+  }
+  $('caseBtn').onclick = openCase;
+  $('caseBack').onclick = () => { renderHome(); show('sHome'); };
+  $('caseEdit').onclick = () => openEdit();
+
+  // editing: a draft, saved on Done
+  let draft = null, draftActive = 0, trayFilter = 'all', csReturn = 'case', csA = '', csB = '';
+  function openEdit(slot) {
+    const cs = myCase(), own = ownedMap();
+    draft = { callA: cs.callA, callB: cs.callB, slots: cs.slots.map(s => s && own.has(caseKey(s)) ? { card: s.card, variant: s.variant, finish: s.finish } : null) };
+    draftActive = slot != null ? slot : Math.max(0, draft.slots.indexOf(null));
+    trayFilter = 'all';
+    renderEdit(); show('sCaseEdit');
+  }
+  const TRAY_F = [['all', 'All'], ['topsecret', 'Top Secret'], ['gold', 'Gold'], ['silver', 'Silver'], ['copper', 'Copper']];
+  function renderEdit() {
+    const own = ownedMap(), all = caseOwned();
+    $('editCall').textContent = callText(draft) || 'None yet';
+    $('editCall').classList.toggle('none', !callText(draft));
+    $('editChange').textContent = callText(draft) ? 'Change' : 'Choose';
+    const grid = $('editGrid'); grid.innerHTML = '';
+    draft.slots.forEach((s, i) => {
+      const o = s && own.get(caseKey(s));
+      const cell = document.createElement('div'); cell.className = 'dccell';
+      const b = document.createElement('button'); b.type = 'button';
+      b.className = 'dcslot ' + (o ? 'full' : 'empty') + (i === draftActive ? ' active' : '');
+      b.innerHTML = o ? caseCardHTML(o) : '<span class="dcplus" aria-hidden="true">+</span><span class="dcpin">Pin a card</span>';
+      b.setAttribute('aria-label', 'Slot ' + (i + 1) + ': ' + (o ? caseLabel(o) + '. Tap to replace' : 'empty. Tap to pin a card'));
+      b.setAttribute('aria-pressed', i === draftActive ? 'true' : 'false');
+      b.onclick = () => { draftActive = i; renderEdit(); };
+      cell.appendChild(b);
+      if (o) {
+        const x = document.createElement('button'); x.type = 'button'; x.className = 'dcx';
+        x.setAttribute('aria-label', 'Remove ' + o.info.short);
+        x.innerHTML = '<svg viewBox="0 0 10 10" aria-hidden="true"><path d="M2 2l6 6M8 2l-6 6"/></svg>';
+        x.onclick = () => { draft.slots[i] = null; draftActive = i; renderEdit(); };
+        cell.appendChild(x);
+      }
+      grid.appendChild(cell);
+    });
+    $('trayTitle').textContent = 'Pin to slot ' + (draftActive + 1);
+    $('trayFilters').innerHTML = TRAY_F.map(([k, n]) => `<button type="button" data-f="${k}" aria-pressed="${k === trayFilter}">${n}</button>`).join('');
+    $('trayFilters').querySelectorAll('button').forEach(b => { b.onclick = () => { trayFilter = b.dataset.f; renderEdit(); $('trayRow').scrollTop = 0; }; });
+    const list = all.filter(o => trayFilter === 'all' || (trayFilter === 'topsecret' ? o.finish === 'topsecret' || o.info.flash : o.finish === trayFilter && !o.info.flash));
+    const row = $('trayRow'), keep = row.scrollTop; row.innerHTML = '';
+    if (!list.length) row.innerHTML = `<p class="dcnone">${trayFilter === 'all' ? 'Open an envelope to fill your dossier.' : 'No ' + FNAME[trayFilter] + ' cards yet.'}</p>`;
+    list.forEach(o => {
+      const k = caseKey(o), where = draft.slots.findIndex(s => s && caseKey(s) === k);
+      const b = document.createElement('button'); b.type = 'button';
+      b.className = 'dctcard' + (where >= 0 ? ' pinned' : '');
+      b.innerHTML = `<span class="dcpic ${finCls(o)}"><span class="picw${o.info.flash ? ' fl' : ''}"><img loading="lazy" src="${esc(o.info.imgThumb || o.info.img)}" alt="" draggable="false"></span>${o.variant === 'living' ? '<i class="dclv" aria-hidden="true">▶︎</i>' : ''}</span><small>${where >= 0 ? 'In slot ' + (where + 1) : esc(o.info.flash ? 'Flash' : FNAME[o.finish])}</small><span class="dcnm">${esc(o.info.short)}</span>`;
+      b.setAttribute('aria-label', 'Pin ' + caseLabel(o) + (where >= 0 ? ', now in slot ' + (where + 1) : ''));
+      b.onclick = () => {
+        if (where === draftActive) return;
+        if (where >= 0) draft.slots[where] = null;
+        draft.slots[draftActive] = { card: o.card, variant: o.variant, finish: o.finish };
+        sfx('place');
+        let next = -1;
+        for (let j = 1; j <= CASE_N && next < 0; j++) { const n = (draftActive + j) % CASE_N; if (!draft.slots[n]) next = n; }
+        if (next >= 0) draftActive = next;
+        renderEdit();
+      };
+      row.appendChild(b);
+    });
+    row.scrollTop = keep;
+  }
+  const sameCase = (a, b) => a.callA === b.callA && a.callB === b.callB && JSON.stringify(a.slots) === JSON.stringify(b.slots);
+  function saveCase(next, done) {
+    const before = myCase();
+    if (sameCase(before, next)) return done();
+    return api('case', next).then(d => {
+      if (callText(d.case) && callText(d.case) !== callText(before)) hit('case_callsign');
+      if (JSON.stringify(d.case.slots) !== JSON.stringify(before.slots)) hit('case_edit');
+      ST.case = d.case; done();
+    }).catch(() => toast("Couldn't save your case. Try again."));
+  }
+  $('editCancel').onclick = () => { draft = null; openCase(); };
+  $('editDone').onclick = () => saveCase({ callA: draft.callA, callB: draft.callB, slots: draft.slots }, openCase);
+  $('editChange').onclick = () => openCallSign('edit');
+
+  // the call sign builder
+  function rollCall() {
+    const L = csLists();
+    for (let i = 0; i < 50; i++) {
+      const a = L.first[Math.floor(Math.random() * L.first.length)], b = L.second[Math.floor(Math.random() * L.second.length)];
+      if (!csBlocked(a, b)) { csA = a; csB = b; return; }
+    }
+  }
+  function openCallSign(from) {
+    csReturn = from;
+    const src = from === 'edit' ? draft : myCase();
+    if (src.callA && src.callB) { csA = src.callA; csB = src.callB; } else rollCall();
+    renderCallSign(true); show('sCallSign');
+  }
+  function renderCallSign(scrollTo) {
+    const L = csLists();
+    $('csPair').textContent = csA + ' ' + csB;
+    const ok = !csBlocked(csA, csB);
+    $('csSave').disabled = !ok;
+    const fill = (el, words, cur, set, other) => {
+      el.innerHTML = '';
+      words.forEach(w => {
+        const b = document.createElement('button'); b.type = 'button'; b.className = 'dcword'; b.textContent = w;
+        b.setAttribute('role', 'option'); b.setAttribute('aria-selected', w === cur ? 'true' : 'false');
+        if (other(w)) { b.disabled = true; b.title = 'Not available with this pair'; }
+        b.onclick = () => { set(w); sfx('place'); renderCallSign(false); };
+        el.appendChild(b);
+      });
+      if (scrollTo) { const s = el.querySelector('[aria-selected="true"]'); if (s) el.scrollTop = s.offsetTop - el.clientHeight / 2 + s.offsetHeight / 2; }
+    };
+    const ka = $('csA').scrollTop, kb = $('csB').scrollTop;
+    fill($('csA'), L.first, csA, w => { csA = w; }, w => csBlocked(w, csB));
+    fill($('csB'), L.second, csB, w => { csB = w; }, w => csBlocked(csA, w));
+    if (!scrollTo) { $('csA').scrollTop = ka; $('csB').scrollTop = kb; }
+  }
+  $('csRandom').onclick = () => { rollCall(); sfx('place'); renderCallSign(true); };
+  $('csCancel').onclick = () => { if (csReturn === 'edit') { renderEdit(); show('sCaseEdit'); } else openCase(); };
+  $('csSave').onclick = () => {
+    if (csBlocked(csA, csB)) return;
+    if (csReturn === 'edit') { draft.callA = csA; draft.callB = csB; renderEdit(); show('sCaseEdit'); return; }
+    const cs = myCase();
+    saveCase({ callA: csA, callB: csB, slots: cs.slots }, openCase);
+  };
+
+  // the share picture: 1080 by 1350 on the Darkroom desk, only the pinned cards, centered
+  // Centre a line on its ink, not its advance width: canvas letter spacing adds space after the last letter, which
+  // pushed spaced lines left of the middle (Brian's check of the case picture, 11 Nov 2026). Returns the ink's right edge.
+  function inkText(c, text, cx, y) {
+    const a = c.textAlign; c.textAlign = 'center';
+    const m = c.measureText(text), l = m.actualBoundingBoxLeft, r = m.actualBoundingBoxRight, x = cx - (r - l) / 2;
+    c.fillText(text, x, y); c.textAlign = a;
+    return x + r;
+  }
+  async function paintCase(cv) {
+    await Promise.all(['700 40px Oswald', '400 20px "Special Elite"'].map(f => document.fonts.load(f).catch(() => {})));
+    const cs = myCase(), own = ownedMap(), r = ST && ST.rank;
+    const items = cs.slots.map(s => s && own.get(caseKey(s))).filter(Boolean);
+    const imgs = await Promise.all(items.map(x => loadImg(shareSrc(x)).catch(() => loadImg(x.info.img)).catch(() => null)));
+    const badge = r ? await loadImg('/declass/insignia/' + rankSlug(r.title) + '.svg').catch(() => null) : null;
+    const W = 1080, H = 1350, c = cv.getContext('2d');
+    c.fillStyle = '#17140f'; c.fillRect(0, 0, W, H);
+    const g = c.createRadialGradient(W / 2, -60, 40, W / 2, 0, H * 0.75); g.addColorStop(0, 'rgba(176,58,40,.42)'); g.addColorStop(1, 'rgba(0,0,0,0)'); c.fillStyle = g; c.fillRect(0, 0, W, H);
+    c.globalAlpha = 0.05; c.fillStyle = '#EDE4CF'; for (let y = 0; y < H; y += 6) c.fillRect(0, y, W, 1); c.globalAlpha = 1;
+    c.textAlign = 'center'; c.textBaseline = 'alphabetic';
+    // DECLASS with its TM, then SERVICE RECORD OF, the call sign, and the rank
+    c.fillStyle = '#EDE4CF'; c.font = '700 76px Oswald'; c.letterSpacing = '6px';
+    const dr = inkText(c, 'DECLASS', W / 2, 124);
+    c.letterSpacing = '0px'; c.font = '700 24px Oswald'; c.textAlign = 'left'; c.fillText('™', dr + 6, 84); c.textAlign = 'center';
+    c.fillStyle = '#b9ad92'; c.font = '400 28px "Special Elite"'; c.letterSpacing = '7px'; inkText(c, 'SERVICE RECORD OF', W / 2, 204); c.letterSpacing = '0px';
+    const call = callText(cs);
+    let y = 204;
+    if (call) {
+      c.save(); c.letterSpacing = '4px'; fitFont(c, call, 400, 86, '"Special Elite"', W - 120); c.shadowColor = 'rgba(190,60,40,.55)'; c.shadowBlur = 36; c.fillStyle = '#EDE4CF'; inkText(c, call, W / 2, 298); c.restore();
+      y = 298;
+    }
+    if (r) {
+      c.font = '700 40px Oswald'; c.textAlign = 'left'; const rm = c.measureText(r.title), tw = rm.actualBoundingBoxRight + rm.actualBoundingBoxLeft, bw = badge ? 48 : 0, gap = badge ? 14 : 0, x0 = (W - (bw + gap + tw)) / 2, ry = y + 70;
+      if (badge) c.drawImage(badge, x0, ry - 40, bw, bw);
+      c.fillStyle = '#EDE4CF'; c.textAlign = 'left'; c.fillText(r.title, x0 + bw + gap + rm.actualBoundingBoxLeft, ry); c.textAlign = 'center';
+      y = ry;
+    }
+    // the shelf: one row for up to three cards, two rows for four to six (2+2, 3+2, 3+3)
+    const n = items.length, rows = n <= 3 ? [n] : n === 4 ? [2, 2] : [3, n - 3];
+    // cards as large as the space allows: wide enough for the busiest row, short enough for the rows to fit
+    const colGap = n <= 3 ? 36 : 46, rowGap = 30, plateGap = 14, plateH = 70, padY = 30, sx = 40, sw = W - 80;
+    const top = y + 44, bottom = 1214, cols = Math.max(...rows);
+    const w = Math.floor(Math.min(n === 1 ? 540 : 440, (sw - 60 - (cols - 1) * colGap) / cols, (bottom - top - padY * 2 - rows.length * (plateGap + plateH) - (rows.length - 1) * rowGap) / (rows.length * 1.25)));
+    const fh = w * 1.25, cellH = fh + plateGap + plateH;
+    const rowsH = rows.length * cellH + (rows.length - 1) * rowGap, shelfH = rowsH + padY * 2;
+    const sy = top + Math.max(0, (bottom - top - shelfH) / 2);
+    c.save(); c.fillStyle = grad(c, sx, sy, 0, shelfH, [[0, '#2a2219'], [1, '#1d1812']]); c.strokeStyle = 'rgba(205,185,138,.32)'; c.lineWidth = 2;
+    c.beginPath(); rrect(c, sx, sy, sw, shelfH, 16); c.fill(); c.stroke();
+    c.beginPath(); rrect(c, sx, sy, sw, shelfH, 16); c.clip(); c.fillStyle = 'rgba(255,255,255,.06)'; c.fillRect(sx, sy, sw, 4); c.restore();
+    let k = 0;
+    rows.forEach((cnt, ri) => {
+      const rowW = cnt * w + (cnt - 1) * colGap, x0 = (W - rowW) / 2, ty = sy + padY + ri * (cellH + rowGap);
+      for (let j = 0; j < cnt; j++, k++) {
+        const x = items[k], cx = x0 + j * (w + colGap);
+        c.save(); c.globalAlpha = n > 1 ? 0.6 : 1; shareHalo(c, x, cx + w / 2, ty + fh / 2, w * 0.75); c.restore();
+        if (imgs[k]) framed(c, imgs[k], cx, ty, w, x.finish, x.serial, x.info.flash);
+        // the brass plate
+        const [l1, l2] = plateLines(x), py = ty + fh + plateGap;
+        c.font = '700 26px Oswald'; c.letterSpacing = '3px'; const w1 = c.measureText(l1).width;
+        c.font = '400 21px "Special Elite"'; c.letterSpacing = '1px'; const w2 = l2 ? c.measureText(l2).width : 0;
+        const pw = Math.min(w + 20, Math.max(w1, w2) + 34), ph = l2 ? plateH : 44, px = cx + (w - pw) / 2;
+        c.letterSpacing = '0px';
+        c.fillStyle = grad(c, px, py, 0, ph, [[0, '#9a8150'], [0.5, '#7d6638'], [1, '#62502c']]); c.beginPath(); rrect(c, px, py, pw, ph, 5); c.fill();
+        c.strokeStyle = 'rgba(243,231,198,.35)'; c.lineWidth = 1.5; c.stroke();
+        c.fillStyle = '#F6ECCF'; c.font = '700 26px Oswald'; c.letterSpacing = '3px'; inkText(c, l1, cx + w / 2, py + 33);
+        if (l2) { c.font = '400 21px "Special Elite"'; c.letterSpacing = '1px'; c.fillStyle = '#EADFC0'; inkText(c, l2, cx + w / 2, py + 60); }
+        c.letterSpacing = '0px';
+      }
+    });
+    // footer
+    c.fillStyle = '#E6C77A'; c.font = '700 36px Oswald'; c.letterSpacing = '2px'; inkText(c, 'ww2dispatches.com/declass', W / 2, 1276); c.letterSpacing = '0px';
+    c.fillStyle = '#b9ad92'; c.font = '400 26px "Special Elite"'; inkText(c, 'A WW2 Dispatches game.', W / 2, 1318);
+    c.textAlign = 'left';
+  }
+  function openCaseShare() {
+    hit('case_share');
+    shCustom = { paint: paintCase, text: 'My Display Case in Declass, a WW2 Dispatches game. ww2dispatches.com/declass #Declass', name: 'declass-case.png' };
+    $('shTitle').textContent = 'Share your case';
+    $('shCards').innerHTML = ''; $('shLbl').textContent = 'Makes a picture of your case. You choose where it goes.';
+    $('shui').hidden = false; $('shui').scrollTop = 0;
+    shRefresh();
   }
 
   // ---------- what Intercept (intercept.js) may use ----------
