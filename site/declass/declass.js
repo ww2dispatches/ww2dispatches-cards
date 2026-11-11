@@ -2087,11 +2087,11 @@
   function mark(k) { if (COACH[k]) return; COACH[k] = 1; try { localStorage.setItem(COACH_KEY, JSON.stringify(COACH)); } catch (e) {} }
 
   let noteScope = null, homeRing = null;
-  function note(scope, key, text) {
+  function note(scope, key, text, tag) {
     mark(key);
     const n = $('fnote');
     noteScope = scope;
-    n.innerHTML = '<div class="k"><i></i>FIRST TIME</div><p>' + text + '</p><button type="button">Got it</button>';
+    n.innerHTML = '<div class="k"><i></i>' + (tag || 'FIRST TIME') + '</div><p>' + text + '</p><button type="button">Got it</button>';
     n.querySelector('button').onclick = () => hideNote(scope);
     // On the cards the note sits right under the card's line, beside what it explains; on a tall screen
     // a note pinned to the bottom ended up far from the card (26 Oct 2026). Home notes stay pinned.
@@ -2126,13 +2126,15 @@
     { sel: '#sHome .hstreak', h: 'Your streak', t: 'Open at least one file a day to build your streak. Every third day earns a priority envelope, drawn from the whole archive.' },
     { sel: '#rankBtn', h: 'Your rank', t: 'Every new card, and every new finish of a card, fills a spot in your dossier. Fill enough spots and you get promoted, starting from Private. Each new rank is a surprise, and you never lose one. Tap your rank to see how close the next one is.' },
     { sel: '#intelBtn', h: 'Intel', t: "Every file you open earns 5 Intel, and duplicates turn into more. Spend it to request any card you're missing. Tap Intel to see your balance and what you can request." },
+    // the Display Case (11 Nov 2026): the gold pill above Rank
+    { sel: '#caseBtn', h: 'Your Display Case', t: 'Show off your best cards. Pin up to six in your Display Case, pick a call sign if you like, then share a picture of it anywhere. Tap here to open it.' },
     { sel: '#sHome .howbtn', h: "That's it", t: 'How to play has the rest whenever you want it: Living Cards, Name This, sets, and the odds. Now go open your first file.', last: true },
   ];
   let tourAt = -1, tourEl = null;
   function maybeTour() {
     if (tourAt >= 0 || !signedIn() || seen('tour')) return false;
     if ((ST.pulls || []).some(x => x.slot && x.slot.startsWith('d:'))) { mark('tour'); return false; }
-    mark('tour');
+    mark('tour'); mark('case'); // the tour has its own Display Case stop
     window.scrollTo(0, 0);
     $('tourDim').hidden = false;
     tourStep(0);
@@ -2197,7 +2199,16 @@
     if (!seen('last')) {
       const dayStart = new Date(); dayStart.setHours(0, 0, 0, 0);
       const e = ST.envelopes.find(x => Date.parse(x.at) < dayStart.getTime() && !x.opened);
-      if (e && ring('fm-lastcall')) note('home', 'last', `Last call. You missed yesterday's ${etHour(e.at) < 12 ? 'morning' : 'evening'} file, but it's still open until ${localTime(e.closes)}. Open it before it closes for good.`);
+      if (e && ring('fm-lastcall')) return note('home', 'last', `Last call. You missed yesterday's ${etHour(e.at) < 12 ? 'morning' : 'evening'} file, but it's still open until ${localTime(e.closes)}. Open it before it closes for good.`);
+    }
+    // Players who took the tour before the Display Case existed get one NEW note pointing at the pill (11 Nov 2026).
+    if (!seen('case')) {
+      const cs = myCase();
+      if (cs.callA || cs.slots.some(Boolean)) return mark('case');
+      const b = $('caseBtn');
+      if (b.hidden) return;
+      homeRing = 'case'; b.classList.add('coached');
+      note('home', 'case', 'Your Display Case is here. Pin up to six of your best cards, pick a call sign if you like, and share a picture of it anywhere. Tap the gold button at the top to open it.', 'NEW');
     }
   }
 
@@ -2253,7 +2264,7 @@
   }
 
   // the case itself
-  function openCase() { renderCase(); show('sCase'); }
+  function openCase() { mark('case'); renderCase(); show('sCase'); }
   function renderCase() {
     const cs = myCase(), own = ownedMap(), r = ST && ST.rank;
     const t = callText(cs);
