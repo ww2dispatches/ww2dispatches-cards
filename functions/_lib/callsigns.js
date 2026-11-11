@@ -6,7 +6,7 @@
 // other list. A word removed here falls back to CALL SIGN for anyone who had it, with no page change.
 export const FIRST = [
   'AMBER', 'ARCTIC', 'ASH', 'AUTUMN', 'BOLD', 'BRAVE', 'BRIGHT', 'BRONZE', 'CEDAR', 'CLEAR', 'COBALT', 'COLD',
-  'CRIMSON', 'DAWN', 'DISTANT', 'DUSK', 'EAST', 'FAR', 'FROST', 'GRANITE', 'GREY', 'HARDY', 'HIDDEN', 'HIGH',
+  'CRIMSON', 'DAWN', 'DISTANT', 'DUSK', 'EAST', 'FAR', 'FROST', 'GRANITE', 'GREY', 'HARDY', 'HIDDEN',
   'IRON', 'KEEN', 'LOYAL', 'LUCKY', 'MIDNIGHT', 'MOONLIT', 'NIGHT', 'NORTH', 'OAK', 'PATIENT', 'PINE', 'QUIET',
   'RAPID', 'RISING', 'ROAMING', 'SHADOW', 'SILENT', 'SLATE', 'SOARING', 'SOUTH', 'STALWART', 'STARLIT', 'STEADY',
   'STEEL', 'STONE', 'STORM', 'SWIFT', 'THUNDER', 'TRUE', 'VALIANT', 'WATCHFUL', 'WEST', 'WINTER',
@@ -19,10 +19,9 @@ export const SECOND = [
   'RAVEN', 'RIDGE', 'RIVER', 'RUDDER', 'SCOUT', 'SENTINEL', 'SENTRY', 'SHIELD', 'SIGNAL', 'SPARK', 'SPARROW',
   'STAG', 'STAR', 'TIDE', 'TORCH',
 ];
-// Single pairs stopped without removing either word.
-export const BLOCKED = [
-  ['HIGH', 'PILOT'], // reads as an impaired pilot (11 Nov 2026)
-];
+// Single pairs stopped without removing either word. Empty for now: HIGH PILOT was blocked, then Brian removed
+// HIGH from the first words altogether (11 Nov 2026), since HIGH COURIER, HIGH SCOUT and similar read the same way.
+export const BLOCKED = [];
 
 const A = new Set(FIRST), B = new Set(SECOND), X = new Set(BLOCKED.map(([a, b]) => a + ' ' + b));
 export const callSignOk = (a, b) => A.has(a) && B.has(b) && !X.has(a + ' ' + b);
