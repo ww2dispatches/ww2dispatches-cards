@@ -1,27 +1,12 @@
 {
- "week": "2026-11-03",
- "summary": "**Worked:** big human moments on Threads: the Lost Battalion rescue (1,698 views, 88 reactions), Outpost Snipe (15 comments, the most yet), and Greece says no (1,383). Living Cards keep winning: median 1,418 YouTube views, and YouTube views doubled week on week. Action first openings lifted TikTok hold from 32 to 43 percent (Test B).\n\n**Didn't:** Story Cards (YouTube 22 to 259 views, Instagram hold 6 to 15 percent) and Home Front procedure like the draft lottery (Reach about 0.6). Threads also held back 8 posts in two weeks, including U-559 and Mount Rushmore.\n\n**Tests:** A (human first Spec Sheet hooks) closed: Response doubled, Reach not clearly better. B closed with a TikTok gain. C (shorter, more intense Story Cards) starts with this Thursday's video run; review 24 Nov.\n\n**Decisions:** Facebook versus Substack, Name This on Instagram, and whether to keep Tests A and B as standing practice. Your h-aid-britain veto is applied.",
+ "week": "2026-11-10",
+ "summary": "**Worked:** Rommel's retreat from Alamein became the best card ever (Threads 3,210 views, Reach 8.36), with Manila Bay (3.47), the Fu-Go Spec Sheet (2.91), and the Spruce Goose (12 Threads comments) close behind. YouTube had its best week (9,241 views; Supercharge 2,610). Battle Lines cards out reaching Blueprint and Home Front is now a pattern, three reviews running.\n\n**Didn't:** Threads cut the account's reach about 80 percent from 5 Nov (about 300 views a day since, against 1,400 to 3,500), so the late week cards (the FDR election posts, Torch, the Hitler quote) scored low for reasons outside the card. Facebook Reels went quiet again (four in a row near zero).\n\n**Tests:** C (shorter Story Cards) is running, but no Story Card has been needed since it started; review 24 Nov. A and B closed and dropped, as you chose. No new test while Threads is disrupted.\n\n**Decisions:** Name This on Instagram (asked again), and an optional Threads account status check. Your h-hollywood veto is applied.",
  "questions": [
-  {
-   "id": "facebook-substack",
-   "type": "choice",
-   "ask": "Facebook versus Substack in Buffer: what should happen to Facebook?",
-   "why": "Facebook cards drew a typical **2 views** over 30 posts. Facebook Reels drew a typical **277**, about as much as Instagram Reels, though 5 of 10 Living Card Reels drew almost nothing. Swapping Facebook for Substack would lose about 280 views a day. Claude's view: keep Facebook for Reels and stop the static cards there.",
-   "options": [
-    "Keep Facebook for everything",
-    "Keep Facebook for Reels only, stop the cards there",
-    "Swap Facebook for Substack",
-    "Ask me again next week"
-   ],
-   "if_yes": "Claude updates the Roadmap and the run docs in the Project to match, and the runs follow from the next batch.",
-   "if_blank": "Facebook keeps getting every post, and the question comes back next week.",
-   "carried": false
-  },
   {
    "id": "namethis-instagram",
    "type": "choice",
    "ask": "End Name This on Instagram?",
-   "why": "The two week test is over. Four Name This cards drew 13, 5, 4, and 1 Instagram views, the same as Instagram cards (typical 5.5), and no follows. Claude's view: end it.",
+   "why": "Asked again, as you wanted. Six Name This cards have drawn 13, 5, 4, 1, 8, and 6 Instagram views (typical 5.5), the same as Instagram cards (typical 7), and no follows. Claude's view: end it.",
    "options": [
     "Yes, end it",
     "No, keep it",
@@ -29,80 +14,72 @@
    ],
    "if_yes": "Name This posts go to X, Threads, and Facebook only, from the next Saturday Name This run.",
    "if_blank": "Name This stays on Instagram and the question comes back next week.",
-   "carried": false
+   "carried": true
   },
   {
-   "id": "keep-tests-ab",
+   "id": "threads-status",
    "type": "choice",
-   "ask": "Keep human first Spec Sheet hooks (Test A) and action first video openings (Test B) as standing practice?",
-   "why": "Test A: Response doubled (1.23 against 0.59), Reach not clearly better. Test B: TikTok hold rose from 32 to 43 percent, Instagram flat. Both cost nothing to keep. The runs keep doing both until you decide.",
+   "ask": "Threads account status: what does the app show?",
+   "why": "From 5 Nov, Threads views fell about 80 percent on every post. In the Threads app open **Settings, Account, Account status** and see whether anything is flagged or limited. Optional, about two minutes.",
    "options": [
-    "Keep both",
-    "Keep B only",
-    "Keep A only",
-    "Drop both"
+    "Nothing flagged",
+    "Something is flagged or limited (I'll say what in the notes)",
+    "Haven't checked"
    ],
-   "if_yes": "Claude updates the Cards and Videos docs in the Project so both read as the normal practice, not tests.",
-   "if_blank": "The runs keep doing both, and the question comes back next week.",
+   "if_yes": "The next review reads the Threads numbers with that in mind.",
+   "if_blank": "Nothing changes; the drop stays under Watch.",
    "carried": false
   },
   {
    "id": "intercept-veto",
    "type": "veto",
    "ask": "Veto any of this week's new Code Room groups",
-   "why": "These 7 groups were added to the Code Room master list from posted cards. Veto any link you don't want dealt; vetoed groups are kept but never dealt and never added again. Leaving all of them alone is fine.",
+   "why": "These 9 hard groups were added to the Code Room master list from posted cards (one short of 10). Veto any link you don't want dealt; vetoed groups are kept but never dealt and never added again.",
    "groups": [
     {
-     "id": "h-minority-service",
-     "link": "Each honors service by Americans from a minority group."
+     "id": "h-halsey",
+     "link": "Each involves Admiral William F. Halsey."
     },
     {
-     "id": "h-hollywood",
-     "link": "Each is tied to Hollywood."
+     "id": "h-wood-paper",
+     "link": "Each took to the air built mostly of wood or paper."
     },
     {
-     "id": "h-medal-of-honor",
-     "link": "Each involves a Medal of Honor earned in that very action."
+     "id": "h-undeclared-war",
+     "link": "Each involves the U.S. Navy confronting Germany before Pearl Harbor."
     },
     {
-     "id": "h-allied-secrets",
-     "link": "Each involves a wartime secret the Allies guarded."
+     "id": "h-future-presidents",
+     "link": "Each involves a man who would later become president of the United States."
     },
     {
-     "id": "h-giants",
-     "link": "Each involves one of the largest machines of its kind ever built."
+     "id": "h-california",
+     "link": "All three took place in California."
     },
     {
-     "id": "h-ultimatum-refused",
-     "link": "Each involves an ultimatum that was refused."
+     "id": "h-hold-at-all-costs",
+     "link": "In each, Hitler ordered his troops to hold their ground at all costs."
     },
     {
-     "id": "m-bougainville",
-     "link": "All three took place on or near Bougainville."
+     "id": "h-generals-ashore",
+     "link": "In each, an American general came ashore from the sea."
+    },
+    {
+     "id": "h-patton",
+     "link": "Each involves General George S. Patton."
+    },
+    {
+     "id": "h-big-red-one",
+     "link": "Each involves the U.S. 1st Infantry Division."
     }
    ],
-   "if_blank": "All 7 stay live."
-  },
-  {
-   "id": "followers",
-   "type": "numbers",
-   "ask": "Follower counts right now (monthly)",
-   "why": "Buffer gives no follower totals, so the first Tuesday of each month the review asks. Your 27 Oct counts: X 4, Instagram 11, Threads 21, TikTok 5, YouTube 8, Facebook 2.",
-   "fields": [
-    "X",
-    "Instagram",
-    "Threads",
-    "TikTok",
-    "YouTube",
-    "Facebook"
-   ],
-   "if_blank": "Asked again on 1 Dec."
+   "if_blank": "All stay live."
   },
   {
    "id": "notes",
    "type": "text",
    "ask": "Anything the numbers missed?",
-   "why": "A reply worth knowing about, something you saw in an app that Buffer can't, a subject you want more or less of. The research run reads this.",
+   "why": "Anything you saw in the apps this week.",
    "placeholder": "Optional."
   }
  ]
