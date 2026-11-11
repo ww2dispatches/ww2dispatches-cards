@@ -8,6 +8,7 @@ import { now, findCard, filmReleased } from '../_lib/catalog.js';
 import { signedInPlayer } from '../_lib/player.js';
 import { playerFileNumber } from '../_lib/fileno.js';
 import { isAdmin } from '../_lib/admins.js';
+import { sameOrigin } from '../_lib/gate.js';
 import { FINISHES, LIVING_ONE_IN, FLASH_ONE_IN } from '../_lib/odds.js';
 import { isMorning, gameDay, addDays } from '../_lib/time.js';
 import { filledSlots, rankInfo } from '../_lib/rank.js';
@@ -24,6 +25,19 @@ const etHour = iso => Number(new Date(iso).toLocaleString('en-US', { timeZone: '
 const etMonth = iso => new Date(iso).toLocaleDateString('en-CA', { timeZone: 'America/New_York', year: 'numeric', month: '2-digit' }).slice(0, 7);
 const median = a => { if (!a.length) return 0; const s = a.slice().sort((x, y) => x - y); return s[Math.floor(s.length / 2)]; };
 const tally = () => ({ n: 0, copper: 0, silver: 0, gold: 0, topsecret: 0 });
+
+// One time clean start after launch (10 Nov 2026): deletes visit counts (the tally table) dated before
+// CLEAR_BEFORE. Game tables are never touched. Admin only, same site only. Remove after Brian has used it.
+const CLEAR_BEFORE = '2026-11-10';
+export async function onRequestPost({ request, env }) {
+  const player = await signedInPlayer(env, request);
+  if (!isAdmin(env, player) || !sameOrigin(request)) return fail(404, 'not found');
+  let b; try { b = (await request.json()) || {}; } catch { return fail(400, 'bad request'); }
+  if (b.action !== 'clearTallyBefore' || b.before !== CLEAR_BEFORE) return fail(400, 'bad request');
+  await ensureTally(env.DB);
+  const r = await env.DB.prepare('DELETE FROM tally WHERE day < ?').bind(CLEAR_BEFORE).run();
+  return json({ ok: true, deleted: (r.meta && r.meta.changes) || 0, before: CLEAR_BEFORE });
+}
 
 export async function onRequestGet({ request, env }) {
   const player = await signedInPlayer(env, request);
