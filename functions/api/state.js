@@ -9,6 +9,8 @@ import { signPending, publicPull, withCard } from '../_lib/pulls.js';
 import { intelSummary, priceTable, convertLegacyDuplicates } from '../_lib/intel.js';
 import { filledSlots, rankInfo } from '../_lib/rank.js';
 import { interceptSummary } from '../_lib/intercept.js';
+import { readCase } from '../_lib/displaycase.js';
+import { callSignLists } from '../_lib/callsigns.js';
 
 export async function onRequestGet({ request, env }) {
   const t = now(env, request);
@@ -42,5 +44,8 @@ export async function onRequestGet({ request, env }) {
     intercept: await interceptSummary(env, request, player, t),
     // monthly stamps whose ceremony has already been shown on any device (1 Nov 2026)
     honorsSeen: [...done].filter(k => k.startsWith('h:')).map(k => k.slice(2)),
+    // the Display Case and the call sign word lists (11 Nov 2026)
+    case: await readCase(env.DB, player.id, pulls.results),
+    callsigns: callSignLists(),
   });
 }
