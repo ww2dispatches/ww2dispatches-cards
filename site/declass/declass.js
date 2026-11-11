@@ -2325,9 +2325,9 @@
     });
     $('trayTitle').textContent = 'Pin to slot ' + (draftActive + 1);
     $('trayFilters').innerHTML = TRAY_F.map(([k, n]) => `<button type="button" data-f="${k}" aria-pressed="${k === trayFilter}">${n}</button>`).join('');
-    $('trayFilters').querySelectorAll('button').forEach(b => { b.onclick = () => { trayFilter = b.dataset.f; renderEdit(); $('trayRow').scrollLeft = 0; }; });
+    $('trayFilters').querySelectorAll('button').forEach(b => { b.onclick = () => { trayFilter = b.dataset.f; renderEdit(); $('trayRow').scrollTop = 0; }; });
     const list = all.filter(o => trayFilter === 'all' || (trayFilter === 'topsecret' ? o.finish === 'topsecret' || o.info.flash : o.finish === trayFilter && !o.info.flash));
-    const row = $('trayRow'), keep = row.scrollLeft; row.innerHTML = '';
+    const row = $('trayRow'), keep = row.scrollTop; row.innerHTML = '';
     if (!list.length) row.innerHTML = `<p class="dcnone">${trayFilter === 'all' ? 'Open an envelope to fill your dossier.' : 'No ' + FNAME[trayFilter] + ' cards yet.'}</p>`;
     list.forEach(o => {
       const k = caseKey(o), where = draft.slots.findIndex(s => s && caseKey(s) === k);
@@ -2347,7 +2347,7 @@
       };
       row.appendChild(b);
     });
-    row.scrollLeft = keep;
+    row.scrollTop = keep;
   }
   const sameCase = (a, b) => a.callA === b.callA && a.callB === b.callB && JSON.stringify(a.slots) === JSON.stringify(b.slots);
   function saveCase(next, done) {

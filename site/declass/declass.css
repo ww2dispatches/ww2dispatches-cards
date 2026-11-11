@@ -1234,15 +1234,17 @@ html.ztrial #stage2{cursor:zoom-in}
 .dcline{margin:0;font-family:var(--type);font-size:14px;line-height:1.45;color:var(--mute);max-width:340px}
 .dcempty{margin:0;font-family:var(--type);font-size:20px}
 /* editing: the tray of owned cards along the bottom */
-/* the tray follows the grid; on a short screen it sticks to the bottom edge instead (11 Nov 2026: fixed to the bottom it left a big gap on tall windows) */
-.dctray{position:sticky;bottom:0;z-index:20;margin:16px 0 0;padding:10px 0 calc(14px + env(safe-area-inset-bottom,0px));border-radius:14px;background:#EDE4CF;color:#1A1612;box-shadow:0 -8px 30px rgba(0,0,0,.55)}
+/* the tray follows the grid (11 Nov 2026: fixed to the bottom it left a big gap on tall windows), and its cards wrap
+   into rows that scroll up and down instead of one long sideways row (Brian, 11 Nov 2026) */
+.dctray{position:relative;margin:16px 0 0;padding:10px 0 calc(14px + env(safe-area-inset-bottom,0px));border-radius:14px;background:#EDE4CF;color:#1A1612;box-shadow:0 -8px 30px rgba(0,0,0,.55)}
 .dctrayhd{display:flex;justify-content:space-between;align-items:baseline;padding:0 16px}
 .dctrayhd b{font-family:var(--type);font-weight:400;font-size:18px}.dctrayhd span{font-family:var(--type);font-size:14px;color:#5e5343}
-.dcfilters{display:flex;gap:6px;padding:8px 16px 4px;overflow-x:auto;scrollbar-width:none}
-.dcfilters button{flex:0 0 auto;min-height:36px;padding:0 12px;border-radius:18px;border:1px solid #6b5f4c;background:transparent;color:#1A1612;font-family:var(--type);font-size:14px;cursor:pointer}
+.dcfilters{display:flex;flex-wrap:wrap;gap:6px;padding:8px 16px 4px}
+.dcfilters button{flex:0 0 auto;min-height:36px;padding:0 11px;border-radius:18px;border:1px solid #6b5f4c;background:transparent;color:#1A1612;font-family:var(--type);font-size:14px;cursor:pointer}
 .dcfilters button[aria-pressed="true"]{background:#1A1612;color:#EDE4CF;border-color:#1A1612}
-.dcrow{display:flex;gap:10px;overflow-x:auto;padding:8px 16px 2px}
-.dctcard{flex:0 0 88px;width:88px;display:flex;flex-direction:column;align-items:center;gap:3px;padding:0;background:none;border:0;cursor:pointer;color:#1A1612}
+.dcrow{display:grid;grid-template-columns:repeat(auto-fill,minmax(84px,1fr));gap:12px 10px;max-height:min(420px,56dvh);overflow-y:auto;overscroll-behavior:contain;padding:8px 16px 4px;margin-right:4px;scrollbar-width:thin;scrollbar-color:#9a8a6a transparent}
+.dcrow .dcnone{grid-column:1/-1;text-align:center}
+.dctcard{min-width:0;width:100%;display:flex;flex-direction:column;align-items:center;gap:3px;padding:0;background:none;border:0;cursor:pointer;color:#1A1612}
 .dctcard.pinned .dcpic{opacity:.45}
 .dctcard small{font-family:var(--type);font-size:13px;font-weight:700;color:#4a4033;margin-top:3px;white-space:nowrap;max-width:100%;overflow:hidden;text-overflow:ellipsis}
 .dctcard .dcnm{font-family:var(--display);font-size:12px;letter-spacing:.03em;text-transform:uppercase;line-height:1.15;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
