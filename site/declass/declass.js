@@ -2419,6 +2419,14 @@
   };
 
   // the share picture: 1080 by 1350 on the Darkroom desk, only the pinned cards, centered
+  // Centre a line on its ink, not its advance width: canvas letter spacing adds space after the last letter, which
+  // pushed spaced lines left of the middle (Brian's check of the case picture, 11 Nov 2026). Returns the ink's right edge.
+  function inkText(c, text, cx, y) {
+    const a = c.textAlign; c.textAlign = 'center';
+    const m = c.measureText(text), l = m.actualBoundingBoxLeft, r = m.actualBoundingBoxRight, x = cx - (r - l) / 2;
+    c.fillText(text, x, y); c.textAlign = a;
+    return x + r;
+  }
   async function paintCase(cv) {
     await Promise.all(['700 40px Oswald', '400 20px "Special Elite"'].map(f => document.fonts.load(f).catch(() => {})));
     const cs = myCase(), own = ownedMap(), r = ST && ST.rank;
@@ -2432,19 +2440,19 @@
     c.textAlign = 'center'; c.textBaseline = 'alphabetic';
     // DECLASS with its TM, then SERVICE RECORD OF, the call sign, and the rank
     c.fillStyle = '#EDE4CF'; c.font = '700 76px Oswald'; c.letterSpacing = '6px';
-    const dw = c.measureText('DECLASS').width; c.fillText('DECLASS', W / 2, 124);
-    c.letterSpacing = '0px'; c.font = '700 24px Oswald'; c.textAlign = 'left'; c.fillText('™', W / 2 + dw / 2 + 4, 84); c.textAlign = 'center';
-    c.fillStyle = '#b9ad92'; c.font = '400 28px "Special Elite"'; c.letterSpacing = '7px'; c.fillText('SERVICE RECORD OF', W / 2, 204); c.letterSpacing = '0px';
+    const dr = inkText(c, 'DECLASS', W / 2, 124);
+    c.letterSpacing = '0px'; c.font = '700 24px Oswald'; c.textAlign = 'left'; c.fillText('™', dr + 6, 84); c.textAlign = 'center';
+    c.fillStyle = '#b9ad92'; c.font = '400 28px "Special Elite"'; c.letterSpacing = '7px'; inkText(c, 'SERVICE RECORD OF', W / 2, 204); c.letterSpacing = '0px';
     const call = callText(cs);
     let y = 204;
     if (call) {
-      c.save(); c.letterSpacing = '4px'; fitFont(c, call, 400, 86, '"Special Elite"', W - 120); c.shadowColor = 'rgba(190,60,40,.55)'; c.shadowBlur = 36; c.fillStyle = '#EDE4CF'; c.fillText(call, W / 2, 298); c.restore();
+      c.save(); c.letterSpacing = '4px'; fitFont(c, call, 400, 86, '"Special Elite"', W - 120); c.shadowColor = 'rgba(190,60,40,.55)'; c.shadowBlur = 36; c.fillStyle = '#EDE4CF'; inkText(c, call, W / 2, 298); c.restore();
       y = 298;
     }
     if (r) {
-      c.font = '700 40px Oswald'; const tw = c.measureText(r.title).width, bw = badge ? 48 : 0, gap = badge ? 14 : 0, x0 = (W - (bw + gap + tw)) / 2, ry = y + 70;
+      c.font = '700 40px Oswald'; c.textAlign = 'left'; const rm = c.measureText(r.title), tw = rm.actualBoundingBoxRight + rm.actualBoundingBoxLeft, bw = badge ? 48 : 0, gap = badge ? 14 : 0, x0 = (W - (bw + gap + tw)) / 2, ry = y + 70;
       if (badge) c.drawImage(badge, x0, ry - 40, bw, bw);
-      c.fillStyle = '#EDE4CF'; c.textAlign = 'left'; c.fillText(r.title, x0 + bw + gap, ry); c.textAlign = 'center';
+      c.fillStyle = '#EDE4CF'; c.textAlign = 'left'; c.fillText(r.title, x0 + bw + gap + rm.actualBoundingBoxLeft, ry); c.textAlign = 'center';
       y = ry;
     }
     // the shelf: one row for up to three cards, two rows for four to six (2+2, 3+2, 3+3)
@@ -2474,14 +2482,14 @@
         c.letterSpacing = '0px';
         c.fillStyle = grad(c, px, py, 0, ph, [[0, '#9a8150'], [0.5, '#7d6638'], [1, '#62502c']]); c.beginPath(); rrect(c, px, py, pw, ph, 5); c.fill();
         c.strokeStyle = 'rgba(243,231,198,.35)'; c.lineWidth = 1.5; c.stroke();
-        c.fillStyle = '#F6ECCF'; c.font = '700 26px Oswald'; c.letterSpacing = '3px'; c.fillText(l1, cx + w / 2 + 1.5, py + 33);
-        if (l2) { c.font = '400 21px "Special Elite"'; c.letterSpacing = '1px'; c.fillStyle = '#EADFC0'; c.fillText(l2, cx + w / 2, py + 60); }
+        c.fillStyle = '#F6ECCF'; c.font = '700 26px Oswald'; c.letterSpacing = '3px'; inkText(c, l1, cx + w / 2, py + 33);
+        if (l2) { c.font = '400 21px "Special Elite"'; c.letterSpacing = '1px'; c.fillStyle = '#EADFC0'; inkText(c, l2, cx + w / 2, py + 60); }
         c.letterSpacing = '0px';
       }
     });
     // footer
-    c.fillStyle = '#E6C77A'; c.font = '700 36px Oswald'; c.letterSpacing = '2px'; c.fillText('ww2dispatches.com/declass', W / 2, 1276); c.letterSpacing = '0px';
-    c.fillStyle = '#b9ad92'; c.font = '400 26px "Special Elite"'; c.fillText('A WW2 Dispatches game.', W / 2, 1318);
+    c.fillStyle = '#E6C77A'; c.font = '700 36px Oswald'; c.letterSpacing = '2px'; inkText(c, 'ww2dispatches.com/declass', W / 2, 1276); c.letterSpacing = '0px';
+    c.fillStyle = '#b9ad92'; c.font = '400 26px "Special Elite"'; inkText(c, 'A WW2 Dispatches game.', W / 2, 1318);
     c.textAlign = 'left';
   }
   function openCaseShare() {
