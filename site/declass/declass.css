@@ -1261,3 +1261,12 @@ html.ztrial #stage2{cursor:zoom-in}
 .dcword[aria-selected="true"]{background:#A8321F;color:#F6EDDA}
 .dcword:disabled{opacity:.35;cursor:default;text-decoration:line-through}
 @media (max-width:370px){.dccall{font-size:26px}.dcpair .dccall{font-size:27px}.dcchoose{font-size:17px}.dcword{font-size:15px}}
+/* Display Case centering (11 Nov 2026, Brian's check): the bar title sits in the true middle whatever the widths of the
+   buttons beside it, and letter spaced lines get the same space on the left as the spacing adds after the last letter */
+.dcbar{display:grid;grid-template-columns:1fr auto 1fr}
+.dcbar > :first-child{justify-self:start}.dcbar > :last-child{justify-self:end}
+.dcttl{padding-left:.18em}
+.dcof{padding-left:.2em}
+.dccall{padding-left:.06em}
+.dcchoose{padding-left:calc(16px + .06em)}
+.dccol p{padding-left:calc(10px + .14em)}
