@@ -5,7 +5,7 @@ A daily social media serial that follows one campaign day by day, told as it hap
 ## Status
 | Series | Dates | Days | State |
 |---|---|---|---|
-| Pearl Harbor | 26 Nov to 7 Dec 1941 (posts 26 Nov to 7 Dec 2026) | 12 | **Built and scheduled 11 Nov 2026**: 44 posts in Buffer (Days 1 to 8 and 10 to 12). **Day 9 waits on a photo from Brian** (Rainbow Five, 4 Dec). Records in `campaign-series/pearl-harbor-1941/`. |
+| Pearl Harbor | 26 Nov to 7 Dec 1941 (posts 26 Nov to 7 Dec 2026) | 12 | **Built and scheduled 11 Nov 2026**: all 48 posts in Buffer. Records in `campaign-series/pearl-harbor-1941/`. |
 | The Bulge | 16 Dec 1944 to 25 Jan 1945 | 41 | Planned (anchor days below). Build sitting: Thanksgiving weekend, 26 to 29 Nov 2026. |
 | Stalingrad | later year | | Candidate (photos mostly Soviet or German, so harder). |
 
@@ -54,7 +54,7 @@ Canvas: "Campaign Series Bulletin Mockup" (https://claude.ai/artifact/HKsV6D4kmG
 | 6 | 1 Dec | Tokyo decides on war | Tojo, 1941 |
 | 7 | 2 Dec | Climb Mount Niitaka | Akagi's flight deck, Hitokappu Bay |
 | 8 | 3 Dec | Japan's embassies burn their codes | US built Purple machine, NARA 518142 |
-| 9 | 4 Dec | A secret war plan hits page one | **Waiting on Brian's photo** (a 1929 Stimson portrait is rendered as a placeholder; not scheduled) |
+| 9 | 4 Dec | A secret war plan hits page one | Wedemeyer, author of Rainbow Five, about 1942, Signal Corps 196260 (supplied by Brian; small original) |
 | 10 | 5 Dec | The last carrier leaves Pearl Harbor | Lexington, 80 G 416362 |
 | 11 | 6 Dec | Washington reads Tokyo's answer | Hull, Nomura, Kurusu, 17 Nov 1941 (small original, a bit soft) |
 | 12 | 7 Dec | Five midget submarines in the dark | HA 19 aground, Dec 1941 |
@@ -85,7 +85,6 @@ Anchor days, each to be verified in the sitting (two sources); the rest are fill
 * D41 25 Jan: the battle's official end.
 
 ## Open
-* Day 9 photo (Brian), then render, push, and schedule Day 9.
 * The Substack section and the two Pearl Harbor roundups (Bulge sitting, before 29 Nov).
 * The Bulge build sitting (Thanksgiving weekend).
 * Idea for its own chat (Brian, 11 Nov 2026): a page on ww2dispatches.com holding every Campaign Series, styled a bit like a bookshelf. The day records in `campaign-series/<series>/` (images, captions, sources) are the data it would read.
@@ -93,3 +92,4 @@ Anchor days, each to be verified in the sitting (two sources); the rest are fill
 ## Changelog
 * 11 Nov 2026: Idea decided in principle and handed off (slot, platforms, not a card, Bulge dates, Pearl Harbor first, one sitting per series).
 * 11 Nov 2026 (night, Campaign Series chat): Look C locked and drawn by the new `renderer/campaign.html`; caption style set; Pearl Harbor set at 26 Nov to 7 Dec (12 days), researched, written, rendered, and 44 posts scheduled in Buffer (Day 9 waits on a photo); same event allowed in the regular slots with different wording (rule added to the Cards and Videos docs); Substack set as weekly web only roundups in a Campaign Series section; the `campaign-series` skill built.
+* 11 Nov 2026 (later): Day 9 scheduled with Brian's Signal Corps photo of Wedemeyer; its caption now names him as the plan's author under suspicion.
