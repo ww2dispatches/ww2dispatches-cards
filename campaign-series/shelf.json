@@ -1,5 +1,5 @@
 {
- "about": "The Campaign Shelf on ww2dispatches.com/campaign-series (Site Revamp doc). One entry per volume, in volume order. A volume whose folder campaign-series/<id>/ holds day records is built as a live volume page; the others show a stamped cover and the note. Edit by hand; renderer/site_pages.py reads it. runYear is the year the series posts in (a day's run date is its historical day and month in runYear, stepping up a year after December, unless the day record has a postDate). cover is a photo in this repo; cloth is the clothbound color; w and h size the spine in pixels.",
+ "about": "The Campaign Shelf on ww2dispatches.com/campaign-series (Site Revamp doc). One entry per volume, in volume order. A volume whose folder campaign-series/<id>/ holds day records is built as a live volume page; the others show a stamped cover and the note. Edit by hand; renderer/site_pages.py reads it. runYear is the year the series posts in (a day's run date is its historical day and month in runYear, stepping up a year after December, unless the day record has a postDate). cover is a photo in this repo; cloth is the clothbound color; w and h size the spine in pixels. status: live comes on its own from day records; planned (decided, not yet built), prep (being built), proposed (an idea). Volumes are numbered in posting order; months whose pick is still undecided join once decided.",
  "volumes": [
   {
    "id": "pearl-harbor-1941",
@@ -22,8 +22,8 @@
    "id": "bulge-1944",
    "vol": "II",
    "title": "The Bulge",
-   "dates": "16 Dec 1944 to 25 Jan 1945",
-   "days": 41,
+   "dates": "16 Dec 1944 to 14 Jan 1945",
+   "days": 30,
    "theater": "The Western Front",
    "year": 1944,
    "status": "prep",
@@ -31,22 +31,53 @@
    "cloth": "#5E2520",
    "w": 60,
    "h": 206,
-   "blurb": "Hitler's last gamble in the West, from the dawn barrage in the Ardennes to the battle's official end.",
+   "blurb": "Hitler's last gamble in the West, from the dawn barrage in the Ardennes to the American armies closing on Houffalize.",
    "note": "First dispatch 16 Dec 2026 at 6:30 a.m. Mountain. Days appear here as they post."
   },
   {
-   "id": "stalingrad",
+   "id": "anzio-1944",
    "vol": "III",
-   "title": "Stalingrad",
-   "dates": "1942 to 1943",
-   "theater": "The Eastern Front",
-   "year": 1942,
-   "status": "proposed",
-   "cloth": "#3F4034",
-   "w": 54,
-   "h": 188,
-   "blurb": "The battle that turned the war in the East. Under consideration for a future year.",
-   "note": "Not yet scheduled."
+   "title": "Anzio",
+   "dates": "From 22 Jan 1944",
+   "theater": "The Mediterranean",
+   "year": 1944,
+   "status": "planned",
+   "runYear": 2027,
+   "cloth": "#4B4630",
+   "w": 46,
+   "h": 180,
+   "blurb": "Allied troops land behind the German line in Italy, then must hold a narrow beachhead under the guns.",
+   "note": "Begins with the 22 January 1944 landing, posting from 22 Jan 2027. Days appear here as they post."
+  },
+  {
+   "id": "remagen-1945",
+   "vol": "IV",
+   "title": "Remagen",
+   "dates": "March 1945",
+   "theater": "The Western Front",
+   "year": 1945,
+   "status": "planned",
+   "runYear": 2027,
+   "cloth": "#383E46",
+   "w": 52,
+   "h": 192,
+   "blurb": "An American patrol finds a bridge over the Rhine still standing, and the army races to hold it.",
+   "note": "Posts in March 2027 on the real dates. Days appear here as they post."
+  },
+  {
+   "id": "okinawa-1945",
+   "vol": "V",
+   "title": "Okinawa",
+   "dates": "Spring 1945",
+   "theater": "The Pacific",
+   "year": 1945,
+   "status": "planned",
+   "runYear": 2027,
+   "cloth": "#2C4546",
+   "w": 56,
+   "h": 200,
+   "blurb": "The last great battle of the Pacific, and the radar picket destroyers that stood in the path of the kamikazes.",
+   "note": "Posts in spring 2027 on the real dates. Days appear here as they post."
   }
  ]
 }

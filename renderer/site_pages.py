@@ -368,7 +368,7 @@ def build_shelf_page(vols):
     groups = {}
     for v in vols:
         groups.setdefault(v["theater"], []).append(v)
-    order = ["The Pacific", "The Western Front", "The Eastern Front"]
+    order = ["The Pacific", "The Western Front", "The Mediterranean", "The Eastern Front", "The Atlantic"]
     names = [g for g in order if g in groups] + [g for g in groups if g not in order]
     shelves = "\n".join(
         f'    <section class="shelf" aria-label="{esc(g)}"><h2>{esc(g)}</h2><div class="board hs">{"".join(spine(v) for v in groups[g])}'

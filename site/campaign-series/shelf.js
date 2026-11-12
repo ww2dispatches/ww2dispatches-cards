@@ -10,7 +10,7 @@
   var spines = {}; Array.prototype.forEach.call(document.querySelectorAll(".spine"), function (b) { spines[b.dataset.id] = b; });
   var esc = WW2.esc, phone = window.matchMedia("(max-width: 899px)");
   var picked = null, opener = null;
-  var THEATERS = ["The Pacific", "The Western Front", "The Eastern Front"];
+  var THEATERS = ["The Pacific", "The Western Front", "The Mediterranean", "The Eastern Front", "The Atlantic"];
 
   function status(v) {
     if (v.status === "live") {
@@ -22,7 +22,8 @@
       }
       return { label: "Complete", cls: "green" };
     }
-    return v.status === "prep" ? { label: "In preparation", cls: "gold" } : { label: "Proposed", cls: "plain" };
+    if (v.status === "prep") return { label: "In preparation", cls: "gold" };
+    return v.status === "planned" ? { label: "Planned", cls: "plain" } : { label: "Proposed", cls: "plain" };
   }
 
   // ---------- shelve by theater or year ----------
@@ -58,7 +59,7 @@
     } else {
       book.removeAttribute("href"); book.setAttribute("aria-disabled", "true"); book.removeAttribute("aria-label");
       book.innerHTML = '<span class="bk-vol">VOL. ' + esc(v.vol) + '</span><span class="bk-title">' + esc(v.title) + '</span><span class="bk-stamp">' +
-        (v.status === "prep" ? "In prep" : "Proposed") + "</span>";
+        ({ prep: "In prep", planned: "Planned" }[v.status] || "Proposed") + "</span>";
     }
     book.classList.toggle("stamped", !live);
     document.getElementById("st-theater").textContent = v.theater;
