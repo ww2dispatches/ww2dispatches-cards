@@ -1,0 +1,170 @@
+{
+ "num": 73,
+ "id": "1942-11-19-t34-spec",
+ "title": "The tank that closed the ring",
+ "date": "1942-11-19",
+ "time": "17:00",
+ "place": "Stalingrad · Soviet Union",
+ "series": "blue",
+ "pull": "Sloped armor, wide tracks, a diesel heart",
+ "format": "spec",
+ "specTitle": "T-34 (76 mm, 1942)",
+ "specs": [
+  [
+   "Crew",
+   "4"
+  ],
+  [
+   "Main gun",
+   "76.2 mm F-34"
+  ],
+  [
+   "Hull front armor",
+   "45 mm, sloped at 60 degrees"
+  ],
+  [
+   "Engine",
+   "V-2 diesel, 500 hp"
+  ]
+ ],
+ "short": "T-34",
+ "facts": [
+  {
+   "text": "The T-34 medium tank went into production in 1940 and became the backbone of the Red Army's tank force.",
+   "sources": [
+    0
+   ]
+  },
+  {
+   "text": "By 1942 it carried the long 76.2 mm F-34 gun, behind hull armor 45 mm thick sloped at 60 degrees, which protected it far better than the thickness alone suggests.",
+   "sources": [
+    0,
+    1
+   ]
+  },
+  {
+   "text": "A 500 horsepower V-2 diesel engine drove it on wide tracks that coped with dirt roads and open country better than most tanks of its day.",
+   "sources": [
+    0
+   ]
+  },
+  {
+   "text": "It had a crew of four. In the cramped two man turret the commander also had to aim and fire the gun, a real handicap in a fight.",
+   "sources": [
+    0,
+    5
+   ]
+  },
+  {
+   "text": "The Stalingrad Tractor Factory, one of the first two T-34 plants, kept building the tank until fighting reached it in September 1942.",
+   "sources": [
+    0,
+    1
+   ]
+  },
+  {
+   "text": "In Operation Uranus T-34s spearheaded the armored thrusts that encircled the German Sixth Army. The Romanian troops in their path had no antitank guns heavier than 47 mm.",
+   "sources": [
+    3,
+    4
+   ]
+  },
+  {
+   "text": "The commander problem was fixed only with the T-34-85 of 1944, whose three man turret let the commander simply command.",
+   "sources": [
+    0,
+    5
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "title": "T-34, Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/T-34"
+  },
+  {
+   "title": "T-34/76 variants, HistoryOfWar.org",
+   "url": "https://www.historyofwar.org/articles/weapons_t-34-76_variants.html"
+  },
+  {
+   "title": "Blaine Taylor, The Red Army's T-34 Tank: The Eastern Front and Beyond, WWII History, March 2004 (Warfare History Network)",
+   "url": "https://warfarehistorynetwork.com/?p=9337"
+  },
+  {
+   "title": "Operation Uranus, Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Operation_Uranus"
+  },
+  {
+   "title": "Earl F. Ziemke and Magna E. Bauer, Moscow to Stalingrad: Decision in the East, Chapter XXII, US Army Center of Military History (HyperWar transcription)",
+   "url": "https://www.ibiblio.org/hyperwar/USA/USA-EF-Decision/USA-EF-Decision-22.html"
+  },
+  {
+   "title": "Was the Russian T-34 Really the Best Tank of WW2?, War History Online",
+   "url": "https://www.warhistoryonline.com/instant-articles/best-tank-part-1-t-34.html"
+  }
+ ],
+ "photo": "photos/1942-11-19-t34-spec.jpg",
+ "photoUrl": "https://commons.wikimedia.org/wiki/File:Танкисты_24-го_танкового_корпуса_(с_26_декабря_1942_года_-_2-го_гвардейского)_на_броне_танка_Т-34._Декабрь_1942.jpg",
+ "photoNote": "Five crewmen of the Soviet 24th Tank Corps (renamed 2nd Guards Tank Corps on 26 December 1942) on the turret of a T-34, December 1942, during the Stalingrad winter offensive (the corps made the Tatsinskaya raid that month). Unknown Soviet photographer. Commons tags PD-Russia-1996 (public domain in Russia and in the US by the URAA date). Only 960 x 501 (Commons original 1024 x 534; the full size download hit Wikimedia 429s). Shows the hexagonal turret with the number 329; good for the spec photo window. Higher resolution alternative: T-34 tanks and officers of the 5th Tank Regiment, northern Crimea, October 1941, 1815 px, PD-Russia-1996 (https://commons.wikimedia.org/wiki/File:T34_tanks.jpg), but it is the 1941 model and a year earlier.",
+ "photoCredit": "Crewmen of the Soviet 24th Tank Corps on a T-34, December 1942. Unknown Soviet photographer, public domain.",
+ "declassified": {
+  "fact": "The tank's road wheels changed with the war. Rubber ran short in 1942, so factories began fitting all steel road wheels with internal springs, and Stalingrad built tanks without rubber tired wheels.",
+  "sources": [
+   {
+    "title": "T-34, Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/T-34"
+   },
+   {
+    "title": "T-34/76 variants, HistoryOfWar.org",
+    "url": "https://www.historyofwar.org/articles/weapons_t-34-76_variants.html"
+   }
+  ]
+ },
+ "videoPhotos": [
+  {
+   "page": "https://commons.wikimedia.org/wiki/File:T34_tanks.jpg",
+   "credit": "T-34s of the 5th Tank Regiment, northern Crimea, October 1941. PD-Russia-1996 per Commons."
+  },
+  {
+   "page": "https://commons.wikimedia.org/wiki/File:Carristi_sovietici.jpg",
+   "credit": "Soviet tank crews refuel beside T-34s, winter 1942 to 1943. PD-Russia-1996 per Commons."
+  },
+  {
+   "page": "https://commons.wikimedia.org/wiki/File:Moscow_Strikes_Back_20-12_Tank_Crewman_Scrambles_to_T-34.jpg",
+   "credit": "A crewman runs to his T-34, winter 1941 to 1942, frame from Moscow Strikes Back. PD-Russia-1996 per Commons."
+  },
+  {
+   "page": "https://commons.wikimedia.org/wiki/File:T-34_Model_1940.jpg",
+   "credit": "An early T-34, 1940 model. PD-Russia-1996 per Commons."
+  }
+ ],
+ "kind": "living",
+ "videoTime": "19:00",
+ "film": {
+  "status": "needs brian",
+  "record": "Stalingrad (1943, Central Studio of Documentary Film, text by Vasily Grossman), Source Film copy (240p index, 480p for final cuts)",
+  "url": "Source Film folder on Brian's computer (Film Library: claude/film-index/stalingrad-1943.md)",
+  "file": "footage/1942-11-19-t34.mp4 (cut in the Project from Source Film and committed to the videos repo inbox, the next sweep moves it to R2)",
+  "sound": false,
+  "shot_notes": "Film Library calendar: 19 Nov 1942, Operation Uranus, STG 00:41:46 to 00:44:48; T-34s with riders at 00:43:27, the barrage at 00:41:57. Cut about 15 seconds around 00:43:27 (T-34s carrying infantry into the attack), opening on the tanks moving. Narration and score run over it, so the clip runs silent. Leave out the staged link up embrace at 00:49:00.",
+  "license": "Public domain (PD-Russia-1996: Soviet studio film made 1929 to 1946), per the Film Library",
+  "date_note": "Soviet film of the Uranus offensive, November 1942."
+ },
+ "somber": false,
+ "themes": {
+  "who": [],
+  "story": [
+   "invention or machine"
+  ],
+  "photo": "a machine",
+  "theater": "Eastern Front",
+  "branch": [
+   "Army"
+  ],
+  "nations": [
+   "Soviet Union",
+   "Germany"
+  ],
+  "lens": "soviet"
+ }
+}

@@ -1,0 +1,185 @@
+{
+ "id": "bank-enigma-spec",
+ "title": "The machine Germany trusted",
+ "date": "1942-02-01",
+ "place": "North Atlantic · U-boat fleet",
+ "series": "blue",
+ "pull": "Germany was sure no one could read it",
+ "short": "Enigma",
+ "format": "spec",
+ "specTitle": "Enigma cipher machine",
+ "specs": [
+  [
+   "Rotors in use",
+   "3, from a set of 5"
+  ],
+  [
+   "Plugboard",
+   "10 cable pairs"
+  ],
+  [
+   "Key changed",
+   "Every 24 hours"
+  ],
+  [
+   "Possible settings",
+   "About 150 million million million"
+  ],
+  [
+   "Naval M4",
+   "From 1 February 1942"
+  ],
+  [
+   "M4 rotors",
+   "3 of 8, plus a 4th"
+  ]
+ ],
+ "specNote": "Rotors 3 from 5 (Army and Luftwaffe Enigma I, from December 1938): Bletchley Park, Crypto Museum, codesandciphers.org.uk (Tony Sale). Plugboard 10 cables: Bletchley Park, Crypto Museum, Wikipedia. Key valid 24 hours: Crypto Museum (set at midnight, valid 24 hours), codesandciphers.org.uk, Wikipedia (changed daily); later in the war some keys changed more often. Possible settings about 1.5 x 10^20: CIA (150,000,000,000,000,000,000), codesandciphers.org.uk (1.5 x 10^20), Wikipedia (158,962,555,217,826,360,000); Bletchley Park gives a far larger figure (1.03 x 10^23) because it counts ring settings, so the caption should say 'about 150 million million million' and not claim an exact figure. M4 from 1 February 1942: Bletchley Park, Crypto Museum, Wikipedia. M4 rotors, three chosen from eight plus a fixed fourth (Beta or Gamma): Bletchley Park, Crypto Museum.",
+ "facts": [
+  {
+   "text": "Enigma was a typewriter sized cipher machine. German armed forces adopted it from 1926, starting with the Navy; the Army had its own version by 1928.",
+   "sources": [
+    0,
+    3
+   ]
+  },
+  {
+   "text": "Each key press sent current through three rotors and a plugboard and lit up a different letter. The rotors stepped with every key, so the same letter came out differently each time.",
+   "sources": [
+    0,
+    1
+   ]
+  },
+  {
+   "text": "Army and Luftwaffe operators set three rotors chosen from five and joined letters in pairs with 10 plugboard cables, following a secret key list. The settings were changed every day.",
+   "sources": [
+    0,
+    2,
+    6
+   ]
+  },
+  {
+   "text": "Those choices gave about 150 million million million possible settings. With so many, the Germans believed no enemy could ever try them all.",
+   "sources": [
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "text": "More than 20,000 of the Army's Enigma I alone were built, and the Germans used Enigma for their most secret messages.",
+   "sources": [
+    6,
+    3
+   ]
+  },
+  {
+   "text": "The Navy wanted still more security. On 1 February 1942 its U-boats switched to the M4, which added a fourth rotor and chose its three moving rotors from a set of eight.",
+   "sources": [
+    0,
+    1,
+    3
+   ]
+  },
+  {
+   "text": "The switch caused a full blackout at Bletchley Park. The U-boat key, called Triton by the Germans and Shark by the British, went unread for most of 1942.",
+   "sources": [
+    1,
+    3
+   ]
+  },
+  {
+   "text": "The trust was misplaced. Polish mathematicians, then Bletchley Park, broke Enigma using captured documents, German operator mistakes, and the Bombe machines; the Germans never learned it during the war.",
+   "sources": [
+    0,
+    3,
+    5
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "title": "Enigmas of Bletchley Park, Bletchley Park Trust",
+   "url": "https://bletchleypark.org.uk/our-story/enigmas-of-bletchley-park"
+  },
+  {
+   "title": "Enigma I and Enigma M4, Crypto Museum",
+   "url": "https://www.cryptomuseum.com/crypto/enigma/m4/index.htm"
+  },
+  {
+   "title": "Enigma, a quick revision, codesandciphers.org.uk (Tony Sale)",
+   "url": "https://codesandciphers.org.uk/anoraks/enigma.htm"
+  },
+  {
+   "title": "Enigma machine, Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Enigma_machine"
+  },
+  {
+   "title": "Enigma Machine, Central Intelligence Agency (CIA Museum photo caption, Flickr)",
+   "url": "https://www.flickr.com/photos/ciagov/5416757162/"
+  },
+  {
+   "title": "Cat and Mouse, Pete Azzole, CRYPTOLOG (Naval Cryptologic Veterans Association), reprinted by the University of Cambridge Computer Laboratory",
+   "url": "https://www.cl.cam.ac.uk/research/security/OLD/Historical/azzole1.html"
+  },
+  {
+   "title": "Enigma I, Crypto Museum",
+   "url": "https://www.cryptomuseum.com/crypto/enigma/i/index.htm"
+  }
+ ],
+ "photo": "photos/bank-enigma-spec.jpg",
+ "photoUrl": "https://commons.wikimedia.org/wiki/File:Enigma-Machine.jpg",
+ "photoNote": [
+  "A complete three rotor Enigma I in its open oak case, CIA Museum collection: lamp board, keyboard, plugboard along the front, three rotor windows, the lid's instruction plate citing the Army manual H.Dv. g. 13, and plates reading A 5486 and 1936. The small yellow label on the lid warns that the machine is a secret object under paragraph 88 of the Reich criminal code, a good detail for the trust angle. Photographed by the CIA, 7 March 2011, posted on the CIA's Flickr stream (flickr.com/photos/ciagov/5416145081) as a United States government work; Commons tags it PD US government. Modern photo of a wartime machine, not a wartime photo. Downloaded 1280 x 1920 portrait; for the spec layout crop to the lower half (rotor windows, keyboard, plugboard) or the whole machine with the lid. Not Bundesarchiv."
+ ],
+ "photoCredit": "An Army Enigma I cipher machine, made 1936, in the CIA Museum. CIA photo, United States government work, public domain.",
+ "declassified": {
+  "fact": "The Germans did suspect a leak. After U-570 was captured in 1941, Vice Admiral Erhard Maertens investigated and told Dönitz on 24 October 1941, 'Our cipher does not appear to be broken.' A second inquiry in 1943 cleared Enigma again and blamed British airborne radar instead.",
+  "sources": [
+   {
+    "title": "Erhard Maertens, Wikipedia (citing Sebag Montefiore, Kahn, and Blair)",
+    "url": "https://en.wikipedia.org/wiki/Erhard_Maertens"
+   },
+   {
+    "title": "Cat and Mouse, Pete Azzole, CRYPTOLOG, reprinted by the University of Cambridge Computer Laboratory",
+    "url": "https://www.cl.cam.ac.uk/research/security/OLD/Historical/azzole1.html"
+   }
+  ]
+ },
+ "videoPhotos": [
+  {
+   "page": "https://commons.wikimedia.org/wiki/File:Enigma_Machine_-_Flickr_-_The_Central_Intelligence_Agency_(4).jpg",
+   "credit": "Enigma lamp board and keyboard close up. CIA photo, public domain."
+  },
+  {
+   "page": "https://commons.wikimedia.org/wiki/File:Enigma_Machine_-_Flickr_-_The_Central_Intelligence_Agency_(3).jpg",
+   "credit": "Enigma lid plate, secrecy label, and rotor windows. CIA photo, public domain."
+  },
+  {
+   "page": "https://commons.wikimedia.org/wiki/File:Enigma_Machine_-_Flickr_-_The_Central_Intelligence_Agency.jpg",
+   "credit": "Enigma maker's mark on the case. CIA photo, public domain."
+  },
+  {
+   "page": "https://commons.wikimedia.org/wiki/File:Enigma_Machine_-_Flickr_-_The_Central_Intelligence_Agency_(2).jpg",
+   "credit": "Enigma's wooden carrying case. CIA photo, public domain."
+  }
+ ],
+ "somber": false,
+ "themes": {
+  "who": [],
+  "story": [
+   "invention or machine"
+  ],
+  "photo": "a machine",
+  "theater": "Atlantic",
+  "branch": [
+   "Navy",
+   "Army"
+  ],
+  "nations": [
+   "Germany"
+  ],
+  "lens": "axis_germany"
+ },
+ "notes": "Evergreen bank card. The date is the key date of the subject, 1 February 1942, when the Kriegsmarine's U-boats switched to the four rotor M4 (Bletchley Park, Crypto Museum, Wikipedia), not a photo date. Theater Atlantic rather than worldwide: Enigma served on every front, but the card's dated hinge is the naval M4 and the Battle of the Atlantic blackout, and 'worldwide' is kept for conferences, diplomacy, and trials. Place is the U-boat fleet at sea since the change was fleetwide. Not a repeat: No. 028 (1942-10-30, U-559) covered the capture of naval codebooks, not the machine, so avoid retelling the U-559 boarding in the caption. The NSA monograph Solving the Enigma (Jennifer Wilcox) says the Germans believed it unbreakable, but its PDF was blocked (403) during research and is not cited. Settings figures vary by counting method; see specNote."
+}

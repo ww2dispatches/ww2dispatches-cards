@@ -1,0 +1,185 @@
+{
+ "id": "bank-yamato-spec",
+ "title": "The biggest battleship ever",
+ "date": "1941-10-30",
+ "place": "Sukumo Bay · Japan",
+ "series": "blue",
+ "pull": "Nine guns no warship ever matched",
+ "short": "Yamato",
+ "format": "spec",
+ "specTitle": "Battleship Yamato",
+ "specs": [
+  [
+   "Main guns",
+   "9 x 46 cm (18.1 in)"
+  ],
+  [
+   "Length",
+   "263 m (863 ft)"
+  ],
+  [
+   "Full load",
+   "Over 70,000 tons"
+  ],
+  [
+   "Armor belt",
+   "410 mm (16.1 in)"
+  ],
+  [
+   "Top speed",
+   "27 knots"
+  ],
+  [
+   "Crew, April 1945",
+   "3,332"
+  ]
+ ],
+ "specNote": "Main guns: Wikipedia (Yamato), NHHC Online Library page, Japan Tourism Agency text on the Yamato Museum, Navypedia. Length 263 m overall: Wikipedia, Navypedia, and the Yamato Museum's one tenth scale model of 26.3 m (Japan Tourism Agency). Full load: NHHC says over 72,800 tons, Navypedia 72,810 t, Wikipedia 71,659 t; they differ, so the row only claims what all agree on, over 70,000 tons. Standard displacement left out (NHHC about 65,000, Wikipedia 65,027 normal, Navypedia 63,200). Armor belt 410 mm: Wikipedia, Navypedia. Top speed 27 knots: Wikipedia, Navypedia. Peacetime complement left out (sources give 2,500, 2,767, 3,233); 3,332 aboard at the sinking is given by both the Japan Tourism Agency text and Wikipedia.",
+ "facts": [
+  {
+   "text": "Yamato was laid down at the Kure Naval Arsenal on 4 November 1937, launched on 8 August 1940, and commissioned on 16 December 1941, just over a week after Pearl Harbor.",
+   "sources": [
+    0,
+    1
+   ]
+  },
+  {
+   "text": "She carried nine 46 cm (18.1 inch) guns in three triple turrets, the largest guns ever mounted on a warship.",
+   "sources": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "text": "Each of her armor piercing shells weighed about 1,460 kg (3,200 pounds).",
+   "sources": [
+    1,
+    4
+   ]
+  },
+  {
+   "text": "She was built in extreme secrecy. Part of the dry dock at Kure was roofed over to hide her from view.",
+   "sources": [
+    0,
+    3
+   ]
+  },
+  {
+   "text": "This photo shows her running full power trials on 30 October 1941. US occupation authorities seized it in Japan after the war.",
+   "sources": [
+    1,
+    5
+   ]
+  },
+  {
+   "text": "She was 263 m (863 ft) long, with a main armor belt 410 mm (16.1 inches) thick, and could make 27 knots.",
+   "sources": [
+    0,
+    6
+   ]
+  },
+  {
+   "text": "She and her sister ship Musashi were the heaviest and most powerfully armed battleships ever built.",
+   "sources": [
+    0,
+    2
+   ]
+  },
+  {
+   "text": "On 7 April 1945, sailing on a one way mission toward Okinawa, she was sunk south of Kyushu by American carrier planes. Of the 3,332 men aboard, only a few hundred survived.",
+   "sources": [
+    0,
+    2
+   ]
+  },
+  {
+   "text": "Her wreck was found in 1982 and confirmed as Yamato in 1985. A one tenth scale model of her stands in the Yamato Museum at Kure today.",
+   "sources": [
+    2
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "title": "Japanese battleship Yamato, Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Japanese_battleship_Yamato"
+  },
+  {
+   "title": "Japanese Navy Ships: Yamato (Battleship, 1941 to 1945), Naval History and Heritage Command Online Library (ibiblio mirror)",
+   "url": "https://www.ibiblio.org/hyperwar/OnlineLibrary/photos/sh-fornv/japan/japsh-xz/yamato.htm"
+  },
+  {
+   "title": "Kure Maritime Museum (Yamato Museum), Japan Tourism Agency multilingual commentary database",
+   "url": "https://www.mlit.go.jp/tagengo-db/common/001550447.docx"
+  },
+  {
+   "title": "Yamato class battleship, Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Yamato-class_battleship"
+  },
+  {
+   "title": "Japan 46 cm/45 (18.1 in) Type 94, NavWeaps (Tony DiGiulian)",
+   "url": "http://www.navweaps.com/Weapons/WNJAP_18-45_t94.php"
+  },
+  {
+   "title": "File: Japanese battleship Yamato running trials in Sukumo Bay, 30 October 1941 (80-G-704702), Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Japanese_battleship_Yamato_running_trials_in_Sukumo_Bay,_30_October_1941_(80-G-704702).jpg"
+  },
+  {
+   "title": "Yamato battleships (1941), Navypedia",
+   "url": "https://navypedia.org/ships/japan/jap_bb_yamato.htm"
+  }
+ ],
+ "photo": "photos/bank-yamato-spec.jpg",
+ "photoUrl": "https://commons.wikimedia.org/wiki/File:Japanese_battleship_Yamato_running_trials_in_Sukumo_Bay,_30_October_1941_(80-G-704702).jpg",
+ "photoNote": "Yamato at full power trials, bow left, smoke trailing, naval ensign at the stern, 30 October 1941. NARA 80-G-704702 (NHHC lists the same number and date on its Yamato page); Imperial Japanese Navy photo seized by US occupation authorities. Commons tags: NHHC with PD-US-alien property, and PD-Japan-oldphoto. Downloaded 1280 x 1036 grayscale. Commons and NHHC place it in Sukumo Bay; the brief's 'off Bungo Strait, 20 October 1941' is a different Commons file whose date is less supported, so I used this one. The ship sits low in the frame with lots of sky: crop the top for the spec layout. Probably the same image the home page uses.",
+ "photoCredit": "Yamato running full power trials, 30 October 1941. Imperial Japanese Navy photo, NARA 80-G-704702, public domain.",
+ "declassified": {
+  "fact": "To hide how big the guns really were, the Japanese Navy officially called them 40 cm guns. The secret held: US intelligence was still listing Yamato's main guns as 16 inch as late as July 1945, three months after she sank.",
+  "sources": [
+   {
+    "title": "Japan 46 cm/45 (18.1 in) Type 94, NavWeaps (Tony DiGiulian)",
+    "url": "http://www.navweaps.com/Weapons/WNJAP_18-45_t94.php"
+   },
+   {
+    "title": "Yamato class battleship, Wikipedia (citing Friedman and Johnston and McAuley)",
+    "url": "https://en.wikipedia.org/wiki/Yamato-class_battleship"
+   }
+  ]
+ },
+ "videoPhotos": [
+  {
+   "page": "https://commons.wikimedia.org/wiki/File:Yamato_sea_trials_2.jpg",
+   "credit": "Yamato on trials, 30 October 1941. Imperial Japanese Navy photo, public domain (PD-Japan-oldphoto)."
+  },
+  {
+   "page": "https://commons.wikimedia.org/wiki/File:Japanese_battleship_Yamato_running_trials_off_Bungo_Strait,_20_October_1941.jpg",
+   "credit": "Yamato on trials, October 1941. Imperial Japanese Navy photo, public domain (check the file page)."
+  },
+  {
+   "page": "https://www.ibiblio.org/hyperwar/OnlineLibrary/photos/sh-fornv/japan/japsh-xz/yamato.htm",
+   "credit": "Yamato fitting out at Kure, 20 September 1941. NHHC NH 63433 (courtesy Shizuo Fukui; check license before use)."
+  },
+  {
+   "page": "https://www.ibiblio.org/hyperwar/OnlineLibrary/photos/sh-fornv/japan/japsh-xz/yamato.htm",
+   "credit": "Yamato under air attack in the Inland Sea, 19 March 1945. U.S. Navy, NARA 80-G-309662, public domain."
+  }
+ ],
+ "somber": false,
+ "themes": {
+  "who": [],
+  "story": [
+   "invention or machine"
+  ],
+  "photo": "a machine",
+  "theater": "Pacific",
+  "branch": [
+   "Navy"
+  ],
+  "nations": [
+   "Japan"
+  ],
+  "lens": "axis_japan"
+ },
+ "notes": "Evergreen bank card. The date is the photo's date (30 October 1941, full power trials), confirmed on the Commons file page and on the NHHC Online Library page for 80-G-704702. Not a repeat: no posted card is on Yamato (she appears only inside the Samar card, 1944-10-25). Sinking losses differ by source (about 3,055 to 3,063 dead, roughly 270 survivors), so facts say only 'a few hundred survived'. The NHHC H-Gram on Ten-ichi-go (history.navy.mil/about-us/leadership/director/directors-corner/h-grams/h-gram-044/h-044-3.html) returned 503 during research; worth adding as a source if it loads later. The caption should not claim a standard displacement figure (sources split 63,200 to 65,027 t)."
+}

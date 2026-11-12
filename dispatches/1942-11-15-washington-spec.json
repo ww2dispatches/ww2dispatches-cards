@@ -1,0 +1,172 @@
+{
+ "num": 61,
+ "id": "1942-11-15-washington-spec",
+ "title": "Washington sees in the dark",
+ "date": "1942-11-15",
+ "time": "17:00",
+ "place": "Savo Island · Solomon Islands",
+ "series": "blue",
+ "pull": "Seventy five rounds of 16 inch in the dark",
+ "format": "spec",
+ "specTitle": "USS Washington (BB-56)",
+ "specs": [
+  [
+   "Class",
+   "North Carolina"
+  ],
+  [
+   "Displacement",
+   "35,000 tons standard"
+  ],
+  [
+   "Length",
+   "728 ft 9 in (222 m)"
+  ],
+  [
+   "Main guns",
+   "9 x 16 inch"
+  ],
+  [
+   "Search radar",
+   "SG"
+  ],
+  [
+   "Rounds fired, 14 to 15 Nov",
+   "75 x 16 inch"
+  ]
+ ],
+ "short": "USS Washington",
+ "facts": [
+  {
+   "text": "USS Washington (BB-56), a North Carolina class battleship, was built at the Philadelphia Navy Yard and commissioned on 15 May 1941.",
+   "sources": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "text": "On the night of 14 to 15 November 1942 she was the flagship of Rear Admiral Willis A. Lee, a gunnery man and student of radar, commanding Task Force 64: Washington, South Dakota and four destroyers.",
+   "sources": [
+    1,
+    3,
+    4
+   ]
+  },
+  {
+   "text": "All four US destroyers were knocked out early: Walke, Preston and Benham were lost and Gwin was damaged. Then South Dakota lost electrical power and drew most of the Japanese fire.",
+   "sources": [
+    4
+   ]
+  },
+  {
+   "text": "Unseen, Washington used her radar to close on the battleship Kirishima and opened fire at about 8,400 yards, point blank range for 16 inch guns.",
+   "sources": [
+    0,
+    3,
+    4
+   ]
+  },
+  {
+   "text": "She fired 75 rounds of 16 inch and 107 of 5 inch ammunition, scoring at least nine main battery hits. Kirishima sank in the early hours of 15 November.",
+   "sources": [
+    0,
+    2
+   ]
+  },
+  {
+   "text": "Japanese cruisers fired torpedoes at her; all missed, and Washington came out of the battle undamaged.",
+   "sources": [
+    0,
+    1
+   ]
+  },
+  {
+   "text": "The Navy's ship history calls it the first head to head battleship clash of the Pacific war.",
+   "sources": [
+    0
+   ]
+  },
+  {
+   "text": "Washington earned 13 battle stars in World War II and was sold for scrap in 1961.",
+   "sources": [
+    0,
+    1
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "title": "Washington (BB-56), Dictionary of American Naval Fighting Ships (HyperWar transcription)",
+   "url": "https://ibiblio.org/hyperwar/USN/ships/dafs/BB/bb56.html"
+  },
+  {
+   "title": "USS Washington (BB-56), Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/USS_Washington_(BB-56)"
+  },
+  {
+   "title": "USS Washington (BB-56), HistoryOfWar.org",
+   "url": "https://www.historyofwar.org/articles/weapons_USS_Washington_BB_56.html"
+  },
+  {
+   "title": "Seth Paridon, The Second Naval Battle of Guadalcanal, The National WWII Museum",
+   "url": "https://www.nationalww2museum.org/war/articles/second-naval-battle-guadalcanal"
+  },
+  {
+   "title": "Naval Battle of Guadalcanal, Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Naval_Battle_of_Guadalcanal"
+  }
+ ],
+ "photo": "photos/1942-11-15-washington-spec.jpg",
+ "photoUrl": "https://catalog.archives.gov/id/513042",
+ "photoNote": "USS Washington, bow view looking aft, port side, Philadelphia Navy Yard, 29 May 1941, two weeks after commissioning. US Navy photo, NARA 19-N-24147 (naId 513042), Unrestricted, public domain. Downloaded from the NARA TIFF (3000 x 2389), saved 1920 px. Handwritten caption in the lower left corner; crop it out. Lots of sky: frame on the hull and turrets.",
+ "photoCredit": "USS Washington at the Philadelphia Navy Yard, 29 May 1941. US Navy photo, NARA 19-N-24147, public domain.",
+ "declassified": {
+  "fact": "Willis Lee was a champion marksman before he was an admiral. At the 1920 Olympics in Antwerp he won seven shooting medals, five of them gold, a record for one Games that stood for 60 years.",
+  "sources": [
+   {
+    "title": "Willis Lee, Olympedia",
+    "url": "https://www.olympedia.org/athletes/44708"
+   },
+   {
+    "title": "Willis Augustus Lee, Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Willis_Augustus_Lee"
+   }
+  ]
+ },
+ "videoPhotos": [
+  {
+   "page": "https://catalog.archives.gov/id/175539948",
+   "credit": "USS Washington loading supplies at Hvalfjord, Iceland, May to June 1942. US Navy 80-G-24826, public domain."
+  },
+  {
+   "page": "https://catalog.archives.gov/id/496081487",
+   "credit": "USS Washington broadside, Philadelphia Navy Yard, 1941. US Navy 19-N-24148, public domain."
+  },
+  {
+   "page": "https://commons.wikimedia.org/wiki/File:USS_Washington_(BB-56)_at_sea_in_mid-Atlantic,_circa_April_1942.jpg",
+   "credit": "USS Washington at sea in the mid Atlantic, about April 1942. US Navy, public domain per Commons."
+  },
+  {
+   "page": "https://commons.wikimedia.org/wiki/File:USS_Washington_(BB-56)_off_New_York_City,_August_1942.jpg",
+   "credit": "USS Washington off New York City, August 1942. US Navy, public domain per Commons."
+  }
+ ],
+ "somber": false,
+ "themes": {
+  "who": [],
+  "story": [
+   "invention or machine"
+  ],
+  "photo": "a machine",
+  "theater": "Pacific",
+  "branch": [
+   "Navy"
+  ],
+  "nations": [
+   "US",
+   "Japan"
+  ],
+  "lens": "us"
+ }
+}
