@@ -183,13 +183,11 @@ NL_CSS = """<style>
   .earlier { grid-column: 1 / -1; }
   .issues { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px; }
 }
-/* issue page */
-.icover { position: relative; }
-.icover .cover { height: 700px; max-height: 86vh; min-height: 520px; }
-.icover .ctitle { font-size: 36px; } .icover .cdek { font-size: 17px; }
-.icover .back { position: absolute; z-index: 2; top: 12px; right: 12px; display: flex; align-items: center; gap: 4px; min-height: 44px; padding: 0 12px 0 8px;
-  background: rgba(18,15,12,.72); color: var(--paper); text-decoration: none; font-family: var(--type); font-size: 13px; }
-.icover .back svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+/* issue page: the same contained cover as the list's latest issue, with the article sheet under it */
+.iwrap { max-width: 760px; margin: 0 auto; padding: 4px 16px 30px; }
+.iwrap .backlink { padding-left: 0; }
+.icover .cover { height: 560px; max-height: 80vh; min-height: 460px; }
+.icover .ctitle { font-size: 34px; }
 .paper { background: var(--sheet); color: var(--ink); }
 .paperin { max-width: 720px; margin: 0 auto; padding: 22px 20px 30px; display: flex; flex-direction: column; gap: 16px; }
 .imeta { margin: 0; font-family: var(--type); font-size: 12.5px; color: #5A4E3E; }
@@ -220,8 +218,9 @@ NL_CSS = """<style>
 .pager .next { grid-column: 2; text-align: right; }
 .allbtn { color: var(--ink); box-shadow: inset 0 0 0 1px var(--ink); }
 @media (min-width: 700px) {
-  .icover .cover { height: 76vh; min-height: 560px; } .icover .ctab { top: 28px; left: 32px; } .icover .ctext { left: 32px; right: 32px; bottom: 36px; max-width: 760px; }
-  .icover .ctitle { font-size: 52px; } .icover .cdek { font-size: 19px; }
+  .iwrap { padding: 16px 32px 50px; }
+  .icover .cover { height: 620px; max-height: none; } .icover .ctab { top: 24px; left: 28px; } .icover .ctext { left: 28px; right: 28px; bottom: 28px; }
+  .icover .ctitle { font-size: 44px; } .icover .cdek { font-size: 18px; }
   .paperin { padding: 36px 34px 44px; } .body { font-size: 18px; } .body figure { margin: 1.4em -34px; } .body figcaption { padding: 8px 34px 0; }
 }
 </style>
@@ -338,7 +337,9 @@ def build_issue(it, prev, nxt, year):
         nav.append(f'<a class="next" href="/newsletter/{nxt["id"]}" data-release="{nxt["release"]}"><small>Next issue</small><b>{esc(nxt["title"])}</b></a>')
     tags = tag_html(it["tags"])
     body = f"""<main class="issuepage">
-  <div class="icover">{cover_html(it, "div", heading="h1", eager=True)}<a class="back" href="/newsletter/">{BACK} All issues</a></div>
+  <div class="iwrap">
+  <a class="backlink" href="/newsletter/">{BACK} All issues</a>
+  <div class="icover">{cover_html(it, "div", heading="h1", eager=True)}</div>
   <article class="paper"><div class="paperin">
     <p class="imeta">{long_date(it["sent"])} · about {max(1, round(it["words"] / 230))} minute read · By WW2 Dispatches</p>
     {f'<p class="covercap">Cover: {inline(cap)}</p>' if cap else ""}
@@ -351,6 +352,7 @@ def build_issue(it, prev, nxt, year):
     {'<nav class="pager" aria-label="More issues">' + "".join(nav) + "</nav>" if nav else ""}
     <a class="btn allbtn" href="/newsletter/">Back to all issues</a>
   </div></article>
+  </div>
 </main>
 <iframe name="substack-signup" title="Newsletter signup" hidden></iframe>"""
     return site_pages.page(f'{it["title"]} | The Weekly Dispatch', it["preview"] or it["title"], f'/newsletter/{it["id"]}', body, "newsletter",
