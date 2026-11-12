@@ -88,6 +88,7 @@ Anchor days, each to be verified in the sitting (two sources); the rest are fill
 * Day 9 photo (Brian), then render, push, and schedule Day 9.
 * The Substack section and the two Pearl Harbor roundups (Bulge sitting, before 29 Nov).
 * The Bulge build sitting (Thanksgiving weekend).
+* Idea for its own chat (Brian, 11 Nov 2026): a page on ww2dispatches.com holding every Campaign Series, styled a bit like a bookshelf. The day records in `campaign-series/<series>/` (images, captions, sources) are the data it would read.
 
 ## Changelog
 * 11 Nov 2026: Idea decided in principle and handed off (slot, platforms, not a card, Bulge dates, Pearl Harbor first, one sitting per series).
