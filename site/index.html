@@ -297,14 +297,14 @@ a { color: inherit; }
     </nav>
   </header>
 
-  <!-- Declass panel: stays hidden for the public until launch; testers with the key see it. -->
-  <section class="dcl" id="dcl" hidden aria-labelledby="dcl-h">
+  <!-- Declass panel: always first. It starts as the new visitor look, and /declass/panel.js swaps in the player's own state when the game server answers. -->
+  <section class="dcl waiting" id="dcl" aria-labelledby="dcl-h">
     <a class="dcl-band" href="/declass"><span><b id="dcl-h">DECLASS<span class="tm" aria-label="trademark">™</span></b><small>The daily WW2 card game</small></span><i id="dcl-stamp">FREE TO PLAY</i></a>
     <div class="dcl-body">
       <div class="dcl-env" id="dcl-env" aria-hidden="true"><span class="dcl-seal"></span><span class="dcl-cl">CLASSIFIED</span><span class="dcl-dc">DECLASS</span></div>
-      <div class="dcl-txt"><p class="dcl-t" id="dcl-t"></p><p class="dcl-s" id="dcl-s"></p></div>
+      <div class="dcl-txt"><p class="dcl-t" id="dcl-t">Open your first file</p><p class="dcl-s" id="dcl-s">A sealed file comes with every dispatch we post. Collect the cards and build your dossier of the war.</p></div>
     </div>
-    <a class="dcl-go" id="dcl-go" href="/declass"></a>
+    <a class="dcl-go" id="dcl-go" href="/declass">Play free</a>
   </section>
 
   <section class="today" id="today" style="scroll-margin-top: 80px" aria-labelledby="today-h" hidden>
