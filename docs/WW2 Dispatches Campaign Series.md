@@ -6,7 +6,7 @@ A daily social media serial that follows one campaign day by day, told as it hap
 | Series | Dates | Days | State |
 |---|---|---|---|
 | Pearl Harbor | 26 Nov to 7 Dec 1941 (posts 26 Nov to 7 Dec 2026) | 12 | **Built and scheduled 11 Nov 2026**: all 48 posts in Buffer. Records in `campaign-series/pearl-harbor-1941/`. |
-| The Bulge | 16 Dec 1944 to 25 Jan 1945 | 41 | Planned (anchor days below). Build sitting: Thanksgiving weekend, 26 to 29 Nov 2026. |
+| The Bulge | 16 Dec 1944 to 14 Jan 1945 | 30 | Planned (anchor days below). Build sitting: Thanksgiving weekend, 26 to 29 Nov 2026. |
 | Next series | Anzio (landing 22 Jan 1944), then Remagen, Okinawa, Black May or Coral Sea, D Day or Midway, Kursk or Sicily, Battle of Britain, Market Garden, Leyte Gulf or El Alamein, Guadalcanal or Tarawa, Pearl Harbor and Wake Island | | Same campaigns as the Campaigns Roadmap, but each series runs on the real dates, not the game month. Alternates not decided. |
 
 ## Decided (11 Nov 2026, Brian)
@@ -15,9 +15,10 @@ A daily social media serial that follows one campaign day by day, told as it hap
 * **Not a card and never in Declass.** No dispatch number, no series stamp, no Declass line, no `dispatches/` record.
 * **Same event allowed in the regular slots, only the wording differs.** The series is written first; the cards and video runs read `campaign-series/<series>/day-NN.json` and never reuse its sentences or hooks (Cards and Videos docs).
 * **Built in one sitting per series**, no new scheduled task.
-* **Same campaigns as the Campaigns Roadmap, on the real timeline** (12 Nov 2026, Brian): the game releases each campaign on the 1st of its month, but its Campaign Series starts on the event's actual dates (Anzio begins with the 22 January 1944 landing, while the game opens 1 February). Where two real timelines overlap (the Bulge runs to 25 January, Anzio starts 22 January), both run.
+* **Same campaigns as the Campaigns Roadmap, on the real timeline** (12 Nov 2026, Brian): the game releases each campaign on the 1st of its month, but its Campaign Series starts on the event's actual dates (Anzio begins with the 22 January 1944 landing, while the game opens 1 February). Where two real timelines overlap, both run.
 * **Overlaps are staggered** (12 Nov 2026, Brian): more content is a good thing. The series that started first keeps 6:30; the next one posts at 6:45 for as long as both run, and a third (rare) at 7:00. A series keeps its slot for its whole run, so followers know when to look. The day record's `time` holds the slot. Nothing in the series ever posts at 8 a.m. or later.
 * **Focused windows, never overextended** (12 Nov 2026, Brian): real campaigns ran for months; a series covers only the stretch that tells the story best (the decisive days the game chapters cover, plus a short lead in), usually about two to four weeks. The window is chosen in that series' sitting.
+* **Hard cap: 30 days** (12 Nov 2026, Brian). No series runs longer than 30 days, no exceptions, so no sitting gets out of hand.
 
 ## The look (locked 11 Nov 2026: C, Teletype tape)
 Canvas: "Campaign Series Bulletin Mockup" (https://claude.ai/artifact/HKsV6D4kmGzoZ7X3nimzE3). Drawn by `renderer/campaign.html` with `node renderer/campaign.js <series> [day ...]`.
@@ -33,7 +34,7 @@ Canvas: "Campaign Series Bulletin Mockup" (https://claude.ai/artifact/HKsV6D4kmG
 * Written only from verified facts, two sources for each, with the sources listed in the day record. No dashes.
 * **Fixed last line:** "Pearl Harbor · Day 3 of 12" (the series name and day).
 * **Hashtags:** Instagram `#OnThisDay #WW2 #<Event>`; X and Facebook `#OTD #WW2 #<Event>`; Threads none, filed in History Threads.
-* **No add on lines ever** (no question, newsletter, support, or Declass line). The one exception: the Bulge posts on 1, 11, and 21 January carry one Campaigns line, since those are Campaigns chapter days.
+* **No add on lines ever** (no question, newsletter, support, or Declass line). The one exception: the Bulge posts on 1 and 11 January carry one Campaigns line, since those are Campaigns chapter days.
 * **Alt text** starts "WW2 Dispatches Campaign Series, <Series>, Day N." then the photo credit.
 * **Flash days:** the series post on a Flash day (Pearl Harbor 7 Dec, the Bulge 16 Dec) must not use the moment a Flash Traffic bulletin covers (Roadmap). Pearl Harbor Day 12 is the midget submarines' release, leaving the Condor sighting to the 6:50 bulletin.
 
@@ -43,7 +44,7 @@ Canvas: "Campaign Series Bulletin Mockup" (https://claude.ai/artifact/HKsV6D4kmG
 ## Substack (decided 11 Nov 2026)
 * **Weekly roundups**, not daily posts: each daily post is about 100 words, so one per day would be thin and repeat the socials; a week gathers 5 to 7 days into a 600 to 900 word diary with the photos.
 * Filed in a **Campaign Series section** on the Weekly Dispatch Substack, **web only** (no email sent). The Sunday Weekly Dispatch can link the latest roundup.
-* Pearl Harbor: two roundups, Sun 29 Nov (Days 1 to 4) and Mon 7 Dec evening (Days 5 to 12). The Bulge: one each Sunday plus a final one on 25 Jan.
+* Pearl Harbor: two roundups, Sun 29 Nov (Days 1 to 4) and Mon 7 Dec evening (Days 5 to 12). The Bulge: one each Sunday plus a final one on 14 Jan.
 * Made and scheduled in the build sitting through the browser (Substack has no posting API). **Not yet done for Pearl Harbor**: the section and the two roundups are made in the Bulge sitting, before 29 Nov.
 
 ## Pearl Harbor (26 Nov to 7 Dec 1941, scheduled)
@@ -62,7 +63,7 @@ Canvas: "Campaign Series Bulletin Mockup" (https://claude.ai/artifact/HKsV6D4kmG
 | 11 | 6 Dec | Washington reads Tokyo's answer | Hull, Nomura, Kurusu, 17 Nov 1941 (small original, a bit soft) |
 | 12 | 7 Dec | Five midget submarines in the dark | HA 19 aground, Dec 1941 |
 
-## The Bulge (16 Dec 1944 to 25 Jan 1945, Days 1 to 41, to build)
+## The Bulge (16 Dec 1944 to 14 Jan 1945, Days 1 to 30, to build)
 Anchor days, each to be verified in the sitting (two sources); the rest are filled there, with Home Front and Blueprint days mixed in (the proximity fuze's first ground use, the Christmas news at home).
 * D1 16 Dec: the barrage opens in the Ardennes before dawn (also the Bulge Flash day; avoid the Flash card's moment).
 * D2 17 Dec: the Baugnez crossroads massacre near Malmedy (somber, plain facts).
@@ -81,11 +82,7 @@ Anchor days, each to be verified in the sitting (two sources); the rest are fill
 * D24 8 Jan: Hitler allows the pullback.
 * D27 11 Jan: Campaigns chapter 2 opens (Campaigns line).
 * D28 12 Jan: the Soviet winter offensive opens in Poland.
-* D32 16 Jan: First and Third Armies meet at Houffalize.
-* D34 18 Jan: Churchill tells the Commons it is the greatest American battle of the war.
-* D37 21 Jan: Campaigns chapter 3 opens (Campaigns line).
-* D39 23 Jan: St. Vith retaken.
-* D41 25 Jan: the battle's official end.
+* D30 14 Jan: the last day; the First and Third Armies close on Houffalize from both sides (the link up comes on the 16th, after the series ends).
 
 ## On ww2dispatches.com (the Campaign Shelf)
 Every series is a volume on the Campaign Shelf at ww2dispatches.com/campaign-series (Site Revamp doc). `renderer/site_pages.py` builds the volume page and one page per day from the day records, and the server shows a day only once its post time has passed. **In each build sitting:** add the volume to `campaign-series/shelf.json` (its `id` must match the folder name, so the Bulge is `bulge-1944`; set the cover photo, cloth color, intro, and blurb), then run `python3 renderer/series_log.py` before the commit, which refreshes the pages with the logs. A volume turns live on the shelf as soon as its folder holds day records.
@@ -102,3 +99,4 @@ Every series is a volume on the Campaign Shelf at ww2dispatches.com/campaign-ser
 * 12 Nov 2026: Series follow the Campaigns Roadmap's campaigns on their real dates, not the game months (Brian); Stalingrad dropped from the list.
 * 12 Nov 2026 (later): overlapping series run together, staggered at 6:30, 6:45, and 7:00 (Brian).
 * 12 Nov 2026 (later): series keep to a focused window of the campaign, never the whole thing (Brian).
+* 12 Nov 2026 (later): hard cap of 30 days per series (Brian); the Bulge trimmed to 16 Dec to 14 Jan (30 days), so it no longer overlaps Anzio.
