@@ -1,0 +1,52 @@
+{
+ "about": "The Campaign Shelf on ww2dispatches.com/campaign-series (Site Revamp doc). One entry per volume, in volume order. A volume whose folder campaign-series/<id>/ holds day records is built as a live volume page; the others show a stamped cover and the note. Edit by hand; renderer/site_pages.py reads it. runYear is the year the series posts in (a day's run date is its historical day and month in runYear, stepping up a year after December, unless the day record has a postDate). cover is a photo in this repo; cloth is the clothbound color; w and h size the spine in pixels.",
+ "volumes": [
+  {
+   "id": "pearl-harbor-1941",
+   "vol": "I",
+   "title": "Pearl Harbor",
+   "dates": "26 Nov to 7 Dec 1941",
+   "theater": "The Pacific",
+   "year": 1941,
+   "status": "live",
+   "runYear": 2026,
+   "cover": "photos/campaign/ph-01b.jpg",
+   "coverPos": "50% 45%",
+   "cloth": "#24344F",
+   "w": 50,
+   "h": 196,
+   "intro": "Twelve days to war, told as they happened.",
+   "blurb": "From the morning Japan's carriers slip out of the Kurils to the midget submarines creeping toward Oahu in the dark."
+  },
+  {
+   "id": "bulge-1944",
+   "vol": "II",
+   "title": "The Bulge",
+   "dates": "16 Dec 1944 to 25 Jan 1945",
+   "days": 41,
+   "theater": "The Western Front",
+   "year": 1944,
+   "status": "prep",
+   "runYear": 2026,
+   "cloth": "#5E2520",
+   "w": 60,
+   "h": 206,
+   "blurb": "Hitler's last gamble in the West, from the dawn barrage in the Ardennes to the battle's official end.",
+   "note": "First dispatch 16 Dec 2026 at 6:30 a.m. Mountain. Days appear here as they post."
+  },
+  {
+   "id": "stalingrad",
+   "vol": "III",
+   "title": "Stalingrad",
+   "dates": "1942 to 1943",
+   "theater": "The Eastern Front",
+   "year": 1942,
+   "status": "proposed",
+   "cloth": "#3F4034",
+   "w": 54,
+   "h": 188,
+   "blurb": "The battle that turned the war in the East. Under consideration for a future year.",
+   "note": "Not yet scheduled."
+  }
+ ]
+}

@@ -22,7 +22,8 @@
 <meta name="twitter:site" content="@ww2dispatches">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Special+Elite&family=Source+Sans+3:wght@400;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Special+Elite&family=Source+Sans+3:wght@400;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap">
+<link rel="stylesheet" href="/site.css?v=f17a8c4a">
 <style>
 /* One narrow column (max 460px) over archival photos that rotate behind the whole page. */
 :root {
@@ -67,6 +68,7 @@ a { color: inherit; }
   padding-top: calc(28px + env(safe-area-inset-top, 0px)); padding-bottom: calc(40px + env(safe-area-inset-bottom, 0px));
   display: flex; flex-direction: column; gap: 30px; }
 @media (min-width: 700px) { .page { padding-top: 48px; } }
+@media (min-width: 900px) { .page { max-width: 560px; } }
 
 .mast { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 10px; }
 .badge { width: 104px; height: 104px; display: block; filter: drop-shadow(0 0 18px rgba(176,74,62,.75)); }
@@ -168,7 +170,6 @@ a { color: inherit; }
 .series li p { margin: 0; font-size: 14px; line-height: 1.35; color: #DCD2BC; }
 .s-battle { color: #E07A6C; } .s-home { color: #A9B87A; } .s-blue { color: #8FA6D6; } .s-state { color: #D9A84A; }
 
-footer { text-align: center; font-family: var(--type); font-size: 13px; color: var(--sand); display: flex; flex-direction: column; gap: 4px; }
 
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; scroll-behavior: auto !important; }
@@ -176,7 +177,7 @@ footer { text-align: center; font-family: var(--type); font-size: 13px; color: v
 }
 
 /* Declass panel (Declass Home Panel mockup) */
-.dcl { background: var(--paper); color: var(--ink); border-radius: 6px; overflow: hidden; box-shadow: 0 0 0 2px var(--ink) inset, 0 10px 24px rgba(0,0,0,.45); margin: 0 0 22px; }
+.dcl { background: var(--paper); color: var(--ink); border-radius: 6px; overflow: hidden; box-shadow: 0 0 0 2px var(--ink) inset, 0 0 0 1px #B8862B, 0 14px 34px rgba(0,0,0,.55); margin: 0; transform: translateY(-2px); }
 .dcl-band { display: flex; align-items: center; justify-content: space-between; gap: 10px; background: var(--ink); color: var(--paper); padding: 12px 16px; text-decoration: none; }
 .dcl-band b { display: block; font-family: var(--display); font-weight: 700; font-size: 30px; letter-spacing: 4px; line-height: 1; }
 .dcl-band b .tm { font-size: .4em; vertical-align: super; line-height: 0; letter-spacing: 0; margin-left: .08em; font-weight: 500; } /* trademark mark (10 Nov 2026); never the registered mark until registered */
@@ -213,9 +214,58 @@ footer { text-align: center; font-family: var(--type); font-size: 13px; color: v
 .dcl.comm .dcl-cl { color: #e3c25e; border-color: #e3c25e; }
 .dcl-t em { white-space: nowrap; display: inline-block; }
 @media (max-width: 360px) { .dcl-env { flex-basis: 116px; height: 70px; } }
+
+/* ---------- home sections added in the site revamp (board P0) ---------- */
+.sechead { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 12px; }
+.sechead h2 { margin: 0; font-family: var(--display); font-weight: 700; text-transform: uppercase; font-size: 20px; letter-spacing: 2px; }
+.flag { font-family: var(--display); font-weight: 600; text-transform: uppercase; font-size: 10.5px; letter-spacing: 1.5px; padding: 2px 6px; background: var(--red); color: var(--paper); }
+.flag.violet { background: #5B4B8A; }
+.flag.line { background: transparent; border: 1.5px solid var(--paper); font-family: var(--type); font-weight: 400; transform: rotate(-4deg); }
+.more { display: inline-flex; align-items: center; min-height: 44px; font-family: var(--type); font-size: 13.5px; }
+.weekly { background: rgba(18,15,12,.72); border: 1px solid var(--line); padding: 16px; }
+.wcover { display: block; position: relative; height: 300px; overflow: hidden; text-decoration: none; background: #222; }
+.wcover img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: grayscale(1); }
+.wcover::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0) 30%, rgba(0,0,0,.85)); }
+.wtab { position: absolute; z-index: 1; top: 12px; left: 12px; background: #EFE6D2; color: var(--ink); padding: 3px 8px; font: 600 10.5px var(--display); letter-spacing: 2px; text-transform: uppercase; }
+.wtxt { position: absolute; z-index: 1; left: 14px; right: 14px; bottom: 14px; display: flex; flex-direction: column; gap: 6px; color: #fff; }
+.wtxt .wt { font-family: var(--serif); font-size: 26px; line-height: 1.12; }
+.wtxt .wd { font-family: var(--serif); font-style: italic; font-size: 13px; color: #D8D2C6; }
+.weekly > p { margin: 14px 0 10px; font-size: 16px; line-height: 1.5; color: #D9CFB8; }
+.weekly label { flex-basis: 100%; font-family: var(--type); font-size: 12px; color: var(--sand); }
+.weekly form { display: flex; gap: 8px; margin-top: 6px; flex-wrap: wrap; }
+.weekly input { flex: 1 1 170px; min-width: 0; min-height: 46px; border: 1px solid rgba(237,228,207,.4); background: rgba(237,228,207,.08); color: var(--paper); padding: 0 12px; font: 16px var(--body); border-radius: 0; }
+.weekly button { min-height: 46px; padding: 0 18px; background: var(--red); color: var(--paper); border: 0; cursor: pointer; font-family: var(--display); letter-spacing: 2px; text-transform: uppercase; font-size: 15px; }
+.weekly button:hover { background: #973c31; }
+.weekly .sent { margin: 10px 0 0; font-size: 14px; color: #A9B87A; }
+.cteaser { display: flex; gap: 16px; align-items: stretch; text-decoration: none; background: rgba(18,15,12,.72); border: 1px solid var(--line); padding: 14px; }
+.cteaser:hover { border-color: var(--sand); }
+.minishelf { flex: none; display: flex; flex-direction: column; }
+.minishelf .row { display: flex; gap: 6px; align-items: flex-end; background: #1C1611; padding: 12px 10px 0; box-shadow: inset 0 10px 16px rgba(0,0,0,.6); min-height: 152px; }
+.minishelf .row span { flex: none; display: flex; align-items: center; justify-content: center; box-shadow: 3px 3px 8px rgba(0,0,0,.6); }
+.minishelf .row b { writing-mode: vertical-rl; transform: rotate(180deg); font-family: var(--display); font-weight: 700; text-transform: uppercase; font-size: 13px; letter-spacing: 2px; color: #E8C98A; white-space: nowrap; }
+.minishelf .plank { height: 10px; background: linear-gradient(180deg, #6B4A2E, #2E1E11); }
+.ctxt { display: flex; flex-direction: column; gap: 6px; justify-content: center; min-width: 0; }
+.ctxt .k { font-family: var(--type); font-size: 12px; color: var(--red); text-transform: uppercase; }
+.ctxt .t { font-family: var(--display); font-weight: 700; font-size: 22px; line-height: 1.1; text-transform: uppercase; }
+.ctxt .s { font-size: 15px; line-height: 1.45; color: #D9CFB8; }
+.ctxt .go { font-family: var(--display); font-weight: 700; text-transform: uppercase; font-size: 13px; letter-spacing: 1.5px; color: #E8C98A; }
+@media (max-width: 380px) { .minishelf .row span:nth-child(3) { display: none; } }
+.nteaser { display: flex; gap: 14px; align-items: center; background: rgba(91,75,138,.2); border: 1px solid rgba(157,140,214,.45); padding: 14px; }
+.nteaser img { flex: none; width: 130px; height: auto; aspect-ratio: 4 / 5; object-fit: cover; display: block; }
+.nteaser .ntx { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.nteaser .clue { font-family: var(--display); font-weight: 700; text-transform: uppercase; font-size: 18px; line-height: 1.15; margin: 0; }
+.nteaser .guess { text-align: center; background: var(--paper); color: var(--ink); text-decoration: none; font-family: var(--display); font-weight: 600; text-transform: uppercase; font-size: 13px; letter-spacing: 1.5px; padding: 13px 8px; }
+.contact { margin: 0; font-family: var(--type); font-size: 14px; line-height: 1.5; color: #D9CFB8; text-align: center; }
+.contact a { color: var(--paper); }
+.page > .sitefoot { padding: 0 0 10px; }
+@media (max-width: 899px) { .page { padding-top: calc(52px + env(safe-area-inset-top, 0px)); } }
 </style>
 </head>
 <body>
+<!--chrome:header-->
+<header class="sitebar home"><a class="brand" href="/" aria-label="WW2 Dispatches home"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="58" fill="#B04A3E"/><circle cx="60" cy="60" r="50" fill="none" stroke="#EDE4CF" stroke-width="3"/><circle cx="60" cy="60" r="44" fill="none" stroke="#EDE4CF" stroke-width="1.5"/><g transform="translate(28.00 73.58) scale(0.03354 -0.03354)" fill="#EDE4CF"><path d="M125 0 27 810H179L227 338L288 809H407L471 341L520 810H670L573 0H417L348 489L283 0Z"/><path transform="translate(697 0)" d="M125 0 27 810H179L227 338L288 809H407L471 341L520 810H670L573 0H417L348 489L283 0Z"/><path transform="translate(1394 0)" d="M41 0V118L235 416Q257 449 276.5 480.0Q296 511 308.5 543.0Q321 575 321 610Q321 645 307.0 662.0Q293 679 269 679Q242 679 227.0 664.0Q212 649 206.5 624.0Q201 599 201 568V528H39V571Q39 643 62.0 699.5Q85 756 135.0 788.5Q185 821 266 821Q375 821 430.5 764.5Q486 708 486 607Q486 558 470.5 516.0Q455 474 429.5 434.5Q404 395 375 352L227 131H464V0Z"/></g></svg><span>WW2 Dispatches</span></a><nav class="mainnav" aria-label="Main"><a class="nav-play" href="/declass">Play Declass</a><a href="/#today" aria-current="page">Today</a><a href="/campaign-series/">Campaign Series</a><a href="/name-this/">Name This</a><a href="/newsletter/">Weekly Dispatch</a><a href="/support">Support</a></nav><button class="menubtn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="sitemenu"><svg class="m-open" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="m-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></header>
+<div class="sitemenu" id="sitemenu" hidden><nav aria-label="Menu"><a href="/#today" aria-current="page">Today</a><a href="/campaign-series/">Campaign Series</a><a href="/name-this/">Name This</a><a href="/newsletter/">Weekly Dispatch</a><a class="declass-link" href="/declass">Play Declass</a><a href="/support">Support</a></nav></div>
+<!--/chrome:header-->
 <div class="backdrop" id="backdrop" aria-hidden="true">
   <div data-ar="1.2998" data-px="50" data-py="45" data-cx="39" class="layer top bg-dday on" data-credit="Omaha Beach, 6 June 1944. Robert F. Sargent, U.S. Coast Guard"></div>
   <div data-ar="1.9532" data-px="50" data-py="50" data-cy="52" data-ty="320" data-zmax="1.4" data-cx="50" class="layer top bg-yamato" data-credit="The Japanese battleship Yamato on sea trials, 20 October 1941. Imperial Japanese Navy"></div>
@@ -257,7 +307,7 @@ footer { text-align: center; font-family: var(--type); font-size: 13px; color: v
     <a class="dcl-go" id="dcl-go" href="/declass"></a>
   </section>
 
-  <section class="today" id="today" aria-labelledby="today-h" hidden>
+  <section class="today" id="today" style="scroll-margin-top: 80px" aria-labelledby="today-h" hidden>
     <div class="eyebrow"><h2 id="today-h">Today's Dispatches</h2><span id="today-date"></span></div>
     <div class="slider">
       <div class="track" id="track" tabindex="0" aria-label="Today's posts, swipe for more"></div>
@@ -268,30 +318,41 @@ footer { text-align: center; font-family: var(--type); font-size: 13px; color: v
     <p class="next-note" id="next-note" hidden>Today's first dispatch posts at 8 a.m. Mountain.</p>
   </section>
 
-  <section class="actions" aria-label="Links">
-    <div class="signup">
-      <div class="head"><h3>The Weekly Dispatch</h3><span class="stampline">Every Sunday</span></div>
-      <p>One remarkable story from that week in the war, told in full. Free by email.</p>
-      <div class="latest"><span class="lt" id="nl-latest">Every issue so far, free to read</span><a class="all" href="/newsletter/">All issues</a></div>
-      <form id="signup" action="https://ww2dispatches.substack.com/api/v1/free?nojs=true" method="post" target="substack-signup">
-        <label for="email" hidden>Email address</label>
-        <input id="email" name="email" type="email" placeholder="your@email.com" required autocomplete="email">
-        <button type="submit">Subscribe</button>
-      </form>
-      <p class="sent" id="sent" hidden>Almost done. Check your inbox to confirm.</p>
-      <iframe name="substack-signup" title="Newsletter signup" hidden></iframe>
-    </div>
-    <a class="slip" href="mailto:contact@ww2dispatches.com">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v12H8l-4 4z"/><path d="M8 9h8M8 12h5"/></svg>
-      <span class="t"><strong>Contact</strong><small>contact@ww2dispatches.com</small></span></a>
+  <section class="weekly" aria-labelledby="wk-h">
+    <div class="sechead"><h2 id="wk-h">The Weekly Dispatch</h2><span class="flag line">Every Sunday</span></div>
+    <a class="wcover" id="wk-cover" href="/newsletter/" hidden><img id="wk-img" src="" alt=""><span class="wtab" id="wk-tab">Latest</span><span class="wtxt"><span class="wt" id="wk-title"></span><span class="wd" id="wk-date"></span></span></a>
+    <p>One remarkable story from that week in the war, told in full. Free by email.</p>
+    <form class="nl-form" action="https://ww2dispatches.substack.com/api/v1/free?nojs=true" method="post" target="substack-signup">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" placeholder="you@example.com" required autocomplete="email">
+      <button type="submit">Subscribe</button>
+    </form>
+    <p class="sent" hidden>Almost done. Check your inbox to confirm.</p>
+    <iframe name="substack-signup" title="Newsletter signup" hidden></iframe>
+    <a class="more" href="/newsletter/">All issues &#8250;</a>
   </section>
 
-  <section class="puzzle" id="puzzle" aria-labelledby="puzzle-h" hidden>
-    <div class="pz-head"><h2 id="puzzle-h">Name This</h2><span id="pz-date"></span></div>
-    <a class="pz-pic" id="pz-pic" href="https://www.threads.com/@ww2dispatches" target="_blank" rel="noopener"><img id="pz-img" src="" alt="WW2 Dispatches Name This card. Can you name it?" loading="lazy"></a>
-    <div class="pz-row"><p class="pz-clue" id="pz-clue"></p><span class="pz-links"><a class="pz-go" id="pz-go" href="https://www.threads.com/@ww2dispatches" target="_blank" rel="noopener">Guess on Threads</a><a class="pz-ig" id="pz-ig" href="https://www.instagram.com/ww2dispatches" target="_blank" rel="noopener" aria-label="Guess on Instagram"></a></span></div>
-    <p class="pz-last" id="pz-last" hidden></p>
+  <section aria-labelledby="cs-h">
+    <div class="sechead"><h2 id="cs-h">Campaign Series</h2><span class="flag">New</span></div>
+    <a class="cteaser" id="cs-teaser" href="/campaign-series/">
+      <span class="minishelf" aria-hidden="true"><span class="row" id="cs-spines"></span><span class="plank"></span></span>
+      <span class="ctxt"><span class="k" id="cs-k">The Campaign Shelf</span><span class="t" id="cs-t">Whole campaigns, day by day</span>
+        <span class="s" id="cs-s">Whole campaigns told one day at a time, as they happened.</span><span class="go">Browse the shelf &#8250;</span></span>
+    </a>
   </section>
+
+  <section id="puzzle" aria-labelledby="puzzle-h" hidden>
+    <div class="sechead"><h2 id="puzzle-h">Name This</h2><span class="flag violet">Open case</span></div>
+    <div class="nteaser">
+      <img id="pz-img" src="" alt="This week's Name This puzzle photo" width="1080" height="1350" loading="lazy">
+      <div class="ntx"><p class="clue" id="pz-clue"></p>
+        <a class="guess" id="pz-go" href="https://www.threads.com/@ww2dispatches" target="_blank" rel="noopener">Guess on Threads</a>
+        <a class="more" href="/name-this/">Open the evidence drawer &#8250;</a></div>
+    </div>
+  </section>
+
+
+
 
   <section class="series" aria-labelledby="series-h">
     <h2 id="series-h">Four kinds of dispatch</h2>
@@ -303,9 +364,14 @@ footer { text-align: center; font-family: var(--type); font-size: 13px; color: v
     </ul>
   </section>
 
-  <footer><span>@ww2dispatches</span><span>Every dispatch checked against sources.</span><span>WW2 Dispatches is a Wraithlight Digital project.</span><span>© 2026 Wraithlight Digital LLC</span><span><a href="/privacy">Privacy</a></span></footer>
+  <p class="contact">Questions, corrections, or a family story from the war? <a href="mailto:contact@ww2dispatches.com">contact@ww2dispatches.com</a></p>
+
+<!--chrome:footer-->
+<footer class="sitefoot"><span>@ww2dispatches</span><span>Every dispatch checked against sources.</span><span>WW2 Dispatches is a Wraithlight Digital project.</span><span>© 2026 Wraithlight Digital LLC</span><span><a href="/privacy">Privacy</a></span></footer>
+<!--/chrome:footer-->
 </main>
 
+<script src="/site.js?v=8d7ca60c"></script>
 <script>
 (function () {
   // Photos marked .top: size them as they would sit in a 640px band at the top of the screen,
@@ -351,29 +417,56 @@ footer { text-align: center; font-family: var(--type); font-size: 13px; color: v
     credit.textContent = "Photo: " + layers[i].dataset.credit;
   }, 7000);
 
-    // Weekly Dispatch: name the newest released issue (the server only lists issues already sent).
+  // Weekly Dispatch: the newest released issue's cover leads the signup (the server only lists issues already sent).
+  var MON = ["January","February","March","April","May","June","July","August","September","October","November","December"];
   fetch("/newsletter/issues.json").then(function (r) { return r.ok ? r.json() : []; }).then(function (list) {
-    var it = list && list[0]; if (!it) return;
-    var a = document.createElement("a"); a.className = "lt"; a.id = "nl-latest"; a.href = "/newsletter/" + it.id;
-    var b = document.createElement("b"); b.textContent = "Latest"; a.appendChild(b);
-    a.appendChild(document.createTextNode(it.title));
-    a.title = it.title;
-    var old = document.getElementById("nl-latest"); old.parentNode.replaceChild(a, old);
+    var it = list && list[0]; if (!it || !it.cover) return;
+    var a = document.getElementById("wk-cover");
+    a.href = "/newsletter/" + it.id;
+    var img = document.getElementById("wk-img"); img.src = it.cover; img.style.objectPosition = it.pos || "50% 30%";
+    document.getElementById("wk-tab").textContent = "Latest · No. " + it.id;
+    document.getElementById("wk-title").textContent = it.title;
+    var d = new Date(it.date + "T12:00:00Z");
+    document.getElementById("wk-date").textContent = "WW2 Dispatches · " + ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"][d.getUTCDay()] + " " + d.getUTCDate() + " " + MON[d.getUTCMonth()] + " " + d.getUTCFullYear();
+    a.setAttribute("aria-label", "Read the latest issue: " + it.title);
+    a.hidden = false;
   }).catch(function () {});
 
-    // Signup: the form posts to Substack in a hidden frame, so the visitor stays here.
-  document.getElementById("signup").addEventListener("submit", function () {
-    var f = this;
-    document.getElementById("sent").hidden = false;
-    setTimeout(function () { f.reset(); }, 300);
-  });
+  // Campaign Series teaser: three spines, then the volume that is running now, or the next one.
+  fetch("/campaign-series/shelf.json").then(function (r) { return r.json(); }).then(function (data) {
+    var vols = data.volumes || [], now = WW2.now().getTime();
+    document.getElementById("cs-spines").innerHTML = vols.slice(0, 3).map(function (v) {
+      return '<span style="width:' + Math.round(v.w * .7) + 'px;height:' + Math.round(v.h * .68) + 'px;background:' + WW2.esc(v.cloth) + '"><b>' + WW2.esc(v.title) + "</b></span>";
+    }).join("");
+    var pick = null, k = "";
+    vols.forEach(function (v) {
+      if (pick || v.status !== "live") return;
+      if (now < Date.parse(v.start)) { pick = v; k = "Vol. " + v.vol + " · Starts " + v.startLabel; }
+      else if (now < Date.parse(v.end)) { pick = v; var n = v.times.filter(function (t) { return Date.parse(t) <= now; }).length; k = "Vol. " + v.vol + " · Day " + n + " of " + v.days + " is out"; }
+    });
+    if (!pick) vols.forEach(function (v) { if (!pick && v.status === "prep") { pick = v; k = "Vol. " + v.vol + " · In preparation"; } });
+    if (!pick) return;
+    document.getElementById("cs-k").textContent = k;
+    document.getElementById("cs-t").textContent = pick.title + ", day by day";
+    document.getElementById("cs-s").textContent = (pick.intro || pick.blurb) + (pick.status === "live" ? " One dispatch every morning at 6:30." : "");
+  }).catch(function () {});
+
+  // Name This teaser: the open case, which the server always sends without its answer.
+  fetch("/name-this/cases.json").then(function (r) { return r.json(); }).then(function (data) {
+    var c = (data.cases || []).filter(function (x) { return x.open; })[0]; if (!c) return;
+    document.getElementById("pz-img").src = c.q;
+    document.getElementById("pz-img").alt = "Name This, open case. Mystery photo. Clue: " + c.clue;
+    document.getElementById("pz-clue").textContent = "Clue: " + c.clue;
+    document.getElementById("pz-go").href = c.threads;
+    document.getElementById("puzzle").hidden = false;
+  }).catch(function () {});
 
   // Today's Dispatches: only posts whose time has passed in Denver.
   var MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
   function denverNow() {
     var parts = {};
     new Intl.DateTimeFormat("en-CA", { timeZone: "America/Denver", year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", hourCycle: "h23" })
-      .formatToParts(new Date()).forEach(function (p) { parts[p.type] = p.value; });
+      .formatToParts(WW2.now()).forEach(function (p) { parts[p.type] = p.value; });
     return { date: parts.year + "-" + parts.month + "-" + parts.day, time: parts.hour + ":" + parts.minute };
   }
   function prettyDate(d) { var p = d.split("-"); return parseInt(p[2], 10) + " " + MONTHS[parseInt(p[1], 10) - 1]; }
@@ -381,32 +474,11 @@ footer { text-align: center; font-family: var(--type); font-size: 13px; color: v
 
   var track = document.getElementById("track"), dots = document.getElementById("dots");
   var prev = document.getElementById("prev"), next = document.getElementById("next");
-  var all = [], puzzles = [], shownKey = "", shownPuzzle = "";
+  var all = [], shownKey = "";
   // The Instagram glyph, borrowed from the header icons, for the small link beside each Threads link.
   var IG = document.querySelector('.socials a[aria-label="Instagram"] svg').outerHTML;
-  document.getElementById("pz-ig").innerHTML = IG;
-  function decode(s) { try { return decodeURIComponent(escape(atob(s))); } catch (e) { return ""; } }
-  function renderPuzzle(now) {
-    var live = puzzles.filter(function (p) { return p.date < now.date || (p.date === now.date && p.time <= now.time); });
-    if (!live.length) return;
-    var cur = live[live.length - 1], prev = live[live.length - 2];
-    if (shownPuzzle === cur.date) return;
-    shownPuzzle = cur.date;
-    document.getElementById("pz-img").src = cur.img;
-    document.getElementById("pz-pic").href = cur.link;
-    document.getElementById("pz-go").href = cur.link;
-    if (cur.ig) document.getElementById("pz-ig").href = cur.ig;
-    document.getElementById("pz-date").textContent = prettyDate(cur.date);
-    document.getElementById("pz-clue").textContent = "Clue: " + cur.clue;
-    var last = document.getElementById("pz-last"), ans = prev && prev.a ? decode(prev.a) : "";
-    last.hidden = !ans;
-    if (ans) { last.innerHTML = "Last puzzle: <b></b>"; last.querySelector("b").textContent = ans; }
-    document.getElementById("puzzle").hidden = false;
-  }
-
   function render() {
     var now = denverNow();
-    renderPuzzle(now);
     var live = all.filter(function (s) { return s.date < now.date || (s.date === now.date && s.time <= now.time); });
     if (!live.length) { document.getElementById("today").hidden = true; return; }
     var day = live[live.length - 1].date;
@@ -454,7 +526,6 @@ footer { text-align: center; font-family: var(--type); font-size: 13px; color: v
 
   fetch("slides.json", { cache: "no-cache" }).then(function (r) { return r.json(); }).then(function (data) {
     all = (data.slides || []).sort(function (a, b) { return (a.date + a.time) < (b.date + b.time) ? -1 : 1; });
-    puzzles = data.namethis || [];
     render();
     setInterval(render, 60000); // picks up the next post while the page is open
   }).catch(function () {});

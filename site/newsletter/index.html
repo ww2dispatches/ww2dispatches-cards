@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>The Weekly Dispatch: past issues | WW2 Dispatches</title>
+<title>The Weekly Dispatch | WW2 Dispatches</title>
 <meta name="description" content="Every issue of The Weekly Dispatch, the free Sunday newsletter from WW2 Dispatches: one story from the war, told in full.">
 <meta name="theme-color" content="#120F0C">
 <link rel="canonical" href="https://ww2dispatches.com/newsletter/">
@@ -12,7 +12,7 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="WW2 Dispatches">
-<meta property="og:title" content="The Weekly Dispatch: past issues">
+<meta property="og:title" content="The Weekly Dispatch | WW2 Dispatches">
 <meta property="og:description" content="Every issue of The Weekly Dispatch, the free Sunday newsletter from WW2 Dispatches: one story from the war, told in full.">
 <meta property="og:url" content="https://ww2dispatches.com/newsletter/">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/ww2dispatches/ww2dispatches-cards@main/photos/1944-11-07-sorge.jpg">
@@ -20,120 +20,128 @@
 <meta name="twitter:site" content="@ww2dispatches">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Special+Elite&family=Source+Sans+3:wght@400;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Special+Elite&family=Source+Sans+3:wght@400;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap">
+<link rel="stylesheet" href="/site.css?v=f17a8c4a">
 <style>
-/* Night Dispatch, like the home page: a sepia archival photo behind, paper on top. Built by renderer/newsletter_archive.py; do not edit by hand. */
-:root {
-  --night: #120F0C; --paper: #EDE4CF; --sheet: #F4EDDC; --ink: #1A1612; --red: #B04A3E; --navy: #3D5884; --brass: #D9A84A; --teal: #2B6A6C;
-  --sand: #C9B98F; --line: rgba(237,228,207,.18); --panel: rgba(18,15,12,.62);
-  --display: "Oswald", "Arial Narrow", Impact, sans-serif;
-  --type: "Special Elite", "Courier New", Courier, monospace;
-  --body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
-  --serif: "Libre Baskerville", Georgia, "Times New Roman", serif;
-  color-scheme: dark;
+/* Built by renderer/newsletter_archive.py; do not edit by hand. */
+.cover { position: relative; display: block; overflow: hidden; background: #222; text-decoration: none; color: #fff; }
+.cover > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) contrast(1.05); }
+.cover::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0) 30%, rgba(0,0,0,.6) 55%, rgba(0,0,0,.86) 100%); }
+.ctab { position: absolute; z-index: 1; top: 20px; left: 20px; background: var(--cream); color: var(--ink); padding: 4px 9px; font: 600 11px var(--display); letter-spacing: 2.5px; text-transform: uppercase; }
+.ctext { position: absolute; z-index: 1; left: 20px; right: 20px; bottom: 20px; display: flex; flex-direction: column; gap: 10px; }
+.ctitle { font-family: var(--serif); font-weight: 400; font-size: 32px; line-height: 1.12; margin: 0; text-wrap: balance; }
+.cdek { font-family: var(--serif); font-size: 16px; line-height: 1.5; color: #F2EEE6; margin: 0; }
+.cdate { font-family: var(--serif); font-style: italic; font-size: 14px; color: #D8D2C6; }
+.nlpage .pagehead h1 { font-family: var(--serif); font-weight: 400; text-transform: none; font-size: 34px; line-height: 1.1; }
+.nlgrid { max-width: 1180px; margin: 0 auto; padding: 14px 16px 10px; display: flex; flex-direction: column; gap: 22px; }
+.lead .cover { height: 600px; max-height: 82vh; min-height: 480px; }
+.earlier h2 { margin: 8px 0 12px; font-family: var(--display); font-weight: 400; font-size: 15px; letter-spacing: 3px; color: var(--sand); text-transform: uppercase; }
+.issues { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+.issue a { display: flex; gap: 14px; text-decoration: none; color: var(--paper); }
+.issue .cover { flex: none; width: 112px; height: 190px; }
+.issue .cover .ctitle { font-size: 13px; line-height: 1.15; } .issue .ctext { left: 8px; right: 8px; bottom: 8px; }
+.issue .itxt { display: flex; flex-direction: column; gap: 6px; padding-top: 4px; min-width: 0; }
+.issue .ino { font-family: var(--type); font-size: 12px; color: var(--sand); }
+.issue .ititle { font-family: var(--serif); font-size: 19px; line-height: 1.2; }
+.issue .idek { font-size: 14px; line-height: 1.45; color: var(--dim); display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+.issue a:hover .ititle { text-decoration: underline; }
+.empty { margin: 0; font-family: var(--type); color: var(--sand); }
+@media (min-width: 900px) {
+  .nlpage .pagehead { padding: 40px 40px 6px; } .nlpage .pagehead h1 { font-size: 48px; }
+  .nlgrid { padding: 20px 40px 20px; display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 28px 40px; align-items: start; }
+  .lead .cover { height: 640px; max-height: none; } .lead .ctitle { font-size: 42px; } .lead .cdek { font-size: 18px; }
+  .nlside { position: sticky; top: 100px; }
+  .earlier { grid-column: 1 / -1; }
+  .issues { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px; }
 }
-* { box-sizing: border-box; }
-html { background: var(--night); }
-body { margin: 0; background: var(--night); color: var(--paper); font-family: var(--body); min-height: 100vh; overflow-x: hidden; -webkit-text-size-adjust: 100%; }
-a { color: inherit; }
-:focus-visible { outline: 3px solid var(--brass); outline-offset: 3px; }
-.backdrop { position: fixed; inset: 0; z-index: 0; pointer-events: none; background: url("/img/bg-dday.jpg") center 45% / cover no-repeat; filter: sepia(.35) contrast(1.05); }
-.backdrop::after { content: ""; position: absolute; inset: 0;
-  background: linear-gradient(180deg, rgba(18,15,12,.42) 0px, rgba(18,15,12,.74) 300px, rgba(18,15,12,.92) 600px, rgba(18,15,12,.95) 100%); }
-@media (max-width: 700px) { .backdrop { background-image: url("/img/bg-dday-sm.jpg"); } }
-.page { position: relative; z-index: 1; max-width: 560px; margin: 0 auto;
-  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
-  padding-top: calc(22px + env(safe-area-inset-top, 0px)); padding-bottom: calc(40px + env(safe-area-inset-bottom, 0px));
-  display: flex; flex-direction: column; gap: 24px; }
-@media (min-width: 700px) { .page { padding-top: 40px; } }
-.topbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
-.home, .back { display: flex; align-items: center; gap: 8px; text-decoration: none; font-family: var(--display); font-weight: 600;
-  letter-spacing: 1.5px; text-transform: uppercase; font-size: 13px; color: var(--sand); }
-.home svg { width: 28px; height: 28px; }
-.home:hover, .back:hover { color: var(--paper); }
-.mast { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 10px; }
-.mast h1 { font-family: var(--display); font-weight: 700; text-transform: uppercase; margin: 0; font-size: 42px; line-height: .98; letter-spacing: .5px;
-  text-wrap: balance; text-shadow: 0 2px 18px rgba(0,0,0,.7); }
-.mast h1 span { display: block; color: var(--brass); font-size: .5em; letter-spacing: 3px; margin-bottom: 8px; }
-.lede { font-family: var(--type); margin: 0; font-size: 16px; line-height: 1.45; max-width: 40ch; text-shadow: 0 1px 8px rgba(0,0,0,.85); }
+/* issue page */
+.icover { position: relative; }
+.icover .cover { height: 700px; max-height: 86vh; min-height: 520px; }
+.icover .ctitle { font-size: 36px; } .icover .cdek { font-size: 17px; }
+.icover .back { position: absolute; z-index: 2; top: 12px; right: 12px; display: flex; align-items: center; gap: 4px; min-height: 44px; padding: 0 12px 0 8px;
+  background: rgba(18,15,12,.72); color: var(--paper); text-decoration: none; font-family: var(--type); font-size: 13px; }
+.icover .back svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.paper { background: var(--sheet); color: var(--ink); }
+.paperin { max-width: 720px; margin: 0 auto; padding: 22px 20px 30px; display: flex; flex-direction: column; gap: 16px; }
+.imeta { margin: 0; font-family: var(--type); font-size: 12.5px; color: #5A4E3E; }
+.covercap { margin: -8px 0 0; font-size: 13px; line-height: 1.45; color: #5A4E3E; }
 .tags { display: flex; flex-wrap: wrap; gap: 8px; }
-.tag { font-family: var(--display); font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; font-size: 11.5px;
-  border: 2px solid currentColor; padding: 1px 6px; transform: rotate(-2deg); white-space: nowrap; }
-.s-battle { color: #E07A6C; } .s-home { color: #A9B87A; } .s-blue { color: #8FA6D6; } .s-state { color: #D9A84A; } .s-theater { color: var(--sand); }
-.sheet .s-battle { color: var(--red); } .sheet .s-home { color: #5E6B3A; } .sheet .s-blue { color: var(--navy); } .sheet .s-state { color: #8E6618; } .sheet .s-theater { color: #6b604d; }
-
-/* signup, same as the home page box */
-.signup { background: var(--paper); color: var(--ink); border-radius: 6px; padding: 14px 14px 14px 18px; box-shadow: 0 0 0 2px var(--ink) inset, 0 10px 24px rgba(0,0,0,.45); }
-.signup .head { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 6px; }
-.signup h3 { font-family: var(--display); font-weight: 700; text-transform: uppercase; font-size: 19px; letter-spacing: 1px; margin: 0; line-height: 1.05; }
-.stampline { font-family: var(--display); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--teal); border: 2px solid var(--teal);
-  padding: 1px 6px; transform: rotate(-3deg); font-size: 11px; white-space: nowrap; }
-.signup p { font-family: var(--type); color: var(--navy); margin: 0 0 12px; font-size: 13.5px; line-height: 1.4; }
-.signup form { display: flex; gap: 6px; }
-.signup input { flex: 1 1 auto; min-width: 0; font: 16px var(--type); padding: 10px; border: 2px solid var(--ink); background: #F7F1E2; color: var(--ink); border-radius: 4px; }
-.signup button { flex: 0 0 auto; font: 600 15px var(--display); letter-spacing: 1.5px; text-transform: uppercase; padding: 10px 14px;
-  background: var(--teal); color: var(--paper); border: 2px solid var(--ink); border-radius: 4px; cursor: pointer; }
-.signup button:hover { background: var(--ink); }
-.signup .sent { margin: 10px 0 0; font-size: 13px; color: #4E5A2F; }
-footer { text-align: center; font-family: var(--type); font-size: 13px; color: var(--sand); display: flex; flex-direction: column; gap: 4px; }
-
-.issues { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 16px; }
-.issue a { display: grid; grid-template-columns: 132px 1fr; text-decoration: none; background: var(--paper); color: var(--ink);
-  border-radius: 6px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,.45); transition: transform .15s, background .15s; }
-.issue a:hover { background: #F5D6A0; transform: translateY(-2px); }
-.issue .pic { background: #2a241d center / cover no-repeat; filter: sepia(.25); min-height: 150px; }
-.issue .txt { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
-.issue .meta { font-family: var(--display); font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; font-size: 12px; color: var(--teal); }
-.issue h2 { margin: 0; font-family: var(--display); font-weight: 700; text-transform: uppercase; font-size: 22px; line-height: 1.05; letter-spacing: .3px; }
-.issue p { margin: 0; font-family: var(--serif); font-size: 14px; line-height: 1.5; color: #3b342b; }
-.issue .tags { margin-top: 4px; }
-.issue.latest a { grid-template-columns: 1fr; }
-.issue.latest .pic { min-height: 0; aspect-ratio: 16 / 9; }
-.issue.latest h2 { font-size: 28px; }
-.issue.latest .meta::after { content: " · Latest"; color: var(--red); }
-@media (max-width: 520px) { .issue a { grid-template-columns: 1fr; } .issue .pic { min-height: 0; aspect-ratio: 16 / 9; } }
-.empty { margin: 0; text-align: center; font-family: var(--type); color: var(--sand); }
-
-@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+.tag { font-family: var(--display); font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; font-size: 11.5px; border: 2px solid currentColor; padding: 1px 6px; transform: rotate(-2deg); white-space: nowrap; }
+.paper .s-battle { color: var(--red); } .paper .s-home { color: #5E6B3A; } .paper .s-blue { color: var(--navy); } .paper .s-state { color: #8E6618; } .paper .s-theater { color: #6b604d; }
+.body { font-family: var(--serif); font-size: 17px; line-height: 1.75; }
+.body p { margin: 0 0 1.05em; }
+.body p.first::first-letter { float: left; font-family: var(--display); font-weight: 700; font-size: 4.1em; line-height: .82; padding: .06em .1em 0 0; color: var(--red); }
+.body h2 { font-family: var(--serif); font-weight: 700; font-size: 22px; line-height: 1.25; margin: 1.5em 0 .6em; }
+.body figure { margin: 1.4em -20px; }
+.body img { display: block; width: 100%; height: auto; background: #2a241d; filter: grayscale(1); }
+.body figcaption { font-family: var(--body); font-size: 13.5px; line-height: 1.45; color: #5A4E3E; padding: 8px 20px 0; }
+.body a { color: var(--navy); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+.body hr { border: 0; height: 18px; margin: 2em 0 1.4em; background: radial-gradient(circle, rgba(26,22,18,.45) 2px, transparent 2.5px) center / 18px 18px repeat-x; }
+.body hr ~ h2 { font-family: var(--display); text-transform: uppercase; font-size: 17px; letter-spacing: 2px; color: #5e5546; margin-top: .4em; }
+.body hr ~ p { font-family: var(--body); font-size: 15.5px; line-height: 1.5; margin-bottom: .7em; }
+.body hr ~ p:last-child { font-family: var(--serif); font-style: italic; }
+.paper .subscribe { box-shadow: inset 0 0 0 1px rgba(26,22,18,.25); }
+.substack { margin: 0; text-align: center; font-family: var(--type); font-size: 14px; color: #5A4E3E; }
+.substack a { color: var(--ink); }
+.pager { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.pager a { display: flex; flex-direction: column; gap: 3px; padding: 12px 14px; min-height: 44px; border: 1px solid rgba(26,22,18,.3); text-decoration: none; min-width: 0; }
+.pager a:hover { border-color: var(--ink); }
+.pager small { font-family: var(--display); letter-spacing: 1.5px; text-transform: uppercase; font-size: 11.5px; color: #5A4E3E; }
+.pager b { font-family: var(--serif); font-weight: 400; font-size: 15px; line-height: 1.25; }
+.pager .next { grid-column: 2; text-align: right; }
+.allbtn { color: var(--ink); box-shadow: inset 0 0 0 1px var(--ink); }
+@media (min-width: 700px) {
+  .icover .cover { height: 76vh; min-height: 560px; } .icover .ctab { top: 28px; left: 32px; } .icover .ctext { left: 32px; right: 32px; bottom: 36px; max-width: 760px; }
+  .icover .ctitle { font-size: 52px; } .icover .cdek { font-size: 19px; }
+  .paperin { padding: 36px 34px 44px; } .body { font-size: 18px; } .body figure { margin: 1.4em -34px; } .body figcaption { padding: 8px 34px 0; }
+}
 </style>
 </head>
 <body>
-<div class="backdrop" aria-hidden="true"></div>
-<main class="page">
-  <div class="topbar"><a class="home" href="/" aria-label="WW2 Dispatches home"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="58" fill="#B04A3E"/><circle cx="60" cy="60" r="50" fill="none" stroke="#EDE4CF" stroke-width="4"/><text x="60" y="73" text-anchor="middle" font-family="Oswald, Arial Narrow, sans-serif" font-weight="700" font-size="38" fill="#EDE4CF">WW2</text></svg> WW2 Dispatches</a></div>
-  <header class="mast">
-    <h1><span>The Weekly Dispatch</span>Past issues</h1>
-    <p class="lede">One story from the war, told in full, every Sunday morning. Here is every issue so far.</p>
-  </header>
-  <div class="signup">
-    <div class="head"><h3>The Weekly Dispatch</h3><span class="stampline">Every Sunday</span></div>
-    <p>Get the next one in your inbox, free.</p>
+<!-- Built by renderer/site_pages.py; do not edit by hand. -->
+<!--chrome:header-->
+<header class="sitebar"><a class="brand" href="/" aria-label="WW2 Dispatches home"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="58" fill="#B04A3E"/><circle cx="60" cy="60" r="50" fill="none" stroke="#EDE4CF" stroke-width="3"/><circle cx="60" cy="60" r="44" fill="none" stroke="#EDE4CF" stroke-width="1.5"/><g transform="translate(28.00 73.58) scale(0.03354 -0.03354)" fill="#EDE4CF"><path d="M125 0 27 810H179L227 338L288 809H407L471 341L520 810H670L573 0H417L348 489L283 0Z"/><path transform="translate(697 0)" d="M125 0 27 810H179L227 338L288 809H407L471 341L520 810H670L573 0H417L348 489L283 0Z"/><path transform="translate(1394 0)" d="M41 0V118L235 416Q257 449 276.5 480.0Q296 511 308.5 543.0Q321 575 321 610Q321 645 307.0 662.0Q293 679 269 679Q242 679 227.0 664.0Q212 649 206.5 624.0Q201 599 201 568V528H39V571Q39 643 62.0 699.5Q85 756 135.0 788.5Q185 821 266 821Q375 821 430.5 764.5Q486 708 486 607Q486 558 470.5 516.0Q455 474 429.5 434.5Q404 395 375 352L227 131H464V0Z"/></g></svg><span>WW2 Dispatches</span></a><nav class="mainnav" aria-label="Main"><a class="nav-play" href="/declass">Play Declass</a><a href="/#today">Today</a><a href="/campaign-series/">Campaign Series</a><a href="/name-this/">Name This</a><a href="/newsletter/" aria-current="page">Weekly Dispatch</a><a href="/support">Support</a></nav><button class="menubtn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="sitemenu"><svg class="m-open" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="m-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></header>
+<div class="sitemenu" id="sitemenu" hidden><nav aria-label="Menu"><a href="/#today">Today</a><a href="/campaign-series/">Campaign Series</a><a href="/name-this/">Name This</a><a href="/newsletter/" aria-current="page">Weekly Dispatch</a><a class="declass-link" href="/declass">Play Declass</a><a href="/support">Support</a></nav></div>
+<!--/chrome:header-->
+<main class="nlpage">
+  <header class="pagehead"><span class="kicker">Every Sunday</span><h1>The Weekly Dispatch</h1><p>One story from the war, told in full.</p></header>
+  <div class="nlgrid">
+    <div class="lead" id="lead"></div>
+    <div class="nlside"><div class="subscribe">
+    <h2>Get the next one free</h2>
+    <p>One remarkable story from that week in the war, told in full. Every Sunday morning.</p>
     <form class="nl-form" action="https://ww2dispatches.substack.com/api/v1/free?nojs=true" method="post" target="substack-signup">
-      <input name="email" type="email" placeholder="your@email.com" required autocomplete="email" aria-label="Email address">
+      <label class="sr" for="em">Email</label>
+      <input id="em" name="email" type="email" placeholder="you@example.com" required autocomplete="email">
       <button type="submit">Subscribe</button>
     </form>
     <p class="sent" hidden>Almost done. Check your inbox to confirm.</p>
+  </div></div>
+    <section class="earlier" id="earlier" aria-labelledby="earlier-h">
+      <h2 id="earlier-h">Earlier issues</h2>
+      <ol class="issues" id="issues">
+      <li class="issue" data-release="2026-11-08T14:00:00Z" data-id="002"><a href="/newsletter/002" aria-label="Read The Spy Moscow Disowned"><span class="cover"><img src="https://cdn.jsdelivr.net/gh/ww2dispatches/ww2dispatches-cards@main/photos/1944-11-07-sorge.jpg" alt="" style="object-position:50% 30%" loading="lazy"><span class="ctext"><span class="ctitle">The Spy Moscow Disowned</span></span></span><span class="itxt"><span class="ino">No. 002 · 8 November</span><span class="ititle">The Spy Moscow Disowned</span><span class="idek">Richard Sorge warned Stalin that Germany would invade, and was ignored. Then he told Moscow that Japan would not attack, and was believed. On 7 November 1944 Japan hanged him, and for twenty years the country he served would not admit he had been its spy.</span></span></a><template><a class="cover" href="/newsletter/002"><img src="https://cdn.jsdelivr.net/gh/ww2dispatches/ww2dispatches-cards@main/photos/1944-11-07-sorge.jpg" alt="" style="object-position:50% 30%" loading="lazy"><span class="ctab">The Weekly Dispatch · No. 002</span><span class="ctext"><span class="ctitle">The Spy Moscow Disowned</span><span class="cdek">Richard Sorge warned Stalin that Germany would invade, and was ignored. Then he told Moscow that Japan would not attack, and was believed. On 7 November 1944 Japan hanged him, and for twenty years the country he served would not admit he had been its spy.</span><span class="cdate">WW2 Dispatches · Sunday 8 November 2026</span></span></a></template></li>
+      <li class="issue" data-release="2026-11-01T14:00:00Z" data-id="001"><a href="/newsletter/001" aria-label="Read The Last Stand of Taffy 3"><span class="cover"><img src="https://cdn.jsdelivr.net/gh/ww2dispatches/ww2dispatches-cards@main/photos/1944-10-25-samar.jpg" alt="" style="object-position:86% 50%" loading="lazy"><span class="ctext"><span class="ctitle">The Last Stand of Taffy 3</span></span></span><span class="itxt"><span class="ino">No. 001 · 1 November</span><span class="ititle">The Last Stand of Taffy 3</span><span class="idek">On 25 October 1944, six little carriers and seven escorts woke up to find the biggest battleship ever built bearing down on them. This is what they did next.</span></span></a><template><a class="cover" href="/newsletter/001"><img src="https://cdn.jsdelivr.net/gh/ww2dispatches/ww2dispatches-cards@main/photos/1944-10-25-samar.jpg" alt="" style="object-position:86% 50%" loading="lazy"><span class="ctab">The Weekly Dispatch · No. 001</span><span class="ctext"><span class="ctitle">The Last Stand of Taffy 3</span><span class="cdek">On 25 October 1944, six little carriers and seven escorts woke up to find the biggest battleship ever built bearing down on them. This is what they did next.</span><span class="cdate">WW2 Dispatches · Sunday 1 November 2026</span></span></a></template></li>
+      </ol>
+    </section>
+    <p class="empty" id="empty" hidden>The first issue lands Sunday morning.</p>
   </div>
-  <ol class="issues" id="issues" reversed>
-    <li class="issue" data-release="2026-11-08T14:00:00Z"><a href="/newsletter/002"><span class="pic" role="img" aria-label="Richard Sorge, about 1941" style="background-image:url('https://cdn.jsdelivr.net/gh/ww2dispatches/ww2dispatches-cards@main/photos/1944-11-07-sorge.jpg')"></span><span class="txt"><span class="meta">Issue 002 · 8 Nov 2026</span><h2>The Spy Moscow Disowned</h2><p>Richard Sorge warned Stalin that Germany would invade, and was ignored. Then he told Moscow that Japan would not attack, and was believed. On 7 November 1944 Japan hanged him, and for twenty years the country he served would not admit he had been its spy.</p><span class="tags"><span class="tag s-state">Statecraft</span><span class="tag s-theater">Pacific</span></span></span></a></li>
-    <li class="issue" data-release="2026-11-01T14:00:00Z"><a href="/newsletter/001"><span class="pic" role="img" aria-label="USS Gambier Bay and her escorts making smoke off Samar" style="background-image:url('https://cdn.jsdelivr.net/gh/ww2dispatches/ww2dispatches-cards@main/photos/1944-10-25-samar.jpg')"></span><span class="txt"><span class="meta">Issue 001 · 1 Nov 2026</span><h2>The Last Stand of Taffy 3</h2><p>On 25 October 1944, six little carriers and seven escorts woke up to find the biggest battleship ever built bearing down on them. This is what they did next.</p><span class="tags"><span class="tag s-battle">Battle Lines</span><span class="tag s-theater">Pacific</span></span></span></a></li>
-  </ol>
-  <p class="empty" id="empty" hidden>The first issue lands Sunday morning.</p>
-  <script>
-  // The server already drops unreleased issues; this marks the newest left as Latest.
-  (function () { var li = document.querySelector("#issues .issue"); if (li) li.classList.add("latest"); else document.getElementById("empty").hidden = false; })();
-  </script>
-  <footer><span>@ww2dispatches</span><span>Every dispatch checked against sources.</span><span>WW2 Dispatches is a Wraithlight Digital project.</span><span>© 2026 Wraithlight Digital LLC</span><span><a href="/">Home</a> · <a href="/newsletter/">Past issues</a> · <a href="/privacy">Privacy</a></span></footer>
 </main>
 <iframe name="substack-signup" title="Newsletter signup" hidden></iframe>
 <script>
-// Signup posts to Substack in a hidden frame, so the reader stays on this page (same as the home page box).
-document.querySelectorAll(".nl-form").forEach(function (f) {
-  f.addEventListener("submit", function () {
-    f.parentNode.querySelector(".sent").hidden = false;
-    setTimeout(function () { f.reset(); }, 300);
-  });
-});
+// The server already drops unreleased issues; the newest one left becomes the tall cover on top.
+(function () {
+  var li = document.querySelector("#issues .issue");
+  if (!li) { document.getElementById("empty").hidden = false; document.getElementById("earlier").hidden = true; return; }
+  document.getElementById("lead").appendChild(li.querySelector("template").content.cloneNode(true));
+  li.remove();
+  if (!document.querySelector("#issues .issue")) document.getElementById("earlier").hidden = true;
+})();
 </script>
+<!--chrome:footer-->
+<footer class="sitefoot"><span>@ww2dispatches</span><span>Every dispatch checked against sources.</span><span>WW2 Dispatches is a Wraithlight Digital project.</span><span>© 2026 Wraithlight Digital LLC</span><span><a href="/privacy">Privacy</a></span></footer>
+<!--/chrome:footer-->
+<script src="/site.js?v=8d7ca60c"></script>
+<script src="/hit.js" defer></script>
 </body>
 </html>

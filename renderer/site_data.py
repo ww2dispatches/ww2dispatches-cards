@@ -144,3 +144,8 @@ with open(os.path.join(root, "site", "slides.json"), "w", encoding="utf-8") as f
     puzzles.sort(key=lambda p: p["date"])
     json.dump({"slides": slides, "namethis": puzzles[-6:]}, f, ensure_ascii=False, indent=1)
 print(f"site/slides.json: {len(slides)} slides, {slides[0]['date'] if slides else ''} to {slides[-1]['date'] if slides else ''}")
+
+# The record built pages (Campaign Shelf, volume and day pages, Name This) and the shared
+# header and footer, refreshed on every run as well (Site Revamp, Nov 2026).
+import site_pages
+site_pages.main()
