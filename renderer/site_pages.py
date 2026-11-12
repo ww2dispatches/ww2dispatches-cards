@@ -329,6 +329,15 @@ def build_volume(vol, days):
     json.dump(data, open(os.path.join(SITE, "campaign-series", f"{vid}.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
 
+def spine_size(days):
+    """Spine width and height from the series length, so a longer series is a thicker book.
+    7 days or fewer is the thinnest (40 x 180 px), 30 days (the cap) the thickest (68 x 210);
+    a volume with no length yet gets the size of a 20 day series."""
+    d = min(30, max(7, days or 20))
+    t = (d - 7) / 23
+    return round(40 + 28 * t), round(180 + 30 * t)
+
+
 def build_shelf():
     shelf = json.load(open(os.path.join(ROOT, "campaign-series", "shelf.json"), encoding="utf-8"))["volumes"]
     releases, out = {}, []
@@ -347,7 +356,8 @@ def build_shelf():
             no_dash(vol.get(k), f"shelf {vol['id']} {k}")
         out.append({
             "id": vol["id"], "vol": vol["vol"], "title": vol["title"], "dates": vol["dates"], "theater": vol["theater"], "year": vol["year"],
-            "status": "live" if live else vol.get("status", "proposed"), "cloth": vol.get("cloth", "#3F4034"), "w": vol.get("w", 52), "h": vol.get("h", 190),
+            "status": "live" if live else vol.get("status", "proposed"), "cloth": vol.get("cloth", "#3F4034"),
+            "w": spine_size(len(days) or vol.get("days"))[0], "h": spine_size(len(days) or vol.get("days"))[1],
             "days": len(days) or vol.get("days"), "cover": cover, "coverPos": vol.get("coverPos", "50% 40%"),
             "blurb": vol.get("blurb", ""), "note": vol.get("note", ""), "url": f"/campaign-series/{vol['id']}/" if live else "",
             "start": days[0]["release"] if days else None, "end": days[-1]["release"] if days else None,

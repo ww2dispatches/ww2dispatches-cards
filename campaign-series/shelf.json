@@ -1,5 +1,5 @@
 {
- "about": "The Campaign Shelf on ww2dispatches.com/campaign-series (Site Revamp doc). One entry per volume, in volume order. A volume whose folder campaign-series/<id>/ holds day records is built as a live volume page; the others show a stamped cover and the note. Edit by hand; renderer/site_pages.py reads it. runYear is the year the series posts in (a day's run date is its historical day and month in runYear, stepping up a year after December, unless the day record has a postDate). cover is a photo in this repo; cloth is the clothbound color; w and h size the spine in pixels. status: live comes on its own from day records; planned (decided, not yet built), prep (being built), proposed (an idea). Volumes are numbered in posting order; months whose pick is still undecided join once decided.",
+ "about": "The Campaign Shelf on ww2dispatches.com/campaign-series (Site Revamp doc). One entry per volume, in volume order. A volume whose folder campaign-series/<id>/ holds day records is built as a live volume page; the others show a stamped cover and the note. Edit by hand; renderer/site_pages.py reads it. runYear is the year the series posts in (a day's run date is its historical day and month in runYear, stepping up a year after December, unless the day record has a postDate). cover is a photo in this repo; cloth is the clothbound color; status: live comes on its own from day records; planned (decided, not yet built), prep (being built), proposed (an idea). Volumes are numbered in posting order; months whose pick is still undecided join once decided. Spine size follows the series length (renderer/site_pages.py, spine_size): longer series are thicker and a little taller; a volume with no length yet gets the middle size.",
  "volumes": [
   {
    "id": "pearl-harbor-1941",
@@ -13,8 +13,6 @@
    "cover": "photos/campaign/ph-01b.jpg",
    "coverPos": "50% 45%",
    "cloth": "#24344F",
-   "w": 50,
-   "h": 196,
    "intro": "Twelve days to war, told as they happened.",
    "blurb": "From the morning Japan's carriers slip out of the Kurils to the midget submarines creeping toward Oahu in the dark."
   },
@@ -29,8 +27,6 @@
    "status": "prep",
    "runYear": 2026,
    "cloth": "#5E2520",
-   "w": 60,
-   "h": 206,
    "blurb": "Hitler's last gamble in the West, from the dawn barrage in the Ardennes to the American armies closing on Houffalize.",
    "note": "First dispatch 16 Dec 2026 at 6:30 a.m. Mountain. Days appear here as they post."
   },
@@ -44,8 +40,6 @@
    "status": "planned",
    "runYear": 2027,
    "cloth": "#4B4630",
-   "w": 46,
-   "h": 180,
    "blurb": "Allied troops land behind the German line in Italy, then must hold a narrow beachhead under the guns.",
    "note": "Begins with the 22 January 1944 landing, posting from 22 Jan 2027. Days appear here as they post."
   },
@@ -59,8 +53,6 @@
    "status": "planned",
    "runYear": 2027,
    "cloth": "#383E46",
-   "w": 52,
-   "h": 192,
    "blurb": "An American patrol finds a bridge over the Rhine still standing, and the army races to hold it.",
    "note": "Posts in March 2027 on the real dates. Days appear here as they post."
   },
@@ -74,8 +66,6 @@
    "status": "planned",
    "runYear": 2027,
    "cloth": "#2C4546",
-   "w": 56,
-   "h": 200,
    "blurb": "The last great battle of the Pacific, and the radar picket destroyers that stood in the path of the kamikazes.",
    "note": "Posts in spring 2027 on the real dates. Days appear here as they post."
   }
