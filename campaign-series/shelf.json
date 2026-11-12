@@ -1,5 +1,5 @@
 {
- "about": "The Campaign Shelf on ww2dispatches.com/campaign-series (Site Revamp doc). One entry per volume, in volume order. A volume whose folder campaign-series/<id>/ holds day records is built as a live volume page; the others show a stamped cover and the note. Edit by hand; renderer/site_pages.py reads it. runYear is the year the series posts in (a day's run date is its historical day and month in runYear, stepping up a year after December, unless the day record has a postDate). cover is a photo in this repo; cloth is the clothbound color; status: live comes on its own from day records; planned (decided, not yet built), prep (being built), proposed (an idea). Volumes are numbered in posting order; months whose pick is still undecided join once decided. Spine size follows the series length (renderer/site_pages.py, spine_size): longer series are thicker and a little taller; a volume with no length yet gets the middle size.",
+ "about": "The Campaign Shelf on ww2dispatches.com/campaign-series (Site Revamp doc). One entry per volume, in volume order. A volume whose folder campaign-series/<id>/ holds day records is built as a live volume page; the others show a stamped cover and the note. Edit by hand; renderer/site_pages.py reads it. runYear is the year the series posts in (a day's run date is its historical day and month in runYear, stepping up a year after December, unless the day record has a postDate). cover is a photo in this repo; cloth is the clothbound color; status: live comes on its own from day records; planned (decided, not yet built), prep (being built), proposed (an idea). Volumes are numbered in posting order; months whose pick is still undecided join once decided. Spine size follows the series length (renderer/site_pages.py, spine_size): longer series are thicker and a little taller; a volume with no length yet gets the middle size. approx: true marks a planned length and dates that are still an estimate (the stand says \"about\").",
  "volumes": [
   {
    "id": "pearl-harbor-1941",
@@ -34,40 +34,46 @@
    "id": "anzio-1944",
    "vol": "III",
    "title": "Anzio",
-   "dates": "From 22 Jan 1944",
+   "dates": "22 Jan to 20 Feb 1944",
    "theater": "The Mediterranean",
    "year": 1944,
    "status": "planned",
    "runYear": 2027,
    "cloth": "#4B4630",
    "blurb": "Allied troops land behind the German line in Italy, then must hold a narrow beachhead under the guns.",
-   "note": "Begins with the 22 January 1944 landing, posting from 22 Jan 2027. Days appear here as they post."
+   "note": "Begins with the 22 January 1944 landing, posting from 22 Jan 2027. Days appear here as they post.",
+   "days": 30,
+   "approx": true
   },
   {
    "id": "remagen-1945",
    "vol": "IV",
    "title": "Remagen",
-   "dates": "March 1945",
+   "dates": "7 to 17 Mar 1945",
    "theater": "The Western Front",
    "year": 1945,
    "status": "planned",
    "runYear": 2027,
    "cloth": "#383E46",
    "blurb": "An American patrol finds a bridge over the Rhine still standing, and the army races to hold it.",
-   "note": "Posts in March 2027 on the real dates. Days appear here as they post."
+   "note": "Posts 7 to 17 March 2027 on the real dates. Days appear here as they post.",
+   "days": 11,
+   "approx": true
   },
   {
    "id": "okinawa-1945",
    "vol": "V",
    "title": "Okinawa",
-   "dates": "Spring 1945",
+   "dates": "1 to 16 Apr 1945",
    "theater": "The Pacific",
    "year": 1945,
    "status": "planned",
    "runYear": 2027,
    "cloth": "#2C4546",
    "blurb": "The last great battle of the Pacific, and the radar picket destroyers that stood in the path of the kamikazes.",
-   "note": "Posts in spring 2027 on the real dates. Days appear here as they post."
+   "note": "Posts 1 to 16 April 2027 on the real dates. Days appear here as they post.",
+   "days": 16,
+   "approx": true
   }
  ]
 }

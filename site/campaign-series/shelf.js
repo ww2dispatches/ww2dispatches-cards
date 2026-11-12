@@ -66,7 +66,7 @@
     document.getElementById("st-title").textContent = v.title;
     document.getElementById("st-dates").textContent = v.dates;
     var s = document.getElementById("st-status");
-    s.textContent = st.label + " · " + (v.days ? v.days + " days" : "length to be set");
+    s.textContent = st.label + " · " + (v.days ? (v.approx ? "about " : "") + v.days + " days" : "length to be set");
     s.className = "st-status " + st.cls;
     document.getElementById("st-blurb").textContent = v.blurb;
     var open = document.getElementById("st-open"); open.hidden = !live; if (live) open.href = v.url;
