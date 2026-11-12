@@ -7,7 +7,7 @@ A daily social media serial that follows one campaign day by day, told as it hap
 |---|---|---|---|
 | Pearl Harbor | 26 Nov to 7 Dec 1941 (posts 26 Nov to 7 Dec 2026) | 12 | **Built and scheduled 11 Nov 2026**: all 48 posts in Buffer. Records in `campaign-series/pearl-harbor-1941/`. |
 | The Bulge | 16 Dec 1944 to 25 Jan 1945 | 41 | Planned (anchor days below). Build sitting: Thanksgiving weekend, 26 to 29 Nov 2026. |
-| Then one a month | Anzio (Feb 2027), Remagen (Mar), Okinawa (Apr), Black May or Coral Sea (May), D Day or Midway (Jun), Kursk or Sicily (Jul), Battle of Britain (Aug), Market Garden (Sep), Leyte Gulf or El Alamein (Oct), Guadalcanal or Tarawa (Nov), Pearl Harbor and Wake Island (Dec 2027) | | Follows the Campaigns Roadmap; months with an alternate are not decided yet. |
+| Next series | Anzio (landing 22 Jan 1944), then Remagen, Okinawa, Black May or Coral Sea, D Day or Midway, Kursk or Sicily, Battle of Britain, Market Garden, Leyte Gulf or El Alamein, Guadalcanal or Tarawa, Pearl Harbor and Wake Island | | Same campaigns as the Campaigns Roadmap, but each series runs on the real dates, not the game month. Alternates not decided. |
 
 ## Decided (11 Nov 2026, Brian)
 * **Slot: 6:30 a.m. Mountain**, its own slot, separate from every other (8 a.m., 10 a.m. Name This, noon video, 2:30 p.m., 5 p.m., 7 p.m. video).
@@ -15,7 +15,7 @@ A daily social media serial that follows one campaign day by day, told as it hap
 * **Not a card and never in Declass.** No dispatch number, no series stamp, no Declass line, no `dispatches/` record.
 * **Same event allowed in the regular slots, only the wording differs.** The series is written first; the cards and video runs read `campaign-series/<series>/day-NN.json` and never reuse its sentences or hooks (Cards and Videos docs).
 * **Built in one sitting per series**, no new scheduled task.
-* **The order follows the Campaigns Roadmap** (12 Nov 2026, Brian): each month's series covers that month's Campaigns campaign, and series never overlap in the 6:30 slot.
+* **Same campaigns as the Campaigns Roadmap, on the real timeline** (12 Nov 2026, Brian): the game releases each campaign on the 1st of its month, but its Campaign Series starts on the event's actual dates (Anzio begins with the 22 January 1944 landing, while the game opens 1 February). Where two real timelines overlap (the Bulge runs to 25 January, Anzio starts 22 January), how the 6:30 slot handles it is still open.
 
 ## The look (locked 11 Nov 2026: C, Teletype tape)
 Canvas: "Campaign Series Bulletin Mockup" (https://claude.ai/artifact/HKsV6D4kmGzoZ7X3nimzE3). Drawn by `renderer/campaign.html` with `node renderer/campaign.js <series> [day ...]`.
@@ -91,10 +91,11 @@ Every series is a volume on the Campaign Shelf at ww2dispatches.com/campaign-ser
 ## Open
 * The Substack section and the two Pearl Harbor roundups (Bulge sitting, before 29 Nov).
 * The Bulge build sitting (Thanksgiving weekend).
+* Overlapping series (Bulge and Anzio, 22 to 25 Jan) and long campaigns (Battle of Britain, Guadalcanal) that need a window chosen.
 
 ## Changelog
 * 11 Nov 2026: Idea decided in principle and handed off (slot, platforms, not a card, Bulge dates, Pearl Harbor first, one sitting per series).
 * 11 Nov 2026 (night, Campaign Series chat): Look C locked and drawn by the new `renderer/campaign.html`; caption style set; Pearl Harbor set at 26 Nov to 7 Dec (12 days), researched, written, rendered, and 44 posts scheduled in Buffer (Day 9 waits on a photo); same event allowed in the regular slots with different wording (rule added to the Cards and Videos docs); Substack set as weekly web only roundups in a Campaign Series section; the `campaign-series` skill built.
 * 11 Nov 2026 (later): Day 9 scheduled with Brian's Signal Corps photo of Wedemeyer; its caption now names him as the plan's author under suspicion.
 * 12 Nov 2026 (site revamp chat): the Campaign Shelf built on the `site-revamp` preview branch; build sitting step added (shelf.json, then series_log.py).
-* 12 Nov 2026: Series order tied to the Campaigns Roadmap (Brian); Stalingrad dropped from the list.
+* 12 Nov 2026: Series follow the Campaigns Roadmap's campaigns on their real dates, not the game months (Brian); Stalingrad dropped from the list.
