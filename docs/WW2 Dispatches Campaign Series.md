@@ -15,7 +15,8 @@ A daily social media serial that follows one campaign day by day, told as it hap
 * **Not a card and never in Declass.** No dispatch number, no series stamp, no Declass line, no `dispatches/` record.
 * **Same event allowed in the regular slots, only the wording differs.** The series is written first; the cards and video runs read `campaign-series/<series>/day-NN.json` and never reuse its sentences or hooks (Cards and Videos docs).
 * **Built in one sitting per series**, no new scheduled task.
-* **Same campaigns as the Campaigns Roadmap, on the real timeline** (12 Nov 2026, Brian): the game releases each campaign on the 1st of its month, but its Campaign Series starts on the event's actual dates (Anzio begins with the 22 January 1944 landing, while the game opens 1 February). Where two real timelines overlap (the Bulge runs to 25 January, Anzio starts 22 January), how the 6:30 slot handles it is still open.
+* **Same campaigns as the Campaigns Roadmap, on the real timeline** (12 Nov 2026, Brian): the game releases each campaign on the 1st of its month, but its Campaign Series starts on the event's actual dates (Anzio begins with the 22 January 1944 landing, while the game opens 1 February). Where two real timelines overlap (the Bulge runs to 25 January, Anzio starts 22 January), both run.
+* **Overlaps are staggered** (12 Nov 2026, Brian): more content is a good thing. The series that started first keeps 6:30; the next one posts at 6:45 for as long as both run, and a third (rare) at 7:00. A series keeps its slot for its whole run, so followers know when to look. The day record's `time` holds the slot. Nothing in the series ever posts at 8 a.m. or later.
 
 ## The look (locked 11 Nov 2026: C, Teletype tape)
 Canvas: "Campaign Series Bulletin Mockup" (https://claude.ai/artifact/HKsV6D4kmGzoZ7X3nimzE3). Drawn by `renderer/campaign.html` with `node renderer/campaign.js <series> [day ...]`.
@@ -91,7 +92,7 @@ Every series is a volume on the Campaign Shelf at ww2dispatches.com/campaign-ser
 ## Open
 * The Substack section and the two Pearl Harbor roundups (Bulge sitting, before 29 Nov).
 * The Bulge build sitting (Thanksgiving weekend).
-* Overlapping series (Bulge and Anzio, 22 to 25 Jan) and long campaigns (Battle of Britain, Guadalcanal) that need a window chosen.
+* Windows for the long campaigns (Anzio, Okinawa, Normandy, Battle of Britain, Guadalcanal), chosen in each series' sitting so it fits one sitting.
 
 ## Changelog
 * 11 Nov 2026: Idea decided in principle and handed off (slot, platforms, not a card, Bulge dates, Pearl Harbor first, one sitting per series).
@@ -99,3 +100,4 @@ Every series is a volume on the Campaign Shelf at ww2dispatches.com/campaign-ser
 * 11 Nov 2026 (later): Day 9 scheduled with Brian's Signal Corps photo of Wedemeyer; its caption now names him as the plan's author under suspicion.
 * 12 Nov 2026 (site revamp chat): the Campaign Shelf built on the `site-revamp` preview branch; build sitting step added (shelf.json, then series_log.py).
 * 12 Nov 2026: Series follow the Campaigns Roadmap's campaigns on their real dates, not the game months (Brian); Stalingrad dropped from the list.
+* 12 Nov 2026 (later): overlapping series run together, staggered at 6:30, 6:45, and 7:00 (Brian).
