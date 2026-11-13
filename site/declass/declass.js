@@ -1293,7 +1293,7 @@
       box.innerHTML = '<form class="mailform" novalidate><label for="mail_' + slot + '">' + (saving() ? 'Save with your email' : 'Sign in with your email') + '</label>'
         + '<input id="mail_' + slot + '" type="email" inputmode="email" autocomplete="email" autocapitalize="off" spellcheck="false" placeholder="you@example.com" required>'
         + '<button class="btn" type="submit">Email me a code</button><p class="mailmsg" role="status"></p>'
-        + '<p class="mailnote">We send a 6 digit code to type in here. No password. We never keep your email.</p></form>';
+        + '<p class="mailnote">We send a 6 digit code to type in here. No password. We never keep your email. Use the same email each time to reach your cards.</p></form>';
       const form = box.querySelector('form'), input = box.querySelector('input'), btn = box.querySelector('button');
       form.onsubmit = ev => {
         ev.preventDefault();
@@ -1312,7 +1312,7 @@
       return;
     }
     box.innerHTML = '<form class="mailform" novalidate><label for="code_' + slot + '">Enter the 6 digit code</label>'
-      + '<p class="mailsent">We emailed it to <b>' + esc(pending.email) + '</b>. It can take a minute. If it isn\'t there, check your spam or Junk folder.</p>'
+      + '<p class="mailsent">We emailed it to <b>' + esc(pending.email) + '</b>. It can take a minute. Keep this page open while you check your email. If it isn\'t there, check your spam or Junk folder.</p>'
       + '<input id="code_' + slot + '" class="codein" type="text" inputmode="numeric" pattern="[0-9 ]*" autocomplete="one-time-code" maxlength="7" placeholder="000 000" required>'
       + '<button class="btn" type="submit">' + (saving() ? 'Save my dossier' : 'Sign in') + '</button><p class="mailmsg" role="status"></p>'
       + '<p class="mailnote"><button class="linkbtn" type="button" data-m="again">Send a new code</button> · <button class="linkbtn" type="button" data-m="other">Use a different email</button></p></form>';

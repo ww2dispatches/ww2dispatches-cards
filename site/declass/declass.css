@@ -302,7 +302,8 @@ button:focus-visible,.env:focus-visible{outline:3px solid var(--brass);outline-o
 .landrule{width:60%;border-top:1px solid var(--line);margin:22px 0 4px}
 #sSave{text-align:center}
 .savegrid{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin:6px 0 18px}
-@media (max-width:420px){.savegrid{grid-template-columns:repeat(3,1fr)}}
+/* Phones (13 Nov 2026): the five cards stay in one small row with no labels, so the sign in box and its button sit in the first screen, even in the short window of a social app browser */
+@media (max-width:420px){.savegrid{gap:5px;margin:4px 0 14px}.savegrid .mini .thumb{border-width:2px}.savegrid .mini .no,.savegrid .mini .nm,.savegrid .mini .fd{display:none}}
 .soon{text-align:center;padding-top:40px}
 
 /* overlays */
@@ -1296,6 +1297,7 @@ html.ztrial #stage2{cursor:zoom-in}
 .mailform .btn:disabled{opacity:.6}
 .mailmsg{font-family:var(--type);font-size:14px;min-height:20px;margin:8px 0 0;text-align:center}
 .mailmsg.bad{color:var(--red);font-weight:700}
+.mailmsg:empty{min-height:0;margin:0}
 .mailnote,.mailsent{font-family:var(--type);font-size:13px;line-height:1.45;margin:8px 0 0;text-align:center;opacity:.85}
 .mailsent{margin:0 0 10px;text-align:left;opacity:1;font-size:14px}
 .mailsent b{display:inline;font-family:inherit;font-size:inherit;letter-spacing:0;text-transform:none;color:inherit;word-break:break-all}
@@ -1303,5 +1305,7 @@ html.ztrial #stage2{cursor:zoom-in}
 .gor{display:flex;align-items:center;gap:10px;max-width:340px;margin:16px auto 10px;font-family:var(--type);font-size:13px;opacity:.7}
 .gor:before,.gor:after{content:"";flex:1;border-top:1px solid currentColor;opacity:.5}
 .ggl{display:flex;justify-content:center;min-height:44px}
+/* Google's button sits in an iframe with a light color scheme; on this dark page the browser paints a white box behind it unless the frame is told it is light too */
+.gslot iframe{color-scheme:light}
 .signbar .mailform label{color:var(--red)}
 .mailform .btn{margin:0;box-sizing:border-box}
