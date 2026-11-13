@@ -100,18 +100,8 @@ function overview() {
   $('body').innerHTML = `<div class="kp"><div><b>${D.totals.players}</b><span>players</span></div><div><b>${E.active1}</b><span>played today</span></div><div><b>${E.active7}</b><span>this week</span></div><div><b>${D.totals.envelopes}</b><span>envelopes</span></div><div><b>${D.totals.pulls}</b><span>cards pulled</span></div><div><b>${D.totals.posted}</b><span>cards posted</span></div></div>
   <h2>Weekly review</h2><p class="note">Copy this and paste it into the chat with Claude for the weekly review. It covers the last 7 days, the rates, and anything flagged.</p>
   <div class="btnrow"><button id="copyRep">Copy weekly report</button></div><textarea id="rep" readonly>${esc(report())}</textarea>
-  <h2>Clean start</h2><p class="note">One time: deletes visit counts (visitors, sources, devices, game actions) dated before 10 Nov 2026. Accounts, cards and Intel are not touched.</p>
-  <div class="btnrow"><button id="clearOld">Clear visit counts before 10 Nov</button></div>
   <h2>Health checks</h2><p class="note">${bad.length ? bad.length + ' flagged. Worth raising in the review.' : 'All clear.'}</p>
   <ul class="hl">${h.map(([l, n, x]) => `<li><span>${esc(l)}${x ? ` <span class="note">(${esc(x)})</span>` : ''}</span><b class="${n ? 'bad' : 'ok'}">${n ? n : '✓'}</b></li>`).join('')}</ul>`;
-  $('clearOld').onclick = () => {
-    const btn = $('clearOld');
-    if (!btn.dataset.arm) { btn.dataset.arm = '1'; btn.textContent = 'Tap again to delete for good'; return; }
-    btn.disabled = true; btn.textContent = 'Clearing…';
-    fetch('/api/stats', { method: 'POST', headers: { 'content-type': 'application/json', 'x-declass-key': key }, credentials: 'same-origin', body: JSON.stringify({ action: 'clearTallyBefore', before: '2026-11-10' }) })
-      .then(r => r.ok ? r.json() : Promise.reject(r.status)).then(d => { btn.textContent = 'Cleared ' + d.deleted + ' rows. Reloading…'; setTimeout(() => location.reload(), 1500); })
-      .catch(e => { btn.disabled = false; delete btn.dataset.arm; btn.textContent = 'Did not work (' + e + '). Try again'; });
-  };
   $('copyRep').onclick = () => { const ta = $('rep'); ta.select(); (navigator.clipboard ? navigator.clipboard.writeText(ta.value) : Promise.reject()).then(() => { $('copyRep').textContent = 'Copied'; }).catch(() => { document.execCommand('copy'); $('copyRep').textContent = 'Copied'; }); setTimeout(() => { $('copyRep').textContent = 'Copy weekly report'; }, 2000); };
 }
 function saveLine() {
