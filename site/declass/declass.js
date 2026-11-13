@@ -1602,7 +1602,7 @@
   function paintSnd() {
     document.querySelectorAll('.sndbtn').forEach(b => {
       const t = b.dataset.t, on = SND[t], name = t === 'sfx' ? 'Sound' : 'Music';
-      b.innerHTML = `<svg viewBox="0 0 24 24" aria-hidden="true">${ICON[t]}${t === 'sfx' && on ? ICON.sfxOn : ''}${on ? '' : ICON.slash}</svg>${name}${on ? '' : ' off'}`;
+      b.innerHTML = `<svg viewBox="0 0 24 24" aria-hidden="true">${ICON[t]}${t === 'sfx' && on ? ICON.sfxOn : ''}${on ? '' : ICON.slash}</svg><span class="snm">${name}${on ? '' : ' off'}</span>`;
       b.title = (t === 'sfx' ? 'Sound effects ' : 'Music ') + (on ? 'on, tap to turn off' : 'off, tap to turn on');
       b.setAttribute('aria-label', b.title);
       b.classList.toggle('off', !on); b.setAttribute('aria-pressed', String(on));
