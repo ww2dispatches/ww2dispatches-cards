@@ -168,6 +168,11 @@
    "kind": "Living Card",
    "opening": "combat or firing",
    "sound": "silent"
+  },
+  "video_b": {
+   "kind": "Living Card",
+   "opening": "motion",
+   "sound": "silent"
   }
  },
  "video": {
@@ -194,6 +199,31 @@
   "threads_film": "6af67fc3da25c4db3e905a05",
   "facebook_film": "6af67fc5c1a0010a5bf53108",
   "youtube": "6af67fd8c1a0010a5bf533c4",
-  "tiktok": "6af67fdaba218f3263756939"
+  "tiktok": "6af67fdaba218f3263756939",
+  "x_film_b": "6af6a2d6e1d8eff610a2788f",
+  "instagram_reel_b": "6af6a2d9c1a0010a5bfed721",
+  "threads_film_b": "6af6a2dcc1a0010a5bfed8d7",
+  "facebook_film_b": "6af6a2dec1a0010a5bfedabd",
+  "tiktok_b": "6af6a2e15ec1c9d5be60f83f",
+  "youtube_b": "6af6a2e55ec1c9d5be60f8c9"
+ },
+ "video_b": {
+  "footage": "footage/1944-11-16-operation-queen-b.mp4",
+  "focusX": 50,
+  "focusY": 50,
+  "sourceUrl": "https://catalog.archives.gov/id/16519",
+  "note": "Second cut, 7 p.m. U.S. Army Signal Corps film 111-ADC-2715 (NARA 16519), Hamich, Germany, 20 November 1944 (slate at 4:22, cameraman Laurence), silent. U.S. government work, public domain. Clip from footage/1944-11-16-operation-queen-reel.mp4: 4:13.3 to 4:18.8 1st Division infantry hurry past burning houses; 4:23.2 to 4:28.7 a file of riflemen strides past the camera; 4:41.0 to 4:45.5 a soldier walks toward the camera past a chapel, jeeps behind. Converted to square pixels. No shot of the noon clip (1:34 to 2:45, the rocket launchers) appears. Filmed four days after the event.",
+  "hook": "160 men went in. A day later, 60 or 70 were left."
+ },
+ "kit_b": {
+  "file": "kits/dispatch-062-b-kit.md",
+  "filmCaption": "Infantry of the 1st Infantry Division hurry through Hamich, Germany, past houses still burning, then file along the village street with full packs.\n\nSignal Corps cameraman Laurence shot it on 20 November 1944, four days after Operation Queen began, in the village the division's 16th Infantry had cleared house by house on the 18th. The original film is silent.",
+  "youtubeTitle": "Through Burning Hamich: Real Film, 20 November 1944 #shorts",
+  "youtubeDescription": "Operation Queen opened on 16 November 1944 with the largest air attack of the war in direct support of ground troops, and at 12:45 the US First and Ninth Armies went in toward the Roer River. The bombs left most forward German positions intact. For the 1st Infantry Division's 16th Infantry, the way to the village of Hamich ran through woods under heavy shelling: by the next day rifle companies of its 1st Battalion that had started with about 160 men were down to 60 or 70. On 18 November the regiment cleared Hamich house by house, and Hill 232 above it fell after fifteen artillery battalions fired on it at once.\n\nThis is real U.S. Army Signal Corps film shot in Hamich on 20 November 1944, four days after the attack began: 1st Division infantry moving past burning houses and through the village. The original film is silent.\n\nFilm: U.S. Army Signal Corps, 111-ADC-2715, U.S. National Archives (catalog.archives.gov/id/16519), public domain.\nSources: Charles B. MacDonald, The Siegfried Line Campaign, Chapters XVII and XVIII, US Army Center of Military History; Operation Queen, Wikipedia.\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\n\n#Shorts #WW2 #OnThisDay #History",
+  "tiktokCaption": "Rifle companies went in with about 160 men. A day later, 60 or 70 were left. This is Hamich, Germany, four days on. #WW2 #OnThisDay #History #Hamich",
+  "thumbnailCheck": "Pass: first frame is infantry hurrying along a Hamich street past a burning house, smoke at right; at 2 seconds more men cross the frame. Different opening from the noon cut (rocket launchers firing). A darker frame on phones; the vertical crop centers on the street. Opening tagged \"motion\" from the frames at 0.3 and 2 seconds.",
+  "videoTime": "19:00 America/Denver",
+  "scheduled": "Buffer, all six channels, 7 p.m. 16 Nov",
+  "cut": "second cut, 7 p.m."
  }
 }

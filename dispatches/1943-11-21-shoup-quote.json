@@ -156,6 +156,37 @@
    "US",
    "Japan"
   ],
-  "lens": "us"
+  "lens": "us",
+  "video": {
+   "kind": "Living Card",
+   "opening": "motion",
+   "sound": "silent"
+  }
+ },
+ "video": {
+  "footage": "footage/1943-11-21-shoup-quote.mp4",
+  "focusX": 50,
+  "focusY": 50,
+  "sourceUrl": "https://catalog.archives.gov/id/79255",
+  "note": "U.S. Navy color film 428-NPC-12205, Landings on Tarawa (NARA 79255), 20 November 1943, silent. U.S. government work, public domain. Clip from footage/1943-11-20-tarawa-reel.mp4: 10:56.0 to 11:01.5 Marines crowd amtrac 67 as it drives through the water; 10:48.3 to 10:53.0 a boatload of men heading in; 10:38.0 to 10:43.0 smoke over Betio's shore seen from the water. Converted to square pixels. No shot of No. 074's noon clip (7:46 to 9:41) appears. Filmed the day before Shoup's report.",
+  "hook": "His amtrac was hit. He ran the fight waist deep."
+ },
+ "kit": {
+  "file": "kits/dispatch-079-kit.md",
+  "filmCaption": "Navy color film of D Day at Tarawa, 20 November 1943: Marines crowd amtrac number 67 as it churns through the water, a boatload of men heads in, and smoke rises over Betio's shore.\n\nShot the day before Col. David M. Shoup sent his famous report from the island. The original film is silent.",
+  "youtubeTitle": "Tarawa, the Day Before \"We Are Winning\": Navy Color Film #shorts",
+  "youtubeDescription": "Late on the afternoon of 21 November 1943, the second day on Betio, Col. David M. Shoup sent his situation report to the 2nd Marine Division. It ended: \"Casualties many; percentage dead not known; combat efficiency: We are winning.\" Shoup, 38 and the division's junior colonel, had been given command of the assault just before the battle. On D Day his amtrac was hit and a shell fragment wounded his leg, and he stood waist deep in water beside the long pier working his radio to get units ashore. By the second afternoon Marines had crossed the airfield to the south shore. Organized resistance ended on 23 November. Shoup received the Medal of Honor and in 1959 became the 22nd Commandant of the Marine Corps.\n\nThis is U.S. Navy color film from D Day, 20 November 1943, the day before Shoup's message: Marines in amtrac 67, men heading for the beach, and smoke over Betio. The original film is silent.\n\nFilm: U.S. Navy, 428-NPC-12205, Landings on Tarawa, U.S. National Archives (catalog.archives.gov/id/79255), public domain.\nSources: Col. Joseph H. Alexander, Across the Reef: The Marine Assault of Tarawa, Marine Corps Historical Center (1993); Capt. James R. Stockman, The Battle for Tarawa, HQ US Marine Corps (1947, HyperWar).\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\n\n#Shorts #WW2 #OnThisDay #History",
+  "tiktokCaption": "The day before Shoup radioed \"We are winning,\" this is how the Marines went in. Navy color film, Tarawa, 20 Nov 1943. #WW2 #OnThisDay #History #Tarawa",
+  "thumbnailCheck": "Pass: first frame is Marines packed in amtrac 67 driving through the water, spray at the bow; at 2 seconds it is still under way. Opening tagged \"motion\" from the frames at 0.3 and 2 seconds.",
+  "videoTime": "19:00 America/Denver",
+  "scheduled": "Buffer, all six channels, 7 p.m. 21 Nov"
+ },
+ "buffer": {
+  "x_film": "6af6a3cbba218f32637eeb19",
+  "instagram_reel": "6af6a3ce5ec1c9d5be612092",
+  "threads_film": "6af6a3d05ec1c9d5be6120eb",
+  "facebook_film": "6af6a3d3c1a0010a5bfef962",
+  "tiktok": "6af6a3d6fb90ccefdd1f85f6",
+  "youtube": "6af6a3dbc1a0010a5bfefa65"
  }
 }

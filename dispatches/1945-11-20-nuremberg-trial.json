@@ -162,6 +162,37 @@
    "Soviet Union",
    "Germany"
   ],
-  "lens": "us"
+  "lens": "us",
+  "video": {
+   "kind": "Living Card",
+   "opening": "a place or scene",
+   "sound": "silent"
+  }
+ },
+ "video": {
+  "footage": "footage/1945-11-20-nuremberg-trial.mp4",
+  "focusX": 50,
+  "focusY": 50,
+  "sourceUrl": "https://catalog.archives.gov/id/35957",
+  "note": "Nuremberg (1948, U.S. Army), 111-M-7596 reel 1 (NARA 35957), courtroom film from the opening days of the trial, November 1945. U.S. government work, public domain. Clip from footage/1945-11-20-nuremberg-reel.mp4 (pillarbox cropped): 4:11.7 to 4:16.4 the full courtroom from above; 4:34.4 to 4:36.7 an interpreter at her microphone; 4:44.5 to 4:48.8 the dock behind white helmeted MPs; 5:36.3 to 5:37.9 a defendant with his hand over his face; 5:47.1 to 5:49.4 a defendant listening on headphones. The soundtrack here is Jackson's 21 November speech, so the clip runs silent. No shot of No. 077's noon clip (3:39.6 to 3:54.0) appears. Not film of 20 November itself.",
+  "hook": "36 interpreters, four languages, all at once."
+ },
+ "kit": {
+  "file": "kits/dispatch-076-kit.md",
+  "filmCaption": "The courtroom in Nuremberg's Palace of Justice, filmed by the U.S. Army as the trial got under way in November 1945: the bench and tables from above, an interpreter at her microphone, the dock with military police in white helmets behind it, and defendants listening through headsets.\n\nThis is film of that room in the trial's first days, not of the opening session itself. The clip runs silent.",
+  "youtubeTitle": "Inside the Nuremberg Courtroom: Army Film, November 1945 #shorts",
+  "youtubeDescription": "On 20 November 1945 the International Military Tribunal opened its trial of the major Nazi war criminals in the Palace of Justice at Nuremberg, the old city of the Nazi Party rallies. Judges from the United States, Britain, France, and the Soviet Union sat on the bench, with Lord Justice Geoffrey Lawrence presiding. The whole first day went to reading the indictment aloud, prosecutors from all four nations taking turns. Every word was interpreted at once into English, Russian, French, and German by 36 interpreters working in three teams of 12, and listeners picked a language by switching channels on IBM headsets. The next morning came the pleas and the American opening; the verdicts came on 1 October 1946.\n\nThis is U.S. Army film of the Nuremberg courtroom from the trial's opening days, November 1945: the bench, an interpreter, the dock under guard, and defendants on headphones. It is not film of 20 November itself. The clip runs silent.\n\nFilm: Nuremberg (1948, U.S. Army), 111-M-7596 reel 1, U.S. National Archives (catalog.archives.gov/id/35957), public domain.\nSources: Nuremberg Trial Proceedings Vol. 2, First and Second Days, Avalon Project, Yale Law School; Translating and Interpreting the Nuremberg Trials, The National WWII Museum; Nuremberg Trials, 75 years of Simultaneous Interpretation, MultiLingual; Nuremberg trials, Wikipedia.\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\n\n#Shorts #WW2 #OnThisDay #History",
+  "tiktokCaption": "Every word went out in English, Russian, French and German at once, through IBM headsets. The Nuremberg courtroom, November 1945. #WW2 #OnThisDay #History #Nuremberg",
+  "thumbnailCheck": "Pass, but static: first frame is the full Nuremberg courtroom from above, bench and tables; at 2 seconds the same wide shot. No motion in the opening; the courtroom wide shot was research's chosen opening. Opening tagged \"a place or scene\" from the frames at 0.3 and 2 seconds.",
+  "videoTime": "19:00 America/Denver",
+  "scheduled": "Buffer, all six channels, 7 p.m. 20 Nov"
+ },
+ "buffer": {
+  "x_film": "6af6a37b5ec1c9d5be610e1f",
+  "instagram_reel": "6af6a37dfb90ccefdd1f7096",
+  "threads_film": "6af6a3805ec1c9d5be61109d",
+  "facebook_film": "6af6a382fb90ccefdd1f7176",
+  "tiktok": "6af6a385e1d8eff610a29711",
+  "youtube": "6af6a38b5ec1c9d5be611380"
  }
 }
