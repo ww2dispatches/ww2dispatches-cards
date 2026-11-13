@@ -73,7 +73,7 @@
   const signedIn = () => Boolean(ST && ST.player);
   const myPulls = () => signedIn() ? ST.pulls : (STARTER ? STARTER.pulls : []);
   function setCatalog(cards) { CAT = cards; BYID = new Map(cards.map(c => [c.id, c])); }
-  const refreshState = () => api('state').then(d => { ST = d; return d; });
+  const refreshState = () => api('state').then(d => { ST = d; if (d.admin) { try { localStorage.setItem('ww_me', '1'); } catch (e) {} } return d; });
   const refreshCatalog = () => api('catalog').then(d => setCatalog(d.cards));
 
   // ---------- helpers ----------

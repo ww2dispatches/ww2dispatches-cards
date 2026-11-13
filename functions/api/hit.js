@@ -14,6 +14,8 @@ export async function onRequestPost({ request, env }) {
   let b;
   try { b = (await request.json()) || {}; } catch { return fail(400, 'bad request'); }
   const day = gameDay(new Date()), rows = [];
+  // A browser that has signed in as admin (or opened the console) sends only this: one excluded page view.
+  if (b.admin) { await bump(env.DB, day, [['admin', 'views', 1]]); return json({ ok: true }); }
   if (b.p) {
     const p = PAGES.has(b.p) ? b.p : 'other';
     rows.push(['view', p, 1]);

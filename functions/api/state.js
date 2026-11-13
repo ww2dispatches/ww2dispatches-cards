@@ -2,6 +2,7 @@
 // Signed out: the envelope times only. Signed in: which are opened, waiting cards, priority
 // envelopes, streak, and the whole pull history for the dossier (card details from /api/catalog).
 import { json } from '../_lib/util.js';
+import { isAdmin } from '../_lib/admins.js';
 import { now } from '../_lib/catalog.js';
 import { signedInPlayer, publicPlayer } from '../_lib/player.js';
 import { dailyOpen, commemorativeOpen, nextSlot, upcomingSlots, flashUpcoming } from '../_lib/envelopes.js';
@@ -34,6 +35,7 @@ export async function onRequestGet({ request, env }) {
   return json({
     ...base,
     player: publicPlayer(player, t),
+    admin: isAdmin(env, player) || undefined, // the page marks this browser so its visits stay out of the counts
     envelopes: daily.map(mark),
     commemorative: commemorative.map(mark),
     priority: player.priority_waiting,

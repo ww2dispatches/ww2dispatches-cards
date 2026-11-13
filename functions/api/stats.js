@@ -7,7 +7,7 @@ import { json, fail } from '../_lib/util.js';
 import { now, findCard, filmReleased } from '../_lib/catalog.js';
 import { signedInPlayer } from '../_lib/player.js';
 import { playerFileNumber } from '../_lib/fileno.js';
-import { isAdmin } from '../_lib/admins.js';
+import { isAdmin, adminFiles } from '../_lib/admins.js';
 import { sameOrigin } from '../_lib/gate.js';
 import { FINISHES, LIVING_ONE_IN, FLASH_ONE_IN } from '../_lib/odds.js';
 import { isMorning, gameDay, addDays } from '../_lib/time.js';
@@ -52,25 +52,36 @@ export async function onRequestGet({ request, env }) {
   ]);
   let IC = [];
   try { IC = (await db.prepare('SELECT player_id, day, status, score, mistakes, intel, fin, claimed FROM intercept').all()).results; } catch (e) {}
-  const pulls = P.results, players = PL.results, openedAll = O.results, ilog = L.results;
+  // Admin accounts (ADMINS plus ADMIN_FILES, 12 Nov 2026) are left out of every count. The full lists
+  // stay for the one player view and for the health checks, since a broken row is a bug whoever owns it.
+  const admins = adminFiles(env);
+  const playersAll = PL.results, adminIds = new Set(playersAll.filter(p => admins.has(playerFileNumber(p.id))).map(p => p.id));
+  const keep = r => !adminIds.has(r.player_id);
+  const pullsAll = P.results, openedRaw = O.results;
+  const players = playersAll.filter(p => !adminIds.has(p.id)), pulls = pullsAll.filter(keep), ilog = L.results.filter(keep);
+  const ilogAll = L.results, ICAll = IC;
+  IC = IC.filter(keep);
+  const openedAll = openedRaw.filter(keep);
   const honors = openedAll.filter(o => o.slot_key.startsWith('h:'));
   const opened = openedAll.filter(o => !o.slot_key.startsWith('h:'));
+  const openedEvery = openedRaw.filter(o => !o.slot_key.startsWith('h:'));
   const byId = new Map(data.cards.map(c => [c.id, c]));
   const posted = data.cards.filter(c => findCard(c.id, t));
   const postedDispatch = posted.filter(c => c.kind === 'dispatch');
-  const fileOf = new Map(players.map(p => [p.id, playerFileNumber(p.id)]));
+  const fileOf = new Map(playersAll.map(p => [p.id, playerFileNumber(p.id)]));
 
   // per player indexes
   const pullsBy = new Map(), openedBy = new Map(), logBy = new Map(), icBy = new Map();
   const push = (m, k, v) => { if (!m.has(k)) m.set(k, []); m.get(k).push(v); };
-  pulls.forEach(p => push(pullsBy, p.player_id, p));
-  opened.forEach(o => push(openedBy, o.player_id, o));
-  ilog.forEach(r => push(logBy, r.player_id, r));
-  IC.forEach(r => push(icBy, r.player_id, r));
+  pullsAll.forEach(p => push(pullsBy, p.player_id, p));
+  openedEvery.forEach(o => push(openedBy, o.player_id, o));
+  ilogAll.forEach(r => push(logBy, r.player_id, r));
+  ICAll.forEach(r => push(icBy, r.player_id, r));
 
   // days each player played (Eastern game days with an envelope opened)
   const playDays = new Map();
-  for (const o of opened) if (ENV_KINDS.has(kindOf(o.slot_key))) { if (!playDays.has(o.player_id)) playDays.set(o.player_id, new Set()); playDays.get(o.player_id).add(gameDay(new Date(o.opened_at))); }
+  for (const o of openedEvery) if (ENV_KINDS.has(kindOf(o.slot_key))) { if (!playDays.has(o.player_id)) playDays.set(o.player_id, new Set()); playDays.get(o.player_id).add(gameDay(new Date(o.opened_at))); }
+  const playDaysF = new Map([...playDays].filter(([id]) => !adminIds.has(id)));
 
   // collections for pins: series, years, theaters, nations
   const colls = [];
@@ -101,7 +112,7 @@ export async function onRequestGet({ request, env }) {
   // ---------- one player ----------
   const want = new URL(request.url).searchParams.get('player');
   if (want) {
-    const pl = players.find(p => fileOf.get(p.id) === want.toUpperCase());
+    const pl = playersAll.find(p => fileOf.get(p.id) === want.toUpperCase());
     if (!pl) return fail(404, 'no such player');
     const mine = (pullsBy.get(pl.id) || []).slice().sort((a, b) => b.pulled_at.localeCompare(a.pulled_at));
     const envMap = new Map(); mine.forEach(p => push(envMap, p.slot_key, p));
@@ -149,32 +160,33 @@ export async function onRequestGet({ request, env }) {
 
   // ---------- health ----------
   const tsBy = new Map();
-  pulls.forEach(p => { if (p.finish === 'topsecret' && p.serial) push(tsBy, p.card_id + '|' + p.variant, p.serial); });
+  pullsAll.forEach(p => { if (p.finish === 'topsecret' && p.serial) push(tsBy, p.card_id + '|' + p.variant, p.serial); });
   const lastBy = new Map(S.results.map(r => [r.card_id + '|' + r.variant, r.last]));
   let serialGaps = 0, serialDupes = 0, serialPastCounter = 0;
   for (const [k, list] of tsBy) { const set = new Set(list), max = Math.max(...list); if (set.size < list.length) serialDupes++; if (set.size < max) serialGaps++; if (max > (lastBy.get(k) || 0)) serialPastCounter++; }
   const twoDaysAgo = new Date(t.getTime() - 2 * DAY).toISOString();
-  const openedSet = new Set(opened.map(o => o.player_id + '|' + o.slot_key)), pulledSet = new Set(groups.keys());
-  const summaries = players.map(summarize);
+  const groupsAll = new Map(); pullsAll.forEach(p => push(groupsAll, p.player_id + '|' + p.slot_key, p));
+  const openedSet = new Set(openedEvery.map(o => o.player_id + '|' + o.slot_key)), pulledSet = new Set(groupsAll.keys());
+  const summaries = players.map(summarize), summariesAll = playersAll.map(summarize);
   const health = {
-    unsignedPulls: pulls.filter(p => !p.signature).length,
-    stuckWaiting: pulls.filter(p => !p.turned && p.pulled_at < twoDaysAgo).length,
-    unknownCards: pulls.filter(p => !byId.has(p.card_id)).length,
-    cardsBeforePost: pulls.filter(p => byId.has(p.card_id) && !findCard(p.card_id, new Date(p.pulled_at))).length,
-    topSecretConverted: pulls.filter(p => p.finish === 'topsecret' && p.intel > 0).length,
+    unsignedPulls: pullsAll.filter(p => !p.signature).length,
+    stuckWaiting: pullsAll.filter(p => !p.turned && p.pulled_at < twoDaysAgo).length,
+    unknownCards: pullsAll.filter(p => !byId.has(p.card_id)).length,
+    cardsBeforePost: pullsAll.filter(p => byId.has(p.card_id) && !findCard(p.card_id, new Date(p.pulled_at))).length,
+    topSecretConverted: pullsAll.filter(p => p.finish === 'topsecret' && p.intel > 0).length,
     serialGaps, serialDupes, serialPastCounter,
-    intelMismatch: summaries.filter(s => !s.intelLogOk).map(s => s.file),
-    openedWithoutPulls: opened.filter(o => ENV_KINDS.has(kindOf(o.slot_key)) && !pulledSet.has(o.player_id + '|' + o.slot_key)).length,
+    intelMismatch: summariesAll.filter(s => !s.intelLogOk).map(s => s.file),
+    openedWithoutPulls: openedEvery.filter(o => ENV_KINDS.has(kindOf(o.slot_key)) && !pulledSet.has(o.player_id + '|' + o.slot_key)).length,
     pullsWithoutOpened: [...pulledSet].filter(k => ENV_KINDS.has(kindOf(k.slice(k.indexOf('|') + 1))) && !openedSet.has(k)).length,
   };
 
   // ---------- engagement ----------
-  const activeOn = d => [...playDays.values()].filter(s => s.has(d)).length;
+  const activeOn = d => [...playDaysF.values()].filter(s => s.has(d)).length;
   const days14 = []; for (let i = 13; i >= 0; i--) { const d = addDays(today, -i); days14.push({ day: d, players: activeOn(d), opens: opened.filter(o => ENV_KINDS.has(kindOf(o.slot_key)) && gameDay(new Date(o.opened_at)) === d).length, intelEarned: ilog.filter(r => r.delta > 0 && gameDay(new Date(r.at)) === d).reduce((s, r) => s + r.delta, 0), intelSpent: -ilog.filter(r => r.delta < 0 && gameDay(new Date(r.at)) === d).reduce((s, r) => s + r.delta, 0) }); }
-  const inLast = n => [...playDays.values()].filter(s => [...s].some(d => d > addDays(today, -n))).length;
+  const inLast = n => [...playDaysF.values()].filter(s => [...s].some(d => d > addDays(today, -n))).length;
   // retention: of players whose first play day is far enough back, how many played the next day, and on day 7 (days 6 to 8)
   let r1 = [0, 0], r7 = [0, 0];
-  for (const s of playDays.values()) {
+  for (const s of playDaysF.values()) {
     const first = [...s].sort()[0];
     if (first <= addDays(today, -1)) { r1[1]++; if (s.has(addDays(first, 1))) r1[0]++; }
     if (first <= addDays(today, -8)) { r7[1]++; if ([6, 7, 8].some(k => s.has(addDays(first, k)))) r7[0]++; }
@@ -200,7 +212,7 @@ export async function onRequestGet({ request, env }) {
   const streaks = {}; players.forEach(p => { const b = p.streak === 0 ? '0' : p.streak < 3 ? '1 to 2' : p.streak < 7 ? '3 to 6' : p.streak < 14 ? '7 to 13' : p.streak < 30 ? '14 to 29' : '30+'; streaks[b] = (streaks[b] || 0) + 1; });
 
   // ---------- new players: account to habit ----------
-  const funnel = { accounts: players.length, starterDone: players.filter(p => p.starter_done).length, firstDaily: players.filter(p => (openedBy.get(p.id) || []).some(o => o.slot_key.startsWith('d:'))).length, played3Days: [...playDays.values()].filter(s => s.size >= 3).length, played7Days: [...playDays.values()].filter(s => s.size >= 7).length };
+  const funnel = { accounts: players.length, starterDone: players.filter(p => p.starter_done).length, firstDaily: players.filter(p => (openedBy.get(p.id) || []).some(o => o.slot_key.startsWith('d:'))).length, played3Days: [...playDaysF.values()].filter(s => s.size >= 3).length, played7Days: [...playDaysF.values()].filter(s => s.size >= 7).length };
 
   // ---------- economy ----------
   const by = {}; ilog.forEach(r => { by[r.reason] = by[r.reason] || { n: 0, total: 0 }; by[r.reason].n++; by[r.reason].total += r.delta; });
@@ -230,8 +242,8 @@ export async function onRequestGet({ request, env }) {
   const joinDay = new Map(players.map(p => [p.id, gameDay(new Date(p.created_at))]));
   const signupsIn = (a, b) => [...joinDay.values()].filter(d => d >= a && d <= b).length;
   const opensIn = (a, b) => opened.filter(o => ENV_KINDS.has(kindOf(o.slot_key))).filter(o => { const d = gameDay(new Date(o.opened_at)); return d >= a && d <= b; }).length;
-  const activeIn = (a, b) => [...playDays.values()].filter(s => [...s].some(d => d >= a && d <= b)).length;
-  const playDaySum = (a, b) => [...playDays.values()].reduce((n, s) => n + [...s].filter(d => d >= a && d <= b).length, 0);
+  const activeIn = (a, b) => [...playDaysF.values()].filter(s => [...s].some(d => d >= a && d <= b)).length;
+  const playDaySum = (a, b) => [...playDaysF.values()].reduce((n, s) => n + [...s].filter(d => d >= a && d <= b).length, 0);
   const icIn = (a, b) => IC.filter(r => r.day >= a && r.day <= b).length;
   const period = (a, b) => ({
     visitors: sumT('visitors', a, b), views: sumT('view', a, b), newVisitors: sumT('new', a, b), declassVisitors: sumT('visitor', a, b, 'declass'),
@@ -271,6 +283,7 @@ export async function onRequestGet({ request, env }) {
 
   return json({
     at: t.toISOString(), today,
+    excluded: { adminAccounts: adminIds.size, adminFiles: [...adminIds].map(id => fileOf.get(id)), adminViewsWeek: sumT('admin', addDays(today, -6), today, 'views'), adminViewsAll: sumT('admin', '0000', today, 'views') },
     totals: { players: players.length, pulls: pulls.length, envelopes: envShape.daily.envelopes + envShape.priority.envelopes + envShape.commemorative.envelopes, posted: posted.length },
     health,
     engagement: { active1: activeOn(today), active7: inLast(7), active30: inLast(30), retentionDay1: r1, retentionDay7: r7, days14, dailyOpens, lastCall, medianOpenMinutes: Math.round(median(delays)), hoursET: hours, missedRate: offered ? 1 - taken / offered : null, offered, taken, streaks },

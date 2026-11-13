@@ -91,7 +91,7 @@ function healthList() {
 }
 function render() {
   const tabs = [['overview', 'Overview'], ['growth', 'Growth'], ['players', 'Players'], ['cards', 'Cards'], ['engagement', 'Engagement'], ['economy', 'Economy'], ['intercept', 'Intercept'], ['catalog', 'Catalog']];
-  $('st').innerHTML = `<h1>Declass console</h1><p class="sub note">As of ${when(D.at)} · all players, all time unless noted</p><div class="tabs">${tabs.map(([k, l]) => `<button data-t="${k}" class="${tab === k ? 'on' : ''}">${l}</button>`).join('')}</div><div id="body"></div>`;
+  $('st').innerHTML = `<h1>Declass console</h1><p class="sub note">As of ${when(D.at)} · all players except admin, all time unless noted · excluded as admin this week: ${D.excluded.adminViewsWeek} page views</p><div class="tabs">${tabs.map(([k, l]) => `<button data-t="${k}" class="${tab === k ? 'on' : ''}">${l}</button>`).join('')}</div><div id="body"></div>`;
   document.querySelectorAll('.tabs button').forEach(b => b.onclick = () => { tab = b.dataset.t; try { history.replaceState(null, '', '#' + tab); } catch (e) {} render(); });
   ({ overview, growth, players, cards, engagement, economy, intercept, catalog }[tab] || overview)();
 }
@@ -128,6 +128,7 @@ function report() {
   const bad = healthList().filter(r => r[1]).map(r => `${r[0]}: ${r[1]}${r[2] ? ' (' + r[2] + ')' : ''}`);
   return [
     `DECLASS WEEKLY REPORT, ${D.today}`,
+    `Excluded as admin: ${D.excluded.adminViewsWeek} page views from admin browsers this week (${D.excluded.adminViewsAll} since tracking began), and ${D.excluded.adminAccounts} admin account${D.excluded.adminAccounts === 1 ? '' : 's'} (${D.excluded.adminFiles.join(', ') || 'none signed in yet'}) left out of player, envelope, economy and collecting numbers.`,
     ``,
     `GROWTH (7 days vs the 7 before): visitors ${D.growth.week.visitors} (was ${D.growth.lastWeek.visitors}), page views ${D.growth.week.views} (${D.growth.lastWeek.views}), first time visitors ${D.growth.week.newVisitors} (${D.growth.lastWeek.newVisitors}), Declass visitors ${D.growth.week.declassVisitors} (${D.growth.lastWeek.declassVisitors}), new players ${D.growth.week.signups} (${D.growth.lastWeek.signups}), guest starter packs ${D.growth.week.guestStarters}, engagements ${D.growth.week.engagements} (${D.growth.lastWeek.engagements}). Visit counts since ${D.growth.since || 'n/a'}.`,
     `Sources this week: ${ranked(D.growth.sourcesWeek, SRC).map(r => r.k + ' ' + r.v).join(', ') || 'none yet'}. New players by source (all time): ${ranked(D.growth.signupSources, SRC).map(r => r.k + ' ' + r.v).join(', ') || 'none yet'}. Devices (30 days): ${ranked(D.growth.devices, {}).map(r => r.k + ' ' + r.v).join(', ') || 'none yet'}.`,
