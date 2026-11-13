@@ -1191,6 +1191,13 @@ html.ztrial #stage2{cursor:zoom-in}
 .casebtn{margin-left:auto;color:#E6C77A;border-color:#D9B865;background:rgba(217,184,101,.1);max-width:100%;overflow:hidden;letter-spacing:.08em}
 .casebtn span{overflow:hidden;text-overflow:ellipsis}
 .casebtn svg{width:16px;height:14px;stroke-width:1.6}
+/* Home toolbar (13 Nov 2026): Music and Sound are icon only squares (the slash and dashed outline show off, the label
+   stays for screen readers), so the call sign fits on the same row. The landing keeps the words. */
+#sHome .sndbtn{width:34px;padding:0;justify-content:center;gap:0}
+#sHome .sndbtn .snm{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+#sHome .toolbar{flex-wrap:nowrap}#sHome .toolbar .tbtn{flex:0 0 auto}#sHome .toolbar .casebtn{flex:0 1 auto;min-width:0}
+#sHome .casebtn span{min-width:0;white-space:nowrap}
+@media (max-width:389px){#sHome .toolbar{gap:5px}#sHome .casebtn{letter-spacing:.03em;padding-left:7px;padding-right:7px;gap:4px}#sHome .howbtn{letter-spacing:.03em;padding-left:8px;padding-right:8px}}
 .dcase{max-width:480px;margin:0 auto}
 .dcbar{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:48px}
 .dcbar .back{padding:12px 0}
