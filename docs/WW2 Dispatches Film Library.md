@@ -157,7 +157,6 @@ Usable shots by calendar day across every film on hand. "Verify" means the film 
 * 13 to 16 Apr 1945, Groningen: PG Groningen clip, street damage 00:08 to 01:12, German prisoners 03:36 to 03:52.
 * 20 Apr 1939, Hitler's birthday parade: NS R2 05:05 to 05:40 (verify the event).
 * **9 Apr 1940, Denmark and Norway invaded (German film):** Divide and Conquer R1 05:30 to 05:50 (into Denmark), 06:25 to 07:05 (landings, warships in a fjord, a tank in Oslo); Oslo occupied R1 07:35 to 08:20.
-* 1 to 16 Apr 1945, the Netherlands liberated: Polygoon "Bevrijding Enschede en Hengelo" and "Bevrijding stad Groningen" (13 to 16 Apr) in Source Film\Polygoon, not indexed.
 * 25 Apr 1945, UN conference opens in San Francisco: San Francisco 1945 R1 04:37 to 04:56.
 * 12 to 14 Apr 1945, mourning Roosevelt (somber): San Francisco 1945 R1 03:30 to 04:16.
 * 5 Apr 1942, Colombo raid: Japanese film naId 2521264 00:07:33 to 00:10:35.
@@ -193,9 +192,8 @@ Usable shots by calendar day across every film on hand. "Verify" means the film 
 * **10 to 11 May 1940, Eben Emael and the Albert Canal (German film, staged after the battle; say so):** Divide and Conquer R4 03:35 to 05:15 (rubber boats under smoke, flamethrowers 04:35 to 04:45).
 * **12 to 14 May 1940, the Ardennes and Sedan (German film):** Panzer columns, Divide and Conquer R5 00:35 to 01:15; barrage across the Meuse R5 03:15 to 04:10; **the Meuse crossing R5 04:10 to 05:20**; Panzers over the pontoon bridge R5 05:20 to 05:40.
 * **14 May 1940, Rotterdam bombed (German film):** Divide and Conquer R4 00:25 to 02:15 (bombers overhead, the city burning). The film's death toll is wrong; use the fact sheet.
-* 15 May 1940, the Dutch surrender: Divide and Conquer R4 00:08 to 00:22 (German film); German troops enter Amsterdam, Polygoon "Intocht van Duitse gemotoriseerde troepen" (verify the day).
-* 22 May 1940, the Dutch battlefields after the fighting: Polygoon "Een tocht door de gevechtszone".
-* Early May 1945, the German army leaves the Netherlands: Polygoon "Afvoer van Duitse krijgsgevangenen"; 8 May 1945, Canadians in Amsterdam: Polygoon "Bevrijdingsbeelden Amsterdam".
+* 15 May 1940, the Dutch surrender: Divide and Conquer R4 00:08 to 00:22 (German film); German troops enter Amsterdam, PG Intocht 00:08 to 03:16 (verify the day).
+* 22 May 1940, the Dutch battlefields after the fighting: PG Een tocht 00:08 to 01:48 (blown IJssel bridges, Rhenen).
 * 12 to 13 May 1945, Marines at the edge of Naha, Okinawa (dated by camera slates): Okinawa reels R1 00:33 to 00:50, R1 06:41 to 07:22, R2 07:05 to 07:18.
 * 2 May 1945, Berlin garrison surrenders: Berlin 00:41:20 to 00:43:15.
 * 4 May 1945, Lueneburg Heath (not named): True Glory R9 00:05:15 to 00:05:36.
