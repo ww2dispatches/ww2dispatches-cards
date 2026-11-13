@@ -1142,11 +1142,36 @@
     if (/Android/i.test(ua) && /; wv\)/.test(ua)) return 'this app';
     return '';
   })();
-  function outLink() {
-    const u = new URL('/declass', location.origin);
+  // The link to the same page in the real browser. It carries the starter pack if there is one, where the
+  // visitor first came from, the tester key on a preview, and out=1 so the arrival can be counted.
+  function outLink(here) {
+    const u = here ? new URL(location.href) : new URL('/declass', location.origin);
     if (STARTER && STARTER.token && !signedIn()) u.searchParams.set('pack', STARTER.token);
     const src = lsGet('ww_src'); if (src && src !== 'direct') u.searchParams.set('ref', src);
+    if (testerKey) u.searchParams.set('key', testerKey);
+    u.searchParams.set('out', '1');
     return u.href;
+  }
+  // The automatic jump (13 Nov 2026): a new visitor arriving inside a social app's browser is sent to the
+  // phone's real browser right away, before opening anything, so the whole game and the sign in work.
+  // Tried once per visit. Android hands over to the default browser; recent iPhones open Safari. Where the
+  // app refuses, nothing happens and the visitor carries on here, with the way out box on the save screen.
+  function autoJump() {
+    try {
+      const u = new URL(location.href);
+      if (u.searchParams.get('out')) {
+        u.searchParams.delete('out'); history.replaceState(null, '', u.pathname + u.search + u.hash);
+        if (!IN_APP) hit('out_landed');
+      }
+    } catch (e) {}
+    if (!IN_APP) return;
+    hit('inapp_arrive');
+    let tried = false;
+    try { tried = sessionStorage.getItem('ww_out') === '1'; sessionStorage.setItem('ww_out', '1'); } catch (e) { tried = true; }
+    if (tried || STARTER) return;
+    hit('inapp_auto');
+    const link = openOutHref(outLink(true));
+    setTimeout(() => { try { location.href = link; } catch (e) {} }, 400);
   }
   function openOutHref(link) {
     const ua = navigator.userAgent || '';
@@ -2599,6 +2624,7 @@
   setInterval(() => { if ($('sHome').classList.contains('on')) refreshState().then(renderHome).catch(() => {}); }, 60000);
 
   show('sLoading');
+  autoJump();
   api('config').then(cfg => {
     CFG = cfg;
     if (!cfg.open) return show('sSoon');

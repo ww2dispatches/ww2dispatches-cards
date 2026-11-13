@@ -35,6 +35,8 @@
   if (!ss('ww_s')) {
     var q = new URLSearchParams(location.search), src = q.get('utm_source') || q.get('ref') || '';
     if (!src && document.referrer) { try { var r = new URL(document.referrer); if (r.host !== location.host) src = r.host; } catch (e) {} }
+    // A social app's built in browser often hides where the visitor came from, but it names itself (13 Nov 2026).
+    if (!src) { var ua = navigator.userAgent || ''; src = /Barcelona/i.test(ua) ? 'threads' : /Instagram/i.test(ua) ? 'instagram' : /FBAN|FBAV|FB_IAB|FBIOS/i.test(ua) ? 'facebook' : /musical_ly|BytedanceWebview|TikTok/i.test(ua) ? 'tiktok' : /Twitter/i.test(ua) ? 'x' : ''; }
     body.s = src;
     ss('ww_s', '1');
     if (!ls('ww_src')) ls('ww_src', src || 'direct'); // first ever source, sent along if this browser later makes a Declass account
