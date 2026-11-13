@@ -1270,3 +1270,14 @@ html.ztrial #stage2{cursor:zoom-in}
 .dccall{padding-left:.06em}
 .dcchoose{padding-left:calc(16px + .06em)}
 .dccol p{padding-left:calc(10px + .14em)}
+
+/* Social app browsers (13 Nov 2026): the way out to a real browser, in place of the Google button */
+.gslot.outslot{display:block;min-height:0}
+.outbox{border:2px dashed var(--red);padding:14px 16px;text-align:center;max-width:340px;margin:0 auto}
+.outbox b{display:block;font-family:var(--display);font-size:18px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--red)}
+.outbox span{display:block;font-family:var(--type);font-size:13px;line-height:1.45;margin:6px 0 12px}
+.outbox .btn{display:inline-block;text-decoration:none}
+.outbox .linkbtn{display:block;margin:10px auto 0}
+.outbox .outhow{font-size:11px;opacity:.75;margin:10px 0 0}
+.signbar .outbox{border:0;padding:6px 0 0}
+.signbar .outbox b{display:none}

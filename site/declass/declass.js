@@ -110,6 +110,7 @@
   const SCREEN_HIT = { sFile: 'dossier', sSets: 'sets', sIntercept: 'intercept', sSave: 'save_screen', sCase: 'case_open' };
   function show(id) {
     if (SCREEN_HIT[id]) hit(SCREEN_HIT[id]);
+    if (id === 'sSave' && IN_APP) hit('save_inapp');
     document.querySelectorAll('.screen').forEach(s => s.classList.toggle('on', s.id === id));
     document.body.classList.toggle('night', id === 'sIntercept'); // Intercept sits on the dark Night Dispatch desk
     window.scrollTo(0, 0);
@@ -1126,6 +1127,67 @@
   }
   $('skipSave').onclick = () => { hit('save_skip'); renderHome(); show('sHome'); if (seen('guest')) toast('Your starter pack is saved in this browser for now.'); };
 
+  // ---------- social app browsers (13 Nov 2026) ----------
+  // Links tapped in Threads, Instagram, Facebook, TikTok, and X open in the app's own built in browser, and
+  // Google refuses to sign anyone in there. So in those browsers the Google button gives way to a short
+  // way out: open this page in the phone's real browser, with the starter pack carried along in the link.
+  const IN_APP = (() => {
+    const ua = navigator.userAgent || '';
+    if (/Barcelona/i.test(ua)) return 'Threads';
+    if (/Instagram/i.test(ua)) return 'Instagram';
+    if (/FBAN|FBAV|FB_IAB|FBIOS/i.test(ua)) return 'Facebook';
+    if (/musical_ly|BytedanceWebview|TikTok/i.test(ua)) return 'TikTok';
+    if (/Twitter/i.test(ua)) return 'X';
+    if (/LinkedInApp|Snapchat|Pinterest|Line\//i.test(ua)) return 'this app';
+    if (/Android/i.test(ua) && /; wv\)/.test(ua)) return 'this app';
+    return '';
+  })();
+  function outLink() {
+    const u = new URL('/declass', location.origin);
+    if (STARTER && STARTER.token && !signedIn()) u.searchParams.set('pack', STARTER.token);
+    const src = lsGet('ww_src'); if (src && src !== 'direct') u.searchParams.set('ref', src);
+    return u.href;
+  }
+  function openOutHref(link) {
+    const ua = navigator.userAgent || '';
+    if (/Android/i.test(ua)) return 'intent://' + link.replace(/^https?:\/\//, '') + '#Intent;scheme=https;S.browser_fallback_url=' + encodeURIComponent(link) + ';end';
+    if (/iPhone|iPad|iPod/i.test(ua)) return 'x-safari-' + link;
+    return link;
+  }
+  function renderOutBox(el) {
+    const has = STARTER && !signedIn();
+    el.classList.add('outslot');
+    el.innerHTML = '<div class="outbox"><b>One more step</b><span>' + IN_APP + "'s built in browser can't sign you in. Open Declass in your phone's own browser" + (has ? ' and your five cards come with you.' : ' to sign in.') + '</span>'
+      + '<a class="btn" data-out="open">Open in my browser</a><button class="linkbtn" type="button" data-out="copy">Or copy the link</button>'
+      + '<span class="outhow">If nothing opens, tap the menu (the three dots) at the top of this screen and choose Open in browser.</span></div>';
+    const a = el.querySelector('[data-out="open"]');
+    a.href = openOutHref(outLink());
+    a.onclick = () => { a.href = openOutHref(outLink()); hit('inapp_open'); };
+    el.querySelector('[data-out="copy"]').onclick = ev => {
+      const link = outLink(), b = ev.currentTarget;
+      const done = () => { hit('inapp_copy'); b.textContent = 'Link copied. Paste it in your browser.'; };
+      (navigator.clipboard ? navigator.clipboard.writeText(link) : Promise.reject()).then(done).catch(() => {
+        const ta = document.createElement('textarea'); ta.value = link; document.body.appendChild(ta); ta.select();
+        try { document.execCommand('copy'); done(); } catch (e) { b.textContent = link; }
+        ta.remove();
+      });
+    };
+  }
+  // A pack carried over from a social app's browser: read it back and go straight to Save your dossier.
+  function carriedPack() {
+    let token = '';
+    try {
+      const url = new URL(location.href); token = url.searchParams.get('pack') || '';
+      if (token) { url.searchParams.delete('pack'); history.replaceState(null, '', url.pathname + url.search + url.hash); }
+    } catch (e) {}
+    if (!token || signedIn() || STARTER) return Promise.resolve(false);
+    return api('starter', { token }).then(d => {
+      STARTER = { token: d.token, pulls: d.pulls, revealed: d.pulls.map(() => true) };
+      saveStarterLocal(); hit('pack_carried');
+      return true;
+    }).catch(() => false);
+  }
+
   // ---------- Google sign in ----------
   let gisReady = false;
   function loadGoogle() {
@@ -1140,6 +1202,10 @@
     document.head.appendChild(s);
   }
   function renderGoogleButtons() {
+    if (IN_APP) {
+      ['gLand', 'gSave', 'gHome'].forEach(id => { const el = $(id); if (el && el.offsetParent) renderOutBox(el); });
+      return;
+    }
     if (!gisReady) return;
     ['gLand', 'gSave', 'gHome'].forEach(id => {
       const el = $(id);
@@ -2541,7 +2607,8 @@
     return fresh.then(() => Promise.all([api('catalog'), api('state')])).then(([c, s]) => {
       setCatalog(c.cards); ST = s; landFan();
       const file = new URLSearchParams(location.search).get('file');
-      if (file) checkFile(file); else { route(); if (signedIn()) maybePromote(); }
+      if (file) return checkFile(file);
+      return carriedPack().then(got => { if (got) showSave(); else { route(); if (signedIn()) maybePromote(); } });
     });
   }).catch(e => { console.error('declass boot', e); show('sSoon'); });
 })();
