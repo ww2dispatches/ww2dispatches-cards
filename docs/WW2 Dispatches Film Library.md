@@ -70,10 +70,10 @@ Caption every clip "German film, from the U.S. Army's <film> (<year>)". Picture 
 | Film | Covers | Copies | Times use | Index |
 |---|---|---|---|---|
 | **Why We Fight 3: Divide and Conquer** (1943, U.S. War Department, 6 reels) | Denmark and Norway, 9 Apr 1940; the paratroop drop on Holland and Rotterdam bombed, 10 to 14 May; the Albert Canal and Eben Emael with rubber boats and flamethrowers (staged); Panzers through the Ardennes and the Meuse crossing at Sedan, 12 to 14 May; Dunkirk (British); Compiègne, 22 Jun; Hitler in Paris, 23 Jun | NARA 111-OF-3 (naId 36069) and Source Film\Allied films with German footage | NARA reel | `claude/film-index/divide-and-conquer.md` |
-| **Why We Fight 2: The Nazis Strike** (1943, U.S. War Department; R2 to R5 indexed) | Rearmament and the Westwall being built, 1935 to 1938; the Anschluss, Munich and Prague, 1938 to 1939; the invasion of Poland, 1 Sep 1939: the Luftwaffe over Polish airfields, air combat from a bomber, river crossings; the Schleswig-Holstein firing on Westerplatte; the siege of Warsaw; German and Soviet officers meet | NARA 111-OF-2 (naId 36068) and Source Film\Allied films with German footage (R2 to R5) | NARA reel | `claude/film-index/nazis-strike.md` |
+| **Why We Fight 2: The Nazis Strike** (1943, U.S. War Department; all 5 reels indexed) | The 1934 Nuremberg rally and the 1939 Bund rally (R1); rearmament and the Westwall being built, 1935 to 1938; the Anschluss, Munich and Prague, 1938 to 1939; the invasion of Poland, 1 Sep 1939: the Luftwaffe over Polish airfields, air combat from a bomber, river crossings; the Schleswig-Holstein firing on Westerplatte; the siege of Warsaw; German and Soviet officers meet | NARA 111-OF-2 (naId 36068) and Source Film\Allied films with German footage (all 5 reels) | NARA reel | `claude/film-index/nazis-strike.md` |
 | **The World at War** (1942, U.S. Office of War Information, 67 min) | **The richest German combat source in the batch:** the Anschluss, Munich, the Sudetenland, the pact; Poland 1939 from the Luftwaffe's side; the Warsaw victory parade, 5 Oct 1939; the Belgian frontier broken, paratroops over Holland, Rotterdam, the Meuse, Brussels, Dunkirk, Paris and Compiègne, May to Jun 1940; the Channel battles. Also the London Blitz (British film) and Roosevelt's war message | NARA 208.145 (naId 38726) and Source Film\Allied films with German footage | file time | `claude/film-index/world-at-war-1942.md` |
 | **Your Job in Germany** (1945, Army Pictorial Service, Dr. Seuss script) | Little combat. Nuremberg rallies and the Hitler Youth; the 1945 non fraternization rule cards; the film itself is a Home Front and Statecraft story | NARA 111-OF-8 (naId 4529712) and Source Film\Allied films with German footage | file time | `claude/film-index/your-job-in-germany.md` |
-| **Why We Fight 1: Prelude to War, R1** (1942, U.S. War Department) | Little combat. Germans march past the Arc de Triomphe, 14 Jun 1940; short German inserts; Pearl Harbor; Hindenburg and the SA. Italian film inside it stays out | NARA 111-OF-1 (naId 36067) and Source Film\Allied films with German footage | NARA reel | `claude/film-index/prelude-to-war-r1.md` |
+| **Why We Fight 1: Prelude to War** (1942, U.S. War Department, 5 reels) | Little combat. Germans march past the Arc de Triomphe, 14 Jun 1940; Nazi Germany 1933 to 1938: the Propaganda Ministry, early camps, the 10 May 1933 book burning, Nazi schooling and the Hitler Youth, rallies; the Tripartite Pact signing, 27 Sep 1940. Italian and Japanese film inside it stays out | NARA 111-OF-1 (naId 36067) and Source Film\Allied films with German footage | NARA reel | `claude/film-index/prelude-to-war-r1.md` |
 
 **Dutch newsreel (Polygoon; the Commons copies are CC BY-SA 3.0 NL, credit "Polygoon-Profilti / Netherlands Institute for Sound and Vision")**
 | Film | Covers | Copies | Times use | Index |
@@ -93,9 +93,10 @@ Caption every clip "German film, from the U.S. Army's <film> (<year>)". Picture 
 | **Stalingrad** (1943, text by Vasily Grossman, read by Levitan) | 23 Aug 1942 bombing, street fighting, Volga crossings, Uranus, Kalach, Operation Ring, Paulus, the surrender | Source Film (240p for indexing, 480p for final cuts; same timeline) | Source Film | `claude/film-index/stalingrad-1943.md` |
 
 ## Calendar
-Usable shots by calendar day across every film on hand. "Verify" means the film doesn't state the day and it comes from the general record. Ranges marked "any date" can serve any day in that span. Full times and cautions are in each index. Short names: WaW (The World at War, 1942), NS (The Nazis Strike), PG (Polygoon clips), BoR (Battle of Russia), BoC (Battle of China), KYEJ (Know Your Enemy: Japan), LF (Leningrad Fights), MOS (Defeat near Moscow), STG (Stalingrad), RBU (Victory in Right Bank Ukraine), GS (German side pack).
+Usable shots by calendar day across every film on hand. "Verify" means the film doesn't state the day and it comes from the general record. Ranges marked "any date" can serve any day in that span. Full times and cautions are in each index. Short names: WaW (The World at War, 1942), NS (The Nazis Strike), Prelude to War (all 5 reels), PG (Polygoon clips), BoR (Battle of Russia), BoC (Battle of China), KYEJ (Know Your Enemy: Japan), LF (Leningrad Fights), MOS (Defeat near Moscow), STG (Stalingrad), RBU (Victory in Right Bank Ukraine), GS (German side pack).
 
 **January**
+* 30 Jan 1933, Hitler made chancellor: SA torchlight, Prelude to War R2 05:15 to 05:30; the cabinet, R1 09:15 to 09:20 (verify).
 * **22 Jan 1944, Anzio landings:** Anzio reel 00:10:30 to 00:10:50 (cruiser and landing craft), 00:09:56 to 00:10:08, 00:08:11 to 00:08:28.
 * 17 Jan 1944, First Battle of Cassino opens: Cassino reel 00:00:18 to 00:00:29 (the abbey, early 1944).
 * 16 to 18 Jan 1945, Houffalize link up; Bastogne returned to the Belgians, the "Battered Bastards" sign (filmed 18 Jan): Bulge Signal Corps reel 111-ADC-3167 00:06:55 to 00:06:59.
@@ -115,6 +116,7 @@ Usable shots by calendar day across every film on hand. "Verify" means the film 
 * 12 Jan, 28 Jan, 4 Feb 1945, Ledo Road opens through to China: Brought to Action R3 01:58 to 02:17; BoC R7 04:06 to 04:22.
 
 **February**
+* 20 Feb 1939, the German American Bund rally at Madison Square Garden: NS R1 09:50 to 10:15 (American newsreel, check the source first).
 * 4 to 11 Feb 1945, Yalta: the seated Big Three, 111-ADC-9701 00:04:03 to 00:04:18 and 00:03:01 to 00:03:17; Roosevelt close up 111-ADC-9700 00:00:26 (Paramount newsreel camera, rights caution; see the index).
 * 15 to 18 Feb 1944, Cassino (the abbey before and the town assaults, not the bombing itself): Cassino reel 00:00:43 to 00:00:52, 00:06:24 to 00:06:42.
 * 3 Feb 1945, boy soldiers taken prisoner at Roetgen (Axis lens, Home Front angle): German prisoners 1945, 111-ADC-3281 04:14 to 04:21 (a very young prisoner staring into the lens), 03:34 to 03:50.
@@ -133,6 +135,8 @@ Usable shots by calendar day across every film on hand. "Verify" means the film 
 * 26 Feb 1943, Wilhelmshaven (composite; verify): Memphis Belle 00:18:30 to 00:23:40.
 
 **March**
+* 13 Mar 1933, Goebbels' Propaganda Ministry founded: Prelude to War R2 03:40 to 04:05.
+* 22 to 23 Mar 1933, Dachau opens (somber) and the Enabling Act: Prelude to War R2 04:10 to 04:35; the Reichstag, R2 03:15 to 03:35 (not that day's film; say so).
 * 16 Mar 1935, Hitler announces conscription: NS R2 01:45 to 02:05 (German film).
 * 12 Mar 1938, the Anschluss: WaW 17:20 to 17:50; NS R3 00:40 to 00:50 (German film).
 * 15 Mar 1939, Germany occupies Prague: NS R3 07:15 to 07:20 (German film; cut the "March 14th" title).
@@ -153,6 +157,7 @@ Usable shots by calendar day across every film on hand. "Verify" means the film 
 * 26 Mar 1945, Iwo Jima secured: Iwo Jima reel 00:01:47 to 00:02:02.
 
 **April**
+* 24 Apr 1934, the People's Court created: Prelude to War R2 04:05.
 * 3 Apr 1945, Hengelo liberated (Enschede 1 Apr): PG Enschede clip, British armor 01:20 to 04:24, German prisoners 04:28 to 05:00.
 * 13 to 16 Apr 1945, Groningen: PG Groningen clip, street damage 00:08 to 01:12, German prisoners 03:36 to 03:52.
 * 20 Apr 1939, Hitler's birthday parade: NS R2 05:05 to 05:40 (verify the event).
@@ -182,6 +187,7 @@ Usable shots by calendar day across every film on hand. "Verify" means the film 
 * 30 Apr 1945, Reichstag stormed (real shelling only; the flag scenes are restaged): Berlin 00:39:51 to 00:40:24.
 
 **May**
+* **10 May 1933, the Nazi book burnings:** Prelude to War R4 01:00 to 01:15 (the Berlin bonfire, "Im Westen nichts Neues" in the flames).
 * 10 May 1940, Belgium invaded, paratroops over Holland: WaW 32:50 to 35:30 (German film).
 * 14 May 1940, Rotterdam: WaW 36:40 to 37:10 (German film).
 * 15 May 1940, Germans enter Amsterdam: PG Intocht 00:08 to 03:16 (verify the day).
@@ -267,6 +273,7 @@ Usable shots by calendar day across every film on hand. "Verify" means the film 
 * Partisans, any date from Jul 1941 (likely posed): BoR Part 1 00:32:56 to 00:34:05.
 
 **August**
+* 2 Aug 1934, Hindenburg dies: Prelude to War R1 09:00 to 09:10.
 * 23 Aug 1939, the Nazi Soviet pact: WaW 22:10 to 22:50 (German film).
 * 23 Aug 1939, the Nazi Soviet pact (Statecraft): The Nazis Strike R4 00:10 to 01:05.
 * 30 Aug 1940, German bombers take off (German film): Battle of Britain R3 01:42 to 02:14 (cut the title).
@@ -290,6 +297,9 @@ Usable shots by calendar day across every film on hand. "Verify" means the film 
 * Aug to Nov 1937, Shanghai refugees: BoC R3 04:10 to 05:16.
 
 **September**
+* Sep 1934, the Nuremberg rally (from Triumph of the Will): NS R1 02:05 to 02:35, 03:05 to 03:30; any rally, Prelude to War R3 02:30 to 03:40.
+* 25 to 29 Sep 1937, Mussolini visits Germany: Prelude to War R4 04:15 (verify the shot).
+* **27 Sep 1940, the Tripartite Pact signed in Berlin:** Prelude to War R4 05:45 to 05:55 (Ribbentrop, Ciano, Kurusu).
 * 1 Sep 1939, Poland invaded: WaW 24:00 to 26:10, Luftwaffe crews and He 111s (German film).
 * 25 to 27 Sep 1939, Warsaw: WaW 28:20 to 29:10, the burning city from a German aircraft.
 * 29 to 30 Sep 1938, Munich: WaW 19:00 to 19:50; NS R3 05:20 to 05:30 (German film).
@@ -314,6 +324,7 @@ Usable shots by calendar day across every film on hand. "Verify" means the film 
 * Sep to Nov 1942, Stalingrad street and factory fighting: STG 00:27:48 to 00:29:30, 00:31:04 to 00:32:05; BoR Part 2 00:33:30 to 00:34:45, 00:35:35 to 00:36:37. Pavlov's House and Mamayev Kurgan are on no film we have.
 
 **October**
+* Oct 1936, Ribbentrop arrives in London as ambassador: NS R1 08:50 to 08:55 (verify).
 * 1 to 10 Oct 1938, the Sudetenland taken: WaW 20:20 to 21:10 (German film).
 * 5 Oct 1939, Hitler's victory parade in Warsaw: WaW 30:10 to 30:40 (German film).
 * 5 to 6 Oct 1943, the Navy raid on Wake (likely; verify): Wake reel 00:02:10 to 00:02:34.
@@ -374,6 +385,7 @@ Usable shots by calendar day across every film on hand. "Verify" means the film 
 * 28 Nov to 1 Dec 1943, Tehran: True Glory R2 00:03:27 to 00:03:39.
 
 **December**
+* 1 Dec 1936, the Hitler Youth Law: Prelude to War R3 01:00 to 01:10, 02:05 to 02:10; the Nazi classroom, R3 00:10 to 00:45.
 * 8 Dec 1941, Roosevelt asks Congress for war: WaW 02:56 to 05:30 (U.S. film, sound).
 * **7 Dec 1941, Pearl Harbor, aftermath** (with the Japanese launch film): Pearl Harbor damage 00:03:33 to 00:03:47 (Arizona, not named by NARA), 00:03:50 to 00:04:10, 00:01:26 to 00:01:40. Nine War Gods portraits 00:00:28 to 00:01:13 (captured Japanese film).
 * 8 to 25 Dec 1941, Hong Kong attacked, landed on, surrenders (Japanese film): Nine War Gods 00:04:04 to 00:07:13.
@@ -451,7 +463,7 @@ Each index lists exact times. The rules in short:
 
 **Leads not yet indexed**
 * **German combat footage inside Allied films** (opened 13 Nov 2026): `claude/film-index/allied-films-german-footage.md`. Divide and Conquer, The Nazis Strike (R2 to R5), The World at War, Your Job in Germany and Prelude to War R1 are indexed (see On hand). Next candidates in that doc: The Nazi Plan and Universal Newsreel 1939 to 1941.
-* **The 13 Nov 2026 batch is fully indexed** (all NARA reels and the 7 Polygoon clips). Still open: Prelude to War R2 to R5 (NARA 111-OF-1, Italy and Japan heavy, low value for German film) and The Nazis Strike R1 (rallies, not saved).
+* **The 13 Nov 2026 batch is fully indexed**, including Prelude to War R2 to R5 and The Nazis Strike R1 (added that afternoon). Every Why We Fight reel with German film is now indexed except War Comes to America (below).
 * **More from the 13 Nov sweep** (same doc): Allied camera reels to view (Namsos 1940, 428-NPC-16337; Aircraft Recognition training films, 111-TF-1-3684 on the Ju 88; three Universal outtakes; War Pictorial News 210; A Defeated People, 111-OF-28). The doc also lists Allied made films that reuse German footage (Universal Newsreel 1939 to 1941, Why We Fight 2 and 3, Your Job in Germany, The Nazi Plan) and raw captured German reels at NARA. Those stay out under the 1 Nov decision unless Brian changes it.
 * **German military round two:** `claude/film-index/german-military-allied-film-leads.md` lists 20 more Signal Corps and Navy reels found on 6 Nov 2026 (a knocked out Tiger at Marticina, Kurtscheid prisoners, Varsity, the Caserta surrender, the Elbe meeting, Eschweiler, the V-1 battery, the Ludendorff collapse, Ramcke's surrender, Prinz Eugen at Bikini, Nuremberg rushes).
 * **The Cologne cathedral tank duel** (Jim Bates, 6 Mar 1945): checked and not in 111-ADC-1955, 3508, 9703, 9704 or 3535. Try 111-ADC-3530 (naId 17333) next.
@@ -462,7 +474,7 @@ Each index lists exact times. The rules in short:
 * **Victory Parade in color:** the 1945 release was shot in color; look for a PD-Russia-1996 color copy on Commons to replace the poor one.
 * **A clean Sevastopol copy** (without the IHF additions).
 * **Japanese, digitized at NARA:** 78848 (the "Nine War Gods", midget submarine crews of 7 Dec; index before 7 Dec), 75463 (Corregidor, Wainwright with his captors), 78849 (Celebes paratroop drop, 11 Jan 1942), 78842 (a kamikaze unit sortie), 78719 (captured U.S. airmen).
-* **Why We Fight, the rest:** War Comes to America (36073); Fury in the Pacific (111-ADC-9735 and 9736, naIds 23500 and 23501). Divide and Conquer and The Nazis Strike were indexed on 13 Nov 2026; Prelude to War is in the queue above.
+* **Why We Fight, the rest:** War Comes to America (36073); Fury in the Pacific (111-ADC-9735 and 9736, naIds 23500 and 23501). Divide and Conquer, The Nazis Strike and Prelude to War were indexed on 13 Nov 2026.
 * **Here Is Germany** (1945, NARA 111-OF-11, naId 36077): mostly captured German newsreel; low priority, only for its Allied shots.
 * **Universal Newsreel** (NARA UN-UN) is free to use (deeded to the U.S. in 1974), but the 1978 vault fire destroyed most of 1941 to 1945. Surviving stories worth checking: Mussolini's death, the Nuremberg verdicts.
 * **Commons, British PD-UKGov shorts:** Christmas Under Fire (1941), Newspaper Train (1942), The True Story of Lili Marlene (1944), the Tirpitz attack of 15 Sep 1944; New Zealand's Return from Crete (1941, PD-NZ).
@@ -487,6 +499,7 @@ When research or a Project chat finds a film worth keeping (one that covers seve
 5. Add the film to "On hand" and its dates to the Calendar here, and log it below.
 
 ## Changelog
+* 13 Nov 2026 (afternoon): Indexed the reels skipped earlier: Prelude to War R2 to R5 and The Nazis Strike R1, and saved all five to Source Film. Added the 1933 to 1940 Germany dates (Propaganda Ministry, Dachau, the book burnings, the Hitler Youth Law, the Tripartite Pact, the Bund rally) to the Calendar.
 * 13 Nov 2026 (late): Indexed the rest of the batch: The Nazis Strike R2 and R3, The World at War (1942), Your Job in Germany, Prelude to War R1 and the 7 Polygoon clips (one index). Added On hand rows and Calendar entries for each.
 * 13 Nov 2026 (evening): Indexed Divide and Conquer (6 reels) and The Nazis Strike (R4, R5) for German combat film; added the German stretches of The Battle of Britain, Desert Victory, The True Glory, The Battle of Russia and Tunisian Victory to their indexes and the Calendar. Saved 13 NARA reels and 7 Polygoon clips to Source Film.
 * 13 Nov 2026 (later): Brian opened German film inside Allied government films and Universal Newsreel, with a caption rule. Raw captured German reels, Wochenschau copies and German film inside Soviet documentaries stay out. The Dutch Nazi party reels on Commons are ruled out. New doc `claude/film-index/allied-films-german-footage.md` lists the stretches already timed in five indexes and the reels to index next.
