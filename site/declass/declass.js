@@ -1187,7 +1187,18 @@
       + '<span class="outhow">If nothing opens, tap the menu (the three dots) at the top of this screen and choose Open in browser.</span></div>';
     const a = el.querySelector('[data-out="open"]');
     a.href = openOutHref(outLink());
-    a.onclick = () => { a.href = openOutHref(outLink()); hit('inapp_open'); };
+    // Some apps (Threads on iPhone, 13 Nov 2026) ignore the hand over. If this page is still showing a
+    // moment after the tap, the button gives way to the one route every app has: its own menu.
+    a.onclick = () => {
+      a.href = openOutHref(outLink()); hit('inapp_open');
+      setTimeout(() => {
+        if (document.visibilityState !== 'visible' || !a.isConnected) return;
+        hit('inapp_stuck');
+        const how = el.querySelector('.outhow');
+        a.outerHTML = '<span class="outmenu"><i aria-hidden="true">•••</i>Tap the three dots at the top right of this screen, then choose <b>Open in external browser</b>.</span>';
+        if (how) how.remove();
+      }, 1600);
+    };
     el.querySelector('[data-out="copy"]').onclick = ev => {
       const link = outLink(), b = ev.currentTarget;
       const done = () => { hit('inapp_copy'); b.textContent = 'Link copied. Paste it in your browser.'; };

@@ -1281,3 +1281,6 @@ html.ztrial #stage2{cursor:zoom-in}
 .outbox .outhow{font-size:11px;opacity:.75;margin:10px 0 0}
 .signbar .outbox{border:0;padding:6px 0 0}
 .signbar .outbox b{display:none}
+.outbox .outmenu{display:block;font-size:14px;line-height:1.5;margin:4px 0 6px;padding:12px 10px;border:1px solid var(--red)}
+.outbox .outmenu i{display:block;font-style:normal;font-size:22px;letter-spacing:.2em;color:var(--red);margin-bottom:4px}
+.outbox .outmenu b{display:inline;font-family:inherit;font-size:inherit;text-transform:none;letter-spacing:0;color:inherit;font-weight:700}

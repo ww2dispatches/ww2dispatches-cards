@@ -6,7 +6,7 @@ import { gameDay } from '../_lib/time.js';
 import { bump, sourceName, deviceOf, isBot } from '../_lib/tally.js';
 
 const PAGES = new Set(['home', 'declass', 'newsletter', 'issue', 'privacy', 'support', 'other']);
-const EVENTS = new Set(['card', 'zoom', 'file', 'share', 'shared', 'guest_starter', 'save_screen', 'dossier', 'sets', 'intercept', 'tour_done', 'tour_skip', 'save_skip', 'save_google', 'save_done', 'save_fail', 'signin_fail', 'case_open', 'case_edit', 'case_share', 'case_callsign', 'save_inapp', 'inapp_copy', 'inapp_open', 'pack_carried', 'inapp_arrive', 'inapp_auto', 'out_landed']);
+const EVENTS = new Set(['card', 'zoom', 'file', 'share', 'shared', 'guest_starter', 'save_screen', 'dossier', 'sets', 'intercept', 'tour_done', 'tour_skip', 'save_skip', 'save_google', 'save_done', 'save_fail', 'signin_fail', 'case_open', 'case_edit', 'case_share', 'case_callsign', 'save_inapp', 'inapp_copy', 'inapp_open', 'pack_carried', 'inapp_arrive', 'inapp_auto', 'out_landed', 'inapp_stuck']);
 
 export async function onRequestPost({ request, env }) {
   const ua = request.headers.get('user-agent') || '';
