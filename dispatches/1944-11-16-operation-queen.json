@@ -163,6 +163,37 @@
    "Britain",
    "Germany"
   ],
-  "lens": "us"
+  "lens": "us",
+  "video": {
+   "kind": "Living Card",
+   "opening": "combat or firing",
+   "sound": "silent"
+  }
+ },
+ "video": {
+  "footage": "footage/1944-11-16-operation-queen.mp4",
+  "focusX": 50,
+  "focusY": 50,
+  "sourceUrl": "https://catalog.archives.gov/id/16519",
+  "note": "U.S. Army Signal Corps film 111-ADC-2715 (NARA 16519), story LIB 662, T27 multiple rocket launchers of the 18th Field Artillery, VII Corps, at Mausbach, 16 November 1944, silent. U.S. government work, public domain (NARA's routine 'possibly copyright' flag on 111-ADC reels). Clip from the research copy footage/1944-11-16-operation-queen-reel.mp4: 2:40.3 to 2:45.0 the launchers fire, rockets streaking off in smoke; 1:34 to 1:37 men carry rockets past the launcher frames; 1:48 to 1:53 a crewman loads rockets into the tubes; 2:10.5 to 2:13.5 a crewman sights along the frame. Converted to square pixels. The Hamich stretch (3:00 on) is left for the 7 p.m. second cut.",
+  "hook": "694 guns fired for an hour before the attack."
+ },
+ "kit": {
+  "file": "kits/dispatch-062-kit.md",
+  "filmCaption": "Rocket launchers firing near Mausbach, Germany, on the first day of Operation Queen.\n\nReal U.S. Army Signal Corps film, 16 November 1944. Artillerymen carry 4.5 inch rockets to their launcher frames, load the tubes, and fire them off in a rush of smoke. On the First Army front, guns, mortars and a battalion of launchers like these fired for an hour before the infantry went in at 12:45.",
+  "youtubeTitle": "Rocket Launchers Open Operation Queen: Real Film, 16 November 1944 #shorts",
+  "youtubeDescription": "On 16 November 1944 the Allies launched Operation Queen, which the US Army's official history calls the largest air attack of the war in direct support of ground troops. About 1,200 Eighth Air Force heavy bombers dropped 4,120 tons of fragmentation bombs around Eschweiler, Weisweiler and Langerwehe, chosen to hit troops without cratering the roads, while RAF Bomber Command struck Duren, Julich and Heinsberg behind the front. Then the guns joined in: on the First Army front alone, 694 guns fired an hour long preparation, helped by tank guns, mortars and a battalion of 4.5 inch rocket launchers. At 12:45 the infantry of the US First and Ninth Armies attacked toward the Roer River. The bombing disappointed, with most forward German positions surviving, and the 1st Infantry Division's 16th Infantry had to fight through the woods toward Hamich under heavy shelling.\n\nThis is real U.S. Army Signal Corps film shot on 16 November 1944: rocket launcher crews of the 18th Field Artillery, VII Corps, near Mausbach, loading and firing 4.5 inch rockets. The original film is silent.\n\nFilm: U.S. Army Signal Corps, 111-ADC-2715, U.S. National Archives (catalog.archives.gov/id/16519), public domain.\nSources: The Siegfried Line Campaign (MacDonald, US Army CMH, 1963), Chapter XVII, New Plans to Drive to the Rhine; The Siegfried Line Campaign (MacDonald, US Army CMH, 1963), Chapter XVIII, VII Corps Makes the Main Effort; Operation Queen, Wikipedia.\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\n\n#Shorts #WW2 #OnThisDay #History",
+  "tiktokCaption": "694 guns fired for an hour before the attack. These are the rockets that joined them. Real film, Germany, 16 Nov 1944. #WW2 #OnThisDay #History #OperationQueen",
+  "thumbnailCheck": "Pass: first frame is the rocket launchers in a field as the first rockets streak off in smoke; at 2 seconds rockets are still leaving the frames through the smoke. Instagram and TikTok cover at 0.7 s, rockets in flight. Opening tagged \"combat or firing\" from the frames at 0.3 and 2 seconds.",
+  "videoTime": "12:00 America/Denver",
+  "scheduled": "Buffer, all six channels, noon 16 Nov"
+ },
+ "buffer": {
+  "x_film": "6af67fb5da25c4db3e9056e0",
+  "instagram_reel": "6af67fc0e1d8eff610995577",
+  "threads_film": "6af67fc3da25c4db3e905a05",
+  "facebook_film": "6af67fc5c1a0010a5bf53108",
+  "youtube": "6af67fd8c1a0010a5bf533c4",
+  "tiktok": "6af67fdaba218f3263756939"
  }
 }

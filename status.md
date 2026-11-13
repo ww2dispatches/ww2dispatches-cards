@@ -24,4 +24,3 @@ Finished noon videos not yet scheduled (aim for 3 to 5). One line each: file on 
 ## Open checks
 Small loose ends a run can settle when it has a moment.
 * No. 010 (Churchill): the British official photo was supplied by Brian; its catalogue number is not confirmed.
-* No. 053 (Tirpitz, Thu 12 Nov): Living Card cut, rendered, and scheduled on all six channels on 7 Nov 2026 in the Project. Close board task cut-living-card-053.
