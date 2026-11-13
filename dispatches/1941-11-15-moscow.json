@@ -170,6 +170,37 @@
    "Soviet Union",
    "Germany"
   ],
-  "lens": "soviet"
+  "lens": "soviet",
+  "video": {
+   "kind": "Living Card",
+   "opening": "motion",
+   "sound": "silent"
+  }
+ },
+ "video": {
+  "footage": "footage/1941-11-15-moscow.mp4",
+  "focusX": 50,
+  "focusY": 50,
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:1942_%D0%A0%D0%B0%D0%B7%D0%B3%D1%80%D0%BE%D0%BC_%D0%BD%D0%B5%D0%BC%D0%B5%D1%86%D0%BA%D0%B8%D1%85_%D0%B2%D0%BE%D0%B9%D1%81%D0%BA_%D0%BF%D0%BE%D0%B4_%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%BE%D0%B9.webm",
+  "note": "Defeat of the German Armies near Moscow (1942, Central Studio of Documentary Film; U.S. release Moscow Strikes Back), Soviet film, public domain (PD-Russia-1996). Cut on 12 Nov 2026 from the Wikimedia Commons original upload (640 x 480, same timeline as the Source Film copy; the title card ends at 12:31), fetched by range request for the stretch MOS 12:20 to 17:10 only (stored on R2 as footage/1941-11-15-moscow-reel.mp4 for the 7 p.m. second cut). Noon clip from the first half of the Film Library stretch 12:32 to 16:47: 13:04.4 to 13:09.4 a T-34 charges past through the snow; 12:45.0 to 12:46.9 a heavy gun fires from a camouflaged forest position; 13:11.9 to 13:15.5 ski troops in white move through the brush; 13:17.3 to 13:21.6 light tanks move up. A field gun shot (12:48) was left out because a crewman wears what may be a German helmet. The aircraft shots (13:42 to 14:40, including a plane marked with a swastika) are left out, as is anything that could be German newsreel. Narration and score run over the film, so the clip runs silent. Shots are not dated to 15 November.",
+  "hook": "Stalin asked Zhukov if Moscow could be held."
+ },
+ "kit": {
+  "file": "kits/dispatch-059-kit.md",
+  "filmCaption": "Soviet film of the defense of Moscow, autumn 1941: a T-34 charging through the snow, a heavy gun firing from a forest position, ski troops in white, and light tanks moving up.\n\nThe shots come from the 1942 Soviet documentary Defeat of the German Armies near Moscow, released in America as Moscow Strikes Back. They are not dated to 15 November, the day the German drive on the capital began again, but they show the army that stood in its way.",
+  "youtubeTitle": "The Red Army Defends Moscow: Soviet Film, 1941 #shorts",
+  "youtubeDescription": "Operation Typhoon, the German drive on Moscow, had stalled in the autumn mud. When frost hardened the ground in mid November 1941, Army Group Centre attacked again: on the morning of 15 November the German Ninth Army struck south of Kalinin, and the next day two panzer groups joined in north of the city. Moscow had been under a state of siege since 20 October, and hundreds of thousands of Muscovites, most of them women, dug antitank ditches around it. General Georgy Zhukov's Western Front received about 100,000 men, 300 tanks and 2,000 guns in the first half of November. On 19 November Stalin asked Zhukov whether Moscow could be held; Zhukov said it would be, but that he needed reserves. German tanks came within 20 miles of the Kremlin before the attack ran out of strength in deep cold, and in early December the Red Army struck back.\n\nThis is Soviet film of the defense of Moscow in the autumn and winter of 1941, from the documentary Defeat of the German Armies near Moscow (1942). The shots are not dated to 15 November. The film carries narration and music, so this clip runs silent.\n\nFilm: Defeat of the German Armies near Moscow (Central Studio of Documentary Film, 1942), via Wikimedia Commons, public domain.\nSources: Battle of Moscow, Wikipedia; Earl F. Ziemke and Magna E. Bauer, Moscow to Stalingrad: Decision in the East, Chapter III, US Army Center of Military History (HyperWar transcription); Jonathan Dimbleby, Moscow's citizens veered toward mass panic as the German army approached, HistoryNet; Decree of the State Defence Committee on the state of siege in Moscow, 19 October 1941 (Marxists Internet Archive).\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\n\n#Shorts #WW2 #OnThisDay #History",
+  "tiktokCaption": "Stalin asked Zhukov if Moscow could be held. This is the army that had to answer. Soviet film, autumn 1941. #WW2 #OnThisDay #History #Moscow",
+  "thumbnailCheck": "Pass: first frame is a whitewashed T-34 pushing through snowy trees; at 2 seconds it is charging toward the camera, throwing up snow. Opening tagged \"motion\" from the frames at 0.3 and 2 seconds.",
+  "videoTime": "12:00 America/Denver",
+  "scheduled": "Buffer, all six channels, noon 15 Nov"
+ },
+ "buffer": {
+  "x_film": "6af695ede1d8eff6109f6464",
+  "instagram_reel": "6af695f0c1a0010a5bfb9ed1",
+  "threads_film": "6af695f3ba218f32637b8e65",
+  "facebook_film": "6af695f5ba218f32637b8f33",
+  "youtube": "6af695fce1d8eff6109f6965",
+  "tiktok": "6af695ffba218f32637b92a7"
  }
 }
