@@ -1284,3 +1284,24 @@ html.ztrial #stage2{cursor:zoom-in}
 .outbox .outmenu{display:block;font-size:14px;line-height:1.5;margin:4px 0 6px;padding:12px 10px;border:1px solid var(--red)}
 .outbox .outmenu i{display:block;font-style:normal;font-size:22px;letter-spacing:.2em;color:var(--red);margin-bottom:4px}
 .outbox .outmenu b{display:inline;font-family:inherit;font-size:inherit;text-transform:none;letter-spacing:0;color:inherit;font-weight:700}
+
+/* Email and a six digit code (13 Nov 2026) */
+.gslot.mailslot{display:block;min-height:0}
+.mailbox{max-width:340px;margin:0 auto;text-align:left}
+.mailform label{display:block;font-family:var(--display);font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin:0 0 6px}
+.mailform input{display:block;width:100%;box-sizing:border-box;font-family:var(--type);font-size:18px;padding:13px 12px;border:2px solid var(--red);border-radius:4px;background:#fffaf0;color:#1a1612;margin:0 0 10px}
+.mailform input.codein{font-size:28px;letter-spacing:.22em;text-align:center;font-weight:700}
+.mailform input:focus{outline:3px solid rgba(216,100,79,.45);outline-offset:1px}
+.mailform .btn{display:block;width:100%;font-size:16px;padding:14px 16px}
+.mailform .btn:disabled{opacity:.6}
+.mailmsg{font-family:var(--type);font-size:14px;min-height:20px;margin:8px 0 0;text-align:center}
+.mailmsg.bad{color:var(--red);font-weight:700}
+.mailnote,.mailsent{font-family:var(--type);font-size:13px;line-height:1.45;margin:8px 0 0;text-align:center;opacity:.85}
+.mailsent{margin:0 0 10px;text-align:left;opacity:1;font-size:14px}
+.mailsent b{display:inline;font-family:inherit;font-size:inherit;letter-spacing:0;text-transform:none;color:inherit;word-break:break-all}
+.mailnote .linkbtn{display:inline;font-size:13px}
+.gor{display:flex;align-items:center;gap:10px;max-width:340px;margin:16px auto 10px;font-family:var(--type);font-size:13px;opacity:.7}
+.gor:before,.gor:after{content:"";flex:1;border-top:1px solid currentColor;opacity:.5}
+.ggl{display:flex;justify-content:center;min-height:44px}
+.signbar .mailform label{color:var(--red)}
+.mailform .btn{margin:0;box-sizing:border-box}

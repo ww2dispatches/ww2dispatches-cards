@@ -1118,6 +1118,11 @@
     startCards(w, 'server', holdings(ST.pulls.filter(p => p.turned)), { kind });
   }
 
+  // With email sign in on, the lines that said "no email" say what is true now (13 Nov 2026).
+  function saveWords() {
+    const d = document.querySelector('#sSave .landsmall'); if (d) d.innerHTML = '<b>Disclaimer:</b> we keep your cards and nothing else. No name, and we never keep your email. For players 13 and older.';
+  }
+
   // ---------- save your dossier ----------
   function showSave() {
     const H = holdingsNow();
@@ -1237,33 +1242,109 @@
     };
     document.head.appendChild(s);
   }
+  // What each sign in spot shows (13 Nov 2026):
+  //   email sign in on, real browser:        the email and code form, then "or", then the Google button
+  //   email sign in on, social app browser:  the email and code form only (Google refuses to work there)
+  //   email sign in off, real browser:       the Google button, as before
+  //   email sign in off, social app browser: the way out box
+  const mailOn = () => Boolean(CFG && CFG.emailSignIn);
   function renderGoogleButtons() {
-    if (IN_APP) {
-      ['gLand', 'gSave', 'gHome'].forEach(id => { const el = $(id); if (el && el.offsetParent) renderOutBox(el); });
-      return;
-    }
-    if (!gisReady) return;
     ['gLand', 'gSave', 'gHome'].forEach(id => {
       const el = $(id);
-      if (!el || el.dataset.done || !el.offsetParent) return;
+      if (!el || !el.offsetParent) return;
+      if (mailOn()) {
+        if (!el.dataset.mail) {
+          el.dataset.mail = '1'; el.classList.add('mailslot');
+          el.innerHTML = '<div class="mailbox"></div>' + (IN_APP ? '' : '<div class="gor"><span>or</span></div><div class="ggl"></div>');
+          renderMailBox(el.querySelector('.mailbox'), id);
+        }
+        const g = el.querySelector('.ggl');
+        if (g && gisReady && !g.dataset.done) { google.accounts.id.renderButton(g, { theme: 'outline', size: 'large', shape: 'rectangular', text: 'signin_with', width: 280 }); g.dataset.done = '1'; }
+        return;
+      }
+      if (IN_APP) return renderOutBox(el);
+      if (!gisReady || el.dataset.done) return;
       google.accounts.id.renderButton(el, { theme: 'outline', size: 'large', shape: 'rectangular', text: 'signin_with', width: 280 });
       el.dataset.done = '1';
     });
+  }
+  // After any sign in (Google or email): load the dossier and say what happened.
+  function afterSignIn(d, fromSave, hadStarter) {
+    if (d.starterSaved || (d.player && d.player.starterDone)) { STARTER = null; saveStarterLocal(); }
+    return refreshState().then(() => {
+      renderHome(); show('sHome');
+      if (fromSave) hit('save_done');
+      toast(d.starterSaved ? "Dossier saved. Today's files are ready." : hadStarter ? 'Welcome back. Your dossier is loaded.' : 'Signed in. Your dossier is loaded.');
+    });
+  }
+
+  // ---------- email and a six digit code (13 Nov 2026) ----------
+  // Step one asks for the address; step two asks for the code from the email. The step is remembered for
+  // this visit, so a player who leaves to read the email and finds the page reloaded lands back on the code.
+  const MAIL_STORE = 'declass_mail';
+  const mailState = () => { try { const m = JSON.parse(sessionStorage.getItem(MAIL_STORE) || 'null'); return m && m.until > Date.now() ? m : null; } catch (e) { return null; } };
+  const setMailState = m => { try { m ? sessionStorage.setItem(MAIL_STORE, JSON.stringify(m)) : sessionStorage.removeItem(MAIL_STORE); } catch (e) {} };
+  function renderMailBox(box, slot) {
+    const saving = () => Boolean(STARTER) && !signedIn();
+    const pending = mailState();
+    const say = (t, bad) => { const m = box.querySelector('.mailmsg'); if (m) { m.textContent = t || ''; m.classList.toggle('bad', Boolean(bad)); } };
+    const why = { 'bad email': "That doesn't look like an email address. Check it and try again.", slow: 'Too many codes sent to that address. Try again in an hour.', busy: "We've sent all the codes we can today. Please try again tomorrow, or sign in with Google.", 'mail failed': "We couldn't send the email. Check the address and try again.", 'wrong code': "That code didn't match. Check the email and try again.", 'code expired': 'That code has run out. Send a new one.', 'code locked': 'Too many wrong tries. Send a new code.', 'email sign in is off': 'Email sign in is not available right now.' };
+    if (!pending) {
+      box.innerHTML = '<form class="mailform" novalidate><label for="mail_' + slot + '">' + (saving() ? 'Save with your email' : 'Sign in with your email') + '</label>'
+        + '<input id="mail_' + slot + '" type="email" inputmode="email" autocomplete="email" autocapitalize="off" spellcheck="false" placeholder="you@example.com" required>'
+        + '<button class="btn" type="submit">Email me a code</button><p class="mailmsg" role="status"></p>'
+        + '<p class="mailnote">We send a 6 digit code to type in here. No password. We never keep your email.</p></form>';
+      const form = box.querySelector('form'), input = box.querySelector('input'), btn = box.querySelector('button');
+      form.onsubmit = ev => {
+        ev.preventDefault();
+        const email = input.value.trim();
+        if (!/^\S+@\S+\.\S+$/.test(email)) { say(why['bad email'], true); input.focus(); return; }
+        btn.disabled = true; say('Sending…'); hit('email_ask');
+        api('auth/email', { email }).then(d => {
+          hit('email_sent');
+          setMailState({ email, until: Date.now() + (d.minutes || 10) * 60000, test: d.test });
+          renderMailBox(box, slot);
+        }).catch(e => {
+          btn.disabled = false;
+          say(e.message === 'wait' ? 'We just sent one. Give it a minute, then try again.' : why[e.message] || 'Something went wrong. Try again in a moment.', true);
+        });
+      };
+      return;
+    }
+    box.innerHTML = '<form class="mailform" novalidate><label for="code_' + slot + '">Enter the 6 digit code</label>'
+      + '<p class="mailsent">We emailed it to <b>' + esc(pending.email) + '</b>. It can take a minute. Check your spam folder too.</p>'
+      + '<input id="code_' + slot + '" class="codein" type="text" inputmode="numeric" pattern="[0-9 ]*" autocomplete="one-time-code" maxlength="7" placeholder="000 000" required>'
+      + '<button class="btn" type="submit">' + (saving() ? 'Save my dossier' : 'Sign in') + '</button><p class="mailmsg" role="status"></p>'
+      + '<p class="mailnote"><button class="linkbtn" type="button" data-m="again">Send a new code</button> · <button class="linkbtn" type="button" data-m="other">Use a different email</button></p></form>';
+    const form = box.querySelector('form'), input = box.querySelector('input'), btn = box.querySelector('button[type=submit]');
+    if (pending.test) input.value = pending.test; // test copies only: the server hands the code back
+    form.onsubmit = ev => {
+      ev.preventDefault();
+      const code = input.value.replace(/\D/g, '');
+      if (code.length !== 6) { say('The code is 6 digits.', true); input.focus(); return; }
+      const hadStarter = Boolean(STARTER), fromSave = $('sSave').classList.contains('on');
+      btn.disabled = true; say('Checking…');
+      api('auth/email', { email: pending.email, code, src: lsGet('ww_src') || '', starter: STARTER ? STARTER.token : undefined, starterTurned: STARTER ? STARTER.revealed.every(Boolean) : undefined })
+        .then(d => { hit('email_done'); setMailState(null); document.querySelectorAll('.gslot').forEach(g => { delete g.dataset.mail; }); return afterSignIn(d, fromSave, hadStarter); })
+        .catch(e => {
+          btn.disabled = false; hit('email_wrong');
+          if (e.message === 'code expired' || e.message === 'code locked') { say(why[e.message], true); }
+          else { say(why[e.message] || 'Something went wrong. Try again in a moment.', true); input.select(); }
+        });
+    };
+    box.querySelector('[data-m="other"]').onclick = () => { setMailState(null); renderMailBox(box, slot); };
+    box.querySelector('[data-m="again"]').onclick = ev => {
+      const b = ev.currentTarget; b.disabled = true; say('Sending…');
+      api('auth/email', { email: pending.email }).then(d => { hit('email_sent'); setMailState({ email: pending.email, until: Date.now() + (d.minutes || 10) * 60000, test: d.test }); renderMailBox(box, slot); const m = box.querySelector('.mailmsg'); if (m) m.textContent = 'New code sent.'; })
+        .catch(e => { b.disabled = false; say(e.message === 'wait' ? 'We just sent one. Give it a minute, then try again.' : why[e.message] || 'Something went wrong. Try again in a moment.', true); });
+    };
   }
   function onCredential(res) {
     const hadStarter = Boolean(STARTER);
     const fromSave = $('sSave').classList.contains('on');
     if (fromSave) hit('save_google');
     api('auth/google', { src: lsGet('ww_src') || '', credential: res.credential, starter: STARTER ? STARTER.token : undefined, starterTurned: STARTER ? STARTER.revealed.every(Boolean) : undefined })
-      .then(d => {
-        if (d.starterSaved || (d.player && d.player.starterDone)) { STARTER = null; saveStarterLocal(); }
-        return refreshState().then(() => d);
-      })
-      .then(d => {
-        renderHome(); show('sHome');
-        if (fromSave) hit('save_done');
-        toast(d.starterSaved ? "Dossier saved. Today's files are ready." : hadStarter ? 'Welcome back. Your dossier is loaded.' : 'Signed in. Your dossier is loaded.');
-      })
+      .then(d => afterSignIn(d, fromSave, hadStarter))
       .catch(e => { hit(fromSave ? 'save_fail' : 'signin_fail'); toast('Sign in did not work (' + e.message + ').'); });
   }
 
@@ -2640,6 +2721,7 @@
     CFG = cfg;
     if (!cfg.open) return show('sSoon');
     loadGoogle();
+    if (CFG.emailSignIn) saveWords();
     const fresh = icpFresh ? api('intercept/reset', {}).then(() => toast('Code Room reset for today. Open it to start fresh.')).catch(() => toast('Code Room reset is for testers only.')) : Promise.resolve();
     return fresh.then(() => Promise.all([api('catalog'), api('state')])).then(([c, s]) => {
       setCatalog(c.cards); ST = s; landFan();
