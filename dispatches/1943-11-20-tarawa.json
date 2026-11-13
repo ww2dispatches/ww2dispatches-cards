@@ -173,7 +173,12 @@
    "US",
    "Japan"
   ],
-  "lens": "us"
+  "lens": "us",
+  "video": {
+   "kind": "Living Card",
+   "opening": "motion",
+   "sound": "silent"
+  }
  },
  "video": {
   "footage": "footage/1943-11-20-tarawa.mp4",
@@ -182,5 +187,23 @@
   "sourceUrl": "https://catalog.archives.gov/id/79255",
   "note": "U.S. Navy color film 428-NPC-12205, Landings on Tarawa (NARA 79255), the camera original behind With the Marines at Tarawa, 20 November 1943, silent. U.S. government work, public domain. Clip from the research copy footage/1943-11-20-tarawa-reel.mp4: 9:37.1 to 9:40.8 a wave of landing craft heads for the burning shore; 7:46.2 to 7:48.2 shell bursts along the beach; 7:52.6 to 7:58.0 smoke rolls over Betio; 9:16.7 to 9:20.1 fires and smoke along the shore. Converted to square pixels. 9:45 to 11:07 is left for No. 079's 7 p.m. video.",
   "hook": "Only 35 of 125 amtracs were left at the end."
+ },
+ "kit": {
+  "file": "kits/dispatch-074-kit.md",
+  "filmCaption": "U.S. Navy color film from the morning of 20 November 1943: a wave of landing craft heads for Betio while shells burst along the beach and smoke rolls over the island.\n\nThis is the Navy's own camera original, shot off Tarawa as the 2nd Marine Division went in. The film is silent.",
+  "youtubeTitle": "Tarawa in Color: Navy Film of the Landing, 20 November 1943 #shorts",
+  "youtubeDescription": "On the morning of 20 November 1943 the 2nd Marine Division under Maj. Gen. Julian C. Smith landed on Betio, the main island of Tarawa Atoll in the Gilbert Islands. Betio was about 2 miles long and nowhere more than about 10 feet above the sea, and the Japanese had turned it into a fortress. A neap tide left only about 3 feet of water over the reef, so Higgins boats grounded and their Marines had to wade 500 to 1,000 yards to shore under fire. The tracked amtracs could crawl over the reef; of 125 used at Betio, only 35 were left at the end. Organized resistance ended on 23 November. More than 1,000 Marines and Navy corpsmen were killed and more than 2,000 wounded, and 4,690 of the island's defenders died. The lessons shaped every Pacific landing that followed.\n\nThis is real U.S. Navy color film shot on 20 November 1943, the camera original behind With the Marines at Tarawa: the bombardment of Betio and a wave of landing craft heading in. The original film is silent.\n\nFilm: U.S. Navy, 428-NPC-12205, Landings on Tarawa, U.S. National Archives (catalog.archives.gov/id/79255), public domain.\nSources: Across the Reef: The Marine Assault of Tarawa, Col. Joseph H. Alexander, Marine Corps Historical Center, 1993 (Marines in World War II Commemorative Series); Across the Reef, full text (Project Gutenberg edition of the Marine Corps monograph); Photo Finish: The Battle of Tarawa, The National WWII Museum; Battle of Tarawa, Wikipedia; Landing Vehicle Tracked: Armored Ship to Shore Movement, The National WWII Museum.\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\n\n#Shorts #WW2 #OnThisDay #History",
+  "tiktokCaption": "Only 35 of 125 amtracs were left at the end. Navy color film of the landing at Tarawa, 20 Nov 1943. #WW2 #OnThisDay #History #Tarawa",
+  "thumbnailCheck": "Pass: first frame is a wave of landing craft heading for the burning shore of Betio under columns of smoke; at 2 seconds the boats are still moving in. Opening tagged \"motion\" from the frames at 0.3 and 2 seconds.",
+  "videoTime": "12:00 America/Denver",
+  "scheduled": "Buffer, all six channels, noon 20 Nov"
+ },
+ "buffer": {
+  "x_film": "6af6823ce1d8eff6109a0ef0",
+  "instagram_reel": "6af6823fc1a0010a5bf5fabd",
+  "threads_film": "6af68241fb90ccefdd16fb69",
+  "facebook_film": "6af68244fb90ccefdd16fca7",
+  "youtube": "6af6824b5ec1c9d5be57fdc7",
+  "tiktok": "6af6824dba218f32637604bc"
  }
 }
