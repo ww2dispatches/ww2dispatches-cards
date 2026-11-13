@@ -1293,7 +1293,8 @@
       box.innerHTML = '<form class="mailform" novalidate><label for="mail_' + slot + '">' + (saving() ? 'Save with your email' : 'Sign in with your email') + '</label>'
         + '<input id="mail_' + slot + '" type="email" inputmode="email" autocomplete="email" autocapitalize="off" spellcheck="false" placeholder="you@example.com" required>'
         + '<button class="btn" type="submit">Email me a code</button><p class="mailmsg" role="status"></p>'
-        + '<p class="mailnote">We send a 6 digit code to type in here. No password. We never keep your email. Use the same email each time to reach your cards.</p></form>';
+        // The save screen's disclaimer, right under this form, already says we never keep the email, so the note doesn't repeat it there.
+        + '<p class="mailnote">We send a 6 digit code to type in here. No password.' + (slot === 'gSave' ? '' : ' We never keep your email.') + ' Use the same email each time to reach your cards.</p></form>';
       const form = box.querySelector('form'), input = box.querySelector('input'), btn = box.querySelector('button');
       form.onsubmit = ev => {
         ev.preventDefault();
