@@ -245,5 +245,31 @@
   "videoTime": "19:00 America/Denver",
   "scheduled": "Buffer, all six channels, 7 p.m. 18 Nov",
   "cut": "second cut, 7 p.m."
- }
+ },
+ "declass_line": true,
+ "declass_variant": "E4",
+ "declass_variant_ig": "IT",
+ "body": "Time magazine noted that Metz had never once been taken by storm. Attila destroyed it in 451, but nobody was defending it then.\n\n18 November 1944. Troops of the US Third Army closed on the fortress city in Lorraine. Men of the 5th Infantry Division's 10th and 11th Infantry crossed the city limits from the south, while the 95th Infantry Division pressed in from the north and west. Overhead, P-47 Thunderbolts dive bombed the city.\n\nIt came at a price. Before dawn the Germans destroyed the bridges over the Moselle west of Metz, and one exploded beneath a patrol of the 378th Infantry. Eight men on it were killed.\n\nThe next morning the two divisions linked up inside the ring. The German field army had pulled back and left the garrison behind, and most of the Germans outside the forts put up only token resistance before surrendering. French resistance fighters helped the Americans.\n\nFighting in the city ended on 22 November, closing four years of German annexation. The outer forts were left to starve; the last held out until 13 December.",
+ "addons": [
+  "Today's Declass file is open, and this card is inside. Collect it free: ww2dispatches.com/declass #Declass"
+ ],
+ "hashtags": "#OnThisDay #WW2",
+ "threads": "Time magazine noted that Metz had never once been taken by storm. Attila destroyed it in 451, but nobody was defending it then.\n\n18 November 1944. Troops of the US Third Army crossed the city limits of the old fortress city. The next day two divisions linked up inside the ring, and Metz was free.\n\nToday's Declass file is open, and this card is inside. Collect it free: ww2dispatches.com/declass",
+ "focusX": 50,
+ "focusY": 50,
+ "zoom": 100,
+ "slides": [
+  {
+   "photo": "photos/1944-11-18-metz-3.jpg",
+   "caption": "Father Joseph Barthelemy, the \"White Father\" of Metz, in a rubble strewn street after the city fell.",
+   "credit": "USAAF photo, NARA 342-FH-3A18922, public domain.",
+   "alt": "Archival photo of a bearded priest in a long dark robe standing among heaps of rubble beside ruined buildings."
+  },
+  {
+   "photo": "photos/1944-11-18-metz-4.jpg",
+   "caption": "German defenders of Metz gathered in a courtyard before being marched to the rear, November 1944.",
+   "credit": "USAAF photo, NARA 342-FH-3A17755, public domain.",
+   "alt": "Archival photo of a crowd of German soldiers in greatcoats standing and sitting in a courtyard beside a truck."
+  }
+ ]
 }
