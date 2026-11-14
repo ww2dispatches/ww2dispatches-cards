@@ -141,10 +141,10 @@
  "kind": "living",
  "videoTime": "19:00",
  "film": {
-  "status": "needs brian",
-  "record": "Stalingrad (1943, Central Studio of Documentary Film, text by Vasily Grossman), Source Film copy (240p index, 480p for final cuts)",
+  "status": "secured",
+  "record": "Stalingrad (1943, Central Studio of Documentary Film, text by Vasily Grossman), 480p copy (the same file as Brian's Source Film copy and Wikimedia Commons' 480p transcode)",
   "url": "Source Film folder on Brian's computer (Film Library: claude/film-index/stalingrad-1943.md)",
-  "file": "footage/1942-11-19-t34.mp4 (cut in the Project from Source Film and committed to the videos repo inbox, the next sweep moves it to R2)",
+  "file": "footage/1942-11-19-t34.mp4",
   "sound": false,
   "shot_notes": "Film Library calendar: 19 Nov 1942, Operation Uranus, STG 00:41:46 to 00:44:48; T-34s with riders at 00:43:27, the barrage at 00:41:57. Cut about 15 seconds around 00:43:27 (T-34s carrying infantry into the attack), opening on the tanks moving. Narration and score run over it, so the clip runs silent. Leave out the staged link up embrace at 00:49:00.",
   "license": "Public domain (PD-Russia-1996: Soviet studio film made 1929 to 1946), per the Film Library",
@@ -165,7 +165,12 @@
    "Soviet Union",
    "Germany"
   ],
-  "lens": "soviet"
+  "lens": "soviet",
+  "video": {
+   "kind": "Living Card",
+   "opening": "motion",
+   "sound": "silent"
+  }
  },
  "question": true,
  "declass_line": false,
@@ -182,6 +187,31 @@
   "x": "6af7cee797efac0554d47255",
   "instagram": "6af7cede78196a0a973804f0",
   "threads": "6af7cee24b28296eb12ea82b",
-  "facebook": "6af7ceda81e1228421dca73e"
+  "facebook": "6af7ceda81e1228421dca73e",
+  "x_film": "6af8837eb9a106584c5470d4",
+  "instagram_reel": "6af8837fe5a113497a9150ce",
+  "threads_film": "6af8837f918fe79d2e8ad599",
+  "facebook_film": "6af88380e86a5789a6b7623b",
+  "youtube": "6af88380c5b364e062fe8dd0",
+  "tiktok": "6af88381e86a5789a6b762a2"
+ },
+ "video": {
+  "footage": "footage/1942-11-19-t34.mp4",
+  "focusX": 50,
+  "focusY": 40,
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%A1%D1%82%D0%B0%D0%BB%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4_-_The_City_That_Stopped_Hitler-_Heroic_Stalingrad_(1943)_%D1%84%D0%B8%D0%BB%D1%8C%D0%BC_%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C_%D0%BE%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD.webm",
+  "note": "Soviet film from Stalingrad (1943, Central Studio of Documentary Film). Cut from the 480p copy at 00:43:27.92 to 00:43:42.92: T-34s carrying infantry advance across the snowy steppe in the Uranus offensive, with a brief cut to soldiers in silhouette near the end, then tanks again. Film gate edges cropped (570 x 440). Narration and score run over it, so the clip runs silent. The staged link up embrace (00:49:00) is left out. Cut 14 Nov 2026 in a Project chat.",
+  "hook": "These tanks led the thrust that trapped an army.",
+  "sound": false
+ },
+ "kit": {
+  "file": "kits/dispatch-073-kit.md",
+  "filmCaption": "Soviet camera, November 1942. T-34s churn across the snowbound steppe with soldiers riding on their hulls.\n\nTanks like these led the breakthrough that left a German army cut off at Stalingrad. The footage comes from Stalingrad, a Soviet documentary released in 1943.",
+  "youtubeTitle": "T-34s Roll Into the Stalingrad Offensive: Soviet Film, 1942 #shorts",
+  "tiktokCaption": "These tanks led the thrust that trapped an army. Soviet film of T-34s at Stalingrad, Nov 1942. #WW2 #OnThisDay #History #T34",
+  "hook": "These tanks led the thrust that trapped an army.",
+  "schedule": "Thu 19 Nov 2026, 7:00 p.m. Mountain, all six channels",
+  "thumbnail": "Pass: opens on a line of T-34s moving across the snow, still moving at 2 seconds",
+  "scheduled": "Buffer, all six channels, 7 p.m. 19 Nov (videos on the videos repo fallback until the next sweep moves them to R2)"
  }
 }

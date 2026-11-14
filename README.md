@@ -31,12 +31,8 @@ Same card bands with archival footage playing in the photo window, for big dispa
 * Finished clips: `dispatch-NNN-x.mp4` (1600 x 1440), `dispatch-NNN-instagram.mp4` (1080 x 1350, Instagram and Facebook), `dispatch-NNN-threads.mp4` (1080 x 1350, taller bottom strip for Threads), `dispatch-NNN-vertical.mp4` (1080 x 1920, for Reels, TikTok, and Shorts), each with a `-poster.jpg` of the first frame.
 * Add a `video` block to the dispatch JSON (`footage`, optional `focusX` and `focusY`, plus `sourceUrl` and `note`), then run `node renderer/living.js <id>`; it fetches the clip from R2 if needed and uploads each finished video and poster (`--no-upload` for a local test).
 
-## Living Press page
-`renderer/living_press.py` builds the Living Press review page (a pinned claude.ai artifact) from every dispatch that has a Living Card (with its kit) or a Story Card (with its `story.kit` block).
-```
-python3 renderer/living_press.py <out_dir>   # writes living-press.html plus videos/ to publish
-```
-Rebuild and republish to the same artifact (https://claude.ai/artifact/7bCSGHeexkFYyn6s1vxRSe) whenever a video is added or a kit changes. Set `"scheduled"` in a dispatch's `kit` block to `true` or a short status line (for example "Buffer and YouTube Shorts scheduled · TikTok not yet").
+## Living Press page (retired)
+Living Press, the old video review page, was retired on 14 Nov 2026. The Schedule Board plays the videos now (docs/WW2 Dispatches Videos.md, "Watching the videos"). `renderer/living_press.py` and `renderer/living_press.html` are kept but unused.
 
 ## Name This cards
 Puzzle cards posted Wednesday and Saturday at 10 a.m. Mountain: X Communities through Typefully, Threads, Facebook, and Instagram through Buffer. No dispatch number, so they never affect the dispatch serial.
