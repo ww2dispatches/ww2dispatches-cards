@@ -183,6 +183,97 @@
    "Germany",
    "France"
   ],
-  "lens": "us"
- }
+  "lens": "us",
+  "video": {
+   "kind": "Living Card",
+   "opening": "motion",
+   "sound": "silent"
+  },
+  "video_b": {
+   "kind": "Living Card",
+   "opening": "motion",
+   "sound": "silent"
+  }
+ },
+ "video": {
+  "footage": "footage/1944-11-18-metz.mp4",
+  "focusX": 50,
+  "focusY": 50,
+  "sourceUrl": "https://catalog.archives.gov/id/16521",
+  "note": "U.S. Army Signal Corps film 111-ADC-2717 (NARA 16521), story LIB 784, 'Capture of Metz', 18 November 1944, silent. U.S. government work, public domain. Clip from the research copy footage/1944-11-18-metz-reel.mp4 (pillarbox cropped): 5:34.5 to 5:39.5 infantry with rifles move along a wall to a doorway; 4:38.5 to 4:43.5 bomb bursts on the plain before Metz as P-47s attack; 5:28 to 5:31 an antitank gun and a jeep in a village street; 5:54.6 to 5:57.4 a soldier with a rifle at a gateway. The 'Inside Metz' stretch (6:16 on, 19 Nov) is left for the 7 p.m. second cut.",
+  "hook": "That morning the Germans blew the bridges."
+ },
+ "kit": {
+  "file": "kits/dispatch-068-kit.md",
+  "filmCaption": "Army cameramen outside Metz filmed the city under attack from the air on 18 November 1944.\n\nBombs from diving P-47 Thunderbolts burst on the plain before the city, infantry of the US Third Army edge along a wall toward a doorway, and a soldier keeps watch at a gateway. Real U.S. Army Signal Corps film, shot the day American troops crossed the city limits.",
+  "youtubeTitle": "Metz Under Attack: Real Film of 18 November 1944 #shorts",
+  "youtubeDescription": "On 18 November 1944 troops of the US Third Army closed on Metz, an old fortress city in Lorraine ringed by forts. The 5th Infantry Division pushed in from the south while the 95th came from the north and west, and men of the 10th and 11th Infantry crossed the city limits that day. Early that morning the Germans blew the Moselle bridges west of the city; one went up under a patrol of the 378th Infantry, killing eight men. On 19 November the two divisions linked up inside the ring. There was no real house to house battle: most Germans outside the forts fired a few shots and gave up. Fighting in the city formally ended on 22 November, but the outer forts were left to starve, and the last, Fort Jeanne d'Arc, held out until 13 December.\n\nThis is real U.S. Army Signal Corps film shot on 18 November 1944, the 'Capture of Metz' story: P-47s dive bombing near the city, infantry in a village street, and a soldier at a gateway. The original film is silent.\n\nFilm: U.S. Army Signal Corps, 111-ADC-2717, U.S. National Archives (catalog.archives.gov/id/16521), public domain.\nSources: Hugh M. Cole, The Lorraine Campaign, Chapter IX, The November Battle for Metz (Concluded), US Army Center of Military History (HyperWar transcription); Battle of Metz, Wikipedia; Capture of Metz, France; Inside Metz, France (Signal Corps film 111-ADC-2717, shot card), National Archives; 80 ans de la Liberation de Metz, commemorative programme, Ville de Metz (2024); World Battlefronts: La Pucelle, Time, 27 November 1944; Hugh M. Cole, The Lorraine Campaign, Chapter III (notes on Gravelotte and the 1870 investment and capitulation of Metz), US Army Center of Military History (HyperWar).\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\n\n#Shorts #WW2 #OnThisDay #History",
+  "tiktokCaption": "The Germans blew the Moselle bridges. The Americans crossed into Metz anyway. Real film, 18 Nov 1944. #WW2 #OnThisDay #History #Metz",
+  "thumbnailCheck": "Pass: first frame is infantry with rifles bunched at a doorway along a stained wall; at 2 seconds a soldier hurries in from the right. Opening tagged \"motion\" from the frames at 0.3 and 2 seconds.",
+  "videoTime": "12:00 America/Denver",
+  "scheduled": "Buffer, all six channels, noon 18 Nov"
+ },
+ "buffer": {
+  "x_film": "6af68015ba218f32637575a7",
+  "instagram_reel": "6af680185ec1c9d5be576ec5",
+  "threads_film": "6af6801bfb90ccefdd1675e6",
+  "facebook_film": "6af6801eba218f3263757962",
+  "youtube": "6af680245ec1c9d5be577204",
+  "tiktok": "6af680265ec1c9d5be577292",
+  "x_film_b": "6af6a366c1a0010a5bfeed21",
+  "instagram_reel_b": "6af6a368c1a0010a5bfeed93",
+  "threads_film_b": "6af6a36bc1a0010a5bfeedd6",
+  "facebook_film_b": "6af6a36de1d8eff610a293b3",
+  "tiktok_b": "6af6a370fb90ccefdd1f6af9",
+  "youtube_b": "6af6a374ba218f32637ee0b7",
+  "x": "6af7cf1e81e1228421dcce42",
+  "instagram": "6af7cf1678196a0a973822fd",
+  "threads": "6af7cf1981e1228421dccd00",
+  "facebook": "6af7cf0ebb36d00909e372cb"
+ },
+ "video_b": {
+  "footage": "footage/1944-11-18-metz-b.mp4",
+  "focusX": 50,
+  "focusY": 50,
+  "sourceUrl": "https://catalog.archives.gov/id/16521",
+  "note": "Second cut, 7 p.m. U.S. Army Signal Corps film 111-ADC-2717 (NARA 16521), story LIB 785, 'Inside Metz', 19 November 1944, silent. U.S. government work, public domain. Clip from footage/1944-11-18-metz-reel.mp4 (pillarbox cropped): 7:19.3 to 7:24.8 infantry run along a street past a tank; 7:49.0 to 7:54.0 German prisoners under FFI guard before a building; 9:03.5 to 9:08.5 riflemen dash down a tree lined avenue. No shot of the noon clip (4:38 to 5:58) appears. Filmed the day after the event.",
+  "hook": "Most of the garrison walked out, hands up."
+ },
+ "kit_b": {
+  "file": "kits/dispatch-068-b-kit.md",
+  "filmCaption": "Inside Metz on 19 November 1944, one day after the first Americans got into the city. Infantry run along a street past an American gun, German prisoners wait under guard by French resistance fighters, and riflemen dash down a tree lined avenue.\n\nFilmed by a U.S. Army Signal Corps crew. The original is silent.",
+  "youtubeTitle": "Inside Metz the Next Day: Real Film, 19 November 1944 #shorts",
+  "youtubeDescription": "On 19 November 1944 the 377th and 378th Infantry and the 95th Division's Task Force Bacon all entered Metz proper, and the two divisions linked up inside the ring of forts that morning. The German field army had pulled back east and left the garrison to its fate, so there was no real house to house fight: most Germans outside the forts fired a few shots, then came over with their hands up. French resistance fighters of the FFI and two French intelligence networks helped the Americans. Fighting in the city formally ended on 22 November, though the last outer fort held out until 13 December. For France, it ended four years of German annexation.\n\nThis is real U.S. Army Signal Corps film from the 'Inside Metz' story, shot on 19 November 1944, the day after this dispatch's date: infantry on the streets and German prisoners under FFI guard. The original film is silent.\n\nFilm: U.S. Army Signal Corps, 111-ADC-2717, U.S. National Archives (catalog.archives.gov/id/16521), public domain.\nSources: Hugh M. Cole, The Lorraine Campaign, Chapter IX, US Army Center of Military History; Battle of Metz, Wikipedia; Inside Metz, France (Signal Corps film 111-ADC-2717, shot card), National Archives; 80 ans de la Liberation de Metz, Ville de Metz (2024).\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\n\n#Shorts #WW2 #OnThisDay #History",
+  "tiktokCaption": "No street by street battle here. Most Germans outside the forts gave up after a few shots. Metz, the next day. #WW2 #OnThisDay #History #Metz",
+  "thumbnailCheck": "Pass: first frame is infantry running along a Metz street past an American gun; at 2 seconds the men are still moving up the street. Different opening from the noon cut (infantry at a doorway). Opening tagged \"motion\" from the frames at 0.3 and 2 seconds.",
+  "videoTime": "19:00 America/Denver",
+  "scheduled": "Buffer, all six channels, 7 p.m. 18 Nov",
+  "cut": "second cut, 7 p.m."
+ },
+ "declass_line": true,
+ "declass_variant": "E4",
+ "declass_variant_ig": "IT",
+ "body": "Time magazine noted that Metz had never once been taken by storm. Attila destroyed it in 451, but nobody was defending it then.\n\n18 November 1944. Troops of the US Third Army closed on the fortress city in Lorraine. Men of the 5th Infantry Division's 10th and 11th Infantry crossed the city limits from the south, while the 95th Infantry Division pressed in from the north and west. Overhead, P-47 Thunderbolts dive bombed the city.\n\nIt came at a price. Before dawn the Germans destroyed the bridges over the Moselle west of Metz, and one exploded beneath a patrol of the 378th Infantry. Eight men on it were killed.\n\nThe next morning the two divisions linked up inside the ring. The German field army had pulled back and left the garrison behind, and most of the Germans outside the forts put up only token resistance before surrendering. French resistance fighters helped the Americans.\n\nFighting in the city ended on 22 November, closing four years of German annexation. The outer forts were left to starve; the last held out until 13 December.",
+ "addons": [
+  "Today's Declass file is open, and this card is inside. Collect it free: ww2dispatches.com/declass #Declass"
+ ],
+ "hashtags": "#OnThisDay #WW2",
+ "threads": "Time magazine noted that Metz had never once been taken by storm. Attila destroyed it in 451, but nobody was defending it then.\n\n18 November 1944. Troops of the US Third Army crossed the city limits of the old fortress city. The next day two divisions linked up inside the ring, and Metz was free.\n\nToday's Declass file is open, and this card is inside. Collect it free: ww2dispatches.com/declass",
+ "focusX": 50,
+ "focusY": 50,
+ "zoom": 100,
+ "slides": [
+  {
+   "photo": "photos/1944-11-18-metz-3.jpg",
+   "caption": "Father Joseph Barthelemy, the \"White Father\" of Metz, in a rubble strewn street after the city fell.",
+   "credit": "USAAF photo, NARA 342-FH-3A18922, public domain.",
+   "alt": "Archival photo of a bearded priest in a long dark robe standing among heaps of rubble beside ruined buildings."
+  },
+  {
+   "photo": "photos/1944-11-18-metz-4.jpg",
+   "caption": "German defenders of Metz gathered in a courtyard before being marched to the rear, November 1944.",
+   "credit": "USAAF photo, NARA 342-FH-3A17755, public domain.",
+   "alt": "Archival photo of a crowd of German soldiers in greatcoats standing and sitting in a courtyard beside a truck."
+  }
+ ]
 }

@@ -5,6 +5,7 @@ import { signedInPlayer } from '../_lib/player.js';
 import { clearSessionCookie } from '../_lib/session.js';
 import { ensureTables } from '../_lib/intercept.js';
 import { ensureCase } from '../_lib/displaycase.js';
+import { ensureEmailTables } from '../_lib/emailcode.js';
 
 export async function onRequestPost({ request, env }) {
   const player = await signedInPlayer(env, request);
@@ -12,6 +13,7 @@ export async function onRequestPost({ request, env }) {
   const db = env.DB, id = player.id;
   await ensureTables(db);
   await ensureCase(db);
+  await ensureEmailTables(db);
   await db.batch([
     db.prepare('DELETE FROM intercept WHERE player_id = ?').bind(id),
     db.prepare('DELETE FROM intercept_seen WHERE player_id = ?').bind(id),
@@ -20,6 +22,7 @@ export async function onRequestPost({ request, env }) {
     db.prepare('DELETE FROM months WHERE player_id = ?').bind(id),
     db.prepare('DELETE FROM intel_log WHERE player_id = ?').bind(id),
     db.prepare('DELETE FROM display_case WHERE player = ?').bind(id),
+    db.prepare('DELETE FROM aliases WHERE player_id = ?').bind(id), // the scrambled second ids (email or Google) that pointed here
     db.prepare('DELETE FROM players WHERE id = ?').bind(id),
   ]);
   return json({ deleted: true }, 200, { 'set-cookie': clearSessionCookie() });

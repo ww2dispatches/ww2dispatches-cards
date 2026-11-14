@@ -146,7 +146,8 @@
    "Soviet Union",
    "Japan",
    "Germany"
-  ]
+  ],
+  "lens": "soviet"
  },
  "focusX": 50,
  "focusY": 38,
@@ -167,5 +168,12 @@
   "branches": [],
   "keyword": null
  },
- "newsletter": 2
+ "newsletter": 2,
+ "links": {
+  "x": "https://x.com/2110501302996492288/status/2119218974621597993",
+  "instagram": "https://www.instagram.com/p/DfdbIPMjc1O/",
+  "threads": "https://www.threads.com/@ww2dispatches/post/DfdbGCEDaVw",
+  "facebook": "https://www.facebook.com/122101493613512139/posts/122113445601512139",
+  "posted": "2026-11-07"
+ }
 }

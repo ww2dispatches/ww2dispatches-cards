@@ -73,7 +73,7 @@
   const signedIn = () => Boolean(ST && ST.player);
   const myPulls = () => signedIn() ? ST.pulls : (STARTER ? STARTER.pulls : []);
   function setCatalog(cards) { CAT = cards; BYID = new Map(cards.map(c => [c.id, c])); }
-  const refreshState = () => api('state').then(d => { ST = d; return d; });
+  const refreshState = () => api('state').then(d => { ST = d; if (d.admin) { try { localStorage.setItem('ww_me', '1'); } catch (e) {} } return d; });
   const refreshCatalog = () => api('catalog').then(d => setCatalog(d.cards));
 
   // ---------- helpers ----------
@@ -110,6 +110,7 @@
   const SCREEN_HIT = { sFile: 'dossier', sSets: 'sets', sIntercept: 'intercept', sSave: 'save_screen', sCase: 'case_open' };
   function show(id) {
     if (SCREEN_HIT[id]) hit(SCREEN_HIT[id]);
+    if (id === 'sSave' && IN_APP) hit('save_inapp');
     document.querySelectorAll('.screen').forEach(s => s.classList.toggle('on', s.id === id));
     document.body.classList.toggle('night', id === 'sIntercept'); // Intercept sits on the dark Night Dispatch desk
     window.scrollTo(0, 0);
@@ -1117,6 +1118,11 @@
     startCards(w, 'server', holdings(ST.pulls.filter(p => p.turned)), { kind });
   }
 
+  // With email sign in on, the lines that said "no email" say what is true now (13 Nov 2026).
+  function saveWords() {
+    const d = document.querySelector('#sSave .landsmall'); if (d) d.innerHTML = '<b>Disclaimer:</b> we keep your cards and nothing else. No name, and we never keep your email. For players 13 and older.';
+  }
+
   // ---------- save your dossier ----------
   function showSave() {
     const H = holdingsNow();
@@ -1125,6 +1131,103 @@
     show('sSave');
   }
   $('skipSave').onclick = () => { hit('save_skip'); renderHome(); show('sHome'); if (seen('guest')) toast('Your starter pack is saved in this browser for now.'); };
+
+  // ---------- social app browsers (13 Nov 2026) ----------
+  // Links tapped in Threads, Instagram, Facebook, TikTok, and X open in the app's own built in browser, and
+  // Google refuses to sign anyone in there. So in those browsers the Google button gives way to a short
+  // way out: open this page in the phone's real browser, with the starter pack carried along in the link.
+  const IN_APP = (() => {
+    const ua = navigator.userAgent || '';
+    if (/Barcelona/i.test(ua)) return 'Threads';
+    if (/Instagram/i.test(ua)) return 'Instagram';
+    if (/FBAN|FBAV|FB_IAB|FBIOS/i.test(ua)) return 'Facebook';
+    if (/musical_ly|BytedanceWebview|TikTok/i.test(ua)) return 'TikTok';
+    if (/Twitter/i.test(ua)) return 'X';
+    if (/LinkedInApp|Snapchat|Pinterest|Line\//i.test(ua)) return 'this app';
+    if (/Android/i.test(ua) && /; wv\)/.test(ua)) return 'this app';
+    return '';
+  })();
+  // The link to the same page in the real browser. It carries the starter pack if there is one, where the
+  // visitor first came from, the tester key on a preview, and out=1 so the arrival can be counted.
+  function outLink(here) {
+    const u = here ? new URL(location.href) : new URL('/declass', location.origin);
+    if (STARTER && STARTER.token && !signedIn()) u.searchParams.set('pack', STARTER.token);
+    const src = lsGet('ww_src'); if (src && src !== 'direct') u.searchParams.set('ref', src);
+    if (testerKey) u.searchParams.set('key', testerKey);
+    u.searchParams.set('out', '1');
+    return u.href;
+  }
+  // The automatic jump (13 Nov 2026): a new visitor arriving inside a social app's browser is sent to the
+  // phone's real browser right away, before opening anything, so the whole game and the sign in work.
+  // Tried once per visit. Android hands over to the default browser; recent iPhones open Safari. Where the
+  // app refuses, nothing happens and the visitor carries on here, with the way out box on the save screen.
+  function autoJump() {
+    try {
+      const u = new URL(location.href);
+      if (u.searchParams.get('out')) {
+        u.searchParams.delete('out'); history.replaceState(null, '', u.pathname + u.search + u.hash);
+        if (!IN_APP) hit('out_landed');
+      }
+    } catch (e) {}
+    if (!IN_APP) return;
+    hit('inapp_arrive');
+    let tried = false;
+    try { tried = sessionStorage.getItem('ww_out') === '1'; sessionStorage.setItem('ww_out', '1'); } catch (e) { tried = true; }
+    if (tried || STARTER) return;
+    hit('inapp_auto');
+    const link = openOutHref(outLink(true));
+    setTimeout(() => { try { location.href = link; } catch (e) {} }, 400);
+  }
+  function openOutHref(link) {
+    const ua = navigator.userAgent || '';
+    if (/Android/i.test(ua)) return 'intent://' + link.replace(/^https?:\/\//, '') + '#Intent;scheme=https;S.browser_fallback_url=' + encodeURIComponent(link) + ';end';
+    if (/iPhone|iPad|iPod/i.test(ua)) return 'x-safari-' + link;
+    return link;
+  }
+  function renderOutBox(el) {
+    const has = STARTER && !signedIn();
+    el.classList.add('outslot');
+    el.innerHTML = '<div class="outbox"><b>One more step</b><span>' + IN_APP + "'s built in browser can't sign you in. Open Declass in your phone's own browser" + (has ? ' and your five cards come with you.' : ' to sign in.') + '</span>'
+      + '<a class="btn" data-out="open">Open in my browser</a><button class="linkbtn" type="button" data-out="copy">Or copy the link</button>'
+      + '<span class="outhow">If nothing opens, tap the menu (the three dots) at the top of this screen and choose Open in browser.</span></div>';
+    const a = el.querySelector('[data-out="open"]');
+    a.href = openOutHref(outLink());
+    // Some apps (Threads on iPhone, 13 Nov 2026) ignore the hand over. If this page is still showing a
+    // moment after the tap, the button gives way to the one route every app has: its own menu.
+    a.onclick = () => {
+      a.href = openOutHref(outLink()); hit('inapp_open');
+      setTimeout(() => {
+        if (document.visibilityState !== 'visible' || !a.isConnected) return;
+        hit('inapp_stuck');
+        const how = el.querySelector('.outhow');
+        a.outerHTML = '<span class="outmenu"><i aria-hidden="true">•••</i>Tap the three dots at the top right of this screen, then choose <b>Open in external browser</b>.</span>';
+        if (how) how.remove();
+      }, 1600);
+    };
+    el.querySelector('[data-out="copy"]').onclick = ev => {
+      const link = outLink(), b = ev.currentTarget;
+      const done = () => { hit('inapp_copy'); b.textContent = 'Link copied. Paste it in your browser.'; };
+      (navigator.clipboard ? navigator.clipboard.writeText(link) : Promise.reject()).then(done).catch(() => {
+        const ta = document.createElement('textarea'); ta.value = link; document.body.appendChild(ta); ta.select();
+        try { document.execCommand('copy'); done(); } catch (e) { b.textContent = link; }
+        ta.remove();
+      });
+    };
+  }
+  // A pack carried over from a social app's browser: read it back and go straight to Save your dossier.
+  function carriedPack() {
+    let token = '';
+    try {
+      const url = new URL(location.href); token = url.searchParams.get('pack') || '';
+      if (token) { url.searchParams.delete('pack'); history.replaceState(null, '', url.pathname + url.search + url.hash); }
+    } catch (e) {}
+    if (!token || signedIn() || STARTER) return Promise.resolve(false);
+    return api('starter', { token }).then(d => {
+      STARTER = { token: d.token, pulls: d.pulls, revealed: d.pulls.map(() => true) };
+      saveStarterLocal(); hit('pack_carried');
+      return true;
+    }).catch(() => false);
+  }
 
   // ---------- Google sign in ----------
   let gisReady = false;
@@ -1139,29 +1242,110 @@
     };
     document.head.appendChild(s);
   }
+  // What each sign in spot shows (13 Nov 2026):
+  //   email sign in on, real browser:        the email and code form, then "or", then the Google button
+  //   email sign in on, social app browser:  the email and code form only (Google refuses to work there)
+  //   email sign in off, real browser:       the Google button, as before
+  //   email sign in off, social app browser: the way out box
+  const mailOn = () => Boolean(CFG && CFG.emailSignIn);
   function renderGoogleButtons() {
-    if (!gisReady) return;
     ['gLand', 'gSave', 'gHome'].forEach(id => {
       const el = $(id);
-      if (!el || el.dataset.done || !el.offsetParent) return;
+      if (!el || !el.offsetParent) return;
+      if (mailOn()) {
+        if (!el.dataset.mail) {
+          el.dataset.mail = '1'; el.classList.add('mailslot');
+          el.innerHTML = '<div class="mailbox"></div>' + (IN_APP ? '' : '<div class="gor"><span>or</span></div><div class="ggl"></div>');
+          renderMailBox(el.querySelector('.mailbox'), id);
+        }
+        const g = el.querySelector('.ggl');
+        if (g && gisReady && !g.dataset.done) { google.accounts.id.renderButton(g, { theme: 'outline', size: 'large', shape: 'rectangular', text: 'signin_with', width: 280 }); g.dataset.done = '1'; }
+        return;
+      }
+      if (IN_APP) return renderOutBox(el);
+      if (!gisReady || el.dataset.done) return;
       google.accounts.id.renderButton(el, { theme: 'outline', size: 'large', shape: 'rectangular', text: 'signin_with', width: 280 });
       el.dataset.done = '1';
     });
+  }
+  // After any sign in (Google or email): load the dossier and say what happened.
+  function afterSignIn(d, fromSave, hadStarter) {
+    if (d.starterSaved || (d.player && d.player.starterDone)) { STARTER = null; saveStarterLocal(); }
+    return refreshState().then(() => {
+      renderHome(); show('sHome');
+      if (fromSave) hit('save_done');
+      toast(d.starterSaved ? "Dossier saved. Today's files are ready." : hadStarter ? 'Welcome back. Your dossier is loaded.' : 'Signed in. Your dossier is loaded.');
+    });
+  }
+
+  // ---------- email and a six digit code (13 Nov 2026) ----------
+  // Step one asks for the address; step two asks for the code from the email. The step is remembered for
+  // this visit, so a player who leaves to read the email and finds the page reloaded lands back on the code.
+  const MAIL_STORE = 'declass_mail';
+  const mailState = () => { try { const m = JSON.parse(sessionStorage.getItem(MAIL_STORE) || 'null'); return m && m.until > Date.now() ? m : null; } catch (e) { return null; } };
+  const setMailState = m => { try { m ? sessionStorage.setItem(MAIL_STORE, JSON.stringify(m)) : sessionStorage.removeItem(MAIL_STORE); } catch (e) {} };
+  function renderMailBox(box, slot) {
+    const saving = () => Boolean(STARTER) && !signedIn();
+    const pending = mailState();
+    const say = (t, bad) => { const m = box.querySelector('.mailmsg'); if (m) { m.textContent = t || ''; m.classList.toggle('bad', Boolean(bad)); } };
+    const why = { 'bad email': "That doesn't look like an email address. Check it and try again.", slow: 'Too many codes sent to that address. Try again in an hour.', busy: "We've sent all the codes we can today. Please try again tomorrow, or sign in with Google.", 'mail failed': "We couldn't send the email. Check the address and try again.", 'wrong code': "That code didn't match. Check the email and try again.", 'code expired': 'That code has run out. Send a new one.', 'code locked': 'Too many wrong tries. Send a new code.', 'email sign in is off': 'Email sign in is not available right now.' };
+    if (!pending) {
+      box.innerHTML = '<form class="mailform" novalidate><label for="mail_' + slot + '">' + (saving() ? 'Save with your email' : 'Sign in with your email') + '</label>'
+        + '<input id="mail_' + slot + '" type="email" inputmode="email" autocomplete="email" autocapitalize="off" spellcheck="false" placeholder="you@example.com" required>'
+        + '<button class="btn" type="submit">Email me a code</button><p class="mailmsg" role="status"></p>'
+        // The save screen's disclaimer, right under this form, already says we never keep the email, so the note doesn't repeat it there.
+        + '<p class="mailnote">We send a 6 digit code to type in here. No password.' + (slot === 'gSave' ? '' : ' We never keep your email.') + ' Use the same email each time to reach your cards.</p></form>';
+      const form = box.querySelector('form'), input = box.querySelector('input'), btn = box.querySelector('button');
+      form.onsubmit = ev => {
+        ev.preventDefault();
+        const email = input.value.trim();
+        if (!/^\S+@\S+\.\S+$/.test(email)) { say(why['bad email'], true); input.focus(); return; }
+        btn.disabled = true; say('Sending…'); hit('email_ask');
+        api('auth/email', { email }).then(d => {
+          hit('email_sent');
+          setMailState({ email, until: Date.now() + (d.minutes || 10) * 60000, test: d.test });
+          renderMailBox(box, slot);
+        }).catch(e => {
+          btn.disabled = false;
+          say(e.message === 'wait' ? 'We just sent one. Give it a minute, then try again.' : why[e.message] || 'Something went wrong. Try again in a moment.', true);
+        });
+      };
+      return;
+    }
+    box.innerHTML = '<form class="mailform" novalidate><label for="code_' + slot + '">Enter the 6 digit code</label>'
+      + '<p class="mailsent">We emailed it to <b>' + esc(pending.email) + '</b>. It can take a minute. Keep this page open while you check your email. If it isn\'t there, check your spam or Junk folder.</p>'
+      + '<input id="code_' + slot + '" class="codein" type="text" inputmode="numeric" pattern="[0-9 ]*" autocomplete="one-time-code" maxlength="7" placeholder="000 000" required>'
+      + '<button class="btn" type="submit">' + (saving() ? 'Save my dossier' : 'Sign in') + '</button><p class="mailmsg" role="status"></p>'
+      + '<p class="mailnote"><button class="linkbtn" type="button" data-m="again">Send a new code</button> · <button class="linkbtn" type="button" data-m="other">Use a different email</button></p></form>';
+    const form = box.querySelector('form'), input = box.querySelector('input'), btn = box.querySelector('button[type=submit]');
+    if (pending.test) input.value = pending.test; // test copies only: the server hands the code back
+    form.onsubmit = ev => {
+      ev.preventDefault();
+      const code = input.value.replace(/\D/g, '');
+      if (code.length !== 6) { say('The code is 6 digits.', true); input.focus(); return; }
+      const hadStarter = Boolean(STARTER), fromSave = $('sSave').classList.contains('on');
+      btn.disabled = true; say('Checking…');
+      api('auth/email', { email: pending.email, code, src: lsGet('ww_src') || '', starter: STARTER ? STARTER.token : undefined, starterTurned: STARTER ? STARTER.revealed.every(Boolean) : undefined })
+        .then(d => { hit('email_done'); setMailState(null); document.querySelectorAll('.gslot').forEach(g => { delete g.dataset.mail; }); return afterSignIn(d, fromSave, hadStarter); })
+        .catch(e => {
+          btn.disabled = false; hit('email_wrong');
+          if (e.message === 'code expired' || e.message === 'code locked') { say(why[e.message], true); }
+          else { say(why[e.message] || 'Something went wrong. Try again in a moment.', true); input.select(); }
+        });
+    };
+    box.querySelector('[data-m="other"]').onclick = () => { setMailState(null); renderMailBox(box, slot); };
+    box.querySelector('[data-m="again"]').onclick = ev => {
+      const b = ev.currentTarget; b.disabled = true; say('Sending…');
+      api('auth/email', { email: pending.email }).then(d => { hit('email_sent'); setMailState({ email: pending.email, until: Date.now() + (d.minutes || 10) * 60000, test: d.test }); renderMailBox(box, slot); const m = box.querySelector('.mailmsg'); if (m) m.textContent = 'New code sent.'; })
+        .catch(e => { b.disabled = false; say(e.message === 'wait' ? 'We just sent one. Give it a minute, then try again.' : why[e.message] || 'Something went wrong. Try again in a moment.', true); });
+    };
   }
   function onCredential(res) {
     const hadStarter = Boolean(STARTER);
     const fromSave = $('sSave').classList.contains('on');
     if (fromSave) hit('save_google');
     api('auth/google', { src: lsGet('ww_src') || '', credential: res.credential, starter: STARTER ? STARTER.token : undefined, starterTurned: STARTER ? STARTER.revealed.every(Boolean) : undefined })
-      .then(d => {
-        if (d.starterSaved || (d.player && d.player.starterDone)) { STARTER = null; saveStarterLocal(); }
-        return refreshState().then(() => d);
-      })
-      .then(d => {
-        renderHome(); show('sHome');
-        if (fromSave) hit('save_done');
-        toast(d.starterSaved ? "Dossier saved. Today's files are ready." : hadStarter ? 'Welcome back. Your dossier is loaded.' : 'Signed in. Your dossier is loaded.');
-      })
+      .then(d => afterSignIn(d, fromSave, hadStarter))
       .catch(e => { hit(fromSave ? 'save_fail' : 'signin_fail'); toast('Sign in did not work (' + e.message + ').'); });
   }
 
@@ -1602,7 +1786,7 @@
   function paintSnd() {
     document.querySelectorAll('.sndbtn').forEach(b => {
       const t = b.dataset.t, on = SND[t], name = t === 'sfx' ? 'Sound' : 'Music';
-      b.innerHTML = `<svg viewBox="0 0 24 24" aria-hidden="true">${ICON[t]}${t === 'sfx' && on ? ICON.sfxOn : ''}${on ? '' : ICON.slash}</svg>${name}${on ? '' : ' off'}`;
+      b.innerHTML = `<svg viewBox="0 0 24 24" aria-hidden="true">${ICON[t]}${t === 'sfx' && on ? ICON.sfxOn : ''}${on ? '' : ICON.slash}</svg><span class="snm">${name}${on ? '' : ' off'}</span>`;
       b.title = (t === 'sfx' ? 'Sound effects ' : 'Music ') + (on ? 'on, tap to turn off' : 'off, tap to turn on');
       b.setAttribute('aria-label', b.title);
       b.classList.toggle('off', !on); b.setAttribute('aria-pressed', String(on));
@@ -2533,15 +2717,18 @@
   setInterval(() => { if ($('sHome').classList.contains('on')) refreshState().then(renderHome).catch(() => {}); }, 60000);
 
   show('sLoading');
+  autoJump();
   api('config').then(cfg => {
     CFG = cfg;
     if (!cfg.open) return show('sSoon');
     loadGoogle();
+    if (CFG.emailSignIn) saveWords();
     const fresh = icpFresh ? api('intercept/reset', {}).then(() => toast('Code Room reset for today. Open it to start fresh.')).catch(() => toast('Code Room reset is for testers only.')) : Promise.resolve();
     return fresh.then(() => Promise.all([api('catalog'), api('state')])).then(([c, s]) => {
       setCatalog(c.cards); ST = s; landFan();
       const file = new URLSearchParams(location.search).get('file');
-      if (file) checkFile(file); else { route(); if (signedIn()) maybePromote(); }
+      if (file) return checkFile(file);
+      return carriedPack().then(got => { if (got) showSave(); else { route(); if (signedIn()) maybePromote(); } });
     });
   }).catch(e => { console.error('declass boot', e); show('sSoon'); });
 })();

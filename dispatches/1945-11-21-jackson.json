@@ -170,6 +170,54 @@
    "Soviet Union",
    "Germany"
   ],
-  "lens": "us"
- }
+  "lens": "us",
+  "video": {
+   "kind": "Living Card",
+   "opening": "people still",
+   "sound": "period sound"
+  }
+ },
+ "video": {
+  "footage": "footage/1945-11-21-jackson.mp4",
+  "focusX": 50,
+  "focusY": 50,
+  "sourceUrl": "https://catalog.archives.gov/id/35957",
+  "note": "Nuremberg (1948, U.S. Army), 111-M-7596 reel 1 (NARA 35957), courtroom film with Justice Robert H. Jackson's own recorded voice, 21 November 1945. U.S. government work, public domain. Clip from the research copy footage/1945-11-20-nuremberg-reel.mp4, one continuous stretch 3:39.6 to 3:54.0 with its sound (the film's narrator, 3:19 to 3:26, is left out): Jackson at the lectern, then a wide shot of the courtroom with the dock. He says: 'The wrongs which we seek to condemn and punish have been so calculated, so malignant, and so devastating, that civilization cannot tolerate their being ignored, because it cannot survive their being repeated.' Checked by speech recognition against the facts block. Loudness normalized to about -16 LUFS.",
+  "hook": "Every defendant had just pleaded not guilty.",
+  "sound": true
+ },
+ "kit": {
+  "file": "kits/dispatch-077-kit.md",
+  "filmCaption": "Listen: this is Robert H. Jackson's own voice, filmed in the Nuremberg courtroom on 21 November 1945.\n\nThe U.S. Army camera finds the American chief prosecutor at the lectern on the trial's second day, speaking the most quoted line of his opening. The sound is the original courtroom recording.",
+  "youtubeTitle": "Robert Jackson's Own Voice at Nuremberg, 21 November 1945 #shorts",
+  "youtubeDescription": "On 21 November 1945, the second day of the Nuremberg trial, Robert H. Jackson, chief of counsel for the United States, opened the prosecution's case before the International Military Tribunal. Jackson was a sitting justice of the US Supreme Court on leave, appointed by President Truman. Before he spoke, every defendant present pleaded not guilty; Hermann Goering tried to make a statement and was cut off. Jackson told the court: \"The wrongs which we seek to condemn and punish have been so calculated, so malignant, and so devastating, that civilization cannot tolerate their being ignored, because it cannot survive their being repeated.\" He called the Allies' decision to try their captive enemies \"one of the most significant tributes that Power has ever paid to Reason.\" The trial ran until 1 October 1946.\n\nThis is real U.S. Army film from the courtroom on 21 November 1945. The sound is the original recording of Jackson's voice from the source film.\n\nFilm: Nuremberg (U.S. Army, 1948), 111-M-7596 reel 1, U.S. National Archives (catalog.archives.gov/id/35957), public domain.\nSources: Nuremberg Trial Proceedings Vol. 2, Second Day, 21 November 1945, Avalon Project, Yale Law School; Chief United States Prosecutor, Nuremberg Trial, Robert H. Jackson Center; Excerpts from the Nuremberg Opening Statement, Robert H. Jackson Center; Justice Robert Jackson Begins Opening Speech at the Nuremberg War Crimes Trials, November 21, 1945 (audio, NAID 114279663, 238.24B), National Archives; Justice Jackson at Nuremberg: A Historic but Controversial Role, David Adler, South Dakota Humanities Council (2024); Nuremberg trials, Wikipedia.\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\n\n#Shorts #WW2 #OnThisDay #History",
+  "tiktokCaption": "Every defendant had just pleaded not guilty. Then Robert Jackson began. His own voice, Nuremberg, 21 Nov 1945. #WW2 #OnThisDay #History #Nuremberg",
+  "thumbnailCheck": "Pass: first frame is Jackson at the lectern, seen over his shoulder with the microphone in front of him, already speaking; at 2 seconds he turns slightly toward the bench. A plain shot, but his own voice starts at once. Opening tagged \"people still\" from the frames at 0.3 and 2 seconds.",
+  "videoTime": "12:00 America/Denver",
+  "scheduled": "Buffer, all six channels, noon 21 Nov"
+ },
+ "buffer": {
+  "x_film": "6af680faba218f326375a94f",
+  "instagram_reel": "6af680fcda25c4db3e90a8f2",
+  "threads_film": "6af680feba218f326375a9ef",
+  "facebook_film": "6af68101fb90ccefdd16af42",
+  "youtube": "6af68108c1a0010a5bf58f80",
+  "tiktok": "6af6810a5ec1c9d5be57a39c",
+  "x": "6af7cf4f97efac0554d4b150",
+  "instagram": "6af7cf4e78196a0a973835ee",
+  "threads": "6af7cf4fbb36d00909e38602",
+  "facebook": "6af7cf4ed16af15d4deb252e"
+ },
+ "declass_line": true,
+ "declass_variant": "E1",
+ "declass_variant_ig": "I1",
+ "body": "Four victorious nations held their captive enemies. Robert H. Jackson stood up in Nuremberg to explain why they were getting a trial instead of vengeance.\n\n21 November 1945. On the second day of the trial, the chief of counsel for the United States opened the prosecution's case. Jackson was a sitting justice of the US Supreme Court; Truman had appointed him, and he took leave from the Court to do it.\n\nHe began: \"The privilege of opening the first trial in history for crimes against the peace of the world imposes a grave responsibility.\"\n\nThen came the line people remember: \"civilization cannot tolerate their being ignored, because it cannot survive their being repeated.\"\n\nThat four great nations would \"stay the hand of vengeance\" and submit their enemies to the law, he said, was \"one of the most significant tributes that Power has ever paid to Reason.\"\n\nThe case would rest on the Nazis' own records. \"We will show you their own films,\" he promised. He finished the whole address that day, and when the trial ended in October 1946 he went back to the Court.",
+ "addons": [
+  "This card is in today's Declass file, our free WW2 card game. Collect it: ww2dispatches.com/declass #Declass"
+ ],
+ "hashtags": "#OnThisDay #WW2",
+ "threads": "Four victorious nations held their captive enemies. Robert H. Jackson stood up in Nuremberg to explain why they were getting a trial instead of vengeance.\n\n21 November 1945. It was, he said, \"one of the most significant tributes that Power has ever paid to Reason.\"\n\nThis card is in today's Declass file, our free WW2 card game. Collect it: ww2dispatches.com/declass",
+ "focusX": 50,
+ "focusY": 50,
+ "zoom": 100
 }

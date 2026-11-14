@@ -193,7 +193,8 @@
    "kind": "Living Card",
    "opening": "combat or firing",
    "sound": "silent"
-  }
+  },
+  "lens": "us"
  },
  "game": {
   "value": null,
@@ -251,5 +252,19 @@
    "caption": "The cruiser USS Wichita under fire off Casablanca, 8 November 1942.",
    "credit": "U.S. Navy photo 80-G-38835, public domain"
   }
- ]
+ ],
+ "links": {
+  "x_film": "https://x.com/2110501302996492288/status/2119505748610712035",
+  "instagram_reel": "https://www.instagram.com/reel/DffdjjOj_Sm/",
+  "threads_film": "https://www.threads.com/@ww2dispatches/post/DffdgDjAn4m",
+  "facebook_film": "https://www.facebook.com/reel/1448233190001989/",
+  "youtube": "https://www.youtube.com/shorts/l26gGrPnkkU",
+  "tiktok": "https://www.tiktok.com/@ww2dispatches/video/7705877926524226829?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
+  "x": "https://x.com/2110501302996492288/status/2119445307918356883",
+  "instagram": "https://www.instagram.com/p/DffCHKQFTP0/",
+  "threads": "https://www.threads.com/@ww2dispatches/post/DffCBoVlBv0",
+  "facebook": "https://www.facebook.com/122101493613512139/posts/122113647345512139",
+  "posted": "2026-11-08"
+ },
+ "newsletter": 3
 }

@@ -163,6 +163,83 @@
    "Britain",
    "Germany"
   ],
-  "lens": "us"
- }
+  "lens": "us",
+  "video": {
+   "kind": "Living Card",
+   "opening": "combat or firing",
+   "sound": "silent"
+  },
+  "video_b": {
+   "kind": "Living Card",
+   "opening": "motion",
+   "sound": "silent"
+  }
+ },
+ "video": {
+  "footage": "footage/1944-11-16-operation-queen.mp4",
+  "focusX": 50,
+  "focusY": 50,
+  "sourceUrl": "https://catalog.archives.gov/id/16519",
+  "note": "U.S. Army Signal Corps film 111-ADC-2715 (NARA 16519), story LIB 662, T27 multiple rocket launchers of the 18th Field Artillery, VII Corps, at Mausbach, 16 November 1944, silent. U.S. government work, public domain (NARA's routine 'possibly copyright' flag on 111-ADC reels). Clip from the research copy footage/1944-11-16-operation-queen-reel.mp4: 2:40.3 to 2:45.0 the launchers fire, rockets streaking off in smoke; 1:34 to 1:37 men carry rockets past the launcher frames; 1:48 to 1:53 a crewman loads rockets into the tubes; 2:10.5 to 2:13.5 a crewman sights along the frame. Converted to square pixels. The Hamich stretch (3:00 on) is left for the 7 p.m. second cut.",
+  "hook": "694 guns fired for an hour before the attack."
+ },
+ "kit": {
+  "file": "kits/dispatch-062-kit.md",
+  "filmCaption": "Rocket launchers firing near Mausbach, Germany, on the first day of Operation Queen.\n\nReal U.S. Army Signal Corps film, 16 November 1944. Artillerymen carry 4.5 inch rockets to their launcher frames, load the tubes, and fire them off in a rush of smoke. On the First Army front, guns, mortars and a battalion of launchers like these fired for an hour before the infantry went in at 12:45.",
+  "youtubeTitle": "Rocket Launchers Open Operation Queen: Real Film, 16 November 1944 #shorts",
+  "youtubeDescription": "On 16 November 1944 the Allies launched Operation Queen, which the US Army's official history calls the largest air attack of the war in direct support of ground troops. About 1,200 Eighth Air Force heavy bombers dropped 4,120 tons of fragmentation bombs around Eschweiler, Weisweiler and Langerwehe, chosen to hit troops without cratering the roads, while RAF Bomber Command struck Duren, Julich and Heinsberg behind the front. Then the guns joined in: on the First Army front alone, 694 guns fired an hour long preparation, helped by tank guns, mortars and a battalion of 4.5 inch rocket launchers. At 12:45 the infantry of the US First and Ninth Armies attacked toward the Roer River. The bombing disappointed, with most forward German positions surviving, and the 1st Infantry Division's 16th Infantry had to fight through the woods toward Hamich under heavy shelling.\n\nThis is real U.S. Army Signal Corps film shot on 16 November 1944: rocket launcher crews of the 18th Field Artillery, VII Corps, near Mausbach, loading and firing 4.5 inch rockets. The original film is silent.\n\nFilm: U.S. Army Signal Corps, 111-ADC-2715, U.S. National Archives (catalog.archives.gov/id/16519), public domain.\nSources: The Siegfried Line Campaign (MacDonald, US Army CMH, 1963), Chapter XVII, New Plans to Drive to the Rhine; The Siegfried Line Campaign (MacDonald, US Army CMH, 1963), Chapter XVIII, VII Corps Makes the Main Effort; Operation Queen, Wikipedia.\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\n\n#Shorts #WW2 #OnThisDay #History",
+  "tiktokCaption": "694 guns fired for an hour before the attack. These are the rockets that joined them. Real film, Germany, 16 Nov 1944. #WW2 #OnThisDay #History #OperationQueen",
+  "thumbnailCheck": "Pass: first frame is the rocket launchers in a field as the first rockets streak off in smoke; at 2 seconds rockets are still leaving the frames through the smoke. Instagram and TikTok cover at 0.7 s, rockets in flight. Opening tagged \"combat or firing\" from the frames at 0.3 and 2 seconds.",
+  "videoTime": "12:00 America/Denver",
+  "scheduled": "Buffer, all six channels, noon 16 Nov"
+ },
+ "buffer": {
+  "x_film": "6af67fb5da25c4db3e9056e0",
+  "instagram_reel": "6af67fc0e1d8eff610995577",
+  "threads_film": "6af67fc3da25c4db3e905a05",
+  "facebook_film": "6af67fc5c1a0010a5bf53108",
+  "youtube": "6af67fd8c1a0010a5bf533c4",
+  "tiktok": "6af67fdaba218f3263756939",
+  "x_film_b": "6af6a2d6e1d8eff610a2788f",
+  "instagram_reel_b": "6af6a2d9c1a0010a5bfed721",
+  "threads_film_b": "6af6a2dcc1a0010a5bfed8d7",
+  "facebook_film_b": "6af6a2dec1a0010a5bfedabd",
+  "tiktok_b": "6af6a2e15ec1c9d5be60f83f",
+  "youtube_b": "6af6a2e55ec1c9d5be60f8c9",
+  "x": "6af7cf2697efac0554d49366",
+  "instagram": "6af7cf1d4b28296eb12ecc10",
+  "threads": "6af7cf21bb36d00909e378a6",
+  "facebook": "6af7cf18d16af15d4deb072c"
+ },
+ "video_b": {
+  "footage": "footage/1944-11-16-operation-queen-b.mp4",
+  "focusX": 50,
+  "focusY": 50,
+  "sourceUrl": "https://catalog.archives.gov/id/16519",
+  "note": "Second cut, 7 p.m. U.S. Army Signal Corps film 111-ADC-2715 (NARA 16519), Hamich, Germany, 20 November 1944 (slate at 4:22, cameraman Laurence), silent. U.S. government work, public domain. Clip from footage/1944-11-16-operation-queen-reel.mp4: 4:13.3 to 4:18.8 1st Division infantry hurry past burning houses; 4:23.2 to 4:28.7 a file of riflemen strides past the camera; 4:41.0 to 4:45.5 a soldier walks toward the camera past a chapel, jeeps behind. Converted to square pixels. No shot of the noon clip (1:34 to 2:45, the rocket launchers) appears. Filmed four days after the event.",
+  "hook": "160 men went in. A day later, 60 or 70 were left."
+ },
+ "kit_b": {
+  "file": "kits/dispatch-062-b-kit.md",
+  "filmCaption": "Infantry of the 1st Infantry Division hurry through Hamich, Germany, past houses still burning, then file along the village street with full packs.\n\nSignal Corps cameraman Laurence shot it on 20 November 1944, four days after Operation Queen began, in the village the division's 16th Infantry had cleared house by house on the 18th. The original film is silent.",
+  "youtubeTitle": "Through Burning Hamich: Real Film, 20 November 1944 #shorts",
+  "youtubeDescription": "Operation Queen opened on 16 November 1944 with the largest air attack of the war in direct support of ground troops, and at 12:45 the US First and Ninth Armies went in toward the Roer River. The bombs left most forward German positions intact. For the 1st Infantry Division's 16th Infantry, the way to the village of Hamich ran through woods under heavy shelling: by the next day rifle companies of its 1st Battalion that had started with about 160 men were down to 60 or 70. On 18 November the regiment cleared Hamich house by house, and Hill 232 above it fell after fifteen artillery battalions fired on it at once.\n\nThis is real U.S. Army Signal Corps film shot in Hamich on 20 November 1944, four days after the attack began: 1st Division infantry moving past burning houses and through the village. The original film is silent.\n\nFilm: U.S. Army Signal Corps, 111-ADC-2715, U.S. National Archives (catalog.archives.gov/id/16519), public domain.\nSources: Charles B. MacDonald, The Siegfried Line Campaign, Chapters XVII and XVIII, US Army Center of Military History; Operation Queen, Wikipedia.\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\n\n#Shorts #WW2 #OnThisDay #History",
+  "tiktokCaption": "Rifle companies went in with about 160 men. A day later, 60 or 70 were left. This is Hamich, Germany, four days on. #WW2 #OnThisDay #History #Hamich",
+  "thumbnailCheck": "Pass: first frame is infantry hurrying along a Hamich street past a burning house, smoke at right; at 2 seconds more men cross the frame. Different opening from the noon cut (rocket launchers firing). A darker frame on phones; the vertical crop centers on the street. Opening tagged \"motion\" from the frames at 0.3 and 2 seconds.",
+  "videoTime": "19:00 America/Denver",
+  "scheduled": "Buffer, all six channels, 7 p.m. 16 Nov",
+  "cut": "second cut, 7 p.m."
+ },
+ "declass_line": true,
+ "declass_variant": "E2",
+ "declass_variant_ig": "I2",
+ "body": "The planners drew the bomb line two miles out in front of their own men. They remembered the bombs that fell short in Normandy.\n\n16 November 1944. The Allies opened Operation Queen, by the US Army's own count the heaviest air strike of the war flown in direct support of troops on the ground. About 1,200 Eighth Air Force heavy bombers dropped 4,120 tons of fragmentation bombs around Eschweiler, Weisweiler and Langerwehe, meant to hit troops while leaving the roads intact for the American advance.\n\nRAF Bomber Command struck Duren, Julich and Heinsberg behind the front. Then the artillery opened up, and at 12:45 the infantry of the US First and Ninth Armies attacked toward the Roer River.\n\nThe bombing disappointed. Most forward German positions survived. But one German division was arriving by train as the bombs fell, and an artillery battalion caught at the Julich railroad station was all but wiped out.\n\nThe infantry paid for every yard. Some rifle companies of the 16th Infantry lost more than half their men in two days in the woods.",
+ "addons": [
+  "Every dispatch is also a card in Declass, our free WW2 card game. Today's file: ww2dispatches.com/declass #Declass"
+ ],
+ "hashtags": "#OnThisDay #WW2",
+ "threads": "The planners drew the bomb line two miles out in front of their own men. They remembered the bombs that fell short in Normandy.\n\n16 November 1944. Operation Queen opened with about 1,200 Eighth Air Force heavy bombers over the Roer front. Most German positions survived, and the infantry who went in at 12:45 paid for every yard.\n\nEvery dispatch is also a card in Declass, our free WW2 card game. Today's file: ww2dispatches.com/declass",
+ "focusX": 50,
+ "focusY": 50,
+ "zoom": 100
 }

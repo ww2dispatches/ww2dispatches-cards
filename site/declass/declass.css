@@ -302,7 +302,8 @@ button:focus-visible,.env:focus-visible{outline:3px solid var(--brass);outline-o
 .landrule{width:60%;border-top:1px solid var(--line);margin:22px 0 4px}
 #sSave{text-align:center}
 .savegrid{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin:6px 0 18px}
-@media (max-width:420px){.savegrid{grid-template-columns:repeat(3,1fr)}}
+/* Phones (13 Nov 2026): the five cards stay in one small row with no labels, so the sign in box and its button sit in the first screen, even in the short window of a social app browser */
+@media (max-width:420px){.savegrid{gap:5px;margin:4px 0 14px}.savegrid .mini .thumb{border-width:2px}.savegrid .mini .no,.savegrid .mini .nm,.savegrid .mini .fd{display:none}}
 .soon{text-align:center;padding-top:40px}
 
 /* overlays */
@@ -1190,6 +1191,13 @@ html.ztrial #stage2{cursor:zoom-in}
 .casebtn{margin-left:auto;color:#E6C77A;border-color:#D9B865;background:rgba(217,184,101,.1);max-width:100%;overflow:hidden;letter-spacing:.08em}
 .casebtn span{overflow:hidden;text-overflow:ellipsis}
 .casebtn svg{width:16px;height:14px;stroke-width:1.6}
+/* Home toolbar (13 Nov 2026): Music and Sound are icon only squares (the slash and dashed outline show off, the label
+   stays for screen readers), so the call sign fits on the same row. The landing keeps the words. */
+#sHome .sndbtn{width:34px;padding:0;justify-content:center;gap:0}
+#sHome .sndbtn .snm{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+#sHome .toolbar{flex-wrap:nowrap}#sHome .toolbar .tbtn{flex:0 0 auto}#sHome .toolbar .casebtn{flex:0 1 auto;min-width:0}
+#sHome .casebtn span{min-width:0;white-space:nowrap}
+@media (max-width:389px){#sHome .toolbar{gap:5px}#sHome .casebtn{letter-spacing:.03em;padding-left:7px;padding-right:7px;gap:4px}#sHome .howbtn{letter-spacing:.03em;padding-left:8px;padding-right:8px}}
 .dcase{max-width:480px;margin:0 auto}
 .dcbar{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:48px}
 .dcbar .back{padding:12px 0}
@@ -1270,3 +1278,41 @@ html.ztrial #stage2{cursor:zoom-in}
 .dccall{padding-left:.06em}
 .dcchoose{padding-left:calc(16px + .06em)}
 .dccol p{padding-left:calc(10px + .14em)}
+
+/* Social app browsers (13 Nov 2026): the way out to a real browser, in place of the Google button */
+.gslot.outslot{display:block;min-height:0}
+.outbox{border:2px dashed var(--red);padding:14px 16px;text-align:center;max-width:340px;margin:0 auto}
+.outbox b{display:block;font-family:var(--display);font-size:18px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--red)}
+.outbox span{display:block;font-family:var(--type);font-size:13px;line-height:1.45;margin:6px 0 12px}
+.outbox .btn{display:inline-block;text-decoration:none}
+.outbox .linkbtn{display:block;margin:10px auto 0}
+.outbox .outhow{font-size:11px;opacity:.75;margin:10px 0 0}
+.signbar .outbox{border:0;padding:6px 0 0}
+.signbar .outbox b{display:none}
+.outbox .outmenu{display:block;font-size:14px;line-height:1.5;margin:4px 0 6px;padding:12px 10px;border:1px solid var(--red)}
+.outbox .outmenu i{display:block;font-style:normal;font-size:22px;letter-spacing:.2em;color:var(--red);margin-bottom:4px}
+.outbox .outmenu b{display:inline;font-family:inherit;font-size:inherit;text-transform:none;letter-spacing:0;color:inherit;font-weight:700}
+
+/* Email and a six digit code (13 Nov 2026) */
+.gslot.mailslot{display:block;min-height:0}
+.mailbox{max-width:340px;margin:0 auto;text-align:left}
+.mailform label{display:block;font-family:var(--display);font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin:0 0 6px}
+.mailform input{display:block;width:100%;box-sizing:border-box;font-family:var(--type);font-size:18px;padding:13px 12px;border:2px solid var(--red);border-radius:4px;background:#fffaf0;color:#1a1612;margin:0 0 10px}
+.mailform input.codein{font-size:28px;letter-spacing:.22em;text-align:center;font-weight:700}
+.mailform input:focus{outline:3px solid rgba(216,100,79,.45);outline-offset:1px}
+.mailform .btn{display:block;width:100%;font-size:16px;padding:14px 16px}
+.mailform .btn:disabled{opacity:.6}
+.mailmsg{font-family:var(--type);font-size:14px;min-height:20px;margin:8px 0 0;text-align:center}
+.mailmsg.bad{color:var(--red);font-weight:700}
+.mailmsg:empty{min-height:0;margin:0}
+.mailnote,.mailsent{font-family:var(--type);font-size:13px;line-height:1.45;margin:8px 0 0;text-align:center;opacity:.85}
+.mailsent{margin:0 0 10px;text-align:left;opacity:1;font-size:14px}
+.mailsent b{display:inline;font-family:inherit;font-size:inherit;letter-spacing:0;text-transform:none;color:inherit;word-break:break-all}
+.mailnote .linkbtn{display:inline;font-size:13px}
+.gor{display:flex;align-items:center;gap:10px;max-width:340px;margin:16px auto 10px;font-family:var(--type);font-size:13px;opacity:.7}
+.gor:before,.gor:after{content:"";flex:1;border-top:1px solid currentColor;opacity:.5}
+.ggl{display:flex;justify-content:center;min-height:44px}
+/* Google's button sits in an iframe with a light color scheme; on this dark page the browser paints a white box behind it unless the frame is told it is light too */
+.gslot iframe{color-scheme:light}
+.signbar .mailform label{color:var(--red)}
+.mailform .btn{margin:0;box-sizing:border-box}

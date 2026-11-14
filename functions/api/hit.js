@@ -6,7 +6,7 @@ import { gameDay } from '../_lib/time.js';
 import { bump, sourceName, deviceOf, isBot } from '../_lib/tally.js';
 
 const PAGES = new Set(['home', 'declass', 'newsletter', 'issue', 'privacy', 'support', 'other']);
-const EVENTS = new Set(['card', 'zoom', 'file', 'share', 'shared', 'guest_starter', 'save_screen', 'dossier', 'sets', 'intercept', 'tour_done', 'tour_skip', 'save_skip', 'save_google', 'save_done', 'save_fail', 'signin_fail', 'case_open', 'case_edit', 'case_share', 'case_callsign']);
+const EVENTS = new Set(['card', 'zoom', 'file', 'share', 'shared', 'guest_starter', 'save_screen', 'dossier', 'sets', 'intercept', 'tour_done', 'tour_skip', 'save_skip', 'save_google', 'save_done', 'save_fail', 'signin_fail', 'case_open', 'case_edit', 'case_share', 'case_callsign', 'save_inapp', 'inapp_copy', 'inapp_open', 'pack_carried', 'inapp_arrive', 'inapp_auto', 'out_landed', 'inapp_stuck', 'email_ask', 'email_sent', 'email_wrong', 'email_done']);
 
 export async function onRequestPost({ request, env }) {
   const ua = request.headers.get('user-agent') || '';
@@ -14,6 +14,8 @@ export async function onRequestPost({ request, env }) {
   let b;
   try { b = (await request.json()) || {}; } catch { return fail(400, 'bad request'); }
   const day = gameDay(new Date()), rows = [];
+  // A browser that has signed in as admin (or opened the console) sends only this: one excluded page view.
+  if (b.admin) { await bump(env.DB, day, [['admin', 'views', 1]]); return json({ ok: true }); }
   if (b.p) {
     const p = PAGES.has(b.p) ? b.p : 'other';
     rows.push(['view', p, 1]);

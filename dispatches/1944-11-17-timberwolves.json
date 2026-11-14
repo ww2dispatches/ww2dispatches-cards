@@ -154,6 +154,49 @@
    "US",
    "Germany"
   ],
-  "lens": "us"
- }
+  "lens": "us",
+  "video": {
+   "kind": "Living Card",
+   "opening": "combat or firing",
+   "sound": "silent"
+  }
+ },
+ "video": {
+  "footage": "footage/1944-11-17-timberwolves.mp4",
+  "focusX": 50,
+  "focusY": 50,
+  "sourceUrl": "https://catalog.archives.gov/id/16523",
+  "note": "U.S. Army Signal Corps film, 17 November 1944, silent. U.S. government work, public domain. From 111-ADC-2719 (NARA 16523, footage/1944-11-17-442nd-reel.mp4), LIB 709, Gressenich (Co A, 47th Infantry, VII Corps front): 8:08.5 to 8:11.9 a rifleman fires from behind a wall; 7:57.0 to 8:01.8 a building burns as soldiers crouch by a roadblock. From 111-ADC-2709 (NARA 16513, footage/1944-11-17-timberwolves-reel.mp4), LIB 724, NE outskirts of Stolberg: 1:14.0 to 1:18.5 Sherman tanks roll across a field; 1:05.2 to 1:08.6 dust and smoke as tanks fire beyond a tree. Converted to square pixels. The rifleman and fire are from a neighboring regiment on the same front, not the 104th, so the caption does not say they are Timberwolves. No shot of No. 065's noon clip (2719 at 2:40 to 3:55) appears.",
+  "hook": "5,621 shells fired, and still little ground."
+ },
+ "kit": {
+  "file": "kits/dispatch-067-kit.md",
+  "filmCaption": "A rifleman fires from behind a wall while a building burns, then Sherman tanks roll across the fields outside Stolberg, Germany.\n\nArmy cameramen filmed the VII Corps front on 17 November 1944, the day the 104th Infantry Division, the Timberwolves, renewed its attack northeast of Stolberg. The rifleman is from a neighboring regiment on the same front. The original film is silent.",
+  "youtubeTitle": "Tanks and Rifles Outside Stolberg: Signal Corps Film, 1944 #shorts",
+  "youtubeDescription": "The 104th Infantry Division, the Timberwolves, attacked northeast of Stolberg, Germany, on 16 and 17 November 1944 as the left wing of VII Corps. Its commander, Maj. Gen. Terry Allen, had drilled it in night fighting; Omar Bradley later called it the only division he knew that was prepared for night combat. Its goal was the Donnerberg, Hill 287, guarded by mines, wire, and three giant pillboxes. On 17 November Allen's guns fired 5,621 rounds in support, yet the 414th Infantry made little headway. Around noon the next day the defense cracked, and that night one company slipped almost 1,000 yards through the dark Eschweiler woods to seize a road junction.\n\nThis is real U.S. Army Signal Corps film from the VII Corps front on 17 November 1944: a rifleman firing from cover beside a burning building (a neighboring regiment, not the 104th), and Sherman tanks on the northeast edge of Stolberg. The original film is silent.\n\nFilm: U.S. Army Signal Corps, 111-ADC-2719 and 111-ADC-2709, U.S. National Archives (catalog.archives.gov/id/16523 and /16513), public domain.\nSources: Charles B. MacDonald, The Siegfried Line Campaign, Chapter XVIII, US Army Center of Military History; Timberwolves: The Story of the 104th Infantry Division, Stars and Stripes G.I. Stories (Lone Sentry); Terry de la Mesa Allen Sr., Wikipedia.\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\n\n#Shorts #WW2 #OnThisDay #History",
+  "tiktokCaption": "The division's guns fired 5,621 rounds that day. The infantry still gained little. This is the Stolberg front on 17 Nov 1944. #WW2 #OnThisDay #History #Timberwolves",
+  "thumbnailCheck": "Pass: first frame is a rifleman aiming over a wall; at 2 seconds he fires, smoke at the muzzle. Opening tagged \"combat or firing\" from the frames at 0.3 and 2 seconds.",
+  "videoTime": "19:00 America/Denver",
+  "scheduled": "Buffer, all six channels, 7 p.m. 17 Nov"
+ },
+ "buffer": {
+  "x_film": "6af6a2ebc1a0010a5bfedcce",
+  "instagram_reel": "6af6a2eee1d8eff610a2801c",
+  "threads_film": "6af6a2f1da25c4db3e9968a6",
+  "facebook_film": "6af6a2f35ec1c9d5be60fa2d",
+  "tiktok": "6af6a2f55ec1c9d5be60fa70",
+  "youtube": "6af6a2fbe1d8eff610a28176",
+  "x": "6af7cf02bb36d00909e36d1f",
+  "instagram": "6af7cefad16af15d4deafcd5",
+  "threads": "6af7cefe4b28296eb12ebfe6",
+  "facebook": "6af7cef6bb36d00909e36866"
+ },
+ "declass_line": false,
+ "body": "Maj. Gen. Terry Allen drilled his division in something most commanders avoided: attacking in the dark. Omar Bradley later called it \"the only division I know of that was prepared for night combat.\"\n\n17 November 1944. Allen's 104th Infantry Division, the Timberwolves, pressed its attack northeast of Stolberg, Germany. The prize was the Donnerberg, Hill 287, guarded by mines, wire and three giant pillboxes, with German observers on top. The attack went in at noon behind fighter bombers and a detailed artillery plan, and still made little headway.\n\nAround noon the next day the defense cracked. That night one company slipped almost 1,000 yards through the dark Eschweiler woods to seize a road junction.",
+ "addons": [],
+ "hashtags": "#OnThisDay #WW2",
+ "threads": "Maj. Gen. Terry Allen drilled his division in something most commanders avoided: attacking in the dark.\n\n17 November 1944. His 104th Infantry Division, the Timberwolves, struck at Hill 287 near Stolberg, Germany. The next night one company slipped almost 1,000 yards through the dark woods to take a road junction.",
+ "focusX": 50,
+ "focusY": 50,
+ "zoom": 100
 }

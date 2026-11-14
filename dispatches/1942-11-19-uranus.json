@@ -165,6 +165,53 @@
    "Germany",
    "Romania"
   ],
-  "lens": "soviet"
- }
+  "lens": "soviet",
+  "video": {
+   "kind": "Living Card",
+   "opening": "motion",
+   "sound": "silent"
+  }
+ },
+ "video": {
+  "footage": "footage/1942-11-19-uranus.mp4",
+  "focusX": 50,
+  "focusY": 50,
+  "sourceUrl": "https://catalog.archives.gov/id/36071",
+  "note": "Soviet newsreel footage inside The Battle of Russia (1943, U.S. War Department, Why We Fight 5), 111-OF-5 reel 10 (NARA 36071). The U.S. film carries narration and score, so the clip runs silent. Clip from the research copy footage/1942-11-19-uranus-reel.mp4 (pillarbox cropped): 1:25.7 to 1:29.9 Soviet cavalry gallop across the snow; 2:23.5 to 2:31.3 Soviet infantry charge across the snow; 1:33.7 to 1:37.5 a column of tanks on a snowy road. The map, title cards, the possibly staged link up embrace (2:32), and the Operation Ring tanks (4:40) are left out. Shots are not dated to 19 November.",
+  "hook": "Four days later, a whole German army was trapped."
+ },
+ "kit": {
+  "file": "kits/dispatch-071-kit.md",
+  "filmCaption": "Soviet film of the Stalingrad counteroffensive, November 1942: cavalry at the gallop, infantry charging across open snow, tanks on the move.\n\nAmerican audiences saw this footage in the U.S. Army's 1943 film The Battle of Russia. The shots are not dated to 19 November, the morning Operation Uranus opened, but they come from the winter offensive it started.",
+  "youtubeTitle": "Soviet Cavalry and Tanks at Stalingrad: Real Film, November 1942 #shorts",
+  "youtubeDescription": "At 07:20 Moscow time on 19 November 1942, Soviet gunners on the Don northwest of Stalingrad received the code word \"Siren\". Ten minutes later about 3,500 guns and mortars opened fire through fog and snow. At 08:50 the 5th Tank and 21st Armies attacked the Romanian Third Army, whose antitank guns were no heavier than 47 mm; its line broke by noon. That night Army Group B stopped all German attacks inside Stalingrad. On 20 November a second blow came from south of the city, and on 23 November the two pincers met near Kalach on the Don, trapping the German Sixth Army and part of the Fourth Panzer Army. Hitler ordered them to hold and be supplied by air. The Sixth Army surrendered at the start of February 1943.\n\nThis is Soviet newsreel film of the Stalingrad counteroffensive, November 1942, as used in the U.S. War Department film The Battle of Russia (1943). The shots are not dated to 19 November. The U.S. film carries narration and music, so this clip runs silent.\n\nFilm: The Battle of Russia (U.S. War Department, 1943), 111-OF-5 reel 10, U.S. National Archives (catalog.archives.gov/id/36071), public domain.\nSources: Operation Uranus, Wikipedia; Earl F. Ziemke and Magna E. Bauer, Moscow to Stalingrad: Decision in the East, Chapter XXII, US Army Center of Military History (HyperWar transcription); Antony Beevor, Stalingrad: The Fateful Siege 1942 to 1943 (Viking, 1998), chapters 14 and 15; Battle of Stalingrad, part 4: the Soviet offensive, HistoryOfWar.org.\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\n\n#Shorts #WW2 #OnThisDay #History",
+  "tiktokCaption": "Four days later, a whole German army was trapped. Soviet film of the Stalingrad counteroffensive, Nov 1942. #WW2 #OnThisDay #History #Stalingrad",
+  "thumbnailCheck": "Pass: first frame is Soviet cavalry galloping across the snow at close range; at 2 seconds riders still fill the frame at full gallop. Opening tagged \"motion\" from the frames at 0.3 and 2 seconds.",
+  "videoTime": "12:00 America/Denver",
+  "scheduled": "Buffer, all six channels, noon 19 Nov"
+ },
+ "buffer": {
+  "x_film": "6af680d25ec1c9d5be5796b2",
+  "instagram_reel": "6af680d5da25c4db3e909f12",
+  "threads_film": "6af680d7e1d8eff61099a590",
+  "facebook_film": "6af680da5ec1c9d5be5798a9",
+  "youtube": "6af680e1c1a0010a5bf588ae",
+  "tiktok": "6af680e2da25c4db3e90a164",
+  "x": "6af7cf6bbb36d00909e390e0",
+  "instagram": "6af7cf624b28296eb12edf26",
+  "threads": "6af7cf6681e1228421dceca8",
+  "facebook": "6af7cf5dbb36d00909e38bb9"
+ },
+ "declass_line": true,
+ "declass_variant": "ET",
+ "declass_variant_ig": "IT",
+ "body": "The code word was \"Siren.\" Ten minutes after it came through, about 3,500 Soviet guns and mortars opened fire into the fog.\n\n19 November 1942. The Red Army began Operation Uranus on the Don, northwest of Stalingrad. Fog and snow hid the targets, but the gunners had ranged in days earlier and the fire stayed accurate.\n\nAt 08:50 the 5th Tank and 21st Armies attacked the Romanian Third Army from the Serafimovich bridgehead and near Kletskaya. The Romanians had no antitank gun heavier than 47 mm. Their line broke by noon, and Soviet tank corps drove through the gaps.\n\nThat night Army Group B halted every German attack inside Stalingrad and pulled panzer divisions out of the city.\n\nIt had all been prepared in secret. Since the start of the month, Volga Flotilla boats had carried 160,000 troops and 430 tanks across the river at night.\n\nOn 23 November the pincers met near Sovetsky, east of Kalach, closing a ring around the German Sixth Army and part of the Fourth Panzer Army, between 250,000 and 300,000 Axis troops.",
+ "addons": [
+  "Operation Uranus is now a card in Declass, our free WW2 card game: ww2dispatches.com/declass #Declass"
+ ],
+ "hashtags": "#OnThisDay #WW2 #Stalingrad",
+ "threads": "The code word was \"Siren.\" Ten minutes after it came through, about 3,500 Soviet guns and mortars opened fire into the fog.\n\n19 November 1942. Operation Uranus smashed into the Romanian Third Army on the Don. By noon the line had broken, and Soviet tanks were through.\n\nOperation Uranus is now a card in Declass, our free WW2 card game: ww2dispatches.com/declass",
+ "focusX": 50,
+ "focusY": 50,
+ "zoom": 100
 }

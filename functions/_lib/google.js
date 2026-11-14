@@ -32,3 +32,16 @@ export async function verifyGoogleToken(token, clientId) {
   if (!claims.sub) throw new Error('no subject');
   return claims.sub; // nothing else (name, email, picture) is kept
 }
+
+// The same check, also handing back the account's verified address so the sign in can scramble it into a
+// second id (13 Nov 2026: a Google player can then sign in by email code too). The address itself is
+// never stored; see functions/_lib/emailcode.js.
+export async function verifyGoogleIdentity(token, clientId) {
+  const sub = await verifyGoogleToken(token, clientId);
+  let email = '';
+  try {
+    const claims = JSON.parse(new TextDecoder().decode(unb64url(String(token).split('.')[1])));
+    if (claims.email && (claims.email_verified === true || claims.email_verified === 'true')) email = String(claims.email);
+  } catch {}
+  return { sub, email };
+}

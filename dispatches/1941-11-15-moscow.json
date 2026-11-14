@@ -170,6 +170,83 @@
    "Soviet Union",
    "Germany"
   ],
-  "lens": "soviet"
- }
+  "lens": "soviet",
+  "video": {
+   "kind": "Living Card",
+   "opening": "motion",
+   "sound": "silent"
+  },
+  "video_b": {
+   "kind": "Living Card",
+   "opening": "combat or firing",
+   "sound": "silent"
+  }
+ },
+ "video": {
+  "footage": "footage/1941-11-15-moscow.mp4",
+  "focusX": 50,
+  "focusY": 50,
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:1942_%D0%A0%D0%B0%D0%B7%D0%B3%D1%80%D0%BE%D0%BC_%D0%BD%D0%B5%D0%BC%D0%B5%D1%86%D0%BA%D0%B8%D1%85_%D0%B2%D0%BE%D0%B9%D1%81%D0%BA_%D0%BF%D0%BE%D0%B4_%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%BE%D0%B9.webm",
+  "note": "Defeat of the German Armies near Moscow (1942, Central Studio of Documentary Film; U.S. release Moscow Strikes Back), Soviet film, public domain (PD-Russia-1996). Cut on 12 Nov 2026 from the Wikimedia Commons original upload (640 x 480, same timeline as the Source Film copy; the title card ends at 12:31), fetched by range request for the stretch MOS 12:20 to 17:10 only (stored on R2 as footage/1941-11-15-moscow-reel.mp4 for the 7 p.m. second cut). Noon clip from the first half of the Film Library stretch 12:32 to 16:47: 13:04.4 to 13:09.4 a T-34 charges past through the snow; 12:45.0 to 12:46.9 a heavy gun fires from a camouflaged forest position; 13:11.9 to 13:15.5 ski troops in white move through the brush; 13:17.3 to 13:21.6 light tanks move up. A field gun shot (12:48) was left out because a crewman wears what may be a German helmet. The aircraft shots (13:42 to 14:40, including a plane marked with a swastika) are left out, as is anything that could be German newsreel. Narration and score run over the film, so the clip runs silent. Shots are not dated to 15 November.",
+  "hook": "Stalin asked Zhukov if Moscow could be held."
+ },
+ "kit": {
+  "file": "kits/dispatch-059-kit.md",
+  "filmCaption": "Soviet film of the defense of Moscow, autumn 1941: a T-34 charging through the snow, a heavy gun firing from a forest position, ski troops in white, and light tanks moving up.\n\nThe shots come from the 1942 Soviet documentary Defeat of the German Armies near Moscow, released in America as Moscow Strikes Back. They are not dated to 15 November, the day the German drive on the capital began again, but they show the army that stood in its way.",
+  "youtubeTitle": "The Red Army Defends Moscow: Soviet Film, 1941 #shorts",
+  "youtubeDescription": "Operation Typhoon, the German drive on Moscow, had stalled in the autumn mud. When frost hardened the ground in mid November 1941, Army Group Centre attacked again: on the morning of 15 November the German Ninth Army struck south of Kalinin, and the next day two panzer groups joined in north of the city. Moscow had been under a state of siege since 20 October, and hundreds of thousands of Muscovites, most of them women, dug antitank ditches around it. General Georgy Zhukov's Western Front received about 100,000 men, 300 tanks and 2,000 guns in the first half of November. On 19 November Stalin asked Zhukov whether Moscow could be held; Zhukov said it would be, but that he needed reserves. German tanks came within 20 miles of the Kremlin before the attack ran out of strength in deep cold, and in early December the Red Army struck back.\n\nThis is Soviet film of the defense of Moscow in the autumn and winter of 1941, from the documentary Defeat of the German Armies near Moscow (1942). The shots are not dated to 15 November. The film carries narration and music, so this clip runs silent.\n\nFilm: Defeat of the German Armies near Moscow (Central Studio of Documentary Film, 1942), via Wikimedia Commons, public domain.\nSources: Battle of Moscow, Wikipedia; Earl F. Ziemke and Magna E. Bauer, Moscow to Stalingrad: Decision in the East, Chapter III, US Army Center of Military History (HyperWar transcription); Jonathan Dimbleby, Moscow's citizens veered toward mass panic as the German army approached, HistoryNet; Decree of the State Defence Committee on the state of siege in Moscow, 19 October 1941 (Marxists Internet Archive).\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\n\n#Shorts #WW2 #OnThisDay #History",
+  "tiktokCaption": "Stalin asked Zhukov if Moscow could be held. This is the army that had to answer. Soviet film, autumn 1941. #WW2 #OnThisDay #History #Moscow",
+  "thumbnailCheck": "Pass: first frame is a whitewashed T-34 pushing through snowy trees; at 2 seconds it is charging toward the camera, throwing up snow. Opening tagged \"motion\" from the frames at 0.3 and 2 seconds.",
+  "videoTime": "12:00 America/Denver",
+  "scheduled": "Buffer, all six channels, noon 15 Nov"
+ },
+ "buffer": {
+  "x_film": "6af695ede1d8eff6109f6464",
+  "instagram_reel": "6af695f0c1a0010a5bfb9ed1",
+  "threads_film": "6af695f3ba218f32637b8e65",
+  "facebook_film": "6af695f5ba218f32637b8f33",
+  "youtube": "6af695fce1d8eff6109f6965",
+  "tiktok": "6af695ffba218f32637b92a7",
+  "x_film_b": "6af6a29ada25c4db3e994bef",
+  "instagram_reel_b": "6af6a2a2e1d8eff610a263db",
+  "threads_film_b": "6af6a2a4fb90ccefdd1f41f3",
+  "facebook_film_b": "6af6a2a7fb90ccefdd1f4238",
+  "tiktok_b": "6af6a2aafb90ccefdd1f427b",
+  "youtube_b": "6af6a2be5ec1c9d5be60ee63",
+  "x": "6af7cee6d16af15d4deaebca",
+  "instagram": "6af7ceddbb36d00909e35ec1",
+  "threads": "6af7cee0d16af15d4deae5ff",
+  "facebook": "6af7ced778196a0a973800a8"
+ },
+ "video_b": {
+  "footage": "footage/1941-11-15-moscow-b.mp4",
+  "focusX": 50,
+  "focusY": 50,
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:1942_%D0%A0%D0%B0%D0%B7%D0%B3%D1%80%D0%BE%D0%BC_%D0%BD%D0%B5%D0%BC%D0%B5%D1%86%D0%BA%D0%B8%D1%85_%D0%B2%D0%BE%D0%B9%D1%81%D0%BA_%D0%BF%D0%BE%D0%B4_%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%BE%D0%B9.webm",
+  "note": "Second cut, 7 p.m. Defeat of the German Armies near Moscow (1942, Central Studio of Documentary Film), Soviet film, public domain (PD-Russia-1996). Cut on 13 Nov 2026 from the R2 copy footage/1941-11-15-moscow-reel.mp4 (MOS 12:20 to 17:10; reel time + 12:20 = MOS time), from the second half of the Film Library stretch: reel 2:48.3 to 2:53.5 (MOS 15:08) riflemen charge across the snow with bayonets fixed; 2:54.3 to 3:00.5 (MOS 15:14) a cavalry charge over an open field; 3:04.0 to 3:07.8 (MOS 15:24) infantry advancing through snow. Left out: the gun crews in the forest (2:22 to 2:35, too close to the noon gun shot), a gun crew in helmets that could be German (2:34), a KV tank shot with a body in the snow (2:38), and the dead, prisoners and wreckage from 3:20 on. No shot of the noon clip (reel 0:25 to 1:02) appears. Narration and score run over the film, so the clip runs silent. Shots are not dated to 15 November.",
+  "hook": "The panzers got within 20 miles of the Kremlin."
+ },
+ "kit_b": {
+  "file": "kits/dispatch-059-b-kit.md",
+  "filmCaption": "Bayonets fixed, Soviet riflemen run across open snow. Then a cavalry squadron gallops over a frozen field, and more infantry push forward.\n\nSoviet cameramen shot these scenes during the battle for Moscow in 1941. The film gives no day, so read them as that autumn and winter's fighting, not 15 November itself. The original carries narration and music, so this cut runs silent.",
+  "youtubeTitle": "Cavalry and Bayonets in the Snow at Moscow, 1941 #shorts",
+  "youtubeDescription": "In mid November 1941, with the autumn mud frozen hard, the German army renewed its drive on Moscow. The Ninth Army attacked south of Kalinin on 15 November, two panzer groups followed the next day, and Guderian struck below Tula on the 18th. Rokossovsky's 16th Army gave ground slowly on the Volokolamsk road while Muscovites, most of them women, dug ditches and trenches around the capital. Klin fell on 23 November, and by the 28th German spearheads stood less than 20 miles from the Kremlin. Then the attack ran out of strength in deep cold, and in early December the Red Army struck back.\n\nThis film shows Soviet riflemen charging with bayonets, a cavalry charge across the snow, and infantry advancing, from a 1942 Soviet documentary of the battle. The shots are not dated to 15 November. The film's narration and score are left off, so the clip is silent.\n\nFilm: Defeat of the German Armies near Moscow (Central Studio of Documentary Film, 1942), via Wikimedia Commons, public domain.\nSources: Battle of Moscow, Wikipedia; Earl F. Ziemke and Magna E. Bauer, Moscow to Stalingrad: Decision in the East, Chapter III, US Army Center of Military History (HyperWar transcription); Jonathan Dimbleby, HistoryNet; Decree of the State Defence Committee on the state of siege in Moscow, 19 October 1941 (Marxists Internet Archive).\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\n\n#Shorts #WW2 #OnThisDay #History",
+  "tiktokCaption": "The Germans came within 20 miles of the Kremlin. Riflemen and cavalry like these held the line. Soviet film, 1941. #WW2 #OnThisDay #History #BattleOfMoscow",
+  "thumbnailCheck": "Pass: first frame is Soviet riflemen charging out of a trench line across the snow with bayonets fixed; at 2 seconds they are still running forward. Different opening from the noon cut (a T-34 in the snow). Opening tagged \"combat or firing\" from the frames at 0.3 and 2 seconds.",
+  "videoTime": "19:00 America/Denver",
+  "scheduled": "Buffer, all six channels, 7 p.m. 15 Nov",
+  "cut": "second cut, 7 p.m."
+ },
+ "declass_line": true,
+ "declass_variant": "ET",
+ "declass_variant_ig": "IT",
+ "body": "For weeks the German drive on Moscow had been stuck in the autumn mud. Then the frost came, the ground set hard, and the panzers could move again.\n\n15 November 1941. Army Group Centre renewed Operation Typhoon. The German Ninth Army struck first, south of Kalinin. The next day the 3rd and 4th Panzer Groups joined in, swinging north of the capital toward Klin and Solnechnogorsk. On 18 November Guderian's Second Panzer Army pushed off below Tula.\n\nMoscow had been under a state of siege since 20 October. Somewhere between 250,000 and 600,000 Muscovites, most of them women, had dug antitank ditches and trenches around the city, and its workers had formed 12 militia divisions.\n\nGeneral Georgy Zhukov's Western Front stood in the way, reinforced in early November by about 100,000 men, 300 tanks and 2,000 guns. Rokossovsky's 16th Army gave ground slowly on the Volokolamsk road.\n\nKlin fell on 23 November, and German tanks crossed the Moscow Volga Canal at Yakhroma. Then the cold deepened, the attack ran out of strength, and in early December the Red Army struck back.",
+ "addons": [
+  "The Battle of Moscow is now a card in Declass, our free WW2 card game: ww2dispatches.com/declass #Declass"
+ ],
+ "hashtags": "#OnThisDay #WW2",
+ "threads": "For weeks the German drive on Moscow had been stuck in the autumn mud. Then the frost came, the ground set hard, and the panzers could move again.\n\n15 November 1941. Army Group Centre renewed its attack on the Soviet capital. Up to 600,000 Muscovites, most of them women, had already dug antitank ditches around the city.\n\nThe Battle of Moscow is now a card in Declass, our free WW2 card game: ww2dispatches.com/declass",
+ "focusX": 25,
+ "focusY": 50,
+ "zoom": 100
 }

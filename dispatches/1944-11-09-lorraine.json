@@ -162,7 +162,8 @@
    "kind": "Living Card",
    "opening": "motion",
    "sound": "silent"
-  }
+  },
+  "lens": "us"
  },
  "game": {
   "value": null,
@@ -205,5 +206,19 @@
  "alt": "Archival photo of jeeps driving down a muddy street between bombed out brick houses in a ruined Lorraine town. Text: 9 NOV 1944, Lorraine, France. Attack, or name your successor.",
  "focusX": 50,
  "focusY": 40,
- "zoom": 100
+ "zoom": 100,
+ "links": {
+  "x_film": "https://x.com/2110501302996492288/status/2119868420803952931",
+  "instagram_reel": "https://www.instagram.com/reel/DfiCfG6GVAd/",
+  "threads_film": "https://www.threads.com/@ww2dispatches/post/DfiCbTfpYcv",
+  "facebook_film": "https://www.facebook.com/reel/1764266054644035/",
+  "youtube": "https://www.youtube.com/shorts/9uX3NyA7JMM",
+  "tiktok": "https://www.tiktok.com/@ww2dispatches/video/7706249363550506253?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
+  "x": "https://x.com/2110501302996492288/status/2119808158428266957",
+  "instagram": "https://www.instagram.com/p/DfhnDkcERsn/",
+  "threads": "https://www.threads.com/@ww2dispatches/post/DfhnCOsFI2O",
+  "facebook": "https://www.facebook.com/122101493613512139/posts/122114054541512139",
+  "posted": "2026-11-09"
+ },
+ "newsletter": 3
 }

@@ -128,7 +128,8 @@
   ],
   "nations": [
    "US"
-  ]
+  ],
+  "lens": "us"
  },
  "game": {
   "value": null,
@@ -147,5 +148,12 @@
   "instagram": "6aee959a9214322f68c81142",
   "threads": "6aee959d229bf05daf249155",
   "facebook": "6aee95a2af7e526d43f7f7b2"
+ },
+ "links": {
+  "x": "https://x.com/2110501302996492288/status/2121393277395935725",
+  "instagram": "https://www.instagram.com/p/Dfs381GGliL/",
+  "threads": "https://www.threads.com/@ww2dispatches/post/Dfs32QljjH4",
+  "facebook": "https://www.facebook.com/122101493613512139/posts/122115523647512139",
+  "posted": "2026-11-13"
  }
 }

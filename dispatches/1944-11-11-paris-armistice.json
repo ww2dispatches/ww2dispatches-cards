@@ -157,7 +157,8 @@
    "kind": "Living Card",
    "opening": "motion",
    "sound": "silent"
-  }
+  },
+  "lens": "commonwealth"
  },
  "game": {
   "value": null,
@@ -208,5 +209,19 @@
  "focusX": 50,
  "focusY": 40,
  "zoom": 100,
- "question": true
+ "question": true,
+ "links": {
+  "x_film": "https://x.com/2110501302996492288/status/2120593547980112305",
+  "instagram_reel": "https://www.instagram.com/reel/DfnMQvCk9uY/",
+  "threads_film": "https://www.threads.com/@ww2dispatches/post/DfnMKwLqAyX",
+  "facebook_film": "https://www.facebook.com/reel/1481285457204307/",
+  "youtube": "https://www.youtube.com/shorts/YKgNjW0jQ6k",
+  "tiktok": "https://www.tiktok.com/@ww2dispatches/video/7706991780385852686?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
+  "x": "https://x.com/2110501302996492288/status/2120533584213651905",
+  "instagram": "https://www.instagram.com/p/Dfmw_mqFDYB/",
+  "threads": "https://www.threads.com/@ww2dispatches/post/Dfmw73-ESkz",
+  "facebook": "https://www.facebook.com/122101493613512139/posts/122114808561512139",
+  "posted": "2026-11-11"
+ },
+ "newsletter": 3
 }
