@@ -96,35 +96,21 @@ When they left, Gambier Bay and Hoel were still missing.
 
 Each morning brought a new dispatch. Catch up on any you missed:
 
-**No. 001 · USS Kearny torpedoed**, 17 October 1941 · [Read on X](https://x.com/ww2dispatches/status/2111457688848654391)
-
-**No. 003 · The Nuremberg indictment is filed**, 18 October 1945 · [Read on X](https://x.com/ww2dispatches/status/2111820037543563397)
-
-**No. 005 · Tin cans go to war**, 19 October 1942 · [Read on X](https://x.com/ww2dispatches/status/2112182635883647299)
-
-**No. 007 · MacArthur returns to Leyte**, 20 October 1944 · [Read on X](https://x.com/ww2dispatches/status/2112545352200929674)
-
-**No. 009 · Aachen surrenders**, 21 October 1944 · [Read on X](https://x.com/ww2dispatches/status/2112907831020052689)
-
-**No. 011 · Mark Clark's secret landing**, 22 October 1942 · [Read on X](https://x.com/ww2dispatches/status/2113270174803484892)
-
-**No. 013 · The barrage at El Alamein**, 23 October 1942 · [Read on X](https://x.com/ww2dispatches/status/2113632498965983357)
-
-**No. 015 · UN Charter takes effect**, 24 October 1945 · [Read on X](https://x.com/ww2dispatches/status/2113994765653930424)
-
-**No. 017 · The last stand of Taffy 3**, 25 October 1944 · [Read on X](https://x.com/ww2dispatches/status/2114356832424603954)
-
-**No. 019 · Hornet's last fight**, 26 October 1942 · [Read on X](https://x.com/ww2dispatches/status/2114719552198070591)
-
-**No. 021 · The guns at Outpost Snipe**, 27 October 1942 · [Read on X](https://x.com/ww2dispatches/status/2115081908950315241)
-
-**No. 023 · Greece says no**, 28 October 1940 · [Read on X](https://x.com/ww2dispatches/status/2115444509077025038)
-
-**No. 025 · America's draft lottery**, 29 October 1940 · [Read on X](https://x.com/ww2dispatches/status/2115806958280192179)
-
-**No. 027 · Rescue of the Lost Battalion**, 30 October 1944 · [Read on X](https://x.com/ww2dispatches/status/2116169393218470164)
-
-**No. 029 · Reuben James is sunk**, 31 October 1941 · [Read on X](https://x.com/ww2dispatches/status/2116531620773576719)
+* No. 001, USS Kearny torpedoed: [Read on Threads](https://www.threads.com/@ww2dispatches/post/DemRqwUFKAd)
+* No. 003, The Nuremberg indictment is filed: [Read on Threads](https://www.threads.com/@ww2dispatches/post/Deo2eaElAmq)
+* No. 005, Tin cans go to war: [Read on Threads](https://www.threads.com/@ww2dispatches/post/DerbZB_FbHY)
+* No. 007, MacArthur returns to Leyte: [Read on Threads](https://www.threads.com/@ww2dispatches/post/DeuATnXlHAS)
+* No. 009, Aachen surrenders: [Read on Threads](https://www.threads.com/@ww2dispatches/post/DewlIvIFgJi)
+* No. 011, Mark Clark's secret landing: [Read on Threads](https://www.threads.com/@ww2dispatches/post/DezJ6_ukUa-)
+* No. 013, The barrage at El Alamein: [Read on Threads](https://www.threads.com/@ww2dispatches/post/De1us1qEcYN)
+* No. 015, UN Charter takes effect: [Read on Threads](https://www.threads.com/@ww2dispatches/post/De4TYvckadp)
+* No. 017, The last stand of Taffy 3: [Read on Threads](https://www.threads.com/@ww2dispatches/post/De64InTlAOV)
+* No. 019, Hornet's last fight: [Read on Threads](https://www.threads.com/@ww2dispatches/post/De9dDGJFCs6)
+* No. 021, The guns at Outpost Snipe: [Read on Threads](https://www.threads.com/@ww2dispatches/post/DfAB4Bmkd4f)
+* No. 023, Greece says no: [Read on Threads](https://www.threads.com/@ww2dispatches/post/DfCmqxBEVKT)
+* No. 025, America's draft lottery: [Read on Threads](https://www.threads.com/@ww2dispatches/post/DfFLec0EfJa)
+* No. 027, Rescue of the Lost Battalion: [Read on Threads](https://www.threads.com/@ww2dispatches/post/DfHwUgroB1d)
+* No. 029, Reuben James is sunk: [Read on Threads](https://www.threads.com/@ww2dispatches/post/DfKVEfOFXuB)
 
 ---
 

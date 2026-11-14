@@ -108,7 +108,13 @@ In Munich today, a neon memorial lights up every night at 9:20, for one minute.
 
 Each morning brought a new dispatch. Catch up on any you missed:
 
-ALSO_THIS_WEEK
+* No. 045, Torch lands in North Africa: [Read on Threads](https://www.threads.com/@ww2dispatches/post/DffCBoVlBv0)
+* No. 047, Patton attacks in the rain: [Read on Threads](https://www.threads.com/@ww2dispatches/post/DfhnCOsFI2O)
+* No. 049, Ike in the mud: [Read on Threads](https://www.threads.com/@ww2dispatches/post/DfkL5DsFtw2)
+* No. 051, Churchill and de Gaulle in Paris: [Read on Threads](https://www.threads.com/@ww2dispatches/post/Dfmw73-ESkz)
+* No. 053, The Tirpitz goes down: [Read on Threads](https://www.threads.com/@ww2dispatches/post/DfpVqQmIFMR)
+* No. 055, Halsey's carriers hit Manila again: [Read on Threads](https://www.threads.com/@ww2dispatches/post/Dfr6WXMEbv1)
+* No. 057, Patton crosses the Moselle: [Read on Threads](https://www.threads.com/@ww2dispatches)
 
 ---
 

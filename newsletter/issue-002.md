@@ -102,19 +102,13 @@ The country he spied for took twenty years to say his name. A Tokyo waitress kep
 
 Each morning brought a new dispatch. Catch up on any you missed:
 
-**No. 031 · Marines storm Cape Torokina**, 1 November 1943 · [Read on X](https://x.com/ww2dispatches/status/2116908548990837169)
-
-**No. 033 · Supercharge breaks Rommel**, 2 November 1942 · [Read on X](https://x.com/ww2dispatches/status/2117271745753129048)
-
-**No. 035 · Paper bombs ride the jet stream**, 3 November 1944 · [Read on X](https://x.com/ww2dispatches/status/2117633937287622791)
-
-**No. 037 · Rommel retreats from Alamein**, 4 November 1942 · [Read on X](https://x.com/ww2dispatches/status/2117996447995965825)
-
-**No. 039 · Carriers strike Manila Bay**, 5 November 1944 · [Read on X](https://x.com/ww2dispatches/status/2118359096298459314)
-
-**No. 041 · The ship that lied**, 6 November 1941 · [Read on X](https://x.com/ww2dispatches/status/2118721328123445549)
-
-**No. 043 · Roosevelt wins a fourth term**, 7 November 1944 · [Read on X](https://x.com/ww2dispatches)
+* No. 031, Marines storm Cape Torokina: [Read on Threads](https://www.threads.com/@ww2dispatches/post/DfNAdJ3lY4H)
+* No. 033, Supercharge breaks Rommel: [Read on Threads](https://www.threads.com/@ww2dispatches/post/DfPlllpEXoY)
+* No. 035, Paper bombs ride the jet stream: [Read on Threads](https://www.threads.com/@ww2dispatches/post/DfSKWgUG56u)
+* No. 037, Rommel retreats from Alamein: [Read on Threads](https://www.threads.com/@ww2dispatches/post/DfUvJAOEZar)
+* No. 039, Carriers strike Manila Bay: [Read on Threads](https://www.threads.com/@ww2dispatches/post/DfXUDncnKaI)
+* No. 041, The ship that lied: [Read on Threads](https://www.threads.com/@ww2dispatches/post/DfZ4y0TDu2v)
+* No. 043, Roosevelt wins a fourth term: [Read on Threads](https://www.threads.com/@ww2dispatches/post/DfcdbU7FNLD)
 
 ---
 
