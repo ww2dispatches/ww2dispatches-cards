@@ -1259,7 +1259,7 @@
           renderMailBox(el.querySelector('.mailbox'), id);
         }
         const g = el.querySelector('.ggl');
-        if (g && gisReady && !g.dataset.done) { google.accounts.id.renderButton(g, { theme: 'outline', size: 'large', shape: 'rectangular', text: 'signin_with', width: 280 }); g.dataset.done = '1'; }
+        if (g && gisReady && !g.dataset.done) { google.accounts.id.renderButton(g, { theme: 'outline', size: 'large', shape: 'rectangular', text: 'signin_with', width: 280 }); g.dataset.done = '1'; el.classList.add('gready'); }
         return;
       }
       if (IN_APP) return renderOutBox(el);
@@ -1288,7 +1288,7 @@
     const saving = () => Boolean(STARTER) && !signedIn();
     const pending = mailState();
     const say = (t, bad) => { const m = box.querySelector('.mailmsg'); if (m) { m.textContent = t || ''; m.classList.toggle('bad', Boolean(bad)); } };
-    const why = { 'bad email': "That doesn't look like an email address. Check it and try again.", slow: 'Too many codes sent to that address. Try again in an hour.', busy: "We've sent all the codes we can today. Please try again tomorrow, or sign in with Google.", 'mail failed': "We couldn't send the email. Check the address and try again.", 'wrong code': "That code didn't match. Check the email and try again.", 'code expired': 'That code has run out. Send a new one.', 'code locked': 'Too many wrong tries. Send a new code.', 'email sign in is off': 'Email sign in is not available right now.' };
+    const why = { 'bad email': "That doesn't look like an email address. Check it and try again.", slow: 'Too many codes sent to that address. Try again in an hour.', many: 'Too many codes sent from this connection. Try again in an hour.', busy: "We've sent all the codes we can today. Please try again tomorrow, or sign in with Google.", 'mail failed': "We couldn't send the email. Check the address and try again.", 'wrong code': "That code didn't match. Check the email and try again.", 'code expired': 'That code has run out. Send a new one.', 'code locked': 'Too many wrong tries. Send a new code.', 'email sign in is off': 'Email sign in is not available right now.' };
     if (!pending) {
       box.innerHTML = '<form class="mailform" novalidate><label for="mail_' + slot + '">' + (saving() ? 'Save with your email' : 'Sign in with your email') + '</label>'
         + '<input id="mail_' + slot + '" type="email" inputmode="email" autocomplete="email" autocapitalize="off" spellcheck="false" placeholder="you@example.com" required>'

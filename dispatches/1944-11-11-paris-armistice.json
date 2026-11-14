@@ -209,5 +209,10 @@
  "focusX": 50,
  "focusY": 40,
  "zoom": 100,
- "question": true
+ "question": true,
+ "links": {
+  "threads": "https://www.threads.com/@ww2dispatches/post/Dfmw73-ESkz",
+  "youtube": "https://www.youtube.com/shorts/YKgNjW0jQ6k",
+  "posted": "2026-11-11"
+ }
 }

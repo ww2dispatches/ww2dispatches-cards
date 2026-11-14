@@ -7,6 +7,8 @@ import releases from '../_data/newsletter.json';
 
 export async function onRequest(context) {
   const url = new URL(context.request.url);
+  // www.ww2dispatches.com goes to the main address (13 Nov 2026).
+  if (url.hostname === 'www.ww2dispatches.com') { url.hostname = 'ww2dispatches.com'; return Response.redirect(url.toString(), 301); }
   const now = Date.now();
   const m = url.pathname.match(/^\/newsletter\/(\d{3})(?:\.html)?\/?$/);
   if (m) {

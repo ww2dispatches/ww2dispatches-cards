@@ -21,6 +21,7 @@
   var path = location.pathname.replace(/\/+$/, '') || '/';
   var page = path === '/' || path === '/index.html' ? 'home' : /^\/declass(\/index\.html)?$/.test(path) ? 'declass'
     : /^\/newsletter(\/index\.html)?$/.test(path) ? 'newsletter' : /^\/newsletter\//.test(path) ? 'issue'
+    : /^\/campaign-series(\/|$)/.test(path) ? 'campaign' : /^\/name-this(\/|$)/.test(path) ? 'namethis'
     : /^\/privacy/.test(path) ? 'privacy' : /^\/support/.test(path) ? 'support' : 'other';
   if (me()) { send({ admin: 1 }); return; }
   var d = new Date(), today = d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate();

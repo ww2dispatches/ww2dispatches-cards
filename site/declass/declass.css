@@ -1316,3 +1316,5 @@ html.ztrial #stage2{cursor:zoom-in}
 .gslot iframe{color-scheme:light}
 .signbar .mailform label{color:var(--red)}
 .mailform .btn{margin:0;box-sizing:border-box}
+/* The "or" line waits for Google's button, so it never sits over an empty gap when Google fails to load (13 Nov 2026). */
+.mailslot:not(.gready) .gor { display: none; }

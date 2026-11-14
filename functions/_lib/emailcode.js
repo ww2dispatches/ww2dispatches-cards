@@ -7,7 +7,9 @@
 // keyed hash for ten minutes, then deleted.
 //
 // Tables are created on first use, like the Code Room and tally tables (no setup step):
-//   email_codes: one pending code per scrambled email id, plus one counter row per day ("_day:...").
+//   email_codes: one pending code per scrambled email id, plus one counter row per day ("_day:..."),
+//                plus one counter per connection for the past hour ("_net:...", a keyed hash of the IP
+//                address, never the address itself; swept within a day like the codes).
 //   aliases:     a second scrambled id that points at an existing player, so a player who signed in
 //                with Google can also sign in with the same address by email, and the other way round.
 import { hmac, hmacVerify } from './util.js';
@@ -17,6 +19,7 @@ export const CODE_MINUTES = 10;      // a code works this long
 export const MAX_TRIES = 5;          // wrong guesses before the code is thrown away
 export const RESEND_SECONDS = 60;    // wait between sends to one address
 export const HOURLY_SENDS = 5;       // sends to one address in an hour
+export const NETWORK_HOURLY = 10;    // sends from one internet connection in an hour, any addresses (13 Nov 2026)
 const DEFAULT_DAILY_CAP = 90;        // all sends in a day (the free mail plan allows 100)
 
 const SCHEMA = [
@@ -46,14 +49,21 @@ const sixDigits = (rnd = secureInt) => String(rnd(1000000)).padStart(6, '0');
 const dayKey = t => '_day:' + t.toISOString().slice(0, 10);
 
 // Make a code for this address if the limits allow. Returns {ok: true, code} or {ok: false, why, wait?}.
-// why: 'wait' (asked again too soon), 'slow' (too many this hour), 'busy' (the whole site hit its day's cap).
-export async function makeCode(env, id, t, rnd = secureInt) {
+// why: 'wait' (asked again too soon), 'slow' (too many this hour), 'many' (too many from this connection
+// this hour, so one script can't spend the whole day's cap), 'busy' (the whole site hit its day's cap).
+// net: the connection's IP address, when the request has one (Cloudflare always sends it).
+export async function makeCode(env, id, t, rnd = secureInt, net = '') {
   const db = env.DB, now = Math.floor(t.getTime() / 1000);
   await ensureEmailTables(db);
   const row = await db.prepare('SELECT * FROM email_codes WHERE id = ?').bind(id).first();
   if (row && now - row.sent_at < RESEND_SECONDS) return { ok: false, why: 'wait', wait: RESEND_SECONDS - (now - row.sent_at) };
   const sameHour = row && now - row.window_start < 3600;
   if (sameHour && row.sends >= HOURLY_SENDS) return { ok: false, why: 'slow' };
+  const netId = net ? '_net:' + (await hmac(env.SIGNING_KEY, 'net:' + net)).slice(0, 24) : '';
+  if (netId) {
+    const n = await db.prepare('SELECT sends, window_start FROM email_codes WHERE id = ?').bind(netId).first();
+    if (n && now - n.window_start < 3600 && n.sends >= NETWORK_HOURLY) return { ok: false, why: 'many' };
+  }
   const cap = Number(env.MAIL_DAILY_CAP) > 0 ? Number(env.MAIL_DAILY_CAP) : DEFAULT_DAILY_CAP;
   const day = await db.prepare('SELECT sends FROM email_codes WHERE id = ?').bind(dayKey(t)).first();
   if (day && day.sends >= cap) return { ok: false, why: 'busy' };
@@ -66,6 +76,11 @@ export async function makeCode(env, id, t, rnd = secureInt) {
         window_start = CASE WHEN ? - window_start < 3600 THEN window_start ELSE excluded.window_start END`)
       .bind(id, await codeHash(env, id, code), now + CODE_MINUTES * 60, now, now, now, now),
     db.prepare(`INSERT INTO email_codes (id, sends) VALUES (?, 1) ON CONFLICT (id) DO UPDATE SET sends = sends + 1`).bind(dayKey(t)),
+    ...(netId ? [db.prepare(`INSERT INTO email_codes (id, expires_at, sends, window_start) VALUES (?, ?, 1, ?)
+      ON CONFLICT (id) DO UPDATE SET sends = CASE WHEN ? - window_start < 3600 THEN sends + 1 ELSE 1 END,
+        window_start = CASE WHEN ? - window_start < 3600 THEN window_start ELSE excluded.window_start END,
+        expires_at = CASE WHEN ? - window_start < 3600 THEN window_start + 3600 ELSE excluded.expires_at END`)
+      .bind(netId, now + 3600, now, now, now, now)] : []),
     // sweep: codes long expired and day counters from before yesterday
     db.prepare(`DELETE FROM email_codes WHERE (id NOT LIKE '\\_day:%' ESCAPE '\\' AND expires_at < ?) OR (id LIKE '\\_day:%' ESCAPE '\\' AND id < ?)`)
       .bind(now - 86400, dayKey(new Date(t.getTime() - 86400000))),

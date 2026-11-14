@@ -1,3 +1,5 @@
 User-agent: *
 Allow: /
 Disallow: /api/
+
+Sitemap: https://ww2dispatches.com/sitemap.xml

@@ -8,6 +8,7 @@ Reads every newsletter/issue-NNN.md and writes, in the site's Night Dispatch loo
   site/newsletter/NNN.html     one page per issue, at /newsletter/NNN
   site/newsletter/issues.json  newest first, for the home page's Latest line
   functions/_data/newsletter.json   each issue's release time (UTC)
+  site/sitemap.xml             the site map for search engines (released issues plus the main pages)
 
 An issue is released at its send time, Sunday 7 a.m. Mountain. The pages for an
 issue built ahead (the Friday run builds the coming Sunday's) are committed with
@@ -424,6 +425,19 @@ def main():
         if "—" in it["title"] or "–" in it["title"]:
             print(f"PROBLEM dash in the title of issue {it['id']}")
     print(f"Wrote site/newsletter/ ({len(issues)} issues) and functions/_data/newsletter.json")
+    write_sitemap([it for it in issues if it["release"] <= now])
+
+
+# The site map search engines read (13 Nov 2026), rebuilt here because the issue list is what changes
+# week to week. Released issues only. robots.txt points at it. Pages added later go in PAGES.
+PAGES = ["/", "/declass", "/newsletter/", "/support", "/privacy"]
+
+
+def write_sitemap(issues):
+    urls = [SITE + p for p in PAGES] + [f'{SITE}/newsletter/{it["id"]}' for it in issues]
+    body = "".join(f"  <url><loc>{html.escape(u)}</loc></url>\n" for u in urls)
+    xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + body + "</urlset>\n"
+    open(os.path.join(ROOT, "site", "sitemap.xml"), "w", encoding="utf-8").write(xml)
 
 
 if __name__ == "__main__":
