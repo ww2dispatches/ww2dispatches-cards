@@ -25,10 +25,10 @@ export async function onRequestPost({ request, env }) {
 
   // ---- ask for a code ----
   if (body.code === undefined || body.code === null || body.code === '') {
-    const made = await makeCode(env, id, t);
+    const made = await makeCode(env, id, t, undefined, request.headers.get('CF-Connecting-IP') || '');
     if (!made.ok) {
       if (made.why === 'wait') return json({ error: 'wait', wait: made.wait }, 429);
-      return fail(429, made.why); // 'slow' or 'busy'
+      return fail(429, made.why); // 'slow', 'many', or 'busy'
     }
     const sent = await sendCode(env, email, made.code);
     if (!sent.ok) { await forgetCode(env, id).catch(() => {}); return fail(502, 'mail failed'); }

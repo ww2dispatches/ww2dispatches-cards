@@ -129,6 +129,7 @@ def page(title, desc, path, body, active="", image=None, ogtype="website", ogtit
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<script>/* www.ww2dispatches.com shows the same site; send it to the main address so sign in and saved state stay in one place (13 Nov 2026). */if(location.hostname==="www.ww2dispatches.com")location.replace("https://ww2dispatches.com"+location.pathname+location.search+location.hash);</script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(desc)}">
@@ -167,7 +168,7 @@ def asset_v(name):
 
 def sync_chrome():
     """Rewrite the header and footer blocks in the hand written pages so every page matches."""
-    pages = {"index.html": dict(active="today", home=True), "support.html": dict(active="support"), "privacy.html": dict(active="")}
+    pages = {"index.html": dict(active="today", home=True), "support.html": dict(active="support"), "privacy.html": dict(active=""), "404.html": dict(active="")}
     for name, kw in pages.items():
         path = os.path.join(SITE, name)
         if not os.path.exists(path):
