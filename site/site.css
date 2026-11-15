@@ -578,6 +578,7 @@ a.otd-row:hover .otd-tt { color: var(--brass); }
   .otdpage .pagehead { padding: 40px 40px 6px; } .otdpage .pagehead h1 { font-size: 54px; }
   .otd-wrap { display: grid; grid-template-columns: minmax(0, 1fr) 380px; grid-template-areas: "main todays" "main days"; grid-template-rows: auto 1fr;
     column-gap: 56px; align-items: start; padding: 20px 40px 50px; }
+  .otd-chips { flex-wrap: wrap; overflow: visible; }
   .otd-main { grid-area: main; } .otd-todays { grid-area: todays; } .otd-days { grid-area: days; }
   .otd-dy { aspect-ratio: auto; height: 64px; }
 }
