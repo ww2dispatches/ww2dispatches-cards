@@ -5,6 +5,7 @@ A daily social media serial that follows one campaign day by day, told as it hap
 **Names (decided 15 Nov 2026, Brian):** **Campaign Series** is the umbrella. It has two halves, and every place that shows them (Substack, ww2dispatches.com, covers, docs) uses these names so they are never confused:
 * **Day by Day:** the 6:30 a.m. daily posts on X, Instagram, Threads, and Facebook ("Pearl Harbor · Day by Day · Day 3"). The posts themselves don't change; their footer stays "Pearl Harbor · Day 3 of 12".
 * **The Chronicle:** the long Substack parts, the in depth version that fills the book on the Campaign Shelf ("Pearl Harbor · The Chronicle · Part 1: The Fleet Slips Away").
+* **Display format** (Brian, 15 Nov 2026): "Campaign Series: Pearl Harbor · Day by Day" and "Campaign Series: Pearl Harbor · The Chronicle" (a middle dot, never a dash). Day by Day was kept after weighing it against the daily dispatches; the umbrella label and campaign name in front keep them apart.
 * Not "dispatch" for either: the 8 a.m. cards are dispatches and the newsletter is The Weekly Dispatch.
 
 ## Status
@@ -132,7 +133,7 @@ Anchor days, each to be verified in the sitting (two sources); the rest are fill
 ## On ww2dispatches.com (the Campaign Shelf)
 **All website work belongs to the Website: Build and Fixes chat** (Brian, 15 Nov 2026). This chat and the build sittings only write the series files (day records, `articles/part-NN.json` and `.md`, covers, photos) and keep `shelf.json` current; the Website chat decides how the site shows them.
 
-**For the Website chat (15 Nov 2026): use the names.** The site labels the Substack parts **The Chronicle** and the 6:30 posts **Day by Day** everywhere they appear (volume page, part pages, the slips beside each section, navigation), under the umbrella Campaign Series, so readers never confuse them with the 8 a.m. dispatches.
+**For the Website chat (15 Nov 2026): use the names.** The site labels them in the display format "Campaign Series: Pearl Harbor · The Chronicle" and "Campaign Series: Pearl Harbor · Day by Day" everywhere they appear (volume page, part pages, the slips beside each section, navigation), under the umbrella Campaign Series, so readers never confuse them with the 8 a.m. dispatches.
 
 **Handed to the Website chat (15 Nov 2026): rebuild the Campaign Shelf around the Substack parts.** The parts are the main pull. The proposal from this chat, for the Website chat and Brian to adopt or change:
 * **The shelf** stays as built (a row of spines).
