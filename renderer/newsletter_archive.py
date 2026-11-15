@@ -406,8 +406,12 @@ def campaign_urls():
         return []
     now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     out = []
-    for vid, days in (json.load(open(path, encoding="utf-8")).get("campaigns") or {}).items():
+    rel = json.load(open(path, encoding="utf-8"))
+    for vid, days in (rel.get("campaigns") or {}).items():
         out.append(f"{SITE}/campaign-series/{vid}/")
+        # chapters (Campaign Series parts) once published and marked final
+        out += [f"{SITE}/campaign-series/{vid}/part-{nn}" for nn, p in sorted(((rel.get("parts") or {}).get(vid) or {}).items())
+                if p.get("final") and p.get("at", "9") <= now]
         out += [f"{SITE}/campaign-series/{vid}/day-{nn}" for nn, at in sorted(days.items()) if at <= now]
     return out
 

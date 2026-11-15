@@ -9,15 +9,19 @@ Never edit the files it writes by hand.
 Writes:
   site/campaign-series/index.html            the Campaign Shelf
   site/campaign-series/shelf.json            the shelf data (home page teaser)
-  site/campaign-series/<series>/index.html   a volume page (list of days)
+  site/campaign-series/<series>/index.html   the book's title page (Contents: chapters and day stamps)
+  site/campaign-series/<series>/part-NN.html a chapter: the whole Substack part, each day's post as a slip
+  site/campaign-series/<series>/parts/       the chapter cover photos
   site/campaign-series/<series>/day-NN.html  one page per day, its own address for sharing
   site/campaign-series/<series>.json         the volume data (sealed days are cut by the server)
   site/campaign-series/<series>/thumbs/      small day thumbnails; covers/ the shelf cover photos
   site/name-this/index.html, cases.json      Name This: the open case and the Evidence Drawer
-  functions/_data/releases.json              post times the server gates on
+  functions/_data/releases.json              post times the server gates on (days, parts with final flag, Name This)
 and refreshes the shared header and footer (CHROME) in the hand written pages
 (site/index.html, support.html, privacy.html), between their <!--chrome:...--> markers.
 
+Chapters come from campaign-series/<series>/articles/part-NN.json and .md; a chapter shows once its
+publish time has passed and its record says "status": "final" (a draft shows on preview addresses only).
 Release rule: a Campaign Series day shows once 6:30 a.m. Mountain on its run date has passed
 (the record's time field), and a Name This puzzle joins the drawer once the next one has posted.
 The server (functions/campaign-series and functions/name-this middleware) enforces both, so a
@@ -40,6 +44,7 @@ THREADS = "https://www.threads.com/@ww2dispatches"
 X = "https://x.com/ww2dispatches"
 INSTAGRAM = "https://www.instagram.com/ww2dispatches"
 PROBLEMS = []
+PART_RELEASES = {}
 
 
 def esc(s):
@@ -234,7 +239,7 @@ def load_volume(vol):
             no_dash(r.get(key), f"{vol['id']} day {nn} {key}")
         name, cls, color = SERIES.get(r.get("series"), ("", "", "#C9B98F"))
         days.append({
-            "n": n, "nn": nn, "date": r["date"], "hist": hist, "run": run, "release": iso(rel),
+            "n": n, "nn": nn, "date": r["date"], "hist": hist, "run": run, "release": iso(rel), "hhmm": hhmm,
             "arrives": f"Arrives {d_short(run)}, {clock(hhmm)} MT",
             "subtitle": r.get("subtitle", ""), "place": r.get("place", ""), "series": name, "seriesCls": cls, "seriesColor": color,
             "body": r.get("body", ""), "credit": r.get("photoCredit", ""), "sources": sources, "img": img,
@@ -251,40 +256,334 @@ def tab_html(vol, days):
             f'<span class="vtab-d">{esc(vol["dates"])} · {len(days)} days</span></div>')
 
 
+# ---------------------------------------------------------------------------------------------
+# The books (Site Revamp doc, 15 Nov 2026): each volume is a book. Its title page has Contents,
+# with every Substack part as a chapter and a row of day stamps under each; a chapter page is the
+# whole part with each day's post as a teletype slip beside its section; day pages carry a
+# bookmark strip to their section. A part shows once its publish time has passed and its record
+# is marked final ("status": "final"); a part not yet final shows on preview addresses only.
+# ---------------------------------------------------------------------------------------------
+BACK_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>'
+CHEV_SVG = '<svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>'
+
+
+def gate(at, final=True, live=True):
+    """Attributes the server reads (functions/_lib/release.js) to show a live or a sealed version."""
+    if live:
+        return f' data-release="{at}"' + ("" if final else ' data-draft=""')
+    return f' data-until="{at}"' if final else f' data-draft-until="{at}"'
+
+
+def span_dates(a, b):
+    a, b = dt.date.fromisoformat(a), dt.date.fromisoformat(b)
+    if a.year != b.year:
+        return f"{a.day} {MONTHS[a.month - 1]} {a.year} to {b.day} {MONTHS[b.month - 1]} {b.year}"
+    if a.month != b.month:
+        return f"{a.day} {MONTHS[a.month - 1]} to {b.day} {MONTHS[b.month - 1]} {b.year}"
+    return f"{a.day} to {b.day} {MONTHS[a.month - 1]} {b.year}" if a != b else f"{a.day} {MONTHS[a.month - 1]} {a.year}"
+
+
+def md_inline(s):
+    s = esc(s)
+    s = re.sub(r"\[([^\]]+)\]\((https?://[^)\s]+)\)", r'<a href="\2" target="_blank" rel="noopener">\1</a>', s)
+    s = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", s)
+    s = re.sub(r"(?<![\w*])\*(?!\s)(.+?)(?<!\s)\*(?![\w*])", r"<em>\1</em>", s)
+    return s
+
+
+def md_figure(line, where):
+    m = re.match(r"!\[(.*)\]\(([^)\s]+)\)\s*$", line.strip())
+    cap, src = m.group(1), m.group(2)
+    url = src if src.startswith("http") else cdn(src)
+    if not url:
+        problem(f"{where}: image not found ({src})")
+        return ""
+    no_dash(cap, f"{where} caption")
+    size = ""
+    if not src.startswith("http"):
+        from PIL import Image
+        w, h = Image.open(os.path.join(ROOT, src)).size
+        size = f' width="{w}" height="{h}"'  # reserves the space, so jumping to a day's section lands true
+    return f'<figure><img src="{esc(url)}" alt="{esc(re.sub(r"[*]", "", cap)[:200])}"{size} loading="lazy"><figcaption>{md_inline(cap)}</figcaption></figure>'
+
+
+def md_quote(lines):
+    text = "\n".join(re.sub(r"^>\s?", "", l) for l in lines)
+    paras = [p.strip().replace("\n", " ") for p in re.split(r"\n\s*\n", text) if p.strip()]
+    out = []
+    for i, p in enumerate(paras):
+        cls = ""
+        if i == len(paras) - 1 and i > 0 and not p.startswith('"') and not p.startswith("**"):
+            cls = ' class="q-src"'
+        out.append(f"<p{cls}>{md_inline(p)}</p>")
+    return "<blockquote>" + "".join(out) + "</blockquote>"
+
+
+def parse_part(md, where):
+    """Split a part's markdown into the opening, the dated sections, and the closing matter.
+    Each section: {title, dateline, html}. A "### Sources" heading in the closing matter is
+    preceded by the {NAV} marker, where the chapter buttons go."""
+    blocks = [b for b in re.split(r"\n\s*\n", md.strip()) if b.strip()]
+    opening, sections, closing = [], [], []
+    target, last_heading = opening, False
+    no_dash(md.replace("---", ""), where)
+    for b in blocks:
+        lines = b.strip().split("\n")
+        first = lines[0].strip()
+        if first.startswith("## "):
+            sections.append({"title": first[3:].strip(), "dateline": "", "parts": []})
+            target, last_heading = sections[-1]["parts"], True
+            continue
+        if last_heading and re.fullmatch(r"\*[^*].*\*", first) and len(lines) == 1:
+            sections[-1]["dateline"] = first.strip("*").strip()
+            last_heading = False
+            continue
+        last_heading = False
+        if first == "---":
+            target = closing
+            closing.append("<hr>")
+            continue
+        if first.startswith("### "):
+            target.append("{NAV}" if target is closing and "{NAV}" not in closing else "")
+            target.append(f"<h3>{md_inline(first[4:].strip())}</h3>")
+        elif all(l.lstrip().startswith(">") for l in lines):
+            target.append(md_quote(lines))
+        elif first.startswith("!["):
+            target.append(md_figure(first, where))
+        elif all(re.match(r"\s*[*-] ", l) for l in lines):
+            items = [md_inline(re.sub(r"^\s*[*-] ", "", l)) for l in lines]
+            target.append("<ul>" + "".join("<li>" + it + "</li>" for it in items) + "</ul>")
+        else:
+            target.append(f"<p>{md_inline(' '.join(l.strip() for l in lines))}</p>")
+    for s in sections:
+        s["html"] = "\n".join(s.pop("parts"))
+    if "{NAV}" not in closing:
+        closing.append("{NAV}")
+    return "\n".join(opening), sections, "\n".join(closing)
+
+
+def load_parts(vol, days):
+    """The Substack parts of a volume (campaign-series/<series>/articles/part-NN.json and .md)."""
+    vid = vol["id"]
+    folder = os.path.join(ROOT, "campaign-series", vid, "articles")
+    by_n = {d["n"]: d for d in days}
+    parts = []
+    for p in sorted(glob.glob(os.path.join(folder, "part-[0-9][0-9].json"))):
+        rec = json.load(open(p, encoding="utf-8"))
+        n = int(rec["part"])
+        nn = f"{n:02d}"
+        where = f"{vid} part {nn}"
+        md_path = os.path.join(folder, f"part-{nn}.md")
+        if not os.path.exists(md_path):
+            problem(f"{where}: no part-{nn}.md")
+            continue
+        first_day, last_day = rec["days"]
+        pub = dt.datetime.fromisoformat(rec["publish"]).astimezone(DENVER)
+        cover = None
+        src = rec.get("coverPhoto") or ""
+        if src and os.path.exists(os.path.join(ROOT, src)):
+            save_jpeg(os.path.join(ROOT, src), os.path.join(SITE, "campaign-series", vid, "parts", f"part-{nn}.jpg"), 1600)
+            cover = f"/campaign-series/{vid}/parts/part-{nn}.jpg"
+        else:
+            problem(f"{where}: cover photo not found ({src})")
+        opening, sections, closing = parse_part(open(md_path, encoding="utf-8").read(), where)
+        span = list(range(first_day, last_day + 1))
+        if len(sections) != len(span):
+            problem(f"{where}: {len(sections)} sections for {len(span)} days; slips left out")
+        for k in ("title", "subtitle", "synopsis"):
+            no_dash(rec.get(k), f"{where} {k}")
+        parts.append({
+            "n": n, "nn": nn, "of": rec.get("parts"), "title": rec.get("title", ""), "synopsis": rec.get("synopsis", ""),
+            "subtitle": rec.get("subtitle", ""), "first": rec["first"], "last": rec["last"], "dates": span_dates(rec["first"], rec["last"]),
+            "days": span, "release": iso(pub), "final": rec.get("status") == "final",
+            "arrives": f"{DAYS[pub.weekday()][:3]} {pub.day} {MONTHS[pub.month - 1][:3]}, {clock(pub.strftime('%H:%M'))} MT",
+            "arrivesShort": f"{DAYS[pub.weekday()][:3]} {pub.day} {MONTHS[pub.month - 1][:3]}",
+            "cover": cover, "coverCredit": rec.get("coverCredit", ""), "focus": f"{rec.get('focusX', 50)}% {rec.get('focusY', 50)}%",
+            "opening": opening, "sections": sections if len(sections) == len(span) else [], "rawSections": sections, "closing": closing,
+            "url": f"/campaign-series/{vid}/part-{nn}",
+            "dayMap": {d: (sections[i]["title"] if i < len(sections) else "") for i, d in enumerate(span) if d in by_n},
+        })
+    parts.sort(key=lambda x: x["n"])
+    return parts
+
+
+def stamps_html(days):
+    out = []
+    for d in days:
+        out.append(f'<a class="stamp" href="{d["url"]}"{gate(d["release"])}><b>Day {d["n"]}</b>{esc(d_short(d["hist"]))}</a>'
+                   f'<span class="stamp shut"{gate(d["release"], live=False)}><b>Day {d["n"]}</b>{esc(d_short(d["hist"]))}<span class="sr">, arrives {esc(d_short(d["run"]))}</span></span>')
+    return f'<div class="stamps">{"".join(out)}</div>'
+
+
+BOOK_SIGNUP = """<div class="subscribe book-sub">
+    <h2>Get each chapter by email</h2>
+    <p>A new chapter arrives the morning after its last day runs. Free, through our Substack.</p>
+    <form class="nl-form" action="https://ww2dispatches.substack.com/api/v1/free?nojs=true" method="post" target="substack-signup">
+      <label class="sr" for="{fid}">Email</label>
+      <input id="{fid}" name="email" type="email" placeholder="you@example.com" required autocomplete="email">
+      <button type="submit">Subscribe</button>
+    </form>
+    <p class="sent" hidden>Almost done. Check your inbox to confirm.</p>
+    <p class="follow">Or follow each series live every morning at 6:30 MT on <a href="{threads}" target="_blank" rel="noopener">Threads</a>.</p>
+  </div>"""
+
+
+def build_book(vol, days, parts):
+    """The title page: the clothbound plate, the introduction, and Contents."""
+    vid, total = vol["id"], len(days)
+    cover = f"/campaign-series/covers/{vid}.jpg"
+    by_n = {d["n"]: d for d in days}
+    # Status line: one version per stretch of time, the server keeps the right one.
+    status = [f'<p class="vb-status"{gate(days[0]["release"], live=False)}>Begins {esc(d_short(days[0]["run"]))}, 6:30 a.m. MT</p>']
+    for i, d in enumerate(days):
+        until = days[i + 1]["release"] if i + 1 < total else None
+        label = f"Now running · Day {d['n']} of {total}" if until else f"Complete · {total} days"
+        status.append(f'<p class="vb-status"{gate(d["release"])}{gate(until, live=False) if until else ""}>{label}</p>')
+    entries, covered = [], set()
+    count = max([p["of"] or 0 for p in parts] + [len(parts)])
+    for p in parts:
+        covered.update(p["days"])
+        pdays = [by_n[k] for k in p["days"] if k in by_n]
+        pic_live = (f'<a class="pe-pic" href="{p["url"]}"><img src="{p["cover"] or cover}" alt="" loading="lazy" style="object-position:{esc(p["focus"])}"></a>')
+        pic_sealed = f'<span class="pe-pic pe-seal" aria-hidden="true"><span>SEALED · ARRIVES {esc(p["arrivesShort"].upper())}</span></span>'
+        entries.append(f"""<article class="pe">
+      <div{gate(p["release"], p["final"])}>{pic_live}</div>
+      <div{gate(p["release"], p["final"], live=False)}>{pic_sealed}</div>
+      <div class="pe-txt">
+        <p class="pe-k">Part {p["n"]} of {count}</p>
+        <h3><a href="{p["url"]}"{gate(p["release"], p["final"])}>{esc(p["title"])}</a><span{gate(p["release"], p["final"], live=False)}>{esc(p["title"])}</span></h3>
+        <p class="pe-d">{esc(p["dates"])}</p>
+        <div class="pe-live"{gate(p["release"], p["final"])}><p class="pe-syn">{esc(p["synopsis"])}</p><a class="btn ink" href="{p["url"]}">Read Part {p["n"]}</a></div>
+        <p class="pe-arr"{gate(p["release"], p["final"], live=False)}>Arrives {esc(p["arrives"])}</p>
+        <p class="pe-dk">The daily dispatches</p>
+        {stamps_html(pdays)}
+      </div>
+    </article>""")
+    rest = [d for d in days if d["n"] not in covered]
+    if rest:
+        entries.append(f"""<article class="pe pe-more">
+      <div class="pe-txt">
+        <p class="pe-k">Days {rest[0]["n"]} to {rest[-1]["n"]}</p>
+        <h3>More dispatches</h3>
+        <p class="pe-d">{esc(span_dates(rest[0]["date"], rest[-1]["date"]))}</p>
+        <p class="pe-syn">Their chapters arrive as the series runs. Each day opens here once it has posted.</p>
+        {stamps_html(rest)}
+      </div>
+    </article>""")
+    lede = esc(vol.get("intro", ""))
+    blurb = esc(vol.get("blurb", ""))
+    body = f"""<main class="bookpage">
+  <div class="vb-top"><a class="backlink" href="/campaign-series/">{BACK_SVG} The Campaign Shelf</a><span class="meta">Vol. {esc(vol["vol"])}</span></div>
+  <div class="vb-spread">
+    <section class="vb-plate" style="--cloth:{esc(vol.get("cloth", "#24344F"))}">
+      <img class="vb-cover{' color' if vol.get('coverColor') else ''}" src="{cover}" alt="" style="object-position:{esc(vol.get('coverPos', '50% 40%'))}">
+      <p class="vb-k">Volume {esc(vol["vol"])} · {esc(vol.get("theater", ""))}</p>
+      <h1>{esc(vol["title"])}</h1>
+      <p class="vb-d">{esc(span_dates(days[0]["date"], days[-1]["date"]))}</p>
+      {"".join(status)}
+    </section>
+    <section class="vb-paper">
+      <p class="vb-lede">{lede}</p>
+      <p class="vb-intro">{blurb} Each chapter tells part of it in full, with the maps, orders and first hand accounts behind every day. The short dispatches that ran each morning at 6:30 sit beside the days they belong to.</p>
+      <h2>Contents</h2>
+      {"".join(entries)}
+    </section>
+  </div>
+  {BOOK_SIGNUP.format(fid="em-book", threads=THREADS)}
+</main>"""
+    desc = f"{vol['title']}, {vol.get('dates', '')}: {vol.get('blurb', '')}"
+    open(os.path.join(SITE, "campaign-series", vid, "index.html"), "w", encoding="utf-8").write(
+        page(f"{vol['title']} | Campaign Series | WW2 Dispatches", desc, f"/campaign-series/{vid}/", body, "campaign",
+             image=f"{URL}{cover}", ogtitle=f"{vol['title']}: the campaign, day by day, in full"))
+
+
+def slip_html(d, total, vol):
+    paras = "".join(f"<p>{esc(p.strip())}</p>" for p in d["body"].split("\n\n") if p.strip())
+    hhmm = clock(d["hhmm"])
+    return (f'<details class="slip"><summary><img src="{d["thumb"]}" alt="" width="30" height="38" loading="lazy">'
+            f'<span class="tt"><b>As it ran</b> · Day {d["n"]} of {total}<br>{hhmm} MT, {esc(d_short(d["run"]))} {d["run"].year}</span>{CHEV_SVG}</summary>'
+            f'<div class="slipbody"><p class="sliph">{esc(d["subtitle"])}</p>{paras}'
+            f'<p class="sliplinks"><a href="{d["url"]}?from=chapter">Open the day page</a></p></div></details>')
+
+
+def build_parts(vol, days, parts):
+    vid, total = vol["id"], len(days)
+    by_n = {d["n"]: d for d in days}
+    out_dir = os.path.join(SITE, "campaign-series", vid)
+    keep = set()
+    for i, p in enumerate(parts):
+        count = max(p["of"] or 0, len(parts))
+        secs = []
+        for k, s in enumerate(p["rawSections"]):
+            dn = p["days"][k] if p["sections"] and k < len(p["days"]) else None
+            d = by_n.get(dn)
+            slip = slip_html(d, total, vol) if d else ""
+            anchor = f' id="day-{d["nn"]}"' if d else ""
+            dl = '<p class="dateline">' + md_inline(s["dateline"]) + "</p>" if s["dateline"] else ""
+            sl = '<div class="ch-slip">' + slip + "</div>" if slip else ""
+            secs.append(f'<section class="ch-sec"{anchor}><h2>{esc(s["title"])}</h2>{dl}{sl}<div class="ch-body">{s["html"]}</div></section>')
+        nxt = parts[i + 1] if i + 1 < len(parts) else None
+        prev = parts[i - 1] if i else None
+        nav = ['<nav class="ch-nav" aria-label="Chapters">']
+        if prev:
+            nav.append(f'<a class="btn ghostink" href="{prev["url"]}">Part {prev["n"]}</a>')
+        nav.append(f'<a class="btn ink" href="/campaign-series/{vid}/">Contents</a>')
+        if nxt:
+            nav.append(f'<a class="btn red" href="{nxt["url"]}"{gate(nxt["release"], nxt["final"])}>Part {nxt["n"]}</a>'
+                       f'<span class="btn shut" aria-disabled="true"{gate(nxt["release"], nxt["final"], live=False)}>Part {nxt["n"]} · Arrives {esc(nxt["arrivesShort"])}</span>')
+        elif p["n"] < count:
+            nav.append(f'<span class="btn shut" aria-disabled="true">Part {p["n"] + 1} · In preparation</span>')
+        nav.append("</nav>")
+        closing = p["closing"].replace("{NAV}", "".join(nav))
+        img = p["cover"] or f"/campaign-series/covers/{vid}.jpg"
+        body = f"""<main class="chapter">
+  <div class="vb-top"><a class="backlink" href="/campaign-series/{vid}/">{BACK_SVG} {esc(vol["title"])}</a><span class="meta">Part {p["n"]} of {count}</span></div>
+  <figure class="ch-cover"><img src="{img}" alt="{esc(p["coverCredit"])}" style="object-position:{esc(p["focus"])}"></figure>
+  <header class="ch-head">
+    <p class="ch-k">Campaign Series · {esc(vol["title"])} · <b>Part {p["n"]} of {count}</b></p>
+    <h1>{esc(p["title"])}</h1>
+    <p class="ch-syn">{esc(p["synopsis"])}</p>
+    <p class="ch-k">{esc(p["dates"])}</p>
+  </header>
+  <article class="ch-paper">
+    <div class="ch-open">{p["opening"]}</div>
+    {"".join(secs)}
+    <div class="ch-end">{closing}<p class="ch-credit">Cover: {esc(p["coverCredit"])}</p></div>
+  </article>
+  {BOOK_SIGNUP.format(fid=f"em-part-{p['nn']}", threads=THREADS)}
+</main>"""
+        name = f"part-{p['nn']}.html"
+        keep.add(name)
+        desc = p["subtitle"] or p["synopsis"]
+        head = f'<meta name="robots" content="noindex">\n' if not p["final"] else ""
+        open(os.path.join(out_dir, name), "w", encoding="utf-8").write(
+            page(f"{vol['title']}, Part {p['n']}: {p['title']} | WW2 Dispatches", desc, p["url"], body, "campaign",
+                 image=f"{URL}{img}", ogtype="article", ogtitle=f"{vol['title']}, Part {p['n']}: {p['title']}", head_extra=head,
+                 script='<script>if(matchMedia("(min-width: 900px)").matches)document.querySelectorAll("details.slip").forEach(function(d){d.open=true;});'
+                        'addEventListener("load",function(){var t=location.hash&&document.getElementById(location.hash.slice(1));if(t)t.scrollIntoView();});</script>\n'))
+    return keep
+
+
+def bookmark_html(d, parts):
+    for p in parts:
+        if d["n"] in p["days"]:
+            sec = p["dayMap"].get(d["n"]) if p["sections"] else ""
+            where = f"Part {p['n']}, {esc(p['title'])}" + (f": {esc(sec)}" if sec else "")
+            href = p["url"] + (f"#day-{d['nn']}" if sec else "")
+            return (f'<a class="bookmark" href="{href}"{gate(p["release"], p["final"])}><span class="bm-t"><span class="bm-k">This day in the book</span>'
+                    f'<span class="bm-w">{where}</span></span><span class="bm-go">Read it in full</span></a>'
+                    f'<p class="bookmark shut"{gate(p["release"], p["final"], live=False)}><span class="bm-t"><span class="bm-k">This day in the book</span>'
+                    f'<span class="bm-w">The full chapter arrives {esc(p["arrives"])}</span></span></p>')
+    return ""
+
+
 def build_volume(vol, days):
     vid, total = vol["id"], len(days)
     out_dir = os.path.join(SITE, "campaign-series", vid)
     os.makedirs(out_dir, exist_ok=True)
-    cover = f"/campaign-series/covers/{vid}.jpg"
-    first = days[0]
-    start = (f'<a class="btn red start" href="{first["url"]}" data-release="{first["release"]}">Start at Day 1</a>'
-             f'<p class="btn ghost start sealed" aria-disabled="true" data-until="{first["release"]}">Day 1 {esc(first["arrives"][0].lower() + first["arrives"][1:])}</p>')
-    rows = []
-    for d in days:
-        rows.append(
-            f'<li class="day" data-release="{d["release"]}"><a href="{d["url"]}">'
-            f'<img src="{d["thumb"]}" alt="" width="64" height="80" loading="lazy">'
-            f'<span class="day-t"><span class="day-k">Day {d["n"]} · {d_short(d["hist"])}</span><span class="day-s">{esc(d["subtitle"])}</span></span>'
-            f'<svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></a></li>'
-            f'<li class="day sealed" data-until="{d["release"]}"><span class="seal-img" aria-hidden="true"><span>SEALED</span></span>'
-            f'<span class="day-t"><span class="day-k">Day {d["n"]} · {d_short(d["hist"])}</span><span class="day-s">{esc(d["arrives"])}</span></span></li>')
-    body = f"""<main class="volume">
-  <a class="backlink" href="/campaign-series/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg> The Campaign Shelf</a>
-  <div class="vbanner"><img src="{cover}" alt=""{' class="color"' if vol.get('coverColor') else ''} style="object-position:{esc(vol.get('coverPos', '50% 40%'))}">{tab_html(vol, days)}</div>
-  <div class="vbody">
-    <p class="vintro">{esc(vol.get("intro", ""))} Tap a day to read it. A new day posts each morning at 6:30 Mountain.</p>
-    {start}
-    <ol class="days" aria-label="Days of {esc(vol['title'])}">
-      {chr(10).join("      " + r for r in rows).strip()}
-    </ol>
-  </div>
-</main>"""
-    desc = f"{vol['title']}, day by day: {vol.get('blurb', '')}"
-    open(os.path.join(out_dir, "index.html"), "w", encoding="utf-8").write(
-        page(f"{vol['title']} | Campaign Series | WW2 Dispatches", desc, f"/campaign-series/{vid}/", body, "campaign",
-             image=f"{URL}{cover}", ogtitle=f"{vol['title']}, day by day"))
-
-    keep = {"index.html"}
+    parts = load_parts(vol, days)
+    build_book(vol, days, parts)
+    keep = {"index.html"} | build_parts(vol, days, parts)
     for i, d in enumerate(days):
         prev = days[i - 1] if i else None
         nxt = days[i + 1] if i + 1 < total else None
@@ -298,10 +597,12 @@ def build_volume(vol, days):
             next_btn = f'<a class="btn cream" href="/campaign-series/{vid}/">All days</a>'
         paras = "".join(f"<p>{esc(p.strip())}</p>" for p in d["body"].split("\n\n") if p.strip())
         srcs = ", ".join(f'<a href="{esc(s["url"])}" target="_blank" rel="noopener">{esc(s["label"])}</a>' for s in d["sources"])
+        bm = bookmark_html(d, parts)
+        bm = f'<div class="daybm">{bm}</div>' if bm else ""
         body = f"""<main class="dayview">
   <div class="daytop"><a class="backlink" href="/campaign-series/{vid}/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg> {esc(vol['title'])}</a><span class="dayof">Day {d['n']} of {total}</span></div>
   <article class="dayart">
-    <figure class="daypic"><img src="{esc(d['img'] or '')}" alt="{esc(d['alt'])}" width="1080" height="1350"></figure>
+    {bm}<figure class="daypic"><img src="{esc(d['img'] or '')}" alt="{esc(d['alt'])}" width="1080" height="1350"></figure>
     <div class="daytxt">
       <p class="dayline"><span class="swatch" style="background:{d['seriesColor']}" title="{esc(d['series'])}"></span><span class="sr">{esc(d['series'])}. </span>{esc(d_long(d['hist']))} · {esc(d['place'])}</p>
       <h1>{esc(d['subtitle'])}</h1>
@@ -328,6 +629,7 @@ def build_volume(vol, days):
         {"n": d["n"], "release": d["release"], "arrives": d["arrives"], "date": d["date"], "place": d["place"], "series": d["series"],
          "subtitle": d["subtitle"], "url": d["url"], "img": d["img"], "thumb": d["thumb"]} for d in days]}
     json.dump(data, open(os.path.join(SITE, "campaign-series", f"{vid}.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    return parts
 
 
 def spine_size(days):
@@ -342,6 +644,7 @@ def spine_size(days):
 def build_shelf():
     shelf = json.load(open(os.path.join(ROOT, "campaign-series", "shelf.json"), encoding="utf-8"))["volumes"]
     releases, out = {}, []
+    PART_RELEASES.clear()
     for vol in shelf:
         days = load_volume(vol) if os.path.isdir(os.path.join(ROOT, "campaign-series", vol["id"])) else []
         cover = None
@@ -351,8 +654,10 @@ def build_shelf():
             cover = f"/campaign-series/covers/{vol['id']}.jpg"
         live = bool(days)
         if live:
-            build_volume(vol, days)
+            parts = build_volume(vol, days)
             releases[vol["id"]] = {d["nn"]: d["release"] for d in days}
+            if parts:
+                PART_RELEASES[vol["id"]] = {p["nn"]: {"at": p["release"], "final": p["final"]} for p in parts}
         for k in ("blurb", "note", "intro", "dates"):
             no_dash(vol.get(k), f"shelf {vol['id']} {k}")
         out.append({
@@ -406,7 +711,7 @@ def build_shelf_page(vols):
         <div class="st-meta"><span class="st-theater" id="st-theater"></span><h2 class="st-title" id="st-title"></h2><span class="st-dates" id="st-dates"></span><span class="st-status" id="st-status"></span></div>
       </div>
       <p class="st-blurb" id="st-blurb"></p>
-      <a class="btn red" id="st-open" href="#">Open the volume</a>
+      <a class="btn red" id="st-open" href="#">Open the book</a>
       <p class="st-note" id="st-note"></p>
       <button type="button" class="st-close" id="st-close">Put it back</button>
     </aside>
@@ -515,7 +820,7 @@ def main():
     os.makedirs(os.path.join(SITE, "campaign-series"), exist_ok=True)
     campaigns = build_shelf()
     namethis = build_namethis()
-    json.dump({"campaigns": campaigns, "namethis": namethis}, open(os.path.join(ROOT, "functions", "_data", "releases.json"), "w", encoding="utf-8"), indent=1)
+    json.dump({"campaigns": campaigns, "parts": PART_RELEASES, "namethis": namethis}, open(os.path.join(ROOT, "functions", "_data", "releases.json"), "w", encoding="utf-8"), indent=1)
     sync_chrome()
     n_days = sum(len(v) for v in campaigns.values())
     print(f"site pages: {len(campaigns)} live volume(s), {n_days} day pages, {len(namethis)} Name This cases")

@@ -6,6 +6,11 @@
 // is removed until that time and an element with data-until is removed from that time on,
 // so a page can carry a sealed row and a live row and the visitor sees the right one.
 //
+// Drafts (Campaign Series parts not yet marked final): an element with data-draft shows only on a
+// preview address (still subject to its data-release), and an element with data-draft-until
+// stays on ww2dispatches.com always and on a preview address until that time. So a draft chapter
+// can be read on the preview while the live site keeps it sealed.
+//
 // Test date: on a preview address (*.pages.dev) ?asof=2026-12-01T07:00 (Denver time) or the
 // asof cookie that site.js sets stands in for now. ww2dispatches.com ignores it.
 import { zonedTime } from './time.js';
@@ -28,8 +33,20 @@ export function nowFor(request) {
 }
 
 // Run the rewrite on an HTML response: drop the elements that should not show yet (or any more).
-export function gateHtml(res, now) {
+export function gateHtml(res, now, preview = false) {
   const out = new HTMLRewriter()
+    .on('[data-draft]', {
+      element(el) {
+        if (!preview) el.remove();
+        else el.removeAttribute('data-draft');
+      },
+    })
+    .on('[data-draft-until]', {
+      element(el) {
+        if (preview && Date.parse(el.getAttribute('data-draft-until')) <= now) el.remove();
+        else el.removeAttribute('data-draft-until');
+      },
+    })
     .on('[data-release]', {
       element(el) {
         if (Date.parse(el.getAttribute('data-release')) > now) el.remove();
