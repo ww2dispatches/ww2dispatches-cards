@@ -64,13 +64,13 @@ Live warheads went into the torpedoes. Pilots were told to sink any ship and dow
 
 In Tokyo, the decision that would send the fleet the rest of the way still had to be made. On 29 November, eight former prime ministers, the senior statesmen known as the jushin, were called to the Imperial Palace to hear the government's case and give their views. It was the last moment anyone outside the cabinet and high command could speak before the Emperor decided.
 
-They questioned Prime Minister Hideki Tojo through the morning. After lunch they spoke before the Emperor himself. Accounts of the meeting, including Tojo's own testimony after the war, show that most of them doubted Japan could win a long war, and some warned that the country's material strength and morale would not last. Only two, the retired admirals Keisuke Okada and Mitsumasa Yonai, said plainly that Japan should refrain from war and keep negotiating. They warned that the navy's supplies would drain fast.
+They questioned Prime Minister Hideki Tojo through the morning. After lunch they spoke before the Emperor himself. Accounts of the meeting, including Tojo's own testimony after the war, show that most of them doubted Japan could win a long war, and some warned that the country's material strength and morale would not last. The two retired admirals, Keisuke Okada and Mitsumasa Yonai, pressed hardest, warning that the navy's supplies would drain fast. Yet none of them said plainly that war was wrong.
 
 Tojo answered that the government had tried everything, and that without war Japan's existence itself was at stake. Seizing the oil of the south would carry the war, he said. Asked how it would end, he admitted there was no definite plan.
 
 No one in the room knew that the carriers were already three days out, somewhere in the fog of the North Pacific.
 
-![Admiral Keisuke Okada, former prime minister, one of the two senior statesmen who urged against war. Portrait published 1934 to 1935, public domain.](photos/campaign/ph-04.jpg)
+![Admiral Keisuke Okada, former prime minister, who pressed hardest on the risks of war. Portrait published 1934 to 1935, public domain.](photos/campaign/ph-04.jpg)
 
 ---
 

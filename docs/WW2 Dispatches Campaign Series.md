@@ -3,7 +3,7 @@
 A daily social media serial that follows one campaign day by day, told as it happened, the RealTimeWWII way. Each series is researched, written, rendered, and scheduled **in one sitting** with the `campaign-series` skill, in the Campaign Series chat. **No scheduled task** runs it. The weekly runs only read its files so their wording never repeats it (Cards and Videos docs).
 
 **Names (decided 15 Nov 2026, Brian):** **Campaign Series** is the umbrella. It has two halves, and every place that shows them (Substack, ww2dispatches.com, covers, docs) uses these names so they are never confused:
-* **Day by Day:** the 6:30 a.m. daily posts on X, Instagram, Threads, and Facebook ("Pearl Harbor · Day by Day · Day 3"). The posts themselves don't change; their footer stays "Pearl Harbor · Day 3 of 12".
+* **Day by Day:** the 6:30 a.m. daily posts on X, Instagram, Threads, and Facebook ("Pearl Harbor · Day by Day · Day 3"). The posts carry the name: the image tab reads "CAMPAIGN SERIES · DAY BY DAY" and the footer "Campaign Series: Pearl Harbor · Day by Day · Day 3 of 12".
 * **The Chronicle:** the long Substack parts, the in depth version that fills the book on the Campaign Shelf ("Pearl Harbor · The Chronicle · Part 1: The Fleet Slips Away").
 * **Display format** (Brian, 15 Nov 2026): "Campaign Series: Pearl Harbor · Day by Day" and "Campaign Series: Pearl Harbor · The Chronicle" (a middle dot, never a dash). Day by Day was kept after weighing it against the daily dispatches; the umbrella label and campaign name in front keep them apart.
 * Not "dispatch" for either: the 8 a.m. cards are dispatches and the newsletter is The Weekly Dispatch.
@@ -29,7 +29,7 @@ A daily social media serial that follows one campaign day by day, told as it hap
 ## The look (locked 11 Nov 2026: C, Teletype tape)
 Canvas: "Campaign Series Bulletin Mockup" (https://claude.ai/artifact/HKsV6D4kmGzoZ7X3nimzE3). Drawn by `renderer/campaign.html` with `node renderer/campaign.js <series> [day ...]`.
 * The archival photo fills the frame, in grayscale.
-* **Top tab** (cream #EFE6D2 with grain, top left): "CAMPAIGN SERIES" small in Oswald over the series name in Oswald bold ink navy and "DAY N" in teletype red #B04A3E.
+* **Top tab** (cream #EFE6D2 with grain, top left): "CAMPAIGN SERIES · DAY BY DAY" small in Oswald (Day by Day added 15 Nov 2026) over the series name in Oswald bold ink navy and "DAY N" in teletype red #B04A3E.
 * **Bottom strip** (cream, full width, a little above the bottom): the one line subtitle in Oswald bold (38 characters max, present tense, says what today's post is about; the renderer shrinks it slightly or prints a PROBLEM line), then "BULLETIN · 28 NOV 1941 · PEARL HARBOR, HAWAII" in Special Elite and @ww2dispatches at right.
 * **Sizes:** X 1600 x 1440 (strip lifted clear of X's ALT badge); Instagram 1080 x 1350, also used for Threads and Facebook. Files: `campaign-series/<series>/images/day-NN-x.jpg` and `-instagram.jpg`.
 * Japanese and other foreign events go by their own local date (the fleet left Hitokappu Bay on 26 Nov, Tokyo time).
@@ -38,7 +38,7 @@ Canvas: "Campaign Series Bulletin Mockup" (https://claude.ai/artifact/HKsV6D4kmG
 * **Present tense, told as it happens, hook first.** X, Instagram, Facebook about 400 to 700 characters; Threads under 500.
 * **No hindsight past the series' end.** Dramatic irony is fair ("Hawaii is not on the list").
 * Written only from verified facts, two sources for each, with the sources listed in the day record. No dashes.
-* **Fixed last line:** "Pearl Harbor · Day 3 of 12" (the series name and day).
+* **Fixed last line:** "Campaign Series: Pearl Harbor · Day by Day · Day 3 of 12" (the names, the series, and the day; since 15 Nov 2026, Brian).
 * **Hashtags:** Instagram `#OnThisDay #WW2 #<Event>`; X and Facebook `#OTD #WW2 #<Event>`; Threads none, filed in History Threads.
 * **No add on lines ever** (no question, newsletter, support, or Declass line). The one exception: the Bulge posts on 1 and 11 January carry one Campaigns line, since those are Campaigns chapter days.
 * **Alt text** starts "WW2 Dispatches Campaign Series, <Series>, Day N." then the photo credit.
@@ -177,3 +177,4 @@ Until that change ships, the shelf works as built: every series is a volume on t
 * 15 Nov 2026: all website work moved to the Website: Build and Fixes chat (Brian); the Campaign Shelf rebuild handed there with this chat's proposal and eight options (a to h) for the daily posts.
 * 15 Nov 2026 (later): the Website chat's two rules for parts added to Files: `status` "final" before `publish`, and one `##` section per day in order.
 * 15 Nov 2026 (later): names decided (Brian): the 6:30 posts are **Day by Day** and the Substack parts are **The Chronicle**, under Campaign Series. Cover kicker, Substack section, banner, and preview updated; the Website chat asked to carry the names.
+* 15 Nov 2026 (later): the names applied to the posts (Brian): all 48 scheduled Pearl Harbor posts re-rendered with "CAMPAIGN SERIES · DAY BY DAY" on the tab and the footer "Campaign Series: Pearl Harbor · Day by Day · Day N of 12", updated in Buffer (images pinned to commit 841f48e). The Chronicle Part 1's 29 November section aligned with the Day 4 post (the senior statesmen voiced doubts but none said plainly that war was wrong).
