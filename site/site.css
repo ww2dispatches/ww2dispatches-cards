@@ -310,11 +310,11 @@ p.start { font-family: var(--type); letter-spacing: 0; text-transform: none; fon
 .pe-arr { margin: 0; font-family: var(--type); font-size: 13px; color: #6B5F4E; }
 .pe-dk { margin: 6px 0 0; font-family: var(--type); font-size: 13px; color: #6B5F4E; }
 .stamps { display: flex; flex-wrap: wrap; gap: 8px; }
-.stamp { display: inline-flex; flex-direction: column; align-items: center; justify-content: center; min-width: 60px; min-height: 48px; padding: 4px 6px; border: 1.5px solid var(--ink);
+.stamps .stamp { display: inline-flex; flex-direction: column; align-items: center; justify-content: center; min-width: 60px; min-height: 48px; padding: 4px 6px; border: 1.5px solid var(--ink);
   text-decoration: none; color: var(--ink); font-family: var(--type); font-size: 12px; line-height: 1.2; background: var(--sheet); }
-.stamp b { font-family: var(--display); font-weight: 600; font-size: 15px; }
-a.stamp:hover { background: var(--ink); color: var(--sheet); }
-.stamp.shut { border-style: dashed; border-color: #A99C82; color: #7A6F5B; background: transparent; }
+.stamps .stamp b { font-family: var(--display); font-weight: 600; font-size: 15px; }
+.stamps a.stamp:hover { background: var(--ink); color: var(--sheet); }
+.stamps .stamp.shut { border-style: dashed; border-color: #A99C82; color: #7A6F5B; background: transparent; }
 .btn.ink { background: var(--ink); color: var(--sheet); } .btn.ink:hover { background: var(--red); }
 .btn.ghostink { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1.5px var(--ink); }
 .btn.shut { background: transparent; color: #7A6F5B; box-shadow: inset 0 0 0 1.5px #A99C82; cursor: default; }
