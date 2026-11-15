@@ -445,17 +445,17 @@ def build_book(vol, days, parts):
         covered.update(p["days"])
         pdays = [by_n[k] for k in p["days"] if k in by_n]
         pic_live = (f'<a class="pe-pic" href="{p["url"]}"><img src="{p["cover"] or cover}" alt="" loading="lazy" style="object-position:{esc(p["focus"])}"></a>')
-        pic_sealed = f'<span class="pe-pic pe-seal" aria-hidden="true"><span>SEALED · ARRIVES {esc(p["arrivesShort"].upper())}</span></span>'
+        pic_sealed = f'<span class="pe-pic pe-seal" aria-hidden="true"><span>PART {p["n"]} ARRIVES {esc(p["arrivesShort"].upper())}</span></span>'
         entries.append(f"""<article class="pe">
       <div{gate(p["release"], p["final"])}>{pic_live}</div>
       <div{gate(p["release"], p["final"], live=False)}>{pic_sealed}</div>
       <div class="pe-txt">
-        <p class="pe-k">Part {p["n"]} of {count}</p>
+        <p class="pe-k">The Chronicle · Part {p["n"]} of {count}</p>
         <h3><a href="{p["url"]}"{gate(p["release"], p["final"])}>{esc(p["title"])}</a><span{gate(p["release"], p["final"], live=False)}>{esc(p["title"])}</span></h3>
         <p class="pe-d">{esc(p["dates"])}</p>
         <div class="pe-live"{gate(p["release"], p["final"])}><p class="pe-syn">{esc(p["synopsis"])}</p><a class="btn ink" href="{p["url"]}">Read Part {p["n"]}</a></div>
-        <p class="pe-arr"{gate(p["release"], p["final"], live=False)}>Arrives {esc(p["arrives"])}</p>
-        <p class="pe-dk">The daily dispatches</p>
+        <p class="pe-arr"{gate(p["release"], p["final"], live=False)}>This part arrives {esc(p["arrives"])}. Its days open below as each one posts.</p>
+        <p class="pe-dk">Day by Day, Days {p["days"][0]} to {p["days"][-1]}</p>
         {stamps_html(pdays)}
       </div>
     </article>""")
@@ -463,10 +463,10 @@ def build_book(vol, days, parts):
     if rest:
         entries.append(f"""<article class="pe pe-more">
       <div class="pe-txt">
-        <p class="pe-k">Days {rest[0]["n"]} to {rest[-1]["n"]}</p>
-        <h3>More dispatches</h3>
+        <p class="pe-k">Day by Day · Days {rest[0]["n"]} to {rest[-1]["n"]}</p>
+        <h3>Still to come in The Chronicle</h3>
         <p class="pe-d">{esc(span_dates(rest[0]["date"], rest[-1]["date"]))}</p>
-        <p class="pe-syn">Their chapters arrive as the series runs. Each day opens here once it has posted.</p>
+        <p class="pe-syn">Their Chronicle parts arrive as the series runs. Each day opens here the morning it posts, at 6:30 MT.</p>
         {stamps_html(rest)}
       </div>
     </article>""")
@@ -484,7 +484,8 @@ def build_book(vol, days, parts):
     </section>
     <section class="vb-paper">
       <p class="vb-lede">{lede}</p>
-      <p class="vb-intro">{blurb} Each chapter tells part of it in full, with the maps, orders and first hand accounts behind every day. The short dispatches that ran each morning at 6:30 sit beside the days they belong to.</p>
+      <p class="vb-intro">{blurb}</p>
+      <p class="vb-intro vb-names"><b>The Chronicle</b> tells it in full, part by part, with the maps, orders and first hand accounts behind every day. <b>Day by Day</b> is the short dispatch that ran each morning at 6:30, and each one sits beside the day it belongs to.</p>
       <h2>Contents</h2>
       {"".join(entries)}
     </section>
@@ -501,7 +502,7 @@ def slip_html(d, total, vol):
     paras = "".join(f"<p>{esc(p.strip())}</p>" for p in d["body"].split("\n\n") if p.strip())
     hhmm = clock(d["hhmm"])
     return (f'<details class="slip"><summary><img src="{d["thumb"]}" alt="" width="30" height="38" loading="lazy">'
-            f'<span class="tt"><b>As it ran</b> · Day {d["n"]} of {total}<br>{hhmm} MT, {esc(d_short(d["run"]))} {d["run"].year}</span>{CHEV_SVG}</summary>'
+            f'<span class="tt"><b>Day by Day</b> · Day {d["n"]} of {total}<br>{hhmm} MT, {esc(d_short(d["run"]))} {d["run"].year}</span>{CHEV_SVG}</summary>'
             f'<div class="slipbody"><p class="sliph">{esc(d["subtitle"])}</p>{paras}'
             f'<p class="sliplinks"><a href="{d["url"]}?from=chapter">Open the day page</a></p></div></details>')
 
@@ -537,10 +538,10 @@ def build_parts(vol, days, parts):
         closing = p["closing"].replace("{NAV}", "".join(nav))
         img = p["cover"] or f"/campaign-series/covers/{vid}.jpg"
         body = f"""<main class="chapter">
-  <div class="vb-top"><a class="backlink" href="/campaign-series/{vid}/">{BACK_SVG} {esc(vol["title"])}</a><span class="meta">Part {p["n"]} of {count}</span></div>
+  <div class="vb-top"><a class="backlink" href="/campaign-series/{vid}/">{BACK_SVG} {esc(vol["title"])}</a><span class="meta">The Chronicle · Part {p["n"]} of {count}</span></div>
   <figure class="ch-cover"><img src="{img}" alt="{esc(p["coverCredit"])}" style="object-position:{esc(p["focus"])}"></figure>
   <header class="ch-head">
-    <p class="ch-k">Campaign Series · {esc(vol["title"])} · <b>Part {p["n"]} of {count}</b></p>
+    <p class="ch-k">Campaign Series: {esc(vol["title"])} · The Chronicle · <b>Part {p["n"]} of {count}</b></p>
     <h1>{esc(p["title"])}</h1>
     <p class="ch-syn">{esc(p["synopsis"])}</p>
     <p class="ch-k">{esc(p["dates"])}</p>
@@ -557,8 +558,8 @@ def build_parts(vol, days, parts):
         desc = p["subtitle"] or p["synopsis"]
         head = f'<meta name="robots" content="noindex">\n' if not p["final"] else ""
         open(os.path.join(out_dir, name), "w", encoding="utf-8").write(
-            page(f"{vol['title']}, Part {p['n']}: {p['title']} | WW2 Dispatches", desc, p["url"], body, "campaign",
-                 image=f"{URL}{img}", ogtype="article", ogtitle=f"{vol['title']}, Part {p['n']}: {p['title']}", head_extra=head,
+            page(f"{vol['title']} · The Chronicle, Part {p['n']}: {p['title']} | WW2 Dispatches", desc, p["url"], body, "campaign",
+                 image=f"{URL}{img}", ogtype="article", ogtitle=f"Campaign Series: {vol['title']} · The Chronicle, Part {p['n']}: {p['title']}", head_extra=head,
                  script='<script>if(matchMedia("(min-width: 900px)").matches)document.querySelectorAll("details.slip").forEach(function(d){d.open=true;});'
                         'addEventListener("load",function(){var t=location.hash&&document.getElementById(location.hash.slice(1));if(t)t.scrollIntoView();});</script>\n'))
     return keep
@@ -570,10 +571,10 @@ def bookmark_html(d, parts):
             sec = p["dayMap"].get(d["n"]) if p["sections"] else ""
             where = f"Part {p['n']}, {esc(p['title'])}" + (f": {esc(sec)}" if sec else "")
             href = p["url"] + (f"#day-{d['nn']}" if sec else "")
-            return (f'<a class="bookmark" href="{href}"{gate(p["release"], p["final"])}><span class="bm-t"><span class="bm-k">This day in the book</span>'
+            return (f'<a class="bookmark" href="{href}"{gate(p["release"], p["final"])}><span class="bm-t"><span class="bm-k">This day in The Chronicle</span>'
                     f'<span class="bm-w">{where}</span></span><span class="bm-go">Read it in full</span></a>'
-                    f'<p class="bookmark shut"{gate(p["release"], p["final"], live=False)}><span class="bm-t"><span class="bm-k">This day in the book</span>'
-                    f'<span class="bm-w">The full chapter arrives {esc(p["arrives"])}</span></span></p>')
+                    f'<p class="bookmark shut"{gate(p["release"], p["final"], live=False)}><span class="bm-t"><span class="bm-k">This day in The Chronicle</span>'
+                    f'<span class="bm-w">Part {p["n"]} arrives {esc(p["arrives"])}</span></span></p>')
     return ""
 
 
@@ -600,7 +601,7 @@ def build_volume(vol, days):
         bm = bookmark_html(d, parts)
         bm = f'<div class="daybm">{bm}</div>' if bm else ""
         body = f"""<main class="dayview">
-  <div class="daytop"><a class="backlink" href="/campaign-series/{vid}/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg> {esc(vol['title'])}</a><span class="dayof">Day {d['n']} of {total}</span></div>
+  <div class="daytop"><a class="backlink" href="/campaign-series/{vid}/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg> {esc(vol['title'])}</a><span class="dayof">Day by Day · Day {d['n']} of {total}</span></div>
   <article class="dayart">
     {bm}<figure class="daypic"><img src="{esc(d['img'] or '')}" alt="{esc(d['alt'])}" width="1080" height="1350"></figure>
     <div class="daytxt">
@@ -619,8 +620,8 @@ def build_volume(vol, days):
         keep.add(name)
         desc = d["body"].split("\n")[0][:200]
         open(os.path.join(out_dir, name), "w", encoding="utf-8").write(
-            page(f"{vol['title']}, Day {d['n']}: {d['subtitle']} | WW2 Dispatches", desc, d["url"], body, "campaign",
-                 image=d["img"], ogtype="article", ogtitle=f"{vol['title']}, Day {d['n']}: {d['subtitle']}"))
+            page(f"{vol['title']} · Day by Day, Day {d['n']}: {d['subtitle']} | WW2 Dispatches", desc, d["url"], body, "campaign",
+                 image=d["img"], ogtype="article", ogtitle=f"Campaign Series: {vol['title']} · Day by Day, Day {d['n']}: {d['subtitle']}"))
     for f in os.listdir(out_dir):  # a day that was removed takes its page with it
         if f.endswith(".html") and f not in keep:
             os.remove(os.path.join(out_dir, f))

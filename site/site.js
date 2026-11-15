@@ -86,7 +86,7 @@
     if (!/\/day-\d\d\/?$/.test(location.pathname) || new URLSearchParams(location.search).get("from") !== "chapter") return;
     var bm = document.querySelector("a.bookmark"); if (!bm) return;
     var go = bm.querySelector(".bm-go"); if (go) go.textContent = "Back to the chapter";
-    var k = bm.querySelector(".bm-k"); if (k) k.textContent = "You came from the book";
+    var k = bm.querySelector(".bm-k"); if (k) k.textContent = "You came from The Chronicle";
     var back = document.querySelector(".daytop .backlink"), w = bm.querySelector(".bm-w"), m = w && /^Part \d+/.exec(w.textContent);
     if (back && m) { back.href = bm.getAttribute("href"); back.lastChild.textContent = " Back to " + m[0]; }
   }

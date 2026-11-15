@@ -420,3 +420,4 @@ a.bookmark:hover { background: #fff6e2; }
   .bookmark { padding: 9px 12px; min-height: 54px; gap: 10px; }
   .bm-k { font-size: 12px; } .bm-w { font-size: 15.5px; } .bm-go { font-size: 13px; letter-spacing: 1px; }
 }
+.vb-names { margin-top: 12px; } .vb-names b { font-weight: 700; color: var(--ink); }
