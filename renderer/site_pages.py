@@ -46,6 +46,27 @@ INSTAGRAM = "https://www.instagram.com/ww2dispatches"
 PROBLEMS = []
 PART_RELEASES = {}
 
+# Structured data (schema.org JSON-LD) for search engines and AI tools (SEO pack, 15 Nov 2026).
+ORG_ID, SITE_ID = f"{URL}/#org", f"{URL}/#site"
+SAME_AS = ["https://www.threads.com/@ww2dispatches", "https://www.instagram.com/ww2dispatches", "https://x.com/ww2dispatches",
+           "https://www.facebook.com/ww2dispatches", "https://www.tiktok.com/@ww2dispatches", "https://www.youtube.com/@ww2dispatcheshq",
+           "https://ww2dispatches.substack.com"]
+ORG = {"@type": "Organization", "@id": ORG_ID, "name": "WW2 Dispatches", "url": f"{URL}/", "logo": f"{URL}/apple-touch-icon.png",
+       "description": "The Second World War, told on the day it happened.", "email": "contact@ww2dispatches.com", "sameAs": SAME_AS,
+       "parentOrganization": {"@type": "Organization", "name": "Wraithlight Digital LLC"}}
+WEBSITE = {"@type": "WebSite", "@id": SITE_ID, "url": f"{URL}/", "name": "WW2 Dispatches", "inLanguage": "en", "publisher": {"@id": ORG_ID}}
+
+
+def ld(*nodes):
+    """A JSON-LD script tag holding the given schema.org nodes."""
+    data = json.dumps({"@context": "https://schema.org", "@graph": list(nodes)}, ensure_ascii=False, separators=(",", ":"))
+    return '<script type="application/ld+json">' + data.replace("</", "<\\/") + "</script>\n"
+
+
+def crumbs(*pairs):
+    return {"@type": "BreadcrumbList", "itemListElement": [
+        {"@type": "ListItem", "position": i + 1, "name": name, "item": f"{URL}{path}"} for i, (name, path) in enumerate(pairs)]}
+
 
 def esc(s):
     return html.escape(str(s if s is not None else ""), quote=True)
@@ -493,9 +514,15 @@ def build_book(vol, days, parts):
   {BOOK_SIGNUP.format(fid="em-book", threads=THREADS)}
 </main>"""
     desc = f"{vol['title']}, {vol.get('dates', '')}: {vol.get('blurb', '')}"
+    series_ld = {"@type": "CreativeWorkSeries", "@id": f"{URL}/campaign-series/{vid}/#series", "name": f"Campaign Series: {vol['title']}",
+                 "url": f"{URL}/campaign-series/{vid}/", "description": f"{vol.get('intro', '')} {vol.get('blurb', '')}".strip(),
+                 "image": f"{URL}{cover}", "inLanguage": "en", "publisher": {"@id": ORG_ID}, "isPartOf": {"@id": SITE_ID},
+                 "about": {"@type": "Event", "name": vol["title"], "startDate": days[0]["date"], "endDate": days[-1]["date"]},
+                 "hasPart": [{"@type": "Article", "name": f"{vol['title']} · The Chronicle, Part {p['n']}: {p['title']}", "url": f"{URL}{p['url']}"} for p in parts if p["final"]]}
     open(os.path.join(SITE, "campaign-series", vid, "index.html"), "w", encoding="utf-8").write(
         page(f"{vol['title']} | Campaign Series | WW2 Dispatches", desc, f"/campaign-series/{vid}/", body, "campaign",
-             image=f"{URL}{cover}", ogtitle=f"{vol['title']}: the campaign, day by day, in full"))
+             image=f"{URL}{cover}", ogtitle=f"{vol['title']}: the campaign, day by day, in full",
+             head_extra=ld(series_ld, crumbs(("Campaign Series", "/campaign-series/"), (vol["title"], f"/campaign-series/{vid}/")))))
 
 
 def slip_html(d, total, vol):
@@ -557,6 +584,12 @@ def build_parts(vol, days, parts):
         keep.add(name)
         desc = p["subtitle"] or p["synopsis"]
         head = f'<meta name="robots" content="noindex">\n' if not p["final"] else ""
+        head += ld({"@type": "Article", "@id": f"{URL}{p['url']}#article", "headline": f"{vol['title']}, Part {p['n']}: {p['title']}",
+                    "alternativeHeadline": f"Campaign Series: {vol['title']} · The Chronicle", "description": desc, "image": f"{URL}{img}",
+                    "datePublished": p["release"], "author": {"@id": ORG_ID}, "publisher": {"@id": ORG_ID}, "inLanguage": "en",
+                    "isPartOf": {"@id": f"{URL}/campaign-series/{vid}/#series"}, "url": f"{URL}{p['url']}",
+                    "about": {"@type": "Event", "name": vol["title"], "startDate": p["first"], "endDate": p["last"]}},
+                   crumbs(("Campaign Series", "/campaign-series/"), (vol["title"], f"/campaign-series/{vid}/"), (f"Part {p['n']}", p["url"])))
         open(os.path.join(out_dir, name), "w", encoding="utf-8").write(
             page(f"{vol['title']} · The Chronicle, Part {p['n']}: {p['title']} | WW2 Dispatches", desc, p["url"], body, "campaign",
                  image=f"{URL}{img}", ogtype="article", ogtitle=f"Campaign Series: {vol['title']} · The Chronicle, Part {p['n']}: {p['title']}", head_extra=head,
@@ -619,9 +652,15 @@ def build_volume(vol, days):
         name = f"day-{d['nn']}.html"
         keep.add(name)
         desc = d["body"].split("\n")[0][:200]
+        day_ld = ld({"@type": "Article", "@id": f"{URL}{d['url']}#article", "headline": f"{vol['title']}, Day {d['n']}: {d['subtitle']}",
+                     "alternativeHeadline": f"Campaign Series: {vol['title']} · Day by Day", "description": desc, "image": d["img"],
+                     "datePublished": d["release"], "author": {"@id": ORG_ID}, "publisher": {"@id": ORG_ID}, "inLanguage": "en",
+                     "isPartOf": {"@id": f"{URL}/campaign-series/{vid}/#series"}, "url": f"{URL}{d['url']}",
+                     "about": {"@type": "Event", "name": d["subtitle"], "startDate": d["date"], "location": {"@type": "Place", "name": d["place"]}}},
+                    crumbs(("Campaign Series", "/campaign-series/"), (vol["title"], f"/campaign-series/{vid}/"), (f"Day {d['n']}", d["url"])))
         open(os.path.join(out_dir, name), "w", encoding="utf-8").write(
             page(f"{vol['title']} · Day by Day, Day {d['n']}: {d['subtitle']} | WW2 Dispatches", desc, d["url"], body, "campaign",
-                 image=d["img"], ogtype="article", ogtitle=f"Campaign Series: {vol['title']} · Day by Day, Day {d['n']}: {d['subtitle']}"))
+                 image=d["img"], ogtype="article", ogtitle=f"Campaign Series: {vol['title']} · Day by Day, Day {d['n']}: {d['subtitle']}", head_extra=day_ld))
     for f in os.listdir(out_dir):  # a day that was removed takes its page with it
         if f.endswith(".html") and f not in keep:
             os.remove(os.path.join(out_dir, f))
@@ -722,7 +761,10 @@ def build_shelf_page(vols):
 <script type="application/json" id="shelf-data">{data}</script>"""
     open(os.path.join(SITE, "campaign-series", "index.html"), "w", encoding="utf-8").write(
         page("The Campaign Shelf | WW2 Dispatches", "Whole WW2 campaigns told one day at a time, as they happened: Pearl Harbor, the Bulge, and more.",
-             "/campaign-series/", body, "campaign", script=f'<script src="/campaign-series/shelf.js?v={asset_v("campaign-series/shelf.js")}"></script>\n'))
+             "/campaign-series/", body, "campaign", script=f'<script src="/campaign-series/shelf.js?v={asset_v("campaign-series/shelf.js")}"></script>\n',
+             head_extra=ld({"@type": "CollectionPage", "name": "The Campaign Shelf", "url": f"{URL}/campaign-series/", "isPartOf": {"@id": SITE_ID},
+                            "description": "Whole WW2 campaigns told on their real dates: Day by Day posts and The Chronicle, the full account.",
+                            "hasPart": [{"@type": "CreativeWorkSeries", "name": f"Campaign Series: {v['title']}", "url": f"{URL}{v['url']}"} for v in vols if v["url"]]})))
 
 
 # ---------------------------------------------------------------------------------------------
@@ -813,7 +855,9 @@ def build_namethis():
 </main>"""
     open(os.path.join(SITE, "name-this", "index.html"), "w", encoding="utf-8").write(
         page("Name This | WW2 Dispatches", "Can you name it? One mystery photo from the war, every Wednesday and Saturday, and every closed case in the Evidence Drawer.",
-             "/name-this/", body, "namethis", script=f'<script src="/name-this/namethis.js?v={asset_v("name-this/namethis.js")}"></script>\n'))
+             "/name-this/", body, "namethis", script=f'<script src="/name-this/namethis.js?v={asset_v("name-this/namethis.js")}"></script>\n',
+             head_extra=ld({"@type": "CollectionPage", "name": "Name This", "url": f"{URL}/name-this/", "isPartOf": {"@id": SITE_ID},
+                            "description": "A mystery photo from the Second World War every Wednesday and Saturday, with every closed case and its answer."})))
     return releases
 
 
