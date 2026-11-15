@@ -6,7 +6,7 @@ A daily social media serial that follows one campaign day by day, told as it hap
 | Series | Dates | Days | State |
 |---|---|---|---|
 | Pearl Harbor | 26 Nov to 7 Dec 1941 (posts 26 Nov to 7 Dec 2026) | 12 | **Built and scheduled 11 Nov 2026**: all 48 posts in Buffer. Records in `campaign-series/pearl-harbor-1941/`. Volume: Part 1 mocked up 14 Nov; Parts 1 to 3 to finish before 30 Nov. |
-| The Bulge | 16 Dec 1944 to 14 Jan 1945 | 30 | Planned (anchor days below). Build sitting: Thanksgiving weekend, 26 to 29 Nov 2026, including its 4 Substack parts. |
+| The Bulge | 16 Dec 1944 to 14 Jan 1945 | 30 | Planned (anchor days below). Build sitting: Thanksgiving weekend, 26 to 29 Nov 2026, for the 30 days of posts only. Its 4 Substack parts are written in short sittings about a week before each goes live (about 24 Dec, 1 Jan, 8 Jan, 15 Jan; dates set by the split). |
 | Next series | Anzio (landing 22 Jan 1944), then Remagen, Okinawa, Black May or Coral Sea, D Day or Midway, Kursk or Sicily, Battle of Britain, Market Garden, Leyte Gulf or El Alamein, Guadalcanal or Tarawa, Pearl Harbor and Wake Island | | Same campaigns as the Campaigns Roadmap, but each series runs on the real dates, not the game month. Alternates not decided. |
 
 ## Decided (11 Nov 2026, Brian)
@@ -127,7 +127,8 @@ Until that change ships, the shelf works as built: every series is a volume on t
 ## Open
 * Pearl Harbor volume: download the three part cover photos (80-G-71198, NH 75483, 80-G-182249) and rerender Part 1's cover; Brian approves the Part 1 mock up; then finish Part 1 and write Parts 2 and 3; make the Campaign Series section on Substack with its banner and schedule all three (Part 1 by Mon 30 Nov, 9 a.m.).
 * The site revamp chat: switch the Campaign Shelf books to the Substack form (above).
-* The Bulge build sitting (Thanksgiving weekend), with its 4 parts split at the story's turns.
+* The Bulge build sitting (Thanksgiving weekend): the 30 days of posts and the split into 4 parts; each part then written in its own short sitting about a week ahead.
+* **From now on, long series work the same way** (Brian, 14 Nov 2026): the build sitting does the daily posts and the part split; parts are written in short sittings ahead of their dates. Short series like Pearl Harbor can do the parts in one sitting.
 
 ## Changelog
 * 11 Nov 2026: Idea decided in principle and handed off (slot, platforms, not a card, Bulge dates, Pearl Harbor first, one sitting per series).
@@ -141,3 +142,4 @@ Until that change ships, the shelf works as built: every series is a volume on t
 * 14 Nov 2026: Substack plan replaced (Brian): no weekly roundups; each series becomes a volume of 3 or 4 in depth parts that read as chapters of a bound book (authentic maps, decision makers in their own words, first hand accounts, a primary document, photos that tell the story), each live at 9 a.m. the morning after its last day (Sunday moves to Monday), in its own Campaign Series section with a teletype tape banner and Teletype look covers; the Campaign Shelf to hold the parts, with the daily posts as a timeline inside. New `renderer/campaign_article.html`, `campaign_article.js`, and `campaign_article_preview.py`; Pearl Harbor Part 1 mocked up.
 * 14 Nov 2026 (later): each part gets its own cover photo tied to that part's moment (Brian); Pearl Harbor's three picked.
 * 14 Nov 2026 (later): cover redone with the photo clear and a cream panel carrying a one line synopsis instead of "bulletins"; the article drops the teletype bulletin breaks for titled, datelined sections, written for readers (Brian).
+* 14 Nov 2026 (later): the Bulge sitting covers only the posts; its parts are written in short sittings ahead of each date (Brian).
