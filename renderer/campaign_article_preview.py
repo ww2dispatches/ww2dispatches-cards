@@ -42,7 +42,7 @@ body = re.sub(r"<blockquote>.*?</blockquote>", bq, body, flags=re.S)
 d1, d2 = meta["days"]
 strip = "".join(
     f'<img src="{rel(f"campaign-series/{series}/images/day-{d:02d}-instagram.jpg")}">' for d in range(d1, d2 + 1))
-strip_html = (f'<div class="strip"><h3>The daily dispatches, Days {d1} to {d2}</h3>'
+strip_html = (f'<div class="strip"><h3>Day by Day: Days {d1} to {d2}</h3>'
               f'<div class="grid">{strip}</div>'
               f'<p class="cap">The daily posts behind this part, as they ran at dawn on X, Instagram, Threads and Facebook.</p></div>')
 # put the strip just before the sources
@@ -86,7 +86,7 @@ a{{color:#E9E1D0}}
 </style></head><body>
 <div class="top"><span class="wm">WW2 DISPATCHES</span></div>
 <main>
-<div class="sec">CAMPAIGN SERIES</div>
+<div class="sec">CAMPAIGN SERIES · THE CHRONICLE</div>
 <h1>{html.escape(meta['substackTitle'])}</h1>
 <p class="sub">{html.escape(meta['subtitle'])}</p>
 <div class="by"><b>WW2 Dispatches</b> &nbsp;·&nbsp; Preview for {meta['publish'][:10]}</div>

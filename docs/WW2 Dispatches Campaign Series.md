@@ -2,6 +2,11 @@
 
 A daily social media serial that follows one campaign day by day, told as it happened, the RealTimeWWII way. Each series is researched, written, rendered, and scheduled **in one sitting** with the `campaign-series` skill, in the Campaign Series chat. **No scheduled task** runs it. The weekly runs only read its files so their wording never repeats it (Cards and Videos docs).
 
+**Names (decided 15 Nov 2026, Brian):** **Campaign Series** is the umbrella. It has two halves, and every place that shows them (Substack, ww2dispatches.com, covers, docs) uses these names so they are never confused:
+* **Day by Day:** the 6:30 a.m. daily posts on X, Instagram, Threads, and Facebook ("Pearl Harbor · Day by Day · Day 3"). The posts themselves don't change; their footer stays "Pearl Harbor · Day 3 of 12".
+* **The Chronicle:** the long Substack parts, the in depth version that fills the book on the Campaign Shelf ("Pearl Harbor · The Chronicle · Part 1: The Fleet Slips Away").
+* Not "dispatch" for either: the 8 a.m. cards are dispatches and the newsletter is The Weekly Dispatch.
+
 ## Status
 | Series | Dates | Days | State |
 |---|---|---|---|
@@ -41,7 +46,7 @@ Canvas: "Campaign Series Bulletin Mockup" (https://claude.ai/artifact/HKsV6D4kmG
 ## The day record
 `campaign-series/<series>/day-NN.json`: campaign, seriesName, day, days, date (YYYY-MM-DD, the historical date), time ("06:30"), series (battle, home, blue, state, for the analytics), place, subtitle, photo, photoCredit, focusX, focusY, zoom, body, threads (complete, with the footer), footer, hashtags (Instagram), hashtags_xf (X and Facebook), alt, sources, somber (optional), and `buffer` {x, instagram, threads, facebook}. Fixes go to the record first, then the Buffer post.
 
-## The volume: Substack parts (decided 14 Nov 2026, Brian; replaces the weekly roundups)
+## The Chronicle: the Substack parts (decided 14 Nov 2026, Brian; replaces the weekly roundups; named 15 Nov)
 The socials stay exactly as they are. The deep version of each series is its **volume**: 3 or 4 long parts on Substack, and the same parts are what the series' book on the Campaign Shelf holds. Each part reads like a chapter of a bound history of the campaign, not a recap of the posts.
 
 **Every part carries (the chapter standard):**
@@ -63,13 +68,13 @@ The socials stay exactly as they are. The deep version of each series is its **v
 
 **The look (different from the Weekly Dispatch)**
 Substack sets one theme for the whole publication (night background, brass gold, Anton titles, Libre Baskerville body, drop caps) and allows no custom code, so the difference comes from inside the post:
-* **Cover** (revised 14 Nov 2026, Brian), drawn by `renderer/campaign_article.html` with `node renderer/campaign_article.js <series> <part>`: the grayscale photo on top with **nothing laid over it**, then a cream panel under a thin red rule holding "CAMPAIGN SERIES · <SERIES> · PART N OF M" (part in red), the part title in Oswald bold, a **one line synopsis** in Libre Baskerville italic (`synopsis` in the part record), and the dates ("26 TO 29 NOVEMBER 1941") with WW2 DISPATCHES at right. No "bulletins". 1456 x 1048 (Substack's 14:10 thumbnail), with the panel text inside the middle 1.91:1 band so social previews keep it all. Set as the post's thumbnail and placed at the top of the post. (Weekly Dispatch covers are a dark photo with a white serif title and a gold tab.)
+* **Cover** (revised 14 Nov 2026, Brian), drawn by `renderer/campaign_article.html` with `node renderer/campaign_article.js <series> <part>`: the grayscale photo on top with **nothing laid over it**, then a cream panel under a thin red rule holding "CAMPAIGN SERIES · <SERIES> · THE CHRONICLE · PART N OF M" (part in red), the part title in Oswald bold, a **one line synopsis** in Libre Baskerville italic (`synopsis` in the part record), and the dates ("26 TO 29 NOVEMBER 1941") with WW2 DISPATCHES at right. No "bulletins". 1456 x 1048 (Substack's 14:10 thumbnail), with the panel text inside the middle 1.91:1 band so social previews keep it all. Set as the post's thumbnail and placed at the top of the post. (Weekly Dispatch covers are a dark photo with a white serif title and a gold tab.)
 * **Every part has its own cover photo** (Brian, 14 Nov 2026): a photo of that part's defining moment, never the book's cover on the Campaign Shelf, never another part's photo, and preferably not a photo the daily posts already used, so each part opens on something new. Read in order, the part covers should tell the volume's story by themselves. Pearl Harbor: Part 1, Zuikaku weighing anchor at Hitokappu Bay, 26 Nov 1941 (80-G-71198); Part 2, Kaga in heavy North Pacific seas with Zuikaku beyond, early Dec 1941, a frame from film shot aboard Akagi and found on Kiska in 1943 (NH 75483); Part 3, a Kate taking off from Shokaku on the morning of 7 Dec (80-G-182249; backup 80-G-182248, Shokaku's captain watching the launch). Chosen clear of the Flash card's moment.
 * **Title:** "<Series>, Part N: <Part title>", subtitle opens with the dates ("26 to 29 November 1941. ...").
 * **Written as a book chapter, not bulletins** (14 Nov 2026, Brian: the Substack audience are readers, so no teletype devices in the text). Each day is a section with a short literary title as a heading ("The Sortie") and an italic dateline under it ("*Hitokappu Bay, Kuril Islands, 26 November 1941*").
 * **Set off documents and voices** as block quotes that open with a bold label in sentence case (**Primary document.**, **From the record.**, **In their words.**) and end with a source line.
-* **End of part:** a rule, then one italic line "*Next: Part 2, 30 November to 3 December 1941.*" with a sentence on what it covers and the day it arrives, then a heading "The daily dispatches, Days 1 to 4" with a gallery of that part's daily images (Substack's image gallery), then Sources.
-* **Section:** a **Campaign Series** section on the Substack with its own email banner, `campaign-series/brand/campaign-series-email-banner.png` (1100 x 220, and @2x): a cream teletype tape with feed holes on the night color, "CAMPAIGN SERIES" and "WW2 DISPATCHES · THE CAMPAIGN, DAY BY DAY, IN FULL" in red. No photo, so it fits every campaign. (Check in the browser that Substack shows a section's own banner on its emails; if not, the cover at the top of the post does that job.) Readers can opt in or out of the section's emails apart from the Weekly Dispatch.
+* **End of part:** a rule, then one italic line "*Next: Part 2, 30 November to 3 December 1941.*" with a sentence on what it covers and the day it arrives, then a heading "Day by Day: Days 1 to 4" with a gallery of that part's daily images (Substack's image gallery), then Sources.
+* **Section:** a section on the Substack named **The Chronicle** (description: "A WW2 Dispatches Campaign Series. Each campaign, in full."), with its own email banner, `campaign-series/brand/campaign-series-email-banner.png` (1100 x 220, and @2x): a cream tape on the night color, "THE CHRONICLE" and "A WW2 DISPATCHES CAMPAIGN SERIES · EACH CAMPAIGN, IN FULL" in red. Its look is still to be judged in Substack (Brian may prefer the cover's cream panel style). No photo, so it fits every campaign. (Check in the browser that Substack shows a section's own banner on its emails; if not, the cover at the top of the post does that job.) Readers can opt in or out of the section's emails apart from the Weekly Dispatch.
 
 **Files:** `campaign-series/<series>/articles/part-NN.json` (part, parts, days [first, last], first, last, title, substackTitle, subtitle, synopsis, publish, coverPhoto, coverCredit, focusX, focusY, status) and `part-NN.md` (the article). `python3 renderer/campaign_article_preview.py <series> <part>` builds a preview styled like the Substack post page in `articles/preview/`. Extra photos and maps go in `photos/campaign/`.
 
@@ -127,6 +132,8 @@ Anchor days, each to be verified in the sitting (two sources); the rest are fill
 ## On ww2dispatches.com (the Campaign Shelf)
 **All website work belongs to the Website: Build and Fixes chat** (Brian, 15 Nov 2026). This chat and the build sittings only write the series files (day records, `articles/part-NN.json` and `.md`, covers, photos) and keep `shelf.json` current; the Website chat decides how the site shows them.
 
+**For the Website chat (15 Nov 2026): use the names.** The site labels the Substack parts **The Chronicle** and the 6:30 posts **Day by Day** everywhere they appear (volume page, part pages, the slips beside each section, navigation), under the umbrella Campaign Series, so readers never confuse them with the 8 a.m. dispatches.
+
 **Handed to the Website chat (15 Nov 2026): rebuild the Campaign Shelf around the Substack parts.** The parts are the main pull. The proposal from this chat, for the Website chat and Brian to adopt or change:
 * **The shelf** stays as built (a row of spines).
 * **A book opens to a title page and contents:** the book's cover, a short introduction (the campaign, its dates, why it mattered), then the parts as chapters, each with its own part cover, title, synopsis, and dates. A published part reads "Read Part 1"; a part not yet out shows sealed with "Arrives 4 December" (like the sealed Flash cards in Declass).
@@ -168,3 +175,4 @@ Until that change ships, the shelf works as built: every series is a volume on t
 * 14 Nov 2026 (later): the Bulge sitting covers only the posts; its parts are written in short sittings ahead of each date (Brian).
 * 15 Nov 2026: all website work moved to the Website: Build and Fixes chat (Brian); the Campaign Shelf rebuild handed there with this chat's proposal and eight options (a to h) for the daily posts.
 * 15 Nov 2026 (later): the Website chat's two rules for parts added to Files: `status` "final" before `publish`, and one `##` section per day in order.
+* 15 Nov 2026 (later): names decided (Brian): the 6:30 posts are **Day by Day** and the Substack parts are **The Chronicle**, under Campaign Series. Cover kicker, Substack section, banner, and preview updated; the Website chat asked to carry the names.

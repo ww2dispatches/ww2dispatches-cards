@@ -13,7 +13,7 @@ body{margin:0}
    series reads as one thing, but built for Substack:
    cover  1456 x 1048 (Substack's 14:10 post thumbnail). Everything that matters sits inside the middle
           1456 x 762 band, so the 1.91:1 social crop (X, Facebook, link previews) keeps it all.
-          Tab: CAMPAIGN SERIES / series name / PART N OF M in red. Strip: the part title, then
+          Kicker: CAMPAIGN SERIES · series · THE CHRONICLE · PART N OF M. Strip: the part title, then
           BULLETINS · first date TO last date and WW2 DISPATCHES.
    banner 1100 x 220 (and 2200 x 440): the Campaign Series section's email banner. A cream teletype tape
           with feed holes across the dark night colour, no photo, so it fits every campaign. */
@@ -54,8 +54,10 @@ function cover(cv,img,p){
   const padX=64*s, innerW=W-2*padX;
   ctx.textBaseline="alphabetic"; ctx.textAlign="left";
   /* kicker */
-  const k1="CAMPAIGN SERIES  ·  "+(p.seriesName||"").toUpperCase()+"  ·  ", k2=`PART ${p.part} OF ${p.parts}`;
-  ctx.font=`500 ${24*s}px Oswald`; ctx.letterSpacing=`${5*s}px`;
+  const k1="CAMPAIGN SERIES  ·  "+(p.seriesName||"").toUpperCase()+"  ·  THE CHRONICLE  ·  ", k2=`PART ${p.part} OF ${p.parts}`;
+  let kf=24*s; ctx.letterSpacing=`${5*s}px`;
+  for(;kf>17*s;kf-=0.5*s){ctx.font=`500 ${kf}px Oswald`; if(ctx.measureText(k1+k2).width<=innerW) break;}
+  ctx.font=`500 ${kf}px Oswald`;
   const ky=ph+58*s; ctx.fillStyle=INK; ctx.fillText(k1,padX,ky);
   const k1w=ctx.measureText(k1).width; ctx.fillStyle=RED; ctx.fillText(k2,padX+k1w,ky);
   /* title */
@@ -88,9 +90,9 @@ function banner(cv){
   for(let x=14*s;x<W;x+=22*s){for(const yy of [th-14*s]){ctx.beginPath(); ctx.arc(x,ty+yy,1.8*s,0,Math.PI*2); ctx.fill();}}
   ctx.textBaseline="alphabetic"; ctx.textAlign="center";
   ctx.font=`700 ${50*s}px Oswald`; ctx.letterSpacing=`${8*s}px`; ctx.fillStyle=INK;
-  ctx.fillText("CAMPAIGN SERIES",W/2,ty+76*s);
+  ctx.fillText("THE CHRONICLE",W/2,ty+76*s);
   ctx.font=`400 ${19*s}px "Special Elite"`; ctx.letterSpacing=`${1*s}px`; ctx.fillStyle=RED;
-  ctx.fillText("WW2 DISPATCHES  ·  THE CAMPAIGN, DAY BY DAY, IN FULL",W/2,ty+102*s);
+  ctx.fillText("A WW2 DISPATCHES CAMPAIGN SERIES  ·  EACH CAMPAIGN, IN FULL",W/2,ty+102*s);
   ctx.textAlign="left";
 }
 window.renderCover=async function(p,photoDataUrl){

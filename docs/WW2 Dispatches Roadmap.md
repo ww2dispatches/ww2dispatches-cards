@@ -14,8 +14,8 @@ Started 15 Oct 2026. Goal: post every day from launch (Sat 17 Oct 2026) and keep
 * The four series are not tied to any time. Any series can run in any slot. The 2:30 slot is always Axis, but the other slots are not Allied only.
 
 **During a Campaign Series** (dates set per series; Pearl Harbor 26 Nov to 7 Dec 2026, the Bulge 16 Dec 2026 to 14 Jan 2027)
-* **6:30 a.m., the Campaign Series post** (6:45 and 7:00 for a second or third series that overlaps). X, Instagram, Threads, Facebook. Not a card, no number. Scheduled in one sitting per series. (Campaign Series doc)
-* **9:00 a.m. the morning after each part's last day, a Campaign Series part** on Substack (moves to Monday if it falls on a Sunday), 3 or 4 per series, in the Campaign Series section. (Campaign Series doc)
+* **6:30 a.m., the Campaign Series post (Day by Day)** (6:45 and 7:00 for a second or third series that overlaps). X, Instagram, Threads, Facebook. Not a card, no number. Scheduled in one sitting per series. (Campaign Series doc)
+* **9:00 a.m. the morning after each part's last day, a Campaign Series part (The Chronicle)** on Substack (moves to Monday if it falls on a Sunday), 3 or 4 per series, in The Chronicle section. (Campaign Series doc)
 
 **Wednesday and Saturday only**
 * **10:00 a.m., Name This.** X (into an X Community, through Typefully), Threads (History Threads community), Facebook Page, and Instagram (a two week test, see Open decisions), the last three through Buffer. No dispatch number. (Name This doc)
