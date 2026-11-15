@@ -1,5 +1,5 @@
 {
- "about": "The Campaign Shelf on ww2dispatches.com/campaign-series (Site Revamp doc). One entry per volume, in volume order. A volume whose folder campaign-series/<id>/ holds day records is built as a live volume page; the others show a stamped cover and the note. Edit by hand; renderer/site_pages.py reads it. runYear is the year the series posts in (a day's run date is its historical day and month in runYear, stepping up a year after December, unless the day record has a postDate). cover is a photo in this repo; cloth is the clothbound color; status: live comes on its own from day records; planned (decided, not yet built), prep (being built), proposed (an idea). Volumes are numbered in posting order; months whose pick is still undecided join once decided. Spine size follows the series length (renderer/site_pages.py, spine_size): longer series are thicker and a little taller; a volume with no length yet gets the middle size. approx: true marks a planned length and dates that are still an estimate (the stand says \"about\").",
+ "about": "The Campaign Shelf on ww2dispatches.com/campaign-series (Site Revamp doc). One entry per volume, in volume order. A volume whose folder campaign-series/<id>/ holds day records is built as a live volume page; the others show a stamped cover and the note. Edit by hand; renderer/site_pages.py reads it. runYear is the year the series posts in (a day's run date is its historical day and month in runYear, stepping up a year after December, unless the day record has a postDate). cover is a photo in this repo; cloth is the clothbound color; status: live comes on its own from day records; planned (decided, not yet built), prep (being built), proposed (an idea). Volumes are numbered in posting order; months whose pick is still undecided join once decided. Spine size follows the series length (renderer/site_pages.py, spine_size): longer series are thicker and a little taller; a volume with no length yet gets the middle size. approx: true marks a planned length and dates that are still an estimate (the stand says \"about\"). coverColor: true keeps a color cover photo in color (the Pearl Harbor Flash art).",
  "volumes": [
   {
    "id": "pearl-harbor-1941",
@@ -10,11 +10,12 @@
    "year": 1941,
    "status": "live",
    "runYear": 2026,
-   "cover": "photos/campaign/ph-01b.jpg",
-   "coverPos": "50% 45%",
+   "cover": "flash/2026-12-07-pearl-harbor.jpg",
+   "coverPos": "72% 55%",
    "cloth": "#24344F",
    "intro": "Twelve days to war, told as they happened.",
-   "blurb": "From the morning Japan's carriers slip out of the Kurils to the midget submarines creeping toward Oahu in the dark."
+   "blurb": "From the morning Japan's carriers slip out of the Kurils to the midget submarines creeping toward Oahu in the dark.",
+   "coverColor": true
   },
   {
    "id": "bulge-1944",

@@ -270,7 +270,7 @@ def build_volume(vol, days):
             f'<span class="day-t"><span class="day-k">Day {d["n"]} · {d_short(d["hist"])}</span><span class="day-s">{esc(d["arrives"])}</span></span></li>')
     body = f"""<main class="volume">
   <a class="backlink" href="/campaign-series/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg> The Campaign Shelf</a>
-  <div class="vbanner"><img src="{cover}" alt="" style="object-position:{esc(vol.get('coverPos', '50% 40%'))}">{tab_html(vol, days)}</div>
+  <div class="vbanner"><img src="{cover}" alt=""{' class="color"' if vol.get('coverColor') else ''} style="object-position:{esc(vol.get('coverPos', '50% 40%'))}">{tab_html(vol, days)}</div>
   <div class="vbody">
     <p class="vintro">{esc(vol.get("intro", ""))} Tap a day to read it. A new day posts each morning at 6:30 Mountain.</p>
     {start}
@@ -359,7 +359,7 @@ def build_shelf():
             "id": vol["id"], "vol": vol["vol"], "title": vol["title"], "dates": vol["dates"], "theater": vol["theater"], "year": vol["year"],
             "status": "live" if live else vol.get("status", "proposed"), "cloth": vol.get("cloth", "#3F4034"),
             "w": spine_size(len(days) or vol.get("days"))[0], "h": spine_size(len(days) or vol.get("days"))[1],
-            "days": len(days) or vol.get("days"), "approx": bool(vol.get("approx")) and not live, "cover": cover, "coverPos": vol.get("coverPos", "50% 40%"),
+            "days": len(days) or vol.get("days"), "approx": bool(vol.get("approx")) and not live, "cover": cover, "coverPos": vol.get("coverPos", "50% 40%"), "coverColor": bool(vol.get("coverColor")),
             "blurb": vol.get("blurb", ""), "note": vol.get("note", ""), "url": f"/campaign-series/{vol['id']}/" if live else "",
             "start": days[0]["release"] if days else None, "end": days[-1]["release"] if days else None,
             "startLabel": d_short(days[0]["run"]) if days else "", "intro": vol.get("intro", ""), "times": [d["release"] for d in days],

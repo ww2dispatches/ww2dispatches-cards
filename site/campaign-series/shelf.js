@@ -26,6 +26,19 @@
     return v.status === "planned" ? { label: "Planned", cls: "plain" } : { label: "Proposed", cls: "plain" };
   }
 
+  // ---------- spine titles: centered between the gold rules, shrunk to fit when a title is long ----------
+  function fitSpines() {
+    Object.keys(spines).forEach(function (id) {
+      var b = spines[id], t = b.querySelector(".sp-title");
+      t.style.fontSize = "";
+      var room = b.clientHeight - 28 - 14 - 16;  // between the top rule (28 px) and the bottom rule (14 px), 8 px clear each side
+      var size = 17;
+      while (t.offsetHeight > room && size > 11) { size -= 0.5; t.style.fontSize = size + "px"; }
+    });
+  }
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitSpines); else fitSpines();
+  fitSpines();
+
   // ---------- shelve by theater or year ----------
   function shelve(mode) {
     var groups = {}, names = [];
@@ -54,7 +67,7 @@
     if (live) {
       book.href = v.url; book.removeAttribute("aria-disabled"); book.setAttribute("aria-label", "Open " + v.title);
       book.innerHTML = '<span class="bk-vol">VOL. ' + esc(v.vol) + "</span>" +
-        (v.cover ? '<span class="bk-plate"><img src="' + esc(v.cover) + '" alt="" style="object-position:' + esc(v.coverPos) + '"></span>' : "") +
+        (v.cover ? '<span class="bk-plate"><img src="' + esc(v.cover) + '" alt=""' + (v.coverColor ? ' class="color"' : "") + ' style="object-position:' + esc(v.coverPos) + '"></span>' : "") +
         '<span class="bk-title">' + esc(v.title) + '</span><span class="bk-tap">Tap to open</span>';
     } else {
       book.removeAttribute("href"); book.setAttribute("aria-disabled", "true"); book.removeAttribute("aria-label");

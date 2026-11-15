@@ -118,7 +118,7 @@ body.menu-open { overflow: hidden; }
 .spine:hover, .spine.picked { transform: translateY(-8px); }
 .spine.picked { box-shadow: 0 0 0 3px var(--paper), 4px 4px 12px rgba(0,0,0,.6); }
 .sp-vol { position: absolute; top: 9px; left: 0; right: 0; text-align: center; font-family: var(--display); font-size: 11px; letter-spacing: 1px; }
-.sp-title { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%) rotate(180deg); writing-mode: vertical-rl;
+.sp-title { position: absolute; left: 50%; top: calc(50% + 7px); transform: translate(-50%, -50%) rotate(180deg); line-height: 1; writing-mode: vertical-rl;
   font-family: var(--display); font-weight: 700; font-size: 17px; letter-spacing: 2px; text-transform: uppercase; white-space: nowrap; }
 .shelfnote { margin: 34px 18px 20px; font-family: var(--type); font-size: 12px; color: var(--sand); text-align: center; }
 .scrim { position: fixed; inset: 0; z-index: 50; background: rgba(0,0,0,.55); }
@@ -140,6 +140,7 @@ body.sheet-open { overflow: hidden; }
 .bk-vol { font-family: var(--display); font-size: 9px; letter-spacing: 2px; }
 .bk-plate { padding: 3px; border: 1px solid #E8C98A; display: block; }
 .bk-plate img { width: 104px; height: 80px; object-fit: cover; filter: grayscale(1) sepia(.18); display: block; }
+.bk-plate img.color, .vbanner img.color { filter: none; }
 .bk-title { font-family: var(--display); font-weight: 700; font-size: 20px; line-height: 1; text-transform: uppercase; text-align: center; }
 .bk-tap { margin-top: auto; font-family: var(--type); font-size: 9px; color: var(--paper); text-transform: uppercase; }
 .bk-stamp { font-family: var(--type); font-size: 11px; text-transform: uppercase; color: var(--paper); border: 1.5px solid var(--paper); padding: 2px 6px; transform: rotate(-6deg); }
