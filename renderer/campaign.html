@@ -10,7 +10,7 @@ body{margin:0}
 <script>
 /* Campaign Series post (decided 11 Nov 2026, look C "Teletype tape" from the Campaign Series Bulletin Mockup).
    Not a card: no dispatch number, no series stamp, never in Declass.
-   The archival photo fills the frame in grayscale. A cream tab at top left reads CAMPAIGN SERIES over the
+   The archival photo fills the frame in grayscale. A cream tab at top left reads CAMPAIGN SERIES · DAY BY DAY (named 15 Nov 2026) over the
    series name and DAY N (day in teletype red). A cream strip near the bottom carries the one line subtitle,
    then BULLETIN · date · place on the left and @ww2dispatches on the right.
    Units are the mockup's pixels at 1080 x 1350 (s = 1). The X image (1600 x 1440) scales by area and lifts the
@@ -44,11 +44,11 @@ function draw(cv,img,p){
   ctx.font=`700 ${44*s}px Oswald`; ctx.letterSpacing=`${2*s}px`;
   const nameW=ctx.measureText(name).width, dayW=ctx.measureText(day).width;
   ctx.font=`500 ${20*s}px Oswald`; ctx.letterSpacing=`${5*s}px`;
-  const capW=ctx.measureText("CAMPAIGN SERIES").width;
+  const CAP="CAMPAIGN SERIES  ·  DAY BY DAY"; const capW=ctx.measureText(CAP).width;
   const tabW=Math.max(capW,nameW+18*s+dayW)+48*s, tabH=(16+20+6+44+16)*s+4*s;
   const tx=40*s, ty=44*s;
   paper(ctx,tx,ty,tabW,tabH,s);
-  ctx.fillStyle=INK; ctx.fillText("CAMPAIGN SERIES",tx+24*s,ty+(14+18)*s);
+  ctx.fillStyle=INK; ctx.fillText(CAP,tx+24*s,ty+(14+18)*s);
   ctx.font=`700 ${44*s}px Oswald`; ctx.letterSpacing=`${2*s}px`;
   const by=ty+(14+20+6+40)*s;
   ctx.fillText(name,tx+24*s,by);
