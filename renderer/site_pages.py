@@ -422,6 +422,16 @@ def build_shelf_page(vols):
 # ---------------------------------------------------------------------------------------------
 # Name This
 # ---------------------------------------------------------------------------------------------
+def site_card(stem):
+    """The site's own webp copy of a card and its small thumbnail, with a content hash, or None."""
+    full = os.path.join(SITE, "declass", "cards", stem + ".webp")
+    if not os.path.exists(full):
+        return None
+    v = lambda p: hashlib.sha1(open(p, "rb").read()).hexdigest()[:8]
+    thumb = os.path.join(SITE, "declass", "cards", "t", stem + ".webp")
+    return (f"/declass/cards/{stem}.webp?v={v(full)}", f"/declass/cards/t/{stem}.webp?v={v(thumb)}" if os.path.exists(thumb) else None)
+
+
 def category(body):
     m = re.search(r"Can you name th(?:is|ese) ([a-z ]+?)\?", body or "", re.I)
     w = (m[1] if m else "").lower()
@@ -439,8 +449,10 @@ def build_namethis():
     recs = sorted((r for r in recs if r.get("post_date")), key=lambda r: r["post_date"])
     cases, releases = [], {}
     for i, r in enumerate(recs):
-        q = cdn(f"cards/namethis-{r['id']}-game-q.jpg") or cdn(f"cards/namethis-{r['id']}-x.jpg") or r.get("cardImage")
-        a = cdn(f"cards/namethis-{r['id']}-game-a.jpg")
+        # Light copies first: the 720 px and 288 px webp cards the Declass catalog writes (about 46 KB and 8 KB),
+        # falling back to the full 1080 px JPEG (about 300 KB) only if they are missing (14 Nov 2026, Brian saw lag).
+        q, qt = site_card(f"namethis-{r['id']}-game-q") or (cdn(f"cards/namethis-{r['id']}-game-q.jpg") or cdn(f"cards/namethis-{r['id']}-x.jpg") or r.get("cardImage"), None)
+        a, at = site_card(f"namethis-{r['id']}-game-a") or (cdn(f"cards/namethis-{r['id']}-game-a.jpg"), None)
         if not q:
             problem(f"Name This {r['id']}: no card image")
             continue
@@ -453,8 +465,12 @@ def build_namethis():
              "place": r.get("place", ""), "clue": (r.get("pull") or "").removeprefix("Clue:").strip(), "cat": category(r.get("body")),
              "q": q, "threads": links.get("threads") or THREADS, "x": links.get("x") or X, "ig": links.get("instagram") or INSTAGRAM,
              "hist": f"{hist.day} {MONTHS[hist.month - 1][:3]} {hist.year}"}
+        if qt:
+            c["qT"] = qt
         if a:
             c["aImg"] = a
+        if at:
+            c["aT"] = at
         if r.get("answer"):  # lightly encoded, as on the home page; the server drops it from the open case
             c["a"] = base64.b64encode(r["answer"].encode("utf-8")).decode("ascii")
         cases.append(c)

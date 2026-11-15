@@ -274,3 +274,4 @@ p.start { font-family: var(--type); letter-spacing: 0; text-transform: none; fon
 }
 .chips .toggle[aria-pressed="true"] { color: var(--ink); }
 .oc-go .btn { letter-spacing: 1px; padding: 12px 10px; }
+.reveal.busy { opacity: .75; cursor: progress; }
