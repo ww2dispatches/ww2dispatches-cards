@@ -13,6 +13,10 @@ Started 15 Oct 2026. Goal: post every day from launch (Sat 17 Oct 2026) and keep
 * **7:00 p.m., the evening video** (from 15 Nov 2026). A Living Card from the 5 p.m. or 2:30 card's film, or a second cut of the noon film, and only rarely a Story Card. Short caption. All six channels, X included. (Videos doc, "Evening video")
 * The four series are not tied to any time. Any series can run in any slot. The 2:30 slot is always Axis, but the other slots are not Allied only.
 
+**During a Campaign Series** (dates set per series; Pearl Harbor 26 Nov to 7 Dec 2026, the Bulge 16 Dec 2026 to 14 Jan 2027)
+* **6:30 a.m., the Campaign Series post** (6:45 and 7:00 for a second or third series that overlaps). X, Instagram, Threads, Facebook. Not a card, no number. Scheduled in one sitting per series. (Campaign Series doc)
+* **9:00 a.m. the morning after each part's last day, a Campaign Series part** on Substack (moves to Monday if it falls on a Sunday), 3 or 4 per series, in the Campaign Series section. (Campaign Series doc)
+
 **Wednesday and Saturday only**
 * **10:00 a.m., Name This.** X (into an X Community, through Typefully), Threads (History Threads community), Facebook Page, and Instagram (a two week test, see Open decisions), the last three through Buffer. No dispatch number. (Name This doc)
 
@@ -211,3 +215,4 @@ Why: old social posts are close to invisible because feeds favor new content, so
 * 24 Oct 2026: The weekly runs reordered so the video comes first (Tuesday analytics, Wednesday research, Thursday videos, Friday cards; Project Brief and Research doc). The analytics reviews moved to Tuesday, so the 28 Oct and 4 Nov checkpoints became 27 Oct and 3 Nov, and the Pearl Harbor batch dates changed to match.
 * 25 Oct 2026 (later still): Everything for the first Flash card built and pushed: renderer, logs, site, analytics, Declass server and page, the prepared Pearl Harbor art and record in `flash/`, and the rules in the Research, Cards, Videos, and Brief docs.
 * 25 Oct 2026: Flash cards plan added: a rare card spanning all four series, tied to the Declass commemorative days, with a Flash tile beside a half width Name This tile in the dossier. Later: a set list of ten Flash dates (1 and 2 September are two cards) and a debut on Pearl Harbor, 7 Dec 2026. Each Flash date gets a new, revamped Flash card every year. Flash cards are always Top Secret, guaranteed in that day's commemorative file, and pullable later from the archive; the dossier tile takes the holographic tint. Later: the Flash day file holds the Flash card plus three deep archive cards, Flash pulls about 1 in 200 per archive card, no serials, and a full art design. Later still: C2 Kodachrome colorized art and take A borderless in Declass chosen.
+* 14 Nov 2026: Campaign Series slots added to the posting schedule (6:30 posts during a series, and its Substack parts at 9 a.m. the morning after each part ends).

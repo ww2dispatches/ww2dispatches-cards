@@ -5,8 +5,8 @@ A daily social media serial that follows one campaign day by day, told as it hap
 ## Status
 | Series | Dates | Days | State |
 |---|---|---|---|
-| Pearl Harbor | 26 Nov to 7 Dec 1941 (posts 26 Nov to 7 Dec 2026) | 12 | **Built and scheduled 11 Nov 2026**: all 48 posts in Buffer. Records in `campaign-series/pearl-harbor-1941/`. |
-| The Bulge | 16 Dec 1944 to 14 Jan 1945 | 30 | Planned (anchor days below). Build sitting: Thanksgiving weekend, 26 to 29 Nov 2026. |
+| Pearl Harbor | 26 Nov to 7 Dec 1941 (posts 26 Nov to 7 Dec 2026) | 12 | **Built and scheduled 11 Nov 2026**: all 48 posts in Buffer. Records in `campaign-series/pearl-harbor-1941/`. Volume: Part 1 mocked up 14 Nov; Parts 1 to 3 to finish before 30 Nov. |
+| The Bulge | 16 Dec 1944 to 14 Jan 1945 | 30 | Planned (anchor days below). Build sitting: Thanksgiving weekend, 26 to 29 Nov 2026, including its 4 Substack parts. |
 | Next series | Anzio (landing 22 Jan 1944), then Remagen, Okinawa, Black May or Coral Sea, D Day or Midway, Kursk or Sicily, Battle of Britain, Market Garden, Leyte Gulf or El Alamein, Guadalcanal or Tarawa, Pearl Harbor and Wake Island | | Same campaigns as the Campaigns Roadmap, but each series runs on the real dates, not the game month. Alternates not decided. |
 
 ## Decided (11 Nov 2026, Brian)
@@ -41,11 +41,45 @@ Canvas: "Campaign Series Bulletin Mockup" (https://claude.ai/artifact/HKsV6D4kmG
 ## The day record
 `campaign-series/<series>/day-NN.json`: campaign, seriesName, day, days, date (YYYY-MM-DD, the historical date), time ("06:30"), series (battle, home, blue, state, for the analytics), place, subtitle, photo, photoCredit, focusX, focusY, zoom, body, threads (complete, with the footer), footer, hashtags (Instagram), hashtags_xf (X and Facebook), alt, sources, somber (optional), and `buffer` {x, instagram, threads, facebook}. Fixes go to the record first, then the Buffer post.
 
-## Substack (decided 11 Nov 2026)
-* **Weekly roundups**, not daily posts: each daily post is about 100 words, so one per day would be thin and repeat the socials; a week gathers 5 to 7 days into a 600 to 900 word diary with the photos.
-* Filed in a **Campaign Series section** on the Weekly Dispatch Substack, **web only** (no email sent). The Sunday Weekly Dispatch can link the latest roundup.
-* Pearl Harbor: two roundups, Sun 29 Nov (Days 1 to 4) and Mon 7 Dec evening (Days 5 to 12). The Bulge: one each Sunday plus a final one on 14 Jan.
-* Made and scheduled in the build sitting through the browser (Substack has no posting API). **Not yet done for Pearl Harbor**: the section and the two roundups are made in the Bulge sitting, before 29 Nov.
+## The volume: Substack parts (decided 14 Nov 2026, Brian; replaces the weekly roundups)
+The socials stay exactly as they are. The deep version of each series is its **volume**: 3 or 4 long parts on Substack, and the same parts are what the series' book on the Campaign Shelf holds. Each part reads like a chapter of a bound history of the campaign, not a recap of the posts.
+
+**Every part carries (the chapter standard):**
+* **An authentic map**, period or official history (U.S. Army, Navy, or Marine Corps histories, West Point atlas maps, wartime situation maps), public domain, captioned to say what it shows. At least one per part; Part 1 always opens on the campaign map.
+* **The decision makers in their own words**: presidents, prime ministers, ministers, generals, admirals, on both sides, from diaries, memoirs, cables, minutes, and testimony.
+* **First hand accounts**: soldiers, sailors, airmen, civilians, reporters who were there (letters, diaries, oral histories, after action reports, interviews).
+* **At least one primary document set off in full or in a long extract** (an order, cable, broadcast, or report), labeled PRIMARY DOCUMENT or FROM THE RECORD.
+* **Photos that tell the story on their own**: real public domain archival photos chosen so that someone who only looked at the pictures and captions would follow the part. Captions advance the story and give the credit. Better and more photos than the daily posts had.
+* **The hindsight the daily posts can't have**: what the people on the day could not know, put side by side.
+* **Length:** about 400 words for each day the part covers, so a 4 day part runs about 1,600 to 2,000 words and an 8 day part about 3,000 to 3,500.
+* **Sources section** at the end, as a book's notes would.
+* Quoting: public domain government records (orders, cables, testimony, official histories) can be quoted at length. Copyrighted memoirs and books get short quotes only (under 15 words, one per source) and are otherwise paraphrased and cited. Every quote is checked against its source; no quote from memory. No dashes.
+
+**Splitting and timing**
+* **3 parts** for a series up to about 15 days, **4 parts** for a longer one (the 30 day cap means never more than 4).
+* Parts split at the story's turning points, kept roughly even (3 to 10 days each).
+* **Each part goes live at 9 a.m. Mountain the morning after its last day runs.** If that morning is a Sunday, it moves to Monday, so it never shares a day with the Weekly Dispatch. Timing follows the campaign timeline, not a fixed weekday.
+* It is never published before its last day has run, so it never gets ahead of the daily posts.
+
+**The look (different from the Weekly Dispatch)**
+Substack sets one theme for the whole publication (night background, brass gold, Anton titles, Libre Baskerville body, drop caps) and allows no custom code, so the difference comes from inside the post:
+* **Cover:** the Teletype look, drawn by `renderer/campaign_article.html` with `node renderer/campaign_article.js <series> <part>`: grayscale photo, cream tab "CAMPAIGN SERIES / <SERIES> / PART N OF M" (part in red), strip with the part title, "BULLETINS · 26 TO 29 NOV 1941", and WW2 DISPATCHES. 1456 x 1048 (Substack's 14:10 thumbnail), with everything inside the middle 1.91:1 band so social previews keep it all. Set as the post's thumbnail and placed at the top of the post. (Weekly Dispatch covers are a dark photo with a white serif title and a gold tab.)
+* **Title:** "<Series>, Part N: <Part title>", subtitle opens with the dates ("26 to 29 November 1941. ...").
+* **Bulletin breaks:** each day opens with a Substack code block of one line, "BULLETIN · 26 NOV 1941 · HITOKAPPU BAY", which shows as a strip of typewriter text. The Weekly Dispatch never uses code blocks, so this is the series' signature.
+* **Set off documents and voices** as block quotes with a label line in bold (PRIMARY DOCUMENT ·, FROM THE RECORD ·, IN THEIR WORDS ·) and a source line under the quote.
+* **End of part:** a code block "END OF PART 1 · NEXT · 30 NOV TO 3 DEC 1941", one line on what Part 2 covers and the day it arrives, then "ON OUR FEEDS · DAYS 1 TO 4" with a gallery of that part's daily images (Substack's image gallery), then Sources.
+* **Section:** a **Campaign Series** section on the Substack with its own email banner, `campaign-series/brand/campaign-series-email-banner.png` (1100 x 220, and @2x): a cream teletype tape with feed holes on the night color, "CAMPAIGN SERIES" and "WW2 DISPATCHES · THE CAMPAIGN, DAY BY DAY, IN FULL" in red. No photo, so it fits every campaign. (Check in the browser that Substack shows a section's own banner on its emails; if not, the cover at the top of the post does that job.) Readers can opt in or out of the section's emails apart from the Weekly Dispatch.
+
+**Files:** `campaign-series/<series>/articles/part-NN.json` (part, parts, days [first, last], first, last, title, substackTitle, subtitle, publish, coverPhoto, coverCredit, focusX, focusY, status) and `part-NN.md` (the article). `python3 renderer/campaign_article_preview.py <series> <part>` builds a preview styled like the Substack post page in `articles/preview/`. Extra photos and maps go in `photos/campaign/`.
+
+**Posting:** Substack has no connector or API. In the build sitting Claude writes and checks every part and makes the covers; the parts are then set up in Substack as scheduled posts (Claude in the built in browser if Brian is signed in, otherwise Brian pastes each part from the preview, about 10 minutes a part).
+
+**Pearl Harbor volume (3 parts)**
+| Part | Days | Title | Goes live |
+|---|---|---|---|
+| 1 | 1 to 4 (26 to 29 Nov) | The Fleet Slips Away | Mon 30 Nov, 9 a.m. (mock up written 14 Nov) |
+| 2 | 5 to 8 (30 Nov to 3 Dec) | to write | Fri 4 Dec, 9 a.m. |
+| 3 | 9 to 12 (4 to 7 Dec) | to write | Tue 8 Dec, 9 a.m. |
 
 ## Pearl Harbor (26 Nov to 7 Dec 1941, scheduled)
 | Day | Date | Subtitle | Photo |
@@ -85,11 +119,14 @@ Anchor days, each to be verified in the sitting (two sources); the rest are fill
 * D30 14 Jan: the last day; the First and Third Armies close on Houffalize from both sides (the link up comes on the 16th, after the series ends).
 
 ## On ww2dispatches.com (the Campaign Shelf)
-Every series is a volume on the Campaign Shelf at ww2dispatches.com/campaign-series (Site Revamp doc). `renderer/site_pages.py` builds the volume page and one page per day from the day records, and the server shows a day only once its post time has passed. **In each build sitting:** add the volume to `campaign-series/shelf.json` (its `id` must match the folder name, so the Bulge is `bulge-1944`; set the cover photo, cloth color, intro, and blurb), then run `python3 renderer/series_log.py` before the commit, which refreshes the pages with the logs. A volume turns live on the shelf as soon as its folder holds day records.
+**Change decided 14 Nov 2026 (for the site revamp chat):** each book on the shelf holds the series in its **Substack form**. The volume page opens to its 3 or 4 parts (title, dates, cover), and each part page is the full article from `articles/part-NN.md`, with its maps, documents, and photos. The daily posts stay, but only as a compact "day by day" timeline inside each part (day, image, subtitle, one line), not as the main pages. A part shows on the site once its `publish` time has passed, the same way days do now. Until a part is live, the book shows the days already run as it does today.
+
+Until that change ships, the shelf works as built: every series is a volume on the Campaign Shelf at ww2dispatches.com/campaign-series (Site Revamp doc). `renderer/site_pages.py` builds the volume page and one page per day from the day records, and the server shows a day only once its post time has passed. **In each build sitting:** add the volume to `campaign-series/shelf.json` (its `id` must match the folder name, so the Bulge is `bulge-1944`; set the cover photo, cloth color, intro, and blurb), then run `python3 renderer/series_log.py` before the commit, which refreshes the pages with the logs. A volume turns live on the shelf as soon as its folder holds day records.
 
 ## Open
-* The Substack section and the two Pearl Harbor roundups (Bulge sitting, before 29 Nov).
-* The Bulge build sitting (Thanksgiving weekend).
+* Pearl Harbor volume: Brian approves the Part 1 mock up; then finish Part 1 and write Parts 2 and 3; make the Campaign Series section on Substack with its banner and schedule all three (Part 1 by Mon 30 Nov, 9 a.m.).
+* The site revamp chat: switch the Campaign Shelf books to the Substack form (above).
+* The Bulge build sitting (Thanksgiving weekend), with its 4 parts split at the story's turns.
 
 ## Changelog
 * 11 Nov 2026: Idea decided in principle and handed off (slot, platforms, not a card, Bulge dates, Pearl Harbor first, one sitting per series).
@@ -100,3 +137,4 @@ Every series is a volume on the Campaign Shelf at ww2dispatches.com/campaign-ser
 * 12 Nov 2026 (later): overlapping series run together, staggered at 6:30, 6:45, and 7:00 (Brian).
 * 12 Nov 2026 (later): series keep to a focused window of the campaign, never the whole thing (Brian).
 * 12 Nov 2026 (later): hard cap of 30 days per series (Brian); the Bulge trimmed to 16 Dec to 14 Jan (30 days), so it no longer overlaps Anzio.
+* 14 Nov 2026: Substack plan replaced (Brian): no weekly roundups; each series becomes a volume of 3 or 4 in depth parts that read as chapters of a bound book (authentic maps, decision makers in their own words, first hand accounts, a primary document, photos that tell the story), each live at 9 a.m. the morning after its last day (Sunday moves to Monday), in its own Campaign Series section with a teletype tape banner and Teletype look covers; the Campaign Shelf to hold the parts, with the daily posts as a timeline inside. New `renderer/campaign_article.html`, `campaign_article.js`, and `campaign_article_preview.py`; Pearl Harbor Part 1 mocked up.
