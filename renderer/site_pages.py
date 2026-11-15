@@ -118,8 +118,9 @@ BADGE = ('<svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" 
          '<path transform="translate(1394 0)" d="M41 0V118L235 416Q257 449 276.5 480.0Q296 511 308.5 543.0Q321 575 321 610Q321 645 307.0 662.0Q293 679 269 679Q242 679 227.0 664.0Q212 649 206.5 624.0Q201 599 201 568V528H39V571Q39 643 62.0 699.5Q85 756 135.0 788.5Q185 821 266 821Q375 821 430.5 764.5Q486 708 486 607Q486 558 470.5 516.0Q455 474 429.5 434.5Q404 395 375 352L227 131H464V0Z"/></g></svg>')
 # Menu (Brian, 15 Nov 2026): Dispatches (the On this day archive) replaces Today, and Name This leaves the
 # menu for the archive's Name This drawer (it keeps its own page). The home page Today strip stays.
-NAV = [("dispatches", "/on-this-day/", "Dispatches"), ("campaign", "/campaign-series/", "Campaign Series"),
-       ("newsletter", "/newsletter/", "Weekly Dispatch"), ("support", "/support", "Support")]
+# Order (Brian, 15 Nov 2026): Weekly Dispatch ahead of Campaign Series, since email signups come first.
+NAV = [("dispatches", "/on-this-day/", "Dispatches"), ("newsletter", "/newsletter/", "Weekly Dispatch"),
+       ("campaign", "/campaign-series/", "Campaign Series"), ("support", "/support", "Support")]
 MENU_ICON = ('<svg class="m-open" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>'
              '<svg class="m-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>')
 
@@ -127,9 +128,9 @@ MENU_ICON = ('<svg class="m-open" viewBox="0 0 24 24" aria-hidden="true"><path d
 def header(active="", home=False):
     cur = lambda k: ' aria-current="page"' if k == active else ""
     links = "".join(f'<a href="{href}"{cur(k)}>{label}</a>' for k, href, label in NAV)
-    # The phone menu lists Declass as a plain row near the end; the gold button is desktop only.
-    menu = "".join(f'<a href="{href}"{cur(k)}>{label}</a>' for k, href, label in NAV[:3])
-    menu += f'<a class="declass-link" href="/declass">Play Declass</a><a href="/support"{cur("support")}>Support</a>'
+    # The phone menu opens with Play Declass as a gold row (Brian, 15 Nov 2026: push the game first, as on desktop).
+    menu = '<a class="declass-link" href="/declass">Play Declass</a>'
+    menu += "".join(f'<a href="{href}"{cur(k)}>{label}</a>' for k, href, label in NAV)
     return ("<!--chrome:header-->\n"
             f'<header class="sitebar{" home" if home else ""}">'
             f'<a class="brand" href="/" aria-label="WW2 Dispatches home">{BADGE}<span>WW2 Dispatches</span></a>'
