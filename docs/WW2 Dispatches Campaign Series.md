@@ -120,13 +120,20 @@ Anchor days, each to be verified in the sitting (two sources); the rest are fill
 * D30 14 Jan: the last day; the First and Third Armies close on Houffalize from both sides (the link up comes on the 16th, after the series ends).
 
 ## On ww2dispatches.com (the Campaign Shelf)
-**Change decided 14 Nov 2026 (for the site revamp chat):** each book on the shelf holds the series in its **Substack form**. The volume page opens to its 3 or 4 parts (title, dates, cover), and each part page is the full article from `articles/part-NN.md`, with its maps, documents, and photos. The daily posts stay, but only as a compact "day by day" timeline inside each part (day, image, subtitle, one line), not as the main pages. A part shows on the site once its `publish` time has passed, the same way days do now. Until a part is live, the book shows the days already run as it does today.
+**All website work belongs to the Website: Build and Fixes chat** (Brian, 15 Nov 2026). This chat and the build sittings only write the series files (day records, `articles/part-NN.json` and `.md`, covers, photos) and keep `shelf.json` current; the Website chat decides how the site shows them.
+
+**Handed to the Website chat (15 Nov 2026): rebuild the Campaign Shelf around the Substack parts.** The parts are the main pull. The proposal from this chat, for the Website chat and Brian to adopt or change:
+* **The shelf** stays as built (a row of spines).
+* **A book opens to a title page and contents:** the book's cover, a short introduction (the campaign, its dates, why it mattered), then the parts as chapters, each with its own part cover, title, synopsis, and dates. A published part reads "Read Part 1"; a part not yet out shows sealed with "Arrives 4 December" (like the sealed Flash cards in Declass).
+* **A part page is the chapter:** the full article from `articles/part-NN.md` (maps, documents, photos, sources), styled as a page of the book (cream paper, serif type), with previous and next part links and a subscribe on Substack box. A part appears once its `publish` time has passed.
+* **The daily 6:30 posts are secondary, three options for Brian to choose:** (a) a small strip at the end of each part (day, image, subtitle, tap for the caption); (b) an appendix at the back of the book, "The Dispatches, Day by Day" (fits the book idea best); or (c) dropped from the site. With (a) or (b), a series whose Part 1 is not out yet shows the days already run under "In progress", so the book is never empty in its first days.
+* Files the site can read: `campaign-series/<series>/articles/part-NN.json` (part, parts, days, first, last, title, substackTitle, subtitle, synopsis, publish, coverPhoto, coverCredit, focusX, focusY) and `part-NN.md` (markdown: `##` section titles with an italic dateline under each, `![caption](photo)` images, block quotes opening with a bold label, a `---` before the closing "Next" line, then Sources); covers in `articles/images/part-NN-cover.jpg`; `renderer/campaign_article_preview.py` shows how the Substack version reads.
 
 Until that change ships, the shelf works as built: every series is a volume on the Campaign Shelf at ww2dispatches.com/campaign-series (Site Revamp doc). `renderer/site_pages.py` builds the volume page and one page per day from the day records, and the server shows a day only once its post time has passed. **In each build sitting:** add the volume to `campaign-series/shelf.json` (its `id` must match the folder name, so the Bulge is `bulge-1944`; set the cover photo, cloth color, intro, and blurb), then run `python3 renderer/series_log.py` before the commit, which refreshes the pages with the logs. A volume turns live on the shelf as soon as its folder holds day records.
 
 ## Open
 * Pearl Harbor volume: download the three part cover photos (80-G-71198, NH 75483, 80-G-182249) and rerender Part 1's cover; Brian approves the Part 1 mock up; then finish Part 1 and write Parts 2 and 3; make the Campaign Series section on Substack with its banner and schedule all three (Part 1 by Mon 30 Nov, 9 a.m.).
-* The site revamp chat: switch the Campaign Shelf books to the Substack form (above).
+* Website: Build and Fixes chat: rebuild the Campaign Shelf around the Substack parts (above), ideally before Part 1 goes live on Mon 30 Nov; Brian picks the daily posts option there.
 * The Bulge build sitting (Thanksgiving weekend): the 30 days of posts and the split into 4 parts; each part then written in its own short sitting about a week ahead.
 * **From now on, long series work the same way** (Brian, 14 Nov 2026): the build sitting does the daily posts and the part split; parts are written in short sittings ahead of their dates. Short series like Pearl Harbor can do the parts in one sitting.
 
@@ -143,3 +150,4 @@ Until that change ships, the shelf works as built: every series is a volume on t
 * 14 Nov 2026 (later): each part gets its own cover photo tied to that part's moment (Brian); Pearl Harbor's three picked.
 * 14 Nov 2026 (later): cover redone with the photo clear and a cream panel carrying a one line synopsis instead of "bulletins"; the article drops the teletype bulletin breaks for titled, datelined sections, written for readers (Brian).
 * 14 Nov 2026 (later): the Bulge sitting covers only the posts; its parts are written in short sittings ahead of each date (Brian).
+* 15 Nov 2026: all website work moved to the Website: Build and Fixes chat (Brian); the Campaign Shelf rebuild handed there with this chat's proposal and three options for the daily posts.
