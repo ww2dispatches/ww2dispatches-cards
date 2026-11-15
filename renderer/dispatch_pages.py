@@ -47,7 +47,7 @@ def load():
     """Every dispatch card, with its post time worked out the same way as site_data.py and series_log.py:
     the recorded posted date, otherwise the event's month and day in the posting year (a year up after December)."""
     recs = [json.load(open(p, encoding="utf-8")) for p in glob.glob(os.path.join(sp.ROOT, "dispatches", "*.json"))]
-    recs = sorted((r for r in recs if r.get("num") is not None and not r.get("test")), key=lambda r: r["num"])
+    recs = sorted((r for r in recs if r.get("num") is not None), key=lambda r: r["num"])
     out, year, last_md = [], LAUNCH_YEAR, None
     for r in recs:
         md = r["date"][5:]
