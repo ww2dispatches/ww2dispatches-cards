@@ -428,11 +428,11 @@ def build_book(vol, days, parts):
     cover = f"/campaign-series/covers/{vid}.jpg"
     by_n = {d["n"]: d for d in days}
     # Status line: one version per stretch of time, the server keeps the right one.
-    status = [f'<p class="bk-status"{gate(days[0]["release"], live=False)}>Begins {esc(d_short(days[0]["run"]))}, 6:30 a.m. MT</p>']
+    status = [f'<p class="vb-status"{gate(days[0]["release"], live=False)}>Begins {esc(d_short(days[0]["run"]))}, 6:30 a.m. MT</p>']
     for i, d in enumerate(days):
         until = days[i + 1]["release"] if i + 1 < total else None
         label = f"Now running · Day {d['n']} of {total}" if until else f"Complete · {total} days"
-        status.append(f'<p class="bk-status"{gate(d["release"])}{gate(until, live=False) if until else ""}>{label}</p>')
+        status.append(f'<p class="vb-status"{gate(d["release"])}{gate(until, live=False) if until else ""}>{label}</p>')
     entries, covered = [], set()
     count = max([p["of"] or 0 for p in parts] + [len(parts)])
     for p in parts:
@@ -467,18 +467,18 @@ def build_book(vol, days, parts):
     lede = esc(vol.get("intro", ""))
     blurb = esc(vol.get("blurb", ""))
     body = f"""<main class="bookpage">
-  <div class="bk-top"><a class="backlink" href="/campaign-series/">{BACK_SVG} The Campaign Shelf</a><span class="meta">Vol. {esc(vol["vol"])}</span></div>
-  <div class="bk-spread">
-    <section class="bk-plate" style="--cloth:{esc(vol.get("cloth", "#24344F"))}">
-      <img class="bk-cover{' color' if vol.get('coverColor') else ''}" src="{cover}" alt="" style="object-position:{esc(vol.get('coverPos', '50% 40%'))}">
-      <p class="bk-k">Volume {esc(vol["vol"])} · {esc(vol.get("theater", ""))}</p>
+  <div class="vb-top"><a class="backlink" href="/campaign-series/">{BACK_SVG} The Campaign Shelf</a><span class="meta">Vol. {esc(vol["vol"])}</span></div>
+  <div class="vb-spread">
+    <section class="vb-plate" style="--cloth:{esc(vol.get("cloth", "#24344F"))}">
+      <img class="vb-cover{' color' if vol.get('coverColor') else ''}" src="{cover}" alt="" style="object-position:{esc(vol.get('coverPos', '50% 40%'))}">
+      <p class="vb-k">Volume {esc(vol["vol"])} · {esc(vol.get("theater", ""))}</p>
       <h1>{esc(vol["title"])}</h1>
-      <p class="bk-d">{esc(span_dates(days[0]["date"], days[-1]["date"]))}</p>
+      <p class="vb-d">{esc(span_dates(days[0]["date"], days[-1]["date"]))}</p>
       {"".join(status)}
     </section>
-    <section class="bk-paper">
-      <p class="bk-lede">{lede}</p>
-      <p class="bk-intro">{blurb} Each chapter tells part of it in full, with the maps, orders and first hand accounts behind every day. The short dispatches that ran each morning at 6:30 sit beside the days they belong to.</p>
+    <section class="vb-paper">
+      <p class="vb-lede">{lede}</p>
+      <p class="vb-intro">{blurb} Each chapter tells part of it in full, with the maps, orders and first hand accounts behind every day. The short dispatches that ran each morning at 6:30 sit beside the days they belong to.</p>
       <h2>Contents</h2>
       {"".join(entries)}
     </section>
@@ -531,7 +531,7 @@ def build_parts(vol, days, parts):
         closing = p["closing"].replace("{NAV}", "".join(nav))
         img = p["cover"] or f"/campaign-series/covers/{vid}.jpg"
         body = f"""<main class="chapter">
-  <div class="bk-top"><a class="backlink" href="/campaign-series/{vid}/">{BACK_SVG} {esc(vol["title"])}</a><span class="meta">Part {p["n"]} of {count}</span></div>
+  <div class="vb-top"><a class="backlink" href="/campaign-series/{vid}/">{BACK_SVG} {esc(vol["title"])}</a><span class="meta">Part {p["n"]} of {count}</span></div>
   <figure class="ch-cover"><img src="{img}" alt="{esc(p["coverCredit"])}" style="object-position:{esc(p["focus"])}"></figure>
   <header class="ch-head">
     <p class="ch-k">Campaign Series · {esc(vol["title"])} · <b>Part {p["n"]} of {count}</b></p>

@@ -279,21 +279,21 @@ p.start { font-family: var(--type); letter-spacing: 0; text-transform: none; fon
 
 /* =================== The books (15 Nov 2026): title page, chapters, slips, day bookmark =================== */
 .bookpage, .chapter { max-width: 1180px; margin: 0 auto; padding-bottom: 36px; }
-.bk-top { display: flex; align-items: center; justify-content: space-between; padding: 4px 16px 4px 2px; }
-.bk-top .meta { font-family: var(--type); font-size: 13px; color: var(--sand); }
-.bk-plate { background-color: var(--cloth, #24344F); background-image: repeating-linear-gradient(45deg, rgba(255,255,255,.035) 0 2px, transparent 2px 5px), repeating-linear-gradient(-45deg, rgba(0,0,0,.08) 0 2px, transparent 2px 5px);
+.vb-top { display: flex; align-items: center; justify-content: space-between; padding: 4px 16px 4px 2px; }
+.vb-top .meta { font-family: var(--type); font-size: 13px; color: var(--sand); }
+.vb-plate { background-color: var(--cloth, #24344F); background-image: repeating-linear-gradient(45deg, rgba(255,255,255,.035) 0 2px, transparent 2px 5px), repeating-linear-gradient(-45deg, rgba(0,0,0,.08) 0 2px, transparent 2px 5px);
   padding: 24px 20px 28px; display: flex; flex-direction: column; gap: 10px; }
-.bk-cover { width: 100%; aspect-ratio: 5 / 4; object-fit: cover; display: block; border: 6px solid var(--cream); box-shadow: 0 10px 24px rgba(0,0,0,.45); margin-bottom: 8px; filter: grayscale(1); }
-.bk-cover.color { filter: none; }
-.bk-k { margin: 0; font-family: var(--type); font-size: 13px; letter-spacing: 1px; color: var(--dim); }
-.bk-plate h1 { margin: 0; font-family: var(--display); font-weight: 700; font-size: 44px; line-height: 1; letter-spacing: 1px; text-transform: uppercase; color: var(--sheet); text-wrap: balance; }
-.bk-d { margin: 0; font-family: var(--type); font-size: 15px; color: var(--cream); }
-.bk-status { margin: 4px 0 0; align-self: flex-start; font-family: var(--type); font-size: 13px; color: var(--ink); background: var(--cream); padding: 6px 10px; }
-.bk-paper, .ch-paper { background: var(--sheet); color: var(--ink); }
-.bk-paper { padding: 26px 20px 10px; }
-.bk-lede { margin: 0 0 14px; font-family: var(--serif); font-style: italic; font-size: 19px; line-height: 1.5; }
-.bk-intro { margin: 0; font-family: var(--serif); font-size: 16px; line-height: 1.75; color: #2A241D; }
-.bk-paper h2 { margin: 30px 0 4px; font-family: var(--serif); font-style: italic; font-weight: 400; font-size: 22px; }
+.vb-cover { width: 100%; aspect-ratio: 5 / 4; object-fit: cover; display: block; border: 6px solid var(--cream); box-shadow: 0 10px 24px rgba(0,0,0,.45); margin-bottom: 8px; filter: grayscale(1); }
+.vb-cover.color { filter: none; }
+.vb-k { margin: 0; font-family: var(--type); font-size: 13px; letter-spacing: 1px; color: var(--dim); }
+.vb-plate h1 { margin: 0; font-family: var(--display); font-weight: 700; font-size: 44px; line-height: 1; letter-spacing: 1px; text-transform: uppercase; color: var(--sheet); text-wrap: balance; }
+.vb-d { margin: 0; font-family: var(--type); font-size: 15px; color: var(--cream); }
+.vb-status { margin: 4px 0 0; align-self: flex-start; font-family: var(--type); font-size: 13px; color: var(--ink); background: var(--cream); padding: 6px 10px; }
+.vb-paper, .ch-paper { background: var(--sheet); color: var(--ink); }
+.vb-paper { padding: 26px 20px 10px; }
+.vb-lede { margin: 0 0 14px; font-family: var(--serif); font-style: italic; font-size: 19px; line-height: 1.5; }
+.vb-intro { margin: 0; font-family: var(--serif); font-size: 16px; line-height: 1.75; color: #2A241D; }
+.vb-paper h2 { margin: 30px 0 4px; font-family: var(--serif); font-style: italic; font-weight: 400; font-size: 22px; }
 .pe { display: flex; flex-direction: column; gap: 14px; padding: 22px 0; border-top: 1px solid #D9CDB2; }
 .pe-pic { display: block; width: 100%; aspect-ratio: 25 / 10; }
 .pe-pic img { width: 100%; height: 100%; object-fit: cover; display: block; filter: grayscale(1); }
@@ -384,14 +384,14 @@ a.bookmark:hover { background: #fff6e2; }
 
 @media (min-width: 900px) {
   .bookpage, .chapter { padding: 0 24px 40px; }
-  .bk-top { padding-left: 0; } .bk-top .backlink { padding-left: 0; }
-  .bk-spread { display: flex; align-items: stretch; }
-  .bk-plate { flex: 0 0 400px; padding: 36px 34px; gap: 14px; }
-  .bk-cover { border-width: 8px; margin-bottom: 10px; }
-  .bk-plate h1 { font-size: 58px; }
-  .bk-paper { flex: 1 1 auto; min-width: 0; padding: 40px 48px 20px; }
-  .bk-lede, .bk-intro { max-width: 640px; }
-  .bk-paper h2 { font-size: 24px; margin-top: 34px; }
+  .vb-top { padding-left: 0; } .vb-top .backlink { padding-left: 0; }
+  .vb-spread { display: flex; align-items: stretch; }
+  .vb-plate { flex: 0 0 400px; padding: 36px 34px; gap: 14px; }
+  .vb-cover { border-width: 8px; margin-bottom: 10px; }
+  .vb-plate h1 { font-size: 58px; }
+  .vb-paper { flex: 1 1 auto; min-width: 0; padding: 40px 48px 20px; }
+  .vb-lede, .vb-intro { max-width: 640px; }
+  .vb-paper h2 { font-size: 24px; margin-top: 34px; }
   .pe { display: grid; grid-template-columns: minmax(0, 300px) minmax(0, 1fr); gap: 28px; padding: 26px 0; align-items: start; }
   .pe > div:not(.pe-txt) { grid-column: 1; grid-row: 1; }
   .pe-txt { grid-column: 2; grid-row: 1; }
