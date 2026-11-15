@@ -16,6 +16,7 @@ Writes:
   site/campaign-series/<series>.json         the volume data (sealed days are cut by the server)
   site/campaign-series/<series>/thumbs/      small day thumbnails; covers/ the shelf cover photos
   site/name-this/index.html, cases.json      Name This: the open case and the Evidence Drawer
+  site/dispatches/, site/on-this-day/        every daily dispatch's own page and the On this day archive (dispatch_pages.py)
   functions/_data/releases.json              post times the server gates on (days, parts with final flag, Name This)
 and refreshes the shared header and footer (CHROME) in the hand written pages
 (site/index.html, about.html, support.html, privacy.html, 404.html), between their <!--chrome:...--> markers.
@@ -115,7 +116,9 @@ BADGE = ('<svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" 
          '<path d="M125 0 27 810H179L227 338L288 809H407L471 341L520 810H670L573 0H417L348 489L283 0Z"/>'
          '<path transform="translate(697 0)" d="M125 0 27 810H179L227 338L288 809H407L471 341L520 810H670L573 0H417L348 489L283 0Z"/>'
          '<path transform="translate(1394 0)" d="M41 0V118L235 416Q257 449 276.5 480.0Q296 511 308.5 543.0Q321 575 321 610Q321 645 307.0 662.0Q293 679 269 679Q242 679 227.0 664.0Q212 649 206.5 624.0Q201 599 201 568V528H39V571Q39 643 62.0 699.5Q85 756 135.0 788.5Q185 821 266 821Q375 821 430.5 764.5Q486 708 486 607Q486 558 470.5 516.0Q455 474 429.5 434.5Q404 395 375 352L227 131H464V0Z"/></g></svg>')
-NAV = [("today", "/#today", "Today"), ("campaign", "/campaign-series/", "Campaign Series"), ("namethis", "/name-this/", "Name This"),
+# Menu (Brian, 15 Nov 2026): Dispatches (the On this day archive) replaces Today, and Name This leaves the
+# menu for the archive's Name This drawer (it keeps its own page). The home page Today strip stays.
+NAV = [("dispatches", "/on-this-day/", "Dispatches"), ("campaign", "/campaign-series/", "Campaign Series"),
        ("newsletter", "/newsletter/", "Weekly Dispatch"), ("support", "/support", "Support")]
 MENU_ICON = ('<svg class="m-open" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>'
              '<svg class="m-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>')
@@ -125,7 +128,7 @@ def header(active="", home=False):
     cur = lambda k: ' aria-current="page"' if k == active else ""
     links = "".join(f'<a href="{href}"{cur(k)}>{label}</a>' for k, href, label in NAV)
     # The phone menu lists Declass as a plain row near the end; the gold button is desktop only.
-    menu = "".join(f'<a href="{href}"{cur(k)}>{label}</a>' for k, href, label in NAV[:4])
+    menu = "".join(f'<a href="{href}"{cur(k)}>{label}</a>' for k, href, label in NAV[:3])
     menu += f'<a class="declass-link" href="/declass">Play Declass</a><a href="/support"{cur("support")}>Support</a>'
     return ("<!--chrome:header-->\n"
             f'<header class="sitebar{" home" if home else ""}">'
@@ -194,7 +197,7 @@ def asset_v(name):
 
 def sync_chrome():
     """Rewrite the header and footer blocks in the hand written pages so every page matches."""
-    pages = {"index.html": dict(active="today", home=True), "about.html": dict(active=""), "support.html": dict(active="support"), "privacy.html": dict(active=""), "404.html": dict(active="")}
+    pages = {"index.html": dict(active="", home=True), "about.html": dict(active=""), "support.html": dict(active="support"), "privacy.html": dict(active=""), "404.html": dict(active="")}
     for name, kw in pages.items():
         path = os.path.join(SITE, name)
         if not os.path.exists(path):
@@ -855,7 +858,7 @@ def build_namethis():
 </main>"""
     open(os.path.join(SITE, "name-this", "index.html"), "w", encoding="utf-8").write(
         page("Name This | WW2 Dispatches", "Can you name it? One mystery photo from the war, every Wednesday and Saturday, and every closed case in the Evidence Drawer.",
-             "/name-this/", body, "namethis", script=f'<script src="/name-this/namethis.js?v={asset_v("name-this/namethis.js")}"></script>\n',
+             "/name-this/", body, "dispatches", script=f'<script src="/name-this/namethis.js?v={asset_v("name-this/namethis.js")}"></script>\n',
              head_extra=ld({"@type": "CollectionPage", "name": "Name This", "url": f"{URL}/name-this/", "isPartOf": {"@id": SITE_ID},
                             "description": "A mystery photo from the Second World War every Wednesday and Saturday, with every closed case and its answer."})))
     return releases
@@ -865,10 +868,12 @@ def main():
     os.makedirs(os.path.join(SITE, "campaign-series"), exist_ok=True)
     campaigns = build_shelf()
     namethis = build_namethis()
-    json.dump({"campaigns": campaigns, "parts": PART_RELEASES, "namethis": namethis}, open(os.path.join(ROOT, "functions", "_data", "releases.json"), "w", encoding="utf-8"), indent=1)
+    import dispatch_pages
+    dispatches = dispatch_pages.main()
+    json.dump({"campaigns": campaigns, "parts": PART_RELEASES, "namethis": namethis, "dispatches": dispatches}, open(os.path.join(ROOT, "functions", "_data", "releases.json"), "w", encoding="utf-8"), indent=1)
     sync_chrome()
     n_days = sum(len(v) for v in campaigns.values())
-    print(f"site pages: {len(campaigns)} live volume(s), {n_days} day pages, {len(namethis)} Name This cases")
+    print(f"site pages: {len(campaigns)} live volume(s), {n_days} day pages, {len(namethis)} Name This cases, {len(dispatches)} dispatch pages")
     for p in PROBLEMS:
         print("PROBLEM " + p)
 

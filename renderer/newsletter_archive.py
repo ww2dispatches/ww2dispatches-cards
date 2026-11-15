@@ -403,7 +403,17 @@ def main():
 
 # The site map search engines read (13 Nov 2026), rebuilt here because the issue list is what changes
 # week to week. Released issues only. robots.txt points at it. Pages added later go in PAGES.
-PAGES = ["/", "/about", "/declass", "/newsletter/", "/campaign-series/", "/name-this/", "/support", "/privacy"]
+PAGES = ["/", "/about", "/declass", "/on-this-day/", "/newsletter/", "/campaign-series/", "/name-this/", "/support", "/privacy"]
+
+
+def dispatch_urls():
+    """Every daily dispatch page already posted (renderer/dispatch_pages.py writes the times), newest last."""
+    path = os.path.join(ROOT, "functions", "_data", "releases.json")
+    if not os.path.exists(path):
+        return []
+    now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    rel = json.load(open(path, encoding="utf-8")).get("dispatches") or {}
+    return [(f"{SITE}/dispatches/{d['slug']}", d["at"][:10]) for _n, d in sorted(rel.items()) if d["at"] <= now]
 
 
 def campaign_urls():
@@ -426,7 +436,7 @@ def campaign_urls():
 
 def write_sitemap(issues):
     entries = ([(SITE + p, None) for p in PAGES] + [(f'{SITE}/newsletter/{it["id"]}', it["release"][:10]) for it in issues]
-               + campaign_urls())
+               + campaign_urls() + dispatch_urls())
     body = "".join(f"  <url><loc>{html.escape(u)}</loc>{f'<lastmod>{m}</lastmod>' if m else ''}</url>\n" for u, m in entries)
     xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + body + "</urlset>\n"
     open(os.path.join(ROOT, "site", "sitemap.xml"), "w", encoding="utf-8").write(xml)
@@ -446,6 +456,7 @@ def write_llms(issues):
              "## Main pages", "",
              f"- [About WW2 Dispatches]({SITE}/about): what the site is, what it posts and when, and how every dispatch is checked",
              f"- [Today's dispatches]({SITE}/): the home page, with the day's posts",
+             f"- [On this day]({SITE}/on-this-day/): every daily dispatch, filed by calendar date, each on its own page with its sources",
              f"- [The Campaign Shelf]({SITE}/campaign-series/): every Campaign Series, each a book with Day by Day and The Chronicle",
              f"- [Name This]({SITE}/name-this/): a mystery WW2 photo twice a week, with every closed case and its answer",
              f"- [The Weekly Dispatch]({SITE}/newsletter/): one story from that week in the war, told in full, every Sunday",
