@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Special+Elite&display=swap">
-<link rel="stylesheet" href="/declass/declass.css?v=7906c9c1">
+<link rel="stylesheet" href="/declass/declass.css?v=622ade83">
 <link rel="stylesheet" href="/declass/intercept.css?v=a2b6a5a8">
 </head>
 <body>
@@ -36,7 +36,7 @@
 <section class="screen" id="sLoading"><div class="loadstamp" aria-hidden="true">DECLASS</div><p class="sub">Opening the files…</p></section>
 
 <section class="screen soon" id="sSoon">
-  <h1 class="landname">DECLASS</h1>
+  <h2 class="ttl landname">DECLASS</h2>
   <p class="landtag">a WW2 Dispatches game</p>
   <p class="landline" style="margin:0 auto 18px">The files are closed for the moment. Follow <a href="https://ww2dispatches.com/">WW2 Dispatches</a> for word on when they reopen.</p>
 </section>
@@ -59,7 +59,7 @@
 </section>
 
 <section class="screen" id="sSave">
-  <h1>Save your dossier</h1>
+  <h2 class="ttl">Save your dossier</h2>
   <p class="sub">Sign in to keep these cards and open a new file every day.</p>
   <div class="savegrid" id="saveGrid"></div>
   <div class="gslot" id="gSave"></div>
@@ -77,7 +77,7 @@
     <div class="hstat hstreak"><span class="hv"><b id="streakN">0</b><span class="hl">Day streak</span></span><span class="hs" id="streakHint"></span></div>
     <button class="hstat hintel" id="intelBtn" type="button" aria-label="Your Intel"><span class="hv"><span class="hl">Intel</span><img class="itok" src="/declass/icons/intel.svg" alt=""><b id="intelN">0</b></span><span class="hs" id="intelToday">Today +0</span></button>
   </div>
-  <h1>Today's files</h1>
+  <h2 class="ttl">Today's files</h2>
   <div id="files"></div>
   <div class="signbar" id="signBar" hidden><b>Sign in to open today's files</b><span>Your starter pack is waiting in this browser. Save your dossier to keep it and collect every day.</span><div class="gslot" id="gHome"></div></div>
   <p class="nextfile" id="nextFile"></p>
@@ -133,7 +133,7 @@
 
 <section class="screen" id="sPick">
   <button class="back" id="backPick">◀︎ Back</button>
-  <h1>Choose your envelope</h1>
+  <h2 class="ttl">Choose your envelope</h2>
   <p class="sub" id="pickSub">Three came in with this dispatch. Choose the one you want.</p>
   <p class="coachrow" id="pickCoach" hidden><span class="coachp"><i></i>Pick any envelope.</span></p>
   <div class="stack" id="stack"></div>
@@ -167,33 +167,33 @@
 
 <section class="screen" id="sSets">
   <button class="back" id="backSets">◀︎ Dossier</button>
-  <h1>Sets</h1>
+  <h2 class="ttl">Sets</h2>
   <p class="sub">Monthly files earn a stamp. Collections earn pins at 25, 50, and 100 cards.</p>
   <div class="sets2" id="sets"></div>
 </section>
 
 <section class="screen" id="sDelete">
-  <h1 style="margin-top:40px">Delete your dossier?</h1>
+  <h2 class="ttl" style="margin-top:40px">Delete your dossier?</h2>
   <p class="landline" style="margin:12px auto 22px;text-align:center">This removes every card, finish, serial, and your streak from our records for good. It can't be undone.</p>
   <div style="text-align:center"><button class="btn danger" id="deleteYes">Delete everything</button><button class="btn alt" id="deleteNo">Keep my dossier</button></div>
 </section>
 
 <section class="screen" id="sDeleted">
-  <h1 style="margin-top:40px">Your dossier is deleted</h1>
+  <h2 class="ttl" style="margin-top:40px">Your dossier is deleted</h2>
   <p class="landline" style="margin:12px auto 22px;text-align:center">We no longer keep anything about you. You can start fresh anytime with a new starter pack.</p>
   <div style="text-align:center"><button class="btn" id="deletedOk">Back to Declass</button></div>
 </section>
 
 <section class="screen" id="sFile">
   <button class="back" id="backFile">◀︎ Declass</button>
-  <h1 id="fileTitle">Checking the file…</h1>
+  <h2 class="ttl" id="fileTitle">Checking the file…</h2>
   <p class="sub" id="fileSub"></p>
   <div class="viewer" id="fileCard"></div>
 </section>
 
 <section class="screen" id="sSection">
   <button class="back" id="backSection">◀︎ Dossier</button>
-  <h1 id="sectionTitle"></h1>
+  <h2 class="ttl" id="sectionTitle"></h2>
   <p class="sub" id="sectionSub"></p>
   <div id="sectionLeg"></div>
   <div class="filters" id="filters" hidden></div>
@@ -202,7 +202,7 @@
 
 <section class="screen icp" id="sIntercept">
   <div class="icptop"><div class="icpbar"><button class="back" id="icpBack" type="button">◀︎ Declass</button><span class="icpmini" aria-hidden="true">CODE ROOM</span><button class="tbtn howbtn icphow" type="button" data-how="fm-intercept">How to play</button></div><div id="icpBarMarks"></div></div>
-  <h1 class="icpname">CODE ROOM</h1>
+  <h2 class="ttl icpname">CODE ROOM</h2>
   <p class="icptag">a Declass daily puzzle</p>
   <div id="icpBody"></div>
 </section>
@@ -388,7 +388,7 @@
 <div class="glow" id="glow"></div>
 <div class="zoomer" id="zoomer" hidden role="dialog" aria-label="Card up close"><div class="zstage" id="zstage"></div><button class="zx" id="zx" aria-label="Close">✕</button><p class="zhint">Drag to turn · double tap to zoom</p></div>
 <script src="/hit.js"></script>
-<script src="/declass/declass.js?v=1c3f6096"></script>
+<script src="/declass/declass.js?v=ff9ac284"></script>
 <script src="/declass/intercept.js?v=fc66c3de"></script>
 </body>
 </html>

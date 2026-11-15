@@ -44,6 +44,23 @@
     if (url.searchParams.get('ceremony') === 'demo') { ceremonyDemo = true; url.searchParams.delete('ceremony'); history.replaceState(null, '', url.pathname + url.search + url.hash); }
   } catch (e) {}
 
+  // A card link (15 Nov 2026): every dispatch page on ww2dispatches.com has "Collect this card in Declass", which
+  // opens /declass?card=<catalog id>. The id is kept for this visit (a reload during email sign in keeps it) until
+  // the game can act on it: show the card if the player holds it, offer a request if it's sealed, explain if it's
+  // one of today's cards, and for a new visitor wait until the starter pack is done. An unknown id is ignored.
+  const CARD_STORE = 'declass_card';
+  let cardGoal = null, cardLinkNew = false;
+  try {
+    const url = new URL(location.href), c = url.searchParams.get('card');
+    if (c) {
+      cardGoal = { id: c.slice(0, 80), fresh: false };
+      cardLinkNew = !url.searchParams.get('out'); // a hop out of a social app's browser carries the card; count the arrival once
+      url.searchParams.delete('card'); history.replaceState(null, '', url.pathname + url.search + url.hash);
+      sessionStorage.setItem(CARD_STORE, JSON.stringify(cardGoal));
+    } else cardGoal = JSON.parse(sessionStorage.getItem(CARD_STORE) || 'null');
+  } catch (e) {}
+  const dropCardGoal = () => { cardGoal = null; try { sessionStorage.removeItem(CARD_STORE); } catch (e) {} };
+
   function api(path, body) {
     return fetch('/api/' + path, {
       method: body ? 'POST' : 'GET',
@@ -1130,7 +1147,7 @@
     $('saveGrid').querySelectorAll('button').forEach(b => { b.disabled = true; b.style.cursor = 'default'; });
     show('sSave');
   }
-  $('skipSave').onclick = () => { hit('save_skip'); renderHome(); show('sHome'); if (seen('guest')) toast('Your starter pack is saved in this browser for now.'); };
+  $('skipSave').onclick = () => { hit('save_skip'); renderHome(); show('sHome'); if (cardGo()) return; if (seen('guest')) toast('Your starter pack is saved in this browser for now.'); };
 
   // ---------- social app browsers (13 Nov 2026) ----------
   // Links tapped in Threads, Instagram, Facebook, TikTok, and X open in the app's own built in browser, and
@@ -1154,6 +1171,7 @@
     if (STARTER && STARTER.token && !signedIn()) u.searchParams.set('pack', STARTER.token);
     const src = lsGet('ww_src'); if (src && src !== 'direct') u.searchParams.set('ref', src);
     if (testerKey) u.searchParams.set('key', testerKey);
+    if (cardGoal) u.searchParams.set('card', cardGoal.id);
     u.searchParams.set('out', '1');
     return u.href;
   }
@@ -1274,6 +1292,7 @@
     return refreshState().then(() => {
       renderHome(); show('sHome');
       if (fromSave) hit('save_done');
+      if (cardGo(Boolean(d.starterSaved || hadStarter))) return;
       toast(d.starterSaved ? "Dossier saved. Today's files are ready." : hadStarter ? 'Welcome back. Your dossier is loaded.' : 'Signed in. Your dossier is loaded.');
     });
   }
@@ -2703,6 +2722,24 @@
     },
   };
 
+  // Act on a card link once the player is somewhere they can see the card (signed in, or a guest whose starter
+  // pack is turned). A new visitor goes through the starter pack first, and is shown the card only if it came in it.
+  function cardGo(fromPack) {
+    if (!cardGoal) return false;
+    const info = BYID.get(cardGoal.id);
+    if (!info) { dropCardGoal(); return false; }
+    if (!signedIn() && (!STARTER || STARTER.revealed.some(r => !r))) return false; // landing, mid pack, or save screen: wait
+    // "wasn't in your pack" only for someone who just opened one (not a returning player who signed in from the landing)
+    const fresh = cardGoal.fresh && (fromPack === undefined ? Boolean(STARTER) : fromPack);
+    dropCardGoal();
+    if (holdingsNow().has(info.id)) { view(info.id, [info.id]); return true; }
+    if (fresh) { toast(info.short + " wasn't in your starter pack. Open your daily files to find it" + (signedIn() ? ', or request it with Intel.' : '.')); return true; }
+    if (!signedIn()) { toast('Sign in to request ' + info.short + ' with Intel.'); return true; }
+    if (info.today) { toast(info.kind === 'namethis' ? 'This answer went public today. You can request it starting tomorrow.' : "Today's cards can be requested starting tomorrow."); return true; }
+    requestPicker(info.id);
+    return true;
+  }
+
   // ---------- boot ----------
   function route() {
     if (signedIn()) {
@@ -2726,9 +2763,13 @@
     const fresh = icpFresh ? api('intercept/reset', {}).then(() => toast('Code Room reset for today. Open it to start fresh.')).catch(() => toast('Code Room reset is for testers only.')) : Promise.resolve();
     return fresh.then(() => Promise.all([api('catalog'), api('state')])).then(([c, s]) => {
       setCatalog(c.cards); ST = s; landFan();
+      if (cardLinkNew) hit('card_link');
+      if (cardGoal && !BYID.has(cardGoal.id)) dropCardGoal();
+      // a visitor with nothing yet (no account, no pack in this browser) gets the starter pack first
+      if (cardGoal && !signedIn() && !STARTER) { cardGoal.fresh = true; try { sessionStorage.setItem(CARD_STORE, JSON.stringify(cardGoal)); } catch (e) {} }
       const file = new URLSearchParams(location.search).get('file');
       if (file) return checkFile(file);
-      return carriedPack().then(got => { if (got) showSave(); else { route(); if (signedIn()) maybePromote(); } });
+      return carriedPack().then(got => { if (got) showSave(); else { route(); cardGo(); if (signedIn()) maybePromote(); } });
     });
   }).catch(e => { console.error('declass boot', e); show('sSoon'); });
 })();
