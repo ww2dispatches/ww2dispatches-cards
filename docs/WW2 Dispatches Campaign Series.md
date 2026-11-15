@@ -73,6 +73,11 @@ Substack sets one theme for the whole publication (night background, brass gold,
 
 **Files:** `campaign-series/<series>/articles/part-NN.json` (part, parts, days [first, last], first, last, title, substackTitle, subtitle, synopsis, publish, coverPhoto, coverCredit, focusX, focusY, status) and `part-NN.md` (the article). `python3 renderer/campaign_article_preview.py <series> <part>` builds a preview styled like the Substack post page in `articles/preview/`. Extra photos and maps go in `photos/campaign/`.
 
+**Rules for the site** (from the Website chat, 15 Nov 2026; the Website chat owns how the site shows them):
+1. **Mark a part final when it is done.** In `part-NN.json` set `"status": "final"` in the same sitting the part is finished and checked, and before its `publish` time. Any other value (`"mockup"`, `"draft"`) keeps the chapter sealed on ww2dispatches.com (it still shows on preview addresses for review). A part goes live on the site at its `publish` time, and only if it is final.
+2. **One `##` section per day, in order.** In `part-NN.md`, each `##` heading is one day of the part, in the same order as the part's `days` range (Part 1, Days 1 to 4, has exactly four `##` sections), with the italic dateline on the line right under each heading. The site pairs each section with that day's 6:30 post, shown as a slip beside it. If the counts don't match, the slips are left out and the build prints a PROBLEM line. No other `##` headings in a part (Sources is `###`).
+* Keep as now: the `---` line before the closing "Next:" paragraph, then `### Sources`; photo paths like `photos/campaign/...` that exist in the repo; `title`, `synopsis`, `first`, `last`, `days`, `publish`, `coverPhoto`, `coverCredit` filled in. After committing a part, run `python3 renderer/series_log.py`, which rebuilds the site pages.
+
 **Posting:** Substack has no connector or API. In the build sitting Claude writes and checks every part and makes the covers; the parts are then set up in Substack as scheduled posts (Claude in the built in browser if Brian is signed in, otherwise Brian pastes each part from the preview, about 10 minutes a part).
 
 **Pearl Harbor volume (3 parts)**
@@ -142,6 +147,7 @@ Anchor days, each to be verified in the sitting (two sources); the rest are fill
 Until that change ships, the shelf works as built: every series is a volume on the Campaign Shelf at ww2dispatches.com/campaign-series (Site Revamp doc). `renderer/site_pages.py` builds the volume page and one page per day from the day records, and the server shows a day only once its post time has passed. **In each build sitting:** add the volume to `campaign-series/shelf.json` (its `id` must match the folder name, so the Bulge is `bulge-1944`; set the cover photo, cloth color, intro, and blurb), then run `python3 renderer/series_log.py` before the commit, which refreshes the pages with the logs. A volume turns live on the shelf as soon as its folder holds day records.
 
 ## Open
+* **Pearl Harbor Part 1 is still `"mockup"`:** set it to `"final"` before Mon 30 Nov, 9 a.m., or the site keeps it sealed after Substack publishes it. Same for Parts 2 and 3 before 4 and 8 Dec.
 * Pearl Harbor volume: download the three part cover photos (80-G-71198, NH 75483, 80-G-182249) and rerender Part 1's cover; Brian approves the Part 1 mock up; then finish Part 1 and write Parts 2 and 3; make the Campaign Series section on Substack with its banner and schedule all three (Part 1 by Mon 30 Nov, 9 a.m.).
 * Website: Build and Fixes chat: rebuild the Campaign Shelf around the Substack parts (above), ideally before Part 1 goes live on Mon 30 Nov; Brian picks the daily posts option (a to h) there.
 * The Bulge build sitting (Thanksgiving weekend): the 30 days of posts and the split into 4 parts; each part then written in its own short sitting about a week ahead.
@@ -161,3 +167,4 @@ Until that change ships, the shelf works as built: every series is a volume on t
 * 14 Nov 2026 (later): cover redone with the photo clear and a cream panel carrying a one line synopsis instead of "bulletins"; the article drops the teletype bulletin breaks for titled, datelined sections, written for readers (Brian).
 * 14 Nov 2026 (later): the Bulge sitting covers only the posts; its parts are written in short sittings ahead of each date (Brian).
 * 15 Nov 2026: all website work moved to the Website: Build and Fixes chat (Brian); the Campaign Shelf rebuild handed there with this chat's proposal and eight options (a to h) for the daily posts.
+* 15 Nov 2026 (later): the Website chat's two rules for parts added to Files: `status` "final" before `publish`, and one `##` section per day in order.
