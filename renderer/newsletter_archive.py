@@ -357,7 +357,14 @@ def build_issue(it, prev, nxt, year):
 </main>
 <iframe name="substack-signup" title="Newsletter signup" hidden></iframe>"""
     return site_pages.page(f'{it["title"]} | The Weekly Dispatch', it["preview"] or it["title"], f'/newsletter/{it["id"]}', body, "newsletter",
-                           image=it["lead"][1] if it["lead"] else None, ogtype="article", ogtitle=it["title"], head_extra=NL_CSS)
+                           image=it["lead"][1] if it["lead"] else None, ogtype="article", ogtitle=it["title"],
+                           head_extra=NL_CSS + site_pages.ld(
+                               {"@type": "Article", "@id": f'{SITE}/newsletter/{it["id"]}#article', "headline": it["title"],
+                                "alternativeHeadline": f'The Weekly Dispatch, No. {it["id"]}', "description": it["preview"] or it["title"],
+                                "image": it["lead"][1] if it["lead"] else f"{SITE}/img/og.jpg", "datePublished": it["release"],
+                                "author": {"@id": site_pages.ORG_ID}, "publisher": {"@id": site_pages.ORG_ID}, "inLanguage": "en",
+                                "wordCount": it["words"], "url": f'{SITE}/newsletter/{it["id"]}', "isPartOf": {"@id": site_pages.SITE_ID}},
+                               site_pages.crumbs(("The Weekly Dispatch", "/newsletter/"), (it["title"], f'/newsletter/{it["id"]}'))))
 
 
 def main():
@@ -400,7 +407,8 @@ PAGES = ["/", "/about", "/declass", "/newsletter/", "/campaign-series/", "/name-
 
 
 def campaign_urls():
-    """Campaign Series volume pages and the day pages already posted (renderer/site_pages.py writes the times)."""
+    """Campaign Series book pages, published final chapters, and the day pages already posted, each with its
+    last change date (renderer/site_pages.py writes the times). Returns (url, lastmod or None) pairs."""
     path = os.path.join(ROOT, "functions", "_data", "releases.json")
     if not os.path.exists(path):
         return []
@@ -408,19 +416,61 @@ def campaign_urls():
     out = []
     rel = json.load(open(path, encoding="utf-8"))
     for vid, days in (rel.get("campaigns") or {}).items():
-        out.append(f"{SITE}/campaign-series/{vid}/")
-        # chapters (Campaign Series parts) once published and marked final
-        out += [f"{SITE}/campaign-series/{vid}/part-{nn}" for nn, p in sorted(((rel.get("parts") or {}).get(vid) or {}).items())
+        posted = [at for at in days.values() if at <= now]
+        out.append((f"{SITE}/campaign-series/{vid}/", max(posted)[:10] if posted else None))
+        out += [(f"{SITE}/campaign-series/{vid}/part-{nn}", p["at"][:10]) for nn, p in sorted(((rel.get("parts") or {}).get(vid) or {}).items())
                 if p.get("final") and p.get("at", "9") <= now]
-        out += [f"{SITE}/campaign-series/{vid}/day-{nn}" for nn, at in sorted(days.items()) if at <= now]
+        out += [(f"{SITE}/campaign-series/{vid}/day-{nn}", at[:10]) for nn, at in sorted(days.items()) if at <= now]
     return out
 
 
 def write_sitemap(issues):
-    urls = [SITE + p for p in PAGES] + [f'{SITE}/newsletter/{it["id"]}' for it in issues] + campaign_urls()
-    body = "".join(f"  <url><loc>{html.escape(u)}</loc></url>\n" for u in urls)
+    entries = ([(SITE + p, None) for p in PAGES] + [(f'{SITE}/newsletter/{it["id"]}', it["release"][:10]) for it in issues]
+               + campaign_urls())
+    body = "".join(f"  <url><loc>{html.escape(u)}</loc>{f'<lastmod>{m}</lastmod>' if m else ''}</url>\n" for u, m in entries)
     xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + body + "</urlset>\n"
     open(os.path.join(ROOT, "site", "sitemap.xml"), "w", encoding="utf-8").write(xml)
+    write_llms(issues)
+
+
+# llms.txt (SEO pack, 15 Nov 2026): a short plain text guide for AI tools to what the site is and where its
+# key pages live (llmstxt.org). Rebuilt with the sitemap so released issues and chapters join as they go live.
+def write_llms(issues):
+    lines = ["# WW2 Dispatches", "",
+             "> The Second World War, told on the day it happened. Every day WW2 Dispatches posts what happened on this date during the war, "
+             "from the road to war in the 1930s to the surrender in 1945, with real archival photographs and film, checked against sources. "
+             "A Wraithlight Digital project.", "",
+             "Posts run across four series: Battle Lines (battles and military operations), Home Front (civilian life), "
+             "Blueprint (engineering and invention), and Statecraft (politics and diplomacy). Campaign Series follow one campaign on its real dates, "
+             "told two ways: Day by Day (a short post each morning) and The Chronicle (the full account in three or four long parts).", "",
+             "## Main pages", "",
+             f"- [About WW2 Dispatches]({SITE}/about): what the site is, what it posts and when, and how every dispatch is checked",
+             f"- [Today's dispatches]({SITE}/): the home page, with the day's posts",
+             f"- [The Campaign Shelf]({SITE}/campaign-series/): every Campaign Series, each a book with Day by Day and The Chronicle",
+             f"- [Name This]({SITE}/name-this/): a mystery WW2 photo twice a week, with every closed case and its answer",
+             f"- [The Weekly Dispatch]({SITE}/newsletter/): one story from that week in the war, told in full, every Sunday",
+             f"- [Declass]({SITE}/declass): the daily WW2 card game", ""]
+    shelf = os.path.join(ROOT, "site", "campaign-series", "shelf.json")
+    vols = [v for v in (json.load(open(shelf, encoding="utf-8")).get("volumes") or []) if v.get("url")] if os.path.exists(shelf) else []
+    camp = campaign_urls()
+    parts = [u for u, _ in camp if "/part-" in u]
+    if vols:
+        lines += ["## Campaign Series", ""]
+        for v in vols:
+            lines.append(f'- [{v["title"]}, {v["dates"]}]({SITE}{v["url"]}): {v.get("blurb") or v.get("intro") or ""}'.rstrip(": "))
+            for u in parts:
+                if f'{v["url"]}part-' in u.replace(SITE, ""):
+                    n = u.rsplit("-", 1)[1]
+                    rec = os.path.join(ROOT, "campaign-series", v["id"], "articles", f"part-{n}.json")
+                    t = json.load(open(rec, encoding="utf-8")).get("title", "") if os.path.exists(rec) else ""
+                    lines.append(f'  - [The Chronicle, Part {int(n)}: {t}]({u})')
+        lines.append("")
+    if issues:
+        lines += ["## The Weekly Dispatch", ""]
+        lines += [f'- [No. {it["id"]}: {it["title"]}]({SITE}/newsletter/{it["id"]}): {it["preview"]}'.rstrip(": ") for it in reversed(issues)]
+        lines.append("")
+    lines += ["## Contact", "", "- contact@ww2dispatches.com (questions, corrections, family stories from the war)", ""]
+    open(os.path.join(ROOT, "site", "llms.txt"), "w", encoding="utf-8").write("\n".join(lines))
 
 
 if __name__ == "__main__":
