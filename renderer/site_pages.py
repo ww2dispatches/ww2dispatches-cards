@@ -299,7 +299,12 @@ def md_figure(line, where):
         problem(f"{where}: image not found ({src})")
         return ""
     no_dash(cap, f"{where} caption")
-    return f'<figure><img src="{esc(url)}" alt="{esc(re.sub(r"[*]", "", cap)[:200])}" loading="lazy"><figcaption>{md_inline(cap)}</figcaption></figure>'
+    size = ""
+    if not src.startswith("http"):
+        from PIL import Image
+        w, h = Image.open(os.path.join(ROOT, src)).size
+        size = f' width="{w}" height="{h}"'  # reserves the space, so jumping to a day's section lands true
+    return f'<figure><img src="{esc(url)}" alt="{esc(re.sub(r"[*]", "", cap)[:200])}"{size} loading="lazy"><figcaption>{md_inline(cap)}</figcaption></figure>'
 
 
 def md_quote(lines):
@@ -554,7 +559,8 @@ def build_parts(vol, days, parts):
         open(os.path.join(out_dir, name), "w", encoding="utf-8").write(
             page(f"{vol['title']}, Part {p['n']}: {p['title']} | WW2 Dispatches", desc, p["url"], body, "campaign",
                  image=f"{URL}{img}", ogtype="article", ogtitle=f"{vol['title']}, Part {p['n']}: {p['title']}", head_extra=head,
-                 script='<script>if(matchMedia("(min-width: 900px)").matches)document.querySelectorAll("details.slip").forEach(function(d){d.open=true;});</script>\n'))
+                 script='<script>if(matchMedia("(min-width: 900px)").matches)document.querySelectorAll("details.slip").forEach(function(d){d.open=true;});'
+                        'addEventListener("load",function(){var t=location.hash&&document.getElementById(location.hash.slice(1));if(t)t.scrollIntoView();});</script>\n'))
     return keep
 
 
