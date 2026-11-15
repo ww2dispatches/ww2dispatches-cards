@@ -340,7 +340,7 @@ a.stamp:hover { background: var(--ink); color: var(--sheet); }
 .ch-paper blockquote p { font-size: 16px; line-height: 1.75; margin: 0 0 .8em; }
 .ch-paper blockquote p:last-child { margin-bottom: 0; }
 .ch-paper blockquote .q-src { font-family: var(--body); font-size: 13.5px; color: #6B5F4E; }
-.ch-sec { margin-top: 30px; }
+.ch-sec { margin-top: 30px; scroll-margin-top: 80px; }
 .ch-sec h2 { margin: 0 0 6px; font-family: var(--display); font-weight: 700; font-size: 30px; line-height: 1.1; color: var(--ink); }
 .ch-sec .dateline { margin: 0 0 14px; }
 .ch-slip { margin-bottom: 20px; }
@@ -406,7 +406,7 @@ a.bookmark:hover { background: #fff6e2; }
   .ch-sec h2 { grid-area: h; font-size: 34px; } .ch-sec .dateline { grid-area: d; margin-bottom: 18px; }
   .ch-slip { grid-area: slip; margin: 8px 0 0; }
   .ch-body { grid-area: b; min-width: 0; }
-  .daybm { grid-column: 2; grid-row: 1; padding: 0; }
+  .daybm { grid-column: 2; grid-row: 1; padding: 0 0 16px; }
   .dayart:has(.daybm) .daypic { grid-row: 1 / span 2; }
   .dayart:has(.daybm) .daytxt { grid-column: 2; grid-row: 2; }
 }

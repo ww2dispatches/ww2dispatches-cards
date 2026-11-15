@@ -336,6 +336,7 @@ def parse_part(md, where):
         last_heading = False
         if first == "---":
             target = closing
+            closing.append("<hr>")
             continue
         if first.startswith("### "):
             target.append("{NAV}" if target is closing and "{NAV}" not in closing else "")
