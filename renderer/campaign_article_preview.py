@@ -7,9 +7,10 @@ Writes campaign-series/<series>/articles/preview/part-NN.html (open it, or scree
 node renderer/campaign_article.js --shot <html> <png>).
 
 Markdown conventions in part-NN.md:
-  fenced code block with one line  -> a teletype bulletin break, e.g. BULLETIN · 26 NOV 1941 · HITOKAPPU BAY
+  ## Section title + *Place, date*  -> each day's section: a short title, then an italic dateline
   ![caption](photo path)           -> a captioned photo or map
-  > **PRIMARY DOCUMENT · ...**     -> a set off primary document (also FROM THE RECORD, IN THEIR WORDS)
+  > **Primary document.** ...      -> a set off document or voice (also **From the record.**, **In their words.**)
+  ---                              -> before the closing "Next: Part N" line
 """
 import json, os, re, sys, html
 import markdown
@@ -41,7 +42,7 @@ body = re.sub(r"<blockquote>.*?</blockquote>", bq, body, flags=re.S)
 d1, d2 = meta["days"]
 strip = "".join(
     f'<img src="{rel(f"campaign-series/{series}/images/day-{d:02d}-instagram.jpg")}">' for d in range(d1, d2 + 1))
-strip_html = (f'<div class="strip"><pre><code>ON OUR FEEDS · DAYS {d1} TO {d2}</code></pre>'
+strip_html = (f'<div class="strip"><h3>The daily dispatches, Days {d1} to {d2}</h3>'
               f'<div class="grid">{strip}</div>'
               f'<p class="cap">The daily posts behind this part, as they ran at dawn on X, Instagram, Threads and Facebook.</p></div>')
 # put the strip just before the sources
@@ -57,7 +58,7 @@ page = f"""<!doctype html><html><head><meta charset="utf-8"><title>{html.escape(
 body{{margin:0;background:#120F0C;color:#E9E1D0;font-family:LB,Georgia,serif}}
 .top{{border-bottom:1px solid #2a241e;padding:18px 0;text-align:center}}
 .wm{{font-family:Anton,sans-serif;font-size:26px;letter-spacing:.06em;color:#F3ECDD}}
-.sec{{text-align:center;margin:26px 0 0;font:13px/1 ui-monospace,Menlo,monospace;letter-spacing:.18em;color:#B8862B}}
+.sec{{text-align:center;margin:26px 0 0;font:13px/1 LB,Georgia,serif;letter-spacing:.18em;color:#B8862B}}
 main{{max-width:728px;margin:0 auto;padding:0 24px 80px}}
 h1{{font-family:Anton,Impact,sans-serif;font-weight:400;font-size:44px;line-height:1.1;margin:14px 0 10px;color:#F3ECDD}}
 .sub{{font-size:19px;line-height:1.5;color:#B9AF9C;margin:0 0 18px}}
@@ -66,13 +67,16 @@ h1{{font-family:Anton,Impact,sans-serif;font-weight:400;font-size:44px;line-heig
 .cover{{width:100%;display:block}}
 .cover+p.cap{{margin-top:8px}}
 main p{{font-size:19px;line-height:1.75;margin:0 0 22px}}
+h2{{font-family:Anton,sans-serif;font-weight:400;font-size:32px;margin:52px 0 4px;color:#F3ECDD}}
+h2+p em:only-child{{font-size:16px;color:#9b917f;letter-spacing:.02em}}
+hr{{border:0;border-top:1px solid #3a3229;margin:44px 0 24px}}
 main .body>p:first-of-type::first-letter{{font-family:Anton,sans-serif;float:left;font-size:78px;line-height:.9;padding:6px 10px 0 0;color:#B8862B}}
 figure{{margin:34px 0}} figure img{{width:100%;display:block}}
 figcaption,.cap{{font-size:14px;line-height:1.5;color:#9b917f;text-align:center;margin-top:8px}}
 pre{{background:#1d1915;border-radius:4px;padding:14px 18px;margin:44px 0 26px;overflow:auto}}
 pre code{{font:15px/1.3 ui-monospace,Menlo,Consolas,monospace;color:#E9E1D0;letter-spacing:.06em}}
 blockquote{{border-left:4px solid #B8862B;margin:30px 0;padding:2px 0 2px 22px;color:#E2D8C4}}
-blockquote p{{font-style:italic}} blockquote p strong{{font-style:normal;font-family:ui-monospace,Menlo,monospace;font-size:13px;letter-spacing:.12em;color:#B8862B;font-weight:400}}
+blockquote p{{font-style:italic}} blockquote p strong{{font-style:normal;color:#B8862B}}
 blockquote p.attr{{font-style:normal;font-size:15px;color:#9b917f}}
 h3{{font-family:Anton,sans-serif;font-weight:400;font-size:24px;margin:48px 0 12px;color:#F3ECDD}}
 ul{{padding-left:20px}} li{{font-size:15px;line-height:1.6;color:#B9AF9C;margin-bottom:6px}}

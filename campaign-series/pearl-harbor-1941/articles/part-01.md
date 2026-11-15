@@ -4,9 +4,9 @@ This is the first of three parts on the road to Pearl Harbor. Our daily posts fo
 
 ![The strike force's track, 26 November to 23 December 1941, from a postwar U.S. Army map. The fleet ran east along the empty northern route, turned south on 4 December, and launched its aircraft north of Oahu on the morning of 7 December, Hawaii time. Times on the map are Tokyo time. U.S. Army, Reports of General MacArthur (1966), public domain.](photos/campaign/ph-map-route.jpg)
 
-```
-BULLETIN · 26 NOV 1941 · HITOKAPPU BAY
-```
+## The Sortie
+
+*Hitokappu Bay, Kuril Islands, 26 November 1941*
 
 At six in the morning, Tokyo time, Vice Admiral Chuichi Nagumo's First Air Fleet left Hitokappu Bay on Etorofu, in the Kuril Islands. Six carriers led it: Akagi, Kaga, Soryu, Hiryu, Shokaku and Zuikaku, together carrying more than 400 aircraft. Two battleships, cruisers and destroyers screened them, and a train of tankers followed, because the route ahead had no friendly port.
 
@@ -22,13 +22,13 @@ A day later, on the afternoon of 26 November in Washington, Secretary of State C
 
 The fleet was already at sea.
 
-```
-BULLETIN · 27 NOV 1941 · WASHINGTON
-```
+## A War Warning
+
+*Washington, 27 November 1941*
 
 The next day, Admiral Harold Stark, the Chief of Naval Operations, sent the Pacific and Asiatic Fleets the message that would be argued over for years.
 
-> **PRIMARY DOCUMENT · Chief of Naval Operations to the Pacific and Asiatic Fleets, 27 November 1941**
+> **Primary document.** Chief of Naval Operations to the Pacific and Asiatic Fleets, 27 November 1941
 >
 > "This despatch is to be considered a war warning. Negotiations with Japan looking toward stabilization of conditions in the Pacific have ceased and an aggressive move by Japan is expected within the next few days."
 
@@ -40,15 +40,15 @@ By then the strike force was two days out from the Kurils, on a course no Americ
 
 ![Admiral Harold R. Stark, Chief of Naval Operations, who signed the war warning. U.S. Navy photo, NHHC NH 49967, public domain.](photos/campaign/ph-02.jpg)
 
-```
-BULLETIN · 28 NOV 1941 · PEARL HARBOR
-```
+## Under War Conditions
+
+*Pearl Harbor, 28 November 1941*
 
 Not every commander in Hawaii read the warning as a problem for somebody else. Vice Admiral William Halsey took the carrier Enterprise to sea that morning on what the Marine pilots aboard had been told was a training flight. Their real job was to ferry the twelve Wildcat fighters of squadron VMF 211 to Wake Island, a coral atoll nearly 2,500 miles to the west.
 
 Halsey had asked Kimmel how far he could go if he met Japanese ships. Use your common sense, Kimmel told him. Halsey took that as permission to shoot first. Once the task force was clear of Oahu, the carrier's captain, George Murray, put it in writing for every man aboard.
 
-> **FROM THE RECORD · USS Enterprise, Battle Order No. 1, 28 November 1941**
+> **From the record.** USS Enterprise, Battle Order No. 1, 28 November 1941
 >
 > "The Enterprise is now operating under war conditions. At any time, day or night, we must be ready for instant action. ... Steady nerves and stout hearts are needed now."
 >
@@ -58,9 +58,9 @@ Live warheads went into the torpedoes. Pilots were told to sink any ship and dow
 
 ![USS Enterprise underway in the Pacific, June 1941. U.S. Navy photo, public domain.](photos/campaign/ph-03.jpg)
 
-```
-BULLETIN · 29 NOV 1941 · TOKYO
-```
+## The Last Voices
+
+*Tokyo, 29 November 1941*
 
 In Tokyo, the decision that would send the fleet the rest of the way still had to be made. On 29 November, eight former prime ministers, the senior statesmen known as the jushin, were called to the Imperial Palace to hear the government's case and give their views. It was the last moment anyone outside the cabinet and high command could speak before the Emperor decided.
 
@@ -72,11 +72,9 @@ No one in the room knew that the carriers were already three days out, somewhere
 
 ![Admiral Keisuke Okada, former prime minister, one of the two senior statesmen who urged against war. Portrait published 1934 to 1935, public domain.](photos/campaign/ph-04.jpg)
 
-```
-END OF PART 1 · NEXT · 30 NOV TO 3 DEC 1941
-```
+---
 
-In Part 2, a prince warns his brother the Emperor that the navy has doubts, Tokyo makes its final decision for war, and a coded signal tells the fleet to climb Mount Niitaka. Part 2 arrives Friday, 4 December.
+*Next: Part 2, 30 November to 3 December 1941.* A prince warns his brother the Emperor that the navy has doubts, Tokyo makes its final decision for war, and a coded signal tells the fleet to climb Mount Niitaka. Part 2 arrives Friday, 4 December.
 
 ### Sources
 
