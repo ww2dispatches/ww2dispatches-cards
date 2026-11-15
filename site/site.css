@@ -410,3 +410,13 @@ a.bookmark:hover { background: #fff6e2; }
   .dayart:has(.daybm) .daypic { grid-row: 1 / span 2; }
   .dayart:has(.daybm) .daytxt { grid-column: 2; grid-row: 2; }
 }
+
+/* Day page on a phone (15 Nov 2026, Brian): the post image is capped at a little over half the
+   screen and centered, so the headline and the start of the caption show without scrolling. */
+@media (max-width: 899px) {
+  .daypic { display: flex; justify-content: center; background: #0D0B09; }
+  .daypic img { width: auto; max-width: 100%; height: min(54vh, 125vw); height: min(54svh, 125vw); aspect-ratio: 4 / 5; }
+  .daybm { padding-bottom: 10px; }
+  .bookmark { padding: 9px 12px; min-height: 54px; gap: 10px; }
+  .bm-k { font-size: 12px; } .bm-w { font-size: 15.5px; } .bm-go { font-size: 13px; letter-spacing: 1px; }
+}
