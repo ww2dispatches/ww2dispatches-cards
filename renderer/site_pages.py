@@ -116,10 +116,10 @@ def header(active="", home=False):
 
 
 def footer(year=2026):
-    # Brief on purpose (Brian, 15 Nov 2026): About jumps to the About band on the home page, which links the full About page.
+    # Brief on purpose (Brian, 15 Nov 2026): About goes straight to the About page (Brian, 15 Nov).
     return ("<!--chrome:footer-->\n"
             '<footer class="sitefoot"><span>@ww2dispatches · a Wraithlight Digital project</span>'
-            f'<nav class="footnav" aria-label="Footer"><a href="/#about">About</a><a href="/privacy">Privacy</a><span>© {year} Wraithlight Digital LLC</span></nav></footer>\n'
+            f'<nav class="footnav" aria-label="Footer"><a href="/about">About</a><a href="/privacy">Privacy</a><span>© {year} Wraithlight Digital LLC</span></nav></footer>\n'
             "<!--/chrome:footer-->")
 
 
