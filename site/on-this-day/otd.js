@@ -33,7 +33,6 @@
     months.forEach(function (b) {
       var on = b.dataset.m === String(m);
       b.setAttribute("aria-pressed", on ? "true" : "false");
-      if (on) { var row = b.parentNode; row.scrollLeft = b.offsetLeft - row.offsetLeft - (row.clientWidth - b.offsetWidth) / 2; }
     });
   }
   function select(md, push) {
