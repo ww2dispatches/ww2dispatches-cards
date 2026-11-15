@@ -24,7 +24,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Special+Elite&family=Source+Sans+3:wght@400;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap">
-<link rel="stylesheet" href="/site.css?v=d2ea373a">
+<link rel="stylesheet" href="/site.css?v=a3df5373">
 <style>
 /* One narrow column (max 460px) over archival photos that rotate behind the whole page. */
 :root {
@@ -86,7 +86,7 @@ a { color: inherit; }
 
 /* ---------- today's dispatches ---------- */
 .eyebrow { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 10px; }
-.eyebrow h2, .series h2 { font-family: var(--display); font-weight: 600; text-transform: uppercase; letter-spacing: 2px; font-size: 15px; margin: 0; }
+.eyebrow h2 { font-family: var(--display); font-weight: 600; text-transform: uppercase; letter-spacing: 2px; font-size: 15px; margin: 0; }
 .eyebrow span { font-family: var(--type); color: var(--sand); font-size: 14px; }
 .slider { position: relative; }
 .track { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; border-radius: 4px; }
@@ -162,14 +162,6 @@ a { color: inherit; }
 .pz-last { margin: 0; padding: 10px 12px; border-radius: 4px; background: var(--panel); border: 1px dashed rgba(157,143,208,.5); font-size: 14px; line-height: 1.35; color: #DCD2BC; }
 .pz-last b { color: var(--paper); }
 
-/* ---------- series ---------- */
-.series h2 { margin-bottom: 12px; }
-.series ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-.series li { padding: 12px; border-radius: 4px; background: var(--panel); border: 1px solid var(--line); display: flex; flex-direction: column; gap: 6px; min-width: 0; }
-.stamp { align-self: flex-start; font-family: var(--display); font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; font-size: 13px;
-  border: 2px solid currentColor; padding: 2px 7px; transform: rotate(-2deg); }
-.series li p { margin: 0; font-size: 14px; line-height: 1.35; color: #DCD2BC; }
-.s-battle { color: #E07A6C; } .s-home { color: #A9B87A; } .s-blue { color: #8FA6D6; } .s-state { color: #D9A84A; }
 
 
 @media (prefers-reduced-motion: reduce) {
@@ -361,20 +353,32 @@ a { color: inherit; }
 
 
 
-  <section class="series" aria-labelledby="series-h">
-    <h2 id="series-h">Four kinds of dispatch</h2>
-    <ul>
-      <li><span class="stamp s-battle">Battle Lines</span><p>Battles and military operations.</p></li>
-      <li><span class="stamp s-home">Home Front</span><p>Rationing, factories, and everyday people.</p></li>
-      <li><span class="stamp s-blue">Blueprint</span><p>Radar, codebreakers, and the engineering that won it.</p></li>
-      <li><span class="stamp s-state">Statecraft</span><p>Politics and diplomacy, from Munich to Yalta.</p></li>
-    </ul>
+  <section class="aboutband" id="about" aria-labelledby="about-h">
+    <div class="ab-intro">
+      <h2 id="about-h">About WW2 Dispatches</h2>
+      <p class="ab-lede">The Second World War, told on the day it happened.</p>
+      <p class="ab-text">Every day we post what happened on this date during the war, with real photographs and film from the time, checked against sources.</p>
+      <a class="btn cream" href="/about">More about WW2 Dispatches</a>
+    </div>
+    <div class="ab-sched">
+      <p class="ab-note">When to look · Mountain Time</p>
+      <div class="tt-tape">
+        <div class="tt-row"><span class="tt-t">6:30 a.m.</span><span class="tt-w"><b>Day by Day</b><span>During a Campaign Series</span></span></div>
+        <div class="tt-row"><span class="tt-t">8 a.m.</span><span class="tt-w"><b>The morning dispatch</b></span></div>
+        <div class="tt-row"><span class="tt-t">Noon</span><span class="tt-w"><b>The daily video</b></span></div>
+        <div class="tt-row"><span class="tt-t">2:30 p.m.</span><span class="tt-w"><b>The other side</b></span></div>
+        <div class="tt-row"><span class="tt-t">5 p.m.</span><span class="tt-w"><b>The evening card</b></span></div>
+        <div class="tt-row"><span class="tt-t">7 p.m.</span><span class="tt-w"><b>The evening video</b></span></div>
+        <div class="tt-row"><span class="tt-t">Wed, Sat</span><span class="tt-w"><b>Name This at 10 a.m.</b></span></div>
+        <div class="tt-row"><span class="tt-t">Sunday</span><span class="tt-w"><b>The Weekly Dispatch at 7 a.m.</b></span></div>
+      </div>
+    </div>
   </section>
 
-  <p class="contact">Questions, corrections, or a family story from the war? <a href="mailto:contact@ww2dispatches.com">contact@ww2dispatches.com</a></p>
+  <p class="contact">Questions, corrections, or a family story from the war?<br><a href="mailto:contact@ww2dispatches.com">contact@ww2dispatches.com</a></p>
 
 <!--chrome:footer-->
-<footer class="sitefoot"><span>@ww2dispatches</span><span>Every dispatch checked against sources.</span><span>WW2 Dispatches is a Wraithlight Digital project.</span><span>© 2026 Wraithlight Digital LLC</span><span><a href="/privacy">Privacy</a></span></footer>
+<footer class="sitefoot"><span>@ww2dispatches · a Wraithlight Digital project</span><nav class="footnav" aria-label="Footer"><a href="/#about">About</a><a href="/privacy">Privacy</a><span>© 2026 Wraithlight Digital LLC</span></nav></footer>
 <!--/chrome:footer-->
 </main>
 

@@ -18,7 +18,7 @@ Writes:
   site/name-this/index.html, cases.json      Name This: the open case and the Evidence Drawer
   functions/_data/releases.json              post times the server gates on (days, parts with final flag, Name This)
 and refreshes the shared header and footer (CHROME) in the hand written pages
-(site/index.html, support.html, privacy.html), between their <!--chrome:...--> markers.
+(site/index.html, about.html, support.html, privacy.html, 404.html), between their <!--chrome:...--> markers.
 
 Chapters come from campaign-series/<series>/articles/part-NN.json and .md; a chapter shows once its
 publish time has passed and its record says "status": "final" (a draft shows on preview addresses only).
@@ -116,10 +116,10 @@ def header(active="", home=False):
 
 
 def footer(year=2026):
+    # Brief on purpose (Brian, 15 Nov 2026): About jumps to the About band on the home page, which links the full About page.
     return ("<!--chrome:footer-->\n"
-            '<footer class="sitefoot"><span>@ww2dispatches</span><span>Every dispatch checked against sources.</span>'
-            f'<span>WW2 Dispatches is a Wraithlight Digital project.</span><span>© {year} Wraithlight Digital LLC</span>'
-            '<span><a href="/privacy">Privacy</a></span></footer>\n'
+            '<footer class="sitefoot"><span>@ww2dispatches · a Wraithlight Digital project</span>'
+            f'<nav class="footnav" aria-label="Footer"><a href="/#about">About</a><a href="/privacy">Privacy</a><span>© {year} Wraithlight Digital LLC</span></nav></footer>\n'
             "<!--/chrome:footer-->")
 
 
@@ -173,7 +173,7 @@ def asset_v(name):
 
 def sync_chrome():
     """Rewrite the header and footer blocks in the hand written pages so every page matches."""
-    pages = {"index.html": dict(active="today", home=True), "support.html": dict(active="support"), "privacy.html": dict(active=""), "404.html": dict(active="")}
+    pages = {"index.html": dict(active="today", home=True), "about.html": dict(active=""), "support.html": dict(active="support"), "privacy.html": dict(active=""), "404.html": dict(active="")}
     for name, kw in pages.items():
         path = os.path.join(SITE, name)
         if not os.path.exists(path):
