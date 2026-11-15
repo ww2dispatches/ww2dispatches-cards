@@ -396,7 +396,7 @@ def main():
 
 # The site map search engines read (13 Nov 2026), rebuilt here because the issue list is what changes
 # week to week. Released issues only. robots.txt points at it. Pages added later go in PAGES.
-PAGES = ["/", "/declass", "/newsletter/", "/campaign-series/", "/name-this/", "/support", "/privacy"]
+PAGES = ["/", "/about", "/declass", "/newsletter/", "/campaign-series/", "/name-this/", "/support", "/privacy"]
 
 
 def campaign_urls():

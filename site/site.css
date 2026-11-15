@@ -421,3 +421,75 @@ a.bookmark:hover { background: #fff6e2; }
   .bm-k { font-size: 12px; } .bm-w { font-size: 15.5px; } .bm-go { font-size: 13px; letter-spacing: 1px; }
 }
 .vb-names { margin-top: 12px; } .vb-names b { font-weight: 700; color: var(--ink); }
+
+/* =================== About (15 Nov 2026): footer, the When to look tape, the About page, the home band =================== */
+.footnav { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0 14px; }
+
+/* When to look: the posting schedule as a strip of teletype tape */
+.tt-tape { background: var(--cream); color: var(--ink); border: 1px solid #CDBF9E; box-shadow: 0 2px 0 #D9CDB2; position: relative; padding: 6px 14px 8px 30px; }
+.tt-tape::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 16px; border-right: 1px dashed #CDBF9E;
+  background-image: radial-gradient(circle, var(--night) 2.5px, transparent 3px); background-size: 16px 16px; background-position: 0 6px; }
+.tt-row { display: grid; grid-template-columns: 78px minmax(0, 1fr); gap: 12px; padding: 9px 0; border-bottom: 1px dashed #CDBF9E; align-items: baseline; }
+.tt-row:last-child { border-bottom: 0; }
+.tt-t { font-family: var(--type); font-size: 15px; color: var(--red); white-space: nowrap; }
+.tt-w b { font-family: var(--display); font-weight: 600; font-size: 16.5px; line-height: 1.2; display: block; }
+.tt-w span { font-family: var(--body); font-size: 13.5px; line-height: 1.35; color: #5A4F3F; }
+.tt-group { font-family: var(--type); font-size: 12.5px; color: #6B5F4E; margin: 12px 0 0; padding-top: 6px; }
+.tt-group:first-child { margin-top: 4px; }
+
+/* About page */
+.aboutpage { max-width: 1180px; margin: 0 auto; padding-bottom: 10px; }
+.ab-k, .ab-note { margin: 0; font-family: var(--type); font-size: 13px; color: var(--sand); }
+.ab-hero { padding: 30px 20px; display: flex; flex-direction: column; gap: 14px; border-bottom: 4px solid var(--red); }
+.ab-hero h1 { margin: 0; font-family: var(--display); font-weight: 700; font-size: 46px; line-height: 1; text-transform: uppercase; letter-spacing: 1px; color: var(--sheet); }
+.ab-lede { margin: 0; font-family: var(--serif); font-style: italic; font-size: 21px; line-height: 1.45; color: var(--sheet); }
+.ab-text { margin: 0; font-family: var(--serif); font-size: 16px; line-height: 1.75; color: var(--dim); max-width: 64ch; }
+.aboutpage h2 { margin: 0; font-family: var(--display); font-weight: 700; font-size: 28px; line-height: 1.1; text-transform: uppercase; letter-spacing: .5px; color: var(--sheet); }
+.ab-guide { background: var(--sheet); color: var(--ink); padding: 26px 20px 10px; }
+.ab-guide h2 { color: var(--ink); margin-bottom: 14px; }
+.ab-item { display: flex; flex-direction: column; gap: 8px; padding: 20px 0; border-top: 1px solid #D9CDB2; }
+.ab-item h3 { margin: 0; font-family: var(--display); font-weight: 700; font-size: 22px; line-height: 1.15; }
+.ab-item p { margin: 0; font-family: var(--serif); font-size: 15px; line-height: 1.65; color: #2A241D; }
+.ab-go { align-self: flex-start; display: inline-flex; align-items: center; min-height: 44px; font-family: var(--display); font-weight: 600; font-size: 14px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); text-decoration: none; }
+.ab-go:hover { color: var(--ink); }
+.ab-chips { list-style: none; margin: 4px 0 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 14px; }
+.ab-chips li { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.ab-chips b { align-self: flex-start; font-family: var(--display); font-weight: 700; font-size: 12.5px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--sc); border: 2px solid currentColor; padding: 1px 6px; transform: rotate(-2deg); }
+.ab-chips .s-state { --sc: #8A6420; }
+.ab-chips span { font-family: var(--body); font-size: 14px; line-height: 1.35; color: #3A332A; }
+.ab-two { display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; margin-top: 4px; }
+.ab-two div { background: var(--paper); padding: 12px 14px; border-top: 3px solid var(--ink); }
+.ab-two b { display: block; margin-bottom: 3px; font-family: var(--display); font-weight: 700; font-size: 16px; letter-spacing: .5px; text-transform: uppercase; }
+.ab-two span { font-family: var(--serif); font-size: 14px; line-height: 1.55; color: #2A241D; }
+.ab-when { padding: 30px 16px 10px; }
+.ab-when h2 { padding: 0 4px; } .ab-when .ab-note { padding: 6px 4px 14px; }
+.ab-pair { display: flex; flex-direction: column; gap: 30px; padding: 30px 20px 10px; }
+.ab-pair section { display: flex; flex-direction: column; gap: 14px; }
+.ab-how { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 16px; }
+.ab-how b { display: block; margin-bottom: 4px; font-family: var(--display); font-weight: 700; font-size: 18px; text-transform: uppercase; letter-spacing: .5px; color: var(--sheet); }
+.ab-how span { font-family: var(--serif); font-size: 15px; line-height: 1.65; color: var(--dim); }
+.ab-follow { display: flex; flex-wrap: wrap; gap: 8px; }
+.ab-follow a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; border: 1px solid var(--line2); text-decoration: none; font-family: var(--type); font-size: 13.5px; color: var(--paper); }
+.ab-follow a:hover { border-color: var(--paper); }
+.ab-contact { margin: 0; padding: 34px 20px; text-align: center; font-family: var(--type); font-size: 15px; line-height: 1.6; color: var(--paper); }
+.ab-contact a { color: var(--paper); }
+@media (min-width: 900px) {
+  .aboutpage { padding: 0 24px 10px; }
+  .ab-hero { padding: 56px 0 44px; border-bottom: 0; } .ab-hero h1 { font-size: 72px; }
+  .ab-spread { display: flex; align-items: stretch; border-top: 4px solid var(--red); }
+  .ab-guide { flex: 999 1 560px; min-width: 0; padding: 36px 44px 20px; }
+  .ab-when { flex: 1 1 380px; max-width: 440px; padding: 36px 0 20px 36px; }
+  .ab-when h2, .ab-when .ab-note { padding-left: 0; }
+  .ab-pair { flex-direction: row; flex-wrap: wrap; gap: 30px 60px; padding: 44px 0 10px; }
+  .ab-pair section { flex: 1 1 400px; }
+  .ab-contact { padding: 44px 0; }
+}
+
+/* Home page band (replaces Four kinds of dispatch) */
+.aboutband { display: flex; flex-direction: column; gap: 18px; }
+.aboutband .ab-intro { display: flex; flex-direction: column; gap: 12px; }
+.aboutband h2 { margin: 0; font-family: var(--display); font-weight: 700; font-size: 26px; line-height: 1.1; text-transform: uppercase; letter-spacing: .5px; color: var(--sheet); }
+.aboutband .ab-lede { font-size: 19px; }
+.aboutband .ab-text { font-size: 15px; }
+.aboutband .btn { align-self: flex-start; }
+.aboutband .ab-note { padding-bottom: 8px; }
