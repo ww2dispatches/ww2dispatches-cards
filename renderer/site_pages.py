@@ -498,7 +498,7 @@ def slip_html(d, total, vol):
     return (f'<details class="slip"><summary><img src="{d["thumb"]}" alt="" width="30" height="38" loading="lazy">'
             f'<span class="tt"><b>As it ran</b> · Day {d["n"]} of {total}<br>{hhmm} MT, {esc(d_short(d["run"]))} {d["run"].year}</span>{CHEV_SVG}</summary>'
             f'<div class="slipbody"><p class="sliph">{esc(d["subtitle"])}</p>{paras}'
-            f'<p class="sliplinks"><a href="{d["url"]}">Open the day page</a></p></div></details>')
+            f'<p class="sliplinks"><a href="{d["url"]}?from=chapter">Open the day page</a></p></div></details>')
 
 
 def build_parts(vol, days, parts):

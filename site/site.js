@@ -79,6 +79,19 @@
     });
   }
 
-  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", function () { setupMenu(); setupSignup(); });
-  else { setupMenu(); setupSignup(); }
+  // ---------- day page opened from a chapter's slip (?from=chapter): offer the way back ----------
+  // The bookmark strip already links to the day's section in its chapter; relabel it, and point the
+  // back link at the same spot, so a reader returns to where they were (the books, 15 Nov 2026).
+  function setupFromChapter() {
+    if (!/\/day-\d\d\/?$/.test(location.pathname) || new URLSearchParams(location.search).get("from") !== "chapter") return;
+    var bm = document.querySelector("a.bookmark"); if (!bm) return;
+    var go = bm.querySelector(".bm-go"); if (go) go.textContent = "Back to the chapter";
+    var k = bm.querySelector(".bm-k"); if (k) k.textContent = "You came from the book";
+    var back = document.querySelector(".daytop .backlink"), w = bm.querySelector(".bm-w"), m = w && /^Part \d+/.exec(w.textContent);
+    if (back && m) { back.href = bm.getAttribute("href"); back.lastChild.textContent = " Back to " + m[0]; }
+  }
+
+  function start() { setupMenu(); setupSignup(); setupFromChapter(); }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start);
+  else start();
 })();
