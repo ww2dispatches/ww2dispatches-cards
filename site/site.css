@@ -554,7 +554,6 @@ a.dp-pn:hover { box-shadow: inset 0 0 0 1px var(--paper); }
 .otd-mo:disabled { color: #7E7563; border-color: var(--line); cursor: default; }
 .otd-mo[aria-pressed="true"] { background: var(--red); border-color: var(--red); }
 .otd-calh { margin: 4px 0 8px; font-family: var(--display); font-weight: 500; font-size: 20px; text-transform: uppercase; letter-spacing: 1px; }
-.js .otd-calh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
 .otd-grid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 4px; margin-bottom: 14px; }
 .otd-dy { aspect-ratio: 1 / 1.08; display: flex; flex-direction: column; justify-content: space-between; padding: 5px; text-decoration: none;
   font-size: 14px; font-weight: 600; color: #7E7563; box-shadow: inset 0 0 0 1px var(--line); }
@@ -576,7 +575,8 @@ a.otd-row:hover .otd-tt { color: var(--brass); }
 .otd-day.empty h2::after { content: ": nothing in this series"; font-size: 14px; color: var(--sand); text-transform: none; font-family: var(--body); font-weight: 400; }
 @media (min-width: 900px) {
   .otdpage .pagehead { padding: 40px 40px 6px; } .otdpage .pagehead h1 { font-size: 54px; }
-  .otd-wrap { display: grid; grid-template-columns: minmax(0, 1fr) 380px; gap: 56px; align-items: start; padding: 20px 40px 50px; }
-  .otd-side { position: sticky; top: 90px; }
+  .otd-wrap { display: grid; grid-template-columns: minmax(0, 1fr) 380px; grid-template-areas: "main todays" "main days"; grid-template-rows: auto 1fr;
+    column-gap: 56px; align-items: start; padding: 20px 40px 50px; }
+  .otd-main { grid-area: main; } .otd-todays { grid-area: todays; } .otd-days { grid-area: days; }
   .otd-dy { aspect-ratio: auto; height: 64px; }
 }

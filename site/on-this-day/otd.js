@@ -30,7 +30,11 @@
   }
   function showMonth(m) {
     cals.forEach(function (s) { s.hidden = s.dataset.m !== String(m); });
-    months.forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.m === String(m) ? "true" : "false"); });
+    months.forEach(function (b) {
+      var on = b.dataset.m === String(m);
+      b.setAttribute("aria-pressed", on ? "true" : "false");
+      if (on) { var row = b.parentNode; row.scrollLeft = b.offsetLeft - row.offsetLeft - (row.clientWidth - b.offsetWidth) / 2; }
+    });
   }
   function select(md, push) {
     var p = panel(md); if (!p) return;

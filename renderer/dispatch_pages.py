@@ -233,6 +233,7 @@ def build_archive(ds):
     <p>Every dispatch we have posted, filed by its date. Pick a day to see what happened on it, across every year of the war.</p>
   </header>
   <div class="otd-wrap">
+    <div class="otd-todays">{"".join(todays)}</div>
     <div class="otd-main">
       {chips}
       {nt}
@@ -240,10 +241,7 @@ def build_archive(ds):
       {"".join(cals)}
       <p class="otd-key">Dots show each dispatch by series. Days fill in as their dispatches post. Each date holds every year we cover, so one day can carry 1938 and 1944 side by side.</p>
     </div>
-    <div class="otd-side">
-      {"".join(todays)}
-      <div class="otd-days">{"".join(panels)}</div>
-    </div>
+    <div class="otd-days">{"".join(panels)}</div>
   </div>
 </main>"""
     head = ld({"@type": "CollectionPage", "name": "On this day", "url": f"{sp.URL}/on-this-day/", "isPartOf": {"@id": sp.SITE_ID},
