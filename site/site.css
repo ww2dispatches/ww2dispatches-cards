@@ -500,13 +500,14 @@ a.bookmark:hover { background: #fff6e2; }
 .dp-collect { margin: 14px 16px 0; background: linear-gradient(180deg, #D9B66A, var(--gold)); color: var(--ink); font-family: var(--display); font-weight: 600;
   font-size: 16px; letter-spacing: 1.5px; text-transform: uppercase; min-height: 52px; }
 .dp-collect:hover { background: linear-gradient(180deg, #E6C77E, #C99634); }
-.dp-acts { display: flex; gap: 10px; margin: 10px 16px 0; }
+.dp-acts { display: flex; flex-wrap: wrap; gap: 10px; margin: 10px 16px 0; }
 .dp-acts .btn { font-family: var(--display); font-size: 14px; letter-spacing: 1.5px; text-transform: uppercase; gap: 8px; }
 .dp-acts .btn.cream { flex: 1; }
 .dp-ig { width: 48px; padding: 0; flex: none; }
 .dp-acts svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; }
 .dp-acts svg .fill { fill: currentColor; stroke: none; }
-.dp-watch { flex: 1; }
+.dp-watch { flex: 1 1 100%; }
+.dp-acts .btn { white-space: nowrap; }
 .dp-spec { width: 100%; border-collapse: collapse; font-size: 15px; margin: 4px 0; }
 .dp-spec caption { text-align: left; font-family: var(--type); font-size: 13px; color: var(--sand); padding-bottom: 6px; }
 .dp-spec th, .dp-spec td { text-align: left; padding: 8px 0; border-top: 1px solid var(--line); vertical-align: top; }
