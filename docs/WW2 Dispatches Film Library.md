@@ -99,6 +99,12 @@ Caption German film inside these as above, naming the film. Japanese and Italian
 |---|---|---|---|---|
 | **Polygoon clips** (7, indexed 13 Nov 2026) | German motorized troops enter Amsterdam and Haarlem, May 1940; the IJssel and Grebbeberg battle sites, 22 May 1940; occupied life, May 1940; British armor into Enschede and Hengelo, Apr 1945; street fighting damage and German prisoners in Groningen, Apr 1945; Canadians in Amsterdam, the SS emblem pulled down, Germans trucked away, May 1945; German columns marched off and shipped out in landing craft, May to Jun 1945 | Source Film\Polygoon (Commons copies) | clip time | `claude/film-index/polygoon-1940-1945.md` |
 
+**Flash day film (deep dives of 15 Nov 2026)**
+| Film | Covers | Copies | Times use | Index |
+|---|---|---|---|---|
+| **Pearl Harbor salvage reels** (Navy) | The Oglala righted with Nimitz watching (spring 1942); Oklahoma salvage (Jul 1942); the Arizona wreck in Aug 1945. Plus the checks that put 428-NPC-1730, 418, 16439 and 16128 out under the Movietone rule | NARA 428-NPC-34490, 16195, 14347 | NARA file | `claude/film-index/pearl-harbor-deep-dive-2026-11-15.md` (with `pearl-harbor-navy-reels-2026-11-15.md`) |
+| **Bulge reels** (Signal Corps and Universal) | Engineers slated 18 Dec 1944 near Wirtzfeld; Universal's "German Drive Rolled Back" (evacuees, MP checks, the Bastogne airdrop); the 101st near Bastogne and at Noville; white tanks; Montgomery with U.S. commanders; and the German film of the attack inside The Enemy Strikes, now usable with caption | NARA 111-ADC-3001, 3114, 3136, 3097, 3087, 3124, 2972, 3042; UN-UN-18-363 | NARA file | `claude/film-index/bulge-flash-film-2026-11-15.md` |
+
 **Soviet films (Eastern Front; all Commons PD-Russia-1996)**
 | Film | Covers | Copies | Times use | Index |
 |---|---|---|---|---|
@@ -121,6 +127,8 @@ Usable shots by calendar day across every film on hand. "Verify" means the film 
 * **22 Jan 1944, Anzio landings:** Anzio reel 00:10:30 to 00:10:50 (cruiser and landing craft), 00:09:56 to 00:10:08, 00:08:11 to 00:08:28.
 * 17 Jan 1944, First Battle of Cassino opens: Cassino reel 00:00:18 to 00:00:29 (the abbey, early 1944).
 * 16 to 18 Jan 1945, Houffalize link up; Bastogne returned to the Belgians, the "Battered Bastards" sign (filmed 18 Jan): Bulge Signal Corps reel 111-ADC-3167 00:06:55 to 00:06:59.
+* Early Jan 1945, the 101st Airborne around Bastogne (card reads 1/4/45): paratroopers crossing snowfields, 111-ADC-3114 03:25 to 04:05; welcomed into a town 04:10 to 05:45. 15 to 16 Jan 1945, Noville: 111-ADC-3136 00:10 to 01:30.
+* 11 to 13 Jan 1945, the January counteroffensive: white camouflaged Shermans, 111-ADC-3087 01:15 to 02:50; tank destroyers with infantry riding through snowy forest (camera Bates), 111-ADC-3097 00:10 to 01:15.
 * 1 Jan 1943, Moscow New Year in wartime: BoR Part 2 00:39:04 to 00:40:22.
 * 10 Jan 1943 onward, final assault on the Stalingrad pocket: BoR Part 2 00:40:22 to 00:42:12; Operation Ring, STG 00:52:25 to 00:54:50 (Katyusha salvo 00:53:28).
 * 8 Jan 1943, the ultimatum to Paulus; trumpeter and envoys: STG 00:52:06 to 00:52:18.
@@ -448,6 +456,7 @@ Usable shots by calendar day across every film on hand. "Verify" means the film 
 * 15 to 16 Dec 1941, Klin (Tchaikovsky's house) and Kalinin retaken: MOS 00:52:02 to 00:53:15, 01:00:27 to 01:03:45.
 * 20 Dec 1941, Volokolamsk retaken: MOS 01:03:45 to 01:04:22 (the gallows after it are somber).
 * **7 Dec 1941 (Pearl Harbor Flash day), Japanese Navy film from the carriers:** naId 81567, the launch 00:05:15 to 00:05:33.
+* **7 Dec 1941 (Pearl Harbor Flash day), U.S. film of the day:** 428-NPC-21950 (the AS-10 camera party; pearl-harbor-navy-reels-2026-11-15.md). For a 7 p.m. turn: the Oglala righted, 428-NPC-34490 02:10 to 03:15 (spring 1942), and the Arizona wreck in Aug 1945, 428-NPC-14347 02:30 to 02:55 (pearl-harbor-deep-dive-2026-11-15.md).
 * 8 Dec 1941 (Japan time), Tokyo announces war: Japanese film naId 77701 00:01:01 to 00:06:35.
 * 10 Dec 1941, Guam falls: Japanese film naId 80619 00:04:20 to 00:06:05.
 * 12 Dec 1937, USS Panay sunk: BoC R3 07:10 to 07:39.
@@ -456,6 +465,10 @@ Usable shots by calendar day across every film on hand. "Verify" means the film 
 * 13 to 15 Dec 1943, Arawe convoy and landing: New Britain 00:16:00 to 00:25:40.
 * 16 Dec 1941 onward, liberated towns: BoR Part 2 00:05:46 to 00:07:50.
 * **16 Dec 1944 (Bulge Flash day):** True Glory R8 00:00:18 to 00:00:53.
+* **16 to 18 Dec 1944, the German attack (German film, caption it "German film, from the U.S. Army's The Enemy Strikes (1945)"):** King Tigers in the Eifel 03:10 to 03:31, troops in fog 03:32 to 03:37, armor 03:54 to 04:46, SS troops past a burning U.S. column 04:46 to 05:21 (usually placed at Poteau, 18 Dec; partly staged, verify), U.S. prisoners 05:26 to 05:35 (bulge-flash-film-2026-11-15.md).
+* 17 to 19 Dec 1944, Elsenborn sector: engineers digging into a road near Wirtzfeld, card dated 18 Dec 1944, 111-ADC-3001 04:35 to 05:30. Civilians to the rear and MP checks for German infiltrators, UN-UN-18-363 00:25 to 01:30.
+* 20 Dec 1944 onward, Montgomery takes the northern flank: Montgomery with U.S. commanders, 111-ADC-2972 03:30 to 04:25 (date not on screen, verify).
+* 23 to 26 Dec 1944, the airdrop to Bastogne: UN-UN-18-363 03:05 to 03:35.
 * 20 Dec 1941, Flying Tigers' first combat: BoC R5 06:40 to 06:57.
 * 20 to 26 Dec 1944, Bastogne: True Glory R8 00:01:24 to 00:03:36.
 * 23 Dec 1941, Wake falls: Japanese film naId 80619 00:07:25 to 00:09:03.
@@ -484,6 +497,8 @@ Usable shots by calendar day across every film on hand. "Verify" means the film 
 * Blueprint, the Westwall: Siegfried Line reel 00:02:33 to 00:02:50, 00:04:52 to 00:05:10.
 * Axis lens, German prisoners in Allied hands (any 1944 to 1945 date, labeled with place and date): German prisoners 1945, Brest, Cologne 3535, U-boat crews.
 * Memorial and Remembrance days: True Glory R9 00:07:24 to 00:07:47.
+* Blueprint, winter camouflage (Dec 1944 to Jan 1945): whitewashing vehicles, 111-ADC-3114 00:10 to 02:20; whitewashing Shermans, 111-ADC-3087 01:15 to 02:10.
+* Blueprint, Pearl Harbor salvage: the Oglala righted, 428-NPC-34490 02:10 to 03:15; Oklahoma salvage holes, 428-NPC-16195 03:55 to 05:55.
 
 ## Inside these films: never use
 Each index lists exact times. The rules in short:
@@ -559,6 +574,7 @@ When research or a Project chat finds a film worth keeping (one that covers seve
 5. Add the film to "On hand" and its dates to the Calendar here, and log it below.
 
 ## Changelog
+* 15 Nov 2026 (night): Deep dives for the Pearl Harbor (7 Dec) and Bulge (16 Dec) Flash days. Pearl Harbor: no new attack day film clears the Movietone rule; added the Oglala, Oklahoma and 1945 Arizona salvage reels, and logged the reels ruled out (pearl-harbor-deep-dive-2026-11-15.md). Bulge: the German film of the attack inside The Enemy Strikes is now the opening (usable with caption since 13 Nov), plus 9 Signal Corps and Universal reels from 18 Dec 1944 to mid January (bulge-flash-film-2026-11-15.md). Added a Flash day film table and Calendar dates.
 * 13 Nov 2026 (night, later): Added "Film Search: the War Department method" to Where to look next, so every future Film Search pages through whole U.S. government film series the way the 13 Nov search did. Copied the new indexes to the desktop Film Library folder.
 * 13 Nov 2026 (night): Indexed the War Department finds: Here Is Germany, War Comes to America, Know Your Ally: Britain, Teamwork, The Negro Soldier, San Pietro, Westward Is Bataan, This Is the Philippines, Why We're Here, Our Job in Japan, A Defeated People, The Pale Horseman, Overseas Mission, Death Mills, 15 Combat Bulletins plus The Stilwell Road, and 10 Army-Navy Screen Magazine issues (14 new index docs). Added them to On hand and about 40 dates to the Calendar. Source Film copies are downloading to Source Film\War Department films (9 of 70 files done; the rest finish when the laptop is next on).
 * 13 Nov 2026 (afternoon): Indexed the reels skipped earlier: Prelude to War R2 to R5 and The Nazis Strike R1, and saved all five to Source Film. Added the 1933 to 1940 Germany dates (Propaganda Ministry, Dachau, the book burnings, the Hitler Youth Law, the Tripartite Pact, the Bund rally) to the Calendar.
