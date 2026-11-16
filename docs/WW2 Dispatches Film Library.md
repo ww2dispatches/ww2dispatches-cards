@@ -102,7 +102,7 @@ Caption German film inside these as above, naming the film. Japanese and Italian
 **Flash day film (deep dives of 15 Nov 2026)**
 | Film | Covers | Copies | Times use | Index |
 |---|---|---|---|---|
-| **Pearl Harbor salvage reels** (Navy) | The Oglala righted with Nimitz watching (spring 1942); Oklahoma salvage (Jul 1942); the Arizona wreck in Aug 1945. Plus the checks that put 428-NPC-1730, 418, 16439 and 16128 out under the Movietone rule | NARA 428-NPC-34490, 16195, 14347 | NARA file | `claude/film-index/pearl-harbor-deep-dive-2026-11-15.md` (with `pearl-harbor-navy-reels-2026-11-15.md`) |
+| **Pearl Harbor salvage reels** (Navy) | The Oglala righted with Nimitz watching (spring 1942); Oklahoma salvage (Jul 1942); the "Carry on" message on Nevada's turret (8 Dec 1941); California raised (Apr 1942); the Arizona wreck in Aug 1945. 16439 and 16128 cleared by Brian as exceptions to the Movietone rule; 1730 and 418 stay out | NARA 428-NPC-34490, 16195, 14347, 16439, 16128 | NARA file | `claude/film-index/pearl-harbor-deep-dive-2026-11-15.md` (with `pearl-harbor-navy-reels-2026-11-15.md`) |
 | **Bulge reels** (Signal Corps and Universal) | Engineers slated 18 Dec 1944 near Wirtzfeld; Universal's "German Drive Rolled Back" (evacuees, MP checks, the Bastogne airdrop); the 101st near Bastogne and at Noville; white tanks; Montgomery with U.S. commanders; and the German film of the attack inside The Enemy Strikes, now usable with caption | NARA 111-ADC-3001, 3114, 3136, 3097, 3087, 3124, 2972, 3042; UN-UN-18-363 | NARA file | `claude/film-index/bulge-flash-film-2026-11-15.md` |
 
 **Soviet films (Eastern Front; all Commons PD-Russia-1996)**
@@ -444,6 +444,7 @@ Usable shots by calendar day across every film on hand. "Verify" means the film 
 * 7 to 8 Dec 1941, Pearl Harbor told by the clock, Hull's own voice, Congress declares war: War Comes to America R7 03:29 to 08:47.
 * 1 Dec 1936, the Hitler Youth Law: Prelude to War R3 01:00 to 01:10, 02:05 to 02:10; the Nazi classroom, R3 00:10 to 00:45.
 * 8 Dec 1941, Roosevelt asks Congress for war: WaW 02:56 to 05:30 (U.S. film, sound).
+* 8 Dec 1941, the fleet's answer the day after: the CinCPac "Carry on" message chalked on Nevada's turret, 428-NPC-16439 01:05 to 01:45.
 * **7 Dec 1941, Pearl Harbor, aftermath** (with the Japanese launch film): Pearl Harbor damage 00:03:33 to 00:03:47 (Arizona, not named by NARA), 00:03:50 to 00:04:10, 00:01:26 to 00:01:40. Nine War Gods portraits 00:00:28 to 00:01:13 (captured Japanese film).
 * 8 to 25 Dec 1941, Hong Kong attacked, landed on, surrenders (Japanese film): Nine War Gods 00:04:04 to 00:07:13.
 * **16 Dec 1944, the Bulge:** The Enemy Strikes 06:30 to 06:58 (withdrawal, supplies), 08:12 to 08:51 (winter line); the attack itself is German film only.
@@ -456,7 +457,7 @@ Usable shots by calendar day across every film on hand. "Verify" means the film 
 * 15 to 16 Dec 1941, Klin (Tchaikovsky's house) and Kalinin retaken: MOS 00:52:02 to 00:53:15, 01:00:27 to 01:03:45.
 * 20 Dec 1941, Volokolamsk retaken: MOS 01:03:45 to 01:04:22 (the gallows after it are somber).
 * **7 Dec 1941 (Pearl Harbor Flash day), Japanese Navy film from the carriers:** naId 81567, the launch 00:05:15 to 00:05:33.
-* **7 Dec 1941 (Pearl Harbor Flash day), U.S. film of the day:** 428-NPC-21950 (the AS-10 camera party; pearl-harbor-navy-reels-2026-11-15.md). For a 7 p.m. turn: the Oglala righted, 428-NPC-34490 02:10 to 03:15 (spring 1942), and the Arizona wreck in Aug 1945, 428-NPC-14347 02:30 to 02:55 (pearl-harbor-deep-dive-2026-11-15.md).
+* **7 Dec 1941 (Pearl Harbor Flash day), U.S. film of the day:** 428-NPC-21950 (the AS-10 camera party; pearl-harbor-navy-reels-2026-11-15.md). For a 7 p.m. turn: the chalked CinCPac message on Nevada's turret, "We took a blow yesterday ... CARRY ON" (filmed 8 Dec 1941), 428-NPC-16439 01:05 to 01:45; California pumped out and towed to dry dock, 428-NPC-16128 00:10 to 02:55 (Apr 1942); the Oglala righted, 428-NPC-34490 02:10 to 03:15 (spring 1942); the Arizona wreck in Aug 1945, 428-NPC-14347 02:30 to 02:55 (pearl-harbor-deep-dive-2026-11-15.md; Brian cleared 16439 and 16128 as exceptions to the Movietone rule on 15 Nov 2026).
 * 8 Dec 1941 (Japan time), Tokyo announces war: Japanese film naId 77701 00:01:01 to 00:06:35.
 * 10 Dec 1941, Guam falls: Japanese film naId 80619 00:04:20 to 00:06:05.
 * 12 Dec 1937, USS Panay sunk: BoC R3 07:10 to 07:39.
@@ -574,6 +575,7 @@ When research or a Project chat finds a film worth keeping (one that covers seve
 5. Add the film to "On hand" and its dates to the Calendar here, and log it below.
 
 ## Changelog
+* 15 Nov 2026 (later): Brian cleared two Pearl Harbor reels as exceptions to the Movietone rule: the CinCPac "Carry on" message (428-NPC-16439) and California raised (428-NPC-16128). Added to On hand and the Calendar.
 * 15 Nov 2026 (night): Deep dives for the Pearl Harbor (7 Dec) and Bulge (16 Dec) Flash days. Pearl Harbor: no new attack day film clears the Movietone rule; added the Oglala, Oklahoma and 1945 Arizona salvage reels, and logged the reels ruled out (pearl-harbor-deep-dive-2026-11-15.md). Bulge: the German film of the attack inside The Enemy Strikes is now the opening (usable with caption since 13 Nov), plus 9 Signal Corps and Universal reels from 18 Dec 1944 to mid January (bulge-flash-film-2026-11-15.md). Added a Flash day film table and Calendar dates.
 * 13 Nov 2026 (night, later): Added "Film Search: the War Department method" to Where to look next, so every future Film Search pages through whole U.S. government film series the way the 13 Nov search did. Copied the new indexes to the desktop Film Library folder.
 * 13 Nov 2026 (night): Indexed the War Department finds: Here Is Germany, War Comes to America, Know Your Ally: Britain, Teamwork, The Negro Soldier, San Pietro, Westward Is Bataan, This Is the Philippines, Why We're Here, Our Job in Japan, A Defeated People, The Pale Horseman, Overseas Mission, Death Mills, 15 Combat Bulletins plus The Stilwell Road, and 10 Army-Navy Screen Magazine issues (14 new index docs). Added them to On hand and about 40 dates to the Calendar. Source Film copies are downloading to Source Film\War Department films (9 of 70 files done; the rest finish when the laptop is next on).
