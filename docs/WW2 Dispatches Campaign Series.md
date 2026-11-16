@@ -11,7 +11,7 @@ A daily social media serial that follows one campaign day by day, told as it hap
 ## Status
 | Series | Dates | Days | State |
 |---|---|---|---|
-| Pearl Harbor | 26 Nov to 7 Dec 1941 (posts 26 Nov to 7 Dec 2026) | 12 | **Built and scheduled 11 Nov 2026**: all 48 posts in Buffer. Records in `campaign-series/pearl-harbor-1941/`. Volume: Part 1 mocked up 14 Nov; Parts 1 to 3 to finish before 30 Nov. |
+| Pearl Harbor | 26 Nov to 7 Dec 1941 (posts 26 Nov to 7 Dec 2026) | 12 | **Built and scheduled 11 Nov 2026**: all 48 posts in Buffer, plus the Epilogue's 4 posts for Tue 8 Dec (scheduled 15 Nov). Records in `campaign-series/pearl-harbor-1941/`. Volume: Part 1 mocked up 14 Nov; Parts 1 to 3 to finish before 30 Nov. |
 | The Bulge | 16 Dec 1944 to 14 Jan 1945 | 30 | Planned (anchor days below). Build sitting: Thanksgiving weekend, 26 to 29 Nov 2026, for the 30 days of posts only. Its 4 Substack parts are written in short sittings about a week before each goes live (about 24 Dec, 1 Jan, 8 Jan, 15 Jan; dates set by the split). |
 | Next series | Anzio (landing 22 Jan 1944), then Remagen, Okinawa, Black May or Coral Sea, D Day or Midway, Kursk or Sicily, Battle of Britain, Market Garden, Leyte Gulf or El Alamein, Guadalcanal or Tarawa, Pearl Harbor and Wake Island | | Same campaigns as the Campaigns Roadmap, but each series runs on the real dates, not the game month. Alternates not decided. |
 
@@ -159,7 +159,6 @@ Until that change ships, the shelf works as built: every series is a volume on t
 
 ## Open
 * **Pearl Harbor Part 1 is still `"mockup"`:** set it to `"final"` before Mon 30 Nov, 9 a.m., or the site keeps it sealed after Substack publishes it. Same for Parts 2 and 3 before 4 and 8 Dec.
-* Pearl Harbor Epilogue: Brian pulls the FDR signing photo (LOC cph.3a17434); then render, push, and schedule the four posts for Tue 8 Dec, 6:30 a.m.
 * Pearl Harbor volume: download the three part cover photos (80-G-71198, NH 75483, 80-G-182249) and rerender Part 1's cover; Brian approves the Part 1 mock up; then finish Part 1 and write Parts 2 and 3; make the Campaign Series section on Substack with its banner and schedule all three (Part 1 by Mon 30 Nov, 9 a.m.).
 * Website: Build and Fixes chat: rebuild the Campaign Shelf around the Substack parts (above), ideally before Part 1 goes live on Mon 30 Nov; Brian picks the daily posts option (a to h) there.
 * The Bulge build sitting (Thanksgiving weekend): the 30 days of posts and the split into 4 parts; each part then written in its own short sitting about a week ahead.
@@ -183,3 +182,4 @@ Until that change ships, the shelf works as built: every series is a volume on t
 * 15 Nov 2026 (later): names decided (Brian): the 6:30 posts are **Day by Day** and the Substack parts are **The Chronicle**, under Campaign Series. Cover kicker, Substack section, banner, and preview updated; the Website chat asked to carry the names.
 * 15 Nov 2026 (later): the names applied to the posts (Brian): all 48 scheduled Pearl Harbor posts re-rendered with "CAMPAIGN SERIES · DAY BY DAY" on the tab and the footer "Campaign Series: Pearl Harbor · Day by Day · Day N of 12", updated in Buffer (images pinned to commit 841f48e). The Chronicle Part 1's 29 November section aligned with the Day 4 post (the senior statesmen voiced doubts but none said plainly that war was wrong).
 * 15 Nov 2026 (later): Pearl Harbor gets an Epilogue on 8 Dec at 6:30 (Brian): the whole of 7 December and Roosevelt's speech, leaving the Flash day undisturbed; Chronicle Part 3 now covers Days 9 to 12 and the Epilogue and moves to Wed 9 Dec. Renderer takes an optional `dayLabel`.
+* 15 Nov 2026 (later): Epilogue rendered with Brian's copy of the FDR signing photo and its four posts scheduled for Tue 8 Dec, 6:30 a.m. (images pinned to commit 9700cb1).
