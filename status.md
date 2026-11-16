@@ -19,7 +19,7 @@ Finished noon videos not yet scheduled (aim for 3 to 5). One line each: file on 
 * (empty)
 
 ## Pending one time jobs
-* (none)
+* **Pearl Harbor Flash day, Mon 7 Dec 2026 (batch of 6 to 12 Dec; Brian, 15 Nov 2026).** Wednesday 2 Dec research: the 5:00 p.m. card is a **Spec Sheet on USS Arizona** (BB-39), Blueprint, somber, verified like any spec sheet; plan the 7:00 p.m. video from its film (Navy film of Arizona at Pearl Harbor, using no shot the noon Living Card uses). Friday 4 Dec cards: the 8 a.m. Flash card caption carries one quiet line inviting the moment of silence, "At 7:55 a.m. Hawaii time (12:55 Eastern, 9:55 Pacific), we will pause for a moment of silence." Do not schedule anything else that day; the bulletins and the silence post are added by hand (Roadmap, Pearl Harbor Flash day plan). Remove this line once the 4 Dec cards run has built the day.
 
 ## Open checks
 Small loose ends a run can settle when it has a moment.

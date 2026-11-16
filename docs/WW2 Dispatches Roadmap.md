@@ -130,7 +130,7 @@ A long term idea, agreed in principle 25 Oct 2026, not yet built into the weekly
 Each Flash card needs its art chosen, colorized in the C2 Kodachrome look, and approved by Brian, then saved with its prepared record in `flash/` (`flash/README.md`) **by the Wednesday before its research run**. Each also gets an extra posts plan for the hand session after its Friday cards run. Research dates come from the batch week (Sunday to Saturday) the Flash day falls in.
 | Flash day | Art and record in `flash/` by | Research | Cards run | Hand session |
 |---|---|---|---|---|
-| Pearl Harbor, Mon 7 Dec 2026 | done (approval pending) | Wed 2 Dec | Fri 4 Dec | Sat 5 Dec |
+| Pearl Harbor, Mon 7 Dec 2026 | done (approval pending) | Wed 2 Dec | Fri 4 Dec | extras scheduled Mon 23 or Tue 24 Nov, checked Sat 5 Dec |
 | The Bulge, Wed 16 Dec 2026 | Wed 2 Dec | Wed 9 Dec | Fri 11 Dec | Sat 12 Dec |
 | Stalingrad, Sun 31 Jan 2027 | Wed 20 Jan | Wed 27 Jan | Fri 29 Jan | Sat 30 Jan |
 | Iwo Jima, Fri 19 Feb 2027 | Wed 3 Feb | Wed 10 Feb | Fri 12 Feb | Sat 13 Feb |
@@ -150,23 +150,50 @@ Each Flash card needs its art chosen, colorized in the C2 Kodachrome look, and a
 **The Bulge is the tight one:** its art has to be ready by Wed 2 Dec, the same day Pearl Harbor's research runs. Do it in November.
 
 ### Pearl Harbor Flash day plan (Mon 7 Dec 2026)
-**For the hand session only. The scheduled runs do not act on this section;** they build the normal five slots as usual (8 a.m. Flash card, noon video, 2:30 card, 5 p.m. card, 7 p.m. video). Working session: Sat 5 Dec, after the Fri 4 Dec cards run (a reminder is set).
-* **Only one full art card:** the 8 a.m. Flash card. Nothing added by hand takes a dispatch number or joins Declass.
-* **Flash Traffic bulletins:** short text posts on X and Threads, each posted 85 years to the minute after the event on the Hawaii clock (the convention the memorial ceremonies use; Hawaii ran a half hour off modern time in 1941). Two or three sentences each, wire style, with a timestamp. Somber: no questions, soft asks, newsletter or Declass lines. Times below are Mountain (Hawaii plus 3 hours), to be re-verified in the session:
-  * 6:50 a.m. (3:50 a.m. Hawaii): the minesweeper Condor sights a periscope off the harbor entrance. Some sources say 3:42; say "before dawn" unless settled.
-  * 9:37 a.m. (6:37): USS Ward sights a midget submarine and attacks, America's first shots of the Pacific War.
-  * 10:02 a.m. (7:02): Opana radar detects the incoming formation; the report is taken for B 17s due in from the mainland.
-  * 10:55 a.m. (7:55): the attack begins. "AIR RAID PEARL HARBOR. THIS IS NOT DRILL."
-  * 11:10 a.m. (about 8:10): Arizona explodes; 1,177 of her crew are killed.
-  * About 12:30 p.m. (shortly after 9:30): Shaw's forward magazine explodes, the moment in the Flash card's art; this bulletin can point back to the card. Sits close to the noon video.
-  * 12:20 p.m. (2:20 p.m. Eastern): Nomura and Kurusu hand Hull Japan's note in Washington, after the attack has begun. Statecraft angle.
-  * 12:26 p.m. (about 2:26 p.m. Eastern): WOR breaks into the Giants vs. Dodgers football broadcast; America finds out. Home Front angle.
-* **Moment of silence at 10:55 a.m. (7:55 Hawaii), all six channels:** a plain black image reading "7:55 a.m., Hawaii. 85 years ago." with no caption beyond that. Not a card, no number.
-* **2:30 p.m. card (normal run):** told from the Japanese side, picked by research as usual (the carriers launching at dawn is the obvious angle; the Japanese Navy's own film of the launch, naId 81567, could carry the 7 p.m. video). Somber where the subject is.
-* **7 p.m. video (normal run):** per the evening order, from the 5 p.m. or 2:30 card's film or a second cut of the Navy film. Somber captions.
-* **5 p.m. card (normal run):** a Pearl Harbor tie in picked by the Wednesday research run as usual; strong options are a Photo of the Day of the "NOT DRILL" dispatch (National Archives) or a Spec Sheet on the SCR 270 radar at Opana.
-* **Noon video (normal run):** the Living Card from Navy film, as planned.
-* **In the session:** re-verify every time against Navy and Park Service sources, draft the bulletins and the silence image, schedule them in Buffer, and move any normal post that collides. With five normal posts that day plus eight bulletins and the silence image, check each platform's daily limit in Buffer first.
+**Locked 15 Nov 2026 (Brian), the 85th anniversary.** The scheduled runs build their normal five slots as usual; the three things they need to know (the 8 a.m. silence line, the 5 p.m. Arizona spec sheet, the 7 p.m. Arizona film) are in `status.md` under Pending one time jobs. Everything else on this list is added by hand in Buffer: the extras are scheduled in a session during Thanksgiving week off (Mon 23 or Tue 24 Nov), then checked in about 15 minutes on Sat 5 Dec once the Thursday and Friday runs have built their posts (no shared wording between a bulletin and a run's caption). On the day Brian only does the Lunch Drop and replies.
+* **Only one full art card: the 8 a.m. Flash card, kept at 8 a.m.** Moving it to the Shaw moment was weighed and passed over: the Shaw time is only "shortly after 0930" (DANFS), Declass releases the card in the 8 a.m. envelope and opens the commemorative file with it, and the noon Living Card is that card's video. Nothing added by hand takes a dispatch number or joins Declass.
+* **One clock rule:** each bulletin posts 85 years to the minute on the local clock where it happened, and its timestamp names that clock ("7:58 a.m., Hawaii", "2:20 p.m., Washington"). Hawaii events post at Hawaii time plus 3 hours Mountain, the convention the memorial ceremonies use (Hawaii ran a half hour off modern time in 1941).
+* **Flash Traffic bulletins:** X and Threads only, opening with FLASH and the timestamp, then two or three wire style sentences. Somber: no questions, soft asks, newsletter or Declass lines. Text only, except the Shaw bulletin. The exact look and wording are set by the bulletin mockup.
+
+**The day, Mountain:**
+| Mountain | Moment | Post | Platforms | Made by |
+|---|---|---|---|---|
+| 6:30 | | Campaign Series, Day by Day, Day 12 (the midget submarines released) | X, IG, Threads, FB | Scheduled 11 Nov |
+| 6:42 | 3:42 a.m. Hawaii | Bulletin: Condor sights a periscope off the harbor entrance | X, Threads | Hand |
+| 8:00 | | **Flash card** (USS Shaw, C2 Kodachrome), black and white carousel on IG, caption carries the silence invite | X, IG, Threads, FB | Friday run |
+| 9:47 | 6:47 a.m. Hawaii | Bulletin: Ward sinks a midget submarine, the first American shots of the Pacific War | X, Threads | Hand |
+| 10:02 | 7:02 a.m. Hawaii | Bulletin: Opana radar detects the incoming formation, taken for B-17s | X, Threads | Hand |
+| **10:55** | **7:55 a.m. Hawaii** | **Moment of silence** (below) | All six | Hand |
+| 10:55 to 10:58 | | Nothing posts | | |
+| 10:58 | 7:58 a.m. Hawaii | Bulletin: "AIR RAID PEARL HARBOR. THIS IS NOT DRILL." It breaks the silence, as the flyover does at the ceremony | X, Threads | Hand |
+| 11:06 | 8:06 a.m. Hawaii | Bulletin: Arizona's forward magazines explode | X, Threads | Hand |
+| 11:40 | 8:40 a.m. Hawaii | Bulletin: Nevada gets underway, the only battleship to try for the sea | X, Threads | Hand |
+| 11:54 | 8:54 a.m. Hawaii | Bulletin: the second wave attacks | X, Threads | Hand |
+| 12:00 | | Noon video, the Living Card from Navy film | All six | Thursday run |
+| 12:10 | 9:10 a.m. Hawaii | Bulletin: Nevada is beached at Hospital Point, keeping the channel open | X, Threads | Hand |
+| 12:20 | 2:20 p.m. Washington | Bulletin: Nomura and Kurusu hand Hull Japan's note, after the attack has begun | X, Threads | Hand |
+| 12:26 | 2:26 p.m. New York | Bulletin: WOR breaks into the Giants vs. Dodgers game; America finds out | X, Threads | Hand |
+| about 12:31 | shortly after 9:30 a.m. Hawaii | Bulletin: Shaw's forward magazine explodes, with the real black and white photo (NH 86118), the moment in the morning's Flash card | X, Threads | Hand |
+| about 1:00 | | Lunch Drop | X Community | Brian |
+| 2:30 | | Axis card from the Japanese side (the carriers launching at dawn), somber | X, IG, Threads, FB | Friday run |
+| 5:00 | | **Spec Sheet: USS Arizona** (Brian: "85 years, it has to be it"), Blueprint, somber | X, IG, Threads, FB | Friday run |
+| 7:00 | | Evening video from the 5 p.m. card's film: Navy film of Arizona, using no shot the noon video uses | All six | Thursday evening run |
+
+That is 18 posts each on X and Threads (plus the Lunch Drop), 7 on Instagram and Facebook, 3 on TikTok and YouTube. Check each platform's daily limit in Buffer before scheduling.
+
+**Times and their sources (checked 15 Nov 2026):** Condor 0342 (NHHC "Other raid related events"; CinCPac gives 0350 for first contact and 0357 for the signal to Ward, so the text says "before 4 a.m."); Ward 0637 sighting and 0647 sinking, Opana 0702, Arizona 0806, second wave 0854, Nevada beached 0910 (NPS "Remembering Pearl Harbor: Minute by Minute"; NHHC's Valor in the Pacific gives 0810 for Arizona, and the Park Service time is used since it runs the memorial); NOT DRILL 0758 (NHHC Valor in the Pacific); Nevada underway 0840 (NHHC photo history, Nevada's action report); Shaw shortly after 0930 (DANFS); Hull received the envoys at 2:20 p.m. (State Department memorandum, FRUS Japan 1931 to 1941, vol. II); WOR at 2:26 p.m. EST (Broadcasting, 1941). Cut: Monaghan's ramming (Brian). Bulletin text is still checked against these before scheduling.
+
+**Moment of silence (decided: whistle, then silence):** modeled on the ceremony itself, where a ship's whistle opens the silence at 7:55 and a flyover breaks it.
+* A short clip (about 20 to 30 seconds) on all six channels (a Reel on Instagram and Facebook): a ship's whistle, then silence over a dark card reading "7:55 a.m., Hawaii. 85 years ago." with one plain line about who was lost. No music, no hashtags, no links. Never a bare black square (the Blackout Tuesday lesson: an empty square reads hollow).
+* The whistle comes from public domain Navy video of a past Pearl Harbor ceremony (DVIDS), checked for license before use.
+* Invite people ahead: the 8 a.m. caption carries one quiet line, "At 7:55 a.m. Hawaii time (12:55 Eastern, 9:55 Pacific), we will pause for a moment of silence." (exact wording set with the mockup).
+* Nothing posts from 10:55 to 10:58.
+
+**Still to do:**
+* Bulletin mockup with real draft wording (Brian reviews).
+* Find the whistle, build the silence clip and card.
+* Declass commemorative file line: proposed on the 8 a.m. card only, in quiet wording (Brian to confirm).
+* Schedule the extras in Buffer (23 or 24 Nov), then the Sat 5 Dec check.
 
 ## Subscriptions plan
 A long term goal, not a short term one. The model is @VoicesofWW2's X subscription ($2 a month, exclusive posts, "tell me what content you'd like to see more of"). On 16 Oct 2026 it showed 15 subscribers, about $30 a month before fees, so subscriptions only pay once the account is large. Growth comes first.
@@ -199,6 +226,7 @@ Why: old social posts are close to invisible because feeds favor new content, so
 * Later options: search, a printable "this day" card shop through Stripe, and a classroom friendly version of the archive.
 
 ## Changelog
+* 15 Nov 2026: Pearl Harbor Flash day plan locked (Brian): the Flash card stays at 8 a.m.; ten Flash Traffic bulletins on one clock rule, times checked against Navy, Park Service, and State Department records (Condor moved to 6:42, Ward to 9:47 on the sinking, Arizona to 11:06; Nevada underway, the second wave, and Nevada beached added; Monaghan cut; Shaw at about 12:31 with the real photo); a whistle then silence clip at 10:55 on all six channels with an invite in the 8 a.m. caption; the 5 p.m. card is a USS Arizona spec sheet and the 7 p.m. video its film. Extras scheduled Thanksgiving week, checked Sat 5 Dec.
 * 14 Nov 2026: Campaign Series slots added to the posting schedule (6:30 posts during a series, and its Substack parts at 9 a.m. the morning after each part ends).
 * 7 Nov 2026 (night): **Five posts a day from 15 Nov 2026** (Brian): the 2:30 p.m. Axis card and the 7 p.m. video added to the layout. Two new open decisions: the Tuesday reach report on five posts a day (Brian decides any trim) and a possible third Declass envelope at 2:30 (two for now). The Pearl Harbor plan gains the 2:30 card and 7 p.m. video; the optional engagement post moves to 9 p.m.
 * 4 Nov 2026: 18 Jan 2027 reserved for a 5 p.m. card on B 25C "Algernon IV", the crew of follower Timothy Hale's uncle, with his blessing and a preview for him before it posts.
