@@ -91,7 +91,7 @@ Substack sets one theme for the whole publication (night background, brass gold,
 |---|---|---|---|
 | 1 | 1 to 4 (26 to 29 Nov) | The Fleet Slips Away | Mon 30 Nov, 9 a.m. (mock up written 14 Nov) |
 | 2 | 5 to 8 (30 Nov to 3 Dec) | to write | Fri 4 Dec, 9 a.m. |
-| 3 | 9 to 12 (4 to 7 Dec) | to write | Tue 8 Dec, 9 a.m. |
+| 3 | 9 to 12 and the Epilogue (4 to 8 Dec) | to write; tells the whole of 7 December in depth (the launch, Opana, both waves, the Arizona, the note delivered after the bombs, the nation hearing the news) and the speech | **Wed 9 Dec, 9 a.m.** (moved from Tue 8 Dec so it follows the Epilogue) |
 
 ## Pearl Harbor (26 Nov to 7 Dec 1941, scheduled)
 | Day | Date | Subtitle | Photo |
@@ -108,6 +108,9 @@ Substack sets one theme for the whole publication (night background, brass gold,
 | 10 | 5 Dec | The last carrier leaves Pearl Harbor | Lexington, 80 G 416362 |
 | 11 | 6 Dec | Washington reads Tokyo's answer | Hull, Nomura, Kurusu, 17 Nov 1941 (small original, a bit soft) |
 | 12 | 7 Dec | Five midget submarines in the dark | HA 19 aground, Dec 1941 |
+| Epilogue | 8 Dec | A date which will live in infamy | FDR signing the declaration of war, 8 Dec 1941 (LOC cph.3a17434) |
+
+**The Epilogue (decided 15 Nov 2026, Brian):** the series ends on the morning after, 8 Dec at 6:30, with an Epilogue covering everything that happened on the 7th and Roosevelt's speech and the vote for war. The 7th itself stays with the Flash day programming (Flash card, Flash Traffic bulletins, moment of silence), undisturbed. The Epilogue is `day-13.json` with `"epilogue": true` and `"dayLabel": "EPILOGUE"` (the image tab shows EPILOGUE in place of DAY N; footer "Campaign Series: Pearl Harbor · Day by Day · Epilogue"). The other posts keep "of 12". Any series may close with an Epilogue the same way. **For the Website chat:** treat a day record with `epilogue: true` as the series' Epilogue (label it Epilogue, not Day 13 of 12), and Pearl Harbor Part 3's `days` range becomes [9, 13] with five `##` sections.
 
 ## The Bulge (16 Dec 1944 to 14 Jan 1945, Days 1 to 30, to build)
 Anchor days, each to be verified in the sitting (two sources); the rest are filled there, with Home Front and Blueprint days mixed in (the proximity fuze's first ground use, the Christmas news at home).
@@ -156,6 +159,7 @@ Until that change ships, the shelf works as built: every series is a volume on t
 
 ## Open
 * **Pearl Harbor Part 1 is still `"mockup"`:** set it to `"final"` before Mon 30 Nov, 9 a.m., or the site keeps it sealed after Substack publishes it. Same for Parts 2 and 3 before 4 and 8 Dec.
+* Pearl Harbor Epilogue: Brian pulls the FDR signing photo (LOC cph.3a17434); then render, push, and schedule the four posts for Tue 8 Dec, 6:30 a.m.
 * Pearl Harbor volume: download the three part cover photos (80-G-71198, NH 75483, 80-G-182249) and rerender Part 1's cover; Brian approves the Part 1 mock up; then finish Part 1 and write Parts 2 and 3; make the Campaign Series section on Substack with its banner and schedule all three (Part 1 by Mon 30 Nov, 9 a.m.).
 * Website: Build and Fixes chat: rebuild the Campaign Shelf around the Substack parts (above), ideally before Part 1 goes live on Mon 30 Nov; Brian picks the daily posts option (a to h) there.
 * The Bulge build sitting (Thanksgiving weekend): the 30 days of posts and the split into 4 parts; each part then written in its own short sitting about a week ahead.
@@ -178,3 +182,4 @@ Until that change ships, the shelf works as built: every series is a volume on t
 * 15 Nov 2026 (later): the Website chat's two rules for parts added to Files: `status` "final" before `publish`, and one `##` section per day in order.
 * 15 Nov 2026 (later): names decided (Brian): the 6:30 posts are **Day by Day** and the Substack parts are **The Chronicle**, under Campaign Series. Cover kicker, Substack section, banner, and preview updated; the Website chat asked to carry the names.
 * 15 Nov 2026 (later): the names applied to the posts (Brian): all 48 scheduled Pearl Harbor posts re-rendered with "CAMPAIGN SERIES · DAY BY DAY" on the tab and the footer "Campaign Series: Pearl Harbor · Day by Day · Day N of 12", updated in Buffer (images pinned to commit 841f48e). The Chronicle Part 1's 29 November section aligned with the Day 4 post (the senior statesmen voiced doubts but none said plainly that war was wrong).
+* 15 Nov 2026 (later): Pearl Harbor gets an Epilogue on 8 Dec at 6:30 (Brian): the whole of 7 December and Roosevelt's speech, leaving the Flash day undisturbed; Chronicle Part 3 now covers Days 9 to 12 and the Epilogue and moves to Wed 9 Dec. Renderer takes an optional `dayLabel`.

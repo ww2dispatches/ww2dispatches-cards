@@ -40,7 +40,7 @@ function draw(cv,img,p){
   ctx.save(); ctx.filter="grayscale(1)"; ctx.drawImage(img,-(dw-W)*(fx/100),-(dh-H)*(fy/100),dw,dh); ctx.restore();
   ctx.textBaseline="alphabetic"; ctx.textAlign="left";
   /* top tab */
-  const name=(p.seriesName||"").toUpperCase(), day="DAY "+p.day;
+  const name=(p.seriesName||"").toUpperCase(), day=p.dayLabel||("DAY "+p.day);
   ctx.font=`700 ${44*s}px Oswald`; ctx.letterSpacing=`${2*s}px`;
   const nameW=ctx.measureText(name).width, dayW=ctx.measureText(day).width;
   ctx.font=`500 ${20*s}px Oswald`; ctx.letterSpacing=`${5*s}px`;
