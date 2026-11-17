@@ -39,7 +39,7 @@ Canvas: "Campaign Series Bulletin Mockup" (https://claude.ai/artifact/HKsV6D4kmG
 * **No hindsight past the series' end.** Dramatic irony is fair ("Hawaii is not on the list").
 * Written only from verified facts, two sources for each, with the sources listed in the day record. No dashes.
 * **Fixed last line:** "Campaign Series: Pearl Harbor · Day by Day · Day 3 of 12" (the names, the series, and the day; since 15 Nov 2026, Brian).
-* **Hashtags:** Instagram `#OnThisDay #WW2 #<Event>`; X and Facebook `#OTD #WW2 #<Event>`; Threads none, filed in History Threads.
+* **Hashtags:** Instagram `#OnThisDay #WW2 #<Event>`; X and Facebook `#OTD #WW2 #<Event>` (during Test D, posts dated 22 Nov to 5 Dec 2026, X carries no hashtags at all; Cards doc, Hashtags); Threads none, filed in History Threads.
 * **No add on lines ever** (no question, newsletter, support, or Declass line). The one exception: the Bulge posts on 1 and 11 January carry one Campaigns line, since those are Campaigns chapter days.
 * **Alt text** starts "WW2 Dispatches Campaign Series, <Series>, Day N." then the photo credit.
 * **Flash days:** the series post on a Flash day (Pearl Harbor 7 Dec, the Bulge 16 Dec) must not use the moment a Flash Traffic bulletin covers (Roadmap). Pearl Harbor Day 12 is the midget submarines' release, leaving the Condor sighting to the 6:50 bulletin.
@@ -183,3 +183,4 @@ Until that change ships, the shelf works as built: every series is a volume on t
 * 15 Nov 2026 (later): the names applied to the posts (Brian): all 48 scheduled Pearl Harbor posts re-rendered with "CAMPAIGN SERIES · DAY BY DAY" on the tab and the footer "Campaign Series: Pearl Harbor · Day by Day · Day N of 12", updated in Buffer (images pinned to commit 841f48e). The Chronicle Part 1's 29 November section aligned with the Day 4 post (the senior statesmen voiced doubts but none said plainly that war was wrong).
 * 15 Nov 2026 (later): Pearl Harbor gets an Epilogue on 8 Dec at 6:30 (Brian): the whole of 7 December and Roosevelt's speech, leaving the Flash day undisturbed; Chronicle Part 3 now covers Days 9 to 12 and the Epilogue and moves to Wed 9 Dec. Renderer takes an optional `dayLabel`.
 * 15 Nov 2026 (later): Epilogue rendered with Brian's copy of the FDR signing photo and its four posts scheduled for Tue 8 Dec, 6:30 a.m. (images pinned to commit 9700cb1).
+* 16 Nov 2026: Test D, no hashtags on X for posts dated 22 Nov to 5 Dec 2026 (Cards doc, Hashtags).

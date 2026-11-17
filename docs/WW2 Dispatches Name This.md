@@ -29,7 +29,7 @@ Same text on every platform, hook first, no dashes:
 >
 > The clue is on the card. Drop your guess below.
 
-X ends with "#WW2 #OTD #OnThisDay". Threads, Facebook, and Instagram have no hashtags.
+X ends with "#WW2 #OTD #OnThisDay" (during Test D, posts dated 22 Nov to 5 Dec 2026, X carries no hashtags at all; Cards doc, Hashtags). Threads, Facebook, and Instagram have no hashtags.
 
 **Alt text:** "WW2 Dispatches Name This card. <what the photo shows without naming it>. <date>, <place>. Clue: <clue>." Never "Dispatch No." (the Schedule Board reads that phrase). The analytics also use the opening words to recognize Name This posts on X, so keep them exactly.
 
@@ -62,3 +62,4 @@ Typefully needs the image uploaded to its own storage: create_media_upload with 
 * 21 Oct 2026 (night): Every Name This record gets a `themes` block, and the Saturday run reads the playbook first. Name This is scored only against other Name This cards (Analytics doc). The Instagram test comparison moved to the Wednesday analytics review.
 * 24 Oct 2026 (evening): Every Name This record now also keeps `body` (the post text), `short`, and `photoCredit`, per the Brief's "Record now, use later", for the Declass game (Envelope doc). The five existing cards were filled in once from Buffer.
 * 24 Oct 2026 (Declass session 5): `renderer/namethis.js` now also writes the puzzle and answer game images for Declass; the five existing cards were back filled (B-17 and Tirpitz photos fetched from Wikimedia and committed).
+* 16 Nov 2026: Test D, no hashtags on X for posts dated 22 Nov to 5 Dec 2026 (Cards doc, Hashtags).

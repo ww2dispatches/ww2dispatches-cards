@@ -48,6 +48,8 @@ Updated Tue 10 Nov 2026, after the third review (`analytics/reviews/2026-11-10.m
 Each test changes one thing, so the result can be read clearly.
 * **Test C, shorter Story Cards** (approved by Brian 28 Oct 2026). Every Story Card runs under 30 seconds and opens on the most dramatic still in the kit, so it feels more intense. Measure: YouTube views and Instagram and TikTok hold against the earlier Story Cards (No. 011, 015, 025, 030, 041; YouTube 22 to 659 views, Instagram hold 6 to 19 percent, TikTok 11 to 24 percent). No test Story Card has posted yet (Nos. 043 to 049 were all Living Cards). Review 24 Nov 2026, or later if fewer than two test Story Cards have posted by then.
 
+* **Test D, no hashtags on X** (approved by Brian 16 Nov 2026). Every X post dated 22 Nov to 5 Dec 2026 carries no hashtag (Cards doc, Hashtags), cards, videos, Campaign Series, and Name This alike. Facebook, Instagram, and Threads are unchanged. Measure: X impressions and replies per post, by slot, against the two weeks before (8 to 21 Nov), and X follower growth. Note that the new hook rules (story test, first line raises a question, video hook captions) start the same week and lift every platform, so compare X's change with Facebook's: if X rises clearly more than Facebook, the hashtags were holding X back. Review Tue 8 Dec 2026 and put the keep or drop question to Brian.
+
 ## Closed tests
 * **Test A, human first Spec Sheet hooks** (21 Oct to 3 Nov): Response doubled, Reach not clearly better. Brian chose not to keep it as standing practice (4 Nov).
 * **Test B, action first Living Card openings** (21 Oct to 3 Nov): TikTok hold 43 against 32 percent, Instagram flat. Brian chose not to keep it as standing practice (4 Nov).
