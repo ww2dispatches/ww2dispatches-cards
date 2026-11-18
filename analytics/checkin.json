@@ -1,76 +1,40 @@
 {
- "week": "2026-11-10",
- "summary": "**Worked:** Rommel's retreat from Alamein became the best card ever (Threads 3,210 views, Reach 8.36), with Manila Bay (3.47), the Fu-Go Spec Sheet (2.91), and the Spruce Goose (12 Threads comments) close behind. YouTube had its best week (9,241 views; Supercharge 2,610). Battle Lines cards out reaching Blueprint and Home Front is now a pattern, three reviews running.\n\n**Didn't:** Threads cut the account's reach about 80 percent from 5 Nov (about 300 views a day since, against 1,400 to 3,500), so the late week cards (the FDR election posts, Torch, the Hitler quote) scored low for reasons outside the card. Facebook Reels went quiet again (four in a row near zero).\n\n**Tests:** C (shorter Story Cards) is running, but no Story Card has been needed since it started; review 24 Nov. A and B closed and dropped, as you chose. No new test while Threads is disrupted.\n\n**Decisions:** Name This on Instagram (asked again), and an optional Threads account status check. Your h-hollywood veto is applied.",
+ "week": "2026-11-17",
+ "summary": "**Worked:** Five brothers, one ship drew 1,994 Threads views and 21 comments (Reach 7.74, the second best card ever); the Ark Royal Name This drew 1,407; the Tirpitz and Moselle videos traveled on Threads (1,362 and 707), and the Moselle Reel drew 841 on Facebook.\n\n**Didn't:** every 8 a.m. Story card from 11 to 15 Nov drew only 38 to 87 Threads views, while the noon video on the same story drew far more; YouTube halved for the week (4,161 views against 9,250).\n\n**Patterns:** combat and turning points out reach diplomacy and machines; Spec Sheets reach less than Story cards; Home Front reaches fewer people but draws the strongest Response.\n\n**Tests:** C (shorter Story Cards) still has no Story Card to read; D (no hashtags on X) starts 22 Nov. No new test proposed.\n\n**Reach report:** only one post per platform from the five post days is old enough; first real reading 24 Nov.\n\n**Decisions:** none new. Your Name This on Instagram answer (end it) needs the Name This doc updated in a Project chat; your three Code Room vetoes are applied.",
  "questions": [
-  {
-   "id": "namethis-instagram",
-   "type": "choice",
-   "ask": "End Name This on Instagram?",
-   "why": "Asked again, as you wanted. Six Name This cards have drawn 13, 5, 4, 1, 8, and 6 Instagram views (typical 5.5), the same as Instagram cards (typical 7), and no follows. Claude's view: end it.",
-   "options": [
-    "Yes, end it",
-    "No, keep it",
-    "Ask me again next week"
-   ],
-   "if_yes": "Name This posts go to X, Threads, and Facebook only, from the next Saturday Name This run.",
-   "if_blank": "Name This stays on Instagram and the question comes back next week.",
-   "carried": true
-  },
-  {
-   "id": "threads-status",
-   "type": "choice",
-   "ask": "Threads account status: what does the app show?",
-   "why": "From 5 Nov, Threads views fell about 80 percent on every post. In the Threads app open **Settings, Account, Account status** and see whether anything is flagged or limited. Optional, about two minutes.",
-   "options": [
-    "Nothing flagged",
-    "Something is flagged or limited (I'll say what in the notes)",
-    "Haven't checked"
-   ],
-   "if_yes": "The next review reads the Threads numbers with that in mind.",
-   "if_blank": "Nothing changes; the drop stays under Watch.",
-   "carried": false
-  },
   {
    "id": "intercept-veto",
    "type": "veto",
    "ask": "Veto any of this week's new Code Room groups",
-   "why": "These 9 hard groups were added to the Code Room master list from posted cards (one short of 10). Veto any link you don't want dealt; vetoed groups are kept but never dealt and never added again.",
+   "why": "These 7 hard groups were added to the Code Room master list from posted cards (three short of 10). Veto any link you don't want dealt; vetoed groups are kept but never dealt and never added again.",
    "groups": [
     {
-     "id": "h-halsey",
-     "link": "Each involves Admiral William F. Halsey."
+     "id": "h-guadalcanal",
+     "link": "All three are from the fight for Guadalcanal."
     },
     {
-     "id": "h-wood-paper",
-     "link": "Each took to the air built mostly of wood or paper."
+     "id": "h-dive-bombers",
+     "link": "Each involves dive bombers."
     },
     {
-     "id": "h-undeclared-war",
-     "link": "Each involves the U.S. Navy confronting Germany before Pearl Harbor."
+     "id": "h-combat-debuts",
+     "link": "Each marks a weapon's first use in combat."
     },
     {
-     "id": "h-future-presidents",
-     "link": "Each involves a man who would later become president of the United States."
+     "id": "h-luftwaffe",
+     "link": "Each involves the German air force, the Luftwaffe."
     },
     {
-     "id": "h-california",
-     "link": "All three took place in California."
+     "id": "h-first-army",
+     "link": "Each involves the U.S. First Army."
     },
     {
-     "id": "h-hold-at-all-costs",
-     "link": "In each, Hitler ordered his troops to hold their ground at all costs."
+     "id": "h-surrenders",
+     "link": "In each, a commander surrendered."
     },
     {
-     "id": "h-generals-ashore",
-     "link": "In each, an American general came ashore from the sea."
-    },
-    {
-     "id": "h-patton",
-     "link": "Each involves General George S. Patton."
-    },
-    {
-     "id": "h-big-red-one",
-     "link": "Each involves the U.S. 1st Infantry Division."
+     "id": "h-five-star",
+     "link": "Each involves an American who rose to five star rank."
     }
    ],
    "if_blank": "All stay live."
@@ -79,7 +43,7 @@
    "id": "notes",
    "type": "text",
    "ask": "Anything the numbers missed?",
-   "why": "Anything you saw in the apps this week.",
+   "why": "Anything you saw in the apps this week, such as how the five post days feel on Threads.",
    "placeholder": "Optional."
   }
  ]
