@@ -62,6 +62,7 @@ const pct = x => x == null || isNaN(x) ? '·' : (x * 100).toFixed(x !== 0 && x <
 const day = iso => iso ? new Date(iso).toLocaleDateString([], { month: 'short', day: 'numeric' }) : '·';
 const when = iso => iso ? new Date(iso).toLocaleString([], { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) : '·';
 const FN = { copper: 'Copper', silver: 'Silver', gold: 'Gold', topsecret: 'Top Secret' };
+let fullData = '';
 let key = ''; try { key = localStorage.getItem('declass_key') || ''; localStorage.setItem('ww_me', '1'); } catch (e) {} // ww_me: this browser's own visits stay out of the counts
 const get = q => fetch('/api/stats' + (q || ''), { headers: { 'x-declass-key': key }, credentials: 'same-origin' }).then(r => r.ok ? r.json() : Promise.reject(r.status));
 let D = null, tab = 'overview';
@@ -99,9 +100,18 @@ function overview() {
   const E = D.engagement, h = healthList(), bad = h.filter(r => r[1]);
   $('body').innerHTML = `<div class="kp"><div><b>${D.totals.players}</b><span>players</span></div><div><b>${E.active1}</b><span>played today</span></div><div><b>${E.active7}</b><span>this week</span></div><div><b>${D.totals.envelopes}</b><span>envelopes</span></div><div><b>${D.totals.pulls}</b><span>cards pulled</span></div><div><b>${D.totals.posted}</b><span>cards posted</span></div></div>
   <h2>Weekly review</h2><p class="note">Copy this and paste it into the chat with Claude for the weekly review. It covers the last 7 days, the rates, and anything flagged.</p>
-  <div class="btnrow"><button id="copyRep">Copy weekly report</button></div><textarea id="rep" readonly>${esc(report())}</textarea>
+  <div class="btnrow"><button id="copyRep">Copy weekly report</button> <button id="copyAll">Copy full data</button></div><p class="note">Full data is everything by day, for a deeper look in the Platform Console chat. Totals only, no file numbers.</p><textarea id="rep" readonly>${esc(report())}</textarea>
   <h2>Health checks</h2><p class="note">${bad.length ? bad.length + ' flagged. Worth raising in the review.' : 'All clear.'}</p>
   <ul class="hl">${h.map(([l, n, x]) => `<li><span>${esc(l)}${x ? ` <span class="note">(${esc(x)})</span>` : ''}</span><b class="${n ? 'bad' : 'ok'}">${n ? n : '✓'}</b></li>`).join('')}</ul>`;
+  $('copyAll').onclick = () => {
+    const b = $('copyAll'), put = txt => navigator.clipboard ? navigator.clipboard.writeText(txt) : Promise.reject();
+    const done = () => { b.textContent = 'Copied'; setTimeout(() => { b.textContent = 'Copy full data'; }, 2000); };
+    if (fullData) { put(fullData).then(done).catch(() => { b.textContent = 'Could not copy'; }); return; }
+    b.textContent = 'Getting it…';
+    fetch('/api/stats?export=1', { headers: { 'x-declass-key': key }, credentials: 'same-origin' }).then(r => r.ok ? r.text() : Promise.reject(r.status))
+      .then(txt => { fullData = txt; return put(txt).then(done).catch(() => { b.textContent = 'Ready. Tap again to copy'; }); })
+      .catch(e => { b.textContent = 'Did not work (' + e + ')'; });
+  };
   $('copyRep').onclick = () => { const ta = $('rep'); ta.select(); (navigator.clipboard ? navigator.clipboard.writeText(ta.value) : Promise.reject()).then(() => { $('copyRep').textContent = 'Copied'; }).catch(() => { document.execCommand('copy'); $('copyRep').textContent = 'Copied'; }); setTimeout(() => { $('copyRep').textContent = 'Copy weekly report'; }, 2000); };
 }
 function saveLine() {

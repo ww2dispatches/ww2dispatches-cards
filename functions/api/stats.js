@@ -27,7 +27,13 @@ const tally = () => ({ n: 0, copper: 0, silver: 0, gold: 0, topsecret: 0 });
 
 export async function onRequestGet({ request, env }) {
   const player = await signedInPlayer(env, request);
-  if (!isAdmin(env, player)) return fail(404, 'not found');
+  // ?export=1 (18 Nov 2026): the full data export for the Platform Console review. Open to the admin, and to the
+  // nightly snapshot job, which sends the EXPORT_KEY secret instead of a sign in. The key opens nothing else.
+  const params = new URL(request.url).searchParams, exportMode = params.get('export') === '1';
+  const sent = request.headers.get('x-export-key') || '', want0 = env.EXPORT_KEY || '';
+  let diff = sent.length ^ want0.length; for (let i = 0; i < sent.length; i++) diff |= sent.charCodeAt(i) ^ want0.charCodeAt(i % (want0.length || 1));
+  const keyOk = exportMode && want0.length >= 24 && diff === 0;
+  if (!isAdmin(env, player) && !keyOk) return fail(404, 'not found');
   const t = now(env, request), db = env.DB, today = gameDay(t);
   const [P, PL, O, S, L] = await db.batch([
     db.prepare('SELECT id, player_id, card_id, variant, finish, serial, slot_key, pulled_at, signature, turned, intel FROM pulls'),
@@ -96,7 +102,7 @@ export async function onRequestGet({ request, env }) {
   }
 
   // ---------- one player ----------
-  const want = new URL(request.url).searchParams.get('player');
+  const want = exportMode ? null : params.get('player');
   if (want) {
     const pl = playersAll.find(p => fileOf.get(p.id) === want.toUpperCase());
     if (!pl) return fail(404, 'no such player');
@@ -213,7 +219,7 @@ export async function onRequestGet({ request, env }) {
   const tsPerCard = [...tsBy].map(([k, list]) => ({ card: (byId.get(k.split('|')[0]) || {}).short || k, living: k.endsWith('living'), issued: list.length })).sort((a, b) => b.issued - a.issued);
   const cardCounts = new Map(); pulls.forEach(p => cardCounts.set(p.card_id, (cardCounts.get(p.card_id) || 0) + 1));
   const owners = new Map(); pulls.forEach(p => { if (!owners.has(p.card_id)) owners.set(p.card_id, new Set()); owners.get(p.card_id).add(p.player_id); });
-  const cardTable = posted.map(c => ({ short: c.short || c.id, kind: c.kind, flash: Boolean(c.flash), postAt: c.kind === 'namethis' ? c.answerAt : c.postAt, pulls: cardCounts.get(c.id) || 0, owners: (owners.get(c.id) || new Set()).size })).sort((a, b) => b.pulls - a.pulls);
+  const cardTable = posted.map(c => ({ id: c.id, short: c.short || c.id, kind: c.kind, flash: Boolean(c.flash), postAt: c.kind === 'namethis' ? c.answerAt : c.postAt, pulls: cardCounts.get(c.id) || 0, owners: (owners.get(c.id) || new Set()).size })).sort((a, b) => b.pulls - a.pulls);
 
   // ---------- Intercept ----------
   const icDays = {}; IC.forEach(r => { icDays[r.day] = icDays[r.day] || { plays: 0, solved: 0, failed: 0, perfect: 0, scores: [], mistakes: [] }; const d = icDays[r.day]; d.plays++; if (r.status === 'solved') d.solved++; if (r.status === 'failed') d.failed++; if (r.score === 100) d.perfect++; if (r.score != null) d.scores.push(r.score); d.mistakes.push(r.mistakes); });
@@ -222,7 +228,7 @@ export async function onRequestGet({ request, env }) {
 
   // ---------- growth: new players, site visits, sources, game actions (tallies start 2 Nov 2026) ----------
   let T = [];
-  try { await ensureTally(db); T = (await db.prepare('SELECT day, metric, k, n FROM tally WHERE day >= ?').bind(addDays(today, -60)).all()).results; } catch (e) {}
+  try { await ensureTally(db); T = (await db.prepare('SELECT day, metric, k, n FROM tally WHERE day >= ?').bind(exportMode ? '0000' : addDays(today, -60)).all()).results; } catch (e) {}
   const sumT = (m, from, to, k) => T.filter(r => r.metric === m && r.day >= from && r.day <= to && (k === undefined || r.k === k)).reduce((s, r) => s + r.n, 0);
   const byK = (m, from, to) => { const o = {}; T.filter(r => r.metric === m && r.day >= from && r.day <= to).forEach(r => { o[r.k] = (o[r.k] || 0) + r.n; }); return o; };
   const joinDay = new Map(players.map(p => [p.id, gameDay(new Date(p.created_at))]));
@@ -267,6 +273,36 @@ export async function onRequestGet({ request, env }) {
     flashPosted: posted.filter(c => c.flash).length,
   };
 
+  if (exportMode) {
+    // Every count by day, since the first visit count or the first player, whichever came first.
+    const dayOf = iso => gameDay(new Date(iso)), tick = (m, d, n = 1) => m.set(d, (m.get(d) || 0) + n);
+    const dSign = new Map(), dOpen = new Map(), dPull = new Map(), dIntel = new Map(), dSpent = new Map(), dIc = new Map(), dActive = new Map();
+    joinDay.forEach(d => tick(dSign, d));
+    opened.filter(o => ENV_KINDS.has(kindOf(o.slot_key))).forEach(o => tick(dOpen, dayOf(o.opened_at)));
+    pulls.forEach(p => tick(dPull, dayOf(p.pulled_at)));
+    ilog.forEach(r => tick(r.delta > 0 ? dIntel : dSpent, dayOf(r.at), Math.abs(r.delta)));
+    IC.forEach(r => tick(dIc, r.day));
+    playDaysF.forEach(s => s.forEach(d => tick(dActive, d)));
+    const first = [firstTally, [...joinDay.values()].sort()[0]].filter(Boolean).sort()[0] || today, daily = [];
+    for (let d = first, total = 0; d <= today; d = addDays(d, 1)) {
+      total += dSign.get(d) || 0;
+      daily.push({ day: d, signups: dSign.get(d) || 0, accounts: total, activePlayers: dActive.get(d) || 0, envelopes: dOpen.get(d) || 0, pulls: dPull.get(d) || 0, intelEarned: dIntel.get(d) || 0, intelSpent: dSpent.get(d) || 0, codeRoomPlays: dIc.get(d) || 0 });
+    }
+    const { newest, ...growthOut } = growth;
+    return json({
+      format: 'ww2dispatches-console-export', version: 1, at: t.toISOString(), today,
+      notes: 'Totals only. Admin accounts and admin browsers are left out. Players carry no file number or id. Days are Eastern game days. tally rows are [day, metric, key, count].',
+      excluded: { adminAccounts: adminIds.size, adminViewsWeek: sumT('admin', addDays(today, -6), today, 'views'), adminViewsAll: sumT('admin', '0000', today, 'views') },
+      totals: { players: players.length, pulls: pulls.length, envelopes: envShape.daily.envelopes + envShape.priority.envelopes + envShape.commemorative.envelopes, posted: posted.length },
+      health: { ...health, intelMismatch: health.intelMismatch.length }, funnel, rates, expected: { still: expected('still'), living: expected('living') },
+      living: { draws: archiveDraws, living: archiveLiving, expected: 1 / LIVING_ONE_IN },
+      flash: { draws: archiveDraws, flash: archiveFlash, expected: 1 / FLASH_ONE_IN },
+      envelopes: envShape, cards: cardTable, intercept, catalog, growth: growthOut, daily,
+      tally: T.slice().sort((a, b) => a.day.localeCompare(b.day) || a.metric.localeCompare(b.metric) || a.k.localeCompare(b.k)).map(r => [r.day, r.metric, r.k, r.n]),
+      players: summaries.map(s => ({ joined: dayOf(s.joined), lastActive: s.lastActive ? dayOf(s.lastActive) : null, daysPlayed: s.daysPlayed, envelopes: s.envelopes, pulls: s.pulls, streak: s.streak, intel: s.intel, rank: s.rank, held: s.held, completion: Math.round(s.completion * 1000) / 1000, goldPlus: s.goldPlus, stamps: s.stamps, pins: s.pins, starter: s.starter, requests: s.requests, codeRoomPlays: s.intercepts }))
+        .sort((a, b) => a.joined.localeCompare(b.joined) || b.daysPlayed - a.daysPlayed),
+    });
+  }
   return json({
     at: t.toISOString(), today,
     excluded: { adminAccounts: adminIds.size, adminFiles: [...adminIds].map(id => fileOf.get(id)), adminViewsWeek: sumT('admin', addDays(today, -6), today, 'views'), adminViewsAll: sumT('admin', '0000', today, 'views') },
