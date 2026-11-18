@@ -79,6 +79,9 @@ h1{font-size:18px;margin:0;font-weight:700}
 .tip div{display:flex;gap:6px;align-items:center}
 .tip div span:last-child{margin-left:auto;padding-left:12px;font-variant-numeric:tabular-nums;font-weight:600}
 .link{background:none;border:0;padding:4px 0;color:var(--blue);font-size:12.5px}
+.link.pk{font-size:inherit;padding:0;text-align:left}
+select{font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:8px;padding:6px 8px;min-height:34px;max-width:100%}
+.pickrow{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:0 0 8px}
 
 .hb{display:grid;grid-template-columns:minmax(90px,34%) 1fr auto;gap:5px 10px;align-items:center}
 .hb .l{overflow-wrap:anywhere}
@@ -147,6 +150,7 @@ const ranked = (o, names) => Object.entries(o || {}).sort((a, b) => b[1] - a[1])
 const SECTIONS = [['overview', 'Overview'], ['site', 'Site'], ['sources', 'Sources'], ['declass', 'Declass'], ['coderoom', 'Code Room'], ['series', 'Campaign Series'], ['namethis', 'Name This'], ['campaigns', 'Campaigns']];
 const SUBS = [['funnel', 'Funnel'], ['players', 'Players'], ['engagement', 'Engagement'], ['economy', 'Economy'], ['cards', 'Cards and rates'], ['catalog', 'Catalog']];
 const OLD = { growth: 'site', players: 'declass/players', cards: 'declass/cards', engagement: 'declass/engagement', economy: 'declass/economy', intercept: 'coderoom', catalog: 'declass/catalog' };
+let pick = ''; // the page whose graph the Site section shows: '' for the whole site, a page group like 'home', or one page like 'dispatch/048-kristallnacht'
 let D = null, sec = 'overview', sub = 'funnel', range = Number(ls('console_range')) || 30, psort = 'active';
 function readHash() {
   let h = ''; try { h = (location.hash || '').slice(1); } catch (e) {}
@@ -180,6 +184,7 @@ const tcase = t => t.split('-').map(w => w ? w[0].toUpperCase() + w.slice(1) : w
 const dname = k => { const [g, a, b] = k.split('/'); return g === 'dispatch' ? 'No. ' + a.slice(0, 3) + ' ' + tcase(a.slice(4)) : g === 'issue' ? tcase(a) : a === 'shelf' ? 'The bookshelf' : b ? tcase(b.replace(/-0?/, ' ')) : 'Series front page'; };
 const OUTN = { substack: 'Substack, the newsletter', instagram: 'Instagram', threads: 'Threads', x: 'X', tiktok: 'TikTok', youtube: 'YouTube', facebook: 'Facebook', 'ko-fi': 'Ko-fi', other: 'Other sites, such as sources' };
 const CTAN = { play: 'Play Declass', collect: 'Collect this card', subscribe: 'Newsletter sign up', guess: 'Guess on Threads or X' };
+const pickName = k => !k.includes('/') ? (PG[k] || k) : k.startsWith('campaign/') && k !== 'campaign/shelf' ? tcase(k.split('/')[1]) + (k.split('/')[2] ? ', ' + dname(k) : ', front page') : dname(k);
 const ctaName = k => { const [n, pg] = k.split('@'); return (CTAN[n] || n) + ', on ' + (PG[pg] || pg); };
 const cardName = id => { const c = D.cards.find(x => x.id === id || x.id === 'namethis-' + id); return (c ? c.short : tcase(id.replace(/^\d{4}-\d{2}-\d{2}-/, ''))) + ' ' + id.slice(0, 4); };
 const detailRows = (prefix, days) => { const v = tby('dview', days), u = tby('dvisitor', days); return Object.keys(v).filter(k => k.startsWith(prefix)).map(k => ({ id: k, k: dname(k), v: v[k], sub: num(u[k] || 0) + ' visitors' })).sort((a, b) => b.v - a.v); };
@@ -201,7 +206,7 @@ function hbars(rows, opt) {
   opt = opt || {};
   if (!rows.length || !rows.some(r => r.v)) return `<p class="empty">${opt.empty || 'Nothing in this period yet.'}</p>`;
   const mx = Math.max(1, ...rows.map(r => r.v)), tot = opt.share ? sum(rows.map(r => r.v)) : 0, base = opt.of;
-  return `<div class="hb">${rows.map(r => `<div class="l">${esc(r.k)}${r.sub ? `<small>${esc(r.sub)}</small>` : ''}</div><div class="t"><i style="width:${r.v / mx * 100}%"></i></div><div class="v">${num(r.v)}${tot ? `<small>${pct(r.v / tot)}</small>` : ''}${base ? `<small>${pct(r.v / base)}</small>` : ''}</div>`).join('')}</div>`;
+  return `<div class="hb">${rows.map(r => `<div class="l">${opt.pick && r.id ? `<button class="link pk" data-pick="${esc(r.id)}">${esc(r.k)}</button>` : esc(r.k)}${r.sub ? `<small>${esc(r.sub)}</small>` : ''}</div><div class="t"><i style="width:${r.v / mx * 100}%"></i></div><div class="v">${num(r.v)}${tot ? `<small>${pct(r.v / tot)}</small>` : ''}${base ? `<small>${pct(r.v / base)}</small>` : ''}</div>`).join('')}</div>`;
 }
 const rows = list => `<ul class="rows">${list.map(([l, v, cls]) => `<li><span>${l}</span><b class="${cls || ''}">${v}</b></li>`).join('')}</ul>`;
 
@@ -338,14 +343,20 @@ function wireReport() {
 function site() {
   const d = span(range), p = prior(), word = 'vs prior ' + range + ' days';
   const vis = sum(tall('visitors', d)), visP = psum(p, q => sum(tall('visitors', q))), views = sum(tall('view', d)), viewsP = psum(p, q => sum(tall('view', q))), nw = sum(tall('new', d)), nwP = psum(p, q => sum(tall('new', q)));
-  const pv = tby('view', d), pvis = tby('visitor', d), dev = tby('device', d);
+  const pv = tby('view', d), pvis = tby('visitor', d), dev = tby('device', d), all = { view: tbyAll('view'), dview: tbyAll('dview') };
+  afterRender.push(() => { const sel = $('pickSel'); if (sel) sel.onchange = () => { pick = sel.value; render(); }; const c = $('pickClear'); if (c) c.onclick = () => { pick = ''; render(); }; document.querySelectorAll('[data-pick]').forEach(b => b.onclick = () => { pick = b.dataset.pick; render(); window.scrollTo(0, 0); }); });
   return `<p class="lede">Everyone who came to ww2dispatches.com in the ${rangeLabel()}, and what they looked at. Visit counts began ${D.growth.since ? dlab(D.growth.since) : 'recently'}${prior() ? '' : ', so there is no full earlier period to compare with yet'}.</p>
   ${tiles([tile(vis, 'Visitors', vis, visP, word), tile(views, 'Page views', views, viewsP, word), tile(nw, 'First time visitors', nw, nwP, word), tile(Math.max(0, vis - nw), 'Returning visitors', Math.max(0, vis - nw), p ? Math.max(0, visP - nwP) : undefined, word), tile(vis ? (views / vis).toFixed(1) : '·', 'Pages per visitor')])}
-  ${panel('Traffic by day', 'Page views count every page opened. Visitors count each browser once per day.', chart({ days: d, series: [{ name: 'Page views', values: tall('view', d) }, { name: 'Visitors', values: tall('visitors', d) }, { name: 'First time visitors', values: tall('new', d) }] }))}
-  <div class="grid2">${panel('Pages', 'Views in the ' + rangeLabel() + ', most viewed first.', hbars(ranked(pv, PG).map(r => ({ k: r.k, v: r.v, sub: num(pvis[r.id] || 0) + ' visitors' }))))}
+  ${panel(pick ? 'Traffic by day: ' + esc(pickName(pick)) : 'Traffic by day: the whole site', 'Page views count every page opened. Visitors count each browser once per day. Pick any page to see its own graph, or tap a page name in the lists below.',
+    `<div class="pickrow"><label for="pickSel" class="mut">Graph for</label><select id="pickSel"><option value="">The whole site</option><optgroup label="Sections of the site">${Object.keys(PG).filter(k => all.view[k]).map(k => `<option value="${k}"${pick === k ? ' selected' : ''}>${esc(PG[k])}</option>`).join('')}</optgroup>${[['dispatch/', 'Dispatch pages'], ['campaign/', 'Campaign Series pages'], ['issue/', 'Newsletter issues']].map(([pre, lb]) => { const ks = Object.keys(all.dview).filter(k => k.startsWith(pre)).sort().reverse(); return ks.length ? `<optgroup label="${lb}">${ks.map(k => `<option value="${esc(k)}"${pick === k ? ' selected' : ''}>${esc(pickName(k))}</option>`).join('')}</optgroup>` : ''; }).join('')}</select>${pick ? '<button class="btn" id="pickClear">Back to the whole site</button>' : ''}</div>` +
+    chart(!pick ? { days: d, series: [{ name: 'Page views', values: tall('view', d) }, { name: 'Visitors', values: tall('visitors', d) }, { name: 'First time visitors', values: tall('new', d) }] }
+      : pick.includes('/') ? { days: d, series: [{ name: 'Page views', values: tv('dview', pick, d) }, { name: 'Visitors', values: tv('dvisitor', pick, d) }] }
+      : { days: d, series: [{ name: 'Page views', values: tv('view', pick, d) }, { name: 'Visitors', values: tv('visitor', pick, d) }] }) +
+    (pick ? `<p class="note">${num(sum(tv(pick.includes('/') ? 'dview' : 'view', pick, d)))} views and ${num(sum(tv(pick.includes('/') ? 'dvisitor' : 'visitor', pick, d)))} visitors in the ${rangeLabel()}.${pick.includes('/') ? ' Counts for single pages began 18 Nov 2026.' : ''}</p>` : ''))}
+  <div class="grid2">${panel('Pages', 'Views in the ' + rangeLabel() + ', most viewed first.', hbars(ranked(pv, PG).map(r => ({ id: r.id, k: r.k, v: r.v, sub: num(pvis[r.id] || 0) + ' visitors' })), { pick: 1 }))}
   ${panel('Phone or computer', 'Share of visitors in the ' + rangeLabel() + '.', hbars(ranked(dev, DEV), { share: 1 }))}</div>
-  <div class="grid2">${panel('Dispatch pages, most read', 'The 12 most viewed dispatch pages in the ' + rangeLabel() + '.', hbars(detailRows('dispatch/', d).slice(0, 12), { empty: NEW }))}
-  ${panel('Newsletter issues, most read', 'Issues read on the site in the ' + rangeLabel() + '.', hbars(detailRows('issue/', d).slice(0, 12), { empty: NEW }))}
+  <div class="grid2">${panel('Dispatch pages, most read', 'The 12 most viewed dispatch pages in the ' + rangeLabel() + '.', hbars(detailRows('dispatch/', d).slice(0, 12), { empty: NEW, pick: 1 }))}
+  ${panel('Newsletter issues, most read', 'Issues read on the site in the ' + rangeLabel() + '.', hbars(detailRows('issue/', d).slice(0, 12), { empty: NEW, pick: 1 }))}
   ${panel('Clicks that leave the site', 'Where people go when they click away, in the ' + rangeLabel() + '.', hbars(ranked(tby('out', d), OUTN), { share: 1, empty: NEW }))}
   ${panel('Buttons people press', 'The buttons into Declass, the newsletter sign up and Name This guesses, by the page they were on.', hbars(ranked(tby('cta', d)).map(r => ({ k: ctaName(r.id), v: r.v })), { empty: NEW }))}</div>`;
 }
