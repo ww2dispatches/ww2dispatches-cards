@@ -1344,7 +1344,7 @@
       if (code.length !== 6) { say('The code is 6 digits.', true); input.focus(); return; }
       const hadStarter = Boolean(STARTER), fromSave = $('sSave').classList.contains('on');
       btn.disabled = true; say('Checking…');
-      api('auth/email', { email: pending.email, code, src: lsGet('ww_src') || '', starter: STARTER ? STARTER.token : undefined, starterTurned: STARTER ? STARTER.revealed.every(Boolean) : undefined })
+      api('auth/email', { email: pending.email, code, src: lsGet('ww_src') || '', land: lsGet('ww_land') || '', starter: STARTER ? STARTER.token : undefined, starterTurned: STARTER ? STARTER.revealed.every(Boolean) : undefined })
         .then(d => { hit('email_done'); setMailState(null); document.querySelectorAll('.gslot').forEach(g => { delete g.dataset.mail; }); return afterSignIn(d, fromSave, hadStarter); })
         .catch(e => {
           btn.disabled = false; hit('email_wrong');
@@ -1363,7 +1363,7 @@
     const hadStarter = Boolean(STARTER);
     const fromSave = $('sSave').classList.contains('on');
     if (fromSave) hit('save_google');
-    api('auth/google', { src: lsGet('ww_src') || '', credential: res.credential, starter: STARTER ? STARTER.token : undefined, starterTurned: STARTER ? STARTER.revealed.every(Boolean) : undefined })
+    api('auth/google', { src: lsGet('ww_src') || '', land: lsGet('ww_land') || '', credential: res.credential, starter: STARTER ? STARTER.token : undefined, starterTurned: STARTER ? STARTER.revealed.every(Boolean) : undefined })
       .then(d => afterSignIn(d, fromSave, hadStarter))
       .catch(e => { hit(fromSave ? 'save_fail' : 'signin_fail'); toast('Sign in did not work (' + e.message + ').'); });
   }

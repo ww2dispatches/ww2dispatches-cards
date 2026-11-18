@@ -172,7 +172,17 @@ const tall = (m, days) => { const mm = TI.get(m); const out = days.map(() => 0);
 const tby = (m, days) => { const mm = TI.get(m), o = {}, set = new Set(days); if (mm) mm.forEach((km, k) => { let s = 0; km.forEach((n, d) => { if (set.has(d)) s += n; }); if (s) o[k] = s; }); return o; };
 const dv = (f, days) => days.map(d => (DI.get(d) || {})[f] || 0);
 const sum = a => a.reduce((s, x) => s + x, 0);
+const tbyAll = m => { const mm = TI.get(m), o = {}; if (mm) mm.forEach((km, k) => { let t = 0; km.forEach(n => { t += n; }); if (t) o[k] = t; }); return o; };
 const rangeLabel = () => 'last ' + range + ' days';
+// names for the per page and click counts (they began 18 Nov 2026)
+const NEW = 'Nothing yet. This count began 18 Nov 2026.';
+const tcase = t => t.split('-').map(w => w ? w[0].toUpperCase() + w.slice(1) : w).join(' ');
+const dname = k => { const [g, a, b] = k.split('/'); return g === 'dispatch' ? 'No. ' + a.slice(0, 3) + ' ' + tcase(a.slice(4)) : g === 'issue' ? tcase(a) : a === 'shelf' ? 'The bookshelf' : b ? tcase(b.replace(/-0?/, ' ')) : 'Series front page'; };
+const OUTN = { substack: 'Substack, the newsletter', instagram: 'Instagram', threads: 'Threads', x: 'X', tiktok: 'TikTok', youtube: 'YouTube', facebook: 'Facebook', 'ko-fi': 'Ko-fi', other: 'Other sites, such as sources' };
+const CTAN = { play: 'Play Declass', collect: 'Collect this card', subscribe: 'Newsletter sign up', guess: 'Guess on Threads or X' };
+const ctaName = k => { const [n, pg] = k.split('@'); return (CTAN[n] || n) + ', on ' + (PG[pg] || pg); };
+const cardName = id => { const c = D.cards.find(x => x.id === id || x.id === 'namethis-' + id); return (c ? c.short : tcase(id.replace(/^\d{4}-\d{2}-\d{2}-/, ''))) + ' ' + id.slice(0, 4); };
+const detailRows = (prefix, days) => { const v = tby('dview', days), u = tby('dvisitor', days); return Object.keys(v).filter(k => k.startsWith(prefix)).map(k => ({ id: k, k: dname(k), v: v[k], sub: num(u[k] || 0) + ' visitors' })).sort((a, b) => b.v - a.v); };
 // the earlier period only counts as a comparison if visit counting had already begun when it started
 const prior = () => { const p = span(range, range); return D.growth.since && p[0] >= D.growth.since ? p : null; };
 const psum = (p, f) => p ? f(p) : undefined;
@@ -333,7 +343,11 @@ function site() {
   ${tiles([tile(vis, 'Visitors', vis, visP, word), tile(views, 'Page views', views, viewsP, word), tile(nw, 'First time visitors', nw, nwP, word), tile(Math.max(0, vis - nw), 'Returning visitors', Math.max(0, vis - nw), p ? Math.max(0, visP - nwP) : undefined, word), tile(vis ? (views / vis).toFixed(1) : '·', 'Pages per visitor')])}
   ${panel('Traffic by day', 'Page views count every page opened. Visitors count each browser once per day.', chart({ days: d, series: [{ name: 'Page views', values: tall('view', d) }, { name: 'Visitors', values: tall('visitors', d) }, { name: 'First time visitors', values: tall('new', d) }] }))}
   <div class="grid2">${panel('Pages', 'Views in the ' + rangeLabel() + ', most viewed first.', hbars(ranked(pv, PG).map(r => ({ k: r.k, v: r.v, sub: num(pvis[r.id] || 0) + ' visitors' }))))}
-  ${panel('Phone or computer', 'Share of visitors in the ' + rangeLabel() + '.', hbars(ranked(dev, DEV), { share: 1 }))}</div>`;
+  ${panel('Phone or computer', 'Share of visitors in the ' + rangeLabel() + '.', hbars(ranked(dev, DEV), { share: 1 }))}</div>
+  <div class="grid2">${panel('Dispatch pages, most read', 'The 12 most viewed dispatch pages in the ' + rangeLabel() + '.', hbars(detailRows('dispatch/', d).slice(0, 12), { empty: NEW }))}
+  ${panel('Newsletter issues, most read', 'Issues read on the site in the ' + rangeLabel() + '.', hbars(detailRows('issue/', d).slice(0, 12), { empty: NEW }))}
+  ${panel('Clicks that leave the site', 'Where people go when they click away, in the ' + rangeLabel() + '.', hbars(ranked(tby('out', d), OUTN), { share: 1, empty: NEW }))}
+  ${panel('Buttons people press', 'The buttons into Declass, the newsletter sign up and Name This guesses, by the page they were on.', hbars(ranked(tby('cta', d)).map(r => ({ k: ctaName(r.id), v: r.v })), { empty: NEW }))}</div>`;
 }
 
 // ---------- Sources ----------
@@ -347,7 +361,8 @@ function sources() {
   ${tiles([tile(tot, 'Visits with a source'), tile(list[0] ? list[0].k : 'None yet', 'Top source'), tile(tot ? pct(social / tot) : '·', 'From social platforms'), tile(tot ? pct(direct / tot) : '·', 'Direct or typed in')])}
   ${panel('Sources by day', 'The three biggest sources, with everything else grouped together.', series.length ? chart({ days: d, series }) : '<p class="empty">Nothing in this period yet.</p>')}
   <div class="grid2">${panel('All sources', 'Visits in the ' + rangeLabel() + '.', hbars(list, { share: 1 }))}
-  ${panel('Where new players first came from', 'All time. Counted when an account is made, by the source of that browser’s first ever visit.', hbars(ranked(D.growth.signupSources, SRC), { share: 1, empty: 'Starts with the next new account.' }))}</div>
+  ${panel('Where new players first came from', 'All time. Counted when an account is made, by the source of that browser’s first ever visit.', hbars(ranked(D.growth.signupSources, SRC), { share: 1, empty: 'Starts with the next new account.' }))}
+  ${panel('The first page new players ever saw', 'All time. Shows which part of the site turns visitors into players.', hbars(ranked(tbyAll('signup_land'), Object.assign({ unknown: 'Unknown, first visit was before 18 Nov' }, PG)), { share: 1, empty: 'Starts with the next new account.' }))}</div>
   <p class="note">Many apps, Instagram and TikTok especially, open links without saying where the visitor came from, so those visits land in Direct. A profile link ending in ?ref=instagram (or the platform’s name) fixes that. A large Direct share with almost no social usually means a bio link is missing its ?ref tag.</p>`;
 }
 
@@ -361,6 +376,8 @@ function funnelView() {
   ${panel('Into the game, by day', 'Declass visitors, guests who opened a starter pack, and new accounts.', chart({ days: d, series: [{ name: 'Declass visitors', values: tv('visitor', 'declass', d) }, { name: 'Guest starter packs', values: tv('ev', 'guest_starter', d) }, { name: 'New players', values: dv('signups', d) }] }))}
   <div class="grid2">${panel('From visitor to player', 'Last 30 days. The percent is the share of first time visitors who got that far.', hbars([{ k: 'First time visitors, whole site', v: m.newVisitors }, { k: 'Declass visitors', v: m.declassVisitors }, { k: 'Opened a starter pack as a guest', v: m.guestStarters }, { k: 'Made an account', v: m.signups }, { k: 'Played at least once', v: m.activePlayers }], { of: m.newVisitors }))}
   ${panel('The save your dossier screen', 'In the ' + rangeLabel() + '. Left without either means they closed the page or gave up on the sign in.', hbars([{ k: 'Saw the screen', v: seen }, { k: 'Tapped Not now', v: n('save_skip') }, { k: 'Left without either', v: left }, { k: 'Sign in came back OK', v: n('save_google') }, { k: 'Dossier saved', v: n('save_done') }, { k: 'Sign in failed', v: n('save_fail') }], { of: seen, empty: 'Nobody reached the save screen in this period.' }))}</div>
+  <div class="grid2">${panel('Buttons into Declass', 'Clicks on Play Declass and Collect this card across the site, in the ' + rangeLabel() + '.', hbars(ranked(tby('cta', d)).filter(r => /^(play|collect)@/.test(r.id)).map(r => ({ k: ctaName(r.id), v: r.v })), { empty: NEW }))}
+  ${panel('Collect this card, by card', 'Which dispatch pages send people into the game. ' + num(n('card_link')) + ' arrived in Declass from a card link.', hbars(ranked(tby('collect', d)).slice(0, 10).map(r => ({ k: cardName(r.id), v: r.v })), { empty: NEW }))}</div>
   <div class="grid2">${panel('Social app browsers', 'In the ' + rangeLabel() + '. Google can’t sign in inside Instagram’s or TikTok’s own browser.', rows([['Arrived inside one', n('inapp_arrive')], ['Automatic jump to the real browser tried', n('inapp_auto')], ['Landed in the real browser', n('out_landed')], ['Saw the save screen inside one', n('save_inapp')], ['Tapped Open in browser', n('inapp_open')], ['Tapped it and nothing happened', n('inapp_stuck'), n('inapp_stuck') ? 'bad' : ''], ['Copied the link', n('inapp_copy')], ['Arrived in a real browser with their pack', n('pack_carried')]]))}
   ${panel('Email sign in', 'In the ' + rangeLabel() + '.', rows([['Asked for a code', n('email_ask')], ['Code sent', n('email_sent')], ['Wrong or expired code', n('email_wrong')], ['Signed in', n('email_done')], ['Sign in failed elsewhere', n('signin_fail'), n('signin_fail') ? 'bad' : '']]))}</div>
   ${panel('Everything players do in the game', 'Counts only. Your own browser is left out.', `<div class="tw"><table class="wrap"><tr><th>Action</th><th>7 days</th><th>30 days</th></tr>${Object.keys(ACT).filter(k => G.actions[k]).sort((x, y) => G.actions[y] - G.actions[x]).map(k => `<tr><td>${ACT[k]}</td><td>${num(G.actionsWeek[k] || 0)}</td><td>${num(G.actions[k] || 0)}</td></tr>`).join('') || '<tr><td>Nothing yet</td><td></td><td></td></tr>'}</table></div><p class="note">Not seen in the last 30 days: ${Object.keys(ACT).filter(k => !G.actions[k]).map(k => ACT[k].toLowerCase()).join(', ') || 'nothing, every action was used'}.</p>`)}`;
@@ -448,22 +465,28 @@ function coderoom() {
 }
 
 // ---------- Campaign Series, Name This, Campaigns ----------
-function pageSection(k, lede, extra) {
+function pageSection(k, lede, extra, moreTiles) {
   const d = span(range), p = prior(), word = 'vs prior ' + range + ' days';
   const v = sum(tv('view', k, d)), vP = psum(p, q => sum(tv('view', k, q))), u = sum(tv('visitor', k, d)), uP = psum(p, q => sum(tv('visitor', k, q))), all = sum(tall('view', d));
   return `<p class="lede">${lede}</p>
-  ${tiles([tile(v, 'Page views', v, vP, word), tile(u, 'Visitors', u, uP, word), tile(all ? pct(v / all) : '·', 'Share of all page views')])}
+  ${tiles([tile(v, 'Page views', v, vP, word), tile(u, 'Visitors', u, uP, word), tile(all ? pct(v / all) : '·', 'Share of all page views')].concat(moreTiles || []))}
   ${panel('Views and visitors, by day', '', chart({ days: d, series: [{ name: 'Page views', values: tv('view', k, d) }, { name: 'Visitors', values: tv('visitor', k, d) }] }))}${extra || ''}`;
 }
 function series() {
-  return pageSection('campaign', 'The Campaign Series pages: the bookshelf and every series on it, in the ' + rangeLabel() + '.', panel('Coming next', '', '<p class="note" style="margin:0">Readers by series and by part are not counted yet, so this section shows the pages as one group. That count is the next step of the console build, and it will show where readers stop.</p>'));
+  const d = span(range), v = tby('dview', d), u = tby('dvisitor', d), by = {};
+  Object.keys(v).filter(k => k.startsWith('campaign/')).forEach(k => { const [, id, part] = k.split('/'); if (id === 'shelf') return; (by[id] = by[id] || []).push({ part: part || '', k: dname(k), v: v[k], sub: num(u[k] || 0) + ' visitors' }); });
+  const order = x => x.part === '' ? '0' : (x.part.startsWith('day') ? '1' : '2') + x.part;
+  const blocks = Object.keys(by).sort().map(id => panel(tcase(id), 'Views of each page in the ' + rangeLabel() + ', in reading order. A steady fall from one day to the next shows where readers stop.', hbars(by[id].sort((a, b) => order(a).localeCompare(order(b))), { of: Math.max(...by[id].map(x => x.v)) }))).join('');
+  return pageSection('campaign', 'The Campaign Series pages: the bookshelf and every series on it, in the ' + rangeLabel() + '.',
+    (blocks || panel('Readers by series and part', '', `<p class="empty">${NEW}</p>`)), [tile(v['campaign/shelf'] || 0, 'Bookshelf views')]);
 }
 function namethis() {
-  const K = D.catalog, nt = D.cards.filter(c => c.kind === 'namethis');
+  const K = D.catalog, nt = D.cards.filter(c => c.kind === 'namethis'), d = span(range), opens = tby('ntopen', d), guess = sum(Object.entries(tby('cta', d)).filter(([k]) => k.startsWith('guess@')).map(([, n]) => n));
   return pageSection('namethis', 'The Name This page in the ' + rangeLabel() + ', and the Name This cards inside Declass.',
-    panel('Waiting on an answer', '', `<p class="note" style="margin:0">${K.nameThisWaiting.length ? esc(K.nameThisWaiting.join(', ')) : 'Nothing is waiting.'}</p>`) +
-    panel('Name This cards in Declass', 'Answered cards players can pull.', nt.length ? `<div class="tw"><table class="wrap"><tr><th>Card</th><th>Answered</th><th>Pulls</th><th>Owners</th></tr>${nt.map(c => `<tr><td>${esc(c.short)}</td><td>${day(c.postAt)}</td><td>${c.pulls}</td><td>${c.owners} of ${D.totals.players}</td></tr>`).join('')}</table></div>` : '<p class="empty">None posted yet.</p>') +
-    panel('Coming next', '', '<p class="note" style="margin:0">Guesses and answer reveals on the page are not counted yet. That count is the next step of the console build.</p>'));
+    `<div class="grid2">${panel('Files opened, by case', 'How many times each closed case was opened to see the answer.', hbars(ranked(opens).map(r => ({ k: cardName(r.id), v: r.v })), { empty: NEW }))}
+    ${panel('Waiting on an answer', '', `<p class="note" style="margin:0">${K.nameThisWaiting.length ? esc(K.nameThisWaiting.join(', ')) : 'Nothing is waiting.'}</p>`)}</div>` +
+    panel('Name This cards in Declass', 'Answered cards players can pull.', nt.length ? `<div class="tw"><table class="wrap"><tr><th>Card</th><th>Answered</th><th>Pulls</th><th>Owners</th></tr>${nt.map(c => `<tr><td>${esc(c.short)}</td><td>${day(c.postAt)}</td><td>${c.pulls}</td><td>${c.owners} of ${D.totals.players}</td></tr>`).join('')}</table></div>` : '<p class="empty">None posted yet.</p>'),
+    [tile(sum(Object.values(opens)), 'Files opened'), tile(guess, 'Clicks to guess on Threads or X')]);
 }
 function campaigns() {
   return `<p class="lede">The Campaigns game mode.</p>${panel('Not launched yet', '', '<p class="note" style="margin:0">Campaigns has not shipped, so there is nothing to count. When it does, this section will show games started and finished, wins and losses by battle, and the turn where players stop.</p>')}`;
@@ -489,6 +512,12 @@ function report() {
     `SITE (7 days vs the 7 before): visitors ${G.week.visitors} (was ${G.lastWeek.visitors}), page views ${G.week.views} (${G.lastWeek.views}), first time visitors ${G.week.newVisitors} (${G.lastWeek.newVisitors}). Visit counts since ${G.since || 'n/a'}.`,
     `Pages this week, views (visitors): ${ranked(pv, PG).map(r => `${r.k} ${r.v} (${pu[r.id] || 0})`).join(', ') || 'none yet'}.`,
     `Sources this week: ${ranked(G.sourcesWeek, SRC).map(r => r.k + ' ' + r.v).join(', ') || 'none yet'}. New players by source (all time): ${ranked(G.signupSources, SRC).map(r => r.k + ' ' + r.v).join(', ') || 'none yet'}. Devices (30 days): ${ranked(G.devices, {}).map(r => r.k + ' ' + r.v).join(', ') || 'none yet'}.`,
+    `Dispatch pages this week, views: ${detailRows('dispatch/', w7).slice(0, 8).map(r => r.k + ' ' + r.v).join(', ') || 'none yet'}.`,
+    `Campaign Series this week, views: ${Object.entries(tby('dview', w7)).filter(([k]) => k.startsWith('campaign/')).sort().map(([k, n]) => k.slice(9) + ' ' + n).join(', ') || 'none yet'}.`,
+    `Name This this week: files opened ${sum(Object.values(tby('ntopen', w7)))}${Object.keys(tby('ntopen', w7)).length ? ' (' + ranked(tby('ntopen', w7)).map(r => cardName(r.id) + ' ' + r.v).join(', ') + ')' : ''}.`,
+    `Clicks leaving the site this week: ${ranked(tby('out', w7), OUTN).map(r => r.k + ' ' + r.v).join(', ') || 'none yet'}.`,
+    `Buttons pressed this week: ${ranked(tby('cta', w7)).map(r => ctaName(r.id) + ' ' + r.v).join('; ') || 'none yet'}. Collect this card by card: ${ranked(tby('collect', w7)).map(r => cardName(r.id) + ' ' + r.v).join(', ') || 'none yet'}.`,
+    `New players by the first page they ever saw (all time): ${ranked(tbyAll('signup_land'), PG).map(r => r.k + ' ' + r.v).join(', ') || 'none yet'}.`,
     ``,
     `DECLASS GROWTH (7 days vs the 7 before): Declass visitors ${G.week.declassVisitors} (${G.lastWeek.declassVisitors}), new players ${G.week.signups} (${G.lastWeek.signups}), guest starter packs ${G.week.guestStarters}, engagements ${G.week.engagements} (${G.lastWeek.engagements}).`,
     `Game actions this week: ${Object.keys(ACT).filter(k => G.actionsWeek[k] && !/^save_|^signin_/.test(k)).map(k => ACT[k].toLowerCase() + ' ' + G.actionsWeek[k]).join(', ') || 'none yet'}.`,

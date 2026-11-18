@@ -36,3 +36,7 @@ export function sourceName(raw) {
 }
 export const deviceOf = ua => /iPad|Tablet/i.test(ua) ? 'tablet' : /Mobi|iPhone|Android/i.test(ua) ? 'phone' : 'computer';
 export const isBot = ua => !ua || /bot|crawl|spider|slurp|preview|headless|lighthouse|facebookexternalhit|embedly|monitor/i.test(ua);
+
+// The page groups a visit can belong to (18 Nov 2026: shared, so sign ups can be counted by the first page a browser ever saw).
+export const PAGES = new Set(['home', 'declass', 'newsletter', 'issue', 'campaign', 'namethis', 'privacy', 'support', 'about', 'onthisday', 'dispatch', 'other']);
+export const landName = raw => PAGES.has(raw) ? raw : 'unknown';

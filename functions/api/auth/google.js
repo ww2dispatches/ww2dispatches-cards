@@ -9,7 +9,7 @@ import { publicPlayer } from '../../_lib/player.js';
 import { now } from '../../_lib/catalog.js';
 import { readToken, saveStarter } from '../../_lib/starter.js';
 import { signPending } from '../../_lib/pulls.js';
-import { bump, sourceName } from '../../_lib/tally.js';
+import { bump, sourceName, landName } from '../../_lib/tally.js';
 import { gameDay } from '../../_lib/time.js';
 
 export async function onRequestPost({ request, env }) {
@@ -40,7 +40,7 @@ export async function onRequestPost({ request, env }) {
     const made = await env.DB.prepare('INSERT OR IGNORE INTO players (id, created_at, tester) VALUES (?, ?, ?)')
       .bind(googleId, nowIso(), tester).run();
     // a new account: count it by where this browser first came from (console Growth tab; a count only)
-    if (made.meta && made.meta.changes) await bump(env.DB, gameDay(now(env, request)), [['signup', sourceName(body.src), 1], ['signup_how', 'google', 1]]).catch(() => {});
+    if (made.meta && made.meta.changes) await bump(env.DB, gameDay(now(env, request)), [['signup', sourceName(body.src), 1], ['signup_land', landName(body.land), 1], ['signup_how', 'google', 1]]).catch(() => {});
     player = await env.DB.prepare('SELECT * FROM players WHERE id = ?').bind(googleId).first();
   }
   if (mailId) await addAlias(env.DB, mailId, player.id, nowIso()).catch(() => {});

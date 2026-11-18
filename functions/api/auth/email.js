@@ -10,7 +10,7 @@ import { publicPlayer } from '../../_lib/player.js';
 import { now } from '../../_lib/catalog.js';
 import { readToken, saveStarter } from '../../_lib/starter.js';
 import { signPending } from '../../_lib/pulls.js';
-import { bump, sourceName } from '../../_lib/tally.js';
+import { bump, sourceName, landName } from '../../_lib/tally.js';
 import { gameDay } from '../../_lib/time.js';
 import { normalizeEmail, emailId, makeCode, forgetCode, checkCode, playerFor, CODE_MINUTES } from '../../_lib/emailcode.js';
 import { mailMode, sendCode } from '../../_lib/mail.js';
@@ -43,7 +43,7 @@ export async function onRequestPost({ request, env }) {
   if (!player) {
     const tester = env.LAUNCHED === '1' ? 0 : 1;
     const made = await env.DB.prepare('INSERT OR IGNORE INTO players (id, created_at, tester) VALUES (?, ?, ?)').bind(id, nowIso(), tester).run();
-    if (made.meta && made.meta.changes) await bump(env.DB, gameDay(t), [['signup', sourceName(body.src), 1], ['signup_how', 'email', 1]]).catch(() => {});
+    if (made.meta && made.meta.changes) await bump(env.DB, gameDay(t), [['signup', sourceName(body.src), 1], ['signup_land', landName(body.land), 1], ['signup_how', 'email', 1]]).catch(() => {});
     player = await env.DB.prepare('SELECT * FROM players WHERE id = ?').bind(id).first();
   }
 

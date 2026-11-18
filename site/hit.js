@@ -2,6 +2,8 @@
 // whether this browser already came by today (kept in this browser only), and where the visit came from.
 // No cookies and no ids leave the browser. Skipped when the browser asks not to be tracked. A browser marked as the
 // admin's (ww_me, set by the console or by signing in to Declass as admin) only adds to an excluded admin count.
+// 18 Nov 2026: also says which dispatch, Campaign Series part or newsletter issue was opened, and counts clicks on links
+// that leave the site, the buttons into Declass, the newsletter signup, and Name This files opened. Totals only, as before.
 (function () {
   var ls = function (k, v) { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) { return null; } };
   var ss = function (k, v) { try { if (v === undefined) return sessionStorage.getItem(k); sessionStorage.setItem(k, v); } catch (e) { return null; } };
@@ -24,14 +26,51 @@
     : /^\/campaign-series(\/|$)/.test(path) ? 'campaign' : /^\/name-this(\/|$)/.test(path) ? 'namethis'
     : /^\/privacy/.test(path) ? 'privacy' : /^\/support/.test(path) ? 'support' : /^\/about(\.html)?$/.test(path) ? 'about'
     : /^\/on-this-day(\/|$)/.test(path) ? 'onthisday' : /^\/dispatches(\/|$)/.test(path) ? 'dispatch' : 'other';
+  // Which dispatch, series part or issue this is (the address says so), for the per page counts.
+  var detail = '', m, clean = path.replace(/\.html$/, '').replace(/\/index$/, '');
+  if (page === 'dispatch' && (m = clean.match(/^\/dispatches\/(\d{3}-[a-z0-9-]{1,60})$/))) detail = 'dispatch/' + m[1];
+  else if (page === 'campaign' && (m = clean.match(/^\/campaign-series(?:\/([a-z0-9-]{1,50})(?:\/((?:day|part)-\d{2}))?)?$/))) detail = 'campaign/' + (m[1] ? m[1] + (m[2] ? '/' + m[2] : '') : 'shelf');
+  else if (page === 'issue' && (m = clean.match(/^\/newsletter\/([a-z0-9-]{1,60})$/))) detail = 'issue/' + m[1];
+
+  // Clicks worth knowing about: links that leave the site (by where they go), buttons into Declass, the newsletter
+  // signup, and Name This files opened. Reads the page as it is, so the pages themselves need no changes; if the Name
+  // This markup changes (button.reveal with data-id, #oc-threads, #oc-x), update the two lines that name it here.
+  var OUT = [['substack', /substack\.com$/], ['instagram', /instagram\.com$/], ['threads', /threads\.(net|com)$/], ['x', /(^|\.)(x|twitter)\.com$/], ['tiktok', /tiktok\.com$/], ['youtube', /(youtube\.com|youtu\.be)$/], ['facebook', /facebook\.com$/], ['ko-fi', /ko-fi\.com$/]];
+  document.addEventListener('click', function (ev) {
+    if (off || me()) return;
+    var t = ev.target && ev.target.closest ? ev.target.closest('a[href], button.reveal') : null, c = [];
+    if (!t) return;
+    if (t.tagName === 'BUTTON') {
+      if (page === 'namethis' && t.getAttribute('aria-expanded') === 'false' && t.getAttribute('data-id')) c.push('ntopen:' + t.getAttribute('data-id'));
+    } else {
+      var u; try { u = new URL(t.href, location.href); } catch (e) { return; }
+      if (!/^https?:$/.test(u.protocol)) return;
+      if (u.host !== location.host) {
+        var name = 'other'; for (var i = 0; i < OUT.length; i++) if (OUT[i][1].test(u.hostname)) { name = OUT[i][0]; break; }
+        c.push('out:' + name);
+        if (page === 'namethis' && (t.id === 'oc-threads' || t.id === 'oc-x')) c.push('cta:guess');
+      } else if (page !== 'declass' && /^\/declass\/?$/.test(u.pathname)) {
+        var card = u.searchParams.get('card');
+        if (card) { c.push('cta:collect'); c.push('collect:' + card); } else c.push('cta:play');
+      }
+    }
+    if (c.length) send({ c: c, pg: page });
+  }, true);
+  document.addEventListener('submit', function (ev) {
+    if (off || me()) return;
+    if (ev.target && /substack\.com/.test(ev.target.action || '')) send({ c: ['cta:subscribe'], pg: page });
+  }, true);
+
   if (me()) { send({ admin: 1 }); return; }
   var d = new Date(), today = d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate();
   var seen = {}; try { seen = JSON.parse(ls('ww_day') || '{}'); } catch (e) {}
   if (seen.d !== today) seen = { d: today, p: [] };
+  if (!seen.x) seen.x = [];
   var body = { p: page };
   if (!seen.p.length) body.day1 = 1;
   if (seen.p.indexOf(page) < 0) { body.v = 1; seen.p.push(page); }
-  if (!ls('ww_v')) { body.nw = 1; ls('ww_v', '1'); }
+  if (detail) { body.d = detail; if (seen.x.indexOf(detail) < 0) { body.dv = 1; seen.x.push(detail); } }
+  if (!ls('ww_v')) { body.nw = 1; ls('ww_v', '1'); ls('ww_land', page); } // ww_land: the first page this browser ever saw, sent along if it later makes a Declass account
   ls('ww_day', JSON.stringify(seen));
   // source: counted once per visit (browser session), on the first page
   if (!ss('ww_s')) {
