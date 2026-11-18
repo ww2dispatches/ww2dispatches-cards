@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Platform Console</title>
+<link rel="icon" href="/declass/icons/console.svg" type="image/svg+xml">
+<link rel="icon" href="/declass/icons/console-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/declass/icons/console-180.png">
+<style>
+/* The WW2 Dispatches Platform Console (18 Nov 2026). Admin only: the server answers /api/stats for Brian's file number alone.
+   Covers the whole domain: site visits, sources, Declass, Code Room, Campaign Series, Name This. Plain system font, light
+   and dark, same look as the Dispatch Schedule board. Charts are inline SVG drawn at the real width of their panel. */
+:root{
+  --bg:#f7f6f2; --card:#ffffff; --ink:#24221f; --soft:#6b665e; --line:#e3dfd6; --line2:#efece5;
+  --green:#2f7a40; --amber:#96630a; --red:#b3362a; --blue:#3D5884; --onInk:#ffffff;
+  --calmBg:#eef5ee; --calmLine:#cfe3d0; --attnBg:#fff4f2; --attnLine:#f0cfc9; --track:#f1eee8;
+  --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --s4:#eda100;
+  color-scheme:light;
+}
+html[data-theme=dark]{
+  --bg:#141518; --card:#1d1f23; --ink:#e9e6e0; --soft:#a39f97; --line:#33363c; --line2:#282a2f;
+  --green:#5cb46e; --amber:#d99a26; --red:#e8705f; --blue:#8FA8D4; --onInk:#141518;
+  --calmBg:#1f2c22; --calmLine:#2f4a34; --attnBg:#3a2321; --attnLine:#5e3530; --track:#282a2f;
+  --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#c98500;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-text-size-adjust:100%}
+button{font:inherit;color:inherit;cursor:pointer}
+[hidden]{display:none!important}
+:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+
+.top{position:sticky;top:0;z-index:40;background:var(--bg);border-bottom:1px solid var(--line);padding:10px 16px 8px}
+.titlebar{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+h1{font-size:18px;margin:0;font-weight:700}
+.titlebar .asof{color:var(--soft);font-size:13px}
+.titlebar .spacer{flex:1}
+.btn{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:6px 10px;min-height:34px}
+.nav{display:flex;gap:6px;margin-top:8px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
+.nav::-webkit-scrollbar{display:none}
+.nav button{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:6px 12px;min-height:34px;white-space:nowrap;font-weight:600}
+.nav button.on{background:var(--ink);color:var(--onInk);border-color:var(--ink)}
+.subbar{display:flex;gap:8px 14px;flex-wrap:wrap;align-items:center;margin-top:8px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--card)}
+.seg button{border:0;background:transparent;padding:5px 11px;min-height:32px;white-space:nowrap}
+.seg button + button{border-left:1px solid var(--line)}
+.seg button.on{background:var(--ink);color:var(--onInk)}
+.subbar .lab{color:var(--soft);font-size:13px}
+
+.page{max-width:1180px;margin:0 auto;padding:14px 16px 56px}
+.lede{color:var(--soft);margin:0 0 12px;max-width:820px}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media(max-width:820px){.grid2{grid-template-columns:minmax(0,1fr)}}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-bottom:12px;min-width:0}
+.panel h2{font-size:15px;margin:0 0 2px;font-weight:700}
+.panel .sub{color:var(--soft);font-size:13px;margin:0 0 8px}
+.note{color:var(--soft);font-size:13px;margin:8px 0 0}
+.empty{color:var(--soft);padding:18px 0;text-align:center}
+
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin-bottom:12px}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.tile .lab{color:var(--soft);font-size:12.5px}
+.tile b{display:block;font-size:26px;line-height:1.15;font-weight:700;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.tile b.word{font-size:18px;line-height:1.3;padding:4px 0}
+.tile small{display:block;font-size:12px;margin-top:2px;color:var(--soft)}
+.tile small.up{color:var(--green)} .tile small.down{color:var(--red)}
+
+.legend{display:flex;gap:6px 14px;flex-wrap:wrap;font-size:12.5px;color:var(--soft);margin:2px 0 4px}
+.legend span{display:inline-flex;gap:6px;align-items:center}
+.sw{width:10px;height:10px;border-radius:3px;flex:none}
+.chart{position:relative;min-height:60px}
+.chart svg{display:block;width:100%;touch-action:pan-y}
+.chart text{font:11px system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;fill:var(--soft)}
+.chart text.end{fill:var(--ink);font-size:12px}
+.tip{position:absolute;top:4px;pointer-events:none;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:6px 9px;font-size:12.5px;box-shadow:0 4px 14px rgba(0,0,0,.14);white-space:nowrap;z-index:5}
+.tip b{display:block;margin-bottom:2px}
+.tip div{display:flex;gap:6px;align-items:center}
+.tip div span:last-child{margin-left:auto;padding-left:12px;font-variant-numeric:tabular-nums;font-weight:600}
+.link{background:none;border:0;padding:4px 0;color:var(--blue);font-size:12.5px}
+
+.hb{display:grid;grid-template-columns:minmax(90px,34%) 1fr auto;gap:5px 10px;align-items:center}
+.hb .l{overflow-wrap:anywhere}
+.hb .l small{display:block;color:var(--soft);font-size:12px}
+.hb .t{background:var(--track);border-radius:0 4px 4px 0;height:12px}
+.hb .t i{display:block;height:12px;background:var(--s1);border-radius:0 4px 4px 0;min-width:2px}
+.hb .v{font-variant-numeric:tabular-nums;font-weight:600;text-align:right;white-space:nowrap}
+.hb .v small{color:var(--soft);font-weight:400;margin-left:6px}
+
+.tw{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th{font-weight:600;font-size:12px;color:var(--soft);text-align:right;padding:6px 8px;white-space:nowrap;border-bottom:1px solid var(--line)}
+td{padding:7px 8px;border-top:1px solid var(--line2);text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+th:first-child,td:first-child{text-align:left}
+table.wrap td:first-child{white-space:normal}
+tr.go{cursor:pointer} tr.go:hover td{background:var(--line2)}
+.rows{list-style:none;padding:0;margin:0}
+.rows li{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-top:1px solid var(--line2)}
+.rows li:first-child{border-top:0}
+.rows b{font-variant-numeric:tabular-nums;text-align:right}
+.ok{color:var(--green)} .warn{color:var(--amber)} .bad{color:var(--red)} .mut{color:var(--soft);font-weight:400}
+.health{border-radius:10px;padding:10px 14px;margin-bottom:12px;background:var(--calmBg);border:1px solid var(--calmLine)}
+.health.attn{background:var(--attnBg);border-color:var(--attnLine)}
+.health b.h{color:var(--green)} .health.attn b.h{color:var(--red)}
+.health ul{margin:6px 0 0;padding-left:18px}
+details summary{cursor:pointer;color:var(--blue);font-size:13px;margin-top:8px}
+.btnrow{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+.btnrow button{background:var(--ink);color:var(--onInk);border:1px solid var(--ink);border-radius:8px;padding:8px 14px;min-height:38px;font-weight:600}
+.btnrow button.alt{background:var(--card);color:var(--ink);border-color:var(--line)}
+textarea{width:100%;min-height:220px;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:8px;font:12.5px/1.45 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;padding:10px;margin-top:8px}
+.pill{display:inline-block;font-size:11.5px;font-weight:600;padding:1px 7px;border-radius:999px;margin:0 3px 3px 0}
+.f-copper{background:#9C5B2E;color:#fff}.f-silver{background:#b5bac2;color:#1a1612}.f-gold{background:#d9a93e;color:#1a1612}.f-topsecret{background:#24221f;color:#fff;outline:1px solid #B04A3E}
+.err{text-align:center;color:var(--red);margin-top:40px;padding:0 16px}
+</style>
+</head>
+<body>
+<div id="app"><div class="top"><div class="titlebar"><h1>Platform Console</h1><span class="asof">Loading…</span></div></div></div>
+<script>
+const $ = id => document.getElementById(id);
+const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+const pct = x => x == null || isNaN(x) ? '·' : (x * 100).toFixed(x !== 0 && x < 0.01 ? 2 : 1) + '%';
+const num = x => typeof x === 'number' ? x.toLocaleString('en-US') : x;
+const day = iso => iso ? new Date(iso).toLocaleDateString([], { month: 'short', day: 'numeric' }) : '·';
+const dlab = d => new Date(d + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
+const when = iso => iso ? new Date(iso).toLocaleString([], { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) : '·';
+const FN = { copper: 'Copper', silver: 'Silver', gold: 'Gold', topsecret: 'Top Secret' };
+const ls = (k, v) => { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) { return null; } };
+let fullData = '';
+const key = ls('declass_key') || '';
+ls('ww_me', '1'); // this browser's own visits stay out of the counts
+const get = q => fetch('/api/stats' + (q || ''), { headers: { 'x-declass-key': key }, credentials: 'same-origin' }).then(r => r.ok ? r.json() : Promise.reject(r.status));
+
+// ---------- theme ----------
+let theme = ls('console_theme') || (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+document.documentElement.dataset.theme = theme;
+
+// ---------- names ----------
+const ACT = { card: 'Cards looked at', zoom: 'Full screen views', file: 'Classified files opened', share: 'Share screen opened', shared: 'Cards shared or saved', guest_starter: 'Starter packs opened before signing in', save_screen: 'Saw the save your dossier screen', dossier: 'Dossier visits', sets: 'Sets visits', intercept: 'Code Room visits', tour_done: 'Finished the home tour', tour_skip: 'Skipped the home tour', save_skip: 'Save screen: tapped Not now', save_google: 'Save screen: Google said yes', save_done: 'Save screen: dossier saved', save_fail: 'Save screen: sign in failed', signin_fail: 'Sign in failed elsewhere', case_open: 'Display Case opened', case_edit: 'Display Case saved', case_share: 'Display Case picture made', case_callsign: 'Call sign chosen', card_link: 'Arrived from a card link', save_inapp: 'Save screen: seen inside a social app browser', inapp_open: 'Save screen: tapped Open in browser', inapp_copy: 'Save screen: copied the link', pack_carried: 'Arrived in a real browser with a starter pack', inapp_arrive: 'Arrived inside a social app browser', inapp_auto: 'Automatic jump to the real browser tried', out_landed: 'Landed in the real browser after the jump', inapp_stuck: 'Tapped Open in browser and nothing happened', email_ask: 'Email sign in: asked for a code', email_sent: 'Email sign in: code sent', email_wrong: 'Email sign in: wrong or expired code', email_done: 'Email sign in: signed in' };
+const PG = { home: 'Home page', declass: 'Declass', newsletter: 'Newsletter archive', issue: 'Newsletter issues', campaign: 'Campaign Series', namethis: 'Name This', privacy: 'Privacy', support: 'Support', about: 'About', onthisday: 'On this day', dispatch: 'Dispatch pages', other: 'Other' };
+const SRC = { x: 'X', instagram: 'Instagram', threads: 'Threads', tiktok: 'TikTok', youtube: 'YouTube', facebook: 'Facebook', reddit: 'Reddit', newsletter: 'Newsletter', google: 'Google', search: 'Other search', 'link in bio': 'Link in bio', 'ko-fi': 'Ko-fi', email: 'Email', direct: 'Direct or typed in', other: 'Other sites' };
+const SOCIAL = new Set(['x', 'instagram', 'threads', 'tiktok', 'youtube', 'facebook', 'reddit']);
+const DEV = { phone: 'Phone', computer: 'Computer', tablet: 'Tablet' };
+const ranked = (o, names) => Object.entries(o || {}).sort((a, b) => b[1] - a[1]).map(([k, v]) => ({ id: k, k: (names || {})[k] || k, v }));
+
+// ---------- state and routing ----------
+const SECTIONS = [['overview', 'Overview'], ['site', 'Site'], ['sources', 'Sources'], ['declass', 'Declass'], ['coderoom', 'Code Room'], ['series', 'Campaign Series'], ['namethis', 'Name This'], ['campaigns', 'Campaigns']];
+const SUBS = [['funnel', 'Funnel'], ['players', 'Players'], ['engagement', 'Engagement'], ['economy', 'Economy'], ['cards', 'Cards and rates'], ['catalog', 'Catalog']];
+const OLD = { growth: 'site', players: 'declass/players', cards: 'declass/cards', engagement: 'declass/engagement', economy: 'declass/economy', intercept: 'coderoom', catalog: 'declass/catalog' };
+let D = null, sec = 'overview', sub = 'funnel', range = Number(ls('console_range')) || 30, psort = 'active';
+function readHash() {
+  let h = ''; try { h = (location.hash || '').slice(1); } catch (e) {}
+  h = OLD[h] || h;
+  const [a, b] = h.split('/');
+  if (SECTIONS.some(s => s[0] === a)) sec = a;
+  if (a === 'declass' && SUBS.some(s => s[0] === b)) sub = b;
+}
+function go(a, b) { sec = a; if (b) sub = b; try { history.replaceState(null, '', '#' + (sec === 'declass' ? 'declass/' + sub : sec)); } catch (e) {} render(); window.scrollTo(0, 0); }
+readHash();
+addEventListener('hashchange', () => { readHash(); if (D) render(); });
+
+// ---------- data by day ----------
+const addDays = (d, n) => { const t = new Date(d + 'T12:00:00Z'); t.setUTCDate(t.getUTCDate() + n); return t.toISOString().slice(0, 10); };
+const span = (n, back) => { const out = [], end = addDays(D.today, -(back || 0)); for (let i = n - 1; i >= 0; i--) out.push(addDays(end, -i)); return out; };
+let TI = null, DI = null;
+function index() {
+  TI = new Map(); DI = new Map(D.daily.map(r => [r.day, r]));
+  D.tally.forEach(([d, m, k, n]) => { if (!TI.has(m)) TI.set(m, new Map()); const mm = TI.get(m); if (!mm.has(k)) mm.set(k, new Map()); mm.get(k).set(d, n); });
+}
+const tv = (m, k, days) => { const mm = TI.get(m), km = mm && mm.get(k); return days.map(d => (km && km.get(d)) || 0); };
+const tall = (m, days) => { const mm = TI.get(m); const out = days.map(() => 0); if (mm) mm.forEach(km => days.forEach((d, i) => { out[i] += km.get(d) || 0; })); return out; };
+const tby = (m, days) => { const mm = TI.get(m), o = {}, set = new Set(days); if (mm) mm.forEach((km, k) => { let s = 0; km.forEach((n, d) => { if (set.has(d)) s += n; }); if (s) o[k] = s; }); return o; };
+const dv = (f, days) => days.map(d => (DI.get(d) || {})[f] || 0);
+const sum = a => a.reduce((s, x) => s + x, 0);
+const rangeLabel = () => 'last ' + range + ' days';
+// the earlier period only counts as a comparison if visit counting had already begun when it started
+const prior = () => { const p = span(range, range); return D.growth.since && p[0] >= D.growth.since ? p : null; };
+const psum = (p, f) => p ? f(p) : undefined;
+
+// ---------- small pieces ----------
+function delta(now, before, word) {
+  if (before === undefined) return '';
+  if (!before) return now ? `<small class="up">▲ up from 0</small>` : `<small>■ no change ${word}</small>`;
+  const x = (now - before) / before;
+  return Math.abs(x) < 0.005 ? `<small>■ same as ${word.replace('vs ', '')}</small>` : `<small class="${x > 0 ? 'up' : 'down'}">${x > 0 ? '▲' : '▼'} ${Math.abs(x * 100).toFixed(0)}% ${word}</small>`;
+}
+const tile = (v, label, now, before, word) => `<div class="tile"><span class="lab">${label}</span><b${typeof v === 'string' && isNaN(parseFloat(v)) ? ' class="word"' : ''}>${typeof v === 'number' ? num(v) : v}</b>${delta(now, before, word || 'vs prior week')}</div>`;
+const tiles = list => `<div class="tiles">${list.join('')}</div>`;
+const panel = (title, subt, body) => `<section class="panel"><h2>${title}</h2>${subt ? `<p class="sub">${subt}</p>` : ''}${body}</section>`;
+function hbars(rows, opt) {
+  opt = opt || {};
+  if (!rows.length || !rows.some(r => r.v)) return `<p class="empty">${opt.empty || 'Nothing in this period yet.'}</p>`;
+  const mx = Math.max(1, ...rows.map(r => r.v)), tot = opt.share ? sum(rows.map(r => r.v)) : 0, base = opt.of;
+  return `<div class="hb">${rows.map(r => `<div class="l">${esc(r.k)}${r.sub ? `<small>${esc(r.sub)}</small>` : ''}</div><div class="t"><i style="width:${r.v / mx * 100}%"></i></div><div class="v">${num(r.v)}${tot ? `<small>${pct(r.v / tot)}</small>` : ''}${base ? `<small>${pct(r.v / base)}</small>` : ''}</div>`).join('')}</div>`;
+}
+const rows = list => `<ul class="rows">${list.map(([l, v, cls]) => `<li><span>${l}</span><b class="${cls || ''}">${v}</b></li>`).join('')}</ul>`;
+
+// ---------- charts ----------
+// A time chart is stored as a spec, then drawn into its placeholder at the panel's real width (and redrawn on resize).
+let CH = [];
+function chart(spec) { CH.push(spec); return `<div class="chartwrap">${spec.series.length > 1 ? `<div class="legend">${spec.series.map((s, i) => `<span><i class="sw" style="background:var(--s${i + 1})"></i>${esc(s.name)}</span>`).join('')}</div>` : ''}<div class="chart" data-c="${CH.length - 1}"></div><button class="link" data-tb="${CH.length - 1}">Show as a table</button><div class="tw" data-tbl="${CH.length - 1}" hidden></div></div>`; }
+function niceMax(m) { if (m <= 4) return Math.max(1, m); const p = Math.pow(10, Math.floor(Math.log10(m))), f = m / p; return (f <= 1 ? 1 : f <= 2 ? 2 : f <= 5 ? 5 : 10) * p; }
+function draw(el, spec) {
+  const days = spec.days, n = days.length, S = spec.series;
+  const tb = el.parentNode.querySelector('[data-tb]');
+  if (!S.some(s => s.values.some(v => v))) { el.innerHTML = '<p class="empty">Nothing in this period yet.</p>'; if (tb) tb.hidden = true; return; }
+  if (tb) tb.hidden = false;
+  const W = Math.max(280, el.clientWidth), H = 210, bars = spec.kind === 'bars';
+  const ends = !bars && S.length > 1 && W >= 560;
+  const L = 34, R = ends ? 158 : 14, T = 12, B = 24, pw = W - L - R, ph = H - T - B;
+  const mx = niceMax(Math.max(1, ...S.flatMap(s => s.values)));
+  const ticks = mx <= 4 ? Array.from({ length: mx + 1 }, (_, i) => i) : [0, mx / 4, mx / 2, mx * 3 / 4, mx].filter(t => Number.isInteger(t));
+  const y = v => T + ph - v / mx * ph;
+  const band = pw / n, x = i => bars || n === 1 ? L + band * i + band / 2 : L + (pw * i) / (n - 1);
+  let g = '';
+  ticks.forEach(t => { g += `<line x1="${L}" x2="${W - R}" y1="${y(t)}" y2="${y(t)}" stroke="var(--line2)" stroke-width="1"/><text x="${L - 6}" y="${y(t) + 4}" text-anchor="end">${num(t)}</text>`; });
+  g += `<line x1="${L}" x2="${W - R}" y1="${y(0)}" y2="${y(0)}" stroke="var(--line)" stroke-width="1"/>`;
+  const every = Math.max(1, Math.ceil(n / Math.max(2, Math.floor(pw / 64))));
+  for (let i = n - 1; i >= 0; i -= every) g += `<text x="${x(i)}" y="${H - 6}" text-anchor="${i === n - 1 && !bars ? 'end' : 'middle'}">${dlab(days[i])}</text>`;
+  if (bars) {
+    const bw = Math.max(2, Math.min(24, band - 2));
+    S[0].values.forEach((v, i) => { if (!v) return; const h = Math.max(2, y(0) - y(v)), r = Math.min(4, bw / 2, h), x0 = x(i) - bw / 2, y0 = y(0) - h; g += `<path d="M${x0},${y(0)}V${y0 + r}Q${x0},${y0} ${x0 + r},${y0}H${x0 + bw - r}Q${x0 + bw},${y0} ${x0 + bw},${y0 + r}V${y(0)}Z" fill="var(--s1)"/>`; });
+  } else {
+    S.forEach((s, j) => { g += `<polyline fill="none" stroke="var(--s${j + 1})" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" points="${s.values.map((v, i) => x(i) + ',' + y(v)).join(' ')}"/>`; });
+    S.forEach((s, j) => { g += `<circle cx="${x(n - 1)}" cy="${y(s.values[n - 1])}" r="4" fill="var(--s${j + 1})" stroke="var(--card)" stroke-width="2"/>`; });
+    if (ends) {
+      const labs = S.map((s, j) => ({ j, y: y(s.values[n - 1]), t: s.name + ' ' + num(s.values[n - 1]) })).sort((a, b) => a.y - b.y);
+      for (let i = 1; i < labs.length; i++) if (labs[i].y - labs[i - 1].y < 14) labs[i].y = labs[i - 1].y + 14;
+      for (let i = labs.length - 1; i >= 0; i--) { if (labs[i].y > H - B) labs[i].y = H - B; if (i < labs.length - 1 && labs[i + 1].y - labs[i].y < 14) labs[i].y = labs[i + 1].y - 14; }
+      labs.forEach(l => { g += `<text class="end" x="${W - R + 10}" y="${l.y + 4}">${esc(l.t.length > 25 ? l.t.slice(0, 24) + '…' : l.t)}</text>`; });
+    }
+  }
+  g += `<g class="hov" visibility="hidden"><line class="cx" y1="${T}" y2="${y(0)}" stroke="var(--soft)" stroke-width="1"/>${bars ? '' : S.map((s, j) => `<circle r="4" fill="var(--s${j + 1})" stroke="var(--card)" stroke-width="2"/>`).join('')}</g>`;
+  g += `<rect x="${L}" y="${T}" width="${pw}" height="${ph + B}" fill="transparent"/>`;
+  el.innerHTML = `<svg viewBox="0 0 ${W} ${H}" height="${H}" role="img" aria-label="${esc(spec.label || S.map(s => s.name).join(', '))} by day">${g}</svg><div class="tip" hidden></div>`;
+  const svg = el.firstChild, hov = svg.querySelector('.hov'), tip = el.querySelector('.tip'), dots = hov.querySelectorAll('circle'), cx = hov.querySelector('.cx');
+  const move = ev => {
+    const b = svg.getBoundingClientRect(), px = ev.clientX - b.left;
+    const i = Math.max(0, Math.min(n - 1, bars || n === 1 ? Math.floor((px - L) / band) : Math.round((px - L) / (pw / (n - 1)))));
+    hov.setAttribute('visibility', 'visible'); cx.setAttribute('x1', x(i)); cx.setAttribute('x2', x(i));
+    dots.forEach((c, j) => { c.setAttribute('cx', x(i)); c.setAttribute('cy', y(S[j].values[i])); });
+    tip.hidden = false;
+    tip.innerHTML = `<b>${dlab(days[i])}</b>${S.map((s, j) => `<div><i class="sw" style="background:var(--s${j + 1})"></i><span>${esc(s.name)}</span><span>${num(s.values[i])}</span></div>`).join('')}`;
+    const tw = tip.offsetWidth; tip.style.left = Math.max(0, Math.min(W - tw, x(i) + (x(i) > W / 2 ? -tw - 12 : 12))) + 'px';
+  };
+  svg.addEventListener('pointermove', move); svg.addEventListener('pointerdown', move);
+  svg.addEventListener('pointerleave', () => { hov.setAttribute('visibility', 'hidden'); tip.hidden = true; });
+}
+function tableOf(spec) {
+  return `<table><tr><th>Day</th>${spec.series.map(s => `<th>${esc(s.name)}</th>`).join('')}</tr>${spec.days.map((d, i) => `<tr><td>${dlab(d)}</td>${spec.series.map(s => `<td>${num(s.values[i])}</td>`).join('')}</tr>`).reverse().join('')}</table>`;
+}
+function mount() {
+  document.querySelectorAll('.chart[data-c]').forEach(el => draw(el, CH[el.dataset.c]));
+  document.querySelectorAll('[data-tb]').forEach(b => b.onclick = () => { const t = document.querySelector(`[data-tbl="${b.dataset.tb}"]`); if (t.hidden) t.innerHTML = tableOf(CH[b.dataset.tb]); t.hidden = !t.hidden; b.textContent = t.hidden ? 'Show as a table' : 'Hide the table'; });
+}
+let rz = null; addEventListener('resize', () => { clearTimeout(rz); rz = setTimeout(() => document.querySelectorAll('.chart[data-c]').forEach(el => draw(el, CH[el.dataset.c])), 150); });
+
+// ---------- checks and verdicts ----------
+function verdict(actual, n, p) {
+  if (n < 30) return '<span class="mut">too few</span>';
+  const se = Math.sqrt(p * (1 - p) / n), z = se ? Math.abs(actual / n - p) / se : 0;
+  return z > 3 ? '<span class="bad">check</span>' : z > 2 ? '<span class="warn">watch</span>' : '<span class="ok">ok</span>';
+}
+const flagOf = (actual, n, p) => { if (n < 30) return null; const se = Math.sqrt(p * (1 - p) / n), z = se ? Math.abs(actual / n - p) / se : 0; return z > 3 ? 'check' : z > 2 ? 'watch' : null; };
+function rateTable(t, exp) {
+  return `<div class="tw"><table><tr><th>Finish</th><th>Pulls</th><th>Actual</th><th>Designed</th><th></th></tr>${['copper', 'silver', 'gold', 'topsecret'].map(f => `<tr><td>${FN[f]}</td><td>${t[f]}</td><td>${t.n ? pct(t[f] / t.n) : '·'}</td><td>${exp ? pct(exp[f]) : '·'}</td><td>${exp ? verdict(t[f], t.n, exp[f]) : ''}</td></tr>`).join('')}</table></div>`;
+}
+function healthList() {
+  const H = D.health, E = D.envelopes;
+  return [
+    ['Daily envelopes without 3 cards', E.daily.wrongCount], ['Priority envelopes without 3 cards', E.priority.wrongCount], ['Commemorative files without 3 archive cards', E.commemorative.wrongCount],
+    ['Morning envelopes missing the day card', E.daily.morningMissingDayCard], ['Pulls not signed', H.unsignedPulls], ['Cards stuck waiting over 2 days', H.stuckWaiting],
+    ['Pulls of a card the catalog does not know', H.unknownCards], ['Cards pulled before they posted', H.cardsBeforePost], ['Top Secret turned into Intel', H.topSecretConverted],
+    ['Top Secret serial gaps', H.serialGaps], ['Top Secret serials used twice', H.serialDupes], ['Serials past the counter', H.serialPastCounter],
+    ['Players whose Intel does not match their log', H.intelMismatch.length, H.intelMismatch.join(', ')], ['Envelopes opened with no cards', H.openedWithoutPulls], ['Cards with no opened envelope', H.pullsWithoutOpened],
+  ];
+}
+
+// ---------- frame ----------
+const USES_RANGE = { site: 1, sources: 1, coderoom: 1, series: 1, namethis: 1, 'declass/funnel': 1, 'declass/engagement': 1, 'declass/economy': 1, 'declass/players': 1 };
+function render() {
+  CH = [];
+  const route = sec === 'declass' ? 'declass/' + sub : sec;
+  $('app').innerHTML = `<div class="top"><div class="titlebar"><h1>Platform Console</h1><span class="asof">As of ${when(D.at)} · your own visits and account are left out</span><span class="spacer"></span><button class="btn" id="themeBtn">${theme === 'dark' ? 'Light mode' : 'Dark mode'}</button></div>
+  <div class="nav">${SECTIONS.map(([k, l]) => `<button data-s="${k}" class="${sec === k ? 'on' : ''}">${l}</button>`).join('')}</div>
+  ${sec === 'declass' || USES_RANGE[route] ? `<div class="subbar">${sec === 'declass' ? `<div class="seg">${SUBS.map(([k, l]) => `<button data-u="${k}" class="${sub === k ? 'on' : ''}">${l}</button>`).join('')}</div>` : ''}${USES_RANGE[route] ? `<span class="lab">Charts show the</span><div class="seg">${[7, 30, 90].map(r => `<button data-r="${r}" class="${range === r ? 'on' : ''}">last ${r} days</button>`).join('')}</div>` : ''}</div>` : ''}</div>
+  <div class="page" id="body"></div>`;
+  document.querySelectorAll('.nav button').forEach(b => b.onclick = () => go(b.dataset.s));
+  document.querySelectorAll('[data-u]').forEach(b => b.onclick = () => go('declass', b.dataset.u));
+  document.querySelectorAll('[data-r]').forEach(b => b.onclick = () => { range = Number(b.dataset.r); ls('console_range', String(range)); render(); });
+  $('themeBtn').onclick = () => { theme = theme === 'dark' ? 'light' : 'dark'; ls('console_theme', theme); document.documentElement.dataset.theme = theme; render(); };
+  const views = { overview, site, sources, coderoom, series, namethis, campaigns, 'declass/funnel': funnelView, 'declass/players': players, 'declass/engagement': engagement, 'declass/economy': economy, 'declass/cards': cards, 'declass/catalog': catalog };
+  $('body').innerHTML = (views[route] || overview)();
+  mount(); wire();
+  const on = document.querySelector('.nav button.on'); if (on && on.scrollIntoView) on.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+}
+let afterRender = [];
+function wire() { afterRender.forEach(f => f()); afterRender = []; document.querySelectorAll('tr.go').forEach(r => r.onclick = () => playerView(r.dataset.f)); }
+
+// ---------- Overview ----------
+function overview() {
+  const G = D.growth, w = G.week, l = G.lastWeek, d30 = span(30), h = healthList(), bad = h.filter(r => r[1]);
+  const topSrc = ranked(G.sourcesWeek, SRC)[0], wk = span(7), topPg = ranked(tby('view', wk), PG)[0];
+  afterRender.push(wireReport);
+  return `<p class="lede">The whole platform at a glance. The top row compares the last 7 days with the 7 before.</p>
+  ${tiles([tile(w.visitors, 'Visitors', w.visitors, l.visitors), tile(w.views, 'Page views', w.views, l.views), tile(w.newVisitors, 'First time visitors', w.newVisitors, l.newVisitors), tile(w.signups, 'New players', w.signups, l.signups), tile(w.activePlayers, 'Players who played', w.activePlayers, l.activePlayers), tile(w.envelopes, 'Envelopes opened', w.envelopes, l.envelopes)])}
+  ${tiles([tile(topSrc ? topSrc.k : 'None yet', 'Top source this week' + (topSrc ? ', ' + num(topSrc.v) + ' visits' : '')), tile(topPg ? topPg.k : 'None yet', 'Most viewed page this week' + (topPg ? ', ' + num(topPg.v) + ' views' : '')), tile(D.totals.players, 'Players, all time'), tile(D.totals.posted, 'Cards posted')])}
+  <div class="health ${bad.length ? 'attn' : ''}"><b class="h">${bad.length ? '⚠ ' + bad.length + ' health check' + (bad.length === 1 ? '' : 's') + ' flagged' : '✓ All 15 health checks are clear'}</b>${bad.length ? `<ul>${bad.map(([lb, n, x]) => `<li>${esc(lb)}: <b>${n}</b>${x ? ' (' + esc(x) + ')' : ''}</li>`).join('')}</ul>` : ''}
+  <details><summary>See every check</summary>${rows(h.map(([lb, n]) => [esc(lb), n ? n : '✓', n ? 'bad' : 'ok']))}</details></div>
+  <div class="grid2">${panel('Visitors', 'Each day, last 30 days. A visitor is counted once per browser per day.', chart({ days: d30, series: [{ name: 'Visitors', values: tall('visitors', d30) }, { name: 'First time visitors', values: tall('new', d30) }] }))}
+  ${panel('Players who played', 'Each day, last 30 days. Played means they opened an envelope.', chart({ kind: 'bars', days: d30, series: [{ name: 'Players who played', values: dv('activePlayers', d30) }] }))}</div>
+  ${panel('Weekly review', 'Claude reads the full data on its own every night, so there is nothing to paste. These are here if you want a quick look in a chat.', `<div class="btnrow"><button id="copyRep">Copy weekly report</button><button id="copyAll" class="alt">Copy full data</button></div><details><summary>Read the weekly report</summary><textarea id="rep" readonly>${esc(report())}</textarea></details>`)}`;
+}
+function wireReport() {
+  const put = txt => navigator.clipboard ? navigator.clipboard.writeText(txt) : Promise.reject();
+  $('copyRep').onclick = () => { const b = $('copyRep'); put(report()).then(() => { b.textContent = 'Copied'; }).catch(() => { b.textContent = 'Could not copy. Open the report below'; }); setTimeout(() => { b.textContent = 'Copy weekly report'; }, 2500); };
+  $('copyAll').onclick = () => {
+    const b = $('copyAll'), done = () => { b.textContent = 'Copied'; setTimeout(() => { b.textContent = 'Copy full data'; }, 2000); };
+    if (fullData) { put(fullData).then(done).catch(() => { b.textContent = 'Could not copy'; }); return; }
+    b.textContent = 'Getting it…';
+    fetch('/api/stats?export=1', { headers: { 'x-declass-key': key }, credentials: 'same-origin' }).then(r => r.ok ? r.text() : Promise.reject(r.status))
+      .then(txt => { fullData = txt; return put(txt).then(done).catch(() => { b.textContent = 'Ready. Tap again to copy'; }); })
+      .catch(e => { b.textContent = 'Did not work (' + e + ')'; });
+  };
+}
+
+// ---------- Site ----------
+function site() {
+  const d = span(range), p = prior(), word = 'vs prior ' + range + ' days';
+  const vis = sum(tall('visitors', d)), visP = psum(p, q => sum(tall('visitors', q))), views = sum(tall('view', d)), viewsP = psum(p, q => sum(tall('view', q))), nw = sum(tall('new', d)), nwP = psum(p, q => sum(tall('new', q)));
+  const pv = tby('view', d), pvis = tby('visitor', d), dev = tby('device', d);
+  return `<p class="lede">Everyone who came to ww2dispatches.com in the ${rangeLabel()}, and what they looked at. Visit counts began ${D.growth.since ? dlab(D.growth.since) : 'recently'}${prior() ? '' : ', so there is no full earlier period to compare with yet'}.</p>
+  ${tiles([tile(vis, 'Visitors', vis, visP, word), tile(views, 'Page views', views, viewsP, word), tile(nw, 'First time visitors', nw, nwP, word), tile(Math.max(0, vis - nw), 'Returning visitors', Math.max(0, vis - nw), p ? Math.max(0, visP - nwP) : undefined, word), tile(vis ? (views / vis).toFixed(1) : '·', 'Pages per visitor')])}
+  ${panel('Traffic by day', 'Page views count every page opened. Visitors count each browser once per day.', chart({ days: d, series: [{ name: 'Page views', values: tall('view', d) }, { name: 'Visitors', values: tall('visitors', d) }, { name: 'First time visitors', values: tall('new', d) }] }))}
+  <div class="grid2">${panel('Pages', 'Views in the ' + rangeLabel() + ', most viewed first.', hbars(ranked(pv, PG).map(r => ({ k: r.k, v: r.v, sub: num(pvis[r.id] || 0) + ' visitors' }))))}
+  ${panel('Phone or computer', 'Share of visitors in the ' + rangeLabel() + '.', hbars(ranked(dev, DEV), { share: 1 }))}</div>`;
+}
+
+// ---------- Sources ----------
+function sources() {
+  const d = span(range), by = tby('source', d), list = ranked(by, SRC), tot = sum(list.map(r => r.v));
+  const social = sum(list.filter(r => SOCIAL.has(r.id)).map(r => r.v)), direct = by.direct || 0;
+  const top = list.slice(0, 3), rest = list.slice(3).map(r => r.id);
+  const series = top.map(r => ({ name: r.k, values: tv('source', r.id, d) }));
+  if (rest.length) series.push({ name: 'All others', values: d.map((_, i) => sum(rest.map(k => tv('source', k, d)[i]))) });
+  return `<p class="lede">Where visits came from in the ${rangeLabel()}. Each visit is counted once, on the first page.</p>
+  ${tiles([tile(tot, 'Visits with a source'), tile(list[0] ? list[0].k : 'None yet', 'Top source'), tile(tot ? pct(social / tot) : '·', 'From social platforms'), tile(tot ? pct(direct / tot) : '·', 'Direct or typed in')])}
+  ${panel('Sources by day', 'The three biggest sources, with everything else grouped together.', series.length ? chart({ days: d, series }) : '<p class="empty">Nothing in this period yet.</p>')}
+  <div class="grid2">${panel('All sources', 'Visits in the ' + rangeLabel() + '.', hbars(list, { share: 1 }))}
+  ${panel('Where new players first came from', 'All time. Counted when an account is made, by the source of that browser’s first ever visit.', hbars(ranked(D.growth.signupSources, SRC), { share: 1, empty: 'Starts with the next new account.' }))}</div>
+  <p class="note">Many apps, Instagram and TikTok especially, open links without saying where the visitor came from, so those visits land in Direct. A profile link ending in ?ref=instagram (or the platform’s name) fixes that. A large Direct share with almost no social usually means a bio link is missing its ?ref tag.</p>`;
+}
+
+// ---------- Declass: funnel ----------
+function funnelView() {
+  const G = D.growth, w = G.week, l = G.lastWeek, m = G.month, d = span(range), a = tby('ev', d), n = k => a[k] || 0;
+  const seen = n('save_screen'), left = Math.max(0, seen - n('save_skip') - n('save_google'));
+  const rate = (x, y) => y ? pct(x / y) : '·';
+  return `<p class="lede">How visitors become players. The top row compares the last 7 days with the 7 before.</p>
+  ${tiles([tile(w.declassVisitors, 'Declass visitors', w.declassVisitors, l.declassVisitors), tile(w.guestStarters, 'Tried a guest starter pack', w.guestStarters, l.guestStarters), tile(w.signups, 'New players', w.signups, l.signups), tile(rate(w.signups, w.declassVisitors), 'Visitors who signed up'), tile(rate(w.playerDays, w.declassVisitors), 'Play rate')])}
+  ${panel('Into the game, by day', 'Declass visitors, guests who opened a starter pack, and new accounts.', chart({ days: d, series: [{ name: 'Declass visitors', values: tv('visitor', 'declass', d) }, { name: 'Guest starter packs', values: tv('ev', 'guest_starter', d) }, { name: 'New players', values: dv('signups', d) }] }))}
+  <div class="grid2">${panel('From visitor to player', 'Last 30 days. The percent is the share of first time visitors who got that far.', hbars([{ k: 'First time visitors, whole site', v: m.newVisitors }, { k: 'Declass visitors', v: m.declassVisitors }, { k: 'Opened a starter pack as a guest', v: m.guestStarters }, { k: 'Made an account', v: m.signups }, { k: 'Played at least once', v: m.activePlayers }], { of: m.newVisitors }))}
+  ${panel('The save your dossier screen', 'In the ' + rangeLabel() + '. Left without either means they closed the page or gave up on the sign in.', hbars([{ k: 'Saw the screen', v: seen }, { k: 'Tapped Not now', v: n('save_skip') }, { k: 'Left without either', v: left }, { k: 'Sign in came back OK', v: n('save_google') }, { k: 'Dossier saved', v: n('save_done') }, { k: 'Sign in failed', v: n('save_fail') }], { of: seen, empty: 'Nobody reached the save screen in this period.' }))}</div>
+  <div class="grid2">${panel('Social app browsers', 'In the ' + rangeLabel() + '. Google can’t sign in inside Instagram’s or TikTok’s own browser.', rows([['Arrived inside one', n('inapp_arrive')], ['Automatic jump to the real browser tried', n('inapp_auto')], ['Landed in the real browser', n('out_landed')], ['Saw the save screen inside one', n('save_inapp')], ['Tapped Open in browser', n('inapp_open')], ['Tapped it and nothing happened', n('inapp_stuck'), n('inapp_stuck') ? 'bad' : ''], ['Copied the link', n('inapp_copy')], ['Arrived in a real browser with their pack', n('pack_carried')]]))}
+  ${panel('Email sign in', 'In the ' + rangeLabel() + '.', rows([['Asked for a code', n('email_ask')], ['Code sent', n('email_sent')], ['Wrong or expired code', n('email_wrong')], ['Signed in', n('email_done')], ['Sign in failed elsewhere', n('signin_fail'), n('signin_fail') ? 'bad' : '']]))}</div>
+  ${panel('Everything players do in the game', 'Counts only. Your own browser is left out.', `<div class="tw"><table class="wrap"><tr><th>Action</th><th>7 days</th><th>30 days</th></tr>${Object.keys(ACT).filter(k => G.actions[k]).sort((x, y) => G.actions[y] - G.actions[x]).map(k => `<tr><td>${ACT[k]}</td><td>${num(G.actionsWeek[k] || 0)}</td><td>${num(G.actions[k] || 0)}</td></tr>`).join('') || '<tr><td>Nothing yet</td><td></td><td></td></tr>'}</table></div><p class="note">Not seen in the last 30 days: ${Object.keys(ACT).filter(k => !G.actions[k]).map(k => ACT[k].toLowerCase()).join(', ') || 'nothing, every action was used'}.</p>`)}`;
+}
+
+// ---------- Declass: players ----------
+function players() {
+  const E = D.engagement, w = D.growth.week, l = D.growth.lastWeek, d = span(range);
+  const list = D.players.slice().sort((a, b) => psort === 'joined' ? b.joined.localeCompare(a.joined) : psort === 'days' ? b.daysPlayed - a.daysPlayed : (b.lastActive || '').localeCompare(a.lastActive || ''));
+  afterRender.push(() => document.querySelectorAll('[data-ps]').forEach(b => b.onclick = () => { psort = b.dataset.ps; render(); }));
+  return `${tiles([tile(D.totals.players, 'Players, all time'), tile(w.signups, 'New this week', w.signups, l.signups), tile(E.active1, 'Played today'), tile(E.active7, 'Played in 7 days'), tile(E.active30, 'Played in 30 days')])}
+  ${panel('Total players', 'Accounts over the ' + rangeLabel() + '.', chart({ days: d, series: [{ name: 'Total players', values: dv('accounts', d).map((v, i, arr) => v || (i ? arr[i - 1] : 0)) }] }))}
+  ${panel('Every player', 'By file number, which never shows who someone is. Tap a row for that player.', `<div class="subbar" style="margin:0 0 8px"><span class="lab">Sort by</span><div class="seg">${[['active', 'Last active'], ['joined', 'Newest'], ['days', 'Most days']].map(([k, lb]) => `<button data-ps="${k}" class="${psort === k ? 'on' : ''}">${lb}</button>`).join('')}</div></div>
+  <div class="tw"><table><tr><th>File</th><th>Joined</th><th>Last active</th><th>Days</th><th>Envelopes</th><th>Cards</th><th>Dossier</th><th>Streak</th><th>Intel</th><th>Rank</th><th>Gold or better</th></tr>
+  ${list.map(p => `<tr class="go" data-f="${esc(p.file)}"><td>${esc(p.file)}${p.intelLogOk ? '' : ' <span class="bad">!</span>'}</td><td>${day(p.joined)}</td><td>${day(p.lastActive)}</td><td>${p.daysPlayed}</td><td>${p.envelopes}</td><td>${p.pulls}</td><td>${pct(p.completion)}</td><td>${p.streak}</td><td>${p.intel}</td><td>${esc(p.rank)}</td><td>${p.goldPlus}</td></tr>`).join('') || '<tr><td>No players yet</td></tr>'}</table></div>`)}`;
+}
+function playerView(file) {
+  $('body').innerHTML = '<p class="empty">Loading…</p>';
+  get('?player=' + encodeURIComponent(file)).then(d => {
+    const s = d.summary;
+    $('body').innerHTML = `<p><button class="btn" id="pback">◀︎ All players</button></p>
+    ${tiles([tile(s.daysPlayed, 'Days played'), tile(s.envelopes, 'Envelopes'), tile(s.pulls, 'Cards pulled'), tile(pct(s.completion), 'Dossier (' + s.held + ' cards)'), tile(s.streak, 'Streak'), tile(s.intel, 'Intel' + (s.intelLogOk ? '' : ' (log is off!)')), tile(esc(s.rank), 'Rank'), tile(s.stamps + ' / ' + s.pins, 'Stamps / pins'), tile(s.requests, 'Requests'), tile(s.intercepts, 'Code Room plays'), tile(s.waiting, 'Cards waiting'), tile(s.priority, 'Priority waiting')])}
+    ${panel('File ' + esc(s.file), `Joined ${when(s.joined)} · last active ${when(s.lastActive)} · starter pack ${s.starter ? 'done' : 'not done'} · stamps already shown: ${esc(d.honorsSeen.join(', ') || 'none')}`, `<p class="note" style="margin-top:0"><b>Days played:</b> ${d.playDays.map(esc).join(', ') || 'none'}</p><p class="note"><b>Still missing:</b> ${d.missing.length ? d.missing.map(esc).join(', ') : 'Holds every posted card.'}</p>`)}
+    ${panel('Recent envelopes', '', `<div class="tw"><table><tr><th>When</th><th>Kind</th><th>Cards</th></tr>${d.envelopes.map(e => `<tr><td>${when(e.at)}</td><td>${esc(e.kind)}</td><td style="white-space:normal;text-align:left">${e.cards.map(c => `<span class="pill f-${c.finish}">${esc(c.short)}${c.living ? ' ▶' : ''}${c.serial ? ' #' + c.serial : ''}${c.intel ? ' +' + c.intel : ''}${c.turned ? '' : ' (waiting)'}</span>`).join('')}</td></tr>`).join('')}</table></div>`)}
+    ${panel('Intel history', '', `<div class="tw"><table><tr><th>When</th><th>Reason</th><th>Card</th><th>Change</th></tr>${d.intelLog.map(r => `<tr><td>${when(r.at)}</td><td>${esc(r.reason)}</td><td>${esc(r.card || '')}${r.finish ? ' · ' + FN[r.finish] : ''}</td><td class="${r.delta < 0 ? 'bad' : 'ok'}">${r.delta > 0 ? '+' : ''}${r.delta}</td></tr>`).join('')}</table></div>`)}
+    ${d.intercept.length ? panel('Code Room', '', `<div class="tw"><table><tr><th>Day</th><th>Result</th><th>Score</th><th>Mistakes</th><th>Claimed</th></tr>${d.intercept.map(r => `<tr><td>${esc(r.day)}</td><td>${esc(r.status)}</td><td>${r.score == null ? '·' : r.score}</td><td>${r.mistakes}</td><td>${r.claimed ? 'yes' : '·'}</td></tr>`).join('')}</table></div>`) : ''}`;
+    $('pback').onclick = () => go('declass', 'players'); window.scrollTo(0, 0);
+  }).catch(e => { $('body').innerHTML = `<p class="err">Could not load that player (${esc(e)}).</p>`; });
+}
+
+// ---------- Declass: engagement ----------
+function engagement() {
+  const E = D.engagement, F = D.funnel, d = span(range);
+  const hrs = E.hoursET.map((n, h) => ({ k: (h % 12 || 12) + (h < 12 ? ' am' : ' pm'), v: n })).filter(x => x.v);
+  return `${tiles([tile(E.active1, 'Played today'), tile(E.active7, 'Played in 7 days'), tile(E.active30, 'Played in 30 days'), tile(E.retentionDay1[0] + ' of ' + E.retentionDay1[1], 'Came back the next day'), tile(E.retentionDay7[0] + ' of ' + E.retentionDay7[1], 'Came back around day 7'), tile(pct(E.missedRate), 'Envelopes missed'), tile(E.lastCall, 'Last Call rescues'), tile(E.medianOpenMinutes + ' min', 'Typical wait to open')])}
+  <p class="note" style="margin:-4px 0 12px">Missed means daily envelopes a player never opened since their first day (${E.offered - E.taken} of ${E.offered}). Last Call means opened on a later game day than it arrived. Days are Eastern game days.</p>
+  ${panel('Players and envelopes, by day', 'How many players opened an envelope, and how many envelopes they opened.', chart({ days: d, series: [{ name: 'Envelopes opened', values: dv('envelopes', d) }, { name: 'Players who played', values: dv('activePlayers', d) }] }))}
+  <div class="grid2">${panel('New player path', 'All players. The percent is the share of all accounts.', hbars([{ k: 'Accounts', v: F.accounts }, { k: 'Opened the starter pack', v: F.starterDone }, { k: 'Opened a daily envelope', v: F.firstDaily }, { k: 'Played 3 or more days', v: F.played3Days }, { k: 'Played 7 or more days', v: F.played7Days }], { of: F.accounts, empty: 'No players yet.' }) + '<p class="note">Guests who open a starter pack and never save it have no account, so they aren’t counted here.</p>')}
+  ${panel('Streaks right now', 'Players by the length of their current daily streak.', hbars(Object.entries(E.streaks).map(([k, v]) => ({ k: k === '0' ? 'No streak' : k + ' days', v })), { empty: 'No players yet.' }))}</div>
+  ${panel('When envelopes get opened', 'All time, by hour of the day in Eastern time.', hbars(hrs, { empty: 'No envelopes yet.' }))}`;
+}
+
+// ---------- Declass: economy ----------
+function economy() {
+  const Ec = D.economy, d = span(range);
+  return `${tiles([tile(Ec.perActiveWeek, 'Intel per active player, 7 days'), tile('about ' + Ec.design, 'Designed per week'), tile(Ec.balances.median, 'Typical balance'), tile(Ec.balances.max, 'Largest balance'), tile(Ec.balances.over500, 'Players over 500'), tile(Ec.requests.n, 'Card requests')])}
+  ${panel('Intel earned and spent, by day', 'Earned comes from envelopes, duplicates and the Code Room. Spent is card requests.', chart({ days: d, series: [{ name: 'Intel earned', values: dv('intelEarned', d) }, { name: 'Intel spent', values: dv('intelSpent', d) }] }))}
+  <div class="grid2">${panel('By reason', 'All time. The number in brackets is how many times.', rows(Object.entries(Ec.byReason).map(([k, v]) => [`${esc(k)} <span class="mut">(${v.n})</span>`, (v.total > 0 ? '+' : '') + num(v.total), v.total < 0 ? 'bad' : 'ok'])))}
+  ${panel('Requests by finish', 'All time.', rows(['copper', 'silver', 'gold', 'topsecret'].map(f => [FN[f], Ec.requests[f]])))}</div>
+  <p class="note">Many players sitting on big balances with few requests would mean there isn’t enough worth spending Intel on.</p>`;
+}
+
+// ---------- Declass: cards and rates ----------
+function cards() {
+  const C = D.collecting, names = {}; D.cards.forEach(c => { names[c.short] = (names[c.short] || 0) + 1; });
+  const cname = c => esc(c.short) + (names[c.short] > 1 ? ` <span class="mut">${c.kind === 'namethis' ? 'Name This' : (c.id || '').slice(0, 4)}</span>` : c.kind === 'namethis' ? ' <span class="mut">Name This</span>' : '') + (c.flash ? ' <span class="mut">Flash</span>' : '');
+  return `<p class="lede">Pull rates against the designed odds. “Watch” and “check” mean further from the design than chance usually goes, and only show once a row has 30 pulls.</p>
+  ${tiles([tile(pct(C.avgCompletion), 'Average dossier'), tile(C.stampsEarned, 'Month stamps earned'), tile(C.pinsEarned, 'Pins earned'), tile(C.goldPlusHolders, 'Players with a Gold or better'), tile(D.totals.pulls, 'Cards pulled')])}
+  <div class="grid2">${panel('Archive draws, regular cards', 'The random cards in envelopes.', rateTable(D.rates.archiveStill, D.expected.still))}
+  ${panel('Archive draws, Living Cards', '', rateTable(D.rates.archiveLiving, D.expected.living))}
+  ${panel('The morning day card', '', rateTable(D.rates.dayCard, D.expected.still))}
+  ${panel('Living and Flash rates', 'Living runs a little under 1 in 6 while few cards have film.', `<div class="tw"><table><tr><th>Draw</th><th>Pulls</th><th>Actual</th><th>Designed</th><th></th></tr>
+  <tr><td>Living Card</td><td>${D.living.living} of ${D.living.draws}</td><td>${D.living.draws ? pct(D.living.living / D.living.draws) : '·'}</td><td>${pct(D.living.expected)}</td><td>${verdict(D.living.living, D.living.draws, D.living.expected)}</td></tr>
+  <tr><td>Flash</td><td>${D.flash.flash} of ${D.flash.draws}</td><td>${D.flash.draws ? pct(D.flash.flash / D.flash.draws) : '·'}</td><td>${pct(D.flash.expected)}</td><td>${verdict(D.flash.flash, D.flash.draws, D.flash.expected)}</td></tr></table></div>`)}
+  ${panel('Finishes players hold', 'Every card pulled so far, by finish.', hbars(['copper', 'silver', 'gold', 'topsecret'].map(f => ({ k: FN[f], v: C.finishesOut[f] })), { share: 1, empty: 'No cards pulled yet.' }))}
+  ${panel('Starter packs, requests, Code Room picks', 'These don’t follow the envelope odds.', `<div class="tw"><table><tr><th>Source</th><th>Copper</th><th>Silver</th><th>Gold</th><th>Top Secret</th></tr>${[['starter', 'Starter'], ['request', 'Request'], ['intercept', 'Code Room']].map(([k, lb]) => `<tr><td>${lb}</td><td>${D.rates[k].copper}</td><td>${D.rates[k].silver}</td><td>${D.rates[k].gold}</td><td>${D.rates[k].topsecret}</td></tr>`).join('')}</table></div>`)}</div>
+  ${panel('Envelopes and ranks', '', rows([['Daily envelopes', num(D.envelopes.daily.envelopes)], ['Daily envelopes with the same card twice', num(D.envelopes.daily.withRepeat)], ['Priority envelopes', num(D.envelopes.priority.envelopes)], ['Commemorative files', num(D.envelopes.commemorative.envelopes)], ['Ranks', Object.entries(C.ranks).map(([k, v]) => esc(k) + ' ' + v).join(' · ') || '·']].concat(C.tsPerCard.map(x => ['Top Secret serials issued: ' + esc(x.card) + (x.living ? ' ▶' : ''), x.issued]))))}
+  ${panel('Every posted card', 'Most pulled first.', `<div class="tw"><table class="wrap"><tr><th>Card</th><th>Posted</th><th>Pulls</th><th>Owners</th></tr>${D.cards.map(c => `<tr><td>${cname(c)}</td><td>${day(c.postAt)}</td><td>${c.pulls}</td><td>${c.owners} of ${D.totals.players}</td></tr>`).join('')}</table></div>`)}`;
+}
+
+// ---------- Declass: catalog ----------
+function catalog() {
+  const K = D.catalog;
+  return `${tiles([tile(K.dispatchPosted, 'Dispatches posted'), tile(K.comingWeek, 'Coming in 7 days'), tile(K.livingPosted, 'With film'), tile(K.flashPosted, 'Flash cards')])}
+  ${panel('Catalog checks', '', rows([['Last card posted', when(K.lastPost)], ['Next card scheduled', K.nextPost ? when(K.nextPost) : 'none!', K.nextPost ? 'ok' : 'bad'], ['Posted cards without a Classified file', K.noFile.length || '✓', K.noFile.length ? 'bad' : 'ok'], ['Classified files without an extra photo', K.fileNoPhoto], ['Name This cards waiting on an answer', K.nameThisWaiting.length ? esc(K.nameThisWaiting.join(', ')) : '✓']]) + (K.noFile.length ? `<p class="note">No file yet: ${K.noFile.map(esc).join(', ')}.</p>` : '') + '<p class="note">“Next card scheduled: none” or a short “coming in 7 days” means the weekly runs have fallen behind. A posted card without a Classified file means research skipped the new block.</p>')}`;
+}
+
+// ---------- Code Room ----------
+function coderoom() {
+  const I = D.intercept, d = span(range), visits = sum(tv('ev', 'intercept', d)), plays = sum(dv('codeRoomPlays', d));
+  return `<p class="lede">The daily puzzle inside Declass. Visits count players opening the Code Room screen. Plays count games started.</p>
+  ${tiles([tile(visits, 'Visits, ' + rangeLabel()), tile(plays, 'Plays, ' + rangeLabel()), tile(I.plays, 'Plays, all time'), tile(I.solved, 'Solved'), tile(I.failed, 'Failed'), tile(I.perfect, 'Perfect'), tile(I.avgScore == null ? '·' : I.avgScore, 'Average score'), tile(I.claimed, 'Cards claimed')])}
+  ${panel('Visits and plays, by day', 'A wide gap between the two means players look but don’t start a game.', chart({ days: d, series: [{ name: 'Code Room visits', values: tv('ev', 'intercept', d) }, { name: 'Games played', values: dv('codeRoomPlays', d) }] }))}
+  ${panel('Every day played', '', I.days.length ? `<div class="tw"><table><tr><th>Day</th><th>Plays</th><th>Solved</th><th>Failed</th><th>Perfect</th><th>Average score</th><th>Average mistakes</th></tr>${I.days.map(r => `<tr><td>${esc(r.day)}</td><td>${r.plays}</td><td>${r.solved}</td><td>${r.failed}</td><td>${r.perfect}</td><td>${r.avgScore == null ? '·' : r.avgScore}</td><td>${r.avgMistakes == null ? '·' : r.avgMistakes}</td></tr>`).join('')}</table></div>` : '<p class="empty">No Code Room games yet.</p>')}`;
+}
+
+// ---------- Campaign Series, Name This, Campaigns ----------
+function pageSection(k, lede, extra) {
+  const d = span(range), p = prior(), word = 'vs prior ' + range + ' days';
+  const v = sum(tv('view', k, d)), vP = psum(p, q => sum(tv('view', k, q))), u = sum(tv('visitor', k, d)), uP = psum(p, q => sum(tv('visitor', k, q))), all = sum(tall('view', d));
+  return `<p class="lede">${lede}</p>
+  ${tiles([tile(v, 'Page views', v, vP, word), tile(u, 'Visitors', u, uP, word), tile(all ? pct(v / all) : '·', 'Share of all page views')])}
+  ${panel('Views and visitors, by day', '', chart({ days: d, series: [{ name: 'Page views', values: tv('view', k, d) }, { name: 'Visitors', values: tv('visitor', k, d) }] }))}${extra || ''}`;
+}
+function series() {
+  return pageSection('campaign', 'The Campaign Series pages: the bookshelf and every series on it, in the ' + rangeLabel() + '.', panel('Coming next', '', '<p class="note" style="margin:0">Readers by series and by part are not counted yet, so this section shows the pages as one group. That count is the next step of the console build, and it will show where readers stop.</p>'));
+}
+function namethis() {
+  const K = D.catalog, nt = D.cards.filter(c => c.kind === 'namethis');
+  return pageSection('namethis', 'The Name This page in the ' + rangeLabel() + ', and the Name This cards inside Declass.',
+    panel('Waiting on an answer', '', `<p class="note" style="margin:0">${K.nameThisWaiting.length ? esc(K.nameThisWaiting.join(', ')) : 'Nothing is waiting.'}</p>`) +
+    panel('Name This cards in Declass', 'Answered cards players can pull.', nt.length ? `<div class="tw"><table class="wrap"><tr><th>Card</th><th>Answered</th><th>Pulls</th><th>Owners</th></tr>${nt.map(c => `<tr><td>${esc(c.short)}</td><td>${day(c.postAt)}</td><td>${c.pulls}</td><td>${c.owners} of ${D.totals.players}</td></tr>`).join('')}</table></div>` : '<p class="empty">None posted yet.</p>') +
+    panel('Coming next', '', '<p class="note" style="margin:0">Guesses and answer reveals on the page are not counted yet. That count is the next step of the console build.</p>'));
+}
+function campaigns() {
+  return `<p class="lede">The Campaigns game mode.</p>${panel('Not launched yet', '', '<p class="note" style="margin:0">Campaigns has not shipped, so there is nothing to count. When it does, this section will show games started and finished, wins and losses by battle, and the turn where players stop.</p>')}`;
+}
+
+// ---------- the weekly report (plain text) ----------
+function saveLine() {
+  const a = D.growth.actionsWeek, n = k => a[k] || 0;
+  const seen = n('save_screen'), left = Math.max(0, seen - n('save_skip') - n('save_google'));
+  return `Save screen this week: seen ${seen}, not now ${n('save_skip')}, Google said yes ${n('save_google')}, saved ${n('save_done')}, failed ${n('save_fail')}, left without either ${left}. Of those seen, inside a social app's browser (Google can't sign in there): ${n('save_inapp')}; tapped Open in browser ${n('inapp_open')}, copied the link ${n('inapp_copy')}, arrived in a real browser with their pack ${n('pack_carried')}. Sign in failures elsewhere: ${n('signin_fail')}.\nSocial app browsers this week: arrived inside one ${n('inapp_arrive')}, automatic jump to the real browser tried ${n('inapp_auto')}, landed in the real browser ${n('out_landed')}, tapped Open in browser and nothing happened ${n('inapp_stuck')}.\nEmail sign in this week: asked for a code ${n('email_ask')}, code sent ${n('email_sent')}, wrong or expired code ${n('email_wrong')}, signed in ${n('email_done')}.`;
+}
+function report() {
+  const E = D.engagement, Ec = D.economy, C = D.collecting, F = D.funnel, I = D.intercept, K = D.catalog, G = D.growth;
+  const wk = E.days14.slice(-7), w7 = span(7), pv = tby('view', w7), pu = tby('visitor', w7);
+  const flags = [];
+  [['archive regular', D.rates.archiveStill, D.expected.still], ['archive Living', D.rates.archiveLiving, D.expected.living], ['morning day card', D.rates.dayCard, D.expected.still]].forEach(([n, t, ex]) => ['copper', 'silver', 'gold', 'topsecret'].forEach(f => { const v = flagOf(t[f], t.n, ex[f]); if (v) flags.push(`${n} ${FN[f]}: ${pct(t[f] / t.n)} vs ${pct(ex[f])} designed (${v}, ${t.n} pulls)`); }));
+  const lv = flagOf(D.living.living, D.living.draws, D.living.expected); if (lv) flags.push(`Living rate ${pct(D.living.living / D.living.draws)} vs ${pct(D.living.expected)} (${lv})`);
+  const bad = healthList().filter(r => r[1]).map(r => `${r[0]}: ${r[1]}${r[2] ? ' (' + r[2] + ')' : ''}`);
+  return [
+    `PLATFORM WEEKLY REPORT, ${D.today}`,
+    `Excluded as admin: ${D.excluded.adminViewsWeek} page views from admin browsers this week (${D.excluded.adminViewsAll} since tracking began), and ${D.excluded.adminAccounts} admin account${D.excluded.adminAccounts === 1 ? '' : 's'} (${D.excluded.adminFiles.join(', ') || 'none signed in yet'}) left out of player, envelope, economy and collecting numbers.`,
+    ``,
+    `SITE (7 days vs the 7 before): visitors ${G.week.visitors} (was ${G.lastWeek.visitors}), page views ${G.week.views} (${G.lastWeek.views}), first time visitors ${G.week.newVisitors} (${G.lastWeek.newVisitors}). Visit counts since ${G.since || 'n/a'}.`,
+    `Pages this week, views (visitors): ${ranked(pv, PG).map(r => `${r.k} ${r.v} (${pu[r.id] || 0})`).join(', ') || 'none yet'}.`,
+    `Sources this week: ${ranked(G.sourcesWeek, SRC).map(r => r.k + ' ' + r.v).join(', ') || 'none yet'}. New players by source (all time): ${ranked(G.signupSources, SRC).map(r => r.k + ' ' + r.v).join(', ') || 'none yet'}. Devices (30 days): ${ranked(G.devices, {}).map(r => r.k + ' ' + r.v).join(', ') || 'none yet'}.`,
+    ``,
+    `DECLASS GROWTH (7 days vs the 7 before): Declass visitors ${G.week.declassVisitors} (${G.lastWeek.declassVisitors}), new players ${G.week.signups} (${G.lastWeek.signups}), guest starter packs ${G.week.guestStarters}, engagements ${G.week.engagements} (${G.lastWeek.engagements}).`,
+    `Game actions this week: ${Object.keys(ACT).filter(k => G.actionsWeek[k] && !/^save_|^signin_/.test(k)).map(k => ACT[k].toLowerCase() + ' ' + G.actionsWeek[k]).join(', ') || 'none yet'}.`,
+    saveLine(),
+    ``,
+    `PLAYERS: ${D.totals.players} accounts. Played today ${E.active1}, this week ${E.active7}, this month ${E.active30}.`,
+    `Daily players, last 7 days: ${wk.map(x => x.day.slice(5) + ' ' + x.players).join(', ')}.`,
+    `Envelopes opened, last 7 days: ${wk.reduce((s, x) => s + x.opens, 0)}. Missed rate (all time): ${pct(E.missedRate)}. Last Call rescues: ${E.lastCall} of ${E.dailyOpens} daily opens. Median time to open: ${E.medianOpenMinutes} min.`,
+    `Came back next day: ${E.retentionDay1[0]} of ${E.retentionDay1[1]}. Came back around day 7: ${E.retentionDay7[0]} of ${E.retentionDay7[1]}.`,
+    `Streaks: ${Object.entries(E.streaks).map(([k, v]) => k + ': ' + v).join(', ')}.`,
+    `New player path: ${F.accounts} accounts, ${F.starterDone} starter packs, ${F.firstDaily} opened a daily envelope, ${F.played3Days} played 3+ days, ${F.played7Days} played 7+ days.`,
+    ``,
+    `ECONOMY: ${Ec.earned7} Intel earned in 7 days by ${Ec.active7} active players, ${Ec.perActiveWeek} each (design about ${Ec.design}). Balances: median ${Ec.balances.median}, max ${Ec.balances.max}, ${Ec.balances.over500} over 500. Requests all time: ${Ec.requests.n} (${['copper', 'silver', 'gold', 'topsecret'].map(f => FN[f] + ' ' + Ec.requests[f]).join(', ')}).`,
+    `By reason: ${Object.entries(Ec.byReason).map(([k, v]) => `${k} ${v.total} (${v.n})`).join(', ')}.`,
+    ``,
+    `COLLECTING: average dossier ${pct(C.avgCompletion)} of posted cards. Month stamps earned ${C.stampsEarned}, pins ${C.pinsEarned}, players holding a Gold or better ${C.goldPlusHolders}. Ranks: ${Object.entries(C.ranks).map(([k, v]) => k + ' ' + v).join(', ')}.`,
+    `Finishes out there: ${['copper', 'silver', 'gold', 'topsecret'].map(f => FN[f] + ' ' + C.finishesOut[f]).join(', ')}.`,
+    ``,
+    `RATES: ${D.rates.archiveStill.n} archive regular, ${D.rates.archiveLiving.n} archive Living, ${D.rates.dayCard.n} morning day cards. Living ${D.living.living} of ${D.living.draws} draws, Flash ${D.flash.flash}.`,
+    flags.length ? `Flagged: ${flags.join('; ')}.` : `No rate is far enough from the design to flag.`,
+    `Daily envelopes with the same card twice: ${D.envelopes.daily.withRepeat} of ${D.envelopes.daily.envelopes}.`,
+    `Most pulled: ${D.cards.slice(0, 5).map(c => c.short + ' ' + c.pulls).join(', ')}. Never pulled: ${D.cards.filter(c => !c.pulls).length} of ${D.cards.length} cards.`,
+    ``,
+    `CODE ROOM: ${I.plays} plays, ${I.solved} solved, ${I.failed} failed, ${I.perfect} perfect, average score ${I.avgScore == null ? 'n/a' : I.avgScore}, ${I.claimed} cards claimed.`,
+    ``,
+    `CATALOG: ${K.dispatchPosted} dispatches posted, ${K.comingWeek} coming in the next 7 days, next at ${K.nextPost || 'none scheduled'}. ${K.livingPosted} with film. Without a Classified file: ${K.noFile.join(', ') || 'none'}. Name This waiting on an answer: ${K.nameThisWaiting.join(', ') || 'none'}.`,
+    ``,
+    `HEALTH: ${bad.length ? bad.join('; ') : 'all clear'}.`,
+  ].join('\n');
+}
+
+// ---------- start ----------
+get().then(d => { D = d; index(); render(); }).catch(e => {
+  $('app').innerHTML = `<div class="top"><div class="titlebar"><h1>Platform Console</h1></div></div><p class="err">${e === 404 ? 'This page is for the admin only. Sign in to Declass on this device with the admin account first, then come back.' : e === 403 ? 'Open the game once with the tester link on this device, then come back.' : 'The console did not load (' + esc(e) + ').'}</p>`;
+});
+</script>
+</body>
+</html>

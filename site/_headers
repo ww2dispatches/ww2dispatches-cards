@@ -12,3 +12,8 @@
 /declass/cards/*
   ! Cache-Control
   Cache-Control: public, max-age=31536000, immutable
+# The admin console (18 Nov 2026): always check for the newest copy.
+/console/*
+  Cache-Control: no-cache
+/console
+  Cache-Control: no-cache

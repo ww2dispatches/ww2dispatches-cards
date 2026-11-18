@@ -228,7 +228,7 @@ export async function onRequestGet({ request, env }) {
 
   // ---------- growth: new players, site visits, sources, game actions (tallies start 2 Nov 2026) ----------
   let T = [];
-  try { await ensureTally(db); T = (await db.prepare('SELECT day, metric, k, n FROM tally WHERE day >= ?').bind(exportMode ? '0000' : addDays(today, -60)).all()).results; } catch (e) {}
+  try { await ensureTally(db); T = (await db.prepare('SELECT day, metric, k, n FROM tally WHERE day >= ?').bind('0000').all()).results; } catch (e) {}
   const sumT = (m, from, to, k) => T.filter(r => r.metric === m && r.day >= from && r.day <= to && (k === undefined || r.k === k)).reduce((s, r) => s + r.n, 0);
   const byK = (m, from, to) => { const o = {}; T.filter(r => r.metric === m && r.day >= from && r.day <= to).forEach(r => { o[r.k] = (o[r.k] || 0) + r.n; }); return o; };
   const joinDay = new Map(players.map(p => [p.id, gameDay(new Date(p.created_at))]));
@@ -273,21 +273,22 @@ export async function onRequestGet({ request, env }) {
     flashPosted: posted.filter(c => c.flash).length,
   };
 
-  if (exportMode) {
     // Every count by day, since the first visit count or the first player, whichever came first.
-    const dayOf = iso => gameDay(new Date(iso)), tick = (m, d, n = 1) => m.set(d, (m.get(d) || 0) + n);
-    const dSign = new Map(), dOpen = new Map(), dPull = new Map(), dIntel = new Map(), dSpent = new Map(), dIc = new Map(), dActive = new Map();
-    joinDay.forEach(d => tick(dSign, d));
-    opened.filter(o => ENV_KINDS.has(kindOf(o.slot_key))).forEach(o => tick(dOpen, dayOf(o.opened_at)));
-    pulls.forEach(p => tick(dPull, dayOf(p.pulled_at)));
-    ilog.forEach(r => tick(r.delta > 0 ? dIntel : dSpent, dayOf(r.at), Math.abs(r.delta)));
-    IC.forEach(r => tick(dIc, r.day));
-    playDaysF.forEach(s => s.forEach(d => tick(dActive, d)));
-    const first = [firstTally, [...joinDay.values()].sort()[0]].filter(Boolean).sort()[0] || today, daily = [];
-    for (let d = first, total = 0; d <= today; d = addDays(d, 1)) {
-      total += dSign.get(d) || 0;
-      daily.push({ day: d, signups: dSign.get(d) || 0, accounts: total, activePlayers: dActive.get(d) || 0, envelopes: dOpen.get(d) || 0, pulls: dPull.get(d) || 0, intelEarned: dIntel.get(d) || 0, intelSpent: dSpent.get(d) || 0, codeRoomPlays: dIc.get(d) || 0 });
-    }
+  const dayOf = iso => gameDay(new Date(iso)), tick = (m, d, n = 1) => m.set(d, (m.get(d) || 0) + n);
+  const dSign = new Map(), dOpen = new Map(), dPull = new Map(), dIntel = new Map(), dSpent = new Map(), dIc = new Map(), dActive = new Map();
+  joinDay.forEach(d => tick(dSign, d));
+  opened.filter(o => ENV_KINDS.has(kindOf(o.slot_key))).forEach(o => tick(dOpen, dayOf(o.opened_at)));
+  pulls.forEach(p => tick(dPull, dayOf(p.pulled_at)));
+  ilog.forEach(r => tick(r.delta > 0 ? dIntel : dSpent, dayOf(r.at), Math.abs(r.delta)));
+  IC.forEach(r => tick(dIc, r.day));
+  playDaysF.forEach(s => s.forEach(d => tick(dActive, d)));
+  const first = [firstTally, [...joinDay.values()].sort()[0]].filter(Boolean).sort()[0] || today, daily = [];
+  for (let d = first, total = 0; d <= today; d = addDays(d, 1)) {
+    total += dSign.get(d) || 0;
+    daily.push({ day: d, signups: dSign.get(d) || 0, accounts: total, activePlayers: dActive.get(d) || 0, envelopes: dOpen.get(d) || 0, pulls: dPull.get(d) || 0, intelEarned: dIntel.get(d) || 0, intelSpent: dSpent.get(d) || 0, codeRoomPlays: dIc.get(d) || 0 });
+  }
+  const tallyRows = T.slice().sort((a, b) => a.day.localeCompare(b.day) || a.metric.localeCompare(b.metric) || a.k.localeCompare(b.k)).map(r => [r.day, r.metric, r.k, r.n]);
+  if (exportMode) {
     const { newest, ...growthOut } = growth;
     return json({
       format: 'ww2dispatches-console-export', version: 1, at: t.toISOString(), today,
@@ -298,7 +299,7 @@ export async function onRequestGet({ request, env }) {
       living: { draws: archiveDraws, living: archiveLiving, expected: 1 / LIVING_ONE_IN },
       flash: { draws: archiveDraws, flash: archiveFlash, expected: 1 / FLASH_ONE_IN },
       envelopes: envShape, cards: cardTable, intercept, catalog, growth: growthOut, daily,
-      tally: T.slice().sort((a, b) => a.day.localeCompare(b.day) || a.metric.localeCompare(b.metric) || a.k.localeCompare(b.k)).map(r => [r.day, r.metric, r.k, r.n]),
+      tally: tallyRows,
       players: summaries.map(s => ({ joined: dayOf(s.joined), lastActive: s.lastActive ? dayOf(s.lastActive) : null, daysPlayed: s.daysPlayed, envelopes: s.envelopes, pulls: s.pulls, streak: s.streak, intel: s.intel, rank: s.rank, held: s.held, completion: Math.round(s.completion * 1000) / 1000, goldPlus: s.goldPlus, stamps: s.stamps, pins: s.pins, starter: s.starter, requests: s.requests, codeRoomPlays: s.intercepts }))
         .sort((a, b) => a.joined.localeCompare(b.joined) || b.daysPlayed - a.daysPlayed),
     });
@@ -315,7 +316,7 @@ export async function onRequestGet({ request, env }) {
     rates, expected: { still: expected('still'), living: expected('living') },
     living: { draws: archiveDraws, living: archiveLiving, expected: 1 / LIVING_ONE_IN },
     flash: { draws: archiveDraws, flash: archiveFlash, expected: 1 / FLASH_ONE_IN },
-    envelopes: envShape, cards: cardTable, intercept, catalog, growth,
+    envelopes: envShape, cards: cardTable, intercept, catalog, growth, daily, tally: tallyRows,
     players: summaries.sort((a, b) => (b.lastActive || '').localeCompare(a.lastActive || '')),
   });
 }
