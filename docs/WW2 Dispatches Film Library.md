@@ -105,6 +105,15 @@ Caption German film inside these as above, naming the film. Japanese and Italian
 | **Pearl Harbor salvage reels** (Navy) | The Oglala righted with Nimitz watching (spring 1942); Oklahoma salvage (Jul 1942); the "Carry on" message on Nevada's turret (8 Dec 1941); California raised (Apr 1942); the Arizona wreck in Aug 1945. 16439 and 16128 cleared by Brian as exceptions to the Movietone rule; 1730 and 418 stay out | NARA 428-NPC-34490, 16195, 14347, 16439, 16128 | NARA file | `claude/film-index/pearl-harbor-deep-dive-2026-11-15.md` (with `pearl-harbor-navy-reels-2026-11-15.md`) |
 | **Bulge reels** (Signal Corps and Universal) | Engineers slated 18 Dec 1944 near Wirtzfeld; Universal's "German Drive Rolled Back" (evacuees, MP checks, the Bastogne airdrop); the 101st near Bastogne and at Noville; white tanks; Montgomery with U.S. commanders; and the German film of the attack inside The Enemy Strikes, now usable with caption | NARA 111-ADC-3001, 3114, 3136, 3097, 3087, 3124, 2972, 3042; UN-UN-18-363 | NARA file | `claude/film-index/bulge-flash-film-2026-11-15.md` |
 
+**Film Search of 19 Nov 2026 (Pacific and Air Forces finished films, Philippines 1945 reels)**
+| Film | Covers | Copies | Times use | Index |
+|---|---|---|---|---|
+| **To the Shores of Iwo Jima** (1945, color, Navy, Marine and Coast Guard cameramen, released through OWI) | Iwo Jima 16 Feb to 26 Mar 1945 in Technicolor: bombardment, the run in under Suribachi, Marines on the terraces, the second flag, flamethrowers, a B-29 landing, P-51s | NARA 80-MN-5124 (naId 13089, 2 files over 2 GB each) | per file, R1 and R2 | `claude/film-index/to-the-shores-of-iwo-jima.md` |
+| **Appointment in Tokyo** (1945, Signal Corps) | Leyte, Lingayen, Cabanatuan, the battle of Manila (Pasig crossing, Intramuros), the Corregidor drop, Atsugi, **the Missouri surrender with MacArthur's own voice**. SD copy, soft | NARA 111-CR-4 (naId 24351, one WMV) | file time | `claude/film-index/appointment-in-tokyo.md` |
+| **Fury in the Pacific** (1945, Army, Navy and Marines for OWI) | Peleliu 15 Sep 1944 and Angaur 17 Sep 1944: broadsides, amtracs, the airfield, caves, surrenders (graphic stretches flagged) | NARA 111-ADC-9735, 9736 | per file | `claude/film-index/fury-in-the-pacific.md` |
+| **Philippines 1945 reels** (Signal Corps and Navy, raw) | The paratroop drop on Corregidor 16 Feb 1945; Manila Feb 1945 (freed civilians, streets); Lingayen convoy (slated S+1) and LSTs on the beach; ships off Bataan | NARA 111-ADC-3362, 3328; 428-NPC-15817, 15818, 7246 | NARA file | `claude/film-index/philippines-1945-reels.md` |
+| **Combat America reel 2** (1943, AAF, color), **Kwajalein task force** (Feb 1944, color), **The War Speeds Up** (1944) | 8th Air Force B-17s in color; the Kwajalein bombardment in color; the 1944 production push | NARA 18-CS-9031 R2; 428-NPC-1567; 111-M-1077 | NARA file | `claude/film-index/combat-america-kwajalein-war-speeds-up.md` |
+
 **Soviet films (Eastern Front; all Commons PD-Russia-1996)**
 | Film | Covers | Copies | Times use | Index |
 |---|---|---|---|---|
@@ -121,6 +130,9 @@ Caption German film inside these as above, naming the film. Japanese and Italian
 Usable shots by calendar day across every film on hand. "Verify" means the film doesn't state the day and it comes from the general record. Ranges marked "any date" can serve any day in that span. Full times and cautions are in each index. Short names: CB (Combat Bulletin, number follows), WCA (War Comes to America), WaW (The World at War, 1942), NS (The Nazis Strike), Prelude to War (all 5 reels), PG (Polygoon clips), BoR (Battle of Russia), BoC (Battle of China), KYEJ (Know Your Enemy: Japan), LF (Leningrad Fights), MOS (Defeat near Moscow), STG (Stalingrad), RBU (Victory in Right Bank Ukraine), GS (German side pack).
 
 **January**
+* **9 to 10 Jan 1945, Lingayen Gulf:** the convoy and landing craft heading in (slated S+1), 428-NPC-15817 04:30 to 07:42; LST 168 unloading on the beach and a wrecked Japanese plane, 428-NPC-15818 01:12 to 03:00; Filipinos cheering the landing with a U.S. flag, Appointment in Tokyo 30:48 to 31:24.
+* 30 to 31 Jan 1945, the Cabanatuan raid: freed prisoners walk out with Rangers and guerrillas, Appointment in Tokyo 35:48 to 36:18.
+* 31 Jan to 4 Feb 1944, Kwajalein in color: battleship firing at the atoll, 428-NPC-1567 04:24; smoke over the island 05:24 to 05:42; hospital ship in the lagoon 06:42 to 06:48.
 * 4 Jan 1945, British carriers strike Pangkalan Brandan, Sumatra: Combat Bulletin 40 15:50 to end.
 * 9 Jan 1945, Lingayen Gulf: CB 40 02:10 to 06:05. 16 Jan 1945, the Bulge closed at Houffalize: CB 40 08:25 to 10:25. Nordwind in Alsace, 1 to 25 Jan: CB 40 10:25 to 13:03.
 * 30 Jan 1933, Hitler made chancellor: SA torchlight, Prelude to War R2 05:15 to 05:30; the cabinet, R1 09:15 to 09:20 (verify).
@@ -145,6 +157,10 @@ Usable shots by calendar day across every film on hand. "Verify" means the film 
 * 12 Jan, 28 Jan, 4 Feb 1945, Ledo Road opens through to China: Brought to Action R3 01:58 to 02:17; BoC R7 04:06 to 04:22.
 
 **February**
+* 3 to 4 Feb 1945, Santo Tomas freed (verify the camp): freed civilians before a U.S. flag, 111-ADC-3328 00:12 to 00:42. 3 Feb to 3 Mar 1945, the battle of Manila: streets and ruins, 111-ADC-3328 03:42 to 04:42; Manila burning, Appointment in Tokyo 40:30 to 40:42; refugees on a pontoon bridge 45:18 to 45:54.
+* 7 Feb 1945, GIs cross the Pasig in assault boats: Appointment in Tokyo 42:06 to 42:12. 23 Feb 1945, the Intramuros assault: 42:42 to 44:06 (flamethrower 43:30 to 43:36; bodies at 41:06 and 44:12, never).
+* **16 Feb 1945, the paratroop drop on Corregidor:** 111-ADC-3362 01:36 to 02:00, 06:06 to 06:30, C-47s dropping sticks 09:00 to 10:00; Appointment in Tokyo 47:18 to 47:54. 13 to 16 Feb, ships off Bataan: 428-NPC-7246 00:48 to 02:00.
+* **19 Feb 1945 (Iwo Jima Flash day), in color:** To the Shores of Iwo Jima R1 04:06 to 06:48 (the run in 04:54 to 05:00, faces 05:12 to 05:18, the terraces 06:36 to 06:42); bombardment 16 to 18 Feb, R1 01:24 to 02:42. 23 Feb: R2 00:06 to 00:12.
 * 29 Feb 1944, Los Negros and MacArthur ashore: Westward Is Bataan R1 06:37 to R2 05:12.
 * 16 to 17 Feb 1945, first carrier strikes on Tokyo: CB 48 27:50 to end. 21 Feb 1945, USS Saratoga hit: CB 62 17:22 to end.
 * 20 Feb 1939, the German American Bund rally at Madison Square Garden: NS R1 09:50 to 10:15 (American newsreel, check the source first).
@@ -166,6 +182,7 @@ Usable shots by calendar day across every film on hand. "Verify" means the film 
 * 26 Feb 1943, Wilhelmshaven (composite; verify): Memphis Belle 00:18:30 to 00:23:40.
 
 **March**
+* 4 Mar 1945, first B-29 emergency landing on Iwo (not necessarily this plane): To the Shores of Iwo Jima R2 08:18 to 08:36. 26 Mar 1945, Iwo secured: R2 08:12 (cemetery, somber).
 * 6 Mar 1945, first P-51s land on Iwo Jima: CB 48 25:13 to 27:50. 7 Mar 1945, Lashio: CB 48 20:36. 14 Mar 1945, the first Grand Slam: CB 60 00:41 to 02:29. 17 Mar 1945, engineers rescued as the Ludendorff bridge falls: CB 48 15:42. 20 Mar 1945, Mandalay: CB 48 23:10. 23 to 24 Mar 1945, Rhine crossings: CB 48 07:49 to 11:46.
 * 21 to 23 Mar 1933, the Day of Potsdam and the Enabling Act: Here Is Germany R5 01:48 to 02:12, 03:24 to 03:54 (verify).
 * 13 Mar 1933, Goebbels' Propaganda Ministry founded: Prelude to War R2 03:40 to 04:05.
@@ -190,6 +207,7 @@ Usable shots by calendar day across every film on hand. "Verify" means the film 
 * 26 Mar 1945, Iwo Jima secured: Iwo Jima reel 00:01:47 to 00:02:02.
 
 **April**
+* 7 Apr 1945, first P-51 escort mission to Tokyo from Iwo: To the Shores of Iwo Jima R2 08:42 to 09:00.
 * 1 Apr 1933, the boycott of Jewish businesses: Here Is Germany R5 04:00 to 04:30 (verify).
 * 12 Apr 1945, Eisenhower at Ohrdruf (somber): Death Mills 04:17 (war-department-postwar-films.md).
 * 22 Apr 1944, Hollandia: Westward Is Bataan R3 06:09 to R4 04:00.
@@ -294,6 +312,7 @@ Usable shots by calendar day across every film on hand. "Verify" means the film 
 * Late Jun 1944, Allied advance in southern Tuscany; two knocked out Tiger I tanks (turret 33): Massa Marittima reel 111-ADC-1326 00:00:30 to 00:01:00, 00:01:42 to 00:02:18 (NARA's 1 Jun date is a catalog date; say late June).
 
 **July**
+* 20 Jul 1944, the plot against Hitler: the Chicago Daily News "TRY TO KILL HITLER!", The War Speeds Up R1 02:18.
 * 1 Jul 1945, Balikpapan: CB 64 14:18. 15 to 17 Jul 1945, Potsdam arrivals (Truman, Eden): CB 64 00:55 to 02:59.
 * 19 Jul 1944, the Nisei 442nd enter Livorno: Screen Magazine No. 45 R1.
 * Jul 1944, Saint Lô from the German side (captured German film, caption it): CB 18 11:31 to 14:18. 30 Jul 1944, Sansapor: CB 18 15:25.
@@ -318,6 +337,7 @@ Usable shots by calendar day across every film on hand. "Verify" means the film 
 * Partisans, any date from Jul 1941 (likely posed): BoR Part 1 00:32:56 to 00:34:05.
 
 **August**
+* 30 Aug 1945, MacArthur lands at Atsugi: Appointment in Tokyo 50:50 to 51:30.
 * 3 Aug 1936, Jesse Owens wins the 100 m in Berlin: The Negro Soldier 15:45 to 17:11.
 * 4 Aug 1944, Rennes liberated: CB 17 13:34 to 15:15. **15 Aug 1944, Operation Dragoon:** CB 17 00:42 to 12:39; CB 18 00:41 to 04:42. 19 to 21 Aug 1944, the Falaise pocket: CB 18 23:26 to 29:24. **19 to 25 Aug 1944, the liberation of Paris:** CB 18 29:24 to 37:07. 28 Aug 1944, Marseille: CB 20 05:14.
 * 25 Aug to 16 Nov 1944, the Red Ball Express: Teamwork R1 09:06 to end.
@@ -345,6 +365,8 @@ Usable shots by calendar day across every film on hand. "Verify" means the film 
 * Aug to Nov 1937, Shanghai refugees: BoC R3 04:10 to 05:16.
 
 **September**
+* **2 Sep 1945, the Missouri surrender with MacArthur's own voice:** Appointment in Tokyo 51:38 to 55:20 (keep the sound).
+* 15 Sep 1944, Peleliu: battleship broadside, Fury in the Pacific R1 04:36 to 04:42; amtracs racing in R1 06:24 to 06:30; 16 Sep, the airfield R1 09:48 to 10:00. 17 Sep 1944, Angaur: R2 01:54 to 02:12.
 * 1 Sep 1944, Canadians retake Dieppe: CB 20 08:55. 4 Sep 1944, Antwerp: CB 20 16:05 to 17:44. 12 Sep 1944, Roetgen, the first German town taken: CB 22 16:20 to 17:20. 15 Sep 1944, Nancy: CB 23 18:21. 16 Sep 1944, the Westwall first breached: CB 23 22:11. **16 to 17 Sep 1944, General Elster's 20,000 surrender at the Loire:** CB 22 03:23 to 08:32. **17 Sep 1944, Market Garden takes off:** CB 22 20:39 to end; Eindhoven and Nijmegen, CB 23 23:09. 22 Sep 1944, Boulogne falls: CB 23 13:55 to 17:21.
 * 16 Sep 1940, the draft becomes law: War Comes to America R5 07:10 to 10:23. 2 Sep 1940, destroyers for bases: WCA R6 00:06 to 01:04. 27 Sep 1940, the Tripartite Pact: WCA R6 01:04 to 01:53.
 * Sep 1934, the Nuremberg rally (from Triumph of the Will): NS R1 02:05 to 02:35, 03:05 to 03:30; any rally, Prelude to War R3 02:30 to 03:40.
@@ -482,6 +504,7 @@ Usable shots by calendar day across every film on hand. "Verify" means the film 
 
 **Any date**
 * 8th Air Force bombers, 1943 to 1945: Memphis Belle (generic).
+* 8th Air Force in color, 1943: Combat America R2 (formations 13:06 to 13:18 and 14:36 to 14:48, bomb strikes 06:18 to 06:30).
 * Pacific carrier and fleet operations, 1942 (label it so): Doolittle reel 00:04:42 to 00:07:05.
 * Southwest Pacific jungle fighting and supply: New Britain (index).
 * Midway island life: Battle of Midway 00:02:20 to 00:03:40.
@@ -538,19 +561,20 @@ The 13 Nov 2026 search found 14 finished films in one night by working through w
 **Next for this method:** the unindexed War Department items listed below, then 111-M (finished Army films: Fury in the Pacific, To the Shores of Iwo Jima, The Fleet That Came to Stay and others), 111-SFR, and the remaining 208 OWI shorts (the United News reels stay second choice).
 
 **Leads not yet indexed**
+* **From the 19 Nov 2026 search:** only 2 minute excerpts are digitized at NARA for The Fleet That Came to Stay (80-MN-5802), The Liberation of Rome (111-CR-1), Action at Angaur (111-M-1128) and Thunderbolt (342-SFP-182); look for full copies elsewhere. Still to sheet: The Last Bomb pieces (342-USAF-11511, 11516, 11530, stock footage of B-29s over Japan), Kiska (428-NPC-10294 and others, Aug 1943), Saipan (127-R-2227, 2228, 2527, 2499), Salerno Navy reels (428-NPC-1256, 1257, 1273, 43208), Normandy Navy reels (428-NPC-10742 and others), the airborne Rhine crossing (111-ADC-10500), Guadalcanal (330-DIMOC-DNDEE160019), and the home front films The Army Nurse (111-M-1173), Diary of a Sergeant (111-M-1129), Welcome Home (111-M-1226), It's Your War Too (111-M-958).
 * **German combat footage inside Allied films** (opened 13 Nov 2026): `claude/film-index/allied-films-german-footage.md`. Divide and Conquer, The Nazis Strike (all 5 reels), The World at War, Your Job in Germany and Prelude to War (all 5 reels) are indexed (see On hand). Next candidates in that doc: The Nazi Plan and Universal Newsreel 1939 to 1941.
 * **The 13 Nov 2026 batch is fully indexed**, including Prelude to War R2 to R5 and The Nazis Strike R1 (added that afternoon). Every Why We Fight reel with German film is now indexed except War Comes to America (below).
 * **More from the 13 Nov sweep** (same doc): Allied camera reels to view (Namsos 1940, 428-NPC-16337; Aircraft Recognition training films, 111-TF-1-3684 on the Ju 88; three Universal outtakes; War Pictorial News 210; A Defeated People, 111-OF-28). The doc also lists Allied made films that reuse German footage (Universal Newsreel 1939 to 1941, Why We Fight 2 and 3, Your Job in Germany, The Nazi Plan) and raw captured German reels at NARA. Those stay out under the 1 Nov decision unless Brian changes it.
 * **German military round two:** `claude/film-index/german-military-allied-film-leads.md` lists 20 more Signal Corps and Navy reels found on 6 Nov 2026 (a knocked out Tiger at Marticina, Kurtscheid prisoners, Varsity, the Caserta surrender, the Elbe meeting, Eschweiler, the V-1 battery, the Ludendorff collapse, Ramcke's surrender, Prinz Eugen at Bikini, Nuremberg rushes).
 * **The Cologne cathedral tank duel** (Jim Bates, 6 Mar 1945): checked and not in 111-ADC-1955, 3508, 9703, 9704 or 3535. Try 111-ADC-3530 (naId 17333) next.
 * **Waiting in Source Film:** nine films Brian saved on 5 Nov 2026 (Orel 1943, the Moscow prisoner march, Nikolaev, Christmas Under Fire, and four AWM films: Tobruk 1941, Balikpapan, the Tokyo surrender, Yamashita's surrender). See `claude/film-index/pending-source-film.md`.
-* **To the Shores of Iwo Jima** (80-MN-5124, naId 13089, 4.3 GB): indexing was started on 5 Nov 2026 and stopped before it finished. Run again before 19 Feb.
+* **To the Shores of Iwo Jima**: indexed 19 Nov 2026 (see On hand).
 * **More found 5 Nov 2026:** `claude/film-index/leads-2026-11-05.md` (NARA, unindexed: Hiroshima and Nagasaki surveys, Saipan, Peleliu, Sicily, Salerno, Guadalcanal, the bombing of London, Fighting Lady reels, Japanese Relocation, Normandy Navy reels) and `claude/film-index/commonwealth-sources.md` (Australian War Memorial public domain actuality and British Crown films).
 * **Göring at Nuremberg, Signal Corps rushes:** 111-ADC-5808 (naId 19606, 13 Mar 1946, first day of his testimony), 111-ADC-5806 and 111-ADC-5799. These would replace the United News reel for 13 to 22 Mar.
 * **Victory Parade in color:** the 1945 release was shot in color; look for a PD-Russia-1996 color copy on Commons to replace the poor one.
 * **A clean Sevastopol copy** (without the IHF additions).
 * **Japanese, digitized at NARA:** 78848 (the "Nine War Gods", midget submarine crews of 7 Dec; index before 7 Dec), 75463 (Corregidor, Wainwright with his captors), 78849 (Celebes paratroop drop, 11 Jan 1942), 78842 (a kamikaze unit sortie), 78719 (captured U.S. airmen).
-* **Why We Fight, the rest:** all seven are now indexed. Still unindexed: Fury in the Pacific (111-ADC-9735 and 9736, naIds 23500 and 23501). 
+* **Why We Fight, the rest:** all seven are now indexed. Fury in the Pacific was indexed 19 Nov 2026.
 * **War Department, still unindexed:** about 70 more Army-Navy Screen Magazine issues (not digitized at NARA), Combat Bulletins 1, 2, 4 to 6, 19, 21, 24, 25, 30 to 32, 55, 57, 61 (not digitized), Huston's San Pietro raw reels (111-ADC-546, 583 to 588, 636, 743, 893, 906, 1030, 1031), Staff Film Reports (111-SFR), and Combat Bulletin 3's real file (The Stilwell Road, 111-CR-3) needs a full sheet pass.
 * **Universal Newsreel** (NARA UN-UN) is free to use (deeded to the U.S. in 1974), but the 1978 vault fire destroyed most of 1941 to 1945. Surviving stories worth checking: Mussolini's death, the Nuremberg verdicts.
 * **Commons, British PD-UKGov shorts:** Christmas Under Fire (1941), Newspaper Train (1942), The True Story of Lili Marlene (1944), the Tirpitz attack of 15 Sep 1944; New Zealand's Return from Crete (1941, PD-NZ).
@@ -575,6 +599,7 @@ When research or a Project chat finds a film worth keeping (one that covers seve
 5. Add the film to "On hand" and its dates to the Calendar here, and log it below.
 
 ## Changelog
+* 19 Nov 2026: Film Search run 3. Indexed To the Shores of Iwo Jima (color), Appointment in Tokyo (with MacArthur's Missouri speech in his own voice), Fury in the Pacific, five Philippines 1945 reels (the Corregidor drop, Manila, Lingayen, Bataan), Combat America reel 2 (color), the Kwajalein task force (color) and The War Speeds Up, as 5 index docs. Added the Iwo Jima Flash day, Lingayen, Cabanatuan, Manila and Corregidor dates to the Calendar. Four finished films are only 2 minute excerpts at NARA (logged under Leads).
 * 15 Nov 2026 (later): Brian cleared two Pearl Harbor reels as exceptions to the Movietone rule: the CinCPac "Carry on" message (428-NPC-16439) and California raised (428-NPC-16128). Added to On hand and the Calendar.
 * 15 Nov 2026 (night): Deep dives for the Pearl Harbor (7 Dec) and Bulge (16 Dec) Flash days. Pearl Harbor: no new attack day film clears the Movietone rule; added the Oglala, Oklahoma and 1945 Arizona salvage reels, and logged the reels ruled out (pearl-harbor-deep-dive-2026-11-15.md). Bulge: the German film of the attack inside The Enemy Strikes is now the opening (usable with caption since 13 Nov), plus 9 Signal Corps and Universal reels from 18 Dec 1944 to mid January (bulge-flash-film-2026-11-15.md). Added a Flash day film table and Calendar dates.
 * 13 Nov 2026 (night, later): Added "Film Search: the War Department method" to Where to look next, so every future Film Search pages through whole U.S. government film series the way the 13 Nov search did. Copied the new indexes to the desktop Film Library folder.
