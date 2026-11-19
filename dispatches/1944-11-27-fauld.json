@@ -1,0 +1,135 @@
+{
+ "num": 97,
+ "id": "1944-11-27-fauld",
+ "title": "Britain's biggest explosion",
+ "date": "1944-11-27",
+ "time": "17:00",
+ "place": "Fauld, Staffordshire · England",
+ "series": "home",
+ "pull": "The farm simply vanished",
+ "format": "photo",
+ "short": "RAF Fauld",
+ "facts": [
+  {
+   "text": "At 11:11 a.m. on Monday 27 November 1944, the underground bomb store at RAF Fauld in Staffordshire blew up. It is generally counted as the largest explosion ever on British soil.",
+   "sources": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "text": "RAF Fauld, No. 21 Maintenance Unit, kept the RAF's bombs in the tunnels of an old gypsum mine. About 4,000 tonnes of explosives went up, including some 3,500 tonnes of bombs.",
+   "sources": [
+    0,
+    1
+   ]
+  },
+  {
+   "text": "The blast tore open a crater about 100 feet deep and roughly 300 yards across. It is still there, now called the Hanbury Crater, and still holds explosives.",
+   "sources": [
+    0,
+    1
+   ]
+  },
+  {
+   "text": "Upper Castle Hayes Farm simply disappeared, farmhouse, people and animals. The blast also destroyed a reservoir, and its flood swept into the neighboring plaster works and mine, drowning many of the workers.",
+   "sources": [
+    0,
+    1
+   ]
+  },
+  {
+   "text": "About 70 people died: RAF men, civilian workers, Italian prisoners of war who worked in the dump, the plaster workers and the people on the farm. Civilian deaths outnumbered military ones.",
+   "sources": [
+    0,
+    1
+   ]
+  },
+  {
+   "text": "One of the RAF dead was Leading Aircraftman William Deuchars, 38, a painter from Crieff in Perthshire before the war. He is buried in Crieff Cemetery.",
+   "sources": [
+    2
+   ]
+  },
+  {
+   "text": "The explosion was heard in Birmingham and Coventry and registered on seismographs in Switzerland.",
+   "sources": [
+    1
+   ]
+  },
+  {
+   "text": "At first enemy action or sabotage by prisoners was suspected. The secret inquiry found the likely cause was a worker removing a detonator from a live bomb with a brass chisel instead of a wooden tool, and blamed staff shortages, inexperienced workers and pressure to work faster.",
+   "sources": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "text": "The report was not made public until 1974.",
+   "sources": [
+    0,
+    1
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "title": "RAF Fauld explosion, Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/RAF_Fauld_explosion"
+  },
+  {
+   "title": "Sarah Moody, The Fauld Explosion of the Second World War, Commonwealth War Graves Commission, 26 June 2020",
+   "url": "https://www.cwgc.org/our-work/blog/the-fauld-explosion-of-the-second-world-war/"
+  },
+  {
+   "title": "Flyers from Perthshire in the Second World War: Leading Aircraftman William Deuchars, Made in Perth",
+   "url": "https://madeinperth.org/flyers-from-perthshire-in-the-second-world-war-leading-aircraftman-william-deuchars/"
+  },
+  {
+   "title": "Chad Holroyd, Voices from the explosion, Great British Life",
+   "url": "https://www.greatbritishlife.co.uk/lifestyle/heritage/voices-from-the-explosion-8190456"
+  }
+ ],
+ "photo": "photos/1944-11-27-fauld.jpg",
+ "photoUrl": "https://commons.wikimedia.org/wiki/File:RAF_Fauld_tunnel_bombs.jpg",
+ "photoNote": "Tier: green, with one flag. Storemen stack 250 lb bombs in one of the tunnels at No. 21 Maintenance Unit, Fauld. Photo by B.J. Daventry, RAF official photographer, IWM CH 3043, Crown copyright expired (PD-UKGov on Commons). Undated, before the explosion (the CH number suggests about 1941); caption it as the tunnels before the blast. Commons thumbnail 1280 x 995 (original 1300 x 1011). FLAG: the IWM web copy carries a small \"IWM\" mark in the lower right corner; Friday's framing should crop it out, or Brian may prefer the runner up. Runner up: RAF aerial view of the crater, 4 December 1944, RAF_106G_LA_69_PO_0018 (Historic England), public domain, saved as photos/1944-11-27-fauld-b.jpg (https://commons.wikimedia.org/wiki/File:Aerial_view_of_the_RAF_Fauld_explosion_crater_4_December_1944.jpg).",
+ "photoCredit": "RAF storemen stack 250 lb bombs in a tunnel of the Fauld bomb store, Staffordshire, before the 1944 explosion. RAF photo by B.J. Daventry, IWM CH 3043, public domain.",
+ "declassified": {
+  "fact": "The civilian dead of Fauld are named in the Civilian Roll of Honour kept in Westminster Abbey, a register of more than 67,000 names that Sir Fabian Ware had proposed to Churchill.",
+  "sources": [
+   {
+    "title": "Sarah Moody, The Fauld Explosion of the Second World War, Commonwealth War Graves Commission",
+    "url": "https://www.cwgc.org/our-work/blog/the-fauld-explosion-of-the-second-world-war/"
+   }
+  ],
+  "photo": {
+   "file": "photos/1944-11-27-fauld-b.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_the_RAF_Fauld_explosion_crater_4_December_1944.jpg",
+   "credit": "RAF aerial photo of the Fauld crater, 4 December 1944. Historic England RAF_106G_LA_69_PO_0018, public domain.",
+   "caption": "A week after the blast, an RAF camera looked down on the crater where Upper Castle Hayes Farm had stood."
+  }
+ },
+ "videoPhotos": [],
+ "somber": true,
+ "themes": {
+  "who": [
+   "civilians",
+   "airmen"
+  ],
+  "story": [
+   "loss or atrocity"
+  ],
+  "photo": "people in action",
+  "theater": "home front",
+  "branch": [
+   "Army Air Forces"
+  ],
+  "nations": [
+   "Britain",
+   "Italy"
+  ],
+  "lens": "commonwealth"
+ }
+}
