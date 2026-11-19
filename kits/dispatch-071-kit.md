@@ -23,7 +23,7 @@ Four days later, a whole German army was trapped.
 * Status: Buffer, all six channels, noon 19 Nov
 
 ## Short caption: X, Instagram, Threads, Facebook
-Soviet film of the Stalingrad counteroffensive, November 1942: cavalry at the gallop, infantry charging across open snow, tanks on the move.
+Soviet film of the Stalingrad counteroffensive, November 1942: cavalry at the gallop, a mounted column on the move, tanks on a snowy road.
 
 American audiences saw this footage in the U.S. Army's 1943 film The Battle of Russia. The shots are not dated to 19 November, the morning Operation Uranus opened, but they come from the winter offensive it started.
 
@@ -48,4 +48,7 @@ WW2 Dispatches: World War II on this day in history. Battle Lines · Home Front 
 Four days later, a whole German army was trapped. Soviet film of the Stalingrad counteroffensive, Nov 1942. #WW2 #OnThisDay #History #Stalingrad
 
 ## Source film
-Soviet newsreel footage inside The Battle of Russia (1943, U.S. War Department, Why We Fight 5), 111-OF-5 reel 10 (NARA 36071). The U.S. film carries narration and score, so the clip runs silent. Clip from the research copy footage/1942-11-19-uranus-reel.mp4 (pillarbox cropped): 1:25.7 to 1:29.9 Soviet cavalry gallop across the snow; 2:23.5 to 2:31.3 Soviet infantry charge across the snow; 1:33.7 to 1:37.5 a column of tanks on a snowy road. The map, title cards, the possibly staged link up embrace (2:32), and the Operation Ring tanks (4:40) are left out. Shots are not dated to 19 November.
+Soviet newsreel footage inside The Battle of Russia (1943, U.S. War Department, Why We Fight 5), 111-OF-5 reel 10 (NARA 36071). The U.S. film carries narration and score, so the clip runs silent. Recut 19 Nov 2026 from the NARA copy (pillarbox cropped): 1:25.7 to 1:29.9 Soviet cavalry gallop across the snow; 1:20.6 to 1:25.1 a cavalry column winding along a snowy slope; 1:33.7 to 1:37.5 a column of tanks on a snowy road; 1:29.9 to 1:33.2 riders gallop past toward the column. The map, title cards, and the Operation Ring tanks (4:40) are left out, and so is the whole staged Kalach link up (2:13 to 2:36). Shots are not dated to 19 November.
+
+## Recut (19 Nov 2026)
+The first cut included 2:23.5 to 2:31.3 as an "infantry charge". Brian spotted it looked staged: it is the start of the restaged Kalach link up, two lines of men running together across the snow, straight into the 2:32 embrace. Recut the same day with cavalry and tank footage from the same reel, and the caption changed to match. The six posts that went out at noon keep the first cut (left as posted, Brian's call); the dispatch record, the Declass living variant, and the site use the recut. New files: videos/dispatch-071-<x|instagram|threads|vertical>-r2.mp4, committed to the videos repo because this chat had no R2 keys; the next run's sweep moves them to R2.
