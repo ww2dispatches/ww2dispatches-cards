@@ -1,0 +1,153 @@
+{
+ "num": 85,
+ "id": "1939-11-23-rawalpindi",
+ "title": "Rawalpindi fights two battleships",
+ "date": "1939-11-23",
+ "time": "17:00",
+ "place": "North of the Faroes · Atlantic",
+ "series": "battle",
+ "pull": "\"That will be that\"",
+ "short": "HMS Rawalpindi",
+ "format": "photo",
+ "facts": [
+  {
+   "text": "Rawalpindi was a P&O passenger liner built in 1925. Requisitioned as the war began, she became an armed merchant cruiser with eight old 6 inch guns.",
+   "sources": [
+    0,
+    1
+   ]
+  },
+  {
+   "text": "Her captain was Edward Coverley Kennedy, 60, a retired Royal Navy officer recalled for the war.",
+   "sources": [
+    0,
+    3
+   ]
+  },
+  {
+   "text": "On 23 November 1939 she was on Northern Patrol north of the Faroe Islands, watching for German ships trying to break out into the Atlantic.",
+   "sources": [
+    0
+   ]
+  },
+  {
+   "text": "At 16:07 her lookouts sighted a ship. It was the German battleship Scharnhorst, and her sister Gneisenau was close by.",
+   "sources": [
+    0
+   ]
+  },
+  {
+   "text": "The Germans signalled her to stop. Kennedy, hopelessly outgunned, chose to fight. He was heard to say: \"We'll fight them both, they'll sink us, and that will be that. Goodbye.\"",
+   "sources": [
+    0,
+    1
+   ]
+  },
+  {
+   "text": "Kennedy had an enemy sighting report sent by radio before the shooting started.",
+   "sources": [
+    0,
+    1
+   ]
+  },
+  {
+   "text": "Scharnhorst opened fire at 17:03 and hit Rawalpindi within minutes; Gneisenau joined in. Rawalpindi scored one hit on Scharnhorst, causing only splinter damage.",
+   "sources": [
+    0
+   ]
+  },
+  {
+   "text": "Kennedy was killed with more than 230 of his crew. The German ships picked up survivors, and the cruiser HMS Chitral later found 11 more.",
+   "sources": [
+    0,
+    1
+   ]
+  },
+  {
+   "text": "Kennedy was mentioned in dispatches after his death.",
+   "sources": [
+    0,
+    4,
+    2
+   ]
+  },
+  {
+   "text": "His son Ludovic, then a young naval officer, served in the destroyer HMS Tartar in the hunt for the Bismarck in 1941 and later became a well known broadcaster and author.",
+   "sources": [
+    2,
+    3
+   ]
+  },
+  {
+   "text": "In 1971 Ludovic Kennedy made a BBC television series, The Life and Death of the Scharnhorst, which brought him face to face with survivors of the ship that sank his father's.",
+   "sources": [
+    2
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "title": "HMS Rawalpindi, Wikipedia (citing Bekker 1971, Rohwer 2005, Bredemeier 1997 and the London Gazette)",
+   "url": "https://en.wikipedia.org/wiki/HMS_Rawalpindi"
+  },
+  {
+   "title": "Rawalpindi, P&O ships and crew history pages (citing Cashmore and Bews)",
+   "url": "https://www.pandosnco.co.uk/rawalpindi.html"
+  },
+  {
+   "title": "Ludovic Kennedy, Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Ludovic_Kennedy"
+  },
+  {
+   "title": "Broadcaster who campaigned for justice and against death penalty (Ludovic Kennedy obituary), The Irish Times",
+   "url": "https://www.irishtimes.com/news/broadcaster-who-campaigned-for-justice-and-against-death-penalty-1.761771"
+  },
+  {
+   "title": "The London Gazette, issue 34893, 9 July 1940, p. 4261",
+   "url": "https://www.thegazette.co.uk/London/issue/34893/page/4261"
+  }
+ ],
+ "photo": "photos/1939-11-23-rawalpindi.jpg",
+ "photoUrl": "https://commons.wikimedia.org/wiki/File:Ss_rawalpindi.jpg",
+ "photoNote": "Tier: green. The P&O liner Rawalpindi at sea before the war, two funnels, before her conversion to an armed merchant cruiser. Unknown photographer, via uboat.net, tagged PD UK (unknown author, published over 70 years ago) on Commons. Weak: the Commons original is only 724 x 446; saved 960 x 591 from the Commons 960 px thumbnail, which Wikimedia upscales, so it is soft. No higher resolution green photo of Rawalpindi or of Captain Kennedy could be found from the shell (IWM's site is blocked; the P&O Heritage negative PH-04806-00 of her as an armed merchant cruiser has no clear license). Brian: please look for an IWM Crown copyright photo of HMS Rawalpindi or of Captain E. C. Kennedy (not an HU press number) and supply it by Friday 5 p.m. Mountain if one exists. Runner up: model of HMS Rawalpindi, MOD 381 (Commons file HMS Rawalpindi (MOD 381).jpg, public domain, 800 x 370).",
+ "photoCredit": "The P&O liner Rawalpindi before the war, later the armed merchant cruiser HMS Rawalpindi. Unknown photographer, public domain.",
+ "declassified": {
+  "fact": "Rawalpindi's report named her attacker as the pocket battleship Deutschland. The British were still hunting for Deutschland as Scharnhorst and Gneisenau slipped home to Germany.",
+  "sources": [
+   {
+    "title": "HMS Rawalpindi, Wikipedia (citing Bekker 1971, Rohwer 2005, Bredemeier 1997 and the London Gazette)",
+    "url": "https://en.wikipedia.org/wiki/HMS_Rawalpindi"
+   },
+   {
+    "title": "Rawalpindi, P&O ships and crew history pages (citing Cashmore and Bews)",
+    "url": "https://www.pandosnco.co.uk/rawalpindi.html"
+   }
+  ]
+ },
+ "videoPhotos": [
+  {
+   "page": "https://commons.wikimedia.org/wiki/File:HMS_Rawalpindi_(MOD_381).jpg",
+   "credit": "Model of the armed merchant cruiser HMS Rawalpindi. UK Ministry of Defence, public domain per Commons."
+  }
+ ],
+ "somber": true,
+ "themes": {
+  "who": [
+   "soldiers and sailors"
+  ],
+  "story": [
+   "combat",
+   "loss or atrocity"
+  ],
+  "photo": "a machine",
+  "theater": "Atlantic",
+  "branch": [
+   "Navy"
+  ],
+  "nations": [
+   "Britain",
+   "Germany"
+  ],
+  "lens": "commonwealth"
+ }
+}

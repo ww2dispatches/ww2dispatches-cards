@@ -1,0 +1,175 @@
+{
+ "num": 88,
+ "id": "1944-11-24-b29-spec",
+ "title": "The bomber built for Japan",
+ "date": "1944-11-24",
+ "time": "17:00",
+ "place": "Saipan · Mariana Islands",
+ "series": "blue",
+ "pull": "1,500 ordered before it flew",
+ "format": "spec",
+ "specTitle": "Boeing B-29 Superfortress",
+ "specs": [
+  [
+   "Wingspan",
+   "141 ft 3 in"
+  ],
+  [
+   "Length",
+   "99 ft"
+  ],
+  [
+   "Engines",
+   "4 Wright R-3350, 2,200 hp each"
+  ],
+  [
+   "Top speed",
+   "357 mph"
+  ],
+  [
+   "Max takeoff weight",
+   "133,500 lb"
+  ],
+  [
+   "Max bomb load",
+   "20,000 lb"
+  ]
+ ],
+ "short": "B-29 Superfortress",
+ "facts": [
+  {
+   "text": "The B-29 began with a 1940 Army Air Corps demand for a bomber that could fly 400 mph and travel 5,000 miles. Boeing's answer, the Model 345, first flew on 21 September 1942.",
+   "sources": [
+    2,
+    0
+   ]
+  },
+  {
+   "text": "Gen. Henry H. Arnold believed in it so strongly that the Army ordered 1,500 before the first prototype had flown.",
+   "sources": [
+    2
+   ]
+  },
+  {
+   "text": "It was the first bomber with pressurized crew areas.",
+   "sources": [
+    2,
+    1
+   ]
+  },
+  {
+   "text": "Its guns sat in remote controlled turrets. An analog computer fire control system let gunners at sighting stations aim turrets they were not sitting in.",
+   "sources": [
+    1,
+    2,
+    0
+   ]
+  },
+  {
+   "text": "Four 2,200 horsepower Wright R-3350 radial engines gave it a top speed of 357 mph, with a wingspan of 141 feet 3 inches.",
+   "sources": [
+    0,
+    1
+   ]
+  },
+  {
+   "text": "In December 1943 American leaders decided not to send it to Europe but to use its range against Japan. The first B-29 raids on Japan came from China on 15 June 1944.",
+   "sources": [
+    2
+   ]
+  },
+  {
+   "text": "On 24 November 1944, 111 B-29s took off from Saipan for the first raid on Tokyo from the Marianas. At 27,000 to 33,000 feet they met winds of about 120 knots, and only 24 bombed the target.",
+   "sources": [
+    3,
+    4
+   ]
+  },
+  {
+   "text": "From March 1945 Curtis LeMay sent them in low, at night, with incendiaries. On 6 and 9 August 1945 B-29s dropped the atomic bombs on Hiroshima and Nagasaki. In all, 3,970 were built.",
+   "sources": [
+    2,
+    1,
+    4
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "title": "Boeing B-29 Superfortress, Federation of American Scientists",
+   "url": "https://nuke.fas.org/guide/usa/bomber/b-29.htm"
+  },
+  {
+   "title": "Boeing B-29 Superfortress, Wikipedia (specifications citing NASA SP-468, Quest for Performance)",
+   "url": "https://en.wikipedia.org/wiki/Boeing_B-29_Superfortress"
+  },
+  {
+   "title": "Walter J. Boyne, Airpower Classics: B-29 Superfortress, Air Force Magazine, March 2007",
+   "url": "https://www.airandspaceforces.com/PDF/MagazineArchive/Magazine%20Documents/2007/March%202007/0307classics.pdf"
+  },
+  {
+   "title": "Craven and Cate, eds., The Army Air Forces in World War II, Vol. V, Chapter 18 (USAF Historical Division; HyperWar transcription)",
+   "url": "https://www.ibiblio.org/hyperwar/AAF/V/AAF-V-18.html"
+  },
+  {
+   "title": "Boeing B-29 Superfortress Combat Record, HistoryOfWar.org",
+   "url": "https://www.historyofwar.org/articles/weapons_B-29_combat.html"
+  }
+ ],
+ "photo": "photos/1944-11-24-b29-spec.jpg",
+ "photoUrl": "https://catalog.archives.gov/id/204972610",
+ "photoNote": "Tier: green. Side view of the B-29 \"Dauntless Dotty\" on Saipan, nose art and name on the nose, an engine nacelle and propeller at left, her crew standing by the nose wheel waiting to take off for Tokyo, November 1944. US Army Air Forces photo, National Archives 342-FH-3A38986-64263AC (naId 204972610), use Unrestricted, public domain. Cropped from the scanned print mount, 2000 x 1566; the lab number sits faintly in the lower right corner. Good for the top half spec window: the nose and the people sit in the right two thirds. Runner up: B-29 \"Tokyo Local\" taking off from Saipan, 500th Bomb Group, National Archives 342-FH-3A38616-A61104AC (naId 204972505), date not on the record.",
+ "photoCredit": "The B-29 Dauntless Dotty and her crew before a Tokyo mission, Saipan, November 1944. National Archives 342-FH-3A38986-64263AC, public domain.",
+ "declassified": {
+  "fact": "Past its prime, the B-29 went back to war five years later. In Korea B-29s flew about 20,000 sorties, dropped about 200,000 tons of bombs, and their gunners shot down 27 enemy aircraft.",
+  "sources": [
+   {
+    "title": "Walter J. Boyne, Airpower Classics: B-29 Superfortress, Air Force Magazine, March 2007",
+    "url": "https://www.airandspaceforces.com/PDF/MagazineArchive/Magazine%20Documents/2007/March%202007/0307classics.pdf"
+   }
+  ]
+ },
+ "videoPhotos": [
+  {
+   "page": "https://catalog.archives.gov/id/204972505",
+   "credit": "B-29 Tokyo Local takes off from Saipan, 500th Bomb Group. National Archives 342-FH-3A38616-A61104AC, public domain."
+  },
+  {
+   "page": "https://catalog.archives.gov/id/204972613",
+   "credit": "O'Donnell and crew under the nose of Dauntless Dotty, Saipan, November 1944. National Archives 342-FH-3A38987-A64263AC, public domain."
+  },
+  {
+   "page": "https://catalog.archives.gov/id/204972508",
+   "credit": "B-29 Superfortress in flight. National Archives 342-FH-3A38618-61104AC, public domain."
+  }
+ ],
+ "kind": "living",
+ "videoTime": "19:00",
+ "film": {
+  "status": "secured",
+  "record": "18-CS-3338, Saipan Harbor and Airfield; B-29 Takeoffs and Landings (NARA 4878)",
+  "url": "https://catalog.archives.gov/id/4878",
+  "file": "footage/1944-11-24-b29-saipan-reel.mp4",
+  "sound": false,
+  "shot_notes": "AAF Combat Subjects reel, two reels joined, silent (the WMV audio track is only hiss), converted to H.264, 17 min 11 s. 00:00 to 03:00 Saipan harbor, LSTs and the coast (not used). 03:15 to 05:40 dark night shots, lights only (avoid). 05:45 to 06:20 a B-29 high overhead. Slates at 06:52 and 07:58 read \"Locantore Roll 4 (and 5), B-29s Return 3/4/45\". 7 P.M.: open at 08:04 on a B-29 low over the runway, wheels down, sweeping past the camera (08:00 to 08:16), then the taxiing B-29 close past the camera 07:18 to 07:32 or the rows of parked B-29s 07:34 to 07:56. More landings 08:28 to 08:40, a close pass 08:50 to 08:52 and 09:00; reel 2 (from 09:00 slate) has more landings 12:00 to 13:30 and ground crew under a B-29 14:15 to 14:50. Different film from the noon video (No. 086 uses 18-CS-3655), so no shot repeats.",
+  "license": "Public domain, U.S. government work (U.S. Army Air Forces, NARA Record Group 18, Army Air Forces Combat Subjects). NARA use status 'Undetermined', the routine flag on these reels.",
+  "date_note": "Filmed 4 March 1945 per the camera slates (B-29s returning from a mission), not on 24 November 1944. The caption should say B-29s landing on Saipan, March 1945."
+ },
+ "somber": false,
+ "themes": {
+  "who": [],
+  "story": [
+   "invention or machine"
+  ],
+  "photo": "a machine",
+  "theater": "Pacific",
+  "branch": [
+   "Army Air Forces"
+  ],
+  "nations": [
+   "US",
+   "Japan"
+  ],
+  "lens": "us"
+ }
+}
