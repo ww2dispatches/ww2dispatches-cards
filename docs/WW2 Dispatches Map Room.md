@@ -172,7 +172,7 @@ A pinned chat, "Campaign Series: The Map Room", owns the Map Room from here. Thi
 2. **By Wed 25 Nov:** final `mapRoom` block format and a short brief for the Campaign Series chat (move types, full names under 16 characters, morning and night line points, blocks clear on their own side and inside the frame, two sources per move). Update the handoff line in the Campaign Series doc's Open section.
 3. Build the move animations not yet made (arrive, hold, cut off, surrender, air mission, grounded) and the clip template (beats, safe areas, loop), plus the pre render check and contact sheet.
 4. Trace the real Ardennes map from the Library of Congress situation maps and Cole; show Brian one still before rendering with it.
-5. After the Bulge sitting (26 to 29 Nov): render all 30, Gate 2 (Days 1 to 5 by Fri 4 Dec), upload to R2, schedule all 30 in Buffer at 6:30 on all six channels by Wed 9 Dec.
+5. After the Bulge sitting (26 to 29 Nov): **check the positions against the record** (added 20 Nov 2026, Brian): while the Ardennes map is traced, compare each day's block positions and lines with that day's Library of Congress situation map. This is a second look, not new research: anything that looks wrong goes back to the Campaign Series chat to fix in the day record, never changed here. Then render all 30, Gate 2 (Days 1 to 5 by Fri 4 Dec), upload to R2, schedule all 30 in Buffer at 6:30 on all six channels by Wed 9 Dec.
 6. Write the Map Room skill last, from what worked.
 
 **What it owns:** the table scene, the block set, map tracing, the clip template, sound, rendering, the pre-render check, and scheduling each Map Room post in Buffer. It does not research or write the stories (the Campaign Series chat does) and does not build site pages (the Website chat does).
@@ -221,6 +221,7 @@ Lines for other chats. Nothing here is live until Brian approves this doc.
 * **Website: Build and Fixes chat:** after approval, show each day's table on its day page, then the stepping table in Chronicle chapters.
 
 ## Changelog
+* 20 Nov 2026 (Map Room planning chat): added the position check against the daily situation maps to the build chat's order of work (step 5). Repo copy in `docs/` synced to this version the same day by the build chat.
 * 20 Nov 2026 (Map Room build chat): knock rule set by Brian: a knock only for rake to block or block to block contact. Hold loses its tap; arrive has no knock of its own.
 * 20 Nov 2026 (Map Room build chat): stop knock removed from pushes at Brian's call; push sound now follows block speed. Pushed to main.
 * 20 Nov 2026 (Map Room build chat, step 1): method files set up as `map-room/` in the cards repo with the three template fixes, proven on a re-rendered Day 1 test clip. Pushed to main after Brian approved the repo attach.
