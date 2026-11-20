@@ -528,12 +528,26 @@
   "source": "https://en.wikipedia.org/wiki/3rd_Armored_Division_(United_States)",
   "wikidata": "Q223552"
  },
+ "unit-3rd-belorussian-front": {
+  "name": "3rd Belorussian Front",
+  "kind": "Soviet army group (front)",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/3rd_Belorussian_Front"
+ },
  "unit-3rd-canadian-division": {
   "name": "3rd Canadian Infantry Division",
   "kind": "Canadian infantry division",
   "nation": "Canada",
   "source": "https://en.wikipedia.org/wiki/3rd_Canadian_Division",
   "wikidata": "Q2816553"
+ },
+ "unit-3rd-infantry-division-united-states": {
+  "name": "3rd Infantry Division",
+  "kind": "Army infantry division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/3rd_Infantry_Division_(United_States)"
  },
  "unit-3rd-marine-division": {
   "name": "3rd Marine Division",
@@ -694,6 +708,16 @@
   "source": "https://en.wikipedia.org/wiki/509th_Infantry_Regiment",
   "wikidata": "Q4639851"
  },
+ "unit-5th-infantry-division-india": {
+  "name": "5th Infantry Division (India)",
+  "kind": "Indian Army infantry division",
+  "nation": "India",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/5th_Infantry_Division_(India)",
+  "aka": [
+   "5th Indian Division"
+  ]
+ },
  "unit-5th-infantry-division-united-states": {
   "name": "5th Infantry Division",
   "kind": "U.S. infantry division",
@@ -735,12 +759,27 @@
    "German Sixth Army"
   ]
  },
+ "unit-6th-division-australia": {
+  "name": "6th Division (Australia)",
+  "kind": "infantry division",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/6th_Division_(Australia)"
+ },
  "unit-6th-marine-regiment": {
   "name": "6th Marines",
   "kind": "U.S. Marine Corps regiment",
   "nation": "United States",
   "source": "https://en.wikipedia.org/wiki/6th_Marine_Regiment",
   "wikidata": "Q2818159"
+ },
+ "unit-6th-panzer-army": {
+  "name": "6th Panzer Army",
+  "kind": "panzer army",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/6th_Panzer_Army",
+  "note": "Built around Waffen SS divisions; never told from its own side."
  },
  "unit-6th-panzer-division": {
   "name": "6th Panzer Division",
@@ -876,6 +915,18 @@
   "nation": "US",
   "wikidata": "Q463128",
   "source": "https://en.wikipedia.org/wiki/America_First_Committee"
+ },
+ "unit-american-british-dutch-australian-command": {
+  "name": "American-British-Dutch-Australian Command",
+  "kind": "Allied supreme command",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/American-British-Dutch-Australian_Command",
+  "aka": [
+   "ABDACOM",
+   "ABDA"
+  ],
+  "note": "Joint command of the US, Britain, the Netherlands, and Australia"
  },
  "unit-anti-fascist-council-for-the-national-liberation-of-yugoslavia": {
   "name": "AVNOJ",
@@ -1341,6 +1392,23 @@
   ],
   "note": "No separate article for the 1st Motorized Group."
  },
+ "unit-japanese-marine-paratroopers-of-world-war-ii": {
+  "name": "Japanese naval paratroopers",
+  "kind": "naval airborne troops, Yokosuka Special Naval Landing Forces",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_marine_paratroopers_of_World_War_II",
+  "aka": [
+   "1st Yokosuka Special Naval Landing Force"
+  ]
+ },
+ "unit-jewish-anti-fascist-committee": {
+  "name": "Jewish Anti-Fascist Committee",
+  "kind": "Soviet wartime organization",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Jewish_Anti-Fascist_Committee"
+ },
  "unit-johns-hopkins-university-applied-physics-laboratory": {
   "name": "Johns Hopkins Applied Physics Laboratory",
   "kind": "research laboratory",
@@ -1483,6 +1551,19 @@
    "RLM"
   ]
  },
+ "unit-ministry-of-health-labour-and-welfare": {
+  "name": "Ministry of Health and Welfare (Japan)",
+  "kind": "government ministry",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ministry_of_Health,_Labour_and_Welfare",
+  "aka": [
+   "Koseisho",
+   "Ministry of Welfare",
+   "Ministry of Health, Labour and Welfare"
+  ],
+  "note": "Founded 11 January 1938; reorganized as the Ministry of Health, Labour and Welfare in 2001."
+ },
  "unit-ministry-of-the-navy-japan": {
   "name": "Ministry of the Navy (Japan)",
   "kind": "government ministry",
@@ -1510,6 +1591,16 @@
   "nation": "worldwide",
   "source": "https://en.wikipedia.org/wiki/NATO_Military_Committee",
   "wikidata": "Q1959817"
+ },
+ "unit-navy-marine-corps-relief-society": {
+  "name": "Navy-Marine Corps Relief Society",
+  "kind": "naval relief charity",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Navy-Marine_Corps_Relief_Society",
+  "aka": [
+   "Navy Relief Society"
+  ]
  },
  "unit-ninth-air-force": {
   "name": "Ninth Air Force",
@@ -1541,6 +1632,13 @@
   "nation": "Australia",
   "wikidata": "Q3434182",
   "source": "https://en.wikipedia.org/wiki/No._1_Squadron_RAAF"
+ },
+ "unit-no-10-squadron-raaf": {
+  "name": "No. 10 Squadron RAAF",
+  "kind": "maritime patrol squadron",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._10_Squadron_RAAF"
  },
  "unit-no-12-commando": {
   "name": "No. 12 Commando",
@@ -1607,6 +1705,16 @@
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/No._9_Squadron_RAF",
   "wikidata": "Q7043892"
+ },
+ "unit-norwegian-independent-company-1": {
+  "name": "Norwegian Independent Company 1",
+  "kind": "Norwegian special operations unit (Kompani Linge)",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Norwegian_Independent_Company_1",
+  "aka": [
+   "Kompani Linge"
+  ]
  },
  "unit-oberkommando-des-heeres": {
   "name": "Oberkommando des Heeres",
@@ -1814,6 +1922,13 @@
   "wikidata": "Q7762802",
   "source": "https://en.wikipedia.org/wiki/Seaforth_Highlanders_of_Canada"
  },
+ "unit-second-army-hungary": {
+  "name": "Hungarian Second Army",
+  "kind": "field army",
+  "nation": "Hungary",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Second_Army_(Hungary)"
+ },
  "unit-selective-service-system": {
   "name": "Selective Service System",
   "kind": "U.S. draft agency",
@@ -1837,6 +1952,13 @@
   "aka": [
    "Seventh Army"
   ]
+ },
+ "unit-sixth-army-united-states": {
+  "name": "Sixth Army (United States)",
+  "kind": "U.S. field army",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sixth_Army_(United_States)"
  },
  "unit-southwestern-front-soviet-union": {
   "name": "Southwestern Front",
@@ -2043,6 +2165,24 @@
   "aka": [
    "VMF-214",
    "Black Sheep Squadron"
+  ]
+ },
+ "unit-voronezh-front": {
+  "name": "Voronezh Front",
+  "kind": "Soviet army group (front)",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Voronezh_Front"
+ },
+ "unit-wang-jingwei-regime": {
+  "name": "Wang Jingwei regime",
+  "kind": "Japanese sponsored Chinese government at Nanjing",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Wang_Jingwei_regime",
+  "aka": [
+   "Reorganized National Government of the Republic of China",
+   "Nanjing government"
   ]
  },
  "unit-war-manpower-commission": {

@@ -20,6 +20,13 @@
   "wikidata": "Q791456",
   "source": "https://en.wikipedia.org/wiki/Avro_Lancastrian"
  },
+ "aircraft-avro-manchester": {
+  "name": "Avro Manchester",
+  "kind": "twin engine heavy bomber",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Avro_Manchester"
+ },
  "aircraft-b-29-dauntless-dotty": {
   "name": "Dauntless Dotty",
   "kind": "individual B-29 Superfortress",
@@ -85,6 +92,13 @@
   "aka": [
    "P-26"
   ]
+ },
+ "aircraft-bristol-blenheim": {
+  "name": "Bristol Blenheim",
+  "kind": "light bomber and night fighter",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bristol_Blenheim"
  },
  "aircraft-consolidated-b-24-liberator": {
   "name": "Consolidated B-24 Liberator",
@@ -289,6 +303,13 @@
   "source": "https://en.wikipedia.org/wiki/Heinkel_He_177_Greif",
   "wikidata": "Q316321"
  },
+ "aircraft-heinkel-he-280": {
+  "name": "Heinkel He 280",
+  "kind": "jet fighter prototype",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Heinkel_He_280"
+ },
  "aircraft-hughes-h-4-hercules": {
   "name": "Hughes H-4 Hercules",
   "kind": "flying boat",
@@ -343,6 +364,17 @@
    "Ju 88"
   ]
  },
+ "aircraft-lockheed-constellation": {
+  "name": "Lockheed Constellation",
+  "kind": "four engine airliner and transport",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Lockheed_Constellation",
+  "aka": [
+   "C-69",
+   "Connie"
+  ]
+ },
  "aircraft-lockheed-hudson": {
   "name": "Lockheed Hudson",
   "kind": "light bomber and transport",
@@ -358,6 +390,18 @@
   "wikidata": "Q172913",
   "aka": [
    "P-38"
+  ]
+ },
+ "aircraft-lockheed-p-80-shooting-star": {
+  "name": "Lockheed P-80 Shooting Star",
+  "kind": "jet fighter",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Lockheed_P-80_Shooting_Star",
+  "aka": [
+   "XP-80",
+   "Lulu-Belle",
+   "F-80"
   ]
  },
  "aircraft-lockheed-ventura": {
@@ -390,6 +434,16 @@
   "aka": [
    "FD-1 Phantom",
    "FH Phantom"
+  ]
+ },
+ "aircraft-messerschmitt-bf-108-taifun": {
+  "name": "Messerschmitt Bf 108 Taifun",
+  "kind": "liaison and touring aircraft",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Messerschmitt_Bf_108_Taifun",
+  "aka": [
+   "Bf 108"
   ]
  },
  "aircraft-messerschmitt-bf-109": {
@@ -535,6 +589,23 @@
   "nation": "Britain",
   "wikidata": "Q875139",
   "source": "https://en.wikipedia.org/wiki/Short_Stirling"
+ },
+ "aircraft-short-sunderland": {
+  "name": "Short Sunderland",
+  "kind": "flying boat patrol bomber",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Short_Sunderland"
+ },
+ "aircraft-sikorsky-r-4": {
+  "name": "Sikorsky R-4",
+  "kind": "helicopter",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sikorsky_R-4",
+  "aka": [
+   "HNS-1 Hoverfly"
+  ]
  },
  "aircraft-supermarine-spitfire": {
   "name": "Supermarine Spitfire",

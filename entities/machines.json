@@ -92,6 +92,16 @@
   "wikidata": "Q4389317",
   "source": "https://en.wikipedia.org/wiki/Cathode-ray_tube_amusement_device"
  },
+ "machine-chariot-manned-torpedo": {
+  "name": "Chariot manned torpedo",
+  "kind": "human torpedo",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Chariot_manned_torpedo",
+  "aka": [
+   "Chariot"
+  ]
+ },
  "machine-chicago-pile-1": {
   "name": "Chicago Pile-1",
   "kind": "nuclear reactor",
@@ -127,6 +137,13 @@
   "wikidata": "Q1133887",
   "source": "https://en.wikipedia.org/wiki/Der_Fuehrer%27s_Face"
  },
+ "machine-ejection-seat": {
+  "name": "Ejection seat",
+  "kind": "aircraft escape device",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ejection_seat"
+ },
  "machine-enigma-machine": {
   "name": "Enigma machine",
   "kind": "cipher machine",
@@ -153,6 +170,17 @@
   "source": "https://en.wikipedia.org/wiki/F-1_(nuclear_reactor)",
   "aka": [
    "Physics-1"
+  ]
+ },
+ "machine-fraktur": {
+  "name": "Fraktur",
+  "kind": "blackletter typeface",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fraktur",
+  "aka": [
+   "blackletter",
+   "gothic script"
   ]
  },
  "machine-freya-radar": {
@@ -200,6 +228,16 @@
   "wikidata": "Q586159",
   "aka": [
    "Hs 293"
+  ]
+ },
+ "machine-imperial-regalia-of-the-holy-roman-empire": {
+  "name": "Imperial Regalia of the Holy Roman Empire",
+  "kind": "crown jewels and relics",
+  "nation": "Austria",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Imperial_Regalia_of_the_Holy_Roman_Empire",
+  "aka": [
+   "Reichskleinodien"
   ]
  },
  "machine-it-s-a-wonderful-life": {
@@ -255,6 +293,13 @@
   "aka": [
    "Higgins boat"
   ]
+ },
+ "machine-liberty-ship": {
+  "name": "Liberty ship",
+  "kind": "standard cargo ship type",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Liberty_ship"
  },
  "machine-m3-stuart": {
   "name": "M3 Stuart",
