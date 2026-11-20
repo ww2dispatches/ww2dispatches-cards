@@ -153,7 +153,7 @@ Read at Gate 3 and again at the end, against the same slots in the weeks before:
 ## Decisions and open questions, 20 Nov 2026 (morning, with Brian)
 * **Pointer: yes.** Every Map Room post ends with one line pointing to the series book on ww2dispatches.com (Instagram and TikTok: "link in bio"). An exception to the series' "no add on lines" rule, for Map Room posts only.
 * **No narration.** Brian leans against it (he never liked the Onyx voice: too slow, not upbeat). On screen text and the caption carry the story; the clip must work muted.
-* **Sound: decided 20 Nov 2026, version C** (Brian): table sounds, the war room bed (teletype, clock, faint static), and the quiet in house theme (slow piano and low strings, original, generated in code). Plus a wipe and a grease pencil drag for the nightfall redraw. No narration.
+* **Sound: decided 20 Nov 2026, version C** (Brian): table sounds, the war room bed (teletype, clock, faint static), and the quiet in house theme (slow piano and low strings, original, generated in code). Plus a wipe and a grease pencil drag for the nightfall redraw. No narration. **No knock when a pushed block stops** (Brian, 20 Nov 2026: nothing hits anything, it just slows on the glass). The push sound follows the block's speed and fades out duller as it stops; the rake's contact tap is lighter. A knock is only for a block actually set down (arrive). Test: `Day 1 Test 2026-11-20\map-room-bulge-day01-test-quiet-stop.mp4`.
 * **Slot: decided, option B.** The options were (A) 7 p.m. on series days, replacing the second video; (B) merge into the 6:30 Day by Day post, which becomes the Map Room clip with the day's story caption on all six channels, opening on the day's archival photo for about a second before the table; (C) 6:30 on YouTube and TikTok only, Day by Day unchanged elsewhere; (D) a new evening slot; (E) one weekly recap instead of daily. Brian chose B (reasons under "How it ties into the Campaign Series").
 
 ## Start here: the Map Room chat
@@ -221,6 +221,7 @@ Lines for other chats. Nothing here is live until Brian approves this doc.
 * **Website: Build and Fixes chat:** after approval, show each day's table on its day page, then the stepping table in Chronicle chapters.
 
 ## Changelog
+* 20 Nov 2026 (Map Room build chat): stop knock removed from pushes at Brian's call; push sound now follows block speed. Pushed to main.
 * 20 Nov 2026 (Map Room build chat, step 1): method files set up as `map-room/` in the cards repo with the three template fixes, proven on a re-rendered Day 1 test clip. Pushed to main after Brian approved the repo attach.
 * 20 Nov 2026 (Map Room chat, close): planning and test chat closed; Start here rewritten as the brief for the finalized build chat (setup, method files, order of work, new starter line).
 * 20 Nov 2026 (Map Room chat, later): Move set, full name labels, no length limit, and the edge and rake fixes decided with Brian; the Bulge confirmed unwritten.

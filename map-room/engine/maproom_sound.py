@@ -27,6 +27,16 @@ def slide(dur, bright=1.0):
     speed = np.sin(np.pi * np.clip(t / dur, 0, 1)) ** 0.8
     a = bp(x, 260, 1900 * bright, 3) * 0.9 + bp(x, 1900, 3800, 2) * 0.25 * bright
     return np.tanh(a * flutter * speed * 1.6) * 0.32 * env(n, 0.02, 0.05)
+def push_slide(dur):
+    """block pushed by the rake: loudness and brightness follow the block's own speed (the cubic ease in comp.py),
+    so it swells as the push gets going and fades as friction stops it. No knock at the end: nothing hits anything."""
+    n = int(dur * SR); x_ = np.clip(np.arange(n) / SR / dur, 0, 1)
+    v = np.where(x_ < 0.5, 12 * x_ ** 2, 12 * (1 - x_) ** 2) / 3.0      # speed, 0 to 1
+    x = rng.standard_normal(n)
+    flutter = 1 + 0.35 * bp(rng.standard_normal(n), 8, 40, 2) * 6
+    body = bp(x, 260, 1200, 3) * 0.9; air = bp(x, 1200, 3600, 2) * 0.4
+    a = body * v ** 0.7 + air * v ** 1.6                                  # duller as it slows
+    return np.tanh(a * flutter * 1.6) * 0.32 * env(n, 0.02, 0.02)
 def knock(g=1.0, f0=420):
     """block set down: short wooden knock, two body modes plus a contact tick"""
     n = int(0.35 * SR); t = np.arange(n) / SR
@@ -34,7 +44,7 @@ def knock(g=1.0, f0=420):
          + 0.5 * np.sin(2 * np.pi * 150 * t) * np.exp(-t / 0.05))
     tick = bp(rng.standard_normal(n), 1200, 4000) * np.exp(-t / 0.004) * 0.6
     return np.tanh((x + tick) * 1.3) * 0.55 * g * env(n, 0.001, 0.02)
-def tap(): return knock(0.45, 610)
+def tap(): return knock(0.30, 610)   # rake head meets the block: a light wood on wood touch
 # ---------- war room bed ----------
 def teletype(dur):
     n = int(dur * SR); out = np.zeros(n); t = 0.0
@@ -102,8 +112,7 @@ def table_track():
     for t0 in PUSH:
         put(out, slide(ENTER, 0.6), t0, 0.35)              # rake pole slides in
         put(out, tap(), t0 + ENTER - 0.01)                 # rake meets the block
-        put(out, slide(MOVE + 0.05), t0 + ENTER)           # block pushed across the glass
-        put(out, knock(0.9), t0 + ENTER + MOVE - 0.03)     # block set down
+        put(out, push_slide(MOVE), t0 + ENTER)              # block pushed across the glass, slows to a stop
         put(out, slide(EXIT, 0.6), t0 + ENTER + MOVE + HOLD, 0.3)  # rake withdraws
     put(out, wipe(0.5), 13.0); put(out, pencil(1.5), 13.5)
     return room(out, 0.15)
