@@ -10,7 +10,7 @@
   "name": "Avro Lancastrian",
   "kind": "airliner converted from the Lancaster bomber",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q791456",
   "source": "https://en.wikipedia.org/wiki/Avro_Lancastrian"
  },
  "aircraft-b-29-dauntless-dotty": {
@@ -131,7 +131,7 @@
   "kind": "fighter bomber",
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/de_Havilland_Mosquito",
-  "wikidata": null,
+  "wikidata": "Q221344",
   "aka": [
    "Mosquito"
   ]
@@ -182,7 +182,7 @@
   "name": "Focke-Wulf Fw 190",
   "kind": "German fighter",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q34775",
   "source": "https://en.wikipedia.org/wiki/Focke-Wulf_Fw_190"
  },
  "aircraft-focke-wulf-fw-200-condor": {
