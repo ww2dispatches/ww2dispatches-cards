@@ -1,0 +1,59 @@
+{
+ "note": "The Map Room silhouette library, 20 Nov 2026. Cream on transparent PNGs from Brian (made in Grok); SVGs drawn by Claude. Mirrored so Allied face right and German face left; aircraft nose up.",
+ "colors": {
+  "us": "#5E6233",
+  "britain": "#9A8358",
+  "germany": "#34373B",
+  "soviet": "#96392F",
+  "japan": "#B58A2E",
+  "face_ink": "#F0E8D4"
+ },
+ "library": {
+  "infantry": {
+   "us": "infantry-us.png",
+   "britain": "infantry-britain.png",
+   "germany": "infantry-germany.png",
+   "soviet": "infantry-soviet.png",
+   "japan": "infantry-japan.png"
+  },
+  "armor": {
+   "us": "armor-us.png",
+   "britain": "armor-britain.png",
+   "germany": "armor-germany.png",
+   "germany_special": "armor-germany_special.png",
+   "soviet": "armor-soviet.png"
+  },
+  "fighter": {
+   "us": "fighter-us.png",
+   "britain": "fighter-britain.png",
+   "germany": "fighter-germany.png",
+   "soviet": "fighter-soviet.png",
+   "japan": "fighter-japan.png"
+  },
+  "medium_bomber": {
+   "us": "medium_bomber-us.png",
+   "germany": "medium_bomber-germany.png",
+   "japan": "medium_bomber-japan.png"
+  },
+  "heavy_bomber": {
+   "us": "heavy_bomber-us.png",
+   "us_b29": "heavy_bomber-us_b29.png",
+   "britain": "heavy_bomber-britain.png"
+  },
+  "transport": {
+   "us": "transport-us.svg"
+  },
+  "ship_shared": {
+   "carrier": "ship_shared-carrier.png",
+   "battleship": "ship_shared-battleship.png",
+   "destroyer": "ship_shared-destroyer.png",
+   "submarine": "ship_shared-submarine.png",
+   "landing_craft": "ship_shared-landing_craft.svg"
+  }
+ },
+ "rules": [
+  "one silhouette per nation per type",
+  "germany_special (Tiger) only when the day story names a Tiger or heavy tank unit",
+  "ships are one shared set in nation colors"
+ ]
+}

@@ -1,0 +1,223 @@
+{
+ "_note": "TEST ONLY. Positions copied from the 19 Nov mockup, drawn from memory, not verified. Not for posting. 20 Nov 2026: 7th Army start moved from 6.55 to 6.50 E because the pre render check refused it as partly off screen.",
+ "asOf": "2400 hrs, 16 Dec 1944",
+ "subtitle": "Three German armies hit the Ardennes",
+ "tonight": "The line tonight. It moves again tomorrow.",
+ "pieces": [
+  {
+   "id": "6pz",
+   "side": "german",
+   "nation": "germany",
+   "type": "armor",
+   "label": "6th Panzer Army",
+   "from": [
+    6.55,
+    50.43
+   ],
+   "to": [
+    6.38,
+    50.4
+   ]
+  },
+  {
+   "id": "5pz",
+   "side": "german",
+   "nation": "germany",
+   "type": "armor",
+   "label": "5th Panzer Army",
+   "from": [
+    6.45,
+    50.12
+   ],
+   "to": [
+    6.21,
+    50.1
+   ]
+  },
+  {
+   "id": "7a",
+   "side": "german",
+   "nation": "germany",
+   "type": "infantry",
+   "label": "7th Army",
+   "from": [
+    6.5,
+    49.9
+   ],
+   "to": [
+    6.42,
+    49.92
+   ]
+  },
+  {
+   "id": "99",
+   "side": "allied",
+   "nation": "us",
+   "type": "infantry",
+   "label": "99th Infantry",
+   "from": [
+    6.12,
+    50.49
+   ]
+  },
+  {
+   "id": "106",
+   "side": "allied",
+   "nation": "us",
+   "type": "infantry",
+   "label": "106th Infantry",
+   "from": [
+    6.2,
+    50.27
+   ]
+  },
+  {
+   "id": "28",
+   "side": "allied",
+   "nation": "us",
+   "type": "infantry",
+   "label": "28th Infantry",
+   "from": [
+    5.98,
+    50.05
+   ]
+  },
+  {
+   "id": "4",
+   "side": "allied",
+   "nation": "us",
+   "type": "infantry",
+   "label": "4th Infantry",
+   "from": [
+    6.1,
+    49.76
+   ]
+  },
+  {
+   "id": "9af",
+   "side": "allied",
+   "nation": "us",
+   "type": "fighter",
+   "label": "9th Air Force",
+   "from": [
+    5.72,
+    50.38
+   ],
+   "note": "grounded"
+  }
+ ],
+ "lineAM": [
+  [
+   6.24,
+   50.57
+  ],
+  [
+   6.29,
+   50.5
+  ],
+  [
+   6.36,
+   50.42
+  ],
+  [
+   6.42,
+   50.35
+  ],
+  [
+   6.46,
+   50.29
+  ],
+  [
+   6.36,
+   50.21
+  ],
+  [
+   6.18,
+   50.13
+  ],
+  [
+   6.14,
+   50.04
+  ],
+  [
+   6.21,
+   49.93
+  ],
+  [
+   6.31,
+   49.86
+  ],
+  [
+   6.43,
+   49.81
+  ],
+  [
+   6.52,
+   49.73
+  ]
+ ],
+ "linePM": [
+  [
+   6.24,
+   50.57
+  ],
+  [
+   6.22,
+   50.5
+  ],
+  [
+   6.23,
+   50.42
+  ],
+  [
+   6.3,
+   50.35
+  ],
+  [
+   6.44,
+   50.29
+  ],
+  [
+   6.3,
+   50.21
+  ],
+  [
+   6.1,
+   50.13
+  ],
+  [
+   6.06,
+   50.04
+  ],
+  [
+   6.14,
+   49.93
+  ],
+  [
+   6.24,
+   49.85
+  ],
+  [
+   6.38,
+   49.82
+  ],
+  [
+   6.5,
+   49.74
+  ]
+ ],
+ "pushes": [
+  {
+   "id": "6pz",
+   "t0": 2.4
+  },
+  {
+   "id": "5pz",
+   "t0": 5.6
+  },
+  {
+   "id": "7a",
+   "t0": 8.8
+  }
+ ]
+}
