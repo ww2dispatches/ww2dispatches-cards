@@ -143,6 +143,16 @@ function drawFlash(cv,img,p){
   const handleBase=bottom, rowBase=bottom-(2.6*u*k)-1.2*u, dateBase=rowBase-3.6*u*k-1.6*u;
   ctx.fillStyle=FLASH_CREAM; ctx.font=`700 ${13*u*k}px Oswald`; ctx.letterSpacing=`${.01*13*u}px`;
   ctx.fillText(shortDate(p.date),m,dateBase);
+  /* Kicker title (added 19 Nov 2026, Brian; Card Design doc, "Flash card"): the event's name in capitals, directly
+     above the big date, in the pull line's gold. Every Flash card carries one. It reads p.kicker, falling back to
+     p.title, and shrinks to fit one line across the card. */
+  const kick=((p.kicker||p.title||"")+"").trim().toUpperCase();
+  if(kick){
+    ctx.save(); let ks=3.6*u*k; ctx.fillStyle=FLASH_GOLD;
+    const setK=()=>{ ctx.font=`600 ${ks}px Oswald`; ctx.letterSpacing=`${.12*ks}px`; };
+    setK(); while(ctx.measureText(kick).width>W-2*m && ks>2.2*u){ ks*=.95; setK(); }
+    ctx.fillText(kick,m+.3*u,dateBase-13*u*k*.8-2.4*u); ctx.restore();
+  }
   ctx.font=`400 ${3.6*u*k}px "Special Elite"`; ctx.letterSpacing="0px";
   ctx.fillText(p.place||"",m,rowBase);
   ctx.textAlign="right";
