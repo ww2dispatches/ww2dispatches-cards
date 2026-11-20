@@ -97,6 +97,16 @@
   "wikidata": "Q4547811",
   "source": "https://en.wikipedia.org/wiki/11th_Armored_Division_(United_States)"
  },
+ "unit-11th-infantry-division-india": {
+  "name": "11th Indian Infantry Division",
+  "kind": "army division",
+  "nation": "India",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/11th_Infantry_Division_(India)",
+  "aka": [
+   "11th Indian Division"
+  ]
+ },
  "unit-11th-infantry-regiment-united-states": {
   "name": "11th Infantry Regiment",
   "kind": "U.S. infantry regiment",
@@ -138,6 +148,16 @@
   "nation": "Soviet Union",
   "source": "https://en.wikipedia.org/wiki/138th_Rifle_Division",
   "wikidata": "Q16159752"
+ },
+ "unit-13th-lancashire-parachute-battalion": {
+  "name": "13th (Lancashire) Parachute Battalion",
+  "kind": "parachute infantry battalion, 6th Airborne Division",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/13th_(Lancashire)_Parachute_Battalion",
+  "aka": [
+   "13 Para"
+  ]
  },
  "unit-141st-infantry-regiment-united-states": {
   "name": "141st Infantry Regiment",
@@ -242,6 +262,13 @@
   "nation": "Germany",
   "source": "https://en.wikipedia.org/wiki/1st_Panzer_Army",
   "wikidata": "Q163388"
+ },
+ "unit-1st-ukrainian-front": {
+  "name": "1st Ukrainian Front",
+  "kind": "Red Army front (army group)",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1st_Ukrainian_Front"
  },
  "unit-2-6th-armoured-regiment-australia": {
   "name": "2/6th Armoured Regiment (Australia)",
@@ -399,6 +426,13 @@
   "nation": "Japan",
   "wikidata": "Q101068312",
   "source": "https://en.wikipedia.org/wiki/2nd_Raiding_Brigade"
+ },
+ "unit-2nd-south-african-infantry-division": {
+  "name": "2nd South African Infantry Division",
+  "kind": "army division",
+  "nation": "South Africa",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/2nd_South_African_Infantry_Division"
  },
  "unit-30th-infantry-division-united-states": {
   "name": "30th Infantry Division",
@@ -615,6 +649,13 @@
   "source": "https://en.wikipedia.org/wiki/47th_Volksgrenadier_Division",
   "wikidata": "Q4638580"
  },
+ "unit-48th-division-imperial-japanese-army": {
+  "name": "48th Division (Imperial Japanese Army)",
+  "kind": "army division",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/48th_Division_(Imperial_Japanese_Army)"
+ },
  "unit-497th-bomb-group": {
   "name": "497th Bomb Group",
   "kind": "U.S. Army Air Forces bomb group",
@@ -812,6 +853,16 @@
   "source": "https://en.wikipedia.org/wiki/Afrika_Korps",
   "wikidata": "Q153113"
  },
+ "unit-air-transport-auxiliary": {
+  "name": "Air Transport Auxiliary",
+  "kind": "civilian aircraft ferry organization",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Air_Transport_Auxiliary",
+  "aka": [
+   "ATA"
+  ]
+ },
  "unit-all-india-muslim-league": {
   "name": "All-India Muslim League",
   "kind": "political party",
@@ -842,6 +893,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Army_Emergency_Relief",
   "wikidata": "Q4794132"
+ },
+ "unit-army-group-a": {
+  "name": "Army Group A",
+  "kind": "German army group (Caucasus, 1942 to 1943)",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Army_Group_A"
  },
  "unit-army-group-b": {
   "name": "Army Group B",
@@ -901,6 +959,20 @@
   "aka": [
    "Bell Telephone Laboratories"
   ]
+ },
+ "unit-black-sea-fleet": {
+  "name": "Black Sea Fleet",
+  "kind": "Soviet fleet",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Black_Sea_Fleet"
+ },
+ "unit-british-battalion-malaya-1941": {
+  "name": "British Battalion (Malaya 1941)",
+  "kind": "merged infantry battalion (Leicesters and East Surreys)",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/British_Battalion_(Malaya_1941)"
  },
  "unit-british-expeditionary-force-world-war-ii": {
   "name": "British Expeditionary Force (World War II)",
@@ -1030,6 +1102,13 @@
   "source": "https://en.wikipedia.org/wiki/Don_Front",
   "wikidata": "Q1241225"
  },
+ "unit-duquesne-spy-ring": {
+  "name": "Duquesne Spy Ring",
+  "kind": "German espionage network in the US",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Duquesne_Spy_Ring"
+ },
  "unit-eighth-air-force": {
   "name": "Eighth Air Force",
   "kind": "U.S. Army Air Forces numbered air force",
@@ -1063,6 +1142,17 @@
   "source": "https://en.wikipedia.org/wiki/Federal_Bureau_of_Investigation",
   "aka": [
    "FBI"
+  ]
+ },
+ "unit-fifteenth-united-states-army": {
+  "name": "Fifteenth United States Army",
+  "kind": "U.S. field army",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fifteenth_United_States_Army",
+  "aka": [
+   "Fifteenth Army",
+   "15th Army"
   ]
  },
  "unit-finnish-democratic-republic": {
@@ -1438,6 +1528,13 @@
    "U.S. Ninth Army"
   ]
  },
+ "unit-nkvd": {
+  "name": "NKVD",
+  "kind": "Soviet People's Commissariat for Internal Affairs",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/NKVD"
+ },
  "unit-no-1-squadron-raaf": {
   "name": "No. 1 Squadron RAAF",
   "kind": "Royal Australian Air Force squadron",
@@ -1451,6 +1548,13 @@
   "nation": "Britain",
   "wikidata": "Q7042904",
   "source": "https://en.wikipedia.org/wiki/No._12_Commando"
+ },
+ "unit-no-138-squadron-raf": {
+  "name": "No. 138 Squadron RAF",
+  "kind": "RAF special duties squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._138_Squadron_RAF"
  },
  "unit-no-149-squadron-raf": {
   "name": "No. 149 Squadron RAF",
@@ -1528,6 +1632,16 @@
   "wikidata": "Q7079193",
   "source": "https://en.wikipedia.org/wiki/Office_of_Civilian_Defense"
  },
+ "unit-office-of-price-administration": {
+  "name": "Office of Price Administration",
+  "kind": "federal price control and rationing agency",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Office_of_Price_Administration",
+  "aka": [
+   "OPA"
+  ]
+ },
  "unit-office-of-production-management": {
   "name": "Office of Production Management",
   "kind": "U.S. defense production agency",
@@ -1560,6 +1674,17 @@
    "Vietnam Propaganda Liberation Army"
   ]
  },
+ "unit-polish-committee-of-national-liberation": {
+  "name": "Polish Committee of National Liberation",
+  "kind": "Soviet backed Polish provisional authority",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Polish_Committee_of_National_Liberation",
+  "aka": [
+   "Lublin Committee",
+   "PKWN"
+  ]
+ },
  "unit-provisional-government-of-the-french-republic": {
   "name": "Provisional Government of the French Republic",
   "kind": "French government",
@@ -1573,6 +1698,16 @@
   "nation": "China",
   "wikidata": "Q704714",
   "source": "https://en.wikipedia.org/wiki/Provisional_Government_of_the_Republic_of_China_(1937%E2%80%931940)"
+ },
+ "unit-provisional-government-of-the-republic-of-poland": {
+  "name": "Provisional Government of the Republic of Poland",
+  "kind": "Soviet backed Polish government",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Provisional_Government_of_the_Republic_of_Poland",
+  "aka": [
+   "Lublin government"
+  ]
  },
  "unit-queen-s-own-royal-west-kent-regiment": {
   "name": "Royal West Kents",
@@ -1726,6 +1861,17 @@
   "nation": "Soviet Union",
   "source": "https://en.wikipedia.org/wiki/Stalingrad_Front",
   "wikidata": "Q1469267"
+ },
+ "unit-supreme-commander-for-the-allied-powers": {
+  "name": "Supreme Commander for the Allied Powers",
+  "kind": "Allied occupation headquarters in Japan",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Supreme_Commander_for_the_Allied_Powers",
+  "aka": [
+   "SCAP",
+   "GHQ"
+  ]
  },
  "unit-supreme-court-of-the-united-states": {
   "name": "U.S. Supreme Court",

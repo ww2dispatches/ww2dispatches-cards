@@ -357,6 +357,18 @@
   "source": "https://en.wikipedia.org/wiki/Pratt_%26_Whitney_R-4360_Wasp_Major",
   "wikidata": "Q2107993"
  },
+ "machine-proximity-fuze": {
+  "name": "Proximity fuze",
+  "kind": "radio fuze for shells",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Proximity_fuze",
+  "aka": [
+   "VT fuze",
+   "variable time fuze",
+   "Mark 32 fuze"
+  ]
+ },
  "machine-rolls-royce-merlin": {
   "name": "Rolls-Royce Merlin",
   "kind": "V-12 aircraft engine",
@@ -433,6 +445,13 @@
   "nation": "US",
   "wikidata": "Q1195999",
   "source": "https://en.wikipedia.org/wiki/The_Nazi_Plan"
+ },
+ "machine-times-square-ball": {
+  "name": "Times Square Ball",
+  "kind": "New Year's Eve time ball, New York",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Times_Square_Ball"
  },
  "machine-v-1-flying-bomb": {
   "name": "V-1 flying bomb",

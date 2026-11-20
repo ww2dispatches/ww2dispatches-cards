@@ -29,6 +29,15 @@
    "Alcan Highway"
   ]
  },
+ "place-alexandria": {
+  "name": "Alexandria",
+  "kind": "city",
+  "nation": "Egypt",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Alexandria",
+  "lat": null,
+  "lon": null
+ },
  "place-algiers": {
   "name": "Algiers",
   "kind": "city",
@@ -98,6 +107,15 @@
    "Ballale",
    "Ballalae"
   ]
+ },
+ "place-bardia": {
+  "name": "Bardia",
+  "kind": "port town",
+  "nation": "Libya",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bardia",
+  "lat": null,
+  "lon": null
  },
  "place-bari": {
   "name": "Bari",
@@ -399,6 +417,15 @@
   "source": "https://en.wikipedia.org/wiki/Buenos_Aires",
   "lat": -34.5997,
   "lon": -58.3819
+ },
+ "place-buna-papua-new-guinea": {
+  "name": "Buna, Papua New Guinea",
+  "kind": "village and beachhead",
+  "nation": "Papua New Guinea",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Buna,_Papua_New_Guinea",
+  "lat": null,
+  "lon": null
  },
  "place-burauen": {
   "name": "Burauen",
@@ -716,6 +743,15 @@
    "Salisbury Hall"
   ]
  },
+ "place-debrecen": {
+  "name": "Debrecen",
+  "kind": "city",
+  "nation": "Hungary",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Debrecen",
+  "lat": null,
+  "lon": null
+ },
  "place-delme-moselle": {
   "name": "Delme",
   "kind": "village",
@@ -778,6 +814,15 @@
   "wikidata": "Q1731",
   "lat": 51.0493,
   "lon": 13.7381
+ },
+ "place-dublin": {
+  "name": "Dublin",
+  "kind": "city",
+  "nation": "Ireland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Dublin",
+  "lat": null,
+  "lon": null
  },
  "place-duren": {
   "name": "Duren",
@@ -958,6 +1003,19 @@
   "wikidata": "Q1794",
   "lat": 50.1106,
   "lon": 8.6822
+ },
+ "place-free-city-of-danzig": {
+  "name": "Free City of Danzig",
+  "kind": "city state under League of Nations protection",
+  "nation": "Danzig",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Free_City_of_Danzig",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Danzig",
+   "Gdansk"
+  ]
  },
  "place-gearhart-mountain": {
   "name": "Gearhart Mountain",
@@ -1809,6 +1867,15 @@
   "source": "https://en.wikipedia.org/wiki/Liverpool",
   "lat": 53.4072,
   "lon": -2.9917
+ },
+ "place-llandaff-cathedral": {
+  "name": "Llandaff Cathedral",
+  "kind": "cathedral",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Llandaff_Cathedral",
+  "lat": null,
+  "lon": null
  },
  "place-loch-ewe": {
   "name": "Loch Ewe",
@@ -2708,6 +2775,15 @@
    "No. 21 Maintenance Unit"
   ]
  },
+ "place-raf-tangmere": {
+  "name": "RAF Tangmere",
+  "kind": "RAF airfield, West Sussex",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/RAF_Tangmere",
+  "lat": null,
+  "lon": null
+ },
  "place-raf-thorney-island": {
   "name": "RAF Thorney Island",
   "kind": "airfield",
@@ -3253,6 +3329,15 @@
   "lat": 59.6442,
   "lon": 33.5422
  },
+ "place-times-square": {
+  "name": "Times Square",
+  "kind": "square in Manhattan, New York City",
+  "nation": "US",
+  "wikidata": null,
+  "lat": null,
+  "lon": null,
+  "source": "https://en.wikipedia.org/wiki/Times_Square"
+ },
  "place-tinian-northern-mariana-islands": {
   "name": "Tinian",
   "kind": "island",
@@ -3422,6 +3507,15 @@
   "wikidata": "Q876024",
   "lat": 50.4883,
   "lon": 2.7458
+ },
+ "place-victoria-terrasse": {
+  "name": "Victoria Terrasse",
+  "kind": "Oslo building, Gestapo headquarters in occupied Norway",
+  "nation": "Norway",
+  "wikidata": null,
+  "lat": null,
+  "lon": null,
+  "source": "https://en.wikipedia.org/wiki/Victoria_Terrasse"
  },
  "place-vigan": {
   "name": "Vigan",

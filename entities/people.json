@@ -73,6 +73,13 @@
   "wikidata": "Q37064",
   "source": "https://en.wikipedia.org/wiki/Alexander_Fleming"
  },
+ "person-alexander-patch": {
+  "name": "Alexander Patch",
+  "kind": "U.S. Army general, commander of the Seventh Army",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Alexander_Patch"
+ },
  "person-alexei-vinogradov": {
   "name": "Alexei Vinogradov",
   "kind": "Soviet commander of the 44th Rifle Division",
@@ -96,6 +103,13 @@
   "aka": [
    "Alfried Krupp"
   ]
+ },
+ "person-amy-johnson": {
+  "name": "Amy Johnson",
+  "kind": "aviator and Air Transport Auxiliary ferry pilot",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Amy_Johnson"
  },
  "person-andre-marquis": {
   "name": "Andre Marquis",
@@ -128,6 +142,16 @@
   "wikidata": "Q510846",
   "source": "https://en.wikipedia.org/wiki/Angelo_Iachino"
  },
+ "person-annibale-bergonzoli": {
+  "name": "Annibale Bergonzoli",
+  "kind": "Italian lieutenant general, commander at Bardia",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Annibale_Bergonzoli",
+  "aka": [
+   "Electric Whiskers"
+  ]
+ },
  "person-anthony-eden": {
   "name": "Anthony Eden",
   "kind": "British foreign secretary",
@@ -159,12 +183,29 @@
    "Bomber Harris"
   ]
  },
+ "person-arthur-tedder-1st-baron-tedder": {
+  "name": "Arthur Tedder",
+  "kind": "RAF air chief marshal, Eisenhower's deputy",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Arthur_Tedder,_1st_Baron_Tedder",
+  "aka": [
+   "Lord Tedder"
+  ]
+ },
  "person-arthur-wahl": {
   "name": "Arthur Wahl",
   "kind": "American chemist",
   "nation": "US",
   "wikidata": "Q472997",
   "source": "https://en.wikipedia.org/wiki/Arthur_Wahl"
+ },
+ "person-artur-schmitt": {
+  "name": "Artur Schmitt",
+  "kind": "army general, Bardia garrison commander",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Artur_Schmitt"
  },
  "person-arvid-harnack": {
   "name": "Arvid Harnack",
@@ -187,6 +228,16 @@
   "wikidata": "Q76876",
   "source": "https://en.wikipedia.org/wiki/Baldur_von_Schirach"
  },
+ "person-barbara-bush": {
+  "name": "Barbara Bush",
+  "kind": "wife of George H. W. Bush, later first lady",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Barbara_Bush",
+  "aka": [
+   "Barbara Pierce"
+  ]
+ },
  "person-barnes-wallis": {
   "name": "Barnes Wallis",
   "kind": "British engineer",
@@ -200,6 +251,17 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Barney_F._Hajiro",
   "wikidata": "Q3243793"
+ },
+ "person-bela-miklos": {
+  "name": "Béla Miklós",
+  "kind": "Hungarian general, head of the 1944 Provisional National Government",
+  "nation": "Hungary",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/B%C3%A9la_Mikl%C3%B3s",
+  "aka": [
+   "Bela Miklos",
+   "Béla Dálnoki Miklós"
+  ]
  },
  "person-benito-mussolini": {
   "name": "Benito Mussolini",
@@ -227,6 +289,13 @@
   "aka": [
    "Montgomery"
   ]
+ },
+ "person-bertram-ramsay": {
+  "name": "Bertram Ramsay",
+  "kind": "navy admiral, Allied Naval Commander in Chief",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bertram_Ramsay"
  },
  "person-bill-clinton": {
   "name": "Bill Clinton",
@@ -536,6 +605,13 @@
    "Archbishop Damaskinos"
   ]
  },
+ "person-daniel-e-barbey": {
+  "name": "Daniel E. Barbey",
+  "kind": "navy admiral, amphibious force commander",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Daniel_E._Barbey"
+ },
  "person-david-akui": {
   "name": "David Akui",
   "kind": "Hawaii National Guard corporal who captured Sakamaki",
@@ -605,6 +681,13 @@
    "Donald Bennett",
    "D.C.T. Bennett"
   ]
+ },
+ "person-donald-b-duncan": {
+  "name": "Donald B. Duncan",
+  "kind": "U.S. Navy officer, first captain of USS Essex",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Donald_B._Duncan"
  },
  "person-donald-blakeslee": {
   "name": "Donald Blakeslee",
@@ -827,6 +910,16 @@
    "Eric Melrose Brown"
   ]
  },
+ "person-eric-drummond-7th-earl-of-perth": {
+  "name": "Eric Drummond, 7th Earl of Perth",
+  "kind": "diplomat, British ambassador to Italy",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Eric_Drummond,_7th_Earl_of_Perth",
+  "aka": [
+   "Sir Eric Drummond"
+  ]
+ },
  "person-erich-bey": {
   "name": "Erich Bey",
   "kind": "Kriegsmarine admiral, task group commander at North Cape",
@@ -938,6 +1031,17 @@
   "source": "https://en.wikipedia.org/wiki/Ernst_vom_Rath",
   "wikidata": "Q76883"
  },
+ "person-ernst-von-weizsacker": {
+  "name": "Ernst von Weizsacker",
+  "kind": "German diplomat, State Secretary of the Foreign Office",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ernst_von_Weizs%C3%A4cker",
+  "aka": [
+   "Ernst von Weizsaecker",
+   "Ernst von Weizsäcker"
+  ]
+ },
  "person-erwin-rommel": {
   "name": "Erwin Rommel",
   "kind": "German general",
@@ -1032,6 +1136,13 @@
   "nation": "US",
   "wikidata": "Q40912",
   "source": "https://en.wikipedia.org/wiki/Frank_Sinatra"
+ },
+ "person-frank-whittle": {
+  "name": "Frank Whittle",
+  "kind": "RAF officer and inventor of the turbojet engine",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Frank_Whittle"
  },
  "person-franklin-d-roosevelt": {
   "name": "Franklin D. Roosevelt",
@@ -1137,6 +1248,16 @@
    "Friedrich-Wilhelm Müller"
   ]
  },
+ "person-fritz-duquesne": {
+  "name": "Fritz Joubert Duquesne",
+  "kind": "German spy ring leader",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fritz_Duquesne",
+  "aka": [
+   "Fritz Duquesne"
+  ]
+ },
  "person-fritz-julius-kuhn": {
   "name": "Fritz Julius Kuhn",
   "kind": "leader of the German American Bund",
@@ -1146,6 +1267,13 @@
   "aka": [
    "Fritz Kuhn"
   ]
+ },
+ "person-fritz-julius-lemp": {
+  "name": "Fritz-Julius Lemp",
+  "kind": "Kriegsmarine U-boat commander (U-30, U-110)",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fritz-Julius_Lemp"
  },
  "person-fritz-strassmann": {
   "name": "Fritz Strassmann",
@@ -1237,6 +1365,13 @@
   "nation": "US",
   "wikidata": "Q5540003",
   "source": "https://en.wikipedia.org/wiki/George_H._Cannon"
+ },
+ "person-george-h-w-bush": {
+  "name": "George H. W. Bush",
+  "kind": "US Navy aviator, later 41st president",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/George_H._W._Bush"
  },
  "person-george-ii-of-greece": {
   "name": "George II of Greece",
@@ -1403,6 +1538,13 @@
   "nation": "Ethiopia",
   "wikidata": "Q41178",
   "source": "https://en.wikipedia.org/wiki/Haile_Selassie"
+ },
+ "person-hajime-sugiyama": {
+  "name": "Hajime Sugiyama",
+  "kind": "Imperial Japanese Army chief of the general staff",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hajime_Sugiyama"
  },
  "person-hal-b-wallis": {
   "name": "Hal Wallis",
@@ -1675,6 +1817,13 @@
   "wikidata": "Q67997",
   "source": "https://en.wikipedia.org/wiki/Herbert_Lange"
  },
+ "person-herbert-lumsden": {
+  "name": "Herbert Lumsden",
+  "kind": "British Army lieutenant general, Churchill's liaison officer to MacArthur",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Herbert_Lumsden"
+ },
  "person-herman-bottcher": {
   "name": "Herman Bottcher",
   "kind": "U.S. Army soldier, German born",
@@ -1720,6 +1869,17 @@
   "nation": "Japan",
   "wikidata": "Q155777",
   "source": "https://en.wikipedia.org/wiki/Hideki_Yukawa"
+ },
+ "person-hiranuma-kiichiro": {
+  "name": "Hiranuma Kiichirō",
+  "kind": "Prime Minister of Japan, 1939",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hiranuma_Kiichir%C5%8D",
+  "aka": [
+   "Kiichiro Hiranuma",
+   "Baron Hiranuma"
+  ]
  },
  "person-hirohito": {
   "name": "Hirohito",
@@ -2007,6 +2167,16 @@
   "source": "https://en.wikipedia.org/wiki/James_Van_Fleet",
   "wikidata": "Q490171"
  },
+ "person-jan-kubis": {
+  "name": "Jan Kubiš",
+  "kind": "Czechoslovak army paratrooper, Operation Anthropoid",
+  "nation": "Czechoslovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Jan_Kubi%C5%A1",
+  "aka": [
+   "Jan Kubis"
+  ]
+ },
  "person-jean-de-laborde": {
   "name": "Jean de Laborde",
   "kind": "French admiral",
@@ -2072,6 +2242,13 @@
   "nation": "Germany",
   "wikidata": "Q91205",
   "source": "https://en.wikipedia.org/wiki/Johann_von_Ravenstein"
+ },
+ "person-johannes-blaskowitz": {
+  "name": "Johannes Blaskowitz",
+  "kind": "German Army general, commander of Army Group G",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Johannes_Blaskowitz"
  },
  "person-john-anderson-1st-viscount-waverley": {
   "name": "John Anderson, 1st Viscount Waverley",
@@ -2174,6 +2351,13 @@
   "source": "https://en.wikipedia.org/wiki/John_Thach",
   "wikidata": "Q425718"
  },
+ "person-jorma-sarvanto": {
+  "name": "Jorma Sarvanto",
+  "kind": "Finnish fighter pilot and ace",
+  "nation": "Finland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Jorma_Sarvanto"
+ },
  "person-josef-kramer": {
   "name": "Josef Kramer",
   "kind": "SS commandant of Bergen-Belsen, executed 1945",
@@ -2231,6 +2415,27 @@
   "source": "https://en.wikipedia.org/wiki/Josip_Broz_Tito",
   "aka": [
    "Tito"
+  ]
+ },
+ "person-jozef-beck": {
+  "name": "Józef Beck",
+  "kind": "Polish foreign minister",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/J%C3%B3zef_Beck",
+  "aka": [
+   "Jozef Beck",
+   "Colonel Beck"
+  ]
+ },
+ "person-jozef-gabcik": {
+  "name": "Jozef Gabčík",
+  "kind": "Czechoslovak army paratrooper, Operation Anthropoid",
+  "nation": "Czechoslovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Jozef_Gab%C4%8D%C3%ADk",
+  "aka": [
+   "Jozef Gabcik"
   ]
  },
  "person-jozsef-mindszenty": {
@@ -2306,6 +2511,16 @@
   "nation": "US",
   "wikidata": "Q3106481",
   "source": "https://en.wikipedia.org/wiki/Kenesaw_Mountain_Landis"
+ },
+ "person-kenneth-walker-general": {
+  "name": "Kenneth Walker",
+  "kind": "USAAF brigadier general, commander of V Bomber Command",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kenneth_Walker_(general)",
+  "aka": [
+   "Kenneth N. Walker"
+  ]
  },
  "person-kichisaburo-nomura": {
   "name": "Kichisaburō Nomura",
@@ -2444,6 +2659,20 @@
   "nation": "Austria",
   "wikidata": "Q11715",
   "source": "https://en.wikipedia.org/wiki/Leopold_Figl"
+ },
+ "person-leslie-groves": {
+  "name": "Leslie Groves",
+  "kind": "U.S. Army general, director of the Manhattan Project",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Leslie_Groves"
+ },
+ "person-leslie-hore-belisha": {
+  "name": "Leslie Hore-Belisha",
+  "kind": "British Secretary of State for War, 1937 to 1940",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Leslie_Hore-Belisha"
  },
  "person-lewis-h-brereton": {
   "name": "Lewis H. Brereton",
@@ -2771,6 +3000,13 @@
   "nation": "Britain",
   "wikidata": "Q10664",
   "source": "https://en.wikipedia.org/wiki/Neville_Chamberlain"
+ },
+ "person-nikolai-vatutin": {
+  "name": "Nikolai Vatutin",
+  "kind": "Soviet general, commander of the 1st Ukrainian Front",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Nikolai_Vatutin"
  },
  "person-nobuhito-prince-takamatsu": {
   "name": "Nobuhito, Prince Takamatsu",
@@ -3144,6 +3380,20 @@
   "source": "https://en.wikipedia.org/wiki/Robert_H._Jackson",
   "wikidata": "Q505450"
  },
+ "person-robert-kempner": {
+  "name": "Robert Kempner",
+  "kind": "German born American lawyer, Nuremberg prosecutor",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Robert_Kempner"
+ },
+ "person-robert-l-eichelberger": {
+  "name": "Robert L. Eichelberger",
+  "kind": "army general",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Robert_L._Eichelberger"
+ },
  "person-robert-morgan": {
   "name": "Robert K. Morgan",
   "kind": "U.S. Army Air Forces pilot",
@@ -3153,6 +3403,13 @@
   "aka": [
    "Robert Morgan"
   ]
+ },
+ "person-robert-sherbrooke": {
+  "name": "Robert St Vincent Sherbrooke",
+  "kind": "Royal Navy officer, Victoria Cross at the Barents Sea",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Robert_Sherbrooke"
  },
  "person-robert-tilney": {
   "name": "Robert Tilney",
@@ -3205,6 +3462,16 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Ross_T._McIntire",
   "wikidata": "Q70513448"
+ },
+ "person-roza-robota": {
+  "name": "Roza Robota",
+  "kind": "Jewish prisoner and resistance member at Auschwitz",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Roza_Robota",
+  "aka": [
+   "Róża Robota"
+  ]
  },
  "person-rudolf-hess": {
   "name": "Rudolf Hess",
@@ -3504,6 +3771,13 @@
   "source": "https://en.wikipedia.org/wiki/Victor_Buller_Turner",
   "wikidata": "Q3826746"
  },
+ "person-victor-emmanuel-iii": {
+  "name": "Victor Emmanuel III",
+  "kind": "King of Italy 1900 to 1946",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Victor_Emmanuel_III"
+ },
  "person-vidkun-quisling": {
   "name": "Vidkun Quisling",
   "kind": "Norwegian fascist politician",
@@ -3748,6 +4022,17 @@
    "Ed Dyess"
   ]
  },
+ "person-william-g-sebold": {
+  "name": "William G. Sebold",
+  "kind": "FBI double agent",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/William_G._Sebold",
+  "aka": [
+   "William Sebold",
+   "Harry Sawyer"
+  ]
+ },
  "person-william-halsey-jr": {
   "name": "William Halsey",
   "kind": "U.S. Navy admiral",
@@ -3790,6 +4075,16 @@
   "source": "https://en.wikipedia.org/wiki/William_Lyon_Mackenzie_King",
   "aka": [
    "Mackenzie King"
+  ]
+ },
+ "person-william-morrison-1st-viscount-dunrossil": {
+  "name": "William Morrison, 1st Viscount Dunrossil",
+  "kind": "British Minister of Food 1939 to 1940",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/William_Morrison,_1st_Viscount_Dunrossil",
+  "aka": [
+   "W.S. Morrison"
   ]
  },
  "person-william-pickens": {

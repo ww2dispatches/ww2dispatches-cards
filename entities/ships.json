@@ -166,6 +166,16 @@
    "Nuremberg"
   ]
  },
+ "ship-german-destroyer-z27": {
+  "name": "German destroyer Z27",
+  "kind": "Type 1936A destroyer",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_destroyer_Z27",
+  "aka": [
+   "Z27"
+  ]
+ },
  "ship-german-destroyer-z35": {
   "name": "German destroyer Z35",
   "kind": "Kriegsmarine destroyer",
@@ -213,6 +223,16 @@
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-161_(1941)",
   "wikidata": "Q481312"
  },
+ "ship-german-submarine-u-164-1941": {
+  "name": "German submarine U-164",
+  "kind": "Type IXC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-164_(1941)",
+  "aka": [
+   "U-164"
+  ]
+ },
  "ship-german-submarine-u-221": {
   "name": "U-221",
   "kind": "German Type VIIC submarine",
@@ -234,12 +254,32 @@
   "wikidata": "Q4051987",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-284"
  },
+ "ship-german-submarine-u-30-1936": {
+  "name": "German submarine U-30 (1936)",
+  "kind": "Type VIIA U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-30_(1936)",
+  "aka": [
+   "U-30"
+  ]
+ },
  "ship-german-submarine-u-31-1936": {
   "name": "U-31",
   "kind": "Kriegsmarine Type VIIA U-boat",
   "nation": "Germany",
   "wikidata": "Q602503",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-31_(1936)"
+ },
+ "ship-german-submarine-u-322": {
+  "name": "German submarine U-322",
+  "kind": "Type VIIC/41 U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-322",
+  "aka": [
+   "U-322"
+  ]
  },
  "ship-german-submarine-u-331": {
   "name": "U-331",
@@ -331,6 +371,16 @@
   "wikidata": "Q549452",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-73_(1940)"
  },
+ "ship-german-submarine-u-75-1940": {
+  "name": "German submarine U-75 (1940)",
+  "kind": "Type VIIB U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-75_(1940)",
+  "aka": [
+   "U-75"
+  ]
+ },
  "ship-german-submarine-u-751": {
   "name": "German submarine U-751",
   "kind": "Type VIIC U-boat",
@@ -382,6 +432,13 @@
   "nation": "Japan",
   "wikidata": "Q27628474",
   "source": "https://en.wikipedia.org/wiki/Hawaii_Maru"
+ },
+ "ship-hmas-australia-d84": {
+  "name": "HMAS Australia (D84)",
+  "kind": "heavy cruiser",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMAS_Australia_(D84)"
  },
  "ship-hmas-nestor": {
   "name": "HMAS Nestor (G02)",
@@ -533,6 +590,13 @@
   ],
   "note": "Sunk as the inter island steamer SS Corregidor on 17 December 1941; the Wikipedia title SS Corregidor redirects here."
  },
+ "ship-hms-enterprise-d52": {
+  "name": "HMS Enterprise (D52)",
+  "kind": "Emerald class light cruiser",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Enterprise_(D52)"
+ },
  "ship-hms-exeter-68": {
   "name": "HMS Exeter (68)",
   "kind": "heavy cruiser",
@@ -563,6 +627,13 @@
   "nation": "Britain",
   "wikidata": "Q2735915",
   "source": "https://en.wikipedia.org/wiki/HMS_Galatea_(71)"
+ },
+ "ship-hms-glasgow-c21": {
+  "name": "HMS Glasgow (C21)",
+  "kind": "Town class light cruiser",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Glasgow_(C21)"
  },
  "ship-hms-graph": {
   "name": "U-570",
@@ -617,6 +688,16 @@
   "wikidata": "Q1550343",
   "source": "https://en.wikipedia.org/wiki/HMS_Kandahar"
  },
+ "ship-hms-kipling": {
+  "name": "HMS Kipling (F91)",
+  "kind": "K class destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Kipling",
+  "aka": [
+   "HMS Kipling"
+  ]
+ },
  "ship-hms-legion-g74": {
   "name": "HMS Legion (G74)",
   "kind": "destroyer",
@@ -651,6 +732,13 @@
   "nation": "Britain",
   "wikidata": "Q1565144",
   "source": "https://en.wikipedia.org/wiki/HMS_Ocean_(R68)"
+ },
+ "ship-hms-onslow-g17": {
+  "name": "HMS Onslow (G17)",
+  "kind": "Royal Navy destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Onslow_(G17)"
  },
  "ship-hms-perseus-n36": {
   "name": "HMS Perseus (N36)",
@@ -983,6 +1071,16 @@
   "wikidata": "Q4385709",
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Hayate_(1925)"
  },
+ "ship-japanese-destroyer-hinoki-1944": {
+  "name": "Japanese destroyer Hinoki (1944)",
+  "kind": "Matsu-class escort destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Hinoki_(1944)",
+  "aka": [
+   "Hinoki"
+  ]
+ },
  "ship-japanese-destroyer-isokaze-1939": {
   "name": "Isokaze",
   "kind": "destroyer",
@@ -1003,6 +1101,16 @@
   "nation": "Japan",
   "wikidata": "Q2463702",
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Kiyoshimo"
+ },
+ "ship-japanese-destroyer-momi-1944": {
+  "name": "Japanese destroyer Momi (1944)",
+  "kind": "Matsu-class escort destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Momi_(1944)",
+  "aka": [
+   "Momi"
+  ]
  },
  "ship-japanese-destroyer-okinami": {
   "name": "Okinami",
@@ -1213,6 +1321,16 @@
   "wikidata": "Q155660",
   "source": "https://en.wikipedia.org/wiki/MV_Dunedin_Star"
  },
+ "ship-mv-kerlogue": {
+  "name": "MV Kerlogue",
+  "kind": "Irish motor coaster",
+  "nation": "Ireland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/MV_Kerlogue",
+  "aka": [
+   "Kerlogue"
+  ]
+ },
  "ship-mv-struma": {
   "name": "MV Struma",
   "kind": "refugee ship",
@@ -1274,6 +1392,13 @@
    "Krasnyi Kavkaz"
   ]
  },
+ "ship-soviet-submarine-s-2": {
+  "name": "Soviet submarine S-2",
+  "kind": "S-class submarine",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Soviet_submarine_S-2"
+ },
  "ship-ss-absaroka": {
   "name": "SS Absaroka",
   "kind": "American lumber freighter",
@@ -1308,6 +1433,16 @@
   "nation": "US",
   "wikidata": "Q7393536",
   "source": "https://en.wikipedia.org/wiki/SS_Emidio"
+ },
+ "ship-ss-empire-javelin": {
+  "name": "SS Empire Javelin",
+  "kind": "British infantry landing ship and troopship",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Empire_Javelin",
+  "aka": [
+   "Empire Javelin"
+  ]
  },
  "ship-ss-europa-1928": {
   "name": "SS Europa (1928)",
@@ -1526,6 +1661,13 @@
   "source": "https://en.wikipedia.org/wiki/USS_Gambier_Bay",
   "wikidata": "Q605764"
  },
+ "ship-uss-grayling-ss-209": {
+  "name": "USS Grayling (SS-209)",
+  "kind": "U.S. Navy submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Grayling_(SS-209)"
+ },
  "ship-uss-gwin-dd-433": {
   "name": "USS Gwin (DD-433)",
   "kind": "destroyer",
@@ -1539,6 +1681,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/USS_Hancock_(CV-19)",
   "wikidata": "Q1024493"
+ },
+ "ship-uss-helena-cl-50": {
+  "name": "USS Helena (CL-50)",
+  "kind": "light cruiser",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Helena_(CL-50)"
  },
  "ship-uss-hilary-p-jones": {
   "name": "USS Hilary P. Jones (DD-427)",
@@ -1631,6 +1780,16 @@
   "source": "https://en.wikipedia.org/wiki/USS_LST-282",
   "wikidata": "Q10386458"
  },
+ "ship-uss-manila-bay": {
+  "name": "USS Manila Bay (CVE-61)",
+  "kind": "escort carrier",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Manila_Bay",
+  "aka": [
+   "Manila Bay"
+  ]
+ },
  "ship-uss-massachusetts-bb-59": {
   "name": "USS Massachusetts (BB-59)",
   "kind": "battleship",
@@ -1675,6 +1834,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/USS_New_Jersey_(BB-62)",
   "wikidata": "Q507603"
+ },
+ "ship-uss-new-mexico-bb-40": {
+  "name": "USS New Mexico (BB-40)",
+  "kind": "US Navy battleship",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_New_Mexico_(BB-40)"
  },
  "ship-uss-new-york-bb-34": {
   "name": "USS New York (BB-34)",
