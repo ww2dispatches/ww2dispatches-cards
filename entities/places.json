@@ -1,0 +1,83 @@
+{
+ "place-santa-cruz-islands": {
+  "name": "Santa Cruz Islands",
+  "kind": "island group",
+  "nation": "Solomon Islands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Santa_Cruz_Islands",
+  "lat": null,
+  "lon": null
+ },
+ "place-tokyo": {
+  "name": "Tokyo",
+  "kind": "city",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tokyo",
+  "lat": null,
+  "lon": null
+ },
+ "place-isley-field-saipan": {
+  "name": "Isley Field, Saipan",
+  "kind": "airfield",
+  "nation": "Northern Mariana Islands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Isely_Field",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Isely Field"
+  ]
+ },
+ "place-musashino-aircraft-plant": {
+  "name": "Nakajima Musashino plant",
+  "kind": "aircraft engine factory",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Nakajima_Aircraft_Company",
+  "lat": null,
+  "lon": null
+ },
+ "place-liverpool": {
+  "name": "Liverpool",
+  "kind": "city",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Liverpool",
+  "lat": null,
+  "lon": null
+ },
+ "place-rostov-on-don": {
+  "name": "Rostov-on-Don",
+  "kind": "city",
+  "nation": "Russia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Rostov-on-Don",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Rostov"
+  ]
+ },
+ "place-tehran": {
+  "name": "Tehran",
+  "kind": "city",
+  "nation": "Iran",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tehran",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Teheran"
+  ]
+ },
+ "place-philadelphia-municipal-stadium": {
+  "name": "Municipal Stadium, Philadelphia",
+  "kind": "stadium",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/John_F._Kennedy_Stadium_(Philadelphia)",
+  "lat": null,
+  "lon": null
+ }
+}

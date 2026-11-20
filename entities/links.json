@@ -1,0 +1,82 @@
+{
+ "1942-10-26-hornet": [
+  {
+   "id": "ship-uss-hornet-cv-8",
+   "role": "subject"
+  },
+  {
+   "id": "op-battle-of-santa-cruz-islands",
+   "role": "subject"
+  },
+  {
+   "id": "place-santa-cruz-islands",
+   "role": "involved"
+  },
+  {
+   "id": "ship-uss-enterprise-cv-6",
+   "role": "involved"
+  },
+  {
+   "id": "op-guadalcanal-campaign",
+   "role": "involved"
+  },
+  {
+   "id": "op-doolittle-raid",
+   "role": "mentioned"
+  }
+ ],
+ "1944-11-24-tokyo-b29": [
+  {
+   "id": "aircraft-b-29-dauntless-dotty",
+   "role": "subject"
+  },
+  {
+   "id": "person-emmett-odonnell",
+   "role": "subject"
+  },
+  {
+   "id": "aircraft-b-29-superfortress",
+   "role": "involved"
+  },
+  {
+   "id": "person-robert-morgan",
+   "role": "involved"
+  },
+  {
+   "id": "unit-73rd-bombardment-wing",
+   "role": "involved"
+  },
+  {
+   "id": "unit-497th-bomb-group",
+   "role": "involved"
+  },
+  {
+   "id": "place-isley-field-saipan",
+   "role": "involved"
+  },
+  {
+   "id": "place-tokyo",
+   "role": "involved"
+  },
+  {
+   "id": "place-musashino-aircraft-plant",
+   "role": "involved"
+  },
+  {
+   "id": "person-haywood-hansell",
+   "role": "mentioned"
+  },
+  {
+   "id": "person-curtis-lemay",
+   "role": "mentioned"
+  },
+  {
+   "id": "unit-xxi-bomber-command",
+   "role": "mentioned"
+  },
+  {
+   "id": "op-doolittle-raid",
+   "role": "mentioned"
+  }
+ ]
+}

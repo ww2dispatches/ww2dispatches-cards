@@ -1,0 +1,40 @@
+{
+ "ship-uss-hornet-cv-8": {
+  "name": "USS Hornet (CV-8)",
+  "kind": "aircraft carrier",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Hornet_(CV-8)"
+ },
+ "ship-uss-enterprise-cv-6": {
+  "name": "USS Enterprise (CV-6)",
+  "kind": "aircraft carrier",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Enterprise_(CV-6)"
+ },
+ "ship-uss-arizona-bb-39": {
+  "name": "USS Arizona (BB-39)",
+  "kind": "battleship",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Arizona"
+ },
+ "ship-uss-archerfish-ss-311": {
+  "name": "USS Archerfish (SS-311)",
+  "kind": "submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Archerfish_(SS-311)",
+  "aka": [
+   "Archer-Fish"
+  ]
+ },
+ "ship-shinano": {
+  "name": "Shinano",
+  "kind": "aircraft carrier",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_aircraft_carrier_Shinano"
+ }
+}
