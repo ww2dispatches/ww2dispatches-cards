@@ -10,11 +10,15 @@ The third part of the Campaign Series: a filmed plotting table, one clip per day
 | `engine/faces.py` | Block faces from the silhouette kit. |
 | `engine/ov.html` | The Day by Day tab and strip, drawn in headless Chrome with `renderer/fonts`. |
 | `engine/maproom_sound.py` | Sound C (table, war room bed, in house theme), generated in code. Seeded, so the stems regenerate exactly. |
+| `engine/check_record.py` | Checks the `mapRoom` block in day records (format in `FORMAT.md`). The Campaign Series chat runs it in its build sitting; the pre render check builds on it. |
+| `engine/view.json` | The fixed camera, so the checker can test the frame without Blender. |
+| `series/<campaign>/table.json` | Where each series' map sits on the table (center and scale). The Bulge framing fits the whole battle; a block covers about 27 km. |
+| `FORMAT.md` | The `mapRoom` block format and the brief for the Campaign Series chat. |
 | `kit/silhouettes/` | The 28 cream silhouettes and `library.json` (nation colors, file map, rules). |
 | `fonts/oswald700.ttf` | TTF copy of Oswald 700 for the faces (PIL needs a TTF). |
-| `test/` | The Day 1 test record (positions unverified, never posted) and the 19 Nov sketch map. |
+| `test/` | The Day 1 test record (old format, used by `comp.py` until step 3), `day01-example.json` (the new format), the sketch framing `table.json`, and the 19 Nov sketch map. All positions unverified, never posted. |
 
-Day records stay with their series: `campaign-series/<series>/day-NN.json`, in the `mapRoom` block.
+Day records stay with their series: `campaign-series/<series>/day-NN.json`, in the `mapRoom` block (see `FORMAT.md`). `scene.py` and `comp.py` still use the sketch framing and the old test record; step 3 moves them onto `table.json` and the `mapRoom` block.
 
 ## Running a day
 Work folder (`MAPROOM_WORK`, outside the repo) holds `map.png`, `face-*.png`, `cam.json`, `campad.json`, `plate.png`, `platepad.png`, the sprite folder, and `ov/`. `MAPROOM_DAY` points at the day record.

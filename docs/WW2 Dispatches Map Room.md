@@ -29,14 +29,12 @@ All three are drawn from one record per day (below), so the post, the clip, the 
 * **The story drives the pieces** (Brian, 19 Nov 2026). Each day's moves come from that day's verified story, so the pick for each day should center on something that moved: a town taken, a road cut, a column pushing north.
 * **The long version is the home** (Brian, 19 Nov 2026). The Chronicle on the website is where the series really lives, and it is where the table does its deepest work. Brian is happy to change the Chronicle to fit.
 
-### The day record gains one block (Proposed)
-`campaign-series/<series>/day-NN.json` gets a `mapRoom` block, written in the same sitting as the post:
-* `asOf`: the moment shown ("2400 hrs, 16 Dec 1944").
-* `pieces`: each with `id`, `side`, `type` (armor, infantry, air, later airborne, artillery, naval), `label` ("101st Airborne"), `from` and `to` (longitude and latitude), and `note` when a piece does something other than move (arrives, is cut off, surrenders, grounded).
-* `line`: the front line at the start and end of the day, as a list of points.
-* `subtitle`: the one line shown on the clip, 38 characters at most, same rule as the Day by Day strip.
-* `tonight`: the closing line ("The line tonight. It moves again tomorrow.").
-* `sources`: at least two, as for every fact.
+### The day record gains one block (final 20 Nov 2026)
+`campaign-series/<series>/day-NN.json` gets a `mapRoom` block, written in the same sitting as the post. **The full format and the brief for the Campaign Series chat are in the cards repo at `map-room/FORMAT.md`**, and `map-room/engine/check_record.py` checks each day. In short:
+* `asOf` ("2400 hrs, 16 Dec 1944"); the clip's strip reuses the day's existing `subtitle`.
+* `lineAM` and `linePM`: the morning and night front, north to south; `lineSources`, two or more; optional `pocketsAM` and `pocketsPM` for surrounded ground such as Bastogne.
+* `pieces`, six to eight: `id`, `nation`, `type` (from the silhouette kit; airborne units use infantry; no artillery blocks), `label` (full name, 16 characters at most, shortened only by dropping a word), `name` when shortened, `move` (the move set), `from`, `to`, `enters` for arrive, `target` for air missions, `contact` when a block is pushed into another, `order` and two `sources` for every piece that does something.
+* **Table framing per series** (`map-room/series/<campaign>/table.json`): the Bulge is framed so the whole battle, Celles to the German border and Echternach to Elsenborn, fits the camera. A block then covers about 27 km, so crowded days use fewer pieces or a higher level (corps or army). The 19 Nov sketch framing was too tight: Bastogne fell off screen.
 
 ### Rules in the Campaign Series doc this would change (Proposed, not yet edited)
 * "Platforms: X, Threads, Instagram, Facebook. No YouTube or TikTok version." The Map Room would go to all six. Day by Day stays as it is.
@@ -170,9 +168,10 @@ A pinned chat, "Campaign Series: The Map Room", owns the Map Room from here. Thi
    * **Done 20 Nov 2026, pushed to main** (commits 79364ad and 6045826, with a repo copy of this doc in `docs/`). Folder: `map-room/` at the top of the cards repo (`engine/` scripts, `kit/silhouettes/` with `library.json`, `fonts/`, `test/` Day 1 record and sketch map, a README with the run order). Renders never go in git; day records stay in `campaign-series/<series>/day-NN.json`. Fixes made and proven on a re-rendered Day 1 test clip (`Day 1 Test 2026-11-20\map-room-bulge-day01-test-fixes.mp4`, sound C): every sprite renders on a padded frame (270 px each side, 240 px top and bottom) over a padded plate, so a block at the edge stays whole; the rake is drawn just before the block it pushes, with a 0.12 gap (was 0.07); the pre render check refuses any block partly off screen where it starts or ends, judged at the end of the push in, with arrive moves exempt at their start. The check caught the test record's 7th Army start, the original edge problem, so that start moved from 6.55 to 6.50 E (test record only). Also added `engine/ov_shoot.py`, the missing overlay driver.
    * **Repo access:** approved by Brian 20 Nov 2026. The patch and folder zip in OneDrive `The Map Room\Kit` are now only backups.
 2. **By Wed 25 Nov:** final `mapRoom` block format and a short brief for the Campaign Series chat (move types, full names under 16 characters, morning and night line points, blocks clear on their own side and inside the frame, two sources per move). Update the handoff line in the Campaign Series doc's Open section.
+   * **Done 20 Nov 2026, pushed to main.** `map-room/FORMAT.md` (format and brief), `map-room/engine/check_record.py` (the checker, tested against every rule), `map-room/engine/view.json` (the fixed camera, so the checker runs without Blender), `map-room/series/bulge-1944/table.json` (the Bulge framing, provisional until step 4), and `map-room/test/day01-example.json`. The Campaign Series doc's handoff clause (1) now points to the format and the checker. `scene.py` and `comp.py` move onto the table framing and the new block in step 3.
 3. Build the move animations not yet made (arrive, hold, cut off, surrender, air mission, grounded) and the clip template (beats, safe areas, loop), plus the pre render check and contact sheet.
-4. Trace the real Ardennes map from the Library of Congress situation maps and Cole; show Brian one still before rendering with it.
-5. After the Bulge sitting (26 to 29 Nov): **check the positions against the record** (added 20 Nov 2026, Brian): while the Ardennes map is traced, compare each day's block positions and lines with that day's Library of Congress situation map. This is a second look, not new research: anything that looks wrong goes back to the Campaign Series chat to fix in the day record, never changed here. Then render all 30, Gate 2 (Days 1 to 5 by Fri 4 Dec), upload to R2, schedule all 30 in Buffer at 6:30 on all six channels by Wed 9 Dec.
+4. **By Wed 25 Nov, before the Bulge sitting:** trace the real Ardennes map from the Library of Congress situation maps and Cole, covering the whole table area in `map-room/series/bulge-1944/table.json`, and confirm that framing; show Brian one still before rendering with it.
+5. After the Bulge sitting (26 to 29 Nov): **check the positions against the record** (added 20 Nov 2026, Brian): using the situation maps already opened for the tracing in step 4, compare each day's block positions and lines with that day's Library of Congress situation map. This is a second look, not new research: anything that looks wrong goes back to the Campaign Series chat to fix in the day record, never changed here. Then render all 30, Gate 2 (Days 1 to 5 by Fri 4 Dec), upload to R2, schedule all 30 in Buffer at 6:30 on all six channels by Wed 9 Dec.
 6. Write the Map Room skill last, from what worked.
 
 **What it owns:** the table scene, the block set, map tracing, the clip template, sound, rendering, the pre-render check, and scheduling each Map Room post in Buffer. It does not research or write the stories (the Campaign Series chat does) and does not build site pages (the Website chat does).
@@ -195,7 +194,7 @@ A pinned chat, "Campaign Series: The Map Room", owns the Map Room from here. Thi
 * The pre-render check: every block on the map, on the right side of the line, not overlapping, name fits; then one contact sheet per series for Brian.
 * Where files live in the repo.
 
-**After the Bulge sitting:** trace the Ardennes map, make the sound kit, render all 30, show Brian Days 1 to 5 (by Fri 4 Dec), schedule all 30 by Wed 9 Dec. Write the skill last, from what worked.
+**After the Bulge sitting:** check each day's positions against its situation map (step 5), make the sound kit, render all 30, show Brian Days 1 to 5 (by Fri 4 Dec), schedule all 30 by Wed 9 Dec. Write the skill last, from what worked.
 
 **Rules that hold:** one silhouette per nation per type; Tiger only when the day's story names one; ships shared, in nation colors; no flags, insignia, regime symbols, or SS names; every move needs two sources; no dashes in anything written.
 
@@ -217,10 +216,11 @@ A pinned chat, "Campaign Series: The Map Room", owns the Map Room from here. Thi
 
 ## Handoffs
 Lines for other chats. Nothing here is live until Brian approves this doc.
-* **Campaign Series chat:** a handoff line is in its doc's Open section (20 Nov 2026). Before the Bulge sitting: Day by Day becomes the Map Room clip on all six channels; each day record gains a `mapRoom` block (format from the Map Room chat by 25 Nov); the sitting does not schedule Buffer.
+* **Campaign Series chat:** a handoff line is in its doc's Open section (20 Nov 2026). Before the Bulge sitting: Day by Day becomes the Map Room clip on all six channels; each day record gains a `mapRoom` block (format final 20 Nov 2026: `map-room/FORMAT.md`); the sitting does not schedule Buffer.
 * **Website: Build and Fixes chat:** after approval, show each day's table on its day page, then the stepping table in Chronicle chapters.
 
 ## Changelog
+* 20 Nov 2026 (Map Room build chat, step 2): `mapRoom` format final in `map-room/FORMAT.md`, with the checker and a per series table framing (the Bulge framed to show the whole battle; a block covers about 27 km). Campaign Series doc handoff updated. Steps 4 and 5 wording tidied: the map is traced before the sitting, the positions are checked after it.
 * 20 Nov 2026 (Map Room planning chat): added the position check against the daily situation maps to the build chat's order of work (step 5). Repo copy in `docs/` synced to this version the same day by the build chat.
 * 20 Nov 2026 (Map Room build chat): knock rule set by Brian: a knock only for rake to block or block to block contact. Hold loses its tap; arrive has no knock of its own.
 * 20 Nov 2026 (Map Room build chat): stop knock removed from pushes at Brian's call; push sound now follows block speed. Pushed to main.

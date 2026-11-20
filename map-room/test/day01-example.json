@@ -1,0 +1,239 @@
+{
+ "_note": "EXAMPLE of a day record's mapRoom block, built from the 19 Nov sketch positions. Not verified, not for posting. Placeholders in <angle brackets> are allowed only in map-room/test.",
+ "day": 1,
+ "date": "1944-12-16",
+ "subtitle": "Three German armies hit the Ardennes",
+ "mapRoom": {
+  "asOf": "2400 hrs, 16 Dec 1944",
+  "lineAM": [
+   [
+    6.24,
+    50.57
+   ],
+   [
+    6.29,
+    50.5
+   ],
+   [
+    6.36,
+    50.42
+   ],
+   [
+    6.42,
+    50.35
+   ],
+   [
+    6.46,
+    50.29
+   ],
+   [
+    6.36,
+    50.21
+   ],
+   [
+    6.18,
+    50.13
+   ],
+   [
+    6.14,
+    50.04
+   ],
+   [
+    6.21,
+    49.93
+   ],
+   [
+    6.31,
+    49.86
+   ],
+   [
+    6.43,
+    49.81
+   ],
+   [
+    6.52,
+    49.73
+   ]
+  ],
+  "linePM": [
+   [
+    6.24,
+    50.57
+   ],
+   [
+    6.22,
+    50.5
+   ],
+   [
+    6.23,
+    50.42
+   ],
+   [
+    6.3,
+    50.35
+   ],
+   [
+    6.44,
+    50.29
+   ],
+   [
+    6.3,
+    50.21
+   ],
+   [
+    6.1,
+    50.13
+   ],
+   [
+    6.06,
+    50.04
+   ],
+   [
+    6.14,
+    49.93
+   ],
+   [
+    6.24,
+    49.85
+   ],
+   [
+    6.38,
+    49.82
+   ],
+   [
+    6.5,
+    49.74
+   ]
+  ],
+  "lineSources": [
+   "<Cole, The Ardennes: Battle of the Bulge, chapter and page>",
+   "<Library of Congress, 12th Army Group situation map, date>"
+  ],
+  "pieces": [
+   {
+    "id": "6pz",
+    "nation": "germany",
+    "type": "armor",
+    "label": "6th Panzer Army",
+    "from": [
+     6.55,
+     50.43
+    ],
+    "move": "advance",
+    "to": [
+     6.38,
+     50.4
+    ],
+    "order": 1,
+    "sources": [
+     "<Cole, The Ardennes: Battle of the Bulge, chapter and page>",
+     "<Library of Congress, 12th Army Group situation map, date>"
+    ]
+   },
+   {
+    "id": "5pz",
+    "nation": "germany",
+    "type": "armor",
+    "label": "5th Panzer Army",
+    "from": [
+     6.45,
+     50.12
+    ],
+    "move": "advance",
+    "to": [
+     6.21,
+     50.1
+    ],
+    "order": 2,
+    "sources": [
+     "<Cole, The Ardennes: Battle of the Bulge, chapter and page>",
+     "<Library of Congress, 12th Army Group situation map, date>"
+    ]
+   },
+   {
+    "id": "7a",
+    "nation": "germany",
+    "type": "infantry",
+    "label": "7th Army",
+    "from": [
+     6.5,
+     49.9
+    ],
+    "move": "advance",
+    "to": [
+     6.42,
+     49.92
+    ],
+    "order": 3,
+    "sources": [
+     "<Cole, The Ardennes: Battle of the Bulge, chapter and page>",
+     "<Library of Congress, 12th Army Group situation map, date>"
+    ]
+   },
+   {
+    "id": "99",
+    "nation": "us",
+    "type": "infantry",
+    "label": "99th Infantry",
+    "name": "99th Infantry Division",
+    "from": [
+     6.12,
+     50.49
+    ],
+    "move": "hold"
+   },
+   {
+    "id": "106",
+    "nation": "us",
+    "type": "infantry",
+    "label": "106th Infantry",
+    "name": "106th Infantry Division",
+    "from": [
+     6.2,
+     50.27
+    ],
+    "move": "hold"
+   },
+   {
+    "id": "28",
+    "nation": "us",
+    "type": "infantry",
+    "label": "28th Infantry",
+    "name": "28th Infantry Division",
+    "from": [
+     5.98,
+     50.05
+    ],
+    "move": "hold"
+   },
+   {
+    "id": "4",
+    "nation": "us",
+    "type": "infantry",
+    "label": "4th Infantry",
+    "name": "4th Infantry Division",
+    "from": [
+     6.1,
+     49.76
+    ],
+    "move": "hold"
+   },
+   {
+    "id": "9af",
+    "nation": "us",
+    "type": "fighter",
+    "label": "Ninth Air Force",
+    "from": [
+     5.72,
+     50.38
+    ],
+    "move": "grounded",
+    "order": 4,
+    "sources": [
+     "<Cole, The Ardennes: Battle of the Bulge, chapter and page>",
+     "<Library of Congress, 12th Army Group situation map, date>"
+    ]
+   }
+  ]
+ }
+}
