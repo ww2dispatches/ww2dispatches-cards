@@ -49,11 +49,19 @@
    "destroyer": "ship_shared-destroyer.png",
    "submarine": "ship_shared-submarine.png",
    "landing_craft": "ship_shared-landing_craft.svg"
+  },
+  "artillery_shared": {
+   "all": "artillery-shared.png"
+  },
+  "airborne_shared": {
+   "all": "airborne-shared.svg"
   }
  },
  "rules": [
   "one silhouette per nation per type",
   "germany_special (Tiger) only when the day story names a Tiger or heavy tank unit",
-  "ships are one shared set in nation colors"
+  "ships are one shared set in nation colors",
+  "artillery and airborne are one shared silhouette each, in nation colors (20 Nov 2026)",
+  "airborne block for airborne divisions even when fighting on the ground (101st at Bastogne); German parachute divisions fighting as infantry keep the German helmet unless the day is an actual drop"
  ]
 }

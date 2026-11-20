@@ -41,7 +41,8 @@ NEEDS_TO = {'advance', 'fall_back', 'arrive'}
 STATIC = {'hold', 'cut_off', 'grounded', 'surrender'}
 SHIPS = set(LIB['library']['ship_shared'])
 AIR = {'fighter', 'medium_bomber', 'heavy_bomber', 'transport'}
-TYPES = {t for t in LIB['library'] if t != 'ship_shared'} | SHIPS
+SHARED = {t[:-7] for t in LIB['library'] if t.endswith('_shared') and t != 'ship_shared'}   # artillery, airborne: one silhouette, nation colors
+TYPES = {t for t in LIB['library'] if not t.endswith('_shared')} | SHARED | SHIPS
 ALLIED = {'us', 'britain', 'soviet'}
 EDGES = {'north', 'south', 'east', 'west'}
 LABEL_MAX, SUB_MAX = 16, 38
@@ -120,9 +121,15 @@ def check(path, test=False):
         nat, typ, mv, lab = p.get('nation'), p.get('type'), p.get('move'), p.get('label', '')
         if nat not in LIB['colors'] or nat == 'face_ink': err(f'{who}: nation must be one of us, britain, germany, soviet, japan')
         if typ not in TYPES: err(f'{who}: type must be one of {sorted(TYPES)}')
-        elif typ not in SHIPS:
+        elif typ not in SHIPS and typ not in SHARED:
             key = nat + ('_special' if p.get('heavy') else '') + (('_' + p['variant']) if p.get('variant') else '')
             if key not in LIB['library'][typ]: err(f'{who}: no {typ} silhouette for {key} in the kit')
+        # airborne rule (Brian, 20 Nov 2026): airborne divisions take the airborne block even on the ground;
+        # German parachute divisions fighting as infantry keep the helmet unless the day is an actual drop
+        if re.search(r'\bAirborne\b', lab + ' ' + p.get('name', '')) and nat != 'germany' and typ != 'airborne':
+            err(f'{who}: airborne divisions use the airborne block, even when fighting on the ground')
+        if nat == 'germany' and typ == 'airborne' and mv != 'arrive':
+            warn(f'{who}: German parachute divisions fighting as infantry keep the infantry helmet; airborne only on an actual drop')
         if p.get('heavy') and not (nat == 'germany' and typ == 'armor'): err(f'{who}: heavy (the Tiger) is only for German armor')
         if p.get('heavy') and not p.get('heavyNamed'): err(f'{who}: heavy needs heavyNamed, the tank unit the day\'s story names')
         if mv not in MOVES: err(f'{who}: move must be one of {sorted(MOVES)}')
