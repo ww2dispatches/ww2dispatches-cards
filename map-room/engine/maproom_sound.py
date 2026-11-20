@@ -19,6 +19,8 @@ def room(x, mix=0.18):
         k = int(d * SR); y = np.zeros_like(x); y[k:] = x[:-k] * g; out += lp(y, 3500) * mix * 2
     return out
 # ---------- table sounds ----------
+# Knock rule (Brian, 20 Nov 2026): a knock only when something touches something, the rake meeting a block
+# or a block pushed into another block. A block stopping, hold, and arrive make no knock of their own.
 def slide(dur, bright=1.0):
     """wood block sliding on the glossy map: band limited noise, grain flutter, swells with speed"""
     n = int(dur * SR); t = np.arange(n) / SR
