@@ -23,7 +23,9 @@ The warm dark yellow of the halftrack, the one saturated color, set against the 
 The original luminance is restored in Lab after coloring (with only the global 1.08 S curve), and only the color channels are smoothed. Nothing is added, removed or reshaped.
 * Warm: luminance mean absolute difference 0.0081 against the curved original, SSIM 0.942 (0.914 against the raw original, the difference being the global S curve and grain).
 * Quiet: 0.0080, SSIM 0.942 (0.914 raw).
-* Visual check at 100 percent on both faces, the pointing glove, the helmets, and the halftrack edges: no structural change. A slight grey cast remains on the halftrack just under the pointing wrist (color only).
+* Visual check at 100 percent on both faces, the pointing glove, the helmets, and the halftrack edges: no structural change.
+* 20 Nov 2026 (Brian): color cleanup. The coat's grey no longer spills onto the halftrack under the pointing hand or where the arm meets the body (tighter arm outline, and the edge snapping may not reach past it), and the seated soldier's forehead and eyes now take skin color instead of the helmet's grey. Color only; luminance and fidelity scores unchanged.
+* 20 Nov 2026 (Brian), second pass: every figure mask is now a traced outline (coat, both helmets, glove, the seated soldier and his face) and the edge snapped mask is clamped to it. Fixed: helmet grey on the halftrack above the seated soldier's helmet and beside the standing soldier's helmet, the back edge of the coat taking the halftrack's yellow, a grey band on the halftrack beside the coat front, and skin color on the seated soldier's dark hood. The knit glove is one wool color from cuff to fingertip. Brian prefers the Warm grade. Color only; fidelity scores unchanged (warm 0.0081 and 0.942, quiet 0.0080 and 0.942).
 
 ## Credit
 "A German soldier in the Ardennes offensive, December 1944. German photo, captured, U.S. National Archives (208-AA-202B-4). Colorized by WW2 Dispatches."
