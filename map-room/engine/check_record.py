@@ -55,10 +55,11 @@ def is_ll(v): return isinstance(v, list) and len(v) == 2 and all(isinstance(c, (
 def too_precise(ll): return any(len(f'{c}'.split('.')[-1]) > 2 for c in ll if isinstance(c, float))
 def near(a, b): return abs(a[0] - b[0]) < BS / KX * 0.98 and abs(a[1] - b[1]) < BS / KY * 0.98
 def axis_ground(line):
-    """polygon of the ground east of a north to south line, out to the table's east edge"""
-    pts = [list(p) for p in line]
-    pts = [[pts[0][0], LAT_MAX + 1]] + pts + [[pts[-1][0], LAT_MIN - 1]]
-    return pts + [[LON_MAX + 1, LAT_MIN - 1], [LON_MAX + 1, LAT_MAX + 1]]
+    """German held ground: the area on the left of the line walked from its north end to its south end,
+    closed through the east (Germany). The ends are carried straight north and south off the table."""
+    pts = [list(p) for p in line]; far = 10
+    pts = [[pts[0][0], LAT_MAX + far]] + pts + [[pts[-1][0], LAT_MIN - far]]
+    return pts + [[LON_MAX + far, LAT_MIN - far], [LON_MAX + far, LAT_MAX + far]]
 def inside(pt, poly):
     x, y = pt; c = False; j = len(poly) - 1
     for i in range(len(poly)):
@@ -73,8 +74,10 @@ def check(path, test=False):
     d = json.load(open(path)); mr = d.get('mapRoom')
     if mr is None: return ['no mapRoom block'], []
     root = os.path.join(HERE, '..')
-    tbl = os.path.join(root, 'test', 'table.json') if test else os.path.join(root, 'series', str(d.get('campaign')), 'table.json')
-    if not os.path.exists(tbl): return [f"no table framing for campaign {d.get('campaign')!r} (map-room/series/<campaign>/table.json)"], []
+    view = mr.get('view')   # optional close view, e.g. "bastogne" uses series/<campaign>/table-bastogne.json
+    name = f'table-{view}.json' if view else 'table.json'
+    tbl = os.path.join(root, 'test', 'table.json') if test else os.path.join(root, 'series', str(d.get('campaign')), name)
+    if not os.path.exists(tbl): return [f"no table framing {name} for campaign {d.get('campaign')!r} (map-room/series/<campaign>/)"], []
     use_table(tbl)
     def placeholder(s): return isinstance(s, str) and ('<' in s or 'EXAMPLE' in s)
     # day level
@@ -89,9 +92,11 @@ def check(path, test=False):
     lines = {}
     for k in ('lineAM', 'linePM'):
         ln = mr.get(k)
-        if not (isinstance(ln, list) and 3 <= len(ln) <= 14 and all(is_ll(p) for p in ln)): err(f'{k} must be 3 to 14 [lon, lat] points'); continue
-        if any(ln[i][1] <= ln[i + 1][1] for i in range(len(ln) - 1)): err(f'{k} must run north to south (each point south of the last)')
-        if not all(on_table(p) for p in ln): err(f'{k} has points off the table map')
+        if not (isinstance(ln, list) and 3 <= len(ln) <= 24 and all(is_ll(p) for p in ln)): err(f'{k} must be 3 to 24 [lon, lat] points'); continue
+        # the line runs from the north end of the front to the south end, around any bulge, German ground on its left;
+        # it may run past the table edges (the drawing clips it), but some of it must be on this view's table
+        if sum(on_table(p) for p in ln) < 2: err(f'{k} needs at least two points on this view\'s table')
+        if any(abs(p[0] - LON0) * KX > TW * 2 or abs(p[1] - LAT0) * KY > TH * 2 for p in ln): err(f'{k} has points far off the table; stop the line a little past the edge')
         if any(too_precise(p) for p in ln): warn(f'{k}: use two decimals at most')
         lines[k] = ln
     ls = mr.get('lineSources', [])
