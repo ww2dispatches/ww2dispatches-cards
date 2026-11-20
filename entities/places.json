@@ -2248,6 +2248,15 @@
   "lat": null,
   "lon": null
  },
+ "place-ninth-fort": {
+  "name": "Ninth Fort",
+  "kind": "fortress at Kaunas, Lithuania, Nazi mass murder site",
+  "nation": "Lithuania",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ninth_Fort",
+  "lat": null,
+  "lon": null
+ },
  "place-north-american-aerospace-museum": {
   "name": "Evergreen Aviation and Space Museum",
   "kind": "aviation museum",
@@ -2418,6 +2427,15 @@
   "aka": [
    "Orly"
   ]
+ },
+ "place-pearl-harbor": {
+  "name": "Pearl Harbor",
+  "kind": "harbor and U.S. naval base on Oahu, Hawaii",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Pearl_Harbor",
+  "lat": null,
+  "lon": null
  },
  "place-peenemunde": {
   "name": "Peenemunde",

@@ -1033,6 +1033,13 @@
    "Massacre of Kalavryta"
   ]
  },
+ "op-khabarovsk-war-crimes-trials": {
+  "name": "Khabarovsk war crimes trials",
+  "kind": "Soviet trial of twelve Japanese for biological warfare, December 1949",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Khabarovsk_war_crimes_trials"
+ },
  "op-kharkov-trial": {
   "name": "Kharkov Trial",
   "kind": "Soviet war crimes trial, December 1943",
@@ -1449,6 +1456,13 @@
   "source": "https://en.wikipedia.org/wiki/Operation_Mincemeat",
   "wikidata": null
  },
+ "op-operation-ostfront": {
+  "name": "Operation Ostfront",
+  "kind": "Kriegsmarine sortie by Scharnhorst against Arctic convoy JW 55B, December 1943",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Ostfront"
+ },
  "op-operation-overlord": {
   "name": "Operation Overlord",
   "kind": "Allied invasion of Normandy, 1944",
@@ -1772,6 +1786,14 @@
   "nation": "Spain",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Spanish_question_(United_Nations)"
+ },
+ "op-st-stephen-s-college-massacre": {
+  "name": "St. Stephen's College massacre",
+  "kind": "Japanese massacre at a Hong Kong field hospital, 25 December 1941",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/St._Stephen%27s_College_massacre",
+  "note": "Atrocity: victims' side only."
  },
  "op-stary-ciepielow-and-rekowka-massacre": {
   "name": "Stary Ciepielów and Rekówka massacre",

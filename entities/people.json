@@ -49,7 +49,7 @@
   "name": "Albert Speer",
   "kind": "Reich armaments minister",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q60045",
   "source": "https://en.wikipedia.org/wiki/Albert_Speer"
  },
  "person-alexander-buller-turner": {
@@ -111,7 +111,7 @@
   "name": "Andrey Vlasov",
   "kind": "Soviet general, commander of the 20th Army, later defected",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q157615",
   "source": "https://en.wikipedia.org/wiki/Andrey_Vlasov"
  },
  "person-angelo-iachino": {
@@ -132,14 +132,14 @@
   "name": "Anthony McAuliffe",
   "kind": "U.S. Army general, 101st Airborne",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q573609",
   "source": "https://en.wikipedia.org/wiki/Anthony_McAuliffe"
  },
  "person-antonino-toscano": {
   "name": "Antonino Toscano",
   "kind": "Italian admiral",
   "nation": "Italy",
-  "wikidata": null,
+  "wikidata": "Q16527346",
   "source": "https://en.wikipedia.org/wiki/Antonino_Toscano"
  },
  "person-arthur-harris": {
@@ -163,7 +163,7 @@
   "name": "Arvid Harnack",
   "kind": "German resistance member, Red Orchestra",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q68070",
   "source": "https://en.wikipedia.org/wiki/Arvid_Harnack"
  },
  "person-attila": {
@@ -263,14 +263,14 @@
   "name": "Bruce C. Clarke",
   "kind": "U.S. Army general, commander of CCB, 7th Armored Division at St. Vith",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q3645458",
   "source": "https://en.wikipedia.org/wiki/Bruce_C._Clarke"
  },
  "person-bruce-fraser-1st-baron-fraser-of-north-cape": {
   "name": "Bruce Fraser",
   "kind": "Royal Navy admiral, Home Fleet commander",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q2072926",
   "source": "https://en.wikipedia.org/wiki/Bruce_Fraser,_1st_Baron_Fraser_of_North_Cape",
   "aka": [
    "Admiral Sir Bruce Fraser"
@@ -334,6 +334,17 @@
    "Slick Goodlin"
   ]
  },
+ "person-chan-chak": {
+  "name": "Chan Chak",
+  "kind": "Chinese Navy admiral, led the Christmas 1941 breakout from Hong Kong",
+  "nation": "China",
+  "wikidata": "Q8273072",
+  "source": "https://en.wikipedia.org/wiki/Chan_Chak",
+  "aka": [
+   "Andrew Chan Chak",
+   "Chen Ce"
+  ]
+ },
  "person-charlemagne": {
   "name": "Charlemagne",
   "kind": "Frankish emperor",
@@ -373,7 +384,7 @@
   "name": "Charlie Brown",
   "kind": "American B-17 pilot, 379th Bomb Group",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q112492561",
   "source": "https://en.wikipedia.org/wiki/Charlie_Brown_(pilot)",
   "aka": [
    "Charles L. Brown"
@@ -400,18 +411,25 @@
   "name": "Christopher Clayton Hutton",
   "kind": "MI9 inventor of escape gadgets",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q5112594",
   "source": "https://en.wikipedia.org/wiki/Christopher_Hutton",
   "aka": [
    "Clayton Hutton",
    "Christopher Clayton Hutton"
   ]
  },
+ "person-christopher-maltby": {
+  "name": "Christopher Maltby",
+  "kind": "British Indian Army major general, commander of the Hong Kong garrison 1941",
+  "nation": "Britain",
+  "wikidata": "Q864115",
+  "source": "https://en.wikipedia.org/wiki/Christopher_Maltby"
+ },
  "person-claire-lee-chennault": {
   "name": "Claire Lee Chennault",
   "kind": "American aviator, commander of the American Volunteer Group",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q468716",
   "source": "https://en.wikipedia.org/wiki/Claire_Lee_Chennault"
  },
  "person-clarence-john-boettiger": {
@@ -442,7 +460,7 @@
   "name": "Clement Attlee",
   "kind": "British Prime Minister",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q129006",
   "source": "https://en.wikipedia.org/wiki/Clement_Attlee"
  },
  "person-clementine-churchill": {
@@ -491,7 +509,7 @@
   "name": "Creighton Abrams",
   "kind": "U.S. Army tank battalion commander",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q280290",
   "source": "https://en.wikipedia.org/wiki/Creighton_Abrams"
  },
  "person-curtis-lemay": {
@@ -505,7 +523,7 @@
   "name": "Damaskinos of Athens",
   "kind": "Archbishop of Athens, Regent of Greece",
   "nation": "Greece",
-  "wikidata": null,
+  "wikidata": "Q31280",
   "source": "https://en.wikipedia.org/wiki/Damaskinos_of_Athens",
   "aka": [
    "Archbishop Damaskinos"
@@ -560,7 +578,7 @@
   "name": "Dmitry Timofeyevich Kozlov",
   "kind": "Soviet general, Transcaucasus and Crimean Front",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q2468198",
   "source": "https://en.wikipedia.org/wiki/Dmitry_Timofeyevich_Kozlov"
  },
  "person-doc-blanchard": {
@@ -742,7 +760,7 @@
   "name": "Emile Muselier",
   "kind": "Free French vice admiral",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q2915993",
   "source": "https://en.wikipedia.org/wiki/Émile_Muselier"
  },
  "person-emmett-odonnell": {
@@ -795,7 +813,7 @@
   "name": "Erich Bey",
   "kind": "Kriegsmarine admiral, task group commander at North Cape",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q65572",
   "source": "https://en.wikipedia.org/wiki/Erich_Bey"
  },
  "person-erich-lindemann": {
@@ -849,6 +867,13 @@
   "aka": [
    "Ernest O. Lawrence"
   ]
+ },
+ "person-ernest-n-harmon": {
+  "name": "Ernest N. Harmon",
+  "kind": "U.S. Army major general, commander of the 2nd Armored Division in the Bulge",
+  "nation": "US",
+  "wikidata": "Q5393596",
+  "source": "https://en.wikipedia.org/wiki/Ernest_N._Harmon"
  },
  "person-ernst-chain": {
   "name": "Ernst Chain",
@@ -920,7 +945,7 @@
   "name": "Fernand Bonnier de La Chapelle",
   "kind": "assassin of Admiral Darlan",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q2235863",
   "source": "https://en.wikipedia.org/wiki/Fernand_Bonnier_de_La_Chapelle"
  },
  "person-fiorello-la-guardia": {
@@ -959,7 +984,7 @@
   "name": "Frank Capra",
   "kind": "American film director",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q51492",
   "source": "https://en.wikipedia.org/wiki/Frank_Capra"
  },
  "person-frank-knox": {
@@ -1004,7 +1029,7 @@
   "name": "Franz Stigler",
   "kind": "German Luftwaffe fighter pilot",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q55417889",
   "source": "https://en.wikipedia.org/wiki/Franz_Stigler"
  },
  "person-franz-vaterrodt": {
@@ -1039,7 +1064,7 @@
   "name": "Frederick Walker Castle",
   "kind": "U.S. Army Air Forces brigadier general, Medal of Honor",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q5498979",
   "source": "https://en.wikipedia.org/wiki/Frederick_Walker_Castle"
  },
  "person-frida-michelson": {
@@ -1108,7 +1133,7 @@
   "name": "Fyodor Tolbukhin",
   "kind": "Soviet marshal, 3rd Ukrainian Front",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q48149",
   "source": "https://en.wikipedia.org/wiki/Fyodor_Tolbukhin"
  },
  "person-gabriel-auphan": {
@@ -1191,6 +1216,13 @@
   "wikidata": "Q1508058",
   "source": "https://en.wikipedia.org/wiki/George_Pearkes"
  },
+ "person-george-preddy": {
+  "name": "George Preddy",
+  "kind": "USAAF fighter ace, top P-51 Mustang ace of the war",
+  "nation": "US",
+  "wikidata": "Q3760630",
+  "source": "https://en.wikipedia.org/wiki/George_Preddy"
+ },
  "person-george-s-patton": {
   "name": "George S. Patton",
   "kind": "American general",
@@ -1261,7 +1293,7 @@
   "name": "Gerhard Bigalk",
   "kind": "German U-boat commander",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q75159",
   "source": "https://en.wikipedia.org/wiki/Gerhard_Bigalk"
  },
  "person-glenn-davis-halfback": {
@@ -1292,7 +1324,7 @@
   "name": "Gordon Hirabayashi",
   "kind": "Japanese American civil rights figure and draft resister",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q5585299",
   "source": "https://en.wikipedia.org/wiki/Gordon_Hirabayashi"
  },
  "person-gunther-specht": {
@@ -1381,7 +1413,7 @@
   "name": "Harro Schulze-Boysen",
   "kind": "German resistance member, Red Orchestra",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q66784",
   "source": "https://en.wikipedia.org/wiki/Harro_Schulze-Boysen"
  },
  "person-harry-hopkins": {
@@ -1484,7 +1516,7 @@
   "name": "Henri Giraud",
   "kind": "French general, High Commissioner in North Africa",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q318122",
   "source": "https://en.wikipedia.org/wiki/Henri_Giraud"
  },
  "person-henry-a-wallace": {
@@ -1518,7 +1550,7 @@
   "name": "Henry Harwood",
   "kind": "Royal Navy commodore, later admiral",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q721965",
   "source": "https://en.wikipedia.org/wiki/Henry_Harwood"
  },
  "person-henry-j-kaiser": {
@@ -1647,7 +1679,7 @@
   "name": "Hopevale Martyrs",
   "kind": "American Baptist missionaries killed on Panay",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q5899993",
   "source": "https://en.wikipedia.org/wiki/Hopevale_Martyrs"
  },
  "person-horace-woodring": {
@@ -1702,6 +1734,13 @@
    "Husband Kimmel"
   ]
  },
+ "person-igor-kurchatov": {
+  "name": "Igor Kurchatov",
+  "kind": "Soviet physicist, scientific director of the Soviet atomic bomb project",
+  "nation": "Soviet Union",
+  "wikidata": "Q185110",
+  "source": "https://en.wikipedia.org/wiki/Igor_Kurchatov"
+ },
  "person-ingrid-bergman": {
   "name": "Ingrid Bergman",
   "kind": "Swedish actress",
@@ -1737,7 +1776,7 @@
   "name": "Irma Grese",
   "kind": "SS camp guard, executed 1945",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q63702",
   "source": "https://en.wikipedia.org/wiki/Irma_Grese"
  },
  "person-irving-berlin": {
@@ -1806,7 +1845,7 @@
   "name": "Jack Kirby",
   "kind": "American comic book artist",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q311607",
   "source": "https://en.wikipedia.org/wiki/Jack_Kirby"
  },
  "person-jack-l-warner": {
@@ -1820,7 +1859,7 @@
   "name": "Jacqueline Cochran",
   "kind": "American aviator, director of women pilots",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q3993",
   "source": "https://en.wikipedia.org/wiki/Jacqueline_Cochran"
  },
  "person-james-b-conant": {
@@ -1868,7 +1907,7 @@
   "name": "James Stewart",
   "kind": "American actor and bomber pilot",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q102462",
   "source": "https://en.wikipedia.org/wiki/James_Stewart",
   "aka": [
    "Jimmy Stewart"
@@ -1937,7 +1976,7 @@
   "name": "Joe Simon",
   "kind": "American comic book writer and editor",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q725384",
   "source": "https://en.wikipedia.org/wiki/Joe_Simon"
  },
  "person-johann-von-ravenstein": {
@@ -1951,7 +1990,7 @@
   "name": "John Anderson, 1st Viscount Waverley",
   "kind": "British politician, Lord Privy Seal in charge of air raid precautions 1938 to 1939",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q333289",
   "source": "https://en.wikipedia.org/wiki/John_Anderson,_1st_Viscount_Waverley",
   "aka": [
    "Sir John Anderson"
@@ -2017,7 +2056,7 @@
   "name": "John R. Fox",
   "kind": "U.S. Army artillery forward observer, Medal of Honor",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q6253841",
   "source": "https://en.wikipedia.org/wiki/John_R._Fox"
  },
  "person-john-robert-osborn": {
@@ -2045,7 +2084,7 @@
   "name": "Josef Kramer",
   "kind": "SS commandant of Bergen-Belsen, executed 1945",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q57688",
   "source": "https://en.wikipedia.org/wiki/Josef_Kramer"
  },
  "person-joseph-enright": {
@@ -2073,7 +2112,7 @@
   "name": "Joseph H. Harper",
   "kind": "U.S. Army officer, 327th Glider Infantry",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q10308592",
   "source": "https://en.wikipedia.org/wiki/Joseph_H._Harper"
  },
  "person-joseph-poindexter": {
@@ -2104,7 +2143,7 @@
   "name": "Jozsef Mindszenty",
   "kind": "Cardinal, Archbishop of Esztergom",
   "nation": "Hungary",
-  "wikidata": null,
+  "wikidata": "Q162655",
   "source": "https://en.wikipedia.org/wiki/József_Mindszenty"
  },
  "person-julian-c-smith": {
@@ -2118,7 +2157,7 @@
   "name": "Karel Hašler",
   "kind": "Czech actor and songwriter",
   "nation": "Czechoslovakia",
-  "wikidata": null,
+  "wikidata": "Q329515",
   "source": "https://en.wikipedia.org/wiki/Karel_Ha%C5%A1ler",
   "aka": [
    "Karel Hasler"
@@ -2139,7 +2178,7 @@
   "name": "Karl Renner",
   "kind": "Austrian statesman, first president of the Second Republic",
   "nation": "Austria",
-  "wikidata": null,
+  "wikidata": "Q11726",
   "source": "https://en.wikipedia.org/wiki/Karl_Renner"
  },
  "person-kazuo-sakamaki": {
@@ -2237,7 +2276,7 @@
   "name": "Korechika Anami",
   "kind": "Japanese general, Eleventh Army commander, later war minister",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q485453",
   "source": "https://en.wikipedia.org/wiki/Korechika_Anami"
  },
  "person-kuehn-family": {
@@ -2264,7 +2303,7 @@
   "name": "Kuzma Derevyanko",
   "kind": "Soviet lieutenant general, member of the Allied Council for Japan",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q4158855",
   "source": "https://en.wikipedia.org/wiki/Kuzma_Derevyanko"
  },
  "person-laura-fermi": {
@@ -2302,7 +2341,7 @@
   "name": "Leopold Figl",
   "kind": "Austrian chancellor, Dachau survivor",
   "nation": "Austria",
-  "wikidata": null,
+  "wikidata": "Q11715",
   "source": "https://en.wikipedia.org/wiki/Leopold_Figl"
  },
  "person-lewis-h-brereton": {
@@ -2330,7 +2369,7 @@
   "name": "Lise Meitner",
   "kind": "physicist",
   "nation": "Austria",
-  "wikidata": null,
+  "wikidata": "Q56189",
   "source": "https://en.wikipedia.org/wiki/Lise_Meitner"
  },
  "person-ludovic-kennedy": {
@@ -2420,7 +2459,7 @@
   "name": "Marcel Peyrouton",
   "kind": "French colonial official, Vichy interior minister",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q461936",
   "source": "https://en.wikipedia.org/wiki/Marcel_Peyrouton"
  },
  "person-mario-arillo": {
@@ -2434,7 +2473,7 @@
   "name": "Mark Aitchison Young",
   "kind": "Governor of Hong Kong",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q1899909",
   "source": "https://en.wikipedia.org/wiki/Mark_Aitchison_Young",
   "aka": [
    "Sir Mark Young"
@@ -2451,7 +2490,7 @@
   "name": "Markos Vafeiadis",
   "kind": "Greek communist guerrilla commander",
   "nation": "Greece",
-  "wikidata": null,
+  "wikidata": "Q313432",
   "source": "https://en.wikipedia.org/wiki/Markos_Vafeiadis"
  },
  "person-martin-bormann": {
@@ -2475,14 +2514,14 @@
   "name": "Masaharu Homma",
   "kind": "Japanese general, 14th Army",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q517297",
   "source": "https://en.wikipedia.org/wiki/Masaharu_Homma"
  },
  "person-masatomi-kimura": {
   "name": "Masatomi Kimura",
   "kind": "Imperial Japanese Navy admiral",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q1038286",
   "source": "https://en.wikipedia.org/wiki/Masatomi_Kimura",
   "aka": [
    "Kimura Masanori"
@@ -2506,7 +2545,7 @@
   "name": "Meredith Gardner",
   "kind": "American Army codebreaker, Venona",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q513371",
   "source": "https://en.wikipedia.org/wiki/Meredith_Gardner"
  },
  "person-michael-curtiz": {
@@ -2527,11 +2566,18 @@
   "name": "Mildred Harnack",
   "kind": "American born German resistance member",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q72908",
   "source": "https://en.wikipedia.org/wiki/Mildred_Harnack",
   "aka": [
    "Mildred Fish-Harnack"
   ]
+ },
+ "person-minnie-louise-haskins": {
+  "name": "Minnie Louise Haskins",
+  "kind": "British poet and sociology lecturer, author of The Gate of the Year",
+  "nation": "Britain",
+  "wikidata": "Q14946693",
+  "source": "https://en.wikipedia.org/wiki/Minnie_Louise_Haskins"
  },
  "person-mitsuye-endo": {
   "name": "Mitsuye Endo",
@@ -2544,7 +2590,7 @@
   "name": "Muhammad Ali Jinnah",
   "kind": "Muslim League leader",
   "nation": "India",
-  "wikidata": null,
+  "wikidata": "Q160554",
   "source": "https://en.wikipedia.org/wiki/Muhammad_Ali_Jinnah"
  },
  "person-napoleon-ii": {
@@ -2569,7 +2615,7 @@
   "name": "Neville Chamberlain",
   "kind": "British prime minister",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q10664",
   "source": "https://en.wikipedia.org/wiki/Neville_Chamberlain"
  },
  "person-nobuhito-prince-takamatsu": {
@@ -2586,7 +2632,7 @@
   "name": "Nobusuke Kishi",
   "kind": "Japanese wartime minister, later prime minister",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q315572",
   "source": "https://en.wikipedia.org/wiki/Nobusuke_Kishi"
  },
  "person-nobutake-kondo": {
@@ -2611,7 +2657,7 @@
   "name": "Norman Crockatt",
   "kind": "British Army officer, head of MI9",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q12797581",
   "source": "https://en.wikipedia.org/wiki/Norman_Crockatt"
  },
  "person-oliver-cope": {
@@ -2698,7 +2744,7 @@
   "name": "Patrick Dove",
   "kind": "British merchant navy captain, Graf Spee prisoner",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q104601225",
   "source": "https://en.wikipedia.org/wiki/Patrick_Dove_(sea_captain)",
   "aka": [
    "Paddy Dove"
@@ -2781,7 +2827,7 @@
   "name": "Pierre Boisson",
   "kind": "French colonial governor general of French West Africa",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q2509279",
   "source": "https://en.wikipedia.org/wiki/Pierre_Boisson",
   "aka": [
    "Pierre François Boisson"
@@ -2791,14 +2837,14 @@
   "name": "Pierre-Étienne Flandin",
   "kind": "French politician, former prime minister and Vichy foreign minister",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q471296",
   "source": "https://en.wikipedia.org/wiki/Pierre-%C3%89tienne_Flandin"
  },
  "person-pierre-laval": {
   "name": "Pierre Laval",
   "kind": "French politician, Vichy minister",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q151983",
   "source": "https://en.wikipedia.org/wiki/Pierre_Laval"
  },
  "person-pietro-badoglio": {
@@ -2819,7 +2865,7 @@
   "name": "Plaek Phibunsongkhram",
   "kind": "Thai field marshal and prime minister",
   "nation": "Thailand",
-  "wikidata": null,
+  "wikidata": "Q152777",
   "source": "https://en.wikipedia.org/wiki/Plaek_Phibunsongkhram",
   "aka": [
    "Phibun",
@@ -2830,7 +2876,7 @@
   "name": "Pope Pius XII",
   "kind": "pope, head of the Catholic Church 1939 to 1958",
   "nation": "Vatican",
-  "wikidata": null,
+  "wikidata": "Q2604",
   "source": "https://en.wikipedia.org/wiki/Pope_Pius_XII",
   "aka": [
    "Eugenio Pacelli"
@@ -2944,7 +2990,7 @@
   "name": "Rodion Malinovsky",
   "kind": "Soviet marshal, 2nd Ukrainian Front",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q204338",
   "source": "https://en.wikipedia.org/wiki/Rodion_Malinovsky"
  },
  "person-roland-freisler": {
@@ -3045,7 +3091,7 @@
   "name": "Seni Pramoj",
   "kind": "Thai minister to the United States, Free Thai leader",
   "nation": "Thailand",
-  "wikidata": null,
+  "wikidata": "Q714042",
   "source": "https://en.wikipedia.org/wiki/Seni_Pramoj"
  },
  "person-sergio-osmena": {
@@ -3094,6 +3140,13 @@
   "nation": "China",
   "wikidata": "Q711110",
   "source": "https://en.wikipedia.org/wiki/Sun_Li-jen"
+ },
+ "person-takashi-sakai": {
+  "name": "Takashi Sakai",
+  "kind": "Imperial Japanese Army lieutenant general, commander at Hong Kong 1941",
+  "nation": "Japan",
+  "wikidata": "Q705350",
+  "source": "https://en.wikipedia.org/wiki/Takashi_Sakai"
  },
  "person-takeo-kurita": {
   "name": "Takeo Kurita",
@@ -3165,7 +3218,7 @@
   "name": "Thrasyvoulos Tsakalotos",
   "kind": "Greek army officer",
   "nation": "Greece",
-  "wikidata": null,
+  "wikidata": "Q974438",
   "source": "https://en.wikipedia.org/wiki/Thrasyvoulos_Tsakalotos"
  },
  "person-tom-phillips-royal-navy-officer": {
@@ -3228,7 +3281,7 @@
   "name": "Vasily Badanov",
   "kind": "Soviet tank corps commander",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q386908",
   "source": "https://en.wikipedia.org/wiki/Vasily_Badanov"
  },
  "person-victor-buller-turner": {
@@ -3469,7 +3522,7 @@
   "name": "William E. Dyess",
   "kind": "USAAF pilot, Bataan escapee",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q8008170",
   "source": "https://en.wikipedia.org/wiki/William_E._Dyess",
   "aka": [
    "Ed Dyess"
@@ -3496,7 +3549,7 @@
   "name": "William J. Sebald",
   "kind": "U.S. diplomat, political adviser in occupied Japan and Allied Council chairman",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q5353650",
   "source": "https://en.wikipedia.org/wiki/William_J._Sebald"
  },
  "person-william-joyce": {
@@ -3571,7 +3624,7 @@
   "name": "Winfield S. Cunningham",
   "kind": "U.S. Navy officer, Wake Island commander",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q8025012",
   "source": "https://en.wikipedia.org/wiki/Winfield_S._Cunningham"
  },
  "person-winston-churchill": {
@@ -3592,7 +3645,7 @@
   "name": "Xue Yue",
   "kind": "Chinese general, Ninth War Area commander",
   "nation": "China",
-  "wikidata": null,
+  "wikidata": "Q715405",
   "source": "https://en.wikipedia.org/wiki/Xue_Yue"
  },
  "person-yang-hucheng": {

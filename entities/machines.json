@@ -4,7 +4,7 @@
   "kind": "naval gun",
   "nation": "Japan",
   "source": "https://en.wikipedia.org/wiki/46_cm/45_Type_94_naval_gun",
-  "wikidata": null,
+  "wikidata": "Q2095920",
   "aka": [
    "40 cm gun"
   ]
@@ -14,14 +14,14 @@
   "kind": "tank gun",
   "nation": "Soviet Union",
   "source": "https://en.wikipedia.org/wiki/76_mm_tank_gun_M1940_F-34",
-  "wikidata": null
+  "wikidata": "Q2152924"
  },
  "machine-8-8-cm-flak-18-36-37-41": {
   "name": "88 mm gun",
   "kind": "German antiaircraft and antitank gun",
   "nation": "Germany",
   "source": "https://en.wikipedia.org/wiki/8.8_cm_Flak_18/36/37/41",
-  "wikidata": null,
+  "wikidata": "Q154137",
   "aka": [
    "88",
    "88 mm gun"
@@ -31,7 +31,7 @@
   "name": "Aggregat",
   "kind": "German Army rocket family, A1 to A12",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q179099",
   "source": "https://en.wikipedia.org/wiki/Aggregat",
   "aka": [
    "A3",
@@ -44,7 +44,7 @@
   "kind": "V-12 aircraft engine",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Allison_V-1710",
-  "wikidata": null
+  "wikidata": "Q167745"
  },
  "machine-anderson-shelter": {
   "name": "Anderson shelter",
@@ -58,7 +58,7 @@
   "name": "Blalock Thomas Taussig shunt",
   "kind": "surgical procedure",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q881336",
   "source": "https://en.wikipedia.org/wiki/Blalock%E2%80%93Thomas%E2%80%93Taussig_shunt",
   "aka": [
    "blue baby operation"
@@ -69,13 +69,13 @@
   "kind": "codebreaking machine",
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/Bombe",
-  "wikidata": null
+  "wikidata": "Q480476"
  },
  "machine-captain-america-comics": {
   "name": "Captain America Comics",
   "kind": "American comic book series",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q115460037",
   "source": "https://en.wikipedia.org/wiki/Captain_America_Comics"
  },
  "machine-casablanca-film": {
@@ -83,20 +83,20 @@
   "kind": "Hollywood feature film",
   "nation": "United States",
   "source": "https://en.wikipedia.org/wiki/Casablanca_(film)",
-  "wikidata": null
+  "wikidata": "Q132689"
  },
  "machine-cathode-ray-tube-amusement-device": {
   "name": "Cathode-ray tube amusement device",
   "kind": "early electronic game, patented 1948",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q4389317",
   "source": "https://en.wikipedia.org/wiki/Cathode-ray_tube_amusement_device"
  },
  "machine-chicago-pile-1": {
   "name": "Chicago Pile-1",
   "kind": "nuclear reactor",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q284681",
   "source": "https://en.wikipedia.org/wiki/Chicago_Pile-1",
   "aka": [
    "CP-1"
@@ -106,7 +106,7 @@
   "name": "Cross of Honour of the German Mother",
   "kind": "Nazi state award for mothers",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q498853",
   "source": "https://en.wikipedia.org/wiki/Cross_of_Honour_of_the_German_Mother",
   "aka": [
    "Mutterkreuz",
@@ -118,14 +118,14 @@
   "kind": "cruiser tank",
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/Crusader_tank",
-  "wikidata": null
+  "wikidata": "Q696083"
  },
  "machine-enigma-machine": {
   "name": "Enigma machine",
   "kind": "cipher machine",
   "nation": "Germany",
   "source": "https://en.wikipedia.org/wiki/Enigma_machine",
-  "wikidata": null,
+  "wikidata": "Q150758",
   "aka": [
    "Enigma",
    "M4"
@@ -136,13 +136,23 @@
   "kind": "stage play",
   "nation": "United States",
   "source": "https://en.wikipedia.org/wiki/Everybody_Comes_to_Rick's",
-  "wikidata": null
+  "wikidata": "Q11990209"
+ },
+ "machine-f-1-nuclear-reactor": {
+  "name": "F-1",
+  "kind": "Soviet graphite research reactor, first in Europe to go critical",
+  "nation": "Soviet Union",
+  "wikidata": "Q4479886",
+  "source": "https://en.wikipedia.org/wiki/F-1_(nuclear_reactor)",
+  "aka": [
+   "Physics-1"
+  ]
  },
  "machine-freya-radar": {
   "name": "Freya radar",
   "kind": "German early warning radar",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q1455960",
   "source": "https://en.wikipedia.org/wiki/Freya_radar",
   "aka": [
    "Freya"
@@ -153,7 +163,7 @@
   "kind": "balloon bomb",
   "nation": "Japan",
   "source": "https://en.wikipedia.org/wiki/Fu-Go_balloon_bomb",
-  "wikidata": null,
+  "wikidata": "Q695154",
   "aka": [
    "Fu-Go"
   ]
@@ -163,7 +173,7 @@
   "kind": "light truck",
   "nation": "Soviet Union",
   "source": "https://en.wikipedia.org/wiki/GAZ-AA",
-  "wikidata": null,
+  "wikidata": "Q1484719",
   "aka": [
    "polutorka"
   ]
@@ -173,14 +183,14 @@
   "kind": "turbojet engine",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/General_Electric_J31",
-  "wikidata": null
+  "wikidata": "Q2450750"
  },
  "machine-henschel-hs-293": {
   "name": "Henschel Hs 293",
   "kind": "guided glide bomb",
   "nation": "Germany",
   "source": "https://en.wikipedia.org/wiki/Henschel_Hs_293",
-  "wikidata": null,
+  "wikidata": "Q586159",
   "aka": [
    "Hs 293"
   ]
@@ -189,7 +199,7 @@
   "name": "It's a Wonderful Life",
   "kind": "American feature film, 1946",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q204191",
   "source": "https://en.wikipedia.org/wiki/It's_a_Wonderful_Life"
  },
  "machine-kharkiv-model-v-2": {
@@ -197,14 +207,14 @@
   "kind": "tank diesel engine",
   "nation": "Soviet Union",
   "source": "https://en.wikipedia.org/wiki/Kharkiv_model_V-2",
-  "wikidata": null
+  "wikidata": "Q4101633"
  },
  "machine-ko-hyoteki-class-submarine": {
   "name": "Type A midget submarine",
   "kind": "two man midget submarine",
   "nation": "Japan",
   "source": "https://en.wikipedia.org/wiki/Kō-hyōteki-class_submarine",
-  "wikidata": null,
+  "wikidata": "Q776391",
   "aka": [
    "Ko-hyoteki"
   ]
@@ -214,7 +224,7 @@
   "kind": "landing craft",
   "nation": "United States",
   "source": "https://en.wikipedia.org/wiki/Landing_craft_mechanized",
-  "wikidata": null,
+  "wikidata": "Q1088282",
   "aka": [
    "LCM"
   ]
@@ -224,7 +234,7 @@
   "kind": "amphibious tractor",
   "nation": "United States",
   "source": "https://en.wikipedia.org/wiki/Landing_Vehicle,_Tracked",
-  "wikidata": null,
+  "wikidata": "Q1803025",
   "aka": [
    "amtrac"
   ]
@@ -234,7 +244,7 @@
   "kind": "landing craft",
   "nation": "United States",
   "source": "https://en.wikipedia.org/wiki/LCVP_(United_States)",
-  "wikidata": null,
+  "wikidata": "Q1803024",
   "aka": [
    "Higgins boat"
   ]
@@ -244,14 +254,14 @@
   "kind": "light tank",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/M3_Stuart",
-  "wikidata": null
+  "wikidata": "Q502910"
  },
  "machine-m4-sherman": {
   "name": "M4 Sherman",
   "kind": "American medium tank",
   "nation": "United States",
   "source": "https://en.wikipedia.org/wiki/M4_Sherman",
-  "wikidata": null,
+  "wikidata": "Q191643",
   "aka": [
    "Sherman",
    "Sherman II"
@@ -262,27 +272,27 @@
   "kind": "submarine torpedo",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Mark_14_torpedo",
-  "wikidata": null
+  "wikidata": "Q4380971"
  },
  "machine-matilda-ii": {
   "name": "Matilda",
   "kind": "infantry tank",
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/Matilda_II",
-  "wikidata": null
+  "wikidata": "Q502412"
  },
  "machine-nazi-concentration-camps-film": {
   "name": "Nazi Concentration Camps",
   "kind": "documentary film",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q1561119",
   "source": "https://en.wikipedia.org/wiki/Nazi_Concentration_Camps_(film)"
  },
  "machine-nylon": {
   "name": "Nylon",
   "kind": "synthetic fiber",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q177941",
   "source": "https://en.wikipedia.org/wiki/Nylon"
  },
  "machine-ordnance-qf-25-pounder": {
@@ -290,14 +300,14 @@
   "kind": "field gun",
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/Ordnance_QF_25-pounder",
-  "wikidata": null
+  "wikidata": "Q2479591"
  },
  "machine-ordnance-qf-6-pounder": {
   "name": "6 pounder antitank gun",
   "kind": "British antitank gun",
   "nation": "United Kingdom",
   "source": "https://en.wikipedia.org/wiki/Ordnance_QF_6-pounder",
-  "wikidata": null,
+  "wikidata": "Q977910",
   "aka": [
    "six pounder"
   ]
@@ -306,7 +316,7 @@
   "name": "Panther",
   "kind": "German medium tank",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q151960",
   "source": "https://en.wikipedia.org/wiki/Panther_tank",
   "aka": [
    "Panzerkampfwagen V Panther"
@@ -317,20 +327,20 @@
   "kind": "Czech built light tank",
   "nation": "Czechoslovakia",
   "source": "https://en.wikipedia.org/wiki/Panzer_38(t)",
-  "wikidata": null
+  "wikidata": "Q152915"
  },
  "machine-penicillin": {
   "name": "Penicillin",
   "kind": "antibiotic drug",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q12190",
   "source": "https://en.wikipedia.org/wiki/Penicillin"
  },
  "machine-point-contact-transistor": {
   "name": "Point-contact transistor",
   "kind": "first working transistor",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q1515631",
   "source": "https://en.wikipedia.org/wiki/Point-contact_transistor"
  },
  "machine-pratt-whitney-r-4360-wasp-major": {
@@ -338,14 +348,14 @@
   "kind": "radial aircraft engine",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Pratt_%26_Whitney_R-4360_Wasp_Major",
-  "wikidata": null
+  "wikidata": "Q2107993"
  },
  "machine-rolls-royce-merlin": {
   "name": "Rolls-Royce Merlin",
   "kind": "V-12 aircraft engine",
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/Rolls-Royce_Merlin",
-  "wikidata": null,
+  "wikidata": "Q1412885",
   "aka": [
    "Merlin"
   ]
@@ -355,14 +365,14 @@
   "kind": "ship search radar",
   "nation": "United States",
   "source": "https://en.wikipedia.org/wiki/SG_radar",
-  "wikidata": null
+  "wikidata": "Q18382957"
  },
  "machine-sherman-crab": {
   "name": "Sherman Crab",
   "kind": "mine clearing flail tank",
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/Mine_flail",
-  "wikidata": null,
+  "wikidata": "Q119440032",
   "note": "No article of its own; covered in the English Wikipedia article Mine flail."
  },
  "machine-shinyo-suicide-motorboat": {
@@ -370,14 +380,14 @@
   "kind": "suicide motorboat",
   "nation": "Japan",
   "source": "https://en.wikipedia.org/wiki/Shinyo_(suicide_motorboat)",
-  "wikidata": null
+  "wikidata": "Q2064422"
  },
  "machine-sulfadiazine": {
   "name": "Sulfadiazine",
   "kind": "sulfa drug",
   "nation": "worldwide",
   "source": "https://en.wikipedia.org/wiki/Sulfadiazine",
-  "wikidata": null
+  "wikidata": "Q2555060"
  },
  "machine-sword-of-stalingrad": {
   "name": "Sword of Stalingrad",
@@ -390,7 +400,7 @@
   "name": "T-34",
   "kind": "Soviet medium tank",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q172233",
   "source": "https://en.wikipedia.org/wiki/T-34"
  },
  "machine-tallboy-bomb": {
@@ -398,20 +408,20 @@
   "kind": "deep penetration bomb",
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/Tallboy_(bomb)",
-  "wikidata": null
+  "wikidata": "Q1366827"
  },
  "machine-the-nazi-plan": {
   "name": "The Nazi Plan",
   "kind": "1945 prosecution film for the Nuremberg trial",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q1195999",
   "source": "https://en.wikipedia.org/wiki/The_Nazi_Plan"
  },
  "machine-v-1-flying-bomb": {
   "name": "V-1 flying bomb",
   "kind": "German cruise missile",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q153348",
   "source": "https://en.wikipedia.org/wiki/V-1_flying_bomb",
   "aka": [
    "V1",
@@ -424,14 +434,14 @@
   "kind": "single modified V-2 rocket",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/V-2_No._13",
-  "wikidata": null
+  "wikidata": "Q7905635"
  },
  "machine-v-2-rocket": {
   "name": "V-2 rocket",
   "kind": "ballistic missile",
   "nation": "Germany",
   "source": "https://en.wikipedia.org/wiki/V-2_rocket",
-  "wikidata": null,
+  "wikidata": "Q174640",
   "aka": [
    "V-2"
   ]
@@ -441,13 +451,13 @@
   "kind": "infantry tank",
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/Valentine_tank",
-  "wikidata": null
+  "wikidata": "Q899078"
  },
  "machine-we-hold-these-truths": {
   "name": "We Hold These Truths",
   "kind": "radio program, 15 December 1941",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q7977617",
   "source": "https://en.wikipedia.org/wiki/We_Hold_These_Truths"
  },
  "machine-wright-r-1820-cyclone": {
@@ -455,27 +465,27 @@
   "kind": "radial aircraft engine",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Wright_R-1820_Cyclone",
-  "wikidata": null
+  "wikidata": "Q1078024"
  },
  "machine-wright-r-3350-duplex-cyclone": {
   "name": "Wright R-3350",
   "kind": "radial aircraft engine",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Wright_R-3350_Duplex-Cyclone",
-  "wikidata": null
+  "wikidata": "Q786848"
  },
  "machine-x-10-graphite-reactor": {
   "name": "X-10 Graphite Reactor",
   "kind": "nuclear reactor",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/X-10_Graphite_Reactor",
-  "wikidata": null
+  "wikidata": "Q4133095"
  },
  "machine-zoe-reactor": {
   "name": "Zoé (reactor)",
   "kind": "France's first nuclear reactor",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q3388396",
   "source": "https://en.wikipedia.org/wiki/Zo%C3%A9_(reactor)",
   "aka": [
    "ZOE"

@@ -3,7 +3,7 @@
   "name": "Avro Lancaster",
   "kind": "British four engine heavy bomber",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q203622",
   "source": "https://en.wikipedia.org/wiki/Avro_Lancaster"
  },
  "aircraft-b-29-dauntless-dotty": {
@@ -28,7 +28,7 @@
   "name": "Bell X-1",
   "kind": "rocket powered research aircraft",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q223365",
   "source": "https://en.wikipedia.org/wiki/Bell_X-1",
   "aka": [
    "XS-1"
@@ -39,7 +39,7 @@
   "kind": "heavy bomber",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Boeing_B-17_Flying_Fortress",
-  "wikidata": null,
+  "wikidata": "Q185000",
   "aka": [
    "B-17",
    "Flying Fortress"
@@ -49,7 +49,7 @@
   "name": "Boeing B-47 Stratojet",
   "kind": "jet bomber",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q467649",
   "source": "https://en.wikipedia.org/wiki/Boeing_B-47_Stratojet",
   "aka": [
    "XB-47"
@@ -59,7 +59,7 @@
   "name": "Boeing P-26 Peashooter",
   "kind": "fighter",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q890209",
   "source": "https://en.wikipedia.org/wiki/Boeing_P-26_Peashooter",
   "aka": [
    "P-26"
@@ -70,7 +70,7 @@
   "kind": "heavy bomber",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Consolidated_B-24_Liberator",
-  "wikidata": null,
+  "wikidata": "Q220759",
   "aka": [
    "B-24"
   ]
@@ -79,7 +79,7 @@
   "name": "Consolidated PBY Catalina",
   "kind": "American flying boat",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q648864",
   "source": "https://en.wikipedia.org/wiki/Consolidated_PBY_Catalina",
   "aka": [
    "Black Cat"
@@ -90,7 +90,7 @@
   "kind": "biplane fighter",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Curtiss_F11C_Goshawk",
-  "wikidata": null,
+  "wikidata": "Q717394",
   "aka": [
    "Curtiss F11C Goshawk"
   ]
@@ -99,7 +99,7 @@
   "name": "Curtiss P-40 Warhawk",
   "kind": "American fighter",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q206409",
   "source": "https://en.wikipedia.org/wiki/Curtiss_P-40_Warhawk"
  },
  "aircraft-curtiss-sb2c-helldiver": {
@@ -107,7 +107,7 @@
   "kind": "dive bomber",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Curtiss_SB2C_Helldiver",
-  "wikidata": null,
+  "wikidata": "Q918312",
   "aka": [
    "Helldiver"
   ]
@@ -117,7 +117,7 @@
   "kind": "experimental jet",
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/De_Havilland_DH_108",
-  "wikidata": null
+  "wikidata": "Q1050321"
  },
  "aircraft-de-havilland-mosquito": {
   "name": "de Havilland Mosquito",
@@ -133,7 +133,7 @@
   "name": "de Havilland Vampire",
   "kind": "British jet fighter",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q179835",
   "source": "https://en.wikipedia.org/wiki/De_Havilland_Vampire",
   "aka": [
    "Sea Vampire"
@@ -145,7 +145,7 @@
   "kind": "bomber",
   "nation": "Germany",
   "source": "https://en.wikipedia.org/wiki/Dornier_Do_217",
-  "wikidata": null,
+  "wikidata": "Q126966",
   "aka": [
    "Do 217"
   ]
@@ -154,7 +154,7 @@
   "name": "Douglas C-47 Skytrain",
   "kind": "military transport aircraft",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q714326",
   "source": "https://en.wikipedia.org/wiki/Douglas_C-47_Skytrain",
   "aka": [
    "Dakota"
@@ -164,7 +164,7 @@
   "name": "Douglas SBD Dauntless",
   "kind": "U.S. Navy dive bomber",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q118070",
   "source": "https://en.wikipedia.org/wiki/Douglas_SBD_Dauntless",
   "aka": [
    "Dauntless",
@@ -176,7 +176,7 @@
   "kind": "long range bomber",
   "nation": "Germany",
   "source": "https://en.wikipedia.org/wiki/Focke-Wulf_Fw_200_Condor",
-  "wikidata": null,
+  "wikidata": "Q157485",
   "aka": [
    "Fw 200"
   ]
@@ -186,13 +186,13 @@
   "kind": "WWI fighter",
   "nation": "Germany",
   "source": "https://en.wikipedia.org/wiki/Fokker_D.VIII",
-  "wikidata": null
+  "wikidata": "Q705192"
  },
  "aircraft-grumman-f4f-wildcat": {
   "name": "Grumman F4F Wildcat",
   "kind": "carrier fighter",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q334612",
   "source": "https://en.wikipedia.org/wiki/Grumman_F4F_Wildcat"
  },
  "aircraft-grumman-f6f-hellcat": {
@@ -200,7 +200,7 @@
   "kind": "carrier fighter",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Grumman_F6F_Hellcat",
-  "wikidata": null,
+  "wikidata": "Q465903",
   "aka": [
    "Hellcat"
   ]
@@ -209,7 +209,7 @@
   "name": "Grumman TBF Avenger",
   "kind": "American carrier torpedo bomber",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q734103",
   "source": "https://en.wikipedia.org/wiki/Grumman_TBF_Avenger",
   "aka": [
    "TBM Avenger"
@@ -220,7 +220,7 @@
   "kind": "heavy bomber",
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/Handley_Page_Halifax",
-  "wikidata": null,
+  "wikidata": "Q502034",
   "aka": [
    "Halifax"
   ]
@@ -230,7 +230,7 @@
   "kind": "bomber",
   "nation": "Germany",
   "source": "https://en.wikipedia.org/wiki/Heinkel_He_111",
-  "wikidata": null,
+  "wikidata": "Q154532",
   "aka": [
    "He 111"
   ]
@@ -239,7 +239,7 @@
   "name": "Heinkel He 162 Volksjäger",
   "kind": "single jet light fighter",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q156878",
   "source": "https://en.wikipedia.org/wiki/Heinkel_He_162_Volksj%C3%A4ger",
   "aka": [
    "He 162",
@@ -252,14 +252,14 @@
   "kind": "heavy bomber",
   "nation": "Germany",
   "source": "https://en.wikipedia.org/wiki/Heinkel_He_177_Greif",
-  "wikidata": null
+  "wikidata": "Q316321"
  },
  "aircraft-hughes-h-4-hercules": {
   "name": "Hughes H-4 Hercules",
   "kind": "flying boat",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Hughes_H-4_Hercules",
-  "wikidata": null,
+  "wikidata": "Q667443",
   "aka": [
    "Spruce Goose"
   ]
@@ -269,7 +269,7 @@
   "kind": "assault drone",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Interstate_TDR",
-  "wikidata": null,
+  "wikidata": "Q564117",
   "aka": [
    "TDR-1"
   ]
@@ -278,7 +278,7 @@
   "name": "Junkers Ju 52",
   "kind": "German three engine transport aircraft",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q26066",
   "source": "https://en.wikipedia.org/wiki/Junkers_Ju_52"
  },
  "aircraft-junkers-ju-87": {
@@ -286,7 +286,7 @@
   "kind": "dive bomber",
   "nation": "Germany",
   "source": "https://en.wikipedia.org/wiki/Junkers_Ju_87",
-  "wikidata": null,
+  "wikidata": "Q26795",
   "aka": [
    "Stuka"
   ]
@@ -296,7 +296,7 @@
   "kind": "bomber",
   "nation": "Germany",
   "source": "https://en.wikipedia.org/wiki/Junkers_Ju_88",
-  "wikidata": null,
+  "wikidata": "Q155661",
   "aka": [
    "Ju 88"
   ]
@@ -306,7 +306,7 @@
   "kind": "fighter",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Lockheed_P-38_Lightning",
-  "wikidata": null,
+  "wikidata": "Q172913",
   "aka": [
    "P-38"
   ]
@@ -315,21 +315,21 @@
   "name": "Lockheed Ventura",
   "kind": "patrol bomber",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q1867622",
   "source": "https://en.wikipedia.org/wiki/Lockheed_Ventura"
  },
  "aircraft-martin-b-26-marauder": {
   "name": "Martin B-26 Marauder",
   "kind": "American twin engine medium bomber",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q836438",
   "source": "https://en.wikipedia.org/wiki/Martin_B-26_Marauder"
  },
  "aircraft-martin-pbm-mariner": {
   "name": "Martin PBM Mariner",
   "kind": "American patrol flying boat",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q1538864",
   "source": "https://en.wikipedia.org/wiki/Martin_PBM_Mariner"
  },
  "aircraft-mcdonnell-fh-phantom": {
@@ -337,7 +337,7 @@
   "kind": "jet fighter",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/McDonnell_FH_Phantom",
-  "wikidata": null,
+  "wikidata": "Q550166",
   "aka": [
    "FD-1 Phantom",
    "FH Phantom"
@@ -347,7 +347,7 @@
   "name": "Messerschmitt Bf 109",
   "kind": "German single engine fighter",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q155639",
   "source": "https://en.wikipedia.org/wiki/Messerschmitt_Bf_109",
   "aka": [
    "Me 109"
@@ -358,14 +358,14 @@
   "kind": "heavy fighter",
   "nation": "Germany",
   "source": "https://en.wikipedia.org/wiki/Messerschmitt_Me_210",
-  "wikidata": null
+  "wikidata": "Q313597"
  },
  "aircraft-mitsubishi-a6m-zero": {
   "name": "Mitsubishi A6M Zero",
   "kind": "fighter",
   "nation": "Japan",
   "source": "https://en.wikipedia.org/wiki/Mitsubishi_A6M_Zero",
-  "wikidata": null,
+  "wikidata": "Q40156",
   "aka": [
    "Zero"
   ]
@@ -374,7 +374,7 @@
   "name": "Mitsubishi G3M",
   "kind": "navy medium bomber",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q696356",
   "source": "https://en.wikipedia.org/wiki/Mitsubishi_G3M",
   "aka": [
    "Nell"
@@ -385,7 +385,7 @@
   "kind": "medium bomber",
   "nation": "Japan",
   "source": "https://en.wikipedia.org/wiki/Mitsubishi_G4M",
-  "wikidata": null,
+  "wikidata": "Q697583",
   "aka": [
    "Betty"
   ]
@@ -395,7 +395,7 @@
   "kind": "torpedo bomber",
   "nation": "Japan",
   "source": "https://en.wikipedia.org/wiki/Nakajima_B6N_Tenzan",
-  "wikidata": null,
+  "wikidata": "Q696483",
   "aka": [
    "Jill"
   ]
@@ -405,7 +405,7 @@
   "kind": "reconnaissance aircraft",
   "nation": "Japan",
   "source": "https://en.wikipedia.org/wiki/Nakajima_C6N_Saiun",
-  "wikidata": null,
+  "wikidata": "Q650283",
   "aka": [
    "Myrt"
   ]
@@ -414,7 +414,7 @@
   "name": "Noorduyn Norseman",
   "kind": "utility transport (UC-64 in USAAF service)",
   "nation": "Canada",
-  "wikidata": null,
+  "wikidata": "Q535726",
   "source": "https://en.wikipedia.org/wiki/Noorduyn_Norseman",
   "aka": [
    "UC-64 Norseman"
@@ -425,7 +425,7 @@
   "kind": "medium bomber",
   "nation": "United States",
   "source": "https://en.wikipedia.org/wiki/North_American_B-25_Mitchell",
-  "wikidata": null,
+  "wikidata": "Q502117",
   "aka": [
    "B-25"
   ]
@@ -434,7 +434,7 @@
   "name": "North American P-51 Mustang",
   "kind": "fighter aircraft",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q192075",
   "source": "https://en.wikipedia.org/wiki/North_American_P-51_Mustang",
   "aka": [
    "P-51",
@@ -447,7 +447,7 @@
   "kind": "fighter",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Republic_P-47_Thunderbolt",
-  "wikidata": null,
+  "wikidata": "Q207089",
   "aka": [
    "P-47",
    "Thunderbolt"
@@ -458,7 +458,7 @@
   "kind": "mixed power fighter",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Ryan_FR_Fireball",
-  "wikidata": null,
+  "wikidata": "Q1629446",
   "aka": [
    "FR-1 Fireball"
   ]
@@ -467,7 +467,7 @@
   "name": "Savoia-Marchetti SM.79 Sparviero",
   "kind": "Italian trimotor bomber and torpedo bomber",
   "nation": "Italy",
-  "wikidata": null,
+  "wikidata": "Q1146174",
   "source": "https://en.wikipedia.org/wiki/Savoia-Marchetti_SM.79_Sparviero",
   "aka": [
    "SM.79"
@@ -477,7 +477,7 @@
   "name": "Short Stirling",
   "kind": "heavy bomber",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q875139",
   "source": "https://en.wikipedia.org/wiki/Short_Stirling"
  },
  "aircraft-supermarine-spitfire": {
@@ -485,7 +485,7 @@
   "kind": "fighter",
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/Supermarine_Spitfire",
-  "wikidata": null,
+  "wikidata": "Q29190",
   "aka": [
    "Spitfire"
   ]
@@ -494,7 +494,7 @@
   "name": "Vickers Wellington",
   "kind": "British twin engine bomber",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q850244",
   "source": "https://en.wikipedia.org/wiki/Vickers_Wellington"
  },
  "aircraft-vought-f4u-corsair": {
@@ -502,7 +502,7 @@
   "kind": "fighter aircraft",
   "nation": "United States",
   "source": "https://en.wikipedia.org/wiki/Vought_F4U_Corsair",
-  "wikidata": null,
+  "wikidata": "Q465806",
   "aka": [
    "Corsair"
   ]
@@ -511,7 +511,7 @@
   "name": "Wright Flyer",
   "kind": "first powered airplane",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q688605",
   "source": "https://en.wikipedia.org/wiki/Wright_Flyer",
   "aka": [
    "1903 Wright Flyer"
@@ -522,6 +522,6 @@
   "kind": "rocket powered suicide aircraft",
   "nation": "Japan",
   "source": "https://en.wikipedia.org/wiki/Yokosuka_MXY-7_Ohka",
-  "wikidata": null
+  "wikidata": "Q635990"
  }
 }

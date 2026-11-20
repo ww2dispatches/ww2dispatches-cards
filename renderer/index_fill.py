@@ -19,7 +19,7 @@ PREFIX = "https://en.wikipedia.org/wiki/"
 def ask(titles):
     # curl honors the workspace proxy; Wikipedia rate limits bursts, so back off and retry
     q = urllib.parse.urlencode({"action": "query", "prop": "pageprops|coordinates", "ppprop": "wikibase_item",
-                                "redirects": 1, "format": "json", "titles": "|".join(titles)})
+                                "redirects": 1, "colimit": "max", "format": "json", "titles": "|".join(titles)})
     for wait in (0, 10, 30, 60):
         time.sleep(wait)
         out = subprocess.run(["curl", "-sS", "-m", "40", API + "?" + q], capture_output=True, text=True).stdout
