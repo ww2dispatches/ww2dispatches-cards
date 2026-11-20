@@ -218,7 +218,22 @@
     if (navigator.vibrate) try { navigator.vibrate(10); } catch (e) {}
   }
 
+  // A one word label too wide for its tile (KOENIGSMACKER on a small phone) gets a smaller font
+  // instead of breaking mid word (19 Nov 2026 check over). Runs again once the fonts arrive.
+  function fitLabels() {
+    const ctx = fitLabels.c || (fitLabels.c = document.createElement('canvas').getContext('2d'));
+    document.querySelectorAll('#icpDesk .icpcard.tile .tl b').forEach(b => {
+      b.style.fontSize = '';
+      const cs = getComputedStyle(b), box = b.clientWidth, base = parseFloat(cs.fontSize), ls = parseFloat(cs.letterSpacing) || 0;
+      if (!box) return;
+      ctx.font = `${cs.fontWeight} ${base}px ${cs.fontFamily}`;
+      const widest = Math.max(...b.textContent.toUpperCase().split(/\s+/).map(w => ctx.measureText(w).width + ls * w.length));
+      if (widest > box - 2) b.style.fontSize = Math.max(10, Math.floor(base * (box - 2) / widest * 10) / 10) + "px";
+    });
+  }
+
   function wire() {
+    fitLabels(); if (document.fonts && !fitLabels.fonts) { fitLabels.fonts = 1; document.fonts.ready.then(fitLabels); addEventListener('resize', fitLabels); }
     document.querySelectorAll('#icpDesk .icpcard').forEach(b => holdable(b, () => toggle(Number(b.dataset.i), b)));
     // Each tile photo fades in once it arrives (instantly if the phone already has it); one that fails
     // falls back to the full card image.
