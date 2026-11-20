@@ -1,4 +1,11 @@
 {
+ "unit-126th-infantry-regiment-united-states": {
+  "name": "126th Infantry Regiment",
+  "kind": "U.S. Army infantry regiment",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/126th_Infantry_Regiment_(United_States)"
+ },
  "unit-21st-panzer-division": {
   "name": "21st Panzer Division",
   "kind": "armored division",
@@ -19,6 +26,27 @@
   "nation": "France",
   "source": "https://en.wikipedia.org/wiki/2nd_Armored_Division_(France)",
   "wikidata": null
+ },
+ "unit-2nd-panzer-army": {
+  "name": "2nd Panzer Army",
+  "kind": "German panzer army",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/2nd_Panzer_Army",
+  "aka": [
+   "Second Panzer Army",
+   "Panzer Group 2"
+  ]
+ },
+ "unit-32nd-infantry-division-united-states": {
+  "name": "32nd Infantry Division",
+  "kind": "U.S. Army infantry division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/32nd_Infantry_Division_(United_States)",
+  "aka": [
+   "Red Arrow Division"
+  ]
  },
  "unit-354th-fighter-group": {
   "name": "354th Fighter Group",
@@ -149,6 +177,16 @@
    "Force G"
   ]
  },
+ "unit-german-american-bund": {
+  "name": "German American Bund",
+  "kind": "pro Nazi American organization",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_American_Bund",
+  "aka": [
+   "Bund"
+  ]
+ },
  "unit-gestapo": {
   "name": "Gestapo",
   "kind": "Nazi secret police",
@@ -180,6 +218,13 @@
   "source": "https://en.wikipedia.org/wiki/Johns_Hopkins_University_Applied_Physics_Laboratory",
   "wikidata": null
  },
+ "unit-kalinin-front": {
+  "name": "Kalinin Front",
+  "kind": "Red Army front",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kalinin_Front"
+ },
  "unit-league-of-nations": {
   "name": "League of Nations",
   "kind": "international organization",
@@ -200,6 +245,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/National_Archives_and_Records_Administration",
   "wikidata": null
+ },
+ "unit-ninth-air-force": {
+  "name": "Ninth Air Force",
+  "kind": "U.S. Army Air Forces numbered air force",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ninth_Air_Force"
  },
  "unit-no-149-squadron-raf": {
   "name": "No. 149 Squadron RAF",
@@ -239,12 +291,29 @@
    "RSHA"
   ]
  },
+ "unit-selective-service-system": {
+  "name": "Selective Service System",
+  "kind": "U.S. draft agency",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Selective_Service_System"
+ },
  "unit-supreme-court-of-the-united-states": {
   "name": "U.S. Supreme Court",
   "kind": "U.S. federal court",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Supreme_Court_of_the_United_States",
   "wikidata": null
+ },
+ "unit-twenty-fifth-army-japan": {
+  "name": "Twenty-Fifth Army",
+  "kind": "Imperial Japanese Army field army",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Twenty-Fifth_Army_(Japan)",
+  "aka": [
+   "25th Army"
+  ]
  },
  "unit-united-nations": {
   "name": "United Nations",
@@ -263,6 +332,24 @@
   "source": "https://en.wikipedia.org/wiki/United_Nations_Security_Council",
   "wikidata": null
  },
+ "unit-war-manpower-commission": {
+  "name": "War Manpower Commission",
+  "kind": "U.S. wartime agency",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/War_Manpower_Commission"
+ },
+ "unit-works-progress-administration": {
+  "name": "Works Progress Administration",
+  "kind": "US New Deal relief agency",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Works_Progress_Administration",
+  "aka": [
+   "WPA",
+   "Work Projects Administration"
+  ]
+ },
  "unit-xv-corps-united-states": {
   "name": "U.S. XV Corps",
   "kind": "U.S. Army corps",
@@ -276,5 +363,16 @@
   "nation": "US",
   "wikidata": "Q8042593",
   "source": "https://en.wikipedia.org/wiki/XXI_Bomber_Command"
+ },
+ "unit-zegota": {
+  "name": "Żegota",
+  "kind": "Polish underground Council to Aid Jews",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/%C5%BBegota",
+  "aka": [
+   "Zegota",
+   "Council to Aid Jews"
+  ]
  }
 }

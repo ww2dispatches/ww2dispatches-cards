@@ -152,6 +152,15 @@
   "lat": null,
   "lon": null
  },
+ "place-east-berlin": {
+  "name": "East Berlin",
+  "kind": "Soviet sector of Berlin",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/East_Berlin",
+  "lat": null,
+  "lon": null
+ },
  "place-geilenkirchen": {
   "name": "Geilenkirchen",
   "kind": "town",
@@ -170,12 +179,39 @@
   "lat": null,
   "lon": null
  },
+ "place-greifswalder-oie": {
+  "name": "Greifswalder Oie",
+  "kind": "Baltic island off Peenemunde",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Greifswalder_Oie",
+  "lat": null,
+  "lon": null
+ },
+ "place-hainan": {
+  "name": "Hainan",
+  "kind": "Island in the South China Sea",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hainan",
+  "lat": null,
+  "lon": null
+ },
  "place-hawaii": {
   "name": "Hawaii",
   "kind": "islands",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Hawaii",
   "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-heilbronn": {
+  "name": "Heilbronn",
+  "kind": "City on the Neckar",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Heilbronn",
   "lat": null,
   "lon": null
  },
@@ -249,6 +285,18 @@
   "lat": null,
   "lon": null
  },
+ "place-kolkata": {
+  "name": "Kolkata",
+  "kind": "city and port",
+  "nation": "India",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kolkata",
+  "aka": [
+   "Calcutta"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-kufra": {
   "name": "Kufra",
   "kind": "oasis fort",
@@ -276,6 +324,16 @@
   "lat": null,
   "lon": null
  },
+ "place-kwajalein-atoll": {
+  "name": "Kwajalein Atoll",
+  "kind": "Atoll in the Marshall Islands",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kwajalein_Atoll",
+  "note": "Japanese mandate in 1943; nation is the wartime holder.",
+  "lat": null,
+  "lon": null
+ },
  "place-kyushu": {
   "name": "Kyushu",
   "kind": "island",
@@ -293,6 +351,15 @@
   "source": "https://en.wikipedia.org/wiki/Liverpool",
   "lat": 53.4072,
   "lon": -2.9917
+ },
+ "place-loch-ewe": {
+  "name": "Loch Ewe",
+  "kind": "Sea loch and fleet anchorage, northwest Scotland",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Loch_Ewe",
+  "lat": null,
+  "lon": null
  },
  "place-london": {
   "name": "London",
@@ -339,12 +406,39 @@
   "lat": null,
   "lon": null
  },
+ "place-midway-atoll": {
+  "name": "Midway Atoll",
+  "kind": "atoll and naval air station",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Midway_Atoll",
+  "lat": null,
+  "lon": null
+ },
  "place-musashino-aircraft-plant": {
   "name": "Nakajima Musashino plant",
   "kind": "aircraft engine factory",
   "nation": "Japan",
   "wikidata": "Q1476227",
   "source": "https://en.wikipedia.org/wiki/Nakajima_Aircraft_Company",
+  "lat": null,
+  "lon": null
+ },
+ "place-naples": {
+  "name": "Naples",
+  "kind": "City and port",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Naples",
+  "lat": null,
+  "lon": null
+ },
+ "place-naval-air-station-fort-lauderdale": {
+  "name": "Naval Air Station Fort Lauderdale",
+  "kind": "U.S. Navy air station",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Naval_Air_Station_Fort_Lauderdale",
   "lat": null,
   "lon": null
  },
@@ -540,6 +634,15 @@
   "lat": null,
   "lon": null
  },
+ "place-shanghai": {
+  "name": "Shanghai",
+  "kind": "City and port",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Shanghai",
+  "lat": null,
+  "lon": null
+ },
  "place-sibuyan-sea": {
   "name": "Sibuyan Sea",
   "kind": "sea",
@@ -564,6 +667,15 @@
   "nation": "South West Africa",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Skeleton_Coast",
+  "lat": null,
+  "lon": null
+ },
+ "place-southampton": {
+  "name": "Southampton",
+  "kind": "port city",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Southampton",
   "lat": null,
   "lon": null
  },
@@ -662,6 +774,15 @@
   "aka": [
    "Tromsø"
   ]
+ },
+ "place-tula-russia": {
+  "name": "Tula",
+  "kind": "city",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tula,_Russia",
+  "lat": null,
+  "lon": null
  },
  "place-turin": {
   "name": "Turin",

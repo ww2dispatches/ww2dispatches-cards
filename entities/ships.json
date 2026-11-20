@@ -1,4 +1,11 @@
 {
+ "ship-german-auxiliary-cruiser-thor": {
+  "name": "Thor",
+  "kind": "German auxiliary cruiser, merchant raider",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_auxiliary_cruiser_Thor"
+ },
  "ship-german-battleship-tirpitz": {
   "name": "Tirpitz",
   "kind": "battleship",
@@ -16,12 +23,26 @@
    "Graf Spee"
   ]
  },
+ "ship-german-submarine-u-31-1936": {
+  "name": "U-31",
+  "kind": "Kriegsmarine Type VIIA U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-31_(1936)"
+ },
  "ship-german-submarine-u-35-1936": {
   "name": "U-35",
   "kind": "Type VIIA U-boat",
   "nation": "Germany",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-35_(1936)"
+ },
+ "ship-german-submarine-u-852": {
+  "name": "U-852",
+  "kind": "submarine",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-852"
  },
  "ship-german-submarine-u-99-1940": {
   "name": "U-99",
@@ -36,6 +57,13 @@
   "nation": "Japan",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Hawaii_Maru"
+ },
+ "ship-hms-ajax-22": {
+  "name": "HMS Ajax (22)",
+  "kind": "Leander class light cruiser",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Ajax_(22)"
  },
  "ship-hms-ark-royal-91": {
   "name": "HMS Ark Royal (91)",
@@ -72,6 +100,13 @@
   "source": "https://en.wikipedia.org/wiki/HMS_Legion_(G74)",
   "wikidata": null
  },
+ "ship-hms-nelson-28": {
+  "name": "HMS Nelson",
+  "kind": "Royal Navy battleship",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Nelson_(28)"
+ },
  "ship-hms-ocean-r68": {
   "name": "HMS Ocean (R68)",
   "kind": "Colossus class light aircraft carrier",
@@ -93,12 +128,36 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/HMS_Repulse_(1916)"
  },
+ "ship-hms-vanguard-23": {
+  "name": "HMS Vanguard (23)",
+  "kind": "battleship",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Vanguard_(23)"
+ },
+ "ship-italian-cruiser-muzio-attendolo": {
+  "name": "Muzio Attendolo",
+  "kind": "Regia Marina light cruiser",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_cruiser_Muzio_Attendolo"
+ },
  "ship-italian-destroyer-folgore": {
   "name": "Folgore",
   "kind": "destroyer",
   "nation": "Italy",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Italian_destroyer_Folgore"
+ },
+ "ship-japanese-aircraft-carrier-chuyo": {
+  "name": "Chūyō",
+  "kind": "Imperial Japanese Navy escort carrier",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_aircraft_carrier_Ch%C5%ABy%C5%8D",
+  "aka": [
+   "Chuyo"
+  ]
  },
  "ship-japanese-battleship-musashi": {
   "name": "Musashi",
@@ -135,6 +194,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Oyashio"
  },
+ "ship-japanese-destroyer-takanami-1942": {
+  "name": "Takanami",
+  "kind": "destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Takanami_(1942)"
+ },
  "ship-japanese-destroyer-take-1944": {
   "name": "Take",
   "kind": "Matsu class destroyer",
@@ -148,6 +214,13 @@
   "nation": "Japan",
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Yukikaze_(1939)",
   "wikidata": null
+ },
+ "ship-mv-carnarvon-castle": {
+  "name": "Carnarvon Castle",
+  "kind": "Union Castle liner, Royal Navy armed merchant cruiser",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/MV_Carnarvon_Castle"
  },
  "ship-mv-dunedin-star": {
   "name": "MV Dunedin Star",
@@ -170,12 +243,33 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/SS_John_Harvey"
  },
+ "ship-ss-kiangya": {
+  "name": "SS Kiangya",
+  "kind": "Chinese passenger steamer",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Kiangya"
+ },
+ "ship-ss-peleus": {
+  "name": "SS Peleus",
+  "kind": "cargo steamer",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Peleus"
+ },
  "ship-ss-tairoa": {
   "name": "SS Tairoa",
   "kind": "British refrigerated cargo liner",
   "nation": "Britain",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/SS_Tairoa"
+ },
+ "ship-ss-ussukuma": {
+  "name": "Ussukuma",
+  "kind": "German passenger liner",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Ussukuma"
  },
  "ship-uss-archerfish-ss-311": {
   "name": "USS Archerfish (SS-311)",
@@ -264,6 +358,20 @@
   "source": "https://en.wikipedia.org/wiki/USS_Intrepid_(CV-11)",
   "wikidata": null
  },
+ "ship-uss-lexington-cv-16": {
+  "name": "USS Lexington (CV-16)",
+  "kind": "US Navy Essex class aircraft carrier",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Lexington_(CV-16)"
+ },
+ "ship-uss-lexington-cv-2": {
+  "name": "USS Lexington (CV-2)",
+  "kind": "aircraft carrier",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Lexington_(CV-2)"
+ },
  "ship-uss-missouri-bb-63": {
   "name": "USS Missouri (BB-63)",
   "kind": "battleship",
@@ -305,6 +413,23 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/USS_Renshaw_(DD-499)",
   "wikidata": null
+ },
+ "ship-uss-sailfish-ss-192": {
+  "name": "USS Sailfish (SS-192)",
+  "kind": "US Navy submarine, formerly USS Squalus",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Sailfish_(SS-192)",
+  "aka": [
+   "USS Squalus"
+  ]
+ },
+ "ship-uss-sculpin-ss-191": {
+  "name": "USS Sculpin (SS-191)",
+  "kind": "US Navy submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Sculpin_(SS-191)"
  },
  "ship-uss-sea-devil-ss-400": {
   "name": "USS Sea Devil (SS-400)",

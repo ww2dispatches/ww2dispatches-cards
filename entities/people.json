@@ -6,6 +6,17 @@
   "source": "https://en.wikipedia.org/wiki/Airey_Neave",
   "wikidata": null
  },
+ "person-albert-coady-wedemeyer": {
+  "name": "Albert Coady Wedemeyer",
+  "kind": "US Army officer, author of the Victory Program",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Albert_Coady_Wedemeyer",
+  "aka": [
+   "Albert C. Wedemeyer",
+   "Albert Wedemeyer"
+  ]
+ },
  "person-alfred-blalock": {
   "name": "Alfred Blalock",
   "kind": "surgeon",
@@ -26,6 +37,23 @@
   "nation": "Italy",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Benito_Mussolini"
+ },
+ "person-burton-k-wheeler": {
+  "name": "Burton K. Wheeler",
+  "kind": "US senator from Montana, isolationist",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Burton_K._Wheeler"
+ },
+ "person-carl-gustaf-emil-mannerheim": {
+  "name": "Carl Gustaf Emil Mannerheim",
+  "kind": "Finnish field marshal and commander in chief",
+  "nation": "Finland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Carl_Gustaf_Emil_Mannerheim",
+  "aka": [
+   "Mannerheim"
+  ]
  },
  "person-charles-de-gaulle": {
   "name": "Charles de Gaulle",
@@ -134,6 +162,16 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Eileen_Saxon"
  },
+ "person-elizabeth-ii": {
+  "name": "Elizabeth II",
+  "kind": "princess, later queen",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Elizabeth_II",
+  "aka": [
+   "Princess Elizabeth"
+  ]
+ },
  "person-emmett-odonnell": {
   "name": "Emmett O'Donnell Jr.",
   "kind": "U.S. Army Air Forces general",
@@ -187,6 +225,13 @@
   "source": "https://en.wikipedia.org/wiki/Fabian_Ware",
   "wikidata": null
  },
+ "person-fedor-von-bock": {
+  "name": "Fedor von Bock",
+  "kind": "Wehrmacht field marshal, commander of Army Group Centre",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fedor_von_Bock"
+ },
  "person-fiorello-la-guardia": {
   "name": "Fiorello La Guardia",
   "kind": "mayor of New York, civil defense director",
@@ -204,12 +249,50 @@
    "FDR"
   ]
  },
+ "person-franz-schlegelberger": {
+  "name": "Franz Schlegelberger",
+  "kind": "Acting Reich Minister of Justice, defendant in the Judges' Trial",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Franz_Schlegelberger"
+ },
  "person-franz-vaterrodt": {
   "name": "Franz Vaterrodt",
   "kind": "German general",
   "nation": "Germany",
   "source": "https://en.wikipedia.org/wiki/Franz_Vaterrodt",
   "wikidata": null
+ },
+ "person-frida-michelson": {
+  "name": "Frida Michelson",
+  "kind": "Holocaust survivor, Rumbula",
+  "nation": "Latvia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Frida_Michelson"
+ },
+ "person-friedrich-ebert-jr": {
+  "name": "Friedrich Ebert Jr.",
+  "kind": "SED politician, mayor of East Berlin",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Friedrich_Ebert_Jr."
+ },
+ "person-fritz-julius-kuhn": {
+  "name": "Fritz Julius Kuhn",
+  "kind": "leader of the German American Bund",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fritz_Julius_Kuhn",
+  "aka": [
+   "Fritz Kuhn"
+  ]
+ },
+ "person-galeazzo-ciano": {
+  "name": "Galeazzo Ciano",
+  "kind": "foreign minister",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Galeazzo_Ciano"
  },
  "person-geoffrey-lawrence-1st-baron-oaksey": {
   "name": "Geoffrey Lawrence",
@@ -241,6 +324,13 @@
   "aka": [
    "King George VI"
   ]
+ },
+ "person-georgy-zhukov": {
+  "name": "Georgy Zhukov",
+  "kind": "Red Army general, commander of the Western Front",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Georgy_Zhukov"
  },
  "person-gerd-von-rundstedt": {
   "name": "Gerd von Rundstedt",
@@ -290,6 +380,16 @@
    "Truman"
   ]
  },
+ "person-hartley-shawcross": {
+  "name": "Hartley Shawcross",
+  "kind": "British Attorney General and chief prosecutor at Nuremberg",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hartley_Shawcross",
+  "aka": [
+   "Sir Hartley Shawcross"
+  ]
+ },
  "person-hayao-tada": {
   "name": "Hayao Tada",
   "kind": "army general, deputy chief of staff",
@@ -303,6 +403,23 @@
   "nation": "US",
   "wikidata": "Q5687462",
   "source": "https://en.wikipedia.org/wiki/Haywood_S._Hansell"
+ },
+ "person-heinz-guderian": {
+  "name": "Heinz Guderian",
+  "kind": "Wehrmacht panzer general",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Heinz_Guderian"
+ },
+ "person-heinz-wilhelm-eck": {
+  "name": "Heinz-Wilhelm Eck",
+  "kind": "U-boat commander, executed for war crimes",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Heinz-Wilhelm_Eck",
+  "aka": [
+   "Heinz Eck"
+  ]
  },
  "person-helen-b-taussig": {
   "name": "Helen B. Taussig",
@@ -330,6 +447,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Henry_J._Kaiser",
   "wikidata": null
+ },
+ "person-herman-bottcher": {
+  "name": "Herman Bottcher",
+  "kind": "U.S. Army soldier, German born",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Herman_Bottcher"
  },
  "person-hermann-goring": {
   "name": "Hermann Goering",
@@ -373,6 +497,16 @@
   "source": "https://en.wikipedia.org/wiki/Iona_Nikitchenko",
   "wikidata": null
  },
+ "person-irena-sendler": {
+  "name": "Irena Sendler",
+  "kind": "Polish social worker, head of Zegota's children's section",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Irena_Sendler",
+  "aka": [
+   "Irena Sendlerowa"
+  ]
+ },
  "person-irving-berlin": {
   "name": "Irving Berlin",
   "kind": "American songwriter",
@@ -380,12 +514,36 @@
   "source": "https://en.wikipedia.org/wiki/Irving_Berlin",
   "wikidata": null
  },
+ "person-isaac-woodard": {
+  "name": "Isaac Woodard",
+  "kind": "U.S. Army veteran blinded in a 1946 attack",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Isaac_Woodard"
+ },
+ "person-ismet-inonu": {
+  "name": "İsmet İnönü",
+  "kind": "President of Turkey",
+  "nation": "Turkey",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/%C4%B0smet_%C4%B0n%C3%B6n%C3%BC",
+  "aka": [
+   "Ismet Inonu"
+  ]
+ },
  "person-isoroku-yamamoto": {
   "name": "Isoroku Yamamoto",
   "kind": "admiral, Combined Fleet commander",
   "nation": "Japan",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Isoroku_Yamamoto"
+ },
+ "person-ivan-konev": {
+  "name": "Ivan Konev",
+  "kind": "Red Army general, commander of the Kalinin Front",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ivan_Konev"
  },
  "person-iwane-matsui": {
   "name": "Iwane Matsui",
@@ -421,6 +579,13 @@
   "nation": "Germany",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Johann_von_Ravenstein"
+ },
+ "person-john-h-newton": {
+  "name": "John H. Newton",
+  "kind": "U.S. Navy rear admiral, commander of Task Force 12",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/John_H._Newton"
  },
  "person-joseph-enright": {
   "name": "Joseph F. Enright",
@@ -512,6 +677,17 @@
    "Prince Takamatsu"
   ]
  },
+ "person-otto-kahler": {
+  "name": "Otto Kähler",
+  "kind": "Kriegsmarine captain of the raider Thor",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Otto_K%C3%A4hler",
+  "aka": [
+   "Otto Kahler"
+  ],
+  "note": "Wikipedia's 'Otto Kahler' is a different man, a 19th century physician."
+ },
  "person-otto-kretschmer": {
   "name": "Otto Kretschmer",
   "kind": "U-boat commander",
@@ -535,6 +711,13 @@
   "nation": "US",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Paul_Robeson"
+ },
+ "person-paul-v-mcnutt": {
+  "name": "Paul V. McNutt",
+  "kind": "chairman of the War Manpower Commission",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Paul_V._McNutt"
  },
  "person-philippe-leclerc-de-hauteclocque": {
   "name": "Philippe Leclerc",
@@ -625,12 +808,26 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Sadamu_Shimomura"
  },
+ "person-thomas-e-dewey": {
+  "name": "Thomas E. Dewey",
+  "kind": "Manhattan District Attorney, later Governor of New York",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Thomas_E._Dewey"
+ },
  "person-tom-phillips-royal-navy-officer": {
   "name": "Tom Phillips",
   "kind": "admiral",
   "nation": "Britain",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Tom_Phillips_(Royal_Navy_officer)"
+ },
+ "person-tomoyuki-yamashita": {
+  "name": "Tomoyuki Yamashita",
+  "kind": "Imperial Japanese Army general, 25th Army commander",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tomoyuki_Yamashita"
  },
  "person-toshio-abe": {
   "name": "Toshio Abe",
@@ -670,12 +867,26 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Walther_Funk"
  },
+ "person-wang-jingwei": {
+  "name": "Wang Jingwei",
+  "kind": "head of the collaborationist Nanjing government",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Wang_Jingwei"
+ },
  "person-werner-lott": {
   "name": "Werner Lott",
   "kind": "U-boat commander",
   "nation": "Germany",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Werner_Lott"
+ },
+ "person-wernher-von-braun": {
+  "name": "Wernher von Braun",
+  "kind": "German Army rocket engineer, later NASA",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Wernher_von_Braun"
  },
  "person-wilhelm-keitel": {
   "name": "Wilhelm Keitel",
@@ -707,6 +918,16 @@
   "nation": "Britain",
   "wikidata": "Q8016",
   "source": "https://en.wikipedia.org/wiki/Winston_Churchill"
+ },
+ "person-zofia-kossak-szczucka": {
+  "name": "Zofia Kossak-Szczucka",
+  "kind": "Polish Catholic writer, cofounder of Zegota",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Zofia_Kossak-Szczucka",
+  "aka": [
+   "Zofia Kossak"
+  ]
  },
  "person-zoya-kosmodemyanskaya": {
   "name": "Zoya Kosmodemyanskaya",

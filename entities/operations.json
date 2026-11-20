@@ -16,6 +16,13 @@
   "source": "https://en.wikipedia.org/wiki/Aarhus_air_raid",
   "wikidata": null
  },
+ "op-abyssinia-crisis": {
+  "name": "Abyssinia Crisis",
+  "kind": "international crisis",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Abyssinia_Crisis"
+ },
  "op-air-raid-on-bari": {
   "name": "Air raid on Bari",
   "kind": "air raid",
@@ -65,6 +72,17 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Battle_of_Berlin_(RAF_campaign)"
  },
+ "op-battle-of-buna-gona": {
+  "name": "Battle of Buna Gona",
+  "kind": "battle",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Buna%E2%80%93Gona",
+  "aka": [
+   "Buna",
+   "Gona"
+  ]
+ },
  "op-battle-of-iwo-jima": {
   "name": "Battle of Iwo Jima",
   "kind": "battle",
@@ -78,6 +96,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Midway",
   "wikidata": null
+ },
+ "op-battle-of-moscow": {
+  "name": "Battle of Moscow",
+  "kind": "battle",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Moscow"
  },
  "op-battle-of-nanking": {
   "name": "Battle of Nanking",
@@ -146,6 +171,34 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Bevin_Boys"
  },
+ "op-bombing-of-calcutta": {
+  "name": "Bombing of Calcutta",
+  "kind": "Japanese air raids",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Calcutta"
+ },
+ "op-bombing-of-helsinki-in-world-war-ii": {
+  "name": "Bombing of Helsinki in World War II",
+  "kind": "air raids on a city",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Helsinki_in_World_War_II"
+ },
+ "op-bombing-of-naples-in-world-war-ii": {
+  "name": "Bombing of Naples in World War II",
+  "kind": "Allied and Axis air raids on Naples",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Naples_in_World_War_II"
+ },
+ "op-bombings-of-heilbronn-in-world-war-ii": {
+  "name": "Bombings of Heilbronn in World War II",
+  "kind": "Allied air raids on Heilbronn, including 4 December 1944",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombings_of_Heilbronn_in_World_War_II"
+ },
  "op-cairo-conference": {
   "name": "Cairo Conference",
   "kind": "conference",
@@ -173,6 +226,20 @@
    "UN Charter"
   ]
  },
+ "op-chinese-civil-war": {
+  "name": "Chinese Civil War",
+  "kind": "Civil war between Nationalists and Communists",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+ },
+ "op-continuation-war": {
+  "name": "Continuation War",
+  "kind": "war between Finland and the Soviet Union",
+  "nation": "Finland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Continuation_War"
+ },
  "op-convoy-hx-90": {
   "name": "Convoy HX 90",
   "kind": "Atlantic convoy",
@@ -196,6 +263,13 @@
   "nation": "US",
   "wikidata": "Q713516",
   "source": "https://en.wikipedia.org/wiki/Doolittle_Raid"
+ },
+ "op-flight-19": {
+  "name": "Flight 19",
+  "kind": "lost U.S. Navy training flight",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Flight_19"
  },
  "op-gozen-kaigi": {
   "name": "Gozen Kaigi",
@@ -221,6 +295,16 @@
   "source": "https://en.wikipedia.org/wiki/Japanese_air_attacks_on_the_Mariana_Islands",
   "wikidata": null
  },
+ "op-judges-trial": {
+  "name": "Judges' Trial",
+  "kind": "NMT Case 3, the Justice Case, 1947",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Judges%27_Trial",
+  "aka": [
+   "Justice Case"
+  ]
+ },
  "op-korean-war": {
   "name": "Korean War",
   "kind": "war",
@@ -241,6 +325,16 @@
   "nation": "Germany",
   "wikidata": "Q6658321",
   "source": "https://en.wikipedia.org/wiki/Liverpool_Blitz"
+ },
+ "op-malayan-campaign": {
+  "name": "Malayan campaign",
+  "kind": "Japanese invasion of Malaya, 1941 to 1942",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Malayan_campaign",
+  "aka": [
+   "Japanese invasion of Malaya"
+  ]
  },
  "op-manhattan-project": {
   "name": "Manhattan Project",
@@ -274,12 +368,26 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Nuremberg_trials"
  },
+ "op-operation-crossbow": {
+  "name": "Operation Crossbow",
+  "kind": "Allied campaign against the V weapons",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Crossbow"
+ },
  "op-operation-crusader": {
   "name": "Operation Crusader",
   "kind": "offensive",
   "nation": "Britain",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Operation_Crusader"
+ },
+ "op-operation-lighthouse-1937": {
+  "name": "Operation Lighthouse",
+  "kind": "Failed A3 rocket test launches, December 1937",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Lighthouse_(1937)"
  },
  "op-operation-torch": {
   "name": "Operation Torch",
@@ -290,6 +398,13 @@
   "aka": [
    "Allied landings in North Africa"
   ]
+ },
+ "op-presidents-committee-on-civil-rights": {
+  "name": "President's Committee on Civil Rights",
+  "kind": "presidential committee",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/President's_Committee_on_Civil_Rights"
  },
  "op-raf-fauld-explosion": {
   "name": "RAF Fauld explosion",
@@ -307,6 +422,27 @@
   "nation": "US",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Rationing_in_the_United_States"
+ },
+ "op-rumbula-massacre": {
+  "name": "Rumbula massacre",
+  "kind": "mass shooting of Jews",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Rumbula_massacre"
+ },
+ "op-second-cairo-conference": {
+  "name": "Second Cairo Conference",
+  "kind": "Allied conference with Turkey, December 1943",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Second_Cairo_Conference"
+ },
+ "op-southampton-blitz": {
+  "name": "Southampton Blitz",
+  "kind": "air raids on a city",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Southampton_Blitz"
  },
  "op-surrender-of-japan": {
   "name": "Surrender of Japan",
@@ -346,6 +482,16 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Tokyo_Express"
  },
+ "op-ual-ual-incident": {
+  "name": "Ual-Ual Incident",
+  "kind": "border clash",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ual-Ual_Incident",
+  "aka": [
+   "Walwal incident"
+  ]
+ },
  "op-united-nations-conference-on-international-organization": {
   "name": "San Francisco Conference",
   "kind": "international conference",
@@ -353,12 +499,30 @@
   "source": "https://en.wikipedia.org/wiki/United_Nations_Conference_on_International_Organization",
   "wikidata": null
  },
+ "op-united-nations-participation-act": {
+  "name": "United Nations Participation Act",
+  "kind": "US law of 1945 on participation in the UN",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/United_Nations_Participation_Act"
+ },
  "op-us-coffee-rationing": {
   "name": "U.S. coffee rationing",
   "kind": "home front program",
   "nation": "US",
   "wikidata": null,
   "source": "https://www.nps.gov/articles/000/coffee-rationing-on-the-world-war-ii-home-front.htm"
+ },
+ "op-victory-program": {
+  "name": "Victory Program",
+  "kind": "US Army and Navy war mobilization plan of 1941, leaked 4 December 1941",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Victory_Program",
+  "aka": [
+   "Rainbow Five"
+  ],
+  "note": "Wikipedia's Rainbow Five title redirects here."
  },
  "op-winter-war": {
   "name": "Winter War",

@@ -9,6 +9,18 @@
    "40 cm gun"
   ]
  },
+ "machine-aggregat": {
+  "name": "Aggregat",
+  "kind": "German Army rocket family, A1 to A12",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Aggregat",
+  "aka": [
+   "A3",
+   "A4",
+   "V2"
+  ]
+ },
  "machine-blalock-thomas-taussig-shunt": {
   "name": "Blalock Thomas Taussig shunt",
   "kind": "surgical procedure",
@@ -96,6 +108,18 @@
   "nation": "Britain",
   "wikidata": "Q2668464",
   "source": "https://en.wikipedia.org/wiki/Sword_of_Stalingrad"
+ },
+ "machine-v-1-flying-bomb": {
+  "name": "V-1 flying bomb",
+  "kind": "German cruise missile",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/V-1_flying_bomb",
+  "aka": [
+   "V1",
+   "buzz bomb",
+   "doodlebug"
+  ]
  },
  "machine-v-2-no-13": {
   "name": "V-2 No. 13",

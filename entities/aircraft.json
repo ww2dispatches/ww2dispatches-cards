@@ -86,6 +86,16 @@
   ],
   "note": "'de Havilland Sea Vampire' redirects to this article."
  },
+ "aircraft-grumman-tbf-avenger": {
+  "name": "Grumman TBF Avenger",
+  "kind": "American carrier torpedo bomber",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Grumman_TBF_Avenger",
+  "aka": [
+   "TBM Avenger"
+  ]
+ },
  "aircraft-hughes-h-4-hercules": {
   "name": "Hughes H-4 Hercules",
   "kind": "flying boat",
@@ -105,6 +115,20 @@
   "aka": [
    "P-38"
   ]
+ },
+ "aircraft-martin-b-26-marauder": {
+  "name": "Martin B-26 Marauder",
+  "kind": "American twin engine medium bomber",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Martin_B-26_Marauder"
+ },
+ "aircraft-martin-pbm-mariner": {
+  "name": "Martin PBM Mariner",
+  "kind": "American patrol flying boat",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Martin_PBM_Mariner"
  },
  "aircraft-mcdonnell-fh-phantom": {
   "name": "McDonnell XFD-1 Phantom",
