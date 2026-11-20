@@ -4,7 +4,7 @@ Indexed under Brian's 19 Nov 2026 rule: NARA's own captured German film may be u
 
 A sweep of the NARA catalog for record group 242 moving images found 385 records, but **only 7 are digitized**. Three are German and were sheeted here. The other four are Italian (Giornale di Guerra, out), Soviet (Russian Air Show, a 1949 Belarus musical) and a Spanish copy of a Japanese film (Nanking 1937, with dead in the streets; out). The rest of record group 242 film would need a NARA reproduction order. The captured German film in 428-NPC, 111-ADC and 342-USAF (listed in `german-footage-sources-2026-11-13.md`, Section 4) is the next place to look; much of it is digitized.
 
-## 1. German News No. 88 (242-GN-88, naId 43608, 10 min 0 s) — the best of the batch
+## 1. German News No. 88 (242-GN-88, naId 43608, 10 min 0 s), the best of the batch
 https://catalog.archives.gov/medialz/mopix/242/GN/242-gn-88.mp4
 German overseas newsreel, September 1943 (Italy's armistice and the German takeover). Sharp copy.
 | Time | Shows | Use |
