@@ -47,6 +47,16 @@
   "source": "https://en.wikipedia.org/wiki/Aarhus_air_raid",
   "wikidata": null
  },
+ "op-abdication-of-edward-viii": {
+  "name": "Abdication of Edward VIII",
+  "kind": "constitutional crisis and abdication",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Abdication_of_Edward_VIII",
+  "aka": [
+   "abdication crisis"
+  ]
+ },
  "op-abyssinia-crisis": {
   "name": "Abyssinia Crisis",
   "kind": "international crisis",
@@ -60,6 +70,23 @@
   "nation": "Germany",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Air_raid_on_Bari"
+ },
+ "op-aktion-t4": {
+  "name": "Aktion T4",
+  "kind": "Nazi 'euthanasia' killing program",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Aktion_T4"
+ },
+ "op-anglo-american-loan": {
+  "name": "Anglo-American loan",
+  "kind": "postwar loan agreement",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Anglo-American_loan",
+  "aka": [
+   "Financial Agreement of 1945"
+  ]
  },
  "op-arctic-convoys-of-world-war-ii": {
   "name": "Arctic convoys",
@@ -156,6 +183,13 @@
    "Gona"
   ]
  },
+ "op-battle-of-guam-1941": {
+  "name": "Battle of Guam (1941)",
+  "kind": "Japanese invasion of Guam",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Guam_(1941)"
+ },
  "op-battle-of-hong-kong": {
   "name": "Battle of Hong Kong",
   "kind": "battle",
@@ -176,6 +210,13 @@
   "nation": "Japan",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Battle_of_Kota_Bharu"
+ },
+ "op-battle-of-leyte": {
+  "name": "Battle of Leyte",
+  "kind": "campaign",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Leyte"
  },
  "op-battle-of-leyte-gulf": {
   "name": "Battle of Leyte Gulf",
@@ -251,12 +292,26 @@
   "source": "https://en.wikipedia.org/wiki/Battle_of_the_Santa_Cruz_Islands",
   "note": "Nation is the side the name is told from in our records; both sides are in nations on each event."
  },
+ "op-battle-of-sidi-barrani": {
+  "name": "Battle of Sidi Barrani",
+  "kind": "opening battle of Operation Compass",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Sidi_Barrani"
+ },
  "op-battle-of-skerki-bank": {
   "name": "Battle of Skerki Bank",
   "kind": "naval battle",
   "nation": "Britain",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Battle_of_Skerki_Bank"
+ },
+ "op-battle-of-stalingrad": {
+  "name": "Battle of Stalingrad",
+  "kind": "battle",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Stalingrad"
  },
  "op-battle-of-tassafaronga": {
   "name": "Battle of Tassafaronga",
@@ -274,6 +329,13 @@
   "aka": [
    "Ardennes offensive"
   ]
+ },
+ "op-battle-of-tolvajarvi": {
+  "name": "Battle of Tolvajärvi",
+  "kind": "Winter War battle",
+  "nation": "Finland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Tolvaj%C3%A4rvi"
  },
  "op-battle-of-wake-island": {
   "name": "Battle of Wake Island",
@@ -340,6 +402,13 @@
   "nation": "Germany",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Bombings_of_Heilbronn_in_World_War_II"
+ },
+ "op-bristol-blitz": {
+  "name": "Bristol Blitz",
+  "kind": "air raid campaign",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bristol_Blitz"
  },
  "op-british-declaration-of-war-on-japan": {
   "name": "British declaration of war on Japan",
@@ -479,12 +548,26 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Flight_19"
  },
+ "op-franco-german-declaration": {
+  "name": "Franco-German Declaration",
+  "kind": "treaty, 6 December 1938",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Franco%E2%80%93German_Declaration"
+ },
  "op-genocide-convention": {
   "name": "Genocide Convention",
   "kind": "international treaty",
   "nation": "worldwide",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Genocide_Convention"
+ },
+ "op-german-declaration-of-war-on-the-united-states": {
+  "name": "German declaration of war on the United States",
+  "kind": "declaration of war, 11 December 1941",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_declaration_of_war_on_the_United_States"
  },
  "op-german-invasion-of-greece": {
   "name": "German invasion of Greece",
@@ -538,12 +621,33 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Internment_of_Japanese_Americans"
  },
+ "op-italian-declaration-of-war-on-the-united-states": {
+  "name": "Italian declaration of war on the United States",
+  "kind": "declaration of war, 11 December 1941",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_declaration_of_war_on_the_United_States"
+ },
  "op-japanese-air-attacks-on-the-mariana-islands": {
   "name": "Japanese air attacks on the Mariana Islands",
   "kind": "air raids",
   "nation": "Japan",
   "source": "https://en.wikipedia.org/wiki/Japanese_air_attacks_on_the_Mariana_Islands",
   "wikidata": null
+ },
+ "op-japanese-invasion-of-aparri": {
+  "name": "Japanese invasion of Aparri",
+  "kind": "Japanese landing in northern Luzon",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_invasion_of_Aparri"
+ },
+ "op-japanese-invasion-of-legazpi": {
+  "name": "Japanese invasion of Legazpi",
+  "kind": "amphibious landing",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_invasion_of_Legazpi"
  },
  "op-judges-trial": {
   "name": "Judges' Trial",
@@ -561,6 +665,13 @@
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/Kindertransport",
   "wikidata": null
+ },
+ "op-knights-of-columbus-hostel-fire": {
+  "name": "Knights of Columbus Hostel fire",
+  "kind": "wartime fire disaster",
+  "nation": "Newfoundland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Knights_of_Columbus_Hostel_fire"
  },
  "op-korean-war": {
   "name": "Korean War",
@@ -718,6 +829,17 @@
    "Ohi Day"
   ]
  },
+ "op-operation-attila": {
+  "name": "Operation Attila",
+  "kind": "German plan to occupy Vichy France, Directive No. 19",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Attila",
+  "aka": [
+   "Directive No. 19",
+   "Undertaking Attila"
+  ]
+ },
  "op-operation-battleaxe": {
   "name": "Operation Battleaxe",
   "kind": "British offensive",
@@ -777,6 +899,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Operation_Overlord"
  },
+ "op-operation-oyster": {
+  "name": "Operation Oyster",
+  "kind": "RAF daylight raid on Eindhoven",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Oyster"
+ },
  "op-operation-queen": {
   "name": "Operation Queen",
   "kind": "Allied offensive",
@@ -815,6 +944,16 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/President's_Committee_on_Civil_Rights"
  },
+ "op-raczynski-s-note": {
+  "name": "Raczyński's Note",
+  "kind": "Polish government note on the extermination of the Jews",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Raczy%C5%84ski%27s_Note",
+  "aka": [
+   "Raczynski's Note"
+  ]
+ },
  "op-raf-fauld-explosion": {
   "name": "RAF Fauld explosion",
   "kind": "accidental explosion",
@@ -825,12 +964,29 @@
    "Hanbury Crater"
   ]
  },
+ "op-raid-on-algiers": {
+  "name": "Raid on Algiers",
+  "kind": "Italian frogman and human torpedo raid, December 1942",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Raid_on_Algiers"
+ },
  "op-rationing-in-the-united-states": {
   "name": "Rationing in the United States",
   "kind": "home front program",
   "nation": "US",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Rationing_in_the_United_States"
+ },
+ "op-retreat-of-the-government-of-the-republic-of-china-to-taiwan": {
+  "name": "Retreat of the government of the Republic of China to Taiwan",
+  "kind": "Nationalist evacuation to Taiwan, 1949",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Retreat_of_the_government_of_the_Republic_of_China_to_Taiwan",
+  "aka": [
+   "Great Retreat"
+  ]
  },
  "op-romani-holocaust": {
   "name": "Romani Holocaust",
@@ -867,6 +1023,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Second_Cairo_Conference"
  },
+ "op-second-italo-ethiopian-war": {
+  "name": "Second Italo-Ethiopian War",
+  "kind": "war",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Second_Italo-Ethiopian_War"
+ },
  "op-second-sino-japanese-war": {
   "name": "Second Sino-Japanese War",
   "kind": "war",
@@ -885,6 +1048,13 @@
    "draft lottery"
   ]
  },
+ "op-sheffield-blitz": {
+  "name": "Sheffield Blitz",
+  "kind": "German bombing of Sheffield",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sheffield_Blitz"
+ },
  "op-siege-of-leningrad": {
   "name": "Siege of Leningrad",
   "kind": "siege",
@@ -899,12 +1069,47 @@
   "source": "https://en.wikipedia.org/wiki/Siege_of_Tobruk",
   "wikidata": null
  },
+ "op-sinking-of-prince-of-wales-and-repulse": {
+  "name": "Sinking of Prince of Wales and Repulse",
+  "kind": "naval air battle off Malaya",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sinking_of_Prince_of_Wales_and_Repulse"
+ },
  "op-southampton-blitz": {
   "name": "Southampton Blitz",
   "kind": "air raids on a city",
   "nation": "Germany",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Southampton_Blitz"
+ },
+ "op-spanish-question-united-nations": {
+  "name": "Spanish question (United Nations)",
+  "kind": "UN diplomatic question",
+  "nation": "Spain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Spanish_question_(United_Nations)"
+ },
+ "op-stary-ciepielow-and-rekowka-massacre": {
+  "name": "Stary Ciepielów and Rekówka massacre",
+  "kind": "massacre of Poles who helped Jews",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Stary_Ciepiel%C3%B3w_and_Rek%C3%B3wka_massacre"
+ },
+ "op-statute-of-westminster-1931": {
+  "name": "Statute of Westminster 1931",
+  "kind": "act of the British Parliament",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Statute_of_Westminster_1931"
+ },
+ "op-struma-disaster": {
+  "name": "Struma disaster",
+  "kind": "refugee ship sinking",
+  "nation": "Romania",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Struma_disaster"
  },
  "op-subsequent-nuremberg-trials": {
   "name": "Subsequent Nuremberg trials",
@@ -936,6 +1141,13 @@
   "nation": "Canada",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Terrace_mutiny"
+ },
+ "op-the-holocaust-in-italy": {
+  "name": "The Holocaust in Italy",
+  "kind": "persecution and deportation of Italy's Jews",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/The_Holocaust_in_Italy"
  },
  "op-this-is-the-army-musical": {
   "name": "This Is the Army",
@@ -999,12 +1211,29 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/United_States_declaration_of_war_on_Japan"
  },
+ "op-universal-declaration-of-human-rights": {
+  "name": "Universal Declaration of Human Rights",
+  "kind": "United Nations declaration",
+  "nation": "United Nations",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Universal_Declaration_of_Human_Rights",
+  "aka": [
+   "UDHR"
+  ]
+ },
  "op-us-coffee-rationing": {
   "name": "U.S. coffee rationing",
   "kind": "home front program",
   "nation": "US",
   "wikidata": null,
   "source": "https://www.nps.gov/articles/000/coffee-rationing-on-the-world-war-ii-home-front.htm"
+ },
+ "op-uss-panay-incident": {
+  "name": "USS Panay incident",
+  "kind": "Japanese attack on a U.S. gunboat",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Panay_incident"
  },
  "op-victory-program": {
   "name": "Victory Program",
@@ -1030,6 +1259,13 @@
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/Witchcraft_Act_1735",
   "wikidata": null
+ },
+ "op-xi-an-incident": {
+  "name": "Xi'an Incident",
+  "kind": "detention of Chiang Kai-shek",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Xi%27an_Incident"
  },
  "op-yip-yip-yaphank": {
   "name": "Yip Yip Yaphank",

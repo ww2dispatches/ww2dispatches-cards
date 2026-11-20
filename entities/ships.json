@@ -61,6 +61,26 @@
    "Lutzow"
   ]
  },
+ "ship-german-destroyer-z35": {
+  "name": "German destroyer Z35",
+  "kind": "Kriegsmarine destroyer",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_destroyer_Z35",
+  "aka": [
+   "Z35"
+  ]
+ },
+ "ship-german-destroyer-z36": {
+  "name": "German destroyer Z36",
+  "kind": "Kriegsmarine destroyer",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_destroyer_Z36",
+  "aka": [
+   "Z36"
+  ]
+ },
  "ship-german-submarine-u-221": {
   "name": "U-221",
   "kind": "German Type VIIC submarine",
@@ -109,6 +129,16 @@
   "nation": "Germany",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-568",
   "wikidata": null
+ },
+ "ship-german-submarine-u-593": {
+  "name": "German submarine U-593",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-593",
+  "aka": [
+   "U-593"
+  ]
  },
  "ship-german-submarine-u-852": {
   "name": "U-852",
@@ -173,6 +203,13 @@
   "source": "https://en.wikipedia.org/wiki/HMS_Bideford_(L43)",
   "wikidata": null
  },
+ "ship-hms-duchess-h64": {
+  "name": "HMS Duchess (H64)",
+  "kind": "Royal Navy D class destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Duchess_(H64)"
+ },
  "ship-hms-forfar": {
   "name": "HMS Forfar (F30)",
   "kind": "armed merchant cruiser",
@@ -200,6 +237,13 @@
    "U-570",
    "HMS Graph"
   ]
+ },
+ "ship-hms-holcombe": {
+  "name": "HMS Holcombe",
+  "kind": "Royal Navy Hunt class escort destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Holcombe"
  },
  "ship-hms-jervis": {
   "name": "HMS Jervis (F00)",
@@ -235,6 +279,14 @@
   "nation": "Britain",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/HMS_Ocean_(R68)"
+ },
+ "ship-hms-perseus-n36": {
+  "name": "HMS Perseus (N36)",
+  "kind": "Parthian class submarine",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Perseus_(N36)",
+  "note": "'John Capes' redirects to this article."
  },
  "ship-hms-peterel-1927": {
   "name": "HMS Peterel (1927)",
@@ -285,6 +337,14 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/HMS_Tuna_(N94)"
  },
+ "ship-hms-tynedale": {
+  "name": "HMS Tynedale (L96)",
+  "kind": "Royal Navy Hunt class escort destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Tynedale",
+  "note": "Wikipedia title HMS Tynedale; HMS Tynedale (L96) redirects to it."
+ },
  "ship-hms-valiant-1914": {
   "name": "HMS Valiant",
   "kind": "battleship",
@@ -322,6 +382,13 @@
   "nation": "Italy",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Italian_destroyer_Folgore"
+ },
+ "ship-italian-submarine-ambra": {
+  "name": "Italian submarine Ambra",
+  "kind": "Regia Marina submarine, human torpedo carrier",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_submarine_Ambra"
  },
  "ship-japanese-aircraft-carrier-chuyo": {
   "name": "Chūyō",
@@ -389,12 +456,26 @@
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Hamakaze_(1940)",
   "wikidata": null
  },
+ "ship-japanese-destroyer-hayate-1925": {
+  "name": "Japanese destroyer Hayate (1925)",
+  "kind": "Kamikaze class destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Hayate_(1925)"
+ },
  "ship-japanese-destroyer-isokaze-1939": {
   "name": "Isokaze",
   "kind": "destroyer",
   "nation": "Japan",
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Isokaze_(1939)",
   "wikidata": null
+ },
+ "ship-japanese-destroyer-kisaragi-1925": {
+  "name": "Japanese destroyer Kisaragi (1925)",
+  "kind": "Mutsuki class destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Kisaragi_(1925)"
  },
  "ship-japanese-destroyer-okinami": {
   "name": "Okinami",
@@ -497,6 +578,20 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-26"
  },
+ "ship-japanese-submarine-i-70": {
+  "name": "I-70",
+  "kind": "Imperial Japanese Navy fleet submarine",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-70"
+ },
+ "ship-japanese-submarine-i-9": {
+  "name": "Japanese submarine I-9",
+  "kind": "Imperial Japanese Navy submarine",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-9"
+ },
  "ship-ms-awazisan-maru": {
   "name": "Awazisan Maru",
   "kind": "Japanese troop transport",
@@ -517,6 +612,14 @@
   "nation": "Britain",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/MV_Dunedin_Star"
+ },
+ "ship-mv-struma": {
+  "name": "MV Struma",
+  "kind": "refugee ship",
+  "nation": "Panama",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/MV_Struma",
+  "note": "Panamanian flag per Wikipedia; check."
  },
  "ship-odenwald": {
   "name": "Odenwald",
@@ -574,6 +677,17 @@
   "nation": "China",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/SS_Kiangya"
+ },
+ "ship-ss-normandie": {
+  "name": "SS Normandie",
+  "kind": "French ocean liner, later USS Lafayette (AP-53)",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Normandie",
+  "aka": [
+   "USS Lafayette (AP-53)",
+   "Normandie"
+  ]
  },
  "ship-ss-peleus": {
   "name": "SS Peleus",
@@ -828,6 +942,13 @@
   "source": "https://en.wikipedia.org/wiki/USS_Omaha_(CL-4)",
   "wikidata": null
  },
+ "ship-uss-panay-pr-5": {
+  "name": "USS Panay (PR-5)",
+  "kind": "U.S. Navy river gunboat",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Panay_(PR-5)"
+ },
  "ship-uss-pioneer-am-105": {
   "name": "USS Pioneer (AM-105)",
   "kind": "minesweeper",
@@ -841,6 +962,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/USS_Ranger_(CV-4)",
   "wikidata": null
+ },
+ "ship-uss-reid-dd-369": {
+  "name": "USS Reid (DD-369)",
+  "kind": "Mahan class destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Reid_(DD-369)"
  },
  "ship-uss-renshaw-dd-499": {
   "name": "USS Renshaw (DD-499)",

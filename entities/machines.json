@@ -155,6 +155,13 @@
   "source": "https://en.wikipedia.org/wiki/Ordnance_QF_25-pounder",
   "wikidata": null
  },
+ "machine-penicillin": {
+  "name": "Penicillin",
+  "kind": "antibiotic drug",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Penicillin"
+ },
  "machine-pratt-whitney-r-4360-wasp-major": {
   "name": "Pratt and Whitney R-4360",
   "kind": "radial aircraft engine",
@@ -200,6 +207,13 @@
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/Tallboy_(bomb)",
   "wikidata": null
+ },
+ "machine-the-nazi-plan": {
+  "name": "The Nazi Plan",
+  "kind": "1945 prosecution film for the Nuremberg trial",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/The_Nazi_Plan"
  },
  "machine-v-1-flying-bomb": {
   "name": "V-1 flying bomb",

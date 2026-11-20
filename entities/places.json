@@ -56,6 +56,18 @@
   "lat": null,
   "lon": null
  },
+ "place-auschwitz-concentration-camp": {
+  "name": "Auschwitz concentration camp",
+  "kind": "German concentration and extermination camp",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Auschwitz_concentration_camp",
+  "aka": [
+   "Auschwitz"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-balalae-island": {
   "name": "Ballale",
   "kind": "island",
@@ -214,6 +226,15 @@
   "lat": null,
   "lon": null
  },
+ "place-bristol": {
+  "name": "Bristol",
+  "kind": "city",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bristol",
+  "lat": null,
+  "lon": null
+ },
  "place-brunei": {
   "name": "Brunei",
   "kind": "anchorage",
@@ -244,6 +265,28 @@
   "lat": null,
   "lon": null
  },
+ "place-burauen": {
+  "name": "Burauen",
+  "kind": "town and airfields on Leyte",
+  "nation": "Philippines",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Burauen",
+  "lat": null,
+  "lon": null
+ },
+ "place-camp-x": {
+  "name": "Camp X",
+  "kind": "secret agent training school near Whitby, Ontario",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Camp_X",
+  "aka": [
+   "Special Training School 103",
+   "STS 103"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-cape-jaffa": {
   "name": "Cape Jaffa",
   "kind": "headland in South Australia",
@@ -271,6 +314,18 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Central_Park",
   "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-cephalonia": {
+  "name": "Cephalonia",
+  "kind": "Greek island",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Cephalonia",
+  "aka": [
+   "Kefalonia"
+  ],
   "lat": null,
   "lon": null
  },
@@ -463,6 +518,15 @@
   "lat": null,
   "lon": null
  },
+ "place-dessie": {
+  "name": "Dessie",
+  "kind": "town, Ethiopian imperial headquarters in 1935",
+  "nation": "Ethiopia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Dessie",
+  "lat": null,
+  "lon": null
+ },
  "place-dieuze": {
   "name": "Dieuze",
   "kind": "town",
@@ -513,6 +577,15 @@
   "aka": [
    "Muroc"
   ]
+ },
+ "place-eindhoven": {
+  "name": "Eindhoven",
+  "kind": "city, home of Philips",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Eindhoven",
+  "lat": null,
+  "lon": null
  },
  "place-el-agheila": {
   "name": "El Agheila",
@@ -576,6 +649,15 @@
   "aka": [
    "Faroes"
   ]
+ },
+ "place-fort-belvedere": {
+  "name": "Fort Belvedere",
+  "kind": "country house in Windsor Great Park",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fort_Belvedere",
+  "lat": null,
+  "lon": null
  },
  "place-fort-de-koenigsmacker": {
   "name": "Fort Koenigsmacker",
@@ -688,12 +770,33 @@
   "lat": null,
   "lon": null
  },
+ "place-guam": {
+  "name": "Guam",
+  "kind": "island, U.S. territory in the Marianas",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Guam",
+  "lat": null,
+  "lon": null
+ },
  "place-hainan": {
   "name": "Hainan",
   "kind": "Island in the South China Sea",
   "nation": "China",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Hainan",
+  "lat": null,
+  "lon": null
+ },
+ "place-halifax-nova-scotia": {
+  "name": "Halifax, Nova Scotia",
+  "kind": "port city and convoy assembly point",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Halifax,_Nova_Scotia",
+  "aka": [
+   "Halifax"
+  ],
   "lat": null,
   "lon": null
  },
@@ -1144,6 +1247,18 @@
   "lat": null,
   "lon": null
  },
+ "place-legazpi-albay": {
+  "name": "Legazpi, Albay",
+  "kind": "port city, southern Luzon",
+  "nation": "Philippines",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Legazpi,_Albay",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Legaspi"
+  ]
+ },
  "place-leyte": {
   "name": "Leyte",
   "kind": "island",
@@ -1273,6 +1388,19 @@
   "lat": null,
   "lon": null
  },
+ "place-memoriale-della-shoah": {
+  "name": "Memoriale della Shoah",
+  "kind": "Holocaust memorial at Platform 21, Milano Centrale",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Memoriale_della_Shoah",
+  "aka": [
+   "Binario 21",
+   "Platform 21"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-metz": {
   "name": "Metz",
   "kind": "city",
@@ -1297,6 +1425,15 @@
   "nation": "US",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Midway_Atoll",
+  "lat": null,
+  "lon": null
+ },
+ "place-milan": {
+  "name": "Milan",
+  "kind": "city",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Milan",
   "lat": null,
   "lon": null
  },
@@ -1445,6 +1582,15 @@
   "nation": "US",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Naval_Air_Station_Fort_Lauderdale",
+  "lat": null,
+  "lon": null
+ },
+ "place-new-jerusalem-monastery": {
+  "name": "New Jerusalem Monastery",
+  "kind": "17th century monastery at Istra near Moscow",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/New_Jerusalem_Monastery",
   "lat": null,
   "lon": null
  },
@@ -1709,6 +1855,15 @@
   "lat": null,
   "lon": null
  },
+ "place-raf-digby": {
+  "name": "RAF Digby",
+  "kind": "Royal Air Force station, Lincolnshire",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/RAF_Digby",
+  "lat": null,
+  "lon": null
+ },
  "place-raf-fauld": {
   "name": "RAF Fauld",
   "kind": "underground bomb store",
@@ -1902,6 +2057,19 @@
    "Charlottenburg Palace"
   ]
  },
+ "place-schloss-hartheim": {
+  "name": "Schloss Hartheim",
+  "kind": "castle near Linz, Nazi euthanasia killing center",
+  "nation": "Austria",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Schloss_Hartheim",
+  "aka": [
+   "Hartheim Castle",
+   "Hartheim Euthanasia Centre"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-shanghai": {
   "name": "Shanghai",
   "kind": "City and port",
@@ -1917,6 +2085,15 @@
   "nation": "China",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Shanghai_International_Settlement",
+  "lat": null,
+  "lon": null
+ },
+ "place-sheffield": {
+  "name": "Sheffield",
+  "kind": "city",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sheffield",
   "lat": null,
   "lon": null
  },
@@ -1980,6 +2157,27 @@
   "nation": "Britain",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Southampton",
+  "lat": null,
+  "lon": null
+ },
+ "place-st-john-s-newfoundland-and-labrador": {
+  "name": "St. John's, Newfoundland and Labrador",
+  "kind": "city",
+  "nation": "Newfoundland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/St._John%27s,_Newfoundland_and_Labrador",
+  "lat": null,
+  "lon": null
+ },
+ "place-stary-ciepielow": {
+  "name": "Stary Ciepielów",
+  "kind": "village",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Stary_Ciepiel%C3%B3w",
+  "aka": [
+   "Stary Ciepielow"
+  ],
   "lat": null,
   "lon": null
  },

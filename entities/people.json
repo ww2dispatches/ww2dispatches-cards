@@ -1,4 +1,11 @@
 {
+ "person-aaro-pajari": {
+  "name": "Aaro Pajari",
+  "kind": "Finnish Army officer",
+  "nation": "Finland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Aaro_Pajari"
+ },
  "person-adolf-hitler": {
   "name": "Adolf Hitler",
   "kind": "dictator of Germany",
@@ -30,6 +37,13 @@
    "Albert C. Wedemeyer",
    "Albert Wedemeyer"
   ]
+ },
+ "person-alexander-fleming": {
+  "name": "Alexander Fleming",
+  "kind": "bacteriologist who discovered penicillin",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Alexander_Fleming"
  },
  "person-alfred-blalock": {
   "name": "Alfred Blalock",
@@ -124,12 +138,26 @@
   "source": "https://en.wikipedia.org/wiki/Bill_Jewell",
   "wikidata": null
  },
+ "person-bill-sparks": {
+  "name": "Bill Sparks",
+  "kind": "Royal Marine, Operation Frankton survivor",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bill_Sparks"
+ },
  "person-bob-feller": {
   "name": "Bob Feller",
   "kind": "baseball pitcher and Navy gun captain",
   "nation": "US",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Bob_Feller"
+ },
+ "person-budd-schulberg": {
+  "name": "Budd Schulberg",
+  "kind": "writer, compiled film evidence for Nuremberg",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Budd_Schulberg"
  },
  "person-burton-k-wheeler": {
   "name": "Burton K. Wheeler",
@@ -154,6 +182,16 @@
   "nation": "Philippines",
   "source": "https://en.wikipedia.org/wiki/Carlos_P._Romulo",
   "wikidata": null
+ },
+ "person-cesar-basa": {
+  "name": "César Basa",
+  "kind": "Philippine Army Air Corps pilot",
+  "nation": "Philippines",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/C%C3%A9sar_Basa",
+  "aka": [
+   "Cesar Basa"
+  ]
  },
  "person-chalmers-goodlin": {
   "name": "Chalmers Goodlin",
@@ -185,6 +223,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Charles_H._Gerhardt",
   "wikidata": null
+ },
+ "person-charles-lindbergh": {
+  "name": "Charles Lindbergh",
+  "kind": "aviator, America First spokesman",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Charles_Lindbergh"
  },
  "person-charles-mast": {
   "name": "Charles Mast",
@@ -255,6 +300,13 @@
   "source": "https://en.wikipedia.org/wiki/Clifton_Sprague",
   "wikidata": null
  },
+ "person-colin-kelly": {
+  "name": "Colin Kelly",
+  "kind": "U.S. Army Air Forces B-17 pilot",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Colin_Kelly"
+ },
  "person-cordell-hull": {
   "name": "Cordell Hull",
   "kind": "US Secretary of State",
@@ -282,6 +334,13 @@
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/David_Maxwell_Fyfe,_1st_Earl_of_Kilmuir",
   "wikidata": null
+ },
+ "person-david-stoliar": {
+  "name": "David Stoliar",
+  "kind": "sole survivor of the Struma",
+  "nation": "Romania",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/David_Stoliar"
  },
  "person-doc-blanchard": {
   "name": "Doc Blanchard",
@@ -324,6 +383,16 @@
   "source": "https://en.wikipedia.org/wiki/Ed_Westcott",
   "wikidata": null
  },
+ "person-edvard-benes": {
+  "name": "Edvard Beneš",
+  "kind": "President of Czechoslovakia",
+  "nation": "Czechoslovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Edvard_Bene%C5%A1",
+  "aka": [
+   "Edvard Benes"
+  ]
+ },
  "person-edward-kennedy-royal-navy-officer": {
   "name": "Edward Coverley Kennedy",
   "kind": "Royal Navy captain",
@@ -348,6 +417,26 @@
   "nation": "US",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Edward_R._Murrow"
+ },
+ "person-edward-raczynski": {
+  "name": "Edward Raczyński",
+  "kind": "Polish ambassador in London and foreign minister in exile",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Edward_Raczy%C5%84ski",
+  "aka": [
+   "Edward Raczynski"
+  ]
+ },
+ "person-edward-viii": {
+  "name": "Edward VIII",
+  "kind": "King of the United Kingdom, later Duke of Windsor",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Edward_VIII",
+  "aka": [
+   "Duke of Windsor"
+  ]
  },
  "person-edwin-m-watson": {
   "name": "Edwin Watson",
@@ -471,6 +560,16 @@
   "source": "https://en.wikipedia.org/wiki/Ernest_E._Evans",
   "wikidata": null
  },
+ "person-ernst-chain": {
+  "name": "Ernst Chain",
+  "kind": "biochemist on the Oxford penicillin team, refugee from Germany",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ernst_Chain",
+  "aka": [
+   "Ernst Boris Chain"
+  ]
+ },
  "person-ernst-kaltenbrunner": {
   "name": "Ernst Kaltenbrunner",
   "kind": "SS official",
@@ -534,6 +633,13 @@
   "source": "https://en.wikipedia.org/wiki/Frances_Wills",
   "wikidata": null
  },
+ "person-francisco-franco": {
+  "name": "Francisco Franco",
+  "kind": "dictator of Spain",
+  "nation": "Spain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Francisco_Franco"
+ },
  "person-franklin-d-roosevelt": {
   "name": "Franklin D. Roosevelt",
   "kind": "president",
@@ -571,6 +677,13 @@
   "nation": "Germany",
   "source": "https://en.wikipedia.org/wiki/Franz_Vaterrodt",
   "wikidata": null
+ },
+ "person-fred-m-vinson": {
+  "name": "Fred M. Vinson",
+  "kind": "U.S. Secretary of the Treasury",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fred_M._Vinson"
  },
  "person-frida-michelson": {
   "name": "Frida Michelson",
@@ -662,6 +775,16 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/George_H._Cannon"
  },
+ "person-george-mcmillin": {
+  "name": "George McMillin",
+  "kind": "U.S. Navy captain, naval governor of Guam",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/George_McMillin",
+  "aka": [
+   "George McMillan"
+  ]
+ },
  "person-george-pearkes": {
   "name": "George Pearkes",
   "kind": "general",
@@ -693,12 +816,26 @@
    "King George VI"
   ]
  },
+ "person-george-wadsworth-ii": {
+  "name": "George Wadsworth II",
+  "kind": "American diplomat, charge d'affaires in Rome 1941",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/George_Wadsworth_II"
+ },
  "person-george-washington": {
   "name": "George Washington",
   "kind": "U.S. president",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/George_Washington",
   "wikidata": null
+ },
+ "person-georges-bonnet": {
+  "name": "Georges Bonnet",
+  "kind": "French foreign minister",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Georges_Bonnet"
  },
  "person-georgy-zhukov": {
   "name": "Georgy Zhukov",
@@ -737,6 +874,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Gutzon_Borglum",
   "wikidata": null
+ },
+ "person-haile-selassie": {
+  "name": "Haile Selassie",
+  "kind": "Emperor of Ethiopia",
+  "nation": "Ethiopia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Haile_Selassie"
  },
  "person-hans-diedrich-von-tiesenhausen": {
   "name": "Hans-Diedrich von Tiesenhausen",
@@ -896,6 +1040,13 @@
   "source": "https://en.wikipedia.org/wiki/Henry_L._Stimson",
   "wikidata": null
  },
+ "person-henry-t-elrod": {
+  "name": "Henry T. Elrod",
+  "kind": "U.S. Marine aviator, Medal of Honor",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Henry_T._Elrod"
+ },
  "person-henry-wadsworth-longfellow": {
   "name": "Henry Wadsworth Longfellow",
   "kind": "American poet",
@@ -966,6 +1117,13 @@
   "wikidata": "Q160847",
   "source": "https://en.wikipedia.org/wiki/Hideki_Tojo"
  },
+ "person-hideki-yukawa": {
+  "name": "Hideki Yukawa",
+  "kind": "theoretical physicist, first Japanese Nobel laureate",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hideki_Yukawa"
+ },
  "person-hirohito": {
   "name": "Hirohito",
   "kind": "Emperor of Japan",
@@ -989,6 +1147,13 @@
   "nation": "Japan",
   "source": "https://en.wikipedia.org/wiki/Hotsumi_Ozaki",
   "wikidata": null
+ },
+ "person-howard-florey": {
+  "name": "Howard Florey",
+  "kind": "pathologist who led the Oxford penicillin team",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Howard_Florey"
  },
  "person-howard-hughes": {
   "name": "Howard Hughes",
@@ -1080,6 +1245,13 @@
   "source": "https://en.wikipedia.org/wiki/J._Lawton_Collins",
   "wikidata": null
  },
+ "person-james-b-conant": {
+  "name": "James B. Conant",
+  "kind": "chemist, Harvard president, NDRC chairman",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/James_B._Conant"
+ },
  "person-james-brian-tait": {
   "name": "J. B. Tait",
   "kind": "RAF wing commander",
@@ -1090,12 +1262,29 @@
    "Willie Tait"
   ]
  },
+ "person-james-devereux": {
+  "name": "James Devereux",
+  "kind": "U.S. Marine officer, commander of the Wake Island detachment",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/James_Devereux",
+  "aka": [
+   "James P. S. Devereux"
+  ]
+ },
  "person-james-f-byrnes": {
   "name": "James Byrnes",
   "kind": "U.S. Secretary of State",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/James_F._Byrnes",
   "wikidata": null
+ },
+ "person-james-pelly-fry": {
+  "name": "James Pelly-Fry",
+  "kind": "RAF wing commander, led Operation Oyster",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/James_Pelly-Fry"
  },
  "person-james-van-fleet": {
   "name": "James Van Fleet",
@@ -1110,6 +1299,16 @@
   "nation": "US",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Jeannette_Rankin"
+ },
+ "person-jesus-a-villamor": {
+  "name": "Jesús A. Villamor",
+  "kind": "Philippine Army Air Corps fighter pilot",
+  "nation": "Philippines",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Jes%C3%BAs_A._Villamor",
+  "aka": [
+   "Jesus Villamor"
+  ]
  },
  "person-joachim-von-ribbentrop": {
   "name": "Joachim von Ribbentrop",
@@ -1146,12 +1345,26 @@
   "source": "https://en.wikipedia.org/wiki/John_E._Dahlquist",
   "wikidata": null
  },
+ "person-john-gillespie-magee-jr": {
+  "name": "John Gillespie Magee Jr.",
+  "kind": "RCAF pilot and poet of High Flight",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/John_Gillespie_Magee_Jr."
+ },
  "person-john-h-newton": {
   "name": "John H. Newton",
   "kind": "U.S. Navy rear admiral, commander of Task Force 12",
   "nation": "US",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/John_H._Newton"
+ },
+ "person-john-maynard-keynes": {
+  "name": "John Maynard Keynes",
+  "kind": "British economist, led the loan negotiations",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/John_Maynard_Keynes"
  },
  "person-john-s-mccain-sr": {
   "name": "John S. McCain",
@@ -1180,6 +1393,13 @@
   "nation": "Germany",
   "source": "https://en.wikipedia.org/wiki/Joseph_Goebbels",
   "wikidata": null
+ },
+ "person-joseph-grew": {
+  "name": "Joseph Grew",
+  "kind": "U.S. ambassador to Japan",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Joseph_Grew"
  },
  "person-joseph-poindexter": {
   "name": "Joseph Poindexter",
@@ -1285,6 +1505,16 @@
   ],
   "note": "Wikipedia title is 'Kuehn family'; 'Bernard Kuehn' redirects there."
  },
+ "person-laura-fermi": {
+  "name": "Laura Fermi",
+  "kind": "writer, wife of Enrico Fermi",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Laura_Fermi",
+  "aka": [
+   "Laura Capon"
+  ]
+ },
  "person-leland-hobbs": {
   "name": "Leland Hobbs",
   "kind": "U.S. Army general",
@@ -1361,6 +1591,13 @@
   "source": "https://en.wikipedia.org/wiki/Manton_S._Eddy",
   "wikidata": null
  },
+ "person-mario-arillo": {
+  "name": "Mario Arillo",
+  "kind": "Italian submarine commander",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mario_Arillo"
+ },
  "person-mark-w-clark": {
   "name": "Mark Clark",
   "kind": "U.S. Army general",
@@ -1398,6 +1635,13 @@
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/Max_Aitken,_1st_Baron_Beaverbrook",
   "wikidata": null
+ },
+ "person-mikhail-kalinin": {
+  "name": "Mikhail Kalinin",
+  "kind": "Soviet head of state",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mikhail_Kalinin"
  },
  "person-neil-ritchie": {
   "name": "Neil Ritchie",
@@ -1451,6 +1695,13 @@
    "Otto Wille Kuusinen"
   ]
  },
+ "person-paavo-talvela": {
+  "name": "Paavo Talvela",
+  "kind": "Finnish general",
+  "nation": "Finland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Paavo_Talvela"
+ },
  "person-paul-a-putnam": {
   "name": "Paul A. Putnam",
   "kind": "U.S. Marine aviator, commander of VMF-211 at Wake",
@@ -1479,6 +1730,16 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Paul_V._McNutt"
  },
+ "person-philip-kerr-11th-marquess-of-lothian": {
+  "name": "Philip Kerr, 11th Marquess of Lothian",
+  "kind": "British Ambassador to the United States",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Philip_Kerr,_11th_Marquess_of_Lothian",
+  "aka": [
+   "Lord Lothian"
+  ]
+ },
  "person-philippe-leclerc-de-hauteclocque": {
   "name": "Philippe Leclerc",
   "kind": "Free French general",
@@ -1488,6 +1749,13 @@
   "aka": [
    "Leclerc"
   ]
+ },
+ "person-pietro-badoglio": {
+  "name": "Pietro Badoglio",
+  "kind": "Italian marshal, chief of the general staff, later prime minister",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Pietro_Badoglio"
  },
  "person-pietro-maletti": {
   "name": "Pietro Maletti",
@@ -1641,6 +1909,13 @@
   "source": "https://en.wikipedia.org/wiki/Sara_Roosevelt",
   "wikidata": null
  },
+ "person-sebastiano-gallina": {
+  "name": "Sebastiano Gallina",
+  "kind": "Italian general, commander of the Libyan Corps",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastiano_Gallina"
+ },
  "person-sergio-osmena": {
   "name": "Sergio Osmena",
   "kind": "Philippine president",
@@ -1667,6 +1942,16 @@
   "nation": "Japan",
   "source": "https://en.wikipedia.org/wiki/Takeo_Kurita",
   "wikidata": null
+ },
+ "person-takeo-yoshikawa": {
+  "name": "Takeo Yoshikawa",
+  "kind": "Japanese naval intelligence officer and spy in Honolulu",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Takeo_Yoshikawa",
+  "aka": [
+   "Tadashi Morimura"
+  ]
  },
  "person-telford-taylor": {
   "name": "Telford Taylor",
@@ -1731,12 +2016,26 @@
   "source": "https://en.wikipedia.org/wiki/Toshio_Abe",
   "wikidata": null
  },
+ "person-ugo-cavallero": {
+  "name": "Ugo Cavallero",
+  "kind": "Italian general, chief of the general staff from December 1940",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ugo_Cavallero"
+ },
  "person-vance-breese": {
   "name": "Vance Breese",
   "kind": "test pilot",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Vance_Breese",
   "wikidata": null
+ },
+ "person-vannevar-bush": {
+  "name": "Vannevar Bush",
+  "kind": "director of the Office of Scientific Research and Development",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Vannevar_Bush"
  },
  "person-vincenzo-dapino": {
   "name": "Vincenzo Dapino",
@@ -1924,6 +2223,16 @@
   "source": "https://en.wikipedia.org/wiki/William_Pickens",
   "wikidata": null
  },
+ "person-william-stephenson": {
+  "name": "William Stephenson",
+  "kind": "head of British Security Co-ordination",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/William_Stephenson",
+  "aka": [
+   "Intrepid"
+  ]
+ },
  "person-william-w-outerbridge": {
   "name": "William W. Outerbridge",
   "kind": "US Navy officer, commanded USS Ward and USS O'Brien",
@@ -1952,12 +2261,29 @@
   "source": "https://en.wikipedia.org/wiki/Woody_Guthrie",
   "wikidata": null
  },
+ "person-yang-hucheng": {
+  "name": "Yang Hucheng",
+  "kind": "Chinese general, Northwestern Army",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Yang_Hucheng"
+ },
  "person-yevgeny-khaldei": {
   "name": "Yevgeny Khaldei",
   "kind": "photographer",
   "nation": "Soviet Union",
   "source": "https://en.wikipedia.org/wiki/Yevgeny_Khaldei",
   "wikidata": null
+ },
+ "person-zhang-xueliang": {
+  "name": "Zhang Xueliang",
+  "kind": "Chinese warlord, the Young Marshal",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Zhang_Xueliang",
+  "aka": [
+   "Young Marshal"
+  ]
  },
  "person-zofia-kossak-szczucka": {
   "name": "Zofia Kossak-Szczucka",

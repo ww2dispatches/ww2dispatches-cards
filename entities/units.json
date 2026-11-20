@@ -10,12 +10,27 @@
   ],
   "note": "Wikipedia redirects 104th Infantry Division (United States) here."
  },
+ "unit-10th-army-italy": {
+  "name": "10th Army (Italy)",
+  "kind": "Royal Italian Army field army in Libya and Egypt",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/10th_Army_(Italy)"
+ },
  "unit-10th-infantry-regiment-united-states": {
   "name": "10th Infantry Regiment",
   "kind": "U.S. infantry regiment",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/10th_Infantry_Regiment_(United_States)",
   "wikidata": null
+ },
+ "unit-11th-airborne-division": {
+  "name": "11th Airborne Division",
+  "kind": "U.S. Army airborne division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/11th_Airborne_Division",
+  "note": "'11th Airborne Division (United States)' redirects here."
  },
  "unit-11th-infantry-regiment-united-states": {
   "name": "11th Infantry Regiment",
@@ -72,6 +87,16 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/175th_Infantry_Regiment_(United_States)",
   "wikidata": null
+ },
+ "unit-1st-canadian-division": {
+  "name": "1st Canadian Division",
+  "kind": "Canadian Army infantry division",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1st_Canadian_Division",
+  "aka": [
+   "1st Canadian Infantry Division"
+  ]
  },
  "unit-1st-infantry-division-united-states": {
   "name": "1st Infantry Division",
@@ -149,6 +174,13 @@
    "Second Panzer Army",
    "Panzer Group 2"
   ]
+ },
+ "unit-2nd-raiding-brigade": {
+  "name": "2nd Raiding Brigade",
+  "kind": "Imperial Japanese Army parachute brigade",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/2nd_Raiding_Brigade"
  },
  "unit-30th-infantry-division-united-states": {
   "name": "30th Infantry Division",
@@ -229,6 +261,18 @@
    "3rd Panzer Army"
   ]
  },
+ "unit-412-transport-squadron": {
+  "name": "No. 412 Squadron RCAF",
+  "kind": "Royal Canadian Air Force fighter squadron",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/412_Transport_Squadron",
+  "aka": [
+   "No. 412 Squadron RCAF",
+   "412 Transport Squadron"
+  ],
+  "note": "Wikipedia's No. 412 Squadron RCAF redirects to 412 Transport Squadron."
+ },
  "unit-414th-infantry-regiment": {
   "name": "414th Infantry Regiment",
   "kind": "U.S. infantry regiment",
@@ -291,6 +335,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/5th_Infantry_Division_(United_States)",
   "wikidata": null
+ },
+ "unit-6th-panzer-division": {
+  "name": "6th Panzer Division",
+  "kind": "German armored division",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/6th_Panzer_Division"
  },
  "unit-73rd-bombardment-wing": {
   "name": "73rd Bombardment Wing",
@@ -361,6 +412,13 @@
   "source": "https://en.wikipedia.org/wiki/Afrika_Korps",
   "wikidata": null
  },
+ "unit-america-first-committee": {
+  "name": "America First Committee",
+  "kind": "U.S. antiwar pressure group",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/America_First_Committee"
+ },
  "unit-anti-fascist-council-for-the-national-liberation-of-yugoslavia": {
   "name": "AVNOJ",
   "kind": "Partisan political council",
@@ -399,6 +457,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Army_Ministry"
  },
+ "unit-british-security-co-ordination": {
+  "name": "British Security Co-ordination",
+  "kind": "British intelligence organization in the Americas",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/British_Security_Co-ordination"
+ },
  "unit-central-china-area-army": {
   "name": "Central China Area Army",
   "kind": "field army command",
@@ -413,12 +478,30 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Civil_Air_Patrol"
  },
+ "unit-czechoslovak-government-in-exile": {
+  "name": "Czechoslovak government-in-exile",
+  "kind": "government in exile, London",
+  "nation": "Czechoslovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Czechoslovak_government-in-exile"
+ },
  "unit-danish-resistance-movement": {
   "name": "Danish resistance",
   "kind": "resistance movement",
   "nation": "Denmark",
   "source": "https://en.wikipedia.org/wiki/Danish_resistance_movement",
   "wikidata": null
+ },
+ "unit-decima-flottiglia-mas": {
+  "name": "Decima Flottiglia MAS",
+  "kind": "Italian naval special attack unit",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Decima_Flottiglia_MAS",
+  "aka": [
+   "X MAS",
+   "Decima MAS"
+  ]
  },
  "unit-eighth-air-force": {
   "name": "Eighth Air Force",
@@ -526,6 +609,16 @@
   "source": "https://en.wikipedia.org/wiki/Gestapo",
   "wikidata": null
  },
+ "unit-guam-insular-force-guard": {
+  "name": "Guam Insular Force Guard",
+  "kind": "local Chamorro defense force under the U.S. Navy",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Guam_Insular_Force_Guard",
+  "aka": [
+   "Insular Force Guard"
+  ]
+ },
  "unit-hitler-youth": {
   "name": "Hitler Youth",
   "kind": "Nazi party youth organization",
@@ -585,6 +678,16 @@
   "nation": "Soviet Union",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Kalinin_Front"
+ },
+ "unit-kanoya-air-group": {
+  "name": "Kanoya Air Group",
+  "kind": "Imperial Japanese Navy land based bomber group",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kanoya_Air_Group",
+  "aka": [
+   "Kanoya Kokutai"
+  ]
  },
  "unit-king-s-shropshire-light-infantry": {
   "name": "King's Shropshire Light Infantry",
@@ -755,6 +858,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Office_of_Civilian_Defense"
  },
+ "unit-office-of-production-management": {
+  "name": "Office of Production Management",
+  "kind": "U.S. defense production agency",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Office_of_Production_Management"
+ },
  "unit-panfilov-s-twenty-eight-guardsmen": {
   "name": "Panfilov's 28",
   "kind": "legendary Soviet guardsmen",
@@ -790,6 +900,16 @@
    "RSHA"
   ]
  },
+ "unit-s-1-executive-committee": {
+  "name": "S-1 Executive Committee",
+  "kind": "OSRD uranium committee",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/S-1_Executive_Committee",
+  "aka": [
+   "S-1 Section"
+  ]
+ },
  "unit-scouting-america": {
   "name": "Boy Scouts of America",
   "kind": "youth organization",
@@ -814,6 +934,16 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Seventh_Air_Force"
  },
+ "unit-special-operations-executive": {
+  "name": "Special Operations Executive",
+  "kind": "British sabotage and subversion agency",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Special_Operations_Executive",
+  "aka": [
+   "SOE"
+  ]
+ },
  "unit-supreme-court-of-the-united-states": {
   "name": "U.S. Supreme Court",
   "kind": "U.S. federal court",
@@ -829,6 +959,16 @@
   "source": "https://en.wikipedia.org/wiki/Twenty-Fifth_Army_(Japan)",
   "aka": [
    "25th Army"
+  ]
+ },
+ "unit-unicef": {
+  "name": "UNICEF",
+  "kind": "United Nations children's fund",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/UNICEF",
+  "aka": [
+   "United Nations International Children's Emergency Fund"
   ]
  },
  "unit-united-nations": {
@@ -866,6 +1006,13 @@
    "U.S. Third Army"
   ],
   "note": "Wikipedia redirects Third United States Army here."
+ },
+ "unit-united-states-coast-guard": {
+  "name": "United States Coast Guard",
+  "kind": "maritime armed service",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/United_States_Coast_Guard"
  },
  "unit-united-states-department-of-war": {
   "name": "War Department",
