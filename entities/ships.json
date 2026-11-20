@@ -1,4 +1,11 @@
 {
+ "ship-german-aircraft-carrier-graf-zeppelin": {
+  "name": "Graf Zeppelin",
+  "kind": "German aircraft carrier, never completed",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_aircraft_carrier_Graf_Zeppelin"
+ },
  "ship-german-auxiliary-cruiser-thor": {
   "name": "Thor",
   "kind": "German auxiliary cruiser, merchant raider",
@@ -54,6 +61,20 @@
    "Lutzow"
   ]
  },
+ "ship-german-submarine-u-221": {
+  "name": "U-221",
+  "kind": "German Type VIIC submarine",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-221"
+ },
+ "ship-german-submarine-u-254": {
+  "name": "U-254",
+  "kind": "German Type VIIC submarine",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-254"
+ },
  "ship-german-submarine-u-31-1936": {
   "name": "U-31",
   "kind": "Kriegsmarine Type VIIA U-boat",
@@ -96,6 +117,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-852"
  },
+ "ship-german-submarine-u-862": {
+  "name": "U-862",
+  "kind": "German Type IXD2 U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-862"
+ },
  "ship-german-submarine-u-99-1940": {
   "name": "U-99",
   "kind": "Type VIIB U-boat",
@@ -124,11 +152,25 @@
   "source": "https://en.wikipedia.org/wiki/HMS_Ark_Royal_(91)",
   "wikidata": null
  },
+ "ship-hms-atherstone-l05": {
+  "name": "HMS Atherstone (L05)",
+  "kind": "destroyer",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/HMS_Atherstone_(L05)",
+  "wikidata": null
+ },
  "ship-hms-barham-04": {
   "name": "HMS Barham (04)",
   "kind": "battleship",
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/HMS_Barham_(04)",
+  "wikidata": null
+ },
+ "ship-hms-bideford-l43": {
+  "name": "HMS Bideford (L43)",
+  "kind": "sloop",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/HMS_Bideford_(L43)",
   "wikidata": null
  },
  "ship-hms-forfar": {
@@ -173,6 +215,13 @@
   "source": "https://en.wikipedia.org/wiki/HMS_Legion_(G74)",
   "wikidata": null
  },
+ "ship-hms-marigold-k87": {
+  "name": "HMS Marigold (K87)",
+  "kind": "Flower class corvette",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Marigold_(K87)"
+ },
  "ship-hms-nelson-28": {
   "name": "HMS Nelson",
   "kind": "Royal Navy battleship",
@@ -186,6 +235,13 @@
   "nation": "Britain",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/HMS_Ocean_(R68)"
+ },
+ "ship-hms-peterel-1927": {
+  "name": "HMS Peterel (1927)",
+  "kind": "Royal Navy river gunboat",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Peterel_(1927)"
  },
  "ship-hms-prince-of-wales-53": {
   "name": "HMS Prince of Wales (53)",
@@ -222,6 +278,13 @@
   "source": "https://en.wikipedia.org/wiki/HMS_Tartar_(F43)",
   "wikidata": null
  },
+ "ship-hms-tuna-n94": {
+  "name": "HMS Tuna (N94)",
+  "kind": "Royal Navy submarine",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Tuna_(N94)"
+ },
  "ship-hms-valiant-1914": {
   "name": "HMS Valiant",
   "kind": "battleship",
@@ -235,6 +298,16 @@
   "nation": "Britain",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/HMS_Vanguard_(23)"
+ },
+ "ship-hmt-rohna": {
+  "name": "HMT Rohna",
+  "kind": "troopship",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/HMT_Rohna",
+  "wikidata": null,
+  "aka": [
+   "Rohna"
+  ]
  },
  "ship-italian-cruiser-muzio-attendolo": {
   "name": "Muzio Attendolo",
@@ -274,6 +347,41 @@
   "source": "https://en.wikipedia.org/wiki/Japanese_battleship_Yamato",
   "wikidata": null
  },
+ "ship-japanese-cruiser-kiso": {
+  "name": "Kiso",
+  "kind": "light cruiser",
+  "nation": "Japan",
+  "source": "https://en.wikipedia.org/wiki/Japanese_cruiser_Kiso",
+  "wikidata": null
+ },
+ "ship-japanese-cruiser-kumano": {
+  "name": "Kumano",
+  "kind": "heavy cruiser",
+  "nation": "Japan",
+  "source": "https://en.wikipedia.org/wiki/Japanese_cruiser_Kumano",
+  "wikidata": null
+ },
+ "ship-japanese-cruiser-nachi": {
+  "name": "Nachi",
+  "kind": "heavy cruiser",
+  "nation": "Japan",
+  "source": "https://en.wikipedia.org/wiki/Japanese_cruiser_Nachi",
+  "wikidata": null
+ },
+ "ship-japanese-destroyer-akebono-1930": {
+  "name": "Japanese destroyer Akebono (1930)",
+  "kind": "Imperial Japanese Navy destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Akebono_(1930)"
+ },
+ "ship-japanese-destroyer-akishimo": {
+  "name": "Akishimo",
+  "kind": "destroyer",
+  "nation": "Japan",
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Akishimo",
+  "wikidata": null
+ },
  "ship-japanese-destroyer-hamakaze-1940": {
   "name": "Hamakaze",
   "kind": "destroyer",
@@ -286,6 +394,13 @@
   "kind": "destroyer",
   "nation": "Japan",
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Isokaze_(1939)",
+  "wikidata": null
+ },
+ "ship-japanese-destroyer-okinami": {
+  "name": "Okinami",
+  "kind": "destroyer",
+  "nation": "Japan",
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Okinami",
   "wikidata": null
  },
  "ship-japanese-destroyer-oyashio": {
@@ -309,6 +424,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Take_(1944)"
  },
+ "ship-japanese-destroyer-ushio-1930": {
+  "name": "Japanese destroyer Ushio (1930)",
+  "kind": "Imperial Japanese Navy destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Ushio_(1930)"
+ },
  "ship-japanese-destroyer-yukikaze-1939": {
   "name": "Yukikaze",
   "kind": "destroyer",
@@ -329,6 +451,16 @@
   "nation": "Japan",
   "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-16",
   "wikidata": null
+ },
+ "ship-japanese-submarine-i-165": {
+  "name": "I-165",
+  "kind": "Japanese Kaidai class submarine",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-165",
+  "aka": [
+   "I-65"
+  ]
  },
  "ship-japanese-submarine-i-18": {
   "name": "I-18",
@@ -357,6 +489,20 @@
   "nation": "Japan",
   "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-24_(1939)",
   "wikidata": null
+ },
+ "ship-japanese-submarine-i-26": {
+  "name": "Japanese submarine I-26",
+  "kind": "Imperial Japanese Navy submarine",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-26"
+ },
+ "ship-ms-awazisan-maru": {
+  "name": "Awazisan Maru",
+  "kind": "Japanese troop transport",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/MS_Awazisan_Maru"
  },
  "ship-mv-carnarvon-castle": {
   "name": "Carnarvon Castle",
@@ -390,6 +536,30 @@
   "nation": "Japan",
   "wikidata": "Q241858",
   "source": "https://en.wikipedia.org/wiki/Japanese_aircraft_carrier_Shinano"
+ },
+ "ship-ss-clan-campbell": {
+  "name": "Clan Campbell",
+  "kind": "cargo ship",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/SS_Clan_Campbell",
+  "wikidata": null
+ },
+ "ship-ss-cynthia-olson": {
+  "name": "SS Cynthia Olson",
+  "kind": "US Army chartered cargo ship",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Cynthia_Olson"
+ },
+ "ship-ss-europa-1928": {
+  "name": "SS Europa (1928)",
+  "kind": "German ocean liner, later the French Liberte",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Europa_(1928)",
+  "aka": [
+   "Liberte"
+  ]
  },
  "ship-ss-john-harvey": {
   "name": "SS John Harvey",
@@ -426,6 +596,18 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/SS_Ussukuma"
  },
+ "ship-uscgc-shoshone": {
+  "name": "HMS Landguard (Y56)",
+  "kind": "sloop",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/USCGC_Shoshone",
+  "wikidata": null,
+  "aka": [
+   "HMS Landguard",
+   "USCGC Shoshone"
+  ],
+  "note": "Wikipedia redirects HMS Landguard (Y56) to her original U.S. Coast Guard name."
+ },
  "ship-uss-archerfish-ss-311": {
   "name": "USS Archerfish (SS-311)",
   "kind": "submarine",
@@ -455,6 +637,13 @@
   "kind": "light aircraft carrier",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/USS_Cabot_(CVL-28)",
+  "wikidata": null
+ },
+ "ship-uss-chanticleer-asr-7": {
+  "name": "USS Chanticleer (ASR-7)",
+  "kind": "submarine rescue ship",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/USS_Chanticleer_(ASR-7)",
   "wikidata": null
  },
  "ship-uss-cooper": {
@@ -492,6 +681,13 @@
   "source": "https://en.wikipedia.org/wiki/USS_Franklin_D._Roosevelt",
   "wikidata": null
  },
+ "ship-uss-gambier-bay": {
+  "name": "USS Gambier Bay (CVE-73)",
+  "kind": "escort carrier",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/USS_Gambier_Bay",
+  "wikidata": null
+ },
  "ship-uss-hancock-cv-19": {
   "name": "USS Hancock (CV-19)",
   "kind": "aircraft carrier",
@@ -506,6 +702,13 @@
   "source": "https://en.wikipedia.org/wiki/USS_Hilary_P._Jones",
   "wikidata": null
  },
+ "ship-uss-hornet-cv-12": {
+  "name": "USS Hornet (CV-12)",
+  "kind": "aircraft carrier",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/USS_Hornet_(CV-12)",
+  "wikidata": null
+ },
  "ship-uss-hornet-cv-8": {
   "name": "USS Hornet (CV-8)",
   "kind": "aircraft carrier",
@@ -518,6 +721,13 @@
   "kind": "aircraft carrier",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/USS_Intrepid_(CV-11)",
+  "wikidata": null
+ },
+ "ship-uss-johnston-dd-557": {
+  "name": "USS Johnston (DD-557)",
+  "kind": "destroyer",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/USS_Johnston_(DD-557)",
   "wikidata": null
  },
  "ship-uss-kearny": {
@@ -541,11 +751,25 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/USS_Lexington_(CV-2)"
  },
+ "ship-uss-liscome-bay": {
+  "name": "USS Liscome Bay (CVE-56)",
+  "kind": "escort carrier",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/USS_Liscome_Bay",
+  "wikidata": null
+ },
  "ship-uss-louisville-ca-28": {
   "name": "USS Louisville (CA-28)",
   "kind": "heavy cruiser",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/USS_Louisville_(CA-28)",
+  "wikidata": null
+ },
+ "ship-uss-lst-282": {
+  "name": "USS LST-282",
+  "kind": "tank landing ship",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/USS_LST-282",
   "wikidata": null
  },
  "ship-uss-missouri-bb-63": {
@@ -583,11 +807,32 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/USS_Northampton_(CA-26)"
  },
+ "ship-uss-o-brien-dd-725": {
+  "name": "USS O'Brien (DD-725)",
+  "kind": "US Navy destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_O'Brien_(DD-725)"
+ },
+ "ship-uss-o-hare": {
+  "name": "USS O'Hare",
+  "kind": "destroyer",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/USS_O%27Hare",
+  "wikidata": null
+ },
  "ship-uss-omaha-cl-4": {
   "name": "USS Omaha (CL-4)",
   "kind": "light cruiser",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/USS_Omaha_(CL-4)",
+  "wikidata": null
+ },
+ "ship-uss-pioneer-am-105": {
+  "name": "USS Pioneer (AM-105)",
+  "kind": "minesweeper",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/USS_Pioneer_(AM-105)",
   "wikidata": null
  },
  "ship-uss-ranger-cv-4": {
@@ -642,12 +887,38 @@
   "source": "https://en.wikipedia.org/wiki/USS_Somers_(DD-381)",
   "wikidata": null
  },
+ "ship-uss-st-lo": {
+  "name": "USS St. Lo (CVE-63)",
+  "kind": "escort carrier",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/USS_St._Lo",
+  "wikidata": null
+ },
+ "ship-uss-ticonderoga-cv-14": {
+  "name": "USS Ticonderoga (CV-14)",
+  "kind": "aircraft carrier",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/USS_Ticonderoga_(CV-14)",
+  "wikidata": null
+ },
  "ship-uss-vulcan-ar-5": {
   "name": "USS Vulcan (AR-5)",
   "kind": "repair ship",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/USS_Vulcan_(AR-5)",
   "wikidata": null
+ },
+ "ship-uss-wake": {
+  "name": "USS Wake (PR-3)",
+  "kind": "U.S. Navy river gunboat",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Wake",
+  "aka": [
+   "USS Wake (PR-3)",
+   "Tatara"
+  ],
+  "note": "Wikipedia's USS Wake (PR-3) redirects to USS Wake."
  },
  "ship-uss-wake-island": {
   "name": "USS Wake Island (CVE-65)",

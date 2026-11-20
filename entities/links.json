@@ -1279,6 +1279,262 @@
    "role": "mentioned"
   }
  ],
+ "1943-11-23-berlin-church": [
+  {
+   "id": "place-kaiser-wilhelm-memorial-church",
+   "role": "subject"
+  },
+  {
+   "id": "op-battle-of-berlin-raf-campaign",
+   "role": "subject"
+  },
+  {
+   "id": "place-berlin",
+   "role": "involved"
+  },
+  {
+   "id": "unit-raf-bomber-command",
+   "role": "involved"
+  },
+  {
+   "id": "person-arthur-harris",
+   "role": "involved"
+  },
+  {
+   "id": "aircraft-avro-lancaster",
+   "role": "involved"
+  },
+  {
+   "id": "aircraft-handley-page-halifax",
+   "role": "involved"
+  },
+  {
+   "id": "aircraft-short-stirling",
+   "role": "involved"
+  },
+  {
+   "id": "aircraft-de-havilland-mosquito",
+   "role": "involved"
+  },
+  {
+   "id": "place-charlottenburg",
+   "role": "involved"
+  },
+  {
+   "id": "place-schloss-charlottenburg",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-berlin-zoo",
+   "role": "mentioned"
+  },
+  {
+   "id": "person-wilhelm-i",
+   "role": "mentioned"
+  },
+  {
+   "id": "person-egon-eiermann",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-coventry-cathedral",
+   "role": "mentioned"
+  }
+ ],
+ "1943-11-26-hs293-spec": [
+  {
+   "id": "machine-henschel-hs-293",
+   "role": "subject"
+  },
+  {
+   "id": "ship-hmt-rohna",
+   "role": "subject"
+  },
+  {
+   "id": "aircraft-heinkel-he-177-greif",
+   "role": "involved"
+  },
+  {
+   "id": "aircraft-junkers-ju-88",
+   "role": "involved"
+  },
+  {
+   "id": "person-herbert-a-wagner",
+   "role": "involved"
+  },
+  {
+   "id": "place-bejaia",
+   "role": "involved"
+  },
+  {
+   "id": "ship-uss-pioneer-am-105",
+   "role": "involved"
+  },
+  {
+   "id": "ship-ss-clan-campbell",
+   "role": "involved"
+  },
+  {
+   "id": "ship-hms-atherstone-l05",
+   "role": "involved"
+  },
+  {
+   "id": "ship-hms-bideford-l43",
+   "role": "involved"
+  },
+  {
+   "id": "ship-uscgc-shoshone",
+   "role": "involved"
+  },
+  {
+   "id": "ship-uss-lst-282",
+   "role": "mentioned"
+  },
+  {
+   "id": "aircraft-heinkel-he-111",
+   "role": "mentioned"
+  },
+  {
+   "id": "aircraft-focke-wulf-fw-200-condor",
+   "role": "mentioned"
+  },
+  {
+   "id": "aircraft-dornier-do-217",
+   "role": "mentioned"
+  }
+ ],
+ "1943-11-26-ohare": [
+  {
+   "id": "person-edward-o-hare",
+   "role": "subject"
+  },
+  {
+   "id": "ship-uss-enterprise-cv-6",
+   "role": "involved"
+  },
+  {
+   "id": "aircraft-grumman-f6f-hellcat",
+   "role": "involved"
+  },
+  {
+   "id": "aircraft-grumman-tbf-avenger",
+   "role": "involved"
+  },
+  {
+   "id": "aircraft-mitsubishi-g4m",
+   "role": "involved"
+  },
+  {
+   "id": "place-gilbert-islands",
+   "role": "involved"
+  },
+  {
+   "id": "ship-uss-liscome-bay",
+   "role": "mentioned"
+  },
+  {
+   "id": "ship-uss-lexington-cv-2",
+   "role": "mentioned"
+  },
+  {
+   "id": "person-franklin-d-roosevelt",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-o-hare-international-airport",
+   "role": "mentioned"
+  },
+  {
+   "id": "ship-uss-o-hare",
+   "role": "mentioned"
+  },
+  {
+   "id": "person-john-thach",
+   "role": "mentioned"
+  },
+  {
+   "id": "aircraft-grumman-f4f-wildcat",
+   "role": "mentioned"
+  },
+  {
+   "id": "unit-vf-3",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-kaneohe-hawaii",
+   "role": "mentioned"
+  }
+ ],
+ "1943-11-28-tehran": [
+  {
+   "id": "op-tehran-conference",
+   "role": "subject"
+  },
+  {
+   "id": "person-franklin-d-roosevelt",
+   "role": "involved"
+  },
+  {
+   "id": "person-winston-churchill",
+   "role": "involved"
+  },
+  {
+   "id": "person-joseph-stalin",
+   "role": "involved"
+  },
+  {
+   "id": "place-tehran",
+   "role": "involved"
+  },
+  {
+   "id": "place-embassy-of-russia-tehran",
+   "role": "involved"
+  },
+  {
+   "id": "person-w-averell-harriman",
+   "role": "involved"
+  },
+  {
+   "id": "person-william-d-leahy",
+   "role": "involved"
+  },
+  {
+   "id": "person-harry-hopkins",
+   "role": "involved"
+  },
+  {
+   "id": "person-clarence-john-boettiger",
+   "role": "involved"
+  },
+  {
+   "id": "person-edwin-m-watson",
+   "role": "involved"
+  },
+  {
+   "id": "person-wilson-brown-admiral",
+   "role": "involved"
+  },
+  {
+   "id": "person-ross-t-mcintire",
+   "role": "involved"
+  },
+  {
+   "id": "person-george-c-marshall",
+   "role": "mentioned"
+  },
+  {
+   "id": "person-henry-h-arnold",
+   "role": "mentioned"
+  },
+  {
+   "id": "op-operation-overlord",
+   "role": "mentioned"
+  },
+  {
+   "id": "op-army-navy-game",
+   "role": "mentioned"
+  }
+ ],
  "1944-10-18-tirpitz": [
   {
    "id": "ship-german-battleship-tirpitz",
@@ -1290,6 +1546,126 @@
   },
   {
    "id": "person-winston-churchill",
+   "role": "mentioned"
+  }
+ ],
+ "1944-10-19-waves": [
+  {
+   "id": "unit-waves",
+   "role": "subject"
+  },
+  {
+   "id": "person-harriet-pickens",
+   "role": "subject"
+  },
+  {
+   "id": "person-frances-wills",
+   "role": "subject"
+  },
+  {
+   "id": "person-franklin-d-roosevelt",
+   "role": "involved"
+  },
+  {
+   "id": "place-smith-college",
+   "role": "involved"
+  },
+  {
+   "id": "place-hunter-college",
+   "role": "mentioned"
+  },
+  {
+   "id": "person-william-pickens",
+   "role": "mentioned"
+  },
+  {
+   "id": "unit-naacp",
+   "role": "mentioned"
+  }
+ ],
+ "1944-10-20-leyte": [
+  {
+   "id": "person-douglas-macarthur",
+   "role": "subject"
+  },
+  {
+   "id": "place-leyte",
+   "role": "subject"
+  },
+  {
+   "id": "person-sergio-osmena",
+   "role": "involved"
+  },
+  {
+   "id": "person-gaetano-faillace",
+   "role": "involved"
+  },
+  {
+   "id": "place-macarthur-landing-memorial-national-park",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-palo-leyte",
+   "role": "mentioned"
+  },
+  {
+   "id": "person-carlos-p-romulo",
+   "role": "mentioned"
+  }
+ ],
+ "1944-10-20-tdr": [
+  {
+   "id": "aircraft-interstate-tdr",
+   "role": "subject"
+  },
+  {
+   "id": "aircraft-grumman-tbf-avenger",
+   "role": "involved"
+  },
+  {
+   "id": "place-bougainville-island",
+   "role": "involved"
+  },
+  {
+   "id": "place-balalae-island",
+   "role": "involved"
+  },
+  {
+   "id": "place-national-naval-aviation-museum",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-guadalcanal",
+   "role": "mentioned"
+  }
+ ],
+ "1944-10-21-aachen": [
+  {
+   "id": "op-battle-of-aachen",
+   "role": "subject"
+  },
+  {
+   "id": "place-aachen",
+   "role": "subject"
+  },
+  {
+   "id": "unit-1st-infantry-division-united-states",
+   "role": "involved"
+  },
+  {
+   "id": "unit-30th-infantry-division-united-states",
+   "role": "involved"
+  },
+  {
+   "id": "person-adolf-hitler",
+   "role": "involved"
+  },
+  {
+   "id": "person-charlemagne",
+   "role": "mentioned"
+  },
+  {
+   "id": "person-franz-oppenhoff",
    "role": "mentioned"
   }
  ],
@@ -1305,6 +1681,96 @@
   {
    "id": "place-brunei",
    "role": "involved"
+  }
+ ],
+ "1944-10-25-johnston": [
+  {
+   "id": "ship-uss-johnston-dd-557",
+   "role": "subject"
+  },
+  {
+   "id": "person-ernest-e-evans",
+   "role": "subject"
+  },
+  {
+   "id": "ship-japanese-cruiser-kumano",
+   "role": "involved"
+  },
+  {
+   "id": "place-samar",
+   "role": "involved"
+  },
+  {
+   "id": "op-battle-off-samar",
+   "role": "involved"
+  }
+ ],
+ "1944-10-25-samar": [
+  {
+   "id": "op-battle-off-samar",
+   "role": "subject"
+  },
+  {
+   "id": "place-samar",
+   "role": "involved"
+  },
+  {
+   "id": "ship-japanese-battleship-yamato",
+   "role": "involved"
+  },
+  {
+   "id": "person-takeo-kurita",
+   "role": "involved"
+  },
+  {
+   "id": "person-clifton-sprague",
+   "role": "involved"
+  },
+  {
+   "id": "ship-uss-gambier-bay",
+   "role": "involved"
+  },
+  {
+   "id": "ship-uss-st-lo",
+   "role": "involved"
+  },
+  {
+   "id": "place-leyte",
+   "role": "mentioned"
+  }
+ ],
+ "1944-10-30-lost-battalion": [
+  {
+   "id": "unit-lost-battalion-europe-world-war-ii",
+   "role": "subject"
+  },
+  {
+   "id": "unit-442nd-infantry-regiment",
+   "role": "subject"
+  },
+  {
+   "id": "unit-141st-infantry-regiment-united-states",
+   "role": "involved"
+  },
+  {
+   "id": "place-vosges",
+   "role": "involved"
+  },
+  {
+   "id": "place-bruyeres",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-biffontaine",
+   "role": "mentioned"
+  },
+  {
+   "id": "person-barney-f-hajiro",
+   "role": "mentioned"
+  },
+  {
+   "id": "person-bill-clinton",
+   "role": "mentioned"
   }
  ],
  "1944-10-31-mosquito": [
@@ -1334,6 +1800,916 @@
   },
   {
    "id": "place-raf-thorney-island",
+   "role": "mentioned"
+  }
+ ],
+ "1944-11-03-fugo": [
+  {
+   "id": "machine-fu-go-balloon-bomb",
+   "role": "subject"
+  },
+  {
+   "id": "place-honshu",
+   "role": "involved"
+  },
+  {
+   "id": "place-ichinomiya-chiba",
+   "role": "involved"
+  },
+  {
+   "id": "place-bly-oregon",
+   "role": "involved"
+  },
+  {
+   "id": "place-gearhart-mountain",
+   "role": "involved"
+  },
+  {
+   "id": "unit-office-of-censorship",
+   "role": "involved"
+  },
+  {
+   "id": "unit-united-states-department-of-war",
+   "role": "mentioned"
+  },
+  {
+   "id": "person-emperor-meiji",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-moffett-federal-airfield",
+   "role": "mentioned"
+  }
+ ],
+ "1944-11-03-fugo-spec": [
+  {
+   "id": "machine-fu-go-balloon-bomb",
+   "role": "subject"
+  },
+  {
+   "id": "place-honshu",
+   "role": "involved"
+  },
+  {
+   "id": "op-manhattan-project",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-hanford-site",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-moffett-federal-airfield",
+   "role": "mentioned"
+  }
+ ],
+ "1944-11-05-manila": [
+  {
+   "id": "ship-japanese-cruiser-nachi",
+   "role": "subject"
+  },
+  {
+   "id": "place-manila-bay",
+   "role": "subject"
+  },
+  {
+   "id": "unit-fast-carrier-task-force",
+   "role": "involved"
+  },
+  {
+   "id": "person-john-s-mccain-sr",
+   "role": "involved"
+  },
+  {
+   "id": "ship-uss-ticonderoga-cv-14",
+   "role": "involved"
+  },
+  {
+   "id": "ship-uss-essex-cv-9",
+   "role": "involved"
+  },
+  {
+   "id": "ship-uss-lexington-cv-16",
+   "role": "involved"
+  },
+  {
+   "id": "person-kiyohide-shima",
+   "role": "involved"
+  },
+  {
+   "id": "place-luzon",
+   "role": "involved"
+  },
+  {
+   "id": "place-corregidor",
+   "role": "involved"
+  },
+  {
+   "id": "op-battle-of-leyte-gulf",
+   "role": "mentioned"
+  },
+  {
+   "id": "ship-japanese-cruiser-kiso",
+   "role": "mentioned"
+  },
+  {
+   "id": "ship-uss-chanticleer-asr-7",
+   "role": "mentioned"
+  },
+  {
+   "id": "ship-uss-missouri-bb-63",
+   "role": "mentioned"
+  },
+  {
+   "id": "op-surrender-of-japan",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-coronado-california",
+   "role": "mentioned"
+  }
+ ],
+ "1944-11-07-fdr": [
+  {
+   "id": "op-1944-united-states-presidential-election",
+   "role": "subject"
+  },
+  {
+   "id": "person-franklin-d-roosevelt",
+   "role": "subject"
+  },
+  {
+   "id": "person-thomas-e-dewey",
+   "role": "involved"
+  },
+  {
+   "id": "person-harry-s-truman",
+   "role": "involved"
+  },
+  {
+   "id": "person-henry-a-wallace",
+   "role": "involved"
+  },
+  {
+   "id": "place-washington-d-c",
+   "role": "involved"
+  },
+  {
+   "id": "place-new-york-city",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-moyeuvre-grande",
+   "role": "mentioned"
+  },
+  {
+   "id": "unit-95th-training-division",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-metz",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-white-house",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-warm-springs-georgia",
+   "role": "mentioned"
+  },
+  {
+   "id": "op-twenty-second-amendment-to-the-united-states-constitution",
+   "role": "mentioned"
+  }
+ ],
+ "1944-11-07-sorge": [
+  {
+   "id": "person-richard-sorge",
+   "role": "subject"
+  },
+  {
+   "id": "place-sugamo-prison",
+   "role": "involved"
+  },
+  {
+   "id": "person-hotsumi-ozaki",
+   "role": "involved"
+  },
+  {
+   "id": "person-eugen-ott",
+   "role": "involved"
+  },
+  {
+   "id": "person-joseph-stalin",
+   "role": "involved"
+  },
+  {
+   "id": "person-fumimaro-konoe",
+   "role": "mentioned"
+  },
+  {
+   "id": "unit-frankfurter-zeitung",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-tama-cemetery",
+   "role": "mentioned"
+  }
+ ],
+ "1944-11-09-lorraine": [
+  {
+   "id": "op-lorraine-campaign",
+   "role": "subject"
+  },
+  {
+   "id": "unit-united-states-army-central",
+   "role": "subject"
+  },
+  {
+   "id": "person-george-s-patton",
+   "role": "involved"
+  },
+  {
+   "id": "person-manton-s-eddy",
+   "role": "involved"
+  },
+  {
+   "id": "unit-xii-corps-united-states",
+   "role": "involved"
+  },
+  {
+   "id": "unit-90th-infantry-division-united-states",
+   "role": "involved"
+  },
+  {
+   "id": "place-moselle",
+   "role": "involved"
+  },
+  {
+   "id": "place-koenigsmacker",
+   "role": "involved"
+  },
+  {
+   "id": "unit-35th-infantry-division-united-states",
+   "role": "involved"
+  },
+  {
+   "id": "place-delme-moselle",
+   "role": "involved"
+  },
+  {
+   "id": "place-metz",
+   "role": "mentioned"
+  },
+  {
+   "id": "unit-4th-armored-division-united-states",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-dieuze",
+   "role": "mentioned"
+  }
+ ],
+ "1944-11-10-eisenhower": [
+  {
+   "id": "person-dwight-d-eisenhower",
+   "role": "subject"
+  },
+  {
+   "id": "place-herzogenrath",
+   "role": "involved"
+  },
+  {
+   "id": "person-leland-hobbs",
+   "role": "involved"
+  },
+  {
+   "id": "unit-30th-infantry-division-united-states",
+   "role": "involved"
+  },
+  {
+   "id": "person-omar-bradley",
+   "role": "involved"
+  },
+  {
+   "id": "person-william-hood-simpson",
+   "role": "involved"
+  },
+  {
+   "id": "unit-ninth-army-united-states",
+   "role": "involved"
+  },
+  {
+   "id": "person-raymond-s-mclain",
+   "role": "involved"
+  },
+  {
+   "id": "unit-xix-corps-united-states",
+   "role": "involved"
+  },
+  {
+   "id": "place-eygelshoven",
+   "role": "involved"
+  },
+  {
+   "id": "unit-29th-infantry-division-united-states",
+   "role": "involved"
+  },
+  {
+   "id": "person-charles-h-gerhardt",
+   "role": "involved"
+  },
+  {
+   "id": "unit-175th-infantry-regiment-united-states",
+   "role": "involved"
+  },
+  {
+   "id": "op-operation-queen",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-roer",
+   "role": "mentioned"
+  },
+  {
+   "id": "unit-first-army-united-states",
+   "role": "mentioned"
+  },
+  {
+   "id": "unit-2nd-armored-division-united-states",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-duren",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-julich",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-heinsberg",
+   "role": "mentioned"
+  }
+ ],
+ "1944-11-11-paris-armistice": [
+  {
+   "id": "person-winston-churchill",
+   "role": "subject"
+  },
+  {
+   "id": "person-charles-de-gaulle",
+   "role": "subject"
+  },
+  {
+   "id": "op-armistice-day",
+   "role": "subject"
+  },
+  {
+   "id": "place-paris",
+   "role": "involved"
+  },
+  {
+   "id": "place-champs-elysees",
+   "role": "involved"
+  },
+  {
+   "id": "place-arc-de-triomphe",
+   "role": "involved"
+  },
+  {
+   "id": "place-tomb-of-the-unknown-soldier-france",
+   "role": "involved"
+  },
+  {
+   "id": "place-place-de-la-concorde",
+   "role": "involved"
+  },
+  {
+   "id": "person-clementine-churchill",
+   "role": "involved"
+  },
+  {
+   "id": "person-mary-soames",
+   "role": "involved"
+  },
+  {
+   "id": "place-paris-orly-airport",
+   "role": "involved"
+  },
+  {
+   "id": "unit-provisional-government-of-the-french-republic",
+   "role": "mentioned"
+  },
+  {
+   "id": "person-anthony-eden",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-quai-d-orsay",
+   "role": "mentioned"
+  }
+ ],
+ "1944-11-12-tirpitz": [
+  {
+   "id": "ship-german-battleship-tirpitz",
+   "role": "subject"
+  },
+  {
+   "id": "aircraft-avro-lancaster",
+   "role": "involved"
+  },
+  {
+   "id": "machine-tallboy-bomb",
+   "role": "involved"
+  },
+  {
+   "id": "unit-no-9-squadron-raf",
+   "role": "involved"
+  },
+  {
+   "id": "unit-no-617-squadron-raf",
+   "role": "involved"
+  },
+  {
+   "id": "place-troms",
+   "role": "involved"
+  },
+  {
+   "id": "person-james-brian-tait",
+   "role": "involved"
+  },
+  {
+   "id": "unit-no-463-squadron-raaf",
+   "role": "involved"
+  },
+  {
+   "id": "person-barnes-wallis",
+   "role": "mentioned"
+  },
+  {
+   "id": "op-arctic-convoys-of-world-war-ii",
+   "role": "mentioned"
+  }
+ ],
+ "1944-11-12-tirpitz-spec": [
+  {
+   "id": "ship-german-battleship-tirpitz",
+   "role": "subject"
+  },
+  {
+   "id": "aircraft-avro-lancaster",
+   "role": "involved"
+  },
+  {
+   "id": "machine-tallboy-bomb",
+   "role": "involved"
+  },
+  {
+   "id": "unit-no-9-squadron-raf",
+   "role": "involved"
+  },
+  {
+   "id": "unit-no-617-squadron-raf",
+   "role": "involved"
+  },
+  {
+   "id": "place-troms",
+   "role": "involved"
+  },
+  {
+   "id": "ship-german-battleship-bismarck",
+   "role": "mentioned"
+  },
+  {
+   "id": "op-arctic-convoys-of-world-war-ii",
+   "role": "mentioned"
+  }
+ ],
+ "1944-11-13-manila-strike": [
+  {
+   "id": "ship-japanese-cruiser-kiso",
+   "role": "subject"
+  },
+  {
+   "id": "place-manila-bay",
+   "role": "subject"
+  },
+  {
+   "id": "person-william-halsey-jr",
+   "role": "involved"
+  },
+  {
+   "id": "unit-fast-carrier-task-force",
+   "role": "involved"
+  },
+  {
+   "id": "ship-uss-hornet-cv-12",
+   "role": "involved"
+  },
+  {
+   "id": "ship-uss-essex-cv-9",
+   "role": "involved"
+  },
+  {
+   "id": "ship-uss-ticonderoga-cv-14",
+   "role": "involved"
+  },
+  {
+   "id": "ship-uss-enterprise-cv-6",
+   "role": "involved"
+  },
+  {
+   "id": "person-kiyohide-shima",
+   "role": "involved"
+  },
+  {
+   "id": "place-cavite-city",
+   "role": "involved"
+  },
+  {
+   "id": "ship-japanese-destroyer-akishimo",
+   "role": "involved"
+  },
+  {
+   "id": "ship-japanese-destroyer-akebono-1930",
+   "role": "involved"
+  },
+  {
+   "id": "ship-japanese-destroyer-okinami",
+   "role": "involved"
+  },
+  {
+   "id": "aircraft-grumman-tbf-avenger",
+   "role": "involved"
+  },
+  {
+   "id": "place-brunei",
+   "role": "mentioned"
+  }
+ ],
+ "1944-11-14-patton-koenigsmacker": [
+  {
+   "id": "person-george-s-patton",
+   "role": "subject"
+  },
+  {
+   "id": "place-koenigsmacker",
+   "role": "subject"
+  },
+  {
+   "id": "unit-90th-infantry-division-united-states",
+   "role": "subject"
+  },
+  {
+   "id": "person-walton-walker",
+   "role": "involved"
+  },
+  {
+   "id": "unit-xx-corps-united-states",
+   "role": "involved"
+  },
+  {
+   "id": "person-james-van-fleet",
+   "role": "involved"
+  },
+  {
+   "id": "place-moselle",
+   "role": "involved"
+  },
+  {
+   "id": "place-fort-de-koenigsmacker",
+   "role": "involved"
+  },
+  {
+   "id": "unit-25th-panzergrenadier-division",
+   "role": "involved"
+  },
+  {
+   "id": "place-kerling-les-sierck",
+   "role": "involved"
+  },
+  {
+   "id": "place-metz",
+   "role": "mentioned"
+  },
+  {
+   "id": "unit-united-states-army-central",
+   "role": "mentioned"
+  },
+  {
+   "id": "unit-80th-training-command",
+   "role": "mentioned"
+  }
+ ],
+ "1944-11-16-duren": [
+  {
+   "id": "place-duren",
+   "role": "subject"
+  },
+  {
+   "id": "unit-raf-bomber-command",
+   "role": "involved"
+  },
+  {
+   "id": "op-operation-queen",
+   "role": "involved"
+  },
+  {
+   "id": "place-julich",
+   "role": "involved"
+  },
+  {
+   "id": "place-heinsberg",
+   "role": "involved"
+  },
+  {
+   "id": "aircraft-avro-lancaster",
+   "role": "involved"
+  },
+  {
+   "id": "aircraft-de-havilland-mosquito",
+   "role": "involved"
+  },
+  {
+   "id": "place-roer",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-aachen",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-cologne",
+   "role": "mentioned"
+  }
+ ],
+ "1944-11-16-operation-queen": [
+  {
+   "id": "op-operation-queen",
+   "role": "subject"
+  },
+  {
+   "id": "unit-eighth-air-force",
+   "role": "involved"
+  },
+  {
+   "id": "unit-raf-bomber-command",
+   "role": "involved"
+  },
+  {
+   "id": "place-eschweiler",
+   "role": "involved"
+  },
+  {
+   "id": "place-langerwehe",
+   "role": "involved"
+  },
+  {
+   "id": "place-duren",
+   "role": "involved"
+  },
+  {
+   "id": "place-julich",
+   "role": "involved"
+  },
+  {
+   "id": "place-heinsberg",
+   "role": "involved"
+  },
+  {
+   "id": "unit-first-army-united-states",
+   "role": "involved"
+  },
+  {
+   "id": "unit-ninth-army-united-states",
+   "role": "involved"
+  },
+  {
+   "id": "unit-3rd-armored-division-united-states",
+   "role": "involved"
+  },
+  {
+   "id": "unit-47th-volksgrenadier-division",
+   "role": "involved"
+  },
+  {
+   "id": "unit-1st-infantry-division-united-states",
+   "role": "involved"
+  },
+  {
+   "id": "unit-16th-infantry-regiment-united-states",
+   "role": "involved"
+  },
+  {
+   "id": "place-roer",
+   "role": "involved"
+  },
+  {
+   "id": "place-geilenkirchen",
+   "role": "involved"
+  },
+  {
+   "id": "place-hurtgen-forest",
+   "role": "involved"
+  },
+  {
+   "id": "aircraft-martin-b-26-marauder",
+   "role": "mentioned"
+  },
+  {
+   "id": "unit-ninth-air-force",
+   "role": "mentioned"
+  }
+ ],
+ "1944-11-17-442nd": [
+  {
+   "id": "unit-442nd-infantry-regiment",
+   "role": "subject"
+  },
+  {
+   "id": "place-docelles",
+   "role": "subject"
+  },
+  {
+   "id": "unit-36th-infantry-division-united-states",
+   "role": "involved"
+  },
+  {
+   "id": "place-vosges",
+   "role": "involved"
+  },
+  {
+   "id": "person-john-e-dahlquist",
+   "role": "involved"
+  },
+  {
+   "id": "person-virgil-r-miller",
+   "role": "involved"
+  },
+  {
+   "id": "place-saint-die-des-vosges",
+   "role": "involved"
+  },
+  {
+   "id": "place-corcieux",
+   "role": "involved"
+  },
+  {
+   "id": "place-saint-jeannet-alpes-maritimes",
+   "role": "involved"
+  },
+  {
+   "id": "place-bruyeres",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-biffontaine",
+   "role": "mentioned"
+  },
+  {
+   "id": "unit-lost-battalion-europe-world-war-ii",
+   "role": "mentioned"
+  },
+  {
+   "id": "unit-141st-infantry-regiment-united-states",
+   "role": "mentioned"
+  },
+  {
+   "id": "person-joe-m-nishimoto",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-la-houssiere",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-nice",
+   "role": "mentioned"
+  }
+ ],
+ "1944-11-17-timberwolves": [
+  {
+   "id": "unit-104th-training-division",
+   "role": "subject"
+  },
+  {
+   "id": "place-stolberg-rhineland",
+   "role": "subject"
+  },
+  {
+   "id": "person-terry-de-la-mesa-allen-sr",
+   "role": "involved"
+  },
+  {
+   "id": "unit-vii-corps-united-states",
+   "role": "involved"
+  },
+  {
+   "id": "unit-414th-infantry-regiment",
+   "role": "involved"
+  },
+  {
+   "id": "unit-415th-infantry-regiment",
+   "role": "involved"
+  },
+  {
+   "id": "person-j-lawton-collins",
+   "role": "involved"
+  },
+  {
+   "id": "unit-lxxxi-army-corps",
+   "role": "involved"
+  },
+  {
+   "id": "place-eschweiler",
+   "role": "involved"
+  },
+  {
+   "id": "op-operation-queen",
+   "role": "mentioned"
+  },
+  {
+   "id": "unit-1st-infantry-division-united-states",
+   "role": "mentioned"
+  },
+  {
+   "id": "person-omar-bradley",
+   "role": "mentioned"
+  },
+  {
+   "id": "unit-first-canadian-army",
+   "role": "mentioned"
+  },
+  {
+   "id": "op-battle-of-the-bulge",
+   "role": "mentioned"
+  }
+ ],
+ "1944-11-18-metz": [
+  {
+   "id": "op-battle-of-metz",
+   "role": "subject"
+  },
+  {
+   "id": "place-metz",
+   "role": "subject"
+  },
+  {
+   "id": "unit-united-states-army-central",
+   "role": "involved"
+  },
+  {
+   "id": "unit-5th-infantry-division-united-states",
+   "role": "involved"
+  },
+  {
+   "id": "unit-95th-training-division",
+   "role": "involved"
+  },
+  {
+   "id": "unit-10th-infantry-regiment-united-states",
+   "role": "involved"
+  },
+  {
+   "id": "unit-11th-infantry-regiment-united-states",
+   "role": "involved"
+  },
+  {
+   "id": "unit-378th-infantry-regiment",
+   "role": "involved"
+  },
+  {
+   "id": "unit-90th-infantry-division-united-states",
+   "role": "involved"
+  },
+  {
+   "id": "place-moselle",
+   "role": "involved"
+  },
+  {
+   "id": "aircraft-republic-p-47-thunderbolt",
+   "role": "involved"
+  },
+  {
+   "id": "unit-french-forces-of-the-interior",
+   "role": "involved"
+  },
+  {
+   "id": "person-walton-walker",
+   "role": "involved"
+  },
+  {
+   "id": "place-fort-jeanne-d-arc",
+   "role": "involved"
+  },
+  {
+   "id": "person-heinrich-kittel",
+   "role": "involved"
+  },
+  {
+   "id": "person-attila",
    "role": "mentioned"
   }
  ],

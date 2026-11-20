@@ -24,6 +24,16 @@
    "B-29"
   ]
  },
+ "aircraft-bell-x-1": {
+  "name": "Bell X-1",
+  "kind": "rocket powered research aircraft",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bell_X-1",
+  "aka": [
+   "XS-1"
+  ]
+ },
  "aircraft-boeing-b-17-flying-fortress": {
   "name": "Boeing B-17 Flying Fortress",
   "kind": "heavy bomber",
@@ -103,12 +113,49 @@
   ],
   "note": "'de Havilland Sea Vampire' redirects to this article."
  },
+ "aircraft-dornier-do-217": {
+  "name": "Dornier Do 217",
+  "kind": "bomber",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Dornier_Do_217",
+  "wikidata": null,
+  "aka": [
+   "Do 217"
+  ]
+ },
+ "aircraft-focke-wulf-fw-200-condor": {
+  "name": "Focke-Wulf Fw 200 Condor",
+  "kind": "long range bomber",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Focke-Wulf_Fw_200_Condor",
+  "wikidata": null,
+  "aka": [
+   "Fw 200"
+  ]
+ },
  "aircraft-fokker-d-viii": {
   "name": "Fokker D.VIII",
   "kind": "WWI fighter",
   "nation": "Germany",
   "source": "https://en.wikipedia.org/wiki/Fokker_D.VIII",
   "wikidata": null
+ },
+ "aircraft-grumman-f4f-wildcat": {
+  "name": "Grumman F4F Wildcat",
+  "kind": "carrier fighter",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Grumman_F4F_Wildcat"
+ },
+ "aircraft-grumman-f6f-hellcat": {
+  "name": "Grumman F6F Hellcat",
+  "kind": "carrier fighter",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Grumman_F6F_Hellcat",
+  "wikidata": null,
+  "aka": [
+   "Hellcat"
+  ]
  },
  "aircraft-grumman-tbf-avenger": {
   "name": "Grumman TBF Avenger",
@@ -118,6 +165,26 @@
   "source": "https://en.wikipedia.org/wiki/Grumman_TBF_Avenger",
   "aka": [
    "TBM Avenger"
+  ]
+ },
+ "aircraft-handley-page-halifax": {
+  "name": "Handley Page Halifax",
+  "kind": "heavy bomber",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/Handley_Page_Halifax",
+  "wikidata": null,
+  "aka": [
+   "Halifax"
+  ]
+ },
+ "aircraft-heinkel-he-111": {
+  "name": "Heinkel He 111",
+  "kind": "bomber",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Heinkel_He_111",
+  "wikidata": null,
+  "aka": [
+   "He 111"
   ]
  },
  "aircraft-heinkel-he-177-greif": {
@@ -137,6 +204,16 @@
    "Spruce Goose"
   ]
  },
+ "aircraft-interstate-tdr": {
+  "name": "Interstate TDR-1",
+  "kind": "assault drone",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Interstate_TDR",
+  "wikidata": null,
+  "aka": [
+   "TDR-1"
+  ]
+ },
  "aircraft-junkers-ju-87": {
   "name": "Junkers Ju 87 Stuka",
   "kind": "dive bomber",
@@ -145,6 +222,16 @@
   "wikidata": null,
   "aka": [
    "Stuka"
+  ]
+ },
+ "aircraft-junkers-ju-88": {
+  "name": "Junkers Ju 88",
+  "kind": "bomber",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Junkers_Ju_88",
+  "wikidata": null,
+  "aka": [
+   "Ju 88"
   ]
  },
  "aircraft-lockheed-p-38-lightning": {
@@ -197,6 +284,16 @@
   "wikidata": null,
   "aka": [
    "Zero"
+  ]
+ },
+ "aircraft-mitsubishi-g3m": {
+  "name": "Mitsubishi G3M",
+  "kind": "navy medium bomber",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mitsubishi_G3M",
+  "aka": [
+   "Nell"
   ]
  },
  "aircraft-mitsubishi-g4m": {
@@ -260,6 +357,16 @@
   "wikidata": null,
   "aka": [
    "FR-1 Fireball"
+  ]
+ },
+ "aircraft-savoia-marchetti-sm-79-sparviero": {
+  "name": "Savoia-Marchetti SM.79 Sparviero",
+  "kind": "Italian trimotor bomber and torpedo bomber",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Savoia-Marchetti_SM.79_Sparviero",
+  "aka": [
+   "SM.79"
   ]
  },
  "aircraft-short-stirling": {

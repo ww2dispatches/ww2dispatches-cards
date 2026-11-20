@@ -23,6 +23,23 @@
    "Cairo Communique"
   ]
  },
+ "op-1944-tonankai-earthquake": {
+  "name": "1944 Tōnankai earthquake",
+  "kind": "earthquake and tsunami, 7 December 1944",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1944_T%C5%8Dnankai_earthquake",
+  "aka": [
+   "Showa Tonankai earthquake"
+  ]
+ },
+ "op-1944-united-states-presidential-election": {
+  "name": "1944 presidential election",
+  "kind": "U.S. presidential election",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/1944_United_States_presidential_election",
+  "wikidata": null
+ },
  "op-aarhus-air-raid": {
   "name": "Aarhus air raid",
   "kind": "air raid",
@@ -43,6 +60,20 @@
   "nation": "Germany",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Air_raid_on_Bari"
+ },
+ "op-arctic-convoys-of-world-war-ii": {
+  "name": "Arctic convoys",
+  "kind": "Allied convoy route",
+  "nation": "worldwide",
+  "source": "https://en.wikipedia.org/wiki/Arctic_convoys_of_World_War_II",
+  "wikidata": null
+ },
+ "op-armistice-day": {
+  "name": "Armistice Day",
+  "kind": "commemoration",
+  "nation": "worldwide",
+  "source": "https://en.wikipedia.org/wiki/Armistice_Day",
+  "wikidata": null
  },
  "op-army-navy-game": {
   "name": "Army Navy Game",
@@ -65,6 +96,20 @@
   "source": "https://en.wikipedia.org/wiki/Atomic_bombings_of_Hiroshima_and_Nagasaki",
   "wikidata": null
  },
+ "op-attack-on-clark-field": {
+  "name": "Attack on Clark Field",
+  "kind": "air attack",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Attack_on_Clark_Field"
+ },
+ "op-attack-on-nibeiwa": {
+  "name": "Attack on Nibeiwa",
+  "kind": "battle",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Attack_on_Nibeiwa"
+ },
  "op-attack-on-pearl-harbor": {
   "name": "Attack on Pearl Harbor",
   "kind": "Japanese carrier attack, 7 December 1941",
@@ -78,6 +123,13 @@
   "nation": "US",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Baseball_color_line"
+ },
+ "op-battle-of-aachen": {
+  "name": "Battle of Aachen",
+  "kind": "battle",
+  "nation": "worldwide",
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Aachen",
+  "wikidata": null
  },
  "op-battle-of-berlin-raf-campaign": {
   "name": "Battle of Berlin (RAF campaign)",
@@ -104,11 +156,42 @@
    "Gona"
   ]
  },
+ "op-battle-of-hong-kong": {
+  "name": "Battle of Hong Kong",
+  "kind": "battle",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Hong_Kong"
+ },
  "op-battle-of-iwo-jima": {
   "name": "Battle of Iwo Jima",
   "kind": "battle",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Iwo_Jima",
+  "wikidata": null
+ },
+ "op-battle-of-kota-bharu": {
+  "name": "Battle of Kota Bharu",
+  "kind": "battle",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Kota_Bharu"
+ },
+ "op-battle-of-leyte-gulf": {
+  "name": "Battle of Leyte Gulf",
+  "kind": "naval battle",
+  "nation": "worldwide",
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Leyte_Gulf",
+  "wikidata": null,
+  "aka": [
+   "Surigao Strait"
+  ]
+ },
+ "op-battle-of-metz": {
+  "name": "Battle of Metz",
+  "kind": "battle",
+  "nation": "worldwide",
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Metz",
   "wikidata": null
  },
  "op-battle-of-midway": {
@@ -153,6 +236,13 @@
   "wikidata": "Q169436",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Rostov_(1941)"
  },
+ "op-battle-of-san-pietro-infine": {
+  "name": "Battle of San Pietro Infine",
+  "kind": "battle",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_San_Pietro_Infine"
+ },
  "op-battle-of-santa-cruz-islands": {
   "name": "Battle of the Santa Cruz Islands",
   "kind": "naval battle",
@@ -174,6 +264,30 @@
   "nation": "US",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Battle_of_Tassafaronga"
+ },
+ "op-battle-of-the-bulge": {
+  "name": "Battle of the Bulge",
+  "kind": "battle",
+  "nation": "worldwide",
+  "source": "https://en.wikipedia.org/wiki/Battle_of_the_Bulge",
+  "wikidata": null,
+  "aka": [
+   "Ardennes offensive"
+  ]
+ },
+ "op-battle-of-wake-island": {
+  "name": "Battle of Wake Island",
+  "kind": "battle",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Wake_Island"
+ },
+ "op-battle-off-samar": {
+  "name": "Battle off Samar",
+  "kind": "naval battle",
+  "nation": "worldwide",
+  "source": "https://en.wikipedia.org/wiki/Battle_off_Samar",
+  "wikidata": null
  },
  "op-beveridge-report": {
   "name": "Beveridge Report",
@@ -213,12 +327,27 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Naples_in_World_War_II"
  },
+ "op-bombing-of-singapore-1941": {
+  "name": "Bombing of Singapore (1941)",
+  "kind": "air raid",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Singapore_(1941)"
+ },
  "op-bombings-of-heilbronn-in-world-war-ii": {
   "name": "Bombings of Heilbronn in World War II",
   "kind": "Allied air raids on Heilbronn, including 4 December 1944",
   "nation": "Germany",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Bombings_of_Heilbronn_in_World_War_II"
+ },
+ "op-british-declaration-of-war-on-japan": {
+  "name": "British declaration of war on Japan",
+  "kind": "declaration of war",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/British_declaration_of_war_on_Japan",
+  "note": "Wikipedia's United Kingdom declaration of war on Japan redirects here."
  },
  "op-cairo-conference": {
   "name": "Cairo Conference",
@@ -261,6 +390,16 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Continuation_War"
  },
+ "op-convention-on-international-civil-aviation": {
+  "name": "Convention on International Civil Aviation",
+  "kind": "treaty signed at Chicago, 7 December 1944",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Convention_on_International_Civil_Aviation",
+  "aka": [
+   "Chicago Convention"
+  ]
+ },
  "op-convoy-hx-156": {
   "name": "Convoy HX 156",
   "kind": "Atlantic convoy",
@@ -285,6 +424,16 @@
    "Moonlight Sonata"
   ]
  },
+ "op-day-of-infamy-speech": {
+  "name": "Day of Infamy speech",
+  "kind": "presidential address",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Day_of_Infamy_speech",
+  "aka": [
+   "Infamy Speech"
+  ]
+ },
  "op-dekemvriana": {
   "name": "Dekemvriana",
   "kind": "clashes in Athens, December 1944 to January 1945",
@@ -295,6 +444,13 @@
    "December events"
   ]
  },
+ "op-doctors-trial": {
+  "name": "Doctors' Trial",
+  "kind": "war crimes trial",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Doctors%27_Trial"
+ },
  "op-doolittle-raid": {
   "name": "Doolittle Raid",
   "kind": "air raid",
@@ -302,12 +458,33 @@
   "wikidata": "Q713516",
   "source": "https://en.wikipedia.org/wiki/Doolittle_Raid"
  },
+ "op-fireside-chats": {
+  "name": "Fireside chats",
+  "kind": "Roosevelt's radio addresses",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fireside_chats"
+ },
+ "op-first-bombardment-of-midway": {
+  "name": "First Bombardment of Midway",
+  "kind": "naval bombardment, 7 December 1941",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/First_Bombardment_of_Midway"
+ },
  "op-flight-19": {
   "name": "Flight 19",
   "kind": "lost U.S. Navy training flight",
   "nation": "US",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Flight_19"
+ },
+ "op-genocide-convention": {
+  "name": "Genocide Convention",
+  "kind": "international treaty",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Genocide_Convention"
  },
  "op-german-invasion-of-greece": {
   "name": "German invasion of Greece",
@@ -339,6 +516,27 @@
   "nation": "US",
   "wikidata": "Q217145",
   "source": "https://en.wikipedia.org/wiki/Guadalcanal_campaign"
+ },
+ "op-internment-of-german-americans": {
+  "name": "Internment of German Americans",
+  "kind": "enemy alien program",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Internment_of_German_Americans"
+ },
+ "op-internment-of-italian-americans": {
+  "name": "Internment of Italian Americans",
+  "kind": "enemy alien program",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Internment_of_Italian_Americans"
+ },
+ "op-internment-of-japanese-americans": {
+  "name": "Internment of Japanese Americans",
+  "kind": "wartime incarceration program",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Internment_of_Japanese_Americans"
  },
  "op-japanese-air-attacks-on-the-mariana-islands": {
   "name": "Japanese air attacks on the Mariana Islands",
@@ -382,6 +580,16 @@
    "Reichskristallnacht"
   ]
  },
+ "op-krupp-trial": {
+  "name": "Krupp trial",
+  "kind": "war crimes trial",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Krupp_trial",
+  "aka": [
+   "NMT Case 10"
+  ]
+ },
  "op-lend-lease": {
   "name": "Lend Lease",
   "kind": "U.S. arms aid program",
@@ -410,6 +618,13 @@
   "wikidata": "Q6658321",
   "source": "https://en.wikipedia.org/wiki/Liverpool_Blitz"
  },
+ "op-lorraine-campaign": {
+  "name": "Lorraine campaign",
+  "kind": "campaign",
+  "nation": "worldwide",
+  "source": "https://en.wikipedia.org/wiki/Lorraine_campaign",
+  "wikidata": null
+ },
  "op-malayan-campaign": {
   "name": "Malayan campaign",
   "kind": "Japanese invasion of Malaya, 1941 to 1942",
@@ -430,6 +645,16 @@
    "Manhattan Engineer District"
   ]
  },
+ "op-nacht-und-nebel": {
+  "name": "Nacht und Nebel",
+  "kind": "Nazi decree, 7 December 1941",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Nacht_und_Nebel",
+  "aka": [
+   "Night and Fog decree"
+  ]
+ },
  "op-navy-day": {
   "name": "Navy Day",
   "kind": "naval observance",
@@ -444,6 +669,16 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Neutrality_Patrol",
   "wikidata": null
+ },
+ "op-ni-ihau-incident": {
+  "name": "Niʻihau incident",
+  "kind": "crash landing and standoff, 7 to 13 December 1941",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ni%CA%BBihau_incident",
+  "aka": [
+   "Niihau incident"
+  ]
  },
  "op-normandy-landings": {
   "name": "Normandy landings",
@@ -490,6 +725,13 @@
   "source": "https://en.wikipedia.org/wiki/Operation_Battleaxe",
   "wikidata": null
  },
+ "op-operation-compass": {
+  "name": "Operation Compass",
+  "kind": "British offensive in Egypt and Libya",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Compass"
+ },
  "op-operation-crossbow": {
   "name": "Operation Crossbow",
   "kind": "Allied campaign against the V weapons",
@@ -503,6 +745,16 @@
   "nation": "Britain",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Operation_Crusader"
+ },
+ "op-operation-frankton": {
+  "name": "Operation Frankton",
+  "kind": "Royal Marines canoe raid on Bordeaux, December 1942",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Frankton",
+  "aka": [
+   "Cockleshell Heroes"
+  ]
  },
  "op-operation-lighthouse-1937": {
   "name": "Operation Lighthouse",
@@ -518,6 +770,20 @@
   "source": "https://en.wikipedia.org/wiki/Operation_Mincemeat",
   "wikidata": null
  },
+ "op-operation-overlord": {
+  "name": "Operation Overlord",
+  "kind": "Allied invasion of Normandy, 1944",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Overlord"
+ },
+ "op-operation-queen": {
+  "name": "Operation Queen",
+  "kind": "Allied offensive",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Operation_Queen",
+  "wikidata": null
+ },
  "op-operation-torch": {
   "name": "Operation Torch",
   "kind": "amphibious landings",
@@ -527,6 +793,20 @@
   "aka": [
    "Allied landings in North Africa"
   ]
+ },
+ "op-operation-winter-storm": {
+  "name": "Operation Winter Storm",
+  "kind": "German relief attempt toward Stalingrad, December 1942",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Winter_Storm"
+ },
+ "op-phoney-war": {
+  "name": "Phoney War",
+  "kind": "opening months of the war in the West",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Phoney_War"
  },
  "op-presidents-committee-on-civil-rights": {
   "name": "President's Committee on Civil Rights",
@@ -552,6 +832,16 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Rationing_in_the_United_States"
  },
+ "op-romani-holocaust": {
+  "name": "Romani Holocaust",
+  "kind": "genocide",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Romani_Holocaust",
+  "aka": [
+   "Porajmos"
+  ]
+ },
  "op-rumbula-massacre": {
   "name": "Rumbula massacre",
   "kind": "mass shooting of Jews",
@@ -576,6 +866,13 @@
   "nation": "US",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Second_Cairo_Conference"
+ },
+ "op-second-sino-japanese-war": {
+  "name": "Second Sino-Japanese War",
+  "kind": "war",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War"
  },
  "op-selective-training-and-service-act-of-1940": {
   "name": "Selective Training and Service Act",
@@ -609,6 +906,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Southampton_Blitz"
  },
+ "op-subsequent-nuremberg-trials": {
+  "name": "Subsequent Nuremberg trials",
+  "kind": "American military tribunals",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Subsequent_Nuremberg_trials"
+ },
  "op-surrender-of-japan": {
   "name": "Surrender of Japan",
   "kind": "surrender",
@@ -640,12 +944,29 @@
   "source": "https://en.wikipedia.org/wiki/This_Is_the_Army_(musical)",
   "wikidata": null
  },
+ "op-tikhvin-offensive": {
+  "name": "Tikhvin Offensive",
+  "kind": "Soviet counteroffensive",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tikhvin_Offensive"
+ },
  "op-tokyo-express": {
   "name": "Tokyo Express",
   "kind": "Japanese destroyer night supply runs in the Solomons",
   "nation": "Japan",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Tokyo_Express"
+ },
+ "op-twenty-second-amendment-to-the-united-states-constitution": {
+  "name": "22nd Amendment",
+  "kind": "U.S. constitutional amendment",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Twenty-second_Amendment_to_the_United_States_Constitution",
+  "wikidata": null,
+  "aka": [
+   "Twenty-second Amendment"
+  ]
  },
  "op-ual-ual-incident": {
   "name": "Ual-Ual Incident",
@@ -670,6 +991,13 @@
   "nation": "US",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/United_Nations_Participation_Act"
+ },
+ "op-united-states-declaration-of-war-on-japan": {
+  "name": "United States declaration of war on Japan",
+  "kind": "declaration of war",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/United_States_declaration_of_war_on_Japan"
  },
  "op-us-coffee-rationing": {
   "name": "U.S. coffee rationing",

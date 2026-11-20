@@ -73,6 +73,16 @@
    "M4"
   ]
  },
+ "machine-fu-go-balloon-bomb": {
+  "name": "Fu-Go balloon bomb",
+  "kind": "balloon bomb",
+  "nation": "Japan",
+  "source": "https://en.wikipedia.org/wiki/Fu-Go_balloon_bomb",
+  "wikidata": null,
+  "aka": [
+   "Fu-Go"
+  ]
+ },
  "machine-gaz-aa": {
   "name": "GAZ AA",
   "kind": "light truck",
@@ -89,6 +99,16 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/General_Electric_J31",
   "wikidata": null
+ },
+ "machine-henschel-hs-293": {
+  "name": "Henschel Hs 293",
+  "kind": "guided glide bomb",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Henschel_Hs_293",
+  "wikidata": null,
+  "aka": [
+   "Hs 293"
+  ]
  },
  "machine-ko-hyoteki-class-submarine": {
   "name": "Type A midget submarine",
@@ -173,6 +193,13 @@
   "nation": "Britain",
   "wikidata": "Q2668464",
   "source": "https://en.wikipedia.org/wiki/Sword_of_Stalingrad"
+ },
+ "machine-tallboy-bomb": {
+  "name": "Tallboy",
+  "kind": "deep penetration bomb",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/Tallboy_(bomb)",
+  "wikidata": null
  },
  "machine-v-1-flying-bomb": {
   "name": "V-1 flying bomb",

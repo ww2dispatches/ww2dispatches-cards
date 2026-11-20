@@ -1,10 +1,49 @@
 {
+ "unit-104th-training-division": {
+  "name": "104th Infantry Division",
+  "kind": "U.S. infantry division",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/104th_Training_Division",
+  "wikidata": null,
+  "aka": [
+   "Timberwolves"
+  ],
+  "note": "Wikipedia redirects 104th Infantry Division (United States) here."
+ },
+ "unit-10th-infantry-regiment-united-states": {
+  "name": "10th Infantry Regiment",
+  "kind": "U.S. infantry regiment",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/10th_Infantry_Regiment_(United_States)",
+  "wikidata": null
+ },
+ "unit-11th-infantry-regiment-united-states": {
+  "name": "11th Infantry Regiment",
+  "kind": "U.S. infantry regiment",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/11th_Infantry_Regiment_(United_States)",
+  "wikidata": null
+ },
+ "unit-11th-panzer-division": {
+  "name": "11th Panzer Division",
+  "kind": "German armored division",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/11th_Panzer_Division"
+ },
  "unit-126th-infantry-regiment-united-states": {
   "name": "126th Infantry Regiment",
   "kind": "U.S. Army infantry regiment",
   "nation": "US",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/126th_Infantry_Regiment_(United_States)"
+ },
+ "unit-141st-infantry-regiment-united-states": {
+  "name": "141st Infantry Regiment",
+  "kind": "U.S. infantry regiment",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/141st_Infantry_Regiment_(United_States)",
+  "wikidata": null
  },
  "unit-15th-panzer-division": {
   "name": "15th Panzer Division",
@@ -19,6 +58,30 @@
   "nation": "Soviet Union",
   "source": "https://en.wikipedia.org/wiki/16th_Army_(Soviet_Union)",
   "wikidata": null
+ },
+ "unit-16th-infantry-regiment-united-states": {
+  "name": "16th Infantry Regiment",
+  "kind": "U.S. infantry regiment",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/16th_Infantry_Regiment_(United_States)",
+  "wikidata": null
+ },
+ "unit-175th-infantry-regiment-united-states": {
+  "name": "175th Infantry Regiment",
+  "kind": "U.S. infantry regiment",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/175th_Infantry_Regiment_(United_States)",
+  "wikidata": null
+ },
+ "unit-1st-infantry-division-united-states": {
+  "name": "1st Infantry Division",
+  "kind": "U.S. infantry division",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/1st_Infantry_Division_(United_States)",
+  "wikidata": null,
+  "aka": [
+   "Big Red One"
+  ]
  },
  "unit-1st-panzer-army": {
   "name": "First Panzer Army",
@@ -41,11 +104,32 @@
   "source": "https://en.wikipedia.org/wiki/252nd_Air_Group",
   "wikidata": null
  },
+ "unit-25th-panzergrenadier-division": {
+  "name": "25th Panzergrenadier Division",
+  "kind": "German panzergrenadier division",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/25th_Panzergrenadier_Division",
+  "wikidata": null
+ },
+ "unit-29th-infantry-division-united-states": {
+  "name": "29th Infantry Division",
+  "kind": "U.S. infantry division",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/29th_Infantry_Division_(United_States)",
+  "wikidata": null
+ },
  "unit-2nd-armored-division-france": {
   "name": "French 2nd Armored Division",
   "kind": "French armored division",
   "nation": "France",
   "source": "https://en.wikipedia.org/wiki/2nd_Armored_Division_(France)",
+  "wikidata": null
+ },
+ "unit-2nd-armored-division-united-states": {
+  "name": "2nd Armored Division",
+  "kind": "U.S. armored division",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/2nd_Armored_Division_(United_States)",
   "wikidata": null
  },
  "unit-2nd-new-zealand-division": {
@@ -65,6 +149,13 @@
    "Second Panzer Army",
    "Panzer Group 2"
   ]
+ },
+ "unit-30th-infantry-division-united-states": {
+  "name": "30th Infantry Division",
+  "kind": "U.S. infantry division",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/30th_Infantry_Division_(United_States)",
+  "wikidata": null
  },
  "unit-32nd-infantry-division-united-states": {
   "name": "32nd Infantry Division",
@@ -86,11 +177,46 @@
    "Pioneer Mustang Group"
   ]
  },
+ "unit-35th-infantry-division-united-states": {
+  "name": "35th Infantry Division",
+  "kind": "U.S. infantry division",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/35th_Infantry_Division_(United_States)",
+  "wikidata": null
+ },
+ "unit-36th-infantry-division-united-states": {
+  "name": "36th Infantry Division",
+  "kind": "U.S. Army infantry division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/36th_Infantry_Division_(United_States)"
+ },
+ "unit-378th-infantry-regiment": {
+  "name": "378th Infantry Regiment",
+  "kind": "U.S. infantry regiment",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/378th_Infantry_Regiment",
+  "wikidata": null
+ },
  "unit-37th-army-soviet-union": {
   "name": "Soviet 37th Army",
   "kind": "Soviet field army",
   "nation": "Soviet Union",
   "source": "https://en.wikipedia.org/wiki/37th_Army_(Soviet_Union)",
+  "wikidata": null
+ },
+ "unit-39th-battalion-australia": {
+  "name": "39th Battalion (Australia)",
+  "kind": "Australian militia infantry battalion",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/39th_Battalion_(Australia)"
+ },
+ "unit-3rd-armored-division-united-states": {
+  "name": "3rd Armored Division",
+  "kind": "U.S. armored division",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/3rd_Armored_Division_(United_States)",
   "wikidata": null
  },
  "unit-3rd-panzer-army": {
@@ -103,12 +229,51 @@
    "3rd Panzer Army"
   ]
  },
+ "unit-414th-infantry-regiment": {
+  "name": "414th Infantry Regiment",
+  "kind": "U.S. infantry regiment",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/414th_Infantry_Regiment",
+  "wikidata": null
+ },
+ "unit-415th-infantry-regiment": {
+  "name": "415th Infantry Regiment",
+  "kind": "U.S. infantry regiment",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/415th_Infantry_Regiment",
+  "wikidata": null
+ },
+ "unit-442nd-infantry-regiment": {
+  "name": "442nd Regimental Combat Team",
+  "kind": "U.S. Army Japanese American regiment",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/442nd_Infantry_Regiment",
+  "wikidata": null,
+  "aka": [
+   "442nd",
+   "442nd Infantry Regiment"
+  ]
+ },
+ "unit-47th-volksgrenadier-division": {
+  "name": "47th Volksgrenadier Division",
+  "kind": "German infantry division",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/47th_Volksgrenadier_Division",
+  "wikidata": null
+ },
  "unit-497th-bomb-group": {
   "name": "497th Bomb Group",
   "kind": "U.S. Army Air Forces bomb group",
   "nation": "US",
   "wikidata": "Q4638763",
   "source": "https://en.wikipedia.org/wiki/497th_Air_Expeditionary_Group"
+ },
+ "unit-4th-armored-division-united-states": {
+  "name": "4th Armored Division",
+  "kind": "U.S. armored division",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/4th_Armored_Division_(United_States)",
+  "wikidata": null
  },
  "unit-4th-panzer-army": {
   "name": "4th Panzer Group",
@@ -119,6 +284,13 @@
   "aka": [
    "4th Panzer Army"
   ]
+ },
+ "unit-5th-infantry-division-united-states": {
+  "name": "5th Infantry Division",
+  "kind": "U.S. infantry division",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/5th_Infantry_Division_(United_States)",
+  "wikidata": null
  },
  "unit-73rd-bombardment-wing": {
   "name": "73rd Bombardment Wing",
@@ -141,6 +313,14 @@
   "source": "https://en.wikipedia.org/wiki/7th_Armoured_Brigade_(United_Kingdom)",
   "wikidata": null
  },
+ "unit-80th-training-command": {
+  "name": "80th Infantry Division",
+  "kind": "U.S. infantry division",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/80th_Training_Command",
+  "wikidata": null,
+  "note": "Wikipedia redirects 80th Infantry Division (United States) here."
+ },
  "unit-84th-training-command": {
   "name": "84th Infantry Division",
   "kind": "U.S. Army infantry division",
@@ -148,6 +328,21 @@
   "source": "https://en.wikipedia.org/wiki/84th_Training_Command",
   "wikidata": null,
   "note": "Wikipedia article is the later 84th Training Command, the same unit as the wartime 84th Infantry Division."
+ },
+ "unit-90th-infantry-division-united-states": {
+  "name": "90th Infantry Division",
+  "kind": "U.S. infantry division",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/90th_Infantry_Division_(United_States)",
+  "wikidata": null
+ },
+ "unit-95th-training-division": {
+  "name": "95th Infantry Division",
+  "kind": "U.S. infantry division",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/95th_Training_Division",
+  "wikidata": null,
+  "note": "Wikipedia redirects 95th Infantry Division (United States) here."
  },
  "unit-9th-army-wehrmacht": {
   "name": "German Ninth Army",
@@ -250,6 +445,16 @@
    "Fast Carrier Task Force"
   ]
  },
+ "unit-federal-bureau-of-investigation": {
+  "name": "Federal Bureau of Investigation",
+  "kind": "US federal agency",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Federal_Bureau_of_Investigation",
+  "aka": [
+   "FBI"
+  ]
+ },
  "unit-finnish-democratic-republic": {
   "name": "Finnish Democratic Republic",
   "kind": "Soviet puppet government",
@@ -260,6 +465,23 @@
    "Terijoki government"
   ]
  },
+ "unit-first-army-united-states": {
+  "name": "First Army",
+  "kind": "U.S. field army",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/First_Army_(United_States)",
+  "wikidata": null,
+  "aka": [
+   "U.S. First Army"
+  ]
+ },
+ "unit-first-canadian-army": {
+  "name": "First Canadian Army",
+  "kind": "Canadian field army",
+  "nation": "Canada",
+  "source": "https://en.wikipedia.org/wiki/First_Canadian_Army",
+  "wikidata": null
+ },
  "unit-force-z": {
   "name": "Force Z",
   "kind": "Royal Navy squadron",
@@ -268,6 +490,23 @@
   "source": "https://en.wikipedia.org/wiki/Force_Z",
   "aka": [
    "Force G"
+  ]
+ },
+ "unit-frankfurter-zeitung": {
+  "name": "Frankfurter Zeitung",
+  "kind": "German newspaper",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Frankfurter_Zeitung",
+  "wikidata": null
+ },
+ "unit-french-forces-of-the-interior": {
+  "name": "FFI",
+  "kind": "French resistance forces",
+  "nation": "France",
+  "source": "https://en.wikipedia.org/wiki/French_Forces_of_the_Interior",
+  "wikidata": null,
+  "aka": [
+   "French Forces of the Interior"
   ]
  },
  "unit-german-american-bund": {
@@ -311,6 +550,28 @@
   "source": "https://en.wikipedia.org/wiki/Home_Ministry",
   "wikidata": null
  },
+ "unit-international-civil-aviation-organization": {
+  "name": "International Civil Aviation Organization",
+  "kind": "UN aviation agency",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/International_Civil_Aviation_Organization",
+  "aka": [
+   "ICAO",
+   "PICAO"
+  ]
+ },
+ "unit-italian-co-belligerent-army": {
+  "name": "Italian Co-Belligerent Army",
+  "kind": "Royal Italian Army fighting with the Allies, 1943 to 1945",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_Co-belligerent_Army",
+  "aka": [
+   "1st Motorized Group"
+  ],
+  "note": "No separate article for the 1st Motorized Group."
+ },
  "unit-johns-hopkins-university-applied-physics-laboratory": {
   "name": "Johns Hopkins Applied Physics Laboratory",
   "kind": "research laboratory",
@@ -325,12 +586,46 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Kalinin_Front"
  },
+ "unit-king-s-shropshire-light-infantry": {
+  "name": "King's Shropshire Light Infantry",
+  "kind": "British infantry regiment",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/King%27s_Shropshire_Light_Infantry",
+  "aka": [
+   "KSLI"
+  ]
+ },
  "unit-league-of-nations": {
   "name": "League of Nations",
   "kind": "international organization",
   "nation": "worldwide",
   "source": "https://en.wikipedia.org/wiki/League_of_Nations",
   "wikidata": null
+ },
+ "unit-lost-battalion-europe-world-war-ii": {
+  "name": "Lost Battalion",
+  "kind": "U.S. infantry battalion (1st Battalion, 141st Infantry)",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Lost_Battalion_(Europe,_World_War_II)",
+  "wikidata": null
+ },
+ "unit-lxxxi-army-corps": {
+  "name": "LXXXI Corps",
+  "kind": "German army corps",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/LXXXI_Army_Corps",
+  "wikidata": null
+ },
+ "unit-maletti-group": {
+  "name": "Maletti Group",
+  "kind": "Italian motorized group in Egypt",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Maletti_Group",
+  "aka": [
+   "Raggruppamento Maletti"
+  ]
  },
  "unit-mediterranean-fleet": {
   "name": "Mediterranean Fleet",
@@ -356,6 +651,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Ministry_of_the_Navy_(Japan)"
  },
+ "unit-naacp": {
+  "name": "NAACP",
+  "kind": "civil rights organization",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/NAACP",
+  "wikidata": null
+ },
  "unit-national-archives-and-records-administration": {
   "name": "National Archives",
   "kind": "U.S. federal agency",
@@ -377,12 +679,36 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Ninth_Air_Force"
  },
+ "unit-ninth-army-united-states": {
+  "name": "Ninth Army",
+  "kind": "U.S. field army",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Ninth_Army_(United_States)",
+  "wikidata": null,
+  "aka": [
+   "U.S. Ninth Army"
+  ]
+ },
+ "unit-no-1-squadron-raaf": {
+  "name": "No. 1 Squadron RAAF",
+  "kind": "Royal Australian Air Force squadron",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._1_Squadron_RAAF"
+ },
  "unit-no-149-squadron-raf": {
   "name": "No. 149 Squadron RAF",
   "kind": "bomber squadron",
   "nation": "Britain",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/No._149_Squadron_RAF"
+ },
+ "unit-no-463-squadron-raaf": {
+  "name": "No. 463 Squadron RAAF",
+  "kind": "RAAF bomber squadron",
+  "nation": "Australia",
+  "source": "https://en.wikipedia.org/wiki/No._463_Squadron_RAAF",
+  "wikidata": null
  },
  "unit-no-464-squadron-raaf": {
   "name": "No. 464 Squadron RAAF",
@@ -391,12 +717,36 @@
   "source": "https://en.wikipedia.org/wiki/No._464_Squadron_RAAF",
   "wikidata": null
  },
+ "unit-no-617-squadron-raf": {
+  "name": "No. 617 Squadron RAF",
+  "kind": "RAF bomber squadron",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/No._617_Squadron_RAF",
+  "wikidata": null,
+  "aka": [
+   "Dambusters"
+  ]
+ },
  "unit-no-619-squadron-raf": {
   "name": "No. 619 Squadron RAF",
   "kind": "RAF Lancaster bomber squadron",
   "nation": "Britain",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/No._619_Squadron_RAF"
+ },
+ "unit-no-9-squadron-raf": {
+  "name": "No. 9 Squadron RAF",
+  "kind": "RAF bomber squadron",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/No._9_Squadron_RAF",
+  "wikidata": null
+ },
+ "unit-office-of-censorship": {
+  "name": "Office of Censorship",
+  "kind": "U.S. wartime agency",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Office_of_Censorship",
+  "wikidata": null
  },
  "unit-office-of-civilian-defense": {
   "name": "Office of Civilian Defense",
@@ -412,6 +762,23 @@
   "source": "https://en.wikipedia.org/wiki/Panfilov's_Twenty-Eight_Guardsmen",
   "wikidata": null,
   "note": "The Wikipedia article treats the story as largely fabricated, as the card does."
+ },
+ "unit-provisional-government-of-the-french-republic": {
+  "name": "Provisional Government of the French Republic",
+  "kind": "French government",
+  "nation": "France",
+  "source": "https://en.wikipedia.org/wiki/Provisional_Government_of_the_French_Republic",
+  "wikidata": null
+ },
+ "unit-raf-bomber-command": {
+  "name": "RAF Bomber Command",
+  "kind": "RAF bomber command",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/RAF_Bomber_Command",
+  "wikidata": null,
+  "aka": [
+   "Bomber Command"
+  ]
  },
  "unit-reich-security-main-office": {
   "name": "Reich Security Main Office",
@@ -440,6 +807,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Selective_Service_System"
  },
+ "unit-seventh-air-force": {
+  "name": "Seventh Air Force",
+  "kind": "U.S. Army Air Forces numbered air force",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Seventh_Air_Force"
+ },
  "unit-supreme-court-of-the-united-states": {
   "name": "U.S. Supreme Court",
   "kind": "U.S. federal court",
@@ -467,12 +841,73 @@
    "UN"
   ]
  },
+ "unit-united-nations-general-assembly": {
+  "name": "United Nations General Assembly",
+  "kind": "UN deliberative body",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/United_Nations_General_Assembly"
+ },
  "unit-united-nations-security-council": {
   "name": "UN Security Council",
   "kind": "international council",
   "nation": "worldwide",
   "source": "https://en.wikipedia.org/wiki/United_Nations_Security_Council",
   "wikidata": null
+ },
+ "unit-united-states-army-central": {
+  "name": "Third Army",
+  "kind": "U.S. field army",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/United_States_Army_Central",
+  "wikidata": null,
+  "aka": [
+   "Third Army",
+   "U.S. Third Army"
+  ],
+  "note": "Wikipedia redirects Third United States Army here."
+ },
+ "unit-united-states-department-of-war": {
+  "name": "War Department",
+  "kind": "U.S. government department",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/United_States_Department_of_War",
+  "wikidata": null
+ },
+ "unit-united-states-navy-reserve": {
+  "name": "United States Navy Reserve",
+  "kind": "naval reserve force",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/United_States_Navy_Reserve"
+ },
+ "unit-vf-3": {
+  "name": "Fighting Squadron 3",
+  "kind": "U.S. Navy fighter squadron",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/VF-3",
+  "wikidata": null,
+  "aka": [
+   "VF-3"
+  ]
+ },
+ "unit-vii-corps-united-states": {
+  "name": "VII Corps",
+  "kind": "U.S. Army corps",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/VII_Corps_(United_States)",
+  "wikidata": null
+ },
+ "unit-vmfa-211": {
+  "name": "VMF-211",
+  "kind": "U.S. Marine Corps fighter squadron",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/VMFA-211",
+  "aka": [
+   "VMF-211"
+  ],
+  "note": "Wikipedia's VMF-211 redirects to VMFA-211."
  },
  "unit-war-manpower-commission": {
   "name": "War Manpower Commission",
@@ -486,6 +921,13 @@
   "kind": "U.S. government agency",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/War_Production_Board",
+  "wikidata": null
+ },
+ "unit-waves": {
+  "name": "WAVES",
+  "kind": "U.S. Navy women's reserve",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/WAVES",
   "wikidata": null
  },
  "unit-western-front-soviet-union": {
@@ -506,11 +948,32 @@
    "Work Projects Administration"
   ]
  },
+ "unit-xii-corps-united-states": {
+  "name": "XII Corps",
+  "kind": "U.S. Army corps",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/XII_Corps_(United_States)",
+  "wikidata": null
+ },
+ "unit-xix-corps-united-states": {
+  "name": "XIX Corps",
+  "kind": "U.S. Army corps",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/XIX_Corps_(United_States)",
+  "wikidata": null
+ },
  "unit-xv-corps-united-states": {
   "name": "U.S. XV Corps",
   "kind": "U.S. Army corps",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/XV_Corps_(United_States)",
+  "wikidata": null
+ },
+ "unit-xx-corps-united-states": {
+  "name": "XX Corps",
+  "kind": "U.S. Army corps",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/XX_Corps_(United_States)",
   "wikidata": null
  },
  "unit-xxi-bomber-command": {
