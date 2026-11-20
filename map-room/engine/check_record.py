@@ -12,7 +12,6 @@ LIB = json.load(open(os.path.join(HERE, '..', 'kit', 'silhouettes', 'library.jso
 # The camera, block size and frame are fixed (scene.py, comp.py, view.json).
 TW, TH = 14.0, 14.4                                # table map size in table units
 BS, BH = 1.35, 0.36                                # block size and height
-W, H, EDGE, ZOOM, ZC = 1080, 1920, 8, 1.035, (560, 900)
 CAM = json.load(open(os.path.join(HERE, 'view.json')))
 LON0 = LAT0 = KX = KY = LON_MIN = LON_MAX = LAT_MIN = LAT_MAX = None
 def use_table(path):
@@ -25,13 +24,9 @@ def proj(x, y, z=0.0):
     P = CAM['P']; v = [sum(P[r][c] * q for c, q in enumerate((x, y, z, 1.0))) for r in range(4)]
     return ((v[0] / v[3] + 1) / 2 * CAM['RX'], (1 - v[1] / v[3]) / 2 * CAM['RY'])
 def in_frame(ll):
-    x, y = XY(ll); xs, ys = [], []
-    for dx in (-BS / 2, BS / 2):
-        for dy in (-BS / 2, BS / 2):
-            for dz in (0.0, BH):
-                px, py = proj(x + dx, y + dy, dz)
-                xs.append(ZC[0] + ZOOM * (px - ZC[0])); ys.append(ZC[1] + ZOOM * (py - ZC[1]))
-    return min(xs) >= EDGE and min(ys) >= EDGE and max(xs) <= W - EDGE and max(ys) <= H - EDGE
+    """the whole block sits in the template's block zone: between the tab and the strip, clear of the apps' right rail"""
+    import day
+    return day.in_zone(XY(ll))
 def on_table(ll): return LON_MIN <= ll[0] <= LON_MAX and LAT_MIN <= ll[1] <= LAT_MAX
 
 # ---------- rules ----------
@@ -51,6 +46,15 @@ SS = re.compile(r"\bSS\b|Waffen", re.I)
 DASH = re.compile(r"[‐-―-]")
 DEFAULT_TONIGHT = 'The line tonight. It moves again tomorrow.'
 
+_FONT = None
+def label_scale(label):
+    """the face maker's own sizing (faces.py): the label shrinks until it fits 80% of the face"""
+    global _FONT
+    from PIL import ImageFont, Image, ImageDraw
+    S = 800; t = label.upper(); s = int(S * 0.15); d = ImageDraw.Draw(Image.new('L', (8, 8)))
+    fp = os.path.join(HERE, '..', 'fonts', 'oswald700.ttf')
+    while s > 20 and d.textlength(t, font=ImageFont.truetype(fp, s)) > S * 0.80: s -= 2
+    return s / S
 def is_ll(v): return isinstance(v, list) and len(v) == 2 and all(isinstance(c, (int, float)) for c in v)
 def too_precise(ll): return any(len(f'{c}'.split('.')[-1]) > 2 for c in ll if isinstance(c, float))
 def near(a, b): return abs(a[0] - b[0]) < BS / KX * 0.98 and abs(a[1] - b[1]) < BS / KY * 0.98
@@ -76,7 +80,7 @@ def check(path, test=False):
     root = os.path.join(HERE, '..')
     view = mr.get('view')   # optional close view, e.g. "bastogne" uses series/<campaign>/table-bastogne.json
     name = f'table-{view}.json' if view else 'table.json'
-    tbl = os.path.join(root, 'test', 'table.json') if test else os.path.join(root, 'series', str(d.get('campaign')), name)
+    tbl = os.path.join(root, 'test', 'table.json') if (test and not d.get('campaign')) else os.path.join(root, 'series', str(d.get('campaign')), name)
     if not os.path.exists(tbl): return [f"no table framing {name} for campaign {d.get('campaign')!r} (map-room/series/<campaign>/)"], []
     use_table(tbl)
     def placeholder(s): return isinstance(s, str) and ('<' in s or 'EXAMPLE' in s)
@@ -144,6 +148,7 @@ def check(path, test=False):
         if ABBREV.search(lab): err(f'{who}: label uses a short form ({ABBREV.search(lab).group(0)}); write names out in full')
         if SS.search(lab) or SS.search(p.get('name', '')): err(f'{who}: no SS unit names on the table (use the parent army or corps)')
         if DASH.search(lab): err(f'{who}: label contains a dash')
+        elif lab and label_scale(lab) < 0.085: err(f'{who}: label is too wide to read on the block (letters shrink to {label_scale(lab):.3f} of the face); drop a word')
         if p.get('name') and p['name'] == lab: warn(f'{who}: name only needed when the label had to be shortened')
         # positions
         fr, to = p.get('from'), p.get('to')
@@ -161,7 +166,7 @@ def check(path, test=False):
         for nm, ll in (('from', fr), ('to', to), ('target', p.get('target'))):
             if is_ll(ll):
                 if not on_table(ll): err(f'{who}: {nm} {ll} is off the table map')
-                elif nm != 'target' and not in_frame(ll): err(f'{who}: {nm} {ll} puts the block partly off screen')
+                elif nm != 'target' and not in_frame(ll): err(f'{who}: {nm} {ll} puts the block outside the safe area (partly off screen, or under the tab, the strip or the apps\' buttons)')
                 if too_precise(ll): warn(f'{who}: {nm}: use two decimals at most (positions are approximate)')
         if is_ll(fr) and is_ll(to) and fr == to: err(f'{who}: from and to are the same; use hold')
         if p.get('contact') is not None:

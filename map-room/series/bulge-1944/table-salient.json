@@ -1,4 +1,17 @@
 {
- "_note": "The salient view (provisional, 20 Nov 2026, Brian: a third view as the Bulge is squeezed in January). Covers Hotton and Marche to St. Vith, and Bastogne and Wiltz to Manhay and Vielsalm, so the First Army's attack from the north, the Third Army's from the south, and the closing on Houffalize all fit. A block covers about 14 km. Used by days with \"view\": \"salient\". Traced in step 4 with the other two.",
- "LON0": 5.557, "LAT0": 49.846, "KX": 6.928, "KY": 10.775
+ "_note": "The salient view (Brian, 20 Nov 2026): the January squeeze, Hotton and Marche to St. Vith, Bastogne and Wiltz to Manhay and Vielsalm. Days with \"view\": \"salient\". Fitted 20 Nov 2026 with engine/fit_view.py so every place in the box holds a whole block inside the template's block zone (clear of the tab, the strip and the apps' buttons); a block covers about 20 km. Provisional until the traced map is approved.",
+ "LON0": 5.517,
+ "LAT0": 50.057,
+ "KX": 4.755,
+ "KY": 7.395,
+ "box": {
+  "lon": [
+   5.35,
+   6.2
+  ],
+  "lat": [
+   49.92,
+   50.4
+  ]
+ }
 }

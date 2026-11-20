@@ -1,0 +1,169 @@
+{
+ "_note": "TEST ONLY: positions invented to exercise the template; not history, never posted.",
+ "campaign": "bulge-1944",
+ "seriesName": "The Bulge",
+ "day": 30,
+ "days": 30,
+ "date": "1945-01-14",
+ "subtitle": "Two armies close on Houffalize",
+ "mapRoom": {
+  "view": "salient",
+  "asOf": "2400 hrs, 14 Jan 1945",
+  "lineAM": [
+   [
+    6.2,
+    50.38
+   ],
+   [
+    5.9,
+    50.33
+   ],
+   [
+    5.62,
+    50.3
+   ],
+   [
+    5.45,
+    50.22
+   ],
+   [
+    5.55,
+    50.1
+   ],
+   [
+    5.7,
+    49.98
+   ],
+   [
+    5.95,
+    49.94
+   ],
+   [
+    6.2,
+    49.93
+   ]
+  ],
+  "linePM": [
+   [
+    6.2,
+    50.36
+   ],
+   [
+    5.9,
+    50.28
+   ],
+   [
+    5.65,
+    50.25
+   ],
+   [
+    5.52,
+    50.2
+   ],
+   [
+    5.6,
+    50.1
+   ],
+   [
+    5.75,
+    50.02
+   ],
+   [
+    5.95,
+    49.97
+   ],
+   [
+    6.2,
+    49.95
+   ]
+  ],
+  "lineSources": [
+   "<test source 1>",
+   "<test source 2>"
+  ],
+  "pieces": [
+   {
+    "id": "1a",
+    "nation": "us",
+    "type": "infantry",
+    "label": "First Army",
+    "move": "advance",
+    "from": [
+     5.75,
+     50.42
+    ],
+    "to": [
+     5.78,
+     50.36
+    ],
+    "order": 1,
+    "sources": [
+     "<test source 1>",
+     "<test source 2>"
+    ]
+   },
+   {
+    "id": "3a",
+    "nation": "us",
+    "type": "armor",
+    "label": "Third Army",
+    "move": "advance",
+    "from": [
+     5.85,
+     49.85
+    ],
+    "to": [
+     5.85,
+     49.9
+    ],
+    "order": 2,
+    "sources": [
+     "<test source 1>",
+     "<test source 2>"
+    ]
+   },
+   {
+    "id": "5pz",
+    "nation": "germany",
+    "type": "armor",
+    "label": "5th Panzer Army",
+    "move": "fall_back",
+    "from": [
+     5.6,
+     50.18
+    ],
+    "to": [
+     5.85,
+     50.15
+    ],
+    "order": 3,
+    "sources": [
+     "<test source 1>",
+     "<test source 2>"
+    ]
+   },
+   {
+    "id": "7a",
+    "nation": "germany",
+    "type": "infantry",
+    "label": "7th Army",
+    "move": "hold",
+    "from": [
+     6.15,
+     50.12
+    ]
+   },
+   {
+    "id": "101",
+    "nation": "us",
+    "type": "airborne",
+    "label": "101st Airborne",
+    "move": "hold",
+    "from": [
+     5.5,
+     49.98
+    ]
+   }
+  ]
+ }
+}

@@ -8,11 +8,14 @@ Final format, 20 Nov 2026 (Map Room build chat). For the Campaign Series chat: w
 3. **Six to eight pieces, one to four moves.** Show only the units that matter that day.
 4. **Full unit names on the blocks**, 16 characters at most. Shorten only by dropping a word, never by abbreviating.
 5. **Morning and night front lines**, from the north end of the front to the south end, following it around the Bulge (German ground on the left as you walk it).
-6. **Blocks must not overlap**, and each sits on its own side of the line. On the whole battle view a block covers about 27 by 27 km, so on crowded days use fewer pieces or the corps or army instead of each division.
-7. **Days centered on Bastogne use the close view** (`"view": "bastogne"`, about 22 km across, a block about 5 km), so the 101st, the ring around it and the relief from the south can all be shown. Use it when the day's moves all happen around Bastogne; days that span the front (the spearhead near the Meuse, the northern shoulder) stay on the whole battle view.
-8. **January days use the salient view** (`"view": "salient"`, a block about 14 km) once the Bulge is being squeezed: the First Army's attack from the north (3 Jan on), the Third Army's from the south, and the closing on Houffalize. Days whose story is elsewhere (Bodenplatte on 1 Jan, the Soviet offensive on 12 Jan) pick the view that fits their moves, or the whole battle view.
-9. **Run the checker** after each day and fix every ERROR: `python3 map-room/engine/check_record.py campaign-series/bulge-1944`
-10. **Do not schedule Buffer.** The Map Room chat schedules each day once its clip exists.
+6. **Blocks must not overlap**, and each sits on its own side of the line and inside the clip's safe area (between the tab and the strip, clear of the apps' buttons). Blocks are big on the map, so on crowded days use fewer pieces or the corps or army instead of each division.
+7. **Pick the day's view** (`"view"`), each framed to its ground:
+   * `"opening"`, 16 to 20 Dec: Monschau and Elsenborn to Echternach, Bastogne to the Our; a block about 24 km.
+   * no view (the whole battle): days that span the front, such as the spearhead near the Meuse; a block about 40 km.
+   * `"bastogne"`: days centered on Bastogne; a block about 7 km, so the 101st, the ring around it and the relief from the south can all be shown. Use it when the day's moves all happen around Bastogne; days that span the front (the spearhead near the Meuse, the northern shoulder) stay on the whole battle view.
+   * `"salient"`: January days (a block about 20 km) once the Bulge is being squeezed: the First Army's attack from the north (3 Jan on), the Third Army's from the south, and the closing on Houffalize. Days whose story is elsewhere (Bodenplatte on 1 Jan, the Soviet offensive on 12 Jan) pick the view that fits their moves, or the whole battle view.
+8. **Run the checker** after each day and fix every ERROR: `python3 map-room/engine/check_record.py campaign-series/bulge-1944`
+9. **Do not schedule Buffer.** The Map Room chat schedules each day once its clip exists.
 
 ## Example
 ```json
@@ -39,7 +42,7 @@ A full example is `map-room/test/day01-example.json` (sketch positions, not veri
 |---|---|
 | (day) `campaign` | Already in every day record. It picks the series' table framing (`map-room/series/<campaign>/table.json`). |
 | (day) `subtitle` | The clip's strip uses the day's existing subtitle, 38 characters at most. Nothing new to write. |
-| `view` | Optional. Omit for the whole battle. `"bastogne"` for the Bastogne close view (`table-bastogne.json`, late December); `"salient"` for the January squeeze (`table-salient.json`). Both live in `map-room/series/bulge-1944/`. Positions are always real `[lon, lat]`; the view only changes how close the table is. |
+| `view` | Optional. Omit for the whole battle. `"opening"` for 16 to 20 Dec, `"bastogne"` for the Bastogne close view, `"salient"` for the January squeeze. Framings in `map-room/series/bulge-1944/table*.json`. Positions are always real `[lon, lat]`; the view only changes how close the table is. |
 | `asOf` | The moment the night table shows: `"2400 hrs, 16 Dec 1944"`. |
 | `lineAM`, `linePM` | The front at the start and end of the day: 3 to 24 `[lon, lat]` points from the **north end of the front to the south end**, following it around any bulge, so **German ground is on the left** as you walk it (inside the Bulge). The line may run a little past the table's edges (the drawing clips it), but at least two points must be on the table. On the Bastogne view this is often just the stretch of front that crosses the view. |
 | `lineSources` | Two or more sources for the lines. |

@@ -1,18 +1,23 @@
-"""Draw the Day by Day tab and strips for a Map Room clip with ov.html in headless Chrome.
-Writes tab.png, stripA.png (day subtitle), stripB.png (closing line), openov.png (tab and strip over the opening still),
-openbg.png and opener.png (the still alone and with its overlay) into <work>/ov.
-Usage: ov_shoot.py <series name> <day> <of> [opening photo]   Env: MAPROOM_WORK, MAPROOM_DAY, MAPROOM_STAMP (e.g. TEST)."""
+"""Draw the Day by Day tab and strips for one day's Map Room clip with ov.html in headless Chrome.
+Writes tab.png, stripA.png (the day's subtitle), stripB.png (the closing line), openov.png (tab and strip over the
+opening still), openbg.png and opener.png (the still alone and with its overlay) into <out dir>.
+Usage: ov_shoot.py <day.json> <out dir> [opening photo]   Env: MAPROOM_STAMP (e.g. TEST).
+The tab and strip sit inside the template's safe area (tab_top, strip_lift)."""
 import json, os, subprocess, sys, tempfile, urllib.parse
 import numpy as np, cv2
 HERE = os.path.dirname(os.path.abspath(__file__))
-D = os.environ.get('MAPROOM_WORK', '.'); OV = os.path.join(D, 'ov'); os.makedirs(OV, exist_ok=True)
-DAY = json.load(open(os.environ.get('MAPROOM_DAY', os.path.join(D, 'day01.json'))))
-NAME, N, OF = sys.argv[1], sys.argv[2], sys.argv[3]; PHOTO = sys.argv[4] if len(sys.argv) > 4 else None
+TPL = json.load(open(os.path.join(HERE, 'template.json')))
+REC = json.load(open(sys.argv[1])); OV = sys.argv[2]; os.makedirs(OV, exist_ok=True)
+DAY = dict(REC['mapRoom']); DAY['subtitle'] = REC['subtitle']; DAY.setdefault('tonight', 'The line tonight. It moves again tomorrow.')
+NAME, N, OF = REC.get('seriesName', 'The Bulge'), REC.get('day', 1), REC.get('days', 30)
+PHOTO = sys.argv[3] if len(sys.argv) > 3 else None
 STAMP = os.environ.get('MAPROOM_STAMP', '')
 CHROME = os.environ.get('CHROME', 'google-chrome')
+POS = dict(ty=TPL['tab_top'], lift=TPL['strip_lift'])
 
 def shoot(out, **q):
     if STAMP: q['stamp'] = STAMP
+    q.update(POS)
     url = 'file://' + os.path.join(HERE, 'ov.html') + '?' + urllib.parse.urlencode(q)
     with tempfile.TemporaryDirectory() as prof:
         subprocess.run([CHROME, '--headless=new', '--no-sandbox', '--disable-gpu', '--hide-scrollbars', f'--user-data-dir={prof}',
@@ -26,8 +31,9 @@ shoot(os.path.join(OV, 'tab.png'), **tab)
 shoot(os.path.join(OV, 'stripA.png'), tab='0', sub=DAY['subtitle'], bl=DAY['asOf'])
 shoot(os.path.join(OV, 'stripB.png'), tab='0', sub=DAY['tonight'], bl=DAY['asOf'])
 shoot(os.path.join(OV, 'openov.png'), sub=DAY['subtitle'], bl=DAY['asOf'], **tab)
-if PHOTO:
-    shoot(os.path.join(OV, 'openbg.png'), tab='0', photo='file://' + os.path.abspath(PHOTO))
+if PHOTO:   # the day's archival photo, in grayscale like the Day by Day still
+    g = os.path.join(OV, 'photo-gray.png'); cv2.imwrite(g, cv2.cvtColor(cv2.imread(PHOTO), cv2.COLOR_BGR2GRAY))
+    shoot(os.path.join(OV, 'openbg.png'), tab='0', photo='file://' + os.path.abspath(g))
 else:  # placeholder: plain dark ground until the day's real still exists
     cv2.imwrite(os.path.join(OV, 'openbg.png'), np.full((1920, 1080, 4), (27, 27, 27, 255), np.uint8))
 bg = cv2.imread(os.path.join(OV, 'openbg.png'), cv2.IMREAD_UNCHANGED).astype(np.float32)

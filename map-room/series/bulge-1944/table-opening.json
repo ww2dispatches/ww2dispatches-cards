@@ -1,0 +1,17 @@
+{
+ "_note": "The opening days, 16 to 20 Dec: Monschau and Elsenborn to Echternach, Bastogne to the Our. Proposed 20 Nov 2026; days with \"view\": \"opening\". Fitted 20 Nov 2026 with engine/fit_view.py so every place in the box holds a whole block inside the template's block zone (clear of the tab, the strip and the apps' buttons); a block covers about 24 km. Provisional until the traced map is approved.",
+ "LON0": 5.796,
+ "LAT0": 50.126,
+ "KX": 4.075,
+ "KY": 6.338,
+ "box": {
+  "lon": [
+   5.65,
+   6.55
+  ],
+  "lat": [
+   49.75,
+   50.58
+  ]
+ }
+}

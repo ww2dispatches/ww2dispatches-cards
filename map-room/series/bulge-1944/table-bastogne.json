@@ -1,4 +1,17 @@
 {
- "_note": "The Bastogne close view (provisional, 20 Nov 2026, Brian: a closer view as the story condenses on Bastogne). About 22 km across and 60 km north to south through the town; a block covers about 5 km, so the 101st inside the ring, five or six blocks around it, and the 4th Armored's approach from the south all fit. Used by days with \"view\": \"bastogne\". Traced in step 4 from the same sources as the Campaigns bastogne_perimeter table.",
- "LON0": 5.636, "LAT0": 50.04, "KX": 17.875, "KY": 27.8
+ "_note": "The Bastogne close view (Brian, 20 Nov 2026): the pocket, the ring around it and the 4th Armored's approach from the south. Days with \"view\": \"bastogne\". Fitted 20 Nov 2026 with engine/fit_view.py so every place in the box holds a whole block inside the template's block zone (clear of the tab, the strip and the apps' buttons); a block covers about 7 km. Provisional until the traced map is approved.",
+ "LON0": 5.632,
+ "LAT0": 49.999,
+ "KX": 14.128,
+ "KY": 21.973,
+ "box": {
+  "lon": [
+   5.6,
+   5.84
+  ],
+  "lat": [
+   49.86,
+   50.14
+  ]
+ }
 }

@@ -1,23 +1,22 @@
-"""The Map Room: film quality table.
-Modes: plate, platepad, block <id>, mask <id>, rake, rakemask, pin, pinmask, cam, campad.
-Sprites (block, mask, rake, pin) always render on the padded frame: PADX and PADY pixels of room past every
-edge, same lens and pixel scale, so a block near the edge stays whole. platepad is the matching padded plate,
-used by comp.py as the shadow base for every sprite. Env: MAPROOM_WORK (work folder), MAPROOM_DAY (day record)."""
+"""The Map Room: film quality table, rendered piece by piece (the compositor slides them).
+Modes: plate, platepad, block, mask, rake, rakemask, cam, campad.
+  python3 scene.py <mode> '<json>' <RX> <RY> <samples> <out.png>
+  block/mask json: {"face": "face.png", "x": table x, "y": table y, "rot": degrees}
+  rake/rakemask json: {"angle": degrees the pole points (0 = east, 90 = north), "x": head x, "y": head y}
+Env: MAPROOM_MAP, the view's map image (plate modes and every sprite, which carry the table for their shadows).
+Sprites render on the padded frame (room past every edge, same pixel scale); the rake gets more room for its long pole.
+platepad is the shadow base for every sprite."""
 import bpy, bmesh, math, sys, json, os
 from mathutils import Vector, Matrix
-D = os.environ.get('MAPROOM_WORK', '/home/claude/mr')
 a = sys.argv[1:]
-MODE = a[0]; ARG = a[1] if len(a) > 1 else ''
+MODE = a[0]; ARG = json.loads(a[1]) if len(a) > 1 and a[1].startswith('{') else {}
 RX, RY = int(a[2]) if len(a) > 2 else 1080, int(a[3]) if len(a) > 3 else 1920
 SMP = int(a[4]) if len(a) > 4 else 128
-OUT = a[5] if len(a) > 5 else f'{D}/out.png'
-DAY = json.load(open(os.environ.get('MAPROOM_DAY', f'{D}/day01.json')))
-PADX, PADY = 270, 240  # room past the frame for sprites; comp.py uses the same numbers
-RAKE_GAP = 0.12        # gap between rake head and block face (was 0.07)
-PADDED = MODE in ('platepad', 'block', 'mask', 'rake', 'rakemask', 'pin', 'pinmask', 'campad')
-LON0, LAT0, KX, KY = 5.95, 50.18, 7.15, 11.12
-def XY(ll): return ((ll[0] - LON0) * KX, (ll[1] - LAT0) * KY)
-
+OUT = a[5] if len(a) > 5 else 'out.png'
+MAP = os.environ.get('MAPROOM_MAP', 'map.png')
+PADX, PADY = (1000, 1000) if MODE in ('rake', 'rakemask') else (270, 240)   # comp reads PADX/PADY from the render size
+PADDED = MODE in ('platepad', 'block', 'mask', 'rake', 'rakemask', 'campad')
+if MODE == 'campad': PADX, PADY = 270, 240
 bpy.ops.wm.read_factory_settings(use_empty=True)
 sc = bpy.context.scene; col = sc.collection
 def link(o): col.objects.link(o); return o
@@ -80,7 +79,7 @@ def face_plane(name, w, h, img):
 
 # ---------- table ----------
 TW, TH = 14.0, 14.4
-mp = face_plane('map', TW, TH, f'{D}/map.png')
+mp = face_plane('map', TW, TH, MAP)
 mm = mp.data.materials[0]; p = mm.node_tree.nodes['Principled BSDF']; p.inputs['Roughness'].default_value = 0.3; p.inputs['Coat Weight'].default_value = 1.0; p.inputs['Coat Roughness'].default_value = 0.04
 TABLE = [mp]
 for nm, sx, sy, loc in [('rimN', TW + 1.2, 0.6, (0, TH / 2 + 0.3, -0.25)), ('rimS', TW + 1.2, 0.6, (0, -TH / 2 - 0.3, -0.25)),
@@ -89,35 +88,24 @@ for nm, sx, sy, loc in [('rimN', TW + 1.2, 0.6, (0, TH / 2 + 0.3, -0.25)), ('rim
 fl = box('floor', 80, 80, 0.1, (0, 0, -3.5)); mat(fl, 'floor'); TABLE.append(fl)
 
 # ---------- pieces ----------
-PIECES = {p['id']: p for p in DAY['pieces']}
-ROT = {'6pz': 3, '5pz': -2, '7a': 2, '99': -3, '106': 2, '28': -2, '4': 3, '9af': -4}
 BS = 1.35
-def make_block(pid, loc):
+def make_block(face, loc, rot):
     b = box('blk', BS, BS, 0.36, (0, 0, 0)); bevel(b, 0.045, 4); mat(b, 'walnut')
-    f = face_plane('bf', BS * 0.89, BS * 0.89, f'{D}/face-{pid}.png'); f.location = (0, 0, 0.3608)
-    g = group('blk_' + pid, (loc[0], loc[1], 0), [b, f], math.radians(ROT.get(pid, 0))); return g, [b, f]
-def make_rake(head_xy):
-    # head sits just east of the block it pushes; pole runs east and up toward an unseen hand
-    L = 7.0; ang = math.radians(9)
-    pole = cyl('pole', 0.035, L, 24); pole.rotation_euler = (0, math.radians(90) - ang, 0); pole.location = (0.05, 0, 0.11); mat(pole, 'maple')
-    fer = cyl('fer', 0.043, 0.18, 24); fer.rotation_euler = (0, math.radians(90) - ang, 0); fer.location = (0.03, 0, 0.108); mat(fer, 'brass')
+    f = face_plane('bf', BS * 0.89, BS * 0.89, face); f.location = (0, 0, 0.3608)
+    g = group('blk', (loc[0], loc[1], 0), [b, f], math.radians(rot)); return g, [b, f]
+def make_rake(head_xy, angle):
+    # the head sits against the block; the pole runs away at `angle` and up toward an unseen hand
+    L = 14.0; up = math.radians(9)
+    pole = cyl('pole', 0.035, L, 24); pole.rotation_euler = (0, math.radians(90) - up, 0); pole.location = (0.05, 0, 0.11); mat(pole, 'maple')
+    fer = cyl('fer', 0.043, 0.18, 24); fer.rotation_euler = (0, math.radians(90) - up, 0); fer.location = (0.03, 0, 0.108); mat(fer, 'brass')
     head = box('head', 0.1, 1.2, 0.24, (0, 0, 0.0)); bevel(head, 0.02, 3); mat(head, 'walnut')
-    g = group('rake', (head_xy[0], head_xy[1], 0.004), [pole, fer, head]); return g, [pole, fer, head]
-def make_pin(xy):
-    s = lathe('pin', [(0.006, 0.0), (0.006, 0.14), (0.0005, 0.141)], 16); mat(s, 'brass')
-    h = lathe('pinh', [(0.0005, 0.12), (0.035, 0.13), (0.045, 0.155), (0.035, 0.18), (0.0005, 0.19)], 24); mat(h, 'brass')
-    return group('pin', (xy[0], xy[1], 0), [s, h]), [s, h]
+    g = group('rake', (head_xy[0], head_xy[1], 0.004), [pole, fer, head], math.radians(angle)); return g, [pole, fer, head]
 
 subject = []
-if MODE == 'all':
-    for pid, pc in PIECES.items(): make_block(pid, XY(pc['from']))
-    x, y = XY(PIECES['6pz']['from']); make_rake((x + BS / 2 + RAKE_GAP, y))
 if MODE in ('block', 'mask'):
-    g, subject = make_block(ARG, XY(PIECES[ARG]['from']))
+    g, subject = make_block(ARG['face'], (ARG['x'], ARG['y']), ARG.get('rot', 0))
 elif MODE in ('rake', 'rakemask'):
-    x, y = XY(PIECES['5pz']['to']); g, subject = make_rake((x + BS / 2 + RAKE_GAP, y))
-elif MODE in ('pin', 'pinmask'):
-    g, subject = make_pin(XY([6.30, 50.30]))
+    g, subject = make_rake((ARG['x'], ARG['y']), ARG['angle'])
 if MODE.endswith('mask'):
     for o in TABLE: o.is_holdout = True
     sc.render.film_transparent = True

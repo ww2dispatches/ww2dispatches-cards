@@ -1,6 +1,8 @@
-"""The Map Room sound kit, generated from code (original, owned by Brian Acquesta). Builds the three Day 1 test mixes."""
+"""The Map Room sound kit, generated from code (original, owned by Brian Acquesta).
+Sound C: table sounds, the war room bed, and the quiet in house theme. build(events, T, out) makes one day's mix from the
+clip's move events (day.Day.events); run directly to rebuild the three Day 1 test mixes of 20 Nov 2026."""
 import numpy as np, scipy.signal as ss, scipy.io.wavfile as wf
-SR = 48000; T = 17.5; N = int(SR * T)
+SR = 48000; T = 17.5; N = int(SR * T)   # T and N are only the Day 1 test defaults
 rng = np.random.default_rng(16)
 def bp(x, lo, hi, o=4): return ss.sosfilt(ss.butter(o, [lo, hi], 'bandpass', fs=SR, output='sos'), x)
 def lp(x, f, o=4): return ss.sosfilt(ss.butter(o, f, 'lowpass', fs=SR, output='sos'), x)
@@ -83,19 +85,19 @@ def bow(f, dur, g):
 def note(name):
     names = {'C': -9, 'D': -7, 'E': -5, 'F': -4, 'G': -2, 'A': 0, 'Bb': 1}
     return 440 * 2 ** ((names[name[:-1]] + 12 * (int(name[-1]) - 4)) / 12)
-def theme():
-    out = np.zeros(N)
+def theme(T=T):
+    N = int(SR * T); out = np.zeros(N); lead = max(0.0, T - 17.5)   # the theme ends on the open chord at the clip's end
     # four slow bars at 60 bpm from 1.5 s: Dm, Bb, Gm, A (left open for tomorrow)
     bars = [(['D2', 'A2'], ['F3', 'A3', 'D4']), (['Bb1', 'F2'], ['D3', 'F3', 'Bb3']), (['G1', 'D2'], ['Bb2', 'D3', 'G3']), (['A1', 'E2'], ['C3', 'E3', 'A3'])]
     tune = [['D4', None, 'F4', 'E4'], ['D4', None, None, 'C4'], ['D4', None, 'Bb3', None], ['A3', None, None, None]]
     for b, ((lo1, lo2), ch) in enumerate(bars):
-        t0 = 1.5 + 3.6 * b
+        t0 = lead + 1.5 + 3.6 * b
         hold = 5.6 if b == 3 else 4.1
         put(out, bow(note(lo1), hold, 0.05), t0); put(out, bow(note(lo2), hold, 0.03), t0)
         for i, nm in enumerate(ch): put(out, piano(note(nm), 3.2, 0.05), t0 + 0.06 * i)
         for i, nm in enumerate(tune[b]):
             if nm: put(out, piano(note(nm), 2.2, 0.09), t0 + 0.85 * i)
-    put(out, piano(note('A2'), 2.5, 0.08), 15.0); put(out, piano(note('E3'), 2.4, 0.04), 15.06)
+    put(out, piano(note('A2'), 2.5, 0.08), lead + 15.0); put(out, piano(note('E3'), 2.4, 0.04), lead + 15.06)
     return room(out, 0.35)
 # ---------- clip timing (matches comp.py) ----------
 ENTER, MOVE, HOLD, EXIT = 0.8, 1.9, 0.25, 0.75
@@ -109,25 +111,41 @@ def pencil(dur):
 def wipe(dur):
     n = int(dur * SR); x = bp(rng.standard_normal(n), 250, 1400, 2)
     return x * np.sin(np.pi * np.arange(n) / n) * 0.10
-def table_track():
-    out = np.zeros(N)
-    for t0 in PUSH:
-        put(out, slide(ENTER, 0.6), t0, 0.35)              # rake pole slides in
-        put(out, tap(), t0 + ENTER - 0.01)                 # rake meets the block
-        put(out, push_slide(MOVE), t0 + ENTER)              # block pushed across the glass, slows to a stop
-        put(out, slide(EXIT, 0.6), t0 + ENTER + MOVE + HOLD, 0.3)  # rake withdraws
-    put(out, wipe(0.5), 13.0); put(out, pencil(1.5), 13.5)
+def table_track(events=None, T=T):
+    """table sounds from the clip's events (time, kind, gain or duration). Knock rule (Brian, 20 Nov 2026): a knock only
+    when something touches something: the rake meeting a block, or a block pushed into another block."""
+    if events is None:   # the Day 1 test timing
+        events = []
+        for t0 in PUSH:
+            events += [(t0, 'rake_in', 1), (t0 + ENTER - 0.01, 'tap', 1), (t0 + ENTER, 'push', MOVE), (t0 + ENTER + MOVE + HOLD, 'rake_out', 1)]
+        events += [(13.0, 'wipe', 0.5), (13.5, 'pencil', 1.5)]
+    out = np.zeros(int(SR * T))
+    for t0, kind, g in events:
+        if kind == 'rake_in': put(out, slide(ENTER, 0.6), t0, 0.35)
+        elif kind == 'rake_out': put(out, slide(EXIT, 0.6), t0, 0.3)
+        elif kind == 'tap': put(out, tap(), t0)
+        elif kind == 'push': put(out, push_slide(g), t0)
+        elif kind == 'knock': put(out, knock(0.6 * g), t0)
+        elif kind == 'glide': put(out, slide(g, 0.8), t0, 0.5)
+        elif kind == 'pencil': put(out, pencil(g), t0)
+        elif kind == 'wipe': put(out, wipe(g), t0)
     return room(out, 0.15)
-def bed():
+def bed(T=T):
     return teletype(T) * 0.5 + clock(T) * 0.55 + static(T) + hum(T)
 def master(x, name):
     x = hp(x, 70); x = np.tanh(x * 1.2) / 1.2
     pk = np.max(np.abs(x)); x = x / pk * 10 ** (-1.5 / 20)
     x *= env(len(x), 0.01, 0.8)
     wf.write(name, SR, (x * 32767).astype(np.int16)); print(name)
-tt, bd, th = table_track(), bed(), theme()
-master(tt + hum(T) * 0.6, 'mix-a-table.wav')
-master(tt + bd * 0.55, 'mix-b-table-warroom.wav')
-master(tt + bd * 0.55 + th * 1.0, 'mix-c-table-warroom-theme.wav')
-for nm, x in [('stem-table.wav', tt), ('stem-warroom.wav', bd), ('stem-theme.wav', th)]:
-    wf.write(nm, SR, (x / max(1e-9, np.max(np.abs(x))) * 0.89 * 32767).astype(np.int16))
+def build(events, T, out, version='C'):
+    """one day's mix: A table only, B with the war room bed, C with the theme as well (the decided version)"""
+    tt = table_track(events, T); x = tt + hum(T) * 0.6 if version == 'A' else tt + bed(T) * 0.55
+    if version == 'C': x = x + theme(T)
+    master(x, out)
+if __name__ == '__main__':
+    tt, bd, th = table_track(), bed(), theme()
+    master(tt + hum(T) * 0.6, 'mix-a-table.wav')
+    master(tt + bd * 0.55, 'mix-b-table-warroom.wav')
+    master(tt + bd * 0.55 + th * 1.0, 'mix-c-table-warroom-theme.wav')
+    for nm, x in [('stem-table.wav', tt), ('stem-warroom.wav', bd), ('stem-theme.wav', th)]:
+        wf.write(nm, SR, (x / max(1e-9, np.max(np.abs(x))) * 0.89 * 32767).astype(np.int16))

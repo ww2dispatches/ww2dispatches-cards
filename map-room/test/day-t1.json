@@ -1,0 +1,192 @@
+{
+ "_note": "TEST ONLY: positions invented to exercise the template; not history, never posted.",
+ "campaign": "bulge-1944",
+ "seriesName": "The Bulge",
+ "day": 1,
+ "days": 30,
+ "date": "1944-12-16",
+ "subtitle": "Three German armies hit the Ardennes",
+ "mapRoom": {
+  "view": "opening",
+  "asOf": "2400 hrs, 16 Dec 1944",
+  "lineAM": [
+   [
+    6.3,
+    50.6
+   ],
+   [
+    6.3,
+    50.42
+   ],
+   [
+    6.42,
+    50.28
+   ],
+   [
+    6.2,
+    50.1
+   ],
+   [
+    6.22,
+    49.92
+   ],
+   [
+    6.48,
+    49.76
+   ]
+  ],
+  "linePM": [
+   [
+    6.3,
+    50.6
+   ],
+   [
+    6.25,
+    50.42
+   ],
+   [
+    6.3,
+    50.28
+   ],
+   [
+    6.05,
+    50.1
+   ],
+   [
+    6.12,
+    49.92
+   ],
+   [
+    6.46,
+    49.76
+   ]
+  ],
+  "lineSources": [
+   "<test source 1>",
+   "<test source 2>"
+  ],
+  "pieces": [
+   {
+    "id": "99",
+    "nation": "us",
+    "type": "infantry",
+    "label": "99th Infantry",
+    "name": "99th Infantry Division",
+    "move": "hold",
+    "from": [
+     5.85,
+     50.57
+    ]
+   },
+   {
+    "id": "6pz",
+    "nation": "germany",
+    "type": "armor",
+    "label": "6th Panzer Army",
+    "move": "hold",
+    "from": [
+     6.52,
+     50.42
+    ]
+   },
+   {
+    "id": "106",
+    "nation": "us",
+    "type": "infantry",
+    "label": "106th Infantry",
+    "name": "106th Infantry Division",
+    "move": "hold",
+    "from": [
+     6.12,
+     50.33
+    ]
+   },
+   {
+    "id": "5pz",
+    "nation": "germany",
+    "type": "armor",
+    "label": "5th Panzer Army",
+    "move": "advance",
+    "from": [
+     6.55,
+     50.12
+    ],
+    "to": [
+     6.35,
+     50.1
+    ],
+    "order": 1,
+    "sources": [
+     "<test source 1>",
+     "<test source 2>"
+    ]
+   },
+   {
+    "id": "28",
+    "nation": "us",
+    "type": "infantry",
+    "label": "28th Infantry",
+    "name": "28th Infantry Division",
+    "move": "fall_back",
+    "from": [
+     6.06,
+     50.06
+    ],
+    "to": [
+     6.02,
+     49.86
+    ],
+    "order": 2,
+    "sources": [
+     "<test source 1>",
+     "<test source 2>"
+    ]
+   },
+   {
+    "id": "101",
+    "nation": "us",
+    "type": "airborne",
+    "label": "101st Airborne",
+    "name": "101st Airborne Division",
+    "move": "arrive",
+    "enters": "west",
+    "to": [
+     5.68,
+     49.98
+    ],
+    "order": 3,
+    "sources": [
+     "<test source 1>",
+     "<test source 2>"
+    ]
+   },
+   {
+    "id": "9af",
+    "nation": "us",
+    "type": "fighter",
+    "label": "Ninth Air Force",
+    "move": "grounded",
+    "from": [
+     5.72,
+     50.34
+    ],
+    "order": 4,
+    "sources": [
+     "<test source 1>",
+     "<test source 2>"
+    ]
+   },
+   {
+    "id": "7a",
+    "nation": "germany",
+    "type": "infantry",
+    "label": "7th Army",
+    "move": "hold",
+    "from": [
+     6.5,
+     49.85
+    ]
+   }
+  ]
+ }
+}
