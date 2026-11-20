@@ -1,0 +1,425 @@
+{
+"source": "town positions to about 1 km; span = widest view (degrees of longitude) the town is named in",
+"towns": [
+{
+"name": "Liege",
+"lon": 5.57,
+"lat": 50.633,
+"span": 6.0
+},
+{
+"name": "Namur",
+"lon": 4.867,
+"lat": 50.466,
+"span": 6.0
+},
+{
+"name": "Bastogne",
+"lon": 5.716,
+"lat": 50.0,
+"span": 6.0
+},
+{
+"name": "St. Vith",
+"lon": 6.125,
+"lat": 50.281,
+"span": 6.0
+},
+{
+"name": "Luxembourg",
+"lon": 6.131,
+"lat": 49.611,
+"span": 6.0
+},
+{
+"name": "Arlon",
+"lon": 5.817,
+"lat": 49.683,
+"span": 6.0
+},
+{
+"name": "Aachen",
+"lon": 6.084,
+"lat": 50.776,
+"span": 6.0
+},
+{
+"name": "Dinant",
+"lon": 4.912,
+"lat": 50.261,
+"span": 6.0
+},
+{
+"name": "Malmedy",
+"lon": 6.028,
+"lat": 50.426,
+"span": 6.0
+},
+{
+"name": "Sedan",
+"lon": 4.944,
+"lat": 49.702,
+"span": 6.0
+},
+{
+"name": "Trier",
+"lon": 6.641,
+"lat": 49.75,
+"span": 6.0
+},
+{
+"name": "Cologne",
+"lon": 6.958,
+"lat": 50.938,
+"span": 6.0
+},
+{
+"name": "Brussels",
+"lon": 4.352,
+"lat": 50.847,
+"span": 6.0
+},
+{
+"name": "Antwerp",
+"lon": 4.402,
+"lat": 51.219,
+"span": 6.0
+},
+{
+"name": "Bonn",
+"lon": 7.098,
+"lat": 50.735,
+"span": 6.0
+},
+{
+"name": "Koblenz",
+"lon": 7.589,
+"lat": 50.356,
+"span": 6.0
+},
+{
+"name": "Maastricht",
+"lon": 5.689,
+"lat": 50.851,
+"span": 6.0
+},
+{
+"name": "Metz",
+"lon": 6.176,
+"lat": 49.12,
+"span": 6.0
+},
+{
+"name": "Verdun",
+"lon": 5.384,
+"lat": 49.16,
+"span": 6.0
+},
+{
+"name": "Charleville",
+"lon": 4.72,
+"lat": 49.772,
+"span": 6.0
+},
+{
+"name": "Charleroi",
+"lon": 4.444,
+"lat": 50.411,
+"span": 6.0
+},
+{
+"name": "Marche",
+"lon": 5.344,
+"lat": 50.227,
+"span": 6.0
+},
+{
+"name": "Houffalize",
+"lon": 5.79,
+"lat": 50.133,
+"span": 6.0
+},
+{
+"name": "St. Hubert",
+"lon": 5.374,
+"lat": 50.027,
+"span": 3.5
+},
+{
+"name": "Clervaux",
+"lon": 6.03,
+"lat": 50.055,
+"span": 3.5
+},
+{
+"name": "Wiltz",
+"lon": 5.932,
+"lat": 49.966,
+"span": 3.5
+},
+{
+"name": "Diekirch",
+"lon": 6.159,
+"lat": 49.868,
+"span": 3.5
+},
+{
+"name": "Echternach",
+"lon": 6.421,
+"lat": 49.812,
+"span": 3.5
+},
+{
+"name": "Stavelot",
+"lon": 5.931,
+"lat": 50.394,
+"span": 3.5
+},
+{
+"name": "Spa",
+"lon": 5.866,
+"lat": 50.492,
+"span": 3.5
+},
+{
+"name": "Elsenborn",
+"lon": 6.218,
+"lat": 50.46,
+"span": 3.5
+},
+{
+"name": "Monschau",
+"lon": 6.243,
+"lat": 50.555,
+"span": 3.5
+},
+{
+"name": "Vielsalm",
+"lon": 5.916,
+"lat": 50.284,
+"span": 3.5
+},
+{
+"name": "Manhay",
+"lon": 5.678,
+"lat": 50.293,
+"span": 3.5
+},
+{
+"name": "Hotton",
+"lon": 5.446,
+"lat": 50.267,
+"span": 3.5
+},
+{
+"name": "La Roche",
+"lon": 5.576,
+"lat": 50.183,
+"span": 3.5
+},
+{
+"name": "Celles",
+"lon": 5.01,
+"lat": 50.231,
+"span": 3.5
+},
+{
+"name": "Neufchateau",
+"lon": 5.435,
+"lat": 49.842,
+"span": 3.5
+},
+{
+"name": "Prum",
+"lon": 6.421,
+"lat": 50.208,
+"span": 3.5
+},
+{
+"name": "Ettelbruck",
+"lon": 6.104,
+"lat": 49.847,
+"span": 3.5
+},
+{
+"name": "Huy",
+"lon": 5.24,
+"lat": 50.519,
+"span": 3.5
+},
+{
+"name": "Rochefort",
+"lon": 5.222,
+"lat": 50.162,
+"span": 3.5
+},
+{
+"name": "Martelange",
+"lon": 5.739,
+"lat": 49.832,
+"span": 3.5
+},
+{
+"name": "Trois Ponts",
+"lon": 5.871,
+"lat": 50.371,
+"span": 3.5
+},
+{
+"name": "Bitburg",
+"lon": 6.527,
+"lat": 49.967,
+"span": 3.5
+},
+{
+"name": "Libramont",
+"lon": 5.38,
+"lat": 49.92,
+"span": 3.5
+},
+{
+"name": "Verviers",
+"lon": 5.862,
+"lat": 50.589,
+"span": 3.5
+},
+{
+"name": "Eupen",
+"lon": 6.036,
+"lat": 50.629,
+"span": 3.5
+},
+{
+"name": "Stoumont",
+"lon": 5.807,
+"lat": 50.407,
+"span": 3.5
+},
+{
+"name": "Losheim",
+"lon": 6.268,
+"lat": 50.374,
+"span": 3.5
+},
+{
+"name": "Werbomont",
+"lon": 5.687,
+"lat": 50.382,
+"span": 3.5
+},
+{
+"name": "Foy-Notre-Dame",
+"lon": 5.0,
+"lat": 50.255,
+"span": 3.5
+},
+{
+"name": "Noville",
+"lon": 5.763,
+"lat": 50.061,
+"span": 1.0
+},
+{
+"name": "Longvilly",
+"lon": 5.83,
+"lat": 50.03,
+"span": 1.0
+},
+{
+"name": "Sibret",
+"lon": 5.64,
+"lat": 49.97,
+"span": 1.0
+},
+{
+"name": "Champs",
+"lon": 5.668,
+"lat": 50.032,
+"span": 1.0
+},
+{
+"name": "Mande St. Etienne",
+"lon": 5.659,
+"lat": 50.025,
+"span": 1.0
+},
+{
+"name": "Assenois",
+"lon": 5.7,
+"lat": 49.95,
+"span": 1.0
+},
+{
+"name": "Foy",
+"lon": 5.728,
+"lat": 50.04,
+"span": 1.0
+},
+{
+"name": "Marvie",
+"lon": 5.75,
+"lat": 49.982,
+"span": 1.0
+},
+{
+"name": "Senonchamps",
+"lon": 5.667,
+"lat": 49.993,
+"span": 1.0
+},
+{
+"name": "Bizory",
+"lon": 5.757,
+"lat": 50.018,
+"span": 1.0
+},
+{
+"name": "Mageret",
+"lon": 5.79,
+"lat": 50.012,
+"span": 1.0
+},
+{
+"name": "Wardin",
+"lon": 5.786,
+"lat": 49.983,
+"span": 1.0
+},
+{
+"name": "Hemroulle",
+"lon": 5.683,
+"lat": 50.01,
+"span": 1.0
+},
+{
+"name": "Flamierge",
+"lon": 5.611,
+"lat": 50.03,
+"span": 1.0
+},
+{
+"name": "Tillet",
+"lon": 5.53,
+"lat": 50.01,
+"span": 1.0
+},
+{
+"name": "Chenogne",
+"lon": 5.61,
+"lat": 49.981,
+"span": 1.0
+},
+{
+"name": "Neffe",
+"lon": 5.75,
+"lat": 50.0,
+"span": 1.0
+},
+{
+"name": "Recogne",
+"lon": 5.733,
+"lat": 50.027,
+"span": 1.0
+}
+]
+}

@@ -1,0 +1,409 @@
+{
+ "_note": "TEST ONLY: still for judging the traced map, block size and views. Positions read from the 25 Dec 1944 situation map.",
+ "campaign": "bulge-1944",
+ "seriesName": "The Bulge",
+ "day": 10,
+ "days": 30,
+ "date": "1944-12-25",
+ "subtitle": "Christmas on the map table",
+ "mapRoom": {
+  "asOf": "1200 hrs, 25 Dec 1944",
+  "lineAM": [
+   [
+    6.27,
+    50.56
+   ],
+   [
+    6.15,
+    50.47
+   ],
+   [
+    6.03,
+    50.43
+   ],
+   [
+    5.93,
+    50.4
+   ],
+   [
+    5.87,
+    50.36
+   ],
+   [
+    5.78,
+    50.32
+   ],
+   [
+    5.68,
+    50.29
+   ],
+   [
+    5.55,
+    50.27
+   ],
+   [
+    5.45,
+    50.26
+   ],
+   [
+    5.33,
+    50.24
+   ],
+   [
+    5.15,
+    50.23
+   ],
+   [
+    5.02,
+    50.23
+   ],
+   [
+    5.08,
+    50.18
+   ],
+   [
+    5.22,
+    50.13
+   ],
+   [
+    5.3,
+    50.05
+   ],
+   [
+    5.32,
+    49.98
+   ],
+   [
+    5.45,
+    49.9
+   ],
+   [
+    5.6,
+    49.87
+   ],
+   [
+    5.74,
+    49.86
+   ],
+   [
+    5.92,
+    49.88
+   ],
+   [
+    6.1,
+    49.86
+   ],
+   [
+    6.28,
+    49.83
+   ],
+   [
+    6.42,
+    49.79
+   ],
+   [
+    6.52,
+    49.73
+   ]
+  ],
+  "linePM": [
+   [
+    6.27,
+    50.56
+   ],
+   [
+    6.15,
+    50.47
+   ],
+   [
+    6.03,
+    50.43
+   ],
+   [
+    5.93,
+    50.4
+   ],
+   [
+    5.87,
+    50.36
+   ],
+   [
+    5.78,
+    50.32
+   ],
+   [
+    5.68,
+    50.29
+   ],
+   [
+    5.55,
+    50.27
+   ],
+   [
+    5.45,
+    50.26
+   ],
+   [
+    5.33,
+    50.24
+   ],
+   [
+    5.15,
+    50.23
+   ],
+   [
+    5.02,
+    50.23
+   ],
+   [
+    5.08,
+    50.18
+   ],
+   [
+    5.22,
+    50.13
+   ],
+   [
+    5.3,
+    50.05
+   ],
+   [
+    5.32,
+    49.98
+   ],
+   [
+    5.45,
+    49.9
+   ],
+   [
+    5.6,
+    49.87
+   ],
+   [
+    5.74,
+    49.86
+   ],
+   [
+    5.92,
+    49.88
+   ],
+   [
+    6.1,
+    49.86
+   ],
+   [
+    6.28,
+    49.83
+   ],
+   [
+    6.42,
+    49.79
+   ],
+   [
+    6.52,
+    49.73
+   ]
+  ],
+  "lineSources": [
+   "HQ Twelfth Army Group situation map, 1200 hrs 25 Dec 1944 (LOC 2004630297)",
+   "HQ Twelfth Army Group situation map, 1200 hrs 25 Dec 1944 (LOC 2004630297)"
+  ],
+  "pieces": [
+   {
+    "id": "101",
+    "nation": "us",
+    "type": "airborne",
+    "label": "101st Airborne",
+    "move": "hold",
+    "from": [
+     5.72,
+     50.0
+    ],
+    "sources": [
+     "HQ Twelfth Army Group situation map, 1200 hrs 25 Dec 1944 (LOC 2004630297)"
+    ]
+   },
+   {
+    "id": "4ad",
+    "nation": "us",
+    "type": "armor",
+    "label": "4th Armored",
+    "move": "hold",
+    "from": [
+     5.71,
+     49.84
+    ],
+    "sources": [
+     "HQ Twelfth Army Group situation map, 1200 hrs 25 Dec 1944 (LOC 2004630297)"
+    ]
+   },
+   {
+    "id": "116",
+    "nation": "germany",
+    "type": "armor",
+    "label": "116th Panzer",
+    "move": "hold",
+    "from": [
+     5.46,
+     50.21
+    ],
+    "sources": [
+     "HQ Twelfth Army Group situation map, 1200 hrs 25 Dec 1944 (LOC 2004630297)"
+    ]
+   },
+   {
+    "id": "84",
+    "nation": "us",
+    "type": "infantry",
+    "label": "84th Infantry",
+    "move": "hold",
+    "from": [
+     5.42,
+     50.31
+    ],
+    "sources": [
+     "HQ Twelfth Army Group situation map, 1200 hrs 25 Dec 1944 (LOC 2004630297)"
+    ]
+   },
+   {
+    "id": "6pz",
+    "nation": "germany",
+    "type": "armor",
+    "label": "6th Panzer Army",
+    "move": "hold",
+    "from": [
+     5.75,
+     50.24
+    ],
+    "sources": [
+     "HQ Twelfth Army Group situation map, 1200 hrs 25 Dec 1944 (LOC 2004630297)"
+    ]
+   },
+   {
+    "id": "82",
+    "nation": "us",
+    "type": "airborne",
+    "label": "82nd Airborne",
+    "move": "hold",
+    "from": [
+     5.85,
+     50.4
+    ],
+    "sources": [
+     "HQ Twelfth Army Group situation map, 1200 hrs 25 Dec 1944 (LOC 2004630297)"
+    ]
+   }
+  ],
+  "view": "salient",
+  "pocketsAM": [
+   {
+    "side": "allied",
+    "ring": [
+     [
+      5.786,
+      50.0
+     ],
+     [
+      5.777,
+      50.022
+     ],
+     [
+      5.751,
+      50.039
+     ],
+     [
+      5.716,
+      50.045
+     ],
+     [
+      5.681,
+      50.039
+     ],
+     [
+      5.655,
+      50.023
+     ],
+     [
+      5.646,
+      50.0
+     ],
+     [
+      5.655,
+      49.978
+     ],
+     [
+      5.681,
+      49.961
+     ],
+     [
+      5.716,
+      49.955
+     ],
+     [
+      5.751,
+      49.961
+     ],
+     [
+      5.777,
+      49.977
+     ]
+    ]
+   }
+  ],
+  "pocketsPM": [
+   {
+    "side": "allied",
+    "ring": [
+     [
+      5.786,
+      50.0
+     ],
+     [
+      5.777,
+      50.022
+     ],
+     [
+      5.751,
+      50.039
+     ],
+     [
+      5.716,
+      50.045
+     ],
+     [
+      5.681,
+      50.039
+     ],
+     [
+      5.655,
+      50.023
+     ],
+     [
+      5.646,
+      50.0
+     ],
+     [
+      5.655,
+      49.978
+     ],
+     [
+      5.681,
+      49.961
+     ],
+     [
+      5.716,
+      49.955
+     ],
+     [
+      5.751,
+      49.961
+     ],
+     [
+      5.777,
+      49.977
+     ]
+    ]
+   }
+  ]
+ }
+}

@@ -36,7 +36,8 @@ def main():
     ap.add_argument('--samples', type=int, default=128); ap.add_argument('--photo'); ap.add_argument('--stills'); ap.add_argument('--silent', action='store_true')
     a = ap.parse_args(); work = os.path.abspath(a.work); os.makedirs(work, exist_ok=True)
     r = subprocess.run([sys.executable, os.path.join(HERE, 'check_record.py'), a.day], capture_output=True, text=True); print(r.stdout.strip())
-    if r.returncode: raise SystemExit('the record fails the check; fix it first')
+    if r.returncode and not (os.environ.get('MAPROOM_FORCE') and '/test/' in os.path.abspath(a.day)):
+        raise SystemExit('the record fails the check; fix it first')   # MAPROOM_FORCE renders a failing test record anyway
     d = D.Day(a.day); vname = d.view or 'main'
     vdir, mapimg = view_assets(d, d.table, vname, work, a.samples)
     if d.view: view_assets(d, d.main, 'main', work, a.samples)

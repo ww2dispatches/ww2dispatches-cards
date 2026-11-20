@@ -33,11 +33,11 @@ def tile(d, cache):
         dr.line([scr(p) for p in d.mr[key]], fill=col, width=wd, joint='curve')
     for pk in d.mr.get('pocketsPM', []):
         r = [scr(p) for p in pk['ring']]; dr.line(r + [r[0]], fill=(180, 25, 20, 255), width=6)
-    f = ImageFont.truetype(OSW, 26)
+    f = ImageFont.truetype(OSW, int(26 * D.BS / 1.35))
     for p in d.pieces:
         xy = d.rest_to(p)
         if xy is None: continue   # surrendered: gone by night
-        q = [D.proj(xy[0] + dx, xy[1] + dy, D.BH)[0] for dx, dy in ((-.675, -.675), (.675, -.675), (.675, .675), (-.675, .675))]
+        q = [D.proj(xy[0] + dx, xy[1] + dy, D.BH)[0] for dx, dy in ((-D.BS / 2, -D.BS / 2), (D.BS / 2, -D.BS / 2), (D.BS / 2, D.BS / 2), (-D.BS / 2, D.BS / 2))]
         dr.polygon(q, fill=HEX[p['nation']] + (255,), outline=(240, 232, 212, 255))
         cx = sum(x for x, _ in q) / 4; cy = sum(y for _, y in q) / 4
         tag = {'cut_off': ' (cut off)', 'grounded': ' (grounded)'}.get(p['move'], '')
