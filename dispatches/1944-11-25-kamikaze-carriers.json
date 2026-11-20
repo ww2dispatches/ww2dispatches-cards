@@ -173,6 +173,42 @@
    "US",
    "Japan"
   ],
-  "lens": "us"
+  "lens": "us",
+  "video": {
+   "kind": "Living Card",
+   "opening": "combat or firing",
+   "sound": "silent"
+  }
+ },
+ "video": {
+  "footage": "footage/1944-11-25-essex-kamikaze.mp4",
+  "focusX": 48,
+  "focusY": 78,
+  "sourceUrl": "https://catalog.archives.gov/id/77847",
+  "note": "U.S. Navy film 428-NPC-6476, Japanese Suicide Plane Dives on USS Essex (NARA 77847), filmed 25 November 1944 by the combat photo unit of USS Ticonderoga, silent. Cut 19 Nov 2026 from footage/1944-11-25-essex-kamikaze-reel.mp4, one continuous shot 1:28.6 to 1:39.0: the burning plane streaks down toward Essex, bursts into flame and hits her port side forward, then the fireball and smoke over the ship. The reel carries a burned in timecode along the bottom, so the frame is cropped above it (rows 0 to 405). Converted to square pixels, with a mild levels grade (the print is washed out). Nothing from the 7 p.m. reel 428-NPC-6620. 10.4 s, the whole usable shot from the dive on.",
+  "hook": "A Navy camera caught the dive onto USS Essex.",
+  "sound": false
+ },
+ "kit": {
+  "file": "kits/dispatch-089-kit.md",
+  "caption": "Watch the burning plane come down onto USS Essex. It hit among aircraft fueled for takeoff, and 15 men were killed.\n\nU.S. Navy film shot from USS Ticonderoga, off Luzon, 25 November 1944.\n\nKamikazes struck four American carriers that day.",
+  "youtubeTitle": "The Moment a Kamikaze Hit USS Essex, 25 November 1944 #shorts",
+  "youtubeDescription": "Watch the burning plane come down onto USS Essex. It hit among aircraft fueled for takeoff, and 15 men were killed.\n\nAround noon on 25 November 1944, Task Force 38's carriers were launching strikes on Luzon from about 160 miles east of Manila when about a dozen Japanese planes slipped past the fighter patrol, coming in low and fast. At 12:50 a Jill torpedo plane crashed onto USS Intrepid's flight deck. At 12:58 a second plane crashed into her flight deck amidships. The two hits killed 69 of Intrepid's men and set serious fires that trapped sailors in smoke filled compartments. Her fire marshal, Lt. Donald DiMarzo, organized and led the fire parties on the hangar deck through the flames and explosions. He was killed fighting the fires and was awarded the Navy Cross after his death; his citation says he helped save his ship. Intrepid stayed on station, and her fires were out within two hours. USS Essex was hit on the port edge of her flight deck by a plane flown by Lt. Yoshinori Yamaguchi. It landed among aircraft fueled for takeoff, killing 15 and wounding 44. At about 13:00 a burning kamikaze hit the light carrier USS Cabot's flight deck and another crashed close aboard. 62 of her men were killed or wounded, but she kept her place in formation.\n\nThis is U.S. Navy film of the kamikaze hit on USS Essex, 25 November 1944, shot by the combat photo unit of USS Ticonderoga. The original film is silent.\n\nFilm: U.S. Navy, 428-NPC-6476, Japanese Suicide Plane Dives on USS Essex, U.S. National Archives (catalog.archives.gov/id/77847), public domain.\nSources: Antiaircraft Action Summary: Suicide Attacks, Section 5, U.S. Fleet Headquarters, April 1945 (HyperWar transcription); USS Intrepid (CV-11), Wikipedia (drawing on the Dictionary of American Naval Fighting Ships); 75 Years Ago: USS Intrepid's Darkest Day, Intrepid Museum; Donald Domenic DiMarzo, Navy Cross citation (Bureau of Naval Personnel Information Bulletin No. 342, September 1945), Home of Heroes; USS Essex (CV-9), Wikipedia (drawing on the Dictionary of American Naval Fighting Ships); USS Cabot (CVL-28), Wikipedia (drawing on the Dictionary of American Naval Fighting Ships); USS Hancock (CV-19), Wikipedia (drawing on the Dictionary of American Naval Fighting Ships); William F. Halsey and J. Bryan III, Admiral Halsey's Story (McGraw-Hill, 1947), chapter 14 (Thayer transcription); USS Intrepid after being hit by a suicide plane, taken from USS New Jersey, 25 November 1944, National Archives 80-G-470268.\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\n\n#Shorts #WW2 #OnThisDay #History",
+  "tiktokCaption": "Watch the burning plane come down onto USS Essex. It hit among aircraft fueled for takeoff, and 15 men were killed.\n\nU.S. Navy film shot from USS Ticonderoga, off Luzon, 25 November 1944.\n\nKamikazes struck four American carriers that day.\n\n#WW2 #OnThisDay #History #USSEssex",
+  "tiktokTitle": "The Moment a Kamikaze Hit USS Essex, 25 November 1944",
+  "hook": "A Navy camera caught the dive onto USS Essex.",
+  "thumbnailCheck": "Pass with a cover set: first frame shows the burning plane streaking down against a pale sky (small); at 2 seconds the hit erupts on Essex. Opening tagged \"combat or firing\" from the frames at 0.3 and 2 seconds. Instagram and TikTok cover and the poster set to the fireball at 3.0 s.",
+  "thumbnailOffset": 3000,
+  "videoTime": "12:00 America/Denver",
+  "schedule": "Wed 25 Nov 2026, 12:00 p.m. Mountain, all six channels",
+  "scheduled": "Buffer, all six channels, noon 25 Nov"
+ },
+ "buffer": {
+  "x_film": "6affbb0fca85ebefb0f07a90",
+  "instagram_reel": "6affbb12d5f8acdd0d68d54a",
+  "threads_film": "6affbb14d5f8acdd0d68d5c0",
+  "facebook_film": "6affbb174c1afd05dee9f303",
+  "youtube": "6affbb20ca85ebefb0f08087",
+  "tiktok": "6affbb23d5f8acdd0d68d8c1"
  }
 }

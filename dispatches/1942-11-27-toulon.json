@@ -172,6 +172,42 @@
    "France",
    "Germany"
   ],
-  "lens": "other_allied"
+  "lens": "other_allied",
+  "video": {
+   "kind": "Living Card",
+   "opening": "a place or scene",
+   "sound": "silent"
+  }
+ },
+ "video": {
+  "footage": "footage/1942-11-27-toulon.mp4",
+  "focusX": 50,
+  "focusY": 45,
+  "sourceUrl": "https://catalog.archives.gov/id/77439",
+  "note": "U.S. Navy film 428-NPC-5302 (NARA 77439), the wreck of the battleship Strasbourg at Toulon, NARA date 3 September 1944, after her second sinking by U.S. bombers; not film of 27 November 1942. Silent. Cut 19 Nov 2026 from footage/1942-11-27-toulon-strasbourg.mp4: 4:25.0 to 4:29.6 the camera pans along the hull to her tower; 4:58.0 to 5:02.0 low angle on the tower and turrets; 3:38.0 to 3:41.0 Strasbourg on the bottom, wide from the water; 5:24.0 to 5:27.5 along her deck past the guns. The Marseille shots (0:05 to 3:35) are left out. Converted to square pixels. The Instagram and TikTok cover is set to the tower shot at 6.0 s.",
+  "hook": "Sunk by her own crew. Then sunk all over again.",
+  "sound": false
+ },
+ "kit": {
+  "file": "kits/dispatch-095-kit.md",
+  "caption": "Her own crew sank this battleship in 1942. The Italians raised her, and U.S. bombers sank her again in 1944.\n\nU.S. Navy film of the wreck of Strasbourg at Toulon, September 1944, weeks after that second sinking.\n\nShould Laborde have sailed for the Allies?",
+  "youtubeTitle": "Sunk by Her Own Crew, Then Sunk Again: Strasbourg at Toulon #shorts",
+  "youtubeDescription": "Her own crew sank this battleship in 1942. The Italians raised her, and U.S. bombers sank her again in 1944.\n\nAt 4 a.m. on 27 November 1942, German combat groups drove into Toulon. Their mission, Operation Lila, was to seize the French fleet, as Germany took over the rest of Vichy France after the Allied landings in North Africa. The fleet's commander was Admiral Jean de Laborde, flying his flag in the new battleship Strasbourg. He was hostile to the British and to de Gaulle, and after the landings he had even proposed sailing out to attack the Allies. Since 11 November standing orders from Vichy's navy minister, Admiral Gabriel Auphan, said the ships must be scuttled rather than fall into foreign hands. The Germans caught the port admiral, André Marquis, in bed at Fort Lamalgue. German tanks rolled through the main gate of the naval base at 5:25 a.m., and the signal went out to the ships: \"Scuttle! Scuttle! Scuttle!\" Crews opened the sea valves and set off demolition charges. When a German officer reached Strasbourg and demanded that Laborde hand her over, the admiral answered that his ship was already sunk. About 77 vessels were destroyed, among them 3 battleships, 7 cruisers, 15 destroyers and 13 torpedo boats. Twelve Frenchmen were killed and 26 wounded. Hitler's prize was gone. The Germans took only 39 small ships and a few disarmed destroyers and damaged submarines, and the scuttled ships never fought for either side. Strasbourg's story did not end that day. The Italians refloated her in 1943, and U.S. bombers sank her again on 18 August 1944 during the liberation of southern France. That is how Navy cameramen found her a few weeks later.\n\nThis is U.S. Navy film of the wreck of Strasbourg at Toulon in September 1944, a few weeks after U.S. bombers sank her the second time. It is not film of 27 November 1942. The original film is silent.\n\nFilm: U.S. Navy, 428-NPC-5302, U.S. National Archives (catalog.archives.gov/id/77439), public domain.\nSources: Scuttling of the French fleet at Toulon, Wikipedia; Jean de Laborde, Wikipedia; Jean de Laborde, Wikipédia (French); The Scuttling of the French Fleet, extract from John Vader, The Fleet Without a Friend, War History; Heroic End of French Fleet: Scuttled 77 Ships to Avoid Capture by Nazi Germany, War History Online; French battleship Strasbourg, Wikipedia.\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\n\n#Shorts #WW2 #OnThisDay #History",
+  "tiktokCaption": "Her own crew sank this battleship in 1942. The Italians raised her, and U.S. bombers sank her again in 1944.\n\nU.S. Navy film of the wreck of Strasbourg at Toulon, September 1944, weeks after that second sinking.\n\nShould Laborde have sailed for the Allies?\n\n#WW2 #OnThisDay #History #Toulon",
+  "tiktokTitle": "Sunk by Her Own Crew, Then Sunk Again: Strasbourg at Toulon",
+  "hook": "Sunk by her own crew. Then sunk all over again.",
+  "thumbnailCheck": "Pass with a cover set: first frame is the wrecked hull of Strasbourg and boats alongside as the camera pans toward her tower; still the hull at 2 seconds. Opening tagged \"a place or scene\" from the frames at 0.3 and 2 seconds. Instagram and TikTok cover and the poster set to the tower and turrets at 6.0 s.",
+  "thumbnailOffset": 6000,
+  "videoTime": "12:00 America/Denver",
+  "schedule": "Fri 27 Nov 2026, 12:00 p.m. Mountain, all six channels",
+  "scheduled": "Buffer, all six channels, noon 27 Nov"
+ },
+ "buffer": {
+  "x_film": "6affba090f5eda1a57b8fb98",
+  "instagram_reel": "6affba0b7b0a126ceba2897d",
+  "threads_film": "6affba0e7b0a126ceba28ee5",
+  "facebook_film": "6affba10d5f8acdd0d687df8",
+  "youtube": "6affba19d5f8acdd0d688c51",
+  "tiktok": "6affba1c7b0a126ceba294d3"
  }
 }
