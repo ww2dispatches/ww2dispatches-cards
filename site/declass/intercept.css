@@ -221,3 +221,28 @@ body.night .howcard,body.night .sheetcard{color:var(--ink)}
 .icpbar2 .icpmarks .mark.used path{stroke:#e0574a;stroke-width:3.6}
 @media (prefers-reduced-motion:no-preference){.icpbar2 .icpmarks .mark.hit svg{animation:icpxpop .4s cubic-bezier(.2,1.6,.4,1)}}
 @keyframes icpxpop{0%{transform:scale(2.2);opacity:0}100%{transform:scale(1);opacity:1}}
+/* Shorter phones (19 Nov 2026, Brian's ask): the review tightens so Done stays on the first screen */
+@media (max-height:900px){
+  .icp.ended .icpscore .sstamp{font-size:14px;padding:2px 9px}
+  .icp.ended .icpscore b{font-size:48px;margin-top:5px}
+  .icp.ended .icpintel{margin:3px 0 10px}
+  .icprows.review{gap:8px;margin:0 0 10px}
+  .icprows.review .icprow{padding:7px 9px;gap:8px}
+  .icprows.review .gcard{width:46px;margin-right:-7px}
+  .icprows.review .rlink{font-size:13.5px;line-height:1.28;padding:6px 9px;margin-left:6px}
+  .icprows.review .rlink small{font-size:11px}
+  .icp.ended .icpnext{margin:6px 0 4px}
+  .icp.ended .icpctl{margin:10px 0 4px}
+}
+@media (max-height:760px){
+  .icp.ended .icpscore .sstamp{font-size:13px;padding:2px 8px;border-width:2px}
+  .icp.ended .icpscore b{font-size:40px;margin-top:3px}
+  .icp.ended .icpscore small,.icp.ended .icpintel{font-size:12px}
+  .icprows.review{gap:6px;margin:0 0 8px}
+  .icprows.review .icprow{padding:5px 7px}
+  .icprows.review .gcard{width:38px;margin-right:-6px}
+  .icprows.review .rlink{font-size:12.5px;line-height:1.25;padding:5px 8px}
+  .icprows.review .rlink small{font-size:10.5px}
+  .icp.ended .icpnext{font-size:13px}
+  .icp.ended .icpctl{margin:8px 0 4px}
+}
