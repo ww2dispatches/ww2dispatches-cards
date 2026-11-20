@@ -6,6 +6,13 @@
   "wikidata": "Q203622",
   "source": "https://en.wikipedia.org/wiki/Avro_Lancaster"
  },
+ "aircraft-avro-lancastrian": {
+  "name": "Avro Lancastrian",
+  "kind": "airliner converted from the Lancaster bomber",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Avro_Lancastrian"
+ },
  "aircraft-b-29-dauntless-dotty": {
   "name": "Dauntless Dotty",
   "kind": "individual B-29 Superfortress",
@@ -170,6 +177,13 @@
    "Dauntless",
    "SBD"
   ]
+ },
+ "aircraft-focke-wulf-fw-190": {
+  "name": "Focke-Wulf Fw 190",
+  "kind": "German fighter",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Focke-Wulf_Fw_190"
  },
  "aircraft-focke-wulf-fw-200-condor": {
   "name": "Focke-Wulf Fw 200 Condor",

@@ -497,6 +497,15 @@
   "lat": null,
   "lon": null
  },
+ "place-cellular-jail": {
+  "name": "Cellular Jail",
+  "kind": "colonial prison at Port Blair",
+  "nation": "India",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Cellular_Jail",
+  "lat": null,
+  "lon": null
+ },
  "place-central-park": {
   "name": "Central Park",
   "kind": "park",
@@ -893,6 +902,18 @@
    "Faroes"
   ]
  },
+ "place-feodosia": {
+  "name": "Feodosia",
+  "kind": "port city in the Crimea",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Feodosia",
+  "aka": [
+   "Feodosiya"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-fort-belvedere": {
   "name": "Fort Belvedere",
   "kind": "country house in Windsor Great Park",
@@ -1139,6 +1160,18 @@
   "lat": null,
   "lon": null
  },
+ "place-heathrow-airport": {
+  "name": "Heathrow Airport",
+  "kind": "airport, London",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Heathrow_Airport",
+  "aka": [
+   "London Airport"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-heidelberg": {
   "name": "Heidelberg",
   "kind": "city in Germany",
@@ -1192,6 +1225,15 @@
   "wikidata": null,
   "lat": null,
   "lon": null
+ },
+ "place-hilo-hawaii": {
+  "name": "Hilo, Hawaii",
+  "kind": "port town on the island of Hawaii",
+  "nation": "US",
+  "wikidata": null,
+  "lat": null,
+  "lon": null,
+  "source": "https://en.wikipedia.org/wiki/Hilo,_Hawaii"
  },
  "place-himare": {
   "name": "Himarë",
@@ -1293,6 +1335,15 @@
   "lat": null,
   "lon": null
  },
+ "place-intramuros": {
+  "name": "Intramuros",
+  "kind": "walled city district of Manila",
+  "nation": "Philippines",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Intramuros",
+  "lat": null,
+  "lon": null
+ },
  "place-invalids-cemetery": {
   "name": "Invalidenfriedhof",
   "kind": "cemetery",
@@ -1331,6 +1382,18 @@
   "source": "https://en.wikipedia.org/wiki/Jajce",
   "lat": null,
   "lon": null
+ },
+ "place-jinan": {
+  "name": "Jinan",
+  "kind": "city, capital of Shandong",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Jinan",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Tsinan"
+  ]
  },
  "place-julich": {
   "name": "Julich",
@@ -1542,6 +1605,15 @@
   "nation": "Malaysia",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Kota_Bharu",
+  "lat": null,
+  "lon": null
+ },
+ "place-kotelnikovo": {
+  "name": "Kotelnikovo",
+  "kind": "town southwest of Stalingrad",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kotelnikovo",
   "lat": null,
   "lon": null
  },
@@ -2182,6 +2254,16 @@
   "lat": null,
   "lon": null
  },
+ "place-nauru": {
+  "name": "Nauru",
+  "kind": "island",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Nauru",
+  "lat": null,
+  "lon": null,
+  "note": "Australian mandated territory in 1940"
+ },
  "place-naval-air-station-fort-lauderdale": {
   "name": "Naval Air Station Fort Lauderdale",
   "kind": "U.S. Navy air station",
@@ -2317,6 +2399,15 @@
   "lat": null,
   "lon": null
  },
+ "place-offenbach-am-main": {
+  "name": "Offenbach am Main",
+  "kind": "city",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Offenbach_am_Main",
+  "lat": null,
+  "lon": null
+ },
  "place-okinawa-island": {
   "name": "Okinawa",
   "kind": "island",
@@ -2406,6 +2497,18 @@
   "source": "https://en.wikipedia.org/wiki/Panay",
   "lat": null,
   "lon": null
+ },
+ "place-paramount-theatre-manhattan": {
+  "name": "Paramount Theatre (Manhattan)",
+  "kind": "theater in Times Square, New York",
+  "nation": "US",
+  "wikidata": null,
+  "lat": null,
+  "lon": null,
+  "source": "https://en.wikipedia.org/wiki/Paramount_Theatre_(Manhattan)",
+  "aka": [
+   "Paramount Theater, New York"
+  ]
  },
  "place-paris": {
   "name": "Paris",
@@ -2524,6 +2627,15 @@
   "nation": "Ukraine",
   "source": "https://en.wikipedia.org/wiki/Poltava",
   "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-port-blair": {
+  "name": "Port Blair",
+  "kind": "capital of the Andaman Islands",
+  "nation": "India",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Port_Blair",
   "lat": null,
   "lon": null
  },
@@ -2668,6 +2780,15 @@
   "aka": [
    "Rostov"
   ]
+ },
+ "place-royal-palace-of-amsterdam": {
+  "name": "Royal Palace of Amsterdam",
+  "kind": "palace",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Royal_Palace_of_Amsterdam",
+  "lat": null,
+  "lon": null
  },
  "place-sachsenhausen-concentration-camp": {
   "name": "Sachsenhausen",
@@ -2982,6 +3103,15 @@
   "lat": null,
   "lon": null
  },
+ "place-st-pauls-cathedral": {
+  "name": "St Paul's Cathedral",
+  "kind": "cathedral in the City of London",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/St_Paul%27s_Cathedral",
+  "lat": null,
+  "lon": null
+ },
  "place-stalag-vii-a": {
   "name": "Stalag VII A",
   "kind": "prisoner of war camp",
@@ -3262,6 +3392,19 @@
   "lat": null,
   "lon": null
  },
+ "place-vagsoy-island": {
+  "name": "Vågsøy (island)",
+  "kind": "island",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/V%C3%A5gs%C3%B8y_(island)",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Vaagso",
+   "Vagsoy"
+  ]
+ },
  "place-vancouver": {
   "name": "Vancouver",
   "kind": "city",
@@ -3352,6 +3495,18 @@
   "lat": null,
   "lon": null
  },
+ "place-wallace-wade-stadium": {
+  "name": "Wallace Wade Stadium",
+  "kind": "football stadium, Durham, North Carolina",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Wallace_Wade_Stadium",
+  "aka": [
+   "Duke Stadium"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-warm-springs-georgia": {
   "name": "Warm Springs, Georgia",
   "kind": "town",
@@ -3376,6 +3531,15 @@
   "nation": "United States",
   "source": "https://en.wikipedia.org/wiki/Waterloo,_Iowa",
   "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-wawer": {
+  "name": "Wawer",
+  "kind": "district of Warsaw",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Wawer",
   "lat": null,
   "lon": null
  },

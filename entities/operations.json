@@ -23,6 +23,13 @@
   "source": "https://en.wikipedia.org/wiki/1941_October_Revolution_Parade",
   "wikidata": null
  },
+ "op-1942-rose-bowl": {
+  "name": "1942 Rose Bowl",
+  "kind": "college football game moved to Durham",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1942_Rose_Bowl"
+ },
  "op-1943-cairo-declaration": {
   "name": "1943 Cairo Declaration",
   "kind": "declaration",
@@ -126,6 +133,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Army%E2%80%93Navy_Game"
  },
+ "op-arsenal-of-democracy": {
+  "name": "Arsenal of Democracy",
+  "kind": "Roosevelt's 29 December 1940 fireside chat on aid to Britain",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Arsenal_of_Democracy"
+ },
  "op-aryanization": {
   "name": "Aryanization",
   "kind": "Nazi seizure of Jewish owned property and businesses",
@@ -160,6 +174,23 @@
   "nation": "Japan",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Attack_on_Pearl_Harbor"
+ },
+ "op-azad-hind": {
+  "name": "Azad Hind",
+  "kind": "Provisional Government of Free India, aligned with Japan",
+  "nation": "India",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Azad_Hind",
+  "aka": [
+   "Provisional Government of Free India"
+  ]
+ },
+ "op-baruch-plan": {
+  "name": "Baruch Plan",
+  "kind": "U.S. proposal for international control of atomic energy",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Baruch_Plan"
  },
  "op-baseball-color-line": {
   "name": "Baseball color line",
@@ -394,6 +425,13 @@
   "nation": "New Zealand",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Battle_of_Point_175"
+ },
+ "op-battle-of-raate-road": {
+  "name": "Battle of Raate Road",
+  "kind": "Winter War battle",
+  "nation": "Finland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Raate_Road"
  },
  "op-battle-of-rostov-1941": {
   "name": "Battle of Rostov (1941)",
@@ -694,6 +732,13 @@
    "UN Charter"
   ]
  },
+ "op-chenogne-massacre": {
+  "name": "Chenogne massacre",
+  "kind": "killing of German prisoners of war",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Chenogne_massacre"
+ },
  "op-chinese-civil-war": {
   "name": "Chinese Civil War",
   "kind": "Civil war between Nationalists and Communists",
@@ -780,6 +825,13 @@
    "Infamy Speech"
   ]
  },
+ "op-declaration-by-united-nations": {
+  "name": "Declaration by United Nations",
+  "kind": "Allied declaration, 1 January 1942",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Declaration_by_United_Nations"
+ },
  "op-defence-of-outpost-snipe": {
   "name": "Defence of Outpost Snipe",
   "kind": "battle",
@@ -821,6 +873,13 @@
   "nation": "United Kingdom",
   "source": "https://en.wikipedia.org/wiki/Dodecanese_campaign",
   "wikidata": null
+ },
+ "op-dolo-hospital-airstrike": {
+  "name": "Dolo hospital airstrike",
+  "kind": "Italian air attack on a Red Cross hospital",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Dolo_hospital_airstrike"
  },
  "op-doolittle-raid": {
   "name": "Doolittle Raid",
@@ -939,6 +998,23 @@
   "aka": [
    "Hoare-Laval Plan"
   ]
+ },
+ "op-humanity-declaration": {
+  "name": "Humanity Declaration",
+  "kind": "imperial rescript renouncing divinity",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Humanity_Declaration",
+  "aka": [
+   "Ningen-sengen"
+  ]
+ },
+ "op-indonesian-national-revolution": {
+  "name": "Indonesian National Revolution",
+  "kind": "war of independence",
+  "nation": "Indonesia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Indonesian_National_Revolution"
  },
  "op-international-military-tribunal-for-the-far-east": {
   "name": "International Military Tribunal for the Far East",
@@ -1112,6 +1188,13 @@
   "aka": [
    "Operation Cherryblossom"
   ]
+ },
+ "op-law-for-the-prevention-of-hereditarily-diseased-offspring": {
+  "name": "Law for the Prevention of Hereditarily Diseased Offspring",
+  "kind": "Nazi forced sterilization law",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Law_for_the_Prevention_of_Hereditarily_Diseased_Offspring"
  },
  "op-lend-lease": {
   "name": "Lend Lease",
@@ -1355,6 +1438,16 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Operation_Anklet"
  },
+ "op-operation-archery": {
+  "name": "Operation Archery",
+  "kind": "British commando raid on Vaagso",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Archery",
+  "aka": [
+   "Vaagso raid"
+  ]
+ },
  "op-operation-attila": {
   "name": "Operation Attila",
   "kind": "German plan to occupy Vichy France, Directive No. 19",
@@ -1379,6 +1472,16 @@
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/Operation_Battleaxe",
   "wikidata": null
+ },
+ "op-operation-bodenplatte": {
+  "name": "Operation Bodenplatte",
+  "kind": "Luftwaffe attack on Allied airfields",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Bodenplatte",
+  "aka": [
+   "Operation Baseplate"
+  ]
  },
  "op-operation-buccaneer": {
   "name": "Operation Buccaneer",
@@ -1455,6 +1558,16 @@
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/Operation_Mincemeat",
   "wikidata": null
+ },
+ "op-operation-northwind-1944": {
+  "name": "Operation Northwind (1944)",
+  "kind": "German offensive in Alsace",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Northwind_(1944)",
+  "aka": [
+   "Operation Nordwind"
+  ]
  },
  "op-operation-ostfront": {
   "name": "Operation Ostfront",
@@ -1682,6 +1795,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Second_Cairo_Conference"
  },
+ "op-second-great-fire-of-london": {
+  "name": "Second Great Fire of London",
+  "kind": "Luftwaffe fire raid on the City of London, 29 to 30 December 1940",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Second_Great_Fire_of_London"
+ },
  "op-second-italo-ethiopian-war": {
   "name": "Second Italo-Ethiopian War",
   "kind": "war",
@@ -1847,6 +1967,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Terrace_mutiny"
  },
+ "op-the-blitz": {
+  "name": "The Blitz",
+  "kind": "German bombing campaign against Britain, 1940 to 1941",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/The_Blitz"
+ },
  "op-the-holocaust": {
   "name": "The Holocaust",
   "kind": "Nazi genocide of Europe's Jews",
@@ -1992,6 +2119,30 @@
    "Rainbow Five"
   ],
   "note": "Wikipedia's Rainbow Five title redirects here."
+ },
+ "op-washington-naval-treaty": {
+  "name": "Washington Naval Treaty",
+  "kind": "1922 naval arms limitation treaty",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Washington_Naval_Treaty"
+ },
+ "op-wawer-massacre": {
+  "name": "Wawer massacre",
+  "kind": "German mass execution of Polish civilians",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Wawer_massacre"
+ },
+ "op-winston-churchill-s-address-to-the-canadian-parliament-1941": {
+  "name": "Winston Churchill's address to the Canadian Parliament (1941)",
+  "kind": "wartime speech, the 'Some chicken, some neck' speech",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Winston_Churchill%27s_address_to_the_Canadian_Parliament_(1941)",
+  "aka": [
+   "Some chicken, some neck"
+  ]
  },
  "op-winter-war": {
   "name": "Winter War",

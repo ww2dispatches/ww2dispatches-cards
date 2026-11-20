@@ -73,6 +73,13 @@
   "wikidata": "Q37064",
   "source": "https://en.wikipedia.org/wiki/Alexander_Fleming"
  },
+ "person-alexei-vinogradov": {
+  "name": "Alexei Vinogradov",
+  "kind": "Soviet commander of the 44th Rifle Division",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Alexei_Vinogradov"
+ },
  "person-alfred-blalock": {
   "name": "Alfred Blalock",
   "kind": "surgeon",
@@ -588,6 +595,17 @@
   "wikidata": "Q1233692",
   "source": "https://en.wikipedia.org/wiki/Doc_Blanchard"
  },
+ "person-don-bennett": {
+  "name": "Don Bennett",
+  "kind": "RAF Pathfinder Force commander, later BSAA chief executive",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Don_Bennett",
+  "aka": [
+   "Donald Bennett",
+   "D.C.T. Bennett"
+  ]
+ },
  "person-donald-blakeslee": {
   "name": "Donald Blakeslee",
   "kind": "fighter pilot and group commander",
@@ -830,6 +848,13 @@
   "wikidata": "Q47293",
   "source": "https://en.wikipedia.org/wiki/Erich_Maria_Remarque"
  },
+ "person-erich-raeder": {
+  "name": "Erich Raeder",
+  "kind": "Grand Admiral, commander in chief of the Kriegsmarine",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Erich_Raeder"
+ },
  "person-erich-topp": {
   "name": "Erich Topp",
   "kind": "U-boat commander",
@@ -857,6 +882,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Ernest_E._Evans",
   "wikidata": "Q5393004"
+ },
+ "person-ernest-j-king": {
+  "name": "Ernest J. King",
+  "kind": "U.S. admiral, Commander in Chief U.S. Fleet and Chief of Naval Operations",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ernest_J._King"
  },
  "person-ernest-lawrence": {
   "name": "Ernest Lawrence",
@@ -993,6 +1025,13 @@
   "nation": "US",
   "wikidata": "Q526220",
   "source": "https://en.wikipedia.org/wiki/Frank_Knox"
+ },
+ "person-frank-sinatra": {
+  "name": "Frank Sinatra",
+  "kind": "American singer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Frank_Sinatra"
  },
  "person-franklin-d-roosevelt": {
   "name": "Franklin D. Roosevelt",
@@ -1199,6 +1238,13 @@
   "wikidata": "Q5540003",
   "source": "https://en.wikipedia.org/wiki/George_H._Cannon"
  },
+ "person-george-ii-of-greece": {
+  "name": "George II of Greece",
+  "kind": "King of the Hellenes",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/George_II_of_Greece"
+ },
  "person-george-mcmillin": {
   "name": "George McMillin",
   "kind": "U.S. Navy captain, naval governor of Guam",
@@ -1368,12 +1414,29 @@
    "Hal Wallis"
   ]
  },
+ "person-han-fuju": {
+  "name": "Han Fuju",
+  "kind": "Chinese general, governor of Shandong",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Han_Fuju",
+  "aka": [
+   "Han Fu-chu"
+  ]
+ },
  "person-hans-diedrich-von-tiesenhausen": {
   "name": "Hans-Diedrich von Tiesenhausen",
   "kind": "U-boat commander",
   "nation": "Germany",
   "source": "https://en.wikipedia.org/wiki/Hans-Diedrich_von_Tiesenhausen",
   "wikidata": "Q64574"
+ },
+ "person-hans-graf-von-sponeck": {
+  "name": "Hans Graf von Sponeck",
+  "kind": "German general, XXXXII Corps commander",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hans_Graf_von_Sponeck"
  },
  "person-hans-langsdorff": {
   "name": "Hans Langsdorff",
@@ -1668,6 +1731,23 @@
    "Emperor Showa"
   ]
  },
+ "person-hiroshi-saito-diplomat": {
+  "name": "Hiroshi Saito",
+  "kind": "Japanese ambassador to the United States",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hiroshi_Saito_(diplomat)",
+  "aka": [
+   "Hirosi Saito"
+  ]
+ },
+ "person-hjalmar-siilasvuo": {
+  "name": "Hjalmar Siilasvuo",
+  "kind": "Finnish commander of the 9th Division",
+  "nation": "Finland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hjalmar_Siilasvuo"
+ },
  "person-ho-chi-minh": {
   "name": "Ho Chi Minh",
   "kind": "Vietnamese revolutionary leader",
@@ -1841,6 +1921,13 @@
   "source": "https://en.wikipedia.org/wiki/J._Lawton_Collins",
   "wikidata": "Q301853"
  },
+ "person-jack-kinney": {
+  "name": "Jack Kinney",
+  "kind": "Disney animation director",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Jack_Kinney"
+ },
  "person-jack-kirby": {
   "name": "Jack Kirby",
   "kind": "American comic book artist",
@@ -2010,6 +2097,13 @@
   "source": "https://en.wikipedia.org/wiki/John_Cecil_Currie",
   "wikidata": "Q4993948"
  },
+ "person-john-durnford-slater": {
+  "name": "John Durnford-Slater",
+  "kind": "British commando officer, No. 3 Commando",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/John_Durnford-Slater"
+ },
  "person-john-e-dahlquist": {
   "name": "John Dahlquist",
   "kind": "U.S. Army general",
@@ -2152,6 +2246,13 @@
   "nation": "United States",
   "source": "https://en.wikipedia.org/wiki/Julian_C._Smith",
   "wikidata": "Q3100137"
+ },
+ "person-juliana-of-the-netherlands": {
+  "name": "Juliana of the Netherlands",
+  "kind": "Queen of the Netherlands",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Juliana_of_the_Netherlands"
  },
  "person-karel-hasler": {
   "name": "Karel Hašler",
@@ -2441,6 +2542,13 @@
   "source": "https://en.wikipedia.org/wiki/Manton_S._Eddy",
   "wikidata": "Q323514"
  },
+ "person-manuel-l-quezon": {
+  "name": "Manuel L. Quezon",
+  "kind": "President of the Philippine Commonwealth",
+  "nation": "Philippines",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Manuel_L._Quezon"
+ },
  "person-mao-zedong": {
   "name": "Mao Zedong",
   "kind": "Chinese Communist leader",
@@ -2500,6 +2608,13 @@
   "source": "https://en.wikipedia.org/wiki/Martin_Bormann",
   "wikidata": "Q76367"
  },
+ "person-martin-linge": {
+  "name": "Martin Linge",
+  "kind": "Norwegian commando officer, killed at Vaagso",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Martin_Linge"
+ },
  "person-mary-soames": {
   "name": "Mary Churchill",
   "kind": "daughter of Winston Churchill",
@@ -2541,6 +2656,20 @@
   "source": "https://en.wikipedia.org/wiki/Max_Aitken,_1st_Baron_Beaverbrook",
   "wikidata": "Q332454"
  },
+ "person-max-dienemann": {
+  "name": "Max Dienemann",
+  "kind": "Liberal rabbi who ordained Regina Jonas",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Max_Dienemann"
+ },
+ "person-maxim-litvinov": {
+  "name": "Maxim Litvinov",
+  "kind": "Soviet diplomat, ambassador to the United States",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Maxim_Litvinov"
+ },
  "person-meredith-gardner": {
   "name": "Meredith Gardner",
   "kind": "American Army codebreaker, Venona",
@@ -2555,12 +2684,30 @@
   "source": "https://en.wikipedia.org/wiki/Michael_Curtiz",
   "wikidata": "Q51491"
  },
+ "person-michael-i-of-romania": {
+  "name": "Michael I of Romania",
+  "kind": "King of Romania",
+  "nation": "Romania",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Michael_I_of_Romania",
+  "aka": [
+   "King Michael",
+   "Mihai I"
+  ]
+ },
  "person-mikhail-kalinin": {
   "name": "Mikhail Kalinin",
   "kind": "Soviet head of state",
   "nation": "Soviet Union",
   "wikidata": "Q229828",
   "source": "https://en.wikipedia.org/wiki/Mikhail_Kalinin"
+ },
+ "person-miklos-steinmetz": {
+  "name": "Miklós Steinmetz",
+  "kind": "Soviet army captain and envoy at Budapest",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mikl%C3%B3s_Steinmetz"
  },
  "person-mildred-harnack": {
   "name": "Mildred Harnack",
@@ -2585,6 +2732,13 @@
   "nation": "US",
   "wikidata": "Q72361295",
   "source": "https://en.wikipedia.org/wiki/Mitsuye_Endo"
+ },
+ "person-mohammad-hatta": {
+  "name": "Mohammad Hatta",
+  "kind": "Indonesian prime minister and vice president",
+  "nation": "Indonesia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mohammad_Hatta"
  },
  "person-muhammad-ali-jinnah": {
   "name": "Muhammad Ali Jinnah",
@@ -2927,6 +3081,20 @@
   "source": "https://en.wikipedia.org/wiki/Raymond_S._McLain",
   "wikidata": "Q7299123"
  },
+ "person-regina-jonas": {
+  "name": "Regina Jonas",
+  "kind": "rabbi, first woman ordained",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Regina_Jonas"
+ },
+ "person-reuben-h-fleet": {
+  "name": "Reuben H. Fleet",
+  "kind": "founder and president of Consolidated Aircraft",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Reuben_H._Fleet"
+ },
  "person-richard-howard-priest": {
   "name": "Richard Howard",
   "kind": "provost of Coventry Cathedral",
@@ -2961,6 +3129,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Robert_Daniel_Murphy",
   "wikidata": "Q2000858"
+ },
+ "person-robert-eyssen": {
+  "name": "Robert Eyssen",
+  "kind": "Kriegsmarine officer, commander of the raider Komet",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Robert_Eyssen"
  },
  "person-robert-h-jackson": {
   "name": "Robert H. Jackson",
@@ -3080,6 +3255,17 @@
   "source": "https://en.wikipedia.org/wiki/Sara_Roosevelt",
   "wikidata": "Q4994309"
  },
+ "person-sara-salkahazi": {
+  "name": "Sára Salkaházi",
+  "kind": "Hungarian nun, Sisters of Social Service, Righteous Among the Nations",
+  "nation": "Hungary",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/S%C3%A1ra_Salkah%C3%A1zi",
+  "aka": [
+   "Sara Salkahazi",
+   "Sister Sara"
+  ]
+ },
  "person-sebastiano-gallina": {
   "name": "Sebastiano Gallina",
   "kind": "Italian general, commander of the Libyan Corps",
@@ -3112,6 +3298,23 @@
   "source": "https://en.wikipedia.org/wiki/Soong_Mei-ling",
   "aka": [
    "Madame Chiang Kai-shek"
+  ]
+ },
+ "person-spike-jones": {
+  "name": "Spike Jones",
+  "kind": "bandleader of the City Slickers",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Spike_Jones"
+ },
+ "person-subhas-chandra-bose": {
+  "name": "Subhas Chandra Bose",
+  "kind": "Indian nationalist, head of the Azad Hind government",
+  "nation": "India",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Subhas_Chandra_Bose",
+  "aka": [
+   "Netaji"
   ]
  },
  "person-sukarno": {
@@ -3171,6 +3374,16 @@
   "nation": "US",
   "wikidata": "Q552938",
   "source": "https://en.wikipedia.org/wiki/Telford_Taylor"
+ },
+ "person-teodoro-locsin-sr": {
+  "name": "Teodoro Locsin Sr.",
+  "kind": "Filipino journalist and diarist",
+  "nation": "Philippines",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Teodoro_Locsin_Sr.",
+  "aka": [
+   "Teodoro M. Locsin"
+  ]
  },
  "person-terry-de-la-mesa-allen-sr": {
   "name": "Terry Allen",
@@ -3349,6 +3562,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Wade_H._Haislip",
   "wikidata": "Q3564980"
+ },
+ "person-wallace-wade": {
+  "name": "Wallace Wade",
+  "kind": "Duke football coach",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Wallace_Wade"
  },
  "person-walter-brattain": {
   "name": "Walter Brattain",

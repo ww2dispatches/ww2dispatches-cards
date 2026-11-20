@@ -1,4 +1,14 @@
 {
+ "unit-100th-training-division": {
+  "name": "100th Training Division",
+  "kind": "U.S. division, in WWII the 100th Infantry Division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/100th_Training_Division",
+  "aka": [
+   "100th Infantry Division"
+  ]
+ },
  "unit-101st-airborne-division": {
   "name": "101st Airborne Division",
   "kind": "U.S. Army airborne division",
@@ -79,6 +89,13 @@
   "wikidata": "Q169980",
   "source": "https://en.wikipedia.org/wiki/11th_Airborne_Division",
   "note": "'11th Airborne Division (United States)' redirects here."
+ },
+ "unit-11th-armored-division-united-states": {
+  "name": "11th Armored Division",
+  "kind": "U.S. armored division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/11th_Armored_Division_(United_States)"
  },
  "unit-11th-infantry-regiment-united-states": {
   "name": "11th Infantry Regiment",
@@ -327,6 +344,16 @@
    "Queen's Bays"
   ]
  },
+ "unit-2nd-guards-army": {
+  "name": "2nd Guards Army",
+  "kind": "Soviet field army",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/2nd_Guards_Army",
+  "aka": [
+   "Second Guards Army"
+  ]
+ },
  "unit-2nd-marine-division": {
   "name": "2nd Marine Division",
   "kind": "U.S. Marine Corps division",
@@ -549,6 +576,37 @@
    "445th Bombardment Group",
    "445th Bomb Group"
   ]
+ },
+ "unit-44th-army-soviet-union": {
+  "name": "44th Army",
+  "kind": "Soviet field army",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/44th_Army_(Soviet_Union)",
+  "aka": [
+   "Forty-fourth Army"
+  ]
+ },
+ "unit-44th-infantry-division-united-states": {
+  "name": "44th Infantry Division (United States)",
+  "kind": "U.S. infantry division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/44th_Infantry_Division_(United_States)"
+ },
+ "unit-44th-rifle-division": {
+  "name": "44th Rifle Division",
+  "kind": "Soviet rifle division",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/44th_Rifle_Division"
+ },
+ "unit-46th-infantry-division-wehrmacht": {
+  "name": "46th Infantry Division",
+  "kind": "German infantry division",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/46th_Infantry_Division_(Wehrmacht)"
  },
  "unit-47th-volksgrenadier-division": {
   "name": "47th Volksgrenadier Division",
@@ -813,6 +871,17 @@
   "wikidata": "Q702383",
   "source": "https://en.wikipedia.org/wiki/Army_Ministry"
  },
+ "unit-arrow-cross-party": {
+  "name": "Arrow Cross Party",
+  "kind": "Hungarian fascist party and militia",
+  "nation": "Hungary",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Arrow_Cross_Party",
+  "aka": [
+   "Arrow Cross",
+   "Nyilaskeresztes Part"
+  ]
+ },
  "unit-bbc-world-service": {
   "name": "BBC World Service",
   "kind": "international broadcaster (Empire Service from 1932)",
@@ -833,12 +902,32 @@
    "Bell Telephone Laboratories"
   ]
  },
+ "unit-british-expeditionary-force-world-war-ii": {
+  "name": "British Expeditionary Force (World War II)",
+  "kind": "British army in France, 1939 to 1940",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/British_Expeditionary_Force_(World_War_II)",
+  "aka": [
+   "BEF"
+  ]
+ },
  "unit-british-security-co-ordination": {
   "name": "British Security Co-ordination",
   "kind": "British intelligence organization in the Americas",
   "nation": "Britain",
   "wikidata": "Q920097",
   "source": "https://en.wikipedia.org/wiki/British_Security_Co-ordination"
+ },
+ "unit-british-south-american-airways": {
+  "name": "British South American Airways",
+  "kind": "British state airline",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/British_South_American_Airways",
+  "aka": [
+   "BSAA"
+  ]
  },
  "unit-buffs-royal-east-kent-regiment": {
   "name": "The Buffs",
@@ -877,6 +966,13 @@
   "aka": [
    "code talkers"
   ]
+ },
+ "unit-consolidated-aircraft": {
+  "name": "Consolidated Aircraft",
+  "kind": "American aircraft manufacturer, San Diego",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Consolidated_Aircraft"
  },
  "unit-constituent-assembly-of-italy": {
   "name": "Constituent Assembly of Italy",
@@ -1123,6 +1219,16 @@
    "PICAO"
   ]
  },
+ "unit-international-monetary-fund": {
+  "name": "International Monetary Fund",
+  "kind": "international financial institution",
+  "nation": "international",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/International_Monetary_Fund",
+  "aka": [
+   "IMF"
+  ]
+ },
  "unit-italian-army-in-russia": {
   "name": "Italian Army in Russia",
   "kind": "Italian Eighth Army on the Eastern Front",
@@ -1151,6 +1257,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Johns_Hopkins_University_Applied_Physics_Laboratory",
   "wikidata": "Q249373"
+ },
+ "unit-kaiser-steel": {
+  "name": "Kaiser Steel",
+  "kind": "American steel company, Fontana mill",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kaiser_Steel"
  },
  "unit-kalinin-front": {
   "name": "Kalinin Front",
@@ -1213,6 +1326,13 @@
   "nation": "Canada",
   "wikidata": "Q7749122",
   "source": "https://en.wikipedia.org/wiki/Loyal_Edmonton_Regiment"
+ },
+ "unit-luftwaffe": {
+  "name": "Luftwaffe",
+  "kind": "German air force",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Luftwaffe"
  },
  "unit-lxxxi-army-corps": {
   "name": "LXXXI Corps",
@@ -1338,6 +1458,13 @@
   "nation": "Britain",
   "wikidata": "Q7042978",
   "source": "https://en.wikipedia.org/wiki/No._149_Squadron_RAF"
+ },
+ "unit-no-3-commando": {
+  "name": "No. 3 Commando",
+  "kind": "British Army commando unit",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._3_Commando"
  },
  "unit-no-463-squadron-raaf": {
   "name": "No. 463 Squadron RAAF",
@@ -1499,6 +1626,14 @@
   "source": "https://en.wikipedia.org/wiki/Roberts_Commissions",
   "note": "Wikipedia's article covers both Roberts commissions; this entity is the Pearl Harbor one (Executive Order 8983)"
  },
+ "unit-royal-indian-army-service-corps": {
+  "name": "Royal Indian Army Service Corps",
+  "kind": "Indian Army supply and transport corps",
+  "nation": "India",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Royal_Indian_Army_Service_Corps",
+  "note": "Its four animal transport companies in France, 1939 to 1940, were known as Force K6 (no Wikipedia article)."
+ },
  "unit-royal-irish-fusiliers": {
   "name": "Royal Irish Fusiliers",
   "kind": "British infantry regiment",
@@ -1557,6 +1692,16 @@
   "nation": "US",
   "wikidata": "Q483080",
   "source": "https://en.wikipedia.org/wiki/Seventh_Air_Force"
+ },
+ "unit-seventh-united-states-army": {
+  "name": "Seventh United States Army",
+  "kind": "U.S. field army",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Seventh_United_States_Army",
+  "aka": [
+   "Seventh Army"
+  ]
  },
  "unit-southwestern-front-soviet-union": {
   "name": "Southwestern Front",
@@ -1632,6 +1777,16 @@
   "wikidata": "Q1065",
   "aka": [
    "UN"
+  ]
+ },
+ "unit-united-nations-atomic-energy-commission": {
+  "name": "United Nations Atomic Energy Commission",
+  "kind": "UN commission on atomic energy control",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/United_Nations_Atomic_Energy_Commission",
+  "aka": [
+   "UNAEC"
   ]
  },
  "unit-united-nations-general-assembly": {
@@ -1815,6 +1970,17 @@
   "aka": [
    "WPA",
    "Work Projects Administration"
+  ]
+ },
+ "unit-world-bank": {
+  "name": "World Bank",
+  "kind": "international development bank",
+  "nation": "international",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/World_Bank",
+  "aka": [
+   "International Bank for Reconstruction and Development",
+   "IBRD"
   ]
  },
  "unit-xii-corps-united-states": {

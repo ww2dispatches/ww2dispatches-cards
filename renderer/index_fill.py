@@ -1,78 +1,99 @@
 #!/usr/bin/env python3
-"""Fill Wikidata numbers and place coordinates in entities/ from Wikipedia.
+"""Fill Wikidata numbers and place coordinates in entities/ from Wikidata.
 
 Run from the repo root:  python3 renderer/index_fill.py
-For every entity whose `source` is an English Wikipedia page and whose `wikidata`
-is null, asks Wikipedia for that page's Wikidata number (and, for places with no
-coordinates, its coordinates) and writes them in. It never guesses: a missing
-page, or a page that redirects to a different title, is listed for a person to
-look at and left unchanged. Values are copied from the page, per the Index doc.
+For each entity whose `source` is an English Wikipedia page, looks the page up on
+Wikidata by its title (sitelink enwiki). Writes the Q number when `wikidata` is
+null, and for places with no coordinates, the coordinate location (P625).
+It never guesses: a title with no Wikidata item is listed for a person to check.
+Places that already have a Q number get their coordinates from that item.
 """
 import json, os, subprocess, sys, time, urllib.parse
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FILES = ["people", "ships", "units", "aircraft", "machines", "places", "operations"]
-API = "https://en.wikipedia.org/w/api.php"
+API = "https://www.wikidata.org/w/api.php"
 PREFIX = "https://en.wikipedia.org/wiki/"
 
 
-def ask(titles):
-    # curl honors the workspace proxy; Wikipedia rate limits bursts, so back off and retry
-    q = urllib.parse.urlencode({"action": "query", "prop": "pageprops|coordinates", "ppprop": "wikibase_item",
-                                "redirects": 1, "colimit": "max", "format": "json", "titles": "|".join(titles)})
+def get(params):
+    q = urllib.parse.urlencode(dict(params, format="json"))
     for wait in (0, 10, 30, 60):
         time.sleep(wait)
-        out = subprocess.run(["curl", "-sS", "-m", "40", API + "?" + q], capture_output=True, text=True).stdout
+        out = subprocess.run(["curl", "-sS", "-m", "60", "-A", "ww2dispatches-index/1.0 (contact@ww2dispatches.com)",
+                              API + "?" + q], capture_output=True, text=True).stdout
         try:
-            return json.loads(out)["query"]
+            return json.loads(out)["entities"]
         except Exception:
             continue
-    sys.exit("Wikipedia did not answer; nothing more written. Run again later.")
+    sys.exit("Wikidata did not answer; files keep what was written so far. Run again later.")
+
+
+def coord(item):
+    for c in item.get("claims", {}).get("P625", []):
+        v = c.get("mainsnak", {}).get("datavalue", {}).get("value")
+        if v:
+            return round(v["latitude"], 4), round(v["longitude"], 4)
+    return None
 
 
 def main():
-    filled, review = 0, []
+    filled_q, filled_c, review = 0, 0, []
     for name in FILES:
         path = os.path.join(ROOT, "entities", name + ".json")
         if not os.path.exists(path):
             continue
         data = json.load(open(path, encoding="utf-8"))
-        want = {}
+        by_title, by_q = {}, {}
         for eid, e in data.items():
+            place_needs = eid.startswith("place-") and e.get("lat") is None
+            if e.get("wikidata"):
+                if place_needs:
+                    by_q[e["wikidata"]] = eid
+                continue
             src = e.get("source", "")
-            need = not e.get("wikidata") or (eid.startswith("place-") and e.get("lat") is None)
-            if need and src.startswith(PREFIX):
-                want[urllib.parse.unquote(src[len(PREFIX):]).replace("_", " ")] = eid
-            elif need:
+            if src.startswith(PREFIX):
+                by_title[urllib.parse.unquote(src[len(PREFIX):]).replace("_", " ").split("#")[0]] = eid
+            else:
                 review.append(f"{eid}: source is not a Wikipedia page, fill by hand")
-        titles = list(want)
-        for i in range(0, len(titles), 40):
-            q = ask(titles[i:i + 40])
-            moved = {r["from"]: r["to"] for r in q.get("redirects", [])}
-            moved.update({n["from"]: n["to"] for n in q.get("normalized", []) if n["from"] != n["to"].replace("_", " ")})
-            pages = {pg["title"]: pg for pg in q["pages"].values()}
-            for t in titles[i:i + 40]:
-                eid = want[t]
-                if t in moved:
-                    review.append(f"{eid}: '{t}' redirects to '{moved[t]}'. Confirm it is the same thing, then fix the source link")
+        titles = list(by_title)
+        for i in range(0, len(titles), 50):
+            ents = get({"action": "wbgetentities", "sites": "enwiki", "titles": "|".join(titles[i:i + 50]),
+                        "props": "sitelinks|claims", "sitefilter": "enwiki", "normalize": 1})
+            seen = set()
+            for qid, item in ents.items():
+                t = item.get("sitelinks", {}).get("enwiki", {}).get("title")
+                if not t or qid.startswith("-"):
                     continue
-                pg = pages.get(t)
-                if pg is None or "missing" in pg:
-                    review.append(f"{eid}: no Wikipedia page titled '{t}'")
+                eid = by_title.get(t)
+                if not eid:
                     continue
-                e = data[eid]
-                qn = pg.get("pageprops", {}).get("wikibase_item")
-                if qn and not e.get("wikidata"):
-                    e["wikidata"] = qn; filled += 1
-                if eid.startswith("place-") and e.get("lat") is None:
-                    c = pg.get("coordinates")
+                seen.add(t)
+                data[eid]["wikidata"] = qid; filled_q += 1
+                if eid.startswith("place-") and data[eid].get("lat") is None:
+                    c = coord(item)
                     if c:
-                        e["lat"], e["lon"] = round(c[0]["lat"], 4), round(c[0]["lon"], 4)
+                        data[eid]["lat"], data[eid]["lon"] = c; filled_c += 1
                     else:
-                        review.append(f"{eid}: page has no coordinates")
-            time.sleep(2)
-        json.dump(data, open(path, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
-    print(f"Filled {filled} Wikidata numbers")
+                        review.append(f"{eid}: Wikidata item {qid} has no coordinates")
+            for t in titles[i:i + 50]:
+                if t not in seen:
+                    review.append(f"{by_title[t]}: no Wikidata item found for '{t}' (redirect or renamed page?)")
+            json.dump(data, open(path, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
+            time.sleep(1)
+        qs = list(by_q)
+        for i in range(0, len(qs), 50):
+            ents = get({"action": "wbgetentities", "ids": "|".join(qs[i:i + 50]), "props": "claims"})
+            for qid, item in ents.items():
+                eid = by_q.get(qid)
+                c = coord(item) if eid else None
+                if c:
+                    data[eid]["lat"], data[eid]["lon"] = c; filled_c += 1
+                elif eid:
+                    review.append(f"{eid}: Wikidata item {qid} has no coordinates")
+            json.dump(data, open(path, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
+            time.sleep(1)
+    print(f"Filled {filled_q} Wikidata numbers and {filled_c} coordinates")
     for r in review:
         print("REVIEW", r)
 

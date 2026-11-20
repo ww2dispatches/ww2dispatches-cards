@@ -120,6 +120,13 @@
   "source": "https://en.wikipedia.org/wiki/Crusader_tank",
   "wikidata": "Q696083"
  },
+ "machine-der-fuehrer-s-face": {
+  "name": "Der Fuehrer's Face",
+  "kind": "Disney propaganda cartoon, 1943",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Der_Fuehrer%27s_Face"
+ },
  "machine-enigma-machine": {
   "name": "Enigma machine",
   "kind": "cipher machine",
@@ -381,6 +388,16 @@
   "nation": "Japan",
   "source": "https://en.wikipedia.org/wiki/Shinyo_(suicide_motorboat)",
   "wikidata": "Q2064422"
+ },
+ "machine-squid-weapon": {
+  "name": "Squid (weapon)",
+  "kind": "ahead throwing anti submarine mortar",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Squid_(weapon)",
+  "aka": [
+   "Squid"
+  ]
  },
  "machine-sulfadiazine": {
   "name": "Sulfadiazine",

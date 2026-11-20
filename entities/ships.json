@@ -75,6 +75,17 @@
   "wikidata": "Q156962",
   "source": "https://en.wikipedia.org/wiki/German_aircraft_carrier_Graf_Zeppelin"
  },
+ "ship-german-auxiliary-cruiser-komet": {
+  "name": "German auxiliary cruiser Komet",
+  "kind": "auxiliary cruiser (commerce raider)",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_auxiliary_cruiser_Komet",
+  "aka": [
+   "Komet",
+   "Schiff 45"
+  ]
+ },
  "ship-german-auxiliary-cruiser-thor": {
   "name": "Thor",
   "kind": "German auxiliary cruiser, merchant raider",
@@ -348,6 +359,16 @@
   "wikidata": "Q2654524",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-862"
  },
+ "ship-german-submarine-u-877": {
+  "name": "German submarine U-877",
+  "kind": "Type IXC/40 U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-877",
+  "aka": [
+   "U-877"
+  ]
+ },
  "ship-german-submarine-u-99-1940": {
   "name": "U-99",
   "kind": "Type VIIB U-boat",
@@ -370,6 +391,17 @@
   "source": "https://en.wikipedia.org/wiki/HMAS_Nestor",
   "aka": [
    "Nestor"
+  ]
+ },
+ "ship-hmcs-st-thomas": {
+  "name": "HMCS St. Thomas (K488)",
+  "kind": "Castle-class corvette",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMCS_St._Thomas",
+  "aka": [
+   "HMCS St. Thomas",
+   "St. Thomas"
   ]
  },
  "ship-hmnzs-achilles": {
@@ -1042,6 +1074,13 @@
   "source": "https://en.wikipedia.org/wiki/Japanese_submarine_HA._19",
   "wikidata": "Q5628881"
  },
+ "ship-japanese-submarine-i-1": {
+  "name": "Japanese submarine I-1",
+  "kind": "Imperial Japanese Navy submarine",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-1"
+ },
  "ship-japanese-submarine-i-16": {
   "name": "I-16",
   "kind": "submarine",
@@ -1124,6 +1163,13 @@
   "nation": "Japan",
   "wikidata": "Q2704222",
   "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-26"
+ },
+ "ship-japanese-submarine-i-3": {
+  "name": "Japanese submarine I-3",
+  "kind": "Imperial Japanese Navy submarine",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-3"
  },
  "ship-japanese-submarine-i-70": {
   "name": "I-70",
@@ -1217,6 +1263,16 @@
   "nation": "Japan",
   "wikidata": "Q241858",
   "source": "https://en.wikipedia.org/wiki/Japanese_aircraft_carrier_Shinano"
+ },
+ "ship-soviet-cruiser-krasny-kavkaz": {
+  "name": "Krasny Kavkaz",
+  "kind": "Soviet light cruiser, Black Sea Fleet",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Soviet_cruiser_Krasny_Kavkaz",
+  "aka": [
+   "Krasnyi Kavkaz"
+  ]
  },
  "ship-ss-absaroka": {
   "name": "SS Absaroka",
@@ -1371,6 +1427,13 @@
   "nation": "US",
   "wikidata": "Q506022",
   "source": "https://en.wikipedia.org/wiki/USS_Arizona"
+ },
+ "ship-uss-astoria-ca-34": {
+  "name": "USS Astoria (CA-34)",
+  "kind": "U.S. Navy heavy cruiser",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Astoria_(CA-34)"
  },
  "ship-uss-augusta-ca-31": {
   "name": "USS Augusta (CA-31)",
@@ -1654,6 +1717,14 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/USS_Omaha_(CL-4)",
   "wikidata": "Q1571740"
+ },
+ "ship-uss-orestes-agp-10": {
+  "name": "USS Orestes (AGP-10)",
+  "kind": "U.S. Navy motor torpedo boat tender",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Orestes_(AGP-10)",
+  "note": "The hull number title redirects to the article USS Orestes; id keeps the hull number as the registry does for ships."
  },
  "ship-uss-panay-pr-5": {
   "name": "USS Panay (PR-5)",
