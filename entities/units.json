@@ -1,4 +1,11 @@
 {
+ "unit-101st-airborne-division": {
+  "name": "101st Airborne Division",
+  "kind": "U.S. Army airborne division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/101st_Airborne_Division"
+ },
  "unit-102nd-motorized-division-trento": {
   "name": "Trento Division",
   "kind": "Italian motorised division",
@@ -798,6 +805,16 @@
    "code talkers"
   ]
  },
+ "unit-corpo-truppe-volontarie": {
+  "name": "Corpo Truppe Volontarie",
+  "kind": "Italian expeditionary force in the Spanish Civil War",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Corpo_Truppe_Volontarie",
+  "aka": [
+   "CTV"
+  ]
+ },
  "unit-czechoslovak-government-in-exile": {
   "name": "Czechoslovak government-in-exile",
   "kind": "government in exile, London",
@@ -898,6 +915,17 @@
   "nation": "Canada",
   "source": "https://en.wikipedia.org/wiki/First_Canadian_Army",
   "wikidata": null
+ },
+ "unit-flying-tigers": {
+  "name": "Flying Tigers",
+  "kind": "American Volunteer Group fighter unit in Chinese service",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Flying_Tigers",
+  "aka": [
+   "American Volunteer Group",
+   "AVG"
+  ]
  },
  "unit-force-k": {
   "name": "Force K",
@@ -1121,6 +1149,13 @@
   "source": "https://en.wikipedia.org/wiki/Merck_&_Co.",
   "wikidata": null
  },
+ "unit-mi9": {
+  "name": "MI9",
+  "kind": "British escape and evasion intelligence section",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/MI9"
+ },
  "unit-ministry-of-aviation-nazi-germany": {
   "name": "Reich Air Ministry",
   "kind": "German government ministry",
@@ -1258,6 +1293,13 @@
   "nation": "US",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Office_of_Production_Management"
+ },
+ "unit-office-of-war-mobilization": {
+  "name": "Office of War Mobilization",
+  "kind": "U.S. wartime home front agency",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Office_of_War_Mobilization"
  },
  "unit-panfilov-s-twenty-eight-guardsmen": {
   "name": "Panfilov's 28",

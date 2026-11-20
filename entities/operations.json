@@ -98,6 +98,13 @@
    "Financial Agreement of 1945"
   ]
  },
+ "op-arcadia-conference": {
+  "name": "Arcadia Conference",
+  "kind": "Allied conference in Washington",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Arcadia_Conference"
+ },
  "op-arctic-convoys-of-world-war-ii": {
   "name": "Arctic convoys",
   "kind": "Allied convoy route",
@@ -509,6 +516,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Naples_in_World_War_II"
  },
+ "op-bombing-of-rangoon-in-world-war-ii": {
+  "name": "Bombing of Rangoon in World War II",
+  "kind": "Japanese air raids on Rangoon",
+  "nation": "Burma",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Rangoon_in_World_War_II"
+ },
  "op-bombing-of-singapore-1941": {
   "name": "Bombing of Singapore (1941)",
   "kind": "air raid",
@@ -572,6 +586,13 @@
   "nation": "worldwide",
   "source": "https://en.wikipedia.org/wiki/Casablanca_Conference",
   "wikidata": null
+ },
+ "op-catalonia-offensive": {
+  "name": "Catalonia Offensive",
+  "kind": "Spanish Civil War offensive",
+  "nation": "Spain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Catalonia_Offensive"
  },
  "op-charter-of-the-united-nations": {
   "name": "United Nations Charter",
@@ -815,6 +836,16 @@
    "Hoare-Laval Plan"
   ]
  },
+ "op-international-military-tribunal-for-the-far-east": {
+  "name": "International Military Tribunal for the Far East",
+  "kind": "war crimes tribunal",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/International_Military_Tribunal_for_the_Far_East",
+  "aka": [
+   "Tokyo Trial"
+  ]
+ },
  "op-internment-of-german-americans": {
   "name": "Internment of German Americans",
   "kind": "enemy alien program",
@@ -1022,6 +1053,16 @@
    "Baugnez massacre"
   ]
  },
+ "op-manchester-blitz": {
+  "name": "Manchester Blitz",
+  "kind": "German bombing of Manchester",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Manchester_Blitz",
+  "aka": [
+   "Christmas Blitz"
+  ]
+ },
  "op-manhattan-project": {
   "name": "Manhattan Project",
   "kind": "atomic bomb program",
@@ -1223,6 +1264,13 @@
   "aka": [
    "Cockleshell Heroes"
   ]
+ },
+ "op-operation-greif": {
+  "name": "Operation Greif",
+  "kind": "German false flag commando operation",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Greif"
  },
  "op-operation-kraai": {
   "name": "Operation Kraai",

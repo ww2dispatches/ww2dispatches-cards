@@ -150,6 +150,16 @@
    "Do 217"
   ]
  },
+ "aircraft-douglas-c-47-skytrain": {
+  "name": "Douglas C-47 Skytrain",
+  "kind": "military transport aircraft",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Douglas_C-47_Skytrain",
+  "aka": [
+   "Dakota"
+  ]
+ },
  "aircraft-douglas-sbd-dauntless": {
   "name": "Douglas SBD Dauntless",
   "kind": "U.S. Navy dive bomber",
