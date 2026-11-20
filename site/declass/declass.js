@@ -137,7 +137,8 @@
     if (id === 'sHome') { setTimeout(coachHomeNow, 450); setTimeout(() => { if ($('sHome').classList.contains('on') && $('tourDim').hidden !== false) homeStamps(); }, 1300); }
   }
   function toast(t) { const el = $('toast'); el.textContent = t; el.hidden = false; clearTimeout(toast.t); toast.t = setTimeout(() => { el.hidden = true; }, 2800); }
-  function nudge(el) { sfx('locked'); el.classList.remove('shake'); void el.offsetWidth; el.classList.add('shake'); }
+  // The shake clears itself when it ends, so it never lingers and replays later (19 Nov 2026 check over).
+  function nudge(el) { sfx('locked'); el.classList.remove('shake'); void el.offsetWidth; el.classList.add('shake'); el.addEventListener('animationend', () => el.classList.remove('shake'), { once: true }); setTimeout(() => el.classList.remove('shake'), 700); }
 
   // What the player holds: card id -> {still: {finish: n}, living: {finish: n}, n}
   function holdings(pulls) {
