@@ -6,6 +6,27 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/126th_Infantry_Regiment_(United_States)"
  },
+ "unit-15th-panzer-division": {
+  "name": "15th Panzer Division",
+  "kind": "German panzer division",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/15th_Panzer_Division",
+  "wikidata": null
+ },
+ "unit-16th-army-soviet-union": {
+  "name": "Soviet 16th Army",
+  "kind": "Soviet field army",
+  "nation": "Soviet Union",
+  "source": "https://en.wikipedia.org/wiki/16th_Army_(Soviet_Union)",
+  "wikidata": null
+ },
+ "unit-1st-panzer-army": {
+  "name": "First Panzer Army",
+  "kind": "German panzer army",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/1st_Panzer_Army",
+  "wikidata": null
+ },
  "unit-21st-panzer-division": {
   "name": "21st Panzer Division",
   "kind": "armored division",
@@ -25,6 +46,13 @@
   "kind": "French armored division",
   "nation": "France",
   "source": "https://en.wikipedia.org/wiki/2nd_Armored_Division_(France)",
+  "wikidata": null
+ },
+ "unit-2nd-new-zealand-division": {
+  "name": "New Zealand Division",
+  "kind": "New Zealand infantry division",
+  "nation": "New Zealand",
+  "source": "https://en.wikipedia.org/wiki/2nd_New_Zealand_Division",
   "wikidata": null
  },
  "unit-2nd-panzer-army": {
@@ -58,12 +86,39 @@
    "Pioneer Mustang Group"
   ]
  },
+ "unit-37th-army-soviet-union": {
+  "name": "Soviet 37th Army",
+  "kind": "Soviet field army",
+  "nation": "Soviet Union",
+  "source": "https://en.wikipedia.org/wiki/37th_Army_(Soviet_Union)",
+  "wikidata": null
+ },
+ "unit-3rd-panzer-army": {
+  "name": "3rd Panzer Group",
+  "kind": "German panzer army",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/3rd_Panzer_Army",
+  "wikidata": null,
+  "aka": [
+   "3rd Panzer Army"
+  ]
+ },
  "unit-497th-bomb-group": {
   "name": "497th Bomb Group",
   "kind": "U.S. Army Air Forces bomb group",
   "nation": "US",
   "wikidata": "Q4638763",
   "source": "https://en.wikipedia.org/wiki/497th_Air_Expeditionary_Group"
+ },
+ "unit-4th-panzer-army": {
+  "name": "4th Panzer Group",
+  "kind": "German panzer army",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/4th_Panzer_Army",
+  "wikidata": null,
+  "aka": [
+   "4th Panzer Army"
+  ]
  },
  "unit-73rd-bombardment-wing": {
   "name": "73rd Bombardment Wing",
@@ -79,6 +134,13 @@
   "source": "https://en.wikipedia.org/wiki/79th_Armoured_Division",
   "wikidata": null
  },
+ "unit-7th-armoured-brigade-united-kingdom": {
+  "name": "7th Armoured Brigade",
+  "kind": "British armoured brigade",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/7th_Armoured_Brigade_(United_Kingdom)",
+  "wikidata": null
+ },
  "unit-84th-training-command": {
   "name": "84th Infantry Division",
   "kind": "U.S. Army infantry division",
@@ -86,6 +148,23 @@
   "source": "https://en.wikipedia.org/wiki/84th_Training_Command",
   "wikidata": null,
   "note": "Wikipedia article is the later 84th Training Command, the same unit as the wartime 84th Infantry Division."
+ },
+ "unit-9th-army-wehrmacht": {
+  "name": "German Ninth Army",
+  "kind": "German field army",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/9th_Army_(Wehrmacht)",
+  "wikidata": null,
+  "aka": [
+   "Ninth Army"
+  ]
+ },
+ "unit-afrika-korps": {
+  "name": "Afrika Korps",
+  "kind": "German corps",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Afrika_Korps",
+  "wikidata": null
  },
  "unit-anti-fascist-council-for-the-national-liberation-of-yugoslavia": {
   "name": "AVNOJ",
@@ -102,6 +181,13 @@
   "kind": "U.S. Army relief organization",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Army_Emergency_Relief",
+  "wikidata": null
+ },
+ "unit-army-group-centre": {
+  "name": "Army Group Centre",
+  "kind": "German army group",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Army_Group_Centre",
   "wikidata": null
  },
  "unit-army-group-south": {
@@ -144,6 +230,13 @@
   "kind": "U.S. Army Air Forces numbered air force",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Eighth_Air_Force",
+  "wikidata": null
+ },
+ "unit-eighth-army-united-kingdom": {
+  "name": "Eighth Army",
+  "kind": "British field army",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/Eighth_Army_(United_Kingdom)",
   "wikidata": null
  },
  "unit-fast-carrier-task-force": {
@@ -211,6 +304,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Home_Guard_(United_Kingdom)"
  },
+ "unit-home-ministry": {
+  "name": "Home Ministry (Japan)",
+  "kind": "Japanese government ministry",
+  "nation": "Japan",
+  "source": "https://en.wikipedia.org/wiki/Home_Ministry",
+  "wikidata": null
+ },
  "unit-johns-hopkins-university-applied-physics-laboratory": {
   "name": "Johns Hopkins Applied Physics Laboratory",
   "kind": "research laboratory",
@@ -232,6 +332,23 @@
   "source": "https://en.wikipedia.org/wiki/League_of_Nations",
   "wikidata": null
  },
+ "unit-mediterranean-fleet": {
+  "name": "Mediterranean Fleet",
+  "kind": "Royal Navy fleet",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/Mediterranean_Fleet",
+  "wikidata": null
+ },
+ "unit-ministry-of-aviation-nazi-germany": {
+  "name": "Reich Air Ministry",
+  "kind": "German government ministry",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Ministry_of_Aviation_(Nazi_Germany)",
+  "wikidata": null,
+  "aka": [
+   "RLM"
+  ]
+ },
  "unit-ministry-of-the-navy-japan": {
   "name": "Ministry of the Navy (Japan)",
   "kind": "government ministry",
@@ -244,6 +361,13 @@
   "kind": "U.S. federal agency",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/National_Archives_and_Records_Administration",
+  "wikidata": null
+ },
+ "unit-nato-military-committee": {
+  "name": "NATO Military Committee",
+  "kind": "NATO military body",
+  "nation": "worldwide",
+  "source": "https://en.wikipedia.org/wiki/NATO_Military_Committee",
   "wikidata": null
  },
  "unit-ninth-air-force": {
@@ -281,6 +405,14 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Office_of_Civilian_Defense"
  },
+ "unit-panfilov-s-twenty-eight-guardsmen": {
+  "name": "Panfilov's 28",
+  "kind": "legendary Soviet guardsmen",
+  "nation": "Soviet Union",
+  "source": "https://en.wikipedia.org/wiki/Panfilov's_Twenty-Eight_Guardsmen",
+  "wikidata": null,
+  "note": "The Wikipedia article treats the story as largely fabricated, as the card does."
+ },
  "unit-reich-security-main-office": {
   "name": "Reich Security Main Office",
   "kind": "Nazi security agency",
@@ -289,6 +421,16 @@
   "wikidata": null,
   "aka": [
    "RSHA"
+  ]
+ },
+ "unit-scouting-america": {
+  "name": "Boy Scouts of America",
+  "kind": "youth organization",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Scouting_America",
+  "wikidata": null,
+  "aka": [
+   "Boy Scouts"
   ]
  },
  "unit-selective-service-system": {
@@ -338,6 +480,20 @@
   "nation": "US",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/War_Manpower_Commission"
+ },
+ "unit-war-production-board": {
+  "name": "War Production Board",
+  "kind": "U.S. government agency",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/War_Production_Board",
+  "wikidata": null
+ },
+ "unit-western-front-soviet-union": {
+  "name": "Western Front",
+  "kind": "Soviet front",
+  "nation": "Soviet Union",
+  "source": "https://en.wikipedia.org/wiki/Western_Front_(Soviet_Union)",
+  "wikidata": null
  },
  "unit-works-progress-administration": {
   "name": "Works Progress Administration",

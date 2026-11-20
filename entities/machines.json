@@ -21,6 +21,13 @@
    "V2"
   ]
  },
+ "machine-allison-v-1710": {
+  "name": "Allison V-1710",
+  "kind": "V-12 aircraft engine",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Allison_V-1710",
+  "wikidata": null
+ },
  "machine-blalock-thomas-taussig-shunt": {
   "name": "Blalock Thomas Taussig shunt",
   "kind": "surgical procedure",
@@ -48,6 +55,13 @@
    "CP-1"
   ]
  },
+ "machine-crusader-tank": {
+  "name": "Crusader tank",
+  "kind": "cruiser tank",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/Crusader_tank",
+  "wikidata": null
+ },
  "machine-enigma-machine": {
   "name": "Enigma machine",
   "kind": "cipher machine",
@@ -59,11 +73,38 @@
    "M4"
   ]
  },
+ "machine-gaz-aa": {
+  "name": "GAZ AA",
+  "kind": "light truck",
+  "nation": "Soviet Union",
+  "source": "https://en.wikipedia.org/wiki/GAZ-AA",
+  "wikidata": null,
+  "aka": [
+   "polutorka"
+  ]
+ },
  "machine-general-electric-j31": {
   "name": "General Electric J31",
   "kind": "turbojet engine",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/General_Electric_J31",
+  "wikidata": null
+ },
+ "machine-ko-hyoteki-class-submarine": {
+  "name": "Type A midget submarine",
+  "kind": "two man midget submarine",
+  "nation": "Japan",
+  "source": "https://en.wikipedia.org/wiki/Kō-hyōteki-class_submarine",
+  "wikidata": null,
+  "aka": [
+   "Ko-hyoteki"
+  ]
+ },
+ "machine-m3-stuart": {
+  "name": "M3 Stuart",
+  "kind": "light tank",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/M3_Stuart",
   "wikidata": null
  },
  "machine-mark-14-torpedo": {
@@ -73,6 +114,13 @@
   "source": "https://en.wikipedia.org/wiki/Mark_14_torpedo",
   "wikidata": null
  },
+ "machine-matilda-ii": {
+  "name": "Matilda",
+  "kind": "infantry tank",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/Matilda_II",
+  "wikidata": null
+ },
  "machine-nazi-concentration-camps-film": {
   "name": "Nazi Concentration Camps",
   "kind": "documentary film",
@@ -80,12 +128,29 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Nazi_Concentration_Camps_(film)"
  },
+ "machine-ordnance-qf-25-pounder": {
+  "name": "25 pounder gun",
+  "kind": "field gun",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/Ordnance_QF_25-pounder",
+  "wikidata": null
+ },
  "machine-pratt-whitney-r-4360-wasp-major": {
   "name": "Pratt and Whitney R-4360",
   "kind": "radial aircraft engine",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Pratt_%26_Whitney_R-4360_Wasp_Major",
   "wikidata": null
+ },
+ "machine-rolls-royce-merlin": {
+  "name": "Rolls-Royce Merlin",
+  "kind": "V-12 aircraft engine",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/Rolls-Royce_Merlin",
+  "wikidata": null,
+  "aka": [
+   "Merlin"
+  ]
  },
  "machine-sherman-crab": {
   "name": "Sherman Crab",
@@ -137,6 +202,13 @@
   "aka": [
    "V-2"
   ]
+ },
+ "machine-valentine-tank": {
+  "name": "Valentine tank",
+  "kind": "infantry tank",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/Valentine_tank",
+  "wikidata": null
  },
  "machine-wright-r-1820-cyclone": {
   "name": "Wright R-1820 Cyclone",

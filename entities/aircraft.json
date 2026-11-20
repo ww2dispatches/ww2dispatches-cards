@@ -55,6 +55,16 @@
    "Black Cat"
   ]
  },
+ "aircraft-curtiss-f11c-goshawk": {
+  "name": "Curtiss Hawk II",
+  "kind": "biplane fighter",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Curtiss_F11C_Goshawk",
+  "wikidata": null,
+  "aka": [
+   "Curtiss F11C Goshawk"
+  ]
+ },
  "aircraft-curtiss-sb2c-helldiver": {
   "name": "Curtiss SB2C Helldiver",
   "kind": "dive bomber",
@@ -64,6 +74,13 @@
   "aka": [
    "Helldiver"
   ]
+ },
+ "aircraft-de-havilland-dh-108": {
+  "name": "de Havilland DH 108",
+  "kind": "experimental jet",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/De_Havilland_DH_108",
+  "wikidata": null
  },
  "aircraft-de-havilland-mosquito": {
   "name": "de Havilland Mosquito",
@@ -86,6 +103,13 @@
   ],
   "note": "'de Havilland Sea Vampire' redirects to this article."
  },
+ "aircraft-fokker-d-viii": {
+  "name": "Fokker D.VIII",
+  "kind": "WWI fighter",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Fokker_D.VIII",
+  "wikidata": null
+ },
  "aircraft-grumman-tbf-avenger": {
   "name": "Grumman TBF Avenger",
   "kind": "American carrier torpedo bomber",
@@ -96,6 +120,13 @@
    "TBM Avenger"
   ]
  },
+ "aircraft-heinkel-he-177-greif": {
+  "name": "Heinkel He 177",
+  "kind": "heavy bomber",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Heinkel_He_177_Greif",
+  "wikidata": null
+ },
  "aircraft-hughes-h-4-hercules": {
   "name": "Hughes H-4 Hercules",
   "kind": "flying boat",
@@ -104,6 +135,16 @@
   "wikidata": null,
   "aka": [
    "Spruce Goose"
+  ]
+ },
+ "aircraft-junkers-ju-87": {
+  "name": "Junkers Ju 87 Stuka",
+  "kind": "dive bomber",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Junkers_Ju_87",
+  "wikidata": null,
+  "aka": [
+   "Stuka"
   ]
  },
  "aircraft-lockheed-p-38-lightning": {
@@ -140,6 +181,13 @@
    "FD-1 Phantom",
    "FH Phantom"
   ]
+ },
+ "aircraft-messerschmitt-me-210": {
+  "name": "Messerschmitt Me 210",
+  "kind": "heavy fighter",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Messerschmitt_Me_210",
+  "wikidata": null
  },
  "aircraft-mitsubishi-a6m-zero": {
   "name": "Mitsubishi A6M Zero",
@@ -220,6 +268,16 @@
   "nation": "Britain",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Short_Stirling"
+ },
+ "aircraft-supermarine-spitfire": {
+  "name": "Supermarine Spitfire",
+  "kind": "fighter",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/Supermarine_Spitfire",
+  "wikidata": null,
+  "aka": [
+   "Spitfire"
+  ]
  },
  "aircraft-vickers-wellington": {
   "name": "Vickers Wellington",

@@ -1,4 +1,18 @@
 {
+ "op-1940-united-states-presidential-election": {
+  "name": "1940 presidential election",
+  "kind": "U.S. election",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/1940_United_States_presidential_election",
+  "wikidata": null
+ },
+ "op-1941-october-revolution-parade": {
+  "name": "1941 Revolution Day parade",
+  "kind": "military parade",
+  "nation": "Soviet Union",
+  "source": "https://en.wikipedia.org/wiki/1941_October_Revolution_Parade",
+  "wikidata": null
+ },
  "op-1943-cairo-declaration": {
   "name": "1943 Cairo Declaration",
   "kind": "declaration",
@@ -71,6 +85,13 @@
   "nation": "Britain",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Battle_of_Berlin_(RAF_campaign)"
+ },
+ "op-battle-of-britain": {
+  "name": "Battle of Britain",
+  "kind": "air campaign",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Britain",
+  "wikidata": null
  },
  "op-battle-of-buna-gona": {
   "name": "Battle of Buna Gona",
@@ -240,12 +261,29 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Continuation_War"
  },
+ "op-convoy-hx-156": {
+  "name": "Convoy HX 156",
+  "kind": "Atlantic convoy",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/Convoy_HX_156",
+  "wikidata": null
+ },
  "op-convoy-hx-90": {
   "name": "Convoy HX 90",
   "kind": "Atlantic convoy",
   "nation": "Britain",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Convoy_HX_90"
+ },
+ "op-coventry-blitz": {
+  "name": "Coventry Blitz",
+  "kind": "German bombing raid",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/Coventry_Blitz",
+  "wikidata": null,
+  "aka": [
+   "Moonlight Sonata"
+  ]
  },
  "op-dekemvriana": {
   "name": "Dekemvriana",
@@ -271,6 +309,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Flight_19"
  },
+ "op-german-invasion-of-greece": {
+  "name": "German invasion of Greece",
+  "kind": "campaign",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/German_invasion_of_Greece",
+  "wikidata": null
+ },
  "op-gozen-kaigi": {
   "name": "Gozen Kaigi",
   "kind": "imperial conference",
@@ -280,6 +325,13 @@
   "aka": [
    "Imperial Conference"
   ]
+ },
+ "op-greco-italian-war": {
+  "name": "Greco Italian War",
+  "kind": "war",
+  "nation": "worldwide",
+  "source": "https://en.wikipedia.org/wiki/Greco-Italian_War",
+  "wikidata": null
  },
  "op-guadalcanal-campaign": {
   "name": "Guadalcanal campaign",
@@ -305,11 +357,43 @@
    "Justice Case"
   ]
  },
+ "op-kindertransport": {
+  "name": "Kindertransport",
+  "kind": "rescue of Jewish children",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/Kindertransport",
+  "wikidata": null
+ },
  "op-korean-war": {
   "name": "Korean War",
   "kind": "war",
   "nation": "worldwide",
   "source": "https://en.wikipedia.org/wiki/Korean_War",
+  "wikidata": null
+ },
+ "op-kristallnacht": {
+  "name": "Kristallnacht",
+  "kind": "anti Jewish pogrom",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Kristallnacht",
+  "wikidata": null,
+  "aka": [
+   "Night of Broken Glass",
+   "Reichskristallnacht"
+  ]
+ },
+ "op-lend-lease": {
+  "name": "Lend Lease",
+  "kind": "U.S. arms aid program",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Lend-Lease",
+  "wikidata": null
+ },
+ "op-liberation-of-paris": {
+  "name": "Liberation of Paris",
+  "kind": "battle",
+  "nation": "France",
+  "source": "https://en.wikipedia.org/wiki/Liberation_of_Paris",
   "wikidata": null
  },
  "op-liberation-of-strasbourg": {
@@ -354,6 +438,27 @@
   "wikidata": null,
   "note": "Wikipedia article covers Navy Day in several nations; our cards mean the U.S. observance of 27 October."
  },
+ "op-neutrality-patrol": {
+  "name": "Neutrality Patrol",
+  "kind": "U.S. Navy patrol",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Neutrality_Patrol",
+  "wikidata": null
+ },
+ "op-normandy-landings": {
+  "name": "Normandy landings",
+  "kind": "amphibious invasion",
+  "nation": "worldwide",
+  "source": "https://en.wikipedia.org/wiki/Normandy_landings",
+  "wikidata": null
+ },
+ "op-northern-patrol": {
+  "name": "Northern Patrol",
+  "kind": "Royal Navy blockade patrol",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/Northern_Patrol",
+  "wikidata": null
+ },
  "op-nuremberg-rallies": {
   "name": "Nuremberg rallies",
   "kind": "Nazi Party rallies",
@@ -367,6 +472,23 @@
   "nation": "Allied",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Nuremberg_trials"
+ },
+ "op-ohi-day": {
+  "name": "Ochi Day",
+  "kind": "Greek national day",
+  "nation": "Greece",
+  "source": "https://en.wikipedia.org/wiki/Ohi_Day",
+  "wikidata": null,
+  "aka": [
+   "Ohi Day"
+  ]
+ },
+ "op-operation-battleaxe": {
+  "name": "Operation Battleaxe",
+  "kind": "British offensive",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/Operation_Battleaxe",
+  "wikidata": null
  },
  "op-operation-crossbow": {
   "name": "Operation Crossbow",
@@ -388,6 +510,13 @@
   "nation": "Germany",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Operation_Lighthouse_(1937)"
+ },
+ "op-operation-mincemeat": {
+  "name": "Operation Mincemeat",
+  "kind": "deception operation",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/Operation_Mincemeat",
+  "wikidata": null
  },
  "op-operation-torch": {
   "name": "Operation Torch",
@@ -430,12 +559,48 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Rumbula_massacre"
  },
+ "op-second-battle-of-el-alamein": {
+  "name": "Second Battle of El Alamein",
+  "kind": "battle",
+  "nation": "worldwide",
+  "source": "https://en.wikipedia.org/wiki/Second_Battle_of_El_Alamein",
+  "wikidata": null,
+  "aka": [
+   "Operation Lightfoot",
+   "Alamein"
+  ]
+ },
  "op-second-cairo-conference": {
   "name": "Second Cairo Conference",
   "kind": "Allied conference with Turkey, December 1943",
   "nation": "US",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Second_Cairo_Conference"
+ },
+ "op-selective-training-and-service-act-of-1940": {
+  "name": "Selective Training and Service Act",
+  "kind": "U.S. peacetime draft law",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Selective_Training_and_Service_Act_of_1940",
+  "wikidata": null,
+  "aka": [
+   "1940 draft",
+   "draft lottery"
+  ]
+ },
+ "op-siege-of-leningrad": {
+  "name": "Siege of Leningrad",
+  "kind": "siege",
+  "nation": "worldwide",
+  "source": "https://en.wikipedia.org/wiki/Siege_of_Leningrad",
+  "wikidata": null
+ },
+ "op-siege-of-tobruk": {
+  "name": "Siege of Tobruk",
+  "kind": "siege",
+  "nation": "worldwide",
+  "source": "https://en.wikipedia.org/wiki/Siege_of_Tobruk",
+  "wikidata": null
  },
  "op-southampton-blitz": {
   "name": "Southampton Blitz",
@@ -530,6 +695,13 @@
   "nation": "Finland",
   "wikidata": "Q134949",
   "source": "https://en.wikipedia.org/wiki/Winter_War"
+ },
+ "op-witchcraft-act-1735": {
+  "name": "Witchcraft Act 1735",
+  "kind": "British law",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/Witchcraft_Act_1735",
+  "wikidata": null
  },
  "op-yip-yip-yaphank": {
   "name": "Yip Yip Yaphank",
