@@ -3,7 +3,7 @@
   "name": "Battle of the Santa Cruz Islands",
   "kind": "naval battle",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q699669",
   "source": "https://en.wikipedia.org/wiki/Battle_of_the_Santa_Cruz_Islands",
   "note": "Nation is the side the name is told from in our records; both sides are in nations on each event."
  },
@@ -11,35 +11,35 @@
   "name": "Doolittle Raid",
   "kind": "air raid",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q713516",
   "source": "https://en.wikipedia.org/wiki/Doolittle_Raid"
  },
  "op-guadalcanal-campaign": {
   "name": "Guadalcanal campaign",
   "kind": "campaign",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q217145",
   "source": "https://en.wikipedia.org/wiki/Guadalcanal_campaign"
  },
  "op-liverpool-blitz": {
   "name": "Liverpool Blitz",
   "kind": "bombing campaign",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q6658321",
   "source": "https://en.wikipedia.org/wiki/Liverpool_Blitz"
  },
  "op-battle-of-rostov-1941": {
   "name": "Battle of Rostov (1941)",
   "kind": "battle",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q169436",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Rostov_(1941)"
  },
  "op-tehran-conference": {
   "name": "Tehran Conference",
   "kind": "Allied conference",
   "nation": "worldwide",
-  "wikidata": null,
+  "wikidata": "Q150974",
   "source": "https://en.wikipedia.org/wiki/Tehran_Conference",
   "aka": [
    "Eureka"
@@ -49,7 +49,7 @@
   "name": "Winter War",
   "kind": "war",
   "nation": "Finland",
-  "wikidata": null,
+  "wikidata": "Q134949",
   "source": "https://en.wikipedia.org/wiki/Winter_War"
  },
  "op-us-coffee-rationing": {
