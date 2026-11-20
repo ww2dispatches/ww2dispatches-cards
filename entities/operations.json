@@ -1,4 +1,112 @@
 {
+ "op-1943-cairo-declaration": {
+  "name": "1943 Cairo Declaration",
+  "kind": "declaration",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1943_Cairo_Declaration",
+  "aka": [
+   "Cairo Communique"
+  ]
+ },
+ "op-aarhus-air-raid": {
+  "name": "Aarhus air raid",
+  "kind": "air raid",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/Aarhus_air_raid",
+  "wikidata": null
+ },
+ "op-air-raid-on-bari": {
+  "name": "Air raid on Bari",
+  "kind": "air raid",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Air_raid_on_Bari"
+ },
+ "op-army-navy-game": {
+  "name": "Army Navy Game",
+  "kind": "college football rivalry game",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Army%E2%80%93Navy_Game"
+ },
+ "op-aryanization": {
+  "name": "Aryanization",
+  "kind": "Nazi seizure of Jewish owned property and businesses",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Aryanization"
+ },
+ "op-atomic-bombings-of-hiroshima-and-nagasaki": {
+  "name": "Atomic bombings of Hiroshima and Nagasaki",
+  "kind": "atomic bombing",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Atomic_bombings_of_Hiroshima_and_Nagasaki",
+  "wikidata": null
+ },
+ "op-attack-on-pearl-harbor": {
+  "name": "Attack on Pearl Harbor",
+  "kind": "Japanese carrier attack, 7 December 1941",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Attack_on_Pearl_Harbor"
+ },
+ "op-baseball-color-line": {
+  "name": "Baseball color line",
+  "kind": "exclusion of Black players from organized baseball",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Baseball_color_line"
+ },
+ "op-battle-of-berlin-raf-campaign": {
+  "name": "Battle of Berlin (RAF campaign)",
+  "kind": "bombing campaign",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Berlin_(RAF_campaign)"
+ },
+ "op-battle-of-iwo-jima": {
+  "name": "Battle of Iwo Jima",
+  "kind": "battle",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Iwo_Jima",
+  "wikidata": null
+ },
+ "op-battle-of-midway": {
+  "name": "Battle of Midway",
+  "kind": "naval battle",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Midway",
+  "wikidata": null
+ },
+ "op-battle-of-nanking": {
+  "name": "Battle of Nanking",
+  "kind": "battle",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Nanking"
+ },
+ "op-battle-of-ormoc-bay": {
+  "name": "Battle of Ormoc Bay",
+  "kind": "naval and air battles off Leyte, 1944",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Ormoc_Bay"
+ },
+ "op-battle-of-point-175": {
+  "name": "Battle of Point 175",
+  "kind": "battle",
+  "nation": "New Zealand",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Point_175"
+ },
+ "op-battle-of-rostov-1941": {
+  "name": "Battle of Rostov (1941)",
+  "kind": "battle",
+  "nation": "Soviet Union",
+  "wikidata": "Q169436",
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Rostov_(1941)"
+ },
  "op-battle-of-santa-cruz-islands": {
   "name": "Battle of the Santa Cruz Islands",
   "kind": "naval battle",
@@ -7,12 +115,97 @@
   "source": "https://en.wikipedia.org/wiki/Battle_of_the_Santa_Cruz_Islands",
   "note": "Nation is the side the name is told from in our records; both sides are in nations on each event."
  },
+ "op-battle-of-skerki-bank": {
+  "name": "Battle of Skerki Bank",
+  "kind": "naval battle",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Skerki_Bank"
+ },
+ "op-battle-of-tassafaronga": {
+  "name": "Battle of Tassafaronga",
+  "kind": "naval battle",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Tassafaronga"
+ },
+ "op-beveridge-report": {
+  "name": "Beveridge Report",
+  "kind": "government report",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Beveridge_Report",
+  "aka": [
+   "Social Insurance and Allied Services"
+  ]
+ },
+ "op-bevin-boys": {
+  "name": "Bevin Boys",
+  "kind": "coal mining conscription scheme",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bevin_Boys"
+ },
+ "op-cairo-conference": {
+  "name": "Cairo Conference",
+  "kind": "conference",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Cairo_Conference"
+ },
+ "op-capture-of-kufra": {
+  "name": "Capture of Kufra",
+  "kind": "siege",
+  "nation": "France",
+  "source": "https://en.wikipedia.org/wiki/Capture_of_Kufra",
+  "wikidata": null,
+  "aka": [
+   "Oath of Kufra"
+  ]
+ },
+ "op-charter-of-the-united-nations": {
+  "name": "United Nations Charter",
+  "kind": "treaty",
+  "nation": "worldwide",
+  "source": "https://en.wikipedia.org/wiki/Charter_of_the_United_Nations",
+  "wikidata": null,
+  "aka": [
+   "UN Charter"
+  ]
+ },
+ "op-convoy-hx-90": {
+  "name": "Convoy HX 90",
+  "kind": "Atlantic convoy",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Convoy_HX_90"
+ },
+ "op-dekemvriana": {
+  "name": "Dekemvriana",
+  "kind": "clashes in Athens, December 1944 to January 1945",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Dekemvriana",
+  "aka": [
+   "December events"
+  ]
+ },
  "op-doolittle-raid": {
   "name": "Doolittle Raid",
   "kind": "air raid",
   "nation": "US",
   "wikidata": "Q713516",
   "source": "https://en.wikipedia.org/wiki/Doolittle_Raid"
+ },
+ "op-gozen-kaigi": {
+  "name": "Gozen Kaigi",
+  "kind": "imperial conference",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Gozen_Kaigi",
+  "aka": [
+   "Imperial Conference"
+  ]
  },
  "op-guadalcanal-campaign": {
   "name": "Guadalcanal campaign",
@@ -21,6 +214,27 @@
   "wikidata": "Q217145",
   "source": "https://en.wikipedia.org/wiki/Guadalcanal_campaign"
  },
+ "op-japanese-air-attacks-on-the-mariana-islands": {
+  "name": "Japanese air attacks on the Mariana Islands",
+  "kind": "air raids",
+  "nation": "Japan",
+  "source": "https://en.wikipedia.org/wiki/Japanese_air_attacks_on_the_Mariana_Islands",
+  "wikidata": null
+ },
+ "op-korean-war": {
+  "name": "Korean War",
+  "kind": "war",
+  "nation": "worldwide",
+  "source": "https://en.wikipedia.org/wiki/Korean_War",
+  "wikidata": null
+ },
+ "op-liberation-of-strasbourg": {
+  "name": "Liberation of Strasbourg",
+  "kind": "battle",
+  "nation": "France",
+  "source": "https://en.wikipedia.org/wiki/Liberation_of_Strasbourg",
+  "wikidata": null
+ },
  "op-liverpool-blitz": {
   "name": "Liverpool Blitz",
   "kind": "bombing campaign",
@@ -28,12 +242,78 @@
   "wikidata": "Q6658321",
   "source": "https://en.wikipedia.org/wiki/Liverpool_Blitz"
  },
- "op-battle-of-rostov-1941": {
-  "name": "Battle of Rostov (1941)",
-  "kind": "battle",
-  "nation": "Soviet Union",
-  "wikidata": "Q169436",
-  "source": "https://en.wikipedia.org/wiki/Battle_of_Rostov_(1941)"
+ "op-manhattan-project": {
+  "name": "Manhattan Project",
+  "kind": "atomic bomb program",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Manhattan_Project",
+  "wikidata": null,
+  "aka": [
+   "Manhattan Engineer District"
+  ]
+ },
+ "op-navy-day": {
+  "name": "Navy Day",
+  "kind": "naval observance",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Navy_Day",
+  "wikidata": null,
+  "note": "Wikipedia article covers Navy Day in several nations; our cards mean the U.S. observance of 27 October."
+ },
+ "op-nuremberg-rallies": {
+  "name": "Nuremberg rallies",
+  "kind": "Nazi Party rallies",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Nuremberg_rallies",
+  "wikidata": null
+ },
+ "op-nuremberg-trials": {
+  "name": "Nuremberg trials",
+  "kind": "war crimes trials",
+  "nation": "Allied",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Nuremberg_trials"
+ },
+ "op-operation-crusader": {
+  "name": "Operation Crusader",
+  "kind": "offensive",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Crusader"
+ },
+ "op-operation-torch": {
+  "name": "Operation Torch",
+  "kind": "amphibious landings",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Operation_Torch",
+  "wikidata": null,
+  "aka": [
+   "Allied landings in North Africa"
+  ]
+ },
+ "op-raf-fauld-explosion": {
+  "name": "RAF Fauld explosion",
+  "kind": "accidental explosion",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/RAF_Fauld_explosion",
+  "wikidata": null,
+  "aka": [
+   "Hanbury Crater"
+  ]
+ },
+ "op-rationing-in-the-united-states": {
+  "name": "Rationing in the United States",
+  "kind": "home front program",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Rationing_in_the_United_States"
+ },
+ "op-surrender-of-japan": {
+  "name": "Surrender of Japan",
+  "kind": "surrender",
+  "nation": "Japan",
+  "source": "https://en.wikipedia.org/wiki/Surrender_of_Japan",
+  "wikidata": null
  },
  "op-tehran-conference": {
   "name": "Tehran Conference",
@@ -45,12 +325,33 @@
    "Eureka"
   ]
  },
- "op-winter-war": {
-  "name": "Winter War",
-  "kind": "war",
-  "nation": "Finland",
-  "wikidata": "Q134949",
-  "source": "https://en.wikipedia.org/wiki/Winter_War"
+ "op-terrace-mutiny": {
+  "name": "Terrace mutiny",
+  "kind": "mutiny",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Terrace_mutiny"
+ },
+ "op-this-is-the-army-musical": {
+  "name": "This Is the Army",
+  "kind": "soldier stage show",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/This_Is_the_Army_(musical)",
+  "wikidata": null
+ },
+ "op-tokyo-express": {
+  "name": "Tokyo Express",
+  "kind": "Japanese destroyer night supply runs in the Solomons",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tokyo_Express"
+ },
+ "op-united-nations-conference-on-international-organization": {
+  "name": "San Francisco Conference",
+  "kind": "international conference",
+  "nation": "worldwide",
+  "source": "https://en.wikipedia.org/wiki/United_Nations_Conference_on_International_Organization",
+  "wikidata": null
  },
  "op-us-coffee-rationing": {
   "name": "U.S. coffee rationing",
@@ -58,5 +359,19 @@
   "nation": "US",
   "wikidata": null,
   "source": "https://www.nps.gov/articles/000/coffee-rationing-on-the-world-war-ii-home-front.htm"
+ },
+ "op-winter-war": {
+  "name": "Winter War",
+  "kind": "war",
+  "nation": "Finland",
+  "wikidata": "Q134949",
+  "source": "https://en.wikipedia.org/wiki/Winter_War"
+ },
+ "op-yip-yip-yaphank": {
+  "name": "Yip Yip Yaphank",
+  "kind": "soldier stage show",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Yip_Yip_Yaphank",
+  "wikidata": null
  }
 }

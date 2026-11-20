@@ -1,9 +1,138 @@
 {
+ "machine-46-cm-45-type-94-naval-gun": {
+  "name": "46 cm Type 94 naval gun",
+  "kind": "naval gun",
+  "nation": "Japan",
+  "source": "https://en.wikipedia.org/wiki/46_cm/45_Type_94_naval_gun",
+  "wikidata": null,
+  "aka": [
+   "40 cm gun"
+  ]
+ },
+ "machine-blalock-thomas-taussig-shunt": {
+  "name": "Blalock Thomas Taussig shunt",
+  "kind": "surgical procedure",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Blalock%E2%80%93Thomas%E2%80%93Taussig_shunt",
+  "aka": [
+   "blue baby operation"
+  ]
+ },
+ "machine-bombe": {
+  "name": "Bombe",
+  "kind": "codebreaking machine",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/Bombe",
+  "wikidata": null
+ },
+ "machine-chicago-pile-1": {
+  "name": "Chicago Pile-1",
+  "kind": "nuclear reactor",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Chicago_Pile-1",
+  "aka": [
+   "CP-1"
+  ]
+ },
+ "machine-enigma-machine": {
+  "name": "Enigma machine",
+  "kind": "cipher machine",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Enigma_machine",
+  "wikidata": null,
+  "aka": [
+   "Enigma",
+   "M4"
+  ]
+ },
+ "machine-general-electric-j31": {
+  "name": "General Electric J31",
+  "kind": "turbojet engine",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/General_Electric_J31",
+  "wikidata": null
+ },
+ "machine-mark-14-torpedo": {
+  "name": "Mark 14 torpedo",
+  "kind": "submarine torpedo",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Mark_14_torpedo",
+  "wikidata": null
+ },
+ "machine-nazi-concentration-camps-film": {
+  "name": "Nazi Concentration Camps",
+  "kind": "documentary film",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Nazi_Concentration_Camps_(film)"
+ },
+ "machine-pratt-whitney-r-4360-wasp-major": {
+  "name": "Pratt and Whitney R-4360",
+  "kind": "radial aircraft engine",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Pratt_%26_Whitney_R-4360_Wasp_Major",
+  "wikidata": null
+ },
+ "machine-sherman-crab": {
+  "name": "Sherman Crab",
+  "kind": "mine clearing flail tank",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/Mine_flail",
+  "wikidata": null,
+  "note": "No article of its own; covered in the English Wikipedia article Mine flail."
+ },
+ "machine-shinyo-suicide-motorboat": {
+  "name": "Shinyo",
+  "kind": "suicide motorboat",
+  "nation": "Japan",
+  "source": "https://en.wikipedia.org/wiki/Shinyo_(suicide_motorboat)",
+  "wikidata": null
+ },
  "machine-sword-of-stalingrad": {
   "name": "Sword of Stalingrad",
   "kind": "ceremonial sword",
   "nation": "Britain",
   "wikidata": "Q2668464",
   "source": "https://en.wikipedia.org/wiki/Sword_of_Stalingrad"
+ },
+ "machine-v-2-no-13": {
+  "name": "V-2 No. 13",
+  "kind": "single modified V-2 rocket",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/V-2_No._13",
+  "wikidata": null
+ },
+ "machine-v-2-rocket": {
+  "name": "V-2 rocket",
+  "kind": "ballistic missile",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/V-2_rocket",
+  "wikidata": null,
+  "aka": [
+   "V-2"
+  ]
+ },
+ "machine-wright-r-1820-cyclone": {
+  "name": "Wright R-1820 Cyclone",
+  "kind": "radial aircraft engine",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Wright_R-1820_Cyclone",
+  "wikidata": null
+ },
+ "machine-wright-r-3350-duplex-cyclone": {
+  "name": "Wright R-3350",
+  "kind": "radial aircraft engine",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Wright_R-3350_Duplex-Cyclone",
+  "wikidata": null
+ },
+ "machine-x-10-graphite-reactor": {
+  "name": "X-10 Graphite Reactor",
+  "kind": "nuclear reactor",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/X-10_Graphite_Reactor",
+  "wikidata": null
  }
 }

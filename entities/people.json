@@ -1,27 +1,62 @@
 {
- "person-emmett-odonnell": {
-  "name": "Emmett O'Donnell Jr.",
-  "kind": "U.S. Army Air Forces general",
-  "nation": "US",
-  "wikidata": "Q5373553",
-  "source": "https://en.wikipedia.org/wiki/Emmett_O%27Donnell_Jr."
+ "person-airey-neave": {
+  "name": "Airey Neave",
+  "kind": "British Army officer",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/Airey_Neave",
+  "wikidata": null
  },
- "person-robert-morgan": {
-  "name": "Robert K. Morgan",
-  "kind": "U.S. Army Air Forces pilot",
+ "person-alfred-blalock": {
+  "name": "Alfred Blalock",
+  "kind": "surgeon",
   "nation": "US",
-  "wikidata": "Q3246722",
-  "source": "https://en.wikipedia.org/wiki/Robert_K._Morgan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Alfred_Blalock"
+ },
+ "person-baldur-von-schirach": {
+  "name": "Baldur von Schirach",
+  "kind": "Hitler Youth leader",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Baldur_von_Schirach"
+ },
+ "person-benito-mussolini": {
+  "name": "Benito Mussolini",
+  "kind": "dictator",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Benito_Mussolini"
+ },
+ "person-charles-de-gaulle": {
+  "name": "Charles de Gaulle",
+  "kind": "Free French leader",
+  "nation": "France",
+  "source": "https://en.wikipedia.org/wiki/Charles_de_Gaulle",
+  "wikidata": null
+ },
+ "person-chester-w-nimitz": {
+  "name": "Chester Nimitz",
+  "kind": "U.S. Navy admiral",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Chester_W._Nimitz",
+  "wikidata": null,
   "aka": [
-   "Robert Morgan"
+   "Nimitz"
   ]
  },
- "person-haywood-hansell": {
-  "name": "Haywood S. Hansell",
-  "kind": "U.S. Army Air Forces general",
+ "person-chiang-kai-shek": {
+  "name": "Chiang Kai-shek",
+  "kind": "leader of Nationalist China",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Chiang_Kai-shek"
+ },
+ "person-clark-gable": {
+  "name": "Clark Gable",
+  "kind": "actor and U.S. Army Air Forces officer",
   "nation": "US",
-  "wikidata": "Q5687462",
-  "source": "https://en.wikipedia.org/wiki/Haywood_S._Hansell"
+  "source": "https://en.wikipedia.org/wiki/Clark_Gable",
+  "wikidata": null
  },
  "person-curtis-lemay": {
   "name": "Curtis LeMay",
@@ -30,6 +65,183 @@
   "wikidata": "Q15866",
   "source": "https://en.wikipedia.org/wiki/Curtis_LeMay"
  },
+ "person-david-maxwell-fyfe-1st-earl-of-kilmuir": {
+  "name": "David Maxwell Fyfe",
+  "kind": "British prosecutor",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/David_Maxwell_Fyfe,_1st_Earl_of_Kilmuir",
+  "wikidata": null
+ },
+ "person-doc-blanchard": {
+  "name": "Doc Blanchard",
+  "kind": "Army football fullback",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Doc_Blanchard"
+ },
+ "person-donald-blakeslee": {
+  "name": "Donald Blakeslee",
+  "kind": "fighter pilot and group commander",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Donald_Blakeslee",
+  "aka": [
+   "Don Blakeslee"
+  ]
+ },
+ "person-douglas-macarthur": {
+  "name": "Douglas MacArthur",
+  "kind": "general",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Douglas_MacArthur"
+ },
+ "person-dwight-d-eisenhower": {
+  "name": "Dwight D. Eisenhower",
+  "kind": "U.S. Army general",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Dwight_D._Eisenhower",
+  "wikidata": null,
+  "aka": [
+   "Eisenhower"
+  ]
+ },
+ "person-ed-westcott": {
+  "name": "Ed Westcott",
+  "kind": "Manhattan Project photographer",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Ed_Westcott",
+  "wikidata": null
+ },
+ "person-edward-r-murrow": {
+  "name": "Edward R. Murrow",
+  "kind": "CBS war correspondent",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Edward_R._Murrow"
+ },
+ "person-eiji-sawamura": {
+  "name": "Eiji Sawamura",
+  "kind": "baseball pitcher and soldier",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Eiji_Sawamura"
+ },
+ "person-eileen-saxon": {
+  "name": "Eileen Saxon",
+  "kind": "patient",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Eileen_Saxon"
+ },
+ "person-emmett-odonnell": {
+  "name": "Emmett O'Donnell Jr.",
+  "kind": "U.S. Army Air Forces general",
+  "nation": "US",
+  "wikidata": "Q5373553",
+  "source": "https://en.wikipedia.org/wiki/Emmett_O%27Donnell_Jr."
+ },
+ "person-enrico-fermi": {
+  "name": "Enrico Fermi",
+  "kind": "physicist",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Enrico_Fermi"
+ },
+ "person-erhard-maertens": {
+  "name": "Erhard Maertens",
+  "kind": "German vice admiral",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Erhard_Maertens",
+  "wikidata": null
+ },
+ "person-eric-brown-pilot": {
+  "name": "Eric Brown",
+  "kind": "Royal Navy test pilot",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Eric_Brown_(pilot)",
+  "aka": [
+   "Winkle Brown",
+   "Eric Melrose Brown"
+  ]
+ },
+ "person-ernest-bevin": {
+  "name": "Ernest Bevin",
+  "kind": "Labour Minister, later Foreign Secretary",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ernest_Bevin"
+ },
+ "person-ernst-kaltenbrunner": {
+  "name": "Ernst Kaltenbrunner",
+  "kind": "SS official",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Ernst_Kaltenbrunner",
+  "wikidata": null
+ },
+ "person-fabian-ware": {
+  "name": "Sir Fabian Ware",
+  "kind": "founder of the Imperial War Graves Commission",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/Fabian_Ware",
+  "wikidata": null
+ },
+ "person-fiorello-la-guardia": {
+  "name": "Fiorello La Guardia",
+  "kind": "mayor of New York, civil defense director",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fiorello_La_Guardia"
+ },
+ "person-franklin-d-roosevelt": {
+  "name": "Franklin D. Roosevelt",
+  "kind": "president",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Franklin_D._Roosevelt",
+  "aka": [
+   "FDR"
+  ]
+ },
+ "person-franz-vaterrodt": {
+  "name": "Franz Vaterrodt",
+  "kind": "German general",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Franz_Vaterrodt",
+  "wikidata": null
+ },
+ "person-geoffrey-lawrence-1st-baron-oaksey": {
+  "name": "Geoffrey Lawrence",
+  "kind": "British judge",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/Geoffrey_Lawrence,_1st_Baron_Oaksey",
+  "wikidata": null
+ },
+ "person-george-pearkes": {
+  "name": "George Pearkes",
+  "kind": "general",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/George_Pearkes"
+ },
+ "person-george-stevens": {
+  "name": "George Stevens",
+  "kind": "film director",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/George_Stevens"
+ },
+ "person-george-vi": {
+  "name": "George VI",
+  "kind": "King of the United Kingdom",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/George_VI",
+  "aka": [
+   "King George VI"
+  ]
+ },
  "person-gerd-von-rundstedt": {
   "name": "Gerd von Rundstedt",
   "kind": "German field marshal",
@@ -37,19 +249,98 @@
   "wikidata": "Q70527",
   "source": "https://en.wikipedia.org/wiki/Gerd_von_Rundstedt"
  },
- "person-winston-churchill": {
-  "name": "Winston Churchill",
-  "kind": "British prime minister",
-  "nation": "Britain",
-  "wikidata": "Q8016",
-  "source": "https://en.wikipedia.org/wiki/Winston_Churchill"
+ "person-glenn-davis-halfback": {
+  "name": "Glenn Davis",
+  "kind": "Army football halfback",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Glenn_Davis_(halfback)"
  },
- "person-joseph-stalin": {
-  "name": "Joseph Stalin",
-  "kind": "Soviet leader",
-  "nation": "Soviet Union",
-  "wikidata": "Q855",
-  "source": "https://en.wikipedia.org/wiki/Joseph_Stalin"
+ "person-gunther-specht": {
+  "name": "Günther Specht",
+  "kind": "Luftwaffe fighter pilot",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/G%C3%BCnther_Specht",
+  "aka": [
+   "Gunther Specht"
+  ]
+ },
+ "person-hans-langsdorff": {
+  "name": "Hans Langsdorff",
+  "kind": "Kriegsmarine captain of Admiral Graf Spee",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hans_Langsdorff"
+ },
+ "person-harlan-f-stone": {
+  "name": "Harlan Fiske Stone",
+  "kind": "Chief Justice of the United States",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Harlan_F._Stone",
+  "wikidata": null
+ },
+ "person-harry-s-truman": {
+  "name": "Harry S. Truman",
+  "kind": "U.S. president",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Harry_S._Truman",
+  "wikidata": null,
+  "aka": [
+   "Truman"
+  ]
+ },
+ "person-hayao-tada": {
+  "name": "Hayao Tada",
+  "kind": "army general, deputy chief of staff",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hayao_Tada"
+ },
+ "person-haywood-hansell": {
+  "name": "Haywood S. Hansell",
+  "kind": "U.S. Army Air Forces general",
+  "nation": "US",
+  "wikidata": "Q5687462",
+  "source": "https://en.wikipedia.org/wiki/Haywood_S._Hansell"
+ },
+ "person-helen-b-taussig": {
+  "name": "Helen B. Taussig",
+  "kind": "pediatric cardiologist",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Helen_B._Taussig",
+  "aka": [
+   "Helen Taussig"
+  ]
+ },
+ "person-henry-h-arnold": {
+  "name": "Henry H. Arnold",
+  "kind": "U.S. Army Air Forces general",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Henry_H._Arnold",
+  "wikidata": null,
+  "aka": [
+   "Hap Arnold"
+  ]
+ },
+ "person-henry-j-kaiser": {
+  "name": "Henry J. Kaiser",
+  "kind": "shipbuilder",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Henry_J._Kaiser",
+  "wikidata": null
+ },
+ "person-hermann-goring": {
+  "name": "Hermann Goering",
+  "kind": "Nazi Reichsmarschall",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Hermann_G%C3%B6ring",
+  "wikidata": null,
+  "aka": [
+   "Goering",
+   "Göring"
+  ]
  },
  "person-hideki-tojo": {
   "name": "Hideki Tojo",
@@ -68,11 +359,363 @@
    "Emperor Showa"
   ]
  },
+ "person-howard-hughes": {
+  "name": "Howard Hughes",
+  "kind": "aviator and industrialist",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Howard_Hughes",
+  "wikidata": null
+ },
+ "person-iona-nikitchenko": {
+  "name": "Iona Nikitchenko",
+  "kind": "Soviet judge and general",
+  "nation": "Soviet Union",
+  "source": "https://en.wikipedia.org/wiki/Iona_Nikitchenko",
+  "wikidata": null
+ },
+ "person-irving-berlin": {
+  "name": "Irving Berlin",
+  "kind": "American songwriter",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Irving_Berlin",
+  "wikidata": null
+ },
+ "person-isoroku-yamamoto": {
+  "name": "Isoroku Yamamoto",
+  "kind": "admiral, Combined Fleet commander",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Isoroku_Yamamoto"
+ },
+ "person-iwane-matsui": {
+  "name": "Iwane Matsui",
+  "kind": "army general",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Iwane_Matsui"
+ },
+ "person-james-f-byrnes": {
+  "name": "James Byrnes",
+  "kind": "U.S. Secretary of State",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/James_F._Byrnes",
+  "wikidata": null
+ },
+ "person-joachim-von-ribbentrop": {
+  "name": "Joachim von Ribbentrop",
+  "kind": "Nazi foreign minister",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Joachim_von_Ribbentrop",
+  "wikidata": null
+ },
+ "person-joe-louis": {
+  "name": "Joe Louis",
+  "kind": "heavyweight boxing champion",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Joe_Louis",
+  "wikidata": null
+ },
+ "person-johann-von-ravenstein": {
+  "name": "Johann von Ravenstein",
+  "kind": "general",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Johann_von_Ravenstein"
+ },
  "person-joseph-enright": {
   "name": "Joseph F. Enright",
   "kind": "U.S. Navy submarine commander",
   "nation": "US",
   "wikidata": "Q5927366",
   "source": "https://en.wikipedia.org/wiki/Joseph_F._Enright"
+ },
+ "person-joseph-stalin": {
+  "name": "Joseph Stalin",
+  "kind": "Soviet leader",
+  "nation": "Soviet Union",
+  "wikidata": "Q855",
+  "source": "https://en.wikipedia.org/wiki/Joseph_Stalin"
+ },
+ "person-josip-broz-tito": {
+  "name": "Josip Broz Tito",
+  "kind": "Partisan leader",
+  "nation": "Yugoslavia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Josip_Broz_Tito",
+  "aka": [
+   "Tito"
+  ]
+ },
+ "person-karl-donitz": {
+  "name": "Karl Doenitz",
+  "kind": "German admiral",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Karl_D%C3%B6nitz",
+  "wikidata": null,
+  "aka": [
+   "Dönitz",
+   "Doenitz"
+  ]
+ },
+ "person-kenesaw-mountain-landis": {
+  "name": "Kenesaw Mountain Landis",
+  "kind": "Commissioner of Baseball",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kenesaw_Mountain_Landis"
+ },
+ "person-koichi-kido": {
+  "name": "Koichi Kido",
+  "kind": "Lord Keeper of the Privy Seal",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kōichi_Kido",
+  "aka": [
+   "Kōichi Kido",
+   "Marquis Kido"
+  ]
+ },
+ "person-kuehn-family": {
+  "name": "Bernard Kuehn",
+  "kind": "German resident of Oahu who spied for the Japanese consulate",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kuehn_family",
+  "aka": [
+   "Bernard Julius Otto Kuehn",
+   "Otto Kuehn",
+   "Kühn"
+  ],
+  "note": "Wikipedia title is 'Kuehn family'; 'Bernard Kuehn' redirects there."
+ },
+ "person-martin-bormann": {
+  "name": "Martin Bormann",
+  "kind": "Nazi Party official",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Martin_Bormann",
+  "wikidata": null
+ },
+ "person-matome-ugaki": {
+  "name": "Matome Ugaki",
+  "kind": "admiral, Combined Fleet chief of staff",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Matome_Ugaki"
+ },
+ "person-nobuhito-prince-takamatsu": {
+  "name": "Nobuhito, Prince Takamatsu",
+  "kind": "imperial prince, naval officer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Nobuhito,_Prince_Takamatsu",
+  "aka": [
+   "Prince Takamatsu"
+  ]
+ },
+ "person-otto-kretschmer": {
+  "name": "Otto Kretschmer",
+  "kind": "U-boat commander",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Otto_Kretschmer"
+ },
+ "person-otto-kuusinen": {
+  "name": "Otto Kuusinen",
+  "kind": "communist politician",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Otto_Kuusinen",
+  "aka": [
+   "Otto Wille Kuusinen"
+  ]
+ },
+ "person-paul-robeson": {
+  "name": "Paul Robeson",
+  "kind": "singer, actor, and activist",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Paul_Robeson"
+ },
+ "person-philippe-leclerc-de-hauteclocque": {
+  "name": "Philippe Leclerc",
+  "kind": "Free French general",
+  "nation": "France",
+  "source": "https://en.wikipedia.org/wiki/Philippe_Leclerc_de_Hauteclocque",
+  "wikidata": null,
+  "aka": [
+   "Leclerc"
+  ]
+ },
+ "person-prince-nashimoto-morimasa": {
+  "name": "Prince Nashimoto Morimasa",
+  "kind": "imperial prince and field marshal",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Prince_Nashimoto_Morimasa"
+ },
+ "person-raizo-tanaka": {
+  "name": "Raizo Tanaka",
+  "kind": "rear admiral",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Raizō_Tanaka",
+  "aka": [
+   "Raizō Tanaka"
+  ]
+ },
+ "person-ray-heindorf": {
+  "name": "Ray Heindorf",
+  "kind": "film composer",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Ray_Heindorf",
+  "wikidata": null
+ },
+ "person-robert-h-jackson": {
+  "name": "Robert H. Jackson",
+  "kind": "U.S. Supreme Court justice and chief prosecutor",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Robert_H._Jackson",
+  "wikidata": null
+ },
+ "person-robert-morgan": {
+  "name": "Robert K. Morgan",
+  "kind": "U.S. Army Air Forces pilot",
+  "nation": "US",
+  "wikidata": "Q3246722",
+  "source": "https://en.wikipedia.org/wiki/Robert_K._Morgan",
+  "aka": [
+   "Robert Morgan"
+  ]
+ },
+ "person-ron-middleton-vc": {
+  "name": "Ron Middleton",
+  "kind": "bomber pilot",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ron_Middleton_(VC)",
+  "aka": [
+   "Rawdon Hume Middleton"
+  ]
+ },
+ "person-ronald-reagan": {
+  "name": "Ronald Reagan",
+  "kind": "actor and future U.S. president",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Ronald_Reagan",
+  "wikidata": null
+ },
+ "person-ronald-scobie": {
+  "name": "Ronald Scobie",
+  "kind": "British Army lieutenant general, commander in Greece",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ronald_Scobie"
+ },
+ "person-rudolf-hess": {
+  "name": "Rudolf Hess",
+  "kind": "Nazi Party official",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Rudolf_Hess",
+  "wikidata": null
+ },
+ "person-sadamu-shimomura": {
+  "name": "Sadamu Shimomura",
+  "kind": "army general, last Army Minister",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sadamu_Shimomura"
+ },
+ "person-tom-phillips-royal-navy-officer": {
+  "name": "Tom Phillips",
+  "kind": "admiral",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tom_Phillips_(Royal_Navy_officer)"
+ },
+ "person-toshio-abe": {
+  "name": "Toshio Abe",
+  "kind": "Imperial Japanese Navy captain",
+  "nation": "Japan",
+  "source": "https://en.wikipedia.org/wiki/Toshio_Abe",
+  "wikidata": null
+ },
+ "person-vivien-thomas": {
+  "name": "Vivien Thomas",
+  "kind": "surgical technician",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Vivien_Thomas"
+ },
+ "person-wade-h-haislip": {
+  "name": "Wade Haislip",
+  "kind": "U.S. Army general",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Wade_H._Haislip",
+  "wikidata": null
+ },
+ "person-walter-von-reichenau": {
+  "name": "Walter von Reichenau",
+  "kind": "field marshal",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Walter_von_Reichenau",
+  "aka": [
+   "Walther von Reichenau"
+  ]
+ },
+ "person-walther-funk": {
+  "name": "Walther Funk",
+  "kind": "Reich Minister of Economics",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Walther_Funk"
+ },
+ "person-werner-lott": {
+  "name": "Werner Lott",
+  "kind": "U-boat commander",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Werner_Lott"
+ },
+ "person-wilhelm-keitel": {
+  "name": "Wilhelm Keitel",
+  "kind": "German field marshal",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Wilhelm_Keitel",
+  "wikidata": null
+ },
+ "person-william-beveridge": {
+  "name": "William Beveridge",
+  "kind": "economist and reformer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/William_Beveridge"
+ },
+ "person-william-halsey-jr": {
+  "name": "William Halsey",
+  "kind": "U.S. Navy admiral",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/William_Halsey_Jr.",
+  "wikidata": null,
+  "aka": [
+   "Halsey"
+  ]
+ },
+ "person-winston-churchill": {
+  "name": "Winston Churchill",
+  "kind": "British prime minister",
+  "nation": "Britain",
+  "wikidata": "Q8016",
+  "source": "https://en.wikipedia.org/wiki/Winston_Churchill"
+ },
+ "person-zoya-kosmodemyanskaya": {
+  "name": "Zoya Kosmodemyanskaya",
+  "kind": "partisan",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Zoya_Kosmodemyanskaya",
+  "aka": [
+   "Tanya"
+  ]
  }
 }

@@ -1,24 +1,181 @@
 {
- "ship-uss-hornet-cv-8": {
-  "name": "USS Hornet (CV-8)",
-  "kind": "aircraft carrier",
-  "nation": "US",
-  "wikidata": "Q838125",
-  "source": "https://en.wikipedia.org/wiki/USS_Hornet_(CV-8)"
- },
- "ship-uss-enterprise-cv-6": {
-  "name": "USS Enterprise (CV-6)",
-  "kind": "aircraft carrier",
-  "nation": "US",
-  "wikidata": "Q369987",
-  "source": "https://en.wikipedia.org/wiki/USS_Enterprise_(CV-6)"
- },
- "ship-uss-arizona-bb-39": {
-  "name": "USS Arizona (BB-39)",
+ "ship-german-battleship-tirpitz": {
+  "name": "Tirpitz",
   "kind": "battleship",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/German_battleship_Tirpitz",
+  "wikidata": null
+ },
+ "ship-german-cruiser-admiral-graf-spee": {
+  "name": "Admiral Graf Spee",
+  "kind": "Deutschland class pocket battleship",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_cruiser_Admiral_Graf_Spee",
+  "aka": [
+   "Graf Spee"
+  ]
+ },
+ "ship-german-submarine-u-35-1936": {
+  "name": "U-35",
+  "kind": "Type VIIA U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-35_(1936)"
+ },
+ "ship-german-submarine-u-99-1940": {
+  "name": "U-99",
+  "kind": "Type VIIB U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-99_(1940)"
+ },
+ "ship-hawaii-maru": {
+  "name": "Hawaii Maru",
+  "kind": "troop transport",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hawaii_Maru"
+ },
+ "ship-hms-ark-royal-91": {
+  "name": "HMS Ark Royal (91)",
+  "kind": "aircraft carrier",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/HMS_Ark_Royal_(91)",
+  "wikidata": null
+ },
+ "ship-hms-forfar": {
+  "name": "HMS Forfar (F30)",
+  "kind": "armed merchant cruiser",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Forfar",
+  "aka": [
+   "Montrose"
+  ]
+ },
+ "ship-hms-graph": {
+  "name": "U-570",
+  "kind": "German submarine, captured",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/HMS_Graph",
+  "wikidata": null,
+  "aka": [
+   "U-570",
+   "HMS Graph"
+  ]
+ },
+ "ship-hms-legion-g74": {
+  "name": "HMS Legion (G74)",
+  "kind": "destroyer",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/HMS_Legion_(G74)",
+  "wikidata": null
+ },
+ "ship-hms-ocean-r68": {
+  "name": "HMS Ocean (R68)",
+  "kind": "Colossus class light aircraft carrier",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Ocean_(R68)"
+ },
+ "ship-hms-prince-of-wales-53": {
+  "name": "HMS Prince of Wales (53)",
+  "kind": "battleship",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Prince_of_Wales_(53)"
+ },
+ "ship-hms-repulse-1916": {
+  "name": "HMS Repulse",
+  "kind": "battlecruiser",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Repulse_(1916)"
+ },
+ "ship-italian-destroyer-folgore": {
+  "name": "Folgore",
+  "kind": "destroyer",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_destroyer_Folgore"
+ },
+ "ship-japanese-battleship-musashi": {
+  "name": "Musashi",
+  "kind": "battleship",
+  "nation": "Japan",
+  "source": "https://en.wikipedia.org/wiki/Japanese_battleship_Musashi",
+  "wikidata": null
+ },
+ "ship-japanese-battleship-yamato": {
+  "name": "Yamato",
+  "kind": "battleship",
+  "nation": "Japan",
+  "source": "https://en.wikipedia.org/wiki/Japanese_battleship_Yamato",
+  "wikidata": null
+ },
+ "ship-japanese-destroyer-hamakaze-1940": {
+  "name": "Hamakaze",
+  "kind": "destroyer",
+  "nation": "Japan",
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Hamakaze_(1940)",
+  "wikidata": null
+ },
+ "ship-japanese-destroyer-isokaze-1939": {
+  "name": "Isokaze",
+  "kind": "destroyer",
+  "nation": "Japan",
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Isokaze_(1939)",
+  "wikidata": null
+ },
+ "ship-japanese-destroyer-oyashio": {
+  "name": "Japanese destroyer Oyashio",
+  "kind": "destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Oyashio"
+ },
+ "ship-japanese-destroyer-take-1944": {
+  "name": "Take",
+  "kind": "Matsu class destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Take_(1944)"
+ },
+ "ship-japanese-destroyer-yukikaze-1939": {
+  "name": "Yukikaze",
+  "kind": "destroyer",
+  "nation": "Japan",
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Yukikaze_(1939)",
+  "wikidata": null
+ },
+ "ship-mv-dunedin-star": {
+  "name": "MV Dunedin Star",
+  "kind": "cargo liner",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/MV_Dunedin_Star"
+ },
+ "ship-shinano": {
+  "name": "Shinano",
+  "kind": "aircraft carrier",
+  "nation": "Japan",
+  "wikidata": "Q241858",
+  "source": "https://en.wikipedia.org/wiki/Japanese_aircraft_carrier_Shinano"
+ },
+ "ship-ss-john-harvey": {
+  "name": "SS John Harvey",
+  "kind": "Liberty ship",
   "nation": "US",
-  "wikidata": "Q506022",
-  "source": "https://en.wikipedia.org/wiki/USS_Arizona"
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_John_Harvey"
+ },
+ "ship-ss-tairoa": {
+  "name": "SS Tairoa",
+  "kind": "British refrigerated cargo liner",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Tairoa"
  },
  "ship-uss-archerfish-ss-311": {
   "name": "USS Archerfish (SS-311)",
@@ -30,11 +187,144 @@
    "Archer-Fish"
   ]
  },
- "ship-shinano": {
-  "name": "Shinano",
+ "ship-uss-arizona-bb-39": {
+  "name": "USS Arizona (BB-39)",
+  "kind": "battleship",
+  "nation": "US",
+  "wikidata": "Q506022",
+  "source": "https://en.wikipedia.org/wiki/USS_Arizona"
+ },
+ "ship-uss-bunker-hill-cv-17": {
+  "name": "USS Bunker Hill (CV-17)",
   "kind": "aircraft carrier",
-  "nation": "Japan",
-  "wikidata": "Q241858",
-  "source": "https://en.wikipedia.org/wiki/Japanese_aircraft_carrier_Shinano"
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/USS_Bunker_Hill_(CV-17)",
+  "wikidata": null
+ },
+ "ship-uss-cabot-cvl-28": {
+  "name": "USS Cabot (CVL-28)",
+  "kind": "light aircraft carrier",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/USS_Cabot_(CVL-28)",
+  "wikidata": null
+ },
+ "ship-uss-cooper": {
+  "name": "USS Cooper (DD-695)",
+  "kind": "Allen M. Sumner class destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Cooper"
+ },
+ "ship-uss-enterprise-cv-6": {
+  "name": "USS Enterprise (CV-6)",
+  "kind": "aircraft carrier",
+  "nation": "US",
+  "wikidata": "Q369987",
+  "source": "https://en.wikipedia.org/wiki/USS_Enterprise_(CV-6)"
+ },
+ "ship-uss-essex-cv-9": {
+  "name": "USS Essex (CV-9)",
+  "kind": "aircraft carrier",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/USS_Essex_(CV-9)",
+  "wikidata": null
+ },
+ "ship-uss-forrestal": {
+  "name": "USS Forrestal (CV-59)",
+  "kind": "aircraft carrier",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/USS_Forrestal",
+  "wikidata": null
+ },
+ "ship-uss-franklin-d-roosevelt": {
+  "name": "USS Franklin D. Roosevelt (CVB-42)",
+  "kind": "aircraft carrier",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/USS_Franklin_D._Roosevelt",
+  "wikidata": null
+ },
+ "ship-uss-hancock-cv-19": {
+  "name": "USS Hancock (CV-19)",
+  "kind": "aircraft carrier",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/USS_Hancock_(CV-19)",
+  "wikidata": null
+ },
+ "ship-uss-hornet-cv-8": {
+  "name": "USS Hornet (CV-8)",
+  "kind": "aircraft carrier",
+  "nation": "US",
+  "wikidata": "Q838125",
+  "source": "https://en.wikipedia.org/wiki/USS_Hornet_(CV-8)"
+ },
+ "ship-uss-intrepid-cv-11": {
+  "name": "USS Intrepid (CV-11)",
+  "kind": "aircraft carrier",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/USS_Intrepid_(CV-11)",
+  "wikidata": null
+ },
+ "ship-uss-missouri-bb-63": {
+  "name": "USS Missouri (BB-63)",
+  "kind": "battleship",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/USS_Missouri_(BB-63)",
+  "wikidata": null
+ },
+ "ship-uss-new-jersey-bb-62": {
+  "name": "USS New Jersey (BB-62)",
+  "kind": "battleship",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/USS_New_Jersey_(BB-62)",
+  "wikidata": null
+ },
+ "ship-uss-new-york-bb-34": {
+  "name": "USS New York (BB-34)",
+  "kind": "battleship",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/USS_New_York_(BB-34)",
+  "wikidata": null
+ },
+ "ship-uss-northampton-ca-26": {
+  "name": "USS Northampton (CA-26)",
+  "kind": "heavy cruiser",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Northampton_(CA-26)"
+ },
+ "ship-uss-ranger-cv-4": {
+  "name": "USS Ranger (CV-4)",
+  "kind": "aircraft carrier",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/USS_Ranger_(CV-4)",
+  "wikidata": null
+ },
+ "ship-uss-renshaw-dd-499": {
+  "name": "USS Renshaw (DD-499)",
+  "kind": "destroyer",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/USS_Renshaw_(DD-499)",
+  "wikidata": null
+ },
+ "ship-uss-sea-devil-ss-400": {
+  "name": "USS Sea Devil (SS-400)",
+  "kind": "submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Sea_Devil_(SS-400)"
+ },
+ "ship-uss-wake-island": {
+  "name": "USS Wake Island (CVE-65)",
+  "kind": "escort carrier",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/USS_Wake_Island",
+  "wikidata": null
+ },
+ "ship-uss-yorktown-cv-10": {
+  "name": "USS Yorktown (CV-10)",
+  "kind": "aircraft carrier",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/USS_Yorktown_(CV-10)",
+  "wikidata": null
  }
 }

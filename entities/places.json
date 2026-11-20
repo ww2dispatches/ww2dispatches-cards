@@ -1,21 +1,192 @@
 {
- "place-santa-cruz-islands": {
-  "name": "Santa Cruz Islands",
-  "kind": "island group",
-  "nation": "Solomon Islands",
-  "wikidata": "Q148839",
-  "source": "https://en.wikipedia.org/wiki/Santa_Cruz_Islands",
-  "lat": -11,
-  "lon": 166.25
+ "place-aarhus-university": {
+  "name": "Aarhus University",
+  "kind": "university",
+  "nation": "Denmark",
+  "source": "https://en.wikipedia.org/wiki/Aarhus_University",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
  },
- "place-tokyo": {
-  "name": "Tokyo",
+ "place-alaska-highway": {
+  "name": "Alaska Highway",
+  "kind": "highway",
+  "nation": "Canada",
+  "source": "https://en.wikipedia.org/wiki/Alaska_Highway",
+  "wikidata": null,
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Alcan Highway"
+  ]
+ },
+ "place-bari": {
+  "name": "Bari",
+  "kind": "port city",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bari",
+  "lat": null,
+  "lon": null
+ },
+ "place-beaver-creek-yukon": {
+  "name": "Beaver Creek",
+  "kind": "settlement",
+  "nation": "Canada",
+  "source": "https://en.wikipedia.org/wiki/Beaver_Creek,_Yukon",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-berlin": {
+  "name": "Berlin",
+  "kind": "capital of Germany",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Berlin",
+  "lat": null,
+  "lon": null
+ },
+ "place-birmingham": {
+  "name": "Birmingham",
   "kind": "city",
-  "nation": "Japan",
-  "wikidata": "Q1490",
-  "source": "https://en.wikipedia.org/wiki/Tokyo",
-  "lat": 35.6897,
-  "lon": 139.6922
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/Birmingham",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-bizone": {
+  "name": "Bizone",
+  "kind": "Anglo American occupation zone",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bizone",
+  "aka": [
+   "Bizonia"
+  ],
+  "lat": null,
+  "lon": null
+ },
+ "place-bletchley-park": {
+  "name": "Bletchley Park",
+  "kind": "codebreaking center",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/Bletchley_Park",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-brunei": {
+  "name": "Brunei",
+  "kind": "anchorage",
+  "nation": "Brunei",
+  "source": "https://en.wikipedia.org/wiki/Brunei",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-central-park": {
+  "name": "Central Park",
+  "kind": "park",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Central_Park",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-col-de-saverne": {
+  "name": "Saverne Gap",
+  "kind": "mountain pass",
+  "nation": "France",
+  "source": "https://en.wikipedia.org/wiki/Col_de_Saverne",
+  "wikidata": null,
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Saverne Gap"
+  ]
+ },
+ "place-colditz-castle": {
+  "name": "Colditz Castle",
+  "kind": "castle and prisoner of war camp",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Colditz_Castle",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-coventry": {
+  "name": "Coventry",
+  "kind": "city",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/Coventry",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-crieff": {
+  "name": "Crieff",
+  "kind": "town",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/Crieff",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-dawson-creek": {
+  "name": "Dawson Creek",
+  "kind": "town",
+  "nation": "Canada",
+  "source": "https://en.wikipedia.org/wiki/Dawson_Creek",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-delta-junction-alaska": {
+  "name": "Delta Junction",
+  "kind": "town",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Delta_Junction,_Alaska",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-geilenkirchen": {
+  "name": "Geilenkirchen",
+  "kind": "town",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Geilenkirchen",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-gibraltar": {
+  "name": "Gibraltar",
+  "kind": "naval base and territory",
+  "nation": "Gibraltar",
+  "source": "https://en.wikipedia.org/wiki/Gibraltar",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-hawaii": {
+  "name": "Hawaii",
+  "kind": "islands",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Hawaii",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-heligoland": {
+  "name": "Heligoland",
+  "kind": "German island in the North Sea",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Heligoland",
+  "lat": null,
+  "lon": null
  },
  "place-isley-field-saipan": {
   "name": "Isley Field, Saipan",
@@ -29,12 +200,88 @@
    "Isely Field"
   ]
  },
- "place-musashino-aircraft-plant": {
-  "name": "Nakajima Musashino plant",
-  "kind": "aircraft engine factory",
+ "place-iwo-jima": {
+  "name": "Iwo Jima",
+  "kind": "island",
   "nation": "Japan",
-  "wikidata": "Q1476227",
-  "source": "https://en.wikipedia.org/wiki/Nakajima_Aircraft_Company",
+  "source": "https://en.wikipedia.org/wiki/Iwo_Jima",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-jajce": {
+  "name": "Jajce",
+  "kind": "town",
+  "nation": "Yugoslavia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Jajce",
+  "lat": null,
+  "lon": null
+ },
+ "place-kailua-hawaii": {
+  "name": "Kailua, Hawaii",
+  "kind": "town on Oahu, including Lanikai",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kailua,_Hawaii",
+  "aka": [
+   "Lanikai"
+  ],
+  "note": "'Lanikai, Hawaii' redirects here.",
+  "lat": null,
+  "lon": null
+ },
+ "place-kehl": {
+  "name": "Kehl",
+  "kind": "town",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Kehl",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-kobler-field": {
+  "name": "Kobler Field",
+  "kind": "airfield",
+  "nation": "Northern Mariana Islands",
+  "source": "https://en.wikipedia.org/wiki/Kobler_Field",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-kufra": {
+  "name": "Kufra",
+  "kind": "oasis fort",
+  "nation": "Libya",
+  "source": "https://en.wikipedia.org/wiki/Kufra",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-kure": {
+  "name": "Kure",
+  "kind": "naval base city",
+  "nation": "Japan",
+  "source": "https://en.wikipedia.org/wiki/Kure",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-kure-naval-arsenal": {
+  "name": "Kure Naval Arsenal",
+  "kind": "naval shipyard",
+  "nation": "Japan",
+  "source": "https://en.wikipedia.org/wiki/Kure_Naval_Arsenal",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-kyushu": {
+  "name": "Kyushu",
+  "kind": "island",
+  "nation": "Japan",
+  "source": "https://en.wikipedia.org/wiki/Kyushu",
+  "wikidata": null,
   "lat": null,
   "lon": null
  },
@@ -46,6 +293,204 @@
   "source": "https://en.wikipedia.org/wiki/Liverpool",
   "lat": 53.4072,
   "lon": -2.9917
+ },
+ "place-london": {
+  "name": "London",
+  "kind": "city",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/London",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-luzon": {
+  "name": "Luzon",
+  "kind": "island",
+  "nation": "Philippines",
+  "source": "https://en.wikipedia.org/wiki/Luzon",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-manila": {
+  "name": "Manila",
+  "kind": "city",
+  "nation": "Philippines",
+  "source": "https://en.wikipedia.org/wiki/Manila",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-mcminnville-oregon": {
+  "name": "McMinnville, Oregon",
+  "kind": "city",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/McMinnville,_Oregon",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-miami-beach-florida": {
+  "name": "Miami Beach",
+  "kind": "city",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Miami_Beach,_Florida",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-musashino-aircraft-plant": {
+  "name": "Nakajima Musashino plant",
+  "kind": "aircraft engine factory",
+  "nation": "Japan",
+  "wikidata": "Q1476227",
+  "source": "https://en.wikipedia.org/wiki/Nakajima_Aircraft_Company",
+  "lat": null,
+  "lon": null
+ },
+ "place-new-york-city": {
+  "name": "New York City",
+  "kind": "city",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/New_York_City",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-north-american-aerospace-museum": {
+  "name": "Evergreen Aviation and Space Museum",
+  "kind": "aviation museum",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/North_American_Aerospace_Museum",
+  "wikidata": null,
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Evergreen Aviation and Space Museum"
+  ]
+ },
+ "place-nuremberg": {
+  "name": "Nuremberg",
+  "kind": "city",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Nuremberg",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-oak-ridge-tennessee": {
+  "name": "Oak Ridge, Tennessee",
+  "kind": "secret wartime city",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Oak_Ridge,_Tennessee",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-okinawa-island": {
+  "name": "Okinawa",
+  "kind": "island",
+  "nation": "Japan",
+  "source": "https://en.wikipedia.org/wiki/Okinawa_Island",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-pagan-island": {
+  "name": "Pagan",
+  "kind": "island",
+  "nation": "Northern Mariana Islands",
+  "source": "https://en.wikipedia.org/wiki/Pagan_(island)",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-palace-of-justice-nuremberg": {
+  "name": "Palace of Justice, Nuremberg",
+  "kind": "courthouse",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Palace_of_Justice,_Nuremberg",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-petrishchevo": {
+  "name": "Petrishchevo",
+  "kind": "village",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Petrishchevo",
+  "lat": null,
+  "lon": null
+ },
+ "place-philadelphia-municipal-stadium": {
+  "name": "Municipal Stadium, Philadelphia",
+  "kind": "stadium",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/John_F._Kennedy_Stadium_(Philadelphia)",
+  "lat": null,
+  "lon": null
+ },
+ "place-place-kleber": {
+  "name": "Place Kleber",
+  "kind": "city square",
+  "nation": "France",
+  "source": "https://en.wikipedia.org/wiki/Place_Kl%C3%A9ber",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-port-of-long-beach": {
+  "name": "Long Beach Harbor",
+  "kind": "harbor",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Port_of_Long_Beach",
+  "wikidata": null,
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Long Beach Harbor"
+  ]
+ },
+ "place-rabaul": {
+  "name": "Rabaul",
+  "kind": "town and Japanese base",
+  "nation": "Papua New Guinea",
+  "source": "https://en.wikipedia.org/wiki/Rabaul",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-raf-boxted": {
+  "name": "RAF Boxted",
+  "kind": "airfield",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/RAF_Boxted",
+  "lat": null,
+  "lon": null
+ },
+ "place-raf-fauld": {
+  "name": "RAF Fauld",
+  "kind": "underground bomb store",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/RAF_Fauld",
+  "wikidata": null,
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "No. 21 Maintenance Unit"
+  ]
+ },
+ "place-raf-thorney-island": {
+  "name": "RAF Thorney Island",
+  "kind": "airfield",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/RAF_Thorney_Island",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
  },
  "place-rostov-on-don": {
   "name": "Rostov-on-Don",
@@ -59,6 +504,105 @@
    "Rostov"
   ]
  },
+ "place-saipan-northern-mariana-islands": {
+  "name": "Saipan",
+  "kind": "island",
+  "nation": "Northern Mariana Islands",
+  "source": "https://en.wikipedia.org/wiki/Saipan,_Northern_Mariana_Islands",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-san-francisco": {
+  "name": "San Francisco",
+  "kind": "city",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/San_Francisco",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-santa-cruz-islands": {
+  "name": "Santa Cruz Islands",
+  "kind": "island group",
+  "nation": "Solomon Islands",
+  "wikidata": "Q148839",
+  "source": "https://en.wikipedia.org/wiki/Santa_Cruz_Islands",
+  "lat": -11,
+  "lon": 166.25
+ },
+ "place-schiltigheim": {
+  "name": "Schiltigheim",
+  "kind": "town",
+  "nation": "France",
+  "source": "https://en.wikipedia.org/wiki/Schiltigheim",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-sibuyan-sea": {
+  "name": "Sibuyan Sea",
+  "kind": "sea",
+  "nation": "Philippines",
+  "source": "https://en.wikipedia.org/wiki/Sibuyan_Sea",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-singapore": {
+  "name": "Singapore",
+  "kind": "island, naval base",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Singapore",
+  "lat": null,
+  "lon": null
+ },
+ "place-skeleton-coast": {
+  "name": "Skeleton Coast",
+  "kind": "coast",
+  "nation": "South West Africa",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Skeleton_Coast",
+  "lat": null,
+  "lon": null
+ },
+ "place-strasbourg": {
+  "name": "Strasbourg",
+  "kind": "city",
+  "nation": "France",
+  "source": "https://en.wikipedia.org/wiki/Strasbourg",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-strasbourg-cathedral": {
+  "name": "Strasbourg Cathedral",
+  "kind": "cathedral",
+  "nation": "France",
+  "source": "https://en.wikipedia.org/wiki/Strasbourg_Cathedral",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-sugamo-prison": {
+  "name": "Sugamo Prison",
+  "kind": "prison",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sugamo_Prison",
+  "lat": null,
+  "lon": null
+ },
+ "place-syntagma-square": {
+  "name": "Syntagma Square",
+  "kind": "central square of Athens",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Syntagma_Square",
+  "lat": null,
+  "lon": null
+ },
  "place-tehran": {
   "name": "Tehran",
   "kind": "city",
@@ -71,12 +615,117 @@
    "Teheran"
   ]
  },
- "place-philadelphia-municipal-stadium": {
-  "name": "Municipal Stadium, Philadelphia",
-  "kind": "stadium",
-  "nation": "US",
+ "place-terrace-british-columbia": {
+  "name": "Terrace, British Columbia",
+  "kind": "town",
+  "nation": "Canada",
   "wikidata": null,
-  "source": "https://en.wikipedia.org/wiki/John_F._Kennedy_Stadium_(Philadelphia)",
+  "source": "https://en.wikipedia.org/wiki/Terrace,_British_Columbia",
+  "lat": null,
+  "lon": null
+ },
+ "place-tinian-northern-mariana-islands": {
+  "name": "Tinian",
+  "kind": "island",
+  "nation": "Northern Mariana Islands",
+  "source": "https://en.wikipedia.org/wiki/Tinian,_Northern_Mariana_Islands",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-tokyo": {
+  "name": "Tokyo",
+  "kind": "city",
+  "nation": "Japan",
+  "wikidata": "Q1490",
+  "source": "https://en.wikipedia.org/wiki/Tokyo",
+  "lat": 35.6897,
+  "lon": 139.6922
+ },
+ "place-tokyo-bay": {
+  "name": "Tokyo Bay",
+  "kind": "bay",
+  "nation": "Japan",
+  "source": "https://en.wikipedia.org/wiki/Tokyo_Bay",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-troms": {
+  "name": "Tromso",
+  "kind": "town",
+  "nation": "Norway",
+  "source": "https://en.wikipedia.org/wiki/Troms%C3%B8",
+  "wikidata": null,
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Tromsø"
+  ]
+ },
+ "place-turin": {
+  "name": "Turin",
+  "kind": "city",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Turin",
+  "lat": null,
+  "lon": null
+ },
+ "place-ulithi": {
+  "name": "Ulithi",
+  "kind": "atoll",
+  "nation": "Federated States of Micronesia",
+  "source": "https://en.wikipedia.org/wiki/Ulithi",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-washington-d-c": {
+  "name": "Washington, D.C.",
+  "kind": "city",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Washington,_D.C.",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-westminster-abbey": {
+  "name": "Westminster Abbey",
+  "kind": "church",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/Westminster_Abbey",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-white-sands-missile-range": {
+  "name": "White Sands",
+  "kind": "rocket test range",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/White_Sands_Missile_Range",
+  "wikidata": null,
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "White Sands Proving Ground"
+  ]
+ },
+ "place-yamato-museum": {
+  "name": "Yamato Museum",
+  "kind": "museum",
+  "nation": "Japan",
+  "source": "https://en.wikipedia.org/wiki/Yamato_Museum",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-yokosuka": {
+  "name": "Yokosuka",
+  "kind": "naval base city",
+  "nation": "Japan",
+  "source": "https://en.wikipedia.org/wiki/Yokosuka",
+  "wikidata": null,
   "lat": null,
   "lon": null
  }
