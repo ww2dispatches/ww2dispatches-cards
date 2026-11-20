@@ -51,6 +51,13 @@
   "wikidata": "Q177820",
   "source": "https://en.wikipedia.org/wiki/French_submarine_Sfax"
  },
+ "ship-french-submarine-surcouf": {
+  "name": "Surcouf",
+  "kind": "Free French submarine cruiser",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/French_submarine_Surcouf"
+ },
  "ship-french-submarine-venus-1935": {
   "name": "Venus",
   "kind": "submarine",
@@ -123,6 +130,24 @@
    "Lutzow"
   ]
  },
+ "ship-german-cruiser-leipzig": {
+  "name": "German cruiser Leipzig",
+  "kind": "light cruiser",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_cruiser_Leipzig"
+ },
+ "ship-german-cruiser-nurnberg": {
+  "name": "German cruiser Nürnberg",
+  "kind": "light cruiser",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_cruiser_N%C3%BCrnberg",
+  "aka": [
+   "Nurnberg",
+   "Nuremberg"
+  ]
+ },
  "ship-german-destroyer-z35": {
   "name": "German destroyer Z35",
   "kind": "Kriegsmarine destroyer",
@@ -184,6 +209,13 @@
   "wikidata": "Q2572123",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-254"
  },
+ "ship-german-submarine-u-284": {
+  "name": "German submarine U-284",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-284"
+ },
  "ship-german-submarine-u-31-1936": {
   "name": "U-31",
   "kind": "Kriegsmarine Type VIIA U-boat",
@@ -211,6 +243,13 @@
   "nation": "Germany",
   "wikidata": "Q666604",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-37_(1938)"
+ },
+ "ship-german-submarine-u-486": {
+  "name": "U-486",
+  "kind": "Kriegsmarine U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-486"
  },
  "ship-german-submarine-u-552": {
   "name": "U-552",
@@ -260,12 +299,26 @@
    "U-593"
   ]
  },
+ "ship-german-submarine-u-629": {
+  "name": "German submarine U-629",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-629"
+ },
  "ship-german-submarine-u-73-1940": {
   "name": "U-73",
   "kind": "Type VIIB U-boat",
   "nation": "Germany",
   "wikidata": "Q549452",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-73_(1940)"
+ },
+ "ship-german-submarine-u-751": {
+  "name": "German submarine U-751",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-751"
  },
  "ship-german-submarine-u-79-1941": {
   "name": "U-79",
@@ -311,6 +364,23 @@
   "aka": [
    "Nestor"
   ]
+ },
+ "ship-hmnzs-achilles": {
+  "name": "HMNZS Achilles",
+  "kind": "light cruiser",
+  "nation": "New Zealand",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMNZS_Achilles",
+  "aka": [
+   "HMS Achilles (70)"
+  ]
+ },
+ "ship-hms-affleck": {
+  "name": "HMS Affleck (K462)",
+  "kind": "Royal Navy frigate",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Affleck"
  },
  "ship-hms-ajax-22": {
   "name": "HMS Ajax (22)",
@@ -375,12 +445,29 @@
   "wikidata": "Q22093759",
   "source": "https://en.wikipedia.org/wiki/HMS_Breconshire"
  },
+ "ship-hms-capel-k470": {
+  "name": "HMS Capel (K470)",
+  "kind": "Royal Navy frigate",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Capel_(K470)",
+  "aka": [
+   "USS Wintle (DE-266)"
+  ]
+ },
  "ship-hms-duchess-h64": {
   "name": "HMS Duchess (H64)",
   "kind": "Royal Navy D class destroyer",
   "nation": "Britain",
   "wikidata": "Q1466686",
   "source": "https://en.wikipedia.org/wiki/HMS_Duchess_(H64)"
+ },
+ "ship-hms-duke-of-york-17": {
+  "name": "HMS Duke of York (17)",
+  "kind": "battleship",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Duke_of_York_(17)"
  },
  "ship-hms-dulverton-l63": {
   "name": "HMS Dulverton (L63)",
@@ -399,6 +486,13 @@
    "SS Corregidor"
   ],
   "note": "Sunk as the inter island steamer SS Corregidor on 17 December 1941; the Wikipedia title SS Corregidor redirects here."
+ },
+ "ship-hms-exeter-68": {
+  "name": "HMS Exeter (68)",
+  "kind": "heavy cruiser",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Exeter_(68)"
  },
  "ship-hms-forfar": {
   "name": "HMS Forfar (F30)",
@@ -565,12 +659,26 @@
   "wikidata": "Q1131630",
   "source": "https://en.wikipedia.org/wiki/HMS_Repulse_(1916)"
  },
+ "ship-hms-salmon-n65": {
+  "name": "HMS Salmon (N65)",
+  "kind": "submarine",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Salmon_(N65)"
+ },
  "ship-hms-seraph-p219": {
   "name": "HMS Seraph (P219)",
   "kind": "submarine",
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/HMS_Seraph_(P219)",
   "wikidata": "Q749790"
+ },
+ "ship-hms-sikh-f82": {
+  "name": "HMS Sikh (F82)",
+  "kind": "destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Sikh_(F82)"
  },
  "ship-hms-stork-l81": {
   "name": "HMS Stork (L81)",
@@ -625,6 +733,27 @@
    "Rohna"
   ]
  },
+ "ship-hnlms-k-xvi": {
+  "name": "HNLMS K XVI",
+  "kind": "Dutch submarine",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HNLMS_K_XVI"
+ },
+ "ship-italian-cruiser-alberico-da-barbiano": {
+  "name": "Italian cruiser Alberico da Barbiano",
+  "kind": "light cruiser",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_cruiser_Alberico_da_Barbiano"
+ },
+ "ship-italian-cruiser-alberto-di-giussano": {
+  "name": "Italian cruiser Alberto di Giussano",
+  "kind": "light cruiser",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_cruiser_Alberto_di_Giussano"
+ },
  "ship-italian-cruiser-muzio-attendolo": {
   "name": "Muzio Attendolo",
   "kind": "Regia Marina light cruiser",
@@ -666,6 +795,26 @@
    "Chuyo"
   ]
  },
+ "ship-japanese-aircraft-carrier-hiryu": {
+  "name": "Japanese aircraft carrier Hiryū",
+  "kind": "aircraft carrier",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_aircraft_carrier_Hiry%C5%AB",
+  "aka": [
+   "Hiryu"
+  ]
+ },
+ "ship-japanese-aircraft-carrier-soryu": {
+  "name": "Japanese aircraft carrier Sōryū",
+  "kind": "aircraft carrier",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_aircraft_carrier_S%C5%8Dry%C5%AB",
+  "aka": [
+   "Soryu"
+  ]
+ },
  "ship-japanese-aircraft-carrier-unryu": {
   "name": "Unryu",
   "kind": "aircraft carrier",
@@ -701,6 +850,13 @@
   "source": "https://en.wikipedia.org/wiki/Japanese_battleship_Yamato",
   "wikidata": "Q215010"
  },
+ "ship-japanese-cruiser-ashigara": {
+  "name": "Ashigara",
+  "kind": "Imperial Japanese Navy heavy cruiser",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_cruiser_Ashigara"
+ },
  "ship-japanese-cruiser-atago": {
   "name": "Atago",
   "kind": "heavy cruiser",
@@ -721,6 +877,16 @@
   "nation": "Japan",
   "source": "https://en.wikipedia.org/wiki/Japanese_cruiser_Kumano",
   "wikidata": "Q1791961"
+ },
+ "ship-japanese-cruiser-myoko": {
+  "name": "Japanese cruiser Myōkō",
+  "kind": "heavy cruiser",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_cruiser_My%C5%8Dk%C5%8D",
+  "aka": [
+   "Myoko"
+  ]
  },
  "ship-japanese-cruiser-nachi": {
   "name": "Nachi",
@@ -785,6 +951,13 @@
   "wikidata": "Q1571378",
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Kisaragi_(1925)"
  },
+ "ship-japanese-destroyer-kiyoshimo": {
+  "name": "Kiyoshimo",
+  "kind": "Imperial Japanese Navy destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Kiyoshimo"
+ },
  "ship-japanese-destroyer-okinami": {
   "name": "Okinami",
   "kind": "destroyer",
@@ -798,6 +971,13 @@
   "nation": "Japan",
   "wikidata": "Q2596658",
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Oyashio"
+ },
+ "ship-japanese-destroyer-sagiri": {
+  "name": "Sagiri",
+  "kind": "Imperial Japanese Navy Fubuki class destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Sagiri"
  },
  "ship-japanese-destroyer-samidare-1935": {
   "name": "Samidare",
@@ -865,12 +1045,26 @@
    "I-65"
   ]
  },
+ "ship-japanese-submarine-i-17": {
+  "name": "Japanese submarine I-17",
+  "kind": "Japanese submarine",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-17"
+ },
  "ship-japanese-submarine-i-18": {
   "name": "I-18",
   "kind": "submarine",
   "nation": "Japan",
   "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-18",
   "wikidata": "Q10884887"
+ },
+ "ship-japanese-submarine-i-19": {
+  "name": "I-19",
+  "kind": "Imperial Japanese Navy submarine",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-19"
  },
  "ship-japanese-submarine-i-20": {
   "name": "I-20",
@@ -920,6 +1114,13 @@
   "nation": "Japan",
   "wikidata": "Q6159079",
   "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-9"
+ },
+ "ship-ms-africa-shell": {
+  "name": "MS Africa Shell",
+  "kind": "merchant ship sunk by Graf Spee",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/MS_Africa_Shell"
  },
  "ship-ms-awazisan-maru": {
   "name": "Awazisan Maru",
@@ -993,6 +1194,13 @@
   "wikidata": "Q241858",
   "source": "https://en.wikipedia.org/wiki/Japanese_aircraft_carrier_Shinano"
  },
+ "ship-ss-absaroka": {
+  "name": "SS Absaroka",
+  "kind": "American lumber freighter",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Absaroka"
+ },
  "ship-ss-clan-campbell": {
   "name": "Clan Campbell",
   "kind": "cargo ship",
@@ -1013,6 +1221,13 @@
   "nation": "US",
   "wikidata": "Q96404037",
   "source": "https://en.wikipedia.org/wiki/SS_Cynthia_Olson"
+ },
+ "ship-ss-emidio": {
+  "name": "SS Emidio",
+  "kind": "American oil tanker",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Emidio"
  },
  "ship-ss-europa-1928": {
   "name": "SS Europa (1928)",
@@ -1047,6 +1262,16 @@
   "nation": "China",
   "wikidata": "Q842289",
   "source": "https://en.wikipedia.org/wiki/SS_Kiangya"
+ },
+ "ship-ss-leopoldville-1928": {
+  "name": "SS Leopoldville",
+  "kind": "Belgian liner used as a troopship",
+  "nation": "Belgium",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Léopoldville_(1928)",
+  "aka": [
+   "Léopoldville"
+  ]
  },
  "ship-ss-montebello": {
   "name": "SS Montebello",
@@ -1136,6 +1361,20 @@
   "nation": "United States",
   "source": "https://en.wikipedia.org/wiki/USS_Benham_(DD-397)",
   "wikidata": "Q4002098"
+ },
+ "ship-uss-bergall-ss-320": {
+  "name": "USS Bergall (SS-320)",
+  "kind": "submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Bergall_(SS-320)"
+ },
+ "ship-uss-brownson-dd-518": {
+  "name": "USS Brownson (DD-518)",
+  "kind": "U.S. Navy destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Brownson_(DD-518)"
  },
  "ship-uss-bunker-hill-cv-17": {
   "name": "USS Bunker Hill (CV-17)",
@@ -1335,6 +1574,13 @@
   "nation": "US",
   "wikidata": "Q2029483",
   "source": "https://en.wikipedia.org/wiki/USS_Monaghan_(DD-354)"
+ },
+ "ship-uss-nashville-cl-43": {
+  "name": "USS Nashville (CL-43)",
+  "kind": "light cruiser",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Nashville_(CL-43)"
  },
  "ship-uss-new-jersey-bb-62": {
   "name": "USS New Jersey (BB-62)",

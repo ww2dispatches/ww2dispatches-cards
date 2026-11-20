@@ -214,12 +214,47 @@
    "Gona"
   ]
  },
+ "op-battle-of-cape-bon-1941": {
+  "name": "Battle of Cape Bon (1941)",
+  "kind": "naval battle",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Cape_Bon_(1941)"
+ },
+ "op-battle-of-cape-gloucester": {
+  "name": "Battle of Cape Gloucester",
+  "kind": "amphibious battle on New Britain",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Cape_Gloucester",
+  "aka": [
+   "Operation Backhander",
+   "Operation Dexterity"
+  ]
+ },
+ "op-battle-of-changsha-1941-1942": {
+  "name": "Third Battle of Changsha",
+  "kind": "battle, December 1941 to January 1942",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Changsha_(1941%E2%80%931942)"
+ },
  "op-battle-of-empress-augusta-bay": {
   "name": "Battle of Empress Augusta Bay",
   "kind": "naval battle",
   "nation": "United States",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Empress_Augusta_Bay",
   "wikidata": null
+ },
+ "op-battle-of-garfagnana": {
+  "name": "Battle of Garfagnana",
+  "kind": "German counteroffensive in the Serchio valley",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Garfagnana",
+  "aka": [
+   "Operation Wintergewitter"
+  ]
  },
  "op-battle-of-guam-1941": {
   "name": "Battle of Guam (1941)",
@@ -234,6 +269,13 @@
   "nation": "France",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Battle_of_Hanoi_(1946)"
+ },
+ "op-battle-of-himara": {
+  "name": "Battle of Himara",
+  "kind": "Greco-Italian War battle, December 1940",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Himara"
  },
  "op-battle-of-hong-kong": {
   "name": "Battle of Hong Kong",
@@ -339,6 +381,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Battle_of_Ormoc_Bay"
  },
+ "op-battle-of-ortona": {
+  "name": "Battle of Ortona",
+  "kind": "battle",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Ortona"
+ },
  "op-battle-of-point-175": {
   "name": "Battle of Point 175",
   "kind": "battle",
@@ -382,6 +431,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Battle_of_Skerki_Bank"
  },
+ "op-battle-of-st-vith": {
+  "name": "Battle of St. Vith",
+  "kind": "battle in the Battle of the Bulge",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_St._Vith"
+ },
  "op-battle-of-stalingrad": {
   "name": "Battle of Stalingrad",
   "kind": "battle",
@@ -423,6 +479,23 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Battle_of_the_Heligoland_Bight_(1939)"
  },
+ "op-battle-of-the-kerch-peninsula": {
+  "name": "Battle of the Kerch Peninsula",
+  "kind": "Soviet amphibious offensive and campaign",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_the_Kerch_Peninsula",
+  "aka": [
+   "Kerch-Feodosiya operation"
+  ]
+ },
+ "op-battle-of-the-north-cape": {
+  "name": "Battle of the North Cape",
+  "kind": "naval battle",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_the_North_Cape"
+ },
  "op-battle-of-the-river-plate": {
   "name": "Battle of the River Plate",
   "kind": "naval battle",
@@ -457,6 +530,16 @@
   "nation": "Germany",
   "source": "https://en.wikipedia.org/wiki/Beer_Hall_Putsch",
   "wikidata": null
+ },
+ "op-belsen-trials": {
+  "name": "Belsen trials",
+  "kind": "British military war crimes trials",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Belsen_trials",
+  "aka": [
+   "Belsen trial"
+  ]
  },
  "op-berlin-blockade": {
   "name": "Berlin Blockade",
@@ -580,6 +663,13 @@
    "Oath of Kufra"
   ]
  },
+ "op-capture-of-saint-pierre-and-miquelon": {
+  "name": "Capture of Saint Pierre and Miquelon",
+  "kind": "Free French seizure of Vichy islands, December 1941",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Capture_of_Saint_Pierre_and_Miquelon"
+ },
  "op-casablanca-conference": {
   "name": "Casablanca Conference",
   "kind": "Allied conference",
@@ -624,6 +714,13 @@
   "nation": "United States",
   "source": "https://en.wikipedia.org/wiki/Cocoanut_Grove_fire",
   "wikidata": null
+ },
+ "op-constitution-of-italy": {
+  "name": "Constitution of Italy",
+  "kind": "constitution, approved 1947",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Constitution_of_Italy"
  },
  "op-continuation-war": {
   "name": "Continuation War",
@@ -819,6 +916,13 @@
   "source": "https://en.wikipedia.org/wiki/Greco-Italian_War",
   "wikidata": null
  },
+ "op-greek-civil-war": {
+  "name": "Greek Civil War",
+  "kind": "civil war, 1946 to 1949",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Greek_Civil_War"
+ },
  "op-guadalcanal-campaign": {
   "name": "Guadalcanal campaign",
   "kind": "campaign",
@@ -895,6 +999,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Japanese_invasion_of_Legazpi"
  },
+ "op-japanese-invasion-of-lingayen-gulf": {
+  "name": "Japanese invasion of Lingayen Gulf",
+  "kind": "amphibious landing, December 1941",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_invasion_of_Lingayen_Gulf"
+ },
  "op-joint-declaration-by-members-of-the-united-nations": {
   "name": "Joint Declaration by Members of the United Nations",
   "kind": "Allied declaration",
@@ -910,6 +1021,16 @@
   "source": "https://en.wikipedia.org/wiki/Judges%27_Trial",
   "aka": [
    "Justice Case"
+  ]
+ },
+ "op-kalavryta-massacre": {
+  "name": "Kalavryta massacre",
+  "kind": "massacre and destruction of a Greek town",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kalavryta_massacre",
+  "aka": [
+   "Massacre of Kalavryta"
   ]
  },
  "op-kharkov-trial": {
@@ -932,6 +1053,13 @@
   "nation": "Newfoundland",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Knights_of_Columbus_Hostel_fire"
+ },
+ "op-konoe-statements": {
+  "name": "Konoe statements",
+  "kind": "Japanese government statements on China, 1938",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Konoe_statements"
  },
  "op-korean-war": {
   "name": "Korean War",
@@ -1101,6 +1229,17 @@
    "Night and Fog decree"
   ]
  },
+ "op-nanjing-massacre": {
+  "name": "Nanjing Massacre",
+  "kind": "massacre of civilians and prisoners, 1937 to 1938",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Nanjing_Massacre",
+  "aka": [
+   "Nanking Massacre",
+   "Rape of Nanking"
+  ]
+ },
  "op-national-security-act-of-1947": {
   "name": "National Security Act of 1947",
   "kind": "U.S. law",
@@ -1201,6 +1340,13 @@
   "aka": [
    "Ohi Day"
   ]
+ },
+ "op-operation-anklet": {
+  "name": "Operation Anklet",
+  "kind": "British commando raid on the Lofoten Islands",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Anklet"
  },
  "op-operation-attila": {
   "name": "Operation Attila",
@@ -1367,6 +1513,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Palawan_massacre"
  },
+ "op-philippines-campaign-1941-1942": {
+  "name": "Philippines campaign (1941 to 1942)",
+  "kind": "campaign",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Philippines_campaign_(1941–1942)"
+ },
  "op-phoney-war": {
   "name": "Phoney War",
   "kind": "opening months of the war in the West",
@@ -1424,6 +1577,13 @@
   "nation": "Italy",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Raid_on_Algiers"
+ },
+ "op-raid-on-tatsinskaya": {
+  "name": "Raid on Tatsinskaya",
+  "kind": "Soviet tank raid, December 1942",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Raid_on_Tatsinskaya"
  },
  "op-rationing-in-the-united-states": {
   "name": "Rationing in the United States",
@@ -1557,6 +1717,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Siege_of_Bastogne"
  },
+ "op-siege-of-budapest": {
+  "name": "Siege of Budapest",
+  "kind": "siege",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Siege_of_Budapest"
+ },
  "op-siege-of-leningrad": {
   "name": "Siege of Leningrad",
   "kind": "siege",
@@ -1591,6 +1758,13 @@
   "nation": "Germany",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Southampton_Blitz"
+ },
+ "op-spanish-civil-war": {
+  "name": "Spanish Civil War",
+  "kind": "civil war 1936 to 1939",
+  "nation": "Spain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
  },
  "op-spanish-question-united-nations": {
   "name": "Spanish question (United Nations)",
@@ -1651,6 +1825,14 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Terrace_mutiny"
  },
+ "op-the-holocaust": {
+  "name": "The Holocaust",
+  "kind": "Nazi genocide of Europe's Jews",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/The_Holocaust",
+  "note": "Wikipedia title not yet confirmed with the API (HTTP 429 on every retry); confirm on merge."
+ },
  "op-the-holocaust-in-italy": {
   "name": "The Holocaust in Italy",
   "kind": "persecution and deportation of Italy's Jews",
@@ -1685,6 +1867,13 @@
   "nation": "Britain",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Trial_of_Erich_von_Manstein"
+ },
+ "op-truman-directive-of-1945": {
+  "name": "Truman Directive of 1945",
+  "kind": "U.S. presidential directive on displaced persons",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Truman_Directive_of_1945"
  },
  "op-twenty-second-amendment-to-the-united-states-constitution": {
   "name": "22nd Amendment",
@@ -1760,6 +1949,16 @@
   "nation": "US",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/USS_Panay_incident"
+ },
+ "op-venona-project": {
+  "name": "Venona project",
+  "kind": "U.S. codebreaking program",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Venona_project",
+  "aka": [
+   "Venona"
+  ]
  },
  "op-victory-program": {
   "name": "Victory Program",

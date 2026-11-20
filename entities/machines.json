@@ -46,6 +46,14 @@
   "source": "https://en.wikipedia.org/wiki/Allison_V-1710",
   "wikidata": null
  },
+ "machine-anderson-shelter": {
+  "name": "Anderson shelter",
+  "kind": "prefabricated steel garden air raid shelter",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Anderson_shelter",
+  "note": "The Wikipedia title redirects to the Anderson shelter section of Air raid shelter; kept as its own entity because the shelter is the subject."
+ },
  "machine-blalock-thomas-taussig-shunt": {
   "name": "Blalock Thomas Taussig shunt",
   "kind": "surgical procedure",
@@ -62,6 +70,13 @@
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/Bombe",
   "wikidata": null
+ },
+ "machine-captain-america-comics": {
+  "name": "Captain America Comics",
+  "kind": "American comic book series",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Captain_America_Comics"
  },
  "machine-casablanca-film": {
   "name": "Casablanca",
@@ -169,6 +184,13 @@
   "aka": [
    "Hs 293"
   ]
+ },
+ "machine-it-s-a-wonderful-life": {
+  "name": "It's a Wonderful Life",
+  "kind": "American feature film, 1946",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/It's_a_Wonderful_Life"
  },
  "machine-kharkiv-model-v-2": {
   "name": "V-2 diesel engine",
@@ -278,6 +300,16 @@
   "wikidata": null,
   "aka": [
    "six pounder"
+  ]
+ },
+ "machine-panther-tank": {
+  "name": "Panther",
+  "kind": "German medium tank",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Panther_tank",
+  "aka": [
+   "Panzerkampfwagen V Panther"
   ]
  },
  "machine-panzer-38-t": {

@@ -62,6 +62,16 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/112th_Cavalry_Regiment"
  },
+ "unit-117th-jager-division": {
+  "name": "117th Jäger Division",
+  "kind": "German army light infantry division",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/117th_J%C3%A4ger_Division",
+  "aka": [
+   "117th Jager Division"
+  ]
+ },
  "unit-11th-airborne-division": {
   "name": "11th Airborne Division",
   "kind": "U.S. Army airborne division",
@@ -194,6 +204,13 @@
   "aka": [
    "Big Red One"
   ]
+ },
+ "unit-1st-marine-division": {
+  "name": "1st Marine Division",
+  "kind": "U.S. Marine Corps division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1st_Marine_Division"
  },
  "unit-1st-panzer-army": {
   "name": "First Panzer Army",
@@ -334,6 +351,20 @@
    "Second Panzer Army",
    "Panzer Group 2"
   ]
+ },
+ "unit-2nd-panzer-division": {
+  "name": "2nd Panzer Division",
+  "kind": "German Army armored division",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/2nd_Panzer_Division"
+ },
+ "unit-2nd-panzer-division-wehrmacht": {
+  "name": "2nd Panzer Division",
+  "kind": "German army armored division",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/2nd_Panzer_Division_(Wehrmacht)"
  },
  "unit-2nd-raiding-brigade": {
   "name": "2nd Raiding Brigade",
@@ -508,6 +539,17 @@
    "442nd Infantry Regiment"
   ]
  },
+ "unit-445th-operations-group": {
+  "name": "445th Operations Group",
+  "kind": "USAAF B-24 bomb group, World War II 445th Bombardment Group",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/445th_Operations_Group",
+  "aka": [
+   "445th Bombardment Group",
+   "445th Bomb Group"
+  ]
+ },
  "unit-47th-volksgrenadier-division": {
   "name": "47th Volksgrenadier Division",
   "kind": "German infantry division",
@@ -574,6 +616,16 @@
   "source": "https://en.wikipedia.org/wiki/62nd_Army",
   "wikidata": null
  },
+ "unit-66th-infantry-division-united-states": {
+  "name": "66th Infantry Division",
+  "kind": "U.S. Army infantry division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/66th_Infantry_Division_(United_States)",
+  "aka": [
+   "Black Panther Division"
+  ]
+ },
  "unit-6th-army-wehrmacht": {
   "name": "Sixth Army",
   "kind": "German field army",
@@ -612,6 +664,13 @@
   "source": "https://en.wikipedia.org/wiki/79th_Armoured_Division",
   "wikidata": null
  },
+ "unit-7th-armored-division-united-states": {
+  "name": "7th Armored Division (United States)",
+  "kind": "U.S. Army armored division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/7th_Armored_Division_(United_States)"
+ },
  "unit-7th-armoured-brigade-united-kingdom": {
   "name": "7th Armoured Brigade",
   "kind": "British armoured brigade",
@@ -648,6 +707,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/90th_Infantry_Division_(United_States)",
   "wikidata": null
+ },
+ "unit-92nd-infantry-division-united-states": {
+  "name": "92nd Infantry Division",
+  "kind": "U.S. Army infantry division, the Buffalo Soldiers",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/92nd_Infantry_Division_(United_States)"
  },
  "unit-95th-training-division": {
   "name": "95th Infantry Division",
@@ -687,6 +753,13 @@
   "nation": "Germany",
   "source": "https://en.wikipedia.org/wiki/Afrika_Korps",
   "wikidata": null
+ },
+ "unit-all-india-muslim-league": {
+  "name": "All-India Muslim League",
+  "kind": "political party",
+  "nation": "India",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/All-India_Muslim_League"
  },
  "unit-america-first-committee": {
   "name": "America First Committee",
@@ -804,6 +877,13 @@
   "aka": [
    "code talkers"
   ]
+ },
+ "unit-constituent-assembly-of-italy": {
+  "name": "Constituent Assembly of Italy",
+  "kind": "constitutional assembly, 1946 to 1948",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Constituent_Assembly_of_Italy"
  },
  "unit-corpo-truppe-volontarie": {
   "name": "Corpo Truppe Volontarie",
@@ -944,12 +1024,32 @@
    "Force G"
   ]
  },
+ "unit-fourteenth-area-army": {
+  "name": "Fourteenth Area Army",
+  "kind": "Imperial Japanese Army field army (14th Army in 1941)",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fourteenth_Area_Army",
+  "aka": [
+   "14th Army"
+  ]
+ },
  "unit-frankfurter-zeitung": {
   "name": "Frankfurter Zeitung",
   "kind": "German newspaper",
   "nation": "Germany",
   "source": "https://en.wikipedia.org/wiki/Frankfurter_Zeitung",
   "wikidata": null
+ },
+ "unit-french-committee-of-national-liberation": {
+  "name": "French Committee of National Liberation",
+  "kind": "Free French governing committee in Algiers",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/French_Committee_of_National_Liberation",
+  "aka": [
+   "CFLN"
+  ]
  },
  "unit-french-forces-of-the-interior": {
   "name": "FFI",
@@ -1107,6 +1207,13 @@
   "source": "https://en.wikipedia.org/wiki/Lost_Battalion_(Europe,_World_War_II)",
   "wikidata": null
  },
+ "unit-loyal-edmonton-regiment": {
+  "name": "Loyal Edmonton Regiment",
+  "kind": "Canadian infantry regiment",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Loyal_Edmonton_Regiment"
+ },
  "unit-lxxxi-army-corps": {
   "name": "LXXXI Corps",
   "kind": "German army corps",
@@ -1218,6 +1325,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/No._1_Squadron_RAAF"
  },
+ "unit-no-12-commando": {
+  "name": "No. 12 Commando",
+  "kind": "British Army commando unit",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._12_Commando"
+ },
  "unit-no-149-squadron-raf": {
   "name": "No. 149 Squadron RAF",
   "kind": "bomber squadron",
@@ -1309,6 +1423,16 @@
   "wikidata": null,
   "note": "The Wikipedia article treats the story as largely fabricated, as the card does."
  },
+ "unit-people-s-army-of-vietnam": {
+  "name": "People's Army of Vietnam",
+  "kind": "Vietnamese army, founded 1944",
+  "nation": "Vietnam",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/People%27s_Army_of_Vietnam",
+  "aka": [
+   "Vietnam Propaganda Liberation Army"
+  ]
+ },
  "unit-provisional-government-of-the-french-republic": {
   "name": "Provisional Government of the French Republic",
   "kind": "French government",
@@ -1338,6 +1462,16 @@
   "wikidata": null,
   "aka": [
    "Bomber Command"
+  ]
+ },
+ "unit-red-orchestra-espionage": {
+  "name": "Red Orchestra",
+  "kind": "German resistance and intelligence network",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Red_Orchestra_(espionage)",
+  "aka": [
+   "Rote Kapelle"
   ]
  },
  "unit-reich-security-main-office": {
@@ -1647,6 +1781,16 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Winnipeg_Grenadiers"
  },
+ "unit-women-airforce-service-pilots": {
+  "name": "Women Airforce Service Pilots",
+  "kind": "U.S. civilian women's pilot organization",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Women_Airforce_Service_Pilots",
+  "aka": [
+   "WASP"
+  ]
+ },
  "unit-works-progress-administration": {
   "name": "Works Progress Administration",
   "kind": "US New Deal relief agency",
@@ -1685,6 +1829,18 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/XV_Corps_(United_States)",
   "wikidata": null
+ },
+ "unit-xv-international-brigade": {
+  "name": "XV International Brigade",
+  "kind": "International Brigades unit in the Spanish Civil War",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/XV_International_Brigade",
+  "aka": [
+   "Abraham Lincoln Brigade",
+   "Lincoln Battalion"
+  ],
+  "note": "Abraham Lincoln Brigade redirects here on English Wikipedia; nation is the volunteers' main origin, with British, Canadian and other battalions."
  },
  "unit-xx-corps-united-states": {
   "name": "XX Corps",

@@ -160,6 +160,15 @@
   "lat": null,
   "lon": null
  },
+ "place-bergen-belsen-concentration-camp": {
+  "name": "Bergen-Belsen concentration camp",
+  "kind": "Nazi concentration camp",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bergen-Belsen_concentration_camp",
+  "lat": null,
+  "lon": null
+ },
  "place-berlin": {
   "name": "Berlin",
   "kind": "capital of Germany",
@@ -271,6 +280,15 @@
   "lat": null,
   "lon": null
  },
+ "place-bogdanovka-concentration-camp": {
+  "name": "Bogdanovka concentration camp",
+  "kind": "Romanian run camp in Transnistria, site of a 1941 massacre",
+  "nation": "Ukraine",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bogdanovka_concentration_camp",
+  "lat": null,
+  "lon": null
+ },
  "place-boston": {
   "name": "Boston",
   "kind": "city",
@@ -364,12 +382,39 @@
   "lat": null,
   "lon": null
  },
+ "place-budapest": {
+  "name": "Budapest",
+  "kind": "capital city",
+  "nation": "Hungary",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Budapest",
+  "lat": null,
+  "lon": null
+ },
+ "place-buenos-aires": {
+  "name": "Buenos Aires",
+  "kind": "city, capital of Argentina",
+  "nation": "Argentina",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Buenos_Aires",
+  "lat": null,
+  "lon": null
+ },
  "place-burauen": {
   "name": "Burauen",
   "kind": "town and airfields on Leyte",
   "nation": "Philippines",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Burauen",
+  "lat": null,
+  "lon": null
+ },
+ "place-burbank-california": {
+  "name": "Burbank, California",
+  "kind": "city",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Burbank,_California",
   "lat": null,
   "lon": null
  },
@@ -442,6 +487,15 @@
   "aka": [
    "Cavite"
   ]
+ },
+ "place-celles-houyet": {
+  "name": "Celles",
+  "kind": "village near Dinant, Belgium",
+  "nation": "Belgium",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Celles,_Houyet",
+  "lat": null,
+  "lon": null
  },
  "place-central-park": {
   "name": "Central Park",
@@ -806,6 +860,15 @@
   "lat": null,
   "lon": null
  },
+ "place-esztergom": {
+  "name": "Esztergom",
+  "kind": "city, seat of the Hungarian primate",
+  "nation": "Hungary",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Esztergom",
+  "lat": null,
+  "lon": null
+ },
  "place-eygelshoven": {
   "name": "Eigelshoven",
   "kind": "village",
@@ -890,6 +953,15 @@
   "nation": "Germany",
   "source": "https://en.wikipedia.org/wiki/Geilenkirchen",
   "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-genthin": {
+  "name": "Genthin",
+  "kind": "town in Saxony-Anhalt",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Genthin",
   "lat": null,
   "lon": null
  },
@@ -1067,6 +1139,15 @@
   "lat": null,
   "lon": null
  },
+ "place-heidelberg": {
+  "name": "Heidelberg",
+  "kind": "city in Germany",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Heidelberg",
+  "lat": null,
+  "lon": null
+ },
  "place-heilbronn": {
   "name": "Heilbronn",
   "kind": "City on the Neckar",
@@ -1109,6 +1190,19 @@
   "nation": "Germany",
   "source": "https://en.wikipedia.org/wiki/Herzogenrath",
   "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-himare": {
+  "name": "Himarë",
+  "kind": "coastal town in southern Albania",
+  "nation": "Albania",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Himar%C3%AB",
+  "aka": [
+   "Himara",
+   "Chimara"
+  ],
   "lat": null,
   "lon": null
  },
@@ -1297,6 +1391,15 @@
    "Kalach on the Don"
   ]
  },
+ "place-kalavryta": {
+  "name": "Kalavryta",
+  "kind": "town in the Peloponnese",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kalavryta",
+  "lat": null,
+  "lon": null
+ },
  "place-kaneohe-hawaii": {
   "name": "Kaneohe",
   "kind": "town",
@@ -1466,12 +1569,30 @@
    "Kremlin"
   ]
  },
+ "place-kuching": {
+  "name": "Kuching",
+  "kind": "city, capital of Sarawak, Borneo",
+  "nation": "Malaysia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kuching",
+  "lat": null,
+  "lon": null
+ },
  "place-kufra": {
   "name": "Kufra",
   "kind": "oasis fort",
   "nation": "Libya",
   "source": "https://en.wikipedia.org/wiki/Kufra",
   "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-kunming": {
+  "name": "Kunming",
+  "kind": "city in Yunnan, China",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kunming",
   "lat": null,
   "lon": null
  },
@@ -1599,6 +1720,15 @@
   "lat": null,
   "lon": null
  },
+ "place-lingayen-gulf": {
+  "name": "Lingayen Gulf",
+  "kind": "gulf on western Luzon",
+  "nation": "Philippines",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Lingayen_Gulf",
+  "lat": null,
+  "lon": null
+ },
  "place-liverpool": {
   "name": "Liverpool",
   "kind": "city",
@@ -1614,6 +1744,15 @@
   "nation": "Britain",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Loch_Ewe",
+  "lat": null,
+  "lon": null
+ },
+ "place-lofoten": {
+  "name": "Lofoten",
+  "kind": "island group",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Lofoten",
   "lat": null,
   "lon": null
  },
@@ -1662,6 +1801,15 @@
   "nation": "Philippines",
   "source": "https://en.wikipedia.org/wiki/MacArthur_Landing_Memorial_National_Park",
   "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-manchester": {
+  "name": "Manchester",
+  "kind": "city",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Manchester",
   "lat": null,
   "lon": null
  },
@@ -1748,6 +1896,15 @@
   "aka": [
    "MGH"
   ]
+ },
+ "place-mauthausen-concentration-camp": {
+  "name": "Mauthausen concentration camp",
+  "kind": "Nazi concentration camp",
+  "nation": "Austria",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mauthausen_concentration_camp",
+  "lat": null,
+  "lon": null
  },
  "place-mayflower-hotel": {
   "name": "Mayflower Hotel",
@@ -1967,12 +2124,34 @@
   "lat": null,
   "lon": null
  },
+ "place-myanmar": {
+  "name": "Myanmar",
+  "kind": "country in Southeast Asia",
+  "nation": "Burma",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Myanmar",
+  "aka": [
+   "Burma"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-naples": {
   "name": "Naples",
   "kind": "City and port",
   "nation": "Italy",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Naples",
+  "lat": null,
+  "lon": null
+ },
+ "place-nassogne": {
+  "name": "Nassogne",
+  "kind": "Belgian municipality that includes Bande",
+  "nation": "Belgium",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Nassogne",
+  "note": "Bande, site of the 24 December 1944 massacre, is a village of Nassogne",
   "lat": null,
   "lon": null
  },
@@ -2009,6 +2188,15 @@
   "nation": "US",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Naval_Air_Station_Fort_Lauderdale",
+  "lat": null,
+  "lon": null
+ },
+ "place-neuengamme-concentration-camp": {
+  "name": "Neuengamme concentration camp",
+  "kind": "Nazi concentration camp, Hamburg",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Neuengamme_concentration_camp",
   "lat": null,
   "lon": null
  },
@@ -2129,6 +2317,15 @@
   "lat": null,
   "lon": null
  },
+ "place-oldham": {
+  "name": "Oldham",
+  "kind": "town near Manchester, England",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Oldham",
+  "lat": null,
+  "lon": null
+ },
  "place-oran": {
   "name": "Oran",
   "kind": "city",
@@ -2144,6 +2341,15 @@
   "nation": "Philippines",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Ormoc",
+  "lat": null,
+  "lon": null
+ },
+ "place-ortona": {
+  "name": "Ortona",
+  "kind": "Adriatic port town, Italy",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ortona",
   "lat": null,
   "lon": null
  },
@@ -2183,6 +2389,15 @@
   "lat": null,
   "lon": null
  },
+ "place-panay": {
+  "name": "Panay",
+  "kind": "island in the Philippines",
+  "nation": "Philippines",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Panay",
+  "lat": null,
+  "lon": null
+ },
  "place-paris": {
   "name": "Paris",
   "kind": "city",
@@ -2203,6 +2418,18 @@
   "aka": [
    "Orly"
   ]
+ },
+ "place-peenemunde": {
+  "name": "Peenemunde",
+  "kind": "German weapons test site on the Baltic coast",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Peenemünde",
+  "aka": [
+   "Peenemünde"
+  ],
+  "lat": null,
+  "lon": null
  },
  "place-petrishchevo": {
   "name": "Petrishchevo",
@@ -2475,6 +2702,15 @@
    "Saint Petersburg"
   ]
  },
+ "place-saint-pierre-and-miquelon": {
+  "name": "Saint Pierre and Miquelon",
+  "kind": "French islands off Newfoundland",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Saint_Pierre_and_Miquelon",
+  "lat": null,
+  "lon": null
+ },
  "place-saipan-northern-mariana-islands": {
   "name": "Saipan",
   "kind": "island",
@@ -2689,6 +2925,15 @@
   "lat": null,
   "lon": null
  },
+ "place-sommocolonia": {
+  "name": "Sommocolonia",
+  "kind": "hill village near Barga",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sommocolonia",
+  "lat": null,
+  "lon": null
+ },
  "place-sounion": {
   "name": "Cape Sounion",
   "kind": "cape",
@@ -2809,6 +3054,15 @@
   "nation": "Solomon Islands",
   "source": "https://en.wikipedia.org/wiki/Tassafaronga_Point",
   "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-tatsinskaya-airfield": {
+  "name": "Tatsinskaya Airfield",
+  "kind": "airfield in Rostov Oblast, Stalingrad airlift base",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tatsinskaya_Airfield",
   "lat": null,
   "lon": null
  },
