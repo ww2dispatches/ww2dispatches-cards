@@ -11,7 +11,7 @@ LIB = json.load(open(os.path.join(HERE, '..', 'kit', 'silhouettes', 'library.jso
 # Each series has map-room/series/<campaign>/table.json saying where its map sits on the table (LON0, LAT0, KX, KY).
 # The camera, block size and frame are fixed (scene.py, comp.py, view.json).
 TW, TH = 14.0, 14.4                                # table map size in table units
-BS, BH = 1.35, 0.36                                # block size and height
+BS, BH = float(os.environ.get("MAPROOM_BS", 1.35)), 0.36   # block size and height, as day.py
 CAM = json.load(open(os.path.join(HERE, 'view.json')))
 LON0 = LAT0 = KX = KY = LON_MIN = LON_MAX = LAT_MIN = LAT_MAX = None
 def use_table(path):

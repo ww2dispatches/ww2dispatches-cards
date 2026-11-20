@@ -88,7 +88,7 @@ for nm, sx, sy, loc in [('rimN', TW + 1.2, 0.6, (0, TH / 2 + 0.3, -0.25)), ('rim
 fl = box('floor', 80, 80, 0.1, (0, 0, -3.5)); mat(fl, 'floor'); TABLE.append(fl)
 
 # ---------- pieces ----------
-BS = 1.35
+BS = float(os.environ.get("MAPROOM_BS", 1.35))   # as day.py
 def make_block(face, loc, rot):
     b = box('blk', BS, BS, 0.36, (0, 0, 0)); bevel(b, 0.045, 4); mat(b, 'walnut')
     f = face_plane('bf', BS * 0.89, BS * 0.89, face); f.location = (0, 0, 0.3608)

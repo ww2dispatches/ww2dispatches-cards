@@ -210,42 +210,84 @@
   ],
   "pieces": [
    {
-    "id": "1a",
+    "id": "101",
     "nation": "us",
-    "type": "infantry",
-    "label": "First Army",
+    "type": "airborne",
+    "label": "101st Airborne",
     "move": "hold",
     "from": [
-     5.75,
-     50.55
+     5.72,
+     50.0
     ],
     "sources": [
      "HQ Twelfth Army Group situation map, 1200 hrs 25 Dec 1944 (LOC 2004630297)"
     ]
    },
    {
-    "id": "3a",
+    "id": "4ad",
     "nation": "us",
     "type": "armor",
-    "label": "Third Army",
+    "label": "4th Armored",
     "move": "hold",
     "from": [
-     5.95,
-     49.7
+     5.72,
+     49.8
     ],
     "sources": [
      "HQ Twelfth Army Group situation map, 1200 hrs 25 Dec 1944 (LOC 2004630297)"
     ]
    },
    {
-    "id": "5pz",
+    "id": "2pz",
     "nation": "germany",
     "type": "armor",
-    "label": "5th Panzer Army",
+    "label": "2nd Panzer",
+    "move": "hold",
+    "from": [
+     5.12,
+     50.18
+    ],
+    "sources": [
+     "HQ Twelfth Army Group situation map, 1200 hrs 25 Dec 1944 (LOC 2004630297)"
+    ]
+   },
+   {
+    "id": "2ad",
+    "nation": "us",
+    "type": "armor",
+    "label": "2nd Armored",
+    "move": "hold",
+    "from": [
+     5.05,
+     50.4
+    ],
+    "sources": [
+     "HQ Twelfth Army Group situation map, 1200 hrs 25 Dec 1944 (LOC 2004630297)"
+    ]
+   },
+   {
+    "id": "116",
+    "nation": "germany",
+    "type": "armor",
+    "label": "116th Panzer",
     "move": "hold",
     "from": [
      5.45,
-     50.12
+     50.16
+    ],
+    "sources": [
+     "HQ Twelfth Army Group situation map, 1200 hrs 25 Dec 1944 (LOC 2004630297)"
+    ]
+   },
+   {
+    "id": "84",
+    "nation": "us",
+    "type": "infantry",
+    "label": "84th Infantry",
+    "move": "hold",
+    "from": [
+     5.4,
+     50.36
     ],
     "sources": [
      "HQ Twelfth Army Group situation map, 1200 hrs 25 Dec 1944 (LOC 2004630297)"
@@ -258,8 +300,22 @@
     "label": "6th Panzer Army",
     "move": "hold",
     "from": [
-     6.05,
-     50.3
+     5.85,
+     50.25
+    ],
+    "sources": [
+     "HQ Twelfth Army Group situation map, 1200 hrs 25 Dec 1944 (LOC 2004630297)"
+    ]
+   },
+   {
+    "id": "82",
+    "nation": "us",
+    "type": "airborne",
+    "label": "82nd Airborne",
+    "move": "hold",
+    "from": [
+     5.8,
+     50.47
     ],
     "sources": [
      "HQ Twelfth Army Group situation map, 1200 hrs 25 Dec 1944 (LOC 2004630297)"
@@ -280,14 +336,14 @@
     ]
    },
    {
-    "id": "30c",
-    "nation": "britain",
+    "id": "3a",
+    "nation": "us",
     "type": "infantry",
-    "label": "XXX Corps",
+    "label": "Third Army",
     "move": "hold",
     "from": [
-     4.85,
-     50.45
+     6.1,
+     49.68
     ],
     "sources": [
      "HQ Twelfth Army Group situation map, 1200 hrs 25 Dec 1944 (LOC 2004630297)"
