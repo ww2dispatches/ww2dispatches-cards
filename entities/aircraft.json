@@ -45,6 +45,16 @@
    "Flying Fortress"
   ]
  },
+ "aircraft-boeing-b-47-stratojet": {
+  "name": "Boeing B-47 Stratojet",
+  "kind": "jet bomber",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Boeing_B-47_Stratojet",
+  "aka": [
+   "XB-47"
+  ]
+ },
  "aircraft-boeing-p-26-peashooter": {
   "name": "Boeing P-26 Peashooter",
   "kind": "fighter",
@@ -84,6 +94,13 @@
   "aka": [
    "Curtiss F11C Goshawk"
   ]
+ },
+ "aircraft-curtiss-p-40-warhawk": {
+  "name": "Curtiss P-40 Warhawk",
+  "kind": "American fighter",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Curtiss_P-40_Warhawk"
  },
  "aircraft-curtiss-sb2c-helldiver": {
   "name": "Curtiss SB2C Helldiver",
@@ -366,6 +383,26 @@
    "Myrt"
   ]
  },
+ "aircraft-noorduyn-norseman": {
+  "name": "Noorduyn Norseman",
+  "kind": "utility transport (UC-64 in USAAF service)",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Noorduyn_Norseman",
+  "aka": [
+   "UC-64 Norseman"
+  ]
+ },
+ "aircraft-north-american-b-25-mitchell": {
+  "name": "North American B-25 Mitchell",
+  "kind": "medium bomber",
+  "nation": "United States",
+  "source": "https://en.wikipedia.org/wiki/North_American_B-25_Mitchell",
+  "wikidata": null,
+  "aka": [
+   "B-25"
+  ]
+ },
  "aircraft-north-american-p-51-mustang": {
   "name": "North American P-51 Mustang",
   "kind": "fighter aircraft",
@@ -432,6 +469,26 @@
   "nation": "Britain",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Vickers_Wellington"
+ },
+ "aircraft-vought-f4u-corsair": {
+  "name": "Vought F4U Corsair",
+  "kind": "fighter aircraft",
+  "nation": "United States",
+  "source": "https://en.wikipedia.org/wiki/Vought_F4U_Corsair",
+  "wikidata": null,
+  "aka": [
+   "Corsair"
+  ]
+ },
+ "aircraft-wright-flyer": {
+  "name": "Wright Flyer",
+  "kind": "first powered airplane",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Wright_Flyer",
+  "aka": [
+   "1903 Wright Flyer"
+  ]
  },
  "aircraft-yokosuka-mxy-7-ohka": {
   "name": "Ohka",

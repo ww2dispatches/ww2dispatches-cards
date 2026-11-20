@@ -38,6 +38,24 @@
   "lat": null,
   "lon": null
  },
+ "place-andaman-islands": {
+  "name": "Andaman Islands",
+  "kind": "islands",
+  "nation": "India",
+  "source": "https://en.wikipedia.org/wiki/Andaman_Islands",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-antwerp": {
+  "name": "Antwerp",
+  "kind": "port city",
+  "nation": "Belgium",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Antwerp",
+  "lat": null,
+  "lon": null
+ },
  "place-arc-de-triomphe": {
   "name": "Arc de Triomphe",
   "kind": "monument",
@@ -133,6 +151,15 @@
   "lat": null,
   "lon": null
  },
+ "place-berchtesgaden": {
+  "name": "Berchtesgaden",
+  "kind": "town",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Berchtesgaden",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
  "place-berlin": {
   "name": "Berlin",
   "kind": "capital of Germany",
@@ -142,12 +169,48 @@
   "lat": null,
   "lon": null
  },
+ "place-berlin-tegel-airport": {
+  "name": "Berlin Tegel Airport",
+  "kind": "airfield built during the Berlin Airlift",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Berlin_Tegel_Airport",
+  "lat": null,
+  "lon": null
+ },
+ "place-berlin-tegel-radio-transmitter": {
+  "name": "Berlin-Tegel radio transmitter",
+  "kind": "radio transmitter towers",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Berlin-Tegel_radio_transmitter",
+  "lat": null,
+  "lon": null
+ },
  "place-berlin-zoo": {
   "name": "Berlin Zoo",
   "kind": "zoo",
   "nation": "Germany",
   "source": "https://en.wikipedia.org/wiki/Berlin_Zoo",
   "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-betio": {
+  "name": "Betio",
+  "kind": "island",
+  "nation": "Kiribati",
+  "source": "https://en.wikipedia.org/wiki/Betio",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-bhamo": {
+  "name": "Bhamo",
+  "kind": "town on the Irrawaddy, northern Burma",
+  "nation": "Burma",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bhamo",
   "lat": null,
   "lon": null
  },
@@ -208,6 +271,24 @@
   "lat": null,
   "lon": null
  },
+ "place-boston": {
+  "name": "Boston",
+  "kind": "city",
+  "nation": "United States",
+  "source": "https://en.wikipedia.org/wiki/Boston",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-boston-city-hospital": {
+  "name": "Boston City Hospital",
+  "kind": "hospital",
+  "nation": "United States",
+  "source": "https://en.wikipedia.org/wiki/Boston_City_Hospital",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
  "place-boston-harbor": {
   "name": "Boston Harbor",
   "kind": "harbor",
@@ -217,11 +298,29 @@
   "lat": null,
   "lon": null
  },
+ "place-boston-navy-yard": {
+  "name": "Boston Navy Yard",
+  "kind": "naval shipyard",
+  "nation": "United States",
+  "source": "https://en.wikipedia.org/wiki/Boston_Navy_Yard",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
  "place-bougainville-island": {
   "name": "Bougainville",
   "kind": "island",
   "nation": "Papua New Guinea",
   "source": "https://en.wikipedia.org/wiki/Bougainville_Island",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-boulogne-sur-mer": {
+  "name": "Boulogne",
+  "kind": "port city",
+  "nation": "France",
+  "source": "https://en.wikipedia.org/wiki/Boulogne-sur-Mer",
   "wikidata": null,
   "lat": null,
   "lon": null
@@ -274,6 +373,24 @@
   "lat": null,
   "lon": null
  },
+ "place-cairo": {
+  "name": "Cairo",
+  "kind": "city",
+  "nation": "Egypt",
+  "source": "https://en.wikipedia.org/wiki/Cairo",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-cairo-west-air-base": {
+  "name": "Cairo West airport",
+  "kind": "airfield",
+  "nation": "Egypt",
+  "source": "https://en.wikipedia.org/wiki/Cairo_West_Air_Base",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
  "place-camp-x": {
   "name": "Camp X",
   "kind": "secret agent training school near Whitby, Ontario",
@@ -293,6 +410,24 @@
   "nation": "Australia",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Cape_Jaffa",
+  "lat": null,
+  "lon": null
+ },
+ "place-cape-torokina": {
+  "name": "Cape Torokina",
+  "kind": "cape",
+  "nation": "Papua New Guinea",
+  "source": "https://en.wikipedia.org/wiki/Cape_Torokina",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-casablanca": {
+  "name": "Casablanca",
+  "kind": "city",
+  "nation": "Morocco",
+  "source": "https://en.wikipedia.org/wiki/Casablanca",
+  "wikidata": null,
   "lat": null,
   "lon": null
  },
@@ -367,6 +502,24 @@
   "kind": "town",
   "nation": "Algeria",
   "source": "https://en.wikipedia.org/wiki/Cherchell",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-chir-river": {
+  "name": "Chir River",
+  "kind": "river",
+  "nation": "Russia",
+  "source": "https://en.wikipedia.org/wiki/Chir_(river)",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-choiseul-island": {
+  "name": "Choiseul",
+  "kind": "island",
+  "nation": "Solomon Islands",
+  "source": "https://en.wikipedia.org/wiki/Choiseul_Island",
   "wikidata": null,
   "lat": null,
   "lon": null
@@ -545,6 +698,24 @@
   "lat": null,
   "lon": null
  },
+ "place-don-river": {
+  "name": "Don River",
+  "kind": "river",
+  "nation": "Russia",
+  "source": "https://en.wikipedia.org/wiki/Don_(river)",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-dresden": {
+  "name": "Dresden",
+  "kind": "city",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Dresden",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
  "place-duren": {
   "name": "Duren",
   "kind": "town",
@@ -617,6 +788,15 @@
    "Soviet Embassy"
   ]
  },
+ "place-empress-augusta-bay": {
+  "name": "Empress Augusta Bay",
+  "kind": "bay",
+  "nation": "Papua New Guinea",
+  "source": "https://en.wikipedia.org/wiki/Empress_Augusta_Bay",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
  "place-eschweiler": {
   "name": "Eschweiler",
   "kind": "town",
@@ -677,6 +857,15 @@
   "lat": null,
   "lon": null
  },
+ "place-fort-stanton": {
+  "name": "Fort Stanton",
+  "kind": "fort and internment camp, New Mexico",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fort_Stanton",
+  "lat": null,
+  "lon": null
+ },
  "place-frankfurt": {
   "name": "Frankfurt",
   "kind": "city",
@@ -722,6 +911,15 @@
   "lat": null,
   "lon": null
  },
+ "place-giza-pyramid-complex": {
+  "name": "Pyramids of Giza",
+  "kind": "pyramids",
+  "nation": "Egypt",
+  "source": "https://en.wikipedia.org/wiki/Giza_pyramid_complex",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
  "place-gjirokaster": {
   "name": "Gjirokaster",
   "kind": "city",
@@ -740,6 +938,24 @@
   "nation": "Papua",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Gona,_Papua_New_Guinea",
+  "lat": null,
+  "lon": null
+ },
+ "place-great-sphinx-of-giza": {
+  "name": "Sphinx",
+  "kind": "monument",
+  "nation": "Egypt",
+  "source": "https://en.wikipedia.org/wiki/Great_Sphinx_of_Giza",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-greenland": {
+  "name": "Greenland",
+  "kind": "Arctic island, Danish territory",
+  "nation": "Denmark",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Greenland",
   "lat": null,
   "lon": null
  },
@@ -800,6 +1016,15 @@
   "lat": null,
   "lon": null
  },
+ "place-hampton-roads": {
+  "name": "Hampton Roads",
+  "kind": "harbor",
+  "nation": "United States",
+  "source": "https://en.wikipedia.org/wiki/Hampton_Roads",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
  "place-hanford-site": {
   "name": "Hanford Site",
   "kind": "nuclear production complex",
@@ -811,6 +1036,18 @@
   "aka": [
    "Hanford"
   ]
+ },
+ "place-hankou": {
+  "name": "Hankou",
+  "kind": "city on the Yangtze, now part of Wuhan",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hankou",
+  "aka": [
+   "Hankow"
+  ],
+  "lat": null,
+  "lon": null
  },
  "place-hatfield-aerodrome": {
   "name": "Hatfield",
@@ -854,6 +1091,15 @@
   "nation": "Germany",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Heligoland",
+  "lat": null,
+  "lon": null
+ },
+ "place-henderson-field-guadalcanal": {
+  "name": "Henderson Field",
+  "kind": "airfield",
+  "nation": "Solomon Islands",
+  "source": "https://en.wikipedia.org/wiki/Henderson_Field_(Guadalcanal)",
+  "wikidata": null,
   "lat": null,
   "lon": null
  },
@@ -1039,6 +1285,18 @@
    "hollow tooth"
   ]
  },
+ "place-kalach-na-donu": {
+  "name": "Kalach",
+  "kind": "town",
+  "nation": "Russia",
+  "source": "https://en.wikipedia.org/wiki/Kalach-na-Donu",
+  "wikidata": null,
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Kalach on the Don"
+  ]
+ },
  "place-kaneohe-hawaii": {
   "name": "Kaneohe",
   "kind": "town",
@@ -1060,6 +1318,19 @@
   "lat": null,
   "lon": null
  },
+ "place-kenitra": {
+  "name": "Port Lyautey",
+  "kind": "city",
+  "nation": "Morocco",
+  "source": "https://en.wikipedia.org/wiki/Kenitra",
+  "wikidata": null,
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Port Lyautey",
+   "Mehdia"
+  ]
+ },
  "place-kerling-les-sierck": {
   "name": "Kerling",
   "kind": "village",
@@ -1070,6 +1341,18 @@
   "lon": null,
   "aka": [
    "Kerling"
+  ]
+ },
+ "place-kharkiv": {
+  "name": "Kharkiv",
+  "kind": "city in Ukraine",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kharkiv",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Kharkov"
   ]
  },
  "place-kiel": {
@@ -1092,6 +1375,15 @@
   "aka": [
    "Kifisia"
   ]
+ },
+ "place-kletskaya": {
+  "name": "Kletskaya",
+  "kind": "village",
+  "nation": "Russia",
+  "source": "https://en.wikipedia.org/wiki/Kletskaya",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
  },
  "place-klin-klinsky-district-moscow-oblast": {
   "name": "Klin",
@@ -1132,6 +1424,15 @@
   "lat": null,
   "lon": null
  },
+ "place-kos": {
+  "name": "Kos",
+  "kind": "island",
+  "nation": "Greece",
+  "source": "https://en.wikipedia.org/wiki/Kos",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
  "place-kota-bharu": {
   "name": "Kota Bharu",
   "kind": "town",
@@ -1140,6 +1441,18 @@
   "source": "https://en.wikipedia.org/wiki/Kota_Bharu",
   "lat": null,
   "lon": null
+ },
+ "place-krasny-oktyabr-steel-plant": {
+  "name": "Red October steel works",
+  "kind": "steel works",
+  "nation": "Russia",
+  "source": "https://en.wikipedia.org/wiki/Krasny_Oktyabr_(steel_plant)",
+  "wikidata": null,
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Red October"
+  ]
  },
  "place-kremlin": {
   "name": "Moscow Kremlin",
@@ -1259,6 +1572,24 @@
    "Legaspi"
   ]
  },
+ "place-leros": {
+  "name": "Leros",
+  "kind": "island",
+  "nation": "Greece",
+  "source": "https://en.wikipedia.org/wiki/Leros",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-les-invalides": {
+  "name": "Les Invalides",
+  "kind": "military museum and tomb complex, Paris",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Les_Invalides",
+  "lat": null,
+  "lon": null
+ },
  "place-leyte": {
   "name": "Leyte",
   "kind": "island",
@@ -1361,6 +1692,63 @@
   "lat": null,
   "lon": null
  },
+ "place-mansion-house-london": {
+  "name": "Mansion House",
+  "kind": "building",
+  "nation": "United Kingdom",
+  "source": "https://en.wikipedia.org/wiki/Mansion_House,_London",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-mark-hellinger-theatre": {
+  "name": "Hollywood Theatre",
+  "kind": "theater",
+  "nation": "United States",
+  "source": "https://en.wikipedia.org/wiki/Mark_Hellinger_Theatre",
+  "wikidata": null,
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Hollywood Theatre"
+  ]
+ },
+ "place-marriott-mena-house-cairo": {
+  "name": "Mena House Hotel",
+  "kind": "hotel",
+  "nation": "Egypt",
+  "source": "https://en.wikipedia.org/wiki/Marriott_Mena_House,_Cairo",
+  "wikidata": null,
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Mena House"
+  ]
+ },
+ "place-marsa-matrouh": {
+  "name": "Mersa Matruh",
+  "kind": "port town",
+  "nation": "Egypt",
+  "source": "https://en.wikipedia.org/wiki/Marsa_Matrouh",
+  "wikidata": null,
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Mersa Matruh"
+  ]
+ },
+ "place-massachusetts-general-hospital": {
+  "name": "Massachusetts General Hospital",
+  "kind": "hospital",
+  "nation": "United States",
+  "source": "https://en.wikipedia.org/wiki/Massachusetts_General_Hospital",
+  "wikidata": null,
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "MGH"
+  ]
+ },
  "place-mayflower-hotel": {
   "name": "Mayflower Hotel",
   "kind": "hotel",
@@ -1437,6 +1825,15 @@
   "lat": null,
   "lon": null
  },
+ "place-miri": {
+  "name": "Miri",
+  "kind": "oil town in Sarawak, Borneo",
+  "nation": "Malaysia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Miri",
+  "lat": null,
+  "lon": null
+ },
  "place-mitchel-air-force-base": {
   "name": "Mitchel Field",
   "kind": "Army air base on Long Island",
@@ -1479,6 +1876,27 @@
   "aka": [
    "Moffett Field"
   ]
+ },
+ "place-mohammedia": {
+  "name": "Fedala",
+  "kind": "port city",
+  "nation": "Morocco",
+  "source": "https://en.wikipedia.org/wiki/Mohammedia",
+  "wikidata": null,
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Fedala"
+  ]
+ },
+ "place-montevideo": {
+  "name": "Montevideo",
+  "kind": "city",
+  "nation": "Uruguay",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Montevideo",
+  "lat": null,
+  "lon": null
  },
  "place-moscow": {
   "name": "Moscow",
@@ -1558,6 +1976,15 @@
   "lat": null,
   "lon": null
  },
+ "place-national-air-and-space-museum": {
+  "name": "National Air and Space Museum",
+  "kind": "museum",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/National_Air_and_Space_Museum",
+  "lat": null,
+  "lon": null
+ },
  "place-national-museum-of-the-pacific-war": {
   "name": "National Museum of the Pacific War",
   "kind": "museum",
@@ -1603,6 +2030,15 @@
   "lat": null,
   "lon": null
  },
+ "place-newell-california": {
+  "name": "Newell, California",
+  "kind": "town",
+  "nation": "United States",
+  "source": "https://en.wikipedia.org/wiki/Newell,_California",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
  "place-ni-ihau": {
   "name": "Niʻihau",
   "kind": "privately owned Hawaiian island",
@@ -1635,6 +2071,15 @@
   "aka": [
    "Evergreen Aviation and Space Museum"
   ]
+ },
+ "place-north-shields": {
+  "name": "North Shields",
+  "kind": "town",
+  "nation": "United Kingdom",
+  "source": "https://en.wikipedia.org/wiki/North_Shields",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
  },
  "place-nuremberg": {
   "name": "Nuremberg",
@@ -1680,6 +2125,15 @@
   "kind": "island",
   "nation": "Japan",
   "source": "https://en.wikipedia.org/wiki/Okinawa_Island",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-oran": {
+  "name": "Oran",
+  "kind": "city",
+  "nation": "Algeria",
+  "source": "https://en.wikipedia.org/wiki/Oran",
   "wikidata": null,
   "lat": null,
   "lon": null
@@ -1798,6 +2252,18 @@
   "lat": null,
   "lon": null
  },
+ "place-plotzensee-prison": {
+  "name": "Plotzensee Prison",
+  "kind": "Berlin prison and execution site",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Pl%C3%B6tzensee_Prison",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Plötzensee"
+  ]
+ },
  "place-polo-grounds": {
   "name": "Polo Grounds",
   "kind": "stadium in New York City",
@@ -1827,6 +2293,15 @@
   "aka": [
    "Long Beach Harbor"
   ]
+ },
+ "place-port-said": {
+  "name": "Port Said",
+  "kind": "port city",
+  "nation": "Egypt",
+  "source": "https://en.wikipedia.org/wiki/Port_Said",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
  },
  "place-quai-d-orsay": {
   "name": "Quai d'Orsay",
@@ -1881,6 +2356,15 @@
   "kind": "airfield",
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/RAF_Thorney_Island",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-rahway-new-jersey": {
+  "name": "Rahway, New Jersey",
+  "kind": "city",
+  "nation": "United States",
+  "source": "https://en.wikipedia.org/wiki/Rahway,_New_Jersey",
   "wikidata": null,
   "lat": null,
   "lon": null
@@ -1949,6 +2433,15 @@
   "lat": null,
   "lon": null
  },
+ "place-safi-morocco": {
+  "name": "Safi",
+  "kind": "port city",
+  "nation": "Morocco",
+  "source": "https://en.wikipedia.org/wiki/Safi,_Morocco",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
  "place-saint-die-des-vosges": {
   "name": "St Die",
   "kind": "town",
@@ -2000,6 +2493,15 @@
   "lat": null,
   "lon": null
  },
+ "place-samos": {
+  "name": "Samos",
+  "kind": "island",
+  "nation": "Greece",
+  "source": "https://en.wikipedia.org/wiki/Samos",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
  "place-san-francisco": {
   "name": "San Francisco",
   "kind": "city",
@@ -2036,6 +2538,15 @@
   "lat": -11,
   "lon": 166.25
  },
+ "place-savo-island": {
+  "name": "Savo Island",
+  "kind": "island",
+  "nation": "Solomon Islands",
+  "source": "https://en.wikipedia.org/wiki/Savo_Island",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
  "place-schiltigheim": {
   "name": "Schiltigheim",
   "kind": "town",
@@ -2067,6 +2578,33 @@
    "Hartheim Castle",
    "Hartheim Euthanasia Centre"
   ],
+  "lat": null,
+  "lon": null
+ },
+ "place-schnee-eifel": {
+  "name": "Schnee Eifel",
+  "kind": "ridge on the German Belgian border",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Schnee_Eifel",
+  "lat": null,
+  "lon": null
+ },
+ "place-seaford-delaware": {
+  "name": "Seaford, Delaware",
+  "kind": "town, site of the first nylon plant",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Seaford,_Delaware",
+  "lat": null,
+  "lon": null
+ },
+ "place-serafimovich-town": {
+  "name": "Serafimovich",
+  "kind": "town",
+  "nation": "Russia",
+  "source": "https://en.wikipedia.org/wiki/Serafimovich_(town)",
+  "wikidata": null,
   "lat": null,
   "lon": null
  },
@@ -2151,6 +2689,18 @@
   "lat": null,
   "lon": null
  },
+ "place-sounion": {
+  "name": "Cape Sounion",
+  "kind": "cape",
+  "nation": "Greece",
+  "source": "https://en.wikipedia.org/wiki/Sounion",
+  "wikidata": null,
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Cape Sounion"
+  ]
+ },
  "place-southampton": {
   "name": "Southampton",
   "kind": "port city",
@@ -2166,6 +2716,15 @@
   "nation": "Newfoundland",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/St._John%27s,_Newfoundland_and_Labrador",
+  "lat": null,
+  "lon": null
+ },
+ "place-stalag-vii-a": {
+  "name": "Stalag VII A",
+  "kind": "prisoner of war camp",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Stalag_VII-A",
+  "wikidata": null,
   "lat": null,
   "lon": null
  },
@@ -2208,6 +2767,15 @@
   "lat": null,
   "lon": null
  },
+ "place-suez": {
+  "name": "Suez",
+  "kind": "port city",
+  "nation": "Egypt",
+  "source": "https://en.wikipedia.org/wiki/Suez",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
  "place-sugamo-prison": {
   "name": "Sugamo Prison",
   "kind": "prison",
@@ -2231,6 +2799,15 @@
   "kind": "cemetery",
   "nation": "Japan",
   "source": "https://en.wikipedia.org/wiki/Tama_Cemetery",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-tassafaronga-point": {
+  "name": "Tassafaronga",
+  "kind": "point",
+  "nation": "Solomon Islands",
+  "source": "https://en.wikipedia.org/wiki/Tassafaronga_Point",
   "wikidata": null,
   "lat": null,
   "lon": null
@@ -2283,6 +2860,19 @@
   "lat": null,
   "lon": null
  },
+ "place-titan-barrikady": {
+  "name": "Barrikady gun factory",
+  "kind": "arms factory",
+  "nation": "Russia",
+  "source": "https://en.wikipedia.org/wiki/Titan-Barrikady",
+  "wikidata": null,
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Barrikady"
+  ],
+  "note": "Wikipedia article is for the successor company, Titan-Barrikady, formed from the Barrikady plant."
+ },
  "place-tobruk": {
   "name": "Tobruk",
   "kind": "port city",
@@ -2319,6 +2909,24 @@
   "lat": null,
   "lon": null
  },
+ "place-torokina-airfield": {
+  "name": "Torokina fighter strip",
+  "kind": "airfield",
+  "nation": "Papua New Guinea",
+  "source": "https://en.wikipedia.org/wiki/Torokina_Airfield",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-toulon": {
+  "name": "Toulon",
+  "kind": "port city",
+  "nation": "France",
+  "source": "https://en.wikipedia.org/wiki/Toulon",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
  "place-troms": {
   "name": "Tromso",
   "kind": "town",
@@ -2339,6 +2947,18 @@
   "source": "https://en.wikipedia.org/wiki/Tula,_Russia",
   "lat": null,
   "lon": null
+ },
+ "place-tule-lake-war-relocation-center": {
+  "name": "Tule Lake",
+  "kind": "incarceration camp",
+  "nation": "United States",
+  "source": "https://en.wikipedia.org/wiki/Tule_Lake_War_Relocation_Center",
+  "wikidata": null,
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Tule Lake Segregation Center"
+  ]
  },
  "place-turin": {
   "name": "Turin",
@@ -2378,6 +2998,57 @@
   "wikidata": null,
   "lat": null,
   "lon": null
+ },
+ "place-vermelles": {
+  "name": "Vermelles",
+  "kind": "village",
+  "nation": "France",
+  "source": "https://en.wikipedia.org/wiki/Vermelles",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-vigan": {
+  "name": "Vigan",
+  "kind": "town in northern Luzon",
+  "nation": "Philippines",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Vigan",
+  "lat": null,
+  "lon": null
+ },
+ "place-volga": {
+  "name": "Volga",
+  "kind": "river",
+  "nation": "Russia",
+  "source": "https://en.wikipedia.org/wiki/Volga",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-volgograd": {
+  "name": "Stalingrad",
+  "kind": "city",
+  "nation": "Russia",
+  "source": "https://en.wikipedia.org/wiki/Volgograd",
+  "wikidata": null,
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Volgograd"
+  ]
+ },
+ "place-volgograd-tractor-plant": {
+  "name": "Stalingrad Tractor Factory",
+  "kind": "tank factory",
+  "nation": "Russia",
+  "source": "https://en.wikipedia.org/wiki/Volgograd_Tractor_Plant",
+  "wikidata": null,
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Stalingrad Tractor Factory"
+  ]
  },
  "place-volokolamsk": {
   "name": "Volokolamsk",
@@ -2427,6 +3098,27 @@
   "lat": null,
   "lon": null
  },
+ "place-waterloo-iowa": {
+  "name": "Waterloo, Iowa",
+  "kind": "city",
+  "nation": "United States",
+  "source": "https://en.wikipedia.org/wiki/Waterloo,_Iowa",
+  "wikidata": null,
+  "lat": null,
+  "lon": null
+ },
+ "place-wendover-air-force-base": {
+  "name": "Wendover Air Force Base",
+  "kind": "airfield",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Wendover_Air_Force_Base",
+  "aka": [
+   "Wendover Field"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-westminster-abbey": {
   "name": "Westminster Abbey",
   "kind": "church",
@@ -2457,6 +3149,19 @@
    "White Sands Proving Ground"
   ]
  },
+ "place-wolf-s-lair": {
+  "name": "Wolf's Lair",
+  "kind": "Hitler's headquarters near Rastenburg, East Prussia",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Wolf%27s_Lair",
+  "aka": [
+   "Wolfsschanze",
+   "Gorlitz forest headquarters"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-wrocaw": {
   "name": "Breslau",
   "kind": "city",
@@ -2486,6 +3191,19 @@
   "wikidata": null,
   "lat": null,
   "lon": null
+ },
+ "place-yogyakarta": {
+  "name": "Yogyakarta",
+  "kind": "city in Java",
+  "nation": "Indonesia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Yogyakarta",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Jogjakarta",
+   "Djokjakarta"
+  ]
  },
  "place-yokohama": {
   "name": "Yokohama",

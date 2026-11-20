@@ -1,4 +1,11 @@
 {
+ "unit-102nd-motorized-division-trento": {
+  "name": "Trento Division",
+  "kind": "Italian motorised division",
+  "nation": "Italy",
+  "source": "https://en.wikipedia.org/wiki/102nd_Motorized_Division_\"Trento\"",
+  "wikidata": null
+ },
  "unit-104th-training-division": {
   "name": "104th Infantry Division",
   "kind": "U.S. infantry division",
@@ -9,6 +16,16 @@
    "Timberwolves"
   ],
   "note": "Wikipedia redirects 104th Infantry Division (United States) here."
+ },
+ "unit-106th-infantry-division-united-states": {
+  "name": "106th Infantry Division",
+  "kind": "U.S. Army division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/106th_Infantry_Division_(United_States)",
+  "aka": [
+   "Golden Lions"
+  ]
  },
  "unit-10th-army-italy": {
   "name": "10th Army (Italy)",
@@ -23,6 +40,20 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/10th_Infantry_Regiment_(United_States)",
   "wikidata": null
+ },
+ "unit-10th-royal-hussars": {
+  "name": "10th Hussars",
+  "kind": "British cavalry regiment",
+  "nation": "United Kingdom",
+  "source": "https://en.wikipedia.org/wiki/10th_Royal_Hussars",
+  "wikidata": null
+ },
+ "unit-112th-cavalry-regiment": {
+  "name": "112th Cavalry Regiment",
+  "kind": "U.S. Army cavalry regiment (Texas National Guard)",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/112th_Cavalry_Regiment"
  },
  "unit-11th-airborne-division": {
   "name": "11th Airborne Division",
@@ -53,11 +84,53 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/126th_Infantry_Regiment_(United_States)"
  },
+ "unit-132nd-armored-division-ariete": {
+  "name": "Ariete Division",
+  "kind": "Italian armoured division",
+  "nation": "Italy",
+  "source": "https://en.wikipedia.org/wiki/132nd_Armored_Division_\"Ariete\"",
+  "wikidata": null
+ },
+ "unit-133rd-armored-division-littorio": {
+  "name": "Littorio Division",
+  "kind": "Italian armoured division",
+  "nation": "Italy",
+  "source": "https://en.wikipedia.org/wiki/133rd_Armored_Division_\"Littorio\"",
+  "wikidata": null
+ },
+ "unit-138th-rifle-division": {
+  "name": "138th Rifle Division",
+  "kind": "Soviet rifle division",
+  "nation": "Soviet Union",
+  "source": "https://en.wikipedia.org/wiki/138th_Rifle_Division",
+  "wikidata": null
+ },
  "unit-141st-infantry-regiment-united-states": {
   "name": "141st Infantry Regiment",
   "kind": "U.S. infantry regiment",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/141st_Infantry_Regiment_(United_States)",
+  "wikidata": null
+ },
+ "unit-14th-panzer-division": {
+  "name": "14th Panzer Division",
+  "kind": "German panzer division",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/14th_Panzer_Division",
+  "wikidata": null
+ },
+ "unit-151st-infantry-brigade-united-kingdom": {
+  "name": "151st (Durham) Brigade",
+  "kind": "British infantry brigade",
+  "nation": "United Kingdom",
+  "source": "https://en.wikipedia.org/wiki/151st_Infantry_Brigade_(United_Kingdom)",
+  "wikidata": null
+ },
+ "unit-152nd-infantry-brigade-united-kingdom": {
+  "name": "152nd (Highland) Brigade",
+  "kind": "British infantry brigade",
+  "nation": "United Kingdom",
+  "source": "https://en.wikipedia.org/wiki/152nd_Infantry_Brigade_(United_Kingdom)",
   "wikidata": null
  },
  "unit-15th-panzer-division": {
@@ -88,6 +161,13 @@
   "source": "https://en.wikipedia.org/wiki/175th_Infantry_Regiment_(United_States)",
   "wikidata": null
  },
+ "unit-1st-armoured-division-united-kingdom": {
+  "name": "1st Armoured Division",
+  "kind": "British armoured division",
+  "nation": "United Kingdom",
+  "source": "https://en.wikipedia.org/wiki/1st_Armoured_Division_(United_Kingdom)",
+  "wikidata": null
+ },
  "unit-1st-canadian-division": {
   "name": "1st Canadian Division",
   "kind": "Canadian Army infantry division",
@@ -115,12 +195,40 @@
   "source": "https://en.wikipedia.org/wiki/1st_Panzer_Army",
   "wikidata": null
  },
+ "unit-2-6th-armoured-regiment-australia": {
+  "name": "2/6th Armoured Regiment (Australia)",
+  "kind": "Australian armoured regiment",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/2/6th_Armoured_Regiment_(Australia)"
+ },
+ "unit-2-9th-battalion-australia": {
+  "name": "2/9th Battalion (Australia)",
+  "kind": "Australian infantry battalion",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/2/9th_Battalion_(Australia)"
+ },
+ "unit-21st-army-soviet-union": {
+  "name": "21st Army",
+  "kind": "Soviet field army",
+  "nation": "Soviet Union",
+  "source": "https://en.wikipedia.org/wiki/21st_Army_(Soviet_Union)",
+  "wikidata": null
+ },
  "unit-21st-panzer-division": {
   "name": "21st Panzer Division",
   "kind": "armored division",
   "nation": "Germany",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/21st_Panzer_Division"
+ },
+ "unit-22nd-panzer-division": {
+  "name": "22nd Panzer Division",
+  "kind": "German panzer division",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/22nd_Panzer_Division",
+  "wikidata": null
  },
  "unit-252nd-air-group": {
   "name": "252nd Air Group",
@@ -129,12 +237,33 @@
   "source": "https://en.wikipedia.org/wiki/252nd_Air_Group",
   "wikidata": null
  },
+ "unit-25th-infantry-division-bologna": {
+  "name": "Bologna Division",
+  "kind": "Italian infantry division",
+  "nation": "Italy",
+  "source": "https://en.wikipedia.org/wiki/25th_Infantry_Division_\"Bologna\"",
+  "wikidata": null
+ },
  "unit-25th-panzergrenadier-division": {
   "name": "25th Panzergrenadier Division",
   "kind": "German panzergrenadier division",
   "nation": "Germany",
   "source": "https://en.wikipedia.org/wiki/25th_Panzergrenadier_Division",
   "wikidata": null
+ },
+ "unit-285th-field-artillery-observation-battalion": {
+  "name": "285th Field Artillery Observation Battalion",
+  "kind": "army battalion",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/285th_Field_Artillery_Observation_Battalion"
+ },
+ "unit-291st-engineer-combat-battalion-united-states": {
+  "name": "291st Engineer Combat Battalion",
+  "kind": "U.S. Army engineer battalion",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/291st_Engineer_Combat_Battalion_(United_States)"
  },
  "unit-29th-infantry-division-united-states": {
   "name": "29th Infantry Division",
@@ -155,6 +284,30 @@
   "kind": "U.S. armored division",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/2nd_Armored_Division_(United_States)",
+  "wikidata": null
+ },
+ "unit-2nd-dragoon-guards-queen-s-bays": {
+  "name": "Queen's Bays",
+  "kind": "British cavalry regiment",
+  "nation": "United Kingdom",
+  "source": "https://en.wikipedia.org/wiki/2nd_Dragoon_Guards_(Queen's_Bays)",
+  "wikidata": null,
+  "aka": [
+   "Queen's Bays"
+  ]
+ },
+ "unit-2nd-marine-division": {
+  "name": "2nd Marine Division",
+  "kind": "U.S. Marine Corps division",
+  "nation": "United States",
+  "source": "https://en.wikipedia.org/wiki/2nd_Marine_Division",
+  "wikidata": null
+ },
+ "unit-2nd-marine-regiment": {
+  "name": "2nd Marines",
+  "kind": "U.S. Marine Corps regiment",
+  "nation": "United States",
+  "source": "https://en.wikipedia.org/wiki/2nd_Marine_Regiment",
   "wikidata": null
  },
  "unit-2nd-new-zealand-division": {
@@ -189,6 +342,13 @@
   "source": "https://en.wikipedia.org/wiki/30th_Infantry_Division_(United_States)",
   "wikidata": null
  },
+ "unit-31st-army-soviet-union": {
+  "name": "31st Army",
+  "kind": "Soviet field army",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/31st_Army_(Soviet_Union)"
+ },
  "unit-32nd-infantry-division-united-states": {
   "name": "32nd Infantry Division",
   "kind": "U.S. Army infantry division",
@@ -198,6 +358,17 @@
   "aka": [
    "Red Arrow Division"
   ]
+ },
+ "unit-333rd-field-artillery-battalion-united-states": {
+  "name": "333rd Field Artillery Battalion",
+  "kind": "army battalion",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/333rd_Field_Artillery_Battalion_(United_States)",
+  "aka": [
+   "Wereth 11"
+  ],
+  "note": "The Wikipedia title Wereth 11 Massacre redirects here."
  },
  "unit-354th-fighter-group": {
   "name": "354th Fighter Group",
@@ -237,6 +408,13 @@
   "source": "https://en.wikipedia.org/wiki/37th_Army_(Soviet_Union)",
   "wikidata": null
  },
+ "unit-394th-infantry-regiment": {
+  "name": "394th Infantry Regiment",
+  "kind": "U.S. Army infantry regiment, 99th Infantry Division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/394th_Infantry_Regiment"
+ },
  "unit-39th-battalion-australia": {
   "name": "39th Battalion (Australia)",
   "kind": "Australian militia infantry battalion",
@@ -250,6 +428,31 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/3rd_Armored_Division_(United_States)",
   "wikidata": null
+ },
+ "unit-3rd-canadian-division": {
+  "name": "3rd Canadian Infantry Division",
+  "kind": "Canadian infantry division",
+  "nation": "Canada",
+  "source": "https://en.wikipedia.org/wiki/3rd_Canadian_Division",
+  "wikidata": null
+ },
+ "unit-3rd-marine-division": {
+  "name": "3rd Marine Division",
+  "kind": "U.S. Marine Corps division",
+  "nation": "United States",
+  "source": "https://en.wikipedia.org/wiki/3rd_Marine_Division",
+  "wikidata": null
+ },
+ "unit-3rd-marine-littoral-regiment": {
+  "name": "3rd Marines",
+  "kind": "U.S. Marine Corps regiment",
+  "nation": "United States",
+  "source": "https://en.wikipedia.org/wiki/3rd_Marine_Littoral_Regiment",
+  "wikidata": null,
+  "aka": [
+   "3rd Marines",
+   "3rd Marine Regiment"
+  ]
  },
  "unit-3rd-panzer-army": {
   "name": "3rd Panzer Group",
@@ -329,11 +532,56 @@
    "4th Panzer Army"
   ]
  },
+ "unit-509th-composite-group": {
+  "name": "509th Composite Group",
+  "kind": "atomic bomb delivery group",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/509th_Composite_Group"
+ },
+ "unit-509th-infantry-regiment": {
+  "name": "509th Parachute Infantry",
+  "kind": "U.S. Army parachute infantry",
+  "nation": "United States",
+  "source": "https://en.wikipedia.org/wiki/509th_Infantry_Regiment",
+  "wikidata": null
+ },
  "unit-5th-infantry-division-united-states": {
   "name": "5th Infantry Division",
   "kind": "U.S. infantry division",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/5th_Infantry_Division_(United_States)",
+  "wikidata": null
+ },
+ "unit-5th-tank-army": {
+  "name": "5th Tank Army",
+  "kind": "Soviet tank army",
+  "nation": "Soviet Union",
+  "source": "https://en.wikipedia.org/wiki/5th_Tank_Army",
+  "wikidata": null
+ },
+ "unit-62nd-army": {
+  "name": "62nd Army",
+  "kind": "Soviet field army",
+  "nation": "Soviet Union",
+  "source": "https://en.wikipedia.org/wiki/62nd_Army",
+  "wikidata": null
+ },
+ "unit-6th-army-wehrmacht": {
+  "name": "Sixth Army",
+  "kind": "German field army",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/6th_Army_(Wehrmacht)",
+  "wikidata": null,
+  "aka": [
+   "German Sixth Army"
+  ]
+ },
+ "unit-6th-marine-regiment": {
+  "name": "6th Marines",
+  "kind": "U.S. Marine Corps regiment",
+  "nation": "United States",
+  "source": "https://en.wikipedia.org/wiki/6th_Marine_Regiment",
   "wikidata": null
  },
  "unit-6th-panzer-division": {
@@ -362,6 +610,13 @@
   "kind": "British armoured brigade",
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/7th_Armoured_Brigade_(United_Kingdom)",
+  "wikidata": null
+ },
+ "unit-7th-armoured-division-united-kingdom": {
+  "name": "7th Armoured Division",
+  "kind": "British armoured division",
+  "nation": "United Kingdom",
+  "source": "https://en.wikipedia.org/wiki/7th_Armoured_Division_(United_Kingdom)",
   "wikidata": null
  },
  "unit-80th-training-command": {
@@ -395,6 +650,13 @@
   "wikidata": null,
   "note": "Wikipedia redirects 95th Infantry Division (United States) here."
  },
+ "unit-9th-armoured-brigade-united-kingdom": {
+  "name": "9th Armoured Brigade",
+  "kind": "British armoured brigade",
+  "nation": "United Kingdom",
+  "source": "https://en.wikipedia.org/wiki/9th_Armoured_Brigade_(United_Kingdom)",
+  "wikidata": null
+ },
  "unit-9th-army-wehrmacht": {
   "name": "German Ninth Army",
   "kind": "German field army",
@@ -404,6 +666,13 @@
   "aka": [
    "Ninth Army"
   ]
+ },
+ "unit-9th-marine-regiment": {
+  "name": "9th Marines",
+  "kind": "U.S. Marine Corps regiment",
+  "nation": "United States",
+  "source": "https://en.wikipedia.org/wiki/9th_Marine_Regiment",
+  "wikidata": null
  },
  "unit-afrika-korps": {
   "name": "Afrika Korps",
@@ -436,6 +705,13 @@
   "source": "https://en.wikipedia.org/wiki/Army_Emergency_Relief",
   "wikidata": null
  },
+ "unit-army-group-b": {
+  "name": "Army Group B",
+  "kind": "German army group",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Army_Group_B",
+  "wikidata": null
+ },
  "unit-army-group-centre": {
   "name": "Army Group Centre",
   "kind": "German army group",
@@ -457,12 +733,39 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Army_Ministry"
  },
+ "unit-bbc-world-service": {
+  "name": "BBC World Service",
+  "kind": "international broadcaster (Empire Service from 1932)",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/BBC_World_Service",
+  "aka": [
+   "BBC Empire Service"
+  ]
+ },
+ "unit-bell-labs": {
+  "name": "Bell Labs",
+  "kind": "American industrial research laboratory",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bell_Labs",
+  "aka": [
+   "Bell Telephone Laboratories"
+  ]
+ },
  "unit-british-security-co-ordination": {
   "name": "British Security Co-ordination",
   "kind": "British intelligence organization in the Americas",
   "nation": "Britain",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/British_Security_Co-ordination"
+ },
+ "unit-buffs-royal-east-kent-regiment": {
+  "name": "The Buffs",
+  "kind": "British infantry regiment",
+  "nation": "United Kingdom",
+  "source": "https://en.wikipedia.org/wiki/Buffs_(Royal_East_Kent_Regiment)",
+  "wikidata": null
  },
  "unit-central-china-area-army": {
   "name": "Central China Area Army",
@@ -471,12 +774,29 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Central_China_Area_Army"
  },
+ "unit-churchill-archives-centre": {
+  "name": "Churchill Archives Centre",
+  "kind": "archive",
+  "nation": "United Kingdom",
+  "source": "https://en.wikipedia.org/wiki/Churchill_Archives_Centre",
+  "wikidata": null
+ },
  "unit-civil-air-patrol": {
   "name": "Civil Air Patrol",
   "kind": "civilian volunteer air arm",
   "nation": "US",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Civil_Air_Patrol"
+ },
+ "unit-code-talker": {
+  "name": "Navajo code talkers",
+  "kind": "U.S. Marine Corps radio code program",
+  "nation": "United States",
+  "source": "https://en.wikipedia.org/wiki/Code_talker",
+  "wikidata": null,
+  "aka": [
+   "code talkers"
+  ]
  },
  "unit-czechoslovak-government-in-exile": {
   "name": "Czechoslovak government-in-exile",
@@ -502,6 +822,20 @@
    "X MAS",
    "Decima MAS"
   ]
+ },
+ "unit-desert-air-force": {
+  "name": "Desert Air Force",
+  "kind": "Allied tactical air force",
+  "nation": "United Kingdom",
+  "source": "https://en.wikipedia.org/wiki/Desert_Air_Force",
+  "wikidata": null
+ },
+ "unit-don-front": {
+  "name": "Don Front",
+  "kind": "Soviet front",
+  "nation": "Soviet Union",
+  "source": "https://en.wikipedia.org/wiki/Don_Front",
+  "wikidata": null
  },
  "unit-eighth-air-force": {
   "name": "Eighth Air Force",
@@ -564,6 +898,13 @@
   "nation": "Canada",
   "source": "https://en.wikipedia.org/wiki/First_Canadian_Army",
   "wikidata": null
+ },
+ "unit-force-k": {
+  "name": "Force K",
+  "kind": "Royal Navy raiding force based at Malta",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Force_K"
  },
  "unit-force-z": {
   "name": "Force Z",
@@ -654,6 +995,17 @@
    "PICAO"
   ]
  },
+ "unit-italian-army-in-russia": {
+  "name": "Italian Army in Russia",
+  "kind": "Italian Eighth Army on the Eastern Front",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_Army_in_Russia",
+  "aka": [
+   "ARMIR",
+   "Italian Eighth Army"
+  ]
+ },
  "unit-italian-co-belligerent-army": {
   "name": "Italian Co-Belligerent Army",
   "kind": "Royal Italian Army fighting with the Allies, 1943 to 1945",
@@ -689,6 +1041,13 @@
    "Kanoya Kokutai"
   ]
  },
+ "unit-king-s-own-royal-regiment-lancaster": {
+  "name": "King's Own",
+  "kind": "British infantry regiment",
+  "nation": "United Kingdom",
+  "source": "https://en.wikipedia.org/wiki/King's_Own_Royal_Regiment_(Lancaster)",
+  "wikidata": null
+ },
  "unit-king-s-shropshire-light-infantry": {
   "name": "King's Shropshire Light Infantry",
   "kind": "British infantry regiment",
@@ -704,6 +1063,13 @@
   "kind": "international organization",
   "nation": "worldwide",
   "source": "https://en.wikipedia.org/wiki/League_of_Nations",
+  "wikidata": null
+ },
+ "unit-li-army-corps": {
+  "name": "LI Corps",
+  "kind": "German army corps",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/LI_Army_Corps",
   "wikidata": null
  },
  "unit-lost-battalion-europe-world-war-ii": {
@@ -730,11 +1096,29 @@
    "Raggruppamento Maletti"
   ]
  },
+ "unit-maori-battalion": {
+  "name": "28th (Maori) Battalion",
+  "kind": "New Zealand infantry battalion",
+  "nation": "New Zealand",
+  "source": "https://en.wikipedia.org/wiki/Māori_Battalion",
+  "wikidata": null,
+  "aka": [
+   "Maori Battalion",
+   "28th (Māori) Battalion"
+  ]
+ },
  "unit-mediterranean-fleet": {
   "name": "Mediterranean Fleet",
   "kind": "Royal Navy fleet",
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/Mediterranean_Fleet",
+  "wikidata": null
+ },
+ "unit-merck-co": {
+  "name": "Merck",
+  "kind": "drug company",
+  "nation": "United States",
+  "source": "https://en.wikipedia.org/wiki/Merck_&_Co.",
   "wikidata": null
  },
  "unit-ministry-of-aviation-nazi-germany": {
@@ -844,6 +1228,16 @@
   "source": "https://en.wikipedia.org/wiki/No._9_Squadron_RAF",
   "wikidata": null
  },
+ "unit-oberkommando-des-heeres": {
+  "name": "Oberkommando des Heeres",
+  "kind": "German army high command",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Oberkommando_des_Heeres",
+  "aka": [
+   "OKH"
+  ]
+ },
  "unit-office-of-censorship": {
   "name": "Office of Censorship",
   "kind": "U.S. wartime agency",
@@ -880,6 +1274,20 @@
   "source": "https://en.wikipedia.org/wiki/Provisional_Government_of_the_French_Republic",
   "wikidata": null
  },
+ "unit-provisional-government-of-the-republic-of-china-1937-1940": {
+  "name": "Provisional Government of the Republic of China (1937 to 1940)",
+  "kind": "Japanese puppet government in north China",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Provisional_Government_of_the_Republic_of_China_(1937%E2%80%931940)"
+ },
+ "unit-queen-s-own-royal-west-kent-regiment": {
+  "name": "Royal West Kents",
+  "kind": "British infantry regiment",
+  "nation": "United Kingdom",
+  "source": "https://en.wikipedia.org/wiki/Queen's_Own_Royal_West_Kent_Regiment",
+  "wikidata": null
+ },
  "unit-raf-bomber-command": {
   "name": "RAF Bomber Command",
   "kind": "RAF bomber command",
@@ -899,6 +1307,28 @@
   "aka": [
    "RSHA"
   ]
+ },
+ "unit-rifle-brigade-the-prince-consort-s-own": {
+  "name": "Rifle Brigade",
+  "kind": "British infantry regiment",
+  "nation": "United Kingdom",
+  "source": "https://en.wikipedia.org/wiki/Rifle_Brigade_(The_Prince_Consort's_Own)",
+  "wikidata": null
+ },
+ "unit-roberts-commissions": {
+  "name": "Roberts Commission",
+  "kind": "presidential commission on the Pearl Harbor attack",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Roberts_Commissions",
+  "note": "Wikipedia's article covers both Roberts commissions; this entity is the Pearl Harbor one (Executive Order 8983)"
+ },
+ "unit-royal-irish-fusiliers": {
+  "name": "Royal Irish Fusiliers",
+  "kind": "British infantry regiment",
+  "nation": "United Kingdom",
+  "source": "https://en.wikipedia.org/wiki/Royal_Irish_Fusiliers",
+  "wikidata": null
  },
  "unit-s-1-executive-committee": {
   "name": "S-1 Executive Committee",
@@ -920,6 +1350,17 @@
    "Boy Scouts"
   ]
  },
+ "unit-seabee": {
+  "name": "Seabees",
+  "kind": "U.S. Navy construction battalions",
+  "nation": "United States",
+  "source": "https://en.wikipedia.org/wiki/Seabee",
+  "wikidata": null,
+  "aka": [
+   "Seabees",
+   "Naval Construction Battalions"
+  ]
+ },
  "unit-selective-service-system": {
   "name": "Selective Service System",
   "kind": "U.S. draft agency",
@@ -934,6 +1375,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Seventh_Air_Force"
  },
+ "unit-southwestern-front-soviet-union": {
+  "name": "Southwestern Front",
+  "kind": "Soviet front",
+  "nation": "Soviet Union",
+  "source": "https://en.wikipedia.org/wiki/Southwestern_Front_(Soviet_Union)",
+  "wikidata": null
+ },
  "unit-special-operations-executive": {
   "name": "Special Operations Executive",
   "kind": "British sabotage and subversion agency",
@@ -944,11 +1392,25 @@
    "SOE"
   ]
  },
+ "unit-stalingrad-front": {
+  "name": "Stalingrad Front",
+  "kind": "Soviet front",
+  "nation": "Soviet Union",
+  "source": "https://en.wikipedia.org/wiki/Stalingrad_Front",
+  "wikidata": null
+ },
  "unit-supreme-court-of-the-united-states": {
   "name": "U.S. Supreme Court",
   "kind": "U.S. federal court",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Supreme_Court_of_the_United_States",
+  "wikidata": null
+ },
+ "unit-third-army-romania": {
+  "name": "Romanian Third Army",
+  "kind": "Romanian field army",
+  "nation": "Romania",
+  "source": "https://en.wikipedia.org/wiki/Third_Army_(Romania)",
   "wikidata": null
  },
  "unit-twenty-fifth-army-japan": {
@@ -1014,6 +1476,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/United_States_Coast_Guard"
  },
+ "unit-united-states-department-of-defense": {
+  "name": "United States Department of Defense",
+  "kind": "federal department",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/United_States_Department_of_Defense"
+ },
  "unit-united-states-department-of-war": {
   "name": "War Department",
   "kind": "U.S. government department",
@@ -1028,6 +1497,16 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/United_States_Navy_Reserve"
  },
+ "unit-united-states-office-of-war-information": {
+  "name": "Office of War Information",
+  "kind": "U.S. government agency",
+  "nation": "United States",
+  "source": "https://en.wikipedia.org/wiki/United_States_Office_of_War_Information",
+  "wikidata": null,
+  "aka": [
+   "OWI"
+  ]
+ },
  "unit-vf-3": {
   "name": "Fighting Squadron 3",
   "kind": "U.S. Navy fighter squadron",
@@ -1037,6 +1516,13 @@
   "aka": [
    "VF-3"
   ]
+ },
+ "unit-vickers": {
+  "name": "Vickers",
+  "kind": "British arms maker",
+  "nation": "United Kingdom",
+  "source": "https://en.wikipedia.org/wiki/Vickers",
+  "wikidata": null
  },
  "unit-vii-corps-united-states": {
   "name": "VII Corps",
@@ -1056,6 +1542,17 @@
   ],
   "note": "Wikipedia's VMF-211 redirects to VMFA-211."
  },
+ "unit-vmfa-214": {
+  "name": "VMFA-214",
+  "kind": "Marine fighter squadron",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/VMFA-214",
+  "aka": [
+   "VMF-214",
+   "Black Sheep Squadron"
+  ]
+ },
  "unit-war-manpower-commission": {
   "name": "War Manpower Commission",
   "kind": "U.S. wartime agency",
@@ -1068,6 +1565,23 @@
   "kind": "U.S. government agency",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/War_Production_Board",
+  "wikidata": null
+ },
+ "unit-war-relocation-authority": {
+  "name": "War Relocation Authority",
+  "kind": "U.S. government agency",
+  "nation": "United States",
+  "source": "https://en.wikipedia.org/wiki/War_Relocation_Authority",
+  "wikidata": null,
+  "aka": [
+   "WRA"
+  ]
+ },
+ "unit-warner-bros": {
+  "name": "Warner Bros.",
+  "kind": "film studio",
+  "nation": "United States",
+  "source": "https://en.wikipedia.org/wiki/Warner_Bros.",
   "wikidata": null
  },
  "unit-waves": {
@@ -1083,6 +1597,13 @@
   "nation": "Soviet Union",
   "source": "https://en.wikipedia.org/wiki/Western_Front_(Soviet_Union)",
   "wikidata": null
+ },
+ "unit-winnipeg-grenadiers": {
+  "name": "Winnipeg Grenadiers",
+  "kind": "Canadian infantry regiment",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Winnipeg_Grenadiers"
  },
  "unit-works-progress-administration": {
   "name": "Works Progress Administration",
@@ -1100,6 +1621,13 @@
   "kind": "U.S. Army corps",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/XII_Corps_(United_States)",
+  "wikidata": null
+ },
+ "unit-xiv-panzer-corps": {
+  "name": "XIV Panzer Corps",
+  "kind": "German panzer corps",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/XIV_Panzer_Corps",
   "wikidata": null
  },
  "unit-xix-corps-united-states": {
@@ -1129,6 +1657,23 @@
   "nation": "US",
   "wikidata": "Q8042593",
   "source": "https://en.wikipedia.org/wiki/XXI_Bomber_Command"
+ },
+ "unit-xxxxviii-panzer-corps": {
+  "name": "XXXXVIII Panzer Corps",
+  "kind": "German panzer corps",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/XXXXVIII_Panzer_Corps",
+  "wikidata": null,
+  "aka": [
+   "XLVIII Panzer Corps"
+  ]
+ },
+ "unit-yeomen-of-the-guard": {
+  "name": "Yeomen of the Guard",
+  "kind": "royal bodyguard",
+  "nation": "United Kingdom",
+  "source": "https://en.wikipedia.org/wiki/Yeomen_of_the_Guard",
+  "wikidata": null
  },
  "unit-zegota": {
   "name": "Żegota",

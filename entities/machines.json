@@ -9,6 +9,24 @@
    "40 cm gun"
   ]
  },
+ "machine-76-mm-tank-gun-m1940-f-34": {
+  "name": "76.2 mm F-34 gun",
+  "kind": "tank gun",
+  "nation": "Soviet Union",
+  "source": "https://en.wikipedia.org/wiki/76_mm_tank_gun_M1940_F-34",
+  "wikidata": null
+ },
+ "machine-8-8-cm-flak-18-36-37-41": {
+  "name": "88 mm gun",
+  "kind": "German antiaircraft and antitank gun",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/8.8_cm_Flak_18/36/37/41",
+  "wikidata": null,
+  "aka": [
+   "88",
+   "88 mm gun"
+  ]
+ },
  "machine-aggregat": {
   "name": "Aggregat",
   "kind": "German Army rocket family, A1 to A12",
@@ -45,6 +63,20 @@
   "source": "https://en.wikipedia.org/wiki/Bombe",
   "wikidata": null
  },
+ "machine-casablanca-film": {
+  "name": "Casablanca",
+  "kind": "Hollywood feature film",
+  "nation": "United States",
+  "source": "https://en.wikipedia.org/wiki/Casablanca_(film)",
+  "wikidata": null
+ },
+ "machine-cathode-ray-tube-amusement-device": {
+  "name": "Cathode-ray tube amusement device",
+  "kind": "early electronic game, patented 1948",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Cathode-ray_tube_amusement_device"
+ },
  "machine-chicago-pile-1": {
   "name": "Chicago Pile-1",
   "kind": "nuclear reactor",
@@ -53,6 +85,17 @@
   "source": "https://en.wikipedia.org/wiki/Chicago_Pile-1",
   "aka": [
    "CP-1"
+  ]
+ },
+ "machine-cross-of-honour-of-the-german-mother": {
+  "name": "Cross of Honour of the German Mother",
+  "kind": "Nazi state award for mothers",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Cross_of_Honour_of_the_German_Mother",
+  "aka": [
+   "Mutterkreuz",
+   "Ehrenkreuz der Deutschen Mutter"
   ]
  },
  "machine-crusader-tank": {
@@ -71,6 +114,23 @@
   "aka": [
    "Enigma",
    "M4"
+  ]
+ },
+ "machine-everybody-comes-to-rick-s": {
+  "name": "Everybody Comes to Rick's",
+  "kind": "stage play",
+  "nation": "United States",
+  "source": "https://en.wikipedia.org/wiki/Everybody_Comes_to_Rick's",
+  "wikidata": null
+ },
+ "machine-freya-radar": {
+  "name": "Freya radar",
+  "kind": "German early warning radar",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Freya_radar",
+  "aka": [
+   "Freya"
   ]
  },
  "machine-fu-go-balloon-bomb": {
@@ -110,6 +170,13 @@
    "Hs 293"
   ]
  },
+ "machine-kharkiv-model-v-2": {
+  "name": "V-2 diesel engine",
+  "kind": "tank diesel engine",
+  "nation": "Soviet Union",
+  "source": "https://en.wikipedia.org/wiki/Kharkiv_model_V-2",
+  "wikidata": null
+ },
  "machine-ko-hyoteki-class-submarine": {
   "name": "Type A midget submarine",
   "kind": "two man midget submarine",
@@ -120,12 +187,53 @@
    "Ko-hyoteki"
   ]
  },
+ "machine-landing-craft-mechanized": {
+  "name": "LCM",
+  "kind": "landing craft",
+  "nation": "United States",
+  "source": "https://en.wikipedia.org/wiki/Landing_craft_mechanized",
+  "wikidata": null,
+  "aka": [
+   "LCM"
+  ]
+ },
+ "machine-landing-vehicle-tracked": {
+  "name": "Landing Vehicle Tracked",
+  "kind": "amphibious tractor",
+  "nation": "United States",
+  "source": "https://en.wikipedia.org/wiki/Landing_Vehicle,_Tracked",
+  "wikidata": null,
+  "aka": [
+   "amtrac"
+  ]
+ },
+ "machine-lcvp-united-states": {
+  "name": "LCVP",
+  "kind": "landing craft",
+  "nation": "United States",
+  "source": "https://en.wikipedia.org/wiki/LCVP_(United_States)",
+  "wikidata": null,
+  "aka": [
+   "Higgins boat"
+  ]
+ },
  "machine-m3-stuart": {
   "name": "M3 Stuart",
   "kind": "light tank",
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/M3_Stuart",
   "wikidata": null
+ },
+ "machine-m4-sherman": {
+  "name": "M4 Sherman",
+  "kind": "American medium tank",
+  "nation": "United States",
+  "source": "https://en.wikipedia.org/wiki/M4_Sherman",
+  "wikidata": null,
+  "aka": [
+   "Sherman",
+   "Sherman II"
+  ]
  },
  "machine-mark-14-torpedo": {
   "name": "Mark 14 torpedo",
@@ -148,11 +256,35 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Nazi_Concentration_Camps_(film)"
  },
+ "machine-nylon": {
+  "name": "Nylon",
+  "kind": "synthetic fiber",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Nylon"
+ },
  "machine-ordnance-qf-25-pounder": {
   "name": "25 pounder gun",
   "kind": "field gun",
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/Ordnance_QF_25-pounder",
+  "wikidata": null
+ },
+ "machine-ordnance-qf-6-pounder": {
+  "name": "6 pounder antitank gun",
+  "kind": "British antitank gun",
+  "nation": "United Kingdom",
+  "source": "https://en.wikipedia.org/wiki/Ordnance_QF_6-pounder",
+  "wikidata": null,
+  "aka": [
+   "six pounder"
+  ]
+ },
+ "machine-panzer-38-t": {
+  "name": "Panzer 38(t)",
+  "kind": "Czech built light tank",
+  "nation": "Czechoslovakia",
+  "source": "https://en.wikipedia.org/wiki/Panzer_38(t)",
   "wikidata": null
  },
  "machine-penicillin": {
@@ -161,6 +293,13 @@
   "nation": "Britain",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Penicillin"
+ },
+ "machine-point-contact-transistor": {
+  "name": "Point-contact transistor",
+  "kind": "first working transistor",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Point-contact_transistor"
  },
  "machine-pratt-whitney-r-4360-wasp-major": {
   "name": "Pratt and Whitney R-4360",
@@ -179,6 +318,13 @@
    "Merlin"
   ]
  },
+ "machine-sg-radar": {
+  "name": "SG radar",
+  "kind": "ship search radar",
+  "nation": "United States",
+  "source": "https://en.wikipedia.org/wiki/SG_radar",
+  "wikidata": null
+ },
  "machine-sherman-crab": {
   "name": "Sherman Crab",
   "kind": "mine clearing flail tank",
@@ -194,12 +340,26 @@
   "source": "https://en.wikipedia.org/wiki/Shinyo_(suicide_motorboat)",
   "wikidata": null
  },
+ "machine-sulfadiazine": {
+  "name": "Sulfadiazine",
+  "kind": "sulfa drug",
+  "nation": "worldwide",
+  "source": "https://en.wikipedia.org/wiki/Sulfadiazine",
+  "wikidata": null
+ },
  "machine-sword-of-stalingrad": {
   "name": "Sword of Stalingrad",
   "kind": "ceremonial sword",
   "nation": "Britain",
   "wikidata": "Q2668464",
   "source": "https://en.wikipedia.org/wiki/Sword_of_Stalingrad"
+ },
+ "machine-t-34": {
+  "name": "T-34",
+  "kind": "Soviet medium tank",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/T-34"
  },
  "machine-tallboy-bomb": {
   "name": "Tallboy",
@@ -251,6 +411,13 @@
   "source": "https://en.wikipedia.org/wiki/Valentine_tank",
   "wikidata": null
  },
+ "machine-we-hold-these-truths": {
+  "name": "We Hold These Truths",
+  "kind": "radio program, 15 December 1941",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/We_Hold_These_Truths"
+ },
  "machine-wright-r-1820-cyclone": {
   "name": "Wright R-1820 Cyclone",
   "kind": "radial aircraft engine",
@@ -271,5 +438,15 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/X-10_Graphite_Reactor",
   "wikidata": null
+ },
+ "machine-zoe-reactor": {
+  "name": "Zoé (reactor)",
+  "kind": "France's first nuclear reactor",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Zo%C3%A9_(reactor)",
+  "aka": [
+   "ZOE"
+  ]
  }
 }
