@@ -89,7 +89,7 @@ Substack sets one theme for the whole publication (night background, brass gold,
 **Pearl Harbor volume (3 parts)**
 | Part | Days | Title | Goes live |
 |---|---|---|---|
-| 1 | 1 to 4 (26 to 29 Nov) | The Fleet Slips Away | Mon 30 Nov, 9 a.m. (mock up written 14 Nov) |
+| 1 | 1 to 4 (26 to 29 Nov) | The Fleet Slips Away | Mon 30 Nov, 9 a.m. (final 21 Nov; still to schedule in Substack) |
 | 2 | 5 to 8 (30 Nov to 3 Dec) | to write | Fri 4 Dec, 9 a.m. |
 | 3 | 9 to 12 and the Epilogue (4 to 8 Dec) | to write; tells the whole of 7 December in depth (the launch, Opana, both waves, the Arizona, the note delivered after the bombs, the nation hearing the news) and the speech | **Wed 9 Dec, 9 a.m.** (moved from Tue 8 Dec so it follows the Epilogue) |
 
@@ -160,7 +160,7 @@ Anchor days, each to be verified in the sitting (two sources); the rest are fill
 Until that change ships, the shelf works as built: every series is a volume on the Campaign Shelf at ww2dispatches.com/campaign-series (Site Revamp doc). `renderer/site_pages.py` builds the volume page and one page per day from the day records, and the server shows a day only once its post time has passed. **In each build sitting:** add the volume to `campaign-series/shelf.json` (its `id` must match the folder name, so the Bulge is `bulge-1944`; set the cover photo, cloth color, intro, and blurb), then run `python3 renderer/series_log.py` before the commit, which refreshes the pages with the logs. A volume turns live on the shelf as soon as its folder holds day records.
 
 ## Open
-* **Pearl Harbor Part 1 is still `"mockup"`:** set it to `"final"` before Mon 30 Nov, 9 a.m., or the site keeps it sealed after Substack publishes it. Same for Parts 2 and 3 before 4 and 8 Dec.
+* **Pearl Harbor Part 1 is final** (approved by Brian 21 Nov; opens on a detail of Plate 12, Fuchida's 1945 account added). Parts 2 and 3 must be set to `"final"` before 4 and 9 Dec.
 * Pearl Harbor volume: all three covers set 21 Nov (Part 1 the Plate 13 fleet track map); Brian approves the Part 1 mock up; then finish Part 1 and write Parts 2 and 3; make the Campaign Series section on Substack with its banner and schedule all three (Part 1 by Mon 30 Nov, 9 a.m.).
 * Website: Build and Fixes chat: rebuild the Campaign Shelf around the Substack parts (above), ideally before Part 1 goes live on Mon 30 Nov; Brian picks the daily posts option (a to h) there.
 * The Bulge build sitting (Thanksgiving weekend): the 30 days of posts and the split into 4 parts; each part then written in its own short sitting about a week ahead.
@@ -193,3 +193,4 @@ Until that change ships, the shelf works as built: every series is a volume on t
 * 20 Nov 2026 (Map Room build chat, evening): Map Room handoff in Open rewritten for format 2: a series roster, day blocks that record only what changed, every position and line from that day's situation map, `check_series.py` in place of `check_record.py`, and the Map Room chat's fact check after the sitting.
 * 21 Nov 2026: Pearl Harbor Part 1 cover set to the fleet track map, Plate No. 13 of the Reports of General MacArthur, in color (Brian); the cover renderer takes an optional `color` for maps.
 * 21 Nov 2026 (later): Pearl Harbor Day 11 photo swapped (Brian): the Hull, Nomura, and Kurusu walking photo turned out to be an Underwood Archives press print (red tier), so the post now shows Roosevelt in evening dress in his White House study, 20 December 1941 (FDR Library, public domain; a memo was tried first and set aside as too plain). Re-rendered and updated in Buffer on all four platforms (images pinned to commit 669024f); board copies refreshed.
+* 21 Nov 2026 (later): Pearl Harbor Chronicle Part 1 finished and marked final (Brian): opens on a single page detail of Plate 12 (the strike force on Hawaii), with the western half (the invasion forces the war warning named) in the war warning section; Fuchida's USSBS interrogation added as the first hand account; Stark's and Kimmel's later explanations added.
