@@ -77,6 +77,13 @@
    "XS-1"
   ]
  },
+ "aircraft-boeing-247": {
+  "name": "Boeing 247",
+  "kind": "twin engine all metal airliner",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Boeing_247"
+ },
  "aircraft-boeing-314-clipper": {
   "name": "Boeing 314 Clipper",
   "kind": "long range flying boat airliner",

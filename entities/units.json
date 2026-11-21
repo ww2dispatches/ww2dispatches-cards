@@ -364,6 +364,13 @@
   "wikidata": "Q213379",
   "source": "https://en.wikipedia.org/wiki/21st_Panzer_Division"
  },
+ "unit-22nd-brigade-australia": {
+  "name": "22nd Brigade (Australia)",
+  "kind": "Australian infantry brigade, 8th Division",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/22nd_Brigade_(Australia)"
+ },
  "unit-22nd-panzer-division": {
   "name": "22nd Panzer Division",
   "kind": "German panzer division",
@@ -1635,6 +1642,13 @@
   "nation": "Britain",
   "wikidata": "Q2265327",
   "source": "https://en.wikipedia.org/wiki/Gordon_Highlanders"
+ },
+ "unit-grenadier-guards": {
+  "name": "Grenadier Guards",
+  "kind": "British Army foot guards regiment",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Grenadier_Guards"
  },
  "unit-guam-insular-force-guard": {
   "name": "Guam Insular Force Guard",

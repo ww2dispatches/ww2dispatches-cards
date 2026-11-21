@@ -349,6 +349,13 @@
   "wikidata": "Q2468870",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-177"
  },
+ "ship-german-submarine-u-180": {
+  "name": "German submarine U-180",
+  "kind": "Type IXD1 transport U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-180"
+ },
  "ship-german-submarine-u-187": {
   "name": "U-187",
   "kind": "German Type IXC/40 submarine",
@@ -2449,6 +2456,16 @@
    "Léopoldville"
   ]
  },
+ "ship-ss-lima-maru": {
+  "name": "SS Lima Maru",
+  "kind": "Japanese troop transport",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Lima_Maru",
+  "aka": [
+   "Lima Maru"
+  ]
+ },
  "ship-ss-montebello": {
   "name": "SS Montebello",
   "kind": "oil tanker",
@@ -3271,6 +3288,13 @@
   "nation": "US",
   "wikidata": "Q6130226",
   "source": "https://en.wikipedia.org/wiki/USS_Skipjack_(SS-184)"
+ },
+ "ship-uss-snook-ss-279": {
+  "name": "USS Snook (SS-279)",
+  "kind": "U.S. submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Snook_(SS-279)"
  },
  "ship-uss-somers-dd-381": {
   "name": "USS Somers (DD-381)",

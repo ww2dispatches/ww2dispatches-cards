@@ -547,6 +547,13 @@
   "wikidata": "Q4960406",
   "source": "https://en.wikipedia.org/wiki/Brehon_B._Somervell"
  },
+ "person-brian-horrocks": {
+  "name": "Brian Horrocks",
+  "kind": "British Army corps commander",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Brian_Horrocks"
+ },
  "person-bruce-c-clarke": {
   "name": "Bruce C. Clarke",
   "kind": "U.S. Army general, commander of CCB, 7th Armored Division at St. Vith",
@@ -976,6 +983,16 @@
   "nation": "Romania",
   "wikidata": "Q4443015",
   "source": "https://en.wikipedia.org/wiki/David_Stoliar"
+ },
+ "person-delos-carleton-emmons": {
+  "name": "Delos Carleton Emmons",
+  "kind": "U.S. Army general, military governor of Hawaii",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Delos_Carleton_Emmons",
+  "aka": [
+   "Delos Emmons"
+  ]
  },
  "person-denise-bloch": {
   "name": "Denise Bloch",
@@ -1918,6 +1935,13 @@
    "Fritz Straßmann"
   ]
  },
+ "person-fritz-todt": {
+  "name": "Fritz Todt",
+  "kind": "German engineer, Reich armaments minister, founder of Organisation Todt",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fritz_Todt"
+ },
  "person-fu-zuoyi": {
   "name": "Fu Zuoyi",
   "kind": "Chinese Nationalist general",
@@ -2834,6 +2858,13 @@
   "nation": "US",
   "wikidata": "Q212446",
   "source": "https://en.wikipedia.org/wiki/Igor_Sikorsky"
+ },
+ "person-ingram-stainback": {
+  "name": "Ingram Stainback",
+  "kind": "Governor of the Territory of Hawaii",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ingram_Stainback"
  },
  "person-ingrid-bergman": {
   "name": "Ingrid Bergman",
@@ -3774,6 +3805,13 @@
   "nation": "France",
   "wikidata": "Q18434",
   "source": "https://en.wikipedia.org/wiki/L%C3%A9on_Blum"
+ },
+ "person-leonard-cheshire": {
+  "name": "Leonard Cheshire",
+  "kind": "RAF bomber pilot, commander of 617 Squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Leonard_Cheshire"
  },
  "person-leonid-govorov": {
   "name": "Leonid Govorov",
@@ -4976,6 +5014,13 @@
   "wikidata": "Q57601",
   "source": "https://en.wikipedia.org/wiki/Roland_Freisler"
  },
+ "person-roman-rudenko": {
+  "name": "Roman Rudenko",
+  "kind": "Soviet chief prosecutor at Nuremberg",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Roman_Rudenko"
+ },
  "person-ron-middleton-vc": {
   "name": "Ron Middleton",
   "kind": "bomber pilot",
@@ -5969,6 +6014,17 @@
   "nation": "US",
   "wikidata": "Q163415",
   "source": "https://en.wikipedia.org/wiki/William_Shockley"
+ },
+ "person-william-sidney-1st-viscount-de-l-isle": {
+  "name": "William Sidney, 1st Viscount De L'Isle",
+  "kind": "British Army officer, Victoria Cross, later Governor-General of Australia",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/William_Sidney,_1st_Viscount_De_L%27Isle",
+  "aka": [
+   "William Philip Sidney",
+   "Lord De L'Isle"
+  ]
  },
  "person-william-stephenson": {
   "name": "William Stephenson",

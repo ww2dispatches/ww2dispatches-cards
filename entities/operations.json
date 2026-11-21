@@ -815,6 +815,13 @@
   "source": "https://en.wikipedia.org/wiki/Battle_of_the_Santa_Cruz_Islands",
   "note": "Nation is the side the name is told from in our records; both sides are in nations on each event."
  },
+ "op-battle-of-sarimbun-beach": {
+  "name": "Battle of Sarimbun Beach",
+  "kind": "Japanese landing on Singapore Island",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Sarimbun_Beach"
+ },
  "op-battle-of-sidi-barrani": {
   "name": "Battle of Sidi Barrani",
   "kind": "opening battle of Operation Compass",
@@ -2802,6 +2809,13 @@
   "nation": "Soviet Union",
   "source": "https://en.wikipedia.org/wiki/Operation_Uranus",
   "wikidata": "Q155008"
+ },
+ "op-operation-veritable": {
+  "name": "Operation Veritable",
+  "kind": "Allied offensive between the Maas and the Rhine",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Veritable"
  },
  "op-operation-weserubung": {
   "name": "Operation Weserubung",

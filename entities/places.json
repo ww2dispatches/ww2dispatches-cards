@@ -1600,6 +1600,15 @@
   "lat": 20.0334,
   "lon": 110.324
  },
+ "place-hakenfelde": {
+  "name": "Hakenfelde",
+  "kind": "locality of Spandau, Berlin",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hakenfelde",
+  "lat": null,
+  "lon": null
+ },
  "place-halfaya-pass": {
   "name": "Halfaya Pass",
   "kind": "mountain pass",
@@ -2354,6 +2363,15 @@
    "Kurile Islands"
   ]
  },
+ "place-kursk": {
+  "name": "Kursk",
+  "kind": "city in western Russia",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kursk",
+  "lat": null,
+  "lon": null
+ },
  "place-kuznica-zelichowska": {
   "name": "Kuźnica Żelichowska",
   "kind": "village",
@@ -2502,6 +2520,15 @@
   "wikidata": "Q211377",
   "lat": 10.8,
   "lon": 124.9
+ },
+ "place-limoges": {
+  "name": "Limoges",
+  "kind": "city in central France",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Limoges",
+  "lat": null,
+  "lon": null
  },
  "place-lingayen-gulf": {
   "name": "Lingayen Gulf",
