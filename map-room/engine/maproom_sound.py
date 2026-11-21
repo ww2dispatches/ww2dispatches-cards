@@ -148,15 +148,23 @@ def ops_room(T=T):
     out = out[:n]; ref = teletype(T) * 0.5 + clock(T) * 0.55 + static(T) + hum(T)
     return out * (np.sqrt(np.mean(ref ** 2)) / max(1e-9, np.sqrt(np.mean(out ** 2))))
 def bed(T=T):
-    if os.path.exists(OPS_ROOM): return ops_room(T)
-    return teletype(T) * 0.5 + clock(T) * 0.55 + static(T) + hum(T)
+    """the war room bed: the Ops room ambience. A missing file stops the render (it used to fall back to the teletype bed
+    without a word, which is how every clip ended up with the old clicking intro)"""
+    if not os.path.exists(OPS_ROOM):
+        raise SystemExit(f'maproom_sound: the Ops room ambience is missing: {os.path.normpath(OPS_ROOM)}\n'
+                         'It is in the repo at map-room/kit/sound/ (from the Declass soundboard); restore it before rendering.')
+    return ops_room(T)
 def master(x, name):
     x = hp(x, 70); x = np.tanh(x * 1.2) / 1.2
     pk = np.max(np.abs(x)); x = x / pk * 10 ** (-1.5 / 20)
     x *= env(len(x), 0.01, 0.8)
     wf.write(name, SR, (x * 32767).astype(np.int16)); print(name)
-def build(events, T, out, version='C'):
-    """one day's mix: A table only, B with the war room bed, C with the theme as well (the decided version)"""
+def build(events, T, out, version='C', seed=None):
+    """one day's mix: A table only, B with the war room bed, C with the theme as well (the decided version).
+    seed: the day number. It restarts the random generator for the day, so a day sounds the same whether it is rendered
+    alone or after other days in one run (the generator is shared by the whole module)."""
+    global rng
+    if seed is not None: rng = np.random.default_rng([16, int(seed)])
     tt = table_track(events, T); x = tt + hum(T) * 0.6 if version == 'A' else tt + bed(T) * 0.55
     if version == 'C': x = x + theme(T)
     master(x, out)

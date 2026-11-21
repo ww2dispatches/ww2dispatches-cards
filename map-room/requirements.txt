@@ -1,0 +1,7 @@
+# The Map Room engine. bpy is pinned: a different Blender changes the renders. bpy 5.3.0 needs Python 3.13.
+bpy==5.3.0
+numpy
+scipy
+pillow
+scikit-image
+opencv-python

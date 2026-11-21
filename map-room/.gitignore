@@ -1,6 +1,7 @@
 # renders and work files never go in git
 *.mp4
 *.wav
+!kit/sound/*.wav
 plate*.png
 blk-*.png
 msk-*.png

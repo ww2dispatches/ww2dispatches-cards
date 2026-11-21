@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Weekly Dispatch</title>
+<title>Substack Dashboard</title>
 <style>
   :root{--night:#120F0C;--panel:#1D1915;--line:#3A332B;--ink:#EEE7DA;--dim:#B3A893;--red:#B04A3E;--green:#5E8A4A;--gold:#B8862B;--paper:#FBF8F2;--pink:#2A1C18}
   *{box-sizing:border-box}
@@ -74,21 +74,68 @@
   .small{font-size:13px;color:var(--dim)}
   .offline{display:none}
   [hidden]{display:none!important}
+  /* Desks: The Weekly Dispatch and The Chronicle */
+  .desks{max-width:760px;margin:0 auto;display:flex;gap:8px;padding:0 16px 10px}
+  .desks a{flex:1;text-align:center;padding:10px 6px;border-radius:10px;background:var(--panel);border:1px solid var(--line);color:var(--dim);text-decoration:none;font-weight:700;font-size:15px}
+  .desks a small{display:block;font-weight:500;font-size:12px;color:var(--dim)}
+  .desks a.on{background:#2A221A;border-color:var(--gold);color:var(--ink)}
+  .deskhead{margin:0 0 12px}
+  .deskhead h2{font-size:20px;margin:0 0 6px}
+  nav.subnav{display:none}nav.subnav.on{display:block}
+  nav.subnav.ch a.on{border-bottom-color:var(--gold)}
+  .chnotebtn{font-family:-apple-system,Segoe UI,Roboto,sans-serif;font-size:13px;padding:5px 10px;background:#EFE6D6;color:#7A2F27;border:1px solid #D9C8AE;border-radius:6px}
+  .parts{display:flex;flex-direction:column;gap:6px}
+  .partbtn{display:flex;justify-content:space-between;gap:8px;align-items:center;text-align:left;width:100%;background:#15120F;border:1px solid var(--line)}
+  .partbtn.on{border-color:var(--gold);background:#2A221A}
+  .partbtn .when{font-size:13px;color:var(--dim);font-weight:500}
+  .partbtn:disabled{opacity:.55}
+  .tag{font-size:12px;padding:2px 8px;border-radius:99px;background:#3A332B;color:var(--ink);font-weight:600;white-space:nowrap}
+  .tag.final{background:var(--green);color:#fff}.tag.draft{background:#7A4A2A;color:#fff}
+  .chpaper blockquote{border-left:4px solid var(--gold);margin:16px 0;padding:2px 0 2px 14px;color:#3A3128}
+  .chpaper blockquote p{font-style:italic}.chpaper blockquote strong{font-style:normal;color:#8A621C}
+  .chpaper figure figcaption{display:block;font-size:13px;line-height:1.45;color:#6B5E4C;text-align:center;margin-top:6px}
+  .chpaper h3{font-family:Georgia,serif;font-size:18px;margin:16px 0 6px}
+  .chpaper ul{padding-left:20px;font-size:14px}
+  .chpaper hr{border:0;border-top:1px solid #DDD3C2;margin:18px 0}
+  .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:8px 0}
+  .gallery figure{margin:0}.gallery img{width:100%;display:block;border-radius:4px}
+  .gallery figcaption{display:flex;flex-direction:column;gap:4px;margin-top:4px}
+  .coverbox img{width:100%;display:block;border-radius:6px}
+  details summary{cursor:pointer;font-weight:600}
+  .tag:empty{display:none}
+  .wc{font-weight:600;letter-spacing:0;text-transform:none}.wc.over{color:#B04A3E}
 </style>
 </head>
 <body>
 <header>
-  <div class="kicker">WW2 Dispatches · The Weekly Dispatch</div>
-  <h1>Issue {{ISSUE_ID}} review</h1>
-  <div class="meta"><span class="pill" id="status">Loading</span><span id="sendline"></span></div>
+  <div class="kicker">WW2 Dispatches · Substack</div>
+  <h1>Substack Dashboard</h1>
 </header>
-<nav><div class="in">
+<div class="desks">
+  <a href="#review" data-desk="wd">The Weekly Dispatch<small>Issue {{ISSUE_ID}}</small></a>
+  <a href="#ch-review" data-desk="ch">The Chronicle<small id="chdesksub">Campaign Series</small></a>
+</div>
+<nav class="subnav wd"><div class="in">
   <a href="#review" data-v="review">Review</a>
   <a href="#notes" data-v="notes">Notes <span id="notecount"></span></a>
   <a href="#post" data-v="post">Post it</a>
 </div></nav>
+<nav class="subnav ch"><div class="in">
+  <a href="#ch-review" data-v="ch-review">Review</a>
+  <a href="#ch-notes" data-v="ch-notes">Notes <span id="chnotecount"></span></a>
+  <a href="#ch-post" data-v="ch-post">Post it</a>
+</div></nav>
 <main>
   <div class="box note-banner offline" id="offline"><p><b>Notes and approval can't be saved right now.</b> Open this page on claude.ai while signed in. The copy buttons still work.</p></div>
+
+  <div class="deskhead" id="wdhead">
+    <h2>Issue {{ISSUE_ID}} review</h2>
+    <div class="meta"><span class="pill" id="status">Loading</span><span id="sendline"></span></div>
+  </div>
+  <div class="deskhead" id="chhead" hidden>
+    <h2 id="chheadtitle">The Chronicle</h2>
+    <div class="meta"><span class="pill" id="chstatus">Loading</span><span id="chsendline"></span><span class="tag" id="chrepo"></span></div>
+  </div>
 
   <!-- REVIEW -->
   <section class="view" id="v-review">
@@ -103,7 +150,7 @@
     </div>
     <div class="paper">
       <div class="subjectbox"><b>Subject (the post title)</b>{{SUBJECT}}</div>
-      <div class="subjectbox"><b>Preview line (the subtitle)</b>{{PREVIEW}}</div>
+      <div class="subjectbox"><b>Preview line (the subtitle) <span class="wc" id="wd-wc"></span></b>{{PREVIEW}}</div>
       {{REVIEW}}
     </div>
     <div class="box" style="margin-top:16px">
@@ -178,6 +225,95 @@
     </div>
     {{SHARE}}
   </section>
+
+  <!-- CHRONICLE: REVIEW -->
+  <section class="view" id="v-ch-review">
+    <div class="box">
+      <h2>Parts</h2>
+      <div class="parts" id="partlist"></div>
+      <p class="small">The Chronicle is the long Substack half of each Campaign Series: 3 or 4 parts per series, each live at 9 a.m. the morning after its last day runs. Parts are written in each series' sitting; this tab fills itself every time the dashboard is rebuilt.</p>
+    </div>
+    <div id="chbody">
+      <div class="box warn" id="chwarn" hidden></div>
+      <div class="box">
+        <h2>How to review</h2>
+        <p>Read the part below as it will read on Substack. Tap <b>+ Note</b> on any day section to ask for a change. When it's right, tap <b>Approve</b> at the bottom, then go to <b>Post it</b>.</p>
+      </div>
+      <div class="paper chpaper">
+        <div class="subjectbox"><b>Title</b><span id="ch-r-title"></span></div>
+        <div class="subjectbox"><b>Subtitle <span class="wc" id="ch-wc"></span></b><span id="ch-r-sub"></span></div>
+        <div class="sec" id="ch-cover-sec"><div class="sechead"><button class="chnotebtn" data-chsec="cover">+ Note</button></div>
+          <figure class="coverbox"><img id="ch-r-cover" alt="Cover"><figcaption id="ch-r-credit"></figcaption></figure></div>
+        <div id="ch-r-body"></div>
+        <div class="sec"><h3 id="ch-r-galhead"></h3><div class="gallery" id="ch-r-gallery"></div></div>
+      </div>
+      <div class="box" style="margin-top:16px">
+        <h2>Your call</h2>
+        <p id="chapprovetext">Happy with it? Approve, then follow the steps in Post it.</p>
+        <div class="row"><button class="ok" id="chapprove">Approve part</button><a class="btn" href="#ch-notes">Request changes</a></div>
+      </div>
+      <p class="small">Built <span class="builtdate"></span> from <a id="ch-ghlink" href="#">the part file on GitHub</a>.</p>
+    </div>
+    <div class="box" id="chnone" hidden><h2>No parts yet</h2><p>No Chronicle part has been written yet. Parts appear here as soon as a Campaign Series sitting writes them and rebuilds this page.</p></div>
+  </section>
+
+  <!-- CHRONICLE: NOTES -->
+  <section class="view" id="v-ch-notes">
+    <div class="box">
+      <h2>Leave a note on <span class="chname"></span></h2>
+      <label for="chnotesec">Which part of it</label>
+      <select id="chnotesec"></select>
+      <label for="chnotetext">What to change</label>
+      <textarea id="chnotetext" placeholder="For example: open the war warning section on Kimmel, or swap the second photo."></textarea>
+      <div class="row" style="margin-top:10px"><button class="primary" id="chsavenote">Save note</button></div>
+    </div>
+    <div class="box">
+      <h2>Getting changes made</h2>
+      <p>Once your notes are saved, tell Claude in the WW2 Dispatches project:</p>
+      <div class="copyline"><span class="txt">Apply my Chronicle notes.</span><button data-copy="Apply my Chronicle notes.">Copy</button></div>
+      <p>Claude edits the part, rebuilds this page, and marks each note done with what changed. Reload this page after it says it's done.</p>
+    </div>
+    <div class="box"><h2>Open notes</h2><div id="chopennotes"><p class="small">None yet.</p></div></div>
+    <div class="box"><h2>Done</h2><div id="chdonenotes"><p class="small">None yet.</p></div></div>
+  </section>
+
+  <!-- CHRONICLE: POST -->
+  <section class="view" id="v-ch-post">
+    <div class="box warn" id="chnotapproved"><p><b>Not approved yet.</b> You can still copy everything, but approve it in Review first so the record is right.</p></div>
+    <div class="box">
+      <h2>Paste and schedule <span class="chname"></span> (about 10 minutes)</h2>
+      <details style="margin:0 0 14px"><summary>First time only: create The Chronicle section</summary>
+        <p class="small">In Substack, go to Settings, then Sections, and create a section named <b>The Chronicle</b> with the description below. Upload the section's email banner (Open full image, then save it). Let existing subscribers get its emails, with the usual opt out (recommended in the Newsletter doc, since the parts are few and in depth).</p>
+        <div class="copyline"><span class="txt" id="c-secdesc">A WW2 Dispatches Campaign Series. Each campaign, in full.</span><button data-copyid="c-secdesc">Copy</button></div>
+        <div class="row"><a class="mini" href="https://raw.githubusercontent.com/ww2dispatches/ww2dispatches-cards/main/campaign-series/brand/campaign-series-email-banner@2x.png">Open banner (2x)</a><a class="mini" href="https://raw.githubusercontent.com/ww2dispatches/ww2dispatches-cards/main/campaign-series/brand/campaign-series-email-banner.png">Open banner</a></div>
+      </details>
+      <ol class="steps">
+        <li><h3>Start a new post in The Chronicle</h3>
+          <p>Best on the desktop PC. Sign in to Substack, start a new text post, and pick <b>The Chronicle</b> as its section (not the main newsletter), so it never looks like a Weekly Dispatch issue.</p>
+          <div class="row"><a class="btn primary" href="https://ww2dispatches.substack.com/publish/post">New post in Substack</a></div></li>
+        <li><h3>Title</h3>
+          <div class="copyline"><span class="txt" id="c-chtitle"></span><button data-copyid="c-chtitle">Copy</button></div></li>
+        <li><h3>Subtitle</h3>
+          <div class="copyline"><span class="txt" id="c-chsub"></span><button data-copyid="c-chsub">Copy</button></div></li>
+        <li><h3>Body</h3>
+          <p>Click into the body and paste. The cover comes first with its credit, then the article with its maps, photos, captions, set off documents, the Next line, the Day by Day images, and Sources.</p>
+          <div class="row"><button class="primary" id="chcopybody">Copy part body</button><button id="chcopyplain">Copy as plain text</button></div>
+          <p class="small">Each caption should land in the photo's own caption line. If one pastes as a separate paragraph, use the photo's ··· menu, Edit caption, paste it there, and delete the paragraph. If photos don't show, add them with Substack's image button using Open full image in Review.</p></li>
+        <li><h3>Day by Day gallery (optional)</h3>
+          <p>The daily images paste one under another under the heading <b id="chgalname"></b>. To show them as a grid instead, delete them, add a Gallery with Substack's image button, and upload these:</p>
+          <div class="gallery" id="ch-p-gallery"></div></li>
+        <li><h3>Thumbnail</h3>
+          <p>In the post settings, set the thumbnail to the cover, so social previews and the Substack home show it.</p>
+          <div class="row"><a class="mini" id="ch-coverlink" href="#">Open full cover</a></div></li>
+        <li><h3>Check it</h3>
+          <p>Scroll through once: the cover sits on top, every photo shows with its caption, the block quotes keep their bold labels, and the links open. Optional: Preview, then Send test email.</p></li>
+        <li><h3>Schedule it</h3>
+          <p>Audience <b>Everyone</b>, send by email on. Choose <b>Schedule</b> and set <b id="chsendwhen"></b>, then check the time zone shows Mountain and confirm. No tags and no Sunday share post for Chronicle parts.</p></li>
+        <li><h3>Mark it scheduled</h3>
+          <div class="row"><button class="ok" id="chmarkscheduled">Mark scheduled</button><button id="chundo" hidden>Undo</button></div></li>
+      </ol>
+    </div>
+  </section>
 </main>
 <div class="toast" id="toast"></div>
 <script id="data" type="application/json">{{DATA}}</script>
@@ -197,7 +333,10 @@ $('#sendwhen').textContent = sendWhen;
 $('#tagsline').textContent = (D.tags && D.tags.length) ? D.tags.join(' and ') : 'the series (Battle Lines, Home Front, Blueprint, or Statecraft) and the theater';
 $('#c-subject').textContent = D.subject;
 $('#c-preview').textContent = D.preview;
+function wordCount(el, n){ if (!el) return; el.textContent = '· ' + n + ' words' + (n > 10 ? ', too long (6 to 10)' : ''); el.classList.toggle('over', n > 10); }
+wordCount($('#wd-wc'), D.previewWords || 0);
 $('#built').textContent = D.built;
+document.querySelectorAll('.builtdate').forEach(e => e.textContent = D.built);
 $('#ghlink').href = D.github;
 const sel = $('#notesec');
 sel.innerHTML = '<option value="general">Whole issue / general</option><option value="subject">Subject or preview line</option>' +
@@ -211,10 +350,15 @@ if (D.flags.length){
 }
 
 /* ---------- tabs ---------- */
+const VIEWS = ['review','notes','post','ch-review','ch-notes','ch-post'];
 function show(){
-  const v = ['review','notes','post'].includes(location.hash.slice(1)) ? location.hash.slice(1) : 'review';
+  const v = VIEWS.includes(location.hash.slice(1)) ? location.hash.slice(1) : 'review';
+  const desk = v.startsWith('ch-') ? 'ch' : 'wd';
   document.querySelectorAll('.view').forEach(e => e.classList.toggle('on', e.id === 'v-' + v));
   document.querySelectorAll('nav a').forEach(a => a.classList.toggle('on', a.dataset.v === v));
+  document.querySelectorAll('nav.subnav').forEach(n => n.classList.toggle('on', n.classList.contains(desk)));
+  document.querySelectorAll('.desks a').forEach(a => a.classList.toggle('on', a.dataset.desk === desk));
+  $('#wdhead').hidden = desk !== 'wd'; $('#chhead').hidden = desk !== 'ch';
 }
 addEventListener('hashchange', () => { show(); scrollTo(0,0); });
 show();
@@ -229,12 +373,12 @@ async function copyText(t){
 async function copyRich(h, t){
   try {
     await navigator.clipboard.write([new ClipboardItem({'text/html': new Blob([h],{type:'text/html'}), 'text/plain': new Blob([t],{type:'text/plain'})})]);
-    toast('Issue body copied'); return;
+    toast(copyRich.label || 'Issue body copied'); return;
   } catch(e){}
   const div=document.createElement('div'); div.contentEditable='true'; div.style.cssText='position:fixed;left:-9999px;top:0;width:600px';
   div.innerHTML=h; document.body.appendChild(div);
   const r=document.createRange(); r.selectNodeContents(div); const s=getSelection(); s.removeAllRanges(); s.addRange(r);
-  try { document.execCommand('copy'); toast('Issue body copied'); } catch(e){ toast('Copy failed'); }
+  try { document.execCommand('copy'); toast(copyRich.label || 'Issue body copied'); } catch(e){ toast('Copy failed'); }
   s.removeAllRanges(); div.remove();
 }
 document.addEventListener('click', async e => {
@@ -251,7 +395,7 @@ document.addEventListener('click', async e => {
   }
   if (b.classList.contains('notebtn')){ sel.value = b.dataset.sec; location.hash = '#notes'; setTimeout(()=>$('#notetext').focus(),50); }
 });
-$('#copybody').onclick = () => copyRich(D.copyHtml, D.copyText);
+$('#copybody').onclick = () => { copyRich.label = 'Issue body copied'; copyRich(D.copyHtml, D.copyText); };
 $('#copyplain').onclick = () => copyText(D.copyText);
 
 /* ---------- status ---------- */
@@ -300,7 +444,7 @@ function renderNotes(){
     <div class="row">${n.done?`<button class="mini" data-reopen="${esc(n.id)}">Reopen</button>`:`<button class="mini" data-done="${esc(n.id)}">Mark done</button>`}<button class="mini" data-del="${esc(n.id)}">Delete</button></div></div>`;
   $('#opennotes').innerHTML = open.length ? open.map(card).join('') : '<p class="small">None. Tap + Note on any part of the issue, or use the form above.</p>';
   $('#donenotes').innerHTML = done.length ? done.map(card).join('') : '<p class="small">None yet.</p>';
-  document.querySelectorAll('.sec').forEach(s => {
+  document.querySelectorAll('#v-review .sec').forEach(s => {
     s.querySelectorAll('.secnotes').forEach(x=>x.remove());
     const mine = open.filter(n=>n.section===s.id);
     s.classList.toggle('has-notes', mine.length>0);
@@ -329,6 +473,140 @@ $('#savenote').onclick = async () => {
   b.disabled = false;
 };
 
+
+/* ================= THE CHRONICLE ================= */
+const C = D.chronicle || [];
+let chCur = null, chData = {}, chNotes = [], chUnsub = [];
+const fmtDay = iso => new Date(iso).toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'});
+function chPick(){
+  const written = C.filter(p => p.written);
+  let saved = null; try { saved = localStorage.getItem('chPart'); } catch(e){}
+  return written.find(p => p.id === saved) || written.find(p => !p.published) || written[0] || null;
+}
+function chParts(){
+  $('#partlist').innerHTML = C.length ? C.map(p => {
+    const when = p.written ? (p.published ? 'Went live ' : 'Goes live ') + fmtDay(p.publish) : 'Not written yet';
+    return `<button class="partbtn ${chCur && chCur.id===p.id?'on':''}" data-part="${esc(p.id)}" ${p.written?'':'disabled'}>
+      <span>${esc(p.seriesName)} · Part ${p.part}${p.parts?' of '+p.parts:''}${p.title?': '+esc(p.title):''}<br><span class="when">${esc(when)}</span></span>
+      <span class="tag" data-ptag="${esc(p.id)}"></span></button>`;
+  }).join('') : '<p class="small">No Campaign Series parts yet.</p>';
+}
+const chLabelOf = id => id==='general' ? 'Whole part' : id==='title' ? 'Title or subtitle' : id==='cover' ? 'Cover' : ((chCur && (chCur.sections||[]).find(s=>s.id===id))||{}).label || id;
+function chRender(){
+  chParts();
+  const has = !!chCur;
+  $('#chbody').hidden = !has; $('#chnone').hidden = has;
+  $('#chdesksub').textContent = has ? `${chCur.seriesName} · Part ${chCur.part}` : 'Campaign Series';
+  if (!has){ $('#chheadtitle').textContent = 'The Chronicle'; $('#chsendline').textContent = ''; $('#chrepo').hidden = true; return; }
+  const p = chCur;
+  $('#chheadtitle').textContent = `${p.seriesName} · The Chronicle · Part ${p.part} of ${p.parts}`;
+  $('#chsendline').textContent = (p.published ? 'Went live ' : 'Goes live ') + p.publishLabel + ', ' + p.publishTime + ' Mountain';
+  const r = $('#chrepo'); r.hidden = false;
+  r.textContent = p.repoStatus === 'final' ? 'Final in repo' : 'Repo: ' + p.repoStatus;
+  r.className = 'tag ' + (p.repoStatus === 'final' ? 'final' : 'draft');
+  const w = $('#chwarn');
+  w.hidden = p.repoStatus === 'final';
+  w.innerHTML = `<p><b>Not marked final yet.</b> The site keeps this chapter sealed until its record says final. Claude sets that when the part is checked and approved.</p>`;
+  $('#ch-r-title').textContent = p.substackTitle; $('#ch-r-sub').textContent = p.subtitle; wordCount($('#ch-wc'), p.subtitleWords || 0);
+  $('#ch-r-cover').src = p.cover.preview || ''; $('#ch-r-credit').textContent = p.cover.credit;
+  $('#ch-r-body').innerHTML = p.reviewHtml;
+  $('#ch-r-body').querySelectorAll('figure').forEach(f => { const img=f.querySelector('img'); if (img && img.dataset.raw) f.insertAdjacentHTML('beforeend', `<div class="row" style="justify-content:center;margin-top:4px"><a class="mini" href="${esc(img.dataset.raw)}">Open full image</a></div>`); });
+  $('#ch-r-galhead').textContent = p.galleryHeading; $('#chgalname').textContent = p.galleryHeading;
+  const gal = p.gallery.map(g => `<figure><img src="${g.preview}" alt="Day ${g.day}"><figcaption><a class="mini" href="${esc(g.raw)}">Day ${g.day}</a></figcaption></figure>`).join('');
+  $('#ch-r-gallery').innerHTML = gal; $('#ch-p-gallery').innerHTML = gal;
+  $('#ch-ghlink').href = p.github;
+  $('#c-chtitle').textContent = p.substackTitle; $('#c-chsub').textContent = p.subtitle;
+  $('#ch-coverlink').href = p.cover.raw;
+  $('#chsendwhen').textContent = p.publishLabel + ' at ' + p.publishTime;
+  document.querySelectorAll('.chname').forEach(e => e.textContent = `${p.seriesName}, Part ${p.part}`);
+  $('#chnotesec').innerHTML = '<option value="general">Whole part / general</option><option value="title">Title or subtitle</option><option value="cover">Cover</option>' +
+    p.sections.map(s => `<option value="${esc(s.id)}">${esc(s.label)}</option>`).join('');
+  chRenderNotes();
+}
+function chRenderStatus(){
+  if (!chCur) return;
+  const open = chNotes.filter(n=>!n.done).length;
+  let st = chData.status || 'review';
+  if (st === 'review' && open) st = 'changes';
+  const [label, cls] = STATUS[st] || STATUS.review;
+  const pill = $('#chstatus'); pill.textContent = db ? label : 'Not saved'; pill.className = 'pill ' + (db ? cls : '');
+  const done = chData.status === 'approved' || chData.status === 'scheduled';
+  $('#chnotapproved').hidden = done;
+  const ap = $('#chapprove');
+  if (done){ ap.textContent = 'Approved ✓'; ap.disabled = true; $('#chapprovetext').textContent = 'Approved. Next: Post it.'; }
+  else { ap.textContent = open ? `Approve anyway (${open} open note${open>1?'s':''})` : 'Approve part'; ap.disabled = !db;
+    $('#chapprovetext').textContent = open ? 'You have open notes. Approve anyway, or ask Claude to apply them first (see Notes).' : 'Happy with it? Approve, then follow the steps in Post it.'; }
+  const ms = $('#chmarkscheduled'); ms.disabled = !db || chData.status === 'scheduled';
+  ms.textContent = chData.status === 'scheduled' ? 'Scheduled ✓' : 'Mark scheduled';
+  $('#chundo').hidden = !done;
+  $('#chnotecount').textContent = open ? `(${open})` : '';
+}
+function chRenderNotes(){
+  const open = chNotes.filter(n=>!n.done).sort((a,b)=>a.at<b.at?-1:1);
+  const done = chNotes.filter(n=>n.done).sort((a,b)=>a.at>b.at?-1:1);
+  const card = n => `<div class="note ${n.done?'done':''}"><div class="where">${esc(chLabelOf(n.section))} · ${new Date(n.at).toLocaleString('en-US',{weekday:'short',hour:'numeric',minute:'2-digit'})}</div>
+    <div class="body">${esc(n.text)}</div>${n.reply?`<div class="reply">Claude: ${esc(n.reply)}</div>`:''}
+    <div class="row">${n.done?`<button class="mini" data-reopen="${esc(n.id)}">Reopen</button>`:`<button class="mini" data-done="${esc(n.id)}">Mark done</button>`}<button class="mini" data-del="${esc(n.id)}">Delete</button></div></div>`;
+  $('#chopennotes').innerHTML = open.length ? open.map(card).join('') : '<p class="small">None. Tap + Note on any part of the chapter, or use the form above.</p>';
+  $('#chdonenotes').innerHTML = done.length ? done.map(card).join('') : '<p class="small">None yet.</p>';
+  document.querySelectorAll('#v-ch-review .sec').forEach(s => {
+    s.querySelectorAll('.secnotes').forEach(x=>x.remove());
+    const id = s.dataset.sec || (s.id === 'ch-cover-sec' ? 'cover' : '');
+    const mine = open.filter(n=>n.section===id);
+    s.classList.toggle('has-notes', mine.length>0);
+    const head = s.querySelector('.sechead');
+    if (head) mine.forEach(n => head.insertAdjacentHTML('afterend', `<div class="secnotes">Your note: ${esc(n.text)}</div>`));
+  });
+  chRenderStatus();
+}
+function chAttach(){
+  chUnsub.forEach(u => { try { u && u(); } catch(e){} }); chUnsub = [];
+  chData = {}; chNotes = []; chRenderNotes();
+  if (!db || !chCur) return;
+  chUnsub.push(db.doc('chronicle/' + chCur.id).onSnapshot(s => { chData = s.exists ? Object.assign({}, s.data()) : {}; chRenderStatus(); }, e => {}));
+  chUnsub.push(db.collection('notes').where('issue','==',chCur.id).onSnapshot(q => { chNotes = q.docs.map(d => Object.assign({id:d.id}, d.data())); chRenderNotes(); }, e => { toast('Notes could not load'); }));
+  // Status tags in the part list
+  C.filter(p=>p.written).forEach(p => db.doc('chronicle/' + p.id).get().then(s => {
+    const t = document.querySelector(`[data-ptag="${p.id}"]`); if (!t) return;
+    const st = s.exists ? s.data().status : '';
+    t.textContent = st === 'scheduled' ? 'Scheduled' : st === 'approved' ? 'Approved' : 'In review';
+  }).catch(()=>{}));
+}
+async function chSetStatus(status){
+  if (!db || !chCur) return;
+  const now = new Date().toISOString();
+  const next = Object.assign({}, chData, {part: chCur.id, series: chCur.series, n: chCur.part, status, updatedAt: now});
+  if (status === 'approved') next.approvedAt = now;
+  if (status === 'scheduled'){ next.scheduledAt = now; if (!next.approvedAt) next.approvedAt = now; }
+  if (status === 'review'){ delete next.approvedAt; delete next.scheduledAt; }
+  try { await db.doc('chronicle/' + chCur.id).set(next); toast(status === 'review' ? 'Back in review' : 'Saved'); chAttach(); }
+  catch(e){ toast('Could not save: ' + (e.code || 'error')); }
+}
+$('#chapprove').onclick = () => chSetStatus('approved');
+$('#chmarkscheduled').onclick = () => chSetStatus('scheduled');
+$('#chundo').onclick = () => chSetStatus(chData.status === 'scheduled' ? 'approved' : 'review');
+$('#chcopybody').onclick = () => { if (!chCur) return; copyRich.label = 'Part body copied'; copyRich(chCur.copyHtml, chCur.copyText); };
+$('#chcopyplain').onclick = () => chCur && copyText(chCur.copyText);
+$('#chsavenote').onclick = async () => {
+  const text = $('#chnotetext').value.trim();
+  if (!text){ toast('Write the note first'); return; }
+  if (!db){ toast('Notes need you signed in on claude.ai'); return; }
+  const b = $('#chsavenote'); b.disabled = true;
+  const sec = $('#chnotesec').value;
+  try {
+    await db.collection('notes').add({issue: chCur.id, kind: 'chronicle', series: chCur.series, part: chCur.part, section: sec, label: chLabelOf(sec), text, at: new Date().toISOString(), done: false});
+    $('#chnotetext').value = ''; toast('Note saved');
+  } catch(err){ toast('Could not save: ' + (err.code || 'error')); }
+  b.disabled = false;
+};
+document.addEventListener('click', e => {
+  const b = e.target.closest('button'); if (!b) return;
+  if (b.dataset.part){ chCur = C.find(p => p.id === b.dataset.part); try { localStorage.setItem('chPart', chCur.id); } catch(err){} chRender(); chAttach(); }
+  if (b.classList.contains('chnotebtn')){ $('#chnotesec').value = b.dataset.chsec; location.hash = '#ch-notes'; setTimeout(()=>$('#chnotetext').focus(),50); }
+});
+chCur = chPick();
+chRender();
+
 /* ---------- db ---------- */
 renderStatus();
 (async () => {
@@ -339,6 +617,7 @@ renderStatus();
     e => { clearTimeout(timer); });
   db.collection('notes').where('issue','==',D.issueId).onSnapshot(q => { notes = q.docs.map(d => Object.assign({id:d.id}, d.data())); renderNotes(); },
     e => { toast('Notes could not load'); });
+  chAttach();
 })();
 </script>
 <script src="/hit.js" defer></script>

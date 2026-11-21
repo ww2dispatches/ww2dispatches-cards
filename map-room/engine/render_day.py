@@ -74,7 +74,7 @@ def main():
     silent = out + '.silent.mp4'; run([sys.executable, os.path.join(HERE, 'clip.py'), a.day, work, silent])
     if a.silent: os.replace(silent, out); print('OK', out); return
     import maproom_sound as snd
-    wav = out + '.wav'; snd.build(d.events, d.T, wav)
+    wav = out + '.wav'; snd.build(d.events, d.T, wav, seed=d.rec['day'])
     run(['ffmpeg', '-v', 'error', '-y', '-i', silent, '-i', wav, '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-shortest', out])
     os.remove(silent); os.remove(wav); print('OK', out, f'{d.T:.1f} s')
 if __name__ == '__main__': main()

@@ -2,7 +2,7 @@
 depends on the day before: who each unit is, where it came from, how far it went, which side of the line it is on, the
 line itself, the sources, and the table (overlaps, blocks passing through each other, one focus).
 Usage: check_series.py <series folder>      Exit code 1 if any day has an error."""
-import os, sys, re, json
+import os, sys, re, json, datetime
 HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, HERE)
 import series as S, day as D, faces
 SHORT = re.compile(r'\b(Div|Inf|Pz|Abn|Armd|Arm|Bn|Regt|Rgt|Bde|CCA|CCB|CCR|Co|Btn)\b\.?', re.I)
@@ -43,12 +43,20 @@ def check(s):
     for i, d in enumerate(s.days):
         mr, rec = d['mr'], d['rec']; E = lambda m: s.err(i, m)
         if not mr: E('no mapRoom block'); continue
+        # Which map (FORMAT.md, 21 Nov 2026): the maps were drawn at noon, so a night table is normally read from the next
+        # day's map; the day's own map is accepted where it already shows the night position. Day 1's set stays on its own map.
         date = rec.get('date'); daymap = maps.get(date, {}).get('label')
-        if not daymap: E(f'no situation map listed in series.json for {date}')
-        elif mr.get('map') != daymap: E(f'map must be this day\'s situation map: "{daymap}"')
-        def sourced(what, src, two):
+        try: nextmap = maps.get((datetime.date.fromisoformat(date) + datetime.timedelta(days=1)).isoformat(), {}).get('label')
+        except (TypeError, ValueError): nextmap = None; E(f'date "{date}" is not YYYY-MM-DD')
+        allowed = [m for m in (nextmap, daymap) if m]
+        names = ' or '.join(f'"{m}"' for m in allowed)
+        if not allowed: E(f'no situation map listed in series.json for {date} or the day after')
+        elif mr.get('map') not in allowed: E(f'map must be the next day\'s situation map (or this day\'s): {names}')
+        def sourced(what, src, two, own_only=False):
             src = src or []
-            if daymap and daymap not in src: E(f"{what}: sources must name the day's situation map")
+            if own_only:
+                if daymap and daymap not in src: E(f"{what}: sources must name the day's own situation map (Day 1 sets the table from it)")
+            elif allowed and not any(m in src for m in allowed): E(f"{what}: sources must name the next day's situation map (or this day's): {names}")
             if two and len(src) < 2: E(f'{what}: needs a second source')
             if any('...' in x or 'TODO' in x.upper() for x in src): E(f'{what}: a source is still a placeholder')
         if not mr.get('asOf'): E('missing asOf')
@@ -61,6 +69,9 @@ def check(s):
             if not (outside(ln[0]) and outside(ln[-1])): E('line: must run from the north edge of the map to the south edge (both ends past the edge)')
             if ln[0][1] < ln[-1][1]: E('line: runs north to south, German ground on the left')
             if crosses(ln): E('line: crosses itself')
+        if i == 0 and mr.get('lineStart'):                 # the front before the battle: Day 1's own map, two sources or more
+            if not mr.get('lineStartSources'): E("lineStart: needs lineStartSources, two or more, one of them the day's own situation map")
+            else: sourced('lineStart', mr.get('lineStartSources'), True, own_only=True)
         line = d['line']
         # moves
         mvs = mr.get('moves', []); orders = sorted(m.get('order', 0) for m in mvs)
@@ -96,7 +107,7 @@ def check(s):
                 if x in s.units and u in s.units and s.allied(x) == s.allied(u): E(f'{who}: drives {x}, which is on its own side')
         for sh in mr.get('shifts', []): sourced(f"shift {sh.get('unit')}", sh.get('sources'), False)
         for st in mr.get('set', []):
-            sourced(f"set {st.get('unit')}", st.get('sources'), False)
+            sourced(f"set {st.get('unit')}", st.get('sources'), False, own_only=(i == 0))
             if st.get('unit') in s.units and s.units[st['unit']]['type'] in AIR: E(f"set {st['unit']}: aircraft are not kept on the table; they appear only on their air_mission day")
         if i > 0 and mr.get('lineStart'): E('lineStart belongs to day 1 only')
         # sides, spacing, the table

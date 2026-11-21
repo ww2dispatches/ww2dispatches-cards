@@ -8,7 +8,7 @@ Used by render_series.py."""
 import sys, os, json, math, subprocess
 import numpy as np, cv2
 HERE = os.path.dirname(os.path.abspath(__file__)); ENG = HERE; sys.path.insert(0, ENG)
-import series as S, day as D, clip as C
+import series as S, day as D, clip as C, keycard as K
 from PIL import Image, ImageDraw, ImageFont
 W, H, FPS = D.W, D.H, 30
 KMX, KMY = 71.5, 110.6                      # km per degree at 50 N
@@ -54,6 +54,10 @@ class ZoomClip:
         self.Q0 = np.array([[cx - w * 0.54, cy + h / 2], [cx + w * 0.54, cy + h / 2], [cx + w * 0.47, cy - h / 2], [cx - w * 0.47, cy - h / 2]])
         self.SCR = np.array([[0, 0], [W, 0], [W, H], [0, H]], np.float32)
         self._cache = {}
+        # the key card: placed once, at the balcony, then carried by the camera with the table
+        self.key = self.key_km = None
+        if res.get('key'):
+            k = res['key']; self.key = K.make(k['nations'], k['air'], k['title'], k['blockKm']); self._place_key()
 
     # ---------- cameras ----------
     def Hclose(self, tau):
@@ -139,6 +143,10 @@ class ZoomClip:
                 if pm_f >= 1:
                     for pk in self.res['pockets']: poly(C.catmull([tuple(p) for p in pk['ring']], 8, closed=True), COL['wax'], 6)
         F = np.asarray(im.resize((W, H), Image.LANCZOS), np.float32) / 255
+        if k == 0: self._tboxes = [tuple(v / SS for v in b) for b in boxes]
+        ka = 1 - D.ease(min(1, max(0, (k - 0.25) / 0.4)))  # it fades early in the descent, so it never ghosts into the close view
+        if self.key_km is not None and ka > 0:             # the key card lies on the table, under nothing
+            P = np.c_[self.key_km, np.ones(4)] @ Hm.T; K.draw(F, self.key, (P[:, :2] / P[:, 2:3]).astype(np.float32), ka)
         # blocks: thin tiles, far ones first
         items = []
         for p in d.pieces:
@@ -177,6 +185,29 @@ class ZoomClip:
             wp = cv2.warpPerspective(st, M, (x1c - x0c, y1c - y0c), flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_CONSTANT, borderValue=0)
             a = wp[..., 3:4]; R = F[y0c:y1c, x0c:x1c]; F[y0c:y1c, x0c:x1c] = R * (1 - a) + wp[..., :3] * a
         return F * self.L * self.grain
+
+    def _place_key(self):
+        """find the card's spot in the balcony view: clear of the tab, the strip, every block and both lines"""
+        d = self.d; tau0 = d.t_table; Hm = self.Hmix(0.0, tau0)
+        self.drawn(Hm, tau0, 0.0, False)                   # also records where the town names fall
+        hard = np.zeros((H, W), np.uint8)
+        for L in (self.c.TAB, self.c.SA, self.c.SB): hard |= (L[..., 3] > 0.05).astype(np.uint8)
+        for key in ('lineAM', 'linePM'):
+            cv2.polylines(hard, [self.pts(Hm, C.catmull([tuple(p) for p in d.mr[key]], 12)).astype(np.int32)], False, 1, 12)
+        for pk in self.res['pocketsAM'] + self.res['pockets']:
+            cv2.polylines(hard, [self.pts(Hm, C.catmull([tuple(p) for p in pk['ring']], 8, closed=True)).astype(np.int32)], True, 1, 12)
+        hk = D.BS / 2 / d.table.KX * 1.15; hl = D.BS / 2 / d.table.KY * 1.15
+        spots = [d.table.LL(q) for p in d.pieces for q in (d.pos(p, tau0), d.pos(p, self.tau_end)) if q is not None]
+        spots += [tuple(q) for p in self.far for q in (p['am'], p['pm']) if q]
+        for ll in spots:
+            Q = self.pts(Hm, [(ll[0] - hk, ll[1] - hl), (ll[0] + hk, ll[1] - hl), (ll[0] + hk, ll[1] + hl), (ll[0] - hk, ll[1] + hl)])
+            cv2.fillConvexPoly(hard, Q.astype(np.int32), 1)
+        soft = np.zeros((H, W), np.uint8)
+        for b in getattr(self, '_tboxes', []): cv2.rectangle(soft, (int(b[0]), int(b[1])), (int(b[2]), int(b[3])), 1, -1)
+        sf = D.TPL['safe']
+        Q = K.place(W, H, hard, soft, sf['top'], H - sf['bottom'], sf['left'], W - sf['right'])
+        if Q is None: print('key card: no clear space on the balcony; left off'); return
+        Hi = np.linalg.inv(Hm); P = np.c_[Q, np.ones(4)] @ Hi.T; self.key_km = P[:, :2] / P[:, 2:3]
 
     # ---------- the clip ----------
     def overlays(self, F, strip_b=0.0):
@@ -230,7 +261,7 @@ def write(zc, out):
     for i in range(n): ff.stdin.write((np.clip(zc.frame(i / FPS), 0, 1) * 255 + 0.5).astype(np.uint8).tobytes())
     ff.stdin.close(); ff.wait()
     import maproom_sound as snd
-    wav = out + '.wav'; snd.build(zc.events(), zc.T, wav)
+    wav = out + '.wav'; snd.build(zc.events(), zc.T, wav, seed=zc.res['rec']['day'])
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', silent, '-i', wav, '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-shortest', out], check=True)
     os.remove(silent); os.remove(wav); print('OK', out, f'{zc.T:.1f} s')
 def still(zc, t, fn): cv2.imwrite(fn, (np.clip(zc.frame(t), 0, 1)[..., ::-1] * 255).astype(np.uint8)); print('wrote', fn)

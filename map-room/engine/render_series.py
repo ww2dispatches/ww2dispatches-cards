@@ -2,7 +2,7 @@
   render_series.py <series folder> <work dir> <out dir> [--days 11,12] [--samples N] [--stills t1,t2] [--force]
 Steps: check the whole series (nothing renders if any day has an error); for each day compile it, draw the focus map,
 render the close table's plate, block and rake sprites (cached in the work dir by focus), then composite the zoom clip.
-A day without moves is not rendered yet."""
+A day without moves (a quiet day) gets a balcony only clip: the line is redrawn and the camera never comes down to the table."""
 import os, sys, json, argparse, subprocess
 HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, HERE)
 import series as S

@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
-"""Build the Weekly Dispatch review page from a newsletter issue.
+"""Build the Substack Dashboard (formerly the Weekly Dispatch review page).
 
 Usage: python3 renderer/newsletter_page.py [newsletter/issue-NNN.md] [--send YYYY-MM-DD]
 With no file it uses the highest numbered issue in newsletter/. The send date
 defaults to the next Sunday after today. Writes newsletter/review-page.html, one
-self contained file (card previews embedded) to publish to the Weekly Dispatch
-artifact. Rules are in docs/WW2 Dispatches Newsletter.md ("Review page").
+self contained file (card previews embedded) to publish to the Substack Dashboard
+artifact (same slug as the old Weekly Dispatch page). It has two tabs: The Weekly
+Dispatch (this issue) and The Chronicle (Campaign Series parts, from
+renderer/substack_chronicle.py). Rules are in docs/WW2 Dispatches Newsletter.md
+("Substack Dashboard") and docs/WW2 Dispatches Campaign Series.md.
 
 The page shows the issue, takes Brian's notes and approval (stored in the
 artifact's db: issues/NNN and notes/*), and has the copy buttons and steps
@@ -124,6 +127,12 @@ def checks(subject, preview_line, blocks):
         problems.append("no subject line (# heading)")
     if not preview_line:
         problems.append("no preview line")
+    else:
+        from substack_chronicle import subtitle_check
+        sp, sn = subtitle_check(preview_line, "preview line (the Substack subtitle)")
+        problems += sp
+        for x in sn:
+            print("NOTE", x)
     text_all = [subject, preview_line] + [v if isinstance(v, str) else v[0] for k, v in blocks]
     for t in text_all:
         for bad in ("—", "–", " - "):
@@ -202,6 +211,7 @@ def build(src, send):
         "issueId": f"{num:03d}",
         "subject": subject,
         "preview": preview_line,
+        "previewWords": len(preview_line.split()),
         "send": send.isoformat(),
         "sendLabel": send.strftime("%a %-d %b %Y"),
         "built": date.today().isoformat(),
@@ -233,6 +243,13 @@ def build(src, send):
                       '<p class="small">If you decide not to send this issue, delete the Sunday share posts in Buffer, or tell Claude.</p></div>')
     elif num > 1:  # issue 001 was announced by the Monday launch post instead
         problems.append(f"no newsletter/share-{num:03d}.json yet (the Sunday share post)")
+    # Since 21 Nov 2026 the page is the Substack Dashboard: this issue fills its
+    # Weekly Dispatch tab, and substack_chronicle.py fills The Chronicle tab with
+    # the Campaign Series parts. Every rebuild carries both.
+    import substack_chronicle
+    chron, chron_problems = substack_chronicle.collect()
+    problems += chron_problems
+    data["chronicle"] = chron
     tpl = open(os.path.join(ROOT, "renderer", "newsletter_page.html"), encoding="utf-8").read()
     page = (tpl.replace("{{ISSUE_ID}}", data["issueId"])
                .replace("{{SUBJECT}}", html.escape(subject))
@@ -246,7 +263,9 @@ def build(src, send):
         print("PROBLEM", p)
     for f in flags:
         print(f"NOTE No. {f['num']} links to the X profile, not its post (not posted yet)")
-    print(f"Wrote {os.path.relpath(out, ROOT)} ({os.path.getsize(out) // 1024} KB), issue {num:03d}, send {send}")
+    print(f"Wrote {os.path.relpath(out, ROOT)} ({os.path.getsize(out) // 1024} KB), Substack Dashboard: "
+          f"Weekly Dispatch issue {num:03d}, send {send}; The Chronicle: "
+          f"{sum(1 for c in chron if c.get('written'))} part(s) written")
 
 
 def main():

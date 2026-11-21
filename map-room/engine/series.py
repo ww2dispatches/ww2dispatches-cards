@@ -141,7 +141,13 @@ class Series:
                 if x in U: p[x] = U[x]
             p.update(k); return p
         allp = [piece(u, am=d['am'].get(u), pm=d['pm'].get(u)) for u in sorted(set(d['am']) | set(d['pm']))]
-        res = {'dir': out, 'focus': f, 'quiet': quiet, 'all': allp, 'lineAM': d['lineAM'], 'linePM': d['line'], 'vname': None, 'pocketsAM': d['pocketsAM'], 'pockets': d['pockets'], 'rec': d['rec'], 'mr': mr}
+        key = None
+        if i < int(self.cfg.get('keyDays', 3)):            # the key card, on the series' opening days only
+            used = {u for x in self.days for u in x['pm']} | {m['unit'] for x in self.days for m in x.get('air', [])}
+            year = str(self.recs[0].get('date', ''))[:4]
+            key = {'nations': sorted({self.units[u]['nation'] for u in used}), 'air': any(x.get('air') for x in self.days),
+                   'title': f"{self.cfg.get('name', '')} · {year}".strip(' ·'), 'blockKm': self.block}
+        res = {'dir': out, 'focus': f, 'quiet': quiet, 'key': key, 'all': allp, 'lineAM': d['lineAM'], 'linePM': d['line'], 'vname': None, 'pocketsAM': d['pocketsAM'], 'pockets': d['pockets'], 'rec': d['rec'], 'mr': mr}
         json.dump({'all': allp, 'lineAM': d['lineAM'], 'linePM': d['line'], 'focus': f, 'quiet': quiet}, open(os.path.join(out, 'table-state.json'), 'w'))
         tj = self.table(f); tpath = os.path.join(out, 'table.json'); json.dump(tj, open(tpath, 'w'))
         t = D.Table(tpath); pieces = []; driven = {}
