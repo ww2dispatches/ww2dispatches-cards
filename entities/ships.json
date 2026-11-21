@@ -13,6 +13,13 @@
   "source": "https://en.wikipedia.org/wiki/French_battleship_Strasbourg",
   "wikidata": "Q2298889"
  },
+ "ship-french-cruiser-lamotte-picquet": {
+  "name": "French cruiser Lamotte-Picquet",
+  "kind": "light cruiser",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/French_cruiser_Lamotte-Picquet"
+ },
  "ship-french-submarine-casabianca-1935": {
   "name": "Casabianca",
   "kind": "submarine",
@@ -85,6 +92,13 @@
    "Komet",
    "Schiff 45"
   ]
+ },
+ "ship-german-auxiliary-cruiser-pinguin": {
+  "name": "Pinguin",
+  "kind": "German auxiliary cruiser (merchant raider)",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_auxiliary_cruiser_Pinguin"
  },
  "ship-german-auxiliary-cruiser-thor": {
   "name": "Thor",
@@ -196,6 +210,13 @@
    "Z36"
   ]
  },
+ "ship-german-submarine-u-1172": {
+  "name": "German submarine U-1172",
+  "kind": "Type VIIC/41 U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-1172"
+ },
  "ship-german-submarine-u-123-1940": {
   "name": "U-123",
   "kind": "Type IXB U-boat",
@@ -271,6 +292,13 @@
   "wikidata": "Q2572123",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-254"
  },
+ "ship-german-submarine-u-263": {
+  "name": "German submarine U-263",
+  "kind": "Kriegsmarine Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-263"
+ },
  "ship-german-submarine-u-284": {
   "name": "German submarine U-284",
   "kind": "Type VIIC U-boat",
@@ -342,6 +370,13 @@
   "nation": "Germany",
   "wikidata": "Q5551656",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-426"
+ },
+ "ship-german-submarine-u-454": {
+  "name": "U-454",
+  "kind": "U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-454"
  },
  "ship-german-submarine-u-486": {
   "name": "U-486",
@@ -481,6 +516,13 @@
    "U-877"
   ]
  },
+ "ship-german-submarine-u-96-1940": {
+  "name": "U-96",
+  "kind": "U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-96_(1940)"
+ },
  "ship-german-submarine-u-99-1940": {
   "name": "U-99",
   "kind": "Type VIIB U-boat",
@@ -501,6 +543,13 @@
   "nation": "Australia",
   "wikidata": "Q1031971",
   "source": "https://en.wikipedia.org/wiki/HMAS_Australia_(D84)"
+ },
+ "ship-hmas-deloraine": {
+  "name": "HMAS Deloraine",
+  "kind": "Royal Australian Navy Bathurst class corvette",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMAS_Deloraine"
  },
  "ship-hmas-nestor": {
   "name": "HMAS Nestor (G02)",
@@ -725,6 +774,20 @@
    "HMS Graph"
   ]
  },
+ "ship-hms-grenville-h03": {
+  "name": "HMS Grenville (H03)",
+  "kind": "G-class destroyer flotilla leader",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Grenville_(H03)"
+ },
+ "ship-hms-greyhound-h05": {
+  "name": "HMS Greyhound (H05)",
+  "kind": "G-class destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Greyhound_(H05)"
+ },
  "ship-hms-hasty-h24": {
   "name": "HMS Hasty (H24)",
   "kind": "destroyer",
@@ -781,6 +844,13 @@
   "source": "https://en.wikipedia.org/wiki/HMS_Jervis",
   "wikidata": "Q2457787"
  },
+ "ship-hms-jupiter-f85": {
+  "name": "HMS Jupiter (F85)",
+  "kind": "destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Jupiter_(F85)"
+ },
  "ship-hms-kandahar": {
   "name": "HMS Kandahar (F28)",
   "kind": "destroyer",
@@ -811,6 +881,13 @@
   "nation": "Britain",
   "wikidata": "Q5633297",
   "source": "https://en.wikipedia.org/wiki/HMS_Marigold_(K87)"
+ },
+ "ship-hms-matabele": {
+  "name": "HMS Matabele (F26)",
+  "kind": "destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Matabele"
  },
  "ship-hms-nelson-28": {
   "name": "HMS Nelson",
@@ -949,6 +1026,17 @@
   "source": "https://en.wikipedia.org/wiki/HMS_Tartar_(F43)",
   "wikidata": "Q1354348"
  },
+ "ship-hms-thane": {
+  "name": "HMS Thane (D83)",
+  "kind": "Royal Navy Ameer class escort carrier",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Thane",
+  "aka": [
+   "USS Sunset"
+  ],
+  "note": "uboat.net gives pennant D 83; Wikipedia month page writes D48. Check."
+ },
  "ship-hms-tuna-n94": {
   "name": "HMS Tuna (N94)",
   "kind": "Royal Navy submarine",
@@ -1026,6 +1114,13 @@
   "wikidata": "Q2010241",
   "source": "https://en.wikipedia.org/wiki/HNLMS_K_XVI"
  },
+ "ship-htms-thonburi": {
+  "name": "HTMS Thonburi",
+  "kind": "coastal defence ship",
+  "nation": "Thailand",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HTMS_Thonburi"
+ },
  "ship-italian-cruiser-alberico-da-barbiano": {
   "name": "Italian cruiser Alberico da Barbiano",
   "kind": "light cruiser",
@@ -1070,6 +1165,13 @@
   "nation": "Italy",
   "wikidata": "Q1118508",
   "source": "https://en.wikipedia.org/wiki/Italian_submarine_Ambra"
+ },
+ "ship-italian-submarine-neghelli": {
+  "name": "Neghelli",
+  "kind": "Adua-class submarine",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_submarine_Neghelli"
  },
  "ship-japanese-aircraft-carrier-chuyo": {
   "name": "Chūyō",
@@ -1309,6 +1411,13 @@
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Samidare_(1935)",
   "wikidata": "Q1356866"
  },
+ "ship-japanese-destroyer-sazanami-1931": {
+  "name": "Sazanami (1931)",
+  "kind": "Imperial Japanese Navy Fubuki class destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Sazanami_(1931)"
+ },
  "ship-japanese-destroyer-takanami-1942": {
   "name": "Takanami",
   "kind": "destroyer",
@@ -1357,6 +1466,13 @@
   "nation": "Japan",
   "wikidata": "Q2704642",
   "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-1"
+ },
+ "ship-japanese-submarine-i-124": {
+  "name": "Japanese submarine I-124",
+  "kind": "Imperial Japanese Navy minelaying submarine",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-124"
  },
  "ship-japanese-submarine-i-16": {
   "name": "I-16",
@@ -1455,6 +1571,13 @@
   "wikidata": "Q10884899",
   "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-6"
  },
+ "ship-japanese-submarine-i-60": {
+  "name": "I-60",
+  "kind": "submarine",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-60"
+ },
  "ship-japanese-submarine-i-70": {
   "name": "I-70",
   "kind": "Imperial Japanese Navy fleet submarine",
@@ -1527,6 +1650,13 @@
   ],
   "note": "No English Wikipedia article for this ship (the article titled SS Odenwald redirects to an earlier ship). Source is the Naval Historical Center photo caption for NARA 80-G-464023."
  },
+ "ship-ole-wegger": {
+  "name": "Ole Wegger",
+  "kind": "Norwegian whale factory ship",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ole_Wegger"
+ },
  "ship-oryoku-maru": {
   "name": "Ōryoku Maru",
   "kind": "Japanese passenger cargo ship used as a POW transport",
@@ -1543,6 +1673,13 @@
   "nation": "United States",
   "source": "https://en.wikipedia.org/wiki/Patrol_torpedo_boat_PT-59",
   "wikidata": "Q6918162"
+ },
+ "ship-rms-lady-hawkins": {
+  "name": "RMS Lady Hawkins",
+  "kind": "Canadian National Steamships passenger liner",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/RMS_Lady_Hawkins"
  },
  "ship-rv-petrel": {
   "name": "RV Petrel",
@@ -1582,6 +1719,13 @@
   "wikidata": "Q7866984",
   "source": "https://en.wikipedia.org/wiki/SS_Absaroka"
  },
+ "ship-ss-almeda-star": {
+  "name": "SS Almeda Star",
+  "kind": "passenger liner",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Almeda_Star"
+ },
  "ship-ss-clan-campbell": {
   "name": "Clan Campbell",
   "kind": "cargo ship",
@@ -1609,6 +1753,13 @@
   "nation": "US",
   "wikidata": "Q96404037",
   "source": "https://en.wikipedia.org/wiki/SS_Cynthia_Olson"
+ },
+ "ship-ss-donau-1929": {
+  "name": "SS Donau",
+  "kind": "cargo ship and troop transport",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Donau_(1929)"
  },
  "ship-ss-emidio": {
   "name": "SS Emidio",
@@ -1739,6 +1890,13 @@
    "USCGC Shoshone"
   ],
   "note": "Wikipedia redirects HMS Landguard (Y56) to her original U.S. Coast Guard name."
+ },
+ "ship-uss-albacore-ss-218": {
+  "name": "USS Albacore (SS-218)",
+  "kind": "US Navy Gato class submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Albacore_(SS-218)"
  },
  "ship-uss-archerfish-ss-311": {
   "name": "USS Archerfish (SS-311)",
@@ -1942,6 +2100,13 @@
   "nation": "US",
   "wikidata": "Q4052235",
   "source": "https://en.wikipedia.org/wiki/USS_Hull_(DD-350)"
+ },
+ "ship-uss-independence-cvl-22": {
+  "name": "USS Independence (CVL-22)",
+  "kind": "US Navy light aircraft carrier",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Independence_(CVL-22)"
  },
  "ship-uss-intrepid-cv-11": {
   "name": "USS Intrepid (CV-11)",
@@ -2187,6 +2352,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/USS_Renshaw_(DD-499)",
   "wikidata": "Q7873394"
+ },
+ "ship-uss-renville": {
+  "name": "USS Renville (APA-227)",
+  "kind": "attack transport",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Renville"
  },
  "ship-uss-reuben-james-dd-245": {
   "name": "USS Reuben James (DD-245)",

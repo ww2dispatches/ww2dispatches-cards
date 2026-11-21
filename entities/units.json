@@ -229,6 +229,13 @@
   "source": "https://en.wikipedia.org/wiki/1st_Armoured_Division_(United_Kingdom)",
   "wikidata": "Q110886184"
  },
+ "unit-1st-belorussian-front": {
+  "name": "1st Belorussian Front",
+  "kind": "army group",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1st_Belorussian_Front"
+ },
  "unit-1st-canadian-division": {
   "name": "1st Canadian Division",
   "kind": "Canadian Army infantry division",
@@ -353,6 +360,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/29th_Infantry_Division_(United_States)",
   "wikidata": "Q2715528"
+ },
+ "unit-2nd-alpine-division-tridentina": {
+  "name": "2nd Alpine Division Tridentina",
+  "kind": "mountain division",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/2nd_Alpine_Division_%22Tridentina%22"
  },
  "unit-2nd-armored-division-france": {
   "name": "French 2nd Armored Division",
@@ -691,6 +705,13 @@
   "source": "https://en.wikipedia.org/wiki/4th_Armored_Division_(United_States)",
   "wikidata": "Q4639180"
  },
+ "unit-4th-infantry-division-india": {
+  "name": "4th Indian Infantry Division",
+  "kind": "infantry division",
+  "nation": "India",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/4th_Infantry_Division_(India)"
+ },
  "unit-4th-panzer-army": {
   "name": "4th Panzer Group",
   "kind": "German panzer army",
@@ -714,6 +735,20 @@
   "nation": "United States",
   "source": "https://en.wikipedia.org/wiki/509th_Infantry_Regiment",
   "wikidata": "Q4639851"
+ },
+ "unit-55th-division-imperial-japanese-army": {
+  "name": "55th Division",
+  "kind": "Imperial Japanese Army infantry division",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/55th_Division_(Imperial_Japanese_Army)"
+ },
+ "unit-55th-infantry-division-savona": {
+  "name": "55th Infantry Division Savona",
+  "kind": "infantry division",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/55th_Infantry_Division_%22Savona%22"
  },
  "unit-5th-infantry-division-india": {
   "name": "5th Infantry Division (India)",
@@ -1254,6 +1289,13 @@
   "source": "https://en.wikipedia.org/wiki/First_Canadian_Army",
   "wikidata": "Q2703916"
  },
+ "unit-first-polish-army-1944-1945": {
+  "name": "First Polish Army",
+  "kind": "field army",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/First_Polish_Army_(1944%E2%80%931945)"
+ },
  "unit-flying-tigers": {
   "name": "Flying Tigers",
   "kind": "American Volunteer Group fighter unit in Chinese service",
@@ -1356,6 +1398,17 @@
    "Hitlerjugend"
   ]
  },
+ "unit-home-army": {
+  "name": "Home Army",
+  "kind": "Polish underground army",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Home_Army",
+  "aka": [
+   "Armia Krajowa",
+   "AK"
+  ]
+ },
  "unit-home-guard-united-kingdom": {
   "name": "Home Guard",
   "kind": "British volunteer defence force",
@@ -1369,6 +1422,13 @@
   "nation": "Japan",
   "source": "https://en.wikipedia.org/wiki/Home_Ministry",
   "wikidata": "Q1142265"
+ },
+ "unit-imperial-airways": {
+  "name": "Imperial Airways",
+  "kind": "British airline",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Imperial_Airways"
  },
  "unit-international-civil-aviation-organization": {
   "name": "International Civil Aviation Organization",
@@ -1450,6 +1510,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q1421194",
   "source": "https://en.wikipedia.org/wiki/Kalinin_Front"
+ },
+ "unit-kampfgeschwader-53": {
+  "name": "Kampfgeschwader 53",
+  "kind": "Luftwaffe bomber wing",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kampfgeschwader_53"
  },
  "unit-kanoya-air-group": {
   "name": "Kanoya Air Group",
@@ -1797,6 +1864,16 @@
   "wikidata": "Q7079326",
   "source": "https://en.wikipedia.org/wiki/Office_of_War_Mobilization"
  },
+ "unit-oslogjengen": {
+  "name": "Oslo Gang",
+  "kind": "resistance sabotage group",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Oslogjengen",
+  "aka": [
+   "Oslogjengen"
+  ]
+ },
  "unit-panfilov-s-twenty-eight-guardsmen": {
   "name": "Panfilov's 28",
   "kind": "legendary Soviet guardsmen",
@@ -1864,6 +1941,13 @@
   "source": "https://en.wikipedia.org/wiki/Queen's_Own_Royal_West_Kent_Regiment",
   "wikidata": "Q7270049"
  },
+ "unit-radio-belgique": {
+  "name": "Radio Belgique",
+  "kind": "Belgian government in exile broadcasting service on the BBC",
+  "nation": "Belgium",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Radio_Belgique"
+ },
  "unit-raf-bomber-command": {
   "name": "RAF Bomber Command",
   "kind": "RAF bomber command",
@@ -1893,6 +1977,13 @@
   "aka": [
    "RSHA"
   ]
+ },
+ "unit-reichsbank": {
+  "name": "Reichsbank",
+  "kind": "German central bank",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Reichsbank"
  },
  "unit-rifle-brigade-the-prince-consort-s-own": {
   "name": "Rifle Brigade",
@@ -1975,6 +2066,16 @@
   "nation": "US",
   "wikidata": "Q1750391",
   "source": "https://en.wikipedia.org/wiki/Selective_Service_System"
+ },
+ "unit-seventeenth-army-japan": {
+  "name": "Seventeenth Army (Japan)",
+  "kind": "Imperial Japanese Army field army",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Seventeenth_Army_(Japan)",
+  "aka": [
+   "17th Army"
+  ]
  },
  "unit-seventh-air-force": {
   "name": "Seventh Air Force",
@@ -2195,6 +2296,17 @@
   "source": "https://en.wikipedia.org/wiki/VII_Corps_(United_States)",
   "wikidata": "Q1515278"
  },
+ "unit-vmfa-121": {
+  "name": "VMFA-121",
+  "kind": "U.S. Marine Corps fighter squadron (VMF-121 in World War II)",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/VMFA-121",
+  "aka": [
+   "VMF-121",
+   "Marine Fighting Squadron 121"
+  ]
+ },
  "unit-vmfa-211": {
   "name": "VMF-211",
   "kind": "U.S. Marine Corps fighter squadron",
@@ -2318,6 +2430,13 @@
    "International Bank for Reconstruction and Development",
    "IBRD"
   ]
+ },
+ "unit-x-corps-united-kingdom": {
+  "name": "X Corps",
+  "kind": "army corps",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/X_Corps_(United_Kingdom)"
  },
  "unit-xii-corps-united-states": {
   "name": "XII Corps",

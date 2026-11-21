@@ -33,6 +33,13 @@
   "source": "https://en.wikipedia.org/wiki/1941_October_Revolution_Parade",
   "wikidata": "Q2893329"
  },
+ "op-1942-rio-de-janeiro-conference": {
+  "name": "1942 Rio de Janeiro Conference",
+  "kind": "Third Meeting of the Foreign Ministers of the American Republics",
+  "nation": "Brazil",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1942_Rio_de_Janeiro_Conference"
+ },
  "op-1942-rose-bowl": {
   "name": "1942 Rose Bowl",
   "kind": "college football game moved to Durham",
@@ -205,6 +212,13 @@
   "nation": "Poland",
   "wikidata": "Q123700076",
   "source": "https://en.wikipedia.org/wiki/Auschwitz_Sonderkommando_revolt"
+ },
+ "op-australian-home-front-during-world-war-ii": {
+  "name": "Australian home front during World War II",
+  "kind": "home front",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Australian_home_front_during_World_War_II"
  },
  "op-axis-powers-negotiations-on-the-division-of-asia": {
   "name": "Axis powers negotiations on the division of Asia",
@@ -388,6 +402,13 @@
   "wikidata": "Q4871375",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Kampar"
  },
+ "op-battle-of-ko-chang": {
+  "name": "Battle of Ko Chang",
+  "kind": "naval battle",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Ko_Chang"
+ },
  "op-battle-of-kota-bharu": {
   "name": "Battle of Kota Bharu",
   "kind": "battle",
@@ -495,6 +516,13 @@
   "wikidata": "Q701180",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Nanking"
  },
+ "op-battle-of-nikolayevka": {
+  "name": "Battle of Nikolayevka",
+  "kind": "battle",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Nikolayevka"
+ },
  "op-battle-of-ormoc-bay": {
   "name": "Battle of Ormoc Bay",
   "kind": "naval and air battles off Leyte, 1944",
@@ -522,6 +550,13 @@
   "nation": "Finland",
   "wikidata": "Q2446643",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Raate_Road"
+ },
+ "op-battle-of-rapido-river": {
+  "name": "Battle of Rapido River",
+  "kind": "failed river crossing on the Gustav Line",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Rapido_River"
  },
  "op-battle-of-rostov-1941": {
   "name": "Battle of Rostov (1941)",
@@ -808,6 +843,13 @@
   "wikidata": "Q17510984",
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Rangoon_in_World_War_II"
  },
+ "op-bombing-of-sandhurst-road-school": {
+  "name": "Bombing of Sandhurst Road School",
+  "kind": "air raid on a London school",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Sandhurst_Road_School"
+ },
  "op-bombing-of-singapore-1941": {
   "name": "Bombing of Singapore (1941)",
   "kind": "air raid",
@@ -855,12 +897,29 @@
   "wikidata": "Q15986363",
   "source": "https://en.wikipedia.org/wiki/Burma_campaign_(1944%E2%80%931945)"
  },
+ "op-burma-railway": {
+  "name": "Burma Railway",
+  "kind": "Japanese forced labor railway between Thailand and Burma",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Burma_Railway",
+  "aka": [
+   "Death Railway"
+  ]
+ },
  "op-cairo-conference": {
   "name": "Cairo Conference",
   "kind": "conference",
   "nation": "US",
   "wikidata": "Q696894",
   "source": "https://en.wikipedia.org/wiki/Cairo_Conference"
+ },
+ "op-california-alien-land-law-of-1913": {
+  "name": "California Alien Land Law of 1913",
+  "kind": "state law",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/California_Alien_Land_Law_of_1913"
  },
  "op-capture-of-kufra": {
   "name": "Capture of Kufra",
@@ -983,6 +1042,13 @@
   "wikidata": "Q5166625",
   "source": "https://en.wikipedia.org/wiki/Convoy_HX_90"
  },
+ "op-convoy-pq-8": {
+  "name": "Convoy PQ 8",
+  "kind": "Arctic convoy",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Convoy_PQ_8"
+ },
  "op-coventry-blitz": {
   "name": "Coventry Blitz",
   "kind": "German bombing raid",
@@ -1090,6 +1156,13 @@
   "wikidata": "Q713516",
   "source": "https://en.wikipedia.org/wiki/Doolittle_Raid"
  },
+ "op-east-african-campaign-world-war-ii": {
+  "name": "East African campaign (World War II)",
+  "kind": "campaign",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/East_African_campaign_(World_War_II)"
+ },
  "op-east-prussian-offensive": {
   "name": "East Prussian offensive",
   "kind": "offensive",
@@ -1110,6 +1183,13 @@
   "nation": "US",
   "wikidata": "Q5419187",
   "source": "https://en.wikipedia.org/wiki/Ex_parte_Endo"
+ },
+ "op-extraterritoriality-of-princess-margriet-s-birth": {
+  "name": "Extraterritoriality of Princess Margriet's birth",
+  "kind": "Canadian wartime legal measure",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Extraterritoriality_of_Princess_Margriet%27s_birth"
  },
  "op-fireside-chats": {
   "name": "Fireside chats",
@@ -1156,6 +1236,13 @@
    "Four Freedoms speech"
   ]
  },
+ "op-fourth-inauguration-of-franklin-d-roosevelt": {
+  "name": "Fourth inauguration of Franklin D. Roosevelt",
+  "kind": "presidential inauguration",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fourth_inauguration_of_Franklin_D._Roosevelt"
+ },
  "op-franco-german-declaration": {
   "name": "Franco-German Declaration",
   "kind": "treaty, 6 December 1938",
@@ -1173,6 +1260,13 @@
    "Mussolini-Laval Accord",
    "Rome Accords"
   ]
+ },
+ "op-franco-thai-war": {
+  "name": "Franco-Thai War",
+  "kind": "war",
+  "nation": "Thailand",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Franco-Thai_War"
  },
  "op-genocide-convention": {
   "name": "Genocide Convention",
@@ -1337,6 +1431,17 @@
   "wikidata": "Q16849587",
   "source": "https://en.wikipedia.org/wiki/Japanese_invasion_of_Aparri"
  },
+ "op-japanese-invasion-of-burma": {
+  "name": "Japanese invasion of Burma",
+  "kind": "campaign",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_invasion_of_Burma",
+  "aka": [
+   "Japanese conquest of Burma",
+   "Burma campaign 1941 to 1942"
+  ]
+ },
  "op-japanese-invasion-of-legazpi": {
   "name": "Japanese invasion of Legazpi",
   "kind": "amphibious landing",
@@ -1360,6 +1465,13 @@
   "aka": [
    "Manchurian Incident"
   ]
+ },
+ "op-japanese-occupation-of-british-borneo": {
+  "name": "Japanese occupation of British Borneo",
+  "kind": "occupation",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_occupation_of_British_Borneo"
  },
  "op-jinzhou-operation": {
   "name": "Jinzhou Operation",
@@ -1444,6 +1556,13 @@
   "wikidata": "Q24307",
   "source": "https://en.wikipedia.org/wiki/Korematsu_v._United_States"
  },
+ "op-krasnoye-selo-ropsha-offensive": {
+  "name": "Krasnoye Selo and Ropsha offensive",
+  "kind": "Soviet offensive from Oranienbaum and Pulkovo, January 1944",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Krasnoye_Selo%E2%80%93Ropsha_offensive"
+ },
  "op-kristallnacht": {
   "name": "Kristallnacht",
   "kind": "anti Jewish pogrom",
@@ -1505,6 +1624,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Lend-Lease",
   "wikidata": "Q207637"
+ },
+ "op-leningrad-novgorod-offensive": {
+  "name": "Leningrad and Novgorod offensive",
+  "kind": "Soviet strategic offensive, January to March 1944",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Leningrad%E2%80%93Novgorod_offensive"
  },
  "op-liberation-of-paris": {
   "name": "Liberation of Paris",
@@ -1861,6 +1987,13 @@
   "wikidata": "Q1766984",
   "source": "https://en.wikipedia.org/wiki/Operation_Crossbow"
  },
+ "op-operation-crossroads": {
+  "name": "Operation Crossroads",
+  "kind": "US atomic bomb tests at Bikini Atoll, 1946",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Crossroads"
+ },
  "op-operation-crusader": {
   "name": "Operation Crusader",
   "kind": "offensive",
@@ -1985,6 +2118,13 @@
   "wikidata": "Q42886508",
   "source": "https://en.wikipedia.org/wiki/Operation_Oyster"
  },
+ "op-operation-postmaster": {
+  "name": "Operation Postmaster",
+  "kind": "SOE cutting out raid at Fernando Po, January 1942",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Postmaster"
+ },
  "op-operation-queen": {
   "name": "Operation Queen",
   "kind": "Allied offensive",
@@ -2059,6 +2199,13 @@
   "wikidata": "Q562797",
   "source": "https://en.wikipedia.org/wiki/Ostrogozhsk%E2%80%93Rossosh_offensive"
  },
+ "op-oyama-v-california": {
+  "name": "Oyama v. California",
+  "kind": "U.S. Supreme Court case",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Oyama_v._California"
+ },
  "op-palawan-massacre": {
   "name": "Palawan massacre",
   "kind": "massacre of American prisoners of war",
@@ -2079,6 +2226,13 @@
   "nation": "worldwide",
   "wikidata": "Q190882",
   "source": "https://en.wikipedia.org/wiki/Phoney_War"
+ },
+ "op-pingjin-campaign": {
+  "name": "Pingjin campaign",
+  "kind": "Chinese Civil War campaign, 1948 to 1949",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Pingjin_campaign"
  },
  "op-pohl-trial": {
   "name": "Pohl trial",
@@ -2204,6 +2358,13 @@
   "source": "https://en.wikipedia.org/wiki/Renunciation_Act_of_1944",
   "wikidata": "Q16204751"
  },
+ "op-renville-agreement": {
+  "name": "Renville Agreement",
+  "kind": "truce agreement",
+  "nation": "Indonesia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Renville_Agreement"
+ },
  "op-retreat-of-the-government-of-the-republic-of-china-to-taiwan": {
   "name": "Retreat of the government of the Republic of China to Taiwan",
   "kind": "Nationalist evacuation to Taiwan, 1949",
@@ -2308,12 +2469,29 @@
    "Operation Paukenschlag"
   ]
  },
+ "op-second-inauguration-of-harry-s-truman": {
+  "name": "Second inauguration of Harry S. Truman",
+  "kind": "presidential inauguration",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Second_inauguration_of_Harry_S._Truman"
+ },
  "op-second-italo-ethiopian-war": {
   "name": "Second Italo-Ethiopian War",
   "kind": "war",
   "nation": "Italy",
   "wikidata": "Q94916",
   "source": "https://en.wikipedia.org/wiki/Second_Italo-Ethiopian_War"
+ },
+ "op-second-london-naval-treaty": {
+  "name": "Second London Naval Treaty",
+  "kind": "naval arms limitation conference and treaty, 1935 to 1936",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Second_London_Naval_Treaty",
+  "aka": [
+   "London Naval Conference 1935"
+  ]
  },
  "op-second-sino-japanese-war": {
   "name": "Second Sino-Japanese War",
@@ -2356,6 +2534,16 @@
   "nation": "US",
   "wikidata": "Q708181",
   "source": "https://en.wikipedia.org/wiki/Siege_of_Bastogne"
+ },
+ "op-siege-of-breslau": {
+  "name": "Siege of Breslau",
+  "kind": "siege",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Siege_of_Breslau",
+  "aka": [
+   "Festung Breslau"
+  ]
  },
  "op-siege-of-budapest": {
   "name": "Siege of Budapest",
@@ -2540,6 +2728,13 @@
   "source": "https://en.wikipedia.org/wiki/This_Is_the_Army_(musical)",
   "wikidata": "Q104792049"
  },
+ "op-tianjin-campaign": {
+  "name": "Tianjin campaign",
+  "kind": "Chinese Civil War battle, January 1949",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tianjin_campaign"
+ },
  "op-tikhvin-offensive": {
   "name": "Tikhvin Offensive",
   "kind": "Soviet counteroffensive",
@@ -2570,6 +2765,13 @@
   "nation": "Britain",
   "wikidata": "Q7839974",
   "source": "https://en.wikipedia.org/wiki/Trial_of_Erich_von_Manstein"
+ },
+ "op-trial-of-the-sixteen": {
+  "name": "Trial of the Sixteen",
+  "kind": "Soviet show trial of Polish underground leaders",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Trial_of_the_Sixteen"
  },
  "op-tripartite-pact": {
   "name": "Tripartite Pact",
@@ -2660,6 +2862,13 @@
   "wikidata": "Q2049158",
   "source": "https://en.wikipedia.org/wiki/USS_Panay_incident"
  },
+ "op-v-sign": {
+  "name": "V sign",
+  "kind": "V for Victory sign and campaign",
+  "nation": "Belgium",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/V_sign"
+ },
  "op-venona-project": {
   "name": "Venona project",
   "kind": "U.S. codebreaking program",
@@ -2694,6 +2903,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q159065",
   "source": "https://en.wikipedia.org/wiki/Vistula%E2%80%93Oder_offensive"
+ },
+ "op-wannsee-conference": {
+  "name": "Wannsee Conference",
+  "kind": "meeting to coordinate the Final Solution",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Wannsee_Conference"
  },
  "op-war-brides-act": {
   "name": "War Brides Act",

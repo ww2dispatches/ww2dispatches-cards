@@ -220,6 +220,15 @@
   "lat": 52.7589,
   "lon": 9.9071
  },
+ "place-berghof-residence": {
+  "name": "Berghof",
+  "kind": "Hitler's residence near Berchtesgaden",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Berghof_(residence)",
+  "lat": null,
+  "lon": null
+ },
  "place-berlin": {
   "name": "Berlin",
   "kind": "capital of Germany",
@@ -282,6 +291,18 @@
   "wikidata": "Q1062910",
   "lat": 48.2111,
   "lon": 6.8047
+ },
+ "place-bioko": {
+  "name": "Bioko",
+  "kind": "island in the Gulf of Guinea, formerly Fernando Po",
+  "nation": "Spain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bioko",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Fernando Po"
+  ]
  },
  "place-birmingham": {
   "name": "Birmingham",
@@ -554,6 +575,15 @@
   "lat": 33.5992,
   "lon": -7.62
  },
+ "place-catford": {
+  "name": "Catford",
+  "kind": "district of south east London",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Catford",
+  "lat": null,
+  "lon": null
+ },
  "place-cavite-city": {
   "name": "Cavite",
   "kind": "city",
@@ -677,6 +707,15 @@
   "lat": null,
   "lon": null
  },
+ "place-church-house-westminster": {
+  "name": "Church House, Westminster",
+  "kind": "building",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Church_House,_Westminster",
+  "lat": null,
+  "lon": null
+ },
  "place-clark-air-base": {
   "name": "Clark Field",
   "kind": "airfield",
@@ -793,6 +832,27 @@
   "wikidata": "Q151198",
   "lat": 48.2699,
   "lon": 11.4683
+ },
+ "place-darwin-northern-territory": {
+  "name": "Darwin, Northern Territory",
+  "kind": "city and harbor",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Darwin,_Northern_Territory",
+  "lat": null,
+  "lon": null
+ },
+ "place-dawei-myanmar": {
+  "name": "Dawei",
+  "kind": "town and airfield in southern Burma",
+  "nation": "Burma",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Dawei,_Myanmar",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Tavoy"
+  ]
  },
  "place-dawson-creek": {
   "name": "Dawson Creek",
@@ -1272,6 +1332,18 @@
   "lat": 20.0334,
   "lon": 110.324
  },
+ "place-halfaya-pass": {
+  "name": "Halfaya Pass",
+  "kind": "mountain pass",
+  "nation": "Egypt",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Halfaya_Pass",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Hellfire Pass"
+  ]
+ },
  "place-halifax-nova-scotia": {
   "name": "Halifax, Nova Scotia",
   "kind": "port city and convoy assembly point",
@@ -1464,6 +1536,15 @@
   "wikidata": "Q13989",
   "lat": 36.0,
   "lon": 138.0
+ },
+ "place-hornsey": {
+  "name": "Hornsey",
+  "kind": "district of north London",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hornsey",
+  "lat": null,
+  "lon": null
  },
  "place-houffalize": {
   "name": "Houffalize",
@@ -1682,6 +1763,15 @@
   "aka": [
    "Kaneohe"
   ]
+ },
+ "place-kassala": {
+  "name": "Kassala",
+  "kind": "town in eastern Sudan",
+  "nation": "Sudan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kassala",
+  "lat": null,
+  "lon": null
  },
  "place-kaysersberg": {
   "name": "Kaysersberg",
@@ -1952,6 +2042,15 @@
   "lat": 48.1953,
   "lon": 6.8539
  },
+ "place-la-pallice": {
+  "name": "La Pallice",
+  "kind": "port and U-boat base at La Rochelle",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/La_Pallice",
+  "lat": null,
+  "lon": null
+ },
  "place-lake-ladoga": {
   "name": "Lake Ladoga",
   "kind": "lake",
@@ -2066,6 +2165,18 @@
   "source": "https://en.wikipedia.org/wiki/Loch_Ewe",
   "lat": 57.8369,
   "lon": -5.6122
+ },
+ "place-lodz-ghetto": {
+  "name": "Łódź Ghetto",
+  "kind": "Nazi ghetto in occupied Poland",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/%C5%81%C3%B3d%C5%BA_Ghetto",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Litzmannstadt Ghetto"
+  ]
  },
  "place-lofoten": {
   "name": "Lofoten",
@@ -2258,6 +2369,18 @@
   "source": "https://en.wikipedia.org/wiki/Mauthausen_concentration_camp",
   "lat": 48.2575,
   "lon": 14.5004
+ },
+ "place-mawlamyine": {
+  "name": "Mawlamyine",
+  "kind": "port city in Burma",
+  "nation": "Burma",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mawlamyine",
+  "aka": [
+   "Moulmein"
+  ],
+  "lat": null,
+  "lon": null
  },
  "place-mayflower-hotel": {
   "name": "Mayflower Hotel",
@@ -2498,6 +2621,15 @@
    "Moyeuvre"
   ]
  },
+ "place-mozhaysk": {
+  "name": "Mozhaysk",
+  "kind": "town west of Moscow",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mozhaysk",
+  "lat": null,
+  "lon": null
+ },
  "place-munich": {
   "name": "Munich",
   "kind": "city",
@@ -2619,6 +2751,18 @@
   "source": "https://en.wikipedia.org/wiki/New_Jerusalem_Monastery",
   "lat": 55.9217,
   "lon": 36.8453
+ },
+ "place-new-swabia": {
+  "name": "New Swabia",
+  "kind": "German claimed Antarctic sector, 1939",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/New_Swabia",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Neu-Schwabenland"
+  ]
  },
  "place-new-york-city": {
   "name": "New York City",
@@ -2811,6 +2955,15 @@
   "source": "https://en.wikipedia.org/wiki/Oschersleben",
   "lat": 52.0167,
   "lon": 11.25
+ },
+ "place-ottawa-civic-hospital": {
+  "name": "Ottawa Civic Hospital",
+  "kind": "hospital",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ottawa_Civic_Hospital",
+  "lat": null,
+  "lon": null
  },
  "place-pagan-island": {
   "name": "Pagan",
@@ -3106,6 +3259,15 @@
   "lat": 48.8628,
   "lon": 2.31
  },
+ "place-queen-maud-land": {
+  "name": "Queen Maud Land",
+  "kind": "Norwegian Antarctic territory",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Queen_Maud_Land",
+  "lat": null,
+  "lon": null
+ },
  "place-rabaul": {
   "name": "Rabaul",
   "kind": "town and Japanese base",
@@ -3330,6 +3492,15 @@
   "lat": 46.85,
   "lon": -56.3
  },
+ "place-saint-valery-en-caux": {
+  "name": "Saint-Valery-en-Caux",
+  "kind": "town",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Saint-Valery-en-Caux",
+  "lat": null,
+  "lon": null
+ },
  "place-saipan-northern-mariana-islands": {
   "name": "Saipan",
   "kind": "island",
@@ -3383,6 +3554,15 @@
   "source": "https://en.wikipedia.org/wiki/San_Pietro_Infine",
   "lat": 41.4469,
   "lon": 13.9625
+ },
+ "place-sandakan": {
+  "name": "Sandakan",
+  "kind": "capital of British North Borneo",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sandakan",
+  "lat": null,
+  "lon": null
  },
  "place-santa-cruz-islands": {
   "name": "Santa Cruz Islands",
@@ -3652,6 +3832,15 @@
   "lat": 48.4804,
   "lon": 11.9405
  },
+ "place-stalag-viii-a": {
+  "name": "Stalag VIII-A",
+  "kind": "German prisoner of war camp at Gorlitz",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Stalag_VIII-A",
+  "lat": null,
+  "lon": null
+ },
  "place-stanley-internment-camp": {
   "name": "Stanley Internment Camp",
   "kind": "civilian internment camp",
@@ -3822,6 +4011,27 @@
   "wikidata": "Q3059075",
   "lat": 51.5,
   "lon": 0.5833
+ },
+ "place-the-pentagon": {
+  "name": "The Pentagon",
+  "kind": "headquarters building of the War Department, Arlington, Virginia",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/The_Pentagon",
+  "lat": null,
+  "lon": null
+ },
+ "place-tianjin": {
+  "name": "Tianjin",
+  "kind": "port city in north China",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tianjin",
+  "aka": [
+   "Tientsin"
+  ],
+  "lat": null,
+  "lon": null
  },
  "place-tikhvin": {
   "name": "Tikhvin",
@@ -4139,6 +4349,15 @@
   "wikidata": "Q995678",
   "lat": 32.8886,
   "lon": -84.68
+ },
+ "place-warsaw": {
+  "name": "Warsaw",
+  "kind": "city",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Warsaw",
+  "lat": null,
+  "lon": null
  },
  "place-warsaw-ghetto": {
   "name": "Warsaw Ghetto",
