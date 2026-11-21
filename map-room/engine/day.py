@@ -15,6 +15,7 @@ ALLIED = {'us', 'britain', 'soviet'}
 B = TPL['beats']
 
 def table_file(campaign, view=None, test=False):
+    if os.environ.get('MAPROOM_TABLE'): return os.environ['MAPROOM_TABLE']      # format 2: the day's focus framing, made by series.py
     # test records without a campaign use the 19 Nov sketch framing; with one, the series framings
     if test and not campaign: return os.path.join(ROOT, 'test', 'table.json')
     return os.path.join(ROOT, 'series', str(campaign), f'table-{view}.json' if view else 'table.json')

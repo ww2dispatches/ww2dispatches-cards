@@ -120,7 +120,7 @@ def text_mask(text, xy, height=0.36, angle=-4, frac=1.0):
 class Clip:
     def __init__(self, day_path, work):
         self.d = D.Day(day_path); self.work = work; d = self.d
-        vname = d.view or 'main'; vdir = os.path.join(work, 'views', vname)
+        vname = os.environ.get('MAPROOM_VNAME') or d.view or 'main'; vdir = os.path.join(work, 'views', vname)
         self.plate = rd(os.path.join(vdir, 'plate.png'))[..., :3]; platepad = rd(os.path.join(vdir, 'platepad.png'))
         self.spr = {}
         for p in d.pieces:

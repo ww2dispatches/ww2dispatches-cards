@@ -18,7 +18,7 @@ def scene(mode, spec, out, samples, mapimg):
 
 def view_assets(d, table, vname, work, samples):
     vdir = os.path.join(work, 'views', vname); os.makedirs(vdir, exist_ok=True)
-    traced = os.path.join(HERE, '..', 'series', str(d.rec.get('campaign')), 'maps', f'{vname}.png')
+    traced = os.environ.get('MAPROOM_MAPIMG') or os.path.join(HERE, '..', 'series', str(d.rec.get('campaign')), 'maps', f'{vname}.png')
     mapimg = traced if os.path.exists(traced) else os.path.join(vdir, 'map-placeholder.png')
     if mapimg.endswith('placeholder.png') and not os.path.exists(mapimg):
         run([sys.executable, os.path.join(HERE, 'placeholder_map.py'), table.path, mapimg])
@@ -33,12 +33,14 @@ def view_assets(d, table, vname, work, samples):
 
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument('day'); ap.add_argument('work'); ap.add_argument('out')
-    ap.add_argument('--samples', type=int, default=128); ap.add_argument('--photo'); ap.add_argument('--stills'); ap.add_argument('--silent', action='store_true')
+    ap.add_argument('--samples', type=int, default=128); ap.add_argument('--photo'); ap.add_argument('--stills'); ap.add_argument('--silent', action='store_true'); ap.add_argument('--assets-only', action='store_true'); ap.add_argument('--no-check', action='store_true')
     a = ap.parse_args(); work = os.path.abspath(a.work); os.makedirs(work, exist_ok=True)
-    r = subprocess.run([sys.executable, os.path.join(HERE, 'check_record.py'), a.day], capture_output=True, text=True); print(r.stdout.strip())
+    r = subprocess.run([sys.executable, os.path.join(HERE, 'check_record.py'), a.day], capture_output=True, text=True)
+    if a.no_check: r.returncode = 0          # format 2: check_series.py has already passed the series
+    else: print(r.stdout.strip())
     if r.returncode and not (os.environ.get('MAPROOM_FORCE') and '/test/' in os.path.abspath(a.day)):
         raise SystemExit('the record fails the check; fix it first')   # MAPROOM_FORCE renders a failing test record anyway
-    d = D.Day(a.day); vname = d.view or 'main'
+    d = D.Day(a.day); vname = os.environ.get('MAPROOM_VNAME') or d.view or 'main'
     vdir, mapimg = view_assets(d, d.table, vname, work, a.samples)
     if d.view: view_assets(d, d.main, 'main', work, a.samples)
     # faces
@@ -65,6 +67,7 @@ def main():
     ov = os.path.join(work, 'ov', os.path.splitext(os.path.basename(a.day))[0])
     cmd = [sys.executable, os.path.join(HERE, 'ov_shoot.py'), a.day, ov] + ([a.photo] if a.photo else [])
     run(cmd, {'MAPROOM_STAMP': os.environ.get('MAPROOM_STAMP', 'TEST' if d.test or 'map-placeholder' in mapimg else '')})
+    if a.assets_only: print('assets done'); return
     # composite
     out = os.path.abspath(a.out)
     if a.stills: run([sys.executable, os.path.join(HERE, 'clip.py'), a.day, work, out, a.stills]); print('stills done'); return

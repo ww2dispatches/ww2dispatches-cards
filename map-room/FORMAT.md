@@ -1,6 +1,6 @@
 # The Map Room: format 2 (balcony and focus)
 
-**Status, 20 Nov 2026:** draft for Brian's approval. It replaces the fixed views format of the same morning. The proof clip (`tools/proof/proof_zoom.py`, `test/proof-zoom-*.json`) shows the look. The engine and the checker are being rebuilt to this document, so `check_record.py` still enforces the old format until that lands. The Campaign Series chat should not write `mapRoom` blocks until this status line says the checker is ready.
+**Status, 20 Nov 2026:** approved by Brian and built. The checker (`engine/check_series.py`), the engine (`engine/render_series.py`) and the overlay tool (`tools/trace/overlay.py`) all work to this document; `test/series-proof/` is a two day test series. The old fixed views format and its tools (`check_record.py`, `render_day.py` used alone) are retired. Still to do: the blind second read (part 3 of the fact check) is a procedure, not yet a tool; days without a move are not rendered yet; aircraft moves are untested in the new engine.
 
 ## The idea
 A real map room has a huge table. From the balcony you see every block on it, spread out, but you cannot read them. You only read a block when you come down and stand over it. The clip does the same:
@@ -66,7 +66,7 @@ A roster of 15 to 25 units suits a land battle of this size. Divisions are the n
 |---|---|
 | `asOf` | The moment the night table shows. |
 | `map` | That day's situation map. It must be one listed in `series.json`. |
-| `line` | The front at the end of the day, as `[lon, lat]` points from the **north edge of the map to the south edge**, German ground on the left as you walk it. It must reach both edges: the front does not stop where the story stops. Day 1 also gives `lineStart`, the front before the battle. |
+| `line` | The front at the end of the day, as `[lon, lat]` points from the **north edge of the map to the south edge**, German ground on the left as you walk it. It must reach both edges: the front does not stop where the story stops. Day 1 also gives `lineStart`, the front before the battle (and `pocketsStart` if a unit is already surrounded). |
 | `lineSources` | Two or more. One must be the day's situation map. |
 | `pockets` | Optional. Ground held inside the other side's area at night: `{"side": "allied", "ring": [...]}`. No ring is drawn around a surrounded block; the line going around it on the day it happens tells that story. |
 | `moves` | What the rake does, in `order`. One to three a day. All of a day's moves must fit in one focus (about 60 km across); a day with action in two far places picks one. |
@@ -109,6 +109,14 @@ Nothing is rendered until every day passes all three parts. The Map Room chat ru
 Where the situation map and Cole disagree about a position, follow Cole for where a unit went and say so in the sources. The situation maps were drawn at noon from reports that could be a day old.
 
 Each day's result is written to `verify/day-NN.json`: passed or not, what was compared, and anything sent back.
+
+## Commands
+```
+python3 map-room/engine/check_series.py <series folder>                       # part 1 of the fact check, the whole series
+python3 map-room/tools/trace/overlay.py <series folder> <day number> <out>    # part 2, the overlay sheet for one day
+python3 map-room/engine/render_series.py <series folder> <work dir> <out dir> [--days 11,12]
+```
+A series folder holds the `day-NN.json` records. The roster is `map-room/series/<campaign>/units.json`.
 
 ## What the Campaign Series chat does in the build sitting
 1. Write `units.json` for the series.

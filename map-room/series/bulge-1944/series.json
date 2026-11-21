@@ -1,0 +1,177 @@
+{
+ "_note": "Series settings, format 2. maps: the HQ Twelfth Army Group situation maps at the Library of Congress, one per day (item numbers follow the date; 25, 26 and 27 Dec confirmed, the rest are confirmed when first used). georef lines a scan up with real coordinates (full scan pixels); tools/trace/register.py fills it in.",
+ "name": "The Bulge",
+ "days": 30,
+ "blockKm": 10,
+ "balcony": {
+  "center": [
+   5.66,
+   49.98
+  ],
+  "widthKm": 134
+ },
+ "maps": {
+  "1944-12-16": {
+   "label": "LOC 12th Army Group situation map, 16 Dec 1944",
+   "item": "2004630288",
+   "iiif": "service:gmd:gmd5:g5701:g5701s:ict21195"
+  },
+  "1944-12-17": {
+   "label": "LOC 12th Army Group situation map, 17 Dec 1944",
+   "item": "2004630289",
+   "iiif": "service:gmd:gmd5:g5701:g5701s:ict21196"
+  },
+  "1944-12-18": {
+   "label": "LOC 12th Army Group situation map, 18 Dec 1944",
+   "item": "2004630290",
+   "iiif": "service:gmd:gmd5:g5701:g5701s:ict21197"
+  },
+  "1944-12-19": {
+   "label": "LOC 12th Army Group situation map, 19 Dec 1944",
+   "item": "2004630291",
+   "iiif": "service:gmd:gmd5:g5701:g5701s:ict21198"
+  },
+  "1944-12-20": {
+   "label": "LOC 12th Army Group situation map, 20 Dec 1944",
+   "item": "2004630292",
+   "iiif": "service:gmd:gmd5:g5701:g5701s:ict21199"
+  },
+  "1944-12-21": {
+   "label": "LOC 12th Army Group situation map, 21 Dec 1944",
+   "item": "2004630293",
+   "iiif": "service:gmd:gmd5:g5701:g5701s:ict21200"
+  },
+  "1944-12-22": {
+   "label": "LOC 12th Army Group situation map, 22 Dec 1944",
+   "item": "2004630294",
+   "iiif": "service:gmd:gmd5:g5701:g5701s:ict21201"
+  },
+  "1944-12-23": {
+   "label": "LOC 12th Army Group situation map, 23 Dec 1944",
+   "item": "2004630295",
+   "iiif": "service:gmd:gmd5:g5701:g5701s:ict21202"
+  },
+  "1944-12-24": {
+   "label": "LOC 12th Army Group situation map, 24 Dec 1944",
+   "item": "2004630296",
+   "iiif": "service:gmd:gmd5:g5701:g5701s:ict21203"
+  },
+  "1944-12-25": {
+   "label": "LOC 12th Army Group situation map, 25 Dec 1944",
+   "item": "2004630297",
+   "iiif": "service:gmd:gmd5:g5701:g5701s:ict21204",
+   "georef": {
+    "X6": 3713.0,
+    "Y50": 3017.0,
+    "PXKM": 12.09,
+    "by": "printed graticule, checked on towns"
+   }
+  },
+  "1944-12-26": {
+   "label": "LOC 12th Army Group situation map, 26 Dec 1944",
+   "item": "2004630298",
+   "iiif": "service:gmd:gmd5:g5701:g5701s:ict21205",
+   "georef": {
+    "X6": 3709.0,
+    "Y50": 2995.0,
+    "PXKM": 12.09,
+    "by": "matched to 1944-12-25 (6 patches, spread 18 px, 1.5 km)"
+   }
+  },
+  "1944-12-27": {
+   "label": "LOC 12th Army Group situation map, 27 Dec 1944",
+   "item": "2004630299",
+   "iiif": "service:gmd:gmd5:g5701:g5701s:ict21206"
+  },
+  "1944-12-28": {
+   "label": "LOC 12th Army Group situation map, 28 Dec 1944",
+   "item": "2004630300",
+   "iiif": "service:gmd:gmd5:g5701:g5701s:ict21207"
+  },
+  "1944-12-29": {
+   "label": "LOC 12th Army Group situation map, 29 Dec 1944",
+   "item": "2004630301",
+   "iiif": "service:gmd:gmd5:g5701:g5701s:ict21208"
+  },
+  "1944-12-30": {
+   "label": "LOC 12th Army Group situation map, 30 Dec 1944",
+   "item": "2004630302",
+   "iiif": "service:gmd:gmd5:g5701:g5701s:ict21209"
+  },
+  "1944-12-31": {
+   "label": "LOC 12th Army Group situation map, 31 Dec 1944",
+   "item": "2004630303",
+   "iiif": "service:gmd:gmd5:g5701:g5701s:ict21210"
+  },
+  "1945-01-01": {
+   "label": "LOC 12th Army Group situation map, 1 Jan 1945",
+   "item": "2004630304",
+   "iiif": "service:gmd:gmd5:g5701:g5701s:ict21211"
+  },
+  "1945-01-02": {
+   "label": "LOC 12th Army Group situation map, 2 Jan 1945",
+   "item": "2004630305",
+   "iiif": "service:gmd:gmd5:g5701:g5701s:ict21212"
+  },
+  "1945-01-03": {
+   "label": "LOC 12th Army Group situation map, 3 Jan 1945",
+   "item": "2004630306",
+   "iiif": "service:gmd:gmd5:g5701:g5701s:ict21213"
+  },
+  "1945-01-04": {
+   "label": "LOC 12th Army Group situation map, 4 Jan 1945",
+   "item": "2004630307",
+   "iiif": "service:gmd:gmd5:g5701:g5701s:ict21214"
+  },
+  "1945-01-05": {
+   "label": "LOC 12th Army Group situation map, 5 Jan 1945",
+   "item": "2004630308",
+   "iiif": "service:gmd:gmd5:g5701:g5701s:ict21215"
+  },
+  "1945-01-06": {
+   "label": "LOC 12th Army Group situation map, 6 Jan 1945",
+   "item": "2004630309",
+   "iiif": "service:gmd:gmd5:g5701:g5701s:ict21216"
+  },
+  "1945-01-07": {
+   "label": "LOC 12th Army Group situation map, 7 Jan 1945",
+   "item": "2004630310",
+   "iiif": "service:gmd:gmd5:g5701:g5701s:ict21217"
+  },
+  "1945-01-08": {
+   "label": "LOC 12th Army Group situation map, 8 Jan 1945",
+   "item": "2004630311",
+   "iiif": "service:gmd:gmd5:g5701:g5701s:ict21218"
+  },
+  "1945-01-09": {
+   "label": "LOC 12th Army Group situation map, 9 Jan 1945",
+   "item": "2004630312",
+   "iiif": "service:gmd:gmd5:g5701:g5701s:ict21219"
+  },
+  "1945-01-10": {
+   "label": "LOC 12th Army Group situation map, 10 Jan 1945",
+   "item": "2004630313",
+   "iiif": "service:gmd:gmd5:g5701:g5701s:ict21220"
+  },
+  "1945-01-11": {
+   "label": "LOC 12th Army Group situation map, 11 Jan 1945",
+   "item": "2004630314",
+   "iiif": "service:gmd:gmd5:g5701:g5701s:ict21221"
+  },
+  "1945-01-12": {
+   "label": "LOC 12th Army Group situation map, 12 Jan 1945",
+   "item": "2004630315",
+   "iiif": "service:gmd:gmd5:g5701:g5701s:ict21222"
+  },
+  "1945-01-13": {
+   "label": "LOC 12th Army Group situation map, 13 Jan 1945",
+   "item": "2004630316",
+   "iiif": "service:gmd:gmd5:g5701:g5701s:ict21223"
+  },
+  "1945-01-14": {
+   "label": "LOC 12th Army Group situation map, 14 Jan 1945",
+   "item": "2004630317",
+   "iiif": "service:gmd:gmd5:g5701:g5701s:ict21224"
+  }
+ }
+}

@@ -1,0 +1,236 @@
+{
+ "_note": "PROOF ROSTER for the engine test. The real roster is written by the Campaign Series chat.",
+ "units": [
+  {
+   "id": "101",
+   "name": "101st Airborne Division",
+   "label": "101st Airborne",
+   "nation": "us",
+   "type": "airborne",
+   "parent": "VIII Corps, Third Army",
+   "sources": [
+    "PROOF ONLY: from general knowledge, not yet checked"
+   ]
+  },
+  {
+   "id": "4ad",
+   "name": "4th Armored Division",
+   "label": "4th Armored",
+   "nation": "us",
+   "type": "armor",
+   "parent": "III Corps, Third Army",
+   "sources": [
+    "PROOF ONLY: from general knowledge, not yet checked"
+   ]
+  },
+  {
+   "id": "5fj",
+   "name": "5th Parachute Division",
+   "label": "5th Parachute",
+   "nation": "germany",
+   "type": "infantry",
+   "parent": "LXXXV Corps, Seventh Army",
+   "sources": [
+    "PROOF ONLY: from general knowledge, not yet checked"
+   ]
+  },
+  {
+   "id": "15pg",
+   "name": "15th Panzergrenadier Division",
+   "label": "Panzergrenadiers",
+   "nation": "germany",
+   "type": "armor",
+   "parent": "XLVII Panzer Corps",
+   "sources": [
+    "PROOF ONLY: from general knowledge, not yet checked"
+   ]
+  },
+  {
+   "id": "26vg",
+   "name": "26th Volksgrenadier Division",
+   "label": "Volksgrenadiers",
+   "nation": "germany",
+   "type": "infantry",
+   "parent": "XLVII Panzer Corps",
+   "sources": [
+    "PROOF ONLY: from general knowledge, not yet checked"
+   ]
+  },
+  {
+   "id": "lehr",
+   "name": "Panzer Lehr Division",
+   "label": "Panzer Lehr",
+   "nation": "germany",
+   "type": "armor",
+   "parent": "XLVII Panzer Corps",
+   "sources": [
+    "PROOF ONLY: from general knowledge, not yet checked"
+   ]
+  },
+  {
+   "id": "26id",
+   "name": "26th Infantry Division",
+   "label": "26th Infantry",
+   "nation": "us",
+   "type": "infantry",
+   "parent": "III Corps, Third Army",
+   "sources": [
+    "PROOF ONLY: from general knowledge, not yet checked"
+   ]
+  },
+  {
+   "id": "80id",
+   "name": "80th Infantry Division",
+   "label": "80th Infantry",
+   "nation": "us",
+   "type": "infantry",
+   "parent": "III Corps, Third Army",
+   "sources": [
+    "PROOF ONLY: from general knowledge, not yet checked"
+   ]
+  },
+  {
+   "id": "7a",
+   "name": "Seventh Army",
+   "label": "7th Army",
+   "nation": "germany",
+   "type": "infantry",
+   "parent": "Army Group B",
+   "sources": [
+    "PROOF ONLY: from general knowledge, not yet checked"
+   ]
+  },
+  {
+   "id": "116",
+   "name": "116th Panzer Division",
+   "label": "116th Panzer",
+   "nation": "germany",
+   "type": "armor",
+   "parent": "LVIII Panzer Corps",
+   "sources": [
+    "PROOF ONLY: from general knowledge, not yet checked"
+   ]
+  },
+  {
+   "id": "pzk",
+   "name": "II SS Panzer Corps",
+   "label": "Panzer Corps",
+   "nation": "germany",
+   "type": "armor",
+   "parent": "Sixth Panzer Army",
+   "sources": [
+    "PROOF ONLY: from general knowledge, not yet checked"
+   ]
+  },
+  {
+   "id": "2pz",
+   "name": "2nd Panzer Division",
+   "label": "2nd Panzer",
+   "nation": "germany",
+   "type": "armor",
+   "parent": "XLVII Panzer Corps",
+   "sources": [
+    "PROOF ONLY: from general knowledge, not yet checked"
+   ]
+  },
+  {
+   "id": "2ad",
+   "name": "2nd Armored Division",
+   "label": "2nd Armored",
+   "nation": "us",
+   "type": "armor",
+   "parent": "VII Corps, First Army",
+   "sources": [
+    "PROOF ONLY: from general knowledge, not yet checked"
+   ]
+  },
+  {
+   "id": "84",
+   "name": "84th Infantry Division",
+   "label": "84th Infantry",
+   "nation": "us",
+   "type": "infantry",
+   "parent": "VII Corps, First Army",
+   "sources": [
+    "PROOF ONLY: from general knowledge, not yet checked"
+   ]
+  },
+  {
+   "id": "3ad",
+   "name": "3rd Armored Division",
+   "label": "3rd Armored",
+   "nation": "us",
+   "type": "armor",
+   "parent": "VII Corps, First Army",
+   "sources": [
+    "PROOF ONLY: from general knowledge, not yet checked"
+   ]
+  },
+  {
+   "id": "82",
+   "name": "82nd Airborne Division",
+   "label": "82nd Airborne",
+   "nation": "us",
+   "type": "airborne",
+   "parent": "XVIII Airborne Corps",
+   "sources": [
+    "PROOF ONLY: from general knowledge, not yet checked"
+   ]
+  },
+  {
+   "id": "1id",
+   "name": "1st Infantry Division",
+   "label": "1st Infantry",
+   "nation": "us",
+   "type": "infantry",
+   "parent": "V Corps, First Army",
+   "sources": [
+    "PROOF ONLY: from general knowledge, not yet checked"
+   ]
+  },
+  {
+   "id": "vg2",
+   "name": "18th Volksgrenadier Division",
+   "label": "Volksgrenadiers",
+   "nation": "germany",
+   "type": "infantry",
+   "parent": "LXVI Corps",
+   "sources": [
+    "PROOF ONLY: from general knowledge, not yet checked"
+   ]
+  },
+  {
+   "id": "5id",
+   "name": "5th Infantry Division",
+   "label": "5th Infantry",
+   "nation": "us",
+   "type": "infantry",
+   "parent": "XII Corps, Third Army",
+   "sources": [
+    "PROOF ONLY: from general knowledge, not yet checked"
+   ]
+  },
+  {
+   "id": "vg3",
+   "name": "212th Volksgrenadier Division",
+   "label": "Volksgrenadiers",
+   "nation": "germany",
+   "type": "infantry",
+   "parent": "LXXX Corps, Seventh Army",
+   "sources": [
+    "PROOF ONLY: from general knowledge, not yet checked"
+   ]
+  },
+  {
+   "id": "30c",
+   "name": "XXX Corps",
+   "label": "XXX Corps",
+   "nation": "britain",
+   "type": "infantry",
+   "parent": "21st Army Group",
+   "sources": [
+    "PROOF ONLY: from general knowledge, not yet checked"
+   ]
+  }
+ ]
+}

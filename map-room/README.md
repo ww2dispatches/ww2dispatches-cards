@@ -40,3 +40,6 @@ python3 map-room/engine/contact_sheet.py campaign-series/bulge-1944 sheet.png   
 * The rake comes from behind the move, in one of eight directions, and is drawn just before the block it pushes.
 * Knock rule: a knock only when the rake meets a block or a block is pushed into another (`contact`).
 * Each clip loops: its last third of a second dissolves back to the opening still.
+
+## Format 2 (20 Nov 2026)
+The format, engine and checker were rebuilt around the balcony and focus zoom: see FORMAT.md. New: `engine/series.py` (carries units and the line from day to day, spaces blocks, picks the focus), `engine/check_series.py`, `engine/zoomclip.py`, `engine/render_series.py`, `tools/trace/register.py` and `tools/trace/overlay.py`, `series/<campaign>/series.json`. The older single day tools remain underneath: `render_day.py` renders the close table for `render_series.py`.

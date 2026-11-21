@@ -19,9 +19,9 @@ def table_for(campaign, view):
     f = 'table.json' if view == 'main' else f'table-{view}.json'
     return day.Table(os.path.join(HERE, '..', 'series', campaign, f))
 
-def draw(campaign, view, out=None):
+def draw(campaign, view, out=None, table_path=None):
     G = os.path.join(HERE, '..', 'series', campaign, 'geo')
-    t = table_for(campaign, view); Wp, Hp = int(day.TW * PPU), int(day.TH * PPU)
+    t = day.Table(table_path) if table_path else table_for(campaign, view); Wp, Hp = int(day.TW * PPU), int(day.TH * PPU)
     span = 14.0 / t.KX          # degrees of longitude across a standard table: the map's level of detail
     def px(ll):
         x, y = t.XY(ll); return ((x + day.TW / 2) * PPU, (day.TH / 2 - y) * PPU)
