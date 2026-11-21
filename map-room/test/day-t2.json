@@ -1,0 +1,233 @@
+{
+ "_note": "TEST ONLY: positions invented to exercise the template; not history, never posted.",
+ "campaign": "bulge-1944",
+ "seriesName": "The Bulge",
+ "day": 11,
+ "days": 30,
+ "date": "1944-12-26",
+ "subtitle": "Tanks break into Bastogne",
+ "mapRoom": {
+  "view": "bastogne",
+  "asOf": "2400 hrs, 26 Dec 1944",
+  "lineAM": [
+   [
+    5.5,
+    49.91
+   ],
+   [
+    5.62,
+    49.9
+   ],
+   [
+    5.72,
+    49.89
+   ],
+   [
+    5.82,
+    49.9
+   ],
+   [
+    5.95,
+    49.92
+   ]
+  ],
+  "linePM": [
+   [
+    5.5,
+    49.91
+   ],
+   [
+    5.62,
+    49.9
+   ],
+   [
+    5.68,
+    49.93
+   ],
+   [
+    5.69,
+    49.96
+   ],
+   [
+    5.71,
+    49.96
+   ],
+   [
+    5.72,
+    49.93
+   ],
+   [
+    5.82,
+    49.9
+   ],
+   [
+    5.95,
+    49.92
+   ]
+  ],
+  "pocketsAM": [
+   {
+    "side": "allied",
+    "ring": [
+     [
+      5.66,
+      50.04
+     ],
+     [
+      5.74,
+      50.06
+     ],
+     [
+      5.8,
+      50.01
+     ],
+     [
+      5.77,
+      49.96
+     ],
+     [
+      5.7,
+      49.955
+     ],
+     [
+      5.65,
+      49.98
+     ]
+    ]
+   }
+  ],
+  "pocketsPM": [
+   {
+    "side": "allied",
+    "ring": [
+     [
+      5.66,
+      50.04
+     ],
+     [
+      5.74,
+      50.06
+     ],
+     [
+      5.8,
+      50.01
+     ],
+     [
+      5.77,
+      49.96
+     ],
+     [
+      5.7,
+      49.955
+     ],
+     [
+      5.65,
+      49.98
+     ]
+    ]
+   }
+  ],
+  "lineSources": [
+   "<test source 1>",
+   "<test source 2>"
+  ],
+  "pieces": [
+   {
+    "id": "101",
+    "nation": "us",
+    "type": "airborne",
+    "label": "101st Airborne",
+    "move": "cut_off",
+    "from": [
+     5.72,
+     50.0
+    ],
+    "order": 1,
+    "sources": [
+     "<test source 1>",
+     "<test source 2>"
+    ]
+   },
+   {
+    "id": "4ad",
+    "nation": "us",
+    "type": "armor",
+    "label": "4th Armored",
+    "name": "4th Armored Division",
+    "move": "advance",
+    "from": [
+     5.7,
+     49.87
+    ],
+    "to": [
+     5.7,
+     49.94
+    ],
+    "contact": "101",
+    "order": 2,
+    "sources": [
+     "<test source 1>",
+     "<test source 2>"
+    ]
+   },
+   {
+    "id": "ixtc",
+    "nation": "us",
+    "type": "transport",
+    "label": "IX Troop Carrier",
+    "move": "air_mission",
+    "from": [
+     5.6,
+     49.88
+    ],
+    "target": [
+     5.72,
+     50.0
+    ],
+    "order": 3,
+    "sources": [
+     "<test source 1>",
+     "<test source 2>"
+    ]
+   },
+   {
+    "id": "vg",
+    "nation": "germany",
+    "type": "infantry",
+    "label": "Volksgrenadiers",
+    "move": "surrender",
+    "from": [
+     5.82,
+     50.04
+    ],
+    "order": 4,
+    "sources": [
+     "<test source 1>",
+     "<test source 2>"
+    ]
+   },
+   {
+    "id": "art",
+    "nation": "germany",
+    "type": "artillery",
+    "label": "Volksartillerie",
+    "move": "hold",
+    "from": [
+     5.78,
+     50.12
+    ]
+   },
+   {
+    "id": "pl",
+    "nation": "germany",
+    "type": "armor",
+    "label": "Panzer Lehr",
+    "move": "hold",
+    "from": [
+     5.62,
+     50.09
+    ]
+   }
+  ]
+ }
+}

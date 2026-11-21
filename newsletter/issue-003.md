@@ -114,7 +114,7 @@ Each morning brought a new dispatch. Catch up on any you missed:
 * No. 051, Churchill and de Gaulle in Paris: [Read on Threads](https://www.threads.com/@ww2dispatches/post/Dfmw73-ESkz)
 * No. 053, The Tirpitz goes down: [Read on Threads](https://www.threads.com/@ww2dispatches/post/DfpVqQmIFMR)
 * No. 055, Halsey's carriers hit Manila again: [Read on Threads](https://www.threads.com/@ww2dispatches/post/Dfr6WXMEbv1)
-* No. 057, Patton crosses the Moselle: [Read on Threads](https://www.threads.com/@ww2dispatches)
+* No. 057, Patton crosses the Moselle: [Read on Threads](https://www.threads.com/@ww2dispatches/post/DfufEHfkSVu)
 
 ---
 

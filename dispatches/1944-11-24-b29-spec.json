@@ -170,6 +170,53 @@
    "US",
    "Japan"
   ],
-  "lens": "us"
- }
+  "lens": "us",
+  "video": {
+   "kind": "Living Card",
+   "opening": "motion",
+   "sound": "silent"
+  }
+ },
+ "video": {
+  "footage": "footage/1944-11-24-b29-spec.mp4",
+  "focusX": 50,
+  "focusY": 50,
+  "sourceUrl": "https://catalog.archives.gov/id/4878",
+  "note": "Army Air Forces Combat Subjects 18-CS-3338, Saipan Harbor and Airfield; B-29 Takeoffs and Landings (NARA 4878), filmed 4 March 1945 per the camera slates, silent. Cut 20 Nov 2026 from footage/1944-11-24-b29-saipan-reel.mp4: 8:02.0 to 8:07.5 a B-29 coming in low over the runway, wheels down, sweeping past; 8:34.5 to 8:38.9 another on approach over the brush, then close overhead; 8:50.0 to 8:55.0 a close pass with the tail markings, touching down; 7:19.0 to 7:22.0 a parked B-29 close up. Frame edges cropped. Different film from the noon video (No. 086, 18-CS-3655).",
+  "hook": "The first bomber with pressurized crew areas.",
+  "sound": false
+ },
+ "kit": {
+  "file": "kits/dispatch-088-kit.md",
+  "caption": "Its gunners aimed turrets they were not sitting in, through an analog computer. Watch these giants come home.\n\nArmy Air Forces film of B-29s landing on Saipan, 4 March 1945.\n\nWould you rather fly one, or keep one flying?",
+  "youtubeTitle": "Gunners Who Aimed Turrets They Weren't In: The B-29 #shorts",
+  "youtubeDescription": "Its gunners aimed turrets they were not sitting in, through an analog computer. Watch these giants come home.\n\nThe B-29 began with a 1940 Army Air Corps demand for a bomber that could fly 400 mph and travel 5,000 miles. Boeing's answer, the Model 345, first flew on 21 September 1942. Gen. Henry H. Arnold believed in it so strongly that the Army ordered 1,500 before the first prototype had flown. It was the first bomber with pressurized crew areas. Its guns sat in remote controlled turrets. An analog computer fire control system let gunners at sighting stations aim turrets they were not sitting in. Four 2,200 horsepower Wright R-3350 radial engines gave it a top speed of 357 mph, with a wingspan of 141 feet 3 inches. In December 1943 American leaders decided not to send it to Europe but to use its range against Japan. The first B-29 raids on Japan came from China on 15 June 1944. From March 1945 Curtis LeMay sent them in low, at night, with incendiaries. On 6 and 9 August 1945 B-29s dropped the atomic bombs on Hiroshima and Nagasaki. In all, 3,970 were built.\n\nThis is U.S. Army Air Forces film of B-29s landing on Saipan on 4 March 1945, returning from a mission, months after the first raid from the Marianas. The original film is silent.\n\nFilm: Army Air Forces Combat Subjects, 18-CS-3338, Saipan Harbor and Airfield; B-29 Takeoffs and Landings, U.S. National Archives (catalog.archives.gov/id/4878), public domain.\nSources: Boeing B-29 Superfortress, Federation of American Scientists; Boeing B-29 Superfortress, Wikipedia (specifications citing NASA SP-468, Quest for Performance); Walter J. Boyne, Airpower Classics: B-29 Superfortress, Air Force Magazine, March 2007; Craven and Cate, eds., The Army Air Forces in World War II, Vol. V, Chapter 18 (USAF Historical Division; HyperWar transcription); Boeing B-29 Superfortress Combat Record, HistoryOfWar.org.\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\n\n#Shorts #WW2 #OnThisDay #History",
+  "tiktokCaption": "Its gunners aimed turrets they were not sitting in, through an analog computer. Watch these giants come home.\n\nArmy Air Forces film of B-29s landing on Saipan, 4 March 1945.\n\nWould you rather fly one, or keep one flying?\n\n#WW2 #OnThisDay #History #B29",
+  "tiktokTitle": "Gunners Who Aimed Turrets They Weren't In: The B-29",
+  "hook": "The first bomber with pressurized crew areas.",
+  "thumbnailCheck": "Pass: first frame is a B-29 coming in low over the runway with its wheels down; at 2 seconds it is sweeping closer past the camera. Opening tagged \"motion\" from the frames at 0.3 and 2 seconds.",
+  "videoTime": "19:00 America/Denver",
+  "schedule": "Tue 24 Nov 2026, 7:00 p.m. Mountain, all six channels",
+  "scheduled": "Buffer, all six channels, 7 p.m. 24 Nov"
+ },
+ "buffer": {
+  "x_film": "6affdbd1ca85ebefb0fbe1cb",
+  "instagram_reel": "6affdbd4ca85ebefb0fbe265",
+  "threads_film": "6affdbd6ca85ebefb0fbe2b8",
+  "facebook_film": "6affdbd84c1afd05def5b528",
+  "youtube": "6affdbe07b0a126cebae4fb9",
+  "tiktok": "6affdbe34c1afd05def5b6a2",
+  "x": "6b0109345102766245efb9fc",
+  "instagram": "6b01093e9ffbc8503cf327ee",
+  "threads": "6b0109469ffbc8503cf33a11",
+  "facebook": "6b01094f9ffbc8503cf34390"
+ },
+ "declass_line": false,
+ "body": "Gen. Henry H. Arnold was so sure of this bomber that the Army ordered 1,500 of them before the prototype had flown.\n\n24 November 1944. 111 B-29s took off from Saipan for Tokyo, the first raid on the Japanese capital from the Marianas. This was the range the plane was built for. It came from a 1940 call for a bomber that could fly 400 mph and travel 5,000 miles, and Boeing's design first flew in September 1942.\n\nFour 2,200 horsepower Wright R-3350 engines gave it 357 mph. In December 1943 American leaders chose to keep it out of Europe and turn it on Japan.\n\n3,970 were built. Two of them dropped the atomic bombs in August 1945.",
+ "addons": [],
+ "hashtags": "#OnThisDay #WW2",
+ "threads": "Gen. Henry H. Arnold was so sure of this bomber that the Army ordered 1,500 before the prototype had flown.\n\n24 November 1944. 111 B-29s flew from Saipan to Tokyo, the first raid on Japan's capital from the Marianas. Four Wright R-3350 engines, 357 mph, a 141 foot wing. 3,970 were built.",
+ "focusX": 50,
+ "focusY": 50,
+ "zoom": 100
 }

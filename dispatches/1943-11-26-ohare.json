@@ -167,6 +167,57 @@
    "US",
    "Japan"
   ],
-  "lens": "us"
- }
+  "lens": "us",
+  "video": {
+   "kind": "Living Card",
+   "opening": "motion",
+   "sound": "silent"
+  }
+ },
+ "video": {
+  "footage": "footage/1943-11-26-ohare.mp4",
+  "focusX": 50,
+  "focusY": 50,
+  "sourceUrl": "https://catalog.archives.gov/id/80315",
+  "note": "U.S. Navy film 428-NPC-16144, Activities of Fighter Squadron 3 (NARA 80315), VF-3 over Oahu in spring 1942, silent; not film of 26 November 1943. Cut 19 Nov 2026 from footage/1943-11-26-ohare-vf3.mp4: 5:33.0 to 5:41.0 O'Hare's Wildcat F-13 banking in close, the number clear; 3:07.5 to 3:11.5 Thach's F-1 over the clouds; 5:12.0 to 5:16.0 F-1 with a wingman. The pilots studying a chart (unidentified) are left out. Converted to square pixels.",
+  "hook": "The F-13 on this Wildcat marks O'Hare's plane.",
+  "sound": false
+ },
+ "kit": {
+  "file": "kits/dispatch-092-kit.md",
+  "caption": "Look for F-13 on the side. That Wildcat belonged to Butch O'Hare, the Navy's first ace of the war.\n\nNavy film of Fighting Squadron 3 over Oahu, spring 1942, with his commander John Thach in F-1. Not film of his last flight.\n\nHave you ever flown through the airport named for him?",
+  "youtubeTitle": "This Wildcat Was Butch O'Hare's: Navy Film, 1942 #shorts",
+  "youtubeDescription": "Look for F-13 on the side. That Wildcat belonged to Butch O'Hare, the Navy's first ace of the war.\n\nOn the night of 26 November 1943, Lieutenant Commander Edward \"Butch\" O'Hare, commander of the air group on USS Enterprise, led the U.S. Navy's first night fighter attack ever launched from an aircraft carrier. O'Hare's team was two Hellcat fighters and one radar equipped Avenger torpedo plane: O'Hare and Ensign Warren \"Andy\" Skon in the Hellcats, and Lieutenant Commander John Phillips flying the Avenger, with Hazen Rand on the radar and Alvin Kernan in the rear turret. O'Hare took off at about 6 p.m. in F6F Hellcat Bureau No. 66168. Rand's radar led them to a formation of Bettys, and Kernan's fire set one bomber's wing tanks ablaze and sent it into the sea. When Phillips switched on his running lights so the fighters could form up, a Betty slipped in among them behind O'Hare. Phillips radioed a warning and Kernan fired at the bomber, which fired back. Skon reported: \"I saw Mr O'Hare's lights go out and, at the same instant, he seemed to veer off and slant down into darkness.\" O'Hare's plane was never found. He was listed as missing and declared dead a year later. For decades the usual story was that friendly fire from the Avenger killed him, based on a 1962 history of Enterprise. A 1997 study by Steve Ewing and John Lundstrom concluded that the Betty's nose gunner most likely shot him down and that Kernan had been wrongly blamed. O'Hare was already famous. On 20 February 1942, defending USS Lexington, he attacked a formation of Betty bombers alone after his wingman's guns jammed. He was credited with five, though the records show three, and became the Navy's first ace of the war. His name outlived the war: on 19 September 1949 the city's Orchard Field was renamed O'Hare International Airport in his honor. The Navy also named a destroyer, USS O'Hare, for him.\n\nThis is U.S. Navy film of Fighting Squadron 3 over Oahu in spring 1942: O'Hare's own Wildcat, marked F-13, flying with his commander John Thach's F-1. There is no film of the night action of 26 November 1943. The original film is silent.\n\nFilm: U.S. Navy, 428-NPC-16144, Activities of Fighter Squadron 3, U.S. National Archives (catalog.archives.gov/id/80315), public domain.\nSources: Edward O'Hare, Wikipedia; Alvin Kernan, \"O'Hare's Last Flight\", American Heritage, Summer 2017 (by the Avenger's turret gunner); Lieutenant Commander Edward \"Butch\" H. O'Hare, Pacific Wrecks; Grumman F4F-3 Wildcats of VF-3 in flight off Oahu, 10 April 1942, NHHC 80-G-10613 (HyperWar mirror of the NHHC Online Library).\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\n\n#Shorts #WW2 #OnThisDay #History",
+  "tiktokCaption": "Look for F-13 on the side. That Wildcat belonged to Butch O'Hare, the Navy's first ace of the war.\n\nNavy film of Fighting Squadron 3 over Oahu, spring 1942, with his commander John Thach in F-1. Not film of his last flight.\n\nHave you ever flown through the airport named for him?\n\n#WW2 #OnThisDay #History #ButchOHare",
+  "tiktokTitle": "This Wildcat Was Butch O'Hare's: Navy Film, 1942",
+  "hook": "The F-13 on this Wildcat marks O'Hare's plane.",
+  "thumbnailCheck": "Pass: first frame is O'Hare's Wildcat F-13 in flight with a second Wildcat above; at 2 seconds F-13 is banking in close, number clear. Opening tagged \"motion\" from the frames at 0.3 and 2 seconds.",
+  "videoTime": "12:00 America/Denver",
+  "schedule": "Thu 26 Nov 2026, 12:00 p.m. Mountain, all six channels",
+  "scheduled": "Buffer, all six channels, noon 26 Nov"
+ },
+ "buffer": {
+  "x_film": "6affb9a6ca85ebefb0efe14b",
+  "instagram_reel": "6affb9a94c1afd05dee96825",
+  "threads_film": "6affb9abca85ebefb0efe236",
+  "facebook_film": "6affb9aeca85ebefb0efe2eb",
+  "youtube": "6affb9b84c1afd05dee97408",
+  "tiktok": "6affb9ba738ce4635f809d4a",
+  "x": "6b01090fd9cbb430a114caa9",
+  "instagram": "6b0109189ffbc8503cf304f8",
+  "threads": "6b01091f5e993799d848def1",
+  "facebook": "6b0109289ffbc8503cf30957"
+ },
+ "declass_line": true,
+ "declass_variant": "S1",
+ "declass_variant_ig": "IT",
+ "body": "In the dark off the Gilberts, a Japanese bomber slipped in among three American planes. One of them was flown by Butch O'Hare, and it was never found.\n\n26 November 1943. O'Hare, commander of the air group on USS Enterprise, was leading the first night fighter attack the Navy had ever launched from a carrier. Betty bombers were hunting the carriers off the Gilbert Islands, and two days earlier a submarine had blown up the escort carrier Liscome Bay with more than six hundred men.\n\nHis team was two Hellcats and one radar Avenger. Hazen Rand's radar found the bombers, and gunner Alvin Kernan set one on fire. When the Avenger switched on its running lights so the fighters could form up, a Betty crept in behind O'Hare.\n\nEnsign Andy Skon saw O'Hare's lights go out as his Hellcat slanted down into the darkness.\n\nFor decades Kernan was blamed. A 1997 study concluded the Betty's nose gunner most likely fired the fatal shots.\n\nO'Hare had already received the Medal of Honor, for taking on a formation of bombers alone to defend USS Lexington in 1942. In 1949 Chicago's Orchard Field became O'Hare International Airport.",
+ "addons": [
+  "Collect this card: ww2dispatches.com/declass #Declass"
+ ],
+ "hashtags": "#OnThisDay #WW2",
+ "threads": "In the dark off the Gilberts, a Japanese bomber slipped in among three American planes. One was flown by Butch O'Hare, and it was never found.\n\n26 November 1943. O'Hare was leading the Navy's first carrier night fighter attack. His wingman saw his lights go out. For decades friendly fire was blamed; a 1997 study pointed to the bomber's nose gunner.\n\nCollect this card: ww2dispatches.com/declass",
+ "focusX": 50,
+ "focusY": 50,
+ "zoom": 100
 }

@@ -1,0 +1,11 @@
+# renders and work files never go in git
+*.mp4
+*.wav
+plate*.png
+blk-*.png
+msk-*.png
+face-*.png
+check-*.png
+cam*.json
+
+.sheet-cache/

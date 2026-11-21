@@ -48,7 +48,7 @@ function cover(cv,img,p){
   ctx.save(); ctx.beginPath(); ctx.rect(0,0,W,ph); ctx.clip();
   const iw=img.naturalWidth, ih=img.naturalHeight, z=(p.zoom||100)/100, k=Math.max(W/iw,ph/ih)*z;
   const dw=iw*k, dh=ih*k, fx=p.focusX!=null?p.focusX:50, fy=p.focusY!=null?p.focusY:50;
-  ctx.filter="grayscale(1)"; ctx.drawImage(img,-(dw-W)*(fx/100),-(dh-ph)*(fy/100),dw,dh); ctx.restore();
+  ctx.filter=p.color?"none":"grayscale(1)"; ctx.drawImage(img,-(dw-W)*(fx/100),-(dh-ph)*(fy/100),dw,dh); ctx.restore();
   paper(ctx,0,ph,W,H-ph,s,false);
   ctx.fillStyle=RED; ctx.fillRect(0,ph,W,5*s);
   const padX=64*s, innerW=W-2*padX;

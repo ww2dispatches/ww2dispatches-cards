@@ -1,0 +1,17 @@
+{
+ "_note": "The whole battle, Celles to the German border and Echternach to Elsenborn, for days that span the front (the spearhead near the Meuse, 23 to 26 Dec). Fitted 20 Nov 2026 with engine/fit_view.py so every place in the box holds a whole block inside the template's block zone (clear of the tab, the strip and the apps' buttons); a block covers about 40 km. Provisional until the traced map is approved.",
+ "LON0": 5.245,
+ "LAT0": 49.97,
+ "KX": 2.445,
+ "KY": 3.803,
+ "box": {
+  "lon": [
+   4.95,
+   6.55
+  ],
+  "lat": [
+   49.68,
+   50.62
+  ]
+ }
+}

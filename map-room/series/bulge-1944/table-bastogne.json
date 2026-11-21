@@ -1,0 +1,17 @@
+{
+ "_note": "The Bastogne close view (Brian, 20 Nov 2026): the pocket, the ring around it and the 4th Armored's approach from the south. Days with \"view\": \"bastogne\". Fitted 20 Nov 2026 with engine/fit_view.py so every place in the box holds a whole block inside the template's block zone (clear of the tab, the strip and the apps' buttons); a block covers about 7 km. Provisional until the traced map is approved.",
+ "LON0": 5.632,
+ "LAT0": 49.999,
+ "KX": 14.128,
+ "KY": 21.973,
+ "box": {
+  "lon": [
+   5.6,
+   5.84
+  ],
+  "lat": [
+   49.86,
+   50.14
+  ]
+ }
+}

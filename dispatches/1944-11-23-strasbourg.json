@@ -137,13 +137,14 @@
  "second_cut": true,
  "film": {
   "status": "secured",
-  "record": "Combat Bulletin No. 35 (1944, Army Pictorial Service, Signal Corps), 111-CB-35 (NARA 24321)",
-  "url": "https://catalog.archives.gov/id/24321",
-  "file": "footage/1944-11-23-cb35.mp4",
+  "record": "U.S. Army Signal Corps raw film, 111-ADC-9629 (NARA 23393), camera roll NR 318",
+  "url": "https://catalog.archives.gov/id/23393",
+  "file": "footage/1944-11-23-strasbourg-adc.mp4",
   "sound": false,
   "shot_notes": "Whole bulletin, 20 min 17 s, converted from NARA's 640 x 480 WMV to H.264 MP4 (one upload shared with the 27 Nov Saipan card, which uses 00:30 to 02:18). Narration over the whole bulletin, so the clips run silent. The Alsace story opens at 14:15 with an animated map (1st Army Duren, 3rd Army Sarreguemines, 7th Army Strasbourg; avoid). NOON: 16:15 to 19:25, the city and its streets: 16:15 to 16:31 a town seen from a height with the Vosges behind; 16:35 a skyline with a tall chimney and a church spire; 16:39 a soldier aiming from a window; 16:43 black smoke over the town; 16:55 to 17:11 shells bursting along a riverfront; 17:15 to 17:39 houses and a street under fire, a soldier at a fence; 18:19 to 18:27 soldiers in a street; 18:31 to 19:23 tanks rolling down village streets with infantry, half timbered Alsatian houses at 19:03. Open on the tanks in the street (about 18:31) or the shellbursts by the river (16:55). 7 P.M. (second cut): 14:23 to 16:11, the drive across the Alsace plain: 14:27 to 14:31 a tank passing the camera; 14:39 to 14:51 shells bursting on the open plain; 15:11 to 15:19 troops moving across fields; 15:31 a mortar man; 15:35 to 15:59 a howitzer crew firing, a soldier with a mug at 15:51; 16:07 smoke along a hedge. Open on the tank at 14:27 or the gun crew firing at 15:35. The two stretches do not overlap. Caution: the troops wear U.S. helmets and the narration could not be checked here, so the film may show U.S. Seventh Army units as well as Leclerc's men (who also wore U.S. kit); no shot clearly shows the cathedral or a French flag. Ends 19:27 with The End.",
   "license": "Public domain, U.S. government work (Army Pictorial Service, Signal Corps, NARA Record Group 111).",
-  "date_note": "U.S. Army film of the Seventh Army front in Alsace in November 1944, released in Combat Bulletin 35; the shots are not dated to 23 November and the units are not named on screen, so the caption should say U.S. Army film of the Alsace drive toward Strasbourg, November 1944."
+  "date_note": "Signal Corps film of the entry into Strasbourg, November 1944; NARA does not date roll NR 318 to the day, so captions say November 1944.",
+  "recut_note": "21 Nov 2026: both the noon and 7 p.m. videos recut from 111-ADC-9629 (720 x 480), roll NR 318, because the Combat Bulletin 35 WMV looked too soft."
  },
  "somber": false,
  "themes": {
@@ -165,6 +166,90 @@
    "Germany",
    "US"
   ],
-  "lens": "other_allied"
- }
+  "lens": "other_allied",
+  "video": {
+   "kind": "Living Card",
+   "opening": "motion",
+   "sound": "silent"
+  },
+  "video_b": {
+   "kind": "Living Card",
+   "opening": "combat or firing",
+   "sound": "silent"
+  }
+ },
+ "video": {
+  "footage": "footage/1944-11-23-strasbourg-adc.mp4",
+  "focusX": 50,
+  "focusY": 50,
+  "sourceUrl": "https://catalog.archives.gov/id/23393",
+  "note": "Recut 21 Nov 2026 because the Combat Bulletin 35 copy (NARA's 640 x 480 WMV) looked too soft. New source: U.S. Army Signal Corps raw film, 111-ADC-9629 (NARA 23393, \"Shelling Germany across the Rhine\", 720 x 480 MP4, silent), camera roll NR 318, which is the entry into Strasbourg. Cut: 279.0 to 283.0 tanks roll down a tram street past civilians; 303.3 to 306.3 the Strassburg-Schiltigheim town sign; 323.4 to 326.4 a Sherman with the French 2nd Armored Division's map of France insignia; 349.0 to 351.5 an \"Adolf Hitler Strass\" street sign carried on a tank as a trophy; 364.0 to 368.5 tilt down from the cathedral spire to a damaged street. 10:11 pixels scaled to square, 8 px trimmed each side. Avoided: bodies at about 327 to 330 and from 371 on. Roll not dated to the day by NARA (the record date, 12 Dec 1944, belongs to roll NR 322 on the same reel).",
+  "hook": "Three columns stalled at the forts. One got in.",
+  "sound": false
+ },
+ "kit": {
+  "file": "kits/dispatch-083-kit.md",
+  "caption": "Three French columns were stopped at the forts. Another came in by a route nobody expected and drove its tanks to the cathedral.\n\nU.S. Army film of tanks entering Strasbourg through Schiltigheim, November 1944.\n\nWhat wins more battles, speed or surprise?",
+  "youtubeTitle": "Three Columns Stopped, One Got Through: Strasbourg, 1944 #shorts",
+  "youtubeDescription": "Three French columns were stopped at the forts. Another came in by a route nobody expected and drove its tanks to the cathedral.\n\nAt Kufra Leclerc made his men swear an oath, dated 2 March 1941: \"Swear not to lay down your arms until our colours, our beautiful colours, fly over the cathedral of Strasbourg.\" By November 1944 Leclerc commanded the French 2nd Armored Division, fighting under the U.S. XV Corps of Gen. Wade Haislip, which broke through the Saverne Gap in the Vosges on 22 November. At dawn on 23 November the division drove on Strasbourg in several columns, guided by Alsatian resistance fighters. The aim was the Rhine and the bridge to Kehl. By mid morning three of the columns were stopped by the city's ring of forts, linked by ditches and antitank defences. The column of Lt. Col. Rouvillois, coming in by an unexpected route through Schiltigheim, broke through, caught the defenders by surprise and drove its tanks through the city to the cathedral. Early that afternoon a spahi of the division, Maurice Lebrun, volunteered to climb the cathedral's 142 m spire and fix an improvised French flag to it. The oath of Kufra was kept. The Germans blew the Rhine bridge to Kehl before the French could take it.\n\nThis is U.S. Army Signal Corps film of the entry into Strasbourg, November 1944: tanks rolling down a tram street past civilians, the Strassburg-Schiltigheim town sign, a Sherman carrying the French 2nd Armored Division's map of France insignia, a captured Adolf Hitler Strasse sign hung on a tank as a trophy, and the cathedral spire above a damaged street. The film is not dated to the day and runs silent.\n\nFilm: U.S. Army Signal Corps, 111-ADC-9629, U.S. National Archives (catalog.archives.gov/id/23393), public domain.\nSources: Liberation and defence of Strasbourg, Chemins de memoire, French Ministry of the Armed Forces (French); Liberation of Strasbourg, Wikipedia; Capture of Kufra, Wikipedia (citing the Ordre de la Liberation); General LeClerc, U.S. Army Signal Corps photo 111-SC-192467, National Archives.\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\n\n#Shorts #WW2 #OnThisDay #History",
+  "tiktokCaption": "Three French columns were stopped at the forts. Another came in by a route nobody expected and drove its tanks to the cathedral.\n\nU.S. Army film of tanks entering Strasbourg through Schiltigheim, November 1944.\n\nWhat wins more battles, speed or surprise?\n\n#WW2 #OnThisDay #History #Strasbourg",
+  "tiktokTitle": "Three Columns Stopped, One Got Through: Strasbourg, 1944",
+  "hook": "Three columns stalled at the forts. One got in.",
+  "thumbnailCheck": "Pass: first frame is a Sherman rolling down a Strasbourg tram street past a jeep and civilians; at 2 seconds it is still coming on. Opening tagged \"motion\". Recut 21 Nov 2026 from 111-ADC-9629.",
+  "videoTime": "12:00 America/Denver",
+  "schedule": "Mon 23 Nov 2026, 12:00 p.m. Mountain, all six channels",
+  "scheduled": "Buffer, all six channels, noon 23 Nov"
+ },
+ "buffer": {
+  "x_film": "6affb8f3d5f8acdd0d67df5f",
+  "instagram_reel": "6affb8f50f5eda1a57b853a8",
+  "threads_film": "6affb8f84c1afd05dee8eeaa",
+  "facebook_film": "6affb8fa7b0a126ceba1ddfb",
+  "youtube": "6affb901d5f8acdd0d67e365",
+  "tiktok": "6affb9044c1afd05dee8f237",
+  "x_film_b": "6affdcddd5f8acdd0d749802",
+  "instagram_reel_b": "6affdcdf0f5eda1a57c4f75c",
+  "threads_film_b": "6affdce27b0a126cebae9a18",
+  "facebook_film_b": "6affdce4d5f8acdd0d749921",
+  "youtube_b": "6affdced738ce4635f8cf40e",
+  "tiktok_b": "6affdcef4c1afd05def5f7c9",
+  "x": "6b0108e95e993799d848d2d8",
+  "instagram": "6b0108ef20a2d09a0acb45a0",
+  "threads": "6b0108f3dd205ed779b41a70",
+  "facebook": "6b0108f8dd205ed779b41d92"
+ },
+ "video_b": {
+  "footage": "footage/1944-11-23-strasbourg-adc-b.mp4",
+  "focusX": 50,
+  "focusY": 50,
+  "sourceUrl": "https://catalog.archives.gov/id/23393",
+  "note": "Second cut, recut 21 Nov 2026 from U.S. Army Signal Corps raw film 111-ADC-9629 (NARA 23393), camera roll NR 318 (the Strasbourg roll), silent. Cut: 220.0 to 224.0 a tank bursts out of smoke in a city street; 227.4 to 230.6 a machine gun crew firing from behind cover; 240.0 to 243.5 a soldier aiming a carbine; 233.5 to 236.0 men aiming from a half track; 211.5 to 215.0 an M7 howitzer crew. 10:11 pixels scaled to square, 8 px trimmed each side. No overlap with the noon cut (279 to 368.5); opens on the tank in smoke, not the noon tram street shot. Not dated to the day by NARA.",
+  "hook": "The Kehl bridge was the prize. It was blown first.",
+  "sound": false
+ },
+ "kit_b": {
+  "file": "kits/dispatch-083-b-kit.md",
+  "caption": "Leclerc's men swore in 1941 not to lay down their arms until their flag flew over Strasbourg cathedral. Three years later they were fighting in Alsace.\n\nU.S. Army film from the fight for Strasbourg, November 1944.\n\nWould you have taken that oath?",
+  "youtubeTitle": "An Oath Sworn in the Desert, Kept in Alsace #shorts",
+  "youtubeDescription": "Leclerc's men swore in 1941 not to lay down their arms until their flag flew over Strasbourg cathedral. Three years later they were fighting in Alsace.\n\nIn early 1941 Free French troops under Colonel Philippe Leclerc crossed the Sahara from French Equatorial Africa and besieged the Italian fort at Kufra in Libya. The Italian and Libyan garrison surrendered on 1 March 1941. At Kufra Leclerc made his men swear an oath, dated 2 March 1941: \"Swear not to lay down your arms until our colours, our beautiful colours, fly over the cathedral of Strasbourg.\" By November 1944 Leclerc commanded the French 2nd Armored Division, fighting under the U.S. XV Corps of Gen. Wade Haislip, which broke through the Saverne Gap in the Vosges on 22 November. At dawn on 23 November the division drove on Strasbourg in several columns, guided by Alsatian resistance fighters. The aim was the Rhine and the bridge to Kehl. Early that afternoon a spahi of the division, Maurice Lebrun, volunteered to climb the cathedral's 142 m spire and fix an improvised French flag to it. The oath of Kufra was kept. The Germans blew the Rhine bridge to Kehl before the French could take it. In January 1945, with Germany counterattacking in Alsace, Eisenhower weighed pulling back and leaving Strasbourg undefended. De Gaulle called it a national disaster, and with Churchill's support the city was held.\n\nThis is U.S. Army Signal Corps film from the fight for Strasbourg, November 1944: a tank bursting out of smoke in a city street, a machine gun crew firing from cover, a soldier aiming his carbine, men firing from a half track, and an M7 howitzer crew. The film is not dated to the day and runs silent.\n\nFilm: U.S. Army Signal Corps, 111-ADC-9629, U.S. National Archives (catalog.archives.gov/id/23393), public domain.\nSources: Liberation and defence of Strasbourg, Chemins de memoire, French Ministry of the Armed Forces (French); Liberation of Strasbourg, Wikipedia; Capture of Kufra, Wikipedia (citing the Ordre de la Liberation); General LeClerc, U.S. Army Signal Corps photo 111-SC-192467, National Archives.\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\n\n#Shorts #WW2 #OnThisDay #History",
+  "tiktokCaption": "Leclerc's men swore in 1941 not to lay down their arms until their flag flew over Strasbourg cathedral. Three years later they were fighting in Alsace.\n\nU.S. Army film from the fight for Strasbourg, November 1944.\n\nWould you have taken that oath?\n\n#WW2 #OnThisDay #History #Strasbourg",
+  "tiktokTitle": "An Oath Sworn in the Desert, Kept in Alsace",
+  "hook": "The Kehl bridge was the prize. It was blown first.",
+  "thumbnailCheck": "Pass: first frame is a city street in smoke; at 2 seconds a tank bursts out of it. Different opening from the noon cut (tank in a tram street past civilians). Opening tagged \"combat or firing\". Recut 21 Nov 2026 from 111-ADC-9629.",
+  "videoTime": "19:00 America/Denver",
+  "schedule": "Mon 23 Nov 2026, 7:00 p.m. Mountain, all six channels",
+  "scheduled": "Buffer, all six channels, 7 p.m. 23 Nov"
+ },
+ "focusX": 50,
+ "focusY": 12,
+ "zoom": 100,
+ "declass_line": true,
+ "declass_variant": "E2",
+ "declass_variant_ig": "I2",
+ "body": "A French soldier named Maurice Lebrun volunteered to climb 142 meters up a cathedral spire with a homemade flag. Why that spire? Because of an oath sworn at a desert fort more than three years before.\n\n23 November 1944. General Philippe Leclerc's French 2nd Armored Division drove on Strasbourg at dawn, guided by Alsatian resistance fighters. The city's ring of forts held up most of the columns. Lt. Col. Rouvillois's men slipped in through Schiltigheim, surprised the defenders and reached the cathedral with their tanks. His radio message was a code: \"Tissu est dans iode,\" tissue is in iodine. They were inside.\n\nEarly that afternoon Lebrun, a spahi of the division, made the climb and fixed the flag to the spire.\n\nThe oath went back to March 1941. At Kufra in Libya, after his men crossed the Sahara and took the Italian fort, Leclerc had them swear to keep fighting until \"our colours, our beautiful colours, fly over the cathedral of Strasbourg.\"\n\nThe Germans still destroyed the Rhine bridge to Kehl before the French could take it. And in January 1945, when Eisenhower weighed leaving the city undefended, de Gaulle called it a national disaster. Strasbourg was held.",
+ "addons": [
+  "Every dispatch is also a card in Declass, our free WW2 card game. Today's file: ww2dispatches.com/declass #Declass"
+ ],
+ "hashtags": "#OnThisDay #WW2",
+ "threads": "A French soldier named Maurice Lebrun volunteered to climb a 142 meter cathedral spire with a homemade flag.\n\n23 November 1944. Leclerc's armor broke into Strasbourg, and Lebrun fixed the flag that afternoon. It kept an oath sworn at Kufra in 1941: fight on until \"our colours, our beautiful colours, fly over the cathedral of Strasbourg.\"\n\nEvery dispatch is also a card in Declass, our free WW2 card game. Today's file: ww2dispatches.com/declass"
 }

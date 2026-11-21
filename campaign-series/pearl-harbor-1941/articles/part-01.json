@@ -13,10 +13,11 @@
   "substackTitle": "Pearl Harbor, Part 1: The Fleet Slips Away",
   "subtitle": "26 to 29 November 1941. Six carriers vanish into the North Pacific while Washington warns of war everywhere but Hawaii, and in Tokyo the last voices for peace are heard and set aside.",
   "publish": "2026-11-30T09:00:00-07:00",
-  "coverPhoto": "photos/campaign/ph-01b.jpg",
-  "coverCredit": "Zuikaku at Hitokappu Bay, November 1941, before the sortie. Japanese photo, public domain (Wikimedia Commons).",
+  "coverPhoto": "photos/campaign/ch-genmac-plate13-track-wide.jpg",
+  "coverCredit": "Track of the Carrier Task Force for the Pearl Harbor attack, 26 November to 23 December 1941, drawn from Japanese records. Reports of General MacArthur, Vol. II, Part I, Plate No. 13, U.S. Army, public domain.",
   "focusX": 50,
-  "focusY": 50,
-  "status": "mockup",
-  "synopsis": "Six carriers vanish into the North Pacific while Washington warns of war everywhere but Hawaii."
+  "focusY": 30,
+  "status": "final",
+  "synopsis": "Six carriers vanish into the North Pacific while Washington warns of war everywhere but Hawaii.",
+  "color": true
 }

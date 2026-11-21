@@ -179,6 +179,57 @@
    "US",
    "Japan"
   ],
-  "lens": "us"
- }
+  "lens": "us",
+  "video": {
+   "kind": "Living Card",
+   "opening": "motion",
+   "sound": "silent"
+  }
+ },
+ "video": {
+  "footage": "footage/1944-11-24-tokyo-b29.mp4",
+  "focusX": 50,
+  "focusY": 45,
+  "sourceUrl": "https://catalog.archives.gov/id/5012",
+  "note": "AAF Combat Subjects reel 18-CS-3655, Bomb Nakajima Plant, Tokyo (NARA 5012), silent. B-29s of the 497th Bomb Group on a later mission to the same target, probably spring 1945, not 24 November 1944. Cut 19 Nov 2026 from footage/1944-11-24-tokyo-b29-reel.mp4: 5:50.5 to 5:56.5 a B-29 with A in a square on the tail and the formation beyond; 6:10.0 to 6:14.0 Mount Fuji; 6:33.2 to 6:36.2 Fuji close; 6:40.6 to 6:43.6 B-29 A 2 alongside over the clouds. Converted to square pixels.",
+  "hook": "The jet stream scattered the first B-29 raid on Tokyo.",
+  "sound": false
+ },
+ "kit": {
+  "file": "kits/dispatch-086-kit.md",
+  "caption": "The first B-29s over Tokyo flew into a wind of about 120 knots. It blew their bombs off course, and only 24 of 111 bombed the plant.\n\nArmy Air Forces film of a later B-29 mission to the same Tokyo target, 1945, passing Mount Fuji.\n\nCould you aim from 30,000 feet?",
+  "youtubeTitle": "A 120 Knot Wind Over Tokyo: The First B-29 Raid #shorts",
+  "youtubeDescription": "The first B-29s over Tokyo flew into a wind of about 120 knots. It blew their bombs off course, and only 24 of 111 bombed the plant.\n\nAt 06:15 on 24 November 1944, Brig. Gen. Emmett O'Donnell Jr., commander of the 73rd Bombardment Wing, took off from Isley Field on Saipan in the B-29 \"Dauntless Dotty\", leading the first B-29 strike on Tokyo. His copilot was Maj. Robert K. Morgan, who had flown the B-17 \"Memphis Belle\" over Europe. Dauntless Dotty was Morgan's own B-29 of the 497th Bomb Group, named for his wife, Dorothy. 110 more B-29s followed him, 111 in all, carrying 277.5 tons of bombs. It was the first raid on Tokyo since the Doolittle Raid of April 1942. The target was the Nakajima aircraft engine plant at Musashino, on the edge of Tokyo. Over Japan the bombers flew at 27,000 to 33,000 feet into winds of about 120 knots, the jet stream. Bombs blew off course, and it proved nearly impossible to aim from that height. Seventeen B-29s turned back. Only 24 bombed the Musashino plant; 64 more dropped on docks and city areas. Strike photos showed just 16 bomb bursts in the target area. The results were judged disappointing. Early in 1945 Curtis LeMay replaced Gen. Haywood Hansell at XXI Bomber Command, and in March he sent the B-29s in low, at night, with incendiaries.\n\nThis is U.S. Army Air Forces film of B-29s of the 497th Bomb Group, Dauntless Dotty's group, on a later mission to the same Nakajima target at Tokyo, probably spring 1945, flying past Mount Fuji. It is not film of 24 November 1944. The original film is silent.\n\nFilm: Army Air Forces Combat Subjects, 18-CS-3655, Bomb Nakajima Plant, Tokyo, U.S. National Archives (catalog.archives.gov/id/5012), public domain.\nSources: Wesley Frank Craven and James Lea Cate, eds., The Army Air Forces in World War II, Vol. V: The Pacific, Matterhorn to Nagasaki, Chapter 18 (USAF Historical Division; HyperWar transcription); Craven and Cate, The Army Air Forces in World War II, Vol. V, Chapter 17 (HyperWar transcription); Missions to Tokyo, Pacific Wrecks; Boeing B-29 Superfortress Combat Record, HistoryOfWar.org; Dauntless Dotty, Wikipedia; B-29 Dauntless Dotty Story, Memphis Belle Memorial Association; Mount Fuji from the nose of a B-29 in the first Tokyo raid since the Doolittle raid, National Archives 342-FH-3A03137-55663AC (original caption).\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\n\n#Shorts #WW2 #OnThisDay #History",
+  "tiktokCaption": "The first B-29s over Tokyo flew into a wind of about 120 knots. It blew their bombs off course, and only 24 of 111 bombed the plant.\n\nArmy Air Forces film of a later B-29 mission to the same Tokyo target, 1945, passing Mount Fuji.\n\nCould you aim from 30,000 feet?\n\n#WW2 #OnThisDay #History #B29",
+  "tiktokTitle": "A 120 Knot Wind Over Tokyo: The First B-29 Raid",
+  "hook": "The jet stream scattered the first B-29 raid on Tokyo.",
+  "thumbnailCheck": "Pass: first frame is a B-29 with A in a square on the tail flying past, the formation beyond; at 2 seconds the formation is still moving across the frame. Opening tagged \"motion\" from the frames at 0.3 and 2 seconds.",
+  "videoTime": "12:00 America/Denver",
+  "schedule": "Tue 24 Nov 2026, 12:00 p.m. Mountain, all six channels",
+  "scheduled": "Buffer, all six channels, noon 24 Nov"
+ },
+ "buffer": {
+  "x_film": "6affb948738ce4635f80465b",
+  "instagram_reel": "6affb94ad5f8acdd0d680a11",
+  "threads_film": "6affb94d7b0a126ceba20e19",
+  "facebook_film": "6affb94fd5f8acdd0d680ecc",
+  "youtube": "6affbb0ad5f8acdd0d68d2e0",
+  "tiktok": "6affbb0cd5f8acdd0d68d434",
+  "x": "6b010900dd205ed779b41eab",
+  "instagram": "6b010905d9cbb430a114c95a",
+  "threads": "6b0109095102766245efa42a",
+  "facebook": "6b01090fdd205ed779b4219e"
+ },
+ "declass_line": true,
+ "declass_variant": "E3",
+ "declass_variant_ig": "I3",
+ "body": "The man in the copilot's seat of the first B-29 over Tokyo had already flown the Memphis Belle over Europe.\n\n24 November 1944. At 06:15 Brig. Gen. Emmett O'Donnell Jr. lifted off from Isley Field on Saipan in Maj. Robert K. Morgan's own B-29, Dauntless Dotty, named for Morgan's wife, Dorothy. Morgan flew beside him, and 110 more bombers followed. It was the first raid on Tokyo since Doolittle in April 1942, aimed at the Nakajima engine plant at Musashino.\n\nThe mission had waited a week on wind and weather. The orders warned of 400 to 500 fighters. About 125 came up.\n\nThe worst trouble was higher. At 27,000 to 33,000 feet the bombers met the jet stream, and aiming became almost impossible. Seventeen turned back, and strike photos found just 16 bomb bursts in the target area.\n\nA Japanese pilot drove his damaged fighter into the tail of one B-29, which went into the sea off Honshu with everyone aboard. By March 1945 Curtis LeMay had the bombers going in low, at night, with incendiaries.",
+ "addons": [
+  "Add this one to your dossier in Declass, our free WW2 card game: ww2dispatches.com/declass #Declass"
+ ],
+ "hashtags": "#OnThisDay #WW2",
+ "threads": "The copilot of the first B-29 over Tokyo had already flown the Memphis Belle over Europe.\n\n24 November 1944. Robert Morgan sat beside Brig. Gen. Emmett O'Donnell as 111 Superfortresses took off from Saipan. At 30,000 feet the jet stream wrecked their aim, and strike photos found just 16 bomb bursts on the target.\n\nAdd this one to your dossier in Declass, our free WW2 card game: ww2dispatches.com/declass",
+ "focusX": 50,
+ "focusY": 50,
+ "zoom": 100
 }

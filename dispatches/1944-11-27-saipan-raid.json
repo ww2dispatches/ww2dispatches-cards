@@ -159,6 +159,53 @@
    "Japan",
    "US"
   ],
-  "lens": "axis_japan"
- }
+  "lens": "axis_japan",
+  "video": {
+   "kind": "Living Card",
+   "opening": "dark or unclear",
+   "sound": "silent"
+  }
+ },
+ "video": {
+  "footage": "footage/1944-11-27-saipan-raid.mp4",
+  "focusX": 50,
+  "focusY": 50,
+  "sourceUrl": "https://catalog.archives.gov/id/24321",
+  "note": "Combat Bulletin No. 35, story \"Japs Raid Saipan B-29 Base\" (111-CB-35, NARA 24321), silent (narration in the source). Cut 20 Nov 2026 from footage/1944-11-23-cb35.mp4: 0:55.5 to 0:59.0 explosions on the airfield at night; 1:02.5 to 1:06.0 a big flare up; 1:21.5 to 1:24.0 a bulldozer and men at the fires; 1:57.0 to 2:00.5 a burning B-29; 2:11.0 to 2:14.0 the wrecked tail under a hose. Vignette edges cropped. No overlap with No. 083's Strasbourg stretches (14:23 to 19:25).",
+  "hook": "Zeros came in low over the sea, under the radar.",
+  "sound": false
+ },
+ "kit": {
+  "file": "kits/dispatch-096-kit.md",
+  "caption": "Zeros skimmed the waves to stay under the radar and caught B-29s on the ground at Isley Field. This is what the raids left burning.\n\nArmy Signal Corps film of the Japanese raids on Isley Field, Saipan, November 1944.\n\nHow would you have defended that field?",
+  "youtubeTitle": "Under the Radar: Japan Hits the B-29 Base on Saipan #shorts",
+  "youtubeDescription": "Zeros skimmed the waves to stay under the radar and caught B-29s on the ground at Isley Field. This is what the raids left burning.\n\nThree days after B-29s from the Marianas bombed Tokyo for the first time, on 24 November 1944, the Imperial Japanese Navy struck back at the bombers' home, Isley Field on Saipan. Early on the morning of 27 November, two twin engine Betty bombers from Iwo Jima came in low. They caught Superfortresses being loaded with bombs for the second Tokyo mission, destroyed one B-29 and damaged eleven. At noon came a second strike: Zero fighters of the 252nd Air Group, each carrying a bomb, guided toward Saipan by two Myrt reconnaissance planes. Historic Wings describes it as a one way mission. They flew low over the sea to stay under the American radar. One Zero clipped a wave with its propeller, dropped its bomb and was shot down by Thunderbolts near Pagan. The rest slipped through and swept over Isley and Kobler fields with complete surprise. They destroyed three B-29s and badly damaged two more. The defenders shot the raiders down one by one: AAF fighters got four and antiaircraft gunners six. In the confusion the gunners also shot down an American P-47, a loss the official report called \"inexcusable\". The last Japanese pilot, out of ammunition, landed his Zero on Isley Field and opened fire on the Americans with his pistol until infantry rifle fire killed him. Brigadier General Haywood Hansell, commander of XXI Bomber Command, saw it happen. The raids came from Iwo Jima. After 27 November, Admiral Nimitz ordered a heavy strike on the island, and the bombing of Iwo Jima went on until the Marines landed there on 19 February 1945.\n\nThis is U.S. Army Signal Corps film of the Japanese raids on Isley Field, Saipan, in November 1944: fires on the airfield at night, a bulldozer at the wreckage, and a burning B-29. The bulletin does not date the shots on screen. The original film carries narration, so this clip runs silent.\n\nFilm: Combat Bulletin No. 35 (Army Pictorial Service, Signal Corps, 1944), 111-CB-35, U.S. National Archives (catalog.archives.gov/id/24321), public domain.\nSources: Wesley Frank Craven and James Lea Cate, eds., The Army Air Forces in World War II, Vol. V, Chapter 19, USAF Historical Division (HyperWar transcription); Japanese air attacks on the Mariana Islands, Wikipedia; The Last Zero Pilot at Saipan, Historic Wings, 27 November 2012; Superfortress burning after Jap air raid on Saipan, 11/27/44, USAF photo 342-FH-3A40451 (NARA 204976767).\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\n\n#Shorts #WW2 #OnThisDay #History",
+  "tiktokCaption": "Zeros skimmed the waves to stay under the radar and caught B-29s on the ground at Isley Field. This is what the raids left burning.\n\nArmy Signal Corps film of the Japanese raids on Isley Field, Saipan, November 1944.\n\nHow would you have defended that field?\n\n#WW2 #OnThisDay #History #Saipan",
+  "tiktokTitle": "Under the Radar: Japan Hits the B-29 Base on Saipan",
+  "hook": "Zeros came in low over the sea, under the radar.",
+  "thumbnailCheck": "Weak first frame: it opens on fires at night on Isley Field, mostly black with bright flames; at 2 seconds explosions flare in the dark. Opening tagged \"dark or unclear\" from the frames at 0.3 and 2 seconds. Instagram and TikTok covers set to the burning B-29 at 12.0 seconds (thumbnailOffset 12000), and the poster (dispatch-096-instagram-poster-r2.jpg) is that frame.",
+  "videoTime": "19:00 America/Denver",
+  "schedule": "Fri 27 Nov 2026, 7:00 p.m. Mountain, all six channels",
+  "scheduled": "Buffer, all six channels, 7 p.m. 27 Nov"
+ },
+ "buffer": {
+  "x_film": "6affdc94738ce4635f8ce6d1",
+  "instagram_reel": "6affdc960f5eda1a57c4eacf",
+  "threads_film": "6affdc99d5f8acdd0d7486b3",
+  "facebook_film": "6affdc9b4c1afd05def5e984",
+  "youtube": "6affdca5738ce4635f8ce955",
+  "tiktok": "6affdca80f5eda1a57c4ed22",
+  "x": "6b0109005102766245ef9fd8",
+  "instagram": "6b010905dd205ed779b41f67",
+  "threads": "6b0109085e993799d848d754",
+  "facebook": "6b01090c20a2d09a0acb4abf"
+ },
+ "focusX": 45,
+ "focusY": 40,
+ "zoom": 110,
+ "declass_line": false,
+ "body": "Out of ammunition, a Japanese pilot landed his Zero on an American airfield and kept fighting with what he had left. Brig. Gen. Haywood Hansell watched it happen.\n\n27 November 1944. Three days after the first B-29 raid on Tokyo from the Marianas, the Imperial Japanese Navy struck back at their base on Saipan. Two Betty bombers from Iwo Jima came in low before dawn, destroying one Superfortress and damaging eleven.\n\nAt noon Zero fighters of the 252nd Air Group arrived, each carrying a bomb, and destroyed three more B-29s. The last pilot opened fire with his pistol until infantry rifle fire killed him.\n\nAfter that day Admiral Nimitz ordered a heavy strike on Iwo Jima, and the bombing of the island went on until the Marines landed there.",
+ "addons": [],
+ "hashtags": "#OnThisDay #WW2",
+ "threads": "Out of ammunition, a Japanese pilot landed his Zero on an American airfield and kept fighting with his pistol.\n\n27 November 1944. The Imperial Japanese Navy struck back at the B-29 base on Saipan, destroying four Superfortresses that day. The raids came from Iwo Jima, and Nimitz ordered the island bombed."
 }

@@ -207,6 +207,53 @@
    "US",
    "Britain"
   ],
-  "lens": "axis_germany"
- }
+  "lens": "axis_germany",
+  "video": {
+   "kind": "Living Card",
+   "opening": "combat or firing",
+   "sound": "silent"
+  }
+ },
+ "video": {
+  "footage": "footage/1943-11-26-hs293-spec.mp4",
+  "focusX": 50,
+  "focusY": 50,
+  "sourceUrl": "https://catalog.archives.gov/id/15452",
+  "note": "U.S. Army Signal Corps 111-ADC-1645, LST hit by flying bomb, South France (NARA 15452), silent: USS LST-282 burning at night after an Hs 293 hit, 15 August 1944, filmed through trees and a balustrade. Cut 20 Nov 2026 from footage/1944-08-15-lst282.mp4: 0:12.0 to 0:20.0 and 0:57.0 to 1:05.0, the two strongest stretches of fire. Not the Rohna; no film of the Rohna exists.",
+  "hook": "A man in the bomber steered it by joystick.",
+  "sound": false
+ },
+ "kit": {
+  "file": "kits/dispatch-093-kit.md",
+  "caption": "A crewman steered this kind of bomb by joystick all the way to its target. This is what one hit did to USS LST-282.\n\nU.S. Army film, southern France, the night of 15 August 1944, nine months after the same weapon sank HMT Rohna and killed 1,015 Americans.",
+  "youtubeTitle": "Steered by Joystick: The Glide Bomb That Hit LST-282 #shorts",
+  "youtubeDescription": "A crewman steered this kind of bomb by joystick all the way to its target. This is what one hit did to USS LST-282.\n\nThe Henschel Hs 293 was a guided glide bomb: a small winged missile dropped from a bomber, boosted by a liquid fuel rocket that fired for about 10 seconds, then gliding onto a ship. A crewman in the bomber steered it all the way with a joystick, sending commands over a radio link (the FuG 203 transmitter) while he watched flares or a lamp on its tail. It was designed at Henschel by a team under Herbert Wagner, and it weighed about 1,045 kg. Its warhead was built from a 500 kg bomb. On 26 November 1943, about 16:30, Luftwaffe He 177 bombers with Ju 88 escorts attacked convoy KMF 26 off Bougie, Algeria. The He 177s launched a wave of Hs 293s. Between about 17:15 and 17:25, the He 177 flown by Hans Dochtermann released a glide bomb that struck the port side of HMT Rohna, a British India Steam Navigation troopship carrying American soldiers. Rohna was the only ship lost. 1,138 men died, 1,015 of them Americans, the largest loss of U.S. troops at sea from enemy action in a single incident. The loss was kept quiet. In February 1944 Washington admitted only that more than 1,000 men had died on an unnamed troopship, the ship was not named until 1945, and a fuller account came out only in 1967. The same weapon sank USS LST-282 off southern France on the evening of 15 August 1944, the first day of the landings there. Army cameramen filmed her burning that night.\n\nThis is U.S. Army Signal Corps film of USS LST-282 burning off southern France on the night of 15 August 1944, after a hit by the same weapon. It is not film of the Rohna. The original film is silent.\n\nFilm: U.S. Army Signal Corps, 111-ADC-1645, U.S. National Archives (catalog.archives.gov/id/15452), public domain.\nSources: Henschel Hs 293, Wikipedia; Missile, Air to Surface, Henschel Hs 293 A-1, Smithsonian National Air and Space Museum; Hitler's Precision Guided Bombs: Fritz X and Hs 293, The National WWII Museum; HMT Rohna, Wikipedia; John H. Lienhard, Glide Bombs, The Engines of Our Ingenuity No. 1583, University of Houston; The Sinking of the HMT Rohna, Army Heritage Center Foundation; Hs 293 A-1, Luftwaffe Resource Center, Warbirds Resource Group; LST-282, Dictionary of American Naval Fighting Ships, NHHC; USS LST-282, Wikipedia.\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\n\n#Shorts #WW2 #OnThisDay #History",
+  "tiktokCaption": "A crewman steered this kind of bomb by joystick all the way to its target. This is what one hit did to USS LST-282.\n\nU.S. Army film, southern France, the night of 15 August 1944, nine months after the same weapon sank HMT Rohna and killed 1,015 Americans.\n\n#WW2 #OnThisDay #History #HMTRohna",
+  "tiktokTitle": "Steered by Joystick: The Glide Bomb That Hit LST-282",
+  "hook": "A man in the bomber steered it by joystick.",
+  "thumbnailCheck": "Pass: first frame is LST-282 blazing at night behind trees, sparks in the air; at 2 seconds the fire flares through the balustrade. Opening tagged \"combat or firing\" from the frames at 0.3 and 2 seconds.",
+  "videoTime": "19:00 America/Denver",
+  "schedule": "Thu 26 Nov 2026, 7:00 p.m. Mountain, all six channels",
+  "scheduled": "Buffer, all six channels, 7 p.m. 26 Nov"
+ },
+ "buffer": {
+  "x_film": "6affdc2b738ce4635f8cbc51",
+  "instagram_reel": "6affdc2dd5f8acdd0d746570",
+  "threads_film": "6affdc2f4c1afd05def5c999",
+  "facebook_film": "6affdc314c1afd05def5ca2b",
+  "youtube": "6affdc3bd5f8acdd0d7468c1",
+  "tiktok": "6affdc3d0f5eda1a57c4cdb1",
+  "x": "6b0108ecd9cbb430a114c3ab",
+  "instagram": "6b0108f45102766245ef9d34",
+  "threads": "6b0108fc9ffbc8503cf300ca",
+  "facebook": "6b01090420a2d09a0acb498f"
+ },
+ "declass_line": false,
+ "body": "Hans Dochtermann released one glide bomb over a convoy off Algeria. It killed 1,015 Americans, and the full account did not come out until 1967.\n\n26 November 1943. Luftwaffe He 177s attacked convoy KMF 26 off Bougie late that afternoon and launched a wave of Hs 293s. Dochtermann's struck the port side of HMT Rohna, a troopship carrying American soldiers. 1,138 men died, the largest loss of U.S. troops at sea from enemy action in a single incident.\n\nThe Hs 293 was a small winged missile with a 10 second rocket boost and a warhead built on a 500 kg bomb. A crewman guided it over a radio link while watching a light on its tail.\n\nUSS Pioneer and two other ships pulled 819 survivors from the dark sea.",
+ "addons": [],
+ "hashtags": "#OnThisDay #WW2",
+ "threads": "Hans Dochtermann released one glide bomb over a convoy off Algeria. It killed 1,015 Americans.\n\n26 November 1943. The Hs 293 hit the troopship HMT Rohna, the largest loss of U.S. troops at sea from enemy action in a single incident. The ship was not named publicly until 1945.",
+ "focusX": 50,
+ "focusY": 50,
+ "zoom": 100
 }
