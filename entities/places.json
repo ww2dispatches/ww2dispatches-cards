@@ -131,6 +131,15 @@
   "lat": 37.9842,
   "lon": 23.7281
  },
+ "place-auburn-maine": {
+  "name": "Auburn, Maine",
+  "kind": "city",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Auburn,_Maine",
+  "lat": null,
+  "lon": null
+ },
  "place-auschwitz-concentration-camp": {
   "name": "Auschwitz concentration camp",
   "kind": "German concentration and extermination camp",
@@ -142,6 +151,15 @@
   ],
   "lat": 50.0358,
   "lon": 19.1783
+ },
+ "place-azores": {
+  "name": "Azores",
+  "kind": "island group",
+  "nation": "Portugal",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Azores",
+  "lat": null,
+  "lon": null
  },
  "place-balalae-island": {
   "name": "Ballale",
@@ -567,6 +585,19 @@
   "lat": -8.6667,
   "lon": 148.4
  },
+ "place-bungo-channel": {
+  "name": "Bungo Channel",
+  "kind": "strait",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bungo_Channel",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Bungo Strait",
+   "Bungo Suido"
+  ]
+ },
  "place-burauen": {
   "name": "Burauen",
   "kind": "town and airfields on Leyte",
@@ -853,6 +884,15 @@
   "lat": 51.1308,
   "lon": 12.8075
  },
+ "place-colmar": {
+  "name": "Colmar",
+  "kind": "city",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Colmar",
+  "lat": null,
+  "lon": null
+ },
  "place-cologne": {
   "name": "Cologne",
   "kind": "city",
@@ -943,6 +983,15 @@
   "nation": "Australia",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Darwin,_Northern_Territory",
+  "lat": null,
+  "lon": null
+ },
+ "place-davos": {
+  "name": "Davos",
+  "kind": "Swiss town",
+  "nation": "Switzerland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Davos",
   "lat": null,
   "lon": null
  },
@@ -1298,6 +1347,15 @@
   "lat": 50.9653,
   "lon": 6.1194
  },
+ "place-geneva": {
+  "name": "Geneva",
+  "kind": "city",
+  "nation": "Switzerland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Geneva",
+  "lat": null,
+  "lon": null
+ },
  "place-genthin": {
   "name": "Genthin",
   "kind": "town in Saxony-Anhalt",
@@ -1568,6 +1626,15 @@
   "lat": 54.1825,
   "lon": 7.8853
  },
+ "place-helsinki": {
+  "name": "Helsinki",
+  "kind": "capital city",
+  "nation": "Finland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Helsinki",
+  "lat": null,
+  "lon": null
+ },
  "place-henderson-field-guadalcanal": {
   "name": "Henderson Field",
   "kind": "airfield",
@@ -1576,6 +1643,18 @@
   "wikidata": "Q12259031",
   "lat": -9.4281,
   "lon": 160.0547
+ },
+ "place-herzogenbusch-concentration-camp": {
+  "name": "Herzogenbusch concentration camp",
+  "kind": "Nazi camp at Vught",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Herzogenbusch_concentration_camp",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Kamp Vught"
+  ]
  },
  "place-herzogenrath": {
   "name": "Herzogenrath",
@@ -1805,6 +1884,18 @@
   ],
   "lat": 41.1144,
   "lon": 121.1292
+ },
+ "place-johor-singapore-causeway": {
+  "name": "Johor-Singapore Causeway",
+  "kind": "causeway",
+  "nation": "Singapore",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Johor%E2%80%93Singapore_Causeway",
+  "aka": [
+   "Johore Causeway"
+  ],
+  "lat": null,
+  "lon": null
  },
  "place-julich": {
   "name": "Julich",
@@ -2133,6 +2224,18 @@
   "lat": 34.232,
   "lon": 132.554
  },
+ "place-kuril-islands": {
+  "name": "Kuril Islands",
+  "kind": "island chain",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kuril_Islands",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Kurile Islands"
+  ]
+ },
  "place-kuznica-zelichowska": {
   "name": "Kuźnica Żelichowska",
   "kind": "village",
@@ -2212,6 +2315,15 @@
   "lat": 50.8147,
   "lon": 6.3617
  },
+ "place-laurens-iowa": {
+  "name": "Laurens, Iowa",
+  "kind": "town",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Laurens,_Iowa",
+  "lat": null,
+  "lon": null
+ },
  "place-le-havre": {
   "name": "Le Havre",
   "kind": "port city",
@@ -2281,6 +2393,15 @@
   "source": "https://en.wikipedia.org/wiki/Lingayen_Gulf",
   "lat": 16.275,
   "lon": 120.1958
+ },
+ "place-livadia-palace": {
+  "name": "Livadia Palace",
+  "kind": "palace near Yalta, U.S. headquarters at the conference",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Livadia_Palace",
+  "lat": null,
+  "lon": null
  },
  "place-liverpool": {
   "name": "Liverpool",
@@ -2360,6 +2481,15 @@
    "LAX"
   ]
  },
+ "place-lutsk": {
+  "name": "Lutsk",
+  "kind": "city",
+  "nation": "Ukraine",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Lutsk",
+  "lat": null,
+  "lon": null
+ },
  "place-luzon": {
   "name": "Luzon",
   "kind": "island",
@@ -2384,6 +2514,15 @@
   "nation": "Germany",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Magdeburg",
+  "lat": null,
+  "lon": null
+ },
+ "place-majuro": {
+  "name": "Majuro",
+  "kind": "atoll",
+  "nation": "Marshall Islands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Majuro",
   "lat": null,
   "lon": null
  },
@@ -2416,6 +2555,15 @@
   "source": "https://en.wikipedia.org/wiki/Manchester",
   "lat": 53.4794,
   "lon": -2.2453
+ },
+ "place-mandatory-palestine": {
+  "name": "Mandatory Palestine",
+  "kind": "British mandate territory",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mandatory_Palestine",
+  "lat": null,
+  "lon": null
  },
  "place-manila": {
   "name": "Manila",
@@ -2901,6 +3049,15 @@
   "lat": 50.1286,
   "lon": 5.3419
  },
+ "place-nasugbu": {
+  "name": "Nasugbu",
+  "kind": "town and bay",
+  "nation": "Philippines",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Nasugbu",
+  "lat": null,
+  "lon": null
+ },
  "place-national-air-and-space-museum": {
   "name": "National Air and Space Museum",
   "kind": "museum",
@@ -3103,6 +3260,15 @@
   "lat": 36.0133,
   "lon": -84.2625
  },
+ "place-oder": {
+  "name": "Oder",
+  "kind": "river",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Oder",
+  "lat": null,
+  "lon": null
+ },
  "place-offenbach-am-main": {
   "name": "Offenbach am Main",
   "kind": "city",
@@ -3214,6 +3380,15 @@
   "lat": 49.4548,
   "lon": 11.0465
  },
+ "place-palawan": {
+  "name": "Palawan",
+  "kind": "Philippine island",
+  "nation": "Philippines",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Palawan",
+  "lat": null,
+  "lon": null
+ },
  "place-palembang": {
   "name": "Palembang",
   "kind": "city",
@@ -3300,6 +3475,15 @@
   "aka": [
    "Orly"
   ]
+ },
+ "place-pasig-river": {
+  "name": "Pasig River",
+  "kind": "river through Manila",
+  "nation": "Philippines",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Pasig_River",
+  "lat": null,
+  "lon": null
  },
  "place-pearl-harbor": {
   "name": "Pearl Harbor",
@@ -3487,6 +3671,15 @@
    "Pola"
   ]
  },
+ "place-pulau-ubin": {
+  "name": "Pulau Ubin",
+  "kind": "island off north east Singapore",
+  "nation": "Singapore",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Pulau_Ubin",
+  "lat": null,
+  "lon": null
+ },
  "place-qingdao": {
   "name": "Qingdao",
   "kind": "port city",
@@ -3591,6 +3784,15 @@
   "wikidata": "Q1003082",
   "lat": 40.6072,
   "lon": -74.2811
+ },
+ "place-ravensbruck-concentration-camp": {
+  "name": "Ravensbruck concentration camp",
+  "kind": "concentration camp",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ravensbr%C3%BCck_concentration_camp",
+  "lat": null,
+  "lon": null
  },
  "place-red-square": {
   "name": "Red Square",
@@ -3771,6 +3973,15 @@
   "lat": null,
   "lon": null
  },
+ "place-sainte-marie-aux-mines": {
+  "name": "Sainte-Marie-aux-Mines",
+  "kind": "town",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sainte-Marie-aux-Mines",
+  "lat": null,
+  "lon": null
+ },
  "place-saipan-northern-mariana-islands": {
   "name": "Saipan",
   "kind": "island",
@@ -3779,6 +3990,15 @@
   "wikidata": "Q51679",
   "lat": 15.1833,
   "lon": 145.75
+ },
+ "place-sakhalin-oblast": {
+  "name": "Sakhalin Oblast",
+  "kind": "Soviet province",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sakhalin_Oblast",
+  "lat": null,
+  "lon": null
  },
  "place-samar": {
   "name": "Samar",
@@ -3842,6 +4062,15 @@
   "source": "https://en.wikipedia.org/wiki/Santa_Cruz_Islands",
   "lat": -11,
   "lon": 166.25
+ },
+ "place-santo-tomas-internment-camp": {
+  "name": "Santo Tomas Internment Camp",
+  "kind": "civilian internment camp",
+  "nation": "Philippines",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Santo_Tomas_Internment_Camp",
+  "lat": null,
+  "lon": null
  },
  "place-savo-island": {
   "name": "Savo Island",
@@ -4183,6 +4412,15 @@
   "lat": 48.5819,
   "lon": 7.7511
  },
+ "place-stutthof-concentration-camp": {
+  "name": "Stutthof concentration camp",
+  "kind": "concentration camp",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Stutthof_concentration_camp",
+  "lat": null,
+  "lon": null
+ },
  "place-suez": {
   "name": "Suez",
   "kind": "port city",
@@ -4520,6 +4758,15 @@
   "lat": 9.97,
   "lon": 139.67
  },
+ "place-university-of-tehran": {
+  "name": "University of Tehran",
+  "kind": "university",
+  "nation": "Iran",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/University_of_Tehran",
+  "lat": null,
+  "lon": null
+ },
  "place-vagsoy-island": {
   "name": "Vågsøy (island)",
   "kind": "island",
@@ -4773,6 +5020,15 @@
   "lat": 51.4994,
   "lon": -0.1274
  },
+ "place-whitby": {
+  "name": "Whitby",
+  "kind": "town on the Yorkshire coast",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Whitby",
+  "lat": null,
+  "lon": null
+ },
  "place-white-house": {
   "name": "White House",
   "kind": "presidential residence",
@@ -4848,6 +5104,18 @@
   ],
   "lat": 16.795,
   "lon": 96.16
+ },
+ "place-yantarny-kaliningrad-oblast": {
+  "name": "Yantarny, Kaliningrad Oblast",
+  "kind": "town (formerly Palmnicken)",
+  "nation": "Russia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Yantarny,_Kaliningrad_Oblast",
+  "aka": [
+   "Palmnicken"
+  ],
+  "lat": null,
+  "lon": null
  },
  "place-yelabuga": {
   "name": "Yelabuga",

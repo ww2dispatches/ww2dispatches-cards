@@ -19,6 +19,13 @@
    "Saar plebiscite"
   ]
  },
+ "op-1936-winter-olympics": {
+  "name": "1936 Winter Olympics",
+  "kind": "Olympic Games at Garmisch-Partenkirchen",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1936_Winter_Olympics"
+ },
  "op-1940-united-states-presidential-election": {
   "name": "1940 presidential election",
   "kind": "U.S. election",
@@ -105,6 +112,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/1946_United_States_steel_strike"
  },
+ "op-20-july-plot": {
+  "name": "20 July plot",
+  "kind": "assassination attempt and coup",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/20_July_plot"
+ },
  "op-30-january-1939-reichstag-speech": {
   "name": "30 January 1939 Reichstag speech",
   "kind": "speech",
@@ -114,6 +128,13 @@
   "aka": [
    "Hitler's prophecy speech"
   ]
+ },
+ "op-6-february-1934-crisis": {
+  "name": "6 February 1934 crisis",
+  "kind": "riot and political crisis",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/6_February_1934_crisis"
  },
  "op-aarhus-air-raid": {
   "name": "Aarhus air raid",
@@ -354,6 +375,13 @@
   "wikidata": "Q703482",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Bataan"
  },
+ "op-battle-of-beda-fomm": {
+  "name": "Battle of Beda Fomm",
+  "kind": "battle",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Beda_Fomm"
+ },
  "op-battle-of-berlin-raf-campaign": {
   "name": "Battle of Berlin (RAF campaign)",
   "kind": "bombing campaign",
@@ -456,6 +484,16 @@
   "wikidata": "Q962370",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Hanoi_(1946)"
  },
+ "op-battle-of-hill-170": {
+  "name": "Battle of Hill 170",
+  "kind": "battle",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Hill_170",
+  "aka": [
+   "Battle of Kangaw"
+  ]
+ },
  "op-battle-of-himara": {
   "name": "Battle of Himara",
   "kind": "Greco-Italian War battle, December 1940",
@@ -557,6 +595,16 @@
    "Surigao Strait"
   ]
  },
+ "op-battle-of-makassar-strait": {
+  "name": "Battle of Makassar Strait",
+  "kind": "naval air action, 4 February 1942",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Makassar_Strait",
+  "aka": [
+   "Battle of the Flores Sea"
+  ]
+ },
  "op-battle-of-manado": {
   "name": "Battle of Manado",
   "kind": "battle, Dutch East Indies campaign",
@@ -650,6 +698,13 @@
   "nation": "New Zealand",
   "wikidata": "Q7207923",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Point_175"
+ },
+ "op-battle-of-port-moresby": {
+  "name": "Battle of Port Moresby",
+  "kind": "air campaign over Port Moresby 1942 to 1943",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Port_Moresby"
  },
  "op-battle-of-raate-road": {
   "name": "Battle of Raate Road",
@@ -776,6 +831,16 @@
   "nation": "Spain",
   "wikidata": "Q1467456",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Teruel"
+ },
+ "op-battle-of-the-admin-box": {
+  "name": "Battle of the Admin Box",
+  "kind": "battle",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_the_Admin_Box",
+  "aka": [
+   "Operation Ha-Go"
+  ]
  },
  "op-battle-of-the-atlantic": {
   "name": "Battle of the Atlantic",
@@ -1153,6 +1218,13 @@
   "wikidata": "Q5038376",
   "source": "https://en.wikipedia.org/wiki/Cardiff_Blitz"
  },
+ "op-careless-talk-costs-lives-propaganda": {
+  "name": "Careless Talk Costs Lives",
+  "kind": "British anti-gossip propaganda campaign",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Careless_Talk_Costs_Lives_(propaganda)"
+ },
  "op-casablanca-conference": {
   "name": "Casablanca Conference",
   "kind": "Allied conference",
@@ -1219,6 +1291,17 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Colmar_Pocket"
  },
+ "op-conference-for-the-reduction-and-limitation-of-armaments": {
+  "name": "Conference for the Reduction and Limitation of Armaments",
+  "kind": "international conference",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Conference_for_the_Reduction_and_Limitation_of_Armaments",
+  "aka": [
+   "World Disarmament Conference",
+   "Geneva Conference"
+  ]
+ },
  "op-constitution-of-italy": {
   "name": "Constitution of Italy",
   "kind": "constitution, approved 1947",
@@ -1271,6 +1354,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Convoy_PQ_8"
  },
+ "op-convoy-sc-118": {
+  "name": "Convoy SC 118",
+  "kind": "Allied Atlantic convoy",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Convoy_SC_118"
+ },
  "op-coventry-blitz": {
   "name": "Coventry Blitz",
   "kind": "German bombing raid",
@@ -1311,6 +1401,13 @@
   "nation": "worldwide",
   "wikidata": "Q176930",
   "source": "https://en.wikipedia.org/wiki/Declaration_by_United_Nations"
+ },
+ "op-decree-of-the-reich-president-for-the-protection-of-the-german-people": {
+  "name": "Decree for the Protection of the German People (4 February 1933)",
+  "kind": "emergency decree restricting the press and assembly",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Decree_of_the_Reich_President_for_the_Protection_of_the_German_People"
  },
  "op-defence-of-outpost-snipe": {
   "name": "Defence of Outpost Snipe",
@@ -1430,6 +1527,16 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Fall_of_Barcelona"
  },
+ "op-fall-of-singapore": {
+  "name": "Fall of Singapore",
+  "kind": "battle",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fall_of_Singapore",
+  "aka": [
+   "Battle of Singapore"
+  ]
+ },
  "op-fireside-chats": {
   "name": "Fireside chats",
   "kind": "Roosevelt's radio addresses",
@@ -1481,6 +1588,13 @@
   "nation": "US",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Fourth_inauguration_of_Franklin_D._Roosevelt"
+ },
+ "op-franco-british-plans-for-intervention-in-the-winter-war": {
+  "name": "Franco-British plans for intervention in the Winter War",
+  "kind": "Allied plan",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Franco-British_plans_for_intervention_in_the_Winter_War"
  },
  "op-franco-german-declaration": {
   "name": "Franco-German Declaration",
@@ -1534,6 +1648,20 @@
   "nation": "Germany",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/German%E2%80%93Polish_declaration_of_non-aggression"
+ },
+ "op-gilbert-and-marshall-islands-campaign": {
+  "name": "Gilbert and Marshall Islands campaign",
+  "kind": "campaign",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Gilbert_and_Marshall_Islands_campaign"
+ },
+ "op-gouzenko-affair": {
+  "name": "Gouzenko Affair",
+  "kind": "Soviet espionage case in Canada",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Gouzenko_Affair"
  },
  "op-gozen-kaigi": {
   "name": "Gozen Kaigi",
@@ -1941,6 +2069,16 @@
   "wikidata": "Q6658321",
   "source": "https://en.wikipedia.org/wiki/Liverpool_Blitz"
  },
+ "op-london-conference-of-1939": {
+  "name": "London Conference of 1939",
+  "kind": "conference on Palestine",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/London_Conference_of_1939",
+  "aka": [
+   "St James's Palace Conference"
+  ]
+ },
  "op-london-naval-treaty": {
   "name": "London Naval Conference and Treaty (1930)",
   "kind": "naval arms limitation conference and treaty",
@@ -2104,6 +2242,13 @@
    "Nanking Massacre",
    "Rape of Nanking"
   ]
+ },
+ "op-nanjing-war-crimes-tribunal": {
+  "name": "Nanjing War Crimes Tribunal",
+  "kind": "war crimes court",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Nanjing_War_Crimes_Tribunal"
  },
  "op-national-security-act-of-1947": {
   "name": "National Security Act of 1947",
@@ -2296,6 +2441,13 @@
   "nation": "Britain",
   "wikidata": "Q696018",
   "source": "https://en.wikipedia.org/wiki/Operation_Compass"
+ },
+ "op-operation-cornflakes": {
+  "name": "Operation Cornflakes",
+  "kind": "OSS morale operation",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Cornflakes"
  },
  "op-operation-crossbow": {
   "name": "Operation Crossbow",
@@ -2770,6 +2922,13 @@
   "aka": [
    "Porajmos"
   ]
+ },
+ "op-rovno-lutsk-offensive": {
+  "name": "Rovno Lutsk offensive",
+  "kind": "offensive",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Rovno%E2%80%93Lutsk_offensive"
  },
  "op-rumbula-massacre": {
   "name": "Rumbula massacre",
@@ -3404,6 +3563,13 @@
   "nation": "China",
   "wikidata": "Q244941",
   "source": "https://en.wikipedia.org/wiki/Xi%27an_Incident"
+ },
+ "op-yalta-conference": {
+  "name": "Yalta Conference",
+  "kind": "Allied conference, February 1945",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Yalta_Conference"
  },
  "op-yevpatoria-assault": {
   "name": "Yevpatoria assault",
