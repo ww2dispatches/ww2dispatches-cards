@@ -578,6 +578,13 @@
   "wikidata": "Q1995675",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Kota_Bharu"
  },
+ "op-battle-of-krasny-bor": {
+  "name": "Battle of Krasny Bor",
+  "kind": "Soviet offensive near Leningrad, February 1943",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Krasny_Bor"
+ },
  "op-battle-of-kuala-lumpur": {
   "name": "Battle of Kuala Lumpur",
   "kind": "battle, Malayan campaign",
@@ -1785,6 +1792,13 @@
   "wikidata": "Q217145",
   "source": "https://en.wikipedia.org/wiki/Guadalcanal_campaign"
  },
+ "op-hainan-island-operation": {
+  "name": "Hainan Island Operation",
+  "kind": "Japanese landing and occupation of Hainan, 1939",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hainan_Island_Operation"
+ },
  "op-hoare-laval-pact": {
   "name": "Hoare Laval Pact",
   "kind": "Anglo French plan to partition Ethiopia, 1935",
@@ -1864,6 +1878,13 @@
   "wikidata": "Q702729",
   "source": "https://en.wikipedia.org/wiki/Invasion_of_Lingayen_Gulf",
   "note": "Not the Japanese landing of December 1941 (op-japanese-invasion-of-lingayen-gulf)."
+ },
+ "op-istrian-dalmatian-exodus": {
+  "name": "Istrian Dalmatian exodus",
+  "kind": "postwar departure of Italians from Istria and Dalmatia",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Istrian%E2%80%93Dalmatian_exodus"
  },
  "op-it-s-that-man-again": {
   "name": "It's That Man Again",
@@ -2526,6 +2547,13 @@
   "wikidata": "Q2026003",
   "source": "https://en.wikipedia.org/wiki/Operation_Carpetbagger"
  },
+ "op-operation-colossus": {
+  "name": "Operation Colossus",
+  "kind": "British airborne raid on the Tragino aqueduct, 1941",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Colossus"
+ },
  "op-operation-compass": {
   "name": "Operation Compass",
   "kind": "British offensive in Egypt and Libya",
@@ -2584,6 +2612,13 @@
   "nation": "Germany",
   "wikidata": "Q167002",
   "source": "https://en.wikipedia.org/wiki/Operation_Greif"
+ },
+ "op-operation-grenade": {
+  "name": "Operation Grenade",
+  "kind": "U.S. Ninth Army crossing of the Roer, February 1945",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Grenade"
  },
  "op-operation-hannibal": {
   "name": "Operation Hannibal",
@@ -2818,6 +2853,13 @@
   "wikidata": "Q1907398",
   "source": "https://en.wikipedia.org/wiki/Panjiayu_Massacre"
  },
+ "op-paris-peace-treaties-1947": {
+  "name": "Paris Peace Treaties, 1947",
+  "kind": "peace treaties with Italy, Romania, Hungary, Bulgaria and Finland",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Paris_Peace_Treaties,_1947"
+ },
  "op-parit-sulong-massacre": {
   "name": "Parit Sulong Massacre",
   "kind": "massacre of prisoners of war",
@@ -2907,6 +2949,13 @@
   "nation": "US",
   "wikidata": "Q7261217",
   "source": "https://en.wikipedia.org/wiki/Purge_(occupied_Japan)"
+ },
+ "op-quit-india-movement": {
+  "name": "Quit India Movement",
+  "kind": "Indian campaign for British withdrawal, 1942",
+  "nation": "India",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Quit_India_Movement"
  },
  "op-raczynski-s-note": {
   "name": "Raczyński's Note",
@@ -3267,6 +3316,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q2006230",
   "source": "https://en.wikipedia.org/wiki/Soviet_atomic_bomb_project"
+ },
+ "op-soviet-repressions-of-polish-citizens-1939-1946": {
+  "name": "Soviet repressions of Polish citizens (1939 to 1946)",
+  "kind": "Soviet arrests and mass deportations of Polish citizens",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Soviet_repressions_of_Polish_citizens_(1939%E2%80%931946)"
  },
  "op-spanish-civil-war": {
   "name": "Spanish Civil War",

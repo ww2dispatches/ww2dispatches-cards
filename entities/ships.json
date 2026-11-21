@@ -301,6 +301,13 @@
   "wikidata": "Q554568",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-132_(1941)"
  },
+ "ship-german-submarine-u-136-1941": {
+  "name": "German submarine U-136 (1941)",
+  "kind": "German Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-136_(1941)"
+ },
  "ship-german-submarine-u-15-1936": {
   "name": "German submarine U-15 (1936)",
   "kind": "Type IIB U-boat",
@@ -526,6 +533,13 @@
   "wikidata": "Q2064178",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-486"
  },
+ "ship-german-submarine-u-545": {
+  "name": "German submarine U-545",
+  "kind": "German Type IXC/40 U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-545"
+ },
  "ship-german-submarine-u-55-1939": {
   "name": "German submarine U-55 (1939)",
   "kind": "Type VIIB U-boat",
@@ -629,6 +643,13 @@
   "nation": "Germany",
   "wikidata": "Q12804806",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-679"
+ },
+ "ship-german-submarine-u-714": {
+  "name": "German submarine U-714",
+  "kind": "German Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-714"
  },
  "ship-german-submarine-u-73-1940": {
   "name": "U-73",
@@ -781,6 +802,13 @@
   "nation": "Canada",
   "wikidata": "Q15222437",
   "source": "https://en.wikipedia.org/wiki/HMCS_Louisburg_(K143)"
+ },
+ "ship-hmcs-spikenard": {
+  "name": "HMCS Spikenard (K198)",
+  "kind": "Canadian Flower class corvette",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMCS_Spikenard"
  },
  "ship-hmcs-st-thomas": {
   "name": "HMCS St. Thomas (K488)",
@@ -2180,6 +2208,13 @@
   "wikidata": "Q2124409",
   "source": "https://en.wikipedia.org/wiki/RMS_Lady_Hawkins"
  },
+ "ship-rms-queen-mary": {
+  "name": "RMS Queen Mary",
+  "kind": "British ocean liner and troopship",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/RMS_Queen_Mary"
+ },
  "ship-rv-petrel": {
   "name": "RV Petrel",
   "kind": "research ship",
@@ -2331,6 +2366,13 @@
   "aka": [
    "Fairport"
   ]
+ },
+ "ship-ss-general-von-steuben": {
+  "name": "SS General von Steuben",
+  "kind": "German liner, later a Kriegsmarine transport",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_General_von_Steuben"
  },
  "ship-ss-india-arrow": {
   "name": "SS India Arrow",

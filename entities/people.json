@@ -1336,6 +1336,13 @@
   "wikidata": "Q354486",
   "source": "https://en.wikipedia.org/wiki/Emilio_De_Bono"
  },
+ "person-emilio-esteban-infantes": {
+  "name": "Emilio Esteban Infantes",
+  "kind": "Spanish general, commander of the Blue Division",
+  "nation": "Spain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Emilio_Esteban_Infantes"
+ },
  "person-emmett-odonnell": {
   "name": "Emmett O'Donnell Jr.",
   "kind": "U.S. Army Air Forces general",
@@ -3887,6 +3894,16 @@
   "source": "https://en.wikipedia.org/wiki/Madeleine_Lebeau",
   "wikidata": "Q456390"
  },
+ "person-mahatma-gandhi": {
+  "name": "Mahatma Gandhi",
+  "kind": "Indian independence leader",
+  "nation": "India",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mahatma_Gandhi",
+  "aka": [
+   "Mohandas Gandhi"
+  ]
+ },
  "person-mamoru-shigemitsu": {
   "name": "Mamoru Shigemitsu",
   "kind": "Japanese diplomat, ambassador to Britain in 1941",
@@ -3959,6 +3976,13 @@
   "nation": "US",
   "wikidata": "Q266959",
   "source": "https://en.wikipedia.org/wiki/Margaret_Truman"
+ },
+ "person-maria-pasquinelli": {
+  "name": "Maria Pasquinelli",
+  "kind": "Italian teacher who killed Brigadier Robert de Winton at Pola",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Maria_Pasquinelli"
  },
  "person-mario-arillo": {
   "name": "Mario Arillo",
@@ -4634,6 +4658,13 @@
    "Phibun",
    "Pibul Songgram"
   ]
+ },
+ "person-pope-pius-xi": {
+  "name": "Pope Pius XI",
+  "kind": "pope, head of the Catholic Church 1922 to 1939",
+  "nation": "Vatican City",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Pope_Pius_XI"
  },
  "person-pope-pius-xii": {
   "name": "Pope Pius XII",
@@ -5420,6 +5451,13 @@
   "wikidata": "Q60525",
   "source": "https://en.wikipedia.org/wiki/Veit_Harlan"
  },
+ "person-vesta-stoudt": {
+  "name": "Vesta Stoudt",
+  "kind": "war plant worker, proposed cloth tape for ammunition boxes",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Vesta_Stoudt"
+ },
  "person-vic-oliver": {
   "name": "Vic Oliver",
   "kind": "actor and musician, first Desert Island Discs castaway",
@@ -5447,6 +5485,16 @@
   "nation": "Italy",
   "wikidata": "Q150642",
   "source": "https://en.wikipedia.org/wiki/Victor_Emmanuel_III"
+ },
+ "person-victor-hope-2nd-marquess-of-linlithgow": {
+  "name": "Victor Hope, 2nd Marquess of Linlithgow",
+  "kind": "Viceroy of India",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Victor_Hope,_2nd_Marquess_of_Linlithgow",
+  "aka": [
+   "Lord Linlithgow"
+  ]
  },
  "person-vidkun-quisling": {
   "name": "Vidkun Quisling",

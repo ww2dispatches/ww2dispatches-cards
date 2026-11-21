@@ -116,6 +116,18 @@
    "The Factory"
   ]
  },
+ "place-aprilia-lazio": {
+  "name": "Aprilia, Lazio",
+  "kind": "town at Anzio known to the Allies as the Factory",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Aprilia,_Lazio",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "the Factory"
+  ]
+ },
  "place-arc-de-triomphe": {
   "name": "Arc de Triomphe",
   "kind": "monument",
@@ -664,6 +676,15 @@
   "wikidata": "Q18205754",
   "lat": 30.1164,
   "lon": 30.9154
+ },
+ "place-calitri": {
+  "name": "Calitri",
+  "kind": "town in Campania, Italy, near the Tragino aqueduct",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Calitri",
+  "lat": null,
+  "lon": null
  },
  "place-camp-upton": {
   "name": "Camp Upton",
@@ -1293,6 +1314,15 @@
   "lat": 45.0461,
   "lon": 35.3788
  },
+ "place-ford-river-rouge-complex": {
+  "name": "Ford River Rouge complex",
+  "kind": "Ford factory complex, Dearborn, Michigan",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ford_River_Rouge_complex",
+  "lat": null,
+  "lon": null
+ },
  "place-fort-belvedere": {
   "name": "Fort Belvedere",
   "kind": "country house in Windsor Great Park",
@@ -1488,6 +1518,15 @@
   "wikidata": "Q130958",
   "lat": 29.9753,
   "lon": 31.1377
+ },
+ "place-green-river-ordnance-plant": {
+  "name": "Green River Ordnance Plant",
+  "kind": "U.S. ammunition plant near Amboy, Illinois",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Green_River_Ordnance_Plant",
+  "lat": null,
+  "lon": null
  },
  "place-greenland": {
   "name": "Greenland",
@@ -4012,6 +4051,18 @@
   "source": "https://en.wikipedia.org/wiki/Royal_Palace_of_Amsterdam",
   "lat": 52.3732,
   "lon": 4.8914
+ },
+ "place-rur-dam": {
+  "name": "Rur Dam",
+  "kind": "dam on the Roer (Rur) at Schwammenauel, Germany",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Rur_Dam",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Schwammenauel Dam"
+  ]
  },
  "place-sachsenhausen-concentration-camp": {
   "name": "Sachsenhausen",

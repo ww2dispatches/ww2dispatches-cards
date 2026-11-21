@@ -137,6 +137,13 @@
   "wikidata": "Q1133887",
   "source": "https://en.wikipedia.org/wiki/Der_Fuehrer%27s_Face"
  },
+ "machine-duct-tape": {
+  "name": "Duct tape",
+  "kind": "cloth backed waterproof adhesive tape",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Duct_tape"
+ },
  "machine-ejection-seat": {
   "name": "Ejection seat",
   "kind": "aircraft escape device",
@@ -250,6 +257,13 @@
   "aka": [
    "Hs 293"
   ]
+ },
+ "machine-humani-generis-unitas": {
+  "name": "Humani generis unitas",
+  "kind": "draft encyclical against racism and antisemitism, never issued",
+  "nation": "Vatican City",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Humani_generis_unitas"
  },
  "machine-imperial-regalia-of-the-holy-roman-empire": {
   "name": "Imperial Regalia of the Holy Roman Empire",

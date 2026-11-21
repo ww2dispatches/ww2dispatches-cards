@@ -1049,6 +1049,13 @@
    "Ninth Army"
   ]
  },
+ "unit-9th-infantry-division-united-states": {
+  "name": "9th Infantry Division (United States)",
+  "kind": "U.S. Army infantry division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/9th_Infantry_Division_(United_States)"
+ },
  "unit-9th-marine-regiment": {
   "name": "9th Marines",
   "kind": "U.S. Marine Corps regiment",
@@ -1105,6 +1112,13 @@
    "ABDA"
   ],
   "note": "Joint command of the US, Britain, the Netherlands, and Australia"
+ },
+ "unit-american-youth-congress": {
+  "name": "American Youth Congress",
+  "kind": "American youth organization",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/American_Youth_Congress"
  },
  "unit-anglo-french-supreme-war-council": {
   "name": "Anglo-French Supreme War Council",
@@ -1216,6 +1230,16 @@
   "nation": "Soviet Union",
   "wikidata": "Q934022",
   "source": "https://en.wikipedia.org/wiki/Black_Sea_Fleet"
+ },
+ "unit-blue-division": {
+  "name": "Blue Division",
+  "kind": "Spanish volunteer division, the Wehrmacht's 250th Infantry Division",
+  "nation": "Spain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Blue_Division",
+  "aka": [
+   "250th Infantry Division"
+  ]
  },
  "unit-board-of-trade": {
   "name": "Board of Trade",
@@ -2400,6 +2424,13 @@
   "aka": [
    "S-1 Section"
   ]
+ },
+ "unit-scots-guards": {
+  "name": "Scots Guards",
+  "kind": "British Army foot guards regiment",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Scots_Guards"
  },
  "unit-scouting-america": {
   "name": "Boy Scouts of America",

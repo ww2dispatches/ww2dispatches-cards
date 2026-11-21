@@ -14,6 +14,13 @@
   "source": "https://pacificwrecks.com/aircraft/b-25/41-12485.html",
   "note": "No Wikipedia article; id from the aircraft's nickname. Source is Pacific Wrecks. Earns its own entity because the reserved 18 Jan 2027 5 p.m. card is about her."
  },
+ "aircraft-armstrong-whitworth-whitley": {
+  "name": "Armstrong Whitworth Whitley",
+  "kind": "British medium bomber",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Armstrong_Whitworth_Whitley"
+ },
  "aircraft-avro-lancaster": {
   "name": "Avro Lancaster",
   "kind": "British four engine heavy bomber",
