@@ -2,6 +2,8 @@
 
 A period plotting table, in motion. Wooden pieces are pushed across a glossy campaign map, one clip for every day of a Campaign Series, so followers watch the front line move and come back to see where it stands tomorrow. It is the third part of the Campaign Series (named The Map Room on 20 Nov 2026), beside Day by Day and The Chronicle.
 
+**Who does what (21 Nov 2026):** see the Project doc "WW2 Dispatches Map Room Roles". This chat plans, checks, owns this doc and `FORMAT.md`, and writes engine changes as requests in `map-room/HANDOFF.md`; Map Room Desktop (Claude Code on Brian's desktop) owns the engine code and renders every clip on its GPU.
+
 **Status, 20 Nov 2026 (evening): format 2, approved by Brian and built.** The clip is now a balcony and focus zoom (see "Format 2" under The look). The format, the checker, the engine and the fact check tools are in the cards repo under `map-room/`; `map-room/FORMAT.md` is the single source for the format. Earlier parts of this doc that describe fixed views, six to eight large blocks or `check_record.py` are history. Nothing has posted; the Bulge sitting (26 to 29 Nov) writes the first real series.
 
 ## Why this exists
@@ -78,6 +80,7 @@ Why: with real positions on the traced map, blocks sized for the screen buried t
 * **No ring for an encirclement** (Brian): the line going around the unit on the day it happens tells it.
 * **Sound:** sound C, with the war room bed replaced by the Declass soundboard's Ops room ambience (`declass_ambience_ops_room_v02.wav`, Brian: the generated teletype bed sounded like a keyboard).
 * **Aircraft (Brian, 21 Nov 2026):** an aircraft block appears only on its mission day. The rake pushes it a short way in from the frame edge toward its bases; a dashed black grease pencil track develops one dash at a time straight over the drop zone (Brian: a supply drop flies over Bastogne, not around it), turns a half circle beyond it, and comes back; a rake reaching in from beyond the edge pulls the block back out of frame (the rake's first pull); the track fades. No grounded move: Brian, it overly complicates things. **The block says what the aircraft are doing** (Supply Drop, Glider Drop, Air Strike), not the unit's name (Brian: Troop Carrier on a supply drop is confusing). Air tracks are black so they never read as the front line.
+* **The key card (Brian, 21 Nov 2026):** on a series' first three days a cream index card lies on the table in the balcony shot (nations, front line, air dashes, block size, north), placed by the engine in the clearest space and fading as the camera comes down. The key also goes in the kickoff post and the book. Brian looked at the bottom band under the strip and turned down a printed legend there (too busy, text on text, and covered by the apps' captions).
 * **Quiet days:** a day with no moves gets a balcony only clip, the morning line wiped and the night line drawn; if nothing changed at all, the checker asks the Campaign Series chat to confirm.
 * **Maps:** rivers traced from the 25 Dec 1944 situation map and set to the true positions of the towns on them; borders from Natural Earth; main roads schematic; towns in three levels. In `map-room/series/bulge-1944/geo/`.
 
@@ -244,6 +247,7 @@ Lines for other chats. Nothing here is live until Brian approves this doc.
 * **Website: Build and Fixes chat:** after approval, show each day's table on its day page, then the stepping table in Chronicle chapters.
 
 ## Changelog
+* 21 Nov 2026 (Map Room build chat): key card built (`engine/keycard.py`), shown on a series' first `keyDays` days; pointer to the Map Room Roles doc added. Engine code now belongs to Map Room Desktop; this chat writes requests in `map-room/HANDOFF.md`.
 * 21 Nov 2026 (Map Room build chat): aircraft missions (push in from the frame edge, dashed black track to the drop zone with a half circle turn, rake pull back out, track fades) and quiet day balcony clips built and tested; grounded dropped (Brian). Test days 12 and 13 in `test/series-proof`.
 * 20 Nov 2026 (Map Room build chat, evening): **format 2.** Real maps traced (step 4). With real positions the large blocks buried the map, so the format was rebuilt with Brian around a balcony and focus zoom: 10 km blocks, one balcony view per series, a focus per day, the line edge to edge, driven blocks sliding aside, the Ops room ambience as the bed, and a three part fact check (checker, overlay sheet on the day's situation map, blind second read). Roster per series and days that record only what changed. Format, checker, engine and tools built and pushed; the Campaign Series handoff rewritten.
 * 20 Nov 2026 (Map Room build chat): Brian's review of the step 3 tests recorded: map first, no blocks pushed into or over each other, attacks drive enemy blocks back; layout, opening view and block size held until the map exists. Library of Congress situation maps confirmed downloadable for the trace.
