@@ -675,6 +675,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-620"
  },
+ "ship-german-submarine-u-623": {
+  "name": "German submarine U-623",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-623"
+ },
  "ship-german-submarine-u-629": {
   "name": "German submarine U-629",
   "kind": "Type VIIC U-boat",
@@ -1252,6 +1259,13 @@
   "nation": "Britain",
   "wikidata": "Q1550343",
   "source": "https://en.wikipedia.org/wiki/HMS_Kandahar"
+ },
+ "ship-hms-king-george-v-41": {
+  "name": "HMS King George V (41)",
+  "kind": "King George V class battleship",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_King_George_V_(41)"
  },
  "ship-hms-kipling": {
   "name": "HMS Kipling (F91)",
@@ -2841,6 +2855,13 @@
   "nation": "US",
   "wikidata": "Q3268963",
   "source": "https://en.wikipedia.org/wiki/USS_Bergall_(SS-320)"
+ },
+ "ship-uss-bismarck-sea": {
+  "name": "USS Bismarck Sea (CVE-95)",
+  "kind": "Casablanca class escort carrier",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Bismarck_Sea"
  },
  "ship-uss-blackfin": {
   "name": "USS Blackfin (SS-322)",

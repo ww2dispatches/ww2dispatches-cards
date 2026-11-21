@@ -27,6 +27,16 @@
    "88 mm gun"
   ]
  },
+ "machine-affiche-rouge": {
+  "name": "Affiche Rouge",
+  "kind": "German propaganda poster, 1944",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Affiche_Rouge",
+  "aka": [
+   "Red Poster"
+  ]
+ },
  "machine-aggregat": {
   "name": "Aggregat",
   "kind": "German Army rocket family, A1 to A12",
@@ -91,6 +101,13 @@
   "nation": "US",
   "wikidata": "Q4389317",
   "source": "https://en.wikipedia.org/wiki/Cathode-ray_tube_amusement_device"
+ },
+ "machine-cavity-magnetron": {
+  "name": "Cavity magnetron",
+  "kind": "microwave generating valve for radar",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Cavity_magnetron"
  },
  "machine-chariot-manned-torpedo": {
   "name": "Chariot manned torpedo",
@@ -255,6 +272,13 @@
   "source": "https://en.wikipedia.org/wiki/General_Electric_J31",
   "wikidata": "Q2450750"
  },
+ "machine-god-is-my-co-pilot-film": {
+  "name": "God Is My Co-Pilot (film)",
+  "kind": "1945 war film",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/God_Is_My_Co-Pilot_(film)"
+ },
  "machine-goliath-tracked-mine": {
   "name": "Goliath tracked mine",
   "kind": "remote controlled demolition vehicle",
@@ -295,6 +319,13 @@
   "aka": [
    "Reichskleinodien"
   ]
+ },
+ "machine-instant-camera": {
+  "name": "Instant camera",
+  "kind": "camera that develops its own print",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Instant_camera"
  },
  "machine-it-s-a-wonderful-life": {
   "name": "It's a Wonderful Life",

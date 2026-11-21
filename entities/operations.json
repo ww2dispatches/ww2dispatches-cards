@@ -790,6 +790,13 @@
   "wikidata": "Q335288",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Monte_Cassino"
  },
+ "op-battle-of-monte-castello": {
+  "name": "Battle of Monte Castello",
+  "kind": "Italian campaign battle",
+  "nation": "Brazil",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Monte_Castello"
+ },
  "op-battle-of-moscow": {
   "name": "Battle of Moscow",
   "kind": "battle",
@@ -2795,6 +2802,13 @@
   "wikidata": "Q2026003",
   "source": "https://en.wikipedia.org/wiki/Operation_Carpetbagger"
  },
+ "op-operation-cleanslate": {
+  "name": "Operation Cleanslate",
+  "kind": "occupation of the Russell Islands",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Cleanslate"
+ },
  "op-operation-colossus": {
   "name": "Operation Colossus",
   "kind": "British airborne raid on the Tragino aqueduct, 1941",
@@ -2836,6 +2850,13 @@
   "nation": "Britain",
   "wikidata": "Q327085",
   "source": "https://en.wikipedia.org/wiki/Operation_Crusader"
+ },
+ "op-operation-encore": {
+  "name": "Operation Encore",
+  "kind": "U.S. Fifth Army offensive in the Apennines",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Encore"
  },
  "op-operation-excess": {
   "name": "Operation Excess",

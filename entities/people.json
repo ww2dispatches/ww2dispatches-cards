@@ -984,6 +984,13 @@
   "wikidata": "Q706143",
   "source": "https://en.wikipedia.org/wiki/David_Frankfurter"
  },
+ "person-david-gray-diplomat": {
+  "name": "David Gray",
+  "kind": "U.S. minister to Ireland",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/David_Gray_(diplomat)"
+ },
  "person-david-m-shoup": {
   "name": "David M. Shoup",
   "kind": "U.S. Marine Corps officer, Medal of Honor",
@@ -1281,6 +1288,13 @@
    "Duke of Windsor"
   ]
  },
+ "person-edwin-h-land": {
+  "name": "Edwin H. Land",
+  "kind": "inventor, founder of Polaroid",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Edwin_H._Land"
+ },
  "person-edwin-hubble": {
   "name": "Edwin Hubble",
   "kind": "American astronomer",
@@ -1481,6 +1495,13 @@
   "aka": [
    "Sir Eric Drummond"
   ]
+ },
+ "person-eric-liddell": {
+  "name": "Eric Liddell",
+  "kind": "Scottish Olympic champion and missionary",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Eric_Liddell"
  },
  "person-erich-bey": {
   "name": "Erich Bey",
@@ -1886,6 +1907,13 @@
   "nation": "France",
   "wikidata": "Q150989",
   "source": "https://en.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Joliot-Curie"
+ },
+ "person-frederick-banting": {
+  "name": "Frederick Banting",
+  "kind": "Canadian scientist, co discoverer of insulin",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Frederick_Banting"
  },
  "person-frederick-dalrymple-hamilton": {
   "name": "Frederick Dalrymple-Hamilton",
@@ -2436,6 +2464,13 @@
   "nation": "Germany",
   "wikidata": "Q66784",
   "source": "https://en.wikipedia.org/wiki/Harro_Schulze-Boysen"
+ },
+ "person-harry-boot": {
+  "name": "Harry Boot",
+  "kind": "British physicist, co inventor of the cavity magnetron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Harry_Boot"
  },
  "person-harry-hopkins": {
   "name": "Harry Hopkins",
@@ -3478,6 +3513,13 @@
   "wikidata": "Q15436132",
   "source": "https://en.wikipedia.org/wiki/John_R._Sinnock"
  },
+ "person-john-randall-physicist": {
+  "name": "John Randall",
+  "kind": "British physicist, co inventor of the cavity magnetron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/John_Randall_(physicist)"
+ },
  "person-john-robert-osborn": {
   "name": "John Robert Osborn",
   "kind": "Canadian company sergeant major, Victoria Cross",
@@ -4319,6 +4361,16 @@
    "Kimura Masanori"
   ]
  },
+ "person-mascarenhas-de-morais": {
+  "name": "Mascarenhas de Morais",
+  "kind": "commander of the Brazilian Expeditionary Force",
+  "nation": "Brazil",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mascarenhas_de_Morais",
+  "aka": [
+   "João Baptista Mascarenhas de Morais"
+  ]
+ },
  "person-matome-ugaki": {
   "name": "Matome Ugaki",
   "kind": "admiral, Combined Fleet chief of staff",
@@ -4451,6 +4503,13 @@
   "wikidata": "Q14946693",
   "source": "https://en.wikipedia.org/wiki/Minnie_Louise_Haskins"
  },
+ "person-missak-manouchian": {
+  "name": "Missak Manouchian",
+  "kind": "French Resistance leader, FTP MOI",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Missak_Manouchian"
+ },
  "person-mitsumasa-yonai": {
   "name": "Mitsumasa Yonai",
   "kind": "admiral and prime minister",
@@ -4559,6 +4618,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q299364",
   "source": "https://en.wikipedia.org/wiki/Nikolai_Vatutin"
+ },
+ "person-nikolaus-von-falkenhorst": {
+  "name": "Nikolaus von Falkenhorst",
+  "kind": "German general, commander of the invasion of Norway",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Nikolaus_von_Falkenhorst"
  },
  "person-nikolay-dyatlenko": {
   "name": "Nikolay Dyatlenko",
@@ -5107,6 +5173,16 @@
   "wikidata": "Q3430720",
   "source": "https://en.wikipedia.org/wiki/Richard_Dimbleby"
  },
+ "person-richard-glucks": {
+  "name": "Richard Glucks",
+  "kind": "head of the SS Concentration Camps Inspectorate",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Richard_Gl%C3%BCcks",
+  "aka": [
+   "Richard Glücks"
+  ]
+ },
  "person-richard-hillary": {
   "name": "Richard Hillary",
   "kind": "RAF fighter pilot and author of The Last Enemy",
@@ -5205,6 +5281,13 @@
   "nation": "US",
   "wikidata": "Q716955",
   "source": "https://en.wikipedia.org/wiki/Robert_L._Eichelberger"
+ },
+ "person-robert-lee-scott-jr": {
+  "name": "Robert Lee Scott Jr.",
+  "kind": "U.S. Air Force general and author",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Robert_Lee_Scott_Jr."
  },
  "person-robert-morgan": {
   "name": "Robert K. Morgan",

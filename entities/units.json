@@ -58,6 +58,13 @@
   "source": "https://en.wikipedia.org/wiki/10th_Infantry_Regiment_(United_States)",
   "wikidata": "Q4547071"
  },
+ "unit-10th-panzer-division-wehrmacht": {
+  "name": "10th Panzer Division",
+  "kind": "German armoured division",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/10th_Panzer_Division_(Wehrmacht)"
+ },
  "unit-10th-royal-hussars": {
   "name": "10th Hussars",
   "kind": "British cavalry regiment",
@@ -408,6 +415,13 @@
   "nation": "Germany",
   "source": "https://en.wikipedia.org/wiki/25th_Panzergrenadier_Division",
   "wikidata": "Q217468"
+ },
+ "unit-26th-armoured-brigade": {
+  "name": "26th Armoured Brigade",
+  "kind": "British armoured brigade",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/26th_Armoured_Brigade"
  },
  "unit-26th-cavalry-regiment-philippine-scouts": {
   "name": "26th Cavalry Regiment (Philippine Scouts)",
@@ -1320,6 +1334,16 @@
   "wikidata": "Q887543",
   "source": "https://en.wikipedia.org/wiki/Board_of_Trade"
  },
+ "unit-brazilian-expeditionary-force": {
+  "name": "Brazilian Expeditionary Force",
+  "kind": "Brazilian force in Italy",
+  "nation": "Brazil",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Brazilian_Expeditionary_Force",
+  "aka": [
+   "FEB"
+  ]
+ },
  "unit-british-battalion-malaya-1941": {
   "name": "British Battalion (Malaya 1941)",
   "kind": "merged infantry battalion (Leicesters and East Surreys)",
@@ -2186,6 +2210,13 @@
   "nation": "Britain",
   "wikidata": "Q7042904",
   "source": "https://en.wikipedia.org/wiki/No._12_Commando"
+ },
+ "unit-no-120-squadron-raf": {
+  "name": "No. 120 Squadron RAF",
+  "kind": "RAF Coastal Command squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._120_Squadron_RAF"
  },
  "unit-no-138-squadron-raf": {
   "name": "No. 138 Squadron RAF",

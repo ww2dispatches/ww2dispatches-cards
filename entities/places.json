@@ -1438,6 +1438,18 @@
   "lat": 49.1168,
   "lon": 6.067
  },
+ "place-fort-mont-valerien": {
+  "name": "Fort Mont-Valerien",
+  "kind": "fort west of Paris, execution site",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fort_Mont-Val%C3%A9rien",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Mont Valérien"
+  ]
+ },
  "place-fort-stanton": {
   "name": "Fort Stanton",
   "kind": "fort and internment camp, New Mexico",
@@ -3332,6 +3344,15 @@
   "lat": null,
   "lon": null
  },
+ "place-musgrave-harbour": {
+  "name": "Musgrave Harbour",
+  "kind": "town in Newfoundland",
+  "nation": "Newfoundland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Musgrave_Harbour",
+  "lat": null,
+  "lon": null
+ },
  "place-myanmar": {
   "name": "Myanmar",
   "kind": "country in Southeast Asia",
@@ -4260,6 +4281,15 @@
    "Schwammenauel Dam"
   ]
  },
+ "place-russell-islands": {
+  "name": "Russell Islands",
+  "kind": "island group in the Solomons",
+  "nation": "Solomon Islands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Russell_Islands",
+  "lat": null,
+  "lon": null
+ },
  "place-sachsenhausen-concentration-camp": {
   "name": "Sachsenhausen",
   "kind": "Nazi concentration camp",
@@ -4981,6 +5011,15 @@
   "lat": 40.3436,
   "lon": -1.1072
  },
+ "place-thala-tunisia": {
+  "name": "Thala",
+  "kind": "town in Tunisia",
+  "nation": "Tunisia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Thala,_Tunisia",
+  "lat": null,
+  "lon": null
+ },
  "place-thames-estuary": {
   "name": "Thames Estuary",
   "kind": "estuary",
@@ -5462,6 +5501,18 @@
   "source": "https://en.wikipedia.org/wiki/Wawer",
   "lat": 52.2139,
   "lon": 21.1581
+ },
+ "place-weixian-internment-camp": {
+  "name": "Weixian Internment Camp",
+  "kind": "Japanese civilian internment camp in Shandong",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Weixian_Internment_Camp",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Weihsien"
+  ]
  },
  "place-wendover-air-force-base": {
   "name": "Wendover Air Force Base",
