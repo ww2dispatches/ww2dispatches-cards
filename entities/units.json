@@ -239,6 +239,16 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/179th_Infantry_Regiment_(United_States)"
  },
+ "unit-19th-army-wehrmacht": {
+  "name": "19th Army (Wehrmacht)",
+  "kind": "German field army",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/19th_Army_(Wehrmacht)",
+  "aka": [
+   "Nineteenth Army"
+  ]
+ },
  "unit-19th-route-army": {
   "name": "19th Route Army",
   "kind": "Chinese army",
@@ -1526,6 +1536,13 @@
    "American Volunteer Group",
    "AVG"
   ]
+ },
+ "unit-force-h": {
+  "name": "Force H",
+  "kind": "Royal Navy squadron based at Gibraltar",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Force_H"
  },
  "unit-force-k": {
   "name": "Force K",

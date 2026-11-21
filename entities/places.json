@@ -1426,6 +1426,15 @@
   "lat": 46.2,
   "lon": 6.15
  },
+ "place-genoa": {
+  "name": "Genoa",
+  "kind": "Italian port city",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Genoa",
+  "lat": null,
+  "lon": null
+ },
  "place-genthin": {
   "name": "Genthin",
   "kind": "town in Saxony-Anhalt",
@@ -2607,6 +2616,15 @@
   "wikidata": "Q125384",
   "lat": 16.0,
   "lon": 121.0
+ },
+ "place-lyon": {
+  "name": "Lyon",
+  "kind": "French city",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Lyon",
+  "lat": null,
+  "lon": null
  },
  "place-macarthur-landing-memorial-national-park": {
   "name": "MacArthur Landing Memorial",

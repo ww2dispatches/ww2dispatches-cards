@@ -216,6 +216,16 @@
    "Z27"
   ]
  },
+ "ship-german-destroyer-z33": {
+  "name": "German destroyer Z33",
+  "kind": "Kriegsmarine destroyer",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_destroyer_Z33",
+  "aka": [
+   "Z33"
+  ]
+ },
  "ship-german-destroyer-z35": {
   "name": "German destroyer Z35",
   "kind": "Kriegsmarine destroyer",
@@ -709,6 +719,16 @@
   "nation": "Germany",
   "wikidata": "Q2654524",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-862"
+ },
+ "ship-german-submarine-u-864": {
+  "name": "German submarine U-864",
+  "kind": "Type IX U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-864",
+  "aka": [
+   "U-864"
+  ]
  },
  "ship-german-submarine-u-869": {
   "name": "U-869",
@@ -1454,6 +1474,13 @@
   "wikidata": "Q1360660",
   "source": "https://en.wikipedia.org/wiki/HMS_Vanguard_(23)"
  },
+ "ship-hms-venturer-p68": {
+  "name": "HMS Venturer (P68)",
+  "kind": "Royal Navy submarine",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Venturer_(P68)"
+ },
  "ship-hms-victorious-r38": {
   "name": "HMS Victorious (R38)",
   "kind": "aircraft carrier",
@@ -1831,6 +1858,16 @@
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Momi_(1944)",
   "aka": [
    "Momi"
+  ]
+ },
+ "ship-japanese-destroyer-natsushio": {
+  "name": "Japanese destroyer Natsushio",
+  "kind": "Imperial Japanese Navy destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Natsushio",
+  "aka": [
+   "Natsushio"
   ]
  },
  "ship-japanese-destroyer-okinami": {
@@ -2478,6 +2515,13 @@
   "nation": "US",
   "wikidata": "Q7875170",
   "source": "https://en.wikipedia.org/wiki/SS_W._L._Steed"
+ },
+ "ship-tatsuta-maru": {
+  "name": "Tatsuta Maru",
+  "kind": "NYK ocean liner used as a troopship",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tatsuta_Maru"
  },
  "ship-tss-st-david-1931": {
   "name": "TSS St David",
@@ -3256,6 +3300,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/USS_St._Lo",
   "wikidata": "Q1365876"
+ },
+ "ship-uss-tarpon-ss-175": {
+  "name": "USS Tarpon (SS-175)",
+  "kind": "U.S. Navy submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Tarpon_(SS-175)"
  },
  "ship-uss-the-sullivans-dd-537": {
   "name": "USS The Sullivans (DD-537)",
