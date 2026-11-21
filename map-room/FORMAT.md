@@ -66,7 +66,7 @@ A roster of 15 to 25 units suits a land battle of this size. Divisions are the n
 |---|---|
 | `asOf` | The moment the night table shows. |
 | `map` | The situation map the night table is read from: normally the **next** day's map, which shows tonight's positions at noon tomorrow. It must be one listed in `series.json` (Day 30 of the Bulge uses 15 Jan). |
-| `line` | The front at the end of the day, as `[lon, lat]` points from the **north edge of the map to the south edge**, German ground on the left as you walk it. It must reach both edges: the front does not stop where the story stops. Day 1 also gives `lineStart`, the front before the battle (and `pocketsStart` if a unit is already surrounded). |
+| `line` | The front at the end of the day, as `[lon, lat]` points from the **north edge of the map to the south edge**, German ground on the left as you walk it. It must reach both edges: the front does not stop where the story stops. Day 1 also gives `lineStart`, the front before the battle (and `pocketsStart` if a unit is already surrounded), with `lineStartSources`: two or more, one of them Day 1's own situation map. |
 | `lineSources` | Two or more. One must be the map named in `map`. |
 | `pockets` | Optional. Ground held inside the other side's area at night: `{"side": "allied", "ring": [...]}`. No ring is drawn around a surrounded block; the line going around it on the day it happens tells that story. |
 | `moves` | What the rake does, in `order`. One to three a day. All of a day's moves must fit in one focus (about 60 km across); a day with action in two far places picks one. |
@@ -112,7 +112,7 @@ Nothing is rendered until every day passes all three parts. The Map Room chat ru
 
 **3. A blind second read (the units that move, and the line).** `tools/trace/blind_read.py packet` makes a folder with the scan cut into tiles under a labelled coordinate grid and the roster entries of the moving units, never their positions. A fresh reader who has not seen the day record (a separate agent started with only that folder) writes where the map shows each unit and the front. `blind_read.py compare` then measures the difference. Where the reader and the record differ by more than one block, or the reader cannot find a unit, the day goes back with both readings.
 
-**Which map (21 Nov 2026).** The situation maps were drawn at noon, from reports up to a day old. So a day's night table is written from, and compared with, the **next** day's map; its morning table matches its own day's map. Day 1 sets the table from the 16 Dec map (`set` and `lineStart`, the position at the start), and its night line from the 17 Dec map. Both the overlay and the blind read do this (`night` and `start`).
+**Which map (21 Nov 2026).** The situation maps were drawn at noon, from reports up to a day old. So a day's night table is written from, and compared with, the **next** day's map; its morning table matches its own day's map. Day 1 sets the table from the 16 Dec map (`set`, and `lineStart` with its `lineStartSources`, the position at the start), and its night line from the 17 Dec map. Both the overlay and the blind read do this (`night` and `start`).
 
 Where the situation map and Cole disagree about a position, follow Cole for where a unit went and say so in the sources. The situation maps were drawn at noon from reports that could be a day old.
 

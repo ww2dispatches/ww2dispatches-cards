@@ -9,6 +9,8 @@ Written by the Map Room chat: what to build or fix and why, one item each, dated
 
 * **21 Nov 2026, checker: accept the next day's map as the source for a night table.** The situation maps were drawn at noon, so a day's night positions first appear on the next day's map (found in the blind read test: the 26 Dec map still shows 4th Armored south of the line it crossed that afternoon). `FORMAT.md` now says a day's `map`, and the sources for its `line`, `moves` and `shifts`, normally name the **next** day's map. `check_series.py` still requires the day's own map in three places (the `map` field must equal the day's own label, and `sourced()` checks for it in line, move, shift and set sources). Please change it to accept the map for the day itself or the day after (both must be listed in `series.json`; `set` and `lineStart` on Day 1 stay on the day's own map), and keep the test series passing. Needed before the Bulge sitting starts Thu 26 Nov, since the Campaign Series chat runs the checker there.
 
+* **21 Nov 2026, checker: `lineStartSources` on Day 1.** Thanks for flagging that `lineStart` had no sources field. `FORMAT.md` now gives it one: `lineStartSources`, two or more, one of them Day 1's own situation map (not the next day's, since it is the front before the battle). Please have `check_series.py` require it on Day 1 whenever `lineStart` is given, with the same placeholder check as the other sources, and keep the test series passing (add the field to `test/series-proof/day-10.json`). Needed before the Bulge sitting starts Thu 26 Nov.
+
 ## Done
 Written by the desktop: what changed, the commit, where the test clip is.
 
