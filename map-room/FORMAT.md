@@ -1,92 +1,117 @@
-# The Map Room: the `mapRoom` block
+# The Map Room: format 2 (balcony and focus)
 
-> **Direction change, 20 Nov 2026 (Brian approved the zoom proof). This document still describes the old fixed views and is being rewritten.**
-> Decided: one balcony view per series (the whole battle from nearly straight above); a focus point per day that the camera comes down to; every block covers 10 km of ground, about 40% of the old height; labels are read only in the close view; the grease pencil line runs to the edges of the map; an attack drives an enemy block back or aside (`driven`), blocks never overlap or cross, and the engine spaces them; unit positions come from that day's situation map; the bed is the Declass Ops room ambience. Proof: `tools/proof/proof_zoom.py`, `test/proof-zoom-*.json`.
+**Status, 20 Nov 2026:** draft for Brian's approval. It replaces the fixed views format of the same morning. The proof clip (`tools/proof/proof_zoom.py`, `test/proof-zoom-*.json`) shows the look. The engine and the checker are being rebuilt to this document, so `check_record.py` still enforces the old format until that lands. The Campaign Series chat should not write `mapRoom` blocks until this status line says the checker is ready.
 
+## The idea
+A real map room has a huge table. From the balcony you see every block on it, spread out, but you cannot read them. You only read a block when you come down and stand over it. The clip does the same:
 
-Final format, 20 Nov 2026 (Map Room build chat). For the Campaign Series chat: write one `mapRoom` block into each day record (`campaign-series/<campaign>/day-NN.json`) in the build sitting, then run the checker. The Map Room chat turns each block into the day's clip, and its pre render check reads the same block. Full plan: the project doc "WW2 Dispatches Map Room".
+1. **Balcony.** The whole battle from nearly straight above. Every unit on the roster is a small block in its nation's color with its silhouette. The grease pencil line shows the front from one edge of the map to the other.
+2. **Focus.** The camera comes down to where today's story happens. Smaller towns and roads appear, block names become readable, and the rake makes the day's moves.
+3. **Balcony again.** The new line is drawn, the camera goes back up, and the whole battle shows what changed.
 
-## The short brief
-1. **Pick the day around something that moved** where the story allows: a town taken, a road cut, a column pushing on.
-2. **Write the block in the same research pass** as the day's story. Each move needs **two sources**: Cole, *The Ardennes: Battle of the Bulge* (CMH) sets where a piece goes; that day's Library of Congress 12th Army Group situation map is the second source. Where they differ, follow Cole.
-3. **Six to eight pieces, one to four moves.** Show only the units that matter that day.
-4. **Full unit names on the blocks**, 16 characters at most. Shorten only by dropping a word, never by abbreviating.
-5. **Morning and night front lines**, from the north end of the front to the south end, following it around the Bulge (German ground on the left as you walk it).
-6. **Blocks must not overlap**, and each sits on its own side of the line and inside the clip's safe area (between the tab and the strip, clear of the apps' buttons). Blocks are big on the map, so on crowded days use fewer pieces or the corps or army instead of each division.
-7. **Pick the day's view** (`"view"`), each framed to its ground:
-   * `"opening"`, 16 to 20 Dec: Monschau and Elsenborn to Echternach, Bastogne to the Our; a block about 24 km.
-   * no view (the whole battle): days that span the front, such as the spearhead near the Meuse; a block about 40 km.
-   * `"bastogne"`: days centered on Bastogne; a block about 7 km, so the 101st, the ring around it and the relief from the south can all be shown. Use it when the day's moves all happen around Bastogne; days that span the front (the spearhead near the Meuse, the northern shoulder) stay on the whole battle view.
-   * `"salient"`: January days (a block about 20 km) once the Bulge is being squeezed: the First Army's attack from the north (3 Jan on), the Third Army's from the south, and the closing on Houffalize. Days whose story is elsewhere (Bodenplatte on 1 Jan, the Soviet offensive on 12 Jan) pick the view that fits their moves, or the whole battle view.
-8. **Run the checker** after each day and fix every ERROR: `python3 map-room/engine/check_record.py campaign-series/bulge-1944`
-9. **Do not schedule Buffer.** The Map Room chat schedules each day once its clip exists.
+Fixed rules behind it (Brian, 20 Nov 2026):
+* **A block covers 10 km of ground, always.** It never changes size with the view. It is thin (about 40% of the old height) so it hides little of the map.
+* **One balcony view per series.** No more opening, salient or Bastogne views.
+* **One focus per day.** The engine fits the camera to the pieces that move. Nobody fits a view by hand.
+* **Blocks never overlap and never pass through each other.** The engine spaces them. An attack into enemy ground drives the enemy block aside.
+* **Every position and every line comes from that day's situation map and is fact checked before anything is rendered** (see The fact check).
 
-## Example
+## Who writes what
+| File | Written | By | Holds |
+|---|---|---|---|
+| `series/<campaign>/series.json` | Once per series | Map Room chat | The balcony box, block size in km, the list of situation maps by date. |
+| `series/<campaign>/geo/` | Once per series | Map Room chat | Rivers, borders, roads and towns for the map. |
+| `series/<campaign>/units.json` | Once per series, in the build sitting | Campaign Series chat | The roster: every unit that will ever appear, who it is, and its block. |
+| `mapRoom` block in each day record | Each day, in the build sitting | Campaign Series chat | Only what changed that day. |
+
+The big saving is the last row. **A unit stays where it was last placed until a day says otherwise, and the morning line is always the night line of the day before.** Day 1 sets the table. After that a day only names the units that move, arrive, leave or shift, and gives the night line.
+
+## The roster: `units.json`
+One entry per unit, written once. Days refer to units by `id` only, so a unit's name, side and block can never drift from day to day.
+
+```json
+{"id": "101", "name": "101st Airborne Division", "label": "101st Airborne", "nation": "us", "type": "airborne",
+ "parent": "VIII Corps, Third Army", "sources": ["Cole, The Ardennes, order of battle"]}
+```
+| Field | Rule |
+|---|---|
+| `id` | Short and unique in the series. |
+| `name` | The full official name. |
+| `label` | What the block says: the full name, 16 characters at most. Over 16, drop a word ("106th Infantry Division" becomes "106th Infantry"), never abbreviate (no Div, Inf, Pz, Abn, CCB). No SS unit names: show SS formations under their army or corps. No dashes. |
+| `nation` | `us`, `britain`, `germany` (`soviet`, `japan` for later series). |
+| `type` | `infantry`, `armor`, `artillery`, `airborne`, `fighter`, `medium_bomber`, `heavy_bomber`, `transport`, or a ship. Airborne divisions take `airborne` even when fighting on the ground. German parachute divisions that fought as infantry keep `infantry` unless the day is an actual drop. Any other kind of unit takes the closest block. |
+| `heavy`, `variant` | Optional, as before (the Tiger; the B 29). |
+| `parent` | The corps and army it belonged to. Used by the fact check and for crowded ground (see Spacing). |
+| `sources` | One or more for the unit's identity and command. |
+
+A roster of 15 to 25 units suits a land battle of this size. Divisions are the normal level. Use a corps or army block only for a stretch of front the story never visits.
+
+## The day: the `mapRoom` block
 ```json
 "mapRoom": {
-  "asOf": "2400 hrs, 16 Dec 1944",
-  "lineAM": [[6.24, 50.57], [6.36, 50.42], [6.46, 50.29], [6.18, 50.13], [6.21, 49.93], [6.52, 49.73]],
-  "linePM": [[6.24, 50.57], [6.23, 50.42], [6.44, 50.29], [6.10, 50.13], [6.14, 49.93], [6.50, 49.74]],
-  "lineSources": ["Cole, The Ardennes, ch. and page", "LOC 12th Army Group situation map, 16 Dec 1944"],
-  "pieces": [
-    {"id": "5pz", "nation": "germany", "type": "armor", "label": "5th Panzer Army",
-     "move": "advance", "from": [6.45, 50.12], "to": [6.21, 50.10], "order": 1,
-     "sources": ["Cole, ...", "LOC situation map, 16 Dec 1944"]},
-    {"id": "106", "nation": "us", "type": "infantry", "label": "106th Infantry", "name": "106th Infantry Division",
-     "move": "hold", "from": [6.20, 50.27]},
-    {"id": "9af", "nation": "us", "type": "fighter", "label": "Ninth Air Force",
-     "move": "grounded", "from": [5.72, 50.38], "order": 2, "sources": ["...", "..."]}
-  ]
+  "asOf": "2400 hrs, 26 Dec 1944",
+  "map": "LOC 12th Army Group situation map, 26 Dec 1944",
+  "line": [[5.98, 51.75], "...", [8.15, 48.98]],
+  "lineSources": ["LOC situation map, 26 Dec 1944", "Cole, The Ardennes, p. 555"],
+  "moves": [
+    {"unit": "4ad", "move": "advance", "to": [5.66, 49.91], "order": 1,
+     "drives": [{"unit": "5fj", "to": [5.87, 49.90]}],
+     "sources": ["Cole, The Ardennes, p. 555", "LOC situation map, 26 Dec 1944"]}
+  ],
+  "shifts": [{"unit": "80id", "to": [6.15, 49.86], "sources": ["LOC situation map, 26 Dec 1944"]}],
+  "tonight": "The siege is broken. The corridor is one road wide."
 }
 ```
-A full example is `map-room/test/day01-example.json` (sketch positions, not verified).
-
-## Day level
 | Field | Rule |
 |---|---|
-| (day) `campaign` | Already in every day record. It picks the series' table framing (`map-room/series/<campaign>/table.json`). |
-| (day) `subtitle` | The clip's strip uses the day's existing subtitle, 38 characters at most. Nothing new to write. |
-| `view` | Optional. Omit for the whole battle. `"opening"` for 16 to 20 Dec, `"bastogne"` for the Bastogne close view, `"salient"` for the January squeeze. Framings in `map-room/series/bulge-1944/table*.json`. Positions are always real `[lon, lat]`; the view only changes how close the table is. |
-| `asOf` | The moment the night table shows: `"2400 hrs, 16 Dec 1944"`. |
-| `lineAM`, `linePM` | The front at the start and end of the day: 3 to 24 `[lon, lat]` points from the **north end of the front to the south end**, following it around any bulge, so **German ground is on the left** as you walk it (inside the Bulge). The line may run a little past the table's edges (the drawing clips it), but at least two points must be on the table. On the Bastogne view this is often just the stretch of front that crosses the view. |
-| `lineSources` | Two or more sources for the lines. |
-| `pocketsAM`, `pocketsPM` | Optional. Ground held inside the other side's area, such as Bastogne once surrounded: `{"side": "allied", "ring": [[lon, lat], ...]}`. |
-| `tonight` | Optional. The closing strip. Default: "The line tonight. It moves again tomorrow." |
+| `asOf` | The moment the night table shows. |
+| `map` | That day's situation map. It must be one listed in `series.json`. |
+| `line` | The front at the end of the day, as `[lon, lat]` points from the **north edge of the map to the south edge**, German ground on the left as you walk it. It must reach both edges: the front does not stop where the story stops. Day 1 also gives `lineStart`, the front before the battle. |
+| `lineSources` | Two or more. One must be the day's situation map. |
+| `pockets` | Optional. Ground held inside the other side's area at night: `{"side": "allied", "ring": [...]}`. No ring is drawn around a surrounded block; the line going around it on the day it happens tells that story. |
+| `moves` | What the rake does, in `order`. One to three a day. All of a day's moves must fit in one focus (about 60 km across); a day with action in two far places picks one. |
+| `shifts` | Units that are somewhere else tonight without it being shown: small adjustments of 15 km or less. The block is simply in the new place when the clip opens. Anything farther must be a move on some day. |
+| `set` | Day 1 only (or the day a unit first appears without an `arrive`): `{"unit", "at", "sources"}` for every unit on the table. |
+| `focus` | Optional `[lon, lat]`. Leave it out and the engine centers on the day's moves. |
+| `tonight` | Optional closing strip. |
 
-## Pieces
-| Field | Rule |
-|---|---|
-| `id` | Short and unique within the day. Keep the same id for the same unit across days. |
-| `nation` | `us`, `britain`, `germany` (`soviet`, `japan` for later series). The side and the block color follow from it. |
-| `type` | `infantry`, `armor`, `artillery`, `airborne`, `fighter`, `medium_bomber`, `heavy_bomber`, `transport`, or a ship (`carrier`, `battleship`, `destroyer`, `submarine`, `landing_craft`). Artillery, airborne and ships are one shared silhouette each, in the nation's color. **Airborne divisions take `airborne` even when fighting on the ground** (the 101st at Bastogne). German parachute divisions that fought as infantry keep `infantry` unless the day is an actual drop. Any other kind of unit (engineers, tank destroyers, cavalry) takes the closest existing block and its name says the rest, unless the day's main action depends on it: then tell the Map Room chat. |
-| `heavy` | Optional, German armor only: shows the Tiger. Only when the day's story names a Tiger or heavy tank unit; give that unit in `heavyNamed`. |
-| `variant` | Optional: `"b29"` for the B 29 on a US heavy bomber. |
-| `label` | What the block says. The full unit name, 16 characters at most. Over 16, drop a word ("106th Infantry Division" becomes "106th Infantry"), never abbreviate (no Div, Inf, Pz, Abn, CCB). No SS unit names: show SS formations under their army or corps. No dashes. |
-| `name` | The full official name, only when the label had to be shortened. |
-| `move` | One of the move set below. |
-| `from` | Where the block stands in the morning, `[lon, lat]`, two decimals. Not used for `arrive`. |
-| `to` | Where it ends. Only for `advance`, `fall_back`, `arrive`. |
-| `enters` | `arrive` only: the table edge it slides in from (`north`, `south`, `east`, `west`). |
-| `target` | `air_mission` only: the place hit, `[lon, lat]`. |
-| `contact` | Optional, with `advance` or `fall_back`: the id of the block this one is pushed into. The two blocks end touching, with a knock. |
-| `order` | Every piece that does something (all moves except `hold`): 1, 2, 3 in clip order, no gaps. |
-| `sources` | Two or more for every piece that does something. |
-
-## The move set
-| `move` | On the table | Sound |
+### The move set
+| `move` | On the table | Fields |
 |---|---|---|
-| `advance` | The rake pushes the block forward to `to`. | Rake tap, slide |
-| `fall_back` | The rake pushes the block back to `to`. | Rake tap, slide |
-| `arrive` | The block slides in from the `enters` edge to `to`. | Rake tap, slide |
-| `hold` | The block stays where it is. | None |
-| `cut_off` | Stays; a grease pencil ring is drawn around it. | Pencil |
-| `surrender` | The rake drags the block off the table. | Rake tap, slide |
-| `air_mission` | The aircraft block slides out to `target` and back. | Slide |
-| `grounded` | The aircraft block stays, with GROUNDED pencilled beside it. | Pencil |
+| `advance`, `fall_back` | The rake pushes the block to `to`. | `to`, optional `drives` |
+| `arrive` | The block slides in from a map edge to `to`. | `to`, `enters` |
+| `leave` | The rake takes the block off the table (surrendered, destroyed, withdrawn). | `why` |
+| `air_mission`, `grounded` | As before: the aircraft block goes out to `target` and back, or stays with GROUNDED pencilled beside it. | `target` |
 
-Knock rule (Brian, 20 Nov 2026): a knock only when something touches something, the rake meeting a block or a block pushed into another (`contact`).
+**Driven blocks (Brian, 20 Nov 2026).** When an attack goes into ground an enemy unit holds, list that unit under `drives` with where the sources put it that night. On the table the attacker meets it, with a knock, and carries it along. **If the way straight back is blocked, the driven block slides aside** along the front, on its own side of the new line. An attacker never ends against a friendly block by passing through an enemy one.
 
-## What the checker enforces
-Errors: missing or wrong fields; an airborne division not on the airborne block; label over 16 characters, short forms, SS names, dashes; no silhouette in the kit for that nation and type; a block off the table or partly off screen; a block on the wrong side of the morning or night line (aircraft, `cut_off` and `surrender` are exempt); blocks overlapping at the start or end of the day; fewer than two sources on a move or on the lines; `order` with gaps; more than eight pieces; a placeholder left in a source. Warnings: a German parachute block on a day that is not a drop; fewer than four pieces, more than four moves, nothing moving, coordinates with more than two decimals.
+**Knock rule.** A knock only when something touches something: the rake meeting a block, or a block meeting a block.
 
-The Map Room chat also compares each day's positions with that day's situation map while tracing the Ardennes map. Anything that looks wrong comes back to the Campaign Series chat to fix in the record. The Map Room chat never changes positions itself.
+### Spacing
+Blocks are 10 km across, and real divisions often stood 5 to 10 km apart. The engine nudges blocks apart by up to 5 km each so none overlap, keeping each on its own side of the line. If a stretch of front is too crowded even for that, the checker says so and names the units. The fix is to show their corps as one block there, not to move anyone to a false position.
+
+## The fact check
+Nothing is rendered until every day passes all three parts. The Map Room chat runs them in its position check step, straight after the build sitting, and never changes a position itself: anything wrong goes back to the Campaign Series chat with the evidence.
+
+**1. The checker (automatic, every day record).**
+* Who: every unit in a day is on the roster; nation, type and label come only from the roster.
+* Where it came from: a unit's start today is its end yesterday. The checker carries every unit forward, so a unit cannot jump, appear twice or vanish without a `leave`.
+* How far: an `advance` or `fall_back` longer than 40 km in a day, or a `shift` longer than 15 km, is an error.
+* Which side: every block is on its own side of the night line. Driven and attacking blocks end on the correct sides of the new line.
+* The line: runs edge to edge, does not cross itself, and each day's morning line is the night line before it.
+* Sources: every move, shift, set and line names that day's situation map, and every move a second source.
+* Table: no overlaps after spacing, no block passing through another during a move, moves fit one focus.
+
+**2. The overlay sheet (every day, read by the Map Room chat).** `tools/trace/overlay.py` draws the day's blocks and night line on top of that day's situation map scan, lined up by the map's own grid. Each block is compared with the unit symbol printed on the map: the right unit, on the right side, within one block (10 km) of where the map shows it. The line is compared with the map's front along its whole length. The sheet is saved beside the day record so anyone can look.
+
+**3. A blind second read (the units that move, and the line).** A separate check is given only the scan and the roster, not the day record, and reports where it finds each moving unit and the front. Where it and the record differ by more than one block, the day goes back with both readings.
+
+Where the situation map and Cole disagree about a position, follow Cole for where a unit went and say so in the sources. The situation maps were drawn at noon from reports that could be a day old.
+
+Each day's result is written to `verify/day-NN.json`: passed or not, what was compared, and anything sent back.
+
+## What the Campaign Series chat does in the build sitting
+1. Write `units.json` for the series.
+2. For each day, in the same research pass as the story: the night `line`, the day's `moves`, any `shifts`. Day 1 also sets every unit.
+3. Run the checker on the whole series and fix every error.
+4. Hand off. The Map Room chat runs the overlay and the blind read, sends back anything wrong, then renders and schedules.
