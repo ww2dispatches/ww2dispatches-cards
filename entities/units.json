@@ -616,6 +616,13 @@
   "wikidata": "Q4030831",
   "source": "https://en.wikipedia.org/wiki/31st_Army_(Soviet_Union)"
  },
+ "unit-31st-division-imperial-japanese-army": {
+  "name": "31st Division (Imperial Japanese Army)",
+  "kind": "Japanese infantry division",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/31st_Division_(Imperial_Japanese_Army)"
+ },
  "unit-32nd-infantry-division-united-states": {
   "name": "32nd Infantry Division",
   "kind": "U.S. Army infantry division",
@@ -643,6 +650,14 @@
   "nation": "Japan",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/33rd_Division_(Imperial_Japanese_Army)"
+ },
+ "unit-340th-flying-training-group": {
+  "name": "340th Bombardment Group",
+  "kind": "USAAF B-25 medium bomber group",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/340th_Flying_Training_Group",
+  "note": "The Wikipedia article covers the later 340th Flying Training Group; its first predecessor is the wartime 340th Bombardment Group."
  },
  "unit-34th-infantry-division-united-states": {
   "name": "34th Infantry Division",
@@ -1369,6 +1384,23 @@
    "Nyilaskeresztes Part"
   ]
  },
+ "unit-auergesellschaft": {
+  "name": "Auergesellschaft",
+  "kind": "German company that produced uranium at Oranienburg",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Auergesellschaft",
+  "aka": [
+   "Auer"
+  ]
+ },
+ "unit-aviazione-legionaria": {
+  "name": "Aviazione Legionaria",
+  "kind": "Italian air unit in the Spanish Civil War",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Aviazione_Legionaria"
+ },
  "unit-bank-of-england": {
   "name": "Bank of England",
   "kind": "Central bank of the United Kingdom",
@@ -1383,6 +1415,13 @@
   "wikidata": "Q4834814",
   "source": "https://en.wikipedia.org/wiki/BBC_Forces_Programme"
  },
+ "unit-bbc-television": {
+  "name": "BBC Television",
+  "kind": "British television service",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/BBC_Television"
+ },
  "unit-bbc-world-service": {
   "name": "BBC World Service",
   "kind": "international broadcaster (Empire Service from 1932)",
@@ -1392,6 +1431,13 @@
   "aka": [
    "BBC Empire Service"
   ]
+ },
+ "unit-bell-aircraft": {
+  "name": "Bell Aircraft",
+  "kind": "American aircraft manufacturer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bell_Aircraft"
  },
  "unit-bell-labs": {
   "name": "Bell Labs",
@@ -1485,6 +1531,16 @@
   "wikidata": "Q805447",
   "source": "https://en.wikipedia.org/wiki/Camelots_du_Roi"
  },
+ "unit-canadian-women-s-army-corps": {
+  "name": "Canadian Women's Army Corps",
+  "kind": "women's branch of the Canadian Army",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Canadian_Women%27s_Army_Corps",
+  "aka": [
+   "CWAC"
+  ]
+ },
  "unit-central-china-area-army": {
   "name": "Central China Area Army",
   "kind": "field army command",
@@ -1512,6 +1568,13 @@
   "nation": "United Kingdom",
   "source": "https://en.wikipedia.org/wiki/Churchill_Archives_Centre",
   "wikidata": "Q5118159"
+ },
+ "unit-cincinnati-symphony-orchestra": {
+  "name": "Cincinnati Symphony Orchestra",
+  "kind": "orchestra",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Cincinnati_Symphony_Orchestra"
  },
  "unit-civil-air-patrol": {
   "name": "Civil Air Patrol",
@@ -1595,6 +1658,13 @@
   "nation": "United Kingdom",
   "source": "https://en.wikipedia.org/wiki/Desert_Air_Force",
   "wikidata": "Q2895978"
+ },
+ "unit-dogs-for-defense": {
+  "name": "Dogs For Defense",
+  "kind": "American volunteer group that gathered dogs for the Army",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Dogs_For_Defense"
  },
  "unit-don-front": {
   "name": "Don Front",
@@ -2050,6 +2120,16 @@
   "wikidata": "Q1421194",
   "source": "https://en.wikipedia.org/wiki/Kalinin_Front"
  },
+ "unit-kampfgeschwader-100": {
+  "name": "Kampfgeschwader 100",
+  "kind": "Luftwaffe pathfinder bomber wing",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kampfgeschwader_100",
+  "aka": [
+   "KG 100"
+  ]
+ },
  "unit-kampfgeschwader-53": {
   "name": "Kampfgeschwader 53",
   "kind": "Luftwaffe bomber wing",
@@ -2285,6 +2365,16 @@
   "source": "https://en.wikipedia.org/wiki/NAACP",
   "wikidata": "Q502044"
  },
+ "unit-national-advisory-committee-for-aeronautics": {
+  "name": "National Advisory Committee for Aeronautics",
+  "kind": "US federal aeronautics research agency, predecessor to NASA",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/National_Advisory_Committee_for_Aeronautics",
+  "aka": [
+   "NACA"
+  ]
+ },
  "unit-national-archives-and-records-administration": {
   "name": "National Archives",
   "kind": "U.S. federal agency",
@@ -2498,6 +2588,13 @@
   "wikidata": "Q7043689",
   "source": "https://en.wikipedia.org/wiki/No._619_Squadron_RAF"
  },
+ "unit-no-82-squadron-raf": {
+  "name": "No. 82 Squadron RAF",
+  "kind": "RAF bomber squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._82_Squadron_RAF"
+ },
  "unit-no-9-squadron-raf": {
   "name": "No. 9 Squadron RAF",
   "kind": "RAF bomber squadron",
@@ -2583,6 +2680,13 @@
   "nation": "US",
   "wikidata": "Q7079326",
   "source": "https://en.wikipedia.org/wiki/Office_of_War_Mobilization"
+ },
+ "unit-oshkosh-all-stars": {
+  "name": "Oshkosh All-Stars",
+  "kind": "professional basketball team, National Basketball League",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Oshkosh_All-Stars"
  },
  "unit-oslogjengen": {
   "name": "Oslo Gang",
@@ -2729,6 +2833,17 @@
    "Rote Kapelle"
   ]
  },
+ "unit-reich-ministry-of-public-enlightenment-and-propaganda": {
+  "name": "Reich Ministry of Public Enlightenment and Propaganda",
+  "kind": "Nazi government ministry",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Reich_Ministry_of_Public_Enlightenment_and_Propaganda",
+  "aka": [
+   "Propaganda Ministry",
+   "RMVP"
+  ]
+ },
  "unit-reich-security-main-office": {
   "name": "Reich Security Main Office",
   "kind": "Nazi security agency",
@@ -2792,6 +2907,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Royal_Indian_Army_Service_Corps",
   "note": "Its four animal transport companies in France, 1939 to 1940, were known as Force K6 (no Wikipedia article)."
+ },
+ "unit-royal-indian-navy": {
+  "name": "Royal Indian Navy",
+  "kind": "navy of British India",
+  "nation": "India",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Royal_Indian_Navy"
  },
  "unit-royal-irish-fusiliers": {
   "name": "Royal Irish Fusiliers",
@@ -3133,6 +3255,17 @@
   "source": "https://en.wikipedia.org/wiki/United_Nations_Security_Council",
   "wikidata": "Q37470"
  },
+ "unit-united-press-international": {
+  "name": "United Press International",
+  "kind": "American news agency",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/United_Press_International",
+  "aka": [
+   "United Press",
+   "UP"
+  ]
+ },
  "unit-united-service-organizations": {
   "name": "United Service Organizations (USO)",
   "kind": "civilian service organization for the armed forces",
@@ -3374,6 +3507,13 @@
   "nation": "United States",
   "source": "https://en.wikipedia.org/wiki/Warner_Bros.",
   "wikidata": "Q137691184"
+ },
+ "unit-washington-bears": {
+  "name": "Washington Bears",
+  "kind": "all Black professional basketball team",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Washington_Bears"
  },
  "unit-waves": {
   "name": "WAVES",

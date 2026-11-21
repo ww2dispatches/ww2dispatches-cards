@@ -307,6 +307,16 @@
    "Fu-Go"
   ]
  },
+ "machine-gabbiano-class-corvette": {
+  "name": "Gabbiano-class corvette",
+  "kind": "Italian corvette class, includes Cicogna",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Gabbiano-class_corvette",
+  "aka": [
+   "Cicogna"
+  ]
+ },
  "machine-gaz-aa": {
   "name": "GAZ AA",
   "kind": "light truck",
@@ -337,6 +347,17 @@
   "nation": "Germany",
   "wikidata": "Q571184",
   "source": "https://en.wikipedia.org/wiki/Goliath_tracked_mine"
+ },
+ "machine-grand-slam-bomb": {
+  "name": "Grand Slam",
+  "kind": "22,000 lb earthquake bomb",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Grand_Slam_(bomb)",
+  "aka": [
+   "Grand Slam bomb",
+   "Ten Tonner"
+  ]
  },
  "machine-hale-telescope": {
   "name": "Hale Telescope",
@@ -470,6 +491,16 @@
   "aka": [
    "Sherman",
    "Sherman II"
+  ]
+ },
+ "machine-marcello-class-submarine": {
+  "name": "Marcello-class submarine",
+  "kind": "Italian submarine class, includes Emo",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Marcello-class_submarine",
+  "aka": [
+   "Emo"
   ]
  },
  "machine-mark-14-torpedo": {
@@ -779,6 +810,13 @@
   "nation": "US",
   "wikidata": "Q7977617",
   "source": "https://en.wikipedia.org/wiki/We_Hold_These_Truths"
+ },
+ "machine-with-the-marines-at-tarawa": {
+  "name": "With the Marines at Tarawa",
+  "kind": "1944 U.S. Marine Corps documentary film",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/With_the_Marines_at_Tarawa"
  },
  "machine-wright-r-1820-cyclone": {
   "name": "Wright R-1820 Cyclone",

@@ -851,5 +851,15 @@
   "nation": "Japan",
   "source": "https://en.wikipedia.org/wiki/Yokosuka_MXY-7_Ohka",
   "wikidata": "Q635990"
+ },
+ "aircraft-yokosuka-p1y-ginga": {
+  "name": "Yokosuka P1Y Ginga",
+  "kind": "Japanese navy twin engine bomber",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Yokosuka_P1Y_Ginga",
+  "aka": [
+   "Frances"
+  ]
  }
 }

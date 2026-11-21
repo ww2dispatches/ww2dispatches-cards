@@ -13,6 +13,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/16th_Academy_Awards"
  },
+ "op-17th-academy-awards": {
+  "name": "17th Academy Awards",
+  "kind": "Film awards ceremony, 15 March 1945",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/17th_Academy_Awards"
+ },
  "op-1920-summer-olympics": {
   "name": "1920 Summer Olympics",
   "kind": "Olympic Games",
@@ -123,6 +130,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/1943_Greek_protests_against_labour_mobilization"
  },
+ "op-1943-world-professional-basketball-tournament": {
+  "name": "1943 World Professional Basketball Tournament",
+  "kind": "professional basketball tournament, Chicago",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1943_World_Professional_Basketball_Tournament"
+ },
  "op-1944-tonankai-earthquake": {
   "name": "1944 Tōnankai earthquake",
   "kind": "earthquake and tsunami, 7 December 1944",
@@ -146,6 +160,16 @@
   "nation": "Japan",
   "wikidata": "Q4565560",
   "source": "https://en.wikipedia.org/wiki/1945_Mikawa_earthquake"
+ },
+ "op-1946-cabinet-mission-to-india": {
+  "name": "1946 Cabinet Mission to India",
+  "kind": "British ministerial mission on Indian independence",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1946_Cabinet_Mission_to_India",
+  "aka": [
+   "Cabinet Mission"
+  ]
  },
  "op-1946-united-nations-secretary-general-selection": {
   "name": "1946 United Nations Secretary-General selection",
@@ -812,6 +836,20 @@
   "wikidata": "Q702579",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Ko_Chang"
  },
+ "op-battle-of-kohima": {
+  "name": "Battle of Kohima",
+  "kind": "battle in northeast India, April to June 1944",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Kohima"
+ },
+ "op-battle-of-kolberg-1945": {
+  "name": "Battle of Kolberg (1945)",
+  "kind": "siege and capture of Kolberg, March 1945",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Kolberg_(1945)"
+ },
  "op-battle-of-kollaa": {
   "name": "Battle of Kollaa",
   "kind": "Winter War battle",
@@ -1091,6 +1129,13 @@
   "nation": "US",
   "wikidata": "Q15965708",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Rapido_River"
+ },
+ "op-battle-of-remagen": {
+  "name": "Battle of Remagen",
+  "kind": "capture and holding of the Rhine bridgehead, March 1945",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Remagen"
  },
  "op-battle-of-rennell-island": {
   "name": "Battle of Rennell Island",
@@ -1491,6 +1536,13 @@
   "wikidata": "Q543077",
   "source": "https://en.wikipedia.org/wiki/Bombardment_of_Ellwood"
  },
+ "op-bombing-of-barcelona": {
+  "name": "Bombing of Barcelona",
+  "kind": "air raids on Barcelona, 16 to 18 March 1938",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Barcelona"
+ },
  "op-bombing-of-belgrade-in-world-war-ii": {
   "name": "Bombing of Belgrade in World War II",
   "kind": "air raids on Belgrade",
@@ -1540,12 +1592,26 @@
   "wikidata": "Q4940694",
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Dublin_in_World_War_II"
  },
+ "op-bombing-of-essen-in-world-war-ii": {
+  "name": "Bombing of Essen in World War II",
+  "kind": "Allied air raids on Essen",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Essen_in_World_War_II"
+ },
  "op-bombing-of-helsinki-in-world-war-ii": {
   "name": "Bombing of Helsinki in World War II",
   "kind": "air raids on a city",
   "nation": "Soviet Union",
   "wikidata": "Q4093055",
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Helsinki_in_World_War_II"
+ },
+ "op-bombing-of-kobe-in-world-war-ii": {
+  "name": "Bombing of Kobe in World War II",
+  "kind": "American air raids on Kobe",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Kobe_in_World_War_II"
  },
  "op-bombing-of-leipzig-in-world-war-ii": {
   "name": "Bombing of Leipzig in World War II",
@@ -1584,6 +1650,20 @@
   "nation": "Germany",
   "wikidata": "Q1735702",
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Nuremberg_in_World_War_II"
+ },
+ "op-bombing-of-osaka": {
+  "name": "Bombing of Osaka",
+  "kind": "American air raids on Osaka",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Osaka"
+ },
+ "op-bombing-of-padua-in-world-war-ii": {
+  "name": "Bombing of Padua in World War II",
+  "kind": "Allied air raids on Padua",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Padua_in_World_War_II"
  },
  "op-bombing-of-prague": {
   "name": "Bombing of Prague",
@@ -1654,6 +1734,13 @@
   "nation": "US",
   "wikidata": "Q4940732",
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Wilhelmshaven_in_World_War_II"
+ },
+ "op-bombing-of-wurzburg-in-world-war-ii": {
+  "name": "Bombing of Würzburg in World War II",
+  "kind": "RAF raid of 16 March 1945 and earlier attacks",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_W%C3%BCrzburg_in_World_War_II"
  },
  "op-bombings-of-heilbronn-in-world-war-ii": {
   "name": "Bombings of Heilbronn in World War II",
@@ -1873,6 +1960,13 @@
   "wikidata": "Q15210656",
   "source": "https://en.wikipedia.org/wiki/Cinema_Rex_bombing"
  },
+ "op-clydebank-blitz": {
+  "name": "Clydebank Blitz",
+  "kind": "Luftwaffe air raids on Clydebank",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Clydebank_Blitz"
+ },
  "op-cocoanut-grove-fire": {
   "name": "Cocoanut Grove fire",
   "kind": "nightclub fire",
@@ -1936,6 +2030,13 @@
   "source": "https://en.wikipedia.org/wiki/Convoy_HX_156",
   "wikidata": "Q5166619"
  },
+ "op-convoy-hx-228": {
+  "name": "Convoy HX 228",
+  "kind": "North Atlantic convoy, March 1943",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Convoy_HX_228"
+ },
  "op-convoy-hx-90": {
   "name": "Convoy HX 90",
   "kind": "Atlantic convoy",
@@ -1963,6 +2064,13 @@
   "nation": "Britain",
   "wikidata": "Q5166655",
   "source": "https://en.wikipedia.org/wiki/Convoy_SC_118"
+ },
+ "op-convoys-hx-229-sc-122": {
+  "name": "Convoys HX 229/SC 122",
+  "kind": "North Atlantic convoy battle, March 1943",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Convoys_HX_229/SC_122"
  },
  "op-coventry-blitz": {
   "name": "Coventry Blitz",
@@ -2470,6 +2578,13 @@
    "Ningen-sengen"
   ]
  },
+ "op-hungarian-invasion-of-carpatho-ukraine": {
+  "name": "Hungarian invasion of Carpatho-Ukraine",
+  "kind": "Hungarian invasion, March 1939",
+  "nation": "Hungary",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hungarian_invasion_of_Carpatho-Ukraine"
+ },
  "op-if-day": {
   "name": "If Day",
   "kind": "mock Nazi invasion of Winnipeg for the Victory Loan, 1942",
@@ -2843,6 +2958,13 @@
   "wikidata": "Q1518946",
   "source": "https://en.wikipedia.org/wiki/Law_for_the_Prevention_of_Hereditarily_Diseased_Offspring"
  },
+ "op-leeds-blitz": {
+  "name": "Leeds Blitz",
+  "kind": "German air raids on Leeds",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Leeds_Blitz"
+ },
  "op-legionnaires-rebellion-and-bucharest-pogrom": {
   "name": "Legionnaires' rebellion and Bucharest pogrom",
   "kind": "rebellion and pogrom",
@@ -3080,12 +3202,26 @@
    "Weizsaecker case"
   ]
  },
+ "op-mit-brennender-sorge": {
+  "name": "Mit brennender Sorge",
+  "kind": "papal encyclical, 1937",
+  "nation": "Vatican City",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mit_brennender_Sorge"
+ },
  "op-moscow-conference-1945": {
   "name": "Moscow Conference (1945)",
   "kind": "foreign ministers' conference",
   "nation": "Soviet Union",
   "wikidata": "Q912215",
   "source": "https://en.wikipedia.org/wiki/Moscow_Conference_(1945)"
+ },
+ "op-moscow-peace-treaty": {
+  "name": "Moscow Peace Treaty",
+  "kind": "peace treaty",
+  "nation": "Finland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Moscow_Peace_Treaty"
  },
  "op-moscow-trials": {
   "name": "Moscow trials",
@@ -3275,6 +3411,13 @@
   "nation": "Czechoslovakia",
   "wikidata": "Q715264",
   "source": "https://en.wikipedia.org/wiki/Operation_Anthropoid"
+ },
+ "op-operation-appearance": {
+  "name": "Operation Appearance",
+  "kind": "British landing at Berbera, March 1941",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Appearance"
  },
  "op-operation-archery": {
   "name": "Operation Archery",
@@ -3646,6 +3789,26 @@
   "source": "https://en.wikipedia.org/wiki/Operation_Queen",
   "wikidata": "Q885019"
  },
+ "op-operation-reinhard": {
+  "name": "Operation Reinhard",
+  "kind": "Nazi plan to murder the Jews of the General Government",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Reinhard",
+  "aka": [
+   "Aktion Reinhard"
+  ]
+ },
+ "op-operation-savanna": {
+  "name": "Operation Savanna",
+  "kind": "SOE and Free French parachute mission, March 1941",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Savanna",
+  "aka": [
+   "Operation Savannah"
+  ]
+ },
  "op-operation-sonnenblume": {
   "name": "Operation Sonnenblume",
   "kind": "German deployment to North Africa",
@@ -3680,6 +3843,13 @@
   "nation": "US",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Operation_Sunrise_(World_War_II)"
+ },
+ "op-operation-tan-no-2": {
+  "name": "Operation Tan No. 2",
+  "kind": "Japanese kamikaze raid on Ulithi",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Tan_No._2"
  },
  "op-operation-thursday": {
   "name": "Operation Thursday",
@@ -4104,6 +4274,13 @@
   "wikidata": "Q2338418",
   "source": "https://en.wikipedia.org/wiki/Sandomierz%E2%80%93Silesian_offensive"
  },
+ "op-santa-fe-riot": {
+  "name": "Santa Fe riot",
+  "kind": "internment camp riot",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Santa_Fe_riot"
+ },
  "op-scuttling-of-the-french-fleet-at-toulon": {
   "name": "Scuttling of the French fleet at Toulon",
   "kind": "scuttling",
@@ -4277,6 +4454,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q155103",
   "source": "https://en.wikipedia.org/wiki/Siege_of_Budapest"
+ },
+ "op-siege-of-kustrin": {
+  "name": "Siege of Kustrin",
+  "kind": "siege",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Siege_of_K%C3%BCstrin"
  },
  "op-siege-of-leningrad": {
   "name": "Siege of Leningrad",
@@ -4487,6 +4671,13 @@
   "wikidata": "Q6900329",
   "source": "https://en.wikipedia.org/wiki/The_Blitz"
  },
+ "op-the-emergency-ireland": {
+  "name": "The Emergency (Ireland)",
+  "kind": "Irish wartime state of emergency",
+  "nation": "Ireland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/The_Emergency_(Ireland)"
+ },
  "op-the-holocaust": {
   "name": "The Holocaust",
   "kind": "Nazi genocide of Europe's Jews",
@@ -4568,6 +4759,13 @@
    "Sino-American New Equal Treaty"
   ]
  },
+ "op-treaty-of-brussels": {
+  "name": "Treaty of Brussels",
+  "kind": "Western European defence treaty, 17 March 1948",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Treaty_of_Brussels"
+ },
  "op-treaty-of-dunkirk": {
   "name": "Treaty of Dunkirk",
   "kind": "Anglo French treaty of alliance, 4 March 1947",
@@ -4584,6 +4782,13 @@
   "aka": [
    "Varkiza Agreement"
   ]
+ },
+ "op-treaty-of-versailles": {
+  "name": "Treaty of Versailles",
+  "kind": "1919 peace treaty with Germany",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Treaty_of_Versailles"
  },
  "op-trial-of-erich-von-manstein": {
   "name": "Trial of Erich von Manstein",
@@ -4619,6 +4824,13 @@
   "nation": "US",
   "wikidata": "Q23003185",
   "source": "https://en.wikipedia.org/wiki/Truman_Directive_of_1945"
+ },
+ "op-truman-doctrine": {
+  "name": "Truman Doctrine",
+  "kind": "foreign policy",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Truman_Doctrine"
  },
  "op-turkish-declaration-of-war-on-germany-and-japan": {
   "name": "Turkish declaration of war on Germany and Japan",
@@ -4688,6 +4900,16 @@
   "nation": "US",
   "wikidata": "Q7888486",
   "source": "https://en.wikipedia.org/wiki/United_Nations_Participation_Act"
+ },
+ "op-united-states-bases-in-the-philippines": {
+  "name": "United States bases in the Philippines",
+  "kind": "US military bases, 1947 Military Bases Agreement",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/United_States_bases_in_the_Philippines",
+  "aka": [
+   "Military Bases Agreement of 1947"
+  ]
  },
  "op-united-states-declaration-of-war-on-japan": {
   "name": "United States declaration of war on Japan",
