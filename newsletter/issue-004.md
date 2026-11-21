@@ -114,7 +114,13 @@ It stayed lost for more than seventy years. In 2015 the group History Flight fou
 
 Each morning brought a new dispatch. Catch up on any you missed:
 
-ALSO_THIS_WEEK
+* No. 059, Moscow braces for the blow: [Read on Threads](https://www.threads.com/@ww2dispatches/post/DfxDq7PEUiM)
+* No. 062, Operation Queen: [Read on Threads](https://www.threads.com/@ww2dispatches/post/DfzompflGGY)
+* No. 065, The 442nd leaves the Vosges: [Read on Threads](https://www.threads.com/@ww2dispatches/post/Df2NoGYlFWW)
+* No. 068, Patton's men break into Metz: [Read on Threads](https://www.threads.com/@ww2dispatches/post/Df4yYkIkeYo)
+* No. 071, Operation Uranus begins: [Read on Threads](https://www.threads.com/@ww2dispatches/post/Df7XUlpkUw-)
+* No. 074, The Marines land on Tarawa: [Read on Threads](https://www.threads.com/@ww2dispatches/post/Df98DW9lH8m)
+* No. 077, Jackson opens the case: [Read on Threads](https://www.threads.com/@ww2dispatches)
 
 ---
 
