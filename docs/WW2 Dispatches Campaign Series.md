@@ -106,7 +106,7 @@ Substack sets one theme for the whole publication (night background, brass gold,
 | 8 | 3 Dec | Japan's embassies burn their codes | US built Purple machine, NARA 518142 |
 | 9 | 4 Dec | A secret war plan hits page one | Wedemeyer, author of Rainbow Five, about 1942, Signal Corps 196260 (supplied by Brian; small original) |
 | 10 | 5 Dec | The last carrier leaves Pearl Harbor | Lexington, 80 G 416362 |
-| 11 | 6 Dec | Washington reads Tokyo's answer | Hull, Nomura, Kurusu, 17 Nov 1941 (small original, a bit soft) |
+| 11 | 6 Dec | Washington reads Tokyo's answer | Hull's 6 Dec 1941 memo sending the message to Hirohito, approved in FDR's hand (FDR Library, NARA 16618656); replaced 21 Nov the Hull, Nomura, Kurusu photo, an Underwood Archives press print |
 | 12 | 7 Dec | Five midget submarines in the dark | HA 19 aground, Dec 1941 |
 | Epilogue | 8 Dec | A date which will live in infamy | FDR signing the declaration of war, 8 Dec 1941 (LOC cph.3a17434) |
 
@@ -192,3 +192,4 @@ Until that change ships, the shelf works as built: every series is a volume on t
 * 20 Nov 2026 (Map Room build chat): the `mapRoom` format is final and lives in `map-room/FORMAT.md`, with the checker `map-room/engine/check_record.py`; handoff clause (1) now points to both.
 * 20 Nov 2026 (Map Room build chat, evening): Map Room handoff in Open rewritten for format 2: a series roster, day blocks that record only what changed, every position and line from that day's situation map, `check_series.py` in place of `check_record.py`, and the Map Room chat's fact check after the sitting.
 * 21 Nov 2026: Pearl Harbor Part 1 cover set to the fleet track map, Plate No. 13 of the Reports of General MacArthur, in color (Brian); the cover renderer takes an optional `color` for maps.
+* 21 Nov 2026 (later): Pearl Harbor Day 11 photo swapped (Brian): the Hull, Nomura, and Kurusu walking photo turned out to be an Underwood Archives press print (red tier), so the post now shows Hull's 6 December memo with Roosevelt's handwritten OK on the message to the Emperor (FDR Library, public domain). Re-rendered and updated in Buffer on all four platforms (images pinned to commit 4c16a05); board copies refreshed.
