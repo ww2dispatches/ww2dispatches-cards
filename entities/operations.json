@@ -208,6 +208,13 @@
    "Financial Agreement of 1945"
   ]
  },
+ "op-anschluss": {
+  "name": "Anschluss",
+  "kind": "German annexation of Austria, March 1938",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Anschluss"
+ },
  "op-arcadia-conference": {
   "name": "Arcadia Conference",
   "kind": "Allied conference in Washington",
@@ -221,6 +228,13 @@
   "nation": "worldwide",
   "source": "https://en.wikipedia.org/wiki/Arctic_convoys_of_World_War_II",
   "wikidata": "Q1505845"
+ },
+ "op-area-bombing-directive": {
+  "name": "Area bombing directive",
+  "kind": "RAF bombing directive",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Area_bombing_directive"
  },
  "op-armistice-day": {
   "name": "Armistice Day",
@@ -298,6 +312,16 @@
   "nation": "Australia",
   "wikidata": "Q4825025",
   "source": "https://en.wikipedia.org/wiki/Australian_home_front_during_World_War_II"
+ },
+ "op-austrian-civil-war": {
+  "name": "Austrian Civil War",
+  "kind": "civil war, February 1934",
+  "nation": "Austria",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Austrian_Civil_War",
+  "aka": [
+   "February Uprising"
+  ]
  },
  "op-axis-powers-negotiations-on-the-division-of-asia": {
   "name": "Axis powers negotiations on the division of Asia",
@@ -699,6 +723,24 @@
   "wikidata": "Q1634968",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Ortona"
  },
+ "op-battle-of-palembang": {
+  "name": "Battle of Palembang",
+  "kind": "battle",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Palembang"
+ },
+ "op-battle-of-pasir-panjang": {
+  "name": "Battle of Pasir Panjang",
+  "kind": "battle",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Pasir_Panjang",
+  "aka": [
+   "Battle of Opium Hill",
+   "Bukit Chandu"
+  ]
+ },
  "op-battle-of-point-175": {
   "name": "Battle of Point 175",
   "kind": "battle",
@@ -772,6 +814,16 @@
   "nation": "Britain",
   "wikidata": "Q7508662",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Sidi_Barrani"
+ },
+ "op-battle-of-sidi-bou-zid": {
+  "name": "Battle of Sidi Bou Zid",
+  "kind": "battle",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Sidi_Bou_Zid",
+  "aka": [
+   "Operation Fruhlingswind"
+  ]
  },
  "op-battle-of-skerki-bank": {
   "name": "Battle of Skerki Bank",
@@ -1073,6 +1125,13 @@
   "nation": "Germany",
   "wikidata": "Q1735702",
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Nuremberg_in_World_War_II"
+ },
+ "op-bombing-of-prague": {
+  "name": "Bombing of Prague",
+  "kind": "air raids",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Prague"
  },
  "op-bombing-of-rangoon-in-world-war-ii": {
   "name": "Bombing of Rangoon in World War II",
@@ -3365,6 +3424,16 @@
   "source": "https://en.wikipedia.org/wiki/Treaty_between_the_United_States_and_China_for_the_Relinquishment_of_Extraterritorial_Rights_in_China",
   "aka": [
    "Sino-American New Equal Treaty"
+  ]
+ },
+ "op-treaty-of-varkiza": {
+  "name": "Treaty of Varkiza",
+  "kind": "Greek peace agreement, 12 February 1945",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Treaty_of_Varkiza",
+  "aka": [
+   "Varkiza Agreement"
   ]
  },
  "op-trial-of-erich-von-manstein": {

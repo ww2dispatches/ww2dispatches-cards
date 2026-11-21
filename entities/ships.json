@@ -446,6 +446,13 @@
    "U-322"
   ]
  },
+ "ship-german-submarine-u-33-1936": {
+  "name": "U-33",
+  "kind": "German Type VIIA submarine",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-33_(1936)"
+ },
  "ship-german-submarine-u-331": {
   "name": "U-331",
   "kind": "U-boat",
@@ -1005,6 +1012,13 @@
   "wikidata": "Q1301596",
   "source": "https://en.wikipedia.org/wiki/HMS_Glasgow_(C21)"
  },
+ "ship-hms-gleaner-j83": {
+  "name": "HMS Gleaner (J83)",
+  "kind": "British Halcyon class minesweeper",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Gleaner_(J83)"
+ },
  "ship-hms-gloucester-62": {
   "name": "HMS Gloucester (62)",
   "kind": "light cruiser",
@@ -1137,6 +1151,13 @@
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/HMS_Legion_(G74)",
   "wikidata": "Q477526"
+ },
+ "ship-hms-li-wo": {
+  "name": "HMS Li Wo",
+  "kind": "auxiliary patrol vessel, former river steamer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Li_Wo"
  },
  "ship-hms-liverpool-c11": {
   "name": "HMS Liverpool (C11)",
@@ -1979,6 +2000,13 @@
   "wikidata": "Q2704222",
   "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-26"
  },
+ "ship-japanese-submarine-i-27": {
+  "name": "I-27",
+  "kind": "Imperial Japanese Navy submarine",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-27"
+ },
  "ship-japanese-submarine-i-3": {
   "name": "Japanese submarine I-3",
   "kind": "Imperial Japanese Navy submarine",
@@ -2318,6 +2346,13 @@
   "wikidata": "Q7393901",
   "source": "https://en.wikipedia.org/wiki/SS_John_Harvey"
  },
+ "ship-ss-khedive-ismail": {
+  "name": "SS Khedive Ismail",
+  "kind": "British troopship",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Khedive_Ismail"
+ },
  "ship-ss-kiangya": {
   "name": "SS Kiangya",
   "kind": "Chinese passenger steamer",
@@ -2387,6 +2422,13 @@
   "nation": "Germany",
   "wikidata": "Q2502598",
   "source": "https://en.wikipedia.org/wiki/SS_Ussukuma"
+ },
+ "ship-ss-vyner-brooke": {
+  "name": "SS Vyner Brooke",
+  "kind": "steamer, evacuation ship",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Vyner_Brooke"
  },
  "ship-ss-w-l-steed": {
   "name": "SS W. L. Steed",

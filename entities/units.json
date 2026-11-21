@@ -988,6 +988,13 @@
   "wikidata": "Q4032504",
   "note": "Wikipedia redirects 80th Infantry Division (United States) here."
  },
+ "unit-825-naval-air-squadron": {
+  "name": "825 Naval Air Squadron",
+  "kind": "Fleet Air Arm torpedo bomber squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/825_Naval_Air_Squadron"
+ },
  "unit-84th-training-command": {
   "name": "84th Infantry Division",
   "kind": "U.S. Army infantry division",
@@ -1379,6 +1386,16 @@
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/Eighth_Army_(United_Kingdom)",
   "wikidata": "Q270202"
+ },
+ "unit-elas": {
+  "name": "ELAS",
+  "kind": "Greek People's Liberation Army, military arm of EAM",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/ELAS",
+  "aka": [
+   "Greek People's Liberation Army"
+  ]
  },
  "unit-esquire-magazine": {
   "name": "Esquire",
@@ -2522,6 +2539,13 @@
   "aka": [
    "SHAEF"
   ]
+ },
+ "unit-teishin-shudan": {
+  "name": "Teishin Shudan",
+  "kind": "Imperial Japanese Army airborne force",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Teishin_Shudan"
  },
  "unit-third-army-romania": {
   "name": "Romanian Third Army",

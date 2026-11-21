@@ -225,6 +225,16 @@
   "lat": 41.1253,
   "lon": 16.8667
  },
+ "place-batesburg-leesville-south-carolina": {
+  "name": "Batesburg-Leesville, South Carolina",
+  "kind": "town in South Carolina",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Batesburg-Leesville,_South_Carolina",
+  "lat": null,
+  "lon": null,
+  "note": "The 1946 town was Batesburg; the Wikipedia article is the merged town"
+ },
  "place-bayda-libya": {
   "name": "Beda Littoria",
   "kind": "town",
@@ -971,6 +981,15 @@
   "lat": 56.3736,
   "lon": -3.8431
  },
+ "place-crveni-krst-concentration-camp": {
+  "name": "Crveni Krst concentration camp",
+  "kind": "Nazi concentration camp, Nis",
+  "nation": "Yugoslavia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Crveni_Krst_concentration_camp",
+  "lat": null,
+  "lon": null
+ },
  "place-czestochowa": {
   "name": "Częstochowa",
   "kind": "city",
@@ -1452,6 +1471,15 @@
   "lat": 35.8922,
   "lon": 14.5128
  },
+ "place-great-bitter-lake": {
+  "name": "Great Bitter Lake",
+  "kind": "lake on the Suez Canal",
+  "nation": "Egypt",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Great_Bitter_Lake",
+  "lat": null,
+  "lon": null
+ },
  "place-great-sphinx-of-giza": {
   "name": "Sphinx",
   "kind": "monument",
@@ -1767,6 +1795,15 @@
   "source": "https://en.wikipedia.org/wiki/Hornsey",
   "lat": 51.587,
   "lon": -0.118
+ },
+ "place-hotel-schiff": {
+  "name": "Hotel Schiff",
+  "kind": "hotel, Social Democrat headquarters in 1934",
+  "nation": "Austria",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hotel_Schiff",
+  "lat": null,
+  "lon": null
  },
  "place-houffalize": {
   "name": "Houffalize",
@@ -2952,6 +2989,15 @@
   "lat": 23.9731,
   "lon": 97.9833
  },
+ "place-monte-cassino": {
+  "name": "Monte Cassino",
+  "kind": "Benedictine abbey and hill above Cassino",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Monte_Cassino",
+  "lat": null,
+  "lon": null
+ },
  "place-montevideo": {
   "name": "Montevideo",
   "kind": "city",
@@ -3235,6 +3281,18 @@
   "source": "https://en.wikipedia.org/wiki/Ninth_Fort",
   "lat": 54.9447,
   "lon": 23.8706
+ },
+ "place-nis": {
+  "name": "Nis",
+  "kind": "city in Serbia",
+  "nation": "Yugoslavia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ni%C5%A1",
+  "aka": [
+   "Niš"
+  ],
+  "lat": null,
+  "lon": null
  },
  "place-north-american-aerospace-museum": {
   "name": "Evergreen Aviation and Space Museum",
@@ -3704,6 +3762,15 @@
   "lat": 35.9656,
   "lon": -115.5017
  },
+ "place-prague": {
+  "name": "Prague",
+  "kind": "city",
+  "nation": "Czechoslovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Prague",
+  "lat": null,
+  "lon": null
+ },
  "place-pula": {
   "name": "Pula",
   "kind": "port city and naval base",
@@ -3763,6 +3830,15 @@
   "wikidata": "Q218768",
   "lat": -4.1981,
   "lon": 152.1681
+ },
+ "place-radcliffe-infirmary": {
+  "name": "Radcliffe Infirmary",
+  "kind": "hospital, Oxford",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Radcliffe_Infirmary",
+  "lat": null,
+  "lon": null
  },
  "place-raf-boxted": {
   "name": "RAF Boxted",

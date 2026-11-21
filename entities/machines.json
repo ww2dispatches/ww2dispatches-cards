@@ -144,6 +144,13 @@
   "wikidata": "Q623544",
   "source": "https://en.wikipedia.org/wiki/Ejection_seat"
  },
+ "machine-eniac": {
+  "name": "ENIAC",
+  "kind": "electronic computer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/ENIAC"
+ },
  "machine-enigma-machine": {
   "name": "Enigma machine",
   "kind": "cipher machine",
