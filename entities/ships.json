@@ -301,6 +301,13 @@
    "U-127"
   ]
  },
+ "ship-german-submarine-u-1276": {
+  "name": "U-1276",
+  "kind": "Type VIIC/41 U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-1276"
+ },
  "ship-german-submarine-u-131-1941": {
   "name": "German submarine U-131 (1941)",
   "kind": "Type IXC U-boat",
@@ -1561,6 +1568,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/HMS_Venturer_(P68)"
  },
+ "ship-hms-vervain": {
+  "name": "HMS Vervain (K190)",
+  "kind": "Flower class corvette",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Vervain"
+ },
  "ship-hms-victorious-r38": {
   "name": "HMS Victorious (R38)",
   "kind": "aircraft carrier",
@@ -1615,6 +1629,13 @@
   "nation": "Netherlands",
   "wikidata": "Q2010241",
   "source": "https://en.wikipedia.org/wiki/HNLMS_K_XVI"
+ },
+ "ship-hnlms-piet-hein-1927": {
+  "name": "HNLMS Piet Hein (1927)",
+  "kind": "Admiralen class destroyer",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HNLMS_Piet_Hein_(1927)"
  },
  "ship-htms-thonburi": {
   "name": "HTMS Thonburi",
@@ -1895,6 +1916,13 @@
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Asagumo_(1937)",
   "wikidata": "Q2991436"
  },
+ "ship-japanese-destroyer-asashio-1936": {
+  "name": "Japanese destroyer Asashio (1936)",
+  "kind": "Asashio class destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Asashio_(1936)"
+ },
  "ship-japanese-destroyer-hamakaze-1940": {
   "name": "Hamakaze",
   "kind": "destroyer",
@@ -1987,6 +2015,16 @@
   "nation": "Japan",
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Okinami",
   "wikidata": "Q2463749"
+ },
+ "ship-japanese-destroyer-oshio": {
+  "name": "Japanese destroyer Oshio",
+  "kind": "Asashio class destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_%C5%8Cshio",
+  "aka": [
+   "Ōshio"
+  ]
  },
  "ship-japanese-destroyer-oyashio": {
   "name": "Japanese destroyer Oyashio",
@@ -2369,6 +2407,17 @@
   "nation": "worldwide",
   "source": "https://en.wikipedia.org/wiki/RV_Petrel",
   "wikidata": "Q47012687"
+ },
+ "ship-sf-hydro": {
+  "name": "SF Hydro",
+  "kind": "railway ferry on Lake Tinn",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SF_Hydro",
+  "aka": [
+   "DF Hydro",
+   "Hydro"
+  ]
  },
  "ship-shinano": {
   "name": "Shinano",

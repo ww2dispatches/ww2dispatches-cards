@@ -186,6 +186,13 @@
    "Physics-1"
   ]
  },
+ "machine-four-freedoms-rockwell": {
+  "name": "Four Freedoms (Rockwell)",
+  "kind": "series of four paintings",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Four_Freedoms_(Rockwell)"
+ },
  "machine-fraktur": {
   "name": "Fraktur",
   "kind": "blackletter typeface",
@@ -196,6 +203,13 @@
    "blackletter",
    "gothic script"
   ]
+ },
+ "machine-freedom-of-speech-painting": {
+  "name": "Freedom of Speech (painting)",
+  "kind": "painting by Norman Rockwell",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Freedom_of_Speech_(painting)"
  },
  "machine-freya-radar": {
   "name": "Freya radar",

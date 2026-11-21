@@ -416,6 +416,13 @@
   "wikidata": "Q4632422",
   "source": "https://en.wikipedia.org/wiki/26th_Cavalry_Regiment_(Philippine_Scouts)"
  },
+ "unit-26th-infantry-regiment-united-states": {
+  "name": "26th Infantry Regiment",
+  "kind": "U.S. Army infantry regiment, 1st Infantry Division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/26th_Infantry_Regiment_(United_States)"
+ },
  "unit-27th-marine-regiment-united-states": {
   "name": "27th Marine Regiment",
   "kind": "U.S. Marine Corps infantry regiment",
@@ -2644,6 +2651,13 @@
   "nation": "Soviet Union",
   "source": "https://en.wikipedia.org/wiki/Southwestern_Front_(Soviet_Union)",
   "wikidata": "Q1469548"
+ },
+ "unit-sparrow-force": {
+  "name": "Sparrow Force",
+  "kind": "Australian force on Timor",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sparrow_Force"
  },
  "unit-special-operations-executive": {
   "name": "Special Operations Executive",

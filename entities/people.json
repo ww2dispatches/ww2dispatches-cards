@@ -297,6 +297,13 @@
   "wikidata": "Q16527346",
   "source": "https://en.wikipedia.org/wiki/Antonino_Toscano"
  },
+ "person-archibald-mathies": {
+  "name": "Archibald Mathies",
+  "kind": "B-17 flight engineer, Medal of Honor",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Archibald_Mathies"
+ },
  "person-archibald-wavell-1st-earl-wavell": {
   "name": "Archibald Wavell, 1st Earl Wavell",
   "kind": "British field marshal, ABDA supreme commander",
@@ -2289,6 +2296,13 @@
   "wikidata": "Q18639951",
   "source": "https://en.wikipedia.org/wiki/Gus_March-Phillipps"
  },
+ "person-gustav-krupp-von-bohlen-und-halbach": {
+  "name": "Gustav Krupp von Bohlen und Halbach",
+  "kind": "German industrialist, head of Krupp",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Gustav_Krupp_von_Bohlen_und_Halbach"
+ },
  "person-gustav-rasmussen": {
   "name": "Gustav Rasmussen",
   "kind": "Danish foreign minister",
@@ -3795,6 +3809,20 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Klaus_Barbie"
  },
+ "person-klement-gottwald": {
+  "name": "Klement Gottwald",
+  "kind": "Czechoslovak Communist leader, prime minister",
+  "nation": "Czechoslovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Klement_Gottwald"
+ },
+ "person-knut-haukelid": {
+  "name": "Knut Haukelid",
+  "kind": "Norwegian SOE commando",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Knut_Haukelid"
+ },
  "person-koichi-kido": {
   "name": "Koichi Kido",
   "kind": "Lord Keeper of the Privy Seal",
@@ -4587,6 +4615,13 @@
   "nation": "Britain",
   "wikidata": "Q12797581",
   "source": "https://en.wikipedia.org/wiki/Norman_Crockatt"
+ },
+ "person-norman-rockwell": {
+  "name": "Norman Rockwell",
+  "kind": "American illustrator and painter",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Norman_Rockwell"
  },
  "person-olga-gray": {
   "name": "Olga Gray",
@@ -5756,6 +5791,16 @@
   "wikidata": "Q472089",
   "source": "https://en.wikipedia.org/wiki/Ugo_Cavallero"
  },
+ "person-vaclav-nosek": {
+  "name": "Vaclav Nosek",
+  "kind": "Czechoslovak Communist interior minister",
+  "nation": "Czechoslovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/V%C3%A1clav_Nosek",
+  "aka": [
+   "Václav Nosek"
+  ]
+ },
  "person-vance-breese": {
   "name": "Vance Breese",
   "kind": "test pilot",
@@ -5931,6 +5976,16 @@
   "source": "https://en.wikipedia.org/wiki/Walter_Brattain",
   "aka": [
    "Walter Houser Brattain"
+  ]
+ },
+ "person-walter-e-truemper": {
+  "name": "Walter E. Truemper",
+  "kind": "B-17 navigator, Medal of Honor",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Walter_E._Truemper",
+  "aka": [
+   "Walter Truemper"
   ]
  },
  "person-walter-horn": {

@@ -26,6 +26,13 @@
   "wikidata": "Q9600",
   "source": "https://en.wikipedia.org/wiki/1936_Winter_Olympics"
  },
+ "op-1939-nazi-rally-at-madison-square-garden": {
+  "name": "1939 Nazi rally at Madison Square Garden",
+  "kind": "German American Bund rally",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1939_Nazi_rally_at_Madison_Square_Garden"
+ },
  "op-1940-united-states-presidential-election": {
   "name": "1940 presidential election",
   "kind": "U.S. election",
@@ -112,6 +119,16 @@
   "wikidata": "Q122292274",
   "source": "https://en.wikipedia.org/wiki/1946_United_States_steel_strike"
  },
+ "op-1948-czechoslovak-coup-d-etat": {
+  "name": "1948 Czechoslovak coup d'etat",
+  "kind": "Communist seizure of power in Prague",
+  "nation": "Czechoslovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1948_Czechoslovak_coup_d%27%C3%A9tat",
+  "aka": [
+   "Victorious February"
+  ]
+ },
  "op-20-july-plot": {
   "name": "20 July plot",
   "kind": "assassination attempt and coup",
@@ -176,6 +193,13 @@
   "aka": [
    "Operation Halfback"
   ]
+ },
+ "op-action-off-bougainville": {
+  "name": "Action off Bougainville",
+  "kind": "carrier air battle, 20 Feb 1942",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Action_off_Bougainville"
  },
  "op-adolf-hitler-s-rise-to-power": {
   "name": "Adolf Hitler's rise to power",
@@ -414,6 +438,13 @@
   "nation": "US",
   "wikidata": "Q2091385",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Arawe"
+ },
+ "op-battle-of-badung-strait": {
+  "name": "Battle of Badung Strait",
+  "kind": "night naval battle off Bali",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Badung_Strait"
  },
  "op-battle-of-balikpapan-1942": {
   "name": "Battle of Balikpapan (1942)",
@@ -1069,6 +1100,13 @@
   "wikidata": "Q713529",
   "source": "https://en.wikipedia.org/wiki/Battle_of_the_River_Plate"
  },
+ "op-battle-of-timor": {
+  "name": "Battle of Timor",
+  "kind": "campaign on Timor, 1942 to 1943",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Timor"
+ },
  "op-battle-of-tolvajarvi": {
   "name": "Battle of Tolvajärvi",
   "kind": "Winter War battle",
@@ -1161,6 +1199,16 @@
   "nation": "Britain",
   "wikidata": "Q4899669",
   "source": "https://en.wikipedia.org/wiki/Bevin_Boys"
+ },
+ "op-big-week": {
+  "name": "Big Week",
+  "kind": "Operation Argument bombing campaign, 20 to 25 Feb 1944",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Big_Week",
+  "aka": [
+   "Operation Argument"
+  ]
  },
  "op-black-friday-1945": {
   "name": "Black Friday (1945)",
@@ -2000,6 +2048,13 @@
   "nation": "Canada",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/If_Day"
+ },
+ "op-indian-independence-act-1947": {
+  "name": "Indian Independence Act 1947",
+  "kind": "British act partitioning India",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Indian_Independence_Act_1947"
  },
  "op-indonesian-national-revolution": {
   "name": "Indonesian National Revolution",
@@ -3441,6 +3496,13 @@
   "nation": "China",
   "wikidata": "Q170314",
   "source": "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War"
+ },
+ "op-secret-meeting-of-20-february-1933": {
+  "name": "Secret Meeting of 20 February 1933",
+  "kind": "Hitler's fundraising meeting with industrialists",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Secret_Meeting_of_20_February_1933"
  },
  "op-selective-training-and-service-act-of-1940": {
   "name": "Selective Training and Service Act",
