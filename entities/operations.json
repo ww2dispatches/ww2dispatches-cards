@@ -3569,6 +3569,13 @@
   "wikidata": "Q52315",
   "source": "https://en.wikipedia.org/wiki/Operation_Little_Saturn"
  },
+ "op-operation-lustre": {
+  "name": "Operation Lustre",
+  "kind": "British move of troops from Egypt to Greece, 1941",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Lustre"
+ },
  "op-operation-meridian": {
   "name": "Operation Meridian",
   "kind": "air raids",
@@ -3975,6 +3982,16 @@
   "nation": "Germany",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Reichstag_Fire_Decree"
+ },
+ "op-remilitarisation-of-the-rhineland": {
+  "name": "Remilitarisation of the Rhineland",
+  "kind": "German treaty breach, 1936",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Remilitarisation_of_the_Rhineland",
+  "aka": [
+   "Remilitarization of the Rhineland"
+  ]
  },
  "op-rennert-railroad-accident": {
   "name": "Rennert railroad accident",

@@ -511,6 +511,15 @@
   "lat": 48.2111,
   "lon": 6.8047
  },
+ "place-bikini-atoll": {
+  "name": "Bikini Atoll",
+  "kind": "atoll in the Marshall Islands",
+  "nation": "Marshall Islands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bikini_Atoll",
+  "lat": null,
+  "lon": null
+ },
  "place-bioko": {
   "name": "Bioko",
   "kind": "island in the Gulf of Guinea, formerly Fernando Po",
@@ -2675,6 +2684,15 @@
    "Kremlin"
   ]
  },
+ "place-krysia-bunker": {
+  "name": "Krysia Bunker",
+  "kind": "Jewish hiding place in Warsaw",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Krysia_Bunker",
+  "lat": null,
+  "lon": null
+ },
  "place-kuala-lumpur": {
   "name": "Kuala Lumpur",
   "kind": "city, capital of the Federated Malay States",
@@ -4279,6 +4297,15 @@
   "lat": 39.89,
   "lon": -75.18
  },
+ "place-piraeus": {
+  "name": "Piraeus",
+  "kind": "Greek port city",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Piraeus",
+  "lat": null,
+  "lon": null
+ },
  "place-place-de-la-concorde": {
   "name": "Place de la Concorde",
   "kind": "square",
@@ -4653,6 +4680,15 @@
   "nation": "Italy",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Rome",
+  "lat": null,
+  "lon": null
+ },
+ "place-rongerik-atoll": {
+  "name": "Rongerik Atoll",
+  "kind": "atoll in the Marshall Islands",
+  "nation": "Marshall Islands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Rongerik_Atoll",
   "lat": null,
   "lon": null
  },

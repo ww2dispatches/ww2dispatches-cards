@@ -335,6 +335,13 @@
   "wikidata": "Q827932",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-1276"
  },
+ "ship-german-submarine-u-1302": {
+  "name": "German submarine U-1302",
+  "kind": "German Type VIIC/41 U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-1302"
+ },
  "ship-german-submarine-u-131-1941": {
   "name": "German submarine U-131 (1941)",
   "kind": "Type IXC U-boat",
@@ -1004,6 +1011,13 @@
   "wikidata": "Q645571",
   "source": "https://en.wikipedia.org/wiki/HMAS_Yarra_(U77)"
  },
+ "ship-hmcs-la-hulloise": {
+  "name": "HMCS La Hulloise",
+  "kind": "Canadian River class frigate",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMCS_La_Hulloise"
+ },
  "ship-hmcs-louisburg-k143": {
   "name": "HMCS Louisburg (K143)",
   "kind": "Flower-class corvette",
@@ -1028,6 +1042,20 @@
    "HMCS St. Thomas",
    "St. Thomas"
   ]
+ },
+ "ship-hmcs-strathadam": {
+  "name": "HMCS Strathadam",
+  "kind": "Canadian River class frigate",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMCS_Strathadam"
+ },
+ "ship-hmcs-thetford-mines": {
+  "name": "HMCS Thetford Mines",
+  "kind": "Canadian River class frigate",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMCS_Thetford_Mines"
  },
  "ship-hmcs-ville-de-quebec": {
   "name": "HMCS Ville de Quebec (K242)",
@@ -1213,6 +1241,13 @@
   "nation": "United Kingdom",
   "source": "https://en.wikipedia.org/wiki/HMS_Dulverton_(L63)",
   "wikidata": "Q5632221"
+ },
+ "ship-hms-eagle-1918": {
+  "name": "HMS Eagle (1918)",
+  "kind": "British aircraft carrier",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Eagle_(1918)"
  },
  "ship-hms-encounter-h10": {
   "name": "HMS Encounter (H10)",
@@ -2691,6 +2726,13 @@
   "nation": "Canada",
   "wikidata": "Q2124409",
   "source": "https://en.wikipedia.org/wiki/RMS_Lady_Hawkins"
+ },
+ "ship-rms-queen-elizabeth": {
+  "name": "RMS Queen Elizabeth",
+  "kind": "British ocean liner and troopship",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/RMS_Queen_Elizabeth"
  },
  "ship-rms-queen-mary": {
   "name": "RMS Queen Mary",
