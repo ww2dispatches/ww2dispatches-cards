@@ -206,6 +206,13 @@
   "wikidata": "Q123700076",
   "source": "https://en.wikipedia.org/wiki/Auschwitz_Sonderkommando_revolt"
  },
+ "op-axis-powers-negotiations-on-the-division-of-asia": {
+  "name": "Axis powers negotiations on the division of Asia",
+  "kind": "Axis military convention and operational spheres",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Axis_powers_negotiations_on_the_division_of_Asia"
+ },
  "op-azad-hind": {
   "name": "Azad Hind",
   "kind": "Provisional Government of Free India, aligned with Japan",
@@ -467,6 +474,13 @@
   "wikidata": "Q711223",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Mindoro"
  },
+ "op-battle-of-monte-cassino": {
+  "name": "Battle of Monte Cassino",
+  "kind": "series of Allied assaults on the Gustav Line",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Monte_Cassino"
+ },
  "op-battle-of-moscow": {
   "name": "Battle of Moscow",
   "kind": "battle",
@@ -545,6 +559,13 @@
   "wikidata": "Q1748629",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Skerki_Bank"
  },
+ "op-battle-of-slim-river": {
+  "name": "Battle of Slim River",
+  "kind": "battle",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Slim_River"
+ },
  "op-battle-of-st-vith": {
   "name": "Battle of St. Vith",
   "kind": "battle in the Battle of the Bulge",
@@ -558,6 +579,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q38789",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Stalingrad"
+ },
+ "op-battle-of-tarakan-1942": {
+  "name": "Battle of Tarakan (1942)",
+  "kind": "Japanese invasion of a Dutch oil island",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Tarakan_(1942)"
  },
  "op-battle-of-tarawa": {
   "name": "Battle of Tarawa",
@@ -656,6 +684,13 @@
   "wikidata": "Q639989",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Tolvaj%C3%A4rvi"
  },
+ "op-battle-of-velikiye-luki": {
+  "name": "Battle of Velikiye Luki",
+  "kind": "battle, 1942 to 1943",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Velikiye_Luki"
+ },
  "op-battle-of-wake-island": {
   "name": "Battle of Wake Island",
   "kind": "battle",
@@ -713,6 +748,13 @@
   "nation": "Britain",
   "wikidata": "Q4899669",
   "source": "https://en.wikipedia.org/wiki/Bevin_Boys"
+ },
+ "op-bombing-of-berlin-in-world-war-ii": {
+  "name": "Bombing of Berlin in World War II",
+  "kind": "air campaign",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Berlin_in_World_War_II"
  },
  "op-bombing-of-calcutta": {
   "name": "Bombing of Calcutta",
@@ -968,6 +1010,13 @@
    "Infamy Speech"
   ]
  },
+ "op-death-marches-during-the-holocaust": {
+  "name": "Death marches during the Holocaust",
+  "kind": "forced evacuation marches of camp prisoners",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Death_marches_during_the_Holocaust"
+ },
  "op-declaration-by-united-nations": {
   "name": "Declaration by United Nations",
   "kind": "Allied declaration, 1 January 1942",
@@ -1113,6 +1162,17 @@
   "nation": "France",
   "wikidata": "Q137799043",
   "source": "https://en.wikipedia.org/wiki/Franco%E2%80%93German_Declaration"
+ },
+ "op-franco-italian-agreement-of-1935": {
+  "name": "Franco-Italian Agreement of 1935",
+  "kind": "treaty",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Franco-Italian_Agreement_of_1935",
+  "aka": [
+   "Mussolini-Laval Accord",
+   "Rome Accords"
+  ]
  },
  "op-genocide-convention": {
   "name": "Genocide Convention",
@@ -1405,6 +1465,16 @@
    "NMT Case 10"
   ]
  },
+ "op-landing-at-amchitka": {
+  "name": "Landing at Amchitka",
+  "kind": "U.S. occupation of an Aleutian island",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Landing_at_Amchitka",
+  "aka": [
+   "Operation Longview"
+  ]
+ },
  "op-landing-at-saidor": {
   "name": "Landing at Saidor",
   "kind": "amphibious landing",
@@ -1628,6 +1698,17 @@
   "wikidata": "Q12406742",
   "source": "https://en.wikipedia.org/wiki/New_Britain_campaign"
  },
+ "op-new-fourth-army-incident": {
+  "name": "New Fourth Army Incident",
+  "kind": "clash",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/New_Fourth_Army_Incident",
+  "aka": [
+   "South Anhui Incident",
+   "Wannan Incident"
+  ]
+ },
  "op-ni-ihau-incident": {
   "name": "Niʻihau incident",
   "kind": "crash landing and standoff, 7 to 13 December 1941",
@@ -1810,6 +1891,13 @@
   "nation": "Germany",
   "wikidata": "Q167002",
   "source": "https://en.wikipedia.org/wiki/Operation_Greif"
+ },
+ "op-operation-iskra": {
+  "name": "Operation Iskra",
+  "kind": "Soviet offensive that broke the land blockade of Leningrad",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Iskra"
  },
  "op-operation-ke": {
   "name": "Operation Ke",
@@ -2157,6 +2245,13 @@
   "wikidata": "Q3137814",
   "source": "https://en.wikipedia.org/wiki/Sakuradamon_incident_(1932)"
  },
+ "op-sandomierz-silesian-offensive": {
+  "name": "Sandomierz Silesian offensive",
+  "kind": "Soviet offensive, part of the Vistula Oder offensive",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sandomierz%E2%80%93Silesian_offensive"
+ },
  "op-scuttling-of-the-french-fleet-at-toulon": {
   "name": "Scuttling of the French fleet at Toulon",
   "kind": "scuttling",
@@ -2276,6 +2371,13 @@
   "source": "https://en.wikipedia.org/wiki/Siege_of_Leningrad",
   "wikidata": "Q151860"
  },
+ "op-siege-of-malta-world-war-ii": {
+  "name": "Siege of Malta",
+  "kind": "siege and air campaign, 1940 to 1942",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Siege_of_Malta_(World_War_II)"
+ },
  "op-siege-of-tobruk": {
   "name": "Siege of Tobruk",
   "kind": "siege",
@@ -2306,6 +2408,13 @@
   "nation": "United States",
   "source": "https://en.wikipedia.org/wiki/Sole_Survivor_Policy",
   "wikidata": "Q1463062"
+ },
+ "op-south-china-sea-raid": {
+  "name": "South China Sea raid",
+  "kind": "carrier raid, January 1945",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/South_China_Sea_raid"
  },
  "op-southampton-blitz": {
   "name": "Southampton Blitz",
@@ -2349,6 +2458,13 @@
   "nation": "Britain",
   "wikidata": "Q719883",
   "source": "https://en.wikipedia.org/wiki/Statute_of_Westminster_1931"
+ },
+ "op-stimson-doctrine": {
+  "name": "Stimson Doctrine",
+  "kind": "diplomatic policy",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Stimson_Doctrine"
  },
  "op-struma-disaster": {
   "name": "Struma disaster",
@@ -2454,6 +2570,13 @@
   "nation": "Britain",
   "wikidata": "Q7839974",
   "source": "https://en.wikipedia.org/wiki/Trial_of_Erich_von_Manstein"
+ },
+ "op-tripartite-pact": {
+  "name": "Tripartite Pact",
+  "kind": "Axis alliance treaty",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tripartite_Pact"
  },
  "op-truman-directive-of-1945": {
   "name": "Truman Directive of 1945",

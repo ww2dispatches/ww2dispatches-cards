@@ -56,6 +56,18 @@
   "lat": 36.7764,
   "lon": 3.0586
  },
+ "place-amchitka-island": {
+  "name": "Amchitka Island",
+  "kind": "island in the Aleutians, Alaska",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Amchitka_Island",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Amchitka"
+  ]
+ },
  "place-andaman-islands": {
   "name": "Andaman Islands",
   "kind": "islands",
@@ -506,6 +518,15 @@
   "lat": 43.8547,
   "lon": -78.8843
  },
+ "place-cape-hatteras": {
+  "name": "Cape Hatteras",
+  "kind": "cape on the Outer Banks of North Carolina",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Cape_Hatteras",
+  "lat": null,
+  "lon": null
+ },
  "place-cape-jaffa": {
   "name": "Cape Jaffa",
   "kind": "headland in South Australia",
@@ -643,6 +664,18 @@
   "wikidata": "Q867864",
   "lat": -7.0,
   "lon": 156.9667
+ },
+ "place-chongqing": {
+  "name": "Chongqing",
+  "kind": "city, China's wartime capital",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Chongqing",
+  "aka": [
+   "Chungking"
+  ],
+  "lat": null,
+  "lon": null
  },
  "place-clark-air-base": {
   "name": "Clark Field",
@@ -923,6 +956,15 @@
   "lat": 30.8333,
   "lon": 28.95
  },
+ "place-elisabeth-bridge-budapest": {
+  "name": "Elisabeth Bridge",
+  "kind": "bridge over the Danube in Budapest",
+  "nation": "Hungary",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Elisabeth_Bridge_(Budapest)",
+  "lat": null,
+  "lon": null
+ },
  "place-embassy-of-russia-tehran": {
   "name": "Soviet Embassy, Tehran",
   "kind": "embassy",
@@ -1055,6 +1097,24 @@
    "Danzig",
    "Gdansk"
   ]
+ },
+ "place-fuhrerbunker": {
+  "name": "Führerbunker",
+  "kind": "air raid shelter and headquarters",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/F%C3%BChrerbunker",
+  "lat": null,
+  "lon": null
+ },
+ "place-garigliano": {
+  "name": "Garigliano",
+  "kind": "river in central Italy",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Garigliano",
+  "lat": null,
+  "lon": null
  },
  "place-gearhart-mountain": {
   "name": "Gearhart Mountain",
@@ -1404,6 +1464,15 @@
   "wikidata": "Q13989",
   "lat": 36.0,
   "lon": 138.0
+ },
+ "place-houffalize": {
+  "name": "Houffalize",
+  "kind": "town",
+  "nation": "Belgium",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Houffalize",
+  "lat": null,
+  "lon": null
  },
  "place-huelva": {
   "name": "Huelva",
@@ -1910,6 +1979,19 @@
   "lat": 49.4942,
   "lon": 0.1081
  },
+ "place-ledo-road": {
+  "name": "Ledo Road",
+  "kind": "military road from Assam, India, to the Burma Road",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ledo_Road",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Stilwell Road",
+   "Pick's Pike"
+  ]
+ },
  "place-legazpi-albay": {
   "name": "Legazpi, Albay",
   "kind": "port city, southern Luzon",
@@ -2111,6 +2193,18 @@
    "Hollywood Theatre"
   ]
  },
+ "place-marrakesh": {
+  "name": "Marrakesh",
+  "kind": "city in Morocco",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Marrakesh",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Marrakech"
+  ]
+ },
  "place-marriott-mena-house-cairo": {
   "name": "Mena House Hotel",
   "kind": "hotel",
@@ -2213,6 +2307,15 @@
   "source": "https://en.wikipedia.org/wiki/Methodist_Central_Hall,_Westminster",
   "lat": 51.5,
   "lon": -0.13
+ },
+ "place-metropolitan-opera-house-39th-street": {
+  "name": "Metropolitan Opera House (39th Street)",
+  "kind": "opera house in New York City",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Metropolitan_Opera_House_(39th_Street)",
+  "lat": null,
+  "lon": null
  },
  "place-metz": {
   "name": "Metz",
@@ -2331,6 +2434,18 @@
   "source": "https://en.wikipedia.org/wiki/Montevideo",
   "lat": -34.9059,
   "lon": -56.1913
+ },
+ "place-morong-bataan": {
+  "name": "Morong, Bataan",
+  "kind": "town",
+  "nation": "Philippines",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Morong,_Bataan",
+  "aka": [
+   "Moron"
+  ],
+  "lat": null,
+  "lon": null
  },
  "place-moscow": {
   "name": "Moscow",
@@ -2477,6 +2592,15 @@
   "source": "https://en.wikipedia.org/wiki/Naval_Air_Station_Fort_Lauderdale",
   "lat": 26.0717,
   "lon": -80.1511
+ },
+ "place-negros": {
+  "name": "Negros",
+  "kind": "island",
+  "nation": "Philippines",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Negros",
+  "lat": null,
+  "lon": null
  },
  "place-neuengamme-concentration-camp": {
   "name": "Neuengamme concentration camp",
@@ -2648,6 +2772,18 @@
   "wikidata": "Q131818",
   "lat": 35.6969,
   "lon": -0.6331
+ },
+ "place-orkney": {
+  "name": "Orkney",
+  "kind": "island group, northern Scotland",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Orkney",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Orkney Islands"
+  ]
  },
  "place-ormoc": {
   "name": "Ormoc",
@@ -2880,6 +3016,15 @@
   "lat": 11.6667,
   "lon": 92.75
  },
+ "place-port-moresby": {
+  "name": "Port Moresby",
+  "kind": "town and Allied air base in Papua",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Port_Moresby",
+  "lat": null,
+  "lon": null
+ },
  "place-port-of-long-beach": {
   "name": "Long Beach Harbor",
   "kind": "harbor",
@@ -2918,6 +3063,15 @@
   "source": "https://en.wikipedia.org/wiki/Portsmouth_Guildhall",
   "lat": 50.7976,
   "lon": -1.0929
+ },
+ "place-potosi-mountain-nevada": {
+  "name": "Potosi Mountain",
+  "kind": "mountain",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Potosi_Mountain_(Nevada)",
+  "lat": null,
+  "lon": null
  },
  "place-pula": {
   "name": "Pula",
@@ -3300,6 +3454,15 @@
   "lat": 38.6447,
   "lon": -75.6161
  },
+ "place-senglea": {
+  "name": "Senglea",
+  "kind": "harbor town",
+  "nation": "Malta",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Senglea",
+  "lat": null,
+  "lon": null
+ },
  "place-serafimovich-town": {
   "name": "Serafimovich",
   "kind": "town",
@@ -3335,6 +3498,18 @@
   "source": "https://en.wikipedia.org/wiki/Sheffield",
   "lat": 53.3808,
   "lon": -1.4703
+ },
+ "place-shlisselburg": {
+  "name": "Shlisselburg",
+  "kind": "town at the source of the Neva on Lake Ladoga",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Shlisselburg",
+  "aka": [
+   "Schlusselburg"
+  ],
+  "lat": null,
+  "lon": null
  },
  "place-sibuyan-sea": {
   "name": "Sibuyan Sea",
@@ -3477,6 +3652,15 @@
   "lat": 48.4804,
   "lon": 11.9405
  },
+ "place-stanley-internment-camp": {
+  "name": "Stanley Internment Camp",
+  "kind": "civilian internment camp",
+  "nation": "Hong Kong",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Stanley_Internment_Camp",
+  "lat": null,
+  "lon": null
+ },
  "place-stary-ciepielow": {
   "name": "Stary Ciepielów",
   "kind": "village",
@@ -3552,6 +3736,15 @@
   "lat": 37.9756,
   "lon": 23.7347
  },
+ "place-szechenyi-chain-bridge": {
+  "name": "Szechenyi Chain Bridge",
+  "kind": "suspension bridge over the Danube in Budapest",
+  "nation": "Hungary",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sz%C3%A9chenyi_Chain_Bridge",
+  "lat": null,
+  "lon": null
+ },
  "place-tama-cemetery": {
   "name": "Tama Cemetery",
   "kind": "cemetery",
@@ -3560,6 +3753,18 @@
   "wikidata": "Q982473",
   "lat": 35.6853,
   "lon": 139.5097
+ },
+ "place-tarakan-island": {
+  "name": "Tarakan Island",
+  "kind": "oil island off northeastern Borneo",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tarakan_Island",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Tarakan"
+  ]
  },
  "place-tassafaronga-point": {
   "name": "Tassafaronga",
@@ -3805,6 +4010,15 @@
   "wikidata": "Q24639",
   "lat": 49.2608,
   "lon": -123.1139
+ },
+ "place-velikiye-luki": {
+  "name": "Velikiye Luki",
+  "kind": "city",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Velikiye_Luki",
+  "lat": null,
+  "lon": null
  },
  "place-vermelles": {
   "name": "Vermelles",
@@ -4101,5 +4315,14 @@
   "aka": [
    "Zhytomyr"
   ]
+ },
+ "place-zonhoven": {
+  "name": "Zonhoven",
+  "kind": "town",
+  "nation": "Belgium",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Zonhoven",
+  "lat": null,
+  "lon": null
  }
 }

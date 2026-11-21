@@ -446,6 +446,13 @@
   "source": "https://en.wikipedia.org/wiki/Shinyo_(suicide_motorboat)",
   "wikidata": "Q2064422"
  },
+ "machine-sliced-bread": {
+  "name": "Sliced bread",
+  "kind": "ready sliced bakery loaf",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sliced_bread"
+ },
  "machine-squid-weapon": {
   "name": "Squid (weapon)",
   "kind": "ahead throwing anti submarine mortar",
@@ -483,6 +490,13 @@
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/Tallboy_(bomb)",
   "wikidata": "Q1366827"
+ },
+ "machine-target-indicator": {
+  "name": "Target indicator",
+  "kind": "pyrotechnic marker bomb",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Target_indicator"
  },
  "machine-the-nazi-plan": {
   "name": "The Nazi Plan",

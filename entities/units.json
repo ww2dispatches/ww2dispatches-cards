@@ -326,6 +326,13 @@
   "source": "https://en.wikipedia.org/wiki/25th_Panzergrenadier_Division",
   "wikidata": "Q217468"
  },
+ "unit-26th-cavalry-regiment-philippine-scouts": {
+  "name": "26th Cavalry Regiment (Philippine Scouts)",
+  "kind": "U.S. Army cavalry regiment",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/26th_Cavalry_Regiment_(Philippine_Scouts)"
+ },
  "unit-285th-field-artillery-observation-battalion": {
   "name": "285th Field Artillery Observation Battalion",
   "kind": "army battalion",
@@ -991,6 +998,13 @@
    "Nyilaskeresztes Part"
   ]
  },
+ "unit-bbc-forces-programme": {
+  "name": "BBC Forces Programme",
+  "kind": "radio station for the forces",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/BBC_Forces_Programme"
+ },
  "unit-bbc-world-service": {
   "name": "BBC World Service",
   "kind": "international broadcaster (Empire Service from 1932)",
@@ -1173,6 +1187,13 @@
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/Eighth_Army_(United_Kingdom)",
   "wikidata": "Q270202"
+ },
+ "unit-esquire-magazine": {
+  "name": "Esquire",
+  "kind": "American magazine, sponsor of the All American jazz poll",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Esquire_(magazine)"
  },
  "unit-fast-carrier-task-force": {
   "name": "Task Force 38",
@@ -1585,6 +1606,18 @@
   "source": "https://en.wikipedia.org/wiki/National_Archives_and_Records_Administration",
   "wikidata": "Q518155"
  },
+ "unit-national-war-labor-board-1942-1945": {
+  "name": "National War Labor Board (1942 to 1945)",
+  "kind": "federal labor disputes agency",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/National_War_Labor_Board_(1942%E2%80%931945)",
+  "aka": [
+   "National War Labor Board",
+   "War Labor Board",
+   "NWLB"
+  ]
+ },
  "unit-nato-military-committee": {
   "name": "NATO Military Committee",
   "kind": "NATO military body",
@@ -1781,6 +1814,13 @@
   "aka": [
    "Vietnam Propaganda Liberation Army"
   ]
+ },
+ "unit-philippine-scouts": {
+  "name": "Philippine Scouts",
+  "kind": "U.S. Army Filipino troops",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Philippine_Scouts"
  },
  "unit-polish-committee-of-national-liberation": {
   "name": "Polish Committee of National Liberation",
@@ -2001,6 +2041,16 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Supreme_Court_of_the_United_States",
   "wikidata": "Q11201"
+ },
+ "unit-supreme-headquarters-allied-expeditionary-force": {
+  "name": "Supreme Headquarters Allied Expeditionary Force",
+  "kind": "Allied headquarters",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Supreme_Headquarters_Allied_Expeditionary_Force",
+  "aka": [
+   "SHAEF"
+  ]
  },
  "unit-third-army-romania": {
   "name": "Romanian Third Army",

@@ -254,6 +254,16 @@
   "wikidata": "Q4051948",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-224"
  },
+ "ship-german-submarine-u-23-1936": {
+  "name": "German submarine U-23 (1936)",
+  "kind": "Type IIB U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-23_(1936)",
+  "aka": [
+   "U-23"
+  ]
+ },
  "ship-german-submarine-u-254": {
   "name": "U-254",
   "kind": "German Type VIIC submarine",
@@ -315,6 +325,16 @@
   "nation": "Germany",
   "wikidata": "Q666604",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-37_(1938)"
+ },
+ "ship-german-submarine-u-374": {
+  "name": "German submarine U-374",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-374",
+  "aka": [
+   "U-374"
+  ]
  },
  "ship-german-submarine-u-426": {
   "name": "U-426",
@@ -384,6 +404,13 @@
   "nation": "Germany",
   "wikidata": "Q222380",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-629"
+ },
+ "ship-german-submarine-u-66-1940": {
+  "name": "U-66",
+  "kind": "Type IXC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-66_(1940)"
  },
  "ship-german-submarine-u-679": {
   "name": "U-679",
@@ -937,6 +964,23 @@
   "source": "https://en.wikipedia.org/wiki/HMS_Tynedale",
   "note": "Wikipedia title HMS Tynedale; HMS Tynedale (L96) redirects to it."
  },
+ "ship-hms-unbeaten": {
+  "name": "HMS Unbeaten (N93)",
+  "kind": "U class submarine",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Unbeaten",
+  "aka": [
+   "HMS Unbeaten"
+  ]
+ },
+ "ship-hms-undine-n48": {
+  "name": "HMS Undine (N48)",
+  "kind": "U-class submarine",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Undine_(N48)"
+ },
  "ship-hms-valiant-1914": {
   "name": "HMS Valiant",
   "kind": "battleship",
@@ -1105,6 +1149,16 @@
   "nation": "Japan",
   "source": "https://en.wikipedia.org/wiki/Japanese_cruiser_Atago",
   "wikidata": "Q753165"
+ },
+ "ship-japanese-cruiser-kashii": {
+  "name": "Japanese cruiser Kashii",
+  "kind": "Katori class training cruiser",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_cruiser_Kashii",
+  "aka": [
+   "Kashii"
+  ]
  },
  "ship-japanese-cruiser-kiso": {
   "name": "Kiso",
@@ -2141,6 +2195,13 @@
   "source": "https://en.wikipedia.org/wiki/USS_Reuben_James_(DD-245)",
   "wikidata": "Q1751680"
  },
+ "ship-uss-roe-dd-418": {
+  "name": "USS Roe (DD-418)",
+  "kind": "Sims class destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Roe_(DD-418)"
+ },
  "ship-uss-sailfish-ss-192": {
   "name": "USS Sailfish (SS-192)",
   "kind": "US Navy submarine, formerly USS Squalus",
@@ -2236,6 +2297,16 @@
   "wikidata": "Q1669008",
   "source": "https://en.wikipedia.org/wiki/USS_Tuscaloosa_(CA-37)"
  },
+ "ship-uss-tutuila-pr-4": {
+  "name": "USS Tutuila (PR-4)",
+  "kind": "Yangtze River gunboat",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Tutuila_(PR-4)",
+  "aka": [
+   "Mei Yuan"
+  ]
+ },
  "ship-uss-vulcan-ar-5": {
   "name": "USS Vulcan (AR-5)",
   "kind": "repair ship",
@@ -2289,6 +2360,13 @@
   "nation": "US",
   "wikidata": "Q4052289",
   "source": "https://en.wikipedia.org/wiki/USS_Woolsey_(DD-437)"
+ },
+ "ship-uss-worden-dd-352": {
+  "name": "USS Worden (DD-352)",
+  "kind": "Farragut class destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Worden_(DD-352)"
  },
  "ship-uss-yorktown-cv-10": {
   "name": "USS Yorktown (CV-10)",
