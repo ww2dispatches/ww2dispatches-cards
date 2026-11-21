@@ -193,6 +193,13 @@
    "Freya"
   ]
  },
+ "machine-fritz-x": {
+  "name": "Fritz X",
+  "kind": "German radio guided glide bomb",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fritz_X"
+ },
  "machine-fu-go-balloon-bomb": {
   "name": "Fu-Go balloon bomb",
   "kind": "balloon bomb",
@@ -332,6 +339,16 @@
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/Matilda_II",
   "wikidata": "Q502412"
+ },
+ "machine-morning-star-british-newspaper": {
+  "name": "Daily Worker",
+  "kind": "Communist daily newspaper (now the Morning Star)",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Morning_Star_(British_newspaper)",
+  "aka": [
+   "Morning Star"
+  ]
  },
  "machine-nazi-concentration-camps-film": {
   "name": "Nazi Concentration Camps",

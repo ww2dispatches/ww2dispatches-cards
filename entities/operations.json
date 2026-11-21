@@ -81,6 +81,13 @@
   "wikidata": "Q4565560",
   "source": "https://en.wikipedia.org/wiki/1945_Mikawa_earthquake"
  },
+ "op-1946-united-states-steel-strike": {
+  "name": "1946 United States steel strike",
+  "kind": "nationwide strike",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1946_United_States_steel_strike"
+ },
  "op-aarhus-air-raid": {
   "name": "Aarhus air raid",
   "kind": "air raid",
@@ -171,6 +178,13 @@
   "wikidata": "Q4796425",
   "source": "https://en.wikipedia.org/wiki/Arsenal_of_Democracy"
  },
+ "op-article-9-of-the-constitution-of-japan": {
+  "name": "Article 9 of the Constitution of Japan",
+  "kind": "constitutional clause",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Article_9_of_the_Constitution_of_Japan"
+ },
  "op-aryanization": {
   "name": "Aryanization",
   "kind": "Nazi seizure of Jewish owned property and businesses",
@@ -258,12 +272,29 @@
   "source": "https://en.wikipedia.org/wiki/Battle_of_Aachen",
   "wikidata": "Q327052"
  },
+ "op-battle-of-anzio": {
+  "name": "Battle of Anzio",
+  "kind": "battle",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Anzio",
+  "aka": [
+   "Operation Shingle"
+  ]
+ },
  "op-battle-of-arawe": {
   "name": "Battle of Arawe",
   "kind": "amphibious landing, New Britain",
   "nation": "US",
   "wikidata": "Q2091385",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Arawe"
+ },
+ "op-battle-of-balikpapan-1942": {
+  "name": "Battle of Balikpapan (1942)",
+  "kind": "battle",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Balikpapan_(1942)"
  },
  "op-battle-of-bardia": {
   "name": "Battle of Bardia",
@@ -409,6 +440,17 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Battle_of_Ko_Chang"
  },
+ "op-battle-of-korsun-cherkassy": {
+  "name": "Battle of Korsun-Cherkassy",
+  "kind": "battle",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Korsun%E2%80%93Cherkassy",
+  "aka": [
+   "Korsun pocket",
+   "Cherkassy pocket"
+  ]
+ },
  "op-battle-of-kota-bharu": {
   "name": "Battle of Kota Bharu",
   "kind": "battle",
@@ -509,6 +551,13 @@
   "wikidata": "Q151290",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Moscow"
  },
+ "op-battle-of-muar": {
+  "name": "Battle of Muar",
+  "kind": "battle",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Muar"
+ },
  "op-battle-of-nanking": {
   "name": "Battle of Nanking",
   "kind": "battle",
@@ -550,6 +599,16 @@
   "nation": "Finland",
   "wikidata": "Q2446643",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Raate_Road"
+ },
+ "op-battle-of-rabaul-1942": {
+  "name": "Battle of Rabaul (1942)",
+  "kind": "battle",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Rabaul_(1942)",
+  "aka": [
+   "Operation R"
+  ]
  },
  "op-battle-of-rapido-river": {
   "name": "Battle of Rapido River",
@@ -719,6 +778,13 @@
   "wikidata": "Q639989",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Tolvaj%C3%A4rvi"
  },
+ "op-battle-of-tripoli-1943": {
+  "name": "Battle of Tripoli (1943)",
+  "kind": "battle",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Tripoli_(1943)"
+ },
  "op-battle-of-velikiye-luki": {
   "name": "Battle of Velikiye Luki",
   "kind": "battle, 1942 to 1943",
@@ -871,6 +937,16 @@
   "wikidata": "Q4968807",
   "source": "https://en.wikipedia.org/wiki/Bristol_Blitz"
  },
+ "op-british-capture-of-tobruk": {
+  "name": "British capture of Tobruk",
+  "kind": "battle, January 1941",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/British_capture_of_Tobruk",
+  "aka": [
+   "Battle of Tobruk (1941)"
+  ]
+ },
  "op-british-commonwealth-air-training-plan": {
   "name": "British Commonwealth Air Training Plan",
   "kind": "aircrew training program",
@@ -921,6 +997,17 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/California_Alien_Land_Law_of_1913"
  },
+ "op-canberra-pact": {
+  "name": "Canberra Pact",
+  "kind": "Australia and New Zealand agreement",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Canberra_Pact",
+  "aka": [
+   "ANZAC Pact",
+   "Australian New Zealand Agreement"
+  ]
+ },
  "op-capture-of-kufra": {
   "name": "Capture of Kufra",
   "kind": "siege",
@@ -951,6 +1038,13 @@
   "nation": "worldwide",
   "source": "https://en.wikipedia.org/wiki/Casablanca_Conference",
   "wikidata": "Q502093"
+ },
+ "op-casablanca-directive": {
+  "name": "Casablanca directive",
+  "kind": "Combined Chiefs of Staff bombing directive",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Casablanca_directive"
  },
  "op-catalonia-offensive": {
   "name": "Catalonia Offensive",
@@ -1330,6 +1424,13 @@
    "Hoare-Laval Plan"
   ]
  },
+ "op-holodomor": {
+  "name": "Holodomor",
+  "kind": "man made famine in Soviet Ukraine",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Holodomor"
+ },
  "op-huaihai-campaign": {
   "name": "Huaihai campaign",
   "kind": "campaign",
@@ -1618,6 +1719,13 @@
   "wikidata": "Q1518946",
   "source": "https://en.wikipedia.org/wiki/Law_for_the_Prevention_of_Hereditarily_Diseased_Offspring"
  },
+ "op-legionnaires-rebellion-and-bucharest-pogrom": {
+  "name": "Legionnaires' rebellion and Bucharest pogrom",
+  "kind": "rebellion and pogrom",
+  "nation": "Romania",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Legionnaires%27_rebellion_and_Bucharest_pogrom"
+ },
  "op-lend-lease": {
   "name": "Lend Lease",
   "kind": "U.S. arms aid program",
@@ -1662,6 +1770,13 @@
   "nation": "Germany",
   "wikidata": "Q6658321",
   "source": "https://en.wikipedia.org/wiki/Liverpool_Blitz"
+ },
+ "op-london-naval-treaty": {
+  "name": "London Naval Conference and Treaty (1930)",
+  "kind": "naval arms limitation conference and treaty",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/London_Naval_Treaty"
  },
  "op-lorraine-campaign": {
   "name": "Lorraine campaign",
@@ -1720,6 +1835,17 @@
    "Manhattan Engineer District"
   ]
  },
+ "op-marseille-roundup": {
+  "name": "Marseille roundup",
+  "kind": "roundup and deportation of Jews",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Marseille_roundup",
+  "aka": [
+   "Rafle de Marseille",
+   "Operation Sultan"
+  ]
+ },
  "op-marshall-plan": {
   "name": "Marshall Plan",
   "kind": "European Recovery Program",
@@ -1766,6 +1892,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q912215",
   "source": "https://en.wikipedia.org/wiki/Moscow_Conference_(1945)"
+ },
+ "op-moscow-trials": {
+  "name": "Moscow trials",
+  "kind": "Soviet show trials",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Moscow_trials"
  },
  "op-nacht-und-nebel": {
   "name": "Nacht und Nebel",
@@ -2025,6 +2158,13 @@
   "wikidata": "Q167002",
   "source": "https://en.wikipedia.org/wiki/Operation_Greif"
  },
+ "op-operation-hannibal": {
+  "name": "Operation Hannibal",
+  "kind": "German naval evacuation",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Hannibal"
+ },
  "op-operation-iskra": {
   "name": "Operation Iskra",
   "kind": "Soviet offensive that broke the land blockade of Leningrad",
@@ -2079,6 +2219,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q52315",
   "source": "https://en.wikipedia.org/wiki/Operation_Little_Saturn"
+ },
+ "op-operation-meridian": {
+  "name": "Operation Meridian",
+  "kind": "air raids",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Meridian"
  },
  "op-operation-mincemeat": {
   "name": "Operation Mincemeat",
@@ -2138,6 +2285,16 @@
   "nation": "Germany",
   "wikidata": "Q708223",
   "source": "https://en.wikipedia.org/wiki/Operation_Sonnenblume"
+ },
+ "op-operation-steinbock": {
+  "name": "Operation Steinbock",
+  "kind": "Luftwaffe bombing campaign against Britain",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Steinbock",
+  "aka": [
+   "Baby Blitz"
+  ]
  },
  "op-operation-torch": {
   "name": "Operation Torch",
@@ -2212,6 +2369,13 @@
   "nation": "Japan",
   "wikidata": "Q7126934",
   "source": "https://en.wikipedia.org/wiki/Palawan_massacre"
+ },
+ "op-parit-sulong-massacre": {
+  "name": "Parit Sulong Massacre",
+  "kind": "massacre of prisoners of war",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Parit_Sulong_Massacre"
  },
  "op-philippines-campaign-1941-1942": {
   "name": "Philippines campaign (1941 to 1942)",
@@ -2596,6 +2760,13 @@
   "nation": "United States",
   "source": "https://en.wikipedia.org/wiki/Sole_Survivor_Policy",
   "wikidata": "Q1463062"
+ },
+ "op-sonderkommando-blaich": {
+  "name": "Sonderkommando Blaich",
+  "kind": "air raid on Fort Lamy",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sonderkommando_Blaich"
  },
  "op-south-china-sea-raid": {
   "name": "South China Sea raid",

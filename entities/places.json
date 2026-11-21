@@ -86,6 +86,15 @@
   "lat": 51.2211,
   "lon": 4.3997
  },
+ "place-anzio": {
+  "name": "Anzio",
+  "kind": "coastal town",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Anzio",
+  "lat": null,
+  "lon": null
+ },
  "place-arc-de-triomphe": {
   "name": "Arc de Triomphe",
   "kind": "monument",
@@ -179,6 +188,20 @@
   "wikidata": "Q745512",
   "lat": 62.3853,
   "lon": -140.893
+ },
+ "place-beijing": {
+  "name": "Beijing",
+  "kind": "city",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Beijing",
+  "aka": [
+   "Peking",
+   "Peiping",
+   "Beiping"
+  ],
+  "lat": null,
+  "lon": null
  },
  "place-bejaia": {
   "name": "Bougie",
@@ -445,6 +468,15 @@
    "Bruyères"
   ]
  },
+ "place-bucharest": {
+  "name": "Bucharest",
+  "kind": "city",
+  "nation": "Romania",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bucharest",
+  "lat": null,
+  "lon": null
+ },
  "place-buchenwald-concentration-camp": {
   "name": "Buchenwald",
   "kind": "Nazi concentration camp",
@@ -565,6 +597,15 @@
   "wikidata": "Q926115",
   "lat": -6.25,
   "lon": 155.0333
+ },
+ "place-carnegie-hall": {
+  "name": "Carnegie Hall",
+  "kind": "concert hall",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Carnegie_Hall",
+  "lat": null,
+  "lon": null
  },
  "place-casablanca": {
   "name": "Casablanca",
@@ -1242,6 +1283,15 @@
    "Argyrokastro"
   ]
  },
+ "place-glenn-research-center": {
+  "name": "Glenn Research Center",
+  "kind": "NASA research center, former NACA Aircraft Engine Research Laboratory",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Glenn_Research_Center",
+  "lat": null,
+  "lon": null
+ },
  "place-gona-papua-new-guinea": {
   "name": "Gona",
   "kind": "village and mission on the Papuan coast",
@@ -1897,6 +1947,15 @@
   "lat": 22.5675,
   "lon": 88.37
  },
+ "place-kolombangara": {
+  "name": "Kolombangara",
+  "kind": "island",
+  "nation": "Solomon Islands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kolombangara",
+  "lat": null,
+  "lon": null
+ },
  "place-kos": {
   "name": "Kos",
   "kind": "island",
@@ -2235,6 +2294,15 @@
   "lat": 11.1722,
   "lon": 125.0122
  },
+ "place-magdeburg": {
+  "name": "Magdeburg",
+  "kind": "city",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Magdeburg",
+  "lat": null,
+  "lon": null
+ },
  "place-manado": {
   "name": "Manado",
   "kind": "port city, Celebes (Sulawesi)",
@@ -2339,6 +2407,15 @@
   "aka": [
    "Mersa Matruh"
   ]
+ },
+ "place-marseille": {
+  "name": "Marseille",
+  "kind": "port city",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Marseille",
+  "lat": null,
+  "lon": null
  },
  "place-massachusetts-general-hospital": {
   "name": "Massachusetts General Hospital",
@@ -2659,6 +2736,18 @@
   ],
   "lat": 22.0,
   "lon": 96.0
+ },
+ "place-n-djamena": {
+  "name": "N'Djamena",
+  "kind": "city, formerly Fort Lamy",
+  "nation": "Chad",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/N%27Djamena",
+  "aka": [
+   "Fort Lamy"
+  ],
+  "lat": null,
+  "lon": null
  },
  "place-naples": {
   "name": "Naples",
@@ -2982,6 +3071,15 @@
   "wikidata": "Q128652",
   "lat": 49.4548,
   "lon": 11.0465
+ },
+ "place-palembang": {
+  "name": "Palembang",
+  "kind": "city",
+  "nation": "Indonesia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Palembang",
+  "lat": null,
+  "lon": null
  },
  "place-palermo": {
   "name": "Palermo",
@@ -3411,6 +3509,18 @@
    "Rostov"
   ]
  },
+ "place-royal-arsenal": {
+  "name": "Royal Arsenal, Woolwich",
+  "kind": "armaments works",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Royal_Arsenal",
+  "aka": [
+   "Woolwich Arsenal"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-royal-palace-of-amsterdam": {
   "name": "Royal Palace of Amsterdam",
   "kind": "palace",
@@ -3757,6 +3867,18 @@
   "lat": 42.3175,
   "lon": -72.6375
  },
+ "place-sobibor-extermination-camp": {
+  "name": "Sobibor extermination camp",
+  "kind": "Nazi extermination camp",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sobibor_extermination_camp",
+  "aka": [
+   "Sobibor"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-solnechnogorsk": {
   "name": "Solnechnogorsk",
   "kind": "town",
@@ -3822,6 +3944,18 @@
   "source": "https://en.wikipedia.org/wiki/St_Paul%27s_Cathedral",
   "lat": 51.5138,
   "lon": -0.0983
+ },
+ "place-st-vith": {
+  "name": "St. Vith",
+  "kind": "town",
+  "nation": "Belgium",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/St._Vith",
+  "aka": [
+   "Sankt Vith"
+  ],
+  "lat": null,
+  "lon": null
  },
  "place-stalag-vii-a": {
   "name": "Stalag VII A",
@@ -3942,6 +4076,15 @@
   "wikidata": "Q982473",
   "lat": 35.6853,
   "lon": 139.5097
+ },
+ "place-tannenberg-memorial": {
+  "name": "Tannenberg Memorial",
+  "kind": "war memorial and Hindenburg's tomb",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tannenberg_Memorial",
+  "lat": null,
+  "lon": null
  },
  "place-tarakan-island": {
   "name": "Tarakan Island",
@@ -4127,6 +4270,15 @@
   "lat": 43.125,
   "lon": 5.9306
  },
+ "place-tripoli-libya": {
+  "name": "Tripoli",
+  "kind": "city",
+  "nation": "Libya",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tripoli,_Libya",
+  "lat": null,
+  "lon": null
+ },
  "place-troms": {
   "name": "Tromso",
   "kind": "town",
@@ -4265,6 +4417,15 @@
   "source": "https://en.wikipedia.org/wiki/Vigan",
   "lat": 17.5747,
   "lon": 120.3869
+ },
+ "place-vilna-ghetto": {
+  "name": "Vilna Ghetto",
+  "kind": "ghetto",
+  "nation": "Lithuania",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Vilna_Ghetto",
+  "lat": null,
+  "lon": null
  },
  "place-volga": {
   "name": "Volga",

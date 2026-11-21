@@ -261,6 +261,13 @@
    "U-164"
   ]
  },
+ "ship-german-submarine-u-22-1936": {
+  "name": "U-22",
+  "kind": "Type IIB U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-22_(1936)"
+ },
  "ship-german-submarine-u-221": {
   "name": "U-221",
   "kind": "German Type VIIC submarine",
@@ -315,6 +322,13 @@
   "aka": [
    "U-30"
   ]
+ },
+ "ship-german-submarine-u-301": {
+  "name": "U-301",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-301"
  },
  "ship-german-submarine-u-31-1936": {
   "name": "U-31",
@@ -725,6 +739,13 @@
   "wikidata": "Q428315",
   "source": "https://en.wikipedia.org/wiki/HMS_Exeter_(68)"
  },
+ "ship-hms-exmouth-h02": {
+  "name": "HMS Exmouth (H02)",
+  "kind": "E-class destroyer flotilla leader",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Exmouth_(H02)"
+ },
  "ship-hms-forfar": {
   "name": "HMS Forfar (F30)",
   "kind": "armed merchant cruiser",
@@ -837,6 +858,13 @@
   "wikidata": "Q2442155",
   "source": "https://en.wikipedia.org/wiki/HMS_Indomitable_(92)"
  },
+ "ship-hms-janus-f53": {
+  "name": "HMS Janus (F53)",
+  "kind": "J class destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Janus_(F53)"
+ },
  "ship-hms-jervis": {
   "name": "HMS Jervis (F00)",
   "kind": "destroyer",
@@ -874,6 +902,13 @@
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/HMS_Legion_(G74)",
   "wikidata": "Q477526"
+ },
+ "ship-hms-liverpool-c11": {
+  "name": "HMS Liverpool (C11)",
+  "kind": "Town-class light cruiser",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Liverpool_(C11)"
  },
  "ship-hms-marigold-k87": {
   "name": "HMS Marigold (K87)",
@@ -969,6 +1004,16 @@
   "nation": "Britain",
   "wikidata": "Q1131630",
   "source": "https://en.wikipedia.org/wiki/HMS_Repulse_(1916)"
+ },
+ "ship-hms-sahib": {
+  "name": "HMS Sahib",
+  "kind": "S-class submarine",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Sahib",
+  "aka": [
+   "P212"
+  ]
  },
  "ship-hms-salmon-n65": {
   "name": "HMS Salmon (N65)",
@@ -1165,6 +1210,16 @@
   "nation": "Italy",
   "wikidata": "Q1118508",
   "source": "https://en.wikipedia.org/wiki/Italian_submarine_Ambra"
+ },
+ "ship-italian-submarine-barbarigo": {
+  "name": "Italian submarine Barbarigo",
+  "kind": "Marcello class submarine",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_submarine_Barbarigo",
+  "aka": [
+   "Barbarigo"
+  ]
  },
  "ship-italian-submarine-neghelli": {
   "name": "Neghelli",
@@ -1418,6 +1473,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Sazanami_(1931)"
  },
+ "ship-japanese-destroyer-shigure-1935": {
+  "name": "Shigure",
+  "kind": "destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Shigure_(1935)"
+ },
  "ship-japanese-destroyer-takanami-1942": {
   "name": "Takanami",
   "kind": "destroyer",
@@ -1605,6 +1667,13 @@
   "nation": "Japan",
   "wikidata": "Q11559813",
   "source": "https://en.wikipedia.org/wiki/MS_Awazisan_Maru"
+ },
+ "ship-mv-asama-maru": {
+  "name": "Asama Maru",
+  "kind": "ocean liner",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/MV_Asama_Maru"
  },
  "ship-mv-carnarvon-castle": {
   "name": "Carnarvon Castle",
@@ -1829,6 +1898,13 @@
   "wikidata": "Q7394072",
   "source": "https://en.wikipedia.org/wiki/SS_Montebello"
  },
+ "ship-ss-navemar": {
+  "name": "SS Navemar",
+  "kind": "Spanish cargo steamship",
+  "nation": "Spain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Navemar"
+ },
  "ship-ss-normandie": {
   "name": "SS Normandie",
   "kind": "French ocean liner, later USS Lafayette (AP-53)",
@@ -1867,6 +1943,13 @@
   "nation": "Germany",
   "wikidata": "Q2502598",
   "source": "https://en.wikipedia.org/wiki/SS_Ussukuma"
+ },
+ "ship-tss-st-david-1931": {
+  "name": "TSS St David",
+  "kind": "railway ferry, hospital ship",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/TSS_St_David_(1931)"
  },
  "ship-usat-liberty": {
   "name": "USAT Liberty",
@@ -1953,6 +2036,23 @@
   "nation": "US",
   "wikidata": "Q3268963",
   "source": "https://en.wikipedia.org/wiki/USS_Bergall_(SS-320)"
+ },
+ "ship-uss-blackfin": {
+  "name": "USS Blackfin (SS-322)",
+  "kind": "submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Blackfin"
+ },
+ "ship-uss-brevard": {
+  "name": "USS Brevard (AK-164)",
+  "kind": "U.S. Navy cargo ship",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Brevard",
+  "aka": [
+   "USS Brevard"
+  ]
  },
  "ship-uss-brownson-dd-518": {
   "name": "USS Brownson (DD-518)",
@@ -2114,6 +2214,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/USS_Intrepid_(CV-11)",
   "wikidata": "Q1351288"
+ },
+ "ship-uss-john-d-ford": {
+  "name": "USS John D. Ford (DD-228)",
+  "kind": "destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_John_D._Ford"
  },
  "ship-uss-johnston-dd-557": {
   "name": "USS Johnston (DD-557)",
@@ -2304,6 +2411,20 @@
   "wikidata": "Q955606",
   "source": "https://en.wikipedia.org/wiki/USS_Panay_(PR-5)"
  },
+ "ship-uss-parrott": {
+  "name": "USS Parrott (DD-218)",
+  "kind": "destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Parrott"
+ },
+ "ship-uss-paul-jones-dd-230": {
+  "name": "USS Paul Jones (DD-230)",
+  "kind": "destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Paul_Jones_(DD-230)"
+ },
  "ship-uss-philip-dd-498": {
   "name": "USS Philip (DD-498)",
   "kind": "destroyer",
@@ -2318,12 +2439,26 @@
   "source": "https://en.wikipedia.org/wiki/USS_Pioneer_(AM-105)",
   "wikidata": "Q7872912"
  },
+ "ship-uss-pope-dd-225": {
+  "name": "USS Pope (DD-225)",
+  "kind": "destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Pope_(DD-225)"
+ },
  "ship-uss-preston-dd-379": {
   "name": "USS Preston (DD-379)",
   "kind": "destroyer",
   "nation": "United States",
   "source": "https://en.wikipedia.org/wiki/USS_Preston_(DD-379)",
   "wikidata": "Q1133848"
+ },
+ "ship-uss-radford-dd-446": {
+  "name": "USS Radford (DD-446)",
+  "kind": "destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Radford_(DD-446)"
  },
  "ship-uss-ranger-cv-4": {
   "name": "USS Ranger (CV-4)",
@@ -2373,6 +2508,13 @@
   "nation": "US",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/USS_Roe_(DD-418)"
+ },
+ "ship-uss-s-26": {
+  "name": "USS S-26 (SS-131)",
+  "kind": "submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_S-26"
  },
  "ship-uss-sailfish-ss-192": {
   "name": "USS Sailfish (SS-192)",

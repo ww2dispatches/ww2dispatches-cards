@@ -277,6 +277,13 @@
   "wikidata": "Q277985",
   "source": "https://en.wikipedia.org/wiki/1st_Ukrainian_Front"
  },
+ "unit-2-29th-battalion-australia": {
+  "name": "2/29th Battalion (Australia)",
+  "kind": "Australian infantry battalion",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/2/29th_Battalion_(Australia)"
+ },
  "unit-2-6th-armoured-regiment-australia": {
   "name": "2/6th Armoured Regiment (Australia)",
   "kind": "Australian armoured regiment",
@@ -1115,6 +1122,13 @@
   "wikidata": "Q707618",
   "source": "https://en.wikipedia.org/wiki/Central_China_Area_Army"
  },
+ "unit-central-intelligence-group": {
+  "name": "Central Intelligence Group",
+  "kind": "U.S. intelligence agency, forerunner of the CIA",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Central_Intelligence_Group"
+ },
  "unit-churchill-archives-centre": {
   "name": "Churchill Archives Centre",
   "kind": "archive",
@@ -1229,6 +1243,17 @@
   "nation": "US",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Esquire_(magazine)"
+ },
+ "unit-fareynikte-partizaner-organizatsye": {
+  "name": "Fareynikte Partizaner Organizatsye",
+  "kind": "Jewish resistance organization in the Vilna Ghetto",
+  "nation": "Lithuania",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fareynikte_Partizaner_Organizatsye",
+  "aka": [
+   "FPO",
+   "United Partisan Organization"
+  ]
  },
  "unit-fast-carrier-task-force": {
   "name": "Task Force 38",
@@ -1451,6 +1476,16 @@
    "IMF"
   ]
  },
+ "unit-iron-guard": {
+  "name": "Iron Guard",
+  "kind": "Romanian fascist movement",
+  "nation": "Romania",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Iron_Guard",
+  "aka": [
+   "Legionnaires"
+  ]
+ },
  "unit-italian-army-in-russia": {
   "name": "Italian Army in Russia",
   "kind": "Italian Eighth Army on the Eastern Front",
@@ -1544,6 +1579,20 @@
   "aka": [
    "KSLI"
   ]
+ },
+ "unit-kreisau-circle": {
+  "name": "Kreisau Circle",
+  "kind": "German resistance group",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kreisau_Circle"
+ },
+ "unit-lark-force": {
+  "name": "Lark Force",
+  "kind": "Australian Army garrison of Rabaul",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Lark_Force"
  },
  "unit-league-of-nations": {
   "name": "League of Nations",
@@ -2125,6 +2174,17 @@
   "source": "https://en.wikipedia.org/wiki/Stalingrad_Front",
   "wikidata": "Q1469267"
  },
+ "unit-state-defense-committee": {
+  "name": "State Defense Committee",
+  "kind": "Soviet wartime governing body (GKO)",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/State_Defense_Committee",
+  "aka": [
+   "GKO",
+   "State Defence Committee"
+  ]
+ },
  "unit-supreme-commander-for-the-allied-powers": {
   "name": "Supreme Commander for the Allied Powers",
   "kind": "Allied occupation headquarters in Japan",
@@ -2159,6 +2219,13 @@
   "nation": "Romania",
   "source": "https://en.wikipedia.org/wiki/Third_Army_(Romania)",
   "wikidata": "Q223129"
+ },
+ "unit-twelfth-air-force": {
+  "name": "Twelfth Air Force",
+  "kind": "U.S. Army Air Forces numbered air force",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Twelfth_Air_Force"
  },
  "unit-twenty-fifth-army-japan": {
   "name": "Twenty-Fifth Army",
@@ -2282,6 +2349,13 @@
    "VF-3"
   ]
  },
+ "unit-vi-corps-united-states": {
+  "name": "VI Corps (United States)",
+  "kind": "U.S. Army corps",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/VI_Corps_(United_States)"
+ },
  "unit-vickers": {
   "name": "Vickers",
   "kind": "British arms maker",
@@ -2360,6 +2434,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/War_Production_Board",
   "wikidata": "Q1536750"
+ },
+ "unit-war-refugee-board": {
+  "name": "War Refugee Board",
+  "kind": "U.S. government rescue agency",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/War_Refugee_Board"
  },
  "unit-war-relocation-authority": {
   "name": "War Relocation Authority",
