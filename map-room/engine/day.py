@@ -134,20 +134,29 @@ class Day:
             if not in_zone(c): continue
             while in_zone((c[0] + step[0] * 0.05, c[1] + step[1] * 0.05)): c = (c[0] + step[0] * 0.05, c[1] + step[1] * 0.05)
             if clear(c) and math.hypot(c[0] - T[0], c[1] - T[1]) > BS * 2.2: cands.append((k, c))
-        def hidden(c):
-            """how much of the track would lie under ground blocks (the drop zone turn is left out: its target is a block)"""
-            tr = self.air_track(p, c); legs = tr[:31] + tr[-31:]
-            return sum(any(max(abs(q[0] - g[0]), abs(q[1] - g[1])) < BS / 2 + 0.06 for g in ground) for q in legs) / len(legs)
-        best = min(cands, key=lambda kc: (round(hidden(kc[1]), 2), kc[0]))[1] if cands else None
+        def hidden(c, D, side):
+            """how much of the track would lie under blocks other than the target's own"""
+            p['_turnSide'] = side; tr = self.air_track(p, c, D); p.pop('_turnSide')
+            pts = [q for q in tr if max(abs(q[0] - T[0]), abs(q[1] - T[1])) >= BS / 2 + 0.06]
+            return sum(any(max(abs(q[0] - g[0]), abs(q[1] - g[1])) < BS / 2 + 0.06 for g in ground if max(abs(g[0] - T[0]), abs(g[1] - T[1])) > 0.05) for q in pts) / max(1, len(pts))
+        opts = [(round(hidden(c, D, sd), 2), k, D, sd, c) for k, c in cands for D in (BS * 1.0, BS * 1.5, BS * 2.0) for sd in (1, -1)
+                if in_zone(self.air_track(p, c, D)[41 + 14])]          # the turn stays in view
+        best = None
+        if opts:
+            h, k, D, sd, best = min(opts, key=lambda o: (o[0], o[1], o[2]))
+            p['_turnD'] = D; p['_turnSide'] = sd
         p['_park'] = best or c; return p['_park']
-    def air_track(self, p, P=None):
-        """the flight: from the block toward the target, a half circle round the drop zone, and back (table units)"""
-        P = P or self.park_spot(p); T = self.xy(p['target'])
-        d = (T[0] - P[0], T[1] - P[1]); L = math.hypot(*d); u = (d[0] / L, d[1] / L); n = (-u[1], u[0]); r = BS * 0.95; w = BS * 0.28
-        def at(o, a, b): return (o[0] + u[0] * a + n[0] * b, o[1] + u[1] * a + n[1] * b)
-        out = [at(P, BS / 2 + 0.12 + (L - BS / 2 - 0.12) * i / 30, w + (r - w) * (i / 30) ** 2) for i in range(31)]
-        turn = [at(T, r * math.sin(a), r * math.cos(a)) for a in [math.pi * i / 40 for i in range(1, 40)]]
-        back = [at(P, BS / 2 + 0.12 + (L - BS / 2 - 0.12) * (30 - i) / 30, -(w + (r - w) * ((30 - i) / 30) ** 2)) for i in range(31)]
+    def air_track(self, p, P=None, D=None):
+        """the flight: straight from the block over the target (a drop zone is flown over, not around), on for D past it,
+        a half circle turn, and back to the block beside the way in (table units)"""
+        P = P or self.park_spot(p); T = self.xy(p['target']); D = D if D is not None else p.get('_turnD', BS * 1.2)
+        d = (T[0] - P[0], T[1] - P[1]); L = math.hypot(*d); u = (d[0] / L, d[1] / L); n = (-u[1], u[0])
+        side = p.get('_turnSide', 1); r = BS * 0.42; w = BS * 0.22; s0 = BS / 2 + 0.12
+        def at(o, a, b): return (o[0] + u[0] * a + n[0] * b * side, o[1] + u[1] * a + n[1] * b * side)
+        out = [at(P, s0 + (L + D - s0) * i / 40, w * (1 - i / 40)) for i in range(41)]           # aims at the target from just beside the block
+        C = at(P, L + D, -r)
+        turn = [(C[0] + u[0] * r * math.sin(a) + n[0] * side * r * math.cos(a), C[1] + u[1] * r * math.sin(a) + n[1] * side * r * math.cos(a)) for a in [math.pi * i / 30 for i in range(1, 30)]]
+        back = [at(P, s0 + (L + D - s0) * (40 - i) / 40, -2 * r + (2 * r - w) * (i / 40) ** 2) for i in range(41)]
         return out + turn + back
     def rake_angles(self):
         return sorted({ph['angle'] for s in self.slots for ph in s.get('phases', [])})
