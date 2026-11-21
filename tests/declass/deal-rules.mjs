@@ -2,7 +2,7 @@
 // last 90 days comes back only when no unseen one finds a fair board, oldest first, so a repeat only ever
 // replaces what would have been a miss. Runs in plain node against the live master list:
 //   node --import ./tests/declass/json-loader.mjs tests/declass/deal-rules.mjs
-import { dealGrid, liveGroups, hasSameEvent } from '../../functions/_lib/intercept.js';
+import { dealGrid, liveGroups, hasSameEvent, checkBoard, GROUPS } from '../../functions/_lib/intercept.js';
 import catalog from '../../functions/_data/catalog.json' with { type: 'json' };
 
 let pass = 0, failN = 0;
@@ -48,18 +48,54 @@ ok(unmarked3 === 0, `all seen: every deal is marked a repeat (${unmarked3} not)`
 const top = [...back.entries()].sort((a, b) => b[1] - a[1])[0];
 ok(top && top[0] === order[0], `all seen: the oldest (${order[0]}) comes back most (top ${top && top.join(' ')})`);
 
-// 4. The same event rule (Planning, 7 Nov 2026): a story card and its spec sheet never share a group,
-// and a group left with fewer than three cards once a pair counts as one stays dormant.
+// 4. The same event rule (Planning, 19 Nov 2026; replaces the "X" and "X-spec" ids of 7 Nov): cards whose
+// records share an "event" tag count as one card. Never two in a group, never two on one board, and a
+// group left with fewer than three cards once they count as one stays dormant.
 const byId = new Map(catalog.cards.map(c => [c.id, c]));
-ok(hasSameEvent([byId.get('1941-10-17-kearny'), byId.get('1941-10-17-kearny-spec')]), 'Kearny and Kearny Specs count as one event');
-ok(!hasSameEvent([byId.get('1941-10-17-kearny'), byId.get('1941-10-31-reuben-james')]), 'Kearny and Reuben James are two events');
-ok(!liveGroups(t).some(x => x.g.id === 'm-north-atlantic'), 'm-north-atlantic (Kearny, Kearny Specs, Reuben James) waits for a fourth card');
-let pairsDealt = 0, grids4 = 0;
-for (let i = 0; i < N; i++) {
-  const g = dealGrid(t, ctx(new Map())); if (!g) continue; grids4++;
-  for (const x of g.groups) if (hasSameEvent(x.idx.map(k => byId.get(g.cards[k].id)))) pairsDealt++;
+const EVENTS = {
+  'tirpitz': ['namethis-1944-10-18-tirpitz', '1944-11-12-tirpitz', '1944-11-12-tirpitz-spec'],
+  'kearny-1941': ['1941-10-17-kearny', '1941-10-17-kearny-spec'],
+  'draft-lottery-1940': ['1940-10-29-draft-lottery', '1940-10-29-draft-spec'],
+  'fu-go': ['1944-11-03-fugo', '1944-11-03-fugo-spec'],
+  'naval-guadalcanal-1942': ['1942-11-15-kirishima', '1942-11-15-washington-spec'],
+  'operation-queen': ['1944-11-16-operation-queen', '1944-11-16-duren'],
+  'operation-uranus': ['1942-11-19-uranus', '1942-11-19-t34-spec', '1942-11-19-22nd-panzer'],
+  'tarawa': ['1943-11-20-tarawa', '1943-11-20-betio-spec', '1943-11-21-shoup-quote'],
+  'nuremberg-trial': ['1945-11-20-nuremberg-trial', '1945-11-21-jackson'],
+};
+for (const [ev, ids] of Object.entries(EVENTS)) {
+  ok(ids.every(id => byId.get(id) && byId.get(id).event === ev), `${ev}: every card carries the tag (${ids.filter(id => !byId.get(id) || byId.get(id).event !== ev).join(', ')})`);
+  ok(hasSameEvent(ids.map(id => byId.get(id))), `${ev}: counts as one event`);
 }
-ok(grids4 > 0 && pairsDealt === 0, `no group dealt with a story card and its spec sheet (${pairsDealt} in ${grids4} grids)`);
+const tagCount = new Map();
+for (const c of catalog.cards) if (c.event) tagCount.set(c.event, (tagCount.get(c.event) || 0) + 1);
+ok([...tagCount.values()].every(n => n >= 2), `every event tag is on at least two cards (${[...tagCount].filter(x => x[1] < 2).map(x => x[0]).join(', ')})`);
+ok(!hasSameEvent([byId.get('1941-10-17-kearny'), byId.get('1941-10-31-reuben-james')]), 'Kearny and Reuben James are two events');
+ok(!hasSameEvent([byId.get('1944-11-12-tirpitz'), byId.get('1944-11-13-manila-strike')]), 'two untagged events never match');
+ok(!liveGroups(t).some(x => x.g.id === 'm-north-atlantic'), 'm-north-atlantic (Kearny, Kearny Specs, Reuben James) waits for a fourth card');
+// A crafted board with Tirpitz Sunk in one group and Tirpitz Specs in another is refused for the event.
+{
+  const pick = ids => ids.map(id => byId.get(id));
+  const filler = catalog.cards.filter(c => !c.event && c.kind === 'dispatch').slice(0, 10);
+  const chosen = [
+    { g: GROUPS[0], picked: [byId.get('1944-11-12-tirpitz'), filler[0], filler[1]] },
+    { g: GROUPS[1], picked: [byId.get('1944-11-12-tirpitz-spec'), filler[2], filler[3]] },
+    { g: GROUPS[2], picked: pick([]).concat(filler.slice(4, 7)) },
+    { g: GROUPS[3], picked: filler.slice(7, 10) },
+  ];
+  ok(checkBoard(chosen).why === 'same event', `two groups holding one event each is refused (${checkBoard(chosen).why})`);
+}
+const late = new Date('2026-11-28T17:00:00Z');
+let pairsDealt = 0, boardPairs = 0, grids4 = 0;
+for (let i = 0; i < N; i++) {
+  for (const when of [t, late]) {
+    const g = dealGrid(when, { ...ctx(new Map()), day: when.toISOString().slice(0, 10) }); if (!g) continue; grids4++;
+    for (const x of g.groups) if (hasSameEvent(x.idx.map(k => byId.get(g.cards[k].id)))) pairsDealt++;
+    if (hasSameEvent(g.cards.map(c => byId.get(c.id)))) boardPairs++;
+  }
+}
+ok(grids4 > N && pairsDealt === 0, `no group dealt with two cards of one event (${pairsDealt} in ${grids4} grids)`);
+ok(boardPairs === 0, `no board shows two cards of one event (${boardPairs} in ${grids4} grids)`);
 
 console.log(`${pass} passed, ${failN} failed`);
 process.exit(failN ? 1 : 0);

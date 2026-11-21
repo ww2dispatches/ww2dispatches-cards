@@ -43,19 +43,21 @@ export function interceptOpen(env, request, player) {
 export const puzzleDay = t => gameDay(t);
 export const closesAt = day => isoSec(zonedTime(addDays(day, 1), '00:00'));
 
-// Two cards of the same event: a story card and its spec sheet (ids "X" and "X-spec"). A group never
-// holds both (Planning, 7 Nov 2026), since two tiles of one event make the trio obvious.
-const sameEvent = (a, b) => a.id + '-spec' === b.id || b.id + '-spec' === a.id;
+// Same event (Planning, 19 Nov 2026; replaces the "X" and "X-spec" id rule of 7 Nov). A card record can
+// carry an "event" tag (catalog.json, from its dispatches/ or namethis/ record): a story card and its spec
+// sheet, or a Name This of the same ship. Cards sharing a tag count as one card: a group never holds two
+// of them, and a board never shows two, since two tiles of one event make the trio obvious.
+const sameEvent = (a, b) => Boolean(a.event) && a.event === b.event;
 export const hasSameEvent = cards => cards.some((a, i) => cards.some((b, j) => j > i && sameEvent(a, b)));
+const distinctEvents = cards => new Set(cards.map(c => c.event || '#' + c.id)).size;
 
-// Groups with at least three posted cards that can be dealt from them, counting a story card and its
-// spec sheet as one. Dormant groups wait for cards.
+// Groups with at least three posted cards that can be dealt from them, counting cards of one event as
+// one. Dormant groups wait for cards.
 export function liveGroups(t) {
   const out = [];
   for (const g of GROUPS) {
     const cards = (g.cards || []).map(id => findCard(id, t)).filter(Boolean);
-    const pairs = cards.filter(a => cards.some(b => b.id === a.id + '-spec')).length;
-    if (cards.length - pairs >= 3) out.push({ g, cards });
+    if (distinctEvents(cards) >= 3) out.push({ g, cards });
   }
   return out;
 }
@@ -87,8 +89,8 @@ export function checkBoard(chosen) {
   const board = [], own = new Map();
   chosen.forEach((x, gi) => x.picked.forEach(c => { board.push(c); own.set(c.id, gi); }));
   if (own.size !== 12) return { ok: false, why: 'repeat' };
-  // 0. No group holds two cards of the same event.
-  if (chosen.some(x => hasSameEvent(x.picked))) return { ok: false, why: 'same event' };
+  // 0. No two cards of the same event anywhere on the board (so never two in one group either).
+  if (hasSameEvent(board)) return { ok: false, why: 'same event' };
   // 1. No card fits two of the four links.
   for (const c of board) {
     for (let gi = 0; gi < chosen.length; gi++) if (gi !== own.get(c.id) && FITS.get(chosen[gi].g.id).has(c.id)) return { ok: false, why: 'conflict' };
