@@ -1,0 +1,31 @@
+{
+ "day": 11,
+ "date": "1944-12-26",
+ "map": "LOC 12th Army Group situation map, 26 Dec 1944",
+ "part": "blind second read",
+ "table": "start",
+ "passed": false,
+ "toleranceKm": 10.0,
+ "units": [
+  {
+   "unit": "4ad",
+   "result": "record [5.447, 49.766]  reader [5.69, 49.8]  18 km  DIFFERS  note: Unhatched oval (armor) box with XX above and the number 4 to its right, just south of the front line below the Bastogne pocket. Clear reading.",
+   "km": 17.8
+  },
+  {
+   "unit": "5fj",
+   "result": "record [5.685, 49.902]  reader [5.68, 49.93]  3 km  ok  note: Hatched (German) box with XX above and the number 5 to its right, just north of the front line and south west of the AB 101 pocket. It has a small V shaped mark inside the box, which I take as the parachute marking; no other hatched 5 is in the area. Fairly confident.",
+   "km": 3.1
+  }
+ ],
+ "line": {
+  "worstKm": 8.1,
+  "over": []
+ },
+ "readerNotes": {
+  "line": "Points run from the north edge (about 5.85E 51.17N) around the bulge to the east edge near Saarlautern (about 6.79E 49.30N). Bulge tip read at about 4.97E 50.17N, where the line is a very thick bracket shape, so the tip is good to about 0.03 degree. A separate closed heavy loop surrounds the AB 101 symbol (roughly 5.62 to 5.79E, 49.98 to 50.07N); it is not drawn joined to the main line on this map, so it is not in the points. Its corners read about [5.71,50.07],[5.78,50.04],[5.79,50.01],[5.77,49.98],[5.69,49.98],[5.62,50.02]. South of about 49.3N a heavy smooth line without ticks runs south west from 6.79E 49.27N through 6.74E 49.10N and 6.61E 49.02N to leave the south edge near 6.5E 48.8N; it looks like a boundary rather than the ticked front, so it is left out. The northern stretch from 5.85E 51.17N to about 6.0E 51.0N has few visible ticks and could be partly a boundary."
+ },
+ "sentBack": [
+  "4ad"
+ ]
+}

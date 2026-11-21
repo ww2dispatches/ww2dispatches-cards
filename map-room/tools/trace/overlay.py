@@ -3,12 +3,18 @@ map scan, so each block can be compared with the unit symbol printed on the map.
 Writes <out>.jpg (the whole battle) and <out>-units.jpg (a close crop per unit, moved units first).
 Each block is drawn at its true place, 10 km square: blue for Allied, black for German, with its roster id. A unit that
 moved has an arrow from where it stood in the morning. The night line is bright green; the morning line is thin.
-Usage: overlay.py <series folder> <day number> <out base>"""
+Usage: overlay.py <series folder> <day number> <out base> [night|start]
+night (the default) draws the night table on the NEXT day's map, because the maps were drawn at noon; start draws the
+morning table on the day's own map."""
 import sys, os, json, math, numpy as np, cv2
 HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, HERE); sys.path.insert(0, os.path.join(HERE, '..', '..', 'engine'))
 import series as S, register as R
-def main(folder, n, out):
-    s = S.Series(folder); d = next(x for x in s.days if x['n'] == int(n)); date = d['rec']['date']
+def main(folder, n, out, which='night'):
+    import datetime
+    s = S.Series(folder); d = dict(next(x for x in s.days if x['n'] == int(n))); date = d['rec']['date']
+    if which == 'night': date = (datetime.date.fromisoformat(date) + datetime.timedelta(days=1)).isoformat()   # tonight's table is first seen on tomorrow's noon map
+    else: d['pm_true'] = d['am_true']; d['line'] = d['lineAM']; d['movers'] = []
+    if date not in s.cfg['maps']: raise SystemExit(f'no situation map listed for {date}')
     m = s.cfg['maps'][date]; g = m.get('georef') or R.register(s.campaign, date)
     def px(ll): return (g['X6'] + (ll[0] - 6) * 111.32 * math.cos(math.radians(ll[1])) * g['PXKM'], g['Y50'] - (ll[1] - 50) * 110.6 * g['PXKM'])
     b = s.box; x0, y0 = [int(v) - 150 for v in px((b[0], b[3]))]; x1, y1 = [int(v) + 150 for v in px((b[1], b[2]))]; x0, y0 = max(0, x0), max(0, y0)
@@ -27,7 +33,7 @@ def main(folder, n, out):
     for u, p in d['pm_true'].items():
         if u in d['movers'] and u in d['am_true']: cv2.arrowedLine(im, P(d['am_true'][u]), P(p), (0, 0, 255), 4, cv2.LINE_AA, tipLength=0.15)
         block(im, P(p), u)
-    head = f"Day {d['n']}  {date}  {m['label']}  ({g['by']})"
+    head = f"Day {d['n']} {which} table on {m['label']}  ({g['by']})"
     cv2.rectangle(im, (0, 0), (im.shape[1], 44), (255, 255, 255), -1); cv2.putText(im, head, (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 0, 0), 2, cv2.LINE_AA)
     cv2.imwrite(out + '.jpg', im, [cv2.IMWRITE_JPEG_QUALITY, 88])
     # a close crop per unit on the clean scan: the block outline thin, so the printed symbol under it can be read
@@ -44,4 +50,4 @@ def main(folder, n, out):
     cols = 4; rows = (len(tiles) + cols - 1) // cols; sheet = np.full((rows * 480, cols * 480, 3), 255, np.uint8)
     for i, t in enumerate(tiles): sheet[(i // cols) * 480:(i // cols + 1) * 480, (i % cols) * 480:(i % cols + 1) * 480] = t
     cv2.imwrite(out + '-units.jpg', sheet, [cv2.IMWRITE_JPEG_QUALITY, 88]); print('wrote', out + '.jpg', out + '-units.jpg')
-if __name__ == '__main__': main(*sys.argv[1:4])
+if __name__ == '__main__': main(*sys.argv[1:5])

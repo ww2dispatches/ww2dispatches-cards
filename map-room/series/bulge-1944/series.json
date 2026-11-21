@@ -81,7 +81,13 @@
   "1944-12-27": {
    "label": "LOC 12th Army Group situation map, 27 Dec 1944",
    "item": "2004630299",
-   "iiif": "service:gmd:gmd5:g5701:g5701s:ict21206"
+   "iiif": "service:gmd:gmd5:g5701:g5701s:ict21206",
+   "georef": {
+    "X6": 3713.0,
+    "Y50": 3007.0,
+    "PXKM": 12.09,
+    "by": "matched to 1944-12-25 (6 patches, spread 6 px, 0.5 km)"
+   }
   },
   "1944-12-28": {
    "label": "LOC 12th Army Group situation map, 28 Dec 1944",

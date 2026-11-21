@@ -1,6 +1,6 @@
 # The Map Room: format 2 (balcony and focus)
 
-**Status, 20 Nov 2026:** approved by Brian and built. The checker (`engine/check_series.py`), the engine (`engine/render_series.py`) and the overlay tool (`tools/trace/overlay.py`) all work to this document; `test/series-proof/` is a two day test series. The old fixed views format and its tools (`check_record.py`, `render_day.py` used alone) are retired. Still to do: the blind second read (part 3 of the fact check) is a procedure, not yet a tool; days without a move are not rendered yet; aircraft moves are untested in the new engine.
+**Status, 20 Nov 2026:** approved by Brian and built. The checker (`engine/check_series.py`), the engine (`engine/render_series.py`) and the overlay tool (`tools/trace/overlay.py`) all work to this document; `test/series-proof/` is a two day test series. The old fixed views format and its tools (`check_record.py`, `render_day.py` used alone) are retired. Still to do: days without a move are not rendered yet; aircraft moves are untested in the new engine.
 
 ## The idea
 A real map room has a huge table. From the balcony you see every block on it, spread out, but you cannot read them. You only read a block when you come down and stand over it. The clip does the same:
@@ -104,7 +104,9 @@ Nothing is rendered until every day passes all three parts. The Map Room chat ru
 
 **2. The overlay sheet (every day, read by the Map Room chat).** `tools/trace/overlay.py` draws the day's blocks and night line on top of that day's situation map scan, lined up by the map's own grid. Each block is compared with the unit symbol printed on the map: the right unit, on the right side, within one block (10 km) of where the map shows it. The line is compared with the map's front along its whole length. The sheet is saved beside the day record so anyone can look.
 
-**3. A blind second read (the units that move, and the line).** A separate check is given only the scan and the roster, not the day record, and reports where it finds each moving unit and the front. Where it and the record differ by more than one block, the day goes back with both readings.
+**3. A blind second read (the units that move, and the line).** `tools/trace/blind_read.py packet` makes a folder with the scan cut into tiles under a labelled coordinate grid and the roster entries of the moving units, never their positions. A fresh reader who has not seen the day record (a separate agent started with only that folder) writes where the map shows each unit and the front. `blind_read.py compare` then measures the difference. Where the reader and the record differ by more than one block, or the reader cannot find a unit, the day goes back with both readings.
+
+**Which map.** The situation maps were drawn at noon. So a day's night table is compared with the **next** day's map, and its morning table with its own day's map. Both the overlay and the blind read do this (`night` and `start`).
 
 Where the situation map and Cole disagree about a position, follow Cole for where a unit went and say so in the sources. The situation maps were drawn at noon from reports that could be a day old.
 
@@ -113,7 +115,9 @@ Each day's result is written to `verify/day-NN.json`: passed or not, what was co
 ## Commands
 ```
 python3 map-room/engine/check_series.py <series folder>                       # part 1 of the fact check, the whole series
-python3 map-room/tools/trace/overlay.py <series folder> <day number> <out>    # part 2, the overlay sheet for one day
+python3 map-room/tools/trace/overlay.py <series folder> <day number> <out> [night|start]       # part 2, the overlay sheet
+python3 map-room/tools/trace/blind_read.py packet <series folder> <day number> <dir> [night|start]   # part 3, for the reader
+python3 map-room/tools/trace/blind_read.py compare <series folder> <day number> <answers.json> [night|start]
 python3 map-room/engine/render_series.py <series folder> <work dir> <out dir> [--days 11,12]
 ```
 A series folder holds the `day-NN.json` records. The roster is `map-room/series/<campaign>/units.json`.
