@@ -1756,6 +1756,16 @@
   "lat": 50.132,
   "lon": 5.7894
  },
+ "place-hsinchu-air-base": {
+  "name": "Hsinchu Air Base (Shinchiku Airfield)",
+  "kind": "airfield",
+  "nation": "Japan",
+  "source": "https://en.wikipedia.org/wiki/Hsinchu_Air_Base",
+  "wikidata": null,
+  "aka": [
+   "Shinchiku Airfield"
+  ]
+ },
  "place-huelva": {
   "name": "Huelva",
   "kind": "city",
@@ -4465,6 +4475,30 @@
   "source": "https://en.wikipedia.org/wiki/Sz%C3%A9chenyi_Chain_Bridge",
   "lat": 47.4989,
   "lon": 19.0435
+ },
+ "place-taiwan": {
+  "name": "Taiwan (Formosa)",
+  "kind": "island",
+  "nation": "Japan",
+  "source": "https://en.wikipedia.org/wiki/Taiwan",
+  "wikidata": "Q865",
+  "aka": [
+   "Formosa"
+  ],
+  "lat": 24.0,
+  "lon": 121.0
+ },
+ "place-taiwan-strait": {
+  "name": "Taiwan Strait (Formosa Strait)",
+  "kind": "strait",
+  "nation": null,
+  "source": "https://en.wikipedia.org/wiki/Taiwan_Strait",
+  "wikidata": "Q127031",
+  "aka": [
+   "Formosa Strait"
+  ],
+  "lat": 24.8111,
+  "lon": 119.9283
  },
  "place-tama-cemetery": {
   "name": "Tama Cemetery",

@@ -1063,6 +1063,32 @@
    "role": "mentioned"
   }
  ],
+ "1941-11-28-halsey": [
+  {
+   "id": "person-william-halsey-jr",
+   "role": "subject"
+  },
+  {
+   "id": "ship-uss-enterprise-cv-6",
+   "role": "involved"
+  },
+  {
+   "id": "place-pearl-harbor",
+   "role": "involved"
+  },
+  {
+   "id": "place-wake-island",
+   "role": "involved"
+  },
+  {
+   "id": "aircraft-grumman-f4f-wildcat",
+   "role": "involved"
+  },
+  {
+   "id": "op-attack-on-pearl-harbor",
+   "role": "mentioned"
+  }
+ ],
  "1942-10-19-tin-cans": [
   {
    "id": "unit-war-production-board",
@@ -2761,6 +2787,28 @@
    "role": "mentioned"
   }
  ],
+ "1943-11-25-p38": [
+  {
+   "id": "aircraft-lockheed-p-38-lightning",
+   "role": "subject"
+  },
+  {
+   "id": "aircraft-north-american-b-25-mitchell",
+   "role": "involved"
+  },
+  {
+   "id": "unit-fourteenth-air-force",
+   "role": "involved"
+  },
+  {
+   "id": "place-hsinchu-air-base",
+   "role": "involved"
+  },
+  {
+   "id": "place-taiwan",
+   "role": "involved"
+  }
+ ],
  "1943-11-26-hs293-spec": [
   {
    "id": "machine-henschel-hs-293",
@@ -4149,6 +4197,20 @@
   {
    "id": "unit-79th-armoured-division",
    "role": "mentioned"
+  }
+ ],
+ "1944-11-21-kongo": [
+  {
+   "id": "ship-japanese-battleship-kongo",
+   "role": "subject"
+  },
+  {
+   "id": "ship-uss-sealion-ss-315",
+   "role": "involved"
+  },
+  {
+   "id": "place-taiwan-strait",
+   "role": "involved"
   }
  ],
  "1944-11-23-strasbourg": [

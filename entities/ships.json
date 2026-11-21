@@ -1561,6 +1561,13 @@
   "source": "https://en.wikipedia.org/wiki/Japanese_battleship_Kirishima",
   "wikidata": "Q935033"
  },
+ "ship-japanese-battleship-kongo": {
+  "name": "Kongō",
+  "kind": "battleship",
+  "nation": "Japan",
+  "source": "https://en.wikipedia.org/wiki/Japanese_battleship_Kong%C5%8D",
+  "wikidata": "Q255306"
+ },
  "ship-japanese-battleship-musashi": {
   "name": "Musashi",
   "kind": "battleship",
@@ -3051,6 +3058,13 @@
   "nation": "US",
   "wikidata": "Q3544621",
   "source": "https://en.wikipedia.org/wiki/USS_Sea_Devil_(SS-400)"
+ },
+ "ship-uss-sealion-ss-315": {
+  "name": "USS Sealion (SS-315)",
+  "kind": "submarine",
+  "nation": "United States",
+  "source": "https://en.wikipedia.org/wiki/USS_Sealion_(SS-315)",
+  "wikidata": "Q3544196"
  },
  "ship-uss-skipjack-ss-184": {
   "name": "USS Skipjack (SS-184)",
