@@ -30,11 +30,27 @@
     }
   ],
   "themes": {
-    "who": ["airmen"],
-    "story": ["combat"],
+    "who": [
+      "airmen"
+    ],
+    "story": [
+      "combat"
+    ],
     "photo": "a machine",
     "theater": "China Burma India",
-    "branch": ["Army Air Forces"],
-    "nations": ["US", "Japan"]
-  }
+    "branch": [
+      "Army Air Forces"
+    ],
+    "nations": [
+      "US",
+      "Japan"
+    ]
+  },
+  "typefully": 12087051,
+  "buffer": {
+    "threads": "6b019c80d5eabfb8cc32dbaa",
+    "facebook": "6b019c830247969092d509bd",
+    "instagram": "6b019c86d864a01105493202"
+  },
+  "post_date": "2026-11-25"
 }
