@@ -799,6 +799,13 @@
   "source": "https://en.wikipedia.org/wiki/415th_Infantry_Regiment",
   "wikidata": "Q17151712"
  },
+ "unit-41st-infantry-division-united-states": {
+  "name": "41st Infantry Division",
+  "kind": "U.S. Army infantry division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/41st_Infantry_Division_(United_States)"
+ },
  "unit-442nd-infantry-regiment": {
   "name": "442nd Regimental Combat Team",
   "kind": "U.S. Army Japanese American regiment",
@@ -2438,6 +2445,13 @@
   "nation": "Britain",
   "wikidata": "Q7043436",
   "source": "https://en.wikipedia.org/wiki/No._36_Squadron_RAF"
+ },
+ "unit-no-422-squadron-rcaf": {
+  "name": "No. 422 Squadron RCAF",
+  "kind": "Canadian flying boat squadron",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._422_Squadron_RCAF"
  },
  "unit-no-43-squadron-raf": {
   "name": "No. 43 Squadron RAF",

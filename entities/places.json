@@ -5747,6 +5747,15 @@
   "lat": 9.97,
   "lon": 139.67
  },
+ "place-uman": {
+  "name": "Uman",
+  "kind": "town in central Ukraine",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Uman",
+  "lat": null,
+  "lon": null
+ },
  "place-university-of-tehran": {
   "name": "University of Tehran",
   "kind": "university",
@@ -6039,6 +6048,15 @@
   "lat": 40.7186,
   "lon": -114.031
  },
+ "place-wesel": {
+  "name": "Wesel",
+  "kind": "German town on the Rhine",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Wesel",
+  "lat": null,
+  "lon": null
+ },
  "place-westerplatte": {
   "name": "Westerplatte",
   "kind": "Polish outpost in the Free City of Danzig",
@@ -6220,6 +6238,15 @@
   "wikidata": "Q200578",
   "lat": 35.2813,
   "lon": 139.6721
+ },
+ "place-zamboanga-city": {
+  "name": "Zamboanga City",
+  "kind": "city on Mindanao",
+  "nation": "Philippines",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Zamboanga_City",
+  "lat": null,
+  "lon": null
  },
  "place-zhytomyr": {
   "name": "Zhitomir",

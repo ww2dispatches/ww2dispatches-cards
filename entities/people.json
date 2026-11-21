@@ -214,6 +214,13 @@
   "wikidata": "Q984215",
   "source": "https://en.wikipedia.org/wiki/Alfred_Blalock"
  },
+ "person-alfred-schlemm": {
+  "name": "Alfred Schlemm",
+  "kind": "German general, commander of the First Parachute Army",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Alfred_Schlemm"
+ },
  "person-alfredo-guzzoni": {
   "name": "Alfredo Guzzoni",
   "kind": "Italian Army general",
@@ -1556,6 +1563,13 @@
   "source": "https://en.wikipedia.org/wiki/Emanuele_Grazzi",
   "wikidata": "Q3051985"
  },
+ "person-emil-hacha": {
+  "name": "Emil Hacha",
+  "kind": "President of Czechoslovakia 1938 to 1939",
+  "nation": "Czechoslovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Emil_H%C3%A1cha"
+ },
  "person-emile-muselier": {
   "name": "Emile Muselier",
   "kind": "Free French vice admiral",
@@ -2405,6 +2419,13 @@
   "source": "https://en.wikipedia.org/wiki/George_Washington",
   "wikidata": "Q23"
  },
+ "person-georges-bidault": {
+  "name": "Georges Bidault",
+  "kind": "French foreign minister",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Georges_Bidault"
+ },
  "person-georges-bonnet": {
   "name": "Georges Bonnet",
   "kind": "French foreign minister",
@@ -2988,6 +3009,16 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Henry_Wadsworth_Longfellow",
   "wikidata": "Q152513"
+ },
+ "person-herb-hoover": {
+  "name": "Herb Hoover",
+  "kind": "NACA research test pilot",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Herb_Hoover",
+  "aka": [
+   "Herbert H. Hoover"
+  ]
  },
  "person-herbert-a-wagner": {
   "name": "Herbert Wagner",
@@ -3576,6 +3607,13 @@
    "Jan Kubis"
   ]
  },
+ "person-jan-masaryk": {
+  "name": "Jan Masaryk",
+  "kind": "Czechoslovak foreign minister",
+  "nation": "Czechoslovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Jan_Masaryk"
+ },
  "person-jane-froman": {
   "name": "Jane Froman",
   "kind": "American singer, USO performer",
@@ -4037,6 +4075,13 @@
   "nation": "Poland",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/J%C3%B3zef_Pi%C5%82sudski"
+ },
+ "person-jozef-tiso": {
+  "name": "Jozef Tiso",
+  "kind": "Slovak premier, later president of the Slovak State",
+  "nation": "Slovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Jozef_Tiso"
  },
  "person-jozsef-mindszenty": {
   "name": "Jozsef Mindszenty",
@@ -4997,6 +5042,13 @@
   "nation": "US",
   "wikidata": "Q513371",
   "source": "https://en.wikipedia.org/wiki/Meredith_Gardner"
+ },
+ "person-merle-tuve": {
+  "name": "Merle Tuve",
+  "kind": "physicist, founding director of the Applied Physics Laboratory",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Merle_Tuve"
  },
  "person-michael-curtiz": {
   "name": "Michael Curtiz",
