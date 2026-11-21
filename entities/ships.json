@@ -463,6 +463,13 @@
   "wikidata": "Q2572123",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-254"
  },
+ "ship-german-submarine-u-255": {
+  "name": "U-255",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-255"
+ },
  "ship-german-submarine-u-263": {
   "name": "German submarine U-263",
   "kind": "Kriegsmarine Type VIIC U-boat",
@@ -3521,6 +3528,16 @@
   "source": "https://en.wikipedia.org/wiki/USS_LCI(L)-449",
   "aka": [
    "LCI(G)-449"
+  ]
+ },
+ "ship-uss-leopold": {
+  "name": "USS Leopold (DE-319)",
+  "kind": "Edsall class destroyer escort, Coast Guard manned",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Leopold",
+  "aka": [
+   "Leopold (DE-319)"
   ]
  },
  "ship-uss-lexington-cv-16": {

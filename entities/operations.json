@@ -1592,6 +1592,16 @@
   "wikidata": "Q13630094",
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Singapore_(1941)"
  },
+ "op-bombing-of-tallinn-in-world-war-ii": {
+  "name": "Bombing of Tallinn in World War II",
+  "kind": "Soviet air raids on Tallinn, chiefly 9 to 10 March 1944",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Tallinn_in_World_War_II",
+  "aka": [
+   "March bombing"
+  ]
+ },
  "op-bombing-of-the-bezuidenhout": {
   "name": "Bombing of the Bezuidenhout",
   "kind": "mistaken RAF bombing of a city district",
@@ -1605,6 +1615,17 @@
   "nation": "US",
   "wikidata": "Q59886",
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Tokyo"
+ },
+ "op-bombing-of-tokyo-10-march-1945": {
+  "name": "Bombing of Tokyo (10 March 1945)",
+  "kind": "USAAF firebombing raid on Tokyo",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Tokyo_(10_March_1945)",
+  "aka": [
+   "Operation Meetinghouse",
+   "Great Tokyo Air Raid"
+  ]
  },
  "op-bombing-of-wilhelmshaven-in-world-war-ii": {
   "name": "Bombing of Wilhelmshaven in World War II",
@@ -1686,6 +1707,13 @@
   "aka": [
    "Death Railway"
   ]
+ },
+ "op-burnden-park-disaster": {
+  "name": "Burnden Park disaster",
+  "kind": "crowd crush at a Bolton football ground, 1946",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Burnden_Park_disaster"
  },
  "op-cairo-conference": {
   "name": "Cairo Conference",
@@ -2042,6 +2070,13 @@
   "nation": "US",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Douglas_MacArthur%27s_escape_from_the_Philippines"
+ },
+ "op-dutch-east-indies-campaign": {
+  "name": "Dutch East Indies campaign",
+  "kind": "Japanese conquest of the Dutch East Indies, 1941 to 1942",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Dutch_East_Indies_campaign"
  },
  "op-east-african-campaign-world-war-ii": {
   "name": "East African campaign (World War II)",
@@ -2491,6 +2526,16 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Italian_Social_Republic"
  },
+ "op-italian-spring-offensive": {
+  "name": "Italian spring offensive",
+  "kind": "failed Italian offensive in Albania, March 1941",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_spring_offensive",
+  "aka": [
+   "Operation Primavera"
+  ]
+ },
  "op-january-28-incident": {
   "name": "January 28 incident",
   "kind": "battle",
@@ -2515,6 +2560,17 @@
   "nation": "Japan",
   "source": "https://en.wikipedia.org/wiki/Japanese_air_attacks_on_the_Mariana_Islands",
   "wikidata": "Q6158351"
+ },
+ "op-japanese-coup-d-etat-in-french-indochina": {
+  "name": "Japanese coup d'etat in French Indochina",
+  "kind": "Japanese overthrow of French rule in Indochina",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_coup_d%27%C3%A9tat_in_French_Indochina",
+  "aka": [
+   "Meigo Sakusen",
+   "Operation Bright Moon"
+  ]
  },
  "op-japanese-invasion-of-aparri": {
   "name": "Japanese invasion of Aparri",
@@ -4646,6 +4702,13 @@
   "nation": "Germany",
   "wikidata": "Q821049",
   "source": "https://en.wikipedia.org/wiki/Wawer_massacre"
+ },
+ "op-we-will-never-die": {
+  "name": "We Will Never Die",
+  "kind": "memorial pageant for the murdered Jews of Europe, Madison Square Garden 1943",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/We_Will_Never_Die"
  },
  "op-winston-churchill-s-address-to-the-canadian-parliament-1941": {
   "name": "Winston Churchill's address to the Canadian Parliament (1941)",

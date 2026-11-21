@@ -601,6 +601,15 @@
   "lat": 44.4939,
   "lon": 11.3428
  },
+ "place-bonn": {
+  "name": "Bonn",
+  "kind": "university city on the Rhine",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bonn",
+  "lat": null,
+  "lon": null
+ },
  "place-boston": {
   "name": "Boston",
   "kind": "city",
@@ -776,6 +785,15 @@
   "nation": "China",
   "wikidata": "Q478684",
   "source": "https://en.wikipedia.org/wiki/Burma_Road",
+  "lat": null,
+  "lon": null
+ },
+ "place-burnden-park": {
+  "name": "Burnden Park",
+  "kind": "football ground of Bolton Wanderers",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Burnden_Park",
   "lat": null,
   "lon": null
  },
@@ -1449,6 +1467,15 @@
   "nation": "Germany",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Essen",
+  "lat": null,
+  "lon": null
+ },
+ "place-estonia-theatre": {
+  "name": "Estonia Theatre",
+  "kind": "theatre and concert hall in Tallinn",
+  "nation": "Estonia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Estonia_Theatre",
   "lat": null,
   "lon": null
  },
@@ -5316,6 +5343,15 @@
   ],
   "lat": 24.8111,
   "lon": 119.9283
+ },
+ "place-tallinn": {
+  "name": "Tallinn",
+  "kind": "capital city of Estonia",
+  "nation": "Estonia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tallinn",
+  "lat": null,
+  "lon": null
  },
  "place-tama-cemetery": {
   "name": "Tama Cemetery",
