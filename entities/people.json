@@ -1046,6 +1046,13 @@
   "wikidata": "Q5284865",
   "source": "https://en.wikipedia.org/wiki/Dixie_Kiefer"
  },
+ "person-dmitry-karbyshev": {
+  "name": "Dmitry Karbyshev",
+  "kind": "Red Army engineer general, prisoner of war",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Dmitry_Karbyshev"
+ },
  "person-dmitry-lavrinenko": {
   "name": "Dmitry Lavrinenko",
   "kind": "Soviet T-34 tank commander",
@@ -2351,6 +2358,13 @@
   "wikidata": "Q60810",
   "source": "https://en.wikipedia.org/wiki/Hans_Langsdorff"
  },
+ "person-hans-scholl": {
+  "name": "Hans Scholl",
+  "kind": "White Rose student resister",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hans_Scholl"
+ },
  "person-harlan-f-stone": {
   "name": "Harlan Fiske Stone",
   "kind": "Chief Justice of the United States",
@@ -3076,6 +3090,16 @@
   "nation": "US",
   "wikidata": "Q3993",
   "source": "https://en.wikipedia.org/wiki/Jacqueline_Cochran"
+ },
+ "person-jakob-schmid": {
+  "name": "Jakob Schmid",
+  "kind": "LMU Munich custodian who reported the Scholls",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Jakob_Schmid",
+  "aka": [
+   "Jakob Schmied"
+  ]
  },
  "person-james-b-conant": {
   "name": "James B. Conant",
@@ -3867,6 +3891,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q4158855",
   "source": "https://en.wikipedia.org/wiki/Kuzma_Derevyanko"
+ },
+ "person-lanier-w-phillips": {
+  "name": "Lanier W. Phillips",
+  "kind": "U.S. Navy sailor, Truxtun survivor, later sonar technician",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Lanier_W._Phillips"
  },
  "person-laura-fermi": {
   "name": "Laura Fermi",
@@ -4738,6 +4769,17 @@
   "wikidata": "Q55076649",
   "source": "https://en.wikipedia.org/wiki/Percy_Glading"
  },
+ "person-percy-pickard": {
+  "name": "Percy Pickard",
+  "kind": "RAF group captain, leader of the Amiens raid",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Percy_Pickard",
+  "aka": [
+   "Percy Charles Pickard",
+   "Charles Pickard"
+  ]
+ },
  "person-peter-erich-cremer": {
   "name": "Peter-Erich Cremer",
   "kind": "German U-boat commander",
@@ -4877,6 +4919,13 @@
   "nation": "Netherlands",
   "wikidata": "Q268821",
   "source": "https://en.wikipedia.org/wiki/Princess_Margriet_of_the_Netherlands"
+ },
+ "person-puyi": {
+  "name": "Puyi",
+  "kind": "last Qing emperor, head of state of Manchukuo",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Puyi"
  },
  "person-raizo-tanaka": {
   "name": "Raizo Tanaka",
@@ -5385,6 +5434,13 @@
   "aka": [
    "Madame Chiang Kai-shek"
   ]
+ },
+ "person-sophie-scholl": {
+  "name": "Sophie Scholl",
+  "kind": "White Rose student resister",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sophie_Scholl"
  },
  "person-spike-jones": {
   "name": "Spike Jones",

@@ -543,6 +543,13 @@
   "wikidata": "Q571295",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-41_(1939)"
  },
+ "ship-german-submarine-u-410": {
+  "name": "German submarine U-410",
+  "kind": "Kriegsmarine Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-410"
+ },
  "ship-german-submarine-u-426": {
   "name": "U-426",
   "kind": "Type VIIC U-boat",
@@ -1018,6 +1025,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/HMS_Cossack_(F03)"
  },
+ "ship-hms-daring-h16": {
+  "name": "HMS Daring (H16)",
+  "kind": "Royal Navy D-class destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Daring_(H16)"
+ },
  "ship-hms-diadem-84": {
   "name": "HMS Diadem (84)",
   "kind": "light cruiser",
@@ -1325,6 +1339,16 @@
   "nation": "Britain",
   "wikidata": "Q4354790",
   "source": "https://en.wikipedia.org/wiki/HMS_Onslow_(G17)"
+ },
+ "ship-hms-penelope-97": {
+  "name": "HMS Penelope (97)",
+  "kind": "Royal Navy Arethusa-class light cruiser",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Penelope_(97)",
+  "aka": [
+   "HMS Pepperpot"
+  ]
  },
  "ship-hms-perseus-n36": {
   "name": "HMS Perseus (N36)",
@@ -3268,6 +3292,13 @@
   "source": "https://en.wikipedia.org/wiki/USS_Pioneer_(AM-105)",
   "wikidata": "Q7872912"
  },
+ "ship-uss-pollux-aks-2": {
+  "name": "USS Pollux (AKS-2)",
+  "kind": "U.S. Navy general stores issue ship",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Pollux_(AKS-2)"
+ },
  "ship-uss-pope-dd-225": {
   "name": "USS Pope (DD-225)",
   "kind": "destroyer",
@@ -3477,6 +3508,13 @@
   "nation": "US",
   "wikidata": "Q7874867",
   "source": "https://en.wikipedia.org/wiki/USS_Trippe_(DD-403)"
+ },
+ "ship-uss-truxtun-dd-229": {
+  "name": "USS Truxtun (DD-229)",
+  "kind": "U.S. Navy Clemson-class destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Truxtun_(DD-229)"
  },
  "ship-uss-turner-dd-648": {
   "name": "USS Turner (DD-648)",

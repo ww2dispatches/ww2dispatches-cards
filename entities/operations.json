@@ -535,6 +535,16 @@
   "source": "https://en.wikipedia.org/wiki/Battle_of_Empress_Augusta_Bay",
   "wikidata": "Q2165486"
  },
+ "op-battle-of-eniwetok": {
+  "name": "Battle of Eniwetok",
+  "kind": "Marshall Islands campaign battle, February 1944",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Eniwetok",
+  "aka": [
+   "Operation Catchpole"
+  ]
+ },
  "op-battle-of-garfagnana": {
   "name": "Battle of Garfagnana",
   "kind": "German counteroffensive in the Serchio valley",
@@ -1162,6 +1172,13 @@
   "nation": "Japan",
   "wikidata": "Q109595110",
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Calcutta"
+ },
+ "op-bombing-of-chongqing": {
+  "name": "Bombing of Chongqing",
+  "kind": "Japanese bombing campaign, 1938 to 1944",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Chongqing"
  },
  "op-bombing-of-dresden": {
   "name": "Bombing of Dresden",
@@ -2762,6 +2779,17 @@
   "wikidata": "Q233278",
   "source": "https://en.wikipedia.org/wiki/Operation_Iskra"
  },
+ "op-operation-jericho": {
+  "name": "Operation Jericho",
+  "kind": "RAF low level raid on Amiens prison",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Jericho",
+  "aka": [
+   "Amiens raid",
+   "Ramrod 564"
+  ]
+ },
  "op-operation-ke": {
   "name": "Operation Ke",
   "kind": "Japanese evacuation of Guadalcanal",
@@ -3212,6 +3240,17 @@
   "wikidata": "Q4395266",
   "source": "https://en.wikipedia.org/wiki/Rovno%E2%80%93Lutsk_offensive"
  },
+ "op-royal-indian-navy-mutiny": {
+  "name": "Royal Indian Navy mutiny",
+  "kind": "naval ratings' strike and revolt, 1946",
+  "nation": "India",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Royal_Indian_Navy_mutiny",
+  "aka": [
+   "Bombay mutiny",
+   "RIN revolt"
+  ]
+ },
  "op-rue-sainte-catherine-roundup": {
   "name": "Rue Sainte-Catherine Roundup",
   "kind": "Gestapo roundup of Jews in Lyon, February 1943",
@@ -3445,6 +3484,13 @@
   "wikidata": "Q7242534",
   "source": "https://en.wikipedia.org/wiki/Sonderkommando_Blaich"
  },
+ "op-sook-ching": {
+  "name": "Sook Ching",
+  "kind": "Japanese massacre of Chinese in Singapore, 1942",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sook_Ching"
+ },
  "op-south-china-sea-raid": {
   "name": "South China Sea raid",
   "kind": "carrier raid, January 1945",
@@ -3486,6 +3532,16 @@
   "nation": "Spain",
   "wikidata": "Q29382937",
   "source": "https://en.wikipedia.org/wiki/Spanish_question_(United_Nations)"
+ },
+ "op-sportpalast-speech": {
+  "name": "Sportpalast speech",
+  "kind": "Goebbels's total war speech, 18 February 1943",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sportpalast_speech",
+  "aka": [
+   "Total War speech"
+  ]
  },
  "op-st-stephen-s-college-massacre": {
   "name": "St. Stephen's College massacre",

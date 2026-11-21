@@ -371,6 +371,16 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/22nd_Brigade_(Australia)"
  },
+ "unit-22nd-marine-regiment": {
+  "name": "22nd Marine Regiment",
+  "kind": "U.S. Marine Corps regiment",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/22nd_Marine_Regiment",
+  "aka": [
+   "22nd Marines"
+  ]
+ },
  "unit-22nd-panzer-division": {
   "name": "22nd Panzer Division",
   "kind": "German panzer division",
@@ -1872,6 +1882,13 @@
    "Kanoya Kokutai"
   ]
  },
+ "unit-kempeitai": {
+  "name": "Kempeitai",
+  "kind": "Imperial Japanese Army military police",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kempeitai"
+ },
  "unit-king-s-own-royal-regiment-lancaster": {
   "name": "King's Own",
   "kind": "British infantry regiment",
@@ -3030,6 +3047,16 @@
   "nation": "Soviet Union",
   "source": "https://en.wikipedia.org/wiki/Western_Front_(Soviet_Union)",
   "wikidata": "Q848492"
+ },
+ "unit-white-rose": {
+  "name": "White Rose",
+  "kind": "German student resistance group",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/White_Rose",
+  "aka": [
+   "Weisse Rose"
+  ]
  },
  "unit-winnipeg-grenadiers": {
   "name": "Winnipeg Grenadiers",

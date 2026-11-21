@@ -77,6 +77,15 @@
    "Amchitka"
   ]
  },
+ "place-amiens": {
+  "name": "Amiens",
+  "kind": "city in northern France",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Amiens",
+  "lat": null,
+  "lon": null
+ },
  "place-andaman-islands": {
   "name": "Andaman Islands",
   "kind": "islands",
@@ -376,6 +385,15 @@
   "lat": 52.5167,
   "lon": 13.3833
  },
+ "place-berlin-sportpalast": {
+  "name": "Berlin Sportpalast",
+  "kind": "arena in Berlin",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Berlin_Sportpalast",
+  "lat": null,
+  "lon": null
+ },
  "place-berlin-tegel-airport": {
   "name": "Berlin Tegel Airport",
   "kind": "airfield built during the Berlin Airlift",
@@ -489,6 +507,18 @@
   "wikidata": "Q3478051",
   "lat": 42.3978,
   "lon": -121.0406
+ },
+ "place-boeing-field": {
+  "name": "Boeing Field",
+  "kind": "airfield in Seattle",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Boeing_Field",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "King County International Airport"
+  ]
  },
  "place-bogdanovka-concentration-camp": {
   "name": "Bogdanovka concentration camp",
@@ -1866,6 +1896,15 @@
   "lat": 51.4502,
   "lon": -0.1777
  },
+ "place-hmis-talwar": {
+  "name": "HMIS Talwar",
+  "kind": "Royal Indian Navy shore establishment, Bombay",
+  "nation": "India",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMIS_Talwar",
+  "lat": null,
+  "lon": null
+ },
  "place-hochst-frankfurt-am-main": {
   "name": "Frankfurt Hoechst",
   "kind": "district of Frankfurt",
@@ -2639,6 +2678,18 @@
   "lat": 51.4958,
   "lon": -3.2181
  },
+ "place-lmu-munich": {
+  "name": "LMU Munich",
+  "kind": "university in Munich",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/LMU_Munich",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Ludwig Maximilian University of Munich"
+  ]
+ },
  "place-loch-ewe": {
   "name": "Loch Ewe",
   "kind": "Sea loch and fleet anchorage, northwest Scotland",
@@ -2782,6 +2833,15 @@
   "source": "https://en.wikipedia.org/wiki/Manchester",
   "lat": 53.4794,
   "lon": -2.2453
+ },
+ "place-manchukuo": {
+  "name": "Manchukuo",
+  "kind": "Japanese puppet state in Manchuria",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Manchukuo",
+  "lat": null,
+  "lon": null
  },
  "place-mandatory-palestine": {
   "name": "Mandatory Palestine",
@@ -4441,6 +4501,15 @@
   "lat": 38.6447,
   "lon": -75.6161
  },
+ "place-seattle": {
+  "name": "Seattle",
+  "kind": "city in Washington state",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Seattle",
+  "lat": null,
+  "lon": null
+ },
  "place-senglea": {
   "name": "Senglea",
   "kind": "harbor town",
@@ -4632,6 +4701,15 @@
   "source": "https://en.wikipedia.org/wiki/St._John%27s,_Newfoundland_and_Labrador",
   "lat": 47.5614,
   "lon": -52.7119
+ },
+ "place-st-lawrence-newfoundland-and-labrador": {
+  "name": "St. Lawrence, Newfoundland and Labrador",
+  "kind": "mining town on Newfoundland's south coast",
+  "nation": "Newfoundland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/St._Lawrence,_Newfoundland_and_Labrador",
+  "lat": null,
+  "lon": null
  },
  "place-st-pauls-cathedral": {
   "name": "St Paul's Cathedral",
