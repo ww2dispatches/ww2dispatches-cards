@@ -20,6 +20,26 @@
   "wikidata": "Q1798965",
   "source": "https://en.wikipedia.org/wiki/French_cruiser_Lamotte-Picquet"
  },
+ "ship-french-destroyer-le-malin": {
+  "name": "French destroyer Le Malin",
+  "kind": "large destroyer",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/French_destroyer_Le_Malin",
+  "aka": [
+   "Le Malin"
+  ]
+ },
+ "ship-french-destroyer-le-terrible": {
+  "name": "French destroyer Le Terrible",
+  "kind": "large destroyer",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/French_destroyer_Le_Terrible",
+  "aka": [
+   "Le Terrible"
+  ]
+ },
  "ship-french-submarine-casabianca-1935": {
   "name": "Casabianca",
   "kind": "submarine",
@@ -2003,6 +2023,13 @@
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Asagumo_(1937)",
   "wikidata": "Q2991436"
  },
+ "ship-japanese-destroyer-asashimo": {
+  "name": "Japanese destroyer Asashimo",
+  "kind": "destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Asashimo"
+ },
  "ship-japanese-destroyer-asashio-1936": {
   "name": "Japanese destroyer Asashio (1936)",
   "kind": "Asashio class destroyer",
@@ -2494,6 +2521,13 @@
   "nation": "worldwide",
   "source": "https://en.wikipedia.org/wiki/RV_Petrel",
   "wikidata": "Q47012687"
+ },
+ "ship-sakito-maru": {
+  "name": "Sakito Maru",
+  "kind": "troop transport",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sakito_Maru"
  },
  "ship-sf-hydro": {
   "name": "SF Hydro",
@@ -3675,6 +3709,13 @@
   "nation": "US",
   "wikidata": "Q7874867",
   "source": "https://en.wikipedia.org/wiki/USS_Trippe_(DD-403)"
+ },
+ "ship-uss-trout-ss-202": {
+  "name": "USS Trout (SS-202)",
+  "kind": "submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Trout_(SS-202)"
  },
  "ship-uss-truxtun-dd-229": {
   "name": "USS Truxtun (DD-229)",

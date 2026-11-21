@@ -2866,6 +2866,18 @@
   "lat": 51.5072,
   "lon": -0.1275
  },
+ "place-london-deep-level-shelters": {
+  "name": "London deep-level shelters",
+  "kind": "eight deep air raid shelters under London Underground stations",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/London_deep-level_shelters",
+  "aka": [
+   "deep shelters"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-los-angeles": {
   "name": "Los Angeles",
   "kind": "city",
@@ -2898,6 +2910,18 @@
   "aka": [
    "Los Baños"
   ]
+ },
+ "place-los-negros-island": {
+  "name": "Los Negros Island",
+  "kind": "island in the Admiralty Islands",
+  "nation": "Papua New Guinea",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Los_Negros_Island",
+  "aka": [
+   "Los Negros"
+  ],
+  "lat": null,
+  "lon": null
  },
  "place-lutsk": {
   "name": "Lutsk",
@@ -5716,6 +5740,15 @@
   "wikidata": "Q5933",
   "lat": 51.4994,
   "lon": -0.1274
+ },
+ "place-wheeler-hall": {
+  "name": "Wheeler Hall",
+  "kind": "University of California, Berkeley building",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Wheeler_Hall",
+  "lat": null,
+  "lon": null
  },
  "place-whitby": {
   "name": "Whitby",

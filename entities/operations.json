@@ -215,6 +215,16 @@
   "wikidata": "Q2896528",
   "source": "https://en.wikipedia.org/wiki/Action_off_Bougainville"
  },
+ "op-admiralty-islands-campaign": {
+  "name": "Admiralty Islands campaign",
+  "kind": "campaign, Operation Brewer, Feb to May 1944",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Admiralty_Islands_campaign",
+  "aka": [
+   "Operation Brewer"
+  ]
+ },
  "op-adolf-hitler-s-rise-to-power": {
   "name": "Adolf Hitler's rise to power",
   "kind": "political process",
@@ -644,6 +654,13 @@
   "nation": "Britain",
   "wikidata": "Q697059",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Hong_Kong"
+ },
+ "op-battle-of-ist": {
+  "name": "Battle of Ist",
+  "kind": "naval action in the Adriatic, 29 Feb 1944",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Ist"
  },
  "op-battle-of-iwo-jima": {
   "name": "Battle of Iwo Jima",
@@ -1495,6 +1512,13 @@
   "nation": "US",
   "wikidata": "Q696894",
   "source": "https://en.wikipedia.org/wiki/Cairo_Conference"
+ },
+ "op-cairo-haifa-train-bombings-1948": {
+  "name": "Cairo-Haifa train bombings 1948",
+  "kind": "Lehi train bombings in Mandate Palestine",
+  "nation": "Palestine",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Cairo%E2%80%93Haifa_train_bombings_1948"
  },
  "op-california-alien-land-law-of-1913": {
   "name": "California Alien Land Law of 1913",
@@ -2533,6 +2557,16 @@
   "source": "https://en.wikipedia.org/wiki/Lorraine_campaign",
   "wikidata": "Q2935372"
  },
+ "op-lytton-report": {
+  "name": "Lytton Report",
+  "kind": "League of Nations commission and report on the Manchurian crisis, 1932",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Lytton_Report",
+  "aka": [
+   "Lytton Commission"
+  ]
+ },
  "op-magnuson-act": {
   "name": "Magnuson Act",
   "kind": "law",
@@ -2722,6 +2756,16 @@
   "nation": "US",
   "wikidata": "Q7122813",
   "source": "https://en.wikipedia.org/wiki/Neutralisation_of_Rabaul"
+ },
+ "op-neutrality-acts-of-the-1930s": {
+  "name": "Neutrality Acts of the 1930s",
+  "kind": "US neutrality laws, 1935 to 1939",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Neutrality_Acts_of_the_1930s",
+  "aka": [
+   "Neutrality Act of 1936"
+  ]
  },
  "op-neutrality-patrol": {
   "name": "Neutrality Patrol",
@@ -3588,6 +3632,13 @@
    "Operation Lightfoot",
    "Alamein"
   ]
+ },
+ "op-second-battle-of-tembien": {
+  "name": "Second battle of Tembien",
+  "kind": "battle, Italian invasion of Ethiopia, 27 to 29 Feb 1936",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Second_battle_of_Tembien"
  },
  "op-second-bill-of-rights": {
   "name": "Second Bill of Rights",

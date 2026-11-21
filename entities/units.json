@@ -927,6 +927,13 @@
   "wikidata": "Q3599366",
   "source": "https://en.wikipedia.org/wiki/55th_Infantry_Division_%22Savona%22"
  },
+ "unit-5th-cavalry-regiment": {
+  "name": "5th Cavalry Regiment",
+  "kind": "US cavalry regiment, 1st Cavalry Division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/5th_Cavalry_Regiment"
+ },
  "unit-5th-infantry-division-india": {
   "name": "5th Infantry Division (India)",
   "kind": "Indian Army infantry division",
@@ -2005,6 +2012,17 @@
   "nation": "worldwide",
   "source": "https://en.wikipedia.org/wiki/League_of_Nations",
   "wikidata": "Q38130"
+ },
+ "unit-lehi-militant-group": {
+  "name": "Lehi (militant group)",
+  "kind": "Zionist underground group in Mandate Palestine",
+  "nation": "Palestine",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Lehi_(militant_group)",
+  "aka": [
+   "Stern Gang",
+   "Lehi"
+  ]
  },
  "unit-li-army-corps": {
   "name": "LI Corps",

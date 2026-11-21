@@ -165,6 +165,16 @@
   "source": "https://en.wikipedia.org/wiki/Crusader_tank",
   "wikidata": "Q696083"
  },
+ "machine-cyclotron": {
+  "name": "Cyclotron",
+  "kind": "particle accelerator, the atom smasher",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Cyclotron",
+  "aka": [
+   "atom smasher"
+  ]
+ },
  "machine-der-fuehrer-s-face": {
   "name": "Der Fuehrer's Face",
   "kind": "Disney propaganda cartoon, 1943",
