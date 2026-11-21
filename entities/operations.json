@@ -1,4 +1,11 @@
 {
+ "op-15th-academy-awards": {
+  "name": "15th Academy Awards",
+  "kind": "Film awards ceremony, 4 March 1943",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/15th_Academy_Awards"
+ },
  "op-16th-academy-awards": {
   "name": "16th Academy Awards",
   "kind": "film awards ceremony, 2 March 1944",
@@ -273,6 +280,16 @@
   "nation": "Germany",
   "wikidata": "Q4684105",
   "source": "https://en.wikipedia.org/wiki/Adolf_Hitler%27s_rise_to_power"
+ },
+ "op-aerial-incidents-in-switzerland-in-world-war-ii": {
+  "name": "Aerial incidents in Switzerland in World War II",
+  "kind": "Allied bombings and air incidents over neutral Switzerland",
+  "nation": "Switzerland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Aerial_incidents_in_Switzerland_in_World_War_II",
+  "aka": [
+   "Bombings of Switzerland in World War II"
+  ]
  },
  "op-air-raid-on-bari": {
   "name": "Air raid on Bari",
@@ -2109,6 +2126,13 @@
   "wikidata": "Q5452562",
   "source": "https://en.wikipedia.org/wiki/First_Bombardment_of_Midway"
  },
+ "op-first-inauguration-of-franklin-d-roosevelt": {
+  "name": "First inauguration of Franklin D. Roosevelt",
+  "kind": "Presidential inauguration, 4 March 1933",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/First_inauguration_of_Franklin_D._Roosevelt"
+ },
  "op-first-indochina-war": {
   "name": "First Indochina War",
   "kind": "war between France and the Viet Minh, 1946 to 1954",
@@ -3148,6 +3172,16 @@
   "wikidata": "Q2026003",
   "source": "https://en.wikipedia.org/wiki/Operation_Carpetbagger"
  },
+ "op-operation-claymore": {
+  "name": "Operation Claymore",
+  "kind": "British and Norwegian commando raid on the Lofoten Islands",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Claymore",
+  "aka": [
+   "Lofoten raid"
+  ]
+ },
  "op-operation-cleanslate": {
   "name": "Operation Cleanslate",
   "kind": "occupation of the Russell Islands",
@@ -3280,6 +3314,13 @@
    "Amiens raid",
    "Ramrod 564"
   ]
+ },
+ "op-operation-k": {
+  "name": "Operation K",
+  "kind": "Japanese flying boat raid on Oahu, March 1942",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_K"
  },
  "op-operation-ke": {
   "name": "Operation Ke",
@@ -3948,6 +3989,13 @@
    "draft lottery"
   ]
  },
+ "op-self-elimination-of-the-austrian-parliament": {
+  "name": "Self-elimination of the Austrian Parliament",
+  "kind": "Constitutional crisis, 4 March 1933",
+  "nation": "Austria",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Self-elimination_of_the_Austrian_Parliament"
+ },
  "op-sheffield-blitz": {
   "name": "Sheffield Blitz",
   "kind": "German bombing of Sheffield",
@@ -4220,6 +4268,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/The_Holocaust_in_Bulgaria"
  },
+ "op-the-holocaust-in-bulgarian-occupied-greece": {
+  "name": "The Holocaust in Bulgarian-occupied Greece",
+  "kind": "Deportation and murder of the Jews of Bulgarian occupied northern Greece, March 1943",
+  "nation": "Bulgaria",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/The_Holocaust_in_Bulgarian-occupied_Greece"
+ },
  "op-the-holocaust-in-italy": {
   "name": "The Holocaust in Italy",
   "kind": "persecution and deportation of Italy's Jews",
@@ -4278,6 +4333,13 @@
   "aka": [
    "Sino-American New Equal Treaty"
   ]
+ },
+ "op-treaty-of-dunkirk": {
+  "name": "Treaty of Dunkirk",
+  "kind": "Anglo French treaty of alliance, 4 March 1947",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Treaty_of_Dunkirk"
  },
  "op-treaty-of-varkiza": {
   "name": "Treaty of Varkiza",

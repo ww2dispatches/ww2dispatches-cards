@@ -291,6 +291,15 @@
   "lat": 41.1253,
   "lon": 16.8667
  },
+ "place-basel": {
+  "name": "Basel",
+  "kind": "City in Switzerland",
+  "nation": "Switzerland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Basel",
+  "lat": null,
+  "lon": null
+ },
  "place-batesburg-leesville-south-carolina": {
   "name": "Batesburg-Leesville, South Carolina",
   "kind": "town in South Carolina",
@@ -5492,6 +5501,15 @@
   "lat": 43.125,
   "lon": 5.9306
  },
+ "place-treblinka-extermination-camp": {
+  "name": "Treblinka extermination camp",
+  "kind": "Nazi extermination camp in occupied Poland",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Treblinka_extermination_camp",
+  "lat": null,
+  "lon": null
+ },
  "place-trelleborg": {
   "name": "Trelleborg",
   "kind": "port town",
@@ -6058,5 +6076,14 @@
   "source": "https://en.wikipedia.org/wiki/Zonhoven",
   "lat": 50.9853,
   "lon": 5.3647
+ },
+ "place-zurich": {
+  "name": "Zurich",
+  "kind": "City in Switzerland",
+  "nation": "Switzerland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Zurich",
+  "lat": null,
+  "lon": null
  }
 }

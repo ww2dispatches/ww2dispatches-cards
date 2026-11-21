@@ -461,6 +461,16 @@
    "Ju 88"
   ]
  },
+ "aircraft-kawanishi-h8k": {
+  "name": "Kawanishi H8K",
+  "kind": "Imperial Japanese Navy flying boat",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kawanishi_H8K",
+  "aka": [
+   "Emily"
+  ]
+ },
  "aircraft-lockheed-constellation": {
   "name": "Lockheed Constellation",
   "kind": "four engine airliner and transport",
@@ -514,6 +524,16 @@
   "nation": "US",
   "wikidata": "Q1873715",
   "source": "https://en.wikipedia.org/wiki/Lucky_Lady_II"
+ },
+ "aircraft-lz-129-hindenburg": {
+  "name": "LZ 129 Hindenburg",
+  "kind": "German passenger airship",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/LZ_129_Hindenburg",
+  "aka": [
+   "Hindenburg"
+  ]
  },
  "aircraft-martin-b-26-marauder": {
   "name": "Martin B-26 Marauder",

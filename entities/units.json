@@ -1167,6 +1167,17 @@
   "source": "https://en.wikipedia.org/wiki/9th_Marine_Regiment",
   "wikidata": "Q4646609"
  },
+ "unit-9th-operations-group": {
+  "name": "9th Operations Group",
+  "kind": "US Air Force group, in 1945 the 9th Bombardment Group of B-29s",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/9th_Operations_Group",
+  "aka": [
+   "9th Bombardment Group",
+   "9th Bomb Group"
+  ]
+ },
  "unit-action-francaise": {
   "name": "Action Francaise",
   "kind": "French royalist far right movement",
@@ -2538,6 +2549,16 @@
   "source": "https://en.wikipedia.org/wiki/Permanent_Court_of_International_Justice",
   "aka": [
    "World Court"
+  ]
+ },
+ "unit-philadelphia-phillies": {
+  "name": "Philadelphia Phillies",
+  "kind": "Major League Baseball club",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Philadelphia_Phillies",
+  "aka": [
+   "Philadelphia Blue Jays"
   ]
  },
  "unit-philippine-scouts": {
