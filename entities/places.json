@@ -779,6 +779,15 @@
   "lat": null,
   "lon": null
  },
+ "place-cairns": {
+  "name": "Cairns",
+  "kind": "city in north Queensland",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Cairns",
+  "lat": null,
+  "lon": null
+ },
  "place-cairo": {
   "name": "Cairo",
   "kind": "city",
@@ -1424,6 +1433,15 @@
   "wikidata": "Q4083",
   "lat": 50.8167,
   "lon": 6.2833
+ },
+ "place-essen": {
+  "name": "Essen",
+  "kind": "city in the Ruhr, home of the Krupp works",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Essen",
+  "lat": null,
+  "lon": null
  },
  "place-esztergom": {
   "name": "Esztergom",
@@ -5900,6 +5918,15 @@
   "wikidata": "Q5933",
   "lat": 51.4994,
   "lon": -0.1274
+ },
+ "place-westminster-college-missouri": {
+  "name": "Westminster College (Missouri)",
+  "kind": "college in Fulton, Missouri",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Westminster_College_(Missouri)",
+  "lat": null,
+  "lon": null
  },
  "place-wheeler-hall": {
   "name": "Wheeler Hall",

@@ -325,6 +325,17 @@
   "source": "https://en.wikipedia.org/wiki/1st_Panzer_Army",
   "wikidata": "Q163388"
  },
+ "unit-1st-special-operations-wing": {
+  "name": "1st Special Operations Wing",
+  "kind": "U.S. Air Force wing, descended from the 1st Air Commando Group",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1st_Special_Operations_Wing",
+  "aka": [
+   "1st Air Commando Group"
+  ],
+  "note": "Wikipedia has no separate article for the 1st Air Commando Group; this is the lineage article. Swap if the registry prefers a different id."
+ },
  "unit-1st-uk-division": {
   "name": "1st Infantry Division (British)",
   "kind": "British Army infantry division",
@@ -575,6 +586,13 @@
   "nation": "South Africa",
   "wikidata": "Q4633729",
   "source": "https://en.wikipedia.org/wiki/2nd_South_African_Infantry_Division"
+ },
+ "unit-2nd-ukrainian-front": {
+  "name": "2nd Ukrainian Front",
+  "kind": "Red Army front",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/2nd_Ukrainian_Front"
  },
  "unit-30th-infantry-division-united-states": {
   "name": "30th Infantry Division",
@@ -1458,6 +1476,13 @@
   "nation": "US",
   "wikidata": "Q9185941",
   "source": "https://en.wikipedia.org/wiki/Central_Intelligence_Group"
+ },
+ "unit-chindits": {
+  "name": "Chindits",
+  "kind": "British and Indian long range penetration force in Burma",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Chindits"
  },
  "unit-churchill-archives-centre": {
   "name": "Churchill Archives Centre",
@@ -3220,6 +3245,13 @@
    "VOA"
   ]
  },
+ "unit-volkssturm": {
+  "name": "Volkssturm",
+  "kind": "German national militia of old men and youths, 1944 to 1945",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Volkssturm"
+ },
  "unit-voronezh-front": {
   "name": "Voronezh Front",
   "kind": "Soviet army group (front)",
@@ -3289,6 +3321,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/WAVES",
   "wikidata": "Q830971"
+ },
+ "unit-wehrmacht": {
+  "name": "Wehrmacht",
+  "kind": "German armed forces 1935 to 1945",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Wehrmacht"
  },
  "unit-western-front-soviet-union": {
   "name": "Western Front",

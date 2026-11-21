@@ -645,6 +645,17 @@
    "Myrt"
   ]
  },
+ "aircraft-nakajima-ki-115-tsurugi": {
+  "name": "Nakajima Ki-115 Tsurugi",
+  "kind": "Japanese Army special attack aircraft",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Nakajima_Ki-115_Tsurugi",
+  "aka": [
+   "Ki-115",
+   "Tsurugi"
+  ]
+ },
  "aircraft-noorduyn-norseman": {
   "name": "Noorduyn Norseman",
   "kind": "utility transport (UC-64 in USAAF service)",
@@ -773,6 +784,17 @@
   "wikidata": "Q29190",
   "aka": [
    "Spitfire"
+  ]
+ },
+ "aircraft-supermarine-spitfire-prototype-k5054": {
+  "name": "Supermarine Spitfire prototype K5054",
+  "kind": "single aircraft, the Spitfire prototype",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Supermarine_Spitfire_prototype_K5054",
+  "aka": [
+   "K5054",
+   "Vickers-Supermarine Type 300"
   ]
  },
  "aircraft-vickers-vildebeest": {

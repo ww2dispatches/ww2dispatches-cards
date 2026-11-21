@@ -116,6 +116,13 @@
    "Cairo Communique"
   ]
  },
+ "op-1943-greek-protests-against-labour-mobilization": {
+  "name": "1943 Greek protests against labour mobilization",
+  "kind": "strikes and protests in occupied Greece",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1943_Greek_protests_against_labour_mobilization"
+ },
  "op-1944-tonankai-earthquake": {
   "name": "1944 Tōnankai earthquake",
   "kind": "earthquake and tsunami, 7 December 1944",
@@ -1280,6 +1287,13 @@
   "wikidata": "Q713529",
   "source": "https://en.wikipedia.org/wiki/Battle_of_the_River_Plate"
  },
+ "op-battle-of-the-ruhr": {
+  "name": "Battle of the Ruhr",
+  "kind": "RAF Bomber Command offensive, March to July 1943",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_the_Ruhr"
+ },
  "op-battle-of-timor": {
   "name": "Battle of Timor",
   "kind": "campaign on Timor, 1942 to 1943",
@@ -1403,6 +1417,13 @@
   "nation": "Britain",
   "wikidata": "Q2748375",
   "source": "https://en.wikipedia.org/wiki/Black_Friday_(1945)"
+ },
+ "op-blockade-of-germany-1939-1945": {
+  "name": "Blockade of Germany (1939 to 1945)",
+  "kind": "Allied economic blockade",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Blockade_of_Germany_(1939%E2%80%931945)"
  },
  "op-blomberg-fritsch-affair": {
   "name": "Blomberg-Fritsch affair",
@@ -2540,6 +2561,13 @@
    "Massacre of Kalavryta"
   ]
  },
+ "op-katyn-massacre": {
+  "name": "Katyn massacre",
+  "kind": "Soviet mass execution of Polish prisoners, 1940",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Katyn_massacre"
+ },
  "op-khabarovsk-war-crimes-trials": {
   "name": "Khabarovsk war crimes trials",
   "kind": "Soviet trial of twelve Japanese for biological warfare, December 1949",
@@ -3470,6 +3498,13 @@
   "aka": [
    "Baby Blitz"
   ]
+ },
+ "op-operation-thursday": {
+  "name": "Operation Thursday",
+  "kind": "second Chindit expedition, airborne into Burma, 1944",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Thursday"
  },
  "op-operation-torch": {
   "name": "Operation Torch",
@@ -4433,6 +4468,13 @@
   "aka": [
    "Walwal incident"
   ]
+ },
+ "op-uman-botosani-offensive": {
+  "name": "Uman-Botosani offensive",
+  "kind": "Red Army offensive in Ukraine, March and April 1944",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Uman%E2%80%93Boto%C8%99ani_offensive"
  },
  "op-united-nations-conference-on-international-organization": {
   "name": "San Francisco Conference",
