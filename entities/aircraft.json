@@ -35,6 +35,13 @@
   "wikidata": "Q672994",
   "source": "https://en.wikipedia.org/wiki/Avro_Manchester"
  },
+ "aircraft-avro-tudor": {
+  "name": "Avro Tudor",
+  "kind": "piston engined airliner",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Avro_Tudor"
+ },
  "aircraft-b-29-dauntless-dotty": {
   "name": "Dauntless Dotty",
   "kind": "individual B-29 Superfortress",
@@ -575,6 +582,13 @@
    "P-51B"
   ]
  },
+ "aircraft-osoaviakhim-1": {
+  "name": "Osoaviakhim-1",
+  "kind": "Soviet stratospheric balloon",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Osoaviakhim-1"
+ },
  "aircraft-pacific-clipper": {
   "name": "Pacific Clipper",
   "kind": "Pan American Boeing 314 flying boat, first commercial round the world flight",
@@ -613,6 +627,13 @@
    "SM.79"
   ]
  },
+ "aircraft-short-empire": {
+  "name": "Short Empire",
+  "kind": "flying boat airliner",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Short_Empire"
+ },
  "aircraft-short-stirling": {
   "name": "Short Stirling",
   "kind": "heavy bomber",
@@ -646,6 +667,13 @@
   "aka": [
    "Spitfire"
   ]
+ },
+ "aircraft-vickers-vildebeest": {
+  "name": "Vickers Vildebeest",
+  "kind": "British biplane torpedo bomber",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Vickers_Vildebeest"
  },
  "aircraft-vickers-wellington": {
   "name": "Vickers Wellington",

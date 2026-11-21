@@ -26,6 +26,15 @@
   "lat": 35.1802,
   "lon": 136.9064
  },
+ "place-akershus-fortress": {
+  "name": "Akershus Fortress",
+  "kind": "castle and fortress, Oslo",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Akershus_Fortress",
+  "lat": null,
+  "lon": null
+ },
  "place-alaska-highway": {
   "name": "Alaska Highway",
   "kind": "highway",
@@ -104,6 +113,15 @@
   "lat": 48.8738,
   "lon": 2.295
  },
+ "place-archiginnasio-of-bologna": {
+  "name": "Archiginnasio of Bologna",
+  "kind": "historic university building with anatomical theatre",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Archiginnasio_of_Bologna",
+  "lat": null,
+  "lon": null
+ },
  "place-athens": {
   "name": "Athens",
   "kind": "city",
@@ -149,6 +167,15 @@
   "aka": [
    "Bank and Monument stations"
   ]
+ },
+ "place-barcelona": {
+  "name": "Barcelona",
+  "kind": "city",
+  "nation": "Spain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Barcelona",
+  "lat": null,
+  "lon": null
  },
  "place-bardia": {
   "name": "Bardia",
@@ -216,6 +243,15 @@
    "Bejaia"
   ]
  },
+ "place-belfast": {
+  "name": "Belfast",
+  "kind": "city and port",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Belfast",
+  "lat": null,
+  "lon": null
+ },
  "place-bellows-air-force-station": {
   "name": "Bellows Field",
   "kind": "airfield",
@@ -224,6 +260,15 @@
   "wikidata": "Q593271",
   "lat": 21.3691,
   "lon": -157.711
+ },
+ "place-benghazi": {
+  "name": "Benghazi",
+  "kind": "port city",
+  "nation": "Libya",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Benghazi",
+  "lat": null,
+  "lon": null
  },
  "place-berchtesgaden": {
   "name": "Berchtesgaden",
@@ -384,6 +429,15 @@
   "lat": 47.8171,
   "lon": 31.1305
  },
+ "place-bologna": {
+  "name": "Bologna",
+  "kind": "city",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bologna",
+  "lat": null,
+  "lon": null
+ },
  "place-boston": {
   "name": "Boston",
   "kind": "city",
@@ -530,6 +584,15 @@
   "source": "https://en.wikipedia.org/wiki/Burbank,_California",
   "lat": 34.1803,
   "lon": -118.3283
+ },
+ "place-burma-road": {
+  "name": "Burma Road",
+  "kind": "supply road from Burma to China",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Burma_Road",
+  "lat": null,
+  "lon": null
  },
  "place-cairo": {
   "name": "Cairo",
@@ -1569,6 +1632,15 @@
    "Höchst"
   ]
  },
+ "place-holtzwihr": {
+  "name": "Holtzwihr",
+  "kind": "village in Alsace",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Holtzwihr",
+  "lat": null,
+  "lon": null
+ },
  "place-hong-kong": {
   "name": "Hong Kong",
   "kind": "city and British colony",
@@ -2061,6 +2133,18 @@
   "lat": 34.232,
   "lon": 132.554
  },
+ "place-kuznica-zelichowska": {
+  "name": "Kuźnica Żelichowska",
+  "kind": "village",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ku%C5%BAnica_%C5%BBelichowska",
+  "aka": [
+   "Schelkow"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-kwajalein-atoll": {
   "name": "Kwajalein Atoll",
   "kind": "Atoll in the Marshall Islands",
@@ -2303,6 +2387,15 @@
   "lat": null,
   "lon": null
  },
+ "place-mamayev-kurgan": {
+  "name": "Mamayev Kurgan",
+  "kind": "hill in Stalingrad",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mamayev_Kurgan",
+  "lat": null,
+  "lon": null
+ },
  "place-manado": {
   "name": "Manado",
   "kind": "port city, Celebes (Sulawesi)",
@@ -2342,6 +2435,15 @@
   "lat": 14.5167,
   "lon": 120.7667
  },
+ "place-mannerheim-line": {
+  "name": "Mannerheim Line",
+  "kind": "Finnish defensive line, Karelian Isthmus",
+  "nation": "Finland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mannerheim_Line",
+  "lat": null,
+  "lon": null
+ },
  "place-mannheim": {
   "name": "Mannheim",
   "kind": "city in Germany",
@@ -2359,6 +2461,19 @@
   "wikidata": "Q1786933",
   "lat": 51.5132,
   "lon": -0.0894
+ },
+ "place-marianske-lazne": {
+  "name": "Marianske Lazne",
+  "kind": "spa town",
+  "nation": "Czechoslovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mari%C3%A1nsk%C3%A9_L%C3%A1zn%C4%9B",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Mariánské Lázně",
+   "Marienbad"
+  ]
  },
  "place-mark-hellinger-theatre": {
   "name": "Hollywood Theatre",
@@ -2414,6 +2529,15 @@
   "nation": "France",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Marseille",
+  "lat": null,
+  "lon": null
+ },
+ "place-marshall-islands": {
+  "name": "Marshall Islands",
+  "kind": "island group",
+  "nation": "Marshall Islands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Marshall_Islands",
   "lat": null,
   "lon": null
  },
@@ -2625,6 +2749,15 @@
   "aka": [
    "Fedala"
   ]
+ },
+ "place-mong-yu": {
+  "name": "Mong-Yu",
+  "kind": "town at the junction of the Ledo and Burma Roads",
+  "nation": "Burma",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mong-Yu",
+  "lat": null,
+  "lon": null
  },
  "place-montevideo": {
   "name": "Montevideo",
@@ -2922,6 +3055,15 @@
   "lat": 55.0097,
   "lon": -1.4448
  },
+ "place-northern-ireland": {
+  "name": "Northern Ireland",
+  "kind": "region of the United Kingdom",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Northern_Ireland",
+  "lat": null,
+  "lon": null
+ },
  "place-nuremberg": {
   "name": "Nuremberg",
   "kind": "city",
@@ -3098,6 +3240,15 @@
   "wikidata": "Q213281",
   "lat": 11.1583,
   "lon": 124.9917
+ },
+ "place-palomar-observatory": {
+  "name": "Palomar Observatory",
+  "kind": "astronomical observatory",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Palomar_Observatory",
+  "lat": null,
+  "lon": null
  },
  "place-panama-canal": {
   "name": "Panama Canal",
@@ -3496,6 +3647,15 @@
    "Roer",
    "Rur"
   ]
+ },
+ "place-roi-namur": {
+  "name": "Roi-Namur",
+  "kind": "linked islands, Kwajalein Atoll",
+  "nation": "Marshall Islands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Roi-Namur",
+  "lat": null,
+  "lon": null
  },
  "place-rostov-on-don": {
   "name": "Rostov-on-Don",
@@ -4270,6 +4430,15 @@
   "lat": 43.125,
   "lon": 5.9306
  },
+ "place-trelleborg": {
+  "name": "Trelleborg",
+  "kind": "port town",
+  "nation": "Sweden",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Trelleborg",
+  "lat": null,
+  "lon": null
+ },
  "place-tripoli-libya": {
   "name": "Tripoli",
   "kind": "city",
@@ -4469,6 +4638,24 @@
   "lat": 56.0333,
   "lon": 35.95
  },
+ "place-voronezh": {
+  "name": "Voronezh",
+  "kind": "city",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Voronezh",
+  "lat": null,
+  "lon": null
+ },
+ "place-voronezh-state-university": {
+  "name": "Voronezh State University",
+  "kind": "university",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Voronezh_State_University",
+  "lat": null,
+  "lon": null
+ },
  "place-vosges": {
   "name": "Vosges Mountains",
   "kind": "mountain range",
@@ -4546,6 +4733,15 @@
   "wikidata": "Q496381",
   "lat": 42.4924,
   "lon": -92.3462
+ },
+ "place-wau-papua-new-guinea": {
+  "name": "Wau",
+  "kind": "town and airstrip in the New Guinea highlands",
+  "nation": "Papua New Guinea",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Wau,_Papua_New_Guinea",
+  "lat": null,
+  "lon": null
  },
  "place-wawer": {
   "name": "Wawer",
@@ -4652,6 +4848,15 @@
   ],
   "lat": 16.795,
   "lon": 96.16
+ },
+ "place-yelabuga": {
+  "name": "Yelabuga",
+  "kind": "town, wartime evacuation site",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Yelabuga",
+  "lat": null,
+  "lon": null
  },
  "place-yogyakarta": {
   "name": "Yogyakarta",

@@ -80,6 +80,13 @@
   "wikidata": "Q60045",
   "source": "https://en.wikipedia.org/wiki/Albert_Speer"
  },
+ "person-alberto-trionfi": {
+  "name": "Alberto Trionfi",
+  "kind": "Italian brigadier general",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Alberto_Trionfi"
+ },
  "person-alexander-buller-turner": {
   "name": "Alexander Turner",
   "kind": "British Army officer, Victoria Cross",
@@ -101,6 +108,13 @@
   "wikidata": "Q37064",
   "source": "https://en.wikipedia.org/wiki/Alexander_Fleming"
  },
+ "person-alexander-marinesko": {
+  "name": "Alexander Marinesko",
+  "kind": "Soviet submarine commander",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Alexander_Marinesko"
+ },
  "person-alexander-patch": {
   "name": "Alexander Patch",
   "kind": "U.S. Army general, commander of the Seventh Army",
@@ -117,6 +131,13 @@
   "aka": [
    "Sandy Nininger"
   ]
+ },
+ "person-alexandros-koryzis": {
+  "name": "Alexandros Koryzis",
+  "kind": "prime minister of Greece 1941",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Alexandros_Koryzis"
  },
  "person-alexei-vinogradov": {
   "name": "Alexei Vinogradov",
@@ -148,6 +169,13 @@
   "aka": [
    "Alfried Krupp"
   ]
+ },
+ "person-alton-w-knappenberger": {
+  "name": "Alton W. Knappenberger",
+  "kind": "U.S. Army soldier, Medal of Honor",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Alton_W._Knappenberger"
  },
  "person-amy-johnson": {
   "name": "Amy Johnson",
@@ -229,6 +257,13 @@
    "Wavell"
   ]
  },
+ "person-arthur-coningham": {
+  "name": "Arthur Coningham",
+  "kind": "RAF air marshal",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Arthur_Coningham"
+ },
  "person-arthur-harris": {
   "name": "Arthur Harris",
   "kind": "RAF air marshal",
@@ -283,6 +318,20 @@
   "nation": "worldwide",
   "source": "https://en.wikipedia.org/wiki/Attila",
   "wikidata": "Q36724"
+ },
+ "person-aubrey-koch": {
+  "name": "Aubrey Koch",
+  "kind": "Qantas flying boat captain",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Aubrey_Koch"
+ },
+ "person-audie-murphy": {
+  "name": "Audie Murphy",
+  "kind": "U.S. Army officer, Medal of Honor recipient, later actor",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Audie_Murphy"
  },
  "person-aung-san": {
   "name": "Aung San",
@@ -347,6 +396,16 @@
   "wikidata": "Q23559",
   "source": "https://en.wikipedia.org/wiki/Benito_Mussolini"
  },
+ "person-benjamin-s-kelsey": {
+  "name": "Benjamin S. Kelsey",
+  "kind": "U.S. Army Air Corps test pilot and engineer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Benjamin_S._Kelsey",
+  "aka": [
+   "Ben Kelsey"
+  ]
+ },
  "person-bernard-freyberg-1st-baron-freyberg": {
   "name": "Bernard Freyberg",
   "kind": "New Zealand Army general",
@@ -366,6 +425,13 @@
   "aka": [
    "Montgomery"
   ]
+ },
+ "person-bernd-rosemeyer": {
+  "name": "Bernd Rosemeyer",
+  "kind": "racing driver",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bernd_Rosemeyer"
  },
  "person-bertram-ramsay": {
   "name": "Bertram Ramsay",
@@ -533,12 +599,29 @@
   "source": "https://en.wikipedia.org/wiki/Charlemagne",
   "wikidata": "Q3044"
  },
+ "person-charles-coughlin": {
+  "name": "Charles Coughlin",
+  "kind": "priest and public campaigner",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Charles_Coughlin",
+  "aka": [
+   "Father Coughlin"
+  ]
+ },
  "person-charles-de-gaulle": {
   "name": "Charles de Gaulle",
   "kind": "Free French leader",
   "nation": "France",
   "source": "https://en.wikipedia.org/wiki/Charles_de_Gaulle",
   "wikidata": "Q2042"
+ },
+ "person-charles-e-tolman": {
+  "name": "Charles E. Tolman",
+  "kind": "U.S. destroyer captain",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Charles_E._Tolman"
  },
  "person-charles-groves-wright-anderson": {
   "name": "Charles Groves Wright Anderson",
@@ -751,6 +834,13 @@
   "wikidata": "Q5217036",
   "source": "https://en.wikipedia.org/wiki/Daniel_E._Barbey"
  },
+ "person-daniel-isom-sultan": {
+  "name": "Daniel I. Sultan",
+  "kind": "India-Burma Theater commander",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Daniel_Isom_Sultan"
+ },
  "person-david-akui": {
   "name": "David Akui",
   "kind": "Hawaii National Guard corporal who captured Sakamaki",
@@ -781,6 +871,13 @@
   "nation": "Romania",
   "wikidata": "Q4443015",
   "source": "https://en.wikipedia.org/wiki/David_Stoliar"
+ },
+ "person-dietrich-bonhoeffer": {
+  "name": "Dietrich Bonhoeffer",
+  "kind": "German pastor and theologian",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Dietrich_Bonhoeffer"
  },
  "person-dietrich-peltz": {
   "name": "Dietrich Peltz",
@@ -890,6 +987,13 @@
    "Eisenhower"
   ]
  },
+ "person-eamon-de-valera": {
+  "name": "Eamon de Valera",
+  "kind": "Irish head of government",
+  "nation": "Ireland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/%C3%89amon_de_Valera"
+ },
  "person-ed-westcott": {
   "name": "Ed Westcott",
   "kind": "Manhattan Project photographer",
@@ -982,6 +1086,13 @@
    "Duke of Windsor"
   ]
  },
+ "person-edwin-hubble": {
+  "name": "Edwin Hubble",
+  "kind": "American astronomer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Edwin_Hubble"
+ },
  "person-edwin-m-watson": {
   "name": "Edwin Watson",
   "kind": "U.S. Army general",
@@ -1053,6 +1164,13 @@
   "nation": "Germany",
   "wikidata": "Q124773",
   "source": "https://en.wikipedia.org/wiki/Elfriede_Scholz"
+ },
+ "person-elie-wiesel": {
+  "name": "Elie Wiesel",
+  "kind": "Holocaust survivor and writer",
+  "nation": "Hungary",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Elie_Wiesel"
  },
  "person-elizabeth-ii": {
   "name": "Elizabeth II",
@@ -1336,6 +1454,16 @@
   "wikidata": "Q70534",
   "source": "https://en.wikipedia.org/wiki/Fedor_von_Bock"
  },
+ "person-felix-eboue": {
+  "name": "Felix Eboue",
+  "kind": "Free French colonial governor",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/F%C3%A9lix_%C3%89bou%C3%A9",
+  "aka": [
+   "Félix Éboué"
+  ]
+ },
  "person-ferdinand-heim": {
   "name": "Ferdinand Heim",
   "kind": "German Army general",
@@ -1364,6 +1492,13 @@
   "source": "https://en.wikipedia.org/wiki/Frances_Wills",
   "wikidata": "Q116762365"
  },
+ "person-francis-biddle": {
+  "name": "Francis Biddle",
+  "kind": "US Attorney General",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Francis_Biddle"
+ },
  "person-francisco-franco": {
   "name": "Francisco Franco",
   "kind": "dictator of Spain",
@@ -1381,6 +1516,13 @@
    "Darlan",
    "François Darlan"
   ]
+ },
+ "person-frank-a-armstrong": {
+  "name": "Frank A. Armstrong",
+  "kind": "USAAF bomb group commander",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Frank_A._Armstrong"
  },
  "person-frank-capra": {
   "name": "Frank Capra",
@@ -1426,6 +1568,14 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Franklin_D._Roosevelt_Jr.",
   "wikidata": "Q275876"
+ },
+ "person-franz-kutschera": {
+  "name": "Franz Kutschera",
+  "kind": "SS and Police Leader, Warsaw District",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Franz_Kutschera",
+  "note": "Banked only as the target of the Polish resistance; never a subject told from his side."
  },
  "person-franz-oppenhoff": {
   "name": "Franz Oppenhoff",
@@ -1489,6 +1639,13 @@
   "nation": "France",
   "wikidata": "Q150989",
   "source": "https://en.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Joliot-Curie"
+ },
+ "person-frederick-dalrymple-hamilton": {
+  "name": "Frederick Dalrymple-Hamilton",
+  "kind": "Royal Navy vice admiral",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Frederick_Dalrymple-Hamilton"
  },
  "person-frederick-walker-castle": {
   "name": "Frederick Walker Castle",
@@ -2156,6 +2313,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Henry_Morgenthau_Jr."
  },
+ "person-henry-mucci": {
+  "name": "Henry Mucci",
+  "kind": "U.S. Army Ranger officer, led the Cabanatuan raid",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Henry_Mucci"
+ },
  "person-henry-t-elrod": {
   "name": "Henry T. Elrod",
   "kind": "U.S. Marine aviator, Medal of Honor",
@@ -2357,6 +2521,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Howard_Hughes",
   "wikidata": "Q189081"
+ },
+ "person-hugh-dalton": {
+  "name": "Hugh Dalton",
+  "kind": "British President of the Board of Trade",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hugh_Dalton"
  },
  "person-hugh-r-wilson": {
   "name": "Hugh Wilson",
@@ -2590,6 +2761,20 @@
    "Jim Howard"
   ]
  },
+ "person-james-maxton": {
+  "name": "James Maxton",
+  "kind": "Member of Parliament",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/James_Maxton"
+ },
+ "person-james-o-richardson": {
+  "name": "James O. Richardson",
+  "kind": "U.S. admiral",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/James_O._Richardson"
+ },
  "person-james-pelly-fry": {
   "name": "James Pelly-Fry",
   "kind": "RAF wing commander, led Operation Oyster",
@@ -2822,6 +3007,13 @@
   "wikidata": "Q6253841",
   "source": "https://en.wikipedia.org/wiki/John_R._Fox"
  },
+ "person-john-r-sinnock": {
+  "name": "John R. Sinnock",
+  "kind": "Chief Engraver of the U.S. Mint",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/John_R._Sinnock"
+ },
  "person-john-robert-osborn": {
   "name": "John Robert Osborn",
   "kind": "Canadian company sergeant major, Victoria Cross",
@@ -2863,6 +3055,13 @@
   "nation": "Germany",
   "wikidata": "Q57688",
   "source": "https://en.wikipedia.org/wiki/Josef_Kramer"
+ },
+ "person-josef-terboven": {
+  "name": "Josef Terboven",
+  "kind": "Reichskommissar for occupied Norway",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Josef_Terboven"
  },
  "person-joseph-enright": {
   "name": "Joseph F. Enright",
@@ -2937,6 +3136,13 @@
    "Jozef Gabcik"
   ]
  },
+ "person-jozef-lipski": {
+  "name": "Jozef Lipski",
+  "kind": "Polish ambassador to Germany",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/J%C3%B3zef_Lipski"
+ },
  "person-jozsef-mindszenty": {
   "name": "Jozsef Mindszenty",
   "kind": "Cardinal, Archbishop of Esztergom",
@@ -3006,6 +3212,13 @@
   "nation": "Austria",
   "wikidata": "Q11726",
   "source": "https://en.wikipedia.org/wiki/Karl_Renner"
+ },
+ "person-karl-strecker": {
+  "name": "Karl Strecker",
+  "kind": "German general, commander of XI Corps at Stalingrad",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Karl_Strecker"
  },
  "person-kazuo-sakamaki": {
   "name": "Kazuo Sakamaki",
@@ -3132,6 +3345,13 @@
   "source": "https://en.wikipedia.org/wiki/Konstantin_Rokossovsky",
   "wikidata": "Q40482"
  },
+ "person-konstantin-von-neurath": {
+  "name": "Konstantin von Neurath",
+  "kind": "German foreign minister",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Konstantin_von_Neurath"
+ },
  "person-korechika-anami": {
   "name": "Korechika Anami",
   "kind": "Japanese general, Eleventh Army commander, later war minister",
@@ -3238,6 +3458,13 @@
   "nation": "France",
   "wikidata": "Q18434",
   "source": "https://en.wikipedia.org/wiki/L%C3%A9on_Blum"
+ },
+ "person-leonid-govorov": {
+  "name": "Leonid Govorov",
+  "kind": "Soviet general, Leningrad Front commander",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Leonid_Govorov"
  },
  "person-leopold-figl": {
   "name": "Leopold Figl",
@@ -3347,6 +3574,13 @@
   "source": "https://en.wikipedia.org/wiki/Luigi_Mascherpa",
   "wikidata": "Q3839863"
  },
+ "person-luigi-reverberi": {
+  "name": "Luigi Reverberi",
+  "kind": "Italian general, commander of the Tridentina Alpine Division",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Luigi_Reverberi"
+ },
  "person-lyle-bouck": {
   "name": "Lyle Bouck",
   "kind": "U.S. Army officer, I&R platoon leader",
@@ -3426,6 +3660,13 @@
   "nation": "US",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Margaret_Bourke-White"
+ },
+ "person-margaret-truman": {
+  "name": "Margaret Truman",
+  "kind": "sponsor of USS Missouri, daughter of Harry S. Truman",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Margaret_Truman"
  },
  "person-mario-arillo": {
   "name": "Mario Arillo",
@@ -3945,6 +4186,13 @@
   "wikidata": "Q1332642",
   "source": "https://en.wikipedia.org/wiki/Pavel_Rybalko"
  },
+ "person-pedro-pablo-ramirez": {
+  "name": "Pedro Pablo Ramirez",
+  "kind": "President of Argentina, 1943 to 1944",
+  "nation": "Argentina",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Pedro_Pablo_Ram%C3%ADrez"
+ },
  "person-percy-glading": {
   "name": "Percy Glading",
   "kind": "communist activist and Soviet spy",
@@ -4048,6 +4296,14 @@
   "aka": [
    "Eugenio Pacelli"
   ]
+ },
+ "person-primo-longobardo": {
+  "name": "Primo Longobardo",
+  "kind": "submarine commander",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Primo_Longobardo",
+  "note": "Spelled Longobardi on regiamarina.net"
  },
  "person-prince-nashimoto-morimasa": {
   "name": "Prince Nashimoto Morimasa",
@@ -4331,6 +4587,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Roy_Nielsen"
  },
+ "person-roy-plomley": {
+  "name": "Roy Plomley",
+  "kind": "broadcaster, creator of Desert Island Discs",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Roy_Plomley"
+ },
  "person-roza-robota": {
   "name": "Roza Robota",
   "kind": "Jewish prisoner and resistance member at Auschwitz",
@@ -4340,6 +4603,20 @@
   "aka": [
    "Róża Robota"
   ]
+ },
+ "person-roza-shanina": {
+  "name": "Roza Shanina",
+  "kind": "Red Army sniper",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Roza_Shanina"
+ },
+ "person-rudolf-caracciola": {
+  "name": "Rudolf Caracciola",
+  "kind": "racing driver",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Rudolf_Caracciola"
  },
  "person-rudolf-hess": {
   "name": "Rudolf Hess",
@@ -4422,6 +4699,13 @@
   "wikidata": "Q60875432",
   "source": "https://en.wikipedia.org/wiki/Sebastiano_Gallina"
  },
+ "person-semyon-timoshenko": {
+  "name": "Semyon Timoshenko",
+  "kind": "Soviet marshal",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Semyon_Timoshenko"
+ },
  "person-seni-pramoj": {
   "name": "Seni Pramoj",
   "kind": "Thai minister to the United States, Free Thai leader",
@@ -4438,6 +4722,13 @@
   "aka": [
    "Sergio Osmeña"
   ]
+ },
+ "person-shintaro-hashimoto": {
+  "name": "Shintaro Hashimoto",
+  "kind": "Japanese rear admiral",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Shintar%C5%8D_Hashimoto"
  },
  "person-sidney-souers": {
   "name": "Sidney Souers",
@@ -4677,6 +4968,13 @@
   "source": "https://en.wikipedia.org/wiki/Toshio_Abe",
   "wikidata": "Q11657742"
  },
+ "person-trygve-lie": {
+  "name": "Trygve Lie",
+  "kind": "first UN Secretary General",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Trygve_Lie"
+ },
  "person-u-nu": {
   "name": "U Nu",
   "kind": "first prime minister of Burma",
@@ -4722,6 +5020,20 @@
   "wikidata": "Q386908",
   "source": "https://en.wikipedia.org/wiki/Vasily_Badanov"
  },
+ "person-veit-harlan": {
+  "name": "Veit Harlan",
+  "kind": "German film director",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Veit_Harlan"
+ },
+ "person-vic-oliver": {
+  "name": "Vic Oliver",
+  "kind": "actor and musician, first Desert Island Discs castaway",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Vic_Oliver"
+ },
  "person-victor-buller-turner": {
   "name": "Victor Turner",
   "kind": "British Army officer, Victoria Cross",
@@ -4763,6 +5075,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Virgil_R._Miller",
   "wikidata": "Q7933809"
+ },
+ "person-virginia-woolf": {
+  "name": "Virginia Woolf",
+  "kind": "English writer and diarist",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Virginia_Woolf"
  },
  "person-vivien-thomas": {
   "name": "Vivien Thomas",
@@ -4943,6 +5262,20 @@
    "Werner Mölders"
   ]
  },
+ "person-werner-von-blomberg": {
+  "name": "Werner von Blomberg",
+  "kind": "German field marshal and War Minister",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Werner_von_Blomberg"
+ },
+ "person-werner-von-fritsch": {
+  "name": "Werner von Fritsch",
+  "kind": "commander in chief of the German army, 1934 to 1938",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Werner_von_Fritsch"
+ },
  "person-wernher-von-braun": {
   "name": "Wernher von Braun",
   "kind": "German Army rocket engineer, later NASA",
@@ -5077,6 +5410,17 @@
    "Mackenzie King"
   ]
  },
+ "person-william-martin-royal-marines-officer": {
+  "name": "Glyndwr Michael",
+  "kind": "the body used as Major William Martin in Operation Mincemeat",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/William_Martin_(Royal_Marines_officer)",
+  "aka": [
+   "Major William Martin",
+   "The Man Who Never Was"
+  ]
+ },
  "person-william-morrison-1st-viscount-dunrossil": {
   "name": "William Morrison, 1st Viscount Dunrossil",
   "kind": "British Minister of Food 1939 to 1940",
@@ -5085,6 +5429,16 @@
   "source": "https://en.wikipedia.org/wiki/William_Morrison,_1st_Viscount_Dunrossil",
   "aka": [
    "W.S. Morrison"
+  ]
+ },
+ "person-william-orlando-darby": {
+  "name": "William Orlando Darby",
+  "kind": "U.S. Army Ranger commander",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/William_Orlando_Darby",
+  "aka": [
+   "William O. Darby"
   ]
  },
  "person-william-pickens": {

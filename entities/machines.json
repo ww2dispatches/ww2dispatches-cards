@@ -227,6 +227,13 @@
   "source": "https://en.wikipedia.org/wiki/General_Electric_J31",
   "wikidata": "Q2450750"
  },
+ "machine-hale-telescope": {
+  "name": "Hale Telescope",
+  "kind": "200 inch reflecting telescope",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hale_Telescope"
+ },
  "machine-henschel-hs-293": {
   "name": "Henschel Hs 293",
   "kind": "guided glide bomb",
@@ -270,6 +277,13 @@
   "aka": [
    "Ko-hyoteki"
   ]
+ },
+ "machine-kolberg-film": {
+  "name": "Kolberg (film)",
+  "kind": "Nazi propaganda feature film, 1945",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kolberg_(film)"
  },
  "machine-landing-craft-mechanized": {
   "name": "LCM",
@@ -339,6 +353,13 @@
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/Matilda_II",
   "wikidata": "Q502412"
+ },
+ "machine-mercedes-benz-w125-rekordwagen": {
+  "name": "Mercedes-Benz W125 Rekordwagen",
+  "kind": "streamlined record car",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_W125_Rekordwagen"
  },
  "machine-morning-star-british-newspaper": {
   "name": "Daily Worker",
@@ -440,6 +461,13 @@
   "aka": [
    "Merlin"
   ]
+ },
+ "machine-roosevelt-dime": {
+  "name": "Roosevelt dime",
+  "kind": "U.S. ten cent coin",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Roosevelt_dime"
  },
  "machine-sg-radar": {
   "name": "SG radar",

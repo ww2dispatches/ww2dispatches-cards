@@ -222,6 +222,13 @@
   "source": "https://en.wikipedia.org/wiki/175th_Infantry_Regiment_(United_States)",
   "wikidata": "Q4552967"
  },
+ "unit-19th-route-army": {
+  "name": "19th Route Army",
+  "kind": "Chinese army",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/19th_Route_Army"
+ },
  "unit-1st-armoured-division-united-kingdom": {
   "name": "1st Armoured Division",
   "kind": "British armoured division",
@@ -497,6 +504,13 @@
   ],
   "note": "The Wikipedia title Wereth 11 Massacre redirects here."
  },
+ "unit-34th-infantry-division-united-states": {
+  "name": "34th Infantry Division",
+  "kind": "U.S. Army infantry division (Red Bull)",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/34th_Infantry_Division_(United_States)"
+ },
  "unit-354th-fighter-group": {
   "name": "354th Fighter Group",
   "kind": "fighter group",
@@ -719,6 +733,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/4th_Infantry_Division_(India)"
  },
+ "unit-4th-marine-division": {
+  "name": "4th Marine Division",
+  "kind": "U.S. Marine division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/4th_Marine_Division"
+ },
  "unit-4th-panzer-army": {
   "name": "4th Panzer Group",
   "kind": "German panzer army",
@@ -788,6 +809,13 @@
   "source": "https://en.wikipedia.org/wiki/62nd_Army",
   "wikidata": "Q249395"
  },
+ "unit-6615th-ranger-force": {
+  "name": "6615th Ranger Force",
+  "kind": "U.S. Army Ranger force (provisional)",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/6615th_Ranger_Force"
+ },
  "unit-66th-infantry-division-united-states": {
   "name": "66th Infantry Division",
   "kind": "U.S. Army infantry division",
@@ -836,6 +864,13 @@
   "nation": "Germany",
   "wikidata": "Q246313",
   "source": "https://en.wikipedia.org/wiki/6th_Panzer_Division"
+ },
+ "unit-6th-ranger-battalion": {
+  "name": "6th Ranger Battalion",
+  "kind": "U.S. Army Ranger battalion",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/6th_Ranger_Battalion"
  },
  "unit-73rd-bombardment-wing": {
   "name": "73rd Bombardment Wing",
@@ -1073,6 +1108,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q934022",
   "source": "https://en.wikipedia.org/wiki/Black_Sea_Fleet"
+ },
+ "unit-board-of-trade": {
+  "name": "Board of Trade",
+  "kind": "British government department",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Board_of_Trade"
  },
  "unit-british-battalion-malaya-1941": {
   "name": "British Battalion (Malaya 1941)",
@@ -1587,6 +1629,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Kreisau_Circle"
  },
+ "unit-kriegsmarine": {
+  "name": "Kriegsmarine",
+  "kind": "German navy",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kriegsmarine"
+ },
  "unit-lark-force": {
   "name": "Lark Force",
   "kind": "Australian Army garrison of Rabaul",
@@ -1655,6 +1704,16 @@
   "aka": [
    "Maori Battalion",
    "28th (Māori) Battalion"
+  ]
+ },
+ "unit-march-of-dimes": {
+  "name": "March of Dimes",
+  "kind": "polio fundraising foundation",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/March_of_Dimes",
+  "aka": [
+   "National Foundation for Infantile Paralysis"
   ]
  },
  "unit-mediterranean-fleet": {
@@ -1789,6 +1848,20 @@
   "wikidata": "Q7042857",
   "source": "https://en.wikipedia.org/wiki/No._10_Squadron_RAAF"
  },
+ "unit-no-100-squadron-raf": {
+  "name": "No. 100 Squadron RAF",
+  "kind": "RAF torpedo bomber squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._100_Squadron_RAF"
+ },
+ "unit-no-105-squadron-raf": {
+  "name": "No. 105 Squadron RAF",
+  "kind": "RAF bomber squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._105_Squadron_RAF"
+ },
  "unit-no-12-commando": {
   "name": "No. 12 Commando",
   "kind": "British Army commando unit",
@@ -1816,6 +1889,20 @@
   "nation": "Britain",
   "wikidata": "Q7043453",
   "source": "https://en.wikipedia.org/wiki/No._3_Commando"
+ },
+ "unit-no-36-squadron-raf": {
+  "name": "No. 36 Squadron RAF",
+  "kind": "RAF torpedo bomber squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._36_Squadron_RAF"
+ },
+ "unit-no-461-squadron-raaf": {
+  "name": "No. 461 Squadron RAAF",
+  "kind": "flying boat squadron",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._461_Squadron_RAAF"
  },
  "unit-no-463-squadron-raaf": {
   "name": "No. 463 Squadron RAAF",
@@ -1941,6 +2028,16 @@
    "Vietnam Propaganda Liberation Army"
   ]
  },
+ "unit-permanent-court-of-international-justice": {
+  "name": "Permanent Court of International Justice",
+  "kind": "international court of the League of Nations",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Permanent_Court_of_International_Justice",
+  "aka": [
+   "World Court"
+  ]
+ },
  "unit-philippine-scouts": {
   "name": "Philippine Scouts",
   "kind": "U.S. Army Filipino troops",
@@ -1989,6 +2086,13 @@
   "nation": "United Kingdom",
   "source": "https://en.wikipedia.org/wiki/Queen's_Own_Royal_West_Kent_Regiment",
   "wikidata": "Q7270049"
+ },
+ "unit-quisling-regime": {
+  "name": "Quisling regime",
+  "kind": "collaborationist government of occupied Norway",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Quisling_regime"
  },
  "unit-radio-belgique": {
   "name": "Radio Belgique",
@@ -2338,6 +2442,13 @@
   "aka": [
    "OWI"
   ]
+ },
+ "unit-united-states-pacific-fleet": {
+  "name": "United States Pacific Fleet",
+  "kind": "fleet",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/United_States_Pacific_Fleet"
  },
  "unit-vf-3": {
   "name": "Fighting Squadron 3",

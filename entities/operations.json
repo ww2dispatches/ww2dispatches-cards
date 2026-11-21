@@ -33,6 +33,16 @@
   "source": "https://en.wikipedia.org/wiki/1941_October_Revolution_Parade",
   "wikidata": "Q2893329"
  },
+ "op-1942-qantas-short-empire-shootdown": {
+  "name": "1942 Qantas Short Empire shootdown",
+  "kind": "airliner shootdown",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1942_Qantas_Short_Empire_shootdown",
+  "aka": [
+   "Corio"
+  ]
+ },
  "op-1942-rio-de-janeiro-conference": {
   "name": "1942 Rio de Janeiro Conference",
   "kind": "Third Meeting of the Foreign Ministers of the American Republics",
@@ -81,12 +91,29 @@
   "wikidata": "Q4565560",
   "source": "https://en.wikipedia.org/wiki/1945_Mikawa_earthquake"
  },
+ "op-1946-united-nations-secretary-general-selection": {
+  "name": "1946 United Nations Secretary-General selection",
+  "kind": "UN leadership selection",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1946_United_Nations_Secretary-General_selection"
+ },
  "op-1946-united-states-steel-strike": {
   "name": "1946 United States steel strike",
   "kind": "nationwide strike",
   "nation": "US",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/1946_United_States_steel_strike"
+ },
+ "op-30-january-1939-reichstag-speech": {
+  "name": "30 January 1939 Reichstag speech",
+  "kind": "speech",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/30_January_1939_Reichstag_speech",
+  "aka": [
+   "Hitler's prophecy speech"
+  ]
  },
  "op-aarhus-air-raid": {
   "name": "Aarhus air raid",
@@ -118,6 +145,23 @@
   "nation": "Britain",
   "wikidata": "Q4677231",
   "source": "https://en.wikipedia.org/wiki/Action_of_11_January_1944"
+ },
+ "op-action-of-28-january-1945": {
+  "name": "Action of 28 January 1945",
+  "kind": "naval action",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Action_of_28_January_1945",
+  "aka": [
+   "Operation Halfback"
+  ]
+ },
+ "op-adolf-hitler-s-rise-to-power": {
+  "name": "Adolf Hitler's rise to power",
+  "kind": "political process",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Adolf_Hitler%27s_rise_to_power"
  },
  "op-air-raid-on-bari": {
   "name": "Air raid on Bari",
@@ -374,6 +418,13 @@
   "wikidata": "Q709303",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Changsha_(1941%E2%80%931942)"
  },
+ "op-battle-of-cisterna": {
+  "name": "Battle of Cisterna",
+  "kind": "battle at Anzio",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Cisterna"
+ },
  "op-battle-of-empress-augusta-bay": {
   "name": "Battle of Empress Augusta Bay",
   "kind": "naval battle",
@@ -464,6 +515,13 @@
   "nation": "Britain",
   "wikidata": "Q4871496",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Kuala_Lumpur"
+ },
+ "op-battle-of-kwajalein": {
+  "name": "Battle of Kwajalein",
+  "kind": "amphibious battle",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Kwajalein"
  },
  "op-battle-of-lanzerath-ridge": {
   "name": "Battle of Lanzerath Ridge",
@@ -617,6 +675,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Battle_of_Rapido_River"
  },
+ "op-battle-of-rennell-island": {
+  "name": "Battle of Rennell Island",
+  "kind": "naval air battle",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Rennell_Island"
+ },
  "op-battle-of-rostov-1941": {
   "name": "Battle of Rostov (1941)",
   "kind": "battle",
@@ -674,6 +739,13 @@
   "wikidata": "Q38789",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Stalingrad"
  },
+ "op-battle-of-summa": {
+  "name": "Battle of Summa",
+  "kind": "Winter War battle",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Summa"
+ },
  "op-battle-of-tarakan-1942": {
   "name": "Battle of Tarakan (1942)",
   "kind": "Japanese invasion of a Dutch oil island",
@@ -704,6 +776,13 @@
   "nation": "Spain",
   "wikidata": "Q1467456",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Teruel"
+ },
+ "op-battle-of-the-atlantic": {
+  "name": "Battle of the Atlantic",
+  "kind": "naval campaign",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_the_Atlantic"
  },
  "op-battle-of-the-barents-sea": {
   "name": "Battle of the Barents Sea",
@@ -799,6 +878,20 @@
   "wikidata": "Q1141380",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Wake_Island"
  },
+ "op-battle-of-wau": {
+  "name": "Battle of Wau",
+  "kind": "battle",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Wau"
+ },
+ "op-battle-off-endau": {
+  "name": "Battle off Endau",
+  "kind": "1942 air and naval battle in the Malayan Campaign",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_off_Endau"
+ },
  "op-battle-off-samar": {
   "name": "Battle off Samar",
   "kind": "naval battle",
@@ -849,6 +942,13 @@
   "nation": "Britain",
   "wikidata": "Q4899669",
   "source": "https://en.wikipedia.org/wiki/Bevin_Boys"
+ },
+ "op-blomberg-fritsch-affair": {
+  "name": "Blomberg-Fritsch affair",
+  "kind": "1938 political scandal and army purge",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Blomberg%E2%80%93Fritsch_affair"
  },
  "op-bombing-of-berlin-in-world-war-ii": {
   "name": "Bombing of Berlin in World War II",
@@ -923,12 +1023,26 @@
   "wikidata": "Q13630094",
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Singapore_(1941)"
  },
+ "op-bombing-of-wilhelmshaven-in-world-war-ii": {
+  "name": "Bombing of Wilhelmshaven in World War II",
+  "kind": "air campaign",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Wilhelmshaven_in_World_War_II"
+ },
  "op-bombings-of-heilbronn-in-world-war-ii": {
   "name": "Bombings of Heilbronn in World War II",
   "kind": "Allied air raids on Heilbronn, including 4 December 1944",
   "nation": "Germany",
   "wikidata": "Q1875557",
   "source": "https://en.wikipedia.org/wiki/Bombings_of_Heilbronn_in_World_War_II"
+ },
+ "op-brazzaville-conference": {
+  "name": "Brazzaville Conference",
+  "kind": "Free French conference",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Brazzaville_Conference"
  },
  "op-bristol-blitz": {
   "name": "Bristol Blitz",
@@ -965,6 +1079,13 @@
   "wikidata": "Q7887978",
   "source": "https://en.wikipedia.org/wiki/British_declaration_of_war_on_Japan",
   "note": "Wikipedia's United Kingdom declaration of war on Japan redirects here."
+ },
+ "op-bsaa-star-tiger-disappearance": {
+  "name": "BSAA Star Tiger disappearance",
+  "kind": "airliner disappearance",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/BSAA_Star_Tiger_disappearance"
  },
  "op-burma-campaign-1944-1945": {
   "name": "Burma campaign (1944 to 1945)",
@@ -1090,6 +1211,13 @@
   "nation": "United States",
   "source": "https://en.wikipedia.org/wiki/Cocoanut_Grove_fire",
   "wikidata": "Q897768"
+ },
+ "op-colmar-pocket": {
+  "name": "Colmar Pocket",
+  "kind": "1945 battle in Alsace",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Colmar_Pocket"
  },
  "op-constitution-of-italy": {
   "name": "Constitution of Italy",
@@ -1278,12 +1406,29 @@
   "wikidata": "Q5419187",
   "source": "https://en.wikipedia.org/wiki/Ex_parte_Endo"
  },
+ "op-expulsion-of-germans-from-czechoslovakia": {
+  "name": "Expulsion of Germans from Czechoslovakia",
+  "kind": "forced population transfer",
+  "nation": "Czechoslovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Expulsion_of_Germans_from_Czechoslovakia",
+  "aka": [
+   "Odsun"
+  ]
+ },
  "op-extraterritoriality-of-princess-margriet-s-birth": {
   "name": "Extraterritoriality of Princess Margriet's birth",
   "kind": "Canadian wartime legal measure",
   "nation": "Canada",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Extraterritoriality_of_Princess_Margriet%27s_birth"
+ },
+ "op-fall-of-barcelona": {
+  "name": "Fall of Barcelona",
+  "kind": "capture of Barcelona in the Spanish Civil War",
+  "nation": "Spain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fall_of_Barcelona"
  },
  "op-fireside-chats": {
   "name": "Fireside chats",
@@ -1382,6 +1527,13 @@
   "nation": "Germany",
   "source": "https://en.wikipedia.org/wiki/German_invasion_of_Greece",
   "wikidata": "Q2888837"
+ },
+ "op-german-polish-declaration-of-non-aggression": {
+  "name": "German-Polish declaration of non-aggression",
+  "kind": "1934 non-aggression pact",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German%E2%80%93Polish_declaration_of_non-aggression"
  },
  "op-gozen-kaigi": {
   "name": "Gozen Kaigi",
@@ -1510,6 +1662,17 @@
   "nation": "Italy",
   "wikidata": "Q18164126",
   "source": "https://en.wikipedia.org/wiki/Italian_declaration_of_war_on_the_United_States"
+ },
+ "op-january-28-incident": {
+  "name": "January 28 incident",
+  "kind": "battle",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/January_28_incident",
+  "aka": [
+   "Shanghai incident",
+   "First Shanghai Incident"
+  ]
  },
  "op-january-action-in-the-warsaw-ghetto": {
   "name": "January action in the Warsaw Ghetto",
@@ -1740,6 +1903,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Leningrad%E2%80%93Novgorod_offensive"
  },
+ "op-liberation-of-auschwitz-concentration-camp": {
+  "name": "Liberation of Auschwitz concentration camp",
+  "kind": "camp liberation",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Liberation_of_Auschwitz_concentration_camp"
+ },
  "op-liberation-of-paris": {
   "name": "Liberation of Paris",
   "kind": "battle",
@@ -1815,6 +1985,13 @@
    "Baugnez massacre"
   ]
  },
+ "op-malta-conference-1945": {
+  "name": "Malta Conference (1945)",
+  "kind": "Allied conference",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Malta_Conference_(1945)"
+ },
  "op-manchester-blitz": {
   "name": "Manchester Blitz",
   "kind": "German bombing of Manchester",
@@ -1856,6 +2033,13 @@
    "European Recovery Program",
    "ERP"
   ]
+ },
+ "op-marshalls-gilberts-raids": {
+  "name": "Marshalls Gilberts raids",
+  "kind": "carrier raids",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Marshalls%E2%80%93Gilberts_raids"
  },
  "op-mechelen-incident": {
   "name": "Mechelen incident",
@@ -2199,6 +2383,13 @@
    "second police action"
   ]
  },
+ "op-operation-kutschera": {
+  "name": "Operation Kutschera",
+  "kind": "resistance assassination",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Kutschera"
+ },
  "op-operation-lentil-sumatra": {
   "name": "Operation Lentil (Sumatra)",
   "kind": "carrier air strike",
@@ -2313,6 +2504,13 @@
   "source": "https://en.wikipedia.org/wiki/Operation_Uranus",
   "wikidata": "Q155008"
  },
+ "op-operation-weserubung": {
+  "name": "Operation Weserubung",
+  "kind": "German invasion of Denmark and Norway",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Weser%C3%BCbung"
+ },
  "op-operation-winter-storm": {
   "name": "Operation Winter Storm",
   "kind": "German relief attempt toward Stalingrad, December 1942",
@@ -2370,6 +2568,13 @@
   "wikidata": "Q7126934",
   "source": "https://en.wikipedia.org/wiki/Palawan_massacre"
  },
+ "op-panjiayu-massacre": {
+  "name": "Panjiayu Massacre",
+  "kind": "massacre of villagers",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Panjiayu_Massacre"
+ },
  "op-parit-sulong-massacre": {
   "name": "Parit Sulong Massacre",
   "kind": "massacre of prisoners of war",
@@ -2397,6 +2602,13 @@
   "nation": "China",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Pingjin_campaign"
+ },
+ "op-plan-z": {
+  "name": "Plan Z",
+  "kind": "German naval construction programme",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Plan_Z"
  },
  "op-pohl-trial": {
   "name": "Pohl trial",
@@ -2471,6 +2683,16 @@
   "wikidata": "Q4346961",
   "aka": [
    "Hanbury Crater"
+  ]
+ },
+ "op-raid-at-cabanatuan": {
+  "name": "Raid at Cabanatuan",
+  "kind": "prisoner rescue raid",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Raid_at_Cabanatuan",
+  "aka": [
+   "The Great Raid"
   ]
  },
  "op-raid-on-alexandria-1941": {
@@ -2682,6 +2904,13 @@
   "wikidata": "Q7492591",
   "source": "https://en.wikipedia.org/wiki/Sheffield_Blitz"
  },
+ "op-shelling-of-port-gregory": {
+  "name": "Shelling of Port Gregory",
+  "kind": "submarine bombardment",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Shelling_of_Port_Gregory"
+ },
  "op-shinto-directive": {
   "name": "Shinto Directive",
   "kind": "SCAP order ending state Shinto, SCAPIN-448",
@@ -2782,6 +3011,13 @@
   "wikidata": "Q7569100",
   "source": "https://en.wikipedia.org/wiki/Southampton_Blitz"
  },
+ "op-soviet-atomic-bomb-project": {
+  "name": "Soviet atomic bomb project",
+  "kind": "nuclear weapons program",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Soviet_atomic_bomb_project"
+ },
  "op-spanish-civil-war": {
   "name": "Spanish Civil War",
   "kind": "civil war 1936 to 1939",
@@ -2845,6 +3081,16 @@
   "nation": "Japan",
   "source": "https://en.wikipedia.org/wiki/Surrender_of_Japan",
   "wikidata": "Q6540361"
+ },
+ "op-swedish-extradition-of-baltic-soldiers": {
+  "name": "Swedish extradition of Baltic soldiers",
+  "kind": "extradition of internees",
+  "nation": "Sweden",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Swedish_extradition_of_Baltic_soldiers",
+  "aka": [
+   "Baltutlämningen"
+  ]
  },
  "op-tehran-conference": {
   "name": "Tehran Conference",
@@ -2978,6 +3224,17 @@
    "Halsey's Typhoon"
   ]
  },
+ "op-u-s-british-staff-conference-abc-1": {
+  "name": "U.S.-British Staff Conference (ABC-1)",
+  "kind": "secret military staff conference",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/U.S.%E2%80%93British_Staff_Conference_(ABC%E2%80%931)",
+  "aka": [
+   "ABC-1",
+   "American-British Conversations"
+  ]
+ },
  "op-ual-ual-incident": {
   "name": "Ual-Ual Incident",
   "kind": "border clash",
@@ -3074,6 +3331,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q159065",
   "source": "https://en.wikipedia.org/wiki/Vistula%E2%80%93Oder_offensive"
+ },
+ "op-voronezh-kastornoye-offensive": {
+  "name": "Voronezh Kastornoye offensive",
+  "kind": "Soviet offensive",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Voronezh%E2%80%93Kastornoye_offensive"
  },
  "op-wannsee-conference": {
   "name": "Wannsee Conference",
