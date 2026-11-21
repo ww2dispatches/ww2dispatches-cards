@@ -198,6 +198,13 @@
   "wikidata": "Q154494",
   "source": "https://en.wikipedia.org/wiki/Aktion_T4"
  },
+ "op-altmark-incident": {
+  "name": "Altmark incident",
+  "kind": "British boarding of a German tanker in Norwegian waters, February 1940",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Altmark_incident"
+ },
  "op-anglo-american-loan": {
   "name": "Anglo-American loan",
   "kind": "postwar loan agreement",
@@ -956,6 +963,16 @@
   "nation": "Germany",
   "wikidata": "Q653470",
   "source": "https://en.wikipedia.org/wiki/Battle_of_the_Caucasus"
+ },
+ "op-battle-of-the-green-islands": {
+  "name": "Battle of the Green Islands",
+  "kind": "Allied landing, February 1944",
+  "nation": "New Zealand",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_the_Green_Islands",
+  "aka": [
+   "Operation Squarepeg"
+  ]
  },
  "op-battle-of-the-heligoland-bight-1939": {
   "name": "Battle of the Heligoland Bight (1939)",

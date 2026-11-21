@@ -650,6 +650,13 @@
   "source": "https://en.wikipedia.org/wiki/3rd_Canadian_Division",
   "wikidata": "Q2816553"
  },
+ "unit-3rd-division-new-zealand": {
+  "name": "3rd Division (New Zealand)",
+  "kind": "New Zealand infantry division in the Pacific",
+  "nation": "New Zealand",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/3rd_Division_(New_Zealand)"
+ },
  "unit-3rd-infantry-division-united-states": {
   "name": "3rd Infantry Division",
   "kind": "Army infantry division",
@@ -1916,6 +1923,16 @@
   "nation": "Germany",
   "wikidata": "Q2564009",
   "source": "https://en.wikipedia.org/wiki/Luftwaffe"
+ },
+ "unit-luftwaffenhelfer": {
+  "name": "Luftwaffenhelfer",
+  "kind": "schoolboy auxiliaries of the Luftwaffe flak arm",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Luftwaffenhelfer",
+  "aka": [
+   "Flakhelfer"
+  ]
  },
  "unit-lxxxi-army-corps": {
   "name": "LXXXI Corps",

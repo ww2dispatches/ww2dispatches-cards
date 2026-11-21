@@ -224,6 +224,18 @@
    "Dakota"
   ]
  },
+ "aircraft-douglas-dc-6": {
+  "name": "Douglas DC-6",
+  "kind": "four engine piston transport, prototype XC-112A",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Douglas_DC-6",
+  "aka": [
+   "XC-112A",
+   "C-118 Liftmaster",
+   "R6D"
+  ]
+ },
  "aircraft-douglas-sbd-dauntless": {
   "name": "Douglas SBD Dauntless",
   "kind": "U.S. Navy dive bomber",

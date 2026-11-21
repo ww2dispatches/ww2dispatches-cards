@@ -259,6 +259,15 @@
    "Bayda"
   ]
  },
+ "place-bayfront-park": {
+  "name": "Bayfront Park",
+  "kind": "park in Miami",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bayfront_Park",
+  "lat": null,
+  "lon": null
+ },
  "place-beaver-creek-yukon": {
   "name": "Beaver Creek",
   "kind": "settlement",
@@ -1323,6 +1332,19 @@
   "lat": null,
   "lon": null
  },
+ "place-former-ford-factory": {
+  "name": "Former Ford Factory",
+  "kind": "Ford plant at Bukit Timah, Singapore, site of the 1942 surrender",
+  "nation": "Singapore",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Former_Ford_Factory",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Ford Motor Factory",
+   "Old Ford Factory"
+  ]
+ },
  "place-fort-belvedere": {
   "name": "Fort Belvedere",
   "kind": "country house in Windsor Great Park",
@@ -1527,6 +1549,18 @@
   "wikidata": "Q130958",
   "lat": 29.9753,
   "lon": 31.1377
+ },
+ "place-green-islands-papua-new-guinea": {
+  "name": "Green Islands",
+  "kind": "atoll at the north end of the Solomons chain",
+  "nation": "Papua New Guinea",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Green_Islands_(Papua_New_Guinea)",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Nissan"
+  ]
  },
  "place-green-river-ordnance-plant": {
   "name": "Green River Ordnance Plant",
