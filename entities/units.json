@@ -637,6 +637,13 @@
   ],
   "note": "The Wikipedia title Wereth 11 Massacre redirects here."
  },
+ "unit-33rd-division-imperial-japanese-army": {
+  "name": "33rd Division (Imperial Japanese Army)",
+  "kind": "Japanese infantry division",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/33rd_Division_(Imperial_Japanese_Army)"
+ },
  "unit-34th-infantry-division-united-states": {
   "name": "34th Infantry Division",
   "kind": "U.S. Army infantry division (Red Bull)",
@@ -2881,6 +2888,13 @@
   "nation": "US",
   "wikidata": "Q246612",
   "source": "https://en.wikipedia.org/wiki/Sixth_Army_(United_States)"
+ },
+ "unit-south-seas-detachment": {
+  "name": "South Seas Detachment",
+  "kind": "Imperial Japanese Army detachment",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/South_Seas_Detachment"
  },
  "unit-southwestern-front-soviet-union": {
   "name": "Southwestern Front",

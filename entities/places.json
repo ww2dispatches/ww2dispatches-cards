@@ -797,6 +797,18 @@
   "lat": null,
   "lon": null
  },
+ "place-cafe-de-paris-london": {
+  "name": "Cafe de Paris, London",
+  "kind": "nightclub, Coventry Street, London",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Caf%C3%A9_de_Paris,_London",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Café de Paris"
+  ]
+ },
  "place-cairns": {
   "name": "Cairns",
   "kind": "city in north Queensland",
@@ -1762,6 +1774,15 @@
   "source": "https://en.wikipedia.org/wiki/Grand_Harbour",
   "lat": 35.8922,
   "lon": 14.5128
+ },
+ "place-granville-manche": {
+  "name": "Granville, Manche",
+  "kind": "port town, Normandy",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Granville,_Manche",
+  "lat": null,
+  "lon": null
  },
  "place-great-bitter-lake": {
   "name": "Great Bitter Lake",
@@ -2789,6 +2810,15 @@
   "source": "https://en.wikipedia.org/wiki/La_Pallice",
   "lat": 46.1583,
   "lon": -1.2278
+ },
+ "place-lae": {
+  "name": "Lae",
+  "kind": "town on the Huon Gulf, New Guinea",
+  "nation": "Papua New Guinea",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Lae",
+  "lat": null,
+  "lon": null
  },
  "place-lake-balaton": {
   "name": "Lake Balaton",

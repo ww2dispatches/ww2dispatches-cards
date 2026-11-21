@@ -718,6 +718,13 @@
    "Operation Wintergewitter"
   ]
  },
+ "op-battle-of-guadalajara": {
+  "name": "Battle of Guadalajara",
+  "kind": "Spanish Civil War battle",
+  "nation": "Spain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Guadalajara"
+ },
  "op-battle-of-guam-1941": {
   "name": "Battle of Guam (1941)",
   "kind": "Japanese invasion of Guam",
@@ -755,6 +762,13 @@
   "nation": "Britain",
   "wikidata": "Q697059",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Hong_Kong"
+ },
+ "op-battle-of-imphal": {
+  "name": "Battle of Imphal",
+  "kind": "battle in northeast India, 1944",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Imphal"
  },
  "op-battle-of-ist": {
   "name": "Battle of Ist",
@@ -1151,6 +1165,13 @@
   "nation": "Japan",
   "wikidata": "Q4872395",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Slim_River"
+ },
+ "op-battle-of-sokolovo": {
+  "name": "Battle of Sokolovo",
+  "kind": "Eastern Front battle",
+  "nation": "Czechoslovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Sokolovo"
  },
  "op-battle-of-st-vith": {
   "name": "Battle of St. Vith",
@@ -1641,6 +1662,17 @@
   "wikidata": "Q1875557",
   "source": "https://en.wikipedia.org/wiki/Bombings_of_Heilbronn_in_World_War_II"
  },
+ "op-bougainville-counterattack": {
+  "name": "Bougainville counterattack",
+  "kind": "Japanese counteroffensive, 1944",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bougainville_counterattack",
+  "aka": [
+   "Second Battle of Torokina",
+   "Battle of Hill 700"
+  ]
+ },
  "op-brazzaville-conference": {
   "name": "Brazzaville Conference",
   "kind": "Free French conference",
@@ -2092,6 +2124,16 @@
   "wikidata": "Q636087",
   "source": "https://en.wikipedia.org/wiki/East_Prussian_offensive"
  },
+ "op-elysee-accords": {
+  "name": "Elysee Accords",
+  "kind": "Franco Vietnamese agreement",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/%C3%89lys%C3%A9e_Accords",
+  "aka": [
+   "Élysée Accords"
+  ]
+ },
  "op-emergency-shipbuilding-program": {
   "name": "Emergency Shipbuilding Program",
   "kind": "shipbuilding program",
@@ -2342,6 +2384,13 @@
    "Imperial Conference"
   ]
  },
+ "op-granville-raid": {
+  "name": "Granville raid",
+  "kind": "German raid from the Channel Islands",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Granville_raid"
+ },
  "op-greco-italian-war": {
   "name": "Greco Italian War",
   "kind": "war",
@@ -2487,6 +2536,13 @@
   "wikidata": "Q702729",
   "source": "https://en.wikipedia.org/wiki/Invasion_of_Lingayen_Gulf",
   "note": "Not the Japanese landing of December 1941 (op-japanese-invasion-of-lingayen-gulf)."
+ },
+ "op-invasion-of-salamaua-lae": {
+  "name": "Invasion of Salamaua and Lae",
+  "kind": "Japanese landing operation",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Invasion_of_Salamaua%E2%80%93Lae"
  },
  "op-iran-crisis-of-1946": {
   "name": "Iran crisis of 1946",
@@ -2738,6 +2794,13 @@
   "aka": [
    "NMT Case 10"
   ]
+ },
+ "op-laconia-incident": {
+  "name": "Laconia incident",
+  "kind": "sinking and rescue attempt, 1942",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Laconia_incident"
  },
  "op-landing-at-amchitka": {
   "name": "Landing at Amchitka",
@@ -3604,6 +3667,13 @@
    "Baby Blitz"
   ]
  },
+ "op-operation-sunrise-world-war-ii": {
+  "name": "Operation Sunrise (World War II)",
+  "kind": "secret surrender talks for Italy",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Sunrise_(World_War_II)"
+ },
  "op-operation-thursday": {
   "name": "Operation Thursday",
   "kind": "second Chindit expedition, airborne into Burma, 1944",
@@ -3620,6 +3690,13 @@
   "aka": [
    "Allied landings in North Africa"
   ]
+ },
+ "op-operation-u-go": {
+  "name": "Operation U-Go",
+  "kind": "Japanese offensive into India",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_U-Go"
  },
  "op-operation-uranus": {
   "name": "Operation Uranus",
