@@ -2,7 +2,7 @@ On the morning of 26 November 1941, the most powerful carrier force in the world
 
 This is the first of three parts on the road to Pearl Harbor. Our daily posts followed it one morning at a time, as the people living it saw it. Here we can do what they could not: lay the days side by side and see what was coming.
 
-![Japan's forces as they stood on the eve of war, drawn after the war from Japanese records. The great arrows in the west are the invasion forces bound for Malaya, Thailand and the Philippines, the moves Washington was watching. The single arrow in the empty ocean at upper right is the carrier strike force, curving down on Hawaii. Plate No. 12, Reports of General MacArthur, Vol. II, Part I (U.S. Army, 1966), public domain.](photos/campaign/ch-genmac-plate12-dispositions.jpg)
+![Japanese dispositions on the eve of war, the central Pacific, drawn after the war from Japanese records. The carrier task force comes down out of the empty north onto Oahu, where a ring of submarines, the advance force, waits off the coast. Detail of Plate No. 12, Reports of General MacArthur, Vol. II, Part I (U.S. Army, 1966), public domain.](photos/campaign/ch-genmac-plate12-pacific.jpg)
 
 ## The Sortie
 
@@ -44,7 +44,9 @@ The message went on to say where that move was expected: the Philippines, the Kr
 
 Admiral Husband Kimmel read it in that light. The danger, as Washington described it, lay thousands of miles to the west. The Army's warning to Lieutenant General Walter Short the same day said hostile action was possible at any moment, but also told him not to alarm the civilian population or disclose his intent. Short put his command on alert against sabotage and parked his aircraft close together, where they were easy to guard.
 
-Both men later defended that reading under oath. Stark told Congress he had named the places where the best intelligence said the blow would fall, and that while an attack on Hawaii was thought possible, everything pointed to the Philippines, Guam and the Kra Peninsula. Kimmel testified that no reasonable officer in his place would have read the warning as a sign of an air attack on Pearl Harbor. The opening map of this chapter shows why both could believe it: the great Japanese arrows did point south and west, exactly where the warning said. Only one arrow pointed east.
+Both men later defended that reading under oath. Stark told Congress he had named the places where the best intelligence said the blow would fall, and that while an attack on Hawaii was thought possible, everything pointed to the Philippines, Guam and the Kra Peninsula. Kimmel testified that no reasonable officer in his place would have read the warning as a sign of an air attack on Pearl Harbor. The same Army map shows why both could believe it. In the west, Japan's invasion forces really were gathering against Malaya, Thailand and the Philippines, exactly where the warning said. The arrow that mattered most was the one no one in Washington had drawn.
+
+![The same map, western half: the invasion forces poised against Malaya, Thailand, the Philippines and Borneo, the moves the war warning named. Detail of Plate No. 12, Reports of General MacArthur, Vol. II, Part I (U.S. Army, 1966), public domain.](photos/campaign/ch-genmac-plate12-asia.jpg)
 
 By then the strike force was two days out from the Kurils, on a course no American ship or patrol plane would cross.
 
