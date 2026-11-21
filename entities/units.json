@@ -232,6 +232,13 @@
   "source": "https://en.wikipedia.org/wiki/175th_Infantry_Regiment_(United_States)",
   "wikidata": "Q4552967"
  },
+ "unit-179th-infantry-regiment-united-states": {
+  "name": "179th Infantry Regiment",
+  "kind": "U.S. Army infantry regiment, 45th Division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/179th_Infantry_Regiment_(United_States)"
+ },
  "unit-19th-route-army": {
   "name": "19th Route Army",
   "kind": "Chinese army",
@@ -732,6 +739,16 @@
   "nation": "Soviet Union",
   "wikidata": "Q4031418",
   "source": "https://en.wikipedia.org/wiki/44th_Rifle_Division"
+ },
+ "unit-45th-infantry-division-united-states": {
+  "name": "45th Infantry Division",
+  "kind": "U.S. Army infantry division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/45th_Infantry_Division_(United_States)",
+  "aka": [
+   "Thunderbirds"
+  ]
  },
  "unit-46th-infantry-division-wehrmacht": {
   "name": "46th Infantry Division",

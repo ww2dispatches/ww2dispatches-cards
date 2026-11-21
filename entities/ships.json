@@ -176,6 +176,18 @@
   "wikidata": "Q698468",
   "source": "https://en.wikipedia.org/wiki/German_cruiser_Leipzig"
  },
+ "ship-german-cruiser-lutzow-1939": {
+  "name": "Lutzow (1939)",
+  "kind": "unfinished Admiral Hipper class heavy cruiser, sold to the Soviet Union",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_cruiser_L%C3%BCtzow_(1939)",
+  "aka": [
+   "Lützow",
+   "Petropavlovsk",
+   "Tallinn"
+  ]
+ },
  "ship-german-cruiser-nurnberg": {
   "name": "German cruiser Nürnberg",
   "kind": "light cruiser",
@@ -186,6 +198,13 @@
    "Nurnberg",
    "Nuremberg"
   ]
+ },
+ "ship-german-cruiser-prinz-eugen": {
+  "name": "Prinz Eugen",
+  "kind": "Admiral Hipper class heavy cruiser",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_cruiser_Prinz_Eugen"
  },
  "ship-german-destroyer-z27": {
   "name": "German destroyer Z27",
@@ -662,6 +681,16 @@
   "nation": "Germany",
   "wikidata": "Q2654524",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-862"
+ },
+ "ship-german-submarine-u-869": {
+  "name": "U-869",
+  "kind": "Type IXC/40 U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-869",
+  "aka": [
+   "U-Who"
+  ]
  },
  "ship-german-submarine-u-877": {
   "name": "German submarine U-877",
@@ -1832,6 +1861,13 @@
   "wikidata": "Q2594474",
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Ushio_(1930)"
  },
+ "ship-japanese-destroyer-yamakaze-1936": {
+  "name": "Yamakaze (1936)",
+  "kind": "Shiratsuyu class destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Yamakaze_(1936)"
+ },
  "ship-japanese-destroyer-yukikaze-1939": {
   "name": "Yukikaze",
   "kind": "destroyer",
@@ -1991,6 +2027,13 @@
   "nation": "Japan",
   "wikidata": "Q6159079",
   "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-9"
+ },
+ "ship-japanese-submarine-ro-112": {
+  "name": "Ro-112",
+  "kind": "Ro-100 class submarine",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_submarine_Ro-112"
  },
  "ship-ms-africa-shell": {
   "name": "MS Africa Shell",
@@ -2459,6 +2502,13 @@
   "wikidata": "Q3544148",
   "source": "https://en.wikipedia.org/wiki/USS_Barbel_(SS-316)"
  },
+ "ship-uss-batfish-ss-310": {
+  "name": "USS Batfish (SS-310)",
+  "kind": "Balao class submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Batfish_(SS-310)"
+ },
  "ship-uss-benham-dd-397": {
   "name": "USS Benham (DD-397)",
   "kind": "destroyer",
@@ -2682,6 +2732,13 @@
   "wikidata": "Q1890816",
   "source": "https://en.wikipedia.org/wiki/USS_Houston_(CA-30)"
  },
+ "ship-uss-howard-d-crow": {
+  "name": "USS Howard D. Crow (DE-252)",
+  "kind": "destroyer escort",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Howard_D._Crow"
+ },
  "ship-uss-hull-dd-350": {
   "name": "USS Hull (DD-350)",
   "kind": "U.S. Navy destroyer",
@@ -2737,6 +2794,13 @@
   "nation": "US",
   "wikidata": "Q7870820",
   "source": "https://en.wikipedia.org/wiki/USS_Kitkun_Bay"
+ },
+ "ship-uss-koiner": {
+  "name": "USS Koiner (DE-331)",
+  "kind": "destroyer escort",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Koiner"
  },
  "ship-uss-lexington-cv-16": {
   "name": "USS Lexington (CV-16)",
@@ -3065,6 +3129,13 @@
   "nation": "United States",
   "source": "https://en.wikipedia.org/wiki/USS_Sealion_(SS-315)",
   "wikidata": "Q3544196"
+ },
+ "ship-uss-shark-ss-174": {
+  "name": "USS Shark (SS-174)",
+  "kind": "Porpoise class submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Shark_(SS-174)"
  },
  "ship-uss-skipjack-ss-184": {
   "name": "USS Skipjack (SS-184)",

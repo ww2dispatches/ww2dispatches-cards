@@ -104,6 +104,18 @@
   "lat": 41.4472,
   "lon": 12.6283
  },
+ "place-aprilia": {
+  "name": "Aprilia",
+  "kind": "Italian model town on the Albano road, the Factory of the Anzio battles",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Aprilia",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "The Factory"
+  ]
+ },
  "place-arc-de-triomphe": {
   "name": "Arc de Triomphe",
   "kind": "monument",
@@ -1090,6 +1102,15 @@
   "wikidata": "Q1229",
   "lat": 47.0864,
   "lon": 39.2386
+ },
+ "place-drancy-internment-camp": {
+  "name": "Drancy internment camp",
+  "kind": "transit camp near Paris",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Drancy_internment_camp",
+  "lat": null,
+  "lon": null
  },
  "place-dresden": {
   "name": "Dresden",
@@ -2783,6 +2804,18 @@
   "lat": 45.4882,
   "lon": 9.2082
  },
+ "place-merkers-kieselbach": {
+  "name": "Merkers-Kieselbach",
+  "kind": "Thuringian municipality, site of the Kaiseroda potash mine at Merkers",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Merkers-Kieselbach",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Merkers"
+  ]
+ },
  "place-methodist-central-hall-westminster": {
   "name": "Methodist Central Hall, Westminster",
   "kind": "church and meeting hall",
@@ -3943,6 +3976,15 @@
   "lat": 43.7464,
   "lon": 7.1433
  },
+ "place-saint-louis-university": {
+  "name": "Saint Louis University",
+  "kind": "Jesuit university in St. Louis, Missouri",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Saint_Louis_University",
+  "lat": null,
+  "lon": null
+ },
  "place-saint-nazaire": {
   "name": "Saint-Nazaire",
   "kind": "port and U-boat base",
@@ -4493,7 +4535,7 @@
  "place-taiwan-strait": {
   "name": "Taiwan Strait (Formosa Strait)",
   "kind": "strait",
-  "nation": null,
+  "nation": "China",
   "source": "https://en.wikipedia.org/wiki/Taiwan_Strait",
   "wikidata": "Q127031",
   "aka": [
@@ -5016,6 +5058,15 @@
   "wikidata": "Q496381",
   "lat": 42.4924,
   "lon": -92.3462
+ },
+ "place-waterlooplein": {
+  "name": "Waterlooplein",
+  "kind": "square in Amsterdam's old Jewish quarter",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Waterlooplein",
+  "lat": null,
+  "lon": null
  },
  "place-wau-papua-new-guinea": {
   "name": "Wau",

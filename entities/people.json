@@ -806,6 +806,14 @@
   "source": "https://en.wikipedia.org/wiki/Claude_Auchinleck",
   "wikidata": "Q312685"
  },
+ "person-claude-heithaus": {
+  "name": "Claude Heithaus",
+  "kind": "Jesuit priest and archaeology professor at Saint Louis University",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://www.slu.edu/news/2020/february/slu-legends-lore-heithaus-homily.php",
+  "note": "No English Wikipedia article found (Claude_Heithaus and Claude_H._Heithaus return nothing on Wikidata); source is the SLU history page. The id follows the name."
+ },
  "person-claude-r-wickard": {
   "name": "Claude R. Wickard",
   "kind": "U.S. Secretary of Agriculture and wartime food administrator",
@@ -2382,6 +2390,13 @@
   "aka": [
    "Helmuth James Graf von Moltke"
   ]
+ },
+ "person-hendrik-koot": {
+  "name": "Hendrik Koot",
+  "kind": "Dutch Nazi WA man, fatally injured at Waterlooplein",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hendrik_Koot"
  },
  "person-hendrik-seyffardt": {
   "name": "Hendrik Seyffardt",
@@ -4288,6 +4303,13 @@
   "nation": "Germany",
   "wikidata": "Q213615",
   "source": "https://en.wikipedia.org/wiki/Otto_Abetz"
+ },
+ "person-otto-ciliax": {
+  "name": "Otto Ciliax",
+  "kind": "Kriegsmarine vice admiral, commander of the Channel Dash",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Otto_Ciliax"
  },
  "person-otto-hahn": {
   "name": "Otto Hahn",

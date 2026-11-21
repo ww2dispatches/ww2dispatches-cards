@@ -403,6 +403,13 @@
   "source": "https://en.wikipedia.org/wiki/Battle_of_Britain",
   "wikidata": "Q154720"
  },
+ "op-battle-of-bukit-timah": {
+  "name": "Battle of Bukit Timah",
+  "kind": "battle on Singapore island, February 1942",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Bukit_Timah"
+ },
  "op-battle-of-buna-gona": {
   "name": "Battle of Buna Gona",
   "kind": "battle",
@@ -1246,6 +1253,17 @@
   "wikidata": "Q166495",
   "source": "https://en.wikipedia.org/wiki/Catalonia_Offensive"
  },
+ "op-channel-dash": {
+  "name": "Channel Dash",
+  "kind": "German naval breakout from Brest, February 1942",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Channel_Dash",
+  "aka": [
+   "Operation Cerberus",
+   "Unternehmen Zerberus"
+  ]
+ },
  "op-charter-of-the-united-nations": {
   "name": "United Nations Charter",
   "kind": "treaty",
@@ -1537,6 +1555,13 @@
    "Battle of Singapore"
   ]
  },
+ "op-february-strike": {
+  "name": "February strike",
+  "kind": "Amsterdam general strike against the persecution of Jews, 1941",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/February_strike"
+ },
  "op-fireside-chats": {
   "name": "Fireside chats",
   "kind": "Roosevelt's radio addresses",
@@ -1648,6 +1673,13 @@
   "nation": "Germany",
   "wikidata": "Q126413",
   "source": "https://en.wikipedia.org/wiki/German%E2%80%93Polish_declaration_of_non-aggression"
+ },
+ "op-german-soviet-commercial-agreement-1940": {
+  "name": "German-Soviet Commercial Agreement (1940)",
+  "kind": "trade agreement",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German%E2%80%93Soviet_Commercial_Agreement_(1940)"
  },
  "op-gilbert-and-marshall-islands-campaign": {
   "name": "Gilbert and Marshall Islands campaign",
