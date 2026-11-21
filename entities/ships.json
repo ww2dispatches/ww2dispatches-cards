@@ -640,6 +640,13 @@
    "U-593"
   ]
  },
+ "ship-german-submarine-u-620": {
+  "name": "German submarine U-620",
+  "kind": "Kriegsmarine Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-620"
+ },
  "ship-german-submarine-u-629": {
   "name": "German submarine U-629",
   "kind": "Type VIIC U-boat",
@@ -791,6 +798,13 @@
   "nation": "Australia",
   "wikidata": "Q1031971",
   "source": "https://en.wikipedia.org/wiki/HMAS_Australia_(D84)"
+ },
+ "ship-hmas-ballarat-j184": {
+  "name": "HMAS Ballarat (J184)",
+  "kind": "Royal Australian Navy corvette",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMAS_Ballarat_(J184)"
  },
  "ship-hmas-deloraine": {
   "name": "HMAS Deloraine",
@@ -1417,6 +1431,13 @@
   "source": "https://en.wikipedia.org/wiki/HMS_Tartar_(F43)",
   "wikidata": "Q1354348"
  },
+ "ship-hms-tempest-n86": {
+  "name": "HMS Tempest (N86)",
+  "kind": "Royal Navy T class submarine",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Tempest_(N86)"
+ },
  "ship-hms-thane": {
   "name": "HMS Thane (D83)",
   "kind": "Royal Navy Ameer class escort carrier",
@@ -1665,6 +1686,23 @@
   "nation": "Japan",
   "source": "https://en.wikipedia.org/wiki/Japanese_battleship_Hiei",
   "wikidata": "Q597796"
+ },
+ "ship-japanese-battleship-hyuga": {
+  "name": "Japanese battleship Hyuga",
+  "kind": "Imperial Japanese Navy battleship, hybrid carrier conversion",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_battleship_Hy%C5%ABga",
+  "aka": [
+   "Hyuga"
+  ]
+ },
+ "ship-japanese-battleship-ise": {
+  "name": "Japanese battleship Ise",
+  "kind": "Imperial Japanese Navy battleship, hybrid carrier conversion",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_battleship_Ise"
  },
  "ship-japanese-battleship-kirishima": {
   "name": "Kirishima",
@@ -2418,12 +2456,26 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/SS_General_von_Steuben"
  },
+ "ship-ss-henry": {
+  "name": "SS Henry",
+  "kind": "Norwegian cargo steamer",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Henry"
+ },
  "ship-ss-india-arrow": {
   "name": "SS India Arrow",
   "kind": "American oil tanker",
   "nation": "US",
   "wikidata": "Q65067211",
   "source": "https://en.wikipedia.org/wiki/SS_India_Arrow"
+ },
+ "ship-ss-irma-1905": {
+  "name": "SS Irma (1905)",
+  "kind": "Norwegian coastal express passenger ship",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Irma_(1905)"
  },
  "ship-ss-john-harvey": {
   "name": "SS John Harvey",
@@ -2674,6 +2726,13 @@
   "nation": "US",
   "wikidata": "Q3544048",
   "source": "https://en.wikipedia.org/wiki/USS_Blackfin"
+ },
+ "ship-uss-blower": {
+  "name": "USS Blower (SS-325)",
+  "kind": "U.S. Navy submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Blower"
  },
  "ship-uss-brevard": {
   "name": "USS Brevard (AK-164)",

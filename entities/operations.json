@@ -1109,6 +1109,13 @@
   "wikidata": "Q109595110",
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Calcutta"
  },
+ "op-bombing-of-dresden": {
+  "name": "Bombing of Dresden",
+  "kind": "Allied air raids on Dresden, 13 to 15 February 1945",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Dresden"
+ },
  "op-bombing-of-dublin-in-world-war-ii": {
   "name": "Bombing of Dublin in World War II",
   "kind": "bombing of a neutral country",
@@ -2668,6 +2675,13 @@
   "nation": "Japan",
   "wikidata": "Q2314453",
   "source": "https://en.wikipedia.org/wiki/Operation_Ke"
+ },
+ "op-operation-kita": {
+  "name": "Operation Kita",
+  "kind": "Japanese naval supply run from Singapore to Japan, February 1945",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Kita"
  },
  "op-operation-koltso": {
   "name": "Operation Koltso",

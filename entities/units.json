@@ -1080,6 +1080,16 @@
   "source": "https://en.wikipedia.org/wiki/9th_Marine_Regiment",
   "wikidata": "Q4646609"
  },
+ "unit-action-francaise": {
+  "name": "Action Francaise",
+  "kind": "French royalist far right movement",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Action_Fran%C3%A7aise",
+  "aka": [
+   "Action Française"
+  ]
+ },
  "unit-afrika-korps": {
   "name": "Afrika Korps",
   "kind": "German corps",
@@ -1305,6 +1315,13 @@
   "nation": "United Kingdom",
   "source": "https://en.wikipedia.org/wiki/Buffs_(Royal_East_Kent_Regiment)",
   "wikidata": "Q2899477"
+ },
+ "unit-camelots-du-roi": {
+  "name": "Camelots du Roi",
+  "kind": "French royalist youth militants of Action Francaise",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Camelots_du_Roi"
  },
  "unit-central-china-area-army": {
   "name": "Central China Area Army",
@@ -2112,6 +2129,13 @@
   "wikidata": "Q7042978",
   "source": "https://en.wikipedia.org/wiki/No._149_Squadron_RAF"
  },
+ "unit-no-202-squadron-raf": {
+  "name": "No. 202 Squadron RAF",
+  "kind": "RAF Coastal Command flying boat squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._202_Squadron_RAF"
+ },
  "unit-no-220-squadron-raf": {
   "name": "No. 220 Squadron RAF",
   "kind": "RAF Coastal Command squadron",
@@ -2446,6 +2470,16 @@
   "source": "https://en.wikipedia.org/wiki/Royal_Irish_Fusiliers",
   "wikidata": "Q7374346"
  },
+ "unit-royal-malay-regiment": {
+  "name": "Royal Malay Regiment",
+  "kind": "Malay infantry regiment, the Malay Regiment in 1942",
+  "nation": "Malaya",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Royal_Malay_Regiment",
+  "aka": [
+   "Malay Regiment"
+  ]
+ },
  "unit-s-1-executive-committee": {
   "name": "S-1 Executive Committee",
   "kind": "OSRD uranium committee",
@@ -2739,6 +2773,13 @@
   "source": "https://en.wikipedia.org/wiki/United_States_Department_of_War",
   "wikidata": "Q1143596"
  },
+ "unit-united-states-marine-corps-women-s-reserve": {
+  "name": "United States Marine Corps Women's Reserve",
+  "kind": "women's reserve of the U.S. Marine Corps",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/United_States_Marine_Corps_Women%27s_Reserve"
+ },
  "unit-united-states-navy-reserve": {
   "name": "United States Navy Reserve",
   "kind": "naval reserve force",
@@ -2810,6 +2851,16 @@
   "aka": [
    "VMF-121",
    "Marine Fighting Squadron 121"
+  ]
+ },
+ "unit-vmfa-124": {
+  "name": "VMFA-124",
+  "kind": "U.S. Marine fighter squadron, VMF-124 in 1943",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/VMFA-124",
+  "aka": [
+   "VMF-124"
   ]
  },
  "unit-vmfa-211": {
