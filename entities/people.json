@@ -232,6 +232,16 @@
   "wikidata": "Q157615",
   "source": "https://en.wikipedia.org/wiki/Andrey_Vlasov"
  },
+ "person-andrey-vyshinsky": {
+  "name": "Andrey Vyshinsky",
+  "kind": "Soviet diplomat and prosecutor",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Andrey_Vyshinsky",
+  "aka": [
+   "Andrei Vyshinsky"
+  ]
+ },
  "person-angelo-iachino": {
   "name": "Angelo Iachino",
   "kind": "admiral",
@@ -3208,6 +3218,16 @@
   "wikidata": "Q57199",
   "source": "https://en.wikipedia.org/wiki/Joachim_Peiper"
  },
+ "person-joachim-ronneberg": {
+  "name": "Joachim Ronneberg",
+  "kind": "Norwegian SOE commando, Gunnerside leader",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Joachim_R%C3%B8nneberg",
+  "aka": [
+   "Joachim Rønneberg"
+  ]
+ },
  "person-joachim-von-ribbentrop": {
   "name": "Joachim von Ribbentrop",
   "kind": "Nazi foreign minister",
@@ -3423,6 +3443,17 @@
   "nation": "US",
   "wikidata": "Q51719827",
   "source": "https://en.wikipedia.org/wiki/John_W._Pehle"
+ },
+ "person-jonas-zemaitis": {
+  "name": "Jonas Zemaitis",
+  "kind": "Lithuanian partisan commander",
+  "nation": "Lithuania",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Jonas_%C5%BDemaitis",
+  "aka": [
+   "Jonas Žemaitis",
+   "Vytautas"
+  ]
  },
  "person-jorma-sarvanto": {
   "name": "Jorma Sarvanto",
@@ -5767,6 +5798,13 @@
   "source": "https://en.wikipedia.org/wiki/Wade_H._Haislip",
   "wikidata": "Q3564980"
  },
+ "person-wallace-carothers": {
+  "name": "Wallace Carothers",
+  "kind": "chemist, inventor of nylon",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Wallace_Carothers"
+ },
  "person-wallace-wade": {
   "name": "Wallace Wade",
   "kind": "Duke football coach",
@@ -5890,6 +5928,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Wendell_Willkie",
   "wikidata": "Q698714"
+ },
+ "person-werner-hartenstein": {
+  "name": "Werner Hartenstein",
+  "kind": "U-boat commander",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Werner_Hartenstein"
  },
  "person-werner-lott": {
   "name": "Werner Lott",

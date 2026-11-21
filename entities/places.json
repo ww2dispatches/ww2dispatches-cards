@@ -146,6 +146,15 @@
   "lat": 44.492,
   "lon": 11.3434
  },
+ "place-aruba": {
+  "name": "Aruba",
+  "kind": "island",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Aruba",
+  "lat": null,
+  "lon": null
+ },
  "place-athens": {
   "name": "Athens",
   "kind": "city",
@@ -1709,6 +1718,15 @@
   "lat": 30.5812,
   "lon": 114.2726
  },
+ "place-hardangervidda": {
+  "name": "Hardangervidda",
+  "kind": "mountain plateau",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hardangervidda",
+  "lat": null,
+  "lon": null
+ },
  "place-hatfield-aerodrome": {
   "name": "Hatfield",
   "kind": "airfield and factory",
@@ -2066,6 +2084,18 @@
   ],
   "lat": 1.4528,
   "lon": 103.7692
+ },
+ "place-jossingfjord": {
+  "name": "Jossingfjord",
+  "kind": "fjord",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/J%C3%B8ssingfjord",
+  "aka": [
+   "Jøssingfjord"
+  ],
+  "lat": null,
+  "lon": null
  },
  "place-julich": {
   "name": "Julich",
@@ -4726,6 +4756,15 @@
   "lat": 8.0,
   "lon": 120.0
  },
+ "place-swansea": {
+  "name": "Swansea",
+  "kind": "city",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Swansea",
+  "lat": null,
+  "lon": null
+ },
  "place-syntagma-square": {
   "name": "Syntagma Square",
   "kind": "central square of Athens",
@@ -5099,6 +5138,15 @@
   "source": "https://en.wikipedia.org/wiki/Velikiye_Luki",
   "lat": 56.35,
   "lon": 30.5167
+ },
+ "place-vemork": {
+  "name": "Vemork",
+  "kind": "hydroelectric and heavy water plant",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Vemork",
+  "lat": null,
+  "lon": null
  },
  "place-venice": {
   "name": "Venice",

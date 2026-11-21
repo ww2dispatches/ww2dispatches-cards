@@ -295,6 +295,16 @@
   "source": "https://en.wikipedia.org/wiki/Atomic_bombings_of_Hiroshima_and_Nagasaki",
   "wikidata": "Q488"
  },
+ "op-attack-on-aruba": {
+  "name": "Attack on Aruba",
+  "kind": "U-boat attack",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Attack_on_Aruba",
+  "aka": [
+   "Operation Neuland"
+  ]
+ },
  "op-attack-on-clark-field": {
   "name": "Attack on Clark Field",
   "kind": "air attack",
@@ -355,6 +365,16 @@
   "source": "https://en.wikipedia.org/wiki/Azad_Hind",
   "aka": [
    "Provisional Government of Free India"
+  ]
+ },
+ "op-bangka-island-massacre": {
+  "name": "Bangka Island massacre",
+  "kind": "massacre",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bangka_Island_massacre",
+  "aka": [
+   "Radji Beach massacre"
   ]
  },
  "op-baruch-plan": {
@@ -500,6 +520,13 @@
   "nation": "worldwide",
   "wikidata": "Q3636398",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Cisterna"
+ },
+ "op-battle-of-corregidor-1945": {
+  "name": "Battle of Corregidor (1945)",
+  "kind": "battle",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Corregidor_(1945)"
  },
  "op-battle-of-empress-augusta-bay": {
   "name": "Battle of Empress Augusta Bay",
@@ -1208,6 +1235,13 @@
   "nation": "Japan",
   "wikidata": "Q13630094",
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Singapore_(1941)"
+ },
+ "op-bombing-of-tokyo": {
+  "name": "Bombing of Tokyo",
+  "kind": "air campaign",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Tokyo"
  },
  "op-bombing-of-wilhelmshaven-in-world-war-ii": {
   "name": "Bombing of Wilhelmshaven in World War II",
@@ -2229,6 +2263,13 @@
    "Skede massacre"
   ]
  },
+ "op-lithuanian-partisans-declaration-of-february-16-1949": {
+  "name": "Lithuanian Partisans Declaration of February 16, 1949",
+  "kind": "declaration",
+  "nation": "Lithuania",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Lithuanian_Partisans_Declaration_of_February_16,_1949"
+ },
  "op-liverpool-blitz": {
   "name": "Liverpool Blitz",
   "kind": "bombing campaign",
@@ -2487,6 +2528,17 @@
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/Northern_Patrol",
   "wikidata": "Q3869112"
+ },
+ "op-norwegian-heavy-water-sabotage": {
+  "name": "Norwegian heavy water sabotage",
+  "kind": "sabotage campaign",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Norwegian_heavy_water_sabotage",
+  "aka": [
+   "Operation Gunnerside",
+   "Operation Grouse"
+  ]
  },
  "op-nuremberg-rallies": {
   "name": "Nuremberg rallies",
@@ -3484,6 +3536,13 @@
   "nation": "Japan",
   "source": "https://en.wikipedia.org/wiki/Surrender_of_Japan",
   "wikidata": "Q6540361"
+ },
+ "op-swansea-blitz": {
+  "name": "Swansea Blitz",
+  "kind": "bombing campaign",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Swansea_Blitz"
  },
  "op-swedish-extradition-of-baltic-soldiers": {
   "name": "Swedish extradition of Baltic soldiers",

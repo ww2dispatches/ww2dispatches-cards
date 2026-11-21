@@ -681,6 +681,18 @@
   "wikidata": "Q617547",
   "source": "https://en.wikipedia.org/wiki/Short_Sunderland"
  },
+ "aircraft-sikorsky-h-5": {
+  "name": "Sikorsky H-5",
+  "kind": "helicopter",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sikorsky_H-5",
+  "aka": [
+   "Sikorsky S-51",
+   "R-5",
+   "HO3S"
+  ]
+ },
  "aircraft-sikorsky-r-4": {
   "name": "Sikorsky R-4",
   "kind": "helicopter",

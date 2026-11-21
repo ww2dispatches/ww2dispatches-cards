@@ -833,6 +833,17 @@
    "4th Panzer Army"
   ]
  },
+ "unit-503rd-infantry-regiment": {
+  "name": "503rd Parachute Infantry Regiment",
+  "kind": "U.S. Army parachute regiment",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/503rd_Infantry_Regiment",
+  "aka": [
+   "503d Parachute Regimental Combat Team",
+   "503rd PRCT"
+  ]
+ },
  "unit-509th-composite-group": {
   "name": "509th Composite Group",
   "kind": "atomic bomb delivery group",
@@ -2724,6 +2735,16 @@
   "source": "https://en.wikipedia.org/wiki/UNICEF",
   "aka": [
    "United Nations International Children's Emergency Fund"
+  ]
+ },
+ "unit-union-of-lithuanian-freedom-fighters": {
+  "name": "Union of Lithuanian Freedom Fighters",
+  "kind": "Lithuanian partisan movement",
+  "nation": "Lithuania",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Union_of_Lithuanian_Freedom_Fighters",
+  "aka": [
+   "LLKS"
   ]
  },
  "unit-unit-731": {

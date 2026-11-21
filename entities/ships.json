@@ -332,6 +332,13 @@
   "wikidata": "Q625197",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-15_(1936)"
  },
+ "ship-german-submarine-u-156-1941": {
+  "name": "U-156",
+  "kind": "Type IXC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-156_(1941)"
+ },
  "ship-german-submarine-u-161-1941": {
   "name": "U-161",
   "kind": "U-boat",
@@ -1003,6 +1010,13 @@
   "aka": [
    "USS Wintle (DE-266)"
   ]
+ },
+ "ship-hms-cossack-f03": {
+  "name": "HMS Cossack (F03)",
+  "kind": "Tribal class destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Cossack_(F03)"
  },
  "ship-hms-diadem-84": {
   "name": "HMS Diadem (84)",
