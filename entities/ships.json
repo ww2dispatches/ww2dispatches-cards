@@ -1,4 +1,12 @@
 {
+ "ship-ariete-class-torpedo-boat": {
+  "name": "Ariete-class torpedo boat",
+  "kind": "torpedo boat class",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ariete-class_torpedo_boat",
+  "note": "Class entity; TA 36 (ex Stella Polare) has no article of her own."
+ },
  "ship-french-battleship-bretagne": {
   "name": "Bretagne",
   "kind": "battleship",
@@ -348,6 +356,13 @@
   "nation": "Germany",
   "wikidata": "Q571272",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-123_(1940)"
+ },
+ "ship-german-submarine-u-124-1940": {
+  "name": "U-124",
+  "kind": "Type IXB U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-124_(1940)"
  },
  "ship-german-submarine-u-127-1941": {
   "name": "German submarine U-127 (1941)",
@@ -713,6 +728,13 @@
   "wikidata": "Q2064178",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-486"
  },
+ "ship-german-submarine-u-5-1935": {
+  "name": "U-5",
+  "kind": "Type IIA U-boat, school boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-5_(1935)"
+ },
  "ship-german-submarine-u-503": {
   "name": "U-503",
   "kind": "Type IXC U-boat",
@@ -727,6 +749,13 @@
   "wikidata": "Q481294",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-522"
  },
+ "ship-german-submarine-u-524": {
+  "name": "U-524",
+  "kind": "German Type IXC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-524"
+ },
  "ship-german-submarine-u-545": {
   "name": "German submarine U-545",
   "kind": "German Type IXC/40 U-boat",
@@ -740,6 +769,13 @@
   "nation": "Germany",
   "wikidata": "Q471544",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-55_(1939)"
+ },
+ "ship-german-submarine-u-551": {
+  "name": "U-551",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-551"
  },
  "ship-german-submarine-u-552": {
   "name": "U-552",
@@ -880,12 +916,26 @@
   "wikidata": "Q12804796",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-649"
  },
+ "ship-german-submarine-u-652": {
+  "name": "U-652",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-652"
+ },
  "ship-german-submarine-u-653": {
   "name": "U-653",
   "kind": "Type VIIC U-boat",
   "nation": "Germany",
   "wikidata": "Q821683",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-653"
+ },
+ "ship-german-submarine-u-655": {
+  "name": "U-655",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-655"
  },
  "ship-german-submarine-u-656": {
   "name": "U-656",
@@ -1038,6 +1088,16 @@
   "nation": "Germany",
   "wikidata": "Q1659257",
   "source": "https://en.wikipedia.org/wiki/German_torpedo_boat_Iltis"
+ },
+ "ship-german-torpedo-boat-ta24": {
+  "name": "German torpedo boat TA24",
+  "kind": "torpedo boat, ex Italian Arturo",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_torpedo_boat_TA24",
+  "aka": [
+   "Arturo"
+  ]
  },
  "ship-hawaii-maru": {
   "name": "Hawaii Maru",
@@ -1473,6 +1533,13 @@
   "wikidata": "Q1470462",
   "source": "https://en.wikipedia.org/wiki/HMS_Hasty_(H24)"
  },
+ "ship-hms-heythrop-l85": {
+  "name": "HMS Heythrop (L85)",
+  "kind": "Hunt class escort destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Heythrop_(L85)"
+ },
  "ship-hms-holcombe": {
   "name": "HMS Holcombe",
   "kind": "Royal Navy Hunt class escort destroyer",
@@ -1595,6 +1662,13 @@
   "wikidata": "Q1122802",
   "source": "https://en.wikipedia.org/wiki/HMS_Liverpool_(C11)"
  },
+ "ship-hms-lookout-g32": {
+  "name": "HMS Lookout (G32)",
+  "kind": "L-class destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Lookout_(G32)"
+ },
  "ship-hms-m2-1918": {
   "name": "HMS M2 (1918)",
   "kind": "Royal Navy M class submarine converted to carry a seaplane",
@@ -1629,6 +1703,13 @@
   "nation": "Britain",
   "wikidata": "Q2627556",
   "source": "https://en.wikipedia.org/wiki/HMS_Mauritius_(80)"
+ },
+ "ship-hms-meteor-g73": {
+  "name": "HMS Meteor (G73)",
+  "kind": "M-class destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Meteor_(G73)"
  },
  "ship-hms-naiad-93": {
   "name": "HMS Naiad (93)",
@@ -1759,6 +1840,13 @@
   "source": "https://en.wikipedia.org/wiki/HMS_Seraph_(P219)",
   "wikidata": "Q749790"
  },
+ "ship-hms-sharpshooter-j68": {
+  "name": "HMS Sharpshooter (J68)",
+  "kind": "Royal Navy minesweeper",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Sharpshooter_(J68)"
+ },
  "ship-hms-sikh-f82": {
   "name": "HMS Sikh (F82)",
   "kind": "destroyer",
@@ -1772,6 +1860,16 @@
   "nation": "Britain",
   "wikidata": "Q659894",
   "source": "https://en.wikipedia.org/wiki/HMS_Southampton_(83)"
+ },
+ "ship-hms-southwold": {
+  "name": "HMS Southwold (L10)",
+  "kind": "Royal Navy Hunt class destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Southwold",
+  "aka": [
+   "HMS Southwold (L10)"
+  ]
  },
  "ship-hms-spartan-95": {
   "name": "HMS Spartan (95)",
@@ -2042,6 +2140,24 @@
   "nation": "Italy",
   "wikidata": "Q3928157",
   "source": "https://en.wikipedia.org/wiki/Italian_auxiliary_cruiser_Ramb_I"
+ },
+ "ship-italian-auxiliary-cruiser-ramb-iii": {
+  "name": "Italian auxiliary cruiser Ramb III",
+  "kind": "auxiliary cruiser, later German minelayer Kiebitz and Yugoslav Galeb",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_auxiliary_cruiser_Ramb_III",
+  "aka": [
+   "Kiebitz",
+   "Galeb"
+  ]
+ },
+ "ship-italian-battleship-littorio": {
+  "name": "Littorio",
+  "kind": "Italian battleship",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_battleship_Littorio"
  },
  "ship-italian-cruiser-alberico-da-barbiano": {
   "name": "Italian cruiser Alberico da Barbiano",
@@ -2764,6 +2880,13 @@
   "wikidata": "Q28691641",
   "source": "https://en.wikipedia.org/wiki/Japanese_submarine_Ro-112"
  },
+ "ship-japanese-torpedo-boat-tomozuru": {
+  "name": "Tomozuru",
+  "kind": "Imperial Japanese Navy Chidori class torpedo boat",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_torpedo_boat_Tomozuru"
+ },
  "ship-ms-africa-shell": {
   "name": "MS Africa Shell",
   "kind": "merchant ship sunk by Graf Spee",
@@ -2923,6 +3046,13 @@
   "wikidata": "Q752939",
   "source": "https://en.wikipedia.org/wiki/RMS_Queen_Mary"
  },
+ "ship-rms-windsor-castle-1921": {
+  "name": "RMS Windsor Castle (1921)",
+  "kind": "ocean liner, troopship",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/RMS_Windsor_Castle_(1921)"
+ },
  "ship-rv-petrel": {
   "name": "RV Petrel",
   "kind": "research ship",
@@ -2964,6 +3094,13 @@
   "aka": [
    "Krasnyi Kavkaz"
   ]
+ },
+ "ship-soviet-submarine-k-3-1938": {
+  "name": "K-3",
+  "kind": "Soviet K class submarine",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Soviet_submarine_K-3_(1938)"
  },
  "ship-soviet-submarine-s-13": {
   "name": "Soviet submarine S-13",
@@ -3231,6 +3368,13 @@
   "nation": "Norway",
   "source": "https://en.wikipedia.org/wiki/SS_Oria",
   "wikidata": "Q7394161"
+ },
+ "ship-ss-papoose": {
+  "name": "SS Papoose",
+  "kind": "steam tanker",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Papoose"
  },
  "ship-ss-peleus": {
   "name": "SS Peleus",
@@ -4115,6 +4259,13 @@
   "nation": "US",
   "wikidata": "Q3268956",
   "source": "https://en.wikipedia.org/wiki/USS_Sand_Lance_(SS-381)"
+ },
+ "ship-uss-santa-fe-cl-60": {
+  "name": "USS Santa Fe (CL-60)",
+  "kind": "light cruiser",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Santa_Fe_(CL-60)"
  },
  "ship-uss-saratoga-cv-3": {
   "name": "USS Saratoga (CV-3)",

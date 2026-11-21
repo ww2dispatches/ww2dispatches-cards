@@ -37,6 +37,13 @@
    "88 mm gun"
   ]
  },
+ "machine-a-child-of-our-time": {
+  "name": "A Child of Our Time",
+  "kind": "oratorio by Michael Tippett",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/A_Child_of_Our_Time"
+ },
  "machine-affiche-rouge": {
   "name": "Affiche Rouge",
   "kind": "German propaganda poster, 1944",
@@ -90,6 +97,13 @@
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/Bombe",
   "wikidata": "Q480476"
+ },
+ "machine-california-zephyr-1949-1970": {
+  "name": "California Zephyr (1949 to 1970)",
+  "kind": "streamlined passenger train, Chicago to Oakland",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/California_Zephyr_(1949%E2%80%931970)"
  },
  "machine-captain-america-comics": {
   "name": "Captain America Comics",
@@ -198,6 +212,16 @@
   "nation": "US",
   "wikidata": "Q1133887",
   "source": "https://en.wikipedia.org/wiki/Der_Fuehrer%27s_Face"
+ },
+ "machine-deutsche-mark": {
+  "name": "Deutsche Mark",
+  "kind": "West German currency from 1948",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Deutsche_Mark",
+  "aka": [
+   "West mark"
+  ]
  },
  "machine-duct-tape": {
   "name": "Duct tape",

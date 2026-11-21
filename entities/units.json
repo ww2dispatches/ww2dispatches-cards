@@ -271,6 +271,16 @@
    "Nineteenth Army"
   ]
  },
+ "unit-19th-infantry-division-india": {
+  "name": "19th Indian Infantry Division",
+  "kind": "British Indian Army division",
+  "nation": "India",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/19th_Infantry_Division_(India)",
+  "aka": [
+   "19th Indian Division"
+  ]
+ },
  "unit-19th-route-army": {
   "name": "19th Route Army",
   "kind": "Chinese army",
@@ -302,12 +312,29 @@
    "1st Canadian Infantry Division"
   ]
  },
+ "unit-1st-canadian-parachute-battalion": {
+  "name": "1st Canadian Parachute Battalion",
+  "kind": "Canadian airborne battalion in the British 6th Airborne Division",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1st_Canadian_Parachute_Battalion"
+ },
  "unit-1st-cavalry-division-united-states": {
   "name": "1st Cavalry Division",
   "kind": "Army cavalry division (dismounted)",
   "nation": "US",
   "wikidata": "Q2338",
   "source": "https://en.wikipedia.org/wiki/1st_Cavalry_Division_(United_States)"
+ },
+ "unit-1st-fallschirm-panzer-division-hermann-goring": {
+  "name": "1st Fallschirm-Panzer Division Hermann Goring",
+  "kind": "Luftwaffe armoured division",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1st_Fallschirm-Panzer_Division_Hermann_G%C3%B6ring",
+  "aka": [
+   "Hermann Goring Division"
+  ]
  },
  "unit-1st-infantry-division-united-states": {
   "name": "1st Infantry Division",
@@ -659,6 +686,16 @@
   "source": "https://en.wikipedia.org/wiki/340th_Flying_Training_Group",
   "note": "The Wikipedia article covers the later 340th Flying Training Group; its first predecessor is the wartime 340th Bombardment Group."
  },
+ "unit-343rd-naval-air-group": {
+  "name": "343rd Naval Air Group",
+  "kind": "Imperial Japanese Navy fighter air group",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/343rd_Naval_Air_Group",
+  "aka": [
+   "343 Kokutai"
+  ]
+ },
  "unit-34th-infantry-division-united-states": {
   "name": "34th Infantry Division",
   "kind": "U.S. Army infantry division (Red Bull)",
@@ -787,6 +824,13 @@
   "aka": [
    "3rd Panzer Army"
   ]
+ },
+ "unit-40th-infantry-division-united-states": {
+  "name": "40th Infantry Division (United States)",
+  "kind": "army division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/40th_Infantry_Division_(United_States)"
  },
  "unit-412-transport-squadron": {
   "name": "No. 412 Squadron RCAF",
@@ -967,6 +1011,20 @@
   "nation": "United States",
   "source": "https://en.wikipedia.org/wiki/509th_Infantry_Regiment",
   "wikidata": "Q4639851"
+ },
+ "unit-50th-northumbrian-infantry-division": {
+  "name": "50th (Northumbrian) Infantry Division",
+  "kind": "British infantry division",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/50th_(Northumbrian)_Infantry_Division"
+ },
+ "unit-51st-highland-division": {
+  "name": "51st (Highland) Division",
+  "kind": "infantry division",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/51st_(Highland)_Division"
  },
  "unit-55th-division-imperial-japanese-army": {
   "name": "55th Division",
@@ -1324,6 +1382,16 @@
    "Anti-Fascist Council for the National Liberation of Yugoslavia"
   ]
  },
+ "unit-arab-league": {
+  "name": "Arab League",
+  "kind": "regional organization of Arab states",
+  "nation": "Egypt",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Arab_League",
+  "aka": [
+   "League of Arab States"
+  ]
+ },
  "unit-argyll-and-sutherland-highlanders": {
   "name": "Argyll and Sutherland Highlanders",
   "kind": "infantry regiment",
@@ -1365,6 +1433,16 @@
   "nation": "Germany",
   "wikidata": "Q266893",
   "source": "https://en.wikipedia.org/wiki/Army_Group_South"
+ },
+ "unit-army-group-vistula": {
+  "name": "Army Group Vistula",
+  "kind": "German army group on the Oder, 1945",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Army_Group_Vistula",
+  "aka": [
+   "Heeresgruppe Weichsel"
+  ]
  },
  "unit-army-ministry": {
   "name": "Army Ministry",
@@ -1673,6 +1751,13 @@
   "source": "https://en.wikipedia.org/wiki/Don_Front",
   "wikidata": "Q1241225"
  },
+ "unit-douglas-aircraft-company": {
+  "name": "Douglas Aircraft Company",
+  "kind": "aircraft manufacturer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Douglas_Aircraft_Company"
+ },
  "unit-duquesne-spy-ring": {
   "name": "Duquesne Spy Ring",
   "kind": "German espionage network in the US",
@@ -1946,6 +2031,13 @@
    "auxiliary police"
   ]
  },
+ "unit-himeyuri-students": {
+  "name": "Himeyuri students",
+  "kind": "student nurse corps",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Himeyuri_students"
+ },
  "unit-hitler-youth": {
   "name": "Hitler Youth",
   "kind": "Nazi party youth organization",
@@ -2217,6 +2309,13 @@
   "source": "https://en.wikipedia.org/wiki/LI_Army_Corps",
   "wikidata": "Q2817423"
  },
+ "unit-los-angeles-rams": {
+  "name": "Los Angeles Rams",
+  "kind": "professional football team",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Los_Angeles_Rams"
+ },
  "unit-lost-battalion-europe-world-war-ii": {
   "name": "Lost Battalion",
   "kind": "U.S. infantry battalion (1st Battalion, 141st Infantry)",
@@ -2336,6 +2435,18 @@
   "wikidata": "Q698081",
   "aka": [
    "RLM"
+  ]
+ },
+ "unit-ministry-of-education-culture-sports-science-and-technology": {
+  "name": "Ministry of Education, Culture, Sports, Science and Technology",
+  "kind": "Japanese education ministry",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ministry_of_Education,_Culture,_Sports,_Science_and_Technology",
+  "aka": [
+   "Ministry of Education (Japan)",
+   "MEXT",
+   "Monbusho"
   ]
  },
  "unit-ministry-of-health-labour-and-welfare": {
@@ -2480,6 +2591,13 @@
   "wikidata": "Q7042837",
   "source": "https://en.wikipedia.org/wiki/No._105_Squadron_RAF"
  },
+ "unit-no-115-squadron-raf": {
+  "name": "No. 115 Squadron RAF",
+  "kind": "RAF Bomber Command squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._115_Squadron_RAF"
+ },
  "unit-no-12-commando": {
   "name": "No. 12 Commando",
   "kind": "British Army commando unit",
@@ -2529,6 +2647,13 @@
   "wikidata": "Q7043453",
   "source": "https://en.wikipedia.org/wiki/No._3_Commando"
  },
+ "unit-no-3-squadron-raaf": {
+  "name": "No. 3 Squadron RAAF",
+  "kind": "Royal Australian Air Force squadron",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._3_Squadron_RAAF"
+ },
  "unit-no-36-squadron-raf": {
   "name": "No. 36 Squadron RAF",
   "kind": "RAF torpedo bomber squadron",
@@ -2570,6 +2695,13 @@
   "nation": "Australia",
   "source": "https://en.wikipedia.org/wiki/No._464_Squadron_RAAF",
   "wikidata": "Q7043531"
+ },
+ "unit-no-51-squadron-raf": {
+  "name": "No. 51 Squadron RAF",
+  "kind": "bomber squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._51_Squadron_RAF"
  },
  "unit-no-617-squadron-raf": {
   "name": "No. 617 Squadron RAF",
@@ -3084,6 +3216,13 @@
    "State Defence Committee"
   ]
  },
+ "unit-strategic-air-command": {
+  "name": "Strategic Air Command",
+  "kind": "U.S. Air Force major command",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Strategic_Air_Command"
+ },
  "unit-strength-through-joy": {
   "name": "Strength Through Joy",
   "kind": "Nazi state leisure organization (KdF)",
@@ -3134,6 +3273,13 @@
    "SHAEF"
   ]
  },
+ "unit-tactical-air-command": {
+  "name": "Tactical Air Command",
+  "kind": "U.S. Air Force major command",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tactical_Air_Command"
+ },
  "unit-teishin-shudan": {
   "name": "Teishin Shudan",
   "kind": "Imperial Japanese Army airborne force",
@@ -3157,6 +3303,16 @@
   "nation": "Romania",
   "source": "https://en.wikipedia.org/wiki/Third_Army_(Romania)",
   "wikidata": "Q223129"
+ },
+ "unit-tokyo-metropolitan-police-department": {
+  "name": "Tokyo Metropolitan Police Department",
+  "kind": "police force",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tokyo_Metropolitan_Police_Department",
+  "aka": [
+   "Keishicho"
+  ]
  },
  "unit-trans-world-airlines": {
   "name": "Trans World Airlines",
@@ -3652,6 +3808,13 @@
   "nation": "US",
   "wikidata": "Q8042593",
   "source": "https://en.wikipedia.org/wiki/XXI_Bomber_Command"
+ },
+ "unit-xxx-corps-united-kingdom": {
+  "name": "XXX Corps",
+  "kind": "British army corps",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/XXX_Corps_(United_Kingdom)"
  },
  "unit-xxxxviii-panzer-corps": {
   "name": "XXXXVIII Panzer Corps",

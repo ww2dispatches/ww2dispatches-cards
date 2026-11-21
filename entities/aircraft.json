@@ -242,6 +242,17 @@
    "Do 217"
   ]
  },
+ "aircraft-douglas-a-1-skyraider": {
+  "name": "Douglas A-1 Skyraider",
+  "kind": "carrier attack bomber",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Douglas_A-1_Skyraider",
+  "aka": [
+   "AD Skyraider",
+   "XBT2D-1 Dauntless II"
+  ]
+ },
  "aircraft-douglas-c-47-skytrain": {
   "name": "Douglas C-47 Skytrain",
   "kind": "military transport aircraft",
@@ -371,6 +382,13 @@
    "Halifax"
   ]
  },
+ "aircraft-handley-page-hampden": {
+  "name": "Handley Page Hampden",
+  "kind": "twin engine medium bomber",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Handley_Page_Hampden"
+ },
  "aircraft-handley-page-heyford": {
   "name": "Handley Page Heyford",
   "kind": "British biplane bomber",
@@ -476,6 +494,17 @@
   "source": "https://en.wikipedia.org/wiki/Kawanishi_H8K",
   "aka": [
    "Emily"
+  ]
+ },
+ "aircraft-kawanishi-n1k": {
+  "name": "Kawanishi N1K",
+  "kind": "fighter, Shiden and Shiden Kai",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kawanishi_N1K",
+  "aka": [
+   "George",
+   "Shiden Kai"
   ]
  },
  "aircraft-lockheed-constellation": {

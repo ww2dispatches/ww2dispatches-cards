@@ -35,6 +35,15 @@
   "lat": 9.0358,
   "lon": 38.7525
  },
+ "place-adelphi-theatre": {
+  "name": "Adelphi Theatre",
+  "kind": "theatre, London",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Adelphi_Theatre",
+  "lat": null,
+  "lon": null
+ },
  "place-aga-khan-palace": {
   "name": "Aga Khan Palace",
   "kind": "palace in Pune used as a British detention site",
@@ -238,6 +247,15 @@
   "source": "https://en.wikipedia.org/wiki/Azores",
   "lat": 38.624,
   "lon": -28.031
+ },
+ "place-bainbridge-island-washington": {
+  "name": "Bainbridge Island",
+  "kind": "island in Puget Sound, Washington",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bainbridge_Island,_Washington",
+  "lat": null,
+  "lon": null
  },
  "place-balalae-island": {
   "name": "Ballale",
@@ -733,6 +751,15 @@
   "lat": 53.55,
   "lon": 8.5833
  },
+ "place-brenner-pass": {
+  "name": "Brenner Pass",
+  "kind": "Alpine pass on the Austrian and Italian border",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Brenner_Pass",
+  "lat": null,
+  "lon": null
+ },
  "place-bristol": {
   "name": "Bristol",
   "kind": "city",
@@ -1029,6 +1056,15 @@
    "Cavite"
   ]
  },
+ "place-cayenne": {
+  "name": "Cayenne",
+  "kind": "capital of French Guiana",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Cayenne",
+  "lat": null,
+  "lon": null
+ },
  "place-celles-houyet": {
   "name": "Celles",
   "kind": "village near Dinant, Belgium",
@@ -1109,6 +1145,15 @@
   "wikidata": "Q1617666",
   "lat": 36.6075,
   "lon": 2.19
+ },
+ "place-chiang-mai": {
+  "name": "Chiang Mai",
+  "kind": "city and Japanese airfield in northern Thailand",
+  "nation": "Thailand",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Chiang_Mai",
+  "lat": null,
+  "lon": null
  },
  "place-chicago-stadium": {
   "name": "Chicago Stadium",
@@ -1578,6 +1623,30 @@
    "Soviet Embassy"
   ]
  },
+ "place-emirate-of-transjordan": {
+  "name": "Emirate of Transjordan",
+  "kind": "British mandate emirate",
+  "nation": "Transjordan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Emirate_of_Transjordan",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Trans-Jordan"
+  ]
+ },
+ "place-emirau-island": {
+  "name": "Emirau Island",
+  "kind": "island in the St. Matthias group, Bismarck Archipelago",
+  "nation": "Australian New Guinea",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Emirau_Island",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Emirau"
+  ]
+ },
  "place-empress-augusta-bay": {
   "name": "Empress Augusta Bay",
   "kind": "bay",
@@ -1760,6 +1829,15 @@
    "Gdansk"
   ]
  },
+ "place-french-guiana": {
+  "name": "French Guiana",
+  "kind": "French colony in South America",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/French_Guiana",
+  "lat": null,
+  "lon": null
+ },
  "place-fuhrerbunker": {
   "name": "Führerbunker",
   "kind": "air raid shelter and headquarters",
@@ -1897,6 +1975,15 @@
   "source": "https://en.wikipedia.org/wiki/Gona,_Papua_New_Guinea",
   "lat": -8.6,
   "lon": 148.2667
+ },
+ "place-grand-coulee-dam": {
+  "name": "Grand Coulee Dam",
+  "kind": "hydroelectric dam on the Columbia River",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Grand_Coulee_Dam",
+  "lat": null,
+  "lon": null
  },
  "place-grand-harbour": {
   "name": "Grand Harbour",
@@ -2418,6 +2505,19 @@
   "lat": 39.9489,
   "lon": -75.15
  },
+ "place-institut-jeanne-d-arc": {
+  "lat": null,
+  "lon": null,
+  "name": "Institut Jeanne d'Arc",
+  "kind": "Catholic school in Frederiksberg, Copenhagen (the French School)",
+  "nation": "Denmark",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Institut_Jeanne_d%27Arc",
+  "aka": [
+   "French School",
+   "Den Franske Skole"
+  ]
+ },
  "place-intramuros": {
   "name": "Intramuros",
   "kind": "walled city district of Manila",
@@ -2435,6 +2535,15 @@
   "wikidata": "Q643891",
   "lat": 52.5319,
   "lon": 13.3711
+ },
+ "place-isle-of-dogs": {
+  "name": "Isle of Dogs",
+  "kind": "district of East London, docks",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Isle_of_Dogs",
+  "lat": null,
+  "lon": null
  },
  "place-isley-field-saipan": {
   "name": "Isley Field, Saipan",
@@ -2709,6 +2818,32 @@
   "lon": 23.8167,
   "aka": [
    "Kifisia"
+  ]
+ },
+ "place-klaipeda": {
+  "name": "Klaipeda",
+  "kind": "port city",
+  "nation": "Lithuania",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Klaip%C4%97da",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Memel",
+   "Klaipėda"
+  ]
+ },
+ "place-klaipeda-region": {
+  "name": "Klaipėda Region",
+  "kind": "the Memel Territory",
+  "nation": "Lithuania",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Klaip%C4%97da_Region",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Memel Territory",
+   "Memelland"
   ]
  },
  "place-kletskaya": {
@@ -3398,6 +3533,18 @@
   "lat": 43.8833,
   "lon": 125.3167
  },
+ "place-mandalay-palace": {
+  "name": "Mandalay Palace",
+  "kind": "walled royal citadel in Mandalay",
+  "nation": "Burma",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mandalay_Palace",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Fort Dufferin"
+  ]
+ },
  "place-mandatory-palestine": {
   "name": "Mandatory Palestine",
   "kind": "British mandate territory",
@@ -3796,6 +3943,15 @@
   "source": "https://en.wikipedia.org/wiki/Monte_Cassino",
   "lat": 41.49,
   "lon": 13.8139
+ },
+ "place-montefiorino": {
+  "name": "Montefiorino",
+  "kind": "commune in the Modena Apennines",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Montefiorino",
+  "lat": null,
+  "lon": null
  },
  "place-montevideo": {
   "name": "Montevideo",
@@ -4261,6 +4417,15 @@
   "lat": 51.2278,
   "lon": 27.6481
  },
+ "place-oppenheim": {
+  "name": "Oppenheim",
+  "kind": "town on the Rhine",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Oppenheim",
+  "lat": null,
+  "lon": null
+ },
  "place-oran": {
   "name": "Oran",
   "kind": "city",
@@ -4567,6 +4732,15 @@
    "Plötzensee"
   ]
  },
+ "place-plymouth": {
+  "name": "Plymouth",
+  "kind": "naval city in Devon",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Plymouth",
+  "lat": null,
+  "lon": null
+ },
  "place-polo-grounds": {
   "name": "Polo Grounds",
   "kind": "stadium in New York City",
@@ -4862,6 +5036,15 @@
    "Neue Reichskanzlei"
   ]
  },
+ "place-reichsautobahn": {
+  "lat": null,
+  "lon": null,
+  "name": "Reichsautobahn",
+  "kind": "German motorway network",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Reichsautobahn"
+ },
  "place-reichstag-building": {
   "name": "Reichstag building",
   "kind": "parliament building, Berlin",
@@ -4940,6 +5123,15 @@
   "source": "https://en.wikipedia.org/wiki/Rongerik_Atoll",
   "lat": 11.3333,
   "lon": 167.45
+ },
+ "place-rose-bowl-stadium": {
+  "name": "Rose Bowl (stadium)",
+  "kind": "stadium",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Rose_Bowl_(stadium)",
+  "lat": null,
+  "lon": null
  },
  "place-rostov-on-don": {
   "name": "Rostov-on-Don",
@@ -5245,6 +5437,15 @@
   "lat": 48.2812,
   "lon": 14.1138
  },
+ "place-schloss-klessheim": {
+  "name": "Schloss Klessheim",
+  "kind": "palace near Salzburg",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Schloss_Klessheim",
+  "lat": null,
+  "lon": null
+ },
  "place-schnee-eifel": {
   "name": "Schnee Eifel",
   "kind": "ridge on the German Belgian border",
@@ -5536,6 +5737,15 @@
   "lat": 50.2833,
   "lon": 6.1333
  },
+ "place-stalag-luft-iii": {
+  "name": "Stalag Luft III",
+  "kind": "Luftwaffe prisoner of war camp for airmen at Sagan",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Stalag_Luft_III",
+  "lat": null,
+  "lon": null
+ },
  "place-stalag-vii-a": {
   "name": "Stalag VII A",
   "kind": "prisoner of war camp",
@@ -5659,6 +5869,15 @@
   "lat": 53.9103,
   "lon": 14.2469
  },
+ "place-sylt": {
+  "name": "Sylt",
+  "kind": "island, German North Sea coast",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sylt",
+  "lat": null,
+  "lon": null
+ },
  "place-syntagma-square": {
   "name": "Syntagma Square",
   "kind": "central square of Athens",
@@ -5778,6 +5997,15 @@
   "source": "https://en.wikipedia.org/wiki/Terminal_Island",
   "lat": 33.7569,
   "lon": -118.2481
+ },
+ "place-terowie-south-australia": {
+  "name": "Terowie",
+  "kind": "railway town in South Australia",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Terowie,_South_Australia",
+  "lat": null,
+  "lon": null
  },
  "place-terrace-british-columbia": {
   "name": "Terrace, British Columbia",
@@ -6369,6 +6597,15 @@
   "lat": 51.6586,
   "lon": 6.6178
  },
+ "place-west-berlin": {
+  "name": "West Berlin",
+  "kind": "the American, British and French sectors of Berlin",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/West_Berlin",
+  "lat": null,
+  "lon": null
+ },
  "place-westerplatte": {
   "name": "Westerplatte",
   "kind": "Polish outpost in the Free City of Danzig",
@@ -6499,6 +6736,18 @@
   "lat": 34.2411,
   "lon": 132.5558
  },
+ "place-yan-an": {
+  "name": "Yan'an",
+  "kind": "city, Shaanxi; Chinese Communist headquarters",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Yan%27an",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Yenan"
+  ]
+ },
  "place-yangon": {
   "name": "Yangon",
   "kind": "city",
@@ -6571,6 +6820,15 @@
   "source": "https://en.wikipedia.org/wiki/Zamboanga_City",
   "lat": 6.9042,
   "lon": 122.0761
+ },
+ "place-zeughaus": {
+  "lat": null,
+  "lon": null,
+  "name": "Zeughaus",
+  "kind": "arsenal building in Berlin",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Zeughaus"
  },
  "place-zhytomyr": {
   "name": "Zhitomir",
