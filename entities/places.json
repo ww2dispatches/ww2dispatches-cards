@@ -1756,15 +1756,17 @@
   "lat": 50.132,
   "lon": 5.7894
  },
- "place-hsinchu-air-base": {
-  "name": "Hsinchu Air Base (Shinchiku Airfield)",
+ "place-hsinchu-airport": {
+  "name": "Hsinchu Airport (Shinchiku Airfield)",
   "kind": "airfield",
   "nation": "Japan",
-  "source": "https://en.wikipedia.org/wiki/Hsinchu_Air_Base",
-  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hsinchu_Airport",
+  "wikidata": "Q701217",
   "aka": [
    "Shinchiku Airfield"
-  ]
+  ],
+  "lat": 24.8181,
+  "lon": 120.9392
  },
  "place-huelva": {
   "name": "Huelva",
