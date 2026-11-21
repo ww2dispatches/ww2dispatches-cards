@@ -605,6 +605,13 @@
   "wikidata": "Q5551656",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-426"
  },
+ "ship-german-submarine-u-43-1939": {
+  "name": "U-43",
+  "kind": "Type IX U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-43_(1939)"
+ },
  "ship-german-submarine-u-454": {
   "name": "U-454",
   "kind": "U-boat",
@@ -3107,6 +3114,13 @@
   "nation": "US",
   "wikidata": "Q506022",
   "source": "https://en.wikipedia.org/wiki/USS_Arizona"
+ },
+ "ship-uss-asheville-pg-21": {
+  "name": "USS Asheville (PG-21)",
+  "kind": "gunboat",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Asheville_(PG-21)"
  },
  "ship-uss-astoria-ca-34": {
   "name": "USS Astoria (CA-34)",

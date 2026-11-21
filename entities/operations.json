@@ -64,6 +64,17 @@
   "source": "https://en.wikipedia.org/wiki/1941_October_Revolution_Parade",
   "wikidata": "Q2893329"
  },
+ "op-1942-knilm-douglas-dc-3-shootdown": {
+  "name": "1942 KNILM Douglas DC-3 shootdown",
+  "kind": "airliner shootdown",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1942_KNILM_Douglas_DC-3_shootdown",
+  "aka": [
+   "PK-AFV Pelikaan",
+   "Diamond DC-3"
+  ]
+ },
  "op-1942-qantas-short-empire-shootdown": {
   "name": "1942 Qantas Short Empire shootdown",
   "kind": "airliner shootdown",
@@ -390,6 +401,13 @@
   "aka": [
    "Operation Neuland"
   ]
+ },
+ "op-attack-on-broome": {
+  "name": "Attack on Broome",
+  "kind": "Japanese air raid",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Attack_on_Broome"
  },
  "op-attack-on-clark-field": {
   "name": "Attack on Clark Field",
@@ -1505,6 +1523,13 @@
   "wikidata": "Q13630094",
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Singapore_(1941)"
  },
+ "op-bombing-of-the-bezuidenhout": {
+  "name": "Bombing of the Bezuidenhout",
+  "kind": "mistaken RAF bombing of a city district",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_the_Bezuidenhout"
+ },
  "op-bombing-of-tokyo": {
   "name": "Bombing of Tokyo",
   "kind": "air campaign",
@@ -2595,6 +2620,13 @@
    "Operation Cherryblossom"
   ]
  },
+ "op-lapland-war": {
+  "name": "Lapland War",
+  "kind": "war between Finland and Germany",
+  "nation": "Finland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Lapland_War"
+ },
  "op-law-for-the-prevention-of-hereditarily-diseased-offspring": {
   "name": "Law for the Prevention of Hereditarily Diseased Offspring",
   "kind": "Nazi forced sterilization law",
@@ -3188,6 +3220,13 @@
   "aka": [
    "Cockleshell Heroes"
   ]
+ },
+ "op-operation-gisela": {
+  "name": "Operation Gisela",
+  "kind": "Luftwaffe night intruder operation",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Gisela"
  },
  "op-operation-greif": {
   "name": "Operation Greif",

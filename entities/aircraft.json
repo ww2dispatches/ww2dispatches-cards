@@ -245,6 +245,13 @@
    "Dakota"
   ]
  },
+ "aircraft-douglas-dc-3": {
+  "name": "Douglas DC-3",
+  "kind": "airliner type",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Douglas_DC-3"
+ },
  "aircraft-douglas-dc-6": {
   "name": "Douglas DC-6",
   "kind": "four engine piston transport, prototype XC-112A",

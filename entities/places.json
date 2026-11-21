@@ -466,6 +466,15 @@
   "lat": 52.5083,
   "lon": 13.3375
  },
+ "place-bethnal-green-tube-station": {
+  "name": "Bethnal Green tube station",
+  "kind": "London Underground station, wartime shelter",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bethnal_Green_tube_station",
+  "lat": null,
+  "lon": null
+ },
  "place-betio": {
   "name": "Betio",
   "kind": "island",
@@ -645,6 +654,15 @@
   "source": "https://en.wikipedia.org/wiki/Bristol",
   "lat": 51.4536,
   "lon": -2.5975
+ },
+ "place-broome-western-australia": {
+  "name": "Broome, Western Australia",
+  "kind": "port town",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Broome,_Western_Australia",
+  "lat": null,
+  "lon": null
  },
  "place-brunei": {
   "name": "Brunei",
@@ -4378,6 +4396,15 @@
   "lat": 53.0908,
   "lon": -0.4342
  },
+ "place-raf-elvington": {
+  "name": "RAF Elvington",
+  "kind": "RAF bomber airfield, Yorkshire",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/RAF_Elvington",
+  "lat": null,
+  "lon": null
+ },
  "place-raf-fauld": {
   "name": "RAF Fauld",
   "kind": "underground bomb store",
@@ -4508,6 +4535,15 @@
   "source": "https://en.wikipedia.org/wiki/Roi-Namur",
   "lat": 9.3961,
   "lon": 167.4758
+ },
+ "place-rome": {
+  "name": "Rome",
+  "kind": "city",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Rome",
+  "lat": null,
+  "lon": null
  },
  "place-rostov-on-don": {
   "name": "Rostov-on-Don",
@@ -5331,6 +5367,15 @@
   "wikidata": "Q3059075",
   "lat": 51.5,
   "lon": 0.5833
+ },
+ "place-the-hague": {
+  "name": "The Hague",
+  "kind": "city",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/The_Hague",
+  "lat": null,
+  "lon": null
  },
  "place-the-pentagon": {
   "name": "The Pentagon",
