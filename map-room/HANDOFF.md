@@ -10,4 +10,6 @@ Written by the Map Room chat: what to build or fix and why, one item each, dated
 ## Done
 Written by the desktop: what changed, the commit, where the test clip is.
 
-(none yet)
+* **21 Nov 2026, Ops room ambience in the repo, no more silent fallback.** The `*.wav` rule in `map-room/.gitignore` had kept `kit/sound/declass_ambience_ops_room_v02.wav` out of git, so every clip fell back to the teletype bed (the clicking in the intro). The file is now tracked (`!kit/sound/*.wav`; render WAVs stay ignored), and a missing file stops the render with a clear error. Level unchanged: the old bed's RMS, about 18 dB under the theme. Commits e5d1677, cac4ef8, 69226de. Test clip: OneDrive, The Map Room\Desktop Render Test 2026-11-21\ops-room-bed\day-11-strict\day-11.mp4.
+* **21 Nov 2026, each day's sound seeded by its day.** `maproom_sound.build(seed=day)`, passed by zoomclip.py and render_day.py. A day now sounds the same rendered alone or in a series (proved byte identical). Every clip's sound changed once; pictures did not. Commit 5cc242d.
+* **21 Nov 2026, bpy pinned and setup documented.** `map-room/requirements.txt` pins bpy 5.3.0 (Python 3.13); the README Setup section lists ffmpeg, Chrome and rsvg-convert, with Windows steps. The cloud should install from requirements.txt. Commit 43d6bf2. Also e3babaf: the render_series.py note now says quiet days get a balcony only clip.
