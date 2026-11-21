@@ -71,14 +71,14 @@
   "name": "Bachem Ba 349 Natter",
   "kind": "Vertical launch rocket interceptor",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q249954",
   "source": "https://en.wikipedia.org/wiki/Bachem_Ba_349_Natter"
  },
  "aircraft-bell-47": {
   "name": "Bell 47",
   "kind": "light helicopter",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q312540",
   "source": "https://en.wikipedia.org/wiki/Bell_47"
  },
  "aircraft-bell-x-1": {
@@ -256,7 +256,7 @@
   "name": "Douglas DC-3",
   "kind": "airliner type",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q190211",
   "source": "https://en.wikipedia.org/wiki/Douglas_DC-3"
  },
  "aircraft-douglas-dc-6": {
@@ -472,7 +472,7 @@
   "name": "Kawanishi H8K",
   "kind": "Imperial Japanese Navy flying boat",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q696220",
   "source": "https://en.wikipedia.org/wiki/Kawanishi_H8K",
   "aka": [
    "Emily"
@@ -536,7 +536,7 @@
   "name": "LZ 129 Hindenburg",
   "kind": "German passenger airship",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q217964",
   "source": "https://en.wikipedia.org/wiki/LZ_129_Hindenburg",
   "aka": [
    "Hindenburg"
@@ -656,7 +656,7 @@
   "name": "Nakajima Ki-115 Tsurugi",
   "kind": "Japanese Army special attack aircraft",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q2734245",
   "source": "https://en.wikipedia.org/wiki/Nakajima_Ki-115_Tsurugi",
   "aka": [
    "Ki-115",
@@ -797,7 +797,7 @@
   "name": "Supermarine Spitfire prototype K5054",
   "kind": "single aircraft, the Spitfire prototype",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q55634256",
   "source": "https://en.wikipedia.org/wiki/Supermarine_Spitfire_prototype_K5054",
   "aka": [
    "K5054",
@@ -842,7 +842,7 @@
   "name": "Yankee Clipper",
   "kind": "Pan Am Boeing 314 flying boat",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q131198257",
   "source": "https://en.wikipedia.org/wiki/Yankee_Clipper_(flying_boat)"
  },
  "aircraft-yokosuka-mxy-7-ohka": {
@@ -856,7 +856,7 @@
   "name": "Yokosuka P1Y Ginga",
   "kind": "Japanese navy twin engine bomber",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q391456",
   "source": "https://en.wikipedia.org/wiki/Yokosuka_P1Y_Ginga",
   "aka": [
    "Frances"
