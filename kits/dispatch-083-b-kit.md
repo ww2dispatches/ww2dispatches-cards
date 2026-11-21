@@ -10,8 +10,8 @@ Event date: 1944-11-23 · Series: Battle Lines · Living Card · a second cut of
 | Threads | videos/dispatch-083-b-threads.mp4 | 1080 x 1350, 15.0 s |
 | TikTok, YouTube Shorts | videos/dispatch-083-b-vertical.mp4 | 1080 x 1920, 15.0 s |
 
-Public links: https://media.ww2dispatches.com/videos/dispatch-083-b-<x|instagram|threads|vertical>.mp4
-Poster: https://media.ww2dispatches.com/videos/dispatch-083-b-instagram-poster.jpg
+Public links: https://raw.githubusercontent.com/ww2dispatches/ww2dispatches-videos/main/videos/dispatch-083-b-<x|instagram|threads|vertical>-r2.mp4
+Poster: https://raw.githubusercontent.com/ww2dispatches/ww2dispatches-videos/main/videos/dispatch-083-b-instagram-poster-r2.jpg
 
 ## Thumbnail check
 Pass: first frame is a howitzer crew at the gun with smoke from the shot; at 2 seconds a tank carrying infantry rolls past the camera. Different opening from the noon cut (armor in a village street). Opening tagged "combat or firing" from the frames at 0.3 and 2 seconds.
@@ -26,7 +26,7 @@ The Kehl bridge was the prize. It was blown first.
 ## Caption: X, Instagram, Threads, Facebook, TikTok (one caption, hook first)
 Leclerc's men swore in 1941 not to lay down their arms until their flag flew over Strasbourg cathedral. Three years later they were fighting in Alsace.
 
-U.S. Army film of guns and armor on the Alsace plain, November 1944.
+U.S. Army film from the fight for Strasbourg, November 1944.
 
 Would you have taken that oath?
 
@@ -40,9 +40,9 @@ Leclerc's men swore in 1941 not to lay down their arms until their flag flew ove
 
 In early 1941 Free French troops under Colonel Philippe Leclerc crossed the Sahara from French Equatorial Africa and besieged the Italian fort at Kufra in Libya. The Italian and Libyan garrison surrendered on 1 March 1941. At Kufra Leclerc made his men swear an oath, dated 2 March 1941: "Swear not to lay down your arms until our colours, our beautiful colours, fly over the cathedral of Strasbourg." By November 1944 Leclerc commanded the French 2nd Armored Division, fighting under the U.S. XV Corps of Gen. Wade Haislip, which broke through the Saverne Gap in the Vosges on 22 November. At dawn on 23 November the division drove on Strasbourg in several columns, guided by Alsatian resistance fighters. The aim was the Rhine and the bridge to Kehl. Early that afternoon a spahi of the division, Maurice Lebrun, volunteered to climb the cathedral's 142 m spire and fix an improvised French flag to it. The oath of Kufra was kept. The Germans blew the Rhine bridge to Kehl before the French could take it. In January 1945, with Germany counterattacking in Alsace, Eisenhower weighed pulling back and leaving Strasbourg undefended. De Gaulle called it a national disaster, and with Churchill's support the city was held.
 
-This is U.S. Army film of the Alsace front in November 1944: a howitzer crew firing, a tank carrying infantry, and shells bursting on the open plain. The shots are not dated to 23 November and the units are not named on screen. The original film carries narration, so this clip runs silent.
+This is U.S. Army Signal Corps film from the fight for Strasbourg, November 1944: a tank bursting out of smoke in a city street, a machine gun crew firing from cover, a soldier aiming his carbine, men firing from a half track, and an M7 howitzer crew. The film is not dated to the day and runs silent.
 
-Film: Combat Bulletin No. 35 (Army Pictorial Service, Signal Corps, 1944), 111-CB-35, U.S. National Archives (catalog.archives.gov/id/24321), public domain.
+Film: U.S. Army Signal Corps, 111-ADC-9629, U.S. National Archives (catalog.archives.gov/id/23393), public domain.
 Sources: Liberation and defence of Strasbourg, Chemins de memoire, French Ministry of the Armed Forces (French); Liberation of Strasbourg, Wikipedia; Capture of Kufra, Wikipedia (citing the Ordre de la Liberation); General LeClerc, U.S. Army Signal Corps photo 111-SC-192467, National Archives.
 
 WW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.
@@ -52,7 +52,7 @@ WW2 Dispatches: World War II on this day in history. Battle Lines · Home Front 
 ## TikTok caption
 Leclerc's men swore in 1941 not to lay down their arms until their flag flew over Strasbourg cathedral. Three years later they were fighting in Alsace.
 
-U.S. Army film of guns and armor on the Alsace plain, November 1944.
+U.S. Army film from the fight for Strasbourg, November 1944.
 
 Would you have taken that oath?
 
@@ -61,3 +61,6 @@ Would you have taken that oath?
 ## Source film
 Second cut. U.S. Army film of the Alsace front, November 1944, Combat Bulletin No. 35, 111-CB-35 (NARA 24321), silent (narration in the source). Cut 20 Nov 2026 from footage/1944-11-23-cb35.mp4, inside research's 7 p.m. stretch 14:23 to 16:11: 15:39.8 to 15:42.0 a howitzer crew firing, smoke from the gun; 14:28.0 to 14:34.5 a tank with infantry aboard passing the camera; 14:37.0 to 14:39.8 tanks on the open plain; 14:40.2 to 14:43.7 shells bursting on the plain. Vignette edges cropped. Nothing from the noon stretch (16:15 to 19:25); the noon clip opens on armor in a village street.
 Source: https://catalog.archives.gov/id/24321 · Clip: footage/1944-11-23-strasbourg-b.mp4
+
+
+Recut 21 Nov 2026: Second cut, recut 21 Nov 2026 from U.S. Army Signal Corps raw film 111-ADC-9629 (NARA 23393), camera roll NR 318 (the Strasbourg roll), silent. Cut: 220.0 to 224.0 a tank bursts out of smoke in a city street; 227.4 to 230.6 a machine gun crew firing from behind cover; 240.0 to 243.5 a soldier aiming a carbine; 233.5 to 236.0 men aiming from a half track; 211.5 to 215.0 an M7 howitzer crew. 10:11 pixels scaled to square, 8 px trimmed each side. No overlap with the noon cut (279 to 368.5); opens on the tank in smoke, not the noon tram street shot. Not dated to the day by NARA.
