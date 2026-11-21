@@ -553,6 +553,13 @@
   "wikidata": "Q689619",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-35_(1936)"
  },
+ "ship-german-submarine-u-3519": {
+  "name": "U-3519",
+  "kind": "Type XXI U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-3519"
+ },
  "ship-german-submarine-u-37-1938": {
   "name": "U-37",
   "kind": "Type IX U-boat",
@@ -2511,6 +2518,13 @@
   "wikidata": "Q18204607",
   "source": "https://en.wikipedia.org/wiki/MV_Carnarvon_Castle"
  },
+ "ship-mv-domala": {
+  "name": "MV Domala",
+  "kind": "British India liner",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/MV_Domala"
+ },
  "ship-mv-dunedin-star": {
   "name": "MV Dunedin Star",
   "kind": "cargo liner",
@@ -2853,6 +2867,13 @@
   "nation": "China",
   "wikidata": "Q842289",
   "source": "https://en.wikipedia.org/wiki/SS_Kiangya"
+ },
+ "ship-ss-kyokusei-maru": {
+  "name": "SS Kyokusei Maru",
+  "kind": "Japanese army transport",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Kyokusei_Maru"
  },
  "ship-ss-leopoldville-1928": {
   "name": "SS Leopoldville",
@@ -3626,6 +3647,13 @@
   "nation": "US",
   "wikidata": "Q7872844",
   "source": "https://en.wikipedia.org/wiki/USS_Philip_(DD-498)"
+ },
+ "ship-uss-pillsbury-dd-227": {
+  "name": "USS Pillsbury (DD-227)",
+  "kind": "Clemson class destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Pillsbury_(DD-227)"
  },
  "ship-uss-pioneer-am-105": {
   "name": "USS Pioneer (AM-105)",

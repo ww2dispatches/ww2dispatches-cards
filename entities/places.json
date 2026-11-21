@@ -3097,6 +3097,15 @@
   "lat": 51.5132,
   "lon": -0.0894
  },
+ "place-manzanar": {
+  "name": "Manzanar",
+  "kind": "Japanese American incarceration camp, California",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Manzanar",
+  "lat": null,
+  "lon": null
+ },
  "place-marianske-lazne": {
   "name": "Marianske Lazne",
   "kind": "spa town",
@@ -3656,6 +3665,15 @@
   "source": "https://en.wikipedia.org/wiki/Neuengamme_concentration_camp",
   "lat": 53.4274,
   "lon": 10.2263
+ },
+ "place-neuss": {
+  "name": "Neuss",
+  "kind": "city on the Rhine",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Neuss",
+  "lat": null,
+  "lon": null
  },
  "place-new-jerusalem-monastery": {
   "name": "New Jerusalem Monastery",

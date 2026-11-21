@@ -1092,6 +1092,13 @@
   "wikidata": "Q4644604",
   "source": "https://en.wikipedia.org/wiki/825_Naval_Air_Squadron"
  },
+ "unit-83rd-infantry-division-united-states": {
+  "name": "83rd Infantry Division",
+  "kind": "U.S. Army infantry division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/83rd_Infantry_Division_(United_States)"
+ },
  "unit-84th-training-command": {
   "name": "84th Infantry Division",
   "kind": "U.S. Army infantry division",
@@ -1929,6 +1936,16 @@
    "1st Motorized Group"
   ],
   "note": "No separate article for the 1st Motorized Group."
+ },
+ "unit-jagdgeschwader-2": {
+  "name": "Jagdgeschwader 2",
+  "kind": "Luftwaffe fighter wing",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Jagdgeschwader_2",
+  "aka": [
+   "JG 2"
+  ]
  },
  "unit-japanese-marine-paratroopers-of-world-war-ii": {
   "name": "Japanese naval paratroopers",

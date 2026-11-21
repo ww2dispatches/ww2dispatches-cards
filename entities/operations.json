@@ -1,4 +1,11 @@
 {
+ "op-16th-academy-awards": {
+  "name": "16th Academy Awards",
+  "kind": "film awards ceremony, 2 March 1944",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/16th_Academy_Awards"
+ },
  "op-1920-summer-olympics": {
   "name": "1920 Summer Olympics",
   "kind": "Olympic Games",
@@ -25,6 +32,16 @@
   "nation": "Germany",
   "wikidata": "Q9600",
   "source": "https://en.wikipedia.org/wiki/1936_Winter_Olympics"
+ },
+ "op-1939-conclave": {
+  "name": "1939 conclave",
+  "kind": "papal election",
+  "nation": "Vatican City",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1939_conclave",
+  "aka": [
+   "1939 papal conclave"
+  ]
  },
  "op-1939-nazi-rally-at-madison-square-garden": {
   "name": "1939 Nazi rally at Madison Square Garden",
@@ -428,6 +445,13 @@
   "aka": [
    "Provisional Government of Free India"
   ]
+ },
+ "op-balvano-train-disaster": {
+  "name": "Balvano train disaster",
+  "kind": "rail disaster, March 1944",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Balvano_train_disaster"
  },
  "op-bangka-island-massacre": {
   "name": "Bangka Island massacre",
@@ -1141,6 +1165,13 @@
    "Operation Bernau",
    "Operation Stonewall"
   ]
+ },
+ "op-battle-of-the-bismarck-sea": {
+  "name": "Battle of the Bismarck Sea",
+  "kind": "air and sea battle, 2 to 4 March 1943",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_the_Bismarck_Sea"
  },
  "op-battle-of-the-bulge": {
   "name": "Battle of the Bulge",
@@ -2290,6 +2321,13 @@
   "source": "https://en.wikipedia.org/wiki/Invasion_of_Lingayen_Gulf",
   "note": "Not the Japanese landing of December 1941 (op-japanese-invasion-of-lingayen-gulf)."
  },
+ "op-iran-crisis-of-1946": {
+  "name": "Iran crisis of 1946",
+  "kind": "postwar crisis over Soviet troops in Iran",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Iran_crisis_of_1946"
+ },
  "op-istrian-dalmatian-exodus": {
   "name": "Istrian Dalmatian exodus",
   "kind": "postwar departure of Italians from Istria and Dalmatia",
@@ -2706,6 +2744,17 @@
   "aka": [
    "Fall Gelb",
    "Sichelschnitt"
+  ]
+ },
+ "op-march-1947-martial-law-in-mandatory-palestine": {
+  "name": "March 1947 martial law in Mandatory Palestine",
+  "kind": "British military rule over Jewish areas, 2 to 17 March 1947",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/March_1947_martial_law_in_Mandatory_Palestine",
+  "aka": [
+   "Operation Hippo",
+   "Operation Elephant"
   ]
  },
  "op-marseille-roundup": {

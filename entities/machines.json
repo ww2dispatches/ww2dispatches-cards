@@ -175,6 +175,13 @@
    "atom smasher"
   ]
  },
+ "machine-december-7th-film": {
+  "name": "December 7th",
+  "kind": "1943 documentary short by John Ford and the U.S. Navy",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/December_7th_(film)"
+ },
  "machine-der-fuehrer-s-face": {
   "name": "Der Fuehrer's Face",
   "kind": "Disney propaganda cartoon, 1943",
@@ -681,6 +688,13 @@
   "nation": "US",
   "wikidata": "Q1058395",
   "source": "https://en.wikipedia.org/wiki/Times_Square_Ball"
+ },
+ "machine-type-xxi-submarine": {
+  "name": "Type XXI submarine",
+  "kind": "German electric U-boat class",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Type_XXI_submarine"
  },
  "machine-v-1-flying-bomb": {
   "name": "V-1 flying bomb",
