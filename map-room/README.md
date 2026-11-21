@@ -48,6 +48,7 @@ python3 map-room/engine/contact_sheet.py campaign-series/bulge-1944 sheet.png   
 | `engine/view.json` | The fixed camera. |
 | `series/<campaign>/table*.json` | Each view's framing. Traced maps go in `series/<campaign>/maps/<view>.png` (`main.png` for the whole battle). |
 | `kit/silhouettes/` | The 30 silhouettes and `library.json`. |
+| `kit/sound/` | `declass_ambience_ops_room_v02.wav`, the Ops room ambience from the Declass soundboard: the war room bed under Sound C. Without it `maproom_sound.py` quietly falls back to the old generated teletype bed. |
 | `fonts/` | TTF copies of Oswald 700 and Special Elite. |
 | `test/` | Test days (`day-t1` opening, `day-t2` Bastogne, `day-t3` salient: invented positions covering every move), `day01-example.json`, the sketch framing. Never posted. |
 
