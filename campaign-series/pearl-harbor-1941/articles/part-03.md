@@ -1,6 +1,6 @@
 By the first week of December 1941 the carriers had crossed most of the North Pacific without being seen, and on 4 December, Tokyo time, they turned south for Hawaii. Everything that could still stop them now depended on someone, somewhere, putting the pieces together in time.
 
-This is the last of three parts on the road to Pearl Harbor. Part 2 ended with Japan's embassies burning their codes. Here the final days run out: a secret plan in a Chicago newspaper, an empty row of carrier berths, thirteen decoded pages on the President's desk, a Sunday morning on Oahu, and a joint session of Congress.
+This is the last of three parts on the road to Pearl Harbor. Part 2 ended with Japan's embassies burning their codes. Here the final days run out, and the longest chapter of this book is the one morning it was all leading to: a secret plan in a Chicago newspaper, an empty row of carrier berths, thirteen decoded pages on the President's desk, a Sunday morning on Oahu, and a joint session of Congress.
 
 ![The Japanese air attack on Oahu, 7 December 1941, drawn after the war from Japanese records. The first wave came in from the north at about 7:50 a.m., Hawaii time, and split to strike the airfields and the battleships at once; the second wave followed about an hour later. Times on the map are Tokyo time. Detail of Plate No. 13, Reports of General MacArthur, Vol. II, Part I (U.S. Army, 1966), public domain.](photos/campaign/ch-genmac-plate13-oahu.jpg)
 
@@ -58,7 +58,9 @@ The same evening, nearly five thousand miles away, the Japanese consulate in Hon
 
 *Oahu, 7 December 1941*
 
-The first sign came from the sea. At 3:42 that morning the minesweeper Condor saw a periscope near the entrance buoys to Pearl Harbor and signaled the destroyer Ward, which searched for hours without result. In the dark north of the harbor, five large Japanese submarines had already released the midget submarines riding on their decks, each with a crew of two and orders to get inside the harbor and wait.
+### Before Dawn
+
+The first sign came from the sea. At 3:42 that morning the minesweeper Condor saw a periscope near the entrance buoys to Pearl Harbor and signaled the destroyer Ward, which searched for hours without result. In the dark south of the harbor, five large Japanese submarines had already released the midget submarines riding on their decks, each with a crew of two and orders to get inside the harbor and wait.
 
 At 6:45 the Ward found one. It was following the supply ship Antares toward the harbor entrance, its conning tower just above the water. The Ward fired twice from almost point blank range, hit it at the base of the conning tower, and dropped depth charges as it sank.
 
@@ -69,6 +71,8 @@ At 6:45 the Ward found one. It was following the supply ship Antares toward the 
 > Hewitt Inquiry, Pearl Harbor Attack hearings
 
 It was the first American shot of the Pacific war. The report went up the chain of command, where it met months of false submarine alarms, and the officers who read it wanted it confirmed before they acted.
+
+### The Launch
 
 North of the island, the six carriers had turned into the wind about 200 miles out and launched the first wave at about six. Captain Mitsuo Fuchida led it. After the war he told American interrogators what the pilots had been told to look for.
 
@@ -82,6 +86,8 @@ North of the island, the six carriers had turned into the wind about 200 miles o
 
 At the Opana radar station on the northern tip of Oahu, Privates Joseph Lockard and George Elliott were due to shut down at seven. Lockard, practicing on the set, picked up a mass of planes about 130 miles to the north and closing. A little after seven they telephoned the Army's information center. The only officer on duty, Lieutenant Kermit Tyler, was there for training and had been on watch once before. A flight of B 17 bombers was due from the mainland that morning, and the radio had played Hawaiian music all night, which he knew was done to guide incoming bombers. He thanked them and did nothing.
 
+### Battleship Row
+
 At 7:53 Fuchida signaled the carriers that complete surprise had been achieved. The first bombs fell on Ford Island at 7:57, and a minute later the Navy's radio broadcast the words that would become the most famous message of the day.
 
 > **From the record.** Patrol Wing 2, Ford Island, to all ships present, 7:58 a.m., 7 December 1941
@@ -90,11 +96,87 @@ At 7:53 Fuchida signaled the carriers that complete surprise had been achieved. 
 >
 > Hewitt Inquiry, Pearl Harbor Attack hearings
 
-Torpedo planes came in low over the harbor and struck the battleships moored along Ford Island. Dive bombers and fighters hit Wheeler, Hickam, Kaneohe, Ewa and Bellows, where the Army's planes stood wingtip to wingtip, parked that way to guard against saboteurs. At about 8:10 a bomb pierced the Arizona's forward deck and set off her magazines. The explosion killed 1,177 of her crew. The Oklahoma rolled over with hundreds of men trapped inside. A second wave came in shortly before nine.
+Seven battleships lay moored along the southeast side of Ford Island, with the flagship Pennsylvania in dry dock across the channel. The torpedo planes came in low over the water and released their torpedoes straight at the outboard ships. A Japanese airman photographed the moment from above.
 
-By ten it was over. All eight battleships in the harbor had been sunk or damaged, and nearly 350 American aircraft destroyed or damaged on the ground and in the air. More than 2,300 Americans were dead. Japan lost 29 aircraft and all five midget submarines. The three American carriers, the targets Fuchida had been told mattered most, were not there.
+![Ford Island and Battleship Row under attack, photographed from a Japanese plane; a column of water rises where a torpedo has struck. Captured Japanese photograph, National Archives 80-G-30554, public domain.](photos/campaign/ch-80-G-30554.jpg)
 
-![USS Arizona burning after the attack, 7 December 1941. U.S. Navy, National Archives 80-G-32916, public domain.](photos/campaign/ch-80-G-32916.jpg)
+The Oklahoma, outboard in the row, took three torpedoes in the first minutes. Her executive officer, the senior officer aboard, reported what followed.
+
+> **From the record.** Action report of USS Oklahoma, 18 December 1941
+>
+> "The ship began to list to port immediately after the first hit. It heeled to angle of 45 degrees after the third hit. Two or three additional torpedo hits were felt. ... The ship continued to heel rapidly and turned over through an angle of about 135 degrees in about eight to ten minutes."
+>
+> Commander J. L. Kenworthy, executive officer, in the commanding officer's report to the Commander in Chief, Pacific Fleet
+
+Hundreds of her crew were trapped inside the hull. Over the next two days, rescuers cut holes in the upturned bottom and brought out thirty two men alive.
+
+Next astern, the West Virginia was hit by torpedo after torpedo and settled to the bottom on an even keel, her crew counterflooding to keep her from capsizing. On her bridge, Captain Mervyn Bennion was struck by a fragment that tore open his abdomen. His navigator, Lieutenant Commander T. T. Beattie, stayed with him.
+
+> **In their words.** Lieutenant Commander T. T. Beattie, navigator of USS West Virginia, statement of December 1941
+>
+> "Although in great pain he kept inquiring about the condition of the ships, whether or not we had any pumps running, etc. He was particularly concerned about the fires on board and the oil on the surface of the water. ... He did not want to be moved and after the fire started kept insisting that we leave him and go below."
+>
+> Action report of USS West Virginia
+
+Bennion died on his bridge. Among the men Beattie named on the bridge with him was a mess attendant, Doris Miller, who would receive the Navy Cross.
+
+At about 8:10 a heavy armor piercing bomb struck the Arizona near her number two turret and set off her forward magazines. Lieutenant Commander Samuel Fuqua, her damage control officer, had been knocked unconscious on the quarterdeck by an earlier hit.
+
+> **In their words.** Lieutenant Commander Samuel G. Fuqua, USS Arizona, statement of December 1941
+>
+> "When I came to and got up off the deck the ship was a mass of flames amidships on the boat deck and the deck aft was awash to about frame 90. The antiaircraft battery and machine guns apparently were still firing at this time. ... There was no water on the fire mains."
+>
+> Action report of USS Arizona, 13 December 1941
+
+With buckets and fire extinguishers Fuqua held the flames back long enough to load about seventy wounded men into boats and send them to Ford Island. He received the Medal of Honor. The explosion killed 1,177 of the Arizona's crew, nearly half of all the Americans who died that day, among them the ship's captain and Rear Admiral Isaac Kidd.
+
+![The Arizona burning after the attack. U.S. Navy, National Archives 80-G-32916, public domain.](photos/campaign/ch-80-G-32916.jpg)
+
+### The Airfields
+
+The airfields were struck in the same minutes. Dive bombers and fighters hit the Navy's air stations at Ford Island and Kaneohe, the Marine field at Ewa, and the Army's Hickam, Wheeler and Bellows fields. At Wheeler and Hickam the Army's fighters and bombers stood in neat rows, wingtip to wingtip, parked that way so sentries could guard them against saboteurs. They burned where they stood.
+
+![Planes and hangars wrecked at Naval Air Station Pearl Harbor, Ford Island, 7 December 1941. U.S. Navy, National Archives 80-G-32474, public domain.](photos/campaign/ch-80-G-32474.jpg)
+
+Into the middle of it flew eighteen scout bombers from the Enterprise, launched at dawn to search ahead of the carrier and land at Ford Island. The commander of the air group, Lieutenant Commander Howard Young, came in over Barbers Point expecting a quiet Sunday landing.
+
+> **In their words.** Lieutenant Commander H. L. Young, Commander Enterprise Air Group, report of 15 December 1941
+>
+> "At a point mid-way between Ewa Field and Ford Island I noticed considerable 'AA' fire ahead. At almost the same instant I was attacked by Japanese planes from the rear without warning. ... It was immediately evident that I was under AA fire regardless of which direction I went."
+>
+> Action report of the Enterprise Air Group
+
+Young landed on Ford Island through the fire of American guns, with bullet holes in his wings. Several of the Enterprise planes were shot down, some by the Japanese and some by their own side.
+
+On the ground, men fought back with whatever they had. Sailors broke open locked ammunition lockers, Marines fired rifles and machine guns from behind sandbags, and the ships' antiaircraft guns came into action within minutes.
+
+![Marines and soldiers firing on Japanese planes during the attack, 7 December 1941. U.S. Navy, National Archives 80-G-32543, public domain.](photos/campaign/ch-80-G-32543.jpg)
+
+### The Second Wave
+
+In the lull between the two waves, the Nevada did what no other battleship did that morning. Torpedoed and bombed, she got up steam and pulled away from her berth astern of the burning Arizona, with a junior officer, Lieutenant Commander Francis Thomas of the Naval Reserve, in command.
+
+> **From the record.** Action report of USS Nevada, 15 December 1941
+>
+> "This officer got the ship underway within forty minutes and headed down channel. Although the Nevada had been torpedoed and had received one or two bomb hits, Lieutenant Commander Thomas correctly decided that it was urgently necessary to get underway to avoid destruction of the ship due to the proximity of the Arizona which was surrounded with burning oil and afire from stem to stern."
+>
+> Commanding officer's report to the Commander in Chief, Pacific Fleet
+
+The second wave, about 170 planes, came in shortly before nine and went for her. Dive bombers hit the Nevada again and again as she steamed down the channel. Rather than risk sinking in the narrow entrance and blocking the harbor, she was run aground at Hospital Point.
+
+![The Nevada aground and burning after the attack, with a harbor tug alongside, 7 December 1941. U.S. Navy, National Archives 80-G-33020, public domain.](photos/campaign/ch-80-G-33020.jpg)
+
+Across the harbor, three bombs struck the destroyer Shaw in floating dry dock. Fire spread through her forward section, and twenty minutes later her forward magazines blew up, tearing off her bow, in one of the most famous photographs of the day. The Pennsylvania, in the dry dock nearby, was hit too. By ten the last planes had turned north for the carriers.
+
+### What Was Lost
+
+All eight battleships in the harbor had been sunk or damaged. Nearly 350 American aircraft were destroyed or damaged on the ground and in the air. More than 2,300 Americans were dead, most of them sailors. Japan lost 29 aircraft and all five midget submarines.
+
+But the three American carriers, the targets Fuchida had been told mattered most, were not there. Neither were the fuel tanks, the repair shops or the submarine base, which the attack had largely left alone. Most of the sunken battleships would be raised and repaired. The oil in the tank farm, whose loss would have crippled the fleet, kept the Pacific Fleet at sea through the hard months ahead.
+
+![Burning oil from the attack billows across the harbor; through the smoke the capsized Oklahoma is barely visible. U.S. Navy, National Archives 80-G-19951, public domain.](photos/campaign/ch-80-G-19951.jpg)
+
+### Washington
 
 In Washington it was the middle of the day. That morning the fourteenth part had arrived, breaking off the negotiations, along with an order that it be delivered at exactly 1:00 p.m. The Army's chief of staff, General George Marshall, saw what the hour might mean and sent a warning to the Pacific commands. Atmospheric trouble blocked the Army's radio to Hawaii, so it went by commercial cable, and it reached Honolulu after the bombs had fallen.
 
@@ -139,6 +221,7 @@ Twelve days earlier, six carriers had slipped out of a fogbound bay in the Kuril
 * The President's message to the Emperor, the fourteen part reply and Hull's words to Nomura: Department of State Bulletin, Vol. V, No. 129, 13 December 1941 (ibiblio.org/hyperwar).
 * The Honolulu consulate's report of 6 December: U.S. Navy translation, Pearl Harbor Attack hearings.
 * Condor, Ward, Opana and the first warning: Hewitt Inquiry narrative, "The Japanese Attack on Pearl Harbor" (ibiblio.org/pha).
+* The ships and the airfields: U.S. Navy action reports of 7 December 1941, USS Oklahoma (18 Dec), USS West Virginia (statement of Lt. Comdr. T. T. Beattie), USS Arizona (13 Dec, statements of Lt. Comdr. S. G. Fuqua and Ens. J. D. Miller), USS Nevada (15 Dec), USS Shaw, and the Enterprise Air Group (15 Dec) (ibiblio.org/hyperwar, Pearl Harbor action reports).
 * Fuchida's account: U.S. Strategic Bombing Survey, *Interrogations of Japanese Officials*, Nav No. 29, Tokyo, 10 October 1945.
 * The launch point and the approach: U.S. Strategic Bombing Survey, *The Campaigns of the Pacific War* (1946).
 * Losses: National Park Service, Pearl Harbor National Memorial; The National WWII Museum.
