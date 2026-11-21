@@ -69,6 +69,9 @@ def check(s):
             if not (outside(ln[0]) and outside(ln[-1])): E('line: must run from the north edge of the map to the south edge (both ends past the edge)')
             if ln[0][1] < ln[-1][1]: E('line: runs north to south, German ground on the left')
             if crosses(ln): E('line: crosses itself')
+        if i == 0 and mr.get('lineStart'):                 # the front before the battle: Day 1's own map, two sources or more
+            if not mr.get('lineStartSources'): E("lineStart: needs lineStartSources, two or more, one of them the day's own situation map")
+            else: sourced('lineStart', mr.get('lineStartSources'), True, own_only=True)
         line = d['line']
         # moves
         mvs = mr.get('moves', []); orders = sorted(m.get('order', 0) for m in mvs)
