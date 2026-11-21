@@ -230,7 +230,7 @@ def write(zc, out):
     for i in range(n): ff.stdin.write((np.clip(zc.frame(i / FPS), 0, 1) * 255 + 0.5).astype(np.uint8).tobytes())
     ff.stdin.close(); ff.wait()
     import maproom_sound as snd
-    wav = out + '.wav'; snd.build(zc.events(), zc.T, wav)
+    wav = out + '.wav'; snd.build(zc.events(), zc.T, wav, seed=zc.res['rec']['day'])
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', silent, '-i', wav, '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-shortest', out], check=True)
     os.remove(silent); os.remove(wav); print('OK', out, f'{zc.T:.1f} s')
 def still(zc, t, fn): cv2.imwrite(fn, (np.clip(zc.frame(t), 0, 1)[..., ::-1] * 255).astype(np.uint8)); print('wrote', fn)

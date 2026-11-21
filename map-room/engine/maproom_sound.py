@@ -155,8 +155,12 @@ def master(x, name):
     pk = np.max(np.abs(x)); x = x / pk * 10 ** (-1.5 / 20)
     x *= env(len(x), 0.01, 0.8)
     wf.write(name, SR, (x * 32767).astype(np.int16)); print(name)
-def build(events, T, out, version='C'):
-    """one day's mix: A table only, B with the war room bed, C with the theme as well (the decided version)"""
+def build(events, T, out, version='C', seed=None):
+    """one day's mix: A table only, B with the war room bed, C with the theme as well (the decided version).
+    seed: the day number. It restarts the random generator for the day, so a day sounds the same whether it is rendered
+    alone or after other days in one run (the generator is shared by the whole module)."""
+    global rng
+    if seed is not None: rng = np.random.default_rng([16, int(seed)])
     tt = table_track(events, T); x = tt + hum(T) * 0.6 if version == 'A' else tt + bed(T) * 0.55
     if version == 'C': x = x + theme(T)
     master(x, out)
