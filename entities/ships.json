@@ -1035,6 +1035,14 @@
   "wikidata": "Q5631105",
   "source": "https://en.wikipedia.org/wiki/HMNZS_Kiwi_(T102)"
  },
+ "ship-hmnzs-leander": {
+  "name": "HMNZS Leander",
+  "kind": "Leander class light cruiser of the New Zealand Division",
+  "nation": "New Zealand",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMNZS_Leander",
+  "note": "Confirm this title is the 1931 cruiser article and not a disambiguation page."
+ },
  "ship-hmnzs-moa-t233": {
   "name": "HMNZS Moa (T233)",
   "kind": "minesweeper corvette",
@@ -1776,6 +1784,13 @@
    "Rohna"
   ]
  },
+ "ship-hnlms-de-ruyter-1935": {
+  "name": "HNLMS De Ruyter (1935)",
+  "kind": "Dutch light cruiser, Doorman's flagship",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HNLMS_De_Ruyter_(1935)"
+ },
  "ship-hnlms-de-zeven-provincien-1909": {
   "name": "HNLMS De Zeven Provincien (1909)",
   "kind": "coastal defence ship",
@@ -1785,6 +1800,13 @@
   "aka": [
    "Soerabaja"
   ]
+ },
+ "ship-hnlms-java-1921": {
+  "name": "HNLMS Java (1921)",
+  "kind": "Dutch light cruiser",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HNLMS_Java_(1921)"
  },
  "ship-hnlms-k-xvi": {
   "name": "HNLMS K XVI",
@@ -1806,6 +1828,13 @@
   "nation": "Thailand",
   "wikidata": "Q3275410",
   "source": "https://en.wikipedia.org/wiki/HTMS_Thonburi"
+ },
+ "ship-italian-auxiliary-cruiser-ramb-i": {
+  "name": "Ramb I",
+  "kind": "Italian auxiliary cruiser, converted banana boat",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_auxiliary_cruiser_Ramb_I"
  },
  "ship-italian-cruiser-alberico-da-barbiano": {
   "name": "Italian cruiser Alberico da Barbiano",

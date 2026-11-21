@@ -322,6 +322,15 @@
   "lat": 25.775,
   "lon": -80.186
  },
+ "place-bearcreek-montana": {
+  "name": "Bearcreek, Montana",
+  "kind": "coal mining town",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bearcreek,_Montana",
+  "lat": null,
+  "lon": null
+ },
  "place-beaver-creek-yukon": {
   "name": "Beaver Creek",
   "kind": "settlement",
@@ -2736,6 +2745,15 @@
   "lat": 49.4942,
   "lon": 0.1081
  },
+ "place-lebanon": {
+  "name": "Lebanon",
+  "kind": "country",
+  "nation": "Lebanon",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Lebanon",
+  "lat": null,
+  "lon": null
+ },
  "place-ledo-road": {
   "name": "Ledo Road",
   "kind": "military road from Assam, India, to the Burma Road",
@@ -2994,6 +3012,19 @@
   "source": "https://en.wikipedia.org/wiki/Majuro",
   "lat": 7.0918,
   "lon": 171.3802
+ },
+ "place-malacanang-palace": {
+  "name": "Malacañang Palace",
+  "kind": "presidential palace, Manila",
+  "nation": "Philippines",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Malaca%C3%B1ang_Palace",
+  "aka": [
+   "Malacanan Palace",
+   "Malacanang Palace"
+  ],
+  "lat": null,
+  "lon": null
  },
  "place-mamayev-kurgan": {
   "name": "Mamayev Kurgan",
@@ -4416,6 +4447,15 @@
    "New Reich Chancellery",
    "Neue Reichskanzlei"
   ]
+ },
+ "place-reichstag-building": {
+  "name": "Reichstag building",
+  "kind": "parliament building, Berlin",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Reichstag_building",
+  "lat": null,
+  "lon": null
  },
  "place-reykjavik": {
   "name": "Reykjavik",

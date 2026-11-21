@@ -222,6 +222,13 @@
   "wikidata": "Q4677231",
   "source": "https://en.wikipedia.org/wiki/Action_of_11_January_1944"
  },
+ "op-action-of-27-february-1941": {
+  "name": "Action of 27 February 1941",
+  "kind": "naval action off the Maldives",
+  "nation": "New Zealand",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Action_of_27_February_1941"
+ },
  "op-action-of-28-january-1945": {
   "name": "Action of 28 January 1945",
   "kind": "naval action",
@@ -1207,6 +1214,13 @@
   "wikidata": "Q1861428",
   "source": "https://en.wikipedia.org/wiki/Battle_of_the_Heligoland_Bight_(1939)"
  },
+ "op-battle-of-the-java-sea": {
+  "name": "Battle of the Java Sea",
+  "kind": "naval battle, 27 February 1942",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_the_Java_Sea"
+ },
  "op-battle-of-the-kerch-peninsula": {
   "name": "Battle of the Kerch Peninsula",
   "kind": "Soviet amphibious offensive and campaign",
@@ -1986,6 +2000,16 @@
   "nation": "Canada",
   "wikidata": "Q131538562",
   "source": "https://en.wikipedia.org/wiki/Extraterritoriality_of_Princess_Margriet%27s_birth"
+ },
+ "op-fabrikaktion": {
+  "name": "Fabrikaktion",
+  "kind": "Gestapo roundup of Jews in Berlin and other cities, February 1943",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fabrikaktion",
+  "aka": [
+   "Factory Action"
+  ]
  },
  "op-fall-of-barcelona": {
   "name": "Fall of Barcelona",
@@ -3641,6 +3665,13 @@
   "wikidata": "Q18393574",
   "source": "https://en.wikipedia.org/wiki/Rationing_in_the_United_States"
  },
+ "op-reichstag-fire": {
+  "name": "Reichstag fire",
+  "kind": "arson attack on the Reichstag, 27 February 1933",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Reichstag_fire"
+ },
  "op-reichstag-fire-decree": {
   "name": "Reichstag Fire Decree",
   "kind": "emergency decree suspending civil liberties",
@@ -3694,6 +3725,16 @@
   "source": "https://en.wikipedia.org/wiki/Romani_Holocaust",
   "aka": [
    "Porajmos"
+  ]
+ },
+ "op-rosenstrasse-protest": {
+  "name": "Rosenstrasse protest",
+  "kind": "protest by relatives of detained Jews, Berlin, 1943",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Rosenstrasse_protest",
+  "aka": [
+   "Rosenstraße protest"
   ]
  },
  "op-rovno-lutsk-offensive": {
@@ -3953,6 +3994,13 @@
   "aka": [
    "Sino-British New Equal Treaty"
   ]
+ },
+ "op-smith-mine-disaster": {
+  "name": "Smith Mine disaster",
+  "kind": "coal mine explosion, Bearcreek, Montana, 1943",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Smith_Mine_disaster"
  },
  "op-sole-survivor-policy": {
   "name": "Sole Survivor Policy",

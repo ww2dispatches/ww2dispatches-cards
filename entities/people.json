@@ -2900,6 +2900,13 @@
    "Blondie Hasler"
   ]
  },
+ "person-herbert-hoover": {
+  "name": "Herbert Hoover",
+  "kind": "former U.S. President",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Herbert_Hoover"
+ },
  "person-herbert-lange": {
   "name": "Herbert Lange",
   "kind": "SS officer, first commandant at Chelmno",
@@ -3365,6 +3372,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/James_F._Byrnes",
   "wikidata": "Q432726"
+ },
+ "person-james-forrestal": {
+  "name": "James Forrestal",
+  "kind": "U.S. Secretary of the Navy",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/James_Forrestal"
  },
  "person-james-h-howard": {
   "name": "James H. Howard",
@@ -4314,6 +4328,13 @@
   "wikidata": "Q122522",
   "source": "https://en.wikipedia.org/wiki/Leslie_Hore-Belisha"
  },
+ "person-lester-granger": {
+  "name": "Lester Granger",
+  "kind": "executive of the National Urban League",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Lester_Granger"
+ },
  "person-lewis-a-pick": {
   "name": "Lewis A. Pick",
   "kind": "U.S. Army engineer general, Ledo Road",
@@ -4484,6 +4505,16 @@
   "source": "https://en.wikipedia.org/wiki/Manton_S._Eddy",
   "wikidata": "Q323514"
  },
+ "person-manuel-azana": {
+  "name": "Manuel Azaña",
+  "kind": "President of the Spanish Republic",
+  "nation": "Spain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Manuel_Aza%C3%B1a",
+  "aka": [
+   "Manuel Azana"
+  ]
+ },
  "person-manuel-l-quezon": {
   "name": "Manuel L. Quezon",
   "kind": "President of the Philippine Commonwealth",
@@ -4547,6 +4578,13 @@
   "wikidata": "Q231923",
   "source": "https://en.wikipedia.org/wiki/Marian_Anderson"
  },
+ "person-marinus-van-der-lubbe": {
+  "name": "Marinus van der Lubbe",
+  "kind": "Dutch council communist, convicted for the Reichstag fire",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Marinus_van_der_Lubbe"
+ },
  "person-mario-arillo": {
   "name": "Mario Arillo",
   "kind": "Italian submarine commander",
@@ -4591,6 +4629,13 @@
   "nation": "Germany",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Martin_Harlinghausen"
+ },
+ "person-martin-kamen": {
+  "name": "Martin Kamen",
+  "kind": "American chemist, co-discoverer of carbon-14",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Martin_Kamen"
  },
  "person-martin-linge": {
   "name": "Martin Linge",
@@ -5836,6 +5881,16 @@
    "Sakae Oba"
   ]
  },
+ "person-sam-ruben": {
+  "name": "Sam Ruben",
+  "kind": "American chemist, co-discoverer of carbon-14",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sam_Ruben",
+  "aka": [
+   "Samuel Ruben"
+  ]
+ },
  "person-samuel-hoare-1st-viscount-templewood": {
   "name": "Samuel Hoare",
   "kind": "British Foreign Secretary in 1935",
@@ -6761,6 +6816,13 @@
    "William Sebold",
    "Harry Sawyer"
   ]
+ },
+ "person-william-g-walsh": {
+  "name": "William G. Walsh",
+  "kind": "U.S. Marine gunnery sergeant, Medal of Honor",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/William_G._Walsh"
  },
  "person-william-halsey-jr": {
   "name": "William Halsey",
