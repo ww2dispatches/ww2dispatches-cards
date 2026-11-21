@@ -1,6 +1,6 @@
 # The Map Room: format 2 (balcony and focus)
 
-**Status, 20 Nov 2026:** approved by Brian and built. The checker (`engine/check_series.py`), the engine (`engine/render_series.py`) and the overlay tool (`tools/trace/overlay.py`) all work to this document; `test/series-proof/` is a two day test series. The old fixed views format and its tools (`check_record.py`, `render_day.py` used alone) are retired. Still to do: days without a move are not rendered yet; aircraft moves are untested in the new engine.
+**Status, 20 Nov 2026:** approved by Brian and built. The checker (`engine/check_series.py`), the engine (`engine/render_series.py`) and the overlay tool (`tools/trace/overlay.py`) all work to this document; `test/series-proof/` is a two day test series. The old fixed views format and its tools (`check_record.py`, `render_day.py` used alone) are retired. Days without a move and aircraft missions were added on 21 Nov 2026.
 
 ## The idea
 A real map room has a huge table. From the balcony you see every block on it, spread out, but you cannot read them. You only read a block when you come down and stand over it. The clip does the same:
@@ -39,7 +39,7 @@ One entry per unit, written once. Days refer to units by `id` only, so a unit's 
 | `name` | The full official name. |
 | `label` | What the block says: the full name, 16 characters at most. Over 16, drop a word ("106th Infantry Division" becomes "106th Infantry"), never abbreviate (no Div, Inf, Pz, Abn, CCB). No SS unit names: show SS formations under their army or corps. No dashes. |
 | `nation` | `us`, `britain`, `germany` (`soviet`, `japan` for later series). |
-| `type` | `infantry`, `armor`, `artillery`, `airborne`, `fighter`, `medium_bomber`, `heavy_bomber`, `transport`, or a ship. Airborne divisions take `airborne` even when fighting on the ground. German parachute divisions that fought as infantry keep `infantry` unless the day is an actual drop. Any other kind of unit takes the closest block. |
+| `type` | `infantry`, `armor`, `artillery`, `airborne`, `fighter`, `medium_bomber`, `heavy_bomber`, `transport` (aircraft: see Aircraft), or a ship. Airborne divisions take `airborne` even when fighting on the ground. German parachute divisions that fought as infantry keep `infantry` unless the day is an actual drop. Any other kind of unit takes the closest block. |
 | `heavy`, `variant` | Optional, as before (the Tiger; the B 29). |
 | `parent` | The corps and army it belonged to. Used by the fact check and for crowded ground (see Spacing). |
 | `sources` | One or more for the unit's identity and command. |
@@ -81,9 +81,13 @@ A roster of 15 to 25 units suits a land battle of this size. Divisions are the n
 | `advance`, `fall_back` | The rake pushes the block to `to`. | `to`, optional `drives` |
 | `arrive` | The block slides in from a map edge to `to`. | `to`, `enters` |
 | `leave` | The rake takes the block off the table (surrendered, destroyed, withdrawn). | `why` |
-| `air_mission`, `grounded` | As before: the aircraft block goes out to `target` and back, or stays with GROUNDED pencilled beside it. | `target` |
+| `air_mission` | Aircraft only. The rake pushes the aircraft block a short way in from the frame edge toward its bases; a dashed black grease pencil track is drawn one dash at a time to the target, a half circle turn around it, and back to the block; a rake reaching from beyond the edge pulls the block back out; the track fades. | `target`, `enters` |
 
 **Driven blocks (Brian, 20 Nov 2026).** When an attack goes into ground an enemy unit holds, list that unit under `drives` with where the sources put it that night. On the table the attacker meets it, with a knock, and carries it along. **If the way straight back is blocked, the driven block slides aside** along the front, on its own side of the new line. An attacker never ends against a friendly block by passing through an enemy one.
+
+**Aircraft (Brian, 21 Nov 2026).** Aircraft are on the roster but never set on the table: an aircraft block appears only for its `air_mission`. `target` is the drop zone or the place struck, and must sit inside the day's focus. `enters` is the frame edge toward its bases (west for the Bastogne drops). The engine parks the block just inside that edge, clear of every ground block, where the least of its track is hidden under blocks. Nothing but pencil crosses the battle area, so no route has to be found between blocks. Air tracks are black so they never read as the red front line. There is no grounded move: weather days simply have no aircraft. For an air attack whose targets are off the map (Bodenplatte, 1 Jan), put the target at the nearest point inside the focus on the way to them.
+
+**Quiet days.** A day with no moves is still a clip: the balcony only, about 7 seconds. The morning line is wiped to a ghost and the night line drawn, then the closing strip. Shifts are already in place when it opens. If nothing at all changed, the checker prints a NOTE (not an error) asking the Campaign Series chat to confirm the front really held still.
 
 **Knock rule.** A knock only when something touches something: the rake meeting a block, or a block meeting a block.
 

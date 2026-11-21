@@ -103,14 +103,15 @@ class Day:
     # ---------- where things are ----------
     def xy(self, ll): return self.table.XY(ll)
     def rest_from(self, p):
-        return None if p['move'] == 'arrive' else self.xy(p['from'])
+        return None if p['move'] in ('arrive', 'air_mission') else self.xy(p['from'])
     def rest_to(self, p):
-        if p['move'] == 'surrender': return None
+        if p['move'] in ('surrender', 'air_mission'): return None
         if p['move'] == 'driven': return self.xy(p['to'])
         if p['move'] in ('advance', 'fall_back', 'arrive'): return self.snap_to(p)
         return self.xy(p['from'])
     def snap_to(self, p):
         """with contact, the mover stops touching the other block along the main direction of travel"""
+        if p['move'] == 'air_mission': return self.park_spot(p)
         to = self.xy(p['to'])
         if not p.get('contact'): return to
         q = self.by_id[p['contact']]; tq = self.rest_to(q) if q['id'] != p['id'] else None
@@ -118,6 +119,38 @@ class Day:
         d = (to[0] - fr[0], to[1] - fr[1])
         if abs(d[0]) >= abs(d[1]): return (tq[0] - math.copysign(BS, d[0] or 1), to[1])
         return (to[0], tq[1] - math.copysign(BS, d[1] or 1))
+    def park_spot(self, p):
+        """an aircraft block stops a short way in from the frame edge it enters by, level with its target where that is
+        clear of every ground block, otherwise the nearest clear place along that edge"""
+        if '_park' in p: return p['_park']
+        T = self.xy(p['target']); step = {'north': (0, 1), 'south': (0, -1), 'east': (1, 0), 'west': (-1, 0)}[p['enters']]
+        ground = [q for q in (self.rest_from(o) for o in self.pieces if o['move'] != 'air_mission') if q] + \
+                 [q for q in (self.rest_to(o) for o in self.pieces if o['move'] != 'air_mission') if q]
+        def clear(c): return all(max(abs(c[0] - g[0]), abs(c[1] - g[1])) >= BS * 1.08 for g in ground)
+        cands = []
+        for k in range(0, 60):
+            off = (k + 1) // 2 * 0.2 * (1 if k % 2 else -1)                # 0, +0.2, -0.2, +0.4 ...
+            c = (T[0] + abs(step[1]) * off, T[1] + abs(step[0]) * off)
+            if not in_zone(c): continue
+            while in_zone((c[0] + step[0] * 0.05, c[1] + step[1] * 0.05)): c = (c[0] + step[0] * 0.05, c[1] + step[1] * 0.05)
+            if clear(c) and math.hypot(c[0] - T[0], c[1] - T[1]) > BS * 2.2: cands.append((k, c))
+        def hidden(c):
+            """how much of the track would lie under ground blocks (the drop zone turn is left out: its target is a block)"""
+            tr = self.air_track(p, c); legs = tr[:31] + tr[-31:]
+            return sum(any(max(abs(q[0] - g[0]), abs(q[1] - g[1])) < BS / 2 + 0.06 for g in ground) for q in legs) / len(legs)
+        best = min(cands, key=lambda kc: (round(hidden(kc[1]), 2), kc[0]))[1] if cands else None
+        p['_park'] = best or c; return p['_park']
+    def air_track(self, p, P=None):
+        """the flight: from the block toward the target, a half circle round the drop zone, and back (table units)"""
+        P = P or self.park_spot(p); T = self.xy(p['target'])
+        d = (T[0] - P[0], T[1] - P[1]); L = math.hypot(*d); u = (d[0] / L, d[1] / L); n = (-u[1], u[0]); r = BS * 0.95; w = BS * 0.28
+        def at(o, a, b): return (o[0] + u[0] * a + n[0] * b, o[1] + u[1] * a + n[1] * b)
+        out = [at(P, BS / 2 + 0.12 + (L - BS / 2 - 0.12) * i / 30, w + (r - w) * (i / 30) ** 2) for i in range(31)]
+        turn = [at(T, r * math.sin(a), r * math.cos(a)) for a in [math.pi * i / 40 for i in range(1, 40)]]
+        back = [at(P, BS / 2 + 0.12 + (L - BS / 2 - 0.12) * (30 - i) / 30, -(w + (r - w) * ((30 - i) / 30) ** 2)) for i in range(31)]
+        return out + turn + back
+    def rake_angles(self):
+        return sorted({ph['angle'] for s in self.slots for ph in s.get('phases', [])})
     def anchor(self, p):
         """where the block's sprite is rendered: its first resting place, in a table cell"""
         return cell(self.rest_from(p) or self.snap_to(p))
@@ -150,7 +183,24 @@ class Day:
         movers = sorted([p for p in self.pieces if isinstance(p.get('order'), int)], key=lambda p: p['order'])
         for p in movers:
             mv = p['move']; s = {'id': p['id'], 'move': mv, 't0': t}
-            if mv in ('advance', 'fall_back', 'arrive', 'surrender'):
+            if mv == 'air_mission':
+                a, b = self.arrive_start(p), self.park_spot(p); c = a
+                def phase(t, a, b, mode):
+                    trav = unit((b[0] - a[0], b[1] - a[1]))
+                    ang = rake_angle(trav) if mode == 'push' else rake_angle((-trav[0], -trav[1]))
+                    ph = dict(a=a, b=b, mode=mode, angle=ang, t0=t, t_move=t + B['rake_enter'], t_end=t + B['rake_enter'] + B['rake_move'],
+                              t_out=t + B['rake_enter'] + B['rake_move'] + B['rake_hold'])
+                    ph['t_done'] = ph['t_out'] + B['rake_exit']
+                    self.events.extend([(t, 'rake_in', 1.0), (ph['t_move'] - 0.01, 'tap', 1.0), (ph['t_move'], 'push', B['rake_move']), (ph['t_out'], 'rake_out', 1.0)])
+                    return ph
+                p1 = phase(t, a, b, 'push')
+                tk0 = p1['t_out'] + B['air_pause']; tk1 = tk0 + B['air_track']
+                self.events.append((tk0, 'dashes', B['air_track']))
+                p2 = phase(tk1 + B['air_pause'], b, c, 'pull')
+                s.update(phases=[p1, p2], track=(tk0, tk1), fade=(p2['t_end'], p2['t_end'] + B['air_fade']), t_done=p2['t_done'])
+                self.events.append((p2['t_end'], 'wipe', B['air_fade']))
+                t = p2['t_done'] + 0.2
+            elif mv in ('advance', 'fall_back', 'arrive', 'surrender'):
                 if mv == 'arrive': a, b = self.arrive_start(p), self.snap_to(p)
                 elif mv == 'surrender': a, b = self.rest_from(p), self.surrender_end(p)
                 else: a, b = self.rest_from(p), self.snap_to(p)
@@ -158,16 +208,11 @@ class Day:
                          t_move=t + B['rake_enter'], t_end=t + B['rake_enter'] + B['rake_move'],
                          t_out=t + B['rake_enter'] + B['rake_move'] + B['rake_hold'],
                          t_done=t + B['rake_enter'] + B['rake_move'] + B['rake_hold'] + B['rake_exit'])
+                s['phases'] = [dict(a=a, b=b, mode='push', angle=s['rake'], t0=t, t_move=s['t_move'], t_end=s['t_end'], t_out=s['t_out'], t_done=s['t_done'])]
                 self.events += [(t, 'rake_in', 1.0), (s['t_move'] - 0.01, 'tap', 1.0), (s['t_move'], 'push', B['rake_move']),
                                 (s['t_out'], 'rake_out', 1.0)]
                 if p.get('contact'): self.events.append((s['t_end'] - 0.02, 'knock', 0.8))
                 t += B['push_gap']
-            elif mv == 'air_mission':
-                a = self.rest_from(p); b = self.xy(p['target'])
-                s.update(a=a, b=b, t_move=t, t_end=t + B['air_out'], t_back=t + B['air_out'] + B['air_dwell'],
-                         t_done=t + B['air_out'] + B['air_dwell'] + B['air_back'])
-                self.events += [(t, 'glide', B['air_out']), (s['t_back'], 'glide', B['air_back'])]
-                t = s['t_done'] + B['mark_gap']
             elif mv in ('cut_off', 'grounded'):
                 dur = B['ring'] if mv == 'cut_off' else B['grounded']
                 s.update(t_done=t + dur); self.events.append((t, 'pencil', dur)); t += dur + B['mark_gap']
@@ -204,28 +249,31 @@ class Day:
             f = (k - sc) / max(1 - sc, 1e-6); return (a[0] + (b[0] - a[0]) * f, a[1] + (b[1] - a[1]) * f)
         if s is None or mv in ('hold', 'cut_off', 'grounded'): return self.rest_from(p)
         if mv == 'air_mission':
-            a, b = s['a'], s['b']
-            if t < s['t_move']: return a
-            if t < s['t_end']: k = ease((t - s['t_move']) / B['air_out'])
-            elif t < s['t_back']: k = 1.0
-            else: k = 1 - ease((t - s['t_back']) / B['air_back'])
+            p1, p2 = s['phases']
+            if t < p1['t_move']: return p1['a']
+            if t < p1['t_end']: k = ease((t - p1['t_move']) / B['rake_move']); a, b = p1['a'], p1['b']
+            elif t < p2['t_move']: return p1['b']
+            elif t < p2['t_end']: k = ease((t - p2['t_move']) / B['rake_move']); a, b = p2['a'], p2['b']
+            else: return None
             return (a[0] + (b[0] - a[0]) * k, a[1] + (b[1] - a[1]) * k)
         a, b = s['a'], s['b']
         if mv == 'arrive' and t < s['t_move']: return a
         k = ease((t - s['t_move']) / B['rake_move'])
         return (a[0] + (b[0] - a[0]) * k, a[1] + (b[1] - a[1]) * k)
     def rake(self, t):
-        """(head position, angle, the piece it pushes) at time t, or None"""
+        """(head position, angle, the piece it moves, push or pull) at time t, or None. A push comes from behind the move;
+        a pull reaches from beyond the frame edge, hooks the block's far face and draws it back out"""
         for s in self.slots:
-            if 'rake' not in s or not (s['t0'] <= t < s['t_done']): continue
-            p = self.by_id[s['id']]; ang = math.radians(s['rake'])
-            back = (math.cos(ang), math.sin(ang))                      # from the block toward the hand
-            bp = self.pos(p, t); off = BS / 2 + RAKE_GAP
-            # the head sits against the block's back face; a diagonal push meets the corner, so step back a little more
-            off *= 1.0 / max(abs(back[0]), abs(back[1]))
-            head = (bp[0] + back[0] * off, bp[1] + back[1] * off)
-            if t < s['t_move']: f = 9.0 * (1 - ease((t - s['t0']) / B['rake_enter']))
-            elif t < s['t_out']: f = 0.0
-            else: f = 9.0 * ease((t - s['t_out']) / B['rake_exit'])
-            return (head[0] + back[0] * f, head[1] + back[1] * f), s['rake'], s['id']
+            for ph in s.get('phases', []):
+                if not (ph['t0'] <= t < ph['t_done']): continue
+                p = self.by_id[s['id']]; ang = math.radians(ph['angle'])
+                back = (math.cos(ang), math.sin(ang))                      # from the head toward the hand
+                bp = self.pos(p, t) or ph['b']; off = BS / 2 + RAKE_GAP
+                off *= 1.0 / max(abs(back[0]), abs(back[1]))               # a diagonal push meets the corner
+                sgn = 1 if ph['mode'] == 'push' else -1
+                head = (bp[0] + back[0] * off * sgn, bp[1] + back[1] * off * sgn)
+                if t < ph['t_move']: f = 9.0 * (1 - ease((t - ph['t0']) / B['rake_enter']))
+                elif t < ph['t_out']: f = 0.0
+                else: f = 9.0 * ease((t - ph['t_out']) / B['rake_exit'])
+                return (head[0] + back[0] * f, head[1] + back[1] * f), ph['angle'], s['id'], ph['mode']
         return None

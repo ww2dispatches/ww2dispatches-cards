@@ -17,7 +17,6 @@ def main():
     for i, d in enumerate(s.days):
         if want and d['n'] not in want: continue
         res = s.compile(i, work); name = os.path.splitext(os.path.basename(d['file']))[0]
-        if res['focus'] is None: print(name, 'has no moves; not rendered'); continue
         vdir = os.path.join(work, 'views', res['vname']); os.makedirs(vdir, exist_ok=True); mapimg = os.path.join(vdir, 'map.png')
         if not os.path.exists(mapimg): draw_map.draw(s.campaign, 'main', mapimg, res['table'])
         env = {**os.environ, 'MAPROOM_TABLE': res['table'], 'MAPROOM_VNAME': res['vname'], 'MAPROOM_MAPIMG': mapimg, 'MAPROOM_STAMP': 'TEST' if test else ''}

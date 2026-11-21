@@ -70,7 +70,14 @@ def check(s):
             u = m.get('unit'); who = f"move {u}"
             if u not in s.units: continue
             mv = m.get('move')
-            if mv not in ('advance', 'fall_back', 'arrive', 'leave', 'air_mission', 'grounded'): E(f'{who}: unknown move {mv}'); continue
+            if mv == 'grounded': E(f'{who}: grounded is not used (Brian, 21 Nov 2026); leave the aircraft off the table'); continue
+            if mv not in ('advance', 'fall_back', 'arrive', 'leave', 'air_mission'): E(f'{who}: unknown move {mv}'); continue
+            if mv == 'air_mission':
+                if s.units[u]['type'] not in AIR: E(f'{who}: air_mission is for aircraft only')
+                if not m.get('target'): E(f'{who}: needs target, the [lon, lat] of the drop zone or the place struck')
+                if m.get('enters') not in ('north', 'south', 'east', 'west'): E(f'{who}: needs enters, the frame edge toward its bases')
+                if m.get('drives'): E(f'{who}: aircraft do not drive blocks')
+            elif s.units[u]['type'] in AIR: E(f'{who}: aircraft only fly air_mission (they are not kept on the table)')
             sourced(who, m.get('sources'), True)
             if mv in ('advance', 'fall_back'):
                 if u in d['am_true'] and 'to' in m:
@@ -85,7 +92,9 @@ def check(s):
                 x = dv.get('unit')
                 if x in s.units and u in s.units and s.allied(x) == s.allied(u): E(f'{who}: drives {x}, which is on its own side')
         for sh in mr.get('shifts', []): sourced(f"shift {sh.get('unit')}", sh.get('sources'), False)
-        for st in mr.get('set', []): sourced(f"set {st.get('unit')}", st.get('sources'), False)
+        for st in mr.get('set', []):
+            sourced(f"set {st.get('unit')}", st.get('sources'), False)
+            if st.get('unit') in s.units and s.units[st['unit']]['type'] in AIR: E(f"set {st['unit']}: aircraft are not kept on the table; they appear only on their air_mission day")
         if i > 0 and mr.get('lineStart'): E('lineStart belongs to day 1 only')
         # sides, spacing, the table
         for when, true, shown, l, pk in (('morning', d['am_true'], d['am'], d['lineAM'], d['pocketsAM']), ('night', d['pm_true'], d['pm'], line, d['pockets'])):
@@ -117,16 +126,18 @@ def check(s):
                     if S.cheb(q, pv) < s.block * 0.9: E(f"move {u}: passes through {v} ({s.units[v]['label']}) on the way; list it under drives, or check the positions"); break
         ok, bad = s.fits(d)
         if not ok: E(f"the day's moves do not fit one focus ({', '.join(bad)} would be outside the close view); pick one story for the day")
-        if not mvs and i > 0 and not mr.get('shifts') and line == d['lineAM']: E('nothing changes today')
+        if not mvs and i > 0 and not mr.get('shifts') and line == d['lineAM']:
+            s.notes.setdefault(i, []).append('nothing changes on the table today: a balcony only clip with the line unchanged; confirm the front really held still')
 
 if __name__ == '__main__':
-    s = S.Series(sys.argv[1]); re_ = roster_errors(s); check(s)
+    s = S.Series(sys.argv[1]); s.notes = {}; re_ = roster_errors(s); check(s)
     for e in re_: print('  ERROR', e)
     bad = len(re_) > 0
     for i, d in enumerate(s.days):
         errs = s.errors.get(i, []); name = os.path.basename(d['file'])
         print(f"{name}: {'OK' if not errs else str(len(errs)) + ' errors'}  ({len(d['pm'])} blocks, {len(d['mr'].get('moves', []))} moves)")
         for e in errs: print('  ERROR', e)
+        for n_ in s.notes.get(i, []): print('  NOTE', n_)
         bad = bad or bool(errs)
     print('series passes' if not bad else 'series has errors; nothing is rendered until they are fixed')
     sys.exit(1 if bad else 0)

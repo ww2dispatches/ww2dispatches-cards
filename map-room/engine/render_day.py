@@ -58,11 +58,11 @@ def main():
     # rake sprites, one per angle used
     import clip
     ra = clip.rake_anchor()
-    for s in d.slots:
-        if 'rake' in s:
-            spec = {'angle': s['rake'], 'x': ra[0], 'y': ra[1]}
-            scene('rake', spec, os.path.join(vdir, 'rake', f"rake-{s['rake']}.png"), a.samples, mapimg)
-            scene('rakemask', spec, os.path.join(vdir, 'rake', f"rmsk-{s['rake']}.png"), a.samples, mapimg)
+    for ang in d.rake_angles():
+        spec = {'angle': ang, 'x': ra[0], 'y': ra[1]}
+        if not os.path.exists(os.path.join(vdir, 'rake', f"rake-{ang}.png")):
+            scene('rake', spec, os.path.join(vdir, 'rake', f"rake-{ang}.png"), a.samples, mapimg)
+            scene('rakemask', spec, os.path.join(vdir, 'rake', f"rmsk-{ang}.png"), a.samples, mapimg)
     # overlays
     ov = os.path.join(work, 'ov', os.path.splitext(os.path.basename(a.day))[0])
     cmd = [sys.executable, os.path.join(HERE, 'ov_shoot.py'), a.day, ov] + ([a.photo] if a.photo else [])

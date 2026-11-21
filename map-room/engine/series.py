@@ -95,6 +95,8 @@ class Series:
                 u = m.get('unit')
                 if not known(u, 'move'): continue
                 mv = m.get('move')
+                if mv == 'air_mission':                 # aircraft are on the table only for their mission
+                    d.setdefault('air', []).append(m); continue
                 if mv == 'arrive':
                     if u in am_true: self.err(i, f'arrive: {u} is already on the table')
                     pm_true[u] = tuple(m['to'])
@@ -117,7 +119,7 @@ class Series:
         """center of the day's moves, snapped to a coarse grid so days in the same place reuse their renders"""
         if d['mr'].get('focus'): c = d['mr']['focus']
         else:
-            pts = [p for u in d['movers'] for p in (d['am'].get(u), d['pm'].get(u)) if p]
+            pts = [p for u in d['movers'] for p in (d['am'].get(u), d['pm'].get(u)) if p] + [tuple(m['target']) for m in d.get('air', []) if m.get('target')]
             if not pts: return None
             c = ((min(p[0] for p in pts) + max(p[0] for p in pts)) / 2, (min(p[1] for p in pts) + max(p[1] for p in pts)) / 2)
         return (round(c[0] / 0.05) * 0.05, round(c[1] / 0.05) * 0.05)
@@ -127,8 +129,11 @@ class Series:
         KX = D.BS * KMX / self.block; KY = D.BS * KMY / self.block
         return {'LON0': round(f[0] - ax / KX, 4), 'LAT0': round(f[1] - ay / KY, 4), 'KX': round(KX, 3), 'KY': round(KY, 3)}
     def compile(self, i, work):
-        """write what the renderers need for day i into <work>/days/<day>/: the close table, its record, and every block"""
-        d = self.days[i]; mr = d['mr']; f = self.focus(d)
+        """write what the renderers need for day i into <work>/days/<day>/: the close table, its record, and every block.
+        A quiet day (no moves) still gets a close table, at the balcony's centre, shared by every quiet day: its render
+        lights the drawn balcony frames, and the camera never comes down"""
+        d = self.days[i]; mr = d['mr']; f = self.focus(d); quiet = f is None
+        if quiet: c = self.cfg['balcony']['center']; f = (round(c[0] / 0.05) * 0.05, round(c[1] / 0.05) * 0.05)
         out = os.path.join(work, 'days', os.path.splitext(os.path.basename(d['file']))[0]); os.makedirs(out, exist_ok=True)
         def piece(u, **k):
             U = self.units[u]; p = {'id': u, 'nation': U['nation'], 'type': U['type'], 'label': U['label']}
@@ -136,14 +141,13 @@ class Series:
                 if x in U: p[x] = U[x]
             p.update(k); return p
         allp = [piece(u, am=d['am'].get(u), pm=d['pm'].get(u)) for u in sorted(set(d['am']) | set(d['pm']))]
-        res = {'dir': out, 'focus': f, 'all': allp, 'lineAM': d['lineAM'], 'linePM': d['line'], 'vname': None, 'pocketsAM': d['pocketsAM'], 'pockets': d['pockets'], 'rec': d['rec'], 'mr': mr}
-        json.dump({'all': allp, 'lineAM': d['lineAM'], 'linePM': d['line'], 'focus': f}, open(os.path.join(out, 'table-state.json'), 'w'))
-        if f is None: return res
+        res = {'dir': out, 'focus': f, 'quiet': quiet, 'all': allp, 'lineAM': d['lineAM'], 'linePM': d['line'], 'vname': None, 'pocketsAM': d['pocketsAM'], 'pockets': d['pockets'], 'rec': d['rec'], 'mr': mr}
+        json.dump({'all': allp, 'lineAM': d['lineAM'], 'linePM': d['line'], 'focus': f, 'quiet': quiet}, open(os.path.join(out, 'table-state.json'), 'w'))
         tj = self.table(f); tpath = os.path.join(out, 'table.json'); json.dump(tj, open(tpath, 'w'))
         t = D.Table(tpath); pieces = []; driven = {}
         for m in mr.get('moves', []):
             for dv in m.get('drives', []): driven[dv['unit']] = m['unit']
-        order = {m['unit']: m for m in mr.get('moves', [])}
+        order = {m['unit']: m for m in mr.get('moves', []) if m.get('move') != 'air_mission'}
         for p in allp:
             u = p['id']; a, b = p['am'], p['pm']
             vis = any(q and self._in_view(t, q) for q in (a, b))
@@ -158,6 +162,8 @@ class Series:
             elif u in driven: q = piece(u, move='driven', by=driven[u], to=list(b)); q['from'] = list(a)
             else: q = piece(u, move='hold'); q['from'] = list(a)
             pieces.append(q)
+        for m in d.get('air', []):
+            pieces.append(piece(m['unit'], move='air_mission', order=m['order'], enters=m['enters'], target=list(m['target']), sources=m.get('sources', [])))
         rec = {k: d['rec'].get(k) for k in ('campaign', 'seriesName', 'day', 'days', 'date', 'subtitle')}
         rec['seriesName'] = rec.get('seriesName') or self.cfg.get('name'); rec['days'] = rec.get('days') or self.cfg.get('days')
         rec['mapRoom'] = {'asOf': mr.get('asOf', ''), 'lineAM': d['lineAM'], 'linePM': d['line'], 'lineSources': mr.get('lineSources', []), 'pieces': pieces}
@@ -171,6 +177,7 @@ class Series:
         """every place a mover stands today is inside the close view's block zone"""
         f = self.focus(d)
         if f is None: return True, []
+        bad0 = []
         t = D.Table.__new__(D.Table); tj = self.table(f); t.LON0, t.LAT0, t.KX, t.KY = tj['LON0'], tj['LAT0'], tj['KX'], tj['KY']
         bz = D.TPL['block_zone']; bad = []
         for u in d['movers']:
@@ -178,4 +185,6 @@ class Series:
             if q is None: continue
             x0, y0, x1, y1 = D.block_box(t.XY(q), 1.0)
             if x0 < bz['left'] or x1 > bz['right'] or y0 < bz['top'] or y1 > bz['bottom']: bad.append(u)
+        for m in d.get('air', []):                              # the target must be well inside the close view
+            if m.get('target') and not D.in_zone(t.XY(m['target'])): bad.append(m['unit'] + ' (its target)')
         return not bad, bad

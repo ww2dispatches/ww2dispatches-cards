@@ -76,6 +76,7 @@ def warp(sheet): return cv2.warpPerspective(sheet, WARP, (W, H), flags=cv2.INTER
 _rng = np.random.default_rng(5)
 GRAIN = cv2.GaussianBlur(_rng.standard_normal((H, W)).astype(np.float32), (0, 0), 1.8); GRAIN = (GRAIN - GRAIN.mean()) / GRAIN.std()
 WAX = np.array([0.60, 0.09, 0.07], np.float32)
+AIR_INK = np.array([0.09, 0.08, 0.08], np.float32)     # air tracks in black grease pencil, apart from the red front
 LINE_W = 0.05                                       # grease pencil width in table units
 def catmull(P, n=16, closed=False):
     P = np.array(P, float)
@@ -103,6 +104,16 @@ def stroke(pts_xy, width=LINE_W, frac=1.0):
     m = np.zeros((SH, SW), np.uint8)
     if len(pts) >= 2: cv2.polylines(m, [np.round(pts * 16).astype(np.int32)], False, 255, max(1, int(width * PPU)), cv2.LINE_AA, shift=4)
     return warp(m.astype(np.float32) / 255)
+def dashes(pts_xy, frac=1.0, dash=0.20, gap=0.13, width=LINE_W):
+    """a dashed pencil track (table units), drawn one dash at a time up to `frac` of its length"""
+    pts = np.array([to_sheet(p) for p in pts_xy]); seg = np.r_[0, np.cumsum(np.linalg.norm(np.diff(pts, axis=0), axis=1))]
+    L = frac * seg[-1]; dpx, gpx = dash * PPU, gap * PPU; m = np.zeros((SH, SW), np.uint8); s0 = 0.0
+    def at(x): k = min(max(np.searchsorted(seg, x), 1), len(pts) - 1); u = (x - seg[k - 1]) / max(seg[k] - seg[k - 1], 1e-6); return pts[k - 1] + (pts[k] - pts[k - 1]) * u
+    while s0 < L:
+        s1 = min(s0 + dpx, L); xs = [s0] + [v for v in seg if s0 < v < s1] + [s1]
+        q = np.array([at(x) for x in xs]); cv2.polylines(m, [np.round(q * 16).astype(np.int32)], False, 255, max(1, int(width * PPU)), cv2.LINE_AA, shift=4)
+        s0 += dpx + gpx
+    return warp(m.astype(np.float32) / 255)
 def wax(a):
     a = a * np.clip(0.90 + 0.12 * GRAIN, 0, 1); a *= np.clip((GRAIN + 2.7) / 0.8, 0, 1); return a[..., None]
 def paint(F, a, col=WAX):
@@ -128,9 +139,8 @@ class Clip:
             self.spr[p['id']] = Sprite(rd(os.path.join(vdir, 'sprites', f'blk-{key}.png')), rd(os.path.join(vdir, 'sprites', f'msk-{key}.png')), platepad, c)
         self.rake = {}
         ra = rake_anchor()
-        for s in d.slots:
-            if 'rake' in s and s['rake'] not in self.rake:
-                self.rake[s['rake']] = Sprite(rd(os.path.join(vdir, 'rake', f"rake-{s['rake']}.png")), rd(os.path.join(vdir, 'rake', f"rmsk-{s['rake']}.png")), platepad, ra)
+        for ang in d.rake_angles():
+            self.rake[ang] = Sprite(rd(os.path.join(vdir, 'rake', f"rake-{ang}.png")), rd(os.path.join(vdir, 'rake', f"rmsk-{ang}.png")), platepad, ra)
         # overview: the whole battle before the push in
         if d.view:
             self.main_plate = rd(os.path.join(work, 'views', 'main', 'plate.png'))[..., :3]
@@ -192,6 +202,8 @@ class Clip:
                 self.marks[p['id']] = ('ring', jitter(np.array(pts), 7, 0.02), s)
             elif s['move'] == 'grounded':
                 self.marks[p['id']] = ('text', self._text_spot(p, 'GROUNDED'), s)
+            elif s['move'] == 'air_mission':
+                self.marks[p['id']] = ('track', d.air_track(p), s)
 
     def _text_spot(self, p, text, height=0.36):
         """beside the block, in the first of east, west, below, above that is clear of every other block and in the zone"""
@@ -228,6 +240,11 @@ class Clip:
                     for r in self.PM_POCKETS: m = np.maximum(m, stroke(r, frac=(f - 0.75) / 0.25))
                 paint(F, wax(m))
         for pid, (kind, geo, s) in self.marks.items():
+            if kind == 'track':
+                (a0, a1), (f0, f1) = s['track'], s['fade']
+                if t < a0 or t >= f1: continue
+                f = min(1.0, (t - a0) / (a1 - a0)); fade = 1.0 if t < f0 else 1 - D.ease((t - f0) / (f1 - f0))
+                paint(F, wax(dashes(geo, f)) * fade, AIR_INK); continue
             if t < s['t0']: continue
             f = min(1.0, (t - s['t0']) / (s['t_done'] - s['t0']))
             paint(F, wax(stroke(geo, frac=f) if kind == 'ring' else text_mask('GROUNDED', geo, frac=f)))
@@ -237,9 +254,11 @@ class Clip:
         rk = d.rake(t); order = sorted(d.pieces, key=lambda p: -((d.rest_from(p) or d.snap_to(p))[1]))
         drawn_rake = False
         for p in order:
-            if rk and rk[2] == p['id'] and not drawn_rake: self.rake[rk[1]].draw(F, rk[0]); drawn_rake = True
+            pull = rk and rk[2] == p['id'] and rk[3] == 'pull'
+            if rk and rk[2] == p['id'] and not drawn_rake and not pull: self.rake[rk[1]].draw(F, rk[0]); drawn_rake = True
             q = d.pos(p, t)
             if q is not None: self.spr[p['id']].draw(F, q)
+            if pull and not drawn_rake: self.rake[rk[1]].draw(F, rk[0]); drawn_rake = True   # a pull reaches over the block
         if rk and not drawn_rake: self.rake[rk[1]].draw(F, rk[0])
         F = zoom(F, 1.0 + (D.TPL['push_in'] - 1) * min(1, max(0, (t - d.t_table) / max(d.T - d.t_table, 1e-3))))
         if not ov: return F

@@ -231,6 +231,17 @@
    "sources": [
     "PROOF ONLY: from general knowledge, not yet checked"
    ]
+  },
+  {
+   "id": "ixtcc",
+   "name": "IX Troop Carrier Command",
+   "label": "Troop Carrier",
+   "nation": "us",
+   "type": "transport",
+   "parent": "Ninth Air Force",
+   "sources": [
+    "PROOF ONLY: from general knowledge, not yet checked"
+   ]
   }
  ]
 }

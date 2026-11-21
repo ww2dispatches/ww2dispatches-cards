@@ -129,6 +129,9 @@ def table_track(events=None, T=T):
         elif kind == 'knock': put(out, knock(0.6 * g), t0)
         elif kind == 'glide': put(out, slide(g, 0.8), t0, 0.5)
         elif kind == 'pencil': put(out, pencil(g), t0)
+        elif kind == 'dashes':                       # a dash at a time: short pencil strokes
+            k = 0.0
+            while k < g - 0.12: put(out, pencil(0.16), t0 + k, 0.8); k += 0.2      # pencil() needs 0.12 s for its release
         elif kind == 'wipe': put(out, wipe(g), t0)
     return room(out, 0.15)
 OPS_ROOM = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'kit', 'sound', 'declass_ambience_ops_room_v02.wav')

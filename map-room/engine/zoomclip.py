@@ -41,10 +41,14 @@ class ZoomClip:
         self.grain = 1 + 0.018 * g[..., None] / g.std()
         # times
         d0 = d.t_table                                    # clip time when the close table starts
+        self.quiet = res.get('quiet', False)
         self.t_bal = 1.5; self.t_push = 2.9; self.t_close = 4.6
         self.tau_end = d.t_draw + D.B['draw'] + 0.6
         self.t_pull = self.t_close + (self.tau_end - d0); self.t_up = self.t_pull + 1.6; self.T = self.t_up + 2.2
         self.shift = self.t_close - d0
+        if self.quiet:                                    # balcony only: hold, wipe the morning line, draw the night line
+            self.q_wipe = 3.3; self.q_draw = self.q_wipe + D.B['wipe']; self.q_end = self.q_draw + D.B['draw']
+            self.T = self.q_end + D.B['end_hold']
         # balcony camera: the whole battle from nearly straight above
         cx, cy = ll2km(ser.cfg['balcony']['center']); w = float(ser.cfg['balcony']['widthKm']); h = w * H / W
         self.Q0 = np.array([[cx - w * 0.54, cy + h / 2], [cx + w * 0.54, cy + h / 2], [cx + w * 0.47, cy - h / 2], [cx - w * 0.47, cy - h / 2]])
@@ -70,7 +74,8 @@ class ZoomClip:
         P = np.array([ll2km(p) + (1.0,) for p in lls]) @ Hm.T
         sg = np.sign((Hm @ [5.716 * KMX, 50.0 * KMY, 1.0])[2]); w = np.where(P[:, 2:3] * sg > 1e-6, P[:, 2:3], np.nan)      # behind the camera: dropped
         return np.nan_to_num(P[:, :2] / w, nan=1e6)
-    def drawn(self, Hm, tau, k, pm):
+    def drawn(self, Hm, tau, k, pm, redraw=None):
+        """redraw: (am_alpha, pm_frac) for a quiet day's line redraw on the balcony"""
         d = self.d; SS = 2                                                    # supersample the line work
         im = Image.new('RGB', (W * SS, H * SS), tuple(int(v * 255) for v in PAPER)); dr = ImageDraw.Draw(im)
         c = np.array([W / 2, 820.0]); o = np.linalg.inv(Hm) @ [c[0], c[1], 1]; o = o[:2] / o[2]
@@ -119,10 +124,20 @@ class ZoomClip:
             ld.ellipse([x - r, y - r, x + r, y + r], fill=ink); ld.text((x + ox, y), label, font=f, fill=ink, anchor=anc)
         im = Image.alpha_composite(im.convert('RGBA'), lay).convert('RGB'); dr = ImageDraw.Draw(im)
         # the grease pencil line
-        key = 'linePM' if pm else 'lineAM'
-        poly(C.catmull([tuple(p) for p in d.mr[key]], 12), COL['wax'], 6 + 2 * k)
-        if True:
+        def mix(a): return tuple(int(PAPER[i] * 255 * (1 - a) + COL['wax'][i] * a) for i in range(3))
+        if redraw is None:
+            key = 'linePM' if pm else 'lineAM'
+            poly(C.catmull([tuple(p) for p in d.mr[key]], 12), COL['wax'], 6 + 2 * k)
             for pk in self.res['pockets' if pm else 'pocketsAM']: poly(C.catmull([tuple(p) for p in pk['ring']], 8, closed=True), COL['wax'], 6 + 2 * k)
+        else:
+            am_a, pm_f = redraw
+            poly(C.catmull([tuple(p) for p in d.mr['lineAM']], 12), mix(am_a), 6)
+            for pk in self.res['pocketsAM']: poly(C.catmull([tuple(p) for p in pk['ring']], 8, closed=True), mix(am_a), 6)
+            if pm_f > 0:
+                P = C.catmull([tuple(p) for p in d.mr['linePM']], 12); seg = np.r_[0, np.cumsum(np.hypot(*np.diff(np.array(P), axis=0).T))]
+                n = max(2, int(np.searchsorted(seg, pm_f * seg[-1])) + 1); poly(P[:n], COL['wax'], 6)
+                if pm_f >= 1:
+                    for pk in self.res['pockets']: poly(C.catmull([tuple(p) for p in pk['ring']], 8, closed=True), COL['wax'], 6)
         F = np.asarray(im.resize((W, H), Image.LANCZOS), np.float32) / 255
         # blocks: thin tiles, far ones first
         items = []
@@ -179,6 +194,15 @@ class ZoomClip:
             if k < 0.5: C.over(F, c.OPEN_OV)
             else: self.overlays(F)
             return F
+        if self.quiet and t >= self.t_bal:
+            if t < self.q_wipe: return self.overlays(balcony(False))
+            am_a = 1 - 0.72 * D.ease(min(1, (t - self.q_wipe) / B['wipe'])); pm_f = min(1, max(0, (t - self.q_draw) / B['draw']))
+            if t >= self.q_end:
+                if 'qend' not in self._cache: self._cache['qend'] = self.drawn(self.Hmix(0.0, tau0), tau0, 0.0, False, (0.28, 1.0))
+                F = self.overlays(self._cache['qend'].copy(), 1.0)
+            else: F = self.overlays(self.drawn(self.Hmix(0.0, tau0), tau0, 0.0, False, (am_a, pm_f)), min(1, max(0, (t - self.q_end + 0.2) / 0.35)))
+            if t > self.T - B['loop']: k = D.ease((t - (self.T - B['loop'])) / B['loop']); F = F * (1 - k) + c.OPEN * k
+            return F
         if t < self.t_push: return self.overlays(balcony(False))
         if t < self.t_close:
             k = D.ease((t - self.t_push) / (self.t_close - self.t_push)); F = self.drawn(self.Hmix(k, tau0), tau0, k, False)
@@ -195,6 +219,7 @@ class ZoomClip:
         if t > self.T - B['loop']: k = D.ease((t - (self.T - B['loop'])) / B['loop']); F = F * (1 - k) + c.OPEN * k
         return F
     def events(self):
+        if self.quiet: return [(self.q_wipe, 'wipe', D.B['wipe']), (self.q_draw, 'pencil', D.B['draw'])]
         ev = [(t + self.shift, kind, g) for t, kind, g in self.d.events if t >= self.d.t_table - 1e-6]
         return ev
 
