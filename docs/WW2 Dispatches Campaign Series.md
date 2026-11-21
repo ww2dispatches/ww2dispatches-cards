@@ -115,25 +115,50 @@ Substack sets one theme for the whole publication (night background, brass gold,
 **The Epilogue (decided 15 Nov 2026, Brian):** the series ends on the morning after, 8 Dec at 6:30, with an Epilogue covering everything that happened on the 7th and Roosevelt's speech and the vote for war. The 7th itself stays with the Flash day programming (Flash card, Flash Traffic bulletins, moment of silence), undisturbed. The Epilogue is `day-13.json` with `"epilogue": true` and `"dayLabel": "EPILOGUE"` (the image tab shows EPILOGUE in place of DAY N; footer "Campaign Series: Pearl Harbor · Day by Day · Epilogue"). The other posts keep "of 12". Any series may close with an Epilogue the same way. **For the Website chat:** treat a day record with `epilogue: true` as the series' Epilogue (label it Epilogue, not Day 13 of 12), and Pearl Harbor Part 3's `days` range becomes [9, 13] with five `##` sections.
 
 ## The Bulge (16 Dec 1944 to 14 Jan 1945, Days 1 to 30, to build)
-Anchor days, each to be verified in the sitting (two sources); the rest are filled there, with Home Front and Blueprint days mixed in (the proximity fuze's first ground use, the Christmas news at home).
-* D1 16 Dec: the barrage opens in the Ardennes before dawn (also the Bulge Flash day; avoid the Flash card's moment).
-* D2 17 Dec: the Baugnez crossroads massacre near Malmedy (somber, plain facts).
-* D3 18 Dec: the 101st Airborne races to Bastogne; engineers blow the bridge in front of Peiper.
-* D4 19 Dec: two regiments of the 106th surrender on the Schnee Eifel; at Verdun, Patton promises to attack within days.
-* D5 20 Dec: Eisenhower gives Montgomery the northern armies.
-* D6 21 Dec: St. Vith falls; the ring closes on Bastogne.
-* D7 22 Dec: the surrender demand and McAuliffe's answer, told in new words (the Campaigns debrief already uses its own).
-* D8 23 Dec: the skies clear and the drops begin.
-* D9 24 Dec: the high water mark near the Meuse; Christmas Eve.
-* D10 25 Dec: the Christmas attack at Bastogne; 2nd Armored at Celles.
-* D11 26 Dec: Abrams's tanks break into Bastogne.
-* D17 1 Jan: Bodenplatte (Campaigns chapter 1 opens: Campaigns line).
-* D19 3 Jan: First Army attacks from the north.
-* D23 7 Jan: Montgomery's press conference.
-* D24 8 Jan: Hitler allows the pullback.
-* D27 11 Jan: Campaigns chapter 2 opens (Campaigns line).
-* D28 12 Jan: the Soviet winter offensive opens in Poland.
-* D30 14 Jan: the last day; the First and Third Armies close on Houffalize from both sides (the link up comes on the 16th, after the series ends).
+**Beat plan, split and titles approved by Brian, 21 Nov 2026.** Records and stills are written in the Thanksgiving sitting (26 to 29 Nov), each beat verified there with two sources and that day's LOC situation map. Beats marked *check* may be swapped if the facts don't hold.
+
+| Day | Date | Subtitle | Series | Notes |
+|---|---|---|---|---|
+| 1 | 16 Dec | The 28th holds Skyline Drive | Battle Lines | Flash day: the Flash card is "Germany strikes west", so the post stays on the American line. Sets the table. |
+| 2 | 17 Dec | Prisoners shot at Baugnez crossroads | Battle Lines | Somber, plain facts |
+| 3 | 18 Dec | The 101st races into Bastogne | Battle Lines | |
+| 4 | 19 Dec | Two regiments surrender on the Eifel | Battle Lines | Patton at Verdun in the caption |
+| 5 | 20 Dec | Ike hands Monty the northern armies | Statecraft | |
+| 6 | 21 Dec | St. Vith falls in the night | Battle Lines | |
+| 7 | 22 Dec | A one word answer from Bastogne | Battle Lines | New words, not the debrief's; 4th Armored starts north |
+| 8 | 23 Dec | Clear skies, and the drops begin | Battle Lines | First air mission (supply drop) |
+| 9 | 24 Dec | The tip of the Bulge nears the Meuse | Battle Lines | Christmas Eve |
+| 10 | 25 Dec | Christmas morning attack at Bastogne | Battle Lines | |
+| 11 | 26 Dec | Abrams breaks through to Bastogne | Battle Lines | |
+| 12 | 27 Dec | Ambulances roll out of Bastogne | Battle Lines | |
+| 13 | 28 Dec | Hitler tells his generals to strike again | Statecraft | *Check* (Adlerhorst); quiet map day |
+| 14 | 29 Dec | The secret fuze turns on the infantry | Blueprint | *Check*: needs an event dated 29 Dec, else swap |
+| 15 | 30 Dec | Two attacks collide at Lutrebois | Battle Lines | |
+| 16 | 31 Dec | New Year's Eve in the foxholes | Battle Lines | *Check* (Third Army midnight barrage) |
+| 17 | 1 Jan | The Luftwaffe's last great strike | Battle Lines | Bodenplatte, air mission; Campaigns line |
+| 18 | 2 Jan | America's racetracks go dark | Home Front | Byrnes: all tracks closed by 3 Jan |
+| 19 | 3 Jan | First Army strikes from the north | Battle Lines | |
+| 20 | 4 Jan | A green division at Dead Man's Ridge | Battle Lines | 17th Airborne at Flamierge |
+| 21 | 5 Jan | British paratroopers hold Bure | Battle Lines | |
+| 22 | 6 Jan | Churchill asks Stalin for help | Statecraft | Quiet map day |
+| 23 | 7 Jan | Montgomery meets the press | Statecraft | |
+| 24 | 8 Jan | Hitler lets the tip pull back | Battle Lines | |
+| 25 | 9 Jan | Patton renews the drive north | Battle Lines | |
+| 26 | 10 Jan | The Germans leave the tip behind | Battle Lines | *Check* |
+| 27 | 11 Jan | Highlanders enter La Roche | Battle Lines | *Check* date; Campaigns line |
+| 28 | 12 Jan | The Soviets strike on the Vistula | Statecraft | Off the map: balcony only clip |
+| 29 | 13 Jan | Paratroopers take Foy | Battle Lines | |
+| 30 | 14 Jan | Two armies close on Houffalize | Battle Lines | Link up comes on the 16th, after the series |
+
+**The Chronicle, 4 parts (approved 21 Nov 2026)**
+| Part | Days | Working title | Goes live |
+|---|---|---|---|
+| 1 | 1 to 8 (16 to 23 Dec) | Out of the Fog | Thu 24 Dec, 9 a.m. |
+| 2 | 9 to 16 (24 to 31 Dec) | Christmas in the Bulge | Fri 1 Jan, 9 a.m. |
+| 3 | 17 to 23 (1 to 7 Jan) | The Counterpunch | Fri 8 Jan, 9 a.m. |
+| 4 | 24 to 30 (8 to 14 Jan) | Closing the Bulge | Fri 15 Jan, 9 a.m. |
+
+**Roster draft** (about 29 blocks; fold more into corps blocks if the checker calls a stretch crowded): American 28th, 30th, 106th and 84th Infantry; 82nd, 101st and 17th Airborne; 2nd, 3rd, 4th, 6th, 7th and 11th Armored; V Corps and III Corps as single blocks. British 6th Airborne and 51st Highland. German 6th Panzer Army (SS formations under it), 2nd, 9th and 116th Panzer, Panzer Lehr, 26th and 18th Volksgrenadier, 5th Parachute, 3rd Panzergrenadier, Führer Begleit, 7th Army. Air: troop carriers (drops) and the Luftwaffe (Bodenplatte).
 
 ## On ww2dispatches.com (the Campaign Shelf)
 **All website work belongs to the Website: Build and Fixes chat** (Brian, 15 Nov 2026). This chat and the build sittings only write the series files (day records, `articles/part-NN.json` and `.md`, covers, photos) and keep `shelf.json` current; the Website chat decides how the site shows them.
@@ -164,7 +189,7 @@ Until that change ships, the shelf works as built: every series is a volume on t
 * Pearl Harbor volume: Part 1 final 21 Nov and **on the Substack Dashboard's Chronicle tab** (21 Nov): Brian approves it and schedules it from there for Mon 30 Nov, 9 a.m., creating The Chronicle section with its banner the first time (the tab's first time step). Parts 2 and 3 are written, final, and on the dashboard too; Brian schedules each from there (Part 2 for Fri 4 Dec, Part 3 for Wed 9 Dec).
 * Website: Build and Fixes chat: rebuild the Campaign Shelf around the Substack parts (above), ideally before Part 1 goes live on Mon 30 Nov; Brian picks the daily posts option (a to h) there.
 * **For the Website: Build and Fixes chat (21 Nov 2026), two fixes before Pearl Harbor's parts go live:** (1) the site still labels the Epilogue (`day-13.json`, `"epilogue": true`) as "Day 13 of 13"; it should read "Epilogue", the other days keep "of 12", and Part 3's Epilogue section pairs with it. (2) On a preview address with `?asof=`, a part's cover (`/campaign-series/<series>/parts/part-NN.jpg`) returns 404 "Not yet", because the image request does not carry `asof`; `nowFor` in `functions/_lib/release.js` reads `asof` from the URL or an `asof` cookie, so the page could set that cookie (or add `?asof=` to the cover's src) on preview hosts. Production is unaffected: covers load once the part's publish time passes.
-* The Bulge build sitting (Thanksgiving weekend): the 30 days of posts and the split into 4 parts; each part then written in its own short sitting about a week ahead.
+* The Bulge build sitting (Thanksgiving weekend, 26 to 29 Nov): beat plan, part split and titles approved 21 Nov (see The Bulge); the sitting writes the roster, 30 records with `mapRoom` blocks and stills, then hands off to the Map Room chat. Each part is written in its own short sitting about a week ahead.
 * **From now on, long series work the same way** (Brian, 14 Nov 2026): the build sitting does the daily posts and the part split; parts are written in short sittings ahead of their dates. Short series like Pearl Harbor can do the parts in one sitting.
 * **Map Room handoff (rewritten 20 Nov 2026, evening, for format 2; read before the Bulge sitting):** from the Bulge on, the Day by Day post becomes a Map Room clip: a short vertical video that opens on the day's still in the Teletype frame, shows the whole battle on a plotting table from above, comes down to where the day's story happens while wooden blocks are pushed to where they stood that night, and goes back up to show the new line. It posts at 6:30 on **all six channels** (YouTube and TikTok join), with the day's story caption plus one line pointing to the book on the site (Instagram and TikTok: "link in bio"). Changes for this chat: (1) **read `map-room/FORMAT.md` in the cards repo before the sitting; it is the whole brief.** Write the series roster once (`map-room/series/bulge-1944/units.json`: every unit that will appear, 15 to 25, with its full name, a block label of 16 characters at most, nation, type and parent command). Then each day record gains a `mapRoom` block holding only what changed that day: the night front line from the north edge of the map to the south edge, one to three moves, and any small shifts. Day 1 sets every unit on the table. Units stay where they were last placed and each morning line is the night before, so nothing is repeated. **Every position and every line must come from that day's Library of Congress situation map (listed in `map-room/series/bulge-1944/series.json`) and name it as a source; each move also needs Cole.** After writing, run `python3 map-room/engine/check_series.py campaign-series/bulge-1944` and fix every ERROR. The Map Room chat then fact checks every day against the situation map (an overlay sheet and a blind second read) and sends back anything that does not match, with the evidence; it never changes a position itself; (2) pick each day's story around something that moved where possible, and keep a day's moves in one area about 60 km across; (3) the sitting writes records and stills but does **not** schedule Buffer, since the Map Room chat schedules each day once its clip exists; (4) the platform rule and the "no add on lines" rule change for Map Room posts as above. If the Map Room is not ready by Fri 4 Dec, the Bulge runs as photo posts like Pearl Harbor. Pearl Harbor is unchanged. Full plan: the project doc "WW2 Dispatches Map Room".
 
@@ -200,3 +225,4 @@ Until that change ships, the shelf works as built: every series is a volume on t
 * 21 Nov 2026 (later): **The Substack Dashboard is ready** (Brian): the renamed page has a Chronicle tab where each part is reviewed, noted, copied, and scheduled; a sitting runs `python3 renderer/newsletter_page.py` and republishes it once a part is final. Pearl Harbor Part 1 is on it now.
 * 21 Nov 2026 (later): Pearl Harbor Chronicle Parts 2 (Climb Mount Niitaka) and 3 (Air Raid, Pearl Harbor) written and marked final (Brian); all three parts on the Substack Dashboard's Chronicle tab.
 * 21 Nov 2026 (later): two site fixes handed to the Website chat in Open (Epilogue label, preview covers); `campaign-series` skill improvement proposed: board pictures after Buffer (step 7b).
+* 21 Nov 2026 (later): The Bulge beat plan (30 days), the 4 part split (24 Dec, 1 Jan, 8 Jan, 15 Jan) and working titles approved (Brian); roster drafted.
