@@ -170,7 +170,7 @@
   "name": "14th Army (Wehrmacht)",
   "kind": "German field army",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q187119",
   "source": "https://en.wikipedia.org/wiki/14th_Army_(Wehrmacht)",
   "aka": [
    "Fourteenth Army"
@@ -236,7 +236,7 @@
   "name": "19th Route Army",
   "kind": "Chinese army",
   "nation": "China",
-  "wikidata": null,
+  "wikidata": "Q282153",
   "source": "https://en.wikipedia.org/wiki/19th_Route_Army"
  },
  "unit-1st-armoured-division-united-kingdom": {
@@ -250,7 +250,7 @@
   "name": "1st Belorussian Front",
   "kind": "army group",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q2088142",
   "source": "https://en.wikipedia.org/wiki/1st_Belorussian_Front"
  },
  "unit-1st-canadian-division": {
@@ -267,7 +267,7 @@
   "name": "1st Cavalry Division",
   "kind": "Army cavalry division (dismounted)",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q2338",
   "source": "https://en.wikipedia.org/wiki/1st_Cavalry_Division_(United_States)"
  },
  "unit-1st-infantry-division-united-states": {
@@ -298,7 +298,7 @@
   "name": "1st Infantry Division (British)",
   "kind": "British Army infantry division",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q161896",
   "source": "https://en.wikipedia.org/wiki/1st_(UK)_Division",
   "aka": [
    "1st Infantry Division (United Kingdom)",
@@ -379,7 +379,7 @@
   "name": "26th Cavalry Regiment (Philippine Scouts)",
   "kind": "U.S. Army cavalry regiment",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q4632422",
   "source": "https://en.wikipedia.org/wiki/26th_Cavalry_Regiment_(Philippine_Scouts)"
  },
  "unit-285th-field-artillery-observation-battalion": {
@@ -393,7 +393,7 @@
   "name": "28th Infantry Division",
   "kind": "Army infantry division",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q2640018",
   "source": "https://en.wikipedia.org/wiki/28th_Infantry_Division_(United_States)"
  },
  "unit-291st-engineer-combat-battalion-united-states": {
@@ -414,7 +414,7 @@
   "name": "2nd Alpine Division Tridentina",
   "kind": "mountain division",
   "nation": "Italy",
-  "wikidata": null,
+  "wikidata": "Q4633295",
   "source": "https://en.wikipedia.org/wiki/2nd_Alpine_Division_%22Tridentina%22"
  },
  "unit-2nd-armored-division-france": {
@@ -543,7 +543,7 @@
   "name": "34th Infantry Division",
   "kind": "U.S. Army infantry division (Red Bull)",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q226238",
   "source": "https://en.wikipedia.org/wiki/34th_Infantry_Division_(United_States)"
  },
  "unit-354th-fighter-group": {
@@ -588,7 +588,7 @@
   "name": "37th Infantry Division",
   "kind": "U.S. Army infantry division",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q12783051",
   "source": "https://en.wikipedia.org/wiki/37th_Infantry_Division_(United_States)"
  },
  "unit-394th-infantry-regiment": {
@@ -772,14 +772,14 @@
   "name": "4th Indian Infantry Division",
   "kind": "infantry division",
   "nation": "India",
-  "wikidata": null,
+  "wikidata": "Q2243310",
   "source": "https://en.wikipedia.org/wiki/4th_Infantry_Division_(India)"
  },
  "unit-4th-marine-division": {
   "name": "4th Marine Division",
   "kind": "U.S. Marine division",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q231284",
   "source": "https://en.wikipedia.org/wiki/4th_Marine_Division"
  },
  "unit-4th-marine-division-united-states": {
@@ -817,14 +817,14 @@
   "name": "55th Division",
   "kind": "Imperial Japanese Army infantry division",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q954258",
   "source": "https://en.wikipedia.org/wiki/55th_Division_(Imperial_Japanese_Army)"
  },
  "unit-55th-infantry-division-savona": {
   "name": "55th Infantry Division Savona",
   "kind": "infantry division",
   "nation": "Italy",
-  "wikidata": null,
+  "wikidata": "Q3599366",
   "source": "https://en.wikipedia.org/wiki/55th_Infantry_Division_%22Savona%22"
  },
  "unit-5th-infantry-division-india": {
@@ -848,7 +848,7 @@
   "name": "5th Shock Army",
   "kind": "Soviet field army",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q4031655",
   "source": "https://en.wikipedia.org/wiki/5th_Shock_Army"
  },
  "unit-5th-tank-army": {
@@ -869,7 +869,7 @@
   "name": "6615th Ranger Force",
   "kind": "U.S. Army Ranger force (provisional)",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q4642156",
   "source": "https://en.wikipedia.org/wiki/6615th_Ranger_Force"
  },
  "unit-66th-infantry-division-united-states": {
@@ -925,7 +925,7 @@
   "name": "6th Ranger Battalion",
   "kind": "U.S. Army Ranger battalion",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q4642774",
   "source": "https://en.wikipedia.org/wiki/6th_Ranger_Battalion"
  },
  "unit-73rd-bombardment-wing": {
@@ -967,7 +967,7 @@
   "name": "7th Infantry Division",
   "kind": "Army infantry division",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q261179",
   "source": "https://en.wikipedia.org/wiki/7th_Infantry_Division_(United_States)"
  },
  "unit-80th-training-command": {
@@ -1004,7 +1004,7 @@
   "name": "95th Evacuation Hospital",
   "kind": "U.S. Army field hospital",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q4646018",
   "source": "https://en.wikipedia.org/wiki/95th_Evacuation_Hospital"
  },
  "unit-95th-training-division": {
@@ -1050,7 +1050,7 @@
   "name": "Air Training Corps",
   "kind": "youth air cadet corps",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q4698217",
   "source": "https://en.wikipedia.org/wiki/Air_Training_Corps"
  },
  "unit-air-transport-auxiliary": {
@@ -1093,7 +1093,7 @@
   "name": "Anglo-French Supreme War Council",
   "kind": "Allied war council",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q2994292",
   "source": "https://en.wikipedia.org/wiki/Anglo-French_Supreme_War_Council"
  },
  "unit-anti-fascist-council-for-the-national-liberation-of-yugoslavia": {
@@ -1110,7 +1110,7 @@
   "name": "Argyll and Sutherland Highlanders",
   "kind": "infantry regiment",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q3135445",
   "source": "https://en.wikipedia.org/wiki/Argyll_and_Sutherland_Highlanders"
  },
  "unit-army-emergency-relief": {
@@ -1170,7 +1170,7 @@
   "name": "BBC Forces Programme",
   "kind": "radio station for the forces",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q4834814",
   "source": "https://en.wikipedia.org/wiki/BBC_Forces_Programme"
  },
  "unit-bbc-world-service": {
@@ -1204,7 +1204,7 @@
   "name": "Board of Trade",
   "kind": "British government department",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q887543",
   "source": "https://en.wikipedia.org/wiki/Board_of_Trade"
  },
  "unit-british-battalion-malaya-1941": {
@@ -1259,7 +1259,7 @@
   "name": "Central Intelligence Group",
   "kind": "U.S. intelligence agency, forerunner of the CIA",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q9185941",
   "source": "https://en.wikipedia.org/wiki/Central_Intelligence_Group"
  },
  "unit-churchill-archives-centre": {
@@ -1374,14 +1374,14 @@
   "name": "Esquire",
   "kind": "American magazine, sponsor of the All American jazz poll",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q762195",
   "source": "https://en.wikipedia.org/wiki/Esquire_(magazine)"
  },
  "unit-fareynikte-partizaner-organizatsye": {
   "name": "Fareynikte Partizaner Organizatsye",
   "kind": "Jewish resistance organization in the Vilna Ghetto",
   "nation": "Lithuania",
-  "wikidata": null,
+  "wikidata": "Q573869",
   "source": "https://en.wikipedia.org/wiki/Fareynikte_Partizaner_Organizatsye",
   "aka": [
    "FPO",
@@ -1451,14 +1451,14 @@
   "name": "First Polish Army",
   "kind": "field army",
   "nation": "Poland",
-  "wikidata": null,
+  "wikidata": "Q2659023",
   "source": "https://en.wikipedia.org/wiki/First_Polish_Army_(1944%E2%80%931945)"
  },
  "unit-first-special-service-force": {
   "name": "1st Special Service Force",
   "kind": "Canadian and American special forces brigade",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q574835",
   "source": "https://en.wikipedia.org/wiki/First_Special_Service_Force",
   "aka": [
    "Devil's Brigade",
@@ -1497,7 +1497,7 @@
   "name": "Four Chaplains",
   "kind": "four U.S. Army chaplains lost on the Dorchester",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q5475055",
   "source": "https://en.wikipedia.org/wiki/Four_Chaplains"
  },
  "unit-fourteenth-area-army": {
@@ -1558,7 +1558,7 @@
   "name": "Gordon Highlanders",
   "kind": "British Army infantry regiment",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q2265327",
   "source": "https://en.wikipedia.org/wiki/Gordon_Highlanders"
  },
  "unit-guam-insular-force-guard": {
@@ -1585,7 +1585,7 @@
   "name": "Home Army",
   "kind": "Polish underground army",
   "nation": "Poland",
-  "wikidata": null,
+  "wikidata": "Q152529",
   "source": "https://en.wikipedia.org/wiki/Home_Army",
   "aka": [
    "Armia Krajowa",
@@ -1610,14 +1610,14 @@
   "name": "Imperial Airways",
   "kind": "British airline",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q591797",
   "source": "https://en.wikipedia.org/wiki/Imperial_Airways"
  },
  "unit-imperial-guard-japan": {
   "name": "Imperial Guard (Japan)",
   "kind": "Imperial Japanese Army guards division",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q707181",
   "source": "https://en.wikipedia.org/wiki/Imperial_Guard_(Japan)",
   "aka": [
    "Imperial Guards Division"
@@ -1648,14 +1648,14 @@
   "name": "Irish Guards",
   "kind": "British Army infantry regiment",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q252564",
   "source": "https://en.wikipedia.org/wiki/Irish_Guards"
  },
  "unit-iron-guard": {
   "name": "Iron Guard",
   "kind": "Romanian fascist movement",
   "nation": "Romania",
-  "wikidata": null,
+  "wikidata": "Q153448",
   "source": "https://en.wikipedia.org/wiki/Iron_Guard",
   "aka": [
    "Legionnaires"
@@ -1725,7 +1725,7 @@
   "name": "Kampfgeschwader 53",
   "kind": "Luftwaffe bomber wing",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q3192517",
   "source": "https://en.wikipedia.org/wiki/Kampfgeschwader_53"
  },
  "unit-kanoya-air-group": {
@@ -1759,21 +1759,21 @@
   "name": "Kreisau Circle",
   "kind": "German resistance group",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q675215",
   "source": "https://en.wikipedia.org/wiki/Kreisau_Circle"
  },
  "unit-kriegsmarine": {
   "name": "Kriegsmarine",
   "kind": "German navy",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q151701",
   "source": "https://en.wikipedia.org/wiki/Kriegsmarine"
  },
  "unit-lark-force": {
   "name": "Lark Force",
   "kind": "Australian Army garrison of Rabaul",
   "nation": "Australia",
-  "wikidata": null,
+  "wikidata": "Q6489555",
   "source": "https://en.wikipedia.org/wiki/Lark_Force"
  },
  "unit-league-of-nations": {
@@ -1843,7 +1843,7 @@
   "name": "March of Dimes",
   "kind": "polio fundraising foundation",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q751572",
   "source": "https://en.wikipedia.org/wiki/March_of_Dimes",
   "aka": [
    "National Foundation for Infantile Paralysis"
@@ -1918,7 +1918,7 @@
   "name": "National War Labor Board (1942 to 1945)",
   "kind": "federal labor disputes agency",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q3336955",
   "source": "https://en.wikipedia.org/wiki/National_War_Labor_Board_(1942%E2%80%931945)",
   "aka": [
    "National War Labor Board",
@@ -1971,7 +1971,7 @@
   "name": "No. 1 Commando",
   "kind": "British Army commando unit",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q12797542",
   "source": "https://en.wikipedia.org/wiki/No._1_Commando"
  },
  "unit-no-1-squadron-raaf": {
@@ -1992,14 +1992,14 @@
   "name": "No. 100 Squadron RAF",
   "kind": "RAF torpedo bomber squadron",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q7042829",
   "source": "https://en.wikipedia.org/wiki/No._100_Squadron_RAF"
  },
  "unit-no-105-squadron-raf": {
   "name": "No. 105 Squadron RAF",
   "kind": "RAF bomber squadron",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q7042837",
   "source": "https://en.wikipedia.org/wiki/No._105_Squadron_RAF"
  },
  "unit-no-12-commando": {
@@ -2027,7 +2027,7 @@
   "name": "No. 220 Squadron RAF",
   "kind": "RAF Coastal Command squadron",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q7043166",
   "source": "https://en.wikipedia.org/wiki/No._220_Squadron_RAF"
  },
  "unit-no-3-commando": {
@@ -2041,21 +2041,21 @@
   "name": "No. 36 Squadron RAF",
   "kind": "RAF torpedo bomber squadron",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q7043436",
   "source": "https://en.wikipedia.org/wiki/No._36_Squadron_RAF"
  },
  "unit-no-43-squadron-raf": {
   "name": "No. 43 Squadron RAF",
   "kind": "RAF fighter squadron",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q7043510",
   "source": "https://en.wikipedia.org/wiki/No._43_Squadron_RAF"
  },
  "unit-no-461-squadron-raaf": {
   "name": "No. 461 Squadron RAAF",
   "kind": "flying boat squadron",
   "nation": "Australia",
-  "wikidata": null,
+  "wikidata": "Q7043525",
   "source": "https://en.wikipedia.org/wiki/No._461_Squadron_RAAF"
  },
  "unit-no-463-squadron-raaf": {
@@ -2110,7 +2110,7 @@
   "name": "Oberkommando der Wehrmacht (OKW)",
   "kind": "German Armed Forces High Command",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q152412",
   "source": "https://en.wikipedia.org/wiki/Oberkommando_der_Wehrmacht",
   "aka": [
    "OKW",
@@ -2162,7 +2162,7 @@
   "name": "Office of Strategic Services",
   "kind": "intelligence agency",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q658626",
   "source": "https://en.wikipedia.org/wiki/Office_of_Strategic_Services",
   "aka": [
    "OSS"
@@ -2179,7 +2179,7 @@
   "name": "Oslo Gang",
   "kind": "resistance sabotage group",
   "nation": "Norway",
-  "wikidata": null,
+  "wikidata": "Q3355145",
   "source": "https://en.wikipedia.org/wiki/Oslogjengen",
   "aka": [
    "Oslogjengen"
@@ -2207,7 +2207,7 @@
   "name": "Permanent Court of International Justice",
   "kind": "international court of the League of Nations",
   "nation": "worldwide",
-  "wikidata": null,
+  "wikidata": "Q838946",
   "source": "https://en.wikipedia.org/wiki/Permanent_Court_of_International_Justice",
   "aka": [
    "World Court"
@@ -2217,7 +2217,7 @@
   "name": "Philippine Scouts",
   "kind": "U.S. Army Filipino troops",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q371571",
   "source": "https://en.wikipedia.org/wiki/Philippine_Scouts"
  },
  "unit-polish-committee-of-national-liberation": {
@@ -2235,7 +2235,7 @@
   "name": "Pravda",
   "kind": "Soviet Communist Party newspaper",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q183644",
   "source": "https://en.wikipedia.org/wiki/Pravda"
  },
  "unit-provisional-government-of-the-french-republic": {
@@ -2273,14 +2273,14 @@
   "name": "Quisling regime",
   "kind": "collaborationist government of occupied Norway",
   "nation": "Norway",
-  "wikidata": null,
+  "wikidata": "Q2616953",
   "source": "https://en.wikipedia.org/wiki/Quisling_regime"
  },
  "unit-radio-belgique": {
   "name": "Radio Belgique",
   "kind": "Belgian government in exile broadcasting service on the BBC",
   "nation": "Belgium",
-  "wikidata": null,
+  "wikidata": "Q2678835",
   "source": "https://en.wikipedia.org/wiki/Radio_Belgique"
  },
  "unit-raf-bomber-command": {
@@ -2317,14 +2317,14 @@
   "name": "Reichsbank",
   "kind": "German central bank",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q560183",
   "source": "https://en.wikipedia.org/wiki/Reichsbank"
  },
  "unit-reichswehr": {
   "name": "Reichswehr",
   "kind": "German armed forces 1919 to 1935",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q157608",
   "source": "https://en.wikipedia.org/wiki/Reichswehr"
  },
  "unit-rifle-brigade-the-prince-consort-s-own": {
@@ -2413,7 +2413,7 @@
   "name": "Seventeenth Army (Japan)",
   "kind": "Imperial Japanese Army field army",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q6143152",
   "source": "https://en.wikipedia.org/wiki/Seventeenth_Army_(Japan)",
   "aka": [
    "17th Army"
@@ -2471,7 +2471,7 @@
   "name": "State Defense Committee",
   "kind": "Soviet wartime governing body (GKO)",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q634190",
   "source": "https://en.wikipedia.org/wiki/State_Defense_Committee",
   "aka": [
    "GKO",
@@ -2500,7 +2500,7 @@
   "name": "Supreme Headquarters Allied Expeditionary Force",
   "kind": "Allied headquarters",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q647033",
   "source": "https://en.wikipedia.org/wiki/Supreme_Headquarters_Allied_Expeditionary_Force",
   "aka": [
    "SHAEF"
@@ -2517,7 +2517,7 @@
   "name": "Trans World Airlines",
   "kind": "airline",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q527341",
   "source": "https://en.wikipedia.org/wiki/Trans_World_Airlines",
   "aka": [
    "TWA",
@@ -2528,7 +2528,7 @@
   "name": "Twelfth Air Force",
   "kind": "U.S. Army Air Forces numbered air force",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q2807513",
   "source": "https://en.wikipedia.org/wiki/Twelfth_Air_Force"
  },
  "unit-twenty-fifth-army-japan": {
@@ -2597,7 +2597,7 @@
   "name": "United Service Organizations (USO)",
   "kind": "civilian service organization for the armed forces",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q1972821",
   "source": "https://en.wikipedia.org/wiki/United_Service_Organizations",
   "aka": [
    "USO"
@@ -2657,14 +2657,14 @@
   "name": "United States Pacific Fleet",
   "kind": "fleet",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q494920",
   "source": "https://en.wikipedia.org/wiki/United_States_Pacific_Fleet"
  },
  "unit-v-amphibious-corps": {
   "name": "V Amphibious Corps",
   "kind": "US Marine Corps amphibious corps",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q7907712",
   "source": "https://en.wikipedia.org/wiki/V_Amphibious_Corps"
  },
  "unit-vf-3": {
@@ -2681,7 +2681,7 @@
   "name": "VI Corps (United States)",
   "kind": "U.S. Army corps",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q6961214",
   "source": "https://en.wikipedia.org/wiki/VI_Corps_(United_States)"
  },
  "unit-vickers": {
@@ -2702,7 +2702,7 @@
   "name": "VMFA-121",
   "kind": "U.S. Marine Corps fighter squadron (VMF-121 in World War II)",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q7907233",
   "source": "https://en.wikipedia.org/wiki/VMFA-121",
   "aka": [
    "VMF-121",
@@ -2767,7 +2767,7 @@
   "name": "War Refugee Board",
   "kind": "U.S. government rescue agency",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q474452",
   "source": "https://en.wikipedia.org/wiki/War_Refugee_Board"
  },
  "unit-war-relocation-authority": {
@@ -2784,7 +2784,7 @@
   "name": "War Shipping Administration",
   "kind": "U.S. wartime shipping agency",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q1484023",
   "source": "https://en.wikipedia.org/wiki/War_Shipping_Administration"
  },
  "unit-warner-bros": {
@@ -2851,14 +2851,14 @@
   "name": "X Corps",
   "kind": "army corps",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q1996864",
   "source": "https://en.wikipedia.org/wiki/X_Corps_(United_Kingdom)"
  },
  "unit-xi-army-corps-wehrmacht": {
   "name": "XI Army Corps",
   "kind": "German army corps",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q2579361",
   "source": "https://en.wikipedia.org/wiki/XI_Army_Corps_(Wehrmacht)"
  },
  "unit-xii-corps-united-states": {
