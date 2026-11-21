@@ -14,7 +14,7 @@ Fixed rules behind it (Brian, 20 Nov 2026):
 * **One balcony view per series.** No more opening, salient or Bastogne views.
 * **One focus per day.** The engine fits the camera to the pieces that move. Nobody fits a view by hand.
 * **Blocks never overlap and never pass through each other.** The engine spaces them. An attack into enemy ground drives the enemy block aside.
-* **Every position and every line comes from that day's situation map and is fact checked before anything is rendered** (see The fact check).
+* **Every position and every line comes from the situation maps and is fact checked before anything is rendered** (see The fact check). The maps were drawn at noon, so a day's night table is read from the **next** day's map (see Which map).
 
 ## Who writes what
 | File | Written | By | Holds |
@@ -65,9 +65,9 @@ A roster of 15 to 25 units suits a land battle of this size. Divisions are the n
 | Field | Rule |
 |---|---|
 | `asOf` | The moment the night table shows. |
-| `map` | That day's situation map. It must be one listed in `series.json`. |
+| `map` | The situation map the night table is read from: normally the **next** day's map, which shows tonight's positions at noon tomorrow. It must be one listed in `series.json` (Day 30 of the Bulge uses 15 Jan). |
 | `line` | The front at the end of the day, as `[lon, lat]` points from the **north edge of the map to the south edge**, German ground on the left as you walk it. It must reach both edges: the front does not stop where the story stops. Day 1 also gives `lineStart`, the front before the battle (and `pocketsStart` if a unit is already surrounded). |
-| `lineSources` | Two or more. One must be the day's situation map. |
+| `lineSources` | Two or more. One must be the map named in `map`. |
 | `pockets` | Optional. Ground held inside the other side's area at night: `{"side": "allied", "ring": [...]}`. No ring is drawn around a surrounded block; the line going around it on the day it happens tells that story. |
 | `moves` | What the rake does, in `order`. One to three a day. All of a day's moves must fit in one focus (about 60 km across); a day with action in two far places picks one. |
 | `shifts` | Units that are somewhere else tonight without it being shown: small adjustments of 15 km or less. The block is simply in the new place when the clip opens. Anything farther must be a move on some day. |
@@ -105,14 +105,14 @@ Nothing is rendered until every day passes all three parts. The Map Room chat ru
 * How far: an `advance` or `fall_back` longer than 40 km in a day, or a `shift` longer than 15 km, is an error.
 * Which side: every block is on its own side of the night line. Driven and attacking blocks end on the correct sides of the new line.
 * The line: runs edge to edge, does not cross itself, and each day's morning line is the night line before it.
-* Sources: every move, shift, set and line names that day's situation map, and every move a second source.
+* Sources: every move, shift, set and line names the map in `map` (the next day's map, or the day's own map where it already shows the night position), and every move a second source.
 * Table: no overlaps after spacing, no block passing through another during a move, moves fit one focus.
 
-**2. The overlay sheet (every day, read by the Map Room chat).** `tools/trace/overlay.py` draws the day's blocks and night line on top of that day's situation map scan, lined up by the map's own grid. Each block is compared with the unit symbol printed on the map: the right unit, on the right side, within one block (10 km) of where the map shows it. The line is compared with the map's front along its whole length. The sheet is saved beside the day record so anyone can look.
+**2. The overlay sheet (every day, read by the Map Room chat).** `tools/trace/overlay.py` draws the day's night blocks and line on top of the next day's situation map scan (see Which map), lined up by the map's own grid. Each block is compared with the unit symbol printed on the map: the right unit, on the right side, within one block (10 km) of where the map shows it. The line is compared with the map's front along its whole length. The sheet is saved beside the day record so anyone can look.
 
 **3. A blind second read (the units that move, and the line).** `tools/trace/blind_read.py packet` makes a folder with the scan cut into tiles under a labelled coordinate grid and the roster entries of the moving units, never their positions. A fresh reader who has not seen the day record (a separate agent started with only that folder) writes where the map shows each unit and the front. `blind_read.py compare` then measures the difference. Where the reader and the record differ by more than one block, or the reader cannot find a unit, the day goes back with both readings.
 
-**Which map.** The situation maps were drawn at noon. So a day's night table is compared with the **next** day's map, and its morning table with its own day's map. Both the overlay and the blind read do this (`night` and `start`).
+**Which map (21 Nov 2026).** The situation maps were drawn at noon, from reports up to a day old. So a day's night table is written from, and compared with, the **next** day's map; its morning table matches its own day's map. Day 1 sets the table from the 16 Dec map (`set` and `lineStart`, the position at the start), and its night line from the 17 Dec map. Both the overlay and the blind read do this (`night` and `start`).
 
 Where the situation map and Cole disagree about a position, follow Cole for where a unit went and say so in the sources. The situation maps were drawn at noon from reports that could be a day old.
 
