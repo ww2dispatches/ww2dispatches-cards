@@ -422,6 +422,13 @@
    "U-23"
   ]
  },
+ "ship-german-submarine-u-232": {
+  "name": "U-232",
+  "kind": "German Type VIIC submarine",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-232"
+ },
  "ship-german-submarine-u-254": {
   "name": "U-254",
   "kind": "German Type VIIC submarine",
@@ -571,12 +578,26 @@
   "wikidata": "Q2114037",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-454"
  },
+ "ship-german-submarine-u-47-1938": {
+  "name": "U-47",
+  "kind": "Type VIIB U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-47_(1938)"
+ },
  "ship-german-submarine-u-486": {
   "name": "U-486",
   "kind": "Kriegsmarine U-boat",
   "nation": "Germany",
   "wikidata": "Q2064178",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-486"
+ },
+ "ship-german-submarine-u-522": {
+  "name": "German submarine U-522",
+  "kind": "Type IXC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-522"
  },
  "ship-german-submarine-u-545": {
   "name": "German submarine U-545",
@@ -688,6 +709,20 @@
   "nation": "Germany",
   "wikidata": "Q222380",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-629"
+ },
+ "ship-german-submarine-u-63-1939": {
+  "name": "U-63",
+  "kind": "German Type IIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-63_(1939)"
+ },
+ "ship-german-submarine-u-649": {
+  "name": "U-649",
+  "kind": "German Type VIIC submarine",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-649"
  },
  "ship-german-submarine-u-66-1940": {
   "name": "U-66",
@@ -1232,6 +1267,13 @@
   "wikidata": "Q2442155",
   "source": "https://en.wikipedia.org/wiki/HMS_Indomitable_(92)"
  },
+ "ship-hms-inglefield": {
+  "name": "HMS Inglefield (D02)",
+  "kind": "Royal Navy destroyer leader",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Inglefield"
+ },
  "ship-hms-janus-f53": {
   "name": "HMS Janus (F53)",
   "kind": "J class destroyer",
@@ -1332,6 +1374,13 @@
   "nation": "Britain",
   "wikidata": "Q2627556",
   "source": "https://en.wikipedia.org/wiki/HMS_Mauritius_(80)"
+ },
+ "ship-hms-narwhal-n45": {
+  "name": "HMS Narwhal (N45)",
+  "kind": "Royal Navy minelaying submarine",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Narwhal_(N45)"
  },
  "ship-hms-nelson-28": {
   "name": "HMS Nelson",
@@ -1561,12 +1610,29 @@
   "wikidata": "Q5634741",
   "source": "https://en.wikipedia.org/wiki/HMS_Undine_(N48)"
  },
+ "ship-hms-upright": {
+  "name": "HMS Upright (N89)",
+  "kind": "Royal Navy U-class submarine",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Upright"
+ },
  "ship-hms-valiant-1914": {
   "name": "HMS Valiant",
   "kind": "battleship",
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/HMS_Valiant_(1914)",
   "wikidata": "Q524324"
+ },
+ "ship-hms-vandal": {
+  "name": "HMS Vandal (P64)",
+  "kind": "Royal Navy U-class submarine",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Vandal",
+  "aka": [
+   "HMS Vandal"
+  ]
  },
  "ship-hms-vanguard-23": {
   "name": "HMS Vanguard (23)",
@@ -1671,6 +1737,13 @@
   "nation": "Italy",
   "wikidata": "Q2623266",
   "source": "https://en.wikipedia.org/wiki/Italian_cruiser_Alberto_di_Giussano"
+ },
+ "ship-italian-cruiser-armando-diaz": {
+  "name": "Armando Diaz",
+  "kind": "Italian light cruiser",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_cruiser_Armando_Diaz"
  },
  "ship-italian-cruiser-muzio-attendolo": {
   "name": "Muzio Attendolo",
@@ -2464,6 +2537,13 @@
   "wikidata": "Q1546916",
   "source": "https://en.wikipedia.org/wiki/Soviet_submarine_S-2"
  },
+ "ship-soviet-submarine-shch-213": {
+  "name": "Shch-213",
+  "kind": "Soviet Shchuka class submarine",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Soviet_submarine_Shch-213"
+ },
  "ship-ss-absaroka": {
   "name": "SS Absaroka",
   "kind": "American lumber freighter",
@@ -2720,6 +2800,16 @@
   "nation": "US",
   "wikidata": "Q7875170",
   "source": "https://en.wikipedia.org/wiki/SS_W._L._Steed"
+ },
+ "ship-tango-maru": {
+  "name": "Tango Maru",
+  "kind": "Japanese transport, former Dutch Toendjoek",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tango_Maru",
+  "aka": [
+   "Toendjoek"
+  ]
  },
  "ship-tatsuta-maru": {
   "name": "Tatsuta Maru",
@@ -3403,6 +3493,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/USS_Ranger_(CV-4)",
   "wikidata": "Q1044197"
+ },
+ "ship-uss-rasher": {
+  "name": "USS Rasher (SS-269)",
+  "kind": "U.S. Navy Gato-class submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Rasher"
  },
  "ship-uss-redfish-ss-395": {
   "name": "USS Redfish (SS-395)",

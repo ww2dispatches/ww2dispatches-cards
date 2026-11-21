@@ -95,6 +95,15 @@
   "lat": null,
   "lon": null
  },
+ "place-amsterdam": {
+  "name": "Amsterdam",
+  "kind": "city, capital of the Netherlands",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Amsterdam",
+  "lat": null,
+  "lon": null
+ },
  "place-andaman-islands": {
   "name": "Andaman Islands",
   "kind": "islands",
@@ -801,6 +810,15 @@
   "lat": 40.765,
   "lon": -73.98
  },
+ "place-carswell-air-force-base": {
+  "name": "Carswell Air Force Base",
+  "kind": "air base near Fort Worth, Texas",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Carswell_Air_Force_Base",
+  "lat": null,
+  "lon": null
+ },
  "place-casablanca": {
   "name": "Casablanca",
   "kind": "city",
@@ -1001,6 +1019,15 @@
   "wikidata": "Q365",
   "lat": 50.9422,
   "lon": 6.9578
+ },
+ "place-columbia-tennessee": {
+  "name": "Columbia, Tennessee",
+  "kind": "town, seat of Maury County",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Columbia,_Tennessee",
+  "lat": null,
+  "lon": null
  },
  "place-corcieux": {
   "name": "Corcieux",
@@ -1305,6 +1332,15 @@
   "lat": 47.4908,
   "lon": 19.0492
  },
+ "place-ellwood-oil-field": {
+  "name": "Ellwood Oil Field",
+  "kind": "oil field near Santa Barbara, California",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ellwood_Oil_Field",
+  "lat": null,
+  "lon": null
+ },
  "place-embassy-of-russia-tehran": {
   "name": "Soviet Embassy, Tehran",
   "kind": "embassy",
@@ -1562,6 +1598,15 @@
   "lat": 0.5816,
   "lon": 173.5086
  },
+ "place-gilman-hall": {
+  "name": "Gilman Hall",
+  "kind": "chemistry building, University of California, Berkeley",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Gilman_Hall",
+  "lat": null,
+  "lon": null
+ },
  "place-giza-pyramid-complex": {
   "name": "Pyramids of Giza",
   "kind": "pyramids",
@@ -1694,6 +1739,15 @@
   "lat": 13.5,
   "lon": 144.8
  },
+ "place-guildhall-london": {
+  "name": "Guildhall, London",
+  "kind": "City of London's ceremonial hall",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Guildhall,_London",
+  "lat": null,
+  "lon": null
+ },
  "place-gulf-of-finland": {
   "name": "Gulf of Finland",
   "kind": "arm of the Baltic Sea",
@@ -1702,6 +1756,18 @@
   "source": "https://en.wikipedia.org/wiki/Gulf_of_Finland",
   "lat": 59.8333,
   "lon": 26.0
+ },
+ "place-gypsy-family-camp-auschwitz": {
+  "name": "Gypsy family camp (Auschwitz)",
+  "kind": "section BIIe of Auschwitz-Birkenau",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Gypsy_family_camp_(Auschwitz)",
+  "aka": [
+   "Zigeunerlager"
+  ],
+  "lat": null,
+  "lon": null
  },
  "place-hainan": {
   "name": "Hainan",
@@ -2022,6 +2088,15 @@
   "lat": 37.25,
   "lon": -6.95
  },
+ "place-hukawng-valley": {
+  "name": "Hukawng Valley",
+  "kind": "valley in northern Burma",
+  "nation": "Burma",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hukawng_Valley",
+  "lat": null,
+  "lon": null
+ },
  "place-hunter-college": {
   "name": "Hunter College",
   "kind": "college campus",
@@ -2099,6 +2174,15 @@
   "aka": [
    "Isely Field"
   ]
+ },
+ "place-islington": {
+  "name": "Islington",
+  "kind": "district of north London",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Islington",
+  "lat": null,
+  "lon": null
  },
  "place-iwo-jima": {
   "name": "Iwo Jima",
@@ -2255,6 +2339,20 @@
   "lat": 15.45,
   "lon": 36.4
  },
+ "place-kastellorizo": {
+  "name": "Kastellorizo",
+  "kind": "Dodecanese island off Turkey",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kastellorizo",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Castellorizo",
+   "Kastelorizo",
+   "Megisti"
+  ]
+ },
  "place-kaysersberg": {
   "name": "Kaysersberg",
   "kind": "town",
@@ -2285,6 +2383,15 @@
    "Port Lyautey",
    "Mehdia"
   ]
+ },
+ "place-kerkennah-islands": {
+  "name": "Kerkennah Islands",
+  "kind": "island group off Tunisia",
+  "nation": "Tunisia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kerkennah_Islands",
+  "lat": null,
+  "lon": null
  },
  "place-kerling-les-sierck": {
   "name": "Kerling",
@@ -2780,6 +2887,18 @@
    "LAX"
   ]
  },
+ "place-los-banos-laguna": {
+  "name": "Los Banos, Laguna",
+  "kind": "town in Laguna, Philippines; wartime internment camp",
+  "nation": "Philippines",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Los_Ba%C3%B1os,_Laguna",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Los Baños"
+  ]
+ },
  "place-lutsk": {
   "name": "Lutsk",
   "kind": "city",
@@ -2881,6 +3000,15 @@
   "source": "https://en.wikipedia.org/wiki/Mandatory_Palestine",
   "lat": 31.7544,
   "lon": 35.2367
+ },
+ "place-mandatory-syrian-republic": {
+  "name": "Mandatory Syrian Republic",
+  "kind": "Syria under French mandate, 1930 to 1946",
+  "nation": "Syria",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mandatory_Syrian_Republic",
+  "lat": null,
+  "lon": null
  },
  "place-manila": {
   "name": "Manila",
@@ -3215,6 +3343,15 @@
    "Moffett Field"
   ]
  },
+ "place-mogadishu": {
+  "name": "Mogadishu",
+  "kind": "city, capital of Italian Somaliland",
+  "nation": "Somalia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mogadishu",
+  "lat": null,
+  "lon": null
+ },
  "place-mohammedia": {
   "name": "Fedala",
   "kind": "port city",
@@ -3304,6 +3441,15 @@
   "wikidata": "Q83497",
   "lat": 43.8789,
   "lon": -103.4592
+ },
+ "place-mount-suribachi": {
+  "name": "Mount Suribachi",
+  "kind": "volcanic peak, southern tip of Iwo Jima",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mount_Suribachi",
+  "lat": null,
+  "lon": null
  },
  "place-moyeuvre-grande": {
   "name": "Moyeuvre",
@@ -4027,6 +4173,15 @@
   "lat": null,
   "lon": null
  },
+ "place-prussia": {
+  "name": "Prussia",
+  "kind": "German state, abolished 1947",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Prussia",
+  "lat": null,
+  "lon": null
+ },
  "place-pula": {
   "name": "Pula",
   "kind": "port city and naval base",
@@ -4201,6 +4356,15 @@
   "wikidata": "Q1764",
   "lat": 64.1475,
   "lon": -21.935
+ },
+ "place-rhodes": {
+  "name": "Rhodes",
+  "kind": "Greek island, site of the 1949 Egypt and Israel armistice talks",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Rhodes",
+  "lat": null,
+  "lon": null
  },
  "place-road-of-life": {
   "name": "Road of Life",
@@ -4633,6 +4797,15 @@
   "lat": 31.6108,
   "lon": 25.9256
  },
+ "place-sidi-nsir": {
+  "name": "Sidi Nsir",
+  "kind": "hamlet and railway station, northern Tunisia",
+  "nation": "Tunisia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sidi_Nsir",
+  "lat": null,
+  "lon": null
+ },
  "place-silkeborg": {
   "name": "Silkeborg",
   "kind": "town",
@@ -4992,6 +5165,15 @@
   "aka": [
    "Teheran"
   ]
+ },
+ "place-terminal-island": {
+  "name": "Terminal Island",
+  "kind": "island in the Port of Los Angeles, Japanese American fishing village",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Terminal_Island",
+  "lat": null,
+  "lon": null
  },
  "place-terrace-british-columbia": {
   "name": "Terrace, British Columbia",

@@ -204,6 +204,13 @@
   "source": "https://en.wikipedia.org/wiki/152nd_Infantry_Brigade_(United_Kingdom)",
   "wikidata": "Q2808040"
  },
+ "unit-155-field-battery-royal-artillery": {
+  "name": "155 Field Battery, Royal Artillery",
+  "kind": "British field artillery battery",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/155_Field_Battery,_Royal_Artillery"
+ },
  "unit-15th-panzer-division": {
   "name": "15th Panzer Division",
   "kind": "German panzer division",
@@ -874,6 +881,13 @@
    "4th Panzer Army"
   ]
  },
+ "unit-501st-heavy-panzer-battalion": {
+  "name": "501st Heavy Panzer Battalion",
+  "kind": "German Tiger tank battalion",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/501st_Heavy_Panzer_Battalion"
+ },
  "unit-503rd-infantry-regiment": {
   "name": "503rd Parachute Infantry Regiment",
   "kind": "U.S. Army parachute regiment",
@@ -1180,6 +1194,13 @@
   "wikidata": "Q223898",
   "source": "https://en.wikipedia.org/wiki/All-India_Muslim_League"
  },
+ "unit-allied-control-council": {
+  "name": "Allied Control Council",
+  "kind": "four power governing body of occupied Germany",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Allied_Control_Council"
+ },
  "unit-america-first-committee": {
   "name": "America First Committee",
   "kind": "U.S. antiwar pressure group",
@@ -1467,6 +1488,16 @@
   "nation": "Denmark",
   "source": "https://en.wikipedia.org/wiki/Danish_resistance_movement",
   "wikidata": "Q708767"
+ },
+ "unit-daughters-of-the-american-revolution": {
+  "name": "Daughters of the American Revolution",
+  "kind": "American lineage society",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Daughters_of_the_American_Revolution",
+  "aka": [
+   "DAR"
+  ]
  },
  "unit-decima-flottiglia-mas": {
   "name": "Decima Flottiglia MAS",
@@ -1989,6 +2020,16 @@
   "source": "https://en.wikipedia.org/wiki/Lost_Battalion_(Europe,_World_War_II)",
   "wikidata": "Q2890698"
  },
+ "unit-lotta-svard": {
+  "name": "Lotta Svard",
+  "kind": "Finnish women's auxiliary organization",
+  "nation": "Finland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Lotta_Sv%C3%A4rd",
+  "aka": [
+   "Lotta Svärd"
+  ]
+ },
  "unit-loyal-edmonton-regiment": {
   "name": "Loyal Edmonton Regiment",
   "kind": "Canadian infantry regiment",
@@ -2064,6 +2105,17 @@
   "nation": "United States",
   "source": "https://en.wikipedia.org/wiki/Merck_&_Co.",
   "wikidata": "Q247489"
+ },
+ "unit-merrill-s-marauders": {
+  "name": "Merrill's Marauders",
+  "kind": "U.S. Army long range penetration unit, the 5307th Composite Unit (Provisional)",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Merrill%27s_Marauders",
+  "aka": [
+   "5307th Composite Unit (Provisional)",
+   "Galahad"
+  ]
  },
  "unit-mi9": {
   "name": "MI9",
@@ -2478,6 +2530,13 @@
    "Lublin government"
   ]
  },
+ "unit-queen-s-own-rifles-of-canada": {
+  "name": "Queen's Own Rifles of Canada",
+  "kind": "Canadian infantry regiment",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Queen%27s_Own_Rifles_of_Canada"
+ },
  "unit-queen-s-own-royal-west-kent-regiment": {
   "name": "Royal West Kents",
   "kind": "British infantry regiment",
@@ -2557,6 +2616,16 @@
   "wikidata": "Q7351996",
   "source": "https://en.wikipedia.org/wiki/Roberts_Commissions",
   "note": "Wikipedia's article covers both Roberts commissions; this entity is the Pearl Harbor one (Executive Order 8983)"
+ },
+ "unit-royal-hampshire-regiment": {
+  "name": "Royal Hampshire Regiment",
+  "kind": "British infantry regiment",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Royal_Hampshire_Regiment",
+  "aka": [
+   "Hampshire Regiment"
+  ]
  },
  "unit-royal-indian-army-service-corps": {
   "name": "Royal Indian Army Service Corps",
@@ -2764,6 +2833,16 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Teishin_Shudan"
  },
+ "unit-the-writing-69th": {
+  "name": "The Writing 69th",
+  "kind": "group of war correspondents trained to fly bomber missions",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/The_Writing_69th",
+  "aka": [
+   "Writing 69th"
+  ]
+ },
  "unit-third-army-romania": {
   "name": "Romanian Third Army",
   "kind": "Romanian field army",
@@ -2910,6 +2989,13 @@
   "nation": "US",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/United_States_Marine_Corps_Women%27s_Reserve"
+ },
+ "unit-united-states-mint": {
+  "name": "United States Mint",
+  "kind": "U.S. Treasury bureau that strikes coins",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/United_States_Mint"
  },
  "unit-united-states-navy-reserve": {
   "name": "United States Navy Reserve",

@@ -1,4 +1,14 @@
 {
+ "machine-1943-steel-cent": {
+  "name": "1943 steel cent",
+  "kind": "zinc coated steel one cent coin",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1943_steel_cent",
+  "aka": [
+   "steel penny"
+  ]
+ },
  "machine-46-cm-45-type-94-naval-gun": {
   "name": "46 cm Type 94 naval gun",
   "kind": "naval gun",
@@ -108,6 +118,14 @@
   "nation": "Britain",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Cavity_magnetron"
+ },
+ "machine-chain-home": {
+  "name": "Chain Home",
+  "kind": "British early warning radar network",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Chain_Home",
+  "note": "The Daventry experiment article redirects here"
  },
  "machine-chariot-manned-torpedo": {
   "name": "Chariot manned torpedo",
@@ -525,6 +543,13 @@
    "Mark 32 fuze"
   ]
  },
+ "machine-raising-the-flag-on-iwo-jima": {
+  "name": "Raising the Flag on Iwo Jima",
+  "kind": "photograph by Joe Rosenthal, 23 Feb 1945",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Raising_the_Flag_on_Iwo_Jima"
+ },
  "machine-rolls-royce-merlin": {
   "name": "Rolls-Royce Merlin",
   "kind": "V-12 aircraft engine",
@@ -541,6 +566,16 @@
   "nation": "US",
   "wikidata": "Q29051409",
   "source": "https://en.wikipedia.org/wiki/Roosevelt_dime"
+ },
+ "machine-rtv-g-4-bumper": {
+  "name": "RTV-G-4 Bumper",
+  "kind": "two stage sounding rocket, a V-2 with a WAC Corporal upper stage",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/RTV-G-4_Bumper",
+  "aka": [
+   "Bumper"
+  ]
  },
  "machine-sg-radar": {
   "name": "SG radar",

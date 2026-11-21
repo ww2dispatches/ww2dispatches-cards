@@ -129,6 +129,13 @@
    "Victorious February"
   ]
  },
+ "op-1949-armistice-agreements": {
+  "name": "1949 Armistice Agreements",
+  "kind": "armistices between Israel and Egypt, Lebanon, Jordan and Syria",
+  "nation": "Israel",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1949_Armistice_Agreements"
+ },
  "op-20-july-plot": {
   "name": "20 July plot",
   "kind": "assassination attempt and coup",
@@ -169,6 +176,13 @@
   "aka": [
    "abdication crisis"
   ]
+ },
+ "op-abolition-of-prussia": {
+  "name": "Abolition of Prussia",
+  "kind": "Allied Control Council Law No. 46",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Abolition_of_Prussia"
  },
  "op-abyssinia-crisis": {
   "name": "Abyssinia Crisis",
@@ -228,6 +242,13 @@
   "nation": "Britain",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Altmark_incident"
+ },
+ "op-american-carrier-raids-of-1942": {
+  "name": "American carrier raids of 1942",
+  "kind": "U.S. carrier raids on Japanese held islands, early 1942",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/American_carrier_raids_of_1942"
  },
  "op-anglo-american-loan": {
   "name": "Anglo-American loan",
@@ -735,6 +756,16 @@
    "Surigao Strait"
   ]
  },
+ "op-battle-of-los-angeles": {
+  "name": "Battle of Los Angeles",
+  "kind": "air raid false alarm and anti-aircraft barrage, 24 to 25 Feb 1942",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Los_Angeles",
+  "aka": [
+   "Great Los Angeles Air Raid"
+  ]
+ },
  "op-battle-of-makassar-strait": {
   "name": "Battle of Makassar Strait",
   "kind": "naval air action, 4 February 1942",
@@ -871,6 +902,16 @@
   "wikidata": "Q4872083",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Port_Moresby"
  },
+ "op-battle-of-poznan-1945": {
+  "name": "Battle of Poznan (1945)",
+  "kind": "Soviet siege of the Poznan fortress, Jan to Feb 1945",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Pozna%C5%84_(1945)",
+  "aka": [
+   "Battle of Poznań (1945)"
+  ]
+ },
  "op-battle-of-raate-road": {
   "name": "Battle of Raate Road",
   "kind": "Winter War battle",
@@ -947,6 +988,13 @@
   "aka": [
    "Operation Fruhlingswind"
   ]
+ },
+ "op-battle-of-sittang-bridge": {
+  "name": "Battle of Sittang Bridge",
+  "kind": "Burma campaign battle, 22 to 23 Feb 1942",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Sittang_Bridge"
  },
  "op-battle-of-skerki-bank": {
   "name": "Battle of Skerki Bank",
@@ -1230,6 +1278,20 @@
   "nation": "Germany",
   "wikidata": "Q683607",
   "source": "https://en.wikipedia.org/wiki/Blomberg%E2%80%93Fritsch_affair"
+ },
+ "op-bombardment-of-ellwood": {
+  "name": "Bombardment of Ellwood",
+  "kind": "Japanese submarine shelling of the California coast, 23 Feb 1942",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombardment_of_Ellwood"
+ },
+ "op-bombing-of-belgrade-in-world-war-ii": {
+  "name": "Bombing of Belgrade in World War II",
+  "kind": "air raids on Belgrade",
+  "nation": "Yugoslavia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Belgrade_in_World_War_II"
  },
  "op-bombing-of-berlin-in-world-war-ii": {
   "name": "Bombing of Berlin in World War II",
@@ -1706,6 +1768,17 @@
    "December events"
   ]
  },
+ "op-deportation-of-the-chechens-and-ingush": {
+  "name": "Deportation of the Chechens and Ingush",
+  "kind": "Soviet forced deportation, Feb to Mar 1944",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Deportation_of_the_Chechens_and_Ingush",
+  "aka": [
+   "Aardakh",
+   "Operation Lentil"
+  ]
+ },
  "op-deportation-of-the-kalmyks": {
   "name": "Deportation of the Kalmyks",
   "kind": "Soviet forced deportation, 1943",
@@ -1826,6 +1899,17 @@
   "nation": "Japan",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Farrer_Park_address"
+ },
+ "op-february-26-incident": {
+  "name": "February 26 incident",
+  "kind": "attempted coup in Tokyo, 1936",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/February_26_incident",
+  "aka": [
+   "2-26 Incident",
+   "Ni Ni-Roku Jiken"
+  ]
  },
  "op-february-strike": {
   "name": "February strike",
@@ -2100,6 +2184,13 @@
   "nation": "US",
   "wikidata": "Q936604",
   "source": "https://en.wikipedia.org/wiki/Internment_of_Japanese_Americans"
+ },
+ "op-internment-of-japanese-canadians": {
+  "name": "Internment of Japanese Canadians",
+  "kind": "forced removal and internment program, 1942 to 1949",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Internment_of_Japanese_Canadians"
  },
  "op-invasion-of-lingayen-gulf": {
   "name": "Invasion of Lingayen Gulf",
@@ -2499,6 +2590,17 @@
    "Manhattan Engineer District"
   ]
  },
+ "op-manstein-plan": {
+  "name": "Manstein plan",
+  "kind": "German invasion plan for France and the Low Countries, 1940",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Manstein_plan",
+  "aka": [
+   "Fall Gelb",
+   "Sichelschnitt"
+  ]
+ },
  "op-marseille-roundup": {
   "name": "Marseille roundup",
   "kind": "roundup and deportation of Jews",
@@ -2722,6 +2824,13 @@
    "Ohi Day"
   ]
  },
+ "op-operation-abstention": {
+  "name": "Operation Abstention",
+  "kind": "British raid on Kastellorizo",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Abstention"
+ },
  "op-operation-anklet": {
   "name": "Operation Anklet",
   "kind": "British commando raid on the Lofoten Islands",
@@ -2770,6 +2879,13 @@
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/Operation_Battleaxe",
   "wikidata": "Q682399"
+ },
+ "op-operation-blockbuster": {
+  "name": "Operation Blockbuster",
+  "kind": "Canadian offensive west of the Rhine, 1945",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Blockbuster"
  },
  "op-operation-bodenplatte": {
   "name": "Operation Bodenplatte",
@@ -3012,6 +3128,17 @@
   "source": "https://en.wikipedia.org/wiki/Operation_Northwind_(1944)",
   "aka": [
    "Operation Nordwind"
+  ]
+ },
+ "op-operation-ochsenkopf": {
+  "name": "Operation Ochsenkopf",
+  "kind": "Axis offensive in northern Tunisia, 1943",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Ochsenkopf",
+  "aka": [
+   "Battle of Sidi Nsir",
+   "Battle of Hunts Gap"
   ]
  },
  "op-operation-ostfront": {
@@ -3308,6 +3435,16 @@
   "nation": "Italy",
   "wikidata": "Q7283730",
   "source": "https://en.wikipedia.org/wiki/Raid_on_Algiers"
+ },
+ "op-raid-on-los-banos": {
+  "name": "Raid on Los Banos",
+  "kind": "U.S. airborne and Filipino guerrilla rescue of internees, Feb 1945",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Raid_on_Los_Ba%C3%B1os",
+  "aka": [
+   "Raid on Los Baños"
+  ]
  },
  "op-raid-on-tatsinskaya": {
   "name": "Raid on Tatsinskaya",
@@ -3890,6 +4027,13 @@
   "nation": "US",
   "wikidata": "Q23003185",
   "source": "https://en.wikipedia.org/wiki/Truman_Directive_of_1945"
+ },
+ "op-turkish-declaration-of-war-on-germany-and-japan": {
+  "name": "Turkish declaration of war on Germany and Japan",
+  "kind": "declaration of war, 23 Feb 1945",
+  "nation": "Turkey",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Turkish_declaration_of_war_on_Germany_and_Japan"
  },
  "op-twenty-second-amendment-to-the-united-states-constitution": {
   "name": "22nd Amendment",
