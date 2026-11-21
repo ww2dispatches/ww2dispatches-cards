@@ -102,7 +102,7 @@ The rules are in the synopsis from the 26 Oct strategy chat (twelve cards, four 
 * no card on the board fits two of the four links (`cards` plus `alsoFits`),
 * a series stamp or year on exactly three cards that are a real group is refused (the board would give it away by reading),
 * at most one decoy: a series, a year, or another master list link holding exactly three cards from different groups,
-* no group dealt with two cards of the same event, such as a story card and its spec sheet (ids "X" and "X-spec"; decided 7 Nov 2026, to do item 12), and such a pair counts as one card toward a group's three,
+* no board with two cards of the same event, such as a story card and its spec sheet (decided 7 Nov 2026, to do item 12; since 21 Nov 2026 read from the records' `event` tag, not the "X" and "X-spec" ids, and applied to the whole board, to do item 14), and such cards count as one toward a group's three,
 * Living Cards (film posted) are dealt as the living variant 1 in 6, shown by their still frame.
 A deal checks at most 600 boards with unseen hard groups, tried in rounds of 15 each across all of them, plus 200 with seen ones only when those find nothing, which keeps it inside Cloudflare's CPU allowance (under 1 ms on average, about 6 ms worst case on the October catalog). If none passes, the page says the files are still being sorted and offers a retry.
 
