@@ -7,8 +7,8 @@ ROOT = os.path.join(HERE, '..')
 TPL = json.load(open(os.path.join(HERE, 'template.json')))
 CAM = json.load(open(os.path.join(HERE, 'view.json')))          # the fixed camera, unpadded frame
 LIB = json.load(open(os.path.join(ROOT, 'kit', 'silhouettes', 'library.json')))
-TW, TH = 14.0, 14.4          # table map size in table units (scene.py)
-BS, BH = float(os.environ.get("MAPROOM_BS", 1.35)), 0.36   # block size and height (MAPROOM_BS: a test knob for trying sizes)
+TW, TH = float(os.environ.get('MAPROOM_TW', 14.0)), float(os.environ.get('MAPROOM_TH', 14.4))   # table map size in table units (scene.py); env: test knobs
+BS, BH = float(os.environ.get("MAPROOM_BS", 1.35)), float(os.environ.get("MAPROOM_BH", 0.36))   # block size and height (MAPROOM_BS: a test knob for trying sizes)
 RAKE_GAP = 0.12              # rake head to block face
 W, H = TPL['frame']
 ALLIED = {'us', 'britain', 'soviet'}
@@ -105,6 +105,7 @@ class Day:
         return None if p['move'] == 'arrive' else self.xy(p['from'])
     def rest_to(self, p):
         if p['move'] == 'surrender': return None
+        if p['move'] == 'driven': return self.xy(p['to'])
         if p['move'] in ('advance', 'fall_back', 'arrive'): return self.snap_to(p)
         return self.xy(p['from'])
     def snap_to(self, p):
@@ -170,6 +171,11 @@ class Day:
                 dur = B['ring'] if mv == 'cut_off' else B['grounded']
                 s.update(t_done=t + dur); self.events.append((t, 'pencil', dur)); t += dur + B['mark_gap']
             self.slots.append(s)
+        for p in self.pieces:
+            if p['move'] == 'driven':
+                s = self.slot(p['by']); sc = self.touch(p)
+                tk = next(i / 200 for i in range(201) if ease(i / 200) >= sc - 1e-9)
+                self.events.append((s['t_move'] + tk * B['rake_move'], 'knock', 0.8))
         self.t_moves_end = t if movers else self.t_table + 0.6
         self.t_wipe = self.t_moves_end
         self.t_draw = self.t_wipe + B['wipe']
@@ -177,11 +183,24 @@ class Day:
         self.t_tonight = self.t_draw + B['draw'] + B['tonight_after_draw']
         self.T = self.t_draw + B['draw'] + B['end_hold']
         self.events += [(self.t_wipe, 'wipe', B['wipe']), (self.t_draw, 'pencil', B['draw'])]
+    def touch(self, p):
+        """how far along its move (0 to 1) the attacker is when it meets the block it drives back"""
+        s = self.slot(p['by']); q = self.xy(p['from'])
+        for i in range(101):
+            k = i / 100; m = (s['a'][0] + (s['b'][0] - s['a'][0]) * k, s['a'][1] + (s['b'][1] - s['a'][1]) * k)
+            if abs(m[0] - q[0]) < BS + 0.04 and abs(m[1] - q[1]) < BS + 0.04: return k
+        return 1.0
     def slot(self, pid): return next((s for s in self.slots if s['id'] == pid), None)
 
     def pos(self, p, t):
         """where block p sits at time t (table units), or None if it is off the table"""
         s = self.slot(p['id']); mv = p['move']
+        if mv == 'driven':
+            # driven back: an attacker's block meets this one and carries it off; it moves only once they touch
+            s = self.slot(p['by']); a, b = self.xy(p['from']), self.xy(p['to'])
+            k = ease((t - s['t_move']) / B['rake_move']); sc = self.touch(p)
+            if k <= sc: return a
+            f = (k - sc) / max(1 - sc, 1e-6); return (a[0] + (b[0] - a[0]) * f, a[1] + (b[1] - a[1]) * f)
         if s is None or mv in ('hold', 'cut_off', 'grounded'): return self.rest_from(p)
         if mv == 'air_mission':
             a, b = s['a'], s['b']

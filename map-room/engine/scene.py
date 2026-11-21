@@ -78,7 +78,7 @@ def face_plane(name, w, h, img):
     o = link(bpy.data.objects.new(name, m)); o.data.materials.append(img_mat(img)); return o
 
 # ---------- table ----------
-TW, TH = 14.0, 14.4
+TW, TH = float(os.environ.get('MAPROOM_TW', 14.0)), float(os.environ.get('MAPROOM_TH', 14.4))
 mp = face_plane('map', TW, TH, MAP)
 mm = mp.data.materials[0]; p = mm.node_tree.nodes['Principled BSDF']; p.inputs['Roughness'].default_value = 0.3; p.inputs['Coat Weight'].default_value = 1.0; p.inputs['Coat Roughness'].default_value = 0.04
 TABLE = [mp]
@@ -90,8 +90,9 @@ fl = box('floor', 80, 80, 0.1, (0, 0, -3.5)); mat(fl, 'floor'); TABLE.append(fl)
 # ---------- pieces ----------
 BS = float(os.environ.get("MAPROOM_BS", 1.35))   # as day.py
 def make_block(face, loc, rot):
-    b = box('blk', BS, BS, 0.36, (0, 0, 0)); bevel(b, 0.045, 4); mat(b, 'walnut')
-    f = face_plane('bf', BS * 0.89, BS * 0.89, face); f.location = (0, 0, 0.3608)
+    BH = float(os.environ.get('MAPROOM_BH', 0.36))
+    b = box('blk', BS, BS, BH, (0, 0, 0)); bevel(b, 0.045, 4); mat(b, 'walnut')
+    f = face_plane('bf', BS * 0.89, BS * 0.89, face); f.location = (0, 0, BH + 0.0008)
     g = group('blk', (loc[0], loc[1], 0), [b, f], math.radians(rot)); return g, [b, f]
 def make_rake(head_xy, angle):
     # the head sits against the block; the pole runs away at `angle` and up toward an unseen hand
