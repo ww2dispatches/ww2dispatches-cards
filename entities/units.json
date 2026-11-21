@@ -1539,6 +1539,16 @@
   "source": "https://en.wikipedia.org/wiki/First_Canadian_Army",
   "wikidata": "Q2703916"
  },
+ "unit-first-indian-national-army": {
+  "name": "First Indian National Army",
+  "kind": "Indian force raised from prisoners of war under Japanese sponsorship",
+  "nation": "India",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/First_Indian_National_Army",
+  "aka": [
+   "INA"
+  ]
+ },
  "unit-first-polish-army-1944-1945": {
   "name": "First Polish Army",
   "kind": "field army",
@@ -2625,6 +2635,17 @@
    "State Defence Committee"
   ]
  },
+ "unit-strength-through-joy": {
+  "name": "Strength Through Joy",
+  "kind": "Nazi state leisure organization (KdF)",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Strength_Through_Joy",
+  "aka": [
+   "Kraft durch Freude",
+   "KdF"
+  ]
+ },
  "unit-supreme-commander-for-the-allied-powers": {
   "name": "Supreme Commander for the Allied Powers",
   "kind": "Allied occupation headquarters in Japan",
@@ -2900,6 +2921,16 @@
   "aka": [
    "VMF-214",
    "Black Sheep Squadron"
+  ]
+ },
+ "unit-voice-of-america": {
+  "name": "Voice of America",
+  "kind": "U.S. government international broadcaster",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Voice_of_America",
+  "aka": [
+   "VOA"
   ]
  },
  "unit-voronezh-front": {

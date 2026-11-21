@@ -1311,6 +1311,15 @@
    "Faroes"
   ]
  },
+ "place-federal-state-of-austria": {
+  "name": "Federal State of Austria",
+  "kind": "Austrian state, 1934 to 1938",
+  "nation": "Austria",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Federal_State_of_Austria",
+  "lat": null,
+  "lon": null
+ },
  "place-feodosia": {
   "name": "Feodosia",
   "kind": "port city in the Crimea",
@@ -4314,6 +4323,15 @@
   "lat": 5.8388,
   "lon": 118.1173
  },
+ "place-santa-ana-army-air-base": {
+  "name": "Santa Ana Army Air Base",
+  "kind": "Army Air Forces training base, California",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Santa_Ana_Army_Air_Base",
+  "lat": null,
+  "lon": null
+ },
  "place-santa-cruz-islands": {
   "name": "Santa Cruz Islands",
   "kind": "island group",
@@ -5081,6 +5099,15 @@
   "source": "https://en.wikipedia.org/wiki/Velikiye_Luki",
   "lat": 56.35,
   "lon": 30.5167
+ },
+ "place-venice": {
+  "name": "Venice",
+  "kind": "city",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Venice",
+  "lat": null,
+  "lon": null
  },
  "place-vermelles": {
   "name": "Vermelles",

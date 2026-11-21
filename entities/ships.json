@@ -256,6 +256,13 @@
    "Speybank"
   ]
  },
+ "ship-german-submarine-u-101-1940": {
+  "name": "U-101",
+  "kind": "Type VIIB U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-101_(1940)"
+ },
  "ship-german-submarine-u-103-1940": {
   "name": "U-103",
   "kind": "Type IXB U-boat",
@@ -1763,6 +1770,13 @@
    "Kashii"
   ]
  },
+ "ship-japanese-cruiser-katori": {
+  "name": "Katori",
+  "kind": "Katori class training cruiser",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_cruiser_Katori"
+ },
  "ship-japanese-cruiser-kiso": {
   "name": "Kiso",
   "kind": "light cruiser",
@@ -1921,6 +1935,13 @@
   "aka": [
    "Natsushio"
   ]
+ },
+ "ship-japanese-destroyer-nowaki-1940": {
+  "name": "Nowaki",
+  "kind": "Kagero class destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Nowaki_(1940)"
  },
  "ship-japanese-destroyer-okinami": {
   "name": "Okinami",
@@ -2456,6 +2477,13 @@
    "Fairport"
   ]
  },
+ "ship-ss-gairsoppa": {
+  "name": "SS Gairsoppa",
+  "kind": "British India Steam Navigation cargo steamer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Gairsoppa"
+ },
  "ship-ss-general-von-steuben": {
   "name": "SS General von Steuben",
   "kind": "German liner, later a Kriegsmarine transport",
@@ -2971,6 +2999,13 @@
   "source": "https://en.wikipedia.org/wiki/USS_Intrepid_(CV-11)",
   "wikidata": "Q1351288"
  },
+ "ship-uss-iowa-bb-61": {
+  "name": "USS Iowa (BB-61)",
+  "kind": "Iowa class battleship",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Iowa_(BB-61)"
+ },
  "ship-uss-john-d-ford": {
   "name": "USS John D. Ford (DD-228)",
   "kind": "destroyer",
@@ -3012,6 +3047,16 @@
   "nation": "US",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/USS_Koiner"
+ },
+ "ship-uss-lci-l-449": {
+  "name": "USS LCI(L)-449",
+  "kind": "landing craft infantry, converted to gunboat LCI(G) 449",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_LCI(L)-449",
+  "aka": [
+   "LCI(G)-449"
+  ]
  },
  "ship-uss-lexington-cv-16": {
   "name": "USS Lexington (CV-16)",
