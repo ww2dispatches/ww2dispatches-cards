@@ -1,6 +1,7 @@
 """The Map Room sound kit, generated from code (original, owned by Brian Acquesta).
 Sound C: table sounds, the war room bed, and the quiet in house theme. build(events, T, out) makes one day's mix from the
 clip's move events (day.Day.events); run directly to rebuild the three Day 1 test mixes of 20 Nov 2026."""
+import os
 import numpy as np, scipy.signal as ss, scipy.io.wavfile as wf
 SR = 48000; T = 17.5; N = int(SR * T)   # T and N are only the Day 1 test defaults
 rng = np.random.default_rng(16)
@@ -130,7 +131,21 @@ def table_track(events=None, T=T):
         elif kind == 'pencil': put(out, pencil(g), t0)
         elif kind == 'wipe': put(out, wipe(g), t0)
     return room(out, 0.15)
+OPS_ROOM = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'kit', 'sound', 'declass_ambience_ops_room_v02.wav')
+def ops_room(T=T):
+    """the Declass soundboard's Ops room ambience (Brian, 20 Nov 2026: the teletype bed sounded like a keyboard), looped
+    with a cross fade and set to the level the old bed had"""
+    sr, x = wf.read(OPS_ROOM); x = x.astype(np.float64)
+    if x.ndim > 1: x = x.mean(axis=1)
+    x /= max(1e-9, np.max(np.abs(x)))
+    if sr != SR: x = ss.resample_poly(x, SR, sr)
+    n = int(T * SR); f = int(0.5 * SR); out = np.zeros(n + len(x)); pos = 0; ramp = np.linspace(0, 1, f)
+    while pos < n:
+        seg = x.copy(); seg[:f] *= ramp; seg[-f:] *= ramp[::-1]; out[pos:pos + len(seg)] += seg; pos += len(x) - f
+    out = out[:n]; ref = teletype(T) * 0.5 + clock(T) * 0.55 + static(T) + hum(T)
+    return out * (np.sqrt(np.mean(ref ** 2)) / max(1e-9, np.sqrt(np.mean(out ** 2))))
 def bed(T=T):
+    if os.path.exists(OPS_ROOM): return ops_room(T)
     return teletype(T) * 0.5 + clock(T) * 0.55 + static(T) + hum(T)
 def master(x, name):
     x = hp(x, 70); x = np.tanh(x * 1.2) / 1.2

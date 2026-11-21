@@ -1,5 +1,9 @@
 # The Map Room: the `mapRoom` block
 
+> **Direction change, 20 Nov 2026 (Brian approved the zoom proof). This document still describes the old fixed views and is being rewritten.**
+> Decided: one balcony view per series (the whole battle from nearly straight above); a focus point per day that the camera comes down to; every block covers 10 km of ground, about 40% of the old height; labels are read only in the close view; the grease pencil line runs to the edges of the map; an attack drives an enemy block back or aside (`driven`), blocks never overlap or cross, and the engine spaces them; unit positions come from that day's situation map; the bed is the Declass Ops room ambience. Proof: `tools/proof/proof_zoom.py`, `test/proof-zoom-*.json`.
+
+
 Final format, 20 Nov 2026 (Map Room build chat). For the Campaign Series chat: write one `mapRoom` block into each day record (`campaign-series/<campaign>/day-NN.json`) in the build sitting, then run the checker. The Map Room chat turns each block into the day's clip, and its pre render check reads the same block. Full plan: the project doc "WW2 Dispatches Map Room".
 
 ## The short brief
