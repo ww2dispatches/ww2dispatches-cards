@@ -17,6 +17,15 @@
   "lat": 56.1706,
   "lon": 10.2011
  },
+ "place-addis-ababa": {
+  "name": "Addis Ababa",
+  "kind": "city",
+  "nation": "Ethiopia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Addis_Ababa",
+  "lat": null,
+  "lon": null
+ },
  "place-aichi-prefecture": {
   "name": "Aichi Prefecture",
   "kind": "prefecture",
@@ -5495,6 +5504,15 @@
   "aka": [
    "White Sands Proving Ground"
   ]
+ },
+ "place-winnipeg": {
+  "name": "Winnipeg",
+  "kind": "city",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Winnipeg",
+  "lat": null,
+  "lon": null
  },
  "place-wolf-s-lair": {
   "name": "Wolf's Lair",

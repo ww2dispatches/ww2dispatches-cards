@@ -607,12 +607,29 @@
   "wikidata": "Q4871375",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Kampar"
  },
+ "op-battle-of-kasserine-pass": {
+  "name": "Battle of Kasserine Pass",
+  "kind": "battle in Tunisia, 1943",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Kasserine_Pass"
+ },
  "op-battle-of-ko-chang": {
   "name": "Battle of Ko Chang",
   "kind": "naval battle",
   "nation": "France",
   "wikidata": "Q702579",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Ko_Chang"
+ },
+ "op-battle-of-konigsberg": {
+  "name": "Battle of Konigsberg",
+  "kind": "siege and battle for Konigsberg, 1945",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_K%C3%B6nigsberg",
+  "aka": [
+   "Battle of Königsberg"
+  ]
  },
  "op-battle-of-korsun-cherkassy": {
   "name": "Battle of Korsun-Cherkassy",
@@ -1180,6 +1197,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Chongqing"
  },
+ "op-bombing-of-darwin": {
+  "name": "Bombing of Darwin",
+  "kind": "Japanese air raids on Darwin, 1942",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Darwin"
+ },
  "op-bombing-of-dresden": {
   "name": "Bombing of Dresden",
   "kind": "Allied air raids on Dresden, 13 to 15 February 1945",
@@ -1200,6 +1224,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q4093055",
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Helsinki_in_World_War_II"
+ },
+ "op-bombing-of-leipzig-in-world-war-ii": {
+  "name": "Bombing of Leipzig in World War II",
+  "kind": "Allied air raids on Leipzig",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Leipzig_in_World_War_II"
  },
  "op-bombing-of-mannheim-in-world-war-ii": {
   "name": "Bombing of Mannheim in World War II",
@@ -1554,6 +1585,13 @@
    "Moonlight Sonata"
   ]
  },
+ "op-cowra-breakout": {
+  "name": "Cowra breakout",
+  "kind": "mass escape of Japanese prisoners of war, 1944",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Cowra_breakout"
+ },
  "op-czestochowa-ghetto-uprising": {
   "name": "Częstochowa Ghetto uprising",
   "kind": "ghetto resistance",
@@ -1685,6 +1723,13 @@
   "nation": "US",
   "wikidata": "Q5419187",
   "source": "https://en.wikipedia.org/wiki/Ex_parte_Endo"
+ },
+ "op-executive-order-9066": {
+  "name": "Executive Order 9066",
+  "kind": "U.S. presidential order authorizing exclusion from military areas",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Executive_Order_9066"
  },
  "op-expulsion-of-germans-from-czechoslovakia": {
   "name": "Expulsion of Germans from Czechoslovakia",
@@ -1922,6 +1967,16 @@
   "wikidata": "Q165058",
   "source": "https://en.wikipedia.org/wiki/Holodomor"
  },
+ "op-hostages-trial": {
+  "name": "Hostages Trial",
+  "kind": "Nuremberg Military Tribunal Case 7",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hostages_Trial",
+  "aka": [
+   "Hostage Case"
+  ]
+ },
  "op-huaihai-campaign": {
   "name": "Huaihai campaign",
   "kind": "campaign",
@@ -1938,6 +1993,13 @@
   "aka": [
    "Ningen-sengen"
   ]
+ },
+ "op-if-day": {
+  "name": "If Day",
+  "kind": "mock Nazi invasion of Winnipeg for the Victory Loan, 1942",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/If_Day"
  },
  "op-indonesian-national-revolution": {
   "name": "Indonesian National Revolution",
@@ -3223,6 +3285,13 @@
    "Great Retreat"
   ]
  },
+ "op-riom-trial": {
+  "name": "Riom Trial",
+  "kind": "Vichy trial of Third Republic leaders",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Riom_Trial"
+ },
  "op-romani-holocaust": {
   "name": "Romani Holocaust",
   "kind": "genocide",
@@ -3946,6 +4015,16 @@
   "nation": "worldwide",
   "wikidata": "Q161227",
   "source": "https://en.wikipedia.org/wiki/Yalta_Conference"
+ },
+ "op-yekatit-12": {
+  "name": "Yekatit 12",
+  "kind": "massacre in Addis Ababa, 1937",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Yekatit_12",
+  "aka": [
+   "Addis Ababa massacre"
+  ]
  },
  "op-yevpatoria-assault": {
   "name": "Yevpatoria assault",

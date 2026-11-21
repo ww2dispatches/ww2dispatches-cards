@@ -1147,6 +1147,13 @@
    "Eisenhower"
   ]
  },
+ "person-dylan-thomas": {
+  "name": "Dylan Thomas",
+  "kind": "Welsh poet",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Dylan_Thomas"
+ },
  "person-eamon-de-valera": {
   "name": "Eamon de Valera",
   "kind": "Irish head of government",
@@ -2317,6 +2324,16 @@
   "wikidata": "Q982206",
   "source": "https://en.wikipedia.org/wiki/Hajime_Sugiyama"
  },
+ "person-hajime-toyoshima": {
+  "name": "Hajime Toyoshima",
+  "kind": "Imperial Japanese Navy fighter pilot, prisoner of war",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hajime_Toyoshima",
+  "aka": [
+   "Tadao Minami"
+  ]
+ },
  "person-hal-b-wallis": {
   "name": "Hal Wallis",
   "kind": "film producer",
@@ -3328,6 +3345,13 @@
   "wikidata": "Q949",
   "source": "https://en.wikipedia.org/wiki/John_Bardeen"
  },
+ "person-john-basilone": {
+  "name": "John Basilone",
+  "kind": "U.S. Marine gunnery sergeant, Medal of Honor",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/John_Basilone"
+ },
  "person-john-brind": {
   "name": "John Brind",
   "kind": "British Army general, commander of the Saar International Force",
@@ -4274,6 +4298,23 @@
   "wikidata": "Q1148126",
   "source": "https://en.wikipedia.org/wiki/Matome_Ugaki"
  },
+ "person-matthias-ulungura": {
+  "name": "Matthias Ulungura",
+  "kind": "Tiwi man who captured Hajime Toyoshima",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Matthias_Ulungura",
+  "aka": [
+   "Matthias Ullungura"
+  ]
+ },
+ "person-maurice-gamelin": {
+  "name": "Maurice Gamelin",
+  "kind": "French Army general",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Maurice_Gamelin"
+ },
  "person-max-aitken-1st-baron-beaverbrook": {
   "name": "Lord Beaverbrook",
   "kind": "British minister",
@@ -4657,6 +4698,13 @@
   "aka": [
    "Otto Wille Kuusinen"
   ]
+ },
+ "person-otto-lasch": {
+  "name": "Otto Lasch",
+  "kind": "German Army general, commander of Konigsberg",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Otto_Lasch"
  },
  "person-otto-meissner": {
   "name": "Otto Meissner",
@@ -5180,6 +5228,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q204338",
   "source": "https://en.wikipedia.org/wiki/Rodion_Malinovsky"
+ },
+ "person-rodolfo-graziani": {
+  "name": "Rodolfo Graziani",
+  "kind": "Italian marshal, Viceroy of Italian East Africa",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Rodolfo_Graziani"
  },
  "person-roland-freisler": {
   "name": "Roland Freisler",
@@ -6068,6 +6123,13 @@
   "nation": "Germany",
   "source": "https://en.wikipedia.org/wiki/Wilhelm_Keitel",
   "wikidata": "Q76361"
+ },
+ "person-wilhelm-list": {
+  "name": "Wilhelm List",
+  "kind": "German Army field marshal, Hostage Case defendant",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Wilhelm_List"
  },
  "person-wilhelm-ritter-von-leeb": {
   "name": "Wilhelm Ritter von Leeb",
