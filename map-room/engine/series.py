@@ -163,7 +163,9 @@ class Series:
             else: q = piece(u, move='hold'); q['from'] = list(a)
             pieces.append(q)
         for m in d.get('air', []):
-            pieces.append(piece(m['unit'], move='air_mission', order=m['order'], enters=m['enters'], target=list(m['target']), sources=m.get('sources', [])))
+            q = piece(m['unit'], move='air_mission', order=m['order'], enters=m['enters'], target=list(m['target']), sources=m.get('sources', []))
+            q['label'] = m.get('label') or q['label']               # an aircraft block says what it is doing
+            pieces.append(q)
         rec = {k: d['rec'].get(k) for k in ('campaign', 'seriesName', 'day', 'days', 'date', 'subtitle')}
         rec['seriesName'] = rec.get('seriesName') or self.cfg.get('name'); rec['days'] = rec.get('days') or self.cfg.get('days')
         rec['mapRoom'] = {'asOf': mr.get('asOf', ''), 'lineAM': d['lineAM'], 'linePM': d['line'], 'lineSources': mr.get('lineSources', []), 'pieces': pieces}

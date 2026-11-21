@@ -77,6 +77,9 @@ def check(s):
                 if not m.get('target'): E(f'{who}: needs target, the [lon, lat] of the drop zone or the place struck')
                 if m.get('enters') not in ('north', 'south', 'east', 'west'): E(f'{who}: needs enters, the frame edge toward its bases')
                 if m.get('drives'): E(f'{who}: aircraft do not drive blocks')
+                lab = m.get('label', '')
+                if not lab: E(f'{who}: needs label, what the block says the aircraft are doing (Supply Drop, Glider Drop, Air Strike)')
+                elif len(lab) > 16 or SHORT.search(lab) or '-' in lab: E(f'{who}: label must be 16 characters at most, words written out, no dashes')
             elif s.units[u]['type'] in AIR: E(f'{who}: aircraft only fly air_mission (they are not kept on the table)')
             sourced(who, m.get('sources'), True)
             if mv in ('advance', 'fall_back'):
