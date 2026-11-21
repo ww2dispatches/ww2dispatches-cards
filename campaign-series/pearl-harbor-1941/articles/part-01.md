@@ -2,13 +2,21 @@ On the morning of 26 November 1941, the most powerful carrier force in the world
 
 This is the first of three parts on the road to Pearl Harbor. Our daily posts followed it one morning at a time, as the people living it saw it. Here we can do what they could not: lay the days side by side and see what was coming.
 
-![The strike force's track, 26 November to 23 December 1941, from a postwar U.S. Army map. The fleet ran east along the empty northern route, turned south on 4 December, and launched its aircraft north of Oahu on the morning of 7 December, Hawaii time. Times on the map are Tokyo time. U.S. Army, Reports of General MacArthur (1966), public domain.](photos/campaign/ph-map-route.jpg)
+![Japan's forces as they stood on the eve of war, drawn after the war from Japanese records. The great arrows in the west are the invasion forces bound for Malaya, Thailand and the Philippines, the moves Washington was watching. The single arrow in the empty ocean at upper right is the carrier strike force, curving down on Hawaii. Plate No. 12, Reports of General MacArthur, Vol. II, Part I (U.S. Army, 1966), public domain.](photos/campaign/ch-genmac-plate12-dispositions.jpg)
 
 ## The Sortie
 
 *Hitokappu Bay, Kuril Islands, 26 November 1941*
 
 At six in the morning, Tokyo time, Vice Admiral Chuichi Nagumo's First Air Fleet left Hitokappu Bay on Etorofu, in the Kuril Islands. Six carriers led it: Akagi, Kaga, Soryu, Hiryu, Shokaku and Zuikaku, together carrying more than 400 aircraft. Two battleships, cruisers and destroyers screened them, and a train of tankers followed, because the route ahead had no friendly port.
+
+Commander Mitsuo Fuchida, who would lead the air attack, rode in Akagi. Questioned by American officers in Tokyo after the surrender, he remembered the departure and the formation in a few plain words.
+
+> **In their words.** Captain Mitsuo Fuchida, air group commander of Akagi, interrogated in Tokyo, 10 October 1945
+>
+> "We left on the 26th of November from CHISHIMA. ... The carriers were in two columns of three with 10 kilometers between ships. There were about four cruisers, two battleships, and about 17 destroyers screening outside the entire formation."
+>
+> U.S. Strategic Bombing Survey, Interrogation Nav No. 29 (Chishima is the Japanese name for the Kurils)
 
 The route was chosen for its emptiness. The North Pacific in late autumn is cold, rough and nearly free of merchant shipping, so the chance of being seen was small. The fleet kept radio silence the whole way, while stations at home kept up their normal traffic so that American listeners would hear nothing unusual.
 
@@ -35,6 +43,8 @@ The next day, Admiral Harold Stark, the Chief of Naval Operations, sent the Paci
 The message went on to say where that move was expected: the Philippines, the Kra Peninsula of Thailand, or possibly Borneo. It ordered a defensive deployment. It did not mention Hawaii.
 
 Admiral Husband Kimmel read it in that light. The danger, as Washington described it, lay thousands of miles to the west. The Army's warning to Lieutenant General Walter Short the same day said hostile action was possible at any moment, but also told him not to alarm the civilian population or disclose his intent. Short put his command on alert against sabotage and parked his aircraft close together, where they were easy to guard.
+
+Both men later defended that reading under oath. Stark told Congress he had named the places where the best intelligence said the blow would fall, and that while an attack on Hawaii was thought possible, everything pointed to the Philippines, Guam and the Kra Peninsula. Kimmel testified that no reasonable officer in his place would have read the warning as a sign of an air attack on Pearl Harbor. The opening map of this chapter shows why both could believe it: the great Japanese arrows did point south and west, exactly where the warning said. Only one arrow pointed east.
 
 By then the strike force was two days out from the Kurils, on a course no American ship or patrol plane would cross.
 
@@ -78,7 +88,9 @@ No one in the room knew that the carriers were already three days out, somewhere
 
 ### Sources
 
-* Track of the carrier task force: U.S. Army, *Reports of General MacArthur* (1966), via Wikimedia Commons.
+* Maps: U.S. Army, *Reports of General MacArthur*, Vol. II, Part I, *Japanese Operations in the Southwest Pacific Area* (1966), Plate No. 12 (dispositions before the outbreak of war) and Plate No. 13 (track of the carrier task force, on the cover).
+* Fuchida's account: U.S. Strategic Bombing Survey, *Interrogations of Japanese Officials*, Nav No. 29, USSBS No. 113, Tokyo, 10 October 1945 (ibiblio.org/hyperwar).
+* Stark's and Kimmel's later explanations: Pearl Harbor Attack hearings, Navy narrative, "The War Warning of November 27th" (ibiblio.org/pha); Kimmel's testimony to the Joint Committee, January 1946.
 * The war warning: Chief of Naval Operations dispatch 272337, 27 November 1941, Pearl Harbor Attack hearings exhibits (ibiblio.org/pha).
 * Hull's words to Stimson: Report of the Army Pearl Harbor Board (1944), quoting Stimson's diary (ibiblio.org/pha).
 * Battle Order No. 1 and Halsey's sailing: William F. Halsey and J. Bryan III, *Admiral Halsey's Story* (1947); Pacific Wrecks, 28 November 1941.
