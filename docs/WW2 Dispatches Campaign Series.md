@@ -89,9 +89,9 @@ Substack sets one theme for the whole publication (night background, brass gold,
 **Pearl Harbor volume (3 parts)**
 | Part | Days | Title | Goes live |
 |---|---|---|---|
-| 1 | 1 to 4 (26 to 29 Nov) | The Fleet Slips Away | Mon 30 Nov, 9 a.m. (final 21 Nov; still to schedule in Substack) |
-| 2 | 5 to 8 (30 Nov to 3 Dec) | to write | Fri 4 Dec, 9 a.m. |
-| 3 | 9 to 12 and the Epilogue (4 to 8 Dec) | to write; tells the whole of 7 December in depth (the launch, Opana, both waves, the Arizona, the note delivered after the bombs, the nation hearing the news) and the speech | **Wed 9 Dec, 9 a.m.** (moved from Tue 8 Dec so it follows the Epilogue) |
+| 1 | 1 to 4 (26 to 29 Nov) | The Fleet Slips Away | Mon 30 Nov, 9 a.m. (final 21 Nov; on the dashboard) |
+| 2 | 5 to 8 (30 Nov to 3 Dec) | Climb Mount Niitaka | Fri 4 Dec, 9 a.m. (final 21 Nov; on the dashboard) |
+| 3 | 9 to 12 and the Epilogue (4 to 8 Dec) | Air Raid, Pearl Harbor | **Wed 9 Dec, 9 a.m.** (final 21 Nov; on the dashboard) |
 
 ## Pearl Harbor (26 Nov to 7 Dec 1941, scheduled)
 | Day | Date | Subtitle | Photo |
@@ -160,8 +160,8 @@ Anchor days, each to be verified in the sitting (two sources); the rest are fill
 Until that change ships, the shelf works as built: every series is a volume on the Campaign Shelf at ww2dispatches.com/campaign-series (Site Revamp doc). `renderer/site_pages.py` builds the volume page and one page per day from the day records, and the server shows a day only once its post time has passed. **In each build sitting:** add the volume to `campaign-series/shelf.json` (its `id` must match the folder name, so the Bulge is `bulge-1944`; set the cover photo, cloth color, intro, and blurb), then run `python3 renderer/series_log.py` before the commit, which refreshes the pages with the logs. A volume turns live on the shelf as soon as its folder holds day records.
 
 ## Open
-* **Pearl Harbor Part 1 is final** (approved by Brian 21 Nov; opens on a detail of Plate 12, Fuchida's 1945 account added). Parts 2 and 3 must be set to `"final"` before 4 and 9 Dec.
-* Pearl Harbor volume: Part 1 final 21 Nov and **on the Substack Dashboard's Chronicle tab** (21 Nov): Brian approves it and schedules it from there for Mon 30 Nov, 9 a.m., creating The Chronicle section with its banner the first time (the tab's first time step). Write Parts 2 and 3 (all three covers set); each one goes onto the dashboard the same way when it is final.
+* **Pearl Harbor Parts 1 to 3 are all final** (approved by Brian 21 Nov) and on the Substack Dashboard's Chronicle tab.
+* Pearl Harbor volume: Part 1 final 21 Nov and **on the Substack Dashboard's Chronicle tab** (21 Nov): Brian approves it and schedules it from there for Mon 30 Nov, 9 a.m., creating The Chronicle section with its banner the first time (the tab's first time step). Parts 2 and 3 are written, final, and on the dashboard too; Brian schedules each from there (Part 2 for Fri 4 Dec, Part 3 for Wed 9 Dec).
 * Website: Build and Fixes chat: rebuild the Campaign Shelf around the Substack parts (above), ideally before Part 1 goes live on Mon 30 Nov; Brian picks the daily posts option (a to h) there.
 * The Bulge build sitting (Thanksgiving weekend): the 30 days of posts and the split into 4 parts; each part then written in its own short sitting about a week ahead.
 * **From now on, long series work the same way** (Brian, 14 Nov 2026): the build sitting does the daily posts and the part split; parts are written in short sittings ahead of their dates. Short series like Pearl Harbor can do the parts in one sitting.
@@ -195,6 +195,6 @@ Until that change ships, the shelf works as built: every series is a volume on t
 * 21 Nov 2026 (later): Pearl Harbor Day 11 photo swapped (Brian): the Hull, Nomura, and Kurusu walking photo turned out to be an Underwood Archives press print (red tier), so the post now shows Roosevelt in evening dress in his White House study, 20 December 1941 (FDR Library, public domain; a memo was tried first and set aside as too plain). Re-rendered and updated in Buffer on all four platforms (images pinned to commit 669024f); board copies refreshed.
 * 21 Nov 2026 (later): Pearl Harbor Chronicle Part 1 finished and marked final (Brian): opens on a single page detail of Plate 12 (the strike force on Hawaii), with the western half (the invasion forces the war warning named) in the war warning section; Fuchida's USSBS interrogation added as the first hand account; Stark's and Kimmel's later explanations added.
 * 21 Nov 2026 (later): Substack posting for the Chronicle moves to the Substack Dashboard (Brian): the Weekly Dispatch page, renamed, being built in another chat. Once it is ready, every Chronicle part is pushed into it; no direct Substack setup from this chat.
-* 21 Nov 2026 (later): **Chronicle subtitles are 6 to 10 words, no dates** (Brian); Part 1's subtitle shortened to match. Part 2's draft subtitle still needs cutting in its sitting.
+* 21 Nov 2026 (later): **Chronicle subtitles are 6 to 10 words, no dates** (Brian); Part 1's subtitle shortened to match. Part 2's subtitle was cut to 10 words before it went final.
 * 21 Nov 2026 (later): **The Substack Dashboard is ready** (Brian): the renamed page has a Chronicle tab where each part is reviewed, noted, copied, and scheduled; a sitting runs `python3 renderer/newsletter_page.py` and republishes it once a part is final. Pearl Harbor Part 1 is on it now.
 * 21 Nov 2026 (later): Pearl Harbor Chronicle Parts 2 (Climb Mount Niitaka) and 3 (Air Raid, Pearl Harbor) written and marked final (Brian); all three parts on the Substack Dashboard's Chronicle tab.
