@@ -744,6 +744,13 @@
   "wikidata": "Q12804796",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-649"
  },
+ "ship-german-submarine-u-656": {
+  "name": "U-656",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-656"
+ },
  "ship-german-submarine-u-66-1940": {
   "name": "U-66",
   "kind": "Type IXC U-boat",
@@ -1128,6 +1135,13 @@
   "nation": "United Kingdom",
   "source": "https://en.wikipedia.org/wiki/HMS_Dulverton_(L63)",
   "wikidata": "Q5632221"
+ },
+ "ship-hms-encounter-h10": {
+  "name": "HMS Encounter (H10)",
+  "kind": "Royal Navy destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Encounter_(H10)"
  },
  "ship-hms-engadine-1911": {
   "name": "HMS Engadine (1911)",
@@ -1926,6 +1940,13 @@
   "source": "https://en.wikipedia.org/wiki/Japanese_cruiser_Atago",
   "wikidata": "Q753165"
  },
+ "ship-japanese-cruiser-chikuma-1938": {
+  "name": "Chikuma",
+  "kind": "Tone class heavy cruiser",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_cruiser_Chikuma_(1938)"
+ },
  "ship-japanese-cruiser-kashii": {
   "name": "Japanese cruiser Kashii",
   "kind": "Katori class training cruiser",
@@ -2244,6 +2265,14 @@
   "nation": "Japan",
   "wikidata": "Q2711551",
   "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-124"
+ },
+ "ship-japanese-submarine-i-159": {
+  "name": "I-159 (I-59)",
+  "kind": "Imperial Japanese Navy submarine",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-159",
+  "note": "Numbered I-59 when she sank Rooseboom"
  },
  "ship-japanese-submarine-i-16": {
   "name": "I-16",
@@ -2807,6 +2836,13 @@
   "wikidata": "Q1232139",
   "source": "https://en.wikipedia.org/wiki/SS_Peleus"
  },
+ "ship-ss-rooseboom": {
+  "name": "SS Rooseboom",
+  "kind": "Dutch KPM steamship",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Rooseboom"
+ },
  "ship-ss-tairoa": {
   "name": "SS Tairoa",
   "kind": "British refrigerated cargo liner",
@@ -3081,6 +3117,13 @@
   "wikidata": "Q2469142",
   "source": "https://en.wikipedia.org/wiki/USS_De_Haven_(DD-469)"
  },
+ "ship-uss-edsall-dd-219": {
+  "name": "USS Edsall (DD-219)",
+  "kind": "Clemson class destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Edsall_(DD-219)"
+ },
  "ship-uss-enterprise-cv-6": {
   "name": "USS Enterprise (CV-6)",
   "kind": "aircraft carrier",
@@ -3280,6 +3323,13 @@
   "wikidata": "Q7870847",
   "source": "https://en.wikipedia.org/wiki/USS_Koiner"
  },
+ "ship-uss-langley-cv-1": {
+  "name": "USS Langley (CV-1)",
+  "kind": "First U.S. carrier, later seaplane tender",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Langley_(CV-1)"
+ },
  "ship-uss-lci-l-449": {
   "name": "USS LCI(L)-449",
   "kind": "landing craft infantry, converted to gunboat LCI(G) 449",
@@ -3471,6 +3521,13 @@
   "nation": "US",
   "wikidata": "Q7872734",
   "source": "https://en.wikipedia.org/wiki/USS_Paul_Jones_(DD-230)"
+ },
+ "ship-uss-pecos-ao-6": {
+  "name": "USS Pecos (AO-6)",
+  "kind": "U.S. Navy fleet oiler",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Pecos_(AO-6)"
  },
  "ship-uss-philip-dd-498": {
   "name": "USS Philip (DD-498)",

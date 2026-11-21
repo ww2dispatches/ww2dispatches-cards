@@ -432,6 +432,13 @@
    "Radji Beach massacre"
   ]
  },
+ "op-bank-of-england-act-1946": {
+  "name": "Bank of England Act 1946",
+  "kind": "Act nationalising the Bank of England",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bank_of_England_Act_1946"
+ },
  "op-baruch-plan": {
   "name": "Baruch Plan",
   "kind": "U.S. proposal for international control of atomic energy",
@@ -668,6 +675,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Iwo_Jima",
   "wikidata": "Q180182"
+ },
+ "op-battle-of-java-1942": {
+  "name": "Battle of Java (1942)",
+  "kind": "Japanese invasion of Java",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Java_(1942)"
  },
  "op-battle-of-kampar": {
   "name": "Battle of Kampar",
@@ -1227,6 +1241,13 @@
   "nation": "worldwide",
   "source": "https://en.wikipedia.org/wiki/Battle_off_Samar",
   "wikidata": "Q4348033"
+ },
+ "op-battles-of-rzhev": {
+  "name": "Battles of Rzhev",
+  "kind": "Eastern Front battles for the Rzhev salient, 1942 to 1943",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battles_of_Rzhev"
  },
  "op-beer-hall-putsch": {
   "name": "Beer Hall Putsch",
@@ -2248,6 +2269,13 @@
   "wikidata": "Q18164126",
   "source": "https://en.wikipedia.org/wiki/Italian_declaration_of_war_on_the_United_States"
  },
+ "op-italian-social-republic": {
+  "name": "Italian Social Republic",
+  "kind": "German backed fascist state in northern Italy, 1943 to 1945",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_Social_Republic"
+ },
  "op-january-28-incident": {
   "name": "January 28 incident",
   "kind": "battle",
@@ -2948,6 +2976,14 @@
   "source": "https://en.wikipedia.org/wiki/Operation_Buccaneer",
   "wikidata": "Q3354663"
  },
+ "op-operation-buffel": {
+  "name": "Operation Buffel",
+  "kind": "German withdrawal from the Rzhev salient, March 1943",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_B%C3%BCffel",
+  "note": "Wikipedia title Operation Büffel"
+ },
  "op-operation-caesar": {
   "name": "Operation Caesar",
   "kind": "German submarine mission to carry technology to Japan",
@@ -3640,6 +3676,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Second_battle_of_Tembien"
  },
+ "op-second-battle-of-the-java-sea": {
+  "name": "Second Battle of the Java Sea",
+  "kind": "Naval battle, 1 March 1942",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Second_Battle_of_the_Java_Sea"
+ },
  "op-second-bill-of-rights": {
   "name": "Second Bill of Rights",
   "kind": "proposed economic bill of rights",
@@ -4071,6 +4114,13 @@
   "nation": "Germany",
   "wikidata": "Q153122",
   "source": "https://en.wikipedia.org/wiki/Tripartite_Pact"
+ },
+ "op-truman-committee": {
+  "name": "Truman Committee",
+  "kind": "Senate Special Committee to Investigate the National Defense Program",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Truman_Committee"
  },
  "op-truman-directive-of-1945": {
   "name": "Truman Directive of 1945",

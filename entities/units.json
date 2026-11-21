@@ -1311,6 +1311,13 @@
    "Nyilaskeresztes Part"
   ]
  },
+ "unit-bank-of-england": {
+  "name": "Bank of England",
+  "kind": "Central bank of the United Kingdom",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bank_of_England"
+ },
  "unit-bbc-forces-programme": {
   "name": "BBC Forces Programme",
   "kind": "radio station for the forces",
@@ -1845,6 +1852,13 @@
   "aka": [
    "Imperial Guards Division"
   ]
+ },
+ "unit-imperial-japanese-army": {
+  "name": "Imperial Japanese Army",
+  "kind": "Army of the Empire of Japan",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Imperial_Japanese_Army"
  },
  "unit-international-civil-aviation-organization": {
   "name": "International Civil Aviation Organization",

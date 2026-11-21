@@ -67,6 +67,13 @@
    "B-29"
   ]
  },
+ "aircraft-bachem-ba-349-natter": {
+  "name": "Bachem Ba 349 Natter",
+  "kind": "Vertical launch rocket interceptor",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bachem_Ba_349_Natter"
+ },
  "aircraft-bell-x-1": {
   "name": "Bell X-1",
   "kind": "rocket powered research aircraft",
