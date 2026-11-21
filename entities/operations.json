@@ -599,6 +599,13 @@
   "wikidata": "Q708426",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Berlin_(RAF_campaign)"
  },
+ "op-battle-of-blackett-strait": {
+  "name": "Battle of Blackett Strait",
+  "kind": "naval night action in the Solomons",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Blackett_Strait"
+ },
  "op-battle-of-borneo-1941-1942": {
   "name": "Battle of Borneo (1941 to 1942)",
   "kind": "Japanese invasion of Borneo",
@@ -669,6 +676,13 @@
   "nation": "worldwide",
   "wikidata": "Q3636398",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Cisterna"
+ },
+ "op-battle-of-cologne": {
+  "name": "Battle of Cologne",
+  "kind": "capture of Cologne, March 1945",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Cologne"
  },
  "op-battle-of-corregidor-1945": {
   "name": "Battle of Corregidor (1945)",
@@ -783,6 +797,13 @@
   "nation": "France",
   "wikidata": "Q702579",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Ko_Chang"
+ },
+ "op-battle-of-kollaa": {
+  "name": "Battle of Kollaa",
+  "kind": "Winter War battle",
+  "nation": "Finland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Kollaa"
  },
  "op-battle-of-konigsberg": {
   "name": "Battle of Konigsberg",
@@ -903,6 +924,16 @@
   "nation": "Philippines",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Manila_(1945)",
   "wikidata": "Q696931"
+ },
+ "op-battle-of-medenine": {
+  "name": "Battle of Medenine",
+  "kind": "battle in Tunisia, 6 March 1943",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Medenine",
+  "aka": [
+   "Operation Capri"
+  ]
  },
  "op-battle-of-metz": {
   "name": "Battle of Metz",
@@ -2304,6 +2335,13 @@
   "wikidata": "Q5639369",
   "source": "https://en.wikipedia.org/wiki/Hainan_Island_Operation"
  },
+ "op-ho-sainteny-agreement": {
+  "name": "Ho Sainteny Agreement",
+  "kind": "Franco Vietnamese accord of 6 March 1946",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ho%E2%80%93Sainteny_Agreement"
+ },
  "op-hoare-laval-pact": {
   "name": "Hoare Laval Pact",
   "kind": "Anglo French plan to partition Ethiopia, 1935",
@@ -3488,6 +3526,17 @@
   "nation": "Germany",
   "wikidata": "Q708223",
   "source": "https://en.wikipedia.org/wiki/Operation_Sonnenblume"
+ },
+ "op-operation-spring-awakening": {
+  "name": "Operation Spring Awakening",
+  "kind": "last major German offensive, Hungary 1945",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Spring_Awakening",
+  "aka": [
+   "Fruehlingserwachen",
+   "Lake Balaton offensive"
+  ]
  },
  "op-operation-steinbock": {
   "name": "Operation Steinbock",

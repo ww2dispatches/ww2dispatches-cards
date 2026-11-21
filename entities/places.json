@@ -1083,6 +1083,15 @@
   "lat": 50.9422,
   "lon": 6.9578
  },
+ "place-cologne-cathedral": {
+  "name": "Cologne Cathedral",
+  "kind": "cathedral",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Cologne_Cathedral",
+  "lat": null,
+  "lon": null
+ },
  "place-columbia-tennessee": {
   "name": "Columbia, Tennessee",
   "kind": "town, seat of Maury County",
@@ -2754,6 +2763,15 @@
   "lat": 46.1583,
   "lon": -1.2278
  },
+ "place-lake-balaton": {
+  "name": "Lake Balaton",
+  "kind": "lake in western Hungary",
+  "nation": "Hungary",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Lake_Balaton",
+  "lat": null,
+  "lon": null
+ },
  "place-lake-ladoga": {
   "name": "Lake Ladoga",
   "kind": "lake",
@@ -2771,6 +2789,15 @@
   "wikidata": "Q200018",
   "lat": 50.8147,
   "lon": 6.3617
+ },
+ "place-lashio": {
+  "name": "Lashio",
+  "kind": "town in Burma",
+  "nation": "Burma",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Lashio",
+  "lat": null,
+  "lon": null
  },
  "place-laurens-iowa": {
   "name": "Laurens, Iowa",
@@ -5909,6 +5936,15 @@
   ],
   "lat": 40.7186,
   "lon": -114.031
+ },
+ "place-westerplatte": {
+  "name": "Westerplatte",
+  "kind": "Polish outpost in the Free City of Danzig",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Westerplatte",
+  "lat": null,
+  "lon": null
  },
  "place-westminster-abbey": {
   "name": "Westminster Abbey",

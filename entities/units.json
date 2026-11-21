@@ -211,6 +211,14 @@
   "wikidata": "Q118499906",
   "source": "https://en.wikipedia.org/wiki/155_Field_Battery,_Royal_Artillery"
  },
+ "unit-15th-operations-group": {
+  "name": "15th Fighter Group",
+  "kind": "USAAF fighter group",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/15th_Operations_Group",
+  "note": "Wikipedia's article for the wartime 15th Fighter Group is titled 15th Operations Group."
+ },
  "unit-15th-panzer-division": {
   "name": "15th Panzer Division",
   "kind": "German panzer division",
@@ -1889,6 +1897,13 @@
   "source": "https://en.wikipedia.org/wiki/Home_Ministry",
   "wikidata": "Q1142265"
  },
+ "unit-ii-corps-united-states": {
+  "name": "II Corps (United States)",
+  "kind": "U.S. Army corps",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/II_Corps_(United_States)"
+ },
  "unit-imperial-airways": {
   "name": "Imperial Airways",
   "kind": "British airline",
@@ -2290,6 +2305,16 @@
   "source": "https://en.wikipedia.org/wiki/Navy-Marine_Corps_Relief_Society",
   "aka": [
    "Navy Relief Society"
+  ]
+ },
+ "unit-new-1st-army": {
+  "name": "New 1st Army",
+  "kind": "Chinese army in India and Burma",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/New_1st_Army",
+  "aka": [
+   "New First Army"
   ]
  },
  "unit-ninth-air-force": {

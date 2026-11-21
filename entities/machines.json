@@ -266,6 +266,13 @@
    "gothic script"
   ]
  },
+ "machine-freedom-from-want": {
+  "name": "Freedom from Want",
+  "kind": "Norman Rockwell painting, 1943",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Freedom_from_Want"
+ },
  "machine-freedom-of-speech-painting": {
   "name": "Freedom of Speech (painting)",
   "kind": "painting by Norman Rockwell",
@@ -439,6 +446,13 @@
   "nation": "US",
   "wikidata": "Q593485",
   "source": "https://en.wikipedia.org/wiki/Liberty_ship"
+ },
+ "machine-m26-pershing": {
+  "name": "M26 Pershing",
+  "kind": "American heavy tank",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/M26_Pershing"
  },
  "machine-m3-stuart": {
   "name": "M3 Stuart",

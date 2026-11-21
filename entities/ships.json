@@ -821,6 +821,13 @@
   "wikidata": "Q549452",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-73_(1940)"
  },
+ "ship-german-submarine-u-744": {
+  "name": "German submarine U-744",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-744"
+ },
  "ship-german-submarine-u-75-1940": {
   "name": "German submarine U-75 (1940)",
   "kind": "Type VIIB U-boat",
@@ -2223,6 +2230,13 @@
   "wikidata": "Q2990133",
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Makigumo_(1941)"
  },
+ "ship-japanese-destroyer-minegumo-1937": {
+  "name": "Japanese destroyer Minegumo (1937)",
+  "kind": "Japanese destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Minegumo_(1937)"
+ },
  "ship-japanese-destroyer-momi-1944": {
   "name": "Japanese destroyer Momi (1944)",
   "kind": "Matsu-class escort destroyer",
@@ -2232,6 +2246,13 @@
   "aka": [
    "Momi"
   ]
+ },
+ "ship-japanese-destroyer-murasame-1935": {
+  "name": "Japanese destroyer Murasame (1935)",
+  "kind": "Japanese destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Murasame_(1935)"
  },
  "ship-japanese-destroyer-natsushio": {
   "name": "Japanese destroyer Natsushio",
