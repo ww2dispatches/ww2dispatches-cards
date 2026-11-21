@@ -685,6 +685,13 @@
   "wikidata": "Q836280",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-575"
  },
+ "ship-german-submarine-u-578": {
+  "name": "U-578",
+  "kind": "U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-578"
+ },
  "ship-german-submarine-u-581": {
   "name": "U-581",
   "kind": "Type VIIC U-boat",
@@ -926,6 +933,13 @@
   "aka": [
    "Nestor"
   ]
+ },
+ "ship-hmas-perth-d29": {
+  "name": "HMAS Perth (D29)",
+  "kind": "light cruiser",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMAS_Perth_(D29)"
  },
  "ship-hmas-vampire-d68": {
   "name": "HMAS Vampire (D68)",
@@ -1793,6 +1807,13 @@
   "wikidata": "Q3747057",
   "source": "https://en.wikipedia.org/wiki/Italian_destroyer_Folgore"
  },
+ "ship-italian-destroyer-francesco-crispi": {
+  "name": "Francesco Crispi",
+  "kind": "Italian destroyer",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_destroyer_Francesco_Crispi"
+ },
  "ship-italian-ship-orione": {
   "name": "Italian ship Orione",
   "kind": "Italian torpedo boat",
@@ -1984,6 +2005,13 @@
   "nation": "Japan",
   "source": "https://en.wikipedia.org/wiki/Japanese_cruiser_Kumano",
   "wikidata": "Q1791961"
+ },
+ "ship-japanese-cruiser-mogami-1934": {
+  "name": "Japanese cruiser Mogami",
+  "kind": "heavy cruiser",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_cruiser_Mogami_(1934)"
  },
  "ship-japanese-cruiser-myoko": {
   "name": "Japanese cruiser Myōkō",
@@ -3280,6 +3308,13 @@
   "nation": "US",
   "wikidata": "Q562161",
   "source": "https://en.wikipedia.org/wiki/USS_Iowa_(BB-61)"
+ },
+ "ship-uss-jacob-jones-dd-130": {
+  "name": "USS Jacob Jones (DD-130)",
+  "kind": "four stack destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Jacob_Jones_(DD-130)"
  },
  "ship-uss-john-d-ford": {
   "name": "USS John D. Ford (DD-228)",

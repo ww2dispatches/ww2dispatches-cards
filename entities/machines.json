@@ -455,6 +455,13 @@
   "source": "https://en.wikipedia.org/wiki/Matilda_II",
   "wikidata": "Q502412"
  },
+ "machine-mein-kampf": {
+  "name": "Mein Kampf",
+  "kind": "book by Adolf Hitler",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mein_Kampf"
+ },
  "machine-mercedes-benz-w125-rekordwagen": {
   "name": "Mercedes-Benz W125 Rekordwagen",
   "kind": "streamlined record car",

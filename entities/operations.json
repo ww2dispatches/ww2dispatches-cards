@@ -119,6 +119,13 @@
   "wikidata": "Q122292274",
   "source": "https://en.wikipedia.org/wiki/1946_United_States_steel_strike"
  },
+ "op-1948-accra-riots": {
+  "name": "1948 Accra riots",
+  "kind": "Christiansborg crossroads shooting and riots",
+  "nation": "Gold Coast",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1948_Accra_riots"
+ },
  "op-1948-czechoslovak-coup-d-etat": {
   "name": "1948 Czechoslovak coup d'etat",
   "kind": "Communist seizure of power in Prague",
@@ -1062,6 +1069,13 @@
   "wikidata": "Q3486941",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Summa"
  },
+ "op-battle-of-sunda-strait": {
+  "name": "Battle of Sunda Strait",
+  "kind": "naval night battle",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Sunda_Strait"
+ },
  "op-battle-of-tarakan-1942": {
   "name": "Battle of Tarakan (1942)",
   "kind": "Japanese invasion of a Dutch oil island",
@@ -1954,6 +1968,16 @@
   "aka": [
    "2-26 Incident",
    "Ni Ni-Roku Jiken"
+  ]
+ },
+ "op-february-28-incident": {
+  "name": "February 28 incident",
+  "kind": "uprising and massacre in Taiwan",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/February_28_incident",
+  "aka": [
+   "228 incident"
   ]
  },
  "op-february-strike": {
@@ -3546,6 +3570,13 @@
   "nation": "US",
   "wikidata": "Q18393574",
   "source": "https://en.wikipedia.org/wiki/Rationing_in_the_United_States"
+ },
+ "op-reichstag-fire-decree": {
+  "name": "Reichstag Fire Decree",
+  "kind": "emergency decree suspending civil liberties",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Reichstag_Fire_Decree"
  },
  "op-rennert-railroad-accident": {
   "name": "Rennert railroad accident",

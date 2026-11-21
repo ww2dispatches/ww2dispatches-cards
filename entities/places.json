@@ -17,6 +17,15 @@
   "lat": 56.1706,
   "lon": 10.2011
  },
+ "place-accra": {
+  "name": "Accra",
+  "kind": "capital of the Gold Coast, now Ghana",
+  "nation": "Gold Coast",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Accra",
+  "lat": null,
+  "lon": null
+ },
  "place-addis-ababa": {
   "name": "Addis Ababa",
   "kind": "city",
@@ -4889,6 +4898,18 @@
   ],
   "lat": 51.447,
   "lon": 23.5941
+ },
+ "place-sojourner-truth-project": {
+  "name": "Sojourner Truth Homes",
+  "kind": "federal housing project, Detroit",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sojourner_Truth_Project",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Sojourner Truth Project"
+  ]
  },
  "place-solnechnogorsk": {
   "name": "Solnechnogorsk",

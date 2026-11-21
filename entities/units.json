@@ -2634,6 +2634,13 @@
   "wikidata": "Q157608",
   "source": "https://en.wikipedia.org/wiki/Reichswehr"
  },
+ "unit-reynal-hitchcock": {
+  "name": "Reynal & Hitchcock",
+  "kind": "American publisher",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Reynal_%26_Hitchcock"
+ },
  "unit-rifle-brigade-the-prince-consort-s-own": {
   "name": "Rifle Brigade",
   "kind": "British infantry regiment",
@@ -2799,6 +2806,16 @@
   "source": "https://en.wikipedia.org/wiki/Special_Operations_Executive",
   "aka": [
    "SOE"
+  ]
+ },
+ "unit-stackpole-books": {
+  "name": "Stackpole Sons",
+  "kind": "American publisher",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Stackpole_Books",
+  "aka": [
+   "Stackpole Books"
   ]
  },
  "unit-stalingrad-front": {
