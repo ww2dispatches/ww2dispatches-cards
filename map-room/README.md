@@ -2,6 +2,23 @@
 
 The third part of the Campaign Series: a filmed plotting table, one clip per day. The plan, the look, and every decision live in `docs/WW2 Dispatches Map Room.md` (the Project copy is the master). The day record format and the brief for the Campaign Series chat are in `FORMAT.md`. Renders never go in git; finished clips go to Cloudflare R2.
 
+## Setup
+Blender runs as the `bpy` Python package, pinned in `requirements.txt` to 5.3.0 (it needs Python 3.13; a different Blender changes the renders). The engine also calls three programs, which must be on PATH:
+* `ffmpeg` (encoding and the sound mux).
+* Chrome or Chromium, for the tab and strip (`ov_shoot.py` runs `google-chrome` unless `CHROME` names the browser).
+* `rsvg-convert` from librsvg, which draws the block faces from the silhouette SVGs (`faces.py`). Nothing renders without it.
+
+**Linux (the cloud workspace):** `pip install --break-system-packages -r map-room/requirements.txt`, plus `rsvg-convert` from the `librsvg2-bin` package if it is missing.
+
+**Windows (the desktop):**
+1. `winget install Python.Python.3.13 Gyan.FFmpeg Google.Chrome MSYS2.MSYS2`
+2. `rsvg-convert` from MSYS2: `C:\msys64\usr\bin\bash.exe -lc "pacman -S --noconfirm mingw-w64-ucrt-x86_64-librsvg"`, then add `C:\msys64\ucrt64\bin` to the end of PATH (at the front, MSYS2's own Python and tools would shadow the Windows ones).
+3. A virtual environment outside the repo: `py -3.13 -m venv ..\.venv` and `..\.venv\Scripts\pip install -r map-room\requirements.txt`.
+4. `set CHROME=C:\Program Files\Google\Chrome\Application\chrome.exe`
+5. Run the commands below with `..\.venv\Scripts\python.exe` in place of `python3`.
+
+`scene.py` renders Cycles on the CPU. A desktop with an NVIDIA card can switch the device to OptiX with a local wrapper (kept out of the repo); the CPU and OptiX clips match to within encoding noise (Desktop Render Test, 21 Nov 2026).
+
 ## Making a day's clip
 ```
 python3 map-room/engine/render_day.py campaign-series/bulge-1944/day-03.json <work dir> day-03.mp4 [--photo still.jpg] [--samples 128]
