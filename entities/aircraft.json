@@ -18,7 +18,7 @@
   "name": "Armstrong Whitworth Whitley",
   "kind": "British medium bomber",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q689463",
   "source": "https://en.wikipedia.org/wiki/Armstrong_Whitworth_Whitley"
  },
  "aircraft-avro-lancaster": {
@@ -81,7 +81,7 @@
   "name": "Boeing 247",
   "kind": "twin engine all metal airliner",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q729331",
   "source": "https://en.wikipedia.org/wiki/Boeing_247"
  },
  "aircraft-boeing-314-clipper": {
@@ -116,7 +116,7 @@
   "name": "Boeing B-50 Superfortress",
   "kind": "American strategic bomber",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q578959",
   "source": "https://en.wikipedia.org/wiki/Boeing_B-50_Superfortress"
  },
  "aircraft-boeing-p-26-peashooter": {
@@ -150,7 +150,7 @@
   "name": "Consolidated C-87 Liberator Express",
   "kind": "transport version of the B-24",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q2559443",
   "source": "https://en.wikipedia.org/wiki/Consolidated_C-87_Liberator_Express"
  },
  "aircraft-consolidated-pby-catalina": {
@@ -242,7 +242,7 @@
   "name": "Douglas DC-6",
   "kind": "four engine piston transport, prototype XC-112A",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q503761",
   "source": "https://en.wikipedia.org/wiki/Douglas_DC-6",
   "aka": [
    "XC-112A",
@@ -272,7 +272,7 @@
   "name": "Fairey Swordfish",
   "kind": "British biplane torpedo bomber",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q674079",
   "source": "https://en.wikipedia.org/wiki/Fairey_Swordfish"
  },
  "aircraft-focke-wulf-fw-190": {
@@ -354,7 +354,7 @@
   "name": "Handley Page Heyford",
   "kind": "British biplane bomber",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q1499781",
   "source": "https://en.wikipedia.org/wiki/Handley_Page_Heyford"
  },
  "aircraft-heinkel-he-111": {
@@ -498,7 +498,7 @@
   "name": "Lucky Lady II",
   "kind": "B-50A, first nonstop round the world flight",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q1873715",
   "source": "https://en.wikipedia.org/wiki/Lucky_Lady_II"
  },
  "aircraft-martin-b-26-marauder": {
@@ -713,7 +713,7 @@
   "name": "Sikorsky H-5",
   "kind": "helicopter",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q1810661",
   "source": "https://en.wikipedia.org/wiki/Sikorsky_H-5",
   "aka": [
    "Sikorsky S-51",

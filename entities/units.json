@@ -62,7 +62,7 @@
   "name": "10th Panzer Division",
   "kind": "German armoured division",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q164541",
   "source": "https://en.wikipedia.org/wiki/10th_Panzer_Division_(Wehrmacht)"
  },
  "unit-10th-royal-hussars": {
@@ -208,7 +208,7 @@
   "name": "155 Field Battery, Royal Artillery",
   "kind": "British field artillery battery",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q118499906",
   "source": "https://en.wikipedia.org/wiki/155_Field_Battery,_Royal_Artillery"
  },
  "unit-15th-panzer-division": {
@@ -250,14 +250,14 @@
   "name": "179th Infantry Regiment",
   "kind": "U.S. Army infantry regiment, 45th Division",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q4553514",
   "source": "https://en.wikipedia.org/wiki/179th_Infantry_Regiment_(United_States)"
  },
  "unit-19th-army-wehrmacht": {
   "name": "19th Army (Wehrmacht)",
   "kind": "German field army",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q204597",
   "source": "https://en.wikipedia.org/wiki/19th_Army_(Wehrmacht)",
   "aka": [
    "Nineteenth Army"
@@ -382,14 +382,14 @@
   "name": "22nd Brigade (Australia)",
   "kind": "Australian infantry brigade, 8th Division",
   "nation": "Australia",
-  "wikidata": null,
+  "wikidata": "Q16823791",
   "source": "https://en.wikipedia.org/wiki/22nd_Brigade_(Australia)"
  },
  "unit-22nd-marine-regiment": {
   "name": "22nd Marine Regiment",
   "kind": "U.S. Marine Corps regiment",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q4631398",
   "source": "https://en.wikipedia.org/wiki/22nd_Marine_Regiment",
   "aka": [
    "22nd Marines"
@@ -427,7 +427,7 @@
   "name": "26th Armoured Brigade",
   "kind": "British armoured brigade",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q4632413",
   "source": "https://en.wikipedia.org/wiki/26th_Armoured_Brigade"
  },
  "unit-26th-cavalry-regiment-philippine-scouts": {
@@ -441,14 +441,14 @@
   "name": "26th Infantry Regiment",
   "kind": "U.S. Army infantry regiment, 1st Infantry Division",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q12052511",
   "source": "https://en.wikipedia.org/wiki/26th_Infantry_Regiment_(United_States)"
  },
  "unit-27th-marine-regiment-united-states": {
   "name": "27th Marine Regiment",
   "kind": "U.S. Marine Corps infantry regiment",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q4632636",
   "source": "https://en.wikipedia.org/wiki/27th_Marine_Regiment_(United_States)",
   "aka": [
    "27th Marines"
@@ -702,7 +702,7 @@
   "name": "3rd Division (New Zealand)",
   "kind": "New Zealand infantry division in the Pacific",
   "nation": "New Zealand",
-  "wikidata": null,
+  "wikidata": "Q4636745",
   "source": "https://en.wikipedia.org/wiki/3rd_Division_(New_Zealand)"
  },
  "unit-3rd-infantry-division-united-states": {
@@ -816,7 +816,7 @@
   "name": "45th Infantry Division",
   "kind": "U.S. Army infantry division",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q2332510",
   "source": "https://en.wikipedia.org/wiki/45th_Infantry_Division_(United_States)",
   "aka": [
    "Thunderbirds"
@@ -885,14 +885,14 @@
   "name": "501st Heavy Panzer Battalion",
   "kind": "German Tiger tank battalion",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q2254342",
   "source": "https://en.wikipedia.org/wiki/501st_Heavy_Panzer_Battalion"
  },
  "unit-503rd-infantry-regiment": {
   "name": "503rd Parachute Infantry Regiment",
   "kind": "U.S. Army parachute regiment",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q4639795",
   "source": "https://en.wikipedia.org/wiki/503rd_Infantry_Regiment",
   "aka": [
    "503d Parachute Regimental Combat Team",
@@ -1082,7 +1082,7 @@
   "name": "825 Naval Air Squadron",
   "kind": "Fleet Air Arm torpedo bomber squadron",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q4644604",
   "source": "https://en.wikipedia.org/wiki/825_Naval_Air_Squadron"
  },
  "unit-84th-training-command": {
@@ -1143,7 +1143,7 @@
   "name": "9th Infantry Division (United States)",
   "kind": "U.S. Army infantry division",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q2715566",
   "source": "https://en.wikipedia.org/wiki/9th_Infantry_Division_(United_States)"
  },
  "unit-9th-marine-regiment": {
@@ -1157,7 +1157,7 @@
   "name": "Action Francaise",
   "kind": "French royalist far right movement",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q49629",
   "source": "https://en.wikipedia.org/wiki/Action_Fran%C3%A7aise",
   "aka": [
    "Action Française"
@@ -1198,7 +1198,7 @@
   "name": "Allied Control Council",
   "kind": "four power governing body of occupied Germany",
   "nation": "worldwide",
-  "wikidata": null,
+  "wikidata": "Q698099",
   "source": "https://en.wikipedia.org/wiki/Allied_Control_Council"
  },
  "unit-america-first-committee": {
@@ -1224,7 +1224,7 @@
   "name": "American Youth Congress",
   "kind": "American youth organization",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q2074448",
   "source": "https://en.wikipedia.org/wiki/American_Youth_Congress"
  },
  "unit-anglo-french-supreme-war-council": {
@@ -1342,7 +1342,7 @@
   "name": "Blue Division",
   "kind": "Spanish volunteer division, the Wehrmacht's 250th Infantry Division",
   "nation": "Spain",
-  "wikidata": null,
+  "wikidata": "Q159901",
   "source": "https://en.wikipedia.org/wiki/Blue_Division",
   "aka": [
    "250th Infantry Division"
@@ -1359,7 +1359,7 @@
   "name": "Brazilian Expeditionary Force",
   "kind": "Brazilian force in Italy",
   "nation": "Brazil",
-  "wikidata": null,
+  "wikidata": "Q2291067",
   "source": "https://en.wikipedia.org/wiki/Brazilian_Expeditionary_Force",
   "aka": [
    "FEB"
@@ -1410,7 +1410,7 @@
   "name": "Camelots du Roi",
   "kind": "French royalist youth militants of Action Francaise",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q805447",
   "source": "https://en.wikipedia.org/wiki/Camelots_du_Roi"
  },
  "unit-central-china-area-army": {
@@ -1493,7 +1493,7 @@
   "name": "Daughters of the American Revolution",
   "kind": "American lineage society",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q1541947",
   "source": "https://en.wikipedia.org/wiki/Daughters_of_the_American_Revolution",
   "aka": [
    "DAR"
@@ -1549,7 +1549,7 @@
   "name": "ELAS",
   "kind": "Greek People's Liberation Army, military arm of EAM",
   "nation": "Greece",
-  "wikidata": null,
+  "wikidata": "Q172648",
   "source": "https://en.wikipedia.org/wiki/ELAS",
   "aka": [
    "Greek People's Liberation Army"
@@ -1636,7 +1636,7 @@
   "name": "First Indian National Army",
   "kind": "Indian force raised from prisoners of war under Japanese sponsorship",
   "nation": "India",
-  "wikidata": null,
+  "wikidata": "Q5453094",
   "source": "https://en.wikipedia.org/wiki/First_Indian_National_Army",
   "aka": [
    "INA"
@@ -1675,7 +1675,7 @@
   "name": "Force H",
   "kind": "Royal Navy squadron based at Gibraltar",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q936629",
   "source": "https://en.wikipedia.org/wiki/Force_H"
  },
  "unit-force-k": {
@@ -1774,7 +1774,7 @@
   "name": "Grenadier Guards",
   "kind": "British Army foot guards regiment",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q772054",
   "source": "https://en.wikipedia.org/wiki/Grenadier_Guards"
  },
  "unit-guam-insular-force-guard": {
@@ -1958,7 +1958,7 @@
   "name": "Kempeitai",
   "kind": "Imperial Japanese Army military police",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q665124",
   "source": "https://en.wikipedia.org/wiki/Kempeitai"
  },
  "unit-king-s-own-royal-regiment-lancaster": {
@@ -2024,7 +2024,7 @@
   "name": "Lotta Svard",
   "kind": "Finnish women's auxiliary organization",
   "nation": "Finland",
-  "wikidata": null,
+  "wikidata": "Q2348453",
   "source": "https://en.wikipedia.org/wiki/Lotta_Sv%C3%A4rd",
   "aka": [
    "Lotta Svärd"
@@ -2048,7 +2048,7 @@
   "name": "Luftwaffenhelfer",
   "kind": "schoolboy auxiliaries of the Luftwaffe flak arm",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q1875918",
   "source": "https://en.wikipedia.org/wiki/Luftwaffenhelfer",
   "aka": [
    "Flakhelfer"
@@ -2110,7 +2110,7 @@
   "name": "Merrill's Marauders",
   "kind": "U.S. Army long range penetration unit, the 5307th Composite Unit (Provisional)",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q1813193",
   "source": "https://en.wikipedia.org/wiki/Merrill%27s_Marauders",
   "aka": [
    "5307th Composite Unit (Provisional)",
@@ -2267,7 +2267,7 @@
   "name": "No. 120 Squadron RAF",
   "kind": "RAF Coastal Command squadron",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q7042888",
   "source": "https://en.wikipedia.org/wiki/No._120_Squadron_RAF"
  },
  "unit-no-138-squadron-raf": {
@@ -2288,7 +2288,7 @@
   "name": "No. 202 Squadron RAF",
   "kind": "RAF Coastal Command flying boat squadron",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q7043127",
   "source": "https://en.wikipedia.org/wiki/No._202_Squadron_RAF"
  },
  "unit-no-220-squadron-raf": {
@@ -2534,7 +2534,7 @@
   "name": "Queen's Own Rifles of Canada",
   "kind": "Canadian infantry regiment",
   "nation": "Canada",
-  "wikidata": null,
+  "wikidata": "Q3522379",
   "source": "https://en.wikipedia.org/wiki/Queen%27s_Own_Rifles_of_Canada"
  },
  "unit-queen-s-own-royal-west-kent-regiment": {
@@ -2621,7 +2621,7 @@
   "name": "Royal Hampshire Regiment",
   "kind": "British infantry regiment",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q7374256",
   "source": "https://en.wikipedia.org/wiki/Royal_Hampshire_Regiment",
   "aka": [
    "Hampshire Regiment"
@@ -2646,7 +2646,7 @@
   "name": "Royal Malay Regiment",
   "kind": "Malay infantry regiment, the Malay Regiment in 1942",
   "nation": "Malaya",
-  "wikidata": null,
+  "wikidata": "Q7374432",
   "source": "https://en.wikipedia.org/wiki/Royal_Malay_Regiment",
   "aka": [
    "Malay Regiment"
@@ -2666,7 +2666,7 @@
   "name": "Scots Guards",
   "kind": "British Army foot guards regiment",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q1856034",
   "source": "https://en.wikipedia.org/wiki/Scots_Guards"
  },
  "unit-scouting-america": {
@@ -2756,7 +2756,7 @@
   "name": "Sparrow Force",
   "kind": "Australian force on Timor",
   "nation": "Australia",
-  "wikidata": null,
+  "wikidata": "Q7573759",
   "source": "https://en.wikipedia.org/wiki/Sparrow_Force"
  },
  "unit-special-operations-executive": {
@@ -2791,7 +2791,7 @@
   "name": "Strength Through Joy",
   "kind": "Nazi state leisure organization (KdF)",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q157329",
   "source": "https://en.wikipedia.org/wiki/Strength_Through_Joy",
   "aka": [
    "Kraft durch Freude",
@@ -2830,14 +2830,14 @@
   "name": "Teishin Shudan",
   "kind": "Imperial Japanese Army airborne force",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q4101902",
   "source": "https://en.wikipedia.org/wiki/Teishin_Shudan"
  },
  "unit-the-writing-69th": {
   "name": "The Writing 69th",
   "kind": "group of war correspondents trained to fly bomber missions",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q7776333",
   "source": "https://en.wikipedia.org/wiki/The_Writing_69th",
   "aka": [
    "Writing 69th"
@@ -2892,7 +2892,7 @@
   "name": "Union of Lithuanian Freedom Fighters",
   "kind": "Lithuanian partisan movement",
   "nation": "Lithuania",
-  "wikidata": null,
+  "wikidata": "Q7886646",
   "source": "https://en.wikipedia.org/wiki/Union_of_Lithuanian_Freedom_Fighters",
   "aka": [
    "LLKS"
@@ -2987,14 +2987,14 @@
   "name": "United States Marine Corps Women's Reserve",
   "kind": "women's reserve of the U.S. Marine Corps",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q7890732",
   "source": "https://en.wikipedia.org/wiki/United_States_Marine_Corps_Women%27s_Reserve"
  },
  "unit-united-states-mint": {
   "name": "United States Mint",
   "kind": "U.S. Treasury bureau that strikes coins",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q1141049",
   "source": "https://en.wikipedia.org/wiki/United_States_Mint"
  },
  "unit-united-states-navy-reserve": {
@@ -3074,7 +3074,7 @@
   "name": "VMFA-124",
   "kind": "U.S. Marine fighter squadron, VMF-124 in 1943",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q16975386",
   "source": "https://en.wikipedia.org/wiki/VMFA-124",
   "aka": [
    "VMF-124"
@@ -3106,7 +3106,7 @@
   "name": "Voice of America",
   "kind": "U.S. government international broadcaster",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q228389",
   "source": "https://en.wikipedia.org/wiki/Voice_of_America",
   "aka": [
    "VOA"
@@ -3193,7 +3193,7 @@
   "name": "White Rose",
   "kind": "German student resistance group",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q153364",
   "source": "https://en.wikipedia.org/wiki/White_Rose",
   "aka": [
    "Weisse Rose"
