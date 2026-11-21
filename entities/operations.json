@@ -1418,6 +1418,13 @@
   "wikidata": "Q3641948",
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Naples_in_World_War_II"
  },
+ "op-bombing-of-nijmegen": {
+  "name": "Bombing of Nijmegen",
+  "kind": "American air raid on an occupied Dutch city",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Nijmegen"
+ },
  "op-bombing-of-nuremberg-in-world-war-ii": {
   "name": "Bombing of Nuremberg in World War II",
   "kind": "bombing campaign",
@@ -1737,6 +1744,13 @@
   "wikidata": "Q5166625",
   "source": "https://en.wikipedia.org/wiki/Convoy_HX_90"
  },
+ "op-convoy-on-166": {
+  "name": "Convoy ON 166",
+  "kind": "Atlantic convoy battle",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Convoy_ON_166"
+ },
  "op-convoy-pq-8": {
   "name": "Convoy PQ 8",
   "kind": "Arctic convoy",
@@ -1882,6 +1896,13 @@
   "nation": "US",
   "wikidata": "Q713516",
   "source": "https://en.wikipedia.org/wiki/Doolittle_Raid"
+ },
+ "op-douglas-macarthur-s-escape-from-the-philippines": {
+  "name": "Douglas MacArthur's escape from the Philippines",
+  "kind": "evacuation of a commander",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Douglas_MacArthur%27s_escape_from_the_Philippines"
  },
  "op-east-african-campaign-world-war-ii": {
   "name": "East African campaign (World War II)",
@@ -4055,6 +4076,13 @@
   "wikidata": "Q2763",
   "source": "https://en.wikipedia.org/wiki/The_Holocaust",
   "note": "Wikipedia title not yet confirmed with the API (HTTP 429 on every retry); confirm on merge."
+ },
+ "op-the-holocaust-in-bulgaria": {
+  "name": "The Holocaust in Bulgaria",
+  "kind": "persecution and deportation of Jews",
+  "nation": "Bulgaria",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/The_Holocaust_in_Bulgaria"
  },
  "op-the-holocaust-in-italy": {
   "name": "The Holocaust in Italy",

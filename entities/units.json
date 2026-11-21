@@ -1801,6 +1801,16 @@
    "Insular Force Guard"
   ]
  },
+ "unit-hilfspolizei": {
+  "name": "Hilfspolizei",
+  "kind": "Nazi auxiliary police force of 1933",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hilfspolizei",
+  "aka": [
+   "auxiliary police"
+  ]
+ },
  "unit-hitler-youth": {
   "name": "Hitler Youth",
   "kind": "Nazi party youth organization",
@@ -2845,6 +2855,17 @@
   "aka": [
    "Kraft durch Freude",
    "KdF"
+  ]
+ },
+ "unit-sturmabteilung": {
+  "name": "Sturmabteilung",
+  "kind": "Nazi Party paramilitary (the SA, brownshirts)",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sturmabteilung",
+  "aka": [
+   "SA",
+   "Brownshirts"
   ]
  },
  "unit-supreme-commander-for-the-allied-powers": {

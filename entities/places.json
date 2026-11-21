@@ -35,6 +35,15 @@
   "lat": 9.0358,
   "lon": 38.7525
  },
+ "place-aga-khan-palace": {
+  "name": "Aga Khan Palace",
+  "kind": "palace in Pune used as a British detention site",
+  "nation": "India",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Aga_Khan_Palace",
+  "lat": null,
+  "lon": null
+ },
  "place-aichi-prefecture": {
   "name": "Aichi Prefecture",
   "kind": "prefecture",
@@ -3707,6 +3716,15 @@
   "wikidata": "Q33959",
   "lat": 43.7019,
   "lon": 7.2683
+ },
+ "place-nijmegen": {
+  "name": "Nijmegen",
+  "kind": "Dutch city",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Nijmegen",
+  "lat": null,
+  "lon": null
  },
  "place-ninth-fort": {
   "name": "Ninth Fort",

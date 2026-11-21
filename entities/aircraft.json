@@ -782,6 +782,13 @@
    "1903 Wright Flyer"
   ]
  },
+ "aircraft-yankee-clipper-flying-boat": {
+  "name": "Yankee Clipper",
+  "kind": "Pan Am Boeing 314 flying boat",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Yankee_Clipper_(flying_boat)"
+ },
  "aircraft-yokosuka-mxy-7-ohka": {
   "name": "Ohka",
   "kind": "rocket powered suicide aircraft",

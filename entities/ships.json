@@ -304,6 +304,13 @@
   "wikidata": "Q19757499",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-1172"
  },
+ "ship-german-submarine-u-118-1941": {
+  "name": "U-118",
+  "kind": "Type XB minelaying U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-118_(1941)"
+ },
  "ship-german-submarine-u-123-1940": {
   "name": "U-123",
   "kind": "Type IXB U-boat",
@@ -716,6 +723,13 @@
    "U-593"
   ]
  },
+ "ship-german-submarine-u-606": {
+  "name": "U-606",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-606"
+ },
  "ship-german-submarine-u-620": {
   "name": "German submarine U-620",
   "kind": "Kriegsmarine Type VIIC U-boat",
@@ -989,6 +1003,13 @@
   "aka": [
    "HMCS Ville de Québec"
   ]
+ },
+ "ship-hmcs-weyburn": {
+  "name": "HMCS Weyburn (K173)",
+  "kind": "Flower class corvette",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMCS_Weyburn"
  },
  "ship-hmnzs-achilles": {
   "name": "HMNZS Achilles",
@@ -1731,6 +1752,13 @@
   "wikidata": "Q1565694",
   "source": "https://en.wikipedia.org/wiki/HMS_Wild_Goose"
  },
+ "ship-hms-wivern-d66": {
+  "name": "HMS Wivern (D66)",
+  "kind": "British destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Wivern_(D66)"
+ },
  "ship-hmt-rohna": {
   "name": "HMT Rohna",
   "kind": "troopship",
@@ -2399,6 +2427,13 @@
   "wikidata": "Q10884893",
   "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-3"
  },
+ "ship-japanese-submarine-i-37": {
+  "name": "I-37",
+  "kind": "Imperial Japanese Navy submarine",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-37"
+ },
  "ship-japanese-submarine-i-6": {
   "name": "I-6",
   "kind": "Imperial Japanese Navy submarine",
@@ -2534,6 +2569,13 @@
   "wikidata": "Q15137024",
   "source": "https://en.wikipedia.org/wiki/Ole_Wegger"
  },
+ "ship-orp-burza": {
+  "name": "ORP Burza",
+  "kind": "Polish destroyer",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/ORP_Burza"
+ },
  "ship-oryoku-maru": {
   "name": "Ōryoku Maru",
   "kind": "Japanese passenger cargo ship used as a POW transport",
@@ -2655,6 +2697,13 @@
   "nation": "US",
   "wikidata": "Q7393183",
   "source": "https://en.wikipedia.org/wiki/SS_Argentina_(1929)"
+ },
+ "ship-ss-british-chivalry": {
+  "name": "SS British Chivalry",
+  "kind": "British oil tanker",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_British_Chivalry"
  },
  "ship-ss-china-arrow": {
   "name": "SS China Arrow",
@@ -2947,6 +2996,13 @@
   "nation": "US",
   "wikidata": "Q7866010",
   "source": "https://en.wikipedia.org/wiki/USCGC_Bibb"
+ },
+ "ship-uscgc-campbell-wpg-32": {
+  "name": "USCGC Campbell (WPG-32)",
+  "kind": "Coast Guard cutter",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USCGC_Campbell_(WPG-32)"
  },
  "ship-uscgc-escanaba-wpg-77": {
   "name": "USCGC Escanaba (WPG-77)",
