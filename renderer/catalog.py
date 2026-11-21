@@ -323,6 +323,17 @@ for i, n in enumerate(puzzles):
         "game": game({}, "namethis", ""),
     }, n))
 
+# Same event (Planning, 19 Nov 2026): a record's optional "event" tag names the event it shows. Cards that
+# share one (a story card, its spec sheet, a Name This of the same ship) count as one card in Code Room:
+# never two in a group, never two on one board. Carried only when set, so other cards stay unchanged.
+events = {}
+for d in load("dispatches"):
+    if d.get("event"): events[d["id"]] = d["event"]
+for n in load("namethis"):
+    if n.get("event"): events[f"namethis-{n['id']}"] = n["event"]
+for c in catalog:
+    if c["id"] in events: c["event"] = events[c["id"]]
+
 catalog.sort(key=lambda c: (c["postAt"], c["id"]))
 out = os.path.join(root, "functions", "_data", "catalog.json")
 os.makedirs(os.path.dirname(out), exist_ok=True)
