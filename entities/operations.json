@@ -13,7 +13,7 @@
   "name": "1935 Saar status referendum",
   "kind": "plebiscite",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q11261090",
   "source": "https://en.wikipedia.org/wiki/1935_Saar_status_referendum",
   "aka": [
    "Saar plebiscite"
@@ -71,7 +71,7 @@
   "name": "1945 Mikawa earthquake",
   "kind": "earthquake",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q4565560",
   "source": "https://en.wikipedia.org/wiki/1945_Mikawa_earthquake"
  },
  "op-aarhus-air-raid": {
@@ -102,7 +102,7 @@
   "name": "Action of 11 January 1944",
   "kind": "naval action off Penang",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q4677231",
   "source": "https://en.wikipedia.org/wiki/Action_of_11_January_1944"
  },
  "op-air-raid-on-bari": {
@@ -203,7 +203,7 @@
   "name": "Auschwitz Sonderkommando revolt",
   "kind": "prisoner revolt, 7 Oct 1944",
   "nation": "Poland",
-  "wikidata": null,
+  "wikidata": "Q123700076",
   "source": "https://en.wikipedia.org/wiki/Auschwitz_Sonderkommando_revolt"
  },
  "op-azad-hind": {
@@ -248,14 +248,14 @@
   "name": "Battle of Bardia",
   "kind": "battle, Operation Compass, 3 to 5 Jan 1941",
   "nation": "Australia",
-  "wikidata": null,
+  "wikidata": "Q2426368",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Bardia"
  },
  "op-battle-of-bataan": {
   "name": "Battle of Bataan",
   "kind": "battle",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q703482",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Bataan"
  },
  "op-battle-of-berlin-raf-campaign": {
@@ -294,7 +294,7 @@
   "name": "Battle of Bure",
   "kind": "battle in the Battle of the Bulge, 3 to 5 Jan 1945",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q16208094",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Bure"
  },
  "op-battle-of-cape-bon-1941": {
@@ -378,7 +378,7 @@
   "name": "Battle of Kampar",
   "kind": "battle",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q4871375",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Kampar"
  },
  "op-battle-of-kota-bharu": {
@@ -392,7 +392,7 @@
   "name": "Battle of Kuala Lumpur",
   "kind": "battle, Malayan campaign",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q4871496",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Kuala_Lumpur"
  },
  "op-battle-of-lanzerath-ridge": {
@@ -433,7 +433,7 @@
   "name": "Battle of Manado",
   "kind": "battle, Dutch East Indies campaign",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q2587905",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Manado",
   "aka": [
    "Battle of Menado"
@@ -580,21 +580,21 @@
   "name": "Battle of Teruel",
   "kind": "Spanish Civil War battle",
   "nation": "Spain",
-  "wikidata": null,
+  "wikidata": "Q1467456",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Teruel"
  },
  "op-battle-of-the-barents-sea": {
   "name": "Battle of the Barents Sea",
   "kind": "naval battle, Arctic convoy JW 51B",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q699411",
   "source": "https://en.wikipedia.org/wiki/Battle_of_the_Barents_Sea"
  },
  "op-battle-of-the-bay-of-biscay": {
   "name": "Battle of the Bay of Biscay",
   "kind": "naval battle, 28 December 1943",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q18326240",
   "source": "https://en.wikipedia.org/wiki/Battle_of_the_Bay_of_Biscay",
   "aka": [
    "Operation Bernau",
@@ -615,7 +615,7 @@
   "name": "Battle of the Caucasus",
   "kind": "campaign",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q653470",
   "source": "https://en.wikipedia.org/wiki/Battle_of_the_Caucasus"
  },
  "op-battle-of-the-heligoland-bight-1939": {
@@ -725,7 +725,7 @@
   "name": "Bombing of Dublin in World War II",
   "kind": "bombing of a neutral country",
   "nation": "Ireland",
-  "wikidata": null,
+  "wikidata": "Q4940694",
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Dublin_in_World_War_II"
  },
  "op-bombing-of-helsinki-in-world-war-ii": {
@@ -756,7 +756,7 @@
   "name": "Bombing of Nuremberg in World War II",
   "kind": "bombing campaign",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q1735702",
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Nuremberg_in_World_War_II"
  },
  "op-bombing-of-rangoon-in-world-war-ii": {
@@ -810,7 +810,7 @@
   "name": "Burma campaign (1944 to 1945)",
   "kind": "campaign",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q15986363",
   "source": "https://en.wikipedia.org/wiki/Burma_campaign_(1944%E2%80%931945)"
  },
  "op-cairo-conference": {
@@ -841,7 +841,7 @@
   "name": "Cardiff Blitz",
   "kind": "bombing campaign",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q5038376",
   "source": "https://en.wikipedia.org/wiki/Cardiff_Blitz"
  },
  "op-casablanca-conference": {
@@ -955,7 +955,7 @@
   "name": "Częstochowa Ghetto uprising",
   "kind": "ghetto resistance",
   "nation": "Poland",
-  "wikidata": null,
+  "wikidata": "Q5202287",
   "source": "https://en.wikipedia.org/wiki/Częstochowa_Ghetto_uprising"
  },
  "op-day-of-infamy-speech": {
@@ -1000,7 +1000,7 @@
   "name": "Deportation of the Kalmyks",
   "kind": "Soviet forced deportation, 1943",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q4158587",
   "source": "https://en.wikipedia.org/wiki/Deportation_of_the_Kalmyks",
   "aka": [
    "Operation Ulussy"
@@ -1045,14 +1045,14 @@
   "name": "East Prussian offensive",
   "kind": "offensive",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q636087",
   "source": "https://en.wikipedia.org/wiki/East_Prussian_offensive"
  },
  "op-emergency-shipbuilding-program": {
   "name": "Emergency Shipbuilding Program",
   "kind": "shipbuilding program",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q1335461",
   "source": "https://en.wikipedia.org/wiki/Emergency_Shipbuilding_Program"
  },
  "op-ex-parte-endo": {
@@ -1101,7 +1101,7 @@
   "name": "Four Freedoms",
   "kind": "Roosevelt's statement of war aims, annual message of 6 January 1941",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q646350",
   "source": "https://en.wikipedia.org/wiki/Four_Freedoms",
   "aka": [
    "Four Freedoms speech"
@@ -1180,7 +1180,7 @@
   "name": "Huaihai campaign",
   "kind": "campaign",
   "nation": "China",
-  "wikidata": null,
+  "wikidata": "Q372153",
   "source": "https://en.wikipedia.org/wiki/Huaihai_campaign"
  },
  "op-humanity-declaration": {
@@ -1235,7 +1235,7 @@
   "name": "Invasion of Lingayen Gulf",
   "kind": "Allied amphibious invasion of Luzon, January 1945",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q702729",
   "source": "https://en.wikipedia.org/wiki/Invasion_of_Lingayen_Gulf",
   "note": "Not the Japanese landing of December 1941 (op-japanese-invasion-of-lingayen-gulf)."
  },
@@ -1243,7 +1243,7 @@
   "name": "It's That Man Again",
   "kind": "BBC radio comedy programme",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q13569877",
   "source": "https://en.wikipedia.org/wiki/It%27s_That_Man_Again",
   "aka": [
    "ITMA"
@@ -1260,7 +1260,7 @@
   "name": "January action in the Warsaw Ghetto",
   "kind": "deportation action and armed resistance",
   "nation": "Poland",
-  "wikidata": null,
+  "wikidata": "Q116257666",
   "source": "https://en.wikipedia.org/wiki/January_action_in_the_Warsaw_Ghetto"
  },
  "op-japanese-air-attacks-on-the-mariana-islands": {
@@ -1295,7 +1295,7 @@
   "name": "Japanese invasion of Manchuria",
   "kind": "invasion",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q1551794",
   "source": "https://en.wikipedia.org/wiki/Japanese_invasion_of_Manchuria",
   "aka": [
    "Manchurian Incident"
@@ -1305,7 +1305,7 @@
   "name": "Jinzhou Operation",
   "kind": "Japanese offensive",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q1361205",
   "source": "https://en.wikipedia.org/wiki/Jinzhou_Operation"
  },
  "op-joint-declaration-by-members-of-the-united-nations": {
@@ -1409,7 +1409,7 @@
   "name": "Landing at Saidor",
   "kind": "amphibious landing",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q6484628",
   "source": "https://en.wikipedia.org/wiki/Landing_at_Saidor"
  },
  "op-landings-at-cape-torokina": {
@@ -1539,7 +1539,7 @@
   "name": "Mechelen incident",
   "kind": "plane crash and intelligence crisis",
   "nation": "Belgium",
-  "wikidata": null,
+  "wikidata": "Q452157",
   "source": "https://en.wikipedia.org/wiki/Mechelen_incident",
   "aka": [
    "Mechelen affair"
@@ -1549,14 +1549,14 @@
   "name": "Milch Trial",
   "kind": "war crimes trial",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q704194",
   "source": "https://en.wikipedia.org/wiki/Milch_Trial"
  },
  "op-ministries-trial": {
   "name": "Ministries Trial",
   "kind": "US Nuremberg Military Tribunal Case 11, 1948 to 1949",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q702460",
   "source": "https://en.wikipedia.org/wiki/Ministries_Trial",
   "aka": [
    "Ministries Case",
@@ -1704,7 +1704,7 @@
   "name": "Operation Anthropoid",
   "kind": "Czechoslovak and British operation to assassinate Reinhard Heydrich",
   "nation": "Czechoslovakia",
-  "wikidata": null,
+  "wikidata": "Q715264",
   "source": "https://en.wikipedia.org/wiki/Operation_Anthropoid"
  },
  "op-operation-archery": {
@@ -1763,7 +1763,7 @@
   "name": "Operation Carpetbagger",
   "kind": "air supply operation",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q2026003",
   "source": "https://en.wikipedia.org/wiki/Operation_Carpetbagger"
  },
  "op-operation-compass": {
@@ -1791,7 +1791,7 @@
   "name": "Operation Excess",
   "kind": "Mediterranean convoy operation",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q2389095",
   "source": "https://en.wikipedia.org/wiki/Operation_Excess"
  },
  "op-operation-frankton": {
@@ -1815,14 +1815,14 @@
   "name": "Operation Ke",
   "kind": "Japanese evacuation of Guadalcanal",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q2314453",
   "source": "https://en.wikipedia.org/wiki/Operation_Ke"
  },
  "op-operation-koltso": {
   "name": "Operation Koltso",
   "kind": "offensive",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q7097217",
   "source": "https://en.wikipedia.org/wiki/Operation_Koltso",
   "aka": [
    "Operation Ring"
@@ -1842,7 +1842,7 @@
   "name": "Operation Lentil (Sumatra)",
   "kind": "carrier air strike",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q11349991",
   "source": "https://en.wikipedia.org/wiki/Operation_Lentil_(Sumatra)"
  },
  "op-operation-lighthouse-1937": {
@@ -1908,7 +1908,7 @@
   "name": "Operation Sonnenblume",
   "kind": "German deployment to North Africa",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q708223",
   "source": "https://en.wikipedia.org/wiki/Operation_Sonnenblume"
  },
  "op-operation-torch": {
@@ -1939,7 +1939,7 @@
   "name": "Operation Woodlark",
   "kind": "sabotage operation",
   "nation": "Norway",
-  "wikidata": null,
+  "wikidata": "Q4578859",
   "source": "https://en.wikipedia.org/wiki/Operation_Woodlark",
   "aka": [
    "Jorstadelva Bridge sabotage"
@@ -1961,14 +1961,14 @@
   "name": "Oslo Mosquito raid (1944)",
   "kind": "RAF precision raid on the Gestapo headquarters in Oslo",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q28736694",
   "source": "https://en.wikipedia.org/wiki/Oslo_Mosquito_raid_(1944)"
  },
  "op-ostrogozhsk-rossosh-offensive": {
   "name": "Ostrogozhsk-Rossosh offensive",
   "kind": "offensive",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q562797",
   "source": "https://en.wikipedia.org/wiki/Ostrogozhsk%E2%80%93Rossosh_offensive"
  },
  "op-palawan-massacre": {
@@ -1996,7 +1996,7 @@
   "name": "Pohl trial",
   "kind": "war crimes trial (NMT Case 4)",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q644827",
   "source": "https://en.wikipedia.org/wiki/Pohl_trial"
  },
  "op-presidents-committee-on-civil-rights": {
@@ -2010,14 +2010,14 @@
   "name": "Proclamation 2714",
   "kind": "Truman proclamation of the cessation of hostilities",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q7247423",
   "source": "https://en.wikipedia.org/wiki/Proclamation_2714"
  },
  "op-project-diana": {
   "name": "Project Diana",
   "kind": "radar experiment",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q7249063",
   "source": "https://en.wikipedia.org/wiki/Project_Diana"
  },
  "op-proposed-united-states-acquisition-of-greenland": {
@@ -2034,7 +2034,7 @@
   "name": "Punishment for War Crimes",
   "kind": "declaration (St James's Palace, 1942)",
   "nation": "worldwide",
-  "wikidata": null,
+  "wikidata": "Q111912984",
   "source": "https://en.wikipedia.org/wiki/Punishment_for_War_Crimes",
   "aka": [
    "St James's Declaration of 1942"
@@ -2044,7 +2044,7 @@
   "name": "Purge (occupied Japan)",
   "kind": "occupation program",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q7261217",
   "source": "https://en.wikipedia.org/wiki/Purge_(occupied_Japan)"
  },
  "op-raczynski-s-note": {
@@ -2092,7 +2092,7 @@
   "name": "Rationing in the United Kingdom",
   "kind": "wartime food rationing program",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q535297",
   "source": "https://en.wikipedia.org/wiki/Rationing_in_the_United_Kingdom"
  },
  "op-rationing-in-the-united-states": {
@@ -2154,7 +2154,7 @@
   "name": "Sakuradamon incident (1932)",
   "kind": "assassination attempt on Emperor Hirohito",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q3137814",
   "source": "https://en.wikipedia.org/wiki/Sakuradamon_incident_(1932)"
  },
  "op-scuttling-of-the-french-fleet-at-toulon": {
@@ -2182,7 +2182,7 @@
   "name": "Second Bill of Rights",
   "kind": "proposed economic bill of rights",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q3477061",
   "source": "https://en.wikipedia.org/wiki/Second_Bill_of_Rights",
   "aka": [
    "Economic Bill of Rights"
@@ -2206,7 +2206,7 @@
   "name": "Second Happy Time",
   "kind": "U-boat offensive off North America",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q569454",
   "source": "https://en.wikipedia.org/wiki/Second_Happy_Time",
   "aka": [
    "Operation Drumbeat",
@@ -2294,7 +2294,7 @@
   "name": "Sino-British treaty ending extraterritoriality (1943)",
   "kind": "treaty",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q4714539",
   "source": "https://en.wikipedia.org/wiki/Sino-British_Treaty_for_the_Relinquishment_of_Extra-Territorial_Rights_in_China",
   "aka": [
    "Sino-British New Equal Treaty"
@@ -2414,7 +2414,7 @@
   "name": "The Holocaust in the Netherlands",
   "kind": "genocide",
   "nation": "Netherlands",
-  "wikidata": null,
+  "wikidata": "Q2278817",
   "source": "https://en.wikipedia.org/wiki/The_Holocaust_in_the_Netherlands"
  },
  "op-this-is-the-army-musical": {
@@ -2442,7 +2442,7 @@
   "name": "Sino-American treaty ending extraterritoriality (1943)",
   "kind": "treaty",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q19429115",
   "source": "https://en.wikipedia.org/wiki/Treaty_between_the_United_States_and_China_for_the_Relinquishment_of_Extraterritorial_Rights_in_China",
   "aka": [
    "Sino-American New Equal Treaty"
@@ -2551,7 +2551,7 @@
   "name": "Verona trial",
   "kind": "show trial",
   "nation": "Italy",
-  "wikidata": null,
+  "wikidata": "Q665021",
   "source": "https://en.wikipedia.org/wiki/Verona_trial"
  },
  "op-victory-program": {
@@ -2569,14 +2569,14 @@
   "name": "Vistula-Oder offensive",
   "kind": "Soviet offensive in Poland, January 1945",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q159065",
   "source": "https://en.wikipedia.org/wiki/Vistula%E2%80%93Oder_offensive"
  },
  "op-war-brides-act": {
   "name": "War Brides Act",
   "kind": "U.S. law of 28 December 1945",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q581800",
   "source": "https://en.wikipedia.org/wiki/War_Brides_Act"
  },
  "op-washington-naval-treaty": {
@@ -2635,7 +2635,7 @@
   "name": "Yevpatoria assault",
   "kind": "Soviet amphibious landing, 5 to 8 Jan 1942",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q4173046",
   "source": "https://en.wikipedia.org/wiki/Yevpatoria_assault",
   "aka": [
    "Yevpatoria landing",
@@ -2653,7 +2653,7 @@
   "name": "Zhitomir to Berdichev offensive",
   "kind": "Soviet offensive in Ukraine, December 1943 to January 1944",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q2525805",
   "source": "https://en.wikipedia.org/wiki/Zhitomir%E2%80%93Berdichev_offensive",
   "aka": [
    "Zhitomir-Berdichev offensive"

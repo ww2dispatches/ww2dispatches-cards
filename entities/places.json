@@ -21,10 +21,10 @@
   "name": "Aichi Prefecture",
   "kind": "prefecture",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q80434",
   "source": "https://en.wikipedia.org/wiki/Aichi_Prefecture",
-  "lat": null,
-  "lon": null
+  "lat": 35.1802,
+  "lon": 136.9064
  },
  "place-alaska-highway": {
   "name": "Alaska Highway",
@@ -42,10 +42,10 @@
   "name": "Alexandria",
   "kind": "city",
   "nation": "Egypt",
-  "wikidata": null,
+  "wikidata": "Q87",
   "source": "https://en.wikipedia.org/wiki/Alexandria",
-  "lat": null,
-  "lon": null
+  "lat": 31.1975,
+  "lon": 29.8925
  },
  "place-algiers": {
   "name": "Algiers",
@@ -121,10 +121,10 @@
   "name": "Bank station",
   "kind": "London Underground station, City of London",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q806704",
   "source": "https://en.wikipedia.org/wiki/Bank_and_Monument_stations",
-  "lat": null,
-  "lon": null,
+  "lat": 51.513,
+  "lon": -0.088,
   "aka": [
    "Bank and Monument stations"
   ]
@@ -133,10 +133,10 @@
   "name": "Bardia",
   "kind": "port town",
   "nation": "Libya",
-  "wikidata": null,
+  "wikidata": "Q141687",
   "source": "https://en.wikipedia.org/wiki/Bardia",
-  "lat": null,
-  "lon": null
+  "lat": 31.76,
+  "lon": 25.075
  },
  "place-bari": {
   "name": "Bari",
@@ -443,10 +443,10 @@
   "name": "Buna, Papua New Guinea",
   "kind": "village and beachhead",
   "nation": "Papua New Guinea",
-  "wikidata": null,
+  "wikidata": "Q3236032",
   "source": "https://en.wikipedia.org/wiki/Buna,_Papua_New_Guinea",
-  "lat": null,
-  "lon": null
+  "lat": -8.6667,
+  "lon": 148.4
  },
  "place-burauen": {
   "name": "Burauen",
@@ -488,10 +488,10 @@
   "name": "Camp Upton",
   "kind": "Army induction camp",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q3651664",
   "source": "https://en.wikipedia.org/wiki/Camp_Upton",
-  "lat": null,
-  "lon": null
+  "lat": 40.8733,
+  "lon": -72.8721
  },
  "place-camp-x": {
   "name": "Camp X",
@@ -747,10 +747,10 @@
   "name": "Częstochowa",
   "kind": "city",
   "nation": "Poland",
-  "wikidata": null,
+  "wikidata": "Q103217",
   "source": "https://en.wikipedia.org/wiki/Częstochowa",
-  "lat": null,
-  "lon": null
+  "lat": 50.8096,
+  "lon": 19.1222
  },
  "place-dachau-concentration-camp": {
   "name": "Dachau",
@@ -786,10 +786,10 @@
   "name": "Debrecen",
   "kind": "city",
   "nation": "Hungary",
-  "wikidata": null,
+  "wikidata": "Q79880",
   "source": "https://en.wikipedia.org/wiki/Debrecen",
-  "lat": null,
-  "lon": null
+  "lat": 47.53,
+  "lon": 21.6392
  },
  "place-delme-moselle": {
   "name": "Delme",
@@ -858,10 +858,10 @@
   "name": "Dublin",
   "kind": "city",
   "nation": "Ireland",
-  "wikidata": null,
+  "wikidata": "Q1761",
   "source": "https://en.wikipedia.org/wiki/Dublin",
-  "lat": null,
-  "lon": null
+  "lat": 53.3497,
+  "lon": -6.2603
  },
  "place-duren": {
   "name": "Duren",
@@ -1047,10 +1047,10 @@
   "name": "Free City of Danzig",
   "kind": "city state under League of Nations protection",
   "nation": "Danzig",
-  "wikidata": null,
+  "wikidata": "Q216173",
   "source": "https://en.wikipedia.org/wiki/Free_City_of_Danzig",
-  "lat": null,
-  "lon": null,
+  "lat": 54.4,
+  "lon": 18.66,
   "aka": [
    "Danzig",
    "Gdansk"
@@ -1135,10 +1135,10 @@
   "name": "Grand Harbour",
   "kind": "harbour",
   "nation": "Malta",
-  "wikidata": null,
+  "wikidata": "Q220899",
   "source": "https://en.wikipedia.org/wiki/Grand_Harbour",
-  "lat": null,
-  "lon": null
+  "lat": 35.8922,
+  "lon": 14.5128
  },
  "place-great-sphinx-of-giza": {
   "name": "Sphinx",
@@ -1198,10 +1198,10 @@
   "name": "Gulf of Finland",
   "kind": "arm of the Baltic Sea",
   "nation": "Finland",
-  "wikidata": null,
+  "wikidata": "Q14686",
   "source": "https://en.wikipedia.org/wiki/Gulf_of_Finland",
-  "lat": null,
-  "lon": null
+  "lat": 59.8333,
+  "lon": 26.0
  },
  "place-hainan": {
   "name": "Hainan",
@@ -1367,13 +1367,13 @@
   "name": "HM Prison Wandsworth",
   "kind": "prison, London",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q386707",
   "source": "https://en.wikipedia.org/wiki/HM_Prison_Wandsworth",
   "aka": [
    "Wandsworth Prison"
   ],
-  "lat": null,
-  "lon": null
+  "lat": 51.4502,
+  "lon": -0.1777
  },
  "place-hochst-frankfurt-am-main": {
   "name": "Frankfurt Hoechst",
@@ -1526,13 +1526,13 @@
   "name": "Jinzhou",
   "kind": "city in Manchuria",
   "nation": "China",
-  "wikidata": null,
+  "wikidata": "Q28996",
   "source": "https://en.wikipedia.org/wiki/Jinzhou",
   "aka": [
    "Chinchow"
   ],
-  "lat": null,
-  "lon": null
+  "lat": 41.1144,
+  "lon": 121.1292
  },
  "place-julich": {
   "name": "Julich",
@@ -1618,10 +1618,10 @@
   "name": "Kaysersberg",
   "kind": "town",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q83485",
   "source": "https://en.wikipedia.org/wiki/Kaysersberg",
-  "lat": null,
-  "lon": null
+  "lat": 48.1392,
+  "lon": 7.2608
  },
  "place-kehl": {
   "name": "Kehl",
@@ -1793,10 +1793,10 @@
   "name": "Kuala Lumpur",
   "kind": "city, capital of the Federated Malay States",
   "nation": "Malaya",
-  "wikidata": null,
+  "wikidata": "Q1865",
   "source": "https://en.wikipedia.org/wiki/Kuala_Lumpur",
-  "lat": null,
-  "lon": null
+  "lat": 3.1478,
+  "lon": 101.6953
  },
  "place-kuching": {
   "name": "Kuching",
@@ -1971,10 +1971,10 @@
   "name": "Llandaff Cathedral",
   "kind": "cathedral",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q747856",
   "source": "https://en.wikipedia.org/wiki/Llandaff_Cathedral",
-  "lat": null,
-  "lon": null
+  "lat": 51.4958,
+  "lon": -3.2181
  },
  "place-loch-ewe": {
   "name": "Loch Ewe",
@@ -2046,10 +2046,10 @@
   "name": "Manado",
   "kind": "port city, Celebes (Sulawesi)",
   "nation": "Netherlands",
-  "wikidata": null,
+  "wikidata": "Q15847",
   "source": "https://en.wikipedia.org/wiki/Manado",
-  "lat": null,
-  "lon": null,
+  "lat": 1.4931,
+  "lon": 124.8413,
   "aka": [
    "Menado"
   ]
@@ -2151,10 +2151,10 @@
   "name": "Maungdaw",
   "kind": "port town, Arakan",
   "nation": "Burma",
-  "wikidata": null,
+  "wikidata": "Q15252062",
   "source": "https://en.wikipedia.org/wiki/Maungdaw",
-  "lat": null,
-  "lon": null
+  "lat": 20.8167,
+  "lon": 92.3667
  },
  "place-mauthausen-concentration-camp": {
   "name": "Mauthausen concentration camp",
@@ -2209,10 +2209,10 @@
   "name": "Methodist Central Hall, Westminster",
   "kind": "church and meeting hall",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q81473",
   "source": "https://en.wikipedia.org/wiki/Methodist_Central_Hall,_Westminster",
-  "lat": null,
-  "lon": null
+  "lat": 51.5,
+  "lon": -0.13
  },
  "place-metz": {
   "name": "Metz",
@@ -2254,10 +2254,10 @@
   "name": "Minsk",
   "kind": "city",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q2280",
   "source": "https://en.wikipedia.org/wiki/Minsk",
-  "lat": null,
-  "lon": null
+  "lat": 53.9022,
+  "lon": 27.5618
  },
  "place-miri": {
   "name": "Miri",
@@ -2635,10 +2635,10 @@
   "name": "Olevsk",
   "kind": "town in Ukraine",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q913143",
   "source": "https://en.wikipedia.org/wiki/Olevsk",
-  "lat": null,
-  "lon": null
+  "lat": 51.2278,
+  "lon": 27.6481
  },
  "place-oran": {
   "name": "Oran",
@@ -2671,10 +2671,10 @@
   "name": "Oschersleben",
   "kind": "town, aircraft factory target",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q525392",
   "source": "https://en.wikipedia.org/wiki/Oschersleben",
-  "lat": null,
-  "lon": null
+  "lat": 52.0167,
+  "lon": 11.25
  },
  "place-pagan-island": {
   "name": "Pagan",
@@ -2698,10 +2698,10 @@
   "name": "Palermo",
   "kind": "port city, Sicily",
   "nation": "Italy",
-  "wikidata": null,
+  "wikidata": "Q2656",
   "source": "https://en.wikipedia.org/wiki/Palermo",
-  "lat": null,
-  "lon": null
+  "lat": 38.1157,
+  "lon": 13.3613
  },
  "place-palo-leyte": {
   "name": "Palo",
@@ -2788,10 +2788,10 @@
   "name": "Penang",
   "kind": "island and port, Malaya",
   "nation": "Malaya",
-  "wikidata": null,
+  "wikidata": "Q188096",
   "source": "https://en.wikipedia.org/wiki/Penang",
-  "lat": null,
-  "lon": null
+  "lat": 5.4025,
+  "lon": 100.365
  },
  "place-petrishchevo": {
   "name": "Petrishchevo",
@@ -2905,28 +2905,28 @@
   "name": "Portsmouth",
   "kind": "naval city",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q72259",
   "source": "https://en.wikipedia.org/wiki/Portsmouth",
-  "lat": null,
-  "lon": null
+  "lat": 50.8058,
+  "lon": -1.0872
  },
  "place-portsmouth-guildhall": {
   "name": "Portsmouth Guildhall",
   "kind": "town hall",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q7232467",
   "source": "https://en.wikipedia.org/wiki/Portsmouth_Guildhall",
-  "lat": null,
-  "lon": null
+  "lat": 50.7976,
+  "lon": -1.0929
  },
  "place-pula": {
   "name": "Pula",
   "kind": "port city and naval base",
   "nation": "Croatia",
-  "wikidata": null,
+  "wikidata": "Q4656",
   "source": "https://en.wikipedia.org/wiki/Pula",
-  "lat": null,
-  "lon": null,
+  "lat": 44.8703,
+  "lon": 13.8456,
   "aka": [
    "Pola"
   ]
@@ -2935,10 +2935,10 @@
   "name": "Qingdao",
   "kind": "port city",
   "nation": "China",
-  "wikidata": null,
+  "wikidata": "Q170322",
   "source": "https://en.wikipedia.org/wiki/Qingdao",
-  "lat": null,
-  "lon": null,
+  "lat": 36.1167,
+  "lon": 120.4,
   "aka": [
    "Tsingtao"
   ]
@@ -2974,10 +2974,10 @@
   "name": "RAF Charterhall",
   "kind": "airfield",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q7275239",
   "source": "https://en.wikipedia.org/wiki/RAF_Charterhall",
-  "lat": null,
-  "lon": null
+  "lat": 55.707,
+  "lon": -2.376
  },
  "place-raf-digby": {
   "name": "RAF Digby",
@@ -3004,10 +3004,10 @@
   "name": "RAF Tangmere",
   "kind": "RAF airfield, West Sussex",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q3515123",
   "source": "https://en.wikipedia.org/wiki/RAF_Tangmere",
-  "lat": null,
-  "lon": null
+  "lat": 50.8458,
+  "lon": -0.7064
  },
  "place-raf-thorney-island": {
   "name": "RAF Thorney Island",
@@ -3040,10 +3040,10 @@
   "name": "Reich Chancellery",
   "kind": "government building, Berlin",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q698208",
   "source": "https://en.wikipedia.org/wiki/Reich_Chancellery",
-  "lat": null,
-  "lon": null,
+  "lat": 52.5117,
+  "lon": 13.3819,
   "aka": [
    "New Reich Chancellery",
    "Neue Reichskanzlei"
@@ -3147,13 +3147,13 @@
   "name": "Saint-Nazaire",
   "kind": "port and U-boat base",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q152027",
   "source": "https://en.wikipedia.org/wiki/Saint-Nazaire",
   "aka": [
    "St. Nazaire"
   ],
-  "lat": null,
-  "lon": null
+  "lat": 47.2736,
+  "lon": -2.2139
  },
  "place-saint-petersburg": {
   "name": "Leningrad",
@@ -3358,10 +3358,10 @@
   "name": "Silkeborg",
   "kind": "town",
   "nation": "Denmark",
-  "wikidata": null,
+  "wikidata": "Q21180",
   "source": "https://en.wikipedia.org/wiki/Silkeborg",
-  "lat": null,
-  "lon": null
+  "lat": 56.1667,
+  "lon": 9.55
  },
  "place-singapore": {
   "name": "Singapore",
@@ -3376,13 +3376,13 @@
   "name": "Sittwe",
   "kind": "port town",
   "nation": "Burma",
-  "wikidata": null,
+  "wikidata": "Q738748",
   "source": "https://en.wikipedia.org/wiki/Sittwe",
   "aka": [
    "Akyab"
   ],
-  "lat": null,
-  "lon": null
+  "lat": 20.1444,
+  "lon": 92.8969
  },
  "place-skeleton-coast": {
   "name": "Skeleton Coast",
@@ -3445,10 +3445,10 @@
   "name": "St James's Palace",
   "kind": "royal palace",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q272162",
   "source": "https://en.wikipedia.org/wiki/St_James%27s_Palace",
-  "lat": null,
-  "lon": null
+  "lat": 51.5047,
+  "lon": -0.1378
  },
  "place-st-john-s-newfoundland-and-labrador": {
   "name": "St. John's, Newfoundland and Labrador",
@@ -3538,10 +3538,10 @@
   "name": "Sulu Sea",
   "kind": "sea",
   "nation": "Philippines",
-  "wikidata": null,
+  "wikidata": "Q160194",
   "source": "https://en.wikipedia.org/wiki/Sulu_Sea",
-  "lat": null,
-  "lon": null
+  "lat": 8.0,
+  "lon": 120.0
  },
  "place-syntagma-square": {
   "name": "Syntagma Square",
@@ -3604,10 +3604,10 @@
   "name": "Teruel",
   "kind": "city",
   "nation": "Spain",
-  "wikidata": null,
+  "wikidata": "Q14336",
   "source": "https://en.wikipedia.org/wiki/Teruel",
-  "lat": null,
-  "lon": null
+  "lat": 40.3436,
+  "lon": -1.1072
  },
  "place-thames-estuary": {
   "name": "Thames Estuary",
@@ -3631,9 +3631,9 @@
   "name": "Times Square",
   "kind": "square in Manhattan, New York City",
   "nation": "US",
-  "wikidata": null,
-  "lat": null,
-  "lon": null,
+  "wikidata": "Q11259",
+  "lat": 40.7575,
+  "lon": -73.9858,
   "source": "https://en.wikipedia.org/wiki/Times_Square"
  },
  "place-tinian-northern-mariana-islands": {
@@ -3737,10 +3737,10 @@
   "name": "Tulamben",
   "kind": "village and dive site, Bali",
   "nation": "Indonesia",
-  "wikidata": null,
+  "wikidata": "Q987513",
   "source": "https://en.wikipedia.org/wiki/Tulamben",
-  "lat": null,
-  "lon": null
+  "lat": -8.2775,
+  "lon": 115.5925
  },
  "place-tule-lake-war-relocation-center": {
   "name": "Tule Lake",
@@ -3819,19 +3819,19 @@
   "name": "Victoria Terrasse",
   "kind": "Oslo building, Gestapo headquarters in occupied Norway",
   "nation": "Norway",
-  "wikidata": null,
-  "lat": null,
-  "lon": null,
+  "wikidata": "Q12009662",
+  "lat": 59.9142,
+  "lon": 10.7286,
   "source": "https://en.wikipedia.org/wiki/Victoria_Terrasse"
  },
  "place-vienna": {
   "name": "Vienna",
   "kind": "city",
   "nation": "Austria",
-  "wikidata": null,
+  "wikidata": "Q1741",
   "source": "https://en.wikipedia.org/wiki/Vienna",
-  "lat": null,
-  "lon": null
+  "lat": 48.2083,
+  "lon": 16.3725
  },
  "place-vigan": {
   "name": "Vigan",
@@ -3930,10 +3930,10 @@
   "name": "Warsaw Ghetto",
   "kind": "Nazi ghetto in occupied Warsaw",
   "nation": "Poland",
-  "wikidata": null,
+  "wikidata": "Q154607",
   "source": "https://en.wikipedia.org/wiki/Warsaw_Ghetto",
-  "lat": null,
-  "lon": null
+  "lat": 52.25,
+  "lon": 21.0
  },
  "place-washington-d-c": {
   "name": "Washington, D.C.",
@@ -4051,13 +4051,13 @@
   "name": "Yangon",
   "kind": "city",
   "nation": "Burma",
-  "wikidata": null,
+  "wikidata": "Q37995",
   "source": "https://en.wikipedia.org/wiki/Yangon",
   "aka": [
    "Rangoon"
   ],
-  "lat": null,
-  "lon": null
+  "lat": 16.795,
+  "lon": 96.16
  },
  "place-yogyakarta": {
   "name": "Yogyakarta",

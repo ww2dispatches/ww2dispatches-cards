@@ -96,7 +96,7 @@
   "name": "Chariot manned torpedo",
   "kind": "human torpedo",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q1063204",
   "source": "https://en.wikipedia.org/wiki/Chariot_manned_torpedo",
   "aka": [
    "Chariot"
@@ -141,7 +141,7 @@
   "name": "Ejection seat",
   "kind": "aircraft escape device",
   "nation": "worldwide",
-  "wikidata": null,
+  "wikidata": "Q623544",
   "source": "https://en.wikipedia.org/wiki/Ejection_seat"
  },
  "machine-enigma-machine": {
@@ -176,7 +176,7 @@
   "name": "Fraktur",
   "kind": "blackletter typeface",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q148443",
   "source": "https://en.wikipedia.org/wiki/Fraktur",
   "aka": [
    "blackletter",
@@ -234,7 +234,7 @@
   "name": "Imperial Regalia of the Holy Roman Empire",
   "kind": "crown jewels and relics",
   "nation": "Austria",
-  "wikidata": null,
+  "wikidata": "Q694691",
   "source": "https://en.wikipedia.org/wiki/Imperial_Regalia_of_the_Holy_Roman_Empire",
   "aka": [
    "Reichskleinodien"
@@ -298,7 +298,7 @@
   "name": "Liberty ship",
   "kind": "standard cargo ship type",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q593485",
   "source": "https://en.wikipedia.org/wiki/Liberty_ship"
  },
  "machine-m3-stuart": {
@@ -406,7 +406,7 @@
   "name": "Proximity fuze",
   "kind": "radio fuze for shells",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q333133",
   "source": "https://en.wikipedia.org/wiki/Proximity_fuze",
   "aka": [
    "VT fuze",
@@ -495,7 +495,7 @@
   "name": "Times Square Ball",
   "kind": "New Year's Eve time ball, New York",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q1058395",
   "source": "https://en.wikipedia.org/wiki/Times_Square_Ball"
  },
  "machine-v-1-flying-bomb": {

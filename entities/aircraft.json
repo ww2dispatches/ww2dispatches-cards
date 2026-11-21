@@ -3,7 +3,7 @@
   "name": "Airspeed Oxford",
   "kind": "twin engine trainer",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q409219",
   "source": "https://en.wikipedia.org/wiki/Airspeed_Oxford"
  },
  "aircraft-avro-lancaster": {
@@ -24,7 +24,7 @@
   "name": "Avro Manchester",
   "kind": "twin engine heavy bomber",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q672994",
   "source": "https://en.wikipedia.org/wiki/Avro_Manchester"
  },
  "aircraft-b-29-dauntless-dotty": {
@@ -59,7 +59,7 @@
   "name": "Boeing 314 Clipper",
   "kind": "long range flying boat airliner",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q890166",
   "source": "https://en.wikipedia.org/wiki/Boeing_314_Clipper"
  },
  "aircraft-boeing-b-17-flying-fortress": {
@@ -97,7 +97,7 @@
   "name": "Bristol Blenheim",
   "kind": "light bomber and night fighter",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q330417",
   "source": "https://en.wikipedia.org/wiki/Bristol_Blenheim"
  },
  "aircraft-consolidated-b-24-liberator": {
@@ -234,7 +234,7 @@
   "name": "Fokker D.XXI",
   "kind": "Dutch built fighter flown by Finland",
   "nation": "Netherlands",
-  "wikidata": null,
+  "wikidata": "Q838601",
   "source": "https://en.wikipedia.org/wiki/Fokker_D.XXI"
  },
  "aircraft-grumman-f4f-wildcat": {
@@ -307,7 +307,7 @@
   "name": "Heinkel He 280",
   "kind": "jet fighter prototype",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q698685",
   "source": "https://en.wikipedia.org/wiki/Heinkel_He_280"
  },
  "aircraft-hughes-h-4-hercules": {
@@ -324,7 +324,7 @@
   "name": "Ilyushin DB-3",
   "kind": "Soviet twin engine bomber",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q1112841",
   "source": "https://en.wikipedia.org/wiki/Ilyushin_DB-3"
  },
  "aircraft-interstate-tdr": {
@@ -368,7 +368,7 @@
   "name": "Lockheed Constellation",
   "kind": "four engine airliner and transport",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q677122",
   "source": "https://en.wikipedia.org/wiki/Lockheed_Constellation",
   "aka": [
    "C-69",
@@ -379,7 +379,7 @@
   "name": "Lockheed Hudson",
   "kind": "light bomber and transport",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q1328822",
   "source": "https://en.wikipedia.org/wiki/Lockheed_Hudson"
  },
  "aircraft-lockheed-p-38-lightning": {
@@ -396,7 +396,7 @@
   "name": "Lockheed P-80 Shooting Star",
   "kind": "jet fighter",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q751759",
   "source": "https://en.wikipedia.org/wiki/Lockheed_P-80_Shooting_Star",
   "aka": [
    "XP-80",
@@ -440,7 +440,7 @@
   "name": "Messerschmitt Bf 108 Taifun",
   "kind": "liaison and touring aircraft",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q39942",
   "source": "https://en.wikipedia.org/wiki/Messerschmitt_Bf_108_Taifun",
   "aka": [
    "Bf 108"
@@ -549,7 +549,7 @@
   "name": "Pacific Clipper",
   "kind": "Pan American Boeing 314 flying boat, first commercial round the world flight",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q7122350",
   "source": "https://en.wikipedia.org/wiki/Pacific_Clipper"
  },
  "aircraft-republic-p-47-thunderbolt": {
@@ -594,14 +594,14 @@
   "name": "Short Sunderland",
   "kind": "flying boat patrol bomber",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q617547",
   "source": "https://en.wikipedia.org/wiki/Short_Sunderland"
  },
  "aircraft-sikorsky-r-4": {
   "name": "Sikorsky R-4",
   "kind": "helicopter",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q564179",
   "source": "https://en.wikipedia.org/wiki/Sikorsky_R-4",
   "aka": [
    "HNS-1 Hoverfly"
