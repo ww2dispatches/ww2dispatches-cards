@@ -1051,6 +1051,13 @@
    "4th Panzer Army"
   ]
  },
+ "unit-4th-ukrainian-front": {
+  "name": "4th Ukrainian Front",
+  "kind": "Red Army front",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/4th_Ukrainian_Front"
+ },
  "unit-501st-heavy-panzer-battalion": {
   "name": "501st Heavy Panzer Battalion",
   "kind": "German Tiger tank battalion",
@@ -3158,6 +3165,13 @@
   "aka": [
    "Rote Kapelle"
   ]
+ },
+ "unit-red-sea-flotilla": {
+  "name": "Red Sea Flotilla",
+  "kind": "Italian naval force based at Massawa",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Red_Sea_Flotilla"
  },
  "unit-reich-ministry-of-public-enlightenment-and-propaganda": {
   "name": "Reich Ministry of Public Enlightenment and Propaganda",

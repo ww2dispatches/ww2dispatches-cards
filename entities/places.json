@@ -1444,6 +1444,15 @@
   "lat": 52.4167,
   "lon": -1.5167
  },
+ "place-coventry-and-warwickshire-hospital": {
+  "name": "Coventry and Warwickshire Hospital",
+  "kind": "hospital in Coventry",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Coventry_and_Warwickshire_Hospital",
+  "lat": null,
+  "lon": null
+ },
  "place-coventry-cathedral": {
   "name": "Coventry Cathedral",
   "kind": "cathedral",
@@ -1617,6 +1626,15 @@
   "source": "https://en.wikipedia.org/wiki/Dili",
   "lat": -8.5536,
   "lon": 125.5783
+ },
+ "place-dimapur": {
+  "name": "Dimapur",
+  "kind": "town and supply base in Nagaland, India",
+  "nation": "India",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Dimapur",
+  "lat": null,
+  "lon": null
  },
  "place-docelles": {
   "name": "Docelles",
@@ -2294,6 +2312,15 @@
   "source": "https://en.wikipedia.org/wiki/Hakenfelde",
   "lat": 52.5778,
   "lon": 13.1808
+ },
+ "place-halberstadt": {
+  "name": "Halberstadt",
+  "kind": "town in Saxony-Anhalt, Germany",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Halberstadt",
+  "lat": null,
+  "lon": null
  },
  "place-halfaya-pass": {
   "name": "Halfaya Pass",
@@ -3955,6 +3982,15 @@
   "aka": [
    "MGH"
   ]
+ },
+ "place-massawa": {
+  "name": "Massawa",
+  "kind": "Red Sea port in Eritrea",
+  "nation": "Eritrea",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Massawa",
+  "lat": null,
+  "lon": null
  },
  "place-maungdaw": {
   "name": "Maungdaw",
@@ -6594,6 +6630,15 @@
   "lat": null,
   "lon": null,
   "source": "https://en.wikipedia.org/wiki/Tinker_Air_Force_Base"
+ },
+ "place-tirana": {
+  "name": "Tirana",
+  "kind": "capital of Albania",
+  "nation": "Albania",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tirana",
+  "lat": null,
+  "lon": null
  },
  "place-titan-barrikady": {
   "name": "Barrikady gun factory",

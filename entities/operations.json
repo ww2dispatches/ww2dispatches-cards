@@ -219,6 +219,16 @@
   "wikidata": "Q122292274",
   "source": "https://en.wikipedia.org/wiki/1946_United_States_steel_strike"
  },
+ "op-1946-yan-an-united-states-air-force-c-47-crash": {
+  "name": "1946 Yan'an United States Air Force C-47 crash",
+  "kind": "air crash, the April 8 Incident",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1946_Yan%27an_United_States_Air_Force_C-47_crash",
+  "aka": [
+   "April 8 Incident"
+  ]
+ },
  "op-1947-royal-new-zealand-navy-mutinies": {
   "name": "1947 Royal New Zealand Navy mutinies",
   "kind": "pay mutinies in the RNZN",
@@ -2419,6 +2429,13 @@
   "wikidata": "Q3054185",
   "source": "https://en.wikipedia.org/wiki/Cowra_breakout"
  },
+ "op-crimean-offensive": {
+  "name": "Crimean offensive",
+  "kind": "Soviet offensive, April to May 1944",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Crimean_offensive"
+ },
  "op-cripps-mission": {
   "name": "Cripps Mission",
   "kind": "British mission to India, March and April 1942",
@@ -3934,6 +3951,13 @@
   "wikidata": "Q696251",
   "source": "https://en.wikipedia.org/wiki/Occupation_of_Japan"
  },
+ "op-occupation-statute": {
+  "name": "Occupation statute",
+  "kind": "Allied statute for West Germany, 1949",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Occupation_statute"
+ },
  "op-ohi-day": {
   "name": "Ochi Day",
   "kind": "Greek national day",
@@ -4551,6 +4575,13 @@
   "nation": "Germany",
   "wikidata": "Q150939",
   "source": "https://en.wikipedia.org/wiki/Operation_Weser%C3%BCbung"
+ },
+ "op-operation-wilfred": {
+  "name": "Operation Wilfred",
+  "kind": "British minelaying in Norwegian waters, April 1940",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Wilfred"
  },
  "op-operation-winter-storm": {
   "name": "Operation Winter Storm",
@@ -5371,6 +5402,13 @@
   "wikidata": "Q7591786",
   "source": "https://en.wikipedia.org/wiki/St._Stephen%27s_College_massacre",
   "note": "Atrocity: victims' side only."
+ },
+ "op-stabilization-act-of-1942": {
+  "name": "Stabilization Act of 1942",
+  "kind": "US wartime wage and price control law",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Stabilization_Act_of_1942"
  },
  "op-stalag-luft-iii-murders": {
   "name": "Stalag Luft III murders",

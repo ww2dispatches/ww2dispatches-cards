@@ -1594,6 +1594,13 @@
   "wikidata": "Q1564757",
   "source": "https://en.wikipedia.org/wiki/HMS_Gloucester_(62)"
  },
+ "ship-hms-glowworm-h92": {
+  "name": "HMS Glowworm (H92)",
+  "kind": "Royal Navy G class destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Glowworm_(H92)"
+ },
  "ship-hms-graph": {
   "name": "U-570",
   "kind": "German submarine, captured",
@@ -2268,6 +2275,13 @@
   "nation": "Netherlands",
   "wikidata": "Q2018998",
   "source": "https://en.wikipedia.org/wiki/HNLMS_Piet_Hein_(1927)"
+ },
+ "ship-hnoms-pol-iii": {
+  "name": "HNoMS Pol III",
+  "kind": "Norwegian armed whaler, neutrality patrol vessel",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HNoMS_Pol_III"
  },
  "ship-htms-thonburi": {
   "name": "HTMS Thonburi",
@@ -3185,6 +3199,16 @@
   "wikidata": "Q1745011",
   "source": "https://en.wikipedia.org/wiki/ORP_Burza"
  },
+ "ship-orp-orzel-1938": {
+  "name": "ORP Orzel (1938)",
+  "kind": "Polish Navy submarine",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/ORP_Orze%C5%82_(1938)",
+  "aka": [
+   "Orzel"
+  ]
+ },
  "ship-oryoku-maru": {
   "name": "Ōryoku Maru",
   "kind": "Japanese passenger cargo ship used as a POW transport",
@@ -3622,6 +3646,13 @@
   "nation": "Greece",
   "wikidata": "Q1232139",
   "source": "https://en.wikipedia.org/wiki/SS_Peleus"
+ },
+ "ship-ss-rio-de-janeiro": {
+  "name": "SS Rio de Janeiro",
+  "kind": "German cargo and passenger ship used as a troop transport",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Rio_de_Janeiro"
  },
  "ship-ss-rooseboom": {
   "name": "SS Rooseboom",
