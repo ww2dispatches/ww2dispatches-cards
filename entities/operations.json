@@ -1074,6 +1074,13 @@
   "source": "https://en.wikipedia.org/wiki/Battle_of_Manila_(1945)",
   "wikidata": "Q696931"
  },
+ "op-battle-of-manners-street": {
+  "name": "Battle of Manners Street",
+  "kind": "1943 riot in Wellington",
+  "nation": "New Zealand",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Manners_Street"
+ },
  "op-battle-of-medenine": {
   "name": "Battle of Medenine",
   "kind": "battle in Tunisia, 6 March 1943",
@@ -1810,6 +1817,13 @@
   "nation": "Britain",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Bombing_of_L%C3%BCbeck_in_World_War_II"
+ },
+ "op-bombing-of-mandalay": {
+  "name": "Bombing of Mandalay",
+  "kind": "Japanese air raids on Mandalay, 1942",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Mandalay"
  },
  "op-bombing-of-mannheim-in-world-war-ii": {
   "name": "Bombing of Mannheim in World War II",
@@ -2571,6 +2585,16 @@
    "Battle of Singapore"
   ]
  },
+ "op-fall-weiss": {
+  "name": "Fall Weiss",
+  "kind": "German plan for the invasion of Poland",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fall_Weiss",
+  "aka": [
+   "Case White"
+  ]
+ },
  "op-farrer-park-address": {
   "name": "Farrer Park address",
   "kind": "assembly of surrendered Indian troops, Singapore, 17 Feb 1942",
@@ -2939,6 +2963,13 @@
   "wikidata": "Q702729",
   "source": "https://en.wikipedia.org/wiki/Invasion_of_Lingayen_Gulf",
   "note": "Not the Japanese landing of December 1941 (op-japanese-invasion-of-lingayen-gulf)."
+ },
+ "op-invasion-of-poland": {
+  "name": "Invasion of Poland",
+  "kind": "German and Soviet invasion of Poland, 1939",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Invasion_of_Poland"
  },
  "op-invasion-of-salamaua-lae": {
   "name": "Invasion of Salamaua and Lae",
@@ -4277,6 +4308,13 @@
   "aka": [
    "Allied landings in North Africa"
   ]
+ },
+ "op-operation-tungsten": {
+  "name": "Operation Tungsten",
+  "kind": "Fleet Air Arm carrier strike on Tirpitz",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Tungsten"
  },
  "op-operation-u-go": {
   "name": "Operation U-Go",

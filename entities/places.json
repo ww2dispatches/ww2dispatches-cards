@@ -2364,6 +2364,15 @@
   "lat": -9.4281,
   "lon": 160.0547
  },
+ "place-hengelo": {
+  "name": "Hengelo",
+  "kind": "Dutch railway and industrial town in Twente",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hengelo",
+  "lat": null,
+  "lon": null
+ },
  "place-herzogenbusch-concentration-camp": {
   "name": "Herzogenbusch concentration camp",
   "kind": "Nazi camp at Vught",
@@ -3643,6 +3652,15 @@
   "lat": 43.8833,
   "lon": 125.3167
  },
+ "place-mandalay": {
+  "name": "Mandalay",
+  "kind": "city in Burma, former royal capital",
+  "nation": "Burma",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mandalay",
+  "lat": null,
+  "lon": null
+ },
  "place-mandalay-palace": {
   "name": "Mandalay Palace",
   "kind": "walled royal citadel in Mandalay",
@@ -4131,6 +4149,15 @@
   "wikidata": "Q83497",
   "lat": 43.8789,
   "lon": -103.4592
+ },
+ "place-mount-samat": {
+  "name": "Mount Samat",
+  "kind": "mountain on the Bataan Peninsula",
+  "nation": "Philippines",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mount_Samat",
+  "lat": null,
+  "lon": null
  },
  "place-mount-suribachi": {
   "name": "Mount Suribachi",
@@ -6823,6 +6850,15 @@
   "aka": [
    "Weihsien"
   ]
+ },
+ "place-wellington": {
+  "name": "Wellington",
+  "kind": "capital city of New Zealand",
+  "nation": "New Zealand",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Wellington",
+  "lat": null,
+  "lon": null
  },
  "place-wendover-air-force-base": {
   "name": "Wendover Air Force Base",
