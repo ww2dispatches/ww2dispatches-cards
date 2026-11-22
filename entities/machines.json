@@ -73,6 +73,13 @@
   "source": "https://en.wikipedia.org/wiki/Allison_V-1710",
   "wikidata": "Q167745"
  },
+ "machine-americium": {
+  "name": "Americium",
+  "kind": "chemical element 95",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Americium"
+ },
  "machine-anderson-shelter": {
   "name": "Anderson shelter",
   "kind": "prefabricated steel garden air raid shelter",
@@ -188,6 +195,13 @@
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/Crusader_tank",
   "wikidata": "Q696083"
+ },
+ "machine-curium": {
+  "name": "Curium",
+  "kind": "chemical element 96",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Curium"
  },
  "machine-cyclotron": {
   "name": "Cyclotron",
@@ -669,6 +683,16 @@
    "Teflon"
   ]
  },
+ "machine-power-jets-wu": {
+  "name": "Power Jets WU",
+  "kind": "experimental jet engine",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Power_Jets_WU",
+  "aka": [
+   "Whittle Unit"
+  ]
+ },
  "machine-pratt-whitney-r-4360-wasp-major": {
   "name": "Pratt and Whitney R-4360",
   "kind": "radial aircraft engine",
@@ -750,6 +774,13 @@
   "nation": "US",
   "wikidata": "Q27645375",
   "source": "https://en.wikipedia.org/wiki/Sliced_bread"
+ },
+ "machine-social-justice-newspaper": {
+  "name": "Social Justice",
+  "kind": "weekly periodical founded by Charles Coughlin",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Social_Justice_(newspaper)"
  },
  "machine-squid-weapon": {
   "name": "Squid (weapon)",

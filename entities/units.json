@@ -58,6 +58,13 @@
   "source": "https://en.wikipedia.org/wiki/10th_Infantry_Regiment_(United_States)",
   "wikidata": "Q4547071"
  },
+ "unit-10th-mountain-division": {
+  "name": "10th Mountain Division",
+  "kind": "US Army mountain infantry division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/10th_Mountain_Division"
+ },
  "unit-10th-panzer-division-wehrmacht": {
   "name": "10th Panzer Division",
   "kind": "German armoured division",
@@ -103,6 +110,13 @@
   "nation": "US",
   "wikidata": "Q4547811",
   "source": "https://en.wikipedia.org/wiki/11th_Armored_Division_(United_States)"
+ },
+ "unit-11th-armoured-division-united-kingdom": {
+  "name": "11th Armoured Division (United Kingdom)",
+  "kind": "British armoured division",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/11th_Armoured_Division_(United_Kingdom)"
  },
  "unit-11th-infantry-division-india": {
   "name": "11th Indian Infantry Division",
@@ -407,6 +421,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q277985",
   "source": "https://en.wikipedia.org/wiki/1st_Ukrainian_Front"
+ },
+ "unit-2-17th-battalion-australia": {
+  "name": "2/17th Battalion",
+  "kind": "Australian Army infantry battalion",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/2/17th_Battalion_(Australia)"
  },
  "unit-2-29th-battalion-australia": {
   "name": "2/29th Battalion (Australia)",
@@ -1006,6 +1027,13 @@
   "wikidata": "Q4638763",
   "source": "https://en.wikipedia.org/wiki/497th_Air_Expeditionary_Group"
  },
+ "unit-49th-west-riding-infantry-division": {
+  "name": "49th (West Riding) Infantry Division",
+  "kind": "British infantry division",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/49th_(West_Riding)_Infantry_Division"
+ },
  "unit-4th-7th-royal-dragoon-guards": {
   "name": "4th/7th Royal Dragoon Guards",
   "kind": "British armoured regiment",
@@ -1194,6 +1222,13 @@
    "Black Panther Division"
   ]
  },
+ "unit-6th-armored-division-united-states": {
+  "name": "6th Armored Division",
+  "kind": "US Army armored division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/6th_Armored_Division_(United_States)"
+ },
  "unit-6th-army-wehrmacht": {
   "name": "Sixth Army",
   "kind": "German field army",
@@ -1210,6 +1245,13 @@
   "nation": "Australia",
   "wikidata": "Q1879274",
   "source": "https://en.wikipedia.org/wiki/6th_Division_(Australia)"
+ },
+ "unit-6th-marine-division": {
+  "name": "6th Marine Division",
+  "kind": "US Marine Corps division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/6th_Marine_Division"
  },
  "unit-6th-marine-regiment": {
   "name": "6th Marines",
@@ -1359,6 +1401,13 @@
   "source": "https://en.wikipedia.org/wiki/95th_Training_Division",
   "wikidata": "Q4032758",
   "note": "Wikipedia redirects 95th Infantry Division (United States) here."
+ },
+ "unit-96th-infantry-division-united-states": {
+  "name": "96th Infantry Division",
+  "kind": "U.S. Army infantry division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/96th_Infantry_Division_(United_States)"
  },
  "unit-9th-armoured-brigade-united-kingdom": {
   "name": "9th Armoured Brigade",
@@ -1654,6 +1703,13 @@
   "aka": [
    "Bell Telephone Laboratories"
   ]
+ },
+ "unit-berlin-philharmonic": {
+  "name": "Berlin Philharmonic",
+  "kind": "orchestra",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Berlin_Philharmonic"
  },
  "unit-black-sea-fleet": {
   "name": "Black Sea Fleet",
@@ -2035,6 +2091,13 @@
    "Devil's Brigade",
    "First Special Service Force"
   ]
+ },
+ "unit-fleet-air-arm": {
+  "name": "Fleet Air Arm",
+  "kind": "Royal Navy air branch",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fleet_Air_Arm"
  },
  "unit-flying-tigers": {
   "name": "Flying Tigers",
@@ -2624,6 +2687,13 @@
    "Ministry of Health, Labour and Welfare"
   ],
   "note": "Founded 11 January 1938; reorganized as the Ministry of Health, Labour and Welfare in 2001."
+ },
+ "unit-ministry-of-information-united-kingdom": {
+  "name": "Ministry of Information",
+  "kind": "British wartime government ministry",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ministry_of_Information_(United_Kingdom)"
  },
  "unit-ministry-of-the-navy-japan": {
   "name": "Ministry of the Navy (Japan)",
@@ -3222,6 +3292,17 @@
   "source": "https://en.wikipedia.org/wiki/Rifle_Brigade_(The_Prince_Consort's_Own)",
   "wikidata": "Q276994"
  },
+ "unit-riken": {
+  "name": "Riken",
+  "kind": "Japanese scientific research institute",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Riken",
+  "aka": [
+   "RIKEN",
+   "Institute of Physical and Chemical Research"
+  ]
+ },
  "unit-roberts-commissions": {
   "name": "Roberts Commission",
   "kind": "presidential commission on the Pearl Harbor attack",
@@ -3271,6 +3352,13 @@
   "aka": [
    "Malay Regiment"
   ]
+ },
+ "unit-royal-marines": {
+  "name": "Royal Marines",
+  "kind": "British naval infantry",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Royal_Marines"
  },
  "unit-s-1-executive-committee": {
   "name": "S-1 Executive Committee",
@@ -3429,6 +3517,17 @@
   "aka": [
    "GKO",
    "State Defence Committee"
+  ]
+ },
+ "unit-station-hypo": {
+  "name": "Station HYPO",
+  "kind": "US Navy signals intelligence unit at Pearl Harbor",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Station_HYPO",
+  "aka": [
+   "FRUPAC",
+   "Fleet Radio Unit Pacific"
   ]
  },
  "unit-strategic-air-command": {
@@ -3738,6 +3837,17 @@
   "nation": "US",
   "wikidata": "Q494920",
   "source": "https://en.wikipedia.org/wiki/United_States_Pacific_Fleet"
+ },
+ "unit-ustase": {
+  "name": "Ustase",
+  "kind": "Croatian fascist movement",
+  "nation": "Croatia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Usta%C5%A1e",
+  "aka": [
+   "Ustaše",
+   "Ustasha"
+  ]
  },
  "unit-v-amphibious-corps": {
   "name": "V Amphibious Corps",
@@ -4082,6 +4192,13 @@
   "nation": "United Kingdom",
   "source": "https://en.wikipedia.org/wiki/Yeomen_of_the_Guard",
   "wikidata": "Q431122"
+ },
+ "unit-z-special-unit": {
+  "name": "Z Special Unit",
+  "kind": "Allied special forces unit",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Z_Special_Unit"
  },
  "unit-zegota": {
   "name": "Żegota",

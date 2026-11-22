@@ -91,6 +91,13 @@
    "XS-1"
   ]
  },
+ "aircraft-blackburn-skua": {
+  "name": "Blackburn Skua",
+  "kind": "Fleet Air Arm dive bomber and fighter",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Blackburn_Skua"
+ },
  "aircraft-boeing-247": {
   "name": "Boeing 247",
   "kind": "twin engine all metal airliner",
@@ -417,6 +424,13 @@
   "wikidata": "Q1499781",
   "source": "https://en.wikipedia.org/wiki/Handley_Page_Heyford"
  },
+ "aircraft-hawker-hurricane": {
+  "name": "Hawker Hurricane",
+  "kind": "British single seat fighter",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hawker_Hurricane"
+ },
  "aircraft-heinkel-he-100": {
   "name": "Heinkel He 100",
   "kind": "German prototype fighter, 1939 world speed record holder",
@@ -515,6 +529,16 @@
   "wikidata": "Q155661",
   "aka": [
    "Ju 88"
+  ]
+ },
+ "aircraft-kamikaze-1937-aircraft": {
+  "name": "Kamikaze (J-BAAI)",
+  "kind": "single named record flight airplane, Ki-15 prototype",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kamikaze_(1937_aircraft)",
+  "aka": [
+   "Kamikaze-go"
   ]
  },
  "aircraft-kawanishi-h8k": {
@@ -712,6 +736,16 @@
    "Betty"
   ]
  },
+ "aircraft-mitsubishi-ki-15": {
+  "name": "Mitsubishi Ki-15",
+  "kind": "Japanese reconnaissance aircraft",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mitsubishi_Ki-15",
+  "aka": [
+   "Karigane"
+  ]
+ },
  "aircraft-nakajima-b6n-tenzan": {
   "name": "Nakajima B6N Jill",
   "kind": "torpedo bomber",
@@ -788,6 +822,13 @@
   "nation": "US",
   "wikidata": "Q7122350",
   "source": "https://en.wikipedia.org/wiki/Pacific_Clipper"
+ },
+ "aircraft-piasecki-pv-2": {
+  "name": "Piasecki PV-2",
+  "kind": "experimental single rotor helicopter",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Piasecki_PV-2"
  },
  "aircraft-republic-p-47-thunderbolt": {
   "name": "Republic P-47 Thunderbolt",

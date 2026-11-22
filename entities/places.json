@@ -152,6 +152,15 @@
   "lat": 12.5,
   "lon": 92.75
  },
+ "place-antlers-oklahoma": {
+  "name": "Antlers, Oklahoma",
+  "kind": "town",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Antlers,_Oklahoma",
+  "lat": null,
+  "lon": null
+ },
  "place-antwerp": {
   "name": "Antwerp",
   "kind": "port city",
@@ -520,6 +529,15 @@
   "lat": 47.6314,
   "lon": 13.0042
  },
+ "place-bergen": {
+  "name": "Bergen",
+  "kind": "port city",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bergen",
+  "lat": null,
+  "lon": null
+ },
  "place-bergen-belsen-concentration-camp": {
   "name": "Bergen-Belsen concentration camp",
   "kind": "Nazi concentration camp",
@@ -555,6 +573,15 @@
   "source": "https://en.wikipedia.org/wiki/Berlin_Sportpalast",
   "lat": 52.4947,
   "lon": 13.3592
+ },
+ "place-berlin-state-opera": {
+  "name": "Berlin State Opera",
+  "kind": "opera house on Unter den Linden",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Berlin_State_Opera",
+  "lat": null,
+  "lon": null
  },
  "place-berlin-tegel-airport": {
   "name": "Berlin Tegel Airport",
@@ -1122,6 +1149,15 @@
   "source": "https://en.wikipedia.org/wiki/Cassino",
   "lat": 41.4917,
   "lon": 13.8333
+ },
+ "place-castel-d-aiano": {
+  "name": "Castel d'Aiano",
+  "kind": "village in the Apennines",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Castel_d%27Aiano",
+  "lat": null,
+  "lon": null
  },
  "place-catford": {
   "name": "Catford",
@@ -1903,6 +1939,15 @@
   "lat": null,
   "lon": null
  },
+ "place-flossenburg-concentration-camp": {
+  "name": "Flossenburg concentration camp",
+  "kind": "Nazi concentration camp in Bavaria",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Flossenb%C3%BCrg_concentration_camp",
+  "lat": null,
+  "lon": null
+ },
  "place-ford-river-rouge-complex": {
   "name": "Ford River Rouge complex",
   "kind": "Ford factory complex, Dearborn, Michigan",
@@ -2024,6 +2069,15 @@
   "source": "https://en.wikipedia.org/wiki/F%C3%BChrerbunker",
   "lat": 52.5125,
   "lon": 13.3815
+ },
+ "place-gardelegen": {
+  "name": "Gardelegen",
+  "kind": "town in Saxony-Anhalt",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Gardelegen",
+  "lat": null,
+  "lon": null
  },
  "place-garigliano": {
   "name": "Garigliano",
@@ -2246,6 +2300,15 @@
   "source": "https://en.wikipedia.org/wiki/Griffith_Stadium",
   "lat": 38.9175,
   "lon": -77.0203
+ },
+ "place-grosvenor-square": {
+  "name": "Grosvenor Square",
+  "kind": "garden square, London",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Grosvenor_Square",
+  "lat": null,
+  "lon": null
  },
  "place-guadalcanal": {
   "name": "Guadalcanal",
@@ -2692,6 +2755,15 @@
   "lat": 35.3728,
   "lon": 140.3688
  },
+ "place-imber": {
+  "name": "Imber",
+  "kind": "village and army training ground, Salisbury Plain",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Imber",
+  "lat": null,
+  "lon": null
+ },
  "place-independence-hall": {
   "name": "Independence Hall",
   "kind": "building",
@@ -2700,6 +2772,18 @@
   "wikidata": "Q390028",
   "lat": 39.9489,
   "lon": -75.15
+ },
+ "place-independent-state-of-croatia": {
+  "name": "Independent State of Croatia",
+  "kind": "Axis puppet state",
+  "nation": "Croatia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Independent_State_of_Croatia",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "NDH"
+  ]
  },
  "place-institut-jeanne-d-arc": {
   "lat": null,
@@ -2780,6 +2864,15 @@
   "lat": null,
   "lon": null
  },
+ "place-jacksonville-beach-florida": {
+  "lat": null,
+  "lon": null,
+  "name": "Jacksonville Beach",
+  "kind": "beach city, Florida",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Jacksonville_Beach,_Florida"
+ },
  "place-jajce": {
   "name": "Jajce",
   "kind": "town",
@@ -2788,6 +2881,18 @@
   "source": "https://en.wikipedia.org/wiki/Jajce",
   "lat": 44.3403,
   "lon": 17.2572
+ },
+ "place-jefferson-memorial": {
+  "name": "Jefferson Memorial",
+  "kind": "presidential memorial, Washington, D.C.",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Jefferson_Memorial",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Thomas Jefferson Memorial"
+  ]
  },
  "place-jinan": {
   "name": "Jinan",
@@ -3049,6 +3154,15 @@
   "aka": [
    "Kifisia"
   ]
+ },
+ "place-kingdom-of-iceland": {
+  "name": "Kingdom of Iceland",
+  "kind": "kingdom in personal union with Denmark",
+  "nation": "Iceland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kingdom_of_Iceland",
+  "lat": null,
+  "lon": null
  },
  "place-klaipeda": {
   "name": "Klaipeda",
@@ -3350,6 +3464,15 @@
   "lat": 48.1953,
   "lon": 6.8539
  },
+ "place-la-maddalena": {
+  "name": "La Maddalena",
+  "kind": "island town and naval base, Sardinia",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/La_Maddalena",
+  "lat": null,
+  "lon": null
+ },
  "place-la-pallice": {
   "name": "La Pallice",
   "kind": "port and U-boat base at La Rochelle",
@@ -3516,6 +3639,15 @@
   "nation": "Germany",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Lippstadt",
+  "lat": null,
+  "lon": null
+ },
+ "place-little-white-house": {
+  "name": "Little White House",
+  "kind": "Roosevelt's cottage at Warm Springs",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Little_White_House",
   "lat": null,
   "lon": null
  },
@@ -3905,6 +4037,15 @@
    "Marienbad"
   ]
  },
+ "place-mariveles": {
+  "name": "Mariveles",
+  "kind": "town and bay at the tip of Bataan",
+  "nation": "Philippines",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mariveles",
+  "lat": null,
+  "lon": null
+ },
  "place-mark-hellinger-theatre": {
   "name": "Hollywood Theatre",
   "kind": "theater",
@@ -4049,6 +4190,15 @@
   "lat": 32.1667,
   "lon": 22.2833
  },
+ "place-meiji-shrine": {
+  "name": "Meiji Shrine",
+  "kind": "Shinto shrine, Tokyo",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Meiji_Shrine",
+  "lat": null,
+  "lon": null
+ },
  "place-memoriale-della-shoah": {
   "name": "Memoriale della Shoah",
   "kind": "Holocaust memorial at Platform 21, Milano Centrale",
@@ -4156,6 +4306,19 @@
   "lon": -73.595,
   "aka": [
    "Mitchel Air Force Base"
+  ]
+ },
+ "place-mittelbau-dora-concentration-camp": {
+  "lat": null,
+  "lon": null,
+  "name": "Mittelbau-Dora",
+  "kind": "Nazi concentration camp near Nordhausen",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mittelbau-Dora_concentration_camp",
+  "aka": [
+   "Dora-Mittelbau",
+   "Dora-Nordhausen"
   ]
  },
  "place-mius": {
@@ -4318,6 +4481,15 @@
    "Moselle"
   ]
  },
+ "place-motobu-peninsula": {
+  "name": "Motobu Peninsula",
+  "kind": "peninsula on Okinawa",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Motobu_Peninsula",
+  "lat": null,
+  "lon": null
+ },
  "place-mount-rushmore": {
   "name": "Mount Rushmore",
   "kind": "memorial sculpture",
@@ -4374,6 +4546,15 @@
   "source": "https://en.wikipedia.org/wiki/Mozhaysk",
   "lat": 55.5,
   "lon": 36.0333
+ },
+ "place-mumbai": {
+  "name": "Bombay",
+  "kind": "city and port",
+  "nation": "India",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mumbai",
+  "lat": null,
+  "lon": null
  },
  "place-munich": {
   "name": "Munich",
@@ -4629,6 +4810,15 @@
   "lat": 43.3192,
   "lon": 21.8961
  },
+ "place-nordhausen": {
+  "lat": null,
+  "lon": null,
+  "name": "Nordhausen",
+  "kind": "town in Thuringia",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Nordhausen"
+ },
  "place-north-american-aerospace-museum": {
   "name": "Evergreen Aviation and Space Museum",
   "kind": "aviation museum",
@@ -4706,6 +4896,18 @@
   "source": "https://en.wikipedia.org/wiki/Oder",
   "lat": 49.6133,
   "lon": 17.5208
+ },
+ "place-odesa": {
+  "name": "Odessa",
+  "kind": "Black Sea port city",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Odesa",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Odesa"
+  ]
  },
  "place-offenbach-am-main": {
   "name": "Offenbach am Main",
@@ -4818,6 +5020,15 @@
   "lat": 11.0106,
   "lon": 124.6075
  },
+ "place-oro-bay": {
+  "lat": null,
+  "lon": null,
+  "name": "Oro Bay",
+  "kind": "bay and Allied base, Papua New Guinea",
+  "nation": "Papua New Guinea",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Oro_Bay"
+ },
  "place-orpington": {
   "name": "Orpington",
   "kind": "Kent town hit by the last V-2 of 27 March 1945",
@@ -4844,6 +5055,15 @@
   "source": "https://en.wikipedia.org/wiki/Osaka",
   "lat": 34.6938,
   "lon": 135.5021
+ },
+ "place-oscarsborg-fortress": {
+  "name": "Oscarsborg Fortress",
+  "kind": "coastal fortress in the Oslofjord",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Oscarsborg_Fortress",
+  "lat": null,
+  "lon": null
  },
  "place-oschersleben": {
   "name": "Oschersleben",
@@ -5034,6 +5254,15 @@
   "lat": 5.4025,
   "lon": 100.365
  },
+ "place-peterhead": {
+  "name": "Peterhead",
+  "kind": "port town",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Peterhead",
+  "lat": null,
+  "lon": null
+ },
  "place-petrishchevo": {
   "name": "Petrishchevo",
   "kind": "village",
@@ -5222,6 +5451,15 @@
   "source": "https://en.wikipedia.org/wiki/Potosi_Mountain_(Nevada)",
   "lat": 35.9656,
   "lon": -115.5017
+ },
+ "place-potsdam": {
+  "name": "Potsdam",
+  "kind": "city",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Potsdam",
+  "lat": null,
+  "lon": null
  },
  "place-prague": {
   "name": "Prague",
@@ -6013,6 +6251,15 @@
   "lat": 56.1667,
   "lon": 9.55
  },
+ "place-simferopol": {
+  "name": "Simferopol",
+  "kind": "city, capital of the Crimea",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Simferopol",
+  "lat": null,
+  "lon": null
+ },
  "place-singapore": {
   "name": "Singapore",
   "kind": "island, naval base",
@@ -6689,6 +6936,15 @@
   "lat": 48.8738,
   "lon": 2.2951
  },
+ "place-topaz-war-relocation-center": {
+  "lat": null,
+  "lon": null,
+  "name": "Topaz War Relocation Center",
+  "kind": "Japanese American incarceration camp, Utah",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Topaz_War_Relocation_Center"
+ },
  "place-torokina-airfield": {
   "name": "Torokina fighter strip",
   "kind": "airfield",
@@ -6697,6 +6953,15 @@
   "wikidata": "Q16985684",
   "lat": -6.2472,
   "lon": 155.0488
+ },
+ "place-toshima": {
+  "name": "Toshima",
+  "kind": "ward of Tokyo",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Toshima",
+  "lat": null,
+  "lon": null
  },
  "place-toulon": {
   "name": "Toulon",
@@ -6823,6 +7088,15 @@
   "source": "https://en.wikipedia.org/wiki/Uman",
   "lat": 48.75,
   "lon": 30.2167
+ },
+ "place-university-of-bristol": {
+  "name": "University of Bristol",
+  "kind": "university",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/University_of_Bristol",
+  "lat": null,
+  "lon": null
  },
  "place-university-of-tehran": {
   "name": "University of Tehran",
@@ -7398,6 +7672,15 @@
   "nation": "Japan",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Yomitan",
+  "lat": null,
+  "lon": null
+ },
+ "place-zagreb": {
+  "name": "Zagreb",
+  "kind": "city",
+  "nation": "Croatia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Zagreb",
   "lat": null,
   "lon": null
  },

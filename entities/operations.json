@@ -47,6 +47,13 @@
   "wikidata": "Q9600",
   "source": "https://en.wikipedia.org/wiki/1936_Winter_Olympics"
  },
+ "op-1938-austrian-anschluss-referendum": {
+  "name": "1938 Austrian Anschluss referendum",
+  "kind": "plebiscite",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1938_Austrian_Anschluss_referendum"
+ },
  "op-1939-conclave": {
   "name": "1939 conclave",
   "kind": "papal election",
@@ -171,6 +178,13 @@
   "wikidata": "Q111943219",
   "source": "https://en.wikipedia.org/wiki/1943_World_Professional_Basketball_Tournament"
  },
+ "op-1944-bombay-explosion": {
+  "name": "1944 Bombay explosion",
+  "kind": "ship fire and explosion in port",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1944_Bombay_explosion"
+ },
  "op-1944-tonankai-earthquake": {
   "name": "1944 Tōnankai earthquake",
   "kind": "earthquake and tsunami, 7 December 1944",
@@ -204,6 +218,13 @@
   "aka": [
    "Cabinet Mission"
   ]
+ },
+ "op-1946-japanese-general-election": {
+  "name": "1946 Japanese general election",
+  "kind": "election",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1946_Japanese_general_election"
  },
  "op-1946-united-nations-secretary-general-selection": {
   "name": "1946 United Nations Secretary-General selection",
@@ -688,6 +709,13 @@
   "wikidata": "Q4866604",
   "source": "https://en.wikipedia.org/wiki/Baseball_color_line"
  },
+ "op-bataan-death-march": {
+  "name": "Bataan Death March",
+  "kind": "forced march of prisoners of war",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bataan_Death_March"
+ },
  "op-battle-of-aachen": {
   "name": "Battle of Aachen",
   "kind": "battle",
@@ -866,6 +894,13 @@
   "nation": "US",
   "wikidata": "Q702568",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Corregidor_(1945)"
+ },
+ "op-battle-of-dombas": {
+  "name": "Battle of Dombås",
+  "kind": "airborne landing and battle",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Domb%C3%A5s"
  },
  "op-battle-of-empress-augusta-bay": {
   "name": "Battle of Empress Augusta Bay",
@@ -1166,6 +1201,13 @@
   "nation": "worldwide",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Metz",
   "wikidata": "Q1723307"
+ },
+ "op-battle-of-midtskogen": {
+  "name": "Battle of Midtskogen",
+  "kind": "skirmish, 1940",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Midtskogen"
  },
  "op-battle-of-midway": {
   "name": "Battle of Midway",
@@ -1706,6 +1748,13 @@
   "source": "https://en.wikipedia.org/wiki/Battle_off_Samar",
   "wikidata": "Q4348033"
  },
+ "op-battles-of-narvik": {
+  "name": "Battles of Narvik",
+  "kind": "naval and land battles, 1940",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battles_of_Narvik"
+ },
  "op-battles-of-rzhev": {
   "name": "Battles of Rzhev",
   "kind": "Eastern Front battles for the Rzhev salient, 1942 to 1943",
@@ -1747,6 +1796,13 @@
    "Berlin Airlift"
   ]
  },
+ "op-bermuda-conference": {
+  "name": "Bermuda Conference",
+  "kind": "Anglo American refugee conference",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bermuda_Conference"
+ },
  "op-beveridge-report": {
   "name": "Beveridge Report",
   "kind": "government report",
@@ -1773,6 +1829,13 @@
   "aka": [
    "Operation Argument"
   ]
+ },
+ "op-birmingham-blitz": {
+  "name": "Birmingham Blitz",
+  "kind": "German bombing campaign on a city",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Birmingham_Blitz"
  },
  "op-black-friday-1945": {
   "name": "Black Friday (1945)",
@@ -1977,6 +2040,16 @@
   "wikidata": "Q90581546",
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Padua_in_World_War_II"
  },
+ "op-bombing-of-potsdam": {
+  "name": "Bombing of Potsdam",
+  "kind": "RAF night raid",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Potsdam",
+  "aka": [
+   "Night of Potsdam"
+  ]
+ },
  "op-bombing-of-prague": {
   "name": "Bombing of Prague",
   "kind": "air raids",
@@ -2114,6 +2187,16 @@
   "wikidata": "Q7887978",
   "source": "https://en.wikipedia.org/wiki/British_declaration_of_war_on_Japan",
   "note": "Wikipedia's United Kingdom declaration of war on Japan redirects here."
+ },
+ "op-british-occupation-of-the-faroe-islands": {
+  "name": "British occupation of the Faroe Islands",
+  "kind": "occupation, 1940 to 1945",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/British_occupation_of_the_Faroe_Islands",
+  "aka": [
+   "Operation Valentine"
+  ]
  },
  "op-british-summer-time": {
   "name": "British Summer Time",
@@ -2412,6 +2495,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Convoys_HX_229/SC_122"
  },
+ "op-corfu-channel-case": {
+  "name": "Corfu Channel case",
+  "kind": "International Court of Justice case",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Corfu_Channel_case"
+ },
  "op-coventry-blitz": {
   "name": "Coventry Blitz",
   "kind": "German bombing raid",
@@ -2610,6 +2700,13 @@
    "Butler Act"
   ]
  },
+ "op-einsatzgruppen-trial": {
+  "name": "Einsatzgruppen trial",
+  "kind": "Nuremberg Military Tribunal case 9",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Einsatzgruppen_trial"
+ },
  "op-elysee-accords": {
   "name": "Elysee Accords",
   "kind": "Franco Vietnamese agreement",
@@ -2796,6 +2893,13 @@
   "wikidata": "Q5454185",
   "source": "https://en.wikipedia.org/wiki/First_inauguration_of_Franklin_D._Roosevelt"
  },
+ "op-first-inauguration-of-harry-s-truman": {
+  "name": "First inauguration of Harry S. Truman",
+  "kind": "presidential swearing in",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/First_inauguration_of_Harry_S._Truman"
+ },
  "op-first-indochina-war": {
   "name": "First Indochina War",
   "kind": "war between France and the Viet Minh, 1946 to 1954",
@@ -2873,6 +2977,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Freeman_Field_mutiny"
  },
+ "op-gardelegen-massacre": {
+  "name": "Gardelegen massacre",
+  "kind": "massacre of concentration camp prisoners, 13 April 1945",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Gardelegen_massacre"
+ },
  "op-genocide-convention": {
   "name": "Genocide Convention",
   "kind": "international treaty",
@@ -2905,6 +3016,13 @@
   "nation": "Germany",
   "wikidata": "Q18245647",
   "source": "https://en.wikipedia.org/wiki/German_declaration_of_war_on_the_United_States"
+ },
+ "op-german-invasion-of-denmark-1940": {
+  "name": "German invasion of Denmark (1940)",
+  "kind": "invasion",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_invasion_of_Denmark_(1940)"
  },
  "op-german-invasion-of-greece": {
   "name": "German invasion of Greece",
@@ -3067,6 +3185,13 @@
   "nation": "Canada",
   "wikidata": "Q1322509",
   "source": "https://en.wikipedia.org/wiki/If_Day"
+ },
+ "op-imber-friendly-fire-incident": {
+  "name": "Imber friendly fire incident",
+  "kind": "friendly fire accident at a firepower demonstration, 1942",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Imber_friendly_fire_incident"
  },
  "op-indian-independence-act-1947": {
   "name": "Indian Independence Act 1947",
@@ -3521,6 +3646,17 @@
   "wikidata": "Q692065",
   "source": "https://en.wikipedia.org/wiki/Leningrad%E2%80%93Novgorod_offensive"
  },
+ "op-liberation-of-arnhem": {
+  "name": "Liberation of Arnhem",
+  "kind": "battle (Operation Anger)",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Liberation_of_Arnhem",
+  "aka": [
+   "Operation Anger",
+   "Second Battle of Arnhem"
+  ]
+ },
  "op-liberation-of-auschwitz-concentration-camp": {
   "name": "Liberation of Auschwitz concentration camp",
   "kind": "camp liberation",
@@ -3782,6 +3918,13 @@
    "Night and Fog decree"
   ]
  },
+ "op-namsos-campaign": {
+  "name": "Namsos campaign",
+  "kind": "Allied landing and campaign",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Namsos_campaign"
+ },
  "op-nanjing-massacre": {
   "name": "Nanjing Massacre",
   "kind": "massacre of civilians and prisoners, 1937 to 1938",
@@ -3958,6 +4101,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Occupation_statute"
  },
+ "op-odessa-offensive": {
+  "name": "Odessa Offensive",
+  "kind": "Soviet offensive, 1944",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Odessa_Offensive"
+ },
  "op-ohi-day": {
   "name": "Ochi Day",
   "kind": "Greek national day",
@@ -4132,6 +4282,13 @@
   "nation": "Britain",
   "wikidata": "Q696018",
   "source": "https://en.wikipedia.org/wiki/Operation_Compass"
+ },
+ "op-operation-copper": {
+  "name": "Operation Copper",
+  "kind": "Z Special Unit raid on Muschu Island, April 1945",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Copper"
  },
  "op-operation-cornflakes": {
   "name": "Operation Cornflakes",
@@ -4561,6 +4718,13 @@
   "nation": "Britain",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Operation_Varsity"
+ },
+ "op-operation-vengeance": {
+  "name": "Operation Vengeance",
+  "kind": "fighter interception mission",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Vengeance"
  },
  "op-operation-veritable": {
   "name": "Operation Veritable",
@@ -5385,6 +5549,16 @@
    "Total War speech"
   ]
  },
+ "op-spring-1945-offensive-in-italy": {
+  "name": "Spring 1945 offensive in Italy",
+  "kind": "Allied offensive",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Spring_1945_offensive_in_Italy",
+  "aka": [
+   "Operation Grapeshot"
+  ]
+ },
  "op-st-nazaire-raid": {
   "name": "St Nazaire Raid",
   "kind": "British commando raid",
@@ -5437,6 +5611,16 @@
   "nation": "US",
   "wikidata": "Q283243",
   "source": "https://en.wikipedia.org/wiki/Stimson_Doctrine"
+ },
+ "op-stresa-front": {
+  "name": "Stresa Front",
+  "kind": "1935 conference and agreement of Britain, France and Italy",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Stresa_Front",
+  "aka": [
+   "Stresa Conference"
+  ]
  },
  "op-struma-disaster": {
   "name": "Struma disaster",
@@ -5615,6 +5799,13 @@
   "nation": "Japan",
   "wikidata": "Q376667",
   "source": "https://en.wikipedia.org/wiki/Tokyo_Express"
+ },
+ "op-tornado-outbreak-of-april-12-1945": {
+  "name": "Tornado outbreak of April 12, 1945",
+  "kind": "tornado outbreak",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tornado_outbreak_of_April_12,_1945"
  },
  "op-treaty-between-the-united-states-and-china-for-the-relinquishment-of-extraterritorial-rights-in-china": {
   "name": "Sino-American treaty ending extraterritoriality (1943)",
@@ -5885,6 +6076,13 @@
   ],
   "note": "Wikipedia's Rainbow Five title redirects here."
  },
+ "op-vienna-offensive": {
+  "name": "Vienna offensive",
+  "kind": "Soviet offensive, March to April 1945",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Vienna_offensive"
+ },
  "op-vistula-oder-offensive": {
   "name": "Vistula-Oder offensive",
   "kind": "Soviet offensive in Poland, January 1945",
@@ -5940,6 +6138,13 @@
   "nation": "US",
   "wikidata": "Q7977864",
   "source": "https://en.wikipedia.org/wiki/We_Will_Never_Die"
+ },
+ "op-western-allied-invasion-of-germany": {
+  "name": "Western Allied invasion of Germany",
+  "kind": "campaign, 1945",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Western_Allied_invasion_of_Germany"
  },
  "op-winston-churchill-s-address-to-the-canadian-parliament-1941": {
   "name": "Winston Churchill's address to the Canadian Parliament (1941)",
