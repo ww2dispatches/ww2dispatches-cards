@@ -170,6 +170,18 @@
   "lat": 12.5,
   "lon": 92.75
  },
+ "place-anielewicz-bunker": {
+  "name": "Anielewicz Bunker",
+  "kind": "ZOB command bunker at Mila 18, Warsaw Ghetto",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Anielewicz_Bunker",
+  "aka": [
+   "Mila 18"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-antlers-oklahoma": {
   "name": "Antlers, Oklahoma",
   "kind": "town",
@@ -750,6 +762,15 @@
   "wikidata": "Q250937",
   "lat": 44.0,
   "lon": -104.0
+ },
+ "place-blackett-strait": {
+  "name": "Blackett Strait",
+  "kind": "strait between Kolombangara and Arundel, Solomon Islands",
+  "nation": "Solomon Islands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Blackett_Strait",
+  "lat": null,
+  "lon": null
  },
  "place-bletchley-park": {
   "name": "Bletchley Park",
@@ -2485,6 +2506,15 @@
   "lat": 45.8811,
   "lon": 16.7853
  },
+ "place-guidonia-montecelio": {
+  "name": "Guidonia Montecelio",
+  "kind": "town and air base near Rome",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Guidonia_Montecelio",
+  "lat": null,
+  "lon": null
+ },
  "place-guildhall-london": {
   "name": "Guildhall, London",
   "kind": "City of London's ceremonial hall",
@@ -2851,6 +2881,15 @@
   "source": "https://en.wikipedia.org/wiki/Hornsey",
   "lat": 51.587,
   "lon": -0.118
+ },
+ "place-horsburgh-island": {
+  "name": "Horsburgh Island",
+  "kind": "island in the Cocos (Keeling) Islands",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Horsburgh_Island",
+  "lat": null,
+  "lon": null
  },
  "place-hotel-de-wereld": {
   "name": "Hotel de Wereld",
@@ -4993,6 +5032,15 @@
   "lat": 22.0,
   "lon": 96.0
  },
+ "place-myitkyina": {
+  "name": "Myitkyina",
+  "kind": "town and airfield in northern Burma",
+  "nation": "Burma",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Myitkyina",
+  "lat": null,
+  "lon": null
+ },
  "place-mykolaiv": {
   "name": "Mykolaiv",
   "kind": "city",
@@ -5297,6 +5345,15 @@
   "source": "https://en.wikipedia.org/wiki/Norwich",
   "lat": 52.6286,
   "lon": 1.2928
+ },
+ "place-nottingham": {
+  "name": "Nottingham",
+  "kind": "city",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Nottingham",
+  "lat": null,
+  "lon": null
  },
  "place-nuremberg": {
   "name": "Nuremberg",
@@ -6676,6 +6733,15 @@
   "lat": 49.5833,
   "lon": 42.7333
  },
+ "place-setif": {
+  "name": "Setif",
+  "kind": "market town in northeastern Algeria",
+  "nation": "Algeria",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/S%C3%A9tif",
+  "lat": null,
+  "lon": null
+ },
  "place-shanghai": {
   "name": "Shanghai",
   "kind": "City and port",
@@ -6919,6 +6985,15 @@
   "lat": 50.9067,
   "lon": -1.4044
  },
+ "place-soviet-war-memorial-treptower-park": {
+  "name": "Soviet War Memorial (Treptower Park)",
+  "kind": "Soviet memorial and military cemetery, Berlin",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Soviet_War_Memorial_(Treptower_Park)",
+  "lat": null,
+  "lon": null
+ },
  "place-speyer": {
   "name": "Speyer",
   "kind": "Rhine city in the Palatinate",
@@ -7146,6 +7221,15 @@
   "source": "https://en.wikipedia.org/wiki/Sylt",
   "lat": 54.9,
   "lon": 8.3333
+ },
+ "place-symi": {
+  "name": "Symi",
+  "kind": "Dodecanese island",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Symi",
+  "lat": null,
+  "lon": null
  },
  "place-syntagma-square": {
   "name": "Syntagma Square",

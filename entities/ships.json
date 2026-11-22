@@ -2414,6 +2414,13 @@
   "wikidata": "Q1565144",
   "source": "https://en.wikipedia.org/wiki/HMS_Ocean_(R68)"
  },
+ "ship-hms-olympus-n35": {
+  "name": "HMS Olympus (N35)",
+  "kind": "Odin class submarine",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Olympus_(N35)"
+ },
  "ship-hms-onslow-g17": {
   "name": "HMS Onslow (G17)",
   "kind": "Royal Navy destroyer",
@@ -3126,6 +3133,16 @@
    "Ryukaku (US misidentification)"
   ]
  },
+ "ship-japanese-aircraft-carrier-shokaku": {
+  "name": "Japanese aircraft carrier Shokaku",
+  "kind": "fleet carrier",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_aircraft_carrier_Sh%C5%8Dkaku",
+  "aka": [
+   "Shokaku"
+  ]
+ },
  "ship-japanese-aircraft-carrier-soryu": {
   "name": "Japanese aircraft carrier Sōryū",
   "kind": "aircraft carrier",
@@ -3413,6 +3430,16 @@
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Isokaze_(1939)",
   "wikidata": "Q1321237"
  },
+ "ship-japanese-destroyer-kagero-1938": {
+  "name": "Japanese destroyer Kagero (1938)",
+  "kind": "destroyer, lead ship of her class",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Kager%C5%8D_(1938)",
+  "aka": [
+   "Kagero"
+  ]
+ },
  "ship-japanese-destroyer-kikuzuki-1926": {
   "name": "Japanese destroyer Kikuzuki (1926)",
   "kind": "Imperial Japanese Navy destroyer",
@@ -3433,6 +3460,13 @@
   "nation": "Japan",
   "wikidata": "Q2463702",
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Kiyoshimo"
+ },
+ "ship-japanese-destroyer-kuroshio": {
+  "name": "Japanese destroyer Kuroshio",
+  "kind": "Kagero class destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Kuroshio"
  },
  "ship-japanese-destroyer-maikaze": {
   "name": "Maikaze",
