@@ -428,10 +428,10 @@
   "name": "Bath, Somerset",
   "kind": "city",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q22889",
   "source": "https://en.wikipedia.org/wiki/Bath,_Somerset",
-  "lat": null,
-  "lon": null
+  "lat": 51.3814,
+  "lon": -2.3597
  },
  "place-bayda-libya": {
   "name": "Beda Littoria",
@@ -1502,10 +1502,10 @@
   "name": "Corinth Canal",
   "kind": "canal",
   "nation": "Greece",
-  "wikidata": null,
+  "wikidata": "Q182873",
   "source": "https://en.wikipedia.org/wiki/Corinth_Canal",
-  "lat": null,
-  "lon": null
+  "lat": 37.927,
+  "lon": 22.9946
  },
  "place-coronado-california": {
   "name": "Coronado, California",
@@ -1757,10 +1757,10 @@
   "name": "Dongo",
   "kind": "town on Lake Como",
   "nation": "Italy",
-  "wikidata": null,
+  "wikidata": "Q47609",
   "source": "https://en.wikipedia.org/wiki/Dongo,_Lombardy",
-  "lat": null,
-  "lon": null
+  "lat": 46.13,
+  "lon": 9.2817
  },
  "place-dortmund": {
   "name": "Dortmund",
@@ -1974,10 +1974,10 @@
   "name": "Exeter",
   "kind": "cathedral city in Devon",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q134672",
   "source": "https://en.wikipedia.org/wiki/Exeter",
-  "lat": null,
-  "lon": null
+  "lat": 50.7256,
+  "lon": -3.5269
  },
  "place-eygelshoven": {
   "name": "Eigelshoven",
@@ -2435,10 +2435,10 @@
   "name": "Gudovac",
   "kind": "village near Bjelovar",
   "nation": "Croatia",
-  "wikidata": null,
+  "wikidata": "Q2216988",
   "source": "https://en.wikipedia.org/wiki/Gudovac",
-  "lat": null,
-  "lon": null
+  "lat": 45.8811,
+  "lon": 16.7853
  },
  "place-guildhall-london": {
   "name": "Guildhall, London",
@@ -3020,10 +3020,10 @@
   "name": "Jasenovac concentration camp",
   "kind": "Ustaše concentration camp complex",
   "nation": "Croatia",
-  "wikidata": null,
+  "wikidata": "Q155032",
   "source": "https://en.wikipedia.org/wiki/Jasenovac_concentration_camp",
-  "lat": null,
-  "lon": null
+  "lat": 45.2944,
+  "lon": 16.8278
  },
  "place-jefferson-memorial": {
   "name": "Jefferson Memorial",
@@ -3182,10 +3182,10 @@
   "name": "Karlovy Vary",
   "kind": "spa town in Bohemia",
   "nation": "Czechoslovakia",
-  "wikidata": null,
+  "wikidata": "Q384544",
   "source": "https://en.wikipedia.org/wiki/Karlovy_Vary",
-  "lat": null,
-  "lon": null,
+  "lat": 50.2306,
+  "lon": 12.8725,
   "aka": [
    "Karlsbad",
    "Carlsbad"
@@ -3218,10 +3218,10 @@
   "name": "Kaufering concentration camp complex",
   "kind": "Dachau subcamps",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q60684875",
   "source": "https://en.wikipedia.org/wiki/Kaufering_concentration_camp_complex",
-  "lat": null,
-  "lon": null
+  "lat": 48.1027,
+  "lon": 10.8453
  },
  "place-kaysersberg": {
   "name": "Kaysersberg",
@@ -3509,10 +3509,10 @@
   "name": "Kroll Opera House",
   "kind": "building, seat of the Reichstag after 1933",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q512614",
   "source": "https://en.wikipedia.org/wiki/Kroll_Opera_House",
-  "lat": null,
-  "lon": null
+  "lat": 52.5186,
+  "lon": 13.3706
  },
  "place-krysia-bunker": {
   "name": "Krysia Bunker",
@@ -4060,10 +4060,10 @@
   "name": "Madang",
   "kind": "town on the north coast of New Guinea",
   "nation": "Australia",
-  "wikidata": null,
+  "wikidata": "Q586673",
   "source": "https://en.wikipedia.org/wiki/Madang",
-  "lat": null,
-  "lon": null,
+  "lat": -5.2167,
+  "lon": 145.8,
   "note": "Australian administered Territory of New Guinea in the war; now Papua New Guinea"
  },
  "place-madrid": {
@@ -4682,10 +4682,10 @@
   "name": "Moritzburg",
   "kind": "town near Dresden, Saxony",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q8742",
   "source": "https://en.wikipedia.org/wiki/Moritzburg,_Saxony",
-  "lat": null,
-  "lon": null
+  "lat": 51.165,
+  "lon": 13.6794
  },
  "place-morong-bataan": {
   "name": "Morong, Bataan",
@@ -4880,10 +4880,10 @@
   "name": "Nanjing",
   "kind": "city, Nationalist capital of China",
   "nation": "China",
-  "wikidata": null,
+  "wikidata": "Q16666",
   "source": "https://en.wikipedia.org/wiki/Nanjing",
-  "lat": null,
-  "lon": null,
+  "lat": 32.0608,
+  "lon": 118.7789,
   "aka": [
    "Nanking"
   ]
@@ -5023,10 +5023,10 @@
   "name": "New York Harbor",
   "kind": "harbor",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q1138301",
   "source": "https://en.wikipedia.org/wiki/New_York_Harbor",
-  "lat": null,
-  "lon": null
+  "lat": 40.6683,
+  "lon": -74.0456
  },
  "place-newell-california": {
   "name": "Newell, California",
@@ -5131,19 +5131,19 @@
   "name": "Norwegian Nobel Institute",
   "kind": "institute and building of the Nobel Peace Prize, Oslo",
   "nation": "Norway",
-  "wikidata": null,
+  "wikidata": "Q2626284",
   "source": "https://en.wikipedia.org/wiki/Norwegian_Nobel_Institute",
-  "lat": null,
-  "lon": null
+  "lat": 59.9155,
+  "lon": 10.722
  },
  "place-norwich": {
   "name": "Norwich",
   "kind": "city",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q130191",
   "source": "https://en.wikipedia.org/wiki/Norwich",
-  "lat": null,
-  "lon": null
+  "lat": 52.6286,
+  "lon": 1.2928
  },
  "place-nuremberg": {
   "name": "Nuremberg",
@@ -5650,10 +5650,10 @@
   "name": "Plzen",
   "kind": "city",
   "nation": "Czechoslovakia",
-  "wikidata": null,
+  "wikidata": "Q43453",
   "source": "https://en.wikipedia.org/wiki/Plze%C5%88",
-  "lat": null,
-  "lon": null,
+  "lat": 49.7414,
+  "lon": 13.3825,
   "aka": [
    "Pilsen"
   ]
@@ -5746,10 +5746,10 @@
   "name": "Porto Rafti",
   "kind": "harbor town in Attica",
   "nation": "Greece",
-  "wikidata": null,
+  "wikidata": "Q2105234",
   "source": "https://en.wikipedia.org/wiki/Porto_Rafti",
-  "lat": null,
-  "lon": null
+  "lat": 37.8844,
+  "lon": 24.0125
  },
  "place-portsmouth": {
   "name": "Portsmouth",
@@ -6301,10 +6301,10 @@
   "name": "Salamis Naval Base",
   "kind": "Greek naval base on Salamis island",
   "nation": "Greece",
-  "wikidata": null,
+  "wikidata": "Q7403596",
   "source": "https://en.wikipedia.org/wiki/Salamis_Naval_Base",
-  "lat": null,
-  "lon": null
+  "lat": 37.9773,
+  "lon": 23.5355
  },
  "place-samar": {
   "name": "Samar",
@@ -6629,10 +6629,10 @@
   "name": "Skoda Works",
   "kind": "armaments and engineering works",
   "nation": "Czechoslovakia",
-  "wikidata": null,
+  "wikidata": "Q391795",
   "source": "https://en.wikipedia.org/wiki/%C5%A0koda_Works",
-  "lat": null,
-  "lon": null
+  "lat": 49.7393,
+  "lon": 13.354
  },
  "place-skopje": {
   "name": "Skopje",
@@ -7037,10 +7037,10 @@
   "name": "Tanahmerah Bay",
   "kind": "bay on the north coast of New Guinea",
   "nation": "Netherlands New Guinea",
-  "wikidata": null,
+  "wikidata": "Q2392073",
   "source": "https://en.wikipedia.org/wiki/Tanahmerah_Bay",
-  "lat": null,
-  "lon": null
+  "lat": -2.4167,
+  "lon": 140.3333
  },
  "place-tannenberg-memorial": {
   "name": "Tannenberg Memorial",
@@ -7324,10 +7324,10 @@
   "name": "Torgau",
   "kind": "town on the Elbe",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q12062",
   "source": "https://en.wikipedia.org/wiki/Torgau",
-  "lat": null,
-  "lon": null
+  "lat": 51.5603,
+  "lon": 13.0056
  },
  "place-torokina-airfield": {
   "name": "Torokina fighter strip",
