@@ -5528,6 +5528,19 @@
   "lat": 51.4912,
   "lon": 0.0699
  },
+ "place-royal-opera-house-valletta": {
+  "name": "Royal Opera House, Valletta",
+  "kind": "opera house, destroyed 1942",
+  "nation": "Malta",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Royal_Opera_House,_Valletta",
+  "aka": [
+   "Pjazza Teatru Rjal",
+   "Teatru Rjal"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-royal-palace-of-amsterdam": {
   "name": "Royal Palace of Amsterdam",
   "kind": "palace",

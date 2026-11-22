@@ -3351,6 +3351,13 @@
   "wikidata": "Q246612",
   "source": "https://en.wikipedia.org/wiki/Sixth_Army_(United_States)"
  },
+ "unit-sonderkommando-elbe": {
+  "name": "Sonderkommando Elbe",
+  "kind": "Luftwaffe ramming task force",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sonderkommando_Elbe"
+ },
  "unit-south-seas-detachment": {
   "name": "South Seas Detachment",
   "kind": "Imperial Japanese Army detachment",
@@ -3755,6 +3762,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/VII_Corps_(United_States)",
   "wikidata": "Q1515278"
+ },
+ "unit-vmf-221": {
+  "name": "VMF-221",
+  "kind": "U.S. Marine Corps fighter squadron",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/VMF-221"
  },
  "unit-vmfa-121": {
   "name": "VMFA-121",

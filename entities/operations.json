@@ -1426,6 +1426,13 @@
   "wikidata": "Q1536686",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Sunda_Strait"
  },
+ "op-battle-of-taierzhuang": {
+  "name": "Battle of Taierzhuang",
+  "kind": "battle, March to April 1938",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Taierzhuang"
+ },
  "op-battle-of-tarakan-1942": {
   "name": "Battle of Tarakan (1942)",
   "kind": "Japanese invasion of a Dutch oil island",
@@ -1647,6 +1654,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Battle_of_Visayas"
  },
+ "op-battle-of-wadi-akarit": {
+  "name": "Battle of Wadi Akarit",
+  "kind": "battle, 6 to 7 April 1943",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Wadi_Akarit"
+ },
  "op-battle-of-wake-island": {
   "name": "Battle of Wake Island",
   "kind": "battle",
@@ -1695,6 +1709,13 @@
   "nation": "Germany",
   "source": "https://en.wikipedia.org/wiki/Beer_Hall_Putsch",
   "wikidata": "Q36749"
+ },
+ "op-belfast-blitz": {
+  "name": "Belfast Blitz",
+  "kind": "air raids on Belfast, April and May 1941",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Belfast_Blitz"
  },
  "op-belsen-trials": {
   "name": "Belsen trials",
@@ -3142,6 +3163,13 @@
   "wikidata": "Q18164126",
   "source": "https://en.wikipedia.org/wiki/Italian_declaration_of_war_on_the_United_States"
  },
+ "op-italian-invasion-of-albania": {
+  "name": "Italian invasion of Albania",
+  "kind": "invasion, April 1939",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_invasion_of_Albania"
+ },
  "op-italian-social-republic": {
   "name": "Italian Social Republic",
   "kind": "German backed fascist state in northern Italy, 1943 to 1945",
@@ -4181,6 +4209,13 @@
   "nation": "Germany",
   "wikidata": "Q695666",
   "source": "https://en.wikipedia.org/wiki/Operation_Hannibal"
+ },
+ "op-operation-i-go": {
+  "name": "Operation I-Go",
+  "kind": "Japanese air offensive, April 1943",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_I-Go"
  },
  "op-operation-iskra": {
   "name": "Operation Iskra",
@@ -5825,6 +5860,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q2606937",
   "source": "https://en.wikipedia.org/wiki/Voronezh%E2%80%93Kastornoye_offensive"
+ },
+ "op-vrba-wetzler-report": {
+  "name": "Vrba-Wetzler report",
+  "kind": "eyewitness report on Auschwitz, 1944",
+  "nation": "Slovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Vrba%E2%80%93Wetzler_report"
  },
  "op-wannsee-conference": {
   "name": "Wannsee Conference",

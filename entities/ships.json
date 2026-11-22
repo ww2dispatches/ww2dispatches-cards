@@ -2622,6 +2622,13 @@
   "wikidata": "Q3275455",
   "source": "https://en.wikipedia.org/wiki/Japanese_cruiser_Tatsuta_(1918)"
  },
+ "ship-japanese-cruiser-yahagi-1942": {
+  "name": "Yahagi",
+  "kind": "light cruiser",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_cruiser_Yahagi_(1942)"
+ },
  "ship-japanese-destroyer-akebono-1930": {
   "name": "Japanese destroyer Akebono (1930)",
   "kind": "Imperial Japanese Navy destroyer",
@@ -3732,6 +3739,13 @@
    "USCGC Shoshone"
   ],
   "note": "Wikipedia redirects HMS Landguard (Y56) to her original U.S. Coast Guard name."
+ },
+ "ship-uss-aaron-ward-dd-483": {
+  "name": "USS Aaron Ward (DD-483)",
+  "kind": "destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Aaron_Ward_(DD-483)"
  },
  "ship-uss-albacore-ss-218": {
   "name": "USS Albacore (SS-218)",
