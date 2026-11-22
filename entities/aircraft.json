@@ -81,6 +81,13 @@
   "wikidata": "Q312540",
   "source": "https://en.wikipedia.org/wiki/Bell_47"
  },
+ "aircraft-bell-p-59-airacomet": {
+  "name": "Bell P-59 Airacomet",
+  "kind": "US jet fighter",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bell_P-59_Airacomet"
+ },
  "aircraft-bell-x-1": {
   "name": "Bell X-1",
   "kind": "rocket powered research aircraft",
@@ -334,6 +341,13 @@
   "nation": "Britain",
   "wikidata": "Q674079",
   "source": "https://en.wikipedia.org/wiki/Fairey_Swordfish"
+ },
+ "aircraft-flak-bait": {
+  "name": "Flak-Bait",
+  "kind": "B-26B Marauder, single aircraft",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Flak-Bait"
  },
  "aircraft-focke-wulf-fw-190": {
   "name": "Focke-Wulf Fw 190",

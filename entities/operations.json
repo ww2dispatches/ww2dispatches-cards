@@ -112,6 +112,13 @@
   "source": "https://en.wikipedia.org/wiki/1941_October_Revolution_Parade",
   "wikidata": "Q2893329"
  },
+ "op-1941-old-palace-school-bombing": {
+  "name": "Old Palace School bombing",
+  "kind": "Blitz bombing of a fire substation",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1941_Old_Palace_School_bombing"
+ },
  "op-1942-knilm-douglas-dc-3-shootdown": {
   "name": "1942 KNILM Douglas DC-3 shootdown",
   "kind": "airliner shootdown",
@@ -474,6 +481,20 @@
   "wikidata": "Q4745553",
   "source": "https://en.wikipedia.org/wiki/American_trusteeship_proposal_for_Palestine"
  },
+ "op-amethyst-incident": {
+  "name": "Amethyst incident",
+  "kind": "naval confrontation in the Chinese Civil War",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Amethyst_incident"
+ },
+ "op-angler-pow-escape": {
+  "name": "Angler POW escape",
+  "kind": "prisoner of war escape",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Angler_POW_escape"
+ },
  "op-anglo-american-loan": {
   "name": "Anglo-American loan",
   "kind": "postwar loan agreement",
@@ -630,6 +651,23 @@
   "wikidata": "Q52418",
   "source": "https://en.wikipedia.org/wiki/Attack_on_Pearl_Harbor"
  },
+ "op-attack-on-the-twentieth-convoy": {
+  "name": "Attack on the twentieth convoy",
+  "kind": "resistance attack on a deportation train",
+  "nation": "Belgium",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Attack_on_the_twentieth_convoy"
+ },
+ "op-augsburg-raid": {
+  "name": "Augsburg raid",
+  "kind": "RAF daylight bombing raid",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Augsburg_raid",
+  "aka": [
+   "Operation Margin"
+  ]
+ },
  "op-auschwitz-sonderkommando-revolt": {
   "name": "Auschwitz Sonderkommando revolt",
   "kind": "prisoner revolt, 7 Oct 1944",
@@ -653,6 +691,13 @@
   "aka": [
    "February Uprising"
   ]
+ },
+ "op-award-of-the-george-cross-to-malta": {
+  "name": "Award of the George Cross to Malta",
+  "kind": "collective gallantry award, 1942",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Award_of_the_George_Cross_to_Malta"
  },
  "op-axis-powers-negotiations-on-the-division-of-asia": {
   "name": "Axis powers negotiations on the division of Asia",
@@ -716,6 +761,13 @@
   "wikidata": "Q555797",
   "source": "https://en.wikipedia.org/wiki/Bataan_Death_March"
  },
+ "op-battle-in-berlin": {
+  "name": "Battle in Berlin",
+  "kind": "urban battle",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_in_Berlin"
+ },
  "op-battle-of-aachen": {
   "name": "Battle of Aachen",
   "kind": "battle",
@@ -746,6 +798,13 @@
   "nation": "US",
   "wikidata": "Q2091385",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Arawe"
+ },
+ "op-battle-of-athens-1941": {
+  "name": "Battle of Athens (1941)",
+  "kind": "air battle",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Athens_(1941)"
  },
  "op-battle-of-badung-strait": {
   "name": "Battle of Badung Strait",
@@ -782,6 +841,16 @@
   "wikidata": "Q15310269",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Beda_Fomm"
  },
+ "op-battle-of-berlin": {
+  "name": "Battle of Berlin",
+  "kind": "Soviet strategic offensive on Berlin, April to May 1945",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Berlin",
+  "aka": [
+   "Berlin Strategic Offensive Operation"
+  ]
+ },
  "op-battle-of-berlin-raf-campaign": {
   "name": "Battle of Berlin (RAF campaign)",
   "kind": "bombing campaign",
@@ -795,6 +864,13 @@
   "nation": "US",
   "wikidata": "Q2597051",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Blackett_Strait"
+ },
+ "op-battle-of-bologna": {
+  "name": "Battle of Bologna",
+  "kind": "battle",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Bologna"
  },
  "op-battle-of-borneo-1941-1942": {
   "name": "Battle of Borneo (1941 to 1942)",
@@ -956,6 +1032,13 @@
   "nation": "France",
   "wikidata": "Q962370",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Hanoi_(1946)"
+ },
+ "op-battle-of-hegra-fortress": {
+  "name": "Battle of Hegra Fortress",
+  "kind": "siege, April to May 1940",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Hegra_Fortress"
  },
  "op-battle-of-hill-170": {
   "name": "Battle of Hill 170",
@@ -1258,12 +1341,26 @@
   "wikidata": "Q701180",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Nanking"
  },
+ "op-battle-of-nanos": {
+  "name": "Battle of Nanos",
+  "kind": "partisan battle",
+  "nation": "Yugoslavia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Nanos"
+ },
  "op-battle-of-nikolayevka": {
   "name": "Battle of Nikolayevka",
   "kind": "battle",
   "nation": "Italy",
   "wikidata": "Q1132971",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Nikolayevka"
+ },
+ "op-battle-of-nuremberg-1945": {
+  "name": "Battle of Nuremberg (1945)",
+  "kind": "urban battle",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Nuremberg_(1945)"
  },
  "op-battle-of-okinawa": {
   "name": "Battle of Okinawa",
@@ -1664,6 +1761,20 @@
   "wikidata": "Q329506",
   "source": "https://en.wikipedia.org/wiki/Battle_of_the_Ruhr"
  },
+ "op-battle-of-the-seelow-heights": {
+  "name": "Battle of the Seelow Heights",
+  "kind": "battle opening the Soviet Berlin offensive",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_the_Seelow_Heights"
+ },
+ "op-battle-of-the-tarigo-convoy": {
+  "name": "Battle of the Tarigo Convoy",
+  "kind": "naval convoy battle off the Kerkennah Islands",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_the_Tarigo_Convoy"
+ },
  "op-battle-of-timor": {
   "name": "Battle of Timor",
   "kind": "campaign on Timor, 1942 to 1943",
@@ -1733,6 +1844,13 @@
   "nation": "China",
   "wikidata": "Q16924897",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Yan%27an"
+ },
+ "op-battle-of-yenangyaung": {
+  "name": "Battle of Yenangyaung",
+  "kind": "battle in Burma, April 1942",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Yenangyaung"
  },
  "op-battle-off-endau": {
   "name": "Battle off Endau",
@@ -1885,6 +2003,13 @@
   "nation": "Britain",
   "wikidata": "Q15212263",
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Berlin_in_World_War_II"
+ },
+ "op-bombing-of-bremen-in-world-war-ii": {
+  "name": "Bombing of Bremen in World War II",
+  "kind": "bombing campaign",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Bremen_in_World_War_II"
  },
  "op-bombing-of-bucharest-in-world-war-ii": {
   "name": "Bombing of Bucharest in World War II",
@@ -2133,6 +2258,13 @@
   "nation": "Germany",
   "wikidata": "Q1875557",
   "source": "https://en.wikipedia.org/wiki/Bombings_of_Heilbronn_in_World_War_II"
+ },
+ "op-boston-marathon": {
+  "name": "Boston Marathon",
+  "kind": "annual marathon race",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Boston_Marathon"
  },
  "op-bougainville-counterattack": {
   "name": "Bougainville counterattack",
@@ -2690,6 +2822,17 @@
   "wikidata": "Q636087",
   "source": "https://en.wikipedia.org/wiki/East_Prussian_offensive"
  },
+ "op-easter-accords": {
+  "name": "Easter Accords",
+  "kind": "Anglo-Italian agreements of April 1938",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Easter_Accords",
+  "aka": [
+   "Anglo-Italian Agreements of 1938",
+   "Easter Pact"
+  ]
+ },
  "op-education-act-1944": {
   "name": "Education Act 1944",
   "kind": "British education law",
@@ -2913,6 +3056,16 @@
   "nation": "Slovakia",
   "wikidata": "Q85761082",
   "source": "https://en.wikipedia.org/wiki/First_mass_transport_of_Jews_to_Auschwitz_concentration_camp"
+ },
+ "op-flick-trial": {
+  "name": "Flick trial",
+  "kind": "Nuremberg Military Tribunal Case 5",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Flick_trial",
+  "aka": [
+   "NMT Case 5"
+  ]
  },
  "op-flight-19": {
   "name": "Flight 19",
@@ -3252,6 +3405,13 @@
   "wikidata": "Q3153508",
   "source": "https://en.wikipedia.org/wiki/Internment_of_Japanese_Canadians"
  },
+ "op-inundation-of-the-wieringermeer": {
+  "name": "Inundation of the Wieringermeer",
+  "kind": "German dike demolition and flooding",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Inundation_of_the_Wieringermeer"
+ },
  "op-invasion-of-lingayen-gulf": {
   "name": "Invasion of Lingayen Gulf",
   "kind": "Allied amphibious invasion of Luzon, January 1945",
@@ -3273,6 +3433,16 @@
   "nation": "Japan",
   "wikidata": "Q797939",
   "source": "https://en.wikipedia.org/wiki/Invasion_of_Salamaua%E2%80%93Lae"
+ },
+ "op-invasion-of-yugoslavia": {
+  "name": "Invasion of Yugoslavia",
+  "kind": "Axis invasion",
+  "nation": "Yugoslavia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Invasion_of_Yugoslavia",
+  "aka": [
+   "April War"
+  ]
  },
  "op-iran-crisis-of-1946": {
   "name": "Iran crisis of 1946",
@@ -3887,6 +4057,13 @@
   "wikidata": "Q162663",
   "source": "https://en.wikipedia.org/wiki/Mit_brennender_Sorge"
  },
+ "op-morotai-mutiny": {
+  "name": "Morotai Mutiny",
+  "kind": "RAAF officers' mass resignation protest",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Morotai_Mutiny"
+ },
  "op-moscow-conference-1945": {
   "name": "Moscow Conference (1945)",
   "kind": "foreign ministers' conference",
@@ -4052,6 +4229,13 @@
   "wikidata": "Q128535",
   "source": "https://en.wikipedia.org/wiki/Norway_Debate"
  },
+ "op-norwegian-campaign": {
+  "name": "Norwegian campaign",
+  "kind": "campaign, 1940",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Norwegian_campaign"
+ },
  "op-norwegian-heavy-water-sabotage": {
   "name": "Norwegian heavy water sabotage",
   "kind": "sabotage campaign",
@@ -4117,6 +4301,13 @@
   "aka": [
    "Ohi Day"
   ]
+ },
+ "op-operation-abercrombie": {
+  "name": "Operation Abercrombie",
+  "kind": "commando raid on Hardelot",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Abercrombie"
  },
  "op-operation-abstention": {
   "name": "Operation Abstention",
@@ -4188,6 +4379,16 @@
   "source": "https://en.wikipedia.org/wiki/Operation_Battleaxe",
   "wikidata": "Q682399"
  },
+ "op-operation-big-bang": {
+  "name": "Operation Big Bang",
+  "kind": "demolition of Heligoland's fortifications",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Big_Bang",
+  "aka": [
+   "British Bang"
+  ]
+ },
  "op-operation-blockbuster": {
   "name": "Operation Blockbuster",
   "kind": "Canadian offensive west of the Rhine, 1945",
@@ -4234,6 +4435,13 @@
   "wikidata": "Q2975601",
   "source": "https://en.wikipedia.org/wiki/Operation_Caesar"
  },
+ "op-operation-calendar": {
+  "name": "Operation Calendar",
+  "kind": "Spitfire ferry operation to Malta",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Calendar"
+ },
  "op-operation-carpetbagger": {
   "name": "Operation Carpetbagger",
   "kind": "air supply operation",
@@ -4268,6 +4476,13 @@
   "nation": "US",
   "wikidata": "Q7096905",
   "source": "https://en.wikipedia.org/wiki/Operation_Cleanslate"
+ },
+ "op-operation-cockpit": {
+  "name": "Operation Cockpit",
+  "kind": "Allied carrier raid on Sabang",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Cockpit"
  },
  "op-operation-colossus": {
   "name": "Operation Colossus",
@@ -4377,6 +4592,13 @@
   "wikidata": "Q2534557",
   "source": "https://en.wikipedia.org/wiki/Operation_Grog"
  },
+ "op-operation-guidance": {
+  "name": "Operation Guidance",
+  "kind": "midget submarine raid on Bergen, 1944",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Guidance"
+ },
  "op-operation-hailstone": {
   "name": "Operation Hailstone",
   "kind": "U.S. carrier raid on Truk, 17 to 18 Feb 1944",
@@ -4390,6 +4612,13 @@
   "nation": "Germany",
   "wikidata": "Q695666",
   "source": "https://en.wikipedia.org/wiki/Operation_Hannibal"
+ },
+ "op-operation-herring": {
+  "name": "Operation Herring",
+  "kind": "Italian co-belligerent airborne operation",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Herring"
  },
  "op-operation-i-go": {
   "name": "Operation I-Go",
@@ -5694,6 +5923,16 @@
   "wikidata": "Q7703185",
   "source": "https://en.wikipedia.org/wiki/Terrace_mutiny"
  },
+ "op-texas-city-disaster": {
+  "name": "Texas City disaster",
+  "kind": "ammonium nitrate ship explosions, 1947",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Texas_City_disaster",
+  "aka": [
+   "SS Grandcamp explosion"
+  ]
+ },
  "op-the-blitz": {
   "name": "The Blitz",
   "kind": "German bombing campaign against Britain, 1940 to 1941",
@@ -5965,12 +6204,26 @@
    "Walwal incident"
   ]
  },
+ "op-ug-convoys": {
+  "name": "UG convoys",
+  "kind": "Allied convoy series, US to the Mediterranean",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/UG_convoys"
+ },
  "op-uman-botosani-offensive": {
   "name": "Uman-Botosani offensive",
   "kind": "Red Army offensive in Ukraine, March and April 1944",
   "nation": "Soviet Union",
   "wikidata": "Q304939",
   "source": "https://en.wikipedia.org/wiki/Uman%E2%80%93Boto%C8%99ani_offensive"
+ },
+ "op-unification-decree-spain-1937": {
+  "name": "Unification Decree (Spain, 1937)",
+  "kind": "Franco's party merger decree",
+  "nation": "Spain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Unification_Decree_(Spain,_1937)"
  },
  "op-united-nations-conference-on-international-organization": {
   "name": "San Francisco Conference",
@@ -6118,6 +6371,13 @@
   "wikidata": "Q581800",
   "source": "https://en.wikipedia.org/wiki/War_Brides_Act"
  },
+ "op-warsaw-ghetto-uprising": {
+  "name": "Warsaw Ghetto Uprising",
+  "kind": "Jewish armed uprising, April to May 1943",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Warsaw_Ghetto_Uprising"
+ },
  "op-washington-naval-treaty": {
   "name": "Washington Naval Treaty",
   "kind": "1922 naval arms limitation treaty",
@@ -6190,6 +6450,13 @@
   "nation": "worldwide",
   "wikidata": "Q161227",
   "source": "https://en.wikipedia.org/wiki/Yalta_Conference"
+ },
+ "op-yangtze-river-crossing-campaign": {
+  "name": "Yangtze River Crossing campaign",
+  "kind": "Chinese Civil War offensive",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Yangtze_River_Crossing_campaign"
  },
  "op-yasui-v-united-states": {
   "name": "Yasui v. United States",

@@ -261,6 +261,13 @@
   "wikidata": "Q623544",
   "source": "https://en.wikipedia.org/wiki/Ejection_seat"
  },
+ "machine-electron-microscope": {
+  "name": "Electron microscope",
+  "kind": "scientific instrument",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Electron_microscope"
+ },
  "machine-eniac": {
   "name": "ENIAC",
   "kind": "electronic computer",
@@ -515,6 +522,17 @@
   "nation": "US",
   "wikidata": "Q593485",
   "source": "https://en.wikipedia.org/wiki/Liberty_ship"
+ },
+ "machine-lsd": {
+  "name": "LSD",
+  "kind": "hallucinogenic drug, lysergic acid diethylamide",
+  "nation": "Switzerland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/LSD",
+  "aka": [
+   "lysergic acid diethylamide",
+   "LSD-25"
+  ]
  },
  "machine-m26-pershing": {
   "name": "M26 Pershing",

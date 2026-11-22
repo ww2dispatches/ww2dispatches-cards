@@ -17,6 +17,15 @@
   "lat": 56.1706,
   "lon": 10.2011
  },
+ "place-aberdeen": {
+  "name": "Aberdeen",
+  "kind": "city",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Aberdeen",
+  "lat": null,
+  "lon": null
+ },
  "place-accra": {
   "name": "Accra",
   "kind": "capital of the Gold Coast, now Ghana",
@@ -305,6 +314,15 @@
   "lat": 40.3667,
   "lon": 49.8352
  },
+ "place-balaklava": {
+  "name": "Balaklava",
+  "kind": "town in Crimea",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Balaklava",
+  "lat": null,
+  "lon": null
+ },
  "place-balalae-island": {
   "name": "Ballale",
   "kind": "island",
@@ -317,6 +335,15 @@
    "Ballale",
    "Ballalae"
   ]
+ },
+ "place-baltimore": {
+  "name": "Baltimore",
+  "kind": "city and port, Maryland",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Baltimore",
+  "lat": null,
+  "lon": null
  },
  "place-bandung": {
   "name": "Bandung",
@@ -949,6 +976,15 @@
   "source": "https://en.wikipedia.org/wiki/Buenos_Aires",
   "lat": -34.5997,
   "lon": -58.3819
+ },
+ "place-bullenhuser-damm": {
+  "name": "Bullenhuser Damm School",
+  "kind": "school in Hamburg, Neuengamme satellite camp and memorial",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bullenhuser_Damm",
+  "lat": null,
+  "lon": null
  },
  "place-buna-papua-new-guinea": {
   "name": "Buna, Papua New Guinea",
@@ -1681,6 +1717,15 @@
   "lat": 48.1456,
   "lon": 6.6178
  },
+ "place-dombas": {
+  "name": "Dombås",
+  "kind": "village and railway junction",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Domb%C3%A5s",
+  "lat": null,
+  "lon": null
+ },
  "place-don-river": {
   "name": "Don River",
   "kind": "river",
@@ -1736,6 +1781,19 @@
   "lon": 6.4821,
   "aka": [
    "Düren"
+  ]
+ },
+ "place-dutch-east-indies": {
+  "name": "Dutch East Indies",
+  "kind": "Dutch colony",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Dutch_East_Indies",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Netherlands East Indies",
+   "Netherlands Indies"
   ]
  },
  "place-east-berlin": {
@@ -2079,6 +2137,15 @@
   "lat": 52.5264,
   "lon": 11.3925
  },
+ "place-gargnano": {
+  "name": "Gargnano",
+  "kind": "town on Lake Garda",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Gargnano",
+  "lat": null,
+  "lon": null
+ },
  "place-garigliano": {
   "name": "Garigliano",
   "kind": "river in central Italy",
@@ -2408,6 +2475,15 @@
   ],
   "lat": 44.6478,
   "lon": -63.5714
+ },
+ "place-hamburg": {
+  "name": "Hamburg",
+  "kind": "city and port",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hamburg",
+  "lat": null,
+  "lon": null
  },
  "place-hampton-roads": {
   "name": "Hampton Roads",
@@ -2754,6 +2830,19 @@
   "wikidata": "Q1203602",
   "lat": 35.3728,
   "lon": 140.3688
+ },
+ "place-iejima": {
+  "name": "Ie Shima",
+  "kind": "island off Okinawa's Motobu Peninsula",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Iejima",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Iejima",
+   "Ie Jima"
+  ]
  },
  "place-imber": {
   "name": "Imber",
@@ -3256,6 +3345,18 @@
   "lat": -7.9667,
   "lon": 157.0667
  },
+ "place-konigstein-fortress": {
+  "name": "Konigstein Fortress",
+  "kind": "hilltop fortress, officers' prison camp",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/K%C3%B6nigstein_Fortress",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Königstein Fortress"
+  ]
+ },
  "place-kos": {
   "name": "Kos",
   "kind": "island",
@@ -3518,6 +3619,15 @@
   "lat": 50.8147,
   "lon": 6.3617
  },
+ "place-larissa": {
+  "name": "Larissa",
+  "kind": "city",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Larissa",
+  "lat": null,
+  "lon": null
+ },
  "place-lashio": {
   "name": "Lashio",
   "kind": "town in Burma",
@@ -3587,6 +3697,15 @@
   "aka": [
    "Legaspi"
   ]
+ },
+ "place-leipzig": {
+  "name": "Leipzig",
+  "kind": "city in Saxony",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Leipzig",
+  "lat": null,
+  "lon": null
  },
  "place-leros": {
   "name": "Leros",
@@ -3892,6 +4011,15 @@
   "lat": 14.5939,
   "lon": 120.9945
  },
+ "place-malta": {
+  "name": "Malta",
+  "kind": "island, British colony in the war",
+  "nation": "Malta",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Malta",
+  "lat": null,
+  "lon": null
+ },
  "place-mamayev-kurgan": {
   "name": "Mamayev Kurgan",
   "kind": "hill in Stalingrad",
@@ -4181,6 +4309,19 @@
   "lat": 45.2117,
   "lon": -123.1972
  },
+ "place-mechelen-transit-camp": {
+  "name": "Mechelen transit camp",
+  "kind": "Nazi transit camp in the Dossin barracks",
+  "nation": "Belgium",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mechelen_transit_camp",
+  "aka": [
+   "Dossin barracks",
+   "Kazerne Dossin"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-mechili": {
   "name": "Mechili",
   "kind": "village",
@@ -4420,6 +4561,18 @@
   "source": "https://en.wikipedia.org/wiki/Montevideo",
   "lat": -34.9059,
   "lon": -56.1913
+ },
+ "place-monument-to-the-battle-of-the-nations": {
+  "name": "Monument to the Battle of the Nations",
+  "kind": "monument in Leipzig",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Monument_to_the_Battle_of_the_Nations",
+  "aka": [
+   "Völkerschlachtdenkmal"
+  ],
+  "lat": null,
+  "lon": null
  },
  "place-moramanga": {
   "name": "Moramanga",
@@ -5376,6 +5529,15 @@
   "source": "https://en.wikipedia.org/wiki/Pompeii_Airfield",
   "lat": 40.7913,
   "lon": 14.484
+ },
+ "place-poplar-london": {
+  "name": "Poplar",
+  "kind": "district of East London",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Poplar,_London",
+  "lat": null,
+  "lon": null
  },
  "place-poprad": {
   "name": "Poprad",
@@ -6758,6 +6920,19 @@
   "lat": 33.7569,
   "lon": -118.2481
  },
+ "place-ternopil": {
+  "name": "Ternopil",
+  "kind": "city in western Ukraine",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ternopil",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Tarnopol",
+   "Ternopol"
+  ]
+ },
  "place-terowie-south-australia": {
   "name": "Terowie",
   "kind": "railway town in South Australia",
@@ -6784,6 +6959,15 @@
   "source": "https://en.wikipedia.org/wiki/Teruel",
   "lat": 40.3436,
   "lon": -1.1072
+ },
+ "place-texas-city-texas": {
+  "name": "Texas City",
+  "kind": "port city on Galveston Bay",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Texas_City,_Texas",
+  "lat": null,
+  "lon": null
  },
  "place-texel": {
   "name": "Texel",
@@ -7088,6 +7272,19 @@
   "source": "https://en.wikipedia.org/wiki/Uman",
   "lat": 48.75,
   "lon": 30.2167
+ },
+ "place-united-states-air-force-plant-4": {
+  "name": "United States Air Force Plant 4",
+  "kind": "aircraft plant, Fort Worth",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/United_States_Air_Force_Plant_4",
+  "aka": [
+   "Consolidated Vultee Plant No. 4",
+   "Fort Worth bomber plant"
+  ],
+  "lat": null,
+  "lon": null
  },
  "place-university-of-bristol": {
   "name": "University of Bristol",
@@ -7516,6 +7713,15 @@
   "aka": [
    "White Sands Proving Ground"
   ]
+ },
+ "place-wieringermeer": {
+  "name": "Wieringermeer",
+  "kind": "polder",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Wieringermeer",
+  "lat": null,
+  "lon": null
  },
  "place-wilhelmshaven": {
   "name": "Wilhelmshaven",

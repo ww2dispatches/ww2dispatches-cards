@@ -537,6 +537,13 @@
   "wikidata": "Q12052511",
   "source": "https://en.wikipedia.org/wiki/26th_Infantry_Regiment_(United_States)"
  },
+ "unit-27th-infantry-division-united-states": {
+  "name": "27th Infantry Division",
+  "kind": "US Army infantry division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/27th_Infantry_Division_(United_States)"
+ },
  "unit-27th-marine-regiment-united-states": {
   "name": "27th Marine Regiment",
   "kind": "U.S. Marine Corps infantry regiment",
@@ -630,6 +637,16 @@
    "Second Guards Army"
   ]
  },
+ "unit-2nd-infantry-division-united-states": {
+  "name": "2nd Infantry Division",
+  "kind": "US Army infantry division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/2nd_Infantry_Division_(United_States)",
+  "aka": [
+   "2d Infantry Division"
+  ]
+ },
  "unit-2nd-marine-division": {
   "name": "2nd Marine Division",
   "kind": "U.S. Marine Corps division",
@@ -668,6 +685,16 @@
   "nation": "Germany",
   "wikidata": "Q210387",
   "source": "https://en.wikipedia.org/wiki/2nd_Panzer_Division_(Wehrmacht)"
+ },
+ "unit-2nd-polish-corps-polish-armed-forces-in-the-west": {
+  "name": "Polish II Corps",
+  "kind": "Polish Armed Forces in the West corps",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/2nd_Polish_Corps_(Polish_Armed_Forces_in_the_West)",
+  "aka": [
+   "2nd Polish Corps"
+  ]
  },
  "unit-2nd-raiding-brigade": {
   "name": "2nd Raiding Brigade",
@@ -1222,6 +1249,13 @@
    "Black Panther Division"
   ]
  },
+ "unit-69th-infantry-division-united-states": {
+  "name": "69th Infantry Division",
+  "kind": "US Army infantry division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/69th_Infantry_Division_(United_States)"
+ },
  "unit-6th-armored-division-united-states": {
   "name": "6th Armored Division",
   "kind": "US Army armored division",
@@ -1307,6 +1341,13 @@
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/79th_Armoured_Division",
   "wikidata": "Q1775432"
+ },
+ "unit-79th-rifle-corps": {
+  "name": "79th Rifle Corps",
+  "kind": "Red Army rifle corps",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/79th_Rifle_Corps"
  },
  "unit-7th-armored-division-united-states": {
   "name": "7th Armored Division (United States)",
@@ -1542,6 +1583,13 @@
   "wikidata": "Q2074448",
   "source": "https://en.wikipedia.org/wiki/American_Youth_Congress"
  },
+ "unit-anglo-american-committee-of-inquiry": {
+  "name": "Anglo-American Committee of Inquiry",
+  "kind": "joint British and American committee on European Jewry and Palestine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Anglo-American_Committee_of_Inquiry"
+ },
  "unit-anglo-french-supreme-war-council": {
   "name": "Anglo-French Supreme War Council",
   "kind": "Allied war council",
@@ -1649,6 +1697,16 @@
    "Auer"
   ]
  },
+ "unit-auxiliary-fire-service": {
+  "name": "Auxiliary Fire Service",
+  "kind": "British wartime volunteer fire service",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Auxiliary_Fire_Service",
+  "aka": [
+   "AFS"
+  ]
+ },
  "unit-aviazione-legionaria": {
   "name": "Aviazione Legionaria",
   "kind": "Italian air unit in the Spanish Civil War",
@@ -1662,6 +1720,13 @@
   "nation": "Britain",
   "wikidata": "Q183231",
   "source": "https://en.wikipedia.org/wiki/Bank_of_England"
+ },
+ "unit-bbc": {
+  "name": "BBC",
+  "kind": "British Broadcasting Corporation",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/BBC"
  },
  "unit-bbc-forces-programme": {
   "name": "BBC Forces Programme",
@@ -1786,6 +1851,16 @@
   "source": "https://en.wikipedia.org/wiki/Buffs_(Royal_East_Kent_Regiment)",
   "wikidata": "Q2899477"
  },
+ "unit-burma-corps": {
+  "name": "Burma Corps",
+  "kind": "British Indian Army corps in Burma, 1942",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Burma_Corps",
+  "aka": [
+   "Burcorps"
+  ]
+ },
  "unit-camelots-du-roi": {
   "name": "Camelots du Roi",
   "kind": "French royalist youth militants of Action Francaise",
@@ -1802,6 +1877,13 @@
   "aka": [
    "CWAC"
   ]
+ },
+ "unit-carleton-and-york-regiment": {
+  "name": "Carleton and York Regiment",
+  "kind": "Canadian Army infantry regiment",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Carleton_and_York_Regiment"
  },
  "unit-central-china-area-army": {
   "name": "Central China Area Army",
@@ -2017,6 +2099,16 @@
   "source": "https://en.wikipedia.org/wiki/Federal_Bureau_of_Investigation",
   "aka": [
    "FBI"
+  ]
+ },
+ "unit-fet-y-de-las-jons": {
+  "name": "FET y de las JONS",
+  "kind": "Nationalist Spain's single party",
+  "nation": "Spain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/FET_y_de_las_JONS",
+  "aka": [
+   "Falange Española Tradicionalista y de las JONS"
   ]
  },
  "unit-fifteenth-air-force": {
@@ -2410,6 +2502,16 @@
   "wikidata": "Q1401614",
   "source": "https://en.wikipedia.org/wiki/Jewish_Anti-Fascist_Committee"
  },
+ "unit-jewish-combat-organization": {
+  "name": "Jewish Combat Organization",
+  "kind": "Jewish underground fighting force in occupied Poland",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Jewish_Combat_Organization",
+  "aka": [
+   "ŻOB"
+  ]
+ },
  "unit-johns-hopkins-university-applied-physics-laboratory": {
   "name": "Johns Hopkins Applied Physics Laboratory",
   "kind": "research laboratory",
@@ -2440,6 +2542,13 @@
   "aka": [
    "KG 100"
   ]
+ },
+ "unit-kampfgeschwader-26": {
+  "name": "Kampfgeschwader 26",
+  "kind": "Luftwaffe bomber wing",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kampfgeschwader_26"
  },
  "unit-kampfgeschwader-53": {
   "name": "Kampfgeschwader 53",
@@ -2702,6 +2811,13 @@
   "wikidata": "Q713875",
   "source": "https://en.wikipedia.org/wiki/Ministry_of_the_Navy_(Japan)"
  },
+ "unit-montreal-royals": {
+  "name": "Montreal Royals",
+  "kind": "minor league baseball team",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Montreal_Royals"
+ },
  "unit-naacp": {
   "name": "NAACP",
   "kind": "civil rights organization",
@@ -2869,6 +2985,13 @@
   "wikidata": "Q7042978",
   "source": "https://en.wikipedia.org/wiki/No._149_Squadron_RAF"
  },
+ "unit-no-162-squadron-rcaf": {
+  "name": "No. 162 Squadron RCAF",
+  "kind": "maritime patrol squadron",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._162_Squadron_RCAF"
+ },
  "unit-no-202-squadron-raf": {
   "name": "No. 202 Squadron RAF",
   "kind": "RAF Coastal Command flying boat squadron",
@@ -2918,12 +3041,26 @@
   "wikidata": "Q7043353",
   "source": "https://en.wikipedia.org/wiki/No._304_Polish_Bomber_Squadron"
  },
+ "unit-no-33-squadron-raf": {
+  "name": "No. 33 Squadron RAF",
+  "kind": "RAF fighter squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._33_Squadron_RAF"
+ },
  "unit-no-36-squadron-raf": {
   "name": "No. 36 Squadron RAF",
   "kind": "RAF torpedo bomber squadron",
   "nation": "Britain",
   "wikidata": "Q7043436",
   "source": "https://en.wikipedia.org/wiki/No._36_Squadron_RAF"
+ },
+ "unit-no-4-commando": {
+  "name": "No. 4 Commando",
+  "kind": "British Army commando unit",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._4_Commando"
  },
  "unit-no-422-squadron-rcaf": {
   "name": "No. 422 Squadron RCAF",
@@ -2938,6 +3075,16 @@
   "nation": "Britain",
   "wikidata": "Q7043510",
   "source": "https://en.wikipedia.org/wiki/No._43_Squadron_RAF"
+ },
+ "unit-no-44-squadron-raf": {
+  "name": "No. 44 Squadron RAF",
+  "kind": "bomber squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._44_Squadron_RAF",
+  "aka": [
+   "No. 44 (Rhodesia) Squadron"
+  ]
  },
  "unit-no-461-squadron-raaf": {
   "name": "No. 461 Squadron RAAF",
@@ -3163,6 +3310,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q183644",
   "source": "https://en.wikipedia.org/wiki/Pravda"
+ },
+ "unit-provisional-consultative-assembly": {
+  "name": "Provisional Consultative Assembly",
+  "kind": "Free French consultative assembly in Algiers",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Provisional_Consultative_Assembly"
  },
  "unit-provisional-government-of-the-french-republic": {
   "name": "Provisional Government of the French Republic",
@@ -3453,6 +3607,30 @@
   "wikidata": "Q246612",
   "source": "https://en.wikipedia.org/wiki/Sixth_Army_(United_States)"
  },
+ "unit-slovene-partisans": {
+  "name": "Slovene Partisans",
+  "kind": "resistance army",
+  "nation": "Yugoslavia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Slovene_Partisans"
+ },
+ "unit-smersh": {
+  "name": "SMERSH",
+  "kind": "Soviet military counterintelligence",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SMERSH"
+ },
+ "unit-socialist-unity-party-of-germany": {
+  "name": "Socialist Unity Party of Germany",
+  "kind": "political party, ruling party of East Germany",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Socialist_Unity_Party_of_Germany",
+  "aka": [
+   "SED"
+  ]
+ },
  "unit-sonderkommando-elbe": {
   "name": "Sonderkommando Elbe",
   "kind": "Luftwaffe ramming task force",
@@ -3624,6 +3802,13 @@
   "nation": "Romania",
   "source": "https://en.wikipedia.org/wiki/Third_Army_(Romania)",
   "wikidata": "Q223129"
+ },
+ "unit-thirty-fifth-army-japan": {
+  "name": "35th Army",
+  "kind": "Imperial Japanese Army field army in the Philippines",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Thirty-Fifth_Army_(Japan)"
  },
  "unit-thirty-second-army-japan": {
   "name": "Thirty-Second Army",
@@ -4168,6 +4353,13 @@
   "nation": "US",
   "wikidata": "Q8042593",
   "source": "https://en.wikipedia.org/wiki/XXI_Bomber_Command"
+ },
+ "unit-xxiv-corps-united-states": {
+  "name": "XXIV Corps",
+  "kind": "US Army corps",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/XXIV_Corps_(United_States)"
  },
  "unit-xxx-corps-united-kingdom": {
   "name": "XXX Corps",
