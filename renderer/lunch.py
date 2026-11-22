@@ -300,7 +300,7 @@ function render(){
   /* day detail */
   window.DAY=d;
   var posted=isPosted(d.date), L=[], R=[];
-  L.push('<div class="box dhead"><div class="meta"><span class="dot" style="background:'+d.seriesColor+';margin-top:0"></span>'+esc(d.seriesName)+" · Dispatch No. "+String(d.num).padStart(3,"0")+" · "+esc(fmtY(d.date))+(d.date===TODAY?' <span class="tag today">today</span>':"")+(posted?' <span class="tag done">posted</span>':"")+(d.somber?' <span class="tag somber">somber</span>':"")+'</div><h3>'+esc(d.title)+'</h3>'+
+  L.push('<div class="box dhead"><div class="meta"><span class="dot" style="background:'+d.seriesColor+';margin-top:0"></span>'+esc(d.seriesName)+(d.stamp?" · "+esc(d.stamp):" · Dispatch No. "+String(d.num).padStart(3,"0"))+" · "+esc(fmtY(d.date))+(d.date===TODAY?' <span class="tag today">today</span>':"")+(posted?' <span class="tag done">posted</span>':"")+(d.somber?' <span class="tag somber">somber</span>':"")+'</div><h3>'+esc(d.title)+'</h3>'+
     (d.somber?'<div class="attn" style="margin:8px 0 0"><b>Somber day.</b> No question, no jokes, keep replies respectful.</div>':"")+
     '<div class="btns"><a class="primary" href="'+esc(d.communityUrl)+'" target="_blank" rel="noopener">Open '+esc(d.community)+' community</a>'+
     (posted?'<button class="posted" data-act="unpost">Posted ✓</button>':'<button class="go" data-act="post">Mark posted</button>')+'</div>'+
