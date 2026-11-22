@@ -382,6 +382,13 @@
    "Red Lasswell"
   ]
  },
+ "person-alwin-wolz": {
+  "name": "Alwin Wolz",
+  "kind": "German general who surrendered Hamburg",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Alwin_Wolz"
+ },
  "person-amon-g-carter": {
   "name": "Amon G. Carter",
   "kind": "newspaper publisher, Fort Worth",
@@ -2595,6 +2602,16 @@
   "wikidata": "Q526220",
   "source": "https://en.wikipedia.org/wiki/Frank_Knox"
  },
+ "person-frank-maxwell-andrews": {
+  "name": "Frank Maxwell Andrews",
+  "kind": "U.S. Army lieutenant general, commander European Theater 1943",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Frank_Maxwell_Andrews",
+  "aka": [
+   "Frank M. Andrews"
+  ]
+ },
  "person-frank-merrill": {
   "name": "Frank Merrill",
   "kind": "U.S. Army general, commander of the 5307th Composite Unit (Merrill's Marauders)",
@@ -3485,6 +3502,13 @@
   "nation": "Germany",
   "source": "https://en.wikipedia.org/wiki/Hans-Diedrich_von_Tiesenhausen",
   "wikidata": "Q64574"
+ },
+ "person-hans-georg-von-friedeburg": {
+  "name": "Hans-Georg von Friedeburg",
+  "kind": "Kriegsmarine admiral, led the surrender delegation to Montgomery",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hans-Georg_von_Friedeburg"
  },
  "person-hans-graf-von-sponeck": {
   "name": "Hans Graf von Sponeck",

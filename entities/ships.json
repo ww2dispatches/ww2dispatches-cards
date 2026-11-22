@@ -76,6 +76,13 @@
   "wikidata": "Q1798965",
   "source": "https://en.wikipedia.org/wiki/French_cruiser_Lamotte-Picquet"
  },
+ "ship-french-destroyer-bison-1928": {
+  "name": "Bison",
+  "kind": "French Navy destroyer",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/French_destroyer_Bison_(1928)"
+ },
  "ship-french-destroyer-le-malin": {
   "name": "French destroyer Le Malin",
   "kind": "large destroyer",
@@ -921,6 +928,13 @@
   "wikidata": "Q638673",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-47_(1938)"
  },
+ "ship-german-submarine-u-473": {
+  "name": "U-473",
+  "kind": "German Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-473"
+ },
  "ship-german-submarine-u-486": {
   "name": "U-486",
   "kind": "Kriegsmarine U-boat",
@@ -1660,6 +1674,13 @@
   "nation": "Britain",
   "wikidata": "Q5631224",
   "source": "https://en.wikipedia.org/wiki/HMS_Affleck"
+ },
+ "ship-hms-afridi-f07": {
+  "name": "HMS Afridi (F07)",
+  "kind": "Royal Navy Tribal class destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Afridi_(F07)"
  },
  "ship-hms-ajax-22": {
   "name": "HMS Ajax (22)",
@@ -3977,6 +3998,13 @@
   "wikidata": "Q60771876",
   "source": "https://en.wikipedia.org/wiki/SS_Byron_D._Benson"
  },
+ "ship-ss-cap-arcona": {
+  "name": "SS Cap Arcona",
+  "kind": "German ocean liner, prison ship sunk 3 May 1945",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Cap_Arcona"
+ },
  "ship-ss-china-arrow": {
   "name": "SS China Arrow",
   "kind": "oil tanker",
@@ -4202,6 +4230,13 @@
    "Lima Maru"
   ]
  },
+ "ship-ss-malakand-1919": {
+  "name": "SS Malakand",
+  "kind": "Brocklebank Line cargo ship, exploded in Huskisson Dock",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Malakand_(1919)"
+ },
  "ship-ss-montebello": {
   "name": "SS Montebello",
   "kind": "oil tanker",
@@ -4309,6 +4344,13 @@
   "nation": "Britain",
   "wikidata": "Q109973547",
   "source": "https://en.wikipedia.org/wiki/SS_Tairoa"
+ },
+ "ship-ss-thielbek-1940": {
+  "name": "SS Thielbek",
+  "kind": "German cargo ship, prison ship sunk 3 May 1945",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Thielbek_(1940)"
  },
  "ship-ss-umona": {
   "name": "SS Umona",
@@ -4690,6 +4732,13 @@
   "nation": "US",
   "wikidata": "Q4552173",
   "source": "https://en.wikipedia.org/wiki/USS_Dickerson"
+ },
+ "ship-uss-donnell": {
+  "name": "USS Donnell (DE-56)",
+  "kind": "U.S. Navy Buckley class destroyer escort",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Donnell"
  },
  "ship-uss-edsall-dd-219": {
   "name": "USS Edsall (DD-219)",

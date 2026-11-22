@@ -363,6 +363,16 @@
   "wikidata": "Q5457073",
   "source": "https://en.wikipedia.org/wiki/Flak-Bait"
  },
+ "aircraft-focke-achgelis-fa-330": {
+  "name": "Focke-Achgelis Fa 330",
+  "kind": "rotor kite towed by U-boats",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Focke-Achgelis_Fa_330",
+  "aka": [
+   "Bachstelze"
+  ]
+ },
  "aircraft-focke-wulf-fw-190": {
   "name": "Focke-Wulf Fw 190",
   "kind": "German fighter",
@@ -504,6 +514,13 @@
   "nation": "Germany",
   "wikidata": "Q698685",
   "source": "https://en.wikipedia.org/wiki/Heinkel_He_280"
+ },
+ "aircraft-hot-stuff-aircraft": {
+  "name": "Hot Stuff",
+  "kind": "B-24D Liberator 41-23728, 93rd Bomb Group",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hot_Stuff_(aircraft)"
  },
  "aircraft-hughes-h-4-hercules": {
   "name": "Hughes H-4 Hercules",

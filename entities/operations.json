@@ -2536,6 +2536,13 @@
    "Australian New Zealand Agreement"
   ]
  },
+ "op-capture-of-hamburg": {
+  "name": "Capture of Hamburg",
+  "kind": "battle, 18 April to 3 May 1945",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Capture_of_Hamburg"
+ },
  "op-capture-of-kufra": {
   "name": "Capture of Kufra",
   "kind": "siege",
@@ -2689,6 +2696,13 @@
   "nation": "Italy",
   "wikidata": "Q719967",
   "source": "https://en.wikipedia.org/wiki/Constitution_of_Italy"
+ },
+ "op-constitution-of-japan": {
+  "name": "Constitution of Japan",
+  "kind": "postwar constitution, in force 3 May 1947",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Constitution_of_Japan"
  },
  "op-continuation-war": {
   "name": "Continuation War",
@@ -3649,6 +3663,13 @@
   "nation": "Japan",
   "wikidata": "Q797939",
   "source": "https://en.wikipedia.org/wiki/Invasion_of_Salamaua%E2%80%93Lae"
+ },
+ "op-invasion-of-tulagi-may-1942": {
+  "name": "Invasion of Tulagi (May 1942)",
+  "kind": "Japanese landing, opening of Operation MO",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Invasion_of_Tulagi_(May_1942)"
  },
  "op-invasion-of-yugoslavia": {
   "name": "Invasion of Yugoslavia",
