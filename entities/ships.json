@@ -1382,6 +1382,13 @@
   "wikidata": "Q1468235",
   "source": "https://en.wikipedia.org/wiki/HMS_Daring_(H16)"
  },
+ "ship-hms-dasher-d37": {
+  "name": "HMS Dasher (D37)",
+  "kind": "Royal Navy escort carrier",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Dasher_(D37)"
+ },
  "ship-hms-diadem-84": {
   "name": "HMS Diadem (84)",
   "kind": "light cruiser",
@@ -2179,6 +2186,13 @@
   "nation": "Italy",
   "wikidata": "Q262899",
   "source": "https://en.wikipedia.org/wiki/Italian_battleship_Littorio"
+ },
+ "ship-italian-battleship-vittorio-veneto": {
+  "name": "Italian battleship Vittorio Veneto",
+  "kind": "Regia Marina battleship, Iachino's flagship",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_battleship_Vittorio_Veneto"
  },
  "ship-italian-cruiser-alberico-da-barbiano": {
   "name": "Italian cruiser Alberico da Barbiano",
@@ -3562,6 +3576,16 @@
   "nation": "US",
   "wikidata": "Q2707611",
   "source": "https://en.wikipedia.org/wiki/USS_Astoria_(CA-34)"
+ },
+ "ship-uss-atik": {
+  "name": "USS Atik (AK-101)",
+  "kind": "US Navy Q-ship, former SS Carolyn",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Atik",
+  "aka": [
+   "SS Carolyn"
+  ]
  },
  "ship-uss-augusta-ca-31": {
   "name": "USS Augusta (CA-31)",

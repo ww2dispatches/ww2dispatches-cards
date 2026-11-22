@@ -200,6 +200,15 @@
   "lat": 44.492,
   "lon": 11.3434
  },
+ "place-ardrossan": {
+  "name": "Ardrossan",
+  "kind": "Ayrshire town, burial place and memorial for HMS Dasher's dead",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ardrossan",
+  "lat": null,
+  "lon": null
+ },
  "place-aruba": {
   "name": "Aruba",
   "kind": "island",
@@ -1746,6 +1755,15 @@
   "lat": 45.0461,
   "lon": 35.3788
  },
+ "place-firth-of-clyde": {
+  "name": "Firth of Clyde",
+  "kind": "estuary and anchorage in western Scotland",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Firth_of_Clyde",
+  "lat": null,
+  "lon": null
+ },
  "place-ford-river-rouge-complex": {
   "name": "Ford River Rouge complex",
   "kind": "Ford factory complex, Dearborn, Michigan",
@@ -2719,6 +2737,19 @@
   "lon": -157.799,
   "aka": [
    "Kaneohe"
+  ]
+ },
+ "place-kanmon-straits": {
+  "name": "Kanmon Straits",
+  "kind": "strait between Honshu and Kyushu, mined in Operation Starvation",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kanmon_Straits",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Shimonoseki Strait",
+   "Shimonoseki Straits"
   ]
  },
  "place-kassala": {
@@ -4399,6 +4430,15 @@
   "lat": 50.1,
   "lon": 8.7667
  },
+ "place-oflag-xiii-b": {
+  "name": "Oflag XIII-B",
+  "kind": "German prisoner of war camp for officers near Hammelburg",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Oflag_XIII-B",
+  "lat": null,
+  "lon": null
+ },
  "place-okinawa-island": {
   "name": "Okinawa",
   "kind": "island",
@@ -4482,6 +4522,15 @@
   "source": "https://en.wikipedia.org/wiki/Ormoc",
   "lat": 11.0106,
   "lon": 124.6075
+ },
+ "place-orpington": {
+  "name": "Orpington",
+  "kind": "Kent town hit by the last V-2 of 27 March 1945",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Orpington",
+  "lat": null,
+  "lon": null
  },
  "place-ortona": {
   "name": "Ortona",
@@ -5184,6 +5233,15 @@
   "lat": 52.3732,
   "lon": 4.8914
  },
+ "place-royallieu-compiegne-internment-camp": {
+  "name": "Royallieu-Compiegne internment camp",
+  "kind": "German internment and transit camp in France",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Royallieu-Compi%C3%A8gne_internment_camp",
+  "lat": null,
+  "lon": null
+ },
  "place-rur-dam": {
   "name": "Rur Dam",
   "kind": "dam on the Roer (Rur) at Schwammenauel, Germany",
@@ -5811,6 +5869,15 @@
   ],
   "lat": 51.2557,
   "lon": 21.5979
+ },
+ "place-stepney": {
+  "name": "Stepney",
+  "kind": "East London district, site of Hughes Mansions",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Stepney",
+  "lat": null,
+  "lon": null
  },
  "place-stolberg-rhineland": {
   "name": "Stolberg",

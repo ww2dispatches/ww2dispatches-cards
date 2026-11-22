@@ -305,6 +305,13 @@
   "wikidata": "Q4677322",
   "source": "https://en.wikipedia.org/wiki/Action_of_27_February_1941"
  },
+ "op-action-of-27-march-1942": {
+  "name": "Action of 27 March 1942",
+  "kind": "U-123 against the Q-ship USS Atik",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Action_of_27_March_1942"
+ },
  "op-action-of-28-january-1945": {
   "name": "Action of 28 January 1945",
   "kind": "naval action",
@@ -424,6 +431,13 @@
   "nation": "Britain",
   "wikidata": "Q640438",
   "source": "https://en.wikipedia.org/wiki/Area_bombing_directive"
+ },
+ "op-argentina-during-world-war-ii": {
+  "name": "Argentina during World War II",
+  "kind": "Argentina's neutrality and declaration of war",
+  "nation": "Argentina",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Argentina_during_World_War_II"
  },
  "op-armistice-day": {
   "name": "Armistice Day",
@@ -720,6 +734,13 @@
    "Operation Backhander",
    "Operation Dexterity"
   ]
+ },
+ "op-battle-of-cape-matapan": {
+  "name": "Battle of Cape Matapan",
+  "kind": "naval battle, 27 to 29 March 1941",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Cape_Matapan"
  },
  "op-battle-of-changsha-1941-1942": {
   "name": "Third Battle of Changsha",
@@ -4070,6 +4091,13 @@
    "Lake Balaton offensive"
   ]
  },
+ "op-operation-starvation": {
+  "name": "Operation Starvation",
+  "kind": "US aerial mining of Japanese waters, 1945",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Starvation"
+ },
  "op-operation-steinbock": {
   "name": "Operation Steinbock",
   "kind": "Luftwaffe bombing campaign against Britain",
@@ -4950,6 +4978,16 @@
    "Baltutlämningen"
   ]
  },
+ "op-task-force-baum": {
+  "name": "Task Force Baum",
+  "kind": "US Army raid on Hammelburg POW camp, March 1945",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Task_Force_Baum",
+  "aka": [
+   "Hammelburg raid"
+  ]
+ },
  "op-tehran-conference": {
   "name": "Tehran Conference",
   "kind": "Allied conference",
@@ -5002,6 +5040,13 @@
   "nation": "Bulgaria",
   "wikidata": "Q106631140",
   "source": "https://en.wikipedia.org/wiki/The_Holocaust_in_Bulgarian-occupied_Greece"
+ },
+ "op-the-holocaust-in-france": {
+  "name": "The Holocaust in France",
+  "kind": "persecution and deportation of Jews from France",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/The_Holocaust_in_France"
  },
  "op-the-holocaust-in-hungary": {
   "name": "The Holocaust in Hungary",
@@ -5439,6 +5484,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Yip_Yip_Yaphank",
   "wikidata": "Q8053805"
+ },
+ "op-yugoslav-coup-d-etat": {
+  "name": "Yugoslav coup d'etat",
+  "kind": "27 March 1941 coup in Belgrade",
+  "nation": "Yugoslavia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Yugoslav_coup_d%27%C3%A9tat"
  },
  "op-zhitomir-berdichev-offensive": {
   "name": "Zhitomir to Berdichev offensive",
