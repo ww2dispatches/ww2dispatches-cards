@@ -556,6 +556,13 @@
   "source": "https://en.wikipedia.org/wiki/2nd_Armored_Division_(United_States)",
   "wikidata": "Q2633981"
  },
+ "unit-2nd-belorussian-front": {
+  "name": "2nd Belorussian Front",
+  "kind": "Soviet army group",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/2nd_Belorussian_Front"
+ },
  "unit-2nd-dragoon-guards-queen-s-bays": {
   "name": "Queen's Bays",
   "kind": "British cavalry regiment",
@@ -1352,6 +1359,13 @@
   "nation": "worldwide",
   "wikidata": "Q698099",
   "source": "https://en.wikipedia.org/wiki/Allied_Control_Council"
+ },
+ "unit-althing": {
+  "name": "Althing",
+  "kind": "parliament of Iceland",
+  "nation": "Iceland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Althing"
  },
  "unit-america-first-committee": {
   "name": "America First Committee",

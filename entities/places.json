@@ -266,6 +266,15 @@
   "lat": null,
   "lon": null
  },
+ "place-baku": {
+  "name": "Baku",
+  "kind": "Soviet oil city on the Caspian Sea",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Baku",
+  "lat": null,
+  "lon": null
+ },
  "place-balalae-island": {
   "name": "Ballale",
   "kind": "island",
@@ -4595,6 +4604,15 @@
   "lat": 49.4548,
   "lon": 11.0465
  },
+ "place-palau": {
+  "name": "Palau",
+  "kind": "island group in the western Carolines, Japanese fleet anchorage",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Palau",
+  "lat": null,
+  "lon": null
+ },
  "place-palawan": {
   "name": "Palawan",
   "kind": "Philippine island",
@@ -5044,6 +5062,15 @@
   "aka": [
    "No. 21 Maintenance Unit"
   ]
+ },
+ "place-raf-habbaniya": {
+  "name": "RAF Habbaniya",
+  "kind": "Royal Air Force station in Iraq",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/RAF_Habbaniya",
+  "lat": null,
+  "lon": null
  },
  "place-raf-tangmere": {
   "name": "RAF Tangmere",
@@ -5713,6 +5740,15 @@
   ],
   "lat": 51.447,
   "lon": 23.5941
+ },
+ "place-sofia": {
+  "name": "Sofia",
+  "kind": "capital of Bulgaria",
+  "nation": "Bulgaria",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sofia",
+  "lat": null,
+  "lon": null
  },
  "place-sojourner-truth-project": {
   "name": "Sojourner Truth Homes",

@@ -403,6 +403,16 @@
   "wikidata": "Q1499781",
   "source": "https://en.wikipedia.org/wiki/Handley_Page_Heyford"
  },
+ "aircraft-heinkel-he-100": {
+  "name": "Heinkel He 100",
+  "kind": "German prototype fighter, 1939 world speed record holder",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Heinkel_He_100",
+  "aka": [
+   "He 112U"
+  ]
+ },
  "aircraft-heinkel-he-111": {
   "name": "Heinkel He 111",
   "kind": "bomber",

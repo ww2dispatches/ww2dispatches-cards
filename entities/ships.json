@@ -1655,6 +1655,13 @@
    "HMS Kipling"
   ]
  },
+ "ship-hms-laforey-g99": {
+  "name": "HMS Laforey (G99)",
+  "kind": "British L class destroyer, sunk by U-223 in 1944",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Laforey_(G99)"
+ },
  "ship-hms-legion-g74": {
   "name": "HMS Legion (G74)",
   "kind": "destroyer",
@@ -3431,6 +3438,13 @@
   "nation": "Britain",
   "wikidata": "Q109973547",
   "source": "https://en.wikipedia.org/wiki/SS_Tairoa"
+ },
+ "ship-ss-umona": {
+  "name": "SS Umona",
+  "kind": "British cargo liner, sunk by U-124 in 1941",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Umona"
  },
  "ship-ss-ussukuma": {
   "name": "Ussukuma",

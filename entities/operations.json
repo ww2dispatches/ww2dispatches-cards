@@ -229,6 +229,13 @@
    "Victorious February"
   ]
  },
+ "op-1949-anti-nato-riot-in-iceland": {
+  "name": "1949 anti NATO riot in Iceland",
+  "kind": "riot in Reykjavik as Iceland's parliament voted to join NATO",
+  "nation": "Iceland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1949_anti-NATO_riot_in_Iceland"
+ },
  "op-1949-armistice-agreements": {
   "name": "1949 Armistice Agreements",
   "kind": "armistices between Israel and Egypt, Lebanon, Jordan and Syria",
@@ -1681,6 +1688,17 @@
   "wikidata": "Q15212263",
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Berlin_in_World_War_II"
  },
+ "op-bombing-of-bulgaria-in-world-war-ii": {
+  "name": "Bombing of Bulgaria in World War II",
+  "kind": "Allied air raids on Bulgaria, chiefly Sofia, 1941 to 1944",
+  "nation": "Bulgaria",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Bulgaria_in_World_War_II",
+  "aka": [
+   "Bombing of Sofia in World War II"
+  ],
+  "note": "'Bombing of Sofia in World War II' redirects here"
+ },
  "op-bombing-of-calcutta": {
   "name": "Bombing of Calcutta",
   "kind": "Japanese air raids",
@@ -2119,6 +2137,13 @@
   "wikidata": "Q708253",
   "source": "https://en.wikipedia.org/wiki/Colmar_Pocket"
  },
+ "op-commissar-order": {
+  "name": "Commissar Order",
+  "kind": "German order to shoot Soviet political commissars, 1941",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Commissar_Order"
+ },
  "op-conference-for-the-reduction-and-limitation-of-armaments": {
   "name": "Conference for the Reduction and Limitation of Armaments",
   "kind": "international conference",
@@ -2383,6 +2408,13 @@
   "nation": "Britain",
   "wikidata": "Q1052120",
   "source": "https://en.wikipedia.org/wiki/East_African_campaign_(World_War_II)"
+ },
+ "op-east-pomeranian-offensive": {
+  "name": "East Pomeranian offensive",
+  "kind": "Soviet offensive in Pomerania, February to April 1945",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/East_Pomeranian_offensive"
  },
  "op-east-prussian-offensive": {
   "name": "East Prussian offensive",
@@ -3668,6 +3700,13 @@
    "Vaagso raid"
   ]
  },
+ "op-operation-arsenal": {
+  "name": "Operation Arsenal",
+  "kind": "Gray Ranks raid in Warsaw that freed Jan Bytnar, 26 March 1943",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Arsenal"
+ },
  "op-operation-attila": {
   "name": "Operation Attila",
   "kind": "German plan to occupy Vichy France, Directive No. 19",
@@ -3815,6 +3854,13 @@
   "nation": "Britain",
   "wikidata": "Q327085",
   "source": "https://en.wikipedia.org/wiki/Operation_Crusader"
+ },
+ "op-operation-desecrate-one": {
+  "name": "Operation Desecrate One",
+  "kind": "U.S. carrier strikes on Palau and the western Carolines, March 1944",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Desecrate_One"
  },
  "op-operation-encore": {
   "name": "Operation Encore",
@@ -4032,6 +4078,13 @@
   "wikidata": "Q42886508",
   "source": "https://en.wikipedia.org/wiki/Operation_Oyster"
  },
+ "op-operation-pike": {
+  "name": "Operation Pike",
+  "kind": "Anglo French plan to bomb Soviet Caucasus oilfields, 1940",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Pike"
+ },
  "op-operation-plunder": {
   "name": "Operation Plunder",
   "kind": "river crossing operation",
@@ -4230,6 +4283,16 @@
   "nation": "US",
   "wikidata": "Q17052942",
   "source": "https://en.wikipedia.org/wiki/Oyama_v._California"
+ },
+ "op-pacific-ocean-areas": {
+  "name": "Pacific Ocean Areas",
+  "kind": "U.S. Pacific command under Admiral Nimitz, 1942 to 1945",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Pacific_Ocean_Areas",
+  "aka": [
+   "POA"
+  ]
  },
  "op-palawan-massacre": {
   "name": "Palawan massacre",
@@ -4764,6 +4827,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q155103",
   "source": "https://en.wikipedia.org/wiki/Siege_of_Budapest"
+ },
+ "op-siege-of-danzig-1945": {
+  "name": "Siege of Danzig (1945)",
+  "kind": "Soviet and Polish capture of Danzig, 15 to 30 March 1945",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Siege_of_Danzig_(1945)"
  },
  "op-siege-of-giarabub": {
   "name": "Siege of Giarabub",
