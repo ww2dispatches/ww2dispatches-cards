@@ -265,7 +265,7 @@
   "name": "Electron microscope",
   "kind": "scientific instrument",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q132560",
   "source": "https://en.wikipedia.org/wiki/Electron_microscope"
  },
  "machine-eniac": {
@@ -527,7 +527,7 @@
   "name": "LSD",
   "kind": "hallucinogenic drug, lysergic acid diethylamide",
   "nation": "Switzerland",
-  "wikidata": null,
+  "wikidata": "Q23118",
   "source": "https://en.wikipedia.org/wiki/LSD",
   "aka": [
    "lysergic acid diethylamide",
