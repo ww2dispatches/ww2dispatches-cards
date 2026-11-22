@@ -1033,6 +1033,13 @@
   "wikidata": "Q2000242",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-503"
  },
+ "ship-german-submarine-u-507": {
+  "name": "German submarine U-507",
+  "kind": "Type IXC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-507"
+ },
  "ship-german-submarine-u-515": {
   "name": "U-515",
   "kind": "Kriegsmarine Type IXC U-boat",
@@ -1448,6 +1455,13 @@
   "nation": "Germany",
   "wikidata": "Q549383",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-852"
+ },
+ "ship-german-submarine-u-853": {
+  "name": "German submarine U-853",
+  "kind": "Type IXC/40 U-boat sunk off Block Island",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-853"
  },
  "ship-german-submarine-u-862": {
   "name": "U-862",
@@ -4108,6 +4122,13 @@
   "wikidata": "Q7866984",
   "source": "https://en.wikipedia.org/wiki/SS_Absaroka"
  },
+ "ship-ss-alcoa-puritan-1941": {
+  "name": "SS Alcoa Puritan (1941)",
+  "kind": "American cargo ship sunk by U-507",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Alcoa_Puritan_(1941)"
+ },
  "ship-ss-almeda-star": {
   "name": "SS Almeda Star",
   "kind": "passenger liner",
@@ -4810,6 +4831,13 @@
   "nation": "US",
   "wikidata": "Q1698571",
   "source": "https://en.wikipedia.org/wiki/USS_Brownson_(DD-518)"
+ },
+ "ship-uss-buckley": {
+  "name": "USS Buckley (DE-51)",
+  "kind": "Buckley class destroyer escort that rammed U-66",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Buckley"
  },
  "ship-uss-bunker-hill-cv-17": {
   "name": "USS Bunker Hill (CV-17)",

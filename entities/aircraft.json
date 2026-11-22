@@ -778,6 +778,18 @@
    "Zero"
   ]
  },
+ "aircraft-mitsubishi-a7m-reppu": {
+  "name": "Mitsubishi A7M Reppu",
+  "kind": "Japanese Navy carrier fighter prototype, the Zero's planned successor",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mitsubishi_A7M_Repp%C5%AB",
+  "aka": [
+   "A7M",
+   "Reppū",
+   "Sam"
+  ]
+ },
  "aircraft-mitsubishi-g3m": {
   "name": "Mitsubishi G3M",
   "kind": "navy medium bomber",

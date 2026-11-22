@@ -1564,6 +1564,13 @@
   "wikidata": "Q7207923",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Point_175"
  },
+ "op-battle-of-point-judith": {
+  "name": "Battle of Point Judith",
+  "kind": "sinking of U-853 off Rhode Island, 5 and 6 May 1945",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Point_Judith"
+ },
  "op-battle-of-port-moresby": {
   "name": "Battle of Port Moresby",
   "kind": "air campaign over Port Moresby 1942 to 1943",
@@ -3590,6 +3597,13 @@
   "wikidata": "Q188972",
   "source": "https://en.wikipedia.org/wiki/Greek_Civil_War"
  },
+ "op-greenock-blitz": {
+  "name": "Greenock Blitz",
+  "kind": "German bombing of Greenock, 6 and 7 May 1941",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Greenock_Blitz"
+ },
  "op-guadalcanal-campaign": {
   "name": "Guadalcanal campaign",
   "kind": "campaign",
@@ -3627,6 +3641,13 @@
   "nation": "Germany",
   "wikidata": "Q508062",
   "source": "https://en.wikipedia.org/wiki/Heiligenbeil_Pocket"
+ },
+ "op-hindenburg-disaster": {
+  "name": "Hindenburg disaster",
+  "kind": "airship fire at Lakehurst, 6 May 1937",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hindenburg_disaster"
  },
  "op-ho-sainteny-agreement": {
   "name": "Ho Sainteny Agreement",
@@ -5339,6 +5360,13 @@
   "aka": [
    "Baby Blitz"
   ]
+ },
+ "op-operation-strike": {
+  "name": "Operation Strike",
+  "kind": "final Allied attack on Tunis, 6 to 13 May 1943",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Strike"
  },
  "op-operation-sunrise-world-war-ii": {
   "name": "Operation Sunrise (World War II)",

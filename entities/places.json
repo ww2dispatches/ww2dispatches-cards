@@ -2422,6 +2422,15 @@
   "lat": 72.0,
   "lon": -40.0
  },
+ "place-greenock": {
+  "name": "Greenock",
+  "kind": "shipbuilding town on the Firth of Clyde, Scotland",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Greenock",
+  "lat": null,
+  "lon": null
+ },
  "place-greifswalder-oie": {
   "name": "Greifswalder Oie",
   "kind": "Baltic island off Peenemunde",
@@ -3778,6 +3787,15 @@
   "wikidata": "Q15288",
   "lat": 60.8428,
   "lon": 31.4597
+ },
+ "place-lakehurst-maxfield-field": {
+  "name": "Lakehurst Maxfield Field",
+  "kind": "naval air station in New Jersey, site of the Hindenburg disaster",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Lakehurst_Maxfield_Field",
+  "lat": null,
+  "lon": null
  },
  "place-langerwehe": {
   "name": "Langerwehe",
@@ -6684,6 +6702,15 @@
   "source": "https://en.wikipedia.org/wiki/Sheffield",
   "lat": 53.3808,
   "lon": -1.4703
+ },
+ "place-shiprock-new-mexico": {
+  "name": "Shiprock, New Mexico",
+  "kind": "town on the Navajo Nation, New Mexico",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Shiprock,_New_Mexico",
+  "lat": null,
+  "lon": null
  },
  "place-shlisselburg": {
   "name": "Shlisselburg",
