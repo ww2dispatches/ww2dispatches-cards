@@ -2083,6 +2083,13 @@
   "wikidata": "Q743889",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Wau"
  },
+ "op-battle-of-west-hubei": {
+  "name": "Battle of West Hubei",
+  "kind": "battle",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_West_Hubei"
+ },
  "op-battle-of-yan-an": {
   "name": "Battle of Yan'an",
   "kind": "Chinese Civil War battle",
@@ -2738,6 +2745,13 @@
   "nation": "Spain",
   "wikidata": "Q166495",
   "source": "https://en.wikipedia.org/wiki/Catalonia_Offensive"
+ },
+ "op-changjiao-massacre": {
+  "name": "Changjiao massacre",
+  "kind": "massacre of Chinese civilians and soldiers",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Changjiao_massacre"
  },
  "op-channel-dash": {
   "name": "Channel Dash",
@@ -4667,6 +4681,13 @@
   "wikidata": "Q1967718",
   "source": "https://en.wikipedia.org/wiki/National_Security_Act_of_1947"
  },
+ "op-national-service-armed-forces-act-1939": {
+  "name": "National Service (Armed Forces) Act 1939",
+  "kind": "British conscription law",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/National_Service_(Armed_Forces)_Act_1939"
+ },
  "op-navy-day": {
   "name": "Navy Day",
   "kind": "naval observance",
@@ -5772,6 +5793,13 @@
    "Tag von Potsdam"
   ]
  },
+ "op-prague-offensive": {
+  "name": "Prague offensive",
+  "kind": "Soviet strategic offensive",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Prague_offensive"
+ },
  "op-prague-uprising": {
   "name": "Prague uprising",
   "kind": "Czech uprising against German occupation, May 1945",
@@ -6287,6 +6315,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q108266326",
   "source": "https://en.wikipedia.org/wiki/Siege_of_Danzig_(1945)"
+ },
+ "op-siege-of-dunkirk-1944-1945": {
+  "name": "Siege of Dunkirk (1944 to 1945)",
+  "kind": "siege",
+  "nation": "Czechoslovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Siege_of_Dunkirk_(1944%E2%80%931945)"
  },
  "op-siege-of-giarabub": {
   "name": "Siege of Giarabub",
@@ -7022,6 +7057,13 @@
   "nation": "Italy",
   "wikidata": "Q733211",
   "source": "https://en.wikipedia.org/wiki/Via_Rasella_attack"
+ },
+ "op-victory-day-9-may": {
+  "name": "Victory Day (9 May)",
+  "kind": "Soviet victory holiday",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Victory_Day_(9_May)"
  },
  "op-victory-program": {
   "name": "Victory Program",

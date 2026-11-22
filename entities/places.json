@@ -1888,6 +1888,15 @@
   "lat": 53.3497,
   "lon": -6.2603
  },
+ "place-dunkirk": {
+  "name": "Dunkirk",
+  "kind": "port city",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Dunkirk",
+  "lat": null,
+  "lon": null
+ },
  "place-duren": {
   "name": "Duren",
   "kind": "town",
@@ -2569,6 +2578,15 @@
   "lat": 45.8811,
   "lon": 16.7853
  },
+ "place-guernsey": {
+  "name": "Guernsey",
+  "kind": "Channel Island",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Guernsey",
+  "lat": null,
+  "lon": null
+ },
  "place-guidonia-montecelio": {
   "name": "Guidonia Montecelio",
   "kind": "town and air base near Rome",
@@ -3154,6 +3172,15 @@
   "lat": 51.544,
   "lon": -0.1027
  },
+ "place-italian-east-africa": {
+  "name": "Italian East Africa",
+  "kind": "Italian colony",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_East_Africa",
+  "lat": null,
+  "lon": null
+ },
  "place-itter-castle": {
   "name": "Itter Castle",
   "kind": "castle in Tyrol, Austria, used as a prison for French VIPs",
@@ -3219,6 +3246,15 @@
   "aka": [
    "Thomas Jefferson Memorial"
   ]
+ },
+ "place-jersey": {
+  "name": "Jersey",
+  "kind": "Channel Island",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Jersey",
+  "lat": null,
+  "lon": null
  },
  "place-jinan": {
   "name": "Jinan",
@@ -4839,6 +4875,15 @@
   "aka": [
    "Fedala"
   ]
+ },
+ "place-mollergata-19": {
+  "name": "Møllergata 19",
+  "kind": "Oslo police station and prison",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/M%C3%B8llergata_19",
+  "lat": null,
+  "lon": null
  },
  "place-mong-yu": {
   "name": "Mong-Yu",
@@ -6850,6 +6895,15 @@
   "nation": "Algeria",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/S%C3%A9tif",
+  "lat": null,
+  "lon": null
+ },
+ "place-sevastopol": {
+  "name": "Sevastopol",
+  "kind": "city and naval base",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sevastopol",
   "lat": null,
   "lon": null
  },
