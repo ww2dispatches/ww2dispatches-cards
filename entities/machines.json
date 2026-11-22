@@ -99,6 +99,16 @@
    "SWOD Mk 9"
   ]
  },
+ "machine-bat-bomb": {
+  "name": "Bat bomb",
+  "kind": "experimental incendiary weapon carried by bats",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bat_bomb",
+  "aka": [
+   "Project X-Ray"
+  ]
+ },
  "machine-blalock-thomas-taussig-shunt": {
   "name": "Blalock Thomas Taussig shunt",
   "kind": "surgical procedure",

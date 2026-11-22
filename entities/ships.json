@@ -621,6 +621,13 @@
    "U-174"
   ]
  },
+ "ship-german-submarine-u-176": {
+  "name": "U-176",
+  "kind": "Type IXC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-176"
+ },
  "ship-german-submarine-u-177": {
   "name": "German submarine U-177",
   "kind": "Type IXD2 U-boat",
@@ -1534,6 +1541,13 @@
   "aka": [
    "U-803"
   ]
+ },
+ "ship-german-submarine-u-805": {
+  "name": "U-805",
+  "kind": "Type IXC/40 U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-805"
  },
  "ship-german-submarine-u-81-1941": {
   "name": "U-81",
@@ -2513,6 +2527,13 @@
   "nation": "Britain",
   "wikidata": "Q1565067",
   "source": "https://en.wikipedia.org/wiki/HMS_Matabele"
+ },
+ "ship-hms-matchless-g52": {
+  "name": "HMS Matchless (G52)",
+  "kind": "Royal Navy destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Matchless_(G52)"
  },
  "ship-hms-mauritius-80": {
   "name": "HMS Mauritius (80)",
@@ -4906,6 +4927,16 @@
   "nation": "US",
   "wikidata": "Q7866025",
   "source": "https://en.wikipedia.org/wiki/USCGC_Campbell_(WPG-32)"
+ },
+ "ship-uscgc-eagle-wix-327": {
+  "name": "USCGC Eagle (WIX-327)",
+  "kind": "Coast Guard sail training barque, formerly German Horst Wessel",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USCGC_Eagle_(WIX-327)",
+  "aka": [
+   "Horst Wessel"
+  ]
  },
  "ship-uscgc-escanaba-wpg-77": {
   "name": "USCGC Escanaba (WPG-77)",

@@ -1300,6 +1300,18 @@
   "lat": 51.4452,
   "lon": -0.0207
  },
+ "place-cavern-city-air-terminal": {
+  "name": "Carlsbad Army Airfield",
+  "kind": "wartime army airfield, now Cavern City Air Terminal",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Cavern_City_Air_Terminal",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Carlsbad Army Airfield"
+  ]
+ },
  "place-cavite-city": {
   "name": "Cavite",
   "kind": "city",
@@ -5104,6 +5116,15 @@
   "lat": 55.8719,
   "lon": 37.4546
  },
+ "place-moscow-metro": {
+  "name": "Moscow Metro",
+  "kind": "underground railway",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Moscow_Metro",
+  "lat": null,
+  "lon": null
+ },
  "place-moselle": {
   "name": "Moselle River",
   "kind": "river",
@@ -6228,6 +6249,15 @@
   "lat": 50.7976,
   "lon": -1.0929
  },
+ "place-portsmouth-naval-shipyard": {
+  "name": "Portsmouth Naval Shipyard",
+  "kind": "U.S. Navy shipyard, Kittery, Maine, near Portsmouth, New Hampshire",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Portsmouth_Naval_Shipyard",
+  "lat": null,
+  "lon": null
+ },
  "place-potosi-mountain-nevada": {
   "name": "Potosi Mountain",
   "kind": "mountain",
@@ -6368,6 +6398,15 @@
   "source": "https://en.wikipedia.org/wiki/RAF_Charterhall",
   "lat": 55.707,
   "lon": -2.376
+ },
+ "place-raf-cranwell": {
+  "name": "RAF Cranwell",
+  "kind": "RAF station and college, Lincolnshire",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/RAF_Cranwell",
+  "lat": null,
+  "lon": null
  },
  "place-raf-digby": {
   "name": "RAF Digby",
@@ -6522,6 +6561,15 @@
   "source": "https://en.wikipedia.org/wiki/Rhodes",
   "lat": 36.17,
   "lon": 27.92
+ },
+ "place-rijsoord": {
+  "name": "Rijsoord",
+  "kind": "village, site of the Dutch capitulation",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Rijsoord",
+  "lat": null,
+  "lon": null
  },
  "place-road-of-life": {
   "name": "Road of Life",

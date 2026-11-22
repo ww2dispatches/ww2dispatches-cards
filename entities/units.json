@@ -2143,6 +2143,14 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Council_of_Europe"
  },
+ "unit-cuban-revolutionary-navy": {
+  "name": "Cuban Navy",
+  "kind": "navy of Cuba",
+  "nation": "Cuba",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Cuban_Revolutionary_Navy",
+  "note": "Cuban Navy redirects to this article"
+ },
  "unit-czechoslovak-government-in-exile": {
   "name": "Czechoslovak government-in-exile",
   "kind": "government in exile, London",
@@ -3370,6 +3378,13 @@
   "nation": "Australia",
   "wikidata": "Q7043463",
   "source": "https://en.wikipedia.org/wiki/No._3_Squadron_RAAF"
+ },
+ "unit-no-303-squadron-raf": {
+  "name": "No. 303 Polish Fighter Squadron",
+  "kind": "Polish fighter squadron in the RAF",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._303_Squadron_RAF"
  },
  "unit-no-304-polish-bomber-squadron": {
   "name": "No. 304 Polish Bomber Squadron",

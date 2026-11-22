@@ -3727,6 +3727,16 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/German_invasion_of_Luxembourg"
  },
+ "op-german-invasion-of-the-netherlands": {
+  "name": "German invasion of the Netherlands",
+  "kind": "campaign, 10 to 17 May 1940",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_invasion_of_the_Netherlands",
+  "aka": [
+   "Battle of the Netherlands"
+  ]
+ },
  "op-german-polish-declaration-of-non-aggression": {
   "name": "German-Polish declaration of non-aggression",
   "kind": "1934 non-aggression pact",
@@ -4705,6 +4715,13 @@
   "wikidata": "Q543312",
   "source": "https://en.wikipedia.org/wiki/Marshalls%E2%80%93Gilberts_raids"
  },
+ "op-may-15-incident": {
+  "name": "May 15 incident",
+  "kind": "attempted coup in Japan, 1932",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/May_15_incident"
+ },
  "op-mechelen-incident": {
   "name": "Mechelen incident",
   "kind": "plane crash and intelligence crisis",
@@ -5152,6 +5169,13 @@
   "nation": "Britain",
   "wikidata": "Q3883939",
   "source": "https://en.wikipedia.org/wiki/Operation_Bowler"
+ },
+ "op-operation-brevity": {
+  "name": "Operation Brevity",
+  "kind": "British offensive in the Western Desert, May 1941",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Brevity"
  },
  "op-operation-buccaneer": {
   "name": "Operation Buccaneer",
