@@ -34,6 +34,11 @@ import media
 # Card and Name This links go to Threads, the strongest platform (27 Oct 2026 ranking:
 # Threads, Instagram, YouTube, TikTok, Facebook, X).
 THREADS_PROFILE = "https://www.threads.com/@ww2dispatches"
+
+
+def on_label(verb, link):
+    """Old profile Threads links were repointed to Instagram on 22 Nov 2026, so the button names where it goes."""
+    return f"{verb} on Instagram" if link and "instagram.com" in link else f"{verb} on Threads"
 # Instagram rides along as a small icon beside the Threads link (27 Oct 2026).
 IG_PROFILE = "https://www.instagram.com/ww2dispatches"
 SHORTS = "https://www.youtube.com/@ww2dispatcheshq/shorts"
@@ -78,7 +83,7 @@ for d in cards:
             "title": fmt or d.get("title", ""), "series": SERIES.get(d.get("series"), ""),
             "img": img,
             "alt": f"WW2 Dispatches card, Dispatch No. {num}, {SERIES.get(d.get('series'), '')}. {d.get('title', '')}.",
-            "link": links.get("threads") or THREADS_PROFILE, "linkLabel": "Read on Threads",
+            "link": links.get("threads") or THREADS_PROFILE, "linkLabel": on_label("Read", links.get("threads")),
             "ig": links.get("instagram") or IG_PROFILE,
         })
 
@@ -133,7 +138,7 @@ for n in load("namethis"):
         "date": n["post_date"], "time": "10:00", "kind": "namethis", "num": "",
         "label": "10 a.m.", "title": "Name This", "series": "", "img": img,
         "alt": "WW2 Dispatches Name This card. Can you name it?",
-        "link": links.get("threads") or THREADS_PROFILE, "linkLabel": "Guess on Threads",
+        "link": links.get("threads") or THREADS_PROFILE, "linkLabel": on_label("Guess", links.get("threads")),
         "ig": links.get("instagram") or IG_PROFILE,
     })
 

@@ -449,7 +449,7 @@ BOOK_SIGNUP = """<div class="subscribe book-sub">
       <button type="submit">Subscribe</button>
     </form>
     <p class="sent" hidden>Almost done. Check your inbox to confirm.</p>
-    <p class="follow">Or follow each series live every morning at 6:30 MT on <a href="{threads}" target="_blank" rel="noopener">Threads</a>.</p>
+    <p class="follow">Or follow each series live every morning at 6:30 MT on <a href="{x}" target="_blank" rel="noopener">X</a>.</p>
   </div>"""
 
 
@@ -515,7 +515,7 @@ def build_book(vol, days, parts):
       {"".join(entries)}
     </section>
   </div>
-  {BOOK_SIGNUP.format(fid="em-book", threads=THREADS)}
+  {BOOK_SIGNUP.format(fid="em-book", x=X)}
 </main>"""
     desc = f"{vol['title']}, {vol.get('dates', '')}: {vol.get('blurb', '')}"
     series_ld = {"@type": "CreativeWorkSeries", "@id": f"{URL}/campaign-series/{vid}/#series", "name": f"Campaign Series: {vol['title']}",
@@ -582,7 +582,7 @@ def build_parts(vol, days, parts):
     {"".join(secs)}
     <div class="ch-end">{closing}<p class="ch-credit">Cover: {esc(p["coverCredit"])}</p></div>
   </article>
-  {BOOK_SIGNUP.format(fid=f"em-part-{p['nn']}", threads=THREADS)}
+  {BOOK_SIGNUP.format(fid=f"em-part-{p['nn']}", x=X)}
 </main>"""
         name = f"part-{p['nn']}.html"
         keep.add(name)

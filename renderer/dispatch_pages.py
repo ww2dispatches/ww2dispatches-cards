@@ -127,7 +127,7 @@ def build_page(d, prev, nxt, same_day):
         v = d["video"]
         video = f'<a class="btn ghost dp-watch" href="{esc(v["link"])}" target="_blank" rel="noopener" data-release="{v["at"]}">{PLAY}{esc(v["label"])}</a>'
     acts = (f'<a class="btn dp-collect" href="/declass?card={esc(d["id"])}">Collect this card in Declass</a>'
-            f'<div class="dp-acts"><a class="btn cream" href="{esc(threads)}" target="_blank" rel="noopener">Read on Threads</a>'
+            f'<div class="dp-acts"><a class="btn cream" href="{esc(threads)}" target="_blank" rel="noopener">{"Read on Instagram" if "instagram.com" in threads else "Read on Threads"}</a>'
             f'<a class="btn ghost dp-ig" href="{esc(ig)}" target="_blank" rel="noopener" aria-label="See it on Instagram">{IG}</a>{video}</div>')
     srcs = ", ".join(f'<a href="{esc(s["url"])}" target="_blank" rel="noopener">{esc(s["title"])}</a>' for s in (r.get("sources") or []) if s.get("url"))
     credit = r.get("photoCredit") or ""
