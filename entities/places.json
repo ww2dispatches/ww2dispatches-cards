@@ -1158,6 +1158,15 @@
   "lat": 40.9011,
   "lon": 15.4333
  },
+ "place-cambrai": {
+  "name": "Cambrai",
+  "kind": "town in northern France",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Cambrai",
+  "lat": null,
+  "lon": null
+ },
  "place-camp-upton": {
   "name": "Camp Upton",
   "kind": "Army induction camp",
@@ -1659,6 +1668,15 @@
   "wikidata": "Q639666",
   "lat": 56.3736,
   "lon": -3.8431
+ },
+ "place-crimea": {
+  "name": "Crimea",
+  "kind": "peninsula",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Crimea",
+  "lat": null,
+  "lon": null
  },
  "place-crveni-krst-concentration-camp": {
   "name": "Crveni Krst concentration camp",
@@ -2355,6 +2373,18 @@
   "source": "https://en.wikipedia.org/wiki/Garigliano",
   "lat": 41.2167,
   "lon": 13.75
+ },
+ "place-gdynia": {
+  "name": "Gdynia",
+  "kind": "Baltic port, Gotenhafen under German occupation",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Gdynia",
+  "aka": [
+   "Gotenhafen"
+  ],
+  "lat": null,
+  "lon": null
  },
  "place-gearhart-mountain": {
   "name": "Gearhart Mountain",
@@ -6294,6 +6324,15 @@
   "lat": -72.5,
   "lon": 12.0
  },
+ "place-quirinal-palace": {
+  "name": "Quirinal Palace",
+  "kind": "royal palace in Rome",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Quirinal_Palace",
+  "lat": null,
+  "lon": null
+ },
  "place-rabaul": {
   "name": "Rabaul",
   "kind": "town and Japanese base",
@@ -8262,6 +8301,15 @@
   "nation": "Germany",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Waakirchen",
+  "lat": null,
+  "lon": null
+ },
+ "place-wakde": {
+  "name": "Wakde",
+  "kind": "island off Dutch New Guinea",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Wakde",
   "lat": null,
   "lon": null
  },

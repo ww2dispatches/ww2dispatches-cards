@@ -2122,6 +2122,13 @@
   "wikidata": "Q4872704",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Wadi_Akarit"
  },
+ "op-battle-of-wakde": {
+  "name": "Battle of Wakde",
+  "kind": "battle",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Wakde"
+ },
  "op-battle-of-wake-island": {
   "name": "Battle of Wake Island",
   "kind": "battle",
@@ -3194,6 +3201,17 @@
    "Operation Lentil"
   ]
  },
+ "op-deportation-of-the-crimean-tatars": {
+  "name": "Deportation of the Crimean Tatars",
+  "kind": "Soviet forced deportation",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Deportation_of_the_Crimean_Tatars",
+  "aka": [
+   "Surgunlik",
+   "Sürgünlik"
+  ]
+ },
  "op-deportation-of-the-kalmyks": {
   "name": "Deportation of the Kalmyks",
   "kind": "Soviet forced deportation, 1943",
@@ -3883,6 +3901,13 @@
   "aka": [
    "Hostage Case"
   ]
+ },
+ "op-hot-springs-conference": {
+  "name": "Hot Springs Conference",
+  "kind": "United Nations Conference on Food and Agriculture",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hot_Springs_Conference"
  },
  "op-huaihai-campaign": {
   "name": "Huaihai campaign",
@@ -5590,6 +5615,16 @@
    "Aktion Reinhard"
   ]
  },
+ "op-operation-rheinubung": {
+  "name": "Operation Rheinubung",
+  "kind": "German Atlantic sortie by Bismarck and Prinz Eugen",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Rhein%C3%BCbung",
+  "aka": [
+   "Operation Rheinübung"
+  ]
+ },
  "op-operation-savanna": {
   "name": "Operation Savanna",
   "kind": "SOE and Free French parachute mission, March 1941",
@@ -5844,6 +5879,13 @@
   "nation": "China",
   "wikidata": "Q1907398",
   "source": "https://en.wikipedia.org/wiki/Panjiayu_Massacre"
+ },
+ "op-paper-hanger-mundelein-s-speech": {
+  "name": "Paper hanger speech",
+  "kind": "1937 speech by Cardinal Mundelein",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Paper_hanger_(Mundelein%27s_speech)"
  },
  "op-paris-peace-treaties-1947": {
   "name": "Paris Peace Treaties, 1947",
@@ -6932,6 +6974,13 @@
   "nation": "US",
   "wikidata": "Q29094916",
   "source": "https://en.wikipedia.org/wiki/Tornado_outbreak_of_April_12,_1945"
+ },
+ "op-treaties-of-rome-1941": {
+  "name": "Treaties of Rome (1941)",
+  "kind": "Italian and Croatian treaties",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Treaties_of_Rome_(1941)"
  },
  "op-treaty-between-the-united-states-and-china-for-the-relinquishment-of-extraterritorial-rights-in-china": {
   "name": "Sino-American treaty ending extraterritoriality (1943)",

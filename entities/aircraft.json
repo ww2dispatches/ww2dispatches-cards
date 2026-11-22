@@ -939,6 +939,13 @@
   "wikidata": "Q3012908",
   "source": "https://en.wikipedia.org/wiki/Piasecki_PV-2"
  },
+ "aircraft-polikarpov-i-5": {
+  "name": "Polikarpov I-5",
+  "kind": "Soviet biplane fighter",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Polikarpov_I-5"
+ },
  "aircraft-republic-p-47-thunderbolt": {
   "name": "Republic P-47 Thunderbolt",
   "kind": "fighter",
@@ -1032,6 +1039,16 @@
   "aka": [
    "K5054",
    "Vickers-Supermarine Type 300"
+  ]
+ },
+ "aircraft-tupolev-ant-20": {
+  "name": "Tupolev ANT-20",
+  "kind": "eight engine Soviet propaganda airliner",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tupolev_ANT-20",
+  "aka": [
+   "Maxim Gorky"
   ]
  },
  "aircraft-vickers-vildebeest": {

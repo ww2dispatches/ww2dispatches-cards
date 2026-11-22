@@ -645,6 +645,13 @@
   "source": "https://en.wikipedia.org/wiki/29th_Infantry_Division_(United_States)",
   "wikidata": "Q2715528"
  },
+ "unit-29th-marine-regiment-united-states": {
+  "name": "29th Marine Regiment",
+  "kind": "US Marine infantry regiment",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/29th_Marine_Regiment_(United_States)"
+ },
  "unit-2nd-alpine-division-tridentina": {
   "name": "2nd Alpine Division Tridentina",
   "kind": "mountain division",
@@ -1461,6 +1468,13 @@
   "wikidata": "Q261179",
   "source": "https://en.wikipedia.org/wiki/7th_Infantry_Division_(United_States)"
  },
+ "unit-7th-panzer-division-wehrmacht": {
+  "name": "7th Panzer Division",
+  "kind": "German armored division",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/7th_Panzer_Division_(Wehrmacht)"
+ },
  "unit-80th-training-command": {
   "name": "80th Infantry Division",
   "kind": "U.S. infantry division",
@@ -1967,6 +1981,13 @@
    "BSAA"
   ]
  },
+ "unit-brotherhood-of-railroad-trainmen": {
+  "name": "Brotherhood of Railroad Trainmen",
+  "kind": "railroad labor union",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Brotherhood_of_Railroad_Trainmen"
+ },
  "unit-buffs-royal-east-kent-regiment": {
   "name": "The Buffs",
   "kind": "British infantry regiment",
@@ -2368,6 +2389,16 @@
   "aka": [
    "American Volunteer Group",
    "AVG"
+  ]
+ },
+ "unit-food-and-agriculture-organization": {
+  "name": "Food and Agriculture Organization",
+  "kind": "United Nations agency",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Food_and_Agriculture_Organization",
+  "aka": [
+   "FAO"
   ]
  },
  "unit-force-h": {
