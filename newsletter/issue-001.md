@@ -96,21 +96,21 @@ When they left, Gambier Bay and Hoel were still missing.
 
 Each morning brought a new dispatch. Catch up on any you missed:
 
-* No. 001, USS Kearny torpedoed: [Read on Instagram](https://www.instagram.com/p/DemRrtIETSF/)
-* No. 003, The Nuremberg indictment is filed: [Read on Instagram](https://www.instagram.com/p/Deo2fpilRg5/)
-* No. 005, Tin cans go to war: [Read on Instagram](https://www.instagram.com/p/DerbZgDm8BL/)
-* No. 007, MacArthur returns to Leyte: [Read on Instagram](https://www.instagram.com/p/DeuASuIkfYa/)
-* No. 009, Aachen surrenders: [Read on Instagram](https://www.instagram.com/p/DewlNj3IJi8/)
-* No. 011, Mark Clark's secret landing: [Read on Instagram](https://www.instagram.com/p/DezKFZrEb_P/)
-* No. 013, The barrage at El Alamein: [Read on Instagram](https://www.instagram.com/p/De1uxbxlJU0/)
-* No. 015, UN Charter takes effect: [Read on Instagram](https://www.instagram.com/p/De4TeF6FJVz/)
-* No. 017, The last stand of Taffy 3: [Read on Instagram](https://www.instagram.com/p/De64FmIkel9/)
-* No. 019, Hornet's last fight: [Read on Instagram](https://www.instagram.com/p/De9dIJdFQ5B/)
-* No. 021, The guns at Outpost Snipe: [Read on Instagram](https://www.instagram.com/p/DfABzPtoDYI/)
-* No. 023, Greece says no: [Read on Instagram](https://www.instagram.com/p/DfCms9fFq4V/)
-* No. 025, America's draft lottery: [Read on Instagram](https://www.instagram.com/p/DfFLnSMoNlW/)
-* No. 027, Rescue of the Lost Battalion: [Read on Instagram](https://www.instagram.com/p/DfHwTn_kWxE/)
-* No. 029, Reuben James is sunk: [Read on Instagram](https://www.instagram.com/p/DfKVD2EIYjL/)
+* No. 001, USS Kearny torpedoed: [Read on X](https://x.com/ww2dispatches/status/2111457688848654391)
+* No. 003, The Nuremberg indictment is filed: [Read on X](https://x.com/ww2dispatches/status/2111820037543563397)
+* No. 005, Tin cans go to war: [Read on X](https://x.com/ww2dispatches/status/2112182635883647299)
+* No. 007, MacArthur returns to Leyte: [Read on X](https://x.com/ww2dispatches/status/2112545352200929674)
+* No. 009, Aachen surrenders: [Read on X](https://x.com/ww2dispatches/status/2112907831020052689)
+* No. 011, Mark Clark's secret landing: [Read on X](https://x.com/ww2dispatches/status/2113270174803484892)
+* No. 013, The barrage at El Alamein: [Read on X](https://x.com/ww2dispatches/status/2113632498965983357)
+* No. 015, UN Charter takes effect: [Read on X](https://x.com/ww2dispatches/status/2113994765653930424)
+* No. 017, The last stand of Taffy 3: [Read on X](https://x.com/ww2dispatches/status/2114356832424603954)
+* No. 019, Hornet's last fight: [Read on X](https://x.com/ww2dispatches/status/2114719552198070591)
+* No. 021, The guns at Outpost Snipe: [Read on X](https://x.com/ww2dispatches/status/2115081908950315241)
+* No. 023, Greece says no: [Read on X](https://x.com/ww2dispatches/status/2115444509077025038)
+* No. 025, America's draft lottery: [Read on X](https://x.com/ww2dispatches/status/2115806958280192179)
+* No. 027, Rescue of the Lost Battalion: [Read on X](https://x.com/ww2dispatches/status/2116169393218470164)
+* No. 029, Reuben James is sunk: [Read on X](https://x.com/ww2dispatches/status/2116531620773576719)
 
 ---
 

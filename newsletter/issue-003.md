@@ -108,13 +108,13 @@ In Munich today, a neon memorial lights up every night at 9:20, for one minute.
 
 Each morning brought a new dispatch. Catch up on any you missed:
 
-* No. 045, Torch lands in North Africa: [Read on Instagram](https://www.instagram.com/p/DffCHKQFTP0/)
-* No. 047, Patton attacks in the rain: [Read on Instagram](https://www.instagram.com/p/DfhnDkcERsn/)
-* No. 049, Ike in the mud: [Read on Instagram](https://www.instagram.com/p/DfkL5G9EQdw/)
-* No. 051, Churchill and de Gaulle in Paris: [Read on Instagram](https://www.instagram.com/p/Dfmw_mqFDYB/)
-* No. 053, The Tirpitz goes down: [Read on Instagram](https://www.instagram.com/p/DfpV0Z4luCB/)
-* No. 055, Halsey's carriers hit Manila again: [Read on Instagram](https://www.instagram.com/p/Dfr6kL7lEz6/)
-* No. 057, Patton crosses the Moselle: [Read on Instagram](https://www.instagram.com/p/DfufGLGnHbN/)
+* No. 045, Torch lands in North Africa: [Read on X](https://x.com/2110501302996492288/status/2119445307918356883)
+* No. 047, Patton attacks in the rain: [Read on X](https://x.com/2110501302996492288/status/2119808158428266957)
+* No. 049, Ike in the mud: [Read on X](https://x.com/2110501302996492288/status/2120170648039227657)
+* No. 051, Churchill and de Gaulle in Paris: [Read on X](https://x.com/2110501302996492288/status/2120533584213651905)
+* No. 053, The Tirpitz goes down: [Read on X](https://x.com/2110501302996492288/status/2120895877271228437)
+* No. 055, Halsey's carriers hit Manila again: [Read on X](https://x.com/2110501302996492288/status/2121258049474113785)
+* No. 057, Patton crosses the Moselle: [Read on X](https://x.com/2110501302996492288/status/2121620038843015352)
 
 ---
 

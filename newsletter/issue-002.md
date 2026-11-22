@@ -102,13 +102,13 @@ The country he spied for took twenty years to say his name. A Tokyo waitress kep
 
 Each morning brought a new dispatch. Catch up on any you missed:
 
-* No. 031, Marines storm Cape Torokina: [Read on Instagram](https://www.instagram.com/p/DfNAdkDERqL/)
-* No. 033, Supercharge breaks Rommel: [Read on Instagram](https://www.instagram.com/p/DfPlohHlA1z/)
-* No. 035, Paper bombs ride the jet stream: [Read on Instagram](https://www.instagram.com/p/DfSKX2NkaxI/)
-* No. 037, Rommel retreats from Alamein: [Read on Instagram](https://www.instagram.com/p/DfUvgJXFGjb/)
-* No. 039, Carriers strike Manila Bay: [Read on Instagram](https://www.instagram.com/p/DfXUGoklhuq/)
-* No. 041, The ship that lied: [Read on Instagram](https://www.instagram.com/p/DfZ5HkFlXWz/)
-* No. 043, Roosevelt wins a fourth term: [Read on Instagram](https://www.instagram.com/p/DfcdjbjDvZP/)
+* No. 031, Marines storm Cape Torokina: [Read on X](https://x.com/ww2dispatches/status/2116908548990837169)
+* No. 033, Supercharge breaks Rommel: [Read on X](https://x.com/ww2dispatches/status/2117271745753129048)
+* No. 035, Paper bombs ride the jet stream: [Read on X](https://x.com/ww2dispatches/status/2117633937287622791)
+* No. 037, Rommel retreats from Alamein: [Read on X](https://x.com/ww2dispatches/status/2117996447995965825)
+* No. 039, Carriers strike Manila Bay: [Read on X](https://x.com/ww2dispatches/status/2118359096298459314)
+* No. 041, The ship that lied: [Read on X](https://x.com/ww2dispatches/status/2118721328123445549)
+* No. 043, Roosevelt wins a fourth term: [Read on X](https://x.com/2110501302996492288/status/2119083332986196034)
 
 ---
 
