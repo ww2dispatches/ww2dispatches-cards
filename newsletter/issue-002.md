@@ -102,13 +102,13 @@ The country he spied for took twenty years to say his name. A Tokyo waitress kep
 
 Each morning brought a new dispatch. Catch up on any you missed:
 
-* No. 031, Marines storm Cape Torokina: [Read on Threads](https://www.threads.com/@ww2dispatches/post/DfNAdJ3lY4H)
-* No. 033, Supercharge breaks Rommel: [Read on Threads](https://www.threads.com/@ww2dispatches/post/DfPlllpEXoY)
-* No. 035, Paper bombs ride the jet stream: [Read on Threads](https://www.threads.com/@ww2dispatches/post/DfSKWgUG56u)
-* No. 037, Rommel retreats from Alamein: [Read on Threads](https://www.threads.com/@ww2dispatches/post/DfUvJAOEZar)
-* No. 039, Carriers strike Manila Bay: [Read on Threads](https://www.threads.com/@ww2dispatches/post/DfXUDncnKaI)
-* No. 041, The ship that lied: [Read on Threads](https://www.threads.com/@ww2dispatches/post/DfZ4y0TDu2v)
-* No. 043, Roosevelt wins a fourth term: [Read on Threads](https://www.threads.com/@ww2dispatches/post/DfcdbU7FNLD)
+* No. 031, Marines storm Cape Torokina: [Read on Instagram](https://www.instagram.com/p/DfNAdkDERqL/)
+* No. 033, Supercharge breaks Rommel: [Read on Instagram](https://www.instagram.com/p/DfPlohHlA1z/)
+* No. 035, Paper bombs ride the jet stream: [Read on Instagram](https://www.instagram.com/p/DfSKX2NkaxI/)
+* No. 037, Rommel retreats from Alamein: [Read on Instagram](https://www.instagram.com/p/DfUvgJXFGjb/)
+* No. 039, Carriers strike Manila Bay: [Read on Instagram](https://www.instagram.com/p/DfXUGoklhuq/)
+* No. 041, The ship that lied: [Read on Instagram](https://www.instagram.com/p/DfZ5HkFlXWz/)
+* No. 043, Roosevelt wins a fourth term: [Read on Instagram](https://www.instagram.com/p/DfcdjbjDvZP/)
 
 ---
 
