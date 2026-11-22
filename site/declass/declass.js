@@ -14,7 +14,7 @@
     testerKey = localStorage.getItem(KEY_STORE) || '';
   } catch (e) { testerKey = new URLSearchParams(location.search).get('key') || ''; }
 
-  // The Code Room preview flag, fresh start, and practice replays were tester only tools, removed before
+  // The Code Room tester tools (the preview flag, the reset link, and the replay rounds) were removed before
   // launch (22 Nov 2026, Code Room doc to do item 9). Clear the old flag from browsers that still hold it.
   try { localStorage.removeItem('declass_icp'); } catch (e) {}
 
@@ -106,7 +106,7 @@
     if (key.startsWith('c:')) return 'Commemorative file';
     if (key === 's:starter') return 'Starter pack';
     if (key.startsWith('q:')) return 'Requisition';
-    if (key.startsWith('i:') || key.startsWith('ip:')) return 'Code Room'; // ip: only on old tester practice rows
+    if (key.startsWith('i:') || key.startsWith('ip:')) return 'Code Room'; // ip: only on old tester replay rows
     return 'Envelope';
   }
   // Game actions counted for the admin console (2 Nov 2026): tallies only, through /hit.js.
