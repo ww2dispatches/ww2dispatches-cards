@@ -199,6 +199,16 @@
    "atom smasher"
   ]
  },
+ "machine-dd-tank": {
+  "name": "DD tank",
+  "kind": "Duplex Drive amphibious swimming tank",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/DD_tank",
+  "aka": [
+   "Duplex Drive tank"
+  ]
+ },
  "machine-december-7th-film": {
   "name": "December 7th",
   "kind": "1943 documentary short by John Ford and the U.S. Navy",

@@ -3276,6 +3276,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/SMS_Hessen"
  },
+ "ship-soviet-cruiser-kirov": {
+  "name": "Soviet cruiser Kirov",
+  "kind": "Soviet Baltic Fleet light cruiser, hit in Operation Eisstoss",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Soviet_cruiser_Kirov"
+ },
  "ship-soviet-cruiser-krasny-kavkaz": {
   "name": "Krasny Kavkaz",
   "kind": "Soviet light cruiser, Black Sea Fleet",
@@ -3365,6 +3372,13 @@
   "nation": "Britain",
   "wikidata": "Q7393279",
   "source": "https://en.wikipedia.org/wiki/SS_British_Chivalry"
+ },
+ "ship-ss-byron-d-benson": {
+  "name": "SS Byron D. Benson",
+  "kind": "American oil tanker sunk by U-552 off North Carolina",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Byron_D._Benson"
  },
  "ship-ss-china-arrow": {
   "name": "SS China Arrow",

@@ -260,6 +260,15 @@
   "lat": 50.0358,
   "lon": 19.1783
  },
+ "place-avonmouth": {
+  "name": "Avonmouth",
+  "kind": "port district of Bristol",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Avonmouth",
+  "lat": null,
+  "lon": null
+ },
  "place-azores": {
   "name": "Azores",
   "kind": "island group",
@@ -1480,6 +1489,18 @@
   "nation": "Britain",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Datchworth",
+  "lat": null,
+  "lon": null
+ },
+ "place-davao-prison-and-penal-farm": {
+  "name": "Davao Prison and Penal Farm",
+  "kind": "penal colony on Mindanao used as a Japanese POW camp",
+  "nation": "Philippines",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Davao_Prison_and_Penal_Farm",
+  "aka": [
+   "Davao Penal Colony"
+  ],
   "lat": null,
   "lon": null
  },
@@ -3025,6 +3046,15 @@
   "lat": 49.3933,
   "lon": 6.2769
  },
+ "place-kohima": {
+  "name": "Kohima",
+  "kind": "town in northeast India, scene of the 1944 battle",
+  "nation": "India",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kohima",
+  "lat": null,
+  "lon": null
+ },
  "place-kolkata": {
   "name": "Kolkata",
   "kind": "city and port",
@@ -4114,6 +4144,18 @@
   "lat": 23.9731,
   "lon": 97.9833
  },
+ "place-monowitz-concentration-camp": {
+  "name": "Monowitz concentration camp",
+  "kind": "Auschwitz III labour camp beside the IG Farben plant",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Monowitz_concentration_camp",
+  "aka": [
+   "Auschwitz III"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-monte-cassino": {
   "name": "Monte Cassino",
   "kind": "Benedictine abbey and hill above Cassino",
@@ -4605,6 +4647,15 @@
   "nation": "Germany",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Oflag_XIII-B",
+  "lat": null,
+  "lon": null
+ },
+ "place-ohrdruf-concentration-camp": {
+  "name": "Ohrdruf concentration camp",
+  "kind": "Buchenwald subcamp, first Nazi camp liberated by US troops",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ohrdruf_concentration_camp",
   "lat": null,
   "lon": null
  },
@@ -6164,6 +6215,18 @@
   "wikidata": "Q745460",
   "lat": 48.5819,
   "lon": 7.7511
+ },
+ "place-studland": {
+  "name": "Studland",
+  "kind": "village and bay in Dorset used for D Day rehearsals",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Studland",
+  "aka": [
+   "Studland Bay"
+  ],
+  "lat": null,
+  "lon": null
  },
  "place-stutthof-concentration-camp": {
   "name": "Stutthof concentration camp",

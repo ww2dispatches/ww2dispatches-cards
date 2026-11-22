@@ -1775,6 +1775,13 @@
   "wikidata": "Q15212263",
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Berlin_in_World_War_II"
  },
+ "op-bombing-of-bucharest-in-world-war-ii": {
+  "name": "Bombing of Bucharest in World War II",
+  "kind": "Allied air raids on Bucharest, 1944",
+  "nation": "Romania",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Bucharest_in_World_War_II"
+ },
  "op-bombing-of-bulgaria-in-world-war-ii": {
   "name": "Bombing of Bulgaria in World War II",
   "kind": "Allied air raids on Bulgaria, chiefly Sofia, 1941 to 1944",
@@ -3803,6 +3810,13 @@
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/Northern_Patrol",
   "wikidata": "Q3869112"
+ },
+ "op-norway-debate": {
+  "name": "Norway Debate",
+  "kind": "House of Commons debate of May 1940 that brought down Chamberlain",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Norway_Debate"
  },
  "op-norwegian-heavy-water-sabotage": {
   "name": "Norwegian heavy water sabotage",
