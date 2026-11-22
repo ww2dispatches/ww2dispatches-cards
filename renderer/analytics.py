@@ -171,6 +171,9 @@ def views_of(m):
     return m.get("views", m.get("impressions"))
 
 
+THREADS_RESTART = "2026-11-22"
+
+
 def main():
     recs = load_records()
     vocab = theme_vocab()
@@ -245,6 +248,11 @@ def main():
             "json_file": d["_file"],
             "_kind": kind, "_sent": sent, "_b": is_video == "b",
         })
+        # Threads restarted on a new profile on 22 Nov 2026 (Analytics doc, "Threads restart").
+        # Posts from the old profile are kept as their own platform, so they never set or join
+        # the new profile's typical figures.
+        if rows[-1]["platform"] == "Threads" and rows[-1]["post_date"] < THREADS_RESTART:
+            rows[-1]["platform"] = "Threads (old profile)"
 
     # Baselines: same kind, same platform, scored posts from the last 28 days.
     cutoff = now - timedelta(days=WINDOW_DAYS)
@@ -395,7 +403,9 @@ def main():
         reach_report.append(row)
     lines = ["# Reach per post and per day", "",
              f"Before: posts dated {before_start} to 2026-11-14. After: posts from {CHANGE} on (five a day).",
-             "Posts under 48 hours old are left out. Brian decides any trim.", "",
+             "Posts under 48 hours old are left out. Brian decides any trim.",
+             f"Threads restarted on a new profile on {THREADS_RESTART}: the old profile's posts are listed as their own line, "
+             "and the new profile has no before figures, so it is judged only against its own weeks.", "",
              "| Platform | Per post before | Per post after | Change | Per day before | Per day after | Change |",
              "|---|---|---|---|---|---|---|"]
     pct = lambda x: "" if x is None else f"{x * 100:+.0f}%"

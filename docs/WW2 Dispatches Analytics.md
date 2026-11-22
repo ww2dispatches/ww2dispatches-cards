@@ -53,6 +53,15 @@ From the 15 Nov 2026 posts on there are five posts a day on X, Instagram, Thread
 * **Brian decides any trim**, platform by platform, through a Schedule Board task the review files once a platform shows that pattern. Nothing is cut automatically, and the review never changes a slot on its own.
 * It also notes how the 2:30 Axis cards and the 7 p.m. videos do against the other slots (the Slot groups) once each has 5 posts.
 
+## Threads restart (added 22 Nov 2026)
+On 22 Nov 2026 a Meta security suspension split the Threads account: the old profile (71 followers) was left detached and the account restarted on a new, empty @ww2dispatches profile, on a new Buffer channel (Project Brief, "Buffer setup"). The two profiles are never compared.
+* **Old profile posts** (Threads posts dated before 22 Nov 2026) are labelled "Threads (old profile)" by `renderer/analytics.py`. They keep their numbers in the snapshots and the log as history, but they form their own platform, so they never set or join the new profile's typical figures.
+* **New profile posts** are scored only against other new profile posts. The usual floor applies, so Threads counts toward scores only once its typical post reaches 50 views with 5 posts of a kind; until then it is shown but not scored.
+* **The reach report** lists the old profile as its own line. The new profile has no before figures, so the review judges it only against its own weeks (week over week views per post and per day) and never files a trim for Threads from the old profile's numbers.
+* **The playbook** keeps the Threads lessons learned before the restart, marked as from the old profile. No new Threads hunch or pattern comes from the old profile's numbers, and a new Threads pattern needs the usual 3 reviews of new profile posts.
+* **Lost data:** the old Buffer channel and its posts are gone, so Threads numbers for posts sent 18 to 21 Nov 2026 (after the last snapshot) were never pulled and can't be.
+* **Followers:** the new profile started at 0 followers on 22 Nov 2026. The monthly follower check records it from there.
+
 ## The Tuesday run
 "WW2 Dispatches weekly analytics review", Tuesday 7:47 p.m. Mountain, on Opus 5.5, a Claude Code scheduled task with both repos attached, Buffer connected, push and email when done. Posts from Sunday and Monday are still "too early" on Tuesday and get their score the following week.
 1. Attach and clone the cards repo (Brief, "GitHub repos and hosting"), and run `python3 renderer/media.py sweep` first (Brief, "Shared run procedures").
@@ -105,3 +114,4 @@ The rules for links:
 * 7 Nov 2026 (later still): Code Room's board shows photo tiles with a typed label; the check now flags shared tile labels and missing tile photos, and the run commits new files in `tiles/` (Code Room doc, "Board tiles").
 * 7 Nov 2026 (Code Room medium recheck, Planning chat): Medium is now knowable from the tile's title or subject, and a group the cards only share by place is hard. A group never holds two cards of the same event, such as a story card and its spec sheet.
 * 7 Nov 2026 (night): Three cards and two videos a day from 15 Nov 2026. Slots now include 2:30 p.m. and 7 p.m.; videos are compared by slot, and a second cut (`_b` ids, `themes.video_b`) is its own post. A weekly reach report per platform (views per post and per day, against the four weeks before) goes in the review and the summary; Brian decides any trim.
+* 22 Nov 2026: Threads restarted on a new profile after a Meta security suspension. Old profile posts are their own platform ("Threads (old profile)") in `renderer/analytics.py`, the reach report lists them apart, and the new profile is judged only against its own weeks ("Threads restart").
