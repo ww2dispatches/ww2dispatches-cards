@@ -464,6 +464,13 @@
    "U-164"
   ]
  },
+ "ship-german-submarine-u-172": {
+  "name": "U-172",
+  "kind": "Kriegsmarine Type IXC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-172"
+ },
  "ship-german-submarine-u-177": {
   "name": "German submarine U-177",
   "kind": "Type IXD2 U-boat",
@@ -1426,6 +1433,13 @@
    "USS Wintle (DE-266)"
   ]
  },
+ "ship-hms-cornwall-56": {
+  "name": "HMS Cornwall (56)",
+  "kind": "Royal Navy heavy cruiser",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Cornwall_(56)"
+ },
  "ship-hms-cossack-f03": {
   "name": "HMS Cossack (F03)",
   "kind": "Tribal class destroyer",
@@ -1453,6 +1467,13 @@
   "nation": "Britain",
   "wikidata": "Q1544418",
   "source": "https://en.wikipedia.org/wiki/HMS_Diadem_(84)"
+ },
+ "ship-hms-dorsetshire-40": {
+  "name": "HMS Dorsetshire (40)",
+  "kind": "Royal Navy heavy cruiser",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Dorsetshire_(40)"
  },
  "ship-hms-duchess-h64": {
   "name": "HMS Duchess (H64)",
@@ -3285,6 +3306,13 @@
   "nation": "US",
   "wikidata": "Q7393183",
   "source": "https://en.wikipedia.org/wiki/SS_Argentina_(1929)"
+ },
+ "ship-ss-benlomond-1922": {
+  "name": "SS Benlomond",
+  "kind": "British cargo ship",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Benlomond_(1922)"
  },
  "ship-ss-bremen-1928": {
   "name": "SS Bremen (1928)",

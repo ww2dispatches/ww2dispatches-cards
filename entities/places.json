@@ -709,6 +709,15 @@
   "lat": 50.7353,
   "lon": 7.1022
  },
+ "place-bornholm": {
+  "name": "Bornholm",
+  "kind": "Danish Baltic island",
+  "nation": "Denmark",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bornholm",
+  "lat": null,
+  "lon": null
+ },
  "place-boston": {
   "name": "Boston",
   "kind": "city",
@@ -1344,6 +1353,15 @@
   "source": "https://en.wikipedia.org/wiki/Cologne_Cathedral",
   "lat": 50.9414,
   "lon": 6.9583
+ },
+ "place-colombo": {
+  "name": "Colombo",
+  "kind": "city and port",
+  "nation": "Ceylon",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Colombo",
+  "lat": null,
+  "lon": null
  },
  "place-columbia-tennessee": {
   "name": "Columbia, Tennessee",
@@ -4135,6 +4153,15 @@
   "lat": 14.68,
   "lon": 120.2683
  },
+ "place-mortsel": {
+  "name": "Mortsel",
+  "kind": "town near Antwerp",
+  "nation": "Belgium",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mortsel",
+  "lat": null,
+  "lon": null
+ },
  "place-moscow": {
   "name": "Moscow",
   "kind": "city",
@@ -4929,6 +4956,15 @@
   "lat": 48.5834,
   "lon": 7.7458
  },
+ "place-ploiesti": {
+  "name": "Ploiesti",
+  "kind": "oil refining city",
+  "nation": "Romania",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ploie%C8%99ti",
+  "lat": null,
+  "lon": null
+ },
  "place-plotzensee-prison": {
   "name": "Plotzensee Prison",
   "kind": "Berlin prison and execution site",
@@ -5195,6 +5231,15 @@
   "aka": [
    "No. 21 Maintenance Unit"
   ]
+ },
+ "place-raf-gatow": {
+  "name": "RAF Gatow",
+  "kind": "RAF airfield in Berlin",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/RAF_Gatow",
+  "lat": null,
+  "lon": null
  },
  "place-raf-habbaniya": {
   "name": "RAF Habbaniya",

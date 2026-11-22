@@ -1925,6 +1925,13 @@
    "FBI"
   ]
  },
+ "unit-fifteenth-air-force": {
+  "name": "Fifteenth Air Force",
+  "kind": "US Army Air Forces strategic air force",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fifteenth_Air_Force"
+ },
  "unit-fifteenth-united-states-army": {
   "name": "Fifteenth United States Army",
   "kind": "U.S. field army",

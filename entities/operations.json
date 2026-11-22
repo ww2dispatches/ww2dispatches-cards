@@ -229,6 +229,13 @@
    "Victorious February"
   ]
  },
+ "op-1948-gatow-air-disaster": {
+  "name": "1948 Gatow air disaster",
+  "kind": "mid air collision",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1948_Gatow_air_disaster"
+ },
  "op-1948-tinker-air-force-base-tornadoes": {
   "name": "1948 Tinker Air Force Base tornadoes",
   "kind": "tornadoes and the first official tornado forecast",
@@ -383,6 +390,16 @@
   "nation": "Germany",
   "wikidata": "Q714253",
   "source": "https://en.wikipedia.org/wiki/Air_raid_on_Bari"
+ },
+ "op-air-raid-on-ceylon-5-april-1942": {
+  "name": "Air raid on Ceylon (5 April 1942)",
+  "kind": "Japanese carrier air raid",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Air_raid_on_Ceylon_(5_April_1942)",
+  "aka": [
+   "Easter Sunday Raid"
+  ]
  },
  "op-aktion-t4": {
   "name": "Aktion T4",
@@ -2144,6 +2161,13 @@
   "wikidata": "Q5047979",
   "source": "https://en.wikipedia.org/wiki/Casablanca_directive"
  },
+ "op-case-blue": {
+  "name": "Case Blue",
+  "kind": "German 1942 summer offensive",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Case_Blue"
+ },
  "op-catalonia-offensive": {
   "name": "Catalonia Offensive",
   "kind": "Spanish Civil War offensive",
@@ -2749,6 +2773,13 @@
   "wikidata": "Q780845",
   "source": "https://en.wikipedia.org/wiki/Franco-Thai_War"
  },
+ "op-freeman-field-mutiny": {
+  "name": "Freeman Field mutiny",
+  "kind": "1945 desegregation protest",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Freeman_Field_mutiny"
+ },
  "op-genocide-convention": {
   "name": "Genocide Convention",
   "kind": "international treaty",
@@ -2931,6 +2962,13 @@
   "nation": "Britain",
   "wikidata": "Q1661579",
   "source": "https://en.wikipedia.org/wiki/Indian_Independence_Act_1947"
+ },
+ "op-indian-ocean-raid": {
+  "name": "Indian Ocean raid",
+  "kind": "Japanese carrier sortie",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Indian_Ocean_raid"
  },
  "op-indonesian-national-revolution": {
   "name": "Indonesian National Revolution",
@@ -5111,6 +5149,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q2006230",
   "source": "https://en.wikipedia.org/wiki/Soviet_atomic_bomb_project"
+ },
+ "op-soviet-japanese-neutrality-pact": {
+  "name": "Soviet-Japanese Neutrality Pact",
+  "kind": "1941 treaty",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Soviet%E2%80%93Japanese_Neutrality_Pact"
  },
  "op-soviet-repressions-of-polish-citizens-1939-1946": {
   "name": "Soviet repressions of Polish citizens (1939 to 1946)",
