@@ -995,6 +995,15 @@
   "lat": 4.4,
   "lon": 114.5667
  },
+ "place-brussels": {
+  "name": "Brussels",
+  "kind": "capital city",
+  "nation": "Belgium",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Brussels",
+  "lat": null,
+  "lon": null
+ },
  "place-bruyeres": {
   "name": "Bruyeres",
   "kind": "town",
@@ -1227,6 +1236,15 @@
   "wikidata": "Q926115",
   "lat": -6.25,
   "lon": 155.0333
+ },
+ "place-cardiff": {
+  "name": "Cardiff",
+  "kind": "city",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Cardiff",
+  "lat": null,
+  "lon": null
  },
  "place-carnegie-hall": {
   "name": "Carnegie Hall",
@@ -2259,6 +2277,18 @@
   "lat": null,
   "lon": null
  },
+ "place-fort-hunt-park": {
+  "name": "Fort Hunt",
+  "kind": "former Army post, Virginia",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fort_Hunt_Park",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Fort Hunt, Virginia"
+  ]
+ },
  "place-fort-jeanne-d-arc": {
   "name": "Fort Jeanne d'Arc",
   "kind": "fortress",
@@ -3185,6 +3215,15 @@
    "Iejima",
    "Ie Jima"
   ]
+ },
+ "place-ijmuiden": {
+  "name": "IJmuiden",
+  "kind": "port town",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/IJmuiden",
+  "lat": null,
+  "lon": null
  },
  "place-imber": {
   "name": "Imber",
@@ -4299,6 +4338,15 @@
   "lat": null,
   "lon": null
  },
+ "place-lorient": {
+  "name": "Lorient",
+  "kind": "port city and U-boat base",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Lorient",
+  "lat": null,
+  "lon": null
+ },
  "place-los-angeles": {
   "name": "Los Angeles",
   "kind": "city",
@@ -4867,6 +4915,15 @@
   "wikidata": "Q201516",
   "lat": 25.8139,
   "lon": -80.1325
+ },
+ "place-middelburg-zeeland": {
+  "name": "Middelburg",
+  "kind": "town, capital of Zeeland",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Middelburg,_Zeeland",
+  "lat": null,
+  "lon": null
  },
  "place-midway-atoll": {
   "name": "Midway Atoll",
@@ -5832,6 +5889,15 @@
   "lat": 52.0167,
   "lon": 11.25
  },
+ "place-oslo": {
+  "name": "Oslo",
+  "kind": "capital city",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Oslo",
+  "lat": null,
+  "lon": null
+ },
  "place-ottawa-civic-hospital": {
   "name": "Ottawa Civic Hospital",
   "kind": "hospital",
@@ -6344,6 +6410,15 @@
   "wikidata": "Q1146988",
   "lat": 48.8628,
   "lon": 2.31
+ },
+ "place-quebec-city": {
+  "name": "Quebec City",
+  "kind": "city",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Quebec_City",
+  "lat": null,
+  "lon": null
  },
  "place-queen-maud-land": {
   "name": "Queen Maud Land",
@@ -7563,6 +7638,15 @@
   "source": "https://en.wikipedia.org/wiki/Sulu_Sea",
   "lat": 8.0,
   "lon": 120.0
+ },
+ "place-surabaya": {
+  "name": "Surabaya",
+  "kind": "port city, Java",
+  "nation": "Netherlands East Indies",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Surabaya",
+  "lat": null,
+  "lon": null
  },
  "place-swansea": {
   "name": "Swansea",

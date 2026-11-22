@@ -112,6 +112,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/1939_New_York_World%27s_Fair"
  },
+ "op-1939-royal-tour-of-canada": {
+  "name": "1939 royal tour of Canada",
+  "kind": "royal tour",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1939_royal_tour_of_Canada"
+ },
  "op-1940-united-states-presidential-election": {
   "name": "1940 presidential election",
   "kind": "U.S. election",
@@ -191,6 +198,13 @@
   "nation": "US",
   "wikidata": "Q4565107",
   "source": "https://en.wikipedia.org/wiki/1942_Rose_Bowl"
+ },
+ "op-1943-brusa-agreement": {
+  "name": "1943 BRUSA Agreement",
+  "kind": "intelligence agreement",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1943_BRUSA_Agreement"
  },
  "op-1943-cairo-declaration": {
   "name": "1943 Cairo Declaration",
@@ -1524,6 +1538,13 @@
   "wikidata": "Q711223",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Mindoro"
  },
+ "op-battle-of-montcornet": {
+  "name": "Battle of Montcornet",
+  "kind": "battle",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Montcornet"
+ },
  "op-battle-of-monte-cassino": {
   "name": "Battle of Monte Cassino",
   "kind": "series of Allied assaults on the Gustav Line",
@@ -2610,6 +2631,16 @@
   "wikidata": "Q1875557",
   "source": "https://en.wikipedia.org/wiki/Bombings_of_Heilbronn_in_World_War_II"
  },
+ "op-bonus-army": {
+  "name": "Bonus Army",
+  "kind": "veterans' protest marches",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bonus_Army",
+  "aka": [
+   "Bonus March"
+  ]
+ },
  "op-boston-marathon": {
   "name": "Boston Marathon",
   "kind": "annual marathon race",
@@ -2934,6 +2965,17 @@
   "source": "https://en.wikipedia.org/wiki/Congress_of_Europe",
   "aka": [
    "Hague Congress"
+  ]
+ },
+ "op-constitution-day-norway": {
+  "name": "Constitution Day (Norway)",
+  "kind": "national day",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Constitution_Day_(Norway)",
+  "aka": [
+   "17 May",
+   "Syttende mai"
   ]
  },
  "op-constitution-of-italy": {
@@ -3696,6 +3738,16 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/German_Instrument_of_Surrender"
  },
+ "op-german-invasion-of-belgium-1940": {
+  "name": "German invasion of Belgium (1940)",
+  "kind": "campaign",
+  "nation": "Belgium",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_invasion_of_Belgium_(1940)",
+  "aka": [
+   "Battle of Belgium"
+  ]
+ },
  "op-german-invasion-of-denmark-1940": {
   "name": "German invasion of Denmark (1940)",
   "kind": "invasion",
@@ -3736,6 +3788,13 @@
   "aka": [
    "Battle of the Netherlands"
   ]
+ },
+ "op-german-occupation-of-norway": {
+  "name": "German occupation of Norway",
+  "kind": "occupation",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_occupation_of_Norway"
  },
  "op-german-polish-declaration-of-non-aggression": {
   "name": "German-Polish declaration of non-aggression",
@@ -5739,6 +5798,13 @@
    "Allied landings in North Africa"
   ]
  },
+ "op-operation-transom": {
+  "name": "Operation Transom",
+  "kind": "carrier raid",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Transom"
+ },
  "op-operation-tungsten": {
   "name": "Operation Tungsten",
   "kind": "Fleet Air Arm carrier strike on Tirpitz",
@@ -6566,6 +6632,13 @@
   "nation": "Britain",
   "wikidata": "Q682452",
   "source": "https://en.wikipedia.org/wiki/Siege_of_Malta_(World_War_II)"
+ },
+ "op-siege-of-myitkyina": {
+  "name": "Siege of Myitkyina",
+  "kind": "siege",
+  "nation": "Burma",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Siege_of_Myitkyina"
  },
  "op-siege-of-tobruk": {
   "name": "Siege of Tobruk",

@@ -428,6 +428,16 @@
   "source": "https://en.wikipedia.org/wiki/1st_Panzer_Army",
   "wikidata": "Q163388"
  },
+ "unit-1st-parachute-division": {
+  "name": "1st Parachute Division",
+  "kind": "Luftwaffe airborne infantry division",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1st_Parachute_Division",
+  "aka": [
+   "1st Fallschirmjäger Division"
+  ]
+ },
  "unit-1st-special-operations-wing": {
   "name": "1st Special Operations Wing",
   "kind": "U.S. Air Force wing, descended from the 1st Air Commando Group",
@@ -808,6 +818,16 @@
   "wikidata": "Q326607",
   "source": "https://en.wikipedia.org/wiki/31st_Division_(Imperial_Japanese_Army)"
  },
+ "unit-322d-air-expeditionary-group": {
+  "name": "322nd Bombardment Group",
+  "kind": "USAAF B-26 bomb group",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/322d_Air_Expeditionary_Group",
+  "aka": [
+   "322d Air Expeditionary Group"
+  ]
+ },
  "unit-32nd-infantry-division-united-states": {
   "name": "32nd Infantry Division",
   "kind": "U.S. Army infantry division",
@@ -1144,6 +1164,17 @@
   "nation": "Britain",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/4th/7th_Royal_Dragoon_Guards"
+ },
+ "unit-4th-armored-division-france-1940": {
+  "name": "4th Armored Division (France, 1940)",
+  "kind": "French armored division",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/4th_Armored_Division_(France,_1940)",
+  "aka": [
+   "4e Division cuirassée",
+   "4e DCr"
+  ]
  },
  "unit-4th-armored-division-united-states": {
   "name": "4th Armored Division",
@@ -2081,6 +2112,16 @@
   "wikidata": "Q781210",
   "source": "https://en.wikipedia.org/wiki/Civil_Air_Patrol"
  },
+ "unit-civilian-conservation-corps": {
+  "name": "Civilian Conservation Corps",
+  "kind": "New Deal work relief program",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Civilian_Conservation_Corps",
+  "aka": [
+   "CCC"
+  ]
+ },
  "unit-code-talker": {
   "name": "Navajo code talkers",
   "kind": "U.S. Marine Corps radio code program",
@@ -2553,6 +2594,16 @@
   "nation": "Britain",
   "wikidata": "Q2265327",
   "source": "https://en.wikipedia.org/wiki/Gordon_Highlanders"
+ },
+ "unit-government-code-and-cypher-school": {
+  "name": "Government Code and Cypher School",
+  "kind": "British codebreaking agency",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Government_Code_and_Cypher_School",
+  "aka": [
+   "GC&CS"
+  ]
  },
  "unit-grenadier-guards": {
   "name": "Grenadier Guards",
