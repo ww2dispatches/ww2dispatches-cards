@@ -648,6 +648,16 @@
   "source": "https://en.wikipedia.org/wiki/Messerschmitt_Me_210",
   "wikidata": "Q313597"
  },
+ "aircraft-messerschmitt-me-262": {
+  "name": "Messerschmitt Me 262",
+  "kind": "twin jet fighter",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Messerschmitt_Me_262",
+  "aka": [
+   "Schwalbe"
+  ]
+ },
  "aircraft-mitsubishi-a6m-zero": {
   "name": "Mitsubishi A6M Zero",
   "kind": "fighter",

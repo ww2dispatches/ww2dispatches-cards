@@ -295,6 +295,17 @@
   "source": "https://en.wikipedia.org/wiki/1st_Armoured_Division_(United_Kingdom)",
   "wikidata": "Q110886184"
  },
+ "unit-1st-army-france": {
+  "name": "First French Army",
+  "kind": "French field army under de Lattre, 1944 to 1945",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1st_Army_(France)",
+  "aka": [
+   "1st Army (France)",
+   "Armee B"
+  ]
+ },
  "unit-1st-belorussian-front": {
   "name": "1st Belorussian Front",
   "kind": "army group",
@@ -556,6 +567,13 @@
   "source": "https://en.wikipedia.org/wiki/2nd_Armored_Division_(United_States)",
   "wikidata": "Q2633981"
  },
+ "unit-2nd-armoured-division-united-kingdom": {
+  "name": "2nd Armoured Division",
+  "kind": "British armoured division in Cyrenaica, 1941",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/2nd_Armoured_Division_(United_Kingdom)"
+ },
  "unit-2nd-belorussian-front": {
   "name": "2nd Belorussian Front",
   "kind": "Soviet army group",
@@ -775,6 +793,13 @@
   "nation": "Australia",
   "wikidata": "Q4636131",
   "source": "https://en.wikipedia.org/wiki/39th_Battalion_(Australia)"
+ },
+ "unit-3rd-algerian-infantry-division": {
+  "name": "3rd Algerian Infantry Division",
+  "kind": "French North African infantry division",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/3rd_Algerian_Infantry_Division"
  },
  "unit-3rd-armored-division-united-states": {
   "name": "3rd Armored Division",

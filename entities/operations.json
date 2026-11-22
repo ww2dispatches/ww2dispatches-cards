@@ -777,6 +777,13 @@
   "wikidata": "Q709303",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Changsha_(1941%E2%80%931942)"
  },
+ "op-battle-of-christmas-island": {
+  "name": "Battle of Christmas Island",
+  "kind": "Japanese occupation of Christmas Island, 31 March to 1 April 1942",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Christmas_Island"
+ },
  "op-battle-of-cisterna": {
   "name": "Battle of Cisterna",
   "kind": "battle at Anzio",
@@ -3108,7 +3115,7 @@
   ]
  },
  "op-kamenets-podolsky-pocket": {
-  "name": "Kamenets–Podolsky pocket",
+  "name": "Kamenets Podolsky pocket",
   "kind": "Eastern Front encirclement battle, March to April 1944",
   "nation": "Germany",
   "wikidata": null,
@@ -3207,6 +3214,13 @@
   "aka": [
    "NMT Case 10"
   ]
+ },
+ "op-kvarstad-vessels": {
+  "name": "Kvarstad vessels",
+  "kind": "Norwegian ships held at Gothenburg and their breakouts, including Operation Performance",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kvarstad_vessels"
  },
  "op-laconia-incident": {
   "name": "Laconia incident",
@@ -4307,6 +4321,16 @@
   "source": "https://en.wikipedia.org/wiki/Operation_Woodlark",
   "aka": [
    "Jorstadelva Bridge sabotage"
+  ]
+ },
+ "op-operation-z-1944": {
+  "name": "Operation Z (1944)",
+  "kind": "Combined Fleet plan for a decisive battle, the Z Plan",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Z_(1944)",
+  "aka": [
+   "Z Plan"
   ]
  },
  "op-operations-ginny-i-and-ii": {

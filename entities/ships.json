@@ -1365,6 +1365,13 @@
   "source": "https://en.wikipedia.org/wiki/HMS_Bideford_(L43)",
   "wikidata": "Q5631568"
  },
+ "ship-hms-bonaventure-31": {
+  "name": "HMS Bonaventure (31)",
+  "kind": "Dido class light cruiser",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Bonaventure_(31)"
+ },
  "ship-hms-breconshire": {
   "name": "HMS Breconshire",
   "kind": "naval supply ship",
@@ -2497,6 +2504,13 @@
   "source": "https://en.wikipedia.org/wiki/Japanese_cruiser_Nachi",
   "wikidata": "Q1630667"
  },
+ "ship-japanese-cruiser-naka": {
+  "name": "Naka",
+  "kind": "Sendai class light cruiser",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_cruiser_Naka"
+ },
  "ship-japanese-cruiser-natori": {
   "name": "Japanese cruiser Natori",
   "kind": "light cruiser",
@@ -3157,6 +3171,13 @@
   "nation": "Japan",
   "wikidata": "Q241858",
   "source": "https://en.wikipedia.org/wiki/Japanese_aircraft_carrier_Shinano"
+ },
+ "ship-sms-hessen": {
+  "name": "SMS Hessen",
+  "kind": "pre dreadnought battleship used as an icebreaker",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SMS_Hessen"
  },
  "ship-soviet-cruiser-krasny-kavkaz": {
   "name": "Krasny Kavkaz",
@@ -4401,6 +4422,13 @@
   "nation": "United States",
   "source": "https://en.wikipedia.org/wiki/USS_Sealion_(SS-315)",
   "wikidata": "Q3544196"
+ },
+ "ship-uss-seawolf-ss-197": {
+  "name": "USS Seawolf (SS-197)",
+  "kind": "Sargo class submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Seawolf_(SS-197)"
  },
  "ship-uss-shark-ss-174": {
   "name": "USS Shark (SS-174)",

@@ -715,6 +715,15 @@
   "lat": 42.3351,
   "lon": -71.0731
  },
+ "place-boston-garden": {
+  "name": "Boston Garden",
+  "kind": "arena in Boston",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Boston_Garden",
+  "lat": null,
+  "lon": null
+ },
  "place-boston-harbor": {
   "name": "Boston Harbor",
   "kind": "harbor",
@@ -759,6 +768,19 @@
   "source": "https://en.wikipedia.org/wiki/Brandenburg_an_der_Havel",
   "lat": 52.4141,
   "lon": 12.5541
+ },
+ "place-brega": {
+  "name": "Brega",
+  "kind": "Libyan coastal town, Mersa Brega",
+  "nation": "Libya",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Brega",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Mersa Brega",
+   "Mersa el Brega"
+  ]
  },
  "place-bremerhaven": {
   "name": "Bremerhaven",
@@ -1211,6 +1233,15 @@
   ],
   "lat": 29.55,
   "lon": 106.5069
+ },
+ "place-christmas-island": {
+  "name": "Christmas Island",
+  "kind": "Indian Ocean island south of Java",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Christmas_Island",
+  "lat": null,
+  "lon": null
  },
  "place-church-house-westminster": {
   "name": "Church House, Westminster",
@@ -5840,6 +5871,15 @@
   "lat": 50.9067,
   "lon": -1.4044
  },
+ "place-speyer": {
+  "name": "Speyer",
+  "kind": "Rhine city in the Palatinate",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Speyer",
+  "lat": null,
+  "lon": null
+ },
  "place-st-james-s-palace": {
   "name": "St James's Palace",
   "kind": "royal palace",
@@ -5848,6 +5888,15 @@
   "source": "https://en.wikipedia.org/wiki/St_James%27s_Palace",
   "lat": 51.5047,
   "lon": -0.1378
+ },
+ "place-st-james-theatre": {
+  "name": "St. James Theatre",
+  "kind": "Broadway theatre in New York",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/St._James_Theatre",
+  "lat": null,
+  "lon": null
  },
  "place-st-john-s-newfoundland-and-labrador": {
   "name": "St. John's, Newfoundland and Labrador",
