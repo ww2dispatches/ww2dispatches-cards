@@ -95,7 +95,7 @@
   "name": "Blackburn Skua",
   "kind": "Fleet Air Arm dive bomber and fighter",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q536742",
   "source": "https://en.wikipedia.org/wiki/Blackburn_Skua"
  },
  "aircraft-boeing-247": {
@@ -154,7 +154,7 @@
   "name": "Bristol Beaufort",
   "kind": "torpedo bomber",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q534270",
   "source": "https://en.wikipedia.org/wiki/Bristol_Beaufort"
  },
  "aircraft-bristol-blenheim": {
@@ -250,7 +250,7 @@
   "name": "Dornier Do 18",
   "kind": "German flying boat",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q697344",
   "source": "https://en.wikipedia.org/wiki/Dornier_Do_18"
  },
  "aircraft-dornier-do-217": {
@@ -267,7 +267,7 @@
   "name": "Douglas A-1 Skyraider",
   "kind": "carrier attack bomber",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q266066",
   "source": "https://en.wikipedia.org/wiki/Douglas_A-1_Skyraider",
   "aka": [
    "AD Skyraider",
@@ -325,7 +325,7 @@
   "name": "Fairey Barracuda",
   "kind": "carrier torpedo and dive bomber",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q671838",
   "source": "https://en.wikipedia.org/wiki/Fairey_Barracuda"
  },
  "aircraft-fairey-swordfish": {
@@ -414,7 +414,7 @@
   "name": "Handley Page Hampden",
   "kind": "twin engine medium bomber",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q617016",
   "source": "https://en.wikipedia.org/wiki/Handley_Page_Hampden"
  },
  "aircraft-handley-page-heyford": {
@@ -428,14 +428,14 @@
   "name": "Hawker Hurricane",
   "kind": "British single seat fighter",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q194251",
   "source": "https://en.wikipedia.org/wiki/Hawker_Hurricane"
  },
  "aircraft-heinkel-he-100": {
   "name": "Heinkel He 100",
   "kind": "German prototype fighter, 1939 world speed record holder",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q642550",
   "source": "https://en.wikipedia.org/wiki/Heinkel_He_100",
   "aka": [
    "He 112U"
@@ -535,7 +535,7 @@
   "name": "Kamikaze (J-BAAI)",
   "kind": "single named record flight airplane, Ki-15 prototype",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q16248496",
   "source": "https://en.wikipedia.org/wiki/Kamikaze_(1937_aircraft)",
   "aka": [
    "Kamikaze-go"
@@ -555,7 +555,7 @@
   "name": "Kawanishi N1K",
   "kind": "fighter, Shiden and Shiden Kai",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q843413",
   "source": "https://en.wikipedia.org/wiki/Kawanishi_N1K",
   "aka": [
    "George",
@@ -566,7 +566,7 @@
   "name": "Lady Be Good (aircraft)",
   "kind": "B-24D Liberator lost in the Libyan desert in April 1943",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q432131",
   "source": "https://en.wikipedia.org/wiki/Lady_Be_Good_(aircraft)",
   "aka": [
    "Lady Be Good"
@@ -700,7 +700,7 @@
   "name": "Messerschmitt Me 262",
   "kind": "twin jet fighter",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q140254",
   "source": "https://en.wikipedia.org/wiki/Messerschmitt_Me_262",
   "aka": [
    "Schwalbe"
@@ -740,7 +740,7 @@
   "name": "Mitsubishi Ki-15",
   "kind": "Japanese reconnaissance aircraft",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q76843",
   "source": "https://en.wikipedia.org/wiki/Mitsubishi_Ki-15",
   "aka": [
    "Karigane"
@@ -827,7 +827,7 @@
   "name": "Piasecki PV-2",
   "kind": "experimental single rotor helicopter",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q3012908",
   "source": "https://en.wikipedia.org/wiki/Piasecki_PV-2"
  },
  "aircraft-republic-p-47-thunderbolt": {
