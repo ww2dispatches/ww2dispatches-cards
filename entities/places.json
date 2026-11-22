@@ -1423,6 +1423,15 @@
   "lat": 41.8817,
   "lon": -87.6728
  },
+ "place-chindwin-river": {
+  "name": "Chindwin River",
+  "kind": "river in Burma",
+  "nation": "Burma",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Chindwin_River",
+  "lat": null,
+  "lon": null
+ },
  "place-chir-river": {
   "name": "Chir River",
   "kind": "river",

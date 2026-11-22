@@ -1776,6 +1776,13 @@
   "wikidata": "Q2468198",
   "source": "https://en.wikipedia.org/wiki/Dmitry_Timofeyevich_Kozlov"
  },
+ "person-dmitry-ustinov": {
+  "name": "Dmitry Ustinov",
+  "kind": "Soviet armaments minister",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Dmitry_Ustinov"
+ },
  "person-doc-blanchard": {
   "name": "Doc Blanchard",
   "kind": "Army football fullback",
@@ -3599,6 +3606,16 @@
   "nation": "Denmark",
   "wikidata": "Q11973422",
   "source": "https://en.wikipedia.org/wiki/Gustav_Rasmussen"
+ },
+ "person-gustav-schroder": {
+  "name": "Gustav Schroder",
+  "kind": "captain of the liner St. Louis",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Gustav_Schr%C3%B6der",
+  "aka": [
+   "Gustav Schröder"
+  ]
  },
  "person-gutzon-borglum": {
   "name": "Gutzon Borglum",
@@ -8316,6 +8333,13 @@
   "source": "https://en.wikipedia.org/wiki/Richard_Sorge",
   "wikidata": "Q44580"
  },
+ "person-richard-wakeford": {
+  "name": "Richard Wakeford",
+  "kind": "British Army officer, Victoria Cross",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Richard_Wakeford"
+ },
  "person-robert-a-owens": {
   "name": "Robert A. Owens",
   "kind": "U.S. Marine sergeant, Medal of Honor",
@@ -8540,6 +8564,13 @@
   "nation": "US",
   "wikidata": "Q7358993",
   "source": "https://en.wikipedia.org/wiki/Roger_Terry"
+ },
+ "person-roland-beamont": {
+  "name": "Roland Beamont",
+  "kind": "English Electric chief test pilot",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Roland_Beamont"
  },
  "person-roland-freisler": {
   "name": "Roland Freisler",
@@ -9910,6 +9941,14 @@
   "nation": "Germany",
   "wikidata": "Q70536",
   "source": "https://en.wikipedia.org/wiki/Walter_Model"
+ },
+ "person-walter-rubarth": {
+  "name": "Walter Rubarth",
+  "kind": "German assault engineer NCO at Sedan",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://warhistory.org/2015/11/26/sedan-13-may-the-germans-cross-the-meuse/",
+  "note": "No English Wikipedia article found; source is the page that confirms him."
  },
  "person-walter-short": {
   "name": "Walter Short",

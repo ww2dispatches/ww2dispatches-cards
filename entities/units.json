@@ -2199,6 +2199,13 @@
   "wikidata": "Q831931",
   "source": "https://en.wikipedia.org/wiki/Duquesne_Spy_Ring"
  },
+ "unit-dutch-government-in-exile": {
+  "name": "Dutch government in exile",
+  "kind": "government in exile in London",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Dutch_government-in-exile"
+ },
  "unit-eighth-air-force": {
   "name": "Eighth Air Force",
   "kind": "U.S. Army Air Forces numbered air force",
@@ -3144,6 +3151,13 @@
   "aka": [
    "New First Army"
   ]
+ },
+ "unit-nii-88": {
+  "name": "NII-88",
+  "kind": "Soviet rocket research institute",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/NII-88"
  },
  "unit-ninth-air-force": {
   "name": "Ninth Air Force",

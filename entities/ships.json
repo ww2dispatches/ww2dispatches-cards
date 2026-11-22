@@ -204,6 +204,18 @@
   "wikidata": "Q669609",
   "source": "https://en.wikipedia.org/wiki/German_auxiliary_cruiser_Pinguin"
  },
+ "ship-german-auxiliary-cruiser-stier": {
+  "name": "Stier",
+  "kind": "German auxiliary cruiser (merchant raider)",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_auxiliary_cruiser_Stier",
+  "aka": [
+   "Schiff 23",
+   "Raider J",
+   "Sperrbrecher 171"
+  ]
+ },
  "ship-german-auxiliary-cruiser-thor": {
   "name": "Thor",
   "kind": "German auxiliary cruiser, merchant raider",
@@ -473,6 +485,17 @@
   "nation": "Germany",
   "wikidata": "Q5551507",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-1206"
+ },
+ "ship-german-submarine-u-1224": {
+  "name": "U-1224 (RO-501)",
+  "kind": "Type IXC/40 U-boat transferred to Japan",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-1224",
+  "aka": [
+   "RO-501",
+   "Satsuki No. 2"
+  ]
  },
  "ship-german-submarine-u-123-1940": {
   "name": "U-123",
@@ -1467,6 +1490,13 @@
   "wikidata": "Q569433",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-751"
  },
+ "ship-german-submarine-u-753": {
+  "name": "U-753",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-753"
+ },
  "ship-german-submarine-u-77-1940": {
   "name": "U-77",
   "kind": "German Type VIIC submarine",
@@ -2264,6 +2294,13 @@
   "wikidata": "Q1470462",
   "source": "https://en.wikipedia.org/wiki/HMS_Hasty_(H24)"
  },
+ "ship-hms-hereward-h93": {
+  "name": "HMS Hereward (H93)",
+  "kind": "H class destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Hereward_(H93)"
+ },
  "ship-hms-hermes-95": {
   "name": "HMS Hermes (95)",
   "kind": "Royal Navy aircraft carrier",
@@ -2291,6 +2328,13 @@
   "nation": "Britain",
   "wikidata": "Q1564840",
   "source": "https://en.wikipedia.org/wiki/HMS_Hotspur_(H01)"
+ },
+ "ship-hms-hunter-h35": {
+  "name": "HMS Hunter (H35)",
+  "kind": "H class destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Hunter_(H35)"
  },
  "ship-hms-hyperion-h97": {
   "name": "HMS Hyperion (H97)",
@@ -3998,6 +4042,13 @@
   "wikidata": "Q11559813",
   "source": "https://en.wikipedia.org/wiki/MS_Awazisan_Maru"
  },
+ "ship-ms-st-louis": {
+  "name": "MS St. Louis",
+  "kind": "German ocean liner",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/MS_St._Louis"
+ },
  "ship-mv-asama-maru": {
   "name": "Asama Maru",
   "kind": "ocean liner",
@@ -5180,6 +5231,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/USS_Forrestal",
   "wikidata": "Q1141369"
+ },
+ "ship-uss-francis-m-robinson": {
+  "name": "USS Francis M. Robinson (DE-220)",
+  "kind": "destroyer escort",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Francis_M._Robinson"
  },
  "ship-uss-franklin-cv-13": {
   "name": "USS Franklin (CV-13)",
