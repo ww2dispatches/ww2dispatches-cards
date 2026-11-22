@@ -658,6 +658,17 @@
   "wikidata": "Q1515631",
   "source": "https://en.wikipedia.org/wiki/Point-contact_transistor"
  },
+ "machine-polytetrafluoroethylene": {
+  "name": "Polytetrafluoroethylene",
+  "kind": "synthetic polymer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Polytetrafluoroethylene",
+  "aka": [
+   "PTFE",
+   "Teflon"
+  ]
+ },
  "machine-pratt-whitney-r-4360-wasp-major": {
   "name": "Pratt and Whitney R-4360",
   "kind": "radial aircraft engine",

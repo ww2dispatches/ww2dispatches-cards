@@ -453,6 +453,13 @@
    "Financial Agreement of 1945"
   ]
  },
+ "op-anglo-polish-alliance": {
+  "name": "Anglo-Polish alliance",
+  "kind": "alliance",
+  "nation": "Britain, Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Anglo-Polish_alliance"
+ },
  "op-anschluss": {
   "name": "Anschluss",
   "kind": "German annexation of Austria, March 1938",
@@ -1565,6 +1572,16 @@
   "source": "https://en.wikipedia.org/wiki/Battle_of_the_Mareth_Line",
   "aka": [
    "Operation Pugilist"
+  ]
+ },
+ "op-battle-of-the-metaxas-line": {
+  "name": "Battle of the Metaxas Line",
+  "kind": "battle",
+  "nation": "Greece, Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_the_Metaxas_Line",
+  "aka": [
+   "Battle of the Forts"
   ]
  },
  "op-battle-of-the-north-cape": {
@@ -2703,6 +2720,16 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Final_offensive_of_the_Spanish_Civil_War"
  },
+ "op-finno-soviet-treaty-of-1948": {
+  "name": "Finno-Soviet Treaty of 1948",
+  "kind": "treaty",
+  "nation": "Finland, Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Finno-Soviet_Treaty_of_1948",
+  "aka": [
+   "YYA Treaty"
+  ]
+ },
  "op-fireside-chats": {
   "name": "Fireside chats",
   "kind": "Roosevelt's radio addresses",
@@ -2814,6 +2841,25 @@
   "nation": "worldwide",
   "wikidata": "Q865344",
   "source": "https://en.wikipedia.org/wiki/Genocide_Convention"
+ },
+ "op-georgian-uprising-on-texel": {
+  "name": "Georgian uprising on Texel",
+  "kind": "mutiny and battle",
+  "nation": "Netherlands, Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Georgian_uprising_on_Texel"
+ },
+ "op-german-bombing-of-belgrade": {
+  "name": "German bombing of Belgrade",
+  "kind": "air raid",
+  "nation": "Germany, Yugoslavia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_bombing_of_Belgrade",
+  "aka": [
+   "Operation Retribution",
+   "Operation Punishment"
+  ],
+  "note": "The April 1941 raids; distinct from op-bombing-of-belgrade-in-world-war-ii, the article on all wartime bombings of the city"
  },
  "op-german-declaration-of-war-on-the-united-states": {
   "name": "German declaration of war on the United States",
@@ -4168,6 +4214,25 @@
   "wikidata": "Q2314453",
   "source": "https://en.wikipedia.org/wiki/Operation_Ke"
  },
+ "op-operation-kikusui": {
+  "name": "Operation Kikusui",
+  "kind": "kamikaze campaign",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Kikusui"
+ },
+ "op-operation-kikusui-i": {
+  "name": "Operation Ten-Go",
+  "kind": "naval operation",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Kikusui_I",
+  "aka": [
+   "Operation Kikusui I",
+   "Ten-ichi-go"
+  ],
+  "note": "Wikipedia now titles the Yamato sortie article Operation Kikusui I; Operation_Ten-Go redirects there"
+ },
  "op-operation-kita": {
   "name": "Operation Kita",
   "kind": "Japanese naval supply run from Singapore to Japan, February 1945",
@@ -4556,6 +4621,16 @@
   "nation": "Japan",
   "wikidata": "Q7137514",
   "source": "https://en.wikipedia.org/wiki/Parit_Sulong_Massacre"
+ },
+ "op-pay-as-you-earn-tax": {
+  "name": "Pay As You Earn",
+  "kind": "tax collection system",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Pay-as-you-earn_tax",
+  "aka": [
+   "PAYE"
+  ]
  },
  "op-philippines-campaign-1941-1942": {
   "name": "Philippines campaign (1941 to 1942)",

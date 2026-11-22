@@ -463,6 +463,15 @@
   "lat": 54.5967,
   "lon": -5.93
  },
+ "place-belgrade": {
+  "name": "Belgrade",
+  "kind": "city",
+  "nation": "Yugoslavia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Belgrade",
+  "lat": null,
+  "lon": null
+ },
  "place-bellows-air-force-station": {
   "name": "Bellows Field",
   "kind": "airfield",
@@ -827,6 +836,15 @@
   "nation": "Italy",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Brenner_Pass",
+  "lat": null,
+  "lon": null
+ },
+ "place-brest-france": {
+  "name": "Brest",
+  "kind": "port city",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Brest,_France",
   "lat": null,
   "lon": null
  },
@@ -1928,6 +1946,18 @@
    "Mont Valérien"
   ]
  },
+ "place-fort-roupel": {
+  "name": "Fort Roupel",
+  "kind": "fort of the Metaxas Line",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fort_Roupel",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Fort Rupel"
+  ]
+ },
  "place-fort-stanton": {
   "name": "Fort Stanton",
   "kind": "fort and internment camp, New Mexico",
@@ -2713,6 +2743,15 @@
   "wikidata": "Q201633",
   "lat": 24.78,
   "lon": 141.32
+ },
+ "place-izieu": {
+  "name": "Izieu",
+  "kind": "village",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Izieu",
+  "lat": null,
+  "lon": null
  },
  "place-jajce": {
   "name": "Jajce",
@@ -6450,6 +6489,15 @@
   "lat": 40.3436,
   "lon": -1.1072
  },
+ "place-texel": {
+  "name": "Texel",
+  "kind": "island",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Texel",
+  "lat": null,
+  "lon": null
+ },
  "place-thala-tunisia": {
   "name": "Thala",
   "kind": "town in Tunisia",
@@ -6820,6 +6868,19 @@
   "source": "https://en.wikipedia.org/wiki/Vilna_Ghetto",
   "lat": 54.6833,
   "lon": 25.3167
+ },
+ "place-visakhapatnam": {
+  "name": "Visakhapatnam",
+  "kind": "port city",
+  "nation": "India",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Visakhapatnam",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Vizagapatam",
+   "Vizag"
+  ]
  },
  "place-volga": {
   "name": "Volga",

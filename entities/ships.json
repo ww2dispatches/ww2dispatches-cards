@@ -3401,6 +3401,13 @@
   "source": "https://en.wikipedia.org/wiki/SS_Clan_Campbell",
   "wikidata": "Q138632352"
  },
+ "ship-ss-clan-fraser-1938": {
+  "name": "SS Clan Fraser",
+  "kind": "cargo ship",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Clan_Fraser_(1938)"
+ },
  "ship-ss-columbus-1922": {
   "name": "SS Columbus",
   "kind": "German ocean liner",
@@ -3879,6 +3886,13 @@
   "wikidata": "Q7867945",
   "source": "https://en.wikipedia.org/wiki/USS_Burns_(DD-588)"
  },
+ "ship-uss-bush-dd-529": {
+  "name": "USS Bush (DD-529)",
+  "kind": "Fletcher class destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Bush_(DD-529)"
+ },
  "ship-uss-cabot-cvl-28": {
   "name": "USS Cabot (CVL-28)",
   "kind": "light aircraft carrier",
@@ -3906,6 +3920,13 @@
   "nation": "US",
   "wikidata": "Q2119791",
   "source": "https://en.wikipedia.org/wiki/USS_Chicago_(CA-29)"
+ },
+ "ship-uss-colhoun-dd-801": {
+  "name": "USS Colhoun (DD-801)",
+  "kind": "Fletcher class destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Colhoun_(DD-801)"
  },
  "ship-uss-columbia-cl-56": {
   "name": "USS Columbia (CL-56)",
