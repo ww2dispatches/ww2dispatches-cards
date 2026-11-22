@@ -6,7 +6,6 @@
 import data from '../_data/intercept.json';
 import { released, filmReleased, findCard } from './catalog.js';
 import { gameDay, addDays, zonedTime, isoSec } from './time.js';
-import { isTester } from './admins.js';
 
 // Launch switch. Until it is true, the home tile reads "Coming soon" and only a tester who opened the
 // preview link (?intercept=preview) can play. Launching is a one line change here, no Cloudflare step.
@@ -29,14 +28,11 @@ const LIVING_ONE_IN = 6; // the same living rate as an archive slot
 export const fitsOf = g => new Set([...(g.cards || []), ...(g.alsoFits || [])]);
 const FITS = new Map(ALL_GROUPS.map(g => [g.id, fitsOf(g)]));
 
-// Who may play right now: everyone once live; before that, testers holding the preview flag, and any
-// local test copy. A tester is a player flagged in the database (signed in before the Declass launch)
-// or one whose file number is on the admin or TESTER_FILES list (functions/_lib/admins.js), so Brian
-// and named testers keep the preview after launch night wipes the players table.
+// Who may play right now: everyone once live, and any local test copy. The tester preview was removed
+// before launch (22 Nov 2026, Code Room doc to do item 9).
 export function interceptOpen(env, request, player) {
   if (INTERCEPT_LIVE) return true;
-  if (env.ALLOW_FAKE_NOW === '1') return true;
-  return Boolean(isTester(env, player) && request.headers.get('x-intercept-preview') === '1');
+  return env.ALLOW_FAKE_NOW === '1';
 }
 
 // The game day and the moment it ends (midnight Eastern).
@@ -273,7 +269,6 @@ export function publicPuzzle(row, t) {
     claimed, canClaim: row.status === 'solved' && !claimed,
     perfect: row.status === 'solved' && row.mistakes === 0,
     expired: !done && gameDay(t) !== row.day,
-    practice: grid.practice || 0, // a tester's replay (7 Nov 2026): no Intel, no Top Secret serial
   };
 }
 
