@@ -410,6 +410,13 @@
   "wikidata": "Q4597069",
   "source": "https://en.wikipedia.org/wiki/2/9th_Battalion_(Australia)"
  },
+ "unit-200th-division-national-revolutionary-army": {
+  "name": "200th Division (National Revolutionary Army)",
+  "kind": "Chinese mechanized division",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/200th_Division_(National_Revolutionary_Army)"
+ },
  "unit-21st-army-soviet-union": {
   "name": "21st Army",
   "kind": "Soviet field army",
@@ -955,6 +962,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/4th_Armored_Division_(United_States)",
   "wikidata": "Q4639180"
+ },
+ "unit-4th-army-wehrmacht": {
+  "name": "4th Army (Wehrmacht)",
+  "kind": "German field army",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/4th_Army_(Wehrmacht)"
  },
  "unit-4th-infantry-division-india": {
   "name": "4th Indian Infantry Division",
@@ -1670,6 +1684,13 @@
   "aka": [
    "code talkers"
   ]
+ },
+ "unit-commissariat-general-for-jewish-affairs": {
+  "name": "Commissariat-General for Jewish Affairs",
+  "kind": "Vichy French agency enforcing anti-Jewish laws",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Commissariat-General_for_Jewish_Affairs"
  },
  "unit-consolidated-aircraft": {
   "name": "Consolidated Aircraft",

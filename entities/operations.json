@@ -766,6 +766,13 @@
    "Operation Catchpole"
   ]
  },
+ "op-battle-of-frankfurt": {
+  "name": "Battle of Frankfurt",
+  "kind": "capture of Frankfurt am Main, March 1945",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Frankfurt"
+ },
  "op-battle-of-garfagnana": {
   "name": "Battle of Garfagnana",
   "kind": "German counteroffensive in the Serchio valley",
@@ -1480,6 +1487,13 @@
   "wikidata": "Q639989",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Tolvaj%C3%A4rvi"
  },
+ "op-battle-of-toungoo": {
+  "name": "Battle of Toungoo",
+  "kind": "battle in Burma, March 1942",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Toungoo"
+ },
  "op-battle-of-tripoli-1943": {
   "name": "Battle of Tripoli (1943)",
   "kind": "battle",
@@ -2154,6 +2168,13 @@
   "wikidata": "Q5166645",
   "source": "https://en.wikipedia.org/wiki/Convoy_ON_166"
  },
+ "op-convoy-pq-13": {
+  "name": "Convoy PQ 13",
+  "kind": "Arctic convoy to the Soviet Union, March 1942",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Convoy_PQ_13"
+ },
  "op-convoy-pq-8": {
   "name": "Convoy PQ 8",
   "kind": "Arctic convoy",
@@ -2191,6 +2212,13 @@
   "nation": "Australia",
   "wikidata": "Q3054185",
   "source": "https://en.wikipedia.org/wiki/Cowra_breakout"
+ },
+ "op-cripps-mission": {
+  "name": "Cripps Mission",
+  "kind": "British mission to India, March and April 1942",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Cripps_Mission"
  },
  "op-czestochowa-ghetto-uprising": {
   "name": "Częstochowa Ghetto uprising",
@@ -2667,6 +2695,13 @@
   "nation": "Japan",
   "wikidata": "Q5639369",
   "source": "https://en.wikipedia.org/wiki/Hainan_Island_Operation"
+ },
+ "op-heiligenbeil-pocket": {
+  "name": "Heiligenbeil Pocket",
+  "kind": "encirclement battle in East Prussia, 1945",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Heiligenbeil_Pocket"
  },
  "op-ho-sainteny-agreement": {
   "name": "Ho Sainteny Agreement",
@@ -3236,6 +3271,13 @@
   "aka": [
    "Chinese Exclusion Repeal Act"
   ]
+ },
+ "op-malagasy-uprising": {
+  "name": "Malagasy Uprising",
+  "kind": "nationalist revolt against French rule in Madagascar, 1947 to 1949",
+  "nation": "Madagascar",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Malagasy_Uprising"
  },
  "op-malayan-campaign": {
   "name": "Malayan campaign",

@@ -1383,6 +1383,15 @@
   "lat": -12.4381,
   "lon": 130.8411
  },
+ "place-datchworth": {
+  "name": "Datchworth",
+  "kind": "village in Hertfordshire",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Datchworth",
+  "lat": null,
+  "lon": null
+ },
  "place-davos": {
   "name": "Davos",
   "kind": "Swiss town",
@@ -3962,6 +3971,15 @@
   "lat": -34.9059,
   "lon": -56.1913
  },
+ "place-moramanga": {
+  "name": "Moramanga",
+  "kind": "town in eastern Madagascar",
+  "nation": "Madagascar",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Moramanga",
+  "lat": null,
+  "lon": null
+ },
  "place-morong-bataan": {
   "name": "Morong, Bataan",
   "kind": "town",
@@ -5667,6 +5685,15 @@
   "source": "https://en.wikipedia.org/wiki/Sommocolonia",
   "lat": 44.0922,
   "lon": 10.4914
+ },
+ "place-sopron": {
+  "name": "Sopron",
+  "kind": "city in western Hungary",
+  "nation": "Hungary",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sopron",
+  "lat": null,
+  "lon": null
  },
  "place-sounion": {
   "name": "Cape Sounion",

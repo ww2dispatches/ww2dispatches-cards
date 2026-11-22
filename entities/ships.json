@@ -258,6 +258,13 @@
   "wikidata": "Q155430",
   "source": "https://en.wikipedia.org/wiki/German_cruiser_Prinz_Eugen"
  },
+ "ship-german-destroyer-z26": {
+  "name": "Z26",
+  "kind": "German destroyer",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_destroyer_Z26"
+ },
  "ship-german-destroyer-z27": {
   "name": "German destroyer Z27",
   "kind": "Type 1936A destroyer",
@@ -995,6 +1002,13 @@
   "nation": "Germany",
   "wikidata": "Q569433",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-751"
+ },
+ "ship-german-submarine-u-77-1940": {
+  "name": "U-77",
+  "kind": "German Type VIIC submarine",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-77_(1940)"
  },
  "ship-german-submarine-u-79-1941": {
   "name": "U-79",
@@ -1948,6 +1962,13 @@
    "HMS Thunderbolt",
    "Thunderbolt"
   ]
+ },
+ "ship-hms-trinidad-46": {
+  "name": "HMS Trinidad (46)",
+  "kind": "Royal Navy light cruiser",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Trinidad_(46)"
  },
  "ship-hms-tuna-n94": {
   "name": "HMS Tuna (N94)",
