@@ -3401,6 +3401,18 @@
   "lat": 64.1475,
   "lon": -21.935
  },
+ "place-kingston-upon-hull": {
+  "name": "Kingston upon Hull",
+  "kind": "port city",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kingston_upon_Hull",
+  "aka": [
+   "Hull"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-klaipeda": {
   "name": "Klaipeda",
   "kind": "port city",
@@ -4864,6 +4876,18 @@
   "lat": 14.6043,
   "lon": 120.5076
  },
+ "place-mount-sapun": {
+  "name": "Mount Sapun",
+  "kind": "heights above Sevastopol",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mount_Sapun",
+  "aka": [
+   "Sapun Gora"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-mount-suribachi": {
   "name": "Mount Suribachi",
   "kind": "volcanic peak, southern tip of Iwo Jima",
@@ -6135,6 +6159,18 @@
   "source": "https://en.wikipedia.org/wiki/Reichstag_building",
   "lat": 52.5186,
   "lon": 13.3761
+ },
+ "place-reims": {
+  "name": "Reims",
+  "kind": "city, site of SHAEF headquarters in 1945",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Reims",
+  "aka": [
+   "Rheims"
+  ],
+  "lat": null,
+  "lon": null
  },
  "place-reykjavik": {
   "name": "Reykjavik",

@@ -949,6 +949,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-439"
  },
+ "ship-german-submarine-u-447": {
+  "name": "U-447",
+  "kind": "Kriegsmarine Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-447"
+ },
  "ship-german-submarine-u-454": {
   "name": "U-454",
   "kind": "U-boat",
@@ -1321,6 +1328,13 @@
   "wikidata": "Q571258",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-66_(1940)"
  },
+ "ship-german-submarine-u-663": {
+  "name": "U-663",
+  "kind": "Kriegsmarine Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-663"
+ },
  "ship-german-submarine-u-679": {
   "name": "U-679",
   "kind": "Type VIIC U-boat",
@@ -1692,6 +1706,14 @@
   "wikidata": "Q17019062",
   "source": "https://en.wikipedia.org/wiki/HMCS_Thetford_Mines"
  },
+ "ship-hmcs-valleyfield": {
+  "name": "HMCS Valleyfield (K329)",
+  "kind": "Royal Canadian Navy River class frigate",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMCS_Valleyfield",
+  "note": "Wikipedia article title has no hull number"
+ },
  "ship-hmcs-ville-de-quebec": {
   "name": "HMCS Ville de Quebec (K242)",
   "kind": "Flower class corvette",
@@ -1775,6 +1797,13 @@
   "nation": "Britain",
   "wikidata": "Q1459836",
   "source": "https://en.wikipedia.org/wiki/HMS_Antelope_(H36)"
+ },
+ "ship-hms-anthony-h40": {
+  "name": "HMS Anthony (H40)",
+  "kind": "Royal Navy destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Anthony_(H40)"
  },
  "ship-hms-argonaut-61": {
   "name": "HMS Argonaut (61)",
@@ -2441,6 +2470,13 @@
   "wikidata": "Q1565225",
   "source": "https://en.wikipedia.org/wiki/HMS_Queen_Elizabeth_(1913)"
  },
+ "ship-hms-ramillies-07": {
+  "name": "HMS Ramillies (07)",
+  "kind": "Royal Navy battleship",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Ramillies_(07)"
+ },
  "ship-hms-rawalpindi": {
   "name": "HMS Rawalpindi",
   "kind": "armed merchant cruiser",
@@ -3063,6 +3099,17 @@
   "source": "https://en.wikipedia.org/wiki/Japanese_aircraft_carrier_Hiry%C5%AB",
   "aka": [
    "Hiryu"
+  ]
+ },
+ "ship-japanese-aircraft-carrier-shoho": {
+  "name": "Shoho",
+  "kind": "Imperial Japanese Navy light aircraft carrier",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_aircraft_carrier_Sh%C5%8Dh%C5%8D",
+  "aka": [
+   "Shōhō",
+   "Ryukaku (US misidentification)"
   ]
  },
  "ship-japanese-aircraft-carrier-soryu": {
@@ -5314,6 +5361,13 @@
   "wikidata": "Q7872167",
   "source": "https://en.wikipedia.org/wiki/USS_Neal_A._Scott"
  },
+ "ship-uss-neosho-ao-23": {
+  "name": "USS Neosho (AO-23)",
+  "kind": "US Navy fleet oiler",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Neosho_(AO-23)"
+ },
  "ship-uss-nereus-as-17": {
   "name": "USS Nereus (AS-17)",
   "kind": "US submarine tender",
@@ -5656,6 +5710,13 @@
   "nation": "US",
   "wikidata": "Q7874072",
   "source": "https://en.wikipedia.org/wiki/USS_Shark_(SS-174)"
+ },
+ "ship-uss-sims-dd-409": {
+  "name": "USS Sims (DD-409)",
+  "kind": "US Navy destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Sims_(DD-409)"
  },
  "ship-uss-skipjack-ss-184": {
   "name": "USS Skipjack (SS-184)",

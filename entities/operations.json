@@ -2755,6 +2755,16 @@
    "Geneva Conference"
   ]
  },
+ "op-congress-of-europe": {
+  "name": "Congress of Europe",
+  "kind": "European unity congress at The Hague, 7 to 10 May 1948",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Congress_of_Europe",
+  "aka": [
+   "Hague Congress"
+  ]
+ },
  "op-constitution-of-italy": {
   "name": "Constitution of Italy",
   "kind": "constitution, approved 1947",
@@ -3353,6 +3363,13 @@
   "wikidata": "Q85761082",
   "source": "https://en.wikipedia.org/wiki/First_mass_transport_of_Jews_to_Auschwitz_concentration_camp"
  },
+ "op-flensburg-government": {
+  "name": "Flensburg Government",
+  "kind": "Doenitz's rump German government, May 1945",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Flensburg_Government"
+ },
  "op-flick-trial": {
   "name": "Flick trial",
   "kind": "Nuremberg Military Tribunal Case 5",
@@ -3473,6 +3490,13 @@
   "wikidata": "Q18245647",
   "source": "https://en.wikipedia.org/wiki/German_declaration_of_war_on_the_United_States"
  },
+ "op-german-instrument-of-surrender": {
+  "name": "German Instrument of Surrender",
+  "kind": "surrender documents signed at Reims and Berlin, May 1945",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_Instrument_of_Surrender"
+ },
  "op-german-invasion-of-denmark-1940": {
   "name": "German invasion of Denmark (1940)",
   "kind": "invasion",
@@ -3587,6 +3611,16 @@
   "wikidata": "Q5639369",
   "source": "https://en.wikipedia.org/wiki/Hainan_Island_Operation"
  },
+ "op-halifax-riot": {
+  "name": "Halifax riot",
+  "kind": "VE Day riots in Halifax and Dartmouth, 7 to 8 May 1945",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Halifax_riot",
+  "aka": [
+   "Halifax VE Day riots"
+  ]
+ },
  "op-heiligenbeil-pocket": {
   "name": "Heiligenbeil Pocket",
   "kind": "encirclement battle in East Prussia, 1945",
@@ -3644,6 +3678,13 @@
   "nation": "China",
   "wikidata": "Q372153",
   "source": "https://en.wikipedia.org/wiki/Huaihai_campaign"
+ },
+ "op-hull-blitz": {
+  "name": "Hull Blitz",
+  "kind": "German bombing of Kingston upon Hull",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hull_Blitz"
  },
  "op-humanity-declaration": {
   "name": "Humanity Declaration",
@@ -5480,6 +5521,13 @@
   "aka": [
    "POA"
   ]
+ },
+ "op-pact-of-steel": {
+  "name": "Pact of Steel",
+  "kind": "German Italian military alliance, signed 22 May 1939",
+  "nation": "Germany, Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Pact_of_Steel"
  },
  "op-palawan-massacre": {
   "name": "Palawan massacre",

@@ -1765,6 +1765,16 @@
    "Nyilaskeresztes Part"
   ]
  },
+ "unit-associated-press": {
+  "name": "Associated Press",
+  "kind": "American news agency",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Associated_Press",
+  "aka": [
+   "AP"
+  ]
+ },
  "unit-auergesellschaft": {
   "name": "Auergesellschaft",
   "kind": "German company that produced uranium at Oranienburg",
@@ -2108,6 +2118,13 @@
   "nation": "United Kingdom",
   "source": "https://en.wikipedia.org/wiki/Desert_Air_Force",
   "wikidata": "Q2895978"
+ },
+ "unit-detroit-tigers": {
+  "name": "Detroit Tigers",
+  "kind": "American League baseball club",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Detroit_Tigers"
  },
  "unit-dogs-for-defense": {
   "name": "Dogs For Defense",
@@ -3874,6 +3891,17 @@
   "nation": "Germany",
   "wikidata": "Q84024",
   "source": "https://en.wikipedia.org/wiki/Sonderkommando_Elbe"
+ },
+ "unit-sony": {
+  "name": "Sony",
+  "kind": "Japanese electronics company, founded as Tokyo Tsushin Kogyo",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sony",
+  "aka": [
+   "Tokyo Tsushin Kogyo",
+   "Totsuko"
+  ]
  },
  "unit-south-seas-detachment": {
   "name": "South Seas Detachment",
