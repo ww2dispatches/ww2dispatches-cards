@@ -2827,6 +2827,13 @@
   "wikidata": "Q1318636",
   "source": "https://en.wikipedia.org/wiki/HMS_Warspite_(03)"
  },
+ "ship-hms-welshman": {
+  "name": "HMS Welshman (M84)",
+  "kind": "Abdiel class fast minelayer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Welshman"
+ },
  "ship-hms-westcott": {
   "name": "HMS Westcott (D47)",
   "kind": "destroyer",
@@ -3439,6 +3446,13 @@
   "aka": [
    "Kagero"
   ]
+ },
+ "ship-japanese-destroyer-karukaya": {
+  "name": "Karukaya",
+  "kind": "Wakatake class destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Karukaya"
  },
  "ship-japanese-destroyer-kikuzuki-1926": {
   "name": "Japanese destroyer Kikuzuki (1926)",
@@ -4935,6 +4949,13 @@
   "nation": "US",
   "wikidata": "Q2119791",
   "source": "https://en.wikipedia.org/wiki/USS_Chicago_(CA-29)"
+ },
+ "ship-uss-cod": {
+  "name": "USS Cod (SS-224)",
+  "kind": "Gato class submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Cod"
  },
  "ship-uss-colhoun-dd-801": {
   "name": "USS Colhoun (DD-801)",

@@ -1880,6 +1880,15 @@
    "Netherlands Indies"
   ]
  },
+ "place-eaglesham": {
+  "name": "Eaglesham",
+  "kind": "village in Renfrewshire, Scotland",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Eaglesham",
+  "lat": null,
+  "lon": null
+ },
  "place-east-berlin": {
   "name": "East Berlin",
   "kind": "Soviet sector of Berlin",
@@ -2138,6 +2147,15 @@
   "wikidata": "Q823081",
   "lat": 49.3797,
   "lon": 6.2578
+ },
+ "place-fort-eben-emael": {
+  "name": "Fort Eben Emael",
+  "kind": "Belgian fortress on the Albert Canal",
+  "nation": "Belgium",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fort_%C3%89ben-%C3%89mael",
+  "lat": null,
+  "lon": null
  },
  "place-fort-jeanne-d-arc": {
   "name": "Fort Jeanne d'Arc",
@@ -5616,6 +5634,15 @@
   "lat": 49.4548,
   "lon": 11.0465
  },
+ "place-palace-of-westminster": {
+  "name": "Palace of Westminster",
+  "kind": "Houses of Parliament, London",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Palace_of_Westminster",
+  "lat": null,
+  "lon": null
+ },
  "place-palau": {
   "name": "Palau",
   "kind": "island group in the western Carolines, Japanese fleet anchorage",
@@ -6609,6 +6636,15 @@
   "lat": 14.61,
   "lon": 120.9894
  },
+ "place-sark": {
+  "name": "Sark",
+  "kind": "Channel Island",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sark",
+  "lat": null,
+  "lon": null
+ },
  "place-sasebo": {
   "name": "Sasebo",
   "kind": "Japanese naval port",
@@ -6732,6 +6768,15 @@
   "wikidata": "Q194020",
   "lat": 49.5833,
   "lon": 42.7333
+ },
+ "place-seraing": {
+  "name": "Seraing",
+  "kind": "industrial town near Liege, home of the Cockerill works",
+  "nation": "Belgium",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Seraing",
+  "lat": null,
+  "lon": null
  },
  "place-setif": {
   "name": "Setif",
@@ -8252,6 +8297,18 @@
   "lon": 9.9294,
   "aka": [
    "Würzburg"
+  ]
+ },
+ "place-xiamen": {
+  "name": "Xiamen",
+  "kind": "port city on Amoy Island, Fujian",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Xiamen",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Amoy"
   ]
  },
  "place-yakhroma": {

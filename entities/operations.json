@@ -533,6 +533,16 @@
   "wikidata": "Q4202301",
   "source": "https://en.wikipedia.org/wiki/Amethyst_incident"
  },
+ "op-amoy-operation": {
+  "name": "Amoy Operation",
+  "kind": "Japanese capture of Amoy, May 1938",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Amoy_Operation",
+  "aka": [
+   "Battle of Xiamen"
+  ]
+ },
  "op-andalsnes-landings": {
   "name": "Andalsnes landings",
   "kind": "British landings in Norway, April 1940",
@@ -1129,6 +1139,13 @@
   "aka": [
    "Operation Catchpole"
   ]
+ },
+ "op-battle-of-fort-eben-emael": {
+  "name": "Battle of Fort Eben Emael",
+  "kind": "German glider assault, 10 to 11 May 1940",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Fort_%C3%89ben-%C3%89mael"
  },
  "op-battle-of-frankfurt": {
   "name": "Battle of Frankfurt",
@@ -1885,6 +1902,13 @@
   "aka": [
    "Operation Squarepeg"
   ]
+ },
+ "op-battle-of-the-hague-1940": {
+  "name": "Battle for The Hague",
+  "kind": "German airborne attack, 10 May 1940",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_the_Hague_(1940)"
  },
  "op-battle-of-the-heligoland-bight-1939": {
   "name": "Battle of the Heligoland Bight (1939)",
@@ -3545,6 +3569,13 @@
    "Operation Margarethe"
   ]
  },
+ "op-german-invasion-of-luxembourg": {
+  "name": "German invasion of Luxembourg",
+  "kind": "German invasion, 10 May 1940",
+  "nation": "Luxembourg",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_invasion_of_Luxembourg"
+ },
  "op-german-polish-declaration-of-non-aggression": {
   "name": "German-Polish declaration of non-aggression",
   "kind": "1934 non-aggression pact",
@@ -3820,6 +3851,16 @@
   "nation": "Netherlands",
   "wikidata": "Q16987280",
   "source": "https://en.wikipedia.org/wiki/Inundation_of_the_Wieringermeer"
+ },
+ "op-invasion-of-iceland": {
+  "name": "Invasion of Iceland",
+  "kind": "British occupation of Iceland, 10 May 1940",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Invasion_of_Iceland",
+  "aka": [
+   "Operation Fork"
+  ]
  },
  "op-invasion-of-lingayen-gulf": {
   "name": "Invasion of Lingayen Gulf",
@@ -4302,6 +4343,13 @@
   "source": "https://en.wikipedia.org/wiki/Liberation_of_Strasbourg",
   "wikidata": "Q65129037"
  },
+ "op-liberation-of-the-german-occupied-channel-islands": {
+  "name": "Liberation of the Channel Islands",
+  "kind": "British liberation of the Channel Islands, May 1945",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Liberation_of_the_German-occupied_Channel_Islands"
+ },
  "op-liepaja-massacres": {
   "name": "Liepāja massacres",
   "kind": "Holocaust mass shootings in Latvia, 1941",
@@ -4603,6 +4651,13 @@
   "wikidata": "Q3107490",
   "note": "Wikipedia article covers Navy Day in several nations; our cards mean the U.S. observance of 27 October."
  },
+ "op-nazi-book-burnings": {
+  "name": "Nazi book burnings",
+  "kind": "book burning campaign, May 1933",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Nazi_book_burnings"
+ },
  "op-nazi-boycott-of-jewish-businesses": {
   "name": "Nazi boycott of Jewish businesses",
   "kind": "nationwide antisemitic boycott, 1 April 1933",
@@ -4887,6 +4942,13 @@
   "aka": [
    "Operation Baseplate"
   ]
+ },
+ "op-operation-bowery": {
+  "name": "Operation Bowery",
+  "kind": "Spitfire ferry operation to Malta, May 1942",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Bowery"
  },
  "op-operation-bowler": {
   "name": "Operation Bowler",
@@ -6434,6 +6496,13 @@
   "aka": [
    "Stresa Conference"
   ]
+ },
+ "op-strike-of-the-100-000": {
+  "name": "Strike of the 100,000",
+  "kind": "strike in occupied Belgium, 10 to 18 May 1941",
+  "nation": "Belgium",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Strike_of_the_100,000"
  },
  "op-struma-disaster": {
   "name": "Struma disaster",
