@@ -4083,6 +4083,15 @@
   "lat": 50.5792,
   "lon": 7.2442
  },
+ "place-luneburg-heath": {
+  "name": "Luneburg Heath",
+  "kind": "heathland south of Hamburg",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/L%C3%BCneburg_Heath",
+  "lat": null,
+  "lon": null
+ },
  "place-lutsk": {
   "name": "Lutsk",
   "kind": "city",
@@ -4418,6 +4427,15 @@
   "source": "https://en.wikipedia.org/wiki/Massawa",
   "lat": 15.6,
   "lon": 39.4333
+ },
+ "place-mattsee": {
+  "name": "Mattsee",
+  "kind": "town near Salzburg",
+  "nation": "Austria",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mattsee",
+  "lat": null,
+  "lon": null
  },
  "place-maungdaw": {
   "name": "Maungdaw",
@@ -7496,6 +7514,15 @@
   "source": "https://en.wikipedia.org/wiki/Tula,_Russia",
   "lat": 54.2,
   "lon": 37.6167
+ },
+ "place-tulagi": {
+  "name": "Tulagi",
+  "kind": "island, Solomon Islands",
+  "nation": "Solomon Islands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tulagi",
+  "lat": null,
+  "lon": null
  },
  "place-tulamben": {
   "name": "Tulamben",

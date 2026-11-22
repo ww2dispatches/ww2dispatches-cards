@@ -460,6 +460,13 @@
   "wikidata": "Q549265",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-124_(1940)"
  },
+ "ship-german-submarine-u-125-1940": {
+  "name": "U-125",
+  "kind": "Type IXB U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-125_(1940)"
+ },
  "ship-german-submarine-u-127-1941": {
   "name": "German submarine U-127 (1941)",
   "kind": "Type IXC U-boat",
@@ -852,6 +859,13 @@
   "wikidata": "Q666604",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-37_(1938)"
  },
+ "ship-german-submarine-u-371": {
+  "name": "U-371",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-371"
+ },
  "ship-german-submarine-u-374": {
   "name": "German submarine U-374",
   "kind": "Type VIIC U-boat",
@@ -920,6 +934,13 @@
   "nation": "Germany",
   "wikidata": "Q481298",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-432"
+ },
+ "ship-german-submarine-u-439": {
+  "name": "U-439",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-439"
  },
  "ship-german-submarine-u-454": {
   "name": "U-454",
@@ -1261,6 +1282,13 @@
   "nation": "Germany",
   "wikidata": "Q827917",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-656"
+ },
+ "ship-german-submarine-u-659": {
+  "name": "U-659",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-659"
  },
  "ship-german-submarine-u-66-1940": {
   "name": "U-66",
@@ -3300,6 +3328,13 @@
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Isokaze_(1939)",
   "wikidata": "Q1321237"
  },
+ "ship-japanese-destroyer-kikuzuki-1926": {
+  "name": "Japanese destroyer Kikuzuki (1926)",
+  "kind": "Imperial Japanese Navy destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Kikuzuki_(1926)"
+ },
  "ship-japanese-destroyer-kisaragi-1925": {
   "name": "Japanese destroyer Kisaragi (1925)",
   "kind": "Mutsuki class destroyer",
@@ -3810,6 +3845,13 @@
   "nation": "Poland",
   "wikidata": "Q1745011",
   "source": "https://en.wikipedia.org/wiki/ORP_Burza"
+ },
+ "ship-orp-grom-1936": {
+  "name": "ORP Grom (H 71)",
+  "kind": "Polish Navy destroyer",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/ORP_Grom_(1936)"
  },
  "ship-orp-orzel-1938": {
   "name": "ORP Orzel (1938)",
@@ -5189,6 +5231,13 @@
    "HMS Stanley"
   ]
  },
+ "ship-uss-menges": {
+  "name": "USS Menges (DE-320)",
+  "kind": "destroyer escort",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Menges"
+ },
  "ship-uss-milwaukee-cl-5": {
   "name": "USS Milwaukee (CL-5)",
   "kind": "Omaha class light cruiser, lent to the Soviet Navy as Murmansk",
@@ -5339,6 +5388,13 @@
   "nation": "US",
   "wikidata": "Q7872844",
   "source": "https://en.wikipedia.org/wiki/USS_Philip_(DD-498)"
+ },
+ "ship-uss-pigeon-asr-6": {
+  "name": "USS Pigeon (ASR-6)",
+  "kind": "submarine rescue ship",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Pigeon_(ASR-6)"
  },
  "ship-uss-pillsbury-dd-227": {
   "name": "USS Pillsbury (DD-227)",
@@ -5612,6 +5668,13 @@
   "nation": "US",
   "wikidata": "Q7874440",
   "source": "https://en.wikipedia.org/wiki/USS_Sturtevant_(DD-240)"
+ },
+ "ship-uss-tanager-am-5": {
+  "name": "USS Tanager (AM-5)",
+  "kind": "minesweeper",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Tanager_(AM-5)"
  },
  "ship-uss-tarpon-ss-175": {
   "name": "USS Tarpon (SS-175)",

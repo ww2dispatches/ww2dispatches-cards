@@ -1814,12 +1814,26 @@
    "Ardennes offensive"
   ]
  },
+ "op-battle-of-the-campobasso-convoy": {
+  "name": "Battle of the Campobasso Convoy",
+  "kind": "night destroyer action off Cape Bon",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_the_Campobasso_Convoy"
+ },
  "op-battle-of-the-caucasus": {
   "name": "Battle of the Caucasus",
   "kind": "campaign",
   "nation": "Germany",
   "wikidata": "Q653470",
   "source": "https://en.wikipedia.org/wiki/Battle_of_the_Caucasus"
+ },
+ "op-battle-of-the-coral-sea": {
+  "name": "Battle of the Coral Sea",
+  "kind": "carrier battle, 4 to 8 May 1942",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_the_Coral_Sea"
  },
  "op-battle-of-the-corinth-canal": {
   "name": "Battle of the Corinth Canal",
@@ -2883,6 +2897,13 @@
   "nation": "Britain",
   "wikidata": "Q2512311",
   "source": "https://en.wikipedia.org/wiki/Cripps_Mission"
+ },
+ "op-current-tax-payment-act-of-1943": {
+  "name": "Current Tax Payment Act of 1943",
+  "kind": "U.S. income tax withholding law",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Current_Tax_Payment_Act_of_1943"
  },
  "op-czestochowa-ghetto-uprising": {
   "name": "Częstochowa Ghetto uprising",
