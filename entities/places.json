@@ -170,6 +170,15 @@
   "lat": 34.2311,
   "lon": -95.6208
  },
+ "place-antsiranana": {
+  "name": "Antsiranana",
+  "kind": "port city in northern Madagascar, formerly Diego Suarez",
+  "nation": "Madagascar",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Antsiranana",
+  "lat": null,
+  "lon": null
+ },
  "place-antwerp": {
   "name": "Antwerp",
   "kind": "port city",
@@ -2458,6 +2467,15 @@
   "lat": 59.8333,
   "lon": 26.0
  },
+ "place-gulf-of-naples": {
+  "name": "Gulf of Naples",
+  "kind": "gulf on the coast of southern Italy",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Gulf_of_Naples",
+  "lat": null,
+  "lon": null
+ },
  "place-gypsy-family-camp-auschwitz": {
   "name": "Gypsy family camp (Auschwitz)",
   "kind": "section BIIe of Auschwitz-Birkenau",
@@ -2613,6 +2631,15 @@
   ],
   "lat": 51.4775,
   "lon": -0.4614
+ },
+ "place-hegra-fortress": {
+  "name": "Hegra Fortress",
+  "kind": "Norwegian border fort near Stjordal",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hegra_Fortress",
+  "lat": null,
+  "lon": null
  },
  "place-heidelberg": {
   "name": "Heidelberg",
@@ -2788,6 +2815,15 @@
   "source": "https://en.wikipedia.org/wiki/Hornsey",
   "lat": 51.587,
   "lon": -0.118
+ },
+ "place-hotel-de-wereld": {
+  "name": "Hotel de Wereld",
+  "kind": "hotel in Wageningen, site of the 5 May 1945 surrender talks",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hotel_de_Wereld",
+  "lat": null,
+  "lon": null
  },
  "place-hotel-schiff": {
   "name": "Hotel Schiff",
@@ -2979,6 +3015,15 @@
   "source": "https://en.wikipedia.org/wiki/Islington",
   "lat": 51.544,
   "lon": -0.1027
+ },
+ "place-itter-castle": {
+  "name": "Itter Castle",
+  "kind": "castle in Tyrol, Austria, used as a prison for French VIPs",
+  "nation": "Austria",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Itter_Castle",
+  "lat": null,
+  "lon": null
  },
  "place-iwo-jima": {
   "name": "Iwo Jima",
@@ -4543,6 +4588,15 @@
   "aka": [
    "Mitchel Air Force Base"
   ]
+ },
+ "place-mitchell-recreation-area": {
+  "name": "Mitchell Recreation Area",
+  "kind": "site of the Bly balloon bomb deaths, with the Mitchell Monument",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mitchell_Recreation_Area",
+  "lat": null,
+  "lon": null
  },
  "place-mittelbau-dora-concentration-camp": {
   "lat": 51.5348,

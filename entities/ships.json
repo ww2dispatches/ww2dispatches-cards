@@ -1165,6 +1165,13 @@
   "wikidata": "Q634332",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-63_(1939)"
  },
+ "ship-german-submarine-u-638": {
+  "name": "German submarine U-638",
+  "kind": "Kriegsmarine Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-638"
+ },
  "ship-german-submarine-u-64-1939": {
   "name": "German submarine U-64 (1939)",
   "kind": "Type IXB U-boat",
@@ -2350,6 +2357,13 @@
   "wikidata": "Q1565307",
   "source": "https://en.wikipedia.org/wiki/HMS_Salmon_(N65)"
  },
+ "ship-hms-seal-n37": {
+  "name": "HMS Seal (N37)",
+  "kind": "Royal Navy minelaying submarine, captured 1940",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Seal_(N37)"
+ },
  "ship-hms-seraph-p219": {
   "name": "HMS Seraph (P219)",
   "kind": "submarine",
@@ -2443,6 +2457,13 @@
   "nation": "Britain",
   "wikidata": "Q518329",
   "source": "https://en.wikipedia.org/wiki/HMS_Suffolk_(55)"
+ },
+ "ship-hms-sunflower-k41": {
+  "name": "HMS Sunflower (K41)",
+  "kind": "Royal Navy Flower class corvette",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Sunflower_(K41)"
  },
  "ship-hms-tactician-p314": {
   "name": "HMS Tactician (P314)",

@@ -2017,6 +2017,13 @@
    "CTV"
   ]
  },
+ "unit-council-of-europe": {
+  "name": "Council of Europe",
+  "kind": "European international organization founded 1949",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Council_of_Europe"
+ },
  "unit-czechoslovak-government-in-exile": {
   "name": "Czechoslovak government-in-exile",
   "kind": "government in exile, London",
@@ -2342,6 +2349,13 @@
   "nation": "Germany",
   "source": "https://en.wikipedia.org/wiki/Gestapo",
   "wikidata": "Q43250"
+ },
+ "unit-gideon-force": {
+  "name": "Gideon Force",
+  "kind": "British and Ethiopian irregular force under Orde Wingate",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Gideon_Force"
  },
  "unit-golden-square-iraq": {
   "name": "Golden Square",

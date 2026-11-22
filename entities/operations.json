@@ -806,6 +806,13 @@
   "wikidata": "Q4868890",
   "source": "https://en.wikipedia.org/wiki/Bath_Blitz"
  },
+ "op-battle-for-czech-radio": {
+  "name": "Battle for Czech Radio",
+  "kind": "fight for the Czech Radio building, May 1945",
+  "nation": "Czechoslovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_for_Czech_Radio"
+ },
  "op-battle-in-berlin": {
   "name": "Battle in Berlin",
   "kind": "urban battle",
@@ -981,6 +988,13 @@
   "wikidata": "Q544090",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Cape_Matapan"
  },
+ "op-battle-of-castle-itter": {
+  "name": "Battle of Castle Itter",
+  "kind": "battle in Austria, 5 May 1945",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Castle_Itter"
+ },
  "op-battle-of-changsha-1941-1942": {
   "name": "Third Battle of Changsha",
   "kind": "battle, December 1941 to January 1942",
@@ -1008,6 +1022,13 @@
   "nation": "US",
   "wikidata": "Q2272823",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Cologne"
+ },
+ "op-battle-of-corregidor": {
+  "name": "Battle of Corregidor",
+  "kind": "Japanese assault on Corregidor, May 1942",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Corregidor"
  },
  "op-battle-of-corregidor-1945": {
   "name": "Battle of Corregidor (1945)",
@@ -1313,6 +1334,13 @@
   "aka": [
    "Great Los Angeles Air Raid"
   ]
+ },
+ "op-battle-of-madagascar": {
+  "name": "Battle of Madagascar",
+  "kind": "Allied campaign against Vichy Madagascar, May to November 1942",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Madagascar"
  },
  "op-battle-of-makassar-strait": {
   "name": "Battle of Makassar Strait",
@@ -3369,6 +3397,16 @@
   "wikidata": "Q5552224",
   "source": "https://en.wikipedia.org/wiki/German%E2%80%93Soviet_Commercial_Agreement_(1940)"
  },
+ "op-german-surrender-at-luneburg-heath": {
+  "name": "German surrender at Luneburg Heath",
+  "kind": "surrender of German forces in northwest Germany, the Netherlands and Denmark, 4 May 1945",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_surrender_at_L%C3%BCneburg_Heath",
+  "aka": [
+   "German surrender at Lüneburg Heath"
+  ]
+ },
  "op-gilbert-and-marshall-islands-campaign": {
   "name": "Gilbert and Marshall Islands campaign",
   "kind": "campaign",
@@ -3840,6 +3878,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q430700",
   "source": "https://en.wikipedia.org/wiki/Khatyn_massacre"
+ },
+ "op-kholm-pocket": {
+  "name": "Kholm Pocket",
+  "kind": "encirclement of German troops at Kholm, January to May 1942",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kholm_Pocket"
  },
  "op-kidnapping-of-heinrich-kreipe": {
   "name": "Kidnapping of Heinrich Kreipe",
@@ -5399,6 +5444,13 @@
    "Tag von Potsdam"
   ]
  },
+ "op-prague-uprising": {
+  "name": "Prague uprising",
+  "kind": "Czech uprising against German occupation, May 1945",
+  "nation": "Czechoslovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Prague_uprising"
+ },
  "op-presidents-committee-on-civil-rights": {
   "name": "President's Committee on Civil Rights",
   "kind": "presidential committee",
@@ -6095,6 +6147,13 @@
   "nation": "Poland",
   "wikidata": "Q9388615",
   "source": "https://en.wikipedia.org/wiki/Stary_Ciepiel%C3%B3w_and_Rek%C3%B3wka_massacre"
+ },
+ "op-statute-of-the-council-of-europe": {
+  "name": "Statute of the Council of Europe",
+  "kind": "treaty founding the Council of Europe, 5 May 1949",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Statute_of_the_Council_of_Europe"
  },
  "op-statute-of-westminster-1931": {
   "name": "Statute of Westminster 1931",

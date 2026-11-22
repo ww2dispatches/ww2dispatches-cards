@@ -14,6 +14,13 @@
   "source": "https://pacificwrecks.com/aircraft/b-25/41-12485.html",
   "note": "No Wikipedia article; id from the aircraft's nickname. Source is Pacific Wrecks. Earns its own entity because the reserved 18 Jan 2027 5 p.m. card is about her."
  },
+ "aircraft-arado-ar-196": {
+  "name": "Arado Ar 196",
+  "kind": "German shipborne reconnaissance floatplane",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Arado_Ar_196"
+ },
  "aircraft-armstrong-whitworth-whitley": {
   "name": "Armstrong Whitworth Whitley",
   "kind": "British medium bomber",
