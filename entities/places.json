@@ -3455,6 +3455,15 @@
   "lat": -2.0486,
   "lon": 147.4186
  },
+ "place-lubeck": {
+  "name": "Lubeck",
+  "kind": "city",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/L%C3%BCbeck",
+  "lat": null,
+  "lon": null
+ },
  "place-lublin": {
   "name": "Lublin",
   "kind": "city in eastern Poland",
@@ -3511,6 +3520,15 @@
   "wikidata": "Q18157528",
   "lat": 11.1722,
   "lon": 125.0122
+ },
+ "place-madrid": {
+  "name": "Madrid",
+  "kind": "city",
+  "nation": "Spain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Madrid",
+  "lat": null,
+  "lon": null
  },
  "place-magdeburg": {
   "name": "Magdeburg",
@@ -4148,6 +4166,18 @@
   ],
   "lat": 22.0,
   "lon": 96.0
+ },
+ "place-mykolaiv": {
+  "name": "Mykolaiv",
+  "kind": "city",
+  "nation": "Ukraine",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mykolaiv",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Nikolaev"
+  ]
  },
  "place-n-djamena": {
   "name": "N'Djamena",

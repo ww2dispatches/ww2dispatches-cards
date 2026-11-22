@@ -7,6 +7,13 @@
   "source": "https://en.wikipedia.org/wiki/Ariete-class_torpedo_boat",
   "note": "Class entity; TA 36 (ex Stella Polare) has no article of her own."
  },
+ "ship-caterina-costa": {
+  "name": "Caterina Costa",
+  "kind": "Italian cargo ship requisitioned as a munitions carrier",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Caterina_Costa"
+ },
  "ship-french-battleship-bretagne": {
   "name": "Bretagne",
   "kind": "battleship",
@@ -1358,6 +1365,16 @@
   "wikidata": "Q22093759",
   "source": "https://en.wikipedia.org/wiki/HMS_Breconshire"
  },
+ "ship-hms-campbeltown-i42": {
+  "name": "HMS Campbeltown (I42)",
+  "kind": "Royal Navy destroyer, ex USS Buchanan",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Campbeltown_(I42)",
+  "aka": [
+   "USS Buchanan (DD-131)"
+  ]
+ },
  "ship-hms-capel-k470": {
   "name": "HMS Capel (K470)",
   "kind": "Royal Navy frigate",
@@ -2228,6 +2245,13 @@
   "nation": "Italy",
   "wikidata": "Q2251656",
   "source": "https://en.wikipedia.org/wiki/Italian_cruiser_Muzio_Attendolo"
+ },
+ "ship-italian-cruiser-pola": {
+  "name": "Italian cruiser Pola",
+  "kind": "Regia Marina heavy cruiser",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_cruiser_Pola"
  },
  "ship-italian-destroyer-folgore": {
   "name": "Folgore",
@@ -4444,6 +4468,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/USS_Ticonderoga_(CV-14)",
   "wikidata": "Q1545526"
+ },
+ "ship-uss-trigger-ss-237": {
+  "name": "USS Trigger (SS-237)",
+  "kind": "U.S. Navy submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Trigger_(SS-237)"
  },
  "ship-uss-trippe-dd-403": {
   "name": "USS Trippe (DD-403)",

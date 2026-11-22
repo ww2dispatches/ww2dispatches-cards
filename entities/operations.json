@@ -298,6 +298,13 @@
   "wikidata": "Q1347798",
   "source": "https://en.wikipedia.org/wiki/Abyssinia_Crisis"
  },
+ "op-acheson-lilienthal-report": {
+  "name": "Acheson Lilienthal Report",
+  "kind": "U.S. proposal for international control of atomic energy",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Acheson%E2%80%93Lilienthal_Report"
+ },
  "op-action-of-11-january-1944": {
   "name": "Action of 11 January 1944",
   "kind": "naval action off Penang",
@@ -1769,6 +1776,13 @@
   "wikidata": "Q1501573",
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Leipzig_in_World_War_II"
  },
+ "op-bombing-of-lubeck-in-world-war-ii": {
+  "name": "Bombing of Lubeck in World War II",
+  "kind": "RAF area bombing raid",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_L%C3%BCbeck_in_World_War_II"
+ },
  "op-bombing-of-mannheim-in-world-war-ii": {
   "name": "Bombing of Mannheim in World War II",
   "kind": "RAF bombing campaign",
@@ -2422,6 +2436,16 @@
   "nation": "Soviet Union",
   "wikidata": "Q636087",
   "source": "https://en.wikipedia.org/wiki/East_Prussian_offensive"
+ },
+ "op-education-act-1944": {
+  "name": "Education Act 1944",
+  "kind": "British education law",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Education_Act_1944",
+  "aka": [
+   "Butler Act"
+  ]
  },
  "op-elysee-accords": {
   "name": "Elysee Accords",
@@ -4856,6 +4880,13 @@
   "source": "https://en.wikipedia.org/wiki/Siege_of_Leningrad",
   "wikidata": "Q151860"
  },
+ "op-siege-of-madrid": {
+  "name": "Siege of Madrid",
+  "kind": "siege, Spanish Civil War",
+  "nation": "Spain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Siege_of_Madrid"
+ },
  "op-siege-of-malta-world-war-ii": {
   "name": "Siege of Malta",
   "kind": "siege and air campaign, 1940 to 1942",
@@ -4972,6 +5003,16 @@
   "source": "https://en.wikipedia.org/wiki/Sportpalast_speech",
   "aka": [
    "Total War speech"
+  ]
+ },
+ "op-st-nazaire-raid": {
+  "name": "St Nazaire Raid",
+  "kind": "British commando raid",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/St_Nazaire_Raid",
+  "aka": [
+   "Operation Chariot"
   ]
  },
  "op-st-stephen-s-college-massacre": {
@@ -5526,6 +5567,13 @@
   "nation": "worldwide",
   "wikidata": "Q161227",
   "source": "https://en.wikipedia.org/wiki/Yalta_Conference"
+ },
+ "op-yasui-v-united-states": {
+  "name": "Yasui v. United States",
+  "kind": "U.S. Supreme Court case",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Yasui_v._United_States"
  },
  "op-yekatit-12": {
   "name": "Yekatit 12",
