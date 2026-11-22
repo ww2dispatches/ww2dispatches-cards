@@ -2506,6 +2506,16 @@
   "wikidata": "Q276535",
   "source": "https://en.wikipedia.org/wiki/Imperial_Japanese_Army"
  },
+ "unit-imperial-rule-assistance-association": {
+  "name": "Imperial Rule Assistance Association",
+  "kind": "Japanese wartime political organization",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Imperial_Rule_Assistance_Association",
+  "aka": [
+   "Taisei Yokusankai"
+  ]
+ },
  "unit-international-civil-aviation-organization": {
   "name": "International Civil Aviation Organization",
   "kind": "UN aviation agency",
@@ -3203,6 +3213,13 @@
   "aka": [
    "No. 44 (Rhodesia) Squadron"
   ]
+ },
+ "unit-no-455-squadron-raaf": {
+  "name": "No. 455 Squadron RAAF",
+  "kind": "Royal Australian Air Force squadron",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._455_Squadron_RAAF"
  },
  "unit-no-460-squadron-raaf": {
   "name": "No. 460 Squadron RAAF",

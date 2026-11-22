@@ -53,6 +53,15 @@
   "lat": 51.5101,
   "lon": -0.1229
  },
+ "place-adolf-hitler-s-munich-apartment": {
+  "name": "Adolf Hitler's Munich apartment",
+  "kind": "apartment at Prinzregentenplatz, Munich",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Adolf_Hitler%27s_Munich_apartment",
+  "lat": null,
+  "lon": null
+ },
  "place-aga-khan-palace": {
   "name": "Aga Khan Palace",
   "kind": "palace in Pune used as a British detention site",
@@ -1410,6 +1419,15 @@
   "source": "https://en.wikipedia.org/wiki/Church_of_the_Eremitani",
   "lat": 45.4106,
   "lon": 11.8798
+ },
+ "place-clacton-on-sea": {
+  "name": "Clacton on Sea",
+  "kind": "seaside town in Essex",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Clacton-on-Sea",
+  "lat": null,
+  "lon": null
  },
  "place-clark-air-base": {
   "name": "Clark Field",
@@ -4929,6 +4947,18 @@
   ],
   "lat": 12.11,
   "lon": 15.05
+ },
+ "place-nago-torbole": {
+  "name": "Nago Torbole",
+  "kind": "town at the head of Lake Garda",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Nago%E2%80%93Torbole",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Torbole"
+  ]
  },
  "place-nanjing": {
   "name": "Nanjing",

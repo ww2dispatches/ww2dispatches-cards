@@ -105,6 +105,13 @@
   "wikidata": "Q57997805",
   "source": "https://en.wikipedia.org/wiki/1939_Nazi_rally_at_Madison_Square_Garden"
  },
+ "op-1939-new-york-world-s-fair": {
+  "name": "1939 New York World's Fair",
+  "kind": "world's fair",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1939_New_York_World%27s_Fair"
+ },
  "op-1940-united-states-presidential-election": {
   "name": "1940 presidential election",
   "kind": "U.S. election",
@@ -139,6 +146,16 @@
   "nation": "Canada",
   "wikidata": "Q5030724",
   "source": "https://en.wikipedia.org/wiki/1942_Canadian_conscription_plebiscite"
+ },
+ "op-1942-japanese-general-election": {
+  "name": "1942 Japanese general election",
+  "kind": "wartime general election",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1942_Japanese_general_election",
+  "aka": [
+   "Yokusan election"
+  ]
  },
  "op-1942-knilm-douglas-dc-3-shootdown": {
   "name": "1942 KNILM Douglas DC-3 shootdown",
@@ -2800,6 +2817,13 @@
   "nation": "Britain",
   "wikidata": "Q4046242",
   "source": "https://en.wikipedia.org/wiki/Convoy_PQ_8"
+ },
+ "op-convoy-qp-11": {
+  "name": "Convoy QP 11",
+  "kind": "Arctic convoy, Murmansk to Britain",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Convoy_QP_11"
  },
  "op-convoy-sc-118": {
   "name": "Convoy SC 118",

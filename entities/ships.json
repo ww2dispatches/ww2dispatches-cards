@@ -633,6 +633,13 @@
   "wikidata": "Q4051948",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-224"
  },
+ "ship-german-submarine-u-227": {
+  "name": "U-227",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-227"
+ },
  "ship-german-submarine-u-23-1936": {
   "name": "German submarine U-23 (1936)",
   "kind": "Type IIB U-boat",
@@ -920,6 +927,13 @@
   "nation": "Germany",
   "wikidata": "Q2114037",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-454"
+ },
+ "ship-german-submarine-u-456": {
+  "name": "U-456",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-456"
  },
  "ship-german-submarine-u-469": {
   "name": "German submarine U-469",
@@ -1904,6 +1918,13 @@
   "nation": "Britain",
   "wikidata": "Q9568",
   "source": "https://en.wikipedia.org/wiki/HMS_Eagle_(1918)"
+ },
+ "ship-hms-edinburgh-16": {
+  "name": "HMS Edinburgh (16)",
+  "kind": "Town class light cruiser",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Edinburgh_(16)"
  },
  "ship-hms-encounter-h10": {
   "name": "HMS Encounter (H10)",
@@ -4278,6 +4299,13 @@
   "nation": "Spain",
   "wikidata": "Q7394109",
   "source": "https://en.wikipedia.org/wiki/SS_Navemar"
+ },
+ "ship-ss-nerissa-1926": {
+  "name": "SS Nerissa",
+  "kind": "passenger and cargo steamer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Nerissa_(1926)"
  },
  "ship-ss-normandie": {
   "name": "SS Normandie",
