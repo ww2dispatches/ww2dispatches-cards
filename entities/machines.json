@@ -116,6 +116,16 @@
   "source": "https://en.wikipedia.org/wiki/Bombe",
   "wikidata": "Q480476"
  },
+ "machine-bouncing-bomb": {
+  "name": "Bouncing bomb",
+  "kind": "weapon (Upkeep mine used in Operation Chastise)",
+  "nation": "Britain",
+  "wikidata": "Q583515",
+  "source": "https://en.wikipedia.org/wiki/Bouncing_bomb",
+  "aka": [
+   "Upkeep"
+  ]
+ },
  "machine-california-zephyr-1949-1970": {
   "name": "California Zephyr (1949 to 1970)",
   "kind": "streamlined passenger train, Chicago to Oakland",
@@ -591,6 +601,13 @@
    "Sherman",
    "Sherman II"
   ]
+ },
+ "machine-magnetophon": {
+  "name": "Magnetophon",
+  "kind": "magnetic tape sound recorder",
+  "nation": "Germany",
+  "wikidata": "Q1273610",
+  "source": "https://en.wikipedia.org/wiki/Magnetophon"
  },
  "machine-marcello-class-submarine": {
   "name": "Marcello-class submarine",

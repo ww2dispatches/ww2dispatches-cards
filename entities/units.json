@@ -3441,6 +3441,13 @@
   "wikidata": "Q12064279",
   "source": "https://en.wikipedia.org/wiki/No._51_Squadron_RAF"
  },
+ "unit-no-58-squadron-raf": {
+  "name": "No. 58 Squadron RAF",
+  "kind": "RAF Coastal Command squadron",
+  "nation": "Britain",
+  "wikidata": "Q7043640",
+  "source": "https://en.wikipedia.org/wiki/No._58_Squadron_RAF"
+ },
  "unit-no-617-squadron-raf": {
   "name": "No. 617 Squadron RAF",
   "kind": "RAF bomber squadron",
@@ -4228,6 +4235,13 @@
   "aka": [
    "Keishicho"
   ]
+ },
+ "unit-tokyo-stock-exchange": {
+  "name": "Tokyo Stock Exchange",
+  "kind": "stock exchange",
+  "nation": "Japan",
+  "wikidata": "Q217475",
+  "source": "https://en.wikipedia.org/wiki/Tokyo_Stock_Exchange"
  },
  "unit-trans-world-airlines": {
   "name": "Trans World Airlines",

@@ -4794,6 +4794,13 @@
   "wikidata": "Q2724552",
   "source": "https://en.wikipedia.org/wiki/Jack_Lummus"
  },
+ "person-jack-mullin": {
+  "name": "Jack Mullin",
+  "kind": "US Army Signal Corps officer and audio engineer who brought the Magnetophon to America",
+  "nation": "US",
+  "wikidata": "Q6114232",
+  "source": "https://en.wikipedia.org/wiki/Jack_Mullin"
+ },
  "person-jack-newkirk": {
   "name": "Jack Newkirk",
   "kind": "American Volunteer Group squadron leader killed on the Chiang Mai raid",
@@ -6620,6 +6627,16 @@
    "Red Baron"
   ]
  },
+ "person-manley-laurence-power": {
+  "name": "Manley Laurence Power",
+  "kind": "Royal Navy captain who led the 26th Destroyer Flotilla against Haguro",
+  "nation": "Britain",
+  "wikidata": "Q6750586",
+  "source": "https://en.wikipedia.org/wiki/Manley_Laurence_Power",
+  "aka": [
+   "Manley Power"
+  ]
+ },
  "person-manton-s-eddy": {
   "name": "Manton Eddy",
   "kind": "U.S. Army general",
@@ -7135,6 +7152,13 @@
   "nation": "US",
   "wikidata": "Q5590073",
   "source": "https://en.wikipedia.org/wiki/Milo_Burcham"
+ },
+ "person-milo-randolph-perkins": {
+  "name": "Milo Randolph Perkins",
+  "kind": "USDA official who led the first Food Stamp Plan",
+  "nation": "US",
+  "wikidata": "Q18123033",
+  "source": "https://en.wikipedia.org/wiki/Milo_Randolph_Perkins"
  },
  "person-milton-s-eisenhower": {
   "name": "Milton S. Eisenhower",
@@ -10632,6 +10656,13 @@
   "aka": [
    "Young Marshal"
   ]
+ },
+ "person-zhang-zizhong": {
+  "name": "Zhang Zizhong",
+  "kind": "Chinese general, commander of the 33rd Army Group, killed in action 1940",
+  "nation": "China",
+  "wikidata": "Q706851",
+  "source": "https://en.wikipedia.org/wiki/Zhang_Zizhong"
  },
  "person-zofia-kossak-szczucka": {
   "name": "Zofia Kossak-Szczucka",

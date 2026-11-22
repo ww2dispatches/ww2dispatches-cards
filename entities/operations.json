@@ -1168,6 +1168,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Battle_of_Fort_%C3%89ben-%C3%89mael"
  },
+ "op-battle-of-france": {
+  "name": "Battle of France",
+  "kind": "campaign",
+  "nation": "France",
+  "wikidata": "Q151340",
+  "source": "https://en.wikipedia.org/wiki/Battle_of_France"
+ },
  "op-battle-of-frankfurt": {
   "name": "Battle of Frankfurt",
   "kind": "capture of Frankfurt am Main, March 1945",
@@ -1993,6 +2000,17 @@
   "wikidata": "Q15728772",
   "source": "https://en.wikipedia.org/wiki/Battle_of_the_Ligurian_Sea"
  },
+ "op-battle-of-the-malacca-strait": {
+  "name": "Battle of the Malacca Strait",
+  "kind": "naval battle",
+  "nation": "Britain",
+  "wikidata": "Q552392",
+  "source": "https://en.wikipedia.org/wiki/Battle_of_the_Malacca_Strait",
+  "aka": [
+   "Operation Dukedom",
+   "Sinking of Haguro"
+  ]
+ },
  "op-battle-of-the-mareth-line": {
   "name": "Battle of the Mareth Line",
   "kind": "Eighth Army attack in southern Tunisia, March 1943",
@@ -2138,6 +2156,14 @@
   "nation": "China",
   "wikidata": "Q2890419",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Yenangyaung"
+ },
+ "op-battle-of-zaoyang-yichang": {
+  "name": "Battle of Zaoyang-Yichang",
+  "kind": "battle",
+  "nation": "China",
+  "wikidata": "Q717963",
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Zaoyang%E2%80%93Yichang",
+  "note": "Wikipedia title uses an en dash between the two names"
  },
  "op-battle-off-endau": {
   "name": "Battle off Endau",
@@ -5149,6 +5175,16 @@
    "Shell House raid"
   ]
  },
+ "op-operation-chastise": {
+  "name": "Operation Chastise",
+  "kind": "RAF raid on the Ruhr dams",
+  "nation": "Britain",
+  "wikidata": "Q845203",
+  "source": "https://en.wikipedia.org/wiki/Operation_Chastise",
+  "aka": [
+   "Dambusters Raid"
+  ]
+ },
  "op-operation-claymore": {
   "name": "Operation Claymore",
   "kind": "British and Norwegian commando raid on the Lofoten Islands",
@@ -6690,6 +6726,17 @@
   "nation": "US",
   "wikidata": "Q2070370",
   "source": "https://en.wikipedia.org/wiki/Subsequent_Nuremberg_trials"
+ },
+ "op-supplemental-nutrition-assistance-program": {
+  "name": "Supplemental Nutrition Assistance Program",
+  "kind": "US food assistance program, begun as the 1939 Food Stamp Plan",
+  "nation": "US",
+  "wikidata": "Q556318",
+  "source": "https://en.wikipedia.org/wiki/Supplemental_Nutrition_Assistance_Program",
+  "aka": [
+   "Food Stamp Plan",
+   "food stamps"
+  ]
  },
  "op-surrender-at-caserta": {
   "name": "Surrender at Caserta",

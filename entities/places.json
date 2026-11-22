@@ -2521,6 +2521,15 @@
   "lat": 29.9753,
   "lon": 31.1377
  },
+ "place-great-synagogue-warsaw": {
+  "name": "Great Synagogue (Warsaw)",
+  "kind": "synagogue, destroyed 1943",
+  "nation": "Poland",
+  "wikidata": "Q1548454",
+  "source": "https://en.wikipedia.org/wiki/Great_Synagogue_(Warsaw)",
+  "lat": null,
+  "lon": null
+ },
  "place-green-islands-papua-new-guinea": {
   "name": "Green Islands",
   "kind": "atoll at the north end of the Solomons chain",
@@ -6486,6 +6495,15 @@
   "aka": [
    "Military Road No. 101"
   ]
+ },
+ "place-rochester-new-york": {
+  "name": "Rochester, New York",
+  "kind": "city",
+  "nation": "US",
+  "wikidata": "Q49218",
+  "source": "https://en.wikipedia.org/wiki/Rochester,_New_York",
+  "lat": null,
+  "lon": null
  },
  "place-roer": {
   "name": "Roer River",

@@ -635,6 +635,13 @@
   "wikidata": "Q563457",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-180"
  },
+ "ship-german-submarine-u-182": {
+  "name": "German submarine U-182",
+  "kind": "Type IXD2 U-boat",
+  "nation": "Germany",
+  "wikidata": "Q563441",
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-182"
+ },
  "ship-german-submarine-u-183": {
   "name": "German submarine U-183",
   "kind": "Kriegsmarine Type IXC/40 U-boat, Monsun boat",
@@ -1020,6 +1027,13 @@
   "nation": "Germany",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-456"
+ },
+ "ship-german-submarine-u-463": {
+  "name": "German submarine U-463",
+  "kind": "Type XIV supply U-boat",
+  "nation": "Germany",
+  "wikidata": "Q445318",
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-463"
  },
  "ship-german-submarine-u-465": {
   "name": "German submarine U-465",
@@ -2678,6 +2692,13 @@
   "wikidata": "Q1565307",
   "source": "https://en.wikipedia.org/wiki/HMS_Salmon_(N65)"
  },
+ "ship-hms-saumarez-g12": {
+  "name": "HMS Saumarez (G12)",
+  "kind": "destroyer, flotilla leader",
+  "nation": "Britain",
+  "wikidata": "Q5634232",
+  "source": "https://en.wikipedia.org/wiki/HMS_Saumarez_(G12)"
+ },
  "ship-hms-seal-n37": {
   "name": "HMS Seal (N37)",
   "kind": "Royal Navy minelaying submarine, captured 1940",
@@ -3396,6 +3417,13 @@
   "wikidata": "Q1072658",
   "source": "https://en.wikipedia.org/wiki/Japanese_cruiser_Chikuma_(1938)"
  },
+ "ship-japanese-cruiser-haguro": {
+  "name": "Japanese cruiser Haguro",
+  "kind": "heavy cruiser",
+  "nation": "Japan",
+  "wikidata": "Q1568768",
+  "source": "https://en.wikipedia.org/wiki/Japanese_cruiser_Haguro"
+ },
  "ship-japanese-cruiser-kashii": {
   "name": "Japanese cruiser Kashii",
   "kind": "Katori class training cruiser",
@@ -3880,6 +3908,13 @@
   "nation": "Japan",
   "wikidata": "Q4387602",
   "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-17"
+ },
+ "ship-japanese-submarine-i-176": {
+  "name": "Japanese submarine I-176",
+  "kind": "submarine",
+  "nation": "Japan",
+  "wikidata": "Q10884878",
+  "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-176"
  },
  "ship-japanese-submarine-i-177": {
   "name": "Japanese submarine I-177",
@@ -5256,6 +5291,14 @@
   "source": "https://en.wikipedia.org/wiki/USS_Franklin_D._Roosevelt",
   "wikidata": "Q2092687"
  },
+ "ship-uss-franks": {
+  "name": "USS Franks (DD-554)",
+  "kind": "destroyer",
+  "nation": "US",
+  "wikidata": "Q7869490",
+  "source": "https://en.wikipedia.org/wiki/USS_Franks",
+  "note": "Wikipedia title USS Franks (DD-554) redirects to USS Franks"
+ },
  "ship-uss-frederick-c-davis": {
   "name": "USS Frederick C. Davis (DE-136)",
   "kind": "US Navy destroyer escort",
@@ -5318,6 +5361,14 @@
   "nation": "United States",
   "source": "https://en.wikipedia.org/wiki/USS_Gwin_(DD-433)",
   "wikidata": "Q4052230"
+ },
+ "ship-uss-haggard": {
+  "name": "USS Haggard (DD-555)",
+  "kind": "destroyer",
+  "nation": "US",
+  "wikidata": "Q7869952",
+  "source": "https://en.wikipedia.org/wiki/USS_Haggard",
+  "note": "Wikipedia title USS Haggard (DD-555) redirects to USS Haggard"
  },
  "ship-uss-hancock-cv-19": {
   "name": "USS Hancock (CV-19)",
@@ -5562,6 +5613,13 @@
   "nation": "US",
   "wikidata": "Q7870975",
   "source": "https://en.wikipedia.org/wiki/USS_LST-507"
+ },
+ "ship-uss-mackenzie-dd-614": {
+  "name": "USS MacKenzie (DD-614)",
+  "kind": "destroyer",
+  "nation": "US",
+  "wikidata": "Q2470030",
+  "source": "https://en.wikipedia.org/wiki/USS_MacKenzie_(DD-614)"
  },
  "ship-uss-manila-bay": {
   "name": "USS Manila Bay (CVE-61)",
