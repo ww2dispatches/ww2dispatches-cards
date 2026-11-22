@@ -62,6 +62,18 @@
   "lat": 35.1802,
   "lon": 136.9064
  },
+ "place-ajdabiya": {
+  "name": "Ajdabiya",
+  "kind": "town in Cyrenaica, Libya",
+  "nation": "Libya",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ajdabiya",
+  "aka": [
+   "Agedabia"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-akershus-fortress": {
   "name": "Akershus Fortress",
   "kind": "castle and fortress, Oslo",
@@ -1143,6 +1155,18 @@
   ],
   "lat": 38.265,
   "lon": 20.5525
+ },
+ "place-chakulia-airport": {
+  "name": "Chakulia Airport",
+  "kind": "wartime airfield near Calcutta, B-29 base",
+  "nation": "India",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Chakulia_Airport",
+  "aka": [
+   "Chakulia Airfield"
+  ],
+  "lat": null,
+  "lon": null
  },
  "place-champs-elysees": {
   "name": "Champs-Elysees",
@@ -6481,6 +6505,15 @@
    "Tromsø"
   ]
  },
+ "place-trust-territory-of-the-pacific-islands": {
+  "name": "Trust Territory of the Pacific Islands",
+  "kind": "UN strategic trust territory",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Trust_Territory_of_the_Pacific_Islands",
+  "lat": null,
+  "lon": null
+ },
  "place-tula-russia": {
   "name": "Tula",
   "kind": "city",
@@ -7095,6 +7128,15 @@
   "wikidata": "Q200578",
   "lat": 35.2813,
   "lon": 139.6721
+ },
+ "place-yomitan": {
+  "name": "Yomitan",
+  "kind": "village on Okinawa",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Yomitan",
+  "lat": null,
+  "lon": null
  },
  "place-zamami-okinawa": {
   "name": "Zamami, Okinawa",

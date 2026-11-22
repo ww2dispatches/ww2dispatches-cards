@@ -603,6 +603,13 @@
   "wikidata": "Q602503",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-31_(1936)"
  },
+ "ship-german-submarine-u-321": {
+  "name": "U-321",
+  "kind": "Type VIIC/41 U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-321"
+ },
  "ship-german-submarine-u-322": {
   "name": "German submarine U-322",
   "kind": "Type VIIC/41 U-boat",
@@ -1977,6 +1984,13 @@
   "nation": "Britain",
   "wikidata": "Q1565416",
   "source": "https://en.wikipedia.org/wiki/HMS_Starling_(U66)"
+ },
+ "ship-hms-stonecrop-k142": {
+  "name": "HMS Stonecrop (K142)",
+  "kind": "Flower class corvette",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Stonecrop_(K142)"
  },
  "ship-hms-stork-l81": {
   "name": "HMS Stork (L81)",
@@ -3844,6 +3858,13 @@
   "wikidata": "Q2469142",
   "source": "https://en.wikipedia.org/wiki/USS_De_Haven_(DD-469)"
  },
+ "ship-uss-dickerson": {
+  "name": "USS Dickerson (DD-157/APD-21)",
+  "kind": "destroyer converted to high speed transport",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Dickerson"
+ },
  "ship-uss-edsall-dd-219": {
   "name": "USS Edsall (DD-219)",
   "kind": "Clemson class destroyer",
@@ -3937,6 +3958,13 @@
   "nation": "US",
   "wikidata": "Q1701704",
   "source": "https://en.wikipedia.org/wiki/USS_Helena_(CL-50)"
+ },
+ "ship-uss-henrico": {
+  "name": "USS Henrico (APA-45)",
+  "kind": "attack transport",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Henrico"
  },
  "ship-uss-henry-r-mallory": {
   "name": "USS Henry R. Mallory",

@@ -502,6 +502,13 @@
   "wikidata": "Q664017",
   "source": "https://en.wikipedia.org/wiki/Aryanization"
  },
+ "op-ascq-massacre": {
+  "name": "Ascq massacre",
+  "kind": "massacre of villagers near Lille, April 1944",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ascq_massacre"
+ },
  "op-atlantic-wall": {
   "name": "Atlantic Wall",
   "kind": "coastal fortification system",
@@ -639,6 +646,13 @@
   "nation": "worldwide",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Aachen",
   "wikidata": "Q327052"
+ },
+ "op-battle-of-anchem": {
+  "name": "Battle of Anchem",
+  "kind": "battle in Ethiopia, 31 March 1930",
+  "nation": "Ethiopia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Anchem"
  },
  "op-battle-of-anzio": {
   "name": "Battle of Anzio",
@@ -2014,6 +2028,13 @@
   "wikidata": "Q7887978",
   "source": "https://en.wikipedia.org/wiki/British_declaration_of_war_on_Japan",
   "note": "Wikipedia's United Kingdom declaration of war on Japan redirects here."
+ },
+ "op-british-summer-time": {
+  "name": "British Summer Time",
+  "kind": "clock time program, including wartime double summer time",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/British_Summer_Time"
  },
  "op-bsaa-star-tiger-disappearance": {
   "name": "BSAA Star Tiger disappearance",
@@ -5524,6 +5545,13 @@
   "nation": "US",
   "wikidata": "Q7888486",
   "source": "https://en.wikipedia.org/wiki/United_Nations_Participation_Act"
+ },
+ "op-united-nations-security-council-resolution-21": {
+  "name": "UN Security Council Resolution 21",
+  "kind": "trusteeship agreement, 2 April 1947",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_21"
  },
  "op-united-states-bases-in-the-philippines": {
   "name": "United States bases in the Philippines",

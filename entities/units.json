@@ -135,6 +135,14 @@
   "wikidata": "Q139895225",
   "source": "https://en.wikipedia.org/wiki/126th_Infantry_Regiment_(United_States)"
  },
+ "unit-12th-ss-panzer-division-hitlerjugend": {
+  "name": "12th SS Panzer Division Hitlerjugend",
+  "kind": "Waffen-SS armored division",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/12th_SS_Panzer_Division_Hitlerjugend",
+  "note": "Atrocity unit: never told from its own side."
+ },
  "unit-132nd-armored-division-ariete": {
   "name": "Ariete Division",
   "kind": "Italian armoured division",
@@ -2757,6 +2765,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/No._3_Squadron_RAAF"
  },
+ "unit-no-304-polish-bomber-squadron": {
+  "name": "No. 304 Polish Bomber Squadron",
+  "kind": "Polish squadron of the RAF",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._304_Polish_Bomber_Squadron"
+ },
  "unit-no-36-squadron-raf": {
   "name": "No. 36 Squadron RAF",
   "kind": "RAF torpedo bomber squadron",
@@ -2940,6 +2955,13 @@
   "source": "https://en.wikipedia.org/wiki/Panfilov's_Twenty-Eight_Guardsmen",
   "wikidata": "Q2914890",
   "note": "The Wikipedia article treats the story as largely fabricated, as the card does."
+ },
+ "unit-peenemunde-army-research-center": {
+  "name": "Peenemunde Army Research Center",
+  "kind": "German weapons research establishment",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Peenem%C3%BCnde_Army_Research_Center"
  },
  "unit-people-s-army-of-vietnam": {
   "name": "People's Army of Vietnam",

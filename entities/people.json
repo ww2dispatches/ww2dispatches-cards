@@ -4166,6 +4166,16 @@
    "Jesus Villamor"
   ]
  },
+ "person-jimmy-doolittle": {
+  "name": "Jimmy Doolittle",
+  "kind": "aviator, leader of the Doolittle Raid",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Jimmy_Doolittle",
+  "aka": [
+   "James H. Doolittle"
+  ]
+ },
  "person-jimmy-launders": {
   "name": "Jimmy Launders",
   "kind": "Royal Navy submarine commander of HMS Venturer",
@@ -8553,6 +8563,16 @@
   "nation": "Japan",
   "wikidata": "Q10394754",
   "source": "https://en.wikipedia.org/wiki/Yuitsu_Tsuchihashi"
+ },
+ "person-zewditu": {
+  "name": "Zewditu",
+  "kind": "Empress of Ethiopia",
+  "nation": "Ethiopia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Zewditu",
+  "aka": [
+   "Zawditu"
+  ]
  },
  "person-zhang-xueliang": {
   "name": "Zhang Xueliang",
