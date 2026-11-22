@@ -2668,6 +2668,13 @@
   "wikidata": "Q7043127",
   "source": "https://en.wikipedia.org/wiki/No._202_Squadron_RAF"
  },
+ "unit-no-206-squadron-raf": {
+  "name": "No. 206 Squadron RAF",
+  "kind": "RAF Coastal Command squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._206_Squadron_RAF"
+ },
  "unit-no-220-squadron-raf": {
   "name": "No. 220 Squadron RAF",
   "kind": "RAF Coastal Command squadron",
@@ -3719,6 +3726,13 @@
   "nation": "Germany",
   "wikidata": "Q128781",
   "source": "https://en.wikipedia.org/wiki/Wehrmacht"
+ },
+ "unit-werwolf": {
+  "name": "Werwolf",
+  "kind": "Nazi plan and force for resistance behind Allied lines",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Werwolf"
  },
  "unit-western-front-soviet-union": {
   "name": "Western Front",

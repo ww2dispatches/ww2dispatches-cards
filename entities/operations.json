@@ -229,6 +229,13 @@
    "Victorious February"
   ]
  },
+ "op-1948-tinker-air-force-base-tornadoes": {
+  "name": "1948 Tinker Air Force Base tornadoes",
+  "kind": "tornadoes and the first official tornado forecast",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1948_Tinker_Air_Force_Base_tornadoes"
+ },
  "op-1949-anti-nato-riot-in-iceland": {
   "name": "1949 anti NATO riot in Iceland",
   "kind": "riot in Reykjavik as Iceland's parliament voted to join NATO",
@@ -397,6 +404,13 @@
   "nation": "US",
   "wikidata": "Q118751517",
   "source": "https://en.wikipedia.org/wiki/American_carrier_raids_of_1942"
+ },
+ "op-american-trusteeship-proposal-for-palestine": {
+  "name": "American trusteeship proposal for Palestine",
+  "kind": "US diplomatic proposal, March 1948",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/American_trusteeship_proposal_for_Palestine"
  },
  "op-anglo-american-loan": {
   "name": "Anglo-American loan",
@@ -2613,6 +2627,13 @@
   "wikidata": "Q748780",
   "source": "https://en.wikipedia.org/wiki/First_Indochina_War"
  },
+ "op-first-mass-transport-of-jews-to-auschwitz-concentration-camp": {
+  "name": "First mass transport of Jews to Auschwitz concentration camp",
+  "kind": "Holocaust deportation from Poprad, Slovakia",
+  "nation": "Slovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/First_mass_transport_of_Jews_to_Auschwitz_concentration_camp"
+ },
  "op-flight-19": {
   "name": "Flight 19",
   "kind": "lost U.S. Navy training flight",
@@ -3084,6 +3105,16 @@
   "source": "https://en.wikipedia.org/wiki/Kalavryta_massacre",
   "aka": [
    "Massacre of Kalavryta"
+  ]
+ },
+ "op-kamenets-podolsky-pocket": {
+  "name": "Kamenets–Podolsky pocket",
+  "kind": "Eastern Front encirclement battle, March to April 1944",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kamenets%E2%80%93Podolsky_pocket",
+  "aka": [
+   "Hube's Pocket"
   ]
  },
  "op-katyn-massacre": {
@@ -4122,6 +4153,16 @@
   "nation": "Britain",
   "wikidata": "Q1775224",
   "source": "https://en.wikipedia.org/wiki/Operation_Postmaster"
+ },
+ "op-operation-priboi": {
+  "name": "Operation Priboi",
+  "kind": "Soviet mass deportation from the Baltic states, March 1949",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Priboi",
+  "aka": [
+   "March deportation"
+  ]
  },
  "op-operation-queen": {
   "name": "Operation Queen",
@@ -5602,6 +5643,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Yip_Yip_Yaphank",
   "wikidata": "Q8053805"
+ },
+ "op-yugoslav-accession-to-the-tripartite-pact": {
+  "name": "Yugoslav accession to the Tripartite Pact",
+  "kind": "treaty signing, Vienna, 25 March 1941",
+  "nation": "Yugoslavia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Yugoslav_accession_to_the_Tripartite_Pact"
  },
  "op-yugoslav-coup-d-etat": {
   "name": "Yugoslav coup d'etat",

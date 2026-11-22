@@ -728,6 +728,13 @@
   "wikidata": "Q2114037",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-454"
  },
+ "ship-german-submarine-u-469": {
+  "name": "German submarine U-469",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-469"
+ },
  "ship-german-submarine-u-47-1938": {
   "name": "U-47",
   "kind": "Type VIIB U-boat",
@@ -3219,6 +3226,13 @@
   "aka": [
    "Bremen"
   ]
+ },
+ "ship-ss-britannia-1925": {
+  "name": "SS Britannia (1925)",
+  "kind": "Anchor Line ocean liner sunk by the raider Thor",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Britannia_(1925)"
  },
  "ship-ss-british-chivalry": {
   "name": "SS British Chivalry",

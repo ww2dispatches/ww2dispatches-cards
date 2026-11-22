@@ -6260,6 +6260,15 @@
   "lat": 15.0,
   "lon": 145.6333
  },
+ "place-tinker-air-force-base": {
+  "name": "Tinker Air Force Base",
+  "kind": "US Air Force base, Oklahoma City",
+  "nation": "US",
+  "wikidata": null,
+  "lat": null,
+  "lon": null,
+  "source": "https://en.wikipedia.org/wiki/Tinker_Air_Force_Base"
+ },
  "place-titan-barrikady": {
   "name": "Barrikady gun factory",
   "kind": "arms factory",
