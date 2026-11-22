@@ -718,6 +718,13 @@
   "wikidata": "Q714825",
   "source": "https://en.wikipedia.org/wiki/Artur_Schmitt"
  },
+ "person-arturo-toscanini": {
+  "name": "Arturo Toscanini",
+  "kind": "Italian conductor who defied the Fascist regime",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Arturo_Toscanini"
+ },
  "person-arvid-harnack": {
   "name": "Arvid Harnack",
   "kind": "German resistance member, Red Orchestra",
@@ -1599,6 +1606,13 @@
   "wikidata": "Q5230652",
   "source": "https://en.wikipedia.org/wiki/David_Akui"
  },
+ "person-david-ben-gurion": {
+  "name": "David Ben-Gurion",
+  "kind": "head of the Jewish Agency, first prime minister of Israel",
+  "nation": "Israel",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/David_Ben-Gurion"
+ },
  "person-david-frankfurter": {
   "name": "David Frankfurter",
   "kind": "Jewish medical student who shot Wilhelm Gustloff",
@@ -1963,6 +1977,13 @@
    "Edelmiro Farrell"
   ]
  },
+ "person-edith-nourse-rogers": {
+  "name": "Edith Nourse Rogers",
+  "kind": "U.S. congresswoman who sponsored the WAAC bill",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Edith_Nourse_Rogers"
+ },
  "person-edmund-herring": {
   "name": "Edmund Herring",
   "kind": "Australian general, New Guinea Force commander",
@@ -2209,6 +2230,13 @@
   "nation": "Canada",
   "wikidata": "Q5363107",
   "source": "https://en.wikipedia.org/wiki/Elizabeth_Smellie"
+ },
+ "person-ellen-savage": {
+  "name": "Ellen Savage",
+  "kind": "Australian Army nurse, sole surviving nurse of AHS Centaur",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ellen_Savage"
  },
  "person-elmer-davis": {
   "name": "Elmer Davis",
@@ -4105,6 +4133,13 @@
   "nation": "France",
   "wikidata": "Q318122",
   "source": "https://en.wikipedia.org/wiki/Henri_Giraud"
+ },
+ "person-henri-winkelman": {
+  "name": "Henri Winkelman",
+  "kind": "Dutch commander in chief who signed the 1940 capitulation",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Henri_Winkelman"
  },
  "person-henrik-kauffmann": {
   "name": "Henrik Kauffmann",
@@ -6407,6 +6442,13 @@
   "wikidata": "Q1779",
   "source": "https://en.wikipedia.org/wiki/Louis_Armstrong"
  },
+ "person-louis-j-hauge-jr": {
+  "name": "Louis J. Hauge Jr.",
+  "kind": "U.S. Marine corporal, posthumous Medal of Honor on Okinawa",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Louis_J._Hauge_Jr."
+ },
  "person-lucius-d-clay": {
   "name": "Lucius D. Clay",
   "kind": "US general and military governor in Germany",
@@ -7627,6 +7669,13 @@
   "wikidata": "Q61719",
   "source": "https://en.wikipedia.org/wiki/Otto_Wels"
  },
+ "person-oveta-culp-hobby": {
+  "name": "Oveta Culp Hobby",
+  "kind": "first director of the Women's Army Auxiliary Corps",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Oveta_Culp_Hobby"
+ },
  "person-owen-j-baggett": {
   "name": "Owen J. Baggett",
   "kind": "USAAF B-24 copilot who fired at a Japanese fighter from his parachute",
@@ -8137,6 +8186,13 @@
   "nation": "Germany",
   "wikidata": "Q60039",
   "source": "https://en.wikipedia.org/wiki/Reinhard_Heydrich"
+ },
+ "person-reinhard-suhren": {
+  "name": "Reinhard Suhren",
+  "kind": "Kriegsmarine U-boat commander of U-564",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Reinhard_Suhren"
  },
  "person-rene-bousquet": {
   "name": "Rene Bousquet",
@@ -9338,6 +9394,13 @@
   "source": "https://en.wikipedia.org/wiki/Theodore_E._Chandler",
   "wikidata": "Q4022105"
  },
+ "person-thilo-bode": {
+  "name": "Thilo Bode",
+  "kind": "Kriegsmarine U-boat commander of U-858",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Thilo_Bode"
+ },
  "person-thomas-c-kinkaid": {
   "name": "Thomas C. Kinkaid",
   "kind": "admiral",
@@ -10385,6 +10448,16 @@
   "nation": "Poland",
   "wikidata": "Q153132",
   "source": "https://en.wikipedia.org/wiki/W%C5%82adys%C5%82aw_Sikorski"
+ },
+ "person-wolfgang-luth": {
+  "name": "Wolfgang Lüth",
+  "kind": "Kriegsmarine U-boat commander, head of the Mürwik naval academy",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Wolfgang_L%C3%BCth",
+  "aka": [
+   "Wolfgang Luth"
+  ]
  },
  "person-woody-guthrie": {
   "name": "Woody Guthrie",

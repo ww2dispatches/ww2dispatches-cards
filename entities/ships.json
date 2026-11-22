@@ -1,4 +1,11 @@
 {
+ "ship-ahs-centaur": {
+  "name": "AHS Centaur",
+  "kind": "Australian hospital ship",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/AHS_Centaur"
+ },
  "ship-ariete-class-torpedo-boat": {
   "name": "Ariete-class torpedo boat",
   "kind": "torpedo boat class",
@@ -1176,6 +1183,13 @@
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-559",
   "wikidata": "Q549463"
  },
+ "ship-german-submarine-u-564": {
+  "name": "German submarine U-564",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-564"
+ },
  "ship-german-submarine-u-565": {
   "name": "U-565",
   "kind": "Type VIIC submarine",
@@ -1317,6 +1331,13 @@
   "aka": [
    "U-64"
   ]
+ },
+ "ship-german-submarine-u-640": {
+  "name": "German submarine U-640",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-640"
  },
  "ship-german-submarine-u-649": {
   "name": "U-649",
@@ -1504,6 +1525,13 @@
   "nation": "Germany",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-853"
+ },
+ "ship-german-submarine-u-858": {
+  "name": "German submarine U-858",
+  "kind": "Type IXC/40 U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-858"
  },
  "ship-german-submarine-u-862": {
   "name": "U-862",
@@ -3514,6 +3542,13 @@
    "Ikazuchi"
   ]
  },
+ "ship-japanese-destroyer-inazuma-1932": {
+  "name": "Japanese destroyer Inazuma (1932)",
+  "kind": "Imperial Japanese Navy destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Inazuma_(1932)"
+ },
  "ship-japanese-destroyer-isokaze-1939": {
   "name": "Isokaze",
   "kind": "destroyer",
@@ -3801,6 +3836,13 @@
   "nation": "Japan",
   "wikidata": "Q4387602",
   "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-17"
+ },
+ "ship-japanese-submarine-i-177": {
+  "name": "Japanese submarine I-177",
+  "kind": "Imperial Japanese Navy submarine",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-177"
  },
  "ship-japanese-submarine-i-18": {
   "name": "I-18",
@@ -4636,6 +4678,13 @@
   "wikidata": "Q1232139",
   "source": "https://en.wikipedia.org/wiki/SS_Peleus"
  },
+ "ship-ss-potrero-del-llano": {
+  "name": "SS Potrero del Llano",
+  "kind": "Mexican oil tanker, ex Italian Lucifero",
+  "nation": "Mexico",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Potrero_del_Llano"
+ },
  "ship-ss-rajputana": {
   "name": "SS Rajputana",
   "kind": "P and O liner, armed merchant cruiser HMS Rajputana",
@@ -4943,6 +4992,13 @@
   "nation": "US",
   "wikidata": "Q186887",
   "source": "https://en.wikipedia.org/wiki/USS_Bogue"
+ },
+ "ship-uss-bonefish-ss-223": {
+  "name": "USS Bonefish (SS-223)",
+  "kind": "U.S. Navy submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Bonefish_(SS-223)"
  },
  "ship-uss-branch-dd-197": {
   "name": "USS Branch (DD-197)",

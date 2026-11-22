@@ -2229,6 +2229,15 @@
   "lat": 49.1168,
   "lon": 6.067
  },
+ "place-fort-miles": {
+  "name": "Fort Miles",
+  "kind": "U.S. Army coastal fort near Lewes, Delaware",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fort_Miles",
+  "lat": null,
+  "lon": null
+ },
  "place-fort-mont-valerien": {
   "name": "Fort Mont-Valerien",
   "kind": "fort west of Paris, execution site",
@@ -5307,6 +5316,18 @@
   "lon": 166.935,
   "note": "Australian mandated territory in 1940"
  },
+ "place-naval-academy-murwik": {
+  "name": "Naval Academy Mürwik",
+  "kind": "German naval officer school at Flensburg",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Naval_Academy_M%C3%BCrwik",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Marineschule Mürwik"
+  ]
+ },
  "place-naval-air-station-fort-lauderdale": {
   "name": "Naval Air Station Fort Lauderdale",
   "kind": "U.S. Navy air station",
@@ -5979,6 +6000,15 @@
   "lat": 37.943,
   "lon": 23.6469
  },
+ "place-pithiviers-internment-camp": {
+  "name": "Pithiviers internment camp",
+  "kind": "transit camp in occupied France",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Pithiviers_internment_camp",
+  "lat": null,
+  "lon": null
+ },
  "place-place-de-la-concorde": {
   "name": "Place de la Concorde",
   "kind": "square",
@@ -6508,6 +6538,15 @@
   "aka": [
    "Rostov"
   ]
+ },
+ "place-rotterdam": {
+  "name": "Rotterdam",
+  "kind": "Dutch port city",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Rotterdam",
+  "lat": null,
+  "lon": null
  },
  "place-royal-arsenal": {
   "name": "Royal Arsenal, Woolwich",

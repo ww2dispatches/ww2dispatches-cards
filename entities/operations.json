@@ -2194,6 +2194,16 @@
   "wikidata": "Q258154",
   "source": "https://en.wikipedia.org/wiki/Bermuda_Conference"
  },
+ "op-berne-trial": {
+  "name": "Berne Trial",
+  "kind": "Swiss court case over the Protocols of the Elders of Zion, 1933 to 1935",
+  "nation": "Switzerland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Berne_Trial",
+  "aka": [
+   "Bern Trial"
+  ]
+ },
  "op-beveridge-report": {
   "name": "Beveridge Report",
   "kind": "government report",
@@ -3597,6 +3607,16 @@
   ],
   "note": "The April 1941 raids; distinct from op-bombing-of-belgrade-in-world-war-ii, the article on all wartime bombings of the city"
  },
+ "op-german-bombing-of-rotterdam": {
+  "name": "German bombing of Rotterdam",
+  "kind": "Luftwaffe bombing of Rotterdam, 14 May 1940",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_bombing_of_Rotterdam",
+  "aka": [
+   "Rotterdam Blitz"
+  ]
+ },
  "op-german-declaration-of-war-on-the-united-states": {
   "name": "German declaration of war on the United States",
   "kind": "declaration of war, 11 December 1941",
@@ -3710,6 +3730,16 @@
   "nation": "Greece",
   "wikidata": "Q188972",
   "source": "https://en.wikipedia.org/wiki/Greek_Civil_War"
+ },
+ "op-green-ticket-roundup": {
+  "name": "Green ticket roundup",
+  "kind": "first mass arrest of Jews in Paris, 14 May 1941",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Green_ticket_roundup",
+  "aka": [
+   "rafle du billet vert"
+  ]
  },
  "op-greenock-blitz": {
   "name": "Greenock Blitz",
@@ -3973,6 +4003,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q1132835",
   "source": "https://en.wikipedia.org/wiki/Iran_crisis_of_1946"
+ },
+ "op-israeli-declaration-of-independence": {
+  "name": "Israeli Declaration of Independence",
+  "kind": "proclamation of the State of Israel, 14 May 1948",
+  "nation": "Israel",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Israeli_Declaration_of_Independence"
  },
  "op-istrian-dalmatian-exodus": {
   "name": "Istrian Dalmatian exodus",
@@ -4605,6 +4642,13 @@
   "aka": [
    "Mechelen affair"
   ]
+ },
+ "op-mexican-declaration-of-war-on-germany-italy-and-japan": {
+  "name": "Mexican declaration of war on Germany, Italy, and Japan",
+  "kind": "Mexico enters the war, 22 May 1942",
+  "nation": "Mexico",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mexican_declaration_of_war_on_Germany,_Italy,_and_Japan"
  },
  "op-milch-trial": {
   "name": "Milch Trial",

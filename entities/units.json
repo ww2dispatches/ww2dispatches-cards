@@ -3204,6 +3204,13 @@
   "wikidata": "Q7042829",
   "source": "https://en.wikipedia.org/wiki/No._100_Squadron_RAF"
  },
+ "unit-no-103-squadron-raf": {
+  "name": "No. 103 Squadron RAF",
+  "kind": "RAF bomber squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._103_Squadron_RAF"
+ },
  "unit-no-105-squadron-raf": {
   "name": "No. 105 Squadron RAF",
   "kind": "RAF bomber squadron",
@@ -3692,6 +3699,16 @@
   "nation": "Belgium",
   "wikidata": "Q2678835",
   "source": "https://en.wikipedia.org/wiki/Radio_Belgique"
+ },
+ "unit-raf-advanced-air-striking-force": {
+  "name": "RAF Advanced Air Striking Force",
+  "kind": "RAF bomber force in France, 1939 to 1940",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/RAF_Advanced_Air_Striking_Force",
+  "aka": [
+   "AASF"
+  ]
  },
  "unit-raf-bomber-command": {
   "name": "RAF Bomber Command",
@@ -4651,6 +4668,18 @@
   "source": "https://en.wikipedia.org/wiki/Women_Airforce_Service_Pilots",
   "aka": [
    "WASP"
+  ]
+ },
+ "unit-women-s-army-corps": {
+  "name": "Women's Army Corps",
+  "kind": "U.S. Army women's branch, begun as the Women's Army Auxiliary Corps",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Women%27s_Army_Corps",
+  "aka": [
+   "WAAC",
+   "WAC",
+   "Women's Army Auxiliary Corps"
   ]
  },
  "unit-works-progress-administration": {
