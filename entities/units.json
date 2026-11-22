@@ -149,6 +149,13 @@
   "wikidata": "Q139895225",
   "source": "https://en.wikipedia.org/wiki/126th_Infantry_Regiment_(United_States)"
  },
+ "unit-12th-armored-division-united-states": {
+  "name": "12th Armored Division",
+  "kind": "US Army armored division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/12th_Armored_Division_(United_States)"
+ },
  "unit-12th-ss-panzer-division-hitlerjugend": {
   "name": "12th SS Panzer Division Hitlerjugend",
   "kind": "Waffen-SS armored division",
@@ -254,6 +261,13 @@
   "nation": "Germany",
   "wikidata": "Q13600072",
   "source": "https://en.wikipedia.org/wiki/15th_Panzergrenadier_Division"
+ },
+ "unit-163rd-infantry-regiment-united-states": {
+  "name": "163rd Infantry Regiment",
+  "kind": "US Army infantry regiment, 41st Infantry Division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/163rd_Infantry_Regiment_(United_States)"
  },
  "unit-16th-army-soviet-union": {
   "name": "Soviet 16th Army",
@@ -494,6 +508,13 @@
   "nation": "Germany",
   "source": "https://en.wikipedia.org/wiki/22nd_Panzer_Division",
   "wikidata": "Q214479"
+ },
+ "unit-24th-infantry-division-united-states": {
+  "name": "24th Infantry Division",
+  "kind": "US Army infantry division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/24th_Infantry_Division_(United_States)"
  },
  "unit-252nd-air-group": {
   "name": "252nd Air Group",
@@ -1232,6 +1253,13 @@
   "source": "https://en.wikipedia.org/wiki/62nd_Army",
   "wikidata": "Q249395"
  },
+ "unit-62nd-division-imperial-japanese-army": {
+  "name": "62nd Division (Imperial Japanese Army)",
+  "kind": "Japanese infantry division",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/62nd_Division_(Imperial_Japanese_Army)"
+ },
  "unit-6615th-ranger-force": {
   "name": "6615th Ranger Force",
   "kind": "U.S. Army Ranger force (provisional)",
@@ -1255,6 +1283,13 @@
   "nation": "US",
   "wikidata": "Q4642416",
   "source": "https://en.wikipedia.org/wiki/69th_Infantry_Division_(United_States)"
+ },
+ "unit-6th-air-division-japan": {
+  "name": "6th Air Division",
+  "kind": "Imperial Japanese Army air division",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/6th_Air_Division_(Japan)"
  },
  "unit-6th-armored-division-united-states": {
   "name": "6th Armored Division",
@@ -1943,6 +1978,13 @@
   "nation": "France",
   "wikidata": "Q480491",
   "source": "https://en.wikipedia.org/wiki/Commissariat-General_for_Jewish_Affairs"
+ },
+ "unit-condor-legion": {
+  "name": "Condor Legion",
+  "kind": "German air and ground force in the Spanish Civil War",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Condor_Legion"
  },
  "unit-consolidated-aircraft": {
   "name": "Consolidated Aircraft",
@@ -2842,6 +2884,16 @@
   "source": "https://en.wikipedia.org/wiki/National_Archives_and_Records_Administration",
   "wikidata": "Q518155"
  },
+ "unit-national-liberation-committee-for-northern-italy": {
+  "name": "National Liberation Committee for Northern Italy",
+  "kind": "Italian resistance leadership in the occupied north",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/National_Liberation_Committee_for_Northern_Italy",
+  "aka": [
+   "CLNAI"
+  ]
+ },
  "unit-national-war-labor-board-1942-1945": {
   "name": "National War Labor Board (1942 to 1945)",
   "kind": "federal labor disputes agency",
@@ -2879,6 +2931,16 @@
   "source": "https://en.wikipedia.org/wiki/Navy-Marine_Corps_Relief_Society",
   "aka": [
    "Navy Relief Society"
+  ]
+ },
+ "unit-nazi-party": {
+  "name": "Nazi Party",
+  "kind": "political party",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Nazi_Party",
+  "aka": [
+   "NSDAP"
   ]
  },
  "unit-new-1st-army": {
@@ -2949,6 +3011,13 @@
   "nation": "Britain",
   "wikidata": "Q7042837",
   "source": "https://en.wikipedia.org/wiki/No._105_Squadron_RAF"
+ },
+ "unit-no-106-squadron-raf": {
+  "name": "No. 106 Squadron RAF",
+  "kind": "RAF bomber squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._106_Squadron_RAF"
  },
  "unit-no-115-squadron-raf": {
   "name": "No. 115 Squadron RAF",
@@ -3085,6 +3154,13 @@
   "aka": [
    "No. 44 (Rhodesia) Squadron"
   ]
+ },
+ "unit-no-460-squadron-raaf": {
+  "name": "No. 460 Squadron RAAF",
+  "kind": "Royal Australian Air Force heavy bomber squadron",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._460_Squadron_RAAF"
  },
  "unit-no-461-squadron-raaf": {
   "name": "No. 461 Squadron RAAF",
@@ -3266,6 +3342,16 @@
    "Vietnam Propaganda Liberation Army"
   ]
  },
+ "unit-people-s-court-germany": {
+  "name": "People's Court (Germany)",
+  "kind": "Nazi special political court",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/People%27s_Court_(Germany)",
+  "aka": [
+   "Volksgerichtshof"
+  ]
+ },
  "unit-permanent-court-of-international-justice": {
   "name": "Permanent Court of International Justice",
   "kind": "international court of the League of Nations",
@@ -3397,6 +3483,16 @@
   "wikidata": "Q2756570",
   "source": "https://en.wikipedia.org/wiki/Red_Sea_Flotilla"
  },
+ "unit-regia-marina": {
+  "name": "Regia Marina",
+  "kind": "Royal Italian Navy",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Regia_Marina",
+  "aka": [
+   "Italian Navy"
+  ]
+ },
  "unit-reich-ministry-of-public-enlightenment-and-propaganda": {
   "name": "Reich Ministry of Public Enlightenment and Propaganda",
   "kind": "Nazi government ministry",
@@ -3424,6 +3520,13 @@
   "nation": "Germany",
   "wikidata": "Q560183",
   "source": "https://en.wikipedia.org/wiki/Reichsbank"
+ },
+ "unit-reichstag-nazi-germany": {
+  "name": "Reichstag (Nazi Germany)",
+  "kind": "national parliament of Nazi Germany",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Reichstag_(Nazi_Germany)"
  },
  "unit-reichswehr": {
   "name": "Reichswehr",
@@ -3735,6 +3838,16 @@
   "aka": [
    "SA",
    "Brownshirts"
+  ]
+ },
+ "unit-sudeten-german-party": {
+  "name": "Sudeten German Party",
+  "kind": "political party in Czechoslovakia",
+  "nation": "Czechoslovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sudeten_German_Party",
+  "aka": [
+   "SdP"
   ]
  },
  "unit-supreme-commander-for-the-allied-powers": {
@@ -4145,6 +4258,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q1469561",
   "source": "https://en.wikipedia.org/wiki/Voronezh_Front"
+ },
+ "unit-vpb-109": {
+  "name": "VPB-109",
+  "kind": "US Navy patrol bombing squadron flying PB4Y-2 Privateers",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/VPB-109"
  },
  "unit-wang-jingwei-regime": {
   "name": "Wang Jingwei regime",

@@ -30,6 +30,13 @@
    "1920 Olympics"
   ]
  },
+ "op-1932-prussian-state-election": {
+  "name": "1932 Prussian state election",
+  "kind": "state election",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1932_Prussian_state_election"
+ },
  "op-1935-saar-status-referendum": {
   "name": "1935 Saar status referendum",
   "kind": "plebiscite",
@@ -118,6 +125,13 @@
   "nation": "Britain",
   "wikidata": "Q112762593",
   "source": "https://en.wikipedia.org/wiki/1941_Old_Palace_School_bombing"
+ },
+ "op-1942-canadian-conscription-plebiscite": {
+  "name": "1942 Canadian conscription plebiscite",
+  "kind": "national plebiscite",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1942_Canadian_conscription_plebiscite"
  },
  "op-1942-knilm-douglas-dc-3-shootdown": {
   "name": "1942 KNILM Douglas DC-3 shootdown",
@@ -378,6 +392,13 @@
   "wikidata": "Q4677231",
   "source": "https://en.wikipedia.org/wiki/Action_of_11_January_1944"
  },
+ "op-action-of-26-april-1944": {
+  "name": "Action of 26 April 1944",
+  "kind": "naval action off Brittany",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Action_of_26_April_1944"
+ },
  "op-action-of-27-february-1941": {
   "name": "Action of 27 February 1941",
   "kind": "naval action off the Maldives",
@@ -504,6 +525,13 @@
   "aka": [
    "Financial Agreement of 1945"
   ]
+ },
+ "op-anglo-german-naval-agreement": {
+  "name": "Anglo-German Naval Agreement",
+  "kind": "naval treaty, 1935",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Anglo-German_Naval_Agreement"
  },
  "op-anglo-polish-alliance": {
   "name": "Anglo-Polish alliance",
@@ -716,6 +744,16 @@
    "Provisional Government of Free India"
   ]
  },
+ "op-baedeker-blitz": {
+  "name": "Baedeker Blitz",
+  "kind": "Luftwaffe raids on historic British towns, 1942",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Baedeker_Blitz",
+  "aka": [
+   "Baedeker raids"
+  ]
+ },
  "op-balvano-train-disaster": {
   "name": "Balvano train disaster",
   "kind": "rail disaster, March 1944",
@@ -760,6 +798,13 @@
   "nation": "Japan",
   "wikidata": "Q555797",
   "source": "https://en.wikipedia.org/wiki/Bataan_Death_March"
+ },
+ "op-bath-blitz": {
+  "name": "Bath Blitz",
+  "kind": "Luftwaffe raids on Bath",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bath_Blitz"
  },
  "op-battle-in-berlin": {
   "name": "Battle in Berlin",
@@ -971,6 +1016,24 @@
   "wikidata": "Q702568",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Corregidor_(1945)"
  },
+ "op-battle-of-crete": {
+  "name": "Battle of Crete",
+  "kind": "German airborne invasion",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Crete",
+  "aka": [
+   "Operation Merkur",
+   "Operation Mercury"
+  ]
+ },
+ "op-battle-of-davao": {
+  "name": "Battle of Davao",
+  "kind": "battle",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Davao"
+ },
  "op-battle-of-dombas": {
   "name": "Battle of Dombås",
   "kind": "airborne landing and battle",
@@ -1050,12 +1113,29 @@
    "Battle of Kangaw"
   ]
  },
+ "op-battle-of-hill-609": {
+  "name": "Battle of Hill 609",
+  "kind": "battle",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Hill_609"
+ },
  "op-battle-of-himara": {
   "name": "Battle of Himara",
   "kind": "Greco-Italian War battle, December 1940",
   "nation": "Greece",
   "wikidata": "Q4871234",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Himara"
+ },
+ "op-battle-of-hollandia": {
+  "name": "Battle of Hollandia",
+  "kind": "amphibious operation, New Guinea, 1944",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Hollandia",
+  "aka": [
+   "Operation Reckless"
+  ]
  },
  "op-battle-of-hong-kong": {
   "name": "Battle of Hong Kong",
@@ -1216,6 +1296,13 @@
   "aka": [
    "Surigao Strait"
   ]
+ },
+ "op-battle-of-longstop-hill": {
+  "name": "Battle of Longstop Hill",
+  "kind": "battle in the Tunisian campaign",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Longstop_Hill"
  },
  "op-battle-of-los-angeles": {
   "name": "Battle of Los Angeles",
@@ -1672,6 +1759,13 @@
   "wikidata": "Q653470",
   "source": "https://en.wikipedia.org/wiki/Battle_of_the_Caucasus"
  },
+ "op-battle-of-the-corinth-canal": {
+  "name": "Battle of the Corinth Canal",
+  "kind": "German airborne attack",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_the_Corinth_Canal"
+ },
  "op-battle-of-the-green-islands": {
   "name": "Battle of the Green Islands",
   "kind": "Allied landing, February 1944",
@@ -2078,6 +2172,13 @@
   "wikidata": "Q821328",
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Frankfurt_in_World_War_II"
  },
+ "op-bombing-of-guernica": {
+  "name": "Bombing of Guernica",
+  "kind": "air raid on a Basque town",
+  "nation": "Spain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Guernica"
+ },
  "op-bombing-of-helsinki-in-world-war-ii": {
   "name": "Bombing of Helsinki in World War II",
   "kind": "air raids on a city",
@@ -2150,6 +2251,13 @@
   "nation": "Germany",
   "wikidata": "Q1735702",
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Nuremberg_in_World_War_II"
+ },
+ "op-bombing-of-obersalzberg": {
+  "name": "Bombing of Obersalzberg",
+  "kind": "RAF Bomber Command raid",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Obersalzberg"
  },
  "op-bombing-of-osaka": {
   "name": "Bombing of Osaka",
@@ -2431,6 +2539,13 @@
   "wikidata": "Q135955038",
   "source": "https://en.wikipedia.org/wiki/Careless_Talk_Costs_Lives_(propaganda)"
  },
+ "op-carlsbad-programme": {
+  "name": "Carlsbad Programme",
+  "kind": "Sudeten German autonomy demands",
+  "nation": "Czechoslovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Carlsbad_Programme"
+ },
  "op-casablanca-conference": {
   "name": "Casablanca Conference",
   "kind": "Allied conference",
@@ -2651,6 +2766,13 @@
   "wikidata": "Q3054185",
   "source": "https://en.wikipedia.org/wiki/Cowra_breakout"
  },
+ "op-cramer-v-united-states": {
+  "name": "Cramer v. United States",
+  "kind": "US Supreme Court treason case, 1945",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Cramer_v._United_States"
+ },
  "op-crimean-offensive": {
   "name": "Crimean offensive",
   "kind": "Soviet offensive, April to May 1944",
@@ -2695,6 +2817,13 @@
   "nation": "Germany",
   "wikidata": "Q5023193",
   "source": "https://en.wikipedia.org/wiki/Death_marches_during_the_Holocaust"
+ },
+ "op-death-of-benito-mussolini": {
+  "name": "Death of Benito Mussolini",
+  "kind": "capture and execution",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Death_of_Benito_Mussolini"
  },
  "op-declaration-by-united-nations": {
   "name": "Declaration by United Nations",
@@ -2850,6 +2979,13 @@
   "wikidata": "Q29665",
   "source": "https://en.wikipedia.org/wiki/Einsatzgruppen_trial"
  },
+ "op-elbe-day": {
+  "name": "Elbe Day",
+  "kind": "US and Soviet link up on the Elbe",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Elbe_Day"
+ },
  "op-elysee-accords": {
   "name": "Elysee Accords",
   "kind": "Franco Vietnamese agreement",
@@ -2901,6 +3037,24 @@
   "nation": "US",
   "wikidata": "Q5419908",
   "source": "https://en.wikipedia.org/wiki/Executive_Order_9981"
+ },
+ "op-exercise-tiger": {
+  "name": "Exercise Tiger",
+  "kind": "D Day rehearsal",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Exercise_Tiger",
+  "aka": [
+   "Operation Tiger",
+   "Slapton Sands"
+  ]
+ },
+ "op-exeter-blitz": {
+  "name": "Exeter Blitz",
+  "kind": "Luftwaffe raids on Exeter, 1940 to 1942",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Exeter_Blitz"
  },
  "op-expulsion-of-germans-from-czechoslovakia": {
   "name": "Expulsion of Germans from Czechoslovakia",
@@ -3259,6 +3413,13 @@
   "nation": "US",
   "wikidata": "Q217145",
   "source": "https://en.wikipedia.org/wiki/Guadalcanal_campaign"
+ },
+ "op-gudovac-massacre": {
+  "name": "Gudovac massacre",
+  "kind": "Ustaše mass killing of Serbs",
+  "nation": "Croatia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Gudovac_massacre"
  },
  "op-hainan-island-operation": {
   "name": "Hainan Island Operation",
@@ -3663,6 +3824,13 @@
   "wikidata": "Q430700",
   "source": "https://en.wikipedia.org/wiki/Khatyn_massacre"
  },
+ "op-kidnapping-of-heinrich-kreipe": {
+  "name": "Kidnapping of Heinrich Kreipe",
+  "kind": "SOE abduction operation on Crete",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kidnapping_of_Heinrich_Kreipe"
+ },
  "op-kindertransport": {
   "name": "Kindertransport",
   "kind": "rescue of Jewish children",
@@ -3676,6 +3844,13 @@
   "nation": "Newfoundland",
   "wikidata": "Q6422446",
   "source": "https://en.wikipedia.org/wiki/Knights_of_Columbus_Hostel_fire"
+ },
+ "op-kon-tiki-expedition": {
+  "name": "Kon-Tiki expedition",
+  "kind": "raft voyage across the Pacific",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kon-Tiki_expedition"
  },
  "op-konoe-statements": {
   "name": "Konoe statements",
@@ -3739,6 +3914,16 @@
   "nation": "Germany",
   "wikidata": "Q704361",
   "source": "https://en.wikipedia.org/wiki/Laconia_incident"
+ },
+ "op-landing-at-aitape": {
+  "name": "Landing at Aitape",
+  "kind": "amphibious operation, New Guinea, 1944",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Landing_at_Aitape",
+  "aka": [
+   "Operation Persecution"
+  ]
  },
  "op-landing-at-amchitka": {
   "name": "Landing at Amchitka",
@@ -3992,6 +4177,13 @@
    "Operation Elephant"
   ]
  },
+ "op-markham-ramu-and-finisterre-campaigns": {
+  "name": "Markham, Ramu and Finisterre campaigns",
+  "kind": "New Guinea campaigns",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Markham,_Ramu_and_Finisterre_campaigns"
+ },
  "op-marseille-roundup": {
   "name": "Marseille roundup",
   "kind": "roundup and deportation of Jews",
@@ -4037,6 +4229,13 @@
   "nation": "US",
   "wikidata": "Q704194",
   "source": "https://en.wikipedia.org/wiki/Milch_Trial"
+ },
+ "op-military-training-act-1939": {
+  "name": "Military Training Act 1939",
+  "kind": "British peacetime conscription law",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Military_Training_Act_1939"
  },
  "op-ministries-trial": {
   "name": "Ministries Trial",
@@ -4246,6 +4445,13 @@
    "Operation Gunnerside",
    "Operation Grouse"
   ]
+ },
+ "op-ns-ordensburgen": {
+  "name": "NS-Ordensburgen",
+  "kind": "Nazi Party leadership schools",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/NS-Ordensburgen"
  },
  "op-nuremberg-rallies": {
   "name": "Nuremberg rallies",
@@ -4796,6 +5002,13 @@
   "wikidata": "Q42886508",
   "source": "https://en.wikipedia.org/wiki/Operation_Oyster"
  },
+ "op-operation-pastorius": {
+  "name": "Operation Pastorius",
+  "kind": "German sabotage landings in the US, June 1942",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Pastorius"
+ },
  "op-operation-pike": {
   "name": "Operation Pike",
   "kind": "Anglo French plan to bomb Soviet Caucasus oilfields, 1940",
@@ -4902,6 +5115,13 @@
   "nation": "Japan",
   "wikidata": "Q2026439",
   "source": "https://en.wikipedia.org/wiki/Operation_Tan_No._2"
+ },
+ "op-operation-teardrop": {
+  "name": "Operation Teardrop",
+  "kind": "US Navy anti-submarine operation, North Atlantic, 1945",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Teardrop"
  },
  "op-operation-thursday": {
   "name": "Operation Thursday",
@@ -5287,6 +5507,13 @@
   "nation": "Britain",
   "wikidata": "Q7309631",
   "source": "https://en.wikipedia.org/wiki/Regulated_Area_(No_2)"
+ },
+ "op-reichskommissariat-norwegen": {
+  "name": "Reichskommissariat Norwegen",
+  "kind": "German civil occupation authority",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Reichskommissariat_Norwegen"
  },
  "op-reichstag-fire": {
   "name": "Reichstag fire",
@@ -5684,6 +5911,13 @@
    "Sino-British New Equal Treaty"
   ]
  },
+ "op-slamat-disaster": {
+  "name": "Slamat disaster",
+  "kind": "sinking of three ships in the evacuation of Greece",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Slamat_disaster"
+ },
  "op-slovak-hungarian-war": {
   "name": "Slovak-Hungarian War",
   "kind": "border war",
@@ -5888,6 +6122,13 @@
   "aka": [
    "Baltutlämningen"
   ]
+ },
+ "op-take-ichi-convoy": {
+  "name": "Take Ichi convoy",
+  "kind": "Japanese troop convoy",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Take_Ichi_convoy"
  },
  "op-talisay-landing": {
   "name": "Talisay Landing",
@@ -6145,6 +6386,13 @@
   "nation": "US",
   "wikidata": "Q171375",
   "source": "https://en.wikipedia.org/wiki/Truman_Doctrine"
+ },
+ "op-tunisian-campaign": {
+  "name": "Tunisian campaign",
+  "kind": "campaign",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tunisian_campaign"
  },
  "op-turkish-declaration-of-war-on-germany-and-japan": {
   "name": "Turkish declaration of war on Germany and Japan",

@@ -88,6 +88,17 @@
   "source": "https://en.wikipedia.org/wiki/Anderson_shelter",
   "note": "The Wikipedia title redirects to the Anderson shelter section of Air raid shelter; kept as its own entity because the shelter is the subject."
  },
+ "machine-asm-n-2-bat": {
+  "name": "ASM-N-2 Bat",
+  "kind": "US Navy radar guided glide bomb",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/ASM-N-2_Bat",
+  "aka": [
+   "Bat",
+   "SWOD Mk 9"
+  ]
+ },
  "machine-blalock-thomas-taussig-shunt": {
   "name": "Blalock Thomas Taussig shunt",
   "kind": "surgical procedure",
@@ -736,6 +747,13 @@
   "nation": "US",
   "wikidata": "Q117693",
   "source": "https://en.wikipedia.org/wiki/Raising_the_Flag_on_Iwo_Jima"
+ },
+ "machine-raising-the-flag-on-the-three-country-cairn": {
+  "name": "Raising the Flag on the Three-Country Cairn",
+  "kind": "photograph, 27 April 1945",
+  "nation": "Finland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Raising_the_Flag_on_the_Three-Country_Cairn"
  },
  "machine-rolls-royce-merlin": {
   "name": "Rolls-Royce Merlin",

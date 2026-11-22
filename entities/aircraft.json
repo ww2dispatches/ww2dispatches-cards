@@ -188,6 +188,13 @@
   "wikidata": "Q2559443",
   "source": "https://en.wikipedia.org/wiki/Consolidated_C-87_Liberator_Express"
  },
+ "aircraft-consolidated-pb4y-2-privateer": {
+  "name": "Consolidated PB4Y-2 Privateer",
+  "kind": "US Navy patrol bomber",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Consolidated_PB4Y-2_Privateer"
+ },
  "aircraft-consolidated-pby-catalina": {
   "name": "Consolidated PBY Catalina",
   "kind": "American flying boat",
@@ -720,6 +727,16 @@
    "Schwalbe"
   ]
  },
+ "aircraft-mikoyan-gurevich-mig-9": {
+  "name": "Mikoyan-Gurevich MiG-9",
+  "kind": "Soviet jet fighter",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mikoyan-Gurevich_MiG-9",
+  "aka": [
+   "I-300"
+  ]
+ },
  "aircraft-mitsubishi-a6m-zero": {
   "name": "Mitsubishi A6M Zero",
   "kind": "fighter",
@@ -972,6 +989,13 @@
   "aka": [
    "1903 Wright Flyer"
   ]
+ },
+ "aircraft-yakovlev-yak-15": {
+  "name": "Yakovlev Yak-15",
+  "kind": "Soviet jet fighter",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Yakovlev_Yak-15"
  },
  "aircraft-yankee-clipper-flying-boat": {
   "name": "Yankee Clipper",

@@ -424,6 +424,15 @@
   "lon": -81.5372,
   "note": "The 1946 town was Batesburg; the Wikipedia article is the merged town"
  },
+ "place-bath-somerset": {
+  "name": "Bath, Somerset",
+  "kind": "city",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bath,_Somerset",
+  "lat": null,
+  "lon": null
+ },
  "place-bayda-libya": {
   "name": "Beda Littoria",
   "kind": "town",
@@ -1489,6 +1498,15 @@
   "lat": 48.1722,
   "lon": 6.8794
  },
+ "place-corinth-canal": {
+  "name": "Corinth Canal",
+  "kind": "canal",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Corinth_Canal",
+  "lat": null,
+  "lon": null
+ },
  "place-coronado-california": {
   "name": "Coronado, California",
   "kind": "city",
@@ -1735,6 +1753,15 @@
   "lat": 47.0864,
   "lon": 39.2386
  },
+ "place-dongo-lombardy": {
+  "name": "Dongo",
+  "kind": "town on Lake Como",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Dongo,_Lombardy",
+  "lat": null,
+  "lon": null
+ },
  "place-dortmund": {
   "name": "Dortmund",
   "kind": "city",
@@ -1942,6 +1969,15 @@
   "source": "https://en.wikipedia.org/wiki/Esztergom",
   "lat": 47.7856,
   "lon": 18.7403
+ },
+ "place-exeter": {
+  "name": "Exeter",
+  "kind": "cathedral city in Devon",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Exeter",
+  "lat": null,
+  "lon": null
  },
  "place-eygelshoven": {
   "name": "Eigelshoven",
@@ -2394,6 +2430,15 @@
   "source": "https://en.wikipedia.org/wiki/Guam",
   "lat": 13.5,
   "lon": 144.8
+ },
+ "place-gudovac": {
+  "name": "Gudovac",
+  "kind": "village near Bjelovar",
+  "nation": "Croatia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Gudovac",
+  "lat": null,
+  "lon": null
  },
  "place-guildhall-london": {
   "name": "Guildhall, London",
@@ -2971,6 +3016,15 @@
   "lat": 44.3403,
   "lon": 17.2572
  },
+ "place-jasenovac-concentration-camp": {
+  "name": "Jasenovac concentration camp",
+  "kind": "Ustaše concentration camp complex",
+  "nation": "Croatia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Jasenovac_concentration_camp",
+  "lat": null,
+  "lon": null
+ },
  "place-jefferson-memorial": {
   "name": "Jefferson Memorial",
   "kind": "presidential memorial, Washington, D.C.",
@@ -3124,6 +3178,19 @@
    "Shimonoseki Straits"
   ]
  },
+ "place-karlovy-vary": {
+  "name": "Karlovy Vary",
+  "kind": "spa town in Bohemia",
+  "nation": "Czechoslovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Karlovy_Vary",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Karlsbad",
+   "Carlsbad"
+  ]
+ },
  "place-kassala": {
   "name": "Kassala",
   "kind": "town in eastern Sudan",
@@ -3146,6 +3213,15 @@
    "Kastelorizo",
    "Megisti"
   ]
+ },
+ "place-kaufering-concentration-camp-complex": {
+  "name": "Kaufering concentration camp complex",
+  "kind": "Dachau subcamps",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kaufering_concentration_camp_complex",
+  "lat": null,
+  "lon": null
  },
  "place-kaysersberg": {
   "name": "Kaysersberg",
@@ -3428,6 +3504,15 @@
   "aka": [
    "Kremlin"
   ]
+ },
+ "place-kroll-opera-house": {
+  "name": "Kroll Opera House",
+  "kind": "building, seat of the Reichstag after 1933",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kroll_Opera_House",
+  "lat": null,
+  "lon": null
  },
  "place-krysia-bunker": {
   "name": "Krysia Bunker",
@@ -3970,6 +4055,16 @@
   "wikidata": "Q18157528",
   "lat": 11.1722,
   "lon": 125.0122
+ },
+ "place-madang": {
+  "name": "Madang",
+  "kind": "town on the north coast of New Guinea",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Madang",
+  "lat": null,
+  "lon": null,
+  "note": "Australian administered Territory of New Guinea in the war; now Papua New Guinea"
  },
  "place-madrid": {
   "name": "Madrid",
@@ -4583,6 +4678,15 @@
   "lat": -19.5833,
   "lon": 48.3833
  },
+ "place-moritzburg-saxony": {
+  "name": "Moritzburg",
+  "kind": "town near Dresden, Saxony",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Moritzburg,_Saxony",
+  "lat": null,
+  "lon": null
+ },
  "place-morong-bataan": {
   "name": "Morong, Bataan",
   "kind": "town",
@@ -4772,6 +4876,18 @@
   "lat": 12.11,
   "lon": 15.05
  },
+ "place-nanjing": {
+  "name": "Nanjing",
+  "kind": "city, Nationalist capital of China",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Nanjing",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Nanking"
+  ]
+ },
  "place-naples": {
   "name": "Naples",
   "kind": "City and port",
@@ -4903,6 +5019,15 @@
   "lat": 40.7128,
   "lon": -74.0061
  },
+ "place-new-york-harbor": {
+  "name": "New York Harbor",
+  "kind": "harbor",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/New_York_Harbor",
+  "lat": null,
+  "lon": null
+ },
  "place-newell-california": {
   "name": "Newell, California",
   "kind": "town",
@@ -5001,6 +5126,24 @@
   "source": "https://en.wikipedia.org/wiki/Northern_Ireland",
   "lat": 54.6075,
   "lon": -6.6925
+ },
+ "place-norwegian-nobel-institute": {
+  "name": "Norwegian Nobel Institute",
+  "kind": "institute and building of the Nobel Peace Prize, Oslo",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Norwegian_Nobel_Institute",
+  "lat": null,
+  "lon": null
+ },
+ "place-norwich": {
+  "name": "Norwich",
+  "kind": "city",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Norwich",
+  "lat": null,
+  "lon": null
  },
  "place-nuremberg": {
   "name": "Nuremberg",
@@ -5503,6 +5646,18 @@
   "lat": 50.3714,
   "lon": -4.1422
  },
+ "place-plzen": {
+  "name": "Plzen",
+  "kind": "city",
+  "nation": "Czechoslovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Plze%C5%88",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Pilsen"
+  ]
+ },
  "place-polo-grounds": {
   "name": "Polo Grounds",
   "kind": "stadium in New York City",
@@ -5586,6 +5741,15 @@
   "wikidata": "Q134509",
   "lat": 31.2625,
   "lon": 32.3061
+ },
+ "place-porto-rafti": {
+  "name": "Porto Rafti",
+  "kind": "harbor town in Attica",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Porto_Rafti",
+  "lat": null,
+  "lon": null
  },
  "place-portsmouth": {
   "name": "Portsmouth",
@@ -6133,6 +6297,15 @@
   "lat": 50.55,
   "lon": 142.6
  },
+ "place-salamis-naval-base": {
+  "name": "Salamis Naval Base",
+  "kind": "Greek naval base on Salamis island",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Salamis_Naval_Base",
+  "lat": null,
+  "lon": null
+ },
  "place-samar": {
   "name": "Samar",
   "kind": "island",
@@ -6451,6 +6624,15 @@
   "source": "https://en.wikipedia.org/wiki/Skeleton_Coast",
   "lat": -21.6122,
   "lon": 14.54
+ },
+ "place-skoda-works": {
+  "name": "Skoda Works",
+  "kind": "armaments and engineering works",
+  "nation": "Czechoslovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/%C5%A0koda_Works",
+  "lat": null,
+  "lon": null
  },
  "place-skopje": {
   "name": "Skopje",
@@ -6851,6 +7033,15 @@
   "lat": 35.6853,
   "lon": 139.5097
  },
+ "place-tanahmerah-bay": {
+  "name": "Tanahmerah Bay",
+  "kind": "bay on the north coast of New Guinea",
+  "nation": "Netherlands New Guinea",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tanahmerah_Bay",
+  "lat": null,
+  "lon": null
+ },
  "place-tannenberg-memorial": {
   "name": "Tannenberg Memorial",
   "kind": "war memorial and Hindenburg's tomb",
@@ -7128,6 +7319,15 @@
   "nation": "US",
   "wikidata": "Q7824771",
   "source": "https://en.wikipedia.org/wiki/Topaz_War_Relocation_Center"
+ },
+ "place-torgau": {
+  "name": "Torgau",
+  "kind": "town on the Elbe",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Torgau",
+  "lat": null,
+  "lon": null
  },
  "place-torokina-airfield": {
   "name": "Torokina fighter strip",
