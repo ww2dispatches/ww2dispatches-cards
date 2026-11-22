@@ -3,7 +3,7 @@
   "name": "AHS Centaur",
   "kind": "Australian hospital ship",
   "nation": "Australia",
-  "wikidata": null,
+  "wikidata": "Q686392",
   "source": "https://en.wikipedia.org/wiki/AHS_Centaur"
  },
  "ship-ariete-class-torpedo-boat": {
@@ -80,7 +80,7 @@
   "name": "French cruiser Jeanne d'Arc (1930)",
   "kind": "training cruiser",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q2630966",
   "source": "https://en.wikipedia.org/wiki/French_cruiser_Jeanne_d%27Arc_(1930)"
  },
  "ship-french-cruiser-lamotte-picquet": {
@@ -94,7 +94,7 @@
   "name": "Bison",
   "kind": "French Navy destroyer",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q935110",
   "source": "https://en.wikipedia.org/wiki/French_destroyer_Bison_(1928)"
  },
  "ship-french-destroyer-le-malin": {
@@ -208,7 +208,7 @@
   "name": "Stier",
   "kind": "German auxiliary cruiser (merchant raider)",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q558369",
   "source": "https://en.wikipedia.org/wiki/German_auxiliary_cruiser_Stier",
   "aka": [
    "Schiff 23",
@@ -400,7 +400,7 @@
   "name": "German destroyer Z7 Hermann Schoemann",
   "kind": "Type 1934A destroyer",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q136627",
   "source": "https://en.wikipedia.org/wiki/German_destroyer_Z7_Hermann_Schoemann"
  },
  "ship-german-ship-doggerbank": {
@@ -462,7 +462,7 @@
   "name": "U-110",
   "kind": "Type IXB U-boat, captured with her Enigma",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q683326",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-110_(1940)"
  },
  "ship-german-submarine-u-1172": {
@@ -490,7 +490,7 @@
   "name": "U-1224 (RO-501)",
   "kind": "Type IXC/40 U-boat transferred to Japan",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q2023347",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-1224",
   "aka": [
    "RO-501",
@@ -515,7 +515,7 @@
   "name": "U-125",
   "kind": "Type IXB U-boat",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q571359",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-125_(1940)"
  },
  "ship-german-submarine-u-127-1941": {
@@ -539,7 +539,7 @@
   "name": "German submarine U-128 (1941)",
   "kind": "Type IXC U-boat",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q475815",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-128_(1941)",
   "aka": [
    "U-128"
@@ -635,7 +635,7 @@
   "name": "U-176",
   "kind": "Type IXC U-boat",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q2000249",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-176"
  },
  "ship-german-submarine-u-177": {
@@ -719,7 +719,7 @@
   "name": "U-227",
   "kind": "Type VIIC U-boat",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q4051950",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-227"
  },
  "ship-german-submarine-u-23-1936": {
@@ -771,7 +771,7 @@
   "name": "German submarine U-258",
   "kind": "Type VIIC U-boat",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q15050588",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-258"
  },
  "ship-german-submarine-u-260": {
@@ -799,7 +799,7 @@
   "name": "U-277",
   "kind": "Type VIIC U-boat",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q4051984",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-277"
  },
  "ship-german-submarine-u-278": {
@@ -820,7 +820,7 @@
   "name": "German submarine U-286",
   "kind": "Type VIIC U-boat",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q4051988",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-286"
  },
  "ship-german-submarine-u-30-1936": {
@@ -844,7 +844,7 @@
   "name": "German submarine U-307",
   "kind": "Type VIIC U-boat",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q4051997",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-307"
  },
  "ship-german-submarine-u-31-1936": {
@@ -924,7 +924,7 @@
   "name": "U-352",
   "kind": "Type VIIC U-boat",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q32804",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-352"
  },
  "ship-german-submarine-u-366": {
@@ -945,7 +945,7 @@
   "name": "U-371",
   "kind": "Type VIIC U-boat",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q4052039",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-371"
  },
  "ship-german-submarine-u-374": {
@@ -1021,14 +1021,14 @@
   "name": "U-439",
   "kind": "Type VIIC U-boat",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q2472307",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-439"
  },
  "ship-german-submarine-u-447": {
   "name": "U-447",
   "kind": "Kriegsmarine Type VIIC U-boat",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q4001378",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-447"
  },
  "ship-german-submarine-u-454": {
@@ -1042,7 +1042,7 @@
   "name": "U-456",
   "kind": "Type VIIC U-boat",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q3091115",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-456"
  },
  "ship-german-submarine-u-463": {
@@ -1056,7 +1056,7 @@
   "name": "German submarine U-465",
   "kind": "Type VIIC U-boat",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q5551697",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-465"
  },
  "ship-german-submarine-u-469": {
@@ -1077,7 +1077,7 @@
   "name": "U-473",
   "kind": "German Type VIIC U-boat",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q11711251",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-473"
  },
  "ship-german-submarine-u-486": {
@@ -1119,7 +1119,7 @@
   "name": "German submarine U-507",
   "kind": "Type IXC U-boat",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q571599",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-507"
  },
  "ship-german-submarine-u-515": {
@@ -1154,7 +1154,7 @@
   "name": "U-528",
   "kind": "U-boat",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q2024611",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-528"
  },
  "ship-german-submarine-u-545": {
@@ -1210,7 +1210,7 @@
   "name": "U-553",
   "kind": "German Type VIIC U-boat",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q464041",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-553"
  },
  "ship-german-submarine-u-557": {
@@ -1227,7 +1227,7 @@
   "name": "U-558",
   "kind": "U-boat",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q481322",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-558"
  },
  "ship-german-submarine-u-559": {
@@ -1241,7 +1241,7 @@
   "name": "German submarine U-564",
   "kind": "Type VIIC U-boat",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q475811",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-564"
  },
  "ship-german-submarine-u-565": {
@@ -1276,7 +1276,7 @@
   "name": "German submarine U-573",
   "kind": "Type VIIC U-boat, later Spanish G 7",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q481311",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-573",
   "aka": [
    "G 7"
@@ -1338,7 +1338,7 @@
   "name": "German submarine U-616",
   "kind": "Type VIIC U-boat",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q2127783",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-616",
   "aka": [
    "U-616"
@@ -1383,7 +1383,7 @@
   "name": "German submarine U-638",
   "kind": "Kriegsmarine Type VIIC U-boat",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q4052069",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-638"
  },
  "ship-german-submarine-u-64-1939": {
@@ -1400,7 +1400,7 @@
   "name": "German submarine U-640",
   "kind": "Type VIIC U-boat",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q15644562",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-640"
  },
  "ship-german-submarine-u-649": {
@@ -1452,7 +1452,7 @@
   "name": "U-659",
   "kind": "Type VIIC U-boat",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q9363945",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-659"
  },
  "ship-german-submarine-u-66-1940": {
@@ -1466,7 +1466,7 @@
   "name": "U-663",
   "kind": "Kriegsmarine Type VIIC U-boat",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q5175197",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-663"
  },
  "ship-german-submarine-u-679": {
@@ -1535,7 +1535,7 @@
   "name": "U-753",
   "kind": "Type VIIC U-boat",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q2572860",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-753"
  },
  "ship-german-submarine-u-77-1940": {
@@ -1566,7 +1566,7 @@
   "name": "U-805",
   "kind": "Type IXC/40 U-boat",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q3551991",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-805"
  },
  "ship-german-submarine-u-81-1941": {
@@ -1601,14 +1601,14 @@
   "name": "German submarine U-853",
   "kind": "Type IXC/40 U-boat sunk off Block Island",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q471536",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-853"
  },
  "ship-german-submarine-u-858": {
   "name": "German submarine U-858",
   "kind": "Type IXC/40 U-boat",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q4052087",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-858"
  },
  "ship-german-submarine-u-862": {
@@ -1642,7 +1642,7 @@
   "name": "U-873",
   "kind": "U-boat, Type IXD2",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q222779",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-873"
  },
  "ship-german-submarine-u-877": {
@@ -1694,7 +1694,7 @@
   "name": "German torpedo boat T24",
   "kind": "Elbing class torpedo boat",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q60521557",
   "source": "https://en.wikipedia.org/wiki/German_torpedo_boat_T24"
  },
  "ship-german-torpedo-boat-t29": {
@@ -1798,7 +1798,7 @@
   "name": "HMCS Athabaskan (G07)",
   "kind": "Tribal class destroyer",
   "nation": "Canada",
-  "wikidata": null,
+  "wikidata": "Q5630713",
   "source": "https://en.wikipedia.org/wiki/HMCS_Athabaskan_(G07)"
  },
  "ship-hmcs-haida": {
@@ -1879,7 +1879,7 @@
   "name": "HMCS Valleyfield (K329)",
   "kind": "Royal Canadian Navy River class frigate",
   "nation": "Canada",
-  "wikidata": null,
+  "wikidata": "Q16902516",
   "source": "https://en.wikipedia.org/wiki/HMCS_Valleyfield",
   "note": "Wikipedia article title has no hull number"
  },
@@ -1943,7 +1943,7 @@
   "name": "HMS Afridi (F07)",
   "kind": "Royal Navy Tribal class destroyer",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q2625160",
   "source": "https://en.wikipedia.org/wiki/HMS_Afridi_(F07)"
  },
  "ship-hms-ajax-22": {
@@ -1971,7 +1971,7 @@
   "name": "HMS Anthony (H40)",
   "kind": "Royal Navy destroyer",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q1466092",
   "source": "https://en.wikipedia.org/wiki/HMS_Anthony_(H40)"
  },
  "ship-hms-argonaut-61": {
@@ -2062,7 +2062,7 @@
   "name": "HMS Bulldog (H91)",
   "kind": "Royal Navy destroyer",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q1564459",
   "source": "https://en.wikipedia.org/wiki/HMS_Bulldog_(H91)"
  },
  "ship-hms-campbeltown-i42": {
@@ -2180,7 +2180,7 @@
   "name": "HMS Edinburgh (16)",
   "kind": "Town class light cruiser",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q702335",
   "source": "https://en.wikipedia.org/wiki/HMS_Edinburgh_(16)"
  },
  "ship-hms-encounter-h10": {
@@ -2233,7 +2233,7 @@
   "name": "HMS Fencer (D64)",
   "kind": "escort carrier",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q74860",
   "source": "https://en.wikipedia.org/wiki/HMS_Fencer"
  },
  "ship-hms-forfar": {
@@ -2346,7 +2346,7 @@
   "name": "HMS Hereward (H93)",
   "kind": "H class destroyer",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q1564805",
   "source": "https://en.wikipedia.org/wiki/HMS_Hereward_(H93)"
  },
  "ship-hms-hermes-95": {
@@ -2381,7 +2381,7 @@
   "name": "HMS Hunter (H35)",
   "kind": "H class destroyer",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q1564846",
   "source": "https://en.wikipedia.org/wiki/HMS_Hunter_(H35)"
  },
  "ship-hms-hyperion-h97": {
@@ -2423,7 +2423,7 @@
   "name": "HMS Jackal (F22)",
   "kind": "destroyer",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q1564934",
   "source": "https://en.wikipedia.org/wiki/HMS_Jackal_(F22)"
  },
  "ship-hms-janus-f53": {
@@ -2503,7 +2503,7 @@
   "name": "HMS Lively (G40)",
   "kind": "destroyer",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q4353691",
   "source": "https://en.wikipedia.org/wiki/HMS_Lively_(G40)"
  },
  "ship-hms-liverpool-c11": {
@@ -2552,7 +2552,7 @@
   "name": "HMS Matchless (G52)",
   "kind": "Royal Navy destroyer",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q5633319",
   "source": "https://en.wikipedia.org/wiki/HMS_Matchless_(G52)"
  },
  "ship-hms-mauritius-80": {
@@ -2615,7 +2615,7 @@
   "name": "HMS Olympus (N35)",
   "kind": "Odin class submarine",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q5633578",
   "source": "https://en.wikipedia.org/wiki/HMS_Olympus_(N35)"
  },
  "ship-hms-onslow-g17": {
@@ -2629,7 +2629,7 @@
   "name": "HMS Opportune (G80)",
   "kind": "Royal Navy destroyer",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q5633594",
   "source": "https://en.wikipedia.org/wiki/HMS_Opportune_(G80)"
  },
  "ship-hms-pathfinder-g10": {
@@ -2685,7 +2685,7 @@
   "name": "HMS Punjabi",
   "kind": "Tribal class destroyer",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q4346333",
   "source": "https://en.wikipedia.org/wiki/HMS_Punjabi"
  },
  "ship-hms-queen-elizabeth-1913": {
@@ -2699,7 +2699,7 @@
   "name": "HMS Ramillies (07)",
   "kind": "Royal Navy battleship",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q1565236",
   "source": "https://en.wikipedia.org/wiki/HMS_Ramillies_(07)"
  },
  "ship-hms-rawalpindi": {
@@ -2744,7 +2744,7 @@
   "name": "HMS Seal (N37)",
   "kind": "Royal Navy minelaying submarine, captured 1940",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q545534",
   "source": "https://en.wikipedia.org/wiki/HMS_Seal_(N37)"
  },
  "ship-hms-seraph-p219": {
@@ -2845,7 +2845,7 @@
   "name": "HMS Sunflower (K41)",
   "kind": "Royal Navy Flower class corvette",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q12790695",
   "source": "https://en.wikipedia.org/wiki/HMS_Sunflower_(K41)"
  },
  "ship-hms-tactician-p314": {
@@ -3042,7 +3042,7 @@
   "name": "HMS Welshman (M84)",
   "kind": "Abdiel class fast minelayer",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q2081698",
   "source": "https://en.wikipedia.org/wiki/HMS_Welshman"
  },
  "ship-hms-westcott": {
@@ -3088,7 +3088,7 @@
   "name": "HMT Bedfordshire (FY141)",
   "kind": "armed naval trawler",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q5635059",
   "source": "https://en.wikipedia.org/wiki/HMT_Bedfordshire"
  },
  "ship-hmt-rohna": {
@@ -3351,7 +3351,7 @@
   "name": "Shoho",
   "kind": "Imperial Japanese Navy light aircraft carrier",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q1426328",
   "source": "https://en.wikipedia.org/wiki/Japanese_aircraft_carrier_Sh%C5%8Dh%C5%8D",
   "aka": [
    "Shōhō",
@@ -3362,7 +3362,7 @@
   "name": "Japanese aircraft carrier Shokaku",
   "kind": "fleet carrier",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q849588",
   "source": "https://en.wikipedia.org/wiki/Japanese_aircraft_carrier_Sh%C5%8Dkaku",
   "aka": [
    "Shokaku"
@@ -3659,7 +3659,7 @@
   "name": "Japanese destroyer Inazuma (1932)",
   "kind": "Imperial Japanese Navy destroyer",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q592015",
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Inazuma_(1932)"
  },
  "ship-japanese-destroyer-isokaze-1939": {
@@ -3673,7 +3673,7 @@
   "name": "Japanese destroyer Kagero (1938)",
   "kind": "destroyer, lead ship of her class",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q2990067",
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Kager%C5%8D_(1938)",
   "aka": [
    "Kagero"
@@ -3683,14 +3683,14 @@
   "name": "Karukaya",
   "kind": "Wakatake class destroyer",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q11396266",
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Karukaya"
  },
  "ship-japanese-destroyer-kikuzuki-1926": {
   "name": "Japanese destroyer Kikuzuki (1926)",
   "kind": "Imperial Japanese Navy destroyer",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q1570273",
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Kikuzuki_(1926)"
  },
  "ship-japanese-destroyer-kisaragi-1925": {
@@ -3711,7 +3711,7 @@
   "name": "Japanese destroyer Kuroshio",
   "kind": "Kagero class destroyer",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q2234969",
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Kuroshio"
  },
  "ship-japanese-destroyer-maikaze": {
@@ -3884,7 +3884,7 @@
   "name": "Japanese seaplane carrier Mizuho",
   "kind": "seaplane carrier",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q988046",
   "source": "https://en.wikipedia.org/wiki/Japanese_seaplane_carrier_Mizuho"
  },
  "ship-japanese-submarine-ha-19": {
@@ -3961,7 +3961,7 @@
   "name": "Japanese submarine I-177",
   "kind": "Imperial Japanese Navy submarine",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q2701941",
   "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-177"
  },
  "ship-japanese-submarine-i-18": {
@@ -4031,7 +4031,7 @@
   "name": "Japanese submarine I-28",
   "kind": "Type B1 submarine",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q4386735",
   "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-28"
  },
  "ship-japanese-submarine-i-3": {
@@ -4080,7 +4080,7 @@
   "name": "Japanese submarine I-64",
   "kind": "submarine",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q10884890",
   "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-64",
   "aka": [
    "I-164"
@@ -4139,7 +4139,7 @@
   "name": "MS St. Louis",
   "kind": "German ocean liner",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q682495",
   "source": "https://en.wikipedia.org/wiki/MS_St._Louis"
  },
  "ship-mv-asama-maru": {
@@ -4260,7 +4260,7 @@
   "name": "ORP Grom (H 71)",
   "kind": "Polish Navy destroyer",
   "nation": "Poland",
-  "wikidata": null,
+  "wikidata": "Q118203",
   "source": "https://en.wikipedia.org/wiki/ORP_Grom_(1936)"
  },
  "ship-orp-orzel-1938": {
@@ -4444,7 +4444,7 @@
   "name": "SS Alcoa Puritan (1941)",
   "kind": "American cargo ship sunk by U-507",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q7393133",
   "source": "https://en.wikipedia.org/wiki/SS_Alcoa_Puritan_(1941)"
  },
  "ship-ss-almeda-star": {
@@ -4503,7 +4503,7 @@
   "name": "SS Cap Arcona",
   "kind": "German ocean liner, prison ship sunk 3 May 1945",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q165142",
   "source": "https://en.wikipedia.org/wiki/SS_Cap_Arcona"
  },
  "ship-ss-china-arrow": {
@@ -4524,7 +4524,7 @@
   "name": "SS City of Nagpur",
   "kind": "Ellerman Lines passenger ship",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q7393380",
   "source": "https://en.wikipedia.org/wiki/SS_City_of_Nagpur"
  },
  "ship-ss-clan-campbell": {
@@ -4618,7 +4618,7 @@
   "name": "SS Erinpura",
   "kind": "troopship, British India liner",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q2577739",
   "source": "https://en.wikipedia.org/wiki/SS_Erinpura"
  },
  "ship-ss-europa-1928": {
@@ -4742,7 +4742,7 @@
   "name": "SS Malakand",
   "kind": "Brocklebank Line cargo ship, exploded in Huskisson Dock",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q28223660",
   "source": "https://en.wikipedia.org/wiki/SS_Malakand_(1919)"
  },
  "ship-ss-montebello": {
@@ -4763,7 +4763,7 @@
   "name": "SS Nerissa",
   "kind": "passenger and cargo steamer",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q632733",
   "source": "https://en.wikipedia.org/wiki/SS_Nerissa_(1926)"
  },
  "ship-ss-normandie": {
@@ -4826,7 +4826,7 @@
   "name": "SS Potrero del Llano",
   "kind": "Mexican oil tanker, ex Italian Lucifero",
   "nation": "Mexico",
-  "wikidata": null,
+  "wikidata": "Q2106520",
   "source": "https://en.wikipedia.org/wiki/SS_Potrero_del_Llano"
  },
  "ship-ss-rajputana": {
@@ -4871,7 +4871,7 @@
   "name": "SS Thielbek",
   "kind": "German cargo ship, prison ship sunk 3 May 1945",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q551509",
   "source": "https://en.wikipedia.org/wiki/SS_Thielbek_(1940)"
  },
  "ship-ss-umona": {
@@ -4969,7 +4969,7 @@
   "name": "USCGC Eagle (WIX-327)",
   "kind": "Coast Guard sail training barque, formerly German Horst Wessel",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q481547",
   "source": "https://en.wikipedia.org/wiki/USCGC_Eagle_(WIX-327)",
   "aka": [
    "Horst Wessel"
@@ -4986,7 +4986,7 @@
   "name": "USCGC Icarus (WPC-110)",
   "kind": "US Coast Guard patrol cutter",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q7866110",
   "source": "https://en.wikipedia.org/wiki/USCGC_Icarus"
  },
  "ship-uscgc-shoshone": {
@@ -5151,7 +5151,7 @@
   "name": "USS Bonefish (SS-223)",
   "kind": "U.S. Navy submarine",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q6143509",
   "source": "https://en.wikipedia.org/wiki/USS_Bonefish_(SS-223)"
  },
  "ship-uss-branch-dd-197": {
@@ -5185,7 +5185,7 @@
   "name": "USS Buckley (DE-51)",
   "kind": "Buckley class destroyer escort that rammed U-66",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q2468729",
   "source": "https://en.wikipedia.org/wiki/USS_Buckley"
  },
  "ship-uss-bunker-hill-cv-17": {
@@ -5255,7 +5255,7 @@
   "name": "USS Cod (SS-224)",
   "kind": "Gato class submarine",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q2078835",
   "source": "https://en.wikipedia.org/wiki/USS_Cod"
  },
  "ship-uss-colhoun-dd-801": {
@@ -5297,14 +5297,14 @@
   "name": "USS Donnell (DE-56)",
   "kind": "U.S. Navy Buckley class destroyer escort",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q7868920",
   "source": "https://en.wikipedia.org/wiki/USS_Donnell"
  },
  "ship-uss-drum-ss-228": {
   "name": "USS Drum (SS-228)",
   "kind": "Gato class submarine",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q1331366",
   "source": "https://en.wikipedia.org/wiki/USS_Drum_(SS-228)"
  },
  "ship-uss-edsall-dd-219": {
@@ -5339,7 +5339,7 @@
   "name": "USS Francis M. Robinson (DE-220)",
   "kind": "destroyer escort",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q7869476",
   "source": "https://en.wikipedia.org/wiki/USS_Francis_M._Robinson"
  },
  "ship-uss-franklin-cv-13": {
@@ -5568,7 +5568,7 @@
   "name": "USS Jouett (DD-396)",
   "kind": "destroyer",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q7870610",
   "source": "https://en.wikipedia.org/wiki/USS_Jouett_(DD-396)"
  },
  "ship-uss-juneau-cl-52": {
@@ -5741,7 +5741,7 @@
   "name": "USS Menges (DE-320)",
   "kind": "destroyer escort",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q7871713",
   "source": "https://en.wikipedia.org/wiki/USS_Menges"
  },
  "ship-uss-milwaukee-cl-5": {
@@ -5765,7 +5765,7 @@
   "name": "USS Moffett (DD-362)",
   "kind": "Porter-class destroyer",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q76859",
   "source": "https://en.wikipedia.org/wiki/USS_Moffett",
   "aka": [
    "USS Moffett"
@@ -5796,7 +5796,7 @@
   "name": "USS Neosho (AO-23)",
   "kind": "US Navy fleet oiler",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q254582",
   "source": "https://en.wikipedia.org/wiki/USS_Neosho_(AO-23)"
  },
  "ship-uss-nereus-as-17": {
@@ -5916,7 +5916,7 @@
   "name": "USS Pigeon (ASR-6)",
   "kind": "submarine rescue ship",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q7872879",
   "source": "https://en.wikipedia.org/wiki/USS_Pigeon_(ASR-6)"
  },
  "ship-uss-pillsbury-dd-227": {
@@ -6146,7 +6146,7 @@
   "name": "USS Sims (DD-409)",
   "kind": "US Navy destroyer",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q2202467",
   "source": "https://en.wikipedia.org/wiki/USS_Sims_(DD-409)"
  },
  "ship-uss-skipjack-ss-184": {
@@ -6203,7 +6203,7 @@
   "name": "USS Tanager (AM-5)",
   "kind": "minesweeper",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q7874606",
   "source": "https://en.wikipedia.org/wiki/USS_Tanager_(AM-5)"
  },
  "ship-uss-tarpon-ss-175": {
@@ -6307,7 +6307,7 @@
   "name": "USS Vance (DE-387)",
   "kind": "destroyer escort",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q7875020",
   "source": "https://en.wikipedia.org/wiki/USS_Vance",
   "note": "Article title is USS Vance; USS Vance (DE-387) redirects to it."
  },

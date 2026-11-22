@@ -55,7 +55,7 @@
   "name": "German Tenth Army",
   "kind": "field army",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q163925",
   "source": "https://en.wikipedia.org/wiki/10th_Army_(Wehrmacht)"
  },
  "unit-10th-infantry-regiment-united-states": {
@@ -280,7 +280,7 @@
   "name": "16th Armored Division (United States)",
   "kind": "U.S. Army armored division",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q4552121",
   "source": "https://en.wikipedia.org/wiki/16th_Armored_Division_(United_States)"
  },
  "unit-16th-army-soviet-union": {
@@ -391,7 +391,7 @@
   "name": "1st Czechoslovak Independent Armoured Brigade",
   "kind": "Czechoslovak armoured brigade in exile",
   "nation": "Czechoslovakia",
-  "wikidata": null,
+  "wikidata": "Q898087",
   "source": "https://en.wikipedia.org/wiki/1st_Czechoslovak_Independent_Armoured_Brigade"
  },
  "unit-1st-fallschirm-panzer-division-hermann-goring": {
@@ -432,7 +432,7 @@
   "name": "1st Parachute Division",
   "kind": "Luftwaffe airborne infantry division",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q127424",
   "source": "https://en.wikipedia.org/wiki/1st_Parachute_Division",
   "aka": [
    "1st Fallschirmjäger Division"
@@ -520,7 +520,7 @@
   "name": "22nd Air Landing Division",
   "kind": "German air landing infantry division",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q214192",
   "source": "https://en.wikipedia.org/wiki/22nd_Air_Landing_Division"
  },
  "unit-22nd-brigade-australia": {
@@ -586,7 +586,7 @@
   "name": "26th Brigade (Australia)",
   "kind": "infantry brigade",
   "nation": "Australia",
-  "wikidata": null,
+  "wikidata": "Q4632416",
   "source": "https://en.wikipedia.org/wiki/26th_Brigade_(Australia)"
  },
  "unit-26th-cavalry-regiment-philippine-scouts": {
@@ -600,7 +600,7 @@
   "name": "26th Indian Infantry Division",
   "kind": "Indian Army infantry division",
   "nation": "India",
-  "wikidata": null,
+  "wikidata": "Q4632442",
   "source": "https://en.wikipedia.org/wiki/26th_Indian_Infantry_Division"
  },
  "unit-26th-infantry-regiment-united-states": {
@@ -659,7 +659,7 @@
   "name": "29th Marine Regiment",
   "kind": "US Marine infantry regiment",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q23129929",
   "source": "https://en.wikipedia.org/wiki/29th_Marine_Regiment_(United_States)"
  },
  "unit-2nd-alpine-division-tridentina": {
@@ -822,7 +822,7 @@
   "name": "322nd Bombardment Group",
   "kind": "USAAF B-26 bomb group",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q4634945",
   "source": "https://en.wikipedia.org/wiki/322d_Air_Expeditionary_Group",
   "aka": [
    "322d Air Expeditionary Group"
@@ -1064,7 +1064,7 @@
   "name": "42nd Infantry Division",
   "kind": "U.S. Army infantry division, the Rainbow Division",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q4637801",
   "source": "https://en.wikipedia.org/wiki/42nd_Infantry_Division_(United_States)"
  },
  "unit-442nd-infantry-regiment": {
@@ -1169,7 +1169,7 @@
   "name": "4th Armored Division (France, 1940)",
   "kind": "French armored division",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q2817026",
   "source": "https://en.wikipedia.org/wiki/4th_Armored_Division_(France,_1940)",
   "aka": [
    "4e Division cuirassée",
@@ -1503,7 +1503,7 @@
   "name": "7th Panzer Division",
   "kind": "German armored division",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q260811",
   "source": "https://en.wikipedia.org/wiki/7th_Panzer_Division_(Wehrmacht)"
  },
  "unit-80th-training-command": {
@@ -1532,7 +1532,7 @@
   "name": "842 Naval Air Squadron",
   "kind": "Fleet Air Arm squadron",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q18639064",
   "source": "https://en.wikipedia.org/wiki/842_Naval_Air_Squadron"
  },
  "unit-84th-training-command": {
@@ -1547,7 +1547,7 @@
   "name": "86th Infantry Division (United States)",
   "kind": "U.S. Army infantry division",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q4644938",
   "source": "https://en.wikipedia.org/wiki/86th_Training_Division",
   "note": "English Wikipedia title is now 86th Training Division; 86th Infantry Division (United States) redirects to it."
  },
@@ -1562,7 +1562,7 @@
   "name": "8th Punjab Regiment",
   "kind": "British Indian Army infantry regiment",
   "nation": "India",
-  "wikidata": null,
+  "wikidata": "Q4645452",
   "source": "https://en.wikipedia.org/wiki/8th_Punjab_Regiment"
  },
  "unit-90th-infantry-division-united-states": {
@@ -1657,7 +1657,7 @@
   "name": "African Auxiliary Pioneer Corps",
   "kind": "British Army labour corps",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q55603293",
   "source": "https://en.wikipedia.org/wiki/African_Auxiliary_Pioneer_Corps"
  },
  "unit-afrika-korps": {
@@ -1849,7 +1849,7 @@
   "name": "Associated Press",
   "kind": "American news agency",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q40469",
   "source": "https://en.wikipedia.org/wiki/Associated_Press",
   "aka": [
    "AP"
@@ -2016,7 +2016,7 @@
   "name": "Brotherhood of Railroad Trainmen",
   "kind": "railroad labor union",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q16985721",
   "source": "https://en.wikipedia.org/wiki/Brotherhood_of_Railroad_Trainmen"
  },
  "unit-buffs-royal-east-kent-regiment": {
@@ -2030,7 +2030,7 @@
   "name": "Bureau of Aeronautics",
   "kind": "U.S. Navy aviation bureau",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q3647257",
   "source": "https://en.wikipedia.org/wiki/Bureau_of_Aeronautics",
   "aka": [
    "BuAer"
@@ -2116,7 +2116,7 @@
   "name": "Civilian Conservation Corps",
   "kind": "New Deal work relief program",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q1094508",
   "source": "https://en.wikipedia.org/wiki/Civilian_Conservation_Corps",
   "aka": [
    "CCC"
@@ -2136,7 +2136,7 @@
   "name": "Combined Fleet",
   "kind": "Imperial Japanese Navy main fleet command",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q697037",
   "source": "https://en.wikipedia.org/wiki/Combined_Fleet"
  },
  "unit-commissariat-general-for-jewish-affairs": {
@@ -2181,14 +2181,14 @@
   "name": "Council of Europe",
   "kind": "European international organization founded 1949",
   "nation": "worldwide",
-  "wikidata": null,
+  "wikidata": "Q8908",
   "source": "https://en.wikipedia.org/wiki/Council_of_Europe"
  },
  "unit-cuban-revolutionary-navy": {
   "name": "Cuban Navy",
   "kind": "navy of Cuba",
   "nation": "Cuba",
-  "wikidata": null,
+  "wikidata": "Q11297518",
   "source": "https://en.wikipedia.org/wiki/Cuban_Revolutionary_Navy",
   "note": "Cuban Navy redirects to this article"
  },
@@ -2238,7 +2238,7 @@
   "name": "Detroit Tigers",
   "kind": "American League baseball club",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q650855",
   "source": "https://en.wikipedia.org/wiki/Detroit_Tigers"
  },
  "unit-dogs-for-defense": {
@@ -2273,7 +2273,7 @@
   "name": "Dutch government in exile",
   "kind": "government in exile in London",
   "nation": "Netherlands",
-  "wikidata": null,
+  "wikidata": "Q2401707",
   "source": "https://en.wikipedia.org/wiki/Dutch_government-in-exile"
  },
  "unit-eighth-air-force": {
@@ -2444,7 +2444,7 @@
   "name": "Food and Agriculture Organization",
   "kind": "United Nations agency",
   "nation": "worldwide",
-  "wikidata": null,
+  "wikidata": "Q82151",
   "source": "https://en.wikipedia.org/wiki/Food_and_Agriculture_Organization",
   "aka": [
    "FAO"
@@ -2529,7 +2529,7 @@
   "name": "General German Trade Union Federation",
   "kind": "German trade union federation (ADGB)",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q896353",
   "source": "https://en.wikipedia.org/wiki/General_German_Trade_Union_Federation",
   "aka": [
    "ADGB",
@@ -2540,7 +2540,7 @@
   "name": "General Jewish Labour Bund in Poland",
   "kind": "Jewish socialist party in Poland",
   "nation": "Poland",
-  "wikidata": null,
+  "wikidata": "Q5531969",
   "source": "https://en.wikipedia.org/wiki/General_Jewish_Labour_Bund_in_Poland",
   "aka": [
    "Bund"
@@ -2560,7 +2560,7 @@
   "name": "German Labour Front",
   "kind": "Nazi labor organization (DAF)",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q312526",
   "source": "https://en.wikipedia.org/wiki/German_Labour_Front",
   "aka": [
    "Deutsche Arbeitsfront",
@@ -2578,7 +2578,7 @@
   "name": "Gideon Force",
   "kind": "British and Ethiopian irregular force under Orde Wingate",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q2975812",
   "source": "https://en.wikipedia.org/wiki/Gideon_Force"
  },
  "unit-golden-square-iraq": {
@@ -2599,7 +2599,7 @@
   "name": "Government Code and Cypher School",
   "kind": "British codebreaking agency",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q3093133",
   "source": "https://en.wikipedia.org/wiki/Government_Code_and_Cypher_School",
   "aka": [
    "GC&CS"
@@ -2716,7 +2716,7 @@
   "name": "Imperial Rule Assistance Association",
   "kind": "Japanese wartime political organization",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q714797",
   "source": "https://en.wikipedia.org/wiki/Imperial_Rule_Assistance_Association",
   "aka": [
    "Taisei Yokusankai"
@@ -2941,7 +2941,7 @@
   "name": "Lehrgeschwader 1",
   "kind": "Luftwaffe bomber wing",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q3229129",
   "source": "https://en.wikipedia.org/wiki/Lehrgeschwader_1"
  },
  "unit-li-army-corps": {
@@ -3048,7 +3048,7 @@
   "name": "Mass-Observation",
   "kind": "British social research project recording everyday life",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q6784005",
   "source": "https://en.wikipedia.org/wiki/Mass-Observation"
  },
  "unit-mediterranean-fleet": {
@@ -3226,7 +3226,7 @@
   "name": "Nazi Party Chancellery",
   "kind": "Nazi Party office headed by Martin Bormann from May 1941",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q320593",
   "source": "https://en.wikipedia.org/wiki/Nazi_Party_Chancellery",
   "aka": [
    "Parteikanzlei"
@@ -3246,7 +3246,7 @@
   "name": "NII-88",
   "kind": "Soviet rocket research institute",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q17037113",
   "source": "https://en.wikipedia.org/wiki/NII-88"
  },
  "unit-ninth-air-force": {
@@ -3291,7 +3291,7 @@
   "name": "No. 1 Wing RAAF",
   "kind": "RAAF Spitfire fighter wing",
   "nation": "Australia",
-  "wikidata": null,
+  "wikidata": "Q7043119",
   "source": "https://en.wikipedia.org/wiki/No._1_Wing_RAAF"
  },
  "unit-no-10-squadron-raaf": {
@@ -3312,7 +3312,7 @@
   "name": "No. 103 Squadron RAF",
   "kind": "RAF bomber squadron",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q7042835",
   "source": "https://en.wikipedia.org/wiki/No._103_Squadron_RAF"
  },
  "unit-no-105-squadron-raf": {
@@ -3375,7 +3375,7 @@
   "name": "No. 165 Squadron RAF",
   "kind": "RAF fighter squadron",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q12064221",
   "source": "https://en.wikipedia.org/wiki/No._165_Squadron_RAF",
   "aka": [
    "165 (Ceylon) Squadron"
@@ -3413,7 +3413,7 @@
   "name": "No. 233 Squadron RAF",
   "kind": "RAF maritime patrol squadron",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q16057463",
   "source": "https://en.wikipedia.org/wiki/No._233_Squadron_RAF"
  },
  "unit-no-3-commando": {
@@ -3434,7 +3434,7 @@
   "name": "No. 303 Polish Fighter Squadron",
   "kind": "Polish fighter squadron in the RAF",
   "nation": "Poland",
-  "wikidata": null,
+  "wikidata": "Q1269413",
   "source": "https://en.wikipedia.org/wiki/No._303_Squadron_RAF"
  },
  "unit-no-304-polish-bomber-squadron": {
@@ -3469,7 +3469,7 @@
   "name": "No. 4 Flying Training School RAF",
   "kind": "RAF flying school at Habbaniya",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q22115818",
   "source": "https://en.wikipedia.org/wiki/No._4_Flying_Training_School_RAF"
  },
  "unit-no-422-squadron-rcaf": {
@@ -3500,7 +3500,7 @@
   "name": "No. 455 Squadron RAAF",
   "kind": "Royal Australian Air Force squadron",
   "nation": "Australia",
-  "wikidata": null,
+  "wikidata": "Q7043519",
   "source": "https://en.wikipedia.org/wiki/No._455_Squadron_RAAF"
  },
  "unit-no-460-squadron-raaf": {
@@ -3573,7 +3573,7 @@
   "name": "No. 86 Squadron RAF",
   "kind": "RAF Coastal Command squadron flying Liberators",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q7043847",
   "source": "https://en.wikipedia.org/wiki/No._86_Squadron_RAF"
  },
  "unit-no-9-squadron-raf": {
@@ -3822,7 +3822,7 @@
   "name": "RAF Advanced Air Striking Force",
   "kind": "RAF bomber force in France, 1939 to 1940",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q4993875",
   "source": "https://en.wikipedia.org/wiki/RAF_Advanced_Air_Striking_Force",
   "aka": [
    "AASF"
@@ -3842,7 +3842,7 @@
   "name": "RAND Corporation",
   "kind": "research organization, begun as Project RAND at Douglas Aircraft",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q861141",
   "source": "https://en.wikipedia.org/wiki/RAND_Corporation",
   "aka": [
    "Project RAND"
@@ -4127,7 +4127,7 @@
   "name": "Sony",
   "kind": "Japanese electronics company, founded as Tokyo Tsushin Kogyo",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q41187",
   "source": "https://en.wikipedia.org/wiki/Sony",
   "aka": [
    "Tokyo Tsushin Kogyo",
@@ -4414,7 +4414,7 @@
   "name": "United Mine Workers of America",
   "kind": "labor union",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q3550709",
   "source": "https://en.wikipedia.org/wiki/United_Mine_Workers_of_America",
   "aka": [
    "United Mine Workers",
@@ -4799,7 +4799,7 @@
   "name": "Women's Army Corps",
   "kind": "U.S. Army women's branch, begun as the Women's Army Auxiliary Corps",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q2918601",
   "source": "https://en.wikipedia.org/wiki/Women%27s_Army_Corps",
   "aka": [
    "WAAC",
