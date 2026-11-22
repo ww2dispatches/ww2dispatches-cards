@@ -1195,6 +1195,15 @@
   "lat": 32.7692,
   "lon": -97.4417
  },
+ "place-cartagena-spain": {
+  "name": "Cartagena, Spain",
+  "kind": "Spanish naval port",
+  "nation": "Spain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Cartagena,_Spain",
+  "lat": null,
+  "lon": null
+ },
  "place-casablanca": {
   "name": "Casablanca",
   "kind": "city",
@@ -7814,6 +7823,15 @@
   ],
   "lat": 60.7106,
   "lon": 28.7497
+ },
+ "place-waakirchen": {
+  "name": "Waakirchen",
+  "kind": "Bavarian village",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Waakirchen",
+  "lat": null,
+  "lon": null
  },
  "place-wake-island": {
   "name": "Wake Island",

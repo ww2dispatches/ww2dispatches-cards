@@ -370,6 +370,13 @@
    "Z36"
   ]
  },
+ "ship-german-destroyer-z7-hermann-schoemann": {
+  "name": "German destroyer Z7 Hermann Schoemann",
+  "kind": "Type 1934A destroyer",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_destroyer_Z7_Hermann_Schoemann"
+ },
  "ship-german-ship-doggerbank": {
   "name": "German ship Doggerbank",
   "kind": "captured freighter, minelayer and blockade runner",
@@ -956,6 +963,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-456"
  },
+ "ship-german-submarine-u-465": {
+  "name": "German submarine U-465",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-465"
+ },
  "ship-german-submarine-u-469": {
   "name": "German submarine U-469",
   "kind": "Type VIIC U-boat",
@@ -1133,6 +1147,16 @@
   "nation": "Germany",
   "wikidata": "Q2472364",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-572"
+ },
+ "ship-german-submarine-u-573": {
+  "name": "German submarine U-573",
+  "kind": "Type VIIC U-boat, later Spanish G 7",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-573",
+  "aka": [
+   "G 7"
+  ]
  },
  "ship-german-submarine-u-574": {
   "name": "U-574",
@@ -3515,6 +3539,13 @@
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Yukikaze_(1939)",
   "wikidata": "Q715894"
  },
+ "ship-japanese-seaplane-carrier-mizuho": {
+  "name": "Japanese seaplane carrier Mizuho",
+  "kind": "seaplane carrier",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_seaplane_carrier_Mizuho"
+ },
  "ship-japanese-submarine-ha-19": {
   "name": "HA-19",
   "kind": "midget submarine",
@@ -4837,6 +4868,13 @@
   "nation": "US",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/USS_Donnell"
+ },
+ "ship-uss-drum-ss-228": {
+  "name": "USS Drum (SS-228)",
+  "kind": "Gato class submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Drum_(SS-228)"
  },
  "ship-uss-edsall-dd-219": {
   "name": "USS Edsall (DD-219)",

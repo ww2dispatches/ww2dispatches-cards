@@ -533,6 +533,16 @@
   "wikidata": "Q4202301",
   "source": "https://en.wikipedia.org/wiki/Amethyst_incident"
  },
+ "op-andalsnes-landings": {
+  "name": "Andalsnes landings",
+  "kind": "British landings in Norway, April 1940",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/%C3%85ndalsnes_landings",
+  "aka": [
+   "Åndalsnes landings"
+  ]
+ },
  "op-angler-pow-escape": {
   "name": "Angler POW escape",
   "kind": "prisoner of war escape",
@@ -556,6 +566,13 @@
   "nation": "Britain",
   "wikidata": "Q707678",
   "source": "https://en.wikipedia.org/wiki/Anglo-German_Naval_Agreement"
+ },
+ "op-anglo-iraqi-war": {
+  "name": "Anglo-Iraqi War",
+  "kind": "1941 British campaign in Iraq",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Anglo-Iraqi_War"
  },
  "op-anglo-polish-alliance": {
   "name": "Anglo-Polish alliance",
@@ -3395,6 +3412,13 @@
    "Rome Accords"
   ]
  },
+ "op-franco-soviet-treaty-of-mutual-assistance": {
+  "name": "Franco-Soviet Treaty of Mutual Assistance",
+  "kind": "1935 treaty",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Franco-Soviet_Treaty_of_Mutual_Assistance"
+ },
  "op-franco-thai-war": {
   "name": "Franco-Thai War",
   "kind": "war",
@@ -4912,6 +4936,13 @@
   "wikidata": "Q2026043",
   "source": "https://en.wikipedia.org/wiki/Operation_Desecrate_One"
  },
+ "op-operation-dracula": {
+  "name": "Operation Dracula",
+  "kind": "amphibious and airborne assault on Rangoon, 1945",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Dracula"
+ },
  "op-operation-encore": {
   "name": "Operation Encore",
   "kind": "U.S. Fifth Army offensive in the Apennines",
@@ -5555,6 +5586,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Prague_uprising"
  },
+ "op-preliminary-design-of-an-experimental-world-circling-spaceship": {
+  "name": "Preliminary Design of an Experimental World-Circling Spaceship",
+  "kind": "1946 Project RAND satellite study",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Preliminary_Design_of_an_Experimental_World-Circling_Spaceship"
+ },
  "op-presidents-committee-on-civil-rights": {
   "name": "President's Committee on Civil Rights",
   "kind": "presidential committee",
@@ -5653,6 +5691,13 @@
   "nation": "Italy",
   "wikidata": "Q7283730",
   "source": "https://en.wikipedia.org/wiki/Raid_on_Algiers"
+ },
+ "op-raid-on-darwin-2-may-1943": {
+  "name": "Raid on Darwin (2 May 1943)",
+  "kind": "Japanese air raid",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Raid_on_Darwin_(2_May_1943)"
  },
  "op-raid-on-los-banos": {
   "name": "Raid on Los Banos",
@@ -6882,6 +6927,13 @@
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/Witchcraft_Act_1735",
   "wikidata": "Q8027891"
+ },
+ "op-wolfram-crisis": {
+  "name": "Wolfram Crisis",
+  "kind": "Allied pressure on Spain over wolfram exports",
+  "nation": "Spain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Wolfram_Crisis"
  },
  "op-women-s-suffrage-in-japan": {
   "name": "Women's suffrage in Japan",

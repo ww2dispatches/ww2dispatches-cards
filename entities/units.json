@@ -558,6 +558,13 @@
   "wikidata": "Q4632422",
   "source": "https://en.wikipedia.org/wiki/26th_Cavalry_Regiment_(Philippine_Scouts)"
  },
+ "unit-26th-indian-infantry-division": {
+  "name": "26th Indian Infantry Division",
+  "kind": "Indian Army infantry division",
+  "nation": "India",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/26th_Indian_Infantry_Division"
+ },
  "unit-26th-infantry-regiment-united-states": {
   "name": "26th Infantry Regiment",
   "kind": "U.S. Army infantry regiment, 1st Infantry Division",
@@ -2369,6 +2376,17 @@
    "French Forces of the Interior"
   ]
  },
+ "unit-general-german-trade-union-federation": {
+  "name": "General German Trade Union Federation",
+  "kind": "German trade union federation (ADGB)",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/General_German_Trade_Union_Federation",
+  "aka": [
+   "ADGB",
+   "Allgemeiner Deutscher Gewerkschaftsbund"
+  ]
+ },
  "unit-german-american-bund": {
   "name": "German American Bund",
   "kind": "pro Nazi American organization",
@@ -2377,6 +2395,17 @@
   "source": "https://en.wikipedia.org/wiki/German_American_Bund",
   "aka": [
    "Bund"
+  ]
+ },
+ "unit-german-labour-front": {
+  "name": "German Labour Front",
+  "kind": "Nazi labor organization (DAF)",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_Labour_Front",
+  "aka": [
+   "Deutsche Arbeitsfront",
+   "DAF"
   ]
  },
  "unit-gestapo": {
@@ -3058,6 +3087,13 @@
   "wikidata": "Q3434182",
   "source": "https://en.wikipedia.org/wiki/No._1_Squadron_RAAF"
  },
+ "unit-no-1-wing-raaf": {
+  "name": "No. 1 Wing RAAF",
+  "kind": "RAAF Spitfire fighter wing",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._1_Wing_RAAF"
+ },
  "unit-no-10-squadron-raaf": {
   "name": "No. 10 Squadron RAAF",
   "kind": "maritime patrol squadron",
@@ -3156,6 +3192,13 @@
   "wikidata": "Q7043166",
   "source": "https://en.wikipedia.org/wiki/No._220_Squadron_RAF"
  },
+ "unit-no-233-squadron-raf": {
+  "name": "No. 233 Squadron RAF",
+  "kind": "RAF maritime patrol squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._233_Squadron_RAF"
+ },
  "unit-no-3-commando": {
   "name": "No. 3 Commando",
   "kind": "British Army commando unit",
@@ -3197,6 +3240,13 @@
   "nation": "Britain",
   "wikidata": "Q12797547",
   "source": "https://en.wikipedia.org/wiki/No._4_Commando"
+ },
+ "unit-no-4-flying-training-school-raf": {
+  "name": "No. 4 Flying Training School RAF",
+  "kind": "RAF flying school at Habbaniya",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._4_Flying_Training_School_RAF"
  },
  "unit-no-422-squadron-rcaf": {
   "name": "No. 422 Squadron RCAF",
@@ -3538,6 +3588,16 @@
   "wikidata": "Q1235891",
   "aka": [
    "Bomber Command"
+  ]
+ },
+ "unit-rand-corporation": {
+  "name": "RAND Corporation",
+  "kind": "research organization, begun as Project RAND at Douglas Aircraft",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/RAND_Corporation",
+  "aka": [
+   "Project RAND"
   ]
  },
  "unit-red-orchestra-espionage": {
