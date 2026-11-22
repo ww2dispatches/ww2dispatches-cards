@@ -114,12 +114,12 @@ It stayed lost for more than seventy years. In 2015 the group History Flight fou
 
 Each morning brought a new dispatch. Catch up on any you missed:
 
-* No. 059, Moscow braces for the blow: [Read on X](https://x.com/2110501302996492288/status/2121982015905976445)
-* No. 062, Operation Queen: [Read on X](https://x.com/2110501302996492288/status/2122344880923980250)
-* No. 065, The 442nd leaves the Vosges: [Read on X](https://x.com/2110501302996492288/status/2122707691512434827)
-* No. 068, Patton's men break into Metz: [Read on X](https://x.com/2110501302996492288/status/2123070069085204746)
-* No. 071, Operation Uranus begins: [Read on X](https://x.com/2110501302996492288/status/2123432820102078970)
-* No. 074, The Marines land on Tarawa: [Read on X](https://x.com/2110501302996492288/status/2123795041671930259)
+* No. 059, Moscow braces for the blow: [Read on X](https://x.com/ww2dispatches/status/2121982015905976445)
+* No. 062, Operation Queen: [Read on X](https://x.com/ww2dispatches/status/2122344880923980250)
+* No. 065, The 442nd leaves the Vosges: [Read on X](https://x.com/ww2dispatches/status/2122707691512434827)
+* No. 068, Patton's men break into Metz: [Read on X](https://x.com/ww2dispatches/status/2123070069085204746)
+* No. 071, Operation Uranus begins: [Read on X](https://x.com/ww2dispatches/status/2123432820102078970)
+* No. 074, The Marines land on Tarawa: [Read on X](https://x.com/ww2dispatches/status/2123795041671930259)
 * No. 077, Jackson opens the case: [Read on X](https://x.com/ww2dispatches/status/2124157014427230357)
 
 ---

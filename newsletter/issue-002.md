@@ -108,7 +108,7 @@ Each morning brought a new dispatch. Catch up on any you missed:
 * No. 037, Rommel retreats from Alamein: [Read on X](https://x.com/ww2dispatches/status/2117996447995965825)
 * No. 039, Carriers strike Manila Bay: [Read on X](https://x.com/ww2dispatches/status/2118359096298459314)
 * No. 041, The ship that lied: [Read on X](https://x.com/ww2dispatches/status/2118721328123445549)
-* No. 043, Roosevelt wins a fourth term: [Read on X](https://x.com/2110501302996492288/status/2119083332986196034)
+* No. 043, Roosevelt wins a fourth term: [Read on X](https://x.com/ww2dispatches/status/2119083332986196034)
 
 ---
 
