@@ -671,6 +671,13 @@
   "wikidata": "Q563438",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-255"
  },
+ "ship-german-submarine-u-258": {
+  "name": "German submarine U-258",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-258"
+ },
  "ship-german-submarine-u-260": {
   "name": "U-260",
   "kind": "Type VIIC U-boat",
@@ -706,6 +713,13 @@
   "wikidata": "Q4051987",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-284"
  },
+ "ship-german-submarine-u-286": {
+  "name": "German submarine U-286",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-286"
+ },
  "ship-german-submarine-u-30-1936": {
   "name": "German submarine U-30 (1936)",
   "kind": "Type VIIA U-boat",
@@ -722,6 +736,13 @@
   "nation": "Germany",
   "wikidata": "Q4051994",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-301"
+ },
+ "ship-german-submarine-u-307": {
+  "name": "German submarine U-307",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-307"
  },
  "ship-german-submarine-u-31-1936": {
   "name": "U-31",
@@ -1392,6 +1413,13 @@
   "wikidata": "Q60521549",
   "source": "https://en.wikipedia.org/wiki/German_torpedo_boat_T17"
  },
+ "ship-german-torpedo-boat-t24": {
+  "name": "German torpedo boat T24",
+  "kind": "Elbing class torpedo boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_torpedo_boat_T24"
+ },
  "ship-german-torpedo-boat-t29": {
   "name": "German torpedo boat T29",
   "kind": "Elbing class torpedo boat",
@@ -1488,6 +1516,13 @@
   "nation": "Australia",
   "wikidata": "Q645571",
   "source": "https://en.wikipedia.org/wiki/HMAS_Yarra_(U77)"
+ },
+ "ship-hmcs-athabaskan-g07": {
+  "name": "HMCS Athabaskan (G07)",
+  "kind": "Tribal class destroyer",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMCS_Athabaskan_(G07)"
  },
  "ship-hmcs-haida": {
   "name": "HMCS Haida (G63)",
@@ -3934,6 +3969,13 @@
   "nation": "US",
   "wikidata": "Q7393374",
   "source": "https://en.wikipedia.org/wiki/SS_City_of_Flint_(1919)"
+ },
+ "ship-ss-city-of-nagpur": {
+  "name": "SS City of Nagpur",
+  "kind": "Ellerman Lines passenger ship",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_City_of_Nagpur"
  },
  "ship-ss-clan-campbell": {
   "name": "Clan Campbell",

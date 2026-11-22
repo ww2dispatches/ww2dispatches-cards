@@ -8081,6 +8081,15 @@
   "lat": 26.3961,
   "lon": 127.7444
  },
+ "place-york": {
+  "name": "York",
+  "kind": "city",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/York",
+  "lat": null,
+  "lon": null
+ },
  "place-zagreb": {
   "name": "Zagreb",
   "kind": "city",

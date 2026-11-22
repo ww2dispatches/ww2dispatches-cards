@@ -2714,6 +2714,13 @@
   "wikidata": "Q5166645",
   "source": "https://en.wikipedia.org/wiki/Convoy_ON_166"
  },
+ "op-convoy-ons-5": {
+  "name": "Convoy ONS 5",
+  "kind": "convoy battle",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Convoy_ONS_5"
+ },
  "op-convoy-pq-13": {
   "name": "Convoy PQ 13",
   "kind": "Arctic convoy to the Soviet Union, March 1942",
@@ -3459,6 +3466,16 @@
   "wikidata": "Q165058",
   "source": "https://en.wikipedia.org/wiki/Holodomor"
  },
+ "op-hongkou-park-incident": {
+  "name": "Hongkou Park Incident",
+  "kind": "bombing at a Japanese military review",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hongkou_Park_Incident",
+  "aka": [
+   "Hongkew Park bombing"
+  ]
+ },
  "op-hostages-trial": {
   "name": "Hostages Trial",
   "kind": "Nuremberg Military Tribunal Case 7",
@@ -3965,6 +3982,13 @@
   "nation": "Finland",
   "wikidata": "Q154940",
   "source": "https://en.wikipedia.org/wiki/Lapland_War"
+ },
+ "op-last-will-and-testament-of-adolf-hitler": {
+  "name": "Last will and testament of Adolf Hitler",
+  "kind": "document",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Last_will_and_testament_of_Adolf_Hitler"
  },
  "op-law-for-the-prevention-of-hereditarily-diseased-offspring": {
   "name": "Law for the Prevention of Hereditarily Diseased Offspring",
@@ -5230,6 +5254,17 @@
   "wikidata": "Q16839116",
   "source": "https://en.wikipedia.org/wiki/Operations_Ginny_I_and_II"
  },
+ "op-operations-manna-chowhound-and-faust": {
+  "name": "Operations Manna, Chowhound, and Faust",
+  "kind": "food drops to the occupied Netherlands",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operations_Manna,_Chowhound,_and_Faust",
+  "aka": [
+   "Operation Manna",
+   "Operation Chowhound"
+  ]
+ },
  "op-oro-alla-patria": {
   "name": "Oro alla Patria",
   "kind": "Italian gold donation campaign of 18 December 1935",
@@ -6098,6 +6133,13 @@
   "nation": "US",
   "wikidata": "Q2070370",
   "source": "https://en.wikipedia.org/wiki/Subsequent_Nuremberg_trials"
+ },
+ "op-surrender-at-caserta": {
+  "name": "Surrender at Caserta",
+  "kind": "surrender of German forces in Italy",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Surrender_at_Caserta"
  },
  "op-surrender-of-japan": {
   "name": "Surrender of Japan",
