@@ -2101,6 +2101,13 @@
   "source": "https://en.wikipedia.org/wiki/Gestapo",
   "wikidata": "Q43250"
  },
+ "unit-golden-square-iraq": {
+  "name": "Golden Square",
+  "kind": "four Iraqi army officers behind the 1941 coup",
+  "nation": "Iraq",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Golden_Square_(Iraq)"
+ },
  "unit-gordon-highlanders": {
   "name": "Gordon Highlanders",
   "kind": "British Army infantry regiment",
@@ -3419,6 +3426,13 @@
   "wikidata": "Q4101902",
   "source": "https://en.wikipedia.org/wiki/Teishin_Shudan"
  },
+ "unit-tenth-united-states-army": {
+  "name": "Tenth United States Army",
+  "kind": "US field army that invaded Okinawa",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tenth_United_States_Army"
+ },
  "unit-the-writing-69th": {
   "name": "The Writing 69th",
   "kind": "group of war correspondents trained to fly bomber missions",
@@ -3435,6 +3449,13 @@
   "nation": "Romania",
   "source": "https://en.wikipedia.org/wiki/Third_Army_(Romania)",
   "wikidata": "Q223129"
+ },
+ "unit-thirty-second-army-japan": {
+  "name": "Thirty-Second Army",
+  "kind": "Imperial Japanese Army field army defending Okinawa",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Thirty-Second_Army_(Japan)"
  },
  "unit-tokyo-metropolitan-police-department": {
   "name": "Tokyo Metropolitan Police Department",
@@ -3508,6 +3529,13 @@
   "wikidata": "Q378835",
   "source": "https://en.wikipedia.org/wiki/Unit_731",
   "note": "Atrocity subject: victims' side only."
+ },
+ "unit-united-auto-workers": {
+  "name": "United Auto Workers",
+  "kind": "American labor union",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/United_Auto_Workers"
  },
  "unit-united-nations": {
   "name": "United Nations",

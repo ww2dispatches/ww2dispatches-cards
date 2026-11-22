@@ -91,6 +91,13 @@
   "source": "https://en.wikipedia.org/wiki/1940_United_States_presidential_election",
   "wikidata": "Q699416"
  },
+ "op-1941-iraqi-coup-d-etat": {
+  "name": "1941 Iraqi coup d'etat",
+  "kind": "Golden Square coup in Baghdad",
+  "nation": "Iraq",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1941_Iraqi_coup_d%27%C3%A9tat"
+ },
  "op-1941-october-revolution-parade": {
   "name": "1941 Revolution Day parade",
   "kind": "military parade",
@@ -211,6 +218,13 @@
   "nation": "US",
   "wikidata": "Q122292274",
   "source": "https://en.wikipedia.org/wiki/1946_United_States_steel_strike"
+ },
+ "op-1947-royal-new-zealand-navy-mutinies": {
+  "name": "1947 Royal New Zealand Navy mutinies",
+  "kind": "pay mutinies in the RNZN",
+  "nation": "New Zealand",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1947_Royal_New_Zealand_Navy_mutinies"
  },
  "op-1948-accra-riots": {
   "name": "1948 Accra riots",
@@ -2675,6 +2689,13 @@
   "wikidata": "Q586082",
   "source": "https://en.wikipedia.org/wiki/February_strike"
  },
+ "op-final-offensive-of-the-spanish-civil-war": {
+  "name": "Final offensive of the Spanish Civil War",
+  "kind": "last Nationalist campaign, March to April 1939",
+  "nation": "Spain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Final_offensive_of_the_Spanish_Civil_War"
+ },
  "op-fireside-chats": {
   "name": "Fireside chats",
   "kind": "Roosevelt's radio addresses",
@@ -3696,6 +3717,13 @@
   "wikidata": "Q3107490",
   "note": "Wikipedia article covers Navy Day in several nations; our cards mean the U.S. observance of 27 October."
  },
+ "op-nazi-boycott-of-jewish-businesses": {
+  "name": "Nazi boycott of Jewish businesses",
+  "kind": "nationwide antisemitic boycott, 1 April 1933",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Nazi_boycott_of_Jewish_businesses"
+ },
  "op-nero-decree": {
   "name": "Nero Decree",
   "kind": "Hitler's order for destruction within the Reich",
@@ -4705,6 +4733,13 @@
   "wikidata": "Q18393574",
   "source": "https://en.wikipedia.org/wiki/Rationing_in_the_United_States"
  },
+ "op-regulated-area-no-2": {
+  "name": "Regulated Area (No 2)",
+  "kind": "closed coastal strip of England before D Day",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Regulated_Area_(No_2)"
+ },
  "op-reichstag-fire": {
   "name": "Reichstag fire",
   "kind": "arson attack on the Reichstag, 27 February 1933",
@@ -4811,6 +4846,13 @@
   "nation": "France",
   "wikidata": "Q24074801",
   "source": "https://en.wikipedia.org/wiki/Rue_Sainte-Catherine_Roundup"
+ },
+ "op-ruhr-pocket": {
+  "name": "Ruhr pocket",
+  "kind": "encirclement of Army Group B, April 1945",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ruhr_pocket"
  },
  "op-rumbula-massacre": {
   "name": "Rumbula massacre",

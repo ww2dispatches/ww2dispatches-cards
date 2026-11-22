@@ -2116,6 +2116,13 @@
   "wikidata": "Q5634775",
   "source": "https://en.wikipedia.org/wiki/HMS_Upright"
  },
+ "ship-hms-urge": {
+  "name": "HMS Urge (N17)",
+  "kind": "British U class submarine",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Urge"
+ },
  "ship-hms-valiant-1914": {
   "name": "HMS Valiant",
   "kind": "battleship",
@@ -2321,6 +2328,13 @@
   "nation": "Italy",
   "wikidata": "Q431187",
   "source": "https://en.wikipedia.org/wiki/Italian_cruiser_Armando_Diaz"
+ },
+ "ship-italian-cruiser-giovanni-delle-bande-nere": {
+  "name": "Giovanni delle Bande Nere",
+  "kind": "Italian light cruiser, Giussano class",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_cruiser_Giovanni_delle_Bande_Nere"
  },
  "ship-italian-cruiser-muzio-attendolo": {
   "name": "Muzio Attendolo",
@@ -2987,6 +3001,13 @@
   "wikidata": "Q862575",
   "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-37"
  },
+ "ship-japanese-submarine-i-58-1943": {
+  "name": "I-58",
+  "kind": "Japanese submarine that sank USS Indianapolis",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-58_(1943)"
+ },
  "ship-japanese-submarine-i-6": {
   "name": "I-6",
   "kind": "Imperial Japanese Navy submarine",
@@ -3063,6 +3084,13 @@
   "nation": "Japan",
   "wikidata": "Q720726",
   "source": "https://en.wikipedia.org/wiki/MV_Asama_Maru"
+ },
+ "ship-mv-awa-maru": {
+  "name": "Awa Maru",
+  "kind": "Japanese liner used as a relief ship",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/MV_Awa_Maru"
  },
  "ship-mv-carnarvon-castle": {
   "name": "Carnarvon Castle",
@@ -4240,6 +4268,13 @@
   "wikidata": "Q528650",
   "source": "https://en.wikipedia.org/wiki/USS_Nashville_(CL-43)"
  },
+ "ship-uss-nereus-as-17": {
+  "name": "USS Nereus (AS-17)",
+  "kind": "US submarine tender",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Nereus_(AS-17)"
+ },
  "ship-uss-new-jersey-bb-62": {
   "name": "USS New Jersey (BB-62)",
   "kind": "battleship",
@@ -4380,6 +4415,13 @@
   "nation": "United States",
   "source": "https://en.wikipedia.org/wiki/USS_Preston_(DD-379)",
   "wikidata": "Q1133848"
+ },
+ "ship-uss-queenfish-ss-393": {
+  "name": "USS Queenfish (SS-393)",
+  "kind": "US Balao class submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Queenfish_(SS-393)"
  },
  "ship-uss-quincy-ca-71": {
   "name": "USS Quincy (CA-71)",

@@ -3414,6 +3414,15 @@
   "lat": 16.275,
   "lon": 120.1958
  },
+ "place-lippstadt": {
+  "name": "Lippstadt",
+  "kind": "German town where the Ruhr encirclement closed",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Lippstadt",
+  "lat": null,
+  "lon": null
+ },
  "place-livadia-palace": {
   "name": "Livadia Palace",
   "kind": "palace near Yalta, U.S. headquarters at the conference",
@@ -5666,6 +5675,15 @@
   "lat": 14.61,
   "lon": 120.9894
  },
+ "place-sasebo": {
+  "name": "Sasebo",
+  "kind": "Japanese naval port",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sasebo",
+  "lat": null,
+  "lon": null
+ },
  "place-savo-island": {
   "name": "Savo Island",
   "kind": "island",
@@ -5683,6 +5701,15 @@
   "source": "https://en.wikipedia.org/wiki/Scapa_Flow",
   "lat": 58.9,
   "lon": -3.05
+ },
+ "place-schaffhausen": {
+  "name": "Schaffhausen",
+  "kind": "Swiss town on the German border",
+  "nation": "Switzerland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Schaffhausen",
+  "lat": null,
+  "lon": null
  },
  "place-schiltigheim": {
   "name": "Schiltigheim",
@@ -7033,6 +7060,15 @@
   "aka": [
    "White Sands Proving Ground"
   ]
+ },
+ "place-wilhelmshaven": {
+  "name": "Wilhelmshaven",
+  "kind": "German naval port and shipyard",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Wilhelmshaven",
+  "lat": null,
+  "lon": null
  },
  "place-winnipeg": {
   "name": "Winnipeg",
