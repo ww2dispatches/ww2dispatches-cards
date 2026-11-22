@@ -565,6 +565,17 @@
    "Morning Star"
   ]
  },
+ "machine-mt-explosive-motorboat": {
+  "name": "MT explosive motorboat",
+  "kind": "explosive motorboat",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/MT_explosive_motorboat",
+  "aka": [
+   "MTM",
+   "barchino"
+  ]
+ },
  "machine-nazi-concentration-camps-film": {
   "name": "Nazi Concentration Camps",
   "kind": "documentary film",

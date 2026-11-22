@@ -1110,6 +1110,13 @@
   "source": "https://en.wikipedia.org/wiki/5th_Infantry_Division_(United_States)",
   "wikidata": "Q2614247"
  },
+ "unit-5th-marine-division": {
+  "name": "5th Marine Division",
+  "kind": "U.S. Marine Corps division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/5th_Marine_Division"
+ },
  "unit-5th-shock-army": {
   "name": "5th Shock Army",
   "kind": "Soviet field army",
@@ -1200,6 +1207,18 @@
   "nation": "US",
   "wikidata": "Q4643278",
   "source": "https://en.wikipedia.org/wiki/73rd_Air_Division"
+ },
+ "unit-77th-sustainment-brigade": {
+  "name": "77th Infantry Division (United States)",
+  "kind": "U.S. Army infantry division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/77th_Sustainment_Brigade",
+  "aka": [
+   "77th Infantry Division",
+   "77th Division"
+  ],
+  "note": "The English Wikipedia article for the 77th Infantry Division is titled 77th Sustainment Brigade, its present lineage; the id follows the article title."
  },
  "unit-79th-armoured-division": {
   "name": "79th Armoured Division",
@@ -1398,6 +1417,16 @@
   "nation": "US",
   "wikidata": "Q463128",
   "source": "https://en.wikipedia.org/wiki/America_First_Committee"
+ },
+ "unit-americal-division": {
+  "name": "Americal Division",
+  "kind": "U.S. Army infantry division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Americal_Division",
+  "aka": [
+   "23rd Infantry Division"
+  ]
  },
  "unit-american-british-dutch-australian-command": {
   "name": "American-British-Dutch-Australian Command",

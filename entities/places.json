@@ -2846,6 +2846,18 @@
    "Mehdia"
   ]
  },
+ "place-kerama-islands": {
+  "name": "Kerama Islands",
+  "kind": "island group",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kerama_Islands",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Kerama Retto"
+  ]
+ },
  "place-kerkennah-islands": {
   "name": "Kerkennah Islands",
   "kind": "island group off Tunisia",
@@ -4914,6 +4926,15 @@
   "lat": 40.7913,
   "lon": 14.484
  },
+ "place-poprad": {
+  "name": "Poprad",
+  "kind": "town and transit camp site",
+  "nation": "Slovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Poprad",
+  "lat": null,
+  "lon": null
+ },
  "place-port-blair": {
   "name": "Port Blair",
   "kind": "capital of the Andaman Islands",
@@ -6186,6 +6207,15 @@
   "lat": 48.1672,
   "lon": 41.2778
  },
+ "place-tebaga-gap": {
+  "name": "Tebaga Gap",
+  "kind": "mountain pass",
+  "nation": "Tunisia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tebaga_Gap",
+  "lat": null,
+  "lon": null
+ },
  "place-tehran": {
   "name": "Tehran",
   "kind": "city",
@@ -7029,6 +7059,18 @@
   "wikidata": "Q200578",
   "lat": 35.2813,
   "lon": 139.6721
+ },
+ "place-zamami-okinawa": {
+  "name": "Zamami, Okinawa",
+  "kind": "island village",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Zamami,_Okinawa",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Zamami"
+  ]
  },
  "place-zamboanga-city": {
   "name": "Zamboanga City",

@@ -672,6 +672,16 @@
    "U-374"
   ]
  },
+ "ship-german-submarine-u-399": {
+  "name": "German submarine U-399",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-399",
+  "aka": [
+   "U-399"
+  ]
+ },
  "ship-german-submarine-u-402": {
   "name": "German submarine U-402",
   "kind": "Type VIIC U-boat",
@@ -978,6 +988,16 @@
   "nation": "Germany",
   "wikidata": "Q12804806",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-679"
+ },
+ "ship-german-submarine-u-71-1940": {
+  "name": "German submarine U-71 (1940)",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-71_(1940)",
+  "aka": [
+   "U-71"
+  ]
  },
  "ship-german-submarine-u-714": {
   "name": "German submarine U-714",
@@ -1433,6 +1453,13 @@
   "nation": "Britain",
   "wikidata": "Q1466686",
   "source": "https://en.wikipedia.org/wiki/HMS_Duchess_(H64)"
+ },
+ "ship-hms-duckworth-k351": {
+  "name": "HMS Duckworth (K351)",
+  "kind": "Captain class frigate",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Duckworth_(K351)"
  },
  "ship-hms-duke-of-york-17": {
   "name": "HMS Duke of York (17)",
@@ -2133,6 +2160,13 @@
   "nation": "Britain",
   "wikidata": "Q5411173",
   "source": "https://en.wikipedia.org/wiki/HMS_Wivern_(D66)"
+ },
+ "ship-hms-york-90": {
+  "name": "HMS York (90)",
+  "kind": "heavy cruiser",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_York_(90)"
  },
  "ship-hmsas-natal": {
   "name": "HMSAS Natal (K10)",
@@ -3304,6 +3338,13 @@
   "wikidata": "Q96404037",
   "source": "https://en.wikipedia.org/wiki/SS_Cynthia_Olson"
  },
+ "ship-ss-dixie-arrow": {
+  "name": "SS Dixie Arrow",
+  "kind": "oil tanker",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Dixie_Arrow"
+ },
  "ship-ss-donau-1929": {
   "name": "SS Donau",
   "kind": "cargo ship and troop transport",
@@ -3666,6 +3707,13 @@
   "nation": "United States",
   "source": "https://en.wikipedia.org/wiki/USS_Augusta_(CA-31)",
   "wikidata": "Q574823"
+ },
+ "ship-uss-bailey-dd-492": {
+  "name": "USS Bailey (DD-492)",
+  "kind": "destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Bailey_(DD-492)"
  },
  "ship-uss-barbel-ss-316": {
   "name": "USS Barbel (SS-316)",
@@ -4371,6 +4419,13 @@
    "USS Squalus"
   ]
  },
+ "ship-uss-salt-lake-city-ca-25": {
+  "name": "USS Salt Lake City (CA-25)",
+  "kind": "heavy cruiser",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Salt_Lake_City_(CA-25)"
+ },
  "ship-uss-sand-lance-ss-381": {
   "name": "USS Sand Lance (SS-381)",
   "kind": "Balao class submarine",
@@ -4545,6 +4600,13 @@
   "nation": "US",
   "wikidata": "Q7874888",
   "source": "https://en.wikipedia.org/wiki/USS_Truxtun_(DD-229)"
+ },
+ "ship-uss-tullibee-ss-284": {
+  "name": "USS Tullibee (SS-284)",
+  "kind": "Gato class submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Tullibee_(SS-284)"
  },
  "ship-uss-turner-dd-648": {
   "name": "USS Turner (DD-648)",

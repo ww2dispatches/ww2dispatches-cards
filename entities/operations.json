@@ -1491,6 +1491,13 @@
    "Kerch-Feodosiya operation"
   ]
  },
+ "op-battle-of-the-komandorski-islands": {
+  "name": "Battle of the Komandorski Islands",
+  "kind": "naval battle",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_the_Komandorski_Islands"
+ },
  "op-battle-of-the-ligurian-sea": {
   "name": "Battle of the Ligurian Sea",
   "kind": "naval surface action, 18 March 1945",
@@ -4573,6 +4580,13 @@
    "Raid on Los Baños"
   ]
  },
+ "op-raid-on-souda-bay": {
+  "name": "Raid on Souda Bay",
+  "kind": "naval raid",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Raid_on_Souda_Bay"
+ },
  "op-raid-on-tatsinskaya": {
   "name": "Raid on Tatsinskaya",
   "kind": "Soviet tank raid, December 1942",
@@ -5154,6 +5168,13 @@
    "Baltutlämningen"
   ]
  },
+ "op-talisay-landing": {
+  "name": "Talisay Landing",
+  "kind": "amphibious landing",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Talisay_Landing"
+ },
  "op-task-force-baum": {
   "name": "Task Force Baum",
   "kind": "US Army raid on Hammelburg POW camp, March 1945",
@@ -5341,6 +5362,16 @@
   "nation": "Britain",
   "wikidata": "Q7839974",
   "source": "https://en.wikipedia.org/wiki/Trial_of_Erich_von_Manstein"
+ },
+ "op-trial-of-neumann-and-sass": {
+  "name": "Trial of Neumann and Sass",
+  "kind": "trial",
+  "nation": "Lithuania",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Trial_of_Neumann_and_Sass",
+  "aka": [
+   "Kaunas Trials"
+  ]
  },
  "op-trial-of-the-sixteen": {
   "name": "Trial of the Sixteen",
