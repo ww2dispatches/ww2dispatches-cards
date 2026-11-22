@@ -113,6 +113,15 @@
    "Alcan Highway"
   ]
  },
+ "place-alexandra-palace": {
+  "name": "Alexandra Palace",
+  "kind": "London building, home of the BBC Television transmitter",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Alexandra_Palace",
+  "lat": null,
+  "lon": null
+ },
  "place-alexandria": {
   "name": "Alexandria",
   "kind": "city",
@@ -2311,6 +2320,15 @@
   "lat": 45.6833,
   "lon": 10.6667
  },
+ "place-gari-river": {
+  "name": "Gari (river)",
+  "kind": "river in Italy below Cassino, part of the Gustav Line",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Gari_(river)",
+  "lat": null,
+  "lon": null
+ },
  "place-garigliano": {
   "name": "Garigliano",
   "kind": "river in central Italy",
@@ -2623,6 +2641,15 @@
   "lat": null,
   "lon": null
  },
+ "place-gulf-of-st-lawrence": {
+  "name": "Gulf of St. Lawrence",
+  "kind": "gulf at the mouth of the St. Lawrence River",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Gulf_of_St._Lawrence",
+  "lat": null,
+  "lon": null
+ },
  "place-gypsy-family-camp-auschwitz": {
   "name": "Gypsy family camp (Auschwitz)",
   "kind": "section BIIe of Auschwitz-Birkenau",
@@ -2739,6 +2766,15 @@
   ],
   "lat": 30.5812,
   "lon": 114.2726
+ },
+ "place-hannut": {
+  "name": "Hannut",
+  "kind": "town in central Belgium",
+  "nation": "Belgium",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hannut",
+  "lat": null,
+  "lon": null
  },
  "place-hardangervidda": {
   "name": "Hardangervidda",
@@ -4049,6 +4085,15 @@
   "source": "https://en.wikipedia.org/wiki/Les_Invalides",
   "lat": 48.855,
   "lon": 2.3125
+ },
+ "place-leuna-works": {
+  "name": "Leuna works",
+  "kind": "German synthetic oil plant near Merseburg",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Leuna_works",
+  "lat": null,
+  "lon": null
  },
  "place-leyte": {
   "name": "Leyte",
@@ -6861,6 +6906,15 @@
   "source": "https://en.wikipedia.org/wiki/Seattle",
   "lat": 47.605,
   "lon": -122.33
+ },
+ "place-sedan-ardennes": {
+  "name": "Sedan",
+  "kind": "town on the Meuse in the French Ardennes",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sedan,_Ardennes",
+  "lat": null,
+  "lon": null
  },
  "place-senglea": {
   "name": "Senglea",

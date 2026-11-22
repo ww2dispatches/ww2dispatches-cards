@@ -1145,6 +1145,13 @@
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-552",
   "wikidata": "Q656087"
  },
+ "ship-german-submarine-u-553": {
+  "name": "U-553",
+  "kind": "German Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-553"
+ },
  "ship-german-submarine-u-557": {
   "name": "German submarine U-557",
   "kind": "Type VIIC U-boat",
@@ -2490,6 +2497,13 @@
   "nation": "Britain",
   "wikidata": "Q4354790",
   "source": "https://en.wikipedia.org/wiki/HMS_Onslow_(G17)"
+ },
+ "ship-hms-opportune-g80": {
+  "name": "HMS Opportune (G80)",
+  "kind": "Royal Navy destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Opportune_(G80)"
  },
  "ship-hms-pathfinder-g10": {
   "name": "HMS Pathfinder (G10)",

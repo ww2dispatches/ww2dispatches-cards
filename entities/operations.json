@@ -1185,6 +1185,13 @@
   "wikidata": "Q699897",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Guam_(1941)"
  },
+ "op-battle-of-hannut": {
+  "name": "Battle of Hannut",
+  "kind": "tank battle, Battle of Belgium",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Hannut"
+ },
  "op-battle-of-hanoi-1946": {
   "name": "Battle of Hanoi (1946)",
   "kind": "battle",
@@ -1699,6 +1706,13 @@
   "wikidata": "Q4872320",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Sarimbun_Beach"
  },
+ "op-battle-of-sedan-1940": {
+  "name": "Battle of Sedan (1940)",
+  "kind": "battle, Battle of France",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Sedan_(1940)"
+ },
  "op-battle-of-shangshak": {
   "name": "Battle of Shangshak",
   "kind": "battle in Manipur, March 1944",
@@ -2012,6 +2026,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q7879625",
   "source": "https://en.wikipedia.org/wiki/Battle_of_the_Seelow_Heights"
+ },
+ "op-battle-of-the-st-lawrence": {
+  "name": "Battle of the St. Lawrence",
+  "kind": "U-boat campaign in Canadian waters",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_the_St._Lawrence"
  },
  "op-battle-of-the-tarigo-convoy": {
   "name": "Battle of the Tarigo Convoy",
@@ -2972,6 +2993,13 @@
   "nation": "Britain",
   "wikidata": "Q16833822",
   "source": "https://en.wikipedia.org/wiki/Corfu_Channel_case"
+ },
+ "op-coronation-of-george-vi-and-elizabeth": {
+  "name": "Coronation of George VI and Elizabeth",
+  "kind": "coronation, 12 May 1937",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Coronation_of_George_VI_and_Elizabeth"
  },
  "op-coventry-blitz": {
   "name": "Coventry Blitz",
@@ -4884,6 +4912,13 @@
    "Ohi Day"
   ]
  },
+ "op-oil-campaign-of-world-war-ii": {
+  "name": "Oil campaign of World War II",
+  "kind": "Allied bombing campaign against Axis oil",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Oil_campaign_of_World_War_II"
+ },
  "op-operation-abercrombie": {
   "name": "Operation Abercrombie",
   "kind": "commando raid on Hardelot",
@@ -6142,6 +6177,13 @@
    "Alamein"
   ]
  },
+ "op-second-battle-of-kharkov": {
+  "name": "Second Battle of Kharkov",
+  "kind": "Soviet offensive and German counteroffensive",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Second_Battle_of_Kharkov"
+ },
  "op-second-battle-of-sirte": {
   "name": "Second Battle of Sirte",
   "kind": "naval battle",
@@ -7125,6 +7167,16 @@
   "wikidata": "Q160161",
   "source": "https://en.wikipedia.org/wiki/Warsaw_Ghetto_Uprising"
  },
+ "op-washington-conference-1943": {
+  "name": "Washington Conference (1943)",
+  "kind": "Allied conference, code named Trident",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Washington_Conference_(1943)",
+  "aka": [
+   "Trident"
+  ]
+ },
  "op-washington-naval-treaty": {
   "name": "Washington Naval Treaty",
   "kind": "1922 naval arms limitation treaty",
@@ -7161,6 +7213,16 @@
   "source": "https://en.wikipedia.org/wiki/Winston_Churchill%27s_address_to_the_Canadian_Parliament_(1941)",
   "aka": [
    "Some chicken, some neck"
+  ]
+ },
+ "op-winter-line": {
+  "name": "Winter Line",
+  "kind": "German defensive lines in Italy, including the Gustav Line",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Winter_Line",
+  "aka": [
+   "Gustav Line"
   ]
  },
  "op-winter-war": {

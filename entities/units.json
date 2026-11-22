@@ -1513,6 +1513,13 @@
   "wikidata": "Q2818557",
   "source": "https://en.wikipedia.org/wiki/89th_Infantry_Division_(United_States)"
  },
+ "unit-8th-punjab-regiment": {
+  "name": "8th Punjab Regiment",
+  "kind": "British Indian Army infantry regiment",
+  "nation": "India",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/8th_Punjab_Regiment"
+ },
  "unit-90th-infantry-division-united-states": {
   "name": "90th Infantry Division",
   "kind": "U.S. infantry division",
@@ -2442,6 +2449,16 @@
    "Allgemeiner Deutscher Gewerkschaftsbund"
   ]
  },
+ "unit-general-jewish-labour-bund-in-poland": {
+  "name": "General Jewish Labour Bund in Poland",
+  "kind": "Jewish socialist party in Poland",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/General_Jewish_Labour_Bund_in_Poland",
+  "aka": [
+   "Bund"
+  ]
+ },
  "unit-german-american-bund": {
   "name": "German American Bund",
   "kind": "pro Nazi American organization",
@@ -2930,6 +2947,13 @@
    "National Foundation for Infantile Paralysis"
   ]
  },
+ "unit-mass-observation": {
+  "name": "Mass-Observation",
+  "kind": "British social research project recording everyday life",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mass-Observation"
+ },
  "unit-mediterranean-fleet": {
   "name": "Mediterranean Fleet",
   "kind": "Royal Navy fleet",
@@ -3099,6 +3123,16 @@
   "source": "https://en.wikipedia.org/wiki/Nazi_Party",
   "aka": [
    "NSDAP"
+  ]
+ },
+ "unit-nazi-party-chancellery": {
+  "name": "Nazi Party Chancellery",
+  "kind": "Nazi Party office headed by Martin Bormann from May 1941",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Nazi_Party_Chancellery",
+  "aka": [
+   "Parteikanzlei"
   ]
  },
  "unit-new-1st-army": {
@@ -3409,6 +3443,13 @@
   "nation": "Britain",
   "wikidata": "Q7043832",
   "source": "https://en.wikipedia.org/wiki/No._82_Squadron_RAF"
+ },
+ "unit-no-86-squadron-raf": {
+  "name": "No. 86 Squadron RAF",
+  "kind": "RAF Coastal Command squadron flying Liberators",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._86_Squadron_RAF"
  },
  "unit-no-9-squadron-raf": {
   "name": "No. 9 Squadron RAF",
