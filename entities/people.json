@@ -1585,6 +1585,13 @@
   "wikidata": "Q5240823",
   "source": "https://en.wikipedia.org/wiki/David_Wanklyn"
  },
+ "person-david-whitehead-australian-army-officer": {
+  "name": "David Whitehead",
+  "kind": "Australian Army brigadier",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/David_Whitehead_(Australian_Army_officer)"
+ },
  "person-dean-acheson": {
   "name": "Dean Acheson",
   "kind": "U.S. Secretary of State",
@@ -2670,6 +2677,13 @@
   "nation": "Germany",
   "wikidata": "Q57174",
   "source": "https://en.wikipedia.org/wiki/Franz_Halder"
+ },
+ "person-franz-krech": {
+  "name": "Franz Krech",
+  "kind": "German army general",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Franz_Krech"
  },
  "person-franz-kutschera": {
   "name": "Franz Kutschera",
@@ -3838,6 +3852,13 @@
   "nation": "Germany",
   "wikidata": "Q86821",
   "source": "https://en.wikipedia.org/wiki/Hellmuth_Heye"
+ },
+ "person-helmut-kunz": {
+  "name": "Helmut Kunz",
+  "kind": "SS dentist",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Helmut_Kunz"
  },
  "person-helmuth-james-von-moltke": {
   "name": "Helmuth James von Moltke",
@@ -5053,6 +5074,13 @@
   "wikidata": "Q1700829",
   "source": "https://en.wikipedia.org/wiki/John_L._DeWitt"
  },
+ "person-john-l-lewis": {
+  "name": "John L. Lewis",
+  "kind": "labor leader, president of the United Mine Workers",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/John_L._Lewis"
+ },
  "person-john-leighton-stuart": {
   "name": "John Leighton Stuart",
   "kind": "U.S. ambassador to China",
@@ -6215,6 +6243,13 @@
   "source": "https://en.wikipedia.org/wiki/Madeleine_Lebeau",
   "wikidata": "Q456390"
  },
+ "person-magda-goebbels": {
+  "name": "Magda Goebbels",
+  "kind": "wife of Joseph Goebbels",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Magda_Goebbels"
+ },
  "person-mahatma-gandhi": {
   "name": "Mahatma Gandhi",
   "kind": "Indian independence leader",
@@ -6588,6 +6623,16 @@
   "nation": "Soviet Union",
   "wikidata": "Q310100",
   "source": "https://en.wikipedia.org/wiki/Maxim_Litvinov"
+ },
+ "person-maynard-harrison-smith": {
+  "name": "Maynard Harrison Smith",
+  "kind": "B-17 gunner, Medal of Honor recipient",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Maynard_Harrison_Smith",
+  "aka": [
+   "Snuffy Smith"
+  ]
  },
  "person-meredith-gardner": {
   "name": "Meredith Gardner",
@@ -8310,6 +8355,13 @@
    "Costiana"
   ],
   "note": "Spelled Costiana in the Australian official history"
+ },
+ "person-salvatore-giuliano": {
+  "name": "Salvatore Giuliano",
+  "kind": "Sicilian bandit and separatist",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Salvatore_Giuliano"
  },
  "person-sam-ruben": {
   "name": "Sam Ruben",

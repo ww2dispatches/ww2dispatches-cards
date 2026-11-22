@@ -789,6 +789,17 @@
    "Bumper"
   ]
  },
+ "machine-series-e-bond": {
+  "name": "Series E bond",
+  "kind": "U.S. war savings bond",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Series_E_bond",
+  "aka": [
+   "Defense Savings Bond",
+   "war bond"
+  ]
+ },
  "machine-sg-radar": {
   "name": "SG radar",
   "kind": "ship search radar",

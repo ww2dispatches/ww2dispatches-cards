@@ -1,4 +1,11 @@
 {
+ "op-1-may-1944-kaisariani-executions": {
+  "name": "1 May 1944 Kaisariani executions",
+  "kind": "reprisal executions",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1_May_1944_Kaisariani_executions"
+ },
  "op-15th-academy-awards": {
   "name": "15th Academy Awards",
   "kind": "Film awards ceremony, 4 March 1943",
@@ -1704,6 +1711,16 @@
   "wikidata": "Q2165376",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Tarakan_(1942)"
  },
+ "op-battle-of-tarakan-1945": {
+  "name": "Battle of Tarakan (1945)",
+  "kind": "amphibious battle, Operation Oboe One",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Tarakan_(1945)",
+  "aka": [
+   "Oboe One"
+  ]
+ },
  "op-battle-of-tarawa": {
   "name": "Battle of Tarawa",
   "kind": "battle",
@@ -2770,6 +2787,13 @@
   "wikidata": "Q4046233",
   "source": "https://en.wikipedia.org/wiki/Convoy_PQ_13"
  },
+ "op-convoy-pq-15": {
+  "name": "Convoy PQ 15",
+  "kind": "Arctic convoy",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Convoy_PQ_15"
+ },
  "op-convoy-pq-8": {
   "name": "Convoy PQ 8",
   "kind": "Arctic convoy",
@@ -2866,6 +2890,13 @@
   "nation": "Germany",
   "wikidata": "Q5023193",
   "source": "https://en.wikipedia.org/wiki/Death_marches_during_the_Holocaust"
+ },
+ "op-death-of-adolf-hitler": {
+  "name": "Death of Adolf Hitler",
+  "kind": "death and its announcement",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Death_of_Adolf_Hitler"
  },
  "op-death-of-benito-mussolini": {
   "name": "Death of Benito Mussolini",
@@ -5453,6 +5484,13 @@
   "nation": "US",
   "wikidata": "Q644827",
   "source": "https://en.wikipedia.org/wiki/Pohl_trial"
+ },
+ "op-portella-della-ginestra-massacre": {
+  "name": "Portella della Ginestra massacre",
+  "kind": "massacre",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Portella_della_Ginestra_massacre"
  },
  "op-potsdam-day": {
   "name": "Day of Potsdam",

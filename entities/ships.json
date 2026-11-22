@@ -706,6 +706,13 @@
   "wikidata": "Q4051972",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-265"
  },
+ "ship-german-submarine-u-277": {
+  "name": "U-277",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-277"
+ },
  "ship-german-submarine-u-278": {
   "name": "German submarine U-278",
   "kind": "Type VIIC U-boat",
@@ -1944,6 +1951,13 @@
   "wikidata": "Q496044",
   "source": "https://en.wikipedia.org/wiki/HMS_Fearless_(H67)"
  },
+ "ship-hms-fencer": {
+  "name": "HMS Fencer (D64)",
+  "kind": "escort carrier",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Fencer"
+ },
  "ship-hms-forfar": {
   "name": "HMS Forfar (F30)",
   "kind": "armed merchant cruiser",
@@ -2339,6 +2353,13 @@
   "nation": "Britain",
   "wikidata": "Q724919",
   "source": "https://en.wikipedia.org/wiki/HMS_Prince_of_Wales_(53)"
+ },
+ "ship-hms-punjabi": {
+  "name": "HMS Punjabi",
+  "kind": "Tribal class destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Punjabi"
  },
  "ship-hms-queen-elizabeth-1913": {
   "name": "HMS Queen Elizabeth",
@@ -4112,6 +4133,13 @@
   "aka": [
    "Empire Javelin"
   ]
+ },
+ "ship-ss-erinpura": {
+  "name": "SS Erinpura",
+  "kind": "troopship, British India liner",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Erinpura"
  },
  "ship-ss-europa-1928": {
   "name": "SS Europa (1928)",

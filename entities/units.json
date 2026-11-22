@@ -544,6 +544,13 @@
   "wikidata": "Q4632413",
   "source": "https://en.wikipedia.org/wiki/26th_Armoured_Brigade"
  },
+ "unit-26th-brigade-australia": {
+  "name": "26th Brigade (Australia)",
+  "kind": "infantry brigade",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/26th_Brigade_(Australia)"
+ },
  "unit-26th-cavalry-regiment-philippine-scouts": {
   "name": "26th Cavalry Regiment (Philippine Scouts)",
   "kind": "U.S. Army cavalry regiment",
@@ -1441,6 +1448,13 @@
   "wikidata": "Q271975",
   "source": "https://en.wikipedia.org/wiki/83rd_Infantry_Division_(United_States)"
  },
+ "unit-842-naval-air-squadron": {
+  "name": "842 Naval Air Squadron",
+  "kind": "Fleet Air Arm squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/842_Naval_Air_Squadron"
+ },
  "unit-84th-training-command": {
   "name": "84th Infantry Division",
   "kind": "U.S. Army infantry division",
@@ -1543,6 +1557,13 @@
   "aka": [
    "Action Française"
   ]
+ },
+ "unit-african-auxiliary-pioneer-corps": {
+  "name": "African Auxiliary Pioneer Corps",
+  "kind": "British Army labour corps",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/African_Auxiliary_Pioneer_Corps"
  },
  "unit-afrika-korps": {
   "name": "Afrika Korps",
@@ -4037,6 +4058,17 @@
   "nation": "US",
   "wikidata": "Q1814260",
   "source": "https://en.wikipedia.org/wiki/United_Auto_Workers"
+ },
+ "unit-united-mine-workers-of-america": {
+  "name": "United Mine Workers of America",
+  "kind": "labor union",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/United_Mine_Workers_of_America",
+  "aka": [
+   "United Mine Workers",
+   "UMW"
+  ]
  },
  "unit-united-nations": {
   "name": "United Nations",
