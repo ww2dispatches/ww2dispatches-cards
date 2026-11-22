@@ -69,6 +69,13 @@
    "Algérie"
   ]
  },
+ "ship-french-cruiser-jeanne-d-arc-1930": {
+  "name": "French cruiser Jeanne d'Arc (1930)",
+  "kind": "training cruiser",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/French_cruiser_Jeanne_d%27Arc_(1930)"
+ },
  "ship-french-cruiser-lamotte-picquet": {
   "name": "French cruiser Lamotte-Picquet",
   "kind": "light cruiser",
@@ -1068,6 +1075,13 @@
   "wikidata": "Q2000211",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-524"
  },
+ "ship-german-submarine-u-528": {
+  "name": "U-528",
+  "kind": "U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-528"
+ },
  "ship-german-submarine-u-545": {
   "name": "German submarine U-545",
   "kind": "German Type IXC/40 U-boat",
@@ -1126,6 +1140,13 @@
   "aka": [
    "U-557"
   ]
+ },
+ "ship-german-submarine-u-558": {
+  "name": "U-558",
+  "kind": "U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-558"
  },
  "ship-german-submarine-u-559": {
   "name": "U-559",
@@ -1489,6 +1510,13 @@
   "aka": [
    "U-Who"
   ]
+ },
+ "ship-german-submarine-u-873": {
+  "name": "U-873",
+  "kind": "U-boat, Type IXD2",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-873"
  },
  "ship-german-submarine-u-877": {
   "name": "German submarine U-877",
@@ -2243,6 +2271,13 @@
   "wikidata": "Q3022185",
   "source": "https://en.wikipedia.org/wiki/HMS_Inglefield"
  },
+ "ship-hms-jackal-f22": {
+  "name": "HMS Jackal (F22)",
+  "kind": "destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Jackal_(F22)"
+ },
  "ship-hms-janus-f53": {
   "name": "HMS Janus (F53)",
   "kind": "J class destroyer",
@@ -2315,6 +2350,13 @@
   "nation": "Britain",
   "wikidata": "Q5633131",
   "source": "https://en.wikipedia.org/wiki/HMS_Lightning_(G55)"
+ },
+ "ship-hms-lively-g40": {
+  "name": "HMS Lively (G40)",
+  "kind": "destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Lively_(G40)"
  },
  "ship-hms-liverpool-c11": {
   "name": "HMS Liverpool (C11)",
@@ -2872,6 +2914,13 @@
    "Natal",
    "Loch Cree"
   ]
+ },
+ "ship-hmt-bedfordshire": {
+  "name": "HMT Bedfordshire (FY141)",
+  "kind": "armed naval trawler",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMT_Bedfordshire"
  },
  "ship-hmt-rohna": {
   "name": "HMT Rohna",
@@ -5954,6 +6003,14 @@
   "aka": [
    "Mei Yuan"
   ]
+ },
+ "ship-uss-vance": {
+  "name": "USS Vance (DE-387)",
+  "kind": "destroyer escort",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Vance",
+  "note": "Article title is USS Vance; USS Vance (DE-387) redirects to it."
  },
  "ship-uss-vulcan-ar-5": {
   "name": "USS Vulcan (AR-5)",

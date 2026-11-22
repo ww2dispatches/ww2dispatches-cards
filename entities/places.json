@@ -287,6 +287,15 @@
   "lat": 37.9842,
   "lon": 23.7281
  },
+ "place-attu-island": {
+  "name": "Attu Island",
+  "kind": "island",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Attu_Island",
+  "lat": null,
+  "lon": null
+ },
  "place-auburn-maine": {
   "name": "Auburn, Maine",
   "kind": "city",
@@ -1162,6 +1171,18 @@
   "lat": 43.8547,
   "lon": -78.8843
  },
+ "place-cape-canaveral-space-force-station": {
+  "name": "Cape Canaveral Space Force Station",
+  "kind": "launch site",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Cape_Canaveral_Space_Force_Station",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Joint Long Range Proving Ground Base"
+  ]
+ },
  "place-cape-hatteras": {
   "name": "Cape Hatteras",
   "kind": "cape on the Outer Banks of North Carolina",
@@ -1630,6 +1651,18 @@
   "lat": 43.3306,
   "lon": 21.8875
  },
+ "place-curacao": {
+  "name": "Curacao",
+  "kind": "island",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Cura%C3%A7ao",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Curaçao"
+  ]
+ },
  "place-czestochowa": {
   "name": "Częstochowa",
   "kind": "city",
@@ -1897,6 +1930,18 @@
   "source": "https://en.wikipedia.org/wiki/East_Berlin",
   "lat": 52.5186,
   "lon": 13.4044
+ },
+ "place-eastern-range": {
+  "name": "Eastern Range",
+  "kind": "rocket range",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Eastern_Range",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Joint Long Range Proving Ground"
+  ]
  },
  "place-edwards-air-force-base": {
   "name": "Edwards Air Force Base",
@@ -5412,6 +5457,15 @@
   "lat": 36.0133,
   "lon": -84.2625
  },
+ "place-ocracoke-british-cemetery": {
+  "name": "Ocracoke British Cemetery",
+  "kind": "war cemetery",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ocracoke_British_Cemetery",
+  "lat": null,
+  "lon": null
+ },
  "place-oder": {
   "name": "Oder",
   "kind": "river",
@@ -6554,6 +6608,18 @@
   "source": "https://en.wikipedia.org/wiki/Salamis_Naval_Base",
   "lat": 37.9773,
   "lon": 23.5355
+ },
+ "place-salween-river": {
+  "name": "Salween River",
+  "kind": "river",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Salween_River",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Nu River"
+  ]
  },
  "place-samar": {
   "name": "Samar",

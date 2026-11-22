@@ -919,6 +919,13 @@
   "wikidata": "Q4870357",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Athens_(1941)"
  },
+ "op-battle-of-attu": {
+  "name": "Battle of Attu",
+  "kind": "battle",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Attu"
+ },
  "op-battle-of-badung-strait": {
   "name": "Battle of Badung Strait",
   "kind": "night naval battle off Bali",
@@ -1537,6 +1544,16 @@
   "nation": "Italy",
   "wikidata": "Q1132971",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Nikolayevka"
+ },
+ "op-battle-of-northern-burma-and-western-yunnan": {
+  "name": "Battle of Northern Burma and Western Yunnan",
+  "kind": "campaign",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Northern_Burma_and_Western_Yunnan",
+  "aka": [
+   "Salween campaign"
+  ]
  },
  "op-battle-of-nuremberg-1945": {
   "name": "Battle of Nuremberg (1945)",
@@ -2672,6 +2689,13 @@
   "nation": "Britain",
   "wikidata": "Q5038376",
   "source": "https://en.wikipedia.org/wiki/Cardiff_Blitz"
+ },
+ "op-care-package": {
+  "name": "CARE Package",
+  "kind": "relief program",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/CARE_Package"
  },
  "op-careless-talk-costs-lives-propaganda": {
   "name": "Careless Talk Costs Lives",
@@ -5083,6 +5107,13 @@
   "nation": "US",
   "wikidata": "Q2026043",
   "source": "https://en.wikipedia.org/wiki/Operation_Desecrate_One"
+ },
+ "op-operation-diadem": {
+  "name": "Operation Diadem",
+  "kind": "offensive",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Diadem"
  },
  "op-operation-dracula": {
   "name": "Operation Dracula",

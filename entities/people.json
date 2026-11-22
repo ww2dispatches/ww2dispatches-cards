@@ -65,6 +65,13 @@
    "Lieutenant Adnan"
   ]
  },
+ "person-adolf-a-berle": {
+  "name": "Adolf A. Berle",
+  "kind": "Assistant Secretary of State",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Adolf_A._Berle"
+ },
  "person-adolf-eichmann": {
   "name": "Adolf Eichmann",
   "kind": "SS officer, organizer of deportations",
@@ -3473,6 +3480,16 @@
   "wikidata": "Q182486",
   "source": "https://en.wikipedia.org/wiki/Greer_Garson"
  },
+ "person-gunther-krech": {
+  "name": "Gunther Krech",
+  "kind": "U-boat commander",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/G%C3%BCnther_Krech",
+  "aka": [
+   "Günther Krech"
+  ]
+ },
  "person-gunther-prien": {
   "name": "Gunther Prien",
   "kind": "U-boat commander, U-47",
@@ -3932,6 +3949,13 @@
   "nation": "Germany",
   "wikidata": "Q72924",
   "source": "https://en.wikipedia.org/wiki/Heinrich_von_Prittwitz_und_Gaffron"
+ },
+ "person-heinrich-von-vietinghoff": {
+  "name": "Heinrich von Vietinghoff",
+  "kind": "general, commander of the German Tenth Army",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Heinrich_von_Vietinghoff"
  },
  "person-heinz-guderian": {
   "name": "Heinz Guderian",
@@ -5851,6 +5875,13 @@
   "nation": "Japan",
   "source": "https://en.wikipedia.org/wiki/Kiyohide_Shima",
   "wikidata": "Q646375"
+ },
+ "person-kiyoshi-ogawa": {
+  "name": "Kiyoshi Ogawa",
+  "kind": "kamikaze pilot",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kiyoshi_Ogawa"
  },
  "person-kiyotake-kawaguchi": {
   "name": "Kiyotake Kawaguchi",
@@ -8035,6 +8066,16 @@
   "wikidata": "Q63517",
   "source": "https://en.wikipedia.org/wiki/Regina_Jonas"
  },
+ "person-reimar-lust": {
+  "name": "Reimar Lust",
+  "kind": "U-boat engineer officer, later astrophysicist and ESA Director General",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Reimar_L%C3%BCst",
+  "aka": [
+   "Reimar Lüst"
+  ]
+ },
  "person-reinhard-hardegen": {
   "name": "Reinhard Hardegen",
   "kind": "U-boat commander, U-123",
@@ -8725,6 +8766,16 @@
    "Seiichi Itō"
   ]
  },
+ "person-seizo-yasunori": {
+  "name": "Seizo Yasunori",
+  "kind": "kamikaze pilot, flight leader",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Seiz%C5%8D_Yasunori",
+  "aka": [
+   "Seizō Yasunori"
+  ]
+ },
  "person-semyon-timoshenko": {
   "name": "Semyon Timoshenko",
   "kind": "Soviet marshal",
@@ -9214,6 +9265,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Theodore_E._Chandler",
   "wikidata": "Q4022105"
+ },
+ "person-thomas-c-kinkaid": {
+  "name": "Thomas C. Kinkaid",
+  "kind": "admiral",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Thomas_C._Kinkaid"
  },
  "person-thomas-e-dewey": {
   "name": "Thomas E. Dewey",

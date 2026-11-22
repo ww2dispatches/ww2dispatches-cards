@@ -51,6 +51,13 @@
   "wikidata": "Q2517382",
   "source": "https://en.wikipedia.org/wiki/10th_Army_(Italy)"
  },
+ "unit-10th-army-wehrmacht": {
+  "name": "German Tenth Army",
+  "kind": "field army",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/10th_Army_(Wehrmacht)"
+ },
  "unit-10th-infantry-regiment-united-states": {
   "name": "10th Infantry Regiment",
   "kind": "U.S. infantry regiment",
@@ -2808,6 +2815,13 @@
    "Stern Gang",
    "Lehi"
   ]
+ },
+ "unit-lehrgeschwader-1": {
+  "name": "Lehrgeschwader 1",
+  "kind": "Luftwaffe bomber wing",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Lehrgeschwader_1"
  },
  "unit-li-army-corps": {
   "name": "LI Corps",
