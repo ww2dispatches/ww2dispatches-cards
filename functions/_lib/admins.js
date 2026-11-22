@@ -2,7 +2,7 @@
 // which comes from the scrambled Google id, so it stays the same when the players table is wiped
 // on launch night. Nothing here touches the database.
 //   ADMINS (below) and the ADMIN_FILES variable: the admin console, plus every tester preview.
-//   The TESTER_FILES variable: tester previews only (Code Room's ?intercept=preview), not the console.
+//   The TESTER_FILES variable: tester previews only, not the console (Code Room's ?intercept=preview was removed 22 Nov 2026).
 // Both variables are comma separated file numbers, set in Cloudflare (Pages, Settings, Variables).
 import { playerFileNumber } from './fileno.js';
 
