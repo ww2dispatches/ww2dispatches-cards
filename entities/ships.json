@@ -1275,6 +1275,13 @@
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-568",
   "wikidata": "Q827829"
  },
+ "ship-german-submarine-u-569": {
+  "name": "U-569",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-569"
+ },
  "ship-german-submarine-u-571": {
   "name": "U-571",
   "kind": "Type VIIC U-boat",
@@ -2168,6 +2175,17 @@
   "wikidata": "Q258537",
   "source": "https://en.wikipedia.org/wiki/HMS_Cossack_(F03)"
  },
+ "ship-hms-cygnet-h83": {
+  "name": "HMCS St. Laurent (H83)",
+  "kind": "destroyer, ex HMS Cygnet",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Cygnet_(H83)",
+  "aka": [
+   "HMCS St. Laurent",
+   "HMS Cygnet"
+  ]
+ },
  "ship-hms-daring-h16": {
   "name": "HMS Daring (H16)",
   "kind": "Royal Navy D-class destroyer",
@@ -2304,6 +2322,16 @@
   "nation": "Britain",
   "wikidata": "Q74860",
   "source": "https://en.wikipedia.org/wiki/HMS_Fencer"
+ },
+ "ship-hms-fiji": {
+  "name": "HMS Fiji (58)",
+  "kind": "light cruiser",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Fiji",
+  "aka": [
+   "Fiji"
+  ]
  },
  "ship-hms-forfar": {
   "name": "HMS Forfar (F30)",
@@ -4221,6 +4249,16 @@
   "wikidata": "Q6159079",
   "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-9"
  },
+ "ship-japanese-submarine-ro-106": {
+  "name": "RO-106",
+  "kind": "Imperial Japanese Navy submarine",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_submarine_Ro-106",
+  "aka": [
+   "Ro-106"
+  ]
+ },
  "ship-japanese-submarine-ro-112": {
   "name": "Ro-112",
   "kind": "Ro-100 class submarine",
@@ -5462,6 +5500,13 @@
   "nation": "US",
   "wikidata": "Q2836374",
   "source": "https://en.wikipedia.org/wiki/USS_Edsall_(DD-219)"
+ },
+ "ship-uss-england-de-635": {
+  "name": "USS England (DE-635)",
+  "kind": "Buckley class destroyer escort",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_England_(DE-635)"
  },
  "ship-uss-enterprise-cv-6": {
   "name": "USS Enterprise (CV-6)",

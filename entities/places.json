@@ -6103,6 +6103,15 @@
   "lat": 11.15,
   "lon": 122.4833
  },
+ "place-pankrac-prison": {
+  "name": "Pankrác Prison",
+  "kind": "prison",
+  "nation": "Czechoslovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Pankr%C3%A1c_Prison",
+  "lat": null,
+  "lon": null
+ },
  "place-paramount-theatre-manhattan": {
   "name": "Paramount Theatre (Manhattan)",
   "kind": "theater in Times Square, New York",

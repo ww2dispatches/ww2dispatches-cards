@@ -3507,6 +3507,17 @@
    "Élysée Accords"
   ]
  },
+ "op-emergency-powers-defence-act-1939": {
+  "name": "Emergency Powers (Defence) Act 1939",
+  "kind": "British wartime emergency powers law, extended by the 1940 Act of 22 May 1940",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Emergency_Powers_(Defence)_Act_1939",
+  "aka": [
+   "Emergency Powers (Defence) Act 1940"
+  ],
+  "note": "The 1940 Act redirects to a section of this article."
+ },
  "op-emergency-shipbuilding-program": {
   "name": "Emergency Shipbuilding Program",
   "kind": "shipbuilding program",
@@ -3989,12 +4000,26 @@
   "wikidata": "Q3417612",
   "source": "https://en.wikipedia.org/wiki/Granville_raid"
  },
+ "op-great-purge": {
+  "name": "Great Purge",
+  "kind": "Soviet political repression 1936 to 1938",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Great_Purge"
+ },
  "op-greco-italian-war": {
   "name": "Greco Italian War",
   "kind": "war",
   "nation": "worldwide",
   "source": "https://en.wikipedia.org/wiki/Greco-Italian_War",
   "wikidata": "Q223604"
+ },
+ "op-greek-and-turkish-assistance-act-of-1947": {
+  "name": "Greek and Turkish Assistance Act of 1947",
+  "kind": "U.S. aid law, Public Law 75 of the 80th Congress",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Greek_and_Turkish_Assistance_Act_of_1947"
  },
  "op-greek-civil-war": {
   "name": "Greek Civil War",
@@ -4738,6 +4763,13 @@
   "nation": "Britain",
   "wikidata": "Q22947756",
   "source": "https://en.wikipedia.org/wiki/Liberation_of_the_German-occupied_Channel_Islands"
+ },
+ "op-lidice-massacre": {
+  "name": "Lidice massacre",
+  "kind": "Nazi destruction of the Czech village of Lidice, June 1942",
+  "nation": "Czechoslovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Lidice_massacre"
  },
  "op-liepaja-massacres": {
   "name": "Liepāja massacres",
@@ -7309,6 +7341,13 @@
   "nation": "US",
   "wikidata": "Q29094916",
   "source": "https://en.wikipedia.org/wiki/Tornado_outbreak_of_April_12,_1945"
+ },
+ "op-townsville-mutiny": {
+  "name": "Townsville mutiny",
+  "kind": "mutiny by African American U.S. Army engineers, May 1942",
+  "nation": "US, Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Townsville_mutiny"
  },
  "op-treaties-of-rome-1941": {
   "name": "Treaties of Rome (1941)",
