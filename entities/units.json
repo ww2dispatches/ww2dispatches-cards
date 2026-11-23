@@ -276,6 +276,13 @@
   "wikidata": "Q13600072",
   "source": "https://en.wikipedia.org/wiki/15th_Panzergrenadier_Division"
  },
+ "unit-15th-scottish-infantry-division": {
+  "name": "15th (Scottish) Infantry Division",
+  "kind": "infantry division",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/15th_(Scottish)_Infantry_Division"
+ },
  "unit-162nd-infantry-regiment-united-states": {
   "name": "162nd Infantry Regiment (United States)",
   "kind": "U.S. Army infantry regiment, 41st Division",
@@ -1526,6 +1533,13 @@
   "nation": "US",
   "wikidata": "Q4643278",
   "source": "https://en.wikipedia.org/wiki/73rd_Air_Division"
+ },
+ "unit-77th-indian-infantry-brigade": {
+  "name": "77th Indian Infantry Brigade",
+  "kind": "Chindit brigade",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/77th_Indian_Infantry_Brigade"
  },
  "unit-77th-sustainment-brigade": {
   "name": "77th Infantry Division (United States)",
@@ -4259,6 +4273,17 @@
   "source": "https://en.wikipedia.org/wiki/Regia_Marina",
   "aka": [
    "Italian Navy"
+  ]
+ },
+ "unit-reich-labour-service": {
+  "name": "Reich Labour Service",
+  "kind": "state labor service",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Reich_Labour_Service",
+  "aka": [
+   "Reichsarbeitsdienst",
+   "RAD"
   ]
  },
  "unit-reich-ministry-of-public-enlightenment-and-propaganda": {

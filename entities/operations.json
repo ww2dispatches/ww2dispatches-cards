@@ -1321,6 +1321,13 @@
   "wikidata": "Q471955",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Changsha_(1944)"
  },
+ "op-battle-of-cherbourg": {
+  "name": "Battle of Cherbourg",
+  "kind": "battle",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Cherbourg"
+ },
  "op-battle-of-christmas-island": {
   "name": "Battle of Christmas Island",
   "kind": "Japanese occupation of Christmas Island, 31 March to 1 April 1942",
@@ -1812,6 +1819,13 @@
   "nation": "US",
   "wikidata": "Q711223",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Mindoro"
+ },
+ "op-battle-of-mogaung": {
+  "name": "Battle of Mogaung",
+  "kind": "battle",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Mogaung"
  },
  "op-battle-of-montcornet": {
   "name": "Battle of Montcornet",
@@ -2583,6 +2597,16 @@
    "Belsen trial"
   ]
  },
+ "op-berlin-airlift": {
+  "name": "Berlin Airlift",
+  "kind": "airlift",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Berlin_Airlift",
+  "aka": [
+   "Operation Vittles"
+  ]
+ },
  "op-berlin-blockade": {
   "name": "Berlin Blockade",
   "kind": "Soviet blockade of West Berlin and the Allied airlift",
@@ -2877,6 +2901,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q4093055",
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Helsinki_in_World_War_II"
+ },
+ "op-bombing-of-kassa": {
+  "name": "Bombing of Kassa",
+  "kind": "air raid",
+  "nation": "Hungary",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Kassa"
  },
  "op-bombing-of-kobe-in-world-war-ii": {
   "name": "Bombing of Kobe in World War II",
@@ -6355,6 +6386,13 @@
   "wikidata": "Q123279245",
   "source": "https://en.wikipedia.org/wiki/Operation_Encore"
  },
+ "op-operation-epsom": {
+  "name": "Operation Epsom",
+  "kind": "offensive",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Epsom"
+ },
  "op-operation-excess": {
   "name": "Operation Excess",
   "kind": "Mediterranean convoy operation",
@@ -7913,6 +7951,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q696256",
   "source": "https://en.wikipedia.org/wiki/Soviet%E2%80%93Japanese_Neutrality_Pact"
+ },
+ "op-soviet-occupation-of-bessarabia-and-northern-bukovina": {
+  "name": "Soviet occupation of Bessarabia and Northern Bukovina",
+  "kind": "ultimatum and occupation",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Soviet_occupation_of_Bessarabia_and_Northern_Bukovina"
  },
  "op-soviet-occupation-of-latvia-in-1940": {
   "name": "Soviet occupation of Latvia in 1940",

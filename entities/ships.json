@@ -225,6 +225,13 @@
    "Schiff 45"
   ]
  },
+ "ship-german-auxiliary-cruiser-kormoran": {
+  "name": "Kormoran",
+  "kind": "auxiliary cruiser (raider)",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_auxiliary_cruiser_Kormoran"
+ },
  "ship-german-auxiliary-cruiser-pinguin": {
   "name": "Pinguin",
   "kind": "German auxiliary cruiser (merchant raider)",
@@ -1004,6 +1011,13 @@
   "wikidata": "Q4052001",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-311"
  },
+ "ship-german-submarine-u-317": {
+  "name": "U-317",
+  "kind": "submarine",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-317"
+ },
  "ship-german-submarine-u-321": {
   "name": "U-321",
   "kind": "Type VIIC/41 U-boat",
@@ -1759,6 +1773,13 @@
   "nation": "Germany",
   "wikidata": "Q870473",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-714"
+ },
+ "ship-german-submarine-u-719": {
+  "name": "U-719",
+  "kind": "submarine",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-719"
  },
  "ship-german-submarine-u-73-1940": {
   "name": "U-73",
@@ -5561,6 +5582,13 @@
   "nation": "Britain",
   "wikidata": "Q28223660",
   "source": "https://en.wikipedia.org/wiki/SS_Malakand_(1919)"
+ },
+ "ship-ss-mareeba": {
+  "name": "SS Mareeba",
+  "kind": "cargo steamship",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Mareeba"
  },
  "ship-ss-montebello": {
   "name": "SS Montebello",

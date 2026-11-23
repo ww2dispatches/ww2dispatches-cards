@@ -787,6 +787,15 @@
   "lat": 52.5083,
   "lon": 13.3375
  },
+ "place-bessarabia": {
+  "name": "Bessarabia",
+  "kind": "region",
+  "nation": "Romania",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bessarabia",
+  "lat": null,
+  "lon": null
+ },
  "place-bethnal-green-tube-station": {
   "name": "Bethnal Green tube station",
   "kind": "London Underground station, wartime shelter",
@@ -4230,6 +4239,18 @@
   "wikidata": "Q187027",
   "lat": 36.8153,
   "lon": 27.1103
+ },
+ "place-kosice": {
+  "name": "Košice",
+  "kind": "city",
+  "nation": "Slovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ko%C5%A1ice",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Kassa"
+  ]
  },
  "place-kostrzyn-nad-odra": {
   "name": "Kostrzyn nad Odra",

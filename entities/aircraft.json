@@ -460,6 +460,13 @@
    "Fw 200"
   ]
  },
+ "aircraft-focke-wulf-fw-61": {
+  "name": "Focke-Wulf Fw 61",
+  "kind": "twin rotor helicopter",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Focke-Wulf_Fw_61"
+ },
  "aircraft-fokker-d-viii": {
   "name": "Fokker D.VIII",
   "kind": "WWI fighter",
