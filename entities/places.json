@@ -1150,6 +1150,15 @@
   "lat": 48.3906,
   "lon": -4.4861
  },
+ "place-brighton": {
+  "name": "Brighton",
+  "kind": "seaside town on the English south coast",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Brighton",
+  "lat": null,
+  "lon": null
+ },
  "place-bristol": {
   "name": "Bristol",
   "kind": "city",
@@ -6173,6 +6182,15 @@
   "lat": 68.9667,
   "lon": 33.0833
  },
+ "place-muroran": {
+  "name": "Muroran",
+  "kind": "steel city on Hokkaido",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Muroran",
+  "lat": null,
+  "lon": null
+ },
  "place-musashino-aircraft-plant": {
   "name": "Nakajima Musashino plant",
   "kind": "aircraft engine factory",
@@ -10090,6 +10108,19 @@
   "source": "https://en.wikipedia.org/wiki/West_Berlin",
   "lat": 52.5,
   "lon": 13.28
+ },
+ "place-westerbork-transit-camp": {
+  "name": "Westerbork transit camp",
+  "kind": "Nazi transit camp in the occupied Netherlands",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Westerbork_transit_camp",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Camp Westerbork",
+   "Kamp Westerbork"
+  ]
  },
  "place-westerplatte": {
   "name": "Westerplatte",

@@ -3411,6 +3411,13 @@
    "United Nations Monetary and Financial Conference"
   ]
  },
+ "op-brighton-blitz": {
+  "name": "Brighton Blitz",
+  "kind": "German bombing of Brighton, 1940 to 1944",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Brighton_Blitz"
+ },
  "op-bristol-blitz": {
   "name": "Bristol Blitz",
   "kind": "air raid campaign",
@@ -7867,6 +7874,16 @@
   "source": "https://en.wikipedia.org/wiki/Proposed_United_States_acquisition_of_Greenland",
   "aka": [
    "Proposed United States purchase of Greenland"
+  ]
+ },
+ "op-prum-explosion": {
+  "name": "Prum explosion",
+  "kind": "1949 ammunition depot explosion in West Germany",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Pr%C3%BCm_explosion",
+  "aka": [
+   "Prüm explosion"
   ]
  },
  "op-punishment-for-war-crimes": {

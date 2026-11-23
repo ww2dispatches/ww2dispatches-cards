@@ -649,6 +649,13 @@
   "wikidata": "Q554568",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-132_(1941)"
  },
+ "ship-german-submarine-u-135-1941": {
+  "name": "U-135",
+  "kind": "Kriegsmarine Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-135_(1941)"
+ },
  "ship-german-submarine-u-136-1941": {
   "name": "German submarine U-136 (1941)",
   "kind": "German Type VIIC U-boat",
@@ -1654,6 +1661,13 @@
   "nation": "Germany",
   "wikidata": "Q836280",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-575"
+ },
+ "ship-german-submarine-u-576": {
+  "name": "U-576",
+  "kind": "Kriegsmarine Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-576"
  },
  "ship-german-submarine-u-578": {
   "name": "U-578",
@@ -5024,6 +5038,13 @@
   "wikidata": "Q10884893",
   "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-3"
  },
+ "ship-japanese-submarine-i-351": {
+  "name": "I-351",
+  "kind": "Imperial Japanese Navy Senho type tanker submarine",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-351"
+ },
  "ship-japanese-submarine-i-37": {
   "name": "I-37",
   "kind": "Imperial Japanese Navy submarine",
@@ -6385,6 +6406,13 @@
   "nation": "US",
   "wikidata": "Q3268973",
   "source": "https://en.wikipedia.org/wiki/USS_Blower"
+ },
+ "ship-uss-bluefish-ss-222": {
+  "name": "USS Bluefish (SS-222)",
+  "kind": "U.S. Navy Gato class submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Bluefish_(SS-222)"
  },
  "ship-uss-bogue": {
   "name": "USS Bogue",
