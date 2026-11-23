@@ -126,10 +126,10 @@
   "name": "Akutan Island",
   "kind": "island in the Aleutians, Alaska",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q424195",
   "source": "https://en.wikipedia.org/wiki/Akutan_Island",
-  "lat": null,
-  "lon": null
+  "lat": 54.1281,
+  "lon": -165.9181
  },
  "place-alaska-highway": {
   "name": "Alaska Highway",
@@ -540,10 +540,10 @@
   "name": "Banzai Cliff",
   "kind": "cliff at the northern tip of Saipan",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q11328397",
   "source": "https://en.wikipedia.org/wiki/Banzai_Cliff",
-  "lat": null,
-  "lon": null
+  "lat": 15.2881,
+  "lon": 145.8161
  },
  "place-barcelona": {
   "name": "Barcelona",
@@ -745,10 +745,10 @@
   "name": "Bendlerblock",
   "kind": "Army headquarters building in Berlin",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q695840",
   "source": "https://en.wikipedia.org/wiki/Bendlerblock",
-  "lat": null,
-  "lon": null
+  "lat": 52.5069,
+  "lon": 13.3614
  },
  "place-benghazi": {
   "name": "Benghazi",
@@ -1163,10 +1163,10 @@
   "name": "Brighton",
   "kind": "seaside town on the English south coast",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q131491",
   "source": "https://en.wikipedia.org/wiki/Brighton",
-  "lat": null,
-  "lon": null
+  "lat": 50.8208,
+  "lon": -0.1375
  },
  "place-bristol": {
   "name": "Bristol",
@@ -1344,10 +1344,10 @@
   "name": "Caen",
   "kind": "city in Normandy",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q41185",
   "source": "https://en.wikipedia.org/wiki/Caen",
-  "lat": null,
-  "lon": null
+  "lat": 49.1814,
+  "lon": -0.3636
  },
  "place-cafe-de-paris-london": {
   "name": "Cafe de Paris, London",
@@ -1480,13 +1480,13 @@
   "name": "Capitol Theatre (New York City)",
   "kind": "movie palace on Broadway",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q5035943",
   "source": "https://en.wikipedia.org/wiki/Capitol_Theatre_(New_York_City)",
   "aka": [
    "Loew's Capitol Theatre"
   ],
-  "lat": null,
-  "lon": null
+  "lat": 40.762,
+  "lon": -73.9839
  },
  "place-cardiff": {
   "name": "Cardiff",
@@ -2065,10 +2065,10 @@
   "name": "Dakar",
   "kind": "port city",
   "nation": "Senegal",
-  "wikidata": null,
+  "wikidata": "Q3718",
   "source": "https://en.wikipedia.org/wiki/Dakar",
-  "lat": null,
-  "lon": null
+  "lat": 14.6726,
+  "lon": -17.432
  },
  "place-damascus": {
   "name": "Damascus",
@@ -2396,10 +2396,10 @@
   "name": "East Grinstead",
   "kind": "town in West Sussex",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q1277887",
   "source": "https://en.wikipedia.org/wiki/East_Grinstead",
-  "lat": null,
-  "lon": null
+  "lat": 51.1286,
+  "lon": -0.0144
  },
  "place-eastern-range": {
   "name": "Eastern Range",
@@ -2615,10 +2615,10 @@
   "name": "Feltre",
   "kind": "town in the Veneto, northern Italy",
   "nation": "Italy",
-  "wikidata": null,
+  "wikidata": "Q1465",
   "source": "https://en.wikipedia.org/wiki/Feltre",
-  "lat": null,
-  "lon": null
+  "lat": 46.0167,
+  "lon": 11.9
  },
  "place-feodosia": {
   "name": "Feodosia",
@@ -2694,13 +2694,13 @@
   "name": "Fort Des Moines Provisional Army Officer Training School",
   "kind": "Army training post, Des Moines, Iowa",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q5471055",
   "source": "https://en.wikipedia.org/wiki/Fort_Des_Moines_Provisional_Army_Officer_Training_School",
   "aka": [
    "Fort Des Moines"
   ],
-  "lat": null,
-  "lon": null
+  "lat": 41.5266,
+  "lon": -93.6152
  },
  "place-fort-eben-emael": {
   "name": "Fort Eben Emael",
@@ -2881,14 +2881,14 @@
   "name": "Gdansk",
   "kind": "Baltic port city, Danzig in 1942",
   "nation": "Poland",
-  "wikidata": null,
+  "wikidata": "Q1792",
   "source": "https://en.wikipedia.org/wiki/Gda%C5%84sk",
   "aka": [
    "Danzig",
    "Gdańsk"
   ],
-  "lat": null,
-  "lon": null
+  "lat": 54.3483,
+  "lon": 18.654
  },
  "place-gdynia": {
   "name": "Gdynia",
@@ -2951,10 +2951,10 @@
   "name": "George Washington Carver National Monument",
   "kind": "national monument at Carver's boyhood farm near Diamond, Missouri",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q967224",
   "source": "https://en.wikipedia.org/wiki/George_Washington_Carver_National_Monument",
-  "lat": null,
-  "lon": null
+  "lat": 36.9864,
+  "lon": -94.3542
  },
  "place-gibraltar": {
   "name": "Gibraltar",
@@ -2969,10 +2969,10 @@
   "name": "Gifu",
   "kind": "prefectural capital in central Japan",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q45798",
   "source": "https://en.wikipedia.org/wiki/Gifu",
-  "lat": null,
-  "lon": null
+  "lat": 35.4263,
+  "lon": 136.7594
  },
  "place-gilbert-islands": {
   "name": "Gilbert Islands",
@@ -3826,10 +3826,10 @@
   "name": "IG Farben Building",
   "kind": "headquarters building",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q663140",
   "source": "https://en.wikipedia.org/wiki/IG_Farben_Building",
-  "lat": null,
-  "lon": null
+  "lat": 50.1256,
+  "lon": 8.6675
  },
  "place-ijmuiden": {
   "name": "IJmuiden",
@@ -4007,10 +4007,10 @@
   "name": "Jedwabne",
   "kind": "town in northeastern Poland",
   "nation": "Poland",
-  "wikidata": null,
+  "wikidata": "Q282380",
   "source": "https://en.wikipedia.org/wiki/Jedwabne",
-  "lat": null,
-  "lon": null
+  "lat": 53.2833,
+  "lon": 22.3
  },
  "place-jefferson-memorial": {
   "name": "Jefferson Memorial",
@@ -4171,10 +4171,10 @@
   "name": "Kamaishi",
   "kind": "ironworks city in Iwate, northern Honshu",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q329790",
   "source": "https://en.wikipedia.org/wiki/Kamaishi",
-  "lat": null,
-  "lon": null
+  "lat": 39.2758,
+  "lon": 141.8857
  },
  "place-kandanos": {
   "name": "Kandanos",
@@ -4595,10 +4595,10 @@
   "name": "Kovno Ghetto",
   "kind": "ghetto, later concentration camp",
   "nation": "Lithuania",
-  "wikidata": null,
+  "wikidata": "Q700112",
   "source": "https://en.wikipedia.org/wiki/Kovno_Ghetto",
-  "lat": null,
-  "lon": null,
+  "lat": 54.906,
+  "lon": 23.889,
   "aka": [
    "Kaunas ghetto",
    "Kauen concentration camp"
@@ -4617,10 +4617,10 @@
   "name": "Krasnogorsk",
   "kind": "town near Moscow, site of the NKFD founding",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q155569",
   "source": "https://en.wikipedia.org/wiki/Krasnogorsk,_Moscow_Oblast",
-  "lat": null,
-  "lon": null
+  "lat": 55.8217,
+  "lon": 37.3386
  },
  "place-krasny-oktyabr-steel-plant": {
   "name": "Red October steel works",
@@ -4955,10 +4955,10 @@
   "name": "Leipheim",
   "kind": "town and airfield in Bavaria",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q504354",
   "source": "https://en.wikipedia.org/wiki/Leipheim",
-  "lat": null,
-  "lon": null
+  "lat": 48.4489,
+  "lon": 10.2208
  },
  "place-leipzig": {
   "name": "Leipzig",
@@ -5090,10 +5090,10 @@
   "name": "Livorno",
   "kind": "Tuscan port city",
   "nation": "Italy",
-  "wikidata": null,
+  "wikidata": "Q6761",
   "source": "https://en.wikipedia.org/wiki/Livorno",
-  "lat": null,
-  "lon": null,
+  "lat": 43.55,
+  "lon": 10.3167,
   "aka": [
    "Leghorn"
   ]
@@ -5556,10 +5556,10 @@
   "name": "Mar del Plata",
   "kind": "Argentine port city and naval base",
   "nation": "Argentina",
-  "wikidata": null,
+  "wikidata": "Q52607",
   "source": "https://en.wikipedia.org/wiki/Mar_del_Plata",
-  "lat": null,
-  "lon": null
+  "lat": -38.0,
+  "lon": -57.55
  },
  "place-marianske-lazne": {
   "name": "Marianske Lazne",
@@ -5774,10 +5774,10 @@
   "name": "Melilla",
   "kind": "Spanish city on the North African coast",
   "nation": "Spain",
-  "wikidata": null,
+  "wikidata": "Q5831",
   "source": "https://en.wikipedia.org/wiki/Melilla",
-  "lat": null,
-  "lon": null
+  "lat": 35.2825,
+  "lon": -2.9475
  },
  "place-memoriale-della-shoah": {
   "name": "Memoriale della Shoah",
@@ -5844,10 +5844,10 @@
   "name": "Michniów",
   "kind": "village in the Kielce region of Poland",
   "nation": "Poland",
-  "wikidata": null,
+  "wikidata": "Q633336",
   "source": "https://en.wikipedia.org/wiki/Michni%C3%B3w",
-  "lat": null,
-  "lon": null
+  "lat": 51.0081,
+  "lon": 20.8439
  },
  "place-middelburg-zeeland": {
   "name": "Middelburg",
@@ -5880,10 +5880,10 @@
   "name": "Ministers' Building",
   "kind": "government Secretariat building in Yangon",
   "nation": "Burma",
-  "wikidata": null,
+  "wikidata": "Q6866494",
   "source": "https://en.wikipedia.org/wiki/Ministers%27_Building",
-  "lat": null,
-  "lon": null,
+  "lat": 16.7756,
+  "lon": 96.1658,
   "aka": [
    "Secretariat Building, Rangoon"
   ]
@@ -6174,10 +6174,10 @@
   "name": "Moton Field",
   "kind": "primary flight training field at Tuskegee, Alabama",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q3887824",
   "source": "https://en.wikipedia.org/wiki/Moton_Field_Municipal_Airport",
-  "lat": null,
-  "lon": null,
+  "lat": 32.4606,
+  "lon": -85.68,
   "aka": [
    "Moton Field"
   ]
@@ -6234,10 +6234,10 @@
   "name": "Moyale",
   "kind": "border town",
   "nation": "Kenya",
-  "wikidata": null,
+  "wikidata": "Q1009179",
   "source": "https://en.wikipedia.org/wiki/Moyale",
-  "lat": null,
-  "lon": null
+  "lat": 3.527,
+  "lon": 39.056
  },
  "place-moyeuvre-grande": {
   "name": "Moyeuvre",
@@ -6282,10 +6282,10 @@
   "name": "Munster",
   "kind": "city",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q2742",
   "source": "https://en.wikipedia.org/wiki/M%C3%BCnster",
-  "lat": null,
-  "lon": null
+  "lat": 51.9625,
+  "lon": 7.6256
  },
  "place-murmansk": {
   "name": "Murmansk",
@@ -6300,10 +6300,10 @@
   "name": "Muroran",
   "kind": "steel city on Hokkaido",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q496667",
   "source": "https://en.wikipedia.org/wiki/Muroran",
-  "lat": null,
-  "lon": null
+  "lat": 42.3152,
+  "lon": 140.974
  },
  "place-musashino-aircraft-plant": {
   "name": "Nakajima Musashino plant",
@@ -7884,13 +7884,13 @@
   "name": "Robert F. Kennedy Bridge",
   "kind": "bridge complex in New York City",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q125450",
   "source": "https://en.wikipedia.org/wiki/Robert_F._Kennedy_Bridge",
   "aka": [
    "Triborough Bridge"
   ],
-  "lat": null,
-  "lon": null
+  "lat": 40.78,
+  "lon": -73.9267
  },
  "place-rochester-new-york": {
   "name": "Rochester, New York",
@@ -7975,10 +7975,10 @@
   "name": "Rovno Ghetto",
   "kind": "Nazi ghetto",
   "nation": "Ukraine",
-  "wikidata": null,
+  "wikidata": "Q24205551",
   "source": "https://en.wikipedia.org/wiki/Rovno_Ghetto",
-  "lat": null,
-  "lon": null
+  "lat": 50.6167,
+  "lon": 26.25
  },
  "place-royal-arsenal": {
   "name": "Royal Arsenal, Woolwich",
@@ -8252,10 +8252,10 @@
   "name": "San Lorenzo",
   "kind": "working class district of Rome",
   "nation": "Italy",
-  "wikidata": null,
+  "wikidata": "Q541703",
   "source": "https://en.wikipedia.org/wiki/San_Lorenzo_(Rome)",
-  "lat": null,
-  "lon": null
+  "lat": 41.8971,
+  "lon": 12.5157
  },
  "place-san-pietro-infine": {
   "name": "San Pietro Infine",
@@ -8475,13 +8475,13 @@
   "name": "Sete",
   "kind": "French Mediterranean port",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q191141",
   "source": "https://en.wikipedia.org/wiki/S%C3%A8te",
   "aka": [
    "Sète"
   ],
-  "lat": null,
-  "lon": null
+  "lat": 43.4044,
+  "lon": 3.6967
  },
  "place-setif": {
   "name": "Setif",
@@ -8544,10 +8544,10 @@
   "name": "Shibe Park",
   "kind": "ballpark, Philadelphia",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q7496044",
   "source": "https://en.wikipedia.org/wiki/Shibe_Park",
-  "lat": null,
-  "lon": null
+  "lat": 39.996,
+  "lon": -75.1646
  },
  "place-shiprock-new-mexico": {
   "name": "Shiprock, New Mexico",
@@ -8832,10 +8832,10 @@
   "name": "St. Lambert's Church, Munster",
   "kind": "church",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q896612",
   "source": "https://en.wikipedia.org/wiki/St._Lambert%27s_Church,_M%C3%BCnster",
-  "lat": null,
-  "lon": null
+  "lat": 51.9629,
+  "lon": 7.6286
  },
  "place-st-lawrence-newfoundland-and-labrador": {
   "name": "St. Lawrence, Newfoundland and Labrador",
@@ -8880,10 +8880,10 @@
   "name": "Stadelheim Prison",
   "kind": "prison, Munich",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q674722",
   "source": "https://en.wikipedia.org/wiki/Stadelheim_Prison",
-  "lat": null,
-  "lon": null
+  "lat": 48.0997,
+  "lon": 11.5919
  },
  "place-stalag-luft-iii": {
   "name": "Stalag Luft III",
@@ -9021,10 +9021,10 @@
   "name": "Suicide Cliff",
   "kind": "cliff near Marpi Point, Saipan",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q14192457",
   "source": "https://en.wikipedia.org/wiki/Suicide_Cliff",
-  "lat": null,
-  "lon": null
+  "lat": 15.2772,
+  "lon": 145.8097
  },
  "place-sulu-sea": {
   "name": "Sulu Sea",
@@ -9337,13 +9337,13 @@
   "name": "Theresienstadt family camp",
   "kind": "section BIIb of Auschwitz II Birkenau holding Jews from Theresienstadt",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q15850658",
   "source": "https://en.wikipedia.org/wiki/Theresienstadt_family_camp",
   "aka": [
    "Czech family camp"
   ],
-  "lat": null,
-  "lon": null
+  "lat": 50.0358,
+  "lon": 19.1783
  },
  "place-tianjin": {
   "name": "Tianjin",
@@ -9801,10 +9801,10 @@
   "name": "Utsunomiya",
   "kind": "city in Tochigi Prefecture, Japan",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q200589",
   "source": "https://en.wikipedia.org/wiki/Utsunomiya",
-  "lat": null,
-  "lon": null
+  "lat": 36.5551,
+  "lon": 139.8826
  },
  "place-vagsoy-island": {
   "name": "Vågsøy (island)",
@@ -9889,10 +9889,10 @@
   "name": "Vichy",
   "kind": "town, seat of the French State from 1940",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q93351",
   "source": "https://en.wikipedia.org/wiki/Vichy",
-  "lat": null,
-  "lon": null
+  "lat": 46.1269,
+  "lon": 3.4258
  },
  "place-victoria-terrasse": {
   "name": "Victoria Terrasse",
@@ -9934,10 +9934,10 @@
   "name": "Vilnius",
   "kind": "city",
   "nation": "Lithuania",
-  "wikidata": null,
+  "wikidata": "Q216",
   "source": "https://en.wikipedia.org/wiki/Vilnius",
-  "lat": null,
-  "lon": null,
+  "lat": 54.6872,
+  "lon": 25.28,
   "aka": [
    "Wilno"
   ]
@@ -10236,10 +10236,10 @@
   "name": "Westerbork transit camp",
   "kind": "Nazi transit camp in the occupied Netherlands",
   "nation": "Netherlands",
-  "wikidata": null,
+  "wikidata": "Q323420",
   "source": "https://en.wikipedia.org/wiki/Westerbork_transit_camp",
-  "lat": null,
-  "lon": null,
+  "lat": 52.9217,
+  "lon": 6.5701,
   "aka": [
    "Camp Westerbork",
    "Kamp Westerbork"

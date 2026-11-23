@@ -3,7 +3,7 @@
   "name": "100th Infantry Battalion",
   "kind": "U.S. Army Nisei infantry battalion, part of the 442nd Regimental Combat Team",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q4546241",
   "source": "https://en.wikipedia.org/wiki/100th_Infantry_Battalion",
   "aka": [
    "100th Infantry Battalion (United States)",
@@ -49,7 +49,7 @@
   "name": "105th Infantry Regiment (United States)",
   "kind": "U.S. Army infantry regiment, 27th Infantry Division",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q25214360",
   "source": "https://en.wikipedia.org/wiki/105th_Infantry_Regiment_(United_States)"
  },
  "unit-106th-infantry-division-united-states": {
@@ -357,7 +357,7 @@
   "name": "180th Infantry Regiment",
   "kind": "U.S. Army infantry regiment, 45th Division",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q4553913",
   "source": "https://en.wikipedia.org/wiki/180th_Cavalry_Regiment",
   "aka": [
    "180th Cavalry Regiment"
@@ -409,7 +409,7 @@
   "name": "1st Airlanding Brigade",
   "kind": "British glider infantry brigade",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q4596104",
   "source": "https://en.wikipedia.org/wiki/1st_Airlanding_Brigade"
  },
  "unit-1st-armoured-division-united-kingdom": {
@@ -516,7 +516,7 @@
   "name": "1st Parachute Brigade (United Kingdom)",
   "kind": "British airborne brigade",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q4596538",
   "source": "https://en.wikipedia.org/wiki/1st_Parachute_Brigade_(United_Kingdom)"
  },
  "unit-1st-parachute-division": {
@@ -533,7 +533,7 @@
   "name": "1st Provisional Marine Brigade",
   "kind": "U.S. Marine brigade, Iceland garrison 1941",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q11616",
   "source": "https://en.wikipedia.org/wiki/1st_Provisional_Marine_Brigade"
  },
  "unit-1st-special-operations-wing": {
@@ -1361,7 +1361,7 @@
   "name": "4th Infantry Division \"Livorno\"",
   "kind": "Italian infantry division",
   "nation": "Italy",
-  "wikidata": null,
+  "wikidata": "Q3599209",
   "source": "https://en.wikipedia.org/wiki/4th_Infantry_Division_%22Livorno%22"
  },
  "unit-4th-marine-division": {
@@ -1399,7 +1399,7 @@
   "name": "503rd Heavy Panzer Battalion",
   "kind": "German Army heavy tank battalion (Tigers)",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q3952213",
   "source": "https://en.wikipedia.org/wiki/503rd_Heavy_Panzer_Battalion"
  },
  "unit-503rd-infantry-regiment": {
@@ -1417,7 +1417,7 @@
   "name": "504th Infantry Regiment",
   "kind": "U.S. Army parachute infantry regiment, 82nd Airborne Division",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q12052523",
   "source": "https://en.wikipedia.org/wiki/504th_Infantry_Regiment",
   "aka": [
    "504th Parachute Infantry Regiment"
@@ -1465,7 +1465,7 @@
   "name": "52nd Troop Carrier Wing",
   "kind": "USAAF troop carrier wing",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q16056780",
   "source": "https://en.wikipedia.org/wiki/52nd_Troop_Carrier_Wing",
   "aka": [
    "52d Troop Carrier Wing"
@@ -1496,7 +1496,7 @@
   "name": "5th Guards Tank Army",
   "kind": "Red Army tank army",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q2594845",
   "source": "https://en.wikipedia.org/wiki/5th_Guards_Tank_Army"
  },
  "unit-5th-infantry-division-india": {
@@ -1781,7 +1781,7 @@
   "name": "82nd Airborne Division",
   "kind": "U.S. Army airborne division",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q2358",
   "source": "https://en.wikipedia.org/wiki/82nd_Airborne_Division"
  },
  "unit-83rd-infantry-division-united-states": {
@@ -1955,7 +1955,7 @@
   "name": "Air Raid Precautions",
   "kind": "civil defence organisation",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q448717",
   "source": "https://en.wikipedia.org/wiki/Air_Raid_Precautions",
   "aka": [
    "ARP"
@@ -2444,7 +2444,7 @@
   "name": "China Democratic League",
   "kind": "Chinese political party",
   "nation": "China",
-  "wikidata": null,
+  "wikidata": "Q1348513",
   "source": "https://en.wikipedia.org/wiki/China_Democratic_League"
  },
  "unit-chindits": {
@@ -2617,7 +2617,7 @@
   "name": "Danat-Bank",
   "kind": "German commercial bank",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q927867",
   "source": "https://en.wikipedia.org/wiki/Danat-Bank",
   "aka": [
    "Danatbank",
@@ -2719,7 +2719,7 @@
   "name": "Eighteenth Army (Japan)",
   "kind": "Imperial Japanese Army field army in New Guinea",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q5349071",
   "source": "https://en.wikipedia.org/wiki/Eighteenth_Army_(Japan)",
   "aka": [
    "18th Army"
@@ -3014,7 +3014,7 @@
   "name": "Free France",
   "kind": "de Gaulle's government in exile and its forces",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q152582",
   "source": "https://en.wikipedia.org/wiki/Free_France",
   "aka": [
    "Free French"
@@ -3169,7 +3169,7 @@
   "name": "The Highland Light Infantry of Canada",
   "kind": "infantry battalion",
   "nation": "Canada",
-  "wikidata": null,
+  "wikidata": "Q525451",
   "source": "https://en.wikipedia.org/wiki/Highland_Light_Infantry_of_Canada"
  },
  "unit-hilfspolizei": {
@@ -3443,7 +3443,7 @@
   "name": "Joint Chiefs of Staff",
   "kind": "U.S. military chiefs' committee",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q609474",
   "source": "https://en.wikipedia.org/wiki/Joint_Chiefs_of_Staff",
   "aka": [
    "JCS",
@@ -3529,7 +3529,7 @@
   "name": "King's African Rifles",
   "kind": "British colonial regiment",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q1742184",
   "source": "https://en.wikipedia.org/wiki/King%27s_African_Rifles"
  },
  "unit-king-s-own-royal-regiment-lancaster": {
@@ -3839,7 +3839,7 @@
   "name": "National Committee for a Free Germany",
   "kind": "anti Nazi committee of German POWs and exiles founded in the Soviet Union",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q700570",
   "source": "https://en.wikipedia.org/wiki/National_Committee_for_a_Free_Germany",
   "aka": [
    "NKFD",
@@ -3929,7 +3929,7 @@
   "name": "NBC Symphony Orchestra",
   "kind": "radio orchestra",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q1777060",
   "source": "https://en.wikipedia.org/wiki/NBC_Symphony_Orchestra"
  },
  "unit-new-1st-army": {
@@ -4040,7 +4040,7 @@
   "name": "No. 111 Squadron RAF",
   "kind": "RAF fighter squadron",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q7042866",
   "source": "https://en.wikipedia.org/wiki/No._111_Squadron_RAF"
  },
  "unit-no-115-squadron-raf": {
@@ -4120,7 +4120,7 @@
   "name": "No. 210 Squadron RAF",
   "kind": "RAF Coastal Command flying boat squadron",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q7043145",
   "source": "https://en.wikipedia.org/wiki/No._210_Squadron_RAF"
  },
  "unit-no-22-squadron-raf": {
@@ -4148,7 +4148,7 @@
   "name": "No. 228 Squadron RAF",
   "kind": "flying boat squadron",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q7043185",
   "source": "https://en.wikipedia.org/wiki/No._228_Squadron_RAF"
  },
  "unit-no-233-squadron-raf": {
@@ -4364,7 +4364,7 @@
   "name": "No. 90 Squadron RAF",
   "kind": "bomber squadron",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q3494420",
   "source": "https://en.wikipedia.org/wiki/No._90_Squadron_RAF"
  },
  "unit-north-american-aviation": {
@@ -4477,7 +4477,7 @@
   "name": "Office of the Coordinator of Information",
   "kind": "U.S. civilian intelligence agency, forerunner of the OSS",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q2790854",
   "source": "https://en.wikipedia.org/wiki/Office_of_the_Coordinator_of_Information",
   "aka": [
    "COI"
@@ -5226,7 +5226,7 @@
   "name": "The Eighty (Vichy France)",
   "kind": "group of French parliamentarians who voted against full powers for Pétain",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q710520",
   "source": "https://en.wikipedia.org/wiki/The_Eighty_(Vichy_France)",
   "aka": [
    "Vichy 80",
@@ -5327,7 +5327,7 @@
   "name": "Ukrainian Insurgent Army",
   "kind": "Ukrainian nationalist armed force",
   "nation": "Ukraine",
-  "wikidata": null,
+  "wikidata": "Q737212",
   "source": "https://en.wikipedia.org/wiki/Ukrainian_Insurgent_Army",
   "aka": [
    "UPA"
