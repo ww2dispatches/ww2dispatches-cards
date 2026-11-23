@@ -37,6 +37,17 @@
    "1920 Olympics"
   ]
  },
+ "op-1932-prussian-coup-d-etat": {
+  "name": "1932 Prussian coup d'etat",
+  "kind": "removal of the Prussian government by decree",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1932_Prussian_coup_d%27%C3%A9tat",
+  "aka": [
+   "Preussenschlag",
+   "Preußenschlag"
+  ]
+ },
  "op-1932-prussian-state-election": {
   "name": "1932 Prussian state election",
   "kind": "state election",
@@ -299,6 +310,13 @@
   "nation": "Britain",
   "wikidata": "Q17989657",
   "source": "https://en.wikipedia.org/wiki/1944_Bombay_explosion"
+ },
+ "op-1944-democratic-national-convention": {
+  "name": "1944 Democratic National Convention",
+  "kind": "U.S. party convention in Chicago",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1944_Democratic_National_Convention"
  },
  "op-1944-republican-national-convention": {
   "name": "1944 Republican National Convention",
@@ -1311,6 +1329,13 @@
   "nation": "Japan",
   "wikidata": "Q2117492",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Badung_Strait"
+ },
+ "op-battle-of-bairoko": {
+  "name": "Battle of Bairoko",
+  "kind": "Marine Raider attack on New Georgia, 20 July 1943",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Bairoko"
  },
  "op-battle-of-balikpapan-1942": {
   "name": "Battle of Balikpapan (1942)",
@@ -8202,6 +8227,13 @@
   "nation": "Germany",
   "wikidata": "Q335200",
   "source": "https://en.wikipedia.org/wiki/Reichskommissariat_Norwegen"
+ },
+ "op-reichskonkordat": {
+  "name": "Reichskonkordat",
+  "kind": "treaty between the Holy See and the German Reich, 1933",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Reichskonkordat"
  },
  "op-reichstag-fire": {
   "name": "Reichstag fire",

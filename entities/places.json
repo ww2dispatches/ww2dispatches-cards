@@ -741,6 +741,15 @@
   "lat": 50.3717,
   "lon": 23.4575
  },
+ "place-bendlerblock": {
+  "name": "Bendlerblock",
+  "kind": "Army headquarters building in Berlin",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bendlerblock",
+  "lat": null,
+  "lon": null
+ },
  "place-benghazi": {
   "name": "Benghazi",
   "kind": "port city",
@@ -1466,6 +1475,18 @@
   "wikidata": "Q926115",
   "lat": -6.25,
   "lon": 155.0333
+ },
+ "place-capitol-theatre-new-york-city": {
+  "name": "Capitol Theatre (New York City)",
+  "kind": "movie palace on Broadway",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Capitol_Theatre_(New_York_City)",
+  "aka": [
+   "Loew's Capitol Theatre"
+  ],
+  "lat": null,
+  "lon": null
  },
  "place-cardiff": {
   "name": "Cardiff",
@@ -2659,6 +2680,18 @@
   "wikidata": "Q823081",
   "lat": 49.3797,
   "lon": 6.2578
+ },
+ "place-fort-des-moines-provisional-army-officer-training-school": {
+  "name": "Fort Des Moines Provisional Army Officer Training School",
+  "kind": "Army training post, Des Moines, Iowa",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fort_Des_Moines_Provisional_Army_Officer_Training_School",
+  "aka": [
+   "Fort Des Moines"
+  ],
+  "lat": null,
+  "lon": null
  },
  "place-fort-eben-emael": {
   "name": "Fort Eben Emael",

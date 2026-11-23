@@ -1196,6 +1196,14 @@
    "HNS-1 Hoverfly"
   ]
  },
+ "aircraft-straight-flush": {
+  "name": "Straight Flush",
+  "kind": "509th Composite Group Silverplate B-29",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Straight_Flush",
+  "note": "A single named aircraft; its own entity because the Tokyo pumpkin bomb story is about its mission."
+ },
  "aircraft-supermarine-spitfire": {
   "name": "Supermarine Spitfire",
   "kind": "fighter",

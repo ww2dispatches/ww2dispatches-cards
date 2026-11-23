@@ -3165,6 +3165,13 @@
   "wikidata": "Q3022185",
   "source": "https://en.wikipedia.org/wiki/HMS_Inglefield"
  },
+ "ship-hms-isis-d87": {
+  "name": "HMS Isis (D87)",
+  "kind": "Royal Navy destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Isis_(D87)"
+ },
  "ship-hms-jackal-f22": {
   "name": "HMS Jackal (F22)",
   "kind": "destroyer",
@@ -3794,6 +3801,13 @@
   "nation": "Britain",
   "wikidata": "Q5634741",
   "source": "https://en.wikipedia.org/wiki/HMS_Undine_(N48)"
+ },
+ "ship-hms-union-n56": {
+  "name": "HMS Union (N56)",
+  "kind": "Royal Navy U class submarine",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Union_(N56)"
  },
  "ship-hms-untamed": {
   "name": "HMS Untamed",
@@ -4712,6 +4726,13 @@
   "wikidata": "Q1571378",
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Kisaragi_(1925)"
  },
+ "ship-japanese-destroyer-kiyonami": {
+  "name": "Japanese destroyer Kiyonami",
+  "kind": "Imperial Japanese Navy destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Kiyonami"
+ },
  "ship-japanese-destroyer-kiyoshimo": {
   "name": "Kiyoshimo",
   "kind": "Imperial Japanese Navy destroyer",
@@ -4919,6 +4940,17 @@
   "nation": "Japan",
   "wikidata": "Q1356815",
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Yamakaze_(1936)"
+ },
+ "ship-japanese-destroyer-yugure-1934": {
+  "name": "Japanese destroyer Yugure (1934)",
+  "kind": "Imperial Japanese Navy destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Y%C5%ABgure_(1934)",
+  "aka": [
+   "Yugure",
+   "Yūgure"
+  ]
  },
  "ship-japanese-destroyer-yukikaze-1939": {
   "name": "Yukikaze",

@@ -940,6 +940,13 @@
    "Mark 32 fuze"
   ]
  },
+ "machine-pumpkin-bomb": {
+  "name": "Pumpkin bomb",
+  "kind": "conventional practice bomb shaped like the Fat Man atomic bomb",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Pumpkin_bomb"
+ },
  "machine-raising-a-flag-over-the-reichstag": {
   "name": "Raising a Flag over the Reichstag",
   "kind": "1945 photograph by Yevgeny Khaldei",
@@ -1062,6 +1069,13 @@
   "nation": "Japan",
   "source": "https://en.wikipedia.org/wiki/Shinyo_(suicide_motorboat)",
   "wikidata": "Q2064422"
+ },
+ "machine-since-you-went-away": {
+  "name": "Since You Went Away",
+  "kind": "1944 Hollywood home front film",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Since_You_Went_Away"
  },
  "machine-sliced-bread": {
   "name": "Sliced bread",
