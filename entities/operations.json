@@ -344,6 +344,16 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/1948_Arab%E2%80%93Israeli_War"
  },
+ "op-1948-columbia-river-flood": {
+  "name": "1948 Columbia River flood",
+  "kind": "flood that destroyed Vanport",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1948_Columbia_River_flood",
+  "aka": [
+   "Vanport Flood"
+  ]
+ },
  "op-1948-czechoslovak-coup-d-etat": {
   "name": "1948 Czechoslovak coup d'etat",
   "kind": "Communist seizure of power in Prague",
@@ -850,6 +860,13 @@
   "nation": "Britain",
   "wikidata": "Q4829842",
   "source": "https://en.wikipedia.org/wiki/Award_of_the_George_Cross_to_Malta"
+ },
+ "op-axis-occupation-of-greece": {
+  "name": "Axis occupation of Greece",
+  "kind": "occupation 1941 to 1944",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Axis_occupation_of_Greece"
  },
  "op-axis-powers-negotiations-on-the-division-of-asia": {
   "name": "Axis powers negotiations on the division of Asia",
@@ -2469,6 +2486,16 @@
   "wikidata": "Q717569",
   "source": "https://en.wikipedia.org/wiki/Blood,_toil,_tears_and_sweat"
  },
+ "op-blum-byrnes-agreement": {
+  "name": "Blum-Byrnes agreement",
+  "kind": "French and American financial agreements",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Blum%E2%80%93Byrnes_agreement",
+  "aka": [
+   "Blum-Byrnes agreements"
+  ]
+ },
  "op-bombardment-of-almeria": {
   "name": "Bombardment of Almeria",
   "kind": "German naval reprisal bombardment, Spanish Civil War",
@@ -2552,6 +2579,17 @@
   "nation": "Japan",
   "wikidata": "Q705165",
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Chongqing"
+ },
+ "op-bombing-of-cologne-in-world-war-ii": {
+  "name": "Bombing of Cologne in World War II",
+  "kind": "Allied bombing campaign",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Cologne_in_World_War_II",
+  "aka": [
+   "Operation Millennium",
+   "thousand bomber raid"
+  ]
  },
  "op-bombing-of-darwin": {
   "name": "Bombing of Darwin",
@@ -2877,6 +2915,13 @@
   "nation": "Britain",
   "wikidata": "Q2244681",
   "source": "https://en.wikipedia.org/wiki/British_Summer_Time"
+ },
+ "op-brno-death-march": {
+  "name": "Brno death march",
+  "kind": "expulsion of Brno's German speaking population, 1945",
+  "nation": "Czechoslovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Brno_death_march"
  },
  "op-bsaa-star-tiger-disappearance": {
   "name": "BSAA Star Tiger disappearance",
@@ -7908,6 +7953,16 @@
   "nation": "Japan",
   "wikidata": "Q12073121",
   "source": "https://en.wikipedia.org/wiki/Women's_suffrage_in_Japan"
+ },
+ "op-wormhoudt-massacre": {
+  "name": "Wormhoudt massacre",
+  "kind": "massacre of prisoners of war",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Wormhoudt_massacre",
+  "aka": [
+   "La Plaine au Bois"
+  ]
  },
  "op-xi-an-incident": {
   "name": "Xi'an Incident",

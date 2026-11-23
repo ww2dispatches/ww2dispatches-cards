@@ -209,6 +209,13 @@
   "source": "https://en.wikipedia.org/wiki/141st_Infantry_Regiment_(United_States)",
   "wikidata": "Q4549664"
  },
+ "unit-142nd-infantry-regiment-united-states": {
+  "name": "142nd Infantry Regiment (United States)",
+  "kind": "infantry regiment of the 36th Division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/142nd_Infantry_Regiment_(United_States)"
+ },
  "unit-14th-army-wehrmacht": {
   "name": "14th Army (Wehrmacht)",
   "kind": "German field army",
@@ -1702,6 +1709,16 @@
    "Alabama Dry Dock and Shipbuilding Company"
   ]
  },
+ "unit-all-american-girls-professional-baseball-league": {
+  "name": "All-American Girls Professional Baseball League",
+  "kind": "women's professional baseball league",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/All-American_Girls_Professional_Baseball_League",
+  "aka": [
+   "AAGPBL"
+  ]
+ },
  "unit-all-india-muslim-league": {
   "name": "All-India Muslim League",
   "kind": "political party",
@@ -2769,6 +2786,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Imperial_Diet"
  },
+ "unit-imperial-general-headquarters": {
+  "name": "Imperial General Headquarters",
+  "kind": "Japanese supreme military command",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Imperial_General_Headquarters"
+ },
  "unit-imperial-guard-japan": {
   "name": "Imperial Guard (Japan)",
   "kind": "Imperial Japanese Army guards division",
@@ -2806,6 +2830,13 @@
    "Yokusan Seijikai",
    "IRAPA"
   ]
+ },
+ "unit-international-brigades": {
+  "name": "International Brigades",
+  "kind": "foreign volunteer units of the Spanish Republic",
+  "nation": "Spain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/International_Brigades"
  },
  "unit-international-civil-aviation-organization": {
   "name": "International Civil Aviation Organization",
@@ -4115,6 +4146,13 @@
   "nation": "Britain",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Royal_Norfolk_Regiment"
+ },
+ "unit-royal-warwickshire-regiment": {
+  "name": "Royal Warwickshire Regiment",
+  "kind": "British Army infantry regiment",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Royal_Warwickshire_Regiment"
  },
  "unit-royal-westminster-regiment": {
   "name": "The Westminster Regiment",

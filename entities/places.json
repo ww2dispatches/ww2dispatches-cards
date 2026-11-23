@@ -44,6 +44,18 @@
   "lat": 5.556,
   "lon": -0.1969
  },
+ "place-acropolis-of-athens": {
+  "name": "Acropolis of Athens",
+  "kind": "ancient citadel",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Acropolis_of_Athens",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Acropolis"
+  ]
+ },
  "place-addis-ababa": {
   "name": "Addis Ababa",
   "kind": "city",
@@ -1004,6 +1016,18 @@
   "lat": 51.4536,
   "lon": -2.5975
  },
+ "place-brno": {
+  "name": "Brno",
+  "kind": "city in Moravia",
+  "nation": "Czechoslovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Brno",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Brünn"
+  ]
+ },
  "place-broome-western-australia": {
   "name": "Broome, Western Australia",
   "kind": "port town",
@@ -1326,6 +1350,15 @@
   "wikidata": "Q7903",
   "lat": 33.5992,
   "lon": -7.62
+ },
+ "place-cassel-nord": {
+  "name": "Cassel, Nord",
+  "kind": "hilltop town in northern France",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Cassel,_Nord",
+  "lat": null,
+  "lon": null
  },
  "place-cassino": {
   "name": "Cassino",
@@ -2119,6 +2152,15 @@
   "source": "https://en.wikipedia.org/wiki/Elisabeth_Bridge_(Budapest)",
   "lat": 47.4908,
   "lon": 19.0492
+ },
+ "place-ellis-island": {
+  "name": "Ellis Island",
+  "kind": "island, immigration station and detention center",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ellis_Island",
+  "lat": null,
+  "lon": null
  },
  "place-ellwood-oil-field": {
   "name": "Ellwood Oil Field",
@@ -3058,6 +3100,15 @@
   "lat": 52.2656,
   "lon": 6.7931
  },
+ "place-heraklion": {
+  "name": "Heraklion",
+  "kind": "port city, Crete",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Heraklion",
+  "lat": null,
+  "lon": null
+ },
  "place-herzogenbusch-concentration-camp": {
   "name": "Herzogenbusch concentration camp",
   "kind": "Nazi camp at Vught",
@@ -3367,6 +3418,15 @@
   "lat": 51.4887,
   "lon": -0.0186
  },
+ "place-isle-of-thanet": {
+  "name": "Isle of Thanet",
+  "kind": "district, Kent",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Isle_of_Thanet",
+  "lat": null,
+  "lon": null
+ },
  "place-isley-field-saipan": {
   "name": "Isley Field, Saipan",
   "kind": "airfield",
@@ -3553,6 +3613,15 @@
   "note": "'Lanikai, Hawaii' redirects here.",
   "lat": 21.3972,
   "lon": -157.7394
+ },
+ "place-kaiser-shipyards": {
+  "name": "Kaiser Shipyards",
+  "kind": "wartime shipyards in Richmond, Portland and Vancouver",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kaiser_Shipyards",
+  "lat": null,
+  "lon": null
  },
  "place-kaiser-wilhelm-memorial-church": {
   "name": "Kaiser Wilhelm Memorial Church",
@@ -4619,6 +4688,15 @@
   "lat": 14.5939,
   "lon": 120.9945
  },
+ "place-malgrat-de-mar": {
+  "name": "Malgrat de Mar",
+  "kind": "coastal town in Catalonia",
+  "nation": "Spain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Malgrat_de_Mar",
+  "lat": null,
+  "lon": null
+ },
  "place-malta": {
   "name": "Malta",
   "kind": "island, British colony in the war",
@@ -5510,6 +5588,15 @@
   "lat": 40.8358,
   "lon": 14.2486
  },
+ "place-narvik-town": {
+  "name": "Narvik",
+  "kind": "port town, Nordland",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Narvik_(town)",
+  "lat": null,
+  "lon": null
+ },
  "place-nassogne": {
   "name": "Nassogne",
   "kind": "Belgian municipality that includes Bande",
@@ -5682,6 +5769,18 @@
   "wikidata": "Q33959",
   "lat": 43.7019,
   "lon": 7.2683
+ },
+ "place-nieuwpoort-belgium": {
+  "name": "Nieuwpoort, Belgium",
+  "kind": "Belgian coastal town",
+  "nation": "Belgium",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Nieuwpoort,_Belgium",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Nieuport"
+  ]
  },
  "place-nijmegen": {
   "name": "Nijmegen",
@@ -7117,6 +7216,15 @@
   "lat": 18.4653,
   "lon": -66.1167
  },
+ "place-san-leandro-california": {
+  "name": "San Leandro, California",
+  "kind": "city in the East Bay",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/San_Leandro,_California",
+  "lat": null,
+  "lon": null
+ },
  "place-san-pietro-infine": {
   "name": "San Pietro Infine",
   "kind": "village",
@@ -7645,6 +7753,15 @@
   "source": "https://en.wikipedia.org/wiki/St._Lawrence,_Newfoundland_and_Labrador",
   "lat": 46.9244,
   "lon": -55.3928
+ },
+ "place-st-marychurch": {
+  "name": "St Marychurch",
+  "kind": "district of Torquay, Devon",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/St_Marychurch",
+  "lat": null,
+  "lon": null
  },
  "place-st-pauls-cathedral": {
   "name": "St Paul's Cathedral",
@@ -8239,6 +8356,15 @@
   "lat": -6.2472,
   "lon": 155.0488
  },
+ "place-torquay": {
+  "name": "Torquay",
+  "kind": "seaside town in Devon",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Torquay",
+  "lat": null,
+  "lon": null
+ },
  "place-toshima": {
   "name": "Toshima",
   "kind": "ward of Tokyo",
@@ -8436,6 +8562,18 @@
   "lat": 49.2608,
   "lon": -123.1139
  },
+ "place-vanport-oregon": {
+  "name": "Vanport, Oregon",
+  "kind": "wartime public housing city",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Vanport,_Oregon",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Vanport"
+  ]
+ },
  "place-velikiye-luki": {
   "name": "Velikiye Luki",
   "kind": "city",
@@ -8444,6 +8582,15 @@
   "source": "https://en.wikipedia.org/wiki/Velikiye_Luki",
   "lat": 56.35,
   "lon": 30.5167
+ },
+ "place-velletri": {
+  "name": "Velletri",
+  "kind": "town in the Alban Hills",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Velletri",
+  "lat": null,
+  "lon": null
  },
  "place-vemork": {
   "name": "Vemork",

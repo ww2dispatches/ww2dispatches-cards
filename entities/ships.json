@@ -38,6 +38,17 @@
    "Kamakura Maru"
   ]
  },
+ "ship-ciudad-de-barcelona-1929-ship": {
+  "name": "Ciudad de Barcelona (1929 ship)",
+  "kind": "Spanish passenger liner",
+  "nation": "Spain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ciudad_de_Barcelona_(1929_ship)",
+  "aka": [
+   "Ciudad de Barcelona",
+   "Infante Don Jaime"
+  ]
+ },
  "ship-fire-fighter-fireboat": {
   "name": "Fire Fighter (fireboat)",
   "kind": "FDNY fireboat",
@@ -103,6 +114,16 @@
   "nation": "France",
   "wikidata": "Q935110",
   "source": "https://en.wikipedia.org/wiki/French_destroyer_Bison_(1928)"
+ },
+ "ship-french-destroyer-bourrasque": {
+  "name": "French destroyer Bourrasque",
+  "kind": "Bourrasque class destroyer",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/French_destroyer_Bourrasque",
+  "aka": [
+   "Bourrasque"
+  ]
  },
  "ship-french-destroyer-le-malin": {
   "name": "French destroyer Le Malin",
@@ -1614,6 +1635,16 @@
   "wikidata": "Q2572860",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-753"
  },
+ "ship-german-submarine-u-755": {
+  "name": "German submarine U-755",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-755",
+  "aka": [
+   "U-755"
+  ]
+ },
  "ship-german-submarine-u-77-1940": {
   "name": "U-77",
   "kind": "German Type VIIC submarine",
@@ -2799,6 +2830,13 @@
   "wikidata": "Q5633594",
   "source": "https://en.wikipedia.org/wiki/HMS_Opportune_(G80)"
  },
+ "ship-hms-orion-85": {
+  "name": "HMS Orion (85)",
+  "kind": "Leander class light cruiser",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Orion_(85)"
+ },
  "ship-hms-pathfinder-g10": {
   "name": "HMS Pathfinder (G10)",
   "kind": "Royal Navy destroyer",
@@ -3131,6 +3169,17 @@
   "nation": "Britain",
   "wikidata": "Q5634741",
   "source": "https://en.wikipedia.org/wiki/HMS_Undine_(N48)"
+ },
+ "ship-hms-untamed": {
+  "name": "HMS Untamed",
+  "kind": "U class submarine (P58)",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Untamed",
+  "aka": [
+   "HMS Vitality",
+   "P58"
+  ]
  },
  "ship-hms-upholder-p37": {
   "name": "HMS Upholder (P37)",
@@ -3466,6 +3515,16 @@
   "nation": "Italy",
   "wikidata": "Q1118508",
   "source": "https://en.wikipedia.org/wiki/Italian_submarine_Ambra"
+ },
+ "ship-italian-submarine-archimede-1933": {
+  "name": "Italian submarine Archimede (1933)",
+  "kind": "Archimede class submarine, transferred to the Spanish Nationalist navy",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_submarine_Archimede_(1933)",
+  "aka": [
+   "General Sanjurjo"
+  ]
  },
  "ship-italian-submarine-archimede-1939": {
   "name": "Archimede (1939)",
@@ -4648,6 +4707,13 @@
   "wikidata": "Q176255",
   "source": "https://en.wikipedia.org/wiki/Soviet_submarine_Shch-213"
  },
+ "ship-spanish-destroyer-velasco": {
+  "name": "Spanish destroyer Velasco",
+  "kind": "destroyer",
+  "nation": "Spain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Spanish_destroyer_Velasco"
+ },
  "ship-ss-absaroka": {
   "name": "SS Absaroka",
   "kind": "American lumber freighter",
@@ -5556,6 +5622,16 @@
   "nation": "US",
   "wikidata": "Q7868920",
   "source": "https://en.wikipedia.org/wiki/USS_Donnell"
+ },
+ "ship-uss-drexler": {
+  "name": "USS Drexler (DD-741)",
+  "kind": "Allen M. Sumner class destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Drexler",
+  "aka": [
+   "Drexler"
+  ]
  },
  "ship-uss-drum-ss-228": {
   "name": "USS Drum (SS-228)",
