@@ -328,6 +328,13 @@
   "wikidata": "Q4553514",
   "source": "https://en.wikipedia.org/wiki/179th_Infantry_Regiment_(United_States)"
  },
+ "unit-18th-army-wehrmacht": {
+  "name": "18th Army (Wehrmacht)",
+  "kind": "German field army",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/18th_Army_(Wehrmacht)"
+ },
  "unit-19th-army-wehrmacht": {
   "name": "19th Army (Wehrmacht)",
   "kind": "German field army",
@@ -419,6 +426,16 @@
   "source": "https://en.wikipedia.org/wiki/1st_Fallschirm-Panzer_Division_Hermann_G%C3%B6ring",
   "aka": [
    "Hermann Goring Division"
+  ]
+ },
+ "unit-1st-free-french-division": {
+  "name": "1st Free French Division",
+  "kind": "Free French formation, the 1st Free French Brigade at Bir Hakeim",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1st_Free_French_Division",
+  "aka": [
+   "1st Free French Brigade"
   ]
  },
  "unit-1st-infantry-division-united-states": {
@@ -563,6 +580,13 @@
   "nation": "Germany",
   "source": "https://en.wikipedia.org/wiki/22nd_Panzer_Division",
   "wikidata": "Q214479"
+ },
+ "unit-24th-brigade-australia": {
+  "name": "24th Brigade (Australia)",
+  "kind": "infantry brigade",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/24th_Brigade_(Australia)"
  },
  "unit-24th-infantry-division-united-states": {
   "name": "24th Infantry Division",
@@ -814,6 +838,13 @@
   "wikidata": "Q4633729",
   "source": "https://en.wikipedia.org/wiki/2nd_South_African_Infantry_Division"
  },
+ "unit-2nd-ss-panzer-division-das-reich": {
+  "name": "2nd SS Panzer Division Das Reich",
+  "kind": "Waffen SS armored division",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/2nd_SS_Panzer_Division_Das_Reich"
+ },
  "unit-2nd-ukrainian-front": {
   "name": "2nd Ukrainian Front",
   "kind": "Red Army front",
@@ -860,6 +891,16 @@
   "source": "https://en.wikipedia.org/wiki/32nd_Infantry_Division_(United_States)",
   "aka": [
    "Red Arrow Division"
+  ]
+ },
+ "unit-32nd-infantry-regiment-united-states": {
+  "name": "32nd Infantry Regiment (United States)",
+  "kind": "U.S. Army infantry regiment, 7th Infantry Division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/32nd_Infantry_Regiment_(United_States)",
+  "aka": [
+   "32d Infantry"
   ]
  },
  "unit-333rd-field-artillery-battalion-united-states": {
@@ -1526,6 +1567,13 @@
   "source": "https://en.wikipedia.org/wiki/7th_Armoured_Division_(United_Kingdom)",
   "wikidata": "Q260830"
  },
+ "unit-7th-division-australia": {
+  "name": "7th Division (Australia)",
+  "kind": "Australian Army infantry division",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/7th_Division_(Australia)"
+ },
  "unit-7th-infantry-division-united-states": {
   "name": "7th Infantry Division",
   "kind": "Army infantry division",
@@ -2160,6 +2208,13 @@
   "source": "https://en.wikipedia.org/wiki/Churchill_Archives_Centre",
   "wikidata": "Q5118159"
  },
+ "unit-cincinnati-reds": {
+  "name": "Cincinnati Reds",
+  "kind": "major league baseball team",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Cincinnati_Reds"
+ },
  "unit-cincinnati-symphony-orchestra": {
   "name": "Cincinnati Symphony Orchestra",
   "kind": "orchestra",
@@ -2200,6 +2255,13 @@
   "nation": "Japan",
   "wikidata": "Q697037",
   "source": "https://en.wikipedia.org/wiki/Combined_Fleet"
+ },
+ "unit-combined-production-and-resources-board": {
+  "name": "Combined Production and Resources Board",
+  "kind": "Anglo American wartime production agency",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Combined_Production_and_Resources_Board"
  },
  "unit-commissariat-general-for-jewish-affairs": {
   "name": "Commissariat-General for Jewish Affairs",
@@ -2326,6 +2388,13 @@
   "nation": "Germany",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Deutsche_Reichsbahn_(East_Germany)"
+ },
+ "unit-dfds": {
+  "name": "DFDS",
+  "kind": "Danish shipping company, owner of the Kjobenhavn",
+  "nation": "Denmark",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/DFDS"
  },
  "unit-dogs-for-defense": {
   "name": "Dogs For Defense",
@@ -3524,6 +3593,13 @@
   "wikidata": "Q7042842",
   "source": "https://en.wikipedia.org/wiki/No._106_Squadron_RAF"
  },
+ "unit-no-11-scottish-commando": {
+  "name": "No. 11 (Scottish) Commando",
+  "kind": "British Army commando unit",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._11_(Scottish)_Commando"
+ },
  "unit-no-115-squadron-raf": {
   "name": "No. 115 Squadron RAF",
   "kind": "RAF Bomber Command squadron",
@@ -3805,6 +3881,13 @@
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/No._9_Squadron_RAF",
   "wikidata": "Q7043892"
+ },
+ "unit-north-american-aviation": {
+  "name": "North American Aviation",
+  "kind": "aircraft manufacturer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/North_American_Aviation"
  },
  "unit-north-nova-scotia-highlanders": {
   "name": "The North Nova Scotia Highlanders",

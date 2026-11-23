@@ -164,6 +164,13 @@
    "P-26"
   ]
  },
+ "aircraft-bristol-beaufighter": {
+  "name": "Bristol Beaufighter",
+  "kind": "British twin engine heavy fighter and strike aircraft",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bristol_Beaufighter"
+ },
  "aircraft-bristol-beaufort": {
   "name": "Bristol Beaufort",
   "kind": "torpedo bomber",
@@ -647,6 +654,16 @@
    "K-ship"
   ]
  },
+ "aircraft-kaleva-airplane": {
+  "name": "Kaleva",
+  "kind": "Aero O/Y Junkers Ju 52 airliner, OH-ALL",
+  "nation": "Finland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kaleva_(airplane)",
+  "aka": [
+   "Aero Flight 1631"
+  ]
+ },
  "aircraft-kamikaze-1937-aircraft": {
   "name": "Kamikaze (J-BAAI)",
   "kind": "single named record flight airplane, Ki-15 prototype",
@@ -982,6 +999,13 @@
    "Mustang",
    "P-51B"
   ]
+ },
+ "aircraft-northrop-yb-49": {
+  "name": "Northrop YB-49",
+  "kind": "jet flying wing bomber prototype",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Northrop_YB-49"
  },
  "aircraft-osoaviakhim-1": {
   "name": "Osoaviakhim-1",

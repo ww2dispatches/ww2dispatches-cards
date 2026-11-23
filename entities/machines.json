@@ -355,6 +355,13 @@
    "Physics-1"
   ]
  },
+ "machine-flame-tank": {
+  "name": "Flame tank",
+  "kind": "flamethrower tank",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Flame_tank"
+ },
  "machine-four-freedoms-rockwell": {
   "name": "Four Freedoms (Rockwell)",
   "kind": "series of four paintings",
@@ -737,6 +744,14 @@
    "barchino"
   ]
  },
+ "machine-naval-mine": {
+  "name": "Naval mine",
+  "kind": "sea mine",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Naval_mine",
+  "note": "Type entity; nation given for the leftover wartime mines in Danish waters."
+ },
  "machine-nazi-concentration-camps-film": {
   "name": "Nazi Concentration Camps",
   "kind": "documentary film",
@@ -1061,6 +1076,13 @@
   "nation": "US",
   "wikidata": "Q1195999",
   "source": "https://en.wikipedia.org/wiki/The_Nazi_Plan"
+ },
+ "machine-tiger-i": {
+  "name": "Tiger I",
+  "kind": "heavy tank",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tiger_I"
  },
  "machine-times-square-ball": {
   "name": "Times Square Ball",

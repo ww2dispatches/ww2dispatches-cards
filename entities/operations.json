@@ -1247,6 +1247,13 @@
   "wikidata": "Q544090",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Cape_Matapan"
  },
+ "op-battle-of-carentan": {
+  "name": "Battle of Carentan",
+  "kind": "battle, Normandy, 10 to 14 June 1944",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Carentan"
+ },
  "op-battle-of-castle-itter": {
   "name": "Battle of Castle Itter",
   "kind": "battle in Austria, 5 May 1945",
@@ -1588,6 +1595,13 @@
   "wikidata": "Q1789376",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Kwajalein"
  },
+ "op-battle-of-labuan": {
+  "name": "Battle of Labuan",
+  "kind": "Australian landing, June 1945",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Labuan"
+ },
  "op-battle-of-lanzerath-ridge": {
   "name": "Battle of Lanzerath Ridge",
   "kind": "battle, first day of the Ardennes offensive",
@@ -1920,6 +1934,13 @@
   "wikidata": "Q169436",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Rostov_(1941)"
  },
+ "op-battle-of-saipan": {
+  "name": "Battle of Saipan",
+  "kind": "battle",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Saipan"
+ },
  "op-battle-of-san-pietro-infine": {
   "name": "Battle of San Pietro Infine",
   "kind": "battle",
@@ -2222,6 +2243,13 @@
   "wikidata": "Q15728772",
   "source": "https://en.wikipedia.org/wiki/Battle_of_the_Ligurian_Sea"
  },
+ "op-battle-of-the-litani-river": {
+  "name": "Battle of the Litani River",
+  "kind": "battle, Syria Lebanon campaign",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_the_Litani_River"
+ },
  "op-battle-of-the-malacca-strait": {
   "name": "Battle of the Malacca Strait",
   "kind": "naval battle",
@@ -2266,6 +2294,13 @@
   "nation": "Britain",
   "wikidata": "Q715886",
   "source": "https://en.wikipedia.org/wiki/Battle_of_the_North_Cape"
+ },
+ "op-battle-of-the-philippine-sea": {
+  "name": "Battle of the Philippine Sea",
+  "kind": "naval battle",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_the_Philippine_Sea"
  },
  "op-battle-of-the-river-plate": {
   "name": "Battle of the River Plate",
@@ -2330,12 +2365,26 @@
   "wikidata": "Q96373276",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Tripoli_(1943)"
  },
+ "op-battle-of-ushant-1944": {
+  "name": "Battle of Ushant (1944)",
+  "kind": "destroyer action off Brittany",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Ushant_(1944)"
+ },
  "op-battle-of-velikiye-luki": {
   "name": "Battle of Velikiye Luki",
   "kind": "battle, 1942 to 1943",
   "nation": "Soviet Union",
   "wikidata": "Q701195",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Velikiye_Luki"
+ },
+ "op-battle-of-villers-bocage": {
+  "name": "Battle of Villers-Bocage",
+  "kind": "battle",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Villers-Bocage"
  },
  "op-battle-of-visayas": {
   "name": "Battle of Visayas",
@@ -2461,6 +2510,16 @@
   "source": "https://en.wikipedia.org/wiki/Berlin_Blockade",
   "aka": [
    "Berlin Airlift"
+  ]
+ },
+ "op-berlin-declaration-1945": {
+  "name": "Berlin Declaration (1945)",
+  "kind": "four power assumption of authority over Germany",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Berlin_Declaration_(1945)",
+  "aka": [
+   "Declaration regarding the defeat of Germany"
   ]
  },
  "op-bermuda-conference": {
@@ -2590,6 +2649,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Alicante"
  },
+ "op-bombing-of-bangkok-in-world-war-ii": {
+  "name": "Bombing of Bangkok in World War II",
+  "kind": "Allied air raids on Bangkok",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Bangkok_in_World_War_II"
+ },
  "op-bombing-of-barcelona": {
   "name": "Bombing of Barcelona",
   "kind": "air raids on Barcelona, 16 to 18 March 1938",
@@ -2681,6 +2747,13 @@
   "nation": "Ireland",
   "wikidata": "Q4940694",
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Dublin_in_World_War_II"
+ },
+ "op-bombing-of-dusseldorf-in-world-war-ii": {
+  "name": "Bombing of Dusseldorf in World War II",
+  "kind": "strategic bombing of a city",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_D%C3%BCsseldorf_in_World_War_II"
  },
  "op-bombing-of-essen-in-world-war-ii": {
   "name": "Bombing of Essen in World War II",
@@ -3129,6 +3202,16 @@
   "wikidata": "Q158287",
   "source": "https://en.wikipedia.org/wiki/Case_Blue"
  },
+ "op-case-of-the-trotskyist-anti-soviet-military-organization": {
+  "name": "Case of the Trotskyist Anti-Soviet Military Organization",
+  "kind": "secret trial of the Red Army high command, 1937",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Case_of_the_Trotskyist_Anti-Soviet_Military_Organization",
+  "aka": [
+   "Tukhachevsky trial"
+  ]
+ },
  "op-catalonia-offensive": {
   "name": "Catalonia Offensive",
   "kind": "Spanish Civil War offensive",
@@ -3506,6 +3589,13 @@
   "wikidata": "Q176930",
   "source": "https://en.wikipedia.org/wiki/Declaration_by_United_Nations"
  },
+ "op-declaration-of-st-james-s-palace": {
+  "name": "Declaration of St James's Palace",
+  "kind": "Allied declaration, London, 12 June 1941",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Declaration_of_St_James%27s_Palace"
+ },
  "op-decree-of-the-reich-president-for-the-protection-of-the-german-people": {
   "name": "Decree for the Protection of the German People (4 February 1933)",
   "kind": "emergency decree restricting the press and assembly",
@@ -3586,6 +3676,13 @@
   "nation": "Germany",
   "wikidata": "Q1344449",
   "source": "https://en.wikipedia.org/wiki/Discovery_of_nuclear_fission"
+ },
+ "op-distomo-massacre": {
+  "name": "Distomo massacre",
+  "kind": "massacre of civilians, 10 June 1944",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Distomo_massacre"
  },
  "op-doctors-trial": {
   "name": "Doctors' Trial",
@@ -3828,6 +3925,16 @@
   "source": "https://en.wikipedia.org/wiki/Fall_of_Singapore",
   "aka": [
    "Battle of Singapore"
+  ]
+ },
+ "op-fall-rot": {
+  "name": "Fall Rot",
+  "kind": "second phase of the German invasion of France, 1940",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fall_Rot",
+  "aka": [
+   "Case Red"
   ]
  },
  "op-fall-weiss": {
@@ -4295,12 +4402,27 @@
    "Halifax VE Day riots"
   ]
  },
+ "op-he-umezu-agreement": {
+  "name": "He Umezu Agreement",
+  "kind": "1935 Sino Japanese agreement on Hopei",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/He%E2%80%93Umezu_Agreement",
+  "note": "Wikipedia title joins the two names with an en dash"
+ },
  "op-heiligenbeil-pocket": {
   "name": "Heiligenbeil Pocket",
   "kind": "encirclement battle in East Prussia, 1945",
   "nation": "Germany",
   "wikidata": "Q508062",
   "source": "https://en.wikipedia.org/wiki/Heiligenbeil_Pocket"
+ },
+ "op-hermes-program": {
+  "name": "Hermes program",
+  "kind": "U.S. Army rocket program built on the V-2",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hermes_program"
  },
  "op-hindenburg-disaster": {
   "name": "Hindenburg disaster",
@@ -4572,6 +4694,13 @@
   "wikidata": "Q714644",
   "source": "https://en.wikipedia.org/wiki/Italian_invasion_of_Albania"
  },
+ "op-italian-invasion-of-france": {
+  "name": "Italian invasion of France",
+  "kind": "campaign, June 1940",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_invasion_of_France"
+ },
  "op-italian-social-republic": {
   "name": "Italian Social Republic",
   "kind": "German backed fascist state in northern Italy, 1943 to 1945",
@@ -4718,6 +4847,13 @@
   "aka": [
    "Justice Case"
   ]
+ },
+ "op-june-deportation": {
+  "name": "June deportation",
+  "kind": "1941 Soviet mass deportations from the Baltic states and other regions",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/June_deportation"
  },
  "op-kalavryta-massacre": {
   "name": "Kalavryta massacre",
@@ -5340,6 +5476,13 @@
   "wikidata": "Q162663",
   "source": "https://en.wikipedia.org/wiki/Mit_brennender_Sorge"
  },
+ "op-morgan-line": {
+  "name": "Morgan Line",
+  "kind": "1945 demarcation line in Venezia Giulia",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Morgan_Line"
+ },
  "op-morgan-v-virginia": {
   "name": "Morgan v. Virginia",
   "kind": "1946 U.S. Supreme Court ruling on segregation in interstate buses",
@@ -5861,6 +6004,13 @@
   "wikidata": "Q16960622",
   "source": "https://en.wikipedia.org/wiki/Operation_Copper"
  },
+ "op-operation-corkscrew": {
+  "name": "Operation Corkscrew",
+  "kind": "Allied capture of Pantelleria, 1943",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Corkscrew"
+ },
  "op-operation-cornflakes": {
   "name": "Operation Cornflakes",
   "kind": "OSS morale operation",
@@ -5999,6 +6149,13 @@
   "nation": "Germany",
   "wikidata": "Q695666",
   "source": "https://en.wikipedia.org/wiki/Operation_Hannibal"
+ },
+ "op-operation-harpoon-1942": {
+  "name": "Operation Harpoon",
+  "kind": "June 1942 Malta convoy from Gibraltar",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Harpoon_(1942)"
  },
  "op-operation-herring": {
   "name": "Operation Herring",
@@ -6140,6 +6297,13 @@
   "nation": "Britain",
   "wikidata": "Q3354761",
   "source": "https://en.wikipedia.org/wiki/Operation_Lustre"
+ },
+ "op-operation-matterhorn": {
+  "name": "Operation Matterhorn",
+  "kind": "B-29 campaign from India and China",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Matterhorn"
  },
  "op-operation-meridian": {
   "name": "Operation Meridian",
@@ -6429,6 +6593,13 @@
   "wikidata": "Q708235",
   "source": "https://en.wikipedia.org/wiki/Operation_Veritable"
  },
+ "op-operation-vigorous": {
+  "name": "Operation Vigorous",
+  "kind": "British Malta supply convoy operation, June 1942",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Vigorous"
+ },
  "op-operation-weserubung": {
   "name": "Operation Weserubung",
   "kind": "German invasion of Denmark and Norway",
@@ -6487,6 +6658,13 @@
    "Operation Manna",
    "Operation Chowhound"
   ]
+ },
+ "op-oradour-sur-glane-massacre": {
+  "name": "Oradour-sur-Glane massacre",
+  "kind": "massacre of civilians, 10 June 1944",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Oradour-sur-Glane_massacre"
  },
  "op-oro-alla-patria": {
   "name": "Oro alla Patria",
@@ -6641,6 +6819,13 @@
   "nation": "US",
   "wikidata": "Q644827",
   "source": "https://en.wikipedia.org/wiki/Pohl_trial"
+ },
+ "op-pointblank-directive": {
+  "name": "Pointblank directive",
+  "kind": "Combined Bomber Offensive directive, 1943",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Pointblank_directive"
  },
  "op-portella-della-ginestra-massacre": {
   "name": "Portella della Ginestra massacre",
@@ -6876,6 +7061,13 @@
   "nation": "Germany",
   "wikidata": "Q696629",
   "source": "https://en.wikipedia.org/wiki/Reichstag_Fire_Decree"
+ },
+ "op-reinsdorf-explosion": {
+  "name": "Reinsdorf explosion",
+  "kind": "explosives factory disaster, 1935",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Reinsdorf_explosion"
  },
  "op-remilitarisation-of-the-rhineland": {
   "name": "Remilitarisation of the Rhineland",
@@ -7396,6 +7588,13 @@
   "wikidata": "Q7571798",
   "source": "https://en.wikipedia.org/wiki/Soviet_repressions_of_Polish_citizens_(1939%E2%80%931946)"
  },
+ "op-soviet-ultimatum-to-lithuania": {
+  "name": "Soviet ultimatum to Lithuania",
+  "kind": "1940 Soviet demand that led to the occupation of Lithuania",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Soviet_ultimatum_to_Lithuania"
+ },
  "op-spanish-civil-war": {
   "name": "Spanish Civil War",
   "kind": "civil war 1936 to 1939",
@@ -7709,6 +7908,13 @@
   "wikidata": "Q4467971",
   "source": "https://en.wikipedia.org/wiki/Tianjin_campaign"
  },
+ "op-tientsin-incident": {
+  "name": "Tientsin incident",
+  "kind": "Japanese blockade of the British concession at Tientsin, 1939",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tientsin_incident"
+ },
  "op-tikhvin-offensive": {
   "name": "Tikhvin Offensive",
   "kind": "Soviet counteroffensive",
@@ -7851,6 +8057,13 @@
   "wikidata": "Q171375",
   "source": "https://en.wikipedia.org/wiki/Truman_Doctrine"
  },
+ "op-tulle-massacre": {
+  "name": "Tulle massacre",
+  "kind": "reprisal hangings of civilians",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tulle_massacre"
+ },
  "op-tunisian-campaign": {
   "name": "Tunisian campaign",
   "kind": "campaign",
@@ -7975,6 +8188,14 @@
    "Military Bases Agreement of 1947"
   ]
  },
+ "op-united-states-declaration-of-war-on-bulgaria": {
+  "name": "United States declaration of war on Bulgaria",
+  "kind": "declaration of war, 5 June 1942",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/United_States_declaration_of_war_on_Bulgaria",
+  "note": "Signed with the declarations on Hungary and Romania the same day"
+ },
  "op-united-states-declaration-of-war-on-japan": {
   "name": "United States declaration of war on Japan",
   "kind": "declaration of war",
@@ -8097,6 +8318,14 @@
   "wikidata": "Q573853",
   "source": "https://en.wikipedia.org/wiki/Vrba%E2%80%93Wetzler_report"
  },
+ "op-vyborg-petrozavodsk-offensive": {
+  "name": "Vyborg Petrozavodsk offensive",
+  "kind": "Soviet offensive against Finland, 1944",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Vyborg%E2%80%93Petrozavodsk_offensive",
+  "note": "Wikipedia title joins the two names with an en dash"
+ },
  "op-wannsee-conference": {
   "name": "Wannsee Conference",
   "kind": "meeting to coordinate the Final Solution",
@@ -8163,6 +8392,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/West_Loch_disaster"
  },
+ "op-west-virginia-state-board-of-education-v-barnette": {
+  "name": "West Virginia State Board of Education v. Barnette",
+  "kind": "1943 U.S. Supreme Court flag salute case",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/West_Virginia_State_Board_of_Education_v._Barnette"
+ },
  "op-western-allied-invasion-of-germany": {
   "name": "Western Allied invasion of Germany",
   "kind": "campaign, 1945",
@@ -8210,6 +8446,13 @@
   "nation": "Spain",
   "wikidata": "Q19949844",
   "source": "https://en.wikipedia.org/wiki/Wolfram_Crisis"
+ },
+ "op-women-s-armed-services-integration-act": {
+  "name": "Women's Armed Services Integration Act",
+  "kind": "1948 U.S. law",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Women%27s_Armed_Services_Integration_Act"
  },
  "op-women-s-suffrage-in-japan": {
   "name": "Women's suffrage in Japan",
