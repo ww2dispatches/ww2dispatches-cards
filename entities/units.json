@@ -2772,6 +2772,17 @@
    "Taisei Yokusankai"
   ]
  },
+ "unit-imperial-rule-assistance-political-association": {
+  "name": "Imperial Rule Assistance Political Association",
+  "kind": "Japanese wartime Diet political body",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Imperial_Rule_Assistance_Political_Association",
+  "aka": [
+   "Yokusan Seijikai",
+   "IRAPA"
+  ]
+ },
  "unit-international-civil-aviation-organization": {
   "name": "International Civil Aviation Organization",
   "kind": "UN aviation agency",
@@ -3734,6 +3745,17 @@
   "source": "https://en.wikipedia.org/wiki/Oslogjengen",
   "aka": [
    "Oslogjengen"
+  ]
+ },
+ "unit-pan-am": {
+  "name": "Pan Am",
+  "kind": "American airline",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Pan_Am",
+  "aka": [
+   "Pan American Airways",
+   "Pan American World Airways"
   ]
  },
  "unit-panfilov-s-twenty-eight-guardsmen": {

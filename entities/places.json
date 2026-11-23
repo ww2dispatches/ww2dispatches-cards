@@ -17,6 +17,15 @@
   "lat": 56.1706,
   "lon": 10.2011
  },
+ "place-abbeville": {
+  "name": "Abbeville",
+  "kind": "town on the Somme",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Abbeville",
+  "lat": null,
+  "lon": null
+ },
  "place-aberdeen": {
   "name": "Aberdeen",
   "kind": "city",

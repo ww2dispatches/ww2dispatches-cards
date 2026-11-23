@@ -330,6 +330,13 @@
   "wikidata": "Q339486",
   "source": "https://en.wikipedia.org/wiki/1948_Accra_riots"
  },
+ "op-1948-arab-israeli-war": {
+  "name": "1948 Arab-Israeli War",
+  "kind": "war",
+  "nation": "Israel",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1948_Arab%E2%80%93Israeli_War"
+ },
  "op-1948-czechoslovak-coup-d-etat": {
   "name": "1948 Czechoslovak coup d'etat",
   "kind": "Communist seizure of power in Prague",
@@ -4797,6 +4804,16 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Machita_incident"
  },
+ "op-magic-cryptography": {
+  "name": "Magic (cryptography)",
+  "kind": "U.S. codebreaking of Japanese diplomatic ciphers",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Magic_(cryptography)",
+  "aka": [
+   "MAGIC"
+  ]
+ },
  "op-magnuson-act": {
   "name": "Magnuson Act",
   "kind": "law",
@@ -4942,6 +4959,13 @@
   "nation": "Japan",
   "wikidata": "Q244926",
   "source": "https://en.wikipedia.org/wiki/May_15_incident"
+ },
+ "op-may-crisis": {
+  "name": "May Crisis",
+  "kind": "1938 war scare over Czechoslovakia",
+  "nation": "Czechoslovakia, Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/May_Crisis"
  },
  "op-mechelen-incident": {
   "name": "Mechelen incident",
@@ -5769,6 +5793,16 @@
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/Operation_Mincemeat",
   "wikidata": "Q1130522"
+ },
+ "op-operation-most-iii": {
+  "name": "Operation Most III",
+  "kind": "Allied air pickup of V-2 parts from Poland",
+  "nation": "Poland, Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Most_III",
+  "aka": [
+   "Wildhorn III"
+  ]
  },
  "op-operation-northwind-1944": {
   "name": "Operation Northwind (1944)",
