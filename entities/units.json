@@ -1,4 +1,15 @@
 {
+ "unit-100th-infantry-battalion": {
+  "name": "100th Infantry Battalion",
+  "kind": "U.S. Army Nisei infantry battalion, part of the 442nd Regimental Combat Team",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/100th_Infantry_Battalion",
+  "aka": [
+   "100th Infantry Battalion (United States)",
+   "One Puka Puka"
+  ]
+ },
  "unit-100th-training-division": {
   "name": "100th Training Division",
   "kind": "U.S. division, in WWII the 100th Infantry Division",
@@ -3913,6 +3924,13 @@
   "aka": [
    "Parteikanzlei"
   ]
+ },
+ "unit-nbc-symphony-orchestra": {
+  "name": "NBC Symphony Orchestra",
+  "kind": "radio orchestra",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/NBC_Symphony_Orchestra"
  },
  "unit-new-1st-army": {
   "name": "New 1st Army",

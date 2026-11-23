@@ -93,6 +93,13 @@
   "wikidata": "Q362227",
   "source": "https://en.wikipedia.org/wiki/Adolf_Hoel"
  },
+ "person-adolf-ziegler": {
+  "name": "Adolf Ziegler",
+  "kind": "Nazi painter, president of the Reich Chamber of Visual Art",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Adolf_Ziegler"
+ },
  "person-ahmad-maher-pasha": {
   "name": "Ahmad Maher Pasha",
   "kind": "Prime Minister of Egypt, 1944 to 1945",
@@ -1410,6 +1417,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Carl_Severing"
  },
+ "person-carl-vinson": {
+  "name": "Carl Vinson",
+  "kind": "U.S. congressman, chair of the House Naval Affairs Committee",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Carl_Vinson"
+ },
  "person-carl-von-ossietzky": {
   "name": "Carl von Ossietzky",
   "kind": "German journalist and pacifist, 1935 Nobel Peace Prize laureate",
@@ -2179,6 +2193,13 @@
   "wikidata": "Q5284865",
   "source": "https://en.wikipedia.org/wiki/Dixie_Kiefer"
  },
+ "person-dmitri-shostakovich": {
+  "name": "Dmitri Shostakovich",
+  "kind": "Soviet composer",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Dmitri_Shostakovich"
+ },
  "person-dmitry-karbyshev": {
   "name": "Dmitry Karbyshev",
   "kind": "Red Army engineer general, prisoner of war",
@@ -2213,6 +2234,17 @@
   "nation": "US",
   "wikidata": "Q1233692",
   "source": "https://en.wikipedia.org/wiki/Doc_Blanchard"
+ },
+ "person-dolores-ibarruri": {
+  "name": "Dolores Ibarruri",
+  "kind": "Spanish Communist politician, 'La Pasionaria'",
+  "nation": "Spain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Dolores_Ib%C3%A1rruri",
+  "aka": [
+   "La Pasionaria",
+   "Pasionaria"
+  ]
  },
  "person-domingo-rey-d-harcourt": {
   "name": "Domingo Rey d'Harcourt",
@@ -3792,6 +3824,13 @@
   "nation": "Germany",
   "wikidata": "Q3087712",
   "source": "https://en.wikipedia.org/wiki/Friedrich_Gollwitzer"
+ },
+ "person-friedrich-guggenberger": {
+  "name": "Friedrich Guggenberger",
+  "kind": "German U-boat commander",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Friedrich_Guggenberger"
  },
  "person-friedrich-huffmeier": {
   "name": "Friedrich Huffmeier",
@@ -6612,6 +6651,16 @@
   "source": "https://en.wikipedia.org/wiki/John_Anderson,_1st_Viscount_Waverley",
   "aka": [
    "Sir John Anderson"
+  ]
+ },
+ "person-john-augustine-collins": {
+  "name": "John Augustine Collins",
+  "kind": "Royal Australian Navy officer, captain of HMAS Sydney",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/John_Augustine_Collins",
+  "aka": [
+   "John Collins"
   ]
  },
  "person-john-bardeen": {
@@ -11110,6 +11159,13 @@
   "wikidata": "Q7446003",
   "source": "https://en.wikipedia.org/wiki/Sefanaia_Sukanaivalu"
  },
+ "person-sefton-delmer": {
+  "name": "Sefton Delmer",
+  "kind": "British journalist and BBC German service broadcaster",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sefton_Delmer"
+ },
  "person-segismundo-casado": {
   "name": "Segismundo Casado",
   "kind": "Spanish Republican colonel",
@@ -11974,6 +12030,13 @@
   "nation": "Burma",
   "wikidata": "Q316384",
   "source": "https://en.wikipedia.org/wiki/U_Nu"
+ },
+ "person-u-saw": {
+  "name": "U Saw",
+  "kind": "Burmese politician, convicted over Aung San's assassination",
+  "nation": "Burma",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/U_Saw"
  },
  "person-ugaki-kazushige": {
   "name": "Ugaki Kazushige",
@@ -12904,6 +12967,16 @@
    "Lord Haw-Haw"
   ]
  },
+ "person-william-l-shirer": {
+  "name": "William L. Shirer",
+  "kind": "American journalist and Berlin correspondent",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/William_L._Shirer",
+  "aka": [
+   "William Shirer"
+  ]
+ },
  "person-william-lyon-mackenzie-king": {
   "name": "William Lyon Mackenzie King",
   "kind": "Prime Minister of Canada",
@@ -13167,6 +13240,17 @@
   "nation": "China",
   "wikidata": "Q715844",
   "source": "https://en.wikipedia.org/wiki/Ye_Ting"
+ },
+ "person-yekaterina-budanova": {
+  "name": "Yekaterina Budanova",
+  "kind": "Soviet fighter pilot and ace",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Yekaterina_Budanova",
+  "aka": [
+   "Katya Budanova",
+   "Ekaterina Budanova"
+  ]
  },
  "person-yevgeny-khaldei": {
   "name": "Yevgeny Khaldei",

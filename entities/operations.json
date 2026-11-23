@@ -130,6 +130,20 @@
   "wikidata": "Q4564626",
   "source": "https://en.wikipedia.org/wiki/1939_royal_tour_of_Canada"
  },
+ "op-1940-democratic-national-convention": {
+  "name": "1940 Democratic National Convention",
+  "kind": "U.S. party convention",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1940_Democratic_National_Convention"
+ },
+ "op-1940-field-marshal-ceremony": {
+  "name": "1940 Field Marshal Ceremony",
+  "kind": "German promotion ceremony at the Kroll Opera House",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1940_Field_Marshal_Ceremony"
+ },
  "op-1940-summer-olympics": {
   "name": "1940 Summer Olympics",
   "kind": "cancelled Olympic Games, awarded to Tokyo then Helsinki",
@@ -1510,6 +1524,13 @@
   "nation": "Britain",
   "wikidata": "Q544090",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Cape_Matapan"
+ },
+ "op-battle-of-cape-spada": {
+  "name": "Battle of Cape Spada",
+  "kind": "naval battle off Crete",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Cape_Spada"
  },
  "op-battle-of-carentan": {
   "name": "Battle of Carentan",
@@ -4220,6 +4241,16 @@
    "Siege of Brest (1941)"
   ]
  },
+ "op-degenerate-art-exhibition": {
+  "name": "Degenerate Art exhibition",
+  "kind": "Nazi propaganda art exhibition, Munich 1937",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Degenerate_Art_exhibition",
+  "aka": [
+   "Entartete Kunst"
+  ]
+ },
  "op-dekemvriana": {
   "name": "Dekemvriana",
   "kind": "clashes in Athens, December 1944 to January 1945",
@@ -4851,6 +4882,16 @@
   "nation": "Germany",
   "wikidata": "Q1885006",
   "source": "https://en.wikipedia.org/wiki/Gardelegen_massacre"
+ },
+ "op-general-government": {
+  "name": "General Government",
+  "kind": "German occupation zone of Poland",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/General_Government",
+  "aka": [
+   "Generalgouvernement"
+  ]
  },
  "op-genocide-convention": {
   "name": "Genocide Convention",
@@ -9032,6 +9073,16 @@
    "Baltutlämningen"
   ]
  },
+ "op-symphony-no-7-shostakovich": {
+  "name": "Symphony No. 7 (Shostakovich)",
+  "kind": "symphony, the Leningrad",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Symphony_No._7_(Shostakovich)",
+  "aka": [
+   "Leningrad Symphony"
+  ]
+ },
  "op-syria-lebanon-campaign": {
   "name": "Syria-Lebanon campaign",
   "kind": "campaign",
@@ -9391,6 +9442,17 @@
   "wikidata": "Q214679",
   "aka": [
    "Twenty-second Amendment"
+  ]
+ },
+ "op-two-ocean-navy-act": {
+  "name": "Two-Ocean Navy Act",
+  "kind": "U.S. naval expansion law, 1940",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Two-Ocean_Navy_Act",
+  "aka": [
+   "Vinson-Walsh Act",
+   "Naval Expansion Act of 1940"
   ]
  },
  "op-tydings-mcduffie-act": {

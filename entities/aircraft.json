@@ -1290,6 +1290,13 @@
    "1903 Wright Flyer"
   ]
  },
+ "aircraft-yakovlev-yak-1": {
+  "name": "Yakovlev Yak-1",
+  "kind": "Soviet fighter aircraft",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Yakovlev_Yak-1"
+ },
  "aircraft-yakovlev-yak-15": {
   "name": "Yakovlev Yak-15",
   "kind": "Soviet jet fighter",

@@ -2611,6 +2611,15 @@
   "lat": 48.2,
   "lon": 16.3667
  },
+ "place-feltre": {
+  "name": "Feltre",
+  "kind": "town in the Veneto, northern Italy",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Feltre",
+  "lat": null,
+  "lon": null
+ },
  "place-feodosia": {
   "name": "Feodosia",
   "kind": "port city in the Crimea",
@@ -5077,6 +5086,18 @@
   "lat": 53.4072,
   "lon": -2.9917
  },
+ "place-livorno": {
+  "name": "Livorno",
+  "kind": "Tuscan port city",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Livorno",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Leghorn"
+  ]
+ },
  "place-llandaff-cathedral": {
   "name": "Llandaff Cathedral",
   "kind": "cathedral",
@@ -5855,6 +5876,18 @@
   "lat": 45.4669,
   "lon": 9.19
  },
+ "place-ministers-building": {
+  "name": "Ministers' Building",
+  "kind": "government Secretariat building in Yangon",
+  "nation": "Burma",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ministers%27_Building",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Secretariat Building, Rangoon"
+  ]
+ },
  "place-minsk": {
   "name": "Minsk",
   "kind": "city",
@@ -6136,6 +6169,18 @@
   "source": "https://en.wikipedia.org/wiki/Motobu_Peninsula",
   "lat": 26.6667,
   "lon": 127.9333
+ },
+ "place-moton-field-municipal-airport": {
+  "name": "Moton Field",
+  "kind": "primary flight training field at Tuskegee, Alabama",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Moton_Field_Municipal_Airport",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Moton Field"
+  ]
  },
  "place-mount-rushmore": {
   "name": "Mount Rushmore",
@@ -8202,6 +8247,15 @@
   "source": "https://en.wikipedia.org/wiki/San_Leandro,_California",
   "lat": 37.725,
   "lon": -122.1561
+ },
+ "place-san-lorenzo-rome": {
+  "name": "San Lorenzo",
+  "kind": "working class district of Rome",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/San_Lorenzo_(Rome)",
+  "lat": null,
+  "lon": null
  },
  "place-san-pietro-infine": {
   "name": "San Pietro Infine",
