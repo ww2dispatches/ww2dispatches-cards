@@ -3429,6 +3429,15 @@
   "lat": 40.1167,
   "lon": 19.7333
  },
+ "place-himeji": {
+  "name": "Himeji",
+  "kind": "city",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Himeji",
+  "lat": null,
+  "lon": null
+ },
  "place-hm-prison-wandsworth": {
   "name": "HM Prison Wandsworth",
   "kind": "prison, London",
@@ -4276,6 +4285,15 @@
   "wikidata": "Q20736319",
   "lat": 15.1239,
   "lon": 145.7069
+ },
+ "place-kochi-kochi": {
+  "name": "Kōchi",
+  "kind": "city on Shikoku",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/K%C5%8Dchi,_K%C5%8Dchi",
+  "lat": null,
+  "lon": null
  },
  "place-koenigsmacker": {
   "name": "Koenigsmacker",
@@ -8696,6 +8714,15 @@
   "lat": 24.8111,
   "lon": 119.9283
  },
+ "place-takamatsu": {
+  "name": "Takamatsu",
+  "kind": "city on Shikoku",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Takamatsu",
+  "lat": null,
+  "lon": null
+ },
  "place-tallinn": {
   "name": "Tallinn",
   "kind": "capital city of Estonia",
@@ -8982,6 +9009,15 @@
   "wikidata": "Q182092",
   "lat": 32.0833,
   "lon": 23.95
+ },
+ "place-tokushima-city": {
+  "name": "Tokushima",
+  "kind": "city on Shikoku",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tokushima_(city)",
+  "lat": null,
+  "lon": null
  },
  "place-tokyo": {
   "name": "Tokyo",

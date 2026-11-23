@@ -2795,6 +2795,13 @@
   "wikidata": "Q741952",
   "source": "https://en.wikipedia.org/wiki/Force_K"
  },
+ "unit-force-publique": {
+  "name": "Force Publique",
+  "kind": "Belgian Congo army",
+  "nation": "Belgium",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Force_Publique"
+ },
  "unit-force-z": {
   "name": "Force Z",
   "kind": "Royal Navy squadron",
@@ -2804,6 +2811,13 @@
   "aka": [
    "Force G"
   ]
+ },
+ "unit-ford-motor-company": {
+  "name": "Ford Motor Company",
+  "kind": "automaker",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ford_Motor_Company"
  },
  "unit-four-chaplains": {
   "name": "Four Chaplains",
@@ -3850,6 +3864,13 @@
   "aka": [
    "165 (Ceylon) Squadron"
   ]
+ },
+ "unit-no-172-squadron-raf": {
+  "name": "No. 172 Squadron RAF",
+  "kind": "Coastal Command squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._172_Squadron_RAF"
  },
  "unit-no-202-squadron-raf": {
   "name": "No. 202 Squadron RAF",

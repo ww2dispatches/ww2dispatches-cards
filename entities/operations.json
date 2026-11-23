@@ -5993,6 +5993,13 @@
    "Weizsaecker case"
   ]
  },
+ "op-minsk-offensive": {
+  "name": "Minsk offensive",
+  "kind": "offensive",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Minsk_offensive"
+ },
  "op-mit-brennender-sorge": {
   "name": "Mit brennender Sorge",
   "kind": "papal encyclical, 1937",
@@ -8159,6 +8166,13 @@
   "nation": "Burma",
   "wikidata": "Q19840798",
   "source": "https://en.wikipedia.org/wiki/Siege_of_Myitkyina"
+ },
+ "op-siege-of-saio": {
+  "name": "Siege of Saïo",
+  "kind": "siege",
+  "nation": "Belgium",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Siege_of_Sa%C3%AFo"
  },
  "op-siege-of-sevastopol-1941-1942": {
   "name": "Siege of Sevastopol (1941 to 1942)",

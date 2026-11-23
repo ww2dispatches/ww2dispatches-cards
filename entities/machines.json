@@ -618,6 +618,16 @@
   "wikidata": "Q1475132",
   "source": "https://en.wikipedia.org/wiki/Lichtenstein_radar"
  },
+ "machine-lner-class-a4-4468-mallard": {
+  "name": "Mallard (LNER 4468)",
+  "kind": "streamlined steam locomotive",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/LNER_Class_A4_4468_Mallard",
+  "aka": [
+   "Mallard"
+  ]
+ },
  "machine-lsd": {
   "name": "LSD",
   "kind": "hallucinogenic drug, lysergic acid diethylamide",

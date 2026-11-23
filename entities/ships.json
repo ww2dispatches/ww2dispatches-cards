@@ -577,6 +577,13 @@
   "wikidata": "Q571359",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-125_(1940)"
  },
+ "ship-german-submarine-u-126-1940": {
+  "name": "U-126",
+  "kind": "U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-126_(1940)"
+ },
  "ship-german-submarine-u-127-1941": {
   "name": "German submarine U-127 (1941)",
   "kind": "Type IXC U-boat",
@@ -655,6 +662,13 @@
   "nation": "Germany",
   "wikidata": "Q625197",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-15_(1936)"
+ },
+ "ship-german-submarine-u-154-1941": {
+  "name": "U-154",
+  "kind": "U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-154_(1941)"
  },
  "ship-german-submarine-u-156-1941": {
   "name": "U-156",
@@ -808,6 +822,13 @@
   "nation": "Germany",
   "wikidata": "Q4051941",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-205"
+ },
+ "ship-german-submarine-u-215": {
+  "name": "U-215",
+  "kind": "U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-215"
  },
  "ship-german-submarine-u-217": {
   "name": "German submarine U-217",
@@ -1656,6 +1677,13 @@
   "nation": "Germany",
   "wikidata": "Q5551786",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-625"
+ },
+ "ship-german-submarine-u-628": {
+  "name": "U-628",
+  "kind": "U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-628"
  },
  "ship-german-submarine-u-629": {
   "name": "German submarine U-629",
@@ -5334,6 +5362,13 @@
   "wikidata": "Q7393133",
   "source": "https://en.wikipedia.org/wiki/SS_Alcoa_Puritan_(1941)"
  },
+ "ship-ss-alexander-macomb": {
+  "name": "SS Alexander Macomb",
+  "kind": "Liberty ship",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Alexander_Macomb"
+ },
  "ship-ss-almeda-star": {
   "name": "SS Almeda Star",
   "kind": "passenger liner",
@@ -6453,6 +6488,13 @@
   "wikidata": "Q7869496",
   "source": "https://en.wikipedia.org/wiki/USS_Frederick_C._Davis"
  },
+ "ship-uss-frost": {
+  "name": "USS Frost",
+  "kind": "destroyer escort",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Frost"
+ },
  "ship-uss-gambier-bay": {
   "name": "USS Gambier Bay (CVE-73)",
   "kind": "escort carrier",
@@ -6638,6 +6680,13 @@
   "nation": "US",
   "wikidata": "Q4052235",
   "source": "https://en.wikipedia.org/wiki/USS_Hull_(DD-350)"
+ },
+ "ship-uss-inch": {
+  "name": "USS Inch (DE-146)",
+  "kind": "destroyer escort",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Inch"
  },
  "ship-uss-independence-cvl-22": {
   "name": "USS Independence (CVL-22)",
