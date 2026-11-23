@@ -667,6 +667,13 @@
   "source": "https://en.wikipedia.org/wiki/Matilda_II",
   "wikidata": "Q502412"
  },
+ "machine-mccann-rescue-chamber": {
+  "name": "McCann Rescue Chamber",
+  "kind": "submarine rescue diving bell",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/McCann_Rescue_Chamber"
+ },
  "machine-mein-kampf": {
   "name": "Mein Kampf",
   "kind": "book by Adolf Hitler",
@@ -851,6 +858,16 @@
   "nation": "US",
   "wikidata": "Q29051409",
   "source": "https://en.wikipedia.org/wiki/Roosevelt_dime"
+ },
+ "machine-rp-3": {
+  "name": "RP-3",
+  "kind": "air launched rocket projectile",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/RP-3",
+  "aka": [
+   "Rocket Spear"
+  ]
  },
  "machine-rtv-g-4-bumper": {
   "name": "RTV-G-4 Bumper",

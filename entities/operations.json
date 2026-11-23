@@ -3298,6 +3298,13 @@
    "Snipe"
   ]
  },
+ "op-defence-regulation-18b": {
+  "name": "Defence Regulation 18B",
+  "kind": "wartime detention regulation",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Defence_Regulation_18B"
+ },
  "op-dekemvriana": {
   "name": "Dekemvriana",
   "kind": "clashes in Athens, December 1944 to January 1945",
@@ -6135,6 +6142,16 @@
   "nation": "Japan",
   "wikidata": "Q7137514",
   "source": "https://en.wikipedia.org/wiki/Parit_Sulong_Massacre"
+ },
+ "op-parliamentary-council": {
+  "name": "Parliamentary Council",
+  "kind": "West German constitutional assembly, 1948 to 1949",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Parliamentary_Council",
+  "aka": [
+   "Parlamentarischer Rat"
+  ]
  },
  "op-pay-as-you-earn-tax": {
   "name": "Pay As You Earn",

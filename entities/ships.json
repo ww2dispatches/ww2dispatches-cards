@@ -1558,6 +1558,13 @@
   "wikidata": "Q569433",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-751"
  },
+ "ship-german-submarine-u-752": {
+  "name": "U-752",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-752"
+ },
  "ship-german-submarine-u-753": {
   "name": "U-753",
   "kind": "Type VIIC U-boat",
@@ -1980,6 +1987,13 @@
   "wikidata": "Q5631113",
   "source": "https://en.wikipedia.org/wiki/HMNZS_Moa_(T233)"
  },
+ "ship-hms-active-h14": {
+  "name": "HMS Active (H14)",
+  "kind": "A class destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Active_(H14)"
+ },
  "ship-hms-affleck": {
   "name": "HMS Affleck (K462)",
   "kind": "Royal Navy frigate",
@@ -2021,6 +2035,13 @@
   "nation": "Britain",
   "wikidata": "Q1466092",
   "source": "https://en.wikipedia.org/wiki/HMS_Anthony_(H40)"
+ },
+ "ship-hms-archer-d78": {
+  "name": "HMS Archer (D78)",
+  "kind": "escort carrier",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Archer_(D78)"
  },
  "ship-hms-argonaut-61": {
   "name": "HMS Argonaut (61)",
@@ -2501,6 +2522,20 @@
   "nation": "Britain",
   "wikidata": "Q1550343",
   "source": "https://en.wikipedia.org/wiki/HMS_Kandahar"
+ },
+ "ship-hms-kashmir-f12": {
+  "name": "HMS Kashmir (F12)",
+  "kind": "K class destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Kashmir_(F12)"
+ },
+ "ship-hms-kelly": {
+  "name": "HMS Kelly (F01)",
+  "kind": "K class destroyer, flotilla leader",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Kelly"
  },
  "ship-hms-king-george-v-41": {
   "name": "HMS King George V (41)",
@@ -4938,6 +4973,13 @@
   "nation": "Netherlands",
   "wikidata": "Q1689615",
   "source": "https://en.wikipedia.org/wiki/SS_Rooseboom"
+ },
+ "ship-ss-samuel-q-brown": {
+  "name": "SS Samuel Q. Brown",
+  "kind": "tanker",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Samuel_Q._Brown"
  },
  "ship-ss-slamat": {
   "name": "SS Slamat",

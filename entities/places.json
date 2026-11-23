@@ -4449,6 +4449,18 @@
   "lat": 50.5792,
   "lon": 7.2442
  },
+ "place-luneburg": {
+  "name": "Luneburg",
+  "kind": "town",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/L%C3%BCneburg",
+  "aka": [
+   "Lüneburg"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-luneburg-heath": {
   "name": "Luneburg Heath",
   "kind": "heathland south of Hamburg",
