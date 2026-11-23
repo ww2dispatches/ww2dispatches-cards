@@ -2031,6 +2031,15 @@
   "lat": 48.2699,
   "lon": 11.4683
  },
+ "place-dakar": {
+  "name": "Dakar",
+  "kind": "port city",
+  "nation": "Senegal",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Dakar",
+  "lat": null,
+  "lon": null
+ },
  "place-damascus": {
   "name": "Damascus",
   "kind": "city, capital of Syria",
@@ -4490,6 +4499,19 @@
   "source": "https://en.wikipedia.org/wiki/Kotelnikovo",
   "lat": null,
   "lon": null
+ },
+ "place-kovno-ghetto": {
+  "name": "Kovno Ghetto",
+  "kind": "ghetto, later concentration camp",
+  "nation": "Lithuania",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kovno_Ghetto",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Kaunas ghetto",
+   "Kauen concentration camp"
+  ]
  },
  "place-krakow-ghetto": {
   "name": "Krakow Ghetto",

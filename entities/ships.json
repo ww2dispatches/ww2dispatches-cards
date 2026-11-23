@@ -70,6 +70,13 @@
   "source": "https://en.wikipedia.org/wiki/French_battleship_Jean_Bart_(1940)",
   "wikidata": "Q1638571"
  },
+ "ship-french-battleship-richelieu": {
+  "name": "Richelieu",
+  "kind": "battleship",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/French_battleship_Richelieu"
+ },
  "ship-french-battleship-strasbourg": {
   "name": "Strasbourg",
   "kind": "battleship",
@@ -903,6 +910,13 @@
   "wikidata": "Q571781",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-24_(1936)"
  },
+ "ship-german-submarine-u-243": {
+  "name": "U-243",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-243"
+ },
  "ship-german-submarine-u-251": {
   "name": "U-251",
   "kind": "Type VIIC U-boat",
@@ -1393,6 +1407,13 @@
   "nation": "Germany",
   "wikidata": "Q571599",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-507"
+ },
+ "ship-german-submarine-u-514": {
+  "name": "U-514",
+  "kind": "Type IXC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-514"
  },
  "ship-german-submarine-u-515": {
   "name": "U-515",

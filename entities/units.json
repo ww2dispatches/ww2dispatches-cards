@@ -1874,6 +1874,16 @@
   "source": "https://en.wikipedia.org/wiki/Afrika_Korps",
   "wikidata": "Q153113"
  },
+ "unit-air-raid-precautions": {
+  "name": "Air Raid Precautions",
+  "kind": "civil defence organisation",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Air_Raid_Precautions",
+  "aka": [
+   "ARP"
+  ]
+ },
  "unit-air-training-corps": {
   "name": "Air Training Corps",
   "kind": "youth air cadet corps",
@@ -3050,6 +3060,13 @@
   "wikidata": "Q1482551",
   "source": "https://en.wikipedia.org/wiki/Het_Parool"
  },
+ "unit-highland-light-infantry-of-canada": {
+  "name": "The Highland Light Infantry of Canada",
+  "kind": "infantry battalion",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Highland_Light_Infantry_of_Canada"
+ },
  "unit-hilfspolizei": {
   "name": "Hilfspolizei",
   "kind": "Nazi auxiliary police force of 1933",
@@ -4187,6 +4204,13 @@
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/No._9_Squadron_RAF",
   "wikidata": "Q7043892"
+ },
+ "unit-no-90-squadron-raf": {
+  "name": "No. 90 Squadron RAF",
+  "kind": "bomber squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._90_Squadron_RAF"
  },
  "unit-north-american-aviation": {
   "name": "North American Aviation",
