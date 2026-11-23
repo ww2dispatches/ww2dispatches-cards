@@ -2120,6 +2120,13 @@
   "wikidata": "Q626796",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Taierzhuang"
  },
+ "op-battle-of-tali-ihantala": {
+  "name": "Battle of Tali-Ihantala",
+  "kind": "battle",
+  "nation": "Finland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Tali%E2%80%93Ihantala"
+ },
  "op-battle-of-tarakan-1942": {
   "name": "Battle of Tarakan (1942)",
   "kind": "Japanese invasion of a Dutch oil island",
@@ -2701,6 +2708,13 @@
   "aka": [
    "Bombardment of Almería"
   ]
+ },
+ "op-bombardment-of-cherbourg": {
+  "name": "Bombardment of Cherbourg",
+  "kind": "naval bombardment",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombardment_of_Cherbourg"
  },
  "op-bombardment-of-ellwood": {
   "name": "Bombardment of Ellwood",
@@ -3932,6 +3946,13 @@
   "wikidata": "Q5419187",
   "source": "https://en.wikipedia.org/wiki/Ex_parte_Endo"
  },
+ "op-executive-order-8802": {
+  "name": "Executive Order 8802",
+  "kind": "executive order",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Executive_Order_8802"
+ },
  "op-executive-order-9066": {
   "name": "Executive Order 9066",
   "kind": "U.S. presidential order authorizing exclusion from military areas",
@@ -5034,6 +5055,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q134301",
   "source": "https://en.wikipedia.org/wiki/Katyn_massacre"
+ },
+ "op-kaunas-pogrom": {
+  "name": "Kaunas pogrom",
+  "kind": "massacre",
+  "nation": "Lithuania",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kaunas_pogrom"
  },
  "op-khabarovsk-war-crimes-trials": {
   "name": "Khabarovsk war crimes trials",
@@ -7765,6 +7793,16 @@
   "wikidata": "Q177109",
   "source": "https://en.wikipedia.org/wiki/Slovak%E2%80%93Hungarian_War"
  },
+ "op-smith-connally-act": {
+  "name": "Smith-Connally Act",
+  "kind": "wartime labor law",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Smith%E2%80%93Connally_Act",
+  "aka": [
+   "War Labor Disputes Act"
+  ]
+ },
  "op-smith-mine-disaster": {
   "name": "Smith Mine disaster",
   "kind": "coal mine explosion, Bearcreek, Montana, 1943",
@@ -8189,6 +8227,13 @@
   "nation": "Britain",
   "wikidata": "Q2375242",
   "source": "https://en.wikipedia.org/wiki/This_was_their_finest_hour"
+ },
+ "op-thousand-bomber-raids": {
+  "name": "Thousand-bomber raids",
+  "kind": "bombing raids",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Thousand-bomber_raids"
  },
  "op-tianjin-campaign": {
   "name": "Tianjin campaign",

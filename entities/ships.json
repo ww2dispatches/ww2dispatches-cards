@@ -896,6 +896,13 @@
   "wikidata": "Q4051972",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-265"
  },
+ "ship-german-submarine-u-269": {
+  "name": "U-269",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-269"
+ },
  "ship-german-submarine-u-277": {
   "name": "U-277",
   "kind": "Type VIIC U-boat",
@@ -2369,6 +2376,13 @@
   "nation": "Britain",
   "wikidata": "Q2602289",
   "source": "https://en.wikipedia.org/wiki/HMS_Berwick_(65)"
+ },
+ "ship-hms-bickerton": {
+  "name": "HMS Bickerton",
+  "kind": "frigate",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Bickerton"
  },
  "ship-hms-bideford-l43": {
   "name": "HMS Bideford (L43)",
@@ -6670,6 +6684,13 @@
   "nation": "US",
   "wikidata": "Q528650",
   "source": "https://en.wikipedia.org/wiki/USS_Nashville_(CL-43)"
+ },
+ "ship-uss-nautilus-ss-168": {
+  "name": "USS Nautilus (SS-168)",
+  "kind": "submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Nautilus_(SS-168)"
  },
  "ship-uss-neal-a-scott": {
   "name": "USS Neal A. Scott (DE-769)",
