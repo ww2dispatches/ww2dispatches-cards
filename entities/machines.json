@@ -1162,6 +1162,16 @@
    "Model 95"
   ]
  },
+ "machine-type-b-cipher-machine": {
+  "name": "Type B Cipher Machine",
+  "kind": "Japanese diplomatic cipher machine",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Type_B_Cipher_Machine",
+  "aka": [
+   "Purple"
+  ]
+ },
  "machine-type-xxi-submarine": {
   "name": "Type XXI submarine",
   "kind": "German electric U-boat class",

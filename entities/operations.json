@@ -1952,6 +1952,16 @@
   "wikidata": "Q1132971",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Nikolayevka"
  },
+ "op-battle-of-noemfoor": {
+  "name": "Battle of Noemfoor",
+  "kind": "battle",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Noemfoor",
+  "aka": [
+   "Operation Tabletennis"
+  ]
+ },
  "op-battle-of-northern-burma-and-western-yunnan": {
   "name": "Battle of Northern Burma and Western Yunnan",
   "kind": "campaign",
@@ -2634,6 +2644,16 @@
   "nation": "worldwide",
   "source": "https://en.wikipedia.org/wiki/Battle_off_Samar",
   "wikidata": "Q4348033"
+ },
+ "op-battles-of-khalkhin-gol": {
+  "name": "Battles of Khalkhin Gol",
+  "kind": "Soviet Japanese border battles",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battles_of_Khalkhin_Gol",
+  "aka": [
+   "Nomonhan Incident"
+  ]
  },
  "op-battles-of-narvik": {
   "name": "Battles of Narvik",
@@ -3994,6 +4014,13 @@
   "wikidata": "Q5301756",
   "source": "https://en.wikipedia.org/wiki/Douglas_MacArthur%27s_escape_from_the_Philippines"
  },
+ "op-drive-on-munda-point": {
+  "name": "Drive on Munda Point",
+  "kind": "offensive",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Drive_on_Munda_Point"
+ },
  "op-dunkirk-evacuation": {
   "name": "Dunkirk evacuation",
   "kind": "evacuation of Allied troops from Dunkirk, 1940",
@@ -4178,6 +4205,13 @@
   "nation": "Germany",
   "wikidata": "Q18354410",
   "source": "https://en.wikipedia.org/wiki/Exeter_Blitz"
+ },
+ "op-export-control-act": {
+  "name": "Export Control Act",
+  "kind": "U.S. law of 1940",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Export_Control_Act"
  },
  "op-expulsion-of-germans-from-czechoslovakia": {
   "name": "Expulsion of Germans from Czechoslovakia",
@@ -7028,6 +7062,16 @@
   "source": "https://en.wikipedia.org/wiki/Operation_Savanna",
   "aka": [
    "Operation Savannah"
+  ]
+ },
+ "op-operation-sea-lion": {
+  "name": "Operation Sea Lion",
+  "kind": "planned German invasion of Britain",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Sea_Lion",
+  "aka": [
+   "Unternehmen Seelowe"
   ]
  },
  "op-operation-silver-fox": {

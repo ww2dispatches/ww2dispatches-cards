@@ -1163,6 +1163,13 @@
   "wikidata": "Q4637801",
   "source": "https://en.wikipedia.org/wiki/42nd_Infantry_Division_(United_States)"
  },
+ "unit-43rd-infantry-division-united-states": {
+  "name": "43rd Infantry Division (United States)",
+  "kind": "infantry division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/43rd_Infantry_Division_(United_States)"
+ },
  "unit-43rd-wessex-reconnaissance-regiment": {
   "name": "43rd (Wessex) Reconnaissance Regiment",
   "kind": "British reconnaissance regiment",
@@ -1745,6 +1752,17 @@
   "wikidata": "Q4646122",
   "source": "https://en.wikipedia.org/wiki/96th_Infantry_Division_(United_States)"
  },
+ "unit-99th-flying-training-squadron": {
+  "name": "99th Flying Training Squadron",
+  "kind": "fighter squadron",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/99th_Flying_Training_Squadron",
+  "aka": [
+   "99th Fighter Squadron",
+   "99th Pursuit Squadron"
+  ]
+ },
  "unit-9th-armoured-brigade-united-kingdom": {
   "name": "9th Armoured Brigade",
   "kind": "British armoured brigade",
@@ -2269,6 +2287,16 @@
   "nation": "US",
   "wikidata": "Q9185941",
   "source": "https://en.wikipedia.org/wiki/Central_Intelligence_Group"
+ },
+ "unit-children-s-overseas-reception-board": {
+  "name": "Children's Overseas Reception Board",
+  "kind": "British government evacuation board",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Children%27s_Overseas_Reception_Board",
+  "aka": [
+   "CORB"
+  ]
  },
  "unit-chindits": {
   "name": "Chindits",
@@ -4071,6 +4099,16 @@
    "Kompani Linge"
   ]
  },
+ "unit-ob-west": {
+  "name": "OB West",
+  "kind": "German command in the West",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/OB_West",
+  "aka": [
+   "Oberbefehlshaber West"
+  ]
+ },
  "unit-oberkommando-der-wehrmacht": {
   "name": "Oberkommando der Wehrmacht (OKW)",
   "kind": "German Armed Forces High Command",
@@ -5569,6 +5607,13 @@
   "aka": [
    "XLVIII Panzer Corps"
   ]
+ },
+ "unit-yasuoka-detachment": {
+  "name": "Yasuoka Detachment",
+  "kind": "Japanese armored task force",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Yasuoka_Detachment"
  },
  "unit-yeomen-of-the-guard": {
   "name": "Yeomen of the Guard",

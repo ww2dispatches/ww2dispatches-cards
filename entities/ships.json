@@ -1387,6 +1387,13 @@
   "wikidata": "Q2024611",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-528"
  },
+ "ship-german-submarine-u-543": {
+  "name": "German submarine U-543",
+  "kind": "Type IXC/40 U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-543"
+ },
  "ship-german-submarine-u-545": {
   "name": "German submarine U-545",
   "kind": "German Type IXC/40 U-boat",
@@ -4889,6 +4896,13 @@
   "wikidata": "Q11379200",
   "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-73"
  },
+ "ship-japanese-submarine-i-8": {
+  "name": "Japanese submarine I-8",
+  "kind": "submarine",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-8"
+ },
  "ship-japanese-submarine-i-9": {
   "name": "Japanese submarine I-9",
   "kind": "Imperial Japanese Navy submarine",
@@ -5299,6 +5313,13 @@
   "wikidata": "Q2649649",
   "source": "https://en.wikipedia.org/wiki/SS_Almeda_Star"
  },
+ "ship-ss-arandora-star": {
+  "name": "SS Arandora Star",
+  "kind": "liner used as internee transport",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Arandora_Star"
+ },
  "ship-ss-argentina-1929": {
   "name": "SS Argentina (1929)",
   "kind": "American ocean liner and Army transport",
@@ -5357,6 +5378,13 @@
   "nation": "US",
   "wikidata": "Q65065639",
   "source": "https://en.wikipedia.org/wiki/SS_China_Arrow"
+ },
+ "ship-ss-city-of-benares": {
+  "name": "SS City of Benares",
+  "kind": "passenger liner, evacuee ship",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_City_of_Benares"
  },
  "ship-ss-city-of-flint-1919": {
   "name": "SS City of Flint (1919)",
@@ -6399,6 +6427,13 @@
   "aka": [
    "USS Gannet (AVP-8)"
   ]
+ },
+ "ship-uss-general-w-a-mann": {
+  "name": "USS General W. A. Mann (AP-112)",
+  "kind": "troop transport",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_General_W._A._Mann"
  },
  "ship-uss-gilmore": {
   "name": "USS Gilmore (DE-18)",

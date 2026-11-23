@@ -1499,6 +1499,15 @@
   "lat": 44.2767,
   "lon": 11.0003
  },
+ "place-castelvetrano": {
+  "name": "Castelvetrano",
+  "kind": "town and airfield in Sicily",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Castelvetrano",
+  "lat": null,
+  "lon": null
+ },
  "place-catford": {
   "name": "Catford",
   "kind": "district of south east London",
@@ -6349,6 +6358,18 @@
   "lat": 52.955,
   "lon": -1.1492
  },
+ "place-numfor": {
+  "name": "Numfor",
+  "kind": "island off New Guinea",
+  "nation": "Netherlands New Guinea",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Numfor",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Noemfoor"
+  ]
+ },
  "place-nuremberg": {
   "name": "Nuremberg",
   "kind": "city",
@@ -9197,6 +9218,18 @@
   "lon": 35.9219,
   "aka": [
    "Tver"
+  ]
+ },
+ "place-tyuleny-island-sea-of-okhotsk": {
+  "name": "Tyuleny Island (Sea of Okhotsk)",
+  "kind": "island off Sakhalin (Karafuto)",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tyuleny_Island_(Sea_of_Okhotsk)",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Kaihyo Island"
   ]
  },
  "place-ulithi": {
