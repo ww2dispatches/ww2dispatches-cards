@@ -14,6 +14,13 @@
   "source": "https://en.wikipedia.org/wiki/Ariete-class_torpedo_boat",
   "note": "Class entity; TA 36 (ex Stella Polare) has no article of her own."
  },
+ "ship-belgian-ship-a4": {
+  "name": "Belgian ship A4",
+  "kind": "Belgian naval trawler",
+  "nation": "Belgium",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Belgian_ship_A4"
+ },
  "ship-caterina-costa": {
   "name": "Caterina Costa",
   "kind": "Italian cargo ship requisitioned as a munitions carrier",
@@ -1026,6 +1033,13 @@
   "nation": "Germany",
   "wikidata": "Q481298",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-432"
+ },
+ "ship-german-submarine-u-436": {
+  "name": "German submarine U-436",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-436"
  },
  "ship-german-submarine-u-439": {
   "name": "U-439",

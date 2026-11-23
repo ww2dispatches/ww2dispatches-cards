@@ -206,6 +206,13 @@
   "wikidata": "Q4565107",
   "source": "https://en.wikipedia.org/wiki/1942_Rose_Bowl"
  },
+ "op-1943-akron-rubber-strike": {
+  "name": "1943 Akron rubber strike",
+  "kind": "wartime strike",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1943_Akron_rubber_strike"
+ },
  "op-1943-brusa-agreement": {
   "name": "1943 BRUSA Agreement",
   "kind": "intelligence agreement",
@@ -632,6 +639,13 @@
   "nation": "Britain, Poland",
   "wikidata": "Q918147",
   "source": "https://en.wikipedia.org/wiki/Anglo-Polish_alliance"
+ },
+ "op-anglo-soviet-treaty-of-1942": {
+  "name": "Anglo-Soviet Treaty of 1942",
+  "kind": "treaty of alliance",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Anglo-Soviet_Treaty_of_1942"
  },
  "op-anschluss": {
   "name": "Anschluss",
@@ -1266,6 +1280,16 @@
   "source": "https://en.wikipedia.org/wiki/Battle_of_Garfagnana",
   "aka": [
    "Operation Wintergewitter"
+  ]
+ },
+ "op-battle-of-gazala": {
+  "name": "Battle of Gazala",
+  "kind": "battle",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Gazala",
+  "aka": [
+   "Operation Venezia"
   ]
  },
  "op-battle-of-guadalajara": {
@@ -6853,6 +6877,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q155103",
   "source": "https://en.wikipedia.org/wiki/Siege_of_Budapest"
+ },
+ "op-siege-of-calais-1940": {
+  "name": "Siege of Calais (1940)",
+  "kind": "battle",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Siege_of_Calais_(1940)"
  },
  "op-siege-of-danzig-1945": {
   "name": "Siege of Danzig (1945)",

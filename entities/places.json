@@ -2343,6 +2343,15 @@
   "lat": 38.7806,
   "lon": -75.0917
  },
+ "place-fort-monmouth": {
+  "name": "Fort Monmouth",
+  "kind": "U.S. Army post, home of the Signal Corps Laboratories",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fort_Monmouth",
+  "lat": null,
+  "lon": null
+ },
  "place-fort-mont-valerien": {
   "name": "Fort Mont-Valerien",
   "kind": "fort west of Paris, execution site",
@@ -7343,6 +7352,15 @@
   "lat": 59.945,
   "lon": 31.0347
  },
+ "place-shuri-castle": {
+  "name": "Shuri Castle",
+  "kind": "castle and Japanese 32nd Army stronghold, Okinawa",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Shuri_Castle",
+  "lat": null,
+  "lon": null
+ },
  "place-sibuyan-sea": {
   "name": "Sibuyan Sea",
   "kind": "sea",
@@ -8104,6 +8122,15 @@
   ],
   "note": "Wikipedia article is for the successor company, Titan-Barrikady, formed from the Barrikady plant."
  },
+ "place-titania-palast": {
+  "name": "Titania-Palast",
+  "kind": "cinema and concert hall in Berlin Steglitz",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Titania-Palast",
+  "lat": null,
+  "lon": null
+ },
  "place-tobruk": {
   "name": "Tobruk",
   "kind": "port city",
@@ -8818,6 +8845,15 @@
   ],
   "lat": 54.0794,
   "lon": 21.4936
+ },
+ "place-wolfsburg-volkswagen-plant": {
+  "name": "Wolfsburg Volkswagen Plant",
+  "kind": "car factory near Fallersleben, founded 1938",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Wolfsburg_Volkswagen_Plant",
+  "lat": null,
+  "lon": null
  },
  "place-wrocaw": {
   "name": "Breslau",
