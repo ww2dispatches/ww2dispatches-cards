@@ -362,6 +362,15 @@
   "lat": 38.624,
   "lon": -28.031
  },
+ "place-baghdad": {
+  "name": "Baghdad",
+  "kind": "city, capital of Iraq",
+  "nation": "Iraq",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Baghdad",
+  "lat": null,
+  "lon": null
+ },
  "place-bainbridge-island-washington": {
   "name": "Bainbridge Island",
   "kind": "island in Puget Sound, Washington",
@@ -1215,6 +1224,15 @@
   ],
   "lat": 43.8547,
   "lon": -78.8843
+ },
+ "place-canterbury-cathedral": {
+  "name": "Canterbury Cathedral",
+  "kind": "cathedral",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Canterbury_Cathedral",
+  "lat": null,
+  "lon": null
  },
  "place-cape-canaveral-space-force-station": {
   "name": "Cape Canaveral Space Force Station",

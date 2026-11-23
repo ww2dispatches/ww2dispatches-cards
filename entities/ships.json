@@ -562,6 +562,13 @@
    "U-128"
   ]
  },
+ "ship-german-submarine-u-13-1935": {
+  "name": "German submarine U-13 (1935)",
+  "kind": "Type IIB U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-13_(1935)"
+ },
  "ship-german-submarine-u-1302": {
   "name": "German submarine U-1302",
   "kind": "German Type VIIC/41 U-boat",
@@ -839,6 +846,13 @@
   "nation": "Germany",
   "wikidata": "Q4051988",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-286"
+ },
+ "ship-german-submarine-u-289": {
+  "name": "German submarine U-289",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-289"
  },
  "ship-german-submarine-u-30-1936": {
   "name": "German submarine U-30 (1936)",
@@ -1267,6 +1281,13 @@
   "nation": "Germany",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-559",
   "wikidata": "Q549463"
+ },
+ "ship-german-submarine-u-563": {
+  "name": "German submarine U-563",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-563"
  },
  "ship-german-submarine-u-564": {
   "name": "German submarine U-564",
@@ -1838,6 +1859,13 @@
   "nation": "Australia",
   "wikidata": "Q5630315",
   "source": "https://en.wikipedia.org/wiki/HMAS_Deloraine"
+ },
+ "ship-hmas-kuttabul-ship": {
+  "name": "HMAS Kuttabul",
+  "kind": "converted Sydney ferry, depot ship",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMAS_Kuttabul_(ship)"
  },
  "ship-hmas-nestor": {
   "name": "HMAS Nestor (G02)",
@@ -2700,6 +2728,13 @@
   "nation": "Britain",
   "wikidata": "Q5633377",
   "source": "https://en.wikipedia.org/wiki/HMS_Meteor_(G73)"
+ },
+ "ship-hms-milne-g14": {
+  "name": "HMS Milne (G14)",
+  "kind": "destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Milne_(G14)"
  },
  "ship-hms-mohawk-f31": {
   "name": "HMS Mohawk (F31)",
@@ -4211,6 +4246,13 @@
   "wikidata": "Q862575",
   "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-37"
  },
+ "ship-japanese-submarine-i-401": {
+  "name": "Japanese submarine I-401",
+  "kind": "I-400 class submarine aircraft carrier",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-401"
+ },
  "ship-japanese-submarine-i-58-1943": {
   "name": "I-58",
   "kind": "Japanese submarine that sank USS Indianapolis",
@@ -5416,6 +5458,13 @@
   "nation": "US",
   "wikidata": "Q7583682",
   "source": "https://en.wikipedia.org/wiki/USS_Bush_(DD-529)"
+ },
+ "ship-uss-cabezon": {
+  "name": "USS Cabezon (SS-334)",
+  "kind": "submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Cabezon"
  },
  "ship-uss-cabot-cvl-28": {
   "name": "USS Cabot (CVL-28)",

@@ -786,6 +786,13 @@
   "wikidata": "Q52418",
   "source": "https://en.wikipedia.org/wiki/Attack_on_Pearl_Harbor"
  },
+ "op-attack-on-sydney-harbour": {
+  "name": "Attack on Sydney Harbour",
+  "kind": "Japanese midget submarine raid",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Attack_on_Sydney_Harbour"
+ },
  "op-attack-on-the-nkvd-camp-in-rembertow": {
   "name": "Attack on the NKVD Camp in Rembertow",
   "kind": "underground raid freeing prisoners",
@@ -2462,6 +2469,16 @@
   "wikidata": "Q717569",
   "source": "https://en.wikipedia.org/wiki/Blood,_toil,_tears_and_sweat"
  },
+ "op-bombardment-of-almeria": {
+  "name": "Bombardment of Almeria",
+  "kind": "German naval reprisal bombardment, Spanish Civil War",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombardment_of_Almer%C3%ADa",
+  "aka": [
+   "Bombardment of Almería"
+  ]
+ },
  "op-bombardment-of-ellwood": {
   "name": "Bombardment of Ellwood",
   "kind": "Japanese submarine shelling of the California coast, 23 Feb 1942",
@@ -3108,6 +3125,13 @@
   "aka": [
    "Hague Congress"
   ]
+ },
+ "op-constituent-national-assembly-south-korea": {
+  "name": "Constituent National Assembly (South Korea)",
+  "kind": "first South Korean National Assembly",
+  "nation": "Korea",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Constituent_National_Assembly_(South_Korea)"
  },
  "op-constitution-day-norway": {
   "name": "Constitution Day (Norway)",
@@ -4783,6 +4807,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q692065",
   "source": "https://en.wikipedia.org/wiki/Leningrad%E2%80%93Novgorod_offensive"
+ },
+ "op-levant-crisis": {
+  "name": "Levant Crisis",
+  "kind": "British intervention in French Syria, 1945",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Levant_Crisis"
  },
  "op-liberation-of-arnhem": {
   "name": "Liberation of Arnhem",
@@ -6526,6 +6557,16 @@
   "nation": "Italy",
   "wikidata": "Q1953194",
   "source": "https://en.wikipedia.org/wiki/Raid_on_Souda_Bay"
+ },
+ "op-raid-on-taipei": {
+  "name": "Raid on Taipei",
+  "kind": "US air raid on Taihoku",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Raid_on_Taipei",
+  "aka": [
+   "Taihoku Air Raid"
+  ]
  },
  "op-raid-on-tatsinskaya": {
   "name": "Raid on Tatsinskaya",

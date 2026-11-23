@@ -2420,6 +2420,13 @@
    "15th Army"
   ]
  },
+ "unit-fifth-air-force": {
+  "name": "Fifth Air Force",
+  "kind": "US Army Air Forces numbered air force",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fifth_Air_Force"
+ },
  "unit-finnish-democratic-republic": {
   "name": "Finnish Democratic Republic",
   "kind": "Soviet puppet government",
@@ -3535,6 +3542,13 @@
   "nation": "Britain",
   "wikidata": "Q7043436",
   "source": "https://en.wikipedia.org/wiki/No._36_Squadron_RAF"
+ },
+ "unit-no-37-squadron-raf": {
+  "name": "No. 37 Squadron RAF",
+  "kind": "Wellington bomber squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._37_Squadron_RAF"
  },
  "unit-no-4-commando": {
   "name": "No. 4 Commando",
