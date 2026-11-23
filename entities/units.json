@@ -1684,6 +1684,17 @@
    "ATA"
   ]
  },
+ "unit-alabama-drydock-and-shipbuilding-company": {
+  "name": "Alabama Drydock and Shipbuilding Company",
+  "kind": "shipyard company in Mobile",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Alabama_Drydock_and_Shipbuilding_Company",
+  "aka": [
+   "ADDSCO",
+   "Alabama Dry Dock and Shipbuilding Company"
+  ]
+ },
  "unit-all-india-muslim-league": {
   "name": "All-India Muslim League",
   "kind": "political party",
@@ -2320,6 +2331,17 @@
   "nation": "US",
   "wikidata": "Q762195",
   "source": "https://en.wikipedia.org/wiki/Esquire_(magazine)"
+ },
+ "unit-fair-employment-practice-committee": {
+  "name": "Fair Employment Practice Committee",
+  "kind": "federal agency against job discrimination in war industry",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fair_Employment_Practice_Committee",
+  "aka": [
+   "FEPC",
+   "Fair Employment Practices Committee"
+  ]
  },
  "unit-fareynikte-partizaner-organizatsye": {
   "name": "Fareynikte Partizaner Organizatsye",
@@ -3559,6 +3581,13 @@
   "wikidata": "Q7043640",
   "source": "https://en.wikipedia.org/wiki/No._58_Squadron_RAF"
  },
+ "unit-no-59-squadron-raf": {
+  "name": "No. 59 Squadron RAF",
+  "kind": "Coastal Command squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._59_Squadron_RAF"
+ },
  "unit-no-617-squadron-raf": {
   "name": "No. 617 Squadron RAF",
   "kind": "RAF bomber squadron",
@@ -4768,6 +4797,13 @@
   "wikidata": "Q128781",
   "source": "https://en.wikipedia.org/wiki/Wehrmacht"
  },
+ "unit-welsh-guards": {
+  "name": "Welsh Guards",
+  "kind": "British Army guards regiment",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Welsh_Guards"
+ },
  "unit-werwolf": {
   "name": "Werwolf",
   "kind": "Nazi plan and force for resistance behind Allied lines",
@@ -4941,6 +4977,13 @@
   "nation": "United Kingdom",
   "source": "https://en.wikipedia.org/wiki/Yeomen_of_the_Guard",
   "wikidata": "Q431122"
+ },
+ "unit-yugoslav-partisans": {
+  "name": "Yugoslav Partisans",
+  "kind": "communist led resistance army",
+  "nation": "Yugoslavia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Yugoslav_Partisans"
  },
  "unit-z-special-unit": {
   "name": "Z Special Unit",

@@ -1068,6 +1068,13 @@
   "wikidata": "Q339159",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Borneo_(1941%E2%80%931942)"
  },
+ "op-battle-of-boulogne": {
+  "name": "Battle of Boulogne",
+  "kind": "battle for the Channel port, 22 to 25 May 1940",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Boulogne"
+ },
  "op-battle-of-britain": {
   "name": "Battle of Britain",
   "kind": "air campaign",
@@ -2388,6 +2395,13 @@
   "nation": "Japan",
   "wikidata": "Q543077",
   "source": "https://en.wikipedia.org/wiki/Bombardment_of_Ellwood"
+ },
+ "op-bombing-of-alicante": {
+  "name": "Bombing of Alicante",
+  "kind": "air raid on Alicante's central market, 25 May 1938",
+  "nation": "Spain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Alicante"
  },
  "op-bombing-of-barcelona": {
   "name": "Bombing of Barcelona",
@@ -4595,6 +4609,13 @@
   "wikidata": "Q154940",
   "source": "https://en.wikipedia.org/wiki/Lapland_War"
  },
+ "op-last-battle-of-bismarck": {
+  "name": "Last battle of Bismarck",
+  "kind": "pursuit and sinking of Bismarck, May 1941",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Last_battle_of_Bismarck"
+ },
  "op-last-will-and-testament-of-adolf-hitler": {
   "name": "Last will and testament of Adolf Hitler",
   "kind": "document",
@@ -5580,6 +5601,13 @@
   "wikidata": "Q717561",
   "source": "https://en.wikipedia.org/wiki/Operation_I-Go"
  },
+ "op-operation-ichi-go": {
+  "name": "Operation Ichi-Go",
+  "kind": "Japanese offensive in China, 1944",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Ichi-Go"
+ },
  "op-operation-iskra": {
   "name": "Operation Iskra",
   "kind": "Soviet offensive that broke the land blockade of Leningrad",
@@ -5812,6 +5840,17 @@
   "source": "https://en.wikipedia.org/wiki/Operation_Rhein%C3%BCbung",
   "aka": [
    "Operation Rheinübung"
+  ]
+ },
+ "op-operation-rosselsprung-1944": {
+  "name": "Operation Rosselsprung (1944)",
+  "kind": "German raid on Tito's headquarters at Drvar",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_R%C3%B6sselsprung_(1944)",
+  "aka": [
+   "Operation Rösselsprung",
+   "Raid on Drvar"
   ]
  },
  "op-operation-savanna": {
@@ -6235,6 +6274,13 @@
   "nation": "US",
   "wikidata": "Q7261217",
   "source": "https://en.wikipedia.org/wiki/Purge_(occupied_Japan)"
+ },
+ "op-quebec-agreement": {
+  "name": "Quebec Agreement",
+  "kind": "Anglo American atomic agreement, August 1943",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Quebec_Agreement"
  },
  "op-quit-india-movement": {
   "name": "Quit India Movement",

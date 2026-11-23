@@ -1090,6 +1090,13 @@
   "wikidata": "Q11711251",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-473"
  },
+ "ship-german-submarine-u-476": {
+  "name": "U-476",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-476"
+ },
  "ship-german-submarine-u-486": {
   "name": "U-486",
   "kind": "Kriegsmarine U-boat",
@@ -1702,6 +1709,13 @@
   "nation": "Germany",
   "wikidata": "Q706456",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-99_(1940)"
+ },
+ "ship-german-submarine-u-990": {
+  "name": "U-990",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-990"
  },
  "ship-german-tanker-altmark": {
   "name": "Altmark",
@@ -3435,6 +3449,13 @@
   "nation": "Japan",
   "wikidata": "Q573099",
   "source": "https://en.wikipedia.org/wiki/Japanese_aircraft_carrier_Unry%C5%AB"
+ },
+ "ship-japanese-battleship-asahi": {
+  "name": "Asahi",
+  "kind": "pre-dreadnought battleship, later repair ship",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_battleship_Asahi"
  },
  "ship-japanese-battleship-hiei": {
   "name": "Hiei",
@@ -6140,6 +6161,13 @@
   "aka": [
    "USS Squalus"
   ]
+ },
+ "ship-uss-salmon-ss-182": {
+  "name": "USS Salmon (SS-182)",
+  "kind": "submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Salmon_(SS-182)"
  },
  "ship-uss-salt-lake-city-ca-25": {
   "name": "USS Salt Lake City (CA-25)",

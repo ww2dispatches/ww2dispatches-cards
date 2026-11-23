@@ -1954,6 +1954,15 @@
   "lat": 51.0493,
   "lon": 13.7381
  },
+ "place-drvar": {
+  "name": "Drvar",
+  "kind": "town in Bosnia, Partisan headquarters in 1944",
+  "nation": "Yugoslavia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Drvar",
+  "lat": null,
+  "lon": null
+ },
  "place-dublin": {
   "name": "Dublin",
   "kind": "city",
@@ -4449,6 +4458,15 @@
   "lat": 53.1686,
   "lon": 9.9397
  },
+ "place-luoyang": {
+  "name": "Luoyang",
+  "kind": "city in Henan",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Luoyang",
+  "lat": null,
+  "lon": null
+ },
  "place-lutsk": {
   "name": "Lutsk",
   "kind": "city",
@@ -5023,6 +5041,15 @@
   "lon": 38.5378,
   "note": "River runs through Ukraine and Russia."
  },
+ "place-mobile-alabama": {
+  "name": "Mobile, Alabama",
+  "kind": "port city",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mobile,_Alabama",
+  "lat": null,
+  "lon": null
+ },
  "place-mod-boscombe-down": {
   "name": "Boscombe Down",
   "kind": "test airfield",
@@ -5063,6 +5090,19 @@
   "lon": -7.3833,
   "aka": [
    "Fedala"
+  ]
+ },
+ "place-mokotow-prison": {
+  "name": "Mokotow Prison",
+  "kind": "prison in Warsaw",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mokot%C3%B3w_Prison",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Mokotów Prison",
+   "Rakowiecka Street prison"
   ]
  },
  "place-mollergata-19": {
@@ -8051,6 +8091,15 @@
   "wikidata": "Q141017",
   "lat": 35.4167,
   "lon": 139.7833
+ },
+ "place-tokyo-imperial-palace": {
+  "name": "Tokyo Imperial Palace",
+  "kind": "imperial residence",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tokyo_Imperial_Palace",
+  "lat": null,
+  "lon": null
  },
  "place-tomb-of-the-unknown-soldier-france": {
   "name": "Tomb of the Unknown Soldier",
