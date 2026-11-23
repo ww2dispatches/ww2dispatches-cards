@@ -1908,6 +1908,13 @@
   "wikidata": "Q5175197",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-663"
  },
+ "ship-german-submarine-u-67-1940": {
+  "name": "German submarine U-67 (1940)",
+  "kind": "Type IXC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-67_(1940)"
+ },
  "ship-german-submarine-u-672": {
   "name": "U-672",
   "kind": "Kriegsmarine Type VIIC U-boat",
@@ -2711,6 +2718,13 @@
   "aka": [
    "USS Wintle (DE-266)"
   ]
+ },
+ "ship-hms-cleopatra-33": {
+  "name": "HMS Cleopatra (33)",
+  "kind": "Dido class light cruiser",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Cleopatra_(33)"
  },
  "ship-hms-cornwall-56": {
   "name": "HMS Cornwall (56)",
@@ -4158,6 +4172,13 @@
    "Orione"
   ]
  },
+ "ship-italian-submarine-alagi": {
+  "name": "Italian submarine Alagi",
+  "kind": "Adua class submarine of the Regia Marina",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_submarine_Alagi"
+ },
  "ship-italian-submarine-ambra": {
   "name": "Italian submarine Ambra",
   "kind": "Regia Marina submarine, human torpedo carrier",
@@ -4919,6 +4940,13 @@
   "nation": "Japan",
   "wikidata": "Q2711551",
   "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-124"
+ },
+ "ship-japanese-submarine-i-13": {
+  "name": "Japanese submarine I-13",
+  "kind": "Type AM aircraft carrying submarine",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-13"
  },
  "ship-japanese-submarine-i-159": {
   "name": "I-159 (I-59)",
@@ -6327,6 +6355,13 @@
   "wikidata": "Q1347169",
   "source": "https://en.wikipedia.org/wiki/USS_Albacore_(SS-218)"
  },
+ "ship-uss-anzio-cve-57": {
+  "name": "USS Anzio (CVE-57)",
+  "kind": "Casablanca class escort carrier",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Anzio_(CVE-57)"
+ },
  "ship-uss-archerfish-ss-311": {
   "name": "USS Archerfish (SS-311)",
   "kind": "submarine",
@@ -6996,6 +7031,13 @@
   "nation": "US",
   "wikidata": "Q742185",
   "source": "https://en.wikipedia.org/wiki/USS_Independence_(CVL-22)"
+ },
+ "ship-uss-indianapolis-ca-35": {
+  "name": "USS Indianapolis (CA-35)",
+  "kind": "Portland class heavy cruiser",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Indianapolis_(CA-35)"
  },
  "ship-uss-intrepid-cv-11": {
   "name": "USS Intrepid (CV-11)",

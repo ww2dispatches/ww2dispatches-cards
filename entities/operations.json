@@ -119,6 +119,13 @@
   "wikidata": "Q4564626",
   "source": "https://en.wikipedia.org/wiki/1939_royal_tour_of_Canada"
  },
+ "op-1940-summer-olympics": {
+  "name": "1940 Summer Olympics",
+  "kind": "cancelled Olympic Games, awarded to Tokyo then Helsinki",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1940_Summer_Olympics"
+ },
  "op-1940-united-states-presidential-election": {
   "name": "1940 presidential election",
   "kind": "U.S. election",
@@ -2362,6 +2369,13 @@
   "wikidata": "Q4872395",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Slim_River"
  },
+ "op-battle-of-smolensk-1941": {
+  "name": "Battle of Smolensk (1941)",
+  "kind": "Eastern Front battle, July to September 1941",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Smolensk_(1941)"
+ },
  "op-battle-of-sokolovo": {
   "name": "Battle of Sokolovo",
   "kind": "Eastern Front battle",
@@ -3223,6 +3237,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q4093055",
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Helsinki_in_World_War_II"
+ },
+ "op-bombing-of-hiratsuka-in-world-war-ii": {
+  "name": "Bombing of Hiratsuka in World War II",
+  "kind": "B-29 incendiary raid on a Japanese city",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Hiratsuka_in_World_War_II"
  },
  "op-bombing-of-kassa": {
   "name": "Bombing of Kassa",
@@ -7895,6 +7916,13 @@
   "wikidata": "Q2914382",
   "source": "https://en.wikipedia.org/wiki/Portella_della_Ginestra_massacre"
  },
+ "op-potsdam-conference": {
+  "name": "Potsdam Conference",
+  "kind": "Allied Big Three conference, July to August 1945",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Potsdam_Conference"
+ },
  "op-potsdam-day": {
   "name": "Day of Potsdam",
   "kind": "state ceremony opening the Reichstag, 21 Mar 1933",
@@ -9436,6 +9464,13 @@
   "nation": "Belgium",
   "wikidata": "Q534644",
   "source": "https://en.wikipedia.org/wiki/V_sign"
+ },
+ "op-vel-d-hiv-roundup": {
+  "name": "Vel' d'Hiv roundup",
+  "kind": "mass arrest of Jews in Paris, 16 and 17 July 1942",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Vel%27_d%27Hiv_roundup"
  },
  "op-venona-project": {
   "name": "Venona project",
