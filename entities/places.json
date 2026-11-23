@@ -4347,6 +4347,15 @@
   "lat": 47.7458,
   "lon": -3.3664
  },
+ "place-los-alamos-national-laboratory": {
+  "name": "Los Alamos National Laboratory",
+  "kind": "nuclear weapons laboratory",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Los_Alamos_National_Laboratory",
+  "lat": null,
+  "lon": null
+ },
  "place-los-angeles": {
   "name": "Los Angeles",
   "kind": "city",
@@ -7020,6 +7029,15 @@
   "lat": 14.61,
   "lon": 120.9894
  },
+ "place-santurtzi": {
+  "name": "Santurtzi",
+  "kind": "port town near Bilbao",
+  "nation": "Spain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Santurtzi",
+  "lat": null,
+  "lon": null
+ },
  "place-sark": {
   "name": "Sark",
   "kind": "Channel Island",
@@ -7563,6 +7581,15 @@
   "source": "https://en.wikipedia.org/wiki/Stepney",
   "lat": 51.5152,
   "lon": -0.0462
+ },
+ "place-stoa-pitk-arizona": {
+  "name": "Stoa Pitk, Arizona",
+  "kind": "Tohono O'odham village",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Stoa_Pitk,_Arizona",
+  "lat": null,
+  "lon": null
  },
  "place-stolberg-rhineland": {
   "name": "Stolberg",

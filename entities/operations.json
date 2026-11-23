@@ -147,6 +147,13 @@
   "wikidata": "Q112762593",
   "source": "https://en.wikipedia.org/wiki/1941_Old_Palace_School_bombing"
  },
+ "op-1941-theatre-strike-in-norway": {
+  "name": "1941 theatre strike in Norway",
+  "kind": "actors' strike under occupation",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1941_theatre_strike_in_Norway"
+ },
  "op-1942-canadian-conscription-plebiscite": {
   "name": "1942 Canadian conscription plebiscite",
   "kind": "national plebiscite",
@@ -360,6 +367,13 @@
   "nation": "Israel",
   "wikidata": "Q999143",
   "source": "https://en.wikipedia.org/wiki/1949_Armistice_Agreements"
+ },
+ "op-1949-east-german-state-railway-strike": {
+  "name": "1949 East German State Railway strike",
+  "kind": "railway workers' strike in West Berlin",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1949_East_German_State_Railway_strike"
  },
  "op-20-july-plot": {
   "name": "20 July plot",
@@ -751,6 +765,16 @@
   "wikidata": "Q52418",
   "source": "https://en.wikipedia.org/wiki/Attack_on_Pearl_Harbor"
  },
+ "op-attack-on-the-nkvd-camp-in-rembertow": {
+  "name": "Attack on the NKVD Camp in Rembertow",
+  "kind": "underground raid freeing prisoners",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Attack_on_the_NKVD_Camp_in_Rembert%C3%B3w",
+  "aka": [
+   "Attack on the NKVD Camp in Rembertów"
+  ]
+ },
  "op-attack-on-the-twentieth-convoy": {
   "name": "Attack on the twentieth convoy",
   "kind": "resistance attack on a deportation train",
@@ -939,6 +963,16 @@
   "nation": "US",
   "wikidata": "Q2091385",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Arawe"
+ },
+ "op-battle-of-arras-1940": {
+  "name": "Battle of Arras (1940)",
+  "kind": "Allied counterattack",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Arras_(1940)",
+  "aka": [
+   "Frankforce counterattack"
+  ]
  },
  "op-battle-of-athens-1941": {
   "name": "Battle of Athens (1941)",
@@ -1468,6 +1502,13 @@
   "aka": [
    "Battle of the Flores Sea"
   ]
+ },
+ "op-battle-of-maleme": {
+  "name": "Battle of Maleme",
+  "kind": "battle for Maleme airfield, Crete",
+  "nation": "New Zealand",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Maleme"
  },
  "op-battle-of-manado": {
   "name": "Battle of Manado",
@@ -3393,6 +3434,16 @@
   "wikidata": "Q310218",
   "source": "https://en.wikipedia.org/wiki/Enabling_Act_of_1933"
  },
+ "op-evacuation-of-children-in-the-spanish-civil-war": {
+  "name": "Evacuation of children in the Spanish Civil War",
+  "kind": "child evacuation",
+  "nation": "Spain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Evacuation_of_children_in_the_Spanish_Civil_War",
+  "aka": [
+   "Basque children of 1937"
+  ]
+ },
  "op-ex-parte-endo": {
   "name": "Ex parte Endo",
   "kind": "Supreme Court case",
@@ -4652,6 +4703,13 @@
    "Lytton Commission"
   ]
  },
+ "op-machita-incident": {
+  "name": "Machita incident",
+  "kind": "Tohono O'odham draft resistance",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Machita_incident"
+ },
  "op-magnuson-act": {
   "name": "Magnuson Act",
   "kind": "law",
@@ -4736,6 +4794,16 @@
   "aka": [
    "Operation Hippo",
    "Operation Elephant"
+  ]
+ },
+ "op-mariana-and-palau-islands-campaign": {
+  "name": "Mariana and Palau Islands campaign",
+  "kind": "amphibious campaign",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mariana_and_Palau_Islands_campaign",
+  "aka": [
+   "Operation Forager"
   ]
  },
  "op-markham-ramu-and-finisterre-campaigns": {
@@ -7455,6 +7523,13 @@
   "nation": "US",
   "wikidata": "Q7977864",
   "source": "https://en.wikipedia.org/wiki/We_Will_Never_Die"
+ },
+ "op-west-loch-disaster": {
+  "name": "West Loch disaster",
+  "kind": "explosion and fire among LSTs at Pearl Harbor",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/West_Loch_disaster"
  },
  "op-western-allied-invasion-of-germany": {
   "name": "Western Allied invasion of Germany",

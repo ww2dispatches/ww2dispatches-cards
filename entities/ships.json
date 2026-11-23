@@ -448,6 +448,16 @@
   "wikidata": "Q12804553",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-1051"
  },
+ "ship-german-submarine-u-106-1940": {
+  "name": "German submarine U-106 (1940)",
+  "kind": "Type IXB U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-106_(1940)",
+  "aka": [
+   "U-106"
+  ]
+ },
  "ship-german-submarine-u-108-1940": {
   "name": "German submarine U-108 (1940)",
   "kind": "Type IXB U-boat",
@@ -1482,6 +1492,16 @@
   "nation": "Germany",
   "wikidata": "Q549416",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-68_(1940)"
+ },
+ "ship-german-submarine-u-69-1940": {
+  "name": "German submarine U-69 (1940)",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-69_(1940)",
+  "aka": [
+   "U-69"
+  ]
  },
  "ship-german-submarine-u-71-1940": {
   "name": "German submarine U-71 (1940)",
@@ -2716,6 +2736,13 @@
   "wikidata": "Q1131630",
   "source": "https://en.wikipedia.org/wiki/HMS_Repulse_(1916)"
  },
+ "ship-hms-royal-oak-08": {
+  "name": "HMS Royal Oak (08)",
+  "kind": "Revenge class battleship",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Royal_Oak_(08)"
+ },
  "ship-hms-sahib": {
   "name": "HMS Sahib",
   "kind": "S-class submarine",
@@ -3326,6 +3353,16 @@
   "nation": "Italy",
   "wikidata": "Q3874248",
   "source": "https://en.wikipedia.org/wiki/Italian_submarine_Neghelli"
+ },
+ "ship-italian-torpedo-boat-lupo": {
+  "name": "Italian torpedo boat Lupo",
+  "kind": "Spica class torpedo boat",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_torpedo_boat_Lupo",
+  "aka": [
+   "Lupo"
+  ]
  },
  "ship-japanese-aircraft-carrier-chuyo": {
   "name": "Chūyō",
@@ -4641,6 +4678,13 @@
    "Fairport"
   ]
  },
+ "ship-ss-faja-de-oro": {
+  "name": "SS Faja de Oro",
+  "kind": "Mexican oil tanker",
+  "nation": "Mexico",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Faja_de_Oro"
+ },
  "ship-ss-fort-stikine": {
   "name": "SS Fort Stikine",
   "kind": "British Fort type cargo ship",
@@ -4845,6 +4889,13 @@
   "nation": "Germany",
   "wikidata": "Q475557",
   "source": "https://en.wikipedia.org/wiki/SS_Rio_de_Janeiro"
+ },
+ "ship-ss-robin-moor": {
+  "name": "SS Robin Moor",
+  "kind": "American cargo ship",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Robin_Moor"
  },
  "ship-ss-rooseboom": {
   "name": "SS Rooseboom",
@@ -5681,6 +5732,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/USS_LST-282",
   "wikidata": "Q10386458"
+ },
+ "ship-uss-lst-353": {
+  "name": "USS LST-353",
+  "kind": "tank landing ship",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_LST-353"
  },
  "ship-uss-lst-507": {
   "name": "USS LST-507",
