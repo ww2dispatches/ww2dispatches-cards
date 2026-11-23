@@ -342,6 +342,13 @@
   "wikidata": "Q200121",
   "source": "https://en.wikipedia.org/wiki/18th_Army_(Wehrmacht)"
  },
+ "unit-18th-indian-infantry-brigade": {
+  "name": "18th Indian Infantry Brigade",
+  "kind": "infantry brigade",
+  "nation": "India",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/18th_Indian_Infantry_Brigade"
+ },
  "unit-19th-army-wehrmacht": {
   "name": "19th Army (Wehrmacht)",
   "kind": "German field army",
@@ -2217,6 +2224,13 @@
   "aka": [
    "Burcorps"
   ]
+ },
+ "unit-cadet-nurse-corps": {
+  "name": "Cadet Nurse Corps",
+  "kind": "U.S. Public Health Service nurse training program",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Cadet_Nurse_Corps"
  },
  "unit-camelots-du-roi": {
   "name": "Camelots du Roi",

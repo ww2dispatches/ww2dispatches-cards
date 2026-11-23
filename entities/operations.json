@@ -1087,6 +1087,13 @@
   "wikidata": "Q4868890",
   "source": "https://en.wikipedia.org/wiki/Bath_Blitz"
  },
+ "op-battle-for-caen": {
+  "name": "Battle for Caen",
+  "kind": "battle, June to August 1944",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_for_Caen"
+ },
  "op-battle-for-czech-radio": {
   "name": "Battle for Czech Radio",
   "kind": "fight for the Czech Radio building, May 1945",
@@ -1183,6 +1190,16 @@
   "nation": "US",
   "wikidata": "Q610048",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Balikpapan_(1942)"
+ },
+ "op-battle-of-balikpapan-1945": {
+  "name": "Battle of Balikpapan (1945)",
+  "kind": "amphibious landing and battle",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Balikpapan_(1945)",
+  "aka": [
+   "Operation Oboe Two"
+  ]
  },
  "op-battle-of-bardia": {
   "name": "Battle of Bardia",
@@ -3212,6 +3229,16 @@
   "wikidata": "Q1781371",
   "source": "https://en.wikipedia.org/wiki/Brazzaville_Conference"
  },
+ "op-bretton-woods-conference": {
+  "name": "Bretton Woods Conference",
+  "kind": "international monetary conference",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bretton_Woods_Conference",
+  "aka": [
+   "United Nations Monetary and Financial Conference"
+  ]
+ },
  "op-bristol-blitz": {
   "name": "Bristol Blitz",
   "kind": "air raid campaign",
@@ -3316,6 +3343,13 @@
   "nation": "Palestine",
   "wikidata": "Q5017800",
   "source": "https://en.wikipedia.org/wiki/Cairo%E2%80%93Haifa_train_bombings_1948"
+ },
+ "op-caithness-blitz": {
+  "name": "Caithness Blitz",
+  "kind": "air raids on Wick, 1940",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Caithness_Blitz"
  },
  "op-california-alien-land-law-of-1913": {
   "name": "California Alien Land Law of 1913",
@@ -3802,6 +3836,17 @@
   "wikidata": "Q3863238",
   "source": "https://en.wikipedia.org/wiki/Death_of_Benito_Mussolini"
  },
+ "op-decennial-air-cruise": {
+  "name": "Decennial Air Cruise",
+  "kind": "mass transatlantic formation flight",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Decennial_Air_Cruise",
+  "aka": [
+   "Italian Air Armada",
+   "Crociera aerea del Decennale"
+  ]
+ },
  "op-declaration-by-united-nations": {
   "name": "Declaration by United Nations",
   "kind": "Allied declaration, 1 January 1942",
@@ -4263,6 +4308,13 @@
   "nation": "US",
   "wikidata": "Q1723090",
   "source": "https://en.wikipedia.org/wiki/Fireside_chats"
+ },
+ "op-first-battle-of-el-alamein": {
+  "name": "First Battle of El Alamein",
+  "kind": "battle, 1 to 27 July 1942",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/First_Battle_of_El_Alamein"
  },
  "op-first-battle-of-sirte": {
   "name": "First Battle of Sirte",

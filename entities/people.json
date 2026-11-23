@@ -3133,6 +3133,13 @@
    "Fougasse"
   ]
  },
+ "person-frances-p-bolton": {
+  "name": "Frances P. Bolton",
+  "kind": "U.S. congresswoman, author of the Bolton Act",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Frances_P._Bolton"
+ },
  "person-frances-wills": {
   "name": "Frances Wills",
   "kind": "U.S. Navy officer",
@@ -4542,6 +4549,13 @@
   "nation": "Britain",
   "wikidata": "Q3127792",
   "source": "https://en.wikipedia.org/wiki/Harry_Boot"
+ },
+ "person-harry-dexter-white": {
+  "name": "Harry Dexter White",
+  "kind": "U.S. Treasury official",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Harry_Dexter_White"
  },
  "person-harry-hopkins": {
   "name": "Harry Hopkins",
@@ -7675,6 +7689,16 @@
   "wikidata": "Q2626460",
   "source": "https://en.wikipedia.org/wiki/Lucian_Truscott"
  },
+ "person-lucile-petry-leone": {
+  "name": "Lucile Petry Leone",
+  "kind": "nurse, director of the Cadet Nurse Corps",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Lucile_Petry_Leone",
+  "aka": [
+   "Lucile Petry"
+  ]
+ },
  "person-lucius-d-clay": {
   "name": "Lucius D. Clay",
   "kind": "US general and military governor in Germany",
@@ -9504,6 +9528,13 @@
   "wikidata": "Q185152",
   "source": "https://en.wikipedia.org/wiki/Puyi"
  },
+ "person-pyotr-georgyevich-novikov": {
+  "name": "Pyotr Georgyevich Novikov",
+  "kind": "Red Army major general",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Pyotr_Georgyevich_Novikov"
+ },
  "person-quentin-r-walsh": {
   "name": "Quentin R. Walsh",
   "kind": "US Coast Guard officer, Navy Cross at Cherbourg",
@@ -10506,6 +10537,16 @@
   "source": "https://en.wikipedia.org/wiki/Shefqet_V%C3%ABrlaci",
   "aka": [
    "Shefqet Vërlaci"
+  ]
+ },
+ "person-shigeo-odachi": {
+  "name": "Shigeo Odachi",
+  "kind": "official, first governor of the Tokyo Metropolis",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Shigeo_%C5%8Cdachi",
+  "aka": [
+   "Shigeo Ōdachi"
   ]
  },
  "person-shigeru-fukudome": {
@@ -12274,6 +12315,13 @@
   "aka": [
    "Wolfgang Luth"
   ]
+ },
+ "person-woodrow-swancutt": {
+  "name": "Woodrow Swancutt",
+  "kind": "USAAF bomber pilot",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Woodrow_Swancutt"
  },
  "person-woody-guthrie": {
   "name": "Woody Guthrie",

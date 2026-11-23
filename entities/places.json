@@ -8953,6 +8953,15 @@
   "lat": 35.4167,
   "lon": 139.7833
  },
+ "place-tokyo-city": {
+  "name": "Tokyo City",
+  "kind": "former municipality, abolished 1943",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tokyo_City",
+  "lat": null,
+  "lon": null
+ },
  "place-tokyo-imperial-palace": {
   "name": "Tokyo Imperial Palace",
   "kind": "imperial residence",
@@ -9714,6 +9723,15 @@
   "aka": [
    "White Sands Proving Ground"
   ]
+ },
+ "place-wick-caithness": {
+  "name": "Wick, Caithness",
+  "kind": "harbour town",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Wick,_Caithness",
+  "lat": null,
+  "lon": null
  },
  "place-wieringermeer": {
   "name": "Wieringermeer",

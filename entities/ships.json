@@ -4920,6 +4920,13 @@
   "wikidata": "Q13422371",
   "source": "https://en.wikipedia.org/wiki/Japanese_torpedo_boat_Tomozuru"
  },
+ "ship-montevideo-maru": {
+  "name": "Montevideo Maru",
+  "kind": "Japanese transport, prisoner ship",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Montevideo_Maru"
+ },
  "ship-ms-africa-shell": {
   "name": "MS Africa Shell",
   "kind": "merchant ship sunk by Graf Spee",
@@ -6866,6 +6873,13 @@
   "nation": "US",
   "wikidata": "Q7872199",
   "source": "https://en.wikipedia.org/wiki/USS_Nereus_(AS-17)"
+ },
+ "ship-uss-nevada-bb-36": {
+  "name": "USS Nevada (BB-36)",
+  "kind": "battleship",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Nevada_(BB-36)"
  },
  "ship-uss-new-jersey-bb-62": {
   "name": "USS New Jersey (BB-62)",
