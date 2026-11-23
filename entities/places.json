@@ -122,6 +122,15 @@
   "lat": 59.9066,
   "lon": 10.7362
  },
+ "place-akutan-island": {
+  "name": "Akutan Island",
+  "kind": "island in the Aleutians, Alaska",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Akutan_Island",
+  "lat": null,
+  "lon": null
+ },
  "place-alaska-highway": {
   "name": "Alaska Highway",
   "kind": "highway",
@@ -3867,6 +3876,15 @@
   "lat": 45.2944,
   "lon": 16.8278
  },
+ "place-jedwabne": {
+  "name": "Jedwabne",
+  "kind": "town in northeastern Poland",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Jedwabne",
+  "lat": null,
+  "lon": null
+ },
  "place-jefferson-memorial": {
   "name": "Jefferson Memorial",
   "kind": "presidential memorial, Washington, D.C.",
@@ -5354,6 +5372,15 @@
   "source": "https://en.wikipedia.org/wiki/Manzanar",
   "lat": 36.7283,
   "lon": -118.1544
+ },
+ "place-mar-del-plata": {
+  "name": "Mar del Plata",
+  "kind": "Argentine port city and naval base",
+  "nation": "Argentina",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mar_del_Plata",
+  "lat": null,
+  "lon": null
  },
  "place-marianske-lazne": {
   "name": "Marianske Lazne",
@@ -9510,6 +9537,15 @@
   "wikidata": "Q876024",
   "lat": 50.4883,
   "lon": 2.7458
+ },
+ "place-vichy": {
+  "name": "Vichy",
+  "kind": "town, seat of the French State from 1940",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Vichy",
+  "lat": null,
+  "lon": null
  },
  "place-victoria-terrasse": {
   "name": "Victoria Terrasse",

@@ -1429,6 +1429,13 @@
   "wikidata": "Q2024611",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-528"
  },
+ "ship-german-submarine-u-530": {
+  "name": "German submarine U-530",
+  "kind": "Type IXC/40 U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-530"
+ },
  "ship-german-submarine-u-543": {
   "name": "German submarine U-543",
   "kind": "Type IXC/40 U-boat",
@@ -6924,6 +6931,13 @@
   "nation": "US",
   "wikidata": "Q2470030",
   "source": "https://en.wikipedia.org/wiki/USS_MacKenzie_(DD-614)"
+ },
+ "ship-uss-maddox-dd-622": {
+  "name": "USS Maddox (DD-622)",
+  "kind": "Gleaves class destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Maddox_(DD-622)"
  },
  "ship-uss-manila-bay": {
   "name": "USS Manila Bay (CVE-61)",

@@ -6,6 +6,16 @@
   "wikidata": "Q409219",
   "source": "https://en.wikipedia.org/wiki/Airspeed_Oxford"
  },
+ "aircraft-akutan-zero": {
+  "name": "Akutan Zero",
+  "kind": "single captured Mitsubishi A6M2 Zero flown by Tadayoshi Koga",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Akutan_Zero",
+  "aka": [
+   "Koga's Zero"
+  ]
+ },
  "aircraft-algernon-iv": {
   "name": "B-25C \"Algernon IV\" (41-12485)",
   "kind": "single named B-25C Mitchell, 90th Bomb Squadron, 3rd Bomb Group",
@@ -353,6 +363,13 @@
    "Boston",
    "DB-7"
   ]
+ },
+ "aircraft-douglas-a-26-invader": {
+  "name": "Douglas A-26 Invader",
+  "kind": "twin engine attack bomber",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Douglas_A-26_Invader"
  },
  "aircraft-douglas-c-47-skytrain": {
   "name": "Douglas C-47 Skytrain",

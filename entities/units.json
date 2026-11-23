@@ -1307,6 +1307,13 @@
   "wikidata": "Q2243310",
   "source": "https://en.wikipedia.org/wiki/4th_Infantry_Division_(India)"
  },
+ "unit-4th-infantry-division-livorno": {
+  "name": "4th Infantry Division \"Livorno\"",
+  "kind": "Italian infantry division",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/4th_Infantry_Division_%22Livorno%22"
+ },
  "unit-4th-marine-division": {
   "name": "4th Marine Division",
   "kind": "U.S. Marine division",
@@ -2589,6 +2596,16 @@
   "wikidata": "Q2401707",
   "source": "https://en.wikipedia.org/wiki/Dutch_government-in-exile"
  },
+ "unit-eighteenth-army-japan": {
+  "name": "Eighteenth Army (Japan)",
+  "kind": "Imperial Japanese Army field army in New Guinea",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Eighteenth_Army_(Japan)",
+  "aka": [
+   "18th Army"
+  ]
+ },
  "unit-eighth-air-force": {
   "name": "Eighth Air Force",
   "kind": "U.S. Army Air Forces numbered air force",
@@ -3847,6 +3864,13 @@
   "wikidata": "Q12406942",
   "source": "https://en.wikipedia.org/wiki/No._11_(Scottish)_Commando"
  },
+ "unit-no-111-squadron-raf": {
+  "name": "No. 111 Squadron RAF",
+  "kind": "RAF fighter squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._111_Squadron_RAF"
+ },
  "unit-no-115-squadron-raf": {
   "name": "No. 115 Squadron RAF",
   "kind": "RAF Bomber Command squadron",
@@ -4994,6 +5018,17 @@
   "nation": "US",
   "wikidata": "Q1775742",
   "source": "https://en.wikipedia.org/wiki/Tenth_United_States_Army"
+ },
+ "unit-the-eighty-vichy-france": {
+  "name": "The Eighty (Vichy France)",
+  "kind": "group of French parliamentarians who voted against full powers for Pétain",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/The_Eighty_(Vichy_France)",
+  "aka": [
+   "Vichy 80",
+   "Les Quatre-Vingts"
+  ]
  },
  "unit-the-saturday-evening-post": {
   "name": "The Saturday Evening Post",

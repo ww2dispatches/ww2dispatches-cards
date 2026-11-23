@@ -655,6 +655,16 @@
   "wikidata": "Q249708",
   "source": "https://en.wikipedia.org/wiki/Aleutian_Islands_campaign"
  },
+ "op-allied-invasion-of-sicily": {
+  "name": "Allied invasion of Sicily",
+  "kind": "amphibious and airborne campaign",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Allied_invasion_of_Sicily",
+  "aka": [
+   "Operation Husky"
+  ]
+ },
  "op-allied-occupied-germany": {
   "name": "Allied-occupied Germany",
   "kind": "four power occupation, 1945 to 1949",
@@ -958,6 +968,16 @@
   "source": "https://en.wikipedia.org/wiki/Augsburg_raid",
   "aka": [
    "Operation Margin"
+  ]
+ },
+ "op-augustow-roundup": {
+  "name": "Augustów roundup",
+  "kind": "Soviet operation against Polish anti communist partisans",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/August%C3%B3w_roundup",
+  "aka": [
+   "Obława augustowska"
   ]
  },
  "op-auschwitz-sonderkommando-revolt": {
@@ -1475,6 +1495,16 @@
   "wikidata": "Q20203039",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Douvres_Radar_Station"
  },
+ "op-battle-of-driniumor-river": {
+  "name": "Battle of Driniumor River",
+  "kind": "battle near Aitape, New Guinea",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Driniumor_River",
+  "aka": [
+   "Battle of Aitape"
+  ]
+ },
  "op-battle-of-dunkirk": {
   "name": "Battle of Dunkirk",
   "kind": "battle and evacuation",
@@ -1546,6 +1576,13 @@
   "aka": [
    "Operation Venezia"
   ]
+ },
+ "op-battle-of-gela-1943": {
+  "name": "Battle of Gela (1943)",
+  "kind": "amphibious battle",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Gela_(1943)"
  },
  "op-battle-of-guadalajara": {
   "name": "Battle of Guadalajara",
@@ -4560,6 +4597,13 @@
   "wikidata": "Q5501005",
   "source": "https://en.wikipedia.org/wiki/Freeman_Field_mutiny"
  },
+ "op-french-constitutional-law-of-1940": {
+  "name": "French Constitutional Law of 1940",
+  "kind": "vote granting Pétain full powers",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/French_Constitutional_Law_of_1940"
+ },
  "op-g-i-bill": {
   "name": "G.I. Bill",
   "kind": "law, veterans' benefits program",
@@ -5293,6 +5337,13 @@
   "wikidata": "Q4065239",
   "source": "https://en.wikipedia.org/wiki/Japanese_occupation_of_the_Andaman_and_Nicobar_Islands"
  },
+ "op-jedwabne-pogrom": {
+  "name": "Jedwabne pogrom",
+  "kind": "massacre of the Jews of Jedwabne",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Jedwabne_pogrom"
+ },
  "op-jinzhou-operation": {
   "name": "Jinzhou Operation",
   "kind": "Japanese offensive",
@@ -5370,6 +5421,16 @@
   "source": "https://en.wikipedia.org/wiki/Kamenets%E2%80%93Podolsky_pocket",
   "aka": [
    "Hube's Pocket"
+  ]
+ },
+ "op-kanalkampf": {
+  "name": "Kanalkampf",
+  "kind": "opening phase of the Battle of Britain, attacks on Channel convoys",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kanalkampf",
+  "aka": [
+   "Channel battles"
   ]
  },
  "op-kandanos-massacre": {
