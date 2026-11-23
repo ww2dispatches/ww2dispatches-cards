@@ -940,6 +940,13 @@
   "source": "https://en.wikipedia.org/wiki/Battle_of_Aachen",
   "wikidata": "Q327052"
  },
+ "op-battle-of-amba-alagi-1941": {
+  "name": "Battle of Amba Alagi (1941)",
+  "kind": "battle, East African campaign",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Amba_Alagi_(1941)"
+ },
  "op-battle-of-anchem": {
   "name": "Battle of Anchem",
   "kind": "battle in Ethiopia, 31 March 1930",
@@ -2602,6 +2609,13 @@
   "wikidata": "Q17510984",
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Rangoon_in_World_War_II"
  },
+ "op-bombing-of-rome-in-world-war-ii": {
+  "name": "Bombing of Rome in World War II",
+  "kind": "air raids on Rome 1943 to 1944",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Rome_in_World_War_II"
+ },
  "op-bombing-of-sandhurst-road-school": {
   "name": "Bombing of Sandhurst Road School",
   "kind": "air raid on a London school",
@@ -3127,6 +3141,13 @@
   "wikidata": "Q5166655",
   "source": "https://en.wikipedia.org/wiki/Convoy_SC_118"
  },
+ "op-convoy-sc-130": {
+  "name": "Convoy SC 130",
+  "kind": "Atlantic convoy battle, May 1943",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Convoy_SC_130"
+ },
  "op-convoys-hx-229-sc-122": {
   "name": "Convoys HX 229/SC 122",
   "kind": "North Atlantic convoy battle, March 1943",
@@ -3346,6 +3367,16 @@
   "nation": "US",
   "wikidata": "Q5301756",
   "source": "https://en.wikipedia.org/wiki/Douglas_MacArthur%27s_escape_from_the_Philippines"
+ },
+ "op-dunkirk-evacuation": {
+  "name": "Dunkirk evacuation",
+  "kind": "evacuation of Allied troops from Dunkirk, 1940",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Dunkirk_evacuation",
+  "aka": [
+   "Operation Dynamo"
+  ]
  },
  "op-dutch-east-indies-campaign": {
   "name": "Dutch East Indies campaign",
@@ -4841,6 +4872,13 @@
   "nation": "US",
   "wikidata": "Q543312",
   "source": "https://en.wikipedia.org/wiki/Marshalls%E2%80%93Gilberts_raids"
+ },
+ "op-martial-law-in-taiwan": {
+  "name": "Martial law in Taiwan",
+  "kind": "period of martial law, 1949 to 1987",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Martial_law_in_Taiwan"
  },
  "op-may-15-incident": {
   "name": "May 15 incident",

@@ -1675,12 +1675,26 @@
    "U-877"
   ]
  },
+ "ship-german-submarine-u-954": {
+  "name": "U-954",
+  "kind": "German Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-954"
+ },
  "ship-german-submarine-u-96-1940": {
   "name": "U-96",
   "kind": "U-boat",
   "nation": "Germany",
   "wikidata": "Q708124",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-96_(1940)"
+ },
+ "ship-german-submarine-u-960": {
+  "name": "U-960",
+  "kind": "German Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-960"
  },
  "ship-german-submarine-u-99-1940": {
   "name": "U-99",
