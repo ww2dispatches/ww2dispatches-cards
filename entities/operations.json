@@ -3510,6 +3510,13 @@
    "Operation Ulussy"
   ]
  },
+ "op-deutschland-incident-1937": {
+  "name": "Deutschland incident (1937)",
+  "kind": "air attack on a German warship, Spanish Civil War",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Deutschland_incident_(1937)"
+ },
  "op-discovery-of-nuclear-fission": {
   "name": "Discovery of nuclear fission",
   "kind": "scientific discovery",
@@ -7738,6 +7745,13 @@
   "nation": "worldwide",
   "wikidata": "Q2335938",
   "source": "https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_21"
+ },
+ "op-united-nations-security-council-resolution-50": {
+  "name": "United Nations Security Council Resolution 50",
+  "kind": "UN resolution calling for a truce in Palestine",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_50"
  },
  "op-united-states-bases-in-the-philippines": {
   "name": "United States bases in the Philippines",

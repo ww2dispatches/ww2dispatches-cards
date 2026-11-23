@@ -1816,6 +1816,15 @@
   "lat": 48.2699,
   "lon": 11.4683
  },
+ "place-damascus": {
+  "name": "Damascus",
+  "kind": "city, capital of Syria",
+  "nation": "Syria",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Damascus",
+  "lat": null,
+  "lon": null
+ },
  "place-darwin-northern-territory": {
   "name": "Darwin, Northern Territory",
   "kind": "city and harbor",

@@ -849,6 +849,13 @@
   "wikidata": "Q50352863",
   "source": "https://en.wikipedia.org/wiki/Raising_the_Flag_on_the_Three-Country_Cairn"
  },
+ "machine-rolls-royce-kestrel": {
+  "name": "Rolls-Royce Kestrel",
+  "kind": "V-12 aero engine",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Rolls-Royce_Kestrel"
+ },
  "machine-rolls-royce-merlin": {
   "name": "Rolls-Royce Merlin",
   "kind": "V-12 aircraft engine",
@@ -865,6 +872,14 @@
   "nation": "US",
   "wikidata": "Q29051409",
   "source": "https://en.wikipedia.org/wiki/Roosevelt_dime"
+ },
+ "machine-rosie-the-riveter": {
+  "name": "Rosie the Riveter",
+  "kind": "wartime cultural icon; Rockwell's 1943 Post cover",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Rosie_the_Riveter",
+  "note": "Rockwell's painting has no separate English Wikipedia article; the id follows the icon's article."
  },
  "machine-rp-3": {
   "name": "RP-3",
@@ -1009,6 +1024,17 @@
   "wikidata": "Q1058395",
   "source": "https://en.wikipedia.org/wiki/Times_Square_Ball"
  },
+ "machine-type-95-ha-go-light-tank": {
+  "name": "Type 95 Ha-Go light tank",
+  "kind": "Japanese light tank",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Type_95_Ha-Go_light_tank",
+  "aka": [
+   "Type 95 Ha-Go",
+   "Model 95"
+  ]
+ },
  "machine-type-xxi-submarine": {
   "name": "Type XXI submarine",
   "kind": "German electric U-boat class",
@@ -1100,6 +1126,23 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/X-10_Graphite_Reactor",
   "wikidata": "Q4133095"
+ },
+ "machine-yankee-doodle-dandy": {
+  "name": "Yankee Doodle Dandy",
+  "kind": "1942 Warner Bros. film",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Yankee_Doodle_Dandy"
+ },
+ "machine-yellow-badge": {
+  "name": "Yellow badge",
+  "kind": "badge Jews were forced to wear under Nazi rule",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Yellow_badge",
+  "aka": [
+   "yellow star"
+  ]
  },
  "machine-zoe-reactor": {
   "name": "Zoé (reactor)",

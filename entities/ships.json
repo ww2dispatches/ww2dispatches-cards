@@ -1244,6 +1244,16 @@
   "wikidata": "Q2024602",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-548"
  },
+ "ship-german-submarine-u-549": {
+  "name": "German submarine U-549",
+  "kind": "Type IXC/40 U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-549",
+  "aka": [
+   "U-549"
+  ]
+ },
  "ship-german-submarine-u-55-1939": {
   "name": "German submarine U-55 (1939)",
   "kind": "Type VIIB U-boat",
@@ -1422,6 +1432,16 @@
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-616",
   "aka": [
    "U-616"
+  ]
+ },
+ "ship-german-submarine-u-62-1939": {
+  "name": "German submarine U-62 (1939)",
+  "kind": "Type IIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-62_(1939)",
+  "aka": [
+   "U-62"
   ]
  },
  "ship-german-submarine-u-620": {
@@ -2472,6 +2492,13 @@
   "wikidata": "Q710732",
   "source": "https://en.wikipedia.org/wiki/HMS_Glowworm_(H92)"
  },
+ "ship-hms-grafton-h89": {
+  "name": "HMS Grafton (H89)",
+  "kind": "G-class destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Grafton_(H89)"
+ },
  "ship-hms-graph": {
   "name": "U-570",
   "kind": "German submarine, captured",
@@ -3274,6 +3301,13 @@
   "nation": "Britain",
   "wikidata": "Q5480176",
   "source": "https://en.wikipedia.org/wiki/HMS_Vimiera_(1917)"
+ },
+ "ship-hms-wakeful-h88": {
+  "name": "HMS Wakeful (H88)",
+  "kind": "W-class destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Wakeful_(H88)"
  },
  "ship-hms-walker": {
   "name": "HMS Walker (D27)",
@@ -5477,6 +5511,13 @@
   "wikidata": "Q3544048",
   "source": "https://en.wikipedia.org/wiki/USS_Blackfin"
  },
+ "ship-uss-block-island-cve-21": {
+  "name": "USS Block Island (CVE-21)",
+  "kind": "Bogue-class escort carrier",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Block_Island_(CVE-21)"
+ },
  "ship-uss-blower": {
   "name": "USS Blower (SS-325)",
   "kind": "U.S. Navy submarine",
@@ -5695,6 +5736,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/USS_Essex_(CV-9)",
   "wikidata": "Q562674"
+ },
+ "ship-uss-eugene-e-elmore": {
+  "name": "USS Eugene E. Elmore (DE-686)",
+  "kind": "destroyer escort",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Eugene_E._Elmore"
  },
  "ship-uss-forrestal": {
   "name": "USS Forrestal (CV-59)",

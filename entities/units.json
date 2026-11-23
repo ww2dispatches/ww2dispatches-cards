@@ -276,6 +276,16 @@
   "wikidata": "Q13600072",
   "source": "https://en.wikipedia.org/wiki/15th_Panzergrenadier_Division"
  },
+ "unit-162nd-infantry-regiment-united-states": {
+  "name": "162nd Infantry Regiment (United States)",
+  "kind": "U.S. Army infantry regiment, 41st Division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/162nd_Infantry_Regiment_(United_States)",
+  "aka": [
+   "162d Infantry"
+  ]
+ },
  "unit-163rd-infantry-regiment-united-states": {
   "name": "163rd Infantry Regiment",
   "kind": "US Army infantry regiment, 41st Infantry Division",
@@ -1318,6 +1328,16 @@
   "nation": "US",
   "wikidata": "Q166222",
   "source": "https://en.wikipedia.org/wiki/5th_Marine_Division"
+ },
+ "unit-5th-marine-regiment": {
+  "name": "5th Marine Regiment",
+  "kind": "U.S. Marine Corps infantry regiment, 1st Marine Division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/5th_Marine_Regiment",
+  "aka": [
+   "5th Marines"
+  ]
  },
  "unit-5th-shock-army": {
   "name": "5th Shock Army",
@@ -2756,6 +2776,17 @@
   "aka": [
    "Armia Krajowa",
    "AK"
+  ]
+ },
+ "unit-home-guard-sweden": {
+  "name": "Home Guard (Sweden)",
+  "kind": "Swedish volunteer home guard",
+  "nation": "Sweden",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Home_Guard_(Sweden)",
+  "aka": [
+   "Hemvarnet",
+   "Hemvärnet"
   ]
  },
  "unit-home-guard-united-kingdom": {
@@ -4475,6 +4506,13 @@
   "wikidata": "Q1775742",
   "source": "https://en.wikipedia.org/wiki/Tenth_United_States_Army"
  },
+ "unit-the-saturday-evening-post": {
+  "name": "The Saturday Evening Post",
+  "kind": "American magazine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/The_Saturday_Evening_Post"
+ },
  "unit-the-writing-69th": {
   "name": "The Writing 69th",
   "kind": "group of war correspondents trained to fly bomber missions",
@@ -4637,6 +4675,16 @@
   "nation": "worldwide",
   "source": "https://en.wikipedia.org/wiki/United_Nations_Security_Council",
   "wikidata": "Q37470"
+ },
+ "unit-united-nations-truce-supervision-organization": {
+  "name": "United Nations Truce Supervision Organization",
+  "kind": "UN military observer mission",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/United_Nations_Truce_Supervision_Organization",
+  "aka": [
+   "UNTSO"
+  ]
  },
  "unit-united-press-international": {
   "name": "United Press International",

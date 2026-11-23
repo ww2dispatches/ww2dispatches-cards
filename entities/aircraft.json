@@ -1108,6 +1108,13 @@
    "Maxim Gorky"
   ]
  },
+ "aircraft-tupolev-sb": {
+  "name": "Tupolev SB",
+  "kind": "Soviet twin engine bomber",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tupolev_SB"
+ },
  "aircraft-vickers-vildebeest": {
   "name": "Vickers Vildebeest",
   "kind": "British biplane torpedo bomber",
