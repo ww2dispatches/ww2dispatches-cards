@@ -1084,6 +1084,13 @@
   "wikidata": "Q571307",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-333"
  },
+ "ship-german-submarine-u-34-1936": {
+  "name": "German submarine U-34 (1936)",
+  "kind": "Type VIIA U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-34_(1936)"
+ },
  "ship-german-submarine-u-342": {
   "name": "U-342",
   "kind": "Type VIIC U-boat",
@@ -1348,6 +1355,13 @@
   "nation": "Germany",
   "wikidata": "Q559159",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-5_(1935)"
+ },
+ "ship-german-submarine-u-502": {
+  "name": "German submarine U-502",
+  "kind": "Type IXC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-502"
  },
  "ship-german-submarine-u-503": {
   "name": "U-503",
@@ -3739,6 +3753,13 @@
   "wikidata": "Q5634932",
   "source": "https://en.wikipedia.org/wiki/HMS_Westcott"
  },
+ "ship-hms-whirlwind-d30": {
+  "name": "HMS Whirlwind (D30)",
+  "kind": "British W class destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Whirlwind_(D30)"
+ },
  "ship-hms-wild-goose": {
   "name": "HMS Wild Goose",
   "kind": "sloop",
@@ -3979,6 +4000,13 @@
   "nation": "Italy",
   "wikidata": "Q3838290",
   "source": "https://en.wikipedia.org/wiki/Italian_destroyer_Luca_Tarigo"
+ },
+ "ship-italian-destroyer-zeffiro-1927": {
+  "name": "Italian destroyer Zeffiro (1927)",
+  "kind": "Turbine class destroyer",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_destroyer_Zeffiro_(1927)"
  },
  "ship-italian-ship-orione": {
   "name": "Italian ship Orione",
@@ -4369,6 +4397,13 @@
   "wikidata": "Q452513",
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Amagiri_(1930)"
  },
+ "ship-japanese-destroyer-arare-1937": {
+  "name": "Japanese destroyer Arare (1937)",
+  "kind": "Asashio class destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Arare_(1937)"
+ },
  "ship-japanese-destroyer-asagumo-1937": {
   "name": "Asagumo",
   "kind": "destroyer",
@@ -4544,6 +4579,13 @@
   "nation": "Japan",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Nenohi_(1932)"
+ },
+ "ship-japanese-destroyer-niizuki": {
+  "name": "Japanese destroyer Niizuki",
+  "kind": "destroyer, Rear Admiral Akiyama's flagship at Kula Gulf",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Niizuki"
  },
  "ship-japanese-destroyer-nowaki-1940": {
   "name": "Nowaki",
@@ -5298,6 +5340,13 @@
   "aka": [
    "Krasnyi Kavkaz"
   ]
+ },
+ "ship-soviet-submarine-k-21": {
+  "name": "Soviet submarine K-21",
+  "kind": "Soviet K class submarine",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Soviet_submarine_K-21"
  },
  "ship-soviet-submarine-k-3-1938": {
   "name": "K-3",

@@ -1742,6 +1742,24 @@
   "wikidata": "Q4871496",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Kuala_Lumpur"
  },
+ "op-battle-of-kula-gulf": {
+  "name": "Battle of Kula Gulf",
+  "kind": "night naval battle",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Kula_Gulf"
+ },
+ "op-battle-of-kursk": {
+  "name": "Battle of Kursk",
+  "kind": "Eastern Front battle, July to August 1943",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Kursk",
+  "aka": [
+   "Operation Citadel",
+   "Unternehmen Zitadelle"
+  ]
+ },
  "op-battle-of-kwajalein": {
   "name": "Battle of Kwajalein",
   "kind": "amphibious battle",
@@ -4178,6 +4196,13 @@
   "wikidata": "Q22947403",
   "source": "https://en.wikipedia.org/wiki/Evacuation_of_civilians_from_the_Channel_Islands_in_1940"
  },
+ "op-evian-conference": {
+  "name": "Evian Conference",
+  "kind": "international conference on Jewish refugees",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/%C3%89vian_Conference"
+ },
  "op-ex-parte-endo": {
   "name": "Ex parte Endo",
   "kind": "Supreme Court case",
@@ -4818,6 +4843,13 @@
   "aka": [
    "Halifax VE Day riots"
   ]
+ },
+ "op-hartford-circus-fire": {
+  "name": "Hartford circus fire",
+  "kind": "fire disaster",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hartford_circus_fire"
  },
  "op-he-umezu-agreement": {
   "name": "He Umezu Agreement",
@@ -7082,6 +7114,17 @@
    "Operation Rheinübung"
   ]
  },
+ "op-operation-rosselsprung-1942": {
+  "name": "Operation Rosselsprung (1942)",
+  "kind": "German naval sortie against Convoy PQ 17, July 1942",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_R%C3%B6sselsprung_(1942)",
+  "aka": [
+   "Knight's Move"
+  ],
+  "note": "Not the 1944 Drvar raid of the same name (op-operation-rosselsprung-1944)."
+ },
  "op-operation-rosselsprung-1944": {
   "name": "Operation Rosselsprung (1944)",
   "kind": "German raid on Tito's headquarters at Drvar",
@@ -7461,6 +7504,13 @@
   "nation": "US",
   "wikidata": "Q696462",
   "source": "https://en.wikipedia.org/wiki/Philippines_campaign_(1941–1942)"
+ },
+ "op-philippines-campaign-1944-1945": {
+  "name": "Philippines campaign (1944 to 1945)",
+  "kind": "Allied campaign to retake the Philippines",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Philippines_campaign_(1944%E2%80%931945)"
  },
  "op-phoney-war": {
   "name": "Phoney War",

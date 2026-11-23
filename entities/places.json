@@ -248,6 +248,19 @@
   "lat": 52.2515,
   "lon": 20.9923
  },
+ "place-anne-frank-house": {
+  "name": "Anne Frank House",
+  "kind": "the annex behind Otto Frank's business where the family hid, now a museum",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Anne_Frank_House",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Secret Annex",
+   "Achterhuis"
+  ]
+ },
  "place-antlers-oklahoma": {
   "name": "Antlers, Oklahoma",
   "kind": "town",
@@ -961,6 +974,15 @@
   "source": "https://en.wikipedia.org/wiki/Bogdanovka_concentration_camp",
   "lat": 47.8171,
   "lon": 31.1305
+ },
+ "place-boise-city-oklahoma": {
+  "name": "Boise City, Oklahoma",
+  "kind": "town",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Boise_City,_Oklahoma",
+  "lat": null,
+  "lon": null
  },
  "place-bologna": {
   "name": "Bologna",
@@ -3265,6 +3287,15 @@
   "source": "https://en.wikipedia.org/wiki/Hardangervidda",
   "lat": 60.052,
   "lon": 7.018
+ },
+ "place-hartford-connecticut": {
+  "name": "Hartford, Connecticut",
+  "kind": "city",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hartford,_Connecticut",
+  "lat": null,
+  "lon": null
  },
  "place-hatfield-aerodrome": {
   "name": "Hatfield",
@@ -6150,6 +6181,15 @@
   "lat": 30.3496,
   "lon": -87.3036
  },
+ "place-natzweiler-struthof-concentration-camp": {
+  "name": "Natzweiler-Struthof",
+  "kind": "Nazi concentration camp in Alsace",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Natzweiler-Struthof_concentration_camp",
+  "lat": null,
+  "lon": null
+ },
  "place-nauru": {
   "name": "Nauru",
   "kind": "island",
@@ -6366,6 +6406,15 @@
   "source": "https://en.wikipedia.org/wiki/Northern_Ireland",
   "lat": 54.6075,
   "lon": -6.6925
+ },
+ "place-norway": {
+  "name": "Norway",
+  "kind": "country",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Norway",
+  "lat": null,
+  "lon": null
  },
  "place-norwegian-nobel-institute": {
   "name": "Norwegian Nobel Institute",
@@ -6969,6 +7018,15 @@
   "source": "https://en.wikipedia.org/wiki/Piraeus",
   "lat": 37.943,
   "lon": 23.6469
+ },
+ "place-piscine-molitor": {
+  "name": "Piscine Molitor",
+  "kind": "public swimming pool in Paris",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Piscine_Molitor",
+  "lat": null,
+  "lon": null
  },
  "place-pithiviers-internment-camp": {
   "name": "Pithiviers internment camp",
@@ -9146,6 +9204,18 @@
   "lon": 137.1667,
   "aka": [
    "Toyama Wan"
+  ]
+ },
+ "place-trafford-general-hospital": {
+  "name": "Trafford General Hospital",
+  "kind": "hospital at Davyhulme, Manchester, where the NHS was launched",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Trafford_General_Hospital",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Park Hospital, Davyhulme"
   ]
  },
  "place-treblinka-extermination-camp": {

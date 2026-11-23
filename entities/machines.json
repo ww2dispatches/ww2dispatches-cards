@@ -604,6 +604,13 @@
    "Higgins boat"
   ]
  },
+ "machine-leigh-light": {
+  "name": "Leigh Light",
+  "kind": "airborne searchlight for night attacks on U-boats",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Leigh_Light"
+ },
  "machine-liberty-ship": {
   "name": "Liberty ship",
   "kind": "standard cargo ship type",

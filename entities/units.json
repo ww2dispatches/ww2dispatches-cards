@@ -1575,6 +1575,13 @@
   "wikidata": "Q4643278",
   "source": "https://en.wikipedia.org/wiki/73rd_Air_Division"
  },
+ "unit-761st-tank-battalion-united-states": {
+  "name": "761st Tank Battalion",
+  "kind": "U.S. Army tank battalion of Black soldiers",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/761st_Tank_Battalion_(United_States)"
+ },
  "unit-77th-indian-infantry-brigade": {
   "name": "77th Indian Infantry Brigade",
   "kind": "Chindit brigade",
@@ -1657,6 +1664,13 @@
   "source": "https://en.wikipedia.org/wiki/80th_Training_Command",
   "wikidata": "Q4032504",
   "note": "Wikipedia redirects 80th Infantry Division (United States) here."
+ },
+ "unit-813-naval-air-squadron": {
+  "name": "813 Naval Air Squadron",
+  "kind": "Fleet Air Arm squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/813_Naval_Air_Squadron"
  },
  "unit-819-naval-air-squadron": {
   "name": "819 Naval Air Squadron",
@@ -2361,6 +2375,16 @@
   "source": "https://en.wikipedia.org/wiki/Civilian_Conservation_Corps",
   "aka": [
    "CCC"
+  ]
+ },
+ "unit-cleveland-guardians": {
+  "name": "Cleveland Guardians",
+  "kind": "baseball club, the Cleveland Indians in 1947",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Cleveland_Guardians",
+  "aka": [
+   "Cleveland Indians"
   ]
  },
  "unit-code-talker": {
@@ -3640,6 +3664,16 @@
   "source": "https://en.wikipedia.org/wiki/National_Archives_and_Records_Administration",
   "wikidata": "Q518155"
  },
+ "unit-national-health-service-england": {
+  "name": "National Health Service (England)",
+  "kind": "British public health service, founded 1948",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/National_Health_Service_(England)",
+  "aka": [
+   "NHS"
+  ]
+ },
  "unit-national-liberation-committee-for-northern-italy": {
   "name": "National Liberation Committee for Northern Italy",
   "kind": "Italian resistance leadership in the occupied north",
@@ -4344,6 +4378,16 @@
    "PKWN"
   ]
  },
+ "unit-polish-government-in-exile": {
+  "name": "Polish government-in-exile",
+  "kind": "Polish government in London",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Polish_government-in-exile",
+  "aka": [
+   "London Poles"
+  ]
+ },
  "unit-pravda": {
   "name": "Pravda",
   "kind": "Soviet Communist Party newspaper",
@@ -4554,6 +4598,13 @@
    "RIKEN",
    "Institute of Physical and Chemical Research"
   ]
+ },
+ "unit-ringling-bros-and-barnum-bailey-circus": {
+  "name": "Ringling Bros. and Barnum & Bailey Circus",
+  "kind": "traveling circus",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ringling_Bros._and_Barnum_%26_Bailey_Circus"
  },
  "unit-roberts-commissions": {
   "name": "Roberts Commission",
