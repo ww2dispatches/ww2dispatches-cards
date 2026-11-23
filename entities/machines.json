@@ -213,7 +213,7 @@
   "name": "Chicago Tribune",
   "kind": "newspaper",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q47596",
   "source": "https://en.wikipedia.org/wiki/Chicago_Tribune"
  },
  "machine-cross-of-honour-of-the-german-mother": {
@@ -272,7 +272,7 @@
   "name": "Demon core",
   "kind": "plutonium core used in criticality experiments",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q1186448",
   "source": "https://en.wikipedia.org/wiki/Demon_core"
  },
  "machine-der-fuehrer-s-face": {
@@ -359,7 +359,7 @@
   "name": "Flame tank",
   "kind": "flamethrower tank",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q1687222",
   "source": "https://en.wikipedia.org/wiki/Flame_tank"
  },
  "machine-four-freedoms-rockwell": {
@@ -477,7 +477,7 @@
   "name": "H2S",
   "kind": "airborne ground scanning radar",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q521916",
   "source": "https://en.wikipedia.org/wiki/H2S_(radar)"
  },
  "machine-hale-telescope": {
@@ -491,7 +491,7 @@
   "name": "Hedgehog",
   "kind": "ahead throwing anti submarine mortar",
   "nation": "Britain, US",
-  "wikidata": null,
+  "wikidata": "Q544226",
   "source": "https://en.wikipedia.org/wiki/Hedgehog_(weapon)"
  },
  "machine-henschel-hs-293": {
@@ -699,7 +699,7 @@
   "name": "McCann Rescue Chamber",
   "kind": "submarine rescue diving bell",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q4430786",
   "source": "https://en.wikipedia.org/wiki/McCann_Rescue_Chamber"
  },
  "machine-mein-kampf": {
@@ -730,7 +730,7 @@
   "name": "Mrs. Miniver",
   "kind": "1942 MGM film",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q478371",
   "source": "https://en.wikipedia.org/wiki/Mrs._Miniver"
  },
  "machine-mt-explosive-motorboat": {
@@ -748,7 +748,7 @@
   "name": "Naval mine",
   "kind": "sea mine",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q189929",
   "source": "https://en.wikipedia.org/wiki/Naval_mine",
   "note": "Type entity; nation given for the leftover wartime mines in Danish waters."
  },
@@ -839,7 +839,7 @@
   "name": "Porsche 356",
   "kind": "sports car",
   "nation": "Austria",
-  "wikidata": null,
+  "wikidata": "Q596504",
   "source": "https://en.wikipedia.org/wiki/Porsche_356"
  },
  "machine-power-jets-wu": {
@@ -896,7 +896,7 @@
   "name": "Rolls-Royce Kestrel",
   "kind": "V-12 aero engine",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q2164346",
   "source": "https://en.wikipedia.org/wiki/Rolls-Royce_Kestrel"
  },
  "machine-rolls-royce-merlin": {
@@ -920,7 +920,7 @@
   "name": "Rosie the Riveter",
   "kind": "wartime cultural icon; Rockwell's 1943 Post cover",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q1650639",
   "source": "https://en.wikipedia.org/wiki/Rosie_the_Riveter",
   "note": "Rockwell's painting has no separate English Wikipedia article; the id follows the icon's article."
  },
@@ -928,7 +928,7 @@
   "name": "RP-3",
   "kind": "air launched rocket projectile",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q3031336",
   "source": "https://en.wikipedia.org/wiki/RP-3",
   "aka": [
    "Rocket Spear"
@@ -948,7 +948,7 @@
   "name": "Schwerer Gustav",
   "kind": "German 80 cm railway siege gun (with its sister gun Dora)",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q27578",
   "source": "https://en.wikipedia.org/wiki/Schwerer_Gustav",
   "aka": [
    "Dora"
@@ -958,7 +958,7 @@
   "name": "SCR-268 radar",
   "kind": "U.S. Army searchlight and gun laying radar",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q3027363",
   "source": "https://en.wikipedia.org/wiki/SCR-268_radar"
  },
  "machine-series-e-bond": {
@@ -1067,7 +1067,7 @@
   "name": "The Magnificent Eleven",
   "kind": "Robert Capa's surviving D Day photographs",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q1191292",
   "source": "https://en.wikipedia.org/wiki/The_Magnificent_Eleven"
  },
  "machine-the-nazi-plan": {
@@ -1081,7 +1081,7 @@
   "name": "Tiger I",
   "kind": "heavy tank",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q151221",
   "source": "https://en.wikipedia.org/wiki/Tiger_I"
  },
  "machine-times-square-ball": {
@@ -1095,7 +1095,7 @@
   "name": "Type 95 Ha-Go light tank",
   "kind": "Japanese light tank",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q696563",
   "source": "https://en.wikipedia.org/wiki/Type_95_Ha-Go_light_tank",
   "aka": [
    "Type 95 Ha-Go",
@@ -1198,7 +1198,7 @@
   "name": "X-class submarine",
   "kind": "British midget submarine type (X-craft)",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q2171647",
   "source": "https://en.wikipedia.org/wiki/X-class_submarine",
   "aka": [
    "X-craft"
@@ -1208,14 +1208,14 @@
   "name": "Yankee Doodle Dandy",
   "kind": "1942 Warner Bros. film",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q1321622",
   "source": "https://en.wikipedia.org/wiki/Yankee_Doodle_Dandy"
  },
  "machine-yellow-badge": {
   "name": "Yellow badge",
   "kind": "badge Jews were forced to wear under Nazi rule",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q329429",
   "source": "https://en.wikipedia.org/wiki/Yellow_badge",
   "aka": [
    "yellow star"

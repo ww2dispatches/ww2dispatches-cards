@@ -21,10 +21,10 @@
   "name": "Abbeville",
   "kind": "town on the Somme",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q28520",
   "source": "https://en.wikipedia.org/wiki/Abbeville",
-  "lat": null,
-  "lon": null
+  "lat": 50.1053,
+  "lon": 1.8353
  },
  "place-aberdeen": {
   "name": "Aberdeen",
@@ -48,10 +48,10 @@
   "name": "Acropolis of Athens",
   "kind": "ancient citadel",
   "nation": "Greece",
-  "wikidata": null,
+  "wikidata": "Q131013",
   "source": "https://en.wikipedia.org/wiki/Acropolis_of_Athens",
-  "lat": null,
-  "lon": null,
+  "lat": 37.9717,
+  "lon": 23.7261,
   "aka": [
    "Acropolis"
   ]
@@ -165,19 +165,19 @@
   "name": "Amagansett, New York",
   "kind": "hamlet on Long Island",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q2411458",
   "source": "https://en.wikipedia.org/wiki/Amagansett,_New_York",
-  "lat": null,
-  "lon": null
+  "lat": 40.9794,
+  "lon": -72.1253
  },
  "place-amba-alagi": {
   "name": "Amba Alagi",
   "kind": "mountain stronghold in northern Ethiopia",
   "nation": "Ethiopia",
-  "wikidata": null,
+  "wikidata": "Q456557",
   "source": "https://en.wikipedia.org/wiki/Amba_Alagi",
-  "lat": null,
-  "lon": null
+  "lat": 12.9833,
+  "lon": 39.55
  },
  "place-amchitka-island": {
   "name": "Amchitka Island",
@@ -387,10 +387,10 @@
   "name": "Baghdad",
   "kind": "city, capital of Iraq",
   "nation": "Iraq",
-  "wikidata": null,
+  "wikidata": "Q1530",
   "source": "https://en.wikipedia.org/wiki/Baghdad",
-  "lat": null,
-  "lon": null
+  "lat": 33.3153,
+  "lon": 44.3661
  },
  "place-bainbridge-island-washington": {
   "name": "Bainbridge Island",
@@ -457,10 +457,10 @@
   "name": "Bangka Strait",
   "kind": "strait off Sumatra",
   "nation": "Indonesia",
-  "wikidata": null,
+  "wikidata": "Q732650",
   "source": "https://en.wikipedia.org/wiki/Bangka_Strait",
-  "lat": null,
-  "lon": null
+  "lat": -2.5425,
+  "lon": 105.7433
  },
  "place-bank-and-monument-stations": {
   "name": "Bank station",
@@ -626,10 +626,10 @@
   "name": "Bellevue Hill",
   "kind": "Sydney suburb",
   "nation": "Australia",
-  "wikidata": null,
+  "wikidata": "Q2918388",
   "source": "https://en.wikipedia.org/wiki/Bellevue_Hill,_New_South_Wales",
-  "lat": null,
-  "lon": null
+  "lat": -33.8817,
+  "lon": 151.2594
  },
  "place-bellows-air-force-station": {
   "name": "Bellows Field",
@@ -1047,10 +1047,10 @@
   "name": "Brno",
   "kind": "city in Moravia",
   "nation": "Czechoslovakia",
-  "wikidata": null,
+  "wikidata": "Q14960",
   "source": "https://en.wikipedia.org/wiki/Brno",
-  "lat": null,
-  "lon": null,
+  "lat": 49.1953,
+  "lon": 16.6083,
   "aka": [
    "Brünn"
   ]
@@ -1280,10 +1280,10 @@
   "name": "Canterbury Cathedral",
   "kind": "cathedral",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q29265",
   "source": "https://en.wikipedia.org/wiki/Canterbury_Cathedral",
-  "lat": null,
-  "lon": null
+  "lat": 51.2798,
+  "lon": 1.083
  },
  "place-cape-canaveral-space-force-station": {
   "name": "Cape Canaveral Space Force Station",
@@ -1337,10 +1337,10 @@
   "name": "Carentan",
   "kind": "town in Normandy",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q242091",
   "source": "https://en.wikipedia.org/wiki/Carentan",
-  "lat": null,
-  "lon": null
+  "lat": 49.3033,
+  "lon": -1.2483
  },
  "place-carnegie-hall": {
   "name": "Carnegie Hall",
@@ -1391,10 +1391,10 @@
   "name": "Cassel, Nord",
   "kind": "hilltop town in northern France",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q11160",
   "source": "https://en.wikipedia.org/wiki/Cassel,_Nord",
-  "lat": null,
-  "lon": null
+  "lat": 50.8,
+  "lon": 2.4872
  },
  "place-cassino": {
   "name": "Cassino",
@@ -1769,10 +1769,10 @@
   "name": "Courseulles-sur-Mer",
   "kind": "Normandy coastal town, Juno Beach",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q309123",
   "source": "https://en.wikipedia.org/wiki/Courseulles-sur-Mer",
-  "lat": null,
-  "lon": null
+  "lat": 49.3328,
+  "lon": -0.4578
  },
  "place-coventry": {
   "name": "Coventry",
@@ -1826,10 +1826,10 @@
   "name": "Crosley Field",
   "kind": "ballpark, Cincinnati",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q3003747",
   "source": "https://en.wikipedia.org/wiki/Crosley_Field",
-  "lat": null,
-  "lon": null
+  "lat": 39.1167,
+  "lon": -84.5353
  },
  "place-crveni-krst-concentration-camp": {
   "name": "Crveni Krst concentration camp",
@@ -1874,10 +1874,10 @@
   "name": "Damascus",
   "kind": "city, capital of Syria",
   "nation": "Syria",
-  "wikidata": null,
+  "wikidata": "Q3766",
   "source": "https://en.wikipedia.org/wiki/Damascus",
-  "lat": null,
-  "lon": null
+  "lat": 33.513,
+  "lon": 36.292
  },
  "place-darwin-northern-territory": {
   "name": "Darwin, Northern Territory",
@@ -1991,10 +1991,10 @@
   "name": "Detroit",
   "kind": "city",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q12439",
   "source": "https://en.wikipedia.org/wiki/Detroit",
-  "lat": null,
-  "lon": null
+  "lat": 42.3317,
+  "lon": -83.0475
  },
  "place-dieuze": {
   "name": "Dieuze",
@@ -2027,10 +2027,10 @@
   "name": "Distomo",
   "kind": "village",
   "nation": "Greece",
-  "wikidata": null,
+  "wikidata": "Q478649",
   "source": "https://en.wikipedia.org/wiki/Distomo",
-  "lat": null,
-  "lon": null
+  "lat": 38.4293,
+  "lon": 22.6673
  },
  "place-docelles": {
   "name": "Docelles",
@@ -2099,10 +2099,10 @@
   "name": "Drvar",
   "kind": "town in Bosnia, Partisan headquarters in 1944",
   "nation": "Yugoslavia",
-  "wikidata": null,
+  "wikidata": "Q762884",
   "source": "https://en.wikipedia.org/wiki/Drvar",
-  "lat": null,
-  "lon": null
+  "lat": 44.3742,
+  "lon": 16.3844
  },
  "place-dublin": {
   "name": "Dublin",
@@ -2138,10 +2138,10 @@
   "name": "Dusseldorf",
   "kind": "city in the Rhineland",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q1718",
   "source": "https://en.wikipedia.org/wiki/D%C3%BCsseldorf",
-  "lat": null,
-  "lon": null
+  "lat": 51.2256,
+  "lon": 6.7767
  },
  "place-dutch-east-indies": {
   "name": "Dutch East Indies",
@@ -2160,10 +2160,10 @@
   "name": "Dutch Harbor",
   "kind": "harbor and Navy base on Amaknak Island, Aleutians",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q49376667",
   "source": "https://en.wikipedia.org/wiki/Dutch_Harbor",
-  "lat": null,
-  "lon": null
+  "lat": 53.8988,
+  "lon": -166.5248
  },
  "place-eaglesham": {
   "name": "Eaglesham",
@@ -2247,10 +2247,10 @@
   "name": "Ellis Island",
   "kind": "island, immigration station and detention center",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q202175",
   "source": "https://en.wikipedia.org/wiki/Ellis_Island",
-  "lat": null,
-  "lon": null
+  "lat": 40.6994,
+  "lon": -74.0397
  },
  "place-ellwood-oil-field": {
   "name": "Ellwood Oil Field",
@@ -2497,10 +2497,10 @@
   "name": "Fort Monmouth",
   "kind": "U.S. Army post, home of the Signal Corps Laboratories",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q5471699",
   "source": "https://en.wikipedia.org/wiki/Fort_Monmouth",
-  "lat": null,
-  "lon": null
+  "lat": 40.314,
+  "lon": -74.045
  },
  "place-fort-mont-valerien": {
   "name": "Fort Mont-Valerien",
@@ -2530,10 +2530,10 @@
   "name": "Fort Scratchley",
   "kind": "coastal fort, Newcastle",
   "nation": "Australia",
-  "wikidata": null,
+  "wikidata": "Q5472006",
   "source": "https://en.wikipedia.org/wiki/Fort_Scratchley",
-  "lat": null,
-  "lon": null
+  "lat": -32.9277,
+  "lon": 151.79
  },
  "place-fort-stanton": {
   "name": "Fort Stanton",
@@ -2738,10 +2738,10 @@
   "name": "Gold Beach",
   "kind": "D Day landing beach",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q745883",
   "source": "https://en.wikipedia.org/wiki/Gold_Beach",
-  "lat": null,
-  "lon": null
+  "lat": 49.3434,
+  "lon": -0.5674
  },
  "place-golm-war-cemetery": {
   "name": "Golm War Cemetery",
@@ -3029,10 +3029,10 @@
   "name": "Hals, Denmark",
   "kind": "Danish town at the mouth of the Limfjord",
   "nation": "Denmark",
-  "wikidata": null,
+  "wikidata": "Q678119",
   "source": "https://en.wikipedia.org/wiki/Hals,_Denmark",
-  "lat": null,
-  "lon": null
+  "lat": 56.9967,
+  "lon": 10.3092
  },
  "place-hamburg": {
   "name": "Hamburg",
@@ -3119,10 +3119,10 @@
   "name": "Havana",
   "kind": "capital city of Cuba",
   "nation": "Cuba",
-  "wikidata": null,
+  "wikidata": "Q1563",
   "source": "https://en.wikipedia.org/wiki/Havana",
-  "lat": null,
-  "lon": null
+  "lat": 23.1367,
+  "lon": -82.3589
  },
  "place-hawaii": {
   "name": "Hawaii",
@@ -3221,10 +3221,10 @@
   "name": "Heraklion",
   "kind": "port city, Crete",
   "nation": "Greece",
-  "wikidata": null,
+  "wikidata": "Q160544",
   "source": "https://en.wikipedia.org/wiki/Heraklion",
-  "lat": null,
-  "lon": null
+  "lat": 35.3403,
+  "lon": 25.1344
  },
  "place-herzogenbusch-concentration-camp": {
   "name": "Herzogenbusch concentration camp",
@@ -3399,10 +3399,10 @@
   "name": "Huis Doorn",
   "kind": "manor house, Wilhelm II's exile home",
   "nation": "Netherlands",
-  "wikidata": null,
+  "wikidata": "Q559460",
   "source": "https://en.wikipedia.org/wiki/Huis_Doorn",
-  "lat": null,
-  "lon": null
+  "lat": 52.0314,
+  "lon": 5.3386
  },
  "place-hukawng-valley": {
   "name": "Hukawng Valley",
@@ -3548,10 +3548,10 @@
   "name": "Isle of Thanet",
   "kind": "district, Kent",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q590422",
   "source": "https://en.wikipedia.org/wiki/Isle_of_Thanet",
-  "lat": null,
-  "lon": null
+  "lat": 51.35,
+  "lon": 1.3833
  },
  "place-isley-field-saipan": {
   "name": "Isley Field, Saipan",
@@ -3744,7 +3744,7 @@
   "name": "Kaiser Shipyards",
   "kind": "wartime shipyards in Richmond, Portland and Vancouver",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q5976644",
   "source": "https://en.wikipedia.org/wiki/Kaiser_Shipyards",
   "lat": null,
   "lon": null
@@ -3787,10 +3787,10 @@
   "name": "Kandanos",
   "kind": "village in western Crete",
   "nation": "Greece",
-  "wikidata": null,
+  "wikidata": "Q547776",
   "source": "https://en.wikipedia.org/wiki/Kandanos",
-  "lat": null,
-  "lon": null
+  "lat": 35.3303,
+  "lon": 23.7383
  },
  "place-kaneohe-hawaii": {
   "name": "Kaneohe",
@@ -3821,10 +3821,10 @@
   "name": "Karelian Isthmus",
   "kind": "isthmus between the Gulf of Finland and Lake Ladoga",
   "nation": "Finland",
-  "wikidata": null,
+  "wikidata": "Q209010",
   "source": "https://en.wikipedia.org/wiki/Karelian_Isthmus",
-  "lat": null,
-  "lon": null
+  "lat": 60.5,
+  "lon": 29.9
  },
  "place-karlovy-vary": {
   "name": "Karlovy Vary",
@@ -3939,10 +3939,10 @@
   "name": "Key West",
   "kind": "island city in Florida, naval base",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q485186",
   "source": "https://en.wikipedia.org/wiki/Key_West",
-  "lat": null,
-  "lon": null
+  "lat": 24.5597,
+  "lon": -81.7836
  },
  "place-kharkiv": {
   "name": "Kharkiv",
@@ -4002,10 +4002,10 @@
   "name": "Kiska",
   "kind": "island in the Aleutians",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q1096067",
   "source": "https://en.wikipedia.org/wiki/Kiska",
-  "lat": null,
-  "lon": null
+  "lat": 51.9642,
+  "lon": 177.46
  },
  "place-klaipeda": {
   "name": "Klaipeda",
@@ -4103,9 +4103,9 @@
   "name": "Kondomari",
   "kind": "village in Chania, Crete",
   "nation": "Greece",
-  "wikidata": null,
-  "lat": null,
-  "lon": null,
+  "wikidata": "Q20668083",
+  "lat": 35.5072,
+  "lon": 23.8561,
   "source": "https://en.wikipedia.org/wiki/Kondomari"
  },
  "place-konigstein-fortress": {
@@ -4359,10 +4359,10 @@
   "name": "Labuan",
   "kind": "island in Brunei Bay",
   "nation": "Malaysia",
-  "wikidata": null,
+  "wikidata": "Q214504",
   "source": "https://en.wikipedia.org/wiki/Labuan",
-  "lat": null,
-  "lon": null
+  "lat": 5.3,
+  "lon": 115.22
  },
  "place-lae": {
   "name": "Lae",
@@ -4404,9 +4404,9 @@
   "name": "Landsberg Prison",
   "kind": "prison in Landsberg am Lech, Bavaria",
   "nation": "Germany",
-  "wikidata": null,
-  "lat": null,
-  "lon": null,
+  "wikidata": "Q677676",
+  "lat": 48.0542,
+  "lon": 10.8667,
   "source": "https://en.wikipedia.org/wiki/Landsberg_Prison"
  },
  "place-langerwehe": {
@@ -4510,10 +4510,10 @@
   "name": "Leith",
   "kind": "port district of Edinburgh",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q1018540",
   "source": "https://en.wikipedia.org/wiki/Leith",
-  "lat": null,
-  "lon": null
+  "lat": 55.9801,
+  "lon": -3.17
  },
  "place-leros": {
   "name": "Leros",
@@ -4555,10 +4555,10 @@
   "name": "Lidice",
   "kind": "village",
   "nation": "Czechoslovakia",
-  "wikidata": null,
+  "wikidata": "Q154888",
   "source": "https://en.wikipedia.org/wiki/Lidice",
-  "lat": null,
-  "lon": null
+  "lat": 50.1436,
+  "lon": 14.1902
  },
  "place-limoges": {
   "name": "Limoges",
@@ -4699,10 +4699,10 @@
   "name": "Los Alamos National Laboratory",
   "kind": "nuclear weapons laboratory",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q379848",
   "source": "https://en.wikipedia.org/wiki/Los_Alamos_National_Laboratory",
-  "lat": null,
-  "lon": null
+  "lat": 35.8756,
+  "lon": -106.3242
  },
  "place-los-angeles": {
   "name": "Los Angeles",
@@ -4729,10 +4729,10 @@
   "name": "Los Angeles Memorial Coliseum",
   "kind": "stadium",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q849784",
   "source": "https://en.wikipedia.org/wiki/Los_Angeles_Memorial_Coliseum",
-  "lat": null,
-  "lon": null
+  "lat": 34.0142,
+  "lon": -118.2878
  },
  "place-los-banos-laguna": {
   "name": "Los Banos, Laguna",
@@ -4792,13 +4792,13 @@
   "name": "Luneburg",
   "kind": "town",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q3920",
   "source": "https://en.wikipedia.org/wiki/L%C3%BCneburg",
   "aka": [
    "Lüneburg"
   ],
-  "lat": null,
-  "lon": null
+  "lat": 53.2525,
+  "lon": 10.4144
  },
  "place-luneburg-heath": {
   "name": "Luneburg Heath",
@@ -4813,10 +4813,10 @@
   "name": "Luoyang",
   "kind": "city in Henan",
   "nation": "China",
-  "wikidata": null,
+  "wikidata": "Q187136",
   "source": "https://en.wikipedia.org/wiki/Luoyang",
-  "lat": null,
-  "lon": null
+  "lat": 34.6587,
+  "lon": 112.4245
  },
  "place-lutsk": {
   "name": "Lutsk",
@@ -4908,10 +4908,10 @@
   "name": "Malgrat de Mar",
   "kind": "coastal town in Catalonia",
   "nation": "Spain",
-  "wikidata": null,
+  "wikidata": "Q12590",
   "source": "https://en.wikipedia.org/wiki/Malgrat_de_Mar",
-  "lat": null,
-  "lon": null
+  "lat": 41.6456,
+  "lon": 2.7428
  },
  "place-malta": {
   "name": "Malta",
@@ -5176,13 +5176,13 @@
   "name": "Matua",
   "kind": "island in the Kurils",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q1321247",
   "source": "https://en.wikipedia.org/wiki/Matua_(island)",
   "aka": [
    "Matsuwa"
   ],
-  "lat": null,
-  "lon": null
+  "lat": 48.09,
+  "lon": 153.2
  },
  "place-maungdaw": {
   "name": "Maungdaw",
@@ -5417,10 +5417,10 @@
   "name": "Mobile, Alabama",
   "kind": "port city",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q79875",
   "source": "https://en.wikipedia.org/wiki/Mobile,_Alabama",
-  "lat": null,
-  "lon": null
+  "lat": 30.7277,
+  "lon": -88.0527
  },
  "place-mod-boscombe-down": {
   "name": "Boscombe Down",
@@ -5468,10 +5468,10 @@
   "name": "Mokotow Prison",
   "kind": "prison in Warsaw",
   "nation": "Poland",
-  "wikidata": null,
+  "wikidata": "Q3671981",
   "source": "https://en.wikipedia.org/wiki/Mokot%C3%B3w_Prison",
-  "lat": null,
-  "lon": null,
+  "lat": 52.2075,
+  "lon": 21.0111,
   "aka": [
    "Mokotów Prison",
    "Rakowiecka Street prison"
@@ -5820,10 +5820,10 @@
   "name": "Narvik",
   "kind": "port town, Nordland",
   "nation": "Norway",
-  "wikidata": null,
+  "wikidata": "Q59101",
   "source": "https://en.wikipedia.org/wiki/Narvik_(town)",
-  "lat": null,
-  "lon": null
+  "lat": 68.4383,
+  "lon": 17.4278
  },
  "place-nassogne": {
   "name": "Nassogne",
@@ -5897,10 +5897,10 @@
   "name": "Naval Air Station Corpus Christi",
   "kind": "naval air station, Texas",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q3016314",
   "source": "https://en.wikipedia.org/wiki/Naval_Air_Station_Corpus_Christi",
-  "lat": null,
-  "lon": null
+  "lat": 27.6925,
+  "lon": -97.2911
  },
  "place-naval-air-station-fort-lauderdale": {
   "name": "Naval Air Station Fort Lauderdale",
@@ -6011,10 +6011,10 @@
   "name": "Nieuwpoort, Belgium",
   "kind": "Belgian coastal town",
   "nation": "Belgium",
-  "wikidata": null,
+  "wikidata": "Q623310",
   "source": "https://en.wikipedia.org/wiki/Nieuwpoort,_Belgium",
-  "lat": null,
-  "lon": null,
+  "lat": 51.1294,
+  "lon": 2.7514,
   "aka": [
    "Nieuport"
   ]
@@ -6251,10 +6251,10 @@
   "name": "Omaha Beach",
   "kind": "D Day landing beach",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q464257",
   "source": "https://en.wikipedia.org/wiki/Omaha_Beach",
-  "lat": null,
-  "lon": null
+  "lat": 49.3689,
+  "lon": -0.8686
  },
  "place-oppenheim": {
   "name": "Oppenheim",
@@ -6269,10 +6269,10 @@
   "name": "Oradour-sur-Glane",
   "kind": "village",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q190974",
   "source": "https://en.wikipedia.org/wiki/Oradour-sur-Glane",
-  "lat": null,
-  "lon": null
+  "lat": 45.9319,
+  "lon": 1.0317
  },
  "place-oran": {
   "name": "Oran",
@@ -6344,10 +6344,10 @@
   "name": "Oryol",
   "kind": "Russian city, site of Orel prison",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q3118",
   "source": "https://en.wikipedia.org/wiki/Oryol",
-  "lat": null,
-  "lon": null,
+  "lat": 52.9686,
+  "lon": 36.0694,
   "aka": [
    "Orel"
   ]
@@ -6455,10 +6455,10 @@
   "name": "Palazzo Venezia",
   "kind": "palace in Rome, Mussolini's seat of government",
   "nation": "Italy",
-  "wikidata": null,
+  "wikidata": "Q1123879",
   "source": "https://en.wikipedia.org/wiki/Palazzo_Venezia",
-  "lat": null,
-  "lon": null
+  "lat": 41.8962,
+  "lon": 12.4815
  },
  "place-palembang": {
   "name": "Palembang",
@@ -6482,10 +6482,10 @@
   "name": "Palmyra Atoll",
   "kind": "atoll in the central Pacific",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q123076",
   "source": "https://en.wikipedia.org/wiki/Palmyra_Atoll",
-  "lat": null,
-  "lon": null
+  "lat": 5.8833,
+  "lon": -162.0833
  },
  "place-palo-leyte": {
   "name": "Palo",
@@ -6527,19 +6527,19 @@
   "name": "Pankrác Prison",
   "kind": "prison",
   "nation": "Czechoslovakia",
-  "wikidata": null,
+  "wikidata": "Q673646",
   "source": "https://en.wikipedia.org/wiki/Pankr%C3%A1c_Prison",
-  "lat": null,
-  "lon": null
+  "lat": 50.0586,
+  "lon": 14.4389
  },
  "place-pantelleria": {
   "name": "Pantelleria",
   "kind": "Italian island between Sicily and Tunisia",
   "nation": "Italy",
-  "wikidata": null,
+  "wikidata": "Q481758",
   "source": "https://en.wikipedia.org/wiki/Pantelleria",
-  "lat": null,
-  "lon": null
+  "lat": 36.7875,
+  "lon": 11.9925
  },
  "place-paramount-theatre-manhattan": {
   "name": "Paramount Theatre (Manhattan)",
@@ -6734,10 +6734,10 @@
   "name": "Pointe du Hoc",
   "kind": "clifftop promontory and German battery, Normandy",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q284649",
   "source": "https://en.wikipedia.org/wiki/Pointe_du_Hoc",
-  "lat": null,
-  "lon": null
+  "lat": 49.3979,
+  "lon": -0.9894
  },
  "place-polo-grounds": {
   "name": "Polo Grounds",
@@ -7466,9 +7466,9 @@
   "name": "Salford Royal Hospital",
   "kind": "hospital in Salford, England; old building on Chapel Street",
   "nation": "Britain",
-  "wikidata": null,
-  "lat": null,
-  "lon": null,
+  "wikidata": "Q50575528",
+  "lat": 53.4882,
+  "lon": -2.3233,
   "source": "https://en.wikipedia.org/wiki/Salford_Royal_Hospital"
  },
  "place-salween-river": {
@@ -7523,10 +7523,10 @@
   "name": "San Leandro, California",
   "kind": "city in the East Bay",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q851034",
   "source": "https://en.wikipedia.org/wiki/San_Leandro,_California",
-  "lat": null,
-  "lon": null
+  "lat": 37.725,
+  "lon": -122.1561
  },
  "place-san-pietro-infine": {
   "name": "San Pietro Infine",
@@ -7577,10 +7577,10 @@
   "name": "Santurtzi",
   "kind": "port town near Bilbao",
   "nation": "Spain",
-  "wikidata": null,
+  "wikidata": "Q917886",
   "source": "https://en.wikipedia.org/wiki/Santurtzi",
-  "lat": null,
-  "lon": null
+  "lat": 43.3303,
+  "lon": -3.0314
  },
  "place-sark": {
   "name": "Sark",
@@ -7604,10 +7604,10 @@
   "name": "Saumur",
   "kind": "town on the Loire",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q193821",
   "source": "https://en.wikipedia.org/wiki/Saumur",
-  "lat": null,
-  "lon": null
+  "lat": 47.2592,
+  "lon": -0.0781
  },
  "place-savo-island": {
   "name": "Savo Island",
@@ -7812,19 +7812,19 @@
   "name": "Shuri Castle",
   "kind": "castle and Japanese 32nd Army stronghold, Okinawa",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q907052",
   "source": "https://en.wikipedia.org/wiki/Shuri_Castle",
-  "lat": null,
-  "lon": null
+  "lat": 26.217,
+  "lon": 127.7195
  },
  "place-sibutu-passage": {
   "name": "Sibutu Passage",
   "kind": "strait between Tawi-Tawi and Borneo",
   "nation": "Philippines",
-  "wikidata": null,
+  "wikidata": "Q2857385",
   "source": "https://en.wikipedia.org/wiki/Sibutu_Passage",
-  "lat": null,
-  "lon": null
+  "lat": 4.8333,
+  "lon": 119.5833
  },
  "place-sibuyan-sea": {
   "name": "Sibuyan Sea",
@@ -8079,10 +8079,10 @@
   "name": "St Marychurch",
   "kind": "district of Torquay, Devon",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q7594667",
   "source": "https://en.wikipedia.org/wiki/St_Marychurch",
-  "lat": null,
-  "lon": null
+  "lat": 50.482,
+  "lon": -3.524
  },
  "place-st-pauls-cathedral": {
   "name": "St Paul's Cathedral",
@@ -8166,10 +8166,10 @@
   "name": "Stoa Pitk, Arizona",
   "kind": "Tohono O'odham village",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q30622621",
   "source": "https://en.wikipedia.org/wiki/Stoa_Pitk,_Arizona",
-  "lat": null,
-  "lon": null
+  "lat": 32.485,
+  "lon": -112.5169
  },
  "place-stolberg-rhineland": {
   "name": "Stolberg",
@@ -8406,10 +8406,10 @@
   "name": "Tawi-Tawi",
   "kind": "island and fleet anchorage, southern Philippines",
   "nation": "Philippines",
-  "wikidata": null,
+  "wikidata": "Q13893",
   "source": "https://en.wikipedia.org/wiki/Tawi-Tawi",
-  "lat": null,
-  "lon": null
+  "lat": 5.2,
+  "lon": 120.0833
  },
  "place-tebaga-gap": {
   "name": "Tebaga Gap",
@@ -8609,10 +8609,10 @@
   "name": "Titania-Palast",
   "kind": "cinema and concert hall in Berlin Steglitz",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q2436848",
   "source": "https://en.wikipedia.org/wiki/Titania-Palast",
-  "lat": null,
-  "lon": null
+  "lat": 52.4639,
+  "lon": 13.3267
  },
  "place-tobruk": {
   "name": "Tobruk",
@@ -8645,10 +8645,10 @@
   "name": "Tokyo Imperial Palace",
   "kind": "imperial residence",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q500681",
   "source": "https://en.wikipedia.org/wiki/Tokyo_Imperial_Palace",
-  "lat": null,
-  "lon": null
+  "lat": 35.6825,
+  "lon": 139.7521
  },
  "place-tomb-of-the-unknown-soldier-france": {
   "name": "Tomb of the Unknown Soldier",
@@ -8663,10 +8663,10 @@
   "name": "Top Cottage",
   "kind": "Roosevelt's hilltop retreat at Hyde Park",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q7824472",
   "source": "https://en.wikipedia.org/wiki/Top_Cottage",
-  "lat": null,
-  "lon": null
+  "lat": 41.765,
+  "lon": -73.8886
  },
  "place-topaz-war-relocation-center": {
   "lat": 39.4144,
@@ -8699,10 +8699,10 @@
   "name": "Torquay",
   "kind": "seaside town in Devon",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q209055",
   "source": "https://en.wikipedia.org/wiki/Torquay",
-  "lat": null,
-  "lon": null
+  "lat": 50.4625,
+  "lon": -3.5281
  },
  "place-toshima": {
   "name": "Toshima",
@@ -8726,10 +8726,10 @@
   "name": "Tours",
   "kind": "city on the Loire, seat of the French government in June 1940",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q288",
   "source": "https://en.wikipedia.org/wiki/Tours",
-  "lat": null,
-  "lon": null
+  "lat": 47.3928,
+  "lon": 0.6883
  },
  "place-treblinka-extermination-camp": {
   "name": "Treblinka extermination camp",
@@ -8753,10 +8753,10 @@
   "name": "Trieste",
   "kind": "port city",
   "nation": "Italy",
-  "wikidata": null,
+  "wikidata": "Q546",
   "source": "https://en.wikipedia.org/wiki/Trieste",
-  "lat": null,
-  "lon": null
+  "lat": 45.6503,
+  "lon": 13.7703
  },
  "place-tripoli-libya": {
   "name": "Tripoli",
@@ -8783,10 +8783,10 @@
   "name": "Trondheim",
   "kind": "city",
   "nation": "Norway",
-  "wikidata": null,
+  "wikidata": "Q25804",
   "source": "https://en.wikipedia.org/wiki/Trondheim",
-  "lat": null,
-  "lon": null
+  "lat": 63.44,
+  "lon": 10.4
  },
  "place-trust-territory-of-the-pacific-islands": {
   "name": "Trust Territory of the Pacific Islands",
@@ -8840,7 +8840,7 @@
   "name": "Tulle",
   "kind": "town, Correze",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q4467425",
   "source": "https://en.wikipedia.org/wiki/Tulle",
   "lat": null,
   "lon": null
@@ -8919,19 +8919,19 @@
   "name": "University of Virginia",
   "kind": "university",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q213439",
   "source": "https://en.wikipedia.org/wiki/University_of_Virginia",
-  "lat": null,
-  "lon": null
+  "lat": 38.0356,
+  "lon": -78.5033
  },
  "place-utah-beach": {
   "name": "Utah Beach",
   "kind": "invasion beach, Normandy",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q757273",
   "source": "https://en.wikipedia.org/wiki/Utah_Beach",
-  "lat": null,
-  "lon": null
+  "lat": 49.4158,
+  "lon": -1.1747
  },
  "place-vagsoy-island": {
   "name": "Vågsøy (island)",
@@ -8959,10 +8959,10 @@
   "name": "Vanport, Oregon",
   "kind": "wartime public housing city",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q596232",
   "source": "https://en.wikipedia.org/wiki/Vanport,_Oregon",
-  "lat": null,
-  "lon": null,
+  "lat": 45.6006,
+  "lon": -122.6957,
   "aka": [
    "Vanport"
   ]
@@ -8980,10 +8980,10 @@
   "name": "Velletri",
   "kind": "town in the Alban Hills",
   "nation": "Italy",
-  "wikidata": null,
+  "wikidata": "Q189236",
   "source": "https://en.wikipedia.org/wiki/Velletri",
-  "lat": null,
-  "lon": null
+  "lat": 41.6667,
+  "lon": 12.7833
  },
  "place-vemork": {
   "name": "Vemork",
@@ -9426,10 +9426,10 @@
   "name": "Wolfsburg Volkswagen Plant",
   "kind": "car factory near Fallersleben, founded 1938",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q878315",
   "source": "https://en.wikipedia.org/wiki/Wolfsburg_Volkswagen_Plant",
-  "lat": null,
-  "lon": null
+  "lat": 52.4338,
+  "lon": 10.7796
  },
  "place-wrocaw": {
   "name": "Breslau",
