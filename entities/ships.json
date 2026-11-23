@@ -2281,6 +2281,13 @@
   "wikidata": "Q834608",
   "source": "https://en.wikipedia.org/wiki/HMAS_Vampire_(D68)"
  },
+ "ship-hmas-vendetta-d69": {
+  "name": "HMAS Vendetta (D69)",
+  "kind": "Royal Australian Navy destroyer",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMAS_Vendetta_(D69)"
+ },
  "ship-hmas-yarra-u77": {
   "name": "HMAS Yarra (U77)",
   "kind": "sloop",
@@ -2680,6 +2687,13 @@
   "nation": "Britain",
   "wikidata": "Q4346531",
   "source": "https://en.wikipedia.org/wiki/HMS_Dasher_(D37)"
+ },
+ "ship-hms-defender-h07": {
+  "name": "HMS Defender (H07)",
+  "kind": "Royal Navy D class destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Defender_(H07)"
  },
  "ship-hms-devonshire-39": {
   "name": "HMS Devonshire (39)",
@@ -4681,6 +4695,13 @@
   "wikidata": "Q1551716",
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Sagiri"
  },
+ "ship-japanese-destroyer-sakura-1944": {
+  "name": "Japanese destroyer Sakura (1944)",
+  "kind": "Matsu class escort destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Sakura_(1944)"
+ },
  "ship-japanese-destroyer-samidare-1935": {
   "name": "Samidare",
   "kind": "destroyer",
@@ -5533,6 +5554,13 @@
   "wikidata": "Q60771876",
   "source": "https://en.wikipedia.org/wiki/SS_Byron_D._Benson"
  },
+ "ship-ss-california-1923": {
+  "name": "SS California (1923)",
+  "kind": "Anchor Line liner serving as a troopship",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_California_(1923)"
+ },
  "ship-ss-cap-arcona": {
   "name": "SS Cap Arcona",
   "kind": "German ocean liner, prison ship sunk 3 May 1945",
@@ -5638,6 +5666,13 @@
   "wikidata": "Q7865768",
   "source": "https://en.wikipedia.org/wiki/SS_Dorchester"
  },
+ "ship-ss-duchess-of-york-1928": {
+  "name": "SS Duchess of York (1928)",
+  "kind": "Canadian Pacific liner serving as a troopship",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Duchess_of_York_(1928)"
+ },
  "ship-ss-el-estero": {
   "name": "SS El Estero",
   "kind": "Panamanian flagged ammunition freighter",
@@ -5691,6 +5726,17 @@
   "source": "https://en.wikipedia.org/wiki/SS_Europa_(1928)",
   "aka": [
    "Liberte"
+  ]
+ },
+ "ship-ss-exodus": {
+  "name": "SS Exodus",
+  "kind": "refugee ship, formerly the packet boat President Warfield",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Exodus",
+  "aka": [
+   "President Warfield",
+   "Exodus 1947"
   ]
  },
  "ship-ss-fairport-1941": {
@@ -7485,6 +7531,13 @@
   "aka": [
    "HMS Belmont (H46)"
   ]
+ },
+ "ship-uss-savannah-cl-42": {
+  "name": "USS Savannah (CL-42)",
+  "kind": "U.S. Navy light cruiser",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Savannah_(CL-42)"
  },
  "ship-uss-sculpin-ss-191": {
   "name": "USS Sculpin (SS-191)",

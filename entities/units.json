@@ -1377,6 +1377,16 @@
    "503rd PRCT"
   ]
  },
+ "unit-504th-infantry-regiment": {
+  "name": "504th Infantry Regiment",
+  "kind": "U.S. Army parachute infantry regiment, 82nd Airborne Division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/504th_Infantry_Regiment",
+  "aka": [
+   "504th Parachute Infantry Regiment"
+  ]
+ },
  "unit-509th-composite-group": {
   "name": "509th Composite Group",
   "kind": "atomic bomb delivery group",
@@ -1414,6 +1424,16 @@
   "nation": "Britain",
   "wikidata": "Q2438997",
   "source": "https://en.wikipedia.org/wiki/51st_(Highland)_Division"
+ },
+ "unit-52nd-troop-carrier-wing": {
+  "name": "52nd Troop Carrier Wing",
+  "kind": "USAAF troop carrier wing",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/52nd_Troop_Carrier_Wing",
+  "aka": [
+   "52d Troop Carrier Wing"
+  ]
  },
  "unit-55th-division-imperial-japanese-army": {
   "name": "55th Division",
@@ -4332,6 +4352,16 @@
    "OSS"
   ]
  },
+ "unit-office-of-the-coordinator-of-information": {
+  "name": "Office of the Coordinator of Information",
+  "kind": "U.S. civilian intelligence agency, forerunner of the OSS",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Office_of_the_Coordinator_of_Information",
+  "aka": [
+   "COI"
+  ]
+ },
  "unit-office-of-war-mobilization": {
   "name": "Office of War Mobilization",
   "kind": "U.S. wartime home front agency",
@@ -5170,6 +5200,16 @@
   "source": "https://en.wikipedia.org/wiki/Twenty-Fifth_Army_(Japan)",
   "aka": [
    "25th Army"
+  ]
+ },
+ "unit-ukrainian-insurgent-army": {
+  "name": "Ukrainian Insurgent Army",
+  "kind": "Ukrainian nationalist armed force",
+  "nation": "Ukraine",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ukrainian_Insurgent_Army",
+  "aka": [
+   "UPA"
   ]
  },
  "unit-unicef": {

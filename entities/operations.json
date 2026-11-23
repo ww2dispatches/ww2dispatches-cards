@@ -3747,6 +3747,13 @@
    "Chicago Convention"
   ]
  },
+ "op-convoy-faith": {
+  "name": "Convoy Faith",
+  "kind": "Allied troop convoy, July 1943",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Convoy_Faith"
+ },
  "op-convoy-hg-76": {
   "name": "Convoy HG 76",
   "kind": "convoy battle",
@@ -5423,6 +5430,16 @@
    "Justice Case"
   ]
  },
+ "op-juliabkommen": {
+  "name": "Juliabkommen",
+  "kind": "Austro-German agreement of 11 July 1936",
+  "nation": "Austria",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Juliabkommen",
+  "aka": [
+   "July Agreement"
+  ]
+ },
  "op-june-deportation": {
   "name": "June deportation",
   "kind": "1941 Soviet mass deportations from the Baltic states and other regions",
@@ -5539,6 +5556,13 @@
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/Kindertransport",
   "wikidata": "Q683056"
+ },
+ "op-kisielin-massacre": {
+  "name": "Kisielin massacre",
+  "kind": "massacre of Polish worshippers, 11 July 1943",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kisielin_massacre"
  },
  "op-knights-of-columbus-hostel-fire": {
   "name": "Knights of Columbus Hostel fire",
@@ -6063,6 +6087,16 @@
   "nation": "Germany",
   "wikidata": "Q568880",
   "source": "https://en.wikipedia.org/wiki/Massacre_of_Kondomari"
+ },
+ "op-massacres-of-poles-in-volhynia-and-eastern-galicia": {
+  "name": "Massacres of Poles in Volhynia and Eastern Galicia",
+  "kind": "mass killings of Polish civilians, 1943 to 1945",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Massacres_of_Poles_in_Volhynia_and_Eastern_Galicia",
+  "aka": [
+   "Volhynia massacre"
+  ]
  },
  "op-may-15-incident": {
   "name": "May 15 incident",
@@ -6870,6 +6904,13 @@
   "aka": [
    "Frantic Joe"
   ]
+ },
+ "op-operation-fs": {
+  "name": "Operation FS",
+  "kind": "planned Japanese invasion of New Caledonia, Fiji and Samoa",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_FS"
  },
  "op-operation-gambit": {
   "name": "Operation Gambit",

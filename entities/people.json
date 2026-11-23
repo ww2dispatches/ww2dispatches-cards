@@ -1535,6 +1535,13 @@
   "wikidata": "Q704264",
   "source": "https://en.wikipedia.org/wiki/Charles_Huntziger"
  },
+ "person-charles-l-keerans": {
+  "name": "Charles L. Keerans",
+  "kind": "U.S. Army brigadier general, assistant commander of the 82nd Airborne Division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Charles_L._Keerans"
+ },
  "person-charles-lindbergh": {
   "name": "Charles Lindbergh",
   "kind": "aviator, America First spokesman",
@@ -4014,6 +4021,13 @@
   "wikidata": "Q3760630",
   "source": "https://en.wikipedia.org/wiki/George_Preddy"
  },
+ "person-george-s-messersmith": {
+  "name": "George S. Messersmith",
+  "kind": "U.S. minister to Austria",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/George_S._Messersmith"
+ },
  "person-george-s-patton": {
   "name": "George S. Patton",
   "kind": "American general",
@@ -5603,6 +5617,13 @@
   "nation": "Japan",
   "wikidata": "Q1538427",
   "source": "https://en.wikipedia.org/wiki/Ijuin_Matsuji"
+ },
+ "person-ike-aronowicz": {
+  "name": "Ike Aronowicz",
+  "kind": "captain of Exodus 1947",
+  "nation": "Palestine",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ike_Aronowicz"
  },
  "person-ingram-stainback": {
   "name": "Ingram Stainback",
@@ -10016,6 +10037,16 @@
   "wikidata": "Q7317458",
   "source": "https://en.wikipedia.org/wiki/Reuben_H._Fleet"
  },
+ "person-reuben-henry-tucker-iii": {
+  "name": "Reuben Henry Tucker III",
+  "kind": "U.S. Army colonel commanding the 504th Parachute Infantry",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Reuben_Henry_Tucker_III",
+  "aka": [
+   "Reuben Tucker"
+  ]
+ },
  "person-rex-beisel": {
   "name": "Rex Beisel",
   "kind": "aircraft designer, led the Corsair design team",
@@ -10259,6 +10290,13 @@
   "aka": [
    "Robert Morgan"
   ]
+ },
+ "person-robert-moses": {
+  "name": "Robert Moses",
+  "kind": "New York public works official, head of the Triborough Bridge Authority",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Robert_Moses"
  },
  "person-robert-post-journalist": {
   "name": "Robert Post",
@@ -12790,6 +12828,13 @@
   "nation": "Japan",
   "wikidata": "Q1071677",
   "source": "https://en.wikipedia.org/wiki/Yoshinori_Shirakawa"
+ },
+ "person-yossi-harel": {
+  "name": "Yossi Harel",
+  "kind": "Haganah commander of the Exodus 1947 operation",
+  "nation": "Palestine",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Yossi_Harel"
  },
  "person-yosuke-matsuoka": {
   "name": "Yosuke Matsuoka",

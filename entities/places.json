@@ -2826,6 +2826,19 @@
   "lat": 41.2167,
   "lon": 13.75
  },
+ "place-gdansk": {
+  "name": "Gdansk",
+  "kind": "Baltic port city, Danzig in 1942",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Gda%C5%84sk",
+  "aka": [
+   "Danzig",
+   "Gdańsk"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-gdynia": {
   "name": "Gdynia",
   "kind": "Baltic port, Gotenhafen under German occupation",
@@ -7690,6 +7703,18 @@
    "Military Road No. 101"
   ]
  },
+ "place-robert-f-kennedy-bridge": {
+  "name": "Robert F. Kennedy Bridge",
+  "kind": "bridge complex in New York City",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Robert_F._Kennedy_Bridge",
+  "aka": [
+   "Triborough Bridge"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-rochester-new-york": {
   "name": "Rochester, New York",
   "kind": "city",
@@ -8250,6 +8275,18 @@
   "source": "https://en.wikipedia.org/wiki/Seraing",
   "lat": 50.5986,
   "lon": 5.5122
+ },
+ "place-sete": {
+  "name": "Sete",
+  "kind": "French Mediterranean port",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/S%C3%A8te",
+  "aka": [
+   "Sète"
+  ],
+  "lat": null,
+  "lon": null
  },
  "place-setif": {
   "name": "Setif",
