@@ -170,6 +170,15 @@
   "lat": 40.9794,
   "lon": -72.1253
  },
+ "place-amagasaki": {
+  "name": "Amagasaki",
+  "kind": "industrial city beside Osaka",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Amagasaki",
+  "lat": null,
+  "lon": null
+ },
  "place-amba-alagi": {
   "name": "Amba Alagi",
   "kind": "mountain stronghold in northern Ethiopia",
@@ -568,6 +577,15 @@
   "lat": 45.1597,
   "lon": -109.156
  },
+ "place-beaumont-texas": {
+  "name": "Beaumont, Texas",
+  "kind": "city and shipbuilding center",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Beaumont,_Texas",
+  "lat": null,
+  "lon": null
+ },
  "place-beaver-creek-yukon": {
   "name": "Beaver Creek",
   "kind": "settlement",
@@ -621,6 +639,15 @@
   "source": "https://en.wikipedia.org/wiki/Belgrade",
   "lat": 44.8178,
   "lon": 20.4569
+ },
+ "place-belle-isle-park": {
+  "name": "Belle Isle Park",
+  "kind": "island park, Detroit",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Belle_Isle_Park",
+  "lat": null,
+  "lon": null
  },
  "place-bellevue-hill-new-south-wales": {
   "name": "Bellevue Hill",
@@ -1519,6 +1546,15 @@
    "Champs-Élysées"
   ]
  },
+ "place-changsha": {
+  "name": "Changsha",
+  "kind": "city, Hunan province",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Changsha",
+  "lat": null,
+  "lon": null
+ },
  "place-charlottenburg": {
   "name": "Charlottenburg",
   "kind": "Berlin district",
@@ -2324,6 +2360,15 @@
   "lat": 51.4508,
   "lon": 7.0131
  },
+ "place-estevan-point-lighthouse": {
+  "name": "Estevan Point Lighthouse",
+  "kind": "lighthouse, Vancouver Island",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Estevan_Point_Lighthouse",
+  "lat": null,
+  "lon": null
+ },
  "place-estonia-theatre": {
   "name": "Estonia Theatre",
   "kind": "theatre and concert hall in Tallinn",
@@ -2541,6 +2586,15 @@
   "nation": "US",
   "wikidata": "Q135510549",
   "source": "https://en.wikipedia.org/wiki/Fort_Stanton",
+  "lat": null,
+  "lon": null
+ },
+ "place-fort-stevens-oregon": {
+  "name": "Fort Stevens (Oregon)",
+  "kind": "coastal fort",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fort_Stevens_(Oregon)",
   "lat": null,
   "lon": null
  },
@@ -2898,6 +2952,18 @@
   "source": "https://en.wikipedia.org/wiki/Guam",
   "lat": 13.5,
   "lon": 144.8
+ },
+ "place-guards-chapel-wellington-barracks": {
+  "name": "Guards' Chapel, Wellington Barracks",
+  "kind": "military chapel, London",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Guards%27_Chapel,_Wellington_Barracks",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Royal Military Chapel"
+  ]
  },
  "place-gudovac": {
   "name": "Gudovac",
@@ -3443,6 +3509,15 @@
   "lat": 41.7847,
   "lon": -73.9333
  },
+ "place-iceland": {
+  "lat": null,
+  "lon": null,
+  "name": "Iceland",
+  "kind": "island nation in the North Atlantic",
+  "nation": "Iceland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Iceland"
+ },
  "place-ichinomiya-chiba": {
   "name": "Ichinomiya",
   "kind": "town",
@@ -3718,6 +3793,15 @@
    "Jülich"
   ]
  },
+ "place-kagoshima": {
+  "lat": null,
+  "lon": null,
+  "name": "Kagoshima",
+  "kind": "city in southern Kyushu",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kagoshima"
+ },
  "place-kai-tak-airport": {
   "name": "Kai Tak Airport",
   "kind": "airfield",
@@ -3870,6 +3954,15 @@
   "source": "https://en.wikipedia.org/wiki/Kaufering_concentration_camp_complex",
   "lat": 48.1027,
   "lon": 10.8453
+ },
+ "place-kaunas": {
+  "name": "Kaunas",
+  "kind": "city, interwar capital of Lithuania",
+  "nation": "Lithuania",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kaunas",
+  "lat": null,
+  "lon": null
  },
  "place-kaysersberg": {
   "name": "Kaysersberg",
@@ -6478,6 +6571,15 @@
   "lat": 38.1157,
   "lon": 13.3613
  },
+ "place-palmiry": {
+  "name": "Palmiry",
+  "kind": "village and execution site",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Palmiry",
+  "lat": null,
+  "lon": null
+ },
  "place-palmyra-atoll": {
   "name": "Palmyra Atoll",
   "kind": "atoll in the central Pacific",
@@ -6591,6 +6693,15 @@
   "source": "https://en.wikipedia.org/wiki/Pearl_Harbor",
   "lat": 21.3619,
   "lon": -157.9536
+ },
+ "place-pearson-field": {
+  "name": "Pearson Field",
+  "kind": "airfield, Vancouver, Washington",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Pearson_Field",
+  "lat": null,
+  "lon": null
  },
  "place-peenemunde": {
   "name": "Peenemunde",
@@ -6813,6 +6924,15 @@
   "aka": [
    "Long Beach Harbor"
   ]
+ },
+ "place-port-of-tilbury": {
+  "name": "Port of Tilbury",
+  "kind": "port",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Port_of_Tilbury",
+  "lat": null,
+  "lon": null
  },
  "place-port-said": {
   "name": "Port Said",
@@ -7171,6 +7291,15 @@
   "source": "https://en.wikipedia.org/wiki/Rhodes",
   "lat": 36.17,
   "lon": 27.92
+ },
+ "place-riga": {
+  "lat": null,
+  "lon": null,
+  "name": "Riga",
+  "kind": "capital city of Latvia",
+  "nation": "Latvia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Riga"
  },
  "place-rijsoord": {
   "name": "Rijsoord",
@@ -7777,6 +7906,18 @@
   "source": "https://en.wikipedia.org/wiki/Shanghai_International_Settlement",
   "lat": 31.242,
   "lon": 121.4733
+ },
+ "place-shantou": {
+  "name": "Shantou",
+  "kind": "port city",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Shantou",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Swatow"
+  ]
  },
  "place-sheffield": {
   "name": "Sheffield",
@@ -8731,6 +8872,18 @@
   "lat": 47.3928,
   "lon": 0.6883
  },
+ "place-toyama-bay": {
+  "name": "Toyama Bay",
+  "kind": "bay on the Sea of Japan coast of Honshu",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Toyama_Bay",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Toyama Wan"
+  ]
+ },
  "place-treblinka-extermination-camp": {
   "name": "Treblinka extermination camp",
   "kind": "Nazi extermination camp in occupied Poland",
@@ -9508,6 +9661,15 @@
   ],
   "lat": 16.795,
   "lon": 96.16
+ },
+ "place-yankee-stadium-1923": {
+  "name": "Yankee Stadium (1923)",
+  "kind": "baseball stadium, the Bronx",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Yankee_Stadium_(1923)",
+  "lat": null,
+  "lon": null
  },
  "place-yantarny-kaliningrad-oblast": {
   "name": "Yantarny, Kaliningrad Oblast",

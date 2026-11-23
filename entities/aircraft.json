@@ -21,6 +21,16 @@
   "wikidata": "Q163170",
   "source": "https://en.wikipedia.org/wiki/Arado_Ar_196"
  },
+ "aircraft-arado-ar-234-blitz": {
+  "name": "Arado Ar 234 Blitz",
+  "kind": "German jet reconnaissance bomber",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Arado_Ar_234_Blitz",
+  "aka": [
+   "Ar 234"
+  ]
+ },
  "aircraft-armstrong-whitworth-whitley": {
   "name": "Armstrong Whitworth Whitley",
   "kind": "British medium bomber",
@@ -162,6 +172,16 @@
   "source": "https://en.wikipedia.org/wiki/Boeing_P-26_Peashooter",
   "aka": [
    "P-26"
+  ]
+ },
+ "aircraft-boeing-xb-38-flying-fortress": {
+  "name": "Boeing XB-38 Flying Fortress",
+  "kind": "experimental B-17E with Allison V-12 engines, converted by Vega",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Boeing_XB-38_Flying_Fortress",
+  "aka": [
+   "Vega XB-38"
   ]
  },
  "aircraft-bristol-beaufighter": {
@@ -568,6 +588,13 @@
    "Heinkel He 162",
    "Spatz"
   ]
+ },
+ "aircraft-heinkel-he-176": {
+  "name": "Heinkel He 176",
+  "kind": "German experimental rocket aircraft",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Heinkel_He_176"
  },
  "aircraft-heinkel-he-177-greif": {
   "name": "Heinkel He 177",
@@ -1139,6 +1166,13 @@
   "aka": [
    "Maxim Gorky"
   ]
+ },
+ "aircraft-tupolev-ant-25": {
+  "name": "Tupolev ANT-25",
+  "kind": "Soviet long range record aircraft",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tupolev_ANT-25"
  },
  "aircraft-tupolev-sb": {
   "name": "Tupolev SB",

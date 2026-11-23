@@ -1808,6 +1808,13 @@
   "wikidata": "Q698099",
   "source": "https://en.wikipedia.org/wiki/Allied_Control_Council"
  },
+ "unit-allied-kommandatura": {
+  "name": "Allied Kommandatura",
+  "kind": "four power military government of Berlin",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Allied_Kommandatura"
+ },
  "unit-althing": {
   "name": "Althing",
   "kind": "parliament of Iceland",
@@ -2962,6 +2969,16 @@
    "IRAPA"
   ]
  },
+ "unit-indian-national-congress": {
+  "name": "Indian National Congress",
+  "kind": "Indian political party",
+  "nation": "India",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Indian_National_Congress",
+  "aka": [
+   "All India Congress Committee"
+  ]
+ },
  "unit-international-brigades": {
   "name": "International Brigades",
   "kind": "foreign volunteer units of the Spanish Republic",
@@ -3066,6 +3083,13 @@
    "ŻOB"
   ]
  },
+ "unit-jockey-club": {
+  "name": "Jockey Club",
+  "kind": "British horse racing governing body",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Jockey_Club"
+ },
  "unit-johns-hopkins-university-applied-physics-laboratory": {
   "name": "Johns Hopkins Applied Physics Laboratory",
   "kind": "research laboratory",
@@ -3103,6 +3127,16 @@
   "nation": "Germany",
   "wikidata": "Q540307",
   "source": "https://en.wikipedia.org/wiki/Kampfgeschwader_26"
+ },
+ "unit-kampfgeschwader-30": {
+  "name": "Kampfgeschwader 30",
+  "kind": "Luftwaffe bomber wing",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kampfgeschwader_30",
+  "aka": [
+   "KG 30"
+  ]
  },
  "unit-kampfgeschwader-40": {
   "name": "Kampfgeschwader 40",
@@ -3722,6 +3756,13 @@
   "wikidata": "Q7043353",
   "source": "https://en.wikipedia.org/wiki/No._304_Polish_Bomber_Squadron"
  },
+ "unit-no-32-squadron-raaf": {
+  "name": "No. 32 Squadron RAAF",
+  "kind": "Royal Australian Air Force squadron",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._32_Squadron_RAAF"
+ },
  "unit-no-33-squadron-raf": {
   "name": "No. 33 Squadron RAF",
   "kind": "RAF fighter squadron",
@@ -3787,6 +3828,13 @@
   "nation": "Australia",
   "wikidata": "Q7043519",
   "source": "https://en.wikipedia.org/wiki/No._455_Squadron_RAAF"
+ },
+ "unit-no-459-squadron-raaf": {
+  "name": "No. 459 Squadron RAAF",
+  "kind": "Royal Australian Air Force squadron",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._459_Squadron_RAAF"
  },
  "unit-no-460-squadron-raaf": {
   "name": "No. 460 Squadron RAAF",
@@ -4840,6 +4888,17 @@
   "source": "https://en.wikipedia.org/wiki/United_Service_Organizations",
   "aka": [
    "USO"
+  ]
+ },
+ "unit-united-states-army-air-forces": {
+  "name": "United States Army Air Forces",
+  "kind": "U.S. Army air arm, 1941 to 1947",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/United_States_Army_Air_Forces",
+  "aka": [
+   "USAAF",
+   "AAF"
   ]
  },
  "unit-united-states-army-central": {

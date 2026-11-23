@@ -244,6 +244,13 @@
   "wikidata": "Q4886825",
   "source": "https://en.wikipedia.org/wiki/1943_Danish_Folketing_election"
  },
+ "op-1943-detroit-race-riot": {
+  "name": "1943 Detroit race riot",
+  "kind": "race riot",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1943_Detroit_race_riot"
+ },
  "op-1943-greek-protests-against-labour-mobilization": {
   "name": "1943 Greek protests against labour mobilization",
   "kind": "strikes and protests in occupied Greece",
@@ -592,6 +599,13 @@
    "Easter Sunday Raid"
   ]
  },
+ "op-air-raids-on-japan": {
+  "name": "Air raids on Japan",
+  "kind": "Allied strategic bombing campaign against Japan",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Air_raids_on_Japan"
+ },
  "op-aktion-t4": {
   "name": "Aktion T4",
   "kind": "Nazi 'euthanasia' killing program",
@@ -706,6 +720,13 @@
   "wikidata": "Q154681",
   "source": "https://en.wikipedia.org/wiki/Anschluss"
  },
+ "op-appeal-of-18-june": {
+  "name": "Appeal of 18 June",
+  "kind": "de Gaulle's BBC broadcast to France, 1940",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Appeal_of_18_June"
+ },
  "op-arcadia-conference": {
   "name": "Arcadia Conference",
   "kind": "Allied conference in Washington",
@@ -757,6 +778,13 @@
   "nation": "worldwide",
   "source": "https://en.wikipedia.org/wiki/Armistice_Day",
   "wikidata": "Q6597183"
+ },
+ "op-armistice-of-22-june-1940": {
+  "name": "Armistice of 22 June 1940",
+  "kind": "Franco-German armistice",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Armistice_of_22_June_1940"
  },
  "op-army-navy-game": {
   "name": "Army Navy Game",
@@ -909,6 +937,17 @@
   "nation": "Britain",
   "wikidata": "Q4829842",
   "source": "https://en.wikipedia.org/wiki/Award_of_the_George_Cross_to_Malta"
+ },
+ "op-axis-capture-of-tobruk": {
+  "name": "Axis capture of Tobruk",
+  "kind": "battle",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Axis_capture_of_Tobruk",
+  "aka": [
+   "Fall of Tobruk",
+   "Second Battle of Tobruk"
+  ]
  },
  "op-axis-occupation-of-greece": {
   "name": "Axis occupation of Greece",
@@ -1268,6 +1307,13 @@
   "wikidata": "Q709303",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Changsha_(1941%E2%80%931942)"
  },
+ "op-battle-of-changsha-1944": {
+  "name": "Battle of Changsha (1944)",
+  "kind": "battle in the Ichi-Go offensive",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Changsha_(1944)"
+ },
  "op-battle-of-christmas-island": {
   "name": "Battle of Christmas Island",
   "kind": "Japanese occupation of Christmas Island, 31 March to 1 April 1942",
@@ -1314,6 +1360,13 @@
    "Operation Mercury"
   ]
  },
+ "op-battle-of-damascus-1941": {
+  "name": "Battle of Damascus (1941)",
+  "kind": "battle",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Damascus_(1941)"
+ },
  "op-battle-of-davao": {
   "name": "Battle of Davao",
   "kind": "battle",
@@ -1327,6 +1380,13 @@
   "nation": "Germany",
   "wikidata": "Q1800260",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Domb%C3%A5s"
+ },
+ "op-battle-of-douvres-radar-station": {
+  "name": "Battle of Douvres Radar Station",
+  "kind": "capture of a Luftwaffe radar strongpoint in Normandy, 17 June 1944",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Douvres_Radar_Station"
  },
  "op-battle-of-dunkirk": {
   "name": "Battle of Dunkirk",
@@ -2478,6 +2538,13 @@
   "wikidata": "Q261776",
   "source": "https://en.wikipedia.org/wiki/Battles_of_Rzhev"
  },
+ "op-beaumont-race-riot-of-1943": {
+  "name": "Beaumont race riot of 1943",
+  "kind": "racial violence in a wartime shipbuilding city",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Beaumont_race_riot_of_1943"
+ },
  "op-beer-hall-putsch": {
   "name": "Beer Hall Putsch",
   "kind": "failed coup",
@@ -2641,6 +2708,13 @@
   "nation": "Japan",
   "wikidata": "Q543077",
   "source": "https://en.wikipedia.org/wiki/Bombardment_of_Ellwood"
+ },
+ "op-bombardment-of-fort-stevens": {
+  "name": "Bombardment of Fort Stevens",
+  "kind": "naval bombardment",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombardment_of_Fort_Stevens"
  },
  "op-bombing-of-alicante": {
   "name": "Bombing of Alicante",
@@ -2963,6 +3037,13 @@
   "nation": "Britain",
   "wikidata": "Q891852",
   "source": "https://en.wikipedia.org/wiki/Bombing_of_W%C3%BCrzburg_in_World_War_II"
+ },
+ "op-bombing-of-yawata-june-1944": {
+  "name": "Bombing of Yawata (June 1944)",
+  "kind": "first B-29 raid on Japan",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Yawata_(June_1944)"
  },
  "op-bombings-of-heilbronn-in-world-war-ii": {
   "name": "Bombings of Heilbronn in World War II",
@@ -3837,6 +3918,13 @@
    "Basque children of 1937"
   ]
  },
+ "op-evacuation-of-civilians-from-the-channel-islands-in-1940": {
+  "name": "Evacuation of civilians from the Channel Islands in 1940",
+  "kind": "civilian evacuation to Britain",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Evacuation_of_civilians_from_the_Channel_Islands_in_1940"
+ },
  "op-ex-parte-endo": {
   "name": "Ex parte Endo",
   "kind": "Supreme Court case",
@@ -4117,6 +4205,16 @@
   "wikidata": "Q3391505",
   "source": "https://en.wikipedia.org/wiki/Franco-British_plans_for_intervention_in_the_Winter_War"
  },
+ "op-franco-british-union": {
+  "name": "Franco-British Union",
+  "kind": "1940 proposal for union of Britain and France",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Franco-British_Union",
+  "aka": [
+   "Declaration of Union"
+  ]
+ },
  "op-franco-german-declaration": {
   "name": "Franco-German Declaration",
   "kind": "treaty, 6 December 1938",
@@ -4134,6 +4232,13 @@
    "Mussolini-Laval Accord",
    "Rome Accords"
   ]
+ },
+ "op-franco-italian-armistice": {
+  "name": "Franco-Italian Armistice",
+  "kind": "armistice, June 1940",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Franco-Italian_Armistice"
  },
  "op-franco-soviet-treaty-of-mutual-assistance": {
   "name": "Franco-Soviet Treaty of Mutual Assistance",
@@ -4294,6 +4399,13 @@
   "aka": [
    "German surrender at Lüneburg Heath"
   ]
+ },
+ "op-german-turkish-treaty-of-friendship": {
+  "name": "German and Turkish Treaty of Friendship",
+  "kind": "non-aggression treaty, 1941",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German%E2%80%93Turkish_Treaty_of_Friendship"
  },
  "op-gilbert-and-marshall-islands-campaign": {
   "name": "Gilbert and Marshall Islands campaign",
@@ -4600,6 +4712,16 @@
   "wikidata": "Q16987280",
   "source": "https://en.wikipedia.org/wiki/Inundation_of_the_Wieringermeer"
  },
+ "op-invasion-of-elba": {
+  "name": "Invasion of Elba",
+  "kind": "Operation Brassard, French landing on Elba, 17 to 19 June 1944",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Invasion_of_Elba",
+  "aka": [
+   "Operation Brassard"
+  ]
+ },
  "op-invasion-of-iceland": {
   "name": "Invasion of Iceland",
   "kind": "British occupation of Iceland, 10 May 1940",
@@ -4831,6 +4953,20 @@
   "wikidata": "Q1361205",
   "source": "https://en.wikipedia.org/wiki/Jinzhou_Operation"
  },
+ "op-joe-louis-vs-billy-conn-ii": {
+  "name": "Joe Louis vs. Billy Conn II",
+  "kind": "1946 heavyweight title fight",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Joe_Louis_vs._Billy_Conn_II"
+ },
+ "op-joe-louis-vs-max-schmeling": {
+  "name": "Joe Louis vs. Max Schmeling",
+  "kind": "1936 heavyweight boxing match",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Joe_Louis_vs._Max_Schmeling"
+ },
  "op-joint-declaration-by-members-of-the-united-nations": {
   "name": "Joint Declaration by Members of the United Nations",
   "kind": "Allied declaration",
@@ -4854,6 +4990,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q2563605",
   "source": "https://en.wikipedia.org/wiki/June_deportation"
+ },
+ "op-juneteenth": {
+  "name": "Juneteenth",
+  "kind": "holiday marking the end of slavery in Texas",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Juneteenth"
  },
  "op-kalavryta-massacre": {
   "name": "Kalavryta massacre",
@@ -5283,6 +5426,13 @@
    "Japanese invasion of Malaya"
   ]
  },
+ "op-malayan-emergency": {
+  "name": "Malayan Emergency",
+  "kind": "1948 to 1960 counterinsurgency war in Malaya",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Malayan_Emergency"
+ },
  "op-malmedy-massacre": {
   "name": "Malmedy massacre",
   "kind": "massacre of prisoners",
@@ -5330,6 +5480,13 @@
    "Fall Gelb",
    "Sichelschnitt"
   ]
+ },
+ "op-marburg-speech": {
+  "name": "Marburg speech",
+  "kind": "Papen's speech at the University of Marburg, 17 June 1934",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Marburg_speech"
  },
  "op-march-1947-martial-law-in-mandatory-palestine": {
   "name": "March 1947 martial law in Mandatory Palestine",
@@ -5450,6 +5607,16 @@
   "wikidata": "Q704194",
   "source": "https://en.wikipedia.org/wiki/Milch_Trial"
  },
+ "op-military-selective-service-act": {
+  "name": "Military Selective Service Act",
+  "kind": "U.S. draft law, first enacted as the Selective Service Act of 1948",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Military_Selective_Service_Act",
+  "aka": [
+   "Selective Service Act of 1948"
+  ]
+ },
  "op-military-training-act-1939": {
   "name": "Military Training Act 1939",
   "kind": "British peacetime conscription law",
@@ -5518,6 +5685,17 @@
   "wikidata": "Q117320",
   "source": "https://en.wikipedia.org/wiki/Moscow_trials"
  },
+ "op-mulberry-harbours": {
+  "name": "Mulberry harbours",
+  "kind": "prefabricated invasion harbors off Normandy",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mulberry_harbours",
+  "aka": [
+   "Mulberry A",
+   "Mulberry B"
+  ]
+ },
  "op-nacht-und-nebel": {
   "name": "Nacht und Nebel",
   "kind": "Nazi decree, 7 December 1941",
@@ -5552,6 +5730,16 @@
   "nation": "China",
   "wikidata": "Q3072131",
   "source": "https://en.wikipedia.org/wiki/Nanjing_War_Crimes_Tribunal"
+ },
+ "op-national-resources-mobilization-act": {
+  "name": "National Resources Mobilization Act",
+  "kind": "conscription law",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/National_Resources_Mobilization_Act",
+  "aka": [
+   "NRMA"
+  ]
  },
  "op-national-school-lunch-act": {
   "name": "National School Lunch Act",
@@ -5746,6 +5934,13 @@
   "wikidata": "Q696251",
   "source": "https://en.wikipedia.org/wiki/Occupation_of_Japan"
  },
+ "op-occupation-of-the-baltic-states": {
+  "name": "Occupation of the Baltic states",
+  "kind": "Soviet occupation, 1940",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Occupation_of_the_Baltic_states"
+ },
  "op-occupation-statute": {
   "name": "Occupation statute",
   "kind": "Allied statute for West Germany, 1949",
@@ -5790,6 +5985,13 @@
   "nation": "Britain",
   "wikidata": "Q599648",
   "source": "https://en.wikipedia.org/wiki/Operation_Abstention"
+ },
+ "op-operation-aerial": {
+  "name": "Operation Aerial",
+  "kind": "evacuation from western France, 15 to 25 June 1940",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Aerial"
  },
  "op-operation-anklet": {
   "name": "Operation Anklet",
@@ -5839,6 +6041,13 @@
    "Directive No. 19",
    "Undertaking Attila"
   ]
+ },
+ "op-operation-bagration": {
+  "name": "Operation Bagration",
+  "kind": "Soviet summer offensive in Belorussia, 1944",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Bagration"
  },
  "op-operation-barbarossa": {
   "name": "Operation Barbarossa",
@@ -6052,6 +6261,16 @@
   "nation": "Britain",
   "wikidata": "Q7096986",
   "source": "https://en.wikipedia.org/wiki/Operation_Diadem"
+ },
+ "op-operation-downfall": {
+  "name": "Operation Downfall",
+  "kind": "planned invasion of Japan",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Downfall",
+  "aka": [
+   "Operation Olympic"
+  ]
  },
  "op-operation-dracula": {
   "name": "Operation Dracula",
@@ -6600,6 +6819,13 @@
   "wikidata": "Q5169434",
   "source": "https://en.wikipedia.org/wiki/Operation_Vigorous"
  },
+ "op-operation-washing": {
+  "name": "Operation Washing",
+  "kind": "sabotage operation",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Washing"
+ },
  "op-operation-weserubung": {
   "name": "Operation Weserubung",
   "kind": "German invasion of Denmark and Norway",
@@ -6722,6 +6948,13 @@
   "nation": "Japan",
   "wikidata": "Q7126934",
   "source": "https://en.wikipedia.org/wiki/Palawan_massacre"
+ },
+ "op-palmiry-massacre": {
+  "name": "Palmiry massacre",
+  "kind": "mass execution",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Palmiry_massacre"
  },
  "op-panjiayu-massacre": {
   "name": "Panjiayu Massacre",
@@ -7019,6 +7252,13 @@
   "nation": "Japan",
   "wikidata": "Q112161213",
   "source": "https://en.wikipedia.org/wiki/Raid_on_Yontan_Airfield"
+ },
+ "op-rail-war": {
+  "name": "Rail War",
+  "kind": "Soviet partisan campaign against railways",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Rail_War"
  },
  "op-rationing-in-the-united-kingdom": {
   "name": "Rationing in the United Kingdom",
@@ -7319,6 +7559,13 @@
   "wikidata": "Q170314",
   "source": "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War"
  },
+ "op-second-washington-conference": {
+  "name": "Second Washington Conference",
+  "kind": "Churchill and Roosevelt conference, June 1942",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Second_Washington_Conference"
+ },
  "op-secret-meeting-of-20-february-1933": {
   "name": "Secret Meeting of 20 February 1933",
   "kind": "Hitler's fundraising meeting with industrialists",
@@ -7581,12 +7828,33 @@
   "wikidata": "Q696256",
   "source": "https://en.wikipedia.org/wiki/Soviet%E2%80%93Japanese_Neutrality_Pact"
  },
+ "op-soviet-occupation-of-latvia-in-1940": {
+  "name": "Soviet occupation of Latvia in 1940",
+  "kind": "Soviet military occupation and annexation",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Soviet_occupation_of_Latvia_in_1940"
+ },
+ "op-soviet-occupation-of-the-baltic-states-1940": {
+  "name": "Soviet occupation of the Baltic states (1940)",
+  "kind": "Soviet occupation",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Soviet_occupation_of_the_Baltic_states_(1940)"
+ },
  "op-soviet-repressions-of-polish-citizens-1939-1946": {
   "name": "Soviet repressions of Polish citizens (1939 to 1946)",
   "kind": "Soviet arrests and mass deportations of Polish citizens",
   "nation": "Soviet Union",
   "wikidata": "Q7571798",
   "source": "https://en.wikipedia.org/wiki/Soviet_repressions_of_Polish_citizens_(1939%E2%80%931946)"
+ },
+ "op-soviet-ultimatum-to-estonia": {
+  "name": "Soviet ultimatum to Estonia",
+  "kind": "1940 Soviet ultimatum",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Soviet_ultimatum_to_Estonia"
  },
  "op-soviet-ultimatum-to-lithuania": {
   "name": "Soviet ultimatum to Lithuania",
@@ -7720,6 +7988,13 @@
   "wikidata": "Q2070370",
   "source": "https://en.wikipedia.org/wiki/Subsequent_Nuremberg_trials"
  },
+ "op-sungai-siput-incident": {
+  "name": "Sungai Siput incident",
+  "kind": "killing of three planters that opened the Malayan Emergency",
+  "nation": "Malaya",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sungai_Siput_incident"
+ },
  "op-supplemental-nutrition-assistance-program": {
   "name": "Supplemental Nutrition Assistance Program",
   "kind": "US food assistance program, begun as the 1939 Food Stamp Plan",
@@ -7751,6 +8026,13 @@
   "nation": "Britain",
   "wikidata": "Q7653662",
   "source": "https://en.wikipedia.org/wiki/Swansea_Blitz"
+ },
+ "op-swatow-operation": {
+  "name": "Swatow Operation",
+  "kind": "amphibious operation",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Swatow_Operation"
  },
  "op-swedish-extradition-of-baltic-soldiers": {
   "name": "Swedish extradition of Baltic soldiers",
@@ -7900,6 +8182,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/This_Is_the_Army_(musical)",
   "wikidata": "Q104792049"
+ },
+ "op-this-was-their-finest-hour": {
+  "name": "This was their finest hour",
+  "kind": "speech by Winston Churchill",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/This_was_their_finest_hour"
  },
  "op-tianjin-campaign": {
   "name": "Tianjin campaign",

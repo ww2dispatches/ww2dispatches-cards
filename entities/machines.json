@@ -216,6 +216,13 @@
   "wikidata": "Q47596",
   "source": "https://en.wikipedia.org/wiki/Chicago_Tribune"
  },
+ "machine-compiegne-wagon": {
+  "name": "Compiègne Wagon",
+  "kind": "railway carriage",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Compi%C3%A8gne_Wagon"
+ },
  "machine-cross-of-honour-of-the-german-mother": {
   "name": "Cross of Honour of the German Mother",
   "kind": "Nazi state award for mothers",
@@ -654,6 +661,24 @@
   "wikidata": "Q1273610",
   "source": "https://en.wikipedia.org/wiki/Magnetophon"
  },
+ "machine-manchester-baby": {
+  "name": "Manchester Baby",
+  "kind": "stored program computer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Manchester_Baby",
+  "aka": [
+   "Small Scale Experimental Machine",
+   "SSEM"
+  ]
+ },
+ "machine-manchester-mark-1": {
+  "name": "Manchester Mark 1",
+  "kind": "early stored program computer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Manchester_Mark_1"
+ },
  "machine-marcello-class-submarine": {
   "name": "Marcello-class submarine",
   "kind": "Italian submarine class, includes Emo",
@@ -679,6 +704,16 @@
   "source": "https://en.wikipedia.org/wiki/Mark_24_mine",
   "aka": [
    "Fido"
+  ]
+ },
+ "machine-mas-motorboat": {
+  "name": "MAS",
+  "kind": "Italian motor torpedo boat type",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/MAS_(motorboat)",
+  "aka": [
+   "MAS boat"
   ]
  },
  "machine-maschinenkarabiner-42-h": {
@@ -716,6 +751,16 @@
   "wikidata": "Q3066488",
   "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_W125_Rekordwagen"
  },
+ "machine-mobile-telephone-service": {
+  "name": "Mobile Telephone Service",
+  "kind": "Bell System car radiotelephone service",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mobile_Telephone_Service",
+  "aka": [
+   "MTS"
+  ]
+ },
  "machine-morning-star-british-newspaper": {
   "name": "Daily Worker",
   "kind": "Communist daily newspaper (now the Morning Star)",
@@ -743,6 +788,13 @@
    "MTM",
    "barchino"
   ]
+ },
+ "machine-mw-18014": {
+  "name": "MW 18014",
+  "kind": "German A-4 (V-2) test rocket, single launch",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/MW_18014"
  },
  "machine-naval-mine": {
   "name": "Naval mine",
@@ -1007,6 +1059,14 @@
   "nation": "US",
   "wikidata": "Q7550688",
   "source": "https://en.wikipedia.org/wiki/Social_Justice_(newspaper)"
+ },
+ "machine-spica-class-torpedo-boat-italy": {
+  "name": "Spica-class torpedo boat (Italy)",
+  "kind": "Italian torpedo boat class",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Spica-class_torpedo_boat_(Italy)",
+  "note": "Circe, Clio, Calliope and Polluce redirect here"
  },
  "machine-squid-weapon": {
   "name": "Squid (weapon)",
