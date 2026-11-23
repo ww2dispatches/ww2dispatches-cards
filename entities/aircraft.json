@@ -25,7 +25,7 @@
   "name": "Arado Ar 234 Blitz",
   "kind": "German jet reconnaissance bomber",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q157335",
   "source": "https://en.wikipedia.org/wiki/Arado_Ar_234_Blitz",
   "aka": [
    "Ar 234"
@@ -178,7 +178,7 @@
   "name": "Boeing XB-38 Flying Fortress",
   "kind": "experimental B-17E with Allison V-12 engines, converted by Vega",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q579575",
   "source": "https://en.wikipedia.org/wiki/Boeing_XB-38_Flying_Fortress",
   "aka": [
    "Vega XB-38"
@@ -593,7 +593,7 @@
   "name": "Heinkel He 176",
   "kind": "German experimental rocket aircraft",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q704025",
   "source": "https://en.wikipedia.org/wiki/Heinkel_He_176"
  },
  "aircraft-heinkel-he-177-greif": {
@@ -1171,7 +1171,7 @@
   "name": "Tupolev ANT-25",
   "kind": "Soviet long range record aircraft",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q433095",
   "source": "https://en.wikipedia.org/wiki/Tupolev_ANT-25"
  },
  "aircraft-tupolev-sb": {
