@@ -138,10 +138,10 @@
   "name": "Aldwych",
   "kind": "street in central London",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q620182",
   "source": "https://en.wikipedia.org/wiki/Aldwych",
-  "lat": null,
-  "lon": null
+  "lat": 51.5132,
+  "lon": -0.1176
  },
  "place-alexandra-palace": {
   "name": "Alexandra Palace",
@@ -252,10 +252,10 @@
   "name": "Anne Frank House",
   "kind": "the annex behind Otto Frank's business where the family hid, now a museum",
   "nation": "Netherlands",
-  "wikidata": null,
+  "wikidata": "Q165366",
   "source": "https://en.wikipedia.org/wiki/Anne_Frank_House",
-  "lat": null,
-  "lon": null,
+  "lat": 52.3751,
+  "lon": 4.884,
   "aka": [
    "Secret Annex",
    "Achterhuis"
@@ -301,10 +301,10 @@
   "name": "Aparri",
   "kind": "town in northern Luzon",
   "nation": "Philippines",
-  "wikidata": null,
+  "wikidata": "Q43517",
   "source": "https://en.wikipedia.org/wiki/Aparri",
-  "lat": null,
-  "lon": null
+  "lat": 18.3575,
+  "lon": 121.6372
  },
  "place-aprilia": {
   "name": "Aprilia",
@@ -427,10 +427,10 @@
   "name": "Bobruisk",
   "kind": "city in Belarus",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q207294",
   "source": "https://en.wikipedia.org/wiki/Babruysk",
-  "lat": null,
-  "lon": null,
+  "lat": 53.15,
+  "lon": 29.2333,
   "aka": [
    "Bobruysk",
    "Babruysk"
@@ -835,10 +835,10 @@
   "name": "Bessarabia",
   "kind": "region",
   "nation": "Romania",
-  "wikidata": null,
+  "wikidata": "Q174994",
   "source": "https://en.wikipedia.org/wiki/Bessarabia",
-  "lat": null,
-  "lon": null
+  "lat": 46.8333,
+  "lon": 29.0
  },
  "place-bethnal-green-tube-station": {
   "name": "Bethnal Green tube station",
@@ -979,10 +979,10 @@
   "name": "Boise City, Oklahoma",
   "kind": "town",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q833668",
   "source": "https://en.wikipedia.org/wiki/Boise_City,_Oklahoma",
-  "lat": null,
-  "lon": null
+  "lat": 36.73,
+  "lon": -102.5114
  },
  "place-bologna": {
   "name": "Bologna",
@@ -1118,10 +1118,10 @@
   "name": "Brest Fortress",
   "kind": "fortress",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q23868",
   "source": "https://en.wikipedia.org/wiki/Brest_Fortress",
-  "lat": null,
-  "lon": null
+  "lat": 52.0833,
+  "lon": 23.6528
  },
  "place-brest-france": {
   "name": "Brest",
@@ -1299,10 +1299,10 @@
   "name": "Bush House",
   "kind": "London building, home of BBC overseas broadcasting",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q852282",
   "source": "https://en.wikipedia.org/wiki/Bush_House",
-  "lat": null,
-  "lon": null
+  "lat": 51.5129,
+  "lon": -0.1173
  },
  "place-cafe-de-paris-london": {
   "name": "Cafe de Paris, London",
@@ -1471,10 +1471,10 @@
   "name": "Carpiquet",
   "kind": "village and airfield northwest of Caen",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q839827",
   "source": "https://en.wikipedia.org/wiki/Carpiquet",
-  "lat": null,
-  "lon": null
+  "lat": 49.1861,
+  "lon": -0.4444
  },
  "place-carswell-air-force-base": {
   "name": "Carswell Air Force Base",
@@ -1534,10 +1534,10 @@
   "name": "Castelvetrano",
   "kind": "town and airfield in Sicily",
   "nation": "Italy",
-  "wikidata": null,
+  "wikidata": "Q481674",
   "source": "https://en.wikipedia.org/wiki/Castelvetrano",
-  "lat": null,
-  "lon": null
+  "lat": 37.6786,
+  "lon": 12.7917
  },
  "place-catford": {
   "name": "Catford",
@@ -2116,10 +2116,10 @@
   "name": "Derna",
   "kind": "port town in Libya",
   "nation": "Italy",
-  "wikidata": null,
+  "wikidata": "Q211866",
   "source": "https://en.wikipedia.org/wiki/Derna,_Libya",
-  "lat": null,
-  "lon": null
+  "lat": 32.7636,
+  "lon": 22.6361
  },
  "place-dessie": {
   "name": "Dessie",
@@ -2971,10 +2971,10 @@
   "name": "Great Synagogue, Bialystok",
   "kind": "synagogue, burned 27 June 1941",
   "nation": "Poland",
-  "wikidata": null,
+  "wikidata": "Q1548430",
   "source": "https://en.wikipedia.org/wiki/Great_Synagogue_(Bia%C5%82ystok)",
-  "lat": null,
-  "lon": null
+  "lat": 53.1306,
+  "lon": 23.1572
  },
  "place-great-synagogue-warsaw": {
   "name": "Great Synagogue (Warsaw)",
@@ -3292,10 +3292,10 @@
   "name": "Hartford, Connecticut",
   "kind": "city",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q33486",
   "source": "https://en.wikipedia.org/wiki/Hartford,_Connecticut",
-  "lat": null,
-  "lon": null
+  "lat": 41.7633,
+  "lon": -72.685
  },
  "place-hatfield-aerodrome": {
   "name": "Hatfield",
@@ -3464,10 +3464,10 @@
   "name": "Himeji",
   "kind": "city",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q209801",
   "source": "https://en.wikipedia.org/wiki/Himeji",
-  "lat": null,
-  "lon": null
+  "lat": 34.8152,
+  "lon": 134.6854
  },
  "place-hm-prison-wandsworth": {
   "name": "HM Prison Wandsworth",
@@ -3626,10 +3626,10 @@
   "name": "Huntington Beach, California",
   "kind": "city",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q5917",
   "source": "https://en.wikipedia.org/wiki/Huntington_Beach,_California",
-  "lat": null,
-  "lon": null
+  "lat": 33.6928,
+  "lon": -117.9997
  },
  "place-hurtgen-forest": {
   "name": "Hurtgen Forest",
@@ -3656,10 +3656,10 @@
   "name": "Iasi",
   "kind": "city",
   "nation": "Romania",
-  "wikidata": null,
+  "wikidata": "Q46852",
   "source": "https://en.wikipedia.org/wiki/Ia%C8%99i",
-  "lat": null,
-  "lon": null,
+  "lat": 47.1622,
+  "lon": 27.5889,
   "aka": [
    "Jassy"
   ]
@@ -4217,10 +4217,10 @@
   "name": "Kielce",
   "kind": "city in Poland",
   "nation": "Poland",
-  "wikidata": null,
+  "wikidata": "Q102317",
   "source": "https://en.wikipedia.org/wiki/Kielce",
-  "lat": null,
-  "lon": null
+  "lat": 50.8662,
+  "lon": 20.6272
  },
  "place-kifissia": {
   "name": "Kifissia",
@@ -4321,10 +4321,10 @@
   "name": "Kōchi",
   "kind": "city on Shikoku",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q200251",
   "source": "https://en.wikipedia.org/wiki/K%C5%8Dchi,_K%C5%8Dchi",
-  "lat": null,
-  "lon": null
+  "lat": 33.5588,
+  "lon": 133.5312
  },
  "place-koenigsmacker": {
   "name": "Koenigsmacker",
@@ -4399,10 +4399,10 @@
   "name": "Košice",
   "kind": "city",
   "nation": "Slovakia",
-  "wikidata": null,
+  "wikidata": "Q25409",
   "source": "https://en.wikipedia.org/wiki/Ko%C5%A1ice",
-  "lat": null,
-  "lon": null,
+  "lat": 48.7167,
+  "lon": 21.25,
   "aka": [
    "Kassa"
   ]
@@ -4833,10 +4833,10 @@
   "name": "Ležáky",
   "kind": "Czech village destroyed in 1942",
   "nation": "Czechoslovakia",
-  "wikidata": null,
+  "wikidata": "Q647287",
   "source": "https://en.wikipedia.org/wiki/Le%C5%BE%C3%A1ky",
-  "lat": null,
-  "lon": null
+  "lat": 49.8325,
+  "lon": 15.9003
  },
  "place-lidice": {
   "name": "Lidice",
@@ -5127,15 +5127,15 @@
   "name": "Lviv",
   "kind": "city",
   "nation": "Poland",
-  "wikidata": null,
+  "wikidata": "Q36036",
   "source": "https://en.wikipedia.org/wiki/Lviv",
   "aka": [
    "Lwow",
    "Lvov",
    "Lemberg"
   ],
-  "lat": null,
-  "lon": null
+  "lat": 49.842,
+  "lon": 24.0316
  },
  "place-lyon": {
   "name": "Lyon",
@@ -6025,10 +6025,10 @@
   "name": "Murmansk",
   "kind": "Soviet Arctic port city",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q1763",
   "source": "https://en.wikipedia.org/wiki/Murmansk",
-  "lat": null,
-  "lon": null
+  "lat": 68.9667,
+  "lon": 33.0833
  },
  "place-musashino-aircraft-plant": {
   "name": "Nakajima Musashino plant",
@@ -6185,10 +6185,10 @@
   "name": "Natzweiler-Struthof",
   "kind": "Nazi concentration camp in Alsace",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q639319",
   "source": "https://en.wikipedia.org/wiki/Natzweiler-Struthof_concentration_camp",
-  "lat": null,
-  "lon": null
+  "lat": 48.455,
+  "lon": 7.2546
  },
  "place-nauru": {
   "name": "Nauru",
@@ -6411,10 +6411,10 @@
   "name": "Norway",
   "kind": "country",
   "nation": "Norway",
-  "wikidata": null,
+  "wikidata": "Q20",
   "source": "https://en.wikipedia.org/wiki/Norway",
-  "lat": null,
-  "lon": null
+  "lat": 59.9333,
+  "lon": 10.6833
  },
  "place-norwegian-nobel-institute": {
   "name": "Norwegian Nobel Institute",
@@ -6447,10 +6447,10 @@
   "name": "Numfor",
   "kind": "island off New Guinea",
   "nation": "Netherlands New Guinea",
-  "wikidata": null,
+  "wikidata": "Q1632717",
   "source": "https://en.wikipedia.org/wiki/Numfor",
-  "lat": null,
-  "lon": null,
+  "lat": -1.0383,
+  "lon": 134.8886,
   "aka": [
    "Noemfoor"
   ]
@@ -7023,10 +7023,10 @@
   "name": "Piscine Molitor",
   "kind": "public swimming pool in Paris",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q645095",
   "source": "https://en.wikipedia.org/wiki/Piscine_Molitor",
-  "lat": null,
-  "lon": null
+  "lat": 48.8452,
+  "lon": 2.2531
  },
  "place-pithiviers-internment-camp": {
   "name": "Pithiviers internment camp",
@@ -7173,10 +7173,10 @@
   "name": "Port of London",
   "kind": "docks of London",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q1545354",
   "source": "https://en.wikipedia.org/wiki/Port_of_London",
-  "lat": null,
-  "lon": null
+  "lat": 51.5,
+  "lon": 0.05
  },
  "place-port-of-long-beach": {
   "name": "Long Beach Harbor",
@@ -7212,10 +7212,10 @@
   "name": "Portland Harbour",
   "kind": "naval harbour in Dorset",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q1585169",
   "source": "https://en.wikipedia.org/wiki/Portland_Harbour",
-  "lat": null,
-  "lon": null
+  "lat": 50.585,
+  "lon": -2.445
  },
  "place-porto-rafti": {
   "name": "Porto Rafti",
@@ -7552,10 +7552,10 @@
   "name": "Rendova Island",
   "kind": "island, New Georgia group",
   "nation": "Solomon Islands",
-  "wikidata": null,
+  "wikidata": "Q952882",
   "source": "https://en.wikipedia.org/wiki/Rendova_Island",
-  "lat": null,
-  "lon": null
+  "lat": -8.5167,
+  "lon": 157.3167
  },
  "place-reykjavik": {
   "name": "Reykjavik",
@@ -7812,13 +7812,13 @@
   "name": "Saint Peter Port",
   "kind": "capital of Guernsey",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q174262",
   "source": "https://en.wikipedia.org/wiki/Saint_Peter_Port",
   "aka": [
    "St Peter Port"
   ],
-  "lat": null,
-  "lon": null
+  "lat": 49.46,
+  "lon": -2.5519
  },
  "place-saint-petersburg": {
   "name": "Leningrad",
@@ -8776,10 +8776,10 @@
   "name": "Takamatsu",
   "kind": "city on Shikoku",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q200707",
   "source": "https://en.wikipedia.org/wiki/Takamatsu",
-  "lat": null,
-  "lon": null
+  "lat": 34.3428,
+  "lon": 134.0466
  },
  "place-tallinn": {
   "name": "Tallinn",
@@ -9072,10 +9072,10 @@
   "name": "Tokushima",
   "kind": "city on Shikoku",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q207309",
   "source": "https://en.wikipedia.org/wiki/Tokushima_(city)",
-  "lat": null,
-  "lon": null
+  "lat": 34.0703,
+  "lon": 134.5549
  },
  "place-tokyo": {
   "name": "Tokyo",
@@ -9099,10 +9099,10 @@
   "name": "Tokyo City",
   "kind": "former municipality, abolished 1943",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q1207735",
   "source": "https://en.wikipedia.org/wiki/Tokyo_City",
-  "lat": null,
-  "lon": null
+  "lat": 35.6767,
+  "lon": 139.7647
  },
  "place-tokyo-imperial-palace": {
   "name": "Tokyo Imperial Palace",
@@ -9210,10 +9210,10 @@
   "name": "Trafford General Hospital",
   "kind": "hospital at Davyhulme, Manchester, where the NHS was launched",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q7832576",
   "source": "https://en.wikipedia.org/wiki/Trafford_General_Hospital",
-  "lat": null,
-  "lon": null,
+  "lat": 53.4541,
+  "lon": -2.3707,
   "aka": [
    "Park Hospital, Davyhulme"
   ]
@@ -9357,10 +9357,10 @@
   "name": "Tyuleny Island (Sea of Okhotsk)",
   "kind": "island off Sakhalin (Karafuto)",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q1815316",
   "source": "https://en.wikipedia.org/wiki/Tyuleny_Island_(Sea_of_Okhotsk)",
-  "lat": null,
-  "lon": null,
+  "lat": 48.5038,
+  "lon": 144.6287,
   "aka": [
    "Kaihyo Island"
   ]
@@ -9564,10 +9564,10 @@
   "name": "Vitebsk",
   "kind": "city",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q102217",
   "source": "https://en.wikipedia.org/wiki/Vitebsk",
-  "lat": null,
-  "lon": null
+  "lat": 55.1833,
+  "lon": 30.1667
  },
  "place-volga": {
   "name": "Volga",
@@ -9705,14 +9705,14 @@
   "name": "Wallops Flight Facility",
   "kind": "rocket launch range on Wallops Island, Virginia",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q182348",
   "source": "https://en.wikipedia.org/wiki/Wallops_Flight_Facility",
   "aka": [
    "Pilotless Aircraft Research Station",
    "Wallops Island"
   ],
-  "lat": null,
-  "lon": null
+  "lat": 37.9331,
+  "lon": -75.4721
  },
  "place-warm-springs-georgia": {
   "name": "Warm Springs, Georgia",
@@ -9907,10 +9907,10 @@
   "name": "Wick, Caithness",
   "kind": "harbour town",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q1012502",
   "source": "https://en.wikipedia.org/wiki/Wick,_Caithness",
-  "lat": null,
-  "lon": null
+  "lat": 58.4432,
+  "lon": -3.0917
  },
  "place-wieringermeer": {
   "name": "Wieringermeer",
