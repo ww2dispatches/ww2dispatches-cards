@@ -2602,6 +2602,13 @@
    "French Forces of the Interior"
   ]
  },
+ "unit-french-resistance": {
+  "name": "French Resistance",
+  "kind": "resistance movement",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/French_Resistance"
+ },
  "unit-general-german-trade-union-federation": {
   "name": "General German Trade Union Federation",
   "kind": "German trade union federation (ADGB)",
@@ -2972,6 +2979,16 @@
   "nation": "Germany",
   "wikidata": "Q540307",
   "source": "https://en.wikipedia.org/wiki/Kampfgeschwader_26"
+ },
+ "unit-kampfgeschwader-40": {
+  "name": "Kampfgeschwader 40",
+  "kind": "Luftwaffe maritime bomber wing",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kampfgeschwader_40",
+  "aka": [
+   "KG 40"
+  ]
  },
  "unit-kampfgeschwader-53": {
   "name": "Kampfgeschwader 53",

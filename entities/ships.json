@@ -2214,6 +2214,13 @@
   "wikidata": "Q1564459",
   "source": "https://en.wikipedia.org/wiki/HMS_Bulldog_(H91)"
  },
+ "ship-hms-calcutta-d82": {
+  "name": "HMS Calcutta (D82)",
+  "kind": "anti aircraft cruiser",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Calcutta_(D82)"
+ },
  "ship-hms-campbeltown-i42": {
   "name": "HMS Campbeltown (I42)",
   "kind": "Royal Navy destroyer, ex USS Buchanan",
@@ -2247,6 +2254,13 @@
   "nation": "Britain",
   "wikidata": "Q258537",
   "source": "https://en.wikipedia.org/wiki/HMS_Cossack_(F03)"
+ },
+ "ship-hms-coventry-d43": {
+  "name": "HMS Coventry (D43)",
+  "kind": "anti aircraft cruiser",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Coventry_(D43)"
  },
  "ship-hms-cygnet-h83": {
   "name": "HMCS St. Laurent (H83)",
@@ -2637,6 +2651,13 @@
   "nation": "Britain",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/HMS_Kashmir_(F12)"
+ },
+ "ship-hms-keith": {
+  "name": "HMS Keith",
+  "kind": "destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Keith"
  },
  "ship-hms-kelly": {
   "name": "HMS Kelly (F01)",
@@ -5397,6 +5418,13 @@
   "wikidata": "Q4052170",
   "source": "https://en.wikipedia.org/wiki/USS_Bailey_(DD-492)"
  },
+ "ship-uss-barb-ss-220": {
+  "name": "USS Barb (SS-220)",
+  "kind": "Gato class submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Barb_(SS-220)"
+ },
  "ship-uss-barbel-ss-316": {
   "name": "USS Barbel (SS-316)",
   "kind": "U.S. Navy Balao class submarine",
@@ -5812,6 +5840,13 @@
   "nation": "US",
   "wikidata": "Q7870125",
   "source": "https://en.wikipedia.org/wiki/USS_Henry_R._Mallory"
+ },
+ "ship-uss-herring": {
+  "name": "USS Herring (SS-233)",
+  "kind": "Gato class submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Herring"
  },
  "ship-uss-hilary-p-jones": {
   "name": "USS Hilary P. Jones (DD-427)",

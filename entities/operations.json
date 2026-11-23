@@ -2496,6 +2496,13 @@
    "Blum-Byrnes agreements"
   ]
  },
+ "op-boac-flight-777": {
+  "name": "BOAC Flight 777",
+  "kind": "airliner shot down over the Bay of Biscay, 1 June 1943",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/BOAC_Flight_777"
+ },
  "op-bombardment-of-almeria": {
   "name": "Bombardment of Almeria",
   "kind": "German naval reprisal bombardment, Spanish Civil War",
@@ -3762,6 +3769,13 @@
   "aka": [
    "Case White"
   ]
+ },
+ "op-farhud": {
+  "name": "Farhud",
+  "kind": "pogrom against Baghdad's Jews, 1 to 2 June 1941",
+  "nation": "Iraq",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Farhud"
  },
  "op-farrer-park-address": {
   "name": "Farrer Park address",
@@ -5083,6 +5097,16 @@
   "nation": "Australia",
   "wikidata": "Q5450372",
   "source": "https://en.wikipedia.org/wiki/Markham,_Ramu_and_Finisterre_campaigns"
+ },
+ "op-marriage-loan": {
+  "name": "Marriage loan",
+  "kind": "Nazi marriage loan programme from 1 June 1933",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Marriage_loan",
+  "aka": [
+   "Ehestandsdarlehen"
+  ]
  },
  "op-marseille-roundup": {
   "name": "Marseille roundup",

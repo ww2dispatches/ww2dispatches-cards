@@ -629,6 +629,16 @@
    "Ju 88"
   ]
  },
+ "aircraft-k-class-blimp": {
+  "name": "K-class blimp",
+  "kind": "Navy patrol airship type",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/K-class_blimp",
+  "aka": [
+   "K-ship"
+  ]
+ },
  "aircraft-kamikaze-1937-aircraft": {
   "name": "Kamikaze (J-BAAI)",
   "kind": "single named record flight airplane, Ki-15 prototype",
