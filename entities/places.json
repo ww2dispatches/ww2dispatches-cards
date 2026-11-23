@@ -2938,6 +2938,15 @@
   "lat": 51.7658,
   "lon": -0.2508
  },
+ "place-havana": {
+  "name": "Havana",
+  "kind": "capital city of Cuba",
+  "nation": "Cuba",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Havana",
+  "lat": null,
+  "lon": null
+ },
  "place-hawaii": {
   "name": "Hawaii",
   "kind": "islands",
@@ -6075,6 +6084,15 @@
   "source": "https://en.wikipedia.org/wiki/Palermo",
   "lat": 38.1157,
   "lon": 13.3613
+ },
+ "place-palmyra-atoll": {
+  "name": "Palmyra Atoll",
+  "kind": "atoll in the central Pacific",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Palmyra_Atoll",
+  "lat": null,
+  "lon": null
  },
  "place-palo-leyte": {
   "name": "Palo",

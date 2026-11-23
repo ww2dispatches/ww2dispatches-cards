@@ -2755,6 +2755,13 @@
   "wikidata": "Q591797",
   "source": "https://en.wikipedia.org/wiki/Imperial_Airways"
  },
+ "unit-imperial-diet": {
+  "name": "Imperial Diet",
+  "kind": "legislature of the Empire of Japan",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Imperial_Diet"
+ },
  "unit-imperial-guard-japan": {
   "name": "Imperial Guard (Japan)",
   "kind": "Imperial Japanese Army guards division",
@@ -4087,6 +4094,13 @@
   "nation": "Britain",
   "wikidata": "Q1046947",
   "source": "https://en.wikipedia.org/wiki/Royal_Marines"
+ },
+ "unit-royal-norfolk-regiment": {
+  "name": "Royal Norfolk Regiment",
+  "kind": "British Army infantry regiment",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Royal_Norfolk_Regiment"
  },
  "unit-royal-westminster-regiment": {
   "name": "The Westminster Regiment",

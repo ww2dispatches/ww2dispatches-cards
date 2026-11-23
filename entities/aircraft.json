@@ -246,6 +246,13 @@
    "Helldiver"
   ]
  },
+ "aircraft-curtiss-wright-xp-55-ascender": {
+  "name": "Curtiss-Wright XP-55 Ascender",
+  "kind": "experimental canard pusher fighter",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Curtiss-Wright_XP-55_Ascender"
+ },
  "aircraft-de-havilland-dh-108": {
   "name": "de Havilland DH 108",
   "kind": "experimental jet",

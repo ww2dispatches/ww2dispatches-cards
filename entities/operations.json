@@ -954,6 +954,13 @@
   "wikidata": "Q713400",
   "source": "https://en.wikipedia.org/wiki/Battle_in_Berlin"
  },
+ "op-battle-of-42nd-street": {
+  "name": "Battle of 42nd Street",
+  "kind": "rearguard action on Crete, 27 May 1941",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_42nd_Street"
+ },
  "op-battle-of-aachen": {
   "name": "Battle of Aachen",
   "kind": "battle",
@@ -1067,6 +1074,20 @@
   "nation": "Britain",
   "wikidata": "Q708426",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Berlin_(RAF_campaign)"
+ },
+ "op-battle-of-biak": {
+  "name": "Battle of Biak",
+  "kind": "US landing and battle on Biak, May to August 1944",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Biak"
+ },
+ "op-battle-of-bir-hakeim": {
+  "name": "Battle of Bir Hakeim",
+  "kind": "defense of the Free French box at Bir Hakeim, 1942",
+  "nation": "Libya",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Bir_Hakeim"
  },
  "op-battle-of-blackett-strait": {
   "name": "Battle of Blackett Strait",
@@ -3186,6 +3207,13 @@
   "wikidata": "Q4046231",
   "source": "https://en.wikipedia.org/wiki/Convoy_PQ_15"
  },
+ "op-convoy-pq-16": {
+  "name": "Convoy PQ 16",
+  "kind": "Arctic convoy to the Soviet Union, May 1942",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Convoy_PQ_16"
+ },
  "op-convoy-pq-8": {
   "name": "Convoy PQ 8",
   "kind": "Arctic convoy",
@@ -4720,6 +4748,13 @@
   "nation": "Germany",
   "wikidata": "Q1518946",
   "source": "https://en.wikipedia.org/wiki/Law_for_the_Prevention_of_Hereditarily_Diseased_Offspring"
+ },
+ "op-le-paradis-massacre": {
+  "name": "Le Paradis massacre",
+  "kind": "massacre of British prisoners of war, 27 May 1940",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Le_Paradis_massacre"
  },
  "op-leeds-blitz": {
   "name": "Leeds Blitz",
@@ -7610,6 +7645,13 @@
   "nation": "US",
   "wikidata": "Q7892409",
   "source": "https://en.wikipedia.org/wiki/United_States_declaration_of_war_on_Japan"
+ },
+ "op-united-states-v-causby": {
+  "name": "United States v. Causby",
+  "kind": "US Supreme Court case on airspace and takings, 1946",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/United_States_v._Causby"
  },
  "op-universal-declaration-of-human-rights": {
   "name": "Universal Declaration of Human Rights",
