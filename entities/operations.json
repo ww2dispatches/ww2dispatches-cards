@@ -682,6 +682,13 @@
    "Operation Husky"
   ]
  },
+ "op-allied-naval-bombardments-of-japan-during-world-war-ii": {
+  "name": "Allied naval bombardments of Japan during World War II",
+  "kind": "naval bombardment campaign",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Allied_naval_bombardments_of_Japan_during_World_War_II"
+ },
  "op-allied-occupation-of-iceland": {
   "name": "Allied occupation of Iceland",
   "kind": "British, then American, garrison of Iceland",
@@ -868,6 +875,16 @@
   "nation": "France",
   "wikidata": "Q170360",
   "source": "https://en.wikipedia.org/wiki/Armistice_of_22_June_1940"
+ },
+ "op-armistice-of-saint-jean-d-acre": {
+  "name": "Armistice of Saint Jean d'Acre",
+  "kind": "armistice ending the Syria and Lebanon campaign",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Armistice_of_Saint_Jean_d%27Acre",
+  "aka": [
+   "Convention of Acre"
+  ]
  },
  "op-army-navy-game": {
   "name": "Army Navy Game",
@@ -1148,6 +1165,13 @@
   "aka": [
    "Grundgesetz"
   ]
+ },
+ "op-bastille-day-military-parade": {
+  "name": "Bastille Day military parade",
+  "kind": "annual French military parade on 14 July",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bastille_Day_military_parade"
  },
  "op-bataan-death-march": {
   "name": "Bataan Death March",
@@ -2925,6 +2949,13 @@
   "nation": "Britain",
   "wikidata": "Q4916617",
   "source": "https://en.wikipedia.org/wiki/Birmingham_Blitz"
+ },
+ "op-biscari-massacre": {
+  "name": "Biscari massacre",
+  "kind": "killing of prisoners of war by U.S. troops in Sicily",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Biscari_massacre"
  },
  "op-black-friday-1945": {
   "name": "Black Friday (1945)",
@@ -6040,6 +6071,13 @@
   "aka": [
    "Manhattan Engineer District"
   ]
+ },
+ "op-manifesto-of-race": {
+  "name": "Manifesto of Race",
+  "kind": "Fascist Italian racial manifesto",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Manifesto_of_Race"
  },
  "op-manstein-plan": {
   "name": "Manstein plan",

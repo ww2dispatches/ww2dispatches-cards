@@ -705,6 +705,13 @@
   "wikidata": "Q481290",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-158_(1941)"
  },
+ "ship-german-submarine-u-160-1941": {
+  "name": "German submarine U-160",
+  "kind": "Type IXC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-160_(1941)"
+ },
  "ship-german-submarine-u-161-1941": {
   "name": "U-161",
   "kind": "U-boat",
@@ -759,6 +766,13 @@
   "nation": "Germany",
   "wikidata": "Q2468870",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-177"
+ },
+ "ship-german-submarine-u-178": {
+  "name": "German submarine U-178",
+  "kind": "Type IXD2 U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-178"
  },
  "ship-german-submarine-u-180": {
   "name": "German submarine U-180",
@@ -2284,6 +2298,13 @@
   "nation": "Australia",
   "wikidata": "Q5630315",
   "source": "https://en.wikipedia.org/wiki/HMAS_Deloraine"
+ },
+ "ship-hmas-hobart-d63": {
+  "name": "HMAS Hobart (D63)",
+  "kind": "light cruiser",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMAS_Hobart_(D63)"
  },
  "ship-hmas-kuttabul-ship": {
   "name": "HMAS Kuttabul",
@@ -4954,6 +4975,13 @@
    "I-78"
   ]
  },
+ "ship-japanese-submarine-i-179": {
+  "name": "Japanese submarine I-179",
+  "kind": "Kaidai type cruiser submarine",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-179"
+ },
  "ship-japanese-submarine-i-18": {
   "name": "I-18",
   "kind": "submarine",
@@ -5246,6 +5274,13 @@
   "nation": "Britain",
   "wikidata": "Q6719503",
   "source": "https://en.wikipedia.org/wiki/MV_Empire_Drum"
+ },
+ "ship-mv-georgic": {
+  "name": "MV Georgic",
+  "kind": "White Star liner, troopship",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/MV_Georgic"
  },
  "ship-mv-goya": {
   "name": "Goya",
@@ -6171,6 +6206,16 @@
   "nation": "Britain",
   "wikidata": "Q21540226",
   "source": "https://en.wikipedia.org/wiki/TSS_St_David_(1931)"
+ },
+ "ship-usat-arcata": {
+  "name": "USAT Arcata",
+  "kind": "U.S. Army transport, cargo ship",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USAT_Arcata",
+  "aka": [
+   "SS Glymont"
+  ]
  },
  "ship-usat-liberty": {
   "name": "USAT Liberty",
@@ -7599,6 +7644,13 @@
   "nation": "US",
   "wikidata": "Q848857",
   "source": "https://en.wikipedia.org/wiki/USS_Santa_Fe_(CL-60)"
+ },
+ "ship-uss-santee-cve-29": {
+  "name": "USS Santee (CVE-29)",
+  "kind": "escort carrier",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Santee_(CVE-29)"
  },
  "ship-uss-saratoga-cv-3": {
   "name": "USS Saratoga (CV-3)",

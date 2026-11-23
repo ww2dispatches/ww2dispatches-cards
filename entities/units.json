@@ -342,6 +342,17 @@
   "wikidata": "Q4553514",
   "source": "https://en.wikipedia.org/wiki/179th_Infantry_Regiment_(United_States)"
  },
+ "unit-180th-cavalry-regiment": {
+  "name": "180th Infantry Regiment",
+  "kind": "U.S. Army infantry regiment, 45th Division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/180th_Cavalry_Regiment",
+  "aka": [
+   "180th Cavalry Regiment"
+  ],
+  "note": "Wikipedia files it under its later designation"
+ },
  "unit-18th-army-wehrmacht": {
   "name": "18th Army (Wehrmacht)",
   "kind": "German field army",
@@ -2980,6 +2991,16 @@
   "nation": "Germany",
   "source": "https://en.wikipedia.org/wiki/Frankfurter_Zeitung",
   "wikidata": "Q561972"
+ },
+ "unit-free-france": {
+  "name": "Free France",
+  "kind": "de Gaulle's government in exile and its forces",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Free_France",
+  "aka": [
+   "Free French"
+  ]
  },
  "unit-french-committee-of-national-liberation": {
   "name": "French Committee of National Liberation",
