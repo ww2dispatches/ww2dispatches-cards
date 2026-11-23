@@ -1206,6 +1206,13 @@
   "wikidata": "Q1800260",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Domb%C3%A5s"
  },
+ "op-battle-of-dunkirk": {
+  "name": "Battle of Dunkirk",
+  "kind": "battle and evacuation",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Dunkirk"
+ },
  "op-battle-of-empress-augusta-bay": {
   "name": "Battle of Empress Augusta Bay",
   "kind": "naval battle",
@@ -2021,6 +2028,13 @@
   "wikidata": "Q97354291",
   "source": "https://en.wikipedia.org/wiki/Battle_of_the_Corinth_Canal"
  },
+ "op-battle-of-the-denmark-strait": {
+  "name": "Battle of the Denmark Strait",
+  "kind": "naval battle",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_the_Denmark_Strait"
+ },
  "op-battle-of-the-green-islands": {
   "name": "Battle of the Green Islands",
   "kind": "Allied landing, February 1944",
@@ -2367,6 +2381,13 @@
   "nation": "Britain",
   "wikidata": "Q2748375",
   "source": "https://en.wikipedia.org/wiki/Black_Friday_(1945)"
+ },
+ "op-black-may-world-war-ii": {
+  "name": "Black May (1943)",
+  "kind": "U-boat defeat in the Atlantic",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Black_May_(World_War_II)"
  },
  "op-blockade-of-germany-1939-1945": {
   "name": "Blockade of Germany (1939 to 1945)",
@@ -3182,6 +3203,13 @@
   "nation": "Britain",
   "wikidata": "Q5172236",
   "source": "https://en.wikipedia.org/wiki/Coronation_of_George_VI_and_Elizabeth"
+ },
+ "op-council-of-foreign-ministers": {
+  "name": "Council of Foreign Ministers",
+  "kind": "postwar Allied foreign ministers' council",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Council_of_Foreign_Ministers"
  },
  "op-coventry-blitz": {
   "name": "Coventry Blitz",
@@ -6380,6 +6408,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q715663",
   "source": "https://en.wikipedia.org/wiki/Raid_on_Tatsinskaya"
+ },
+ "op-raid-on-yontan-airfield": {
+  "name": "Raid on Yontan Airfield",
+  "kind": "Japanese airborne raid",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Raid_on_Yontan_Airfield"
  },
  "op-rationing-in-the-united-kingdom": {
   "name": "Rationing in the United Kingdom",

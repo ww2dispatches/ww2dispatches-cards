@@ -2439,6 +2439,13 @@
   "wikidata": "Q5405531",
   "source": "https://en.wikipedia.org/wiki/HMS_Holcombe"
  },
+ "ship-hms-hood": {
+  "name": "HMS Hood",
+  "kind": "Royal Navy battlecruiser",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Hood"
+ },
  "ship-hms-hotspur-h01": {
   "name": "HMS Hotspur (H01)",
   "kind": "destroyer",
@@ -4655,6 +4662,13 @@
   "wikidata": "Q320192",
   "source": "https://en.wikipedia.org/wiki/SS_Columbus_(1922)"
  },
+ "ship-ss-conte-rosso": {
+  "name": "SS Conte Rosso",
+  "kind": "Italian liner used as a troopship",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Conte_Rosso"
+ },
  "ship-ss-cyclops": {
   "name": "SS Cyclops",
   "kind": "Blue Funnel Line cargo ship (1906)",
@@ -6130,6 +6144,13 @@
   "nation": "US",
   "wikidata": "Q6142271",
   "source": "https://en.wikipedia.org/wiki/USS_Rasher"
+ },
+ "ship-uss-raton": {
+  "name": "USS Raton (SS-270)",
+  "kind": "U.S. Navy submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Raton"
  },
  "ship-uss-redfish-ss-395": {
   "name": "USS Redfish (SS-395)",

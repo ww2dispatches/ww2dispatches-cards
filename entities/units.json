@@ -2624,6 +2624,13 @@
   "wikidata": "Q2975812",
   "source": "https://en.wikipedia.org/wiki/Gideon_Force"
  },
+ "unit-giretsu-kuteitai": {
+  "name": "Giretsu Kuteitai",
+  "kind": "Imperial Japanese Army airborne raiding unit",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Giretsu_Kuteitai"
+ },
  "unit-golden-square-iraq": {
   "name": "Golden Square",
   "kind": "four Iraqi army officers behind the 1941 coup",
@@ -4048,6 +4055,17 @@
   "nation": "Britain",
   "wikidata": "Q1046947",
   "source": "https://en.wikipedia.org/wiki/Royal_Marines"
+ },
+ "unit-royal-westminster-regiment": {
+  "name": "The Westminster Regiment",
+  "kind": "Canadian infantry regiment (motor battalion in Italy)",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Royal_Westminster_Regiment",
+  "aka": [
+   "Westminster Regiment (Motor)",
+   "Royal Westminster Regiment"
+  ]
  },
  "unit-s-1-executive-committee": {
   "name": "S-1 Executive Committee",

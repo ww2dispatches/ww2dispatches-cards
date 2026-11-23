@@ -885,6 +885,16 @@
    "Karigane"
   ]
  },
+ "aircraft-mitsubishi-ki-21": {
+  "name": "Mitsubishi Ki-21",
+  "kind": "Japanese twin engine bomber",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mitsubishi_Ki-21",
+  "aka": [
+   "Sally"
+  ]
+ },
  "aircraft-nakajima-b6n-tenzan": {
   "name": "Nakajima B6N Jill",
   "kind": "torpedo bomber",

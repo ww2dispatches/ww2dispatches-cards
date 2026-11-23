@@ -1864,6 +1864,15 @@
   "lat": 11.1333,
   "lon": 39.6333
  },
+ "place-detroit": {
+  "name": "Detroit",
+  "kind": "city",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Detroit",
+  "lat": null,
+  "lon": null
+ },
  "place-dieuze": {
   "name": "Dieuze",
   "kind": "town",
