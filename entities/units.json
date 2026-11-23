@@ -490,6 +490,13 @@
   "source": "https://en.wikipedia.org/wiki/1st_Panzer_Army",
   "wikidata": "Q163388"
  },
+ "unit-1st-parachute-brigade-united-kingdom": {
+  "name": "1st Parachute Brigade (United Kingdom)",
+  "kind": "British airborne brigade",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1st_Parachute_Brigade_(United_Kingdom)"
+ },
  "unit-1st-parachute-division": {
   "name": "1st Parachute Division",
   "kind": "Luftwaffe airborne infantry division",
@@ -2563,6 +2570,17 @@
   "wikidata": "Q430161",
   "source": "https://en.wikipedia.org/wiki/Czechoslovak_government-in-exile"
  },
+ "unit-danat-bank": {
+  "name": "Danat-Bank",
+  "kind": "German commercial bank",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Danat-Bank",
+  "aka": [
+   "Danatbank",
+   "Darmstadter und Nationalbank"
+  ]
+ },
  "unit-danish-resistance-movement": {
   "name": "Danish resistance",
   "kind": "resistance movement",
@@ -3443,6 +3461,13 @@
   "wikidata": "Q665124",
   "source": "https://en.wikipedia.org/wiki/Kempeitai"
  },
+ "unit-king-s-african-rifles": {
+  "name": "King's African Rifles",
+  "kind": "British colonial regiment",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/King%27s_African_Rifles"
+ },
  "unit-king-s-own-royal-regiment-lancaster": {
   "name": "King's Own",
   "kind": "British infantry regiment",
@@ -4029,6 +4054,13 @@
   "nation": "Britain",
   "wikidata": "Q12064239",
   "source": "https://en.wikipedia.org/wiki/No._224_Squadron_RAF"
+ },
+ "unit-no-228-squadron-raf": {
+  "name": "No. 228 Squadron RAF",
+  "kind": "flying boat squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._228_Squadron_RAF"
  },
  "unit-no-233-squadron-raf": {
   "name": "No. 233 Squadron RAF",

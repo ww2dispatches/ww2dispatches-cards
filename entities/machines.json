@@ -1189,6 +1189,16 @@
    "Purple"
   ]
  },
+ "machine-type-xiv-submarine": {
+  "name": "Type XIV submarine",
+  "kind": "U-boat tanker type (milk cow)",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Type_XIV_submarine",
+  "aka": [
+   "Milchkuh"
+  ]
+ },
  "machine-type-xxi-submarine": {
   "name": "Type XXI submarine",
   "kind": "German electric U-boat class",

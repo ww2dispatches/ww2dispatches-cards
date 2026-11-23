@@ -272,6 +272,13 @@
   "wikidata": "Q130271151",
   "source": "https://en.wikipedia.org/wiki/1943_Greek_protests_against_labour_mobilization"
  },
+ "op-1943-major-league-baseball-all-star-game": {
+  "name": "1943 Major League Baseball All-Star Game",
+  "kind": "baseball game",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1943_Major_League_Baseball_All-Star_Game"
+ },
  "op-1943-world-professional-basketball-tournament": {
   "name": "1943 World Professional Basketball Tournament",
   "kind": "professional basketball tournament, Chicago",
@@ -889,6 +896,13 @@
   "nation": "France",
   "wikidata": "Q706535",
   "source": "https://en.wikipedia.org/wiki/Ascq_massacre"
+ },
+ "op-assassination-of-jose-calvo-sotelo": {
+  "name": "Assassination of Jose Calvo Sotelo",
+  "kind": "political killing",
+  "nation": "Spain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Assassination_of_Jos%C3%A9_Calvo_Sotelo"
  },
  "op-atlantic-wall": {
   "name": "Atlantic Wall",
@@ -1763,6 +1777,16 @@
   "nation": "Finland",
   "wikidata": "Q934266",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Kollaa"
+ },
+ "op-battle-of-kolombangara": {
+  "name": "Battle of Kolombangara",
+  "kind": "naval battle",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Kolombangara",
+  "aka": [
+   "Second Battle of Kula Gulf"
+  ]
  },
  "op-battle-of-konigsberg": {
   "name": "Battle of Konigsberg",
@@ -4256,6 +4280,13 @@
   "nation": "Germany",
   "wikidata": "Q310218",
   "source": "https://en.wikipedia.org/wiki/Enabling_Act_of_1933"
+ },
+ "op-european-banking-crisis-of-1931": {
+  "name": "European banking crisis of 1931",
+  "kind": "financial crisis",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/European_banking_crisis_of_1931"
  },
  "op-evacuation-of-children-in-the-spanish-civil-war": {
   "name": "Evacuation of children in the Spanish Civil War",
@@ -6912,6 +6943,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Operation_FS"
  },
+ "op-operation-fustian": {
+  "name": "Operation Fustian",
+  "kind": "airborne operation",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Fustian"
+ },
  "op-operation-gambit": {
   "name": "Operation Gambit",
   "kind": "X-craft beach marking for Sword and Juno, June 1944",
@@ -7181,6 +7219,13 @@
   "nation": "Germany",
   "wikidata": "Q17048864",
   "source": "https://en.wikipedia.org/wiki/Operation_Ostfront"
+ },
+ "op-operation-ostra-brama": {
+  "name": "Operation Ostra Brama",
+  "kind": "Home Army operation",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Ostra_Brama"
  },
  "op-operation-overlord": {
   "name": "Operation Overlord",
@@ -9302,6 +9347,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q162546",
   "source": "https://en.wikipedia.org/wiki/Vienna_offensive"
+ },
+ "op-vilnius-offensive": {
+  "name": "Vilnius offensive",
+  "kind": "Soviet offensive",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Vilnius_offensive"
  },
  "op-vistula-oder-offensive": {
   "name": "Vistula-Oder offensive",

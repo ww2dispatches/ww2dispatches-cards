@@ -1349,6 +1349,13 @@
   "wikidata": "Q2064178",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-486"
  },
+ "ship-german-submarine-u-487": {
+  "name": "German submarine U-487",
+  "kind": "Type XIV supply U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-487"
+ },
  "ship-german-submarine-u-488": {
   "name": "German submarine U-488",
   "kind": "Type XIV supply U-boat",
@@ -1692,6 +1699,13 @@
   "nation": "Germany",
   "wikidata": "Q4052067",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-606"
+ },
+ "ship-german-submarine-u-607": {
+  "name": "German submarine U-607",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-607"
  },
  "ship-german-submarine-u-616": {
   "name": "German submarine U-616",
@@ -4325,6 +4339,13 @@
   "wikidata": "Q1568768",
   "source": "https://en.wikipedia.org/wiki/Japanese_cruiser_Haguro"
  },
+ "ship-japanese-cruiser-jintsu": {
+  "name": "Japanese cruiser Jintsu",
+  "kind": "Sendai class light cruiser",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_cruiser_Jints%C5%AB"
+ },
  "ship-japanese-cruiser-kashii": {
   "name": "Japanese cruiser Kashii",
   "kind": "Katori class training cruiser",
@@ -6499,6 +6520,16 @@
   "wikidata": "Q1129148",
   "source": "https://en.wikipedia.org/wiki/USS_Cooper"
  },
+ "ship-uss-core": {
+  "name": "USS Core",
+  "kind": "escort carrier",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Core",
+  "aka": [
+   "CVE-13"
+  ]
+ },
  "ship-uss-croatan-cve-25": {
   "name": "USS Croatan (CVE-25)",
   "kind": "escort carrier",
@@ -6796,6 +6827,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/USS_Hilary_P._Jones",
   "wikidata": "Q4052233"
+ },
+ "ship-uss-honolulu-cl-48": {
+  "name": "USS Honolulu (CL-48)",
+  "kind": "light cruiser",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Honolulu_(CL-48)"
  },
  "ship-uss-hornet-cv-12": {
   "name": "USS Hornet (CV-12)",
@@ -7623,6 +7661,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/USS_St._Lo",
   "wikidata": "Q1365876"
+ },
+ "ship-uss-st-louis-cl-49": {
+  "name": "USS St. Louis (CL-49)",
+  "kind": "light cruiser",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_St._Louis_(CL-49)"
  },
  "ship-uss-sturgeon-ss-187": {
   "name": "USS Sturgeon (SS-187)",

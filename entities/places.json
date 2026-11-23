@@ -3762,6 +3762,15 @@
    "Ie Jima"
   ]
  },
+ "place-ig-farben-building": {
+  "name": "IG Farben Building",
+  "kind": "headquarters building",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/IG_Farben_Building",
+  "lat": null,
+  "lon": null
+ },
  "place-ijmuiden": {
   "name": "IJmuiden",
   "kind": "port town",
@@ -6080,6 +6089,15 @@
   "lat": 40.8226,
   "lon": 14.4292
  },
+ "place-moyale": {
+  "name": "Moyale",
+  "kind": "border town",
+  "nation": "Kenya",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Moyale",
+  "lat": null,
+  "lon": null
+ },
  "place-moyeuvre-grande": {
   "name": "Moyeuvre",
   "kind": "town",
@@ -6118,6 +6136,15 @@
   "wikidata": "Q1726",
   "lat": 48.1375,
   "lon": 11.575
+ },
+ "place-munster": {
+  "name": "Munster",
+  "kind": "city",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/M%C3%BCnster",
+  "lat": null,
+  "lon": null
  },
  "place-murmansk": {
   "name": "Murmansk",
@@ -7794,6 +7821,15 @@
   "lat": 51.92,
   "lon": 4.48
  },
+ "place-rovno-ghetto": {
+  "name": "Rovno Ghetto",
+  "kind": "Nazi ghetto",
+  "nation": "Ukraine",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Rovno_Ghetto",
+  "lat": null,
+  "lon": null
+ },
  "place-royal-arsenal": {
   "name": "Royal Arsenal, Woolwich",
   "kind": "armaments works",
@@ -8345,6 +8381,15 @@
   "lat": 53.3808,
   "lon": -1.4703
  },
+ "place-shibe-park": {
+  "name": "Shibe Park",
+  "kind": "ballpark, Philadelphia",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Shibe_Park",
+  "lat": null,
+  "lon": null
+ },
  "place-shiprock-new-mexico": {
   "name": "Shiprock, New Mexico",
   "kind": "town on the Navajo Nation, New Mexico",
@@ -8624,6 +8669,15 @@
   "lat": 47.5614,
   "lon": -52.7119
  },
+ "place-st-lambert-s-church-munster": {
+  "name": "St. Lambert's Church, Munster",
+  "kind": "church",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/St._Lambert%27s_Church,_M%C3%BCnster",
+  "lat": null,
+  "lon": null
+ },
  "place-st-lawrence-newfoundland-and-labrador": {
   "name": "St. Lawrence, Newfoundland and Labrador",
   "kind": "mining town on Newfoundland's south coast",
@@ -8662,6 +8716,15 @@
   ],
   "lat": 50.2833,
   "lon": 6.1333
+ },
+ "place-stadelheim-prison": {
+  "name": "Stadelheim Prison",
+  "kind": "prison, Munich",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Stadelheim_Prison",
+  "lat": null,
+  "lon": null
  },
  "place-stalag-luft-iii": {
   "name": "Stalag Luft III",
@@ -9686,6 +9749,18 @@
   "source": "https://en.wikipedia.org/wiki/Vilna_Ghetto",
   "lat": 54.6833,
   "lon": 25.3167
+ },
+ "place-vilnius": {
+  "name": "Vilnius",
+  "kind": "city",
+  "nation": "Lithuania",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Vilnius",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Wilno"
+  ]
  },
  "place-visakhapatnam": {
   "name": "Visakhapatnam",
