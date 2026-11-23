@@ -2878,6 +2878,15 @@
   "lat": 29.9753,
   "lon": 31.1377
  },
+ "place-great-synagogue-bialystok": {
+  "name": "Great Synagogue, Bialystok",
+  "kind": "synagogue, burned 27 June 1941",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Great_Synagogue_(Bia%C5%82ystok)",
+  "lat": null,
+  "lon": null
+ },
  "place-great-synagogue-warsaw": {
   "name": "Great Synagogue (Warsaw)",
   "kind": "synagogue, destroyed 1943",
@@ -3506,6 +3515,15 @@
   "lat": 40.7685,
   "lon": -73.9647
  },
+ "place-huntington-beach-california": {
+  "name": "Huntington Beach, California",
+  "kind": "city",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Huntington_Beach,_California",
+  "lat": null,
+  "lon": null
+ },
  "place-hurtgen-forest": {
   "name": "Hurtgen Forest",
   "kind": "forest",
@@ -3526,6 +3544,18 @@
   "wikidata": "Q988554",
   "lat": 41.7847,
   "lon": -73.9333
+ },
+ "place-iasi": {
+  "name": "Iasi",
+  "kind": "city",
+  "nation": "Romania",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ia%C8%99i",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Jassy"
+  ]
  },
  "place-iceland": {
   "lat": 65.0,
@@ -9252,6 +9282,15 @@
    "Vizagapatam",
    "Vizag"
   ]
+ },
+ "place-vitebsk": {
+  "name": "Vitebsk",
+  "kind": "city",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Vitebsk",
+  "lat": null,
+  "lon": null
  },
  "place-volga": {
   "name": "Volga",

@@ -126,6 +126,13 @@
   "source": "https://en.wikipedia.org/wiki/1940_United_States_presidential_election",
   "wikidata": "Q699416"
  },
+ "op-1941-bialystok-massacres": {
+  "name": "1941 Bialystok massacres",
+  "kind": "massacre of Jews",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1941_Bia%C5%82ystok_massacres"
+ },
  "op-1941-iraqi-coup-d-etat": {
   "name": "1941 Iraqi coup d'etat",
   "kind": "Golden Square coup in Baghdad",
@@ -1791,6 +1798,13 @@
   "nation": "Britain",
   "wikidata": "Q371298",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Meiktila_and_Mandalay"
+ },
+ "op-battle-of-mersa-matruh": {
+  "name": "Battle of Mersa Matruh",
+  "kind": "battle, June 1942",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Mersa_Matruh"
  },
  "op-battle-of-metz": {
   "name": "Battle of Metz",
@@ -3513,6 +3527,13 @@
   "wikidata": "Q3689898",
   "source": "https://en.wikipedia.org/wiki/Convoy_HG_76"
  },
+ "op-convoy-hx-133": {
+  "name": "Convoy HX 133",
+  "kind": "Atlantic convoy, June 1941",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Convoy_HX_133"
+ },
  "op-convoy-hx-156": {
   "name": "Convoy HX 156",
   "kind": "Atlantic convoy",
@@ -3568,6 +3589,13 @@
   "nation": "Britain",
   "wikidata": "Q4046236",
   "source": "https://en.wikipedia.org/wiki/Convoy_PQ_16"
+ },
+ "op-convoy-pq-17": {
+  "name": "Convoy PQ 17",
+  "kind": "Arctic convoy, 1942",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Convoy_PQ_17"
  },
  "op-convoy-pq-8": {
   "name": "Convoy PQ 8",
@@ -4710,6 +4738,16 @@
   "nation": "Hungary",
   "wikidata": "Q1414384",
   "source": "https://en.wikipedia.org/wiki/Hungarian_invasion_of_Carpatho-Ukraine"
+ },
+ "op-iasi-pogrom": {
+  "name": "Iasi pogrom",
+  "kind": "pogrom against Jews, June 1941",
+  "nation": "Romania",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ia%C8%99i_pogrom",
+  "aka": [
+   "Jassy pogrom"
+  ]
  },
  "op-if-day": {
   "name": "If Day",
@@ -8692,6 +8730,13 @@
   "wikidata": "Q665021",
   "source": "https://en.wikipedia.org/wiki/Verona_trial"
  },
+ "op-veterans-preference-act": {
+  "name": "Veterans' Preference Act",
+  "kind": "US federal law, 1944",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Veterans%27_Preference_Act"
+ },
  "op-via-rasella-attack": {
   "name": "Via Rasella attack",
   "kind": "partisan attack",
@@ -8730,6 +8775,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q159065",
   "source": "https://en.wikipedia.org/wiki/Vistula%E2%80%93Oder_offensive"
+ },
+ "op-vitebsk-orsha-offensive": {
+  "name": "Vitebsk Orsha offensive",
+  "kind": "Soviet offensive, part of Operation Bagration",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Vitebsk%E2%80%93Orsha_offensive"
  },
  "op-voronezh-kastornoye-offensive": {
   "name": "Voronezh Kastornoye offensive",

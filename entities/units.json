@@ -4141,6 +4141,13 @@
   "wikidata": "Q371571",
   "source": "https://en.wikipedia.org/wiki/Philippine_Scouts"
  },
+ "unit-police-battalion-309": {
+  "name": "Police Battalion 309",
+  "kind": "German Order Police battalion",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Police_Battalion_309"
+ },
  "unit-polish-committee-of-national-liberation": {
   "name": "Polish Committee of National Liberation",
   "kind": "Soviet backed Polish provisional authority",
@@ -5140,6 +5147,16 @@
   "nation": "Soviet Union",
   "wikidata": "Q1469561",
   "source": "https://en.wikipedia.org/wiki/Voronezh_Front"
+ },
+ "unit-vp-142": {
+  "name": "VP-142",
+  "kind": "US Navy patrol squadron, VPB-142 in 1945",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/VP-142",
+  "aka": [
+   "VPB-142"
+  ]
  },
  "unit-vpb-109": {
   "name": "VPB-109",

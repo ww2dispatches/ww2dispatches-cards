@@ -1446,6 +1446,13 @@
   "wikidata": "Q464041",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-553"
  },
+ "ship-german-submarine-u-556": {
+  "name": "U-556",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-556"
+ },
  "ship-german-submarine-u-557": {
   "name": "German submarine U-557",
   "kind": "Type VIIC U-boat",
@@ -5575,6 +5582,13 @@
   "aka": [
    "Lima Maru"
   ]
+ },
+ "ship-ss-maasdam-1920": {
+  "name": "SS Maasdam",
+  "kind": "Holland America Line cargo liner",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Maasdam_(1920)"
  },
  "ship-ss-malakand-1919": {
   "name": "SS Malakand",
