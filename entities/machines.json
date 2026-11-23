@@ -209,6 +209,13 @@
    "CP-1"
   ]
  },
+ "machine-chicago-tribune": {
+  "name": "Chicago Tribune",
+  "kind": "newspaper",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Chicago_Tribune"
+ },
  "machine-cross-of-honour-of-the-german-mother": {
   "name": "Cross of Honour of the German Mother",
   "kind": "Nazi state award for mothers",
@@ -459,6 +466,13 @@
    "Ten Tonner"
   ]
  },
+ "machine-h2s-radar": {
+  "name": "H2S",
+  "kind": "airborne ground scanning radar",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/H2S_(radar)"
+ },
  "machine-hale-telescope": {
   "name": "Hale Telescope",
   "kind": "200 inch reflecting telescope",
@@ -705,6 +719,13 @@
    "Morning Star"
   ]
  },
+ "machine-mrs-miniver": {
+  "name": "Mrs. Miniver",
+  "kind": "1942 MGM film",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mrs._Miniver"
+ },
  "machine-mt-explosive-motorboat": {
   "name": "MT explosive motorboat",
   "kind": "explosive motorboat",
@@ -798,6 +819,13 @@
    "PTFE",
    "Teflon"
   ]
+ },
+ "machine-porsche-356": {
+  "name": "Porsche 356",
+  "kind": "sports car",
+  "nation": "Austria",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Porsche_356"
  },
  "machine-power-jets-wu": {
   "name": "Power Jets WU",
@@ -899,6 +927,16 @@
   "source": "https://en.wikipedia.org/wiki/RTV-G-4_Bumper",
   "aka": [
    "Bumper"
+  ]
+ },
+ "machine-schwerer-gustav": {
+  "name": "Schwerer Gustav",
+  "kind": "German 80 cm railway siege gun (with its sister gun Dora)",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Schwerer_Gustav",
+  "aka": [
+   "Dora"
   ]
  },
  "machine-scr-268-radar": {
@@ -1009,6 +1047,13 @@
   "aka": [
    "Het Achterhuis"
   ]
+ },
+ "machine-the-magnificent-eleven": {
+  "name": "The Magnificent Eleven",
+  "kind": "Robert Capa's surviving D Day photographs",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/The_Magnificent_Eleven"
  },
  "machine-the-nazi-plan": {
   "name": "The Nazi Plan",
@@ -1126,6 +1171,16 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/X-10_Graphite_Reactor",
   "wikidata": "Q4133095"
+ },
+ "machine-x-class-submarine": {
+  "name": "X-class submarine",
+  "kind": "British midget submarine type (X-craft)",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/X-class_submarine",
+  "aka": [
+   "X-craft"
+  ]
  },
  "machine-yankee-doodle-dandy": {
   "name": "Yankee Doodle Dandy",

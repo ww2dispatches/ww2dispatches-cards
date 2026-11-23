@@ -899,6 +899,13 @@
   "wikidata": "Q4051997",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-307"
  },
+ "ship-german-submarine-u-308": {
+  "name": "German submarine U-308",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-308"
+ },
  "ship-german-submarine-u-31-1936": {
   "name": "U-31",
   "kind": "Kriegsmarine Type VIIA U-boat",
@@ -999,6 +1006,13 @@
   "nation": "Germany",
   "wikidata": "Q4052039",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-371"
+ },
+ "ship-german-submarine-u-373": {
+  "name": "U-373",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-373"
  },
  "ship-german-submarine-u-374": {
   "name": "German submarine U-374",
@@ -1146,6 +1160,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-476"
  },
+ "ship-german-submarine-u-477": {
+  "name": "U-477",
+  "kind": "German Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-477"
+ },
  "ship-german-submarine-u-486": {
   "name": "U-486",
   "kind": "Kriegsmarine U-boat",
@@ -1181,6 +1202,16 @@
   "wikidata": "Q2000242",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-503"
  },
+ "ship-german-submarine-u-505": {
+  "name": "German submarine U-505",
+  "kind": "Type IXC U-boat, captured 1944",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-505",
+  "aka": [
+   "USS Nemo"
+  ]
+ },
  "ship-german-submarine-u-507": {
   "name": "German submarine U-507",
   "kind": "Type IXC U-boat",
@@ -1201,6 +1232,13 @@
   "nation": "Germany",
   "wikidata": "Q950212",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-518"
+ },
+ "ship-german-submarine-u-521": {
+  "name": "German submarine U-521",
+  "kind": "Kriegsmarine Type IXC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-521"
  },
  "ship-german-submarine-u-522": {
   "name": "German submarine U-522",
@@ -1883,6 +1921,13 @@
    "ZG 3 Hermes"
   ]
  },
+ "ship-greek-destroyer-vasilissa-olga": {
+  "name": "Greek destroyer Vasilissa Olga",
+  "kind": "Royal Hellenic Navy destroyer",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Greek_destroyer_Vasilissa_Olga"
+ },
  "ship-hawaii-maru": {
   "name": "Hawaii Maru",
   "kind": "troop transport",
@@ -2087,6 +2132,13 @@
   "wikidata": "Q5631113",
   "source": "https://en.wikipedia.org/wiki/HMNZS_Moa_(T233)"
  },
+ "ship-hms-acasta-h09": {
+  "name": "HMS Acasta (H09)",
+  "kind": "destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Acasta_(H09)"
+ },
  "ship-hms-active-h14": {
   "name": "HMS Active (H14)",
   "kind": "A class destroyer",
@@ -2142,6 +2194,13 @@
   "nation": "Britain",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/HMS_Archer_(D78)"
+ },
+ "ship-hms-ardent-h41": {
+  "name": "HMS Ardent (H41)",
+  "kind": "destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Ardent_(H41)"
  },
  "ship-hms-argonaut-61": {
   "name": "HMS Argonaut (61)",
@@ -2306,6 +2365,13 @@
   "nation": "Britain",
   "wikidata": "Q4346531",
   "source": "https://en.wikipedia.org/wiki/HMS_Dasher_(D37)"
+ },
+ "ship-hms-devonshire-39": {
+  "name": "HMS Devonshire (39)",
+  "kind": "heavy cruiser",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Devonshire_(39)"
  },
  "ship-hms-diadem-84": {
   "name": "HMS Diadem (84)",
@@ -2477,6 +2543,13 @@
   "nation": "Britain",
   "wikidata": "Q18888375",
   "source": "https://en.wikipedia.org/wiki/HMS_Gleaner_(J83)"
+ },
+ "ship-hms-glorious": {
+  "name": "HMS Glorious",
+  "kind": "aircraft carrier",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Glorious"
  },
  "ship-hms-gloucester-62": {
   "name": "HMS Gloucester (62)",
@@ -2850,6 +2923,13 @@
   "wikidata": "Q941405",
   "source": "https://en.wikipedia.org/wiki/HMS_Neptune_(20)"
  },
+ "ship-hms-norfolk-78": {
+  "name": "HMS Norfolk (78)",
+  "kind": "heavy cruiser",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Norfolk_(78)"
+ },
  "ship-hms-ocean-r68": {
   "name": "HMS Ocean (R68)",
   "kind": "Colossus class light aircraft carrier",
@@ -3028,6 +3108,13 @@
   "wikidata": "Q60745166",
   "source": "https://en.wikipedia.org/wiki/HMS_Sharpshooter_(J68)"
  },
+ "ship-hms-shikari": {
+  "name": "HMS Shikari",
+  "kind": "Royal Navy destroyer, last ship out of Dunkirk",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Shikari"
+ },
  "ship-hms-sikh-f82": {
   "name": "HMS Sikh (F82)",
   "kind": "destroyer",
@@ -3179,12 +3266,26 @@
    "Thunderbolt"
   ]
  },
+ "ship-hms-trenchant-p331": {
+  "name": "HMS Trenchant (P331)",
+  "kind": "submarine",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Trenchant_(P331)"
+ },
  "ship-hms-trinidad-46": {
   "name": "HMS Trinidad (46)",
   "kind": "Royal Navy light cruiser",
   "nation": "Britain",
   "wikidata": "Q1565575",
   "source": "https://en.wikipedia.org/wiki/HMS_Trinidad_(46)"
+ },
+ "ship-hms-truculent-p315": {
+  "name": "HMS Truculent (P315)",
+  "kind": "T class submarine",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Truculent_(P315)"
  },
  "ship-hms-tuna-n94": {
   "name": "HMS Tuna (N94)",
@@ -3444,6 +3545,16 @@
   "nation": "Norway",
   "wikidata": "Q721660",
   "source": "https://en.wikipedia.org/wiki/HNoMS_Pol_III"
+ },
+ "ship-hnoms-svenner-g03": {
+  "name": "HNoMS Svenner (G03)",
+  "kind": "S class destroyer",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HNoMS_Svenner_(G03)",
+  "aka": [
+   "HMS Shark (G03)"
+  ]
  },
  "ship-htms-thonburi": {
   "name": "HTMS Thonburi",
@@ -3742,6 +3853,13 @@
   "source": "https://en.wikipedia.org/wiki/Japanese_battleship_Musashi",
   "wikidata": "Q1127368"
  },
+ "ship-japanese-battleship-mutsu": {
+  "name": "Mutsu",
+  "kind": "battleship",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_battleship_Mutsu"
+ },
  "ship-japanese-battleship-yamato": {
   "name": "Yamato",
   "kind": "battleship",
@@ -3814,6 +3932,13 @@
   "nation": "Japan",
   "source": "https://en.wikipedia.org/wiki/Japanese_cruiser_Kumano",
   "wikidata": "Q1791961"
+ },
+ "ship-japanese-cruiser-mikuma": {
+  "name": "Mikuma",
+  "kind": "Mogami class heavy cruiser",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_cruiser_Mikuma"
  },
  "ship-japanese-cruiser-mogami-1934": {
   "name": "Japanese cruiser Mogami",
@@ -4040,6 +4165,13 @@
   "wikidata": "Q2990133",
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Makigumo_(1941)"
  },
+ "ship-japanese-destroyer-minazuki-1926": {
+  "name": "Minazuki",
+  "kind": "Mutsuki class destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Minazuki_(1926)"
+ },
  "ship-japanese-destroyer-minegumo-1937": {
   "name": "Japanese destroyer Minegumo (1937)",
   "kind": "Japanese destroyer",
@@ -4255,6 +4387,16 @@
    "I-66"
   ]
  },
+ "ship-japanese-submarine-i-168": {
+  "name": "I-168",
+  "kind": "submarine",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-168",
+  "aka": [
+   "I-68"
+  ]
+ },
  "ship-japanese-submarine-i-17": {
   "name": "Japanese submarine I-17",
   "kind": "Japanese submarine",
@@ -4359,6 +4501,13 @@
   "nation": "Japan",
   "wikidata": "Q862575",
   "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-37"
+ },
+ "ship-japanese-submarine-i-400": {
+  "name": "Japanese submarine I-400",
+  "kind": "Imperial Japanese Navy submarine aircraft carrier",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-400"
  },
  "ship-japanese-submarine-i-401": {
   "name": "Japanese submarine I-401",
@@ -5046,6 +5195,13 @@
   "nation": "Norway",
   "wikidata": "Q1672957",
   "source": "https://en.wikipedia.org/wiki/SS_Irma_(1905)"
+ },
+ "ship-ss-iron-crown": {
+  "name": "SS Iron Crown",
+  "kind": "Australian ore carrier",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Iron_Crown"
  },
  "ship-ss-john-harvey": {
   "name": "SS John Harvey",
@@ -5797,12 +5953,29 @@
   "source": "https://en.wikipedia.org/wiki/USS_Gambier_Bay",
   "wikidata": "Q605764"
  },
+ "ship-uss-gannet-am-41": {
+  "name": "USS Gannet (AM-41)",
+  "kind": "minesweeper, later seaplane tender AVP-8",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Gannet_(AM-41)",
+  "aka": [
+   "USS Gannet (AVP-8)"
+  ]
+ },
  "ship-uss-gilmore": {
   "name": "USS Gilmore (DE-18)",
   "kind": "Evarts class destroyer escort",
   "nation": "US",
   "wikidata": "Q7869727",
   "source": "https://en.wikipedia.org/wiki/USS_Gilmore"
+ },
+ "ship-uss-glennon-dd-620": {
+  "name": "USS Glennon (DD-620)",
+  "kind": "destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Glennon_(DD-620)"
  },
  "ship-uss-grayling-ss-209": {
   "name": "USS Grayling (SS-209)",
@@ -5853,6 +6026,13 @@
   "wikidata": "Q7869952",
   "source": "https://en.wikipedia.org/wiki/USS_Haggard",
   "note": "Wikipedia title USS Haggard (DD-555) redirects to USS Haggard"
+ },
+ "ship-uss-hammann-dd-412": {
+  "name": "USS Hammann (DD-412)",
+  "kind": "Sims class destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Hammann_(DD-412)"
  },
  "ship-uss-hancock-cv-19": {
   "name": "USS Hancock (CV-19)",
@@ -6328,6 +6508,16 @@
   "wikidata": "Q7872734",
   "source": "https://en.wikipedia.org/wiki/USS_Paul_Jones_(DD-230)"
  },
+ "ship-uss-pc-565": {
+  "name": "USS PC-565",
+  "kind": "U.S. Navy submarine chaser",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_PC-565",
+  "aka": [
+   "USS Gilmer (PC-565)"
+  ]
+ },
  "ship-uss-pecos-ao-6": {
   "name": "USS Pecos (AO-6)",
   "kind": "U.S. Navy fleet oiler",
@@ -6355,6 +6545,13 @@
   "nation": "US",
   "wikidata": "Q7872889",
   "source": "https://en.wikipedia.org/wiki/USS_Pillsbury_(DD-227)"
+ },
+ "ship-uss-pillsbury-de-133": {
+  "name": "USS Pillsbury (DE-133)",
+  "kind": "Edsall class destroyer escort",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Pillsbury_(DE-133)"
  },
  "ship-uss-pioneer-am-105": {
   "name": "USS Pioneer (AM-105)",
@@ -6474,6 +6671,13 @@
   "nation": "US",
   "wikidata": "Q7873419",
   "source": "https://en.wikipedia.org/wiki/USS_Reuben_James_(DE-153)"
+ },
+ "ship-uss-rich-de-695": {
+  "name": "USS Rich (DE-695)",
+  "kind": "destroyer escort",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Rich_(DE-695)"
  },
  "ship-uss-roe-dd-418": {
   "name": "USS Roe (DD-418)",
@@ -6642,6 +6846,17 @@
   "nation": "US",
   "wikidata": "Q7874440",
   "source": "https://en.wikipedia.org/wiki/USS_Sturtevant_(DD-240)"
+ },
+ "ship-uss-susan-b-anthony": {
+  "name": "USS Susan B. Anthony",
+  "kind": "transport",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Susan_B._Anthony",
+  "aka": [
+   "USS Susan B. Anthony (AP-72)",
+   "Santa Clara"
+  ]
  },
  "ship-uss-tanager-am-5": {
   "name": "USS Tanager (AM-5)",

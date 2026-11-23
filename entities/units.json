@@ -800,6 +800,13 @@
   "wikidata": "Q101068312",
   "source": "https://en.wikipedia.org/wiki/2nd_Raiding_Brigade"
  },
+ "unit-2nd-ranger-battalion": {
+  "name": "2nd Ranger Battalion",
+  "kind": "US Army Ranger battalion",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/2nd_Ranger_Battalion"
+ },
  "unit-2nd-south-african-infantry-division": {
   "name": "2nd South African Infantry Division",
   "kind": "army division",
@@ -2386,6 +2393,16 @@
   "wikidata": "Q762195",
   "source": "https://en.wikipedia.org/wiki/Esquire_(magazine)"
  },
+ "unit-european-theater-of-operations-united-states-army": {
+  "name": "European Theater of Operations, United States Army",
+  "kind": "theater command",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/European_Theater_of_Operations,_United_States_Army",
+  "aka": [
+   "ETOUSA"
+  ]
+ },
  "unit-fair-employment-practice-committee": {
   "name": "Fair Employment Practice Committee",
   "kind": "federal agency against job discrimination in war industry",
@@ -2715,6 +2732,13 @@
   "aka": [
    "GC&CS"
   ]
+ },
+ "unit-green-howards": {
+  "name": "Green Howards",
+  "kind": "British infantry regiment",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Green_Howards"
  },
  "unit-grenadier-guards": {
   "name": "Grenadier Guards",
@@ -3247,6 +3271,13 @@
   "wikidata": "Q2570501",
   "source": "https://en.wikipedia.org/wiki/MI9"
  },
+ "unit-milk-marketing-board": {
+  "name": "Milk Marketing Board",
+  "kind": "British statutory milk marketing body",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Milk_Marketing_Board"
+ },
  "unit-ministry-of-aviation-nazi-germany": {
   "name": "Reich Air Ministry",
   "kind": "German government ministry",
@@ -3573,6 +3604,13 @@
   "wikidata": "Q7043166",
   "source": "https://en.wikipedia.org/wiki/No._220_Squadron_RAF"
  },
+ "unit-no-224-squadron-raf": {
+  "name": "No. 224 Squadron RAF",
+  "kind": "Coastal Command squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._224_Squadron_RAF"
+ },
  "unit-no-233-squadron-raf": {
   "name": "No. 233 Squadron RAF",
   "kind": "RAF maritime patrol squadron",
@@ -3709,6 +3747,13 @@
   "wikidata": "Q12064279",
   "source": "https://en.wikipedia.org/wiki/No._51_Squadron_RAF"
  },
+ "unit-no-53-squadron-raf": {
+  "name": "No. 53 Squadron RAF",
+  "kind": "RAF Coastal Command squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._53_Squadron_RAF"
+ },
  "unit-no-58-squadron-raf": {
   "name": "No. 58 Squadron RAF",
   "kind": "RAF Coastal Command squadron",
@@ -3760,6 +3805,13 @@
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/No._9_Squadron_RAF",
   "wikidata": "Q7043892"
+ },
+ "unit-north-nova-scotia-highlanders": {
+  "name": "The North Nova Scotia Highlanders",
+  "kind": "infantry regiment",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/North_Nova_Scotia_Highlanders"
  },
  "unit-norwegian-independent-company-1": {
   "name": "Norwegian Independent Company 1",
@@ -4907,6 +4959,17 @@
   "nation": "US",
   "wikidata": "Q24883094",
   "source": "https://en.wikipedia.org/wiki/VPB-109"
+ },
+ "unit-vpb-44": {
+  "name": "VP-44 (Patrol Squadron 44)",
+  "kind": "U.S. Navy patrol squadron, PBY Catalinas at Midway",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/VPB-44",
+  "aka": [
+   "VP-44",
+   "Patrol Squadron 44"
+  ]
  },
  "unit-wang-jingwei-regime": {
   "name": "Wang Jingwei regime",

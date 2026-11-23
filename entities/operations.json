@@ -161,6 +161,13 @@
   "wikidata": "Q5030724",
   "source": "https://en.wikipedia.org/wiki/1942_Canadian_conscription_plebiscite"
  },
+ "op-1942-herefordshire-tre-halifax-crash": {
+  "name": "1942 Herefordshire TRE Halifax crash",
+  "kind": "air crash during radar trials",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1942_Herefordshire_TRE_Halifax_crash"
+ },
  "op-1942-japanese-general-election": {
   "name": "1942 Japanese general election",
   "kind": "wartime general election",
@@ -282,6 +289,13 @@
   "wikidata": "Q4565560",
   "source": "https://en.wikipedia.org/wiki/1945_Mikawa_earthquake"
  },
+ "op-1945-united-kingdom-general-election": {
+  "name": "1945 United Kingdom general election",
+  "kind": "general election",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1945_United_Kingdom_general_election"
+ },
  "op-1946-cabinet-mission-to-india": {
   "name": "1946 Cabinet Mission to India",
   "kind": "British ministerial mission on Indian independence",
@@ -291,6 +305,13 @@
   "aka": [
    "Cabinet Mission"
   ]
+ },
+ "op-1946-italian-institutional-referendum": {
+  "name": "1946 Italian institutional referendum",
+  "kind": "referendum on monarchy or republic, 2 and 3 June 1946",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1946_Italian_institutional_referendum"
  },
  "op-1946-japanese-general-election": {
   "name": "1946 Japanese general election",
@@ -506,6 +527,20 @@
    "Operation Halfback"
   ]
  },
+ "op-action-of-6-june-1942": {
+  "name": "Action of 6 June 1942",
+  "kind": "single ship action, Stier against Stanvac Calcutta",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Action_of_6_June_1942"
+ },
+ "op-action-of-8-june-1945": {
+  "name": "Action of 8 June 1945",
+  "kind": "naval action, sinking of Ashigara",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Action_of_8_June_1945"
+ },
  "op-action-off-bougainville": {
   "name": "Action off Bougainville",
   "kind": "carrier air battle, 20 Feb 1942",
@@ -563,6 +598,13 @@
   "nation": "Germany",
   "wikidata": "Q154494",
   "source": "https://en.wikipedia.org/wiki/Aktion_T4"
+ },
+ "op-aleutian-islands-campaign": {
+  "name": "Aleutian Islands campaign",
+  "kind": "1942 to 1943 campaign in the Aleutians",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Aleutian_Islands_campaign"
  },
  "op-altmark-incident": {
   "name": "Altmark incident",
@@ -687,6 +729,13 @@
   "aka": [
    "Fosse Ardeatine"
   ]
+ },
+ "op-ardenne-abbey-massacre": {
+  "name": "Ardenne Abbey massacre",
+  "kind": "massacre of prisoners of war",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ardenne_Abbey_massacre"
  },
  "op-area-bombing-directive": {
   "name": "Area bombing directive",
@@ -1278,6 +1327,13 @@
   "nation": "France",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Battle_of_Dunkirk"
+ },
+ "op-battle-of-dutch-harbor": {
+  "name": "Battle of Dutch Harbor",
+  "kind": "Japanese carrier raids on Dutch Harbor, 3 to 4 June 1942",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Dutch_Harbor"
  },
  "op-battle-of-empress-augusta-bay": {
   "name": "Battle of Empress Augusta Bay",
@@ -2186,6 +2242,13 @@
   "aka": [
    "Operation Pugilist"
   ]
+ },
+ "op-battle-of-the-messina-convoy": {
+  "name": "Battle of the Messina Convoy",
+  "kind": "night destroyer action off Cape Spartivento, 2 June 1943",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_the_Messina_Convoy"
  },
  "op-battle-of-the-metaxas-line": {
   "name": "Battle of the Metaxas Line",
@@ -3878,6 +3941,13 @@
   "wikidata": "Q748780",
   "source": "https://en.wikipedia.org/wiki/First_Indochina_War"
  },
+ "op-first-konoe-cabinet": {
+  "name": "First Konoe cabinet",
+  "kind": "Japanese cabinet 1937 to 1939",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/First_Konoe_cabinet"
+ },
  "op-first-mass-transport-of-jews-to-auschwitz-concentration-camp": {
   "name": "First mass transport of Jews to Auschwitz concentration camp",
   "kind": "Holocaust deportation from Poprad, Slovakia",
@@ -3918,6 +3988,13 @@
   "aka": [
    "Four Freedoms speech"
   ]
+ },
+ "op-four-power-pact": {
+  "name": "Four-Power Pact",
+  "kind": "treaty",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Four-Power_Pact"
  },
  "op-fourth-inauguration-of-franklin-d-roosevelt": {
   "name": "Fourth inauguration of Franklin D. Roosevelt",
@@ -4231,6 +4308,13 @@
   "nation": "Germany",
   "wikidata": "Q3182723",
   "source": "https://en.wikipedia.org/wiki/Hindenburg_disaster"
+ },
+ "op-hitler-and-mannerheim-recording": {
+  "name": "Hitler and Mannerheim recording",
+  "kind": "secret recording of a private conversation, 1942",
+  "nation": "Finland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hitler_and_Mannerheim_recording"
  },
  "op-ho-sainteny-agreement": {
   "name": "Ho Sainteny Agreement",
@@ -4583,12 +4667,26 @@
    "Manchurian Incident"
   ]
  },
+ "op-japanese-occupation-of-attu": {
+  "name": "Japanese occupation of Attu",
+  "kind": "occupation",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_occupation_of_Attu"
+ },
  "op-japanese-occupation-of-british-borneo": {
   "name": "Japanese occupation of British Borneo",
   "kind": "occupation",
   "nation": "Japan",
   "wikidata": "Q15243087",
   "source": "https://en.wikipedia.org/wiki/Japanese_occupation_of_British_Borneo"
+ },
+ "op-japanese-occupation-of-kiska": {
+  "name": "Japanese occupation of Kiska",
+  "kind": "occupation, Aleutian Islands campaign",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_occupation_of_Kiska"
  },
  "op-japanese-occupation-of-the-andaman-and-nicobar-islands": {
   "name": "Japanese occupation of the Andaman and Nicobar Islands",
@@ -4639,6 +4737,16 @@
   "source": "https://en.wikipedia.org/wiki/Kamenets%E2%80%93Podolsky_pocket",
   "aka": [
    "Hube's Pocket"
+  ]
+ },
+ "op-kandanos-massacre": {
+  "name": "Kandanos massacre",
+  "kind": "German reprisal destruction of Kandanos, Crete, 3 June 1941",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kandanos_massacre",
+  "aka": [
+   "Razing of Kandanos"
   ]
  },
  "op-katyn-massacre": {
@@ -4968,6 +5076,16 @@
   "wikidata": "Q704536",
   "source": "https://en.wikipedia.org/wiki/London_Naval_Treaty"
  },
+ "op-london-victory-celebrations-of-1946": {
+  "name": "London Victory Celebrations of 1946",
+  "kind": "victory parade and public holiday",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/London_Victory_Celebrations_of_1946",
+  "aka": [
+   "Victory Parade 1946"
+  ]
+ },
  "op-lorraine-campaign": {
   "name": "Lorraine campaign",
   "kind": "campaign",
@@ -5151,6 +5269,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Martial_law_in_Taiwan"
  },
+ "op-massacre-of-kondomari": {
+  "name": "Massacre of Kondomari",
+  "kind": "reprisal shooting of Cretan civilians, 2 June 1941",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Massacre_of_Kondomari"
+ },
  "op-may-15-incident": {
   "name": "May 15 incident",
   "kind": "attempted coup in Japan, 1932",
@@ -5215,6 +5340,13 @@
   "wikidata": "Q162663",
   "source": "https://en.wikipedia.org/wiki/Mit_brennender_Sorge"
  },
+ "op-morgan-v-virginia": {
+  "name": "Morgan v. Virginia",
+  "kind": "1946 U.S. Supreme Court ruling on segregation in interstate buses",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Morgan_v._Virginia"
+ },
  "op-morotai-mutiny": {
   "name": "Morotai Mutiny",
   "kind": "RAAF officers' mass resignation protest",
@@ -5277,6 +5409,13 @@
   "nation": "China",
   "wikidata": "Q3072131",
   "source": "https://en.wikipedia.org/wiki/Nanjing_War_Crimes_Tribunal"
+ },
+ "op-national-school-lunch-act": {
+  "name": "National School Lunch Act",
+  "kind": "1946 US law creating the school lunch program",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/National_School_Lunch_Act"
  },
  "op-national-security-act-of-1947": {
   "name": "National Security Act of 1947",
@@ -5795,6 +5934,23 @@
    "Cockleshell Heroes"
   ]
  },
+ "op-operation-frantic": {
+  "name": "Operation Frantic",
+  "kind": "U.S. shuttle bombing missions using Soviet bases, 1944",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Frantic",
+  "aka": [
+   "Frantic Joe"
+  ]
+ },
+ "op-operation-gambit": {
+  "name": "Operation Gambit",
+  "kind": "X-craft beach marking for Sword and Juno, June 1944",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Gambit"
+ },
  "op-operation-gisela": {
   "name": "Operation Gisela",
   "kind": "Luftwaffe night intruder operation",
@@ -5882,6 +6038,13 @@
    "Amiens raid",
    "Ramrod 564"
   ]
+ },
+ "op-operation-juno": {
+  "name": "Operation Juno",
+  "kind": "German naval sortie to Norway, June 1940",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Juno"
  },
  "op-operation-k": {
   "name": "Operation K",
@@ -6050,6 +6213,13 @@
   "nation": "Germany",
   "wikidata": "Q1065729",
   "source": "https://en.wikipedia.org/wiki/Operation_Pastorius"
+ },
+ "op-operation-paula": {
+  "name": "Operation Paula",
+  "kind": "Luftwaffe air offensive against the French Air Force around Paris, 3 June 1940",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Paula"
  },
  "op-operation-pike": {
   "name": "Operation Pike",
@@ -6412,6 +6582,13 @@
   "aka": [
    "Parlamentarischer Rat"
   ]
+ },
+ "op-partition-of-india": {
+  "name": "Partition of India",
+  "kind": "1947 division of British India",
+  "nation": "India",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Partition_of_India"
  },
  "op-pay-as-you-earn-tax": {
   "name": "Pay As You Earn",
@@ -6989,6 +7166,13 @@
   "wikidata": "Q7492591",
   "source": "https://en.wikipedia.org/wiki/Sheffield_Blitz"
  },
+ "op-shelling-of-newcastle": {
+  "name": "Shelling of Newcastle",
+  "kind": "submarine bombardment",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Shelling_of_Newcastle"
+ },
  "op-shelling-of-port-gregory": {
   "name": "Shelling of Port Gregory",
   "kind": "submarine bombardment",
@@ -7093,6 +7277,17 @@
   "wikidata": "Q19840798",
   "source": "https://en.wikipedia.org/wiki/Siege_of_Myitkyina"
  },
+ "op-siege-of-sevastopol-1941-1942": {
+  "name": "Siege of Sevastopol (1941 to 1942)",
+  "kind": "siege and assault of the Soviet Black Sea fortress",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Siege_of_Sevastopol_(1941%E2%80%931942)",
+  "aka": [
+   "Operation Storfang",
+   "Sturgeon Catch"
+  ]
+ },
  "op-siege-of-tobruk": {
   "name": "Siege of Tobruk",
   "kind": "siege",
@@ -7137,6 +7332,13 @@
   "nation": "US",
   "wikidata": "Q7545227",
   "source": "https://en.wikipedia.org/wiki/Smith_Mine_disaster"
+ },
+ "op-soham-rail-disaster": {
+  "name": "Soham rail disaster",
+  "kind": "ammunition train explosion at Soham, Cambridgeshire",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Soham_rail_disaster"
  },
  "op-sole-survivor-policy": {
   "name": "Sole Survivor Policy",
@@ -7359,6 +7561,16 @@
   "source": "https://en.wikipedia.org/wiki/Swedish_extradition_of_Baltic_soldiers",
   "aka": [
    "Baltutlämningen"
+  ]
+ },
+ "op-syria-lebanon-campaign": {
+  "name": "Syria-Lebanon campaign",
+  "kind": "campaign",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Syria%E2%80%93Lebanon_campaign",
+  "aka": [
+   "Operation Exporter"
   ]
  },
  "op-take-ichi-convoy": {
@@ -7787,6 +7999,13 @@
    "UDHR"
   ]
  },
+ "op-ural-bomber": {
+  "name": "Ural bomber",
+  "kind": "Luftwaffe long range strategic bomber program",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ural_bomber"
+ },
  "op-us-coffee-rationing": {
   "name": "U.S. coffee rationing",
   "kind": "home front program",
@@ -7922,6 +8141,13 @@
   "nation": "Germany",
   "wikidata": "Q821049",
   "source": "https://en.wikipedia.org/wiki/Wawer_massacre"
+ },
+ "op-we-shall-fight-on-the-beaches": {
+  "name": "We shall fight on the beaches",
+  "kind": "Churchill speech to the Commons, 4 June 1940",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/We_shall_fight_on_the_beaches"
  },
  "op-we-will-never-die": {
   "name": "We Will Never Die",
@@ -8081,5 +8307,12 @@
   "aka": [
    "Zhitomir-Berdichev offensive"
   ]
+ },
+ "op-zoot-suit-riots": {
+  "name": "Zoot Suit Riots",
+  "kind": "June 1943 attacks by servicemen on Mexican American youths in Los Angeles",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Zoot_Suit_Riots"
  }
 }

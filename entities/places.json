@@ -444,6 +444,15 @@
   "lat": -6.9219,
   "lon": 107.6069
  },
+ "place-bangka-strait": {
+  "name": "Bangka Strait",
+  "kind": "strait off Sumatra",
+  "nation": "Indonesia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bangka_Strait",
+  "lat": null,
+  "lon": null
+ },
  "place-bank-and-monument-stations": {
   "name": "Bank station",
   "kind": "London Underground station, City of London",
@@ -603,6 +612,15 @@
   "source": "https://en.wikipedia.org/wiki/Belgrade",
   "lat": 44.8178,
   "lon": 20.4569
+ },
+ "place-bellevue-hill-new-south-wales": {
+  "name": "Bellevue Hill",
+  "kind": "Sydney suburb",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bellevue_Hill,_New_South_Wales",
+  "lat": null,
+  "lon": null
  },
  "place-bellows-air-force-station": {
   "name": "Bellows Field",
@@ -2084,6 +2102,15 @@
    "Netherlands Indies"
   ]
  },
+ "place-dutch-harbor": {
+  "name": "Dutch Harbor",
+  "kind": "harbor and Navy base on Amaknak Island, Aleutians",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Dutch_Harbor",
+  "lat": null,
+  "lon": null
+ },
  "place-eaglesham": {
   "name": "Eaglesham",
   "kind": "village in Renfrewshire, Scotland",
@@ -2445,6 +2472,15 @@
    "Fort Rupel"
   ]
  },
+ "place-fort-scratchley": {
+  "name": "Fort Scratchley",
+  "kind": "coastal fort, Newcastle",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fort_Scratchley",
+  "lat": null,
+  "lon": null
+ },
  "place-fort-stanton": {
   "name": "Fort Stanton",
   "kind": "fort and internment camp, New Mexico",
@@ -2643,6 +2679,15 @@
   "source": "https://en.wikipedia.org/wiki/Glenn_Research_Center",
   "lat": 41.4128,
   "lon": -81.8624
+ },
+ "place-gold-beach": {
+  "name": "Gold Beach",
+  "kind": "D Day landing beach",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Gold_Beach",
+  "lat": null,
+  "lon": null
  },
  "place-golm-war-cemetery": {
   "name": "Golm War Cemetery",
@@ -3287,6 +3332,15 @@
   "lat": 37.25,
   "lon": -6.95
  },
+ "place-huis-doorn": {
+  "name": "Huis Doorn",
+  "kind": "manor house, Wilhelm II's exile home",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Huis_Doorn",
+  "lat": null,
+  "lon": null
+ },
  "place-hukawng-valley": {
   "name": "Hukawng Valley",
   "kind": "valley in northern Burma",
@@ -3666,6 +3720,15 @@
   "lat": 38.0308,
   "lon": 22.1086
  },
+ "place-kandanos": {
+  "name": "Kandanos",
+  "kind": "village in western Crete",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kandanos",
+  "lat": null,
+  "lon": null
+ },
  "place-kaneohe-hawaii": {
   "name": "Kaneohe",
   "kind": "town",
@@ -3854,6 +3917,15 @@
   "lat": 53.7444,
   "lon": -0.3325
  },
+ "place-kiska": {
+  "name": "Kiska",
+  "kind": "island in the Aleutians",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kiska",
+  "lat": null,
+  "lon": null
+ },
  "place-klaipeda": {
   "name": "Klaipeda",
   "kind": "port city",
@@ -3945,6 +4017,15 @@
   "source": "https://en.wikipedia.org/wiki/Kolombangara",
   "lat": -7.9667,
   "lon": 157.0667
+ },
+ "place-kondomari": {
+  "name": "Kondomari",
+  "kind": "village in Chania, Crete",
+  "nation": "Greece",
+  "wikidata": null,
+  "lat": null,
+  "lon": null,
+  "source": "https://en.wikipedia.org/wiki/Kondomari"
  },
  "place-konigstein-fortress": {
   "name": "Konigstein Fortress",
@@ -4228,6 +4309,15 @@
   "source": "https://en.wikipedia.org/wiki/Lakehurst_Maxfield_Field",
   "lat": 40.0333,
   "lon": -74.3536
+ },
+ "place-landsberg-prison": {
+  "name": "Landsberg Prison",
+  "kind": "prison in Landsberg am Lech, Bavaria",
+  "nation": "Germany",
+  "wikidata": null,
+  "lat": null,
+  "lon": null,
+  "source": "https://en.wikipedia.org/wiki/Landsberg_Prison"
  },
  "place-langerwehe": {
   "name": "Langerwehe",
@@ -6031,6 +6121,15 @@
   "lat": 51.2278,
   "lon": 27.6481
  },
+ "place-omaha-beach": {
+  "name": "Omaha Beach",
+  "kind": "D Day landing beach",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Omaha_Beach",
+  "lat": null,
+  "lon": null
+ },
  "place-oppenheim": {
   "name": "Oppenheim",
   "kind": "town on the Rhine",
@@ -6465,6 +6564,15 @@
   "aka": [
    "Pilsen"
   ]
+ },
+ "place-pointe-du-hoc": {
+  "name": "Pointe du Hoc",
+  "kind": "clifftop promontory and German battery, Normandy",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Pointe_du_Hoc",
+  "lat": null,
+  "lon": null
  },
  "place-polo-grounds": {
   "name": "Polo Grounds",
@@ -7189,6 +7297,15 @@
   "lat": 37.9773,
   "lon": 23.5355
  },
+ "place-salford-royal-hospital": {
+  "name": "Salford Royal Hospital",
+  "kind": "hospital in Salford, England; old building on Chapel Street",
+  "nation": "Britain",
+  "wikidata": null,
+  "lat": null,
+  "lon": null,
+  "source": "https://en.wikipedia.org/wiki/Salford_Royal_Hospital"
+ },
  "place-salween-river": {
   "name": "Salween River",
   "kind": "river",
@@ -7317,6 +7434,15 @@
   "source": "https://en.wikipedia.org/wiki/Sasebo",
   "lat": 33.18,
   "lon": 129.715
+ },
+ "place-saumur": {
+  "name": "Saumur",
+  "kind": "town on the Loire",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Saumur",
+  "lat": null,
+  "lon": null
  },
  "place-savo-island": {
   "name": "Savo Island",
@@ -7523,6 +7649,15 @@
   "nation": "Japan",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Shuri_Castle",
+  "lat": null,
+  "lon": null
+ },
+ "place-sibutu-passage": {
+  "name": "Sibutu Passage",
+  "kind": "strait between Tawi-Tawi and Borneo",
+  "nation": "Philippines",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sibutu_Passage",
   "lat": null,
   "lon": null
  },
@@ -8560,6 +8695,15 @@
   "source": "https://en.wikipedia.org/wiki/University_of_Tehran",
   "lat": 35.7041,
   "lon": 51.3951
+ },
+ "place-utah-beach": {
+  "name": "Utah Beach",
+  "kind": "invasion beach, Normandy",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Utah_Beach",
+  "lat": null,
+  "lon": null
  },
  "place-vagsoy-island": {
   "name": "Vågsøy (island)",
