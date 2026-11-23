@@ -1257,6 +1257,16 @@
   "source": "https://en.wikipedia.org/wiki/Battle_of_Britain",
   "wikidata": "Q154720"
  },
+ "op-battle-of-brody-1941": {
+  "name": "Battle of Brody (1941)",
+  "kind": "tank battle",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Brody_(1941)",
+  "aka": [
+   "Battle of Dubno"
+  ]
+ },
  "op-battle-of-bukit-timah": {
   "name": "Battle of Bukit Timah",
   "kind": "battle on Singapore island, February 1942",
@@ -1682,6 +1692,13 @@
   "nation": "US",
   "wikidata": "Q1789376",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Kwajalein"
+ },
+ "op-battle-of-lababia-ridge": {
+  "name": "Battle of Lababia Ridge",
+  "kind": "battle",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Lababia_Ridge"
  },
  "op-battle-of-labuan": {
   "name": "Battle of Labuan",
@@ -5405,6 +5422,13 @@
   "nation": "Romania",
   "wikidata": "Q18545517",
   "source": "https://en.wikipedia.org/wiki/Legionnaires%27_rebellion_and_Bucharest_pogrom"
+ },
+ "op-leipzig-l-iv-experiment-accident": {
+  "name": "Leipzig L-IV experiment accident",
+  "kind": "reactor accident",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Leipzig_L-IV_experiment_accident"
  },
  "op-lend-lease": {
   "name": "Lend Lease",

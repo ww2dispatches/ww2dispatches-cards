@@ -539,6 +539,13 @@
   "wikidata": "Q4597054",
   "source": "https://en.wikipedia.org/wiki/2/6th_Armoured_Regiment_(Australia)"
  },
+ "unit-2-6th-battalion": {
+  "name": "2/6th Battalion",
+  "kind": "infantry battalion",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/2/6th_Battalion"
+ },
  "unit-2-9th-battalion-australia": {
   "name": "2/9th Battalion (Australia)",
   "kind": "Australian infantry battalion",
@@ -1348,6 +1355,16 @@
   "nation": "Britain",
   "wikidata": "Q2713768",
   "source": "https://en.wikipedia.org/wiki/50th_(Northumbrian)_Infantry_Division"
+ },
+ "unit-511th-infantry-regiment": {
+  "name": "511th Infantry Regiment",
+  "kind": "parachute infantry regiment",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/511th_Infantry_Regiment",
+  "aka": [
+   "511th Parachute Infantry"
+  ]
  },
  "unit-51st-highland-division": {
   "name": "51st (Highland) Division",
@@ -2604,6 +2621,13 @@
   "nation": "US",
   "wikidata": "Q2817902",
   "source": "https://en.wikipedia.org/wiki/Fifth_Air_Force"
+ },
+ "unit-fiji-infantry-regiment": {
+  "name": "Fiji Infantry Regiment",
+  "kind": "infantry regiment",
+  "nation": "Fiji",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fiji_Infantry_Regiment"
  },
  "unit-finnish-democratic-republic": {
   "name": "Finnish Democratic Republic",
@@ -4701,6 +4725,13 @@
    "Fleet Radio Unit Pacific"
   ]
  },
+ "unit-stavka": {
+  "name": "Stavka",
+  "kind": "Soviet high command headquarters",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Stavka"
+ },
  "unit-strategic-air-command": {
   "name": "Strategic Air Command",
   "kind": "U.S. Air Force major command",
@@ -5187,6 +5218,16 @@
   "nation": "Germany",
   "wikidata": "Q157912",
   "source": "https://en.wikipedia.org/wiki/Volkssturm"
+ },
+ "unit-volunteer-fighting-corps": {
+  "name": "Volunteer Fighting Corps",
+  "kind": "civilian militia",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Volunteer_Fighting_Corps",
+  "aka": [
+   "Kokumin Giyu Sentotai"
+  ]
  },
  "unit-voronezh-front": {
   "name": "Voronezh Front",

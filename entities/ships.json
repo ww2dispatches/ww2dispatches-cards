@@ -3318,6 +3318,13 @@
   "wikidata": "Q5634232",
   "source": "https://en.wikipedia.org/wiki/HMS_Saumarez_(G12)"
  },
+ "ship-hms-scylla-98": {
+  "name": "HMS Scylla (98)",
+  "kind": "anti-aircraft cruiser",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Scylla_(98)"
+ },
  "ship-hms-seal-n37": {
   "name": "HMS Seal (N37)",
   "kind": "Royal Navy minelaying submarine, captured 1940",
@@ -5795,6 +5802,13 @@
   "nation": "Japan",
   "wikidata": "Q26883463",
   "source": "https://en.wikipedia.org/wiki/SS_Yoshida_Maru_No._1"
+ },
+ "ship-st-roch-ship": {
+  "name": "St. Roch",
+  "kind": "RCMP auxiliary schooner",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/St._Roch_(ship)"
  },
  "ship-tango-maru": {
   "name": "Tango Maru",

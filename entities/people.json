@@ -522,6 +522,13 @@
   "wikidata": "Q5681",
   "source": "https://en.wikipedia.org/wiki/Andrea_Mantegna"
  },
+ "person-andree-borrel": {
+  "name": "Andrée Borrel",
+  "kind": "SOE agent",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Andr%C3%A9e_Borrel"
+ },
  "person-andrew-mcnaughton": {
   "name": "Andrew McNaughton",
   "kind": "army general",
@@ -722,6 +729,13 @@
   "nation": "US",
   "wikidata": "Q4786671",
   "source": "https://en.wikipedia.org/wiki/Archie_E._Mitchell"
+ },
+ "person-armin-faber": {
+  "name": "Armin Faber",
+  "kind": "fighter pilot",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Armin_Faber"
  },
  "person-arne-sunde": {
   "name": "Arne Sunde",
@@ -3123,6 +3137,16 @@
   "wikidata": "Q706147",
   "source": "https://en.wikipedia.org/wiki/Francis_Biddle"
  },
+ "person-francis-suttill": {
+  "name": "Francis Suttill",
+  "kind": "SOE network leader",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Francis_Suttill",
+  "aka": [
+   "Prosper"
+  ]
+ },
  "person-francisco-franco": {
   "name": "Francisco Franco",
   "kind": "dictator of Spain",
@@ -4005,6 +4029,13 @@
   "wikidata": "Q318707",
   "source": "https://en.wikipedia.org/wiki/Gianfranco_Gazzana-Priaroggia"
  },
+ "person-gilbert-norman": {
+  "name": "Gilbert Norman",
+  "kind": "SOE wireless operator",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Gilbert_Norman"
+ },
  "person-gino-pavesi": {
   "name": "Gino Pavesi",
   "kind": "Italian admiral, commander of Pantelleria",
@@ -4303,6 +4334,13 @@
   "nation": "Britain",
   "wikidata": "Q16744911",
   "source": "https://en.wikipedia.org/wiki/Hanns_Alexander"
+ },
+ "person-hans-biebow": {
+  "name": "Hans Biebow",
+  "kind": "head of the Nazi ghetto administration in Łódź",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hans_Biebow"
  },
  "person-hans-diedrich-von-tiesenhausen": {
   "name": "Hans-Diedrich von Tiesenhausen",
@@ -4863,6 +4901,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Henry_L._Stimson",
   "wikidata": "Q314826"
+ },
+ "person-henry-larsen-explorer": {
+  "name": "Henry Larsen",
+  "kind": "RCMP officer and Arctic navigator",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Henry_Larsen_(explorer)"
  },
  "person-henry-morgenthau-jr": {
   "name": "Henry Morgenthau Jr.",
@@ -8274,6 +8319,13 @@
   "wikidata": "Q229828",
   "source": "https://en.wikipedia.org/wiki/Mikhail_Kalinin"
  },
+ "person-mikhail-kirponos": {
+  "name": "Mikhail Kirponos",
+  "kind": "army general",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mikhail_Kirponos"
+ },
  "person-mikhail-tukhachevsky": {
   "name": "Mikhail Tukhachevsky",
   "kind": "Marshal of the Soviet Union, purged 1937",
@@ -9734,6 +9786,13 @@
   "source": "https://en.wikipedia.org/wiki/Robert_Daniel_Murphy",
   "wikidata": "Q2000858"
  },
+ "person-robert-dopel": {
+  "name": "Robert Döpel",
+  "kind": "nuclear physicist",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Robert_D%C3%B6pel"
+ },
  "person-robert-e-dixon": {
   "name": "Robert E. Dixon",
   "kind": "US Navy commander of Scouting Squadron Two at the Coral Sea",
@@ -10304,6 +10363,13 @@
   "nation": "Italy",
   "wikidata": "Q60875432",
   "source": "https://en.wikipedia.org/wiki/Sebastiano_Gallina"
+ },
+ "person-sefanaia-sukanaivalu": {
+  "name": "Sefanaia Sukanaivalu",
+  "kind": "soldier, Victoria Cross recipient",
+  "nation": "Fiji",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sefanaia_Sukanaivalu"
  },
  "person-segismundo-casado": {
   "name": "Segismundo Casado",
@@ -11233,6 +11299,13 @@
   "wikidata": "Q157594",
   "source": "https://en.wikipedia.org/wiki/Vasily_Chuikov"
  },
+ "person-vasily-sokolovsky": {
+  "name": "Vasily Sokolovsky",
+  "kind": "army marshal, Soviet military governor in Germany",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Vasily_Sokolovsky"
+ },
  "person-veit-harlan": {
   "name": "Veit Harlan",
   "kind": "German film director",
@@ -11617,6 +11690,13 @@
   "nation": "Germany",
   "wikidata": "Q75516",
   "source": "https://en.wikipedia.org/wiki/Werner_Hartenstein"
+ },
+ "person-werner-heisenberg": {
+  "name": "Werner Heisenberg",
+  "kind": "physicist",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Werner_Heisenberg"
  },
  "person-werner-henke": {
   "name": "Werner Henke",
