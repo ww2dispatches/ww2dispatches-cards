@@ -1052,6 +1052,15 @@
   "lat": 47.0071,
   "lon": 11.5065
  },
+ "place-brest-fortress": {
+  "name": "Brest Fortress",
+  "kind": "fortress",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Brest_Fortress",
+  "lat": null,
+  "lon": null
+ },
  "place-brest-france": {
   "name": "Brest",
   "kind": "port city",

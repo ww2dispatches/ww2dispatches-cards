@@ -3723,6 +3723,16 @@
   "wikidata": "Q5251241",
   "source": "https://en.wikipedia.org/wiki/Defence_Regulation_18B"
  },
+ "op-defense-of-brest-fortress": {
+  "name": "Defense of Brest Fortress",
+  "kind": "siege",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Defense_of_Brest_Fortress",
+  "aka": [
+   "Siege of Brest (1941)"
+  ]
+ },
  "op-dekemvriana": {
   "name": "Dekemvriana",
   "kind": "clashes in Athens, December 1944 to January 1945",
@@ -4288,6 +4298,16 @@
   "nation": "US",
   "wikidata": "Q5501005",
   "source": "https://en.wikipedia.org/wiki/Freeman_Field_mutiny"
+ },
+ "op-g-i-bill": {
+  "name": "G.I. Bill",
+  "kind": "law, veterans' benefits program",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/G.I._Bill",
+  "aka": [
+   "Servicemen's Readjustment Act of 1944"
+  ]
  },
  "op-gardelegen-massacre": {
   "name": "Gardelegen massacre",
@@ -4994,6 +5014,13 @@
   "nation": "US",
   "wikidata": "Q6211006",
   "source": "https://en.wikipedia.org/wiki/Joe_Louis_vs._Max_Schmeling"
+ },
+ "op-joe-louis-vs-max-schmeling-ii": {
+  "name": "Joe Louis vs. Max Schmeling II",
+  "kind": "boxing match",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Joe_Louis_vs._Max_Schmeling_II"
  },
  "op-joint-declaration-by-members-of-the-united-nations": {
   "name": "Joint Declaration by Members of the United Nations",
