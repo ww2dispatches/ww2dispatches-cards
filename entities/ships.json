@@ -670,6 +670,13 @@
   "wikidata": "Q475880",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-157_(1941)"
  },
+ "ship-german-submarine-u-158-1941": {
+  "name": "U-158",
+  "kind": "Type IXC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-158_(1941)"
+ },
  "ship-german-submarine-u-161-1941": {
   "name": "U-161",
   "kind": "U-boat",
@@ -6762,6 +6769,13 @@
   "aka": [
    "HMS Stanley"
   ]
+ },
+ "ship-uss-mccawley-apa-4": {
+  "name": "USS McCawley (APA-4)",
+  "kind": "attack transport, Turner's flagship",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_McCawley_(APA-4)"
  },
  "ship-uss-menges": {
   "name": "USS Menges (DE-320)",

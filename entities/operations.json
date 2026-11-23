@@ -472,6 +472,13 @@
   "wikidata": "Q3002755",
   "source": "https://en.wikipedia.org/wiki/6_February_1934_crisis"
  },
+ "op-999-emergency-telephone-number": {
+  "name": "999 (emergency telephone number)",
+  "kind": "emergency telephone service, from 1937",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/999_(emergency_telephone_number)"
+ },
  "op-aarhus-air-raid": {
   "name": "Aarhus air raid",
   "kind": "air raid",
@@ -4649,6 +4656,13 @@
   "wikidata": "Q5614677",
   "source": "https://en.wikipedia.org/wiki/Gudovac_massacre"
  },
+ "op-haile-selassie-s-speech-to-the-league-of-nations-1936": {
+  "name": "Haile Selassie's speech to the League of Nations (1936)",
+  "kind": "speech to the League assembly",
+  "nation": "Ethiopia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Haile_Selassie%27s_speech_to_the_League_of_Nations_(1936)"
+ },
  "op-hainan-island-operation": {
   "name": "Hainan Island Operation",
   "kind": "Japanese landing and occupation of Hainan, 1939",
@@ -5350,6 +5364,13 @@
    "Operation Longview"
   ]
  },
+ "op-landing-at-nassau-bay": {
+  "name": "Landing at Nassau Bay",
+  "kind": "amphibious landing, New Guinea, 1943",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Landing_at_Nassau_Bay"
+ },
  "op-landing-at-saidor": {
   "name": "Landing at Saidor",
   "kind": "amphibious landing",
@@ -5554,6 +5575,13 @@
   "nation": "worldwide",
   "source": "https://en.wikipedia.org/wiki/Lorraine_campaign",
   "wikidata": "Q2935372"
+ },
+ "op-lviv-pogroms-1941": {
+  "name": "Lviv pogroms (1941)",
+  "kind": "pogroms and massacres of Jews, 1941",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Lviv_pogroms_(1941)"
  },
  "op-lytton-report": {
   "name": "Lytton Report",
@@ -6016,6 +6044,13 @@
    "Wannan Incident"
   ]
  },
+ "op-new-georgia-campaign": {
+  "name": "New Georgia campaign",
+  "kind": "Solomon Islands campaign, 1943",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/New_Georgia_campaign"
+ },
  "op-ni-ihau-incident": {
   "name": "Niʻihau incident",
   "kind": "crash landing and standoff, 7 to 13 December 1941",
@@ -6024,6 +6059,16 @@
   "source": "https://en.wikipedia.org/wiki/Ni%CA%BBihau_incident",
   "aka": [
    "Niihau incident"
+  ]
+ },
+ "op-night-of-the-long-knives": {
+  "name": "Night of the Long Knives",
+  "kind": "Nazi purge of the SA leadership, 1934",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Night_of_the_Long_Knives",
+  "aka": [
+   "Rohm Purge"
   ]
  },
  "op-normandy-landings": {

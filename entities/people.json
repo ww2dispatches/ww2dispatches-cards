@@ -2876,6 +2876,16 @@
   "wikidata": "Q170349",
   "source": "https://en.wikipedia.org/wiki/Ernst_Lindemann"
  },
+ "person-ernst-rohm": {
+  "name": "Ernst Rohm",
+  "kind": "SA chief of staff",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ernst_R%C3%B6hm",
+  "aka": [
+   "Ernst Röhm"
+  ]
+ },
  "person-ernst-udet": {
   "name": "Ernst Udet",
   "kind": "Luftwaffe general and WWI ace",
@@ -2914,6 +2924,13 @@
   "nation": "Germany",
   "source": "https://en.wikipedia.org/wiki/Erwin_Rommel",
   "wikidata": "Q14060"
+ },
+ "person-erwin-rostin": {
+  "name": "Erwin Rostin",
+  "kind": "U-boat commander",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Erwin_Rostin"
  },
  "person-euan-wallace": {
   "name": "Euan Wallace",
@@ -8239,6 +8256,13 @@
   "wikidata": "Q170357",
   "source": "https://en.wikipedia.org/wiki/Maxime_Weygand"
  },
+ "person-maximilian-von-spee": {
+  "name": "Maximilian von Spee",
+  "kind": "German admiral, killed at the Falklands 1914",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Maximilian_von_Spee"
+ },
  "person-maynard-harrison-smith": {
   "name": "Maynard Harrison Smith",
   "kind": "B-17 gunner, Medal of Honor recipient",
@@ -9757,6 +9781,16 @@
   "nation": "Britain",
   "wikidata": "Q7329762",
   "source": "https://en.wikipedia.org/wiki/Richard_Wakeford"
+ },
+ "person-richmond-k-turner": {
+  "name": "Richmond K. Turner",
+  "kind": "U.S. Navy admiral, amphibious commander",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Richmond_K._Turner",
+  "aka": [
+   "Richmond Kelly Turner"
+  ]
  },
  "person-robert-a-owens": {
   "name": "Robert A. Owens",
