@@ -1015,6 +1015,13 @@
   "wikidata": "Q1833561",
   "source": "https://en.wikipedia.org/wiki/Attack_on_the_twentieth_convoy"
  },
+ "op-attack-on-yokosuka": {
+  "name": "Attack on Yokosuka",
+  "kind": "U.S. carrier air raid on Yokosuka, 18 July 1945",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Attack_on_Yokosuka"
+ },
  "op-augsburg-raid": {
   "name": "Augsburg raid",
   "kind": "RAF daylight bombing raid",
@@ -2263,6 +2270,14 @@
   "wikidata": "Q169436",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Rostov_(1941)"
  },
+ "op-battle-of-saint-lo": {
+  "name": "Battle of Saint-Lo",
+  "kind": "U.S. battle for the Normandy road hub of Saint-Lo, July 1944",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Saint-L%C3%B4",
+  "note": "Wikipedia title: Battle of Saint-Lô"
+ },
  "op-battle-of-saipan": {
   "name": "Battle of Saipan",
   "kind": "battle",
@@ -2845,12 +2860,26 @@
   "wikidata": "Q4877586",
   "source": "https://en.wikipedia.org/wiki/Beaumont_race_riot_of_1943"
  },
+ "op-bedford-magazine-explosion": {
+  "name": "Bedford Magazine explosion",
+  "kind": "ammunition depot fire and explosions near Halifax, Nova Scotia, 18 to 19 July 1945",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bedford_Magazine_explosion"
+ },
  "op-beer-hall-putsch": {
   "name": "Beer Hall Putsch",
   "kind": "failed coup",
   "nation": "Germany",
   "source": "https://en.wikipedia.org/wiki/Beer_Hall_Putsch",
   "wikidata": "Q36749"
+ },
+ "op-beisfjord-massacre": {
+  "name": "Beisfjord massacre",
+  "kind": "massacre of Yugoslav prisoners at Beisfjord camp, Norway, 18 July 1942",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Beisfjord_massacre"
  },
  "op-belfast-blitz": {
   "name": "Belfast Blitz",
@@ -6340,6 +6369,14 @@
    "Mulberry B"
   ]
  },
+ "op-murder-of-maceo-snipes": {
+  "name": "Murder of Maceo Snipes",
+  "kind": "killing of a Black World War II veteran after he voted, Georgia, July 1946",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Murder_of_Maceo_Snipes",
+  "note": "Maceo Snipes redirects here"
+ },
  "op-nacht-und-nebel": {
   "name": "Nacht und Nebel",
   "kind": "Nazi decree, 7 December 1941",
@@ -7040,6 +7077,13 @@
   "nation": "Germany",
   "wikidata": "Q16864800",
   "source": "https://en.wikipedia.org/wiki/Operation_Gisela"
+ },
+ "op-operation-goodwood": {
+  "name": "Operation Goodwood",
+  "kind": "British armoured offensive east of Caen, 18 to 20 July 1944",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Goodwood"
  },
  "op-operation-greif": {
   "name": "Operation Greif",
@@ -9017,6 +9061,13 @@
   "nation": "Germany",
   "wikidata": "Q157873",
   "source": "https://en.wikipedia.org/wiki/Third_Battle_of_Kharkov"
+ },
+ "op-third-konoe-cabinet": {
+  "name": "Third Konoe cabinet",
+  "kind": "Japanese cabinet, 18 July to 18 October 1941",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Third_Konoe_cabinet"
  },
  "op-this-is-the-army-musical": {
   "name": "This Is the Army",

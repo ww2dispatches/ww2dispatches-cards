@@ -649,6 +649,13 @@
   "wikidata": "Q554568",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-132_(1941)"
  },
+ "ship-german-submarine-u-134-1941": {
+  "name": "U-134",
+  "kind": "Kriegsmarine Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-134_(1941)"
+ },
  "ship-german-submarine-u-135-1941": {
   "name": "U-135",
   "kind": "Kriegsmarine Type VIIC U-boat",
@@ -1900,6 +1907,13 @@
   "nation": "Germany",
   "wikidata": "Q5175197",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-663"
+ },
+ "ship-german-submarine-u-672": {
+  "name": "U-672",
+  "kind": "Kriegsmarine Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-672"
  },
  "ship-german-submarine-u-679": {
   "name": "U-679",
@@ -4357,6 +4371,13 @@
   "nation": "Japan",
   "wikidata": "Q1813237",
   "source": "https://en.wikipedia.org/wiki/Japanese_battleship_Mutsu"
+ },
+ "ship-japanese-battleship-nagato": {
+  "name": "Nagato",
+  "kind": "Imperial Japanese Navy battleship",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_battleship_Nagato"
  },
  "ship-japanese-battleship-yamato": {
   "name": "Yamato",
