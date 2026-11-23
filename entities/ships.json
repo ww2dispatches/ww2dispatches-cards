@@ -1161,6 +1161,13 @@
   "wikidata": "Q32804",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-352"
  },
+ "ship-german-submarine-u-361": {
+  "name": "German submarine U-361",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-361"
+ },
  "ship-german-submarine-u-366": {
   "name": "German submarine U-366",
   "kind": "Type VIIC U-boat",
@@ -3692,6 +3699,13 @@
   "source": "https://en.wikipedia.org/wiki/HMS_Tartar_(F43)",
   "wikidata": "Q1354348"
  },
+ "ship-hms-telemachus-p321": {
+  "name": "HMS Telemachus (P321)",
+  "kind": "T class submarine",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Telemachus_(P321)"
+ },
  "ship-hms-tempest-n86": {
   "name": "HMS Tempest (N86)",
   "kind": "Royal Navy T class submarine",
@@ -4618,6 +4632,13 @@
   "nation": "Japan",
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Hamakaze_(1940)",
   "wikidata": "Q2347769"
+ },
+ "ship-japanese-destroyer-hatsuyuki-1928": {
+  "name": "Japanese destroyer Hatsuyuki (1928)",
+  "kind": "Fubuki class destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Hatsuyuki_(1928)"
  },
  "ship-japanese-destroyer-hayate-1925": {
   "name": "Japanese destroyer Hayate (1925)",

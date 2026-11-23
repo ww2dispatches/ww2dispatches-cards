@@ -562,6 +562,13 @@
   "wikidata": "Q16056962",
   "source": "https://en.wikipedia.org/wiki/Action_of_13_May_1942"
  },
+ "op-action-of-17-july-1944": {
+  "name": "Action of 17 July 1944",
+  "kind": "submarine engagement in the Strait of Malacca",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Action_of_17_July_1944"
+ },
  "op-action-of-26-april-1944": {
   "name": "Action of 26 April 1944",
   "kind": "naval action off Brittany",
@@ -716,6 +723,13 @@
   "nation": "Britain",
   "wikidata": "Q177283",
   "source": "https://en.wikipedia.org/wiki/Altmark_incident"
+ },
+ "op-altona-bloody-sunday": {
+  "name": "Altona Bloody Sunday",
+  "kind": "street violence, 17 July 1932",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Altona_Bloody_Sunday"
  },
  "op-american-carrier-raids-of-1942": {
   "name": "American carrier raids of 1942",
@@ -3311,6 +3325,13 @@
   "wikidata": "Q2229399",
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Nijmegen"
  },
+ "op-bombing-of-numazu-in-world-war-ii": {
+  "name": "Bombing of Numazu in World War II",
+  "kind": "B-29 incendiary raid",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Numazu_in_World_War_II"
+ },
  "op-bombing-of-nuremberg-in-world-war-ii": {
   "name": "Bombing of Nuremberg in World War II",
   "kind": "bombing campaign",
@@ -5584,6 +5605,13 @@
    "July Agreement"
   ]
  },
+ "op-july-1936-military-uprising-in-melilla": {
+  "name": "July 1936 military uprising in Melilla",
+  "kind": "military rising that began the Spanish Civil War",
+  "nation": "Spain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/July_1936_military_uprising_in_Melilla"
+ },
  "op-june-deportation": {
   "name": "June deportation",
   "kind": "1941 Soviet mass deportations from the Baltic states and other regions",
@@ -7310,6 +7338,13 @@
   "wikidata": "Q3354761",
   "source": "https://en.wikipedia.org/wiki/Operation_Lustre"
  },
+ "op-operation-mascot": {
+  "name": "Operation Mascot",
+  "kind": "British carrier strike on Tirpitz",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Mascot"
+ },
  "op-operation-matterhorn": {
   "name": "Operation Matterhorn",
   "kind": "B-29 campaign from India and China",
@@ -7908,6 +7943,13 @@
   "nation": "Britain",
   "wikidata": "Q16821488",
   "source": "https://en.wikipedia.org/wiki/Pointblank_directive"
+ },
+ "op-port-chicago-disaster": {
+  "name": "Port Chicago disaster",
+  "kind": "ammunition explosion at a Navy magazine, 17 July 1944",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Port_Chicago_disaster"
  },
  "op-portella-della-ginestra-massacre": {
   "name": "Portella della Ginestra massacre",
@@ -8968,6 +9010,13 @@
    "Operation Exporter"
   ]
  },
+ "op-szilard-petition": {
+  "name": "Szilárd petition",
+  "kind": "scientists' petition to President Truman on the atomic bomb",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Szil%C3%A1rd_petition"
+ },
  "op-take-ichi-convoy": {
   "name": "Take Ichi convoy",
   "kind": "Japanese troop convoy",
@@ -9228,6 +9277,13 @@
   "nation": "Britain",
   "wikidata": "Q7839974",
   "source": "https://en.wikipedia.org/wiki/Trial_of_Erich_von_Manstein"
+ },
+ "op-trial-of-mihailovic-et-al": {
+  "name": "Trial of Mihailović et al.",
+  "kind": "Belgrade treason and war crimes trial, 1946",
+  "nation": "Yugoslavia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Trial_of_Mihailovi%C4%87_et_al."
  },
  "op-trial-of-neumann-and-sass": {
   "name": "Trial of Neumann and Sass",

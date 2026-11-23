@@ -5716,6 +5716,15 @@
   "lat": 35.6761,
   "lon": 139.6992
  },
+ "place-melilla": {
+  "name": "Melilla",
+  "kind": "Spanish city on the North African coast",
+  "nation": "Spain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Melilla",
+  "lat": null,
+  "lon": null
+ },
  "place-memoriale-della-shoah": {
   "name": "Memoriale della Shoah",
   "kind": "Holocaust memorial at Platform 21, Milano Centrale",
