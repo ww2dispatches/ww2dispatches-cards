@@ -986,6 +986,17 @@
    "Betty"
   ]
  },
+ "aircraft-mitsubishi-j8m-shusui": {
+  "name": "Mitsubishi J8M Shusui",
+  "kind": "Japanese rocket powered interceptor",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mitsubishi_J8M_Sh%C5%ABsui",
+  "aka": [
+   "Shūsui",
+   "Ki-200"
+  ]
+ },
  "aircraft-mitsubishi-ki-15": {
   "name": "Mitsubishi Ki-15",
   "kind": "Japanese reconnaissance aircraft",

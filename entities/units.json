@@ -34,6 +34,13 @@
   ],
   "note": "Wikipedia redirects 104th Infantry Division (United States) here."
  },
+ "unit-105th-infantry-regiment-united-states": {
+  "name": "105th Infantry Regiment (United States)",
+  "kind": "U.S. Army infantry regiment, 27th Infantry Division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/105th_Infantry_Regiment_(United_States)"
+ },
  "unit-106th-infantry-division-united-states": {
   "name": "106th Infantry Division",
   "kind": "U.S. Army division",
@@ -492,6 +499,13 @@
   "aka": [
    "1st Fallschirmjäger Division"
   ]
+ },
+ "unit-1st-provisional-marine-brigade": {
+  "name": "1st Provisional Marine Brigade",
+  "kind": "U.S. Marine brigade, Iceland garrison 1941",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1st_Provisional_Marine_Brigade"
  },
  "unit-1st-special-operations-wing": {
   "name": "1st Special Operations Wing",

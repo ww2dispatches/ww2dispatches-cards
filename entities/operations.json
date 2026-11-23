@@ -675,6 +675,13 @@
    "Operation Husky"
   ]
  },
+ "op-allied-occupation-of-iceland": {
+  "name": "Allied occupation of Iceland",
+  "kind": "British, then American, garrison of Iceland",
+  "nation": "Iceland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Allied_occupation_of_Iceland"
+ },
  "op-allied-occupied-germany": {
   "name": "Allied-occupied Germany",
   "kind": "four power occupation, 1945 to 1949",
@@ -5974,6 +5981,17 @@
   "aka": [
    "Operation Hippo",
    "Operation Elephant"
+  ]
+ },
+ "op-marco-polo-bridge-incident": {
+  "name": "Marco Polo Bridge incident",
+  "kind": "clash that opened the Second Sino-Japanese War",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Marco_Polo_Bridge_incident",
+  "aka": [
+   "Lugou Bridge incident",
+   "July 7 incident"
   ]
  },
  "op-mariana-and-palau-islands-campaign": {
