@@ -123,7 +123,6 @@
     $('sIntercept').classList.add('slim');
     $('sIntercept').classList.toggle('ended', done);
     $('icpBarMarks').innerHTML = done ? '' : barHTML();
-    if (P.practice) html += `<p class="icppractice">Practice round ${P.practice} · testers only · no Intel</p>`;
     if (!done) {
       html += P.groups.length ? `<div class="icprows">${P.groups.map(rowHTML).join('')}</div>` : '';
       html += `<div class="icpdesk" id="icpDesk">${left.map(i => fileHTML(i)).join('')}</div>`;
@@ -144,8 +143,7 @@
       : `<div class="icpscore lost"><span class="sstamp">FILES CLOSED</span><b>${P.found} of 4</b><small>links found</small></div>`;
     const bonus = P.intel - 3;
     const why = solved ? (P.score === 100 ? 'a perfect solve' : 'the solve') : 'trying';
-    const intel = P.practice ? '<p class="icpintel">Practice round · no Intel, and the card can\'t come Top Secret</p>'
-      : `<p class="icpintel"><img class="itok" src="/declass/icons/intel.svg" alt="">+${P.intel} Intel · 3 for playing, ${bonus} for ${why}</p>`;
+    const intel = `<p class="icpintel"><img class="itok" src="/declass/icons/intel.svg" alt="">+${P.intel} Intel · 3 for playing, ${bonus} for ${why}</p>`;
     let after = '';
     if (solved && P.claimed) {
       const inf = info(P.claimed.card);
@@ -155,8 +153,7 @@
     return `${head}${intel}
       <div class="icprows review">${P.groups.map(rowHTML).join('')}</div>
       ${after}
-      <div class="icpctl"><button class="btn alt" id="icpShare" type="button">Share</button><button class="btn" id="icpDone" type="button">Done</button></div>
-      ${tester() ? '<div class="icpctl"><button class="btn alt icpreplay" id="icpReplay" type="button">Play again · tester practice</button></div>' : ''}`;
+      <div class="icpctl"><button class="btn alt" id="icpShare" type="button">Share</button><button class="btn" id="icpDone" type="button">Done</button></div>`;
   }
   // The reward: pick any one of the twelve (7 Nov 2026, its own screen after the review).
   function pickScreenHTML() {
@@ -164,15 +161,6 @@
       ${pickLegend()}
       <div class="icpdesk pick" id="icpPick">${P.cards.map((c, i) => pickHTML(c, i)).join('')}</div>
       <p class="icpsmall">Tap the magnifier on a card to see it full size.</p>`;
-  }
-  // Testers can replay as often as they like (7 Nov 2026): the button shows with the preview flag on, and
-  // the server checks the account is a tester. Practice rounds pay no Intel and never roll Top Secret.
-  function tester() { try { return Boolean(localStorage.getItem('declass_icp')); } catch (e) { return false; } }
-  function replay() {
-    if (busy) return; busy = true;
-    const b = $('icpReplay'); if (b) b.disabled = true;
-    D().api('intercept/replay', {}).then(d => { busy = false; P = d.puzzle; sel = []; stage = 'review'; draw(); window.scrollTo(0, 0); D().sfx('slide'); })
-      .catch(e => { busy = false; if (b) b.disabled = false; D().toast(e.message === 'no grid' ? 'The files are still being sorted. Try again.' : 'Practice rounds are for testers with the preview on.'); });
   }
   // Pick 1 (7 Nov 2026, Brian's choice on the design canvas): the real cards four across, each with four
   // squares under it for Copper, Silver, Gold, and Top Secret, filled for the finishes already in the
@@ -188,7 +176,7 @@
     const own = Boolean(h && FINS.some(held));
     const full = FINS.every(held);
     if (inf.flash) return `<div class="icpcard flash nopick" data-zi="${i}"><span class="pc"><img src="${esc(inf.img)}" alt="${esc(inf.short)}" draggable="false">${mag}</span><span class="pfin note">Flash cards can't be picked</span></div>`;
-    const squares = FINS.map(f => `<i class="f-${f}${held(f) ? ' on' : ''}${!held(f) && f === 'copper' && P.perfect && !P.practice ? ' off' : ''}" title="${FLABEL[f]}${held(f) ? ', in your dossier' : ''}"></i>`).join('');
+    const squares = FINS.map(f => `<i class="f-${f}${held(f) ? ' on' : ''}${!held(f) && f === 'copper' && P.perfect ? ' off' : ''}" title="${FLABEL[f]}${held(f) ? ', in your dossier' : ''}"></i>`).join('');
     const say = !own ? 'not in your dossier yet' : full ? 'you hold every finish' : 'you hold ' + FINS.filter(held).map(f => FLABEL[f]).join(', ');
     return `<button class="icpcard${own ? '' : ' unowned'}${full ? ' full' : ''}" data-pick="${i}" type="button" aria-label="Pick ${esc(inf.short)}${v === 'living' ? ', Living Card' : ''}, ${say}"><span class="pc"><img src="${esc(inf.img)}" alt="" draggable="false">${own ? '' : '<span class="wax" title="Not in your dossier yet"></span>'}${v === 'living' ? '<span class="ptag live">▶︎ Living</span>' : ''}${mag}</span>${own ? `<span class="pfin" aria-hidden="true">${squares}</span>` : '<span class="pfin new">New to you</span>'}</button>`;
   }
@@ -249,7 +237,6 @@
     document.querySelectorAll('#icpPick [data-pick]').forEach(b => holdable(b, () => confirmPick(Number(b.dataset.pick))));
     const s = $('icpShare'); if (s) s.onclick = share;
     const dn = $('icpDone'); if (dn) dn.onclick = done;
-    const rp = $('icpReplay'); if (rp) rp.onclick = replay;
   }
   function toggle(i, b) {
     if (busy) return;
@@ -329,8 +316,7 @@
     const c = P.cards[i], inf = info(c.id); if (!inf) return;
     const own = D().holdings().get(c.id);
     const living = c.v === 'living';
-    const odds = P.practice ? 'Practice round: the card is yours, but it can\'t come Top Secret, and a duplicate pays no Intel.'
-      : P.perfect ? 'A perfect solve: it comes Silver, Gold, or Top Secret.' : 'The finish is set by luck: Copper, Silver, Gold, or Top Secret.';
+    const odds = P.perfect ? 'A perfect solve: it comes Silver, Gold, or Top Secret.' : 'The finish is set by luck: Copper, Silver, Gold, or Top Secret.';
     const have = !own ? 'This card isn\'t in your dossier yet.' : 'You already hold this card. If the finish lands on one you hold, it turns into Intel like any duplicate.';
     D().sheet(`<div class="sheettop"><span class="howstamp">Code Room</span><button class="howx" data-close aria-label="Close">✕</button></div>
       <h2>Take ${esc(inf.short)}?</h2>

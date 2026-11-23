@@ -150,9 +150,6 @@ body.night .howcard,body.night .sheetcard{color:var(--ink)}
 #icpReject.on{opacity:1;transform:translate(-50%,-50%) rotate(-8deg) scale(1);transition:opacity .12s ease,transform .25s cubic-bezier(.2,1.6,.4,1)}
 #icpReject:not(.on){transition:opacity .35s ease}
 
-/* A tester's practice round (7 Nov 2026). */
-.icppractice{font-family:var(--type);font-size:12px;color:#9fbbe8;text-align:center;margin:0 0 10px;border:1px dashed rgba(159,187,232,.5);border-radius:3px;padding:4px 8px}
-.icpreplay{color:#9fbbe8!important;border-color:rgba(159,187,232,.6)!important}
 
 /* The board's tiles (7 Nov 2026, concept D): the original photo over a typed label. A selected tile
    lifts with a gold ring; no paperclip, so what's picked is plain to see. */

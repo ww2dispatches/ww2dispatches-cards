@@ -14,22 +14,9 @@
     testerKey = localStorage.getItem(KEY_STORE) || '';
   } catch (e) { testerKey = new URLSearchParams(location.search).get('key') || ''; }
 
-  // Intercept preview (27 Oct 2026): until launch, ?intercept=preview lets a tester play it in this
-  // browser; ?intercept=off turns it back off.
-  let icpPreview = '', icpFresh = false;
-  try {
-    const url = new URL(location.href), v = url.searchParams.get('intercept');
-    if (v === 'preview') localStorage.setItem('declass_icp', '1');
-    if (v === 'off') localStorage.removeItem('declass_icp');
-    // ?intercept=fresh (7 Nov 2026): a tester sees the Code Room as a new player would. The preview turns on,
-    // the first puzzle guide is forgotten in this browser, and the server forgets today's puzzle.
-    if (v === 'fresh') {
-      localStorage.setItem('declass_icp', '1'); icpFresh = true;
-      const c = JSON.parse(localStorage.getItem('declass_coach') || '{}') || {}; delete c.icpGuide; localStorage.setItem('declass_coach', JSON.stringify(c));
-    }
-    if (v) { url.searchParams.delete('intercept'); history.replaceState(null, '', url.pathname + url.search + url.hash); }
-    icpPreview = localStorage.getItem('declass_icp') || '';
-  } catch (e) {}
+  // The Code Room tester tools (the preview flag, the reset link, and the replay rounds) were removed before
+  // launch (22 Nov 2026, Code Room doc to do item 9). Clear the old flag from browsers that still hold it.
+  try { localStorage.removeItem('declass_icp'); } catch (e) {}
 
   // Full screen card with zoom (29 Oct 2026): on for everyone after Brian's phone trial.
   const zoomTrial = true;
@@ -64,7 +51,7 @@
   function api(path, body) {
     return fetch('/api/' + path, {
       method: body ? 'POST' : 'GET',
-      headers: Object.assign({ 'x-declass-key': testerKey }, icpPreview ? { 'x-intercept-preview': '1' } : {}, body ? { 'content-type': 'application/json' } : {}),
+      headers: Object.assign({ 'x-declass-key': testerKey }, body ? { 'content-type': 'application/json' } : {}),
       body: body ? JSON.stringify(body) : undefined,
       credentials: 'same-origin',
     }).then(r => r.json().catch(() => ({})).then(d => { if (!r.ok) throw new Error(d.error || String(r.status)); return d; }));
@@ -119,7 +106,7 @@
     if (key.startsWith('c:')) return 'Commemorative file';
     if (key === 's:starter') return 'Starter pack';
     if (key.startsWith('q:')) return 'Requisition';
-    if (key.startsWith('i:') || key.startsWith('ip:')) return 'Code Room';
+    if (key.startsWith('i:') || key.startsWith('ip:')) return 'Code Room'; // ip: only on old tester replay rows
     return 'Envelope';
   }
   // Game actions counted for the admin console (2 Nov 2026): tallies only, through /hit.js.
@@ -1131,7 +1118,7 @@
   // Finishing cards left waiting: rebuild the envelope's kind and its Intel line from the cards themselves.
   function resumeWaiting() {
     const w = ST.waiting, slot = (w[0] && w[0].slot) || '';
-    const kind = slot.startsWith('p:') ? 'priority' : slot.startsWith('c:') ? 'commemorative' : slot.startsWith('q:') ? 'request' : slot.startsWith('i:') || slot.startsWith('ip:') ? 'intercept' : slot === 's:starter' ? 'starter' : 'daily';
+    const kind = slot.startsWith('p:') ? 'priority' : slot.startsWith('c:') ? 'commemorative' : slot.startsWith('q:') ? 'request' : slot.startsWith('i:') ? 'intercept' : slot === 's:starter' ? 'starter' : 'daily';
     lastEarn = kind === 'intercept' ? { earned: w.filter(p => p.intel).map(p => ({ reason: 'duplicate', delta: p.intel, variant: p.variant, finish: p.finish })) } : kind === 'request' || kind === 'starter' ? null : { earned: [{ reason: 'envelope', delta: 5 }].concat(w.filter(p => p.intel).map(p => ({ reason: 'duplicate', delta: p.intel, variant: p.variant, finish: p.finish }))) };
     startCards(w, 'server', holdings(ST.pulls.filter(p => p.turned)), { kind });
   }
@@ -2761,8 +2748,7 @@
     if (!cfg.open) return show('sSoon');
     loadGoogle();
     if (CFG.emailSignIn) saveWords();
-    const fresh = icpFresh ? api('intercept/reset', {}).then(() => toast('Code Room reset for today. Open it to start fresh.')).catch(() => toast('Code Room reset is for testers only.')) : Promise.resolve();
-    return fresh.then(() => Promise.all([api('catalog'), api('state')])).then(([c, s]) => {
+    return Promise.all([api('catalog'), api('state')]).then(([c, s]) => {
       setCatalog(c.cards); ST = s; landFan();
       if (cardLinkNew) hit('card_link');
       if (cardGoal && !BYID.has(cardGoal.id)) dropCardGoal();
