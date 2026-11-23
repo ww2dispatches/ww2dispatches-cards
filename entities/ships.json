@@ -1408,6 +1408,13 @@
    "USS Nemo"
   ]
  },
+ "ship-german-submarine-u-506": {
+  "name": "U-506",
+  "kind": "Kriegsmarine Type IXC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-506"
+ },
  "ship-german-submarine-u-507": {
   "name": "German submarine U-507",
   "kind": "Type IXC U-boat",
@@ -4134,6 +4141,18 @@
   "source": "https://en.wikipedia.org/wiki/Italian_submarine_Barbarigo",
   "aka": [
    "Barbarigo"
+  ]
+ },
+ "ship-italian-submarine-comandante-cappellini": {
+  "name": "Comandante Cappellini",
+  "kind": "Regia Marina submarine, later the German UIT-24 and the Japanese I-503",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_submarine_Comandante_Cappellini",
+  "aka": [
+   "Aquila III",
+   "UIT-24",
+   "I-503"
   ]
  },
  "ship-italian-submarine-leonardo-da-vinci-1939": {

@@ -1463,6 +1463,13 @@
   "wikidata": "Q4641270",
   "source": "https://en.wikipedia.org/wiki/5th_Cavalry_Regiment"
  },
+ "unit-5th-guards-tank-army": {
+  "name": "5th Guards Tank Army",
+  "kind": "Red Army tank army",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/5th_Guards_Tank_Army"
+ },
  "unit-5th-infantry-division-india": {
   "name": "5th Infantry Division (India)",
   "kind": "Indian Army infantry division",
@@ -3770,6 +3777,17 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/National_Archives_and_Records_Administration",
   "wikidata": "Q518155"
+ },
+ "unit-national-committee-for-a-free-germany": {
+  "name": "National Committee for a Free Germany",
+  "kind": "anti Nazi committee of German POWs and exiles founded in the Soviet Union",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/National_Committee_for_a_Free_Germany",
+  "aka": [
+   "NKFD",
+   "Nationalkomitee Freies Deutschland"
+  ]
  },
  "unit-national-health-service-england": {
   "name": "National Health Service (England)",

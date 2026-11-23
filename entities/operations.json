@@ -782,6 +782,13 @@
   "wikidata": "Q918147",
   "source": "https://en.wikipedia.org/wiki/Anglo-Polish_alliance"
  },
+ "op-anglo-soviet-agreement": {
+  "name": "Anglo-Soviet Agreement",
+  "kind": "1941 mutual assistance agreement",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Anglo-Soviet_Agreement"
+ },
  "op-anglo-soviet-treaty-of-1942": {
   "name": "Anglo-Soviet Treaty of 1942",
   "kind": "treaty of alliance",
@@ -2179,6 +2186,13 @@
   "aka": [
    "Battle of Poznań (1945)"
   ]
+ },
+ "op-battle-of-prokhorovka": {
+  "name": "Battle of Prokhorovka",
+  "kind": "tank battle in the Battle of Kursk, 12 July 1943",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Prokhorovka"
  },
  "op-battle-of-raate-road": {
   "name": "Battle of Raate Road",
@@ -3700,6 +3714,17 @@
   "nation": "Germany",
   "wikidata": "Q820204",
   "source": "https://en.wikipedia.org/wiki/Commissar_Order"
+ },
+ "op-committee-of-european-economic-co-operation": {
+  "name": "Committee of European Economic Co-operation",
+  "kind": "1947 Paris conference of sixteen nations on the Marshall Plan",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Committee_of_European_Economic_Co-operation",
+  "aka": [
+   "CEEC",
+   "Conference of European Economic Cooperation"
+  ]
  },
  "op-conference-for-the-reduction-and-limitation-of-armaments": {
   "name": "Conference for the Reduction and Limitation of Armaments",
@@ -6160,6 +6185,13 @@
   "wikidata": "Q55074768",
   "source": "https://en.wikipedia.org/wiki/Mexican_declaration_of_war_on_Germany,_Italy,_and_Japan"
  },
+ "op-michniow-massacre": {
+  "name": "Michniów massacre",
+  "kind": "German reprisal killing of Polish villagers, July 1943",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Michni%C3%B3w_massacre"
+ },
  "op-milch-trial": {
   "name": "Milch Trial",
   "kind": "war crimes trial",
@@ -7125,6 +7157,13 @@
   "nation": "Poland",
   "wikidata": "Q7097219",
   "source": "https://en.wikipedia.org/wiki/Operation_Kutschera"
+ },
+ "op-operation-kutuzov": {
+  "name": "Operation Kutuzov",
+  "kind": "Soviet counteroffensive against the Orel salient, 1943",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Kutuzov"
  },
  "op-operation-ladbroke": {
   "name": "Operation Ladbroke",

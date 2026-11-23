@@ -4544,6 +4544,15 @@
   "lat": 50.0453,
   "lon": 19.9547
  },
+ "place-krasnogorsk-moscow-oblast": {
+  "name": "Krasnogorsk",
+  "kind": "town near Moscow, site of the NKFD founding",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Krasnogorsk,_Moscow_Oblast",
+  "lat": null,
+  "lon": null
+ },
  "place-krasny-oktyabr-steel-plant": {
   "name": "Red October steel works",
   "kind": "steel works",
@@ -5731,6 +5740,15 @@
   "wikidata": "Q201516",
   "lat": 25.8139,
   "lon": -80.1325
+ },
+ "place-michniow": {
+  "name": "Michniów",
+  "kind": "village in the Kielce region of Poland",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Michni%C3%B3w",
+  "lat": null,
+  "lon": null
  },
  "place-middelburg-zeeland": {
   "name": "Middelburg",
@@ -9174,6 +9192,18 @@
   "lat": 38.8708,
   "lon": -77.055
  },
+ "place-theresienstadt-family-camp": {
+  "name": "Theresienstadt family camp",
+  "kind": "section BIIb of Auschwitz II Birkenau holding Jews from Theresienstadt",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Theresienstadt_family_camp",
+  "aka": [
+   "Czech family camp"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-tianjin": {
   "name": "Tianjin",
   "kind": "port city in north China",
@@ -9625,6 +9655,15 @@
   "source": "https://en.wikipedia.org/wiki/Utah_Beach",
   "lat": 49.4158,
   "lon": -1.1747
+ },
+ "place-utsunomiya": {
+  "name": "Utsunomiya",
+  "kind": "city in Tochigi Prefecture, Japan",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Utsunomiya",
+  "lat": null,
+  "lon": null
  },
  "place-vagsoy-island": {
   "name": "Vågsøy (island)",
