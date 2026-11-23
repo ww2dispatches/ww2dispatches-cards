@@ -1361,6 +1361,16 @@
   "wikidata": "Q16208094",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Bure"
  },
+ "op-battle-of-calabria": {
+  "name": "Battle of Calabria",
+  "kind": "naval battle, 9 July 1940",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Calabria",
+  "aka": [
+   "Battle of Punta Stilo"
+  ]
+ },
  "op-battle-of-cape-bon-1941": {
   "name": "Battle of Cape Bon (1941)",
   "kind": "naval battle",
@@ -3077,6 +3087,13 @@
   "nation": "Germany",
   "wikidata": "Q821328",
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Frankfurt_in_World_War_II"
+ },
+ "op-bombing-of-gifu-in-world-war-ii": {
+  "name": "Bombing of Gifu",
+  "kind": "B-29 incendiary raid, 9 July 1945",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Gifu_in_World_War_II"
  },
  "op-bombing-of-guernica": {
   "name": "Bombing of Guernica",
@@ -6643,6 +6660,13 @@
    "Shell House raid"
   ]
  },
+ "op-operation-charnwood": {
+  "name": "Operation Charnwood",
+  "kind": "Anglo-Canadian attack on Caen, 8 to 9 July 1944",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Charnwood"
+ },
  "op-operation-chastise": {
   "name": "Operation Chastise",
   "kind": "RAF raid on the Ruhr dams",
@@ -6994,6 +7018,13 @@
   "nation": "Poland",
   "wikidata": "Q7097219",
   "source": "https://en.wikipedia.org/wiki/Operation_Kutschera"
+ },
+ "op-operation-ladbroke": {
+  "name": "Operation Ladbroke",
+  "kind": "British glider landing near Syracuse, July 1943",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Ladbroke"
  },
  "op-operation-lentil-sumatra": {
   "name": "Operation Lentil (Sumatra)",
@@ -9290,6 +9321,13 @@
   "nation": "US",
   "wikidata": "Q7977864",
   "source": "https://en.wikipedia.org/wiki/We_Will_Never_Die"
+ },
+ "op-wedding-of-princess-elizabeth-and-philip-mountbatten": {
+  "name": "Wedding of Princess Elizabeth and Philip Mountbatten",
+  "kind": "royal wedding, 20 November 1947",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Wedding_of_Princess_Elizabeth_and_Philip_Mountbatten"
  },
  "op-west-loch-disaster": {
   "name": "West Loch disaster",

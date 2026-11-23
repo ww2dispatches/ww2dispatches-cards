@@ -539,6 +539,13 @@
   "wikidata": "Q772504",
   "source": "https://en.wikipedia.org/wiki/Andr%C3%A9e_Borrel"
  },
+ "person-andrew-cunningham-1st-viscount-cunningham-of-hyndhope": {
+  "name": "Andrew Cunningham",
+  "kind": "Royal Navy admiral, commander in chief Mediterranean Fleet",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Andrew_Cunningham,_1st_Viscount_Cunningham_of_Hyndhope"
+ },
  "person-andrew-mcnaughton": {
   "name": "Andrew McNaughton",
   "kind": "army general",
@@ -5587,6 +5594,13 @@
   "source": "https://en.wikipedia.org/wiki/Ingrid_Bergman",
   "wikidata": "Q43247"
  },
+ "person-inigo-campioni": {
+  "name": "Inigo Campioni",
+  "kind": "Italian admiral, commanded the fleet at Punta Stilo",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Inigo_Campioni"
+ },
  "person-inukai-tsuyoshi": {
   "name": "Inukai Tsuyoshi",
   "kind": "Japanese prime minister, assassinated 15 May 1932",
@@ -5956,6 +5970,13 @@
   "nation": "Philippines",
   "wikidata": "Q6138405",
   "source": "https://en.wikipedia.org/wiki/James_M._Cushing"
+ },
+ "person-james-m-gavin": {
+  "name": "James M. Gavin",
+  "kind": "U.S. Army paratroop commander, 505th Parachute Infantry in Sicily",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/James_M._Gavin"
  },
  "person-james-maxton": {
   "name": "James Maxton",
@@ -9766,6 +9787,16 @@
   "nation": "Yugoslavia",
   "wikidata": "Q313128",
   "source": "https://en.wikipedia.org/wiki/Prince_Paul_of_Yugoslavia"
+ },
+ "person-prince-philip-duke-of-edinburgh": {
+  "name": "Prince Philip, Duke of Edinburgh",
+  "kind": "Royal Navy officer, husband of Elizabeth II",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Prince_Philip,_Duke_of_Edinburgh",
+  "aka": [
+   "Philip Mountbatten"
+  ]
  },
  "person-princess-margriet-of-the-netherlands": {
   "name": "Princess Margriet of the Netherlands",

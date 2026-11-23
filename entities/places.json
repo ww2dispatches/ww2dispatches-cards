@@ -536,6 +536,15 @@
    "Bank and Monument stations"
   ]
  },
+ "place-banzai-cliff": {
+  "name": "Banzai Cliff",
+  "kind": "cliff at the northern tip of Saipan",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Banzai_Cliff",
+  "lat": null,
+  "lon": null
+ },
  "place-barcelona": {
   "name": "Barcelona",
   "kind": "city",
@@ -1312,6 +1321,15 @@
   "source": "https://en.wikipedia.org/wiki/Bush_House",
   "lat": 51.5129,
   "lon": -0.1173
+ },
+ "place-caen": {
+  "name": "Caen",
+  "kind": "city in Normandy",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Caen",
+  "lat": null,
+  "lon": null
  },
  "place-cafe-de-paris-london": {
   "name": "Cafe de Paris, London",
@@ -2335,6 +2353,15 @@
   "lat": 52.5186,
   "lon": 13.4044
  },
+ "place-east-grinstead": {
+  "name": "East Grinstead",
+  "kind": "town in West Sussex",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/East_Grinstead",
+  "lat": null,
+  "lon": null
+ },
  "place-eastern-range": {
   "name": "Eastern Range",
   "kind": "rocket range",
@@ -2855,6 +2882,15 @@
   "wikidata": "Q1410",
   "lat": 36.14,
   "lon": -5.35
+ },
+ "place-gifu": {
+  "name": "Gifu",
+  "kind": "prefectural capital in central Japan",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Gifu",
+  "lat": null,
+  "lon": null
  },
  "place-gilbert-islands": {
   "name": "Gilbert Islands",
@@ -8699,6 +8735,15 @@
   "source": "https://en.wikipedia.org/wiki/Sugamo_Prison",
   "lat": 35.7296,
   "lon": 139.7178
+ },
+ "place-suicide-cliff": {
+  "name": "Suicide Cliff",
+  "kind": "cliff near Marpi Point, Saipan",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Suicide_Cliff",
+  "lat": null,
+  "lon": null
  },
  "place-sulu-sea": {
   "name": "Sulu Sea",

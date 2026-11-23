@@ -376,6 +376,13 @@
   "wikidata": "Q282153",
   "source": "https://en.wikipedia.org/wiki/19th_Route_Army"
  },
+ "unit-1st-airlanding-brigade": {
+  "name": "1st Airlanding Brigade",
+  "kind": "British glider infantry brigade",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1st_Airlanding_Brigade"
+ },
  "unit-1st-armoured-division-united-kingdom": {
   "name": "1st Armoured Division",
   "kind": "British armoured division",
@@ -1692,6 +1699,13 @@
   "nation": "Britain",
   "wikidata": "Q4644604",
   "source": "https://en.wikipedia.org/wiki/825_Naval_Air_Squadron"
+ },
+ "unit-82nd-airborne-division": {
+  "name": "82nd Airborne Division",
+  "kind": "U.S. Army airborne division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/82nd_Airborne_Division"
  },
  "unit-83rd-infantry-division-united-states": {
   "name": "83rd Infantry Division",

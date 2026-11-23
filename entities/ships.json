@@ -1230,6 +1230,13 @@
   "wikidata": "Q481298",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-432"
  },
+ "ship-german-submarine-u-435": {
+  "name": "U-435",
+  "kind": "German Type VIIC submarine",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-435"
+ },
  "ship-german-submarine-u-436": {
   "name": "German submarine U-436",
   "kind": "Type VIIC U-boat",
@@ -1633,6 +1640,13 @@
   "nation": "Germany",
   "wikidata": "Q1421916",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-584"
+ },
+ "ship-german-submarine-u-590": {
+  "name": "U-590",
+  "kind": "German Type VIIC submarine",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-590"
  },
  "ship-german-submarine-u-592": {
   "name": "German submarine U-592",
@@ -3916,6 +3930,13 @@
    "Kiebitz",
    "Galeb"
   ]
+ },
+ "ship-italian-battleship-giulio-cesare": {
+  "name": "Giulio Cesare",
+  "kind": "Italian battleship",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_battleship_Giulio_Cesare"
  },
  "ship-italian-battleship-littorio": {
   "name": "Littorio",
