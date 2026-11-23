@@ -524,6 +524,13 @@
   "wikidata": "Q475776",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-118_(1941)"
  },
+ "ship-german-submarine-u-119": {
+  "name": "U-119",
+  "kind": "Kriegsmarine minelaying U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-119"
+ },
  "ship-german-submarine-u-1206": {
   "name": "U-1206",
   "kind": "Kriegsmarine Type VIIC submarine",
@@ -752,6 +759,20 @@
   "nation": "Germany",
   "wikidata": "Q2381546",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-188"
+ },
+ "ship-german-submarine-u-194": {
+  "name": "U-194",
+  "kind": "Kriegsmarine U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-194"
+ },
+ "ship-german-submarine-u-200": {
+  "name": "U-200",
+  "kind": "Kriegsmarine U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-200"
  },
  "ship-german-submarine-u-202": {
   "name": "German submarine U-202",
@@ -1173,6 +1194,13 @@
   "nation": "Germany",
   "wikidata": "Q4001378",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-447"
+ },
+ "ship-german-submarine-u-449": {
+  "name": "U-449",
+  "kind": "Kriegsmarine U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-449"
  },
  "ship-german-submarine-u-454": {
   "name": "U-454",
@@ -2576,6 +2604,13 @@
   "wikidata": "Q702335",
   "source": "https://en.wikipedia.org/wiki/HMS_Edinburgh_(16)"
  },
+ "ship-hms-emerald-d66": {
+  "name": "HMS Emerald (D66)",
+  "kind": "Royal Navy light cruiser",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Emerald_(D66)"
+ },
  "ship-hms-encounter-h10": {
   "name": "HMS Encounter (H10)",
   "kind": "Royal Navy destroyer",
@@ -3076,6 +3111,13 @@
   "nation": "Britain",
   "wikidata": "Q941405",
   "source": "https://en.wikipedia.org/wiki/HMS_Neptune_(20)"
+ },
+ "ship-hms-nith-k215": {
+  "name": "HMS Nith (K215)",
+  "kind": "Royal Navy River class frigate",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Nith_(K215)"
  },
  "ship-hms-norfolk-78": {
   "name": "HMS Norfolk (78)",
@@ -4725,6 +4767,13 @@
   "wikidata": "Q6159061",
   "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-401"
  },
+ "ship-japanese-submarine-i-52-1942": {
+  "name": "I-52",
+  "kind": "Imperial Japanese Navy cargo submarine",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-52_(1942)"
+ },
  "ship-japanese-submarine-i-58-1943": {
   "name": "I-58",
   "kind": "Japanese submarine that sank USS Indianapolis",
@@ -4849,6 +4898,13 @@
   "nation": "Britain",
   "wikidata": "Q18204607",
   "source": "https://en.wikipedia.org/wiki/MV_Carnarvon_Castle"
+ },
+ "ship-mv-derrycunihy-1943": {
+  "name": "MV Derrycunihy",
+  "kind": "British cargo ship, military transport",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/MV_Derrycunihy_(1943)"
  },
  "ship-mv-domala": {
   "name": "MV Domala",

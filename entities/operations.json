@@ -296,6 +296,13 @@
   "wikidata": "Q4565560",
   "source": "https://en.wikipedia.org/wiki/1945_Mikawa_earthquake"
  },
+ "op-1945-moscow-victory-parade": {
+  "name": "1945 Moscow Victory Parade",
+  "kind": "victory parade on Red Square",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1945_Moscow_Victory_Parade"
+ },
  "op-1945-united-kingdom-general-election": {
   "name": "1945 United Kingdom general election",
   "kind": "general election",
@@ -6220,6 +6227,13 @@
   "wikidata": "Q1330937",
   "source": "https://en.wikipedia.org/wiki/Operation_Cockpit"
  },
+ "op-operation-collar-commando-raid": {
+  "name": "Operation Collar",
+  "kind": "British commando raid, June 1940",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Collar_(commando_raid)"
+ },
  "op-operation-colossus": {
   "name": "Operation Colossus",
   "kind": "British airborne raid on the Tragino aqueduct, 1941",
@@ -6320,6 +6334,13 @@
   "nation": "Britain",
   "wikidata": "Q2389095",
   "source": "https://en.wikipedia.org/wiki/Operation_Excess"
+ },
+ "op-operation-fish": {
+  "name": "Operation Fish",
+  "kind": "transfer of British gold and securities to Canada",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Fish"
  },
  "op-operation-frankton": {
   "name": "Operation Frankton",

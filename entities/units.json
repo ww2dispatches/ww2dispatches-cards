@@ -1132,6 +1132,13 @@
   "wikidata": "Q4637801",
   "source": "https://en.wikipedia.org/wiki/42nd_Infantry_Division_(United_States)"
  },
+ "unit-43rd-wessex-reconnaissance-regiment": {
+  "name": "43rd (Wessex) Reconnaissance Regiment",
+  "kind": "British reconnaissance regiment",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/43rd_(Wessex)_Reconnaissance_Regiment"
+ },
  "unit-442nd-infantry-regiment": {
   "name": "442nd Regimental Combat Team",
   "kind": "U.S. Army Japanese American regiment",
@@ -2084,6 +2091,13 @@
   "nation": "Britain",
   "wikidata": "Q887543",
   "source": "https://en.wikipedia.org/wiki/Board_of_Trade"
+ },
+ "unit-brandenburgers": {
+  "name": "Brandenburgers",
+  "kind": "German special forces unit",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Brandenburgers"
  },
  "unit-brazilian-expeditionary-force": {
   "name": "Brazilian Expeditionary Force",

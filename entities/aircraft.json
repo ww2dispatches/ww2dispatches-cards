@@ -902,6 +902,13 @@
    "I-300"
   ]
  },
+ "aircraft-mistel": {
+  "name": "Mistel",
+  "kind": "German composite aircraft, unmanned bomber with fighter on top",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mistel"
+ },
  "aircraft-mitsubishi-a6m-zero": {
   "name": "Mitsubishi A6M Zero",
   "kind": "fighter",
