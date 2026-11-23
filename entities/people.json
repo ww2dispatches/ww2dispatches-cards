@@ -2174,6 +2174,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Dudley_Clarke"
  },
+ "person-dudley-pound": {
+  "name": "Dudley Pound",
+  "kind": "First Sea Lord, Royal Navy",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Dudley_Pound"
+ },
  "person-duke-ellington": {
   "name": "Duke Ellington",
   "kind": "jazz composer and bandleader",
@@ -2321,6 +2328,13 @@
   "nation": "France",
   "wikidata": "Q213526",
   "source": "https://en.wikipedia.org/wiki/%C3%89douard_Daladier"
+ },
+ "person-eduard-prchal": {
+  "name": "Eduard Prchal",
+  "kind": "Czech RAF pilot, sole survivor of the Sikorski crash",
+  "nation": "Czechoslovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Eduard_Prchal"
  },
  "person-edvard-benes": {
   "name": "Edvard Beneš",
@@ -5717,6 +5731,16 @@
   "wikidata": "Q2724552",
   "source": "https://en.wikipedia.org/wiki/Jack_Lummus"
  },
+ "person-jack-mantle": {
+  "name": "Jack Mantle",
+  "kind": "Royal Navy leading seaman, posthumous VC",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Jack_Mantle",
+  "aka": [
+   "Jack Foreman Mantle"
+  ]
+ },
  "person-jack-mullin": {
   "name": "Jack Mullin",
   "kind": "US Army Signal Corps officer and audio engineer who brought the Magnetophon to America",
@@ -7525,6 +7549,13 @@
   "nation": "Germany",
   "wikidata": "Q706770",
   "source": "https://en.wikipedia.org/wiki/Leo_Borchard"
+ },
+ "person-leo-gradwell": {
+  "name": "Leo Gradwell",
+  "kind": "RNVR officer commanding HMS Ayrshire in PQ 17",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Leo_Gradwell"
  },
  "person-leon-blum": {
   "name": "Léon Blum",

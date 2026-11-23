@@ -1160,6 +1160,13 @@
   "wikidata": "Q14623219",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-404"
  },
+ "ship-german-submarine-u-409": {
+  "name": "U-409",
+  "kind": "Kriegsmarine U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-409"
+ },
  "ship-german-submarine-u-41-1939": {
   "name": "U-41",
   "kind": "Type IXA U-boat",
@@ -2746,6 +2753,13 @@
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/HMS_Formidable_(67)",
   "wikidata": "Q2203656"
+ },
+ "ship-hms-foylebank": {
+  "name": "HMS Foylebank",
+  "kind": "Royal Navy anti aircraft ship",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Foylebank"
  },
  "ship-hms-galatea-71": {
   "name": "HMS Galatea (71)",
@@ -4496,6 +4510,13 @@
    "Natsushio"
   ]
  },
+ "ship-japanese-destroyer-nenohi-1932": {
+  "name": "Nenohi",
+  "kind": "Imperial Japanese Navy destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Nenohi_(1932)"
+ },
  "ship-japanese-destroyer-nowaki-1940": {
   "name": "Nowaki",
   "kind": "Kagero class destroyer",
@@ -4641,6 +4662,13 @@
   "nation": "Japan",
   "wikidata": "Q2704642",
   "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-1"
+ },
+ "ship-japanese-submarine-i-10": {
+  "name": "I-10",
+  "kind": "Imperial Japanese Navy submarine",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-10"
  },
  "ship-japanese-submarine-i-124": {
   "name": "Japanese submarine I-124",
@@ -5399,6 +5427,13 @@
   "nation": "Britain",
   "wikidata": "Q7393380",
   "source": "https://en.wikipedia.org/wiki/SS_City_of_Nagpur"
+ },
+ "ship-ss-city-of-venice": {
+  "name": "SS City of Venice",
+  "kind": "British troop transport",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_City_of_Venice"
  },
  "ship-ss-clan-campbell": {
   "name": "Clan Campbell",
@@ -6284,6 +6319,13 @@
   "nation": "US",
   "wikidata": "Q829506",
   "source": "https://en.wikipedia.org/wiki/USS_Croatan_(CVE-25)"
+ },
+ "ship-uss-david-w-taylor": {
+  "name": "USS David W. Taylor (DD-551)",
+  "kind": "U.S. Navy destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_David_W._Taylor"
  },
  "ship-uss-de-haven-dd-469": {
   "name": "USS De Haven (DD-469)",
@@ -7199,6 +7241,13 @@
   "nation": "US",
   "wikidata": "Q7873437",
   "source": "https://en.wikipedia.org/wiki/USS_Rich_(DE-695)"
+ },
+ "ship-uss-riddle": {
+  "name": "USS Riddle (DE-185)",
+  "kind": "U.S. Navy destroyer escort",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Riddle"
  },
  "ship-uss-roe-dd-418": {
   "name": "USS Roe (DD-418)",

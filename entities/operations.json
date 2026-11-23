@@ -258,6 +258,13 @@
   "wikidata": "Q5265992",
   "source": "https://en.wikipedia.org/wiki/1943_Detroit_race_riot"
  },
+ "op-1943-gibraltar-liberator-al523-crash": {
+  "name": "1943 Gibraltar Liberator AL523 crash",
+  "kind": "air crash that killed General Sikorski",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1943_Gibraltar_Liberator_AL523_crash"
+ },
  "op-1943-greek-protests-against-labour-mobilization": {
   "name": "1943 Greek protests against labour mobilization",
   "kind": "strikes and protests in occupied Greece",
@@ -893,6 +900,17 @@
   "nation": "Japan",
   "wikidata": "Q27628023",
   "source": "https://en.wikipedia.org/wiki/Attack_on_Clark_Field"
+ },
+ "op-attack-on-mers-el-kebir": {
+  "name": "Attack on Mers-el-Kebir",
+  "kind": "British attack on the French fleet, 3 July 1940",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Attack_on_Mers-el-K%C3%A9bir",
+  "aka": [
+   "Operation Catapult",
+   "Oran"
+  ]
  },
  "op-attack-on-nibeiwa": {
   "name": "Attack on Nibeiwa",
@@ -1639,6 +1657,13 @@
   "nation": "Britain",
   "wikidata": "Q4871375",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Kampar"
+ },
+ "op-battle-of-kassala-1940": {
+  "name": "Battle of Kassala (1940)",
+  "kind": "Italian capture of a Sudanese border town",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Kassala_(1940)"
  },
  "op-battle-of-kasserine-pass": {
   "name": "Battle of Kasserine Pass",
@@ -5374,6 +5399,13 @@
   "wikidata": "Q6404775",
   "source": "https://en.wikipedia.org/wiki/Kidnapping_of_Heinrich_Kreipe"
  },
+ "op-kielce-pogrom": {
+  "name": "Kielce pogrom",
+  "kind": "postwar anti Jewish massacre, 4 July 1946",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kielce_pogrom"
+ },
  "op-kindertransport": {
   "name": "Kindertransport",
   "kind": "rescue of Jewish children",
@@ -7237,6 +7269,13 @@
   "nation": "Britain",
   "wikidata": "Q2026504",
   "source": "https://en.wikipedia.org/wiki/Operation_Wilfred"
+ },
+ "op-operation-windsor": {
+  "name": "Operation Windsor",
+  "kind": "Canadian attack on Carpiquet, 4 to 5 July 1944",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Windsor"
  },
  "op-operation-winter-storm": {
   "name": "Operation Winter Storm",

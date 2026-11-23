@@ -343,6 +343,17 @@
    "XBT2D-1 Dauntless II"
   ]
  },
+ "aircraft-douglas-a-20-havoc": {
+  "name": "Douglas A-20 Havoc",
+  "kind": "light bomber, the Boston in RAF service",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Douglas_A-20_Havoc",
+  "aka": [
+   "Boston",
+   "DB-7"
+  ]
+ },
  "aircraft-douglas-c-47-skytrain": {
   "name": "Douglas C-47 Skytrain",
   "kind": "military transport aircraft",

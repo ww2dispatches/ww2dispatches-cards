@@ -1445,6 +1445,15 @@
   "lat": 48.4333,
   "lon": 23.0667
  },
+ "place-carpiquet": {
+  "name": "Carpiquet",
+  "kind": "village and airfield northwest of Caen",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Carpiquet",
+  "lat": null,
+  "lon": null
+ },
  "place-carswell-air-force-base": {
   "name": "Carswell Air Force Base",
   "kind": "air base near Fort Worth, Texas",
@@ -4163,6 +4172,15 @@
   "source": "https://en.wikipedia.org/wiki/Kiel",
   "lat": 54.3233,
   "lon": 10.1394
+ },
+ "place-kielce": {
+  "name": "Kielce",
+  "kind": "city in Poland",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kielce",
+  "lat": null,
+  "lon": null
  },
  "place-kifissia": {
   "name": "Kifissia",
@@ -7114,6 +7132,15 @@
   "lat": 31.2625,
   "lon": 32.3061
  },
+ "place-portland-harbour": {
+  "name": "Portland Harbour",
+  "kind": "naval harbour in Dorset",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Portland_Harbour",
+  "lat": null,
+  "lon": null
+ },
  "place-porto-rafti": {
   "name": "Porto Rafti",
   "kind": "harbor town in Attica",
@@ -9567,6 +9594,19 @@
   ],
   "lat": 35.9953,
   "lon": -78.9417
+ },
+ "place-wallops-flight-facility": {
+  "name": "Wallops Flight Facility",
+  "kind": "rocket launch range on Wallops Island, Virginia",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Wallops_Flight_Facility",
+  "aka": [
+   "Pilotless Aircraft Research Station",
+   "Wallops Island"
+  ],
+  "lat": null,
+  "lon": null
  },
  "place-warm-springs-georgia": {
   "name": "Warm Springs, Georgia",

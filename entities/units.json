@@ -1723,6 +1723,16 @@
   "source": "https://en.wikipedia.org/wiki/90th_Infantry_Division_(United_States)",
   "wikidata": "Q2332538"
  },
+ "unit-915th-air-refueling-squadron": {
+  "name": "15th Bombardment Squadron",
+  "kind": "USAAF light bomber squadron, later the 915th Air Refueling Squadron",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/915th_Air_Refueling_Squadron",
+  "aka": [
+   "15th Bombardment Squadron"
+  ]
+ },
  "unit-92nd-infantry-division-united-states": {
   "name": "92nd Infantry Division",
   "kind": "U.S. Army infantry division, the Buffalo Soldiers",
@@ -2296,6 +2306,16 @@
   "source": "https://en.wikipedia.org/wiki/Children%27s_Overseas_Reception_Board",
   "aka": [
    "CORB"
+  ]
+ },
+ "unit-china-air-task-force": {
+  "name": "China Air Task Force",
+  "kind": "USAAF command in China under Chennault",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/China_Air_Task_Force",
+  "aka": [
+   "CATF"
   ]
  },
  "unit-chindits": {
