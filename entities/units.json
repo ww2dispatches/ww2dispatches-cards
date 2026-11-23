@@ -2587,6 +2587,13 @@
    "FBI"
   ]
  },
+ "unit-federal-works-agency": {
+  "name": "Federal Works Agency",
+  "kind": "US federal agency",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Federal_Works_Agency"
+ },
  "unit-fet-y-de-las-jons": {
   "name": "FET y de las JONS",
   "kind": "Nationalist Spain's single party",
@@ -3138,6 +3145,16 @@
    "1st Yokosuka Special Naval Landing Force"
   ]
  },
+ "unit-jewish-agency-for-israel": {
+  "name": "Jewish Agency",
+  "kind": "Zionist executive body in Mandatory Palestine",
+  "nation": "Mandatory Palestine",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Jewish_Agency_for_Israel",
+  "aka": [
+   "Jewish Agency for Palestine"
+  ]
+ },
  "unit-jewish-anti-fascist-committee": {
   "name": "Jewish Anti-Fascist Committee",
   "kind": "Soviet wartime organization",
@@ -3515,6 +3532,13 @@
   "nation": "Canada",
   "wikidata": "Q3446304",
   "source": "https://en.wikipedia.org/wiki/Montreal_Royals"
+ },
+ "unit-mountain-corps-norway": {
+  "name": "Mountain Corps Norway",
+  "kind": "German army corps",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mountain_Corps_Norway"
  },
  "unit-naacp": {
   "name": "NAACP",
@@ -4128,6 +4152,13 @@
   "aka": [
    "Oslogjengen"
   ]
+ },
+ "unit-palmach": {
+  "name": "Palmach",
+  "kind": "Haganah strike force",
+  "nation": "Mandatory Palestine",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Palmach"
  },
  "unit-pan-am": {
   "name": "Pan Am",

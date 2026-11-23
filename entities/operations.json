@@ -648,6 +648,13 @@
   "wikidata": "Q249708",
   "source": "https://en.wikipedia.org/wiki/Aleutian_Islands_campaign"
  },
+ "op-allied-occupied-germany": {
+  "name": "Allied-occupied Germany",
+  "kind": "four power occupation, 1945 to 1949",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Allied-occupied_Germany"
+ },
  "op-altmark-incident": {
   "name": "Altmark incident",
   "kind": "British boarding of a German tanker in Norwegian waters, February 1940",
@@ -2789,6 +2796,13 @@
   "wikidata": "Q2343232",
   "source": "https://en.wikipedia.org/wiki/BOAC_Flight_777"
  },
+ "op-bobruysk-offensive": {
+  "name": "Bobruysk offensive",
+  "kind": "Soviet offensive within Operation Bagration",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bobruysk_offensive"
+ },
  "op-bombardment-of-almeria": {
   "name": "Bombardment of Almeria",
   "kind": "German naval reprisal bombardment, Spanish Civil War",
@@ -4018,6 +4032,13 @@
    "Élysée Accords"
   ]
  },
+ "op-emergency-powers-act-1920": {
+  "name": "Emergency Powers Act 1920",
+  "kind": "British statute for states of emergency",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Emergency_Powers_Act_1920"
+ },
  "op-emergency-powers-defence-act-1939": {
   "name": "Emergency Powers (Defence) Act 1939",
   "kind": "British wartime emergency powers law, extended by the 1940 Act of 22 May 1940",
@@ -4603,6 +4624,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q187650",
   "source": "https://en.wikipedia.org/wiki/Great_Purge"
+ },
+ "op-greater-east-asia-co-prosperity-sphere": {
+  "name": "Greater East Asia Co-Prosperity Sphere",
+  "kind": "Japanese bloc policy",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Greater_East_Asia_Co-Prosperity_Sphere"
  },
  "op-greco-italian-war": {
   "name": "Greco Italian War",
@@ -6221,6 +6249,17 @@
   "wikidata": "Q924671",
   "source": "https://en.wikipedia.org/wiki/Operation_Aerial"
  },
+ "op-operation-agatha": {
+  "name": "Operation Agatha",
+  "kind": "British police and military operation in Palestine, 29 June 1946",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Agatha",
+  "aka": [
+   "Black Sabbath",
+   "Black Saturday"
+  ]
+ },
  "op-operation-anklet": {
   "name": "Operation Anklet",
   "kind": "British commando raid on the Lofoten Islands",
@@ -6860,6 +6899,13 @@
   "wikidata": "Q866137",
   "source": "https://en.wikipedia.org/wiki/Operation_Pike"
  },
+ "op-operation-platinum-fox": {
+  "name": "Operation Platinum Fox",
+  "kind": "northern arm of Silver Fox, from Petsamo toward Murmansk",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Platinum_Fox"
+ },
  "op-operation-plunder": {
   "name": "Operation Plunder",
   "kind": "river crossing operation",
@@ -6931,6 +6977,13 @@
   "aka": [
    "Operation Savannah"
   ]
+ },
+ "op-operation-silver-fox": {
+  "name": "Operation Silver Fox",
+  "kind": "German and Finnish offensive toward Murmansk, 1941",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Silver_Fox"
  },
  "op-operation-sonnenblume": {
   "name": "Operation Sonnenblume",

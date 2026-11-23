@@ -410,6 +410,19 @@
   "lat": 38.624,
   "lon": -28.031
  },
+ "place-babruysk": {
+  "name": "Bobruisk",
+  "kind": "city in Belarus",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Babruysk",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Bobruysk",
+   "Babruysk"
+  ]
+ },
  "place-baghdad": {
   "name": "Baghdad",
   "kind": "city, capital of Iraq",
@@ -2058,6 +2071,15 @@
   "wikidata": "Q79365",
   "lat": 64.0374,
   "lon": -145.7322
+ },
+ "place-derna-libya": {
+  "name": "Derna",
+  "kind": "port town in Libya",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Derna,_Libya",
+  "lat": null,
+  "lon": null
  },
  "place-dessie": {
   "name": "Dessie",
@@ -5923,6 +5945,15 @@
   "lat": 48.1375,
   "lon": 11.575
  },
+ "place-murmansk": {
+  "name": "Murmansk",
+  "kind": "Soviet Arctic port city",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Murmansk",
+  "lat": null,
+  "lon": null
+ },
  "place-musashino-aircraft-plant": {
   "name": "Nakajima Musashino plant",
   "kind": "aircraft engine factory",
@@ -7022,6 +7053,15 @@
   "source": "https://en.wikipedia.org/wiki/Port_Moresby",
   "lat": -9.4789,
   "lon": 147.1494
+ },
+ "place-port-of-london": {
+  "name": "Port of London",
+  "kind": "docks of London",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Port_of_London",
+  "lat": null,
+  "lon": null
  },
  "place-port-of-long-beach": {
   "name": "Long Beach Harbor",

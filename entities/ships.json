@@ -1698,6 +1698,13 @@
    "U-65"
   ]
  },
+ "ship-german-submarine-u-651": {
+  "name": "U-651",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-651"
+ },
  "ship-german-submarine-u-652": {
   "name": "U-652",
   "kind": "Type VIIC U-boat",
@@ -5834,6 +5841,13 @@
   "wikidata": "Q2553643",
   "source": "https://en.wikipedia.org/wiki/Tatsuta_Maru"
  },
+ "ship-toyama-maru": {
+  "name": "Toyama Maru",
+  "kind": "troop transport",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Toyama_Maru"
+ },
  "ship-tss-st-david-1931": {
   "name": "TSS St David",
   "kind": "railway ferry, hospital ship",
@@ -7297,6 +7311,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/USS_St._Lo",
   "wikidata": "Q1365876"
+ },
+ "ship-uss-sturgeon-ss-187": {
+  "name": "USS Sturgeon (SS-187)",
+  "kind": "submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Sturgeon_(SS-187)"
  },
  "ship-uss-sturtevant-dd-240": {
   "name": "USS Sturtevant (DD-240)",
