@@ -522,6 +522,16 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/2/29th_Battalion_(Australia)"
  },
+ "unit-2-5th-commando-squadron-australia": {
+  "name": "2/5th Commando Squadron (Australia)",
+  "kind": "commando unit",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/2/5th_Commando_Squadron_(Australia)",
+  "aka": [
+   "2/5th Independent Company"
+  ]
+ },
  "unit-2-6th-armoured-regiment-australia": {
   "name": "2/6th Armoured Regiment (Australia)",
   "kind": "Australian armoured regiment",
@@ -2298,6 +2308,16 @@
   "wikidata": "Q16958958",
   "source": "https://en.wikipedia.org/wiki/Combined_Production_and_Resources_Board"
  },
+ "unit-cominform": {
+  "name": "Cominform",
+  "kind": "communist information bureau",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Cominform",
+  "aka": [
+   "Communist Information Bureau"
+  ]
+ },
  "unit-commissariat-general-for-jewish-affairs": {
   "name": "Commissariat-General for Jewish Affairs",
   "kind": "Vichy French agency enforcing anti-Jewish laws",
@@ -3402,6 +3422,13 @@
   "wikidata": "Q2570501",
   "source": "https://en.wikipedia.org/wiki/MI9"
  },
+ "unit-milice": {
+  "name": "Milice",
+  "kind": "Vichy paramilitary force",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Milice"
+ },
  "unit-milk-marketing-board": {
   "name": "Milk Marketing Board",
   "kind": "British statutory milk marketing body",
@@ -4034,6 +4061,16 @@
   "wikidata": "Q56282649",
   "source": "https://en.wikipedia.org/wiki/Office_of_Production_Management"
  },
+ "unit-office-of-scientific-research-and-development": {
+  "name": "Office of Scientific Research and Development",
+  "kind": "federal research agency",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Office_of_Scientific_Research_and_Development",
+  "aka": [
+   "OSRD"
+  ]
+ },
  "unit-office-of-strategic-services": {
   "name": "Office of Strategic Services",
   "kind": "intelligence agency",
@@ -4172,6 +4209,16 @@
   "nation": "France",
   "wikidata": "Q2867026",
   "source": "https://en.wikipedia.org/wiki/Provisional_Consultative_Assembly"
+ },
+ "unit-provisional-government-of-national-unity": {
+  "name": "Provisional Government of National Unity",
+  "kind": "provisional government",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Provisional_Government_of_National_Unity",
+  "aka": [
+   "TRJN"
+  ]
  },
  "unit-provisional-government-of-the-french-republic": {
   "name": "Provisional Government of the French Republic",
@@ -5311,6 +5358,16 @@
    "WAAC",
    "WAC",
    "Women's Army Auxiliary Corps"
+  ]
+ },
+ "unit-women-s-auxiliary-air-force": {
+  "name": "Women's Auxiliary Air Force",
+  "kind": "women's air force service",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Women%27s_Auxiliary_Air_Force",
+  "aka": [
+   "WAAF"
   ]
  },
  "unit-works-progress-administration": {

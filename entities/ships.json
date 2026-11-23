@@ -2068,6 +2068,13 @@
    "Arturo"
   ]
  },
+ "ship-german-weather-ship-lauenburg": {
+  "name": "Lauenburg",
+  "kind": "weather ship, converted trawler",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_weather_ship_Lauenburg"
+ },
  "ship-greek-battleship-kilkis": {
   "name": "Greek battleship Kilkis",
   "kind": "Royal Hellenic Navy pre-dreadnought battleship, ex USS Mississippi (BB-23)",

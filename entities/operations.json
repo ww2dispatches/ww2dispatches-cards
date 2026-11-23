@@ -279,6 +279,13 @@
   "wikidata": "Q17989657",
   "source": "https://en.wikipedia.org/wiki/1944_Bombay_explosion"
  },
+ "op-1944-republican-national-convention": {
+  "name": "1944 Republican National Convention",
+  "kind": "party convention",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1944_Republican_National_Convention"
+ },
  "op-1944-tonankai-earthquake": {
   "name": "1944 Tōnankai earthquake",
   "kind": "earthquake and tsunami, 7 December 1944",
@@ -2488,12 +2495,26 @@
   "wikidata": "Q700710",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Villers-Bocage"
  },
+ "op-battle-of-viru-harbor": {
+  "name": "Battle of Viru Harbor",
+  "kind": "battle",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Viru_Harbor"
+ },
  "op-battle-of-visayas": {
   "name": "Battle of Visayas",
   "kind": "1945 campaign in the central Philippines",
   "nation": "US",
   "wikidata": "Q710939",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Visayas"
+ },
+ "op-battle-of-voronezh-1942": {
+  "name": "Battle of Voronezh (1942)",
+  "kind": "battle",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Voronezh_(1942)"
  },
  "op-battle-of-wadi-akarit": {
   "name": "Battle of Wadi Akarit",
@@ -4482,6 +4503,13 @@
   "nation": "Norway",
   "wikidata": "Q819274",
   "source": "https://en.wikipedia.org/wiki/German_occupation_of_Norway"
+ },
+ "op-german-occupation-of-the-channel-islands": {
+  "name": "German occupation of the Channel Islands",
+  "kind": "occupation",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_occupation_of_the_Channel_Islands"
  },
  "op-german-polish-declaration-of-non-aggression": {
   "name": "German-Polish declaration of non-aggression",
@@ -7374,6 +7402,13 @@
    "Raid on Los Baños"
   ]
  },
+ "op-raid-on-salamaua-1942": {
+  "name": "Raid on Salamaua (1942)",
+  "kind": "commando raid",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Raid_on_Salamaua_(1942)"
+ },
  "op-raid-on-souda-bay": {
   "name": "Raid on Souda Bay",
   "kind": "naval raid",
@@ -7916,6 +7951,16 @@
   "nation": "Hungary",
   "wikidata": "Q177109",
   "source": "https://en.wikipedia.org/wiki/Slovak%E2%80%93Hungarian_War"
+ },
+ "op-smith-act": {
+  "name": "Smith Act",
+  "kind": "federal statute",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Smith_Act",
+  "aka": [
+   "Alien Registration Act"
+  ]
  },
  "op-smith-connally-act": {
   "name": "Smith-Connally Act",
