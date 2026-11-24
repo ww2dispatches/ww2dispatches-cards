@@ -2564,6 +2564,15 @@
    "Emirau"
   ]
  },
+ "place-empire-state-building": {
+  "name": "Empire State Building",
+  "kind": "skyscraper in Manhattan, New York City",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Empire_State_Building",
+  "lat": null,
+  "lon": null
+ },
  "place-empress-augusta-bay": {
   "name": "Empress Augusta Bay",
   "kind": "bay",

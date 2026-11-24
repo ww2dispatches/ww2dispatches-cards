@@ -937,6 +937,16 @@
   "wikidata": "Q155642",
   "source": "https://en.wikipedia.org/wiki/Messerschmitt_Bf_110"
  },
+ "aircraft-messerschmitt-me-163-komet": {
+  "name": "Messerschmitt Me 163 Komet",
+  "kind": "German rocket powered interceptor",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Messerschmitt_Me_163_Komet",
+  "aka": [
+   "Me 163"
+  ]
+ },
  "aircraft-messerschmitt-me-210": {
   "name": "Messerschmitt Me 210",
   "kind": "heavy fighter",
@@ -1355,6 +1365,13 @@
   "nation": "US",
   "wikidata": "Q131198257",
   "source": "https://en.wikipedia.org/wiki/Yankee_Clipper_(flying_boat)"
+ },
+ "aircraft-yokosuka-k5y": {
+  "name": "Yokosuka K5Y",
+  "kind": "Japanese navy biplane trainer, used for kamikaze attacks in 1945",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Yokosuka_K5Y"
  },
  "aircraft-yokosuka-mxy-7-ohka": {
   "name": "Ohka",

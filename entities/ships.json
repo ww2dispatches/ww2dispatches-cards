@@ -712,6 +712,13 @@
   "wikidata": "Q481290",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-158_(1941)"
  },
+ "ship-german-submarine-u-159-1941": {
+  "name": "U-159",
+  "kind": "German Type IXC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-159_(1941)"
+ },
  "ship-german-submarine-u-160-1941": {
   "name": "German submarine U-160",
   "kind": "Type IXC U-boat",
@@ -4509,6 +4516,13 @@
   "wikidata": "Q711229",
   "source": "https://en.wikipedia.org/wiki/Japanese_battleship_Asahi"
  },
+ "ship-japanese-battleship-haruna": {
+  "name": "Haruna",
+  "kind": "Japanese Kongo class battleship",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_battleship_Haruna"
+ },
  "ship-japanese-battleship-hiei": {
   "name": "Hiei",
   "kind": "battleship",
@@ -6821,6 +6835,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/USS_Cabot_(CVL-28)",
   "wikidata": "Q2297279"
+ },
+ "ship-uss-callaghan-dd-792": {
+  "name": "USS Callaghan (DD-792)",
+  "kind": "US Navy Fletcher class destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Callaghan_(DD-792)"
  },
  "ship-uss-callaway": {
   "name": "USS Callaway (APA-35)",
