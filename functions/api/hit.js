@@ -16,7 +16,7 @@ const DETAIL = /^(dispatch\/\d{3}-[a-z0-9-]{1,60}|campaign\/[a-z0-9-]{1,50}(\/(d
 const OUTS = new Set(['substack', 'instagram', 'threads', 'x', 'tiktok', 'youtube', 'facebook', 'ko-fi', 'other']);
 const CTAS = new Set(['play', 'collect', 'subscribe', 'guess']);
 const ID = /^[a-z0-9-]{1,70}$/;
-const EVENTS = new Set(['card', 'zoom', 'file', 'share', 'shared', 'guest_starter', 'save_screen', 'dossier', 'sets', 'intercept', 'tour_done', 'tour_skip', 'save_skip', 'save_google', 'save_done', 'save_fail', 'signin_fail', 'case_open', 'case_edit', 'case_share', 'case_callsign', 'card_link', 'save_inapp', 'inapp_copy', 'inapp_open', 'pack_carried', 'inapp_arrive', 'inapp_auto', 'out_landed', 'inapp_stuck', 'email_ask', 'email_sent', 'email_wrong', 'email_done']);
+const EVENTS = new Set(['card', 'zoom', 'file', 'share', 'shared', 'guest_starter', 'save_screen', 'dossier', 'sets', 'intercept', 'tour_done', 'tour_skip', 'save_skip', 'save_google', 'save_done', 'save_fail', 'signin_fail', 'case_open', 'case_edit', 'case_share', 'case_callsign', 'card_link', 'save_inapp', 'inapp_copy', 'inapp_open', 'pack_carried', 'inapp_arrive', 'inapp_auto', 'out_landed', 'inapp_stuck', 'inapp_stayed', 'stayed_facebook', 'stayed_instagram', 'stayed_threads', 'stayed_tiktok', 'stayed_x', 'stayed_other', 'email_ask', 'email_sent', 'email_wrong', 'email_done']);
 
 export async function onRequestPost({ request, env }) {
   const ua = request.headers.get('user-agent') || '';
