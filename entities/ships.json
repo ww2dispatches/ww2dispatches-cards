@@ -207,6 +207,18 @@
    "Vénus"
   ]
  },
+ "ship-generali-class-destroyer": {
+  "name": "Generali-class destroyer",
+  "kind": "destroyer class",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Generali-class_destroyer",
+  "aka": [
+   "Generale Achille Papa",
+   "Italian torpedo boat Generale Achille Papa"
+  ],
+  "note": "Class article; the Generale Achille Papa redirects here."
+ },
  "ship-german-aircraft-carrier-graf-zeppelin": {
   "name": "Graf Zeppelin",
   "kind": "German aircraft carrier, never completed",
@@ -750,6 +762,13 @@
    "U-164"
   ]
  },
+ "ship-german-submarine-u-166-1941": {
+  "name": "German submarine U-166 (1941)",
+  "kind": "submarine",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-166_(1941)"
+ },
  "ship-german-submarine-u-172": {
   "name": "U-172",
   "kind": "Kriegsmarine Type IXC U-boat",
@@ -979,6 +998,13 @@
   "nation": "Germany",
   "wikidata": "Q4051965",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-243"
+ },
+ "ship-german-submarine-u-250": {
+  "name": "German submarine U-250",
+  "kind": "submarine",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-250"
  },
  "ship-german-submarine-u-251": {
   "name": "U-251",
@@ -1390,6 +1416,13 @@
   "nation": "Germany",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-459"
+ },
+ "ship-german-submarine-u-461": {
+  "name": "German submarine U-461",
+  "kind": "supply submarine",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-461"
  },
  "ship-german-submarine-u-463": {
   "name": "German submarine U-463",
@@ -2815,6 +2848,13 @@
   "wikidata": "Q1564459",
   "source": "https://en.wikipedia.org/wiki/HMS_Bulldog_(H91)"
  },
+ "ship-hms-cachalot-n83": {
+  "name": "HMS Cachalot (N83)",
+  "kind": "minelaying submarine",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Cachalot_(N83)"
+ },
  "ship-hms-calcutta-d82": {
   "name": "HMS Calcutta (D82)",
   "kind": "anti aircraft cruiser",
@@ -3096,6 +3136,13 @@
   "nation": "Britain",
   "wikidata": "Q1564721",
   "source": "https://en.wikipedia.org/wiki/HMS_Foylebank"
+ },
+ "ship-hms-furious-47": {
+  "name": "HMS Furious (47)",
+  "kind": "aircraft carrier",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Furious_(47)"
  },
  "ship-hms-galatea-71": {
   "name": "HMS Galatea (71)",
@@ -6434,6 +6481,13 @@
   "nation": "Germany",
   "wikidata": "Q475557",
   "source": "https://en.wikipedia.org/wiki/SS_Rio_de_Janeiro"
+ },
+ "ship-ss-robert-e-lee": {
+  "name": "SS Robert E. Lee",
+  "kind": "passenger ship",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Robert_E._Lee"
  },
  "ship-ss-robin-moor": {
   "name": "SS Robin Moor",

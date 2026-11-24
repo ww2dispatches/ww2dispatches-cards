@@ -439,6 +439,17 @@
    "Fu-Go"
   ]
  },
+ "machine-g7es-torpedo": {
+  "name": "G7es torpedo",
+  "kind": "acoustic homing torpedo",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/G7es_torpedo",
+  "aka": [
+   "T5",
+   "Zaunkonig"
+  ]
+ },
  "machine-gabbiano-class-corvette": {
   "name": "Gabbiano-class corvette",
   "kind": "Italian corvette class, includes Cicogna",

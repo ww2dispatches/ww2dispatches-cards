@@ -1637,6 +1637,13 @@
   "wikidata": "Q1879274",
   "source": "https://en.wikipedia.org/wiki/6th_Division_(Australia)"
  },
+ "unit-6th-infantry-division-united-states": {
+  "name": "6th Infantry Division (United States)",
+  "kind": "infantry division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/6th_Infantry_Division_(United_States)"
+ },
  "unit-6th-marine-division": {
   "name": "6th Marine Division",
   "kind": "US Marine Corps division",
@@ -3283,6 +3290,13 @@
    "HUAC",
    "HCUA"
   ]
+ },
+ "unit-ig-farben": {
+  "name": "IG Farben",
+  "kind": "chemical conglomerate",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/IG_Farben"
  },
  "unit-ii-corps-united-states": {
   "name": "II Corps (United States)",

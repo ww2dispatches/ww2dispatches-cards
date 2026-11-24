@@ -2428,6 +2428,16 @@
   "wikidata": "Q4568436",
   "source": "https://en.wikipedia.org/wiki/Battle_of_San_Pietro_Infine"
  },
+ "op-battle-of-sansapor": {
+  "name": "Battle of Sansapor",
+  "kind": "amphibious landing",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Sansapor",
+  "aka": [
+   "Operation Typhoon"
+  ]
+ },
  "op-battle-of-santa-cruz-islands": {
   "name": "Battle of the Santa Cruz Islands",
   "kind": "naval battle",
@@ -5454,6 +5464,13 @@
   "wikidata": "Q1322509",
   "source": "https://en.wikipedia.org/wiki/If_Day"
  },
+ "op-ig-farben-trial": {
+  "name": "IG Farben Trial",
+  "kind": "war crimes trial",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/IG_Farben_Trial"
+ },
  "op-imber-friendly-fire-incident": {
   "name": "Imber friendly fire incident",
   "kind": "friendly fire accident at a firepower demonstration, 1942",
@@ -6790,6 +6807,13 @@
   "wikidata": "Q1967718",
   "source": "https://en.wikipedia.org/wiki/National_Security_Act_of_1947"
  },
+ "op-national-service-act-1948": {
+  "name": "National Service Act 1948",
+  "kind": "act of parliament",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/National_Service_Act_1948"
+ },
  "op-national-service-armed-forces-act-1939": {
   "name": "National Service (Armed Forces) Act 1939",
   "kind": "British conscription law",
@@ -7143,6 +7167,13 @@
   "wikidata": "Q2025992",
   "source": "https://en.wikipedia.org/wiki/Operation_Blockbuster"
  },
+ "op-operation-bluecoat": {
+  "name": "Operation Bluecoat",
+  "kind": "offensive",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Bluecoat"
+ },
  "op-operation-bodenplatte": {
   "name": "Operation Bodenplatte",
   "kind": "Luftwaffe attack on Allied airfields",
@@ -7369,6 +7400,16 @@
   "nation": "Britain",
   "wikidata": "Q7097003",
   "source": "https://en.wikipedia.org/wiki/Operation_Dracula"
+ },
+ "op-operation-ef-1941": {
+  "name": "Operation EF (1941)",
+  "kind": "carrier air raid",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_EF_(1941)",
+  "aka": [
+   "Raid on Kirkenes and Petsamo"
+  ]
  },
  "op-operation-encore": {
   "name": "Operation Encore",
@@ -8126,6 +8167,13 @@
   "nation": "Soviet Union",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Order_No._227"
+ },
+ "op-order-of-the-german-eagle": {
+  "name": "Order of the German Eagle",
+  "kind": "state decoration",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Order_of_the_German_Eagle"
  },
  "op-oro-alla-patria": {
   "name": "Oro alla Patria",
@@ -9041,6 +9089,16 @@
   "nation": "worldwide",
   "source": "https://en.wikipedia.org/wiki/Siege_of_Tobruk",
   "wikidata": "Q611089"
+ },
+ "op-sikorski-mayski-agreement": {
+  "name": "Sikorski Mayski agreement",
+  "kind": "treaty",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sikorski%E2%80%93Mayski_agreement",
+  "aka": [
+   "Sikorski-Maisky agreement"
+  ]
  },
  "op-sinking-of-prince-of-wales-and-repulse": {
   "name": "Sinking of Prince of Wales and Repulse",
