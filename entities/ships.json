@@ -1264,6 +1264,13 @@
   "wikidata": "Q4052039",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-371"
  },
+ "ship-german-submarine-u-372": {
+  "name": "German submarine U-372",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-372"
+ },
  "ship-german-submarine-u-373": {
   "name": "U-373",
   "kind": "Type VIIC U-boat",
@@ -1493,6 +1500,13 @@
   "nation": "Germany",
   "wikidata": "Q377894",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-488"
+ },
+ "ship-german-submarine-u-489": {
+  "name": "German submarine U-489",
+  "kind": "Type XIV supply U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-489"
  },
  "ship-german-submarine-u-49-1939": {
   "name": "U-49 (1939)",
@@ -2045,6 +2059,13 @@
   "nation": "Germany",
   "wikidata": "Q549654",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-67_(1940)"
+ },
+ "ship-german-submarine-u-671": {
+  "name": "German submarine U-671",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-671"
  },
  "ship-german-submarine-u-672": {
   "name": "U-672",
@@ -5048,6 +5069,13 @@
   "nation": "Japan",
   "wikidata": "Q2990133",
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Makigumo_(1941)"
+ },
+ "ship-japanese-destroyer-matsu-1944": {
+  "name": "Japanese destroyer Matsu (1944)",
+  "kind": "Matsu class escort destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Matsu_(1944)"
  },
  "ship-japanese-destroyer-minazuki-1926": {
   "name": "Minazuki",

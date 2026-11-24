@@ -533,6 +533,13 @@
    "Hs 293"
   ]
  },
+ "machine-holiday-inn-film": {
+  "name": "Holiday Inn (film)",
+  "kind": "1942 Paramount musical film",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Holiday_Inn_(film)"
+ },
  "machine-holy-crown-of-hungary": {
   "name": "Holy Crown of Hungary",
   "kind": "coronation crown, the Crown of St Stephen",
@@ -1203,6 +1210,16 @@
   "nation": "US",
   "wikidata": "Q1195999",
   "source": "https://en.wikipedia.org/wiki/The_Nazi_Plan"
+ },
+ "machine-the-thing-listening-device": {
+  "name": "The Thing (listening device)",
+  "kind": "passive Soviet listening device in a Great Seal carving",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/The_Thing_(listening_device)",
+  "aka": [
+   "Great Seal bug"
+  ]
  },
  "machine-tiger-i": {
   "name": "Tiger I",

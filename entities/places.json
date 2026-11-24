@@ -991,6 +991,15 @@
   "lat": -8.1167,
   "lon": 157.0
  },
+ "place-blank-palace": {
+  "name": "Blank Palace",
+  "kind": "palace on Theatre Square, Warsaw",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Blank_Palace",
+  "lat": null,
+  "lon": null
+ },
  "place-bletchley-park": {
   "name": "Bletchley Park",
   "kind": "codebreaking center",
@@ -1815,6 +1824,15 @@
   "source": "https://en.wikipedia.org/wiki/Chicago_Stadium",
   "lat": 41.8817,
   "lon": -87.6728
+ },
+ "place-chichijima": {
+  "name": "Chichijima",
+  "kind": "island in the Bonin Islands",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Chichijima",
+  "lat": null,
+  "lon": null
  },
  "place-chindwin-river": {
   "name": "Chindwin River",
@@ -2725,6 +2743,15 @@
   "source": "https://en.wikipedia.org/wiki/Firth_of_Clyde",
   "lat": 55.6667,
   "lon": -5.0
+ },
+ "place-florence": {
+  "name": "Florence",
+  "kind": "city",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Florence",
+  "lat": null,
+  "lon": null
  },
  "place-flossenburg-concentration-camp": {
   "name": "Flossenburg concentration camp",
@@ -7271,6 +7298,18 @@
   "lat": 10.0,
   "lon": 118.8333
  },
+ "place-palazzo-pitti": {
+  "name": "Palazzo Pitti",
+  "kind": "palace and museum, Florence",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Palazzo_Pitti",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Pitti Palace"
+  ]
+ },
  "place-palazzo-venezia": {
   "name": "Palazzo Venezia",
   "kind": "palace in Rome, Mussolini's seat of government",
@@ -7612,6 +7651,24 @@
   "source": "https://en.wikipedia.org/wiki/Pompeii_Airfield",
   "lat": 40.7913,
   "lon": 14.484
+ },
+ "place-ponte-santa-trinita": {
+  "name": "Ponte Santa Trinita",
+  "kind": "Renaissance bridge over the Arno, Florence",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ponte_Santa_Trinita",
+  "lat": null,
+  "lon": null
+ },
+ "place-ponte-vecchio": {
+  "name": "Ponte Vecchio",
+  "kind": "medieval bridge over the Arno, Florence",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ponte_Vecchio",
+  "lat": null,
+  "lon": null
  },
  "place-poplar-london": {
   "name": "Poplar",
@@ -9039,6 +9096,15 @@
   "source": "https://en.wikipedia.org/wiki/Soviet_War_Memorial_(Treptower_Park)",
   "lat": 52.4861,
   "lon": 13.4717
+ },
+ "place-spaso-house": {
+  "name": "Spaso House",
+  "kind": "U.S. ambassador's residence, Moscow",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Spaso_House",
+  "lat": null,
+  "lon": null
  },
  "place-speyer": {
   "name": "Speyer",

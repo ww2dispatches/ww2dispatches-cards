@@ -576,6 +576,16 @@
    "Hitler's prophecy speech"
   ]
  },
+ "op-4th-of-august-regime": {
+  "name": "4th of August Regime",
+  "kind": "Metaxas dictatorship in Greece, 1936 to 1941",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/4th_of_August_Regime",
+  "aka": [
+   "Metaxas regime"
+  ]
+ },
  "op-6-february-1934-crisis": {
   "name": "6 February 1934 crisis",
   "kind": "riot and political crisis",
@@ -3698,6 +3708,16 @@
   "aka": [
    "Second Battle of Torokina",
    "Battle of Hill 700"
+  ]
+ },
+ "op-bracero-program": {
+  "name": "Bracero Program",
+  "kind": "U.S. and Mexico farm labor program, 1942 to 1964",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bracero_Program",
+  "aka": [
+   "Mexican Farm Labor Agreement"
   ]
  },
  "op-brazzaville-conference": {
@@ -7151,6 +7171,13 @@
   "nation": "Czechoslovakia",
   "wikidata": "Q715264",
   "source": "https://en.wikipedia.org/wiki/Operation_Anthropoid"
+ },
+ "op-operation-aphrodite": {
+  "name": "Operation Aphrodite",
+  "kind": "USAAF radio controlled B-17 drone program",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Aphrodite"
  },
  "op-operation-appearance": {
   "name": "Operation Appearance",
