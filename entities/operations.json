@@ -497,6 +497,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/1948_Lake_Mead_Boeing_B-29_crash"
  },
+ "op-1948-summer-olympics": {
+  "name": "1948 Summer Olympics",
+  "kind": "Olympic Games, London",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1948_Summer_Olympics"
+ },
  "op-1948-tinker-air-force-base-tornadoes": {
   "name": "1948 Tinker Air Force Base tornadoes",
   "kind": "tornadoes and the first official tornado forecast",
@@ -1906,6 +1913,13 @@
   "nation": "Britain",
   "wikidata": "Q383614",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Kohima"
+ },
+ "op-battle-of-kokoda": {
+  "name": "Battle of Kokoda",
+  "kind": "battle, Kokoda Track campaign",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Kokoda"
  },
  "op-battle-of-kolberg-1945": {
   "name": "Battle of Kolberg (1945)",
@@ -9974,6 +9988,13 @@
   "nation": "Poland",
   "wikidata": "Q160161",
   "source": "https://en.wikipedia.org/wiki/Warsaw_Ghetto_Uprising"
+ },
+ "op-warsaw-uprising": {
+  "name": "Warsaw Uprising",
+  "kind": "uprising by the Polish Home Army, 1944",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Warsaw_Uprising"
  },
  "op-washington-conference-1943": {
   "name": "Washington Conference (1943)",

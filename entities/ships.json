@@ -1812,6 +1812,13 @@
   "wikidata": "Q5551781",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-607"
  },
+ "ship-german-submarine-u-614": {
+  "name": "U-614",
+  "kind": "German Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-614"
+ },
  "ship-german-submarine-u-616": {
   "name": "German submarine U-616",
   "kind": "Type VIIC U-boat",
@@ -3889,6 +3896,13 @@
   "wikidata": "Q1565575",
   "source": "https://en.wikipedia.org/wiki/HMS_Trinidad_(46)"
  },
+ "ship-hms-trooper": {
+  "name": "HMS Trooper (N91)",
+  "kind": "British T class submarine",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Trooper"
+ },
  "ship-hms-truculent-p315": {
   "name": "HMS Truculent (P315)",
   "kind": "T class submarine",
@@ -4424,6 +4438,13 @@
   "wikidata": "Q3874248",
   "source": "https://en.wikipedia.org/wiki/Italian_submarine_Neghelli"
  },
+ "ship-italian-submarine-pietro-micca-1935": {
+  "name": "Italian submarine Pietro Micca",
+  "kind": "Italian minelaying and transport submarine",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_submarine_Pietro_Micca_(1935)"
+ },
  "ship-italian-torpedo-boat-lupo": {
   "name": "Italian torpedo boat Lupo",
   "kind": "Spica class torpedo boat",
@@ -4588,6 +4609,13 @@
   "nation": "Japan",
   "source": "https://en.wikipedia.org/wiki/Japanese_battleship_Yamato",
   "wikidata": "Q215010"
+ },
+ "ship-japanese-cruiser-abukuma": {
+  "name": "Abukuma",
+  "kind": "Japanese light cruiser, 1st Destroyer Squadron flagship",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_cruiser_Abukuma"
  },
  "ship-japanese-cruiser-ashigara": {
   "name": "Ashigara",

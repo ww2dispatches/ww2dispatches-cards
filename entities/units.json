@@ -2239,6 +2239,13 @@
   "wikidata": "Q4834814",
   "source": "https://en.wikipedia.org/wiki/BBC_Forces_Programme"
  },
+ "unit-bbc-light-programme": {
+  "name": "BBC Light Programme",
+  "kind": "BBC national radio service",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/BBC_Light_Programme"
+ },
  "unit-bbc-television": {
   "name": "BBC Television",
   "kind": "British television service",

@@ -5426,6 +5426,15 @@
   "lat": 50.7478,
   "lon": 25.3244
  },
+ "place-luxembourg-palace": {
+  "name": "Luxembourg Palace",
+  "kind": "palace in Paris, seat of the 1946 Peace Conference",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Luxembourg_Palace",
+  "lat": null,
+  "lon": null
+ },
  "place-luzon": {
   "name": "Luzon",
   "kind": "island",
@@ -6515,6 +6524,15 @@
   "aka": [
    "Nanking"
   ]
+ },
+ "place-nankai-university": {
+  "name": "Nankai University",
+  "kind": "university in Tianjin",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Nankai_University",
+  "lat": null,
+  "lon": null
  },
  "place-naples": {
   "name": "Naples",
@@ -8285,6 +8303,15 @@
   "aka": [
    "Saint Petersburg"
   ]
+ },
+ "place-saint-petersburg-conservatory": {
+  "name": "Leningrad Conservatory",
+  "kind": "music conservatory",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Saint_Petersburg_Conservatory",
+  "lat": null,
+  "lon": null
  },
  "place-saint-pierre-and-miquelon": {
   "name": "Saint Pierre and Miquelon",
@@ -10377,6 +10404,15 @@
   "source": "https://en.wikipedia.org/wiki/Wellington",
   "lat": -41.2889,
   "lon": 174.7772
+ },
+ "place-wembley-stadium-1923": {
+  "name": "Wembley Stadium",
+  "kind": "stadium, main venue of the 1948 Olympics",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Wembley_Stadium_(1923)",
+  "lat": null,
+  "lon": null
  },
  "place-wendover-air-force-base": {
   "name": "Wendover Air Force Base",
