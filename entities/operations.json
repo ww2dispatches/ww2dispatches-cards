@@ -483,6 +483,13 @@
   "wikidata": "Q4566258",
   "source": "https://en.wikipedia.org/wiki/1948_Gatow_air_disaster"
  },
+ "op-1948-lake-mead-boeing-b-29-crash": {
+  "name": "1948 Lake Mead Boeing B-29 crash",
+  "kind": "test aircraft ditching",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1948_Lake_Mead_Boeing_B-29_crash"
+ },
  "op-1948-tinker-air-force-base-tornadoes": {
   "name": "1948 Tinker Air Force Base tornadoes",
   "kind": "tornadoes and the first official tornado forecast",
@@ -1743,6 +1750,16 @@
   "nation": "US",
   "wikidata": "Q699897",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Guam_(1941)"
+ },
+ "op-battle-of-guam-1944": {
+  "name": "Battle of Guam (1944)",
+  "kind": "amphibious battle",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Guam_(1944)",
+  "aka": [
+   "Recapture of Guam"
+  ]
  },
  "op-battle-of-hannut": {
   "name": "Battle of Hannut",
@@ -5382,6 +5399,13 @@
   "wikidata": "Q16987280",
   "source": "https://en.wikipedia.org/wiki/Inundation_of_the_Wieringermeer"
  },
+ "op-invasion-of-buna-gona": {
+  "name": "Invasion of Buna Gona",
+  "kind": "Japanese landing in Papua",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Invasion_of_Buna%E2%80%93Gona"
+ },
  "op-invasion-of-elba": {
   "name": "Invasion of Elba",
   "kind": "Operation Brassard, French landing on Elba, 17 to 19 June 1944",
@@ -5829,6 +5853,16 @@
   "nation": "Japan",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Koiso_cabinet"
+ },
+ "op-kokoda-track-campaign": {
+  "name": "Kokoda Track campaign",
+  "kind": "campaign",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kokoda_Track_campaign",
+  "aka": [
+   "Kokoda Trail campaign"
+  ]
  },
  "op-kon-tiki-expedition": {
   "name": "Kon-Tiki expedition",
@@ -9423,6 +9457,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q2633149",
   "source": "https://en.wikipedia.org/wiki/Trial_of_the_Sixteen"
+ },
+ "op-trinity-nuclear-test": {
+  "name": "Trinity (nuclear test)",
+  "kind": "first nuclear weapon test",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Trinity_(nuclear_test)"
  },
  "op-tripartite-pact": {
   "name": "Tripartite Pact",

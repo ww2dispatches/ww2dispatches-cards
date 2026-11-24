@@ -4893,6 +4893,15 @@
   "lat": 60.8428,
   "lon": 31.4597
  },
+ "place-lake-mead": {
+  "name": "Lake Mead",
+  "kind": "reservoir on the Colorado River behind Hoover Dam",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Lake_Mead",
+  "lat": null,
+  "lon": null
+ },
  "place-lakehurst-maxfield-field": {
   "name": "Lakehurst Maxfield Field",
   "kind": "naval air station in New Jersey, site of the Hindenburg disaster",
@@ -5106,6 +5115,18 @@
   "source": "https://en.wikipedia.org/wiki/Lippstadt",
   "lat": 51.6667,
   "lon": 8.35
+ },
+ "place-lithuanian-soviet-socialist-republic": {
+  "name": "Lithuanian Soviet Socialist Republic",
+  "kind": "Soviet republic proclaimed 1940",
+  "nation": "Lithuania",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Lithuanian_Soviet_Socialist_Republic",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Lithuanian SSR"
+  ]
  },
  "place-little-white-house": {
   "name": "Little White House",

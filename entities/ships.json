@@ -858,6 +858,13 @@
   "wikidata": "Q4051941",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-205"
  },
+ "ship-german-submarine-u-212": {
+  "name": "U-212",
+  "kind": "German Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-212"
+ },
  "ship-german-submarine-u-215": {
   "name": "U-215",
   "kind": "U-boat",
@@ -1914,6 +1921,13 @@
   "nation": "Germany",
   "wikidata": "Q571258",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-66_(1940)"
+ },
+ "ship-german-submarine-u-662": {
+  "name": "U-662",
+  "kind": "German Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-662"
  },
  "ship-german-submarine-u-663": {
   "name": "U-663",
@@ -7882,6 +7896,13 @@
   "nation": "US",
   "wikidata": "Q2202467",
   "source": "https://en.wikipedia.org/wiki/USS_Sims_(DD-409)"
+ },
+ "ship-uss-siren-py-13": {
+  "name": "USS Siren (PY-13)",
+  "kind": "U.S. Navy patrol yacht, former luxury yacht",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Siren_(PY-13)"
  },
  "ship-uss-skipjack-ss-184": {
   "name": "USS Skipjack (SS-184)",
