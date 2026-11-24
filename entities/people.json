@@ -413,6 +413,16 @@
   "wikidata": "Q71119",
   "source": "https://en.wikipedia.org/wiki/Alfred_Schlemm"
  },
+ "person-alfred-schreiber": {
+  "name": "Alfred Schreiber",
+  "kind": "fighter pilot",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Alfred_Schreiber",
+  "aka": [
+   "Alfred Schreiber (officer)"
+  ]
+ },
  "person-alfred-wetzler": {
   "name": "Alfred Wetzler",
   "kind": "Auschwitz escapee, co-author of the Vrba-Wetzler report",
@@ -3306,6 +3316,13 @@
   "nation": "Italy",
   "wikidata": "Q543293",
   "source": "https://en.wikipedia.org/wiki/Ezio_Pinza"
+ },
+ "person-ezra-pound": {
+  "name": "Ezra Pound",
+  "kind": "poet and broadcaster",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ezra_Pound"
  },
  "person-fabian-von-schlabrendorff": {
   "name": "Fabian von Schlabrendorff",
@@ -11761,6 +11778,13 @@
   "nation": "Poland",
   "wikidata": "Q555633",
   "source": "https://en.wikipedia.org/wiki/Tadeusz_Pankiewicz"
+ },
+ "person-takakazu-kinashi": {
+  "name": "Takakazu Kinashi",
+  "kind": "submarine commander",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Takakazu_Kinashi"
  },
  "person-takashi-sakai": {
   "name": "Takashi Sakai",

@@ -7504,6 +7504,13 @@
   "wikidata": "Q52315",
   "source": "https://en.wikipedia.org/wiki/Operation_Little_Saturn"
  },
+ "op-operation-livery": {
+  "name": "Operation Livery",
+  "kind": "naval operation",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Livery"
+ },
  "op-operation-lustre": {
   "name": "Operation Lustre",
   "kind": "British move of troops from Egypt to Greece, 1941",
@@ -8148,6 +8155,13 @@
    "Potsdam Day",
    "Tag von Potsdam"
   ]
+ },
+ "op-potsdam-declaration": {
+  "name": "Potsdam Declaration",
+  "kind": "surrender ultimatum",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Potsdam_Declaration"
  },
  "op-prague-offensive": {
   "name": "Prague offensive",

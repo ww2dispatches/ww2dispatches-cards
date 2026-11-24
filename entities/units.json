@@ -572,6 +572,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/2/17th_Battalion_(Australia)"
  },
+ "unit-2-28th-battalion-australia": {
+  "name": "2/28th Battalion (Australia)",
+  "kind": "infantry battalion",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/2/28th_Battalion_(Australia)"
+ },
  "unit-2-29th-battalion-australia": {
   "name": "2/29th Battalion (Australia)",
   "kind": "Australian infantry battalion",
@@ -4329,6 +4336,13 @@
   "wikidata": "Q7043617",
   "source": "https://en.wikipedia.org/wiki/No._53_Squadron_RAF"
  },
+ "unit-no-540-squadron-raf": {
+  "name": "No. 540 Squadron RAF",
+  "kind": "photo reconnaissance squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._540_Squadron_RAF"
+ },
  "unit-no-58-squadron-raf": {
   "name": "No. 58 Squadron RAF",
   "kind": "RAF Coastal Command squadron",
@@ -5494,6 +5508,16 @@
    "U.S. Third Army"
   ],
   "note": "Wikipedia redirects Third United States Army here."
+ },
+ "unit-united-states-army-forces-in-the-far-east": {
+  "name": "United States Army Forces in the Far East",
+  "kind": "army command",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/United_States_Army_Forces_in_the_Far_East",
+  "aka": [
+   "USAFFE"
+  ]
  },
  "unit-united-states-coast-guard": {
   "name": "United States Coast Guard",

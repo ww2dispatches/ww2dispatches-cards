@@ -865,6 +865,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-212"
  },
+ "ship-german-submarine-u-214": {
+  "name": "German submarine U-214",
+  "kind": "submarine",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-214"
+ },
  "ship-german-submarine-u-215": {
   "name": "U-215",
   "kind": "U-boat",
@@ -1167,6 +1174,13 @@
   "nation": "Germany",
   "wikidata": "Q32804",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-352"
+ },
+ "ship-german-submarine-u-359": {
+  "name": "German submarine U-359",
+  "kind": "submarine",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-359"
  },
  "ship-german-submarine-u-361": {
   "name": "German submarine U-361",
@@ -2779,6 +2793,16 @@
   "wikidata": "Q2602194",
   "source": "https://en.wikipedia.org/wiki/HMS_Cleopatra_(33)"
  },
+ "ship-hms-cooke": {
+  "name": "HMS Cooke (K471)",
+  "kind": "frigate",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Cooke",
+  "aka": [
+   "HMS Cooke (K471)"
+  ]
+ },
  "ship-hms-cornwall-56": {
   "name": "HMS Cornwall (56)",
   "kind": "Royal Navy heavy cruiser",
@@ -3924,6 +3948,13 @@
   "nation": "Britain",
   "wikidata": "Q5634835",
   "source": "https://en.wikipedia.org/wiki/HMS_Vervain"
+ },
+ "ship-hms-vestal-j215": {
+  "name": "HMS Vestal (J215)",
+  "kind": "minesweeper",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Vestal_(J215)"
  },
  "ship-hms-victorious-r38": {
   "name": "HMS Victorious (R38)",
@@ -5230,6 +5261,13 @@
   "nation": "Japan",
   "wikidata": "Q4386735",
   "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-28"
+ },
+ "ship-japanese-submarine-i-29": {
+  "name": "Japanese submarine I-29",
+  "kind": "submarine",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-29"
  },
  "ship-japanese-submarine-i-3": {
   "name": "Japanese submarine I-3",
@@ -7885,6 +7923,16 @@
   "nation": "US",
   "wikidata": "Q1122473",
   "source": "https://en.wikipedia.org/wiki/USS_Savannah_(CL-42)"
+ },
+ "ship-uss-sawfish": {
+  "name": "USS Sawfish (SS-276)",
+  "kind": "submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Sawfish",
+  "aka": [
+   "USS Sawfish (SS-276)"
+  ]
  },
  "ship-uss-sculpin-ss-191": {
   "name": "USS Sculpin (SS-191)",
