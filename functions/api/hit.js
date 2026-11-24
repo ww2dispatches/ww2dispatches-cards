@@ -13,7 +13,7 @@ import { bump, sourceName, deviceOf, isBot, PAGES } from '../_lib/tally.js';
 //   collect           a click on Collect this card, by card;  ntopen: a Name This file opened, by case
 // Only shapes on these lists are kept, so nobody can fill the table with made up names.
 const DETAIL = /^(dispatch\/\d{3}-[a-z0-9-]{1,60}|campaign\/[a-z0-9-]{1,50}(\/(day|part)-\d{2})?|issue\/[a-z0-9-]{1,60})$/;
-const OUTS = new Set(['substack', 'instagram', 'threads', 'x', 'tiktok', 'youtube', 'facebook', 'ko-fi', 'other']);
+const OUTS = new Set(['substack', 'instagram', 'threads', 'x', 'tiktok', 'youtube', 'facebook', 'support', 'ko-fi', 'other']); // support: a Stripe gift link (24 Nov 2026); ko-fi retired
 const CTAS = new Set(['play', 'collect', 'subscribe', 'guess']);
 const ID = /^[a-z0-9-]{1,70}$/;
 const EVENTS = new Set(['card', 'zoom', 'file', 'share', 'shared', 'guest_starter', 'save_screen', 'dossier', 'sets', 'intercept', 'tour_done', 'tour_skip', 'save_skip', 'save_google', 'save_done', 'save_fail', 'signin_fail', 'case_open', 'case_edit', 'case_share', 'case_callsign', 'card_link', 'save_inapp', 'inapp_copy', 'inapp_open', 'pack_carried', 'inapp_arrive', 'inapp_auto', 'out_landed', 'inapp_stuck', 'inapp_stayed', 'stayed_facebook', 'stayed_instagram', 'stayed_threads', 'stayed_tiktok', 'stayed_x', 'stayed_other', 'email_ask', 'email_sent', 'email_wrong', 'email_done']);
@@ -33,6 +33,7 @@ export async function onRequestPost({ request, env }) {
     if (b.day1) { rows.push(['visitors', '', 1]); rows.push(['device', deviceOf(ua), 1]); }
     if (b.nw) rows.push(['new', '', 1]);
     if (b.s !== undefined) rows.push(['source', sourceName(b.s), 1]);
+    if (b.g === 'once' && p === 'support') rows.push(['gift', 'once', 1]); // a return from a Stripe gift (24 Nov 2026)
     if (typeof b.d === 'string' && DETAIL.test(b.d) && b.d.split('/')[0] === p) { rows.push(['dview', b.d, 1]); if (b.dv) rows.push(['dvisitor', b.d, 1]); }
   }
   if (Array.isArray(b.c)) {

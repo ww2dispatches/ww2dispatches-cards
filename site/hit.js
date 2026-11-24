@@ -4,6 +4,8 @@
 // admin's (ww_me, set by the console or by signing in to Declass as admin) only adds to an excluded admin count.
 // 18 Nov 2026: also says which dispatch, Campaign Series part or newsletter issue was opened, and counts clicks on links
 // that leave the site, the buttons into Declass, the newsletter signup, and Name This files opened. Totals only, as before.
+// 24 Nov 2026: clicks to a Stripe gift link count as out:support (Ko-fi is retired), and a return to /support?thanks=once
+// counts as one completed gift.
 (function () {
   var ls = function (k, v) { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) { return null; } };
   var ss = function (k, v) { try { if (v === undefined) return sessionStorage.getItem(k); sessionStorage.setItem(k, v); } catch (e) { return null; } };
@@ -35,7 +37,7 @@
   // Clicks worth knowing about: links that leave the site (by where they go), buttons into Declass, the newsletter
   // signup, and Name This files opened. Reads the page as it is, so the pages themselves need no changes; if the Name
   // This markup changes (button.reveal with data-id, #oc-threads, #oc-x), update the two lines that name it here.
-  var OUT = [['substack', /substack\.com$/], ['instagram', /instagram\.com$/], ['threads', /threads\.(net|com)$/], ['x', /(^|\.)(x|twitter)\.com$/], ['tiktok', /tiktok\.com$/], ['youtube', /(youtube\.com|youtu\.be)$/], ['facebook', /facebook\.com$/], ['ko-fi', /ko-fi\.com$/]];
+  var OUT = [['substack', /substack\.com$/], ['instagram', /instagram\.com$/], ['threads', /threads\.(net|com)$/], ['x', /(^|\.)(x|twitter)\.com$/], ['tiktok', /tiktok\.com$/], ['youtube', /(youtube\.com|youtu\.be)$/], ['facebook', /facebook\.com$/], ['support', /(^|\.)buy\.stripe\.com$/]];
   document.addEventListener('click', function (ev) {
     if (off || me()) return;
     var t = ev.target && ev.target.closest ? ev.target.closest('a[href], button.reveal') : null, c = [];
@@ -62,6 +64,16 @@
   }, true);
 
   if (me()) { send({ admin: 1 }); return; }
+
+  // A completed gift: Stripe sends the giver back to /support?thanks=once, and the page takes the query off the
+  // address as soon as it loads, before this script runs. The browser's record of how the page was opened still
+  // has the original address, so read that. A reload opens the clean address, so a gift counts once.
+  var gift = false;
+  if (page === 'support') {
+    var opened = location.href;
+    try { var nav = performance.getEntriesByType('navigation')[0]; if (nav && nav.name) opened = nav.name; } catch (e) {}
+    try { gift = new URL(opened).searchParams.get('thanks') === 'once' || /[?&]thanks=once(&|$)/.test(location.search); } catch (e) {}
+  }
   var d = new Date(), today = d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate();
   var seen = {}; try { seen = JSON.parse(ls('ww_day') || '{}'); } catch (e) {}
   if (seen.d !== today) seen = { d: today, p: [] };
@@ -70,6 +82,7 @@
   if (!seen.p.length) body.day1 = 1;
   if (seen.p.indexOf(page) < 0) { body.v = 1; seen.p.push(page); }
   if (detail) { body.d = detail; if (seen.x.indexOf(detail) < 0) { body.dv = 1; seen.x.push(detail); } }
+  if (gift) body.g = 'once';
   if (!ls('ww_v')) { body.nw = 1; ls('ww_v', '1'); ls('ww_land', page); } // ww_land: the first page this browser ever saw, sent along if it later makes a Declass account
   ls('ww_day', JSON.stringify(seen));
   // source: counted once per visit (browser session), on the first page

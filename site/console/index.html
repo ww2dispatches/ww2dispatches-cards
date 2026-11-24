@@ -182,7 +182,7 @@ const rangeLabel = () => 'last ' + range + ' days';
 const NEW = 'Nothing yet. This count began 18 Nov 2026.';
 const tcase = t => t.split('-').map(w => w ? w[0].toUpperCase() + w.slice(1) : w).join(' ');
 const dname = k => { const [g, a, b] = k.split('/'); return g === 'dispatch' ? 'No. ' + a.slice(0, 3) + ' ' + tcase(a.slice(4)) : g === 'issue' ? tcase(a) : a === 'shelf' ? 'The bookshelf' : b ? tcase(b.replace(/-0?/, ' ')) : 'Series front page'; };
-const OUTN = { substack: 'Substack, the newsletter', instagram: 'Instagram', threads: 'Threads', x: 'X', tiktok: 'TikTok', youtube: 'YouTube', facebook: 'Facebook', 'ko-fi': 'Ko-fi', other: 'Other sites, such as sources' };
+const OUTN = { substack: 'Substack, the newsletter', instagram: 'Instagram', threads: 'Threads', x: 'X', tiktok: 'TikTok', youtube: 'YouTube', facebook: 'Facebook', support: 'Stripe gift page (Support)', 'ko-fi': 'Ko-fi (retired)', other: 'Other sites, such as sources' };
 const CTAN = { play: 'Play Declass', collect: 'Collect this card', subscribe: 'Newsletter sign up', guess: 'Guess on Threads or X' };
 const pickName = k => !k.includes('/') ? (PG[k] || k) : k.startsWith('campaign/') && k !== 'campaign/shelf' ? tcase(k.split('/')[1]) + (k.split('/')[2] ? ', ' + dname(k) : ', front page') : dname(k);
 const ctaName = k => { const [n, pg] = k.split('@'); return (CTAN[n] || n) + ', on ' + (PG[pg] || pg); };
@@ -358,6 +358,7 @@ function site() {
   <div class="grid2">${panel('Dispatch pages, most read', 'The 12 most viewed dispatch pages in the ' + rangeLabel() + '.', hbars(detailRows('dispatch/', d).slice(0, 12), { empty: NEW, pick: 1 }))}
   ${panel('Newsletter issues, most read', 'Issues read on the site in the ' + rangeLabel() + '.', hbars(detailRows('issue/', d).slice(0, 12), { empty: NEW, pick: 1 }))}
   ${panel('Clicks that leave the site', 'Where people go when they click away, in the ' + rangeLabel() + '.', hbars(ranked(tby('out', d), OUTN), { share: 1, empty: NEW }))}
+  ${panel('Support gifts', 'In the ' + rangeLabel() + '. Clicks through to a Stripe gift page, and givers who came back to the thank you page. Stripe has the amounts.', rows([['Clicked through to give', num(sum(tv('out', 'support', d)))], ['Gifts completed', num(sum(tv('gift', 'once', d)))]]))}
   ${panel('Buttons people press', 'The buttons into Declass, the newsletter sign up and Name This guesses, by the page they were on.', hbars(ranked(tby('cta', d)).map(r => ({ k: ctaName(r.id), v: r.v })), { empty: NEW }))}</div>`;
 }
 
@@ -526,6 +527,7 @@ function report() {
     `Dispatch pages this week, views: ${detailRows('dispatch/', w7).slice(0, 8).map(r => r.k + ' ' + r.v).join(', ') || 'none yet'}.`,
     `Campaign Series this week, views: ${Object.entries(tby('dview', w7)).filter(([k]) => k.startsWith('campaign/')).sort().map(([k, n]) => k.slice(9) + ' ' + n).join(', ') || 'none yet'}.`,
     `Name This this week: files opened ${sum(Object.values(tby('ntopen', w7)))}${Object.keys(tby('ntopen', w7)).length ? ' (' + ranked(tby('ntopen', w7)).map(r => cardName(r.id) + ' ' + r.v).join(', ') + ')' : ''}.`,
+    `Support this week: clicked through to a Stripe gift page ${sum(tv('out', 'support', w7))}, gifts completed ${sum(tv('gift', 'once', w7))}.`,
     `Clicks leaving the site this week: ${ranked(tby('out', w7), OUTN).map(r => r.k + ' ' + r.v).join(', ') || 'none yet'}.`,
     `Buttons pressed this week: ${ranked(tby('cta', w7)).map(r => ctaName(r.id) + ' ' + r.v).join('; ') || 'none yet'}. Collect this card by card: ${ranked(tby('collect', w7)).map(r => cardName(r.id) + ' ' + r.v).join(', ') || 'none yet'}.`,
     `New players by the first page they ever saw (all time): ${ranked(tbyAll('signup_land'), PG).map(r => r.k + ' ' + r.v).join(', ') || 'none yet'}.`,
