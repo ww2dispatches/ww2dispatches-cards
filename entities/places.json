@@ -9982,6 +9982,18 @@
   "lat": 38.0356,
   "lon": -78.5033
  },
+ "place-usti-nad-labem": {
+  "name": "Usti nad Labem",
+  "kind": "city",
+  "nation": "Czechoslovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/%C3%9Ast%C3%AD_nad_Labem",
+  "aka": [
+   "Aussig"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-utah-beach": {
   "name": "Utah Beach",
   "kind": "invasion beach, Normandy",

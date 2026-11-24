@@ -3377,6 +3377,16 @@
    "IMF"
   ]
  },
+ "unit-international-olympic-committee": {
+  "name": "International Olympic Committee",
+  "kind": "sports governing body",
+  "nation": "Switzerland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/International_Olympic_Committee",
+  "aka": [
+   "IOC"
+  ]
+ },
  "unit-irgun": {
   "name": "Irgun",
   "kind": "Zionist underground organization",
@@ -4097,6 +4107,13 @@
   "nation": "Britain",
   "wikidata": "Q7042866",
   "source": "https://en.wikipedia.org/wiki/No._111_Squadron_RAF"
+ },
+ "unit-no-113-squadron-rcaf": {
+  "name": "No. 113 Squadron RCAF",
+  "kind": "bomber reconnaissance squadron",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._113_Squadron_RCAF"
  },
  "unit-no-115-squadron-raf": {
   "name": "No. 115 Squadron RAF",

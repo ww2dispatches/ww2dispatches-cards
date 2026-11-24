@@ -207,6 +207,13 @@
   "wikidata": "Q20977783",
   "source": "https://en.wikipedia.org/wiki/1942_Herefordshire_TRE_Halifax_crash"
  },
+ "op-1942-indianapolis-500": {
+  "name": "1942 Indianapolis 500",
+  "kind": "cancelled race, wartime racing ban",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1942_Indianapolis_500"
+ },
  "op-1942-japanese-general-election": {
   "name": "1942 Japanese general election",
   "kind": "wartime general election",
@@ -4771,6 +4778,13 @@
   "wikidata": "Q3915497",
   "source": "https://en.wikipedia.org/wiki/Final_offensive_of_the_Spanish_Civil_War"
  },
+ "op-final-solution": {
+  "name": "Final Solution",
+  "kind": "Nazi plan to murder the Jews of Europe",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Final_Solution"
+ },
  "op-finno-soviet-treaty-of-1948": {
   "name": "Finno-Soviet Treaty of 1948",
   "kind": "treaty",
@@ -6624,6 +6638,16 @@
   "nation": "Australia",
   "wikidata": "Q2174742",
   "source": "https://en.wikipedia.org/wiki/Morotai_Mutiny"
+ },
+ "op-morrison-grady-plan": {
+  "name": "Morrison-Grady Plan",
+  "kind": "Anglo-American plan for Palestine",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Morrison%E2%80%93Grady_Plan",
+  "aka": [
+   "Provincial Autonomy Plan"
+  ]
  },
  "op-moscow-conference-1945": {
   "name": "Moscow Conference (1945)",
@@ -9854,6 +9878,13 @@
   "nation": "US",
   "wikidata": "Q2049158",
   "source": "https://en.wikipedia.org/wiki/USS_Panay_incident"
+ },
+ "op-usti-massacre": {
+  "name": "Usti massacre",
+  "kind": "massacre of ethnic German civilians",
+  "nation": "Czechoslovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/%C3%9Ast%C3%AD_massacre"
  },
  "op-v-sign": {
   "name": "V sign",

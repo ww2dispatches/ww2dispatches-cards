@@ -837,6 +837,13 @@
   "wikidata": "Q2023336",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-194"
  },
+ "ship-german-submarine-u-199": {
+  "name": "German submarine U-199",
+  "kind": "U-boat, Type IXD2",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-199"
+ },
  "ship-german-submarine-u-200": {
   "name": "U-200",
   "kind": "Kriegsmarine U-boat",
@@ -871,6 +878,13 @@
   "nation": "Germany",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-212"
+ },
+ "ship-german-submarine-u-213": {
+  "name": "German submarine U-213",
+  "kind": "U-boat, Type VIID",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-213"
  },
  "ship-german-submarine-u-214": {
   "name": "German submarine U-214",
@@ -2098,6 +2112,13 @@
   "nation": "Germany",
   "wikidata": "Q2572860",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-753"
+ },
+ "ship-german-submarine-u-754": {
+  "name": "German submarine U-754",
+  "kind": "U-boat, Type VIIC",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-754"
  },
  "ship-german-submarine-u-755": {
   "name": "German submarine U-755",
@@ -7177,6 +7198,13 @@
   "nation": "US",
   "wikidata": "Q6142417",
   "source": "https://en.wikipedia.org/wiki/USS_Growler_(SS-215)"
+ },
+ "ship-uss-grunion": {
+  "name": "USS Grunion (SS-216)",
+  "kind": "submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Grunion"
  },
  "ship-uss-guadalcanal-cve-60": {
   "name": "USS Guadalcanal (CVE-60)",
