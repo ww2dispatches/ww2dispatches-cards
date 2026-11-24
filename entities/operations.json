@@ -2842,6 +2842,16 @@
   "wikidata": "Q701195",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Velikiye_Luki"
  },
+ "op-battle-of-verrieres-ridge": {
+  "name": "Battle of Verrieres Ridge",
+  "kind": "Normandy battle, July 1944",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Verri%C3%A8res_Ridge",
+  "aka": [
+   "Verrières Ridge"
+  ]
+ },
  "op-battle-of-villers-bocage": {
   "name": "Battle of Villers-Bocage",
   "kind": "battle",
@@ -5757,6 +5767,13 @@
   "wikidata": "Q6310467",
   "source": "https://en.wikipedia.org/wiki/July_1936_military_uprising_in_Melilla"
  },
+ "op-july-putsch": {
+  "name": "July Putsch",
+  "kind": "failed Austrian Nazi coup, 25 July 1934",
+  "nation": "Austria",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/July_Putsch"
+ },
  "op-june-deportation": {
   "name": "June deportation",
   "kind": "1941 Soviet mass deportations from the Baltic states and other regions",
@@ -6558,6 +6575,13 @@
   "nation": "Vatican City",
   "wikidata": "Q162663",
   "source": "https://en.wikipedia.org/wiki/Mit_brennender_Sorge"
+ },
+ "op-moore-s-ford-lynchings": {
+  "name": "Moore's Ford lynchings",
+  "kind": "1946 mob murder of two Black couples in Georgia",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Moore%27s_Ford_lynchings"
  },
  "op-morgan-line": {
   "name": "Morgan Line",
@@ -7774,6 +7798,13 @@
   "nation": "Germany",
   "wikidata": "Q708223",
   "source": "https://en.wikipedia.org/wiki/Operation_Sonnenblume"
+ },
+ "op-operation-spring": {
+  "name": "Operation Spring",
+  "kind": "Canadian attack south of Caen, 25 to 27 July 1944",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Spring"
  },
  "op-operation-spring-awakening": {
   "name": "Operation Spring Awakening",

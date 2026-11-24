@@ -2287,6 +2287,16 @@
   "wikidata": "Q934022",
   "source": "https://en.wikipedia.org/wiki/Black_Sea_Fleet"
  },
+ "unit-black-watch-royal-highland-regiment-of-canada": {
+  "name": "The Black Watch (Royal Highland Regiment) of Canada",
+  "kind": "Canadian infantry regiment",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Black_Watch_(Royal_Highland_Regiment)_of_Canada",
+  "aka": [
+   "Black Watch of Canada"
+  ]
+ },
  "unit-blue-division": {
   "name": "Blue Division",
   "kind": "Spanish volunteer division, the Wehrmacht's 250th Infantry Division",
@@ -4831,6 +4841,13 @@
    "Propaganda Ministry",
    "RMVP"
   ]
+ },
+ "unit-reich-plenipotentiary-for-total-war": {
+  "name": "Reich Plenipotentiary for the Total War Effort",
+  "kind": "Nazi government office held by Goebbels",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Reich_Plenipotentiary_for_Total_War"
  },
  "unit-reich-security-main-office": {
   "name": "Reich Security Main Office",

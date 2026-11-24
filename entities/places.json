@@ -7052,6 +7052,15 @@
   "wikidata": "Q3277527",
   "source": "https://en.wikipedia.org/wiki/Oro_Bay"
  },
+ "place-orote-peninsula": {
+  "name": "Orote Peninsula",
+  "kind": "peninsula on Guam",
+  "nation": "Guam",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Orote_Peninsula",
+  "lat": null,
+  "lon": null
+ },
  "place-orpington": {
   "name": "Orpington",
   "kind": "Kent town hit by the last V-2 of 27 March 1945",
@@ -8159,6 +8168,18 @@
   "lat": -9.07,
   "lon": 159.15
  },
+ "place-rutli": {
+  "name": "Rutli",
+  "kind": "meadow on Lake Lucerne, site of the 1940 Rutli Report",
+  "nation": "Switzerland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/R%C3%BCtli",
+  "aka": [
+   "Rütli"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-sachsenhausen-concentration-camp": {
   "name": "Sachsenhausen",
   "kind": "Nazi concentration camp",
@@ -8197,6 +8218,19 @@
   "wikidata": "Q473663",
   "lat": 43.7464,
   "lon": 7.1433
+ },
+ "place-saint-lo": {
+  "name": "Saint-Lo",
+  "kind": "town in Normandy",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Saint-L%C3%B4",
+  "aka": [
+   "Saint-Lô",
+   "St. Lo"
+  ],
+  "lat": null,
+  "lon": null
  },
  "place-saint-louis-university": {
   "name": "Saint Louis University",
@@ -9074,6 +9108,15 @@
   "wikidata": "Q4068",
   "lat": 50.7667,
   "lon": 6.2333
+ },
+ "place-strait-of-dover": {
+  "name": "Strait of Dover",
+  "kind": "strait between England and France",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Strait_of_Dover",
+  "lat": null,
+  "lon": null
  },
  "place-strasbourg": {
   "name": "Strasbourg",
@@ -10223,6 +10266,15 @@
   ],
   "lat": 37.9331,
   "lon": -75.4721
+ },
+ "place-walton-county-georgia": {
+  "name": "Walton County, Georgia",
+  "kind": "county in Georgia",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Walton_County,_Georgia",
+  "lat": null,
+  "lon": null
  },
  "place-warm-springs-georgia": {
   "name": "Warm Springs, Georgia",

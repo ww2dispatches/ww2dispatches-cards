@@ -6607,6 +6607,13 @@
   "wikidata": "Q506022",
   "source": "https://en.wikipedia.org/wiki/USS_Arizona"
  },
+ "ship-uss-arkansas-bb-33": {
+  "name": "USS Arkansas (BB-33)",
+  "kind": "Wyoming class battleship",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Arkansas_(BB-33)"
+ },
  "ship-uss-asheville-pg-21": {
   "name": "USS Asheville (PG-21)",
   "kind": "gunboat",
@@ -7171,6 +7178,13 @@
   "nation": "US",
   "wikidata": "Q6147269",
   "source": "https://en.wikipedia.org/wiki/USS_Harder_(SS-257)"
+ },
+ "ship-uss-harmon-de-678": {
+  "name": "USS Harmon (DE-678)",
+  "kind": "Buckley class destroyer escort",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Harmon_(DE-678)"
  },
  "ship-uss-helena-cl-50": {
   "name": "USS Helena (CL-50)",
@@ -7934,6 +7948,13 @@
   "nation": "US",
   "wikidata": "Q2066079",
   "source": "https://en.wikipedia.org/wiki/USS_Salt_Lake_City_(CA-25)"
+ },
+ "ship-uss-san-francisco-ca-38": {
+  "name": "USS San Francisco (CA-38)",
+  "kind": "New Orleans class heavy cruiser",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_San_Francisco_(CA-38)"
  },
  "ship-uss-sand-lance-ss-381": {
   "name": "USS Sand Lance (SS-381)",
