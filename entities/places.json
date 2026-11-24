@@ -8550,6 +8550,15 @@
   "lat": 43.3303,
   "lon": -3.0314
  },
+ "place-saranac-lake-new-york": {
+  "name": "Saranac Lake, New York",
+  "kind": "village in the Adirondacks, where Quezon died",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Saranac_Lake,_New_York",
+  "lat": null,
+  "lon": null
+ },
  "place-sark": {
   "name": "Sark",
   "kind": "Channel Island",
@@ -9085,6 +9094,18 @@
   "lat": 46.9244,
   "lon": -55.3928
  },
+ "place-st-louis-lambert-international-airport": {
+  "name": "Lambert Field, St. Louis",
+  "kind": "airport, now St. Louis Lambert International Airport",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/St._Louis_Lambert_International_Airport",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Lambert Field"
+  ]
+ },
  "place-st-marychurch": {
   "name": "St Marychurch",
   "kind": "district of Torquay, Devon",
@@ -9171,6 +9192,15 @@
   ],
   "lat": 51.2557,
   "lon": 21.5979
+ },
+ "place-state-of-burma": {
+  "name": "State of Burma",
+  "kind": "Japanese sponsored state, 1943 to 1945",
+  "nation": "Burma",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/State_of_Burma",
+  "lat": null,
+  "lon": null
  },
  "place-stepney": {
   "name": "Stepney",

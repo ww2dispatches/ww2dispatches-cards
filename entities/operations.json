@@ -203,6 +203,16 @@
   "wikidata": "Q16825748",
   "source": "https://en.wikipedia.org/wiki/1941_theatre_strike_in_Norway"
  },
+ "op-1942-1944-musicians-strike": {
+  "name": "1942 to 1944 musicians' strike",
+  "kind": "AFM recording ban",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1942%E2%80%931944_musicians%27_strike",
+  "aka": [
+   "Petrillo ban"
+  ]
+ },
  "op-1942-canadian-conscription-plebiscite": {
   "name": "1942 Canadian conscription plebiscite",
   "kind": "national plebiscite",
@@ -1032,6 +1042,16 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Atomic_bombings_of_Hiroshima_and_Nagasaki",
   "wikidata": "Q488"
+ },
+ "op-atomic-energy-act-of-1946": {
+  "name": "Atomic Energy Act of 1946",
+  "kind": "U.S. law putting atomic energy under civilian control",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Atomic_Energy_Act_of_1946",
+  "aka": [
+   "McMahon Act"
+  ]
  },
  "op-attack-on-aruba": {
   "name": "Attack on Aruba",
@@ -5336,6 +5356,13 @@
    "Halifax VE Day riots"
   ]
  },
+ "op-harlem-riot-of-1943": {
+  "name": "Harlem riot of 1943",
+  "kind": "riot in Harlem, 1 and 2 August 1943",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Harlem_riot_of_1943"
+ },
  "op-hartford-circus-fire": {
   "name": "Hartford circus fire",
   "kind": "fire disaster",
@@ -6188,6 +6215,13 @@
   "nation": "Germany",
   "wikidata": "Q700285",
   "source": "https://en.wikipedia.org/wiki/Last_will_and_testament_of_Adolf_Hitler"
+ },
+ "op-law-concerning-the-head-of-state-of-the-german-reich": {
+  "name": "Law Concerning the Head of State of the German Reich",
+  "kind": "1934 law merging the offices of president and chancellor",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Law_Concerning_the_Head_of_State_of_the_German_Reich"
  },
  "op-law-for-the-prevention-of-hereditarily-diseased-offspring": {
   "name": "Law for the Prevention of Hereditarily Diseased Offspring",
@@ -8039,6 +8073,13 @@
   "wikidata": "Q12797943",
   "source": "https://en.wikipedia.org/wiki/Operation_Thursday"
  },
+ "op-operation-tidal-wave": {
+  "name": "Operation Tidal Wave",
+  "kind": "low level B-24 raid on the Ploiesti refineries, 1 August 1943",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Tidal_Wave"
+ },
  "op-operation-torch": {
   "name": "Operation Torch",
   "kind": "amphibious landings",
@@ -8317,6 +8358,13 @@
   "aka": [
    "PAYE"
   ]
+ },
+ "op-philadelphia-transit-strike-of-1944": {
+  "name": "Philadelphia transit strike of 1944",
+  "kind": "white transit workers' strike against the promotion of Black workers",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Philadelphia_transit_strike_of_1944"
  },
  "op-philippines-campaign-1941-1942": {
   "name": "Philippines campaign (1941 to 1942)",

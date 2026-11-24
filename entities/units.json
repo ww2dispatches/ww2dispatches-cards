@@ -2077,6 +2077,13 @@
   ],
   "note": "Joint command of the US, Britain, the Netherlands, and Australia"
  },
+ "unit-american-federation-of-musicians": {
+  "name": "American Federation of Musicians",
+  "kind": "U.S. musicians' union",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/American_Federation_of_Musicians"
+ },
  "unit-american-youth-congress": {
   "name": "American Youth Congress",
   "kind": "American youth organization",
@@ -4979,6 +4986,13 @@
   "source": "https://en.wikipedia.org/wiki/Roberts_Commissions",
   "note": "Wikipedia's article covers both Roberts commissions; this entity is the Pearl Harbor one (Executive Order 8983)"
  },
+ "unit-robertson-aircraft-corporation": {
+  "name": "Robertson Aircraft Corporation",
+  "kind": "St. Louis aircraft maker, CG-4A subcontractor",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Robertson_Aircraft_Corporation"
+ },
  "unit-royal-hampshire-regiment": {
   "name": "Royal Hampshire Regiment",
   "kind": "British infantry regiment",
@@ -5451,6 +5465,13 @@
   "wikidata": "Q2807513",
   "source": "https://en.wikipedia.org/wiki/Twelfth_Air_Force"
  },
+ "unit-twelfth-united-states-army-group": {
+  "name": "12th Army Group",
+  "kind": "U.S. army group under Omar Bradley",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Twelfth_United_States_Army_Group"
+ },
  "unit-twenty-fifth-army-japan": {
   "name": "Twenty-Fifth Army",
   "kind": "Imperial Japanese Army field army",
@@ -5614,6 +5635,13 @@
   "aka": [
    "USAFFE"
   ]
+ },
+ "unit-united-states-atomic-energy-commission": {
+  "name": "United States Atomic Energy Commission",
+  "kind": "civilian agency created by the Atomic Energy Act of 1946",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/United_States_Atomic_Energy_Commission"
  },
  "unit-united-states-coast-guard": {
   "name": "United States Coast Guard",
