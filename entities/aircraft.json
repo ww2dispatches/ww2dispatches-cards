@@ -256,6 +256,16 @@
    "Black Cat"
   ]
  },
+ "aircraft-convair-b-36-peacemaker": {
+  "name": "Convair B-36 Peacemaker",
+  "kind": "US six engined intercontinental bomber",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Convair_B-36_Peacemaker",
+  "aka": [
+   "B-36"
+  ]
+ },
  "aircraft-curtiss-f11c-goshawk": {
   "name": "Curtiss Hawk II",
   "kind": "biplane fighter",

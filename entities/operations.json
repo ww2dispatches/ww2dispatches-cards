@@ -6207,6 +6207,13 @@
   "wikidata": "Q667890",
   "source": "https://en.wikipedia.org/wiki/Lviv_pogroms_(1941)"
  },
+ "op-lwow-uprising": {
+  "name": "Lwów Uprising",
+  "kind": "July 1944 Home Army uprising in Lwów",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Lw%C3%B3w_Uprising"
+ },
  "op-lytton-report": {
   "name": "Lytton Report",
   "kind": "League of Nations commission and report on the Manchurian crisis, 1932",
@@ -7028,6 +7035,13 @@
   "wikidata": "Q3883939",
   "source": "https://en.wikipedia.org/wiki/Operation_Bowler"
  },
+ "op-operation-braunschweig": {
+  "name": "Operation Braunschweig",
+  "kind": "1942 German offensive in southern Russia, renamed from Case Blue",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Braunschweig"
+ },
  "op-operation-brevity": {
   "name": "Operation Brevity",
   "kind": "British offensive in the Western Desert, May 1941",
@@ -7775,6 +7789,13 @@
   "wikidata": "Q136309567",
   "source": "https://en.wikipedia.org/wiki/Operation_Strike"
  },
+ "op-operation-substance": {
+  "name": "Operation Substance",
+  "kind": "July 1941 British convoy operation to Malta",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Substance"
+ },
  "op-operation-sunrise-world-war-ii": {
   "name": "Operation Sunrise (World War II)",
   "kind": "secret surrender talks for Italy",
@@ -7795,6 +7816,17 @@
   "nation": "US",
   "wikidata": "Q1573520",
   "source": "https://en.wikipedia.org/wiki/Operation_Teardrop"
+ },
+ "op-operation-tempest": {
+  "name": "Operation Tempest",
+  "kind": "1944 to 1945 Home Army uprisings in Poland",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Tempest",
+  "aka": [
+   "Akcja Burza",
+   "Operation Storm"
+  ]
  },
  "op-operation-thursday": {
   "name": "Operation Thursday",
@@ -9921,6 +9953,13 @@
   "nation": "Britain",
   "wikidata": "Q7979114",
   "source": "https://en.wikipedia.org/wiki/Wedding_of_Princess_Elizabeth_and_Philip_Mountbatten"
+ },
+ "op-welles-declaration": {
+  "name": "Welles Declaration",
+  "kind": "1940 US statement refusing to recognize the Soviet annexation of the Baltic states",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Welles_Declaration"
  },
  "op-west-loch-disaster": {
   "name": "West Loch disaster",

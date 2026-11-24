@@ -1258,6 +1258,13 @@
   "wikidata": "Q14623219",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-404"
  },
+ "ship-german-submarine-u-407": {
+  "name": "U-407",
+  "kind": "German Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-407"
+ },
  "ship-german-submarine-u-409": {
   "name": "U-409",
   "kind": "Kriegsmarine U-boat",
@@ -1533,6 +1540,13 @@
   "nation": "Germany",
   "wikidata": "Q2000211",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-524"
+ },
+ "ship-german-submarine-u-527": {
+  "name": "U-527",
+  "kind": "German Type IXC/40 U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-527"
  },
  "ship-german-submarine-u-528": {
   "name": "U-528",
@@ -2926,6 +2940,13 @@
   "wikidata": "Q9568",
   "source": "https://en.wikipedia.org/wiki/HMS_Eagle_(1918)"
  },
+ "ship-hms-eclipse-h08": {
+  "name": "HMS Eclipse (H08)",
+  "kind": "Royal Navy E class destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Eclipse_(H08)"
+ },
  "ship-hms-edinburgh-16": {
   "name": "HMS Edinburgh (16)",
   "kind": "Town class light cruiser",
@@ -3454,6 +3475,16 @@
   "nation": "Britain",
   "wikidata": "Q941405",
   "source": "https://en.wikipedia.org/wiki/HMS_Neptune_(20)"
+ },
+ "ship-hms-newfoundland": {
+  "name": "HMS Newfoundland",
+  "kind": "Royal Navy Fiji class light cruiser",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Newfoundland",
+  "aka": [
+   "HMS Newfoundland (59)"
+  ]
  },
  "ship-hms-nith-k215": {
   "name": "HMS Nith (K215)",
@@ -4314,6 +4345,13 @@
   "nation": "Italy",
   "wikidata": "Q371990",
   "source": "https://en.wikipedia.org/wiki/Italian_submarine_Archimede_(1939)"
+ },
+ "ship-italian-submarine-ascianghi": {
+  "name": "Ascianghi",
+  "kind": "Italian Adua class submarine",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_submarine_Ascianghi"
  },
  "ship-italian-submarine-barbarigo": {
   "name": "Italian submarine Barbarigo",
