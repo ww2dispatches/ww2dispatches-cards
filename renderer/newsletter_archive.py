@@ -460,7 +460,8 @@ def write_llms(issues):
              f"- [The Campaign Shelf]({SITE}/campaign-series/): every Campaign Series, each a book with Day by Day and The Chronicle",
              f"- [Name This]({SITE}/name-this/): a mystery WW2 photo twice a week, with every closed case and its answer",
              f"- [The Weekly Dispatch]({SITE}/newsletter/): one story from that week in the war, told in full, every Sunday",
-             f"- [Declass]({SITE}/declass): the daily WW2 card game", ""]
+             f"- [Declass]({SITE}/declass): the daily WW2 card game",
+             f"- [Support WW2 Dispatches]({SITE}/support): a one time gift through Stripe; everything stays free to read", ""]
     shelf = os.path.join(ROOT, "site", "campaign-series", "shelf.json")
     vols = [v for v in (json.load(open(shelf, encoding="utf-8")).get("volumes") or []) if v.get("url")] if os.path.exists(shelf) else []
     camp = campaign_urls()

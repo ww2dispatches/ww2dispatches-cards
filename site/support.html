@@ -5,9 +5,7 @@
 <script>/* www.ww2dispatches.com shows the same site; send it to the main address so sign in and saved state stay in one place (13 Nov 2026). */if(location.hostname==="www.ww2dispatches.com")location.replace("https://ww2dispatches.com"+location.pathname+location.search+location.hash);</script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Support WW2 Dispatches</title>
-<meta name="description" content="Help keep WW2 Dispatches free. A one time gift or a small monthly pledge pays for archive research, books, and the tools behind every dispatch.">
-<!-- Unlisted until launch: remove this line when the Stripe links are in and the page is announced. -->
-<meta name="robots" content="noindex">
+<meta name="description" content="Help keep WW2 Dispatches free. A one time gift pays for archive research, books, and the tools behind every dispatch.">
 <meta name="theme-color" content="#120F0C">
 <link rel="canonical" href="https://ww2dispatches.com/support">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -72,10 +70,13 @@ a { color: inherit; }
   border: 2px solid var(--brass); border-radius: 3px; padding: 2px 7px; transform: rotate(-4deg); white-space: nowrap; }
 .inner { padding: 16px; display: flex; flex-direction: column; gap: 14px; }
 
-.freq { display: grid; grid-template-columns: 1fr 1fr; border: 2px solid var(--ink); border-radius: 4px; overflow: hidden; }
-.freq button { font: 600 15px var(--display); letter-spacing: 1.5px; text-transform: uppercase; padding: 10px 8px; border: 0; background: transparent; color: var(--ink); cursor: pointer; }
-.freq button + button { border-left: 2px solid var(--ink); }
-.freq button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.thanks { background: var(--paper); color: var(--ink); border-radius: 6px; padding: 20px 18px; text-align: center; box-shadow: 0 0 0 2px var(--ink) inset, 0 14px 30px rgba(0,0,0,.5); }
+.thanks-k { display: inline-block; margin: 0 0 6px; font: 700 12px var(--display); letter-spacing: 2px; text-transform: uppercase; color: var(--red);
+  border: 2px solid var(--red); border-radius: 3px; padding: 2px 9px; transform: rotate(-3deg); }
+.thanks h2 { font-size: 30px; letter-spacing: 1px; margin: 0 0 6px; }
+.thanks p { margin: 0 0 14px; font-family: var(--type); font-size: 15px; line-height: 1.45; }
+.thanks-go { display: grid; gap: 8px; }
+.thanks-go .btn { font: 600 15px var(--display); letter-spacing: 1.5px; text-transform: uppercase; border-radius: 4px; }
 
 .tiers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
 .tier { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; min-height: 84px; padding: 10px 4px;
@@ -140,16 +141,19 @@ footer { text-align: center; font-family: var(--type); font-size: 13px; color: v
     <p class="lede">Every dispatch is researched, checked against sources, and paired with a real archival photo. It is free, with no ads, and readers like you keep it that way.</p>
   </header>
 
+  <section class="thanks" id="thanks" hidden tabindex="-1" aria-labelledby="thanks-h">
+    <p class="thanks-k">Received</p>
+    <h2 id="thanks-h">Thank you</h2>
+    <p>Your gift keeps the dispatches coming. Stripe is emailing your receipt now.</p>
+    <div class="thanks-go"><a class="btn red" href="/on-this-day/">Read today's dispatches</a><a class="btn cream" href="/declass">Play Declass</a></div>
+  </section>
+
   <section class="sheet" aria-labelledby="pledge-h">
-    <div class="band"><b id="pledge-h">Pledge</b><i id="stamp">Secure checkout</i></div>
+    <div class="band"><b id="pledge-h">Give once</b><i id="stamp">Secure checkout</i></div>
     <div class="inner">
-      <div class="freq" role="group" aria-label="How often">
-        <button type="button" id="f-once" aria-pressed="true">One time</button>
-        <button type="button" id="f-monthly" aria-pressed="false">Monthly</button>
-      </div>
       <div class="tiers" id="tiers" role="group" aria-label="Amount"></div>
       <p class="rank" id="rank" aria-live="polite"></p>
-      <a class="give" id="give" href="#" target="_blank" rel="noopener">Give</a>
+      <a class="give" id="give" href="#">Give</a>
       <p class="fine" id="fine">Payments are handled by Stripe. We never see your card details.</p>
     </div>
   </section>
@@ -188,78 +192,55 @@ footer { text-align: center; font-family: var(--type); font-size: 13px; color: v
 
 <script>
 (function () {
-  // Stripe Payment Links. Paste each link from the Stripe Dashboard (Payment Links) once the account is open.
-  // One time: fixed price links, plus a "customer chooses what to pay" link for Other.
-  // Monthly: recurring price links (Stripe subscriptions). portal: the Stripe customer portal login link,
-  // where monthly supporters change or cancel their pledge on their own.
+  // Stripe Payment Links (live, Wraithlight Digital LLC; made 24 Nov 2026). One time gifts only (Brian, 24 Nov 2026):
+  // no monthly pledges, so there is no customer portal. Each link sends the giver back to /support?thanks=once.
+  // Other is a Stripe "customers choose what to pay" link ($15 preset, $3 minimum).
   var STRIPE = {
-    once:    { 5: "", 10: "", 25: "", other: "" },
-    monthly: { 3: "", 5: "", 10: "" },
-    portal:  ""
+    5: "https://buy.stripe.com/3cI8wRcbN0ze5a1f2ZejK00",
+    10: "https://buy.stripe.com/5kQ00lcbN3Lq0TL7AxejK03",
+    25: "https://buy.stripe.com/8x29AVfnZfu8dGxg73ejK02",
+    other: "https://buy.stripe.com/7sYeVf7VxbdS5a13khejK04"
   };
+  var TIERS = [
+    { amt: 5,  name: "A coffee",        note: "Buys the coffee behind an early morning of research." },
+    { amt: 10, name: "A history book",  note: "Covers a used history book for the reference shelf." },
+    { amt: 25, name: "An archive copy", note: "Pays for an archive scan or a month of the tools." },
+    { amt: "other", name: "Your choice", note: "Pick any amount on the next screen." }
+  ];
 
-  var TIERS = {
-    once: [
-      { amt: 5,  name: "A coffee",        note: "Buys the coffee behind an early morning of research." },
-      { amt: 10, name: "A history book",  note: "Covers a used history book for the reference shelf." },
-      { amt: 25, name: "An archive copy", note: "Pays for an archive scan or a month of the tools." },
-      { amt: "other", name: "Your choice", note: "Pick any amount on the next screen." }
-    ],
-    monthly: [
-      { amt: 3,  name: "Dispatch Rider",  note: "Carries the dispatches. Enough to keep the lights on." },
-      { amt: 5,  name: "Correspondent",   note: "Covers a share of the books, archives, and hosting each month." },
-      { amt: 10, name: "Bureau Chief",    note: "Goes furthest toward books, archive copies, and new projects." }
-    ]
-  };
-
-  var freq = "once", pick = 10;
-  var tiers = document.getElementById("tiers"), rank = document.getElementById("rank");
-  var give = document.getElementById("give"), fine = document.getElementById("fine");
-  var bOnce = document.getElementById("f-once"), bMon = document.getElementById("f-monthly");
+  var pick = 10;
+  var tiers = document.getElementById("tiers"), rank = document.getElementById("rank"), give = document.getElementById("give");
 
   function draw() {
-    var list = TIERS[freq].filter(function (t) { return t.amt !== "other" || freq === "once"; });
-    tiers.style.gridTemplateColumns = "repeat(" + list.length + ", 1fr)";
-    if (!list.some(function (t) { return t.amt === pick; })) pick = list[1] ? list[1].amt : list[0].amt;
+    tiers.style.gridTemplateColumns = "repeat(" + TIERS.length + ", 1fr)";
     tiers.innerHTML = "";
-    list.forEach(function (t) {
+    TIERS.forEach(function (t) {
       var b = document.createElement("button");
       b.type = "button"; b.className = "tier" + (t.amt === "other" ? " other" : "");
       b.setAttribute("aria-pressed", t.amt === pick ? "true" : "false");
-      b.innerHTML = t.amt === "other" ? "<b>Other</b><small>Any amount</small>"
-        : "<b><sup>$</sup>" + t.amt + "</b><small>" + (freq === "monthly" ? "a month" : "once") + "</small>";
-      b.setAttribute("aria-label", t.amt === "other" ? "Other amount" : "$" + t.amt + (freq === "monthly" ? " a month" : " once"));
+      b.innerHTML = t.amt === "other" ? "<b>Other</b><small>Any amount</small>" : "<b><sup>$</sup>" + t.amt + "</b><small>once</small>";
+      b.setAttribute("aria-label", t.amt === "other" ? "Other amount" : "$" + t.amt + " once");
       b.addEventListener("click", function () { pick = t.amt; draw(); });
       tiers.appendChild(b);
     });
-    var cur = list.filter(function (t) { return t.amt === pick; })[0];
+    var cur = TIERS.filter(function (t) { return t.amt === pick; })[0];
     rank.innerHTML = "<strong></strong> ";
     rank.querySelector("strong").textContent = cur.name + ".";
     rank.appendChild(document.createTextNode(cur.note));
-
-    var url = STRIPE[freq][pick] || "";
-    give.textContent = pick === "other" ? "Choose an amount" : "Give $" + pick + (freq === "monthly" ? " a month" : "");
+    var url = STRIPE[pick] || "";
+    give.textContent = pick === "other" ? "Choose an amount" : "Give $" + pick;
     if (url) { give.href = url; give.removeAttribute("aria-disabled"); }
     else { give.href = "#"; give.setAttribute("aria-disabled", "true"); give.textContent = "Opening soon"; }
-
-    fine.textContent = "Payments are handled by Stripe. We never see your card details.";
-    if (freq === "monthly") {
-      fine.appendChild(document.createTextNode(" Change or cancel any time"));
-      if (STRIPE.portal) {
-        fine.appendChild(document.createTextNode(" "));
-        var a = document.createElement("a"); a.href = STRIPE.portal; a.target = "_blank"; a.rel = "noopener"; a.textContent = "here";
-        fine.appendChild(a);
-      }
-      fine.appendChild(document.createTextNode("."));
-    }
-    bOnce.setAttribute("aria-pressed", freq === "once" ? "true" : "false");
-    bMon.setAttribute("aria-pressed", freq === "monthly" ? "true" : "false");
   }
   give.addEventListener("click", function (e) { if (give.getAttribute("aria-disabled") === "true") e.preventDefault(); });
-  bOnce.addEventListener("click", function () { freq = "once"; draw(); });
-  bMon.addEventListener("click", function () { freq = "monthly"; draw(); });
-  if (/[?&]m(onthly)?\b/.test(location.search)) freq = "monthly";
   draw();
+
+  // Back from Stripe: show the thank you, then tidy the address so a reload or a share doesn't repeat it.
+  if (/[?&]thanks=/.test(location.search)) {
+    var t = document.getElementById("thanks");
+    t.hidden = false; t.focus({ preventScroll: true });
+    try { history.replaceState(null, "", location.pathname); } catch (e) {}
+  }
 })();
 </script>
 <script src="/site.js?v=c4af29b2"></script>
