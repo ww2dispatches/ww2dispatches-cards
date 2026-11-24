@@ -8,6 +8,13 @@ const BASE = 'http://localhost:8799';
 const db = new DatabaseSync(process.env.DB);
 let pass = 0, failN = 0;
 const ok = (cond, msg) => { if (cond) pass++; else { failN++; console.log('FAIL:', msg); } };
+
+// Version tags (24 Nov 2026): every site page's ?v= tag must match its file, so returning players get new code.
+{
+  const { spawnSync } = await import('node:child_process');
+  const r = spawnSync(process.execPath, [new URL('./version-tags.mjs', import.meta.url).pathname], { encoding: 'utf8' });
+  ok(r.status === 0, 'version tags match their files (node tests/declass/version-tags.mjs --fix):\n' + r.stdout);
+}
 const id = p => p + 'x'.repeat(32 - p.length);
 for (const p of ['I0', 'I1', 'I2', 'I3', 'I4', 'I5', 'I6', 'I7', 'I8', 'I9']) {
   db.prepare("INSERT OR IGNORE INTO players (id, created_at, tester) VALUES (?, '2026-10-27T00:00:00Z', 1)").run(id(p));
