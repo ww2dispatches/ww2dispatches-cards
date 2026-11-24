@@ -9,7 +9,7 @@ import { gameDay, addDays, zonedTime, isoSec } from './time.js';
 
 // Launch switch. Until it is true, the home tile reads "Coming soon" and only a tester who opened the
 // preview link (?intercept=preview) can play. Launching is a one line change here, no Cloudflare step.
-export const INTERCEPT_LIVE = false;
+export const INTERCEPT_LIVE = true;
 
 export const GROUPS = data.groups.filter(g => !g.vetoed);
 const ALL_GROUPS = data.groups; // vetoed groups still count as decoys: the link is still true
