@@ -311,6 +311,13 @@
   "wikidata": "Q4565228",
   "source": "https://en.wikipedia.org/wiki/1943_Major_League_Baseball_All-Star_Game"
  },
+ "op-1943-surprise-hurricane": {
+  "name": "1943 Surprise Hurricane",
+  "kind": "hurricane hidden by wartime censorship",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1943_Surprise_Hurricane"
+ },
  "op-1943-world-professional-basketball-tournament": {
   "name": "1943 World Professional Basketball Tournament",
   "kind": "professional basketball tournament, Chicago",
@@ -3187,6 +3194,13 @@
   "nation": "Spain",
   "wikidata": "Q4885479",
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Alicante"
+ },
+ "op-bombing-of-aomori-in-world-war-ii": {
+  "name": "Bombing of Aomori in World War II",
+  "kind": "B-29 incendiary raid on Aomori",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Aomori_in_World_War_II"
  },
  "op-bombing-of-bangkok-in-world-war-ii": {
   "name": "Bombing of Bangkok in World War II",
@@ -6192,6 +6206,13 @@
   "aka": [
    "Victory Parade 1946"
   ]
+ },
+ "op-lordsburg-killings": {
+  "name": "Lordsburg killings",
+  "kind": "shooting of two Issei internees by a guard",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Lordsburg_killings"
  },
  "op-lorraine-campaign": {
   "name": "Lorraine campaign",

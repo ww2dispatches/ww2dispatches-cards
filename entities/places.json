@@ -306,6 +306,15 @@
   "lat": 41.4472,
   "lon": 12.6283
  },
+ "place-aomori": {
+  "name": "Aomori",
+  "kind": "city in northern Honshu",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Aomori",
+  "lat": null,
+  "lon": null
+ },
  "place-aparri": {
   "name": "Aparri",
   "kind": "town in northern Luzon",
@@ -629,6 +638,16 @@
   "source": "https://en.wikipedia.org/wiki/Bayfront_Park",
   "lat": 25.775,
   "lon": -80.186
+ },
+ "place-baytown-texas": {
+  "name": "Baytown, Texas",
+  "kind": "refinery city on Galveston Bay",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Baytown,_Texas",
+  "lat": null,
+  "lon": null,
+  "note": "Site of the Humble Oil refinery"
  },
  "place-bearcreek-montana": {
   "name": "Bearcreek, Montana",
@@ -2306,6 +2325,15 @@
   "source": "https://en.wikipedia.org/wiki/Dortmund",
   "lat": 51.5139,
   "lon": 7.4653
+ },
+ "place-dover": {
+  "name": "Dover",
+  "kind": "port town in Kent",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Dover",
+  "lat": null,
+  "lon": null
  },
  "place-drancy-internment-camp": {
   "name": "Drancy internment camp",

@@ -2807,6 +2807,13 @@
   "wikidata": "Q2602194",
   "source": "https://en.wikipedia.org/wiki/HMS_Cleopatra_(33)"
  },
+ "ship-hms-codrington": {
+  "name": "HMS Codrington (D65)",
+  "kind": "Royal Navy A-class destroyer flotilla leader",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Codrington"
+ },
  "ship-hms-cooke": {
   "name": "HMS Cooke (K471)",
   "kind": "frigate",
@@ -3771,6 +3778,17 @@
   "nation": "Britain",
   "wikidata": "Q518329",
   "source": "https://en.wikipedia.org/wiki/HMS_Suffolk_(55)"
+ },
+ "ship-hms-sunfish-81s": {
+  "name": "HMS Sunfish (81S)",
+  "kind": "Royal Navy S-class submarine, lent to the Soviet Navy as V-1",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Sunfish_(81S)",
+  "aka": [
+   "V-1",
+   "V 1"
+  ]
  },
  "ship-hms-sunflower-k41": {
   "name": "HMS Sunflower (K41)",
@@ -7971,6 +7989,13 @@
   "aka": [
    "USS Sawfish (SS-276)"
   ]
+ },
+ "ship-uss-scamp-ss-277": {
+  "name": "USS Scamp (SS-277)",
+  "kind": "U.S. Navy Gato-class submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Scamp_(SS-277)"
  },
  "ship-uss-sculpin-ss-191": {
   "name": "USS Sculpin (SS-191)",

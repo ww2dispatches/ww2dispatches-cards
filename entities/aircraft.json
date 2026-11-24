@@ -300,6 +300,16 @@
   "wikidata": "Q548865",
   "source": "https://en.wikipedia.org/wiki/Curtiss-Wright_XP-55_Ascender"
  },
+ "aircraft-de-havilland-comet": {
+  "name": "de Havilland Comet",
+  "kind": "jet airliner",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/De_Havilland_Comet",
+  "aka": [
+   "DH.106 Comet"
+  ]
+ },
  "aircraft-de-havilland-dh-108": {
   "name": "de Havilland DH 108",
   "kind": "experimental jet",
@@ -529,6 +539,13 @@
    "Gloster Whittle",
    "Gloster Pioneer"
   ]
+ },
+ "aircraft-gloster-meteor": {
+  "name": "Gloster Meteor",
+  "kind": "jet fighter",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Gloster_Meteor"
  },
  "aircraft-grumman-f4f-wildcat": {
   "name": "Grumman F4F Wildcat",
@@ -1088,6 +1105,17 @@
    "P-51",
    "Mustang",
    "P-51B"
+  ]
+ },
+ "aircraft-north-american-t-6-texan": {
+  "name": "North American T-6 Texan",
+  "kind": "single engine advanced trainer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/North_American_T-6_Texan",
+  "aka": [
+   "AT-6",
+   "Harvard"
   ]
  },
  "aircraft-northrop-yb-49": {
