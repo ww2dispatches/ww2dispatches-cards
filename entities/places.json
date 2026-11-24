@@ -2862,6 +2862,15 @@
   "lat": 4.0,
   "lon": -53.0
  },
+ "place-french-indochina": {
+  "name": "French Indochina",
+  "kind": "French colonial federation",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/French_Indochina",
+  "lat": null,
+  "lon": null
+ },
  "place-fuhrerbunker": {
   "name": "Führerbunker",
   "kind": "air raid shelter and headquarters",
@@ -5448,6 +5457,15 @@
   "source": "https://en.wikipedia.org/wiki/Magdeburg",
   "lat": 52.1316,
   "lon": 11.64
+ },
+ "place-majdanek-concentration-camp": {
+  "name": "Majdanek concentration camp",
+  "kind": "German concentration and extermination camp",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Majdanek_concentration_camp",
+  "lat": null,
+  "lon": null
  },
  "place-majuro": {
   "name": "Majuro",

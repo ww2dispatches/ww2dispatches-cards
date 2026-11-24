@@ -1335,6 +1335,13 @@
   "wikidata": "Q3091115",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-456"
  },
+ "ship-german-submarine-u-459": {
+  "name": "U-459",
+  "kind": "Type XIV supply U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-459"
+ },
  "ship-german-submarine-u-463": {
   "name": "German submarine U-463",
   "kind": "Type XIV supply U-boat",
@@ -2190,6 +2197,13 @@
   "aka": [
    "U-877"
   ]
+ },
+ "ship-german-submarine-u-90-1941": {
+  "name": "U-90",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-90_(1941)"
  },
  "ship-german-submarine-u-94-1940": {
   "name": "U-94",
@@ -6763,6 +6777,13 @@
   "wikidata": "Q165307",
   "source": "https://en.wikipedia.org/wiki/USS_Colhoun_(DD-801)"
  },
+ "ship-uss-colorado-bb-45": {
+  "name": "USS Colorado (BB-45)",
+  "kind": "battleship",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Colorado_(BB-45)"
+ },
  "ship-uss-columbia-cl-56": {
   "name": "USS Columbia (CL-56)",
   "kind": "Cleveland class light cruiser",
@@ -7390,6 +7411,16 @@
   "nation": "US",
   "wikidata": "Q7871638",
   "source": "https://en.wikipedia.org/wiki/USS_McCawley_(APA-4)"
+ },
+ "ship-uss-mccook-dd-252": {
+  "name": "USS McCook (DD-252)",
+  "kind": "Clemson class destroyer, served as HMCS St. Croix",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_McCook_(DD-252)",
+  "aka": [
+   "HMCS St. Croix"
+  ]
  },
  "ship-uss-menges": {
   "name": "USS Menges (DE-320)",

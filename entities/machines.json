@@ -181,6 +181,17 @@
   "wikidata": "Q194154",
   "source": "https://en.wikipedia.org/wiki/Cavity_magnetron"
  },
+ "machine-chaff-countermeasure": {
+  "name": "Chaff (countermeasure)",
+  "kind": "radar countermeasure, metal strips",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Chaff_(countermeasure)",
+  "aka": [
+   "Window",
+   "Duppel"
+  ]
+ },
  "machine-chain-home": {
   "name": "Chain Home",
   "kind": "British early warning radar network",

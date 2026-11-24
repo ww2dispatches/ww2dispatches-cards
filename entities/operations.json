@@ -1082,6 +1082,13 @@
   "wikidata": "Q4818013",
   "source": "https://en.wikipedia.org/wiki/Attack_on_Yokosuka"
  },
+ "op-attacks-on-kure-and-the-seto-inland-sea": {
+  "name": "Attacks on Kure and the Seto Inland Sea",
+  "kind": "carrier air raids, July 1945",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Attacks_on_Kure_and_the_Seto_Inland_Sea"
+ },
  "op-augsburg-raid": {
   "name": "Augsburg raid",
   "kind": "RAF daylight bombing raid",
@@ -2786,6 +2793,13 @@
   "wikidata": "Q1440764",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Timor"
  },
+ "op-battle-of-tinian": {
+  "name": "Battle of Tinian",
+  "kind": "amphibious battle",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Tinian"
+ },
  "op-battle-of-tolvajarvi": {
   "name": "Battle of Tolvajärvi",
   "kind": "Winter War battle",
@@ -3307,6 +3321,16 @@
   "nation": "Spain",
   "wikidata": "Q170351",
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Guernica"
+ },
+ "op-bombing-of-hamburg-in-world-war-ii": {
+  "name": "Bombing of Hamburg in World War II",
+  "kind": "air campaign, includes Operation Gomorrah",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Hamburg_in_World_War_II",
+  "aka": [
+   "Operation Gomorrah"
+  ]
  },
  "op-bombing-of-helsinki-in-world-war-ii": {
   "name": "Bombing of Helsinki in World War II",
@@ -4621,6 +4645,16 @@
   "source": "https://en.wikipedia.org/wiki/Fall_of_Singapore",
   "aka": [
    "Battle of Singapore"
+  ]
+ },
+ "op-fall-of-the-fascist-regime-in-italy": {
+  "name": "Fall of the Fascist regime in Italy",
+  "kind": "political crisis, July 1943",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fall_of_the_Fascist_regime_in_Italy",
+  "aka": [
+   "25 Luglio"
   ]
  },
  "op-fall-rot": {
@@ -7081,6 +7115,13 @@
   "nation": "US",
   "wikidata": "Q7096905",
   "source": "https://en.wikipedia.org/wiki/Operation_Cleanslate"
+ },
+ "op-operation-cobra": {
+  "name": "Operation Cobra",
+  "kind": "Normandy breakout offensive",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Cobra"
  },
  "op-operation-cockpit": {
   "name": "Operation Cockpit",
