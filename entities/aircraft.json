@@ -260,7 +260,7 @@
   "name": "Convair B-36 Peacemaker",
   "kind": "US six engined intercontinental bomber",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q332657",
   "source": "https://en.wikipedia.org/wiki/Convair_B-36_Peacemaker",
   "aka": [
    "B-36"
@@ -304,7 +304,7 @@
   "name": "de Havilland Comet",
   "kind": "jet airliner",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q26159",
   "source": "https://en.wikipedia.org/wiki/De_Havilland_Comet",
   "aka": [
    "DH.106 Comet"
@@ -449,7 +449,7 @@
   "name": "Enola Gay",
   "kind": "single named B-29 Superfortress",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q204424",
   "source": "https://en.wikipedia.org/wiki/Enola_Gay"
  },
  "aircraft-fairey-barracuda": {
@@ -551,7 +551,7 @@
   "name": "Gloster Meteor",
   "kind": "jet fighter",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q140318",
   "source": "https://en.wikipedia.org/wiki/Gloster_Meteor"
  },
  "aircraft-grumman-f4f-wildcat": {
@@ -948,7 +948,7 @@
   "name": "Messerschmitt Me 163 Komet",
   "kind": "German rocket powered interceptor",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q155360",
   "source": "https://en.wikipedia.org/wiki/Messerschmitt_Me_163_Komet",
   "aka": [
    "Me 163"
@@ -1128,7 +1128,7 @@
   "name": "North American T-6 Texan",
   "kind": "single engine advanced trainer",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q40021",
   "source": "https://en.wikipedia.org/wiki/North_American_T-6_Texan",
   "aka": [
    "AT-6",
@@ -1339,14 +1339,14 @@
   "name": "Waco CG-4",
   "kind": "U.S. military glider",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q1752671",
   "source": "https://en.wikipedia.org/wiki/Waco_CG-4"
  },
  "aircraft-winnie-mae": {
   "name": "Winnie Mae",
   "kind": "Lockheed Vega flown by Wiley Post",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q31079534",
   "source": "https://en.wikipedia.org/wiki/Winnie_Mae"
  },
  "aircraft-wright-flyer": {
@@ -1384,7 +1384,7 @@
   "name": "Yokosuka K5Y",
   "kind": "Japanese navy biplane trainer, used for kamikaze attacks in 1945",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q288324",
   "source": "https://en.wikipedia.org/wiki/Yokosuka_K5Y"
  },
  "aircraft-yokosuka-mxy-7-ohka": {

@@ -69,7 +69,7 @@
   "name": "1936 Summer Olympics",
   "kind": "Olympic Games in Berlin",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q8150",
   "source": "https://en.wikipedia.org/wiki/1936_Summer_Olympics",
   "aka": [
    "Berlin Olympics"
@@ -207,7 +207,7 @@
   "name": "1942 to 1944 musicians' strike",
   "kind": "AFM recording ban",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q310631",
   "source": "https://en.wikipedia.org/wiki/1942%E2%80%931944_musicians%27_strike",
   "aka": [
    "Petrillo ban"
@@ -231,7 +231,7 @@
   "name": "1942 Indianapolis 500",
   "kind": "cancelled race, wartime racing ban",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q4031674",
   "source": "https://en.wikipedia.org/wiki/1942_Indianapolis_500"
  },
  "op-1942-japanese-general-election": {
@@ -342,7 +342,7 @@
   "name": "1943 Surprise Hurricane",
   "kind": "hurricane hidden by wartime censorship",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q207504",
   "source": "https://en.wikipedia.org/wiki/1943_Surprise_Hurricane"
  },
  "op-1943-world-professional-basketball-tournament": {
@@ -521,14 +521,14 @@
   "name": "1948 Lake Mead Boeing B-29 crash",
   "kind": "test aircraft ditching",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q4566263",
   "source": "https://en.wikipedia.org/wiki/1948_Lake_Mead_Boeing_B-29_crash"
  },
  "op-1948-summer-olympics": {
   "name": "1948 Summer Olympics",
   "kind": "Olympic Games, London",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q8403",
   "source": "https://en.wikipedia.org/wiki/1948_Summer_Olympics"
  },
  "op-1948-tinker-air-force-base-tornadoes": {
@@ -580,7 +580,7 @@
   "name": "4th of August Regime",
   "kind": "Metaxas dictatorship in Greece, 1936 to 1941",
   "nation": "Greece",
-  "wikidata": null,
+  "wikidata": "Q1358836",
   "source": "https://en.wikipedia.org/wiki/4th_of_August_Regime",
   "aka": [
    "Metaxas regime"
@@ -1057,7 +1057,7 @@
   "name": "Atomic Energy Act of 1946",
   "kind": "U.S. law putting atomic energy under civilian control",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q4817269",
   "source": "https://en.wikipedia.org/wiki/Atomic_Energy_Act_of_1946",
   "aka": [
    "McMahon Act"
@@ -1147,7 +1147,7 @@
   "name": "Attacks on Kure and the Seto Inland Sea",
   "kind": "carrier air raids, July 1945",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q710614",
   "source": "https://en.wikipedia.org/wiki/Attacks_on_Kure_and_the_Seto_Inland_Sea"
  },
  "op-augsburg-raid": {
@@ -1409,7 +1409,7 @@
   "name": "Battle of Athens (1946)",
   "kind": "election uprising",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q2237325",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Athens_(1946)"
  },
  "op-battle-of-attu": {
@@ -1475,7 +1475,7 @@
   "name": "Battle of Beiping-Tianjin",
   "kind": "July 1937 battle for Beiping and Tianjin, Second Sino-Japanese War",
   "nation": "China",
-  "wikidata": null,
+  "wikidata": "Q709429",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Beiping%E2%80%93Tianjin"
  },
  "op-battle-of-berlin": {
@@ -1837,7 +1837,7 @@
   "name": "Battle of Guam (1944)",
   "kind": "amphibious battle",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q696900",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Guam_(1944)",
   "aka": [
    "Recapture of Guam"
@@ -1972,7 +1972,7 @@
   "name": "Battle of Kokoda",
   "kind": "battle, Kokoda Track campaign",
   "nation": "Australia",
-  "wikidata": null,
+  "wikidata": "Q27628328",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Kokoda"
  },
  "op-battle-of-kolberg-1945": {
@@ -2469,7 +2469,7 @@
   "name": "Battle of Sansapor",
   "kind": "amphibious landing",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q4872297",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Sansapor",
   "aka": [
    "Operation Typhoon"
@@ -2889,7 +2889,7 @@
   "name": "Battle of Tinian",
   "kind": "amphibious battle",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q176915",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Tinian"
  },
  "op-battle-of-tolvajarvi": {
@@ -2917,7 +2917,7 @@
   "name": "Battle of Uman",
   "kind": "German encirclement battle, July to August 1941",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q327078",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Uman"
  },
  "op-battle-of-ushant-1944": {
@@ -2938,7 +2938,7 @@
   "name": "Battle of Verrieres Ridge",
   "kind": "Normandy battle, July 1944",
   "nation": "Canada",
-  "wikidata": null,
+  "wikidata": "Q2890620",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Verri%C3%A8res_Ridge",
   "aka": [
    "Verrières Ridge"
@@ -3106,7 +3106,7 @@
   "name": "Belgorod-Kharkov offensive operation",
   "kind": "Soviet offensive after Kursk, August 1943",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q709484",
   "source": "https://en.wikipedia.org/wiki/Belgorod%E2%80%93Kharkov_offensive_operation",
   "aka": [
    "Operation Polkovodets Rumyantsev",
@@ -3312,7 +3312,7 @@
   "name": "Bombing of Aomori in World War II",
   "kind": "B-29 incendiary raid on Aomori",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q11662049",
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Aomori_in_World_War_II"
  },
  "op-bombing-of-bangkok-in-world-war-ii": {
@@ -3453,7 +3453,7 @@
   "name": "Bombing of Hamburg in World War II",
   "kind": "air campaign, includes Operation Gomorrah",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q316868",
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Hamburg_in_World_War_II",
   "aka": [
    "Operation Gomorrah"
@@ -3714,7 +3714,7 @@
   "name": "Bracero Program",
   "kind": "U.S. and Mexico farm labor program, 1942 to 1964",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q979772",
   "source": "https://en.wikipedia.org/wiki/Bracero_Program",
   "aka": [
    "Mexican Farm Labor Agreement"
@@ -4604,7 +4604,7 @@
   "name": "Einstein Szilard letter",
   "kind": "letter to the President",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q714081",
   "source": "https://en.wikipedia.org/wiki/Einstein%E2%80%93Szilard_letter"
  },
  "op-elbe-day": {
@@ -4795,7 +4795,7 @@
   "name": "Fall of the Fascist regime in Italy",
   "kind": "political crisis, July 1943",
   "nation": "Italy",
-  "wikidata": null,
+  "wikidata": "Q3885257",
   "source": "https://en.wikipedia.org/wiki/Fall_of_the_Fascist_regime_in_Italy",
   "aka": [
    "25 Luglio"
@@ -4874,7 +4874,7 @@
   "name": "Final Solution",
   "kind": "Nazi plan to murder the Jews of Europe",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q127013",
   "source": "https://en.wikipedia.org/wiki/Final_Solution"
  },
  "op-finno-soviet-treaty-of-1948": {
@@ -5106,7 +5106,7 @@
   "name": "George S. Patton slapping incidents",
   "kind": "Patton's assaults on two hospitalized soldiers in Sicily, August 1943",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q5544194",
   "source": "https://en.wikipedia.org/wiki/George_S._Patton_slapping_incidents"
  },
  "op-georgian-uprising-on-texel": {
@@ -5335,7 +5335,7 @@
   "name": "Grossaktion Warsaw",
   "kind": "deportation of Warsaw Ghetto Jews to Treblinka, 1942",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q965477",
   "source": "https://en.wikipedia.org/wiki/Grossaktion_Warsaw"
  },
  "op-guadalcanal-campaign": {
@@ -5380,7 +5380,7 @@
   "name": "Harlem riot of 1943",
   "kind": "riot in Harlem, 1 and 2 August 1943",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q5658573",
   "source": "https://en.wikipedia.org/wiki/Harlem_riot_of_1943"
  },
  "op-hartford-circus-fire": {
@@ -5430,7 +5430,7 @@
   "name": "Hitler Oath",
   "kind": "oath of allegiance",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q2898371",
   "source": "https://en.wikipedia.org/wiki/Hitler_Oath",
   "aka": [
    "Fuhrereid"
@@ -5539,7 +5539,7 @@
   "name": "IG Farben Trial",
   "kind": "war crimes trial",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q704237",
   "source": "https://en.wikipedia.org/wiki/IG_Farben_Trial"
  },
  "op-imber-friendly-fire-incident": {
@@ -5619,7 +5619,7 @@
   "name": "Invasion of Buna Gona",
   "kind": "Japanese landing in Papua",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q12406889",
   "source": "https://en.wikipedia.org/wiki/Invasion_of_Buna%E2%80%93Gona"
  },
  "op-invasion-of-elba": {
@@ -5730,7 +5730,7 @@
   "name": "Italian invasion of British Somaliland",
   "kind": "Italian offensive, August 1940",
   "nation": "Italy",
-  "wikidata": null,
+  "wikidata": "Q1202078",
   "source": "https://en.wikipedia.org/wiki/Italian_invasion_of_British_Somaliland"
  },
  "op-italian-invasion-of-france": {
@@ -5936,7 +5936,7 @@
   "name": "July Putsch",
   "kind": "failed Austrian Nazi coup, 25 July 1934",
   "nation": "Austria",
-  "wikidata": null,
+  "wikidata": "Q873152",
   "source": "https://en.wikipedia.org/wiki/July_Putsch"
  },
  "op-june-deportation": {
@@ -6060,7 +6060,7 @@
   "name": "King David Hotel bombing",
   "kind": "bombing, 1946",
   "nation": "Palestine",
-  "wikidata": null,
+  "wikidata": "Q1814446",
   "source": "https://en.wikipedia.org/wiki/King_David_Hotel_bombing"
  },
  "op-kisielin-massacre": {
@@ -6081,14 +6081,14 @@
   "name": "Koiso cabinet",
   "kind": "Japanese cabinet, 1944 to 1945",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q10855343",
   "source": "https://en.wikipedia.org/wiki/Koiso_cabinet"
  },
  "op-kokoda-track-campaign": {
   "name": "Kokoda Track campaign",
   "kind": "campaign",
   "nation": "Australia",
-  "wikidata": null,
+  "wikidata": "Q2299343",
   "source": "https://en.wikipedia.org/wiki/Kokoda_Track_campaign",
   "aka": [
    "Kokoda Trail campaign"
@@ -6240,7 +6240,7 @@
   "name": "Law Concerning the Head of State of the German Reich",
   "kind": "1934 law merging the offices of president and chancellor",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q19208438",
   "source": "https://en.wikipedia.org/wiki/Law_Concerning_the_Head_of_State_of_the_German_Reich"
  },
  "op-law-for-the-prevention-of-hereditarily-diseased-offspring": {
@@ -6342,7 +6342,7 @@
   "name": "Liberation of Warsaw concentration camp",
   "kind": "Home Army assault on Gęsiówka, 5 August 1944",
   "nation": "Poland",
-  "wikidata": null,
+  "wikidata": "Q66050700",
   "source": "https://en.wikipedia.org/wiki/Liberation_of_Warsaw_concentration_camp",
   "aka": [
    "Liberation of Gęsiówka"
@@ -6410,7 +6410,7 @@
   "name": "Lordsburg killings",
   "kind": "shooting of two Issei internees by a guard",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q6680212",
   "source": "https://en.wikipedia.org/wiki/Lordsburg_killings"
  },
  "op-lorraine-campaign": {
@@ -6431,7 +6431,7 @@
   "name": "Lwów Uprising",
   "kind": "July 1944 Home Army uprising in Lwów",
   "nation": "Poland",
-  "wikidata": null,
+  "wikidata": "Q718839",
   "source": "https://en.wikipedia.org/wiki/Lw%C3%B3w_Uprising"
  },
  "op-lytton-report": {
@@ -6543,7 +6543,7 @@
   "name": "Manifesto of the Polish Committee of National Liberation",
   "kind": "political manifesto, 1944",
   "nation": "Poland",
-  "wikidata": null,
+  "wikidata": "Q387927",
   "source": "https://en.wikipedia.org/wiki/Manifesto_of_the_Polish_Committee_of_National_Liberation",
   "aka": [
    "PKWN Manifesto",
@@ -6762,7 +6762,7 @@
   "name": "Moore's Ford lynchings",
   "kind": "1946 mob murder of two Black couples in Georgia",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q4565732",
   "source": "https://en.wikipedia.org/wiki/Moore%27s_Ford_lynchings"
  },
  "op-morgan-line": {
@@ -6790,7 +6790,7 @@
   "name": "Morrison-Grady Plan",
   "kind": "Anglo-American plan for Palestine",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q55623801",
   "source": "https://en.wikipedia.org/wiki/Morrison%E2%80%93Grady_Plan",
   "aka": [
    "Provincial Autonomy Plan"
@@ -6832,7 +6832,7 @@
   "name": "Munich Agreement",
   "kind": "1938 agreement on the Sudetenland",
   "nation": "worldwide",
-  "wikidata": null,
+  "wikidata": "Q154255",
   "source": "https://en.wikipedia.org/wiki/Munich_Agreement"
  },
  "op-murder-of-maceo-snipes": {
@@ -6906,7 +6906,7 @@
   "name": "National Service Act 1948",
   "kind": "act of parliament",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q6978386",
   "source": "https://en.wikipedia.org/wiki/National_Service_Act_1948"
  },
  "op-national-service-armed-forces-act-1939": {
@@ -7193,7 +7193,7 @@
   "name": "Operation Aphrodite",
   "kind": "USAAF radio controlled B-17 drone program",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q2915673",
   "source": "https://en.wikipedia.org/wiki/Operation_Aphrodite"
  },
  "op-operation-appearance": {
@@ -7273,7 +7273,7 @@
   "name": "Operation Bluecoat",
   "kind": "offensive",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q714293",
   "source": "https://en.wikipedia.org/wiki/Operation_Bluecoat"
  },
  "op-operation-bodenplatte": {
@@ -7304,7 +7304,7 @@
   "name": "Operation Braunschweig",
   "kind": "1942 German offensive in southern Russia, renamed from Case Blue",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q321415",
   "source": "https://en.wikipedia.org/wiki/Operation_Braunschweig"
  },
  "op-operation-brevity": {
@@ -7399,7 +7399,7 @@
   "name": "Operation Cobra",
   "kind": "Normandy breakout offensive",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q700674",
   "source": "https://en.wikipedia.org/wiki/Operation_Cobra"
  },
  "op-operation-cockpit": {
@@ -7507,7 +7507,7 @@
   "name": "Operation EF (1941)",
   "kind": "carrier air raid",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q2290429",
   "source": "https://en.wikipedia.org/wiki/Operation_EF_(1941)",
   "aka": [
    "Raid on Kirkenes and Petsamo"
@@ -7797,7 +7797,7 @@
   "name": "Operation Livery",
   "kind": "naval operation",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q16933895",
   "source": "https://en.wikipedia.org/wiki/Operation_Livery"
  },
  "op-operation-lustre": {
@@ -8033,7 +8033,7 @@
   "name": "Operation Spring",
   "kind": "Canadian attack south of Caen, 25 to 27 July 1944",
   "nation": "Canada",
-  "wikidata": null,
+  "wikidata": "Q2706523",
   "source": "https://en.wikipedia.org/wiki/Operation_Spring"
  },
  "op-operation-spring-awakening": {
@@ -8075,7 +8075,7 @@
   "name": "Operation Substance",
   "kind": "July 1941 British convoy operation to Malta",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q2216586",
   "source": "https://en.wikipedia.org/wiki/Operation_Substance"
  },
  "op-operation-sunrise-world-war-ii": {
@@ -8103,7 +8103,7 @@
   "name": "Operation Tempest",
   "kind": "1944 to 1945 Home Army uprisings in Poland",
   "nation": "Poland",
-  "wikidata": null,
+  "wikidata": "Q422376",
   "source": "https://en.wikipedia.org/wiki/Operation_Tempest",
   "aka": [
    "Akcja Burza",
@@ -8121,7 +8121,7 @@
   "name": "Operation Tidal Wave",
   "kind": "low level B-24 raid on the Ploiesti refineries, 1 August 1943",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q512914",
   "source": "https://en.wikipedia.org/wiki/Operation_Tidal_Wave"
  },
  "op-operation-torch": {
@@ -8274,14 +8274,14 @@
   "name": "Order No. 227",
   "kind": "Soviet defence order of 28 July 1942, \"Not a step back\"",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q2069953",
   "source": "https://en.wikipedia.org/wiki/Order_No._227"
  },
  "op-order-of-the-german-eagle": {
   "name": "Order of the German Eagle",
   "kind": "state decoration",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q94117",
   "source": "https://en.wikipedia.org/wiki/Order_of_the_German_Eagle"
  },
  "op-oro-alla-patria": {
@@ -8407,7 +8407,7 @@
   "name": "Philadelphia transit strike of 1944",
   "kind": "white transit workers' strike against the promotion of Black workers",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q7182880",
   "source": "https://en.wikipedia.org/wiki/Philadelphia_transit_strike_of_1944"
  },
  "op-philippines-campaign-1941-1942": {
@@ -8502,7 +8502,7 @@
   "name": "Potsdam Declaration",
   "kind": "surrender ultimatum",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q163244",
   "source": "https://en.wikipedia.org/wiki/Potsdam_Declaration"
  },
  "op-prague-offensive": {
@@ -9004,7 +9004,7 @@
   "name": "Second Konoe cabinet",
   "kind": "Japanese cabinet, 1940",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q11600810",
   "source": "https://en.wikipedia.org/wiki/Second_Konoe_cabinet"
  },
  "op-second-london-naval-treaty": {
@@ -9210,7 +9210,7 @@
   "name": "Sikorski Mayski agreement",
   "kind": "treaty",
   "nation": "Poland",
-  "wikidata": null,
+  "wikidata": "Q1757717",
   "source": "https://en.wikipedia.org/wiki/Sikorski%E2%80%93Mayski_agreement",
   "aka": [
    "Sikorski-Maisky agreement"
@@ -9244,7 +9244,7 @@
   "name": "Sleepy Lagoon murder",
   "kind": "murder case and trial",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q7539983",
   "source": "https://en.wikipedia.org/wiki/Sleepy_Lagoon_murder"
  },
  "op-slovak-hungarian-war": {
@@ -9790,7 +9790,7 @@
   "name": "Transit of German troops through Finland and Sweden",
   "kind": "wartime transit arrangement",
   "nation": "Sweden",
-  "wikidata": null,
+  "wikidata": "Q3358014",
   "source": "https://en.wikipedia.org/wiki/Transit_of_German_troops_through_Finland_and_Sweden",
   "aka": [
    "Permittenttrafiken"
@@ -9886,7 +9886,7 @@
   "name": "Trinity (nuclear test)",
   "kind": "first nuclear weapon test",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q207342",
   "source": "https://en.wikipedia.org/wiki/Trinity_(nuclear_test)"
  },
  "op-tripartite-pact": {
@@ -10116,7 +10116,7 @@
   "name": "Usti massacre",
   "kind": "massacre of ethnic German civilians",
   "nation": "Czechoslovakia",
-  "wikidata": null,
+  "wikidata": "Q697017",
   "source": "https://en.wikipedia.org/wiki/%C3%9Ast%C3%AD_massacre"
  },
  "op-v-sign": {
@@ -10257,7 +10257,7 @@
   "name": "Warsaw Uprising",
   "kind": "uprising by the Polish Home Army, 1944",
   "nation": "Poland",
-  "wikidata": null,
+  "wikidata": "Q1402078",
   "source": "https://en.wikipedia.org/wiki/Warsaw_Uprising"
  },
  "op-washington-conference-1943": {
@@ -10309,7 +10309,7 @@
   "name": "Welles Declaration",
   "kind": "1940 US statement refusing to recognize the Soviet annexation of the Baltic states",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q3735409",
   "source": "https://en.wikipedia.org/wiki/Welles_Declaration"
  },
  "op-west-loch-disaster": {
@@ -10371,7 +10371,7 @@
   "name": "Wola massacre",
   "kind": "mass killing of civilians, Warsaw, August 1944",
   "nation": "Poland",
-  "wikidata": null,
+  "wikidata": "Q559291",
   "source": "https://en.wikipedia.org/wiki/Wola_massacre"
  },
  "op-wolfram-crisis": {
