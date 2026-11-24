@@ -2201,6 +2201,13 @@
    "U-803"
   ]
  },
+ "ship-german-submarine-u-804": {
+  "name": "German submarine U-804",
+  "kind": "U-boat, Type VIIC",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-804"
+ },
  "ship-german-submarine-u-805": {
   "name": "U-805",
   "kind": "Type IXC/40 U-boat",
@@ -7140,6 +7147,13 @@
   "nation": "US",
   "wikidata": "Q7869245",
   "source": "https://en.wikipedia.org/wiki/USS_Eugene_E._Elmore"
+ },
+ "ship-uss-fiske-de-143": {
+  "name": "USS Fiske (DE-143)",
+  "kind": "destroyer escort",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Fiske_(DE-143)"
  },
  "ship-uss-flasher-ss-249": {
   "name": "USS Flasher (SS-249)",

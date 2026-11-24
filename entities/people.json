@@ -215,6 +215,13 @@
   "wikidata": "Q4710007",
   "source": "https://en.wikipedia.org/wiki/Albert_David"
  },
+ "person-albert-einstein": {
+  "name": "Albert Einstein",
+  "kind": "physicist",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Albert_Einstein"
+ },
  "person-albert-h-rooks": {
   "name": "Albert H. Rooks",
   "kind": "US Navy captain of USS Houston, Medal of Honor",
@@ -370,6 +377,13 @@
   "aka": [
    "Sandy Nininger"
   ]
+ },
+ "person-alexander-sachs": {
+  "name": "Alexander Sachs",
+  "kind": "economist, adviser to Roosevelt",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Alexander_Sachs"
  },
  "person-alexander-schmorell": {
   "name": "Alexander Schmorell",

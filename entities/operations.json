@@ -1375,6 +1375,13 @@
   "wikidata": "Q4870357",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Athens_(1941)"
  },
+ "op-battle-of-athens-1946": {
+  "name": "Battle of Athens (1946)",
+  "kind": "election uprising",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Athens_(1946)"
+ },
  "op-battle-of-attu": {
   "name": "Battle of Attu",
   "kind": "battle",
@@ -4553,6 +4560,13 @@
   "wikidata": "Q29665",
   "source": "https://en.wikipedia.org/wiki/Einsatzgruppen_trial"
  },
+ "op-einstein-szilard-letter": {
+  "name": "Einstein Szilard letter",
+  "kind": "letter to the President",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Einstein%E2%80%93Szilard_letter"
+ },
  "op-elbe-day": {
   "name": "Elbe Day",
   "kind": "US and Soviet link up on the Elbe",
@@ -5364,6 +5378,16 @@
   "nation": "Finland",
   "wikidata": "Q16843982",
   "source": "https://en.wikipedia.org/wiki/Hitler_and_Mannerheim_recording"
+ },
+ "op-hitler-oath": {
+  "name": "Hitler Oath",
+  "kind": "oath of allegiance",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hitler_Oath",
+  "aka": [
+   "Fuhrereid"
+  ]
  },
  "op-ho-sainteny-agreement": {
   "name": "Ho Sainteny Agreement",
@@ -9123,6 +9147,13 @@
   "nation": "Britain",
   "wikidata": "Q16900280",
   "source": "https://en.wikipedia.org/wiki/Slamat_disaster"
+ },
+ "op-sleepy-lagoon-murder": {
+  "name": "Sleepy Lagoon murder",
+  "kind": "murder case and trial",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sleepy_Lagoon_murder"
  },
  "op-slovak-hungarian-war": {
   "name": "Slovak-Hungarian War",

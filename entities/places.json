@@ -393,6 +393,15 @@
   "lat": 37.9842,
   "lon": 23.7281
  },
+ "place-athens-tennessee": {
+  "name": "Athens, Tennessee",
+  "kind": "town",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Athens,_Tennessee",
+  "lat": null,
+  "lon": null
+ },
  "place-attu-island": {
   "name": "Attu Island",
   "kind": "island",
@@ -5312,6 +5321,15 @@
   "lat": null,
   "lon": null
  },
+ "place-london-paddington-station": {
+  "name": "London Paddington station",
+  "kind": "railway terminus",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/London_Paddington_station",
+  "lat": null,
+  "lon": null
+ },
  "place-lorient": {
   "name": "Lorient",
   "kind": "port city and U-boat base",
@@ -9801,6 +9819,18 @@
    "Toyama Wan"
   ]
  },
+ "place-toyama-city": {
+  "name": "Toyama",
+  "kind": "city",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Toyama_(city)",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Toyama, Toyama"
+  ]
+ },
  "place-trafford-general-hospital": {
   "name": "Trafford General Hospital",
   "kind": "hospital at Davyhulme, Manchester, where the NHS was launched",
@@ -9935,6 +9965,15 @@
   "source": "https://en.wikipedia.org/wiki/Turin",
   "lat": 45.0792,
   "lon": 7.6761
+ },
+ "place-turkey": {
+  "name": "Turkey",
+  "kind": "country",
+  "nation": "Turkey",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Turkey",
+  "lat": null,
+  "lon": null
  },
  "place-tver": {
   "name": "Kalinin",
