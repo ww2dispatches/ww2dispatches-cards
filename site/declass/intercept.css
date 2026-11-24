@@ -17,7 +17,8 @@ body.night .sheettop .howstamp{color:var(--red)}
 /* Solved with a card still to pick (7 Nov 2026). */
 .icptile.claim{border-color:#D9A93E}
 .icptile.claim::after{content:"PICK A CARD ▸";color:#e3c25e}
-.icptile.done{opacity:.8}.icptile.done::after{content:"FILED ✓";color:#a8b58a}
+.icptile.done{opacity:.8}.icptile.done::after{content:"CRACKED ✓";color:#a8b58a}
+.icptile.lost::after{content:"NOT CRACKED ✗";color:#c9806f} /* 24 Nov 2026, Brian's call */
 .icptile.wait::after{content:"SIGN IN";color:#c9bd9f}
 /* Coming soon: a quiet paper tile (option 1, 27 Oct 2026). The dark Night Dispatch look waits for launch. */
 /* Same type as the envelope rows: 18 px title, 12 px subtext, 13 px status word (27 Oct 2026). */

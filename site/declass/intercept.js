@@ -29,7 +29,8 @@
     if (s.status === 'solved') return s.canClaim
       ? go('Pick by midnight ET', 'live claim', `Cracked, scored ${s.score} of 100. Pick your card by midnight Eastern`)
       : go(`Cracked · ${s.score} of 100`, 'done', `Cracked, scored ${s.score} of 100. New files tomorrow`);
-    return go('Not cracked today', 'done', 'Not cracked today. New files tomorrow');
+    // A missed day reads NOT CRACKED with the links found (24 Nov 2026, Brian's call; it read FILED ✓ before).
+    return go(`${s.found || 0} of 4 links found`, 'done lost', `Not cracked, ${s.found || 0} of 4 links found. New files tomorrow`);
   }
   function tile(el) {
     const s = D().state() && D().state().intercept;
