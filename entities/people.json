@@ -925,6 +925,13 @@
    "Arthur D. Struble"
   ]
  },
+ "person-arthur-greiser": {
+  "name": "Arthur Greiser",
+  "kind": "Nazi President of the Danzig Senate",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Arthur_Greiser"
+ },
  "person-arthur-harris": {
   "name": "Arthur Harris",
   "kind": "RAF air marshal",
@@ -1188,6 +1195,13 @@
   "wikidata": "Q23559",
   "source": "https://en.wikipedia.org/wiki/Benito_Mussolini"
  },
+ "person-benjamin-gower-hardy": {
+  "name": "Benjamin Gower Hardy",
+  "kind": "Australian soldier, posthumous George Cross at Cowra",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Benjamin_Gower_Hardy"
+ },
  "person-benjamin-o-davis-jr": {
   "name": "Benjamin O. Davis Jr.",
   "kind": "American aviator and Tuskegee commander",
@@ -1337,6 +1351,14 @@
   "nation": "Norway",
   "wikidata": "Q865165",
   "source": "https://en.wikipedia.org/wiki/Birger_Eriksen"
+ },
+ "person-biuku-gasa-and-eroni-kumana": {
+  "name": "Biuku Gasa and Eroni Kumana",
+  "kind": "Solomon Islands scouts who found the PT-109 crew",
+  "nation": "Solomon Islands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Biuku_Gasa_and_Eroni_Kumana",
+  "note": "One Wikipedia article covers both men."
  },
  "person-bo-gu": {
   "name": "Bo Gu",
@@ -3150,6 +3172,13 @@
   "source": "https://en.wikipedia.org/wiki/Erich_Topp",
   "wikidata": "Q61001"
  },
+ "person-erich-von-dem-bach-zelewski": {
+  "name": "Erich von dem Bach-Zelewski",
+  "kind": "SS commander against the Warsaw Uprising",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Erich_von_dem_Bach-Zelewski"
+ },
  "person-erich-von-manstein": {
   "name": "Erich von Manstein",
   "kind": "German field marshal",
@@ -3375,6 +3404,13 @@
   "nation": "Germany",
   "wikidata": "Q76433",
   "source": "https://en.wikipedia.org/wiki/Eva_Braun"
+ },
+ "person-eva-maria-buch": {
+  "name": "Eva-Maria Buch",
+  "kind": "German resistance member, Red Orchestra",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Eva-Maria_Buch"
  },
  "person-evelyn-barker": {
   "name": "Evelyn Barker",
@@ -5319,6 +5355,13 @@
   "wikidata": "Q70560",
   "source": "https://en.wikipedia.org/wiki/Heinz_Guderian"
  },
+ "person-heinz-reinefarth": {
+  "name": "Heinz Reinefarth",
+  "kind": "German police commander in the Wola massacre",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Heinz_Reinefarth"
+ },
  "person-heinz-wilhelm-eck": {
   "name": "Heinz-Wilhelm Eck",
   "kind": "U-boat commander, executed for war crimes",
@@ -6599,6 +6642,16 @@
   "nation": "US",
   "wikidata": "Q3807004",
   "source": "https://en.wikipedia.org/wiki/Jane_Froman"
+ },
+ "person-janusz-korczak": {
+  "name": "Janusz Korczak",
+  "kind": "Polish Jewish educator, writer, and orphanage director",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Janusz_Korczak",
+  "aka": [
+   "Henryk Goldszmit"
+  ]
  },
  "person-janusz-kusocinski": {
   "name": "Janusz Kusociński",
@@ -8900,6 +8953,13 @@
   "wikidata": "Q231923",
   "source": "https://en.wikipedia.org/wiki/Marian_Anderson"
  },
+ "person-marian-chodacki": {
+  "name": "Marian Chodacki",
+  "kind": "Polish Commissioner-General in Danzig",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Marian_Chodacki"
+ },
  "person-marie-pierre-koenig": {
   "name": "Marie-Pierre Koenig",
   "kind": "Free French general, military governor of Paris",
@@ -10247,6 +10307,13 @@
   "wikidata": "Q365314",
   "source": "https://en.wikipedia.org/wiki/Pedro_Pablo_Ram%C3%ADrez"
  },
+ "person-per-albin-hansson": {
+  "name": "Per Albin Hansson",
+  "kind": "Prime Minister of Sweden",
+  "nation": "Sweden",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Per_Albin_Hansson"
+ },
  "person-percy-glading": {
   "name": "Percy Glading",
   "kind": "communist activist and Soviet spy",
@@ -11399,6 +11466,16 @@
   "wikidata": "Q7382919",
   "source": "https://en.wikipedia.org/wiki/Ruth_Cheney_Streeter"
  },
+ "person-ryszard-bialous": {
+  "name": "Ryszard Białous",
+  "kind": "Home Army officer, commander of the Zośka Battalion",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ryszard_Bia%C5%82ous",
+  "aka": [
+   "Jerzy"
+  ]
+ },
  "person-sabine-zlatin": {
   "name": "Sabine Zlatin",
   "kind": "director of the Izieu children's home",
@@ -11953,6 +12030,13 @@
   "nation": "Austria",
   "wikidata": "Q78491",
   "source": "https://en.wikipedia.org/wiki/Stefan_Zweig"
+ },
+ "person-stefania-wilczynska": {
+  "name": "Stefania Wilczyńska",
+  "kind": "Korczak's colleague at the Warsaw orphanage",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Stefania_Wilczy%C5%84ska"
  },
  "person-stephen-samuel-wise": {
   "name": "Stephen Samuel Wise",
@@ -13195,6 +13279,13 @@
   "nation": "Germany",
   "wikidata": "Q57513",
   "source": "https://en.wikipedia.org/wiki/Wilhelm_Groener"
+ },
+ "person-wilhelm-guddorf": {
+  "name": "Wilhelm Guddorf",
+  "kind": "German journalist and Red Orchestra member",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Wilhelm_Guddorf"
  },
  "person-wilhelm-gustloff": {
   "name": "Wilhelm Gustloff",

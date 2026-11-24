@@ -721,6 +721,15 @@
   "lat": 54.5967,
   "lon": -5.93
  },
+ "place-belgorod": {
+  "name": "Belgorod",
+  "kind": "city",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Belgorod",
+  "lat": null,
+  "lon": null
+ },
  "place-belgrade": {
   "name": "Belgrade",
   "kind": "city",
@@ -1651,6 +1660,15 @@
   "lat": 37.6786,
   "lon": 12.7917
  },
+ "place-catania": {
+  "name": "Catania",
+  "kind": "city, Sicily",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Catania",
+  "lat": null,
+  "lon": null
+ },
  "place-catford": {
   "name": "Catford",
   "kind": "district of south east London",
@@ -2070,6 +2088,15 @@
   "aka": [
    "Cathedral of St Michael"
   ]
+ },
+ "place-cowra": {
+  "name": "Cowra",
+  "kind": "town, New South Wales",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Cowra",
+  "lat": null,
+  "lon": null
  },
  "place-crieff": {
   "name": "Crieff",
@@ -10741,6 +10768,15 @@
   "source": "https://en.wikipedia.org/wiki/Winnipeg",
   "lat": 49.8956,
   "lon": -97.1386
+ },
+ "place-wola": {
+  "name": "Wola",
+  "kind": "district of Warsaw",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Wola",
+  "lat": null,
+  "lon": null
  },
  "place-wolf-s-lair": {
   "name": "Wolf's Lair",

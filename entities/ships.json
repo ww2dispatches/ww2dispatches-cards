@@ -5731,6 +5731,16 @@
    "Kerlogue"
   ]
  },
+ "ship-mv-mefkure": {
+  "name": "MV Mefküre",
+  "kind": "Turkish motor schooner carrying Jewish refugees",
+  "nation": "Turkey",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/MV_Mefk%C3%BCre",
+  "aka": [
+   "Mefkura"
+  ]
+ },
  "ship-mv-san-demetrio": {
   "name": "MV San Demetrio",
   "kind": "British motor tanker",
@@ -5994,6 +6004,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q4528351",
   "source": "https://en.wikipedia.org/wiki/Soviet_submarine_Shch-214"
+ },
+ "ship-soviet-submarine-shch-215": {
+  "name": "Soviet submarine Shch-215",
+  "kind": "Soviet Shchuka-class submarine",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Soviet_submarine_Shch-215"
  },
  "ship-spanish-destroyer-velasco": {
   "name": "Spanish destroyer Velasco",

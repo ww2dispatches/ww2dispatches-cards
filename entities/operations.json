@@ -6338,6 +6338,16 @@
   "wikidata": "Q22947756",
   "source": "https://en.wikipedia.org/wiki/Liberation_of_the_German-occupied_Channel_Islands"
  },
+ "op-liberation-of-warsaw-concentration-camp": {
+  "name": "Liberation of Warsaw concentration camp",
+  "kind": "Home Army assault on Gęsiówka, 5 August 1944",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Liberation_of_Warsaw_concentration_camp",
+  "aka": [
+   "Liberation of Gęsiówka"
+  ]
+ },
  "op-lidice-massacre": {
   "name": "Lidice massacre",
   "kind": "Nazi destruction of the Czech village of Lidice, June 1942",
@@ -6817,6 +6827,13 @@
    "Mulberry A",
    "Mulberry B"
   ]
+ },
+ "op-munich-agreement": {
+  "name": "Munich Agreement",
+  "kind": "1938 agreement on the Sudetenland",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Munich_Agreement"
  },
  "op-murder-of-maceo-snipes": {
   "name": "Murder of Maceo Snipes",
@@ -9769,6 +9786,16 @@
   "wikidata": "Q22082206",
   "source": "https://en.wikipedia.org/wiki/Townsville_mutiny"
  },
+ "op-transit-of-german-troops-through-finland-and-sweden": {
+  "name": "Transit of German troops through Finland and Sweden",
+  "kind": "wartime transit arrangement",
+  "nation": "Sweden",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Transit_of_German_troops_through_Finland_and_Sweden",
+  "aka": [
+   "Permittenttrafiken"
+  ]
+ },
  "op-treaties-of-rome-1941": {
   "name": "Treaties of Rome (1941)",
   "kind": "Italian and Croatian treaties",
@@ -10339,6 +10366,13 @@
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/Witchcraft_Act_1735",
   "wikidata": "Q8027891"
+ },
+ "op-wola-massacre": {
+  "name": "Wola massacre",
+  "kind": "mass killing of civilians, Warsaw, August 1944",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Wola_massacre"
  },
  "op-wolfram-crisis": {
   "name": "Wolfram Crisis",
