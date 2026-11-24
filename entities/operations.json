@@ -5122,6 +5122,13 @@
   "wikidata": "Q5604343",
   "source": "https://en.wikipedia.org/wiki/Greenock_Blitz"
  },
+ "op-grossaktion-warsaw": {
+  "name": "Grossaktion Warsaw",
+  "kind": "deportation of Warsaw Ghetto Jews to Treblinka, 1942",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Grossaktion_Warsaw"
+ },
  "op-guadalcanal-campaign": {
   "name": "Guadalcanal campaign",
   "kind": "campaign",
@@ -5795,6 +5802,13 @@
   "source": "https://en.wikipedia.org/wiki/Kindertransport",
   "wikidata": "Q683056"
  },
+ "op-king-david-hotel-bombing": {
+  "name": "King David Hotel bombing",
+  "kind": "bombing, 1946",
+  "nation": "Palestine",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/King_David_Hotel_bombing"
+ },
  "op-kisielin-massacre": {
   "name": "Kisielin massacre",
   "kind": "massacre of Polish worshippers, 11 July 1943",
@@ -5808,6 +5822,13 @@
   "nation": "Newfoundland",
   "wikidata": "Q6422446",
   "source": "https://en.wikipedia.org/wiki/Knights_of_Columbus_Hostel_fire"
+ },
+ "op-koiso-cabinet": {
+  "name": "Koiso cabinet",
+  "kind": "Japanese cabinet, 1944 to 1945",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Koiso_cabinet"
  },
  "op-kon-tiki-expedition": {
   "name": "Kon-Tiki expedition",
@@ -6222,6 +6243,17 @@
   "nation": "Italy",
   "wikidata": "Q17051094",
   "source": "https://en.wikipedia.org/wiki/Manifesto_of_Race"
+ },
+ "op-manifesto-of-the-polish-committee-of-national-liberation": {
+  "name": "Manifesto of the Polish Committee of National Liberation",
+  "kind": "political manifesto, 1944",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Manifesto_of_the_Polish_Committee_of_National_Liberation",
+  "aka": [
+   "PKWN Manifesto",
+   "July Manifesto"
+  ]
  },
  "op-manstein-plan": {
   "name": "Manstein plan",
@@ -8536,6 +8568,13 @@
   "nation": "Italy",
   "wikidata": "Q94916",
   "source": "https://en.wikipedia.org/wiki/Second_Italo-Ethiopian_War"
+ },
+ "op-second-konoe-cabinet": {
+  "name": "Second Konoe cabinet",
+  "kind": "Japanese cabinet, 1940",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Second_Konoe_cabinet"
  },
  "op-second-london-naval-treaty": {
   "name": "Second London Naval Treaty",

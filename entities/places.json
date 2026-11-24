@@ -1264,6 +1264,15 @@
   "lat": -34.5997,
   "lon": -58.3819
  },
+ "place-buin-papua-new-guinea": {
+  "name": "Buin",
+  "kind": "town and Japanese base on Bougainville",
+  "nation": "Papua New Guinea",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Buin,_Papua_New_Guinea",
+  "lat": null,
+  "lon": null
+ },
  "place-bullenhuser-damm": {
   "name": "Bullenhuser Damm School",
   "kind": "school in Hamburg, Neuengamme satellite camp and memorial",
@@ -1718,6 +1727,18 @@
   "wikidata": "Q162049",
   "lat": 52.5167,
   "lon": 13.3
+ },
+ "place-chelm": {
+  "name": "Chełm",
+  "kind": "city in eastern Poland",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Che%C5%82m",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Chelm"
+  ]
  },
  "place-chelmno-extermination-camp": {
   "name": "Chelmno extermination camp",
@@ -2649,6 +2670,15 @@
   "source": "https://en.wikipedia.org/wiki/Flossenb%C3%BCrg_concentration_camp",
   "lat": 49.7356,
   "lon": 12.3558
+ },
+ "place-floyd-bennett-field": {
+  "name": "Floyd Bennett Field",
+  "kind": "airfield in Brooklyn, New York",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Floyd_Bennett_Field",
+  "lat": null,
+  "lon": null
  },
  "place-ford-river-rouge-complex": {
   "name": "Ford River Rouge complex",
@@ -4033,6 +4063,15 @@
   "lat": 49.19,
   "lon": -2.11
  },
+ "place-jerusalem": {
+  "name": "Jerusalem",
+  "kind": "city",
+  "nation": "Palestine",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Jerusalem",
+  "lat": null,
+  "lon": null
+ },
  "place-jinan": {
   "name": "Jinan",
   "kind": "city, capital of Shandong",
@@ -4387,6 +4426,15 @@
   "aka": [
    "Kifisia"
   ]
+ },
+ "place-king-david-hotel": {
+  "name": "King David Hotel",
+  "kind": "hotel in Jerusalem, British headquarters in 1946",
+  "nation": "Palestine",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/King_David_Hotel",
+  "lat": null,
+  "lon": null
  },
  "place-kingdom-of-iceland": {
   "name": "Kingdom of Iceland",

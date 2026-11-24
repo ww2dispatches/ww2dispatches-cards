@@ -55,6 +55,16 @@
   "wikidata": "Q2774189",
   "source": "https://en.wikipedia.org/wiki/Abe_Silverstein"
  },
+ "person-adam-czerniakow": {
+  "name": "Adam Czerniaków",
+  "kind": "chairman of the Warsaw Ghetto Jewish Council",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Adam_Czerniak%C3%B3w",
+  "aka": [
+   "Adam Czerniakow"
+  ]
+ },
  "person-adnan-saidi": {
   "name": "Adnan Saidi",
   "kind": "Malay Regiment officer",
@@ -4022,6 +4032,14 @@
   "wikidata": "Q132744785",
   "source": "https://en.wikipedia.org/wiki/Geoffrey_Gordon-Creed"
  },
+ "person-geoffrey-keyes": {
+  "name": "Geoffrey Keyes",
+  "kind": "U.S. Army general, Seventh Army deputy in Sicily",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Geoffrey_Keyes",
+  "note": "Not the British VC officer person-geoffrey-keyes-vc."
+ },
  "person-geoffrey-keyes-vc": {
   "name": "Geoffrey Keyes",
   "kind": "British commando officer",
@@ -4170,6 +4188,13 @@
   "nation": "Greece",
   "wikidata": "Q152935",
   "source": "https://en.wikipedia.org/wiki/George_II_of_Greece"
+ },
+ "person-george-isaacs": {
+  "name": "George Isaacs",
+  "kind": "British Minister of Labour",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/George_Isaacs"
  },
  "person-george-john-dasch": {
   "name": "George John Dasch",
@@ -11502,6 +11527,16 @@
   "wikidata": "Q332405",
   "source": "https://en.wikipedia.org/wiki/Stafford_Cripps"
  },
+ "person-stan-gurney": {
+  "name": "Stan Gurney",
+  "kind": "Australian private, posthumous Victoria Cross",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Stan_Gurney",
+  "aka": [
+   "Arthur Stanley Gurney"
+  ]
+ },
  "person-stan-turner-raf-officer": {
   "name": "Stan Turner (RAF officer)",
   "kind": "Canadian fighter pilot, No. 249 Squadron commander on Malta",
@@ -12666,6 +12701,13 @@
   "nation": "Germany",
   "wikidata": "Q57384",
   "source": "https://en.wikipedia.org/wiki/Wernher_von_Braun"
+ },
+ "person-wiley-post": {
+  "name": "Wiley Post",
+  "kind": "American aviator, first solo flight around the world",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Wiley_Post"
  },
  "person-wilfred-arthur": {
   "name": "Wilfred Arthur",

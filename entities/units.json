@@ -579,6 +579,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/2/29th_Battalion_(Australia)"
  },
+ "unit-2-48th-battalion-australia": {
+  "name": "2/48th Battalion",
+  "kind": "Australian infantry battalion",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/2/48th_Battalion_(Australia)"
+ },
  "unit-2-5th-commando-squadron-australia": {
   "name": "2/5th Commando Squadron (Australia)",
   "kind": "commando unit",
@@ -3338,6 +3345,13 @@
   "aka": [
    "IMF"
   ]
+ },
+ "unit-irgun": {
+  "name": "Irgun",
+  "kind": "Zionist underground organization",
+  "nation": "Palestine",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Irgun"
  },
  "unit-irish-guards": {
   "name": "Irish Guards",
