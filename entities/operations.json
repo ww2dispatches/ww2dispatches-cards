@@ -65,6 +65,16 @@
    "Saar plebiscite"
   ]
  },
+ "op-1936-summer-olympics": {
+  "name": "1936 Summer Olympics",
+  "kind": "Olympic Games in Berlin",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1936_Summer_Olympics",
+  "aka": [
+   "Berlin Olympics"
+  ]
+ },
  "op-1936-winter-olympics": {
   "name": "1936 Winter Olympics",
   "kind": "Olympic Games at Garmisch-Partenkirchen",
@@ -2856,6 +2866,13 @@
   "wikidata": "Q96373276",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Tripoli_(1943)"
  },
+ "op-battle-of-uman": {
+  "name": "Battle of Uman",
+  "kind": "German encirclement battle, July to August 1941",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Uman"
+ },
  "op-battle-of-ushant-1944": {
   "name": "Battle of Ushant (1944)",
   "kind": "destroyer action off Brittany",
@@ -3037,6 +3054,17 @@
   "nation": "Germany",
   "wikidata": "Q815420",
   "source": "https://en.wikipedia.org/wiki/Belfast_Blitz"
+ },
+ "op-belgorod-kharkov-offensive-operation": {
+  "name": "Belgorod-Kharkov offensive operation",
+  "kind": "Soviet offensive after Kursk, August 1943",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Belgorod%E2%80%93Kharkov_offensive_operation",
+  "aka": [
+   "Operation Polkovodets Rumyantsev",
+   "Operation Rumyantsev"
+  ]
  },
  "op-belsen-trials": {
   "name": "Belsen trials",
@@ -5010,6 +5038,13 @@
   "wikidata": "Q865344",
   "source": "https://en.wikipedia.org/wiki/Genocide_Convention"
  },
+ "op-george-s-patton-slapping-incidents": {
+  "name": "George S. Patton slapping incidents",
+  "kind": "Patton's assaults on two hospitalized soldiers in Sicily, August 1943",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/George_S._Patton_slapping_incidents"
+ },
  "op-georgian-uprising-on-texel": {
   "name": "Georgian uprising on Texel",
   "kind": "mutiny and battle",
@@ -5602,6 +5637,13 @@
   "nation": "Italy",
   "wikidata": "Q714644",
   "source": "https://en.wikipedia.org/wiki/Italian_invasion_of_Albania"
+ },
+ "op-italian-invasion-of-british-somaliland": {
+  "name": "Italian invasion of British Somaliland",
+  "kind": "Italian offensive, August 1940",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_invasion_of_British_Somaliland"
  },
  "op-italian-invasion-of-france": {
   "name": "Italian invasion of France",

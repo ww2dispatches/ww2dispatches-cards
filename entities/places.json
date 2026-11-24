@@ -1196,6 +1196,15 @@
   "lat": 51.4536,
   "lon": -2.5975
  },
+ "place-british-somaliland": {
+  "name": "British Somaliland",
+  "kind": "British protectorate on the Gulf of Aden",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/British_Somaliland",
+  "lat": null,
+  "lon": null
+ },
  "place-brno": {
   "name": "Brno",
   "kind": "city in Moravia",
@@ -2591,6 +2600,15 @@
   "lat": 50.8167,
   "lon": 6.2833
  },
+ "place-espiritu-santo": {
+  "name": "Espiritu Santo",
+  "kind": "island and Allied base in the New Hebrides",
+  "nation": "New Hebrides",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Espiritu_Santo",
+  "lat": null,
+  "lon": null
+ },
  "place-essen": {
   "name": "Essen",
   "kind": "city in the Ruhr, home of the Krupp works",
@@ -3031,6 +3049,15 @@
   "source": "https://en.wikipedia.org/wiki/George_Washington_Carver_National_Monument",
   "lat": 36.9864,
   "lon": -94.3542
+ },
+ "place-georgia-u-s-state": {
+  "name": "Georgia (U.S. state)",
+  "kind": "US state",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Georgia_(U.S._state)",
+  "lat": null,
+  "lon": null
  },
  "place-gibraltar": {
   "name": "Gibraltar",
@@ -7003,6 +7030,15 @@
   "source": "https://en.wikipedia.org/wiki/Olevsk",
   "lat": 51.2278,
   "lon": 27.6481
+ },
+ "place-olympiastadion-berlin": {
+  "name": "Olympiastadion (Berlin)",
+  "kind": "stadium of the 1936 Olympics",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Olympiastadion_(Berlin)",
+  "lat": null,
+  "lon": null
  },
  "place-omaha-beach": {
   "name": "Omaha Beach",

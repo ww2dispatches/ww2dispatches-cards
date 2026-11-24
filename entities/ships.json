@@ -1161,6 +1161,13 @@
   "wikidata": "Q571307",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-333"
  },
+ "ship-german-submarine-u-335": {
+  "name": "U-335",
+  "kind": "German Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-335"
+ },
  "ship-german-submarine-u-34-1936": {
   "name": "German submarine U-34 (1936)",
   "kind": "Type VIIA U-boat",
@@ -3640,6 +3647,13 @@
   "wikidata": "Q1565225",
   "source": "https://en.wikipedia.org/wiki/HMS_Queen_Elizabeth_(1913)"
  },
+ "ship-hms-quorn-l66": {
+  "name": "HMS Quorn (L66)",
+  "kind": "Royal Navy Hunt-class destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Quorn_(L66)"
+ },
  "ship-hms-ramillies-07": {
   "name": "HMS Ramillies (07)",
   "kind": "Royal Navy battleship",
@@ -3691,6 +3705,13 @@
   "nation": "Britain",
   "wikidata": "Q1565307",
   "source": "https://en.wikipedia.org/wiki/HMS_Salmon_(N65)"
+ },
+ "ship-hms-saracen-p247": {
+  "name": "HMS Saracen (P247)",
+  "kind": "Royal Navy S-class submarine",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Saracen_(P247)"
  },
  "ship-hms-saumarez-g12": {
   "name": "HMS Saumarez (G12)",
@@ -8298,6 +8319,13 @@
   "nation": "US",
   "wikidata": "Q7874888",
   "source": "https://en.wikipedia.org/wiki/USS_Truxtun_(DD-229)"
+ },
+ "ship-uss-tucker-dd-374": {
+  "name": "USS Tucker (DD-374)",
+  "kind": "US Navy Mahan-class destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Tucker_(DD-374)"
  },
  "ship-uss-tullibee-ss-284": {
   "name": "USS Tullibee (SS-284)",
