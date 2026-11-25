@@ -5693,6 +5693,13 @@
   "wikidata": "Q713516",
   "source": "https://en.wikipedia.org/wiki/Doolittle_Raid"
  },
+ "op-double-tenth-agreement": {
+  "name": "Double Tenth Agreement",
+  "kind": "1945 Nationalist and Communist accord in Chongqing",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Double_Tenth_Agreement"
+ },
  "op-douglas-macarthur-s-escape-from-the-philippines": {
   "name": "Douglas MacArthur's escape from the Philippines",
   "kind": "evacuation of a commander",
@@ -10053,6 +10060,13 @@
    "Operation Rheinübung"
   ]
  },
+ "op-operation-rimau": {
+  "name": "Operation Rimau",
+  "kind": "Z Special Unit raid on Singapore harbor, 1944",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Rimau"
+ },
  "op-operation-rosselsprung-1942": {
   "name": "Operation Rosselsprung (1942)",
   "kind": "German naval sortie against Convoy PQ 17, July 1942",
@@ -11529,6 +11543,16 @@
   "wikidata": "Q593024",
   "source": "https://en.wikipedia.org/wiki/S%C3%A9tif_and_Guelma_massacre"
  },
+ "op-severity-order": {
+  "name": "Severity Order",
+  "kind": "Reichenau's 10 October 1941 order to the Sixth Army",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Severity_Order",
+  "aka": [
+   "Reichenau Order"
+  ]
+ },
  "op-shangdang-campaign": {
   "name": "Shangdang Campaign",
   "kind": "Chinese Civil War campaign, September to October 1945",
@@ -11964,6 +11988,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q4342376",
   "source": "https://en.wikipedia.org/wiki/Soviet%E2%80%93Latvian_Mutual_Assistance_Treaty"
+ },
+ "op-soviet-lithuanian-mutual-assistance-treaty": {
+  "name": "Soviet Lithuanian Mutual Assistance Treaty",
+  "kind": "1939 treaty returning Vilnius and admitting Soviet bases",
+  "nation": "Lithuania",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Soviet%E2%80%93Lithuanian_Mutual_Assistance_Treaty"
  },
  "op-soviet-occupation-of-bessarabia-and-northern-bukovina": {
   "name": "Soviet occupation of Bessarabia and Northern Bukovina",

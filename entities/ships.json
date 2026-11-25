@@ -7235,6 +7235,16 @@
    "SS Corfu"
   ]
  },
+ "ship-rms-duchess-of-atholl": {
+  "name": "RMS Duchess of Atholl",
+  "kind": "Canadian Pacific liner",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/RMS_Duchess_of_Atholl",
+  "aka": [
+   "SS Duchess of Atholl"
+  ]
+ },
  "ship-rms-empress-of-asia": {
   "name": "RMS Empress of Asia",
   "kind": "ocean liner and troopship",
@@ -8003,6 +8013,16 @@
   "nation": "US",
   "wikidata": "Q2016430",
   "source": "https://en.wikipedia.org/wiki/SS_Ohio"
+ },
+ "ship-ss-orcades-1936": {
+  "name": "SS Orcades (1936)",
+  "kind": "Orient Line liner, troopship",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Orcades_(1936)",
+  "aka": [
+   "RMS Orcades"
+  ]
  },
  "ship-ss-oria": {
   "name": "SS Oria",

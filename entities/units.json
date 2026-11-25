@@ -1,4 +1,16 @@
 {
+ "unit-100th-air-refueling-wing": {
+  "name": "100th Air Refueling Wing",
+  "kind": "USAF wing; in World War II the 100th Bombardment Group, the Bloody Hundredth",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/100th_Air_Refueling_Wing",
+  "aka": [
+   "100th Bomb Group",
+   "100th Bombardment Group",
+   "Bloody Hundredth"
+  ]
+ },
  "unit-100th-infantry-battalion": {
   "name": "100th Infantry Battalion",
   "kind": "U.S. Army Nisei infantry battalion, part of the 442nd Regimental Combat Team",
@@ -6662,6 +6674,16 @@
   "nation": "US",
   "wikidata": "Q66096",
   "source": "https://en.wikipedia.org/wiki/United_States_Senate"
+ },
+ "unit-united-states-strategic-bombing-survey": {
+  "name": "United States Strategic Bombing Survey",
+  "kind": "US board that studied the bombing of Germany and Japan",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/United_States_Strategic_Bombing_Survey",
+  "aka": [
+   "USSBS"
+  ]
  },
  "unit-ustase": {
   "name": "Ustase",
