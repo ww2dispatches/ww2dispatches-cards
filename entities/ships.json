@@ -856,6 +856,13 @@
   "wikidata": "Q2023336",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-194"
  },
+ "ship-german-submarine-u-198": {
+  "name": "German submarine U-198",
+  "kind": "Type IXD2 U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-198"
+ },
  "ship-german-submarine-u-199": {
   "name": "German submarine U-199",
   "kind": "U-boat, Type IXD2",
@@ -2918,6 +2925,13 @@
   "wikidata": "Q5631727",
   "source": "https://en.wikipedia.org/wiki/HMS_Cachalot_(N83)"
  },
+ "ship-hms-cairo": {
+  "name": "HMS Cairo (D87)",
+  "kind": "Royal Navy C class cruiser converted to anti aircraft cruiser",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Cairo"
+ },
  "ship-hms-calcutta-d82": {
   "name": "HMS Calcutta (D82)",
   "kind": "anti aircraft cruiser",
@@ -3175,6 +3189,13 @@
   "aka": [
    "Fiji"
   ]
+ },
+ "ship-hms-findhorn": {
+  "name": "HMS Findhorn",
+  "kind": "Royal Navy River class frigate",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Findhorn"
  },
  "ship-hms-forfar": {
   "name": "HMS Forfar (F30)",
@@ -3644,6 +3665,13 @@
   "aka": [
    "HMS Newfoundland (59)"
   ]
+ },
+ "ship-hms-nigeria": {
+  "name": "HMS Nigeria (60)",
+  "kind": "Royal Navy light cruiser",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Nigeria"
  },
  "ship-hms-nith-k215": {
   "name": "HMS Nith (K215)",
@@ -4550,6 +4578,13 @@
   "nation": "Italy",
   "wikidata": "Q3624857",
   "source": "https://en.wikipedia.org/wiki/Italian_submarine_Ascianghi"
+ },
+ "ship-italian-submarine-axum": {
+  "name": "Italian submarine Axum",
+  "kind": "Italian Navy submarine",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_submarine_Axum"
  },
  "ship-italian-submarine-barbarigo": {
   "name": "Italian submarine Barbarigo",
@@ -6538,6 +6573,13 @@
    "USS Lafayette (AP-53)",
    "Normandie"
   ]
+ },
+ "ship-ss-ohio": {
+  "name": "SS Ohio",
+  "kind": "American built tanker in the Pedestal convoy",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Ohio"
  },
  "ship-ss-oria": {
   "name": "SS Oria",

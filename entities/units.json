@@ -346,6 +346,13 @@
   "source": "https://en.wikipedia.org/wiki/16th_Infantry_Regiment_(United_States)",
   "wikidata": "Q4552168"
  },
+ "unit-16th-ss-panzergrenadier-division-reichsfuhrer-ss": {
+  "name": "16th SS Panzergrenadier Division Reichsfuhrer-SS",
+  "kind": "Waffen-SS division",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/16th_SS_Panzergrenadier_Division_Reichsf%C3%BChrer-SS"
+ },
  "unit-175th-infantry-regiment-united-states": {
   "name": "175th Infantry Regiment",
   "kind": "U.S. infantry regiment",
@@ -5139,6 +5146,17 @@
   "source": "https://en.wikipedia.org/wiki/S-1_Executive_Committee",
   "aka": [
    "S-1 Section"
+  ]
+ },
+ "unit-schnellkampfgeschwader-210": {
+  "name": "Erprobungsgruppe 210",
+  "kind": "Luftwaffe fighter bomber unit, later Schnellkampfgeschwader 210",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Schnellkampfgeschwader_210",
+  "aka": [
+   "Schnellkampfgeschwader 210",
+   "Erpro 210"
   ]
  },
  "unit-scots-guards": {

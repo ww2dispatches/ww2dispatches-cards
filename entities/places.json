@@ -8174,6 +8174,15 @@
   "lat": 50.8169,
   "lon": -0.9208
  },
+ "place-raf-ventnor": {
+  "name": "RAF Ventnor",
+  "kind": "Chain Home radar station, Isle of Wight",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/RAF_Ventnor",
+  "lat": null,
+  "lon": null
+ },
  "place-rahway-new-jersey": {
   "name": "Rahway, New Jersey",
   "kind": "city",
@@ -8738,6 +8747,15 @@
   "source": "https://en.wikipedia.org/wiki/Sandakan",
   "lat": 5.8388,
   "lon": 118.1173
+ },
+ "place-sant-anna-di-stazzema": {
+  "name": "Sant'Anna di Stazzema",
+  "kind": "Village in the Apuan Alps, Tuscany",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sant%27Anna_di_Stazzema",
+  "lat": null,
+  "lon": null
  },
  "place-santa-ana-army-air-base": {
   "name": "Santa Ana Army Air Base",
