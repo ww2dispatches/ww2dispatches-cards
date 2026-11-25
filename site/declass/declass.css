@@ -1320,3 +1320,4 @@ html.ztrial #stage2{cursor:zoom-in}
 .mailslot:not(.gready) .gor { display: none; }
 
 /* Search headings (15 Nov 2026): one h1 on the page (the landing's DECLASS); the screen titles became h2.ttl and keep the h1 look above. */
+.outask{display:block;font-size:14px;color:var(--mute);margin:6px 0 2px} /* the app's own warning, explained before it shows (23 Nov 2026) */

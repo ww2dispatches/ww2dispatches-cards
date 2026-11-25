@@ -1163,10 +1163,8 @@
     u.searchParams.set('out', '1');
     return u.href;
   }
-  // The automatic jump (13 Nov 2026): a new visitor arriving inside a social app's browser is sent to the
-  // phone's real browser right away, before opening anything, so the whole game and the sign in work.
-  // Tried once per visit. Android hands over to the default browser; recent iPhones open Safari. Where the
-  // app refuses, nothing happens and the visitor carries on here, with the way out box on the save screen.
+  // Arrivals: counts a visitor who lands in the real browser from the way out link (out=1), and one who arrives
+  // inside a social app's browser. The automatic jump of 13 Nov 2026 was retired on 23 Nov 2026 (below).
   function autoJump() {
     try {
       const u = new URL(location.href);
@@ -1177,12 +1175,10 @@
     } catch (e) {}
     if (!IN_APP) return;
     hit('inapp_arrive');
-    let tried = false;
-    try { tried = sessionStorage.getItem('ww_out') === '1'; sessionStorage.setItem('ww_out', '1'); } catch (e) { tried = true; }
-    if (tried || STARTER) return;
-    hit('inapp_auto');
-    const link = openOutHref(outLink(true));
-    setTimeout(() => { try { location.href = link; } catch (e) {} }, 400);
+    // 23 Nov 2026 (decided by Brian): no automatic jump on arrival. Facebook on iPhone answers it with its own
+    // "trying to open an app outside of Facebook" warning before the visitor has seen a card, and none of 11 real
+    // Facebook visitors got past it. Visitors now play their starter pack here first; the way out comes on the
+    // save screen, where they have five cards worth taking with them.
   }
   function openOutHref(link) {
     const ua = navigator.userAgent || '';
@@ -1194,7 +1190,7 @@
     const has = STARTER && !signedIn();
     el.classList.add('outslot');
     el.innerHTML = '<div class="outbox"><b>One more step</b><span>' + IN_APP + "'s built in browser can't sign you in. Open Declass in your phone's own browser" + (has ? ' and your five cards come with you.' : ' to sign in.') + '</span>'
-      + '<a class="btn" data-out="open">Open in my browser</a><button class="linkbtn" type="button" data-out="copy">Or copy the link</button>'
+      + '<a class="btn" data-out="open">Open in my browser</a><span class="outask">' + (IN_APP === 'this app' ? 'The app' : IN_APP) + ' may ask if it\'s OK to open your browser. Tap <b>Open</b>.</span><button class="linkbtn" type="button" data-out="copy">Or copy the link</button>'
       + '<span class="outhow">If nothing opens, tap the menu (the three dots) at the top of this screen and choose Open in browser.</span></div>';
     const a = el.querySelector('[data-out="open"]');
     a.href = openOutHref(outLink());
@@ -1202,6 +1198,12 @@
     // moment after the tap, the button gives way to the one route every app has: its own menu.
     a.onclick = () => {
       a.href = openOutHref(outLink()); hit('inapp_open');
+      // still here 3 seconds after the tap: the app refused or the visitor said no; counted by app (23 Nov 2026)
+      setTimeout(() => {
+        if (document.visibilityState !== 'visible') return;
+        hit('inapp_stayed');
+        hit('stayed_' + ({ Facebook: 'facebook', Instagram: 'instagram', Threads: 'threads', TikTok: 'tiktok', X: 'x' }[IN_APP] || 'other'));
+      }, 3000);
       setTimeout(() => {
         if (document.visibilityState !== 'visible' || !a.isConnected) return;
         hit('inapp_stuck');
