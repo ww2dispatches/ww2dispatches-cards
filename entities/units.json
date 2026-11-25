@@ -716,6 +716,13 @@
   "wikidata": "Q2814448",
   "source": "https://en.wikipedia.org/wiki/200th_Division_(National_Revolutionary_Army)"
  },
+ "unit-20th-brigade-australia": {
+  "name": "20th Brigade (Australia)",
+  "kind": "Australian infantry brigade",
+  "nation": "Australia",
+  "wikidata": "Q4630673",
+  "source": "https://en.wikipedia.org/wiki/20th_Brigade_(Australia)"
+ },
  "unit-21st-army-group": {
   "name": "21st Army Group",
   "kind": "Allied army group",
@@ -1713,6 +1720,13 @@
   "nation": "US",
   "wikidata": "Q4641270",
   "source": "https://en.wikipedia.org/wiki/5th_Cavalry_Regiment"
+ },
+ "unit-5th-division-imperial-japanese-army": {
+  "name": "5th Division (Imperial Japanese Army)",
+  "kind": "Japanese infantry division",
+  "nation": "Japan",
+  "wikidata": "Q709183",
+  "source": "https://en.wikipedia.org/wiki/5th_Division_(Imperial_Japanese_Army)"
  },
  "unit-5th-guards-tank-army": {
   "name": "5th Guards Tank Army",

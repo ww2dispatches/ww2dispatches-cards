@@ -550,6 +550,15 @@
    "Babruysk"
   ]
  },
+ "place-bad-godesberg": {
+  "lat": null,
+  "lon": null,
+  "name": "Bad Godesberg",
+  "kind": "spa town, now part of Bonn",
+  "nation": "Germany",
+  "wikidata": "Q153260",
+  "source": "https://en.wikipedia.org/wiki/Bad_Godesberg"
+ },
  "place-baghdad": {
   "name": "Baghdad",
   "kind": "city, capital of Iraq",
@@ -2812,6 +2821,16 @@
   "wikidata": "Q1229",
   "lat": 47.0864,
   "lon": 39.2386
+ },
+ "place-dong-dang": {
+  "lat": null,
+  "lon": null,
+  "name": "Dong Dang",
+  "kind": "border town in northern Vietnam",
+  "nation": "France",
+  "wikidata": "Q1285379",
+  "source": "https://en.wikipedia.org/wiki/%C4%90%E1%BB%93ng_%C4%90%C4%83ng",
+  "note": "French Indochina in 1940"
  },
  "place-dongo-lombardy": {
   "name": "Dongo",
@@ -8709,6 +8728,15 @@
   "lat": 51.51,
   "lon": -0.1344
  },
+ "place-pikk-hermann": {
+  "lat": null,
+  "lon": null,
+  "name": "Pikk Hermann",
+  "kind": "tower of Toompea Castle, Tallinn",
+  "nation": "Estonia",
+  "wikidata": "Q1420569",
+  "source": "https://en.wikipedia.org/wiki/Pikk_Hermann"
+ },
  "place-piraeus": {
   "name": "Piraeus",
   "kind": "Greek port city",
@@ -10436,6 +10464,15 @@
   ],
   "lat": 51.447,
   "lon": 23.5941
+ },
+ "place-sochaczew": {
+  "lat": null,
+  "lon": null,
+  "name": "Sochaczew",
+  "kind": "town in Poland",
+  "nation": "Poland",
+  "wikidata": "Q250485",
+  "source": "https://en.wikipedia.org/wiki/Sochaczew"
  },
  "place-sofia": {
   "name": "Sofia",

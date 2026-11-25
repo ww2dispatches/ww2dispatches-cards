@@ -1044,6 +1044,13 @@
   "wikidata": "Q4051950",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-227"
  },
+ "ship-german-submarine-u-229": {
+  "name": "German submarine U 229",
+  "kind": "Type VIIC U boat",
+  "nation": "Germany",
+  "wikidata": "Q2498152",
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-229"
+ },
  "ship-german-submarine-u-23-1936": {
   "name": "German submarine U-23 (1936)",
   "kind": "Type IIB U-boat",
@@ -4092,6 +4099,13 @@
   "aka": [
    "HMCS Assiniboine"
   ]
+ },
+ "ship-hms-keppel-d84": {
+  "name": "HMS Keppel (D84)",
+  "kind": "Royal Navy destroyer leader",
+  "nation": "Britain",
+  "wikidata": "Q19840294",
+  "source": "https://en.wikipedia.org/wiki/HMS_Keppel_(D84)"
  },
  "ship-hms-king-george-v-41": {
   "name": "HMS King George V (41)",

@@ -457,6 +457,13 @@
    "Dakota"
   ]
  },
+ "aircraft-douglas-c-54-skymaster": {
+  "name": "Douglas C 54 Skymaster",
+  "kind": "four engine military transport",
+  "nation": "US",
+  "wikidata": "Q1252107",
+  "source": "https://en.wikipedia.org/wiki/Douglas_C-54_Skymaster"
+ },
  "aircraft-douglas-d-558-1-skystreak": {
   "name": "Douglas D-558-1 Skystreak",
   "kind": "jet research aircraft",

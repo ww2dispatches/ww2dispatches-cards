@@ -2473,6 +2473,13 @@
    "Great Los Angeles Air Raid"
   ]
  },
+ "op-battle-of-lwow-1939": {
+  "name": "Battle of Lwow (1939)",
+  "kind": "siege of Lwow, September 1939",
+  "nation": "Poland",
+  "wikidata": "Q3636512",
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Lw%C3%B3w_(1939)"
+ },
  "op-battle-of-madagascar": {
   "name": "Battle of Madagascar",
   "kind": "Allied campaign against Vichy Madagascar, May to November 1942",
@@ -4257,6 +4264,13 @@
    "Bonus March"
   ]
  },
+ "op-boryszew-massacre": {
+  "name": "Boryszew massacre",
+  "kind": "Wehrmacht execution of Polish prisoners, 22 September 1939",
+  "nation": "Poland",
+  "wikidata": "Q9388608",
+  "source": "https://en.wikipedia.org/wiki/Boryszew_massacre"
+ },
  "op-boston-marathon": {
   "name": "Boston Marathon",
   "kind": "annual marathon race",
@@ -5166,6 +5180,13 @@
    "December events"
   ]
  },
+ "op-denazification": {
+  "name": "Denazification",
+  "kind": "Allied occupation program",
+  "nation": "US, Britain, France, Soviet Union",
+  "wikidata": "Q27617",
+  "source": "https://en.wikipedia.org/wiki/Denazification"
+ },
  "op-deportation-of-koreans-in-the-soviet-union": {
   "name": "Deportation of Koreans in the Soviet Union",
   "kind": "forced deportation, 1937",
@@ -5530,6 +5551,13 @@
   "nation": "France",
   "wikidata": "Q48743214",
   "source": "https://en.wikipedia.org/wiki/Evacuation_of_the_Louvre_collection_during_World_War_II"
+ },
+ "op-evacuations-of-civilians-in-japan-during-world-war-ii": {
+  "name": "Evacuations of civilians in Japan during World War II",
+  "kind": "civil evacuation program",
+  "nation": "Japan",
+  "wikidata": "Q5415233",
+  "source": "https://en.wikipedia.org/wiki/Evacuations_of_civilians_in_Japan_during_World_War_II"
  },
  "op-evacuations-of-civilians-in-the-united-kingdom-during-the-second-world-war": {
   "name": "Evacuations of civilians in the United Kingdom during the Second World War",
@@ -6164,6 +6192,13 @@
   "wikidata": "Q573331",
   "source": "https://en.wikipedia.org/wiki/German%E2%80%93Soviet_Credit_Agreement_(1939)"
  },
+ "op-german-soviet-military-parade-in-brest-litovsk": {
+  "name": "German Soviet military parade in Brest Litovsk",
+  "kind": "handover ceremony, 22 September 1939",
+  "nation": "Germany, Soviet Union",
+  "wikidata": "Q2378829",
+  "source": "https://en.wikipedia.org/wiki/German%E2%80%93Soviet_military_parade_in_Brest-Litovsk"
+ },
  "op-german-surrender-at-luneburg-heath": {
   "name": "German surrender at Luneburg Heath",
   "kind": "surrender of German forces in northwest Germany, the Netherlands and Denmark, 4 May 1945",
@@ -6194,6 +6229,13 @@
   "nation": "Germany",
   "wikidata": "Q25980",
   "source": "https://en.wikipedia.org/wiki/Gleiwitz_incident"
+ },
+ "op-godesberg-memorandum": {
+  "name": "Godesberg Memorandum",
+  "kind": "Hitler's Sudeten demands, September 1938",
+  "nation": "Germany",
+  "wikidata": "Q5576335",
+  "source": "https://en.wikipedia.org/wiki/Godesberg_Memorandum"
  },
  "op-gouzenko-affair": {
   "name": "Gouzenko Affair",
@@ -6863,6 +6905,13 @@
    "Burma campaign 1941 to 1942"
   ]
  },
+ "op-japanese-invasion-of-french-indochina": {
+  "name": "Japanese invasion of French Indochina",
+  "kind": "invasion of northern Indochina, September 1940",
+  "nation": "Japan",
+  "wikidata": "Q140025",
+  "source": "https://en.wikipedia.org/wiki/Japanese_invasion_of_French_Indochina"
+ },
  "op-japanese-invasion-of-legazpi": {
   "name": "Japanese invasion of Legazpi",
   "kind": "amphibious landing",
@@ -7328,6 +7377,16 @@
   "nation": "US",
   "wikidata": "Q6484628",
   "source": "https://en.wikipedia.org/wiki/Landing_at_Saidor"
+ },
+ "op-landing-at-scarlet-beach": {
+  "name": "Landing at Scarlet Beach",
+  "kind": "amphibious landing near Finschhafen, September 1943",
+  "nation": "Australia",
+  "wikidata": "Q4872331",
+  "source": "https://en.wikipedia.org/wiki/Landing_at_Scarlet_Beach",
+  "aka": [
+   "Operation Diminish"
+  ]
  },
  "op-landing-on-emirau": {
   "name": "Landing on Emirau",
@@ -9475,6 +9534,13 @@
   "wikidata": "Q708223",
   "source": "https://en.wikipedia.org/wiki/Operation_Sonnenblume"
  },
+ "op-operation-source": {
+  "name": "Operation Source",
+  "kind": "X craft attack on Tirpitz, September 1943",
+  "nation": "Britain",
+  "wikidata": "Q2684105",
+  "source": "https://en.wikipedia.org/wiki/Operation_Source"
+ },
  "op-operation-spring": {
   "name": "Operation Spring",
   "kind": "Canadian attack south of Caen, 25 to 27 July 1944",
@@ -9677,6 +9743,13 @@
   "nation": "Britain",
   "wikidata": "Q115800593",
   "source": "https://en.wikipedia.org/wiki/Operation_Washing"
+ },
+ "op-operation-wellhit": {
+  "name": "Operation Wellhit",
+  "kind": "Canadian capture of Boulogne, September 1944",
+  "nation": "Canada",
+  "wikidata": "Q7097710",
+  "source": "https://en.wikipedia.org/wiki/Operation_Wellhit"
  },
  "op-operation-weserubung": {
   "name": "Operation Weserubung",
@@ -11432,6 +11505,13 @@
   "nation": "US",
   "wikidata": "Q124458990",
   "source": "https://en.wikipedia.org/wiki/Talisay_Landing"
+ },
+ "op-tallinn-offensive": {
+  "name": "Tallinn offensive",
+  "kind": "Soviet offensive in Estonia, September 1944",
+  "nation": "Soviet Union",
+  "wikidata": "Q481578",
+  "source": "https://en.wikipedia.org/wiki/Tallinn_offensive"
  },
  "op-tarnow-railway-station-bombing": {
   "name": "Tarnów railway station bombing",
