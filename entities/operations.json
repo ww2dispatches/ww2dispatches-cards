@@ -2536,6 +2536,13 @@
   "source": "https://en.wikipedia.org/wiki/Battle_of_Saint-L%C3%B4",
   "note": "Wikipedia title: Battle of Saint-Lô"
  },
+ "op-battle-of-saint-malo": {
+  "name": "Battle of Saint-Malo",
+  "kind": "Siege of the Saint-Malo fortress, August 1944",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Saint-Malo"
+ },
  "op-battle-of-saipan": {
   "name": "Battle of Saipan",
   "kind": "battle",
@@ -5674,6 +5681,13 @@
   "wikidata": "Q5741357",
   "source": "https://en.wikipedia.org/wiki/Hermes_program"
  },
+ "op-higashikuni-cabinet": {
+  "name": "Higashikuni cabinet",
+  "kind": "Japanese cabinet, Aug to Oct 1945",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Higashikuni_cabinet"
+ },
  "op-hindenburg-disaster": {
   "name": "Hindenburg disaster",
   "kind": "airship fire at Lakehurst, 6 May 1937",
@@ -8027,6 +8041,13 @@
   "wikidata": "Q3883973",
   "source": "https://en.wikipedia.org/wiki/Operation_Herring"
  },
+ "op-operation-hydra-1943": {
+  "name": "Operation Hydra (1943)",
+  "kind": "RAF Bomber Command raid on Peenemunde, night of 17 to 18 Aug 1943",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Hydra_(1943)"
+ },
  "op-operation-i-go": {
   "name": "Operation I-Go",
   "kind": "Japanese air offensive, April 1943",
@@ -8988,6 +9009,13 @@
   "wikidata": "Q7247423",
   "source": "https://en.wikipedia.org/wiki/Proclamation_2714"
  },
+ "op-proclamation-of-indonesian-independence": {
+  "name": "Proclamation of Indonesian Independence",
+  "kind": "Declaration read in Jakarta, 17 Aug 1945",
+  "nation": "Indonesia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Proclamation_of_Indonesian_Independence"
+ },
  "op-project-diana": {
   "name": "Project Diana",
   "kind": "radar experiment",
@@ -9112,6 +9140,16 @@
   "source": "https://en.wikipedia.org/wiki/Raid_on_Los_Ba%C3%B1os",
   "aka": [
    "Raid on Los Baños"
+  ]
+ },
+ "op-raid-on-makin-island": {
+  "name": "Raid on Makin Island",
+  "kind": "US Marine raid, 17 to 18 Aug 1942",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Raid_on_Makin_Island",
+  "aka": [
+   "Makin Island raid"
   ]
  },
  "op-raid-on-salamaua-1942": {
@@ -9363,6 +9401,13 @@
   "nation": "US",
   "wikidata": "Q7419558",
   "source": "https://en.wikipedia.org/wiki/Santa_Fe_riot"
+ },
+ "op-schweinfurt-regensburg-mission": {
+  "name": "Schweinfurt and Regensburg mission",
+  "kind": "Eighth Air Force double strike, 17 Aug 1943",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Schweinfurt%E2%80%93Regensburg_mission"
  },
  "op-scuttling-of-the-french-fleet-at-toulon": {
   "name": "Scuttling of the French fleet at Toulon",

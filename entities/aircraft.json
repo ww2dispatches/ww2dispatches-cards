@@ -287,6 +287,16 @@
    "B-36"
   ]
  },
+ "aircraft-curtiss-bf2c-goshawk": {
+  "name": "Curtiss BF2C Goshawk",
+  "kind": "Biplane fighter bomber, exported as the Hawk III",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Curtiss_BF2C_Goshawk",
+  "aka": [
+   "Hawk III"
+  ]
+ },
  "aircraft-curtiss-f11c-goshawk": {
   "name": "Curtiss Hawk II",
   "kind": "biplane fighter",
@@ -1188,6 +1198,13 @@
    "XP-89",
    "XF-89"
   ]
+ },
+ "aircraft-northrop-p-61-black-widow": {
+  "name": "Northrop P-61 Black Widow",
+  "kind": "Night fighter",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Northrop_P-61_Black_Widow"
  },
  "aircraft-northrop-yb-49": {
   "name": "Northrop YB-49",

@@ -5629,6 +5629,18 @@
   "lat": 68.3331,
   "lon": 14.6664
  },
+ "place-lomazy": {
+  "name": "Łomazy",
+  "kind": "Village in eastern Poland",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/%C5%81omazy",
+  "aka": [
+   "Lomazy"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-london": {
   "name": "London",
   "kind": "city",
@@ -6322,6 +6334,15 @@
   "aka": [
    "Merkers"
   ]
+ },
+ "place-messina": {
+  "name": "Messina",
+  "kind": "Port city in Sicily",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Messina",
+  "lat": null,
+  "lon": null
  },
  "place-methodist-central-hall-westminster": {
   "name": "Methodist Central Hall, Westminster",
@@ -8814,6 +8835,15 @@
   "lat": 38.6364,
   "lon": -90.2342
  },
+ "place-saint-malo": {
+  "name": "Saint-Malo",
+  "kind": "Walled port town in Brittany",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Saint-Malo",
+  "lat": null,
+  "lon": null
+ },
  "place-saint-nazaire": {
   "name": "Saint-Nazaire",
   "kind": "port and U-boat base",
@@ -9537,6 +9567,15 @@
   "source": "https://en.wikipedia.org/wiki/Sopron",
   "lat": 47.6833,
   "lon": 16.5833
+ },
+ "place-sotteville-les-rouen": {
+  "name": "Sotteville-lès-Rouen",
+  "kind": "Town near Rouen with a major rail marshalling yard",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sotteville-l%C3%A8s-Rouen",
+  "lat": null,
+  "lon": null
  },
  "place-sounion": {
   "name": "Cape Sounion",

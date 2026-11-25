@@ -1805,6 +1805,13 @@
   "wikidata": "Q261179",
   "source": "https://en.wikipedia.org/wiki/7th_Infantry_Division_(United_States)"
  },
+ "unit-7th-infantry-regiment-united-states": {
+  "name": "7th Infantry Regiment",
+  "kind": "US Army infantry regiment, 3rd Infantry Division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/7th_Infantry_Regiment_(United_States)"
+ },
  "unit-7th-panzer-division-wehrmacht": {
   "name": "7th Panzer Division",
   "kind": "German armored division",
@@ -4583,6 +4590,17 @@
   "wikidata": "Q7043645",
   "source": "https://en.wikipedia.org/wiki/No._59_Squadron_RAF"
  },
+ "unit-no-601-squadron-rauxaf": {
+  "name": "No. 601 Squadron",
+  "kind": "RAF Auxiliary Air Force fighter squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._601_Squadron_RAuxAF",
+  "aka": [
+   "No. 601 Squadron RAF",
+   "No. 601 (County of London) Squadron"
+  ]
+ },
  "unit-no-616-squadron-rauxaf": {
   "name": "No. 616 Squadron RAuxAF",
   "kind": "RAF squadron, first to fly the Gloster Meteor",
@@ -5116,6 +5134,13 @@
   "wikidata": "Q157608",
   "source": "https://en.wikipedia.org/wiki/Reichswehr"
  },
+ "unit-reserve-police-battalion-101": {
+  "name": "Reserve Police Battalion 101",
+  "kind": "German Order Police battalion",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Reserve_Police_Battalion_101"
+ },
  "unit-reynal-hitchcock": {
   "name": "Reynal & Hitchcock",
   "kind": "American publisher",
@@ -5292,6 +5317,16 @@
   "nation": "Canada",
   "wikidata": "Q7762802",
   "source": "https://en.wikipedia.org/wiki/Seaforth_Highlanders_of_Canada"
+ },
+ "unit-secker-warburg": {
+  "name": "Secker and Warburg",
+  "kind": "London publishing house",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Secker_%26_Warburg",
+  "aka": [
+   "Secker & Warburg"
+  ]
  },
  "unit-second-army-hungary": {
   "name": "Hungarian Second Army",
