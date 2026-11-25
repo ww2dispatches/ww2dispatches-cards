@@ -946,6 +946,15 @@
   "lat": 44.8178,
   "lon": 20.4569
  },
+ "place-bell-island-newfoundland-and-labrador": {
+  "name": "Bell Island",
+  "kind": "island and iron mining centre",
+  "nation": "Newfoundland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bell_Island_(Newfoundland_and_Labrador)",
+  "lat": null,
+  "lon": null
+ },
  "place-belle-isle-park": {
   "name": "Belle Isle Park",
   "kind": "island park, Detroit",
@@ -6095,6 +6104,15 @@
   "source": "https://en.wikipedia.org/wiki/Kohima",
   "lat": 25.6667,
   "lon": 94.1194
+ },
+ "place-kokoda": {
+  "name": "Kokoda",
+  "kind": "village and airfield",
+  "nation": "Papua",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kokoda",
+  "lat": null,
+  "lon": null
  },
  "place-kolkata": {
   "name": "Kolkata",

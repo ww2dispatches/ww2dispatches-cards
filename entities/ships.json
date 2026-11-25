@@ -941,6 +941,13 @@
   "wikidata": "Q563457",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-180"
  },
+ "ship-german-submarine-u-181": {
+  "name": "U-181",
+  "kind": "Type IXD2 U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-181"
+ },
  "ship-german-submarine-u-182": {
   "name": "German submarine U-182",
   "kind": "Type IXD2 U-boat",
@@ -1470,6 +1477,13 @@
   "nation": "Germany",
   "wikidata": "Q689352",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-34_(1936)"
+ },
+ "ship-german-submarine-u-340": {
+  "name": "U-340",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-340"
  },
  "ship-german-submarine-u-341": {
   "name": "German submarine U-341",
@@ -7471,6 +7485,13 @@
   "wikidata": "Q155014",
   "source": "https://en.wikipedia.org/wiki/MV_Wilhelm_Gustloff"
  },
+ "ship-mv-zaandam": {
+  "name": "Zaandam",
+  "kind": "Dutch passenger and cargo ship",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/MV_Zaandam"
+ },
  "ship-odenwald": {
   "name": "Odenwald",
   "kind": "German blockade runner",
@@ -8196,6 +8217,13 @@
   "nation": "Britain",
   "wikidata": "Q7393694",
   "source": "https://en.wikipedia.org/wiki/SS_Fanad_Head"
+ },
+ "ship-ss-fort-lee": {
+  "name": "SS Fort Lee",
+  "kind": "T2 tanker",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Fort_Lee"
  },
  "ship-ss-fort-stikine": {
   "name": "SS Fort Stikine",

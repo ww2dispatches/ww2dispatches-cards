@@ -701,6 +701,13 @@
   "wikidata": "Q4566350",
   "source": "https://en.wikipedia.org/wiki/1948_Tinker_Air_Force_Base_tornadoes"
  },
+ "op-1948-united-states-presidential-election": {
+  "name": "1948 United States presidential election",
+  "kind": "election",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1948_United_States_presidential_election"
+ },
  "op-1949-anti-nato-riot-in-iceland": {
   "name": "1949 anti NATO riot in Iceland",
   "kind": "riot in Reykjavik as Iceland's parliament voted to join NATO",
@@ -1888,6 +1895,13 @@
   "nation": "China",
   "wikidata": "Q709429",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Beiping%E2%80%93Tianjin"
+ },
+ "op-battle-of-bell-island": {
+  "name": "Battle of Bell Island",
+  "kind": "U-boat attacks",
+  "nation": "Newfoundland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Bell_Island"
  },
  "op-battle-of-berlin": {
   "name": "Battle of Berlin",
@@ -5388,6 +5402,13 @@
   "wikidata": "Q1894663",
   "source": "https://en.wikipedia.org/wiki/Convoy_SC_104"
  },
+ "op-convoy-sc-107": {
+  "name": "Convoy SC 107",
+  "kind": "convoy battle",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Convoy_SC_107"
+ },
  "op-convoy-sc-118": {
   "name": "Convoy SC 118",
   "kind": "Allied Atlantic convoy",
@@ -5792,6 +5813,13 @@
   "wikidata": "Q5266335",
   "source": "https://en.wikipedia.org/wiki/Deutschland_incident_(1937)"
  },
+ "op-dewey-defeats-truman": {
+  "name": "Dewey Defeats Truman",
+  "kind": "erroneous newspaper headline",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Dewey_Defeats_Truman"
+ },
  "op-dieppe-raid": {
   "name": "Dieppe Raid",
   "kind": "amphibious raid",
@@ -5943,6 +5971,13 @@
    "Hunger Winter",
    "Hongerwinter"
   ]
+ },
+ "op-dutch-indonesian-round-table-conference": {
+  "name": "Dutch Indonesian Round Table Conference",
+  "kind": "conference",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Dutch%E2%80%93Indonesian_Round_Table_Conference"
  },
  "op-dzyatlava-massacre": {
   "name": "Dzyatlava massacres",
@@ -6401,6 +6436,13 @@
   "wikidata": "Q5452562",
   "source": "https://en.wikipedia.org/wiki/First_Bombardment_of_Midway"
  },
+ "op-first-day-of-bbc-television": {
+  "name": "First day of BBC television",
+  "kind": "broadcast launch",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/First_day_of_BBC_television"
+ },
  "op-first-inauguration-of-franklin-d-roosevelt": {
   "name": "First inauguration of Franklin D. Roosevelt",
   "kind": "Presidential inauguration, 4 March 1933",
@@ -6435,6 +6477,16 @@
   "nation": "Slovakia",
   "wikidata": "Q85761082",
   "source": "https://en.wikipedia.org/wiki/First_mass_transport_of_Jews_to_Auschwitz_concentration_camp"
+ },
+ "op-first-vienna-award": {
+  "name": "First Vienna Award",
+  "kind": "arbitration award",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/First_Vienna_Award",
+  "aka": [
+   "Vienna Arbitration"
+  ]
  },
  "op-flensburg-government": {
   "name": "Flensburg Government",
