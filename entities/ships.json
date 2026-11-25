@@ -1290,6 +1290,13 @@
    "U 261"
   ]
  },
+ "ship-german-submarine-u-262": {
+  "name": "German submarine U-262",
+  "kind": "U-boat, Type VIIC",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-262"
+ },
  "ship-german-submarine-u-263": {
   "name": "German submarine U-263",
   "kind": "Kriegsmarine Type VIIC U-boat",
@@ -2865,6 +2872,13 @@
   "nation": "Germany",
   "wikidata": "Q870473",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-714"
+ },
+ "ship-german-submarine-u-718": {
+  "name": "German submarine U-718",
+  "kind": "U-boat, Type VIIC",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-718"
  },
  "ship-german-submarine-u-719": {
   "name": "U-719",
@@ -5775,6 +5789,16 @@
   "wikidata": "Q1302710",
   "source": "https://en.wikipedia.org/wiki/HNoMS_Eidsvold"
  },
+ "ship-hnoms-montbretia": {
+  "name": "HNoMS Montbretia",
+  "kind": "Flower class corvette",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HNoMS_Montbretia",
+  "aka": [
+   "HNoMS Montbretia (K 208)"
+  ]
+ },
  "ship-hnoms-norge": {
   "name": "HNoMS Norge",
   "kind": "Norwegian coastal defence ship",
@@ -7373,6 +7397,13 @@
   "wikidata": "Q6159061",
   "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-401"
  },
+ "ship-japanese-submarine-i-41": {
+  "name": "Japanese submarine I-41",
+  "kind": "submarine, Type B2",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-41"
+ },
  "ship-japanese-submarine-i-45": {
   "name": "Japanese submarine I-45",
   "kind": "Imperial Japanese Navy submarine",
@@ -8839,6 +8870,13 @@
   "wikidata": "Q60773590",
   "source": "https://en.wikipedia.org/wiki/SS_Samuel_Q._Brown"
  },
+ "ship-ss-simon-bolivar": {
+  "name": "SS Simon Bolivar",
+  "kind": "passenger cargo liner",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Simon_Bolivar"
+ },
  "ship-ss-slamat": {
   "name": "SS Slamat",
   "kind": "Dutch liner used as a troopship",
@@ -10214,6 +10252,16 @@
   "wikidata": "Q4052240",
   "source": "https://en.wikipedia.org/wiki/USS_Lansdale_(DD-426)"
  },
+ "ship-uss-lawrence-c-taylor": {
+  "name": "USS Lawrence C. Taylor",
+  "kind": "destroyer escort",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Lawrence_C._Taylor",
+  "aka": [
+   "USS Lawrence C. Taylor (DE-415)"
+  ]
+ },
  "ship-uss-lci-l-449": {
   "name": "USS LCI(L)-449",
   "kind": "landing craft infantry, converted to gunboat LCI(G) 449",
@@ -10791,6 +10839,13 @@
   "nation": "US",
   "wikidata": "Q4052274",
   "source": "https://en.wikipedia.org/wiki/USS_Reid_(DD-369)"
+ },
+ "ship-uss-reno-cl-96": {
+  "name": "USS Reno (CL-96)",
+  "kind": "light cruiser",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Reno_(CL-96)"
  },
  "ship-uss-renshaw-dd-499": {
   "name": "USS Renshaw (DD-499)",

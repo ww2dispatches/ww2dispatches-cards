@@ -1583,6 +1583,13 @@
   "wikidata": "Q2816821",
   "source": "https://en.wikipedia.org/wiki/43rd_Infantry_Division_(United_States)"
  },
+ "unit-43rd-wessex-infantry-division": {
+  "name": "43rd (Wessex) Infantry Division",
+  "kind": "infantry division",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/43rd_(Wessex)_Infantry_Division"
+ },
  "unit-43rd-wessex-reconnaissance-regiment": {
   "name": "43rd (Wessex) Reconnaissance Regiment",
   "kind": "British reconnaissance regiment",
@@ -6215,6 +6222,13 @@
   "nation": "Britain",
   "wikidata": "Q7374594",
   "source": "https://en.wikipedia.org/wiki/Royal_Norfolk_Regiment"
+ },
+ "unit-royal-norwegian-navy": {
+  "name": "Royal Norwegian Navy",
+  "kind": "navy",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Royal_Norwegian_Navy"
  },
  "unit-royal-warwickshire-regiment": {
   "name": "Royal Warwickshire Regiment",

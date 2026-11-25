@@ -3178,6 +3178,15 @@
   "lat": 51.1275,
   "lon": 1.3122
  },
+ "place-dowlais-ironworks": {
+  "name": "Dowlais Ironworks",
+  "kind": "ironworks and steelworks",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Dowlais_Ironworks",
+  "lat": null,
+  "lon": null
+ },
  "place-doxato": {
   "name": "Doxato",
   "kind": "town in Drama regional unit, Greece",
@@ -3410,6 +3419,15 @@
   "lon": -73.9581,
   "wikidata": "Q1278537",
   "source": "https://en.wikipedia.org/wiki/Ebbets_Field"
+ },
+ "place-ebensee-concentration-camp": {
+  "name": "Ebensee concentration camp",
+  "kind": "concentration camp, subcamp of Mauthausen",
+  "nation": "Austria",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ebensee_concentration_camp",
+  "lat": null,
+  "lon": null
  },
  "place-edwards-air-force-base": {
   "name": "Edwards Air Force Base",

@@ -5278,6 +5278,13 @@
   "wikidata": "Q708253",
   "source": "https://en.wikipedia.org/wiki/Colmar_Pocket"
  },
+ "op-columbia-race-riot-of-1946": {
+  "name": "Columbia race riot of 1946",
+  "kind": "race riot and trials",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Columbia_race_riot_of_1946"
+ },
  "op-commando-order": {
   "name": "Commando Order",
   "kind": "Hitler's order of 18 October 1942 to execute captured commandos",
@@ -10039,6 +10046,13 @@
   "wikidata": "Q7096905",
   "source": "https://en.wikipedia.org/wiki/Operation_Cleanslate"
  },
+ "op-operation-clipper": {
+  "name": "Operation Clipper",
+  "kind": "Allied offensive at Geilenkirchen",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Clipper"
+ },
  "op-operation-cobra": {
   "name": "Operation Cobra",
   "kind": "Normandy breakout offensive",
@@ -10246,6 +10260,17 @@
   "nation": "Britain",
   "wikidata": "Q16836984",
   "source": "https://en.wikipedia.org/wiki/Operation_Fish"
+ },
+ "op-operation-flipper": {
+  "name": "Operation Flipper",
+  "kind": "commando raid",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Flipper",
+  "aka": [
+   "Rommel Raid",
+   "Operation Flipper (1941)"
+  ]
  },
  "op-operation-frankton": {
   "name": "Operation Frankton",
