@@ -3432,6 +3432,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/HMS_Eridge_(L68)"
  },
+ "ship-hms-esk-h15": {
+  "name": "HMS Esk (H15)",
+  "kind": "E class destroyer and minelayer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Esk_(H15)"
+ },
  "ship-hms-exeter-68": {
   "name": "HMS Exeter (68)",
   "kind": "heavy cruiser",
@@ -3445,6 +3452,13 @@
   "nation": "Britain",
   "wikidata": "Q1466257",
   "source": "https://en.wikipedia.org/wiki/HMS_Exmouth_(H02)"
+ },
+ "ship-hms-express-h61": {
+  "name": "HMS Express (H61)",
+  "kind": "E class destroyer and minelayer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Express_(H61)"
  },
  "ship-hms-fearless-h67": {
   "name": "HMS Fearless (H67)",
@@ -3625,6 +3639,13 @@
   "wikidata": "Q1470462",
   "source": "https://en.wikipedia.org/wiki/HMS_Hasty_(H24)"
  },
+ "ship-hms-havock-h43": {
+  "name": "HMS Havock (H43)",
+  "kind": "H class destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Havock_(H43)"
+ },
  "ship-hms-hereward-h93": {
   "name": "HMS Hereward (H93)",
   "kind": "H class destroyer",
@@ -3722,6 +3743,13 @@
   "nation": "Britain",
   "wikidata": "Q1564931",
   "source": "https://en.wikipedia.org/wiki/HMS_Isis_(D87)"
+ },
+ "ship-hms-ivanhoe-d16": {
+  "name": "HMS Ivanhoe (D16)",
+  "kind": "I class destroyer and minelayer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Ivanhoe_(D16)"
  },
  "ship-hms-jackal-f22": {
   "name": "HMS Jackal (F22)",
@@ -4945,6 +4973,13 @@
   "nation": "Italy",
   "wikidata": "Q3704979",
   "source": "https://en.wikipedia.org/wiki/Italian_submarine_Delfino_(1930)"
+ },
+ "ship-italian-submarine-iride": {
+  "name": "Italian submarine Iride",
+  "kind": "Regia Marina submarine",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_submarine_Iride"
  },
  "ship-italian-submarine-leonardo-da-vinci-1939": {
   "name": "Italian submarine Leonardo da Vinci (1939)",
@@ -7437,6 +7472,14 @@
   "nation": "United States",
   "source": "https://en.wikipedia.org/wiki/USS_Augusta_(CA-31)",
   "wikidata": "Q574823"
+ },
+ "ship-uss-bagley-dd-386": {
+  "name": "USS Bagley (DD 386)",
+  "kind": "destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Bagley_(DD-386)",
+  "note": "Hull number written without the hyphen per house style."
  },
  "ship-uss-bailey-dd-492": {
   "name": "USS Bailey (DD-492)",

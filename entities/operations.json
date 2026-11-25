@@ -286,6 +286,13 @@
    "Diamond DC-3"
   ]
  },
+ "op-1942-luxembourgish-general-strike": {
+  "name": "1942 Luxembourgish general strike",
+  "kind": "general strike against conscription into the Wehrmacht",
+  "nation": "Luxembourg",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1942_Luxembourgish_general_strike"
+ },
  "op-1942-qantas-short-empire-shootdown": {
   "name": "1942 Qantas Short Empire shootdown",
   "kind": "airliner shootdown",
@@ -5780,6 +5787,13 @@
   "wikidata": "Q2238546",
   "source": "https://en.wikipedia.org/wiki/Gilbert_and_Marshall_Islands_campaign"
  },
+ "op-gleiwitz-incident": {
+  "name": "Gleiwitz incident",
+  "kind": "SS false flag attack on the Gleiwitz radio station, pretext for invading Poland",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Gleiwitz_incident"
+ },
  "op-gouzenko-affair": {
   "name": "Gouzenko Affair",
   "kind": "Soviet espionage case in Canada",
@@ -9488,6 +9502,16 @@
    "The Great Raid"
   ]
  },
+ "op-raid-at-ozbalt": {
+  "name": "Raid at Ožbalt",
+  "kind": "partisan raid freeing Allied prisoners of war, 31 August 1944",
+  "nation": "Yugoslavia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Raid_at_O%C5%BEbalt",
+  "aka": [
+   "Raid at Ozbalt"
+  ]
+ },
  "op-raid-on-alexandria-1941": {
   "name": "Raid on Alexandria",
   "kind": "Italian human torpedo attack",
@@ -10647,6 +10671,13 @@
   "aka": [
    "SS Grandcamp explosion"
   ]
+ },
+ "op-texel-disaster": {
+  "name": "Texel Disaster",
+  "kind": "loss of British destroyers in a minefield off Texel, August 1940",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Texel_Disaster"
  },
  "op-the-blitz": {
   "name": "The Blitz",
