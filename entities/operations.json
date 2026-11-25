@@ -397,6 +397,13 @@
   "wikidata": "Q207504",
   "source": "https://en.wikipedia.org/wiki/1943_Surprise_Hurricane"
  },
+ "op-1943-tottori-earthquake": {
+  "name": "1943 Tottori earthquake",
+  "kind": "earthquake in Tottori Prefecture, 10 September 1943",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1943_Tottori_earthquake"
+ },
  "op-1943-world-professional-basketball-tournament": {
   "name": "1943 World Professional Basketball Tournament",
   "kind": "professional basketball tournament, Chicago",
@@ -411,12 +418,29 @@
   "wikidata": "Q17989657",
   "source": "https://en.wikipedia.org/wiki/1944_Bombay_explosion"
  },
+ "op-1944-bulgarian-coup-d-etat": {
+  "name": "1944 Bulgarian coup d'etat",
+  "kind": "coup",
+  "nation": "Bulgaria",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1944_Bulgarian_coup_d%27%C3%A9tat",
+  "aka": [
+   "9 September coup"
+  ]
+ },
  "op-1944-democratic-national-convention": {
   "name": "1944 Democratic National Convention",
   "kind": "U.S. party convention in Chicago",
   "nation": "US",
   "wikidata": "Q4565382",
   "source": "https://en.wikipedia.org/wiki/1944_Democratic_National_Convention"
+ },
+ "op-1944-great-atlantic-hurricane": {
+  "name": "1944 Great Atlantic hurricane",
+  "kind": "hurricane",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1944_Great_Atlantic_hurricane"
  },
  "op-1944-republican-national-convention": {
   "name": "1944 Republican National Convention",
@@ -629,6 +653,13 @@
   "wikidata": "Q124313963",
   "source": "https://en.wikipedia.org/wiki/1949_East_German_State_Railway_strike"
  },
+ "op-1949-west-german-presidential-election": {
+  "name": "1949 West German presidential election",
+  "kind": "election",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1949_West_German_presidential_election"
+ },
  "op-20-july-plot": {
   "name": "20 July plot",
   "kind": "assassination attempt and coup",
@@ -774,6 +805,13 @@
   "wikidata": "Q15178090",
   "source": "https://en.wikipedia.org/wiki/Action_of_8_June_1945"
  },
+ "op-action-off-bastia": {
+  "name": "Action off Bastia",
+  "kind": "naval battle",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Action_off_Bastia"
+ },
  "op-action-off-bougainville": {
   "name": "Action off Bougainville",
   "kind": "carrier air battle, 20 Feb 1942",
@@ -835,6 +873,13 @@
    "Easter Sunday Raid"
   ]
  },
+ "op-air-raid-on-frascati": {
+  "name": "Air raid on Frascati",
+  "kind": "air raid",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Air_raid_on_Frascati"
+ },
  "op-air-raids-on-japan": {
   "name": "Air raids on Japan",
   "kind": "Allied strategic bombing campaign against Japan",
@@ -864,6 +909,16 @@
   "source": "https://en.wikipedia.org/wiki/Allied_airmen_at_Buchenwald_concentration_camp",
   "aka": [
    "KLB Club"
+  ]
+ },
+ "op-allied-invasion-of-italy": {
+  "name": "Allied invasion of Italy",
+  "kind": "Allied landings at Salerno, Operation Avalanche",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Allied_invasion_of_Italy",
+  "aka": [
+   "Operation Avalanche"
   ]
  },
  "op-allied-invasion-of-sicily": {
@@ -1913,6 +1968,17 @@
   "wikidata": "Q543075",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Dutch_Harbor"
  },
+ "op-battle-of-edson-s-ridge": {
+  "name": "Battle of Edson's Ridge",
+  "kind": "battle",
+  "nation": "US",
+  "aka": [
+   "Bloody Ridge",
+   "Battle of the Ridge"
+  ],
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Edson%27s_Ridge"
+ },
  "op-battle-of-empress-augusta-bay": {
   "name": "Battle of Empress Augusta Bay",
   "kind": "naval battle",
@@ -2636,6 +2702,13 @@
   "wikidata": "Q610242",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Rennell_Island"
  },
+ "op-battle-of-rhodes-1943": {
+  "name": "Battle of Rhodes (1943)",
+  "kind": "German seizure of Rhodes from its Italian garrison",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Rhodes_(1943)"
+ },
  "op-battle-of-rostov-1941": {
   "name": "Battle of Rostov (1941)",
   "kind": "battle",
@@ -2920,6 +2993,16 @@
   "wikidata": "Q151018",
   "aka": [
    "Ardennes offensive"
+  ]
+ },
+ "op-battle-of-the-bzura": {
+  "name": "Battle of the Bzura",
+  "kind": "battle",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_the_Bzura",
+  "aka": [
+   "Battle of Kutno"
   ]
  },
  "op-battle-of-the-campobasso-convoy": {
@@ -3441,6 +3524,13 @@
    "Declaration regarding the defeat of Germany"
   ]
  },
+ "op-berlin-victory-parade-of-1945": {
+  "name": "Berlin Victory Parade of 1945",
+  "kind": "Allied victory parade",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Berlin_Victory_Parade_of_1945"
+ },
  "op-bermuda-conference": {
   "name": "Bermuda Conference",
   "kind": "Anglo American refugee conference",
@@ -3721,6 +3811,16 @@
   "aka": [
    "Operation Millennium",
    "thousand bomber raid"
+  ]
+ },
+ "op-bombing-of-darmstadt-in-world-war-ii": {
+  "name": "Bombing of Darmstadt in World War II",
+  "kind": "RAF raids on Darmstadt, worst on 11/12 September 1944",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Darmstadt_in_World_War_II",
+  "aka": [
+   "Brandnacht"
   ]
  },
  "op-bombing-of-darwin": {
@@ -4228,6 +4328,13 @@
   "wikidata": "Q5020225",
   "source": "https://en.wikipedia.org/wiki/California_Alien_Land_Law_of_1913"
  },
+ "op-canadian-declaration-of-war-on-germany": {
+  "name": "Canadian declaration of war on Germany",
+  "kind": "declaration of war, 10 September 1939",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Canadian_declaration_of_war_on_Germany"
+ },
  "op-canberra-pact": {
   "name": "Canberra Pact",
   "kind": "Australia and New Zealand agreement",
@@ -4329,6 +4436,13 @@
   "wikidata": "Q166495",
   "source": "https://en.wikipedia.org/wiki/Catalonia_Offensive"
  },
+ "op-cecylowka-massacre": {
+  "name": "Cecylowka massacre",
+  "kind": "massacre of civilians",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Cecyl%C3%B3wka_massacre"
+ },
  "op-changjiao-massacre": {
   "name": "Changjiao massacre",
   "kind": "massacre of Chinese civilians and soldiers",
@@ -4404,6 +4518,13 @@
   "nation": "China",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Chongqing_Negotiations"
+ },
+ "op-ciepielow-massacre": {
+  "name": "Ciepielow massacre",
+  "kind": "massacre of Polish prisoners of war",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ciepiel%C3%B3w_massacre"
  },
  "op-cinema-rex-bombing": {
   "name": "Cinema Rex bombing",
@@ -4653,6 +4774,13 @@
   "nation": "Britain",
   "wikidata": "Q5166658",
   "source": "https://en.wikipedia.org/wiki/Convoy_SC_130"
+ },
+ "op-convoy-sc-42": {
+  "name": "Convoy SC 42",
+  "kind": "convoy battle",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Convoy_SC_42"
  },
  "op-convoy-sc-94": {
   "name": "Convoy SC 94",
@@ -5811,6 +5939,13 @@
   "wikidata": "Q819274",
   "source": "https://en.wikipedia.org/wiki/German_occupation_of_Norway"
  },
+ "op-german-occupation-of-rome": {
+  "name": "German occupation of Rome",
+  "kind": "German occupation of the Italian capital, 1943 to 1944",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_occupation_of_Rome"
+ },
  "op-german-occupation-of-the-channel-islands": {
   "name": "German occupation of the Channel Islands",
   "kind": "occupation",
@@ -5886,6 +6021,17 @@
   "aka": [
    "Imperial Conference"
   ]
+ },
+ "op-gran-sasso-raid": {
+  "name": "Gran Sasso raid",
+  "kind": "German glider raid",
+  "nation": "Germany",
+  "aka": [
+   "Operation Oak",
+   "Unternehmen Eiche"
+  ],
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Gran_Sasso_raid"
  },
  "op-granville-raid": {
   "name": "Granville raid",
@@ -6026,6 +6172,13 @@
   "nation": "Germany",
   "wikidata": "Q508062",
   "source": "https://en.wikipedia.org/wiki/Heiligenbeil_Pocket"
+ },
+ "op-hercules-powder-plant-disaster": {
+  "name": "Hercules Powder plant disaster",
+  "kind": "munitions plant explosion",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hercules_Powder_plant_disaster"
  },
  "op-hermes-program": {
   "name": "Hermes program",
@@ -6390,6 +6543,13 @@
    "ITMA"
   ]
  },
+ "op-italian-bombing-of-mandatory-palestine-in-world-war-ii": {
+  "name": "Italian bombing of Mandatory Palestine in World War II",
+  "kind": "air raids",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_bombing_of_Mandatory_Palestine_in_World_War_II"
+ },
  "op-italian-declaration-of-war-on-the-united-states": {
   "name": "Italian declaration of war on the United States",
   "kind": "declaration of war, 11 December 1941",
@@ -6410,6 +6570,13 @@
   "nation": "Italy",
   "wikidata": "Q1202078",
   "source": "https://en.wikipedia.org/wiki/Italian_invasion_of_British_Somaliland"
+ },
+ "op-italian-invasion-of-egypt": {
+  "name": "Italian invasion of Egypt",
+  "kind": "offensive",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_invasion_of_Egypt"
  },
  "op-italian-invasion-of-france": {
   "name": "Italian invasion of France",
@@ -7187,6 +7354,13 @@
    "Victory Parade 1946"
   ]
  },
+ "op-lookout-air-raids": {
+  "name": "Lookout Air Raids",
+  "kind": "air raids",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Lookout_Air_Raids"
+ },
  "op-lordsburg-killings": {
   "name": "Lordsburg killings",
   "kind": "shooting of two Issei internees by a guard",
@@ -7537,6 +7711,16 @@
   "wikidata": "Q6852189",
   "source": "https://en.wikipedia.org/wiki/Military_Training_Act_1939"
  },
+ "op-milk-strike": {
+  "name": "Milk strike",
+  "kind": "Oslo strike of September 1941 and the martial law that followed",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Milk_strike",
+  "aka": [
+   "Melkestreiken"
+  ]
+ },
  "op-ministries-trial": {
   "name": "Ministries Trial",
   "kind": "US Nuremberg Military Tribunal Case 11, 1948 to 1949",
@@ -7555,6 +7739,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q2465049",
   "source": "https://en.wikipedia.org/wiki/Minsk_offensive"
+ },
+ "op-miss-america-1945": {
+  "name": "Miss America 1945",
+  "kind": "beauty pageant",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Miss_America_1945"
  },
  "op-mit-brennender-sorge": {
   "name": "Mit brennender Sorge",
@@ -7944,6 +8135,13 @@
   "wikidata": "Q80130",
   "source": "https://en.wikipedia.org/wiki/Nuremberg_trials"
  },
+ "op-nyon-conference": {
+  "name": "Nyon Conference",
+  "kind": "Mediterranean conference against submarine attacks, September 1937",
+  "nation": "Switzerland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Nyon_Conference"
+ },
  "op-occupation-of-czechoslovakia-1938-1945": {
   "name": "Occupation of Czechoslovakia (1938 to 1945)",
   "kind": "occupation",
@@ -8020,6 +8218,17 @@
   "wikidata": "Q599648",
   "source": "https://en.wikipedia.org/wiki/Operation_Abstention"
  },
+ "op-operation-achse": {
+  "name": "Operation Achse",
+  "kind": "German operation to disarm Italian forces, September 1943",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Achse",
+  "aka": [
+   "Fall Achse",
+   "Operation Alaric"
+  ]
+ },
  "op-operation-aerial": {
   "name": "Operation Aerial",
   "kind": "evacuation from western France, 15 to 25 June 1940",
@@ -8037,6 +8246,13 @@
    "Black Sabbath",
    "Black Saturday"
   ]
+ },
+ "op-operation-agreement": {
+  "name": "Operation Agreement",
+  "kind": "amphibious and ground raid on Tobruk",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Agreement"
  },
  "op-operation-anklet": {
   "name": "Operation Anklet",
@@ -8066,6 +8282,13 @@
   "wikidata": "Q27628131",
   "source": "https://en.wikipedia.org/wiki/Operation_Appearance"
  },
+ "op-operation-aquatint": {
+  "name": "Operation Aquatint",
+  "kind": "commando raid",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Aquatint"
+ },
  "op-operation-archery": {
   "name": "Operation Archery",
   "kind": "British commando raid on Vaagso",
@@ -8092,6 +8315,16 @@
   "aka": [
    "Directive No. 19",
    "Undertaking Attila"
+  ]
+ },
+ "op-operation-avalanche": {
+  "name": "Operation Avalanche",
+  "kind": "amphibious landing",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Avalanche",
+  "aka": [
+   "Salerno landings"
   ]
  },
  "op-operation-bagration": {
@@ -9987,6 +10220,13 @@
   "source": "https://en.wikipedia.org/wiki/Russo-Japanese_War",
   "wikidata": "Q159950"
  },
+ "op-saar-offensive": {
+  "name": "Saar Offensive",
+  "kind": "French offensive",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Saar_Offensive"
+ },
  "op-sakuradamon-incident-1932": {
   "name": "Sakuradamon incident (1932)",
   "kind": "assassination attempt on Emperor Hirohito",
@@ -10201,6 +10441,13 @@
   "wikidata": "Q2267560",
   "source": "https://en.wikipedia.org/wiki/Self-elimination_of_the_Austrian_Parliament"
  },
+ "op-senate-investigation-into-motion-picture-war-propaganda": {
+  "name": "Senate Investigation into Motion Picture War Propaganda",
+  "kind": "Senate hearings",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Senate_Investigation_into_Motion_Picture_War_Propaganda"
+ },
  "op-service-du-travail-obligatoire": {
   "name": "Service du travail obligatoire",
   "kind": "Vichy labor programs, including the Releve",
@@ -10218,6 +10465,13 @@
   "nation": "France",
   "wikidata": "Q593024",
   "source": "https://en.wikipedia.org/wiki/S%C3%A9tif_and_Guelma_massacre"
+ },
+ "op-shangdang-campaign": {
+  "name": "Shangdang Campaign",
+  "kind": "Chinese Civil War campaign, September to October 1945",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Shangdang_Campaign"
  },
  "op-sheffield-blitz": {
   "name": "Sheffield Blitz",
@@ -10239,6 +10493,16 @@
   "nation": "Japan",
   "wikidata": "Q17014167",
   "source": "https://en.wikipedia.org/wiki/Shelling_of_Port_Gregory"
+ },
+ "op-shin-yo-maru-incident": {
+  "name": "Shin'yo Maru incident",
+  "kind": "hell ship sinking and killing of prisoners",
+  "nation": "Japan",
+  "aka": [
+   "Shinyo Maru"
+  ],
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Shin%27y%C5%8D_Maru_incident"
  },
  "op-shinto-directive": {
   "name": "Shinto Directive",
@@ -10361,6 +10625,13 @@
   "nation": "worldwide",
   "source": "https://en.wikipedia.org/wiki/Siege_of_Tobruk",
   "wikidata": "Q611089"
+ },
+ "op-siegfried-line-campaign": {
+  "name": "Siegfried Line campaign",
+  "kind": "campaign",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Siegfried_Line_campaign"
  },
  "op-sikorski-mayski-agreement": {
   "name": "Sikorski Mayski agreement",

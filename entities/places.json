@@ -698,6 +698,15 @@
   "lat": 47.5581,
   "lon": 7.5878
  },
+ "place-bastia": {
+  "name": "Bastia",
+  "kind": "port city, Corsica",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bastia",
+  "lat": null,
+  "lon": null
+ },
  "place-batchelor-airfield": {
   "name": "Batchelor Airfield",
   "kind": "airfield south of Darwin, Northern Territory",
@@ -1409,6 +1418,15 @@
   "lat": 38.1562,
   "lon": 14.828
  },
+ "place-brookings-oregon": {
+  "name": "Brookings, Oregon",
+  "kind": "city",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Brookings,_Oregon",
+  "lat": null,
+  "lon": null
+ },
  "place-broome-western-australia": {
   "name": "Broome, Western Australia",
   "kind": "port town",
@@ -1472,6 +1490,15 @@
   "nation": "France",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Buch%C3%A8res",
+  "lat": null,
+  "lon": null
+ },
+ "place-buckingham-palace": {
+  "name": "Buckingham Palace",
+  "kind": "royal palace",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Buckingham_Palace",
   "lat": null,
   "lon": null
  },
@@ -1693,6 +1720,15 @@
   "lat": 44.8902,
   "lon": -66.931
  },
+ "place-canning-town": {
+  "name": "Canning Town",
+  "kind": "district of east London",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Canning_Town",
+  "lat": null,
+  "lon": null
+ },
  "place-canterbury-cathedral": {
   "name": "Canterbury Cathedral",
   "kind": "cathedral",
@@ -1740,6 +1776,15 @@
   "wikidata": "Q926115",
   "lat": -6.25,
   "lon": 155.0333
+ },
+ "place-cape-wom": {
+  "name": "Cape Wom",
+  "kind": "headland and airstrip near Wewak",
+  "nation": "Papua New Guinea",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Cape_Wom",
+  "lat": null,
+  "lon": null
  },
  "place-capitol-theatre-new-york-city": {
   "name": "Capitol Theatre (New York City)",
@@ -2107,6 +2152,15 @@
   "lat": 49.3953,
   "lon": 41.1522
  },
+ "place-chiswick": {
+  "name": "Chiswick",
+  "kind": "district of west London",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Chiswick",
+  "lat": null,
+  "lon": null
+ },
  "place-choiseul-island": {
   "name": "Choiseul",
   "kind": "island",
@@ -2466,6 +2520,15 @@
   "source": "https://en.wikipedia.org/wiki/Damascus",
   "lat": 33.513,
   "lon": 36.292
+ },
+ "place-darmstadt": {
+  "name": "Darmstadt",
+  "kind": "city in Hesse, Germany",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Darmstadt",
+  "lat": null,
+  "lon": null
  },
  "place-darwin-northern-territory": {
   "name": "Darwin, Northern Territory",
@@ -3335,6 +3398,15 @@
   "lat": 50.1106,
   "lon": 8.6822
  },
+ "place-frascati": {
+  "name": "Frascati",
+  "kind": "town in the Alban Hills",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Frascati",
+  "lat": null,
+  "lon": null
+ },
  "place-freckleton": {
   "name": "Freckleton",
   "kind": "village in Lancashire",
@@ -3765,6 +3837,15 @@
   "source": "https://en.wikipedia.org/wiki/Grosvenor_Square",
   "lat": 51.5114,
   "lon": -0.1514
+ },
+ "place-grove-park-chiswick": {
+  "name": "Grove Park, Chiswick",
+  "kind": "area of Chiswick, site of the first V2 strike on Britain",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Grove_Park,_Chiswick",
+  "lat": null,
+  "lon": null
  },
  "place-guadalcanal": {
   "name": "Guadalcanal",
@@ -4547,6 +4628,19 @@
   "lat": 51.234,
   "lon": -2.051
  },
+ "place-incheon": {
+  "name": "Incheon",
+  "kind": "port city",
+  "nation": "Korea",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Incheon",
+  "aka": [
+   "Inchon",
+   "Jinsen"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-independence-hall": {
   "name": "Independence Hall",
   "kind": "building",
@@ -4808,6 +4902,15 @@
   "aka": [
    "Jülich"
   ]
+ },
+ "place-kadena-air-base": {
+  "name": "Kadena Air Base",
+  "kind": "airfield on Okinawa",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kadena_Air_Base",
+  "lat": null,
+  "lon": null
  },
  "place-kagoshima": {
   "lat": 31.5968,
@@ -6178,6 +6281,15 @@
   "lat": 50.7478,
   "lon": 25.3244
  },
+ "place-luxembourg-city": {
+  "name": "Luxembourg City",
+  "kind": "capital of Luxembourg",
+  "nation": "Luxembourg",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Luxembourg_City",
+  "lat": null,
+  "lon": null
+ },
  "place-luxembourg-palace": {
   "name": "Luxembourg Palace",
   "kind": "palace in Paris, seat of the 1946 Peace Conference",
@@ -6256,12 +6368,33 @@
   "lat": 52.1316,
   "lon": 11.64
  },
+ "place-mahajanga": {
+  "name": "Mahajanga",
+  "kind": "port city in northwest Madagascar",
+  "nation": "Madagascar",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mahajanga",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Majunga"
+  ]
+ },
  "place-maille-indre-et-loire": {
   "name": "Maille",
   "kind": "village in Indre et Loire",
   "nation": "France",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Maill%C3%A9,_Indre-et-Loire",
+  "lat": null,
+  "lon": null
+ },
+ "place-maisons-alfort": {
+  "name": "Maisons Alfort",
+  "kind": "suburb of Paris",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Maisons-Alfort",
   "lat": null,
   "lon": null
  },
@@ -8046,6 +8179,19 @@
   "lat": 59.9133,
   "lon": 10.7389
  },
+ "place-ostrava": {
+  "name": "Ostrava",
+  "kind": "city",
+  "nation": "Czechoslovakia",
+  "aka": [
+   "Moravska Ostrava",
+   "Mahrisch Ostrau"
+  ],
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ostrava",
+  "lat": null,
+  "lon": null
+ },
  "place-ottawa-civic-hospital": {
   "name": "Ottawa Civic Hospital",
   "kind": "hospital",
@@ -9107,6 +9253,15 @@
    "Rur"
   ]
  },
+ "place-roetgen": {
+  "name": "Roetgen",
+  "kind": "German town near Aachen",
+  "nation": "Germany",
+  "lat": null,
+  "lon": null,
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Roetgen"
+ },
  "place-roi-namur": {
   "name": "Roi-Namur",
   "kind": "linked islands, Kwajalein Atoll",
@@ -9759,6 +9914,18 @@
   "lat": 35.8878,
   "lon": 14.5169
  },
+ "place-seoul": {
+  "name": "Seoul",
+  "kind": "city",
+  "nation": "Korea",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Seoul",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Keijo"
+  ]
+ },
  "place-serafimovich-town": {
   "name": "Serafimovich",
   "kind": "town",
@@ -10326,6 +10493,15 @@
   "lat": 50.7667,
   "lon": 6.2333
  },
+ "place-stolzembourg": {
+  "name": "Stolzembourg",
+  "kind": "village on the Our River, Luxembourg",
+  "nation": "Luxembourg",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Stolzembourg",
+  "lat": null,
+  "lon": null
+ },
  "place-strait-of-belle-isle": {
   "name": "Strait of Belle Isle",
   "kind": "strait between Labrador and Newfoundland",
@@ -10445,6 +10621,15 @@
   "source": "https://en.wikipedia.org/wiki/Surabaya",
   "lat": -7.2463,
   "lon": 112.7378
+ },
+ "place-surrey-commercial-docks": {
+  "name": "Surrey Commercial Docks",
+  "kind": "docks in Rotherhithe, London",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Surrey_Commercial_Docks",
+  "lat": null,
+  "lon": null
  },
  "place-swansea": {
   "name": "Swansea",
@@ -10640,6 +10825,15 @@
   "aka": [
    "Teheran"
   ]
+ },
+ "place-tel-aviv": {
+  "name": "Tel Aviv",
+  "kind": "city",
+  "nation": "Mandatory Palestine",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tel_Aviv",
+  "lat": null,
+  "lon": null
  },
  "place-terminal-island": {
   "name": "Terminal Island",
@@ -10978,6 +11172,15 @@
   "source": "https://en.wikipedia.org/wiki/Toshima",
   "lat": 35.7261,
   "lon": 139.7167
+ },
+ "place-tottori-city": {
+  "name": "Tottori",
+  "kind": "city in Tottori Prefecture, Japan",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tottori_(city)",
+  "lat": null,
+  "lon": null
  },
  "place-toulon": {
   "name": "Toulon",

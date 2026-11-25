@@ -945,6 +945,13 @@
    "Second Guards Army"
   ]
  },
+ "unit-2nd-guards-tank-army": {
+  "name": "2nd Guards Tank Army",
+  "kind": "Soviet tank army",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/2nd_Guards_Tank_Army"
+ },
  "unit-2nd-infantry-division-united-states": {
   "name": "2nd Infantry Division",
   "kind": "US Army infantry division",
@@ -1052,6 +1059,13 @@
   "nation": "US",
   "wikidata": "Q4634606",
   "source": "https://en.wikipedia.org/wiki/30th_Infantry_Regiment_(United_States)"
+ },
+ "unit-30th-u-boat-flotilla": {
+  "name": "30th U-boat Flotilla",
+  "kind": "Kriegsmarine U-boat flotilla in the Black Sea",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/30th_U-boat_Flotilla"
  },
  "unit-31st-army-soviet-union": {
   "name": "31st Army",
@@ -1644,6 +1658,13 @@
   "nation": "Italy",
   "wikidata": "Q3599366",
   "source": "https://en.wikipedia.org/wiki/55th_Infantry_Division_%22Savona%22"
+ },
+ "unit-5th-armored-division-united-states": {
+  "name": "5th Armored Division (United States)",
+  "kind": "U.S. Army armored division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/5th_Armored_Division_(United_States)"
  },
  "unit-5th-cavalry-regiment": {
   "name": "5th Cavalry Regiment",
@@ -2268,6 +2289,17 @@
   "wikidata": "Q975007",
   "source": "https://en.wikipedia.org/wiki/American_Federation_of_Musicians"
  },
+ "unit-american-jewish-joint-distribution-committee": {
+  "name": "American Jewish Joint Distribution Committee",
+  "kind": "Jewish relief organization",
+  "nation": "US",
+  "aka": [
+   "The Joint",
+   "JDC"
+  ],
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/American_Jewish_Joint_Distribution_Committee"
+ },
  "unit-american-youth-congress": {
   "name": "American Youth Congress",
   "kind": "American youth organization",
@@ -2836,6 +2868,16 @@
   "nation": "Italy",
   "wikidata": "Q1053185",
   "source": "https://en.wikipedia.org/wiki/Constituent_Assembly_of_Italy"
+ },
+ "unit-corpo-aereo-italiano": {
+  "name": "Corpo Aereo Italiano",
+  "kind": "Italian expeditionary air corps, 1940 to 1941",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Corpo_Aereo_Italiano",
+  "aka": [
+   "CAI"
+  ]
  },
  "unit-corpo-truppe-volontarie": {
   "name": "Corpo Truppe Volontarie",
@@ -4631,6 +4673,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/No._269_Squadron_RAF"
  },
+ "unit-no-272-squadron-raf": {
+  "name": "No. 272 Squadron RAF",
+  "kind": "RAF Beaufighter squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._272_Squadron_RAF"
+ },
  "unit-no-3-commando": {
   "name": "No. 3 Commando",
   "kind": "British Army commando unit",
@@ -4773,6 +4822,13 @@
   "nation": "Australia",
   "source": "https://en.wikipedia.org/wiki/No._464_Squadron_RAAF",
   "wikidata": "Q7043531"
+ },
+ "unit-no-5-group-raf": {
+  "name": "No. 5 Group RAF",
+  "kind": "RAF Bomber Command group",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._5_Group_RAF"
  },
  "unit-no-51-squadron-raf": {
   "name": "No. 51 Squadron RAF",
@@ -5688,6 +5744,13 @@
    "Radio Belgrade"
   ]
  },
+ "unit-solf-circle": {
+  "name": "Solf Circle",
+  "kind": "German anti-Nazi resistance circle",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Solf_Circle"
+ },
  "unit-sonderkommando-elbe": {
   "name": "Sonderkommando Elbe",
   "kind": "Luftwaffe ramming task force",
@@ -5916,6 +5979,13 @@
   "nation": "US",
   "wikidata": "Q2302345",
   "source": "https://en.wikipedia.org/wiki/The_Saturday_Evening_Post"
+ },
+ "unit-the-times": {
+  "name": "The Times",
+  "kind": "London daily newspaper",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/The_Times"
  },
  "unit-the-writing-69th": {
   "name": "The Writing 69th",

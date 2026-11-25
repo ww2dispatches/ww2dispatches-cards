@@ -49,6 +49,13 @@
    "Infante Don Jaime"
   ]
  },
+ "ship-davara": {
+  "name": "Davara",
+  "kind": "British steam trawler",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Davara"
+ },
  "ship-fire-fighter-fireboat": {
   "name": "Fire Fighter (fireboat)",
   "kind": "FDNY fireboat",
@@ -894,6 +901,13 @@
   "wikidata": "Q2023286",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-199"
  },
+ "ship-german-submarine-u-20-1936": {
+  "name": "German submarine U-20 (1936)",
+  "kind": "Type IIB U-boat, Black Sea",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-20_(1936)"
+ },
  "ship-german-submarine-u-200": {
   "name": "U-200",
   "kind": "Kriegsmarine U-boat",
@@ -928,6 +942,13 @@
   "nation": "Germany",
   "wikidata": "Q4051941",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-205"
+ },
+ "ship-german-submarine-u-207": {
+  "name": "U 207",
+  "kind": "Type VIIC U boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-207"
  },
  "ship-german-submarine-u-210": {
   "name": "U-210",
@@ -1113,6 +1134,13 @@
   "nation": "Germany",
   "wikidata": "Q4051979",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-269"
+ },
+ "ship-german-submarine-u-27-1936": {
+  "name": "German submarine U 27 (1936)",
+  "kind": "U boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-27_(1936)"
  },
  "ship-german-submarine-u-270": {
   "name": "U-270",
@@ -1668,6 +1696,13 @@
   "wikidata": "Q559159",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-5_(1935)"
  },
+ "ship-german-submarine-u-501": {
+  "name": "German submarine U-501",
+  "kind": "Type IXC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-501"
+ },
  "ship-german-submarine-u-502": {
   "name": "German submarine U-502",
   "kind": "Type IXC U-boat",
@@ -2063,6 +2098,16 @@
   "aka": [
    "U-616"
   ]
+ },
+ "ship-german-submarine-u-617": {
+  "name": "U 617",
+  "kind": "Type VIIC U boat",
+  "nation": "Germany",
+  "aka": [
+   "German submarine U 617"
+  ],
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-617"
  },
  "ship-german-submarine-u-618": {
   "name": "German submarine U-618",
@@ -2857,6 +2902,20 @@
   "wikidata": "Q5630713",
   "source": "https://en.wikipedia.org/wiki/HMCS_Athabaskan_(G07)"
  },
+ "ship-hmcs-chambly": {
+  "name": "HMCS Chambly (K116)",
+  "kind": "Royal Canadian Navy Flower class corvette",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMCS_Chambly"
+ },
+ "ship-hmcs-charlottetown-1941": {
+  "name": "HMCS Charlottetown (K244)",
+  "kind": "Royal Canadian Navy Flower class corvette",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMCS_Charlottetown_(1941)"
+ },
  "ship-hmcs-haida": {
   "name": "HMCS Haida (G63)",
   "kind": "Tribal class destroyer",
@@ -2891,6 +2950,13 @@
   "nation": "Canada",
   "wikidata": "Q16997438",
   "source": "https://en.wikipedia.org/wiki/HMCS_Matane"
+ },
+ "ship-hmcs-moose-jaw": {
+  "name": "HMCS Moose Jaw (K164)",
+  "kind": "Royal Canadian Navy Flower class corvette",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMCS_Moose_Jaw"
  },
  "ship-hmcs-morden": {
   "name": "HMCS Morden (K170)",
@@ -4109,6 +4175,16 @@
   "wikidata": "Q969687",
   "source": "https://en.wikipedia.org/wiki/HMS_Orion_(85)"
  },
+ "ship-hms-oxley": {
+  "name": "HMS Oxley",
+  "kind": "Royal Navy submarine, formerly HMAS Oxley",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Oxley",
+  "aka": [
+   "HMAS Oxley"
+  ]
+ },
  "ship-hms-p32-1940": {
   "name": "HMS P32 (1940)",
   "kind": "Royal Navy U-class submarine",
@@ -4272,6 +4348,13 @@
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/HMS_Seraph_(P219)",
   "wikidata": "Q749790"
+ },
+ "ship-hms-shakespeare-p221": {
+  "name": "HMS Shakespeare (P221)",
+  "kind": "S class submarine",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Shakespeare_(P221)"
  },
  "ship-hms-sharpshooter-j68": {
   "name": "HMS Sharpshooter (J68)",
@@ -4477,6 +4560,13 @@
   "wikidata": "Q1565575",
   "source": "https://en.wikipedia.org/wiki/HMS_Trinidad_(46)"
  },
+ "ship-hms-triton-n15": {
+  "name": "HMS Triton (N15)",
+  "kind": "Royal Navy submarine",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Triton_(N15)"
+ },
  "ship-hms-trooper": {
   "name": "HMS Trooper (N91)",
   "kind": "British T class submarine",
@@ -4505,6 +4595,17 @@
   "wikidata": "Q3022548",
   "source": "https://en.wikipedia.org/wiki/HMS_Tynedale",
   "note": "Wikipedia title HMS Tynedale; HMS Tynedale (L96) redirects to it."
+ },
+ "ship-hms-uganda": {
+  "name": "HMS Uganda",
+  "kind": "Royal Navy Fiji class light cruiser",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Uganda",
+  "aka": [
+   "HMS Uganda (66)",
+   "HMCS Uganda"
+  ]
  },
  "ship-hms-unbeaten": {
   "name": "HMS Unbeaten (N93)",
@@ -4848,6 +4949,16 @@
   "wikidata": "Q262899",
   "source": "https://en.wikipedia.org/wiki/Italian_battleship_Littorio"
  },
+ "ship-italian-battleship-roma-1940": {
+  "name": "Italian battleship Roma (1940)",
+  "kind": "battleship",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_battleship_Roma_(1940)",
+  "aka": [
+   "Roma"
+  ]
+ },
  "ship-italian-battleship-vittorio-veneto": {
   "name": "Italian battleship Vittorio Veneto",
   "kind": "Regia Marina battleship, Iachino's flagship",
@@ -5074,6 +5185,13 @@
   "nation": "Italy",
   "wikidata": "Q1428254",
   "source": "https://en.wikipedia.org/wiki/Italian_submarine_Scir%C3%A8_(1938)"
+ },
+ "ship-italian-submarine-velella-1936": {
+  "name": "Velella (1936)",
+  "kind": "Argo class submarine",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_submarine_Velella_(1936)"
  },
  "ship-italian-torpedo-boat-lupo": {
   "name": "Italian torpedo boat Lupo",
@@ -5857,6 +5975,13 @@
   "wikidata": "Q1356815",
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Yamakaze_(1936)"
  },
+ "ship-japanese-destroyer-yayoi-1925": {
+  "name": "Yayoi (1925)",
+  "kind": "Imperial Japanese Navy Mutsuki class destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Yayoi_(1925)"
+ },
  "ship-japanese-destroyer-yugure-1934": {
   "name": "Japanese destroyer Yugure (1934)",
   "kind": "Imperial Japanese Navy destroyer",
@@ -6498,6 +6623,13 @@
   "nation": "Britain",
   "wikidata": "Q2124402",
   "source": "https://en.wikipedia.org/wiki/RMS_Empress_of_Canada_(1920)"
+ },
+ "ship-rms-laconia-1921": {
+  "name": "RMS Laconia (1921)",
+  "kind": "Cunard liner, troop transport",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/RMS_Laconia_(1921)"
  },
  "ship-rms-lady-hawkins": {
   "name": "RMS Lady Hawkins",
@@ -7234,6 +7366,23 @@
   "aka": [
    "HMS Rajputana"
   ]
+ },
+ "ship-ss-rakuyo-maru": {
+  "name": "Rakuyo Maru",
+  "kind": "Japanese passenger cargo ship, prisoner transport",
+  "nation": "Japan",
+  "aka": [
+   "SS Rakuyo Maru"
+  ],
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Rakuy%C5%8D_Maru"
+ },
+ "ship-ss-rex": {
+  "name": "SS Rex",
+  "kind": "Italian ocean liner",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Rex"
  },
  "ship-ss-rio-de-janeiro": {
   "name": "SS Rio de Janeiro",
@@ -8764,6 +8913,13 @@
   "source": "https://en.wikipedia.org/wiki/USS_Orestes_(AGP-10)",
   "note": "The hull number title redirects to the article USS Orestes; id keeps the hull number as the registry does for ships."
  },
+ "ship-uss-paddle": {
+  "name": "USS Paddle (SS 263)",
+  "kind": "Gato class submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Paddle"
+ },
  "ship-uss-panay-pr-5": {
   "name": "USS Panay (PR-5)",
   "kind": "U.S. Navy river gunboat",
@@ -9428,6 +9584,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/USS_Ward",
   "wikidata": "Q623576"
+ },
+ "ship-uss-warrington-dd-383": {
+  "name": "USS Warrington (DD 383)",
+  "kind": "U.S. Navy destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Warrington_(DD-383)"
  },
  "ship-uss-washington-bb-56": {
   "name": "USS Washington (BB-56)",

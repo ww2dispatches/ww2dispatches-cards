@@ -569,6 +569,16 @@
    "IBM ASCC"
   ]
  },
+ "machine-harvard-mark-ii": {
+  "name": "Harvard Mark II",
+  "kind": "relay computer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Harvard_Mark_II",
+  "aka": [
+   "Aiken Relay Calculator"
+  ]
+ },
  "machine-hedgehog-weapon": {
   "name": "Hedgehog",
   "kind": "ahead throwing anti submarine mortar",
@@ -631,6 +641,16 @@
   "nation": "US",
   "wikidata": "Q313695",
   "source": "https://en.wikipedia.org/wiki/Instant_camera"
+ },
+ "machine-is-3": {
+  "name": "IS 3",
+  "kind": "Soviet heavy tank",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/IS-3",
+  "aka": [
+   "Iosif Stalin 3"
+  ]
  },
  "machine-it-s-a-wonderful-life": {
   "name": "It's a Wonderful Life",
