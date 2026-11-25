@@ -4328,6 +4328,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/No._200_Squadron_RAF"
  },
+ "unit-no-201-squadron-raf": {
+  "name": "No. 201 Squadron RAF",
+  "kind": "RAF Coastal Command flying boat squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._201_Squadron_RAF"
+ },
  "unit-no-202-squadron-raf": {
   "name": "No. 202 Squadron RAF",
   "kind": "RAF Coastal Command flying boat squadron",
@@ -4425,6 +4432,13 @@
   "nation": "Britain",
   "wikidata": "Q7043403",
   "source": "https://en.wikipedia.org/wiki/No._33_Squadron_RAF"
+ },
+ "unit-no-344-squadron-raf": {
+  "name": "No. 344 Squadron RAF",
+  "kind": "RAF Coastal Command squadron with French crews",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._344_Squadron_RAF"
  },
  "unit-no-36-squadron-raf": {
   "name": "No. 36 Squadron RAF",
@@ -4892,6 +4906,16 @@
   "wikidata": "Q183644",
   "source": "https://en.wikipedia.org/wiki/Pravda"
  },
+ "unit-preparatory-committee-for-indonesian-independence": {
+  "name": "Preparatory Committee for Indonesian Independence",
+  "kind": "committee that adopted Indonesia's 1945 constitution",
+  "nation": "Indonesia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Preparatory_Committee_for_Indonesian_Independence",
+  "aka": [
+   "PPKI"
+  ]
+ },
  "unit-provisional-consultative-assembly": {
   "name": "Provisional Consultative Assembly",
   "kind": "Free French consultative assembly in Algiers",
@@ -5334,6 +5358,16 @@
    "SED"
   ]
  },
+ "unit-soldatensender-belgrad": {
+  "name": "Soldatensender Belgrad",
+  "kind": "German forces radio station in occupied Belgrade",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Soldatensender_Belgrad",
+  "aka": [
+   "Radio Belgrade"
+  ]
+ },
  "unit-sonderkommando-elbe": {
   "name": "Sonderkommando Elbe",
   "kind": "Luftwaffe ramming task force",
@@ -5494,6 +5528,17 @@
   "source": "https://en.wikipedia.org/wiki/Supreme_Headquarters_Allied_Expeditionary_Force",
   "aka": [
    "SHAEF"
+  ]
+ },
+ "unit-swingjugend": {
+  "name": "Swingjugend",
+  "kind": "German jazz and swing youth scene",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Swingjugend",
+  "aka": [
+   "Swing Youth",
+   "Swing Kids"
   ]
  },
  "unit-tactical-air-command": {

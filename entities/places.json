@@ -2461,6 +2461,19 @@
   "lat": 38.4293,
   "lon": 22.6673
  },
+ "place-dnieper-hydroelectric-station": {
+  "name": "Dnieper Hydroelectric Station",
+  "kind": "hydroelectric dam at Zaporizhzhia",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Dnieper_Hydroelectric_Station",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "DniproHES",
+   "Dneproges"
+  ]
+ },
  "place-docelles": {
   "name": "Docelles",
   "kind": "village",
@@ -8232,6 +8245,15 @@
   "lat": -72.5,
   "lon": 12.0
  },
+ "place-queen-s-university-at-kingston": {
+  "name": "Queen's University at Kingston",
+  "kind": "university in Kingston, Ontario",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Queen%27s_University_at_Kingston",
+  "lat": null,
+  "lon": null
+ },
  "place-quirinal-palace": {
   "name": "Quirinal Palace",
   "kind": "royal palace in Rome",
@@ -8333,6 +8355,15 @@
   "source": "https://en.wikipedia.org/wiki/RAF_Habbaniya",
   "lat": 33.3769,
   "lon": 43.5678
+ },
+ "place-raf-kenley": {
+  "name": "RAF Kenley",
+  "kind": "RAF fighter sector airfield south of London",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/RAF_Kenley",
+  "lat": null,
+  "lon": null
  },
  "place-raf-tangmere": {
   "name": "RAF Tangmere",
@@ -9270,6 +9301,15 @@
   "lat": 59.945,
   "lon": 31.0347
  },
+ "place-shumshu": {
+  "name": "Shumshu",
+  "kind": "northernmost of the Kuril Islands",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Shumshu",
+  "lat": null,
+  "lon": null
+ },
  "place-shuri-castle": {
   "name": "Shuri Castle",
   "kind": "castle and Japanese 32nd Army stronghold, Okinawa",
@@ -10101,6 +10141,15 @@
   ],
   "lat": 50.0358,
   "lon": 19.1783
+ },
+ "place-thousand-islands-bridge": {
+  "name": "Thousand Islands Bridge",
+  "kind": "bridge linking New York and Ontario",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Thousand_Islands_Bridge",
+  "lat": null,
+  "lon": null
  },
  "place-tianjin": {
   "name": "Tianjin",

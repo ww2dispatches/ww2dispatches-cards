@@ -519,6 +519,13 @@
    "U-106"
   ]
  },
+ "ship-german-submarine-u-107-1940": {
+  "name": "German submarine U-107 (1940)",
+  "kind": "Type IXB U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-107_(1940)"
+ },
  "ship-german-submarine-u-108-1940": {
   "name": "German submarine U-108 (1940)",
   "kind": "Type IXB U-boat",
@@ -1346,6 +1353,13 @@
   "nation": "Germany",
   "wikidata": "Q2608340",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-402"
+ },
+ "ship-german-submarine-u-403": {
+  "name": "German submarine U-403",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-403"
  },
  "ship-german-submarine-u-404": {
   "name": "U-404",
@@ -3829,6 +3843,13 @@
   "wikidata": "Q969687",
   "source": "https://en.wikipedia.org/wiki/HMS_Orion_(85)"
  },
+ "ship-hms-p32-1940": {
+  "name": "HMS P32 (1940)",
+  "kind": "Royal Navy U-class submarine",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_P32_(1940)"
+ },
  "ship-hms-pathfinder-g10": {
   "name": "HMS Pathfinder (G10)",
   "kind": "Royal Navy destroyer",
@@ -4837,6 +4858,17 @@
   "nation": "Japan",
   "wikidata": "Q1891409",
   "source": "https://en.wikipedia.org/wiki/Japanese_aircraft_carrier_Taih%C5%8D"
+ },
+ "ship-japanese-aircraft-carrier-taiyo": {
+  "name": "Japanese aircraft carrier Taiyo",
+  "kind": "Imperial Japanese Navy escort carrier, ex liner Kasuga Maru",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_aircraft_carrier_Taiy%C5%8D",
+  "aka": [
+   "Taiyō",
+   "Kasuga Maru"
+  ]
  },
  "ship-japanese-aircraft-carrier-unryu": {
   "name": "Unryu",
@@ -7687,6 +7719,13 @@
   "nation": "US",
   "wikidata": "Q6147269",
   "source": "https://en.wikipedia.org/wiki/USS_Harder_(SS-257)"
+ },
+ "ship-uss-hardhead": {
+  "name": "USS Hardhead (SS-365)",
+  "kind": "US Navy Balao-class submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Hardhead"
  },
  "ship-uss-harmon-de-678": {
   "name": "USS Harmon (DE-678)",

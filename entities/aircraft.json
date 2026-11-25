@@ -246,6 +246,13 @@
    "B-24"
   ]
  },
+ "aircraft-consolidated-b-32-dominator": {
+  "name": "Consolidated B-32 Dominator",
+  "kind": "US heavy bomber",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Consolidated_B-32_Dominator"
+ },
  "aircraft-consolidated-c-87-liberator-express": {
   "name": "Consolidated C-87 Liberator Express",
   "kind": "transport version of the B-24",

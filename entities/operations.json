@@ -2589,6 +2589,13 @@
    "Battle of Sangshak"
   ]
  },
+ "op-battle-of-shumshu": {
+  "name": "Battle of Shumshu",
+  "kind": "Soviet landing in the Kuril Islands",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Shumshu"
+ },
  "op-battle-of-sidi-barrani": {
   "name": "Battle of Sidi Barrani",
   "kind": "opening battle of Operation Compass",
@@ -2959,6 +2966,13 @@
   "nation": "Italy",
   "wikidata": "Q2553656",
   "source": "https://en.wikipedia.org/wiki/Battle_of_the_Tarigo_Convoy"
+ },
+ "op-battle-of-the-tenaru": {
+  "name": "Battle of the Tenaru",
+  "kind": "Guadalcanal land battle",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_the_Tenaru"
  },
  "op-battle-of-timor": {
   "name": "Battle of Timor",
@@ -4130,6 +4144,13 @@
   "wikidata": "Q4090467",
   "source": "https://en.wikipedia.org/wiki/Chenogne_massacre"
  },
+ "op-child-euthanasia-in-nazi-germany": {
+  "name": "Child euthanasia in Nazi Germany",
+  "kind": "Nazi program murdering disabled children",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Child_euthanasia_in_Nazi_Germany"
+ },
  "op-chinese-civil-war": {
   "name": "Chinese Civil War",
   "kind": "Civil war between Nationalists and Communists",
@@ -4273,6 +4294,13 @@
   "nation": "Britain",
   "wikidata": "Q3689898",
   "source": "https://en.wikipedia.org/wiki/Convoy_HG_76"
+ },
+ "op-convoy-hi-71": {
+  "name": "Convoy Hi-71",
+  "kind": "Japanese convoy",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Convoy_Hi-71"
  },
  "op-convoy-hx-133": {
   "name": "Convoy HX 133",
@@ -7367,6 +7395,13 @@
   "wikidata": "Q4331407",
   "source": "https://en.wikipedia.org/wiki/Odessa_Offensive"
  },
+ "op-ogdensburg-agreement": {
+  "name": "Ogdensburg Agreement",
+  "kind": "US and Canadian defense agreement",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ogdensburg_Agreement"
+ },
  "op-ohi-day": {
   "name": "Ochi Day",
   "kind": "Greek national day",
@@ -10032,6 +10067,13 @@
   "wikidata": "Q2337549",
   "source": "https://en.wikipedia.org/wiki/The_Emergency_(Ireland)"
  },
+ "op-the-hardest-day": {
+  "name": "The Hardest Day",
+  "kind": "Battle of Britain air battle of 18 August 1940",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/The_Hardest_Day"
+ },
  "op-the-holocaust": {
   "name": "The Holocaust",
   "kind": "Nazi genocide of Europe's Jews",
@@ -10528,6 +10570,16 @@
   "source": "https://en.wikipedia.org/wiki/Venona_project",
   "aka": [
    "Venona"
+  ]
+ },
+ "op-vergarola-explosion": {
+  "name": "Vergarola explosion",
+  "kind": "ordnance explosion on a beach at Pula",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Vergarola_explosion",
+  "aka": [
+   "Vergarolla massacre"
   ]
  },
  "op-verona-trial": {
