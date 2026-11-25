@@ -2,7 +2,7 @@
 
 The current lessons from the Tuesday analytics review. The Wednesday research run, the two Thursday video runs, and the Friday cards run read this before picking events, building videos, and writing hooks and captions. It holds lessons, not rules: the Project docs stay the rules, and anything here that would change a rule goes to Brian first as a Schedule Board task and a question on the Scoreboard's Your Call tab. The Tuesday review rewrites this file each week; older versions live in git and in `analytics/reviews/`.
 
-Updated Tue 17 Nov 2026, after the fourth review (`analytics/reviews/2026-11-17.md`). The method is in the Project's Analytics doc.
+Updated Tue 24 Nov 2026, after the fifth review (`analytics/reviews/2026-11-24.md`). The method is in the Project's Analytics doc.
 
 ## How to read this
 * **Reach:** a post's views compared with a typical post of the same kind on the same platform (1.0 is typical).
@@ -12,66 +12,73 @@ Updated Tue 17 Nov 2026, after the fourth review (`analytics/reviews/2026-11-17.
 * **Pattern:** holds across 3 weekly reviews with 5 or more posts on each side. The runs follow it.
 * **Rule change:** a pattern that would change a Project doc. Filed for Brian to approve.
 * "Review 2 of 3" means a finding has held with enough posts in two weekly reviews; one more and it becomes a pattern.
-* **Threads is still the only card platform that counts**, and it now reads lower after its 5 Nov cut. Scores are read against that lower typical, so older cards score higher than they did.
+* **Card lessons are on hold this week.** Every card lesson below comes from the old Threads profile, the only card platform that cleared the floor. That profile was replaced on 22 Nov, its readings stopped at 17 Nov, and no card posted after 15 Nov has a score yet. The card patterns stand as they were on 17 Nov until the new Threads profile has 5 scored cards with a typical card at 50 views (likely 1 Dec). Video lessons are current.
 
 ## Patterns
-1. **Battle Lines cards out reach Blueprint and Home Front cards** (pattern since 10 Nov 2026). 28 day medians: Battle Lines 2.93 over 23, Blueprint 1.11 over 12, Home Front 1.07 over 9. The week of 11 to 15 Nov ran the other way (every Battle Lines morning card low, the Home Front photos on top); if next week does too, this drops back to a hunch.
-2. **Combat and turning points out reach diplomacy and machines** (pattern since 17 Nov 2026). Combat median 1.49 over 24, turning point 2.97 over 11, against decision or diplomacy 0.95 over 17 and invention or machine 0.77 over 14.
-3. **Spec Sheets reach less than Story cards** (pattern since 17 Nov 2026). Median 0.92 over 10 against 1.60 over 31. The best Spec Sheets (Spruce Goose, Fu-Go) carry a person or a dare inside the machine.
-4. **Home Front reaches fewer people but draws the strongest Response** (pattern since 17 Nov 2026). Reach median 1.07 against 2.93 for Battle Lines; Response 1.43 against 0.90. With a vivid person (the Sullivans) it can top the week.
+1. **Battle Lines cards out reach Blueprint and Home Front cards** (pattern since 10 Nov 2026, old Threads profile). Medians: Battle Lines 4.09 over 23, Blueprint 1.54 over 12, Home Front 1.49 over 9. The week of 11 to 15 Nov ran the other way; it gets rechecked once cards score again.
+2. **Combat and turning points out reach diplomacy and machines** (pattern since 17 Nov 2026, cards). Combat median 2.08 over 24, turning point 4.13 over 11, against decision or diplomacy 1.33 over 17 and invention or machine 1.07 over 14. Videos now point the same way (hunch below).
+3. **Spec Sheets reach less than Story cards** (pattern since 17 Nov 2026). Median 1.28 over 10 against 2.23 over 31. The best Spec Sheets carry a person or a dare inside the machine.
+4. **Home Front reaches fewer people but draws the strongest Response** (pattern since 17 Nov 2026). Reach median 1.49 against 4.09 for Battle Lines; Response 1.40 against 0.88. With a vivid person (the Sullivans, now final at 10.77) it can top everything.
+5. **Living Cards out reach Story Cards** (pattern since 24 Nov 2026, videos). Reach 1.27 (median 1.09) over 36 against 0.68 over 5. The Videos doc already makes a Story Card the fallback; this confirms it.
+6. **Openings on combat or firing out reach other motion** (pattern since 24 Nov 2026, videos). 1.53 (median 1.43) over 10 against 1.12 (median 1.07) over 21; people standing still trail at 0.62 over 3. Within the Videos doc's "open on motion or action", the firing or fighting shot is the one to pick.
 
-## For the Wednesday research run (events and subjects)
-1. **Lean on combat and turning points** (pattern 2), and give the 8 a.m. slot to Battle Lines when the date allows (pattern 1). A famous campaign followed over several dates builds toward its climax (Rommel's retreat, 12.43, after a week of Alamein).
-2. **Pick a Home Front story for its person or its moment, not its procedure** (pattern 4). The Sullivans (7.74, 21 Threads comments), WAVES, and This Is the Army worked; the draft lottery and election results did not. Never two procedural subjects on the same day.
-3. **Big, famous stories with a human face win the evening slot.** Five brothers, one ship (7.74) and Coventry (1.74) were the week's best cards. A story people already half know, with a strong photo of people, is the best 5 p.m. pick.
-4. **A famous leader at a dramatic moment does well; leaders at procedure do not** (hunch). Leader group median 0.99 over 22. Tojo, Churchill to France, and Greece says no rank high; elections and routine speeches sit low.
-5. **A human story inside a big machine or strike lifts the card** (hunch). Admiral Shima watching Manila Bay, the Fu-Go schoolgirls, Hughes's dare. When picking a machine or strike, check the facts for a person whose moment can carry the hook.
-6. **Stories of groups often left out of WW2 coverage draw strong feeling** (hunch, few posts). WAVES, the Lost Battalion (6.65). Choose them for the story, never as a token, with the usual verification and somber subject rules.
-7. **Eastern Front cards have drawn little** (hunch, 3 posts, all in the Threads slump: Hubertus, Moscow, the Stalingrad boast). Do not avoid the front; pick its most famous moments and the ones with usable film.
-8. **For videos, the film decides the reach.** Living Cards beat Story Cards (review 2 of 3). When choosing between events for a day, the one with strong action film usually wins: Tirpitz (Threads 1,362) and the Moselle (Facebook 841, Threads 707) this week.
-9. **Same day pairs share a fate:** the Fu-Go Story and Spec Sheet both did well; the Tirpitz Story and Spec Sheet both did poorly on Threads. A strong subject carries two posts; a weak day sinks both.
+## For the Wednesday research run (events, subjects, and which film to plan)
+1. **Lean on combat and turning points** (pattern 2), and give the 8 a.m. slot to Battle Lines when the date allows (pattern 1). A famous campaign followed over several dates builds toward its climax.
+2. **For videos, pick the event with fighting on film** (patterns 5 and 6). The week's best videos were Moscow, Operation Queen, and Metz: famous moments with combat or firing in the reel. When two events compete for a day, the one whose film opens on firing or fighting usually wins.
+3. **Statecraft and courtroom stories make weaker videos** (hunch, review 1 of 3). Statecraft videos 0.81 over 7 against Battle Lines 1.31 over 30; Jackson (0.73) and the Nuremberg trial (0.91) on consecutive days were the week's weakest. Keep Statecraft on the cards where it fits; when its film is people seated or standing, consider giving the video slot to the day's action film instead, and avoid two courtroom or conference videos in a row.
+4. **Pick a Home Front story for its person or its moment, not its procedure** (pattern 4). The Sullivans, WAVES, and This Is the Army worked; the draft lottery and election results did not.
+5. **Big, famous stories with a human face win the evening card.** Five brothers, one ship and Coventry were the best evening cards. A story people already half know, with a strong photo of people, is the best 5 p.m. pick.
+6. **A famous leader at a dramatic moment does well; leaders at procedure do not** (hunch, cards).
+7. **A human story inside a big machine or strike lifts the card** (hunch). When picking a machine or strike, check the facts for a person whose moment can carry the hook.
+8. **Stories of groups often left out of WW2 coverage draw strong feeling** (hunch, few posts). WAVES, the Lost Battalion. Choose them for the story, never as a token, with the usual verification and somber subject rules.
+9. **Eastern Front:** cards drew little in the old Threads slump (3 posts), but its videos do fine (5 videos, median 1.07; Moscow's second cut was the week's best). Pick its famous moments with usable film.
+10. **Same day pairs share a fate:** a strong subject carries two posts; a weak day sinks both.
 
 ## For the Thursday video runs (openings, sound, kinds, second cuts)
-1. **Story Cards are the weak spot** (review 2 of 3). Reach 0.81 against 1.20 for Living Cards. *Run:* follow Test C for any Story Card, and make one only when no usable film exists. None has been needed since 6 Nov.
-2. **Openings: combat or firing ahead of motion** (review 2 of 3). 1.36 (median 1.26) over 7 against 0.97 (median 0.90) over 12. Keep following the Videos doc, and tag the real opening from the finished video's frames at about 0.3 and 2 seconds.
-3. **Silent film and period sound do equally well** (silent 1.17 over 16, period sound 1.33 over 5). Keep the film's own sound when it has it.
-4. **Short and plain can hold.** Operation Queen's rockets held 76 percent on TikTok, the best yet; Roosevelt's fourth term 70; Torch 63 on Instagram. One clear thing happening keeps viewers.
-5. **Noon videos now travel on Threads** (hunch, this week): Tirpitz 1,362 views and 10 comments, the Moselle 707, Moscow 480, while the same stories' 8 a.m. cards drew 38 to 87.
-6. **Platforms:** YouTube Shorts is still the biggest video platform but halved this week (4,161 against 9,250; 310 to 1,315 a video). TikTok about 300 to 950. Instagram Reels steady at about 115 to 140. Facebook Reels mostly under 10, with the occasional big one (Moselle 841).
-7. **Second cuts and 7 p.m. videos** started 15 Nov; none is scored yet. Early raw numbers: Moscow's 7 p.m. cut beat its noon cut on TikTok (950 against 817); Operation Queen's did not (303 against 735). Scored comparison once each has 5 posts.
+1. **Open on combat or firing when the film has it** (pattern 6). Otherwise open on the strongest motion. Avoid opening on people standing or seated (Jackson 0.73, Cairo, the Nuremberg courtroom). Keep tagging the real opening from the finished video's frames at about 0.3 and 2 seconds.
+2. **Living Cards, not Story Cards** (pattern 5). Make a Story Card only when no usable film exists, and then follow Test C.
+3. **Short and plain holds.** Operation Queen held 73 percent on TikTok, Tarawa 60, Uranus 53. One clear thing happening keeps viewers.
+4. **The 7 p.m. video holds its own** (review 1 of 3). Median 1.06 over 7 against 1.04 for noon since 15 Nov. TikTok 340 against 369, YouTube 988 against 1,160, Instagram even.
+5. **Second cuts can beat the first cut** (hunch, 3 posts): Moscow's second cut 1.65 against its noon 1.46; Queen 1.14 and Metz 1.13 near typical. A scored comparison once there are 5.
+6. **Sound:** silent 1.27 over 29 and period sound 1.32 over 6 do equally well. Keep the film's own sound when it has it.
+7. **Platforms:** YouTube Shorts typically about 1,000 views a video (14,725 in the week from 15 Nov); TikTok about 340 to 1,000; Instagram Reels about 100 to 235 (Metz 235, the best yet); Facebook Reels mostly under 5, with the occasional one that travels (the Road of Life 367, Jackson 253, the Moselle 848). X videos 10 to 50.
+8. **Two courtroom or conference videos in a row sag** (hunch): Nuremberg at 7 p.m. on 20 Nov, Jackson at noon on 21 Nov.
 
 ## For the Friday cards run (hooks, formats, captions, questions)
-1. **Hooks that name a person, a price, or a dare work best.** "Hitler's order was victory or death. Rommel chose neither." (12.43), the 442nd's price for 211 Texans (6.65), Admiral Shima ashore (5.15), Hughes's dare (2.95). *Lean:* open on one person's choice or a number that hurts, in one or two short sentences.
+1. **Hooks that name a person, a price, or a dare work best** (cards, old Threads profile). "Hitler's order was victory or death. Rommel chose neither.", the 442nd's price for 211 Texans, Admiral Shima ashore, Hughes's dare. *Lean:* open on one person's choice or a number that hurts, in one or two short sentences.
 2. **Spec Sheets reach less than Story cards** (pattern 3). The hook is the cards run's call under the Cards doc; the numbers favor a Spec Sheet whose machine has a human story inside it.
-3. **Photos: group shots lead, people in action trail.** Group median 2.04 over 12 (the Sullivans); people in action 0.17 over 8 (review 2 of 3); place or scene 0.76 over 6. Faces fell back to 0.96, so "faces lead" is withdrawn. *Lean:* for a Photo of the Day, prefer a strong photo of identifiable people over a crowd in motion.
-4. **Quote of the Day works when the line is famous** (hunch, 5 posts, median 0.45). Choose a line people already half know.
-5. **Engagement questions:** cards with one have a median of 0.37 over 9 against 1.26 without (review 1 of 3). The question may simply sit on weaker subjects. Keep following the Cards doc; do not add a question to lift a card.
-6. **The 8 a.m. card on Threads** (hunch, 5 of 5 days this week) drew 38 to 87 views while the noon video on the same story traveled. Do not change hooks over one week; the review reads it again on 24 Nov.
-7. **Slots:** 8 a.m. led 5 p.m. on the 28 day numbers but reversed this week (0.24 against 2.45); not a pattern. The 2:30 p.m. cards are compared once they have 5 scored posts (first early numbers: Kirishima 170 Threads views, Duren 98).
+3. **Photos: group shots lead, people in action trail** (review 2 of 3, held on 17 Nov numbers). Group median 2.83 over 12; people in action 0.24 over 8. *Lean:* for a Photo of the Day, prefer a strong photo of identifiable people over a crowd in motion.
+4. **Quote of the Day works when the line is famous** (hunch, 5 posts). Choose a line people already half know.
+5. **Engagement questions:** cards with one have a median of 0.52 over 9 against 1.77 without (review 1 of 3, on held numbers). The question may simply sit on weaker subjects. Keep following the Cards doc; do not add a question to lift a card.
+6. **Slots:** 8 a.m. led 5 p.m. on the old numbers (median 1.92 over 30 against 1.33 over 29) but reversed in the week of 11 to 15 Nov; not a pattern. The 2:30 p.m. cards have no score yet; on X their median is 19 views against 27 for 8 a.m. and 20 for 5 p.m., too small to act on.
+7. **Threads, new profile:** the first cards drew 143 (the Road of Life, 8 a.m.) and 158 (Rawalpindi, 5 p.m.) in under two days, from zero followers. Nothing to change yet; keep every Threads post in the History Threads topic.
 
 ## Active tests
 Each test changes one thing, so the result can be read clearly.
-* **Test C, shorter Story Cards** (approved by Brian 28 Oct 2026). Every Story Card runs under 30 seconds and opens on the most dramatic still in the kit, so it feels more intense. Measure: YouTube views and Instagram and TikTok hold against the earlier Story Cards (No. 011, 015, 025, 030, 041; YouTube 22 to 661 views, Instagram hold 6 to 19 percent, TikTok 11 to 24 percent). No test Story Card has posted yet. Review Tue 24 Nov 2026, or later if fewer than two test Story Cards have posted by then.
-* **Test D, no hashtags on X** (approved by Brian 16 Nov 2026). Every X post dated 22 Nov to 5 Dec 2026 carries no hashtag (Cards doc, Hashtags), cards, videos, Campaign Series, and Name This alike. Facebook, Instagram, and Threads are unchanged. Measure: X impressions and replies per post, by slot, against the two weeks before (8 to 21 Nov), and X follower growth. The new hook rules start the same week and lift every platform, so compare X's change with Facebook's: if X rises clearly more than Facebook, the hashtags were holding X back. Review Tue 8 Dec 2026 and put the keep or drop question to Brian.
+* **Test C, shorter Story Cards** (approved by Brian 28 Oct 2026). Every Story Card runs under 30 seconds and opens on the most dramatic still in the kit, so it feels more intense. Measure: YouTube views and Instagram and TikTok hold against the earlier Story Cards (No. 011, 015, 025, 030, 041; YouTube 22 to 661 views, Instagram hold 6 to 19 percent, TikTok 11 to 24 percent). No test Story Card has posted yet; the review rolls forward each week until two have.
+* **Test D, no hashtags on X** (approved by Brian 16 Nov 2026). Every X post dated 22 Nov to 5 Dec 2026 carries no hashtag (Cards doc, Hashtags), cards, videos, Campaign Series, and Name This alike. Facebook, Instagram, and Threads are unchanged. Measure: X impressions and replies per post, by slot, against the two weeks before (8 to 21 Nov), and X follower growth. Compare X's change with Facebook's: if X rises clearly more than Facebook, the hashtags were holding X back. Review Tue 8 Dec 2026 and put the keep or drop question to Brian.
 
 ## Closed tests
 * **Test A, human first Spec Sheet hooks** (21 Oct to 3 Nov): Response doubled, Reach not clearly better. Brian chose not to keep it as standing practice (4 Nov).
-* **Test B, action first Living Card openings** (21 Oct to 3 Nov): TikTok hold 43 against 32 percent, Instagram flat. Brian chose not to keep it as standing practice (4 Nov).
+* **Test B, action first Living Card openings** (21 Oct to 3 Nov): TikTok hold 43 against 32 percent, Instagram flat. Brian chose not to keep it as standing practice (4 Nov); the opening pattern above now covers the same ground from the numbers.
 
 ## Proposed tests (waiting for Brian's OK; do not run)
-None this week. The five post days and Test D both start now; a third change would blur them.
+None this week. Test D is running and the card scores need the new Threads profile first.
 
 ## Watch, do not act yet
-* **Threads:** partly recovered (8,446 views in the week from 8 Nov), but unevenly: evening photos, Name This, and noon videos travel, morning cards do not. Brian checked the account status on 10 Nov: nothing flagged.
-* **Five posts a day:** the reach report has one qualifying post per platform so far; first real reading 24 Nov. Brian decides any trim.
-* **YouTube** halved this week (4,161 views against 9,250). Watch whether the five post days, or two Shorts a day, split the audience.
-* **Facebook Reels:** most draw under 10 views; the Moselle drew 841.
-* **X:** cards typically about 24 views; Churchill and de Gaulle drew 275 (card) and 242 (video). Test D's before period is 8 to 21 Nov.
-* **Instagram cards** stay under 12 views; Facebook cards about 1.
-* **Name This:** 9 puzzles, median 1.47; Ark Royal 5.12. Ending on Instagram per Brian (10 Nov).
-* **Followers** (Brian, 4 Nov): X 11, Instagram 12, Threads 37, TikTok 45, YouTube 15, Facebook 3. Next ask Tue 1 Dec. Instagram follows credited to posts: 0.
+* **Card scoring gap:** no card platform clears the floor until the new Threads profile has 5 scored cards and a typical card at 50 views.
+* **Five posts a day:** first reading (review 1 of 3) shows YouTube, TikTok, and Instagram daily views roughly doubled with per post views near flat. Facebook fell on both counts (per post 1 to 0, per day 168 to 40); watch it two more weeks. Brian decides any trim.
+* **X:** per post 24 before, 21 after; per day up about 11 percent once the one 36,939 view video is left out. Test D is running.
+* **Facebook Reels:** most draw under 5 views; one or two a week travel to 250 to 850.
+* **Instagram cards** stay at about 4 to 6 views; Facebook cards about 0.
+* **Name This:** final numbers on the old Threads profile put it at a median of 1.47; on X (the only counting platform now) Sherman Crab 46 and Kongō 29. Name This still went to Instagram on 18 and 21 Nov after Brian's call to end it.
+* **Followers** (Brian, 4 Nov): X 11, Instagram 12, Threads 37 (old profile; the new profile started at 0 on 22 Nov), TikTok 45, YouTube 15, Facebook 3. Next ask Tue 1 Dec. Instagram follows credited to posts: 0.
+
+## Threads lessons from the old profile (before 22 Nov 2026)
+Kept as history; no new Threads finding comes from these numbers.
+* Evening photos, Name This, and noon videos traveled; 8 a.m. image cards sank in the week of 11 to 15 Nov while the noon video on the same story traveled.
+* Noon videos that repeated the morning caption drew under 120 views (Videos doc, never repeat another caption).
 
 ## For Brian to decide
-Filed on the Schedule Board:
-1. Name This on Instagram: you chose to end it on 10 Nov; a Project chat needs to update the Name This doc before Saturday's run.
+Nothing filed this week.
 Decided earlier: keep Facebook for everything; drop Tests A and B as standing practice; end Name This on Instagram.
