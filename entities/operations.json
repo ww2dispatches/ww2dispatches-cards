@@ -3071,6 +3071,13 @@
   "wikidata": "Q329506",
   "source": "https://en.wikipedia.org/wiki/Battle_of_the_Ruhr"
  },
+ "op-battle-of-the-scheldt": {
+  "name": "Battle of the Scheldt",
+  "kind": "campaign to open the port of Antwerp, 1944",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_the_Scheldt"
+ },
  "op-battle-of-the-seelow-heights": {
   "name": "Battle of the Seelow Heights",
   "kind": "battle opening the Soviet Berlin offensive",
@@ -4698,6 +4705,16 @@
   "nation": "Poland",
   "wikidata": "Q5202287",
   "source": "https://en.wikipedia.org/wiki/Częstochowa_Ghetto_uprising"
+ },
+ "op-czestochowa-massacre": {
+  "name": "Czestochowa massacre",
+  "kind": "Wehrmacht massacre of civilians, 4 to 6 September 1939",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Cz%C4%99stochowa_massacre",
+  "aka": [
+   "Bloody Monday"
+  ]
  },
  "op-dachau-trials": {
   "name": "Dachau trials",
@@ -6844,6 +6861,13 @@
    "Operation Longview"
   ]
  },
+ "op-landing-at-lae": {
+  "name": "Landing at Lae",
+  "kind": "amphibious landing, 4 September 1943",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Landing_at_Lae"
+ },
  "op-landing-at-nassau-bay": {
   "name": "Landing at Nassau Bay",
   "kind": "amphibious landing, New Guinea, 1943",
@@ -7499,6 +7523,13 @@
   "aka": [
    "Provincial Autonomy Plan"
   ]
+ },
+ "op-moscow-armistice": {
+  "name": "Moscow Armistice",
+  "kind": "armistice between Finland and the Allies, 19 September 1944",
+  "nation": "Finland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Moscow_Armistice"
  },
  "op-moscow-conference-1942": {
   "name": "Moscow Conference (1942)",

@@ -3423,6 +3423,13 @@
   "wikidata": "Q65572",
   "source": "https://en.wikipedia.org/wiki/Erich_Bey"
  },
+ "person-erich-fellgiebel": {
+  "name": "Erich Fellgiebel",
+  "kind": "German Army signals general, 20 July plotter",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Erich_Fellgiebel"
+ },
  "person-erich-hoepner": {
   "name": "Erich Hoepner",
   "kind": "army general, Fourth Panzer Group commander",
@@ -4930,6 +4937,13 @@
   "wikidata": "Q296898",
   "source": "https://en.wikipedia.org/wiki/George_Washington_Carver"
  },
+ "person-george-wootten": {
+  "name": "George Wootten",
+  "kind": "Australian Army general, 9th Division",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/George_Wootten"
+ },
  "person-georges-berge": {
   "name": "Georges Berge",
   "kind": "Free French paratroop officer, led Operation Savanna",
@@ -5155,6 +5169,17 @@
   "nation": "Palestine",
   "wikidata": "Q42992",
   "source": "https://en.wikipedia.org/wiki/Golda_Meir"
+ },
+ "person-gorazd-pavlik": {
+  "name": "Gorazd Pavlik",
+  "kind": "Orthodox bishop of Prague",
+  "nation": "Czechoslovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Gorazd_Pavl%C3%ADk",
+  "aka": [
+   "Gorazd of Prague",
+   "Matej Pavlik"
+  ]
  },
  "person-gordon-hirabayashi": {
   "name": "Gordon Hirabayashi",
@@ -9140,6 +9165,13 @@
   "wikidata": "Q141829",
   "source": "https://en.wikipedia.org/wiki/Lavrentiy_Beria"
  },
+ "person-lawson-h-m-sanderson": {
+  "name": "Lawson H. M. Sanderson",
+  "kind": "U.S. Marine Corps general",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Lawson_H._M._Sanderson"
+ },
  "person-learned-hand": {
   "name": "Learned Hand",
   "kind": "U.S. federal appeals judge",
@@ -11175,6 +11207,16 @@
   "wikidata": "Q733692",
   "source": "https://en.wikipedia.org/wiki/Pat_Pattle"
  },
+ "person-patriarch-sergius-of-moscow": {
+  "name": "Sergius of Moscow",
+  "kind": "Russian Orthodox metropolitan, later patriarch",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Patriarch_Sergius_of_Moscow",
+  "aka": [
+   "Metropolitan Sergius"
+  ]
+ },
  "person-patrick-dove-sea-captain": {
   "name": "Patrick Dove",
   "kind": "British merchant navy captain, Graf Spee prisoner",
@@ -12882,6 +12924,14 @@
    "Shefqet Vërlaci"
   ]
  },
+ "person-shigematsu-sakaibara": {
+  "name": "Shigematsu Sakaibara",
+  "kind": "Imperial Japanese Navy admiral, Wake commander",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Shigematsu_Sakaibara",
+  "note": "Executed for war crimes; never a subject told from his side"
+ },
  "person-shigenori-togo": {
   "name": "Shigenori Tōgō",
   "kind": "Japanese foreign minister in 1945",
@@ -14230,6 +14280,13 @@
   "wikidata": "Q1362101",
   "source": "https://en.wikipedia.org/wiki/Walter_Krueger"
  },
+ "person-walter-l-j-bayler": {
+  "name": "Walter L. J. Bayler",
+  "kind": "U.S. Marine officer, last man off Wake in 1941",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Walter_L._J._Bayler"
+ },
  "person-walter-model": {
   "name": "Walter Model",
   "kind": "German field marshal, commander of Army Group B",
@@ -14801,6 +14858,13 @@
   "nation": "US",
   "wikidata": "Q541981",
   "source": "https://en.wikipedia.org/wiki/William_J._Donovan"
+ },
+ "person-william-j-murphy-raf-officer": {
+  "name": "William J. Murphy",
+  "kind": "RAF Blenheim pilot, 107 Squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/William_J._Murphy_(RAF_officer)"
  },
  "person-william-j-sebald": {
   "name": "William J. Sebald",

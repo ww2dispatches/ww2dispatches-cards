@@ -5829,6 +5829,13 @@
    "Tamatsu Maru"
   ]
  },
+ "ship-japanese-munition-ship-kashino": {
+  "name": "Kashino",
+  "kind": "Imperial Japanese Navy ammunition and heavy lift ship",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_munition_ship_Kashino"
+ },
  "ship-japanese-seaplane-carrier-mizuho": {
   "name": "Japanese seaplane carrier Mizuho",
   "kind": "seaplane carrier",
@@ -8036,6 +8043,13 @@
   "nation": "US",
   "wikidata": "Q7869829",
   "source": "https://en.wikipedia.org/wiki/USS_Grayling_(SS-209)"
+ },
+ "ship-uss-greer": {
+  "name": "USS Greer (DD-145)",
+  "kind": "U.S. Navy destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Greer"
  },
  "ship-uss-grenadier-ss-210": {
   "name": "USS Grenadier (SS-210)",

@@ -2075,6 +2075,13 @@
    "Ninth Army"
   ]
  },
+ "unit-9th-division-australia": {
+  "name": "9th Division (Australia)",
+  "kind": "Australian Army division",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/9th_Division_(Australia)"
+ },
  "unit-9th-infantry-division-united-states": {
   "name": "9th Infantry Division (United States)",
   "kind": "U.S. Army infantry division",
@@ -5450,6 +5457,13 @@
    "Westminster Regiment (Motor)",
    "Royal Westminster Regiment"
   ]
+ },
+ "unit-russian-orthodox-church": {
+  "name": "Russian Orthodox Church",
+  "kind": "church",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Russian_Orthodox_Church"
  },
  "unit-s-1-executive-committee": {
   "name": "S-1 Executive Committee",
