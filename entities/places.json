@@ -5944,6 +5944,15 @@
   "lat": null,
   "lon": null
  },
+ "place-kirkenes": {
+  "name": "Kirkenes",
+  "kind": "town in Finnmark, northern Norway",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kirkenes",
+  "lat": null,
+  "lon": null
+ },
  "place-kisarazu-air-field": {
   "name": "Kisarazu Air Field",
   "kind": "Imperial Japanese Navy airfield on Tokyo Bay",
@@ -10228,6 +10237,15 @@
   "wikidata": "Q1773",
   "source": "https://en.wikipedia.org/wiki/Riga"
  },
+ "place-riga-ghetto": {
+  "name": "Riga Ghetto",
+  "kind": "Nazi ghetto in the Moscow suburb of Riga",
+  "nation": "Latvia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Riga_Ghetto",
+  "lat": null,
+  "lon": null
+ },
  "place-rijsoord": {
   "name": "Rijsoord",
   "kind": "village, site of the Dutch capitulation",
@@ -13744,6 +13762,18 @@
   "nation": "Germany",
   "wikidata": "Q196970",
   "source": "https://en.wikipedia.org/wiki/Zeughaus"
+ },
+ "place-zhongshan-hall": {
+  "name": "Zhongshan Hall",
+  "kind": "Taipei City Public Auditorium, site of the 1945 surrender",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Zhongshan_Hall",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Taipei City Public Auditorium"
+  ]
  },
  "place-zhytomyr": {
   "name": "Zhitomir",

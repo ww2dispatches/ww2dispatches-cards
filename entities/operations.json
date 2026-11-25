@@ -3803,6 +3803,13 @@
   "wikidata": "Q533034",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Westerplatte"
  },
+ "op-battle-of-wuhan": {
+  "name": "Battle of Wuhan",
+  "kind": "Second Sino Japanese War campaign, June to October 1938",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Wuhan"
+ },
  "op-battle-of-wytyczno": {
   "name": "Battle of Wytyczno",
   "kind": "Polish and Soviet battle, 1 October 1939",
@@ -7425,6 +7432,17 @@
   "source": "https://en.wikipedia.org/wiki/Italian_spring_offensive",
   "aka": [
    "Operation Primavera"
+  ]
+ },
+ "op-italo-german-protocol-of-23-october-1936": {
+  "name": "Italo-German protocol of 23 October 1936",
+  "kind": "Italian German diplomatic protocol, origin of the Rome Berlin Axis",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italo-German_protocol_of_23_October_1936",
+  "aka": [
+   "October Protocols",
+   "Rome Berlin Axis protocol"
   ]
  },
  "op-jablonkow-incident": {
@@ -11456,6 +11474,13 @@
   "aka": [
    "Great Retreat"
   ]
+ },
+ "op-retrocession-of-taiwan": {
+  "name": "Retrocession of Taiwan",
+  "kind": "1945 transfer of Taiwan from Japanese to Republic of China administration",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Retrocession_of_Taiwan"
  },
  "op-revenue-act-of-1942": {
   "name": "Revenue Act of 1942",

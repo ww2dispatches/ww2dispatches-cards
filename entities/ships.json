@@ -800,6 +800,13 @@
   "wikidata": "Q475884",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-159_(1941)"
  },
+ "ship-german-submarine-u-16-1936": {
+  "name": "U-16 (1936)",
+  "kind": "Type IIB U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-16_(1936)"
+ },
  "ship-german-submarine-u-160-1941": {
   "name": "German submarine U-160",
   "kind": "Type IXC U-boat",
@@ -6088,6 +6095,13 @@
   "wikidata": "Q1291512",
   "source": "https://en.wikipedia.org/wiki/Japanese_battleship_Nagato"
  },
+ "ship-japanese-battleship-yamashiro": {
+  "name": "Yamashiro",
+  "kind": "Fuso class battleship",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_battleship_Yamashiro"
+ },
  "ship-japanese-battleship-yamato": {
   "name": "Yamato",
   "kind": "battleship",
@@ -10602,6 +10616,13 @@
   "wikidata": "Q7874606",
   "source": "https://en.wikipedia.org/wiki/USS_Tanager_(AM-5)"
  },
+ "ship-uss-tang-ss-306": {
+  "name": "USS Tang (SS-306)",
+  "kind": "Balao class submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Tang_(SS-306)"
+ },
  "ship-uss-tarpon-ss-175": {
   "name": "USS Tarpon (SS-175)",
   "kind": "U.S. Navy submarine",
@@ -10802,6 +10823,13 @@
   "nation": "US",
   "wikidata": "Q677346",
   "source": "https://en.wikipedia.org/wiki/USS_Wasp_(CV-7)"
+ },
+ "ship-uss-west-virginia-bb-48": {
+  "name": "USS West Virginia (BB-48)",
+  "kind": "Colorado class battleship, sunk at Pearl Harbor and rebuilt",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_West_Virginia_(BB-48)"
  },
  "ship-uss-western-chief": {
   "name": "USS Western Chief (ID-3161)",
