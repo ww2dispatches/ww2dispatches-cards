@@ -1041,6 +1041,16 @@
    "2nd Canadian Infantry Division"
   ]
  },
+ "unit-2nd-division-imperial-japanese-army": {
+  "name": "2nd Division (Imperial Japanese Army)",
+  "kind": "Imperial Japanese Army infantry division",
+  "nation": "Japan",
+  "wikidata": "Q209762",
+  "source": "https://en.wikipedia.org/wiki/2nd_Division_(Imperial_Japanese_Army)",
+  "aka": [
+   "Sendai Division"
+  ]
+ },
  "unit-2nd-dragoon-guards-queen-s-bays": {
   "name": "Queen's Bays",
   "kind": "British cavalry regiment",

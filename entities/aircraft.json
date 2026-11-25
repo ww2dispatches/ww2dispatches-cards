@@ -425,6 +425,17 @@
    "Do 217"
   ]
  },
+ "aircraft-dornier-do-335": {
+  "name": "Dornier Do 335",
+  "kind": "German push pull heavy fighter",
+  "nation": "Germany",
+  "wikidata": "Q167286",
+  "source": "https://en.wikipedia.org/wiki/Dornier_Do_335",
+  "aka": [
+   "Do 335 Pfeil",
+   "Arrow"
+  ]
+ },
  "aircraft-douglas-a-1-skyraider": {
   "name": "Douglas A-1 Skyraider",
   "kind": "carrier attack bomber",

@@ -6211,6 +6211,20 @@
   "lat": 44.0101,
   "lon": 20.9172
  },
+ "place-krakow": {
+  "name": "Kraków",
+  "kind": "city, capital of the General Government",
+  "nation": "Poland",
+  "wikidata": "Q31487",
+  "source": "https://en.wikipedia.org/wiki/Krak%C3%B3w",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Krakow",
+   "Krakau",
+   "Cracow"
+  ]
+ },
  "place-krakow-ghetto": {
   "name": "Krakow Ghetto",
   "kind": "Nazi ghetto in occupied Krakow",
