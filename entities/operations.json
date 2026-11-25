@@ -1474,6 +1474,13 @@
   "source": "https://en.wikipedia.org/wiki/Battle_of_Aachen",
   "wikidata": "Q327052"
  },
+ "op-battle-of-alam-el-halfa": {
+  "name": "Battle of Alam el Halfa",
+  "kind": "battle, 30 August to 5 September 1942",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Alam_el_Halfa"
+ },
  "op-battle-of-amba-alagi-1941": {
   "name": "Battle of Amba Alagi (1941)",
   "kind": "battle, East African campaign",
@@ -6379,6 +6386,13 @@
   "wikidata": "Q15243087",
   "source": "https://en.wikipedia.org/wiki/Japanese_occupation_of_British_Borneo"
  },
+ "op-japanese-occupation-of-hong-kong": {
+  "name": "Japanese occupation of Hong Kong",
+  "kind": "occupation, 1941 to 1945",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_occupation_of_Hong_Kong"
+ },
  "op-japanese-occupation-of-kiska": {
   "name": "Japanese occupation of Kiska",
   "kind": "occupation, Aleutian Islands campaign",
@@ -6730,6 +6744,13 @@
   "aka": [
    "Kyūjō incident"
   ]
+ },
+ "op-lackawanna-limited-wreck": {
+  "name": "Lackawanna Limited wreck",
+  "kind": "railroad disaster, 1943",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Lackawanna_Limited_wreck"
  },
  "op-laconia-incident": {
   "name": "Laconia incident",
@@ -9860,6 +9881,13 @@
   "nation": "China",
   "wikidata": "Q170314",
   "source": "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War"
+ },
+ "op-second-vienna-award": {
+  "name": "Second Vienna Award",
+  "kind": "German and Italian arbitration, 1940",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Second_Vienna_Award"
  },
  "op-second-washington-conference": {
   "name": "Second Washington Conference",

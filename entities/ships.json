@@ -2095,6 +2095,13 @@
   "wikidata": "Q634332",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-63_(1939)"
  },
+ "ship-german-submarine-u-634": {
+  "name": "U 634",
+  "kind": "Type VIIC U boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-634"
+ },
  "ship-german-submarine-u-638": {
   "name": "German submarine U-638",
   "kind": "Kriegsmarine Type VIIC U-boat",
@@ -4286,6 +4293,13 @@
   "nation": "Britain",
   "wikidata": "Q12790695",
   "source": "https://en.wikipedia.org/wiki/HMS_Sunflower_(K41)"
+ },
+ "ship-hms-swiftsure-08": {
+  "name": "HMS Swiftsure (08)",
+  "kind": "light cruiser",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Swiftsure_(08)"
  },
  "ship-hms-tactician-p314": {
   "name": "HMS Tactician (P314)",

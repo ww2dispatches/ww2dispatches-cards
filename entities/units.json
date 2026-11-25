@@ -2859,6 +2859,13 @@
    "Decima MAS"
   ]
  },
+ "unit-delaware-lackawanna-and-western-railroad": {
+  "name": "Delaware, Lackawanna and Western Railroad",
+  "kind": "railroad company",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Delaware,_Lackawanna_and_Western_Railroad"
+ },
  "unit-desert-air-force": {
   "name": "Desert Air Force",
   "kind": "Allied tactical air force",
@@ -3012,6 +3019,13 @@
    "Task Force 38",
    "Fast Carrier Task Force"
   ]
+ },
+ "unit-federal-assembly-switzerland": {
+  "name": "Federal Assembly (Switzerland)",
+  "kind": "Swiss parliament",
+  "nation": "Switzerland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Federal_Assembly_(Switzerland)"
  },
  "unit-federal-bureau-of-investigation": {
   "name": "Federal Bureau of Investigation",
@@ -5740,6 +5754,13 @@
    "Swing Youth",
    "Swing Kids"
   ]
+ },
+ "unit-swiss-armed-forces": {
+  "name": "Swiss Armed Forces",
+  "kind": "national army",
+  "nation": "Switzerland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Swiss_Armed_Forces"
  },
  "unit-tactical-air-command": {
   "name": "Tactical Air Command",

@@ -74,6 +74,18 @@
    "Acropolis"
   ]
  },
+ "place-adak-island": {
+  "name": "Adak Island",
+  "kind": "island, Aleutians",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Adak_Island",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Adak"
+  ]
+ },
  "place-addis-ababa": {
   "name": "Addis Ababa",
   "kind": "city",
@@ -7592,6 +7604,15 @@
   "lat": 54.6075,
   "lon": -6.6925
  },
+ "place-northern-transylvania": {
+  "name": "Northern Transylvania",
+  "kind": "region",
+  "nation": "Romania",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Northern_Transylvania",
+  "lat": null,
+  "lon": null
+ },
  "place-norway": {
   "name": "Norway",
   "kind": "country",
@@ -8782,6 +8803,15 @@
   "source": "https://en.wikipedia.org/wiki/RAF_Kenley",
   "lat": 51.3035,
   "lon": -0.0947
+ },
+ "place-raf-northolt": {
+  "name": "RAF Northolt",
+  "kind": "RAF fighter station",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/RAF_Northolt",
+  "lat": null,
+  "lon": null
  },
  "place-raf-tangmere": {
   "name": "RAF Tangmere",
@@ -11190,6 +11220,18 @@
    "Vanport"
   ]
  },
+ "place-vauxhall-luton": {
+  "name": "Vauxhall Luton",
+  "kind": "motor vehicle factory",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Vauxhall_Luton",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Vauxhall Motor Works, Luton"
+  ]
+ },
  "place-velikiye-luki": {
   "name": "Velikiye Luki",
   "kind": "city",
@@ -11548,6 +11590,15 @@
   "source": "https://en.wikipedia.org/wiki/Wawer",
   "lat": 52.2139,
   "lon": 21.1581
+ },
+ "place-wayland-new-york": {
+  "name": "Wayland, New York",
+  "kind": "town",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Wayland,_New_York",
+  "lat": null,
+  "lon": null
  },
  "place-weixian-internment-camp": {
   "name": "Weixian Internment Camp",

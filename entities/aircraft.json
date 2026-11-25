@@ -108,6 +108,17 @@
   "wikidata": "Q312540",
   "source": "https://en.wikipedia.org/wiki/Bell_47"
  },
+ "aircraft-bell-p-39-airacobra": {
+  "name": "Bell P 39 Airacobra",
+  "kind": "fighter aircraft",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bell_P-39_Airacobra",
+  "aka": [
+   "P 39",
+   "Airacobra"
+  ]
+ },
  "aircraft-bell-p-59-airacomet": {
   "name": "Bell P-59 Airacomet",
   "kind": "US jet fighter",
