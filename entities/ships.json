@@ -557,6 +557,13 @@
    "U-106"
   ]
  },
+ "ship-german-submarine-u-1060": {
+  "name": "U-1060",
+  "kind": "Type VIIF torpedo transport U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-1060"
+ },
  "ship-german-submarine-u-107-1940": {
   "name": "German submarine U-107 (1940)",
   "kind": "Type IXB U-boat",
@@ -2455,6 +2462,13 @@
   "wikidata": "Q5551786",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-625"
  },
+ "ship-german-submarine-u-627": {
+  "name": "U-627",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-627"
+ },
  "ship-german-submarine-u-628": {
   "name": "U-628",
   "kind": "U-boat",
@@ -4340,6 +4354,13 @@
   "wikidata": "Q1472830",
   "source": "https://en.wikipedia.org/wiki/HMS_Imogen_(D44)"
  },
+ "ship-hms-implacable-r86": {
+  "name": "HMS Implacable (R86)",
+  "kind": "aircraft carrier",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Implacable_(R86)"
+ },
  "ship-hms-indefatigable-r10": {
   "name": "HMS Indefatigable (R10)",
   "kind": "aircraft carrier",
@@ -5085,6 +5106,13 @@
   "nation": "Britain",
   "wikidata": "Q1565512",
   "source": "https://en.wikipedia.org/wiki/HMS_Tempest_(N86)"
+ },
+ "ship-hms-tetrarch-n77": {
+  "name": "HMS Tetrarch (N77)",
+  "kind": "T class submarine",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Tetrarch_(N77)"
  },
  "ship-hms-thane": {
   "name": "HMS Thane (D83)",
@@ -6299,6 +6327,13 @@
   "wikidata": "Q6130892",
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Akebono_(1930)"
  },
+ "ship-japanese-destroyer-akigumo-1941": {
+  "name": "Akigumo (1941)",
+  "kind": "destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Akigumo_(1941)"
+ },
  "ship-japanese-destroyer-akishimo": {
   "name": "Akishimo",
   "kind": "destroyer",
@@ -6354,6 +6389,13 @@
   "nation": "Japan",
   "wikidata": "Q2596664",
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Asashio_(1936)"
+ },
+ "ship-japanese-destroyer-fujinami": {
+  "name": "Fujinami",
+  "kind": "Yugumo class destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Fujinami"
  },
  "ship-japanese-destroyer-hamakaze-1940": {
   "name": "Hamakaze",
@@ -6648,6 +6690,13 @@
   "aka": [
    "Shirakumo"
   ]
+ },
+ "ship-japanese-destroyer-shiranui-1938": {
+  "name": "Shiranui (1938)",
+  "kind": "Kagero class destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Shiranui_(1938)"
  },
  "ship-japanese-destroyer-suzukaze": {
   "name": "Japanese destroyer Suzukaze",

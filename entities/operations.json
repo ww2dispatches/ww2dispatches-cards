@@ -106,6 +106,16 @@
   "wikidata": "Q334786",
   "source": "https://en.wikipedia.org/wiki/1938_Austrian_Anschluss_referendum"
  },
+ "op-1938-expulsion-of-polish-jews-from-germany": {
+  "name": "1938 expulsion of Polish Jews from Germany",
+  "kind": "mass deportation",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1938_expulsion_of_Polish_Jews_from_Germany",
+  "aka": [
+   "Polenaktion"
+  ]
+ },
  "op-1939-conclave": {
   "name": "1939 conclave",
   "kind": "papal election",
@@ -641,6 +651,13 @@
   "aka": [
    "Victorious February"
   ]
+ },
+ "op-1948-donora-smog": {
+  "name": "1948 Donora smog",
+  "kind": "air pollution disaster",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1948_Donora_smog"
  },
  "op-1948-gatow-air-disaster": {
   "name": "1948 Gatow air disaster",
@@ -2286,6 +2303,17 @@
    "Recapture of Guam"
   ]
  },
+ "op-battle-of-guningtou": {
+  "name": "Battle of Guningtou",
+  "kind": "amphibious battle, Chinese Civil War",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Guningtou",
+  "aka": [
+   "Battle of Kuningtou",
+   "Battle of Kinmen"
+  ]
+ },
  "op-battle-of-hannut": {
   "name": "Battle of Hannut",
   "kind": "tank battle, Battle of Belgium",
@@ -3586,6 +3614,16 @@
   "nation": "US",
   "wikidata": "Q1414998",
   "source": "https://en.wikipedia.org/wiki/Battle_of_the_Tenaru"
+ },
+ "op-battle-of-the-treasury-islands": {
+  "name": "Battle of the Treasury Islands",
+  "kind": "amphibious landing",
+  "nation": "New Zealand",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_the_Treasury_Islands",
+  "aka": [
+   "Operation Goodtime"
+  ]
  },
  "op-battle-of-timor": {
   "name": "Battle of Timor",
@@ -7139,6 +7177,16 @@
   "nation": "Britain",
   "wikidata": "Q16846678",
   "source": "https://en.wikipedia.org/wiki/Imber_friendly_fire_incident"
+ },
+ "op-india-pakistan-war-of-1947-1948": {
+  "name": "India and Pakistan war of 1947 and 1948",
+  "kind": "war over Kashmir",
+  "nation": "India",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/India%E2%80%93Pakistan_war_of_1947%E2%80%931948",
+  "aka": [
+   "First Kashmir War"
+  ]
  },
  "op-indian-independence-act-1947": {
   "name": "Indian Independence Act 1947",

@@ -710,6 +710,18 @@
    "Bank and Monument stations"
   ]
  },
+ "place-banska-bystrica": {
+  "name": "Banska Bystrica",
+  "kind": "city, center of the 1944 uprising",
+  "nation": "Slovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bansk%C3%A1_Bystrica",
+  "aka": [
+   "Banská Bystrica"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-banzai-cliff": {
   "name": "Banzai Cliff",
   "kind": "cliff at the northern tip of Saipan",
@@ -1422,6 +1434,15 @@
   "source": "https://en.wikipedia.org/wiki/Bratislava",
   "lat": 48.1517,
   "lon": 17.1093
+ },
+ "place-brazzaville": {
+  "name": "Brazzaville",
+  "kind": "capital of French Equatorial Africa",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Brazzaville",
+  "lat": null,
+  "lon": null
  },
  "place-breda": {
   "name": "Breda",
@@ -3027,6 +3048,15 @@
   "source": "https://en.wikipedia.org/wiki/Dongo,_Lombardy",
   "lat": 46.13,
   "lon": 9.2817
+ },
+ "place-donora-pennsylvania": {
+  "name": "Donora, Pennsylvania",
+  "kind": "mill town on the Monongahela River",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Donora,_Pennsylvania",
+  "lat": null,
+  "lon": null
  },
  "place-dortmund": {
   "name": "Dortmund",
@@ -5902,6 +5932,18 @@
   "lat": 53.7444,
   "lon": -0.3325
  },
+ "place-kinmen": {
+  "name": "Kinmen",
+  "kind": "island off the Fujian coast",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kinmen",
+  "aka": [
+   "Quemoy"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-kisarazu-air-field": {
   "name": "Kisarazu Air Field",
   "kind": "Imperial Japanese Navy airfield on Tokyo Bay",
@@ -7897,6 +7939,15 @@
   "source": "https://en.wikipedia.org/wiki/Mong-Yu",
   "lat": 23.9731,
   "lon": 97.9833
+ },
+ "place-mono-island": {
+  "name": "Mono Island",
+  "kind": "island in the Treasury group",
+  "nation": "Solomon Islands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mono_Island",
+  "lat": null,
+  "lon": null
  },
  "place-monowitz-concentration-camp": {
   "name": "Monowitz concentration camp",
@@ -11443,6 +11494,15 @@
   "wikidata": "Q1783560",
   "source": "https://en.wikipedia.org/wiki/Spithead"
  },
+ "place-srinagar": {
+  "name": "Srinagar",
+  "kind": "city and airfield in Kashmir",
+  "nation": "India",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Srinagar",
+  "lat": null,
+  "lon": null
+ },
  "place-st-james-s-palace": {
   "name": "St James's Palace",
   "kind": "royal palace",
@@ -12491,6 +12551,15 @@
   "aka": [
    "Park Hospital, Davyhulme"
   ]
+ },
+ "place-treasury-islands": {
+  "name": "Treasury Islands",
+  "kind": "island group in the Solomons",
+  "nation": "Solomon Islands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Treasury_Islands",
+  "lat": null,
+  "lon": null
  },
  "place-treblinka-extermination-camp": {
   "name": "Treblinka extermination camp",
@@ -13654,6 +13723,18 @@
   "source": "https://en.wikipedia.org/wiki/Zamboanga_City",
   "lat": 6.9042,
   "lon": 122.0761
+ },
+ "place-zbaszyn": {
+  "name": "Zbaszyn",
+  "kind": "border town, refugee camp site in 1938",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Zb%C4%85szy%C5%84",
+  "aka": [
+   "Zbąszyń"
+  ],
+  "lat": null,
+  "lon": null
  },
  "place-zeughaus": {
   "lat": 52.5178,

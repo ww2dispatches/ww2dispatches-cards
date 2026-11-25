@@ -2222,6 +2222,13 @@
   "wikidata": "Q2818557",
   "source": "https://en.wikipedia.org/wiki/89th_Infantry_Division_(United_States)"
  },
+ "unit-8th-brigade-new-zealand": {
+  "name": "8th Brigade (New Zealand)",
+  "kind": "infantry brigade",
+  "nation": "New Zealand",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/8th_Brigade_(New_Zealand)"
+ },
  "unit-8th-fleet-imperial-japanese-navy": {
   "name": "8th Fleet (Imperial Japanese Navy)",
   "kind": "Imperial Japanese Navy fleet",
@@ -3336,6 +3343,17 @@
    "Greek People's Liberation Army"
   ]
  },
+ "unit-empire-defense-council": {
+  "name": "Empire Defense Council",
+  "kind": "Free French governing council",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Empire_Defense_Council",
+  "aka": [
+   "Conseil de defense de l'Empire",
+   "Brazzaville Manifesto"
+  ]
+ },
  "unit-esquire-magazine": {
   "name": "Esquire",
   "kind": "American magazine, sponsor of the All American jazz poll",
@@ -3703,6 +3721,17 @@
   "nation": "Britain",
   "wikidata": "Q2975812",
   "source": "https://en.wikipedia.org/wiki/Gideon_Force"
+ },
+ "unit-gioventu-italiana-del-littorio": {
+  "name": "Gioventu Italiana del Littorio",
+  "kind": "Fascist Party youth organization",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Giovent%C3%B9_Italiana_del_Littorio",
+  "aka": [
+   "GIL",
+   "Gioventù Italiana del Littorio"
+  ]
  },
  "unit-giretsu-kuteitai": {
   "name": "Giretsu Kuteitai",
