@@ -2837,6 +2837,16 @@
   "wikidata": "Q152222",
   "source": "https://en.wikipedia.org/wiki/Berlin_Philharmonic"
  },
+ "unit-birmingham-small-arms-company": {
+  "name": "Birmingham Small Arms Company",
+  "kind": "arms and vehicle manufacturer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Birmingham_Small_Arms_Company",
+  "aka": [
+   "BSA"
+  ]
+ },
  "unit-black-sea-fleet": {
   "name": "Black Sea Fleet",
   "kind": "Soviet fleet",
@@ -6801,6 +6811,16 @@
   "source": "https://en.wikipedia.org/wiki/Ukrainian_Insurgent_Army",
   "aka": [
    "UPA"
+  ]
+ },
+ "unit-unesco": {
+  "name": "UNESCO",
+  "kind": "United Nations agency",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/UNESCO",
+  "aka": [
+   "United Nations Educational, Scientific and Cultural Organization"
   ]
  },
  "unit-unicef": {

@@ -948,6 +948,13 @@
   "wikidata": "Q2656230",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-179"
  },
+ "ship-german-submarine-u-18-1935": {
+  "name": "German submarine U-18 (1935)",
+  "kind": "Type IIB U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-18_(1935)"
+ },
  "ship-german-submarine-u-180": {
   "name": "German submarine U-180",
   "kind": "Type IXD1 transport U-boat",
@@ -1080,6 +1087,13 @@
   "nation": "Germany",
   "wikidata": "Q2332328",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-210"
+ },
+ "ship-german-submarine-u-211": {
+  "name": "U-211",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-211"
  },
  "ship-german-submarine-u-212": {
   "name": "U-212",
@@ -1812,6 +1826,13 @@
   "wikidata": "Q481298",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-432"
  },
+ "ship-german-submarine-u-433": {
+  "name": "German submarine U-433",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-433"
+ },
  "ship-german-submarine-u-435": {
   "name": "U-435",
   "kind": "German Type VIIC submarine",
@@ -2188,6 +2209,13 @@
   "nation": "Germany",
   "wikidata": "Q481308",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-533"
+ },
+ "ship-german-submarine-u-536": {
+  "name": "German submarine U-536",
+  "kind": "Type IXC/40 U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-536"
  },
  "ship-german-submarine-u-537": {
   "name": "U-537",
@@ -3288,6 +3316,17 @@
   "nation": "Germany",
   "wikidata": "Q469993",
   "source": "https://en.wikipedia.org/wiki/German_training_ship_Bremse"
+ },
+ "ship-german-trawler-v-209-gauleiter-telschow": {
+  "name": "German trawler V 209 Gauleiter Telschow",
+  "kind": "armed trawler, patrol boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_trawler_V_209_Gauleiter_Telschow",
+  "aka": [
+   "V-209",
+   "Vp 209"
+  ]
  },
  "ship-german-weather-ship-lauenburg": {
   "name": "Lauenburg",
@@ -5193,6 +5232,13 @@
   "nation": "Britain",
   "wikidata": "Q5634483",
   "source": "https://en.wikipedia.org/wiki/HMS_Stork_(L81)"
+ },
+ "ship-hms-sturgeon-73s": {
+  "name": "HMS Sturgeon (73S)",
+  "kind": "S class submarine",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Sturgeon_(73S)"
  },
  "ship-hms-suffolk-55": {
   "name": "HMS Suffolk (55)",
@@ -7333,6 +7379,13 @@
   "nation": "Japan",
   "wikidata": "Q10884904",
   "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-45"
+ },
+ "ship-japanese-submarine-i-47": {
+  "name": "Japanese submarine I-47",
+  "kind": "submarine, kaiten carrier",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-47"
  },
  "ship-japanese-submarine-i-52-1942": {
   "name": "I-52",
@@ -9489,6 +9542,13 @@
    "CVE-13"
   ]
  },
+ "ship-uss-corvina": {
+  "name": "USS Corvina (SS-226)",
+  "kind": "Gato class submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Corvina"
+ },
  "ship-uss-croaker": {
   "name": "USS Croaker (SS-246)",
   "kind": "Gato class submarine",
@@ -10359,6 +10419,13 @@
   "aka": [
    "Murmansk"
   ]
+ },
+ "ship-uss-mississinewa-ao-59": {
+  "name": "USS Mississinewa (AO-59)",
+  "kind": "fleet oiler",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Mississinewa_(AO-59)"
  },
  "ship-uss-missouri-bb-63": {
   "name": "USS Missouri (BB-63)",

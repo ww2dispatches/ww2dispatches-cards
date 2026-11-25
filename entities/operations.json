@@ -880,6 +880,16 @@
   "wikidata": "Q4673632",
   "source": "https://en.wikipedia.org/wiki/Acheson%E2%80%93Lilienthal_Report"
  },
+ "op-action-at-bir-el-gubi-november-1941": {
+  "name": "Action at Bir el Gubi (November 1941)",
+  "kind": "tank battle in Operation Crusader",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Action_at_Bir_el_Gubi_(November_1941)",
+  "aka": [
+   "First Battle of Bir el Gubi"
+  ]
+ },
  "op-action-of-1-november-1944": {
   "name": "Action of 1 November 1944",
   "kind": "naval action",
@@ -2837,6 +2847,13 @@
    "Battle of the Flores Sea"
   ]
  },
+ "op-battle-of-makin": {
+  "name": "Battle of Makin",
+  "kind": "battle",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Makin"
+ },
  "op-battle-of-maleme": {
   "name": "Battle of Maleme",
   "kind": "battle for Maleme airfield, Crete",
@@ -3587,6 +3604,13 @@
   "nation": "US",
   "wikidata": "Q696479",
   "source": "https://en.wikipedia.org/wiki/Battle_of_the_Eastern_Solomons"
+ },
+ "op-battle-of-the-ebro": {
+  "name": "Battle of the Ebro",
+  "kind": "battle, Spanish Civil War",
+  "nation": "Spain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_the_Ebro"
  },
  "op-battle-of-the-green-islands": {
   "name": "Battle of the Green Islands",
@@ -7418,6 +7442,13 @@
   "wikidata": "Q12060593",
   "source": "https://en.wikipedia.org/wiki/Hull_Blitz"
  },
+ "op-hull-note": {
+  "name": "Hull note",
+  "kind": "diplomatic note",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hull_note"
+ },
  "op-humanity-declaration": {
   "name": "Humanity Declaration",
   "kind": "imperial rescript renouncing divinity",
@@ -8856,6 +8887,13 @@
    "Operation Sultan"
   ]
  },
+ "op-marshall-mission": {
+  "name": "Marshall Mission",
+  "kind": "US mediation in the Chinese civil war, 1945 to 1947",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Marshall_Mission"
+ },
  "op-marshall-plan": {
   "name": "Marshall Plan",
   "kind": "European Recovery Program",
@@ -10229,6 +10267,13 @@
    "Frantic Joe"
   ]
  },
+ "op-operation-freshman": {
+  "name": "Operation Freshman",
+  "kind": "British glider raid on Vemork, 1942",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Freshman"
+ },
  "op-operation-fs": {
   "name": "Operation FS",
   "kind": "planned Japanese invasion of New Caledonia, Fiji and Samoa",
@@ -10424,6 +10469,13 @@
   "nation": "Japan",
   "wikidata": "Q2314453",
   "source": "https://en.wikipedia.org/wiki/Operation_Ke"
+ },
+ "op-operation-kiebitz": {
+  "name": "Operation Kiebitz",
+  "kind": "planned prisoner escape",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Kiebitz"
  },
  "op-operation-kikusui": {
   "name": "Operation Kikusui",
@@ -10891,6 +10943,17 @@
   "source": "https://en.wikipedia.org/wiki/Operation_Steinbock",
   "aka": [
    "Baby Blitz"
+  ]
+ },
+ "op-operation-stoneage": {
+  "name": "Operation Stoneage",
+  "kind": "Malta convoy",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Stoneage",
+  "aka": [
+   "Operation Stone Age",
+   "Convoy MW 13"
   ]
  },
  "op-operation-strike": {
@@ -12513,6 +12576,16 @@
    "Sikorski-Maisky agreement"
   ]
  },
+ "op-sinking-of-hmas-sydney": {
+  "name": "Sinking of HMAS Sydney",
+  "kind": "Sydney and Kormoran action, 19 November 1941",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sinking_of_HMAS_Sydney",
+  "aka": [
+   "Sydney Kormoran action"
+  ]
+ },
  "op-sinking-of-prince-of-wales-and-repulse": {
   "name": "Sinking of Prince of Wales and Repulse",
   "kind": "naval air battle off Malaya",
@@ -12660,6 +12733,17 @@
   "nation": "United States",
   "source": "https://en.wikipedia.org/wiki/Sole_Survivor_Policy",
   "wikidata": "Q1463062"
+ },
+ "op-sonderaktion-1005": {
+  "name": "Sonderaktion 1005",
+  "kind": "Nazi program to exhume and burn the bodies of murdered victims",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sonderaktion_1005",
+  "aka": [
+   "Aktion 1005",
+   "Sonderkommando 1005"
+  ]
  },
  "op-sonderaktion-krakau": {
   "name": "Sonderaktion Krakau",
@@ -13859,6 +13943,16 @@
   "nation": "Germany",
   "wikidata": "Q152120",
   "source": "https://en.wikipedia.org/wiki/Wannsee_Conference"
+ },
+ "op-war-bond": {
+  "name": "War bond",
+  "kind": "government bond drives to fund the war",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/War_bond",
+  "aka": [
+   "War Loan Drive"
+  ]
  },
  "op-war-brides-act": {
   "name": "War Brides Act",

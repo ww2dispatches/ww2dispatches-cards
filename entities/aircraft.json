@@ -1,4 +1,11 @@
 {
+ "aircraft-airspeed-horsa": {
+  "name": "Airspeed Horsa",
+  "kind": "British troop carrying glider",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Airspeed_Horsa"
+ },
  "aircraft-airspeed-oxford": {
   "name": "Airspeed Oxford",
   "kind": "twin engine trainer",

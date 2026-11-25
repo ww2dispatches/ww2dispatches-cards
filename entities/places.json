@@ -3223,6 +3223,18 @@
   "lat": 51.9592,
   "lon": 5.8131
  },
+ "place-drohobych": {
+  "name": "Drohobych",
+  "kind": "city in Galicia, site of the Drohobycz ghetto",
+  "nation": "Ukraine",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Drohobych",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Drohobycz"
+  ]
+ },
  "place-drvar": {
   "name": "Drvar",
   "kind": "town in Bosnia, Partisan headquarters in 1944",
@@ -5544,6 +5556,15 @@
   "source": "https://en.wikipedia.org/wiki/Jamestown,_Saint_Helena",
   "lat": -15.9251,
   "lon": -5.7179
+ },
+ "place-janowska-concentration-camp": {
+  "name": "Janowska concentration camp",
+  "kind": "Nazi camp outside Lwow",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Janowska_concentration_camp",
+  "lat": null,
+  "lon": null
  },
  "place-jarrow": {
   "name": "Jarrow",
@@ -13055,6 +13076,15 @@
   "source": "https://en.wikipedia.org/wiki/Tykocin",
   "lat": 53.2,
   "lon": 22.7833
+ },
+ "place-tyneham": {
+  "name": "Tyneham",
+  "kind": "village, evacuated 1943",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tyneham",
+  "lat": null,
+  "lon": null
  },
  "place-tyuleny-island-sea-of-okhotsk": {
   "name": "Tyuleny Island (Sea of Okhotsk)",
