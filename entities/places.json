@@ -1156,6 +1156,15 @@
   "lat": 52.4141,
   "lon": 12.5541
  },
+ "place-brandenburg-gorden-prison": {
+  "name": "Brandenburg-Görden Prison",
+  "kind": "Prison and execution site",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Brandenburg-G%C3%B6rden_Prison",
+  "lat": null,
+  "lon": null
+ },
  "place-brega": {
   "name": "Brega",
   "kind": "Libyan coastal town, Mersa Brega",
@@ -2644,6 +2653,15 @@
   "wikidata": "Q647280",
   "lat": -6.3333,
   "lon": 155.1833
+ },
+ "place-erdington": {
+  "name": "Erdington",
+  "kind": "Suburb of Birmingham",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Erdington",
+  "lat": null,
+  "lon": null
  },
  "place-eschweiler": {
   "name": "Eschweiler",
@@ -5962,6 +5980,18 @@
   "lat": 38.9044,
   "lon": -77.0399
  },
+ "place-maykop": {
+  "name": "Maykop",
+  "kind": "City and oil centre in the North Caucasus",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Maykop",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Maikop"
+  ]
+ },
  "place-mcminnville-oregon": {
   "name": "McMinnville, Oregon",
   "kind": "city",
@@ -6599,6 +6629,15 @@
   ],
   "lat": 12.11,
   "lon": 15.05
+ },
+ "place-nagasaki": {
+  "name": "Nagasaki",
+  "kind": "Japanese port city",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Nagasaki",
+  "lat": null,
+  "lon": null
  },
  "place-nago-torbole": {
   "name": "Nago Torbole",

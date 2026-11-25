@@ -2053,6 +2053,13 @@
   "wikidata": "Q5175197",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-663"
  },
+ "ship-german-submarine-u-664": {
+  "name": "U-664",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-664"
+ },
  "ship-german-submarine-u-67-1940": {
   "name": "German submarine U-67 (1940)",
   "kind": "Type IXC U-boat",
@@ -6943,6 +6950,13 @@
   "wikidata": "Q6143509",
   "source": "https://en.wikipedia.org/wiki/USS_Bonefish_(SS-223)"
  },
+ "ship-uss-borie-dd-215": {
+  "name": "USS Borie (DD-215)",
+  "kind": "U.S. Navy destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Borie_(DD-215)"
+ },
  "ship-uss-branch-dd-197": {
   "name": "USS Branch (DD-197)",
   "kind": "destroyer, served as HMS Beverley (H 64)",
@@ -7032,6 +7046,14 @@
   "nation": "US",
   "wikidata": "Q7868052",
   "source": "https://en.wikipedia.org/wiki/USS_Canopus_(AS-9)"
+ },
+ "ship-uss-card": {
+  "name": "USS Card (CVE-11)",
+  "kind": "U.S. Navy escort carrier",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Card",
+  "note": "The Wikipedia title is USS Card; USS Card (CVE-11) redirects to it."
  },
  "ship-uss-carter": {
   "name": "USS Carter (DE-112)",

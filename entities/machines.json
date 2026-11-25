@@ -373,6 +373,13 @@
    "Physics-1"
   ]
  },
+ "machine-fat-man": {
+  "name": "Fat Man",
+  "kind": "Plutonium atomic bomb",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fat_Man"
+ },
  "machine-flame-tank": {
   "name": "Flame tank",
   "kind": "flamethrower tank",

@@ -1039,6 +1039,16 @@
   "wikidata": "Q61995994",
   "source": "https://en.wikipedia.org/wiki/Assassination_of_Jos%C3%A9_Calvo_Sotelo"
  },
+ "op-atlantic-charter": {
+  "name": "Atlantic Charter",
+  "kind": "Anglo-American statement of war aims, August 1941",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Atlantic_Charter",
+  "aka": [
+   "Atlantic Conference"
+  ]
+ },
  "op-atlantic-wall": {
   "name": "Atlantic Wall",
   "kind": "coastal fortification system",
@@ -8284,6 +8294,13 @@
   "wikidata": "Q94117",
   "source": "https://en.wikipedia.org/wiki/Order_of_the_German_Eagle"
  },
+ "op-ordinance-of-9-august-1944": {
+  "name": "Ordinance of 9 August 1944",
+  "kind": "French ordinance restoring republican legality",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ordinance_of_9_August_1944"
+ },
  "op-oro-alla-patria": {
   "name": "Oro alla Patria",
   "kind": "Italian gold donation campaign of 18 December 1935",
@@ -9281,6 +9298,13 @@
   "wikidata": "Q7545227",
   "source": "https://en.wikipedia.org/wiki/Smith_Mine_disaster"
  },
+ "op-smokey-bear": {
+  "name": "Smokey Bear",
+  "kind": "Forest Service fire prevention mascot and campaign",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Smokey_Bear"
+ },
  "op-soham-rail-disaster": {
   "name": "Soham rail disaster",
   "kind": "ammunition train explosion at Soham, Cambridgeshire",
@@ -9329,6 +9353,16 @@
   "nation": "Soviet Union",
   "wikidata": "Q2006230",
   "source": "https://en.wikipedia.org/wiki/Soviet_atomic_bomb_project"
+ },
+ "op-soviet-invasion-of-manchuria": {
+  "name": "Soviet invasion of Manchuria",
+  "kind": "Soviet offensive against Japan, August 1945",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Soviet_invasion_of_Manchuria",
+  "aka": [
+   "Operation August Storm"
+  ]
  },
  "op-soviet-japanese-neutrality-pact": {
   "name": "Soviet-Japanese Neutrality Pact",

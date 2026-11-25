@@ -89,6 +89,13 @@
   "wikidata": "Q28085",
   "source": "https://en.wikipedia.org/wiki/Adolf_Eichmann"
  },
+ "person-adolf-galland": {
+  "name": "Adolf Galland",
+  "kind": "Luftwaffe fighter commander",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Adolf_Galland"
+ },
  "person-adolf-hitler": {
   "name": "Adolf Hitler",
   "kind": "dictator of Germany",
@@ -1008,6 +1015,13 @@
   "wikidata": "Q13003",
   "source": "https://en.wikipedia.org/wiki/Arturo_Toscanini"
  },
+ "person-aruna-asaf-ali": {
+  "name": "Aruna Asaf Ali",
+  "kind": "Indian independence activist",
+  "nation": "India",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Aruna_Asaf_Ali"
+ },
  "person-arvid-harnack": {
   "name": "Arvid Harnack",
   "kind": "German resistance member, Red Orchestra",
@@ -1788,6 +1802,13 @@
   "wikidata": "Q5081418",
   "source": "https://en.wikipedia.org/wiki/Charles_P._Cecil"
  },
+ "person-charles-sweeney": {
+  "name": "Charles Sweeney",
+  "kind": "USAAF pilot of Bockscar",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Charles_Sweeney"
+ },
  "person-charley-fox": {
   "name": "Charley Fox",
   "kind": "RCAF Spitfire pilot, No. 412 Squadron",
@@ -2458,6 +2479,13 @@
   "nation": "Canada",
   "wikidata": "Q290808",
   "source": "https://en.wikipedia.org/wiki/Douglas_Abbott"
+ },
+ "person-douglas-bader": {
+  "name": "Douglas Bader",
+  "kind": "RAF fighter pilot and wing leader",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Douglas_Bader"
  },
  "person-douglas-clifton-brown-1st-viscount-ruffside": {
   "name": "Douglas Clifton Brown",
@@ -3772,6 +3800,16 @@
   "nation": "Germany",
   "wikidata": "Q57174",
   "source": "https://en.wikipedia.org/wiki/Franz_Halder"
+ },
+ "person-franz-jagerstatter": {
+  "name": "Franz Jägerstätter",
+  "kind": "Austrian farmer and conscientious objector",
+  "nation": "Austria",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Franz_J%C3%A4gerst%C3%A4tter",
+  "aka": [
+   "Franz Jaegerstaetter"
+  ]
  },
  "person-franz-krech": {
   "name": "Franz Krech",
@@ -5169,6 +5207,13 @@
   "nation": "US",
   "wikidata": "Q5670396",
   "source": "https://en.wikipedia.org/wiki/Harry_L._Martin"
+ },
+ "person-harry-rossoll": {
+  "name": "Harry Rossoll",
+  "kind": "U.S. Forest Service artist",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Harry_Rossoll"
  },
  "person-harry-s-truman": {
   "name": "Harry S. Truman",
@@ -7658,6 +7703,13 @@
    "Dönitz",
    "Doenitz"
   ]
+ },
+ "person-karl-eliasberg": {
+  "name": "Karl Eliasberg",
+  "kind": "Conductor of the Leningrad Radio Orchestra",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Karl_Eliasberg"
  },
  "person-karl-guthe-jansky": {
   "name": "Karl Guthe Jansky",
