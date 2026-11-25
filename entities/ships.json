@@ -1497,6 +1497,13 @@
   "wikidata": "Q94832",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-459"
  },
+ "ship-german-submarine-u-46-1938": {
+  "name": "U-46",
+  "kind": "Type VIIB U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-46_(1938)"
+ },
  "ship-german-submarine-u-461": {
   "name": "German submarine U-461",
   "kind": "supply submarine",
@@ -1691,6 +1698,13 @@
   "nation": "Germany",
   "wikidata": "Q554635",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-515"
+ },
+ "ship-german-submarine-u-517": {
+  "name": "U-517",
+  "kind": "Type IXC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-517"
  },
  "ship-german-submarine-u-518": {
   "name": "U-518",
@@ -2416,6 +2430,13 @@
   "nation": "Germany",
   "wikidata": "Q5551831",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-821"
+ },
+ "ship-german-submarine-u-847": {
+  "name": "U-847",
+  "kind": "Type IXD2 U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-847"
  },
  "ship-german-submarine-u-85-1941": {
   "name": "U-85",
@@ -3288,6 +3309,13 @@
   "source": "https://en.wikipedia.org/wiki/HMS_Dulverton_(L63)",
   "wikidata": "Q5632221"
  },
+ "ship-hms-dunvegan-castle": {
+  "name": "HMS Dunvegan Castle",
+  "kind": "armed merchant cruiser, former liner",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Dunvegan_Castle"
+ },
  "ship-hms-eagle-1918": {
   "name": "HMS Eagle (1918)",
   "kind": "British aircraft carrier",
@@ -3308,6 +3336,13 @@
   "nation": "Britain",
   "wikidata": "Q702335",
   "source": "https://en.wikipedia.org/wiki/HMS_Edinburgh_(16)"
+ },
+ "ship-hms-egret-l75": {
+  "name": "HMS Egret (L75)",
+  "kind": "sloop",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Egret_(L75)"
  },
  "ship-hms-emerald-d66": {
   "name": "HMS Emerald (D66)",
@@ -5328,6 +5363,13 @@
   "nation": "Japan",
   "wikidata": "Q5232729",
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Hatsuyuki_(1928)"
+ },
+ "ship-japanese-destroyer-hatsuzakura": {
+  "name": "Hatsuzakura",
+  "kind": "escort destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Hatsuzakura"
  },
  "ship-japanese-destroyer-hayate-1925": {
   "name": "Japanese destroyer Hayate (1925)",
@@ -8397,6 +8439,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/USS_Niblack",
   "wikidata": "Q4052258"
+ },
+ "ship-uss-nicholas-dd-449": {
+  "name": "USS Nicholas (DD-449)",
+  "kind": "Fletcher class destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Nicholas_(DD-449)"
  },
  "ship-uss-northampton-ca-26": {
   "name": "USS Northampton (CA-26)",

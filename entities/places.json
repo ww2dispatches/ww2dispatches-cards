@@ -3255,6 +3255,15 @@
    "Gdansk"
   ]
  },
+ "place-french-cameroon": {
+  "name": "French Cameroon",
+  "kind": "French mandate territory in Central Africa",
+  "nation": "Cameroon",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/French_Cameroon",
+  "lat": null,
+  "lon": null
+ },
  "place-french-chad": {
   "name": "French Chad",
   "kind": "French colony",
@@ -4762,6 +4771,19 @@
   "source": "https://en.wikipedia.org/wiki/Kamaishi",
   "lat": 39.2758,
   "lon": 141.8857
+ },
+ "place-kamianets-podilskyi": {
+  "name": "Kamianets-Podilskyi",
+  "kind": "city in western Ukraine",
+  "nation": "Ukraine",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kamianets-Podilskyi",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Kamenets-Podolsk",
+   "Kamenets Podolsky"
+  ]
  },
  "place-kandanos": {
   "name": "Kandanos",
@@ -9032,6 +9054,18 @@
   "lat": 32.2833,
   "lon": -9.2333
  },
+ "place-sagami-bay": {
+  "name": "Sagami Bay",
+  "kind": "bay southwest of Tokyo Bay",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sagami_Bay",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Sagami Wan"
+  ]
+ },
  "place-saint-die-des-vosges": {
   "name": "St Die",
   "kind": "town",
@@ -10044,6 +10078,15 @@
   "wikidata": "Q4068",
   "lat": 50.7667,
   "lon": 6.2333
+ },
+ "place-strait-of-belle-isle": {
+  "name": "Strait of Belle Isle",
+  "kind": "strait between Labrador and Newfoundland",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Strait_of_Belle_Isle",
+  "lat": null,
+  "lon": null
  },
  "place-strait-of-dover": {
   "name": "Strait of Dover",

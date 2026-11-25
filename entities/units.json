@@ -4113,6 +4113,13 @@
    "Nationalkomitee Freies Deutschland"
   ]
  },
+ "unit-national-guard-united-states": {
+  "name": "National Guard (United States)",
+  "kind": "state militia and federal reserve force",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/National_Guard_(United_States)"
+ },
  "unit-national-health-service-england": {
   "name": "National Health Service (England)",
   "kind": "British public health service, founded 1948",
@@ -4466,6 +4473,13 @@
   "nation": "Britain",
   "wikidata": "Q12064248",
   "source": "https://en.wikipedia.org/wiki/No._249_Squadron_RAF"
+ },
+ "unit-no-269-squadron-raf": {
+  "name": "No. 269 Squadron RAF",
+  "kind": "RAF Coastal Command squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._269_Squadron_RAF"
  },
  "unit-no-3-commando": {
   "name": "No. 3 Commando",
