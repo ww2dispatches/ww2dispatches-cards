@@ -92,7 +92,7 @@
   "name": "Animal Farm",
   "kind": "Novella by George Orwell, 1945",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q1396889",
   "source": "https://en.wikipedia.org/wiki/Animal_Farm"
  },
  "machine-asm-n-2-bat": {
@@ -384,7 +384,7 @@
   "name": "Fat Man",
   "kind": "Plutonium atomic bomb",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q188163",
   "source": "https://en.wikipedia.org/wiki/Fat_Man"
  },
  "machine-flame-tank": {
@@ -430,7 +430,7 @@
   "name": "Frequency hopping spread spectrum",
   "kind": "Radio technique",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q1136013",
   "source": "https://en.wikipedia.org/wiki/Frequency-hopping_spread_spectrum",
   "note": "Lamarr and Antheil patent 2,292,387 (1942)"
  },
@@ -503,7 +503,7 @@
   "name": "GLEEP",
   "kind": "experimental nuclear reactor",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q5513613",
   "source": "https://en.wikipedia.org/wiki/GLEEP",
   "aka": [
    "Graphite Low Energy Experimental Pile"
@@ -552,7 +552,7 @@
   "name": "Harvard Mark I",
   "kind": "electromechanical computer (IBM ASCC)",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q776823",
   "source": "https://en.wikipedia.org/wiki/Harvard_Mark_I",
   "aka": [
    "Automatic Sequence Controlled Calculator",
@@ -626,7 +626,7 @@
   "name": "Kangaroo (armoured personnel carrier)",
   "kind": "armored personnel carrier converted from tanks and self propelled guns",
   "nation": "Canada",
-  "wikidata": null,
+  "wikidata": "Q1348033",
   "source": "https://en.wikipedia.org/wiki/Kangaroo_(armoured_personnel_carrier)"
  },
  "machine-kharkiv-model-v-2": {
@@ -1188,7 +1188,7 @@
   "name": "Soybean car",
   "kind": "plastic bodied concept car",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q545618",
   "source": "https://en.wikipedia.org/wiki/Soybean_car"
  },
  "machine-spica-class-torpedo-boat-italy": {

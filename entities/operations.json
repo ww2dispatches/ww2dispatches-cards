@@ -59,7 +59,7 @@
   "name": "1934 German head of state referendum",
   "kind": "plebiscite",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q4305909",
   "source": "https://en.wikipedia.org/wiki/1934_German_head_of_state_referendum"
  },
  "op-1935-saar-status-referendum": {
@@ -137,7 +137,7 @@
   "name": "1939 Neuhammer disaster",
   "kind": "training accident",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q1980563",
   "source": "https://en.wikipedia.org/wiki/1939_Neuhammer_disaster"
  },
  "op-1939-new-york-world-s-fair": {
@@ -158,7 +158,7 @@
   "name": "1940 Canberra air disaster",
   "kind": "air crash",
   "nation": "Australia",
-  "wikidata": null,
+  "wikidata": "Q4564698",
   "source": "https://en.wikipedia.org/wiki/1940_Canberra_air_disaster"
  },
  "op-1940-democratic-national-convention": {
@@ -311,7 +311,7 @@
   "name": "1943 Australian federal election",
   "kind": "wartime general election",
   "nation": "Australia",
-  "wikidata": null,
+  "wikidata": "Q3586889",
   "source": "https://en.wikipedia.org/wiki/1943_Australian_federal_election"
  },
  "op-1943-brusa-agreement": {
@@ -453,7 +453,7 @@
   "name": "1945 Zhijiang surrender ceremony",
   "kind": "negotiated surrender meeting, China",
   "nation": "China",
-  "wikidata": null,
+  "wikidata": "Q17029335",
   "source": "https://en.wikipedia.org/wiki/1945_Zhijiang_surrender_ceremony"
  },
  "op-1946-cabinet-mission-to-india": {
@@ -750,7 +750,7 @@
   "name": "Adlertag",
   "kind": "Luftwaffe offensive opening day",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q2057725",
   "source": "https://en.wikipedia.org/wiki/Adlertag",
   "aka": [
    "Eagle Day"
@@ -825,7 +825,7 @@
   "name": "Allied airmen at Buchenwald concentration camp",
   "kind": "imprisonment of captured airmen",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q6332443",
   "source": "https://en.wikipedia.org/wiki/Allied_airmen_at_Buchenwald_concentration_camp",
   "aka": [
    "KLB Club"
@@ -1098,14 +1098,14 @@
   "name": "Assassination of Leon Trotsky",
   "kind": "assassination",
   "nation": "Mexico",
-  "wikidata": null,
+  "wikidata": "Q4468600",
   "source": "https://en.wikipedia.org/wiki/Assassination_of_Leon_Trotsky"
  },
  "op-atlantic-charter": {
   "name": "Atlantic Charter",
   "kind": "Anglo-American statement of war aims, August 1941",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q181978",
   "source": "https://en.wikipedia.org/wiki/Atlantic_Charter",
   "aka": [
    "Atlantic Conference"
@@ -1236,14 +1236,14 @@
   "name": "August Offer",
   "kind": "1940 British offer on Indian self government",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q4820861",
   "source": "https://en.wikipedia.org/wiki/August_Offer"
  },
  "op-august-revolution": {
   "name": "August Revolution",
   "kind": "uprising",
   "nation": "Vietnam",
-  "wikidata": null,
+  "wikidata": "Q769960",
   "source": "https://en.wikipedia.org/wiki/August_Revolution"
  },
  "op-augustow-roundup": {
@@ -1954,7 +1954,7 @@
   "name": "Battle of Hengyang",
   "kind": "1944 siege, Operation Ichi-Go",
   "nation": "China",
-  "wikidata": null,
+  "wikidata": "Q5251446",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Hengyang"
  },
  "op-battle-of-hill-170": {
@@ -2030,7 +2030,7 @@
   "name": "Battle of Jianqiao",
   "kind": "air battle",
   "nation": "China",
-  "wikidata": null,
+  "wikidata": "Q17019070",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Jianqiao",
   "aka": [
    "814 Aerial War"
@@ -2187,7 +2187,7 @@
   "name": "Battle of Lake Khasan",
   "kind": "Soviet Japanese border battle, 1938",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q697579",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Lake_Khasan",
   "aka": [
    "Changkufeng Incident"
@@ -2568,7 +2568,7 @@
   "name": "Battle of Saint-Malo",
   "kind": "Siege of the Saint-Malo fortress, August 1944",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q3238000",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Saint-Malo"
  },
  "op-battle-of-saipan": {
@@ -2614,7 +2614,7 @@
   "name": "Battle of Savo Island",
   "kind": "naval battle, Guadalcanal campaign",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q700032",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Savo_Island"
  },
  "op-battle-of-sedan-1940": {
@@ -2628,7 +2628,7 @@
   "name": "Battle of Shanghai",
   "kind": "battle",
   "nation": "China",
-  "wikidata": null,
+  "wikidata": "Q254599",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Shanghai"
  },
  "op-battle-of-shangshak": {
@@ -2645,7 +2645,7 @@
   "name": "Battle of Shumshu",
   "kind": "Soviet landing in the Kuril Islands",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q14565619",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Shumshu"
  },
  "op-battle-of-sidi-barrani": {
@@ -3023,7 +3023,7 @@
   "name": "Battle of the Tenaru",
   "kind": "Guadalcanal land battle",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q1414998",
   "source": "https://en.wikipedia.org/wiki/Battle_of_the_Tenaru"
  },
  "op-battle-of-timor": {
@@ -3072,7 +3072,7 @@
   "name": "Battle of Tulagi and Gavutu Tanambogo",
   "kind": "amphibious battle, August 1942",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q1497996",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Tulagi_and_Gavutu%E2%80%93Tanambogo"
  },
  "op-battle-of-uman": {
@@ -3240,7 +3240,7 @@
   "name": "BBC Proms",
   "kind": "concert series",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q1046677",
   "source": "https://en.wikipedia.org/wiki/BBC_Proms",
   "aka": [
    "The Proms",
@@ -3371,14 +3371,14 @@
   "name": "Białystok Ghetto uprising",
   "kind": "Jewish ghetto uprising",
   "nation": "Poland",
-  "wikidata": null,
+  "wikidata": "Q2628423",
   "source": "https://en.wikipedia.org/wiki/Bia%C5%82ystok_Ghetto_uprising"
  },
  "op-big-inch": {
   "name": "Big Inch",
   "kind": "wartime crude oil pipeline project",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q4905865",
   "source": "https://en.wikipedia.org/wiki/Big_Inch",
   "aka": [
    "Little Big Inch"
@@ -3398,7 +3398,7 @@
   "name": "Bila Tserkva massacre",
   "kind": "Holocaust massacre, August 1941",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q7251690",
   "source": "https://en.wikipedia.org/wiki/Bila_Tserkva_massacre"
  },
  "op-birmingham-blitz": {
@@ -3433,7 +3433,7 @@
   "name": "Blackout (wartime)",
   "kind": "civil defence practice of hiding lights from enemy aircraft",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q1770547",
   "source": "https://en.wikipedia.org/wiki/Blackout_(wartime)"
  },
  "op-blockade-of-germany-1939-1945": {
@@ -3461,7 +3461,7 @@
   "name": "Bloody Saturday (Shanghai)",
   "kind": "misdirected bombing of civilians",
   "nation": "China",
-  "wikidata": null,
+  "wikidata": "Q10872254",
   "source": "https://en.wikipedia.org/wiki/Bloody_Saturday_(Shanghai)",
   "aka": [
    "Great World bombing",
@@ -4061,7 +4061,7 @@
   "name": "Cactus Air Force",
   "kind": "Allied air force at Henderson Field",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q2362430",
   "source": "https://en.wikipedia.org/wiki/Cactus_Air_Force"
  },
  "op-cairo-conference": {
@@ -4232,7 +4232,7 @@
   "name": "Child euthanasia in Nazi Germany",
   "kind": "Nazi program murdering disabled children",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q1741723",
   "source": "https://en.wikipedia.org/wiki/Child_euthanasia_in_Nazi_Germany"
  },
  "op-chinese-civil-war": {
@@ -4383,7 +4383,7 @@
   "name": "Convoy Hi-71",
   "kind": "Japanese convoy",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q16842906",
   "source": "https://en.wikipedia.org/wiki/Convoy_Hi-71"
  },
  "op-convoy-hx-133": {
@@ -4418,7 +4418,7 @@
   "name": "Convoy OG 71",
   "kind": "Atlantic convoy",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q16934384",
   "source": "https://en.wikipedia.org/wiki/Convoy_OG_71"
  },
  "op-convoy-on-166": {
@@ -4700,7 +4700,7 @@
   "name": "Deportation of Koreans in the Soviet Union",
   "kind": "forced deportation, 1937",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q716521",
   "source": "https://en.wikipedia.org/wiki/Deportation_of_Koreans_in_the_Soviet_Union"
  },
  "op-deportation-of-the-chechens-and-ingush": {
@@ -4739,7 +4739,7 @@
   "name": "Destroyers-for-bases deal",
   "kind": "Anglo American agreement",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q196731",
   "source": "https://en.wikipedia.org/wiki/Destroyers-for-bases_deal"
  },
  "op-deutschland-incident-1937": {
@@ -4753,7 +4753,7 @@
   "name": "Dieppe Raid",
   "kind": "amphibious raid",
   "nation": "Canada",
-  "wikidata": null,
+  "wikidata": "Q270517",
   "source": "https://en.wikipedia.org/wiki/Dieppe_Raid",
   "aka": [
    "Operation Jubilee"
@@ -4763,7 +4763,7 @@
   "name": "Direct Action Day",
   "kind": "1946 Calcutta riots",
   "nation": "India",
-  "wikidata": null,
+  "wikidata": "Q2096814",
   "source": "https://en.wikipedia.org/wiki/Direct_Action_Day",
   "aka": [
    "Great Calcutta Killings"
@@ -4787,7 +4787,7 @@
   "name": "Division of Korea",
   "kind": "1945 partition of Korea into occupation zones",
   "nation": "Korea",
-  "wikidata": null,
+  "wikidata": "Q498735",
   "source": "https://en.wikipedia.org/wiki/Division_of_Korea"
  },
  "op-doctors-trial": {
@@ -4836,7 +4836,7 @@
   "name": "Dumbarton Oaks Conference",
   "kind": "conference planning the United Nations, 1944",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q25904",
   "source": "https://en.wikipedia.org/wiki/Dumbarton_Oaks_Conference"
  },
  "op-dunkirk-evacuation": {
@@ -4972,7 +4972,7 @@
   "name": "Enemy Airmen's Act",
   "kind": "Japanese military order",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q16835240",
   "source": "https://en.wikipedia.org/wiki/Enemy_Airmen%27s_Act",
   "aka": [
    "Military Order No. 4"
@@ -5100,7 +5100,7 @@
   "name": "Falaise pocket",
   "kind": "battle",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q602744",
   "source": "https://en.wikipedia.org/wiki/Falaise_pocket",
   "aka": [
    "Falaise gap"
@@ -5390,7 +5390,7 @@
   "name": "Franksgiving",
   "kind": "1939 to 1941 Thanksgiving date change",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q5492246",
   "source": "https://en.wikipedia.org/wiki/Franksgiving"
  },
  "op-freeman-field-mutiny": {
@@ -5574,7 +5574,7 @@
   "name": "German Soviet Credit Agreement (1939)",
   "kind": "trade agreement",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q573331",
   "source": "https://en.wikipedia.org/wiki/German%E2%80%93Soviet_Credit_Agreement_(1939)"
  },
  "op-german-surrender-at-luneburg-heath": {
@@ -5762,7 +5762,7 @@
   "name": "Higashikuni cabinet",
   "kind": "Japanese cabinet, Aug to Oct 1945",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q1252961",
   "source": "https://en.wikipedia.org/wiki/Higashikuni_cabinet"
  },
  "op-hindenburg-disaster": {
@@ -5776,7 +5776,7 @@
   "name": "Hirohito surrender broadcast",
   "kind": "radio broadcast",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q709465",
   "source": "https://en.wikipedia.org/wiki/Hirohito_surrender_broadcast",
   "aka": [
    "Gyokuon-hoso",
@@ -5811,7 +5811,7 @@
   "name": "Hitler's Obersalzberg Speech",
   "kind": "speech to Wehrmacht commanders, 22 August 1939",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q570100",
   "source": "https://en.wikipedia.org/wiki/Hitler%27s_Obersalzberg_Speech"
  },
  "op-ho-sainteny-agreement": {
@@ -5835,7 +5835,7 @@
   "name": "Holocaust of Kedros",
   "kind": "German reprisal massacre, Crete 1944",
   "nation": "Greece",
-  "wikidata": null,
+  "wikidata": "Q5883952",
   "source": "https://en.wikipedia.org/wiki/Holocaust_of_Kedros"
  },
  "op-holodomor": {
@@ -5900,7 +5900,7 @@
   "name": "Hundred Regiments Offensive",
   "kind": "offensive",
   "nation": "China",
-  "wikidata": null,
+  "wikidata": "Q709261",
   "source": "https://en.wikipedia.org/wiki/Hundred_Regiments_Offensive"
  },
  "op-hungarian-invasion-of-carpatho-ukraine": {
@@ -6518,7 +6518,7 @@
   "name": "Krakow pogrom",
   "kind": "Anti-Jewish riot, 11 August 1945",
   "nation": "Poland",
-  "wikidata": null,
+  "wikidata": "Q1814824",
   "source": "https://en.wikipedia.org/wiki/Krak%C3%B3w_pogrom",
   "aka": [
    "Kraków pogrom"
@@ -6563,7 +6563,7 @@
   "name": "Kyujo incident",
   "kind": "attempted coup",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q713163",
   "source": "https://en.wikipedia.org/wiki/Ky%C5%ABj%C5%8D_incident",
   "aka": [
    "Kyūjō incident"
@@ -7131,7 +7131,7 @@
   "name": "Military Academy incident",
   "kind": "1934 to 1935 Japanese army affair, including the Aizawa Incident",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q3149891",
   "source": "https://en.wikipedia.org/wiki/Military_Academy_incident"
  },
  "op-military-selective-service-act": {
@@ -7181,7 +7181,7 @@
   "name": "Molotov Ribbentrop Pact",
   "kind": "non aggression pact",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q130796",
   "source": "https://en.wikipedia.org/wiki/Molotov%E2%80%93Ribbentrop_Pact",
   "aka": [
    "Nazi Soviet pact"
@@ -7191,7 +7191,7 @@
   "name": "Montreux Convention Regarding the Regime of the Straits",
   "kind": "1936 treaty on the Turkish Straits",
   "nation": "Turkey",
-  "wikidata": null,
+  "wikidata": "Q869500",
   "source": "https://en.wikipedia.org/wiki/Montreux_Convention_Regarding_the_Regime_of_the_Straits",
   "aka": [
    "Montreux Convention"
@@ -7239,7 +7239,7 @@
   "name": "Moscow Conference (1942)",
   "kind": "Churchill, Stalin and Harriman conference, 12 to 17 August 1942",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q2752595",
   "source": "https://en.wikipedia.org/wiki/Moscow_Conference_(1942)"
  },
  "op-moscow-conference-1945": {
@@ -7419,7 +7419,7 @@
   "name": "Never was so much owed by so many to so few",
   "kind": "wartime speech",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q3160794",
   "source": "https://en.wikipedia.org/wiki/Never_was_so_much_owed_by_so_many_to_so_few",
   "aka": [
    "The Few"
@@ -7586,7 +7586,7 @@
   "name": "Ogdensburg Agreement",
   "kind": "US and Canadian defense agreement",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q7079959",
   "source": "https://en.wikipedia.org/wiki/Ogdensburg_Agreement"
  },
  "op-ohi-day": {
@@ -7918,7 +7918,7 @@
   "name": "Operation Cottage",
   "kind": "amphibious landing, Kiska",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q2033079",
   "source": "https://en.wikipedia.org/wiki/Operation_Cottage"
  },
  "op-operation-crossbow": {
@@ -7946,7 +7946,7 @@
   "name": "Operation Dervish (1941)",
   "kind": "first Arctic convoy to the Soviet Union",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q446029",
   "source": "https://en.wikipedia.org/wiki/Operation_Dervish_(1941)"
  },
  "op-operation-desecrate-one": {
@@ -7984,7 +7984,7 @@
   "name": "Operation Dragoon",
   "kind": "invasion of southern France",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q221111",
   "source": "https://en.wikipedia.org/wiki/Operation_Dragoon",
   "aka": [
    "Operation Anvil"
@@ -8087,7 +8087,7 @@
   "name": "Operation Goodwood (naval)",
   "kind": "British carrier raids on Tirpitz, August 1944",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q17513584",
   "source": "https://en.wikipedia.org/wiki/Operation_Goodwood_(naval)"
  },
  "op-operation-greif": {
@@ -8150,7 +8150,7 @@
   "name": "Operation Hydra (1943)",
   "kind": "RAF Bomber Command raid on Peenemunde, night of 17 to 18 Aug 1943",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q15264163",
   "source": "https://en.wikipedia.org/wiki/Operation_Hydra_(1943)"
  },
  "op-operation-i-go": {
@@ -8277,7 +8277,7 @@
   "name": "Operation Lehrgang",
   "kind": "Axis evacuation of Sicily, August 1943",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q2498275",
   "source": "https://en.wikipedia.org/wiki/Operation_Lehrgang"
  },
  "op-operation-lentil-sumatra": {
@@ -8319,7 +8319,7 @@
   "name": "Operation Lüttich",
   "kind": "German counterattack at Mortain, August 1944",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q698220",
   "source": "https://en.wikipedia.org/wiki/Operation_L%C3%BCttich",
   "aka": [
    "Mortain counterattack"
@@ -8430,7 +8430,7 @@
   "name": "Operation Pedestal",
   "kind": "Malta convoy operation, August 1942",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q1927362",
   "source": "https://en.wikipedia.org/wiki/Operation_Pedestal"
  },
  "op-operation-pike": {
@@ -8458,7 +8458,7 @@
   "name": "Operation Pluto",
   "kind": "Cross Channel fuel pipelines, 1944 to 1945",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q966383",
   "source": "https://en.wikipedia.org/wiki/Operation_Pluto"
  },
  "op-operation-postmaster": {
@@ -8670,14 +8670,14 @@
   "name": "Operation Totalize",
   "kind": "First Canadian Army offensive south of Caen, August 1944",
   "nation": "Canada",
-  "wikidata": null,
+  "wikidata": "Q714280",
   "source": "https://en.wikipedia.org/wiki/Operation_Totalize"
  },
  "op-operation-tractable": {
   "name": "Operation Tractable",
   "kind": "offensive",
   "nation": "Canada",
-  "wikidata": null,
+  "wikidata": "Q683912",
   "source": "https://en.wikipedia.org/wiki/Operation_Tractable"
  },
  "op-operation-transom": {
@@ -8785,7 +8785,7 @@
   "name": "Operation Wunderland",
   "kind": "German naval raid into the Kara Sea",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q705261",
   "source": "https://en.wikipedia.org/wiki/Operation_Wunderland"
  },
  "op-operation-z-1944": {
@@ -8834,7 +8834,7 @@
   "name": "Order No. 270",
   "kind": "Soviet Stavka order on surrender",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q717489",
   "source": "https://en.wikipedia.org/wiki/Order_No._270"
  },
  "op-order-of-the-german-eagle": {
@@ -8848,7 +8848,7 @@
   "name": "Ordinance of 9 August 1944",
   "kind": "French ordinance restoring republican legality",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q3355465",
   "source": "https://en.wikipedia.org/wiki/Ordinance_of_9_August_1944"
  },
  "op-oro-alla-patria": {
@@ -9118,7 +9118,7 @@
   "name": "Proclamation of Indonesian Independence",
   "kind": "Declaration read in Jakarta, 17 Aug 1945",
   "nation": "Indonesia",
-  "wikidata": null,
+  "wikidata": "Q1661772",
   "source": "https://en.wikipedia.org/wiki/Proclamation_of_Indonesian_Independence"
  },
  "op-project-diana": {
@@ -9132,7 +9132,7 @@
   "name": "Project Hula",
   "kind": "US ship transfer program to the Soviet Union",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q7249152",
   "source": "https://en.wikipedia.org/wiki/Project_Hula"
  },
  "op-proposed-united-states-acquisition-of-greenland": {
@@ -9251,7 +9251,7 @@
   "name": "Raid on Makin Island",
   "kind": "US Marine raid, 17 to 18 Aug 1942",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q660232",
   "source": "https://en.wikipedia.org/wiki/Raid_on_Makin_Island",
   "aka": [
    "Makin Island raid"
@@ -9497,7 +9497,7 @@
   "name": "Sant'Anna di Stazzema massacre",
   "kind": "Massacre of civilians, 12 August 1944",
   "nation": "Italy",
-  "wikidata": null,
+  "wikidata": "Q3297473",
   "source": "https://en.wikipedia.org/wiki/Sant%27Anna_di_Stazzema_massacre"
  },
  "op-santa-fe-riot": {
@@ -9511,7 +9511,7 @@
   "name": "Schweinfurt and Regensburg mission",
   "kind": "Eighth Air Force double strike, 17 Aug 1943",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q575755",
   "source": "https://en.wikipedia.org/wiki/Schweinfurt%E2%80%93Regensburg_mission"
  },
  "op-scuttling-of-the-french-fleet-at-toulon": {
@@ -9616,7 +9616,7 @@
   "name": "Second Jassy Kishinev offensive",
   "kind": "offensive",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q311765",
   "source": "https://en.wikipedia.org/wiki/Second_Jassy%E2%80%93Kishinev_offensive",
   "aka": [
    "Jassy Kishinev offensive",
@@ -9665,7 +9665,7 @@
   "name": "Seine River Crossing at Mantes-Gassicourt",
   "kind": "river crossing",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q27628316",
   "source": "https://en.wikipedia.org/wiki/Seine_River_Crossing_at_Mantes-Gassicourt"
  },
  "op-selective-training-and-service-act-of-1940": {
@@ -9690,7 +9690,7 @@
   "name": "Service du travail obligatoire",
   "kind": "Vichy labor programs, including the Releve",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q525212",
   "source": "https://en.wikipedia.org/wiki/Service_du_travail_obligatoire",
   "aka": [
    "Releve",
@@ -9878,14 +9878,14 @@
   "name": "Sino-Soviet Non-Aggression Pact",
   "kind": "treaty, 21 August 1937",
   "nation": "China",
-  "wikidata": null,
+  "wikidata": "Q716159",
   "source": "https://en.wikipedia.org/wiki/Sino-Soviet_Non-Aggression_Pact"
  },
  "op-sino-soviet-treaty-of-friendship-and-alliance": {
   "name": "Sino-Soviet Treaty of Friendship and Alliance",
   "kind": "treaty",
   "nation": "China",
-  "wikidata": null,
+  "wikidata": "Q844551",
   "source": "https://en.wikipedia.org/wiki/Sino-Soviet_Treaty_of_Friendship_and_Alliance"
  },
  "op-slamat-disaster": {
@@ -9940,14 +9940,14 @@
   "name": "Smokey Bear",
   "kind": "Forest Service fire prevention mascot and campaign",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q493361",
   "source": "https://en.wikipedia.org/wiki/Smokey_Bear"
  },
  "op-smyth-report": {
   "name": "Smyth Report",
   "kind": "Official public account of the Manhattan Project, 1945",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q1149060",
   "source": "https://en.wikipedia.org/wiki/Smyth_Report"
  },
  "op-soham-rail-disaster": {
@@ -10003,7 +10003,7 @@
   "name": "Soviet invasion of Manchuria",
   "kind": "Soviet offensive against Japan, August 1945",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q6165880",
   "source": "https://en.wikipedia.org/wiki/Soviet_invasion_of_Manchuria",
   "aka": [
    "Operation August Storm"
@@ -10013,7 +10013,7 @@
   "name": "Soviet invasion of South Sakhalin",
   "kind": "Soviet offensive, August 1945",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q22082249",
   "source": "https://en.wikipedia.org/wiki/Soviet_invasion_of_South_Sakhalin"
  },
  "op-soviet-japanese-neutrality-pact": {
@@ -10027,7 +10027,7 @@
   "name": "Soviet-Japanese War",
   "kind": "1945 Soviet campaign against Japan",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q220602",
   "source": "https://en.wikipedia.org/wiki/Soviet%E2%80%93Japanese_War"
  },
  "op-soviet-occupation-of-bessarabia-and-northern-bukovina": {
@@ -10349,7 +10349,7 @@
   "name": "The Hardest Day",
   "kind": "Battle of Britain air battle of 18 August 1940",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q7738879",
   "source": "https://en.wikipedia.org/wiki/The_Hardest_Day"
  },
  "op-the-holocaust": {
@@ -10642,7 +10642,7 @@
   "name": "Turkish Straits crisis",
   "kind": "Soviet pressure on Turkey over the Straits, from 1946",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q16499676",
   "source": "https://en.wikipedia.org/wiki/Turkish_Straits_crisis"
  },
  "op-twenty-second-amendment-to-the-united-states-constitution": {
@@ -10854,7 +10854,7 @@
   "name": "Vergarola explosion",
   "kind": "ordnance explosion on a beach at Pula",
   "nation": "Italy",
-  "wikidata": null,
+  "wikidata": "Q3511949",
   "source": "https://en.wikipedia.org/wiki/Vergarola_explosion",
   "aka": [
    "Vergarolla massacre"
@@ -10892,7 +10892,7 @@
   "name": "Victory over Japan Day",
   "kind": "victory celebration",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q618979",
   "source": "https://en.wikipedia.org/wiki/Victory_over_Japan_Day",
   "aka": [
    "V-J Day"

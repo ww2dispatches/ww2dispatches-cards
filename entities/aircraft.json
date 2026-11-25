@@ -136,7 +136,7 @@
   "name": "Bockscar",
   "kind": "B-29 that dropped Fat Man on Nagasaki",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q697041",
   "source": "https://en.wikipedia.org/wiki/Bockscar"
  },
  "aircraft-boeing-247": {
@@ -226,7 +226,7 @@
   "name": "Bristol Bombay",
   "kind": "British transport and bomber aircraft",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q917889",
   "source": "https://en.wikipedia.org/wiki/Bristol_Bombay"
  },
  "aircraft-caproni-ca-161": {
@@ -250,7 +250,7 @@
   "name": "Consolidated B-32 Dominator",
   "kind": "US heavy bomber",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q1127567",
   "source": "https://en.wikipedia.org/wiki/Consolidated_B-32_Dominator"
  },
  "aircraft-consolidated-c-87-liberator-express": {
@@ -291,7 +291,7 @@
   "name": "Curtiss BF2C Goshawk",
   "kind": "Biplane fighter bomber, exported as the Hawk III",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q3007836",
   "source": "https://en.wikipedia.org/wiki/Curtiss_BF2C_Goshawk",
   "aka": [
    "Hawk III"
@@ -426,7 +426,7 @@
   "name": "Douglas B-18 Bolo",
   "kind": "Twin engine bomber",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q1252035",
   "source": "https://en.wikipedia.org/wiki/Douglas_B-18_Bolo"
  },
  "aircraft-douglas-c-47-skytrain": {
@@ -833,7 +833,7 @@
   "name": "L-8",
   "kind": "US Navy blimp, the 1942 ghost blimp",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q27902725",
   "source": "https://en.wikipedia.org/wiki/L-8",
   "note": "Single named airship; earns its own entity because the story is about her."
  },
@@ -1142,7 +1142,7 @@
   "name": "Nakajima Kikka",
   "kind": "Japanese twin jet attack aircraft prototype",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q534773",
   "source": "https://en.wikipedia.org/wiki/Nakajima_Kikka"
  },
  "aircraft-noorduyn-norseman": {
@@ -1192,7 +1192,7 @@
   "name": "Northrop F-89 Scorpion",
   "kind": "Jet all weather interceptor",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q842481",
   "source": "https://en.wikipedia.org/wiki/Northrop_F-89_Scorpion",
   "aka": [
    "XP-89",
@@ -1203,7 +1203,7 @@
   "name": "Northrop P-61 Black Widow",
   "kind": "Night fighter",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q913657",
   "source": "https://en.wikipedia.org/wiki/Northrop_P-61_Black_Widow"
  },
  "aircraft-northrop-yb-49": {
@@ -1231,7 +1231,7 @@
   "name": "Piaggio P.108",
   "kind": "Italian four engine heavy bomber",
   "nation": "Italy",
-  "wikidata": null,
+  "wikidata": "Q1540052",
   "source": "https://en.wikipedia.org/wiki/Piaggio_P.108"
  },
  "aircraft-piasecki-pv-2": {
@@ -1417,7 +1417,7 @@
   "name": "Vought OS2U Kingfisher",
   "kind": "observation floatplane",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q1858886",
   "source": "https://en.wikipedia.org/wiki/Vought_OS2U_Kingfisher"
  },
  "aircraft-waco-cg-4": {
@@ -1469,7 +1469,7 @@
   "name": "Yokosuka D4Y Suisei",
   "kind": "carrier dive bomber",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q247036",
   "source": "https://en.wikipedia.org/wiki/Yokosuka_D4Y_Suisei",
   "aka": [
    "Judy"
