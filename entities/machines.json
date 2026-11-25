@@ -523,6 +523,17 @@
   "wikidata": "Q2471197",
   "source": "https://en.wikipedia.org/wiki/Hale_Telescope"
  },
+ "machine-harvard-mark-i": {
+  "name": "Harvard Mark I",
+  "kind": "electromechanical computer (IBM ASCC)",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Harvard_Mark_I",
+  "aka": [
+   "Automatic Sequence Controlled Calculator",
+   "IBM ASCC"
+  ]
+ },
  "machine-hedgehog-weapon": {
   "name": "Hedgehog",
   "kind": "ahead throwing anti submarine mortar",
@@ -585,6 +596,13 @@
   "nation": "US",
   "wikidata": "Q204191",
   "source": "https://en.wikipedia.org/wiki/It's_a_Wonderful_Life"
+ },
+ "machine-kangaroo-armoured-personnel-carrier": {
+  "name": "Kangaroo (armoured personnel carrier)",
+  "kind": "armored personnel carrier converted from tanks and self propelled guns",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kangaroo_(armoured_personnel_carrier)"
  },
  "machine-kharkiv-model-v-2": {
   "name": "V-2 diesel engine",

@@ -1894,6 +1894,13 @@
   "wikidata": "Q2391945",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-614"
  },
+ "ship-german-submarine-u-615": {
+  "name": "U-615",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-615"
+ },
  "ship-german-submarine-u-616": {
   "name": "German submarine U-616",
   "kind": "Type VIIC U-boat",
@@ -4873,6 +4880,13 @@
   "source": "https://en.wikipedia.org/wiki/Japanese_cruiser_Nachi",
   "wikidata": "Q1630667"
  },
+ "ship-japanese-cruiser-nagara": {
+  "name": "Nagara",
+  "kind": "Imperial Japanese Navy light cruiser",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_cruiser_Nagara"
+ },
  "ship-japanese-cruiser-naka": {
   "name": "Naka",
   "kind": "Sendai class light cruiser",
@@ -7166,6 +7180,13 @@
   "aka": [
    "CVE-13"
   ]
+ },
+ "ship-uss-croaker": {
+  "name": "USS Croaker (SS-246)",
+  "kind": "Gato class submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Croaker"
  },
  "ship-uss-croatan-cve-25": {
   "name": "USS Croatan (CVE-25)",

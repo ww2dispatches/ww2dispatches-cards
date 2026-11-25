@@ -2923,6 +2923,13 @@
   "wikidata": "Q96373276",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Tripoli_(1943)"
  },
+ "op-battle-of-tulagi-and-gavutu-tanambogo": {
+  "name": "Battle of Tulagi and Gavutu Tanambogo",
+  "kind": "amphibious battle, August 1942",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Tulagi_and_Gavutu%E2%80%93Tanambogo"
+ },
  "op-battle-of-uman": {
   "name": "Battle of Uman",
   "kind": "German encirclement battle, July to August 1941",
@@ -6782,6 +6789,16 @@
   "wikidata": "Q162663",
   "source": "https://en.wikipedia.org/wiki/Mit_brennender_Sorge"
  },
+ "op-montreux-convention-regarding-the-regime-of-the-straits": {
+  "name": "Montreux Convention Regarding the Regime of the Straits",
+  "kind": "1936 treaty on the Turkish Straits",
+  "nation": "Turkey",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Montreux_Convention_Regarding_the_Regime_of_the_Straits",
+  "aka": [
+   "Montreux Convention"
+  ]
+ },
  "op-moore-s-ford-lynchings": {
   "name": "Moore's Ford lynchings",
   "kind": "1946 mob murder of two Black couples in Georgia",
@@ -7831,6 +7848,16 @@
   "wikidata": "Q3354761",
   "source": "https://en.wikipedia.org/wiki/Operation_Lustre"
  },
+ "op-operation-luttich": {
+  "name": "Operation Lüttich",
+  "kind": "German counterattack at Mortain, August 1944",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_L%C3%BCttich",
+  "aka": [
+   "Mortain counterattack"
+  ]
+ },
  "op-operation-mascot": {
   "name": "Operation Mascot",
   "kind": "British carrier strike on Tirpitz",
@@ -8157,6 +8184,13 @@
   "aka": [
    "Allied landings in North Africa"
   ]
+ },
+ "op-operation-totalize": {
+  "name": "Operation Totalize",
+  "kind": "First Canadian Army offensive south of Caen, August 1944",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Totalize"
  },
  "op-operation-transom": {
   "name": "Operation Transom",
@@ -9985,6 +10019,13 @@
   "nation": "Turkey",
   "wikidata": "Q6154013",
   "source": "https://en.wikipedia.org/wiki/Turkish_declaration_of_war_on_Germany_and_Japan"
+ },
+ "op-turkish-straits-crisis": {
+  "name": "Turkish Straits crisis",
+  "kind": "Soviet pressure on Turkey over the Straits, from 1946",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Turkish_Straits_crisis"
  },
  "op-twenty-second-amendment-to-the-united-states-constitution": {
   "name": "22nd Amendment",

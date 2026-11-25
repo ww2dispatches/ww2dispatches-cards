@@ -222,6 +222,13 @@
   "wikidata": "Q330417",
   "source": "https://en.wikipedia.org/wiki/Bristol_Blenheim"
  },
+ "aircraft-bristol-bombay": {
+  "name": "Bristol Bombay",
+  "kind": "British transport and bomber aircraft",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bristol_Bombay"
+ },
  "aircraft-caproni-ca-161": {
   "name": "Caproni Ca.161",
   "kind": "Italian high altitude record biplane",
@@ -1099,6 +1106,13 @@
    "Tsurugi"
   ]
  },
+ "aircraft-nakajima-kikka": {
+  "name": "Nakajima Kikka",
+  "kind": "Japanese twin jet attack aircraft prototype",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Nakajima_Kikka"
+ },
  "aircraft-noorduyn-norseman": {
   "name": "Noorduyn Norseman",
   "kind": "utility transport (UC-64 in USAAF service)",
@@ -1162,6 +1176,13 @@
   "nation": "US",
   "wikidata": "Q7122350",
   "source": "https://en.wikipedia.org/wiki/Pacific_Clipper"
+ },
+ "aircraft-piaggio-p-108": {
+  "name": "Piaggio P.108",
+  "kind": "Italian four engine heavy bomber",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Piaggio_P.108"
  },
  "aircraft-piasecki-pv-2": {
   "name": "Piasecki PV-2",

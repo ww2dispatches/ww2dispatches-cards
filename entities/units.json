@@ -167,6 +167,13 @@
   "wikidata": "Q169932",
   "source": "https://en.wikipedia.org/wiki/11th_Panzer_Division"
  },
+ "unit-120th-infantry-regiment-united-states": {
+  "name": "120th Infantry Regiment",
+  "kind": "U.S. Army infantry regiment, 30th Infantry Division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/120th_Infantry_Regiment_(United_States)"
+ },
  "unit-126th-infantry-regiment-united-states": {
   "name": "126th Infantry Regiment",
   "kind": "U.S. Army infantry regiment",
@@ -504,6 +511,17 @@
   "nation": "US",
   "wikidata": "Q163669",
   "source": "https://en.wikipedia.org/wiki/1st_Marine_Division"
+ },
+ "unit-1st-marine-raider-battalion": {
+  "name": "1st Marine Raider Battalion",
+  "kind": "U.S. Marine raider battalion (Edson's Raiders)",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1st_Marine_Raider_Battalion",
+  "aka": [
+   "1st Raider Battalion",
+   "Edson's Raiders"
+  ]
  },
  "unit-1st-panzer-army": {
   "name": "First Panzer Army",
@@ -3486,6 +3504,13 @@
    "JG 2"
   ]
  },
+ "unit-jagdgeschwader-27": {
+  "name": "Jagdgeschwader 27",
+  "kind": "Luftwaffe fighter wing",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Jagdgeschwader_27"
+ },
  "unit-jagdgeschwader-400": {
   "name": "Jagdgeschwader 400",
   "kind": "Luftwaffe rocket fighter wing (Me 163)",
@@ -5378,6 +5403,16 @@
   "wikidata": "Q94291",
   "source": "https://en.wikipedia.org/wiki/Tactical_Air_Command"
  },
+ "unit-tainan-air-group": {
+  "name": "Tainan Air Group",
+  "kind": "Imperial Japanese Navy fighter air group",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tainan_Air_Group",
+  "aka": [
+   "Tainan Kokutai"
+  ]
+ },
  "unit-teishin-shudan": {
   "name": "Teishin Shudan",
   "kind": "Imperial Japanese Army airborne force",
@@ -5988,6 +6023,13 @@
   "nation": "Germany",
   "wikidata": "Q316545",
   "source": "https://en.wikipedia.org/wiki/Werwolf"
+ },
+ "unit-western-defense-command": {
+  "name": "Western Defense Command",
+  "kind": "U.S. Army command for the West Coast",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Western_Defense_Command"
  },
  "unit-western-front-soviet-union": {
   "name": "Western Front",

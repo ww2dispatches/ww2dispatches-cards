@@ -3061,6 +3061,15 @@
   "lat": 41.2167,
   "lon": 13.75
  },
+ "place-gavutu": {
+  "name": "Gavutu",
+  "kind": "islet in the Solomon Islands",
+  "nation": "Solomon Islands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Gavutu",
+  "lat": null,
+  "lon": null
+ },
  "place-gdansk": {
   "name": "Gdansk",
   "kind": "Baltic port city, Danzig in 1942",
@@ -4619,6 +4628,15 @@
   ],
   "lat": 53.7444,
   "lon": -0.3325
+ },
+ "place-kisarazu-air-field": {
+  "name": "Kisarazu Air Field",
+  "kind": "Imperial Japanese Navy airfield on Tokyo Bay",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kisarazu_Air_Field",
+  "lat": null,
+  "lon": null
  },
  "place-kiska": {
   "name": "Kiska",
@@ -6384,6 +6402,15 @@
   "lat": 14.68,
   "lon": 120.2683
  },
+ "place-mortain": {
+  "name": "Mortain",
+  "kind": "town in Normandy, France",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mortain",
+  "lat": null,
+  "lon": null
+ },
  "place-mortsel": {
   "name": "Mortsel",
   "kind": "town near Antwerp",
@@ -7622,6 +7649,15 @@
   "lat": 37.943,
   "lon": 23.6469
  },
+ "place-pisa": {
+  "name": "Pisa",
+  "kind": "city in Tuscany, Italy",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Pisa",
+  "lat": null,
+  "lon": null
+ },
  "place-piscine-molitor": {
   "name": "Piscine Molitor",
   "kind": "public swimming pool in Paris",
@@ -7657,6 +7693,15 @@
   "wikidata": "Q1753950",
   "lat": 48.5834,
   "lon": 7.7458
+ },
+ "place-placentia-bay": {
+  "name": "Placentia Bay",
+  "kind": "bay in Newfoundland, site of the 1941 Atlantic Conference",
+  "nation": "Newfoundland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Placentia_Bay",
+  "lat": null,
+  "lon": null
  },
  "place-ploiesti": {
   "name": "Ploiesti",
