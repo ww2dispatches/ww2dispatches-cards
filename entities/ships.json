@@ -591,6 +591,13 @@
   "wikidata": "Q2380247",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-119"
  },
+ "ship-german-submarine-u-12-1935": {
+  "name": "U 12 (1935)",
+  "kind": "Type IIB U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-12_(1935)"
+ },
  "ship-german-submarine-u-1206": {
   "name": "U-1206",
   "kind": "Kriegsmarine Type VIIC submarine",
@@ -857,6 +864,13 @@
   "nation": "Germany",
   "wikidata": "Q2024618",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-178"
+ },
+ "ship-german-submarine-u-179": {
+  "name": "U 179",
+  "kind": "Type IXD2 U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-179"
  },
  "ship-german-submarine-u-180": {
   "name": "German submarine U-180",
@@ -1477,6 +1491,13 @@
   "aka": [
    "U-374"
   ]
+ },
+ "ship-german-submarine-u-378": {
+  "name": "U 378",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-378"
  },
  "ship-german-submarine-u-379": {
   "name": "U-379",
@@ -2346,6 +2367,13 @@
   "nation": "Germany",
   "wikidata": "Q15644562",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-640"
+ },
+ "ship-german-submarine-u-643": {
+  "name": "U 643",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-643"
  },
  "ship-german-submarine-u-649": {
   "name": "U-649",
@@ -4322,6 +4350,13 @@
   "nation": "Britain",
   "wikidata": "Q1565081",
   "source": "https://en.wikipedia.org/wiki/HMS_Mohawk_(F31)"
+ },
+ "ship-hms-musketeer-g86": {
+  "name": "HMS Musketeer (G86)",
+  "kind": "Royal Navy destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Musketeer_(G86)"
  },
  "ship-hms-nabob": {
   "name": "HMS Nabob (D77)",
@@ -6921,6 +6956,13 @@
   "nation": "Poland",
   "wikidata": "Q118203",
   "source": "https://en.wikipedia.org/wiki/ORP_Grom_(1936)"
+ },
+ "ship-orp-orkan-g90": {
+  "name": "ORP Orkan (G90)",
+  "kind": "Polish Navy destroyer, ex HMS Myrmidon",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/ORP_Orkan_(G90)"
  },
  "ship-orp-orzel-1938": {
   "name": "ORP Orzel (1938)",

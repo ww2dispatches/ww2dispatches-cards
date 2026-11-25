@@ -430,6 +430,13 @@
   "wikidata": "Q4557601",
   "source": "https://en.wikipedia.org/wiki/18th_Indian_Infantry_Brigade"
  },
+ "unit-18th-infantry-regiment-united-states": {
+  "name": "18th Infantry Regiment (United States)",
+  "kind": "US Army infantry regiment, 1st Infantry Division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/18th_Infantry_Regiment_(United_States)"
+ },
  "unit-18th-pomeranian-uhlan-regiment": {
   "name": "18th Pomeranian Uhlan Regiment",
   "kind": "Polish cavalry regiment",
@@ -802,6 +809,13 @@
   "nation": "Germany",
   "source": "https://en.wikipedia.org/wiki/22nd_Panzer_Division",
   "wikidata": "Q214479"
+ },
+ "unit-23rd-infantry-division-wehrmacht": {
+  "name": "23rd Infantry Division (Wehrmacht)",
+  "kind": "German infantry division",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/23rd_Infantry_Division_(Wehrmacht)"
  },
  "unit-24th-army-soviet-union": {
   "name": "24th Army (Soviet Union)",
@@ -1606,6 +1620,13 @@
   "nation": "Italy",
   "wikidata": "Q3599209",
   "source": "https://en.wikipedia.org/wiki/4th_Infantry_Division_%22Livorno%22"
+ },
+ "unit-4th-infantry-regiment-imperial-japanese-army": {
+  "name": "4th Infantry Regiment (Imperial Japanese Army)",
+  "kind": "Japanese infantry regiment",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/4th_Infantry_Regiment_(Imperial_Japanese_Army)"
  },
  "unit-4th-marine-division": {
   "name": "4th Marine Division",
@@ -5528,6 +5549,13 @@
   "aka": [
    "Project RAND"
   ]
+ },
+ "unit-raytheon": {
+  "name": "Raytheon",
+  "kind": "US electronics and radar maker",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Raytheon"
  },
  "unit-red-orchestra-espionage": {
   "name": "Red Orchestra",

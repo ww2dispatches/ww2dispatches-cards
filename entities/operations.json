@@ -2010,6 +2010,13 @@
    "Operation Mercury"
   ]
  },
+ "op-battle-of-crucifix-hill": {
+  "name": "Battle of Crucifix Hill",
+  "kind": "1944 fight for the hill outside Aachen",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Crucifix_Hill"
+ },
  "op-battle-of-dakar": {
   "name": "Battle of Dakar",
   "kind": "failed Allied naval and landing operation",
@@ -3156,6 +3163,13 @@
   "nation": "US",
   "wikidata": "Q1475679",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Tassafaronga"
+ },
+ "op-battle-of-tehumardi": {
+  "name": "Battle of Tehumardi",
+  "kind": "1944 night battle on Saaremaa",
+  "nation": "Estonia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Tehumardi"
  },
  "op-battle-of-teruel": {
   "name": "Battle of Teruel",
@@ -5069,6 +5083,13 @@
   "wikidata": "Q5166658",
   "source": "https://en.wikipedia.org/wiki/Convoy_SC_130"
  },
+ "op-convoy-sc-143": {
+  "name": "Convoy SC 143",
+  "kind": "1943 North Atlantic convoy battle",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Convoy_SC_143"
+ },
  "op-convoy-sc-42": {
   "name": "Convoy SC 42",
   "kind": "convoy battle",
@@ -6399,6 +6420,13 @@
   "nation": "Germany",
   "wikidata": "Q5576335",
   "source": "https://en.wikipedia.org/wiki/Godesberg_Memorandum"
+ },
+ "op-gold-mining-in-the-united-states": {
+  "name": "Gold mining in the United States",
+  "kind": "US gold industry, closed by WPB Order L 208 in 1942",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Gold_mining_in_the_United_States"
  },
  "op-gouzenko-affair": {
   "name": "Gouzenko Affair",
@@ -8112,6 +8140,13 @@
    "Mechelen affair"
   ]
  },
+ "op-merchant-marine-distinguished-service-medal": {
+  "name": "Merchant Marine Distinguished Service Medal",
+  "kind": "US merchant marine decoration, established 1942",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Merchant_Marine_Distinguished_Service_Medal"
+ },
  "op-mexican-declaration-of-war-on-germany-italy-and-japan": {
   "name": "Mexican declaration of war on Germany, Italy, and Japan",
   "kind": "Mexico enters the war, 22 May 1942",
@@ -8822,6 +8857,13 @@
   "nation": "Germany",
   "wikidata": "Q83055",
   "source": "https://en.wikipedia.org/wiki/Operation_Barbarossa"
+ },
+ "op-operation-basalt": {
+  "name": "Operation Basalt",
+  "kind": "1942 British commando raid on Sark",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Basalt"
  },
  "op-operation-battleaxe": {
   "name": "Operation Battleaxe",
@@ -10304,6 +10346,13 @@
   "nation": "Britain",
   "wikidata": "Q16821488",
   "source": "https://en.wikipedia.org/wiki/Pointblank_directive"
+ },
+ "op-polish-areas-annexed-by-nazi-germany": {
+  "name": "Polish areas annexed by Nazi Germany",
+  "kind": "1939 German annexation of western Poland",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Polish_areas_annexed_by_Nazi_Germany"
  },
  "op-ponary-massacre": {
   "name": "Ponary massacre",

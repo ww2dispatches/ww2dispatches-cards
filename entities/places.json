@@ -1843,6 +1843,15 @@
   "lat": -6.25,
   "lon": 155.0333
  },
+ "place-cape-town": {
+  "name": "Cape Town",
+  "kind": "port city in South Africa",
+  "nation": "South Africa",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Cape_Town",
+  "lat": null,
+  "lon": null
+ },
  "place-cape-wom": {
   "name": "Cape Wom",
   "kind": "headland and airstrip near Wewak",
@@ -3294,6 +3303,15 @@
   "source": "https://en.wikipedia.org/wiki/Esztergom",
   "lat": 47.7856,
   "lon": 18.7403
+ },
+ "place-ewell": {
+  "name": "Ewell",
+  "kind": "town in Surrey",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ewell",
+  "lat": null,
+  "lon": null
  },
  "place-exeter": {
   "name": "Exeter",
@@ -5234,6 +5252,15 @@
    "hollow tooth"
   ]
  },
+ "place-kaiserwald-concentration-camp": {
+  "name": "Kaiserwald concentration camp",
+  "kind": "Nazi concentration camp near Riga",
+  "nation": "Latvia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kaiserwald_concentration_camp",
+  "lat": null,
+  "lon": null
+ },
  "place-kalach-na-donu": {
   "name": "Kalach",
   "kind": "town",
@@ -6263,6 +6290,19 @@
   "lat": 50.1436,
   "lon": 14.1902
  },
+ "place-liepaja": {
+  "name": "Liepaja",
+  "kind": "port city in Latvia",
+  "nation": "Latvia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Liep%C4%81ja",
+  "aka": [
+   "Liepāja",
+   "Libau"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-limoges": {
   "name": "Limoges",
   "kind": "city in central France",
@@ -7020,6 +7060,15 @@
   "source": "https://en.wikipedia.org/wiki/Massawa",
   "lat": 15.6,
   "lon": 39.4333
+ },
+ "place-matanikau-river": {
+  "name": "Matanikau River",
+  "kind": "river on Guadalcanal",
+  "nation": "Solomon Islands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Matanikau_River",
+  "lat": null,
+  "lon": null
  },
  "place-mattsee": {
   "name": "Mattsee",
@@ -9595,6 +9644,27 @@
   "wikidata": "Q320008",
   "source": "https://en.wikipedia.org/wiki/Reichsautobahn"
  },
+ "place-reichsgau-danzig-west-prussia": {
+  "name": "Reichsgau Danzig West Prussia",
+  "kind": "German province carved from annexed Polish Pomerania and Danzig",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Reichsgau_Danzig-West_Prussia",
+  "lat": null,
+  "lon": null
+ },
+ "place-reichsgau-wartheland": {
+  "name": "Reichsgau Wartheland",
+  "kind": "German province carved from annexed western Poland",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Reichsgau_Wartheland",
+  "aka": [
+   "Warthegau"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-reichstag-building": {
   "name": "Reichstag building",
   "kind": "parliament building, Berlin",
@@ -11399,6 +11469,15 @@
   "aka": [
    "Teheran"
   ]
+ },
+ "place-tehumardi": {
+  "name": "Tehumardi",
+  "kind": "village on Saaremaa",
+  "nation": "Estonia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tehumardi",
+  "lat": null,
+  "lon": null
  },
  "place-tel-aviv": {
   "name": "Tel Aviv",
