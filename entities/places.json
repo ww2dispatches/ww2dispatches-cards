@@ -179,6 +179,15 @@
   "lat": 31.1975,
   "lon": 29.8925
  },
+ "place-alfacar": {
+  "name": "Alfacar",
+  "kind": "village near Granada",
+  "nation": "Spain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Alfacar",
+  "lat": null,
+  "lon": null
+ },
  "place-algiers": {
   "name": "Algiers",
   "kind": "city",
@@ -205,6 +214,15 @@
   "source": "https://en.wikipedia.org/wiki/Amagasaki",
   "lat": 34.7338,
   "lon": 135.4063
+ },
+ "place-amari-valley": {
+  "name": "Amari Valley",
+  "kind": "valley in Rethymno, Crete",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Amari_Valley",
+  "lat": null,
+  "lon": null
  },
  "place-amba-alagi": {
   "name": "Amba Alagi",
@@ -723,6 +741,15 @@
   "wikidata": "Q745512",
   "lat": 62.3853,
   "lon": -140.893
+ },
+ "place-bedford": {
+  "name": "Bedford",
+  "kind": "county town",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bedford",
+  "lat": null,
+  "lon": null
  },
  "place-beijing": {
   "name": "Beijing",
@@ -1828,6 +1855,15 @@
   "lat": 22.4668,
   "lon": 86.7107
  },
+ "place-chambois": {
+  "name": "Chambois",
+  "kind": "village in Normandy",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Chambois",
+  "lat": null,
+  "lon": null
+ },
  "place-champs-elysees": {
   "name": "Champs-Elysees",
   "kind": "avenue",
@@ -2194,6 +2230,15 @@
   "lat": -33.8183,
   "lon": 148.6578
  },
+ "place-crete": {
+  "name": "Crete",
+  "kind": "Greek island",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Crete",
+  "lat": null,
+  "lon": null
+ },
  "place-crieff": {
   "name": "Crieff",
   "kind": "town",
@@ -2442,6 +2487,15 @@
   "aka": [
    "Detroit Arsenal Tank Plant"
   ]
+ },
+ "place-dieppe": {
+  "name": "Dieppe",
+  "kind": "port town",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Dieppe",
+  "lat": null,
+  "lon": null
  },
  "place-dieuze": {
   "name": "Dieuze",
@@ -3778,6 +3832,15 @@
   "lat": 50.6725,
   "lon": 5.078
  },
+ "place-hanoi": {
+  "name": "Hanoi",
+  "kind": "city",
+  "nation": "Vietnam",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hanoi",
+  "lat": null,
+  "lon": null
+ },
  "place-hardangervidda": {
   "name": "Hardangervidda",
   "kind": "mountain plateau",
@@ -3786,6 +3849,15 @@
   "source": "https://en.wikipedia.org/wiki/Hardangervidda",
   "lat": 60.052,
   "lon": 7.018
+ },
+ "place-harrow-london": {
+  "name": "Harrow",
+  "kind": "town in northwest London, then in Middlesex",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Harrow,_London",
+  "lat": null,
+  "lon": null
  },
  "place-hartford-connecticut": {
   "name": "Hartford, Connecticut",
@@ -3945,6 +4017,19 @@
   "wikidata": "Q6916",
   "lat": 50.8667,
   "lon": 6.1
+ },
+ "place-hill-262": {
+  "name": "Hill 262",
+  "kind": "ridge on Mont Ormel",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hill_262",
+  "aka": [
+   "Mont Ormel",
+   "Maczuga"
+  ],
+  "lat": null,
+  "lon": null
  },
  "place-hilo-hawaii": {
   "name": "Hilo, Hawaii",
@@ -4299,6 +4384,15 @@
   "wikidata": "Q643891",
   "lat": 52.5319,
   "lon": 13.3711
+ },
+ "place-ironbottom-sound": {
+  "name": "Ironbottom Sound",
+  "kind": "strait off Guadalcanal",
+  "nation": "Solomon Islands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ironbottom_Sound",
+  "lat": null,
+  "lon": null
  },
  "place-isle-of-dogs": {
   "name": "Isle of Dogs",
@@ -4689,6 +4783,15 @@
   "source": "https://en.wikipedia.org/wiki/Kaysersberg",
   "lat": 48.1392,
   "lon": 7.2608
+ },
+ "place-kearny-new-jersey": {
+  "name": "Kearny, New Jersey",
+  "kind": "industrial town",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kearny,_New_Jersey",
+  "lat": null,
+  "lon": null
  },
  "place-kehl": {
   "name": "Kehl",
@@ -6061,6 +6164,18 @@
   "wikidata": "Q1786933",
   "lat": 51.5132,
   "lon": -0.0894
+ },
+ "place-mantes-la-jolie": {
+  "name": "Mantes-la-Jolie",
+  "kind": "town on the Seine",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mantes-la-Jolie",
+  "aka": [
+   "Mantes-Gassicourt"
+  ],
+  "lat": null,
+  "lon": null
  },
  "place-manzanar": {
   "name": "Manzanar",
@@ -8094,6 +8209,15 @@
   "source": "https://en.wikipedia.org/wiki/Port_Blair",
   "lat": 11.6667,
   "lon": 92.75
+ },
+ "place-port-de-bouc": {
+  "name": "Port-de-Bouc",
+  "kind": "port near Marseille",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Port-de-Bouc",
+  "lat": null,
+  "lon": null
  },
  "place-port-moresby": {
   "name": "Port Moresby",

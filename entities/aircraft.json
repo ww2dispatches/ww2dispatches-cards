@@ -1413,6 +1413,13 @@
    "Corsair"
   ]
  },
+ "aircraft-vought-os2u-kingfisher": {
+  "name": "Vought OS2U Kingfisher",
+  "kind": "observation floatplane",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Vought_OS2U_Kingfisher"
+ },
  "aircraft-waco-cg-4": {
   "name": "Waco CG-4",
   "kind": "U.S. military glider",

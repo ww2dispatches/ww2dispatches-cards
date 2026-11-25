@@ -894,6 +894,13 @@
   "wikidata": "Q481306",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-200"
  },
+ "ship-german-submarine-u-201": {
+  "name": "German submarine U-201",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-201"
+ },
  "ship-german-submarine-u-202": {
   "name": "German submarine U-202",
   "kind": "Type VIIC U-boat",
@@ -1266,6 +1273,13 @@
   "nation": "Germany",
   "wikidata": "Q32804",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-352"
+ },
+ "ship-german-submarine-u-354": {
+  "name": "German submarine U-354",
+  "kind": "U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-354"
  },
  "ship-german-submarine-u-359": {
   "name": "German submarine U-359",
@@ -2115,6 +2129,13 @@
   "wikidata": "Q821683",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-653"
  },
+ "ship-german-submarine-u-654": {
+  "name": "German submarine U-654",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-654"
+ },
  "ship-german-submarine-u-655": {
   "name": "U-655",
   "kind": "Type VIIC U-boat",
@@ -2854,6 +2875,13 @@
   "nation": "New Zealand",
   "wikidata": "Q5631113",
   "source": "https://en.wikipedia.org/wiki/HMNZS_Moa_(T233)"
+ },
+ "ship-hmnzs-tui-t234": {
+  "name": "HMNZS Tui (T234)",
+  "kind": "minesweeper",
+  "nation": "New Zealand",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMNZS_Tui_(T234)"
  },
  "ship-hms-acasta-h09": {
   "name": "HMS Acasta (H09)",
@@ -3763,6 +3791,16 @@
   "nation": "Britain",
   "wikidata": "Q1565081",
   "source": "https://en.wikipedia.org/wiki/HMS_Mohawk_(F31)"
+ },
+ "ship-hms-nabob": {
+  "name": "HMS Nabob (D77)",
+  "kind": "escort carrier, Canadian manned",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Nabob",
+  "aka": [
+   "USS Edisto"
+  ]
  },
  "ship-hms-naiad-93": {
   "name": "HMS Naiad (93)",
@@ -5568,6 +5606,16 @@
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Yukikaze_(1939)",
   "wikidata": "Q715894"
  },
+ "ship-japanese-landing-craft-carrier-tamatsu-maru": {
+  "name": "Tamatsu Maru",
+  "kind": "landing craft depot ship",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_landing_craft_carrier_Tamatsu_Maru",
+  "aka": [
+   "Tamatsu Maru"
+  ]
+ },
  "ship-japanese-seaplane-carrier-mizuho": {
   "name": "Japanese seaplane carrier Mizuho",
   "kind": "seaplane carrier",
@@ -6330,6 +6378,13 @@
   "wikidata": "Q7866984",
   "source": "https://en.wikipedia.org/wiki/SS_Absaroka"
  },
+ "ship-ss-aguila-1916": {
+  "name": "SS Aguila (1916)",
+  "kind": "passenger cargo ship",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Aguila_(1916)"
+ },
  "ship-ss-alcoa-puritan-1941": {
   "name": "SS Alcoa Puritan (1941)",
   "kind": "American cargo ship sunk by U-507",
@@ -6991,6 +7046,13 @@
   "wikidata": "Q21540226",
   "source": "https://en.wikipedia.org/wiki/TSS_St_David_(1931)"
  },
+ "ship-tsushima-maru": {
+  "name": "Tsushima Maru",
+  "kind": "Japanese cargo liner, evacuee transport",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tsushima_Maru"
+ },
  "ship-usat-arcata": {
   "name": "USAT Arcata",
   "kind": "U.S. Army transport, cargo ship",
@@ -7250,6 +7312,13 @@
   "wikidata": "Q3268973",
   "source": "https://en.wikipedia.org/wiki/USS_Blower"
  },
+ "ship-uss-blue-dd-387": {
+  "name": "USS Blue (DD-387)",
+  "kind": "destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Blue_(DD-387)"
+ },
  "ship-uss-bluefish-ss-222": {
   "name": "USS Bluefish (SS-222)",
   "kind": "U.S. Navy Gato class submarine",
@@ -7277,6 +7346,13 @@
   "nation": "US",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/USS_Borie_(DD-215)"
+ },
+ "ship-uss-bowfin": {
+  "name": "USS Bowfin (SS-287)",
+  "kind": "submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Bowfin"
  },
  "ship-uss-branch-dd-197": {
   "name": "USS Branch (DD-197)",
@@ -7396,6 +7472,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/USS_Chanticleer_(ASR-7)",
   "wikidata": "Q7868208"
+ },
+ "ship-uss-chemung-ao-30": {
+  "name": "USS Chemung (AO-30)",
+  "kind": "fleet oiler",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Chemung_(AO-30)"
  },
  "ship-uss-chicago-ca-29": {
   "name": "USS Chicago (CA-29)",
@@ -7873,6 +7956,13 @@
   "nation": "US",
   "wikidata": "Q600180",
   "source": "https://en.wikipedia.org/wiki/USS_Indianapolis_(CA-35)"
+ },
+ "ship-uss-ingraham-dd-444": {
+  "name": "USS Ingraham (DD-444)",
+  "kind": "destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Ingraham_(DD-444)"
  },
  "ship-uss-intrepid-cv-11": {
   "name": "USS Intrepid (CV-11)",
@@ -8706,6 +8796,13 @@
   "nation": "United States",
   "source": "https://en.wikipedia.org/wiki/USS_South_Dakota_(BB-57)",
   "wikidata": "Q186528"
+ },
+ "ship-uss-spadefish-ss-411": {
+  "name": "USS Spadefish (SS-411)",
+  "kind": "submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Spadefish_(SS-411)"
  },
  "ship-uss-spence": {
   "name": "USS Spence (DD-512)",

@@ -55,6 +55,13 @@
   "wikidata": "Q85722101",
   "source": "https://en.wikipedia.org/wiki/1932_Prussian_state_election"
  },
+ "op-1934-german-head-of-state-referendum": {
+  "name": "1934 German head of state referendum",
+  "kind": "plebiscite",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1934_German_head_of_state_referendum"
+ },
  "op-1935-saar-status-referendum": {
   "name": "1935 Saar status referendum",
   "kind": "plebiscite",
@@ -1217,6 +1224,13 @@
   "nation": "Britain",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/August_Offer"
+ },
+ "op-august-revolution": {
+  "name": "August Revolution",
+  "kind": "uprising",
+  "nation": "Vietnam",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/August_Revolution"
  },
  "op-augustow-roundup": {
   "name": "Augustów roundup",
@@ -3208,6 +3222,17 @@
   "wikidata": "Q261776",
   "source": "https://en.wikipedia.org/wiki/Battles_of_Rzhev"
  },
+ "op-bbc-proms": {
+  "name": "BBC Proms",
+  "kind": "concert series",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/BBC_Proms",
+  "aka": [
+   "The Proms",
+   "Henry Wood Promenade Concerts"
+  ]
+ },
  "op-beaumont-race-riot-of-1943": {
   "name": "Beaumont race riot of 1943",
   "kind": "racial violence in a wartime shipbuilding city",
@@ -4368,6 +4393,13 @@
   "wikidata": "Q5166625",
   "source": "https://en.wikipedia.org/wiki/Convoy_HX_90"
  },
+ "op-convoy-og-71": {
+  "name": "Convoy OG 71",
+  "kind": "Atlantic convoy",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Convoy_OG_71"
+ },
  "op-convoy-on-166": {
   "name": "Convoy ON 166",
   "kind": "Atlantic convoy battle",
@@ -4688,6 +4720,16 @@
   "nation": "Germany",
   "wikidata": "Q5266335",
   "source": "https://en.wikipedia.org/wiki/Deutschland_incident_(1937)"
+ },
+ "op-dieppe-raid": {
+  "name": "Dieppe Raid",
+  "kind": "amphibious raid",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Dieppe_Raid",
+  "aka": [
+   "Operation Jubilee"
+  ]
  },
  "op-direct-action-day": {
   "name": "Direct Action Day",
@@ -5730,6 +5772,13 @@
    "Fuhrereid"
   ]
  },
+ "op-hitler-s-obersalzberg-speech": {
+  "name": "Hitler's Obersalzberg Speech",
+  "kind": "speech to Wehrmacht commanders, 22 August 1939",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hitler%27s_Obersalzberg_Speech"
+ },
  "op-ho-sainteny-agreement": {
   "name": "Ho Sainteny Agreement",
   "kind": "Franco Vietnamese accord of 6 March 1946",
@@ -5746,6 +5795,13 @@
   "aka": [
    "Hoare-Laval Plan"
   ]
+ },
+ "op-holocaust-of-kedros": {
+  "name": "Holocaust of Kedros",
+  "kind": "German reprisal massacre, Crete 1944",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Holocaust_of_Kedros"
  },
  "op-holodomor": {
   "name": "Holodomor",
@@ -7985,6 +8041,13 @@
   "wikidata": "Q2427503",
   "source": "https://en.wikipedia.org/wiki/Operation_Goodwood"
  },
+ "op-operation-goodwood-naval": {
+  "name": "Operation Goodwood (naval)",
+  "kind": "British carrier raids on Tirpitz, August 1944",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Goodwood_(naval)"
+ },
  "op-operation-greif": {
   "name": "Operation Greif",
   "kind": "German false flag commando operation",
@@ -9555,6 +9618,13 @@
   "nation": "Germany",
   "wikidata": "Q1498481",
   "source": "https://en.wikipedia.org/wiki/Secret_Meeting_of_20_February_1933"
+ },
+ "op-seine-river-crossing-at-mantes-gassicourt": {
+  "name": "Seine River Crossing at Mantes-Gassicourt",
+  "kind": "river crossing",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Seine_River_Crossing_at_Mantes-Gassicourt"
  },
  "op-selective-training-and-service-act-of-1940": {
   "name": "Selective Training and Service Act",

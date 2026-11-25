@@ -426,6 +426,13 @@
   "wikidata": "Q4596104",
   "source": "https://en.wikipedia.org/wiki/1st_Airlanding_Brigade"
  },
+ "unit-1st-armoured-division-poland": {
+  "name": "1st Armoured Division (Poland)",
+  "kind": "armoured division",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1st_Armoured_Division_(Poland)"
+ },
  "unit-1st-armoured-division-united-kingdom": {
   "name": "1st Armoured Division",
   "kind": "British armoured division",
@@ -1330,6 +1337,13 @@
   "wikidata": "Q4031418",
   "source": "https://en.wikipedia.org/wiki/44th_Rifle_Division"
  },
+ "unit-45th-bombardment-squadron": {
+  "name": "45th Bombardment Squadron",
+  "kind": "USAAF bomber squadron",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/45th_Bombardment_Squadron"
+ },
  "unit-45th-infantry-division-united-states": {
   "name": "45th Infantry Division",
   "kind": "U.S. Army infantry division",
@@ -1762,6 +1776,13 @@
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/79th_Armoured_Division",
   "wikidata": "Q1775432"
+ },
+ "unit-79th-infantry-division-united-states": {
+  "name": "79th Infantry Division (United States)",
+  "kind": "infantry division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/79th_Infantry_Division_(United_States)"
  },
  "unit-79th-rifle-corps": {
   "name": "79th Rifle Corps",
@@ -3914,6 +3935,14 @@
    "National Foundation for Infantile Paralysis"
   ]
  },
+ "unit-marine-defense-battalions": {
+  "name": "Marine defense battalions",
+  "kind": "Marine Corps coastal defense units",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Marine_defense_battalions",
+  "note": "Covers the 1st Defense Battalion at Wake"
+ },
  "unit-mass-observation": {
   "name": "Mass-Observation",
   "kind": "British social research project recording everyday life",
@@ -5998,6 +6027,13 @@
   "source": "https://en.wikipedia.org/wiki/Vickers",
   "wikidata": "Q13220673"
  },
+ "unit-viet-minh": {
+  "name": "Viet Minh",
+  "kind": "independence coalition",
+  "nation": "Vietnam",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Viet_Minh"
+ },
  "unit-vii-corps-united-states": {
   "name": "VII Corps",
   "kind": "U.S. Army corps",
@@ -6310,6 +6346,17 @@
   "source": "https://en.wikipedia.org/wiki/Women%27s_Auxiliary_Air_Force",
   "aka": [
    "WAAF"
+  ]
+ },
+ "unit-women-s-royal-naval-service": {
+  "name": "Women's Royal Naval Service",
+  "kind": "women's naval service (Wrens)",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Women%27s_Royal_Naval_Service",
+  "aka": [
+   "Wrens",
+   "WRNS"
   ]
  },
  "unit-works-progress-administration": {
