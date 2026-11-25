@@ -4249,6 +4249,13 @@
   "wikidata": "Q179975",
   "source": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
  },
+ "op-chongqing-negotiations": {
+  "name": "Chongqing Negotiations",
+  "kind": "negotiations",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Chongqing_Negotiations"
+ },
  "op-cinema-rex-bombing": {
   "name": "Cinema Rex bombing",
   "kind": "V-2 strike on a cinema",
@@ -4709,6 +4716,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q716521",
   "source": "https://en.wikipedia.org/wiki/Deportation_of_Koreans_in_the_Soviet_Union"
+ },
+ "op-deportation-of-soviet-germans-1941-1942": {
+  "name": "Deportation of Soviet Germans (1941 to 1942)",
+  "kind": "mass deportation",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Deportation_of_Soviet_Germans_(1941%E2%80%931942)"
  },
  "op-deportation-of-the-chechens-and-ingush": {
   "name": "Deportation of the Chechens and Ingush",
@@ -10020,6 +10034,16 @@
   "wikidata": "Q2006230",
   "source": "https://en.wikipedia.org/wiki/Soviet_atomic_bomb_project"
  },
+ "op-soviet-evacuation-of-tallinn": {
+  "name": "Soviet evacuation of Tallinn",
+  "kind": "naval evacuation",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Soviet_evacuation_of_Tallinn",
+  "aka": [
+   "Tallinn evacuation"
+  ]
+ },
  "op-soviet-invasion-of-manchuria": {
   "name": "Soviet invasion of Manchuria",
   "kind": "Soviet offensive against Japan, August 1945",
@@ -10314,6 +10338,13 @@
   "nation": "US",
   "wikidata": "Q124458990",
   "source": "https://en.wikipedia.org/wiki/Talisay_Landing"
+ },
+ "op-tarnow-railway-station-bombing": {
+  "name": "Tarnów railway station bombing",
+  "kind": "sabotage bombing",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tarn%C3%B3w_railway_station_bombing"
  },
  "op-task-force-baum": {
   "name": "Task Force Baum",

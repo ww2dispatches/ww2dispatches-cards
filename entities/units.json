@@ -5742,6 +5742,16 @@
   "wikidata": "Q217475",
   "source": "https://en.wikipedia.org/wiki/Tokyo_Stock_Exchange"
  },
+ "unit-toyota": {
+  "name": "Toyota Motor Co.",
+  "kind": "automobile company",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Toyota",
+  "aka": [
+   "Toyota"
+  ]
+ },
  "unit-trans-world-airlines": {
   "name": "Trans World Airlines",
   "kind": "airline",

@@ -7272,6 +7272,19 @@
    "Marineschule Mürwik"
   ]
  },
+ "place-naval-air-facility-atsugi": {
+  "name": "Naval Air Facility Atsugi",
+  "kind": "airfield",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Naval_Air_Facility_Atsugi",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Atsugi airfield",
+   "Atsugi Airdrome"
+  ]
+ },
  "place-naval-air-station-corpus-christi": {
   "name": "Naval Air Station Corpus Christi",
   "kind": "naval air station, Texas",
@@ -10272,6 +10285,15 @@
    "Tarakan"
   ]
  },
+ "place-tarnow": {
+  "name": "Tarnów",
+  "kind": "city",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tarn%C3%B3w",
+  "lat": null,
+  "lon": null
+ },
  "place-tassafaronga-point": {
   "name": "Tassafaronga",
   "kind": "point",
@@ -11140,6 +11162,15 @@
   "wikidata": "Q626",
   "lat": 45.695,
   "lon": 47.8975
+ },
+ "place-volga-german-autonomous-soviet-socialist-republic": {
+  "name": "Volga German Autonomous Soviet Socialist Republic",
+  "kind": "autonomous republic, abolished 1941",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Volga_German_Autonomous_Soviet_Socialist_Republic",
+  "lat": null,
+  "lon": null
  },
  "place-volgograd": {
   "name": "Stalingrad",

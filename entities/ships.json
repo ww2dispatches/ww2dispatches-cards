@@ -2081,6 +2081,13 @@
   "wikidata": "Q4052069",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-638"
  },
+ "ship-german-submarine-u-639": {
+  "name": "U-639",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-639"
+ },
  "ship-german-submarine-u-64-1939": {
   "name": "German submarine U-64 (1939)",
   "kind": "Type IXB U-boat",
@@ -2438,6 +2445,13 @@
   "wikidata": "Q4052087",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-858"
  },
+ "ship-german-submarine-u-859": {
+  "name": "U-859",
+  "kind": "U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-859"
+ },
  "ship-german-submarine-u-862": {
   "name": "U-862",
   "kind": "German Type IXD2 U-boat",
@@ -2779,6 +2793,13 @@
   "nation": "Canada",
   "wikidata": "Q16997438",
   "source": "https://en.wikipedia.org/wiki/HMCS_Matane"
+ },
+ "ship-hmcs-oakville": {
+  "name": "HMCS Oakville (K178)",
+  "kind": "corvette",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMCS_Oakville"
  },
  "ship-hmcs-prescott": {
   "name": "HMCS Prescott",
@@ -5266,6 +5287,13 @@
   "wikidata": "Q2991398",
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Arare_(1937)"
  },
+ "ship-japanese-destroyer-asagiri-1929": {
+  "name": "Japanese destroyer Asagiri (1929)",
+  "kind": "destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Asagiri_(1929)"
+ },
  "ship-japanese-destroyer-asagumo-1937": {
   "name": "Asagumo",
   "kind": "destroyer",
@@ -6343,6 +6371,13 @@
   "wikidata": "Q625427",
   "source": "https://en.wikipedia.org/wiki/Soviet_submarine_L-3"
  },
+ "ship-soviet-submarine-s-101": {
+  "name": "Soviet submarine S-101",
+  "kind": "submarine",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Soviet_submarine_S-101"
+ },
  "ship-soviet-submarine-s-13": {
   "name": "Soviet submarine S-13",
   "kind": "S class submarine",
@@ -6753,6 +6788,13 @@
   "nation": "Australia",
   "wikidata": "Q65089601",
   "source": "https://en.wikipedia.org/wiki/SS_Iron_Crown"
+ },
+ "ship-ss-john-barry": {
+  "name": "SS John Barry",
+  "kind": "Liberty ship",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_John_Barry"
  },
  "ship-ss-john-harvey": {
   "name": "SS John Harvey",
