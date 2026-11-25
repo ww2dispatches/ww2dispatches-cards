@@ -411,6 +411,18 @@
   "lat": 35.4482,
   "lon": -84.6021
  },
+ "place-atomic-energy-research-establishment": {
+  "name": "Atomic Energy Research Establishment",
+  "kind": "nuclear research site, Harwell",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Atomic_Energy_Research_Establishment",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Harwell"
+  ]
+ },
  "place-attu-island": {
   "name": "Attu Island",
   "kind": "island",
@@ -2182,6 +2194,15 @@
   "lat": 39.1167,
   "lon": -84.5353
  },
+ "place-croydon-airport": {
+  "name": "Croydon Airport",
+  "kind": "airport and RAF fighter station, south London",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Croydon_Airport",
+  "lat": null,
+  "lon": null
+ },
  "place-crveni-krst-concentration-camp": {
   "name": "Crveni Krst concentration camp",
   "kind": "Nazi concentration camp, Nis",
@@ -2364,6 +2385,18 @@
   "source": "https://en.wikipedia.org/wiki/Detroit",
   "lat": 42.3317,
   "lon": -83.0475
+ },
+ "place-detroit-arsenal-warren-michigan": {
+  "name": "Detroit Arsenal (Warren, Michigan)",
+  "kind": "tank plant",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Detroit_Arsenal_(Warren,_Michigan)",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Detroit Arsenal Tank Plant"
+  ]
  },
  "place-dieuze": {
   "name": "Dieuze",
@@ -4121,6 +4154,15 @@
   "lat": 50.1256,
   "lon": 8.6675
  },
+ "place-iheya-island": {
+  "name": "Iheya Island",
+  "kind": "island north of Okinawa",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Iheya_Island",
+  "lat": null,
+  "lon": null
+ },
  "place-ijmuiden": {
   "name": "IJmuiden",
   "kind": "port town",
@@ -5351,6 +5393,18 @@
   "source": "https://en.wikipedia.org/wiki/Leuna_works",
   "lat": 51.3186,
   "lon": 12.0083
+ },
+ "place-levant-island": {
+  "name": "Levant Island",
+  "kind": "island off the French Riviera",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Levant_Island",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Île du Levant"
+  ]
  },
  "place-leyte": {
   "name": "Leyte",
@@ -10069,6 +10123,15 @@
   "lon": -97.3866,
   "source": "https://en.wikipedia.org/wiki/Tinker_Air_Force_Base"
  },
+ "place-tinos": {
+  "name": "Tinos",
+  "kind": "Greek island, Cyclades",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tinos",
+  "lat": null,
+  "lon": null
+ },
  "place-tirana": {
   "name": "Tirana",
   "kind": "capital of Albania",
@@ -10234,6 +10297,15 @@
   "source": "https://en.wikipedia.org/wiki/Tours",
   "lat": 47.3928,
   "lon": 0.6883
+ },
+ "place-tower-of-london": {
+  "name": "Tower of London",
+  "kind": "castle, London",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tower_of_London",
+  "lat": null,
+  "lon": null
  },
  "place-toyama-bay": {
   "name": "Toyama Bay",

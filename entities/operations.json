@@ -126,6 +126,13 @@
   "wikidata": "Q57997805",
   "source": "https://en.wikipedia.org/wiki/1939_Nazi_rally_at_Madison_Square_Garden"
  },
+ "op-1939-neuhammer-disaster": {
+  "name": "1939 Neuhammer disaster",
+  "kind": "training accident",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1939_Neuhammer_disaster"
+ },
  "op-1939-new-york-world-s-fair": {
   "name": "1939 New York World's Fair",
   "kind": "world's fair",
@@ -7648,6 +7655,13 @@
   "wikidata": "Q640690",
   "source": "https://en.wikipedia.org/wiki/Operation_Cornflakes"
  },
+ "op-operation-cottage": {
+  "name": "Operation Cottage",
+  "kind": "amphibious landing, Kiska",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Cottage"
+ },
  "op-operation-crossbow": {
   "name": "Operation Crossbow",
   "kind": "Allied campaign against the V weapons",
@@ -7699,6 +7713,16 @@
   "nation": "Britain",
   "wikidata": "Q7097003",
   "source": "https://en.wikipedia.org/wiki/Operation_Dracula"
+ },
+ "op-operation-dragoon": {
+  "name": "Operation Dragoon",
+  "kind": "invasion of southern France",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Dragoon",
+  "aka": [
+   "Operation Anvil"
+  ]
  },
  "op-operation-ef-1941": {
   "name": "Operation EF (1941)",

@@ -2216,6 +2216,13 @@
   "wikidata": "Q549452",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-73_(1940)"
  },
+ "ship-german-submarine-u-741": {
+  "name": "German submarine U-741",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-741"
+ },
  "ship-german-submarine-u-744": {
   "name": "German submarine U-744",
   "kind": "Type VIIC U-boat",
@@ -2540,6 +2547,13 @@
   "aka": [
    "USS Mississippi (BB-23)"
   ]
+ },
+ "ship-greek-cruiser-elli-1912": {
+  "name": "Greek cruiser Elli (1912)",
+  "kind": "protected cruiser",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Greek_cruiser_Elli_(1912)"
  },
  "ship-greek-destroyer-vasilefs-georgios": {
   "name": "Vasilefs Georgios",
@@ -3791,6 +3805,16 @@
   "wikidata": "Q5633594",
   "source": "https://en.wikipedia.org/wiki/HMS_Opportune_(G80)"
  },
+ "ship-hms-orchis": {
+  "name": "HMS Orchis",
+  "kind": "Flower class corvette",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Orchis",
+  "aka": [
+   "HMS Orchis (K76)"
+  ]
+ },
  "ship-hms-orion-85": {
   "name": "HMS Orion (85)",
   "kind": "Leander class light cruiser",
@@ -4683,6 +4707,13 @@
    "UIT-24",
    "I-503"
   ]
+ },
+ "ship-italian-submarine-delfino-1930": {
+  "name": "Italian submarine Delfino (1930)",
+  "kind": "Squalo class submarine",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_submarine_Delfino_(1930)"
  },
  "ship-italian-submarine-leonardo-da-vinci-1939": {
   "name": "Italian submarine Leonardo da Vinci (1939)",
