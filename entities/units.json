@@ -878,6 +878,13 @@
   "source": "https://en.wikipedia.org/wiki/22nd_Panzer_Division",
   "wikidata": "Q214479"
  },
+ "unit-23rd-division-imperial-japanese-army": {
+  "name": "23rd Division (Imperial Japanese Army)",
+  "kind": "infantry division",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/23rd_Division_(Imperial_Japanese_Army)"
+ },
  "unit-23rd-infantry-division-wehrmacht": {
   "name": "23rd Infantry Division (Wehrmacht)",
   "kind": "German infantry division",
@@ -1126,6 +1133,13 @@
   "nation": "United States",
   "source": "https://en.wikipedia.org/wiki/2nd_Marine_Regiment",
   "wikidata": "Q4633782"
+ },
+ "unit-2nd-moroccan-infantry-division": {
+  "name": "2nd Moroccan Infantry Division",
+  "kind": "French infantry division",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/2nd_Moroccan_Infantry_Division"
  },
  "unit-2nd-new-zealand-division": {
   "name": "New Zealand Division",
@@ -2250,6 +2264,13 @@
   "nation": "Britain",
   "wikidata": "Q4644530",
   "source": "https://en.wikipedia.org/wiki/819_Naval_Air_Squadron"
+ },
+ "unit-820-naval-air-squadron": {
+  "name": "820 Naval Air Squadron",
+  "kind": "Fleet Air Arm torpedo bomber squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/820_Naval_Air_Squadron"
  },
  "unit-825-naval-air-squadron": {
   "name": "825 Naval Air Squadron",
@@ -5500,6 +5521,13 @@
   ],
   "wikidata": "Q7043702",
   "source": "https://en.wikipedia.org/wiki/No._62_Commando"
+ },
+ "unit-no-70-squadron-raf": {
+  "name": "No. 70 Squadron RAF",
+  "kind": "bomber squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._70_Squadron_RAF"
  },
  "unit-no-82-squadron-raf": {
   "name": "No. 82 Squadron RAF",

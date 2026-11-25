@@ -1360,6 +1360,13 @@
   "wikidata": "Q2572114",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-278"
  },
+ "ship-german-submarine-u-28-1936": {
+  "name": "German submarine U-28 (1936)",
+  "kind": "U-boat, Type VIIA",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-28_(1936)"
+ },
  "ship-german-submarine-u-282": {
   "name": "U-282",
   "kind": "Type VIIC U-boat",
@@ -2501,6 +2508,13 @@
   "aka": [
    "U-593"
   ]
+ },
+ "ship-german-submarine-u-595": {
+  "name": "German submarine U-595",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-595"
  },
  "ship-german-submarine-u-596": {
   "name": "German submarine U 596",
@@ -3804,6 +3818,13 @@
   "nation": "Britain",
   "wikidata": "Q2625505",
   "source": "https://en.wikipedia.org/wiki/HMS_Argonaut_(61)"
+ },
+ "ship-hms-argus-i49": {
+  "name": "HMS Argus (I49)",
+  "kind": "aircraft carrier",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Argus_(I49)"
  },
  "ship-hms-ark-royal-91": {
   "name": "HMS Ark Royal (91)",
@@ -6257,6 +6278,17 @@
    "Ryujo"
   ]
  },
+ "ship-japanese-aircraft-carrier-shin-yo": {
+  "name": "Japanese aircraft carrier Shin'yo",
+  "kind": "escort carrier",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_aircraft_carrier_Shin%27y%C5%8D",
+  "aka": [
+   "Shinyo"
+  ],
+  "note": "Not the Shinyo suicide motorboat, machine-shinyo-suicide-motorboat."
+ },
  "ship-japanese-aircraft-carrier-shoho": {
   "name": "Shoho",
   "kind": "Imperial Japanese Navy light aircraft carrier",
@@ -7138,6 +7170,13 @@
   "aka": [
    "Japanese aircraft carrier Akitsu Maru"
   ]
+ },
+ "ship-japanese-landing-craft-carrier-mayasan-maru": {
+  "name": "Japanese landing craft carrier Mayasan Maru",
+  "kind": "army landing craft depot ship",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_landing_craft_carrier_Mayasan_Maru"
  },
  "ship-japanese-landing-craft-carrier-tamatsu-maru": {
   "name": "Tamatsu Maru",
@@ -8061,6 +8100,13 @@
   "wikidata": "Q241858",
   "source": "https://en.wikipedia.org/wiki/Japanese_aircraft_carrier_Shinano"
  },
+ "ship-sliedrecht-tanker": {
+  "name": "Sliedrecht",
+  "kind": "motor tanker",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sliedrecht_(tanker)"
+ },
  "ship-sms-hessen": {
   "name": "SMS Hessen",
   "kind": "pre dreadnought battleship used as an icebreaker",
@@ -8914,6 +8960,21 @@
   "nation": "US",
   "wikidata": "Q60773590",
   "source": "https://en.wikipedia.org/wiki/SS_Samuel_Q._Brown"
+ },
+ "ship-ss-scharnhorst-1934": {
+  "name": "SS Scharnhorst (1934)",
+  "kind": "ocean liner, Norddeutscher Lloyd",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Scharnhorst_(1934)",
+  "note": "Not the battleship Scharnhorst."
+ },
+ "ship-ss-scillin": {
+  "name": "SS Scillin",
+  "kind": "Italian cargo ship carrying Allied prisoners",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Scillin"
  },
  "ship-ss-simon-bolivar": {
   "name": "SS Simon Bolivar",
@@ -10480,6 +10541,16 @@
   "source": "https://en.wikipedia.org/wiki/USS_McCook_(DD-252)",
   "aka": [
    "HMCS St. Croix"
+  ]
+ },
+ "ship-uss-mckean-dd-90": {
+  "name": "USS McKean (DD-90)",
+  "kind": "destroyer converted to high speed transport",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_McKean_(DD-90)",
+  "aka": [
+   "USS McKean (APD-5)"
   ]
  },
  "ship-uss-menges": {

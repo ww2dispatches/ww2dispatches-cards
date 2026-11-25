@@ -2989,6 +2989,13 @@
   "wikidata": "Q1818854",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Monte_Castello"
  },
+ "op-battle-of-morava-ivan": {
+  "name": "Battle of Morava Ivan",
+  "kind": "Greek offensive, Greco-Italian War",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Morava%E2%80%93Ivan"
+ },
  "op-battle-of-morotai": {
   "name": "Battle of Morotai",
   "kind": "battle",
@@ -3285,6 +3292,13 @@
   "nation": "Japan",
   "wikidata": "Q4872320",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Sarimbun_Beach"
+ },
+ "op-battle-of-sattelberg": {
+  "name": "Battle of Sattelberg",
+  "kind": "battle, 17 to 25 November 1943",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Sattelberg"
  },
  "op-battle-of-savo-island": {
   "name": "Battle of Savo Island",
@@ -4815,6 +4829,13 @@
   "wikidata": "Q826038",
   "source": "https://en.wikipedia.org/wiki/Boston_Marathon"
  },
+ "op-bougainville-campaign": {
+  "name": "Bougainville campaign",
+  "kind": "campaign, 1943 to 1945",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bougainville_campaign"
+ },
  "op-bougainville-counterattack": {
   "name": "Bougainville counterattack",
   "kind": "Japanese counteroffensive, 1944",
@@ -5345,6 +5366,16 @@
    "Hague Congress"
   ]
  },
+ "op-congress-of-verona-1943": {
+  "name": "Congress of Verona (1943)",
+  "kind": "Republican Fascist Party congress and manifesto",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Congress_of_Verona_(1943)",
+  "aka": [
+   "Manifesto of Verona"
+  ]
+ },
  "op-conscription-crisis-of-1944": {
   "name": "Conscription Crisis of 1944",
   "kind": "political crisis",
@@ -5438,6 +5469,13 @@
   "nation": "Japan",
   "wikidata": "Q16842906",
   "source": "https://en.wikipedia.org/wiki/Convoy_Hi-71"
+ },
+ "op-convoy-hi-81": {
+  "name": "Convoy Hi-81",
+  "kind": "Japanese convoy, November 1944",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Convoy_Hi-81"
  },
  "op-convoy-hx-133": {
   "name": "Convoy HX 133",
@@ -7494,6 +7532,13 @@
   "wikidata": "Q1414384",
   "source": "https://en.wikipedia.org/wiki/Hungarian_invasion_of_Carpatho-Ukraine"
  },
+ "op-huon-peninsula-campaign": {
+  "name": "Huon Peninsula campaign",
+  "kind": "campaign, New Guinea, 1943 to 1944",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Huon_Peninsula_campaign"
+ },
  "op-iasi-pogrom": {
   "name": "Iasi pogrom",
   "kind": "pogrom against Jews, June 1941",
@@ -7575,6 +7620,13 @@
   "aka": [
    "Tokyo Trial"
   ]
+ },
+ "op-international-students-day": {
+  "name": "International Students' Day",
+  "kind": "annual observance, 17 November, from the 1939 Prague killings",
+  "nation": "Czechoslovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/International_Students%27_Day"
  },
  "op-internment-of-german-americans": {
   "name": "Internment of German Americans",
@@ -11183,6 +11235,13 @@
   "nation": "Germany",
   "wikidata": "Q150939",
   "source": "https://en.wikipedia.org/wiki/Operation_Weser%C3%BCbung"
+ },
+ "op-operation-white": {
+  "name": "Operation White",
+  "kind": "aircraft delivery to Malta, November 1940",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_White"
  },
  "op-operation-wilfred": {
   "name": "Operation Wilfred",

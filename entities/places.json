@@ -964,6 +964,15 @@
   "lat": 54.5967,
   "lon": -5.93
  },
+ "place-belfort": {
+  "name": "Belfort",
+  "kind": "city in eastern France, Belfort Gap",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Belfort",
+  "lat": null,
+  "lon": null
+ },
  "place-belgorod": {
   "name": "Belgorod",
   "kind": "city",
@@ -4369,6 +4378,18 @@
   "lat": 53.1306,
   "lon": 23.1572
  },
+ "place-great-synagogue-lodz": {
+  "name": "Great Synagogue (Lodz)",
+  "kind": "Reform synagogue, destroyed 1939",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Great_Synagogue_(%C5%81%C3%B3d%C5%BA)",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Great Synagogue of Łódź"
+  ]
+ },
  "place-great-synagogue-warsaw": {
   "name": "Great Synagogue (Warsaw)",
   "kind": "synagogue, destroyed 1943",
@@ -6067,6 +6088,15 @@
   "lat": 54.3233,
   "lon": 10.1394
  },
+ "place-kiel-canal": {
+  "name": "Kiel Canal",
+  "kind": "canal across Schleswig-Holstein",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kiel_Canal",
+  "lat": null,
+  "lon": null
+ },
  "place-kielce": {
   "name": "Kielce",
   "kind": "city in Poland",
@@ -6305,6 +6335,18 @@
   "source": "https://en.wikipedia.org/wiki/Konkoita",
   "lat": 14.9453,
   "lon": 98.5432
+ },
+ "place-korce": {
+  "name": "Korce",
+  "kind": "city in southeast Albania",
+  "nation": "Albania",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kor%C3%A7%C3%AB",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Korçë"
+  ]
  },
  "place-kos": {
   "name": "Kos",
@@ -7035,6 +7077,18 @@
   "source": "https://en.wikipedia.org/wiki/Loch_Ewe",
   "lat": 57.8369,
   "lon": -5.6122
+ },
+ "place-lodz": {
+  "name": "Lodz",
+  "kind": "city in central Poland",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/%C5%81%C3%B3d%C5%BA",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Łódź"
+  ]
  },
  "place-lodz-ghetto": {
   "name": "Łódź Ghetto",
