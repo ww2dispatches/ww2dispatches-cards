@@ -685,6 +685,16 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/2/6th_Battalion"
  },
+ "unit-2-6th-commando-squadron-australia": {
+  "name": "2/6th Commando Squadron (Australia)",
+  "kind": "Australian Army independent company",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/2/6th_Commando_Squadron_(Australia)",
+  "aka": [
+   "2/6th Independent Company"
+  ]
+ },
  "unit-2-9th-battalion-australia": {
   "name": "2/9th Battalion (Australia)",
   "kind": "Australian infantry battalion",
@@ -778,6 +788,13 @@
   "nation": "Japan",
   "source": "https://en.wikipedia.org/wiki/252nd_Air_Group",
   "wikidata": "Q11602255"
+ },
+ "unit-25th-brigade-australia": {
+  "name": "25th Brigade (Australia)",
+  "kind": "Australian infantry brigade, 7th Division",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/25th_Brigade_(Australia)"
  },
  "unit-25th-infantry-division-bologna": {
   "name": "Bologna Division",
@@ -1080,6 +1097,13 @@
   "nation": "Japan",
   "wikidata": "Q326607",
   "source": "https://en.wikipedia.org/wiki/31st_Division_(Imperial_Japanese_Army)"
+ },
+ "unit-31st-infantry-division-united-states": {
+  "name": "31st Infantry Division (United States)",
+  "kind": "U.S. Army infantry division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/31st_Infantry_Division_(United_States)"
  },
  "unit-322d-air-expeditionary-group": {
   "name": "322nd Bombardment Group",
@@ -1569,6 +1593,16 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/502nd_Heavy_Panzer_Battalion"
  },
+ "unit-502nd-infantry-regiment": {
+  "name": "502nd Infantry Regiment",
+  "kind": "U.S. Army parachute infantry regiment",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/502nd_Infantry_Regiment",
+  "aka": [
+   "502nd Parachute Infantry Regiment"
+  ]
+ },
  "unit-503rd-heavy-panzer-battalion": {
   "name": "503rd Heavy Panzer Battalion",
   "kind": "German Army heavy tank battalion (Tigers)",
@@ -1712,6 +1746,16 @@
   "source": "https://en.wikipedia.org/wiki/5th_Marine_Regiment",
   "aka": [
    "5th Marines"
+  ]
+ },
+ "unit-5th-panzer-army": {
+  "name": "5th Panzer Army",
+  "kind": "German armoured army",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/5th_Panzer_Army",
+  "aka": [
+   "Fifth Panzer Army"
   ]
  },
  "unit-5th-shock-army": {
@@ -4467,6 +4511,13 @@
   "wikidata": "Q7042857",
   "source": "https://en.wikipedia.org/wiki/No._10_Squadron_RAAF"
  },
+ "unit-no-10-squadron-rcaf": {
+  "name": "No. 10 Squadron RCAF",
+  "kind": "Royal Canadian Air Force maritime patrol squadron",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._10_Squadron_RCAF"
+ },
  "unit-no-100-squadron-raf": {
   "name": "No. 100 Squadron RAF",
   "kind": "RAF torpedo bomber squadron",
@@ -5776,6 +5827,13 @@
   "wikidata": "Q7568397",
   "source": "https://en.wikipedia.org/wiki/South_Seas_Detachment"
  },
+ "unit-south-staffordshire-regiment": {
+  "name": "South Staffordshire Regiment",
+  "kind": "British Army infantry regiment",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/South_Staffordshire_Regiment"
+ },
  "unit-southwestern-front-soviet-union": {
   "name": "Southwestern Front",
   "kind": "Soviet front",
@@ -6207,6 +6265,13 @@
   "aka": [
    "USO"
   ]
+ },
+ "unit-united-states-air-force": {
+  "name": "United States Air Force",
+  "kind": "U.S. armed service",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/United_States_Air_Force"
  },
  "unit-united-states-army-air-forces": {
   "name": "United States Army Air Forces",

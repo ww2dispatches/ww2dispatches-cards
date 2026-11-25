@@ -931,6 +931,18 @@
   "lat": 47.6314,
   "lon": 13.0042
  },
+ "place-berdychiv": {
+  "name": "Berdychiv",
+  "kind": "city in Zhytomyr Oblast, Ukraine",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Berdychiv",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Berdichev"
+  ]
+ },
  "place-bergen": {
   "name": "Bergen",
   "kind": "port city",
@@ -1020,6 +1032,15 @@
   "source": "https://en.wikipedia.org/wiki/Bessarabia",
   "lat": 46.8333,
   "lon": 29.0
+ },
+ "place-best-netherlands": {
+  "name": "Best",
+  "kind": "Dutch town",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Best,_Netherlands",
+  "lat": null,
+  "lon": null
  },
  "place-bethnal-green-tube-station": {
   "name": "Bethnal Green tube station",
@@ -2230,6 +2251,18 @@
    "Clark Air Base"
   ]
  },
+ "place-clinton-engineer-works": {
+  "name": "Clinton Engineer Works",
+  "kind": "Manhattan Project production site, Tennessee",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Clinton_Engineer_Works",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Kingston Demolition Range"
+  ]
+ },
  "place-col-de-saverne": {
   "name": "Saverne Gap",
   "kind": "mountain pass",
@@ -2361,6 +2394,15 @@
   "wikidata": "Q928075",
   "lat": 14.3856,
   "lon": 120.5731
+ },
+ "place-corsica": {
+  "name": "Corsica",
+  "kind": "French island",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Corsica",
+  "lat": null,
+  "lon": null
  },
  "place-courseulles-sur-mer": {
   "name": "Courseulles-sur-Mer",
@@ -3429,6 +3471,15 @@
    "Gdansk"
   ]
  },
+ "place-free-territory-of-trieste": {
+  "name": "Free Territory of Trieste",
+  "kind": "UN mandated territory, 1947 to 1954",
+  "nation": "Free Territory of Trieste",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Free_Territory_of_Trieste",
+  "lat": null,
+  "lon": null
+ },
  "place-french-cameroon": {
   "name": "French Cameroon",
   "kind": "French mandate territory in Central Africa",
@@ -3474,6 +3525,19 @@
   "lat": 48.7636,
   "lon": 2.3219
  },
+ "place-froslev-prison-camp": {
+  "name": "Frøslev Prison Camp",
+  "kind": "internment camp, occupied Denmark",
+  "nation": "Denmark",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fr%C3%B8slev_Prison_Camp",
+  "aka": [
+   "Froslev",
+   "Frøslevlejren"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-fuhrerbunker": {
   "name": "Führerbunker",
   "kind": "air raid shelter and headquarters",
@@ -3518,6 +3582,15 @@
   "source": "https://en.wikipedia.org/wiki/Garigliano",
   "lat": 41.2167,
   "lon": 13.75
+ },
+ "place-gary-indiana": {
+  "name": "Gary, Indiana",
+  "kind": "U.S. city",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Gary,_Indiana",
+  "lat": null,
+  "lon": null
  },
  "place-gavutu": {
   "name": "Gavutu",
@@ -3681,6 +3754,19 @@
   "source": "https://en.wikipedia.org/wiki/Glenn_Research_Center",
   "lat": 41.4128,
   "lon": -81.8624
+ },
+ "place-gogland": {
+  "name": "Gogland",
+  "kind": "island in the Gulf of Finland",
+  "nation": "Finland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Gogland",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Suursaari",
+   "Hogland"
+  ]
  },
  "place-gold-beach": {
   "name": "Gold Beach",
@@ -4101,6 +4187,15 @@
   "source": "https://en.wikipedia.org/wiki/Hardangervidda",
   "lat": 60.052,
   "lon": 7.018
+ },
+ "place-harlan-county-kentucky": {
+  "name": "Harlan County, Kentucky",
+  "kind": "coal mining county",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Harlan_County,_Kentucky",
+  "lat": null,
+  "lon": null
  },
  "place-harrow-london": {
   "name": "Harrow",
@@ -6263,6 +6358,15 @@
   "lat": 53.1686,
   "lon": 9.9397
  },
+ "place-luneville": {
+  "name": "Luneville",
+  "kind": "French town in Lorraine",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Lun%C3%A9ville",
+  "lat": null,
+  "lon": null
+ },
  "place-luoyang": {
   "name": "Luoyang",
   "kind": "city in Henan",
@@ -7022,6 +7126,15 @@
    "Dora-Nordhausen"
   ]
  },
+ "place-mittersill": {
+  "name": "Mittersill",
+  "kind": "town in Salzburg state, Austria",
+  "nation": "Austria",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mittersill",
+  "lat": null,
+  "lon": null
+ },
  "place-mius": {
   "name": "Mius River",
   "kind": "river",
@@ -7174,6 +7287,15 @@
   "lat": -19.5833,
   "lon": 48.3833
  },
+ "place-morehead-city-north-carolina": {
+  "name": "Morehead City, North Carolina",
+  "kind": "coastal town",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Morehead_City,_North_Carolina",
+  "lat": null,
+  "lon": null
+ },
  "place-moritzburg-saxony": {
   "name": "Moritzburg",
   "kind": "town near Dresden, Saxony",
@@ -7194,6 +7316,15 @@
   ],
   "lat": 14.68,
   "lon": 120.2683
+ },
+ "place-morotai": {
+  "name": "Morotai",
+  "kind": "island in the Maluku Islands",
+  "nation": "Netherlands East Indies",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Morotai",
+  "lat": null,
+  "lon": null
  },
  "place-mortain": {
   "name": "Mortain",
@@ -7993,6 +8124,18 @@
   "lat": 26.4833,
   "lon": 127.95
  },
+ "place-old-bailey": {
+  "name": "Old Bailey",
+  "kind": "Central Criminal Court, London",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Old_Bailey",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Central Criminal Court"
+  ]
+ },
  "place-old-trafford": {
   "name": "Old Trafford",
   "kind": "football stadium",
@@ -8037,6 +8180,15 @@
   "source": "https://en.wikipedia.org/wiki/Omaha_Beach",
   "lat": 49.3689,
   "lon": -0.8686
+ },
+ "place-oosterbeek": {
+  "lat": null,
+  "lon": null,
+  "name": "Oosterbeek",
+  "kind": "village west of Arnhem, site of the airborne perimeter",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Oosterbeek"
  },
  "place-oppenheim": {
   "name": "Oppenheim",
@@ -8446,6 +8598,15 @@
   ],
   "lat": 54.135,
   "lon": 13.775
+ },
+ "place-peleliu": {
+  "name": "Peleliu",
+  "kind": "island in Palau",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Peleliu",
+  "lat": null,
+  "lon": null
  },
  "place-penang": {
   "name": "Penang",
@@ -9262,6 +9423,15 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Roetgen"
  },
+ "place-rohwer-war-relocation-center": {
+  "name": "Rohwer War Relocation Center",
+  "kind": "Japanese American incarceration camp",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Rohwer_War_Relocation_Center",
+  "lat": null,
+  "lon": null
+ },
  "place-roi-namur": {
   "name": "Roi-Namur",
   "kind": "linked islands, Kwajalein Atoll",
@@ -9682,6 +9852,15 @@
   "lat": 41.8971,
   "lon": 12.5157
  },
+ "place-san-marino": {
+  "lat": null,
+  "lon": null,
+  "name": "San Marino",
+  "kind": "neutral microstate in Italy",
+  "nation": "San Marino",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/San_Marino"
+ },
  "place-san-pietro-infine": {
   "name": "San Pietro Infine",
   "kind": "village",
@@ -9762,6 +9941,15 @@
   "source": "https://en.wikipedia.org/wiki/Saranac_Lake,_New_York",
   "lat": 44.3261,
   "lon": -74.1308
+ },
+ "place-sardinia": {
+  "name": "Sardinia",
+  "kind": "Italian island",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sardinia",
+  "lat": null,
+  "lon": null
  },
  "place-sark": {
   "name": "Sark",
@@ -10313,6 +10501,15 @@
   "lat": 49.3166,
   "lon": 8.4336
  },
+ "place-spithead": {
+  "lat": null,
+  "lon": null,
+  "name": "Spithead",
+  "kind": "anchorage and channel in the Solent off Portsmouth",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Spithead"
+ },
  "place-st-james-s-palace": {
   "name": "St James's Palace",
   "kind": "royal palace",
@@ -10465,6 +10662,15 @@
   "source": "https://en.wikipedia.org/wiki/State_of_Burma",
   "lat": 16.8464,
   "lon": 96.1692
+ },
+ "place-steenbergen": {
+  "name": "Steenbergen",
+  "kind": "town in North Brabant, Netherlands",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Steenbergen",
+  "lat": null,
+  "lon": null
  },
  "place-stepney": {
   "name": "Stepney",

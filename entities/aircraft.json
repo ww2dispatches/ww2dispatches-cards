@@ -950,6 +950,16 @@
    "Hindenburg"
   ]
  },
+ "aircraft-lz-130-graf-zeppelin": {
+  "name": "LZ 130 Graf Zeppelin",
+  "kind": "Hindenburg class rigid airship",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/LZ_130_Graf_Zeppelin",
+  "aka": [
+   "Graf Zeppelin II"
+  ]
+ },
  "aircraft-martin-b-26-marauder": {
   "name": "Martin B-26 Marauder",
   "kind": "American twin engine medium bomber",
@@ -1211,6 +1221,16 @@
    "B-25"
   ]
  },
+ "aircraft-north-american-f-86-sabre": {
+  "name": "North American F 86 Sabre",
+  "kind": "jet fighter",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/North_American_F-86_Sabre",
+  "aka": [
+   "F 86 Sabre"
+  ]
+ },
  "aircraft-north-american-p-51-mustang": {
   "name": "North American P-51 Mustang",
   "kind": "fighter aircraft",
@@ -1441,6 +1461,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q616241",
   "source": "https://en.wikipedia.org/wiki/Tupolev_SB"
+ },
+ "aircraft-vickers-vespa": {
+  "name": "Vickers Vespa",
+  "kind": "British army cooperation biplane",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Vickers_Vespa"
  },
  "aircraft-vickers-vildebeest": {
   "name": "Vickers Vildebeest",

@@ -153,6 +153,13 @@
    "Upkeep"
   ]
  },
+ "machine-bristol-pegasus": {
+  "name": "Bristol Pegasus",
+  "kind": "radial aero engine",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bristol_Pegasus"
+ },
  "machine-california-zephyr-1949-1970": {
   "name": "California Zephyr (1949 to 1970)",
   "kind": "streamlined passenger train, Chicago to Oakland",
@@ -1133,6 +1140,17 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/RDS-1",
   "note": "Also called First Lightning; Joe 1 to the Americans"
+ },
+ "machine-ringelblum-archive": {
+  "name": "Ringelblum Archive",
+  "kind": "buried Warsaw Ghetto document archive",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ringelblum_Archive",
+  "aka": [
+   "Oneg Shabbat archive",
+   "Oyneg Shabbos archive"
+  ]
  },
  "machine-rolls-royce-kestrel": {
   "name": "Rolls-Royce Kestrel",

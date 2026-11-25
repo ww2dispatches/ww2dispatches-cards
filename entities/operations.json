@@ -1439,6 +1439,13 @@
    "Baedeker raids"
   ]
  },
+ "op-baltic-offensive": {
+  "name": "Baltic offensive",
+  "kind": "Soviet offensive, autumn 1944",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Baltic_offensive"
+ },
  "op-balvano-train-disaster": {
   "name": "Balvano train disaster",
   "kind": "rail disaster, March 1944",
@@ -1515,6 +1522,13 @@
   "wikidata": "Q4868890",
   "source": "https://en.wikipedia.org/wiki/Bath_Blitz"
  },
+ "op-battle-for-brest": {
+  "name": "Battle for Brest",
+  "kind": "siege of a French port",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_for_Brest"
+ },
  "op-battle-for-caen": {
   "name": "Battle for Caen",
   "kind": "battle, June to August 1944",
@@ -1571,6 +1585,13 @@
   "wikidata": "Q4870300",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Anchem"
  },
+ "op-battle-of-angaur": {
+  "name": "Battle of Angaur",
+  "kind": "battle, Palau Islands, 1944",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Angaur"
+ },
  "op-battle-of-anzio": {
   "name": "Battle of Anzio",
   "kind": "battle",
@@ -1587,6 +1608,20 @@
   "nation": "US",
   "wikidata": "Q2091385",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Arawe"
+ },
+ "op-battle-of-arnhem": {
+  "name": "Battle of Arnhem",
+  "kind": "Market Garden airborne battle, September 1944",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Arnhem"
+ },
+ "op-battle-of-arracourt": {
+  "name": "Battle of Arracourt",
+  "kind": "tank battle in Lorraine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Arracourt"
  },
  "op-battle-of-arras-1940": {
   "name": "Battle of Arras (1940)",
@@ -2137,12 +2172,29 @@
   "wikidata": "Q697059",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Hong_Kong"
  },
+ "op-battle-of-hurtgen-forest": {
+  "name": "Battle of Hurtgen Forest",
+  "kind": "1944 battle on the German border",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_H%C3%BCrtgen_Forest",
+  "aka": [
+   "Battle of Hürtgen Forest"
+  ]
+ },
  "op-battle-of-imphal": {
   "name": "Battle of Imphal",
   "kind": "battle in northeast India, 1944",
   "nation": "Britain",
   "wikidata": "Q707238",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Imphal"
+ },
+ "op-battle-of-ioribaiwa": {
+  "name": "Battle of Ioribaiwa",
+  "kind": "battle, Kokoda Track",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Ioribaiwa"
  },
  "op-battle-of-ist": {
   "name": "Battle of Ist",
@@ -2182,6 +2234,13 @@
    "814 Aerial War"
   ]
  },
+ "op-battle-of-kaiapit": {
+  "name": "Battle of Kaiapit",
+  "kind": "1943 action in the Markham Valley, New Guinea",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Kaiapit"
+ },
  "op-battle-of-kampar": {
   "name": "Battle of Kampar",
   "kind": "battle",
@@ -2202,6 +2261,23 @@
   "nation": "Germany",
   "wikidata": "Q327099",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Kasserine_Pass"
+ },
+ "op-battle-of-kepa-oksywska": {
+  "name": "Battle of Kepa Oksywska",
+  "kind": "1939 defense of the Oksywie Heights near Gdynia",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_K%C4%99pa_Oksywska",
+  "aka": [
+   "Battle of Kępa Oksywska"
+  ]
+ },
+ "op-battle-of-kiev-1941": {
+  "name": "Battle of Kiev (1941)",
+  "kind": "encirclement battle",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Kiev_(1941)"
  },
  "op-battle-of-ko-chang": {
   "name": "Battle of Ko Chang",
@@ -2525,6 +2601,16 @@
   "wikidata": "Q1818854",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Monte_Castello"
  },
+ "op-battle-of-morotai": {
+  "name": "Battle of Morotai",
+  "kind": "battle",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Morotai",
+  "aka": [
+   "Operation Tradewind"
+  ]
+ },
  "op-battle-of-moscow": {
   "name": "Battle of Moscow",
   "kind": "battle",
@@ -2552,6 +2638,13 @@
   "nation": "Yugoslavia",
   "wikidata": "Q4871857",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Nanos"
+ },
+ "op-battle-of-nijmegen": {
+  "name": "Battle of Nijmegen",
+  "kind": "Market Garden battle for the Waal bridges, 17 to 20 September 1944",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Nijmegen"
  },
  "op-battle-of-nikolayevka": {
   "name": "Battle of Nikolayevka",
@@ -2625,6 +2718,13 @@
    "Battle of Opium Hill",
    "Bukit Chandu"
   ]
+ },
+ "op-battle-of-peleliu": {
+  "name": "Battle of Peleliu",
+  "kind": "battle",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Peleliu"
  },
  "op-battle-of-point-175": {
   "name": "Battle of Point 175",
@@ -2737,6 +2837,13 @@
   "nation": "US",
   "wikidata": "Q700705",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Saipan"
+ },
+ "op-battle-of-san-marino": {
+  "name": "Battle of San Marino",
+  "kind": "Gothic Line engagement, 17 to 20 September 1944",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_San_Marino"
  },
  "op-battle-of-san-pietro-infine": {
   "name": "Battle of San Pietro Infine",
@@ -4639,6 +4746,16 @@
   "wikidata": "Q122100",
   "source": "https://en.wikipedia.org/wiki/Continuation_War"
  },
+ "op-control-council-law-no-1-repealing-of-nazi-laws": {
+  "name": "Control Council Law No. 1, Repealing of Nazi Laws",
+  "kind": "Allied occupation law, 20 September 1945",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Control_Council_Law_No._1_%E2%80%93_Repealing_of_Nazi_Laws",
+  "aka": [
+   "Kontrollratsgesetz Nr. 1"
+  ]
+ },
  "op-convention-on-international-civil-aviation": {
   "name": "Convention on International Civil Aviation",
   "kind": "treaty signed at Chicago, 7 December 1944",
@@ -4705,6 +4822,13 @@
   "wikidata": "Q16934384",
   "source": "https://en.wikipedia.org/wiki/Convoy_OG_71"
  },
+ "op-convoy-on-127": {
+  "name": "Convoy ON 127",
+  "kind": "westbound North Atlantic convoy, September 1942",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Convoy_ON_127"
+ },
  "op-convoy-on-166": {
   "name": "Convoy ON 166",
   "kind": "Atlantic convoy battle",
@@ -4761,6 +4885,13 @@
   "wikidata": "Q15811562",
   "source": "https://en.wikipedia.org/wiki/Convoy_QP_11"
  },
+ "op-convoy-qp-14": {
+  "name": "Convoy QP 14",
+  "kind": "homebound Arctic convoy, September 1942",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Convoy_QP_14"
+ },
  "op-convoy-sc-118": {
   "name": "Convoy SC 118",
   "kind": "Allied Atlantic convoy",
@@ -4795,6 +4926,16 @@
   "nation": "Britain",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Convoys_HX_229/SC_122"
+ },
+ "op-convoys-ons-18-on-202": {
+  "name": "Convoys ONS 18 and ON 202",
+  "kind": "North Atlantic convoy battle, September 1943",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Convoys_ONS_18/ON_202",
+  "aka": [
+   "Convoys ONS 18/ON 202"
+  ]
  },
  "op-corfu-channel-case": {
   "name": "Corfu Channel case",
@@ -5047,6 +5188,13 @@
    "Sürgünlik"
   ]
  },
+ "op-deportation-of-the-danish-police": {
+  "name": "Deportation of the Danish police",
+  "kind": "German arrest and deportation of Danish police, 1944",
+  "nation": "Denmark",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Deportation_of_the_Danish_police"
+ },
  "op-deportation-of-the-kalmyks": {
   "name": "Deportation of the Kalmyks",
   "kind": "Soviet forced deportation, 1943",
@@ -5197,6 +5345,17 @@
   "nation": "Japan",
   "wikidata": "Q698226",
   "source": "https://en.wikipedia.org/wiki/Dutch_East_Indies_campaign"
+ },
+ "op-dutch-famine-of-1944-1945": {
+  "name": "Dutch famine of 1944 to 1945",
+  "kind": "famine in the occupied Netherlands",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Dutch_famine_of_1944%E2%80%931945",
+  "aka": [
+   "Hunger Winter",
+   "Hongerwinter"
+  ]
  },
  "op-dzyatlava-massacre": {
   "name": "Dzyatlava massacres",
@@ -7795,6 +7954,13 @@
   "wikidata": "Q19053976",
   "source": "https://en.wikipedia.org/wiki/Morgan_v._Virginia"
  },
+ "op-morgenthau-plan": {
+  "name": "Morgenthau Plan",
+  "kind": "postwar plan for Germany",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Morgenthau_Plan"
+ },
  "op-morotai-mutiny": {
   "name": "Morotai Mutiny",
   "kind": "RAAF officers' mass resignation protest",
@@ -7846,6 +8012,17 @@
   "nation": "Soviet Union",
   "wikidata": "Q117320",
   "source": "https://en.wikipedia.org/wiki/Moscow_trials"
+ },
+ "op-mukden-incident": {
+  "name": "Mukden incident",
+  "kind": "staged railway bombing, pretext for invasion",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mukden_incident",
+  "aka": [
+   "Manchurian Incident",
+   "Liutiao Lake incident"
+  ]
  },
  "op-mulberry-harbours": {
   "name": "Mulberry harbours",
@@ -8120,6 +8297,13 @@
   "nation": "Germany",
   "wikidata": "Q17012800",
   "source": "https://en.wikipedia.org/wiki/NS-Ordensburgen"
+ },
+ "op-nuremberg-laws": {
+  "name": "Nuremberg Laws",
+  "kind": "antisemitic race laws",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Nuremberg_Laws"
  },
  "op-nuremberg-rallies": {
   "name": "Nuremberg rallies",
@@ -8979,6 +9163,13 @@
    "Mortain counterattack"
   ]
  },
+ "op-operation-market-garden": {
+  "name": "Operation Market Garden",
+  "kind": "Allied airborne and ground offensive, September 1944",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Market_Garden"
+ },
  "op-operation-mascot": {
   "name": "Operation Mascot",
   "kind": "British carrier strike on Tirpitz",
@@ -9065,6 +9256,13 @@
   "nation": "Britain",
   "wikidata": "Q42886508",
   "source": "https://en.wikipedia.org/wiki/Operation_Oyster"
+ },
+ "op-operation-paravane": {
+  "name": "Operation Paravane",
+  "kind": "RAF air raid on Tirpitz",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Paravane"
  },
  "op-operation-pastorius": {
   "name": "Operation Pastorius",
@@ -9284,6 +9482,13 @@
   "nation": "Japan",
   "wikidata": "Q2026439",
   "source": "https://en.wikipedia.org/wiki/Operation_Tan_No._2"
+ },
+ "op-operation-tanne-ost": {
+  "name": "Operation Tanne Ost",
+  "kind": "German landing operation",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Tanne_Ost"
  },
  "op-operation-teardrop": {
   "name": "Operation Teardrop",
@@ -9547,6 +9752,13 @@
    "Day of Faith",
    "Giornata della fede"
   ]
+ },
+ "op-orzel-incident": {
+  "name": "Orzel incident",
+  "kind": "escape of an interned Polish submarine",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Orze%C5%82_incident"
  },
  "op-oslo-mosquito-raid-1944": {
   "name": "Oslo Mosquito raid (1944)",
@@ -10234,6 +10446,13 @@
   "wikidata": "Q3137814",
   "source": "https://en.wikipedia.org/wiki/Sakuradamon_incident_(1932)"
  },
+ "op-salamaua-lae-campaign": {
+  "name": "Salamaua and Lae campaign",
+  "kind": "campaign, New Guinea",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Salamaua%E2%80%93Lae_campaign"
+ },
  "op-sandomierz-silesian-offensive": {
   "name": "Sandomierz Silesian offensive",
   "kind": "Soviet offensive, part of the Vistula Oder offensive",
@@ -10386,6 +10605,16 @@
   "source": "https://en.wikipedia.org/wiki/Second_London_Naval_Treaty",
   "aka": [
    "London Naval Conference 1935"
+  ]
+ },
+ "op-second-quebec-conference": {
+  "name": "Second Quebec Conference",
+  "kind": "Allied conference",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Second_Quebec_Conference",
+  "aka": [
+   "Octagon"
   ]
  },
  "op-second-sino-japanese-war": {
@@ -10802,6 +11031,13 @@
    "Tallinn evacuation"
   ]
  },
+ "op-soviet-famine-of-1946-1947": {
+  "name": "Soviet famine of 1946 and 1947",
+  "kind": "postwar famine",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Soviet_famine_of_1946%E2%80%931947"
+ },
  "op-soviet-invasion-of-manchuria": {
   "name": "Soviet invasion of Manchuria",
   "kind": "Soviet offensive against Japan, August 1945",
@@ -10811,6 +11047,13 @@
   "aka": [
    "Operation August Storm"
   ]
+ },
+ "op-soviet-invasion-of-poland": {
+  "name": "Soviet invasion of Poland",
+  "kind": "invasion, September 1939",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Soviet_invasion_of_Poland"
  },
  "op-soviet-invasion-of-south-sakhalin": {
   "name": "Soviet invasion of South Sakhalin",
@@ -11025,6 +11268,13 @@
   "wikidata": "Q668645",
   "source": "https://en.wikipedia.org/wiki/Surrender_at_Caserta"
  },
+ "op-surrender-of-general-botho-elster": {
+  "name": "Surrender of General Botho Elster",
+  "kind": "mass German surrender at Beaugency, 1944",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Surrender_of_General_Botho_Elster"
+ },
  "op-surrender-of-japan": {
   "name": "Surrender of Japan",
   "kind": "surrender",
@@ -11176,6 +11426,13 @@
   "wikidata": "Q2763",
   "source": "https://en.wikipedia.org/wiki/The_Holocaust",
   "note": "Wikipedia title not yet confirmed with the API (HTTP 429 on every retry); confirm on merge."
+ },
+ "op-the-holocaust-in-belgium": {
+  "name": "The Holocaust in Belgium",
+  "kind": "persecution and deportation of Belgium's Jews",
+  "nation": "Belgium",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/The_Holocaust_in_Belgium"
  },
  "op-the-holocaust-in-bulgaria": {
   "name": "The Holocaust in Bulgaria",
@@ -11513,6 +11770,16 @@
    "Halsey's Typhoon"
   ]
  },
+ "op-typhoon-ida-1945": {
+  "name": "Typhoon Ida (1945)",
+  "kind": "typhoon, the Makurazaki Typhoon",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Typhoon_Ida_(1945)",
+  "aka": [
+   "Makurazaki Typhoon"
+  ]
+ },
  "op-u-s-british-staff-conference-abc-1": {
   "name": "U.S.-British Staff Conference (ABC-1)",
   "kind": "secret military staff conference",
@@ -11708,6 +11975,13 @@
   "wikidata": "Q733211",
   "source": "https://en.wikipedia.org/wiki/Via_Rasella_attack"
  },
+ "op-viannos-massacres": {
+  "name": "Viannos massacres",
+  "kind": "German reprisal massacres on Crete, 1943",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Viannos_massacres"
+ },
  "op-victory-day-9-may": {
   "name": "Victory Day (9 May)",
   "kind": "Soviet victory holiday",
@@ -11806,6 +12080,13 @@
   "nation": "US",
   "wikidata": "Q581800",
   "source": "https://en.wikipedia.org/wiki/War_Brides_Act"
+ },
+ "op-warsaw-airlift": {
+  "name": "Warsaw airlift",
+  "kind": "Allied air supply of the Warsaw Uprising",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Warsaw_airlift"
  },
  "op-warsaw-ghetto-uprising": {
   "name": "Warsaw Ghetto Uprising",
