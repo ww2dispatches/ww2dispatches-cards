@@ -4212,6 +4212,13 @@
    "Operation Gomorrah"
   ]
  },
+ "op-bombing-of-hanover-in-world-war-ii": {
+  "name": "Bombing of Hanover in World War II",
+  "kind": "air raids on Hanover",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Hanover_in_World_War_II"
+ },
  "op-bombing-of-helsinki-in-world-war-ii": {
   "name": "Bombing of Helsinki in World War II",
   "kind": "air raids on a city",
@@ -7305,6 +7312,17 @@
   "wikidata": "Q707547",
   "source": "https://en.wikipedia.org/wiki/Jedwabne_pogrom"
  },
+ "op-jesselton-revolt": {
+  "name": "Jesselton revolt",
+  "kind": "uprising against Japan in North Borneo, 1943",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Jesselton_revolt",
+  "aka": [
+   "Double Tenth Revolt",
+   "Jesselton uprising"
+  ]
+ },
  "op-jinzhou-operation": {
   "name": "Jinzhou Operation",
   "kind": "Japanese offensive",
@@ -8259,6 +8277,13 @@
    "Volhynia massacre"
   ]
  },
+ "op-maud-committee": {
+  "name": "MAUD Committee",
+  "kind": "British atomic bomb feasibility committee",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/MAUD_Committee"
+ },
  "op-may-15-incident": {
   "name": "May 15 incident",
   "kind": "attempted coup in Japan, 1932",
@@ -8467,6 +8492,17 @@
   "nation": "Britain",
   "wikidata": "Q2752595",
   "source": "https://en.wikipedia.org/wiki/Moscow_Conference_(1942)"
+ },
+ "op-moscow-conference-1944": {
+  "name": "Moscow Conference (1944)",
+  "kind": "Churchill and Stalin summit, 9 to 19 October 1944",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Moscow_Conference_(1944)",
+  "aka": [
+   "Fourth Moscow Conference",
+   "Tolstoy Conference"
+  ]
  },
  "op-moscow-conference-1945": {
   "name": "Moscow Conference (1945)",
@@ -10447,6 +10483,16 @@
   "nation": "Poland",
   "wikidata": "Q498742",
   "source": "https://en.wikipedia.org/wiki/Peking_Plan"
+ },
+ "op-percentages-agreement": {
+  "name": "Percentages agreement",
+  "kind": "Churchill and Stalin spheres of influence deal",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Percentages_agreement",
+  "aka": [
+   "Naughty document"
+  ]
  },
  "op-petsamo-kirkenes-offensive": {
   "name": "Petsamo and Kirkenes offensive",
@@ -12481,6 +12527,16 @@
    "Makurazaki Typhoon"
   ]
  },
+ "op-typhoon-louise-1945": {
+  "name": "Typhoon Louise (1945)",
+  "kind": "typhoon that struck Okinawa, 9 October 1945",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Typhoon_Louise_(1945)",
+  "aka": [
+   "Akune Typhoon"
+  ]
+ },
  "op-u-s-british-staff-conference-abc-1": {
   "name": "U.S.-British Staff Conference (ABC-1)",
   "kind": "secret military staff conference",
@@ -13048,6 +13104,16 @@
   "nation": "Yugoslavia",
   "wikidata": "Q2118311",
   "source": "https://en.wikipedia.org/wiki/Yugoslav_coup_d%27%C3%A9tat"
+ },
+ "op-zhengding-missionary-murder": {
+  "name": "Zhengding Missionary Murder",
+  "kind": "killing of nine Catholic missionaries, 1937",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Zhengding_Missionary_Murder",
+  "aka": [
+   "Zhengding massacre"
+  ]
  },
  "op-zhitomir-berdichev-offensive": {
   "name": "Zhitomir to Berdichev offensive",

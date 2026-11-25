@@ -847,6 +847,16 @@
    "U-168"
   ]
  },
+ "ship-german-submarine-u-171": {
+  "name": "German submarine U 171",
+  "kind": "Type IXC U boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-171",
+  "aka": [
+   "U 171"
+  ]
+ },
  "ship-german-submarine-u-172": {
   "name": "U-172",
   "kind": "Kriegsmarine Type IXC U-boat",
@@ -8446,6 +8456,13 @@
   "nation": "US",
   "wikidata": "Q1698571",
   "source": "https://en.wikipedia.org/wiki/USS_Brownson_(DD-518)"
+ },
+ "ship-uss-buck-dd-420": {
+  "name": "USS Buck (DD 420)",
+  "kind": "Sims class destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Buck_(DD-420)"
  },
  "ship-uss-buckley": {
   "name": "USS Buckley (DE-51)",

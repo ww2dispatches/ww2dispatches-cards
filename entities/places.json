@@ -125,6 +125,15 @@
    "Adowa"
   ]
  },
+ "place-aegidienkirche-hanover": {
+  "name": "Aegidienkirche, Hanover",
+  "kind": "ruined church, war memorial",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Aegidienkirche,_Hanover",
+  "lat": null,
+  "lon": null
+ },
  "place-aga-khan-palace": {
   "name": "Aga Khan Palace",
   "kind": "palace in Pune used as a British detention site",
@@ -4389,6 +4398,18 @@
   "lat": 21.0245,
   "lon": 105.8412
  },
+ "place-hanover": {
+  "name": "Hanover",
+  "kind": "city",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hanover",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Hannover"
+  ]
+ },
  "place-hardangervidda": {
   "name": "Hardangervidda",
   "kind": "mountain plateau",
@@ -7994,6 +8015,18 @@
   "lon": 10.8911,
   "aka": [
    "Torbole"
+  ]
+ },
+ "place-nakagusuku-bay": {
+  "name": "Nakagusuku Bay",
+  "kind": "bay on Okinawa, Buckner Bay to U.S. forces",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Nakagusuku_Bay",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Buckner Bay"
   ]
  },
  "place-nanjing": {
