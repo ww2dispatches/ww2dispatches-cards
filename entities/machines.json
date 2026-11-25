@@ -902,6 +902,13 @@
    "barchino"
   ]
  },
+ "machine-mtsm-motor-torpedo-boat": {
+  "name": "MTSM motor torpedo boat",
+  "kind": "Italian small motor torpedo boat type",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/MTSM_motor_torpedo_boat"
+ },
  "machine-mw-18014": {
   "name": "MW 18014",
   "kind": "German A-4 (V-2) test rocket, single launch",
@@ -1081,6 +1088,14 @@
   "nation": "Finland",
   "wikidata": "Q50352863",
   "source": "https://en.wikipedia.org/wiki/Raising_the_Flag_on_the_Three-Country_Cairn"
+ },
+ "machine-rds-1": {
+  "name": "RDS 1",
+  "kind": "first Soviet atomic device",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/RDS-1",
+  "note": "Also called First Lightning; Joe 1 to the Americans"
  },
  "machine-rolls-royce-kestrel": {
   "name": "Rolls-Royce Kestrel",

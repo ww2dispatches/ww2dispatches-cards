@@ -2689,6 +2689,20 @@
   "wikidata": "Q27628474",
   "source": "https://en.wikipedia.org/wiki/Hawaii_Maru"
  },
+ "ship-hdms-peder-skram-1908": {
+  "name": "HDMS Peder Skram (1908)",
+  "kind": "coast defence ship",
+  "nation": "Denmark",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HDMS_Peder_Skram_(1908)"
+ },
+ "ship-hmas-arunta-i30": {
+  "name": "HMAS Arunta (I30)",
+  "kind": "destroyer",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMAS_Arunta_(I30)"
+ },
  "ship-hmas-australia-d84": {
   "name": "HMAS Australia (D84)",
   "kind": "heavy cruiser",
@@ -3382,6 +3396,13 @@
   "nation": "Britain",
   "wikidata": "Q1645144",
   "source": "https://en.wikipedia.org/wiki/HMS_Enterprise_(D52)"
+ },
+ "ship-hms-eridge-l68": {
+  "name": "HMS Eridge (L68)",
+  "kind": "Hunt class destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Eridge_(L68)"
  },
  "ship-hms-exeter-68": {
   "name": "HMS Exeter (68)",
@@ -6069,6 +6090,13 @@
   "wikidata": "Q28691641",
   "source": "https://en.wikipedia.org/wiki/Japanese_submarine_Ro-112"
  },
+ "ship-japanese-submarine-ro-33": {
+  "name": "Japanese submarine Ro 33",
+  "kind": "submarine",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_submarine_Ro-33"
+ },
  "ship-japanese-torpedo-boat-tomozuru": {
   "name": "Tomozuru",
   "kind": "Imperial Japanese Navy Chidori class torpedo boat",
@@ -6234,6 +6262,13 @@
   "nation": "Norway",
   "wikidata": "Q15137024",
   "source": "https://en.wikipedia.org/wiki/Ole_Wegger"
+ },
+ "ship-orp-blyskawica": {
+  "name": "ORP Błyskawica",
+  "kind": "destroyer",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/ORP_B%C5%82yskawica"
  },
  "ship-orp-burza": {
   "name": "ORP Burza",
@@ -8880,6 +8915,14 @@
   "nation": "US",
   "wikidata": "Q2595056",
   "source": "https://en.wikipedia.org/wiki/USS_Seawolf_(SS-197)"
+ },
+ "ship-uss-segundo": {
+  "name": "USS Segundo",
+  "kind": "submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Segundo",
+  "note": "Hull number SS-398"
  },
  "ship-uss-shark-ss-174": {
   "name": "USS Shark (SS-174)",

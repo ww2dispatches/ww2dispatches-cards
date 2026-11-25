@@ -8689,6 +8689,13 @@
    "Raid on Drvar"
   ]
  },
+ "op-operation-safari": {
+  "name": "Operation Safari",
+  "kind": "German disarming of Denmark's forces, 29 August 1943",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Safari"
+ },
  "op-operation-savanna": {
   "name": "Operation Savanna",
   "kind": "SOE and Free French parachute mission, March 1941",
@@ -9138,6 +9145,13 @@
   "nation": "US",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Peekskill_riots"
+ },
+ "op-peking-plan": {
+  "name": "Peking Plan",
+  "kind": "Polish destroyer evacuation to Britain, 1939",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Peking_Plan"
  },
  "op-philadelphia-transit-strike-of-1944": {
   "name": "Philadelphia transit strike of 1944",
@@ -10091,6 +10105,13 @@
   "nation": "Hungary",
   "wikidata": "Q177109",
   "source": "https://en.wikipedia.org/wiki/Slovak%E2%80%93Hungarian_War"
+ },
+ "op-slovak-national-uprising": {
+  "name": "Slovak National Uprising",
+  "kind": "Slovak uprising against Germany, 1944",
+  "nation": "Slovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Slovak_National_Uprising"
  },
  "op-smith-act": {
   "name": "Smith Act",

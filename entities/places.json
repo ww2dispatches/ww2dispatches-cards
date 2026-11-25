@@ -4009,6 +4009,15 @@
   "lat": 21.5,
   "lon": -158.0
  },
+ "place-heart-mountain-relocation-center": {
+  "name": "Heart Mountain Relocation Center",
+  "kind": "Japanese American incarceration camp, Wyoming",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Heart_Mountain_Relocation_Center",
+  "lat": null,
+  "lon": null
+ },
  "place-heathrow-airport": {
   "name": "Heathrow Airport",
   "kind": "airport, London",
@@ -9595,6 +9604,15 @@
   "source": "https://en.wikipedia.org/wiki/Sedan,_Ardennes",
   "lat": 49.7019,
   "lon": 4.9403
+ },
+ "place-semipalatinsk-test-site": {
+  "name": "Semipalatinsk Test Site",
+  "kind": "Soviet nuclear test site, Kazakhstan",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Semipalatinsk_Test_Site",
+  "lat": null,
+  "lon": null
  },
  "place-senglea": {
   "name": "Senglea",
