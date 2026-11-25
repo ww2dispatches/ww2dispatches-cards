@@ -3019,6 +3019,20 @@
   "lat": 51.4344,
   "lon": 5.4842
  },
+ "place-eisiskes": {
+  "lat": null,
+  "lon": null,
+  "name": "Eisiskes",
+  "kind": "town in Lithuania, the shtetl Eishishok",
+  "nation": "Lithuania",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ei%C5%A1i%C5%A1k%C4%97s",
+  "aka": [
+   "Eišiškės",
+   "Eishishok",
+   "Ejszyszki"
+  ]
+ },
  "place-el-agheila": {
   "name": "El Agheila",
   "kind": "town",
@@ -5089,6 +5103,18 @@
   "source": "https://en.wikipedia.org/wiki/Kalavryta",
   "lat": 38.0308,
   "lon": 22.1086
+ },
+ "place-kalumburu-western-australia": {
+  "lat": null,
+  "lon": null,
+  "name": "Kalumburu, Western Australia",
+  "kind": "mission community and wartime RAAF staging airfield (Drysdale River Mission)",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kalumburu,_Western_Australia",
+  "aka": [
+   "Drysdale River Mission"
+  ]
  },
  "place-kamaishi": {
   "name": "Kamaishi",

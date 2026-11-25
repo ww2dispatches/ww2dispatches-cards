@@ -819,6 +819,13 @@
   "wikidata": "Q2896528",
   "source": "https://en.wikipedia.org/wiki/Action_off_Bougainville"
  },
+ "op-actions-along-the-matanikau": {
+  "name": "Actions along the Matanikau",
+  "kind": "Guadalcanal campaign battles, September to October 1942",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Actions_along_the_Matanikau"
+ },
  "op-adlertag": {
   "name": "Adlertag",
   "kind": "Luftwaffe offensive opening day",
@@ -5848,6 +5855,16 @@
   "wikidata": "Q1332211",
   "source": "https://en.wikipedia.org/wiki/Flight_19"
  },
+ "op-four-days-of-naples": {
+  "name": "Four Days of Naples",
+  "kind": "Neapolitan uprising against German occupation, 27 to 30 September 1943",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Four_Days_of_Naples",
+  "aka": [
+   "Quattro giornate di Napoli"
+  ]
+ },
  "op-four-freedoms": {
   "name": "Four Freedoms",
   "kind": "Roosevelt's statement of war aims, annual message of 6 January 1941",
@@ -7052,6 +7069,13 @@
    "Razing of Kandanos"
   ]
  },
+ "op-kassel-mission": {
+  "name": "Kassel Mission",
+  "kind": "8th Air Force raid on Kassel and the air battle over the Seulingswald, 27 September 1944",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kassel_Mission"
+ },
  "op-katyn-massacre": {
   "name": "Katyn massacre",
   "kind": "Soviet mass execution of Polish prisoners, 1940",
@@ -7460,6 +7484,16 @@
   "source": "https://en.wikipedia.org/wiki/Liberation_of_Warsaw_concentration_camp",
   "aka": [
    "Liberation of Gęsiówka"
+  ]
+ },
+ "op-liberty-fleet-day": {
+  "name": "Liberty Fleet Day",
+  "kind": "27 September 1941, launch of the first 14 emergency cargo ships",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Liberty_Fleet_Day",
+  "aka": [
+   "Victory Fleet Day"
   ]
  },
  "op-lidice-massacre": {
@@ -10883,6 +10917,13 @@
   "source": "https://en.wikipedia.org/wiki/Siege_of_Tobruk",
   "wikidata": "Q611089"
  },
+ "op-siege-of-warsaw-1939": {
+  "name": "Siege of Warsaw (1939)",
+  "kind": "German siege of the Polish capital, 8 to 28 September 1939",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Siege_of_Warsaw_(1939)"
+ },
  "op-siegfried-line-campaign": {
   "name": "Siegfried Line campaign",
   "kind": "campaign",
@@ -10906,6 +10947,16 @@
   "nation": "Britain",
   "wikidata": "Q700569",
   "source": "https://en.wikipedia.org/wiki/Sinking_of_Prince_of_Wales_and_Repulse"
+ },
+ "op-sinking-of-the-ss-stephen-hopkins": {
+  "name": "Sinking of the SS Stephen Hopkins",
+  "kind": "Liberty ship versus German raider Stier, 27 September 1942",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sinking_of_the_SS_Stephen_Hopkins",
+  "aka": [
+   "SS Stephen Hopkins"
+  ]
  },
  "op-sino-british-treaty-for-the-relinquishment-of-extra-territorial-rights-in-china": {
   "name": "Sino-British treaty ending extraterritoriality (1943)",

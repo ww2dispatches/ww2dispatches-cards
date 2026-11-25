@@ -793,6 +793,16 @@
    "U-164"
   ]
  },
+ "ship-german-submarine-u-165-1941": {
+  "name": "German submarine U 165 (1941)",
+  "kind": "Type IXC U boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-165_(1941)",
+  "aka": [
+   "U 165"
+  ]
+ },
  "ship-german-submarine-u-166-1941": {
   "name": "German submarine U-166 (1941)",
   "kind": "submarine",
@@ -7582,6 +7592,13 @@
   "wikidata": "Q1577076",
   "source": "https://en.wikipedia.org/wiki/SS_Paris_(1916)"
  },
+ "ship-ss-patrick-henry": {
+  "name": "SS Patrick Henry",
+  "kind": "the first Liberty ship launched, Bethlehem Fairfield, Baltimore",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Patrick_Henry"
+ },
  "ship-ss-paul-hamilton": {
   "name": "SS Paul Hamilton",
   "kind": "Liberty ship",
@@ -7692,6 +7709,16 @@
   "nation": "Britain",
   "wikidata": "Q16224131",
   "source": "https://en.wikipedia.org/wiki/SS_Umona"
+ },
+ "ship-ss-ural-maru": {
+  "name": "SS Ural Maru",
+  "kind": "Japanese passenger cargo ship, army transport and hospital ship",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Ural_Maru",
+  "aka": [
+   "Ural Maru"
+  ]
  },
  "ship-ss-ussukuma": {
   "name": "Ussukuma",
