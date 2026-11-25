@@ -14,6 +14,13 @@
   "source": "https://en.wikipedia.org/wiki/Ariete-class_torpedo_boat",
   "note": "Class entity; TA 36 (ex Stella Polare) has no article of her own."
  },
+ "ship-arisan-maru": {
+  "name": "Arisan Maru",
+  "kind": "Japanese freighter used as a prisoner of war transport",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Arisan_Maru"
+ },
  "ship-belgian-ship-a4": {
   "name": "Belgian ship A4",
   "kind": "Belgian naval trawler",
@@ -2250,6 +2257,13 @@
   "nation": "Germany",
   "wikidata": "Q2472356",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-565"
+ },
+ "ship-german-submarine-u-566": {
+  "name": "German submarine U-566",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-566"
  },
  "ship-german-submarine-u-568": {
   "name": "U-568",
@@ -8796,6 +8810,13 @@
    "USS Besugo (SS-321)"
   ]
  },
+ "ship-uss-birmingham-cl-62": {
+  "name": "USS Birmingham (CL-62)",
+  "kind": "Cleveland class light cruiser",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Birmingham_(CL-62)"
+ },
  "ship-uss-bismarck-sea": {
   "name": "USS Bismarck Sea (CVE-95)",
   "kind": "Casablanca class escort carrier",
@@ -10194,6 +10215,13 @@
   "source": "https://en.wikipedia.org/wiki/USS_Preston_(DD-379)",
   "wikidata": "Q1133848"
  },
+ "ship-uss-princeton-cvl-23": {
+  "name": "USS Princeton (CVL-23)",
+  "kind": "Independence class light aircraft carrier",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Princeton_(CVL-23)"
+ },
  "ship-uss-queenfish-ss-393": {
   "name": "USS Queenfish (SS-393)",
   "kind": "US Balao class submarine",
@@ -10494,6 +10522,13 @@
   "nation": "US",
   "wikidata": "Q7874072",
   "source": "https://en.wikipedia.org/wiki/USS_Shark_(SS-174)"
+ },
+ "ship-uss-shark-ss-314": {
+  "name": "USS Shark (SS-314)",
+  "kind": "Balao class submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Shark_(SS-314)"
  },
  "ship-uss-shelton-de-407": {
   "name": "USS Shelton (DE-407)",

@@ -152,6 +152,15 @@
   "lat": 35.1802,
   "lon": 136.9064
  },
+ "place-aitape": {
+  "name": "Aitape",
+  "kind": "town on the north coast of New Guinea",
+  "nation": "Papua New Guinea",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Aitape",
+  "lat": null,
+  "lon": null
+ },
  "place-ajdabiya": {
   "name": "Ajdabiya",
   "kind": "town in Cyrenaica, Libya",
@@ -4657,6 +4666,15 @@
   "lat": 41.7633,
   "lon": -72.685
  },
+ "place-harwich": {
+  "name": "Harwich",
+  "kind": "port town in Essex, England",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Harwich",
+  "lat": null,
+  "lon": null
+ },
  "place-hatfield-aerodrome": {
   "name": "Hatfield",
   "kind": "airfield and factory",
@@ -4683,6 +4701,15 @@
   "wikidata": "Q782",
   "lat": 21.5,
   "lon": -158.0
+ },
+ "place-headquarters-of-the-united-nations": {
+  "name": "Headquarters of the United Nations",
+  "kind": "UN headquarters complex, Manhattan",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Headquarters_of_the_United_Nations",
+  "lat": null,
+  "lon": null
  },
  "place-heart-mountain-relocation-center": {
   "name": "Heart Mountain Relocation Center",
