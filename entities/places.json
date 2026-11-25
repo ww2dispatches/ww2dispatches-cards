@@ -9399,6 +9399,15 @@
    "Orly"
   ]
  },
+ "place-park-forest-illinois": {
+  "name": "Park Forest, Illinois",
+  "kind": "planned postwar village south of Chicago",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Park_Forest,_Illinois",
+  "lat": null,
+  "lon": null
+ },
  "place-pasig-river": {
   "name": "Pasig River",
   "kind": "river through Manila",
@@ -9407,6 +9416,15 @@
   "source": "https://en.wikipedia.org/wiki/Pasig_River",
   "lat": 14.5944,
   "lon": 120.9556
+ },
+ "place-patras": {
+  "name": "Patras",
+  "kind": "Greek port city",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Patras",
+  "lat": null,
+  "lon": null
  },
  "place-pearl-harbor": {
   "name": "Pearl Harbor",

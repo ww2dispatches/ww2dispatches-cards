@@ -2986,6 +2986,13 @@
   "wikidata": "Q609030",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Peleliu"
  },
+ "op-battle-of-pindus": {
+  "name": "Battle of Pindus",
+  "kind": "Greco Italian War battle, 28 October to 13 November 1940",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Pindus"
+ },
  "op-battle-of-pingxingguan": {
   "name": "Battle of Pingxingguan",
   "kind": "Second Sino Japanese War battle in Shanxi, September 1937",
@@ -7001,6 +7008,17 @@
   "nation": "Japan",
   "wikidata": "Q1252961",
   "source": "https://en.wikipedia.org/wiki/Higashikuni_cabinet"
+ },
+ "op-high-command-trial": {
+  "name": "High Command Trial",
+  "kind": "Nuremberg subsequent trial, Case 12",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/High_Command_Trial",
+  "aka": [
+   "Case 12",
+   "United States of America vs. Wilhelm von Leeb, et al."
+  ]
  },
  "op-hindenburg-disaster": {
   "name": "Hindenburg disaster",
@@ -11280,6 +11298,16 @@
   "nation": "Italy",
   "wikidata": "Q7283730",
   "source": "https://en.wikipedia.org/wiki/Raid_on_Algiers"
+ },
+ "op-raid-on-choiseul": {
+  "name": "Raid on Choiseul",
+  "kind": "U.S. Marine diversionary raid, 28 October to 3 November 1943",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Raid_on_Choiseul",
+  "aka": [
+   "Operation Blissful"
+  ]
  },
  "op-raid-on-darwin-2-may-1943": {
   "name": "Raid on Darwin (2 May 1943)",
