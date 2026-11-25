@@ -362,6 +362,13 @@
   "wikidata": "Q5265992",
   "source": "https://en.wikipedia.org/wiki/1943_Detroit_race_riot"
  },
+ "op-1943-frankford-junction-train-wreck": {
+  "name": "1943 Frankford Junction train wreck",
+  "kind": "rail disaster",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1943_Frankford_Junction_train_wreck"
+ },
  "op-1943-gibraltar-liberator-al523-crash": {
   "name": "1943 Gibraltar Liberator AL523 crash",
   "kind": "air crash that killed General Sikorski",
@@ -1601,6 +1608,13 @@
   "nation": "Australia",
   "wikidata": "Q2426368",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Bardia"
+ },
+ "op-battle-of-barking-creek": {
+  "name": "Battle of Barking Creek",
+  "kind": "friendly fire incident",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Barking_Creek"
  },
  "op-battle-of-bataan": {
   "name": "Battle of Bataan",
@@ -9115,6 +9129,13 @@
   "wikidata": "Q3354882",
   "source": "https://en.wikipedia.org/wiki/Operation_Tungsten"
  },
+ "op-operation-typhoon": {
+  "name": "Operation Typhoon",
+  "kind": "German offensive on Moscow",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Typhoon"
+ },
  "op-operation-u-go": {
   "name": "Operation U-Go",
   "kind": "Japanese offensive into India",
@@ -9235,6 +9256,16 @@
   "aka": [
    "Operation Manna",
    "Operation Chowhound"
+  ]
+ },
+ "op-operations-sandy-and-pushover": {
+  "name": "Operations Sandy and Pushover",
+  "kind": "shipboard rocket tests",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operations_Sandy_and_Pushover",
+  "aka": [
+   "Operation Sandy"
   ]
  },
  "op-oradour-sur-glane-massacre": {
@@ -9847,6 +9878,17 @@
   "nation": "Indonesia",
   "wikidata": "Q769581",
   "source": "https://en.wikipedia.org/wiki/Renville_Agreement"
+ },
+ "op-restatement-of-policy-on-germany": {
+  "name": "Restatement of Policy on Germany",
+  "kind": "policy speech",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Restatement_of_Policy_on_Germany",
+  "aka": [
+   "Stuttgart speech",
+   "Speech of Hope"
+  ]
  },
  "op-retreat-of-the-government-of-the-republic-of-china-to-taiwan": {
   "name": "Retreat of the government of the Republic of China to Taiwan",
@@ -11690,6 +11732,13 @@
   "aka": [
    "Addis Ababa massacre"
   ]
+ },
+ "op-yelnya-offensive": {
+  "name": "Yelnya offensive",
+  "kind": "Soviet offensive",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Yelnya_offensive"
  },
  "op-yevpatoria-assault": {
   "name": "Yevpatoria assault",

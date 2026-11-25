@@ -2689,6 +2689,13 @@
    "Arturo"
   ]
  },
+ "ship-german-training-ship-bremse": {
+  "name": "Bremse",
+  "kind": "gunnery training ship",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_training_ship_Bremse"
+ },
  "ship-german-weather-ship-lauenburg": {
   "name": "Lauenburg",
   "kind": "weather ship, converted trawler",
@@ -3120,6 +3127,13 @@
   "nation": "Britain",
   "wikidata": "Q1564348",
   "source": "https://en.wikipedia.org/wiki/HMS_Audacity"
+ },
+ "ship-hms-aurora-12": {
+  "name": "HMS Aurora (12)",
+  "kind": "light cruiser",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Aurora_(12)"
  },
  "ship-hms-barham-04": {
   "name": "HMS Barham (04)",
@@ -3577,6 +3591,13 @@
   "nation": "Britain",
   "wikidata": "Q927741",
   "source": "https://en.wikipedia.org/wiki/HMS_Glorious"
+ },
+ "ship-hms-glory-r62": {
+  "name": "HMS Glory (R62)",
+  "kind": "light aircraft carrier",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Glory_(R62)"
  },
  "ship-hms-gloucester-62": {
   "name": "HMS Gloucester (62)",
@@ -8574,6 +8595,13 @@
   "nation": "US",
   "wikidata": "Q7871713",
   "source": "https://en.wikipedia.org/wiki/USS_Menges"
+ },
+ "ship-uss-midway-cv-41": {
+  "name": "USS Midway (CV-41)",
+  "kind": "aircraft carrier",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Midway_(CV-41)"
  },
  "ship-uss-milwaukee-cl-5": {
   "name": "USS Milwaukee (CL-5)",

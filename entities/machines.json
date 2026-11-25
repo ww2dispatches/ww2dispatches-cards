@@ -1003,6 +1003,16 @@
   "wikidata": "Q12190",
   "source": "https://en.wikipedia.org/wiki/Penicillin"
  },
+ "machine-pennsylvania-railroad-class-gg1": {
+  "name": "Pennsylvania Railroad class GG1",
+  "kind": "electric locomotive",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Pennsylvania_Railroad_class_GG1",
+  "aka": [
+   "PRR GG1"
+  ]
+ },
  "machine-point-contact-transistor": {
   "name": "Point-contact transistor",
   "kind": "first working transistor",

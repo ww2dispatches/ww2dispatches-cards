@@ -7734,6 +7734,15 @@
   "lat": 52.955,
   "lon": -1.1492
  },
+ "place-novorossiysk": {
+  "name": "Novorossiysk",
+  "kind": "Black Sea port city",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Novorossiysk",
+  "lat": null,
+  "lon": null
+ },
  "place-numfor": {
   "name": "Numfor",
   "kind": "island off New Guinea",
@@ -10089,6 +10098,18 @@
    "Cape Sounion"
   ]
  },
+ "place-south-africa": {
+  "name": "South Africa",
+  "kind": "country",
+  "nation": "South Africa",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/South_Africa",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Union of South Africa"
+  ]
+ },
  "place-southampton": {
   "name": "Southampton",
   "kind": "port city",
@@ -10361,6 +10382,15 @@
   ],
   "lat": 50.6422,
   "lon": -1.9505
+ },
+ "place-stuttgart": {
+  "name": "Stuttgart",
+  "kind": "city",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Stuttgart",
+  "lat": null,
+  "lon": null
  },
  "place-stutthof-concentration-camp": {
   "name": "Stutthof concentration camp",

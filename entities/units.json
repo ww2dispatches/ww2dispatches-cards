@@ -381,6 +381,13 @@
   "wikidata": "Q4553514",
   "source": "https://en.wikipedia.org/wiki/179th_Infantry_Regiment_(United_States)"
  },
+ "unit-17th-army-wehrmacht": {
+  "name": "17th Army (Wehrmacht)",
+  "kind": "German field army",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/17th_Army_(Wehrmacht)"
+ },
  "unit-180th-cavalry-regiment": {
   "name": "180th Infantry Regiment",
   "kind": "U.S. Army infantry regiment, 45th Division",
@@ -743,6 +750,13 @@
   "nation": "Germany",
   "source": "https://en.wikipedia.org/wiki/22nd_Panzer_Division",
   "wikidata": "Q214479"
+ },
+ "unit-24th-army-soviet-union": {
+  "name": "24th Army (Soviet Union)",
+  "kind": "Red Army field army",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/24th_Army_(Soviet_Union)"
  },
  "unit-24th-brigade-australia": {
   "name": "24th Brigade (Australia)",
@@ -1170,6 +1184,17 @@
   "nation": "US",
   "wikidata": "Q12783051",
   "source": "https://en.wikipedia.org/wiki/37th_Infantry_Division_(United_States)"
+ },
+ "unit-386th-air-expeditionary-wing": {
+  "name": "386th Bombardment Group",
+  "kind": "USAAF medium bomb group",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/386th_Air_Expeditionary_Wing",
+  "aka": [
+   "386th Bomb Group",
+   "386th Air Expeditionary Wing"
+  ]
  },
  "unit-394th-infantry-regiment": {
   "name": "394th Infantry Regiment",
@@ -5043,6 +5068,13 @@
   "nation": "Germany",
   "wikidata": "Q897509",
   "source": "https://en.wikipedia.org/wiki/Peenem%C3%BCnde_Army_Research_Center"
+ },
+ "unit-pennsylvania-railroad": {
+  "name": "Pennsylvania Railroad",
+  "kind": "railroad company",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Pennsylvania_Railroad"
  },
  "unit-people-s-army-of-vietnam": {
   "name": "People's Army of Vietnam",
