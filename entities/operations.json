@@ -2090,6 +2090,16 @@
   "wikidata": "Q18920234",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Labuan"
  },
+ "op-battle-of-lake-khasan": {
+  "name": "Battle of Lake Khasan",
+  "kind": "Soviet Japanese border battle, 1938",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Lake_Khasan",
+  "aka": [
+   "Changkufeng Incident"
+  ]
+ },
  "op-battle-of-lanzerath-ridge": {
   "name": "Battle of Lanzerath Ridge",
   "kind": "battle, first day of the Ardennes offensive",
@@ -6153,6 +6163,16 @@
   "wikidata": "Q24307",
   "source": "https://en.wikipedia.org/wiki/Korematsu_v._United_States"
  },
+ "op-krakow-pogrom": {
+  "name": "Krakow pogrom",
+  "kind": "Anti-Jewish riot, 11 August 1945",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Krak%C3%B3w_pogrom",
+  "aka": [
+   "Kraków pogrom"
+  ]
+ },
  "op-krasnoye-selo-ropsha-offensive": {
   "name": "Krasnoye Selo and Ropsha offensive",
   "kind": "Soviet offensive from Oranienbaum and Pulkovo, January 1944",
@@ -7813,6 +7833,13 @@
   "wikidata": "Q1158759",
   "source": "https://en.wikipedia.org/wiki/Operation_Ladbroke"
  },
+ "op-operation-lehrgang": {
+  "name": "Operation Lehrgang",
+  "kind": "Axis evacuation of Sicily, August 1943",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Lehrgang"
+ },
  "op-operation-lentil-sumatra": {
   "name": "Operation Lentil (Sumatra)",
   "kind": "carrier air strike",
@@ -7958,6 +7985,13 @@
   "nation": "Germany",
   "wikidata": "Q2078945",
   "source": "https://en.wikipedia.org/wiki/Operation_Paula"
+ },
+ "op-operation-pedestal": {
+  "name": "Operation Pedestal",
+  "kind": "Malta convoy operation, August 1942",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Pedestal"
  },
  "op-operation-pike": {
   "name": "Operation Pike",
@@ -9121,6 +9155,17 @@
   "wikidata": "Q2267560",
   "source": "https://en.wikipedia.org/wiki/Self-elimination_of_the_Austrian_Parliament"
  },
+ "op-service-du-travail-obligatoire": {
+  "name": "Service du travail obligatoire",
+  "kind": "Vichy labor programs, including the Releve",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Service_du_travail_obligatoire",
+  "aka": [
+   "Releve",
+   "Relève"
+  ]
+ },
  "op-setif-and-guelma-massacre": {
   "name": "Setif and Guelma massacre",
   "kind": "colonial massacres in Algeria, May and June 1945",
@@ -9411,6 +9456,13 @@
   "aka": [
    "Operation August Storm"
   ]
+ },
+ "op-soviet-invasion-of-south-sakhalin": {
+  "name": "Soviet invasion of South Sakhalin",
+  "kind": "Soviet offensive, August 1945",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Soviet_invasion_of_South_Sakhalin"
  },
  "op-soviet-japanese-neutrality-pact": {
   "name": "Soviet-Japanese Neutrality Pact",

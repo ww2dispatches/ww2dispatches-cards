@@ -972,6 +972,13 @@
   "source": "https://en.wikipedia.org/wiki/30th_Infantry_Division_(United_States)",
   "wikidata": "Q2332494"
  },
+ "unit-30th-infantry-regiment-united-states": {
+  "name": "30th Infantry Regiment",
+  "kind": "U.S. Army infantry regiment, 3d Infantry Division",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/30th_Infantry_Regiment_(United_States)"
+ },
  "unit-31st-army-soviet-union": {
   "name": "31st Army",
   "kind": "Soviet field army",
@@ -4218,6 +4225,13 @@
   "wikidata": "Q3494417",
   "source": "https://en.wikipedia.org/wiki/No._138_Squadron_RAF"
  },
+ "unit-no-145-squadron-raf": {
+  "name": "No. 145 Squadron RAF",
+  "kind": "RAF fighter squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._145_Squadron_RAF"
+ },
  "unit-no-149-squadron-raf": {
   "name": "No. 149 Squadron RAF",
   "kind": "bomber squadron",
@@ -4248,6 +4262,13 @@
   "nation": "Britain",
   "wikidata": "Q7043026",
   "source": "https://en.wikipedia.org/wiki/No._172_Squadron_RAF"
+ },
+ "unit-no-200-squadron-raf": {
+  "name": "No. 200 Squadron RAF",
+  "kind": "RAF maritime patrol squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._200_Squadron_RAF"
  },
  "unit-no-202-squadron-raf": {
   "name": "No. 202 Squadron RAF",

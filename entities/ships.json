@@ -1288,6 +1288,13 @@
    "U-374"
   ]
  },
+ "ship-german-submarine-u-385": {
+  "name": "U-385",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-385"
+ },
  "ship-german-submarine-u-388": {
   "name": "U-388",
   "kind": "German U-boat",
@@ -1444,6 +1451,13 @@
   "nation": "Germany",
   "wikidata": "Q5551697",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-465"
+ },
+ "ship-german-submarine-u-468": {
+  "name": "U-468",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-468"
  },
  "ship-german-submarine-u-469": {
   "name": "German submarine U-469",

@@ -1262,6 +1262,15 @@
    "Brünn"
   ]
  },
+ "place-brolo": {
+  "name": "Brolo",
+  "kind": "Town on Sicily's north coast",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Brolo",
+  "lat": null,
+  "lon": null
+ },
  "place-broome-western-australia": {
   "name": "Broome, Western Australia",
   "kind": "port town",
@@ -2022,6 +2031,18 @@
   "source": "https://en.wikipedia.org/wiki/Columbia,_Tennessee",
   "lat": 35.615,
   "lon": -87.0445
+ },
+ "place-compiegne": {
+  "name": "Compiegne",
+  "kind": "Town",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Compi%C3%A8gne",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Compiègne"
+  ]
  },
  "place-cook-county-hospital": {
   "name": "Cook County Hospital",
@@ -4928,6 +4949,15 @@
   "source": "https://en.wikipedia.org/wiki/Kunming",
   "lat": 25.0433,
   "lon": 102.7061
+ },
+ "place-kupa-synagogue": {
+  "name": "Kupa Synagogue",
+  "kind": "Synagogue in Kazimierz, Krakow",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kupa_Synagogue",
+  "lat": null,
+  "lon": null
  },
  "place-kure": {
   "name": "Kure",
@@ -8628,6 +8658,15 @@
    "Nu River"
   ]
  },
+ "place-salzburg": {
+  "name": "Salzburg",
+  "kind": "City",
+  "nation": "Austria",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Salzburg",
+  "lat": null,
+  "lon": null
+ },
  "place-samar": {
   "name": "Samar",
   "kind": "island",
@@ -9432,6 +9471,15 @@
   "source": "https://en.wikipedia.org/wiki/Strait_of_Dover",
   "lat": 51.0,
   "lon": 1.45
+ },
+ "place-strait-of-messina": {
+  "name": "Strait of Messina",
+  "kind": "Strait between Sicily and Calabria",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Strait_of_Messina",
+  "lat": null,
+  "lon": null
  },
  "place-strasbourg": {
   "name": "Strasbourg",
