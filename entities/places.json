@@ -441,6 +441,15 @@
   "lat": 48.7444,
   "lon": -0.0203
  },
+ "place-arnhem": {
+  "name": "Arnhem",
+  "kind": "city in the Netherlands on the Neder Rijn",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Arnhem",
+  "lat": null,
+  "lon": null
+ },
  "place-aruba": {
   "name": "Aruba",
   "kind": "island",
@@ -9169,6 +9178,15 @@
    "No. 21 Maintenance Unit"
   ]
  },
+ "place-raf-filton": {
+  "name": "RAF Filton",
+  "kind": "airfield and aircraft works north of Bristol",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/RAF_Filton",
+  "lat": null,
+  "lon": null
+ },
  "place-raf-gatow": {
   "name": "RAF Gatow",
   "kind": "RAF airfield in Berlin",
@@ -10371,6 +10389,15 @@
   "wikidata": "Q49204",
   "lat": 42.3175,
   "lon": -72.6375
+ },
+ "place-smolensk": {
+  "name": "Smolensk",
+  "kind": "city in western Russia",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Smolensk",
+  "lat": null,
+  "lon": null
  },
  "place-sobibor-extermination-camp": {
   "name": "Sobibor extermination camp",

@@ -2726,6 +2726,13 @@
   "wikidata": "Q609030",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Peleliu"
  },
+ "op-battle-of-pingxingguan": {
+  "name": "Battle of Pingxingguan",
+  "kind": "Second Sino Japanese War battle in Shanxi, September 1937",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Pingxingguan"
+ },
  "op-battle-of-point-175": {
   "name": "Battle of Point 175",
   "kind": "battle",
@@ -5485,6 +5492,13 @@
   "nation": "Germany",
   "wikidata": "Q1202188",
   "source": "https://en.wikipedia.org/wiki/European_banking_crisis_of_1931"
+ },
+ "op-evacuation-of-arnhem": {
+  "name": "Evacuation of Arnhem",
+  "kind": "forced evacuation of Arnhem's civilians by the Wehrmacht, September 1944",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Evacuation_of_Arnhem"
  },
  "op-evacuation-of-children-in-the-spanish-civil-war": {
   "name": "Evacuation of children in the Spanish Civil War",
@@ -8539,6 +8553,13 @@
   "wikidata": "Q2572890",
   "source": "https://en.wikipedia.org/wiki/Operation_Baytown"
  },
+ "op-operation-berlin-arnhem": {
+  "name": "Operation Berlin",
+  "kind": "withdrawal of 1st Airborne Division across the Neder Rijn, 25 to 26 September 1944",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Berlin_(Arnhem)"
+ },
  "op-operation-big-bang": {
   "name": "Operation Big Bang",
   "kind": "demolition of Heligoland's fortifications",
@@ -9760,6 +9781,13 @@
   "wikidata": "Q2032413",
   "source": "https://en.wikipedia.org/wiki/Orze%C5%82_incident"
  },
+ "op-oslo-mosquito-raid-1942": {
+  "name": "Oslo Mosquito raid (1942)",
+  "kind": "RAF low level raid on the Gestapo headquarters in Oslo",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Oslo_Mosquito_raid_(1942)"
+ },
  "op-oslo-mosquito-raid-1944": {
   "name": "Oslo Mosquito raid (1944)",
   "kind": "RAF precision raid on the Gestapo headquarters in Oslo",
@@ -10964,6 +10992,13 @@
   "nation": "US",
   "wikidata": "Q493361",
   "source": "https://en.wikipedia.org/wiki/Smokey_Bear"
+ },
+ "op-smolensk-operation": {
+  "name": "Smolensk operation",
+  "kind": "Soviet offensive, August to October 1943",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Smolensk_operation"
  },
  "op-smyth-report": {
   "name": "Smyth Report",
