@@ -3483,6 +3483,16 @@
   "wikidata": "Q504347",
   "source": "https://en.wikipedia.org/wiki/Battle_of_the_Philippine_Sea"
  },
+ "op-battle-of-the-river-forth": {
+  "name": "Battle of the River Forth",
+  "kind": "first German air raid on Britain, 16 October 1939",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_the_River_Forth",
+  "aka": [
+   "Firth of Forth raid"
+  ]
+ },
  "op-battle-of-the-river-plate": {
   "name": "Battle of the River Plate",
   "kind": "naval battle",
@@ -5235,6 +5245,13 @@
   "nation": "Britain",
   "wikidata": "Q5166662",
   "source": "https://en.wikipedia.org/wiki/Convoy_SC_42"
+ },
+ "op-convoy-sc-48": {
+  "name": "Convoy SC 48",
+  "kind": "Atlantic convoy",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Convoy_SC_48"
  },
  "op-convoy-sc-94": {
   "name": "Convoy SC 94",
@@ -8861,6 +8878,13 @@
   "wikidata": "Q17012800",
   "source": "https://en.wikipedia.org/wiki/NS-Ordensburgen"
  },
+ "op-nuremberg-executions": {
+  "name": "Nuremberg executions",
+  "kind": "hanging of ten condemned Nuremberg defendants, 16 October 1946",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Nuremberg_executions"
+ },
  "op-nuremberg-laws": {
   "name": "Nuremberg Laws",
   "kind": "antisemitic race laws",
@@ -10935,6 +10959,13 @@
   "wikidata": "Q715663",
   "source": "https://en.wikipedia.org/wiki/Raid_on_Tatsinskaya"
  },
+ "op-raid-on-the-roman-ghetto": {
+  "name": "Raid on the Roman Ghetto",
+  "kind": "roundup and deportation of Rome's Jews, 16 October 1943",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Raid_on_the_Roman_Ghetto"
+ },
  "op-raid-on-yontan-airfield": {
   "name": "Raid on Yontan Airfield",
   "kind": "Japanese airborne raid",
@@ -11572,6 +11603,16 @@
   "nation": "Burma",
   "wikidata": "Q19840798",
   "source": "https://en.wikipedia.org/wiki/Siege_of_Myitkyina"
+ },
+ "op-siege-of-odessa": {
+  "name": "Siege of Odessa",
+  "kind": "Axis siege of Odessa, August to October 1941",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Siege_of_Odessa",
+  "aka": [
+   "Defence of Odessa"
+  ]
  },
  "op-siege-of-saio": {
   "name": "Siege of Saïo",

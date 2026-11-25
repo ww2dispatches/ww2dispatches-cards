@@ -1449,6 +1449,13 @@
   "wikidata": "Q32804",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-352"
  },
+ "ship-german-submarine-u-353": {
+  "name": "U-353",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-353"
+ },
  "ship-german-submarine-u-354": {
   "name": "German submarine U-354",
   "kind": "U-boat",
@@ -2023,6 +2030,13 @@
   "nation": "Germany",
   "wikidata": "Q247904",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-530"
+ },
+ "ship-german-submarine-u-533": {
+  "name": "U-533",
+  "kind": "Type IXC/40 U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-533"
  },
  "ship-german-submarine-u-543": {
   "name": "German submarine U-543",
@@ -3895,6 +3909,13 @@
   "wikidata": "Q615525",
   "source": "https://en.wikipedia.org/wiki/HMS_Express_(H61)"
  },
+ "ship-hms-fame-h78": {
+  "name": "HMS Fame (H78)",
+  "kind": "F class destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Fame_(H78)"
+ },
  "ship-hms-fearless-h67": {
   "name": "HMS Fearless (H67)",
   "kind": "Royal Navy destroyer",
@@ -3970,6 +3991,13 @@
   "nation": "Britain",
   "wikidata": "Q2735915",
   "source": "https://en.wikipedia.org/wiki/HMS_Galatea_(71)"
+ },
+ "ship-hms-gladiolus-k34": {
+  "name": "HMS Gladiolus (K34)",
+  "kind": "Flower class corvette",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Gladiolus_(K34)"
  },
  "ship-hms-glasgow-c21": {
   "name": "HMS Glasgow (C21)",
@@ -6903,6 +6931,16 @@
   "nation": "Britain",
   "wikidata": "Q104790299",
   "source": "https://en.wikipedia.org/wiki/MS_Africa_Shell"
+ },
+ "ship-ms-aramis": {
+  "name": "Teia Maru",
+  "kind": "French liner Aramis, seized by Japan and used as an exchange ship",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/MS_Aramis",
+  "aka": [
+   "Aramis"
+  ]
  },
  "ship-ms-awazisan-maru": {
   "name": "Awazisan Maru",

@@ -3540,6 +3540,13 @@
    "14th Army"
   ]
  },
+ "unit-fourth-army-romania": {
+  "name": "Fourth Army (Romania)",
+  "kind": "Romanian field army",
+  "nation": "Romania",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fourth_Army_(Romania)"
+ },
  "unit-frankfurter-zeitung": {
   "name": "Frankfurter Zeitung",
   "kind": "German newspaper",
@@ -4903,6 +4910,13 @@
   "nation": "Britain",
   "wikidata": "Q16057463",
   "source": "https://en.wikipedia.org/wiki/No._233_Squadron_RAF"
+ },
+ "unit-no-244-squadron-raf": {
+  "name": "No. 244 Squadron RAF",
+  "kind": "RAF bomber squadron in the Persian Gulf",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._244_Squadron_RAF"
  },
  "unit-no-249-squadron-raf": {
   "name": "No. 249 Squadron RAF",

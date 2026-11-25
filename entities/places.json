@@ -2170,6 +2170,15 @@
   "lat": 52.5167,
   "lon": 13.3
  },
+ "place-chateau-frontenac": {
+  "name": "Chateau Frontenac",
+  "kind": "hotel in Quebec City",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ch%C3%A2teau_Frontenac",
+  "lat": null,
+  "lon": null
+ },
  "place-chautauqua-institution": {
   "name": "Chautauqua Institution",
   "kind": "lakeside education center, New York",
@@ -7748,6 +7757,18 @@
   "lat": 51.165,
   "lon": 13.6794
  },
+ "place-mormugao": {
+  "name": "Mormugao",
+  "kind": "port in Portuguese Goa",
+  "nation": "Portugal",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mormugao",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Marmagao"
+  ]
+ },
  "place-morong-bataan": {
   "name": "Morong, Bataan",
   "kind": "town",
@@ -10345,6 +10366,15 @@
   "source": "https://en.wikipedia.org/wiki/Salzburg",
   "lat": 47.8,
   "lon": 13.045
+ },
+ "place-salzburg-cathedral": {
+  "name": "Salzburg Cathedral",
+  "kind": "baroque cathedral",
+  "nation": "Austria",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Salzburg_Cathedral",
+  "lat": null,
+  "lon": null
  },
  "place-samar": {
   "name": "Samar",
