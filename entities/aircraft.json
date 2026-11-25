@@ -412,6 +412,13 @@
   "wikidata": "Q562167",
   "source": "https://en.wikipedia.org/wiki/Douglas_A-26_Invader"
  },
+ "aircraft-douglas-b-18-bolo": {
+  "name": "Douglas B-18 Bolo",
+  "kind": "Twin engine bomber",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Douglas_B-18_Bolo"
+ },
  "aircraft-douglas-c-47-skytrain": {
   "name": "Douglas C-47 Skytrain",
   "kind": "military transport aircraft",
@@ -812,6 +819,14 @@
    "Shiden Kai"
   ]
  },
+ "aircraft-l-8": {
+  "name": "L-8",
+  "kind": "US Navy blimp, the 1942 ghost blimp",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/L-8",
+  "note": "Single named airship; earns its own entity because the story is about her."
+ },
  "aircraft-lady-be-good-aircraft": {
   "name": "Lady Be Good (aircraft)",
   "kind": "B-24D Liberator lost in the Libyan desert in April 1943",
@@ -1161,6 +1176,17 @@
   "aka": [
    "AT-6",
    "Harvard"
+  ]
+ },
+ "aircraft-northrop-f-89-scorpion": {
+  "name": "Northrop F-89 Scorpion",
+  "kind": "Jet all weather interceptor",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Northrop_F-89_Scorpion",
+  "aka": [
+   "XP-89",
+   "XF-89"
   ]
  },
  "aircraft-northrop-yb-49": {

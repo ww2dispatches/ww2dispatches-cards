@@ -2026,6 +2026,15 @@
    "Saverne Gap"
   ]
  },
+ "place-cold-bay-alaska": {
+  "name": "Cold Bay, Alaska",
+  "kind": "Bay and base, Project Hula site",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Cold_Bay,_Alaska",
+  "lat": null,
+  "lon": null
+ },
  "place-colditz-castle": {
   "name": "Colditz Castle",
   "kind": "castle and prisoner of war camp",
@@ -2268,6 +2277,15 @@
   "source": "https://en.wikipedia.org/wiki/Dakar",
   "lat": 14.6726,
   "lon": -17.432
+ },
+ "place-daly-city-california": {
+  "name": "Daly City, California",
+  "kind": "City",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Daly_City,_California",
+  "lat": null,
+  "lon": null
  },
  "place-damascus": {
   "name": "Damascus",
@@ -11221,6 +11239,15 @@
   "source": "https://en.wikipedia.org/wiki/Wilhelmshaven",
   "lat": 53.5286,
   "lon": 8.1056
+ },
+ "place-wimbledon-london": {
+  "name": "Wimbledon, London",
+  "kind": "London suburb",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Wimbledon,_London",
+  "lat": null,
+  "lon": null
  },
  "place-winnipeg": {
   "name": "Winnipeg",

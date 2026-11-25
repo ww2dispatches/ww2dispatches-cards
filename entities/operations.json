@@ -3304,6 +3304,13 @@
   "wikidata": "Q4899669",
   "source": "https://en.wikipedia.org/wiki/Bevin_Boys"
  },
+ "op-bialystok-ghetto-uprising": {
+  "name": "Białystok Ghetto uprising",
+  "kind": "Jewish ghetto uprising",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bia%C5%82ystok_Ghetto_uprising"
+ },
  "op-big-inch": {
   "name": "Big Inch",
   "kind": "wartime crude oil pipeline project",
@@ -4643,6 +4650,16 @@
   "nation": "Germany",
   "wikidata": "Q5266335",
   "source": "https://en.wikipedia.org/wiki/Deutschland_incident_(1937)"
+ },
+ "op-direct-action-day": {
+  "name": "Direct Action Day",
+  "kind": "1946 Calcutta riots",
+  "nation": "India",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Direct_Action_Day",
+  "aka": [
+   "Great Calcutta Killings"
+  ]
  },
  "op-discovery-of-nuclear-fission": {
   "name": "Discovery of nuclear fission",
@@ -8573,6 +8590,13 @@
    "Jorstadelva Bridge sabotage"
   ]
  },
+ "op-operation-wunderland": {
+  "name": "Operation Wunderland",
+  "kind": "German naval raid into the Kara Sea",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Wunderland"
+ },
  "op-operation-z-1944": {
   "name": "Operation Z (1944)",
   "kind": "Combined Fleet plan for a decisive battle, the Z Plan",
@@ -8614,6 +8638,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q2069953",
   "source": "https://en.wikipedia.org/wiki/Order_No._227"
+ },
+ "op-order-no-270": {
+  "name": "Order No. 270",
+  "kind": "Soviet Stavka order on surrender",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Order_No._270"
  },
  "op-order-of-the-german-eagle": {
   "name": "Order of the German Eagle",
@@ -8898,6 +8929,13 @@
   "nation": "US",
   "wikidata": "Q7249063",
   "source": "https://en.wikipedia.org/wiki/Project_Diana"
+ },
+ "op-project-hula": {
+  "name": "Project Hula",
+  "kind": "US ship transfer program to the Soviet Union",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Project_Hula"
  },
  "op-proposed-united-states-acquisition-of-greenland": {
   "name": "Proposed United States acquisition of Greenland",

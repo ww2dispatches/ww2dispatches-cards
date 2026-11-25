@@ -251,6 +251,16 @@
   "wikidata": "Q708046",
   "source": "https://en.wikipedia.org/wiki/German_auxiliary_cruiser_Kormoran"
  },
+ "ship-german-auxiliary-cruiser-orion": {
+  "name": "German auxiliary cruiser Orion",
+  "kind": "Auxiliary cruiser (commerce raider)",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_auxiliary_cruiser_Orion",
+  "aka": [
+   "Schiff 36"
+  ]
+ },
  "ship-german-auxiliary-cruiser-pinguin": {
   "name": "Pinguin",
   "kind": "German auxiliary cruiser (merchant raider)",
@@ -6339,6 +6349,23 @@
   "nation": "US",
   "wikidata": "Q7393183",
   "source": "https://en.wikipedia.org/wiki/SS_Argentina_(1929)"
+ },
+ "ship-ss-baependy": {
+  "name": "SS Baependy",
+  "kind": "Passenger steamship",
+  "nation": "Brazil",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Baependy",
+  "aka": [
+   "Tijuca"
+  ]
+ },
+ "ship-ss-benjamin-contee": {
+  "name": "SS Benjamin Contee",
+  "kind": "Liberty ship",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Benjamin_Contee"
  },
  "ship-ss-benlomond-1922": {
   "name": "SS Benlomond",
