@@ -2015,6 +2015,13 @@
   "wikidata": "Q260811",
   "source": "https://en.wikipedia.org/wiki/7th_Panzer_Division_(Wehrmacht)"
  },
+ "unit-803-naval-air-squadron": {
+  "name": "803 Naval Air Squadron",
+  "kind": "Fleet Air Arm squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/803_Naval_Air_Squadron"
+ },
  "unit-80th-training-command": {
   "name": "80th Infantry Division",
   "kind": "U.S. infantry division",
@@ -5981,6 +5988,16 @@
   "source": "https://en.wikipedia.org/wiki/Sudeten_German_Party",
   "aka": [
    "SdP"
+  ]
+ },
+ "unit-supermarine": {
+  "name": "Supermarine",
+  "kind": "aircraft maker, builder of the Spitfire",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Supermarine",
+  "aka": [
+   "Vickers Supermarine"
   ]
  },
  "unit-supreme-commander-for-the-allied-powers": {

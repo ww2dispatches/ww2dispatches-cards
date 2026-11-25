@@ -4013,6 +4013,13 @@
   "wikidata": "Q3022185",
   "source": "https://en.wikipedia.org/wiki/HMS_Inglefield"
  },
+ "ship-hms-intrepid-d10": {
+  "name": "HMS Intrepid (D10)",
+  "kind": "I class destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Intrepid_(D10)"
+ },
  "ship-hms-isis-d87": {
   "name": "HMS Isis (D87)",
   "kind": "Royal Navy destroyer",
@@ -4910,6 +4917,13 @@
   "nation": "Britain",
   "wikidata": "Q15222469",
   "source": "https://en.wikipedia.org/wiki/HMS_Vestal_(J215)"
+ },
+ "ship-hms-veteran-d72": {
+  "name": "HMS Veteran (D72)",
+  "kind": "V and W class destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Veteran_(D72)"
  },
  "ship-hms-victorious-r38": {
   "name": "HMS Victorious (R38)",
@@ -6718,6 +6732,16 @@
    "Kerlogue"
   ]
  },
+ "ship-mv-krait": {
+  "name": "MV Krait",
+  "kind": "former Japanese fishing boat used by Z Special Unit",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/MV_Krait",
+  "aka": [
+   "Kofuku Maru"
+  ]
+ },
  "ship-mv-mefkure": {
   "name": "MV Mefküre",
   "kind": "Turkish motor schooner carrying Jewish refugees",
@@ -7115,6 +7139,13 @@
   "nation": "Britain",
   "wikidata": "Q755356",
   "source": "https://en.wikipedia.org/wiki/SS_Athenia_(1922)"
+ },
+ "ship-ss-avoceta": {
+  "name": "SS Avoceta",
+  "kind": "British passenger ship",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Avoceta"
  },
  "ship-ss-baependy": {
   "name": "SS Baependy",

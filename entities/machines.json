@@ -666,6 +666,16 @@
   "wikidata": "Q204191",
   "source": "https://en.wikipedia.org/wiki/It's_a_Wonderful_Life"
  },
+ "machine-jager-report": {
+  "name": "Jäger Report",
+  "kind": "Einsatzkommando 3 execution report",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/J%C3%A4ger_Report",
+  "aka": [
+   "Jager Report"
+  ]
+ },
  "machine-kangaroo-armoured-personnel-carrier": {
   "name": "Kangaroo (armoured personnel carrier)",
   "kind": "armored personnel carrier converted from tanks and self propelled guns",
@@ -1470,6 +1480,13 @@
   "nation": "Germany",
   "wikidata": "Q152946",
   "source": "https://en.wikipedia.org/wiki/Volkswagen_Beetle"
+ },
+ "machine-wac-corporal": {
+  "name": "WAC Corporal",
+  "kind": "sounding rocket",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/WAC_Corporal"
  },
  "machine-we-hold-these-truths": {
   "name": "We Hold These Truths",

@@ -4564,6 +4564,13 @@
    "Tukhachevsky trial"
   ]
  },
+ "op-caserta-agreement": {
+  "name": "Caserta Agreement",
+  "kind": "Greek government and resistance agreement",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Caserta_Agreement"
+ },
  "op-catalonia-offensive": {
   "name": "Catalonia Offensive",
   "kind": "Spanish Civil War offensive",
@@ -4800,6 +4807,13 @@
   "nation": "Britain",
   "wikidata": "Q5166614",
   "source": "https://en.wikipedia.org/wiki/Convoy_Faith"
+ },
+ "op-convoy-hg-73": {
+  "name": "Convoy HG 73",
+  "kind": "Gibraltar to Britain convoy",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Convoy_HG_73"
  },
  "op-convoy-hg-76": {
   "name": "Convoy HG 76",
@@ -9118,6 +9132,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q233278",
   "source": "https://en.wikipedia.org/wiki/Operation_Iskra"
+ },
+ "op-operation-jaywick": {
+  "name": "Operation Jaywick",
+  "kind": "commando raid on Singapore harbour",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Jaywick"
  },
  "op-operation-jericho": {
   "name": "Operation Jericho",

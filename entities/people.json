@@ -1,4 +1,11 @@
 {
+ "person-a-peter-dewey": {
+  "name": "A. Peter Dewey",
+  "kind": "OSS officer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/A._Peter_Dewey"
+ },
  "person-a-philip-randolph": {
   "name": "A. Philip Randolph",
   "kind": "civil rights and labor leader",
@@ -6674,6 +6681,13 @@
   "wikidata": "Q35236",
   "source": "https://en.wikipedia.org/wiki/Herbert_Hoover"
  },
+ "person-herbert-kappler": {
+  "name": "Herbert Kappler",
+  "kind": "German police chief in occupied Rome",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Herbert_Kappler"
+ },
  "person-herbert-lange": {
   "name": "Herbert Lange",
   "kind": "SS officer, first commandant at Chelmno",
@@ -7321,6 +7335,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q185024",
   "source": "https://en.wikipedia.org/wiki/Ivan_Konev"
+ },
+ "person-ivan-lyon": {
+  "name": "Ivan Lyon",
+  "kind": "British Army officer, Z Special Unit",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ivan_Lyon"
  },
  "person-ivan-lyudnikov": {
   "name": "Ivan Lyudnikov",
@@ -15062,6 +15083,13 @@
   "nation": "US",
   "wikidata": "Q333365",
   "source": "https://en.wikipedia.org/wiki/Walter_Bedell_Smith"
+ },
+ "person-walter-benjamin": {
+  "name": "Walter Benjamin",
+  "kind": "philosopher and refugee",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Walter_Benjamin"
  },
  "person-walter-brattain": {
   "name": "Walter Brattain",

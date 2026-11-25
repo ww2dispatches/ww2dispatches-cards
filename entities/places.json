@@ -537,6 +537,15 @@
   "lat": 38.624,
   "lon": -28.031
  },
+ "place-b-reactor": {
+  "name": "B Reactor",
+  "kind": "plutonium production reactor at Hanford",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/B_Reactor",
+  "lat": null,
+  "lon": null
+ },
  "place-babruysk": {
   "name": "Bobruisk",
   "kind": "city in Belarus",
@@ -8979,6 +8988,15 @@
   "wikidata": "Q134509",
   "lat": 31.2625,
   "lon": 32.3061
+ },
+ "place-portbou": {
+  "name": "Portbou",
+  "kind": "Spanish border town",
+  "nation": "Spain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Portbou",
+  "lat": null,
+  "lon": null
  },
  "place-portland-harbour": {
   "name": "Portland Harbour",
