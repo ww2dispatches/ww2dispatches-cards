@@ -525,6 +525,16 @@
   "source": "https://en.wikipedia.org/wiki/1944_United_States_presidential_election",
   "wikidata": "Q596667"
  },
+ "op-1945-anti-jewish-riots-in-tripolitania": {
+  "name": "1945 anti-Jewish riots in Tripolitania",
+  "kind": "pogrom",
+  "nation": "Libya",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1945_anti-Jewish_riots_in_Tripolitania",
+  "aka": [
+   "1945 Tripoli pogrom"
+  ]
+ },
  "op-1945-french-legislative-election": {
   "name": "1945 French legislative election",
   "kind": "election",
@@ -607,6 +617,13 @@
   "nation": "worldwide",
   "wikidata": "Q96362240",
   "source": "https://en.wikipedia.org/wiki/1946_United_Nations_Secretary-General_selection"
+ },
+ "op-1946-united-states-elections": {
+  "name": "1946 United States elections",
+  "kind": "midterm elections",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1946_United_States_elections"
  },
  "op-1946-united-states-steel-strike": {
   "name": "1946 United States steel strike",
@@ -5346,6 +5363,13 @@
   "wikidata": "Q5166624",
   "source": "https://en.wikipedia.org/wiki/Convoy_HX_79"
  },
+ "op-convoy-hx-84": {
+  "name": "Convoy HX 84",
+  "kind": "North Atlantic convoy",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Convoy_HX_84"
+ },
  "op-convoy-hx-90": {
   "name": "Convoy HX 90",
   "kind": "Atlantic convoy",
@@ -7268,6 +7292,16 @@
   "source": "https://en.wikipedia.org/wiki/Hongkou_Park_Incident",
   "aka": [
    "Hongkew Park bombing"
+  ]
+ },
+ "op-hossbach-memorandum": {
+  "name": "Hossbach Memorandum",
+  "kind": "minutes of Hitler's 5 November 1937 conference",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hossbach_Memorandum",
+  "aka": [
+   "Hossbach Protocol"
   ]
  },
  "op-hostages-trial": {

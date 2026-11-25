@@ -510,6 +510,15 @@
   "lat": 12.515,
   "lon": -69.975
  },
+ "place-ascension-island": {
+  "name": "Ascension Island",
+  "kind": "island in the South Atlantic",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ascension_Island",
+  "lat": null,
+  "lon": null
+ },
  "place-athens": {
   "name": "Athens",
   "kind": "city",
@@ -5009,6 +5018,15 @@
   "aka": [
    "Höchst"
   ]
+ },
+ "place-hof-bavaria": {
+  "name": "Hof, Bavaria",
+  "kind": "town",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hof,_Bavaria",
+  "lat": null,
+  "lon": null
  },
  "place-hollywood-canteen": {
   "name": "Hollywood Canteen",
@@ -13041,6 +13059,15 @@
   "aka": [
    "Vanport"
   ]
+ },
+ "place-vatican-city": {
+  "name": "Vatican City",
+  "kind": "neutral city state",
+  "nation": "Vatican City",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Vatican_City",
+  "lat": null,
+  "lon": null
  },
  "place-vauxhall-luton": {
   "name": "Vauxhall Luton",

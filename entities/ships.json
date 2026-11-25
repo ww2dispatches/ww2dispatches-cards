@@ -1714,6 +1714,13 @@
   "wikidata": "Q9363941",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-407"
  },
+ "ship-german-submarine-u-408": {
+  "name": "German submarine U-408",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-408"
+ },
  "ship-german-submarine-u-409": {
   "name": "U-409",
   "kind": "Kriegsmarine U-boat",
@@ -2975,6 +2982,13 @@
   "nation": "Germany",
   "wikidata": "Q2781918",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-847"
+ },
+ "ship-german-submarine-u-848": {
+  "name": "German submarine U-848",
+  "kind": "Type IXD2 U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-848"
  },
  "ship-german-submarine-u-85-1941": {
   "name": "U-85",
@@ -4507,6 +4521,13 @@
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/HMS_Jervis",
   "wikidata": "Q2457787"
+ },
+ "ship-hms-jervis-bay": {
+  "name": "HMS Jervis Bay",
+  "kind": "armed merchant cruiser, converted liner",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Jervis_Bay"
  },
  "ship-hms-jupiter-f85": {
   "name": "HMS Jupiter (F85)",
