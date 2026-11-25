@@ -406,6 +406,13 @@
   "wikidata": "Q4557601",
   "source": "https://en.wikipedia.org/wiki/18th_Indian_Infantry_Brigade"
  },
+ "unit-18th-pomeranian-uhlan-regiment": {
+  "name": "18th Pomeranian Uhlan Regiment",
+  "kind": "Polish cavalry regiment",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/18th_Pomeranian_Uhlan_Regiment"
+ },
  "unit-19th-army-wehrmacht": {
   "name": "19th Army (Wehrmacht)",
   "kind": "German field army",
@@ -685,6 +692,13 @@
   "wikidata": "Q2814448",
   "source": "https://en.wikipedia.org/wiki/200th_Division_(National_Revolutionary_Army)"
  },
+ "unit-21st-army-group": {
+  "name": "21st Army Group",
+  "kind": "Allied army group",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/21st_Army_Group"
+ },
  "unit-21st-army-soviet-union": {
   "name": "21st Army",
   "kind": "Soviet field army",
@@ -886,6 +900,16 @@
   "nation": "Soviet Union",
   "wikidata": "Q210633",
   "source": "https://en.wikipedia.org/wiki/2nd_Belorussian_Front"
+ },
+ "unit-2nd-canadian-division": {
+  "name": "2nd Canadian Division",
+  "kind": "Canadian Army infantry division",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/2nd_Canadian_Division",
+  "aka": [
+   "2nd Canadian Infantry Division"
+  ]
  },
  "unit-2nd-dragoon-guards-queen-s-bays": {
   "name": "Queen's Bays",

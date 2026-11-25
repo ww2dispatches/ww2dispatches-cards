@@ -3242,6 +3242,13 @@
   "wikidata": "Q717521",
   "source": "https://en.wikipedia.org/wiki/Battle_of_West_Hubei"
  },
+ "op-battle-of-westerplatte": {
+  "name": "Battle of Westerplatte",
+  "kind": "battle",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Westerplatte"
+ },
  "op-battle-of-yan-an": {
   "name": "Battle of Yan'an",
   "kind": "Chinese Civil War battle",
@@ -3949,6 +3956,13 @@
    "Great Tokyo Air Raid"
   ]
  },
+ "op-bombing-of-wielun": {
+  "name": "Bombing of Wielun",
+  "kind": "air raid on a town",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Wielu%C5%84"
+ },
  "op-bombing-of-wilhelmshaven-in-world-war-ii": {
   "name": "Bombing of Wilhelmshaven in World War II",
   "kind": "air campaign",
@@ -4282,6 +4296,16 @@
   "aka": [
    "Operation Cerberus",
    "Unternehmen Zerberus"
+  ]
+ },
+ "op-charge-at-krojanty": {
+  "name": "Charge at Krojanty",
+  "kind": "cavalry action",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Charge_at_Krojanty",
+  "aka": [
+   "Battle of Krojanty"
   ]
  },
  "op-charge-of-the-savoia-cavalleria-at-izbushensky": {
@@ -4749,6 +4773,13 @@
    "Snipe"
   ]
  },
+ "op-defence-of-the-polish-post-office-in-danzig": {
+  "name": "Defence of the Polish Post Office in Danzig",
+  "kind": "battle",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Defence_of_the_Polish_Post_Office_in_Danzig"
+ },
  "op-defence-regulation-18b": {
   "name": "Defence Regulation 18B",
   "kind": "wartime detention regulation",
@@ -5116,6 +5147,16 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Evacuation_of_the_Louvre_collection_during_World_War_II"
  },
+ "op-evacuations-of-civilians-in-the-united-kingdom-during-the-second-world-war": {
+  "name": "Evacuations of civilians in the United Kingdom during the Second World War",
+  "kind": "civilian evacuation program",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Evacuations_of_civilians_in_the_United_Kingdom_during_the_Second_World_War",
+  "aka": [
+   "Operation Pied Piper"
+  ]
+ },
  "op-evian-conference": {
   "name": "Evian Conference",
   "kind": "international conference on Jewish refugees",
@@ -5308,6 +5349,16 @@
   "nation": "Netherlands",
   "wikidata": "Q586082",
   "source": "https://en.wikipedia.org/wiki/February_strike"
+ },
+ "op-feindsender": {
+  "name": "Feindsender",
+  "kind": "ban on listening to foreign radio",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Feindsender",
+  "aka": [
+   "Decree on Extraordinary Radio Measures"
+  ]
  },
  "op-final-offensive-of-the-spanish-civil-war": {
   "name": "Final offensive of the Spanish Civil War",

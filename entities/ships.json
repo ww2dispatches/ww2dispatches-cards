@@ -2379,6 +2379,13 @@
    "U-755"
   ]
  },
+ "ship-german-submarine-u-756": {
+  "name": "German submarine U 756",
+  "kind": "Type VIIC U boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-756"
+ },
  "ship-german-submarine-u-767": {
   "name": "U-767",
   "kind": "German Type VIIC U-boat",
@@ -2849,6 +2856,13 @@
   "nation": "Canada",
   "wikidata": "Q16997438",
   "source": "https://en.wikipedia.org/wiki/HMCS_Matane"
+ },
+ "ship-hmcs-morden": {
+  "name": "HMCS Morden (K170)",
+  "kind": "Flower class corvette",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMCS_Morden"
  },
  "ship-hmcs-oakville": {
   "name": "HMCS Oakville (K178)",
@@ -6468,6 +6482,13 @@
   "nation": "Germany",
   "wikidata": "Q574068",
   "source": "https://en.wikipedia.org/wiki/SMS_Hessen"
+ },
+ "ship-sms-schleswig-holstein": {
+  "name": "SMS Schleswig Holstein",
+  "kind": "pre dreadnought battleship",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SMS_Schleswig-Holstein"
  },
  "ship-soviet-cruiser-kirov": {
   "name": "Soviet cruiser Kirov",

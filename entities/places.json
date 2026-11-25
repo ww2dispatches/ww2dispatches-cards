@@ -6749,6 +6749,19 @@
   "lat": 45.4669,
   "lon": 9.19
  },
+ "place-minamitorishima": {
+  "name": "Minamitorishima",
+  "kind": "coral atoll with airstrip",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Minamitorishima",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Marcus Island",
+   "Minami Tori shima"
+  ]
+ },
  "place-ministers-building": {
   "name": "Ministers' Building",
   "kind": "government Secretariat building in Yangon",
@@ -11747,6 +11760,15 @@
   "source": "https://en.wikipedia.org/wiki/Wick,_Caithness",
   "lat": 58.4432,
   "lon": -3.0917
+ },
+ "place-wielun": {
+  "name": "Wielun",
+  "kind": "town",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Wielu%C5%84",
+  "lat": null,
+  "lon": null
  },
  "place-wieringermeer": {
   "name": "Wieringermeer",
