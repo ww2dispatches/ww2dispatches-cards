@@ -515,6 +515,13 @@
    "Midnight Massacre"
   ]
  },
+ "op-1945-world-series": {
+  "name": "1945 World Series",
+  "kind": "Detroit Tigers against Chicago Cubs",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1945_World_Series"
+ },
  "op-1945-zhijiang-surrender-ceremony": {
   "name": "1945 Zhijiang surrender ceremony",
   "kind": "negotiated surrender meeting, China",
@@ -618,6 +625,13 @@
   "wikidata": "Q4566258",
   "source": "https://en.wikipedia.org/wiki/1948_Gatow_air_disaster"
  },
+ "op-1948-georgia-usaf-boeing-b-29-crash": {
+  "name": "1948 Waycross B-29 crash",
+  "kind": "U.S. Air Force B-29 test flight crash, Waycross, Georgia",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1948_Georgia_USAF_Boeing_B-29_crash"
+ },
  "op-1948-lake-mead-boeing-b-29-crash": {
   "name": "1948 Lake Mead Boeing B-29 crash",
   "kind": "test aircraft ditching",
@@ -700,6 +714,13 @@
   "nation": "France",
   "wikidata": "Q3002755",
   "source": "https://en.wikipedia.org/wiki/6_February_1934_crisis"
+ },
+ "op-6-october-1939-reichstag-speech": {
+  "name": "6 October 1939 Reichstag speech",
+  "kind": "speech by Hitler offering peace to Britain and France",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/6_October_1939_Reichstag_speech"
  },
  "op-999-emergency-telephone-number": {
   "name": "999 (emergency telephone number)",
@@ -3275,6 +3296,13 @@
   "wikidata": "Q696607",
   "source": "https://en.wikipedia.org/wiki/Battle_of_the_Denmark_Strait"
  },
+ "op-battle-of-the-dukla-pass": {
+  "name": "Battle of the Dukla Pass",
+  "kind": "Soviet and Czechoslovak Carpathian offensive, 1944",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_the_Dukla_Pass"
+ },
  "op-battle-of-the-eastern-solomons": {
   "name": "Battle of the Eastern Solomons",
   "kind": "carrier battle, 24 to 25 August 1942",
@@ -3528,6 +3556,13 @@
   "nation": "US",
   "wikidata": "Q702142",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Vella_Gulf"
+ },
+ "op-battle-of-vella-lavella-naval": {
+  "name": "Battle of Vella Lavella (naval)",
+  "kind": "destroyer night action, Solomon Islands, October 1943",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Vella_Lavella_(naval)"
  },
  "op-battle-of-verrieres-ridge": {
   "name": "Battle of Verrieres Ridge",
@@ -4549,6 +4584,13 @@
   "wikidata": "Q891641",
   "source": "https://en.wikipedia.org/wiki/Burnden_Park_disaster"
  },
+ "op-burnings-of-kali-sykia": {
+  "name": "Burnings of Kali Sykia",
+  "kind": "massacre of civilians in occupied Crete, October 1943",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Burnings_of_Kali_Sykia"
+ },
  "op-cactus-air-force": {
   "name": "Cactus Air Force",
   "kind": "Allied air force at Henderson Field",
@@ -5186,6 +5228,13 @@
   "nation": "US",
   "wikidata": "Q5195088",
   "source": "https://en.wikipedia.org/wiki/Current_Tax_Payment_Act_of_1943"
+ },
+ "op-curse-of-the-billy-goat": {
+  "name": "Curse of the Billy Goat",
+  "kind": "baseball legend begun at the 1945 World Series",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Curse_of_the_Billy_Goat"
  },
  "op-czestochowa-ghetto-uprising": {
   "name": "Częstochowa Ghetto uprising",
@@ -6056,6 +6105,13 @@
   "nation": "US",
   "wikidata": "Q1332211",
   "source": "https://en.wikipedia.org/wiki/Flight_19"
+ },
+ "op-forced-labour-under-german-rule-during-world-war-ii": {
+  "name": "Forced labour under German rule during World War II",
+  "kind": "Nazi forced labor program",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Forced_labour_under_German_rule_during_World_War_II"
  },
  "op-four-days-of-naples": {
   "name": "Four Days of Naples",
@@ -8089,6 +8145,13 @@
   "wikidata": "Q4501943",
   "source": "https://en.wikipedia.org/wiki/Martial_law_in_Taiwan"
  },
+ "op-martial-law-in-trondheim": {
+  "name": "Martial law in Trondheim",
+  "kind": "German civilian martial law in central Norway, October 1942",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Martial_law_in_Trondheim"
+ },
  "op-mass-murders-in-tykocin": {
   "name": "Mass murders in Tykocin",
   "kind": "massacre of the Jews of Tykocin, August 1941",
@@ -8382,6 +8445,13 @@
   "wikidata": "Q6724140",
   "source": "https://en.wikipedia.org/wiki/Murder_of_Maceo_Snipes",
   "note": "Maceo Snipes redirects here"
+ },
+ "op-mutual-defense-assistance-act": {
+  "name": "Mutual Defense Assistance Act",
+  "kind": "1949 U.S. military foreign aid law",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mutual_Defense_Assistance_Act"
  },
  "op-nacht-und-nebel": {
   "name": "Nacht und Nebel",
@@ -10541,6 +10611,13 @@
   "wikidata": "Q1992677",
   "source": "https://en.wikipedia.org/wiki/Quit_India_Movement"
  },
+ "op-rabbis-march-1943": {
+  "name": "Rabbis' March (1943)",
+  "kind": "protest march in Washington for rescue of European Jews",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Rabbis%27_march_(1943)"
+ },
  "op-raczynski-s-note": {
   "name": "Raczyński's Note",
   "kind": "Polish government note on the extermination of the Jews",
@@ -12380,6 +12457,13 @@
   "nation": "US",
   "wikidata": "Q7893242",
   "source": "https://en.wikipedia.org/wiki/United_States_v._Causby"
+ },
+ "op-united-states-v-reynolds": {
+  "name": "United States v. Reynolds",
+  "kind": "1953 Supreme Court case founding the state secrets privilege",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/United_States_v._Reynolds"
  },
  "op-universal-declaration-of-human-rights": {
   "name": "Universal Declaration of Human Rights",

@@ -3334,6 +3334,15 @@
    "Eygelshoven"
   ]
  },
+ "place-falstad-concentration-camp": {
+  "name": "Falstad concentration camp",
+  "kind": "German prison camp near Trondheim, Norway",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Falstad_concentration_camp",
+  "lat": null,
+  "lon": null
+ },
  "place-faroe-islands": {
   "name": "Faroe Islands",
   "kind": "island group",
@@ -12836,6 +12845,15 @@
   "lon": -1.3765,
   "wikidata": "Q8033947",
   "source": "https://en.wikipedia.org/wiki/Woolston,_Southampton"
+ },
+ "place-wrigley-field": {
+  "name": "Wrigley Field",
+  "kind": "baseball park, Chicago",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Wrigley_Field",
+  "lat": null,
+  "lon": null
  },
  "place-wrocaw": {
   "name": "Breslau",

@@ -827,6 +827,16 @@
   "wikidata": "Q571317",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-166_(1941)"
  },
+ "ship-german-submarine-u-168": {
+  "name": "U 168",
+  "kind": "Type IXC/40 U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-168",
+  "aka": [
+   "U-168"
+  ]
+ },
  "ship-german-submarine-u-172": {
   "name": "U-172",
   "kind": "Kriegsmarine Type IXC U-boat",
@@ -5211,6 +5221,16 @@
   "wikidata": "Q2018998",
   "source": "https://en.wikipedia.org/wiki/HNLMS_Piet_Hein_(1927)"
  },
+ "ship-hnlms-zwaardvisch": {
+  "name": "HNLMS Zwaardvisch",
+  "kind": "Dutch submarine",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HNLMS_Zwaardvisch",
+  "aka": [
+   "Zwaardvisch (P322)"
+  ]
+ },
  "ship-hnoms-eidsvold": {
   "name": "HNoMS Eidsvold",
   "kind": "Norwegian coastal defence ship",
@@ -6345,6 +6365,16 @@
   "nation": "Japan",
   "wikidata": "Q1138054",
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Yayoi_(1925)"
+ },
+ "ship-japanese-destroyer-yugumo-1941": {
+  "name": "Yugumo",
+  "kind": "Imperial Japanese Navy destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Y%C5%ABgumo_(1941)",
+  "aka": [
+   "Yūgumo"
+  ]
  },
  "ship-japanese-destroyer-yugure-1934": {
   "name": "Japanese destroyer Yugure (1934)",
@@ -7919,6 +7949,13 @@
   "wikidata": "Q551509",
   "source": "https://en.wikipedia.org/wiki/SS_Thielbek_(1940)"
  },
+ "ship-ss-thistlegorm": {
+  "name": "SS Thistlegorm",
+  "kind": "British cargo steamship",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Thistlegorm"
+ },
  "ship-ss-umona": {
   "name": "SS Umona",
   "kind": "British cargo liner, sunk by U-124 in 1941",
@@ -8450,6 +8487,13 @@
   "nation": "US",
   "wikidata": "Q7868272",
   "source": "https://en.wikipedia.org/wiki/USS_Chemung_(AO-30)"
+ },
+ "ship-uss-chevalier-dd-451": {
+  "name": "USS Chevalier (DD-451)",
+  "kind": "Fletcher class destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Chevalier_(DD-451)"
  },
  "ship-uss-chicago-ca-29": {
   "name": "USS Chicago (CA-29)",
