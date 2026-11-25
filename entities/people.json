@@ -155,6 +155,13 @@
   "wikidata": "Q923647",
   "source": "https://en.wikipedia.org/wiki/Al_Bowlly"
  },
+ "person-al-schmid": {
+  "name": "Al Schmid",
+  "kind": "U.S. Marine blinded on Guadalcanal, Navy Cross recipient",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Al_Schmid"
+ },
  "person-alan-blumlein": {
   "name": "Alan Blumlein",
   "kind": "electronics engineer, H2S radar",
@@ -2734,6 +2741,13 @@
   "wikidata": "Q240965",
   "source": "https://en.wikipedia.org/wiki/Edith_Nourse_Rogers"
  },
+ "person-edith-summerskill": {
+  "name": "Edith Summerskill",
+  "kind": "British Labour politician, founder of Women's Home Defence",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Edith_Summerskill"
+ },
  "person-edmund-herring": {
   "name": "Edmund Herring",
   "kind": "Australian general, New Guinea Force commander",
@@ -3284,6 +3298,13 @@
   "wikidata": "Q90812",
   "source": "https://en.wikipedia.org/wiki/Erich_W%C3%BCrdemann"
  },
+ "person-ernest-bennett-politician": {
+  "name": "Ernest Bennett",
+  "kind": "British Member of Parliament",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ernest_Bennett_(politician)"
+ },
  "person-ernest-bevin": {
   "name": "Ernest Bevin",
   "kind": "Labour Minister, later Foreign Secretary",
@@ -3436,6 +3457,13 @@
   "wikidata": "Q4398415",
   "source": "https://en.wikipedia.org/wiki/Erwin_Rostin"
  },
+ "person-erwin-von-witzleben": {
+  "name": "Erwin von Witzleben",
+  "kind": "German field marshal and 20 July plot conspirator",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Erwin_von_Witzleben"
+ },
  "person-esther-mcgowin-blake": {
   "name": "Esther McGowin Blake",
   "kind": "first woman to enlist in the U.S. Air Force",
@@ -3540,6 +3568,16 @@
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/Fabian_Ware",
   "wikidata": "Q1390334"
+ },
+ "person-fang-xianjue": {
+  "name": "Fang Xianjue",
+  "kind": "Chinese general, commander of the 10th Army at Hengyang",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fang_Xianjue",
+  "aka": [
+   "Fong Hsien-chueh"
+  ]
  },
  "person-fedele-de-giorgis": {
   "name": "Fedele De Giorgis",
@@ -4856,6 +4894,13 @@
   "nation": "US",
   "wikidata": "Q5611567",
   "source": "https://en.wikipedia.org/wiki/Grover_Whalen"
+ },
+ "person-gunichi-mikawa": {
+  "name": "Gunichi Mikawa",
+  "kind": "Imperial Japanese Navy admiral, commander of the Eighth Fleet",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Gunichi_Mikawa"
  },
  "person-gunther-krech": {
   "name": "Gunther Krech",
@@ -6391,6 +6436,13 @@
   "wikidata": "Q1091111",
   "source": "https://en.wikipedia.org/wiki/Isamu_Ch%C5%8D"
  },
+ "person-isamu-yokoyama": {
+  "name": "Isamu Yokoyama",
+  "kind": "Imperial Japanese Army general, commander of the 11th Army",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Isamu_Yokoyama"
+ },
  "person-ismet-inonu": {
   "name": "İsmet İnönü",
   "kind": "President of Turkey",
@@ -7243,6 +7295,13 @@
   "nation": "US",
   "wikidata": "Q97016007",
   "source": "https://en.wikipedia.org/wiki/John_F._Shafroth_Jr."
+ },
+ "person-john-garfield": {
+  "name": "John Garfield",
+  "kind": "American film actor",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/John_Garfield"
  },
  "person-john-gilbert-winant": {
   "name": "John Gilbert Winant",

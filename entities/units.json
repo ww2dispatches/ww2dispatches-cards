@@ -1885,6 +1885,16 @@
   "wikidata": "Q2818557",
   "source": "https://en.wikipedia.org/wiki/89th_Infantry_Division_(United_States)"
  },
+ "unit-8th-fleet-imperial-japanese-navy": {
+  "name": "8th Fleet (Imperial Japanese Navy)",
+  "kind": "Imperial Japanese Navy fleet",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/8th_Fleet_(Imperial_Japanese_Navy)",
+  "aka": [
+   "Eighth Fleet"
+  ]
+ },
  "unit-8th-punjab-regiment": {
   "name": "8th Punjab Regiment",
   "kind": "British Indian Army infantry regiment",
@@ -2589,6 +2599,13 @@
   "aka": [
    "Cleveland Indians"
   ]
+ },
+ "unit-coastwatchers": {
+  "name": "Coastwatchers",
+  "kind": "Allied intelligence observers on Pacific islands",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Coastwatchers"
  },
  "unit-code-talker": {
   "name": "Navajo code talkers",

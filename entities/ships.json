@@ -1302,6 +1302,13 @@
    "U-374"
   ]
  },
+ "ship-german-submarine-u-379": {
+  "name": "U-379",
+  "kind": "German Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-379"
+ },
  "ship-german-submarine-u-385": {
   "name": "U-385",
   "kind": "Type VIIC U-boat",
@@ -2112,6 +2119,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-664"
  },
+ "ship-german-submarine-u-667": {
+  "name": "U-667",
+  "kind": "German Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-667"
+ },
  "ship-german-submarine-u-67-1940": {
   "name": "German submarine U-67 (1940)",
   "kind": "Type IXC U-boat",
@@ -2671,6 +2685,13 @@
   "wikidata": "Q16222993",
   "source": "https://en.wikipedia.org/wiki/HMCS_Prescott"
  },
+ "ship-hmcs-regina-k234": {
+  "name": "HMCS Regina (K234)",
+  "kind": "Royal Canadian Navy Flower class corvette",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMCS_Regina_(K234)"
+ },
  "ship-hmcs-spikenard": {
   "name": "HMCS Spikenard (K198)",
   "kind": "Canadian Flower class corvette",
@@ -3087,6 +3108,13 @@
   "nation": "Britain",
   "wikidata": "Q500039",
   "source": "https://en.wikipedia.org/wiki/HMS_Diamond_(H22)"
+ },
+ "ship-hms-dianthus-k95": {
+  "name": "HMS Dianthus (K95)",
+  "kind": "Royal Navy Flower class corvette",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Dianthus_(K95)"
  },
  "ship-hms-dorsetshire-40": {
   "name": "HMS Dorsetshire (40)",
@@ -4879,6 +4907,16 @@
   "nation": "Japan",
   "wikidata": "Q1072658",
   "source": "https://en.wikipedia.org/wiki/Japanese_cruiser_Chikuma_(1938)"
+ },
+ "ship-japanese-cruiser-chokai": {
+  "name": "Chokai",
+  "kind": "Imperial Japanese Navy heavy cruiser",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_cruiser_Ch%C5%8Dkai",
+  "aka": [
+   "Chōkai"
+  ]
  },
  "ship-japanese-cruiser-haguro": {
   "name": "Japanese cruiser Haguro",
@@ -7485,6 +7523,13 @@
   "wikidata": "Q7869659",
   "source": "https://en.wikipedia.org/wiki/USS_General_W._A._Mann"
  },
+ "ship-uss-george-f-elliott-ap-13": {
+  "name": "USS George F. Elliott (AP-13)",
+  "kind": "U.S. Navy transport",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_George_F._Elliott_(AP-13)"
+ },
  "ship-uss-gilmore": {
   "name": "USS Gilmore (DE-18)",
   "kind": "Evarts class destroyer escort",
@@ -7716,6 +7761,13 @@
   "nation": "US",
   "wikidata": "Q4501796",
   "source": "https://en.wikipedia.org/wiki/USS_Jacob_Jones_(DD-130)"
+ },
+ "ship-uss-jarvis-dd-393": {
+  "name": "USS Jarvis (DD-393)",
+  "kind": "U.S. Navy destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Jarvis_(DD-393)"
  },
  "ship-uss-john-d-ford": {
   "name": "USS John D. Ford (DD-228)",

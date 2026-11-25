@@ -1170,6 +1170,13 @@
    "Operation Margin"
   ]
  },
+ "op-august-offer": {
+  "name": "August Offer",
+  "kind": "1940 British offer on Indian self government",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/August_Offer"
+ },
  "op-augustow-roundup": {
   "name": "Augustów roundup",
   "kind": "Soviet operation against Polish anti communist partisans",
@@ -1874,6 +1881,13 @@
   "wikidata": "Q4871202",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Hegra_Fortress"
  },
+ "op-battle-of-hengyang": {
+  "name": "Battle of Hengyang",
+  "kind": "1944 siege, Operation Ichi-Go",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Hengyang"
+ },
  "op-battle-of-hill-170": {
   "name": "Battle of Hill 170",
   "kind": "battle",
@@ -2509,6 +2523,13 @@
   "nation": "Japan",
   "wikidata": "Q4872320",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Sarimbun_Beach"
+ },
+ "op-battle-of-savo-island": {
+  "name": "Battle of Savo Island",
+  "kind": "naval battle, Guadalcanal campaign",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Savo_Island"
  },
  "op-battle-of-sedan-1940": {
   "name": "Battle of Sedan (1940)",
@@ -9547,6 +9568,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q696256",
   "source": "https://en.wikipedia.org/wiki/Soviet%E2%80%93Japanese_Neutrality_Pact"
+ },
+ "op-soviet-japanese-war": {
+  "name": "Soviet-Japanese War",
+  "kind": "1945 Soviet campaign against Japan",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Soviet%E2%80%93Japanese_War"
  },
  "op-soviet-occupation-of-bessarabia-and-northern-bukovina": {
   "name": "Soviet occupation of Bessarabia and Northern Bukovina",

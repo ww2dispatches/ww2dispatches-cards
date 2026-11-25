@@ -3010,6 +3010,15 @@
   "lat": 46.2019,
   "lon": -123.963
  },
+ "place-fort-worth-texas": {
+  "name": "Fort Worth",
+  "kind": "city in Texas, home of the Convair plant",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fort_Worth,_Texas",
+  "lat": null,
+  "lon": null
+ },
  "place-frankfurt": {
   "name": "Frankfurt",
   "kind": "city",
@@ -3770,6 +3779,15 @@
   "source": "https://en.wikipedia.org/wiki/Hengelo",
   "lat": 52.2656,
   "lon": 6.7931
+ },
+ "place-hengyang": {
+  "name": "Hengyang",
+  "kind": "city in Hunan province",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hengyang",
+  "lat": null,
+  "lon": null
  },
  "place-heraklion": {
   "name": "Heraklion",
@@ -8535,6 +8553,19 @@
   "lat": 46.9693,
   "lon": 8.5927
  },
+ "place-saaremaa": {
+  "name": "Saaremaa",
+  "kind": "Estonian island, 1941 Soviet bomber base",
+  "nation": "Estonia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Saaremaa",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Ezel",
+   "Osel"
+  ]
+ },
  "place-sachsenhausen-concentration-camp": {
   "name": "Sachsenhausen",
   "kind": "Nazi concentration camp",
@@ -8796,6 +8827,15 @@
   "source": "https://en.wikipedia.org/wiki/Sandakan",
   "lat": 5.8388,
   "lon": 118.1173
+ },
+ "place-sant-agata-di-militello": {
+  "name": "Sant'Agata di Militello",
+  "kind": "town on the north coast of Sicily",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sant%27Agata_di_Militello",
+  "lat": null,
+  "lon": null
  },
  "place-sant-anna-di-stazzema": {
   "name": "Sant'Anna di Stazzema",
