@@ -1,6 +1,6 @@
 {
- "week": "2026-11-17",
- "summary": "**Worked:** Five brothers, one ship drew 1,994 Threads views and 21 comments (Reach 7.74, the second best card ever); the Ark Royal Name This drew 1,407; the Tirpitz and Moselle videos traveled on Threads (1,362 and 707), and the Moselle Reel drew 841 on Facebook.\n\n**Didn't:** every 8 a.m. Story card from 11 to 15 Nov drew only 38 to 87 Threads views, while the noon video on the same story drew far more; YouTube halved for the week (4,161 views against 9,250).\n\n**Patterns:** combat and turning points out reach diplomacy and machines; Spec Sheets reach less than Story cards; Home Front reaches fewer people but draws the strongest Response.\n\n**Tests:** C (shorter Story Cards) still has no Story Card to read; D (no hashtags on X) starts 22 Nov. No new test proposed.\n\n**Reach report:** only one post per platform from the five post days is old enough; first real reading 24 Nov.\n\n**Decisions:** none new. Your Name This on Instagram answer (end it) needs the Name This doc updated in a Project chat; your three Code Room vetoes are applied.",
+ "week": "2026-11-24",
+ "summary": "**Worked:** two videos a day roughly doubled daily views on YouTube (953 to 1,964), TikTok (422 to 938), and Instagram (129 to 252) with views per video near flat; the 7 p.m. videos score the same as noon (median 1.06 against 1.04); Moscow's second cut (1.65), Operation Queen (1.54, a 73 percent TikTok hold), and Metz (1.42, Instagram's best Reel at 235) led.\n\n**Didn't:** courtroom and conference videos opening on people standing (Jackson 0.73, Nuremberg 0.91); Facebook fell on both counts (1 to 0 views per post, 168 to 40 a day).\n\n**Patterns:** Living Cards beat Story Cards; openings on combat or firing beat other motion.\n\n**Cards:** no card after 15 Nov can be scored, because the old Threads profile's readings were lost in the restart; card scores return once the new profile has 5 cards past 48 hours (likely 1 Dec).\n\n**Tests:** C still has no Story Card; D (no hashtags on X) running, reviewed 8 Dec. No new test proposed.\n\n**Decisions:** none. Name This still went to Instagram on 18 and 21 Nov after your call to end it.",
  "questions": [
   {
    "id": "intercept-veto",
@@ -9,32 +9,32 @@
    "why": "These 7 hard groups were added to the Code Room master list from posted cards (three short of 10). Veto any link you don't want dealt; vetoed groups are kept but never dealt and never added again.",
    "groups": [
     {
-     "id": "h-guadalcanal",
-     "link": "All three are from the fight for Guadalcanal."
+     "id": "h-goering",
+     "link": "Each involves Hermann Göring."
     },
     {
-     "id": "h-dive-bombers",
-     "link": "Each involves dive bombers."
+     "id": "h-surrounded",
+     "link": "In each, troops were cut off and surrounded."
     },
     {
-     "id": "h-combat-debuts",
-     "link": "Each marks a weapon's first use in combat."
+     "id": "h-famous-churches",
+     "link": "Each is tied to a famous church."
     },
     {
-     "id": "h-luftwaffe",
-     "link": "Each involves the German air force, the Luftwaffe."
+     "id": "h-new-zealand",
+     "link": "Each involves New Zealand troops."
     },
     {
-     "id": "h-first-army",
-     "link": "Each involves the U.S. First Army."
+     "id": "h-lancaster",
+     "link": "Each involves the Avro Lancaster bomber."
     },
     {
-     "id": "h-surrenders",
-     "link": "In each, a commander surrendered."
+     "id": "h-sixth-army",
+     "link": "Each involves the German Sixth Army."
     },
     {
-     "id": "h-five-star",
-     "link": "Each involves an American who rose to five star rank."
+     "id": "h-kaiser",
+     "link": "Each is tied to shipbuilder Henry J. Kaiser."
     }
    ],
    "if_blank": "All stay live."
@@ -43,7 +43,7 @@
    "id": "notes",
    "type": "text",
    "ask": "Anything the numbers missed?",
-   "why": "Anything you saw in the apps this week, such as how the five post days feel on Threads.",
+   "why": "Anything you saw in the apps this week, such as how the new Threads profile is doing.",
    "placeholder": "Optional."
   }
  ]
