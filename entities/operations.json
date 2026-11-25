@@ -164,6 +164,13 @@
   "wikidata": "Q4564626",
   "source": "https://en.wikipedia.org/wiki/1939_royal_tour_of_Canada"
  },
+ "op-1940-brocklesby-mid-air-collision": {
+  "name": "1940 Brocklesby midair collision",
+  "kind": "RAAF training accident, two Ansons locked together",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1940_Brocklesby_mid-air_collision"
+ },
  "op-1940-canberra-air-disaster": {
   "name": "1940 Canberra air disaster",
   "kind": "air crash",
@@ -725,6 +732,16 @@
   "wikidata": "Q1783342",
   "source": "https://en.wikipedia.org/wiki/Abolition_of_Prussia"
  },
+ "op-absolute-national-defense-zone": {
+  "name": "Absolute National Defense Zone",
+  "kind": "Japanese strategic defense perimeter, 1943",
+  "nation": "Japan",
+  "wikidata": "Q10467161",
+  "source": "https://en.wikipedia.org/wiki/Absolute_National_Defense_Zone",
+  "aka": [
+   "Absolute National Defense Sphere"
+  ]
+ },
  "op-abyssinia-crisis": {
   "name": "Abyssinia Crisis",
   "kind": "international crisis",
@@ -1155,6 +1172,17 @@
   "nation": "Italy",
   "wikidata": "Q196502",
   "source": "https://en.wikipedia.org/wiki/Armistice_of_Cassibile"
+ },
+ "op-armistice-of-malta": {
+  "name": "Armistice of Malta",
+  "kind": "long terms of Italy's surrender, signed aboard HMS Nelson",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Armistice_of_Malta",
+  "aka": [
+   "Long Armistice",
+   "Instrument of Surrender of Italy"
+  ]
  },
  "op-armistice-of-saint-jean-d-acre": {
   "name": "Armistice of Saint Jean d'Acre",
@@ -1820,6 +1848,13 @@
    "Battle of Dubno"
   ]
  },
+ "op-battle-of-bryansk": {
+  "name": "Battle of Bryansk",
+  "kind": "encirclement battle, 30 September to 21 October 1941",
+  "nation": "Germany, Soviet Union",
+  "wikidata": "Q4870577",
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Bryansk"
+ },
  "op-battle-of-bukit-timah": {
   "name": "Battle of Bukit Timah",
   "kind": "battle on Singapore island, February 1942",
@@ -2150,6 +2185,13 @@
   "nation": "Norway",
   "wikidata": "Q4871202",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Hegra_Fortress"
+ },
+ "op-battle-of-hel": {
+  "name": "Battle of Hel",
+  "kind": "1939 Polish defense of the Hel Peninsula",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Hel"
  },
  "op-battle-of-hengyang": {
   "name": "Battle of Hengyang",
@@ -2606,6 +2648,16 @@
   "nation": "US",
   "wikidata": "Q711223",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Mindoro"
+ },
+ "op-battle-of-modlin": {
+  "name": "Battle of Modlin",
+  "kind": "defense of Modlin Fortress, 13 to 29 September 1939",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Modlin",
+  "aka": [
+   "Siege of Modlin"
+  ]
  },
  "op-battle-of-mogaung": {
   "name": "Battle of Mogaung",
@@ -3386,6 +3438,13 @@
   "wikidata": "Q639989",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Tolvaj%C3%A4rvi"
  },
+ "op-battle-of-tornio": {
+  "name": "Battle of Tornio",
+  "kind": "Finnish and German battle in the Lapland War, 1 to 8 October 1944",
+  "nation": "Finland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Tornio"
+ },
  "op-battle-of-toungoo": {
   "name": "Battle of Toungoo",
   "kind": "battle in Burma, March 1942",
@@ -3521,6 +3580,13 @@
   "nation": "Poland",
   "wikidata": "Q533034",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Westerplatte"
+ },
+ "op-battle-of-wytyczno": {
+  "name": "Battle of Wytyczno",
+  "kind": "Polish and Soviet battle, 1 October 1939",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Wytyczno"
  },
  "op-battle-of-yan-an": {
   "name": "Battle of Yan'an",
@@ -4919,6 +4985,13 @@
   "wikidata": "Q2996451",
   "source": "https://en.wikipedia.org/wiki/Convoy_ONS_5"
  },
+ "op-convoy-pq-1": {
+  "name": "Convoy PQ 1",
+  "kind": "first PQ Arctic convoy, 1941",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Convoy_PQ_1"
+ },
  "op-convoy-pq-13": {
   "name": "Convoy PQ 13",
   "kind": "Arctic convoy to the Soviet Union, March 1942",
@@ -5388,6 +5461,13 @@
   "wikidata": "Q5301756",
   "source": "https://en.wikipedia.org/wiki/Douglas_MacArthur%27s_escape_from_the_Philippines"
  },
+ "op-drama-uprising": {
+  "name": "Drama uprising",
+  "kind": "1941 Greek revolt against Bulgarian occupation and its suppression",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Drama_uprising"
+ },
  "op-drive-on-munda-point": {
   "name": "Drive on Munda Point",
   "kind": "offensive",
@@ -5599,6 +5679,17 @@
   "nation": "France",
   "wikidata": "Q48743214",
   "source": "https://en.wikipedia.org/wiki/Evacuation_of_the_Louvre_collection_during_World_War_II"
+ },
+ "op-evacuations-of-children-in-germany-during-world-war-ii": {
+  "name": "Evacuations of children in Germany during World War II",
+  "kind": "civilian evacuation program",
+  "nation": "Germany",
+  "wikidata": "Q1741844",
+  "source": "https://en.wikipedia.org/wiki/Evacuations_of_children_in_Germany_during_World_War_II",
+  "aka": [
+   "Kinderlandverschickung",
+   "KLV"
+  ]
  },
  "op-evacuations-of-civilians-in-japan-during-world-war-ii": {
   "name": "Evacuations of civilians in Japan during World War II",
@@ -6225,6 +6316,16 @@
   "nation": "Germany",
   "wikidata": "Q126413",
   "source": "https://en.wikipedia.org/wiki/German%E2%80%93Polish_declaration_of_non-aggression"
+ },
+ "op-german-soviet-boundary-and-friendship-treaty": {
+  "name": "German Soviet Boundary and Friendship Treaty",
+  "kind": "1939 treaty partitioning Poland",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German%E2%80%93Soviet_Boundary_and_Friendship_Treaty",
+  "aka": [
+   "German Soviet Frontier Treaty"
+  ]
  },
  "op-german-soviet-commercial-agreement-1940": {
   "name": "German-Soviet Commercial Agreement (1940)",
@@ -8140,6 +8241,17 @@
   "wikidata": "Q1321586",
   "source": "https://en.wikipedia.org/wiki/Moscow_Armistice"
  },
+ "op-moscow-conference-1941": {
+  "name": "Moscow Conference (1941)",
+  "kind": "three power supply conference, 29 September to 1 October 1941",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Moscow_Conference_(1941)",
+  "aka": [
+   "First Moscow Conference",
+   "Beaverbrook Harriman mission"
+  ]
+ },
  "op-moscow-conference-1942": {
   "name": "Moscow Conference (1942)",
   "kind": "Churchill, Stalin and Harriman conference, 12 to 17 August 1942",
@@ -8749,6 +8861,13 @@
   "wikidata": "Q3883939",
   "source": "https://en.wikipedia.org/wiki/Operation_Bowler"
  },
+ "op-operation-braganza": {
+  "name": "Operation Braganza",
+  "kind": "British attack at Deir el Munassib, September 1942",
+  "nation": "Britain, Italy",
+  "wikidata": "Q2349033",
+  "source": "https://en.wikipedia.org/wiki/Operation_Braganza"
+ },
  "op-operation-braunschweig": {
   "name": "Operation Braunschweig",
   "kind": "1942 German offensive in southern Russia, renamed from Case Blue",
@@ -9117,6 +9236,13 @@
   "nation": "US",
   "wikidata": "Q2026138",
   "source": "https://en.wikipedia.org/wiki/Operation_Hailstone"
+ },
+ "op-operation-halberd": {
+  "name": "Operation Halberd",
+  "kind": "British Malta supply convoy operation, September 1941",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Halberd"
  },
  "op-operation-hannibal": {
   "name": "Operation Hannibal",
@@ -9757,6 +9883,13 @@
   "wikidata": "Q2404723",
   "source": "https://en.wikipedia.org/wiki/Operation_U-Go"
  },
+ "op-operation-undergo": {
+  "name": "Operation Undergo",
+  "kind": "Canadian capture of Calais, September 1944",
+  "nation": "Canada",
+  "wikidata": "Q7097674",
+  "source": "https://en.wikipedia.org/wiki/Operation_Undergo"
+ },
  "op-operation-uranus": {
   "name": "Operation Uranus",
   "kind": "Soviet counteroffensive",
@@ -10141,6 +10274,16 @@
   "wikidata": "Q16821488",
   "source": "https://en.wikipedia.org/wiki/Pointblank_directive"
  },
+ "op-ponary-massacre": {
+  "name": "Ponary massacre",
+  "kind": "mass killing near Vilnius, 1941 to 1944",
+  "nation": "Lithuania",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ponary_massacre",
+  "aka": [
+   "Paneriai"
+  ]
+ },
  "op-port-chicago-disaster": {
   "name": "Port Chicago disaster",
   "kind": "ammunition explosion at a Navy magazine, 17 July 1944",
@@ -10229,6 +10372,13 @@
   "wikidata": "Q1661772",
   "source": "https://en.wikipedia.org/wiki/Proclamation_of_Indonesian_Independence"
  },
+ "op-proclamation-of-the-people-s-republic-of-china": {
+  "name": "Proclamation of the People's Republic of China",
+  "kind": "founding ceremony, Tiananmen, 1 October 1949",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Proclamation_of_the_People%27s_Republic_of_China"
+ },
  "op-project-diana": {
   "name": "Project Diana",
   "kind": "radar experiment",
@@ -10279,6 +10429,16 @@
   "nation": "US",
   "wikidata": "Q7261217",
   "source": "https://en.wikipedia.org/wiki/Purge_(occupied_Japan)"
+ },
+ "op-putten-raid": {
+  "name": "Putten raid",
+  "kind": "German reprisal raid on a Dutch village, 1 and 2 October 1944",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Putten_raid",
+  "aka": [
+   "Razzia van Putten"
+  ]
  },
  "op-quebec-agreement": {
   "name": "Quebec Agreement",
@@ -10513,6 +10673,13 @@
   "nation": "Indonesia",
   "wikidata": "Q769581",
   "source": "https://en.wikipedia.org/wiki/Renville_Agreement"
+ },
+ "op-rescue-of-the-danish-jews": {
+  "name": "Rescue of the Danish Jews",
+  "kind": "1943 evacuation of Denmark's Jews to Sweden",
+  "nation": "Denmark",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Rescue_of_the_Danish_Jews"
  },
  "op-restatement-of-policy-on-germany": {
   "name": "Restatement of Policy on Germany",
@@ -11234,6 +11401,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q2006230",
   "source": "https://en.wikipedia.org/wiki/Soviet_atomic_bomb_project"
+ },
+ "op-soviet-estonian-mutual-assistance-treaty": {
+  "name": "Soviet Estonian Mutual Assistance Treaty",
+  "kind": "1939 treaty giving the Soviet Union bases in Estonia",
+  "nation": "Estonia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Soviet%E2%80%93Estonian_Mutual_Assistance_Treaty"
  },
  "op-soviet-evacuation-of-tallinn": {
   "name": "Soviet evacuation of Tallinn",
@@ -12405,6 +12579,16 @@
   "nation": "US",
   "wikidata": "Q666414",
   "source": "https://en.wikipedia.org/wiki/Western_Allied_invasion_of_Germany"
+ },
+ "op-western-union-defence-organisation": {
+  "name": "Western Union Defence Organisation",
+  "kind": "1948 Western European military alliance body",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Western_Union_Defence_Organisation",
+  "aka": [
+   "WUDO"
+  ]
  },
  "op-winston-churchill-s-address-to-the-canadian-parliament-1941": {
   "name": "Winston Churchill's address to the Canadian Parliament (1941)",

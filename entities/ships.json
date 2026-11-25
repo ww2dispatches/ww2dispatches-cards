@@ -1287,6 +1287,13 @@
   "wikidata": "Q5551616",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-317"
  },
+ "ship-german-submarine-u-32-1937": {
+  "name": "U 32",
+  "kind": "Type VIIA U boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-32_(1937)"
+ },
  "ship-german-submarine-u-321": {
   "name": "U-321",
   "kind": "Type VIIC/41 U-boat",
@@ -1839,6 +1846,13 @@
   "nation": "Germany",
   "wikidata": "Q571599",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-507"
+ },
+ "ship-german-submarine-u-512": {
+  "name": "U 512",
+  "kind": "Kriegsmarine Type IXC U boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-512"
  },
  "ship-german-submarine-u-513": {
   "name": "U-513",
@@ -3562,6 +3576,13 @@
    "HMS Crusader (H60)",
    "HMCS Ottawa"
   ]
+ },
+ "ship-hms-curacoa-d41": {
+  "name": "HMS Curacoa (D41)",
+  "kind": "Royal Navy C class light cruiser",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Curacoa_(D41)"
  },
  "ship-hms-cygnet-h83": {
   "name": "HMCS St. Laurent (H83)",
@@ -5384,6 +5405,13 @@
    "Barbarigo"
   ]
  },
+ "ship-italian-submarine-berillo": {
+  "name": "Berillo",
+  "kind": "Regia Marina submarine",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_submarine_Berillo"
+ },
  "ship-italian-submarine-comandante-cappellini": {
   "name": "Comandante Cappellini",
   "kind": "Regia Marina submarine, later the German UIT-24 and the Japanese I-503",
@@ -6676,6 +6704,13 @@
    "Junyo Maru"
   ]
  },
+ "ship-lisbon-maru": {
+  "name": "Lisbon Maru",
+  "kind": "Japanese cargo liner used as a prisoner transport, torpedoed 1 October 1942",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Lisbon_Maru"
+ },
  "ship-montevideo-maru": {
   "name": "Montevideo Maru",
   "kind": "Japanese transport, prisoner ship",
@@ -7337,6 +7372,13 @@
   "nation": "Britain",
   "wikidata": "Q7393400",
   "source": "https://en.wikipedia.org/wiki/SS_Clan_Fraser_(1938)"
+ },
+ "ship-ss-clement": {
+  "name": "SS Clement",
+  "kind": "British cargo liner",
+  "nation": "Britain",
+  "wikidata": "Q60789140",
+  "source": "https://en.wikipedia.org/wiki/SS_Clement"
  },
  "ship-ss-columbus-1922": {
   "name": "SS Columbus",
@@ -8360,6 +8402,13 @@
   "wikidata": "Q2119791",
   "source": "https://en.wikipedia.org/wiki/USS_Chicago_(CA-29)"
  },
+ "ship-uss-cisco": {
+  "name": "USS Cisco (SS 290)",
+  "kind": "U.S. Navy Balao class submarine, lost September 1943",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Cisco"
+ },
  "ship-uss-cochino": {
   "name": "USS Cochino (SS 345)",
   "kind": "submarine",
@@ -8485,6 +8534,13 @@
   "nation": "US",
   "wikidata": "Q2836374",
   "source": "https://en.wikipedia.org/wiki/USS_Edsall_(DD-219)"
+ },
+ "ship-uss-ellis-dd-154": {
+  "name": "USS Ellis (DD 154)",
+  "kind": "US Navy Wickes class destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Ellis_(DD-154)"
  },
  "ship-uss-england-de-635": {
   "name": "USS England (DE-635)",
@@ -8674,6 +8730,16 @@
   "nation": "US",
   "wikidata": "Q7869851",
   "source": "https://en.wikipedia.org/wiki/USS_Grenadier_(SS-210)"
+ },
+ "ship-uss-grouper": {
+  "name": "USS Grouper (SS 214)",
+  "kind": "U.S. Navy Gato class submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Grouper",
+  "aka": [
+   "USS Grouper (SS 214)"
+  ]
  },
  "ship-uss-growler-ss-215": {
   "name": "USS Growler (SS-215)",
@@ -9056,6 +9122,16 @@
   "nation": "US",
   "wikidata": "Q7870975",
   "source": "https://en.wikipedia.org/wiki/USS_LST-507"
+ },
+ "ship-uss-luzon-pg-47": {
+  "name": "USS Luzon (PG 47)",
+  "kind": "U.S. Navy river gunboat, later the Japanese gunboat Karatsu",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Luzon_(PG-47)",
+  "aka": [
+   "Karatsu"
+  ]
  },
  "ship-uss-mackenzie-dd-614": {
   "name": "USS MacKenzie (DD-614)",

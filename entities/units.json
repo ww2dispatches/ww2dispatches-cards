@@ -203,6 +203,13 @@
   "source": "https://en.wikipedia.org/wiki/12th_SS_Panzer_Division_Hitlerjugend",
   "note": "Atrocity unit: never told from its own side."
  },
+ "unit-131st-infantry-brigade-united-kingdom": {
+  "name": "131st Infantry Brigade (United Kingdom)",
+  "kind": "British infantry brigade (Queen's)",
+  "nation": "Britain",
+  "wikidata": "Q2807535",
+  "source": "https://en.wikipedia.org/wiki/131st_Infantry_Brigade_(United_Kingdom)"
+ },
  "unit-132nd-armored-division-ariete": {
   "name": "Ariete Division",
   "kind": "Italian armoured division",
@@ -398,6 +405,16 @@
    "180th Cavalry Regiment"
   ],
   "note": "Wikipedia files it under its later designation"
+ },
+ "unit-185th-infantry-division-folgore": {
+  "name": "185th Infantry Division Folgore",
+  "kind": "Italian parachute division",
+  "nation": "Italy",
+  "wikidata": "Q3032338",
+  "source": "https://en.wikipedia.org/wiki/185th_Infantry_Division_%22Folgore%22",
+  "aka": [
+   "Folgore Division"
+  ]
  },
  "unit-18th-army-wehrmacht": {
   "name": "18th Army (Wehrmacht)",
@@ -3942,6 +3959,16 @@
   "wikidata": "Q1401614",
   "source": "https://en.wikipedia.org/wiki/Jewish_Anti-Fascist_Committee"
  },
+ "unit-jewish-brigade": {
+  "name": "Jewish Brigade",
+  "kind": "British Army brigade group of Jewish volunteers from Palestine",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Jewish_Brigade",
+  "aka": [
+   "Jewish Brigade Group"
+  ]
+ },
  "unit-jewish-combat-organization": {
   "name": "Jewish Combat Organization",
   "kind": "Jewish underground fighting force in occupied Poland",
@@ -4713,6 +4740,16 @@
   "wikidata": "Q7043026",
   "source": "https://en.wikipedia.org/wiki/No._172_Squadron_RAF"
  },
+ "unit-no-2-service-flying-training-school-raaf": {
+  "name": "No. 2 Service Flying Training School RAAF",
+  "kind": "RAAF pilot training school at Forest Hill, Wagga Wagga",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._2_Service_Flying_Training_School_RAAF",
+  "aka": [
+   "No. 2 SFTS"
+  ]
+ },
  "unit-no-200-squadron-raf": {
   "name": "No. 200 Squadron RAF",
   "kind": "RAF maritime patrol squadron",
@@ -5141,6 +5178,13 @@
   "nation": "US",
   "wikidata": "Q7079193",
   "source": "https://en.wikipedia.org/wiki/Office_of_Civilian_Defense"
+ },
+ "unit-office-of-economic-stabilization": {
+  "name": "Office of Economic Stabilization",
+  "kind": "US wartime agency for prices and wages",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Office_of_Economic_Stabilization"
  },
  "unit-office-of-price-administration": {
   "name": "Office of Price Administration",
@@ -6875,6 +6919,17 @@
    "WRNS"
   ]
  },
+ "unit-working-group-resistance-organization": {
+  "name": "Working Group",
+  "kind": "Jewish underground rescue organization in the Slovak State",
+  "nation": "Slovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Working_Group_(resistance_organization)",
+  "aka": [
+   "Bratislava Working Group",
+   "Pracovna Skupina"
+  ]
+ },
  "unit-works-progress-administration": {
   "name": "Works Progress Administration",
   "kind": "US New Deal relief agency",
@@ -7002,6 +7057,13 @@
   "nation": "United Kingdom",
   "source": "https://en.wikipedia.org/wiki/Yeomen_of_the_Guard",
   "wikidata": "Q431122"
+ },
+ "unit-york-and-lancaster-regiment": {
+  "name": "York and Lancaster Regiment",
+  "kind": "British Army infantry regiment, Hallamshire Battalion",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/York_and_Lancaster_Regiment"
  },
  "unit-yugoslav-partisans": {
   "name": "Yugoslav Partisans",

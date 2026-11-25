@@ -1360,6 +1360,15 @@
   "lat": 52.4219,
   "lon": 12.4716
  },
+ "place-bratislava": {
+  "name": "Bratislava",
+  "kind": "capital of the wartime Slovak State",
+  "nation": "Slovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bratislava",
+  "lat": null,
+  "lon": null
+ },
  "place-breda": {
   "name": "Breda",
   "kind": "city in the southern Netherlands",
@@ -1700,6 +1709,15 @@
   "wikidata": "Q18205754",
   "lat": 30.1164,
   "lon": 30.9154
+ },
+ "place-calais": {
+  "name": "Calais",
+  "kind": "Channel port",
+  "nation": "France",
+  "wikidata": "Q6454",
+  "source": "https://en.wikipedia.org/wiki/Calais",
+  "lat": null,
+  "lon": null
  },
  "place-calitri": {
   "name": "Calitri",
@@ -2386,6 +2404,15 @@
   "lat": 41.8758,
   "lon": -87.6728
  },
+ "place-copenhagen": {
+  "lat": null,
+  "lon": null,
+  "name": "Copenhagen",
+  "kind": "capital of Denmark",
+  "nation": "Denmark",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Copenhagen"
+ },
  "place-corcieux": {
   "name": "Corcieux",
   "kind": "village",
@@ -2876,6 +2903,24 @@
   "source": "https://en.wikipedia.org/wiki/Dover",
   "lat": 51.1275,
   "lon": 1.3122
+ },
+ "place-doxato": {
+  "name": "Doxato",
+  "kind": "town in Drama regional unit, Greece",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Doxato",
+  "lat": null,
+  "lon": null
+ },
+ "place-drama-greece": {
+  "name": "Drama",
+  "kind": "city in eastern Macedonia, Greece",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Drama,_Greece",
+  "lat": null,
+  "lon": null
  },
  "place-drancy-internment-camp": {
   "name": "Drancy internment camp",
@@ -3606,6 +3651,18 @@
   ],
   "lat": 54.8429,
   "lon": 9.3283
+ },
+ "place-fuhrerbau": {
+  "name": "Fuhrerbau",
+  "kind": "Nazi party building in Munich, site of the Munich conference",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/F%C3%BChrerbau",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Führerbau"
+  ]
  },
  "place-fuhrerbunker": {
   "name": "Führerbunker",
@@ -4368,6 +4425,15 @@
   "lat": 51.0631,
   "lon": 6.0964
  },
+ "place-hel-peninsula": {
+  "name": "Hel Peninsula",
+  "kind": "Baltic sand spit, Polish fortified area in 1939",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hel_Peninsula",
+  "lat": null,
+  "lon": null
+ },
  "place-heligoland": {
   "name": "Heligoland",
   "kind": "German island in the North Sea",
@@ -4442,6 +4508,15 @@
   "wikidata": "Q6916",
   "lat": 50.8667,
   "lon": 6.1
+ },
+ "place-heston-aerodrome": {
+  "name": "Heston Aerodrome",
+  "kind": "airfield west of London",
+  "nation": "Britain",
+  "wikidata": "Q3274670",
+  "source": "https://en.wikipedia.org/wiki/Heston_Aerodrome",
+  "lat": null,
+  "lon": null
  },
  "place-hill-262": {
   "name": "Hill 262",
@@ -4555,6 +4630,18 @@
   "wikidata": "Q13989",
   "lat": 36.0,
   "lon": 138.0
+ },
+ "place-hoover-dam": {
+  "name": "Hoover Dam",
+  "kind": "concrete arch gravity dam on the Colorado River",
+  "nation": "US",
+  "wikidata": "Q172822",
+  "source": "https://en.wikipedia.org/wiki/Hoover_Dam",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Boulder Dam"
+  ]
  },
  "place-hornsey": {
   "name": "Hornsey",
@@ -7062,6 +7149,15 @@
    "Merkers"
   ]
  },
+ "place-merksplas": {
+  "name": "Merksplas",
+  "kind": "Belgian village, site of the Depot de Mendicite",
+  "nation": "Belgium",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Merksplas",
+  "lat": null,
+  "lon": null
+ },
  "place-messina": {
   "name": "Messina",
   "kind": "Port city in Sicily",
@@ -7265,6 +7361,15 @@
   "wikidata": "Q3566434",
   "lat": 51.1522,
   "lon": -1.7475
+ },
+ "place-modlin-fortress": {
+  "name": "Modlin Fortress",
+  "kind": "fortress north of Warsaw",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Modlin_Fortress",
+  "lat": null,
+  "lon": null
  },
  "place-moffett-federal-airfield": {
   "name": "NAS Moffett Field",
@@ -7930,6 +8035,15 @@
   "aka": [
    "Neu-Schwabenland"
   ]
+ },
+ "place-new-westminster": {
+  "lat": null,
+  "lon": null,
+  "name": "New Westminster",
+  "kind": "city in British Columbia",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/New_Westminster"
  },
  "place-new-york-city": {
   "name": "New York City",
@@ -8733,6 +8847,15 @@
   "lat": 5.4025,
   "lon": 100.365
  },
+ "place-pennsylvania-turnpike": {
+  "lat": null,
+  "lon": null,
+  "name": "Pennsylvania Turnpike",
+  "kind": "toll highway, first section opened 1 October 1940",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Pennsylvania_Turnpike"
+ },
  "place-peterhead": {
   "name": "Peterhead",
   "kind": "port town",
@@ -9170,6 +9293,15 @@
   "source": "https://en.wikipedia.org/wiki/Pulau_Ubin",
   "lat": 1.4094,
   "lon": 103.96
+ },
+ "place-putten": {
+  "lat": null,
+  "lon": null,
+  "name": "Putten",
+  "kind": "village in Gelderland",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Putten"
  },
  "place-qingdao": {
   "name": "Qingdao",
@@ -10353,6 +10485,15 @@
   "lat": 53.3808,
   "lon": -1.4703
  },
+ "place-sherborne": {
+  "name": "Sherborne",
+  "kind": "market town in Dorset",
+  "nation": "Britain",
+  "wikidata": "Q586895",
+  "source": "https://en.wikipedia.org/wiki/Sherborne",
+  "lat": null,
+  "lon": null
+ },
  "place-shibe-park": {
   "name": "Shibe Park",
   "kind": "ballpark, Philadelphia",
@@ -10418,6 +10559,15 @@
   "wikidata": "Q594834",
   "lat": 12.6667,
   "lon": 122.5
+ },
+ "place-sidi-abdel-rahman": {
+  "name": "Sidi Abdel Rahman",
+  "kind": "coastal village west of El Alamein",
+  "nation": "Egypt",
+  "wikidata": "Q4115955",
+  "source": "https://en.wikipedia.org/wiki/Sidi_Abdel_Rahman",
+  "lat": null,
+  "lon": null
  },
  "place-sidi-barrani": {
   "name": "Sidi Barrani",
@@ -10953,6 +11103,15 @@
   "lat": 54.3289,
   "lon": 19.1539
  },
+ "place-sudetenland": {
+  "lat": null,
+  "lon": null,
+  "name": "Sudetenland",
+  "kind": "German speaking border regions of Czechoslovakia",
+  "nation": "Czechoslovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sudetenland"
+ },
  "place-suez": {
   "name": "Suez",
   "kind": "port city",
@@ -11054,6 +11213,18 @@
   "source": "https://en.wikipedia.org/wiki/Syntagma_Square",
   "lat": 37.9756,
   "lon": 23.7347
+ },
+ "place-syrets-concentration-camp": {
+  "name": "Syrets concentration camp",
+  "kind": "German camp in Kyiv beside Babyn Yar",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Syrets_concentration_camp",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Syrets labor education camp"
+  ]
  },
  "place-szechenyi-chain-bridge": {
   "name": "Szechenyi Chain Bridge",
@@ -11533,6 +11704,15 @@
   "source": "https://en.wikipedia.org/wiki/Torgau",
   "lat": 51.5603,
   "lon": 13.0056
+ },
+ "place-tornio": {
+  "lat": null,
+  "lon": null,
+  "name": "Tornio",
+  "kind": "town in Finnish Lapland on the Swedish border",
+  "nation": "Finland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tornio"
  },
  "place-torokina-airfield": {
   "name": "Torokina fighter strip",
@@ -12716,6 +12896,19 @@
   "source": "https://en.wikipedia.org/wiki/York",
   "lat": 53.95,
   "lon": -1.0833
+ },
+ "place-zagare": {
+  "name": "Zagare",
+  "kind": "town in northern Lithuania, site of a 1941 massacre",
+  "nation": "Lithuania",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/%C5%BDagar%C4%97",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Žagarė",
+   "Zhager"
+  ]
  },
  "place-zagreb": {
   "name": "Zagreb",
