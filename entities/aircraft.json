@@ -984,6 +984,13 @@
    "Graf Zeppelin II"
   ]
  },
+ "aircraft-macchi-m-c-72": {
+  "name": "Macchi M.C.72",
+  "kind": "experimental racing floatplane",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Macchi_M.C.72"
+ },
  "aircraft-martin-b-26-marauder": {
   "name": "Martin B-26 Marauder",
   "kind": "American twin engine medium bomber",

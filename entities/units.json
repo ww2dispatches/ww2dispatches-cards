@@ -2345,6 +2345,16 @@
    "9th Bomb Group"
   ]
  },
+ "unit-ab-aerotransport": {
+  "name": "AB Aerotransport",
+  "kind": "Swedish airline",
+  "nation": "Sweden",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/AB_Aerotransport",
+  "aka": [
+   "ABA"
+  ]
+ },
  "unit-action-francaise": {
   "name": "Action Francaise",
   "kind": "French royalist far right movement",
@@ -2829,6 +2839,13 @@
    "Blackshirts"
   ]
  },
+ "unit-brooklyn-dodgers-nfl": {
+  "name": "Brooklyn Dodgers (NFL)",
+  "kind": "NFL team",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Brooklyn_Dodgers_(NFL)"
+ },
  "unit-brotherhood-of-railroad-trainmen": {
   "name": "Brotherhood of Railroad Trainmen",
   "kind": "railroad labor union",
@@ -2900,6 +2917,16 @@
   "nation": "Canada",
   "wikidata": "Q110496223",
   "source": "https://en.wikipedia.org/wiki/Carleton_and_York_Regiment"
+ },
+ "unit-central-aerohydrodynamic-institute": {
+  "name": "Central Aerohydrodynamic Institute",
+  "kind": "aviation research institute",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Central_Aerohydrodynamic_Institute",
+  "aka": [
+   "TsAGI"
+  ]
  },
  "unit-central-china-area-army": {
   "name": "Central China Area Army",
@@ -4049,6 +4076,18 @@
    "1st Yokosuka Special Naval Landing Force"
   ]
  },
+ "unit-japanese-special-attack-units": {
+  "name": "Japanese Special Attack Units",
+  "kind": "suicide attack units",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_Special_Attack_Units",
+  "aka": [
+   "Special Attack Corps",
+   "tokkotai",
+   "kamikaze"
+  ]
+ },
  "unit-jewish-agency-for-israel": {
   "name": "Jewish Agency",
   "kind": "Zionist executive body in Mandatory Palestine",
@@ -4854,6 +4893,13 @@
   "wikidata": "Q7043026",
   "source": "https://en.wikipedia.org/wiki/No._172_Squadron_RAF"
  },
+ "unit-no-179-squadron-raf": {
+  "name": "No. 179 Squadron RAF",
+  "kind": "RAF maritime patrol squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._179_Squadron_RAF"
+ },
  "unit-no-2-service-flying-training-school-raaf": {
   "name": "No. 2 Service Flying Training School RAAF",
   "kind": "RAAF pilot training school at Forest Hill, Wagga Wagga",
@@ -5465,6 +5511,13 @@
    "World Court"
   ]
  },
+ "unit-philadelphia-eagles": {
+  "name": "Philadelphia Eagles",
+  "kind": "NFL team",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Philadelphia_Eagles"
+ },
  "unit-philadelphia-phillies": {
   "name": "Philadelphia Phillies",
   "kind": "Major League Baseball club",
@@ -5649,6 +5702,13 @@
   "nation": "US",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Raytheon"
+ },
+ "unit-red-army": {
+  "name": "Red Army",
+  "kind": "army",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Red_Army"
  },
  "unit-red-orchestra-espionage": {
   "name": "Red Orchestra",
@@ -6539,6 +6599,17 @@
   "source": "https://en.wikipedia.org/wiki/United_Nations_Truce_Supervision_Organization",
   "aka": [
    "UNTSO"
+  ]
+ },
+ "unit-united-nations-war-crimes-commission": {
+  "name": "United Nations War Crimes Commission",
+  "kind": "Allied commission",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/United_Nations_War_Crimes_Commission",
+  "aka": [
+   "United Nations Commission for the Investigation of War Crimes",
+   "UNWCC"
   ]
  },
  "unit-united-press-international": {

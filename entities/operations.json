@@ -501,6 +501,13 @@
   "source": "https://en.wikipedia.org/wiki/1944_United_States_presidential_election",
   "wikidata": "Q596667"
  },
+ "op-1945-french-legislative-election": {
+  "name": "1945 French legislative election",
+  "kind": "election",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1945_French_legislative_election"
+ },
  "op-1945-mikawa-earthquake": {
   "name": "1945 Mikawa earthquake",
   "kind": "earthquake",
@@ -1656,6 +1663,13 @@
   "nation": "Czechoslovakia",
   "wikidata": "Q4870163",
   "source": "https://en.wikipedia.org/wiki/Battle_for_Czech_Radio"
+ },
+ "op-battle-for-henderson-field": {
+  "name": "Battle for Henderson Field",
+  "kind": "land battle on Guadalcanal, 23 to 26 October 1942",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_for_Henderson_Field"
  },
  "op-battle-in-berlin": {
   "name": "Battle in Berlin",
@@ -3875,6 +3889,13 @@
    "Operation Rumyantsev"
   ]
  },
+ "op-belgrade-offensive": {
+  "name": "Belgrade offensive",
+  "kind": "offensive",
+  "nation": "Yugoslavia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Belgrade_offensive"
+ },
  "op-belsen-trials": {
   "name": "Belsen trials",
   "kind": "British military war crimes trials",
@@ -4317,6 +4338,13 @@
   "nation": "Hungary",
   "wikidata": "Q1035922",
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Kassa"
+ },
+ "op-bombing-of-kassel-in-world-war-ii": {
+  "name": "Bombing of Kassel in World War II",
+  "kind": "Allied air raids on Kassel, 1942 to 1945",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Kassel_in_World_War_II"
  },
  "op-bombing-of-kobe-in-world-war-ii": {
   "name": "Bombing of Kobe in World War II",
@@ -4768,6 +4796,13 @@
    "Australian New Zealand Agreement"
   ]
  },
+ "op-canton-operation": {
+  "name": "Canton Operation",
+  "kind": "campaign",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Canton_Operation"
+ },
  "op-capture-of-hamburg": {
   "name": "Capture of Hamburg",
   "kind": "battle, 18 April to 3 May 1945",
@@ -4962,6 +4997,13 @@
   "wikidata": "Q15210656",
   "source": "https://en.wikipedia.org/wiki/Cinema_Rex_bombing"
  },
+ "op-cleveland-east-ohio-gas-explosion": {
+  "name": "Cleveland East Ohio Gas explosion",
+  "kind": "industrial disaster",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Cleveland_East_Ohio_Gas_explosion"
+ },
  "op-clydebank-blitz": {
   "name": "Clydebank Blitz",
   "kind": "Luftwaffe air raids on Clydebank",
@@ -5151,6 +5193,13 @@
   "wikidata": "Q5166622",
   "source": "https://en.wikipedia.org/wiki/Convoy_HX_72"
  },
+ "op-convoy-hx-79": {
+  "name": "Convoy HX 79",
+  "kind": "North Atlantic convoy attacked 19 to 20 October 1940",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Convoy_HX_79"
+ },
  "op-convoy-hx-90": {
   "name": "Convoy HX 90",
   "kind": "Atlantic convoy",
@@ -5284,6 +5333,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Convoy_SC_48"
  },
+ "op-convoy-sc-7": {
+  "name": "Convoy SC 7",
+  "kind": "Atlantic convoy battle",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Convoy_SC_7"
+ },
  "op-convoy-sc-94": {
   "name": "Convoy SC 94",
   "kind": "Atlantic slow convoy",
@@ -5314,6 +5370,13 @@
   "nation": "Britain",
   "wikidata": "Q16833822",
   "source": "https://en.wikipedia.org/wiki/Corfu_Channel_case"
+ },
+ "op-corfu-channel-incident": {
+  "name": "Corfu Channel incident",
+  "kind": "British warships mined off Albania, 1946",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Corfu_Channel_incident"
  },
  "op-coronation-of-george-vi-and-elizabeth": {
   "name": "Coronation of George VI and Elizabeth",
@@ -6309,6 +6372,13 @@
   "wikidata": "Q327858",
   "source": "https://en.wikipedia.org/wiki/Four-Power_Pact"
  },
+ "op-four-year-plan": {
+  "name": "Four Year Plan",
+  "kind": "economic rearmament program",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Four_Year_Plan"
+ },
  "op-fourth-inauguration-of-franklin-d-roosevelt": {
   "name": "Fourth inauguration of Franklin D. Roosevelt",
   "kind": "presidential inauguration",
@@ -6914,6 +6984,13 @@
   "nation": "US",
   "wikidata": "Q5882598",
   "source": "https://en.wikipedia.org/wiki/Hollywood_Black_Friday"
+ },
+ "op-hollywood-blacklist": {
+  "name": "Hollywood blacklist",
+  "kind": "political blacklist",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hollywood_blacklist"
  },
  "op-holocaust-of-kedros": {
   "name": "Holocaust of Kedros",
@@ -7542,6 +7619,17 @@
    "Kamenets-Podolsk massacre"
   ]
  },
+ "op-kamikaze": {
+  "name": "Kamikaze",
+  "kind": "Japanese suicide air attack program",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kamikaze",
+  "aka": [
+   "Special Attack Units",
+   "tokko"
+  ]
+ },
  "op-kanalkampf": {
   "name": "Kanalkampf",
   "kind": "opening phase of the Battle of Britain, attacks on Channel convoys",
@@ -7697,6 +7785,13 @@
   "nation": "US",
   "wikidata": "Q24307",
   "source": "https://en.wikipedia.org/wiki/Korematsu_v._United_States"
+ },
+ "op-kragujevac-massacre": {
+  "name": "Kragujevac massacre",
+  "kind": "massacre",
+  "nation": "Yugoslavia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kragujevac_massacre"
  },
  "op-krakow-pogrom": {
   "name": "Krakow pogrom",
@@ -8414,12 +8509,29 @@
    "Mechelen affair"
   ]
  },
+ "op-meeting-at-hendaye": {
+  "name": "Meeting at Hendaye",
+  "kind": "Hitler and Franco summit, 23 October 1940",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Meeting_at_Hendaye",
+  "aka": [
+   "Interview of Hendaye"
+  ]
+ },
  "op-merchant-marine-distinguished-service-medal": {
   "name": "Merchant Marine Distinguished Service Medal",
   "kind": "US merchant marine decoration, established 1942",
   "nation": "US",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Merchant_Marine_Distinguished_Service_Medal"
+ },
+ "op-mesovouno-massacres": {
+  "name": "Mesovouno massacres",
+  "kind": "German reprisal massacres, 1941 and 1944",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mesovouno_massacres"
  },
  "op-mexican-declaration-of-war-on-germany-italy-and-japan": {
   "name": "Mexican declaration of war on Germany, Italy, and Japan",
@@ -8599,6 +8711,16 @@
   "wikidata": "Q2752595",
   "source": "https://en.wikipedia.org/wiki/Moscow_Conference_(1942)"
  },
+ "op-moscow-conference-1943": {
+  "name": "Moscow Conference (1943)",
+  "kind": "Allied foreign ministers' conference",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Moscow_Conference_(1943)",
+  "aka": [
+   "Third Moscow Conference"
+  ]
+ },
  "op-moscow-conference-1944": {
   "name": "Moscow Conference (1944)",
   "kind": "Churchill and Stalin summit, 9 to 19 October 1944",
@@ -8777,6 +8899,13 @@
   "wikidata": "Q466036",
   "source": "https://en.wikipedia.org/wiki/Nazi_boycott_of_Jewish_businesses"
  },
+ "op-nemmersdorf-massacre": {
+  "name": "Nemmersdorf massacre",
+  "kind": "killing of German civilians and POWs, October 1944",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Nemmersdorf_massacre"
+ },
  "op-nero-decree": {
   "name": "Nero Decree",
   "kind": "Hitler's order for destruction within the Reich",
@@ -8862,6 +8991,13 @@
   "aka": [
    "Rohm Purge"
   ]
+ },
+ "op-nisko-plan": {
+  "name": "Nisko Plan",
+  "kind": "deportation program",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Nisko_Plan"
  },
  "op-normandy-landings": {
   "name": "Normandy landings",
@@ -8995,6 +9131,16 @@
   "nation": "France",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/October_1946_French_constitutional_referendum"
+ },
+ "op-odesa-massacre": {
+  "name": "Odesa massacre",
+  "kind": "Romanian massacre of Jews in Odessa, October 1941",
+  "nation": "Romania",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Odesa_massacre",
+  "aka": [
+   "Odessa massacre"
+  ]
  },
  "op-odessa-offensive": {
   "name": "Odessa Offensive",
@@ -9397,6 +9543,13 @@
   "nation": "US",
   "wikidata": "Q640690",
   "source": "https://en.wikipedia.org/wiki/Operation_Cornflakes"
+ },
+ "op-operation-corona": {
+  "name": "Operation Corona",
+  "kind": "RAF radio deception against German night fighters",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Corona"
  },
  "op-operation-cottage": {
   "name": "Operation Cottage",
@@ -9904,6 +10057,13 @@
    "Wildhorn III"
   ]
  },
+ "op-operation-musketoon": {
+  "name": "Operation Musketoon",
+  "kind": "commando raid on Glomfjord",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Musketoon"
+ },
  "op-operation-northwind-1944": {
   "name": "Operation Northwind (1944)",
   "kind": "German offensive in Alsace",
@@ -9924,6 +10084,13 @@
    "Battle of Sidi Nsir",
    "Battle of Hunts Gap"
   ]
+ },
+ "op-operation-osoaviakhim": {
+  "name": "Operation Osoaviakhim",
+  "kind": "Soviet deportation of German specialists, October 1946",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Osoaviakhim"
  },
  "op-operation-ostfront": {
   "name": "Operation Ostfront",
@@ -11176,6 +11343,13 @@
    "Great Retreat"
   ]
  },
+ "op-revenue-act-of-1942": {
+  "name": "Revenue Act of 1942",
+  "kind": "tax law",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Revenue_Act_of_1942"
+ },
  "op-riga-offensive-1944": {
   "name": "Riga offensive (1944)",
   "kind": "Soviet offensive",
@@ -11632,6 +11806,13 @@
   "wikidata": "Q2219890",
   "source": "https://en.wikipedia.org/wiki/Siege_of_Calais_(1940)"
  },
+ "op-siege-of-changchun": {
+  "name": "Siege of Changchun",
+  "kind": "Communist blockade of Changchun, May to October 1948",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Siege_of_Changchun"
+ },
  "op-siege-of-danzig-1945": {
   "name": "Siege of Danzig (1945)",
   "kind": "Soviet and Polish capture of Danzig, 15 to 30 March 1945",
@@ -11870,6 +12051,16 @@
   "nation": "Poland",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Sobibor_uprising"
+ },
+ "op-social-security-in-france": {
+  "name": "Social security in France",
+  "kind": "French social insurance system founded by the October 1945 ordinances",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Social_security_in_France",
+  "aka": [
+   "Securite sociale"
+  ]
  },
  "op-soham-rail-disaster": {
   "name": "Soham rail disaster",
@@ -12998,6 +13189,13 @@
    "Rainbow Five"
   ],
   "note": "Wikipedia's Rainbow Five title redirects here."
+ },
+ "op-victory-tax": {
+  "name": "Victory Tax",
+  "kind": "wartime income tax",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Victory_Tax"
  },
  "op-vienna-offensive": {
   "name": "Vienna offensive",

@@ -268,6 +268,17 @@
   "wikidata": "Q708046",
   "source": "https://en.wikipedia.org/wiki/German_auxiliary_cruiser_Kormoran"
  },
+ "ship-german-auxiliary-cruiser-michel": {
+  "name": "Michel",
+  "kind": "auxiliary cruiser, merchant raider",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_auxiliary_cruiser_Michel",
+  "aka": [
+   "Schiff 28",
+   "HSK 9"
+  ]
+ },
  "ship-german-auxiliary-cruiser-orion": {
   "name": "German auxiliary cruiser Orion",
   "kind": "Auxiliary cruiser (commerce raider)",
@@ -1000,6 +1011,13 @@
   "wikidata": "Q555074",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-203"
  },
+ "ship-german-submarine-u-204": {
+  "name": "U-204",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-204"
+ },
  "ship-german-submarine-u-205": {
   "name": "U-205",
   "kind": "German Type VIIC U-boat",
@@ -1048,6 +1066,13 @@
   "nation": "Germany",
   "wikidata": "Q5551551",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-215"
+ },
+ "ship-german-submarine-u-216": {
+  "name": "U-216",
+  "kind": "Type VIID U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-216"
  },
  "ship-german-submarine-u-217": {
   "name": "German submarine U-217",
@@ -1229,6 +1254,13 @@
   "nation": "Germany",
   "wikidata": "Q464263",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-270"
+ },
+ "ship-german-submarine-u-274": {
+  "name": "U-274",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-274"
  },
  "ship-german-submarine-u-277": {
   "name": "U-277",
@@ -1640,6 +1672,13 @@
   "wikidata": "Q4052058",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-410"
  },
+ "ship-german-submarine-u-412": {
+  "name": "U-412",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-412"
+ },
  "ship-german-submarine-u-42-1939": {
   "name": "U-42",
   "kind": "Type IX U-boat",
@@ -1667,6 +1706,13 @@
   "nation": "Germany",
   "wikidata": "Q571254",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-43_(1939)"
+ },
+ "ship-german-submarine-u-431": {
+  "name": "German submarine U 431",
+  "kind": "Type VIIC U boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-431"
  },
  "ship-german-submarine-u-432": {
   "name": "U-432",
@@ -2037,6 +2083,13 @@
   "nation": "Germany",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-533"
+ },
+ "ship-german-submarine-u-537": {
+  "name": "U-537",
+  "kind": "Type IXC/40 U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-537"
  },
  "ship-german-submarine-u-543": {
   "name": "German submarine U-543",
@@ -2804,6 +2857,13 @@
   "wikidata": "Q5551831",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-821"
  },
+ "ship-german-submarine-u-841": {
+  "name": "U 841",
+  "kind": "Type IXC/40 U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-841"
+ },
  "ship-german-submarine-u-847": {
   "name": "U-847",
   "kind": "Type IXD2 U-boat",
@@ -2980,6 +3040,13 @@
   "wikidata": "Q571234",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-977",
   "note": "Surrendered at Mar del Plata, 17 Aug 1945"
+ },
+ "ship-german-submarine-u-985": {
+  "name": "U-985",
+  "kind": "U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-985"
  },
  "ship-german-submarine-u-99-1940": {
   "name": "U-99",
@@ -3601,6 +3668,13 @@
   "wikidata": "Q1564459",
   "source": "https://en.wikipedia.org/wiki/HMS_Bulldog_(H91)"
  },
+ "ship-hms-byard": {
+  "name": "HMS Byard",
+  "kind": "Captain class frigate",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Byard"
+ },
  "ship-hms-cachalot-n83": {
   "name": "HMS Cachalot (N83)",
   "kind": "minelaying submarine",
@@ -3764,6 +3838,16 @@
   "nation": "Britain",
   "wikidata": "Q500039",
   "source": "https://en.wikipedia.org/wiki/HMS_Diamond_(H22)"
+ },
+ "ship-hms-diana-h49": {
+  "name": "HMS Diana (H49)",
+  "kind": "D class destroyer, HMCS Margaree from September 1940",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Diana_(H49)",
+  "aka": [
+   "HMCS Margaree"
+  ]
  },
  "ship-hms-dianthus-k95": {
   "name": "HMS Dianthus (K95)",
@@ -3954,6 +4038,13 @@
   "wikidata": "Q130583197",
   "source": "https://en.wikipedia.org/wiki/HMS_Findhorn"
  },
+ "ship-hms-firedrake-h79": {
+  "name": "HMS Firedrake (H79)",
+  "kind": "destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Firedrake_(H79)"
+ },
  "ship-hms-forfar": {
   "name": "HMS Forfar (F30)",
   "kind": "armed merchant cruiser",
@@ -3998,6 +4089,13 @@
   "nation": "Britain",
   "wikidata": "Q2735915",
   "source": "https://en.wikipedia.org/wiki/HMS_Galatea_(71)"
+ },
+ "ship-hms-gallant-h59": {
+  "name": "HMS Gallant (H59)",
+  "kind": "destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Gallant_(H59)"
  },
  "ship-hms-gladiolus-k34": {
   "name": "HMS Gladiolus (K34)",
@@ -4408,6 +4506,13 @@
   "nation": "Britain",
   "wikidata": "Q688965",
   "source": "https://en.wikipedia.org/wiki/HMS_M2_(1918)"
+ },
+ "ship-hms-mallow-k81": {
+  "name": "HMS Mallow (K81)",
+  "kind": "Flower class corvette",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Mallow_(K81)"
  },
  "ship-hms-manners-k568": {
   "name": "HMS Manners (K568)",
@@ -5189,6 +5294,13 @@
   "wikidata": "Q14514926",
   "source": "https://en.wikipedia.org/wiki/HMS_Viscount"
  },
+ "ship-hms-volage-r41": {
+  "name": "HMS Volage (R41)",
+  "kind": "V class destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Volage_(R41)"
+ },
  "ship-hms-wakeful-h88": {
   "name": "HMS Wakeful (H88)",
   "kind": "W-class destroyer",
@@ -5244,6 +5356,14 @@
   "nation": "Britain",
   "wikidata": "Q5411173",
   "source": "https://en.wikipedia.org/wiki/HMS_Wivern_(D66)"
+ },
+ "ship-hms-wrestler": {
+  "name": "HMS Wrestler",
+  "kind": "destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Wrestler",
+  "note": "HMS Wrestler (1918) and HMS Wrestler (D35) redirect to this title"
  },
  "ship-hms-york-90": {
   "name": "HMS York (90)",
@@ -5625,6 +5745,13 @@
   "wikidata": "Q3704979",
   "source": "https://en.wikipedia.org/wiki/Italian_submarine_Delfino_(1930)"
  },
+ "ship-italian-submarine-durbo": {
+  "name": "Durbo",
+  "kind": "Italian Adua class submarine",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_submarine_Durbo"
+ },
  "ship-italian-submarine-enrico-toti-1928": {
   "name": "Enrico Toti (1928)",
   "kind": "Balilla class submarine",
@@ -5638,6 +5765,16 @@
   "nation": "Italy",
   "wikidata": "Q3801947",
   "source": "https://en.wikipedia.org/wiki/Italian_submarine_Iride"
+ },
+ "ship-italian-submarine-lafole": {
+  "name": "Italian submarine Lafole",
+  "kind": "Adua class submarine",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_submarine_Lafol%C3%A8",
+  "aka": [
+   "Lafolè"
+  ]
  },
  "ship-italian-submarine-leonardo-da-vinci-1939": {
   "name": "Italian submarine Leonardo da Vinci (1939)",
@@ -6387,6 +6524,13 @@
   "wikidata": "Q570922",
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Nowaki_(1940)"
  },
+ "ship-japanese-destroyer-oboro-1930": {
+  "name": "Oboro",
+  "kind": "Fubuki class destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Oboro_(1930)"
+ },
  "ship-japanese-destroyer-okinami": {
   "name": "Okinami",
   "kind": "destroyer",
@@ -6804,6 +6948,13 @@
   "wikidata": "Q110208364",
   "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-351"
  },
+ "ship-japanese-submarine-i-36": {
+  "name": "I 36",
+  "kind": "aircraft carrying submarine",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-36"
+ },
  "ship-japanese-submarine-i-37": {
   "name": "I-37",
   "kind": "Imperial Japanese Navy submarine",
@@ -6998,6 +7149,13 @@
   "wikidata": "Q3277521",
   "source": "https://en.wikipedia.org/wiki/MS_Gripsholm_(1924)"
  },
+ "ship-ms-sinfra": {
+  "name": "MS Sinfra",
+  "kind": "cargo ship under German control, sunk carrying Italian prisoners",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/MS_Sinfra"
+ },
  "ship-ms-st-louis": {
   "name": "MS St. Louis",
   "kind": "German ocean liner",
@@ -7087,6 +7245,13 @@
   "aka": [
    "Kofuku Maru"
   ]
+ },
+ "ship-mv-languedoc": {
+  "name": "Languedoc",
+  "kind": "Admiralty oil tanker",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/MV_Languedoc"
  },
  "ship-mv-mefkure": {
   "name": "MV Mefküre",
@@ -7224,6 +7389,16 @@
   "nation": "Britain",
   "wikidata": "Q21540187",
   "source": "https://en.wikipedia.org/wiki/PS_Portsdown"
+ },
+ "ship-rfa-darkdale": {
+  "name": "RFA Darkdale",
+  "kind": "Royal Fleet Auxiliary oiler",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/RFA_Darkdale",
+  "aka": [
+   "Empire Oil"
+  ]
  },
  "ship-rms-corfu": {
   "name": "RMS Corfu",
@@ -8733,6 +8908,13 @@
   "wikidata": "Q7868272",
   "source": "https://en.wikipedia.org/wiki/USS_Chemung_(AO-30)"
  },
+ "ship-uss-chester-ca-27": {
+  "name": "USS Chester (CA-27)",
+  "kind": "heavy cruiser",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Chester_(CA-27)"
+ },
  "ship-uss-chevalier-dd-451": {
   "name": "USS Chevalier (DD-451)",
   "kind": "Fletcher class destroyer",
@@ -8819,6 +9001,20 @@
   "nation": "US",
   "wikidata": "Q829506",
   "source": "https://en.wikipedia.org/wiki/USS_Croatan_(CVE-25)"
+ },
+ "ship-uss-dace-ss-247": {
+  "name": "USS Dace (SS-247)",
+  "kind": "U.S. Navy submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Dace_(SS-247)"
+ },
+ "ship-uss-darter-ss-227": {
+  "name": "USS Darter (SS-227)",
+  "kind": "U.S. Navy submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Darter_(SS-227)"
  },
  "ship-uss-david-w-taylor": {
   "name": "USS David W. Taylor (DD-551)",
@@ -9536,6 +9732,16 @@
   "nation": "US",
   "wikidata": "Q663049",
   "source": "https://en.wikipedia.org/wiki/USS_Marblehead_(CL-12)"
+ },
+ "ship-uss-mason-dd-191": {
+  "name": "USS Mason (DD-191)",
+  "kind": "destroyer, later HMS Broadwater (H81)",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Mason_(DD-191)",
+  "aka": [
+   "HMS Broadwater"
+  ]
  },
  "ship-uss-massachusetts-bb-59": {
   "name": "USS Massachusetts (BB-59)",

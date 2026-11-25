@@ -1337,12 +1337,26 @@
    "Squid"
   ]
  },
+ "machine-streptomycin": {
+  "name": "Streptomycin",
+  "kind": "antibiotic, first cure for tuberculosis",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Streptomycin"
+ },
  "machine-sulfadiazine": {
   "name": "Sulfadiazine",
   "kind": "sulfa drug",
   "nation": "worldwide",
   "source": "https://en.wikipedia.org/wiki/Sulfadiazine",
   "wikidata": "Q2555060"
+ },
+ "machine-summi-pontificatus": {
+  "name": "Summi Pontificatus",
+  "kind": "papal encyclical",
+  "nation": "Vatican City",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Summi_Pontificatus"
  },
  "machine-sword-of-stalingrad": {
   "name": "Sword of Stalingrad",
@@ -1566,6 +1580,13 @@
   "aka": [
    "X-craft"
   ]
+ },
+ "machine-xerography": {
+  "name": "Xerography",
+  "kind": "dry photocopying process",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Xerography"
  },
  "machine-yankee-doodle-dandy": {
   "name": "Yankee Doodle Dandy",

@@ -335,6 +335,18 @@
   "lat": 52.2515,
   "lon": 20.9923
  },
+ "place-ankara": {
+  "name": "Ankara",
+  "kind": "capital of Turkey",
+  "nation": "Turkey",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ankara",
+  "aka": [
+   "Angora"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-anne-frank-house": {
   "name": "Anne Frank House",
   "kind": "the annex behind Otto Frank's business where the family hid, now a museum",
@@ -2059,6 +2071,15 @@
   "lat": 51.4452,
   "lon": -0.0207
  },
+ "place-cathay-building": {
+  "name": "Cathay Building",
+  "kind": "building",
+  "nation": "Singapore",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Cathay_Building",
+  "lat": null,
+  "lon": null
+ },
  "place-cavern-city-air-terminal": {
   "name": "Carlsbad Army Airfield",
   "kind": "wartime army airfield, now Cavern City Air Terminal",
@@ -2173,6 +2194,15 @@
    "Champs-Élysées"
   ]
  },
+ "place-changchun": {
+  "name": "Changchun",
+  "kind": "city in Manchuria",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Changchun",
+  "lat": null,
+  "lon": null
+ },
  "place-changsha": {
   "name": "Changsha",
   "kind": "city, Hunan province",
@@ -2197,6 +2227,15 @@
   "nation": "Canada",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Ch%C3%A2teau_Frontenac",
+  "lat": null,
+  "lon": null
+ },
+ "place-chateaubriant": {
+  "name": "Chateaubriant",
+  "kind": "town in Brittany, site of an internment camp",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ch%C3%A2teaubriant",
   "lat": null,
   "lon": null
  },
@@ -2373,6 +2412,15 @@
   "aka": [
    "Clark Air Base"
   ]
+ },
+ "place-cleveland": {
+  "name": "Cleveland",
+  "kind": "city",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Cleveland",
+  "lat": null,
+  "lon": null
  },
  "place-clinton-engineer-works": {
   "name": "Clinton Engineer Works",
@@ -3542,6 +3590,15 @@
   "lat": 40.591,
   "lon": -73.891
  },
+ "place-flushing-meadows-corona-park": {
+  "name": "Flushing Meadows Corona Park",
+  "kind": "park in Queens, New York City, site of the 1939 World's Fair",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Flushing_Meadows%E2%80%93Corona_Park",
+  "lat": null,
+  "lon": null
+ },
  "place-ford-river-rouge-complex": {
   "name": "Ford River Rouge complex",
   "kind": "Ford factory complex, Dearborn, Michigan",
@@ -4087,6 +4144,15 @@
   "lat": -8.6,
   "lon": 148.2667
  },
+ "place-gothenburg": {
+  "name": "Gothenburg",
+  "kind": "Swedish port city",
+  "nation": "Sweden",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Gothenburg",
+  "lat": null,
+  "lon": null
+ },
  "place-grand-coulee-dam": {
   "name": "Grand Coulee Dam",
   "kind": "hydroelectric dam on the Columbia River",
@@ -4242,6 +4308,18 @@
   "source": "https://en.wikipedia.org/wiki/Guam",
   "lat": 13.5,
   "lon": 144.8
+ },
+ "place-guangzhou": {
+  "name": "Guangzhou",
+  "kind": "city",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Guangzhou",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Canton"
+  ]
  },
  "place-guards-chapel-wellington-barracks": {
   "name": "Guards' Chapel, Wellington Barracks",
@@ -4630,6 +4708,15 @@
   "lat": 60.1708,
   "lon": 24.9375
  },
+ "place-hendaye": {
+  "name": "Hendaye",
+  "kind": "French town on the Spanish border",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hendaye",
+  "lat": null,
+  "lon": null
+ },
  "place-henderson-field-guadalcanal": {
   "name": "Henderson Field",
   "kind": "airfield",
@@ -4767,6 +4854,15 @@
   "nation": "India",
   "wikidata": "Q5631051",
   "source": "https://en.wikipedia.org/wiki/HMIS_Talwar",
+  "lat": null,
+  "lon": null
+ },
+ "place-hobe-sound-florida": {
+  "name": "Hobe Sound, Florida",
+  "kind": "coastal community",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hobe_Sound,_Florida",
   "lat": null,
   "lon": null
  },
@@ -5233,6 +5329,15 @@
   "lat": 44.3403,
   "lon": 17.2572
  },
+ "place-jamestown-saint-helena": {
+  "name": "Jamestown, Saint Helena",
+  "kind": "capital and harbor of St Helena",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Jamestown,_Saint_Helena",
+  "lat": null,
+  "lon": null
+ },
  "place-jarrow": {
   "name": "Jarrow",
   "kind": "town",
@@ -5549,6 +5654,15 @@
   "source": "https://en.wikipedia.org/wiki/Kassala",
   "lat": 15.45,
   "lon": 36.4
+ },
+ "place-kassel": {
+  "name": "Kassel",
+  "kind": "German city",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kassel",
+  "lat": null,
+  "lon": null
  },
  "place-kastellorizo": {
   "name": "Kastellorizo",
@@ -5907,6 +6021,15 @@
    "Königstein Fortress"
   ]
  },
+ "place-konkoita": {
+  "name": "Konkoita",
+  "kind": "railway camp where the Burma Railway was joined",
+  "nation": "Thailand",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Konkoita",
+  "lat": null,
+  "lon": null
+ },
  "place-kos": {
   "name": "Kos",
   "kind": "island",
@@ -5970,6 +6093,15 @@
    "Kaunas ghetto",
    "Kauen concentration camp"
   ]
+ },
+ "place-kragujevac": {
+  "name": "Kragujevac",
+  "kind": "city",
+  "nation": "Yugoslavia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kragujevac",
+  "lat": null,
+  "lon": null
  },
  "place-krakow-ghetto": {
   "name": "Krakow Ghetto",
@@ -6244,6 +6376,15 @@
   "source": "https://en.wikipedia.org/wiki/Lake_Balaton",
   "lat": 46.85,
   "lon": 17.72
+ },
+ "place-lake-garda": {
+  "name": "Lake Garda",
+  "kind": "lake in northern Italy",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Lake_Garda",
+  "lat": null,
+  "lon": null
  },
  "place-lake-ladoga": {
   "name": "Lake Ladoga",
@@ -6877,6 +7018,15 @@
   "lat": 45.7675,
   "lon": 4.835
  },
+ "place-mabalacat": {
+  "name": "Mabalacat",
+  "kind": "town and airfield",
+  "nation": "Philippines",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mabalacat",
+  "lat": null,
+  "lon": null
+ },
  "place-macarthur-landing-memorial-national-park": {
   "name": "MacArthur Landing Memorial",
   "kind": "memorial park",
@@ -7419,6 +7569,15 @@
   "lat": 51.3581,
   "lon": 4.8628
  },
+ "place-mesovouno": {
+  "name": "Mesovouno",
+  "kind": "village near Ptolemaida, Kozani",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mesovouno",
+  "lat": null,
+  "lon": null
+ },
  "place-messina": {
   "name": "Messina",
   "kind": "Port city in Sicily",
@@ -7747,6 +7906,15 @@
   "source": "https://en.wikipedia.org/wiki/Montevideo",
   "lat": -34.9059,
   "lon": -56.1913
+ },
+ "place-montoire-sur-le-loir": {
+  "name": "Montoire-sur-le-Loir",
+  "kind": "French town and railway station",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Montoire-sur-le-Loir",
+  "lat": null,
+  "lon": null
  },
  "place-monument-to-the-battle-of-the-nations": {
   "name": "Monument to the Battle of the Nations",
@@ -8429,6 +8597,15 @@
   "lat": 43.3192,
   "lon": 21.8961
  },
+ "place-nisko": {
+  "name": "Nisko",
+  "kind": "town",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Nisko",
+  "lat": null,
+  "lon": null
+ },
  "place-nordhausen": {
   "lat": null,
   "lon": null,
@@ -8521,6 +8698,18 @@
   "source": "https://en.wikipedia.org/wiki/Nottingham",
   "lat": 52.955,
   "lon": -1.1492
+ },
+ "place-noumea": {
+  "name": "Noumea",
+  "kind": "city and South Pacific headquarters",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Noum%C3%A9a",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Nouméa"
+  ]
  },
  "place-novorossiysk": {
   "name": "Novorossiysk",
@@ -10170,6 +10359,15 @@
   "lat": -9.07,
   "lon": 159.15
  },
+ "place-rutgers-university": {
+  "name": "Rutgers University",
+  "kind": "university in New Jersey",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Rutgers_University",
+  "lat": null,
+  "lon": null
+ },
  "place-rutli": {
   "name": "Rutli",
   "kind": "meadow on Lake Lucerne, site of the 1940 Rutli Report",
@@ -10608,6 +10806,15 @@
   "lat": 47.2592,
   "lon": -0.0781
  },
+ "place-savio-river": {
+  "name": "Savio (river)",
+  "kind": "river in northern Italy",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Savio_(river)",
+  "lat": null,
+  "lon": null
+ },
  "place-savo-island": {
   "name": "Savo Island",
   "kind": "island",
@@ -10870,6 +11077,15 @@
   "lat": 59.945,
   "lon": 31.0347
  },
+ "place-shubert-theatre": {
+  "name": "Shubert Theatre",
+  "kind": "Broadway theatre in New York",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Shubert_Theatre",
+  "lat": null,
+  "lon": null
+ },
  "place-shumshu": {
   "name": "Shumshu",
   "kind": "northernmost of the Kuril Islands",
@@ -11107,6 +11323,15 @@
   "lat": 49.4086,
   "lon": 1.0892
  },
+ "place-souda-bay": {
+  "name": "Souda Bay",
+  "kind": "bay and harbour on Crete",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Souda_Bay",
+  "lat": null,
+  "lon": null
+ },
  "place-sounion": {
   "name": "Cape Sounion",
   "kind": "cape",
@@ -11221,6 +11446,15 @@
   "lat": 46.9244,
   "lon": -55.3928
  },
+ "place-st-louis": {
+  "name": "St. Louis",
+  "kind": "city in Missouri",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/St._Louis",
+  "lat": null,
+  "lon": null
+ },
  "place-st-louis-lambert-international-airport": {
   "name": "Lambert Field, St. Louis",
   "kind": "airport, now St. Louis Lambert International Airport",
@@ -11328,6 +11562,15 @@
   "source": "https://en.wikipedia.org/wiki/State_of_Burma",
   "lat": 16.8464,
   "lon": 96.1692
+ },
+ "place-state-street-subway": {
+  "name": "State Street subway",
+  "kind": "Chicago subway line",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/State_Street_subway",
+  "lat": null,
+  "lon": null
  },
  "place-steenbergen": {
   "name": "Steenbergen",
@@ -11493,6 +11736,15 @@
   "source": "https://en.wikipedia.org/wiki/Sulu_Sea",
   "lat": 8.0,
   "lon": 120.0
+ },
+ "place-suluan": {
+  "name": "Suluan",
+  "kind": "island at the mouth of Leyte Gulf",
+  "nation": "Philippines",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Suluan",
+  "lat": null,
+  "lon": null
  },
  "place-surabaya": {
   "name": "Surabaya",
@@ -11878,6 +12130,18 @@
   ],
   "lat": 50.0358,
   "lon": 19.1783
+ },
+ "place-theresienstadt-ghetto": {
+  "name": "Theresienstadt Ghetto",
+  "kind": "ghetto and transit camp",
+  "nation": "Czechoslovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Theresienstadt_Ghetto",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Terezin"
+  ]
  },
  "place-thousand-islands-bridge": {
   "name": "Thousand Islands Bridge",
@@ -12368,6 +12632,15 @@
   "wikidata": "Q1350219",
   "lat": 9.97,
   "lon": 139.67
+ },
+ "place-ulm": {
+  "name": "Ulm",
+  "kind": "city",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ulm",
+  "lat": null,
+  "lon": null
  },
  "place-uman": {
   "name": "Uman",
@@ -12861,6 +13134,15 @@
   "source": "https://en.wikipedia.org/wiki/Wayland,_New_York",
   "lat": 42.5678,
   "lon": -77.5897
+ },
+ "place-weather-station-kurt": {
+  "name": "Weather Station Kurt",
+  "kind": "German automatic weather station at Martin Bay, Labrador",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Weather_Station_Kurt",
+  "lat": null,
+  "lon": null
  },
  "place-weixian-internment-camp": {
   "name": "Weixian Internment Camp",
