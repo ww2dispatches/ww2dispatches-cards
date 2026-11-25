@@ -620,6 +620,18 @@
   "lat": 15.2881,
   "lon": 145.8161
  },
+ "place-barbes-rochechouart-station": {
+  "name": "Barbes Rochechouart station",
+  "kind": "Paris Metro station",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Barb%C3%A8s%E2%80%93Rochechouart_station",
+  "aka": [
+   "Barbès Rochechouart"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-barcelona": {
   "name": "Barcelona",
   "kind": "city",
@@ -1014,6 +1026,18 @@
   "source": "https://en.wikipedia.org/wiki/Bikini_Atoll",
   "lat": 11.6,
   "lon": 165.4
+ },
+ "place-bila-tserkva": {
+  "name": "Bila Tserkva",
+  "kind": "city in Ukraine",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bila_Tserkva",
+  "aka": [
+   "Belaya Tserkov"
+  ],
+  "lat": null,
+  "lon": null
  },
  "place-bioko": {
   "name": "Bioko",
@@ -2636,6 +2660,15 @@
   "lat": 53.3497,
   "lon": -6.2603
  },
+ "place-dumbarton-oaks": {
+  "name": "Dumbarton Oaks",
+  "kind": "historic estate in Washington, D.C.",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Dumbarton_Oaks",
+  "lat": null,
+  "lon": null
+ },
  "place-dunkirk": {
   "name": "Dunkirk",
   "kind": "port city",
@@ -4188,6 +4221,19 @@
   "lat": 24.8181,
   "lon": 120.9392
  },
+ "place-huaihua-zhijiang-airport": {
+  "name": "Huaihua Zhijiang Airport",
+  "kind": "wartime Chihkiang airfield, Hunan",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Huaihua_Zhijiang_Airport",
+  "aka": [
+   "Chihkiang Airfield",
+   "Zhijiang Airfield"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-huelva": {
   "name": "Huelva",
   "kind": "city",
@@ -4244,6 +4290,18 @@
   "aka": [
    "Hürtgen Forest"
   ]
+ },
+ "place-hvalfjordur": {
+  "name": "Hvalfjordur",
+  "kind": "fjord and wartime anchorage in Iceland",
+  "nation": "Iceland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hvalfj%C3%B6r%C3%B0ur",
+  "aka": [
+   "Hvalfjord"
+  ],
+  "lat": null,
+  "lon": null
  },
  "place-hyde-park-new-york": {
   "name": "Hyde Park, New York",
@@ -6854,6 +6912,15 @@
   "aka": [
    "Moton Field"
   ]
+ },
+ "place-mount-elbrus": {
+  "name": "Mount Elbrus",
+  "kind": "highest mountain of the Caucasus",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mount_Elbrus",
+  "lat": null,
+  "lon": null
  },
  "place-mount-rushmore": {
   "name": "Mount Rushmore",

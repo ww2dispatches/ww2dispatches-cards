@@ -537,6 +537,14 @@
    "Edson's Raiders"
   ]
  },
+ "unit-1st-mountain-division-wehrmacht": {
+  "name": "1st Mountain Division (Wehrmacht)",
+  "kind": "German mountain infantry division",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1st_Mountain_Division_(Wehrmacht)",
+  "note": "Tied to massacres in Greece and Albania and the murder of the Acqui Division; guardrails apply."
+ },
  "unit-1st-panzer-army": {
   "name": "First Panzer Army",
   "kind": "German panzer army",
@@ -4339,6 +4347,13 @@
   "nation": "Britain",
   "wikidata": "Q7042978",
   "source": "https://en.wikipedia.org/wiki/No._149_Squadron_RAF"
+ },
+ "unit-no-151-wing-raf": {
+  "name": "No. 151 Wing RAF",
+  "kind": "RAF fighter wing sent to North Russia in 1941",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._151_Wing_RAF"
  },
  "unit-no-162-squadron-rcaf": {
   "name": "No. 162 Squadron RCAF",

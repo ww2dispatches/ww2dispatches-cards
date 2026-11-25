@@ -1577,6 +1577,13 @@
   "wikidata": "Q5551710",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-477"
  },
+ "ship-german-submarine-u-480": {
+  "name": "German submarine U-480",
+  "kind": "Type VIIC U-boat with Alberich rubber coating",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-480"
+ },
  "ship-german-submarine-u-486": {
   "name": "U-486",
   "kind": "Kriegsmarine U-boat",
@@ -2730,6 +2737,13 @@
   "nation": "Australia",
   "wikidata": "Q645571",
   "source": "https://en.wikipedia.org/wiki/HMAS_Yarra_(U77)"
+ },
+ "ship-hmcs-alberni": {
+  "name": "HMCS Alberni (K103)",
+  "kind": "Flower-class corvette",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMCS_Alberni"
  },
  "ship-hmcs-athabaskan-g07": {
   "name": "HMCS Athabaskan (G07)",

@@ -337,6 +337,13 @@
   "source": "https://en.wikipedia.org/wiki/Alexander_Buller_Turner",
   "wikidata": "Q4718470"
  },
+ "person-alexander-cadogan": {
+  "name": "Alexander Cadogan",
+  "kind": "British Permanent Under Secretary for Foreign Affairs",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Alexander_Cadogan"
+ },
  "person-alexander-comstock-kirk": {
   "name": "Alexander Kirk",
   "kind": "U.S. diplomat",
@@ -2577,6 +2584,13 @@
   "wikidata": "Q5295192",
   "source": "https://en.wikipedia.org/wiki/Donald_Stott"
  },
+ "person-dorothy-tangney": {
+  "name": "Dorothy Tangney",
+  "kind": "Australian senator, first woman elected to the Senate",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Dorothy_Tangney"
+ },
  "person-douglas-abbott": {
   "name": "Douglas Abbott",
   "kind": "Canadian finance minister",
@@ -2937,6 +2951,13 @@
    "Sir Edward Spears"
   ]
  },
+ "person-edward-stettinius-jr": {
+  "name": "Edward Stettinius Jr.",
+  "kind": "US Under Secretary of State, later Secretary of State",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Edward_Stettinius_Jr."
+ },
  "person-edward-viii": {
   "name": "Edward VIII",
   "kind": "King of the United Kingdom, later Duke of Windsor",
@@ -3219,6 +3240,13 @@
   "nation": "Austria",
   "wikidata": "Q11734",
   "source": "https://en.wikipedia.org/wiki/Engelbert_Dollfuss"
+ },
+ "person-enid-lyons": {
+  "name": "Enid Lyons",
+  "kind": "Australian politician, first woman elected to the House of Representatives",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Enid_Lyons"
  },
  "person-enrico-fermi": {
   "name": "Enrico Fermi",
@@ -5274,6 +5302,16 @@
   "wikidata": "Q67609",
   "source": "https://en.wikipedia.org/wiki/Hans_Graf_von_Sponeck"
  },
+ "person-hans-joachim-forster": {
+  "name": "Hans-Joachim Forster",
+  "kind": "U-boat commander of U-480",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hans-Joachim_F%C3%B6rster",
+  "aka": [
+   "Hans-Joachim Förster"
+  ]
+ },
  "person-hans-jurgen-von-arnim": {
   "name": "Hans-Jurgen von Arnim",
   "kind": "German general, Fifth Panzer Army",
@@ -5443,6 +5481,13 @@
   "nation": "Britain",
   "wikidata": "Q3127792",
   "source": "https://en.wikipedia.org/wiki/Harry_Boot"
+ },
+ "person-harry-daghlian": {
+  "name": "Harry Daghlian",
+  "kind": "Manhattan Project physicist, fatally irradiated at Los Alamos",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Harry_Daghlian"
  },
  "person-harry-dexter-white": {
   "name": "Harry Dexter White",
@@ -8425,6 +8470,16 @@
   "source": "https://en.wikipedia.org/wiki/Kiyohide_Shima",
   "wikidata": "Q646375"
  },
+ "person-kiyonao-ichiki": {
+  "name": "Kiyonao Ichiki",
+  "kind": "Imperial Japanese Army colonel, commander at the Tenaru",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kiyonao_Ichiki",
+  "aka": [
+   "Kiyono Ichiki"
+  ]
+ },
  "person-kiyoshi-ogawa": {
   "name": "Kiyoshi Ogawa",
   "kind": "kamikaze pilot",
@@ -9336,6 +9391,16 @@
   "nation": "US",
   "wikidata": "Q11340711",
   "source": "https://en.wikipedia.org/wiki/Mannert_L._Abele"
+ },
+ "person-manny-shinwell": {
+  "name": "Emanuel Shinwell",
+  "kind": "British Labour politician, Minister of Fuel and Power from 1945",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Manny_Shinwell",
+  "aka": [
+   "Manny Shinwell"
+  ]
  },
  "person-manolis-glezos": {
   "name": "Manolis Glezos",
@@ -11049,6 +11114,17 @@
   "nation": "France",
   "wikidata": "Q471296",
   "source": "https://en.wikipedia.org/wiki/Pierre-%C3%89tienne_Flandin"
+ },
+ "person-pierre-georges": {
+  "name": "Pierre Georges",
+  "kind": "French Communist resistance fighter, later Colonel Fabien",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Pierre_Georges",
+  "aka": [
+   "Colonel Fabien",
+   "Fredo"
+  ]
  },
  "person-pierre-laval": {
   "name": "Pierre Laval",
@@ -12829,6 +12905,13 @@
   "aka": [
    "Baron Nishi"
   ]
+ },
+ "person-takeo-imai": {
+  "name": "Takeo Imai",
+  "kind": "Imperial Japanese Army major general, deputy chief of staff of the China Expeditionary Army",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Takeo_Imai"
  },
  "person-takeo-kurita": {
   "name": "Takeo Kurita",

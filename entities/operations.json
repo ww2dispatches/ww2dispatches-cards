@@ -307,6 +307,13 @@
   "wikidata": "Q123310343",
   "source": "https://en.wikipedia.org/wiki/1943_Akron_rubber_strike"
  },
+ "op-1943-australian-federal-election": {
+  "name": "1943 Australian federal election",
+  "kind": "wartime general election",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1943_Australian_federal_election"
+ },
  "op-1943-brusa-agreement": {
   "name": "1943 BRUSA Agreement",
   "kind": "intelligence agreement",
@@ -441,6 +448,13 @@
   "aka": [
    "Midnight Massacre"
   ]
+ },
+ "op-1945-zhijiang-surrender-ceremony": {
+  "name": "1945 Zhijiang surrender ceremony",
+  "kind": "negotiated surrender meeting, China",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1945_Zhijiang_surrender_ceremony"
  },
  "op-1946-cabinet-mission-to-india": {
   "name": "1946 Cabinet Mission to India",
@@ -3380,6 +3394,13 @@
    "Operation Argument"
   ]
  },
+ "op-bila-tserkva-massacre": {
+  "name": "Bila Tserkva massacre",
+  "kind": "Holocaust massacre, August 1941",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bila_Tserkva_massacre"
+ },
  "op-birmingham-blitz": {
   "name": "Birmingham Blitz",
   "kind": "German bombing campaign on a city",
@@ -4675,6 +4696,13 @@
    "December events"
   ]
  },
+ "op-deportation-of-koreans-in-the-soviet-union": {
+  "name": "Deportation of Koreans in the Soviet Union",
+  "kind": "forced deportation, 1937",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Deportation_of_Koreans_in_the_Soviet_Union"
+ },
  "op-deportation-of-the-chechens-and-ingush": {
   "name": "Deportation of the Chechens and Ingush",
   "kind": "Soviet forced deportation, Feb to Mar 1944",
@@ -4803,6 +4831,13 @@
   "nation": "US",
   "wikidata": "Q5307936",
   "source": "https://en.wikipedia.org/wiki/Drive_on_Munda_Point"
+ },
+ "op-dumbarton-oaks-conference": {
+  "name": "Dumbarton Oaks Conference",
+  "kind": "conference planning the United Nations, 1944",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Dumbarton_Oaks_Conference"
  },
  "op-dunkirk-evacuation": {
   "name": "Dunkirk evacuation",
@@ -7907,6 +7942,13 @@
   "wikidata": "Q327085",
   "source": "https://en.wikipedia.org/wiki/Operation_Crusader"
  },
+ "op-operation-dervish-1941": {
+  "name": "Operation Dervish (1941)",
+  "kind": "first Arctic convoy to the Soviet Union",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Dervish_(1941)"
+ },
  "op-operation-desecrate-one": {
   "name": "Operation Desecrate One",
   "kind": "U.S. carrier strikes on Palau and the western Carolines, March 1944",
@@ -9831,6 +9873,13 @@
   "aka": [
    "Sino-British New Equal Treaty"
   ]
+ },
+ "op-sino-soviet-non-aggression-pact": {
+  "name": "Sino-Soviet Non-Aggression Pact",
+  "kind": "treaty, 21 August 1937",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sino-Soviet_Non-Aggression_Pact"
  },
  "op-sino-soviet-treaty-of-friendship-and-alliance": {
   "name": "Sino-Soviet Treaty of Friendship and Alliance",
