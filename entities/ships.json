@@ -1991,6 +1991,13 @@
    "U-593"
   ]
  },
+ "ship-german-submarine-u-604": {
+  "name": "German submarine U-604",
+  "kind": "U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-604"
+ },
  "ship-german-submarine-u-606": {
   "name": "U-606",
   "kind": "Type VIIC U-boat",
@@ -4989,6 +4996,16 @@
    "Hiyō"
   ]
  },
+ "ship-japanese-aircraft-carrier-ryujo": {
+  "name": "Japanese aircraft carrier Ryūjō",
+  "kind": "light aircraft carrier",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_aircraft_carrier_Ry%C5%ABj%C5%8D",
+  "aka": [
+   "Ryujo"
+  ]
+ },
  "ship-japanese-aircraft-carrier-shoho": {
   "name": "Shoho",
   "kind": "Imperial Japanese Navy light aircraft carrier",
@@ -5349,6 +5366,13 @@
   "nation": "Japan",
   "wikidata": "Q452513",
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Amagiri_(1930)"
+ },
+ "ship-japanese-destroyer-amatsukaze-1939": {
+  "name": "Japanese destroyer Amatsukaze (1939)",
+  "kind": "destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Amatsukaze_(1939)"
  },
  "ship-japanese-destroyer-arare-1937": {
   "name": "Japanese destroyer Arare (1937)",
@@ -7985,6 +8009,17 @@
   "source": "https://en.wikipedia.org/wiki/USS_Haggard",
   "note": "Wikipedia title USS Haggard (DD-555) redirects to USS Haggard"
  },
+ "ship-uss-hake": {
+  "name": "USS Hake (SS-256)",
+  "kind": "submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Hake",
+  "aka": [
+   "USS Hake"
+  ],
+  "note": "English Wikipedia title is USS Hake; USS Hake (SS-256) redirects there"
+ },
  "ship-uss-hammann-dd-412": {
   "name": "USS Hammann (DD-412)",
   "kind": "Sims class destroyer",
@@ -9001,6 +9036,17 @@
   "nation": "US",
   "wikidata": "Q3268688",
   "source": "https://en.wikipedia.org/wiki/USS_St._Louis_(CL-49)"
+ },
+ "ship-uss-stewart-dd-224": {
+  "name": "USS Stewart (DD-224)",
+  "kind": "destroyer, later Japanese Patrol Boat No. 102",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Stewart_(DD-224)",
+  "aka": [
+   "PB-102",
+   "Patrol Boat No. 102"
+  ]
  },
  "ship-uss-sturgeon-ss-187": {
   "name": "USS Sturgeon (SS-187)",

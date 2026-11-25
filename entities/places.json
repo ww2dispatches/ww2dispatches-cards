@@ -1445,6 +1445,15 @@
   "lat": 51.0212,
   "lon": 11.249
  },
+ "place-bucheres": {
+  "name": "Buchères",
+  "kind": "village",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Buch%C3%A8res",
+  "lat": null,
+  "lon": null
+ },
  "place-budapest": {
   "name": "Budapest",
   "kind": "capital city",

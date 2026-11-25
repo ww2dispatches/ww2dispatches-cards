@@ -2637,6 +2637,16 @@
   "wikidata": "Q1348513",
   "source": "https://en.wikipedia.org/wiki/China_Democratic_League"
  },
+ "unit-china-national-aviation-corporation": {
+  "name": "China National Aviation Corporation",
+  "kind": "Chinese airline",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/China_National_Aviation_Corporation",
+  "aka": [
+   "CNAC"
+  ]
+ },
  "unit-chindits": {
   "name": "Chindits",
   "kind": "British and Indian long range penetration force in Burma",
@@ -3842,6 +3852,16 @@
   "nation": "Japan",
   "wikidata": "Q646394",
   "source": "https://en.wikipedia.org/wiki/Kwantung_Army"
+ },
+ "unit-la-nueve": {
+  "name": "La Nueve",
+  "kind": "9th Company, 2nd Armored Division (France), Spanish Republican volunteers",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/La_Nueve",
+  "aka": [
+   "9th Company"
+  ]
  },
  "unit-lark-force": {
   "name": "Lark Force",
@@ -5183,6 +5203,16 @@
   "source": "https://en.wikipedia.org/wiki/Regia_Marina",
   "aka": [
    "Italian Navy"
+  ]
+ },
+ "unit-regiment-savoia-cavalleria-3rd": {
+  "name": "Regiment \"Savoia Cavalleria\" (3rd)",
+  "kind": "Italian cavalry regiment",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Regiment_%22Savoia_Cavalleria%22_(3rd)",
+  "aka": [
+   "Savoia Cavalleria"
   ]
  },
  "unit-reich-labour-service": {

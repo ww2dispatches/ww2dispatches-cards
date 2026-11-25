@@ -4277,6 +4277,16 @@
    "Unternehmen Zerberus"
   ]
  },
+ "op-charge-of-the-savoia-cavalleria-at-izbushensky": {
+  "name": "Charge of the Savoia Cavalleria at Izbushensky",
+  "kind": "cavalry charge",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Charge_of_the_Savoia_Cavalleria_at_Izbushensky",
+  "aka": [
+   "Isbuscenskij charge"
+  ]
+ },
  "op-charter-of-the-united-nations": {
   "name": "United Nations Charter",
   "kind": "treaty",
@@ -6703,6 +6713,13 @@
   "nation": "Norway",
   "wikidata": "Q6449648",
   "source": "https://en.wikipedia.org/wiki/Kvarstad_vessels"
+ },
+ "op-kweilin-incident": {
+  "name": "Kweilin incident",
+  "kind": "airliner shootdown",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kweilin_incident"
  },
  "op-kyujo-incident": {
   "name": "Kyujo incident",
@@ -10699,6 +10716,16 @@
   "nation": "US",
   "wikidata": "Q29094916",
   "source": "https://en.wikipedia.org/wiki/Tornado_outbreak_of_April_12,_1945"
+ },
+ "op-total-wartime-deployment-of-the-cultural-workers": {
+  "name": "Total wartime deployment of the cultural workers",
+  "kind": "decree closing German theaters",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Total_wartime_deployment_of_the_cultural_workers",
+  "aka": [
+   "Theatersperre"
+  ]
  },
  "op-townsville-mutiny": {
   "name": "Townsville mutiny",
