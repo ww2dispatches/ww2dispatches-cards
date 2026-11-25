@@ -3441,6 +3441,13 @@
    "Fast Carrier Task Force"
   ]
  },
+ "unit-fc-dynamo-moscow": {
+  "name": "FC Dynamo Moscow",
+  "kind": "Soviet football club",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/FC_Dynamo_Moscow"
+ },
  "unit-federal-assembly-switzerland": {
   "name": "Federal Assembly (Switzerland)",
   "kind": "Swiss parliament",
@@ -3879,6 +3886,13 @@
   "aka": [
    "Hitlerjugend"
   ]
+ },
+ "unit-hlinka-guard": {
+  "name": "Hlinka Guard",
+  "kind": "Slovak People's Party militia",
+  "nation": "Slovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hlinka_Guard"
  },
  "unit-home-army": {
   "name": "Home Army",
@@ -5176,6 +5190,16 @@
   "nation": "France",
   "wikidata": "Q7043407",
   "source": "https://en.wikipedia.org/wiki/No._344_Squadron_RAF"
+ },
+ "unit-no-346-squadron-raf": {
+  "name": "No. 346 Squadron RAF",
+  "kind": "Free French heavy bomber squadron",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._346_Squadron_RAF",
+  "aka": [
+   "Groupe Guyenne"
+  ]
  },
  "unit-no-36-squadron-raf": {
   "name": "No. 36 Squadron RAF",

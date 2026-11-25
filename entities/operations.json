@@ -113,6 +113,13 @@
   "wikidata": "Q334786",
   "source": "https://en.wikipedia.org/wiki/1938_Austrian_Anschluss_referendum"
  },
+ "op-1938-deportation-of-jews-from-slovakia": {
+  "name": "1938 deportation of Jews from Slovakia",
+  "kind": "mass deportation",
+  "nation": "Slovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1938_deportation_of_Jews_from_Slovakia"
+ },
  "op-1938-expulsion-of-polish-jews-from-germany": {
   "name": "1938 expulsion of Polish Jews from Germany",
   "kind": "mass deportation",
@@ -4945,6 +4952,16 @@
   "wikidata": "Q12028726",
   "source": "https://en.wikipedia.org/wiki/Carlsbad_Programme"
  },
+ "op-carlson-s-patrol": {
+  "name": "Carlson's patrol",
+  "kind": "Marine raider long patrol on Guadalcanal",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Carlson%27s_patrol",
+  "aka": [
+   "The Long Patrol"
+  ]
+ },
  "op-casablanca-conference": {
   "name": "Casablanca Conference",
   "kind": "Allied conference",
@@ -8122,6 +8139,13 @@
    "Operation Longview"
   ]
  },
+ "op-landing-at-jacquinot-bay": {
+  "name": "Landing at Jacquinot Bay",
+  "kind": "amphibious landing",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Landing_at_Jacquinot_Bay"
+ },
  "op-landing-at-lae": {
   "name": "Landing at Lae",
   "kind": "amphibious landing, 4 September 1943",
@@ -10936,6 +10960,13 @@
   "nation": "Britain",
   "wikidata": "Q28736694",
   "source": "https://en.wikipedia.org/wiki/Oslo_Mosquito_raid_(1944)"
+ },
+ "op-oslo-report": {
+  "name": "Oslo Report",
+  "kind": "leaked German weapons dossier",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Oslo_Report"
  },
  "op-ostrogozhsk-rossosh-offensive": {
   "name": "Ostrogozhsk-Rossosh offensive",

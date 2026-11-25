@@ -483,6 +483,15 @@
   "lat": 48.7444,
   "lon": -0.0203
  },
+ "place-arlington-national-cemetery": {
+  "name": "Arlington National Cemetery",
+  "kind": "national military cemetery",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Arlington_National_Cemetery",
+  "lat": null,
+  "lon": null
+ },
  "place-arnhem": {
   "name": "Arnhem",
   "kind": "city in the Netherlands on the Neder Rijn",
@@ -1275,6 +1284,15 @@
   "wikidata": "Q3478051",
   "lat": 42.3978,
   "lon": -121.0406
+ },
+ "place-bochum": {
+  "name": "Bochum",
+  "kind": "Ruhr steel city",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bochum",
+  "lat": null,
+  "lon": null
  },
  "place-boeing-field": {
   "name": "Boeing Field",
@@ -5424,6 +5442,15 @@
   "nation": "US",
   "wikidata": "Q988928",
   "source": "https://en.wikipedia.org/wiki/Jacksonville_Beach,_Florida"
+ },
+ "place-jacquinot-bay": {
+  "name": "Jacquinot Bay",
+  "kind": "bay on the south coast of New Britain",
+  "nation": "Papua New Guinea",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Jacquinot_Bay",
+  "lat": null,
+  "lon": null
  },
  "place-jajce": {
   "name": "Jajce",
