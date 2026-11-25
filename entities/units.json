@@ -339,6 +339,16 @@
   "wikidata": "Q4551423",
   "source": "https://en.wikipedia.org/wiki/163rd_Infantry_Regiment_(United_States)"
  },
+ "unit-164th-regiment-united-states": {
+  "name": "164th Infantry Regiment",
+  "kind": "infantry regiment, North Dakota National Guard",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/164th_Regiment_(United_States)",
+  "aka": [
+   "164th Infantry"
+  ]
+ },
  "unit-16th-armored-division-united-states": {
   "name": "16th Armored Division (United States)",
   "kind": "U.S. Army armored division",
@@ -1327,6 +1337,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/3rd_Armored_Division_(United_States)",
   "wikidata": "Q223552"
+ },
+ "unit-3rd-baltic-front": {
+  "name": "3rd Baltic Front",
+  "kind": "Red Army front",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/3rd_Baltic_Front"
  },
  "unit-3rd-belorussian-front": {
   "name": "3rd Belorussian Front",

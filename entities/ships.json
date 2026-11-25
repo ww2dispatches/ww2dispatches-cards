@@ -1577,6 +1577,13 @@
    "U-399"
   ]
  },
+ "ship-german-submarine-u-40-1938": {
+  "name": "U-40",
+  "kind": "Type IX U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-40_(1938)"
+ },
  "ship-german-submarine-u-402": {
   "name": "German submarine U-402",
   "kind": "Type VIIC U-boat",
@@ -1625,6 +1632,13 @@
   "nation": "Germany",
   "wikidata": "Q4052058",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-410"
+ },
+ "ship-german-submarine-u-42-1939": {
+  "name": "U-42",
+  "kind": "Type IX U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-42_(1939)"
  },
  "ship-german-submarine-u-422": {
   "name": "U 422",
@@ -4143,6 +4157,13 @@
   "nation": "Britain",
   "wikidata": "Q1140782",
   "source": "https://en.wikipedia.org/wiki/HMS_Illustrious_(87)"
+ },
+ "ship-hms-imogen-d44": {
+  "name": "HMS Imogen (D44)",
+  "kind": "destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Imogen_(D44)"
  },
  "ship-hms-indefatigable-r10": {
   "name": "HMS Indefatigable (R10)",
@@ -8449,6 +8470,13 @@
   "aka": [
    "USS Brevard"
   ]
+ },
+ "ship-uss-bristol-dd-453": {
+  "name": "USS Bristol (DD-453)",
+  "kind": "Gleaves class destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Bristol_(DD-453)"
  },
  "ship-uss-brownson-dd-518": {
   "name": "USS Brownson (DD-518)",

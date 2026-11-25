@@ -3936,6 +3936,16 @@
   "wikidata": "Q866062",
   "source": "https://en.wikipedia.org/wiki/Biscari_massacre"
  },
+ "op-black-friday-1944": {
+  "name": "Black Friday (1944)",
+  "kind": "battalion attack, Battle of the Scheldt",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Black_Friday_(1944)",
+  "aka": [
+   "Operation Angus"
+  ]
+ },
  "op-black-friday-1945": {
   "name": "Black Friday (1945)",
   "kind": "Allied air strike in Forde Fjord, Norway",
@@ -5163,6 +5173,13 @@
   "nation": "Britain",
   "wikidata": "Q15811564",
   "source": "https://en.wikipedia.org/wiki/Convoy_QP_14"
+ },
+ "op-convoy-sc-104": {
+  "name": "Convoy SC 104",
+  "kind": "Atlantic convoy",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Convoy_SC_104"
  },
  "op-convoy-sc-118": {
   "name": "Convoy SC 118",
@@ -8876,6 +8893,13 @@
   "wikidata": "Q512451",
   "source": "https://en.wikipedia.org/wiki/Occupation_statute"
  },
+ "op-october-1946-french-constitutional-referendum": {
+  "name": "October 1946 French constitutional referendum",
+  "kind": "referendum",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/October_1946_French_constitutional_referendum"
+ },
  "op-odessa-offensive": {
   "name": "Odessa Offensive",
   "kind": "Soviet offensive, 1944",
@@ -11019,6 +11043,13 @@
   "aka": [
    "Great Retreat"
   ]
+ },
+ "op-riga-offensive-1944": {
+  "name": "Riga offensive (1944)",
+  "kind": "Soviet offensive",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Riga_offensive_(1944)"
  },
  "op-riom-trial": {
   "name": "Riom Trial",
