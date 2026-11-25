@@ -1593,6 +1593,13 @@
   "wikidata": "Q2472307",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-439"
  },
+ "ship-german-submarine-u-446": {
+  "name": "U 446",
+  "kind": "Type VIIC U boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-446"
+ },
  "ship-german-submarine-u-447": {
   "name": "U-447",
   "kind": "Kriegsmarine Type VIIC U-boat",
@@ -6136,6 +6143,13 @@
   "nation": "Japan",
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Samidare_(1935)",
   "wikidata": "Q1356866"
+ },
+ "ship-japanese-destroyer-satsuki-1925": {
+  "name": "Satsuki (1925)",
+  "kind": "Mutsuki class destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Satsuki_(1925)"
  },
  "ship-japanese-destroyer-sazanami-1931": {
   "name": "Sazanami (1931)",

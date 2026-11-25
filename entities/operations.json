@@ -2830,6 +2830,13 @@
   "wikidata": "Q3636599",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Rhodes_(1943)"
  },
+ "op-battle-of-rimini-1944": {
+  "name": "Battle of Rimini (1944)",
+  "kind": "battle on the Gothic Line",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Rimini_(1944)"
+ },
  "op-battle-of-rostov-1941": {
   "name": "Battle of Rostov (1941)",
   "kind": "battle",
@@ -4849,6 +4856,13 @@
   "nation": "Britain",
   "wikidata": "Q5166618",
   "source": "https://en.wikipedia.org/wiki/Convoy_HX_228"
+ },
+ "op-convoy-hx-72": {
+  "name": "Convoy HX 72",
+  "kind": "Halifax to Liverpool convoy, September 1940",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Convoy_HX_72"
  },
  "op-convoy-hx-90": {
   "name": "Convoy HX 90",
@@ -12395,6 +12409,13 @@
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/Witchcraft_Act_1735",
   "wikidata": "Q8027891"
+ },
+ "op-wjsv-broadcast-day": {
+  "name": "WJSV broadcast day",
+  "kind": "full day radio recording, 21 Sep 1939",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/WJSV_broadcast_day"
  },
  "op-wola-massacre": {
   "name": "Wola massacre",

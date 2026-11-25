@@ -544,6 +544,17 @@
    "1st Free French Brigade"
   ]
  },
+ "unit-1st-independent-parachute-brigade": {
+  "name": "1st Independent Parachute Brigade",
+  "kind": "Polish parachute brigade",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1st_Independent_Parachute_Brigade",
+  "aka": [
+   "Polish 1st Independent Parachute Brigade",
+   "1st Polish Parachute Brigade"
+  ]
+ },
  "unit-1st-infantry-division-united-states": {
   "name": "1st Infantry Division",
   "kind": "U.S. infantry division",
@@ -1296,6 +1307,16 @@
   "nation": "New Zealand",
   "wikidata": "Q4636745",
   "source": "https://en.wikipedia.org/wiki/3rd_Division_(New_Zealand)"
+ },
+ "unit-3rd-greek-mountain-brigade": {
+  "name": "3rd Greek Mountain Brigade",
+  "kind": "Greek infantry brigade in Italy",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/3rd_Greek_Mountain_Brigade",
+  "aka": [
+   "III Greek Mountain Brigade"
+  ]
  },
  "unit-3rd-infantry-division-united-states": {
   "name": "3rd Infantry Division",
@@ -2311,6 +2332,13 @@
   "wikidata": "Q698099",
   "source": "https://en.wikipedia.org/wiki/Allied_Control_Council"
  },
+ "unit-allied-high-commission": {
+  "name": "Allied High Commission",
+  "kind": "US, British and French civil authority over West Germany, 1949 to 1955",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Allied_High_Commission"
+ },
  "unit-allied-kommandatura": {
   "name": "Allied Kommandatura",
   "kind": "four power military government of Berlin",
@@ -2820,6 +2848,16 @@
   "nation": "Britain",
   "wikidata": "Q873549",
   "source": "https://en.wikipedia.org/wiki/Chindits"
+ },
+ "unit-chinese-people-s-political-consultative-conference": {
+  "name": "Chinese People's Political Consultative Conference",
+  "kind": "Chinese political advisory body, founded 1949",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Chinese_People%27s_Political_Consultative_Conference",
+  "aka": [
+   "CPPCC"
+  ]
  },
  "unit-churchill-archives-centre": {
   "name": "Churchill Archives Centre",

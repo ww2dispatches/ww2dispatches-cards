@@ -2886,6 +2886,15 @@
   "lat": 51.0493,
   "lon": 13.7381
  },
+ "place-driel": {
+  "name": "Driel",
+  "kind": "village south of the Lower Rhine",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Driel",
+  "lat": null,
+  "lon": null
+ },
  "place-drvar": {
   "name": "Drvar",
   "kind": "town in Bosnia, Partisan headquarters in 1944",
@@ -9457,6 +9466,15 @@
   "source": "https://en.wikipedia.org/wiki/Rijsoord",
   "lat": 51.8506,
   "lon": 4.5967
+ },
+ "place-rimini": {
+  "name": "Rimini",
+  "kind": "city on the Adriatic coast",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Rimini",
+  "lat": null,
+  "lon": null
  },
  "place-road-of-life": {
   "name": "Road of Life",
