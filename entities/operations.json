@@ -800,6 +800,16 @@
   "wikidata": "Q249708",
   "source": "https://en.wikipedia.org/wiki/Aleutian_Islands_campaign"
  },
+ "op-allied-airmen-at-buchenwald-concentration-camp": {
+  "name": "Allied airmen at Buchenwald concentration camp",
+  "kind": "imprisonment of captured airmen",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Allied_airmen_at_Buchenwald_concentration_camp",
+  "aka": [
+   "KLB Club"
+  ]
+ },
  "op-allied-invasion-of-sicily": {
   "name": "Allied invasion of Sicily",
   "kind": "amphibious and airborne campaign",
@@ -1062,6 +1072,13 @@
   "nation": "Spain",
   "wikidata": "Q61995994",
   "source": "https://en.wikipedia.org/wiki/Assassination_of_Jos%C3%A9_Calvo_Sotelo"
+ },
+ "op-assassination-of-leon-trotsky": {
+  "name": "Assassination of Leon Trotsky",
+  "kind": "assassination",
+  "nation": "Mexico",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Assassination_of_Leon_Trotsky"
  },
  "op-atlantic-charter": {
   "name": "Atlantic Charter",
@@ -3987,6 +4004,13 @@
   "wikidata": "Q891641",
   "source": "https://en.wikipedia.org/wiki/Burnden_Park_disaster"
  },
+ "op-cactus-air-force": {
+  "name": "Cactus Air Force",
+  "kind": "Allied air force at Henderson Field",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Cactus_Air_Force"
+ },
  "op-cairo-conference": {
   "name": "Cairo Conference",
   "kind": "conference",
@@ -4643,6 +4667,13 @@
   "aka": [
    "Operation Ulussy"
   ]
+ },
+ "op-destroyers-for-bases-deal": {
+  "name": "Destroyers-for-bases deal",
+  "kind": "Anglo American agreement",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Destroyers-for-bases_deal"
  },
  "op-deutschland-incident-1937": {
   "name": "Deutschland incident (1937)",
@@ -5455,6 +5486,13 @@
   "wikidata": "Q5552224",
   "source": "https://en.wikipedia.org/wiki/German%E2%80%93Soviet_Commercial_Agreement_(1940)"
  },
+ "op-german-soviet-credit-agreement-1939": {
+  "name": "German Soviet Credit Agreement (1939)",
+  "kind": "trade agreement",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German%E2%80%93Soviet_Credit_Agreement_(1939)"
+ },
  "op-german-surrender-at-luneburg-heath": {
   "name": "German surrender at Luneburg Heath",
   "kind": "surrender of German forces in northwest Germany, the Netherlands and Denmark, 4 May 1945",
@@ -5752,6 +5790,13 @@
   "aka": [
    "Ningen-sengen"
   ]
+ },
+ "op-hundred-regiments-offensive": {
+  "name": "Hundred Regiments Offensive",
+  "kind": "offensive",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hundred_Regiments_Offensive"
  },
  "op-hungarian-invasion-of-carpatho-ukraine": {
   "name": "Hungarian invasion of Carpatho-Ukraine",
@@ -7027,6 +7072,16 @@
   "wikidata": "Q162663",
   "source": "https://en.wikipedia.org/wiki/Mit_brennender_Sorge"
  },
+ "op-molotov-ribbentrop-pact": {
+  "name": "Molotov Ribbentrop Pact",
+  "kind": "non aggression pact",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Molotov%E2%80%93Ribbentrop_Pact",
+  "aka": [
+   "Nazi Soviet pact"
+  ]
+ },
  "op-montreux-convention-regarding-the-regime-of-the-straits": {
   "name": "Montreux Convention Regarding the Regime of the Straits",
   "kind": "1936 treaty on the Turkish Straits",
@@ -7254,6 +7309,16 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/Neutrality_Patrol",
   "wikidata": "Q469062"
+ },
+ "op-never-was-so-much-owed-by-so-many-to-so-few": {
+  "name": "Never was so much owed by so many to so few",
+  "kind": "wartime speech",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Never_was_so_much_owed_by_so_many_to_so_few",
+  "aka": [
+   "The Few"
+  ]
  },
  "op-new-britain-campaign": {
   "name": "New Britain campaign",
@@ -9396,6 +9461,17 @@
   "nation": "Italy",
   "wikidata": "Q94916",
   "source": "https://en.wikipedia.org/wiki/Second_Italo-Ethiopian_War"
+ },
+ "op-second-jassy-kishinev-offensive": {
+  "name": "Second Jassy Kishinev offensive",
+  "kind": "offensive",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Second_Jassy%E2%80%93Kishinev_offensive",
+  "aka": [
+   "Jassy Kishinev offensive",
+   "Iasi Chisinau offensive"
+  ]
  },
  "op-second-konoe-cabinet": {
   "name": "Second Konoe cabinet",

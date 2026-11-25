@@ -7996,6 +7996,13 @@
    "Karel Hasler"
   ]
  },
+ "person-karl-brandt": {
+  "name": "Karl Brandt",
+  "kind": "Hitler's personal physician, Doctors' Trial defendant",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Karl_Brandt"
+ },
  "person-karl-donitz": {
   "name": "Karl Doenitz",
   "kind": "German admiral",
@@ -8745,6 +8752,13 @@
   "nation": "US",
   "wikidata": "Q15454316",
   "source": "https://en.wikipedia.org/wiki/Leon_Henderson"
+ },
+ "person-leon-trotsky": {
+  "name": "Leon Trotsky",
+  "kind": "exiled Russian revolutionary",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Leon_Trotsky"
  },
  "person-leonard-birchall": {
   "name": "Leonard Birchall",
@@ -10721,6 +10735,13 @@
   "wikidata": "Q365314",
   "source": "https://en.wikipedia.org/wiki/Pedro_Pablo_Ram%C3%ADrez"
  },
+ "person-peng-dehuai": {
+  "name": "Peng Dehuai",
+  "kind": "Eighth Route Army deputy commander in chief",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Peng_Dehuai"
+ },
  "person-per-albin-hansson": {
   "name": "Per Albin Hansson",
   "kind": "Prime Minister of Sweden",
@@ -10804,6 +10825,13 @@
   "nation": "Romania",
   "wikidata": "Q317313",
   "source": "https://en.wikipedia.org/wiki/Petru_Groza"
+ },
+ "person-phil-lamason": {
+  "name": "Phil Lamason",
+  "kind": "RNZAF bomber pilot, senior officer of the airmen at Buchenwald",
+  "nation": "New Zealand",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Phil_Lamason"
  },
  "person-philip-hayes-united-states-army-officer": {
   "name": "Philip Hayes",
@@ -11118,6 +11146,16 @@
   "nation": "US",
   "wikidata": "Q517243",
   "source": "https://en.wikipedia.org/wiki/Ralph_Metcalfe"
+ },
+ "person-ramon-mercader": {
+  "name": "Ramón Mercader",
+  "kind": "NKVD agent, Trotsky's assassin",
+  "nation": "Spain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ram%C3%B3n_Mercader",
+  "aka": [
+   "Ramon Mercader"
+  ]
  },
  "person-ramsay-macdonald": {
   "name": "Ramsay MacDonald",
@@ -14503,6 +14541,13 @@
   "nation": "China",
   "wikidata": "Q4261993",
   "source": "https://en.wikipedia.org/wiki/Zhao_Dengyu"
+ },
+ "person-zhu-de": {
+  "name": "Zhu De",
+  "kind": "Eighth Route Army commander in chief",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Zhu_De"
  },
  "person-zofia-kossak-szczucka": {
   "name": "Zofia Kossak-Szczucka",

@@ -2861,6 +2861,13 @@
   "source": "https://en.wikipedia.org/wiki/Eighth_Army_(United_Kingdom)",
   "wikidata": "Q270202"
  },
+ "unit-eighth-route-army": {
+  "name": "Eighth Route Army",
+  "kind": "Chinese Communist army",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Eighth_Route_Army"
+ },
  "unit-elas": {
   "name": "ELAS",
   "kind": "Greek People's Liberation Army, military arm of EAM",
@@ -5963,6 +5970,16 @@
   "source": "https://en.wikipedia.org/wiki/VII_Corps_(United_States)",
   "wikidata": "Q1515278"
  },
+ "unit-vma-223": {
+  "name": "VMA-223",
+  "kind": "Marine fighter squadron",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/VMA-223",
+  "aka": [
+   "VMF-223"
+  ]
+ },
  "unit-vmf-221": {
   "name": "VMF-221",
   "kind": "U.S. Marine Corps fighter squadron",
@@ -6013,6 +6030,16 @@
    "Black Sheep Squadron"
   ]
  },
+ "unit-vmfa-232": {
+  "name": "VMFA-232",
+  "kind": "Marine dive bomber squadron in 1942",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/VMFA-232",
+  "aka": [
+   "VMSB-232"
+  ]
+ },
  "unit-voice-of-america": {
   "name": "Voice of America",
   "kind": "U.S. government international broadcaster",
@@ -6056,6 +6083,17 @@
   "aka": [
    "VPB-142"
   ]
+ },
+ "unit-vp-34": {
+  "name": "VP-34",
+  "kind": "U.S. Navy patrol squadron",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/VP-34",
+  "aka": [
+   "VP-73"
+  ],
+  "note": "Flew as VP-73 in 1942; Wikipedia's article for the squadron is VP-34."
  },
  "unit-vpb-109": {
   "name": "VPB-109",

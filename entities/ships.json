@@ -1497,6 +1497,13 @@
   "wikidata": "Q445318",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-463"
  },
+ "ship-german-submarine-u-464": {
+  "name": "German submarine U-464",
+  "kind": "Type XIV supply U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-464"
+ },
  "ship-german-submarine-u-465": {
   "name": "German submarine U-465",
   "kind": "Type VIIC U-boat",
@@ -8011,6 +8018,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/USS_Liscome_Bay",
   "wikidata": "Q1758469"
+ },
+ "ship-uss-long-island-cve-1": {
+  "name": "USS Long Island (CVE-1)",
+  "kind": "escort carrier",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Long_Island_(CVE-1)"
  },
  "ship-uss-louisville-ca-28": {
   "name": "USS Louisville (CA-28)",

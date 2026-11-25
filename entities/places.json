@@ -3168,6 +3168,15 @@
   "lat": 21.0333,
   "lon": 105.85
  },
+ "place-fresnes-prison": {
+  "name": "Fresnes Prison",
+  "kind": "prison near Paris",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fresnes_Prison",
+  "lat": null,
+  "lon": null
+ },
  "place-fuhrerbunker": {
   "name": "Führerbunker",
   "kind": "air raid shelter and headquarters",
@@ -6340,6 +6349,15 @@
   "wikidata": "Q22690",
   "lat": 49.1197,
   "lon": 6.1769
+ },
+ "place-mexico-city": {
+  "name": "Mexico City",
+  "kind": "city",
+  "nation": "Mexico",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mexico_City",
+  "lat": null,
+  "lon": null
  },
  "place-miami-beach-florida": {
   "name": "Miami Beach",
