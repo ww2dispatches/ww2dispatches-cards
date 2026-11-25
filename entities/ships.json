@@ -2042,6 +2042,13 @@
   "wikidata": "Q950212",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-518"
  },
+ "ship-german-submarine-u-520": {
+  "name": "U-520",
+  "kind": "Type IXC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-520"
+ },
  "ship-german-submarine-u-521": {
   "name": "German submarine U-521",
   "kind": "Kriegsmarine Type IXC U-boat",
@@ -2572,6 +2579,13 @@
   "nation": "Germany",
   "wikidata": "Q827917",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-656"
+ },
+ "ship-german-submarine-u-658": {
+  "name": "U-658",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-658"
  },
  "ship-german-submarine-u-659": {
   "name": "U-659",
@@ -4269,6 +4283,13 @@
   "nation": "Britain",
   "wikidata": "Q11860990",
   "source": "https://en.wikipedia.org/wiki/HMS_Heythrop_(L85)"
+ },
+ "ship-hms-highlander-h44": {
+  "name": "HMS Highlander (H44)",
+  "kind": "H class destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Highlander_(H44)"
  },
  "ship-hms-holcombe": {
   "name": "HMS Holcombe",
@@ -10266,6 +10287,16 @@
   "source": "https://en.wikipedia.org/wiki/USS_Sailfish_(SS-192)",
   "aka": [
    "USS Squalus"
+  ]
+ },
+ "ship-uss-salinas": {
+  "name": "USS Salinas (AO-19)",
+  "kind": "Patoka class fleet oiler",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Salinas",
+  "aka": [
+   "Hudsonian"
   ]
  },
  "ship-uss-salmon-ss-182": {

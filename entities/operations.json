@@ -5361,6 +5361,13 @@
   "wikidata": "Q5166664",
   "source": "https://en.wikipedia.org/wiki/Convoy_SC_94"
  },
+ "op-convoy-sl-125": {
+  "name": "Convoy SL 125",
+  "kind": "Freetown to Liverpool convoy",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Convoy_SL_125"
+ },
  "op-convoys-hx-229-sc-122": {
   "name": "Convoys HX 229/SC 122",
   "kind": "North Atlantic convoy battle, March 1943",
@@ -5596,6 +5603,13 @@
   "aka": [
    "Siege of Brest (1941)"
   ]
+ },
+ "op-defense-of-the-adzhimushkay-quarry": {
+  "name": "Defense of the Adzhimushkay quarry",
+  "kind": "underground defence near Kerch, May to October 1942",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Defense_of_the_Adzhimushkay_quarry"
  },
  "op-degenerate-art-exhibition": {
   "name": "Degenerate Art exhibition",
@@ -6507,6 +6521,16 @@
   "nation": "Germany",
   "wikidata": "Q1885006",
   "source": "https://en.wikipedia.org/wiki/Gardelegen_massacre"
+ },
+ "op-general-agreement-on-tariffs-and-trade": {
+  "name": "General Agreement on Tariffs and Trade",
+  "kind": "multilateral trade agreement",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/General_Agreement_on_Tariffs_and_Trade",
+  "aka": [
+   "GATT"
+  ]
  },
  "op-general-government": {
   "name": "General Government",
@@ -8762,6 +8786,17 @@
   "nation": "Soviet Union",
   "wikidata": "Q912215",
   "source": "https://en.wikipedia.org/wiki/Moscow_Conference_(1945)"
+ },
+ "op-moscow-declarations": {
+  "name": "Moscow Declarations",
+  "kind": "four declarations of the 1943 Moscow Conference",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Moscow_Declarations",
+  "aka": [
+   "Declaration of the Four Nations",
+   "Moscow Declaration"
+  ]
  },
  "op-moscow-peace-treaty": {
   "name": "Moscow Peace Treaty",
@@ -12635,6 +12670,13 @@
   "nation": "Netherlands",
   "wikidata": "Q2278817",
   "source": "https://en.wikipedia.org/wiki/The_Holocaust_in_the_Netherlands"
+ },
+ "op-the-war-of-the-worlds-1938-radio-drama": {
+  "name": "The War of the Worlds (1938 radio drama)",
+  "kind": "CBS radio broadcast",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/The_War_of_the_Worlds_(1938_radio_drama)"
  },
  "op-third-battle-of-kharkov": {
   "name": "Third Battle of Kharkov",
