@@ -1372,6 +1372,18 @@
   "lat": 50.7256,
   "lon": 1.6139
  },
+ "place-bowmanville-pow-camp": {
+  "name": "Bowmanville POW camp",
+  "kind": "prisoner of war camp (Camp 30), Ontario",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bowmanville_POW_camp",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Camp 30"
+  ]
+ },
  "place-brandenburg-an-der-havel": {
   "name": "Brandenburg an der Havel",
   "kind": "city",

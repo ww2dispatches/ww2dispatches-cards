@@ -677,6 +677,17 @@
   ],
   "note": "Wikipedia has no separate article for the 1st Air Commando Group; this is the lineage article. Swap if the registry prefers a different id."
  },
+ "unit-1st-tadeusz-kosciuszko-infantry-division": {
+  "name": "1st Tadeusz Kosciuszko Infantry Division",
+  "kind": "Polish infantry division raised in the Soviet Union",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1st_Tadeusz_Ko%C5%9Bciuszko_Infantry_Division",
+  "aka": [
+   "1st Tadeusz Kościuszko Infantry Division",
+   "Kosciuszko Division"
+  ]
+ },
  "unit-1st-uk-division": {
   "name": "1st Infantry Division (British)",
   "kind": "British Army infantry division",

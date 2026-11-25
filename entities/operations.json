@@ -881,6 +881,16 @@
   "wikidata": "Q2896528",
   "source": "https://en.wikipedia.org/wiki/Action_off_Bougainville"
  },
+ "op-action-off-cape-passero": {
+  "name": "Action off Cape Passero",
+  "kind": "naval night action, 11 to 12 October 1940",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Action_off_Cape_Passero",
+  "aka": [
+   "Battle of Cape Passero (1940)"
+  ]
+ },
  "op-actions-along-the-matanikau": {
   "name": "Actions along the Matanikau",
   "kind": "Guadalcanal campaign battles, September to October 1942",
@@ -1120,6 +1130,13 @@
   "nation": "Britain, Poland",
   "wikidata": "Q918147",
   "source": "https://en.wikipedia.org/wiki/Anglo-Polish_alliance"
+ },
+ "op-anglo-portuguese-alliance": {
+  "name": "Anglo-Portuguese Alliance",
+  "kind": "alliance treaty of 1373",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Anglo-Portuguese_Alliance"
  },
  "op-anglo-soviet-agreement": {
   "name": "Anglo-Soviet Agreement",
@@ -1883,6 +1900,13 @@
   "wikidata": "Q11636595",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Boulogne"
  },
+ "op-battle-of-bowmanville": {
+  "name": "Battle of Bowmanville",
+  "kind": "prisoner of war revolt",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Bowmanville"
+ },
  "op-battle-of-britain": {
   "name": "Battle of Britain",
   "kind": "air campaign",
@@ -2591,6 +2615,13 @@
   "nation": "US",
   "wikidata": "Q4871535",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Lanzerath_Ridge"
+ },
+ "op-battle-of-lenino": {
+  "name": "Battle of Lenino",
+  "kind": "Eastern Front battle, 12 to 13 October 1943",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Lenino"
  },
  "op-battle-of-leros": {
   "name": "Battle of Leros",
@@ -6237,6 +6268,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Forced_labour_under_German_rule_during_World_War_II"
  },
+ "op-formosa-air-battle": {
+  "name": "Formosa Air Battle",
+  "kind": "carrier air battle, 12 to 16 October 1944",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Formosa_Air_Battle"
+ },
  "op-four-days-of-naples": {
   "name": "Four Days of Naples",
   "kind": "Neapolitan uprising against German occupation, 27 to 30 September 1943",
@@ -9806,6 +9844,14 @@
    "Mortain counterattack"
   ]
  },
+ "op-operation-manna": {
+  "name": "Operation Manna",
+  "kind": "British airborne and seaborne return to Greece, October 1944",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Manna",
+  "note": "Greece 1944; not the Netherlands food drops (op-operations-manna-chowhound-and-faust)"
+ },
  "op-operation-market-garden": {
   "name": "Operation Market Garden",
   "kind": "Allied airborne and ground offensive, September 1944",
@@ -12012,6 +12058,17 @@
   "nation": "Germany",
   "wikidata": "Q7597196",
   "source": "https://en.wikipedia.org/wiki/Stalag_Luft_III_murders"
+ },
+ "op-stanislawow-ghetto": {
+  "name": "Stanislawow Ghetto",
+  "kind": "Nazi ghetto and Bloody Sunday massacre site",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Stanis%C5%82aw%C3%B3w_Ghetto",
+  "aka": [
+   "Stanisławów Ghetto",
+   "Stanislau Ghetto"
+  ]
  },
  "op-stary-ciepielow-and-rekowka-massacre": {
   "name": "Stary Ciepielów and Rekówka massacre",

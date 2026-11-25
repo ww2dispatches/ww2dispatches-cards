@@ -976,6 +976,16 @@
   "wikidata": "Q16527346",
   "source": "https://en.wikipedia.org/wiki/Antonino_Toscano"
  },
+ "person-antonio-de-oliveira-salazar": {
+  "name": "Antonio de Oliveira Salazar",
+  "kind": "Prime Minister (President of the Council) of Portugal",
+  "nation": "Portugal",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_de_Oliveira_Salazar",
+  "aka": [
+   "António de Oliveira Salazar"
+  ]
+ },
  "person-apostolos-santas": {
   "name": "Apostolos Santas",
   "kind": "Greek resistance member",
@@ -1918,6 +1928,13 @@
   "nation": "Italy",
   "wikidata": "Q651358",
   "source": "https://en.wikipedia.org/wiki/Carlo_Fecia_di_Cossato"
+ },
+ "person-carlo-margottini": {
+  "name": "Carlo Margottini",
+  "kind": "Regia Marina captain, commander of the 11th Destroyer Squadron, killed off Cape Passero",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Carlo_Margottini"
  },
  "person-carlos-p-romulo": {
   "name": "Carlos Romulo",
@@ -6137,6 +6154,16 @@
   "nation": "Germany",
   "wikidata": "Q57455",
   "source": "https://en.wikipedia.org/wiki/Hans_Krebs_(Wehrmacht_general)"
+ },
+ "person-hans-krueger": {
+  "name": "Hans Krueger",
+  "kind": "German Security Police chief in Stanislawow, perpetrator of the Bloody Sunday massacre",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hans_Krueger",
+  "aka": [
+   "Hans Kruger"
+  ]
  },
  "person-hans-langsdorff": {
   "name": "Hans Langsdorff",
@@ -16937,5 +16964,12 @@
   "aka": [
    "Tanya"
   ]
+ },
+ "person-zygmunt-berling": {
+  "name": "Zygmunt Berling",
+  "kind": "Polish general, commander of the 1st Tadeusz Kosciuszko Infantry Division",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Zygmunt_Berling"
  }
 }
