@@ -1956,6 +1956,13 @@
    "U-616"
   ]
  },
+ "ship-german-submarine-u-618": {
+  "name": "German submarine U-618",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-618"
+ },
  "ship-german-submarine-u-62-1939": {
   "name": "German submarine U-62 (1939)",
   "kind": "Type IIC U-boat",
@@ -4924,6 +4931,13 @@
   "nation": "Japan",
   "wikidata": "Q1568768",
   "source": "https://en.wikipedia.org/wiki/Japanese_cruiser_Haguro"
+ },
+ "ship-japanese-cruiser-izumo": {
+  "name": "Japanese cruiser Izumo",
+  "kind": "armored cruiser",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_cruiser_Izumo"
  },
  "ship-japanese-cruiser-jintsu": {
   "name": "Japanese cruiser Jintsu",

@@ -1519,6 +1519,15 @@
   "lat": 43.8547,
   "lon": -78.8843
  },
+ "place-campobello-island": {
+  "name": "Campobello Island",
+  "kind": "island, New Brunswick, Roosevelt summer home",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Campobello_Island",
+  "lat": null,
+  "lon": null
+ },
  "place-canterbury-cathedral": {
   "name": "Canterbury Cathedral",
   "kind": "cathedral",
@@ -1818,6 +1827,15 @@
   "wikidata": "Q162049",
   "lat": 52.5167,
   "lon": 13.3
+ },
+ "place-chautauqua-institution": {
+  "name": "Chautauqua Institution",
+  "kind": "lakeside education center, New York",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Chautauqua_Institution",
+  "lat": null,
+  "lon": null
  },
  "place-chelm": {
   "name": "Chełm",
@@ -3618,6 +3636,15 @@
    "Hanford"
   ]
  },
+ "place-hangzhou": {
+  "name": "Hangzhou",
+  "kind": "city",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hangzhou",
+  "lat": null,
+  "lon": null
+ },
  "place-hanko-peninsula": {
   "name": "Hanko Peninsula",
   "kind": "peninsula",
@@ -5125,6 +5152,18 @@
   "source": "https://en.wikipedia.org/wiki/Lae",
   "lat": -6.7303,
   "lon": 147.0008
+ },
+ "place-lafayette-square-washington-d-c": {
+  "name": "Lafayette Square, Washington, D.C.",
+  "kind": "park opposite the White House",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Lafayette_Square,_Washington,_D.C.",
+  "aka": [
+   "Lafayette Park"
+  ],
+  "lat": null,
+  "lon": null
  },
  "place-lake-balaton": {
   "name": "Lake Balaton",

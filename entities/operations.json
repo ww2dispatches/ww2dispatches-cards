@@ -1957,6 +1957,16 @@
   "wikidata": "Q301300",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Java_(1942)"
  },
+ "op-battle-of-jianqiao": {
+  "name": "Battle of Jianqiao",
+  "kind": "air battle",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Jianqiao",
+  "aka": [
+   "814 Aerial War"
+  ]
+ },
  "op-battle-of-kampar": {
   "name": "Battle of Kampar",
   "kind": "battle",
@@ -2537,6 +2547,13 @@
   "nation": "Germany",
   "wikidata": "Q269207",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Sedan_(1940)"
+ },
+ "op-battle-of-shanghai": {
+  "name": "Battle of Shanghai",
+  "kind": "battle",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Shanghai"
  },
  "op-battle-of-shangshak": {
   "name": "Battle of Shangshak",
@@ -3249,6 +3266,16 @@
   "wikidata": "Q4899669",
   "source": "https://en.wikipedia.org/wiki/Bevin_Boys"
  },
+ "op-big-inch": {
+  "name": "Big Inch",
+  "kind": "wartime crude oil pipeline project",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Big_Inch",
+  "aka": [
+   "Little Big Inch"
+  ]
+ },
  "op-big-week": {
   "name": "Big Week",
   "kind": "Operation Argument bombing campaign, 20 to 25 Feb 1944",
@@ -3314,6 +3341,17 @@
   "nation": "Britain",
   "wikidata": "Q717569",
   "source": "https://en.wikipedia.org/wiki/Blood,_toil,_tears_and_sweat"
+ },
+ "op-bloody-saturday-shanghai": {
+  "name": "Bloody Saturday (Shanghai)",
+  "kind": "misdirected bombing of civilians",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bloody_Saturday_(Shanghai)",
+  "aka": [
+   "Great World bombing",
+   "Black Saturday"
+  ]
  },
  "op-blum-byrnes-agreement": {
   "name": "Blum-Byrnes agreement",
@@ -5144,6 +5182,13 @@
   "wikidata": "Q780845",
   "source": "https://en.wikipedia.org/wiki/Franco-Thai_War"
  },
+ "op-franksgiving": {
+  "name": "Franksgiving",
+  "kind": "1939 to 1941 Thanksgiving date change",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Franksgiving"
+ },
  "op-freeman-field-mutiny": {
   "name": "Freeman Field mutiny",
   "kind": "1945 desegregation protest",
@@ -5508,6 +5553,17 @@
   "nation": "Germany",
   "wikidata": "Q3182723",
   "source": "https://en.wikipedia.org/wiki/Hindenburg_disaster"
+ },
+ "op-hirohito-surrender-broadcast": {
+  "name": "Hirohito surrender broadcast",
+  "kind": "radio broadcast",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hirohito_surrender_broadcast",
+  "aka": [
+   "Gyokuon-hoso",
+   "Jewel Voice Broadcast"
+  ]
  },
  "op-hiroshima-peace-memorial-ceremony": {
   "name": "Hiroshima Peace Memorial Ceremony",
@@ -6263,6 +6319,16 @@
   "nation": "Norway",
   "wikidata": "Q6449648",
   "source": "https://en.wikipedia.org/wiki/Kvarstad_vessels"
+ },
+ "op-kyujo-incident": {
+  "name": "Kyujo incident",
+  "kind": "attempted coup",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ky%C5%ABj%C5%8D_incident",
+  "aka": [
+   "Kyūjō incident"
+  ]
  },
  "op-laconia-incident": {
   "name": "Laconia incident",
@@ -8303,6 +8369,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Operation_Totalize"
  },
+ "op-operation-tractable": {
+  "name": "Operation Tractable",
+  "kind": "offensive",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Tractable"
+ },
  "op-operation-transom": {
   "name": "Operation Transom",
   "kind": "carrier raid",
@@ -9434,6 +9507,13 @@
    "Sino-British New Equal Treaty"
   ]
  },
+ "op-sino-soviet-treaty-of-friendship-and-alliance": {
+  "name": "Sino-Soviet Treaty of Friendship and Alliance",
+  "kind": "treaty",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sino-Soviet_Treaty_of_Friendship_and_Alliance"
+ },
  "op-slamat-disaster": {
   "name": "Slamat disaster",
   "kind": "sinking of three ships in the evacuation of Greece",
@@ -10416,6 +10496,16 @@
   "nation": "Soviet Union",
   "wikidata": "Q270706",
   "source": "https://en.wikipedia.org/wiki/Victory_Day_(9_May)"
+ },
+ "op-victory-over-japan-day": {
+  "name": "Victory over Japan Day",
+  "kind": "victory celebration",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Victory_over_Japan_Day",
+  "aka": [
+   "V-J Day"
+  ]
  },
  "op-victory-program": {
   "name": "Victory Program",
