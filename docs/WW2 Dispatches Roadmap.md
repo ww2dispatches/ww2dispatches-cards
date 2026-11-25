@@ -20,14 +20,17 @@ Started 15 Oct 2026. Goal: post every day from launch (Sat 17 Oct 2026) and keep
 **Wednesday and Saturday only**
 * **10:00 a.m., Name This.** X (into an X Community, through Typefully), Threads (History Threads community), Facebook Page, and Instagram (a two week test, see Open decisions), the last three through Buffer. No dispatch number. (Name This doc)
 
+**Tuesday only**
+* **1:00 p.m., the Tuesday video** (from 1 Dec 2026). A Living Card from fresh film, on the Tuesday 2:30 or 5 p.m. card that has no other video. Threads, Instagram (Reel), Facebook, TikTok, and YouTube Shorts through Buffer; on X Brian posts it by hand into an X Community as that day's Lunch Drop. No video in a week with no fresh film. (Videos doc, "Tuesday 1 p.m. video")
+
 **Every day, by hand**
-* **About 1:00 p.m., Lunch Drop.** Brian posts the day's 8 a.m. story into one X Community, with a plain archival photo, a new hook, a debate question, and two replies (the card rides on the first), from the pinned Lunch Drop page. Not scheduled anywhere; the Sunday run prepares it. (Lunch Drop doc)
+* **About 1:00 p.m., Lunch Drop.** Brian posts the day's 8 a.m. story into one X Community, with a plain archival photo, a new hook, a debate question, and two replies (the card rides on the first), from the pinned Lunch Drop page. On Tuesdays the post is the 1 p.m. video instead of the photo. Not scheduled anywhere; the Sunday run prepares it. (Lunch Drop doc)
 
 **Sunday**
 * **7:00 a.m., the weekly newsletter** on Substack (first issue Sun 1 Nov 2026). (Newsletter doc)
 * **10:00 a.m., the Sunday share post** for that morning's issue: its own card, not a dispatch, no number. X, Instagram, Threads, Facebook. (Newsletter doc, "Sunday share post")
 
-That makes five posts a day on the card platforms (six on Wednesday and Saturday with Name This, and on Sunday with the share post) and two a day on TikTok and YouTube. Everything publishes through Buffer except Name This on X (Typefully) and the newsletter (pasted into Substack by Brian). Each post also appears on the ww2dispatches.com home page at its time (Project Brief, "Domain and website").
+That makes five posts a day on the card platforms (six on Wednesday and Saturday with Name This, and on Sunday with the share post) and two a day on TikTok and YouTube. On Tuesdays the 1 p.m. video adds one more on Instagram, Threads, Facebook, TikTok, and YouTube. Everything publishes through Buffer except Name This on X (Typefully), the Tuesday video on X (Brian, by hand), and the newsletter (pasted into Substack by Brian). Each post also appears on the ww2dispatches.com home page at its time (Project Brief, "Domain and website").
 
 ## Upcoming big dates
 Big dates already have people searching and talking, so these get the strongest treatment. Each still has to be verified like any dispatch. They are the first place the Wednesday research run hunts for film for a Living Card; with no film, the noon video is a Story Card. The 5 p.m. card on an anniversary day is a good place for a Spec Sheet or Quote tied to the same event, the 2:30 card for the same day seen from the Axis side, and the 7 p.m. video for a second piece of film on it. Hashtag rules for anniversary days are in the Cards doc.
@@ -226,6 +229,7 @@ Why: old social posts are close to invisible because feeds favor new content, so
 * Later options: search, a printable "this day" card shop through Stripe, and a classroom friendly version of the archive.
 
 ## Changelog
+* 25 Nov 2026: **Tuesday 1 p.m. video added** (Brian): a third video every Tuesday from 1 Dec 2026, on five channels through Buffer and by hand into an X Community as that day's Lunch Drop (Videos doc).
 * 19 Nov 2026: The Bulge Flash art made and approved (a captured German photo, NARA 208-AA-202B-4); Pearl Harbor approval confirmed. Every Flash card now carries a gold kicker title above the date (Brian); Pearl Harbor gets "The Attack on Pearl Harbor".
 * 15 Nov 2026: Pearl Harbor Flash day plan locked (Brian): the Flash card stays at 8 a.m.; eleven Flash Traffic bulletins on one clock rule, times checked against Navy, Park Service, and State Department records (Condor moved to 6:42, Ward to 9:47 on the sinking, Arizona to 11:06; Nevada underway, the second wave, and Nevada beached added; Monaghan cut; Shaw at about 12:31 with the real photo); a whistle then silence clip at 10:55 on all six channels with an invite in the 8 a.m. caption; the 5 p.m. card is a USS Arizona spec sheet and the 7 p.m. video its film. Extras scheduled Thanksgiving week, checked Sat 5 Dec.
 * 14 Nov 2026: Campaign Series slots added to the posting schedule (6:30 posts during a series, and its Substack parts at 9 a.m. the morning after each part ends).

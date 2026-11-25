@@ -11,6 +11,8 @@ from datetime import date
 
 from PIL import Image
 
+import media  # R2 links for the Tuesday 1 p.m. video (newest copy, from media-keys.json)
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RAW_CARDS = "https://raw.githubusercontent.com/ww2dispatches/ww2dispatches-cards/main/"
 MEDIA = "https://media.ww2dispatches.com/"  # videos and posters (R2); see renderer/media.py
@@ -78,6 +80,18 @@ def build(src):
         elif not d2["cardImg"]:
             problems.append(f"{d['date']}: card file {d['replyCard']} not found")
         d2["weekday"] = date.fromisoformat(d["date"]).strftime("%a %d %b").replace(" 0", " ")
+        # Tuesday 1 p.m. video (Lunch Drop doc): Brian downloads the X cut and posts it instead of the photo.
+        d2["videoUrl"] = None
+        if d.get("dropVideo"):
+            v = d["dropVideo"]
+            if date.fromisoformat(d["date"]).weekday() != 1:
+                problems.append(f"{d['date']}: dropVideo on a day that is not a Tuesday")
+            if not (v.startswith("videos/") and v.endswith(".mp4") and "-x" in os.path.basename(v)):
+                problems.append(f"{d['date']}: dropVideo must be the X cut on R2, like videos/dispatch-NNN-x.mp4")
+            elif not media.exists(v):
+                problems.append(f"{d['date']}: dropVideo {v} is not on R2")
+            else:
+                d2["videoUrl"] = media.url(v)
         days.append(d2)
     page = TEMPLATE.replace("__DATA__", json.dumps({"week": week["week"], "days": days}).replace("</", "<\\/"))
     out = os.path.join(ROOT, "lunch", "lunch-page.html")
@@ -152,6 +166,7 @@ h2{font-size:15px;margin:0 0 8px}
 .meta{color:var(--soft);font-size:13px;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
 .text{white-space:pre-wrap;background:var(--textBg);border:1px solid var(--line2);border-radius:8px;padding:9px 10px;font-size:15px;line-height:1.5}
 .help{font-size:12px;color:var(--soft);margin:6px 0 0}
+video.vid{width:100%;max-height:70vh;border-radius:8px;display:block;border:1px solid var(--line);background:#000}
 img.pic{width:100%;border-radius:8px;display:block;border:1px solid var(--line);background:var(--bg)}
 .btns{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
 .btns button,.btns a{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 12px;min-height:38px;color:var(--ink);text-decoration:none;display:inline-flex;align-items:center;font-size:14px}
@@ -261,6 +276,20 @@ async function copyImage(src,btn){
   }catch(e){setStatus("Image copy is blocked here. Use Open full, then press and hold to save it.",true)}
 }
 
+async function downloadVideo(url,name,btn){
+  var o=btn.textContent;btn.textContent="Downloading…";btn.disabled=true;
+  try{
+    var r=await fetch(url,{mode:"cors"});if(!r.ok)throw new Error(r.status);
+    var blob=await r.blob(),a=document.createElement("a"),u=URL.createObjectURL(blob);
+    a.href=u;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(u)},60000);
+    setStatus("Video saved to your Downloads folder as "+name+".",true);
+  }catch(e){
+    try{window.open(url,"_blank","noopener")}catch(err){}
+    setStatus("Download is blocked here. The video opened in a new tab: right click it and choose Save video as.",true);
+  }
+  btn.textContent=o;btn.disabled=false;
+}
+
 /* navigation */
 var current=null;
 function idx(){for(var i=0;i<DATA.days.length;i++)if(DATA.days[i].date===current)return i;return 0}
@@ -304,8 +333,11 @@ function render(){
     (d.somber?'<div class="attn" style="margin:8px 0 0"><b>Somber day.</b> No question, no jokes, keep replies respectful.</div>':"")+
     '<div class="btns"><a class="primary" href="'+esc(d.communityUrl)+'" target="_blank" rel="noopener">Open '+esc(d.community)+' community</a>'+
     (posted?'<button class="posted" data-act="unpost">Posted ✓</button>':'<button class="go" data-act="post">Mark posted</button>')+'</div>'+
-    '<ol class="steps"><li>Open the community and tap post.</li><li>Copy the photo and paste it in, or attach the saved photo.</li><li>Copy the post text and paste it.</li><li>Leave "also post to followers" off.</li><li>Post, reply to it with Reply 1 and the card, then reply to Reply 1 with Reply 2.</li></ol></div>');
-  L.push('<div class="box"><h2>The photo</h2>'+(d.img?'<img class="pic" src="'+d.img+'" alt="'+esc(d.alt||"")+'">':'<div class="attn" style="margin:0">Photo preview missing.</div>')+
+    '<ol class="steps"><li>Open the community and start a post.</li>'+(d.videoUrl?'<li><b>Video day.</b> Download the video below and attach it to the post.</li>':'<li>Copy the photo and paste it in, or attach the saved photo.</li>')+'<li>Copy the post text and paste it.</li><li>Leave "also post to followers" off.</li><li>Post, reply to it with Reply 1 and the card, then reply to Reply 1 with Reply 2.</li></ol></div>');
+  if(d.videoUrl)L.push('<div class="box"><h2>The video<span>new today, not on X yet</span></h2><video class="vid" controls playsinline preload="metadata" src="'+esc(d.videoUrl)+'"'+(d.img?' poster="'+d.img+'"':"")+'></video>'+
+    '<div class="btns"><button class="primary" data-act="dlvid">Download video</button><a href="'+esc(d.videoUrl)+'" target="_blank" rel="noopener">Open video</a></div>'+
+    '<p class="help">If Download does nothing, use Open video, then right click the video and choose Save video as. Attach the saved file to the Community post.</p></div>');
+  L.push('<div class="box"><h2>'+(d.videoUrl?"Backup photo<span>only if the video won't upload</span>":"The photo")+'</h2>'+(d.img?'<img class="pic" src="'+d.img+'" alt="'+esc(d.alt||"")+'">':'<div class="attn" style="margin:0">Photo preview missing.</div>')+
     '<p class="help">'+esc(d.imageCredit||"")+'</p><div class="btns"><button data-act="cimg">Copy photo</button><a href="'+esc(d.imageFull)+'" target="_blank" rel="noopener">Open full photo</a>'+(d.alt?'<button data-act="calt">Copy alt text</button>':"")+'</div></div>');
   L.push('<div class="box"><h2>Post text<span>'+d.post.length+' characters</span></h2><div class="text">'+esc(d.post)+'</div><div class="btns"><button class="primary" data-act="cpost">Copy post text</button></div></div>');
   d.replies.forEach(function(r,i){
@@ -325,6 +357,7 @@ $("day").addEventListener("click",function(e){
   else if(a==="calt")copyText(d.alt,b);
   else if(a==="crep")copyText(d.replies[i],b);
   else if(a==="cfact")copyText(d.facts[i],b);
+  else if(a==="dlvid")downloadVideo(d.videoUrl,"ww2dispatches-"+String(d.num).padStart(3,"0")+"-"+d.date+".mp4",b);
   else if(a==="cimg")copyImage(d.img,b);
   else if(a==="ccard")copyImage(d.cardImg,b);
 });
