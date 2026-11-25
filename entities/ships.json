@@ -570,6 +570,16 @@
   "wikidata": "Q683326",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-110_(1940)"
  },
+ "ship-german-submarine-u-111-1940": {
+  "name": "U 111 (1940)",
+  "kind": "Type IXB U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-111_(1940)",
+  "aka": [
+   "U 111"
+  ]
+ },
  "ship-german-submarine-u-1172": {
   "name": "German submarine U-1172",
   "kind": "Type VIIC/41 U-boat",
@@ -1606,6 +1616,13 @@
   "wikidata": "Q4052058",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-410"
  },
+ "ship-german-submarine-u-422": {
+  "name": "U 422",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-422"
+ },
  "ship-german-submarine-u-426": {
   "name": "U-426",
   "kind": "Type VIIC U-boat",
@@ -1696,6 +1713,13 @@
   "nation": "Germany",
   "wikidata": "Q666463",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-46_(1938)"
+ },
+ "ship-german-submarine-u-460": {
+  "name": "U 460",
+  "kind": "Type XIV supply U-boat (milk cow)",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-460"
  },
  "ship-german-submarine-u-461": {
   "name": "German submarine U-461",
@@ -4248,6 +4272,13 @@
   "aka": [
    "HMS Kipling"
   ]
+ },
+ "ship-hms-lady-shirley": {
+  "name": "HMS Lady Shirley",
+  "kind": "Royal Navy antisubmarine trawler, converted Hull fishing trawler",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Lady_Shirley"
  },
  "ship-hms-laforey-g99": {
   "name": "HMS Laforey (G99)",
