@@ -978,6 +978,13 @@
   "wikidata": "Q2033610",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-221"
  },
+ "ship-german-submarine-u-222": {
+  "name": "U-222",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-222"
+ },
  "ship-german-submarine-u-223": {
   "name": "German submarine U-223",
   "kind": "Type VIIC U-boat",
@@ -1360,6 +1367,13 @@
   "nation": "Germany",
   "wikidata": "Q4052046",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-388"
+ },
+ "ship-german-submarine-u-394": {
+  "name": "U-394",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-394"
  },
  "ship-german-submarine-u-399": {
   "name": "German submarine U-399",
@@ -4572,6 +4586,13 @@
   "wikidata": "Q5480176",
   "source": "https://en.wikipedia.org/wiki/HMS_Vimiera_(1917)"
  },
+ "ship-hms-vindex-d15": {
+  "name": "HMS Vindex (D15)",
+  "kind": "escort carrier",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Vindex_(D15)"
+ },
  "ship-hms-wakeful-h88": {
   "name": "HMS Wakeful (H88)",
   "kind": "W-class destroyer",
@@ -6218,6 +6239,13 @@
   "nation": "Japan",
   "wikidata": "Q11559813",
   "source": "https://en.wikipedia.org/wiki/MS_Awazisan_Maru"
+ },
+ "ship-ms-gripsholm-1924": {
+  "name": "MS Gripsholm (1924)",
+  "kind": "Swedish ocean liner, wartime exchange ship",
+  "nation": "Sweden",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/MS_Gripsholm_(1924)"
  },
  "ship-ms-st-louis": {
   "name": "MS St. Louis",
@@ -7903,6 +7931,13 @@
   "nation": "US",
   "wikidata": "Q7869245",
   "source": "https://en.wikipedia.org/wiki/USS_Eugene_E._Elmore"
+ },
+ "ship-uss-finback-ss-230": {
+  "name": "USS Finback (SS-230)",
+  "kind": "submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Finback_(SS-230)"
  },
  "ship-uss-fiske-de-143": {
   "name": "USS Fiske (DE-143)",

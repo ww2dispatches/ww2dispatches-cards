@@ -4772,6 +4772,13 @@
   "wikidata": "Q176930",
   "source": "https://en.wikipedia.org/wiki/Declaration_by_United_Nations"
  },
+ "op-declaration-of-independence-of-the-democratic-republic-of-vietnam": {
+  "name": "Declaration of independence of the Democratic Republic of Vietnam",
+  "kind": "declaration of independence",
+  "nation": "Vietnam",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Declaration_of_independence_of_the_Democratic_Republic_of_Vietnam"
+ },
  "op-declaration-of-st-james-s-palace": {
   "name": "Declaration of St James's Palace",
   "kind": "Allied declaration, London, 12 June 1941",
@@ -5637,6 +5644,13 @@
    "Generalgouvernement"
   ]
  },
+ "op-general-order-no-1": {
+  "name": "General Order No. 1",
+  "kind": "surrender order to Japanese forces",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/General_Order_No._1"
+ },
  "op-genocide-convention": {
   "name": "Genocide Convention",
   "kind": "international treaty",
@@ -6171,6 +6185,16 @@
   "nation": "Indonesia",
   "wikidata": "Q1332160",
   "source": "https://en.wikipedia.org/wiki/Indonesian_National_Revolution"
+ },
+ "op-inter-american-treaty-of-reciprocal-assistance": {
+  "name": "Inter-American Treaty of Reciprocal Assistance",
+  "kind": "collective defense treaty",
+  "nation": "US",
+  "aka": [
+   "Rio Treaty"
+  ],
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Inter-American_Treaty_of_Reciprocal_Assistance"
  },
  "op-international-military-tribunal-for-the-far-east": {
   "name": "International Military Tribunal for the Far East",
@@ -8286,6 +8310,13 @@
    "Operation Anvil"
   ]
  },
+ "op-operation-dryad": {
+  "name": "Operation Dryad",
+  "kind": "commando raid",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Dryad"
+ },
  "op-operation-ef-1941": {
   "name": "Operation EF (1941)",
   "kind": "carrier air raid",
@@ -8487,6 +8518,13 @@
   "nation": "Germany",
   "wikidata": "Q2484596",
   "source": "https://en.wikipedia.org/wiki/Operation_Juno"
+ },
+ "op-operation-jurist": {
+  "name": "Operation Jurist",
+  "kind": "British reoccupation of Penang",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Jurist"
  },
  "op-operation-k": {
   "name": "Operation K",
