@@ -1683,6 +1683,13 @@
    "William Meade Lindsley Fiske III"
   ]
  },
+ "person-bing-crosby": {
+  "name": "Bing Crosby",
+  "kind": "singer and actor",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bing_Crosby"
+ },
  "person-birger-dahlerus": {
   "name": "Birger Dahlerus",
   "kind": "Swedish businessman and unofficial intermediary, 1939",
@@ -4179,6 +4186,13 @@
   "wikidata": "Q5401155",
   "source": "https://en.wikipedia.org/wiki/Esther_McGowin_Blake"
  },
+ "person-ettore-muti": {
+  "name": "Ettore Muti",
+  "kind": "aviator, Fascist Party secretary 1939 to 1940",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ettore_Muti"
+ },
  "person-euan-wallace": {
   "name": "Euan Wallace",
   "kind": "British Minister of Transport",
@@ -6437,6 +6451,16 @@
   ],
   "wikidata": "Q3783294",
   "source": "https://en.wikipedia.org/wiki/Harald_Mors"
+ },
+ "person-harald-sandbaek": {
+  "name": "Harald Sandbæk",
+  "kind": "Danish priest and resistance leader",
+  "nation": "Denmark",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Harald_Sandb%C3%A6k",
+  "aka": [
+   "Harald Sandbaek"
+  ]
  },
  "person-harlan-f-stone": {
   "name": "Harlan Fiske Stone",
@@ -12772,6 +12796,13 @@
   "nation": "US",
   "wikidata": "Q23134127",
   "source": "https://en.wikipedia.org/wiki/Paul_A._Putnam"
+ },
+ "person-paul-galland": {
+  "name": "Paul Galland",
+  "kind": "Luftwaffe fighter pilot, JG 26",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Paul_Galland"
  },
  "person-paul-henri-spaak": {
   "name": "Paul-Henri Spaak",

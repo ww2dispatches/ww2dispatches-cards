@@ -1888,6 +1888,15 @@
   "lat": 51.515,
   "lon": 0.026
  },
+ "place-canterbury": {
+  "name": "Canterbury",
+  "kind": "cathedral city",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Canterbury",
+  "lat": null,
+  "lon": null
+ },
  "place-canterbury-cathedral": {
   "name": "Canterbury Cathedral",
   "kind": "cathedral",

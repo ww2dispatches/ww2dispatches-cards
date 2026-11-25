@@ -4675,6 +4675,16 @@
    "Nationalkomitee Freies Deutschland"
   ]
  },
+ "unit-national-fascist-party": {
+  "name": "National Fascist Party",
+  "kind": "political party",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/National_Fascist_Party",
+  "aka": [
+   "PNF"
+  ]
+ },
  "unit-national-guard-united-states": {
   "name": "National Guard (United States)",
   "kind": "state militia and federal reserve force",
@@ -5769,6 +5779,13 @@
    "Bomber Command"
   ]
  },
+ "unit-raf-fighter-command": {
+  "name": "RAF Fighter Command",
+  "kind": "air command",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/RAF_Fighter_Command"
+ },
  "unit-rand-corporation": {
   "name": "RAND Corporation",
   "kind": "research organization, begun as Project RAND at Douglas Aircraft",
@@ -6417,6 +6434,13 @@
   "aka": [
    "SHAEF"
   ]
+ },
+ "unit-supreme-soviet-of-the-soviet-union": {
+  "name": "Supreme Soviet of the Soviet Union",
+  "kind": "legislature",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Supreme_Soviet_of_the_Soviet_Union"
  },
  "unit-swingjugend": {
   "name": "Swingjugend",
