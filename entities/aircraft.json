@@ -112,7 +112,7 @@
   "name": "Bell P 39 Airacobra",
   "kind": "fighter aircraft",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q385778",
   "source": "https://en.wikipedia.org/wiki/Bell_P-39_Airacobra",
   "aka": [
    "P 39",
@@ -244,7 +244,7 @@
   "name": "Bristol Brabazon",
   "kind": "British prototype airliner",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q917893",
   "source": "https://en.wikipedia.org/wiki/Bristol_Brabazon"
  },
  "aircraft-caproni-ca-161": {
@@ -461,14 +461,14 @@
   "name": "Douglas D-558-1 Skystreak",
   "kind": "jet research aircraft",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q1252156",
   "source": "https://en.wikipedia.org/wiki/Douglas_D-558-1_Skystreak"
  },
  "aircraft-douglas-dc-2": {
   "name": "Douglas DC-2",
   "kind": "airliner",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q142591",
   "source": "https://en.wikipedia.org/wiki/Douglas_DC-2"
  },
  "aircraft-douglas-dc-3": {
@@ -746,7 +746,7 @@
   "name": "Heinkel He 178",
   "kind": "experimental jet aircraft",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q161540",
   "source": "https://en.wikipedia.org/wiki/Heinkel_He_178"
  },
  "aircraft-heinkel-he-280": {
@@ -954,7 +954,7 @@
   "name": "LZ 130 Graf Zeppelin",
   "kind": "Hindenburg class rigid airship",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q557119",
   "source": "https://en.wikipedia.org/wiki/LZ_130_Graf_Zeppelin",
   "aka": [
    "Graf Zeppelin II"
@@ -1009,7 +1009,7 @@
   "name": "McDonnell XF-85 Goblin",
   "kind": "experimental parasite fighter",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q605165",
   "source": "https://en.wikipedia.org/wiki/McDonnell_XF-85_Goblin"
  },
  "aircraft-memphis-belle-aircraft": {
@@ -1225,7 +1225,7 @@
   "name": "North American F 86 Sabre",
   "kind": "jet fighter",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q153826",
   "source": "https://en.wikipedia.org/wiki/North_American_F-86_Sabre",
   "aka": [
    "F 86 Sabre"
@@ -1318,7 +1318,7 @@
   "name": "PZL P.11",
   "kind": "Polish fighter aircraft",
   "nation": "Poland",
-  "wikidata": null,
+  "wikidata": "Q826709",
   "source": "https://en.wikipedia.org/wiki/PZL_P.11"
  },
  "aircraft-republic-p-47-thunderbolt": {
@@ -1406,7 +1406,7 @@
   "name": "Stinson Reliant",
   "kind": "light utility monoplane",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q1808822",
   "source": "https://en.wikipedia.org/wiki/Stinson_Reliant"
  },
  "aircraft-straight-flush": {
@@ -1466,7 +1466,7 @@
   "name": "Vickers Vespa",
   "kind": "British army cooperation biplane",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q3442954",
   "source": "https://en.wikipedia.org/wiki/Vickers_Vespa"
  },
  "aircraft-vickers-vildebeest": {
@@ -1566,7 +1566,7 @@
   "name": "Yokosuka E14Y",
   "kind": "submarine launched floatplane",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q1778381",
   "source": "https://en.wikipedia.org/wiki/Yokosuka_E14Y",
   "aka": [
    "Glen"
