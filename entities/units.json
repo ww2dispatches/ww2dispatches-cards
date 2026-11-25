@@ -2498,6 +2498,13 @@
   "wikidata": "Q975007",
   "source": "https://en.wikipedia.org/wiki/American_Federation_of_Musicians"
  },
+ "unit-american-jewish-committee": {
+  "name": "American Jewish Committee",
+  "kind": "advocacy organization",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/American_Jewish_Committee"
+ },
  "unit-american-jewish-joint-distribution-committee": {
   "name": "American Jewish Joint Distribution Committee",
   "kind": "Jewish relief organization",
@@ -4688,6 +4695,16 @@
    "Parteikanzlei"
   ]
  },
+ "unit-nbc": {
+  "name": "NBC",
+  "kind": "radio network",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/NBC",
+  "aka": [
+   "National Broadcasting Company"
+  ]
+ },
  "unit-nbc-symphony-orchestra": {
   "name": "NBC Symphony Orchestra",
   "kind": "radio orchestra",
@@ -5833,6 +5850,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Reynal_%26_Hitchcock"
  },
+ "unit-reynolds-international-pen-company": {
+  "name": "Reynolds International Pen Company",
+  "kind": "pen maker",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Reynolds_International_Pen_Company"
+ },
  "unit-rifle-brigade-the-prince-consort-s-own": {
   "name": "Rifle Brigade",
   "kind": "British infantry regiment",
@@ -6036,6 +6060,17 @@
   "nation": "Hungary",
   "wikidata": "Q209512",
   "source": "https://en.wikipedia.org/wiki/Second_Army_(Hungary)"
+ },
+ "unit-seekriegsleitung": {
+  "name": "Seekriegsleitung",
+  "kind": "German Naval War Staff",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Seekriegsleitung",
+  "aka": [
+   "Naval War Staff",
+   "SKL"
+  ]
  },
  "unit-selective-service-system": {
   "name": "Selective Service System",

@@ -4074,6 +4074,15 @@
   "lat": 37.8726,
   "lon": -122.2563
  },
+ "place-gimbels": {
+  "name": "Gimbels",
+  "kind": "department store, Manhattan",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Gimbels",
+  "lat": null,
+  "lon": null
+ },
  "place-giza-pyramid-complex": {
   "name": "Pyramids of Giza",
   "kind": "pyramids",
@@ -4426,6 +4435,18 @@
   "lat": 52.5778,
   "lon": 13.1808
  },
+ "place-hakoya": {
+  "name": "Håkøya",
+  "kind": "island near Tromsø",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/H%C3%A5k%C3%B8ya",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Hakoya"
+  ]
+ },
  "place-halberstadt": {
   "name": "Halberstadt",
   "kind": "town in Saxony-Anhalt, Germany",
@@ -4587,6 +4608,15 @@
   "source": "https://en.wikipedia.org/wiki/Harrow,_London",
   "lat": 51.5836,
   "lon": -0.3464
+ },
+ "place-harrow-school": {
+  "name": "Harrow School",
+  "kind": "school",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Harrow_School",
+  "lat": null,
+  "lon": null
  },
  "place-hartford-connecticut": {
   "name": "Hartford, Connecticut",
@@ -10294,6 +10324,18 @@
   "source": "https://en.wikipedia.org/wiki/Rovno_Ghetto",
   "lat": 50.6167,
   "lon": 26.25
+ },
+ "place-royal-albert-hall": {
+  "name": "Royal Albert Hall",
+  "kind": "concert hall",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Royal_Albert_Hall",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Albert Hall"
+  ]
  },
  "place-royal-arsenal": {
   "name": "Royal Arsenal, Woolwich",

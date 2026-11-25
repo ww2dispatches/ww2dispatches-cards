@@ -106,6 +106,18 @@
    "SWOD Mk 9"
   ]
  },
+ "machine-ballpoint-pen": {
+  "name": "Ballpoint pen",
+  "kind": "writing instrument",
+  "nation": "Argentina",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ballpoint_pen",
+  "aka": [
+   "Biro",
+   "Reynolds Rocket"
+  ],
+  "note": "Type entity; nation is where the Biro was first made, per the Ballpoint pen article."
+ },
  "machine-bat-bomb": {
   "name": "Bat bomb",
   "kind": "experimental incendiary weapon carried by bats",

@@ -4705,6 +4705,13 @@
   "wikidata": "Q4836516",
   "source": "https://en.wikipedia.org/wiki/BSAA_Star_Tiger_disappearance"
  },
+ "op-budapest-offensive": {
+  "name": "Budapest offensive",
+  "kind": "Soviet offensive",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Budapest_offensive"
+ },
  "op-bulgaria-during-world-war-ii": {
   "name": "Bulgaria during World War II",
   "kind": "national history of the war",
@@ -5178,6 +5185,13 @@
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/Convoy_HX_156",
   "wikidata": "Q5166619"
+ },
+ "op-convoy-hx-212": {
+  "name": "Convoy HX 212",
+  "kind": "Atlantic convoy battle",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Convoy_HX_212"
  },
  "op-convoy-hx-228": {
   "name": "Convoy HX 228",
@@ -7664,6 +7678,16 @@
   "wikidata": "Q134301",
   "source": "https://en.wikipedia.org/wiki/Katyn_massacre"
  },
+ "op-kaunas-massacre-of-october-29-1941": {
+  "name": "Kaunas massacre of October 29, 1941",
+  "kind": "mass murder of Kovno ghetto Jews",
+  "nation": "Lithuania",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kaunas_massacre_of_October_29,_1941",
+  "aka": [
+   "Great Action"
+  ]
+ },
  "op-kaunas-pogrom": {
   "name": "Kaunas pogrom",
   "kind": "massacre",
@@ -10073,6 +10097,13 @@
   "aka": [
    "Operation Nordwind"
   ]
+ },
+ "op-operation-obviate": {
+  "name": "Operation Obviate",
+  "kind": "RAF raid on Tirpitz",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Obviate"
  },
  "op-operation-ochsenkopf": {
   "name": "Operation Ochsenkopf",
