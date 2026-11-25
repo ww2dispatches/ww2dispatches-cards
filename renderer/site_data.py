@@ -93,7 +93,7 @@ for d in cards:
     buf = d.get("buffer") or {}
     is_living = bool(buf.get("youtube")) and bool(d.get("video")) and not story
     vtime = d.get("videoTime") or "12:00"
-    vlabel = "Noon" if vtime == "12:00" else "7 p.m."
+    vlabel = {"12:00": "Noon", "13:00": "1 p.m."}.get(vtime, "7 p.m.")  # 13:00 is the Tuesday 1 p.m. video
     if story or is_living:
         poster_file = f"videos/dispatch-{num}-instagram-poster.jpg"
         poster = media.url(poster_file) if media.exists(poster_file) else img

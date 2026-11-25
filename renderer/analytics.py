@@ -214,7 +214,7 @@ def main():
             "title": d.get("title") or d.get("answer", ""),
             "post_date": sent.astimezone(MOUNTAIN).strftime("%Y-%m-%d"),
             "post_time": sent.astimezone(MOUNTAIN).strftime("%H:%M"),
-            "slot": {"08": "8 a.m.", "10": "10 a.m.", "12": "Noon", "14": "2:30 p.m.", "17": "5 p.m.", "19": "7 p.m."}.get(
+            "slot": {"08": "8 a.m.", "10": "10 a.m.", "12": "Noon", "13": "1 p.m.", "14": "2:30 p.m.", "17": "5 p.m.", "19": "7 p.m."}.get(
                 sent.astimezone(MOUNTAIN).strftime("%H"), sent.astimezone(MOUNTAIN).strftime("%H:%M")),
             "series": SERIES.get(d.get("series"), ""),
             "format": "" if d["_kind"] == "namethis" else
