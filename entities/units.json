@@ -4789,6 +4789,16 @@
    "Philadelphia Blue Jays"
   ]
  },
+ "unit-philadelphia-transportation-company": {
+  "name": "Philadelphia Transportation Company",
+  "kind": "city transit company",
+  "nation": "US",
+  "wikidata": "Q1923606",
+  "source": "https://en.wikipedia.org/wiki/Philadelphia_Transportation_Company",
+  "aka": [
+   "PTC"
+  ]
+ },
  "unit-philippine-scouts": {
   "name": "Philippine Scouts",
   "kind": "U.S. Army Filipino troops",

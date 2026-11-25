@@ -898,6 +898,13 @@
   "wikidata": "Q4051941",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-205"
  },
+ "ship-german-submarine-u-210": {
+  "name": "U-210",
+  "kind": "Kriegsmarine Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": "Q2332328",
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-210"
+ },
  "ship-german-submarine-u-212": {
   "name": "U-212",
   "kind": "German Type VIIC U-boat",
@@ -1479,6 +1486,16 @@
   "nation": "Germany",
   "wikidata": "Q638673",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-47_(1938)"
+ },
+ "ship-german-submarine-u-471": {
+  "name": "U-471",
+  "kind": "Kriegsmarine Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": "Q15677914",
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-471",
+  "aka": [
+   "Mille"
+  ]
  },
  "ship-german-submarine-u-473": {
   "name": "U-473",
@@ -2385,6 +2402,13 @@
   "wikidata": "Q554583",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-94_(1940)"
  },
+ "ship-german-submarine-u-952": {
+  "name": "U-952",
+  "kind": "Kriegsmarine Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": "Q9363958",
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-952"
+ },
  "ship-german-submarine-u-954": {
   "name": "U-954",
   "kind": "German Type VIIC U-boat",
@@ -2405,6 +2429,13 @@
   "nation": "Germany",
   "wikidata": "Q12804877",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-960"
+ },
+ "ship-german-submarine-u-969": {
+  "name": "U-969",
+  "kind": "Kriegsmarine Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": "Q15692516",
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-969"
  },
  "ship-german-submarine-u-97-1940": {
   "name": "U-97",
@@ -3498,6 +3529,16 @@
   "nation": "Britain",
   "wikidata": "Q746389",
   "source": "https://en.wikipedia.org/wiki/HMS_Kelly"
+ },
+ "ship-hms-kempenfelt-i18": {
+  "name": "HMCS Assiniboine (I18)",
+  "kind": "Royal Canadian Navy destroyer, formerly HMS Kempenfelt",
+  "nation": "Canada",
+  "wikidata": "Q4347089",
+  "source": "https://en.wikipedia.org/wiki/HMS_Kempenfelt_(I18)",
+  "aka": [
+   "HMCS Assiniboine"
+  ]
  },
  "ship-hms-king-george-v-41": {
   "name": "HMS King George V (41)",
@@ -5118,6 +5159,13 @@
   "nation": "Japan",
   "wikidata": "Q11396266",
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Karukaya"
+ },
+ "ship-japanese-destroyer-kawakaze-1936": {
+  "name": "Kawakaze (1936)",
+  "kind": "Imperial Japanese Navy destroyer",
+  "nation": "Japan",
+  "wikidata": "Q1937266",
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Kawakaze_(1936)"
  },
  "ship-japanese-destroyer-kikuzuki-1926": {
   "name": "Japanese destroyer Kikuzuki (1926)",
@@ -7295,6 +7343,14 @@
   "nation": "US",
   "wikidata": "Q1331366",
   "source": "https://en.wikipedia.org/wiki/USS_Drum_(SS-228)"
+ },
+ "ship-uss-dunlap": {
+  "name": "USS Dunlap (DD-384)",
+  "kind": "U.S. Navy destroyer",
+  "nation": "US",
+  "wikidata": "Q2469219",
+  "source": "https://en.wikipedia.org/wiki/USS_Dunlap",
+  "note": "Wikipedia title has no hull number."
  },
  "ship-uss-edsall-dd-219": {
   "name": "USS Edsall (DD-219)",

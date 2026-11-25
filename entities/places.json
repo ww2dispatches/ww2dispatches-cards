@@ -2525,6 +2525,19 @@
   "lat": 53.8988,
   "lon": -166.5248
  },
+ "place-dzyatlava": {
+  "name": "Dzyatlava",
+  "kind": "town, Polish Zdzieciol, Yiddish Zhetel",
+  "nation": "Poland",
+  "wikidata": "Q1025883",
+  "source": "https://en.wikipedia.org/wiki/Dzyatlava",
+  "aka": [
+   "Zdzieciol",
+   "Zhetel"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-eaglesham": {
   "name": "Eaglesham",
   "kind": "village in Renfrewshire, Scotland",
@@ -3818,6 +3831,15 @@
   "source": "https://en.wikipedia.org/wiki/Himeji",
   "lat": 34.8152,
   "lon": 134.6854
+ },
+ "place-hiroshima": {
+  "name": "Hiroshima",
+  "kind": "city",
+  "nation": "Japan",
+  "wikidata": "Q34664",
+  "source": "https://en.wikipedia.org/wiki/Hiroshima",
+  "lat": null,
+  "lon": null
  },
  "place-hm-prison-wandsworth": {
   "name": "HM Prison Wandsworth",
@@ -7640,6 +7662,15 @@
   "lat": 59.3258,
   "lon": 40.8792
  },
+ "place-philadelphia": {
+  "name": "Philadelphia",
+  "kind": "city",
+  "nation": "US",
+  "wikidata": "Q1345",
+  "source": "https://en.wikipedia.org/wiki/Philadelphia",
+  "lat": null,
+  "lon": null
+ },
  "place-philadelphia-municipal-stadium": {
   "name": "Municipal Stadium, Philadelphia",
   "kind": "stadium",
@@ -7976,6 +8007,15 @@
   "lat": 50.0875,
   "lon": 14.4214
  },
+ "place-prebilovci": {
+  "name": "Prebilovci",
+  "kind": "village in Herzegovina",
+  "nation": "Yugoslavia",
+  "wikidata": "Q3181982",
+  "source": "https://en.wikipedia.org/wiki/Prebilovci",
+  "lat": null,
+  "lon": null
+ },
  "place-protectorate-of-bohemia-and-moravia": {
   "name": "Protectorate of Bohemia and Moravia",
   "kind": "German occupied Czech lands, 1939 to 1945",
@@ -8279,6 +8319,15 @@
   "source": "https://en.wikipedia.org/wiki/Rhodes",
   "lat": 36.17,
   "lon": 27.92
+ },
+ "place-richland-washington": {
+  "name": "Richland, Washington",
+  "kind": "city beside the Hanford site",
+  "nation": "US",
+  "wikidata": "Q693638",
+  "source": "https://en.wikipedia.org/wiki/Richland,_Washington",
+  "lat": null,
+  "lon": null
  },
  "place-riga": {
   "lat": 56.9475,
@@ -9836,6 +9885,15 @@
   "lat": 53.0667,
   "lon": 4.8
  },
+ "place-thailand": {
+  "name": "Thailand",
+  "kind": "country",
+  "nation": "Thailand",
+  "wikidata": "Q869",
+  "source": "https://en.wikipedia.org/wiki/Thailand",
+  "lat": null,
+  "lon": null
+ },
  "place-thala-tunisia": {
   "name": "Thala",
   "kind": "town in Tunisia",
@@ -10169,6 +10227,15 @@
   "source": "https://en.wikipedia.org/wiki/Tripoli,_Libya",
   "lat": 32.8875,
   "lon": 13.1875
+ },
+ "place-troina": {
+  "name": "Troina",
+  "kind": "hill town in Sicily",
+  "nation": "Italy",
+  "wikidata": "Q56212",
+  "source": "https://en.wikipedia.org/wiki/Troina",
+  "lat": null,
+  "lon": null
  },
  "place-troms": {
   "name": "Tromso",

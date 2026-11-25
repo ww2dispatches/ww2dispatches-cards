@@ -2933,6 +2933,13 @@
   "wikidata": "Q96373276",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Tripoli_(1943)"
  },
+ "op-battle-of-troina": {
+  "name": "Battle of Troina",
+  "kind": "battle in Sicily",
+  "nation": "US",
+  "wikidata": "Q4872596",
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Troina"
+ },
  "op-battle-of-tulagi-and-gavutu-tanambogo": {
   "name": "Battle of Tulagi and Gavutu Tanambogo",
   "kind": "amphibious battle, August 1942",
@@ -2960,6 +2967,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q701195",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Velikiye_Luki"
+ },
+ "op-battle-of-vella-gulf": {
+  "name": "Battle of Vella Gulf",
+  "kind": "night destroyer battle in the Solomons",
+  "nation": "US",
+  "wikidata": "Q702142",
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Vella_Gulf"
  },
  "op-battle-of-verrieres-ridge": {
   "name": "Battle of Verrieres Ridge",
@@ -4275,6 +4289,13 @@
   "wikidata": "Q5166658",
   "source": "https://en.wikipedia.org/wiki/Convoy_SC_130"
  },
+ "op-convoy-sc-94": {
+  "name": "Convoy SC 94",
+  "kind": "Atlantic slow convoy",
+  "nation": "Britain",
+  "wikidata": "Q5166664",
+  "source": "https://en.wikipedia.org/wiki/Convoy_SC_94"
+ },
  "op-convoys-hx-229-sc-122": {
   "name": "Convoys HX 229/SC 122",
   "kind": "North Atlantic convoy battle, March 1943",
@@ -4591,6 +4612,13 @@
   "nation": "Japan",
   "wikidata": "Q698226",
   "source": "https://en.wikipedia.org/wiki/Dutch_East_Indies_campaign"
+ },
+ "op-dzyatlava-massacre": {
+  "name": "Dzyatlava massacres",
+  "kind": "Holocaust mass shootings at Zdzieciol",
+  "nation": "Poland",
+  "wikidata": "Q5320058",
+  "source": "https://en.wikipedia.org/wiki/Dzyatlava_massacre"
  },
  "op-east-african-campaign-world-war-ii": {
   "name": "East African campaign (World War II)",
@@ -5459,6 +5487,13 @@
   "nation": "Germany",
   "wikidata": "Q3182723",
   "source": "https://en.wikipedia.org/wiki/Hindenburg_disaster"
+ },
+ "op-hiroshima-peace-memorial-ceremony": {
+  "name": "Hiroshima Peace Memorial Ceremony",
+  "kind": "annual 6 August memorial ceremony",
+  "nation": "Japan",
+  "wikidata": "Q763304",
+  "source": "https://en.wikipedia.org/wiki/Hiroshima_Peace_Memorial_Ceremony"
  },
  "op-hitler-and-mannerheim-recording": {
   "name": "Hitler and Mannerheim recording",
@@ -8638,6 +8673,13 @@
   "nation": "Czechoslovakia",
   "wikidata": "Q666778",
   "source": "https://en.wikipedia.org/wiki/Prague_uprising"
+ },
+ "op-prebilovci-massacre": {
+  "name": "Prebilovci massacre",
+  "kind": "Ustase massacre of Serb civilians",
+  "nation": "Yugoslavia",
+  "wikidata": "Q7239373",
+  "source": "https://en.wikipedia.org/wiki/Prebilovci_massacre"
  },
  "op-preliminary-design-of-an-experimental-world-circling-spaceship": {
   "name": "Preliminary Design of an Experimental World-Circling Spaceship",
