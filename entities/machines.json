@@ -520,7 +520,7 @@
   "name": "George Cross",
   "kind": "British gallantry award",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q1143510",
   "source": "https://en.wikipedia.org/wiki/George_Cross",
   "aka": [
    "GC"
@@ -530,7 +530,7 @@
   "name": "George Medal",
   "kind": "British gallantry award",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q1507907",
   "source": "https://en.wikipedia.org/wiki/George_Medal",
   "aka": [
    "GM"
@@ -690,7 +690,7 @@
   "name": "Jäger Report",
   "kind": "Einsatzkommando 3 execution report",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q2915240",
   "source": "https://en.wikipedia.org/wiki/J%C3%A4ger_Report",
   "aka": [
    "Jager Report"
@@ -1505,14 +1505,14 @@
   "name": "WAC Corporal",
   "kind": "sounding rocket",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q27345",
   "source": "https://en.wikipedia.org/wiki/WAC_Corporal"
  },
  "machine-wait-for-me-daddy": {
   "name": "Wait for Me, Daddy",
   "kind": "photograph by Claude P. Dettloff, New Westminster, 1 October 1940",
   "nation": "Canada",
-  "wikidata": null,
+  "wikidata": "Q3276885",
   "source": "https://en.wikipedia.org/wiki/Wait_for_Me,_Daddy"
  },
  "machine-we-hold-these-truths": {

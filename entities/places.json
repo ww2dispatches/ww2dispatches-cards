@@ -445,10 +445,10 @@
   "name": "Arnhem",
   "kind": "city in the Netherlands on the Neder Rijn",
   "nation": "Netherlands",
-  "wikidata": null,
+  "wikidata": "Q1310",
   "source": "https://en.wikipedia.org/wiki/Arnhem",
-  "lat": null,
-  "lon": null
+  "lat": 51.9833,
+  "lon": 5.9167
  },
  "place-aruba": {
   "name": "Aruba",
@@ -541,10 +541,10 @@
   "name": "B Reactor",
   "kind": "plutonium production reactor at Hanford",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q2472490",
   "source": "https://en.wikipedia.org/wiki/B_Reactor",
-  "lat": null,
-  "lon": null
+  "lat": 46.6303,
+  "lon": -119.6472
  },
  "place-babruysk": {
   "name": "Bobruisk",
@@ -560,8 +560,8 @@
   ]
  },
  "place-bad-godesberg": {
-  "lat": null,
-  "lon": null,
+  "lat": 50.6833,
+  "lon": 7.15,
   "name": "Bad Godesberg",
   "kind": "spa town, now part of Bonn",
   "nation": "Germany",
@@ -1364,10 +1364,10 @@
   "name": "Bratislava",
   "kind": "capital of the wartime Slovak State",
   "nation": "Slovakia",
-  "wikidata": null,
+  "wikidata": "Q1780",
   "source": "https://en.wikipedia.org/wiki/Bratislava",
-  "lat": null,
-  "lon": null
+  "lat": 48.1517,
+  "lon": 17.1093
  },
  "place-breda": {
   "name": "Breda",
@@ -1716,8 +1716,8 @@
   "nation": "France",
   "wikidata": "Q6454",
   "source": "https://en.wikipedia.org/wiki/Calais",
-  "lat": null,
-  "lon": null
+  "lat": 50.9475,
+  "lon": 1.8556
  },
  "place-calitri": {
   "name": "Calitri",
@@ -2405,12 +2405,12 @@
   "lon": -87.6728
  },
  "place-copenhagen": {
-  "lat": null,
-  "lon": null,
+  "lat": 55.6761,
+  "lon": 12.5689,
   "name": "Copenhagen",
   "kind": "capital of Denmark",
   "nation": "Denmark",
-  "wikidata": null,
+  "wikidata": "Q1748",
   "source": "https://en.wikipedia.org/wiki/Copenhagen"
  },
  "place-corcieux": {
@@ -2859,8 +2859,8 @@
   "lon": 39.2386
  },
  "place-dong-dang": {
-  "lat": null,
-  "lon": null,
+  "lat": 21.9458,
+  "lon": 106.697,
   "name": "Dong Dang",
   "kind": "border town in northern Vietnam",
   "nation": "France",
@@ -2890,10 +2890,10 @@
   "name": "Dortmund Ems Canal",
   "kind": "canal",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q702695",
   "source": "https://en.wikipedia.org/wiki/Dortmund%E2%80%93Ems_Canal",
-  "lat": null,
-  "lon": null
+  "lat": 51.5379,
+  "lon": 7.4339
  },
  "place-dover": {
   "name": "Dover",
@@ -2908,19 +2908,19 @@
   "name": "Doxato",
   "kind": "town in Drama regional unit, Greece",
   "nation": "Greece",
-  "wikidata": null,
+  "wikidata": "Q29961973",
   "source": "https://en.wikipedia.org/wiki/Doxato",
-  "lat": null,
-  "lon": null
+  "lat": 41.0944,
+  "lon": 24.2308
  },
  "place-drama-greece": {
   "name": "Drama",
   "kind": "city in eastern Macedonia, Greece",
   "nation": "Greece",
-  "wikidata": null,
+  "wikidata": "Q212841",
   "source": "https://en.wikipedia.org/wiki/Drama,_Greece",
-  "lat": null,
-  "lon": null
+  "lat": 41.1514,
+  "lon": 24.1392
  },
  "place-drancy-internment-camp": {
   "name": "Drancy internment camp",
@@ -2944,10 +2944,10 @@
   "name": "Driel",
   "kind": "village south of the Lower Rhine",
   "nation": "Netherlands",
-  "wikidata": null,
+  "wikidata": "Q1614971",
   "source": "https://en.wikipedia.org/wiki/Driel",
-  "lat": null,
-  "lon": null
+  "lat": 51.9592,
+  "lon": 5.8131
  },
  "place-drvar": {
   "name": "Drvar",
@@ -3111,12 +3111,12 @@
   "lon": 5.4842
  },
  "place-eisiskes": {
-  "lat": null,
-  "lon": null,
+  "lat": 54.1667,
+  "lon": 25.0,
   "name": "Eisiskes",
   "kind": "town in Lithuania, the shtetl Eishishok",
   "nation": "Lithuania",
-  "wikidata": null,
+  "wikidata": "Q58880",
   "source": "https://en.wikipedia.org/wiki/Ei%C5%A1i%C5%A1k%C4%97s",
   "aka": [
    "Eišiškės",
@@ -3656,10 +3656,10 @@
   "name": "Fuhrerbau",
   "kind": "Nazi party building in Munich, site of the Munich conference",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q571767",
   "source": "https://en.wikipedia.org/wiki/F%C3%BChrerbau",
-  "lat": null,
-  "lon": null,
+  "lat": 48.1461,
+  "lon": 11.5678,
   "aka": [
    "Führerbau"
   ]
@@ -4429,10 +4429,10 @@
   "name": "Hel Peninsula",
   "kind": "Baltic sand spit, Polish fortified area in 1939",
   "nation": "Poland",
-  "wikidata": null,
+  "wikidata": "Q5606",
   "source": "https://en.wikipedia.org/wiki/Hel_Peninsula",
-  "lat": null,
-  "lon": null
+  "lat": 54.6417,
+  "lon": 18.7814
  },
  "place-heligoland": {
   "name": "Heligoland",
@@ -4515,8 +4515,8 @@
   "nation": "Britain",
   "wikidata": "Q3274670",
   "source": "https://en.wikipedia.org/wiki/Heston_Aerodrome",
-  "lat": null,
-  "lon": null
+  "lat": 51.4875,
+  "lon": -0.3833
  },
  "place-hill-262": {
   "name": "Hill 262",
@@ -4637,8 +4637,8 @@
   "nation": "US",
   "wikidata": "Q172822",
   "source": "https://en.wikipedia.org/wiki/Hoover_Dam",
-  "lat": null,
-  "lon": null,
+  "lat": 36.0158,
+  "lon": -114.7378,
   "aka": [
    "Boulder Dam"
   ]
@@ -5238,12 +5238,12 @@
   "lon": 22.1086
  },
  "place-kalumburu-western-australia": {
-  "lat": null,
-  "lon": null,
+  "lat": -14.295,
+  "lon": 126.642,
   "name": "Kalumburu, Western Australia",
   "kind": "mission community and wartime RAAF staging airfield (Drysdale River Mission)",
   "nation": "Australia",
-  "wikidata": null,
+  "wikidata": "Q1722740",
   "source": "https://en.wikipedia.org/wiki/Kalumburu,_Western_Australia",
   "aka": [
    "Drysdale River Mission"
@@ -5479,9 +5479,9 @@
   ],
   "kind": "main street of Kyiv",
   "nation": "Soviet Union",
-  "lat": null,
-  "lon": null,
-  "wikidata": null,
+  "lat": 50.4472,
+  "lon": 30.5219,
+  "wikidata": "Q1076911",
   "source": "https://en.wikipedia.org/wiki/Khreshchatyk"
  },
  "place-kiel": {
@@ -5812,10 +5812,10 @@
   "name": "Kronstadt",
   "kind": "naval base and town",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q155863",
   "source": "https://en.wikipedia.org/wiki/Kronstadt",
-  "lat": null,
-  "lon": null
+  "lat": 59.9908,
+  "lon": 29.7747
  },
  "place-krysia-bunker": {
   "name": "Krysia Bunker",
@@ -7153,10 +7153,10 @@
   "name": "Merksplas",
   "kind": "Belgian village, site of the Depot de Mendicite",
   "nation": "Belgium",
-  "wikidata": null,
+  "wikidata": "Q532277",
   "source": "https://en.wikipedia.org/wiki/Merksplas",
-  "lat": null,
-  "lon": null
+  "lat": 51.3581,
+  "lon": 4.8628
  },
  "place-messina": {
   "name": "Messina",
@@ -7366,10 +7366,10 @@
   "name": "Modlin Fortress",
   "kind": "fortress north of Warsaw",
   "nation": "Poland",
-  "wikidata": null,
+  "wikidata": "Q47796",
   "source": "https://en.wikipedia.org/wiki/Modlin_Fortress",
-  "lat": null,
-  "lon": null
+  "lat": 52.4383,
+  "lon": 20.6819
  },
  "place-moffett-federal-airfield": {
   "name": "NAS Moffett Field",
@@ -7412,9 +7412,9 @@
   ],
   "kind": "reservoir and dam in the Ruhr region",
   "nation": "Germany",
-  "lat": null,
-  "lon": null,
-  "wikidata": null,
+  "lat": 51.4833,
+  "lon": 8.0667,
+  "wikidata": "Q677151",
   "source": "https://en.wikipedia.org/wiki/M%C3%B6hne_Reservoir"
  },
  "place-mokotow-prison": {
@@ -8037,12 +8037,12 @@
   ]
  },
  "place-new-westminster": {
-  "lat": null,
-  "lon": null,
+  "lat": 49.2069,
+  "lon": -122.911,
   "name": "New Westminster",
   "kind": "city in British Columbia",
   "nation": "Canada",
-  "wikidata": null,
+  "wikidata": "Q876122",
   "source": "https://en.wikipedia.org/wiki/New_Westminster"
  },
  "place-new-york-city": {
@@ -8853,7 +8853,7 @@
   "name": "Pennsylvania Turnpike",
   "kind": "toll highway, first section opened 1 October 1940",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q623935",
   "source": "https://en.wikipedia.org/wiki/Pennsylvania_Turnpike"
  },
  "place-peterhead": {
@@ -8914,8 +8914,8 @@
   "lon": -0.1344
  },
  "place-pikk-hermann": {
-  "lat": null,
-  "lon": null,
+  "lat": 59.4352,
+  "lon": 24.7369,
   "name": "Pikk Hermann",
   "kind": "tower of Toompea Castle, Tallinn",
   "nation": "Estonia",
@@ -9169,10 +9169,10 @@
   "name": "Portbou",
   "kind": "Spanish border town",
   "nation": "Spain",
-  "wikidata": null,
+  "wikidata": "Q7165",
   "source": "https://en.wikipedia.org/wiki/Portbou",
-  "lat": null,
-  "lon": null
+  "lat": 42.4267,
+  "lon": 3.1594
  },
  "place-portland-harbour": {
   "name": "Portland Harbour",
@@ -9295,12 +9295,12 @@
   "lon": 103.96
  },
  "place-putten": {
-  "lat": null,
-  "lon": null,
+  "lat": 52.2579,
+  "lon": 5.608,
   "name": "Putten",
   "kind": "village in Gelderland",
   "nation": "Netherlands",
-  "wikidata": null,
+  "wikidata": "Q939948",
   "source": "https://en.wikipedia.org/wiki/Putten"
  },
  "place-qingdao": {
@@ -9439,10 +9439,10 @@
   "name": "RAF Filton",
   "kind": "airfield and aircraft works north of Bristol",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q7275316",
   "source": "https://en.wikipedia.org/wiki/RAF_Filton",
-  "lat": null,
-  "lon": null
+  "lat": 51.521,
+  "lon": -2.581
  },
  "place-raf-gatow": {
   "name": "RAF Gatow",
@@ -9647,10 +9647,10 @@
   "name": "Rimini",
   "kind": "city on the Adriatic coast",
   "nation": "Italy",
-  "wikidata": null,
+  "wikidata": "Q13369",
   "source": "https://en.wikipedia.org/wiki/Rimini",
-  "lat": null,
-  "lon": null
+  "lat": 44.0594,
+  "lon": 12.5683
  },
  "place-road-of-life": {
   "name": "Road of Life",
@@ -10491,8 +10491,8 @@
   "nation": "Britain",
   "wikidata": "Q586895",
   "source": "https://en.wikipedia.org/wiki/Sherborne",
-  "lat": null,
-  "lon": null
+  "lat": 50.9491,
+  "lon": -2.5183
  },
  "place-shibe-park": {
   "name": "Shibe Park",
@@ -10566,8 +10566,8 @@
   "nation": "Egypt",
   "wikidata": "Q4115955",
   "source": "https://en.wikipedia.org/wiki/Sidi_Abdel_Rahman",
-  "lat": null,
-  "lon": null
+  "lat": 30.9667,
+  "lon": 28.7333
  },
  "place-sidi-barrani": {
   "name": "Sidi Barrani",
@@ -10678,10 +10678,10 @@
   "name": "Smolensk",
   "kind": "city in western Russia",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q2337",
   "source": "https://en.wikipedia.org/wiki/Smolensk",
-  "lat": null,
-  "lon": null
+  "lat": 54.7828,
+  "lon": 32.0453
  },
  "place-sobibor-extermination-camp": {
   "name": "Sobibor extermination camp",
@@ -10696,8 +10696,8 @@
   "lon": 23.5941
  },
  "place-sochaczew": {
-  "lat": null,
-  "lon": null,
+  "lat": 52.225,
+  "lon": 20.2333,
   "name": "Sochaczew",
   "kind": "town in Poland",
   "nation": "Poland",
@@ -11104,12 +11104,12 @@
   "lon": 19.1539
  },
  "place-sudetenland": {
-  "lat": null,
-  "lon": null,
+  "lat": 50.7167,
+  "lon": 15.0667,
   "name": "Sudetenland",
   "kind": "German speaking border regions of Czechoslovakia",
   "nation": "Czechoslovakia",
-  "wikidata": null,
+  "wikidata": "Q194242",
   "source": "https://en.wikipedia.org/wiki/Sudetenland"
  },
  "place-suez": {
@@ -11218,10 +11218,10 @@
   "name": "Syrets concentration camp",
   "kind": "German camp in Kyiv beside Babyn Yar",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q323471",
   "source": "https://en.wikipedia.org/wiki/Syrets_concentration_camp",
-  "lat": null,
-  "lon": null,
+  "lat": 50.4714,
+  "lon": 30.4494,
   "aka": [
    "Syrets labor education camp"
   ]
@@ -11691,9 +11691,9 @@
   ],
   "kind": "town in western Slovakia",
   "nation": "Czechoslovakia",
-  "lat": null,
-  "lon": null,
-  "wikidata": null,
+  "lat": 48.55,
+  "lon": 18.1833,
+  "wikidata": "Q750423",
   "source": "https://en.wikipedia.org/wiki/Topo%C4%BE%C4%8Dany"
  },
  "place-torgau": {
@@ -11706,12 +11706,12 @@
   "lon": 13.0056
  },
  "place-tornio": {
-  "lat": null,
-  "lon": null,
+  "lat": 65.8497,
+  "lon": 24.1441,
   "name": "Tornio",
   "kind": "town in Finnish Lapland on the Swedish border",
   "nation": "Finland",
-  "wikidata": null,
+  "wikidata": "Q214021",
   "source": "https://en.wikipedia.org/wiki/Tornio"
  },
  "place-torokina-airfield": {
@@ -12726,9 +12726,9 @@
   "name": "Woolston, Southampton",
   "kind": "district of Southampton, site of the Supermarine works",
   "nation": "Britain",
-  "lat": null,
-  "lon": null,
-  "wikidata": null,
+  "lat": 50.8931,
+  "lon": -1.3765,
+  "wikidata": "Q8033947",
   "source": "https://en.wikipedia.org/wiki/Woolston,_Southampton"
  },
  "place-wrocaw": {
@@ -12901,10 +12901,10 @@
   "name": "Zagare",
   "kind": "town in northern Lithuania, site of a 1941 massacre",
   "nation": "Lithuania",
-  "wikidata": null,
+  "wikidata": "Q393332",
   "source": "https://en.wikipedia.org/wiki/%C5%BDagar%C4%97",
-  "lat": null,
-  "lon": null,
+  "lat": 56.3583,
+  "lon": 23.25,
   "aka": [
    "Žagarė",
    "Zhager"
