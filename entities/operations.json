@@ -1080,6 +1080,13 @@
   "wikidata": "Q170360",
   "source": "https://en.wikipedia.org/wiki/Armistice_of_22_June_1940"
  },
+ "op-armistice-of-cassibile": {
+  "name": "Armistice of Cassibile",
+  "kind": "armistice",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Armistice_of_Cassibile"
+ },
  "op-armistice-of-saint-jean-d-acre": {
   "name": "Armistice of Saint Jean d'Acre",
   "kind": "armistice ending the Syria and Lebanon campaign",
@@ -4095,6 +4102,13 @@
    "Riverdale Agreement"
   ]
  },
+ "op-british-declaration-of-war-on-germany-1939": {
+  "name": "British declaration of war on Germany (1939)",
+  "kind": "declaration of war",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/British_declaration_of_war_on_Germany_(1939)"
+ },
  "op-british-declaration-of-war-on-japan": {
   "name": "British declaration of war on Japan",
   "kind": "declaration of war",
@@ -5849,6 +5863,13 @@
   "wikidata": "Q3417612",
   "source": "https://en.wikipedia.org/wiki/Granville_raid"
  },
+ "op-great-papago-escape": {
+  "name": "Great Papago Escape",
+  "kind": "prisoner of war escape",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Great_Papago_Escape"
+ },
  "op-great-purge": {
   "name": "Great Purge",
   "kind": "Soviet political repression 1936 to 1938",
@@ -7025,6 +7046,13 @@
   "wikidata": "Q83780345",
   "source": "https://en.wikipedia.org/wiki/Liberation_of_Auschwitz_concentration_camp"
  },
+ "op-liberation-of-belgium": {
+  "name": "Liberation of Belgium",
+  "kind": "campaign",
+  "nation": "Belgium",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Liberation_of_Belgium"
+ },
  "op-liberation-of-paris": {
   "name": "Liberation of Paris",
   "kind": "battle",
@@ -8034,6 +8062,13 @@
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/Operation_Battleaxe",
   "wikidata": "Q682399"
+ },
+ "op-operation-baytown": {
+  "name": "Operation Baytown",
+  "kind": "amphibious landing",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Baytown"
  },
  "op-operation-big-bang": {
   "name": "Operation Big Bang",
@@ -11324,6 +11359,13 @@
   "aka": [
    "V-J Day"
   ]
+ },
+ "op-victory-over-japan-day-china": {
+  "name": "Victory over Japan Day (China)",
+  "kind": "national commemoration",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Victory_over_Japan_Day_(China)"
  },
  "op-victory-program": {
   "name": "Victory Program",

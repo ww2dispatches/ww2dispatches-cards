@@ -762,6 +762,13 @@
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-161_(1941)",
   "wikidata": "Q481312"
  },
+ "ship-german-submarine-u-162-1941": {
+  "name": "German submarine U 162 (1941)",
+  "kind": "Type IXC U boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-162_(1941)"
+ },
  "ship-german-submarine-u-163-1941": {
   "name": "German submarine U-163 (1941)",
   "kind": "Type IXC U-boat",
@@ -6695,6 +6702,13 @@
   "nation": "US",
   "wikidata": "Q7393183",
   "source": "https://en.wikipedia.org/wiki/SS_Argentina_(1929)"
+ },
+ "ship-ss-athenia-1922": {
+  "name": "SS Athenia (1922)",
+  "kind": "passenger liner, Donaldson Atlantic Line",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Athenia_(1922)"
  },
  "ship-ss-baependy": {
   "name": "SS Baependy",

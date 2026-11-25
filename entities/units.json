@@ -3424,6 +3424,13 @@
    "Insular Force Guard"
   ]
  },
+ "unit-guards-armoured-division": {
+  "name": "Guards Armoured Division",
+  "kind": "British armoured division",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Guards_Armoured_Division"
+ },
  "unit-het-parool": {
   "name": "Het Parool",
   "kind": "Amsterdam newspaper, founded in the resistance",
@@ -3687,6 +3694,17 @@
   "source": "https://en.wikipedia.org/wiki/Jagdgeschwader_2",
   "aka": [
    "JG 2"
+  ]
+ },
+ "unit-jagdgeschwader-26": {
+  "name": "Jagdgeschwader 26",
+  "kind": "Luftwaffe fighter wing",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Jagdgeschwader_26",
+  "aka": [
+   "JG 26",
+   "Schlageter"
   ]
  },
  "unit-jagdgeschwader-27": {

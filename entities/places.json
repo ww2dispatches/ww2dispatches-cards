@@ -1635,6 +1635,15 @@
   "lat": 50.1758,
   "lon": 3.2347
  },
+ "place-camp-john-hay": {
+  "name": "Camp John Hay",
+  "kind": "former US military reservation, Baguio",
+  "nation": "Philippines",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Camp_John_Hay",
+  "lat": null,
+  "lon": null
+ },
  "place-camp-upton": {
   "name": "Camp Upton",
   "kind": "Army induction camp",
@@ -1815,6 +1824,15 @@
   "source": "https://en.wikipedia.org/wiki/Cassel,_Nord",
   "lat": 50.8,
   "lon": 2.4872
+ },
+ "place-cassibile-village": {
+  "name": "Cassibile",
+  "kind": "village in Sicily, site of the armistice signing",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Cassibile_(village)",
+  "lat": null,
+  "lon": null
  },
  "place-cassino": {
   "name": "Cassino",
@@ -8897,6 +8915,18 @@
   "wikidata": "Q41116",
   "lat": 55.7542,
   "lon": 37.62
+ },
+ "place-reggio-calabria": {
+  "name": "Reggio Calabria",
+  "kind": "city on the toe of Italy",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Reggio_Calabria",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Reggio di Calabria"
+  ]
  },
  "place-reich-chancellery": {
   "name": "Reich Chancellery",
