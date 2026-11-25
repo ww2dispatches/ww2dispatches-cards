@@ -4720,6 +4720,15 @@
   "lat": 51.7658,
   "lon": -0.2508
  },
+ "place-haugesund": {
+  "name": "Haugesund",
+  "kind": "port town in western Norway",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Haugesund",
+  "lat": null,
+  "lon": null
+ },
  "place-havana": {
   "name": "Havana",
   "kind": "capital city of Cuba",
@@ -9776,6 +9785,15 @@
   "lat": 40.7913,
   "lon": 14.484
  },
+ "place-poniatowa-concentration-camp": {
+  "name": "Poniatowa concentration camp",
+  "kind": "German forced labor camp in occupied Poland",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Poniatowa_concentration_camp",
+  "lat": null,
+  "lon": null
+ },
  "place-ponte-santa-trinita": {
   "name": "Ponte Santa Trinita",
   "kind": "Renaissance bridge over the Arno, Florence",
@@ -12700,6 +12718,15 @@
   "aka": [
    "Park Hospital, Davyhulme"
   ]
+ },
+ "place-trawniki-concentration-camp": {
+  "name": "Trawniki concentration camp",
+  "kind": "German forced labor camp in occupied Poland",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Trawniki_concentration_camp",
+  "lat": null,
+  "lon": null
  },
  "place-treasury-islands": {
   "name": "Treasury Islands",

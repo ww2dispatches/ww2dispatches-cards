@@ -5637,6 +5637,13 @@
   "wikidata": "Q1032119",
   "source": "https://en.wikipedia.org/wiki/HNoMS_Norge"
  },
+ "ship-hnoms-olav-tryggvason": {
+  "name": "HNoMS Olav Tryggvason",
+  "kind": "Royal Norwegian Navy minelayer",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HNoMS_Olav_Tryggvason"
+ },
  "ship-hnoms-pol-iii": {
   "name": "HNoMS Pol III",
   "kind": "Norwegian armed whaler, neutrality patrol vessel",
@@ -6024,6 +6031,16 @@
   "source": "https://en.wikipedia.org/wiki/Japanese_aircraft_carrier_Hiy%C5%8D",
   "aka": [
    "Hiyō"
+  ]
+ },
+ "ship-japanese-aircraft-carrier-jun-yo": {
+  "name": "Japanese aircraft carrier Jun'yo",
+  "kind": "Hiyo class aircraft carrier",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_aircraft_carrier_Jun%27y%C5%8D",
+  "aka": [
+   "Junyo"
   ]
  },
  "ship-japanese-aircraft-carrier-ryujo": {
@@ -6435,6 +6452,13 @@
   "nation": "Japan",
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Akigumo_(1941)"
+ },
+ "ship-japanese-destroyer-akikaze": {
+  "name": "Japanese destroyer Akikaze",
+  "kind": "Minekaze class destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Akikaze"
  },
  "ship-japanese-destroyer-akishimo": {
   "name": "Akishimo",
@@ -8351,6 +8375,16 @@
   "wikidata": "Q7393940",
   "source": "https://en.wikipedia.org/wiki/SS_Kyokusei_Maru"
  },
+ "ship-ss-laurentic-1927": {
+  "name": "SS Laurentic (1927)",
+  "kind": "liner serving as the armed merchant cruiser HMS Laurentic",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Laurentic_(1927)",
+  "aka": [
+   "HMS Laurentic (F 51)"
+  ]
+ },
  "ship-ss-leopoldville-1928": {
   "name": "SS Leopoldville",
   "kind": "Belgian liner used as a troopship",
@@ -8478,6 +8512,16 @@
   "nation": "US",
   "wikidata": "Q7394187",
   "source": "https://en.wikipedia.org/wiki/SS_Patrick_Henry"
+ },
+ "ship-ss-patroclus-1923": {
+  "name": "SS Patroclus (1923)",
+  "kind": "liner serving as the armed merchant cruiser HMS Patroclus",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Patroclus_(1923)",
+  "aka": [
+   "HMS Patroclus"
+  ]
  },
  "ship-ss-paul-hamilton": {
   "name": "SS Paul Hamilton",
@@ -10326,6 +10370,13 @@
   "nation": "US",
   "wikidata": "Q11696849",
   "source": "https://en.wikipedia.org/wiki/USS_Pillsbury_(DE-133)"
+ },
+ "ship-uss-pintado-ss-387": {
+  "name": "USS Pintado (SS-387)",
+  "kind": "Balao class submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Pintado_(SS-387)"
  },
  "ship-uss-pioneer-am-105": {
   "name": "USS Pioneer (AM-105)",

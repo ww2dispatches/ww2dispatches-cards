@@ -5018,6 +5018,13 @@
   "wikidata": "Q12884966",
   "source": "https://en.wikipedia.org/wiki/Caserta_Agreement"
  },
+ "op-cash-and-carry-world-war-ii": {
+  "name": "Cash and carry (World War II)",
+  "kind": "U.S. arms sale policy, 1939",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Cash_and_carry_(World_War_II)"
+ },
  "op-catalonia-offensive": {
   "name": "Catalonia Offensive",
   "kind": "Spanish Civil War offensive",
@@ -8036,6 +8043,13 @@
    "Kokoda Trail campaign"
   ]
  },
+ "op-koli-point-action": {
+  "name": "Koli Point action",
+  "kind": "Guadalcanal engagement, 3 to 12 November 1942",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Koli_Point_action"
+ },
  "op-kon-tiki-expedition": {
   "name": "Kon-Tiki expedition",
   "kind": "raft voyage across the Pacific",
@@ -9295,6 +9309,16 @@
    "Rohm Purge"
   ]
  },
+ "op-nine-power-treaty-conference": {
+  "name": "Nine Power Treaty Conference",
+  "kind": "international conference, Brussels, 1937",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Nine_Power_Treaty_Conference",
+  "aka": [
+   "Brussels Conference"
+  ]
+ },
  "op-nisko-plan": {
   "name": "Nisko Plan",
   "kind": "deportation program",
@@ -10106,6 +10130,16 @@
   "nation": "Britain",
   "wikidata": "Q10130",
   "source": "https://en.wikipedia.org/wiki/Operation_Harpoon_(1942)"
+ },
+ "op-operation-harvest-festival": {
+  "name": "Operation Harvest Festival",
+  "kind": "mass murder of Jews in the Lublin district, 3 to 4 November 1943",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Harvest_Festival",
+  "aka": [
+   "Aktion Erntefest"
+  ]
  },
  "op-operation-herring": {
   "name": "Operation Herring",

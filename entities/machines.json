@@ -604,6 +604,13 @@
   "wikidata": "Q521916",
   "source": "https://en.wikipedia.org/wiki/H2S_(radar)"
  },
+ "machine-h2x": {
+  "name": "H2X",
+  "kind": "American airborne ground scanning radar",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/H2X"
+ },
  "machine-hale-telescope": {
   "name": "Hale Telescope",
   "kind": "200 inch reflecting telescope",
@@ -1442,6 +1449,13 @@
   "aka": [
    "Het Achterhuis"
   ]
+ },
+ "machine-the-lion-has-wings": {
+  "name": "The Lion Has Wings",
+  "kind": "1939 British propaganda film",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/The_Lion_Has_Wings"
  },
  "machine-the-magnificent-eleven": {
   "name": "The Magnificent Eleven",
