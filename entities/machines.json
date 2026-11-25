@@ -516,6 +516,26 @@
   "source": "https://en.wikipedia.org/wiki/General_Electric_J31",
   "wikidata": "Q2450750"
  },
+ "machine-george-cross": {
+  "name": "George Cross",
+  "kind": "British gallantry award",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/George_Cross",
+  "aka": [
+   "GC"
+  ]
+ },
+ "machine-george-medal": {
+  "name": "George Medal",
+  "kind": "British gallantry award",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/George_Medal",
+  "aka": [
+   "GM"
+  ]
+ },
  "machine-gleep": {
   "name": "GLEEP",
   "kind": "experimental nuclear reactor",

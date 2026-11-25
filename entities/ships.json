@@ -139,6 +139,16 @@
    "Bourrasque"
   ]
  },
+ "ship-french-destroyer-l-audacieux": {
+  "name": "French destroyer L'Audacieux",
+  "kind": "destroyer",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/French_destroyer_L%27Audacieux",
+  "aka": [
+   "Audacieux"
+  ]
+ },
  "ship-french-destroyer-le-malin": {
   "name": "French destroyer Le Malin",
   "kind": "large destroyer",
@@ -6964,6 +6974,17 @@
   "wikidata": "Q7377721",
   "source": "https://en.wikipedia.org/wiki/Rudyard_Kipling_(ship)",
   "note": "Sunk by U 27, 16 Sep 1939"
+ },
+ "ship-russian-battleship-petropavlovsk-1911": {
+  "name": "Russian battleship Petropavlovsk (1911)",
+  "kind": "Gangut class battleship",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Russian_battleship_Petropavlovsk_(1911)",
+  "aka": [
+   "Marat",
+   "Volkhov"
+  ]
  },
  "ship-rv-petrel": {
   "name": "RV Petrel",

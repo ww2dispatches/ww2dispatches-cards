@@ -2859,6 +2859,15 @@
   "lat": 51.5139,
   "lon": 7.4653
  },
+ "place-dortmund-ems-canal": {
+  "name": "Dortmund Ems Canal",
+  "kind": "canal",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Dortmund%E2%80%93Ems_Canal",
+  "lat": null,
+  "lon": null
+ },
  "place-dover": {
   "name": "Dover",
   "kind": "port town in Kent",
@@ -5698,6 +5707,15 @@
   "source": "https://en.wikipedia.org/wiki/Kroll_Opera_House",
   "lat": 52.5186,
   "lon": 13.3706
+ },
+ "place-kronstadt": {
+  "name": "Kronstadt",
+  "kind": "naval base and town",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kronstadt",
+  "lat": null,
+  "lon": null
  },
  "place-krysia-bunker": {
   "name": "Krysia Bunker",
