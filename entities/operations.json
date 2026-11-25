@@ -2184,6 +2184,13 @@
   "wikidata": "Q3636398",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Cisterna"
  },
+ "op-battle-of-ciudad-universitaria": {
+  "name": "Battle of Ciudad Universitaria",
+  "kind": "battle",
+  "nation": "Spain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Ciudad_Universitaria"
+ },
  "op-battle-of-cologne": {
   "name": "Battle of Cologne",
   "kind": "capture of Cologne, March 1945",
@@ -4174,6 +4181,13 @@
   "aka": [
    "Bern Trial"
   ]
+ },
+ "op-bernhardt-line": {
+  "name": "Bernhardt Line",
+  "kind": "German defensive line",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bernhardt_Line"
  },
  "op-beveridge-report": {
   "name": "Beveridge Report",

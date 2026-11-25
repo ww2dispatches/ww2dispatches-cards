@@ -786,6 +786,13 @@
   "wikidata": "Q554519",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-154_(1941)"
  },
+ "ship-german-submarine-u-155-1941": {
+  "name": "German submarine U-155 (1941)",
+  "kind": "U-boat, Type IXC",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-155_(1941)"
+ },
  "ship-german-submarine-u-156-1941": {
   "name": "U-156",
   "kind": "Type IXC U-boat",
@@ -2457,6 +2464,13 @@
   "wikidata": "Q5551754",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-582"
  },
+ "ship-german-submarine-u-583": {
+  "name": "German submarine U-583",
+  "kind": "U-boat, Type VIIC",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-583"
+ },
  "ship-german-submarine-u-584": {
   "name": "U-584",
   "kind": "German U-boat",
@@ -3258,6 +3272,13 @@
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-977",
   "note": "Surrendered at Mar del Plata, 17 Aug 1945"
  },
+ "ship-german-submarine-u-98-1940": {
+  "name": "German submarine U-98 (1940)",
+  "kind": "U-boat, Type VIIC",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-98_(1940)"
+ },
  "ship-german-submarine-u-985": {
   "name": "U-985",
   "kind": "U-boat",
@@ -3818,6 +3839,13 @@
   "nation": "Britain",
   "wikidata": "Q705231",
   "source": "https://en.wikipedia.org/wiki/HMS_Aurora_(12)"
+ },
+ "ship-hms-avenger-d14": {
+  "name": "HMS Avenger (D14)",
+  "kind": "escort carrier",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Avenger_(D14)"
  },
  "ship-hms-avon-vale": {
   "name": "HMS Avon Vale (L06)",
@@ -7101,6 +7129,16 @@
    "Ishigaki"
   ]
  },
+ "ship-japanese-landing-craft-carrier-akitsu-maru": {
+  "name": "Japanese landing craft carrier Akitsu Maru",
+  "kind": "army landing craft carrier",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_landing_craft_carrier_Akitsu_Maru",
+  "aka": [
+   "Japanese aircraft carrier Akitsu Maru"
+  ]
+ },
  "ship-japanese-landing-craft-carrier-tamatsu-maru": {
   "name": "Tamatsu Maru",
   "kind": "landing craft depot ship",
@@ -8848,6 +8886,13 @@
   "nation": "US",
   "wikidata": "Q85798884",
   "source": "https://en.wikipedia.org/wiki/SS_Robert_E._Lee"
+ },
+ "ship-ss-robert-e-peary": {
+  "name": "SS Robert E. Peary",
+  "kind": "Liberty ship",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Robert_E._Peary"
  },
  "ship-ss-robin-moor": {
   "name": "SS Robin Moor",

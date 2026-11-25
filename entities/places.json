@@ -10513,6 +10513,15 @@
   "lat": 46.2803,
   "lon": -119.2753
  },
+ "place-richmond-shipyards": {
+  "name": "Richmond Shipyards",
+  "kind": "shipyards",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Richmond_Shipyards",
+  "lat": null,
+  "lon": null
+ },
  "place-riga": {
   "lat": 56.9475,
   "lon": 24.1069,
