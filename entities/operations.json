@@ -1224,6 +1224,13 @@
   "wikidata": "Q154681",
   "source": "https://en.wikipedia.org/wiki/Anschluss"
  },
+ "op-anti-comintern-pact": {
+  "name": "Anti-Comintern Pact",
+  "kind": "treaty of Germany and Japan, joined by Italy in 1937",
+  "nation": "Germany",
+  "wikidata": "Q152195",
+  "source": "https://en.wikipedia.org/wiki/Anti-Comintern_Pact"
+ },
  "op-appeal-of-18-june": {
   "name": "Appeal of 18 June",
   "kind": "de Gaulle's BBC broadcast to France, 1940",
@@ -2534,6 +2541,17 @@
   "nation": "Germany",
   "wikidata": "Q162284",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Kiev_(1941)"
+ },
+ "op-battle-of-kiev-1943": {
+  "name": "Battle of Kiev (1943)",
+  "kind": "Soviet offensive that retook Kyiv",
+  "nation": "Soviet Union",
+  "wikidata": "Q700960",
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Kiev_(1943)",
+  "aka": [
+   "Kiev offensive",
+   "Kyiv offensive"
+  ]
  },
  "op-battle-of-ko-chang": {
   "name": "Battle of Ko Chang",
@@ -6987,6 +7005,16 @@
   "wikidata": "Q696192",
   "source": "https://en.wikipedia.org/wiki/Greater_East_Asia_Co-Prosperity_Sphere"
  },
+ "op-greater-east-asia-conference": {
+  "name": "Greater East Asia Conference",
+  "kind": "Tokyo summit of Japan and its allied governments, 1943",
+  "nation": "Japan",
+  "wikidata": "Q702431",
+  "source": "https://en.wikipedia.org/wiki/Greater_East_Asia_Conference",
+  "aka": [
+   "Tokyo Conference"
+  ]
+ },
  "op-greco-italian-war": {
   "name": "Greco Italian War",
   "kind": "war",
@@ -9947,6 +9975,13 @@
   "wikidata": "Q2389095",
   "source": "https://en.wikipedia.org/wiki/Operation_Excess"
  },
+ "op-operation-fb": {
+  "name": "Operation FB",
+  "kind": "unescorted Allied sailings to north Russia, 1942",
+  "nation": "Britain",
+  "wikidata": "Q3354702",
+  "source": "https://en.wikipedia.org/wiki/Operation_FB"
+ },
  "op-operation-fish": {
   "name": "Operation Fish",
   "kind": "transfer of British gold and securities to Canada",
@@ -12388,6 +12423,13 @@
   "nation": "United States",
   "source": "https://en.wikipedia.org/wiki/Sole_Survivor_Policy",
   "wikidata": "Q1463062"
+ },
+ "op-sonderaktion-krakau": {
+  "name": "Sonderaktion Krakau",
+  "kind": "German arrest of Krakow academics, 1939",
+  "nation": "Poland",
+  "wikidata": "Q537148",
+  "source": "https://en.wikipedia.org/wiki/Sonderaktion_Krakau"
  },
  "op-sonderkommando-blaich": {
   "name": "Sonderkommando Blaich",

@@ -2059,6 +2059,17 @@
   "wikidata": "Q4642774",
   "source": "https://en.wikipedia.org/wiki/6th_Ranger_Battalion"
  },
+ "unit-70th-infantry-division-wehrmacht": {
+  "name": "70th Infantry Division (Wehrmacht)",
+  "kind": "German infantry division",
+  "nation": "Germany",
+  "wikidata": "Q4643035",
+  "source": "https://en.wikipedia.org/wiki/70th_Infantry_Division_(Wehrmacht)",
+  "aka": [
+   "Stomach division",
+   "White Bread Division"
+  ]
+ },
  "unit-73rd-bombardment-wing": {
   "name": "73rd Bombardment Wing",
   "kind": "U.S. Army Air Forces bomber wing",
@@ -6562,6 +6573,13 @@
    "Vichy 80",
    "Les Quatre-Vingts"
   ]
+ },
+ "unit-the-mills-brothers": {
+  "name": "The Mills Brothers",
+  "kind": "American vocal group",
+  "nation": "US",
+  "wikidata": "Q1206839",
+  "source": "https://en.wikipedia.org/wiki/The_Mills_Brothers"
  },
  "unit-the-saturday-evening-post": {
   "name": "The Saturday Evening Post",

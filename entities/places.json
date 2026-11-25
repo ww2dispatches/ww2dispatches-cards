@@ -5452,6 +5452,15 @@
   "lat": null,
   "lon": null
  },
+ "place-jagiellonian-university": {
+  "name": "Jagiellonian University",
+  "kind": "university in Krakow",
+  "nation": "Poland",
+  "wikidata": "Q189441",
+  "source": "https://en.wikipedia.org/wiki/Jagiellonian_University",
+  "lat": null,
+  "lon": null
+ },
  "place-jajce": {
   "name": "Jajce",
   "kind": "town",
@@ -7640,6 +7649,15 @@
   ],
   "lat": 16.4847,
   "lon": 97.6258
+ },
+ "place-mayakovskaya-moscow-metro": {
+  "name": "Mayakovskaya (Moscow Metro)",
+  "kind": "Moscow metro station, wartime shelter",
+  "nation": "Soviet Union",
+  "wikidata": "Q1190921",
+  "source": "https://en.wikipedia.org/wiki/Mayakovskaya_(Moscow_Metro)",
+  "lat": null,
+  "lon": null
  },
  "place-mayflower-hotel": {
   "name": "Mayflower Hotel",

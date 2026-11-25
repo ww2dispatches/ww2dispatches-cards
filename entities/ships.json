@@ -1151,6 +1151,13 @@
   "wikidata": "Q4051948",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-224"
  },
+ "ship-german-submarine-u-226": {
+  "name": "U-226",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": "Q321140",
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-226"
+ },
  "ship-german-submarine-u-227": {
   "name": "U-227",
   "kind": "Type VIIC U-boat",
@@ -2954,6 +2961,13 @@
   "nation": "Germany",
   "wikidata": "Q3551994",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-841"
+ },
+ "ship-german-submarine-u-842": {
+  "name": "U-842",
+  "kind": "Type IXC/40 U-boat",
+  "nation": "Germany",
+  "wikidata": "Q3551993",
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-842"
  },
  "ship-german-submarine-u-847": {
   "name": "U-847",
@@ -8006,12 +8020,26 @@
   "wikidata": "Q65065639",
   "source": "https://en.wikipedia.org/wiki/SS_China_Arrow"
  },
+ "ship-ss-chulmleigh": {
+  "name": "SS Chulmleigh",
+  "kind": "British cargo steamship",
+  "nation": "Britain",
+  "wikidata": "Q55632242",
+  "source": "https://en.wikipedia.org/wiki/SS_Chulmleigh"
+ },
  "ship-ss-city-of-benares": {
   "name": "SS City of Benares",
   "kind": "passenger liner, evacuee ship",
   "nation": "Britain",
   "wikidata": "Q435813",
   "source": "https://en.wikipedia.org/wiki/SS_City_of_Benares"
+ },
+ "ship-ss-city-of-cairo": {
+  "name": "SS City of Cairo",
+  "kind": "Ellerman Lines passenger steamship",
+  "nation": "Britain",
+  "wikidata": "Q1094070",
+  "source": "https://en.wikipedia.org/wiki/SS_City_of_Cairo"
  },
  "ship-ss-city-of-flint-1919": {
   "name": "SS City of Flint (1919)",
@@ -8883,6 +8911,13 @@
   "nation": "US",
   "wikidata": "Q2395593",
   "source": "https://en.wikipedia.org/wiki/USS_Batfish_(SS-310)"
+ },
+ "ship-uss-beatty-dd-640": {
+  "name": "USS Beatty (DD-640)",
+  "kind": "Gleaves class destroyer",
+  "nation": "US",
+  "wikidata": "Q3537584",
+  "source": "https://en.wikipedia.org/wiki/USS_Beatty_(DD-640)"
  },
  "ship-uss-belleau-wood-cvl-24": {
   "name": "USS Belleau Wood (CVL-24)",
