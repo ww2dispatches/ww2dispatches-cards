@@ -735,6 +735,13 @@
   "wikidata": "Q194251",
   "source": "https://en.wikipedia.org/wiki/Hawker_Hurricane"
  },
+ "aircraft-hawker-typhoon": {
+  "name": "Hawker Typhoon",
+  "kind": "fighter bomber",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hawker_Typhoon"
+ },
  "aircraft-heinkel-he-100": {
   "name": "Heinkel He 100",
   "kind": "German prototype fighter, 1939 world speed record holder",
@@ -973,6 +980,17 @@
    "XP-80",
    "Lulu-Belle",
    "F-80"
+  ]
+ },
+ "aircraft-lockheed-r6v-constitution": {
+  "name": "Lockheed R6V Constitution",
+  "kind": "double deck Navy transport",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Lockheed_R6V_Constitution",
+  "aka": [
+   "XR6O Constitution",
+   "R6O"
   ]
  },
  "aircraft-lockheed-ventura": {

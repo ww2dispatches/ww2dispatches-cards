@@ -493,6 +493,17 @@
   "wikidata": "Q282153",
   "source": "https://en.wikipedia.org/wiki/19th_Route_Army"
  },
+ "unit-1st-air-fleet": {
+  "name": "1st Air Fleet",
+  "kind": "Japanese carrier air fleet",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1st_Air_Fleet",
+  "aka": [
+   "First Air Fleet",
+   "Kido Butai"
+  ]
+ },
  "unit-1st-airborne-division-united-kingdom": {
   "name": "1st Airborne Division",
   "kind": "British airborne division",
@@ -531,6 +542,13 @@
    "1st Army (France)",
    "Armee B"
   ]
+ },
+ "unit-1st-army-wehrmacht": {
+  "name": "1st Army (Wehrmacht)",
+  "kind": "field army",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1st_Army_(Wehrmacht)"
  },
  "unit-1st-belorussian-front": {
   "name": "1st Belorussian Front",
@@ -800,6 +818,13 @@
   "nation": "Australia",
   "wikidata": "Q4630673",
   "source": "https://en.wikipedia.org/wiki/20th_Brigade_(Australia)"
+ },
+ "unit-20th-infantry-division-friuli": {
+  "name": "20th Infantry Division Friuli",
+  "kind": "infantry division",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/20th_Infantry_Division_%22Friuli%22"
  },
  "unit-21st-army-group": {
   "name": "21st Army Group",
@@ -2145,6 +2170,13 @@
   "source": "https://en.wikipedia.org/wiki/7th_Armoured_Division_(United_Kingdom)",
   "wikidata": "Q260830"
  },
+ "unit-7th-army-wehrmacht": {
+  "name": "7th Army (Wehrmacht)",
+  "kind": "field army",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/7th_Army_(Wehrmacht)"
+ },
  "unit-7th-division-australia": {
   "name": "7th Division (Australia)",
   "kind": "Australian Army infantry division",
@@ -2790,6 +2822,13 @@
   "aka": [
    "Bell Telephone Laboratories"
   ]
+ },
+ "unit-bergson-group": {
+  "name": "Bergson Group",
+  "kind": "activist group for the rescue of Europe's Jews",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bergson_Group"
  },
  "unit-berlin-philharmonic": {
   "name": "Berlin Philharmonic",
@@ -4374,6 +4413,13 @@
    "KSLI"
   ]
  },
+ "unit-kommando-nowotny": {
+  "name": "Kommando Nowotny",
+  "kind": "Luftwaffe Me 262 jet fighter unit",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kommando_Nowotny"
+ },
  "unit-kreisau-circle": {
   "name": "Kreisau Circle",
   "kind": "German resistance group",
@@ -4853,6 +4899,13 @@
    "New First Army"
   ]
  },
+ "unit-new-york-knicks": {
+  "name": "New York Knicks",
+  "kind": "professional basketball team",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/New_York_Knicks"
+ },
  "unit-nii-88": {
   "name": "NII-88",
   "kind": "Soviet rocket research institute",
@@ -5054,6 +5107,13 @@
   "nation": "Britain",
   "wikidata": "Q7043036",
   "source": "https://en.wikipedia.org/wiki/No._179_Squadron_RAF"
+ },
+ "unit-no-198-squadron-raf": {
+  "name": "No. 198 Squadron RAF",
+  "kind": "fighter squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._198_Squadron_RAF"
  },
  "unit-no-2-service-flying-training-school-raaf": {
   "name": "No. 2 Service Flying Training School RAAF",
@@ -5281,6 +5341,13 @@
   "wikidata": "Q7043519",
   "source": "https://en.wikipedia.org/wiki/No._455_Squadron_RAAF"
  },
+ "unit-no-457-squadron-raaf": {
+  "name": "No. 457 Squadron RAAF",
+  "kind": "RAAF Spitfire squadron",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._457_Squadron_RAAF"
+ },
  "unit-no-459-squadron-raaf": {
   "name": "No. 459 Squadron RAAF",
   "kind": "Royal Australian Air Force squadron",
@@ -5322,6 +5389,16 @@
   "nation": "Britain",
   "wikidata": "Q502561",
   "source": "https://en.wikipedia.org/wiki/No._5_Group_RAF"
+ },
+ "unit-no-500-squadron-rauxaf": {
+  "name": "No. 500 Squadron RAuxAF",
+  "kind": "maritime patrol squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._500_Squadron_RAuxAF",
+  "aka": [
+   "No. 500 Squadron RAF"
+  ]
  },
  "unit-no-51-squadron-raf": {
   "name": "No. 51 Squadron RAF",
@@ -5849,6 +5926,17 @@
   "wikidata": "Q1235891",
   "aka": [
    "Bomber Command"
+  ]
+ },
+ "unit-raf-ferry-command": {
+  "name": "RAF Ferry Command",
+  "kind": "RAF command ferrying aircraft across the Atlantic, grew out of the Atlantic Ferry",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/RAF_Ferry_Command",
+  "aka": [
+   "Atlantic Ferry",
+   "ATFERO"
   ]
  },
  "unit-raf-fighter-command": {
@@ -6787,6 +6875,16 @@
   "nation": "worldwide",
   "wikidata": "Q47423",
   "source": "https://en.wikipedia.org/wiki/United_Nations_General_Assembly"
+ },
+ "unit-united-nations-relief-and-rehabilitation-administration": {
+  "name": "United Nations Relief and Rehabilitation Administration",
+  "kind": "international relief agency",
+  "nation": "worldwide",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/United_Nations_Relief_and_Rehabilitation_Administration",
+  "aka": [
+   "UNRRA"
+  ]
  },
  "unit-united-nations-security-council": {
   "name": "UN Security Council",

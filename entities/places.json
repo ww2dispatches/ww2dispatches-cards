@@ -143,6 +143,15 @@
   "lat": 18.5524,
   "lon": 73.9015
  },
+ "place-aguadilla-puerto-rico": {
+  "name": "Aguadilla, Puerto Rico",
+  "kind": "town",
+  "nation": "Puerto Rico",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Aguadilla,_Puerto_Rico",
+  "lat": null,
+  "lon": null
+ },
  "place-aichi-prefecture": {
   "name": "Aichi Prefecture",
   "kind": "prefecture",
@@ -578,6 +587,15 @@
   ],
   "lat": 50.0358,
   "lon": 19.1783
+ },
+ "place-australian-war-memorial": {
+  "name": "Australian War Memorial",
+  "kind": "national war memorial and museum, Canberra",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Australian_War_Memorial",
+  "lat": null,
+  "lon": null
  },
  "place-avonmouth": {
   "name": "Avonmouth",
@@ -1595,6 +1613,15 @@
   "lat": 51.5186,
   "lon": -0.1438
  },
+ "place-broadway-theatre-53rd-street": {
+  "name": "Broadway Theatre (53rd Street)",
+  "kind": "theatre, New York City",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Broadway_Theatre_(53rd_Street)",
+  "lat": null,
+  "lon": null
+ },
  "place-brolo": {
   "name": "Brolo",
   "kind": "Town on Sicily's north coast",
@@ -1763,6 +1790,18 @@
   "source": "https://en.wikipedia.org/wiki/Burbank,_California",
   "lat": 34.1803,
   "lon": -118.3283
+ },
+ "place-burgerbraukeller": {
+  "name": "Burgerbraukeller",
+  "kind": "beer hall in Munich",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/B%C3%BCrgerbr%C3%A4ukeller",
+  "aka": [
+   "Bürgerbräukeller"
+  ],
+  "lat": null,
+  "lon": null
  },
  "place-burma-road": {
   "name": "Burma Road",
@@ -7221,6 +7260,19 @@
   "lat": 49.842,
   "lon": 24.0316
  },
+ "place-lwow-ghetto": {
+  "name": "Lwow Ghetto",
+  "kind": "Nazi ghetto in occupied Lwow",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Lw%C3%B3w_Ghetto",
+  "aka": [
+   "Lwów Ghetto",
+   "Lvov Ghetto"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-lyon": {
   "name": "Lyon",
   "kind": "French city",
@@ -8305,6 +8357,15 @@
   "lat": 43.3525,
   "lon": 42.4379
  },
+ "place-mount-greylock": {
+  "name": "Mount Greylock",
+  "kind": "mountain",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mount_Greylock",
+  "lat": null,
+  "lon": null
+ },
  "place-mount-rushmore": {
   "name": "Mount Rushmore",
   "kind": "memorial sculpture",
@@ -8950,6 +9011,15 @@
   "lat": 44.7167,
   "lon": 37.7667
  },
+ "place-numansdorp": {
+  "name": "Numansdorp",
+  "kind": "village",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Numansdorp",
+  "lat": null,
+  "lon": null
+ },
  "place-numfor": {
   "name": "Numfor",
   "kind": "island off New Guinea",
@@ -9286,6 +9356,15 @@
   "source": "https://en.wikipedia.org/wiki/Ostrava",
   "lat": 49.8356,
   "lon": 18.2925
+ },
+ "place-ostrow-mazowiecka": {
+  "name": "Ostrow Mazowiecka",
+  "kind": "town",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ostr%C3%B3w_Mazowiecka",
+  "lat": null,
+  "lon": null
  },
  "place-ottawa-civic-hospital": {
   "name": "Ottawa Civic Hospital",
@@ -11199,6 +11278,15 @@
   "lat": 49.7019,
   "lon": 4.9403
  },
+ "place-seeadler-harbor": {
+  "name": "Seeadler Harbor",
+  "kind": "harbor at Manus, Admiralty Islands",
+  "nation": "Papua New Guinea",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Seeadler_Harbor",
+  "lat": null,
+  "lon": null
+ },
  "place-semipalatinsk-test-site": {
   "name": "Semipalatinsk Test Site",
   "kind": "Soviet nuclear test site, Kazakhstan",
@@ -11324,6 +11412,15 @@
   "source": "https://en.wikipedia.org/wiki/Sherborne",
   "lat": 50.9491,
   "lon": -2.5183
+ },
+ "place-shetland": {
+  "name": "Shetland",
+  "kind": "island group",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Shetland",
+  "lat": null,
+  "lon": null
  },
  "place-shibe-park": {
   "name": "Shibe Park",
@@ -12015,6 +12112,15 @@
   "lat": 15.2772,
   "lon": 145.8097
  },
+ "place-sullom-voe": {
+  "name": "Sullom Voe",
+  "kind": "sea inlet and wartime flying boat base",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sullom_Voe",
+  "lat": null,
+  "lon": null
+ },
  "place-sulu-sea": {
   "name": "Sulu Sea",
   "kind": "sea",
@@ -12129,6 +12235,18 @@
   "lat": 46.25,
   "lon": 20.1667
  },
+ "place-tacoma-narrows-bridge-1940": {
+  "name": "Tacoma Narrows Bridge (1940)",
+  "kind": "suspension bridge",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tacoma_Narrows_Bridge_(1940)",
+  "aka": [
+   "Galloping Gertie"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-taiwan": {
   "name": "Taiwan (Formosa)",
   "kind": "island",
@@ -12152,6 +12270,15 @@
   ],
   "lat": 24.8111,
   "lon": 119.9283
+ },
+ "place-taiyuan": {
+  "name": "Taiyuan",
+  "kind": "city, capital of Shanxi",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Taiyuan",
+  "lat": null,
+  "lon": null
  },
  "place-takamatsu": {
   "name": "Takamatsu",
@@ -12387,6 +12514,18 @@
   "wikidata": "Q3059075",
   "lat": 51.5,
   "lon": 0.5833
+ },
+ "place-the-cenotaph": {
+  "name": "The Cenotaph",
+  "kind": "war memorial, Whitehall, London",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/The_Cenotaph",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "The Cenotaph, Whitehall"
+  ]
  },
  "place-the-hague": {
   "name": "The Hague",

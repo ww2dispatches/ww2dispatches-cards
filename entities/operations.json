@@ -113,6 +113,16 @@
   "wikidata": "Q334786",
   "source": "https://en.wikipedia.org/wiki/1938_Austrian_Anschluss_referendum"
  },
+ "op-1938-changsha-fire": {
+  "name": "1938 Changsha fire",
+  "kind": "scorched earth fire",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1938_Changsha_fire",
+  "aka": [
+   "Wenxi fire"
+  ]
+ },
  "op-1938-deportation-of-jews-from-slovakia": {
   "name": "1938 deportation of Jews from Slovakia",
   "kind": "mass deportation",
@@ -197,6 +207,13 @@
   "nation": "Canada",
   "wikidata": "Q4564626",
   "source": "https://en.wikipedia.org/wiki/1939_royal_tour_of_Canada"
+ },
+ "op-1940-armistice-day-blizzard": {
+  "name": "1940 Armistice Day Blizzard",
+  "kind": "winter storm",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1940_Armistice_Day_Blizzard"
  },
  "op-1940-brocklesby-mid-air-collision": {
   "name": "1940 Brocklesby midair collision",
@@ -2276,6 +2293,13 @@
   "wikidata": "Q1754443",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Edson%27s_Ridge"
  },
+ "op-battle-of-elaia-kalamas": {
+  "name": "Battle of Elaia and Kalamas",
+  "kind": "battle of the Greco Italian War, 2 to 8 Nov 1940",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Elaia%E2%80%93Kalamas"
+ },
  "op-battle-of-empress-augusta-bay": {
   "name": "Battle of Empress Augusta Bay",
   "kind": "naval battle",
@@ -2631,6 +2655,13 @@
   "aka": [
    "Battle of Königsberg"
   ]
+ },
+ "op-battle-of-koromokina-lagoon": {
+  "name": "Battle of Koromokina Lagoon",
+  "kind": "battle",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Koromokina_Lagoon"
  },
  "op-battle-of-korsun-cherkassy": {
   "name": "Battle of Korsun-Cherkassy",
@@ -3349,12 +3380,26 @@
   "wikidata": "Q1536686",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Sunda_Strait"
  },
+ "op-battle-of-surabaya": {
+  "name": "Battle of Surabaya",
+  "kind": "battle between British and Indian forces and Indonesian republicans, November 1945",
+  "nation": "Indonesia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Surabaya"
+ },
  "op-battle-of-taierzhuang": {
   "name": "Battle of Taierzhuang",
   "kind": "battle, March to April 1938",
   "nation": "China",
   "wikidata": "Q626796",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Taierzhuang"
+ },
+ "op-battle-of-taiyuan": {
+  "name": "Battle of Taiyuan",
+  "kind": "battle, 1937",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Taiyuan"
  },
  "op-battle-of-tali-ihantala": {
   "name": "Battle of Tali-Ihantala",
@@ -3378,6 +3423,17 @@
   "source": "https://en.wikipedia.org/wiki/Battle_of_Tarakan_(1945)",
   "aka": [
    "Oboe One"
+  ]
+ },
+ "op-battle-of-taranto": {
+  "name": "Battle of Taranto",
+  "kind": "carrier air raid",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Taranto",
+  "aka": [
+   "Taranto raid",
+   "Operation Judgement"
   ]
  },
  "op-battle-of-tarawa": {
@@ -3507,6 +3563,16 @@
   "nation": "Britain",
   "wikidata": "Q696607",
   "source": "https://en.wikipedia.org/wiki/Battle_of_the_Denmark_Strait"
+ },
+ "op-battle-of-the-duisburg-convoy": {
+  "name": "Battle of the Duisburg Convoy",
+  "kind": "naval battle, 8 to 9 Nov 1941",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_the_Duisburg_Convoy",
+  "aka": [
+   "Battle of the Beta Convoy"
+  ]
  },
  "op-battle-of-the-dukla-pass": {
   "name": "Battle of the Dukla Pass",
@@ -5010,6 +5076,13 @@
   "nation": "US",
   "wikidata": "Q5047979",
   "source": "https://en.wikipedia.org/wiki/Casablanca_directive"
+ },
+ "op-case-anton": {
+  "name": "Case Anton",
+  "kind": "German and Italian occupation of Vichy France, November 1942",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Case_Anton"
  },
  "op-case-blue": {
   "name": "Case Blue",
@@ -6904,6 +6977,16 @@
   "wikidata": "Q126413",
   "source": "https://en.wikipedia.org/wiki/German%E2%80%93Polish_declaration_of_non-aggression"
  },
+ "op-german-soviet-axis-talks": {
+  "name": "German Soviet Axis talks",
+  "kind": "diplomatic talks",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German%E2%80%93Soviet_Axis_talks",
+  "aka": [
+   "Molotov's Berlin visit"
+  ]
+ },
  "op-german-soviet-boundary-and-friendship-treaty": {
   "name": "German Soviet Boundary and Friendship Treaty",
   "kind": "1939 treaty partitioning Poland",
@@ -7615,6 +7698,13 @@
   "wikidata": "Q698178",
   "source": "https://en.wikipedia.org/wiki/Italian_invasion_of_France"
  },
+ "op-italian-occupation-of-corsica": {
+  "name": "Italian occupation of Corsica",
+  "kind": "occupation",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_occupation_of_Corsica"
+ },
  "op-italian-racial-laws": {
   "name": "Italian racial laws",
   "kind": "Fascist antisemitic legislation",
@@ -7849,6 +7939,17 @@
   "nation": "worldwide",
   "wikidata": "Q1588460",
   "source": "https://en.wikipedia.org/wiki/Joint_Declaration_by_Members_of_the_United_Nations"
+ },
+ "op-judenvermogensabgabe": {
+  "name": "Judenvermogensabgabe",
+  "kind": "collective fine imposed on German Jews",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Judenverm%C3%B6gensabgabe",
+  "aka": [
+   "Jewish capital levy",
+   "Atonement fine"
+  ]
  },
  "op-judges-trial": {
   "name": "Judges' Trial",
@@ -8530,6 +8631,16 @@
   "source": "https://en.wikipedia.org/wiki/Lorraine_campaign",
   "wikidata": "Q2935372"
  },
+ "op-lubeck-martyrs": {
+  "name": "Lubeck martyrs",
+  "kind": "four Lubeck clergymen executed by the Nazi state, 10 November 1943",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/L%C3%BCbeck_martyrs",
+  "aka": [
+   "Lübeck martyrs"
+  ]
+ },
  "op-lviv-pogroms-1941": {
   "name": "Lviv pogroms (1941)",
   "kind": "pogroms and massacres of Jews, 1941",
@@ -8928,6 +9039,16 @@
    "Melkestreiken"
   ]
  },
+ "op-minersville-school-district-v-gobitis": {
+  "name": "Minersville School District v. Gobitis",
+  "kind": "U.S. flag salute court case, 1938 to 1940",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Minersville_School_District_v._Gobitis",
+  "aka": [
+   "Gobitis case"
+  ]
+ },
  "op-ministries-trial": {
   "name": "Ministries Trial",
   "kind": "US Nuremberg Military Tribunal Case 11, 1948 to 1949",
@@ -9228,6 +9349,20 @@
   "wikidata": "Q6581509",
   "source": "https://en.wikipedia.org/wiki/National_Service_(Armed_Forces)_Act_1939"
  },
+ "op-naval-battle-of-casablanca": {
+  "name": "Naval Battle of Casablanca",
+  "kind": "naval battle",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Naval_Battle_of_Casablanca"
+ },
+ "op-naval-battle-of-guadalcanal": {
+  "name": "Naval Battle of Guadalcanal",
+  "kind": "naval battle",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Naval_Battle_of_Guadalcanal"
+ },
  "op-navy-day": {
   "name": "Navy Day",
   "kind": "naval observance",
@@ -9351,6 +9486,16 @@
   "source": "https://en.wikipedia.org/wiki/Nine_Power_Treaty_Conference",
   "aka": [
    "Brussels Conference"
+  ]
+ },
+ "op-nis-incident": {
+  "name": "Nis incident",
+  "kind": "friendly fire air battle",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ni%C5%A1_incident",
+  "aka": [
+   "Air battle over Nis"
   ]
  },
  "op-nisko-plan": {
@@ -9815,6 +9960,13 @@
    "Shell House raid"
   ]
  },
+ "op-operation-catechism": {
+  "name": "Operation Catechism",
+  "kind": "RAF bombing raid",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Catechism"
+ },
  "op-operation-charnwood": {
   "name": "Operation Charnwood",
   "kind": "Anglo-Canadian attack on Caen, 8 to 9 July 1944",
@@ -10039,6 +10191,16 @@
   "nation": "Britain",
   "wikidata": "Q3354702",
   "source": "https://en.wikipedia.org/wiki/Operation_FB"
+ },
+ "op-operation-felix": {
+  "name": "Operation Felix",
+  "kind": "planned German operation against Gibraltar",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Felix",
+  "aka": [
+   "Directive No. 18"
+  ]
  },
  "op-operation-fish": {
   "name": "Operation Fish",
@@ -11077,6 +11239,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q562797",
   "source": "https://en.wikipedia.org/wiki/Ostrogozhsk%E2%80%93Rossosh_offensive"
+ },
+ "op-ostrow-mazowiecka-massacre": {
+  "name": "Ostrow Mazowiecka massacre",
+  "kind": "mass shooting of Jews, November 1939",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ostr%C3%B3w_Mazowiecka_massacre"
  },
  "op-oyama-v-california": {
   "name": "Oyama v. California",
@@ -13537,6 +13706,13 @@
   "wikidata": "Q675228",
   "source": "https://en.wikipedia.org/wiki/Vel%27_d%27Hiv_roundup"
  },
+ "op-venlo-incident": {
+  "name": "Venlo incident",
+  "kind": "SD kidnapping of British agents, 9 Nov 1939",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Venlo_incident"
+ },
  "op-venona-project": {
   "name": "Venona project",
   "kind": "U.S. codebreaking program",
@@ -13887,6 +14063,13 @@
   "nation": "worldwide",
   "wikidata": "Q161227",
   "source": "https://en.wikipedia.org/wiki/Yalta_Conference"
+ },
+ "op-yanagi-missions": {
+  "name": "Yanagi missions",
+  "kind": "Axis exchange voyages",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Yanagi_missions"
  },
  "op-yangtze-river-crossing-campaign": {
   "name": "Yangtze River Crossing campaign",

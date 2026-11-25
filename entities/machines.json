@@ -128,6 +128,13 @@
    "Project X-Ray"
   ]
  },
+ "machine-battleground-film": {
+  "name": "Battleground (film)",
+  "kind": "MGM war film, 1949",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battleground_(film)"
+ },
  "machine-blalock-thomas-taussig-shunt": {
   "name": "Blalock Thomas Taussig shunt",
   "kind": "surgical procedure",
@@ -422,6 +429,13 @@
   "aka": [
    "Physics-1"
   ]
+ },
+ "machine-fantasound": {
+  "name": "Fantasound",
+  "kind": "multi-channel film sound system",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fantasound"
  },
  "machine-fat-man": {
   "name": "Fat Man",
@@ -1582,6 +1596,28 @@
   "nation": "Germany",
   "wikidata": "Q152946",
   "source": "https://en.wikipedia.org/wiki/Volkswagen_Beetle"
+ },
+ "machine-volkswagen-kubelwagen": {
+  "name": "Volkswagen Kubelwagen",
+  "kind": "military light vehicle",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Volkswagen_K%C3%BCbelwagen",
+  "aka": [
+   "Type 82"
+  ]
+ },
+ "machine-volkswagen-type-2": {
+  "name": "Volkswagen Type 2",
+  "kind": "van",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Volkswagen_Type_2",
+  "aka": [
+   "Volkswagen Transporter",
+   "T1",
+   "Bulli"
+  ]
  },
  "machine-wac-corporal": {
   "name": "WAC Corporal",
