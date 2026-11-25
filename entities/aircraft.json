@@ -1382,6 +1382,13 @@
    "HNS-1 Hoverfly"
   ]
  },
+ "aircraft-stinson-reliant": {
+  "name": "Stinson Reliant",
+  "kind": "light utility monoplane",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Stinson_Reliant"
+ },
  "aircraft-straight-flush": {
   "name": "Straight Flush",
   "kind": "509th Composite Group Silverplate B-29",

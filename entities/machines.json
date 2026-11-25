@@ -1485,6 +1485,16 @@
    "yellow star"
   ]
  },
+ "machine-zeep": {
+  "name": "ZEEP",
+  "kind": "experimental heavy water nuclear reactor",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/ZEEP",
+  "aka": [
+   "Zero Energy Experimental Pile"
+  ]
+ },
  "machine-zoe-reactor": {
   "name": "Zoé (reactor)",
   "kind": "France's first nuclear reactor",

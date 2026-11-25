@@ -1303,6 +1303,15 @@
   "lat": 52.4219,
   "lon": 12.4716
  },
+ "place-breda": {
+  "name": "Breda",
+  "kind": "city in the southern Netherlands",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Breda",
+  "lat": null,
+  "lon": null
+ },
  "place-brega": {
   "name": "Brega",
   "kind": "Libyan coastal town, Mersa Brega",
@@ -1962,6 +1971,15 @@
   ],
   "lat": 22.4668,
   "lon": 86.7107
+ },
+ "place-chalk-river-laboratories": {
+  "name": "Chalk River Laboratories",
+  "kind": "nuclear research site in Ontario",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Chalk_River_Laboratories",
+  "lat": null,
+  "lon": null
  },
  "place-chambois": {
   "name": "Chambois",
@@ -4920,6 +4938,15 @@
    "Shimonoseki Strait",
    "Shimonoseki Straits"
   ]
+ },
+ "place-kara-sea": {
+  "name": "Kara Sea",
+  "kind": "Arctic sea north of Siberia",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kara_Sea",
+  "lat": null,
+  "lon": null
  },
  "place-karelian-isthmus": {
   "name": "Karelian Isthmus",

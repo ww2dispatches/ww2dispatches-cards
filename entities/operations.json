@@ -4148,6 +4148,13 @@
   "wikidata": "Q4836516",
   "source": "https://en.wikipedia.org/wiki/BSAA_Star_Tiger_disappearance"
  },
+ "op-bulgaria-during-world-war-ii": {
+  "name": "Bulgaria during World War II",
+  "kind": "national history of the war",
+  "nation": "Bulgaria",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bulgaria_during_World_War_II"
+ },
  "op-burma-campaign-1944-1945": {
   "name": "Burma campaign (1944 to 1945)",
   "kind": "campaign",
@@ -4976,6 +4983,16 @@
   "nation": "United Kingdom",
   "source": "https://en.wikipedia.org/wiki/Dodecanese_campaign",
   "wikidata": "Q708173"
+ },
+ "op-dolle-dinsdag": {
+  "name": "Dolle Dinsdag",
+  "kind": "day of premature liberation celebrations",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Dolle_Dinsdag",
+  "aka": [
+   "Mad Tuesday"
+  ]
  },
  "op-dolo-hospital-airstrike": {
   "name": "Dolo hospital airstrike",
@@ -6913,6 +6930,13 @@
   "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Landing_at_Lae"
  },
+ "op-landing-at-nadzab": {
+  "name": "Landing at Nadzab",
+  "kind": "airborne landing",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Landing_at_Nadzab"
+ },
  "op-landing-at-nassau-bay": {
   "name": "Landing at Nassau Bay",
   "kind": "amphibious landing, New Guinea, 1943",
@@ -7124,6 +7148,13 @@
   "aka": [
    "St James's Palace Conference"
   ]
+ },
+ "op-london-customs-convention": {
+  "name": "London Customs Convention",
+  "kind": "treaty creating the Benelux customs union",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/London_Customs_Convention"
  },
  "op-london-naval-treaty": {
   "name": "London Naval Conference and Treaty (1930)",
@@ -7671,6 +7702,13 @@
   "nation": "China",
   "wikidata": "Q3072131",
   "source": "https://en.wikipedia.org/wiki/Nanjing_War_Crimes_Tribunal"
+ },
+ "op-national-registration-act-1939": {
+  "name": "National Registration Act 1939",
+  "kind": "wartime population register and identity cards",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/National_Registration_Act_1939"
  },
  "op-national-resources-mobilization-act": {
   "name": "National Resources Mobilization Act",
@@ -9032,6 +9070,13 @@
   "wikidata": "Q512914",
   "source": "https://en.wikipedia.org/wiki/Operation_Tidal_Wave"
  },
+ "op-operation-tiderace": {
+  "name": "Operation Tiderace",
+  "kind": "British reoccupation of Singapore",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Tiderace"
+ },
  "op-operation-torch": {
   "name": "Operation Torch",
   "kind": "amphibious landings",
@@ -9335,6 +9380,13 @@
   "nation": "India",
   "wikidata": "Q129053",
   "source": "https://en.wikipedia.org/wiki/Partition_of_India"
+ },
+ "op-pavoloch-massacre": {
+  "name": "Pavoloch massacre",
+  "kind": "Holocaust mass shooting",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Pavoloch_massacre"
  },
  "op-pay-as-you-earn-tax": {
   "name": "Pay As You Earn",
