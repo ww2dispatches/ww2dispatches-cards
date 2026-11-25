@@ -2347,6 +2347,19 @@
    "Kingston Demolition Range"
   ]
  },
+ "place-cluj-napoca": {
+  "name": "Cluj Napoca",
+  "kind": "city, capital of Transylvania",
+  "nation": "Romania",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Cluj-Napoca",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Cluj",
+   "Kolozsvar"
+  ]
+ },
  "place-col-de-saverne": {
   "name": "Saverne Gap",
   "kind": "mountain pass",
@@ -2655,6 +2668,18 @@
   "source": "https://en.wikipedia.org/wiki/Damascus",
   "lat": 33.513,
   "lon": 36.292
+ },
+ "place-dar-constitution-hall": {
+  "name": "DAR Constitution Hall",
+  "kind": "concert hall, Washington",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/DAR_Constitution_Hall",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Constitution Hall"
+  ]
  },
  "place-darmstadt": {
   "name": "Darmstadt",
@@ -6129,6 +6154,18 @@
   "source": "https://en.wikipedia.org/wiki/La_Pallice",
   "lat": 46.1583,
   "lon": -1.2278
+ },
+ "place-la-perouse-strait": {
+  "name": "La Perouse Strait",
+  "kind": "strait between Hokkaido and Sakhalin",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/La_P%C3%A9rouse_Strait",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Soya Strait"
+  ]
  },
  "place-labuan": {
   "name": "Labuan",
@@ -11461,6 +11498,15 @@
   "source": "https://en.wikipedia.org/wiki/Sz%C3%A9chenyi_Chain_Bridge",
   "lat": 47.4989,
   "lon": 19.0435
+ },
+ "place-szeged": {
+  "name": "Szeged",
+  "kind": "city on the Tisza",
+  "nation": "Hungary",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Szeged",
+  "lat": null,
+  "lon": null
  },
  "place-taiwan": {
   "name": "Taiwan (Formosa)",

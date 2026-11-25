@@ -89,6 +89,16 @@
   "wikidata": "Q9600",
   "source": "https://en.wikipedia.org/wiki/1936_Winter_Olympics"
  },
+ "op-1937-tour-of-germany-by-the-duke-and-duchess-of-windsor": {
+  "name": "1937 tour of Germany by the Duke and Duchess of Windsor",
+  "kind": "visit",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1937_tour_of_Germany_by_the_Duke_and_Duchess_of_Windsor",
+  "aka": [
+   "Windsors' visit to Nazi Germany"
+  ]
+ },
  "op-1938-austrian-anschluss-referendum": {
   "name": "1938 Austrian Anschluss referendum",
   "kind": "plebiscite",
@@ -1946,6 +1956,16 @@
   "wikidata": "Q714242",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Cape_Bon_(1941)"
  },
+ "op-battle-of-cape-esperance": {
+  "name": "Battle of Cape Esperance",
+  "kind": "naval battle, Guadalcanal campaign",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Cape_Esperance",
+  "aka": [
+   "Second Battle of Savo Island"
+  ]
+ },
  "op-battle-of-cape-gloucester": {
   "name": "Battle of Cape Gloucester",
   "kind": "amphibious battle on New Britain",
@@ -2082,6 +2102,13 @@
   "nation": "US",
   "wikidata": "Q16165506",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Davao"
+ },
+ "op-battle-of-debrecen": {
+  "name": "Battle of Debrecen",
+  "kind": "battle, Eastern Front",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Debrecen"
  },
  "op-battle-of-dombas": {
   "name": "Battle of Dombås",

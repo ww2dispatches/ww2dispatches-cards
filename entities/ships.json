@@ -5832,6 +5832,13 @@
   "wikidata": "Q3272642",
   "source": "https://en.wikipedia.org/wiki/Japanese_cruiser_Abukuma"
  },
+ "ship-japanese-cruiser-aoba": {
+  "name": "Aoba",
+  "kind": "Imperial Japanese Navy heavy cruiser",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_cruiser_Aoba"
+ },
  "ship-japanese-cruiser-ashigara": {
   "name": "Ashigara",
   "kind": "Imperial Japanese Navy heavy cruiser",
@@ -5862,6 +5869,13 @@
   "aka": [
    "Chōkai"
   ]
+ },
+ "ship-japanese-cruiser-furutaka": {
+  "name": "Furutaka",
+  "kind": "Imperial Japanese Navy heavy cruiser",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_cruiser_Furutaka"
  },
  "ship-japanese-cruiser-haguro": {
   "name": "Japanese cruiser Haguro",
@@ -8444,6 +8458,13 @@
   "wikidata": "Q186887",
   "source": "https://en.wikipedia.org/wiki/USS_Bogue"
  },
+ "ship-uss-boise-cl-47": {
+  "name": "USS Boise (CL 47)",
+  "kind": "Brooklyn class light cruiser",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Boise_(CL-47)"
+ },
  "ship-uss-bonefish-ss-223": {
   "name": "USS Bonefish (SS-223)",
   "kind": "U.S. Navy submarine",
@@ -8743,6 +8764,13 @@
   "nation": "US",
   "wikidata": "Q1331366",
   "source": "https://en.wikipedia.org/wiki/USS_Drum_(SS-228)"
+ },
+ "ship-uss-duncan-dd-485": {
+  "name": "USS Duncan (DD 485)",
+  "kind": "Gleaves class destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Duncan_(DD-485)"
  },
  "ship-uss-dunlap": {
   "name": "USS Dunlap (DD-384)",
@@ -10292,6 +10320,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/USS_Vulcan_(AR-5)",
   "wikidata": "Q7875164"
+ },
+ "ship-uss-wahoo-ss-238": {
+  "name": "USS Wahoo (SS 238)",
+  "kind": "Gato class submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Wahoo_(SS-238)"
  },
  "ship-uss-wake": {
   "name": "USS Wake (PR-3)",
