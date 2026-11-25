@@ -968,10 +968,10 @@
   "name": "Belfort",
   "kind": "city in eastern France, Belfort Gap",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q171545",
   "source": "https://en.wikipedia.org/wiki/Belfort",
-  "lat": null,
-  "lon": null
+  "lat": 47.6375,
+  "lon": 6.8628
  },
  "place-belgorod": {
   "name": "Belgorod",
@@ -3191,10 +3191,10 @@
   "name": "Dowlais Ironworks",
   "kind": "ironworks and steelworks",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q3038296",
   "source": "https://en.wikipedia.org/wiki/Dowlais_Ironworks",
-  "lat": null,
-  "lon": null
+  "lat": 51.7604,
+  "lon": -3.3499
  },
  "place-doxato": {
   "name": "Doxato",
@@ -3245,10 +3245,10 @@
   "name": "Drohobych",
   "kind": "city in Galicia, site of the Drohobycz ghetto",
   "nation": "Ukraine",
-  "wikidata": null,
+  "wikidata": "Q158821",
   "source": "https://en.wikipedia.org/wiki/Drohobych",
-  "lat": null,
-  "lon": null,
+  "lat": 49.35,
+  "lon": 23.5,
   "aka": [
    "Drohobycz"
   ]
@@ -3433,10 +3433,10 @@
   "name": "Ebensee concentration camp",
   "kind": "concentration camp, subcamp of Mauthausen",
   "nation": "Austria",
-  "wikidata": null,
+  "wikidata": "Q699561",
   "source": "https://en.wikipedia.org/wiki/Ebensee_concentration_camp",
-  "lat": null,
-  "lon": null
+  "lat": 47.7875,
+  "lon": 13.7578
  },
  "place-edwards-air-force-base": {
   "name": "Edwards Air Force Base",
@@ -4382,10 +4382,10 @@
   "name": "Great Synagogue (Lodz)",
   "kind": "Reform synagogue, destroyed 1939",
   "nation": "Poland",
-  "wikidata": null,
+  "wikidata": "Q1548447",
   "source": "https://en.wikipedia.org/wiki/Great_Synagogue_(%C5%81%C3%B3d%C5%BA)",
-  "lat": null,
-  "lon": null,
+  "lat": 51.77,
+  "lon": 19.454,
   "aka": [
    "Great Synagogue of Łódź"
   ]
@@ -5600,10 +5600,10 @@
   "name": "Janowska concentration camp",
   "kind": "Nazi camp outside Lwow",
   "nation": "Poland",
-  "wikidata": null,
+  "wikidata": "Q2422842",
   "source": "https://en.wikipedia.org/wiki/Janowska_concentration_camp",
-  "lat": null,
-  "lon": null
+  "lat": 49.8542,
+  "lon": 23.99
  },
  "place-jarrow": {
   "name": "Jarrow",
@@ -6092,10 +6092,10 @@
   "name": "Kiel Canal",
   "kind": "canal across Schleswig-Holstein",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q144825",
   "source": "https://en.wikipedia.org/wiki/Kiel_Canal",
-  "lat": null,
-  "lon": null
+  "lat": 53.8833,
+  "lon": 9.1333
  },
  "place-kielce": {
   "name": "Kielce",
@@ -6340,10 +6340,10 @@
   "name": "Korce",
   "kind": "city in southeast Albania",
   "nation": "Albania",
-  "wikidata": null,
+  "wikidata": "Q116341",
   "source": "https://en.wikipedia.org/wiki/Kor%C3%A7%C3%AB",
-  "lat": null,
-  "lon": null,
+  "lat": 40.6167,
+  "lon": 20.7667,
   "aka": [
    "Korçë"
   ]
@@ -7082,10 +7082,10 @@
   "name": "Lodz",
   "kind": "city in central Poland",
   "nation": "Poland",
-  "wikidata": null,
+  "wikidata": "Q580",
   "source": "https://en.wikipedia.org/wiki/%C5%81%C3%B3d%C5%BA",
-  "lat": null,
-  "lon": null,
+  "lat": 51.75,
+  "lon": 19.4667,
   "aka": [
    "Łódź"
   ]
@@ -10571,10 +10571,10 @@
   "name": "Richmond Shipyards",
   "kind": "shipyards",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q7330990",
   "source": "https://en.wikipedia.org/wiki/Richmond_Shipyards",
-  "lat": null,
-  "lon": null
+  "lat": 37.9062,
+  "lon": -122.3647
  },
  "place-riga": {
   "lat": 56.9475,
@@ -13162,10 +13162,10 @@
   "name": "Tyneham",
   "kind": "village, evacuated 1943",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q983926",
   "source": "https://en.wikipedia.org/wiki/Tyneham",
-  "lat": null,
-  "lon": null
+  "lat": 50.623,
+  "lon": -2.169
  },
  "place-tyuleny-island-sea-of-okhotsk": {
   "name": "Tyuleny Island (Sea of Okhotsk)",
