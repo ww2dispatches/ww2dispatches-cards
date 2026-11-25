@@ -1436,6 +1436,16 @@
    "Provisional Government of Free India"
   ]
  },
+ "op-babi-yar": {
+  "name": "Babi Yar",
+  "aka": [
+   "Babyn Yar"
+  ],
+  "kind": "ravine in Kyiv and the massacre there, September 1941",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Babi_Yar"
+ },
  "op-baedeker-blitz": {
   "name": "Baedeker Blitz",
   "kind": "Luftwaffe raids on historic British towns, 1942",
@@ -11756,6 +11766,16 @@
   "nation": "Japan",
   "wikidata": "Q376667",
   "source": "https://en.wikipedia.org/wiki/Tokyo_Express"
+ },
+ "op-topolcany-pogrom": {
+  "name": "Topolcany pogrom",
+  "aka": [
+   "Topoľčany pogrom"
+  ],
+  "kind": "antisemitic riot, September 1945",
+  "nation": "Czechoslovakia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Topo%C4%BE%C4%8Dany_pogrom"
  },
  "op-tornado-outbreak-of-april-12-1945": {
   "name": "Tornado outbreak of April 12, 1945",

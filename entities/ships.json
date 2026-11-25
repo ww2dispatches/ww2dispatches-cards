@@ -2153,6 +2153,13 @@
    "U-593"
   ]
  },
+ "ship-german-submarine-u-596": {
+  "name": "German submarine U 596",
+  "kind": "Type VIIC U boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-596"
+ },
  "ship-german-submarine-u-604": {
   "name": "German submarine U-604",
   "kind": "U-boat",
@@ -2214,6 +2221,13 @@
   "nation": "Germany",
   "wikidata": "Q12804777",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-618"
+ },
+ "ship-german-submarine-u-619": {
+  "name": "German submarine U 619",
+  "kind": "Type VIIC U boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-619"
  },
  "ship-german-submarine-u-62-1939": {
   "name": "German submarine U-62 (1939)",
@@ -2496,6 +2510,13 @@
   "wikidata": "Q549452",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-73_(1940)"
  },
+ "ship-german-submarine-u-739": {
+  "name": "German submarine U 739",
+  "kind": "Type VIIC U boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-739"
+ },
  "ship-german-submarine-u-74-1940": {
   "name": "German submarine U-74 (1940)",
   "kind": "Type VIIB U-boat",
@@ -2753,6 +2774,13 @@
   "aka": [
    "U 91"
   ]
+ },
+ "ship-german-submarine-u-921": {
+  "name": "German submarine U 921",
+  "kind": "Type VIIC U boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-921"
  },
  "ship-german-submarine-u-94-1940": {
   "name": "U-94",
@@ -7048,6 +7076,16 @@
   "aka": [
    "Krasnyi Kavkaz"
   ]
+ },
+ "ship-soviet-minesweeper-t-120": {
+  "name": "Soviet minesweeper T 120",
+  "aka": [
+   "USS Assail (AM 147)"
+  ],
+  "kind": "Admirable class minesweeper, Lend Lease to the Soviet Navy",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Soviet_minesweeper_T-120"
  },
  "ship-soviet-submarine-k-21": {
   "name": "Soviet submarine K-21",

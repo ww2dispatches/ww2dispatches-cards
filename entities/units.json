@@ -5121,6 +5121,13 @@
    "OKH"
   ]
  },
+ "unit-office-of-alien-property-custodian": {
+  "name": "Office of Alien Property Custodian",
+  "kind": "US federal agency holding enemy owned property",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Office_of_Alien_Property_Custodian"
+ },
  "unit-office-of-censorship": {
   "name": "Office of Censorship",
   "kind": "U.S. wartime agency",

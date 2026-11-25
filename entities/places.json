@@ -5384,6 +5384,19 @@
    "Kharkov"
   ]
  },
+ "place-khreshchatyk": {
+  "name": "Khreshchatyk",
+  "aka": [
+   "Kreshchatyk",
+   "Kreshchatik"
+  ],
+  "kind": "main street of Kyiv",
+  "nation": "Soviet Union",
+  "lat": null,
+  "lon": null,
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Khreshchatyk"
+ },
  "place-kiel": {
   "name": "Kiel",
   "kind": "port city",
@@ -7285,6 +7298,19 @@
   "aka": [
    "Fedala"
   ]
+ },
+ "place-mohne-reservoir": {
+  "name": "Mohne Reservoir",
+  "aka": [
+   "Möhne Reservoir",
+   "Mohne dam"
+  ],
+  "kind": "reservoir and dam in the Ruhr region",
+  "nation": "Germany",
+  "lat": null,
+  "lon": null,
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/M%C3%B6hne_Reservoir"
  },
  "place-mokotow-prison": {
   "name": "Mokotow Prison",
@@ -11487,6 +11513,18 @@
   "wikidata": "Q7824771",
   "source": "https://en.wikipedia.org/wiki/Topaz_War_Relocation_Center"
  },
+ "place-topolcany": {
+  "name": "Topolcany",
+  "aka": [
+   "Topoľčany"
+  ],
+  "kind": "town in western Slovakia",
+  "nation": "Czechoslovakia",
+  "lat": null,
+  "lon": null,
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Topo%C4%BE%C4%8Dany"
+ },
  "place-torgau": {
   "name": "Torgau",
   "kind": "town on the Elbe",
@@ -12503,6 +12541,15 @@
   "source": "https://en.wikipedia.org/wiki/Wolfsburg_Volkswagen_Plant",
   "lat": 52.4338,
   "lon": 10.7796
+ },
+ "place-woolston-southampton": {
+  "name": "Woolston, Southampton",
+  "kind": "district of Southampton, site of the Supermarine works",
+  "nation": "Britain",
+  "lat": null,
+  "lon": null,
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Woolston,_Southampton"
  },
  "place-wrocaw": {
   "name": "Breslau",
