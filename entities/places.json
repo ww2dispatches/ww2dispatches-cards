@@ -3102,6 +3102,20 @@
   "lat": 52.5186,
   "lon": 13.4044
  },
+ "place-east-germany": {
+  "name": "East Germany",
+  "kind": "German Democratic Republic, state 1949 to 1990",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/East_Germany",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "German Democratic Republic",
+   "GDR",
+   "DDR"
+  ]
+ },
  "place-east-grinstead": {
   "name": "East Grinstead",
   "kind": "town in West Sussex",
@@ -5500,6 +5514,15 @@
   "wikidata": "Q15979",
   "lat": 48.5711,
   "lon": 7.8089
+ },
+ "place-kembs": {
+  "name": "Kembs",
+  "kind": "commune on the Rhine in Alsace, site of the Kembs barrage",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kembs",
+  "lat": null,
+  "lon": null
  },
  "place-kenitra": {
   "name": "Port Lyautey",

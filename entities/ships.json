@@ -6394,6 +6394,16 @@
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Yukikaze_(1939)",
   "wikidata": "Q715894"
  },
+ "ship-japanese-escort-ship-ishigaki": {
+  "name": "Japanese escort ship Ishigaki",
+  "kind": "Shimushu class escort ship",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_escort_ship_Ishigaki",
+  "aka": [
+   "Ishigaki"
+  ]
+ },
  "ship-japanese-landing-craft-carrier-tamatsu-maru": {
   "name": "Tamatsu Maru",
   "kind": "landing craft depot ship",
@@ -7051,6 +7061,16 @@
   "nation": "Britain",
   "wikidata": "Q21540187",
   "source": "https://en.wikipedia.org/wiki/PS_Portsdown"
+ },
+ "ship-rms-corfu": {
+  "name": "RMS Corfu",
+  "kind": "P&O ocean liner, armed merchant cruiser and troopship",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/RMS_Corfu",
+  "aka": [
+   "SS Corfu"
+  ]
  },
  "ship-rms-empress-of-asia": {
   "name": "RMS Empress of Asia",

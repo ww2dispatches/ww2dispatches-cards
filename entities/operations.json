@@ -397,6 +397,13 @@
   "wikidata": "Q4565228",
   "source": "https://en.wikipedia.org/wiki/1943_Major_League_Baseball_All-Star_Game"
  },
+ "op-1943-naples-post-office-bombing": {
+  "name": "1943 Naples post office bombing",
+  "kind": "time bomb explosion in Naples, 7 October 1943",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1943_Naples_post-office_bombing"
+ },
  "op-1943-surprise-hurricane": {
   "name": "1943 Surprise Hurricane",
   "kind": "hurricane hidden by wartime censorship",
@@ -952,6 +959,13 @@
   "nation": "US",
   "wikidata": "Q249708",
   "source": "https://en.wikipedia.org/wiki/Aleutian_Islands_campaign"
+ },
+ "op-alexandria-protocol": {
+  "name": "Alexandria Protocol",
+  "kind": "1944 agreement of Arab states to form the Arab League",
+  "nation": "Egypt",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Alexandria_Protocol"
  },
  "op-allied-airmen-at-buchenwald-concentration-camp": {
   "name": "Allied airmen at Buchenwald concentration camp",
@@ -3612,6 +3626,13 @@
   "nation": "Germany",
   "wikidata": "Q695943",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Voronezh_(1942)"
+ },
+ "op-battle-of-vyazma-bryansk": {
+  "name": "Battle of Vyazma and Bryansk",
+  "kind": "encirclement battles of Operation Typhoon, October 1941",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Vyazma%E2%80%93Bryansk"
  },
  "op-battle-of-wadi-akarit": {
   "name": "Battle of Wadi Akarit",
@@ -10413,6 +10434,13 @@
   "wikidata": "Q498742",
   "source": "https://en.wikipedia.org/wiki/Peking_Plan"
  },
+ "op-petsamo-kirkenes-offensive": {
+  "name": "Petsamo and Kirkenes offensive",
+  "kind": "Soviet Arctic offensive, October 1944",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Petsamo%E2%80%93Kirkenes_offensive"
+ },
  "op-philadelphia-transit-strike-of-1944": {
   "name": "Philadelphia transit strike of 1944",
   "kind": "white transit workers' strike against the promotion of Black workers",
@@ -12213,6 +12241,16 @@
   "source": "https://en.wikipedia.org/wiki/Transit_of_German_troops_through_Finland_and_Sweden",
   "aka": [
    "Permittenttrafiken"
+  ]
+ },
+ "op-transport-of-bialystok-children": {
+  "name": "Transport of Bialystok children",
+  "kind": "deportation of Jewish children from Bialystok via Theresienstadt to Auschwitz, 1943",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Transport_of_Bia%C5%82ystok_children",
+  "aka": [
+   "Transport of Białystok children"
   ]
  },
  "op-treaties-of-rome-1941": {

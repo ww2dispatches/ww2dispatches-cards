@@ -4131,6 +4131,13 @@
    "Kanoya Kokutai"
   ]
  },
+ "unit-karelian-front": {
+  "name": "Karelian Front",
+  "kind": "Soviet army group",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Karelian_Front"
+ },
  "unit-kempeitai": {
   "name": "Kempeitai",
   "kind": "Imperial Japanese Army military police",
@@ -5613,6 +5620,18 @@
   "source": "https://en.wikipedia.org/wiki/Regiment_%22Savoia_Cavalleria%22_(3rd)",
   "aka": [
    "Savoia Cavalleria"
+  ]
+ },
+ "unit-reich-commissioner-for-the-consolidation-of-german-nationhood": {
+  "name": "Reich Commissioner for the Consolidation of German Nationhood",
+  "kind": "Nazi office for resettlement and Germanization",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Reich_Commissioner_for_the_Consolidation_of_German_Nationhood",
+  "aka": [
+   "RKF",
+   "RKFDV",
+   "Reichskommissar fuer die Festigung deutschen Volkstums"
   ]
  },
  "unit-reich-labour-service": {
