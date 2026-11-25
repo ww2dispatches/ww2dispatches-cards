@@ -2012,6 +2012,13 @@
   "wikidata": "Q18639121",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Ist"
  },
+ "op-battle-of-isurava": {
+  "name": "Battle of Isurava",
+  "kind": "battle",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Isurava"
+ },
  "op-battle-of-iwo-jima": {
   "name": "Battle of Iwo Jima",
   "kind": "battle",
@@ -5392,6 +5399,13 @@
   "nation": "US",
   "wikidata": "Q5492246",
   "source": "https://en.wikipedia.org/wiki/Franksgiving"
+ },
+ "op-free-french-africa": {
+  "name": "Free French Africa",
+  "kind": "Free French territories",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Free_French_Africa"
  },
  "op-freeman-field-mutiny": {
   "name": "Freeman Field mutiny",
@@ -9471,6 +9485,13 @@
   "nation": "Germany",
   "wikidata": "Q2350607",
   "source": "https://en.wikipedia.org/wiki/Rumbula_massacre"
+ },
+ "op-russelsheim-massacre": {
+  "name": "Russelsheim massacre",
+  "kind": "war crime",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/R%C3%BCsselsheim_massacre"
  },
  "op-russo-japanese-war": {
   "name": "Russo-Japanese War",

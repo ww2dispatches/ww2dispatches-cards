@@ -7501,6 +7501,13 @@
   "wikidata": "Q2119791",
   "source": "https://en.wikipedia.org/wiki/USS_Chicago_(CA-29)"
  },
+ "ship-uss-cochino": {
+  "name": "USS Cochino (SS 345)",
+  "kind": "submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Cochino"
+ },
  "ship-uss-cod": {
   "name": "USS Cod (SS-224)",
   "kind": "Gato class submarine",
@@ -8972,6 +8979,13 @@
   "nation": "US",
   "wikidata": "Q1669008",
   "source": "https://en.wikipedia.org/wiki/USS_Tuscaloosa_(CA-37)"
+ },
+ "ship-uss-tusk": {
+  "name": "USS Tusk (SS 426)",
+  "kind": "submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Tusk"
  },
  "ship-uss-tutuila-pr-4": {
   "name": "USS Tutuila (PR-4)",

@@ -1217,6 +1217,17 @@
    "3rd Panzer Army"
   ]
  },
+ "unit-401-tactical-fighter-squadron": {
+  "name": "No. 1 Squadron RCAF",
+  "kind": "fighter squadron",
+  "nation": "Canada",
+  "aka": [
+   "401 Tactical Fighter Squadron",
+   "No. 401 Squadron RCAF"
+  ],
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/401_Tactical_Fighter_Squadron"
+ },
  "unit-40th-infantry-division-united-states": {
   "name": "40th Infantry Division (United States)",
   "kind": "army division",
@@ -6330,6 +6341,16 @@
   "nation": "Canada",
   "wikidata": "Q7775174",
   "source": "https://en.wikipedia.org/wiki/Winnipeg_Grenadiers"
+ },
+ "unit-wnbc": {
+  "name": "WNBC",
+  "kind": "television station",
+  "nation": "US",
+  "aka": [
+   "W2XBS"
+  ],
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/WNBC"
  },
  "unit-women-airforce-service-pilots": {
   "name": "Women Airforce Service Pilots",

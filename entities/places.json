@@ -1600,6 +1600,15 @@
   "lat": 43.8547,
   "lon": -78.8843
  },
+ "place-campile": {
+  "name": "Campile",
+  "kind": "village",
+  "nation": "Ireland",
+  "lat": null,
+  "lon": null,
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Campile"
+ },
  "place-campobello-island": {
   "name": "Campobello Island",
   "kind": "island, New Brunswick, Roosevelt summer home",
@@ -2773,6 +2782,15 @@
    "Joint Long Range Proving Ground"
   ]
  },
+ "place-ebbets-field": {
+  "name": "Ebbets Field",
+  "kind": "ballpark",
+  "nation": "US",
+  "lat": null,
+  "lon": null,
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ebbets_Field"
+ },
  "place-edwards-air-force-base": {
   "name": "Edwards Air Force Base",
   "kind": "test base in California, then Muroc Army Air Field",
@@ -3236,6 +3254,15 @@
    "Danzig",
    "Gdansk"
   ]
+ },
+ "place-french-chad": {
+  "name": "French Chad",
+  "kind": "French colony",
+  "nation": "France",
+  "lat": null,
+  "lon": null,
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/French_Chad"
  },
  "place-french-guiana": {
   "name": "French Guiana",
@@ -7466,6 +7493,15 @@
   "source": "https://en.wikipedia.org/wiki/Norwich",
   "lat": 52.6286,
   "lon": 1.2928
+ },
+ "place-notre-dame-de-paris": {
+  "name": "Notre Dame de Paris",
+  "kind": "cathedral",
+  "nation": "France",
+  "lat": null,
+  "lon": null,
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Notre-Dame_de_Paris"
  },
  "place-nottingham": {
   "name": "Nottingham",
