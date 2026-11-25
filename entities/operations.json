@@ -6,6 +6,13 @@
   "wikidata": "Q4030007",
   "source": "https://en.wikipedia.org/wiki/1_May_1944_Kaisariani_executions"
  },
+ "op-1-november-1944-reconnaissance-sortie-over-japan": {
+  "name": "1 November 1944 reconnaissance sortie over Japan",
+  "kind": "photo reconnaissance mission",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1_November_1944_reconnaissance_sortie_over_Japan"
+ },
  "op-15th-academy-awards": {
   "name": "15th Academy Awards",
   "kind": "Film awards ceremony, 4 March 1943",
@@ -824,6 +831,16 @@
   "nation": "US",
   "wikidata": "Q4673632",
   "source": "https://en.wikipedia.org/wiki/Acheson%E2%80%93Lilienthal_Report"
+ },
+ "op-action-of-1-november-1944": {
+  "name": "Action of 1 November 1944",
+  "kind": "naval action",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Action_of_1_November_1944",
+  "aka": [
+   "Ambush off Pag Island"
+  ]
  },
  "op-action-of-11-january-1944": {
   "name": "Action of 11 January 1944",
@@ -5137,6 +5154,13 @@
    "Hague Congress"
   ]
  },
+ "op-conscription-crisis-of-1944": {
+  "name": "Conscription Crisis of 1944",
+  "kind": "political crisis",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Conscription_Crisis_of_1944"
+ },
  "op-constituent-national-assembly-south-korea": {
   "name": "Constituent National Assembly (South Korea)",
   "kind": "first South Korean National Assembly",
@@ -6041,6 +6065,13 @@
   "aka": [
    "Military Order No. 4"
   ]
+ },
+ "op-escape-from-fort-stanton": {
+  "name": "Escape from Fort Stanton",
+  "kind": "internee escape",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Escape_from_Fort_Stanton"
  },
  "op-european-banking-crisis-of-1931": {
   "name": "European banking crisis of 1931",
@@ -8628,6 +8659,13 @@
    "Volhynia massacre"
   ]
  },
+ "op-matanikau-offensive": {
+  "name": "Matanikau Offensive",
+  "kind": "battle",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Matanikau_Offensive"
+ },
  "op-maud-committee": {
   "name": "MAUD Committee",
   "kind": "British atomic bomb feasibility committee",
@@ -9985,6 +10023,13 @@
   "nation": "Japan",
   "wikidata": "Q696448",
   "source": "https://en.wikipedia.org/wiki/Operation_Ichi-Go"
+ },
+ "op-operation-infatuate": {
+  "name": "Operation Infatuate",
+  "kind": "amphibious assault",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Infatuate"
  },
  "op-operation-iskra": {
   "name": "Operation Iskra",

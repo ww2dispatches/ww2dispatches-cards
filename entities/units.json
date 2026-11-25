@@ -4599,6 +4599,16 @@
    "Monbusho"
   ]
  },
+ "unit-ministry-of-greater-east-asia": {
+  "name": "Ministry of Greater East Asia",
+  "kind": "Japanese government ministry",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ministry_of_Greater_East_Asia",
+  "aka": [
+   "Greater East Asia Ministry"
+  ]
+ },
  "unit-ministry-of-health-labour-and-welfare": {
   "name": "Ministry of Health and Welfare (Japan)",
   "kind": "government ministry",
@@ -4618,6 +4628,16 @@
   "nation": "Britain",
   "wikidata": "Q821726",
   "source": "https://en.wikipedia.org/wiki/Ministry_of_Information_(United_Kingdom)"
+ },
+ "unit-ministry-of-munitions-japan": {
+  "name": "Ministry of Munitions (Japan)",
+  "kind": "Japanese government ministry",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ministry_of_Munitions_(Japan)",
+  "aka": [
+   "Munitions Ministry"
+  ]
  },
  "unit-ministry-of-the-navy-japan": {
   "name": "Ministry of the Navy (Japan)",
@@ -4849,6 +4869,13 @@
   "nation": "Australia",
   "wikidata": "Q7043119",
   "source": "https://en.wikipedia.org/wiki/No._1_Wing_RAAF"
+ },
+ "unit-no-10-inter-allied-commando": {
+  "name": "No. 10 (Inter-Allied) Commando",
+  "kind": "multinational commando unit",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/No._10_(Inter-Allied)_Commando"
  },
  "unit-no-10-squadron-raaf": {
   "name": "No. 10 Squadron RAAF",

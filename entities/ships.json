@@ -1679,6 +1679,13 @@
   "wikidata": "Q14623219",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-404"
  },
+ "ship-german-submarine-u-405": {
+  "name": "U-405",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-405"
+ },
  "ship-german-submarine-u-407": {
   "name": "U-407",
   "kind": "German Type VIIC U-boat",
@@ -3661,6 +3668,13 @@
   "wikidata": "Q705231",
   "source": "https://en.wikipedia.org/wiki/HMS_Aurora_(12)"
  },
+ "ship-hms-avon-vale": {
+  "name": "HMS Avon Vale (L06)",
+  "kind": "Hunt class destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Avon_Vale"
+ },
  "ship-hms-barham-04": {
   "name": "HMS Barham (04)",
   "kind": "battleship",
@@ -5441,6 +5455,13 @@
   "wikidata": "Q5634932",
   "source": "https://en.wikipedia.org/wiki/HMS_Westcott"
  },
+ "ship-hms-wheatland": {
+  "name": "HMS Wheatland",
+  "kind": "Hunt class destroyer",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Wheatland"
+ },
  "ship-hms-whirlwind-d30": {
   "name": "HMS Whirlwind (D30)",
   "kind": "British W class destroyer",
@@ -5730,6 +5751,17 @@
   "nation": "Italy",
   "wikidata": "Q3624422",
   "source": "https://en.wikipedia.org/wiki/Italian_destroyer_Artigliere_(1937)"
+ },
+ "ship-italian-destroyer-audace-1916": {
+  "name": "Audace (TA20)",
+  "kind": "ex-Italian destroyer, German torpedo boat TA20",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_destroyer_Audace_(1916)",
+  "aka": [
+   "TA20",
+   "TA 20"
+  ]
  },
  "ship-italian-destroyer-folgore": {
   "name": "Folgore",
@@ -8700,6 +8732,13 @@
   "nation": "US",
   "wikidata": "Q3180556",
   "source": "https://en.wikipedia.org/wiki/USS_Aaron_Ward_(DD-483)"
+ },
+ "ship-uss-abner-read-dd-526": {
+  "name": "USS Abner Read (DD-526)",
+  "kind": "Fletcher class destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Abner_Read_(DD-526)"
  },
  "ship-uss-albacore-ss-218": {
   "name": "USS Albacore (SS-218)",
