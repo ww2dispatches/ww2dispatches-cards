@@ -1076,6 +1076,13 @@
   "wikidata": "Q4051979",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-269"
  },
+ "ship-german-submarine-u-270": {
+  "name": "U-270",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-270"
+ },
  "ship-german-submarine-u-277": {
   "name": "U-277",
   "kind": "Type VIIC U-boat",
@@ -7483,6 +7490,13 @@
   "nation": "US",
   "wikidata": "Q1996015",
   "source": "https://en.wikipedia.org/wiki/USS_Flasher_(SS-249)"
+ },
+ "ship-uss-flier": {
+  "name": "USS Flier (SS-250)",
+  "kind": "Gato class submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Flier"
  },
  "ship-uss-flying-fish-ss-229": {
   "name": "USS Flying Fish (SS-229)",

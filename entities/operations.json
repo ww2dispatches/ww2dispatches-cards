@@ -147,6 +147,13 @@
   "wikidata": "Q4564626",
   "source": "https://en.wikipedia.org/wiki/1939_royal_tour_of_Canada"
  },
+ "op-1940-canberra-air-disaster": {
+  "name": "1940 Canberra air disaster",
+  "kind": "air crash",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1940_Canberra_air_disaster"
+ },
  "op-1940-democratic-national-convention": {
   "name": "1940 Democratic National Convention",
   "kind": "U.S. party convention",
@@ -717,6 +724,16 @@
   "nation": "US",
   "wikidata": "Q2896528",
   "source": "https://en.wikipedia.org/wiki/Action_off_Bougainville"
+ },
+ "op-adlertag": {
+  "name": "Adlertag",
+  "kind": "Luftwaffe offensive opening day",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Adlertag",
+  "aka": [
+   "Eagle Day"
+  ]
  },
  "op-admiralty-islands-campaign": {
   "name": "Admiralty Islands campaign",
@@ -4791,6 +4808,16 @@
   "wikidata": "Q310218",
   "source": "https://en.wikipedia.org/wiki/Enabling_Act_of_1933"
  },
+ "op-enemy-airmen-s-act": {
+  "name": "Enemy Airmen's Act",
+  "kind": "Japanese military order",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Enemy_Airmen%27s_Act",
+  "aka": [
+   "Military Order No. 4"
+  ]
+ },
  "op-european-banking-crisis-of-1931": {
   "name": "European banking crisis of 1931",
   "kind": "financial crisis",
@@ -4907,6 +4934,16 @@
   "source": "https://en.wikipedia.org/wiki/Fabrikaktion",
   "aka": [
    "Factory Action"
+  ]
+ },
+ "op-falaise-pocket": {
+  "name": "Falaise pocket",
+  "kind": "battle",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Falaise_pocket",
+  "aka": [
+   "Falaise gap"
   ]
  },
  "op-fall-of-barcelona": {

@@ -1878,6 +1878,13 @@
   "source": "https://en.wikipedia.org/wiki/86th_Training_Division",
   "note": "English Wikipedia title is now 86th Training Division; 86th Infantry Division (United States) redirects to it."
  },
+ "unit-88th-division-national-revolutionary-army": {
+  "name": "88th Division (National Revolutionary Army)",
+  "kind": "Chinese army division",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/88th_Division_(National_Revolutionary_Army)"
+ },
  "unit-89th-infantry-division-united-states": {
   "name": "89th Infantry Division (United States)",
   "kind": "US Army infantry division",
@@ -2266,6 +2273,16 @@
   "source": "https://en.wikipedia.org/wiki/Auergesellschaft",
   "aka": [
    "Auer"
+  ]
+ },
+ "unit-australian-women-s-army-service": {
+  "name": "Australian Women's Army Service",
+  "kind": "women's army service",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Australian_Women%27s_Army_Service",
+  "aka": [
+   "AWAS"
   ]
  },
  "unit-auxiliary-fire-service": {
@@ -3636,6 +3653,16 @@
   "source": "https://en.wikipedia.org/wiki/Kampfgeschwader_100",
   "aka": [
    "KG 100"
+  ]
+ },
+ "unit-kampfgeschwader-2": {
+  "name": "Kampfgeschwader 2",
+  "kind": "Luftwaffe bomber wing",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kampfgeschwader_2",
+  "aka": [
+   "KG 2"
   ]
  },
  "unit-kampfgeschwader-26": {

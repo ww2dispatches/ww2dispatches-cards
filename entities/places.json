@@ -384,6 +384,15 @@
   "lat": 55.6432,
   "lon": -4.8097
  },
+ "place-argentan": {
+  "name": "Argentan",
+  "kind": "town in Normandy",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Argentan",
+  "lat": null,
+  "lon": null
+ },
  "place-aruba": {
   "name": "Aruba",
   "kind": "island",
@@ -510,6 +519,15 @@
   "source": "https://en.wikipedia.org/wiki/Baku",
   "lat": 40.3667,
   "lon": 49.8352
+ },
+ "place-balabac-strait": {
+  "name": "Balabac Strait",
+  "kind": "strait between Palawan and Borneo",
+  "nation": "Philippines",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Balabac_Strait",
+  "lat": null,
+  "lon": null
  },
  "place-balaklava": {
   "name": "Balaklava",
@@ -2331,6 +2349,15 @@
   "aka": [
    "Salisbury Hall"
   ]
+ },
+ "place-dearborn-michigan": {
+  "name": "Dearborn, Michigan",
+  "kind": "city",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Dearborn,_Michigan",
+  "lat": null,
+  "lon": null
  },
  "place-debrecen": {
   "name": "Debrecen",
