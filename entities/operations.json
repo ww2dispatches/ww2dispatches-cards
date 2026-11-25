@@ -3235,6 +3235,13 @@
   "wikidata": "Q4921256",
   "source": "https://en.wikipedia.org/wiki/Black_May_(World_War_II)"
  },
+ "op-blackout-wartime": {
+  "name": "Blackout (wartime)",
+  "kind": "civil defence practice of hiding lights from enemy aircraft",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Blackout_(wartime)"
+ },
  "op-blockade-of-germany-1939-1945": {
   "name": "Blockade of Germany (1939 to 1945)",
   "kind": "Allied economic blockade",
@@ -4501,6 +4508,13 @@
   "nation": "Greece",
   "wikidata": "Q688821",
   "source": "https://en.wikipedia.org/wiki/Distomo_massacre"
+ },
+ "op-division-of-korea": {
+  "name": "Division of Korea",
+  "kind": "1945 partition of Korea into occupation zones",
+  "nation": "Korea",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Division_of_Korea"
  },
  "op-doctors-trial": {
   "name": "Doctors' Trial",

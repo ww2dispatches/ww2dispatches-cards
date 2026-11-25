@@ -1741,6 +1741,13 @@
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-559",
   "wikidata": "Q549463"
  },
+ "ship-german-submarine-u-56-1938": {
+  "name": "U-56",
+  "kind": "Type IIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-56_(1938)"
+ },
  "ship-german-submarine-u-563": {
   "name": "German submarine U-563",
   "kind": "Type VIIC U-boat",
@@ -4252,6 +4259,13 @@
   "wikidata": "Q2291385",
   "source": "https://en.wikipedia.org/wiki/HMT_Empire_Windrush"
  },
+ "ship-hmt-islay": {
+  "name": "HMT Islay (T172)",
+  "kind": "Royal Navy armed trawler",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMT_Islay"
+ },
  "ship-hmt-rohna": {
   "name": "HMT Rohna",
   "kind": "troopship",
@@ -4569,6 +4583,13 @@
   "wikidata": "Q3904083",
   "source": "https://en.wikipedia.org/wiki/Italian_submarine_Pietro_Micca_(1935)"
  },
+ "ship-italian-submarine-scire-1938": {
+  "name": "Scirè",
+  "kind": "Adua class submarine, human torpedo carrier",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_submarine_Scir%C3%A8_(1938)"
+ },
  "ship-italian-torpedo-boat-lupo": {
   "name": "Italian torpedo boat Lupo",
   "kind": "Spica class torpedo boat",
@@ -4775,6 +4796,13 @@
   "nation": "Japan",
   "wikidata": "Q1573425",
   "source": "https://en.wikipedia.org/wiki/Japanese_cruiser_Jints%C5%AB"
+ },
+ "ship-japanese-cruiser-kako": {
+  "name": "Kako",
+  "kind": "Furutaka class heavy cruiser",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_cruiser_Kako"
  },
  "ship-japanese-cruiser-kashii": {
   "name": "Japanese cruiser Kashii",
@@ -5899,6 +5927,17 @@
   "nation": "Britain",
   "wikidata": "Q752939",
   "source": "https://en.wikipedia.org/wiki/RMS_Queen_Mary"
+ },
+ "ship-rms-transylvania": {
+  "name": "HMS Transylvania (F 56)",
+  "kind": "Anchor Line liner, armed merchant cruiser",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/RMS_Transylvania",
+  "aka": [
+   "RMS Transylvania"
+  ],
+  "note": "The month page links RMS Transylvania (1926), which redirects to RMS Transylvania; confirm the article is the 1925 Anchor liner and not a disambiguation page."
  },
  "ship-rms-windsor-castle-1921": {
   "name": "RMS Windsor Castle (1921)",
@@ -8157,6 +8196,14 @@
   "nation": "US",
   "wikidata": "Q7873621",
   "source": "https://en.wikipedia.org/wiki/USS_S-26"
+ },
+ "ship-uss-s-44-ss-155": {
+  "name": "USS S-44 (SS-155)",
+  "kind": "S class submarine",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_S-44_(SS-155)",
+  "note": "Title taken from the link in the Kako article; the Wikidata check was rate limited, so confirm it."
  },
  "ship-uss-sailfish-ss-192": {
   "name": "USS Sailfish (SS-192)",

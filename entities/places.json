@@ -1,4 +1,13 @@
 {
+ "place-38th-parallel-north": {
+  "name": "38th parallel north",
+  "kind": "line of latitude, the 1945 dividing line in Korea",
+  "nation": "Korea",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/38th_parallel_north",
+  "lat": null,
+  "lon": null
+ },
  "place-aachen": {
   "name": "Aachen",
   "kind": "city",
@@ -7594,6 +7603,15 @@
   ],
   "lat": 39.89,
   "lon": -75.18
+ },
+ "place-piccadilly-circus": {
+  "name": "Piccadilly Circus",
+  "kind": "road junction and public space in London's West End",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Piccadilly_Circus",
+  "lat": null,
+  "lon": null
  },
  "place-piraeus": {
   "name": "Piraeus",
