@@ -490,6 +490,13 @@
   "wikidata": "Q984215",
   "source": "https://en.wikipedia.org/wiki/Alfred_Blalock"
  },
+ "person-alfred-e-montgomery": {
+  "name": "Alfred E. Montgomery",
+  "kind": "US Navy admiral",
+  "nation": "US",
+  "wikidata": "Q4722585",
+  "source": "https://en.wikipedia.org/wiki/Alfred_E._Montgomery"
+ },
  "person-alfred-jodl": {
   "name": "Alfred Jodl",
   "kind": "German Wehrmacht general, chief of the operations staff",
@@ -3429,6 +3436,13 @@
   "wikidata": "Q24003474",
   "source": "https://en.wikipedia.org/wiki/Ellen_Savage"
  },
+ "person-ellen-wilkinson": {
+  "name": "Ellen Wilkinson",
+  "kind": "British Labour MP for Jarrow",
+  "nation": "Britain",
+  "wikidata": "Q332751",
+  "source": "https://en.wikipedia.org/wiki/Ellen_Wilkinson"
+ },
  "person-elliott-buckmaster": {
   "name": "Elliott Buckmaster",
   "kind": "captain of USS Yorktown",
@@ -4261,6 +4275,13 @@
   "nation": "Poland",
   "wikidata": "Q60639474",
   "source": "https://en.wikipedia.org/wiki/Franciszek_Honiok"
+ },
+ "person-franciszek-kleeberg": {
+  "name": "Franciszek Kleeberg",
+  "kind": "Polish general",
+  "nation": "Poland",
+  "wikidata": "Q2354908",
+  "source": "https://en.wikipedia.org/wiki/Franciszek_Kleeberg"
  },
  "person-franciszek-sikorski": {
   "name": "Franciszek Sikorski",
@@ -6803,6 +6824,13 @@
   "wikidata": "Q5735517",
   "source": "https://en.wikipedia.org/wiki/Herbert_Schmidt_(Fallschirmj%C3%A4ger)"
  },
+ "person-herbert-sorrell": {
+  "name": "Herbert Sorrell",
+  "kind": "American union leader",
+  "nation": "US",
+  "wikidata": "Q3133470",
+  "source": "https://en.wikipedia.org/wiki/Herbert_Sorrell"
+ },
  "person-herbert-wohlfarth": {
   "name": "Herbert Wohlfarth",
   "kind": "U-boat commander, U-556",
@@ -6837,6 +6865,16 @@
   "nation": "Germany",
   "wikidata": "Q62636",
   "source": "https://en.wikipedia.org/wiki/Hermann-Bernhard_Ramcke"
+ },
+ "person-hermann-friedrich-graebe": {
+  "name": "Hermann Friedrich Graebe",
+  "kind": "German engineer, Holocaust witness, Righteous Among the Nations",
+  "nation": "Germany",
+  "wikidata": "Q70117",
+  "source": "https://en.wikipedia.org/wiki/Hermann_Friedrich_Graebe",
+  "aka": [
+   "Hermann Gräbe"
+  ]
  },
  "person-hermann-goring": {
   "name": "Hermann Goering",
@@ -12987,6 +13025,13 @@
   "source": "https://en.wikipedia.org/wiki/Robert_A._Owens",
   "wikidata": "Q7341279"
  },
+ "person-robert-a-taft": {
+  "name": "Robert A. Taft",
+  "kind": "US senator from Ohio",
+  "nation": "US",
+  "wikidata": "Q519730",
+  "source": "https://en.wikipedia.org/wiki/Robert_A._Taft"
+ },
  "person-robert-brasillach": {
   "name": "Robert Brasillach",
   "kind": "French collaborationist writer and editor",
@@ -14210,6 +14255,16 @@
   "wikidata": "Q216140",
   "source": "https://en.wikipedia.org/wiki/Stanley_Matthews"
  },
+ "person-stefan-starzynski": {
+  "name": "Stefan Starzynski",
+  "kind": "mayor of Warsaw",
+  "nation": "Poland",
+  "wikidata": "Q3849484",
+  "source": "https://en.wikipedia.org/wiki/Stefan_Starzy%C5%84ski",
+  "aka": [
+   "Stefan Starzyński"
+  ]
+ },
  "person-stefan-zweig": {
   "name": "Stefan Zweig",
   "kind": "Austrian writer in exile",
@@ -15089,6 +15144,13 @@
   "nation": "Norway",
   "wikidata": "Q479228",
   "source": "https://en.wikipedia.org/wiki/Viggo_Hansteen"
+ },
+ "person-vilhelms-munters": {
+  "name": "Vilhelms Munters",
+  "kind": "Latvian foreign minister",
+  "nation": "Latvia",
+  "wikidata": "Q384107",
+  "source": "https://en.wikipedia.org/wiki/Vilhelms_Munters"
  },
  "person-vincent-auriol": {
   "name": "Vincent Auriol",

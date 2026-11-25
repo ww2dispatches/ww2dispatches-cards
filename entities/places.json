@@ -2967,6 +2967,15 @@
   "lat": 53.3497,
   "lon": -6.2603
  },
+ "place-dubno": {
+  "name": "Dubno",
+  "kind": "town",
+  "nation": "Ukraine",
+  "wikidata": "Q932184",
+  "source": "https://en.wikipedia.org/wiki/Dubno",
+  "lat": null,
+  "lon": null
+ },
  "place-dumbarton-oaks": {
   "name": "Dumbarton Oaks",
   "kind": "historic estate in Washington, D.C.",
@@ -5045,6 +5054,15 @@
   "source": "https://en.wikipedia.org/wiki/Jajce",
   "lat": 44.3403,
   "lon": 17.2572
+ },
+ "place-jarrow": {
+  "name": "Jarrow",
+  "kind": "town",
+  "nation": "Britain",
+  "wikidata": "Q782155",
+  "source": "https://en.wikipedia.org/wiki/Jarrow",
+  "lat": null,
+  "lon": null
  },
  "place-jasenovac-concentration-camp": {
   "name": "Jasenovac concentration camp",
@@ -8582,6 +8600,15 @@
   "source": "https://en.wikipedia.org/wiki/Ottawa_Civic_Hospital",
   "lat": 45.3928,
   "lon": -75.7211
+ },
+ "place-outer-drive-bridge": {
+  "name": "Outer Drive Bridge",
+  "kind": "bridge",
+  "nation": "US",
+  "wikidata": "Q7111973",
+  "source": "https://en.wikipedia.org/wiki/Outer_Drive_Bridge",
+  "lat": null,
+  "lon": null
  },
  "place-ovetari-chapel": {
   "name": "Ovetari Chapel",

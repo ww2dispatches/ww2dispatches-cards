@@ -708,6 +708,13 @@
   "wikidata": "Q3086706",
   "source": "https://en.wikipedia.org/wiki/999_(emergency_telephone_number)"
  },
+ "op-a-total-and-unmitigated-defeat": {
+  "name": "A total and unmitigated defeat",
+  "kind": "parliamentary speech",
+  "nation": "Britain",
+  "wikidata": "Q20712491",
+  "source": "https://en.wikipedia.org/wiki/A_total_and_unmitigated_defeat"
+ },
  "op-aarhus-air-raid": {
   "name": "Aarhus air raid",
   "kind": "air raid",
@@ -2354,6 +2361,13 @@
   "nation": "France",
   "wikidata": "Q702579",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Ko_Chang"
+ },
+ "op-battle-of-kock-1939": {
+  "name": "Battle of Kock (1939)",
+  "kind": "battle",
+  "nation": "Poland",
+  "wikidata": "Q641183",
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Kock_(1939)"
  },
  "op-battle-of-kohima": {
   "name": "Battle of Kohima",
@@ -6641,6 +6655,13 @@
    "Hoare-Laval Plan"
   ]
  },
+ "op-hollywood-black-friday": {
+  "name": "Hollywood Black Friday",
+  "kind": "strike and riot",
+  "nation": "US",
+  "wikidata": "Q5882598",
+  "source": "https://en.wikipedia.org/wiki/Hollywood_Black_Friday"
+ },
  "op-holocaust-of-kedros": {
   "name": "Holocaust of Kedros",
   "kind": "German reprisal massacre, Crete 1944",
@@ -7126,6 +7147,16 @@
   "nation": "Soviet Union",
   "wikidata": "Q2664040",
   "source": "https://en.wikipedia.org/wiki/Japanese_prisoners_of_war_in_the_Soviet_Union"
+ },
+ "op-jarrow-march": {
+  "name": "Jarrow March",
+  "kind": "protest march",
+  "nation": "Britain",
+  "wikidata": "Q2729231",
+  "source": "https://en.wikipedia.org/wiki/Jarrow_March",
+  "aka": [
+   "Jarrow Crusade"
+  ]
  },
  "op-jedwabne-pogrom": {
   "name": "Jedwabne pogrom",
@@ -10440,6 +10471,13 @@
    "Razzia van Putten"
   ]
  },
+ "op-quarantine-speech": {
+  "name": "Quarantine Speech",
+  "kind": "presidential speech",
+  "nation": "US",
+  "wikidata": "Q2122297",
+  "source": "https://en.wikipedia.org/wiki/Quarantine_Speech"
+ },
  "op-quebec-agreement": {
   "name": "Quebec Agreement",
   "kind": "Anglo American atomic agreement, August 1943",
@@ -11463,6 +11501,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q220602",
   "source": "https://en.wikipedia.org/wiki/Soviet%E2%80%93Japanese_War"
+ },
+ "op-soviet-latvian-mutual-assistance-treaty": {
+  "name": "Soviet Latvian Mutual Assistance Treaty",
+  "kind": "treaty",
+  "nation": "Soviet Union",
+  "wikidata": "Q4342376",
+  "source": "https://en.wikipedia.org/wiki/Soviet%E2%80%93Latvian_Mutual_Assistance_Treaty"
  },
  "op-soviet-occupation-of-bessarabia-and-northern-bukovina": {
   "name": "Soviet occupation of Bessarabia and Northern Bukovina",
