@@ -1710,6 +1710,13 @@
   "wikidata": "Q654830",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-449"
  },
+ "ship-german-submarine-u-45-1938": {
+  "name": "U 45 (1938)",
+  "kind": "German U boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-45_(1938)"
+ },
  "ship-german-submarine-u-454": {
   "name": "U-454",
   "kind": "U-boat",
@@ -7499,6 +7506,13 @@
   "wikidata": "Q165142",
   "source": "https://en.wikipedia.org/wiki/SS_Cap_Arcona"
  },
+ "ship-ss-caribou": {
+  "name": "SS Caribou",
+  "kind": "Newfoundland Railway passenger ferry",
+  "nation": "Newfoundland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Caribou"
+ },
  "ship-ss-china-arrow": {
   "name": "SS China Arrow",
   "kind": "oil tanker",
@@ -8444,6 +8458,13 @@
   "wikidata": "Q6139156",
   "source": "https://en.wikipedia.org/wiki/USS_Borie_(DD-215)"
  },
+ "ship-uss-boston-ca-69": {
+  "name": "USS Boston (CA 69)",
+  "kind": "US Navy heavy cruiser",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Boston_(CA-69)"
+ },
  "ship-uss-bowfin": {
   "name": "USS Bowfin (SS-287)",
   "kind": "submarine",
@@ -9102,6 +9123,13 @@
   "nation": "US",
   "wikidata": "Q1890816",
   "source": "https://en.wikipedia.org/wiki/USS_Houston_(CA-30)"
+ },
+ "ship-uss-houston-cl-81": {
+  "name": "USS Houston (CL 81)",
+  "kind": "US Navy light cruiser",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Houston_(CL-81)"
  },
  "ship-uss-howard-d-crow": {
   "name": "USS Howard D. Crow (DE-252)",

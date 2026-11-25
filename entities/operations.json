@@ -11323,6 +11323,16 @@
    "Octagon"
   ]
  },
+ "op-second-schweinfurt-raid": {
+  "name": "Second Schweinfurt raid",
+  "kind": "USAAF daylight bombing raid",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Second_Schweinfurt_raid",
+  "aka": [
+   "Black Thursday"
+  ]
+ },
  "op-second-sino-japanese-war": {
   "name": "Second Sino-Japanese War",
   "kind": "war",
@@ -11701,6 +11711,13 @@
   "nation": "US",
   "wikidata": "Q1149060",
   "source": "https://en.wikipedia.org/wiki/Smyth_Report"
+ },
+ "op-sobibor-uprising": {
+  "name": "Sobibor uprising",
+  "kind": "prisoner revolt and mass escape",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Sobibor_uprising"
  },
  "op-soham-rail-disaster": {
   "name": "Soham rail disaster",

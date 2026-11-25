@@ -446,6 +446,16 @@
   "wikidata": "Q562665",
   "source": "https://en.wikipedia.org/wiki/Alexander_Patch"
  },
+ "person-alexander-pechersky": {
+  "name": "Alexander Pechersky",
+  "kind": "Soviet Red Army officer and POW, leader of the Sobibor uprising",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Alexander_Pechersky",
+  "aka": [
+   "Sasha Pechersky"
+  ]
+ },
  "person-alexander-r-nininger": {
   "name": "Alexander R. Nininger",
   "kind": "U.S. Army lieutenant, Medal of Honor",
@@ -2277,6 +2287,16 @@
   "nation": "Britain",
   "wikidata": "Q864115",
   "source": "https://en.wikipedia.org/wiki/Christopher_Maltby"
+ },
+ "person-chuck-yeager": {
+  "name": "Chuck Yeager",
+  "kind": "US Air Force test pilot",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Chuck_Yeager",
+  "aka": [
+   "Charles E. Yeager"
+  ]
  },
  "person-chuichi-hara": {
   "name": "Chuichi Hara",
@@ -8845,6 +8865,13 @@
   "wikidata": "Q539845",
   "source": "https://en.wikipedia.org/wiki/Jos%C3%A9_Calvo_Sotelo"
  },
+ "person-jose-p-laurel": {
+  "name": "Jose P. Laurel",
+  "kind": "President of the Japanese sponsored Second Philippine Republic",
+  "nation": "Philippines",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Jose_P._Laurel"
+ },
  "person-josef-frantisek": {
   "name": "Josef Frantisek",
   "kind": "Czech fighter pilot, No. 303 Squadron, Battle of Britain ace",
@@ -10784,6 +10811,13 @@
   "nation": "US",
   "wikidata": "Q238364",
   "source": "https://en.wikipedia.org/wiki/Margaret_Bourke-White"
+ },
+ "person-margaret-brooke-canadian-naval-officer": {
+  "name": "Margaret Brooke",
+  "kind": "Royal Canadian Navy nursing sister, Caribou survivor",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Margaret_Brooke_(Canadian_naval_officer)"
  },
  "person-margaret-truman": {
   "name": "Margaret Truman",
@@ -13230,6 +13264,13 @@
   "nation": "Germany",
   "wikidata": "Q91641",
   "source": "https://en.wikipedia.org/wiki/Robert_D%C3%B6pel"
+ },
+ "person-robert-drayson": {
+  "name": "Robert Drayson",
+  "kind": "Royal Navy sub lieutenant, commanded MTB 236",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Robert_Drayson"
  },
  "person-robert-e-dixon": {
   "name": "Robert E. Dixon",
@@ -15877,6 +15918,13 @@
   "nation": "Germany",
   "wikidata": "Q8002086",
   "source": "https://en.wikipedia.org/wiki/Wilhelm_Bach"
+ },
+ "person-wilhelm-burgdorf": {
+  "name": "Wilhelm Burgdorf",
+  "kind": "German general, chief of Army Personnel Office",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Wilhelm_Burgdorf"
  },
  "person-wilhelm-canaris": {
   "name": "Wilhelm Canaris",
