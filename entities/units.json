@@ -1394,6 +1394,17 @@
    "3rd Panzer Army"
   ]
  },
+ "unit-40-commando": {
+  "name": "No. 40 (Royal Marine) Commando",
+  "kind": "Royal Marines commando unit",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/40_Commando",
+  "aka": [
+   "40 Commando",
+   "40RM Commando"
+  ]
+ },
  "unit-401-tactical-fighter-squadron": {
   "name": "No. 1 Squadron RCAF",
   "kind": "fighter squadron",

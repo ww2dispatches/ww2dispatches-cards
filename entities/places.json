@@ -113,6 +113,18 @@
   "lat": 48.1388,
   "lon": 11.6074
  },
+ "place-adwa": {
+  "name": "Adwa",
+  "kind": "town in Tigray, Ethiopia",
+  "nation": "Ethiopia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Adwa",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Adowa"
+  ]
+ },
  "place-aga-khan-palace": {
   "name": "Aga Khan Palace",
   "kind": "palace in Pune used as a British detention site",
@@ -2985,6 +2997,19 @@
   "lat": null,
   "lon": null
  },
+ "place-dulag-121-camp-in-pruszkow": {
+  "name": "Dulag 121 camp in Pruszkow",
+  "kind": "German transit camp for expelled Warsaw civilians",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Dulag_121_camp_in_Pruszk%C3%B3w",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Dulag 121",
+   "Durchgangslager 121"
+  ]
+ },
  "place-dumbarton-oaks": {
   "name": "Dumbarton Oaks",
   "kind": "historic estate in Washington, D.C.",
@@ -3472,6 +3497,15 @@
   ],
   "lat": 41.5266,
   "lon": -93.6152
+ },
+ "place-fort-dunree": {
+  "name": "Fort Dunree",
+  "kind": "coastal fort on Lough Swilly, County Donegal",
+  "nation": "Ireland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fort_Dunree",
+  "lat": null,
+  "lon": null
  },
  "place-fort-eben-emael": {
   "name": "Fort Eben Emael",
@@ -4639,6 +4673,15 @@
   "aka": [
    "Höchst"
   ]
+ },
+ "place-hollywood-canteen": {
+  "name": "Hollywood Canteen",
+  "kind": "free club for servicemen, 1451 Cahuenga Boulevard, 1942 to 1945",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Hollywood_Canteen",
+  "lat": null,
+  "lon": null
  },
  "place-holtzwihr": {
   "name": "Holtzwihr",
@@ -6329,6 +6372,19 @@
   "source": "https://en.wikipedia.org/wiki/Lingayen_Gulf",
   "lat": 16.275,
   "lon": 120.1958
+ },
+ "place-lingiades": {
+  "name": "Lingiades",
+  "kind": "village near Ioannina, Epirus",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Lingiades",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Ligiades",
+   "Lyngiades"
+  ]
  },
  "place-lippstadt": {
   "name": "Lippstadt",
@@ -11505,6 +11561,15 @@
   "source": "https://en.wikipedia.org/wiki/Terminal_Island",
   "lat": 33.7569,
   "lon": -118.2481
+ },
+ "place-termoli": {
+  "name": "Termoli",
+  "kind": "Adriatic port town in Molise, Italy",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Termoli",
+  "lat": null,
+  "lon": null
  },
  "place-ternopil": {
   "name": "Ternopil",

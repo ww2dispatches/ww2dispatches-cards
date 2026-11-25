@@ -6752,6 +6752,13 @@
    "Ro-106"
   ]
  },
+ "ship-japanese-submarine-ro-108": {
+  "name": "Ro-108",
+  "kind": "Imperial Japanese Navy submarine",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_submarine_Ro-108"
+ },
  "ship-japanese-submarine-ro-112": {
   "name": "Ro-112",
   "kind": "Ro-100 class submarine",
@@ -8937,6 +8944,13 @@
   "wikidata": "Q1701704",
   "source": "https://en.wikipedia.org/wiki/USS_Helena_(CL-50)"
  },
+ "ship-uss-henley-dd-391": {
+  "name": "USS Henley (DD-391)",
+  "kind": "US Navy destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Henley_(DD-391)"
+ },
  "ship-uss-henrico": {
   "name": "USS Henrico (APA-45)",
   "kind": "attack transport",
@@ -9708,6 +9722,13 @@
   "wikidata": "Q7873437",
   "source": "https://en.wikipedia.org/wiki/USS_Rich_(DE-695)"
  },
+ "ship-uss-richard-m-rowell": {
+  "name": "USS Richard M. Rowell (DE-403)",
+  "kind": "US Navy destroyer escort",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Richard_M._Rowell"
+ },
  "ship-uss-riddle": {
   "name": "USS Riddle (DE-185)",
   "kind": "U.S. Navy destroyer escort",
@@ -9767,6 +9788,13 @@
   "nation": "US",
   "wikidata": "Q2066079",
   "source": "https://en.wikipedia.org/wiki/USS_Salt_Lake_City_(CA-25)"
+ },
+ "ship-uss-samuel-s-miles": {
+  "name": "USS Samuel S. Miles (DE-183)",
+  "kind": "US Navy destroyer escort",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Samuel_S._Miles"
  },
  "ship-uss-san-francisco-ca-38": {
   "name": "USS San Francisco (CA-38)",
@@ -9879,6 +9907,13 @@
   "nation": "US",
   "wikidata": "Q7874072",
   "source": "https://en.wikipedia.org/wiki/USS_Shark_(SS-174)"
+ },
+ "ship-uss-shelton-de-407": {
+  "name": "USS Shelton (DE-407)",
+  "kind": "US Navy destroyer escort",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Shelton_(DE-407)"
  },
  "ship-uss-sims-dd-409": {
   "name": "USS Sims (DD-409)",

@@ -2456,6 +2456,17 @@
    "Cherkassy pocket"
   ]
  },
+ "op-battle-of-kos-1943": {
+  "name": "Battle of Kos",
+  "kind": "German capture of Kos, October 1943",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Kos_(1943)",
+  "aka": [
+   "Operation Polar Bear",
+   "Unternehmen Eisbar"
+  ]
+ },
  "op-battle-of-kota-bharu": {
   "name": "Battle of Kota Bharu",
   "kind": "battle",
@@ -4866,6 +4877,13 @@
   "wikidata": "Q708253",
   "source": "https://en.wikipedia.org/wiki/Colmar_Pocket"
  },
+ "op-commando-order": {
+  "name": "Commando Order",
+  "kind": "Hitler's order of 18 October 1942 to execute captured commandos",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Commando_Order"
+ },
  "op-commissar-order": {
   "name": "Commissar Order",
   "kind": "German order to shoot Soviet political commissars, 1941",
@@ -5268,6 +5286,16 @@
   "source": "https://en.wikipedia.org/wiki/Day_of_Infamy_speech",
   "aka": [
    "Infamy Speech"
+  ]
+ },
+ "op-de-bono-s-invasion-of-ethiopia": {
+  "name": "De Bono's invasion of Ethiopia",
+  "kind": "1935 Italian invasion from Eritrea",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/De_Bono%27s_invasion_of_Ethiopia",
+  "aka": [
+   "De Bono's invasion of Abyssinia"
   ]
  },
  "op-death-marches-during-the-holocaust": {
@@ -7704,6 +7732,16 @@
   "wikidata": "Q1518946",
   "source": "https://en.wikipedia.org/wiki/Law_for_the_Prevention_of_Hereditarily_Diseased_Offspring"
  },
+ "op-law-on-the-status-of-jews": {
+  "name": "Law on the status of Jews",
+  "kind": "Vichy antisemitic statute of 3 October 1940",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Law_on_the_status_of_Jews",
+  "aka": [
+   "Statut des Juifs"
+  ]
+ },
  "op-le-paradis-massacre": {
   "name": "Le Paradis massacre",
   "kind": "massacre of British prisoners of war, 27 May 1940",
@@ -7835,6 +7873,13 @@
   "aka": [
    "Skede massacre"
   ]
+ },
+ "op-lingiades-massacre": {
+  "name": "Lingiades massacre",
+  "kind": "German reprisal massacre of Greek villagers, 3 October 1943",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Lingiades_massacre"
  },
  "op-lithuanian-partisans-declaration-of-february-16-1949": {
   "name": "Lithuanian Partisans Declaration of February 16, 1949",
@@ -8168,6 +8213,13 @@
   "nation": "Germany",
   "wikidata": "Q568880",
   "source": "https://en.wikipedia.org/wiki/Massacre_of_Kondomari"
+ },
+ "op-massacre-of-kos": {
+  "name": "Massacre of Kos",
+  "kind": "execution of Italian officers on Kos, October 1943",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Massacre_of_Kos"
  },
  "op-massacres-of-poles-in-volhynia-and-eastern-galicia": {
   "name": "Massacres of Poles in Volhynia and Eastern Galicia",
@@ -9203,6 +9255,13 @@
   "nation": "US",
   "wikidata": "Q2026043",
   "source": "https://en.wikipedia.org/wiki/Operation_Desecrate_One"
+ },
+ "op-operation-devon": {
+  "name": "Operation Devon",
+  "kind": "British commando landing at Termoli, October 1943",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Devon"
  },
  "op-operation-diadem": {
   "name": "Operation Diadem",
@@ -12210,6 +12269,13 @@
   "nation": "worldwide",
   "wikidata": "Q8736",
   "source": "https://en.wikipedia.org/wiki/Treaty_of_Versailles"
+ },
+ "op-treaty-ports-ireland": {
+  "name": "Treaty Ports (Ireland)",
+  "kind": "British held Irish naval bases handed over in 1938",
+  "nation": "Ireland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Treaty_Ports_(Ireland)"
  },
  "op-trial-of-erich-von-manstein": {
   "name": "Trial of Erich von Manstein",
