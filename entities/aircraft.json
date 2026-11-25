@@ -970,6 +970,13 @@
    "FH Phantom"
   ]
  },
+ "aircraft-mcdonnell-xf-85-goblin": {
+  "name": "McDonnell XF-85 Goblin",
+  "kind": "experimental parasite fighter",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/McDonnell_XF-85_Goblin"
+ },
  "aircraft-memphis-belle-aircraft": {
   "name": "Memphis Belle",
   "kind": "B-17F Flying Fortress",

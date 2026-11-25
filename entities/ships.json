@@ -2794,6 +2794,13 @@
   "wikidata": "Q931718",
   "source": "https://en.wikipedia.org/wiki/HMCS_Haida"
  },
+ "ship-hmcs-iroquois-g89": {
+  "name": "HMCS Iroquois (G89)",
+  "kind": "Tribal class destroyer",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMCS_Iroquois_(G89)"
+ },
  "ship-hmcs-la-hulloise": {
   "name": "HMCS La Hulloise",
   "kind": "Canadian River class frigate",
@@ -4543,6 +4550,13 @@
   "nation": "Britain",
   "wikidata": "Q2631516",
   "source": "https://en.wikipedia.org/wiki/HMS_York_(90)"
+ },
+ "ship-hms-zinnia-k98": {
+  "name": "HMS Zinnia (K98)",
+  "kind": "Flower class corvette",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Zinnia_(K98)"
  },
  "ship-hmsas-natal": {
   "name": "HMSAS Natal (K10)",

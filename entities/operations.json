@@ -411,6 +411,17 @@
   "wikidata": "Q4565422",
   "source": "https://en.wikipedia.org/wiki/1944_Republican_National_Convention"
  },
+ "op-1944-romanian-coup-d-etat": {
+  "name": "1944 Romanian coup d'etat",
+  "kind": "royal coup",
+  "nation": "Romania",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1944_Romanian_coup_d%27%C3%A9tat",
+  "aka": [
+   "King Michael's Coup",
+   "Act of 23 August"
+  ]
+ },
  "op-1944-tonankai-earthquake": {
   "name": "1944 Tōnankai earthquake",
   "kind": "earthquake and tsunami, 7 December 1944",
@@ -1524,6 +1535,13 @@
   "nation": "US",
   "wikidata": "Q700572",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Attu"
+ },
+ "op-battle-of-audierne-bay": {
+  "name": "Battle of Audierne Bay",
+  "kind": "night naval action",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Audierne_Bay"
  },
  "op-battle-of-badung-strait": {
   "name": "Battle of Badung Strait",
@@ -3882,6 +3900,13 @@
   "wikidata": "Q13630094",
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Singapore_(1941)"
  },
+ "op-bombing-of-stalingrad": {
+  "name": "Bombing of Stalingrad",
+  "kind": "air raids on a city",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bombing_of_Stalingrad"
+ },
  "op-bombing-of-tallinn-in-world-war-ii": {
   "name": "Bombing of Tallinn in World War II",
   "kind": "Soviet air raids on Tallinn, chiefly 9 to 10 March 1944",
@@ -5465,6 +5490,13 @@
   "wikidata": "Q5492246",
   "source": "https://en.wikipedia.org/wiki/Franksgiving"
  },
+ "op-freckleton-air-disaster": {
+  "name": "Freckleton Air Disaster",
+  "kind": "bomber crash on a village school",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Freckleton_Air_Disaster"
+ },
  "op-free-french-africa": {
   "name": "Free French Africa",
   "kind": "Free French territories",
@@ -6211,6 +6243,13 @@
   "wikidata": "Q698178",
   "source": "https://en.wikipedia.org/wiki/Italian_invasion_of_France"
  },
+ "op-italian-racial-laws": {
+  "name": "Italian racial laws",
+  "kind": "Fascist antisemitic legislation",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_racial_laws"
+ },
  "op-italian-social-republic": {
   "name": "Italian Social Republic",
   "kind": "German backed fascist state in northern Italy, 1943 to 1945",
@@ -6343,6 +6382,13 @@
   "nation": "Japan",
   "wikidata": "Q4065239",
   "source": "https://en.wikipedia.org/wiki/Japanese_occupation_of_the_Andaman_and_Nicobar_Islands"
+ },
+ "op-japanese-prisoners-of-war-in-the-soviet-union": {
+  "name": "Japanese prisoners of war in the Soviet Union",
+  "kind": "internment and forced labor",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_prisoners_of_war_in_the_Soviet_Union"
  },
  "op-jedwabne-pogrom": {
   "name": "Jedwabne pogrom",

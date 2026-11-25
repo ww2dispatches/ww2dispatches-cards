@@ -161,6 +161,15 @@
    "Alcan Highway"
   ]
  },
+ "place-aldershot": {
+  "name": "Aldershot",
+  "kind": "garrison town in Hampshire",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Aldershot",
+  "lat": null,
+  "lon": null
+ },
  "place-aldwych": {
   "name": "Aldwych",
   "kind": "street in central London",
@@ -1173,6 +1182,15 @@
   "source": "https://en.wikipedia.org/wiki/Bonn",
   "lat": 50.7353,
   "lon": 7.1022
+ },
+ "place-bonneville-salt-flats": {
+  "name": "Bonneville Salt Flats",
+  "kind": "salt flat, speed record course",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bonneville_Salt_Flats",
+  "lat": null,
+  "lon": null
  },
  "place-bordeaux": {
   "name": "Bordeaux",
@@ -3259,6 +3277,15 @@
   "wikidata": "Q1794",
   "lat": 50.1106,
   "lon": 8.6822
+ },
+ "place-freckleton": {
+  "name": "Freckleton",
+  "kind": "village in Lancashire",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Freckleton",
+  "lat": null,
+  "lon": null
  },
  "place-free-city-of-danzig": {
   "name": "Free City of Danzig",

@@ -62,6 +62,13 @@
    "Golden Lions"
   ]
  },
+ "unit-1077th-anti-aircraft-regiment": {
+  "name": "1077th Anti-Aircraft Regiment",
+  "kind": "Soviet anti aircraft regiment, partly women",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/1077th_Anti-Aircraft_Regiment"
+ },
  "unit-10th-army-italy": {
   "name": "10th Army (Italy)",
   "kind": "Royal Italian Army field army in Libya and Egypt",
@@ -345,6 +352,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/16th_Infantry_Regiment_(United_States)",
   "wikidata": "Q4552168"
+ },
+ "unit-16th-panzer-division": {
+  "name": "16th Panzer Division",
+  "kind": "German armored division",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/16th_Panzer_Division"
  },
  "unit-16th-ss-panzergrenadier-division-reichsfuhrer-ss": {
   "name": "16th SS Panzergrenadier Division Reichsfuhrer-SS",
@@ -3898,6 +3912,13 @@
   "nation": "Germany",
   "wikidata": "Q658967",
   "source": "https://en.wikipedia.org/wiki/Luftflotte_1"
+ },
+ "unit-luftflotte-4": {
+  "name": "Luftflotte 4",
+  "kind": "Luftwaffe air fleet",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Luftflotte_4"
  },
  "unit-luftflotte-5": {
   "name": "Luftflotte 5",
