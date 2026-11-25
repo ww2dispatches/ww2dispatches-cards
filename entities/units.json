@@ -2510,6 +2510,13 @@
   "wikidata": "Q16985721",
   "source": "https://en.wikipedia.org/wiki/Brotherhood_of_Railroad_Trainmen"
  },
+ "unit-brotherhood-of-sleeping-car-porters": {
+  "name": "Brotherhood of Sleeping Car Porters",
+  "kind": "labor union of Pullman porters and maids",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Brotherhood_of_Sleeping_Car_Porters"
+ },
  "unit-buffs-royal-east-kent-regiment": {
   "name": "The Buffs",
   "kind": "British infantry regiment",
@@ -5058,6 +5065,13 @@
    "Lublin government"
   ]
  },
+ "unit-pullman-company": {
+  "name": "Pullman Company",
+  "kind": "railroad sleeping car company",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Pullman_Company"
+ },
  "unit-queen-s-own-rifles-of-canada": {
   "name": "Queen's Own Rifles of Canada",
   "kind": "Canadian infantry regiment",
@@ -5256,6 +5270,16 @@
   "nation": "US",
   "wikidata": "Q7352083",
   "source": "https://en.wikipedia.org/wiki/Robertson_Aircraft_Corporation"
+ },
+ "unit-royal-australian-air-force": {
+  "name": "Royal Australian Air Force",
+  "kind": "air force",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Royal_Australian_Air_Force",
+  "aka": [
+   "RAAF"
+  ]
  },
  "unit-royal-hampshire-regiment": {
   "name": "Royal Hampshire Regiment",

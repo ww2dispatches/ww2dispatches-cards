@@ -439,6 +439,13 @@
    "Dakota"
   ]
  },
+ "aircraft-douglas-d-558-1-skystreak": {
+  "name": "Douglas D-558-1 Skystreak",
+  "kind": "jet research aircraft",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Douglas_D-558-1_Skystreak"
+ },
  "aircraft-douglas-dc-3": {
   "name": "Douglas DC-3",
   "kind": "airliner type",

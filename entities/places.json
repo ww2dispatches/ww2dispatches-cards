@@ -26,6 +26,15 @@
   "lat": 56.1706,
   "lon": 10.2011
  },
+ "place-abadan-iran": {
+  "name": "Abadan",
+  "kind": "oil refinery city in Khuzestan",
+  "nation": "Iran",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Abadan,_Iran",
+  "lat": null,
+  "lon": null
+ },
  "place-abbeville": {
   "name": "Abbeville",
   "kind": "town on the Somme",
@@ -1164,6 +1173,15 @@
   "source": "https://en.wikipedia.org/wiki/Bonn",
   "lat": 50.7353,
   "lon": 7.1022
+ },
+ "place-bordeaux": {
+  "name": "Bordeaux",
+  "kind": "port city and U-boat base",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Bordeaux",
+  "lat": null,
+  "lon": null
  },
  "place-bornholm": {
   "name": "Bornholm",
@@ -4218,6 +4236,15 @@
   "lat": -12.0766,
   "lon": 96.8397
  },
+ "place-hotel-de-ville-paris": {
+  "name": "Hotel de Ville, Paris",
+  "kind": "Paris city hall",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/H%C3%B4tel_de_Ville,_Paris",
+  "lat": null,
+  "lon": null
+ },
  "place-hotel-de-wereld": {
   "name": "Hotel de Wereld",
   "kind": "hotel in Wageningen, site of the 5 May 1945 surrender talks",
@@ -5953,6 +5980,15 @@
   "lat": -2.0486,
   "lon": 147.4186
  },
+ "place-louvre": {
+  "name": "Louvre",
+  "kind": "art museum in Paris",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Louvre",
+  "lat": null,
+  "lon": null
+ },
  "place-lubeck": {
   "name": "Lubeck",
   "kind": "city",
@@ -6099,6 +6135,15 @@
   "source": "https://en.wikipedia.org/wiki/Magdeburg",
   "lat": 52.1316,
   "lon": 11.64
+ },
+ "place-maille-indre-et-loire": {
+  "name": "Maille",
+  "kind": "village in Indre et Loire",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Maill%C3%A9,_Indre-et-Loire",
+  "lat": null,
+  "lon": null
  },
  "place-majdanek-concentration-camp": {
   "name": "Majdanek concentration camp",
@@ -7885,6 +7930,15 @@
   "wikidata": "Q128652",
   "lat": 49.4548,
   "lon": 11.0465
+ },
+ "place-palace-of-versailles": {
+  "name": "Palace of Versailles",
+  "kind": "royal palace and museum",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Palace_of_Versailles",
+  "lat": null,
+  "lon": null
  },
  "place-palace-of-westminster": {
   "name": "Palace of Westminster",
@@ -10939,6 +10993,15 @@
    "Tver"
   ]
  },
+ "place-tykocin": {
+  "name": "Tykocin",
+  "kind": "town in Podlaskie, Poland",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Tykocin",
+  "lat": null,
+  "lon": null
+ },
  "place-tyuleny-island-sea-of-okhotsk": {
   "name": "Tyuleny Island (Sea of Okhotsk)",
   "kind": "island off Sakhalin (Karafuto)",
@@ -11682,6 +11745,15 @@
   "aka": [
    "Amoy"
   ]
+ },
+ "place-xuzhou": {
+  "name": "Xuzhou",
+  "kind": "city in Jiangsu",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Xuzhou",
+  "lat": null,
+  "lon": null
  },
  "place-yakhroma": {
   "name": "Yakhroma",

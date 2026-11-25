@@ -972,6 +972,16 @@
   "wikidata": "Q4763686",
   "source": "https://en.wikipedia.org/wiki/Anglo-Soviet_Agreement"
  },
+ "op-anglo-soviet-invasion-of-iran": {
+  "name": "Anglo Soviet invasion of Iran",
+  "kind": "invasion, 25 August to 17 September 1941",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Anglo-Soviet_invasion_of_Iran",
+  "aka": [
+   "Operation Countenance"
+  ]
+ },
  "op-anglo-soviet-treaty-of-1942": {
   "name": "Anglo-Soviet Treaty of 1942",
   "kind": "treaty of alliance",
@@ -2354,6 +2364,13 @@
   "source": "https://en.wikipedia.org/wiki/Battle_of_Midway",
   "wikidata": "Q173034"
  },
+ "op-battle-of-milne-bay": {
+  "name": "Battle of Milne Bay",
+  "kind": "battle, 25 August to 7 September 1942",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Milne_Bay"
+ },
  "op-battle-of-mindoro": {
   "name": "Battle of Mindoro",
   "kind": "Allied landing in the Philippines",
@@ -2886,6 +2903,13 @@
   "nation": "Britain",
   "wikidata": "Q696607",
   "source": "https://en.wikipedia.org/wiki/Battle_of_the_Denmark_Strait"
+ },
+ "op-battle-of-the-eastern-solomons": {
+  "name": "Battle of the Eastern Solomons",
+  "kind": "carrier battle, 24 to 25 August 1942",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_the_Eastern_Solomons"
  },
  "op-battle-of-the-green-islands": {
   "name": "Battle of the Green Islands",
@@ -4870,6 +4894,16 @@
   "wikidata": "Q25904",
   "source": "https://en.wikipedia.org/wiki/Dumbarton_Oaks_Conference"
  },
+ "op-dunbeath-air-crash": {
+  "name": "Dunbeath air crash",
+  "kind": "crash of Sunderland W4026 at Eagle's Rock, 25 August 1942",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Dunbeath_air_crash",
+  "aka": [
+   "Eagle's Rock crash"
+  ]
+ },
  "op-dunkirk-evacuation": {
   "name": "Dunkirk evacuation",
   "kind": "evacuation of Allied troops from Dunkirk, 1940",
@@ -5032,6 +5066,13 @@
   "nation": "Britain",
   "wikidata": "Q22947403",
   "source": "https://en.wikipedia.org/wiki/Evacuation_of_civilians_from_the_Channel_Islands_in_1940"
+ },
+ "op-evacuation-of-the-louvre-collection-during-world-war-ii": {
+  "name": "Evacuation of the Louvre collection during World War II",
+  "kind": "museum evacuation",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Evacuation_of_the_Louvre_collection_during_World_War_II"
  },
  "op-evian-conference": {
   "name": "Evian Conference",
@@ -6187,6 +6228,16 @@
    "Operation Primavera"
   ]
  },
+ "op-jablonkow-incident": {
+  "name": "Jablonkow incident",
+  "kind": "Abwehr raid on the Mosty rail station, 25 to 26 August 1939",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Jab%C5%82onk%C3%B3w_incident",
+  "aka": [
+   "Jablunkov incident"
+  ]
+ },
  "op-january-28-incident": {
   "name": "January 28 incident",
   "kind": "battle",
@@ -6931,6 +6982,13 @@
    "Chinese Exclusion Repeal Act"
   ]
  },
+ "op-maille-massacre": {
+  "name": "Maille massacre",
+  "kind": "massacre of villagers, 25 August 1944",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Maill%C3%A9_massacre"
+ },
  "op-malagasy-uprising": {
   "name": "Malagasy Uprising",
   "kind": "nationalist revolt against French rule in Madagascar, 1947 to 1949",
@@ -7112,6 +7170,16 @@
   "nation": "China",
   "wikidata": "Q4501943",
   "source": "https://en.wikipedia.org/wiki/Martial_law_in_Taiwan"
+ },
+ "op-mass-murders-in-tykocin": {
+  "name": "Mass murders in Tykocin",
+  "kind": "massacre of the Jews of Tykocin, August 1941",
+  "nation": "Poland",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Mass_murders_in_Tykocin",
+  "aka": [
+   "Tykocin pogrom"
+  ]
  },
  "op-massacre-of-kondomari": {
   "name": "Massacre of Kondomari",
@@ -9370,6 +9438,13 @@
   "nation": "US",
   "wikidata": "Q18393574",
   "source": "https://en.wikipedia.org/wiki/Rationing_in_the_United_States"
+ },
+ "op-red-ball-express": {
+  "name": "Red Ball Express",
+  "kind": "truck convoy supply system, 1944",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Red_Ball_Express"
  },
  "op-regulated-area-no-2": {
   "name": "Regulated Area (No 2)",
