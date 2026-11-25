@@ -1759,6 +1759,13 @@
   "wikidata": "Q1659644",
   "source": "https://en.wikipedia.org/wiki/Brien_McMahon"
  },
+ "person-bruce-belfrage": {
+  "name": "Bruce Belfrage",
+  "kind": "BBC newsreader",
+  "nation": "Britain",
+  "wikidata": "Q4977137",
+  "source": "https://en.wikipedia.org/wiki/Bruce_Belfrage"
+ },
  "person-bruce-c-clarke": {
   "name": "Bruce C. Clarke",
   "kind": "U.S. Army general, commander of CCB, 7th Armored Division at St. Vith",
@@ -2221,6 +2228,13 @@
   "aka": [
    "Charles L. Brown"
   ]
+ },
+ "person-charlie-chaplin": {
+  "name": "Charlie Chaplin",
+  "kind": "actor and filmmaker, The Great Dictator",
+  "nation": "Britain",
+  "wikidata": "Q882",
+  "source": "https://en.wikipedia.org/wiki/Charlie_Chaplin"
  },
  "person-charlotte-grand-duchess-of-luxembourg": {
   "name": "Charlotte, Grand Duchess of Luxembourg",
@@ -4255,6 +4269,16 @@
   "wikidata": "Q872899",
   "source": "https://en.wikipedia.org/wiki/Ferenc_Csik"
  },
+ "person-ferenc-szalasi": {
+  "name": "Ferenc Szalasi",
+  "kind": "Arrow Cross leader, Hungarian head of state from October 1944",
+  "nation": "Hungary",
+  "wikidata": "Q156473",
+  "source": "https://en.wikipedia.org/wiki/Ferenc_Sz%C3%A1lasi",
+  "aka": [
+   "Ferenc Szálasi"
+  ]
+ },
  "person-fernand-bonnier-de-la-chapelle": {
   "name": "Fernand Bonnier de La Chapelle",
   "kind": "assassin of Admiral Darlan",
@@ -6085,6 +6109,13 @@
   "nation": "Germany",
   "source": "https://en.wikipedia.org/wiki/Hans-Diedrich_von_Tiesenhausen",
   "wikidata": "Q64574"
+ },
+ "person-hans-frank": {
+  "name": "Hans Frank",
+  "kind": "Governor General of occupied Poland",
+  "nation": "Germany",
+  "wikidata": "Q60087",
+  "source": "https://en.wikipedia.org/wiki/Hans_Frank"
  },
  "person-hans-georg-von-friedeburg": {
   "name": "Hans-Georg von Friedeburg",

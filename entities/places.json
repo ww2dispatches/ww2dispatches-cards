@@ -1508,6 +1508,15 @@
    "Brünn"
   ]
  },
+ "place-broadcasting-house": {
+  "name": "Broadcasting House",
+  "kind": "BBC headquarters, London",
+  "nation": "Britain",
+  "wikidata": "Q2914560",
+  "source": "https://en.wikipedia.org/wiki/Broadcasting_House",
+  "lat": null,
+  "lon": null
+ },
  "place-brolo": {
   "name": "Brolo",
   "kind": "Town on Sicily's north coast",
@@ -2307,6 +2316,15 @@
   ],
   "lat": 29.55,
   "lon": 106.5069
+ },
+ "place-chorlton-on-medlock-town-hall": {
+  "name": "Chorlton-on-Medlock Town Hall",
+  "kind": "venue of the 1945 Pan-African Congress, Manchester",
+  "nation": "Britain",
+  "wikidata": "Q26571952",
+  "source": "https://en.wikipedia.org/wiki/Chorlton-on-Medlock_Town_Hall",
+  "lat": null,
+  "lon": null
  },
  "place-christmas-island": {
   "name": "Christmas Island",
@@ -10396,6 +10414,19 @@
   "wikidata": "Q219737",
   "lat": 12.05,
   "lon": 125.1167
+ },
+ "place-samara": {
+  "name": "Samara",
+  "kind": "Volga city, wartime reserve capital as Kuibyshev",
+  "nation": "Soviet Union",
+  "wikidata": "Q894",
+  "source": "https://en.wikipedia.org/wiki/Samara",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Kuibyshev",
+   "Kuybyshev"
+  ]
  },
  "place-samos": {
   "name": "Samos",

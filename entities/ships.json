@@ -2527,6 +2527,13 @@
   "wikidata": "Q571258",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-66_(1940)"
  },
+ "ship-german-submarine-u-661": {
+  "name": "U 661",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": "Q2679067",
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-661"
+ },
  "ship-german-submarine-u-662": {
   "name": "U-662",
   "kind": "German Type VIIC U-boat",
@@ -4985,6 +4992,13 @@
   "wikidata": "Q5634680",
   "source": "https://en.wikipedia.org/wiki/HMS_Trenchant_(P331)"
  },
+ "ship-hms-triad-n53": {
+  "name": "HMS Triad (N53)",
+  "kind": "T class submarine",
+  "nation": "Britain",
+  "wikidata": "Q1565559",
+  "source": "https://en.wikipedia.org/wiki/HMS_Triad_(N53)"
+ },
  "ship-hms-trinidad-46": {
   "name": "HMS Trinidad (46)",
   "kind": "Royal Navy light cruiser",
@@ -5167,6 +5181,13 @@
   "nation": "Britain",
   "wikidata": "Q2712972",
   "source": "https://en.wikipedia.org/wiki/HMS_Vindex_(D15)"
+ },
+ "ship-hms-viscount": {
+  "name": "HMS Viscount",
+  "kind": "V and W class destroyer",
+  "nation": "Britain",
+  "wikidata": "Q14514926",
+  "source": "https://en.wikipedia.org/wiki/HMS_Viscount"
  },
  "ship-hms-wakeful-h88": {
   "name": "HMS Wakeful (H88)",
@@ -5604,6 +5625,13 @@
   "wikidata": "Q3704979",
   "source": "https://en.wikipedia.org/wiki/Italian_submarine_Delfino_(1930)"
  },
+ "ship-italian-submarine-enrico-toti-1928": {
+  "name": "Enrico Toti (1928)",
+  "kind": "Balilla class submarine",
+  "nation": "Italy",
+  "wikidata": "Q3726081",
+  "source": "https://en.wikipedia.org/wiki/Italian_submarine_Enrico_Toti_(1928)"
+ },
  "ship-italian-submarine-iride": {
   "name": "Italian submarine Iride",
   "kind": "Regia Marina submarine",
@@ -5956,6 +5984,13 @@
   "nation": "Japan",
   "wikidata": "Q4387245",
   "source": "https://en.wikipedia.org/wiki/Japanese_cruiser_Katori"
+ },
+ "ship-japanese-cruiser-kinugasa": {
+  "name": "Kinugasa",
+  "kind": "Aoba class heavy cruiser",
+  "nation": "Japan",
+  "wikidata": "Q1701436",
+  "source": "https://en.wikipedia.org/wiki/Japanese_cruiser_Kinugasa"
  },
  "ship-japanese-cruiser-kiso": {
   "name": "Kiso",
@@ -9522,6 +9557,13 @@
   "nation": "US",
   "wikidata": "Q7871713",
   "source": "https://en.wikipedia.org/wiki/USS_Menges"
+ },
+ "ship-uss-meredith-dd-434": {
+  "name": "USS Meredith (DD-434)",
+  "kind": "Gleaves class destroyer",
+  "nation": "US",
+  "wikidata": "Q4052254",
+  "source": "https://en.wikipedia.org/wiki/USS_Meredith_(DD-434)"
  },
  "ship-uss-midway-cv-41": {
   "name": "USS Midway (CV-41)",
