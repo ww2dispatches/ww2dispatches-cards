@@ -5303,6 +5303,13 @@
   "wikidata": "Q5634483",
   "source": "https://en.wikipedia.org/wiki/HMS_Stork_(L81)"
  },
+ "ship-hms-stratagem": {
+  "name": "HMS Stratagem (P234)",
+  "kind": "S class submarine",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Stratagem"
+ },
  "ship-hms-sturgeon-73s": {
   "name": "HMS Sturgeon (73S)",
   "kind": "S class submarine",
@@ -6162,6 +6169,14 @@
   "nation": "Italy",
   "wikidata": "Q3726081",
   "source": "https://en.wikipedia.org/wiki/Italian_submarine_Enrico_Toti_(1928)"
+ },
+ "ship-italian-submarine-evangelista-torricelli-1934": {
+  "name": "Italian submarine Evangelista Torricelli (1934)",
+  "kind": "Archimede class submarine",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Italian_submarine_Evangelista_Torricelli_(1934)",
+  "note": "Transferred to the Spanish Nationalist navy in 1937; English and Italian Wikipedia disagree on the new name (General Mola or General Sanjurjo)."
  },
  "ship-italian-submarine-iride": {
   "name": "Italian submarine Iride",
@@ -8224,6 +8239,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q4528350",
   "source": "https://en.wikipedia.org/wiki/Soviet_submarine_Shch-215"
+ },
+ "ship-spanish-cruiser-miguel-de-cervantes": {
+  "name": "Spanish cruiser Miguel de Cervantes",
+  "kind": "light cruiser",
+  "nation": "Spain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Spanish_cruiser_Miguel_de_Cervantes"
  },
  "ship-spanish-destroyer-velasco": {
   "name": "Spanish destroyer Velasco",

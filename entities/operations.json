@@ -2673,6 +2673,17 @@
    "Battle of Königsberg"
   ]
  },
+ "op-battle-of-korce": {
+  "name": "Battle of Korçë",
+  "kind": "battle of the Greco Italian War",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Kor%C3%A7%C3%AB",
+  "aka": [
+   "Battle of Korytsa",
+   "Battle of Korce"
+  ]
+ },
  "op-battle-of-koromokina-lagoon": {
   "name": "Battle of Koromokina Lagoon",
   "kind": "battle",
@@ -5277,6 +5288,17 @@
   "nation": "Belgium",
   "wikidata": "Q15210656",
   "source": "https://en.wikipedia.org/wiki/Cinema_Rex_bombing"
+ },
+ "op-clark-darlan-accords": {
+  "name": "Clark Darlan Accords",
+  "kind": "agreement",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Clark-Darlan_Accords",
+  "aka": [
+   "North African Agreement",
+   "Clark Darlan Agreement"
+  ]
  },
  "op-cleveland-east-ohio-gas-explosion": {
   "name": "Cleveland East Ohio Gas explosion",
@@ -9426,6 +9448,17 @@
   "wikidata": "Q3072131",
   "source": "https://en.wikipedia.org/wiki/Nanjing_War_Crimes_Tribunal"
  },
+ "op-nanking-safety-zone": {
+  "name": "Nanking Safety Zone",
+  "kind": "civilian refugee zone",
+  "nation": "China",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Nanking_Safety_Zone",
+  "aka": [
+   "Nanjing Safety Zone",
+   "International Committee for the Nanking Safety Zone"
+  ]
+ },
  "op-national-registration-act-1939": {
   "name": "National Registration Act 1939",
   "kind": "wartime population register and identity cards",
@@ -11549,6 +11582,13 @@
   "aka": [
    "Naughty document"
   ]
+ },
+ "op-petersberg-agreement": {
+  "name": "Petersberg Agreement",
+  "kind": "agreement",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Petersberg_Agreement"
  },
  "op-petsamo-kirkenes-offensive": {
   "name": "Petsamo and Kirkenes offensive",

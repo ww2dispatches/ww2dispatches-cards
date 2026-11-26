@@ -10469,6 +10469,15 @@
   "lat": 40.6072,
   "lon": -74.2811
  },
+ "place-rashaya-citadel": {
+  "name": "Rashaya Citadel",
+  "kind": "citadel where Lebanon's leaders were held in 1943",
+  "nation": "Lebanon",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Rashaya_Citadel",
+  "lat": null,
+  "lon": null
+ },
  "place-ravensbruck-concentration-camp": {
   "name": "Ravensbruck concentration camp",
   "kind": "concentration camp",

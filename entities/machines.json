@@ -667,6 +667,13 @@
   "wikidata": "Q544226",
   "source": "https://en.wikipedia.org/wiki/Hedgehog_(weapon)"
  },
+ "machine-henry-v-1944-film": {
+  "name": "Henry V (1944 film)",
+  "kind": "feature film",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Henry_V_(1944_film)"
+ },
  "machine-henschel-hs-293": {
   "name": "Henschel Hs 293",
   "kind": "guided glide bomb",
@@ -1467,6 +1474,13 @@
   "nation": "Britain",
   "wikidata": "Q7685897",
   "source": "https://en.wikipedia.org/wiki/Target_indicator"
+ },
+ "machine-the-best-years-of-our-lives": {
+  "name": "The Best Years of Our Lives",
+  "kind": "feature film",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/The_Best_Years_of_Our_Lives"
  },
  "machine-the-diary-of-a-young-girl": {
   "name": "The Diary of a Young Girl",
