@@ -1,0 +1,111 @@
+{
+ "series": "Pearl Harbor",
+ "part": 1,
+ "parts": 3,
+ "title": "The Fleet Slips Away",
+ "slides": [
+  {
+   "kind": "cover",
+   "photo": "photos/campaign/ch-NH-75483.jpg",
+   "fx": 14,
+   "fy": 0,
+   "kicker": "THE ROAD TO PEARL HARBOR · 1941",
+   "head": "Six carriers vanished<br>for eleven days.",
+   "body": "Washington knew war was coming. It looked everywhere but Hawaii.",
+   "date": "SWIPE FOR THE FOUR DAYS THAT SET IT IN MOTION",
+   "hero": 1520,
+   "panelTop": 330
+  },
+  {
+   "photo": "photos/campaign/ph-01b.jpg",
+   "fx": 40,
+   "fy": 55,
+   "date": "26 NOV 1941 · 6 A.M. TOKYO TIME · HITOKAPPU BAY",
+   "head": "The fleet weighs anchor.",
+   "body": "Akagi, Kaga, Soryu, Hiryu, Shokaku and Zuikaku, carrying more than 400 aircraft, steam east into an ocean almost no ship crosses.",
+   "fit": true
+  },
+  {
+   "photo": "photos/campaign/ch-genmac-plate13-track-wide.jpg",
+   "color": true,
+   "fx": 70,
+   "fy": 75,
+   "date": "THE ROUTE · DATES IN TOKYO TIME",
+   "head": "Chosen for its emptiness.",
+   "body": "The late autumn North Pacific is cold, rough and nearly free of shipping. The fleet keeps total radio silence the whole way.",
+   "fit": true,
+   "fitTop": 420
+  },
+  {
+   "kind": "quote",
+   "photo": "photos/campaign/ph-02.jpg",
+   "fx": 30,
+   "fy": 20,
+   "date": "27 NOV 1941 · WASHINGTON",
+   "quote": "I have washed my hands of it, and it is now in the hands of you and Knox, the Army and the Navy.",
+   "who": "Secretary of State Cordell Hull to Secretary of War Henry Stimson, the morning after the Hull note",
+   "noPhoto": true,
+   "panelTop": 620
+  },
+  {
+   "photo": "photos/campaign/ph-02.jpg",
+   "fx": 50,
+   "fy": 30,
+   "date": "27 NOV 1941 · WASHINGTON",
+   "head": "“This despatch is to be considered a war warning.”",
+   "body": "Admiral Harold Stark warns the Pacific Fleet that an aggressive move by Japan is expected within days."
+  },
+  {
+   "photo": "photos/campaign/ch-genmac-plate12-asia.jpg",
+   "color": true,
+   "fx": 50,
+   "fy": 50,
+   "date": "WHERE WASHINGTON LOOKED",
+   "head": "Hawaii is not on the list.",
+   "body": "The warning names the Philippines, Thailand's Kra Peninsula and Borneo. Japan's invasion forces really are gathering there."
+  },
+  {
+   "photo": "photos/campaign/ph-03.jpg",
+   "fx": 50,
+   "fy": 50,
+   "date": "28 NOV 1941 · PEARL HARBOR",
+   "head": "One carrier is already at war.",
+   "body": "Enterprise sails to fly Marine Wildcats to Wake Island. Battle Order No. 1: “Steady nerves and stout hearts are needed now.”",
+   "fit": true
+  },
+  {
+   "photo": "photos/campaign/ph-04.jpg",
+   "fx": 50,
+   "fy": 28,
+   "date": "29 NOV 1941 · TOKYO",
+   "head": "The last chance to speak.",
+   "body": "Eight former prime ministers meet before the Emperor. Most doubt Japan can win a long war. None says plainly that war is wrong."
+  },
+  {
+   "photo": "photos/campaign/ch-genmac-plate12-pacific.jpg",
+   "color": true,
+   "fx": 5,
+   "fy": 40,
+   "date": "29 NOV 1941 · THE NORTH PACIFIC",
+   "head": "No one in the room knows.",
+   "body": "The carriers are already three days out, somewhere in the fog. They can still be called back if the talks succeed.",
+   "noPhoto": true,
+   "panelTop": 700,
+   "big": true
+  },
+  {
+   "kind": "end",
+   "photo": "photos/campaign/ph-07.jpg",
+   "fx": 35,
+   "fy": 60,
+   "kicker": "NEXT · PART 2 OF 3",
+   "head": "Climb Mount Niitaka",
+   "body": "Tokyo makes its final decision, and one coded signal sends the fleet the rest of the way.",
+   "date": "4 DECEMBER",
+   "cta": "Follow so you don't miss it",
+   "fit": true,
+   "fitTop": 330,
+   "panelTop": 1010
+  }
+ ]
+}

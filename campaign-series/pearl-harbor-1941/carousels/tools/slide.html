@@ -1,0 +1,92 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:"Oswald";font-weight:500;src:url(FONTS/oswald-latin-500-normal.woff2)}
+@font-face{font-family:"Oswald";font-weight:700;src:url(FONTS/oswald-latin-700-normal.woff2)}
+@font-face{font-family:"Special Elite";src:url(FONTS/special-elite-latin-400-normal.woff2)}
+@font-face{font-family:"Libre Baskerville";font-weight:400;src:url(FONTS/libre-baskerville-latin-400-normal.woff2)}
+@font-face{font-family:"Libre Baskerville";font-style:italic;src:url(FONTS/libre-baskerville-latin-400-italic.woff2)}
+:root{--paper:#EFE6D2;--ink:#1F2A44;--red:#B04A3E;--night:#121418}
+*{box-sizing:border-box}
+body{margin:0;width:1080px;height:1920px;background:var(--night);overflow:hidden;position:relative;font-family:"Libre Baskerville",serif}
+.photo{position:absolute;left:0;top:0;width:1080px;height:1920px;background-size:cover;background-repeat:no-repeat}
+.photo.gray{filter:grayscale(1) contrast(1.05)}
+.fade{position:absolute;left:0;top:0;width:1080px;height:1920px;background:linear-gradient(rgba(18,20,24,.35) 0,rgba(18,20,24,0) 18%,rgba(18,20,24,0) 52%,rgba(18,20,24,.75) 78%,rgba(18,20,24,.92) 100%)}
+.blur{position:absolute;inset:-60px;background-size:cover;background-position:center;filter:grayscale(1) blur(30px) brightness(.45)}
+.blur.col{filter:blur(30px) brightness(.45)}
+.fit{position:absolute;left:56px;width:968px;top:330px;border:10px solid var(--paper);box-shadow:0 8px 30px rgba(0,0,0,.6);display:block}
+.fit.gray{filter:grayscale(1) contrast(1.05)}
+.cap{position:absolute;left:56px;width:968px;font:400 20px "Special Elite";color:#cfc6b3}
+.grain{position:absolute;inset:0;pointer-events:none}
+.tab{position:absolute;left:56px;top:170px;background:var(--paper);padding:18px 26px 14px;box-shadow:0 4px 16px rgba(0,0,0,.5)}
+.tab .k{font:500 22px "Oswald";letter-spacing:.2em;color:var(--ink)}
+.tab .t{font:700 50px/1.05 "Oswald";color:var(--ink);text-transform:uppercase}
+.tab .t b{color:var(--red)}
+.panel{position:absolute;left:56px;width:830px;top:1130px;background:var(--paper);padding:36px 40px 34px;box-shadow:0 6px 24px rgba(0,0,0,.55)}
+.panel:before{content:"";position:absolute;left:0;top:0;right:0;height:6px;background:var(--red)}
+.date{font:400 24px "Special Elite";color:var(--red);letter-spacing:.03em;margin-bottom:12px}
+.head{font:700 56px/1.08 "Oswald";color:var(--ink);margin-bottom:16px}
+.body{font:400 30px/1.45 "Libre Baskerville";color:#2b2b2b}
+.foot{position:absolute;left:56px;top:1640px;font:500 22px "Oswald";letter-spacing:.16em;color:#9a917f}
+.count{position:absolute;right:56px;top:184px;font:500 24px "Oswald";letter-spacing:.12em;color:var(--paper);background:rgba(18,20,24,.6);padding:6px 14px}
+/* cover */
+.cover .panel{top:1060px}
+.cover .head{font-size:88px;line-height:1.02;white-space:nowrap}
+.cover .panel{width:920px}
+.cover .body{font-size:34px;font-style:italic}
+.cover .kick{font:500 24px "Oswald";letter-spacing:.2em;color:var(--red);margin-bottom:14px}
+/* quote */
+.quote .panel{top:1060px}
+.quote .q{font:italic 400 40px/1.42 "Libre Baskerville";color:var(--ink);margin:6px 0 20px}
+.quote .q:before{content:"\201C";font:700 120px/0 "Libre Baskerville";color:var(--red);vertical-align:-46px;margin-right:6px}
+.quote .who{font:500 24px/1.4 "Oswald";letter-spacing:.06em;color:#5a5446;text-transform:uppercase}
+.big .head{font-size:76px}.big .body{font-size:36px}
+.quote .panel,.big .panel{width:968px}
+
+/* Instagram 4:5 */
+body.ig{height:1350px}
+.ig .photo{height:1350px}
+.ig .fade{height:1350px}
+.ig .tab{top:48px}
+.ig .count{top:62px}
+.ig .fit{max-height:540px;width:auto;max-width:968px;left:50%;transform:translateX(-50%)}
+.ig .panel{top:auto!important;bottom:84px}
+.ig.cover .panel{top:200px!important;bottom:auto}
+.ig.quote .panel,.ig.big .panel{top:auto!important;bottom:auto;top:50%!important;transform:translateY(-50%)}
+.ig .foot{top:auto;bottom:30px;font-size:20px}
+.ig .head{font-size:52px}
+.ig .body{font-size:28px}
+.ig.cover .head{font-size:80px}
+.ig.end .head{font-size:68px}
+/* end */
+.end .kick{font:500 24px "Oswald";letter-spacing:.2em;color:var(--red);margin-bottom:12px}
+.end .head{font-size:76px}
+.end .cta{margin-top:22px;padding-top:18px;border-top:2px solid rgba(31,42,68,.25);font:700 28px "Oswald";letter-spacing:.04em;color:var(--ink)}
+</style></head>
+<body>
+<div id="root"></div>
+<script>
+function render(s, img, i, n){
+  const r=document.getElementById("root"); document.body.className=(s.kind||"")+(s.big?" big":"")+(window.IG?" ig":"");
+  const z=(s.zoom||100);
+  let h;
+  if(s.noPhoto){h=``;}
+  else if(s.fit){h=`<div class="blur ${s.color?'col':''}" style="background-image:url(${img})"></div><img class="fit ${s.color?'':'gray'}" src="${img}" style="top:${window.IG?170:(s.fitTop||330)}px;${s.fitW?`width:${s.fitW}px;left:${(1080-s.fitW)/2}px`:``}">`;}
+  else h=`<div class="photo ${s.color?'':'gray'}" style="background-image:url(${img});background-position:${s.fx}% ${s.fy}%;${s.hero&&!window.IG?`height:${s.hero}px`:``}"></div>`;
+  h+=(s.hero&&!window.IG)?`<div class="fade" style="background:linear-gradient(rgba(18,20,24,.3) 0,rgba(18,20,24,0) 15%,rgba(18,20,24,0) ${(s.hero-330)/19.2}%,#121418 ${s.hero/19.2}%)"></div>`:`<div class="fade"></div>`;
+  h+=`<div class="tab"><div class="k">CAMPAIGN SERIES · THE CHRONICLE</div><div class="t">Pearl Harbor <b>Part 1</b></div></div>`;
+  if(s.kind==="quote"){
+    h+=`<div class="panel"><div class="date">${s.date}</div><div class="q">${s.quote}</div><div class="who">${s.who}</div></div>`;
+  } else if(s.kind==="cover"||s.kind==="end"){
+    h+=`<div class="panel"><div class="kick">${s.kicker}</div><div class="head">${s.head}</div><div class="body">${s.body}</div>${s.kind==="cover"?`<div class="date" style="margin:20px 0 0">${s.date}</div>`:`<div class="date" style="margin:18px 0 0">PART 2 ARRIVES ${s.date}</div><div class="cta">${s.cta}</div>`}</div>`;
+  } else {
+    h+=`<div class="panel"><div class="date">${s.date}</div><div class="head">${s.head}</div><div class="body">${s.body}</div></div>`;
+  }
+  h+=`<div class="foot">@WW2DISPATCHES</div>`;
+  r.innerHTML=h;
+  if(z!==100&&!s.fit){const p=r.querySelector(".photo");p.style.backgroundSize=z+"% auto";}
+  const panel=r.querySelector(".panel"); if(s.panelTop&&!window.IG) panel.style.top=s.panelTop+"px";
+  return {bottom: panel.getBoundingClientRect().bottom};
+}
+</script>
+</body></html>
