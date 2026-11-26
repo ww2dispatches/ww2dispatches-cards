@@ -2027,6 +2027,13 @@
   "wikidata": "Q4870537",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Bowmanville"
  },
+ "op-battle-of-brisbane": {
+  "name": "Battle of Brisbane",
+  "kind": "riot between U.S. and Australian servicemen and civilians",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Brisbane"
+ },
  "op-battle-of-britain": {
   "name": "Battle of Britain",
   "kind": "air campaign",
@@ -12557,6 +12564,16 @@
   "nation": "Britain",
   "wikidata": "Q7492591",
   "source": "https://en.wikipedia.org/wiki/Sheffield_Blitz"
+ },
+ "op-shelling-of-mainila": {
+  "name": "Shelling of Mainila",
+  "kind": "staged border incident, false flag",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Shelling_of_Mainila",
+  "aka": [
+   "Mainila incident"
+  ]
  },
  "op-shelling-of-newcastle": {
   "name": "Shelling of Newcastle",

@@ -1222,6 +1222,18 @@
   "lat": 48.2111,
   "lon": 6.8047
  },
+ "place-bihac": {
+  "name": "Bihac",
+  "kind": "town in western Bosnia",
+  "nation": "Yugoslavia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Biha%C4%87",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Bihać"
+  ]
+ },
  "place-bikini-atoll": {
   "name": "Bikini Atoll",
   "kind": "atoll in the Marshall Islands",
@@ -1582,6 +1594,15 @@
   "source": "https://en.wikipedia.org/wiki/Brighton",
   "lat": 50.8208,
   "lon": -0.1375
+ },
+ "place-brisbane": {
+  "name": "Brisbane",
+  "kind": "city, capital of Queensland",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Brisbane",
+  "lat": null,
+  "lon": null
  },
  "place-bristol": {
   "name": "Bristol",
@@ -4314,6 +4335,19 @@
   "source": "https://en.wikipedia.org/wiki/Golm_War_Cemetery",
   "lat": 53.8861,
   "lon": 14.2047
+ },
+ "place-gomel": {
+  "name": "Gomel",
+  "kind": "city in Belarus",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Gomel",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Homel",
+   "Homiel"
+  ]
  },
  "place-gona-papua-new-guinea": {
   "name": "Gona",
