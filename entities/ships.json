@@ -2025,6 +2025,13 @@
   "wikidata": "Q5551710",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-477"
  },
+ "ship-german-submarine-u-479": {
+  "name": "U-479",
+  "kind": "U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-479"
+ },
  "ship-german-submarine-u-48-1939": {
   "name": "German submarine U 48 (1939)",
   "kind": "Type VIIB U boat",
@@ -3491,6 +3498,13 @@
   "aka": [
    "Nestor"
   ]
+ },
+ "ship-hmas-parramatta-u44": {
+  "name": "HMAS Parramatta (U44)",
+  "kind": "sloop",
+  "nation": "Australia",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMAS_Parramatta_(U44)"
  },
  "ship-hmas-perth-d29": {
   "name": "HMAS Perth (D29)",
@@ -7700,6 +7714,13 @@
   "nation": "Sweden",
   "wikidata": "Q3277521",
   "source": "https://en.wikipedia.org/wiki/MS_Gripsholm_(1924)"
+ },
+ "ship-ms-rigel": {
+  "name": "MS Rigel",
+  "kind": "Norwegian motor ship used as a prisoner transport",
+  "nation": "Norway",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/MS_Rigel"
  },
  "ship-ms-sinfra": {
   "name": "MS Sinfra",

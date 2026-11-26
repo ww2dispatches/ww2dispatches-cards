@@ -7698,6 +7698,15 @@
    "Marienbad"
   ]
  },
+ "place-marine-corps-recruit-depot-parris-island": {
+  "name": "Marine Corps Recruit Depot Parris Island",
+  "kind": "Marine Corps boot camp",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Marine_Corps_Recruit_Depot_Parris_Island",
+  "lat": null,
+  "lon": null
+ },
  "place-mariveles": {
   "name": "Mariveles",
   "kind": "town and bay at the tip of Bataan",
@@ -8029,6 +8038,15 @@
   "wikidata": "Q201516",
   "lat": 25.8139,
   "lon": -80.1325
+ },
+ "place-michie-stadium": {
+  "name": "Michie Stadium",
+  "kind": "football stadium at West Point",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Michie_Stadium",
+  "lat": null,
+  "lon": null
  },
  "place-michniow": {
   "name": "Michniów",

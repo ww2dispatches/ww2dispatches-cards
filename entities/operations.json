@@ -2135,6 +2135,16 @@
   "wikidata": "Q1636800",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Cape_Spada"
  },
+ "op-battle-of-cape-spartivento": {
+  "name": "Battle of Cape Spartivento",
+  "kind": "naval battle",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Cape_Spartivento",
+  "aka": [
+   "Battle of Cape Teulada"
+  ]
+ },
  "op-battle-of-carentan": {
   "name": "Battle of Carentan",
   "kind": "battle, Normandy, 10 to 14 June 1944",
@@ -7139,6 +7149,16 @@
   "nation": "Germany",
   "wikidata": "Q3360277",
   "source": "https://en.wikipedia.org/wiki/German%E2%80%93Turkish_Treaty_of_Friendship"
+ },
+ "op-germania-city": {
+  "name": "Welthauptstadt Germania",
+  "kind": "planned rebuilding of Berlin",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Germania_(city)",
+  "aka": [
+   "Germania"
+  ]
  },
  "op-gilbert-and-marshall-islands-campaign": {
   "name": "Gilbert and Marshall Islands campaign",
