@@ -460,3 +460,7 @@ for n,d in D.items():
     TEXT[n]=t
 
 TEXT[11].update(zoom=112,focusX=72,focusY=60); TEXT[17].update(zoom=125,focusY=62); TEXT[27].update(zoom=140,focusX=45,focusY=68)
+P2={18:("bu-18.jpg","James F. Byrnes, who as Director of War Mobilization asked the nation's racetracks to close, about 1941 to 1942. Harris and Ewing photo, Library of Congress (cph.3c32232). Public domain."),
+22:("bu-22.jpg","Stalin, Roosevelt and Churchill at the Tehran Conference, November 1943. U.S. Army Signal Corps photo, Library of Congress (cph.3c35324). Public domain.")}
+for n,(f,c) in P2.items():
+    TEXT[n].update(photo="photos/campaign/"+f,photoCredit=c,photoNote="tier green",alt=f"WW2 Dispatches Campaign Series, The Bulge, Day {n}. "+c,focusX=50,focusY=40,zoom=(110 if n==18 else 100))
