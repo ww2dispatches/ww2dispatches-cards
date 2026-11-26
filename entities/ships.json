@@ -133,7 +133,7 @@
   "name": "French cruiser Suffren",
   "kind": "heavy cruiser",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q2213407",
   "source": "https://en.wikipedia.org/wiki/French_cruiser_Suffren"
  },
  "ship-french-destroyer-bison-1928": {
@@ -187,7 +187,7 @@
   "name": "French destroyer Léopard",
   "kind": "Free French large destroyer",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q2710875",
   "source": "https://en.wikipedia.org/wiki/French_destroyer_L%C3%A9opard"
  },
  "ship-french-submarine-casabianca-1935": {
@@ -669,7 +669,7 @@
   "name": "U 1228",
   "kind": "Type IXC/40 U boat",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q3551958",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-1228"
  },
  "ship-german-submarine-u-123-1940": {
@@ -1113,7 +1113,7 @@
   "name": "German submarine U-21 (1936)",
   "kind": "U-boat",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q554487",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-21_(1936)",
   "aka": [
    "U-21"
@@ -1294,7 +1294,7 @@
   "name": "German submarine U-2513",
   "kind": "U-boat",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q563378",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-2513",
   "aka": [
    "U-2513"
@@ -2063,7 +2063,7 @@
   "name": "U-479",
   "kind": "U-boat",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q5551714",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-479"
  },
  "ship-german-submarine-u-48-1939": {
@@ -3088,7 +3088,7 @@
   "name": "German submarine U-80 (1941)",
   "kind": "Type VIIC U-boat, training boat",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q321709",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-80_(1941)"
  },
  "ship-german-submarine-u-803": {
@@ -3288,7 +3288,7 @@
   "name": "German submarine U-95 (1940)",
   "kind": "Type VIIC U-boat",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q666646",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-95_(1940)"
  },
  "ship-german-submarine-u-952": {
@@ -3551,7 +3551,7 @@
   "name": "HMAS Parramatta (U44)",
   "kind": "sloop",
   "nation": "Australia",
-  "wikidata": null,
+  "wikidata": "Q5630521",
   "source": "https://en.wikipedia.org/wiki/HMAS_Parramatta_(U44)"
  },
  "ship-hmas-perth-d29": {
@@ -3705,7 +3705,7 @@
   "name": "HMCS Shawinigan (K136)",
   "kind": "Flower class corvette",
   "nation": "Canada",
-  "wikidata": null,
+  "wikidata": "Q3481602",
   "source": "https://en.wikipedia.org/wiki/HMCS_Shawinigan_(K136)"
  },
  "ship-hmcs-spikenard": {
@@ -4269,7 +4269,7 @@
   "name": "HMS Dunedin (D93)",
   "kind": "Danae class light cruiser",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q1164760",
   "source": "https://en.wikipedia.org/wiki/HMS_Dunedin"
  },
  "ship-hms-dunvegan-castle": {
@@ -5383,7 +5383,7 @@
   "name": "HMS Stratagem (P234)",
   "kind": "S class submarine",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q1551211",
   "source": "https://en.wikipedia.org/wiki/HMS_Stratagem"
  },
  "ship-hms-sturgeon-73s": {
@@ -5908,7 +5908,7 @@
   "name": "HNLMS O 21",
   "kind": "Dutch submarine",
   "nation": "Netherlands",
-  "wikidata": null,
+  "wikidata": "Q1632246",
   "source": "https://en.wikipedia.org/wiki/HNLMS_O_21"
  },
  "ship-hnlms-piet-hein-1927": {
@@ -6257,7 +6257,7 @@
   "name": "Italian submarine Evangelista Torricelli (1934)",
   "kind": "Archimede class submarine",
   "nation": "Italy",
-  "wikidata": null,
+  "wikidata": "Q3735217",
   "source": "https://en.wikipedia.org/wiki/Italian_submarine_Evangelista_Torricelli_(1934)",
   "note": "Transferred to the Spanish Nationalist navy in 1937; English and Italian Wikipedia disagree on the new name (General Mola or General Sanjurjo)."
  },
@@ -7211,7 +7211,7 @@
   "name": "Japanese destroyer Urakaze (1940)",
   "kind": "destroyer",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q2237956",
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Urakaze_(1940)"
  },
  "ship-japanese-destroyer-ushio-1930": {
@@ -7426,7 +7426,7 @@
   "name": "Japanese submarine I-175",
   "kind": "Kaidai type cruiser submarine",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q3788345",
   "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-175",
   "aka": [
    "I-75"
@@ -7805,7 +7805,7 @@
   "name": "MS Rigel",
   "kind": "Norwegian motor ship used as a prisoner transport",
   "nation": "Norway",
-  "wikidata": null,
+  "wikidata": "Q843092",
   "source": "https://en.wikipedia.org/wiki/MS_Rigel"
  },
  "ship-ms-sinfra": {
@@ -8150,7 +8150,7 @@
   "name": "RMS Nova Scotia (1926)",
   "kind": "British liner used as a troopship",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q3878991",
   "source": "https://en.wikipedia.org/wiki/RMS_Nova_Scotia_(1926)"
  },
  "ship-rms-queen-elizabeth": {
@@ -8358,7 +8358,7 @@
   "name": "Spanish cruiser Miguel de Cervantes",
   "kind": "light cruiser",
   "nation": "Spain",
-  "wikidata": null,
+  "wikidata": "Q3396067",
   "source": "https://en.wikipedia.org/wiki/Spanish_cruiser_Miguel_de_Cervantes"
  },
  "ship-spanish-destroyer-velasco": {
@@ -8744,7 +8744,7 @@
   "name": "SS Fort Cataraqui",
   "kind": "Canadian built Fort type cargo ship",
   "nation": "Canada",
-  "wikidata": null,
+  "wikidata": "Q7393710",
   "source": "https://en.wikipedia.org/wiki/SS_Fort_Cataraqui"
  },
  "ship-ss-fort-lee": {
@@ -8987,7 +8987,7 @@
   "name": "SS Patria (1913)",
   "kind": "ocean liner",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q6478143",
   "source": "https://en.wikipedia.org/wiki/SS_Patria_(1913)",
   "aka": [
    "Patria"
@@ -9763,7 +9763,7 @@
   "name": "USS Charles Ausburne (DD 570)",
   "kind": "Fletcher class destroyer",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q2468810",
   "source": "https://en.wikipedia.org/wiki/USS_Charles_Ausburne_(DD-570)"
  },
  "ship-uss-chemung-ao-30": {

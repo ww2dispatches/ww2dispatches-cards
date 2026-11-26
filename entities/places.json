@@ -726,13 +726,13 @@
   "name": "Baltiysk",
   "kind": "Baltic port, formerly Pillau",
   "nation": "Germany",
-  "wikidata": null,
+  "wikidata": "Q5660",
   "source": "https://en.wikipedia.org/wiki/Baltiysk",
   "aka": [
    "Pillau"
   ],
-  "lat": null,
-  "lon": null
+  "lat": 54.65,
+  "lon": 19.9167
  },
  "place-bandung": {
   "name": "Bandung",
@@ -935,13 +935,13 @@
   "name": "Béchar",
   "kind": "town in the Algerian Sahara",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q638704",
   "source": "https://en.wikipedia.org/wiki/B%C3%A9char",
   "aka": [
    "Colomb-Béchar"
   ],
-  "lat": null,
-  "lon": null
+  "lat": 31.6164,
+  "lon": -2.2183
  },
  "place-bedford": {
   "name": "Bedford",
@@ -1250,10 +1250,10 @@
   "name": "Bihac",
   "kind": "town in western Bosnia",
   "nation": "Yugoslavia",
-  "wikidata": null,
+  "wikidata": "Q204434",
   "source": "https://en.wikipedia.org/wiki/Biha%C4%87",
-  "lat": null,
-  "lon": null,
+  "lat": 44.8147,
+  "lon": 15.8692,
   "aka": [
    "Bihać"
   ]
@@ -1623,10 +1623,10 @@
   "name": "Brisbane",
   "kind": "city, capital of Queensland",
   "nation": "Australia",
-  "wikidata": null,
+  "wikidata": "Q34932",
   "source": "https://en.wikipedia.org/wiki/Brisbane",
-  "lat": null,
-  "lon": null
+  "lat": -27.4678,
+  "lon": 153.0278
  },
  "place-bristol": {
   "name": "Bristol",
@@ -3774,10 +3774,10 @@
   "name": "Firth of Forth",
   "kind": "firth, Scotland",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q202083",
   "source": "https://en.wikipedia.org/wiki/Firth_of_Forth",
-  "lat": null,
-  "lon": null
+  "lat": 56.1667,
+  "lon": -2.75
  },
  "place-florence": {
   "name": "Florence",
@@ -3940,10 +3940,10 @@
   "name": "Fort Niagara",
   "kind": "Army post, Youngstown, New York",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q362553",
   "source": "https://en.wikipedia.org/wiki/Fort_Niagara",
-  "lat": null,
-  "lon": null
+  "lat": 43.2617,
+  "lon": -79.0636
  },
  "place-fort-roupel": {
   "name": "Fort Roupel",
@@ -4082,10 +4082,10 @@
   "name": "French West Africa",
   "kind": "French colonial federation",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q210682",
   "source": "https://en.wikipedia.org/wiki/French_West_Africa",
-  "lat": null,
-  "lon": null
+  "lat": 14.4926,
+  "lon": -5.6609
  },
  "place-fresnes-prison": {
   "name": "Fresnes Prison",
@@ -4382,10 +4382,10 @@
   "name": "Gomel",
   "kind": "city in Belarus",
   "nation": "Soviet Union",
-  "wikidata": null,
+  "wikidata": "Q2678",
   "source": "https://en.wikipedia.org/wiki/Gomel",
-  "lat": null,
-  "lon": null,
+  "lat": 52.4417,
+  "lon": 30.9833,
   "aka": [
    "Homel",
    "Homiel"
@@ -4404,10 +4404,10 @@
   "name": "Gorgopotamos (river)",
   "kind": "river and railway viaduct in Central Greece",
   "nation": "Greece",
-  "wikidata": null,
+  "wikidata": "Q3567345",
   "source": "https://en.wikipedia.org/wiki/Gorgopotamos_(river)",
-  "lat": null,
-  "lon": null,
+  "lat": 38.8561,
+  "lon": 22.4175,
   "aka": [
    "Gorgopotamos viaduct"
   ]
@@ -4701,10 +4701,10 @@
   "name": "Haiphong",
   "kind": "port city",
   "nation": "Vietnam",
-  "wikidata": null,
+  "wikidata": "Q72818",
   "source": "https://en.wikipedia.org/wiki/Haiphong",
-  "lat": null,
-  "lon": null
+  "lat": 20.8,
+  "lon": 106.6667
  },
  "place-hakenfelde": {
   "name": "Hakenfelde",
@@ -5445,10 +5445,10 @@
   "name": "Ibrox Stadium",
   "kind": "football stadium, Glasgow",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q208709",
   "source": "https://en.wikipedia.org/wiki/Ibrox_Stadium",
-  "lat": null,
-  "lon": null
+  "lat": 55.8531,
+  "lon": -4.3092
  },
  "place-iceland": {
   "lat": 65.0,
@@ -6032,10 +6032,10 @@
   "name": "Kasatka Bay",
   "kind": "bay, Iturup island",
   "nation": "Japan",
-  "wikidata": null,
+  "wikidata": "Q4216510",
   "source": "https://en.wikipedia.org/wiki/Kasatka_Bay",
-  "lat": null,
-  "lon": null,
+  "lat": 44.9667,
+  "lon": 147.6667,
   "aka": [
    "Hitokappu Bay",
    "Tankan Bay"
@@ -7068,10 +7068,10 @@
   "name": "Library of Congress",
   "kind": "national library, Washington",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q131454",
   "source": "https://en.wikipedia.org/wiki/Library_of_Congress",
-  "lat": null,
-  "lon": null
+  "lat": 38.8886,
+  "lon": -77.0047
  },
  "place-lidice": {
   "name": "Lidice",
@@ -7808,10 +7808,10 @@
   "name": "Marine Corps Recruit Depot Parris Island",
   "kind": "Marine Corps boot camp",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q1424369",
   "source": "https://en.wikipedia.org/wiki/Marine_Corps_Recruit_Depot_Parris_Island",
-  "lat": null,
-  "lon": null
+  "lat": 32.35,
+  "lon": -80.6717
  },
  "place-mariveles": {
   "name": "Mariveles",
@@ -8149,10 +8149,10 @@
   "name": "Michie Stadium",
   "kind": "football stadium at West Point",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q3311487",
   "source": "https://en.wikipedia.org/wiki/Michie_Stadium",
-  "lat": null,
-  "lon": null
+  "lat": 41.3875,
+  "lon": -73.9642
  },
  "place-michniow": {
   "name": "Michniów",
@@ -9021,10 +9021,10 @@
   "name": "New Cross",
   "kind": "district of south east London",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q369361",
   "source": "https://en.wikipedia.org/wiki/New_Cross",
-  "lat": null,
-  "lon": null
+  "lat": 51.4709,
+  "lon": -0.0337
  },
  "place-new-jerusalem-monastery": {
   "name": "New Jerusalem Monastery",
@@ -10606,10 +10606,10 @@
   "name": "Rashaya Citadel",
   "kind": "citadel where Lebanon's leaders were held in 1943",
   "nation": "Lebanon",
-  "wikidata": null,
+  "wikidata": "Q22948448",
   "source": "https://en.wikipedia.org/wiki/Rashaya_Citadel",
-  "lat": null,
-  "lon": null
+  "lat": 33.5,
+  "lon": 35.8418
  },
  "place-ravensbruck-concentration-camp": {
   "name": "Ravensbruck concentration camp",
@@ -10718,13 +10718,13 @@
   "name": "Réunion",
   "kind": "French island colony in the Indian Ocean",
   "nation": "France",
-  "wikidata": null,
+  "wikidata": "Q17070",
   "source": "https://en.wikipedia.org/wiki/R%C3%A9union",
   "aka": [
    "La Réunion"
   ],
-  "lat": null,
-  "lon": null
+  "lat": -21.1144,
+  "lon": 55.5325
  },
  "place-reykjavik": {
   "name": "Reykjavik",
@@ -11744,10 +11744,10 @@
   "name": "Shoeburyness",
   "kind": "town on the Thames Estuary",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q593890",
   "source": "https://en.wikipedia.org/wiki/Shoeburyness",
-  "lat": null,
-  "lon": null
+  "lat": 51.5316,
+  "lon": 0.7978
  },
  "place-shubert-theatre": {
   "name": "Shubert Theatre",
@@ -12449,10 +12449,10 @@
   "name": "Surinam (Dutch Guiana)",
   "kind": "Dutch colony",
   "nation": "Netherlands",
-  "wikidata": null,
+  "wikidata": "Q7646305",
   "source": "https://en.wikipedia.org/wiki/Surinam_(Dutch_colony)",
-  "lat": null,
-  "lon": null,
+  "lat": 5.8211,
+  "lon": -55.186,
   "aka": [
    "Dutch Guiana",
    "Suriname"
@@ -12883,10 +12883,10 @@
   "name": "Thompson Stadium",
   "kind": "former Naval Academy football stadium, Annapolis",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q7795786",
   "source": "https://en.wikipedia.org/wiki/Thompson_Stadium",
-  "lat": null,
-  "lon": null
+  "lat": 38.9786,
+  "lon": -76.4831
  },
  "place-thousand-islands-bridge": {
   "name": "Thousand Islands Bridge",
@@ -13440,10 +13440,10 @@
   "name": "United States Naval Academy",
   "kind": "naval academy, Annapolis",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q559549",
   "source": "https://en.wikipedia.org/wiki/United_States_Naval_Academy",
-  "lat": null,
-  "lon": null
+  "lat": 38.9825,
+  "lon": -76.485
  },
  "place-university-of-bristol": {
   "name": "University of Bristol",
