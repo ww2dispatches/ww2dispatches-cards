@@ -4015,6 +4015,15 @@
   "lat": 21.0333,
   "lon": 105.85
  },
+ "place-french-west-africa": {
+  "name": "French West Africa",
+  "kind": "French colonial federation",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/French_West_Africa",
+  "lat": null,
+  "lon": null
+ },
  "place-fresnes-prison": {
   "name": "Fresnes Prison",
   "kind": "prison near Paris",
@@ -4599,6 +4608,15 @@
   "source": "https://en.wikipedia.org/wiki/Hainan",
   "lat": 20.0334,
   "lon": 110.324
+ },
+ "place-haiphong": {
+  "name": "Haiphong",
+  "kind": "port city",
+  "nation": "Vietnam",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Haiphong",
+  "lat": null,
+  "lon": null
  },
  "place-hakenfelde": {
   "name": "Hakenfelde",
@@ -5912,6 +5930,20 @@
    "Karlsbad",
    "Carlsbad"
   ]
+ },
+ "place-kasatka-bay": {
+  "name": "Kasatka Bay",
+  "kind": "bay, Iturup island",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Kasatka_Bay",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Hitokappu Bay",
+   "Tankan Bay"
+  ],
+  "note": "Assembly anchorage of the Pearl Harbor striking force, November 1941; now in Russian held Kurils."
  },
  "place-kassala": {
   "name": "Kassala",
@@ -11553,6 +11585,15 @@
   ],
   "lat": 59.945,
   "lon": 31.0347
+ },
+ "place-shoeburyness": {
+  "name": "Shoeburyness",
+  "kind": "town on the Thames Estuary",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Shoeburyness",
+  "lat": null,
+  "lon": null
  },
  "place-shubert-theatre": {
   "name": "Shubert Theatre",
