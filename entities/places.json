@@ -12352,6 +12352,19 @@
   "lat": -7.2463,
   "lon": 112.7378
  },
+ "place-surinam-dutch-colony": {
+  "name": "Surinam (Dutch Guiana)",
+  "kind": "Dutch colony",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Surinam_(Dutch_colony)",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Dutch Guiana",
+   "Suriname"
+  ]
+ },
  "place-surrey-commercial-docks": {
   "name": "Surrey Commercial Docks",
   "kind": "docks in Rotherhithe, London",

@@ -4210,6 +4210,13 @@
   "wikidata": "Q528336",
   "source": "https://en.wikipedia.org/wiki/HMS_Duncan_(D99)"
  },
+ "ship-hms-dunedin": {
+  "name": "HMS Dunedin (D93)",
+  "kind": "Danae class light cruiser",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMS_Dunedin"
+ },
  "ship-hms-dunvegan-castle": {
   "name": "HMS Dunvegan Castle",
   "kind": "armed merchant cruiser, former liner",
@@ -7345,6 +7352,16 @@
   "nation": "Japan",
   "wikidata": "Q4387602",
   "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-17"
+ },
+ "ship-japanese-submarine-i-175": {
+  "name": "Japanese submarine I-175",
+  "kind": "Kaidai type cruiser submarine",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_submarine_I-175",
+  "aka": [
+   "I-75"
+  ]
  },
  "ship-japanese-submarine-i-176": {
   "name": "Japanese submarine I-176",

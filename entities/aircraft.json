@@ -1049,6 +1049,13 @@
    "Graf Zeppelin II"
   ]
  },
+ "aircraft-macchi-c-202-folgore": {
+  "name": "Macchi C.202 Folgore",
+  "kind": "Italian fighter",
+  "nation": "Italy",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Macchi_C.202_Folgore"
+ },
  "aircraft-macchi-m-c-72": {
   "name": "Macchi M.C.72",
   "kind": "experimental racing floatplane",
