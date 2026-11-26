@@ -722,6 +722,18 @@
   "lat": 39.2864,
   "lon": -76.615
  },
+ "place-baltiysk": {
+  "name": "Baltiysk",
+  "kind": "Baltic port, formerly Pillau",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Baltiysk",
+  "aka": [
+   "Pillau"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-bandung": {
   "name": "Bandung",
   "kind": "city on Java",
@@ -918,6 +930,18 @@
   "wikidata": "Q745512",
   "lat": 62.3853,
   "lon": -140.893
+ },
+ "place-bechar": {
+  "name": "Béchar",
+  "kind": "town in the Algerian Sahara",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/B%C3%A9char",
+  "aka": [
+   "Colomb-Béchar"
+  ],
+  "lat": null,
+  "lon": null
  },
  "place-bedford": {
   "name": "Bedford",
@@ -5417,6 +5441,15 @@
    "Jassy"
   ]
  },
+ "place-ibrox-stadium": {
+  "name": "Ibrox Stadium",
+  "kind": "football stadium, Glasgow",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ibrox_Stadium",
+  "lat": null,
+  "lon": null
+ },
  "place-iceland": {
   "lat": 65.0,
   "lon": -19.0,
@@ -7030,6 +7063,15 @@
   "source": "https://en.wikipedia.org/wiki/Le%C5%BE%C3%A1ky",
   "lat": 49.8325,
   "lon": 15.9003
+ },
+ "place-library-of-congress": {
+  "name": "Library of Congress",
+  "kind": "national library, Washington",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Library_of_Congress",
+  "lat": null,
+  "lon": null
  },
  "place-lidice": {
   "name": "Lidice",
@@ -10672,6 +10714,18 @@
   "lat": -8.5167,
   "lon": 157.3167
  },
+ "place-reunion": {
+  "name": "Réunion",
+  "kind": "French island colony in the Indian Ocean",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/R%C3%A9union",
+  "aka": [
+   "La Réunion"
+  ],
+  "lat": null,
+  "lon": null
+ },
  "place-reykjavik": {
   "name": "Reykjavik",
   "kind": "city",
@@ -12825,6 +12879,15 @@
    "Terezin"
   ]
  },
+ "place-thompson-stadium": {
+  "name": "Thompson Stadium",
+  "kind": "former Naval Academy football stadium, Annapolis",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Thompson_Stadium",
+  "lat": null,
+  "lon": null
+ },
  "place-thousand-islands-bridge": {
   "name": "Thousand Islands Bridge",
   "kind": "bridge linking New York and Ontario",
@@ -13372,6 +13435,15 @@
   ],
   "lat": 32.7722,
   "lon": -97.4497
+ },
+ "place-united-states-naval-academy": {
+  "name": "United States Naval Academy",
+  "kind": "naval academy, Annapolis",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/United_States_Naval_Academy",
+  "lat": null,
+  "lon": null
  },
  "place-university-of-bristol": {
   "name": "University of Bristol",

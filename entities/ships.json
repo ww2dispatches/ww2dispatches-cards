@@ -183,6 +183,13 @@
    "Le Terrible"
   ]
  },
+ "ship-french-destroyer-leopard": {
+  "name": "French destroyer Léopard",
+  "kind": "Free French large destroyer",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/French_destroyer_L%C3%A9opard"
+ },
  "ship-french-submarine-casabianca-1935": {
   "name": "Casabianca",
   "kind": "submarine",
@@ -3077,6 +3084,13 @@
   "wikidata": "Q471606",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-79_(1941)"
  },
+ "ship-german-submarine-u-80-1941": {
+  "name": "German submarine U-80 (1941)",
+  "kind": "Type VIIC U-boat, training boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-80_(1941)"
+ },
  "ship-german-submarine-u-803": {
   "name": "German submarine U-803",
   "kind": "Type IXC/40 U-boat",
@@ -3269,6 +3283,13 @@
   "nation": "Germany",
   "wikidata": "Q554583",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-94_(1940)"
+ },
+ "ship-german-submarine-u-95-1940": {
+  "name": "German submarine U-95 (1940)",
+  "kind": "Type VIIC U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-95_(1940)"
  },
  "ship-german-submarine-u-952": {
   "name": "U-952",
@@ -5883,6 +5904,13 @@
   "wikidata": "Q2010241",
   "source": "https://en.wikipedia.org/wiki/HNLMS_K_XVI"
  },
+ "ship-hnlms-o-21": {
+  "name": "HNLMS O 21",
+  "kind": "Dutch submarine",
+  "nation": "Netherlands",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HNLMS_O_21"
+ },
  "ship-hnlms-piet-hein-1927": {
   "name": "HNLMS Piet Hein (1927)",
   "kind": "Admiralen class destroyer",
@@ -8118,6 +8146,13 @@
    "Tyrrhenia"
   ]
  },
+ "ship-rms-nova-scotia-1926": {
+  "name": "RMS Nova Scotia (1926)",
+  "kind": "British liner used as a troopship",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/RMS_Nova_Scotia_(1926)"
+ },
  "ship-rms-queen-elizabeth": {
   "name": "RMS Queen Elizabeth",
   "kind": "British ocean liner and troopship",
@@ -8704,6 +8739,13 @@
   "nation": "Britain",
   "wikidata": "Q7393694",
   "source": "https://en.wikipedia.org/wiki/SS_Fanad_Head"
+ },
+ "ship-ss-fort-cataraqui": {
+  "name": "SS Fort Cataraqui",
+  "kind": "Canadian built Fort type cargo ship",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Fort_Cataraqui"
  },
  "ship-ss-fort-lee": {
   "name": "SS Fort Lee",

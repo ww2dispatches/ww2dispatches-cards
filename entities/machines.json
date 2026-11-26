@@ -906,6 +906,14 @@
    "Sherman II"
   ]
  },
+ "machine-magna-carta": {
+  "name": "Magna Carta",
+  "kind": "charter of 1215; the Lincoln Cathedral copy",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Magna_Carta",
+  "note": "This bank event concerns the Lincoln Cathedral copy."
+ },
  "machine-magnetophon": {
   "name": "Magnetophon",
   "kind": "magnetic tape sound recorder",
