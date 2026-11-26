@@ -3912,6 +3912,15 @@
    "Mont Valérien"
   ]
  },
+ "place-fort-niagara": {
+  "name": "Fort Niagara",
+  "kind": "Army post, Youngstown, New York",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Fort_Niagara",
+  "lat": null,
+  "lon": null
+ },
  "place-fort-roupel": {
   "name": "Fort Roupel",
   "kind": "fort of the Metaxas Line",
@@ -4366,6 +4375,18 @@
   "source": "https://en.wikipedia.org/wiki/Gona,_Papua_New_Guinea",
   "lat": -8.6,
   "lon": 148.2667
+ },
+ "place-gorgopotamos-river": {
+  "name": "Gorgopotamos (river)",
+  "kind": "river and railway viaduct in Central Greece",
+  "nation": "Greece",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Gorgopotamos_(river)",
+  "lat": null,
+  "lon": null,
+  "aka": [
+   "Gorgopotamos viaduct"
+  ]
  },
  "place-gothenburg": {
   "name": "Gothenburg",
@@ -8953,6 +8974,15 @@
   "source": "https://en.wikipedia.org/wiki/Neuss",
   "lat": 51.2003,
   "lon": 6.6939
+ },
+ "place-new-cross": {
+  "name": "New Cross",
+  "kind": "district of south east London",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/New_Cross",
+  "lat": null,
+  "lon": null
  },
  "place-new-jerusalem-monastery": {
   "name": "New Jerusalem Monastery",

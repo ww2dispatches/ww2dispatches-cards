@@ -2162,6 +2162,13 @@
    "Battle of Cape Teulada"
   ]
  },
+ "op-battle-of-cape-st-george": {
+  "name": "Battle of Cape St. George",
+  "kind": "naval battle",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Cape_St._George"
+ },
  "op-battle-of-carentan": {
   "name": "Battle of Carentan",
   "kind": "battle, Normandy, 10 to 14 June 1944",
@@ -9687,6 +9694,13 @@
    "Brussels Conference"
   ]
  },
+ "op-ninth-fort-massacres-of-november-1941": {
+  "name": "Ninth Fort massacres of November 1941",
+  "kind": "mass shootings of deported German Jews",
+  "nation": "Lithuania",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Ninth_Fort_massacres_of_November_1941"
+ },
  "op-nis-incident": {
   "name": "Nis incident",
   "kind": "friendly fire air battle",
@@ -10544,6 +10558,16 @@
   "wikidata": "Q695666",
   "source": "https://en.wikipedia.org/wiki/Operation_Hannibal"
  },
+ "op-operation-harling": {
+  "name": "Operation Harling",
+  "kind": "SOE sabotage operation",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Harling",
+  "aka": [
+   "Battle of Gorgopotamos"
+  ]
+ },
  "op-operation-harpoon-1942": {
   "name": "Operation Harpoon",
   "kind": "June 1942 Malta convoy from Gibraltar",
@@ -10796,6 +10820,16 @@
   "nation": "Britain",
   "wikidata": "Q189930",
   "source": "https://en.wikipedia.org/wiki/Operation_Market_Garden"
+ },
+ "op-operation-mars": {
+  "name": "Operation Mars",
+  "kind": "Soviet offensive",
+  "nation": "Soviet Union",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Operation_Mars",
+  "aka": [
+   "Second Rzhev Sychevka Offensive"
+  ]
  },
  "op-operation-mascot": {
   "name": "Operation Mascot",
@@ -11585,6 +11619,13 @@
   "nation": "India",
   "wikidata": "Q129053",
   "source": "https://en.wikipedia.org/wiki/Partition_of_India"
+ },
+ "op-patria-disaster": {
+  "name": "Patria disaster",
+  "kind": "ship bombing",
+  "nation": "Mandatory Palestine",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Patria_disaster"
  },
  "op-pavoloch-massacre": {
   "name": "Pavoloch massacre",

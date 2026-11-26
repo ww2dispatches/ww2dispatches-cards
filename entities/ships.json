@@ -658,6 +658,13 @@
    "Satsuki No. 2"
   ]
  },
+ "ship-german-submarine-u-1228": {
+  "name": "U 1228",
+  "kind": "Type IXC/40 U boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-1228"
+ },
  "ship-german-submarine-u-123-1940": {
   "name": "U-123",
   "kind": "Type IXB U-boat",
@@ -3672,6 +3679,13 @@
   "nation": "Canada",
   "wikidata": "Q5630897",
   "source": "https://en.wikipedia.org/wiki/HMCS_Regina_(K234)"
+ },
+ "ship-hmcs-shawinigan-k136": {
+  "name": "HMCS Shawinigan (K136)",
+  "kind": "Flower class corvette",
+  "nation": "Canada",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/HMCS_Shawinigan_(K136)"
  },
  "ship-hmcs-spikenard": {
   "name": "HMCS Spikenard (K198)",
@@ -8927,6 +8941,16 @@
   "wikidata": "Q1577076",
   "source": "https://en.wikipedia.org/wiki/SS_Paris_(1916)"
  },
+ "ship-ss-patria-1913": {
+  "name": "SS Patria (1913)",
+  "kind": "ocean liner",
+  "nation": "France",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/SS_Patria_(1913)",
+  "aka": [
+   "Patria"
+  ]
+ },
  "ship-ss-patrick-henry": {
   "name": "SS Patrick Henry",
   "kind": "the first Liberty ship launched, Bethlehem Fairfield, Baltimore",
@@ -9692,6 +9716,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/USS_Chanticleer_(ASR-7)",
   "wikidata": "Q7868208"
+ },
+ "ship-uss-charles-ausburne-dd-570": {
+  "name": "USS Charles Ausburne (DD 570)",
+  "kind": "Fletcher class destroyer",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/USS_Charles_Ausburne_(DD-570)"
  },
  "ship-uss-chemung-ao-30": {
   "name": "USS Chemung (AO-30)",
