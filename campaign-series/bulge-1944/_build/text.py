@@ -461,6 +461,9 @@ for n,d in D.items():
 
 TEXT[11].update(zoom=112,focusX=72,focusY=60); TEXT[17].update(zoom=125,focusY=62); TEXT[27].update(zoom=140,focusX=45,focusY=68)
 P2={18:("bu-18.jpg","James F. Byrnes, who as Director of War Mobilization asked the nation's racetracks to close, about 1941 to 1942. Harris and Ewing photo, Library of Congress (cph.3c32232). Public domain."),
-22:("bu-22.jpg","Stalin, Roosevelt and Churchill at the Tehran Conference, November 1943. U.S. Army Signal Corps photo, Library of Congress (cph.3c35324). Public domain.")}
+22:("bu-22.jpg","Stalin, Roosevelt and Churchill at the Tehran Conference, November 1943. U.S. Army Signal Corps photo, Library of Congress (cph.3c35324). Public domain."),
+21:("bu-21.jpg","A sniper of the British 6th Airborne Division on patrol in the Ardennes in a snow camouflage suit, 14 January 1945. No 5 Army Film and Photographic Unit, Sgt. Bert Hardy, Imperial War Museum (B 13676). Crown copyright expired, public domain."),
+28:("bu-28.jpg","The Soviet offensive from the Vistula to the Oder, 12 January to 30 March 1945. Map from the Department of History, United States Military Academy, West Point. Public domain.")}
+FOC={18:(50,40,110),22:(50,40,100),21:(45,35,100),28:(55,50,100)}
 for n,(f,c) in P2.items():
-    TEXT[n].update(photo="photos/campaign/"+f,photoCredit=c,photoNote="tier green",alt=f"WW2 Dispatches Campaign Series, The Bulge, Day {n}. "+c,focusX=50,focusY=40,zoom=(110 if n==18 else 100))
+    TEXT[n].update(photo="photos/campaign/"+f,photoCredit=c,photoNote="tier green",alt=f"WW2 Dispatches Campaign Series, The Bulge, Day {n}. "+c,focusX=FOC[n][0],focusY=FOC[n][1],zoom=FOC[n][2])
