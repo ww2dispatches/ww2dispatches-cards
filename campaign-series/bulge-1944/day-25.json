@@ -280,23 +280,43 @@
   ],
   "lineSources": [
    "LOC 12th Army Group situation map, 10 Jan 1945",
-   "MacDonald, The Last Offensive, pp. 39 to 41"
+   "MacDonald, The Last Offensive, pp. 39 to 40"
   ],
   "moves": [
    {
-    "unit": "15pg",
+    "unit": "26vg",
     "move": "fall_back",
     "order": 1,
     "to": [
-     5.72,
-     50.1
+     5.93,
+     50.02
     ],
     "sources": [
-     "MacDonald, The Last Offensive, pp. 39 to 41 (Third Army renews its attack around Bastogne)",
+     "MacDonald, The Last Offensive, p. 40 (the 90th Division attacks northeast through the 26th Division southeast of Bastogne and surprises the 5th Parachute Division)",
      "LOC 12th Army Group situation map, 10 Jan 1945"
     ]
    }
   ],
-  "tonight": "Third Army attacks again around Bastogne."
- }
+  "tonight": "Third Army attacks again. Southeast of Bastogne, the Germans give ground."
+ },
+ "series": "battle",
+ "place": "Southeast of Bastogne, Belgium",
+ "subtitle": "Patton renews the drive north",
+ "body": "After a pause to bring up a new division, Patton's Third Army attacks again around Bastogne.\n\nSoutheast of the town, the veteran 90th Infantry Division, moved in under strict secrecy, attacks northeast through the 26th Division's lines and takes the German 5th Parachute Division by surprise. The 6th Armored attacks toward it from the other side.\n\nA snowstorm sweeps the battlefield. The Germans fight for every village.",
+ "threads": "Third Army attacks again around Bastogne.\n\nSoutheast of the town, the 90th Division, brought in under strict secrecy, strikes northeast and catches the German 5th Parachute Division by surprise.\n\nA snowstorm sweeps the field. Every village is a fight.\n\nCampaign Series: The Bulge · Day by Day · Day 25 of 30",
+ "footer": "Campaign Series: The Bulge · Day by Day · Day 25 of 30",
+ "hashtags": "#OnThisDay #WW2 #BattleOfTheBulge",
+ "hashtags_xf": "#OTD #WW2 #BattleOfTheBulge",
+ "sources": [
+  "MacDonald, The Last Offensive (CMH), ch. II, pp. 39 to 40: https://www.ibiblio.org/hyperwar/USA/USA-E-Last/USA-E-Last-2.html",
+  "Cirillo, Ardennes Alsace (CMH Pub 72 26): https://purl.fdlp.gov/GPO/LPS32986"
+ ],
+ "bookLine": "Follow the whole campaign, day by day: ww2dispatches.com/campaign-series/bulge-1944",
+ "bookLineIG": "The whole campaign, day by day: link in bio.",
+ "photo": "photos/campaign/bu-25.jpg",
+ "photoCredit": "An American soldier keeps watch while his buddy sleeps, Houffalize sector, Belgium, 16 January 1945. U.S. Army Signal Corps photo (111-SC-411912), U.S. National Archives. Public domain.",
+ "photoNote": "tier green",
+ "alt": "WW2 Dispatches Campaign Series, The Bulge, Day 25. An American soldier keeps watch while his buddy sleeps, Houffalize sector, Belgium, 16 January 1945. U.S. Army Signal Corps photo (111-SC-411912), U.S. National Archives. Public domain.",
+ "focusX": 50,
+ "focusY": 50
 }

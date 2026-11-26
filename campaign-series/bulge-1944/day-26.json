@@ -276,33 +276,53 @@
   ],
   "lineSources": [
    "LOC 12th Army Group situation map, 11 Jan 1945",
-   "MacDonald, The Last Offensive, pp. 32 to 33"
+   "MacDonald, The Last Offensive, pp. 39 to 40"
   ],
   "moves": [
    {
     "unit": "2pz",
     "move": "leave",
     "order": 1,
-    "why": "Falls back out of the tip toward Houffalize.",
+    "why": "Falls back out of the tip toward Houffalize under Hitler's withdrawal order.",
     "sources": [
-     "MacDonald, The Last Offensive, pp. 32 to 33",
+     "MacDonald, The Last Offensive, pp. 31 to 32 and 39",
      "LOC 12th Army Group situation map, 11 Jan 1945"
     ]
    },
    {
-    "unit": "6abr",
-    "move": "advance",
+    "unit": "15pg",
+    "move": "fall_back",
     "order": 2,
     "to": [
-     5.29,
-     50.11
+     5.72,
+     50.16
     ],
     "sources": [
-     "British 6th Airborne Division, January 1945 (paradata.org.uk)",
+     "MacDonald, The Last Offensive, p. 39 (units west of Bastogne pull back toward the line Longchamps to the Ourthe)",
      "LOC 12th Army Group situation map, 11 Jan 1945"
     ]
    }
   ],
-  "tonight": "The Germans give up the tip of the Bulge."
- }
+  "tonight": "Quietly, behind rear guards and mines, the Germans are leaving the tip."
+ },
+ "series": "battle",
+ "place": "St. Hubert and Tillet, Belgium",
+ "subtitle": "The Germans begin to slip away",
+ "body": "Under Hitler's order of the 8th, the Germans begin to leave the western end of the Bulge. There is no rout. They go slowly, behind rear guards, roadblocks and fields of mines, counterattacking wherever a position is about to fall.\n\nTonight the 87th Infantry Division finally fights its way into Tillet, a crossroads it has attacked for days.\n\nTomorrow the Americans will find St. Hubert empty.",
+ "threads": "Under Hitler's order, the Germans begin to leave the western end of the Bulge, slowly, behind rear guards, roadblocks and mines.\n\nTonight the 87th Division finally fights its way into Tillet.\n\nTomorrow the Americans will find St. Hubert empty.\n\nCampaign Series: The Bulge · Day by Day · Day 26 of 30",
+ "footer": "Campaign Series: The Bulge · Day by Day · Day 26 of 30",
+ "hashtags": "#OnThisDay #WW2 #BattleOfTheBulge",
+ "hashtags_xf": "#OTD #WW2 #BattleOfTheBulge",
+ "sources": [
+  "MacDonald, The Last Offensive (CMH), ch. II, pp. 39 to 40: https://www.ibiblio.org/hyperwar/USA/USA-E-Last/USA-E-Last-2.html",
+  "Cirillo, Ardennes Alsace (CMH Pub 72 26): https://purl.fdlp.gov/GPO/LPS32986"
+ ],
+ "bookLine": "Follow the whole campaign, day by day: ww2dispatches.com/campaign-series/bulge-1944",
+ "bookLineIG": "The whole campaign, day by day: link in bio.",
+ "photo": "photos/campaign/bu-26.jpg",
+ "photoCredit": "Infantrymen of the 87th Division enter St. Hubert, Belgium, right after the Germans left, January 1945. U.S. Army Signal Corps photo (111-SC-199207), U.S. National Archives. Public domain.",
+ "photoNote": "tier green",
+ "alt": "WW2 Dispatches Campaign Series, The Bulge, Day 26. Infantrymen of the 87th Division enter St. Hubert, Belgium, right after the Germans left, January 1945. U.S. Army Signal Corps photo (111-SC-199207), U.S. National Archives. Public domain.",
+ "focusX": 50,
+ "focusY": 50
 }

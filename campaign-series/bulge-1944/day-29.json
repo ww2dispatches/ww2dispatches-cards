@@ -263,21 +263,32 @@
      5.72,
      50.05
     ],
-    "drives": [
-     {
-      "unit": "15pg",
-      "to": [
-       5.72,
-       50.16
-      ]
-     }
-    ],
     "sources": [
-     "MacDonald, The Last Offensive, pp. 40 to 41 (the 101st takes Foy)",
+     "MacDonald, The Last Offensive, p. 41 (the fight for Foy, south of Noville)",
      "LOC 12th Army Group situation map, 14 Jan 1945"
     ]
    }
   ],
   "tonight": "Foy is taken. Noville is next."
- }
+ },
+ "series": "battle",
+ "place": "Foy, Belgium",
+ "subtitle": "Paratroopers take Foy",
+ "body": "North of Bastogne, the village of Foy sits on the road to Noville and Houffalize. The 101st Airborne has faced it from the woods for weeks.\n\nToday its paratroopers attack across the snow and take the village house by house.\n\nThe Germans want it back. They are already gathering infantry and tanks to counterattack.",
+ "threads": "North of Bastogne, Foy sits on the road to Noville and Houffalize. The 101st has faced it from the woods for weeks.\n\nToday the paratroopers attack across the snow and take it house by house.\n\nThe Germans are already gathering to counterattack.\n\nCampaign Series: The Bulge · Day by Day · Day 29 of 30",
+ "footer": "Campaign Series: The Bulge · Day by Day · Day 29 of 30",
+ "hashtags": "#OnThisDay #WW2 #BattleOfTheBulge",
+ "hashtags_xf": "#OTD #WW2 #BattleOfTheBulge",
+ "sources": [
+  "MacDonald, The Last Offensive (CMH), ch. II, pp. 40 to 41: https://www.ibiblio.org/hyperwar/USA/USA-E-Last/USA-E-Last-2.html",
+  "Cirillo, Ardennes Alsace (CMH Pub 72 26): https://purl.fdlp.gov/GPO/LPS32986"
+ ],
+ "bookLine": "Follow the whole campaign, day by day: ww2dispatches.com/campaign-series/bulge-1944",
+ "bookLineIG": "The whole campaign, day by day: link in bio.",
+ "photo": "photos/campaign/bu-29.jpg",
+ "photoCredit": "S/Sgt. Harold J. Sloan of the 101st Airborne Division fills his canteen cup with snow in the Belgian forest, 11 January 1945. U.S. Army Signal Corps photo (111-SC-198702), U.S. National Archives. Public domain.",
+ "photoNote": "tier green",
+ "alt": "WW2 Dispatches Campaign Series, The Bulge, Day 29. S/Sgt. Harold J. Sloan of the 101st Airborne Division fills his canteen cup with snow in the Belgian forest, 11 January 1945. U.S. Army Signal Corps photo (111-SC-198702), U.S. National Archives. Public domain.",
+ "focusX": 50,
+ "focusY": 50
 }

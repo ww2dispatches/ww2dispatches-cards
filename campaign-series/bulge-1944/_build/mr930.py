@@ -69,21 +69,20 @@ MR[24]=dict(asOf="2400 hrs, 8 Jan 1945",map=J("9 Jan"),line=JLINES[24],lineSourc
  moves=[mv("9pz","leave",None,1,[MD+", pp. 31 to 32 and 39 (Hitler allows a withdrawal from the tip; the German armor begins to leave)",J("9 Jan")],why="Pulled out as Hitler allows the withdrawal from the tip."),
         mv("2pz","fall_back",(5.47,50.16),2,[MD+", pp. 31 to 32",J("9 Jan")])],
  tonight="The tip of the Bulge begins to empty.")
-MR[25]=dict(asOf="2400 hrs, 9 Jan 1945",map=J("10 Jan"),line=JLINES[25],lineSources=[J("10 Jan"),MD+", pp. 39 to 41"],
- moves=[mv("15pg","fall_back",(5.72,50.10),1,[MD+", pp. 39 to 41 (Third Army renews its attack around Bastogne)",J("10 Jan")])],
- tonight="Third Army attacks again around Bastogne.")
-MR[26]=dict(asOf="2400 hrs, 10 Jan 1945",map=J("11 Jan"),line=JLINES[26],lineSources=[J("11 Jan"),MD+", pp. 32 to 33"],
- moves=[mv("2pz","leave",None,1,[MD+", pp. 32 to 33",J("11 Jan")],why="Falls back out of the tip toward Houffalize."),
-        mv("6abr","advance",(5.29,50.11),2,["British 6th Airborne Division, January 1945 (paradata.org.uk)",J("11 Jan")])],
- tonight="The Germans give up the tip of the Bulge.")
+MR[25]=dict(asOf="2400 hrs, 9 Jan 1945",map=J("10 Jan"),line=JLINES[25],lineSources=[J("10 Jan"),MD+", pp. 39 to 40"],
+ moves=[mv("26vg","fall_back",(5.93,50.02),1,[MD+", p. 40 (the 90th Division attacks northeast through the 26th Division southeast of Bastogne and surprises the 5th Parachute Division)",J("10 Jan")])],
+ tonight="Third Army attacks again. Southeast of Bastogne, the Germans give ground.")
+MR[26]=dict(asOf="2400 hrs, 10 Jan 1945",map=J("11 Jan"),line=JLINES[26],lineSources=[J("11 Jan"),MD+", pp. 39 to 40"],
+ moves=[mv("2pz","leave",None,1,[MD+", pp. 31 to 32 and 39",J("11 Jan")],why="Falls back out of the tip toward Houffalize under Hitler's withdrawal order."),
+        mv("15pg","fall_back",(5.72,50.16),2,[MD+", p. 39 (units west of Bastogne pull back toward the line Longchamps to the Ourthe)",J("11 Jan")])],
+ tonight="Quietly, behind rear guards and mines, the Germans are leaving the tip.")
 MR[27]=dict(asOf="2400 hrs, 11 Jan 1945",map=J("12 Jan"),line=JLINES[27],lineSources=[J("12 Jan"),"La Roche liberated 11 Jan 1945 by the 1st Black Watch, 51st Highland Division (51hd.co.uk; Liberation Route Europe); the map, drawn at noon on the 12th, still shows the town German"],
  moves=[mv("51hd","arrive",(5.56,50.195),1,["51st Highland Division at La Roche, 11 January 1945 (51hd.co.uk)",J("12 Jan")],enters="west")],
  tonight="Highlanders and Americans meet in the ruins of La Roche.")
 MR[28]=dict(asOf="2400 hrs, 12 Jan 1945",map=J("13 Jan"),line=JLINES[28],lineSources=[J("13 Jan"),MD+", pp. 33 to 41"],
- shifts=[sh("26vg",(5.90,49.99),[J("13 Jan")])],
  tonight="Far to the east, the Red Army has opened its winter offensive.")
 MR[29]=dict(asOf="2400 hrs, 13 Jan 1945",map=J("14 Jan"),line=JLINES[29],lineSources=[J("14 Jan"),MD+", pp. 40 to 41"],
- moves=[mv("101ab","advance",(5.72,50.05),1,[MD+", pp. 40 to 41 (the 101st takes Foy)",J("14 Jan")],drives=[{"unit":"15pg","to":[5.72,50.16]}])],
+ moves=[mv("101ab","advance",(5.72,50.05),1,[MD+", p. 41 (the fight for Foy, south of Noville)",J("14 Jan")])],
  tonight="Foy is taken. Noville is next.")
 MR[30]=dict(asOf="2400 hrs, 14 Jan 1945",map=J("15 Jan"),line=JLINES[30],lineSources=[J("15 Jan"),MD+", pp. 33 and 41 to 42"],
  moves=[mv("3ad","advance",(5.74,50.255),1,[MD+", pp. 32 to 33 (VII Corps closes on Houffalize from the north)",J("15 Jan")])],
