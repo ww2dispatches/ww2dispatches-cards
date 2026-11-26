@@ -1095,6 +1095,16 @@
   "wikidata": "Q4051942",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-207"
  },
+ "ship-german-submarine-u-21-1936": {
+  "name": "German submarine U-21 (1936)",
+  "kind": "U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-21_(1936)",
+  "aka": [
+   "U-21"
+  ]
+ },
  "ship-german-submarine-u-210": {
   "name": "U-210",
   "kind": "Kriegsmarine Type VIIC U-boat",
@@ -1265,6 +1275,16 @@
   "nation": "Germany",
   "wikidata": "Q321148",
   "source": "https://en.wikipedia.org/wiki/German_submarine_U-251"
+ },
+ "ship-german-submarine-u-2513": {
+  "name": "German submarine U-2513",
+  "kind": "U-boat",
+  "nation": "Germany",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-2513",
+  "aka": [
+   "U-2513"
+  ]
  },
  "ship-german-submarine-u-254": {
   "name": "U-254",
@@ -7144,6 +7164,13 @@
   "nation": "Japan",
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Teruzuki_(1941)",
   "wikidata": "Q645352"
+ },
+ "ship-japanese-destroyer-urakaze-1940": {
+  "name": "Japanese destroyer Urakaze (1940)",
+  "kind": "destroyer",
+  "nation": "Japan",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Urakaze_(1940)"
  },
  "ship-japanese-destroyer-ushio-1930": {
   "name": "Japanese destroyer Ushio (1930)",

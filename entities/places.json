@@ -3746,6 +3746,15 @@
   "lat": 55.6667,
   "lon": -5.0
  },
+ "place-firth-of-forth": {
+  "name": "Firth of Forth",
+  "kind": "firth, Scotland",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Firth_of_Forth",
+  "lat": null,
+  "lon": null
+ },
  "place-florence": {
   "name": "Florence",
   "kind": "city",

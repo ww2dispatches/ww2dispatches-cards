@@ -2105,6 +2105,13 @@
   "wikidata": "Q4642774",
   "source": "https://en.wikipedia.org/wiki/6th_Ranger_Battalion"
  },
+ "unit-70th-infantry-division-united-kingdom": {
+  "name": "70th Infantry Division (United Kingdom)",
+  "kind": "infantry division, Tobruk garrison 1941",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/70th_Infantry_Division_(United_Kingdom)"
+ },
  "unit-70th-infantry-division-wehrmacht": {
   "name": "70th Infantry Division (Wehrmacht)",
   "kind": "German infantry division",
@@ -2257,6 +2264,13 @@
   "nation": "Britain",
   "wikidata": "Q4644494",
   "source": "https://en.wikipedia.org/wiki/813_Naval_Air_Squadron"
+ },
+ "unit-817-naval-air-squadron": {
+  "name": "817 Naval Air Squadron",
+  "kind": "Fleet Air Arm squadron",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/817_Naval_Air_Squadron"
  },
  "unit-819-naval-air-squadron": {
   "name": "819 Naval Air Squadron",
@@ -2881,6 +2895,13 @@
   "nation": "Soviet Union",
   "wikidata": "Q934022",
   "source": "https://en.wikipedia.org/wiki/Black_Sea_Fleet"
+ },
+ "unit-black-watch": {
+  "name": "Black Watch",
+  "kind": "infantry regiment",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Black_Watch"
  },
  "unit-black-watch-royal-highland-regiment-of-canada": {
   "name": "The Black Watch (Royal Highland Regiment) of Canada",
