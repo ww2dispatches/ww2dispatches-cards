@@ -58,14 +58,63 @@ def check(day):
     return problems
 
 
+def dispatch_8am(day):
+    """The day's 8 a.m. dispatch record for the Substack tab, or None.
+    Uses day["substack"]["dispatch"] (a file id in dispatches/) when set, otherwise the
+    dispatch whose historical month and day match the posting date with time 08:00."""
+    sub = day.get("substack") or {}
+    if sub.get("dispatch"):
+        path = os.path.join(ROOT, "dispatches", sub["dispatch"] + ".json")
+        return json.load(open(path)) if os.path.exists(path) else None
+    md = day["date"][5:]
+    for f in sorted(glob.glob(os.path.join(ROOT, "dispatches", "*.json"))):
+        r = json.load(open(f))
+        if str(r.get("date", ""))[5:] == md and r.get("time") == "08:00":
+            return r
+    return None
+
+
+def substack_note(day):
+    """The Substack Notes block for one day (Lunch Drop doc, "The Substack tab"):
+    the day's 8 a.m. card and its caption, as posted. Returns (note or None, problems)."""
+    sub = day.get("substack") or {}
+    if sub.get("skip"):
+        return None, []
+    r = dispatch_8am(day)
+    if not r:
+        return None, [f"{day['date']}: Substack tab, no 8 a.m. dispatch found for this date"]
+    num = int(r["num"])
+    card = sub.get("card")
+    if not card:
+        card = next((c for c in (f"cards/dispatch-{num:03d}-instagram.jpg", f"cards/dispatch-{num:03d}-x.jpg")
+                     if os.path.exists(os.path.join(ROOT, c))), f"cards/dispatch-{num:03d}-instagram.jpg")
+    caption = sub.get("caption") or r.get("body", "")
+    problems = []
+    img = preview(card)
+    if not img:
+        problems.append(f"{day['date']}: Substack tab, card file {card} not found (render the 8 a.m. card first)")
+    if not caption:
+        problems.append(f"{day['date']}: Substack tab, dispatch {num:03d} has no caption body")
+    for bad in ("—", "–", " - "):
+        if bad in caption:
+            problems.append(f"{day['date']}: Substack tab, dash found in the caption")
+    name, color = SERIES.get(r.get("series"), ("", "#1A1612"))
+    return {"num": num, "title": r.get("title", ""), "seriesName": name, "seriesColor": color,
+            "img": img, "cardFull": RAW_CARDS + card, "caption": caption,
+            "alt": f"WW2 Dispatches card, Dispatch No. {num:03d}, {name}. {r.get('title', '')}."}, problems
+
+
 def build(src):
     week = json.load(open(src))
     days, problems = [], []
     for d in sorted(week["days"], key=lambda x: x["date"]):
         problems += check(d)
+        note, p = substack_note(d)
+        problems += p
         name, color = SERIES.get(d.get("series"), ("", "#1A1612"))
         d2 = dict(d)
         d2["seriesName"], d2["seriesColor"] = name, color
+        d2["sub"] = note
         d2["communityUrl"] = "https://x.com/i/communities/" + COMMUNITIES.get(d.get("community"), "")
         d2["imageFull"] = RAW_CARDS + d["image"]
         d2["img"] = preview(d["image"])
@@ -205,6 +254,7 @@ ul.facts button{background:var(--card);border:1px solid var(--line);border-radiu
 <header class="top">
   <div class="titlebar"><h1>Lunch Drop</h1><span id="todayLbl"></span></div>
   <div class="controls">
+    <div class="seg" id="modeSeg"><button data-m="x">X Community</button><button data-m="sub">Substack</button></div>
     <div class="seg" id="daySeg"></div>
     <button id="prevBtn" aria-label="Day before">◀</button>
     <button id="todayBtn">Today</button>
@@ -218,7 +268,7 @@ ul.facts button{background:var(--card);border:1px solid var(--line);border-radiu
 <div id="attn" class="attn"></div>
 <div id="day" class="daygrid"></div>
 <section id="week"></section>
-<p class="foot">This page only helps you post. It never posts for you or changes a card, a caption, or a scheduled task. Posted marks are kept on this device. A new week is built every Sunday morning.</p>
+<p class="foot">X Community is the Community post; Substack is the day's 8 a.m. card and caption as a Substack note. This page only helps you post. It never posts for you or changes a card, a caption, or a scheduled task. Posted marks are kept on this device. A new week is built every Sunday morning.</p>
 
 <div id="sheetBg" class="sheetbg hidden"><div id="sheet" class="sheet" role="dialog" aria-modal="true"></div></div>
 
@@ -247,13 +297,20 @@ applyTheme(store("ld_theme")||"light");
 var stTimer=null;
 function setStatus(t,keep){$("status").textContent=t||"";clearTimeout(stTimer);if(t&&!keep)stTimer=setTimeout(function(){$("status").textContent=""},2600)}
 
+/* mode: the X Community drop or the Substack note */
+var mode=(location.hash.indexOf("sub")>=0||store("ld_mode")==="sub")?"sub":"x";
+function setMode(m){mode=m==="sub"?"sub":"x";store("ld_mode",mode);go(current)}
+$("modeSeg").addEventListener("click",function(e){var b=e.target.closest("button[data-m]");if(b)setMode(b.dataset.m)});
+function pkey(d){return (mode==="sub"?"subposted-":"posted-")+d}
+var SUBSTACK_NOTES="https://substack.com/notes";
+
 /* posted + undo */
-function isPosted(d){return !!store("posted-"+d)}
+function isPosted(d){return !!store(pkey(d))}
 var undoStack=[];
 function pushUndo(label,fn){undoStack.push({label:label,fn:fn});if(undoStack.length>30)undoStack.shift();paintUndo()}
 function paintUndo(){var b=$("undoBtn"),u=undoStack[undoStack.length-1];b.disabled=!u;b.title=u?"Undo: "+u.label:"Nothing to undo";b.setAttribute("aria-label",b.title)}
 $("undoBtn").addEventListener("click",function(){var u=undoStack.pop();paintUndo();if(!u)return;u.fn();render();setStatus("Undone: "+u.label)});
-function setPosted(d,on){var was=isPosted(d);store("posted-"+d,on?"1":null);pushUndo((on?"mark posted ":"unmark ")+fmt(d),function(){store("posted-"+d,was?"1":null)});render();setStatus(on?"Marked posted: "+fmt(d):"Unmarked: "+fmt(d))}
+function setPosted(d,on){var k=pkey(d),was=!!store(k);store(k,on?"1":null);pushUndo((on?"mark posted ":"unmark ")+fmt(d),function(){store(k,was?"1":null)});render();setStatus(on?"Marked posted: "+fmt(d):"Unmarked: "+fmt(d))}
 
 /* copy */
 async function copyText(t,btn){
@@ -271,7 +328,7 @@ async function copyImage(src,btn){
     var c=document.createElement("canvas");c.width=img.naturalWidth;c.height=img.naturalHeight;c.getContext("2d").drawImage(img,0,0);
     var blob=await new Promise(function(r){c.toBlob(r,"image/png")});
     await navigator.clipboard.write([new ClipboardItem({"image/png":blob})]);
-    setStatus("Image copied. Paste it into X.");
+    setStatus("Image copied. Paste it into "+(mode==="sub"?"the note.":"X."));
     if(btn){var o=btn.textContent;btn.textContent="Copied";setTimeout(function(){if(btn.isConnected)btn.textContent=o},1800)}
   }catch(e){setStatus("Image copy is blocked here. Use Open full, then press and hold to save it.",true)}
 }
@@ -293,7 +350,7 @@ async function downloadVideo(url,name,btn){
 /* navigation */
 var current=null;
 function idx(){for(var i=0;i<DATA.days.length;i++)if(DATA.days[i].date===current)return i;return 0}
-function go(date,smooth){current=date;try{history.replaceState(null,"","#d"+date.replace(/-/g,""))}catch(e){}render();window.scrollTo({top:0,behavior:smooth?"smooth":"auto"})}
+function go(date,smooth){current=date;try{history.replaceState(null,"","#"+(mode==="sub"?"sub":"")+"d"+date.replace(/-/g,""))}catch(e){}render();window.scrollTo({top:0,behavior:smooth?"smooth":"auto"})}
 function step(n){var i=idx()+n;if(i<0||i>=DATA.days.length)return;go(DATA.days[i].date)}
 $("prevBtn").addEventListener("click",function(){step(-1)});
 $("nextBtn").addEventListener("click",function(){step(1)});
@@ -311,6 +368,8 @@ document.addEventListener("keydown",function(e){
 /* render */
 function render(){
   var d=DATA.days[idx()];
+  [].forEach.call($("modeSeg").children,function(b){b.className=b.dataset.m===mode?"on":""});
+  document.querySelector("h1").textContent=mode==="sub"?"Lunch Drop · Substack":"Lunch Drop";
   $("todayLbl").textContent="Week of "+fmtS(DATA.week)+". Today is "+fmtY(TODAY)+".";
   /* day buttons */
   $("daySeg").innerHTML=DATA.days.map(function(x){var t=parts(x.date);return '<button data-d="'+x.date+'" class="'+(x.date===current?"on":"")+(x.date===TODAY?" td":"")+'">'+WD[t.getUTCDay()]+" "+t.getUTCDate()+(isPosted(x.date)?'<span class="ck">✓</span>':"")+'</button>'}).join("");
@@ -319,16 +378,19 @@ function render(){
   /* attention */
   var at=[];
   var td=DATA.days.find(function(x){return x.date===TODAY});
-  if(td&&!isPosted(TODAY)&&denverHour()>=13)at.push("<div><b>Not posted yet:</b> today's drop, "+esc(td.title)+", in "+esc(td.community)+".</div>");
+  if(mode==="x"&&td&&!isPosted(TODAY)&&denverHour()>=13)at.push("<div><b>Not posted yet:</b> today's drop, "+esc(td.title)+", in "+esc(td.community)+".</div>");
+  if(mode==="sub"&&td&&td.sub&&!isPosted(TODAY)&&denverHour()>=13)at.push("<div><b>Not posted yet:</b> today's Substack note, "+esc(td.sub.title)+".</div>");
   if(!DATA.days.some(function(x){return x.date>=TODAY}))at.push("<div><b>This week is over.</b> The Sunday run builds the next page.</div>");
   $("attn").innerHTML=at.join("");
   /* week strip */
   var w='<h2>This week</h2><div class="weeks">'+DATA.days.map(function(x){var p=isPosted(x.date);
-    return '<button class="wk'+(x.date===current?" on":"")+'" data-d="'+x.date+'"><span class="d">'+esc(fmt(x.date))+(p?'<span class="tag done">posted</span>':x.date===TODAY?'<span class="tag today">today</span>':"")+'</span><span class="t"><span class="dot" style="background:'+x.seriesColor+'"></span><span>'+esc(x.title)+'</span></span><small>'+esc(x.community)+(x.somber?" · somber":"")+'</small></button>'}).join("")+'</div>';
+    var sx=mode==="sub"?x.sub:x;
+    return '<button class="wk'+(x.date===current?" on":"")+'" data-d="'+x.date+'"><span class="d">'+esc(fmt(x.date))+(p?'<span class="tag done">posted</span>':x.date===TODAY?'<span class="tag today">today</span>':"")+'</span><span class="t"><span class="dot" style="background:'+(sx?sx.seriesColor:"var(--line)")+'"></span><span>'+esc(sx?sx.title:"No note this day")+'</span></span><small>'+(mode==="sub"?(sx?"8 a.m. card · No. "+String(sx.num).padStart(3,"0"):""):esc(x.community)+(x.somber?" · somber":""))+'</small></button>'}).join("")+'</div>';
   $("week").innerHTML=w;
   /* day detail */
   window.DAY=d;
   var posted=isPosted(d.date), L=[], R=[];
+  if(mode==="sub"){renderSub(d,posted);return}
   L.push('<div class="box dhead"><div class="meta"><span class="dot" style="background:'+d.seriesColor+';margin-top:0"></span>'+esc(d.seriesName)+(d.stamp?" · "+esc(d.stamp):" · Dispatch No. "+String(d.num).padStart(3,"0"))+" · "+esc(fmtY(d.date))+(d.date===TODAY?' <span class="tag today">today</span>':"")+(posted?' <span class="tag done">posted</span>':"")+(d.somber?' <span class="tag somber">somber</span>':"")+'</div><h3>'+esc(d.title)+'</h3>'+
     (d.somber?'<div class="attn" style="margin:8px 0 0"><b>Somber day.</b> No question, no jokes, keep replies respectful.</div>':"")+
     '<div class="btns"><a class="primary" href="'+esc(d.communityUrl)+'" target="_blank" rel="noopener">Open '+esc(d.community)+' community</a>'+
@@ -349,11 +411,27 @@ function render(){
     ((d.sources||[]).length?'<p class="srcs">Sources: '+d.sources.map(function(s){return '<a href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.title)+'</a>'}).join(" · ")+'</p>':"")+'</div>');
   $("day").innerHTML='<div class="col">'+L.join("")+'</div><div class="col">'+R.join("")+'</div>';
 }
+function renderSub(d,posted){
+  var s=d.sub;
+  if(!s){$("day").innerHTML='<div class="col"><div class="box dhead"><div class="meta">'+esc(fmtY(d.date))+'</div><h3>No Substack note this day</h3><p class="help">There is no 8 a.m. card for this date on the page.</p></div></div>';return}
+  var L='<div class="box dhead"><div class="meta"><span class="dot" style="background:'+s.seriesColor+';margin-top:0"></span>'+esc(s.seriesName)+" · Dispatch No. "+String(s.num).padStart(3,"0")+" · 8 a.m. card · "+esc(fmtY(d.date))+(d.date===TODAY?' <span class="tag today">today</span>':"")+(posted?' <span class="tag done">posted</span>':"")+'</div><h3>'+esc(s.title)+'</h3>'+
+    '<div class="btns"><a class="primary" href="'+SUBSTACK_NOTES+'" target="_blank" rel="noopener">Open Substack Notes</a>'+
+    (posted?'<button class="posted" data-act="unpost">Posted ✓</button>':'<button class="go" data-act="post">Mark posted</button>')+'</div>'+
+    '<ol class="steps"><li>Open Substack Notes, signed in as WW2 Dispatches, and start a new note.</li><li>Copy the caption and paste it.</li><li>Copy the card and paste it in, or attach the saved card.</li><li>Post, then Mark posted here.</li></ol>'+
+    '<p class="help">Two week test: judge Notes by new subscribers, not likes.</p></div>'+
+    '<div class="box"><h2>Caption<span>'+s.caption.length+' characters</span></h2><div class="text">'+esc(s.caption)+'</div><div class="btns"><button class="primary" data-act="scap">Copy caption</button></div></div>';
+  var R='<div class="box"><h2>The card<span>as posted at 8 a.m.</span></h2>'+(s.img?'<img class="pic" src="'+s.img+'" alt="'+esc(s.alt)+'">':'<div class="attn" style="margin:0">Card not rendered yet.</div>')+
+    '<div class="btns"><button data-act="scard">Copy card</button><a href="'+esc(s.cardFull)+'" target="_blank" rel="noopener">Open full card</a><button data-act="salt">Copy alt text</button></div></div>';
+  $("day").innerHTML='<div class="col">'+L+'</div><div class="col">'+R+'</div>';
+}
 $("day").addEventListener("click",function(e){
   var b=e.target.closest("button[data-act]");if(!b)return;var d=window.DAY,a=b.dataset.act,i=+b.dataset.i;
   if(a==="post")setPosted(d.date,true);
   else if(a==="unpost"){if(!b.dataset.armed){b.dataset.armed="1";b.className="confirm";b.textContent="Tap again to unmark";setTimeout(function(){if(b.isConnected){delete b.dataset.armed;b.className="posted";b.textContent="Posted ✓"}},4000);return}setPosted(d.date,false)}
   else if(a==="cpost")copyText(d.post,b);
+  else if(a==="scap")copyText(d.sub.caption,b);
+  else if(a==="salt")copyText(d.sub.alt,b);
+  else if(a==="scard")copyImage(d.sub.img,b);
   else if(a==="calt")copyText(d.alt,b);
   else if(a==="crep")copyText(d.replies[i],b);
   else if(a==="cfact")copyText(d.facts[i],b);
@@ -370,6 +448,7 @@ sheetBg.addEventListener("click",function(e){if(e.target===sheetBg)closeSheet()}
 function weekText(){return DATA.days.map(function(x){return fmt(x.date)+": "+x.title+" ("+x.community+")"+(isPosted(x.date)?", posted":"")}).join("\n")}
 var MENU=[
   {icon:"↗",label:"Open today's community",href:function(){return (DATA.days.find(function(x){return x.date===TODAY})||window.DAY).communityUrl}},
+  {icon:"✎",label:"Open Substack Notes",href:function(){return SUBSTACK_NOTES}},
   {icon:"📋",label:"Copy the whole thread",state:function(){return fmt(window.DAY.date)},run:function(){var d=window.DAY;copyText([d.post].concat(d.replies.map(function(r,i){return "Reply "+(i+1)+":\n"+r})).join("\n\n"));closeSheet()}},
   {icon:"🗓️",label:"Copy the week as text",run:function(){copyText("WW2 Dispatches Lunch Drop, week of "+fmtS(DATA.week)+"\n"+weekText());closeSheet()}},
   {sep:true},
@@ -380,7 +459,7 @@ $("menuBtn").addEventListener("click",openMenu);
 sheet.addEventListener("click",function(e){var m=e.target.closest("button[data-menu]");if(m){MENU[+m.dataset.menu].run();return}if(e.target.closest("[data-close]"))closeSheet()});
 
 /* start */
-var h=(location.hash||"").replace("#d","");
+var h=(location.hash||"").replace("#","").replace("sub","").replace("d","");
 var fromHash=DATA.days.find(function(x){return x.date.replace(/-/g,"")===h});
 current=(fromHash||DATA.days.find(function(x){return x.date===TODAY})||DATA.days.find(function(x){return x.date>TODAY})||DATA.days[DATA.days.length-1]).date;
 paintUndo();render();
