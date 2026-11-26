@@ -75,7 +75,6 @@ function render(s, img, i, n){
   else h=`<div class="photo ${s.color?'':'gray'}" style="background-image:url(${img});background-position:${s.fx}% ${s.fy}%;${s.hero&&!window.IG?`height:${s.hero}px`:``}"></div>`;
   h+=(s.hero&&!window.IG)?`<div class="fade" style="background:linear-gradient(rgba(18,20,24,.3) 0,rgba(18,20,24,0) 15%,rgba(18,20,24,0) ${(s.hero-330)/19.2}%,#121418 ${s.hero/19.2}%)"></div>`:`<div class="fade"></div>`;
   h+=`<div class="tab"><div class="k">CAMPAIGN SERIES · THE CHRONICLE</div><div class="t">Pearl Harbor <b>Part 1</b></div></div>`;
-  h+=`<div class="count">${i} / ${n}</div>`;
   if(s.kind==="quote"){
     h+=`<div class="panel"><div class="date">${s.date}</div><div class="q">${s.quote}</div><div class="who">${s.who}</div></div>`;
   } else if(s.kind==="cover"||s.kind==="end"){
