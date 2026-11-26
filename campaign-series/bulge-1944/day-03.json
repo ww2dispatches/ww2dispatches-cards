@@ -1,0 +1,297 @@
+{
+ "campaign": "bulge-1944",
+ "seriesName": "The Bulge",
+ "days": 30,
+ "time": "06:30",
+ "day": 3,
+ "date": "1944-12-18",
+ "mapRoom": {
+  "asOf": "2400 hrs, 18 Dec 1944",
+  "map": "LOC 12th Army Group situation map, 19 Dec 1944",
+  "line": [
+   [
+    6.1,
+    51.25
+   ],
+   [
+    6.12,
+    51.1
+   ],
+   [
+    6.14,
+    51.0
+   ],
+   [
+    6.2,
+    50.98
+   ],
+   [
+    6.3,
+    50.95
+   ],
+   [
+    6.33,
+    50.9
+   ],
+   [
+    6.36,
+    50.84
+   ],
+   [
+    6.4,
+    50.78
+   ],
+   [
+    6.42,
+    50.74
+   ],
+   [
+    6.37,
+    50.7
+   ],
+   [
+    6.31,
+    50.68
+   ],
+   [
+    6.3,
+    50.63
+   ],
+   [
+    6.26,
+    50.55
+   ],
+   [
+    6.28,
+    50.47
+   ],
+   [
+    6.18,
+    50.46
+   ],
+   [
+    6.0,
+    50.45
+   ],
+   [
+    5.85,
+    50.43
+   ],
+   [
+    5.81,
+    50.42
+   ],
+   [
+    5.78,
+    50.39
+   ],
+   [
+    5.85,
+    50.35
+   ],
+   [
+    5.94,
+    50.32
+   ],
+   [
+    6.05,
+    50.29
+   ],
+   [
+    6.16,
+    50.26
+   ],
+   [
+    6.18,
+    50.21
+   ],
+   [
+    6.11,
+    50.18
+   ],
+   [
+    6.07,
+    50.13
+   ],
+   [
+    6.07,
+    50.09
+   ],
+   [
+    5.97,
+    50.08
+   ],
+   [
+    5.84,
+    50.07
+   ],
+   [
+    5.78,
+    50.04
+   ],
+   [
+    5.81,
+    49.985
+   ],
+   [
+    5.93,
+    49.975
+   ],
+   [
+    5.97,
+    49.98
+   ],
+   [
+    5.96,
+    49.94
+   ],
+   [
+    6.07,
+    49.89
+   ],
+   [
+    6.22,
+    49.83
+   ],
+   [
+    6.37,
+    49.79
+   ],
+   [
+    6.5,
+    49.76
+   ],
+   [
+    6.5,
+    49.71
+   ],
+   [
+    6.47,
+    49.7
+   ],
+   [
+    6.39,
+    49.655
+   ],
+   [
+    6.36,
+    49.565
+   ],
+   [
+    6.37,
+    49.51
+   ],
+   [
+    6.46,
+    49.505
+   ],
+   [
+    6.54,
+    49.485
+   ],
+   [
+    6.615,
+    49.425
+   ],
+   [
+    6.676,
+    49.375
+   ],
+   [
+    6.736,
+    49.315
+   ],
+   [
+    6.8,
+    49.265
+   ],
+   [
+    6.83,
+    49.185
+   ],
+   [
+    6.81,
+    49.15
+   ],
+   [
+    6.95,
+    49.0
+   ],
+   [
+    7.2,
+    48.8
+   ]
+  ],
+  "lineSources": [
+   "LOC 12th Army Group situation map, 19 Dec 1944",
+   "Cole, The Ardennes, pp. 266 to 272 and 305 to 310"
+  ],
+  "set": [
+   {
+    "unit": "30id",
+    "at": [
+     5.97,
+     50.49
+    ],
+    "sources": [
+     "LOC 12th Army Group situation map, 19 Dec 1944",
+     "Cole, The Ardennes, p. 269"
+    ]
+   },
+   {
+    "unit": "82ab",
+    "at": [
+     5.67,
+     50.415
+    ],
+    "sources": [
+     "LOC 12th Army Group situation map, 19 Dec 1944",
+     "Cole, The Ardennes, p. 269"
+    ]
+   }
+  ],
+  "moves": [
+   {
+    "unit": "101ab",
+    "move": "arrive",
+    "order": 1,
+    "to": [
+     5.65,
+     50.03
+    ],
+    "enters": "west",
+    "sources": [
+     "Cole, The Ardennes, pp. 305 to 307 (the 101st assembles west of Bastogne)",
+     "LOC 12th Army Group situation map, 19 Dec 1944"
+    ]
+   },
+   {
+    "unit": "26vg",
+    "move": "advance",
+    "order": 2,
+    "to": [
+     5.85,
+     50.0
+    ],
+    "sources": [
+     "Cole, The Ardennes, pp. 299 to 304 (the XLVII Panzer Corps closes on Bastogne)",
+     "LOC 12th Army Group situation map, 19 Dec 1944"
+    ]
+   }
+  ],
+  "shifts": [
+   {
+    "unit": "28id",
+    "to": [
+     5.8,
+     49.89
+    ],
+    "sources": [
+     "LOC 12th Army Group situation map, 19 Dec 1944",
+     "Cole, The Ardennes, p. 196 (Wiltz)"
+    ]
+   }
+  ],
+  "tonight": "The 101st is in Bastogne. The Germans are a few miles east."
+ }
+}

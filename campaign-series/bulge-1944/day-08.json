@@ -1,0 +1,412 @@
+{
+ "campaign": "bulge-1944",
+ "seriesName": "The Bulge",
+ "days": 30,
+ "time": "06:30",
+ "day": 8,
+ "date": "1944-12-23",
+ "mapRoom": {
+  "asOf": "2400 hrs, 23 Dec 1944",
+  "map": "LOC 12th Army Group situation map, 24 Dec 1944",
+  "line": [
+   [
+    6.1,
+    51.25
+   ],
+   [
+    6.12,
+    51.1
+   ],
+   [
+    6.14,
+    51.0
+   ],
+   [
+    6.2,
+    50.98
+   ],
+   [
+    6.3,
+    50.95
+   ],
+   [
+    6.33,
+    50.9
+   ],
+   [
+    6.36,
+    50.84
+   ],
+   [
+    6.4,
+    50.78
+   ],
+   [
+    6.42,
+    50.74
+   ],
+   [
+    6.37,
+    50.7
+   ],
+   [
+    6.31,
+    50.68
+   ],
+   [
+    6.3,
+    50.63
+   ],
+   [
+    6.26,
+    50.55
+   ],
+   [
+    6.28,
+    50.47
+   ],
+   [
+    6.2,
+    50.43
+   ],
+   [
+    6.05,
+    50.426
+   ],
+   [
+    5.904,
+    50.418
+   ],
+   [
+    5.795,
+    50.415
+   ],
+   [
+    5.855,
+    50.383
+   ],
+   [
+    5.88,
+    50.33
+   ],
+   [
+    5.898,
+    50.3
+   ],
+   [
+    5.952,
+    50.312
+   ],
+   [
+    6.037,
+    50.296
+   ],
+   [
+    6.086,
+    50.28
+   ],
+   [
+    6.05,
+    50.245
+   ],
+   [
+    5.989,
+    50.225
+   ],
+   [
+    5.904,
+    50.217
+   ],
+   [
+    5.83,
+    50.213
+   ],
+   [
+    5.795,
+    50.253
+   ],
+   [
+    5.71,
+    50.241
+   ],
+   [
+    5.6,
+    50.213
+   ],
+   [
+    5.528,
+    50.237
+   ],
+   [
+    5.455,
+    50.273
+   ],
+   [
+    5.382,
+    50.237
+   ],
+   [
+    5.491,
+    50.19
+   ],
+   [
+    5.564,
+    50.17
+   ],
+   [
+    5.613,
+    50.135
+   ],
+   [
+    5.673,
+    50.103
+   ],
+   [
+    5.62,
+    50.08
+   ],
+   [
+    5.58,
+    50.02
+   ],
+   [
+    5.6,
+    49.95
+   ],
+   [
+    5.588,
+    49.898
+   ],
+   [
+    5.661,
+    49.898
+   ],
+   [
+    5.7,
+    49.858
+   ],
+   [
+    5.806,
+    49.823
+   ],
+   [
+    5.921,
+    49.866
+   ],
+   [
+    5.987,
+    49.887
+   ],
+   [
+    6.053,
+    49.855
+   ],
+   [
+    6.217,
+    49.823
+   ],
+   [
+    6.349,
+    49.8
+   ],
+   [
+    6.5,
+    49.78
+   ],
+   [
+    6.5,
+    49.71
+   ],
+   [
+    6.47,
+    49.7
+   ],
+   [
+    6.39,
+    49.655
+   ],
+   [
+    6.36,
+    49.565
+   ],
+   [
+    6.37,
+    49.51
+   ],
+   [
+    6.46,
+    49.505
+   ],
+   [
+    6.54,
+    49.485
+   ],
+   [
+    6.615,
+    49.425
+   ],
+   [
+    6.676,
+    49.375
+   ],
+   [
+    6.736,
+    49.315
+   ],
+   [
+    6.8,
+    49.265
+   ],
+   [
+    6.83,
+    49.185
+   ],
+   [
+    6.81,
+    49.15
+   ],
+   [
+    6.95,
+    49.0
+   ],
+   [
+    7.2,
+    48.8
+   ]
+  ],
+  "lineSources": [
+   "LOC 12th Army Group situation map, 24 Dec 1944",
+   "Cole, The Ardennes, pp. 468 to 472"
+  ],
+  "pockets": [
+   {
+    "side": "allied",
+    "ring": [
+     [
+      5.66,
+      50.04
+     ],
+     [
+      5.72,
+      50.06
+     ],
+     [
+      5.78,
+      50.03
+     ],
+     [
+      5.78,
+      49.98
+     ],
+     [
+      5.72,
+      49.96
+     ],
+     [
+      5.66,
+      49.98
+     ],
+     [
+      5.66,
+      50.04
+     ]
+    ]
+   }
+  ],
+  "moves": [
+   {
+    "unit": "tc",
+    "move": "air_mission",
+    "order": 1,
+    "target": [
+     5.715,
+     50.005
+    ],
+    "enters": "west",
+    "label": "Supply Drop",
+    "sources": [
+     "Cole, The Ardennes, pp. 468 to 471 (the first resupply drop, 23 Dec)",
+     "LOC 12th Army Group situation map, 24 Dec 1944"
+    ]
+   },
+   {
+    "unit": "7ad",
+    "move": "leave",
+    "order": 2,
+    "why": "Out of the St. Vith salient through the 82nd Airborne's lines to regroup.",
+    "sources": [
+     "Cole, The Ardennes, pp. 413 to 422",
+     "LOC 12th Army Group situation map, 24 Dec 1944"
+    ]
+   },
+   {
+    "unit": "2pz",
+    "move": "advance",
+    "order": 3,
+    "to": [
+     5.47,
+     50.215
+    ],
+    "sources": [
+     "Cole, The Ardennes, ch. XVIII (the 2d Panzer heads for the Meuse)",
+     "LOC 12th Army Group situation map, 24 Dec 1944"
+    ]
+   }
+  ],
+  "shifts": [
+   {
+    "unit": "3ad",
+    "to": [
+     5.6,
+     50.33
+    ],
+    "sources": [
+     "LOC 12th Army Group situation map, 24 Dec 1944"
+    ]
+   },
+   {
+    "unit": "82ab",
+    "to": [
+     5.75,
+     50.36
+    ],
+    "sources": [
+     "LOC 12th Army Group situation map, 24 Dec 1944"
+    ]
+   },
+   {
+    "unit": "6pa",
+    "to": [
+     5.95,
+     50.37
+    ],
+    "sources": [
+     "LOC 12th Army Group situation map, 24 Dec 1944",
+     "Cole, The Ardennes, pp. 365 to 367 (Peiper's men slip out of La Gleize)"
+    ]
+   },
+   {
+    "unit": "4ad",
+    "to": [
+     5.7,
+     49.82
+    ],
+    "sources": [
+     "LOC 12th Army Group situation map, 24 Dec 1944",
+     "Cole, The Ardennes, p. 530"
+    ]
+   },
+   {
+    "unit": "28id",
+    "to": [
+     5.5,
+     49.82
+    ],
+    "sources": [
+     "LOC 12th Army Group situation map, 24 Dec 1944"
+    ]
+   }
+  ],
+  "tonight": "Supplies fall into Bastogne. The St. Vith defenders are out."
+ }
+}

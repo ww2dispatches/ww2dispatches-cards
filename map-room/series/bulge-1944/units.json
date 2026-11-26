@@ -1,0 +1,307 @@
+{
+ "_note": "The Bulge roster, written in the Campaign Series build sitting, 26 Nov 2026. Two Volksgrenadier divisions share the label Volksgrenadiers because the full names run past 16 characters; they never share a focus.",
+ "units": [
+  {
+   "id": "v",
+   "name": "V Corps (2d and 99th, later also 1st, Infantry Divisions)",
+   "label": "V Corps",
+   "nation": "us",
+   "type": "infantry",
+   "parent": "First Army",
+   "sources": [
+    "Cole, The Ardennes: Battle of the Bulge (CMH 7-8), pp. 75 to 105 (the V Corps front)"
+   ]
+  },
+  {
+   "id": "28id",
+   "name": "28th Infantry Division",
+   "label": "28th Infantry",
+   "nation": "us",
+   "type": "infantry",
+   "parent": "VIII Corps, First Army (Third Army from 20 Dec)",
+   "sources": [
+    "Cole, The Ardennes: Battle of the Bulge (CMH 7-8), p. 179"
+   ]
+  },
+  {
+   "id": "106id",
+   "name": "106th Infantry Division",
+   "label": "106th Infantry",
+   "nation": "us",
+   "type": "infantry",
+   "parent": "VIII Corps, First Army",
+   "sources": [
+    "Cole, The Ardennes: Battle of the Bulge (CMH 7-8), p. 312"
+   ]
+  },
+  {
+   "id": "7ad",
+   "name": "7th Armored Division",
+   "label": "7th Armored",
+   "nation": "us",
+   "type": "armor",
+   "parent": "VIII Corps, then XVIII Airborne Corps, First Army",
+   "sources": [
+    "Cole, The Ardennes: Battle of the Bulge (CMH 7-8), p. 265"
+   ]
+  },
+  {
+   "id": "30id",
+   "name": "30th Infantry Division",
+   "label": "30th Infantry",
+   "nation": "us",
+   "type": "infantry",
+   "parent": "V Corps, then XVIII Airborne Corps, First Army",
+   "sources": [
+    "Cole, The Ardennes: Battle of the Bulge (CMH 7-8), p. 269"
+   ]
+  },
+  {
+   "id": "82ab",
+   "name": "82d Airborne Division",
+   "label": "82nd Airborne",
+   "nation": "us",
+   "type": "airborne",
+   "parent": "XVIII Airborne Corps, First Army",
+   "sources": [
+    "Cole, The Ardennes: Battle of the Bulge (CMH 7-8), p. 269"
+   ]
+  },
+  {
+   "id": "101ab",
+   "name": "101st Airborne Division",
+   "label": "101st Airborne",
+   "nation": "us",
+   "type": "airborne",
+   "parent": "VIII Corps, Third Army",
+   "sources": [
+    "Cole, The Ardennes: Battle of the Bulge (CMH 7-8), p. 289"
+   ]
+  },
+  {
+   "id": "3ad",
+   "name": "3d Armored Division",
+   "label": "3rd Armored",
+   "nation": "us",
+   "type": "armor",
+   "parent": "XVIII Airborne Corps, then VII Corps, First Army",
+   "sources": [
+    "Cole, The Ardennes: Battle of the Bulge (CMH 7-8), p. 343"
+   ]
+  },
+  {
+   "id": "84id",
+   "name": "84th Infantry Division",
+   "label": "84th Infantry",
+   "nation": "us",
+   "type": "infantry",
+   "parent": "VII Corps, First Army",
+   "sources": [
+    "Cole, The Ardennes: Battle of the Bulge (CMH 7-8), p. 321"
+   ]
+  },
+  {
+   "id": "2ad",
+   "name": "2d Armored Division",
+   "label": "2nd Armored",
+   "nation": "us",
+   "type": "armor",
+   "parent": "VII Corps, First Army",
+   "sources": [
+    "Cole, The Ardennes: Battle of the Bulge (CMH 7-8), p. 427"
+   ]
+  },
+  {
+   "id": "4ad",
+   "name": "4th Armored Division",
+   "label": "4th Armored",
+   "nation": "us",
+   "type": "armor",
+   "parent": "III Corps, Third Army",
+   "sources": [
+    "Cole, The Ardennes: Battle of the Bulge (CMH 7-8), p. 457"
+   ]
+  },
+  {
+   "id": "iii",
+   "name": "III Corps (26th and 80th Infantry Divisions)",
+   "label": "III Corps",
+   "nation": "us",
+   "type": "infantry",
+   "parent": "Third Army",
+   "sources": [
+    "Cole, The Ardennes: Battle of the Bulge (CMH 7-8), pp. 509 to 532"
+   ]
+  },
+  {
+   "id": "11ad",
+   "name": "11th Armored Division",
+   "label": "11th Armored",
+   "nation": "us",
+   "type": "armor",
+   "parent": "VIII Corps, Third Army",
+   "sources": [
+    "Cole, The Ardennes: Battle of the Bulge (CMH 7-8), p. 334",
+    "MacDonald, The Last Offensive (CMH 7-9), ch. 2"
+   ]
+  },
+  {
+   "id": "6ad",
+   "name": "6th Armored Division",
+   "label": "6th Armored",
+   "nation": "us",
+   "type": "armor",
+   "parent": "III Corps, Third Army",
+   "sources": [
+    "Cole, The Ardennes: Battle of the Bulge (CMH 7-8), p. 486",
+    "MacDonald, The Last Offensive (CMH 7-9), ch. 2"
+   ]
+  },
+  {
+   "id": "17ab",
+   "name": "17th Airborne Division",
+   "label": "17th Airborne",
+   "nation": "us",
+   "type": "airborne",
+   "parent": "VIII Corps, Third Army",
+   "sources": [
+    "Cole, The Ardennes: Battle of the Bulge (CMH 7-8), p. 560",
+    "MacDonald, The Last Offensive (CMH 7-9), ch. 2"
+   ]
+  },
+  {
+   "id": "6abr",
+   "name": "6th Airborne Division (British)",
+   "label": "6th Airborne",
+   "nation": "britain",
+   "type": "airborne",
+   "parent": "XXX Corps, 21 Army Group",
+   "sources": [
+    "MacDonald, The Last Offensive (CMH 7-9), ch. 2",
+    "Battle of Bure, paradata.org.uk (Airborne Assault museum)"
+   ]
+  },
+  {
+   "id": "51hd",
+   "name": "51st (Highland) Infantry Division",
+   "label": "51st Highland",
+   "nation": "britain",
+   "type": "infantry",
+   "parent": "XXX Corps, 21 Army Group",
+   "sources": [
+    "MacDonald, The Last Offensive (CMH 7-9), ch. 2"
+   ]
+  },
+  {
+   "id": "6pa",
+   "name": "Sixth Panzer Army (its SS panzer spearhead, Kampfgruppe Peiper of the 1st SS Panzer Division, shown under the army per FORMAT.md)",
+   "label": "6th Panzer Army",
+   "nation": "germany",
+   "type": "armor",
+   "parent": "Army Group B",
+   "sources": [
+    "Cole, The Ardennes: Battle of the Bulge (CMH 7-8), pp. 75, 260 to 272"
+   ]
+  },
+  {
+   "id": "18vg",
+   "name": "18th Volksgrenadier Division",
+   "label": "Volksgrenadiers",
+   "nation": "germany",
+   "type": "infantry",
+   "parent": "LXVI Corps, Fifth Panzer Army",
+   "sources": [
+    "Cole, The Ardennes: Battle of the Bulge (CMH 7-8), p. 277"
+   ]
+  },
+  {
+   "id": "26vg",
+   "name": "26th Volksgrenadier Division",
+   "label": "Volksgrenadiers",
+   "nation": "germany",
+   "type": "infantry",
+   "parent": "XLVII Panzer Corps, Fifth Panzer Army",
+   "sources": [
+    "Cole, The Ardennes: Battle of the Bulge (CMH 7-8), p. 299"
+   ]
+  },
+  {
+   "id": "2pz",
+   "name": "2d Panzer Division",
+   "label": "2nd Panzer",
+   "nation": "germany",
+   "type": "armor",
+   "parent": "XLVII Panzer Corps, Fifth Panzer Army",
+   "sources": [
+    "Cole, The Ardennes: Battle of the Bulge (CMH 7-8), p. 264"
+   ]
+  },
+  {
+   "id": "7a",
+   "name": "Seventh Army (LXXX and LXXXV Corps, southern flank)",
+   "label": "Seventh Army",
+   "nation": "germany",
+   "type": "infantry",
+   "parent": "Army Group B",
+   "sources": [
+    "Cole, The Ardennes: Battle of the Bulge (CMH 7-8), pp. 212 to 238"
+   ]
+  },
+  {
+   "id": "15pg",
+   "name": "15th Panzer Grenadier Division",
+   "label": "Panzergrenadiers",
+   "nation": "germany",
+   "type": "armor",
+   "parent": "XLVII Panzer Corps, Fifth Panzer Army",
+   "sources": [
+    "Cole, The Ardennes: Battle of the Bulge (CMH 7-8), p. 474"
+   ]
+  },
+  {
+   "id": "9pz",
+   "name": "9th Panzer Division",
+   "label": "9th Panzer",
+   "nation": "germany",
+   "type": "armor",
+   "parent": "XLVII Panzer Corps, Fifth Panzer Army",
+   "sources": [
+    "Cole, The Ardennes: Battle of the Bulge (CMH 7-8), p. 437"
+   ]
+  },
+  {
+   "id": "fbb",
+   "name": "Fuehrer Begleit Brigade",
+   "label": "Führer Begleit",
+   "nation": "germany",
+   "type": "armor",
+   "parent": "Fifth Panzer Army reserve",
+   "sources": [
+    "Cole, The Ardennes: Battle of the Bulge (CMH 7-8), p. 278"
+   ]
+  },
+  {
+   "id": "tc",
+   "name": "IX Troop Carrier Command",
+   "label": "Troop Carrier",
+   "nation": "us",
+   "type": "transport",
+   "parent": "Ninth Air Force",
+   "sources": [
+    "Cole, The Ardennes: Battle of the Bulge (CMH 7-8), pp. 468 to 471"
+   ]
+  },
+  {
+   "id": "lw",
+   "name": "II Jagdkorps (Luftwaffe fighter corps, Operation Bodenplatte)",
+   "label": "Luftwaffe",
+   "nation": "germany",
+   "type": "fighter",
+   "parent": "Luftwaffe Command West",
+   "sources": [
+    "Parker, To Win the Winter Sky (2d source to verify in the sitting)",
+    "MacDonald, The Last Offensive (CMH 7-9), ch. 2"
+   ]
+  }
+ ]
+}
