@@ -2510,8 +2510,8 @@
         + '<p class="hstip">Can\'t find it? Open this page in Safari and follow the Safari steps. They work on every iPhone.</p>' + done;
     }
     if (HS_IOS && HS_IOS_CHROME) {
-      return head('iPhone · Chrome', 'A few taps, starting at the top of your screen.') + '<ol class="hssteps">'
-        + hsStep(1, 'Tap <b>Share</b> at the right end of the address bar.', HS_ART_TOPBAR)
+      return head('iPhone · Chrome', 'A few taps, starting with Share.') + '<ol class="hssteps">'
+        + hsStep(1, 'Tap <b>Share</b> at the right end of the address bar, at the top or bottom of your screen.', HS_ART_TOPBAR)
         + hsStep(2, 'Tap <b>View More</b>, then scroll to the bottom and tap <b>Add to Home Screen</b>.', HS_ART_MORE)
         + hsStep(3, 'Tap <b>Add</b> at the top right. Leave <b>Open as Web App</b> switched on.', HS_ART_ADD) + '</ol>'
         + '<p class="hstip">Can\'t find it? Open this page in Safari and follow the Safari steps. They work on every iPhone.</p>' + done;
@@ -2550,8 +2550,8 @@
     }
     sheet(hsGuideHTML());
     const out = $('hsOut'); if (out) out.href = openOutHref(outLink(true));
-    if (!IN_APP && HS_IOS && (!HS_IOS_OTHER || HS_IOS_CHROME)) {
-      const up = HS_IOS_CHROME || HS_IPAD, a = document.createElement('div');
+    if (!IN_APP && HS_IOS && !HS_IOS_OTHER) {
+      const up = HS_IPAD, a = document.createElement('div');
       a.id = 'hsArrow'; a.className = 'hsarrow ' + (up ? 'up' : 'down');
       a.innerHTML = up ? '<svg viewBox="0 0 26 22" aria-hidden="true"><path d="M13 20 V4 M5 11 L13 3 L21 11"/></svg><span>Share is up here</span>'
         : '<span>Safari\'s buttons are just below</span><svg viewBox="0 0 26 22" aria-hidden="true"><path d="M13 2 V18 M5 11 L13 19 L21 11"/></svg>';
