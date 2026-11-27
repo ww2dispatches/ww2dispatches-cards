@@ -2115,8 +2115,8 @@
     const P = (ST && ST.prices) || { still: { copper: 20, silver: 75, gold: 250, topsecret: 750 }, living: { copper: 30, silver: 113, gold: 375, topsecret: 1125 }, flash: 750 };
     return info.flash ? P.flash : P[variant][finish];
   }
-  function sheet(html) { $('sheetCard').innerHTML = html; $('sheet').hidden = false; document.body.style.overflow = 'hidden'; $('sheet').scrollTop = 0; }
-  function closeSheet() { $('sheet').hidden = true; document.body.style.overflow = ''; }
+  function sheet(html) { const ar = $('hsArrow'); if (ar) ar.remove(); $('sheetCard').innerHTML = html; $('sheet').hidden = false; document.body.style.overflow = 'hidden'; $('sheet').scrollTop = 0; }
+  function closeSheet() { const ar = $('hsArrow'); if (ar) ar.remove(); $('sheet').hidden = true; document.body.style.overflow = ''; }
   $('sheet').addEventListener('click', e => { if (e.target.id === 'sheet' || e.target.closest('[data-close]')) closeSheet(); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && !$('sheet').hidden) closeSheet(); });
 
@@ -2376,12 +2376,15 @@
   function coachHomeNow() {
     if (!$('sHome').classList.contains('on') || !$('promo').hidden || !$('sheet').hidden || tourAt >= 0 || noteScope) return;
     if (maybeTour()) return;
+    if (hsWelcome()) return;
     if (!signedIn()) {
       // A guest who chose Not now: point at the sign in box once (26 Oct 2026).
       if (STARTER && !seen('guest') && !$('signBar').hidden) {
         homeRing = 'signbar'; $('signBar').classList.add('coached');
         note('home', 'guest', 'Your five cards are saved in this browser for now. Sign in to keep them for good, start a streak, and open a new file every day.');
+        return;
       }
+      if (STARTER) hsGuestCoach();
       return;
     }
     const ring = help => { const h = $('files').querySelector('.help[data-help="' + help + '"]'); if (!h) return false; homeRing = help; h.closest('.slotbtn').classList.add('coached'); return true; };
@@ -2394,6 +2397,7 @@
       const e = ST.envelopes.find(x => Date.parse(x.at) < dayStart.getTime() && !x.opened);
       if (e && ring('fm-lastcall')) return note('home', 'last', `Last call. You missed yesterday's ${etHour(e.at) < 12 ? 'morning' : 'evening'} file, but it's still open until ${localTime(e.closes)}. Open it before it closes for good.`);
     }
+    if (hsCoach()) return; // home screen ask (26 Nov 2026)
     // Players who took the tour before the Display Case existed get one NEW note pointing at the pill (11 Nov 2026).
     if (!seen('case')) {
       const cs = myCase();
@@ -2404,6 +2408,185 @@
       note('home', 'case', 'Your Display Case is here. Pin up to six of your best cards, pick a call sign if you like, and share a picture of it anywhere. Tap the gold button at the top to open it.', 'NEW');
     }
   }
+
+  // ---------- Home screen install (26 Nov 2026, Declass Home Screen Install doc) ----------
+  // Asks a signed in player once to put Declass on the home screen (right after the dossier is saved, or on the
+  // next visit for players who saved before this existed), reminds once on a later day, and keeps the guide in How
+  // to play. Every iPhone step was checked on Brian's iPhone. Android and computers get the browser's own Install
+  // box when it offers one, or a short text guide when it doesn't. Never asked inside a social app's browser,
+  // never to a guest (their pack lives in this browser only), and never once Declass runs from the home screen.
+  const HS_UA = navigator.userAgent || '';
+  const HS_IPAD = /iPad/.test(HS_UA) || (/Macintosh/.test(HS_UA) && navigator.maxTouchPoints > 1);
+  const HS_IOS = /iPhone|iPod/.test(HS_UA) || HS_IPAD;
+  const HS_IOS_OTHER = HS_IOS && /CriOS|EdgiOS|FxiOS|OPiOS/.test(HS_UA); // any iPhone browser that isn't Safari
+  const HS_IOS_CHROME = HS_IOS && /CriOS/.test(HS_UA); // Chrome on iPhone: Share is at the right end of the address bar
+  const HS_IOS_NAME = /EdgiOS/.test(HS_UA) ? 'Edge' : /FxiOS/.test(HS_UA) ? 'Firefox' : /OPiOS/.test(HS_UA) ? 'Opera' : 'your browser';
+  const HS_ANDROID = /Android/.test(HS_UA);
+  const HS_MAC_SAFARI = !HS_IOS && /Macintosh/.test(HS_UA) && /Safari/.test(HS_UA) && !/Chrome|Chromium|Edg\/|Firefox/.test(HS_UA);
+  const HS_DESKTOP_ONE_TAP = !HS_IOS && !HS_ANDROID && /Chrome|Edg\//.test(HS_UA);
+  const standalone = () => { try { return matchMedia('(display-mode: standalone)').matches || matchMedia('(display-mode: fullscreen)').matches || navigator.standalone === true; } catch (e) { return false; } };
+  let installEvt = null;
+  window.addEventListener('beforeinstallprompt', e => { e.preventDefault(); installEvt = e; });
+  window.addEventListener('appinstalled', () => { hit('hs_yes'); mark('hsdone'); installEvt = null; hideNote('home'); });
+  const hsCan = () => !standalone() && !IN_APP && !seen('hsdone');
+  const HS_TIME = 'declass_hs1_at';
+  const lsNum = k => { try { return Number(localStorage.getItem(k) || 0); } catch (e) { return 0; } };
+  const lsSetNum = (k, v) => { try { localStorage.setItem(k, String(v)); } catch (e) {} };
+
+  // The note with its own two buttons (the plain first time note only has Got it).
+  function hsNote(key, tag, text, goLabel) {
+    mark(key);
+    const n = $('fnote');
+    noteScope = 'home';
+    n.classList.remove('inline'); document.body.appendChild(n);
+    n.innerHTML = '<div class="k"><i></i>' + tag + '</div><div class="hsrow"><span class="hsicon" aria-hidden="true"></span><p>' + text + '</p></div>'
+      + '<div class="hsbtns"><button type="button" class="hsgo">' + goLabel + '</button><button type="button" class="hsno">Not now</button></div>';
+    n.querySelector('.hsgo').onclick = () => { hideNote('home'); openInstall(); };
+    n.querySelector('.hsno').onclick = () => hideNote('home');
+    n.hidden = false;
+    hit('hs_ask');
+  }
+  // Called by coachHomeNow after the tour and the priority and Last call notes; true when it showed something.
+  function hsCoach() {
+    if (!hsCan()) return false;
+    const go = installEvt ? 'Add to home screen' : 'Show me how';
+    if (!seen('hs1')) {
+      lsSetNum(HS_TIME, Date.now());
+      hsNote('hs1', 'KEEP IT HANDY', 'Keep your dossier one tap away. Put Declass on your home screen and it opens like an app.', go);
+      return true;
+    }
+    // one reminder, on a later day, once the streak has started
+    const first = lsNum(HS_TIME);
+    if (!seen('hs2') && first && Date.now() - first > 20 * 3600000 && ST && ST.player && ST.player.streak > 0) {
+      hsNote('hs2', 'YOUR STREAK HAS STARTED', "Never miss an envelope. Put Declass on your home screen so tomorrow's file is one tap away.", go);
+      return true;
+    }
+    return false;
+  }
+  // A guest who keeps coming back: one note that pairs both asks (sign in first, so the cards travel with them).
+  function hsGuestCoach() {
+    if (!hsCan() || seen('hsguest') || !seen('guest')) return false;
+    const today = new Date().toDateString();
+    let v = {}; try { v = JSON.parse(localStorage.getItem('declass_gvisits') || '{}'); } catch (e) {}
+    if (v.last !== today) { v = { last: today, n: (v.n || 0) + 1 }; try { localStorage.setItem('declass_gvisits', JSON.stringify(v)); } catch (e) {} }
+    if (v.n < 3) return false;
+    note('home', 'hsguest', 'Coming back for more? Sign in to save your dossier for good, then add Declass to your home screen so it opens like an app.', 'TIP');
+    return true;
+  }
+
+  // The guide itself, by browser. Pictures are drawn to match what Brian's iPhone showed on 26 Nov 2026.
+  const HS_SHARE_ICON = '<path d="M-4 -1 h-2.5 v10 h13 v-10 h-2.5" fill="none" stroke="#1A1612" stroke-width="1.7" stroke-linejoin="round"/><path d="M0 4 V-7 M-3.5 -3.5 L0 -7 L3.5 -3.5" fill="none" stroke="#1A1612" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>';
+  const HS_LIT = 'fill="#D9A93E" stroke="#8a6514" stroke-width="1.5"';
+  const hsStep = (n, text, art, sub) => '<li class="hsstep"><span class="hsnum">' + n + '</span><div class="hstext"><span>' + text + '</span>' + (sub ? '<small>' + sub + '</small>' : '') + '</div>' + (art || '') + '</li>';
+  const HS_ART_BAR = '<svg class="hsart" width="112" height="80" viewBox="0 0 112 80" role="img" aria-label="Safari\'s bottom bar with Share lit in the middle, or a compact address bar with the three lines button lit">'
+    + '<rect x="1" y="4" width="110" height="32" rx="16" fill="#3a332b" stroke="#6a5c4a"/><path d="M17 14 L12 20 L17 26 M33 14 L38 20 L33 26" fill="none" stroke="#EDE4CF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>'
+    + '<circle cx="56" cy="20" r="14" ' + HS_LIT + '/><g transform="translate(56 21)">' + HS_SHARE_ICON + '</g>'
+    + '<path d="M74 15 q4 -2 7 0 q3 -2 7 0 v11 q-4 -2 -7 0 q-3 -2 -7 0 z M81 15 v11" fill="none" stroke="#EDE4CF" stroke-width="1.5" stroke-linejoin="round"/><rect x="95" y="13" width="10" height="10" rx="2" fill="none" stroke="#EDE4CF" stroke-width="1.5"/><rect x="98" y="16" width="10" height="10" rx="2" fill="#3a332b" stroke="#EDE4CF" stroke-width="1.5"/>'
+    + '<text x="56" y="41" text-anchor="middle" font-family="Georgia,serif" font-size="7" fill="#6B6354">or</text>'
+    + '<rect x="1" y="44" width="110" height="32" rx="16" fill="#3a332b" stroke="#6a5c4a"/><circle cx="20" cy="60" r="12" ' + HS_LIT + '/><path d="M14 55 h12 M14 60 h12 M14 65 h8" stroke="#1A1612" stroke-width="1.7" stroke-linecap="round"/><text x="38" y="63" font-family="Georgia,serif" font-size="8.5" fill="#EDE4CF">ww2dispatches…</text></svg>';
+  const HS_ART_TOPBAR = '<svg class="hsart" width="104" height="40" viewBox="0 0 104 40" role="img" aria-label="The address bar with the Share button lit at its right end"><rect x="1" y="6" width="102" height="28" rx="14" fill="#3a332b" stroke="#6a5c4a"/><text x="40" y="24" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="#EDE4CF">ww2dispatches…</text><circle cx="88" cy="20" r="12" ' + HS_LIT + '/><g transform="translate(88 21) scale(.85)">' + HS_SHARE_ICON + '</g></svg>';
+  const HS_ART_MORE = '<svg class="hsart" width="104" height="86" viewBox="0 0 104 86" role="img" aria-label="The share sheet: View More lit in the row of round buttons, then Add to Home Screen lit at the bottom of the list"><rect x="1" y="1" width="102" height="84" rx="10" fill="#2a2621" stroke="#6a5c4a"/><circle cx="16" cy="15" r="8" fill="#4a443c"/><circle cx="38" cy="15" r="8" fill="#4a443c"/><circle cx="60" cy="15" r="8" fill="#4a443c"/><circle cx="84" cy="15" r="10" ' + HS_LIT + '/><path d="M80 13 L84 17 L88 13" fill="none" stroke="#1A1612" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><text x="80" y="34" text-anchor="middle" font-family="Georgia,serif" font-size="6.5" font-weight="700" fill="#D9A93E">View More</text><rect x="7" y="40" width="90" height="11" rx="3" fill="#4a443c"/><text x="12" y="48" font-family="Georgia,serif" font-size="6.5" fill="#d9cfb8">Find on Page</text><rect x="5" y="56" width="94" height="22" rx="5" ' + HS_LIT + '/><rect x="10" y="61" width="11" height="11" rx="2.5" fill="none" stroke="#1A1612" stroke-width="1.3"/><path d="M15.5 63.5 v6 M12.5 66.5 h6" stroke="#1A1612" stroke-width="1.3"/><text x="25" y="70" font-family="Georgia,serif" font-size="7.5" font-weight="700" fill="#1A1612" textLength="68" lengthAdjust="spacingAndGlyphs">Add to Home Screen</text></svg>';
+  const HS_ROUNDEL = '<rect x="8" y="27" width="20" height="20" rx="5" fill="#17140f"/><circle cx="18" cy="37" r="7.5" fill="#B04A3E"/><circle cx="18" cy="37" r="6.2" fill="none" stroke="#EDE4CF" stroke-width=".7"/><text x="18" y="39" text-anchor="middle" font-family="Oswald,sans-serif" font-size="5" font-weight="700" fill="#EDE4CF">WW2</text>';
+  const HS_ART_ADD = '<svg class="hsart" width="104" height="74" viewBox="0 0 104 74" role="img" aria-label="The Add to Home Screen screen with Add lit at the top right and Open as Web App switched on"><rect x="1" y="1" width="102" height="72" rx="10" fill="#2a2621" stroke="#6a5c4a"/><circle cx="13" cy="14" r="6" fill="#4a443c"/><path d="M10.5 11.5 l5 5 M15.5 11.5 l-5 5" stroke="#d9cfb8" stroke-width="1.2"/><rect x="70" y="5" width="28" height="17" rx="8.5" ' + HS_LIT + '/><text x="84" y="16.5" text-anchor="middle" font-family="Georgia,serif" font-size="8.5" font-weight="700" fill="#1A1612">Add</text>' + HS_ROUNDEL + '<text x="33" y="40" font-family="Georgia,serif" font-size="9" fill="#EDE4CF">Declass</text><text x="8" y="63" font-family="Georgia,serif" font-size="7.5" fill="#d9cfb8">Open as Web App</text><rect x="74" y="54" width="22" height="13" rx="6.5" fill="#3f7a4e"/><circle cx="89.5" cy="60.5" r="5" fill="#fff"/></svg>';
+  function hsGuideHTML() {
+    const head = (who, sub) => '<div class="sheettop"><span class="howstamp">' + who + '</span><button class="howx" type="button" data-close aria-label="Close">✕</button></div><h2>Add Declass to your home screen</h2><p class="hssub">' + sub + '</p>';
+    const done = '<p class="hsdone">Then open Declass from your home screen, the WW2 roundel. You stay signed in, and your dossier is right there.</p><button class="btn" type="button" data-close>Got it</button>';
+    if (IN_APP) {
+      return head(IN_APP === 'this app' ? 'Inside an app' : 'Inside ' + IN_APP, IN_APP + "'s built in browser can't add Declass to your home screen.")
+        + '<p class="hsdone">Open Declass in your phone\'s own browser first, then come back to How to play and follow the steps there.</p><a class="btn" id="hsOut">Open in my browser</a><button class="linkbtn" type="button" data-close>Close</button>';
+    }
+    if (HS_IOS && HS_IPAD && !HS_IOS_OTHER) {
+      return head('iPad · Safari', 'A few taps, starting at the top of your screen.') + '<ol class="hssteps">'
+        + hsStep(1, 'Tap <b>Share</b>, the square with the arrow, at the top right.', HS_ART_TOPBAR)
+        + hsStep(2, 'Tap <b>View More</b> if you see it, then tap <b>Add to Home Screen</b>.', HS_ART_MORE)
+        + hsStep(3, 'Tap <b>Add</b>. Leave <b>Open as Web App</b> switched on.', HS_ART_ADD) + '</ol>' + done;
+    }
+    if (HS_IOS && HS_IOS_OTHER && !HS_IOS_CHROME) {
+      return head('iPhone · ' + (HS_IOS_NAME === 'your browser' ? 'Browser' : HS_IOS_NAME), 'A few taps, starting with Share.') + '<ol class="hssteps">'
+        + hsStep(1, HS_IOS_NAME === 'Edge' ? 'Tap the <b>three lines</b> menu in Edge\'s bar, at the bottom or top of your screen, then tap <b>Share</b>.'
+          : 'Find <b>Share</b> in ' + HS_IOS_NAME + '. It is usually in the menu, the <b>three lines</b> or <b>three dots</b> button.')
+        + hsStep(2, 'Tap <b>View More</b>, then scroll to the bottom and tap <b>Add to Home Screen</b>.', HS_ART_MORE)
+        + hsStep(3, 'Tap <b>Add</b> at the top right. Leave <b>Open as Web App</b> switched on.', HS_ART_ADD) + '</ol>'
+        + '<p class="hstip">Can\'t find it? Open this page in Safari and follow the Safari steps. They work on every iPhone.</p>' + done;
+    }
+    if (HS_IOS && HS_IOS_CHROME) {
+      return head('iPhone · Chrome', 'A few taps, starting at the top of your screen.') + '<ol class="hssteps">'
+        + hsStep(1, 'Tap <b>Share</b> at the right end of the address bar.', HS_ART_TOPBAR)
+        + hsStep(2, 'Tap <b>View More</b>, then scroll to the bottom and tap <b>Add to Home Screen</b>.', HS_ART_MORE)
+        + hsStep(3, 'Tap <b>Add</b> at the top right. Leave <b>Open as Web App</b> switched on.', HS_ART_ADD) + '</ol>'
+        + '<p class="hstip">Can\'t find it? Open this page in Safari and follow the Safari steps. They work on every iPhone.</p>' + done;
+    }
+    if (HS_IOS) {
+      return head('iPhone · Safari', "A few taps. Safari's buttons are at the bottom of your screen.") + '<ol class="hssteps">'
+        + hsStep(1, 'Tap <b>Share</b>, the square with the arrow, in the bar at the bottom.', HS_ART_BAR, 'Only see the address bar down there? Tap the <b>three lines</b> in it, then <b>Share</b>.')
+        + hsStep(2, 'Tap <b>View More</b>, then scroll to the bottom and tap <b>Add to Home Screen</b>.', HS_ART_MORE)
+        + hsStep(3, 'Tap <b>Add</b> at the top right. Leave <b>Open as Web App</b> switched on.', HS_ART_ADD) + '</ol>' + done;
+    }
+    if (HS_ANDROID) {
+      return head('Android', 'Two taps in your browser\'s menu.') + '<ol class="hssteps">'
+        + hsStep(1, 'Tap the <b>⋮</b> menu at the top right of your browser.')
+        + hsStep(2, 'Tap <b>Add to home screen</b> or <b>Install app</b>, then <b>Install</b> or <b>Add</b>.') + '</ol>'
+        + '<p class="hstip">Samsung Internet: tap the <b>☰</b> menu at the bottom, then <b>Add page to</b>, then <b>Home screen</b>.</p>' + done;
+    }
+    if (HS_MAC_SAFARI) {
+      return head('Mac · Safari', 'Put Declass in your Dock.') + '<ol class="hssteps">'
+        + hsStep(1, 'In the menu bar, choose <b>File</b>, then <b>Add to Dock</b>.') + hsStep(2, 'Click <b>Add</b>.') + '</ol>' + done.replace('home screen', 'Dock');
+    }
+    return head('On a computer', 'Install Declass as an app.') + '<ol class="hssteps">'
+      + hsStep(1, 'Chrome or Edge: click the install icon at the right end of the address bar, or open the browser menu and choose <b>Install</b> (in Edge, <b>Apps</b>, then <b>Install this site as an app</b>).')
+      + hsStep(2, 'Click <b>Install</b>.') + '</ol><p class="hstip">Firefox can\'t install sites. Bookmark ww2dispatches.com/declass instead.</p><button class="btn" type="button" data-close>Got it</button>';
+  }
+  // Opens the browser's own Install box when it has offered one; otherwise the picture guide, with an arrow
+  // pointing at where the browser's buttons are.
+  function openInstall() {
+    hit('hs_guide');
+    if (installEvt && !IN_APP) {
+      const e = installEvt; installEvt = null;
+      try {
+        e.prompt();
+        e.userChoice.then(c => { if (c && c.outcome === 'accepted') { hit('hs_yes'); mark('hsdone'); } }).catch(() => {});
+        return;
+      } catch (err) {}
+    }
+    sheet(hsGuideHTML());
+    const out = $('hsOut'); if (out) out.href = openOutHref(outLink(true));
+    if (!IN_APP && HS_IOS && (!HS_IOS_OTHER || HS_IOS_CHROME)) {
+      const up = HS_IOS_CHROME || HS_IPAD, a = document.createElement('div');
+      a.id = 'hsArrow'; a.className = 'hsarrow ' + (up ? 'up' : 'down');
+      a.innerHTML = up ? '<svg viewBox="0 0 26 22" aria-hidden="true"><path d="M13 20 V4 M5 11 L13 3 L21 11"/></svg><span>Share is up here</span>'
+        : '<span>Safari\'s buttons are just below</span><svg viewBox="0 0 26 22" aria-hidden="true"><path d="M13 2 V18 M5 11 L13 19 L21 11"/></svg>';
+      $('sheet').appendChild(a);
+      // The card scrolls under the arrow, so the arrow steps aside once the guide is scrolled.
+      $('sheet').onscroll = () => { const ar = $('hsArrow'); if (ar) ar.classList.toggle('gone', $('sheet').scrollTop > 12); };
+    }
+  }
+  document.querySelectorAll('[data-hs]').forEach(b => { b.onclick = () => { closeHow(); openInstall(); }; });
+
+  // Opened from the home screen: counted once a day, never asked again, and a one time welcome.
+  function hsStandaloneArrive() {
+    if (!standalone()) return;
+    mark('hsdone');
+    const today = new Date().toDateString();
+    let last = ''; try { last = localStorage.getItem('declass_hs_day') || ''; } catch (e) {}
+    if (last !== today) { hit('hs_open'); try { localStorage.setItem('declass_hs_day', today); } catch (e) {} }
+  }
+  function hsWelcome() {
+    if (!standalone() || seen('hswelcome') || !signedIn()) return false;
+    note('home', 'hswelcome', "Reporting for duty. Declass is on your home screen now, and your dossier came with you. Your files open right here from now on.", 'ON YOUR HOME SCREEN');
+    return true;
+  }
+
+  // Back after a while (a home screen app on iPhone resumes instead of reloading, and so does a Safari tab):
+  // reload the files so last night's envelopes don't sit there in the morning.
+  let hsHiddenAt = 0;
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'hidden') { hsHiddenAt = Date.now(); return; }
+    const away = hsHiddenAt ? Date.now() - hsHiddenAt : 0;
+    hsHiddenAt = 0;
+    if (away < 5 * 60000 || !signedIn() || !$('sHome').classList.contains('on') || !$('sheet').hidden || !$('promo').hidden || tourAt >= 0) return;
+    Promise.all([refreshState(), away > 30 * 60000 ? refreshCatalog() : null])
+      .then(() => { if ($('sHome').classList.contains('on')) renderHome(); }).catch(() => {});
+  });
 
   // ---------- Display Case (11 Nov 2026, Display Case doc) ----------
   // Six slots the player fills with cards they hold, under an optional call sign built from two word lists.
@@ -2753,6 +2936,7 @@
     return Promise.all([api('catalog'), api('state')]).then(([c, s]) => {
       setCatalog(c.cards); ST = s; landFan();
       if (cardLinkNew) hit('card_link');
+      hsStandaloneArrive();
       if (cardGoal && !BYID.has(cardGoal.id)) dropCardGoal();
       // a visitor with nothing yet (no account, no pack in this browser) gets the starter pack first
       if (cardGoal && !signedIn() && !STARTER) { cardGoal.fresh = true; try { sessionStorage.setItem(CARD_STORE, JSON.stringify(cardGoal)); } catch (e) {} }
