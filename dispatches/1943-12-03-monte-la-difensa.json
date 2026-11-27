@@ -221,5 +221,14 @@
   "videoTime": "12:00 America/Denver",
   "schedule": "Thu 3 Dec 2026, 12:00 p.m. Mountain, all six channels",
   "scheduled": "Buffer, all six channels, noon 3 Dec"
+ },
+ "video_b": {
+  "footage": "footage/1943-12-03-monte-la-difensa-b.mp4",
+  "focusX": 50,
+  "focusY": 50,
+  "sourceUrl": "https://catalog.archives.gov/id/24174",
+  "note": "Second cut. Signal Corps film 111-ADC-10412 (NARA 24174), \"1st Special Service Forces\", silent. Cut 26 Nov 2026 (evening run) inside research's 7 p.m. stretch (00:10 to 03:10): 01:36.0 to 01:40.5 Force men climbing a rocky trail toward the camera under heavy packs (opening); 01:04.5 to 01:06.5 a soldier with a submachine gun coming up the slope; 02:05.6 to 02:08.1 a snowy mountainside; 02:34.5 to 02:37.0 a soldier climbing on the skyline; 02:46.5 to 02:50.5 a soldier with a pack frame climbing toward the camera, close. 10:11 pixels scaled to square, 8 px trimmed each side. Every shot lies outside the noon clip (the howitzer, 03:19.9 to 04:26.95), and the opening differs (noon opens on the howitzer's muzzle blast).",
+  "hook": "Then three days of sleet on the bare summit.",
+  "sound": false
  }
 }

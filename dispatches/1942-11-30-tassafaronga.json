@@ -174,12 +174,48 @@
    "Japan",
    "US"
   ],
-  "lens": "axis_japan"
+  "lens": "axis_japan",
+  "video": {
+   "kind": "Story Card",
+   "opening": "a machine",
+   "sound": "narration"
+  }
  },
  "kind": "story",
  "videoTime": "19:00",
  "film": {
   "status": "none",
   "shot_notes": "No public domain film of Tassafaronga or of any other 30 Nov event was found on the NARA catalog (searches for Tassafaronga, Tulagi, Minneapolis, New Orleans, Northampton and Pensacola damage turned up nothing digitized from Dec 1942), and Monday's only film, the Hurtgen reel 111-ADC-2798, carries the noon video. Monday's 7 p.m. video is a Story Card on this card from the five downloaded photos in videoPhotos (Test C: under 30 seconds, open on the most dramatic still)."
+ },
+ "story": {
+  "video": "videos/dispatch-105-story-am_onyx.mp4",
+  "videoUrl": "https://media.ww2dispatches.com/videos/dispatch-105-story-am_onyx-r2.mp4",
+  "script": "stories/1942-11-30-tassafaronga.json",
+  "voice": "am_onyx",
+  "speed": 0.95,
+  "time": "19:00",
+  "buffer": {
+   "x": "6b0915e8e94385a8fd782893",
+   "instagram": "6b0915ea1fd46e62e716eaa2",
+   "threads": "6b0915ed776ce21276eb7de6",
+   "facebook": "6b0915ef049983dcfb8eee00",
+   "youtube": "6b091605658222306ce5a1ca",
+   "tiktok": "6b0915f2658222306ce59e98"
+  },
+  "kit": {
+   "caption": "Two American cruisers lost their bows in a single minute. The Japanese admiral who did it lost only one destroyer.\n\nU.S. Navy photos of the damage at Tulagi, December 1942, and a portrait of Rear Admiral Raizo Tanaka.\n\nNarration is AI generated",
+   "youtubeTitle": "Two Cruisers Lost Their Bows in One Minute, 1942 #shorts",
+   "youtubeDescription": "Two American cruisers lost their bows in a single minute. The Japanese admiral who did it lost only one destroyer.\n\nOn the night of 30 November 1942, Rear Admiral Raizo Tanaka of the Imperial Japanese Navy led eight destroyers down to Guadalcanal on a supply run, with his flag in the destroyer Naganami. Six of the destroyers carried drums of supplies, 200 to 240 each, to be put over the side off Tassafaronga for the Japanese troops ashore. Naganami and Takanami sailed as escorts. Waiting for them was Rear Admiral Carleton Wright's Task Force 67: four heavy cruisers, one light cruiser and six destroyers, with radar. The Americans saw the Japanese first and opened fire. Takanami, the destroyer nearest the Americans, drew the gunfire and was wrecked within minutes. She sank about 10 miles from Savo Island, and 197 of her crew died, among them her captain, Commander Ogura Masami. Tanaka ordered his ships to fire torpedoes and get away. They answered with the Type 93 torpedo, the weapon later nicknamed the Long Lance. At 2327 the first torpedoes struck. Within one minute Minneapolis and New Orleans had their bows blown off. Pensacola was hit at 2339 and burned for four hours. Two torpedoes hit Northampton at 2348. Northampton rolled over and sank stern first just after 0300 on 1 December. Nearly 400 American sailors died that night: 183 in New Orleans, 125 in Pensacola, 50 in Northampton and 37 in Minneapolis. The Americans believed they had sunk several Japanese ships. In fact they had sunk one, Takanami. The rest of Tanaka's destroyers escaped. The twist: Tanaka won the fight but lost the errand. His drums were not landed that night. On a second run on 3 December his destroyers dropped about 1,500 drums off Tassafaronga, and only 310 reached the troops. On 12 December American PT boats sank Tanaka's flagship Teruzuki and he was wounded. On 29 December he was moved off the front, and he spent the rest of the war on shore duty. Minneapolis crept 18 miles to Tulagi at about 3 knots. Her crew tied her to coconut trees and stumps along the shore and hid her from Japanese planes under nets and jungle foliage while they patched her up. Minneapolis and New Orleans both survived. Minneapolis was back in action by September 1943.\n\nNarration is AI generated (Kokoro TTS, voice Onyx). No public domain film of the battle is known, so this video tells it in U.S. Navy photos.\n\nPhotos: Minneapolis hidden under camouflage at Tulagi, December 1942. U.S. Navy photo via NavSource, public domain. New Orleans reaches Tulagi with her bow gone ahead of turret II, 1 December 1942. U.S. Navy photo via NavSource, public domain. Torpedo damage to Pensacola at Tulagi, 1 December 1942. U.S. Navy photo 5765-5, National Museum of the U.S. Navy, public domain. Ships of Task Force 67 underway off Guadalcanal just before the battle, 30 November 1942. U.S. Navy photo, public domain. Rear Admiral Raizo Tanaka, Imperial Japanese Navy, date unknown. Japanese photo, public domain in Japan and the U.S. per Wikimedia Commons.\nSources: The Battle of Tassafaronga, 30 November 1942, Office of Naval Intelligence Combat Narrative (HyperWar transcription); Robert J. Cressman, The Official Chronology of the U.S. Navy in World War II, 1942 (Naval Historical Center; HyperWar transcription); Battle of Tassafaronga, Wikipedia (citing Morison vol. V, Frank, Crenshaw); IJN Takanami: Tabular Record of Movement, combinedfleet.com; Raizo Tanaka, Wikipedia.\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\n\n#Shorts #WW2 #OnThisDay #History",
+   "tiktokCaption": "Two American cruisers lost their bows in a single minute. The Japanese admiral who did it lost only one destroyer.\n\nU.S. Navy photos of the damage at Tulagi, December 1942, and a portrait of Rear Admiral Raizo Tanaka.\n\nNarration is AI generated\n\n#WW2 #OnThisDay #History #Guadalcanal",
+   "tiktokTitle": "Two Cruisers Lost Their Bows in One Minute, 1942",
+   "schedule": [
+    "7:00 p.m. Mountain, Mon 30 Nov 2026, all six channels in Buffer",
+    "No hashtags on X (Test D); Instagram and Facebook end #OTD #OnThisDay #WW2; Threads has no tags (History Threads topic); TikTok #WW2 #OnThisDay #History #Guadalcanal",
+    "Flagged AI generated on X, Instagram, TikTok, and YouTube; Facebook as a Reel",
+    "Test C: 29.8 seconds, opens on the most dramatic still"
+   ],
+   "thumbnail": "Opens on New Orleans at Tulagi with her bow torn away, the strongest still in the kit; Instagram and TikTok cover set at 1.0 s. Poster videos/dispatch-105-instagram-poster.jpg.",
+   "scheduled": "Buffer, all six channels, 7 p.m. 30 Nov"
+  }
  }
 }

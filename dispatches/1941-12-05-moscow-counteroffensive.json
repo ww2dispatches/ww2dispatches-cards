@@ -192,5 +192,14 @@
   "videoTime": "12:00 America/Denver",
   "schedule": "Sat 5 Dec 2026, 12:00 p.m. Mountain, all six channels",
   "scheduled": "Buffer, all six channels, noon 5 Dec"
+ },
+ "video_b": {
+  "footage": "footage/1941-12-05-moscow-counteroffensive-b.mp4",
+  "focusX": 50,
+  "focusY": 50,
+  "sourceUrl": "https://catalog.archives.gov/id/36071",
+  "note": "Second cut. The Battle of Russia (1943), 111-OF-5 reel 6 (NARA 36071), Soviet film inside the U.S. film, run silent (narration and score). Cut 26 Nov 2026 (evening run) inside research's 7 p.m. stretch (04:10 to 05:58): 04:33.0 to 04:35.4 infantry running across a snowfield as a tank drives through them (opening); 04:35.5 to 04:38.0 troops in white charging forward; 04:28.25 to 04:31.0 ski troops in white rising to attack; 04:55.25 to 04:57.75 a soldier running through smoke; 05:04.5 to 05:05.9 a shell burst; 05:54.75 to 05:56.1 infantry running through smoke; 05:57.9 to 06:00.3 an assault past a burning building. Left out the cavalry (noon has a cavalry charge) and the liberated towns. Pillarbox cropped, scaled to 640 x 480. Every shot lies outside the noon clip (03:25.85 to 03:56.85), and the opening differs (noon opens on a gun firing).",
+  "hook": "By January, pushed back up to 150 miles.",
+  "sound": false
  }
 }

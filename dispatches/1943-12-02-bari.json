@@ -222,5 +222,14 @@
   "videoTime": "12:00 America/Denver",
   "schedule": "Wed 2 Dec 2026, 12:00 p.m. Mountain, all six channels",
   "scheduled": "Buffer, all six channels, noon 2 Dec"
+ },
+ "video_b": {
+  "footage": "footage/1943-12-02-bari-b.mp4",
+  "focusX": 50,
+  "focusY": 50,
+  "sourceUrl": "https://catalog.archives.gov/id/6044531",
+  "note": "Second cut. Recognizing the Ju 88 (1943), 111-TF-1-3684 (NARA 6044531), run silent (British narration). Cut 26 Nov 2026 (evening run) inside research's 7 p.m. stretches: 02:06.3 to 02:09.9 a Ju 88 coming head on, low over the water (opening); 01:01.25 to 01:02.45 ground crew at a running engine; 01:05.75 to 01:09.6 a Ju 88 rolling for takeoff; 01:09.75 to 01:12.1 a Ju 88 taking off straight at the camera; 01:50.5 to 01:54.5 a Ju 88 passing close against the clouds. Stopped before the white outline graphics at 02:10. 4:3 scaled to square. Every shot lies outside the noon clip (01:13.1 to 01:42.85), and the opening differs (noon opens on a Ju 88 diving and releasing).",
+  "hook": "Up to 28 ships lost in one evening's raid.",
+  "sound": false
  }
 }

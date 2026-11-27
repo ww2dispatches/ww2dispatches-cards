@@ -1,0 +1,74 @@
+{
+  "dispatch": "1942-11-30-tassafaronga",
+  "note": "Story video for Dispatch No. 105, the 7 p.m. video on Mon 30 Nov 2026. Test C: under 30 seconds, opening on the most dramatic still (New Orleans with her bow gone). Photos from the dispatch's videoPhotos, all U.S. Navy photos except the Tanaka portrait (Japanese photo, public domain per Wikimedia Commons). No public domain film of Tassafaronga or any other 30 Nov event exists on the NARA catalog (research, 25 Nov 2026), so this is a Story Card.",
+  "segments": [
+    {
+      "id": "s01",
+      "say": "In one minute, two American cruisers lost their bows.",
+      "caption": "In one minute, two American cruisers lost their bows.",
+      "visual": {
+        "type": "photo",
+        "src": "photos/1942-11-30-tassafaronga-v2.jpg",
+        "focusX": 30,
+        "focusY": 60,
+        "zoom": "in"
+      }
+    },
+    {
+      "id": "s02",
+      "say": "Admiral Raizo Tanaka was running supplies to Guadalcanal with eight destroyers.",
+      "caption": "Admiral Raizo Tanaka was running supplies to Guadalcanal with eight destroyers.",
+      "visual": {
+        "type": "photo",
+        "src": "photos/1942-11-30-tassafaronga-v5.jpg",
+        "focusX": 50,
+        "focusY": 25,
+        "zoom": "in"
+      }
+    },
+    {
+      "id": "s03",
+      "say": "Waiting were five cruisers and six destroyers, with radar.",
+      "caption": "Waiting: five cruisers and six destroyers, with radar.",
+      "visual": {
+        "type": "photo",
+        "src": "photos/1942-11-30-tassafaronga-v4.jpg",
+        "focusX": 40,
+        "focusY": 50,
+        "zoom": "out"
+      }
+    },
+    {
+      "id": "s04",
+      "say": "He answered with torpedoes. Nearly four hundred Americans died.",
+      "caption": "He answered with torpedoes. Nearly 400 Americans died.",
+      "visual": {
+        "type": "photo",
+        "src": "photos/1942-11-30-tassafaronga-v3.jpg",
+        "focusX": 55,
+        "focusY": 50,
+        "zoom": "in"
+      }
+    },
+    {
+      "id": "s05",
+      "say": "Tanaka lost one destroyer. But his supplies never landed that night.",
+      "caption": "Tanaka lost one destroyer. But his supplies never landed that night.",
+      "visual": {
+        "type": "photo",
+        "src": "photos/1942-11-30-tassafaronga-v1.jpg",
+        "focusX": 45,
+        "focusY": 55,
+        "zoom": "out"
+      }
+    },
+    {
+      "id": "s06",
+      "say": "Follow W W Two Dispatches.",
+      "caption": "Follow WW2 Dispatches.",
+      "visual": {
+        "type": "end"
+      }
+    }
+  ]
+}
