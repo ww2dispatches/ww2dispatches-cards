@@ -1321,3 +1321,28 @@ html.ztrial #stage2{cursor:zoom-in}
 
 /* Search headings (15 Nov 2026): one h1 on the page (the landing's DECLASS); the screen titles became h2.ttl and keep the h1 look above. */
 .outask{display:block;font-size:14px;color:var(--mute);margin:6px 0 2px} /* the app's own warning, explained before it shows (23 Nov 2026) */
+
+/* ============ Home screen install (26 Nov 2026, Declass Home Screen Install doc) ============ */
+.fnote .hsrow{display:flex;gap:12px;align-items:flex-start;margin-top:6px}
+.fnote .hsrow p{margin:0}
+.fnote .hsicon{flex:0 0 40px;width:40px;height:40px;border-radius:10px;background:#120f0c url(/declass/icons/icon-192.png) center/cover no-repeat}
+.fnote .hsbtns{display:flex;align-items:center;gap:8px}
+.fnote .hsbtns .hsno{background:none;color:#4a4033;font-family:var(--type);text-transform:none;letter-spacing:0;font-size:15px}
+.hssub{margin:2px 0 4px;font-size:15px;color:#4a4033}
+.hssteps{list-style:none;margin:12px 0 0;padding:0;display:flex;flex-direction:column}
+.hsstep{display:flex;gap:12px;align-items:center;padding:12px 0;border-top:1px solid #c9bc9e}
+.hsstep:first-child{border-top:0;padding-top:4px}
+.hsnum{flex:0 0 30px;width:30px;height:30px;border-radius:50%;background:#17140f;color:#EDE4CF;font-family:var(--display);font-weight:700;font-size:16px;display:flex;align-items:center;justify-content:center}
+.hstext{flex:1;min-width:0;font-size:16px;line-height:1.35}
+.hstext small{display:block;margin-top:3px;font-size:14px;color:#5e5343;line-height:1.35}
+.hsart{flex:0 0 auto;max-width:34%;height:auto}
+.hstip,.hsdone{margin:12px 0 0;padding:12px;border-radius:6px;background:#e3dac6;font-size:15px;line-height:1.4;color:#2a241c}
+.hsarrow{position:fixed;left:0;right:0;z-index:61;display:flex;flex-direction:column;align-items:center;gap:2px;pointer-events:none;font-family:var(--type);font-size:14px;color:#D9A93E;text-shadow:0 1px 3px #000}
+.hsarrow.down{bottom:calc(6px + env(safe-area-inset-bottom,0px))}
+.hsarrow.up{top:calc(6px + env(safe-area-inset-top,0px));align-items:flex-end;padding-right:22px}
+.hsarrow svg{width:26px;height:22px;fill:none;stroke:#D9A93E;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;animation:hsbob 1.2s ease-in-out infinite}
+.hsarrow.down svg{animation-name:hsbobdown}
+@keyframes hsbob{50%{transform:translateY(-4px)}}
+@keyframes hsbobdown{50%{transform:translateY(4px)}}
+@media (prefers-reduced-motion:reduce){.hsarrow svg{animation:none}}
+#sheet:has(#hsArrow){padding-bottom:64px;padding-top:max(52px,env(safe-area-inset-top,0px))}
