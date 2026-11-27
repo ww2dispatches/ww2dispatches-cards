@@ -195,7 +195,12 @@
   "nations": [
    "US"
   ],
-  "lens": "us"
+  "lens": "us",
+  "video": {
+   "kind": "Living Card",
+   "opening": "motion",
+   "sound": "silent"
+  }
  },
  "kind": "living",
  "videoTime": "19:00",
@@ -217,5 +222,26 @@
   "note": "428-NPC-1007 (NARA 75781), faded color Navy film, silent. Cut 26 Nov 2026 (evening run) inside research's 7 p.m. stretches: 01:47.2 to 01:51.6 a Hellcat bursting into flame as it hits the deck, the fire running along the deck (opening on the fireball); 01:20.0 to 01:24.0 another Hellcat crash landing, deck crew running toward it; 05:38.1 to 05:41.6 Avengers and a Hellcat in formation over the sea; 05:51.5 to 05:54.5 an Avenger close among the clouds. Cropped to drop the burned in timecode along the bottom and the black film edges; 10:11 pixels scaled to square. Nothing from the noon clip (00:16.7 to 01:03.45).",
   "hook": "Armored cockpit. Sealed tanks. 2,000 horsepower.",
   "sound": false
+ },
+ "buffer": {
+  "x_film": "6b0917391fd46e62e7174737",
+  "instagram_reel": "6b09173b062ed764a8e8ab56",
+  "threads_film": "6b09173e776ce21276ebdbc5",
+  "facebook_film": "6b091740658222306ce5fe0a",
+  "youtube": "6b09174d658222306ce5ff6b",
+  "tiktok": "6b091743062ed764a8e8b094"
+ },
+ "kit": {
+  "file": "kits/dispatch-118-kit.md",
+  "caption": "A Hellcat slams onto a carrier deck and bursts into flame. Grumman had built it to take punishment.\n\nNavy color film of the carrier strikes on the Gilberts and Marshalls, late 1943. The burning fighter is not identified.\n\nWould you have run toward it?",
+  "youtubeTitle": "A Hellcat Bursts Into Flame on the Deck, 1943 #shorts",
+  "youtubeDescription": "A Hellcat slams onto a carrier deck and bursts into flame. Grumman had built it to take punishment.\n\nThe Hellcat began as an improved version of Grumman's F4F Wildcat and grew into an entirely new fighter, built to beat the Japanese Zero. The prototype first flew on 26 June 1942. Production started in October 1942, before the prototype had finished testing. The Navy accepted the first production F6F-3 in January 1943. It was built to take punishment: heavy cockpit armor, a bullet resistant windshield, self sealing fuel tanks and an armored oil tank, pulled along by a 2,000 horsepower Pratt and Whitney R-2800 engine. On 10 November 1943, Ensign Byron M. Johnson of Fighting Squadron Two brought F6F-3 Number 30 aboard USS Enterprise, then on her way to the Gilberts. The fighter slammed into the carrier's port 20mm gun gallery and its ruptured belly tank caught fire. The crash jammed the canopy and Johnson could not get out. Lieutenant Walter L. Chewning Jr., the catapult officer, ran over, climbed up the side of the burning plane, forced the canopy open and pulled him out. Johnson escaped without significant injury. A Navy photographer caught Chewning in the act, and the picture became one of the best known photographs of the war. Three and a half weeks later, on 4 December 1943, Enterprise and five other carriers of Task Force 50 sent 246 planes against Kwajalein and Wotje in the Marshall Islands. Their fighters shot down 19 Japanese fighters. The Hellcat's best day came on 19 June 1944 over the Marianas, when Japan lost more than 270 aircraft to 26 Hellcats lost. It came to be called the Great Marianas Turkey Shoot. Grumman built 12,275 Hellcats before production ended in November 1945. Hellcats were credited with a victory to loss ratio of 19 to 1.\n\nThis is U.S. Navy color film from the carrier strikes on the Gilbert and Marshall Islands in late 1943: a Hellcat bursting into flame on landing, another crash landing as the deck crew run to it, and Avengers in formation. It is not dated to 4 December, and the burning fighter is not identified; it is not Ensign Johnson's crash. The original film is silent.\n\nFilm: U.S. Navy, 428-NPC-1007, U.S. National Archives (catalog.archives.gov/id/75781), public domain.\nSources: Airpower Classics: F6F Hellcat, Air Force Magazine, April 2006; Grumman F6F-3 Hellcat, BuNo. 41834, Smithsonian National Air and Space Museum; Grumman F6F Hellcat, Wikipedia; Photo 80-G-205473, USS Enterprise (CV-6), crash landing of F6F-3 Number 30 of VF-2, 10 November 1943, Naval Historical Center Online Library (HyperWar mirror); Crash landing of F6F on flight deck of USS Enterprise, 80-G-205473, U.S. National Archives catalog; Chewning, Walter Lewis, Navy Log, United States Navy Memorial; George C. Dyer, The Amphibians Came to Conquer, Chapter XIX (Naval History Division, 1972; HyperWar transcription); Grumman F6F-3 Hellcat, San Diego Air and Space Museum; Shaw, Nalty and Turnbladh, Central Pacific Drive, History of U.S. Marine Corps Operations in World War II, Vol. III, Part III, Chapter 1 (HyperWar transcription).\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\n\n#Shorts #WW2 #OnThisDay #History",
+  "tiktokCaption": "A Hellcat slams onto a carrier deck and bursts into flame. Grumman had built it to take punishment.\n\nNavy color film of the carrier strikes on the Gilberts and Marshalls, late 1943. The burning fighter is not identified.\n\nWould you have run toward it?\n\n#WW2 #OnThisDay #History #Hellcat",
+  "tiktokTitle": "A Hellcat Bursts Into Flame on the Deck, 1943",
+  "hook": "Armored cockpit. Sealed tanks. 2,000 horsepower.",
+  "thumbnailCheck": "Pass: the first frame is a Hellcat engulfed in a fireball as it hits the deck, in faded color; at 2 seconds the burning fighter skids along the deck. Opening tagged \"motion\" from the frames at 0.3 and 2 seconds (a deck crash, not combat, so not tagged combat or firing).",
+  "videoTime": "19:00 America/Denver",
+  "schedule": "Fri 4 Dec 2026, 7:00 p.m. Mountain, all six channels",
+  "scheduled": "Buffer, all six channels, 7 p.m. 4 Dec"
  }
 }

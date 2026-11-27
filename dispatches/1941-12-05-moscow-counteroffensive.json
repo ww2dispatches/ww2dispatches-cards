@@ -148,6 +148,11 @@
    "kind": "Living Card",
    "opening": "combat or firing",
    "sound": "silent"
+  },
+  "video_b": {
+   "kind": "Living Card",
+   "opening": "combat or firing",
+   "sound": "silent"
   }
  },
  "kind": "living",
@@ -178,7 +183,13 @@
   "threads_film": "6b08f69d658222306cd97fd7",
   "facebook_film": "6b08f6a0049983dcfb8287dd",
   "youtube": "6b08f6b01fd46e62e70adf13",
-  "tiktok": "6b08f6a21fd46e62e70adb13"
+  "tiktok": "6b08f6a21fd46e62e70adb13",
+  "x_film_b": "6b0917fe062ed764a8e8f542",
+  "instagram_reel_b": "6b091800062ed764a8e8f583",
+  "threads_film_b": "6b091803049983dcfb8f8ce8",
+  "facebook_film_b": "6b091805049983dcfb8f8dae",
+  "youtube_b": "6b091812062ed764a8e8fa27",
+  "tiktok_b": "6b091808776ce21276ec2fc0"
  },
  "kit": {
   "file": "kits/dispatch-119-kit.md",
@@ -201,5 +212,18 @@
   "note": "Second cut. The Battle of Russia (1943), 111-OF-5 reel 6 (NARA 36071), Soviet film inside the U.S. film, run silent (narration and score). Cut 26 Nov 2026 (evening run) inside research's 7 p.m. stretch (04:10 to 05:58): 04:33.0 to 04:35.4 infantry running across a snowfield as a tank drives through them (opening); 04:35.5 to 04:38.0 troops in white charging forward; 04:28.25 to 04:31.0 ski troops in white rising to attack; 04:55.25 to 04:57.75 a soldier running through smoke; 05:04.5 to 05:05.9 a shell burst; 05:54.75 to 05:56.1 infantry running through smoke; 05:57.9 to 06:00.3 an assault past a burning building. Left out the cavalry (noon has a cavalry charge) and the liberated towns. Pillarbox cropped, scaled to 640 x 480. Every shot lies outside the noon clip (03:25.85 to 03:56.85), and the opening differs (noon opens on a gun firing).",
   "hook": "By January, pushed back up to 150 miles.",
   "sound": false
+ },
+ "kit_b": {
+  "file": "kits/dispatch-119-b-kit.md",
+  "caption": "Tanks and troops in white coming across the snow at the German line. Within ten days the spearheads aimed at Moscow were gone.\n\nSoviet combat film of that winter, as used in the U.S. Army's 1943 film The Battle of Russia.\n\nDid Hitler lose the war in that snow?",
+  "youtubeTitle": "Tanks and Ski Troops in the Snow at Moscow, 1941 #shorts",
+  "youtubeDescription": "Tanks and troops in white coming across the snow at the German line. Within ten days the spearheads aimed at Moscow were gone.\n\nLate on 29 November 1941, General Georgy Zhukov, commanding the Western Front, assured Stalin that the Germans would not commit large new forces soon. Stalin then handed him three reserve armies, the 1st Shock, 10th and 20th, for a counterattack. Zhukov says he told Stalin that night that the Germans were \"bled white.\" His plan, sent the next morning, was to strike north and south of Moscow while the enemy was still attacking. It was a gamble. The US Army history calls the plan a near to last move in a battle that was likely to turn against the Soviets. The acting chief of the General Staff, General Aleksandr Vasilevsky, warned: \"If we do not do that in the next few days, it will be too late.\" Fresh troops made it possible. By 1 December the Stavka had brought 70 divisions from the Soviet Far East and 27 more from Central Asia and the Transcaucasus, at least 30 percent of the strategic reserves it committed in 1941. The US Army history credits the spy Richard Sorge, whose reports from Tokyo that Japan would not attack let Moscow risk stripping the east. Soviet codebreakers were also reading Japanese diplomatic messages, so how much rested on Sorge is still debated. The Kalinin Front went first, on 5 December. In paralyzing morning cold the 29th Army attacked across the frozen Volga west of Kalinin and broke about a mile into the German line. Its front commander, General Ivan Konev, had argued that he lacked the tanks and infantry for it. Zhukov's Western Front armies joined in on 6 December, as the dawn temperature fell as low as 38 below zero Fahrenheit. The 30th Army broke eight miles into the deep flank of the German Third Panzer Group northeast of Klin. The Soviets took Solnechnogorsk on 12 December and Klin on 15 December. By 16 December the German spearheads that had been aimed at Moscow were gone. That day Hitler forbade any large withdrawals, and on 18 December his order demanding \"fanatical resistance\" reached Army Group Centre. On 19 December he accepted the resignation of the army's commander in chief, Field Marshal Walther von Brauchitsch, and took command of the army himself. By early January 1942 the Germans had been driven back 100 to 250 km (about 60 to 150 miles) from Moscow. It ended German hopes of a quick victory over the Soviet Union.\n\nThis is Soviet film of the winter counteroffensive of December 1941 to January 1942, as used in the U.S. War Department film The Battle of Russia (1943). It is not dated to 5 or 6 December. The clip runs without its narration and score.\n\nFilm: The Battle of Russia (1943), U.S. War Department, 111-OF-5 reel 6, U.S. National Archives (catalog.archives.gov/id/36071), public domain.\nSources: Earl F. Ziemke and Magna E. Bauer, Moscow to Stalingrad: Decision in the East, Chapter III, To Moscow, US Army Center of Military History (HyperWar transcription); Earl F. Ziemke and Magna E. Bauer, Moscow to Stalingrad: Decision in the East, Chapter IV, The Counteroffensive: First Phase, US Army Center of Military History (HyperWar transcription); Earl F. Ziemke and Magna E. Bauer, Moscow to Stalingrad: Decision in the East, Chapter V, The Counteroffensive: Second Phase, US Army Center of Military History (HyperWar transcription); Battle of Moscow, Wikipedia; Richard Sorge, Wikipedia.\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\n\n#Shorts #WW2 #OnThisDay #History",
+  "tiktokCaption": "Tanks and troops in white coming across the snow at the German line. Within ten days the spearheads aimed at Moscow were gone.\n\nSoviet combat film of that winter, as used in the U.S. Army's 1943 film The Battle of Russia.\n\nDid Hitler lose the war in that snow?\n\n#WW2 #OnThisDay #History #EasternFront",
+  "tiktokTitle": "Tanks and Ski Troops in the Snow at Moscow, 1941",
+  "hook": "By January, pushed back up to 150 miles.",
+  "thumbnailCheck": "Pass: the first frame is Soviet infantry running across a snowfield with a tank driving through them; at 2 seconds the tank fills the frame. Second cut check: no source time shared with the noon clip, no cavalry, and a different opening (noon opens on a gun firing). Opening tagged \"combat or firing\" from the frames at 0.3 and 2 seconds.",
+  "videoTime": "19:00 America/Denver",
+  "schedule": "Sat 5 Dec 2026, 7:00 p.m. Mountain, all six channels",
+  "scheduled": "Buffer, all six channels, 7 p.m. 5 Dec"
  }
 }
