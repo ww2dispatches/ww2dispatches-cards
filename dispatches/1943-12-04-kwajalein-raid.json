@@ -160,7 +160,12 @@
    "US",
    "Japan"
   ],
-  "lens": "us"
+  "lens": "us",
+  "video": {
+   "kind": "Living Card",
+   "opening": "combat or firing",
+   "sound": "silent"
+  }
  },
  "kind": "living",
  "videoTime": "12:00",
@@ -174,5 +179,35 @@
   "license": "U.S. Navy film, public domain (NARA use status Undetermined, its usual note for 428-NPC)",
   "shot_notes": "Whole reel, 6 min 23 s, faded color, silent. NOON (this card): 00:14 to 00:36 antiaircraft bursts and a plane attacking ships at sea (open at 00:16 on the bursts); 00:52 to 01:12 aerials of an atoll's reef; 02:36 to 02:52 smoke rising from the atoll. The Hellcat crash and fire (01:16 to 02:10) and the TBF and F6F formations (05:28 to 06:00) belong to No. 118's 7 p.m. video. 03:20 to 03:56 men in pith helmets under palms (unidentified, avoid).",
   "date_note": "NARA dates the reel 19 Dec 1943 and titles it the air attacks on the Marshall and Gilbert Islands, which covers the November and December 1943 carrier strikes; it is not dated to 4 Dec. Caption as Navy film of the carrier raids on the Gilberts and Marshalls, late 1943."
+ },
+ "video": {
+  "footage": "footage/1943-12-04-kwajalein-raid-noon.mp4",
+  "focusX": 50,
+  "focusY": 50,
+  "sourceUrl": "https://catalog.archives.gov/id/75781",
+  "note": "428-NPC-1007 (NARA 75781), faded color Navy film, silent. Cut 27 Nov 2026 inside research's noon stretches: 00:16.7 to 00:23.85 splashes and antiaircraft fire among ships at sea, a plane attacking (opening); 00:25.7 to 00:29.35 antiaircraft bursts and a plane going down in flames; 00:59.6 to 01:03.45 aerial of an atoll's reef. Cropped to drop the burned in timecode along the bottom and the black film edges; 10:11 pixels scaled to square. Nothing from No. 118's stretches (01:16 to 02:10, 05:28 to 06:00).",
+  "hook": "His aviators wanted more. He chose caution.",
+  "sound": false
+ },
+ "buffer": {
+  "x_film": "6b08f675776ce21276df8e1c",
+  "instagram_reel": "6b08f677062ed764a8dc310e",
+  "threads_film": "6b08f67a658222306cd976d8",
+  "facebook_film": "6b08f67c776ce21276df9113",
+  "youtube": "6b08f68c062ed764a8dc3496",
+  "tiktok": "6b08f67f1fd46e62e70ad255"
+ },
+ "kit": {
+  "file": "kits/dispatch-116-kit.md",
+  "caption": "Six carriers sent 246 planes against Kwajalein and Wotje, and his senior aviators pressed for more strikes. The admiral chose caution.\n\nNavy film of the carrier raids on the Gilberts and Marshalls, late 1943.\n\nWas he right to play it safe?",
+  "youtubeTitle": "Six Carriers and One Cautious Admiral: Kwajalein, 1943 #shorts",
+  "youtubeDescription": "Six carriers sent 246 planes against Kwajalein and Wotje, and his senior aviators pressed for more strikes. The admiral chose caution.\n\nOn 4 December 1943, Rear Admiral Charles A. Pownall's Task Force 50 struck Kwajalein and Wotje Atolls in the Marshall Islands on its way home from the Gilberts. He had six carriers, Enterprise, Essex, Lexington, Yorktown, Belleau Wood and Cowpens, with 386 aircraft. Launching near Rongerik Atoll, the carriers sent 246 planes against Kwajalein and Wotje. They sank four cargo ships, damaged two old light cruisers and shot down 19 Japanese fighters. One photo plane brought home a clear picture of a new bomber strip on Kwajalein Island, about 70 percent finished. It meant the Marines and soldiers would have to take both ends of the atoll at once. The plan called for a second wave of strikes at noon, and the senior aviators in the task force pressed hard for more strikes to wipe out the Japanese aircraft that were left. Pownall chose caution, and the second strike was never flown. Japanese torpedo planes came after the carriers as they withdrew. At 2333 that night a torpedo hit Lexington in the stern, killing nine men, wounding 35 and knocking out her steering. Lexington settled five feet by the stern and circled to port through the smoke. Her crew sealed off the flooded compartments and rigged a hand operated emergency steering gear. She made Pearl Harbor on 9 December and went on to Bremerton, Washington, for two months of shipyard repairs. Beside Pownall's recommendations in his report on the raid, someone wrote in pencil, in recognizable handwriting, \"all defensive.\" Vice Admiral John H. Towers, the Pacific Fleet's air commander, pushed to have Pownall relieved. Towers wrote that he was \"overcautious in plans and operations\" and that his \"lack of aggressiveness\" was \"resented by subordinates.\" The payoff came within two months. When the fast carriers sailed in January 1944 to cover the invasion of Kwajalein, they were Task Force 58 under Rear Admiral Marc A. Mitscher. Pownall took over Towers's old shore job as air commander of the Pacific Fleet and never led a combat command again.\n\nThis is faded color U.S. Navy film of the carrier raids on the Gilbert and Marshall Islands in late 1943: antiaircraft fire and splashes among the ships, a plane going down in flames, and the reef of an atoll seen from the air. NARA dates the reel 19 December 1943; it is not dated to the 4 December strike. The original film is silent.\n\nFilm: U.S. Navy, 428-NPC-1007, U.S. National Archives (catalog.archives.gov/id/75781), public domain.\nSources: George C. Dyer, The Amphibians Came to Conquer: The Story of Admiral Richmond Kelly Turner, Chapter XIX (Naval History Division, 1972; HyperWar transcription); Robert J. Cressman, The Official Chronology of the U.S. Navy in World War II, 1943 (Naval Historical Center; HyperWar transcription); Shaw, Nalty and Turnbladh, Central Pacific Drive, History of U.S. Marine Corps Operations in World War II, Vol. III, Part III, Chapter 1 (HyperWar transcription); Samuel J. Cox, H-026-1: Operation Flintlock, The Invasion of Kwajalein, Naval History and Heritage Command; USS Lexington (CV-16), Wikipedia; USS Lexington (CV-16), Naval Historical Center Online Library of Selected Images (HyperWar mirror); Dwight Jon Zimmerman, Essex Class Carriers, F6F Hellcats, and Rear Adm. Charles Pownall, Defense Media Network, 7 September 2013.\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\n\n#Shorts #WW2 #OnThisDay #History",
+  "tiktokCaption": "Six carriers sent 246 planes against Kwajalein and Wotje, and his senior aviators pressed for more strikes. The admiral chose caution.\n\nNavy film of the carrier raids on the Gilberts and Marshalls, late 1943.\n\nWas he right to play it safe?\n\n#WW2 #OnThisDay #History #Kwajalein",
+  "tiktokTitle": "Six Carriers and One Cautious Admiral: Kwajalein, 1943",
+  "hook": "His aviators wanted more. He chose caution.",
+  "thumbnailCheck": "Pass: the first frame is splashes and antiaircraft fire among ships on the horizon; the same at 2 seconds. Faded color.",
+  "videoTime": "12:00 America/Denver",
+  "schedule": "Fri 4 Dec 2026, 12:00 p.m. Mountain, all six channels",
+  "scheduled": "Buffer, all six channels, noon 4 Dec"
  }
 }

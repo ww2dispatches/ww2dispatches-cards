@@ -156,7 +156,12 @@
    "US",
    "Germany"
   ],
-  "lens": "us"
+  "lens": "us",
+  "video": {
+   "kind": "Living Card",
+   "opening": "motion",
+   "sound": "silent"
+  }
  },
  "kind": "living",
  "videoTime": "12:00",
@@ -171,5 +176,35 @@
   "shot_cards": "https://catalog.archives.gov/medialz/mopix/111/adc/shot-cards/111-ADC-2700-2799/111-ADC-2798.pdf",
   "shot_notes": "Whole reel, 8 min 56 s, silent (the shot card says silent; the file has only hiss). NOON (this card): the 4.5 inch rocket batteries in the Hurtgen Forest, slated on screen \"Barth D, 29 Nov 1944, 4.5 rockets, Hurtgen Forest\" at 07:27 (avoid the slate itself): 06:39 to 06:57 truck mounted multiple rocket launchers in a forest clearing, crews at the racks; 06:58 to 07:26 a crewman on the field phone giving fire orders (faces, close); 07:30 to 07:57 launchers in the clearing firing, smoke; 07:58 to 08:24 the trucks move along the forest edge to new positions. Open on the launchers at 07:30 (smoke and firing) or 06:39. Tanks firing at Grosshau (00:08 to 01:40) belong to Monday's No. 104; the AA battery (01:55 to 04:12) to No. 103; the L-4 rockets (04:15 to 06:38) to Tuesday's No. 109. Do not reuse any of those here.",
   "date_note": "The shot card dates the rocket stretch 30 Nov 1944 but the slate chalked on screen reads 29 Nov 1944; either way it is the Hurtgen Forest on the day Grosshau fell or the day after. Caption it as U.S. Army film of rocket batteries in the Hurtgen Forest, 29 to 30 Nov 1944, not as Grosshau itself."
+ },
+ "video": {
+  "footage": "footage/1944-11-29-grosshau-noon.mp4",
+  "focusX": 50,
+  "focusY": 50,
+  "sourceUrl": "https://catalog.archives.gov/id/16601",
+  "note": "Signal Corps film 111-ADC-2798 (NARA 16601), silent. Cut 27 Nov 2026 from footage/1944-11-29-hurtgen-adc2798.mp4, inside research's noon stretch (the 4.5 inch rocket batteries, Hurtgen Forest, slated 29 Nov 1944): 07:51.1 to 07:55.75 smoke drifting over the truck launchers after a salvo, crewmen moving among the racks (opening); 07:11.1 to 07:15.45 a crew at the launcher racks, close; 07:16.7 to 07:18.35 rockets laid out on the ground; 07:56.3 to 07:59.55 a launcher truck rolling past the camera. Avoided both chalk slates (06:43 and 07:49). 10:11 pixels scaled to square, 8 px trimmed each side, lifted a little (dim). Nothing from the Grosshau tank stretch (No. 104), the AA battery (No. 103) or the L-4 rockets (No. 109).",
+  "hook": "First try failed. By moonlight, it fell.",
+  "sound": false
+ },
+ "buffer": {
+  "x_film": "6b08f5ba658222306cd9262e",
+  "instagram_reel": "6b08f5c1049983dcfb822a1d",
+  "threads_film": "6b08f5c3049983dcfb823001",
+  "facebook_film": "6b08f5c5776ce21276df49fb",
+  "youtube": "6b08f5d4776ce21276df52ed",
+  "tiktok": "6b08f5d7049983dcfb823f5e"
+ },
+ "kit": {
+  "file": "kits/dispatch-101-kit.md",
+  "caption": "Their charge across the open fields stalled within minutes. Then a flanking battalion came out on the ridge behind the village as night fell.\n\nU.S. Army film of rocket batteries in the Hürtgen Forest, 29 to 30 November 1944.\n\nWould you have charged, or gone around?",
+  "youtubeTitle": "The Charge Stalled. The Flank Won: Grosshau, 1944 #shorts",
+  "youtubeDescription": "Their charge across the open fields stalled within minutes. Then a flanking battalion came out on the ridge behind the village as night fell.\n\nSince 16 November 1944 the US 4th Infantry Division had been fighting east through the Hürtgen Forest toward Düren and the Roer River. Col. Charles T. \"Buck\" Lanham's 22nd Infantry was aimed at Grosshau, a village in a clearing on the forest's eastern edge. A first try on 25 November failed. Only three tanks and a tank destroyer got out of the woods with the infantry, German antitank gunners in Grosshau picked off the tanks, and artillery drove the men back into the forest. In two more days of limited fighting the 22nd Infantry suffered over 250 casualties, and two of its companies had fewer than fifty men each in the line. For 29 November Lanham planned a wide flanking march through the woods to the north to seize the ridge behind Grosshau, hoping the Germans in the village would then give up without another charge across open fields. German shelling delayed the start. Just before noon the division chief of staff, Col. Richard S. Marr, stepped in, in the division commander's name, and directed that Grosshau be taken that day. That meant a head on assault. Lanham's only free battalion was Major Blazzard's 2nd Battalion, as weak as any in the division. Within an hour one company with two tanks and a tank destroyer attacked down the road from the west. Within fifteen minutes the infantry was pinned in the open and both tanks had fallen to German assault guns. Eight more tanks tried to swing around to the southwest. Two hit mines at once, and the rest could not get out of the woods through the minefields and bog. The sun was going down on what the official history calls an abject failure. Then Lanham's flanking force cut the Grosshau to Gey highway, and as night came one battalion emerged on the ridge northeast of the village, behind the defenders. Tanks and tank destroyers used the dusk to reach the stalled infantry and rolled into Grosshau firing. Resistance collapsed in minutes. By the light of burning buildings and a moon, the first moon the division had seen since entering the forest, the infantry mopped up. More than a hundred Germans surrendered. Ernest Hemingway, covering the war for Collier's, was with Lanham's regiment. The two had met in Normandy, and Hemingway followed him into the Hürtgen, reaching the regimental command post on 15 November and seldom leaving his side. Hemingway later drew on the Hürtgen for his novel Across the River and Into the Trees. Lanham was one of the models for its hero, Colonel Cantwell.\n\nThis is U.S. Army Signal Corps film of 4.5 inch rocket batteries in the Hürtgen Forest: smoke hanging over the truck mounted launchers, crews at the racks, rockets laid out on the ground, and a launcher truck moving to a new position. The slate chalked on the film reads 29 November 1944 and the shot card says 30 November; either way it is the forest on the day Grosshau fell or the day after, not the village itself. The original film is silent.\n\nFilm: U.S. Army Signal Corps, 111-ADC-2798, U.S. National Archives (catalog.archives.gov/id/16601), public domain.\nSources: Charles B. MacDonald, The Siegfried Line Campaign, Chapter XX, US Army Center of Military History (HyperWar transcription); David Sears, When Ernest Hemingway Went From Writer to Fighter, World War II magazine, June 2020 (HistoryNet); Charles T. Lanham, Wikipedia; C. T. Lanham Papers on Ernest Hemingway (C0305), finding aid, Princeton University Library; 22nd Infantry in the Hurtgen Forest, 5th Armored Division Association website.\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\n\n#Shorts #WW2 #OnThisDay #History",
+  "tiktokCaption": "Their charge across the open fields stalled within minutes. Then a flanking battalion came out on the ridge behind the village as night fell.\n\nU.S. Army film of rocket batteries in the Hürtgen Forest, 29 to 30 November 1944.\n\nWould you have charged, or gone around?\n\n#WW2 #OnThisDay #History #HurtgenForest",
+  "tiktokTitle": "The Charge Stalled. The Flank Won: Grosshau, 1944",
+  "hook": "First try failed. By moonlight, it fell.",
+  "thumbnailCheck": "Pass: the first frame is the rocket launchers in the forest clearing with smoke drifting and a crewman moving; at 2 seconds a launcher truck comes into frame. Dim winter light, lifted a little in the cut.",
+  "videoTime": "12:00 America/Denver",
+  "schedule": "Sun 29 Nov 2026, 12:00 p.m. Mountain, all six channels",
+  "scheduled": "Buffer, all six channels, noon 29 Nov"
  }
 }

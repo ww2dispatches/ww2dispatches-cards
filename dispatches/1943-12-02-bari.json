@@ -173,7 +173,12 @@
    "Germany",
    "Italy"
   ],
-  "lens": "us"
+  "lens": "us",
+  "video": {
+   "kind": "Living Card",
+   "opening": "motion",
+   "sound": "silent"
+  }
  },
  "kind": "living",
  "videoTime": "12:00",
@@ -187,5 +192,35 @@
   "license": "British training film, Crown copyright expired; its opening stretch is German film, usable with a caption (Film Library, aircraft recognition index)",
   "shot_notes": "Converted from NARA's WMV to H.264, 7 min 18 s, British narration, run silent. NOON: 01:14 to 01:44, German film: a Ju 88 formation in flight (01:14 to 01:30), a crewman in the glazed nose (01:18), Ju 88s passing low and diving over trees (01:34 to 01:44). Open on the formation at 01:14. 7 P.M. SECOND CUT: 00:54 to 01:12 German film of Ju 88s on their airfield, crews at work and a takeoff, then 01:46 to 02:08 clean low passes and a head on approach. Avoid the titles (00:00 to 00:20) and every stretch with white graphic outlines (02:10 to 02:34 and 02:40 onward).",
   "date_note": "Not film of Bari. German film of Ju 88s and British film of the type, used to show the bombers that made the raid. Caption: German film, from the British training film Recognizing the Ju 88 (1943)."
+ },
+ "video": {
+  "footage": "footage/1943-12-02-bari-noon.mp4",
+  "focusX": 50,
+  "focusY": 50,
+  "sourceUrl": "https://catalog.archives.gov/id/6044531",
+  "note": "Recognizing the Ju 88 (1943), 111-TF-1-3684 (NARA 6044531), German film inside the British training film, run silent. Cut 27 Nov 2026 inside research's noon stretch 01:14 to 01:44: 01:30.65 to 01:31.85 a Ju 88 diving and releasing (opening); 01:21.1 to 01:23.95 a formation in flight; 01:19.5 to 01:20.0 a crewman in the glazed nose; 01:13.1 to 01:15.95 the formation seen past another bomber's tail; 01:33.1 to 01:37.3 bombs falling; 01:41.1 to 01:42.85 bombs bursting on the ground. Left out the harbor aerial at 01:29 (it is not Bari), the close tail markings at 01:17 to 01:18, and the city street at 01:37.5. 4:3 scaled to square. Nothing from the 7 p.m. stretches (00:54 to 01:12, 01:46 to 02:08).",
+  "hook": "One ship in Bari hid 2,000 mustard gas bombs.",
+  "sound": false
+ },
+ "buffer": {
+  "x_film": "6b08f62be94385a8fd6bfd55",
+  "instagram_reel": "6b08f62e776ce21276df7207",
+  "threads_film": "6b08f630062ed764a8dc051c",
+  "facebook_film": "6b08f6321fd46e62e70ab9b6",
+  "youtube": "6b08f644e94385a8fd6c0c4b",
+  "tiktok": "6b08f635776ce21276df7842"
+ },
+ "kit": {
+  "file": "kits/dispatch-110-kit.md",
+  "caption": "The docks were brightly lit and packed with ships when about 105 Ju 88s came in from the east. One of those ships was hiding mustard gas.\n\nGerman film of Ju 88 bombers, from the British training film Recognizing the Ju 88 (1943). Not film of Bari.",
+  "youtubeTitle": "The Bombers Over Bari's Crowded Harbor, 1943 #shorts",
+  "youtubeDescription": "The docks were brightly lit and packed with ships when about 105 Ju 88s came in from the east. One of those ships was hiding mustard gas.\n\nBari, on Italy's Adriatic coast, was the main supply port for the British Eighth Army in December 1943 and home to the headquarters of the new U.S. Fifteenth Air Force. Few expected a German raid. On the evening of 2 December 1943 about 105 Ju 88 bombers of the Luftwaffe's Luftflotte 2 came in from the east. The docks were brightly lit and the harbor was packed with ships. There was no time to get underway. Between 17 and 28 Allied ships were sunk or destroyed, depending on the source. Five were American Liberty ships. One was the SS John Harvey. In secret she carried 2,000 bombs, each filled with 60 to 70 pounds of sulfur mustard, a reserve to answer in kind if Germany used gas first. Hardly anyone ashore knew. Burning debris set her alight and she blew up, killing everyone aboard. Mustard from the broken bombs mixed with the oil on the water and the billowing smoke. Hospitals swamped with casualties left men in their oil soaked clothes. Hours later came burns, blisters and temporary blindness, and patients began to die in ways the doctors could not explain. Lt. Col. Stewart F. Alexander, 29, a U.S. Army doctor trained in chemical warfare, was sent from Allied headquarters in Algiers. By mapping where each man had been and how he was burned, he traced the injuries to mustard. When the diagnosis reached London, Winston Churchill replied that he did not believe there was mustard in Bari. The gas was kept secret, and deaths were recorded as burns due to enemy action. More than 600 military and merchant marine men were treated for mustard exposure, and 83 of them died. Close to 1,000 civilians in the town were also killed in the raid. Alexander's report recorded something new: in the gassed men, white blood cell counts collapsed, and lymphocytes were the first to disappear. That finding fed the postwar push for cancer drugs. Cornelius Rhoads, former medical chief of the Chemical Warfare Service, saw it as a breakthrough. At Memorial Hospital in New York he pushed the search for mustard drugs that could kill cancer cells, and the Sloan Kettering Institute was announced in 1945. Bari did not start chemotherapy alone. At Yale, a dying lymphoma patient had already received the first dose of nitrogen mustard on 27 August 1942, in wartime secrecy. Alexander's report added proof that the poison targeted the cells cancer doctors wanted to kill.\n\nThis is German film of the Ju 88, the bomber type that made the raid, from the British training film Recognizing the Ju 88 (1943): a bomber diving and releasing, a formation in flight, a crewman in the glazed nose, bombs falling and bursting. It is not film of Bari. The film's narration is left out, so the clip runs silent.\n\nFilm: Aircraft Recognition: Recognizing the Ju 88 (1943, British Army Kinematograph Service), U.S. Army training film 111-TF-1-3684, U.S. National Archives (catalog.archives.gov/id/6044531). German film inside a British training film, Crown copyright expired.\nSources: Mustard Disaster at Bari, Defense Health Agency, health.mil (2015); Constance M. Pechura and David P. Rall, eds., Veterans at Risk: The Health Effects of Mustard Gas and Lewisite, Chapter 3, Institute of Medicine, National Academy Press (1993); Jennet Conant, How a Deadly World War II Disaster Led to a Breakthrough in Cancer Treatment, Smithsonian Magazine (2020); Air raid on Bari, Wikipedia; Panos Christakis, The Birth of Chemotherapy at Yale, Yale Journal of Biology and Medicine 84(2), 2011; Stewart Francis Alexander, Wikipedia.\n\nWW2 Dispatches: World War II on this day in history. Battle Lines · Home Front · Blueprint · Statecraft.\n\n#Shorts #WW2 #OnThisDay #History",
+  "tiktokCaption": "The docks were brightly lit and packed with ships when about 105 Ju 88s came in from the east. One of those ships was hiding mustard gas.\n\nGerman film of Ju 88 bombers, from the British training film Recognizing the Ju 88 (1943). Not film of Bari.\n\n#WW2 #OnThisDay #History #Bari",
+  "tiktokTitle": "The Bombers Over Bari's Crowded Harbor, 1943",
+  "hook": "One ship in Bari hid 2,000 mustard gas bombs.",
+  "thumbnailCheck": "Pass: the first frame is a Ju 88 diving against the sky; at 2 seconds a formation of Ju 88s in flight.",
+  "videoTime": "12:00 America/Denver",
+  "schedule": "Wed 2 Dec 2026, 12:00 p.m. Mountain, all six channels",
+  "scheduled": "Buffer, all six channels, noon 2 Dec"
  }
 }
