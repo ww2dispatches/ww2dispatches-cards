@@ -2503,7 +2503,8 @@
     }
     if (HS_IOS && HS_IOS_OTHER && !HS_IOS_CHROME) {
       return head('iPhone · ' + (HS_IOS_NAME === 'your browser' ? 'Browser' : HS_IOS_NAME), 'A few taps, starting with Share.') + '<ol class="hssteps">'
-        + hsStep(1, 'Find <b>Share</b> in ' + (HS_IOS_NAME === 'your browser' ? 'your browser' : HS_IOS_NAME) + '. It is usually in the menu, the <b>three lines</b> or <b>three dots</b> button.')
+        + hsStep(1, HS_IOS_NAME === 'Edge' ? 'Tap the <b>three lines</b> menu in Edge\'s bar, at the bottom or top of your screen, then tap <b>Share</b>.'
+          : 'Find <b>Share</b> in ' + HS_IOS_NAME + '. It is usually in the menu, the <b>three lines</b> or <b>three dots</b> button.')
         + hsStep(2, 'Tap <b>View More</b>, then scroll to the bottom and tap <b>Add to Home Screen</b>.', HS_ART_MORE)
         + hsStep(3, 'Tap <b>Add</b> at the top right. Leave <b>Open as Web App</b> switched on.', HS_ART_ADD) + '</ol>'
         + '<p class="hstip">Can\'t find it? Open this page in Safari and follow the Safari steps. They work on every iPhone.</p>' + done;
