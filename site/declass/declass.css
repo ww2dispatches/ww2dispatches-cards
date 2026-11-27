@@ -1340,6 +1340,7 @@ html.ztrial #stage2{cursor:zoom-in}
 .hsarrow{position:fixed;left:0;right:0;z-index:61;display:flex;flex-direction:column;align-items:center;gap:2px;pointer-events:none;font-family:var(--type);font-size:14px;color:#D9A93E;text-shadow:0 1px 3px #000}
 .hsarrow.down{bottom:calc(6px + env(safe-area-inset-bottom,0px))}
 .hsarrow.up{top:calc(6px + env(safe-area-inset-top,0px));align-items:flex-end;padding-right:22px}
+.hsarrow{transition:opacity .2s}.hsarrow.gone{opacity:0}
 .hsarrow svg{width:26px;height:22px;fill:none;stroke:#D9A93E;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;animation:hsbob 1.2s ease-in-out infinite}
 .hsarrow.down svg{animation-name:hsbobdown}
 @keyframes hsbob{50%{transform:translateY(-4px)}}

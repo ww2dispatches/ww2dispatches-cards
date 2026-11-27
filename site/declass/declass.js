@@ -2418,7 +2418,9 @@
   const HS_UA = navigator.userAgent || '';
   const HS_IPAD = /iPad/.test(HS_UA) || (/Macintosh/.test(HS_UA) && navigator.maxTouchPoints > 1);
   const HS_IOS = /iPhone|iPod/.test(HS_UA) || HS_IPAD;
-  const HS_IOS_OTHER = HS_IOS && /CriOS|EdgiOS|FxiOS|OPiOS/.test(HS_UA); // Chrome, Edge, Firefox on iPhone: Share is at the top
+  const HS_IOS_OTHER = HS_IOS && /CriOS|EdgiOS|FxiOS|OPiOS/.test(HS_UA); // any iPhone browser that isn't Safari
+  const HS_IOS_CHROME = HS_IOS && /CriOS/.test(HS_UA); // Chrome on iPhone: Share is at the right end of the address bar
+  const HS_IOS_NAME = /EdgiOS/.test(HS_UA) ? 'Edge' : /FxiOS/.test(HS_UA) ? 'Firefox' : /OPiOS/.test(HS_UA) ? 'Opera' : 'your browser';
   const HS_ANDROID = /Android/.test(HS_UA);
   const HS_MAC_SAFARI = !HS_IOS && /Macintosh/.test(HS_UA) && /Safari/.test(HS_UA) && !/Chrome|Chromium|Edg\/|Firefox/.test(HS_UA);
   const HS_DESKTOP_ONE_TAP = !HS_IOS && !HS_ANDROID && /Chrome|Edg\//.test(HS_UA);
@@ -2483,7 +2485,7 @@
     + '<text x="56" y="41" text-anchor="middle" font-family="Georgia,serif" font-size="7" fill="#6B6354">or</text>'
     + '<rect x="1" y="44" width="110" height="32" rx="16" fill="#3a332b" stroke="#6a5c4a"/><circle cx="20" cy="60" r="12" ' + HS_LIT + '/><path d="M14 55 h12 M14 60 h12 M14 65 h8" stroke="#1A1612" stroke-width="1.7" stroke-linecap="round"/><text x="38" y="63" font-family="Georgia,serif" font-size="8.5" fill="#EDE4CF">ww2dispatches…</text></svg>';
   const HS_ART_TOPBAR = '<svg class="hsart" width="104" height="40" viewBox="0 0 104 40" role="img" aria-label="The address bar with the Share button lit at its right end"><rect x="1" y="6" width="102" height="28" rx="14" fill="#3a332b" stroke="#6a5c4a"/><text x="40" y="24" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="#EDE4CF">ww2dispatches…</text><circle cx="88" cy="20" r="12" ' + HS_LIT + '/><g transform="translate(88 21) scale(.85)">' + HS_SHARE_ICON + '</g></svg>';
-  const HS_ART_MORE = '<svg class="hsart" width="104" height="86" viewBox="0 0 104 86" role="img" aria-label="The share sheet: View More lit in the row of round buttons, then Add to Home Screen lit at the bottom of the list"><rect x="1" y="1" width="102" height="84" rx="10" fill="#2a2621" stroke="#6a5c4a"/><circle cx="16" cy="15" r="8" fill="#4a443c"/><circle cx="38" cy="15" r="8" fill="#4a443c"/><circle cx="60" cy="15" r="8" fill="#4a443c"/><circle cx="84" cy="15" r="10" ' + HS_LIT + '/><path d="M80 13 L84 17 L88 13" fill="none" stroke="#1A1612" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><text x="84" y="34" text-anchor="middle" font-family="Georgia,serif" font-size="6.5" font-weight="700" fill="#D9A93E">View More</text><rect x="7" y="40" width="90" height="11" rx="3" fill="#4a443c"/><text x="12" y="48" font-family="Georgia,serif" font-size="6.5" fill="#d9cfb8">Find on Page</text><rect x="5" y="56" width="94" height="22" rx="5" ' + HS_LIT + '/><rect x="10" y="61" width="11" height="11" rx="2.5" fill="none" stroke="#1A1612" stroke-width="1.3"/><path d="M15.5 63.5 v6 M12.5 66.5 h6" stroke="#1A1612" stroke-width="1.3"/><text x="26" y="70" font-family="Georgia,serif" font-size="8" font-weight="700" fill="#1A1612">Add to Home Screen</text></svg>';
+  const HS_ART_MORE = '<svg class="hsart" width="104" height="86" viewBox="0 0 104 86" role="img" aria-label="The share sheet: View More lit in the row of round buttons, then Add to Home Screen lit at the bottom of the list"><rect x="1" y="1" width="102" height="84" rx="10" fill="#2a2621" stroke="#6a5c4a"/><circle cx="16" cy="15" r="8" fill="#4a443c"/><circle cx="38" cy="15" r="8" fill="#4a443c"/><circle cx="60" cy="15" r="8" fill="#4a443c"/><circle cx="84" cy="15" r="10" ' + HS_LIT + '/><path d="M80 13 L84 17 L88 13" fill="none" stroke="#1A1612" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><text x="80" y="34" text-anchor="middle" font-family="Georgia,serif" font-size="6.5" font-weight="700" fill="#D9A93E">View More</text><rect x="7" y="40" width="90" height="11" rx="3" fill="#4a443c"/><text x="12" y="48" font-family="Georgia,serif" font-size="6.5" fill="#d9cfb8">Find on Page</text><rect x="5" y="56" width="94" height="22" rx="5" ' + HS_LIT + '/><rect x="10" y="61" width="11" height="11" rx="2.5" fill="none" stroke="#1A1612" stroke-width="1.3"/><path d="M15.5 63.5 v6 M12.5 66.5 h6" stroke="#1A1612" stroke-width="1.3"/><text x="25" y="70" font-family="Georgia,serif" font-size="7.5" font-weight="700" fill="#1A1612" textLength="68" lengthAdjust="spacingAndGlyphs">Add to Home Screen</text></svg>';
   const HS_ROUNDEL = '<rect x="8" y="27" width="20" height="20" rx="5" fill="#17140f"/><circle cx="18" cy="37" r="7.5" fill="#B04A3E"/><circle cx="18" cy="37" r="6.2" fill="none" stroke="#EDE4CF" stroke-width=".7"/><text x="18" y="39" text-anchor="middle" font-family="Oswald,sans-serif" font-size="5" font-weight="700" fill="#EDE4CF">WW2</text>';
   const HS_ART_ADD = '<svg class="hsart" width="104" height="74" viewBox="0 0 104 74" role="img" aria-label="The Add to Home Screen screen with Add lit at the top right and Open as Web App switched on"><rect x="1" y="1" width="102" height="72" rx="10" fill="#2a2621" stroke="#6a5c4a"/><circle cx="13" cy="14" r="6" fill="#4a443c"/><path d="M10.5 11.5 l5 5 M15.5 11.5 l-5 5" stroke="#d9cfb8" stroke-width="1.2"/><rect x="70" y="5" width="28" height="17" rx="8.5" ' + HS_LIT + '/><text x="84" y="16.5" text-anchor="middle" font-family="Georgia,serif" font-size="8.5" font-weight="700" fill="#1A1612">Add</text>' + HS_ROUNDEL + '<text x="33" y="40" font-family="Georgia,serif" font-size="9" fill="#EDE4CF">Declass</text><text x="8" y="63" font-family="Georgia,serif" font-size="7.5" fill="#d9cfb8">Open as Web App</text><rect x="74" y="54" width="22" height="13" rx="6.5" fill="#3f7a4e"/><circle cx="89.5" cy="60.5" r="5" fill="#fff"/></svg>';
   function hsGuideHTML() {
@@ -2499,7 +2501,14 @@
         + hsStep(2, 'Tap <b>View More</b> if you see it, then tap <b>Add to Home Screen</b>.', HS_ART_MORE)
         + hsStep(3, 'Tap <b>Add</b>. Leave <b>Open as Web App</b> switched on.', HS_ART_ADD) + '</ol>' + done;
     }
-    if (HS_IOS && HS_IOS_OTHER) {
+    if (HS_IOS && HS_IOS_OTHER && !HS_IOS_CHROME) {
+      return head('iPhone · ' + (HS_IOS_NAME === 'your browser' ? 'Browser' : HS_IOS_NAME), 'A few taps, starting with Share.') + '<ol class="hssteps">'
+        + hsStep(1, 'Find <b>Share</b> in ' + (HS_IOS_NAME === 'your browser' ? 'your browser' : HS_IOS_NAME) + '. It is usually in the menu, the <b>three lines</b> or <b>three dots</b> button.')
+        + hsStep(2, 'Tap <b>View More</b>, then scroll to the bottom and tap <b>Add to Home Screen</b>.', HS_ART_MORE)
+        + hsStep(3, 'Tap <b>Add</b> at the top right. Leave <b>Open as Web App</b> switched on.', HS_ART_ADD) + '</ol>'
+        + '<p class="hstip">Can\'t find it? Open this page in Safari and follow the Safari steps. They work on every iPhone.</p>' + done;
+    }
+    if (HS_IOS && HS_IOS_CHROME) {
       return head('iPhone · Chrome', 'A few taps, starting at the top of your screen.') + '<ol class="hssteps">'
         + hsStep(1, 'Tap <b>Share</b> at the right end of the address bar.', HS_ART_TOPBAR)
         + hsStep(2, 'Tap <b>View More</b>, then scroll to the bottom and tap <b>Add to Home Screen</b>.', HS_ART_MORE)
@@ -2540,12 +2549,14 @@
     }
     sheet(hsGuideHTML());
     const out = $('hsOut'); if (out) out.href = openOutHref(outLink(true));
-    if (!IN_APP && HS_IOS) {
-      const up = HS_IOS_OTHER || HS_IPAD, a = document.createElement('div');
+    if (!IN_APP && HS_IOS && (!HS_IOS_OTHER || HS_IOS_CHROME)) {
+      const up = HS_IOS_CHROME || HS_IPAD, a = document.createElement('div');
       a.id = 'hsArrow'; a.className = 'hsarrow ' + (up ? 'up' : 'down');
       a.innerHTML = up ? '<svg viewBox="0 0 26 22" aria-hidden="true"><path d="M13 20 V4 M5 11 L13 3 L21 11"/></svg><span>Share is up here</span>'
         : '<span>Safari\'s buttons are just below</span><svg viewBox="0 0 26 22" aria-hidden="true"><path d="M13 2 V18 M5 11 L13 19 L21 11"/></svg>';
       $('sheet').appendChild(a);
+      // The card scrolls under the arrow, so the arrow steps aside once the guide is scrolled.
+      $('sheet').onscroll = () => { const ar = $('hsArrow'); if (ar) ar.classList.toggle('gone', $('sheet').scrollTop > 12); };
     }
   }
   document.querySelectorAll('[data-hs]').forEach(b => { b.onclick = () => { closeHow(); openInstall(); }; });
