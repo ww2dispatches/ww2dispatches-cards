@@ -42,6 +42,8 @@ Written by the Map Room chat: what to build or fix and why, one item each, dated
 
 * **28 Nov 2026, latest: the withdrawal arrow goes in the spot the block leaves (Brian's idea; replaces the clear arrow search just above).** Order: the block fades over about 1.5 s; as it fades, the pencil draws a small arrow inside the block's own footprint (about 0.8 of a block long, centred on where the block stood, pointing `toward` or the side's rear, same pencil and arrowhead); hold about half a second; then the arrow fades. It can never be covered, so drop the 45 degree turning and the NOTE. The X for `destroyed` or `surrendered` stays as it is (X across the block, then the slow fade). Rule updated in `map-room/FORMAT.md`. **Re-render Days 6 and 8** so both match, and stop for Brian.
 
+* **28 Nov 2026, the arrow and the X are black, not red (Brian).** Red is only ever the front line, so viewers never confuse a mark with the line. Draw the withdrawal arrow (solid) and the destroyed or surrendered X in the same black as the air tracks, same width and speed. Rule in `map-room/FORMAT.md`. Fold this into the footprint arrow request above, then **re-render Days 6 and 8** and stop for Brian.
+
 ## Done
 Written by the desktop: what changed, the commit, where the test clip is.
 
