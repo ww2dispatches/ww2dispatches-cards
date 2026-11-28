@@ -8,17 +8,22 @@
  "toleranceKm": 10.0,
  "units": [
   {
+   "unit": "2ad",
+   "result": "record [5.705, 50.255]  reader [5.63, 50.25]  5 km  ok  note: Open (not hatched) armor oval XX box labelled 2, just north of the front near La Roche, beside 84 and the US 3d Armored.",
+   "km": 5.4
+  },
+  {
    "unit": "51hd",
-   "result": "record [5.56, 50.195]  reader [5.44, 50.23]  9 km  ok  note: Unsure. A dashed (British) division box near Marche, inside the XXX Corps area, shows only the digit 5; a second digit, if any, falls where the 5.5E grid line and the Ourthe cross and cannot be read. No other box labeled 51 appears anywhere on the map. A division box at the far west edge near 4.4E 50.9N is cut off and unreadable. Treat this as a possible, not confirmed, match.",
+   "result": "record [5.56, 50.195]  reader [5.44, 50.23]  9 km  ok  note: Dashed corner XX symbol near Marche labelled 5, with the next digit apparently hidden under the thick 5.5E grid line. It matches the style and spot of the symbol labelled 51 on the 9 Jan map, but I cannot read the 1 here, so treat the identification as likely, not certain.",
    "km": 9.4
   }
  ],
  "line": {
-  "worstKm": 4.9,
+  "worstKm": 6.2,
   "over": []
  },
  "readerNotes": {
-  "line": "Traced along the heavy ticked line: enters at the top near 5.91E, dips west to about 5.78E then runs east along about 51.0N, down the Roer past Duren to Monschau, west along about 50.4N to Stavelot, around the shrinking bulge tip near St. Hubert, back east past Bastogne and along the Sauer, down the Moselle to Remich, then along the Saar past Merzig and off the east edge near 49.22N. The straight unticked line running southwest from the Saar toward St. Avold is a boundary and was left out. Points were sampled at even spacing along the line."
+  "line": "Line enters at the north edge near 5.90E 51.17N, runs along the Roer front past Julich and Duren, south past Monschau, around the shrinking Bulge (Stavelot, north of La Roche, west tip about 5.30E 50.09N southwest of Marche, south past St Hubert), around the Bastogne salient, east along the Sure to the Moselle near Remich, then the Saar front past Saarlautern, leaving the east edge about 6.84E 49.21N. A thick line west from the Bulge toward Rochefort and Philippeville is the Twenty One / Twelfth army group boundary and was left out. A thinner line running south from near Saarlautern toward St Avold looks like a boundary and was left out. Near Monschau the line runs close to the double hatched line and is harder to separate."
  },
  "sentBack": []
 }

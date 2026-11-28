@@ -96,6 +96,8 @@ A roster of 15 to 25 units suits a land battle of this size. Divisions are the n
 ### Spacing
 Blocks are 10 km across, and real divisions often stood 5 to 10 km apart. The engine nudges blocks apart by up to 5 km each so none overlap, keeping each on its own side of the line. If a stretch of front is too crowded even for that, the checker says so and names the units. The fix is to show their corps as one block there, not to move anyone to a false position.
 
+**Crowding exception (decided 27 Nov 2026, Bulge fact check).** A block may stand a little further from its map symbol than the fact check's one block limit only when the map's own spot is taken by neighbouring blocks. All of these must hold: it is no more than 2 blocks (20 km) off; it stays on its own side of the line, in the same sector and next to the same neighbours; it lasts only until the ground clears; and the record's sources for that block's last move or shift say "crowding exception" and name the blocks in the way. Past 20 km, or if the block ends up in another unit's sector, the corps block rule above applies. The fact check lists every exception by name, so nothing is waved through without being seen.
+
 ## The fact check
 Nothing is rendered until every day passes all three parts. The Map Room chat runs them in its position check step, straight after the build sitting, and never changes a position itself: anything wrong goes back to the Campaign Series chat with the evidence.
 

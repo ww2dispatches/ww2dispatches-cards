@@ -34,8 +34,8 @@
   },
   {
    "unit": "2ad",
-   "result": "record [5.45, 50.285]  reader [5.67, 50.24]  16 km  DIFFERS  note: Armor oval box labelled 2(+).",
-   "km": 16.5
+   "result": "record [5.705, 50.255]  reader [5.67, 50.24]  3 km  ok  note: Armor oval box labelled 2(+).",
+   "km": 3.0
   },
   {
    "unit": "30id",
@@ -44,13 +44,13 @@
   },
   {
    "unit": "3ad",
-   "result": "record [5.64, 50.315]  reader [5.7, 50.28]  6 km  ok  note: Armor oval box labelled 3(+).",
-   "km": 5.8
+   "result": "record [5.83, 50.36]  reader [5.7, 50.28]  13 km  DIFFERS  note: Armor oval box labelled 3(+).",
+   "km": 12.8
   },
   {
    "unit": "4ad",
-   "result": "record [5.69, 49.905]  reader [5.72, 50.0]  11 km  DIFFERS  note: Division box numbered 4 just south of the 101st; inner symbol partly crossed by a boundary line, looks like an armor oval. Not the infantry 4 near Luxembourg at about 6.31E 49.77N.",
-   "km": 10.7
+   "result": "record [5.585, 49.88]  reader [5.72, 50.0]  16 km  DIFFERS  note: Division box numbered 4 just south of the 101st; inner symbol partly crossed by a boundary line, looks like an armor oval. Not the infantry 4 near Luxembourg at about 6.31E 49.77N.",
+   "km": 16.4
   },
   {
    "unit": "51hd",
@@ -64,8 +64,8 @@
   },
   {
    "unit": "6ad",
-   "result": "record [5.835, 49.88]  reader [5.72, 49.95]  11 km  DIFFERS",
-   "km": 11.3
+   "result": "record [5.725, 49.915]  reader [5.72, 49.95]  4 km  ok",
+   "km": 3.9
   },
   {
    "unit": "6pa",
@@ -79,13 +79,13 @@
   },
   {
    "unit": "82ab",
-   "result": "record [5.8, 50.39]  reader [5.8, 50.49]  11 km  DIFFERS",
-   "km": 11.1
+   "result": "record [5.78, 50.5]  reader [5.8, 50.49]  2 km  ok",
+   "km": 1.8
   },
   {
    "unit": "84id",
-   "result": "record [5.29, 50.24]  reader [5.56, 50.26]  19 km  DIFFERS",
-   "km": 19.4
+   "result": "record [5.56, 50.287]  reader [5.56, 50.26]  3 km  ok",
+   "km": 3.0
   },
   {
    "unit": "iii",
@@ -108,13 +108,10 @@
  "sentBack": [
   "18vg",
   "26vg",
-  "2ad",
+  "3ad",
   "4ad",
-  "6ad",
   "6pa",
   "7a",
-  "82ab",
-  "84id",
   "iii",
   "v"
  ]

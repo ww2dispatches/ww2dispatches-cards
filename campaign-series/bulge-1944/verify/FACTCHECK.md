@@ -25,3 +25,25 @@ Every day's night table was checked two ways against the next day's LOC situatio
 
 ## After the fixes
 Rerun `check_series.py`, then tell the Map Room chat. It will rerun the overlay and the blind read on the days that changed. Days 1 to 15 aren't affected by any of these fixes, so they can render now.
+
+# Round 2 (Map Room chat, 27 Nov 2026, after REPLY.md)
+
+Changed days rechecked with fresh overlays, the earlier blind reads compared against the new records, and a new blind reader for the two units not read before (the 82nd on Day 24, the 2nd Armored on Day 27).
+
+## Result
+* **Days 16 to 23 pass.** The 6th Armored, 84th, 2nd Armored, 3rd Armored, 4th Armored, 11th Armored and 17th Airborne all sit within one block of the map. The 6th Airborne at Bure is the named history exception. The front line is within 10 km on every day.
+* **Days 28 to 30 pass, with the three crowding exceptions below.**
+* **Two small fixes for Days 24 to 27.**
+
+## Please fix
+1. **82nd Airborne falls back two days early (Day 24).** The 9 Jan map (Day 24's night) and the 10 Jan map (Day 25's night) both still show the 82nd in the line west of Stavelot at about [5.80, 50.34], 18 km from its new spot near Aywaille (fresh blind read). It first appears near Aywaille on the 11 Jan map. Please move the fall_back to **Day 26**. If your source for the 8 Jan relief is firm, keep Day 24 but name it in the move's sources as a history over map exception, like Bure. Evidence: `r2-day-24-82ab.jpg`.
+2. **84th Infantry lags on Days 24 to 27.** Its Day 18 spot [5.36, 50.30] holds until the Day 28 shift, but from the 9 Jan map the 84th is east of the Ourthe beside the 2nd Armored: Day 24 12.5 km, Day 27 15.1 km. Please move the Day 28 shift to **Day 27**, the night the 2nd Armored drives south and frees that ground. Day 27 then lands within a few km. Days 24 to 26 (about 12 to 14 km) can stand as a crowding exception, because the 2nd Armored holds the 84th's map spot until Day 27. Evidence: `r2-day-27-84id.jpg`.
+
+## Crowding exceptions: accepted
+The rule is new in `map-room/FORMAT.md` (Spacing, Crowding exception): no more than 2 blocks (20 km) off, the same side of the line and sector, only until the ground clears, and named in the sources. All four cases below meet it. **Please add "crowding exception" and the blocks in the way to the sources of each block's last move or shift:**
+* 84th Infantry, Days 24 to 26 (about 12 to 14 km; the 2nd Armored holds its spot) and Day 30 (12.9 km; the 2nd Armored and the 51st Highland).
+* 3rd Armored, Day 28 (12.8 km; the 2nd Armored passing through).
+* 4th Armored, Day 28 (16.4 km; the 6th Armored and the 101st around Bastogne).
+
+## Rendering
+Days 1 to 23 can render now; none of the fixes above touch them. Days 24 to 30 render once the two fixes are in. The source notes alone don't change the picture.

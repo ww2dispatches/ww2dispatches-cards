@@ -34,8 +34,8 @@
   },
   {
    "unit": "2ad",
-   "result": "record [5.45, 50.285]  reader [5.6, 50.29]  11 km  DIFFERS  note: XX oval box labeled 2 (+), north face of the bulge",
-   "km": 10.7
+   "result": "record [5.55, 50.32]  reader [5.6, 50.29]  5 km  ok  note: XX oval box labeled 2 (+), north face of the bulge",
+   "km": 4.9
   },
   {
    "unit": "2pz",
@@ -49,13 +49,13 @@
   },
   {
    "unit": "3ad",
-   "result": "record [5.64, 50.315]  reader [5.74, 50.29]  8 km  ok  note: XX oval box labeled 3, just east of the 2 (+) armored box on the north face of the bulge",
-   "km": 7.7
+   "result": "record [5.695, 50.36]  reader [5.74, 50.29]  8 km  ok  note: XX oval box labeled 3, just east of the 2 (+) armored box on the north face of the bulge",
+   "km": 8.4
   },
   {
    "unit": "4ad",
-   "result": "record [5.69, 49.905]  reader [5.65, 49.93]  4 km  ok  note: XX oval box labeled 4, south of Bastogne",
-   "km": 4.0
+   "result": "record [5.585, 49.88]  reader [5.65, 49.93]  7 km  ok  note: XX oval box labeled 4, south of Bastogne",
+   "km": 7.2
   },
   {
    "unit": "6abr",
@@ -64,8 +64,8 @@
   },
   {
    "unit": "6ad",
-   "result": "record [5.835, 49.88]  reader [5.7, 49.99]  16 km  DIFFERS  note: XX oval box labeled 6, just south of the 101 AB box",
-   "km": 15.5
+   "result": "record [5.725, 49.915]  reader [5.7, 49.99]  8 km  ok  note: XX oval box labeled 6, just south of the 101 AB box",
+   "km": 8.5
   },
   {
    "unit": "6pa",
@@ -79,13 +79,13 @@
   },
   {
    "unit": "82ab",
-   "result": "record [5.8, 50.39]  reader [5.81, 50.34]  6 km  ok  note: AB box labeled 82 (+), north face of the bulge",
-   "km": 5.6
+   "result": "record [5.84, 50.42]  reader [5.81, 50.34]  9 km  ok  note: AB box labeled 82 (+), north face of the bulge",
+   "km": 9.1
   },
   {
    "unit": "84id",
-   "result": "record [5.29, 50.24]  reader [5.49, 50.3]  16 km  DIFFERS  note: XX infantry box labeled 84 (+/-), north face of the bulge west of the 2 (+) box",
-   "km": 15.8
+   "result": "record [5.36, 50.3]  reader [5.49, 50.3]  9 km  ok  note: XX infantry box labeled 84 (+/-), north face of the bulge west of the 2 (+) box",
+   "km": 9.3
   },
   {
    "unit": "9pz",
@@ -113,12 +113,9 @@
  "sentBack": [
   "18vg",
   "26vg",
-  "2ad",
   "6abr",
-  "6ad",
   "6pa",
   "7a",
-  "84id",
   "iii",
   "v"
  ]

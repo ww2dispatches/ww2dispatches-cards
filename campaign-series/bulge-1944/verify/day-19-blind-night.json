@@ -8,14 +8,14 @@
  "toleranceKm": 10.0,
  "units": [
   {
-   "unit": "2ad",
-   "result": "record [5.45, 50.285]  reader [5.55, 50.3]  7 km  ok  note: Armor oval with XX marked 2(+), just north of the line near Hotton; the box is partly covered by a grid label.",
-   "km": 7.3
+   "unit": "3ad",
+   "result": "record [5.695, 50.36]  reader [5.64, 50.33]  5 km  ok  note: Armor oval with XX marked 3 with (+) above, north of the line between Hotton and Manhay (box center reads about 50.325N).",
+   "km": 5.1
   },
   {
-   "unit": "3ad",
-   "result": "record [5.64, 50.315]  reader [5.64, 50.33]  2 km  ok  note: Armor oval with XX marked 3 with (+) above, north of the line between Hotton and Manhay (box center reads about 50.325N).",
-   "km": 1.7
+   "unit": "2ad",
+   "result": "record [5.55, 50.32]  reader [5.55, 50.3]  2 km  ok  note: Armor oval with XX marked 2(+), just north of the line near Hotton; the box is partly covered by a grid label.",
+   "km": 2.2
   }
  ],
  "line": {
