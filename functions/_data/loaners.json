@@ -1,5 +1,5 @@
 {
- "note": "Loaner cards: real but undated kinds of strength, used in every campaign. This is the test bench's set (5 Nov 2026), provisional until the loaner sets for each side and branch are designed alongside the backfill (Campaigns Build doc). Loaners carry the steel edge and are never collected.",
+ "note": "Loaner cards: real but undated kinds of strength, used in every campaign. Loaners carry the steel edge and are never collected, and none is above 4. The Allied land set was approved by Brian on 27 Nov 2026 for January (Bastogne) and February (Anzio): seven machines and seven operations, 1 to 4; troops are operations, so they leave with the machine they ride on. The air, sea, Home Front, and Statecraft loaners are still the test bench's set (5 Nov 2026) until those branches are designed alongside the backfill.",
  "loaners": [
   {
    "id": "a-radar-picket",
@@ -145,6 +145,106 @@
    "id": "an-infantry-division-attacks",
    "side": "allied",
    "title": "An infantry division attacks",
+   "series": "battle",
+   "value": 4,
+   "branches": [
+    "land"
+   ]
+  },
+  {
+   "id": "a-dug-in-machine-gun",
+   "side": "allied",
+   "title": "A dug in machine gun",
+   "series": "blue",
+   "value": 1,
+   "branches": [
+    "land"
+   ]
+  },
+  {
+   "id": "an-antitank-gun-section",
+   "side": "allied",
+   "title": "An antitank gun section",
+   "series": "blue",
+   "value": 2,
+   "branches": [
+    "land"
+   ]
+  },
+  {
+   "id": "a-tank-destroyer-platoon",
+   "side": "allied",
+   "title": "A tank destroyer platoon",
+   "series": "blue",
+   "value": 2,
+   "branches": [
+    "land"
+   ]
+  },
+  {
+   "id": "bazookas-in-numbers",
+   "side": "allied",
+   "title": "Bazookas in numbers",
+   "series": "blue",
+   "value": 3,
+   "branches": [
+    "land"
+   ]
+  },
+  {
+   "id": "howitzers-in-mass-production",
+   "side": "allied",
+   "title": "Howitzers in mass production",
+   "series": "blue",
+   "value": 4,
+   "branches": [
+    "land"
+   ]
+  },
+  {
+   "id": "a-bazooka-team-stalks-a-tank",
+   "side": "allied",
+   "title": "A bazooka team stalks a tank",
+   "series": "battle",
+   "value": 1,
+   "branches": [
+    "land"
+   ]
+  },
+  {
+   "id": "a-night-patrol",
+   "side": "allied",
+   "title": "A night patrol",
+   "series": "battle",
+   "value": 2,
+   "branches": [
+    "land"
+   ]
+  },
+  {
+   "id": "a-rifle-company-holds-a-village",
+   "side": "allied",
+   "title": "A rifle company holds a village",
+   "series": "battle",
+   "value": 2,
+   "branches": [
+    "land"
+   ]
+  },
+  {
+   "id": "a-battalion-counterattacks",
+   "side": "allied",
+   "title": "A battalion counterattacks",
+   "series": "battle",
+   "value": 3,
+   "branches": [
+    "land"
+   ]
+  },
+  {
+   "id": "a-division-holds-the-line",
+   "side": "allied",
+   "title": "A division holds the line",
    "series": "battle",
    "value": 4,
    "branches": [
