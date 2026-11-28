@@ -138,10 +138,35 @@ def check(s):
                 for k in range(1, 40):
                     q = (a[0] + (b[0] - a[0]) * k / 40, a[1] + (b[1] - a[1]) * k / 40)
                     if S.cheb(q, pv) < s.block * 0.9: E(f"move {u}: passes through {v} ({s.units[v]['label']}) on the way; list it under drives, or check the positions"); break
+        if any(m.get('move') == 'arrive' for m in mvs):
+            for e in arrive_errors(s, i): E(e)
         ok, bad = s.fits(d)
         if not ok: E(f"the day's moves do not fit one focus ({', '.join(bad)} would be outside the close view); pick one story for the day")
         if not mvs and i > 0 and not mr.get('shifts') and line == d['lineAM']:
             s.notes.setdefault(i, []).append('nothing changes on the table today: a balcony only clip with the line unchanged; confirm the front really held still')
+
+def arrive_errors(s, i):
+    """the arrive moves of day i, tested on the path the engine draws: the day's close table is built as the renderer
+    builds it (series.compile, then day.Day with that table), and every block's place is sampled through each arrive,
+    from arrive_start at the frame edge to its spot, so blocks that moved earlier are met where they now stand"""
+    import tempfile
+    out = []
+    with tempfile.TemporaryDirectory() as tmp:
+        res = s.compile(i, tmp); old = os.environ.get('MAPROOM_TABLE'); os.environ['MAPROOM_TABLE'] = res['table']
+        try: d = D.Day(res['close'])
+        finally:
+            if old is None: os.environ.pop('MAPROOM_TABLE', None)
+            else: os.environ['MAPROOM_TABLE'] = old
+    ground = [p for p in d.pieces if p['type'] not in AIR]
+    for p in ground:
+        sl = d.slot(p['id']) if p['move'] == 'arrive' else None
+        if sl is None: continue
+        for k in range(1, 80):                                      # the start is off the frame, the end is its spot
+            t = sl['t_move'] + (sl['t_end'] - sl['t_move']) * k / 80; a = d.pos(p, t)
+            hit = next((q for q in ground if q is not p and (b := d.pos(q, t)) is not None
+                        and max(abs(a[0] - b[0]), abs(a[1] - b[1])) < D.BS * 0.9), None)
+            if hit: out.append(f"arrive {p['id']}: passes through {hit['id']} on the way in; pick another enters edge, or check the positions"); break
+    return out
 
 if __name__ == '__main__':
     s = S.Series(sys.argv[1]); s.notes = {}; re_ = roster_errors(s); check(s)
