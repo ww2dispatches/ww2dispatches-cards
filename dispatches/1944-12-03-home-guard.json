@@ -139,9 +139,9 @@
   }
  ],
  "photo": "photos/1944-12-03-home-guard.jpg",
- "photoUrl": "https://www.iwm.org.uk/collections/search?query=home%20guard%20stand%20down%20hyde%20park&filters%5BwebCategory%5D%5BPhotographs%5D=on",
- "photoNote": "PHOTO NOT FETCHED. Tier: green when found. Wanted: an IWM War Office official photograph (H series, Crown copyright expired, not an HU press number) of the Hyde Park stand down parade, 3 December 1944, ideally the King taking the salute or a close column of older Home Guards marching past. The IWM site sits behind a Cloudflare check that blocks both the shell and WebFetch, and I found no stand down photo on Wikimedia Commons (its Home Guard category holds IWM H numbers only up to H 39707, July 1944). Leads to check on iwm.org.uk: War Office official photos H 40953, H 40954 (dated 1 December 1944), H 40956 and H 40957 (object pages 205216344, 205216345, 205216347, 205216348), which surfaced in a search for the stand down but whose captions could not be read; the Hyde Park parade itself should sit just after them in the H 409xx to H 410xx range. Do not use the Geoff Charles Welshpool stand down photos on Commons (National Library of Wales, CC BY SA 4.0, not green) or the 14 May 1944 anniversary parade photos often mixed up with the stand down. Fallback if no H photo turns up: a frame from the Universal Newsreel of 27 December 1944 on Commons (NARA, public domain), which shows the Hyde Park march past.",
- "photoCredit": "Home Guard stand down parade, Hyde Park, London, 3 December 1944. Imperial War Museums, War Office official photograph (number to confirm), public domain (Crown copyright expired).",
+ "photoUrl": "https://commons.wikimedia.org/wiki/File:King_George_VI_talking_to_a_member_of_the_Home_Guard_during_an_inspection_in_Kent,_10_August_1940._H2936.jpg",
+ "photoNote": "Tier: green. Friday cards run, 27 Nov 2026: no stand down photo could be fetched (IWM blocks the workspace; Commons has none), and the bank holds only off date Axis Spec Sheets, so the card uses IWM H 2936 from Wikimedia Commons (1280 px thumbnail): the King with Home Guard volunteers in Kent, 10 August 1940, a related photo from four years earlier, said plainly in the credit and caption. Flagged to Brian; if he supplies an IWM H series photo of the Hyde Park parade, swap it in. Research's original note: PHOTO NOT FETCHED. Tier: green when found. Wanted: an IWM War Office official photograph (H series, Crown copyright expired, not an HU press number) of the Hyde Park stand down parade, 3 December 1944, ideally the King taking the salute or a close column of older Home Guards marching past. The IWM site sits behind a Cloudflare check that blocks both the shell and WebFetch, and I found no stand down photo on Wikimedia Commons (its Home Guard category holds IWM H numbers only up to H 39707, July 1944). Leads to check on iwm.org.uk: War Office official photos H 40953, H 40954 (dated 1 December 1944), H 40956 and H 40957 (object pages 205216344, 205216345, 205216347, 205216348), which surfaced in a search for the stand down but whose captions could not be read; the Hyde Park parade itself should sit just after them in the H 409xx to H 410xx range. Do not use the Geoff Charles Welshpool stand down photos on Commons (National Library of Wales, CC BY SA 4.0, not green) or the 14 May 1944 anniversary parade photos often mixed up with the stand down. Fallback if no H photo turns up: a frame from the Universal Newsreel of 27 December 1944 on Commons (NARA, public domain), which shows the Hyde Park march past.",
+ "photoCredit": "King George VI talks with Home Guard volunteers during an inspection in Kent, 10 August 1940 (not the stand down parade). Imperial War Museums H 2936, War Office official photograph, public domain (Crown copyright expired).",
  "videoPhotos": [
   {
    "page": "https://commons.wikimedia.org/wiki/File:1944-12-27_Yanks_Clear_Greenland_of_Nazis.ogv",
@@ -191,5 +191,16 @@
    "Britain"
   ],
   "lens": "commonwealth"
- }
+ },
+ "focusX": 50,
+ "focusY": 40,
+ "zoom": 100,
+ "body": "More than 1.5 million Britons volunteered to fight an invasion that never came. On this Sunday they paraded for the last time.\n\n3 December 1944. The Home Guard stood down with final parades across the country. In Hyde Park about 7,000 officers and men, from every unit in Britain, marched past King George VI, their Colonel in Chief, with the Queen and the two princesses beside him. At 9 p.m. the King broadcast his thanks.\n\nIt was not without cost: 1,206 members were killed on duty or died of wounds, many from bombs and rockets. That same autumn Germany went the other way, ordering males from 16 to 60 into the Volkssturm.\n\nAbove, the King with Home Guard volunteers in Kent, August 1940.",
+ "addons": [
+  "Did anyone in your family serve in the Home Guard?"
+ ],
+ "hashtags": "#OnThisDay #WW2",
+ "threads": "More than 1.5 million Britons volunteered to fight an invasion that never came. On this Sunday they paraded for the last time.\n\n3 December 1944. About 7,000 men of the Home Guard marched past King George VI in Hyde Park. 1,206 members had been killed on duty or died of wounds.\n\nDid anyone in your family serve in the Home Guard?",
+ "question": true,
+ "declass_line": false
 }
