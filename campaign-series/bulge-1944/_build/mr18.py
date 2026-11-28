@@ -11,7 +11,7 @@ MR={}
 m16,m17=M("16 Dec 1944"),M("17 Dec 1944")
 MR[1]=dict(asOf="2400 hrs, 16 Dec 1944",map=m17,lineStart=LINE_START,lineStartSources=[m16,C+", pp. 75 to 80 and Map I"],
  line=LINES[1],lineSources=[m17,C+", pp. 179 to 191"],
- set=[st("v",(6.20,50.47),[m16]),st("28id",(5.99,50.01),[m16]),st("106id",(6.22,50.27),[m16]),st("18vg",(6.49,50.39),[m16]),
+ set=[st("v",(6.20,50.505),[m16,"Set about 3.5 km north of the map symbol so the Sixth Panzer Army block, arriving on Day 2, does not slide across it"]),st("28id",(5.99,50.01),[m16]),st("106id",(6.22,50.27),[m16]),st("18vg",(6.49,50.39),[m16]),
       st("2pz",(6.61,50.07),[m16]),st("7a",(6.51,49.93),[m16,"Shown at the 352d Volksgrenadier Division, the Seventh Army's right"])],
  moves=[mv("2pz","advance",(6.12,50.07),1,[C+", pp. 184 to 186 (Marnach falls; the Germans press toward Clerf)",m17])],
  shifts=[sh("106id",(6.14,50.28),[m17,C+", p. 156"])],
@@ -20,7 +20,7 @@ m18=M("18 Dec 1944")
 MR[2]=dict(asOf="2400 hrs, 17 Dec 1944",map=m18,line=LINES[2],lineSources=[m18,C+", pp. 260 to 263"],
  set=[st("26vg",(6.15,49.98),[m18,C+", pp. 182 to 184 (the map shows the division near Prüm; Cole puts it at the Our crossings near Gemünd)"])],
  moves=[mv("6pa","arrive",(5.98,50.40),1,[C+", pp. 260 to 263 (Peiper halts outside Stavelot for the night)",m18],enters="east"),
-        mv("7ad","arrive",(5.93,50.30),2,[C+", p. 265 and ch. XVII",m18],enters="north")],
+        mv("7ad","arrive",(5.93,50.30),2,[C+", p. 265 and ch. XVII",m18,"Enters from the west: the 7th Armored marched south from the Netherlands and made its last leg into St. Vith from Vielsalm"],enters="west")],
  shifts=[sh("106id",(6.08,50.27),[m18,C+", ch. VII"]),sh("28id",(5.93,49.95),[m18,C+", p. 196"])],
  tonight="Peiper waits outside Stavelot. The 7th Armored reaches St. Vith.")
 m19=M("19 Dec 1944")

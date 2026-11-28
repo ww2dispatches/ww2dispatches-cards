@@ -28,7 +28,7 @@ MR[13]=dict(asOf="2400 hrs, 28 Dec 1944",map=m29,line=LINES[13],lineSources=[m29
           drives=[{"unit":"2pz","to":[5.26,50.12]}])],
  tonight="The spearhead is gone. What is left falls back on Rochefort.")
 MR[14]=dict(asOf="2400 hrs, 29 Dec 1944",map=m30,line=LINES[14],lineSources=[m30,C+", pp. 610 to 612"],
- moves=[mv("11ad","arrive",(5.525,49.95),1,[C+", p. 334 and pp. 646 to 648 (the 11th Armored comes up west of Bastogne)",m30],enters="south")],
+ moves=[mv("11ad","arrive",(5.525,49.95),1,[C+", p. 334 and pp. 646 to 648 (the 11th Armored comes up west of Bastogne)",m30,"Enters from the west: the 11th Armored came up from the Reims area by way of the Meuse"],enters="west")],
  shifts=[sh("2ad",(5.20,50.355),[m30])],
  tonight="Fresh American armor comes up west of Bastogne.")
 MR[15]=dict(asOf="2400 hrs, 30 Dec 1944",map=m31,line=LINES[15],lineSources=[m31,C+", pp. 610 to 648"],
@@ -48,7 +48,7 @@ MR[17]=dict(asOf="2400 hrs, 1 Jan 1945",map=J("2 Jan"),line=JLINES[17],lineSourc
  shifts=[sh("84id",(5.29,50.24),[J("2 Jan")]),sh("2ad",(5.32,50.36),[J("2 Jan")]),sh("11ad",(5.55,49.975),[J("2 Jan")])],
  tonight="The Luftwaffe's last great blow lands on the airfields, far behind the front.")
 MR[18]=dict(asOf="2400 hrs, 2 Jan 1945",map=J("3 Jan"),line=JLINES[18],lineSources=[J("3 Jan"),MD+", pp. 26 to 27"],
- moves=[mv("17ab","arrive",(5.41,49.95),1,[MD+", p. 37 (the 17th Airborne comes into the line west of Bastogne)",J("3 Jan")],enters="south"),
+ moves=[mv("17ab","arrive",(5.41,49.95),1,[MD+", p. 37 (the 17th Airborne comes into the line west of Bastogne)",J("3 Jan"),"Enters from the west: the 17th Airborne came up from its assembly area near Reims"],enters="west"),
         mv("28id","leave",None,2,[C+", p. 560",J("3 Jan")],why="The 17th Airborne takes over its sector near Neufchâteau.")],
  shifts=[sh("2ad",(5.50,50.40),[J("3 Jan"),MD+", p. 27"]),sh("84id",(5.36,50.30),[J("3 Jan"),MD+", p. 27",CE+"from 8 to 10 January the 84th stands about 12 to 14 km west of its map spot, because the 2d Armored holds that ground until it drives south on 11 January"]),sh("82ab",(5.84,50.42),[J("3 Jan")])],
  tonight="First Army is set to attack from the north in the morning.")
