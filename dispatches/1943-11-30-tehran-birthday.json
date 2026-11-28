@@ -161,13 +161,37 @@
   "hook": "His last toast was to American factories.",
   "sound": false
  },
- "body": "On his 69th birthday, Winston Churchill sat at dinner between the two men he needed most. That same day, Stalin finally got the promise he had pressed for since 1941.\n\n30 November 1943, Tehran. Before lunch Roosevelt read Stalin the Allied chiefs' decision: the invasion of France, Operation Overlord, would come in May 1944. Stalin said he was greatly satisfied, and pledged a Red Army offensive at the same time.\n\nThat night 33 guests filled Churchill's table, with Roosevelt on his right and Stalin on his left. Churchill toasted \"Stalin the Great.\" The final toast was Stalin's own, and it went to American factories: without the planes from America, he said, the war would have been lost.",
+ "body": "On his 69th birthday, Winston Churchill sat at dinner between the two men he needed most. That same day, Stalin finally got the promise he had pressed for since 1941.\n\n30 November 1943, Tehran. Before lunch Roosevelt read Stalin the Allied chiefs' decision: the invasion of France, Operation Overlord, would come in May 1944. Stalin said he was greatly satisfied, and pledged a Red Army offensive at the same time.\n\nThat night 33 guests filled Churchill's table, with Roosevelt on his right and Stalin on his left. Churchill toasted \"Stalin the Great.\" The final toast was Stalin's own, and it went to American production: without the planes from America, he said, the war would have been lost.",
  "addons": [],
  "hashtags": "#OnThisDay #WW2",
- "threads": "On his 69th birthday, Churchill sat at dinner between Roosevelt and Stalin.\n\n30 November 1943, Tehran. That day Stalin was told the invasion of France would come in May 1944, and he pledged a Red Army offensive to match. His last toast of the night went to American factories: without their planes, he said, the war would have been lost.",
+ "threads": "On his 69th birthday, Churchill sat at dinner between Roosevelt and Stalin.\n\n30 November 1943, Tehran. That day Stalin was told the invasion of France would come in May 1944, and he pledged a Red Army offensive to match. His last toast of the night went to American production: without its planes, he said, the war would have been lost.",
  "question": false,
  "declass_line": false,
  "focusX": 74,
  "focusY": 40,
- "zoom": 135
+ "zoom": 135,
+ "buffer": {
+  "x": "6b0b02dc7877c5cf36145dc3",
+  "instagram": "6b0b02dc03fefb62268077d7",
+  "threads": "6b0b02ddae70dd909979869a",
+  "facebook": "6b0b02ddae70dd90997986de",
+  "x_film": "6b0b02f87877c5cf36146ca6",
+  "instagram_reel": "6b0b02f97877c5cf36146cf4",
+  "threads_film": "6b0b02faae70dd9099799be0",
+  "facebook_film": "6b0b02fb7877c5cf36146e14",
+  "youtube": "6b0b02fcae70dd9099799c4d",
+  "tiktok": "6b0b02fd7877c5cf36146e8a"
+ },
+ "kit": {
+  "file": "kits/dispatch-106-kit.md",
+  "caption": "Stalin asked for one more toast before Churchill's birthday dinner broke up. He didn't raise his glass to the Red Army. He raised it to American factories.\n\nU.S. Army Signal Corps film from the Tehran Conference, 28 November to 1 December 1943: a Soviet guard of honor at the Soviet Embassy, British delegates in the British Embassy garden, and Stalin among the delegates outside.\n\nWhose toast would you most want to have heard that night?",
+  "youtubeTitle": "Stalin's Surprise Toast at Churchill's Birthday, 1943 #shorts",
+  "tiktokCaption": "Stalin asked for one more toast before Churchill's birthday dinner broke up. He didn't raise his glass to the Red Army. He raised it to American factories.\n\nU.S. Army Signal Corps film from the Tehran Conference, 28 November to 1 December 1943: a Soviet guard of honor at the Soviet Embassy, British delegates in the British Embassy garden, and Stalin among the delegates outside.\n\nWhose toast would you most want to have heard that night?\n\n#WW2 #OnThisDay #History #Tehran",
+  "tiktokTitle": "Stalin's Surprise Toast at Churchill's Birthday, 1943",
+  "hook": "His last toast was to American factories.",
+  "thumbnailCheck": "Pass: the first frame is the Soviet guard of honor marching past the embassy portico; at 2 seconds the column is still moving toward camera. Opening tagged \"motion\".",
+  "videoTime": "19:00 America/Denver",
+  "schedule": "Mon 30 Nov 2026, 7:00 p.m. Mountain, all six channels",
+  "scheduled": "Buffer, all six channels, 7 p.m. 30 Nov (built in a Project chat 28 Nov 2026; files on the videos repo via media.py fallback, the next run's sweep moves them to R2)"
+ }
 }
