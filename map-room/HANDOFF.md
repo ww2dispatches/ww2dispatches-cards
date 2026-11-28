@@ -40,6 +40,8 @@ Written by the Map Room chat: what to build or fix and why, one item each, dated
 
 * **28 Nov 2026, the withdrawal arrow must stay clear of blocks (Brian, Day 6).** On Day 6 the 106th's arrow points west and lies under the 7th Armored, so it can't be seen. Day 8 is fine. Rule added to `map-room/FORMAT.md` (`toward`, The arrow must be seen). Please: try the `toward` (or rear) direction first; if any block covers the arrow, try turning it in steps of 15 degrees up to 45 either side (alternating sides, nearest first), then shorten it to 0.8 and 0.6 of a block; use the first clear arrow. If none is clear, draw the plain one and have the checker print a NOTE naming the day and unit. For Day 6, south west or west south west should clear the 7th Armored, which is still true to the 106th's way out across the Salm. **Re-render Day 6 only** and stop for Brian.
 
+* **28 Nov 2026, latest: the withdrawal arrow goes in the spot the block leaves (Brian's idea; replaces the clear arrow search just above).** Order: the block fades over about 1.5 s; as it fades, the pencil draws a small arrow inside the block's own footprint (about 0.8 of a block long, centred on where the block stood, pointing `toward` or the side's rear, same pencil and arrowhead); hold about half a second; then the arrow fades. It can never be covered, so drop the 45 degree turning and the NOTE. The X for `destroyed` or `surrendered` stays as it is (X across the block, then the slow fade). Rule updated in `map-room/FORMAT.md`. **Re-render Days 6 and 8** so both match, and stop for Brian.
+
 ## Done
 Written by the desktop: what changed, the commit, where the test clip is.
 
