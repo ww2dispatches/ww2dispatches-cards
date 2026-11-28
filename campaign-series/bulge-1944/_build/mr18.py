@@ -11,7 +11,7 @@ MR={}
 m16,m17=M("16 Dec 1944"),M("17 Dec 1944")
 MR[1]=dict(asOf="2400 hrs, 16 Dec 1944",map=m17,lineStart=LINE_START,lineStartSources=[m16,C+", pp. 75 to 80 and Map I"],
  line=LINES[1],lineSources=[m17,C+", pp. 179 to 191"],
- set=[st("v",(6.20,50.505),[m16,"Set about 3.5 km north of the map symbol so the Sixth Panzer Army block, arriving on Day 2, does not slide across it"]),st("28id",(5.99,50.01),[m16]),st("106id",(6.22,50.27),[m16]),st("18vg",(6.49,50.39),[m16]),
+ set=[st("v",(6.20,50.505),[m16,"Set about 3.5 km north of the map symbol so the Sixth Panzer Army block, arriving on Day 2, does not slide across it"]),st("28id",(5.99,50.01),[m16]),st("106id",(6.22,50.27),[m16]),st("18vg",(6.48,50.31),[m16,C+", p. 142 (the 18th Volks Grenadier Division holds the West Wall along the Schnee Eifel and attacks north and south of it)","Set about 9 km south of the map symbol, east of the Schnee Eifel where its attack on the 106th began, so the Sixth Panzer Army block arriving on Day 2 has a clear lane along Peiper's road"]),
       st("2pz",(6.61,50.07),[m16]),st("7a",(6.51,49.93),[m16,"Shown at the 352d Volksgrenadier Division, the Seventh Army's right"])],
  moves=[mv("2pz","advance",(6.12,50.07),1,[C+", pp. 184 to 186 (Marnach falls; the Germans press toward Clerf)",m17])],
  shifts=[sh("106id",(6.14,50.28),[m17,C+", p. 156"])],
