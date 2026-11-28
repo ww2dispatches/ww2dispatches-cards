@@ -25,6 +25,12 @@ Written by the Map Room chat: what to build or fix and why, one item each, dated
   5. **The checker:** advance, fall_back, arrive and leave all go through the route finder. A move that needs the X prints a NOTE ("leave 7ad: no clear way out; struck off with the pencil X"), not an error. Drives keep their current rules, plus this morning's driven end spot check.
   6. **Test** on Bulge Day 8 (7ad should steer out, most likely southwest of the 82nd and then west, or take the X if the finder says boxed in), Day 2, and the test series. Render Day 8 as the test clip, then **re-render Days 6 to 10** as the next batch, once the Day 6 record fix is on main, and stop for Brian.
 
+* **28 Nov 2026, later: straight lines only, and a leave fades in place (Brian, after the Day 6 re-render).** The steered route made the 106th look as if it really drove south then west, and it ended on top of the 28th Infantry. Brian wants it simple: the rule in `map-room/FORMAT.md` (move set, Straight lines only) replaces this morning's Routes. Please:
+  1. **Turn steering off** for advance, fall_back and arrive: always the straight path. Keep the pass through check (all three move types, plus the driven end spot check); a blocked path is an error again, never a detour. Keep the route code if you like, unused.
+  2. **`leave` never moves:** the block fades where it stands over about half a second, no rake. New optional field `fate`: `withdrawn` (default, a plain fade), `destroyed` or `surrendered` (the pencil X you built, then the block and X fade). The checker accepts only those three values. Drop the "no clear way out" note.
+  3. Every leave in the Bulge is a withdrawal (Days 6, 8, 17, 18, 20, 24, 26), so no record changes are needed; they all take the plain fade.
+  4. Run the checker on the Bulge, then **re-render Days 6 to 10** and stop for Brian. Note in Done whether any later day now fails the straight line check, so it can go to the Campaign Series chat before its batch.
+
 ## Done
 Written by the desktop: what changed, the commit, where the test clip is.
 
