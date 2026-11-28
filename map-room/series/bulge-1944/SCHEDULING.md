@@ -2,6 +2,8 @@
 
 For a fresh Campaign Series: The Map Room session that has the five R2 values in its environment. Written 27 Nov 2026 by the Map Room chat, which ran the fact check. Read it all before touching Buffer.
 
+**Who posts (Brian, 27 Nov 2026):** this Claude Code session, "Bulge Map Room upload readiness" on claude.ai/code (Default environment, which holds the R2 values), owns every Map Room upload and Buffer post. The Map Room Project chat checks the clips and hands off here; it never schedules. Prep was done 27 Nov: R2 sweep, all six Buffer channels and the Schedule Board all pass. Still needed: the Bulge Clips folder shared with this session through the Claude desktop app.
+
 ## Where things stand
 * **The fact check is closed. All 30 days pass** (`campaign-series/bulge-1944/verify/FACTCHECK.md`, Closed). Don't redo it, and never change a record's position or line.
 * **Clips:** the desktop renders all 30 into OneDrive `D:\OneDrive\Personal\Claude\WW2 Dispatches\The Map Room\Bulge Clips` (HANDOFF request of 27 Nov). Read its Done note in `map-room/HANDOFF.md` first: render time, any failed day, and its look at the key card (Days 1 to 3), the Day 8 drop and the Day 9 reach.
