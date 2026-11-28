@@ -163,8 +163,7 @@ class Series:
                 q = piece(u, move=mv, order=m['order'], sources=m.get('sources', []))
                 if a: q['from'] = list(a)
                 if mv in ('advance', 'fall_back', 'arrive'): q['to'] = list(b)
-                if mv == 'surrender':                      # a leave heads for its own side's rear edge (series.json `rear`)
-                    q['rear'] = {**D.REAR, **self.cfg.get('rear', {})}['allied' if self.allied(u) else 'axis']
+                if mv == 'surrender': q['fate'] = m.get('fate', 'withdrawn')   # a leave fades where it stands; struck first if destroyed or surrendered
                 for x in ('enters', 'target'):
                     if x in m: q[x] = m[x]
             elif u in driven: q = piece(u, move='driven', by=driven[u], to=list(b)); q['from'] = list(a)
