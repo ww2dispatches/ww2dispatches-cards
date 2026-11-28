@@ -64,6 +64,17 @@ class Sprite:
         r, a, C = out[..., :3] * alpha + 1, out[..., 3:4] * alpha, out[..., 4:7] * alpha
         sl = (slice(fy0 - Y0, fy1 - Y0), slice(fx0 - X0, fx1 - X0)); R = F[fy0:fy1, fx0:fx1]
         F[fy0:fy1, fx0:fx1] = R * r[sl] * (1 - a[sl]) + C[sl]
+    def mask(self, Q, alpha=1.0):
+        """the sprite's body (its alpha) laid at table point Q, as a full frame array"""
+        q, wq = D.proj(*Q, 0.0); q = np.array(q); s = self.wA / wq
+        tl = q + s * (self.o - self.A); hh, ww = self.a.shape[:2]
+        X0, Y0 = int(math.floor(tl[0])), int(math.floor(tl[1])); Wd, Hd = int(ww * s) + 3, int(hh * s) + 3
+        out = np.zeros((H, W), np.float32)
+        fx0, fy0 = max(0, X0), max(0, Y0); fx1, fy1 = min(W, X0 + Wd), min(H, Y0 + Hd)
+        if fx1 <= fx0 or fy1 <= fy0: return out
+        M = np.array([[s, 0, tl[0] - X0], [0, s, tl[1] - Y0]], np.float32)
+        a = cv2.warpAffine(self.a[..., 0], M, (Wd, Hd), flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_CONSTANT, borderValue=0) * alpha
+        out[fy0:fy1, fx0:fx1] = a[fy0 - Y0:fy1 - Y0, fx0 - X0:fx1 - X0]; return out
 
 # ---------- flat marks on the table ----------
 PPU = 200                                            # sheet pixels per table unit
@@ -256,17 +267,21 @@ class Clip:
         d = self.d; F = self.plate.copy(); self.flat(F, t)
         # far blocks first, by where each one is at this moment, so a block moving past another is drawn in the right order
         rk = d.rake(t); order = sorted(d.pieces, key=lambda p: -((d.pos(p, t) or d.rest_from(p) or d.snap_to(p))[1]))
-        drawn_rake = False
         for p in order:
-            pull = rk and rk[2] == p['id'] and rk[3] == 'pull'
-            if rk and rk[2] == p['id'] and not drawn_rake and not pull: self.rake[rk[1]].draw(F, rk[0]); drawn_rake = True
             q = d.pos(p, t)
             if q is not None:
                 al = d.alpha(p, t); self.spr[p['id']].draw(F, q, al)
                 s = d.slot(p['id'])
                 if s and s.get('how') == 'strike': self.strike(F, s, t, al)
-            if pull and not drawn_rake: self.rake[rk[1]].draw(F, rk[0]); drawn_rake = True   # a pull reaches over the block
-        if rk and not drawn_rake: self.rake[rk[1]].draw(F, rk[0])
+        if rk:
+            # the rake rides over the table (Brian, 28 Nov 2026): its pole, held up off the table, is drawn over every
+            # block it crosses, with its faint shadow on the map. A push keeps its head just behind its own block, so
+            # that block still covers the rake where they meet; a pull reaches over its block.
+            R = F.copy(); self.rake[rk[1]].draw(R, rk[0])
+            p = d.by_id[rk[2]]; q = d.pos(p, t)
+            if rk[3] == 'pull' or q is None: F = R
+            else:
+                m = self.spr[p['id']].mask(q, d.alpha(p, t))[..., None]; F = R * (1 - m) + F * m
         F = zoom(F, 1.0 + (D.TPL['push_in'] - 1) * min(1, max(0, (t - d.t_table) / max(d.T - d.t_table, 1e-3))))
         if not ov: return F
         over(F, self.TAB); kb = min(1, max(0, (t - d.t_tonight) / 0.35)); over(F, self.SA, 1 - kb); over(F, self.SB, kb)
