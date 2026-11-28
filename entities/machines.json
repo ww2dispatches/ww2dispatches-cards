@@ -44,6 +44,13 @@
   "wikidata": "Q300353",
   "source": "https://en.wikipedia.org/wiki/A_Child_of_Our_Time"
  },
+ "machine-across-the-river-and-into-the-trees": {
+  "name": "Across the River and into the Trees",
+  "kind": "1950 novel by Ernest Hemingway",
+  "nation": "US",
+  "wikidata": "Q330996",
+  "source": "https://en.wikipedia.org/wiki/Across_the_River_and_into_the_Trees"
+ },
  "machine-affiche-rouge": {
   "name": "Affiche Rouge",
   "kind": "German propaganda poster, 1944",
@@ -134,6 +141,13 @@
   "nation": "US",
   "wikidata": "Q1620831",
   "source": "https://en.wikipedia.org/wiki/Battleground_(film)"
+ },
+ "machine-bazooka": {
+  "name": "Bazooka",
+  "kind": "US shoulder fired antitank rocket launcher",
+  "nation": "US",
+  "wikidata": "Q319432",
+  "source": "https://en.wikipedia.org/wiki/Bazooka"
  },
  "machine-blalock-thomas-taussig-shunt": {
   "name": "Blalock Thomas Taussig shunt",
@@ -252,6 +266,13 @@
   "aka": [
    "Chariot"
   ]
+ },
+ "machine-chemotherapy": {
+  "name": "Chemotherapy",
+  "kind": "cancer treatment with drugs",
+  "nation": "worldwide",
+  "wikidata": "Q974135",
+  "source": "https://en.wikipedia.org/wiki/Chemotherapy"
  },
  "machine-chicago-pile-1": {
   "name": "Chicago Pile-1",
@@ -1035,6 +1056,20 @@
    "MTS"
   ]
  },
+ "machine-molotov-bread-basket": {
+  "name": "Molotov bread basket",
+  "kind": "Soviet incendiary cluster bomb",
+  "nation": "Soviet Union",
+  "wikidata": "Q2571979",
+  "source": "https://en.wikipedia.org/wiki/Molotov_bread_basket"
+ },
+ "machine-molotov-cocktail": {
+  "name": "Molotov cocktail",
+  "kind": "improvised bottle firebomb",
+  "nation": "Finland",
+  "wikidata": "Q167096",
+  "source": "https://en.wikipedia.org/wiki/Molotov_cocktail"
+ },
  "machine-morning-star-british-newspaper": {
   "name": "Daily Worker",
   "kind": "Communist daily newspaper (now the Morning Star)",
@@ -1069,6 +1104,13 @@
   "nation": "Italy",
   "wikidata": "Q3866428",
   "source": "https://en.wikipedia.org/wiki/MTSM_motor_torpedo_boat"
+ },
+ "machine-mustard-gas": {
+  "name": "Mustard gas",
+  "kind": "sulfur mustard, chemical warfare agent",
+  "nation": "worldwide",
+  "wikidata": "Q81166",
+  "source": "https://en.wikipedia.org/wiki/Mustard_gas"
  },
  "machine-mw-18014": {
   "name": "MW 18014",
@@ -1208,6 +1250,13 @@
   "aka": [
    "Whittle Unit"
   ]
+ },
+ "machine-pratt-whitney-r-2800-double-wasp": {
+  "name": "Pratt & Whitney R-2800 Double Wasp",
+  "kind": "18 cylinder radial aircraft engine",
+  "nation": "US",
+  "wikidata": "Q1851343",
+  "source": "https://en.wikipedia.org/wiki/Pratt_%26_Whitney_R-2800_Double_Wasp"
  },
  "machine-pratt-whitney-r-4360-wasp-major": {
   "name": "Pratt and Whitney R-4360",
@@ -1354,6 +1403,13 @@
   "nation": "US",
   "wikidata": "Q3027363",
   "source": "https://en.wikipedia.org/wiki/SCR-268_radar"
+ },
+ "machine-scr-584-radar": {
+  "name": "SCR-584 radar",
+  "kind": "US automatic tracking microwave gun laying radar",
+  "nation": "US",
+  "wikidata": "Q3416360",
+  "source": "https://en.wikipedia.org/wiki/SCR-584_radar"
  },
  "machine-series-e-bond": {
   "name": "Series E bond",
@@ -1552,6 +1608,13 @@
   "wikidata": "Q1058395",
   "source": "https://en.wikipedia.org/wiki/Times_Square_Ball"
  },
+ "machine-type-93-torpedo": {
+  "name": "Type 93 torpedo",
+  "kind": "Japanese 61 cm oxygen torpedo, the Long Lance",
+  "nation": "Japan",
+  "wikidata": "Q1970825",
+  "source": "https://en.wikipedia.org/wiki/Type_93_torpedo"
+ },
  "machine-type-95-ha-go-light-tank": {
   "name": "Type 95 Ha-Go light tank",
   "kind": "Japanese light tank",
@@ -1625,6 +1688,13 @@
   "nation": "Britain",
   "source": "https://en.wikipedia.org/wiki/Valentine_tank",
   "wikidata": "Q899078"
+ },
+ "machine-victoria-cross": {
+  "name": "Victoria Cross",
+  "kind": "highest British and Commonwealth award for gallantry",
+  "nation": "Britain",
+  "wikidata": "Q219578",
+  "source": "https://en.wikipedia.org/wiki/Victoria_Cross"
  },
  "machine-victory-banner": {
   "name": "Victory Banner",

@@ -1285,6 +1285,13 @@
   "wikidata": "Q152195",
   "source": "https://en.wikipedia.org/wiki/Anti-Comintern_Pact"
  },
+ "op-antwerp-x": {
+  "name": "Antwerp X",
+  "kind": "Allied antiaircraft command defending Antwerp against the V-1",
+  "nation": "US",
+  "wikidata": "Q139743028",
+  "source": "https://en.wikipedia.org/wiki/Antwerp_X"
+ },
  "op-appeal-of-18-june": {
   "name": "Appeal of 18 June",
   "kind": "de Gaulle's BBC broadcast to France, 1940",
@@ -3033,6 +3040,13 @@
   "nation": "Brazil",
   "wikidata": "Q1818854",
   "source": "https://en.wikipedia.org/wiki/Battle_of_Monte_Castello"
+ },
+ "op-battle-of-monte-la-difensa": {
+  "name": "Battle of Monte la Difensa",
+  "kind": "assault on Monte la Difensa, Operation Raincoat, December 1943",
+  "nation": "US",
+  "wikidata": "Q3636532",
+  "source": "https://en.wikipedia.org/wiki/Battle_of_Monte_la_Difensa"
  },
  "op-battle-of-morava-ivan": {
   "name": "Battle of Morava Ivan",
@@ -12321,6 +12335,13 @@
   "nation": "Germany",
   "wikidata": "Q2350607",
   "source": "https://en.wikipedia.org/wiki/Rumbula_massacre"
+ },
+ "op-run-for-tunis": {
+  "name": "Run for Tunis",
+  "kind": "Allied drive on Tunis, November and December 1942",
+  "nation": "Britain",
+  "wikidata": "Q7379555",
+  "source": "https://en.wikipedia.org/wiki/Run_for_Tunis"
  },
  "op-russelsheim-massacre": {
   "name": "Russelsheim massacre",

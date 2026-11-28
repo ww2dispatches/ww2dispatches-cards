@@ -518,6 +518,13 @@
   "wikidata": "Q4596104",
   "source": "https://en.wikipedia.org/wiki/1st_Airlanding_Brigade"
  },
+ "unit-1st-armored-division-united-states": {
+  "name": "1st Armored Division (United States)",
+  "kind": "US Army armored division",
+  "nation": "US",
+  "wikidata": "Q163673",
+  "source": "https://en.wikipedia.org/wiki/1st_Armored_Division_(United_States)"
+ },
  "unit-1st-armoured-division-poland": {
   "name": "1st Armoured Division (Poland)",
   "kind": "armoured division",
@@ -696,6 +703,13 @@
   "wikidata": "Q11616",
   "source": "https://en.wikipedia.org/wiki/1st_Provisional_Marine_Brigade"
  },
+ "unit-1st-shock-army": {
+  "name": "1st Shock Army",
+  "kind": "Soviet field army",
+  "nation": "Soviet Union",
+  "wikidata": "Q163613",
+  "source": "https://en.wikipedia.org/wiki/1st_Shock_Army"
+ },
  "unit-1st-special-operations-wing": {
   "name": "1st Special Operations Wing",
   "kind": "U.S. Air Force wing, descended from the 1st Air Commando Group",
@@ -860,6 +874,13 @@
   "nation": "Australia",
   "wikidata": "Q16823791",
   "source": "https://en.wikipedia.org/wiki/22nd_Brigade_(Australia)"
+ },
+ "unit-22nd-infantry-regiment-united-states": {
+  "name": "22nd Infantry Regiment (United States)",
+  "kind": "US Army infantry regiment",
+  "nation": "US",
+  "wikidata": "Q4631381",
+  "source": "https://en.wikipedia.org/wiki/22nd_Infantry_Regiment_(United_States)"
  },
  "unit-22nd-marine-regiment": {
   "name": "22nd Marine Regiment",
@@ -1755,6 +1776,13 @@
   "wikidata": "Q3599209",
   "source": "https://en.wikipedia.org/wiki/4th_Infantry_Division_%22Livorno%22"
  },
+ "unit-4th-infantry-division-united-states": {
+  "name": "4th Infantry Division (United States)",
+  "kind": "US Army infantry division",
+  "nation": "US",
+  "wikidata": "Q231293",
+  "source": "https://en.wikipedia.org/wiki/4th_Infantry_Division_(United_States)"
+ },
  "unit-4th-infantry-regiment-imperial-japanese-army": {
   "name": "4th Infantry Regiment (Imperial Japanese Army)",
   "kind": "Japanese infantry regiment",
@@ -1851,6 +1879,13 @@
   "nation": "United States",
   "source": "https://en.wikipedia.org/wiki/509th_Infantry_Regiment",
   "wikidata": "Q4639851"
+ },
+ "unit-50th-army-soviet-union": {
+  "name": "50th Army",
+  "kind": "Soviet field army",
+  "nation": "Soviet Union",
+  "wikidata": "Q4031673",
+  "source": "https://en.wikipedia.org/wiki/50th_Army_(Soviet_Union)"
  },
  "unit-50th-northumbrian-infantry-division": {
   "name": "50th (Northumbrian) Infantry Division",
@@ -2155,6 +2190,13 @@
    "77th Division"
   ],
   "note": "The English Wikipedia article for the 77th Infantry Division is titled 77th Sustainment Brigade, its present lineage; the id follows the article title."
+ },
+ "unit-78th-infantry-division-united-kingdom": {
+  "name": "78th Infantry Division (United Kingdom)",
+  "kind": "British Army infantry division",
+  "nation": "Britain",
+  "wikidata": "Q3599828",
+  "source": "https://en.wikipedia.org/wiki/78th_Infantry_Division_(United_Kingdom)"
  },
  "unit-79th-armoured-division": {
   "name": "79th Armoured Division",
@@ -3221,6 +3263,13 @@
    "code talkers"
   ]
  },
+ "unit-collings-foundation": {
+  "name": "Collings Foundation",
+  "kind": "aviation and vehicle museum foundation, Massachusetts",
+  "nation": "US",
+  "wikidata": "Q5147274",
+  "source": "https://en.wikipedia.org/wiki/Collings_Foundation"
+ },
  "unit-combined-fleet": {
   "name": "Combined Fleet",
   "kind": "Imperial Japanese Navy main fleet command",
@@ -3625,6 +3674,13 @@
   "nation": "US",
   "wikidata": "Q2817902",
   "source": "https://en.wikipedia.org/wiki/Fifth_Air_Force"
+ },
+ "unit-fifth-army-united-states": {
+  "name": "Fifth Army (United States)",
+  "kind": "US field army in Italy",
+  "nation": "US",
+  "wikidata": "Q203491",
+  "source": "https://en.wikipedia.org/wiki/United_States_Army_North"
  },
  "unit-fiji-infantry-regiment": {
   "name": "Fiji Infantry Regiment",
@@ -4593,6 +4649,13 @@
   "nation": "Germany",
   "wikidata": "Q658967",
   "source": "https://en.wikipedia.org/wiki/Luftflotte_1"
+ },
+ "unit-luftflotte-2": {
+  "name": "Luftflotte 2",
+  "kind": "Luftwaffe air fleet",
+  "nation": "Germany",
+  "wikidata": "Q699708",
+  "source": "https://en.wikipedia.org/wiki/Luftflotte_2"
  },
  "unit-luftflotte-4": {
   "name": "Luftflotte 4",
@@ -5721,6 +5784,13 @@
   "nation": "US",
   "wikidata": "Q7079326",
   "source": "https://en.wikipedia.org/wiki/Office_of_War_Mobilization"
+ },
+ "unit-organisation-todt": {
+  "name": "Organisation Todt",
+  "kind": "Nazi civil and military engineering organization",
+  "nation": "Germany",
+  "wikidata": "Q155433",
+  "source": "https://en.wikipedia.org/wiki/Organisation_Todt"
  },
  "unit-oshkosh-all-stars": {
   "name": "Oshkosh All-Stars",

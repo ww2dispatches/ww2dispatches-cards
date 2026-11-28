@@ -5606,6 +5606,13 @@
    "HMS Unbeaten"
   ]
  },
+ "ship-hms-unbroken": {
+  "name": "HMS Unbroken",
+  "kind": "British U class submarine",
+  "nation": "Britain",
+  "wikidata": "Q5634732",
+  "source": "https://en.wikipedia.org/wiki/HMS_Unbroken"
+ },
  "ship-hms-undine-n48": {
   "name": "HMS Undine (N48)",
   "kind": "U-class submarine",
@@ -6066,6 +6073,13 @@
   "nation": "Italy",
   "wikidata": "Q2738185",
   "source": "https://en.wikipedia.org/wiki/Italian_cruiser_Bartolomeo_Colleoni"
+ },
+ "ship-italian-cruiser-eugenio-di-savoia": {
+  "name": "Eugenio di Savoia",
+  "kind": "Italian Duca d'Aosta class light cruiser",
+  "nation": "Italy",
+  "wikidata": "Q2252649",
+  "source": "https://en.wikipedia.org/wiki/Italian_cruiser_Eugenio_di_Savoia"
  },
  "ship-italian-cruiser-giovanni-delle-bande-nere": {
   "name": "Giovanni delle Bande Nere",
@@ -6985,6 +6999,13 @@
   "wikidata": "Q2234969",
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Kuroshio"
  },
+ "ship-japanese-destroyer-kuwa-1944": {
+  "name": "Kuwa",
+  "kind": "Matsu class escort destroyer",
+  "nation": "Japan",
+  "wikidata": "Q11537394",
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Kuwa_(1944)"
+ },
  "ship-japanese-destroyer-maikaze": {
   "name": "Maikaze",
   "kind": "Japanese destroyer",
@@ -7043,6 +7064,13 @@
   "nation": "Japan",
   "wikidata": "Q1138033",
   "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Mutsuki"
+ },
+ "ship-japanese-destroyer-naganami": {
+  "name": "Naganami",
+  "kind": "Yugumo class destroyer",
+  "nation": "Japan",
+  "wikidata": "Q2463783",
+  "source": "https://en.wikipedia.org/wiki/Japanese_destroyer_Naganami"
  },
  "ship-japanese-destroyer-natsushio": {
   "name": "Japanese destroyer Natsushio",
@@ -9374,6 +9402,13 @@
   "wikidata": "Q1347169",
   "source": "https://en.wikipedia.org/wiki/USS_Albacore_(SS-218)"
  },
+ "ship-uss-allen-m-sumner": {
+  "name": "USS Allen M. Sumner (DD-692)",
+  "kind": "Allen M. Sumner class destroyer",
+  "nation": "US",
+  "wikidata": "Q3282606",
+  "source": "https://en.wikipedia.org/wiki/USS_Allen_M._Sumner"
+ },
  "ship-uss-anzio-cve-57": {
   "name": "USS Anzio (CVE-57)",
   "kind": "Casablanca class escort carrier",
@@ -9859,6 +9894,13 @@
   "nation": "US",
   "wikidata": "Q5233805",
   "source": "https://en.wikipedia.org/wiki/USS_Corvina"
+ },
+ "ship-uss-cowpens-cvl-25": {
+  "name": "USS Cowpens (CVL-25)",
+  "kind": "Independence class light aircraft carrier",
+  "nation": "US",
+  "wikidata": "Q1475425",
+  "source": "https://en.wikipedia.org/wiki/USS_Cowpens_(CVL-25)"
  },
  "ship-uss-croaker": {
   "name": "USS Croaker (SS-246)",
@@ -10751,6 +10793,13 @@
    "Murmansk"
   ]
  },
+ "ship-uss-minneapolis-ca-36": {
+  "name": "USS Minneapolis (CA-36)",
+  "kind": "New Orleans class heavy cruiser",
+  "nation": "US",
+  "wikidata": "Q1969706",
+  "source": "https://en.wikipedia.org/wiki/USS_Minneapolis_(CA-36)"
+ },
  "ship-uss-mississinewa-ao-59": {
   "name": "USS Mississinewa (AO-59)",
   "kind": "fleet oiler",
@@ -10764,6 +10813,13 @@
   "nation": "US",
   "source": "https://en.wikipedia.org/wiki/USS_Missouri_(BB-63)",
   "wikidata": "Q272560"
+ },
+ "ship-uss-moale": {
+  "name": "USS Moale (DD-693)",
+  "kind": "Allen M. Sumner class destroyer",
+  "nation": "US",
+  "wikidata": "Q3282576",
+  "source": "https://en.wikipedia.org/wiki/USS_Moale"
  },
  "ship-uss-moffett": {
   "name": "USS Moffett (DD-362)",
@@ -10844,6 +10900,13 @@
   "nation": "US",
   "wikidata": "Q339124",
   "source": "https://en.wikipedia.org/wiki/USS_New_Mexico_(BB-40)"
+ },
+ "ship-uss-new-orleans-ca-32": {
+  "name": "USS New Orleans (CA-32)",
+  "kind": "New Orleans class heavy cruiser",
+  "nation": "US",
+  "wikidata": "Q1483636",
+  "source": "https://en.wikipedia.org/wiki/USS_New_Orleans_(CA-32)"
  },
  "ship-uss-new-york-bb-34": {
   "name": "USS New York (BB-34)",
@@ -10975,6 +11038,13 @@
   "nation": "US",
   "wikidata": "Q7872759",
   "source": "https://en.wikipedia.org/wiki/USS_Pecos_(AO-6)"
+ },
+ "ship-uss-pensacola-ca-24": {
+  "name": "USS Pensacola (CA-24)",
+  "kind": "Pensacola class heavy cruiser",
+  "nation": "US",
+  "wikidata": "Q475540",
+  "source": "https://en.wikipedia.org/wiki/USS_Pensacola_(CA-24)"
  },
  "ship-uss-philip-dd-498": {
   "name": "USS Philip (DD-498)",
@@ -11402,6 +11472,13 @@
   "nation": "US",
   "wikidata": "Q6141187",
   "source": "https://en.wikipedia.org/wiki/USS_Snook_(SS-279)"
+ },
+ "ship-uss-solomons": {
+  "name": "USS Solomons (CVE-67)",
+  "kind": "Casablanca class escort carrier",
+  "nation": "US",
+  "wikidata": "Q7874237",
+  "source": "https://en.wikipedia.org/wiki/USS_Solomons"
  },
  "ship-uss-somers-dd-381": {
   "name": "USS Somers (DD-381)",

@@ -1192,6 +1192,15 @@
   "lat": 52.5083,
   "lon": 13.3375
  },
+ "place-bermuda-triangle": {
+  "name": "Bermuda Triangle",
+  "kind": "region of the western North Atlantic",
+  "nation": "worldwide",
+  "wikidata": "Q43708",
+  "source": "https://en.wikipedia.org/wiki/Bermuda_Triangle",
+  "lat": 25.0,
+  "lon": -71.0
+ },
  "place-bessarabia": {
   "name": "Bessarabia",
   "kind": "region",
@@ -3137,6 +3146,15 @@
   "lat": 38.4293,
   "lon": 22.6673
  },
+ "place-djedeida": {
+  "name": "Djedeida",
+  "kind": "town in northern Tunisia",
+  "nation": "Tunisia",
+  "wikidata": "Q3032873",
+  "source": "https://en.wikipedia.org/wiki/Djedeida",
+  "lat": 36.850608,
+  "lon": 9.936082
+ },
  "place-dnieper-hydroelectric-station": {
   "name": "Dnieper Hydroelectric Station",
   "kind": "hydroelectric dam at Zaporizhzhia",
@@ -5045,6 +5063,25 @@
   "lat": 60.1708,
   "lon": 24.9375
  },
+ "place-helsinki-malmi-airport": {
+  "name": "Helsinki-Malmi Airport",
+  "kind": "airfield in Helsinki",
+  "nation": "Finland",
+  "wikidata": "Q662434",
+  "source": "https://en.wikipedia.org/wiki/Helsinki-Malmi_Airport",
+  "lat": 60.253888888,
+  "lon": 25.044166666
+ },
+ "place-helsinki-university-of-technology": {
+  "name": "Helsinki University of Technology",
+  "kind": "technical university in Helsinki",
+  "nation": "Finland",
+  "wikidata": "Q1646874",
+  "source": "https://en.wikipedia.org/wiki/Helsinki_University_of_Technology",
+  "lat": null,
+  "lon": null,
+  "note": "In 1939 the university stood in central Helsinki; the Wikidata coordinates are its later Otaniemi campus, so none are given."
+ },
  "place-hendaye": {
   "name": "Hendaye",
   "kind": "French town on the Spanish border",
@@ -5419,6 +5456,15 @@
   ],
   "lat": 64.3012,
   "lon": -21.8614
+ },
+ "place-hyde-park-london": {
+  "name": "Hyde Park, London",
+  "kind": "royal park in London",
+  "nation": "Britain",
+  "wikidata": "Q123738",
+  "source": "https://en.wikipedia.org/wiki/Hyde_Park,_London",
+  "lat": 51.508611111,
+  "lon": -0.163611111
  },
  "place-hyde-park-new-york": {
   "name": "Hyde Park, New York",
@@ -6194,6 +6240,15 @@
   "aka": [
    "Kharkov"
   ]
+ },
+ "place-khimki": {
+  "name": "Khimki",
+  "kind": "town northwest of Moscow",
+  "nation": "Soviet Union",
+  "wikidata": "Q197582",
+  "source": "https://en.wikipedia.org/wiki/Khimki",
+  "lat": 55.889166666,
+  "lon": 37.445
  },
  "place-khreshchatyk": {
   "name": "Khreshchatyk",
@@ -7372,6 +7427,15 @@
   "lat": 48.8611,
   "lon": 2.3358
  },
+ "place-luban": {
+  "name": "Lauban",
+  "kind": "town in Lower Silesia, today Luban, Poland",
+  "nation": "Germany",
+  "wikidata": "Q115723",
+  "source": "https://en.wikipedia.org/wiki/Luba%C5%84",
+  "lat": 51.116666666,
+  "lon": 15.3
+ },
  "place-lubeck": {
   "name": "Lubeck",
   "kind": "city",
@@ -7588,6 +7652,15 @@
   "source": "https://en.wikipedia.org/wiki/Maisons-Alfort",
   "lat": 48.8058,
   "lon": 2.4378
+ },
+ "place-maizuru": {
+  "name": "Maizuru",
+  "kind": "naval port city, Kyoto Prefecture",
+  "nation": "Japan",
+  "wikidata": "Q750573",
+  "source": "https://en.wikipedia.org/wiki/Maizuru",
+  "lat": 35.47475,
+  "lon": 135.385972222
  },
  "place-majdanek-concentration-camp": {
   "name": "Majdanek concentration camp",
@@ -8047,6 +8120,15 @@
   "source": "https://en.wikipedia.org/wiki/Melilla",
   "lat": 35.2825,
   "lon": -2.9475
+ },
+ "place-memorial-sloan-kettering-cancer-center": {
+  "name": "Memorial Sloan Kettering Cancer Center",
+  "kind": "cancer hospital and research institute, New York",
+  "nation": "US",
+  "wikidata": "Q1808012",
+  "source": "https://en.wikipedia.org/wiki/Memorial_Sloan_Kettering_Cancer_Center",
+  "lat": 40.7641,
+  "lon": -73.9568
  },
  "place-memoriale-della-shoah": {
   "name": "Memoriale della Shoah",
@@ -8971,6 +9053,15 @@
    "Atsugi airfield",
    "Atsugi Airdrome"
   ]
+ },
+ "place-naval-air-station-banana-river": {
+  "name": "Naval Air Station Banana River",
+  "kind": "US naval air station in Florida, now Patrick Space Force Base",
+  "nation": "US",
+  "wikidata": "Q1230410",
+  "source": "https://en.wikipedia.org/wiki/Patrick_Space_Force_Base",
+  "lat": 28.235007,
+  "lon": -80.609978
  },
  "place-naval-air-station-corpus-christi": {
   "name": "Naval Air Station Corpus Christi",
@@ -10358,6 +10449,15 @@
   "source": "https://en.wikipedia.org/wiki/Prussia",
   "lat": null,
   "lon": null
+ },
+ "place-puget-sound-naval-shipyard": {
+  "name": "Puget Sound Naval Shipyard",
+  "kind": "naval shipyard at Bremerton, Washington",
+  "nation": "US",
+  "wikidata": "Q1297188",
+  "source": "https://en.wikipedia.org/wiki/Puget_Sound_Naval_Shipyard",
+  "lat": 47.55833,
+  "lon": -122.64417
  },
  "place-pula": {
   "name": "Pula",
@@ -12046,6 +12146,15 @@
   "lat": 52.4861,
   "lon": 13.4717
  },
+ "place-spandau-prison": {
+  "name": "Spandau Prison",
+  "kind": "Allied prison for Nuremberg convicts, Berlin",
+  "nation": "Germany",
+  "wikidata": "Q168700",
+  "source": "https://en.wikipedia.org/wiki/Spandau_Prison",
+  "lat": 52.521111111,
+  "lon": 13.185277777
+ },
  "place-spaso-house": {
   "name": "Spaso House",
   "kind": "U.S. ambassador's residence, Moscow",
@@ -12186,6 +12295,15 @@
   "source": "https://en.wikipedia.org/wiki/Stadelheim_Prison",
   "lat": 48.0997,
   "lon": 11.5919
+ },
+ "place-stagg-field": {
+  "name": "Stagg Field",
+  "kind": "University of Chicago football stadium, site of Chicago Pile 1",
+  "nation": "US",
+  "wikidata": "Q7596914",
+  "source": "https://en.wikipedia.org/wiki/Stagg_Field",
+  "lat": 41.7939,
+  "lon": -87.6039
  },
  "place-stalag-luft-iii": {
   "name": "Stalag Luft III",
@@ -12691,6 +12809,15 @@
   "source": "https://en.wikipedia.org/wiki/Tebaga_Gap",
   "lat": null,
   "lon": null
+ },
+ "place-tebourba": {
+  "name": "Tebourba",
+  "kind": "town in northern Tunisia",
+  "nation": "Tunisia",
+  "wikidata": "Q3099155",
+  "source": "https://en.wikipedia.org/wiki/Tebourba",
+  "lat": 36.829485,
+  "lon": 9.841089
  },
  "place-tehran": {
   "name": "Tehran",
@@ -13454,6 +13581,15 @@
   "lat": 51.4564,
   "lon": -2.6044
  },
+ "place-university-of-chicago": {
+  "name": "University of Chicago",
+  "kind": "university in Chicago, Illinois",
+  "nation": "US",
+  "wikidata": "Q131252",
+  "source": "https://en.wikipedia.org/wiki/University_of_Chicago",
+  "lat": 41.789722222,
+  "lon": -87.599722222
+ },
  "place-university-of-tehran": {
   "name": "University of Tehran",
   "kind": "university",
@@ -14193,6 +14329,24 @@
   "lon": -1.3765,
   "wikidata": "Q8033947",
   "source": "https://en.wikipedia.org/wiki/Woolston,_Southampton"
+ },
+ "place-worms-germany": {
+  "name": "Worms",
+  "kind": "city in Rhineland-Palatinate",
+  "nation": "Germany",
+  "wikidata": "Q3852",
+  "source": "https://en.wikipedia.org/wiki/Worms,_Germany",
+  "lat": 49.6302618,
+  "lon": 8.3620898
+ },
+ "place-wotje-atoll": {
+  "name": "Wotje Atoll",
+  "kind": "atoll in the Marshall Islands",
+  "nation": "Japan",
+  "wikidata": "Q518210",
+  "source": "https://en.wikipedia.org/wiki/Wotje_Atoll",
+  "lat": 9.433333333,
+  "lon": 170.016666666
  },
  "place-wrigley-field": {
   "name": "Wrigley Field",

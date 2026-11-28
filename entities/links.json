@@ -4988,5 +4988,1037 @@
    "id": "place-yamato-museum",
    "role": "mentioned"
   }
+ ],
+ "1936-12-01-hitler-youth-law": [
+  {
+   "id": "unit-hitler-youth",
+   "role": "subject"
+  },
+  {
+   "id": "person-baldur-von-schirach",
+   "role": "subject"
+  },
+  {
+   "id": "person-adolf-hitler",
+   "role": "involved"
+  },
+  {
+   "id": "person-hans-lammers",
+   "role": "involved"
+  },
+  {
+   "id": "place-berlin",
+   "role": "involved"
+  },
+  {
+   "id": "person-artur-axmann",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-vienna",
+   "role": "mentioned"
+  },
+  {
+   "id": "unit-12th-ss-panzer-division-hitlerjugend",
+   "role": "mentioned"
+  },
+  {
+   "id": "unit-volkssturm",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-luban",
+   "role": "mentioned"
+  },
+  {
+   "id": "op-nuremberg-trials",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-spandau-prison",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-worms-germany",
+   "role": "mentioned"
+  }
+ ],
+ "1939-11-30-winter-war": [
+  {
+   "id": "op-winter-war",
+   "role": "subject"
+  },
+  {
+   "id": "op-bombing-of-helsinki-in-world-war-ii",
+   "role": "subject"
+  },
+  {
+   "id": "place-helsinki",
+   "role": "subject"
+  },
+  {
+   "id": "place-karelian-isthmus",
+   "role": "involved"
+  },
+  {
+   "id": "place-helsinki-malmi-airport",
+   "role": "involved"
+  },
+  {
+   "id": "place-helsinki-university-of-technology",
+   "role": "involved"
+  },
+  {
+   "id": "person-vyacheslav-molotov",
+   "role": "involved"
+  },
+  {
+   "id": "machine-molotov-bread-basket",
+   "role": "involved"
+  },
+  {
+   "id": "machine-molotov-cocktail",
+   "role": "involved"
+  },
+  {
+   "id": "person-carl-gustaf-emil-mannerheim",
+   "role": "mentioned"
+  },
+  {
+   "id": "op-moscow-peace-treaty",
+   "role": "mentioned"
+  },
+  {
+   "id": "person-eljas-erkko",
+   "role": "mentioned"
+  }
+ ],
+ "1941-11-29-todt": [
+  {
+   "id": "person-fritz-todt",
+   "role": "subject"
+  },
+  {
+   "id": "person-adolf-hitler",
+   "role": "involved"
+  },
+  {
+   "id": "person-walter-rohland",
+   "role": "involved"
+  },
+  {
+   "id": "place-reich-chancellery",
+   "role": "involved"
+  },
+  {
+   "id": "place-berlin",
+   "role": "involved"
+  },
+  {
+   "id": "person-albert-speer",
+   "role": "involved"
+  },
+  {
+   "id": "aircraft-heinkel-he-111",
+   "role": "involved"
+  },
+  {
+   "id": "place-wolf-s-lair",
+   "role": "involved"
+  },
+  {
+   "id": "unit-organisation-todt",
+   "role": "mentioned"
+  },
+  {
+   "id": "op-battle-of-rostov-1941",
+   "role": "mentioned"
+  },
+  {
+   "id": "op-lend-lease",
+   "role": "mentioned"
+  },
+  {
+   "id": "op-german-declaration-of-war-on-the-united-states",
+   "role": "mentioned"
+  },
+  {
+   "id": "unit-army-group-centre",
+   "role": "mentioned"
+  },
+  {
+   "id": "person-friedrich-fromm",
+   "role": "mentioned"
+  }
+ ],
+ "1941-12-02-khimki": [
+  {
+   "id": "place-khimki",
+   "role": "subject"
+  },
+  {
+   "id": "person-fedor-von-bock",
+   "role": "subject"
+  },
+  {
+   "id": "op-battle-of-moscow",
+   "role": "involved"
+  },
+  {
+   "id": "unit-army-group-centre",
+   "role": "involved"
+  },
+  {
+   "id": "person-franz-halder",
+   "role": "involved"
+  },
+  {
+   "id": "unit-2nd-panzer-division-wehrmacht",
+   "role": "involved"
+  },
+  {
+   "id": "place-moscow",
+   "role": "involved"
+  },
+  {
+   "id": "place-kremlin",
+   "role": "mentioned"
+  },
+  {
+   "id": "person-paul-carell",
+   "role": "mentioned"
+  }
+ ],
+ "1941-12-05-guderian-tula": [
+  {
+   "id": "person-heinz-guderian",
+   "role": "subject"
+  },
+  {
+   "id": "place-tula-russia",
+   "role": "subject"
+  },
+  {
+   "id": "unit-2nd-panzer-army",
+   "role": "involved"
+  },
+  {
+   "id": "unit-50th-army-soviet-union",
+   "role": "involved"
+  },
+  {
+   "id": "person-fedor-von-bock",
+   "role": "involved"
+  },
+  {
+   "id": "person-adolf-hitler",
+   "role": "involved"
+  },
+  {
+   "id": "person-gunther-von-kluge",
+   "role": "involved"
+  },
+  {
+   "id": "op-battle-of-moscow",
+   "role": "involved"
+  },
+  {
+   "id": "unit-army-group-centre",
+   "role": "mentioned"
+  }
+ ],
+ "1941-12-05-moscow-counteroffensive": [
+  {
+   "id": "op-battle-of-moscow",
+   "role": "subject"
+  },
+  {
+   "id": "person-georgy-zhukov",
+   "role": "subject"
+  },
+  {
+   "id": "place-moscow",
+   "role": "involved"
+  },
+  {
+   "id": "person-joseph-stalin",
+   "role": "involved"
+  },
+  {
+   "id": "unit-western-front-soviet-union",
+   "role": "involved"
+  },
+  {
+   "id": "unit-kalinin-front",
+   "role": "involved"
+  },
+  {
+   "id": "person-ivan-konev",
+   "role": "involved"
+  },
+  {
+   "id": "unit-1st-shock-army",
+   "role": "involved"
+  },
+  {
+   "id": "person-aleksandr-vasilevsky",
+   "role": "involved"
+  },
+  {
+   "id": "person-richard-sorge",
+   "role": "involved"
+  },
+  {
+   "id": "place-tver",
+   "role": "involved"
+  },
+  {
+   "id": "place-klin-klinsky-district-moscow-oblast",
+   "role": "involved"
+  },
+  {
+   "id": "place-solnechnogorsk",
+   "role": "involved"
+  },
+  {
+   "id": "unit-army-group-centre",
+   "role": "involved"
+  },
+  {
+   "id": "person-adolf-hitler",
+   "role": "involved"
+  },
+  {
+   "id": "person-walther-von-brauchitsch",
+   "role": "mentioned"
+  },
+  {
+   "id": "person-semyon-timoshenko",
+   "role": "mentioned"
+  }
+ ],
+ "1942-11-30-tassafaronga": [
+  {
+   "id": "op-battle-of-tassafaronga",
+   "role": "subject"
+  },
+  {
+   "id": "person-raizo-tanaka",
+   "role": "subject"
+  },
+  {
+   "id": "machine-type-93-torpedo",
+   "role": "subject"
+  },
+  {
+   "id": "ship-japanese-destroyer-naganami",
+   "role": "involved"
+  },
+  {
+   "id": "ship-japanese-destroyer-takanami-1942",
+   "role": "involved"
+  },
+  {
+   "id": "person-carleton-h-wright",
+   "role": "involved"
+  },
+  {
+   "id": "ship-uss-minneapolis-ca-36",
+   "role": "involved"
+  },
+  {
+   "id": "ship-uss-new-orleans-ca-32",
+   "role": "involved"
+  },
+  {
+   "id": "ship-uss-pensacola-ca-24",
+   "role": "involved"
+  },
+  {
+   "id": "ship-uss-northampton-ca-26",
+   "role": "involved"
+  },
+  {
+   "id": "place-tassafaronga-point",
+   "role": "involved"
+  },
+  {
+   "id": "place-guadalcanal",
+   "role": "involved"
+  },
+  {
+   "id": "place-tulagi",
+   "role": "involved"
+  },
+  {
+   "id": "place-savo-island",
+   "role": "mentioned"
+  },
+  {
+   "id": "ship-japanese-destroyer-teruzuki-1941",
+   "role": "mentioned"
+  }
+ ],
+ "1942-12-01-tebourba": [
+  {
+   "id": "place-tebourba",
+   "role": "subject"
+  },
+  {
+   "id": "person-wallace-le-patourel",
+   "role": "subject"
+  },
+  {
+   "id": "unit-royal-hampshire-regiment",
+   "role": "subject"
+  },
+  {
+   "id": "op-run-for-tunis",
+   "role": "involved"
+  },
+  {
+   "id": "place-djedeida",
+   "role": "involved"
+  },
+  {
+   "id": "unit-10th-panzer-division-wehrmacht",
+   "role": "involved"
+  },
+  {
+   "id": "unit-1st-armored-division-united-states",
+   "role": "involved"
+  },
+  {
+   "id": "machine-victoria-cross",
+   "role": "involved"
+  },
+  {
+   "id": "op-operation-torch",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-guernsey",
+   "role": "mentioned"
+  },
+  {
+   "id": "person-vyvyan-evelegh",
+   "role": "mentioned"
+  },
+  {
+   "id": "unit-78th-infantry-division-united-kingdom",
+   "role": "mentioned"
+  }
+ ],
+ "1942-12-02-chicago-pile": [
+  {
+   "id": "machine-chicago-pile-1",
+   "role": "subject"
+  },
+  {
+   "id": "person-enrico-fermi",
+   "role": "subject"
+  },
+  {
+   "id": "place-stagg-field",
+   "role": "involved"
+  },
+  {
+   "id": "place-university-of-chicago",
+   "role": "involved"
+  },
+  {
+   "id": "person-george-weil",
+   "role": "involved"
+  },
+  {
+   "id": "person-norman-hilberry",
+   "role": "involved"
+  },
+  {
+   "id": "person-leona-woods",
+   "role": "involved"
+  },
+  {
+   "id": "person-eugene-wigner",
+   "role": "involved"
+  },
+  {
+   "id": "person-arthur-compton",
+   "role": "involved"
+  },
+  {
+   "id": "person-james-b-conant",
+   "role": "involved"
+  },
+  {
+   "id": "op-manhattan-project",
+   "role": "mentioned"
+  }
+ ],
+ "1942-12-04-naples-raid": [
+  {
+   "id": "ship-italian-cruiser-muzio-attendolo",
+   "role": "subject"
+  },
+  {
+   "id": "op-bombing-of-naples-in-world-war-ii",
+   "role": "subject"
+  },
+  {
+   "id": "place-naples",
+   "role": "involved"
+  },
+  {
+   "id": "unit-ninth-air-force",
+   "role": "involved"
+  },
+  {
+   "id": "aircraft-consolidated-b-24-liberator",
+   "role": "involved"
+  },
+  {
+   "id": "ship-italian-cruiser-raimondo-montecuccoli",
+   "role": "involved"
+  },
+  {
+   "id": "ship-italian-cruiser-eugenio-di-savoia",
+   "role": "involved"
+  },
+  {
+   "id": "ship-italian-battleship-littorio",
+   "role": "involved"
+  },
+  {
+   "id": "ship-hms-unbroken",
+   "role": "mentioned"
+  },
+  {
+   "id": "op-operation-pedestal",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-messina",
+   "role": "mentioned"
+  },
+  {
+   "id": "op-battle-of-taranto",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-mount-vesuvius",
+   "role": "mentioned"
+  }
+ ],
+ "1943-11-30-tehran-birthday": [
+  {
+   "id": "op-tehran-conference",
+   "role": "subject"
+  },
+  {
+   "id": "person-winston-churchill",
+   "role": "subject"
+  },
+  {
+   "id": "person-joseph-stalin",
+   "role": "involved"
+  },
+  {
+   "id": "person-franklin-d-roosevelt",
+   "role": "involved"
+  },
+  {
+   "id": "place-embassy-of-russia-tehran",
+   "role": "involved"
+  },
+  {
+   "id": "place-tehran",
+   "role": "involved"
+  },
+  {
+   "id": "op-operation-overlord",
+   "role": "involved"
+  },
+  {
+   "id": "person-alan-brooke-1st-viscount-alanbrooke",
+   "role": "mentioned"
+  },
+  {
+   "id": "op-operation-bagration",
+   "role": "mentioned"
+  },
+  {
+   "id": "op-operation-dragoon",
+   "role": "mentioned"
+  }
+ ],
+ "1943-12-02-bari": [
+  {
+   "id": "op-air-raid-on-bari",
+   "role": "subject"
+  },
+  {
+   "id": "ship-ss-john-harvey",
+   "role": "subject"
+  },
+  {
+   "id": "person-stewart-francis-alexander",
+   "role": "subject"
+  },
+  {
+   "id": "place-bari",
+   "role": "involved"
+  },
+  {
+   "id": "aircraft-junkers-ju-88",
+   "role": "involved"
+  },
+  {
+   "id": "unit-luftflotte-2",
+   "role": "involved"
+  },
+  {
+   "id": "machine-mustard-gas",
+   "role": "involved"
+  },
+  {
+   "id": "machine-liberty-ship",
+   "role": "involved"
+  },
+  {
+   "id": "unit-fifteenth-air-force",
+   "role": "mentioned"
+  },
+  {
+   "id": "unit-eighth-army-united-kingdom",
+   "role": "mentioned"
+  },
+  {
+   "id": "person-winston-churchill",
+   "role": "mentioned"
+  },
+  {
+   "id": "person-cornelius-p-rhoads",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-memorial-sloan-kettering-cancer-center",
+   "role": "mentioned"
+  },
+  {
+   "id": "machine-chemotherapy",
+   "role": "mentioned"
+  }
+ ],
+ "1943-12-03-monte-la-difensa": [
+  {
+   "id": "op-battle-of-monte-la-difensa",
+   "role": "subject"
+  },
+  {
+   "id": "unit-first-special-service-force",
+   "role": "subject"
+  },
+  {
+   "id": "person-robert-t-frederick",
+   "role": "involved"
+  },
+  {
+   "id": "op-winter-line",
+   "role": "involved"
+  },
+  {
+   "id": "unit-fifth-army-united-states",
+   "role": "involved"
+  },
+  {
+   "id": "unit-142nd-infantry-regiment-united-states",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-cassino",
+   "role": "mentioned"
+  },
+  {
+   "id": "op-battle-of-anzio",
+   "role": "mentioned"
+  }
+ ],
+ "1943-12-04-hellcat-spec": [
+  {
+   "id": "aircraft-grumman-f6f-hellcat",
+   "role": "subject"
+  },
+  {
+   "id": "aircraft-grumman-f4f-wildcat",
+   "role": "involved"
+  },
+  {
+   "id": "machine-pratt-whitney-r-2800-double-wasp",
+   "role": "involved"
+  },
+  {
+   "id": "ship-uss-enterprise-cv-6",
+   "role": "involved"
+  },
+  {
+   "id": "place-kwajalein-atoll",
+   "role": "involved"
+  },
+  {
+   "id": "aircraft-mitsubishi-a6m-zero",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-wotje-atoll",
+   "role": "mentioned"
+  },
+  {
+   "id": "op-battle-of-the-philippine-sea",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-gilbert-islands",
+   "role": "mentioned"
+  }
+ ],
+ "1943-12-04-kwajalein-raid": [
+  {
+   "id": "person-charles-alan-pownall",
+   "role": "subject"
+  },
+  {
+   "id": "place-kwajalein-atoll",
+   "role": "subject"
+  },
+  {
+   "id": "ship-uss-lexington-cv-16",
+   "role": "involved"
+  },
+  {
+   "id": "place-wotje-atoll",
+   "role": "involved"
+  },
+  {
+   "id": "ship-uss-enterprise-cv-6",
+   "role": "involved"
+  },
+  {
+   "id": "ship-uss-essex-cv-9",
+   "role": "involved"
+  },
+  {
+   "id": "ship-uss-yorktown-cv-10",
+   "role": "involved"
+  },
+  {
+   "id": "ship-uss-belleau-wood-cvl-24",
+   "role": "involved"
+  },
+  {
+   "id": "ship-uss-cowpens-cvl-25",
+   "role": "involved"
+  },
+  {
+   "id": "place-rongerik-atoll",
+   "role": "involved"
+  },
+  {
+   "id": "person-john-henry-towers",
+   "role": "involved"
+  },
+  {
+   "id": "person-marc-mitscher",
+   "role": "mentioned"
+  },
+  {
+   "id": "unit-fast-carrier-task-force",
+   "role": "mentioned"
+  },
+  {
+   "id": "op-battle-of-kwajalein",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-puget-sound-naval-shipyard",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-marshall-islands",
+   "role": "mentioned"
+  }
+ ],
+ "1944-11-29-antwerp-guns": [
+  {
+   "id": "op-antwerp-x",
+   "role": "subject"
+  },
+  {
+   "id": "place-antwerp",
+   "role": "subject"
+  },
+  {
+   "id": "machine-v-1-flying-bomb",
+   "role": "subject"
+  },
+  {
+   "id": "person-clare-hibbs-armstrong",
+   "role": "involved"
+  },
+  {
+   "id": "machine-scr-584-radar",
+   "role": "involved"
+  },
+  {
+   "id": "machine-proximity-fuze",
+   "role": "involved"
+  },
+  {
+   "id": "person-bernard-montgomery",
+   "role": "mentioned"
+  }
+ ],
+ "1944-11-29-grosshau": [
+  {
+   "id": "unit-22nd-infantry-regiment-united-states",
+   "role": "subject"
+  },
+  {
+   "id": "person-charles-t-lanham",
+   "role": "subject"
+  },
+  {
+   "id": "op-battle-of-hurtgen-forest",
+   "role": "involved"
+  },
+  {
+   "id": "unit-4th-infantry-division-united-states",
+   "role": "involved"
+  },
+  {
+   "id": "place-hurtgen-forest",
+   "role": "involved"
+  },
+  {
+   "id": "person-ernest-hemingway",
+   "role": "involved"
+  },
+  {
+   "id": "place-duren",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-roer",
+   "role": "mentioned"
+  },
+  {
+   "id": "machine-across-the-river-and-into-the-trees",
+   "role": "mentioned"
+  }
+ ],
+ "1944-11-30-hill-401": [
+  {
+   "id": "unit-22nd-infantry-regiment-united-states",
+   "role": "subject"
+  },
+  {
+   "id": "op-battle-of-hurtgen-forest",
+   "role": "subject"
+  },
+  {
+   "id": "person-charles-t-lanham",
+   "role": "involved"
+  },
+  {
+   "id": "person-raymond-o-barton",
+   "role": "involved"
+  },
+  {
+   "id": "unit-4th-infantry-division-united-states",
+   "role": "involved"
+  },
+  {
+   "id": "unit-5th-armored-division-united-states",
+   "role": "involved"
+  },
+  {
+   "id": "place-hurtgen-forest",
+   "role": "involved"
+  },
+  {
+   "id": "place-duren",
+   "role": "mentioned"
+  }
+ ],
+ "1944-12-01-l4-rockets": [
+  {
+   "id": "aircraft-piper-j-3-cub",
+   "role": "subject"
+  },
+  {
+   "id": "person-charles-carpenter-pilot",
+   "role": "subject"
+  },
+  {
+   "id": "machine-bazooka",
+   "role": "involved"
+  },
+  {
+   "id": "unit-4th-armored-division-united-states",
+   "role": "involved"
+  },
+  {
+   "id": "person-george-s-patton",
+   "role": "involved"
+  },
+  {
+   "id": "unit-104th-training-division",
+   "role": "involved"
+  },
+  {
+   "id": "op-lorraine-campaign",
+   "role": "involved"
+  },
+  {
+   "id": "ship-uss-ranger-cv-4",
+   "role": "mentioned"
+  },
+  {
+   "id": "op-operation-torch",
+   "role": "mentioned"
+  },
+  {
+   "id": "unit-ninth-air-force",
+   "role": "mentioned"
+  },
+  {
+   "id": "unit-collings-foundation",
+   "role": "mentioned"
+  }
+ ],
+ "1944-12-03-home-guard": [
+  {
+   "id": "unit-home-guard-united-kingdom",
+   "role": "subject"
+  },
+  {
+   "id": "person-george-vi",
+   "role": "involved"
+  },
+  {
+   "id": "place-hyde-park-london",
+   "role": "involved"
+  },
+  {
+   "id": "place-royal-albert-hall",
+   "role": "involved"
+  },
+  {
+   "id": "person-james-grigg",
+   "role": "involved"
+  },
+  {
+   "id": "person-winston-churchill",
+   "role": "mentioned"
+  },
+  {
+   "id": "person-george-robey",
+   "role": "mentioned"
+  },
+  {
+   "id": "person-tommy-trinder",
+   "role": "mentioned"
+  },
+  {
+   "id": "place-exeter",
+   "role": "mentioned"
+  },
+  {
+   "id": "unit-volkssturm",
+   "role": "mentioned"
+  },
+  {
+   "id": "person-george-inwood",
+   "role": "mentioned"
+  },
+  {
+   "id": "machine-george-cross",
+   "role": "mentioned"
+  }
+ ],
+ "1944-12-03-ormoc-bay": [
+  {
+   "id": "op-battle-of-ormoc-bay",
+   "role": "subject"
+  },
+  {
+   "id": "ship-japanese-destroyer-take-1944",
+   "role": "subject"
+  },
+  {
+   "id": "ship-japanese-destroyer-kuwa-1944",
+   "role": "subject"
+  },
+  {
+   "id": "ship-uss-cooper",
+   "role": "involved"
+  },
+  {
+   "id": "ship-uss-allen-m-sumner",
+   "role": "involved"
+  },
+  {
+   "id": "ship-uss-moale",
+   "role": "involved"
+  },
+  {
+   "id": "place-ormoc",
+   "role": "involved"
+  },
+  {
+   "id": "place-leyte",
+   "role": "involved"
+  },
+  {
+   "id": "aircraft-consolidated-pby-catalina",
+   "role": "involved"
+  },
+  {
+   "id": "place-manila",
+   "role": "involved"
+  },
+  {
+   "id": "place-maizuru",
+   "role": "mentioned"
+  }
+ ],
+ "1945-12-05-flight-19": [
+  {
+   "id": "op-flight-19",
+   "role": "subject"
+  },
+  {
+   "id": "aircraft-grumman-tbf-avenger",
+   "role": "subject"
+  },
+  {
+   "id": "place-naval-air-station-fort-lauderdale",
+   "role": "involved"
+  },
+  {
+   "id": "aircraft-martin-pbm-mariner",
+   "role": "involved"
+  },
+  {
+   "id": "place-naval-air-station-banana-river",
+   "role": "involved"
+  },
+  {
+   "id": "ship-uss-solomons",
+   "role": "involved"
+  },
+  {
+   "id": "place-bermuda-triangle",
+   "role": "mentioned"
+  }
  ]
 }
