@@ -2,15 +2,16 @@
 
 Started 19 Nov 2026. The Index is the data layer under everything else: a **date bank** (verified candidate events for all 366 calendar dates) and an **entity layer** (the people, ships, units, aircraft, machines, places, and operations our cards are about). It exists so the archive can be browsed by more than date and series, so the research run starts from a stocked shelf, and so year two never runs dry. This doc holds the rules for both. The checker is `renderer/index_check.py` in the cards repo.
 
-**Status (19 Nov 2026): build started.** The format, the checker, and a pilot (one date, two linked dispatches) are committed. No scheduled task reads any of this yet, and no other doc has changed. See "Where it lives" and "Build order".
+**Status (28 Nov 2026): built and wired in.** All 366 dates are banked (about 5,700 events after the 27 Nov clean pass), the entity layer is merged to `main`, the archive's date pages show the bank's headlines, and from Wed 2 Dec 2026 the research run starts from the bank (Research doc, "The date bank").
 
 ## Where it lives
 * **The date bank is private:** repo `ww2dispatches/ww2dispatches-datebank`, folder `datebank/`, committed to `main`. It holds story notes on events we have not posted, so it stays out of the public cards repo (decided 19 Nov 2026, Brian).
-* **The entity layer is in the cards repo,** folder `entities/`, with the checker at `renderer/index_check.py`. During the build it sits on the `index` branch, merged to `main` once Brian has looked at a sample.
+* **The entity layer is in the cards repo,** folder `entities/`, with the checker at `renderer/index_check.py`. Built on the `index` branch and merged to `main` on 28 Nov 2026 (Brian). Background Index work may still use the `index` branch and is merged to `main` when done.
 * The checker reads both: clone the two repos side by side.
 
 ## What it feeds
-* **Research (Wednesday):** picks from the date bank instead of starting cold. Not wired in yet; that is a rule change for Brian once the bank has proven itself.
+* **Research (Wednesday):** picks from the date bank instead of starting cold, marks what it uses, adds good new finds, and refreshes the date pages (wired in 28 Nov 2026, Brian; Research doc, "The date bank").
+* **The archive date pages:** `renderer/export_timeline.py` writes the bank's open headlines to `timeline/onthisday.json` for the 366 pages at /on-this-day/ (live 28 Nov 2026).
 * **The site:** entity pages (every card about USS Enterprise, about Patton, about the Eastern Front), a map from place coordinates, full "on this day" pages for dates with few cards yet, and a "your birthday in WW2" page.
 * **Code Room:** groups can be planned ahead from the bank ("Approved groups waiting for cards") and found faster from shared entities.
 * **Year two:** from 17 Oct 2027 every date needs three new events that have never run. The bank is that supply.
@@ -90,3 +91,5 @@ Links sit in their own file, not in the dispatch records, so the backfill never 
 
 ## Changelog
 * 19 Nov 2026: Doc created with Brian. Format, checker, and pilot built and committed. Decided: the date bank in a private repo, 8 or more events per date, helper agents allowed.
+* 27 Nov 2026: Clean pass applied (disputed dates, conflicting counts, lens values axis_romania, axis_hungary, vichy_france).
+* 28 Nov 2026: Index merged to `main` (Brian). Research wired to the bank from Wed 2 Dec 2026, and the date pages read the bank's export. Lens values for the remaining Axis partners added in the date bank.
