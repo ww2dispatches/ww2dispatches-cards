@@ -5,6 +5,8 @@ The date bank (private repo ww2dispatches-datebank) holds every banked event wit
 The archive's date pages show only a headline line per event (year, series, title), so this script copies
 just those three fields into timeline/onthisday.json in this repo, which renderer/dispatch_pages.py reads.
 
+Each row is [year, series, headline, bank id]; the id lets a date page hide the line once a dispatch tells that
+event (renderer/dispatch_pages.py same_event).
 Left out: events already posted as a dispatch (status "used"; the dispatch itself shows instead) and events
 whose date is still disputed (date_check "disputed"), so no headline sits on a date we are unsure of.
 
@@ -33,7 +35,7 @@ def main():
             if not t or any(ch in t for ch in "–—"):
                 left += 1
                 continue
-            rows.append([int(e["year"]), SERIES.get(e.get("series"), "battle"), t])
+            rows.append([int(e["year"]), SERIES.get(e.get("series"), "battle"), t, e.get("id", "")])
         rows.sort(key=lambda r: (r[0], r[2]))
         out[md] = rows
         n += len(rows)

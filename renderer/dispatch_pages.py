@@ -214,16 +214,35 @@ def count_words(n, one, many):
     return f"{n} {one if n == 1 else many}"
 
 
+SAME_SKIP = {"the", "of", "a", "and", "spec", "to", "in", "on", "at", "first", "last"}
+
+
+def same_event(rec_id, bank_id):
+    """True when a banked event is the event a dispatch tells: the same date and year, and the bank id matches the
+    record id or shares a key word with it (1943-11-30-tehran-birthday and 1943-11-30-churchill-birthday-tehran).
+    The weekly runs do not mark the bank, so the date page does it here (28 Nov 2026)."""
+    if not bank_id or rec_id[:10] != bank_id[:10]:
+        return False
+    words = lambda s: {w for w in s.split("-")[3:] if w not in SAME_SKIP}
+    return rec_id == bank_id or bool(words(rec_id) & words(bank_id))
+
+
 def build_date_page(md, lst, bank):
     """One calendar date: two short lines, the series filter, then every event in year order. Posted dispatches
     are card rows that appear at their post time; banked events are plain headline lines."""
     label = md_label(md)
     ats = sorted(x["at"] for x in lst)
+    # A banked line that a dispatch tells leaves the list when that dispatch posts (its card takes the line's place).
+    told = []
+    for r in bank:
+        hits = [x["at"] for x in lst if same_event(x["id"], r[3] if len(r) > 3 else "")]
+        told.append(min(hits) if hits else None)
     # The two opening lines change as each dispatch posts, so each state carries its own time window.
     counts = []
     for k in range(len(ats) + 1):
         live = [x for x in lst if k and x["at"] <= ats[k - 1]]
-        years = [r[0] for r in bank] + [x["hist"].year for x in live]
+        now = ats[k - 1] if k else ""
+        years = [r[0] for r, t in zip(bank, told) if not (t and k and t <= now)] + [x["hist"].year for x in live]
         total = len(years)
         c1 = f"{count_words(total, 'event', 'events')} on record, {min(years)} to {max(years)}." if total else "No events on record yet."
         c2 = ("One has a full dispatch. Open its card to read it." if len(live) == 1 else f"{len(live)} have a full dispatch. Open a card to read it.") if live \
@@ -237,9 +256,11 @@ def build_date_page(md, lst, bank):
                      f'<img src="{esc(x["thumb"])}" alt="" width="60" height="75" loading="lazy">'
                      f'<span class="dd-cb"><span class="dd-k">{DOT.format(c=x["color"])}{esc(x["series"])}, {x["hist"].year}, No. {x["num"]}</span>'
                      f'<span class="dd-ct">{esc(x["r"]["title"])}</span><span class="dd-go">Read the dispatch</span></span></a></li>'))
-    for i, (yr, sk, title) in enumerate(bank):
+    for i, r in enumerate(bank):
+        yr, sk, title = r[0], r[1], r[2]
         name, _c, color = sp.SERIES.get(sk, sp.SERIES["battle"])
-        rows.append((yr, 1, i, f'<li class="dd-row" data-s="{esc(sk)}"><span class="dd-y">{yr}</span>{DOT.format(c=color)}'
+        until = f' data-until="{told[i]}"' if told[i] else ""
+        rows.append((yr, 1, i, f'<li class="dd-row"{until} data-s="{esc(sk)}"><span class="dd-y">{yr}</span>{DOT.format(c=color)}'
                                f'<span class="dd-t">{esc(title)}<span class="sr">, {esc(name)}</span></span></li>'))
     rows.sort(key=lambda r: (r[0], r[1], r[2]))
     chips = ('<div class="chips dd-chips" role="group" aria-label="Filter by series"><button class="toggle" type="button" data-s="" aria-pressed="true">All series</button>'
