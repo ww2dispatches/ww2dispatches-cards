@@ -283,34 +283,25 @@
   ],
   "moves": [
    {
-    "unit": "18vg",
-    "move": "advance",
+    "unit": "106id",
+    "move": "leave",
     "order": 1,
-    "to": [
-     6.11,
-     50.28
-    ],
-    "drives": [
-     {
-      "unit": "106id",
-      "to": [
-       5.97,
-       50.26
-      ]
-     }
-    ],
+    "why": "Its last regiment fights on under the 7th Armored; the division leaves the table.",
     "sources": [
-     "Cole, The Ardennes, pp. 407 to 413 (St. Vith falls in the night)",
+     "Cole, The Ardennes, pp. 407 to 413",
      "LOC 12th Army Group situation map, 22 Dec 1944"
     ]
    },
    {
-    "unit": "106id",
-    "move": "leave",
+    "unit": "18vg",
+    "move": "advance",
     "order": 2,
-    "why": "Its last regiment fights on under the 7th Armored; the division leaves the table.",
+    "to": [
+     6.11,
+     50.28
+    ],
     "sources": [
-     "Cole, The Ardennes, pp. 407 to 413",
+     "Cole, The Ardennes, pp. 407 to 413 (St. Vith falls in the night)",
      "LOC 12th Army Group situation map, 22 Dec 1944"
     ]
    }

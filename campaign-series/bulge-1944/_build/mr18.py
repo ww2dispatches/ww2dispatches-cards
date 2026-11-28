@@ -42,9 +42,8 @@ MR[5]=dict(asOf="2400 hrs, 20 Dec 1944",map=m21,line=LINES[5],lineSources=[m21,C
 m22=M("22 Dec 1944")
 MR[6]=dict(asOf="2400 hrs, 21 Dec 1944",map=m22,line=LINES[6],lineSources=[m22,C+", pp. 407 to 413"],
  set=[st("3ad",(5.52,50.293),[m22]),st("84id",(5.354,50.30),[m22,C+", p. 321"])],
- moves=[mv("18vg","advance",(6.11,50.28),1,[C+", pp. 407 to 413 (St. Vith falls in the night)",m22],
-          drives=[{"unit":"106id","to":[5.97,50.26]}]),
-        mv("106id","leave",None,2,[C+", pp. 407 to 413",m22],why="Its last regiment fights on under the 7th Armored; the division leaves the table.")],
+ moves=[mv("106id","leave",None,1,[C+", pp. 407 to 413",m22],why="Its last regiment fights on under the 7th Armored; the division leaves the table."),
+        mv("18vg","advance",(6.11,50.28),2,[C+", pp. 407 to 413 (St. Vith falls in the night)",m22])],
  shifts=[sh("28id",(5.70,49.90),[m22])],
  tonight="St. Vith is lost. Its defenders hold a shrinking horseshoe.")
 m23=M("23 Dec 1944")
