@@ -301,6 +301,19 @@
      "MacDonald, The Last Offensive, p. 39 (units west of Bastogne pull back toward the line Longchamps to the Ourthe)",
      "LOC 12th Army Group situation map, 11 Jan 1945"
     ]
+   },
+   {
+    "unit": "82ab",
+    "move": "fall_back",
+    "order": 3,
+    "to": [
+     5.78,
+     50.5
+    ],
+    "sources": [
+     "LOC 12th Army Group situation map, 11 Jan 1945",
+     "The 11 Jan map first shows the 82d Airborne near Aywaille, relieved on the Salm by the 75th Infantry Division (75th Infantry Division history, lonesentry.com)"
+    ]
    }
   ],
   "tonight": "Quietly, behind rear guards and mines, the Germans are leaving the tip."

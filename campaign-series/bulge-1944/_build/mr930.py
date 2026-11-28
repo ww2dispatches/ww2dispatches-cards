@@ -1,6 +1,7 @@
 from geo import *
 from mr18 import mv,st,sh,C
 MR={}
+CE="Crowding exception: "
 def m(d): return M(d)
 m25,m26,m27,m28,m29,m30,m31,j1=m("25 Dec 1944"),m("26 Dec 1944"),m("27 Dec 1944"),m("28 Dec 1944"),m("29 Dec 1944"),m("30 Dec 1944"),m("31 Dec 1944"),m("1 Jan 1945")
 MR[9]=dict(asOf="2400 hrs, 24 Dec 1944",map=m25,line=LINES[9],lineSources=[m25,C+", pp. 437 to 446 (the spearhead at Celles and Foy-Notre-Dame; the map draws the tip short of them)"],
@@ -36,7 +37,7 @@ MR[15]=dict(asOf="2400 hrs, 30 Dec 1944",map=m31,line=LINES[15],lineSources=[m31
  tonight="Both sides attack at Bastogne on the same morning. Neither breaks through.")
 MR[16]=dict(asOf="2400 hrs, 31 Dec 1944",map=j1,line=LINES[16],lineSources=[j1,C+", pp. 645 to 648"],
  moves=[mv("6ad","arrive",(5.725,49.915),1,[C+", p. 486 and pp. 645 to 648 (the 6th Armored comes up on the corridor's east side, just southeast of Bastogne)",j1],enters="south")],
- shifts=[sh("4ad",(5.585,49.88),[j1]),sh("28id",(5.43,49.80),[j1])],
+ shifts=[sh("4ad",(5.585,49.88),[j1,CE+"on 12 January the 4th Armored stands about 16 km from its map spot, because the 6th Armored and the 101st Airborne hold the ground around Bastogne"]),sh("28id",(5.43,49.80),[j1])],
  tonight="The last night of 1944. Fresh armor waits east of Bastogne.")
 MD="MacDonald, The Last Offensive"
 def J(d): return M(d+" 1945")
@@ -49,7 +50,7 @@ MR[17]=dict(asOf="2400 hrs, 1 Jan 1945",map=J("2 Jan"),line=JLINES[17],lineSourc
 MR[18]=dict(asOf="2400 hrs, 2 Jan 1945",map=J("3 Jan"),line=JLINES[18],lineSources=[J("3 Jan"),MD+", pp. 26 to 27"],
  moves=[mv("17ab","arrive",(5.41,49.95),1,[MD+", p. 37 (the 17th Airborne comes into the line west of Bastogne)",J("3 Jan")],enters="south"),
         mv("28id","leave",None,2,[C+", p. 560",J("3 Jan")],why="The 17th Airborne takes over its sector near Neufchâteau.")],
- shifts=[sh("2ad",(5.50,50.40),[J("3 Jan"),MD+", p. 27"]),sh("84id",(5.36,50.30),[J("3 Jan"),MD+", p. 27"]),sh("82ab",(5.84,50.42),[J("3 Jan")])],
+ shifts=[sh("2ad",(5.50,50.40),[J("3 Jan"),MD+", p. 27"]),sh("84id",(5.36,50.30),[J("3 Jan"),MD+", p. 27",CE+"from 8 to 10 January the 84th stands about 12 to 14 km west of its map spot, because the 2d Armored holds that ground until it drives south on 11 January"]),sh("82ab",(5.84,50.42),[J("3 Jan")])],
  tonight="First Army is set to attack from the north in the morning.")
 MR[19]=dict(asOf="2400 hrs, 3 Jan 1945",map=J("4 Jan"),line=JLINES[19],lineSources=[J("4 Jan"),MD+", pp. 27 to 31"],
  moves=[mv("3ad","arrive",(5.695,50.36),1,[MD+", pp. 27 to 31 (the 2d and 3d Armored lead the VII Corps attack)",J("4 Jan")],enters="north"),
@@ -68,23 +69,24 @@ MR[23]=dict(asOf="2400 hrs, 7 Jan 1945",map=J("8 Jan"),line=JLINES[23],lineSourc
  tonight="The road from La Roche to Vielsalm is cut.")
 MR[24]=dict(asOf="2400 hrs, 8 Jan 1945",map=J("9 Jan"),line=JLINES[24],lineSources=[J("9 Jan"),MD+", pp. 31 to 32"],
  moves=[mv("9pz","leave",None,1,[MD+", pp. 31 to 32 and 39 (Hitler allows a withdrawal from the tip; the German armor begins to leave)",J("9 Jan")],why="Pulled out as Hitler allows the withdrawal from the tip."),
-        mv("2pz","fall_back",(5.47,50.16),2,[MD+", pp. 31 to 32",J("9 Jan")]),
-        mv("82ab","fall_back",(5.78,50.50),3,["The 75th Infantry Division relieves the 82d Airborne along the Salm River, 8 January 1945 (75th Infantry Division history, lonesentry.com)",J("9 Jan")])],
+        mv("2pz","fall_back",(5.47,50.16),2,[MD+", pp. 31 to 32",J("9 Jan")])],
+
  tonight="The tip of the Bulge begins to empty.")
 MR[25]=dict(asOf="2400 hrs, 9 Jan 1945",map=J("10 Jan"),line=JLINES[25],lineSources=[J("10 Jan"),MD+", pp. 39 to 40"],
  moves=[mv("26vg","fall_back",(5.93,50.02),1,[MD+", p. 40 (the 90th Division attacks northeast through the 26th Division southeast of Bastogne and surprises the 5th Parachute Division)",J("10 Jan")])],
  tonight="Third Army attacks again. Southeast of Bastogne, the Germans give ground.")
 MR[26]=dict(asOf="2400 hrs, 10 Jan 1945",map=J("11 Jan"),line=JLINES[26],lineSources=[J("11 Jan"),MD+", pp. 39 to 40"],
  moves=[mv("2pz","leave",None,1,[MD+", pp. 31 to 32 and 39",J("11 Jan")],why="Falls back out of the tip toward Houffalize under Hitler's withdrawal order."),
-        mv("15pg","fall_back",(5.72,50.16),2,[MD+", p. 39 (units west of Bastogne pull back toward the line Longchamps to the Ourthe)",J("11 Jan")])],
+        mv("15pg","fall_back",(5.72,50.16),2,[MD+", p. 39 (units west of Bastogne pull back toward the line Longchamps to the Ourthe)",J("11 Jan")]),
+        mv("82ab","fall_back",(5.78,50.50),3,[J("11 Jan"),"The 11 Jan map first shows the 82d Airborne near Aywaille, relieved on the Salm by the 75th Infantry Division (75th Infantry Division history, lonesentry.com)"])],
  tonight="Quietly, behind rear guards and mines, the Germans are leaving the tip.")
 MR[27]=dict(asOf="2400 hrs, 11 Jan 1945",map=J("12 Jan"),line=JLINES[27],lineSources=[J("12 Jan"),"La Roche liberated 11 Jan 1945 by the 1st Black Watch, 51st Highland Division (51hd.co.uk; Liberation Route Europe); the map, drawn at noon on the 12th, still shows the town German"],
  moves=[mv("2ad","advance",(5.705,50.255),1,[MD+", pp. 32 to 33 (the 2d Armored pushes south toward Houffalize)",J("12 Jan")]),
-        mv("51hd","arrive",(5.56,50.195),2,["51st Highland Division at La Roche, 11 January 1945 (51hd.co.uk)",J("12 Jan")],enters="west")],
- shifts=[sh("3ad",(5.83,50.36),[J("12 Jan")])],
+        mv("51hd","arrive",(5.56,50.195),2,["51st Highland Division at La Roche, 11 January 1945 (51hd.co.uk)",J("12 Jan")],enters="west"),
+        mv("84id","advance",(5.56,50.287),3,[J("12 Jan"),MD+", pp. 32 to 33 (the 84th Division moves up east of the Ourthe beside the 2d Armored)",CE+"on 14 January the 84th stands about 13 km from its map spot, because the 2d Armored and the 51st Highland hold the ground around it"])],
+ shifts=[sh("3ad",(5.83,50.36),[J("12 Jan"),CE+"on 12 January the 3d Armored stands about 13 km from its map spot, because the 2d Armored is driving south past it"])],
  tonight="Highlanders and Americans meet in the ruins of La Roche.")
 MR[28]=dict(asOf="2400 hrs, 12 Jan 1945",map=J("13 Jan"),line=JLINES[28],lineSources=[J("13 Jan"),MD+", pp. 33 to 41"],
- shifts=[sh("84id",(5.56,50.287),[J("13 Jan"),MD+", pp. 32 to 33"])],
  tonight="Far to the east, the Red Army has opened its winter offensive.")
 MR[29]=dict(asOf="2400 hrs, 13 Jan 1945",map=J("14 Jan"),line=JLINES[29],lineSources=[J("14 Jan"),MD+", pp. 40 to 41"],
  moves=[mv("101ab","advance",(5.72,50.05),1,[MD+", p. 41 (the fight for Foy, south of Noville)",J("14 Jan")])],

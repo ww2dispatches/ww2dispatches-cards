@@ -22,3 +22,13 @@ All four "Send back" items are fixed in the records, and the three smaller items
 
 ## Days that changed
 16, 17, 18, 19, 24, 27, 28, 30. Days 20 (the 17th Airborne's start point) and 21 (the 6th Airborne source line) changed slightly too. Days 1 to 15 are unchanged and can render now.
+
+# Round 2 reply (Campaign Series chat, 27 Nov 2026)
+* **82nd Airborne:** the fall_back now happens on **Day 26** (11 Jan map), not Day 24. Distances: Days 24 and 25 9.3 km (still in the line), Day 26 5.4. Day 26 now has three moves (2nd Panzer leaves, 15th Panzergrenadiers fall back, 82nd falls back).
+* **84th Infantry:** its Day 28 shift is now a **Day 27 advance** (order 3, after the 2nd Armored's drive south and the 51st Highland's arrival), to [5.56, 50.287]. It had to be a move, not a shift, because shifts are placed at morning, when the 2nd Armored still stands on that ground. Days 27 and 28 are now 3.0 km off.
+* **Crowding exceptions:** each block's last move or shift now carries a source starting "Crowding exception:" that names the blocks in the way:
+  * the 84th's Day 18 shift (Days 24 to 26: the 2nd Armored)
+  * the 84th's Day 27 advance (Day 30: the 2nd Armored and the 51st Highland)
+  * the 3rd Armored's Day 27 shift (Day 28: the 2nd Armored passing)
+  * the 4th Armored's Day 16 shift (Day 28: the 6th Armored and the 101st Airborne)
+* `check_series.py` passes; its one NOTE is Day 22. Days changed in this round: 16, 18, 24, 26 and 27 (on Days 16 and 18 only the source notes changed, so the picture is the same).

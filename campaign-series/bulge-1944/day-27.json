@@ -305,6 +305,20 @@
      "51st Highland Division at La Roche, 11 January 1945 (51hd.co.uk)",
      "LOC 12th Army Group situation map, 12 Jan 1945"
     ]
+   },
+   {
+    "unit": "84id",
+    "move": "advance",
+    "order": 3,
+    "to": [
+     5.56,
+     50.287
+    ],
+    "sources": [
+     "LOC 12th Army Group situation map, 12 Jan 1945",
+     "MacDonald, The Last Offensive, pp. 32 to 33 (the 84th Division moves up east of the Ourthe beside the 2d Armored)",
+     "Crowding exception: on 14 January the 84th stands about 13 km from its map spot, because the 2d Armored and the 51st Highland hold the ground around it"
+    ]
    }
   ],
   "shifts": [
@@ -315,7 +329,8 @@
      50.36
     ],
     "sources": [
-     "LOC 12th Army Group situation map, 12 Jan 1945"
+     "LOC 12th Army Group situation map, 12 Jan 1945",
+     "Crowding exception: on 12 January the 3d Armored stands about 13 km from its map spot, because the 2d Armored is driving south past it"
     ]
    }
   ],
