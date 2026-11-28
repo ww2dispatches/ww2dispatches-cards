@@ -251,19 +251,35 @@ class Clip:
 
     def table_frame(self, t, ov=True):
         d = self.d; F = self.plate.copy(); self.flat(F, t)
-        rk = d.rake(t); order = sorted(d.pieces, key=lambda p: -((d.rest_from(p) or d.snap_to(p))[1]))
+        # far blocks first, by where each one is at this moment, so a block moving past another is drawn in the right order
+        rk = d.rake(t); order = sorted(d.pieces, key=lambda p: -((d.pos(p, t) or d.rest_from(p) or d.snap_to(p))[1]))
         drawn_rake = False
         for p in order:
             pull = rk and rk[2] == p['id'] and rk[3] == 'pull'
             if rk and rk[2] == p['id'] and not drawn_rake and not pull: self.rake[rk[1]].draw(F, rk[0]); drawn_rake = True
             q = d.pos(p, t)
-            if q is not None: self.spr[p['id']].draw(F, q)
+            if q is not None:
+                al = d.alpha(p, t); self.spr[p['id']].draw(F, q, al)
+                s = d.slot(p['id'])
+                if s and s.get('how') == 'strike': self.strike(F, s, t, al)
             if pull and not drawn_rake: self.rake[rk[1]].draw(F, rk[0]); drawn_rake = True   # a pull reaches over the block
         if rk and not drawn_rake: self.rake[rk[1]].draw(F, rk[0])
         F = zoom(F, 1.0 + (D.TPL['push_in'] - 1) * min(1, max(0, (t - d.t_table) / max(d.T - d.t_table, 1e-3))))
         if not ov: return F
         over(F, self.TAB); kb = min(1, max(0, (t - d.t_tonight) / 0.35)); over(F, self.SA, 1 - kb); over(F, self.SB, kb)
         return F
+    def strike(self, F, s, t, alpha):
+        """the red grease pencil X across a block that has no way out, drawn on the block's top face, stroke by stroke
+        at the night line's pace, fading with the block"""
+        m = np.zeros((H, W), np.float32)
+        for i, (a, b, t0, t1) in enumerate(s['strokes']):
+            if t < t0: break
+            f = min(1.0, (t - t0) / (t1 - t0)); f = f * f * (3 - 2 * f)
+            pts = jitter(np.array([(a[0] + (b[0] - a[0]) * u, a[1] + (b[1] - a[1]) * u) for u in np.linspace(0, f, 40)]), 11 + i, 0.02)
+            px = np.array([D.proj(x, y, D.BH)[0] for x, y in pts])
+            c = pts[len(pts) // 2]; ppu = math.hypot(*np.subtract(D.proj(c[0] + 1, c[1], D.BH)[0], D.proj(c[0], c[1], D.BH)[0]))
+            if len(px) >= 2 and f > 0: cv2.polylines(m, [np.round(px * 16).astype(np.int32)], False, 1.0, max(1, int(round(LINE_W * ppu * 1.2))), cv2.LINE_AA, shift=4)
+        paint(F, wax(m) * alpha)
     def overview_frame(self, t):
         """the whole battle with the morning line, then a push in to the day's view"""
         d = self.d; F = self.main_plate.copy(); paint(F, self.MAIN_AM_A)

@@ -125,32 +125,38 @@ def check(s):
             for a in ids:
                 for b in ids[ids.index(a) + 1:]:
                     if S.cheb(shown[a], shown[b]) < s.block * 0.99: E(f'{a} and {b} overlap at {when}')
-        # nothing passes through anything: sample each move
-        driven = {dv['unit']: m['unit'] for m in mvs for dv in m.get('drives', [])}
-        for m in mvs:
+        # a driven block's end spot is clear of every ground block, even if the driven unit leaves later that day
+        for m in sorted(mvs, key=lambda m: m.get('order', 0)):
             u = m.get('unit')
-            if m.get('move') not in ('advance', 'fall_back') or u not in d['am'] or u not in d['pm']: continue
-            a, b = d['am'][u], d['pm'][u]; mine = [x for x, by in driven.items() if by == u]
-            for v in d['am']:
-                if v == u or v in mine or s.units[v]['type'] in AIR: continue
-                pv = d['pm'].get(v) if v in d['movers'] and m.get('order', 0) > next((mm['order'] for mm in mvs if mm['unit'] == v or v in [x['unit'] for x in mm.get('drives', [])]), 99) else d['am'][v]
-                if pv is None: continue
-                for k in range(1, 40):
-                    q = (a[0] + (b[0] - a[0]) * k / 40, a[1] + (b[1] - a[1]) * k / 40)
-                    if S.cheb(q, pv) < s.block * 0.9: E(f"move {u}: passes through {v} ({s.units[v]['label']}) on the way; list it under drives, or check the positions"); break
-        if any(m.get('move') == 'arrive' for m in mvs):
-            for e in arrive_errors(s, i): E(e)
+            for dv in m.get('drives', []):
+                x = dv.get('unit'); spot = d['pm'].get(x) or (tuple(dv['to']) if dv.get('to') else None)
+                if x not in s.units or not spot: continue
+                later = {mm['unit'] for mm in mvs if mm.get('move') == 'leave' and mm.get('order', 0) > m.get('order', 0)}
+                others = {v: p for v, p in d['pm'].items() if v != x}
+                others.update({v: d['am'][v] for v in later if v in d['am'] and v != x})
+                for v, p in others.items():
+                    if s.units[v]['type'] in AIR: continue
+                    if S.cheb(spot, p) < s.block * 0.99: E(f"drive {u}: pushes {x} onto {v}; move the driven spot, or let it leave first"); break
+        # nothing passes through anything: every slide on the path the engine draws (routes included)
+        if any(m.get('move') in ('advance', 'fall_back', 'arrive', 'leave') for m in mvs):
+            errs, notes = drawn_moves(s, i)
+            for e in errs: E(e)
+            for n_ in notes: s.notes.setdefault(i, []).append(n_)
         ok, bad = s.fits(d)
         if not ok: E(f"the day's moves do not fit one focus ({', '.join(bad)} would be outside the close view); pick one story for the day")
         if not mvs and i > 0 and not mr.get('shifts') and line == d['lineAM']:
             s.notes.setdefault(i, []).append('nothing changes on the table today: a balcony only clip with the line unchanged; confirm the front really held still')
 
-def arrive_errors(s, i):
-    """the arrive moves of day i, tested on the path the engine draws: the day's close table is built as the renderer
-    builds it (series.compile, then day.Day with that table), and every block's place is sampled through each arrive,
-    from arrive_start at the frame edge to its spot, so blocks that moved earlier are met where they now stand"""
+MOVE_NAME = {'advance': 'advance', 'fall_back': 'fall_back', 'arrive': 'arrive', 'surrender': 'leave'}
+
+def drawn_moves(s, i):
+    """(errors, notes): day i's slides tested on the path the engine draws. The day's close table is built as the
+    renderer builds it (series.compile, then day.Day with that table), so every move has gone through the route
+    finder (routes.py), and every block's place is sampled through each slide: blocks that moved earlier are met where
+    they now stand, and a block's own driven blocks go with it. A leave with no way out gets the pencil X (a note);
+    any other move with no clear route is an error."""
     import tempfile
-    out = []
+    errs, notes = [], []
     with tempfile.TemporaryDirectory() as tmp:
         res = s.compile(i, tmp); old = os.environ.get('MAPROOM_TABLE'); os.environ['MAPROOM_TABLE'] = res['table']
         try: d = D.Day(res['close'])
@@ -159,14 +165,21 @@ def arrive_errors(s, i):
             else: os.environ['MAPROOM_TABLE'] = old
     ground = [p for p in d.pieces if p['type'] not in AIR]
     for p in ground:
-        sl = d.slot(p['id']) if p['move'] == 'arrive' else None
-        if sl is None: continue
-        for k in range(1, 80):                                      # the start is off the frame, the end is its spot
+        sl = d.slot(p['id']); mv = p['move']
+        if sl is None or mv not in MOVE_NAME: continue
+        who = f"{MOVE_NAME[mv]} {p['id']}"
+        if sl.get('how') == 'strike': notes.append(f'{who}: no clear way out; struck off with the pencil X'); continue
+        if sl.get('how') == 'blocked': errs.append(f'{who}: no clear route past the other blocks; check the positions'); continue
+        mine = {q['id'] for q in ground if q['move'] == 'driven' and q.get('by') == p['id']}
+        for k in range(1, 80):                                      # the start may be off the frame, the end is its spot
             t = sl['t_move'] + (sl['t_end'] - sl['t_move']) * k / 80; a = d.pos(p, t)
-            hit = next((q for q in ground if q is not p and (b := d.pos(q, t)) is not None
+            hit = next((q for q in ground if q is not p and q['id'] not in mine and (b := d.pos(q, t)) is not None
                         and max(abs(a[0] - b[0]), abs(a[1] - b[1])) < D.BS * 0.9), None)
-            if hit: out.append(f"arrive {p['id']}: passes through {hit['id']} on the way in; pick another enters edge, or check the positions"); break
-    return out
+            if hit:
+                if mv == 'arrive': errs.append(f"{who}: passes through {hit['id']} on the way in; pick another enters edge, or check the positions")
+                else: errs.append(f"{who}: passes through {hit['id']} on the way; list it under drives, or check the positions")
+                break
+    return errs, notes
 
 if __name__ == '__main__':
     s = S.Series(sys.argv[1]); s.notes = {}; re_ = roster_errors(s); check(s)
