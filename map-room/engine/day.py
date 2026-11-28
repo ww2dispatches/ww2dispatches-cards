@@ -2,6 +2,7 @@
 A Day reads a day record's mapRoom block, its series framing for the day's view, the fixed camera and the clip template,
 and works out where everything goes on the table and on screen, and when each move happens."""
 import json, math, os, hashlib
+import routes as R
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.join(HERE, '..')
 TPL = json.load(open(os.path.join(HERE, 'template.json')))
@@ -82,10 +83,42 @@ def ease(x): x = min(1, max(0, x)); return 4 * x ** 3 if x < 0.5 else 1 - (-2 * 
 def unit(v):
     n = math.hypot(*v); return (v[0] / n, v[1] / n) if n > 1e-9 else (1.0, 0.0)
 RAKE_ANGLES = list(range(0, 360, 45))
-def rake_angle(direction):
-    """the rake comes from behind the move: its pole points opposite to the direction of travel; nearest of 8 renders"""
+ROUTE_ANGLES = list(range(0, 360, 10))       # a rake following a curved route turns in finer steps
+def rake_angle(direction, angles=RAKE_ANGLES):
+    """the rake comes from behind the move: its pole points opposite to the direction of travel; nearest render"""
     a = math.degrees(math.atan2(-direction[1], -direction[0])) % 360
-    return min(RAKE_ANGLES, key=lambda r: min(abs(r - a), 360 - abs(r - a)))
+    return min(angles, key=lambda r: min(abs(r - a), 360 - abs(r - a)))
+EDGE_STEP = {'north': (0, 1), 'south': (0, -1), 'east': (1, 0), 'west': (-1, 0)}
+REAR = {'allied': 'west', 'axis': 'east'}    # a leave heads for its own side's rear edge (series.json `rear` overrides)
+def frame_px(X, Y):
+    """table points (numpy arrays) to frame pixels, unzoomed camera"""
+    Hm = homography(); den = Hm[2][0] * X + Hm[2][1] * Y + Hm[2][2]
+    return (Hm[0][0] * X + Hm[0][1] * Y + Hm[0][2]) / den, (Hm[1][0] * X + Hm[1][1] * Y + Hm[1][2]) / den
+def past_edge(edge, X, Y):
+    """the block is wholly past this edge of the frame"""
+    h = BS / 2 + 0.05
+    if edge == 'west': return frame_px(X + h, Y)[0] < 0
+    if edge == 'east': return frame_px(X - h, Y)[0] > W
+    if edge == 'north': return frame_px(X, Y - h)[1] < 0
+    return frame_px(X, Y + h)[1] > H
+def allowed_fn(edge=None):
+    """where a moving block may go: its centre inside the frame, or past the one edge a leave or arrive uses"""
+    def ok(X, Y):
+        px, py = frame_px(X, Y); inside = (px >= 0) & (px <= W) & (py >= 0) & (py <= H)
+        if edge in ('west', 'east'): inside = inside | (((px < 0) if edge == 'west' else (px > W)) & (py >= 0) & (py <= H))
+        if edge in ('north', 'south'): inside = inside | (((py < 0) if edge == 'north' else (py > H)) & (px >= 0) & (px <= W))
+        return inside
+    return ok
+def route_cost(X, Y):
+    """the price of each step: three times as dear under the tab or the strip, so a route keeps to the open table
+    unless the way round is much longer"""
+    import numpy as np
+    bz = TPL['block_zone']; py = frame_px(X, Y)[1]
+    return np.where((py >= bz['top']) & (py <= bz['bottom']), 1.0, 3.0)
+def grid_bounds():
+    import numpy as np
+    c = np.array([unproject(x, y) for x, y in ((0, 0), (W, 0), (W, H), (0, H))])
+    return (c[:, 0].min() - 2.5, c[:, 1].min() - 2.5, c[:, 0].max() + 2.5, c[:, 1].max() + 2.5)
 
 class Day:
     def __init__(self, path, test=None):
@@ -159,7 +192,16 @@ class Day:
         back = [at(P, s0 + (L + D - s0) * (40 - i) / 40, -2 * r + (2 * r - w) * (i / 40) ** 2) for i in range(41)]
         return out + turn + back
     def rake_angles(self):
-        return sorted({ph['angle'] for s in self.slots for ph in s.get('phases', [])})
+        out = {ph['angle'] for s in self.slots for ph in s.get('phases', [])}
+        for s in self.slots:                       # a curved route uses every angle the rake passes through
+            for ph in s.get('phases', []):
+                if ph.get('path'): out |= {rake_angle(R.heading(ph['path'], i / 400), ROUTE_ANGLES) for i in range(401)}
+        return sorted(out)
+    def alpha(self, p, t):
+        """how solid block p is at time t: a block struck off with the X fades with it"""
+        s = self.slot(p['id'])
+        if not s or s.get('how') != 'strike' or t < s['fade'][0]: return 1.0
+        return max(0.0, 1 - ease((t - s['fade'][0]) / (s['fade'][1] - s['fade'][0])))
     def anchor(self, p):
         """where the block's sprite is rendered: its first resting place, in a table cell"""
         return cell(self.rest_from(p) or self.snap_to(p))
@@ -172,13 +214,68 @@ class Day:
             x0, y0, x1, y1 = block_box(pos, 1.0)
             if x1 < 0 or x0 > W or y1 < 0 or y0 > H: break
         return (pos[0] + step[0] * 0.4, pos[1] + step[1] * 0.4)
+    def rear(self, p):
+        return p.get('rear') or REAR['allied' if self.allied(p) else 'axis']
     def surrender_end(self, p):
-        """a surrendered block is pushed back off the table toward its own rear (Allied west, German east)"""
-        fr = self.rest_from(p); step = (-1, 0) if self.allied(p) else (1, 0); pos = fr
+        """a block that leaves goes straight off the table toward its own rear edge (Allied west, German east)"""
+        fr = self.rest_from(p); step = EDGE_STEP[self.rear(p)]; pos = fr
         for _ in range(400):
-            pos = (pos[0] + step[0] * 0.1, pos[1]); x0, y0, x1, y1 = block_box(pos, 1.0)
-            if x1 < 0 or x0 > W: break
-        return (pos[0] + step[0] * 0.4, pos[1])
+            pos = (pos[0] + step[0] * 0.1, pos[1] + step[1] * 0.1); x0, y0, x1, y1 = block_box(pos, 1.0)
+            if x1 < 0 or x0 > W or y1 < 0 or y0 > H: break
+        return (pos[0] + step[0] * 0.4, pos[1] + step[1] * 0.4)
+
+    # ---------- routes (FORMAT.md, Routes) ----------
+    def obstacles(self, p):
+        """every ground block on the table while p moves: blocks that moved before it where they ended, the rest where
+        they started; blocks p drives go with it, and blocks that arrive later or have left are off the table"""
+        mine = {q['id'] for q in self.pieces if q['move'] == 'driven' and q.get('by') == p['id']}
+        out = []
+        for q in self.pieces:
+            if q is p or q['move'] == 'air_mission' or q['id'] in mine: continue
+            qo = self.by_id[q['by']].get('order') if q['move'] == 'driven' else q.get('order')
+            if isinstance(qo, int) and qo < p['order']:
+                if q['move'] == 'surrender': continue
+                spot = self.rest_to(q)
+            else:
+                if q['move'] == 'arrive': continue
+                spot = self.rest_from(q)
+            if spot: out.append(spot)
+        return out
+    def route(self, p):
+        """(a, b, path, how): the slide for a moving block. path is None for a clear straight slide (as before routes);
+        otherwise the curve the rake steers it along. how: 'straight', 'route', 'strike' (a leave with no way out) or
+        'blocked' (another move with no clear route: drawn straight, and the checker fails it)"""
+        if '_route' not in p: p['_route'] = self._find_route(p)
+        return p['_route']
+    def _find_route(self, p):
+        mv = p['move']; obs = self.obstacles(p)
+        if mv == 'arrive': a, b = self.arrive_start(p), self.snap_to(p)
+        elif mv == 'surrender': a, b = self.rest_from(p), self.surrender_end(p)
+        else: a, b = self.rest_from(p), self.snap_to(p)
+        if R.straight_clear(a, b, obs, BS): return a, b, None, 'straight'
+        bounds = grid_bounds()
+        if mv == 'surrender':
+            e = self.rear(p); path = R.find(a, obs, BS, allowed_fn(e), region=lambda X, Y: past_edge(e, X, Y), bounds=bounds, cost=route_cost)
+            if path is None: return a, a, None, 'strike'
+        elif mv == 'arrive':
+            e = p['enters']; path = R.find(b, obs, BS, allowed_fn(e), region=lambda X, Y: past_edge(e, X, Y), bounds=bounds, cost=route_cost)
+            if path is not None: path = path[::-1]
+        else: path = R.find(a, obs, BS, allowed_fn(), goal=b, bounds=bounds, cost=route_cost)
+        if path is None: return a, b, None, 'blocked'
+        return path[0], path[-1], R.resample(path)[0], 'route'
+    def along(self, s, k):
+        """a fraction k of the way through slot s's slide"""
+        if s.get('path'): return R.at(s['path'], k)
+        a, b = s['a'], s['b']; return (a[0] + (b[0] - a[0]) * k, a[1] + (b[1] - a[1]) * k)
+    def strike_x(self, p):
+        """the two grease pencil strokes of the X across a block that has no way out (table units)"""
+        c = self.rest_from(p); h = BS * 0.6
+        return [((c[0] - h, c[1] + h), (c[0] + h, c[1] - h)), ((c[0] + h, c[1] + h), (c[0] - h, c[1] - h))]
+    def pencil_speed(self):
+        """table units a second: the pace of the night line's grease pencil"""
+        P = [self.xy(q) for q in (self.mr.get('linePM') or [])]
+        L = sum(math.hypot(b[0] - a[0], b[1] - a[1]) for a, b in zip(P, P[1:]))
+        return max(L, 4.0) / (0.75 * B['draw'])
 
     # ---------- when things happen ----------
     def _timeline(self):
@@ -209,15 +306,24 @@ class Day:
                 s.update(phases=[p1, p2], track=(tk0, tk1), fade=(p2['t_end'], p2['t_end'] + B['air_fade']), t_done=p2['t_done'])
                 self.events.append((p2['t_end'], 'wipe', B['air_fade']))
                 t = p2['t_done'] + 0.2
+            elif mv == 'surrender' and self.route(p)[3] == 'strike':
+                # no way out: the red grease pencil strikes an X across the block, then block and X fade together
+                sp = self.pencil_speed(); X = self.strike_x(p); strokes = []; u = t
+                for a, b in X:
+                    dur = min(0.9, max(0.3, math.hypot(b[0] - a[0], b[1] - a[1]) / sp))
+                    strokes.append((a, b, u, u + dur)); self.events.append((u, 'pencil', dur)); u += dur + 0.12
+                f0 = strokes[-1][3] + 0.15
+                s.update(how='strike', strokes=strokes, fade=(f0, f0 + 0.5), t_done=f0 + 0.5)
+                t = s['t_done'] + B['mark_gap']
             elif mv in ('advance', 'fall_back', 'arrive', 'surrender'):
-                if mv == 'arrive': a, b = self.arrive_start(p), self.snap_to(p)
-                elif mv == 'surrender': a, b = self.rest_from(p), self.surrender_end(p)
-                else: a, b = self.rest_from(p), self.snap_to(p)
-                s.update(a=a, b=b, rake=rake_angle(unit((b[0] - a[0], b[1] - a[1]))),
+                a, b, path, how = self.route(p)
+                s.update(how=how, path=path)
+                ang = rake_angle(unit((b[0] - a[0], b[1] - a[1]))) if path is None else rake_angle(R.heading(path, 0.0), ROUTE_ANGLES)
+                s.update(a=a, b=b, rake=ang,
                          t_move=t + B['rake_enter'], t_end=t + B['rake_enter'] + B['rake_move'],
                          t_out=t + B['rake_enter'] + B['rake_move'] + B['rake_hold'],
                          t_done=t + B['rake_enter'] + B['rake_move'] + B['rake_hold'] + B['rake_exit'])
-                s['phases'] = [dict(a=a, b=b, mode='push', angle=s['rake'], t0=t, t_move=s['t_move'], t_end=s['t_end'], t_out=s['t_out'], t_done=s['t_done'])]
+                s['phases'] = [dict(a=a, b=b, mode='push', angle=s['rake'], path=path, t0=t, t_move=s['t_move'], t_end=s['t_end'], t_out=s['t_out'], t_done=s['t_done'])]
                 self.events += [(t, 'rake_in', 1.0), (s['t_move'] - 0.01, 'tap', 1.0), (s['t_move'], 'push', B['rake_move']),
                                 (s['t_out'], 'rake_out', 1.0)]
                 if p.get('contact'): self.events.append((s['t_end'] - 0.02, 'knock', 0.8))
@@ -242,7 +348,7 @@ class Day:
         """how far along its move (0 to 1) the attacker is when it meets the block it drives back"""
         s = self.slot(p['by']); q = self.xy(p['from'])
         for i in range(101):
-            k = i / 100; m = (s['a'][0] + (s['b'][0] - s['a'][0]) * k, s['a'][1] + (s['b'][1] - s['a'][1]) * k)
+            k = i / 100; m = self.along(s, k)
             if abs(m[0] - q[0]) < BS + 0.04 and abs(m[1] - q[1]) < BS + 0.04: return k
         return 1.0
     def slot(self, pid): return next((s for s in self.slots if s['id'] == pid), None)
@@ -265,17 +371,19 @@ class Day:
             elif t < p2['t_end']: k = ease((t - p2['t_move']) / B['rake_move']); a, b = p2['a'], p2['b']
             else: return None
             return (a[0] + (b[0] - a[0]) * k, a[1] + (b[1] - a[1]) * k)
-        a, b = s['a'], s['b']
-        if mv == 'arrive' and t < s['t_move']: return a
-        k = ease((t - s['t_move']) / B['rake_move'])
-        return (a[0] + (b[0] - a[0]) * k, a[1] + (b[1] - a[1]) * k)
+        if s.get('how') == 'strike': return self.rest_from(p) if t < s['fade'][1] else None
+        if mv == 'arrive' and t < s['t_move']: return s['a']
+        return self.along(s, ease((t - s['t_move']) / B['rake_move']))
     def rake(self, t):
         """(head position, angle, the piece it moves, push or pull) at time t, or None. A push comes from behind the move;
         a pull reaches from beyond the frame edge, hooks the block's far face and draws it back out"""
         for s in self.slots:
             for ph in s.get('phases', []):
                 if not (ph['t0'] <= t < ph['t_done']): continue
-                p = self.by_id[s['id']]; ang = math.radians(ph['angle'])
+                p = self.by_id[s['id']]; deg = ph['angle']
+                if ph.get('path'):                                         # a curved route: the rake turns with the block
+                    deg = rake_angle(R.heading(ph['path'], ease((t - ph['t_move']) / B['rake_move'])), ROUTE_ANGLES)
+                ang = math.radians(deg)
                 back = (math.cos(ang), math.sin(ang))                      # from the head toward the hand
                 bp = self.pos(p, t) or ph['b']; off = BS / 2 + RAKE_GAP
                 off *= 1.0 / max(abs(back[0]), abs(back[1]))               # a diagonal push meets the corner
@@ -284,5 +392,5 @@ class Day:
                 if t < ph['t_move']: f = 9.0 * (1 - ease((t - ph['t0']) / B['rake_enter']))
                 elif t < ph['t_out']: f = 0.0
                 else: f = 9.0 * ease((t - ph['t_out']) / B['rake_exit'])
-                return (head[0] + back[0] * f, head[1] + back[1] * f), ph['angle'], s['id'], ph['mode']
+                return (head[0] + back[0] * f, head[1] + back[1] * f), deg, s['id'], ph['mode']
         return None
