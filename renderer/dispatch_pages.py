@@ -6,8 +6,11 @@ Never edit the files it writes by hand.
 
 Writes:
   site/dispatches/NNN-slug.html   one permanent page per dispatch card (slug from the record's short name)
-  site/on-this-day/index.html     the archive: today's dispatches, a calendar by month, every posted
-                                  dispatch filed by its date, the series filters and the Name This drawer
+  site/on-this-day/index.html     the archive calendar (Archive Site Design Notes, 28 Nov 2026): a month at a time,
+                                  a mark per posted series on each day, series filters, month buttons, a preview panel
+  site/on-this-day/<month>-<day>/ one page per calendar date (366): every banked event (timeline/onthisday.json,
+                                  exported from the date bank by renderer/export_timeline.py) and every posted
+                                  dispatch for that date, in year order, posted ones as card rows
 Returns the release times for functions/_data/releases.json ("dispatches": {"045": {"slug", "at"}}).
 
 Release rule: a dispatch page shows once its post time has passed (the record's time on its post date,
@@ -108,6 +111,38 @@ def md_label(md):
     return f"{day} {sp.MONTHS[m - 1]}"
 
 
+def day_url(md):
+    m, day = map(int, md.split("-"))
+    return f"/on-this-day/{sp.MONTHS[m - 1].lower()}-{day}/"
+
+
+# Platform buttons (Brian, 27 Nov 2026): one per platform the dispatch went to, each opening that exact post
+# (the record's links section), else the platform's profile. A film only link opens at the film's post time.
+PLATFORMS = [("x", "X", sp.X, ("x", "x_film")), ("instagram", "Instagram", sp.INSTAGRAM, ("instagram", "instagram_reel")),
+             ("threads", "Threads", sp.THREADS, ("threads", "threads_film")),
+             ("facebook", "Facebook", "https://www.facebook.com/ww2dispatches", ("facebook", "facebook_film")),
+             ("tiktok", "TikTok", "https://www.tiktok.com/@ww2dispatches", ("tiktok",)),
+             ("youtube", "YouTube", "https://www.youtube.com/@ww2dispatcheshq", ("youtube",))]
+
+
+def platform_buttons(d):
+    links, buf = d["links"], (d["r"].get("buffer") or {})
+    vat = (d.get("video") or {}).get("at")
+    out = []
+    for key, label, profile, keys in PLATFORMS:
+        card_key, film_keys = keys[0], keys[1:] if key not in ("tiktok", "youtube") else keys
+        posted_card = key not in ("tiktok", "youtube") and (links.get(card_key) or card_key in buf)
+        film = next((links.get(k) for k in film_keys if links.get(k)), None) or next((profile for k in film_keys if k in buf), None)
+        if posted_card:
+            out.append(f'<a class="btn ghost" href="{esc(links.get(card_key) or profile)}" target="_blank" rel="noopener">{label}</a>')
+        elif film:
+            gate = f' data-release="{vat}"' if vat else ""
+            out.append(f'<a class="btn ghost" href="{esc(film)}" target="_blank" rel="noopener"{gate}>{label}</a>')
+    if not out:
+        return ""
+    return f'<p class="dp-seek">See it on</p><div class="dp-plats">{"".join(out)}</div>'
+
+
 def build_page(d, prev, nxt, same_day):
     r = d["r"]
     paras = [p.strip() for p in (r.get("body") or "").split("\n\n") if p.strip()]
@@ -119,24 +154,11 @@ def build_page(d, prev, nxt, same_day):
         extra = f'<table class="dp-spec"><caption>{esc(r.get("specTitle") or "Spec sheet")}</caption>{rows}</table>'
     elif r.get("format") == "quote" and r.get("quote"):
         extra = f'<blockquote class="dp-quote"><p>{esc(r["quote"])}</p><footer>{esc(r.get("quoteBy") or "")}</footer></blockquote>'
-    links = d["links"]
-    threads = links.get("threads") or sp.THREADS
-    ig = links.get("instagram") or sp.INSTAGRAM
-    video = ""
-    if d.get("video"):
-        v = d["video"]
-        video = f'<a class="btn ghost dp-watch" href="{esc(v["link"])}" target="_blank" rel="noopener" data-release="{v["at"]}">{PLAY}{esc(v["label"])}</a>'
-    acts = (f'<a class="btn dp-collect" href="/declass?card={esc(d["id"])}">Collect this card in Declass</a>'
-            f'<div class="dp-acts"><a class="btn cream" href="{esc(threads)}" target="_blank" rel="noopener">{"Read on Instagram" if "instagram.com" in threads else "Read on Threads"}</a>'
-            f'<a class="btn ghost dp-ig" href="{esc(ig)}" target="_blank" rel="noopener" aria-label="See it on Instagram">{IG}</a>{video}</div>')
+    acts = f'<a class="btn dp-collect" href="/declass?card={esc(d["id"])}">Collect this card in Declass</a>{platform_buttons(d)}'
     srcs = ", ".join(f'<a href="{esc(s["url"])}" target="_blank" rel="noopener">{esc(s["title"])}</a>' for s in (r.get("sources") or []) if s.get("url"))
     credit = r.get("photoCredit") or ""
     src = f'<p class="daysrc dp-src">{"Photo: " + esc(credit) + "<br>" if credit else ""}{"Sources: " + srcs if srcs else ""}</p>'
-    also = ""
-    if same_day:
-        also = (f'<section class="dp-also" data-release="{min(x["at"] for x in same_day)}"><h2>Also on {esc(md_label(d["md"]))}</h2>'
-                f'<ul class="dminis">{"".join(mini(x) for x in same_day)}</ul>'
-                f'<a class="backlink dp-more" href="/on-this-day/#d-{d["md"]}">Every {esc(md_label(d["md"]))} dispatch</a></section>')
+    also = f'<p class="dp-back"><a class="backlink" href="{day_url(d["md"])}">{BACK} Back to {esc(md_label(d["md"]))}</a></p>'
 
     def pn(x, cls, word):
         if not x:
@@ -149,7 +171,7 @@ def build_page(d, prev, nxt, same_day):
         return live
     nav = f'<nav class="dp-nav" aria-label="Dispatches">{pn(prev, "prev", "Before")}{pn(nxt, "next", "Next")}</nav>'
     body = f"""<main class="dayview dpview">
-  <div class="daytop"><a class="backlink" href="/on-this-day/#d-{d['md']}">{BACK} On this day, {esc(md_label(d['md']))}</a><span class="dayof">Dispatch No. {d['num']}</span></div>
+  <div class="daytop"><a class="backlink" href="{day_url(d['md'])}">{BACK} {esc(md_label(d['md']))}</a><span class="dayof">Dispatch No. {d['num']}</span></div>
   <article class="dayart">
     <div class="dp-side">
       <figure class="daypic"><img src="{esc(d['img'])}" alt="{esc(card_alt(d))}" width="1080" height="1350"></figure>
@@ -171,88 +193,159 @@ def build_page(d, prev, nxt, same_day):
            "datePublished": d["at"], "author": {"@id": sp.ORG_ID}, "publisher": {"@id": sp.ORG_ID}, "inLanguage": "en",
            "articleSection": d["series"], "url": f"{sp.URL}{d['url']}", "isPartOf": {"@id": sp.SITE_ID},
            "about": {"@type": "Event", "name": r["title"], "startDate": r["date"], "location": {"@type": "Place", "name": r.get("place", "")}}}
-    head = ld(art, crumbs(("On this day", "/on-this-day/"), (md_label(d["md"]), f"/on-this-day/#d-{d['md']}"), (r["title"], d["url"])))
+    head = ld(art, crumbs(("On this day", "/on-this-day/"), (md_label(d["md"]), day_url(d["md"])), (r["title"], d["url"])))
     return page(f"{r['title']}, {d['hist'].day} {sp.MONTHS[d['hist'].month - 1]} {d['hist'].year} | WW2 Dispatches", desc, d["url"], body,
                 "dispatches", image=d["og"], ogtype="article", head_extra=head)
 
 
+LENGTHS = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+DOT = '<span class="dd-dot" style="background:{c}"></span>'
+
+
+def timeline():
+    path = os.path.join(sp.ROOT, "timeline", "onthisday.json")
+    if not os.path.exists(path):
+        problem("timeline/onthisday.json missing: run renderer/export_timeline.py; date pages show dispatches only")
+        return {}
+    return json.load(open(path, encoding="utf-8"))
+
+
+def count_words(n, one, many):
+    return f"{n} {one if n == 1 else many}"
+
+
+def build_date_page(md, lst, bank):
+    """One calendar date: two short lines, the series filter, then every event in year order. Posted dispatches
+    are card rows that appear at their post time; banked events are plain headline lines."""
+    label = md_label(md)
+    ats = sorted(x["at"] for x in lst)
+    # The two opening lines change as each dispatch posts, so each state carries its own time window.
+    counts = []
+    for k in range(len(ats) + 1):
+        live = [x for x in lst if k and x["at"] <= ats[k - 1]]
+        years = [r[0] for r in bank] + [x["hist"].year for x in live]
+        total = len(years)
+        c1 = f"{count_words(total, 'event', 'events')} on record, {min(years)} to {max(years)}." if total else "No events on record yet."
+        c2 = ("One has a full dispatch. Open its card to read it." if len(live) == 1 else f"{len(live)} have a full dispatch. Open a card to read it.") if live \
+            else "No dispatch has been posted for this date yet."
+        gate = (f' data-release="{ats[k - 1]}"' if k else "") + (f' data-until="{ats[k]}"' if k < len(ats) else "")
+        counts.append(f'<div class="dd-count"{gate}><p class="dd-c1">{esc(c1)}</p><p class="dd-c2">{esc(c2)}</p></div>')
+    rows = []
+    for x in lst:
+        rows.append((x["hist"].year, 0, x["num"],
+                     f'<li class="dd-row" data-release="{x["at"]}" data-s="{esc(x["skey"])}"><a class="dd-card" href="{x["url"]}">'
+                     f'<img src="{esc(x["thumb"])}" alt="" width="60" height="75" loading="lazy">'
+                     f'<span class="dd-cb"><span class="dd-k">{DOT.format(c=x["color"])}{esc(x["series"])}, {x["hist"].year}, No. {x["num"]}</span>'
+                     f'<span class="dd-ct">{esc(x["r"]["title"])}</span><span class="dd-go">Read the dispatch</span></span></a></li>'))
+    for i, (yr, sk, title) in enumerate(bank):
+        name, _c, color = sp.SERIES.get(sk, sp.SERIES["battle"])
+        rows.append((yr, 1, i, f'<li class="dd-row" data-s="{esc(sk)}"><span class="dd-y">{yr}</span>{DOT.format(c=color)}'
+                               f'<span class="dd-t">{esc(title)}<span class="sr">, {esc(name)}</span></span></li>'))
+    rows.sort(key=lambda r: (r[0], r[1], r[2]))
+    chips = ('<div class="chips dd-chips" role="group" aria-label="Filter by series"><button class="toggle" type="button" data-s="" aria-pressed="true">All series</button>'
+             + "".join(f'<button class="toggle" type="button" data-s="{k}" aria-pressed="false"><span class="swatch" style="background:{c}"></span>{esc(n)}</button>'
+                       for k, (n, _x, c) in sp.SERIES.items()) + '</div>')
+    m = int(md[:2])
+    body = f"""<main class="daypage">
+  <div class="dd-wrap">
+    <a class="backlink" href="/on-this-day/?m={m}">{BACK} {sp.MONTHS[m - 1]} calendar</a>
+    <h1 class="dd-h"><span class="dd-d">{esc(label)}</span><span class="dd-w">in World War II</span></h1>
+    {"".join(counts)}
+    {chips}
+    <h2 class="dd-div"><span>On this day</span></h2>
+    <ol class="dd-list">{"".join(r[3] for r in rows)}</ol>
+    <p class="dd-empty" hidden>No events in this series on this date.</p>
+  </div>
+</main>"""
+    url = day_url(md)
+    yrs = [r[0] for r in bank]
+    span = f", {min(yrs)} to {max(yrs)}" if yrs else ""
+    desc = f"What happened on {label} in the Second World War{span}: every event we have filed for the date, with full dispatches, archival photos and sources."
+    head = ld({"@type": "CollectionPage", "name": f"{label} in World War II", "url": f"{sp.URL}{url}", "isPartOf": {"@id": sp.SITE_ID}, "description": desc},
+              crumbs(("On this day", "/on-this-day/"), (label, url)))
+    folder = os.path.join(sp.SITE, url.strip("/"))
+    os.makedirs(folder, exist_ok=True)
+    open(os.path.join(folder, "index.html"), "w", encoding="utf-8").write(
+        page(f"{label} in World War II | WW2 Dispatches", desc, url, body, "dispatches", head_extra=head,
+             script=f'<script src="/on-this-day/otd.js?v={sp.asset_v("on-this-day/otd.js")}"></script>\n'))
+    return url
+
+
 def build_archive(ds):
+    """The archive calendar and the 366 date pages (Archive Site Design Notes, 28 Nov 2026)."""
     by_md = {}
     for d in ds:
         by_md.setdefault(d["md"], []).append(d)
     for v in by_md.values():
         v.sort(key=lambda x: (x["hist"], x["num"]))
-    months_with = {int(md[:2]) for md in by_md}
+    bank = timeline()
+    year = dt.datetime.now(sp.DENVER).year
     chips = ('<div class="chips otd-chips" role="group" aria-label="Filter by series"><button class="toggle" type="button" data-s="" aria-pressed="true">All series</button>'
              + "".join(f'<button class="toggle" type="button" data-s="{k}" aria-pressed="false"><span class="swatch" style="background:{c}"></span>{esc(n)}</button>'
-                       for k, (n, _x, c) in sp.SERIES.items())
-             + '<button class="toggle otd-ntbtn" type="button" aria-expanded="false" aria-controls="otd-nt">Name This</button></div>')
-    nt = ('<section class="otd-nt" id="otd-nt" hidden aria-labelledby="otd-nt-h"><span class="otd-nt-k">The Evidence Drawer</span>'
-          '<h2 id="otd-nt-h">Name This</h2><p>A mystery photo from the war, every Wednesday and Saturday at 10 a.m. Each answer opens when the next puzzle posts.</p>'
-          '<ul class="otd-ntlist" id="otd-ntlist"></ul><a class="btn ghostink" href="/name-this/">Open the Evidence Drawer</a></section>')
-    mbtns = "".join(f'<button class="otd-mo" type="button" data-m="{m}"{"" if m in months_with else " disabled"} aria-pressed="false">{sp.MONTHS[m - 1][:3]}</button>'
-                    for m in range(1, 13))
-    lengths = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-    cals = []
-    for m in sorted(months_with):
-        cells = []
-        for day in range(1, lengths[m - 1] + 1):
+                       for k, (n, _x, c) in sp.SERIES.items()) + '</div>')
+    mbtns = "".join(f'<button class="otd-mo" type="button" data-m="{m}" aria-pressed="false">{sp.MONTHS[m - 1][:3]}</button>' for m in range(1, 13))
+    week = "".join(f'<span class="otd-wd" aria-hidden="true">{w}</span>' for w in "SMTWTFS")
+    cals, panels, urls = [], [], []
+    for m in range(1, 13):
+        first = (dt.date(year, m, 1).weekday() + 1) % 7  # Sunday first, as a phone calendar
+        cells = ['<span class="otd-blank" aria-hidden="true"></span>'] * first
+        for day in range(1, LENGTHS[m - 1] + 1):
             md = f"{m:02d}-{day:02d}"
-            if md in by_md:
-                dots = "".join(f'<i data-release="{x["at"]}" data-s="{esc(x["skey"])}" style="background:{x["color"]}"></i>' for x in by_md[md])
-                cells.append(f'<a class="otd-dy" href="#d-{md}" data-md="{md}" aria-label="{esc(md_label(md))}"><span>{day}</span><span class="otd-dots">{dots}</span></a>')
+            lst = by_md.get(md, [])
+            url = build_date_page(md, lst, bank.get(md, []))
+            urls.append(url)
+            marks = "".join(f'<i data-release="{x["at"]}" data-s="{esc(x["skey"])}" style="background:{x["color"]}"></i>' for x in lst)
+            none = f'<i class="none" data-until="{min(x["at"] for x in lst)}"></i>' if lst else '<i class="none"></i>'
+            cells.append(f'<a class="otd-dy" href="{url}" data-md="{md}" aria-label="{esc(md_label(md))}"><span class="otd-n">{day}</span>'
+                         f'<span class="otd-marks">{none}{marks}</span></a>')
+            nb = len(bank.get(md, []))
+            posts = "".join(f'<div class="pv-post" data-release="{x["at"]}" data-s="{esc(x["skey"])}"><span class="pv-k">{DOT.format(c=x["color"])}{esc(x["series"])}, {x["hist"].year}</span>'
+                            f'<span class="pv-t">{esc(x["r"]["title"])}</span></div>' for x in lst)
+            if lst:
+                gate_none = f' data-until="{min(x["at"] for x in lst)}"'
+                more = f'<p class="pv-more" data-release="{min(x["at"] for x in lst)}">{count_words(nb, "more event", "more events")} on this day</p>' if nb else ""
             else:
-                cells.append(f'<span class="otd-dy" aria-hidden="true"><span>{day}</span></span>')
-        cals.append(f'<section class="otd-cal" data-m="{m}" aria-label="{sp.MONTHS[m - 1]}"><h2 class="otd-calh">{sp.MONTHS[m - 1]}</h2><div class="otd-grid">{"".join(cells)}</div></section>')
-    panels = []
-    for md in sorted(by_md):
-        lst = by_md[md]
-        panels.append(f'<section class="otd-day" id="d-{md}" data-release="{min(x["at"] for x in lst)}"><h2>{esc(md_label(md))}</h2>'
-                      f'<ul class="dminis">{"".join(mini(x) for x in lst)}</ul></section>')
-    # Today: one block per post day, shown only on that day (Denver), each row live from its post time;
-    # before then the row shows its time and series only, never the title.
-    by_post = {}
-    for d in ds:
-        by_post.setdefault(d["post"], []).append(d)
-    todays = []
-    for post, lst in sorted(by_post.items()):
-        lst.sort(key=lambda x: x["hhmm"])
-        rows = ""
-        for x in lst:
-            t = esc(TIME_LABEL.get(x["hhmm"], sp.clock(x["hhmm"])))
-            rows += (f'<a class="otd-row" href="{x["url"]}" data-release="{x["at"]}"><span class="otd-tm">{t}</span><span><span class="otd-tt">{esc(x["r"]["title"])}</span>'
-                     f'<span class="otd-yr">{esc(x["series"])} · {x["hist"].year}</span></span></a>'
-                     f'<div class="otd-row later" data-until="{x["at"]}"><span class="otd-tm">{t}</span><span><span class="otd-tt">Posts at {t}</span>'
-                     f'<span class="otd-yr">{esc(x["series"])}</span></span></div>')
-        todays.append(f'<section class="otd-today" data-release="{x["dayStart"]}" data-until="{x["dayEnd"]}" aria-label="Today">'
-                      f'<p class="otd-k">Today, {post.day} {sp.MONTHS[post.month - 1]}</p>{rows}</section>')
+                gate_none, more = "", ""
+            none_block = (f'<div class="pv-none"{gate_none}><span class="pv-k">No dispatch yet</span>'
+                          f'<span class="pv-t">{count_words(nb, "event", "events")} on record for this date</span></div>')
+            panels.append(f'<section class="otd-pv" id="pv-{md}" data-md="{md}" hidden aria-label="{esc(md_label(md))}">'
+                          f'<div class="pv-head"><h2>{esc(md_label(md))}</h2><span class="pv-today" hidden>Today</span></div>'
+                          f'{none_block}{posts}{more}<a class="btn pv-open" href="{url}">Open {esc(md_label(md))}</a></section>')
+        cells += ['<span class="otd-blank" aria-hidden="true"></span>'] * ((7 - len(cells) % 7) % 7)
+        cals.append(f'<section class="otd-cal" data-m="{m}" aria-label="{sp.MONTHS[m - 1]}"><h2 class="otd-calh">{sp.MONTHS[m - 1]}</h2>'
+                    f'<div class="otd-grid">{week}{"".join(cells)}</div></section>')
+    legend = "".join(f'<span><i style="background:{c}"></i>{esc(n)}</span>' for k, (n, _x, c) in sp.SERIES.items()) + '<span><i class="none"></i>No dispatch yet</span>'
     body = f"""<main class="otdpage">
   <header class="pagehead">
-    <span class="kicker">Dispatches</span>
-    <h1>On this day</h1>
-    <p>Every dispatch we have posted, filed by its date. Pick a day to see what happened on it, across every year of the war.</p>
+    <span class="kicker">The Archive</span>
+    <h1>Every day of the war</h1>
+    <p>Pick a date to see what happened on it, from the 1930s to 1949.</p>
   </header>
   <div class="otd-wrap">
-    <div class="otd-todays">{"".join(todays)}</div>
     <div class="otd-main">
       {chips}
-      {nt}
-      <div class="otd-months" role="group" aria-label="Month">{mbtns}</div>
+      <div class="otd-months" role="group" aria-label="Jump to a month">{mbtns}</div>
+      <div class="otd-nav" hidden><button class="otd-arrow" type="button" data-step="-1" aria-label="Previous month">{BACK}</button>
+        <span class="otd-mname"></span><button class="otd-arrow next" type="button" data-step="1" aria-label="Next month">{BACK}</button></div>
       {"".join(cals)}
-      <p class="otd-key">Dots show each dispatch by series. Days fill in as their dispatches post. Each date holds every year we cover, so one day can carry 1938 and 1944 side by side.</p>
+      <p class="otd-legend">{legend}</p>
     </div>
-    <div class="otd-days">{"".join(panels)}</div>
+    <aside class="otd-side">
+      {"".join(panels)}
+      <p class="otd-hint" hidden>Tap a day to preview it. Tap it again to open it.</p>
+    </aside>
   </div>
 </main>"""
-    head = ld({"@type": "CollectionPage", "name": "On this day", "url": f"{sp.URL}/on-this-day/", "isPartOf": {"@id": sp.SITE_ID},
-               "description": "Every WW2 Dispatches post, filed by calendar date: what happened on this day in the Second World War, across every year of the war."},
+    head = ld({"@type": "CollectionPage", "name": "On this day in World War II", "url": f"{sp.URL}/on-this-day/", "isPartOf": {"@id": sp.SITE_ID},
+               "description": "Every day of the Second World War, filed by calendar date: what happened on each date from the 1930s to 1949, with full dispatches, archival photos and sources."},
               crumbs(("On this day", "/on-this-day/")))
     os.makedirs(os.path.join(sp.SITE, "on-this-day"), exist_ok=True)
     open(os.path.join(sp.SITE, "on-this-day", "index.html"), "w", encoding="utf-8").write(
         page("On this day in World War II | WW2 Dispatches",
-             "What happened on this day in the Second World War: every WW2 Dispatches post, filed by its date, with real archival photos and sources.",
+             "What happened on every day of the Second World War: pick a date for every event we have filed, with full dispatches, real archival photos and sources.",
              "/on-this-day/", body, "dispatches", head_extra=head,
              script=f'<script src="/on-this-day/otd.js?v={sp.asset_v("on-this-day/otd.js")}"></script>\n'))
+    return urls
 
 
 def main():
