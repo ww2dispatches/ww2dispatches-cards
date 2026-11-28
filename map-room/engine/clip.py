@@ -239,6 +239,9 @@ class Clip:
                 if f > 0.75:
                     for r in self.PM_POCKETS: m = np.maximum(m, stroke(r, frac=(f - 0.75) / 0.25))
                 paint(F, wax(m))
+        for s in d.slots:                               # a withdrawal's arrow, flat in the spot its block is leaving
+            if s.get('how') == 'fade' and s['strokes'][0][2] <= t < s['afade'][1]:
+                a0, a1 = s['afade']; self.arrow(F, s, t, 1.0 if t < a0 else 1 - D.ease((t - a0) / (a1 - a0)))
         for pid, (kind, geo, s) in self.marks.items():
             if kind == 'track':
                 (a0, a1), (f0, f1) = s['track'], s['fade']
@@ -264,15 +267,13 @@ class Clip:
                 if s and s.get('how') == 'strike': self.strike(F, s, t, al)
             if pull and not drawn_rake: self.rake[rk[1]].draw(F, rk[0]); drawn_rake = True   # a pull reaches over the block
         if rk and not drawn_rake: self.rake[rk[1]].draw(F, rk[0])
-        for s in d.slots:                               # a withdrawal's pencil arrow, over the blocks so a neighbour never hides it
-            if s.get('how') == 'fade' and s['strokes'][0][2] <= t < s['fade'][1]: self.arrow(F, s, t, d.alpha(d.by_id[s['id']], t))
         F = zoom(F, 1.0 + (D.TPL['push_in'] - 1) * min(1, max(0, (t - d.t_table) / max(d.T - d.t_table, 1e-3))))
         if not ov: return F
         over(F, self.TAB); kb = min(1, max(0, (t - d.t_tonight) / 0.35)); over(F, self.SA, 1 - kb); over(F, self.SB, kb)
         return F
     def strike(self, F, s, t, alpha):
-        """the red grease pencil X across a block that has no way out, drawn on the block's top face, stroke by stroke
-        at the night line's pace, fading with the block"""
+        """the black grease pencil X across a destroyed or surrendered block, drawn on the block's top face, stroke by
+        stroke at the night line's pace, fading with the block (red is only ever the front line)"""
         m = np.zeros((H, W), np.float32)
         for i, (a, b, t0, t1) in enumerate(s['strokes']):
             if t < t0: break
@@ -281,16 +282,17 @@ class Clip:
             px = np.array([D.proj(x, y, D.BH)[0] for x, y in pts])
             c = pts[len(pts) // 2]; ppu = math.hypot(*np.subtract(D.proj(c[0] + 1, c[1], D.BH)[0], D.proj(c[0], c[1], D.BH)[0]))
             if len(px) >= 2 and f > 0: cv2.polylines(m, [np.round(px * 16).astype(np.int32)], False, 1.0, max(1, int(round(LINE_W * ppu * 1.2))), cv2.LINE_AA, shift=4)
-        paint(F, wax(m) * alpha)
+        paint(F, wax(m) * alpha, AIR_INK)
     def arrow(self, F, s, t, alpha):
-        """the red grease pencil arrow off a withdrawing block, stroke by stroke at the night line's pace"""
+        """the black grease pencil arrow in the spot a withdrawing block leaves, solid (never dashed like an air track),
+        stroke by stroke at the night line's pace"""
         m = None
         for i, (a, b, t0, t1) in enumerate(s['strokes']):
             if t < t0: break
             f = min(1.0, (t - t0) / (t1 - t0)); f = f * f * (3 - 2 * f)
             pts = jitter(np.array([(a[0] + (b[0] - a[0]) * u, a[1] + (b[1] - a[1]) * u) for u in np.linspace(0, 1, 24)]), 21 + i, 0.01)
             st = stroke(pts, frac=f); m = st if m is None else np.maximum(m, st)
-        if m is not None: paint(F, wax(m) * alpha)
+        if m is not None: paint(F, wax(m) * alpha, AIR_INK)
     def overview_frame(self, t):
         """the whole battle with the morning line, then a push in to the day's view"""
         d = self.d; F = self.main_plate.copy(); paint(F, self.MAIN_AM_A)

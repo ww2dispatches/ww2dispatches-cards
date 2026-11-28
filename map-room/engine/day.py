@@ -280,13 +280,12 @@ class Day:
         c = self.rest_from(p); h = BS * 0.6
         return [((c[0] - h, c[1] + h), (c[0] + h, c[1] - h)), ((c[0] + h, c[1] + h), (c[0] - h, c[1] - h))]
     def withdraw_arrow(self, p):
-        """the pencil arrow for a withdrawal (table units): a shaft about one block long from just off the block's back
-        edge toward `toward` (else the side's rear), then the two strokes of a small head at its tip"""
+        """the pencil arrow for a withdrawal (table units), inside the spot the block leaves: a shaft 0.8 of a block
+        long centred where it stood, pointing `toward` (else the side's rear), then the two strokes of a small head"""
         c = self.rest_from(p); d = COMPASS.get(p.get('toward')) or COMPASS[self.rear(p)]   # the checker refuses a bad toward
-        n = math.hypot(*d); u = (d[0] / n, d[1] / n)
-        e = (BS / 2) / max(abs(u[0]), abs(u[1])) + 0.12          # the block's edge in that direction, plus a gap
-        a = (c[0] + u[0] * e, c[1] + u[1] * e); tip = (a[0] + u[0] * BS, a[1] + u[1] * BS)
-        h = 0.32; out = [(a, tip)]
+        n = math.hypot(*d); u = (d[0] / n, d[1] / n); L = BS * 0.8
+        a = (c[0] - u[0] * L / 2, c[1] - u[1] * L / 2); tip = (c[0] + u[0] * L / 2, c[1] + u[1] * L / 2)
+        h = 0.3; out = [(a, tip)]
         for sgn in (1, -1):
             ang = math.atan2(-u[1], -u[0]) + sgn * math.radians(28)
             out.append((tip, (tip[0] + h * math.cos(ang), tip[1] + h * math.sin(ang))))
@@ -329,14 +328,22 @@ class Day:
             elif mv == 'surrender':
                 # a leave never travels. Withdrawn: the red grease pencil draws a short arrow off the block's back edge
                 # the way the unit went. Destroyed or surrendered: an X across the block. Then a slow fade, marks and all.
+                # Withdrawn: the block fades slowly and, as it goes, the pencil draws a small arrow in the spot it leaves
+                # (nothing can cover it there); the arrow holds, then fades. Destroyed or surrendered: the X across the
+                # block first, a beat, then the slow fade takes block and X.
                 how = self.route(p)[3]; geo = self.strike_x(p) if how == 'strike' else self.withdraw_arrow(p)
-                sp = self.pencil_speed(); strokes = []; u = t
+                sp = self.pencil_speed(); strokes = []
+                u = t if how == 'strike' else t + 0.45      # the arrow starts once the block is visibly fading
                 for k, (a, b) in enumerate(geo):
                     dur = math.hypot(b[0] - a[0], b[1] - a[1]) / sp
                     dur = min(0.9, max(0.3, dur)) if how == 'strike' or k == 0 else min(0.35, max(0.12, dur))
                     strokes.append((a, b, u, u + dur)); self.events.append((u, 'pencil', dur)); u += dur + (0.12 if how == 'strike' else 0.04)
-                f0 = strokes[-1][3] + 0.45                  # hold a beat so the mark registers
-                s.update(how=how, strokes=strokes, fade=(f0, f0 + LEAVE_FADE), t_done=f0 + LEAVE_FADE)
+                if how == 'strike':
+                    f0 = strokes[-1][3] + 0.45              # hold a beat so the X registers
+                    s.update(how=how, strokes=strokes, fade=(f0, f0 + LEAVE_FADE), t_done=f0 + LEAVE_FADE)
+                else:
+                    a0 = max(t + LEAVE_FADE, strokes[-1][3]) + 0.5      # the arrow alone, held half a second
+                    s.update(how=how, strokes=strokes, fade=(t, t + LEAVE_FADE), afade=(a0, a0 + 0.6), t_done=a0 + 0.6)
                 t = s['t_done'] + B['mark_gap']
             elif mv in ('advance', 'fall_back', 'arrive', 'surrender'):
                 a, b, path, how = self.route(p)
