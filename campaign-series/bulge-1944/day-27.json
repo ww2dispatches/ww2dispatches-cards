@@ -280,9 +280,22 @@
   ],
   "moves": [
    {
+    "unit": "2ad",
+    "move": "advance",
+    "order": 1,
+    "to": [
+     5.705,
+     50.255
+    ],
+    "sources": [
+     "MacDonald, The Last Offensive, pp. 32 to 33 (the 2d Armored pushes south toward Houffalize)",
+     "LOC 12th Army Group situation map, 12 Jan 1945"
+    ]
+   },
+   {
     "unit": "51hd",
     "move": "arrive",
-    "order": 1,
+    "order": 2,
     "to": [
      5.56,
      50.195
@@ -290,6 +303,18 @@
     "enters": "west",
     "sources": [
      "51st Highland Division at La Roche, 11 January 1945 (51hd.co.uk)",
+     "LOC 12th Army Group situation map, 12 Jan 1945"
+    ]
+   }
+  ],
+  "shifts": [
+   {
+    "unit": "3ad",
+    "to": [
+     5.83,
+     50.36
+    ],
+    "sources": [
      "LOC 12th Army Group situation map, 12 Jan 1945"
     ]
    }

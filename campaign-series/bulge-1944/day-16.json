@@ -276,12 +276,34 @@
     "move": "arrive",
     "order": 1,
     "to": [
-     5.835,
-     49.88
+     5.725,
+     49.915
     ],
     "enters": "south",
     "sources": [
-     "Cole, The Ardennes, p. 486 and pp. 645 to 648 (the 6th Armored comes up on the corridor's east side)",
+     "Cole, The Ardennes, p. 486 and pp. 645 to 648 (the 6th Armored comes up on the corridor's east side, just southeast of Bastogne)",
+     "LOC 12th Army Group situation map, 1 Jan 1945"
+    ]
+   }
+  ],
+  "shifts": [
+   {
+    "unit": "4ad",
+    "to": [
+     5.585,
+     49.88
+    ],
+    "sources": [
+     "LOC 12th Army Group situation map, 1 Jan 1945"
+    ]
+   },
+   {
+    "unit": "28id",
+    "to": [
+     5.43,
+     49.8
+    ],
+    "sources": [
      "LOC 12th Army Group situation map, 1 Jan 1945"
     ]
    }

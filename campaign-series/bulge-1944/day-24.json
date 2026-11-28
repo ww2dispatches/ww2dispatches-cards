@@ -309,6 +309,19 @@
      "MacDonald, The Last Offensive, pp. 31 to 32",
      "LOC 12th Army Group situation map, 9 Jan 1945"
     ]
+   },
+   {
+    "unit": "82ab",
+    "move": "fall_back",
+    "order": 3,
+    "to": [
+     5.78,
+     50.5
+    ],
+    "sources": [
+     "The 75th Infantry Division relieves the 82d Airborne along the Salm River, 8 January 1945 (75th Infantry Division history, lonesentry.com)",
+     "LOC 12th Army Group situation map, 9 Jan 1945"
+    ]
    }
   ],
   "tonight": "The tip of the Bulge begins to empty."

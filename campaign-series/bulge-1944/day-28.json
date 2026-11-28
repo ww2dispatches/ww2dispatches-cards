@@ -274,6 +274,19 @@
    "LOC 12th Army Group situation map, 13 Jan 1945",
    "MacDonald, The Last Offensive, pp. 33 to 41"
   ],
+  "shifts": [
+   {
+    "unit": "84id",
+    "to": [
+     5.56,
+     50.287
+    ],
+    "sources": [
+     "LOC 12th Army Group situation map, 13 Jan 1945",
+     "MacDonald, The Last Offensive, pp. 32 to 33"
+    ]
+   }
+  ],
   "tonight": "Far to the east, the Red Army has opened its winter offensive."
  },
  "series": "state",

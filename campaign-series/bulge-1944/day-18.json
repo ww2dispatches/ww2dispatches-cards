@@ -284,8 +284,8 @@
     "move": "arrive",
     "order": 1,
     "to": [
-     5.46,
-     49.87
+     5.41,
+     49.95
     ],
     "enters": "south",
     "sources": [
@@ -308,12 +308,33 @@
    {
     "unit": "2ad",
     "to": [
-     5.44,
-     50.32
+     5.5,
+     50.4
     ],
     "sources": [
      "LOC 12th Army Group situation map, 3 Jan 1945",
      "MacDonald, The Last Offensive, p. 27"
+    ]
+   },
+   {
+    "unit": "84id",
+    "to": [
+     5.36,
+     50.3
+    ],
+    "sources": [
+     "LOC 12th Army Group situation map, 3 Jan 1945",
+     "MacDonald, The Last Offensive, p. 27"
+    ]
+   },
+   {
+    "unit": "82ab",
+    "to": [
+     5.84,
+     50.42
+    ],
+    "sources": [
+     "LOC 12th Army Group situation map, 3 Jan 1945"
     ]
    }
   ],

@@ -306,14 +306,25 @@
     "move": "air_mission",
     "order": 1,
     "target": [
-     5.1,
-     50.38
+     5.45,
+     50.42
     ],
     "enters": "east",
     "label": "Air Strike",
     "sources": [
      "Operation Bodenplatte, 1 January 1945: some 900 German aircraft strike Allied airfields in Belgium and the Netherlands. MacDonald, The Last Offensive, p. 25 (the Luftwaffe's New Year's Day attack)",
      "LOC 12th Army Group situation map, 2 Jan 1945"
+    ]
+   },
+   {
+    "unit": "3ad",
+    "move": "leave",
+    "order": 2,
+    "why": "Pulled out of the line to an assembly area near Hamoir, ready for the 3 January attack.",
+    "sources": [
+     "LOC 12th Army Group situation map, 2 Jan 1945",
+     "The 2 Jan map shows the 3d Armored in an assembly area near Hamoir, out of the line before the 3 January attack",
+     "Cole, The Ardennes, ch. XXIII (CCA's fighting south of Manhay runs 22 to 31 December)"
     ]
    }
   ],
@@ -341,8 +352,8 @@
    {
     "unit": "11ad",
     "to": [
-     5.54,
-     49.97
+     5.55,
+     49.975
     ],
     "sources": [
      "LOC 12th Army Group situation map, 2 Jan 1945"

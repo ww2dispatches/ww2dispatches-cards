@@ -280,40 +280,29 @@
   ],
   "moves": [
    {
-    "unit": "2ad",
-    "move": "advance",
+    "unit": "3ad",
+    "move": "arrive",
     "order": 1,
     "to": [
-     5.45,
-     50.285
+     5.695,
+     50.36
     ],
+    "enters": "north",
     "sources": [
-     "MacDonald, The Last Offensive, pp. 27 to 31 (VII Corps attacks south toward Houffalize)",
+     "MacDonald, The Last Offensive, pp. 27 to 31 (the 2d and 3d Armored lead the VII Corps attack)",
      "LOC 12th Army Group situation map, 4 Jan 1945"
     ]
    },
    {
-    "unit": "3ad",
+    "unit": "2ad",
     "move": "advance",
     "order": 2,
     "to": [
-     5.64,
-     50.315
+     5.55,
+     50.32
     ],
     "sources": [
-     "MacDonald, The Last Offensive, pp. 27 to 31",
-     "LOC 12th Army Group situation map, 4 Jan 1945"
-    ]
-   }
-  ],
-  "shifts": [
-   {
-    "unit": "82ab",
-    "to": [
-     5.8,
-     50.39
-    ],
-    "sources": [
+     "MacDonald, The Last Offensive, pp. 27 to 31 (VII Corps attacks south toward Houffalize)",
      "LOC 12th Army Group situation map, 4 Jan 1945"
     ]
    }
