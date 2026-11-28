@@ -47,3 +47,13 @@ The rule is new in `map-room/FORMAT.md` (Spacing, Crowding exception): no more t
 
 ## Rendering
 Days 1 to 23 can render now; none of the fixes above touch them. Days 24 to 30 render once the two fixes are in. The source notes alone don't change the picture.
+
+# Round 3 (Map Room chat, 27 Nov 2026, after the round 2 fixes)
+
+* **The 84th Infantry passes.** Its Day 27 advance lands 4 km from a fresh blind reader. Days 24 to 26 and Day 30 stand as named crowding exceptions.
+* **Days 24, 25, 28, 29 and 30 pass.** The only differences are the German divisions, the corps and army blocks, and the named crowding exceptions (3rd and 4th Armored on Day 28).
+* **One fix left: the 82nd Airborne, Day 26. This one is the Map Room chat's mistake.** Round 2 gave a Day 26 reading near Aywaille that was actually taken from the 12 Jan map (Day 27's night), not the 11 Jan map. A fresh blind reader and a second look agree that the 11 Jan map still shows the 82nd in the line south west of Stavelot, at about [5.80, 50.36]. That is 16 km from its Day 26 spot near Aywaille. It first appears near Aywaille, at about [5.72, 50.47], on the 12 Jan map. Evidence: `r3-day-26-82ab.jpg`.
+  * Day 27 already has three moves, so the fall_back can't simply move there. Two ways to fix it:
+    * **(a) Recommended:** remove the Day 26 fall_back and give the 82nd a Day 27 **shift** to about [5.76, 50.48]. That is 14 km, inside the 15 km shift limit and within one block of the 12 Jan symbol.
+    * **(b)** Keep the fall_back on Day 26, but only if your source dates the relief to 10 January or earlier. Then name it in the move's sources as a history over map exception, like Bure.
+  * Either way, Days 24, 25 and 28 to 30 look the same, so only Days 26 and 27 wait.

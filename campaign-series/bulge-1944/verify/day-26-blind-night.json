@@ -14,18 +14,24 @@
   },
   {
    "unit": "15pg",
-   "result": "record [5.72, 50.16]  reader [5.6, 50.08]  12 km  DIFFERS  note: Hatched box marked 15 (division) north of the 3 box, between St. Hubert and Bastogne inside the bulge. The inner symbol is hard to read, but the number fits.",
+   "result": "record [5.72, 50.16]  reader [5.6, 50.08]  12 km  DIFFERS  note: Hatched division box labeled 15 with a crossed armor symbol (panzer grenadier), just east of the 5.6E line.",
    "km": 12.3
+  },
+  {
+   "unit": "82ab",
+   "result": "record [5.78, 50.5]  reader [5.8, 50.36]  16 km  DIFFERS  note: Box marked AB, labeled 82 (+), south west of Stavelot.",
+   "km": 15.5
   }
  ],
  "line": {
-  "worstKm": 5.7,
+  "worstKm": 5.5,
   "over": []
  },
  "readerNotes": {
-  "line": "Traced along the heavy ticked line: enters at the top near 5.9E, dips west to about 5.77E then runs east along about 51.0N, down the Roer past Duren to Monschau, west along about 50.4N to Stavelot, around the bulge tip west of St. Hubert, back east past Bastogne and along the Sauer, down the Moselle to Remich, then along the Saar past Merzig and off the east edge near 49.21N. The straight unticked line running southwest from the Saar toward St. Avold is a boundary and was left out. Points were sampled at even spacing along the line."
+  "line": "Traced from the heavy ticked line: enters at the top near Geilenkirchen, runs east along about 51.0N, down the Roer past Dueren and Monschau, west along the north shoulder of the bulge (Stavelot area), around the western tip near St Hubert, back east along the south shoulder past Bastogne to the Our and Sauer, then south east along the Moselle and Saar, leaving the east edge near 6.84E 49.23N. Small gaps in the line where grid labels and symbols cross it were bridged. Points east of 6.7E use one grid line for scale, so they may be off by about 0.01."
  },
  "sentBack": [
-  "15pg"
+  "15pg",
+  "82ab"
  ]
 }

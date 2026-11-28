@@ -16,11 +16,6 @@
    "unit": "2pz",
    "result": "record [5.47, 50.16]  reader [5.33, 50.09]  13 km  DIFFERS  note: Hatched armor XX labelled 2 west of St Hubert, at the 5.3E 50.1N crossing. Another hatched armor XX labelled 2 near La Roche at [5.63, 50.22] has marks under the number that look like SS runes, so that one is taken as 2d SS Panzer. Moderately sure.",
    "km": 12.7
-  },
-  {
-   "unit": "82ab",
-   "result": "record [5.78, 50.5]  reader [5.8, 50.34]  18 km  DIFFERS  note: XX box with AB, labelled 82 (+), west of Stavelot inside the north shoulder.",
-   "km": 17.8
   }
  ],
  "line": {
@@ -31,7 +26,6 @@
   "line": "Line enters at the north edge near 5.85E 51.17N, runs along the Roer front past Julich and Duren, south past Monschau, around the Bulge (Stavelot, north of La Roche, tip near Rochefort about 5.25E, south past St Hubert), around the Bastogne salient, east along the Sure to the Moselle near Remich, then the Saar front past Saarlautern, leaving the east edge about 6.85E 49.22N. A thick line west from the Bulge tip toward Philippeville is the Twenty One / Twelfth army group boundary and was left out. A thinner, partly dashed line running south from near Saarlautern through St Avold to the south edge looks like a boundary, not the front, and was left out."
  },
  "sentBack": [
-  "2pz",
-  "82ab"
+  "2pz"
  ]
 }
