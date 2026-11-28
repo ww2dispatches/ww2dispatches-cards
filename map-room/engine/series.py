@@ -28,6 +28,11 @@ class Series:
 
     def err(self, i, msg): self.errors.setdefault(i, []).append(msg)
     def allied(self, uid): return self.units[uid]['nation'] in D.ALLIED
+    def rear(self, uid):
+        """the side's rear edge for a unit: series.json `rear` by nation ("germany") or by side ("allied", "axis"),
+        else west for the Allies and east for the Axis"""
+        r = self.cfg.get('rear', {}); nat = self.units[uid]['nation']; side = 'allied' if self.allied(uid) else 'axis'
+        return r.get(nat) or r.get(side) or D.REAR[side]
 
     # ---------- the front ----------
     def german_side(self, line, ll):
@@ -163,7 +168,8 @@ class Series:
                 q = piece(u, move=mv, order=m['order'], sources=m.get('sources', []))
                 if a: q['from'] = list(a)
                 if mv in ('advance', 'fall_back', 'arrive'): q['to'] = list(b)
-                if mv == 'surrender': q['fate'] = m.get('fate', 'withdrawn')   # a leave fades where it stands; struck first if destroyed or surrendered
+                if mv == 'surrender':                      # a leave fades where it stands: arrow first if withdrawn, X if destroyed or surrendered
+                    q['fate'] = m.get('fate', 'withdrawn'); q['toward'] = m.get('toward') or self.rear(u)
                 for x in ('enters', 'target'):
                     if x in m: q[x] = m[x]
             elif u in driven: q = piece(u, move='driven', by=driven[u], to=list(b)); q['from'] = list(a)

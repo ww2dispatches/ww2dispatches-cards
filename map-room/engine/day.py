@@ -90,6 +90,9 @@ def rake_angle(direction, angles=RAKE_ANGLES):
     return min(angles, key=lambda r: min(abs(r - a), 360 - abs(r - a)))
 STEER = False                                # straight lines only (FORMAT.md, Brian 28 Nov 2026): routes.py is kept, unused
 FATES = ('withdrawn', 'destroyed', 'surrendered'); STRUCK = ('destroyed', 'surrendered')   # a leave's fate; struck ones get the pencil X
+COMPASS = {'north': (0, 1), 'northeast': (1, 1), 'east': (1, 0), 'southeast': (1, -1), 'south': (0, -1),
+           'southwest': (-1, -1), 'west': (-1, 0), 'northwest': (-1, 1)}    # a withdrawal's `toward`
+LEAVE_FADE = 1.5                             # seconds a leaving block takes to fade (Brian: time to see it)
 EDGE_STEP = {'north': (0, 1), 'south': (0, -1), 'east': (1, 0), 'west': (-1, 0)}
 REAR = {'allied': 'west', 'axis': 'east'}    # a leave heads for its own side's rear edge (series.json `rear` overrides)
 def frame_px(X, Y):
@@ -276,6 +279,18 @@ class Day:
         """the two grease pencil strokes of the X across a block that has no way out (table units)"""
         c = self.rest_from(p); h = BS * 0.6
         return [((c[0] - h, c[1] + h), (c[0] + h, c[1] - h)), ((c[0] + h, c[1] + h), (c[0] - h, c[1] - h))]
+    def withdraw_arrow(self, p):
+        """the pencil arrow for a withdrawal (table units): a shaft about one block long from just off the block's back
+        edge toward `toward` (else the side's rear), then the two strokes of a small head at its tip"""
+        c = self.rest_from(p); d = COMPASS.get(p.get('toward')) or COMPASS[self.rear(p)]   # the checker refuses a bad toward
+        n = math.hypot(*d); u = (d[0] / n, d[1] / n)
+        e = (BS / 2) / max(abs(u[0]), abs(u[1])) + 0.12          # the block's edge in that direction, plus a gap
+        a = (c[0] + u[0] * e, c[1] + u[1] * e); tip = (a[0] + u[0] * BS, a[1] + u[1] * BS)
+        h = 0.32; out = [(a, tip)]
+        for sgn in (1, -1):
+            ang = math.atan2(-u[1], -u[0]) + sgn * math.radians(28)
+            out.append((tip, (tip[0] + h * math.cos(ang), tip[1] + h * math.sin(ang))))
+        return out
     def pencil_speed(self):
         """table units a second: the pace of the night line's grease pencil"""
         P = [self.xy(q) for q in (self.mr.get('linePM') or [])]
@@ -311,17 +326,17 @@ class Day:
                 s.update(phases=[p1, p2], track=(tk0, tk1), fade=(p2['t_end'], p2['t_end'] + B['air_fade']), t_done=p2['t_done'])
                 self.events.append((p2['t_end'], 'wipe', B['air_fade']))
                 t = p2['t_done'] + 0.2
-            elif mv == 'surrender' and self.route(p)[3] == 'fade':
-                # withdrawn: the block fades where it stands, no rake, no sound
-                s.update(how='fade', fade=(t, t + 0.5), t_done=t + 0.5); t = s['t_done'] + B['mark_gap']
-            elif mv == 'surrender' and self.route(p)[3] == 'strike':
-                # destroyed or surrendered: the red grease pencil strikes an X across the block, then block and X fade together
-                sp = self.pencil_speed(); X = self.strike_x(p); strokes = []; u = t
-                for a, b in X:
-                    dur = min(0.9, max(0.3, math.hypot(b[0] - a[0], b[1] - a[1]) / sp))
-                    strokes.append((a, b, u, u + dur)); self.events.append((u, 'pencil', dur)); u += dur + 0.12
-                f0 = strokes[-1][3] + 0.15
-                s.update(how='strike', strokes=strokes, fade=(f0, f0 + 0.5), t_done=f0 + 0.5)
+            elif mv == 'surrender':
+                # a leave never travels. Withdrawn: the red grease pencil draws a short arrow off the block's back edge
+                # the way the unit went. Destroyed or surrendered: an X across the block. Then a slow fade, marks and all.
+                how = self.route(p)[3]; geo = self.strike_x(p) if how == 'strike' else self.withdraw_arrow(p)
+                sp = self.pencil_speed(); strokes = []; u = t
+                for k, (a, b) in enumerate(geo):
+                    dur = math.hypot(b[0] - a[0], b[1] - a[1]) / sp
+                    dur = min(0.9, max(0.3, dur)) if how == 'strike' or k == 0 else min(0.35, max(0.12, dur))
+                    strokes.append((a, b, u, u + dur)); self.events.append((u, 'pencil', dur)); u += dur + (0.12 if how == 'strike' else 0.04)
+                f0 = strokes[-1][3] + 0.45                  # hold a beat so the mark registers
+                s.update(how=how, strokes=strokes, fade=(f0, f0 + LEAVE_FADE), t_done=f0 + LEAVE_FADE)
                 t = s['t_done'] + B['mark_gap']
             elif mv in ('advance', 'fall_back', 'arrive', 'surrender'):
                 a, b, path, how = self.route(p)
