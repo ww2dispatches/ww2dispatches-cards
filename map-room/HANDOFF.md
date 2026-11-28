@@ -31,6 +31,13 @@ Written by the Map Room chat: what to build or fix and why, one item each, dated
   3. Every leave in the Bulge is a withdrawal (Days 6, 8, 17, 18, 20, 24, 26), so no record changes are needed; they all take the plain fade.
   4. Run the checker on the Bulge, then **re-render only Days 6 and 8** (the two days with a leave; Brian checked Days 7, 9 and 10 and they stay as rendered) and stop for Brian. Note in Done whether any later day now fails the straight line check, so it can go to the Campaign Series chat before its batch.
 
+* **28 Nov 2026, a withdrawal gets a pencil arrow and a slower fade (Brian, after the new Days 6 and 8).** The fade is too quick to register, and Brian wants the viewer to have time to see what is happening. The rule is in `map-room/FORMAT.md` (move set, Straight lines only, `fate` and `toward`). Please:
+  1. **`fate: withdrawn` (the default):** the red grease pencil draws a short arrow, about one block long, starting at the block's back edge and pointing the way the unit went (same pencil, width and drawing speed as the line, with a small arrowhead). Hold a beat, then fade the block over about 1.5 s; the arrow fades with it.
+  2. **`destroyed` or `surrendered`:** the X as built, then the same 1.5 s fade.
+  3. **Direction:** the new optional field `toward` (a compass direction, eight points). If it's missing, use `rear` from `series.json` by nation (add `rear` with Allies west and Germans east for the Bulge). The checker accepts only the eight directions.
+  4. The Campaign Series chat is adding `toward: "north"` to the 3rd Armored's Day 17 leave (it went north to Hamoir). The other six Bulge leaves use the default.
+  5. **Re-render Days 6 and 8** and stop for Brian. Later batches pick it up as they render.
+
 ## Done
 Written by the desktop: what changed, the commit, where the test clip is.
 
