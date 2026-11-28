@@ -77,14 +77,13 @@ MR[25]=dict(asOf="2400 hrs, 9 Jan 1945",map=J("10 Jan"),line=JLINES[25],lineSour
  tonight="Third Army attacks again. Southeast of Bastogne, the Germans give ground.")
 MR[26]=dict(asOf="2400 hrs, 10 Jan 1945",map=J("11 Jan"),line=JLINES[26],lineSources=[J("11 Jan"),MD+", pp. 39 to 40"],
  moves=[mv("2pz","leave",None,1,[MD+", pp. 31 to 32 and 39",J("11 Jan")],why="Falls back out of the tip toward Houffalize under Hitler's withdrawal order."),
-        mv("15pg","fall_back",(5.72,50.16),2,[MD+", p. 39 (units west of Bastogne pull back toward the line Longchamps to the Ourthe)",J("11 Jan")]),
-        mv("82ab","fall_back",(5.78,50.50),3,[J("11 Jan"),"The 11 Jan map first shows the 82d Airborne near Aywaille, relieved on the Salm by the 75th Infantry Division (75th Infantry Division history, lonesentry.com)"])],
+        mv("15pg","fall_back",(5.72,50.16),2,[MD+", p. 39 (units west of Bastogne pull back toward the line Longchamps to the Ourthe)",J("11 Jan")])],
  tonight="Quietly, behind rear guards and mines, the Germans are leaving the tip.")
 MR[27]=dict(asOf="2400 hrs, 11 Jan 1945",map=J("12 Jan"),line=JLINES[27],lineSources=[J("12 Jan"),"La Roche liberated 11 Jan 1945 by the 1st Black Watch, 51st Highland Division (51hd.co.uk; Liberation Route Europe); the map, drawn at noon on the 12th, still shows the town German"],
  moves=[mv("2ad","advance",(5.705,50.255),1,[MD+", pp. 32 to 33 (the 2d Armored pushes south toward Houffalize)",J("12 Jan")]),
         mv("51hd","arrive",(5.56,50.195),2,["51st Highland Division at La Roche, 11 January 1945 (51hd.co.uk)",J("12 Jan")],enters="west"),
         mv("84id","advance",(5.56,50.287),3,[J("12 Jan"),MD+", pp. 32 to 33 (the 84th Division moves up east of the Ourthe beside the 2d Armored)",CE+"on 14 January the 84th stands about 13 km from its map spot, because the 2d Armored and the 51st Highland hold the ground around it"])],
- shifts=[sh("3ad",(5.83,50.36),[J("12 Jan"),CE+"on 12 January the 3d Armored stands about 13 km from its map spot, because the 2d Armored is driving south past it"])],
+ shifts=[sh("82ab",(5.76,50.48),[J("12 Jan"),"The 12 Jan map first shows the 82d Airborne near Aywaille, relieved on the Salm by the 75th Infantry Division (75th Infantry Division history, lonesentry.com, dates the relief 8 January; the 9, 10 and 11 Jan maps still show the 82d in the line, so the block follows the maps)"]),sh("3ad",(5.83,50.36),[J("12 Jan"),CE+"on 12 January the 3d Armored stands about 13 km from its map spot, because the 2d Armored is driving south past it"])],
  tonight="Highlanders and Americans meet in the ruins of La Roche.")
 MR[28]=dict(asOf="2400 hrs, 12 Jan 1945",map=J("13 Jan"),line=JLINES[28],lineSources=[J("13 Jan"),MD+", pp. 33 to 41"],
  tonight="Far to the east, the Red Army has opened its winter offensive.")

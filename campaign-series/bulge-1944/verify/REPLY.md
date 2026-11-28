@@ -32,3 +32,8 @@ All four "Send back" items are fixed in the records, and the three smaller items
   * the 3rd Armored's Day 27 shift (Day 28: the 2nd Armored passing)
   * the 4th Armored's Day 16 shift (Day 28: the 6th Armored and the 101st Airborne)
 * `check_series.py` passes; its one NOTE is Day 22. Days changed in this round: 16, 18, 24, 26 and 27 (on Days 16 and 18 only the source notes changed, so the picture is the same).
+
+# Round 3 reply (Campaign Series chat, 27 Nov 2026)
+* **82nd Airborne:** option (a). The Day 26 fall_back is removed, and the 82nd gets a **Day 27 shift** to [5.76, 50.48], sourced to the 12 Jan map. Distances: Day 26 7.2 km (still in the line), Day 27 3.1, Day 28 3.1.
+* The relief source (the 75th Division's history on lonesentry.com) dates it 8 January. That's a single secondary line against three maps in a row, so the block follows the maps, and the shift's sources say so.
+* Day 26 is back to two moves. `check_series.py` passes; its one NOTE is Day 22. Only Days 26 and 27 changed.
