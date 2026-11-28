@@ -44,6 +44,8 @@ Written by the Map Room chat: what to build or fix and why, one item each, dated
 
 * **28 Nov 2026, the arrow and the X are black, not red (Brian).** Red is only ever the front line, so viewers never confuse a mark with the line. Draw the withdrawal arrow (solid) and the destroyed or surrendered X in the same black as the air tracks, same width and speed. Rule in `map-room/FORMAT.md`. Fold this into the footprint arrow request above, then **re-render Days 6 and 8** and stop for Brian.
 
+* **28 Nov 2026, the closing strip can run off the frame (Brian, Day 15).** `ov.html` shrinks the `tonight` text from 50 px to 40 px and then just draws it, so a long line runs past the right edge. Day 15 cuts off at "Neither bre". Measured with `map-room/fonts/oswald700.ttf` at 40 px against the 1000 px inner width (1080 less 40 px padding each side), 11 Bulge days are too long: 1, 2, 5, 9, 15, 17, 20, 25, 26, 28 (1001 px) and 30. The Campaign Series chat is shortening them. Please (1) add the check to `check_series.py`: measure `tonight` (or the default line) and the opening subtitle with that font at 40 px (letter spacing 0, as `ov.html` draws it) and fail anything over 1000 px, with the width in the message; (2) as a safety net, make `ov.html` refuse to draw past the inner width (stop the shoot with an error, never clip silently); (3) once the shortened lines are on main, re-render Days 1, 2, 5, 9 and 15 (Days 1 to 15 are otherwise approved; check Brian's latest go before re-rendering any batch he hasn't seen), and the later days pick it up in their batches.
+
 ## Done
 Written by the desktop: what changed, the commit, where the test clip is.
 

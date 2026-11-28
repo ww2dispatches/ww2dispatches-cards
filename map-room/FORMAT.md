@@ -73,7 +73,7 @@ A roster of 15 to 25 units suits a land battle of this size. Divisions are the n
 | `shifts` | Units that are somewhere else tonight without it being shown: small adjustments of 15 km or less. The block is simply in the new place when the clip opens. Anything farther must be a move on some day. |
 | `set` | Day 1 only (or the day a unit first appears without an `arrive`): `{"unit", "at", "sources"}` for every unit on the table. |
 | `focus` | Optional `[lon, lat]`. Leave it out and the engine centers on the day's moves. |
-| `tonight` | Optional closing strip. |
+| `tonight` | Optional closing strip. **It must fit on one line** (Brian, 28 Nov 2026): at most 1000 px wide in Oswald Bold at 40 px, the strip's smallest size. Oswald is not a fixed width font, so count pixels, not letters; as a rule of thumb keep it to about 55 characters. The checker measures it. |
 
 ### The move set
 | `move` | On the table | Fields |
