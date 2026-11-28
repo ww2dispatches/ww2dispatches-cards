@@ -637,8 +637,8 @@
   "name": "U-119",
   "kind": "Kriegsmarine minelaying U-boat",
   "nation": "Germany",
-  "wikidata": "Q2380247",
-  "source": "https://en.wikipedia.org/wiki/German_submarine_U-119"
+  "wikidata": "Q471617",
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-119_(1942)"
  },
  "ship-german-submarine-u-12-1935": {
   "name": "U 12 (1935)",
@@ -738,8 +738,8 @@
   "name": "German submarine U-130",
   "kind": "Type IXC U-boat",
   "nation": "Germany",
-  "wikidata": "Q2715436",
-  "source": "https://en.wikipedia.org/wiki/German_submarine_U-130"
+  "wikidata": "Q182833",
+  "source": "https://en.wikipedia.org/wiki/German_submarine_U-130_(1941)"
  },
  "ship-german-submarine-u-1302": {
   "name": "German submarine U-1302",
@@ -3759,8 +3759,8 @@
   "name": "HMCS Ville de Quebec (K242)",
   "kind": "Flower class corvette",
   "nation": "Canada",
-  "wikidata": "Q16920838",
-  "source": "https://en.wikipedia.org/wiki/HMCS_Ville_de_Qu%C3%A9bec",
+  "wikidata": "Q16223043",
+  "source": "https://en.wikipedia.org/wiki/HMCS_Ville_de_Qu%C3%A9bec_(K242)",
   "aka": [
    "HMCS Ville de Québec"
   ]
@@ -4423,11 +4423,12 @@
   "name": "HMS Forfar (F30)",
   "kind": "armed merchant cruiser",
   "nation": "Britain",
-  "wikidata": "Q5632472",
+  "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/HMS_Forfar",
   "aka": [
    "Montrose"
-  ]
+  ],
+  "note": "The Q number once given here was a Wikimedia disambiguation page, so it was cleared; no single item confirmed."
  },
  "ship-hms-formidable-67": {
   "name": "HMS Formidable (67)",
@@ -4990,8 +4991,8 @@
   "name": "HMS Nabob (D77)",
   "kind": "escort carrier, Canadian manned",
   "nation": "Britain",
-  "wikidata": "Q25113666",
-  "source": "https://en.wikipedia.org/wiki/HMS_Nabob",
+  "wikidata": "Q5226460",
+  "source": "https://en.wikipedia.org/wiki/HMS_Nabob_(D77)",
   "aka": [
    "USS Edisto"
   ]
@@ -8588,8 +8589,8 @@
   "name": "Clan Campbell",
   "kind": "cargo ship",
   "nation": "Britain",
-  "source": "https://en.wikipedia.org/wiki/SS_Clan_Campbell",
-  "wikidata": "Q138632352"
+  "source": "https://en.wikipedia.org/wiki/SS_Clan_Campbell_(1937)",
+  "wikidata": "Q7393393"
  },
  "ship-ss-clan-fraser-1938": {
   "name": "SS Clan Fraser",
@@ -8984,8 +8985,8 @@
   "name": "SS Oria",
   "kind": "steamship",
   "nation": "Norway",
-  "source": "https://en.wikipedia.org/wiki/SS_Oria",
-  "wikidata": "Q7394161"
+  "source": "https://en.wikipedia.org/wiki/SS_Oria_(1920)",
+  "wikidata": "Q3020144"
  },
  "ship-ss-pan-pennsylvania": {
   "name": "SS Pan-Pennsylvania",

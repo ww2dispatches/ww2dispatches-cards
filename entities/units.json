@@ -657,12 +657,13 @@
   "name": "1st Marine Raider Battalion",
   "kind": "U.S. Marine raider battalion (Edson's Raiders)",
   "nation": "US",
-  "wikidata": "Q142251443",
+  "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/1st_Marine_Raider_Battalion",
   "aka": [
    "1st Raider Battalion",
    "Edson's Raiders"
-  ]
+  ],
+  "note": "The Q number once given here was a Wikimedia disambiguation page, so it was cleared; no single item confirmed."
  },
  "unit-1st-mountain-division-wehrmacht": {
   "name": "1st Mountain Division (Wehrmacht)",
@@ -4148,8 +4149,9 @@
   "name": "Imperial Diet",
   "kind": "legislature of the Empire of Japan",
   "nation": "Japan",
-  "wikidata": "Q6006550",
-  "source": "https://en.wikipedia.org/wiki/Imperial_Diet"
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Imperial_Diet",
+  "note": "The Q number once given here was a Wikimedia disambiguation page, so it was cleared; no single item confirmed."
  },
  "unit-imperial-general-headquarters": {
   "name": "Imperial General Headquarters",
