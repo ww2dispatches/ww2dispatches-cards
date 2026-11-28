@@ -15,11 +15,11 @@ On the Skyline Drive, the ridge road above the Our River, the 110th Infantry of 
 The 28th came here from the Hürtgen Forest to rest.
 
 How to read the table: olive blocks are American, khaki British, charcoal German. The red grease pencil line is the front each night. Black dashes are air missions. One block covers about 10 km.""",
-"""At 5:30 a.m. German guns open along the quiet Ardennes front.
+"""At 5:30 a.m. German guns open along the Ardennes front.
 
-On the Skyline Drive above the Our River, the 28th Division's 110th Infantry holds a chain of villages, a rifle company in each. Phone lines die in minutes. By dusk Marnach has gone silent.
+On the Skyline Drive above the Our River, the 28th Division's 110th Infantry holds a chain of villages, a company in each. Phone lines die in minutes. By dusk Marnach has gone silent.
 
-On the table: olive is American, khaki British, charcoal German. The red line is each night's front. One block is about 10 km.""",
+Olive is American, khaki British, charcoal German. The red line is each night's front. One block is about 10 km.""",
 [c(8,"pp. 179 to 186"),"Cirillo, Ardennes Alsace (CMH Pub 72 26): https://purl.fdlp.gov/GPO/LPS32986"])
 
 day(2,"battle","Baugnez, near Malmedy, Belgium","Prisoners shot at Baugnez crossroads",
