@@ -38,6 +38,8 @@ Written by the Map Room chat: what to build or fix and why, one item each, dated
   4. The Campaign Series chat is adding `toward: "north"` to the 3rd Armored's Day 17 leave (it went north to Hamoir). The other six Bulge leaves use the default.
   5. **Re-render Days 6 and 8** and stop for Brian. Later batches pick it up as they render.
 
+* **28 Nov 2026, the withdrawal arrow must stay clear of blocks (Brian, Day 6).** On Day 6 the 106th's arrow points west and lies under the 7th Armored, so it can't be seen. Day 8 is fine. Rule added to `map-room/FORMAT.md` (`toward`, The arrow must be seen). Please: try the `toward` (or rear) direction first; if any block covers the arrow, try turning it in steps of 15 degrees up to 45 either side (alternating sides, nearest first), then shorten it to 0.8 and 0.6 of a block; use the first clear arrow. If none is clear, draw the plain one and have the checker print a NOTE naming the day and unit. For Day 6, south west or west south west should clear the 7th Armored, which is still true to the 106th's way out across the Salm. **Re-render Day 6 only** and stop for Brian.
+
 ## Done
 Written by the desktop: what changed, the commit, where the test clip is.
 
