@@ -416,6 +416,13 @@ def dispatch_urls():
     return [(f"{SITE}/dispatches/{d['slug']}", d["at"][:10]) for _n, d in sorted(rel.items()) if d["at"] <= now]
 
 
+def day_urls():
+    """The archive's 366 date pages (renderer/dispatch_pages.py, 28 Nov 2026), one per calendar date."""
+    months = "january february march april may june july august september october november december".split()
+    lengths = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    return [(f"{SITE}/on-this-day/{months[m]}-{d}/", None) for m in range(12) for d in range(1, lengths[m] + 1)]
+
+
 def campaign_urls():
     """Campaign Series book pages, published final chapters, and the day pages already posted, each with its
     last change date (renderer/site_pages.py writes the times). Returns (url, lastmod or None) pairs."""
@@ -436,7 +443,7 @@ def campaign_urls():
 
 def write_sitemap(issues):
     entries = ([(SITE + p, None) for p in PAGES] + [(f'{SITE}/newsletter/{it["id"]}', it["release"][:10]) for it in issues]
-               + campaign_urls() + dispatch_urls())
+               + campaign_urls() + dispatch_urls() + day_urls())
     body = "".join(f"  <url><loc>{html.escape(u)}</loc>{f'<lastmod>{m}</lastmod>' if m else ''}</url>\n" for u, m in entries)
     xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + body + "</urlset>\n"
     open(os.path.join(ROOT, "site", "sitemap.xml"), "w", encoding="utf-8").write(xml)
