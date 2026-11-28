@@ -145,7 +145,7 @@ const plan = await page.$eval('.fcast', el => el.textContent);
 await page.click('#cmpAct');
 const r1 = Number(await text('#cmpRes b'));
 ok(new RegExp(`Resolve (stays ${r1}|${r0} to ${r1})`).test(plan), 'the raid lands exactly as forecast');
-ok(/YOUR TURN/.test(await text('.tlamp')) && (await page.$$('.lrow .lpiece.rearm')).length >= 1, 'your turn: the blocker is Rearming');
+ok(/YOUR TURN/.test(await text('.tlamp')) && ((await page.$$('.lrow .lpiece.rearm')).length >= 1 || /Knocked out/.test(await text('#cmpTele').catch(() => ''))), 'your turn: the blocker is Rearming (or was knocked out, on a day whose shuffle hands it a weak machine)');
 await shot('turn');
 
 // Play the rest of the run through the page: a plain strategy, every move made by tapping.
@@ -230,6 +230,17 @@ await shot('jan-chapter');
 await page.click('#chGo');
 await page.click('#dkSug1');
 ok(/^20/.test(await text('.dkn')), 'a suggested January deck of 20');
+// The loaner cards: the photo slip (approved 27 Nov 2026), one line names and credits, the approved seal shapes
+await page.waitForFunction(() => document.querySelectorAll('.ptile .cface.loan .win:not(.none)').length >= 22, null, { timeout: 8000 }).catch(() => {});
+const slips = await page.$$eval('.ptile .cface.loan', els => els.map(e => { const t = e.querySelector('.ttl b'), f = e.querySelector('.foot span'), w = e.querySelector('.win'); return { name: t.textContent, nameFits: t.scrollWidth <= t.clientWidth, creditFits: !f || f.scrollWidth <= f.clientWidth, photo: /\/declass\/campaigns\/loaners\/.+\.webp/.test(w.style.backgroundImage), rows: e.querySelectorAll('.kv').length, issued: /For this campaign/.test(e.textContent), state: Boolean(e.querySelector('.bseal.sc')), stateNumber: Boolean(e.querySelector('.bseal.sc b')), ribbon: Boolean(e.querySelector('.rib')), home: e.querySelector('.stamp').textContent === 'HOME FRONT' }; }));
+const withPhoto = slips.filter(x => x.photo);
+ok(withPhoto.length === 22, `the 22 January loaners show their photos (${withPhoto.length})`);
+ok(slips.every(x => x.nameFits && x.creditFits), 'every loaner name and credit fits on one line: ' + slips.filter(x => !x.nameFits || !x.creditFits).map(x => x.name).join(', '));
+ok(withPhoto.every(x => x.rows === 3 && x.issued), 'Kind, Strength or Reach, and Issued: For this campaign');
+ok(slips.filter(x => x.state).every(x => !x.stateNumber && x.ribbon) && slips.filter(x => x.home).every(x => !x.ribbon), 'Statecraft: the rings and its keyword ribbon, no number; Home Front: no ribbon');
+const pics = await page.evaluate(() => Promise.all([...document.querySelectorAll('.ptile .cface.loan .win:not(.none)')].slice(0, 22).map(w => new Promise(res => { const i = new Image(); i.onload = () => res(i.naturalWidth > 0); i.onerror = () => res(false); i.src = w.style.backgroundImage.replace(/^url\(["']?|["']?\)$/g, ''); }))));
+ok(pics.length === 22 && pics.every(Boolean), 'every loaner photo loads');
+await shot('jan-loaners');
 await page.click('#dkStart');
 await page.click('#cmpStartGo');
 await page.waitForSelector('.ohand');
@@ -299,6 +310,7 @@ const resumeWith = async (chN, s, choices) => {
     ok(/as low as|at worst|stays/.test(await text('.fcast')), 'the forecast gives the worst case: ' + (await text('.fcast')));
     const thru = await page.$$eval('.plq.night', els => els.map(e => e.textContent).join(' | '));
     ok(/UP TO \d+\s*THROUGH/.test(thru), 'an unblocked moon raider shows UP TO N, THROUGH: ' + thru);
+    ok(await page.$$eval('.lrow .lpiece.loan .lpph', els => els.length > 0 && els.every(e => /\/loaners\/.+\.webp/.test(e.style.backgroundImage))), 'loaners on the line are steel pieces with their photos');
     await shot('jan-night');
     await page.click('#cmpMenu');
     const cab = await text('#sheetCard');

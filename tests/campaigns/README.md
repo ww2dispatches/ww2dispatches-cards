@@ -105,3 +105,13 @@ about 31% / 4%.
 
 The local database must be fresh for the server check (it counts runs); a simple way is to delete every
 row from every table between runs.
+
+## Loaner cards: the photo slip (27 Nov 2026)
+
+The approved loaner look (Campaigns Card Design chat) replaces the typed stand in: `site/declass/campaigns/loaners/`
+holds a small webp (360 px on the long side, for the hand and the line) and a large one (900 px, the tapped
+view) for each of January's 22 loaners, with `loaners.json` (crop, kind, strength, one line credit, caption,
+license, source). The page check opens January's deck builder and checks that the 22 show their photos and
+every photo loads, that every loaner name and credit fits on one line, the three rows, the Statecraft seal
+(rings, keyword ribbon, no number) and the Home Front seal (no ribbon), and that loaners on the line are steel
+pieces with their photos. Page 67 passed, engine 369, server 65.

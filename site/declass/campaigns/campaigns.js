@@ -83,14 +83,61 @@ function cardOf(pick) {
 }
 const imgOf = c => { const inf = c && c.card ? D().card(c.card) : c && c.id && !c.loaner ? D().card(c.id) : null; return (inf && inf.img) || (c && c.img) || ''; };
 function cardFaceHTML(c, cls) {
-  // A dossier card is its posted picture with the seal drawn over it; a loaner is a typed requisition slip
-  // in a dark steel edge (not from your collection, never a rarity).
-  if (c.loaner) {
-    const s = SER[c.series] || {};
-    return `<div class="cface loan ${cls || ''}" style="--sc:${s.col}"><div class="lband"></div>${sealHTML(c)}<div class="lbody"><span class="lkind">LOANER · <em>${esc((s.name || '').toUpperCase())}</em></span><b>${esc(c.title)}</b></div></div>`;
-  }
+  // A dossier card is its posted picture with the seal drawn over it; a loaner is the photo slip.
+  if (c.loaner) return loanerFaceHTML(c, cls);
   return `<div class="cface own ${cls || ''}"><img src="${esc(imgOf(c))}" alt="" draggable="false" loading="lazy">${c.value >= 1 ? sealHTML(c) : ''}</div>`;
 }
+
+// ---------- the loaner card: the photo slip (approved by Brian 27 Nov 2026, Campaigns Card Design chat) ----------
+// Laid out like a posted card: a band with LOANER and the series stamp, a black and white photo window, the
+// name on one line with a short rule in the series color, Kind, Strength (Reach for Home Front and Statecraft)
+// and Issued rows, and an ON LOAN footer with the one line photo credit, in the steel loaner edge. The seal,
+// the ribbon, and their icons are copied from the approved mockups (W1 seal, 5 Nov Statecraft seal), not
+// redrawn: SLIP_ICON holds those symbols as drawn there, and the .bseal, .rs, .sc, and .rib rules in
+// campaigns.css are theirs.
+const SLIP_ICON = {
+  swords: '<g fill="none" stroke="currentColor" stroke-linecap="round"><path stroke-width="3.2" d="M4.5 4.5L15.5 15.5M19.5 4.5L8.5 15.5"/><path stroke-width="2.8" d="M13 18l5-5M6 13l5 5"/><path stroke-width="3.4" d="M17.5 17.5l2.5 2.5M6.5 17.5L4 20"/></g>',
+  shield: '<path fill="currentColor" d="M12 2l8 3v6c0 5-3.4 9.2-8 11-4.6-1.8-8-6-8-11V5z"/>',
+  heart: '<path fill="currentColor" d="M12 21C5.2 15.6 2 12.4 2 8.6 2 5.5 4.4 3 7.4 3c1.9 0 3.5 1 4.6 2.5C13.1 4 14.7 3 16.6 3 19.6 3 22 5.5 22 8.6c0 3.8-3.2 7-10 12.4z"/>',
+  land: '<g fill="currentColor"><rect x="2" y="14.5" width="20" height="5.5" rx="2.75"/><path d="M4.5 14.5l1.6-3.5h11.8l1.6 3.5z"/><rect x="8" y="7" width="7.5" height="4" rx="1"/><rect x="15" y="8.1" width="8" height="1.8" rx=".9"/></g><g fill="#e8ddc5"><circle cx="5.2" cy="17.25" r="1.1"/><circle cx="9.1" cy="17.25" r="1.1"/><circle cx="12.9" cy="17.25" r="1.1"/><circle cx="16.8" cy="17.25" r="1.1"/></g>',
+  sea: '<g fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"><circle cx="12" cy="4.6" r="2.1"/><path d="M12 6.7V21M7.5 10h9M4 13.5c0 4.3 3.6 7.5 8 7.5s8-3.2 8-7.5"/></g><path fill="currentColor" d="M2 14.5l2-3.2 2 3.2zM18 14.5l2-3.2 2 3.2z"/>',
+  air: '<path fill="currentColor" d="M12 1.5c.9 0 1.4 1 1.4 2.6V9l8.6 4.3v2.2l-8.6-2.4v5.2l2.6 1.9v1.8l-4-1.1-4 1.1v-1.8l2.6-1.9v-5.2L2 15.5v-2.2L10.6 9V4.1c0-1.6.5-2.6 1.4-2.6z"/>',
+  rings: '<g fill="none" stroke="currentColor" stroke-width="2.8"><circle cx="8.6" cy="12" r="5.6"/><circle cx="15.4" cy="12" r="5.6"/></g>',
+  lend: '<g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M2.5 10a9.5 7.5 0 0 1 19 0z" fill="currentColor" stroke="none"/><path d="M3.5 10l6.5 7M20.5 10l-6.5 7M12 10v7"/><rect x="8.5" y="16.5" width="7" height="5" fill="currentColor" stroke="none"/></g>',
+  backchannel: '<path fill="currentColor" d="M6.6 2.5c-1.6.6-3.6 2.4-3.6 4.6 0 6.6 7.3 14.4 14 14.4 2.2 0 4-2 4.6-3.6l-4.2-3.2-2.6 2c-2.5-1.1-5.3-3.9-6.4-6.4l2-2.6z"/>',
+  ultimatum: '<g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><circle cx="12" cy="14" r="7.5"/><path d="M9.5 2.5h5M12 2.5v4M12 14l3.5-3.5"/></g>',
+  evac: '<g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3M7.5 7.5L12 3l4.5 4.5"/><path d="M1.5 19.5c2.5-2.2 4.6 2.2 7.1 0s4.6 2.2 7.1 0 4.6 2.2 6.8 0" stroke-width="3.2"/></g>',
+};
+const slipI = k => `<svg viewBox="0 0 24 24" aria-hidden="true">${SLIP_ICON[k] || ''}</svg>`;
+const SLIP_ROLE = { blue: 'shield', battle: 'swords', home: 'heart', state: 'rings' };
+const loanerId = c => (typeof c.loaner === 'string' ? c.loaner : c.id);
+const loanerArt = c => (ART.loaners && ART.loaners[loanerId(c)]) || null;
+// One line each for the name and the credit: the type shrinks for a long one (widths in cqw of the card,
+// from the average letter of Oswald capitals and of Special Elite).
+const fitName = t => Math.min(6, 88 / (String(t).length * 0.5 + 0.5)).toFixed(2);
+const fitCredit = t => Math.min(2.6, 62 / (String(t).length * 0.62 + 0.5)).toFixed(2);
+function slipSealHTML(c) {
+  const role = slipI(SLIP_ROLE[c.series]);
+  if (c.series === 'state') return `<span class="bseal rs sc"><span class="top">${role}</span></span><span class="rib">${c.keyword ? slipI(c.keyword) : ''}</span>`;
+  if (c.series === 'home') return `<span class="bseal"><span class="top"><b>${c.value}</b>${role}</span></span>`;
+  return `<span class="bseal rs"><span class="top"><b>${c.value}</b>${role}</span></span><span class="rib">${(c.branches || []).filter(b => SLIP_ICON[b]).map(slipI).join('')}</span>`;
+}
+function loanerFaceHTML(c, cls) {
+  const s = SER[c.series] || {}, art = loanerArt(c), big = /\bhires\b/.test(cls || '');
+  const reach = c.series === 'home' || c.series === 'state';
+  const photo = art ? `<div class="win" style="background-image:url('/declass/campaigns/loaners/${esc(big ? art.fileLarge : art.file)}');background-position:${esc(art.crop || 'center')}"></div>` : '<div class="win none"></div>';
+  const rows = [['Kind', art ? art.kind : s.role], art ? [reach ? 'Reach' : 'Strength', art.strength] : null, ['Issued', 'For this campaign']].filter(Boolean);
+  const credit = art ? art.credit : '';
+  return `<div class="cface loan ${cls || ''}" style="--sc:${s.col};--rb:${s.col}"><div class="lfr"><div class="lcd"><div class="slip">
+    <div class="band"><div class="wm"><b>LOANER</b><span>Undated · On loan</span></div><span class="stamp">${esc((s.name || '').toUpperCase())}</span></div>
+    ${photo}
+    <div class="ttl"><b style="font-size:${fitName(c.title)}cqw">${esc(String(c.title).toUpperCase())}</b><i></i></div>
+    <div class="rows">${rows.map(([k, v]) => `<div class="kv"><span>${esc(k)}</span><b>${esc(v)}</b></div>`).join('')}</div>
+    <div class="foot"><b>ON LOAN</b>${credit ? `<span style="font-size:${fitCredit(credit)}cqw">${esc(credit)}</span>` : ''}</div>
+  </div>${slipSealHTML(c)}</div></div></div>`;
+}
+// The full photo record for a loaner, shown when it is tapped.
+const loanerRecord = c => { const a = loanerArt(c); return a ? `<p class="sheetnote credit">Photo: ${esc(a.caption || a.credit)}</p>` : ''; };
 
 // What a card does, in words, with the number it changes (Campaigns doc: say what it costs).
 function roleLine(c) {
@@ -150,11 +197,11 @@ const WORDS = {
 const W = () => ({ ...WORDS, ...((DATA && DATA.campaign && DATA.campaign.words) || {}), ...((CH && CH.words) || {}) });
 // The enemy photo pieces, the drawn tables, and the marks (Card Design chat, 9 Nov 2026), read from their
 // manifests once. A unit or table with no art yet keeps the grey stand in.
-const ART = { pieces: {}, tables: {}, marks: {}, ready: false, loading: null };
+const ART = { pieces: {}, tables: {}, marks: {}, loaners: {}, ready: false, loading: null };
 function loadArt() {
   if (ART.loading) return ART.loading;
-  const get = (file, key, into) => fetch(`/declass/campaigns/${file}`).then(r => r.json()).then(d => (d[key] || []).forEach(x => { into[x[key.slice(0, -1)]] = x; })).catch(() => {});
-  ART.loading = Promise.all([get('pieces/pieces.json', 'pieces', ART.pieces), get('tables/tables.json', 'tables', ART.tables), get('marks/marks.json', 'marks', ART.marks)]).then(() => { ART.ready = true; });
+  const get = (file, key, into, field) => fetch(`/declass/campaigns/${file}`).then(r => r.json()).then(d => (d[key] || []).forEach(x => { into[x[field || key.slice(0, -1)]] = x; })).catch(() => {});
+  ART.loading = Promise.all([get('pieces/pieces.json', 'pieces', ART.pieces), get('tables/tables.json', 'tables', ART.tables), get('marks/marks.json', 'marks', ART.marks), get('loaners/loaners.json', 'loaners', ART.loaners, 'id')]).then(() => { ART.ready = true; });
   return ART.loading;
 }
 const pieceOf = u => (u && u.piece && ART.pieces[u.piece]) || null;
@@ -336,7 +383,7 @@ function suggested() {
       const o = mine.filter(c => fit(c) && !used.has(c.id)).sort((a, b) => dist(a) - dist(b) || b.value - a.value)[0];
       if (o) { used.add(o.id); out.push({ card: o.id }); continue; }
       const l = loan.filter(c => c.series === s && (s === 'state' ? c.keyword === want : true))
-        .sort((a, b) => dist(a) - dist(b) || (loanUse.get(a.id) || 0) - (loanUse.get(b.id) || 0))[0]
+        .sort((a, b) => dist(a) - dist(b) || (loanerArt(a) ? 0 : 1) - (loanerArt(b) ? 0 : 1) || (loanUse.get(a.id) || 0) - (loanUse.get(b.id) || 0))[0] // equal fits: the loaner with its photo first
         || loan.filter(c => c.series === s)[0];
       if (l) { loanUse.set(l.id, (loanUse.get(l.id) || 0) + 1); out.push({ loaner: l.id }); }
     }
@@ -366,7 +413,7 @@ function deckNotes(cards) {
 
 function openDeck() {
   const had = loadPicks();
-  drawDeck(!had);
+  if (ART.ready) drawDeck(!had); else loadArt().then(() => drawDeck(!had)); // the loaner photos come from the art manifest
 }
 function drawDeck(fresh) {
   const ch = CH, br = ch.branches;
@@ -422,7 +469,7 @@ function tapPool(key) {
 }
 function slip(c, why) {
   D().sheet(`<div class="sheettop"><span class="howstamp">${esc(SER[c.series] ? SER[c.series].name : 'Card')}</span><button class="howx" data-close aria-label="Close">✕</button></div>
-    <div class="cmpslip">${cardFaceHTML(c, 'md')}<div><h2>${esc(c.title)}</h2><p class="sheetline">${esc(roleLine(c))}</p>${why ? `<p class="tslip">${esc(why)}</p>` : ''}</div></div>`);
+    <div class="cmpslip${c.loaner ? ' loanview' : ''}">${cardFaceHTML(c, c.loaner ? 'md hires' : 'md')}<div><h2>${esc(c.title)}</h2><p class="sheetline">${esc(roleLine(c))}</p>${why ? `<p class="tslip">${esc(why)}</p>` : ''}${c.loaner ? loanerRecord(c) : ''}</div></div>`);
 }
 
 // ---------- starting a run ----------
@@ -593,7 +640,7 @@ function playRun(isNew) {
   };
   if (ART.ready) go(); else loadArt().then(go);
 }
-const deckCard = i => { const d = RUN.deck[i], inf = d.card ? D().card(d.card) : null; return { ...ST.cards[i], title: d.title || (inf ? inf.title : 'Card'), card: d.card, loaner: Boolean(d.loaner), short: inf ? inf.short : d.title }; };
+const deckCard = i => { const d = RUN.deck[i], inf = d.card ? D().card(d.card) : null; return { ...ST.cards[i], title: d.title || (inf ? inf.title : 'Card'), card: d.card, loaner: d.loaner || false, short: inf ? inf.short : d.title }; };
 const mName = m => { const c = deckCard(m.card); return c.short || c.title; };
 const machineOf = uid => ST.line.find(m => m.uid === uid);
 const unitOf = uid => ST.units.find(u => u.uid === uid);
@@ -644,7 +691,8 @@ function enemyPieceHTML(u, where, inN) {
 }
 function linePieceHTML(m, where) {
   const c = deckCard(m.card), max = ST.cards[m.card].value, atk = E.opValue(ST, m);
-  const face = c.loaner ? `<span class="lpslip">${esc(c.title)}</span>` : `<img src="${esc(imgOf(c))}" alt="" draggable="false">`;
+  const la = c.loaner ? loanerArt(c) : null;
+  const face = c.loaner ? `<span class="lpph"${la ? ` style="background-image:url('/declass/campaigns/loaners/${esc(la.file)}');background-position:${esc(la.crop || 'center')}"` : ''}></span><span class="nm">${esc(la ? la.kind : c.title)}</span>` : `<img src="${esc(imgOf(c))}" alt="" draggable="false">`;
   const rearm = m.state === 'out' || m.state === 'blocked';
   const going = where === 'col' && ST.phase === 'yours';
   const can = !ST.over && (ST.phase === 'enemy' ? E.canBlock(m) : ST.phase === 'yours' && E.canAttack(ST, m));
@@ -1040,7 +1088,7 @@ function pieceInfo(uid) {
     : ST.phase === 'yours' && m.op == null ? 'Ready. With no operation it can block but not attack: play a Battle Lines card on it.'
     : E.calm(ST) ? 'Ready. Nobody attacks in the calm rounds.' : 'Ready.';
   D().sheet(`<div class="sheettop"><span class="howstamp">On your line</span><button class="howx" data-close aria-label="Close">✕</button></div>
-    <div class="cmpslip">${cardFaceHTML(c, 'md')}<div><h2>${esc(c.title)}</h2><p class="sheetline">Armor ${m.arm} of ${max}. ${op ? `Armed with ${esc(op.title)}: attack ${op.value}.` : 'No operation yet.'}</p><p class="sheetnote">${esc(state)}</p></div></div>`);
+    <div class="cmpslip${c.loaner ? ' loanview' : ''}">${cardFaceHTML(c, c.loaner ? 'md hires' : 'md')}<div><h2>${esc(c.title)}</h2><p class="sheetline">Armor ${m.arm} of ${max}. ${op ? `Armed with ${esc(op.title)}: attack ${op.value}.` : 'No operation yet.'}</p><p class="sheetnote">${esc(state)}</p>${c.loaner ? loanerRecord(c) : ''}</div></div>`);
 }
 
 // The War Cabinet: plain advice for the round, from the side's own leadership (Campaigns doc).

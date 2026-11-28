@@ -107,15 +107,7 @@ span.dchip{cursor:default}
 .cface.own img{display:block;width:100%;height:100%;object-fit:cover}
 .cface .cseal{position:absolute;left:53.8%;top:.4%;width:26%;transform:translateX(-50%);overflow:visible;filter:drop-shadow(0 1px 1px rgba(0,0,0,.3))}
 .cseal .sn{font-family:var(--display);font-weight:700;font-size:36px;fill:#EDE4CF}
-.cface.loan{background:#EDE4CF;border:4px solid #4a5058;box-shadow:inset 0 0 0 1px #8b929b,0 2px 6px rgba(0,0,0,.4)}
-.cface.loan .lband{height:30%;display:flex;align-items:center;padding:0 5%}
-.cface.loan .lstamp{font-family:var(--display);font-weight:700;letter-spacing:.04em;font-size:6.2cqw;line-height:1.15;color:var(--sc);border:max(1px,.9cqw) solid var(--sc);padding:.4cqw 1.6cqw;transform:rotate(-4deg);max-width:38%;white-space:nowrap;overflow:hidden}
-.cface.loan .lbody{position:absolute;left:0;right:0;top:32%;bottom:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:6% 8%;text-align:center;
-  background:repeating-linear-gradient(0deg,rgba(26,22,18,.06) 0 1px,transparent 1px 12%)}
-.cface.loan .lkind{font-family:var(--type);font-size:6.2cqw;letter-spacing:.1em;color:#4a5058}
-.cface.loan .lkind em{font-style:normal;color:var(--sc);font-weight:700}
 .cface.hand .cseal{width:40%}.cface.open .cseal,.cface.md .cseal{width:34%}
-.cface.loan b{font-family:var(--display);font-weight:700;color:#1A1612;font-size:12.5cqw;line-height:1.08;margin-top:3%}
 
 /* ---------- a run: the plotting table ---------- */
 body.cmpon{overflow:hidden}
@@ -176,7 +168,6 @@ body.cmpon{overflow:hidden}
 .lpiece{position:relative;width:62px;height:48px;border-radius:3px;background:#2b2621;border:3px solid #9C5B2E;box-shadow:0 3px 6px rgba(0,0,0,.45);cursor:pointer}
 .lpiece img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 58%;border-radius:1px}
 .lpiece.loan{border-color:#4a5058}
-.lpiece .lpslip{display:flex;align-items:center;justify-content:center;height:100%;padding:2px;text-align:center;background:#EDE4CF;color:#1A1612;font-family:var(--display);font-weight:700;font-size:8.5px;line-height:1.05}
 .lpiece .btag{position:absolute;right:-4px;top:-6px;display:flex;gap:1px;padding:1px 2px;background:#1A1612;border:1px solid #EDE4CF;border-radius:2px;color:#EDE4CF}
 .lpiece .btag .ci{width:9px;height:9px}
 .lpiece .bshield{position:absolute;left:-7px;bottom:-8px;width:24px;height:26px;color:#3D5884}
@@ -312,5 +303,44 @@ body.cmpon{overflow:hidden}
 .cmppick span{flex:1 0 100%;font-family:var(--type);font-size:10px;letter-spacing:.12em;color:#b9ad92}
 .cmppick .btn{flex:1 1 40%;font-size:13px;padding:8px 6px;margin:0}
 .cmppick .btn.on{outline:2px solid #f0c46a}
+/* The loaner card: the photo slip (approved 27 Nov 2026, Campaigns Card Design chat, proof round 3). The card
+   box is the container, as .c is in the proof, so every cqw below matches the proof. */
+.cface.loan{display:block;height:auto;padding:0;aspect-ratio:auto;overflow:visible;background:none;border-radius:0;box-shadow:none;isolation:isolate}
+.cface.loan .lfr{border-radius:2cqw;padding:1.3cqw;background:linear-gradient(140deg,#3a3f45,#69717a 40%,#4a5057 65%,#2e3338);box-shadow:0 5px 14px rgba(0,0,0,.5)}
+.cface.loan .lcd{position:relative;aspect-ratio:4/5;overflow:hidden;border-radius:1cqw;background:#d8ccb0}
+.cface.loan .slip{position:absolute;inset:0;background:#e9dfc8;background-image:radial-gradient(rgba(120,100,70,.08) 1px,transparent 1px);background-size:4px 4px;color:#1A1612;text-align:left}
+.cface.loan .band{position:absolute;left:3.5%;right:3.5%;top:2.2%;display:flex;justify-content:space-between;align-items:flex-start}
+.cface.loan .wm{display:flex;flex-direction:column;line-height:1}
+.cface.loan .wm b{font:700 7.4cqw/1 var(--display);letter-spacing:.02em}
+.cface.loan .wm span{font:3.1cqw var(--type);color:#4a4036;margin-top:1.2cqw;white-space:nowrap}
+.cface.loan .stamp{font:700 2.7cqw/1 var(--display);letter-spacing:.06em;border:.4cqw solid var(--sc);color:var(--sc);padding:.6cqw 1cqw;margin-top:.6cqw;background:rgba(237,228,207,.6);white-space:nowrap}
+.cface.loan .win{position:absolute;left:3.5%;right:3.5%;top:12%;height:38%;background-size:cover;background-position:center;border:.3cqw solid #1A1612;filter:grayscale(1) contrast(1.05)}
+.cface.loan .win.none{background:repeating-linear-gradient(135deg,rgba(26,22,18,.06) 0 4px,transparent 4px 8px)}
+.cface.loan .ttl{position:absolute;left:4.5%;right:4.5%;top:52.5%}
+.cface.loan .ttl b{display:block;font:700 6cqw/1.05 var(--display);white-space:nowrap;overflow:hidden}
+.cface.loan .ttl i{display:block;width:16%;height:.8cqw;margin-top:1.6cqw;background:var(--sc)}
+.cface.loan .rows{position:absolute;left:4.5%;right:4.5%;top:65%}
+.cface.loan .kv{display:flex;justify-content:space-between;border-bottom:.25cqw dashed rgba(26,22,18,.25);padding:1cqw 0;font-size:3.3cqw;line-height:1.2}
+.cface.loan .kv span{font-family:var(--type);color:#4a4036}.cface.loan .kv b{font:500 3.3cqw/1.2 var(--display);white-space:nowrap}
+.cface.loan .foot{position:absolute;left:4.5%;right:4.5%;bottom:2.5%;display:flex;justify-content:space-between;align-items:flex-end;gap:2cqw;margin:0;text-align:left;line-height:1} /* margin, align: undo Declass's own .foot */
+.cface.loan .foot b{font:700 6cqw/1 var(--display);flex:none}
+.cface.loan .foot span{font:2.6cqw var(--type);color:#4a4036;text-align:right;white-space:nowrap;overflow:hidden;min-width:0}
+/* the seal and ribbon, copied from the approved mockup (W1 seal and the 5 Nov Statecraft seal) */
+.cface.loan{--cx:calc(53.8% + 8.7cqw)}
+.cface.loan .bseal{position:absolute;z-index:5;left:53.8%;top:.2%;width:17.4cqw;height:17.4cqw;border-radius:50%;overflow:hidden;border:.7cqw solid var(--sc);box-shadow:0 .6cqw 1.4cqw rgba(0,0,0,.35);background:radial-gradient(circle at 40% 30%,#f5eddc,#e8ddc5 75%,#dccfb2);color:var(--sc)}
+.cface.loan .bseal .top{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0;border:0;gap:0} /* padding, border, gap: undo Declass's own .top */
+.cface.loan .bseal .top b{font:700 6.2cqw/1 var(--display)}
+.cface.loan .bseal .top svg{width:6.6cqw;height:6.6cqw}
+.cface.loan .rs .top{top:5%;bottom:auto;height:46%;flex-direction:row;gap:.6cqw}
+.cface.loan .rs .top svg{width:6cqw;height:6cqw}
+.cface.loan .bseal.sc .top{top:3%;height:48%}.cface.loan .bseal.sc .top svg{width:8cqw;height:8cqw}
+.cface.loan .rib{position:absolute;z-index:6;left:var(--cx);top:calc(.2% + 8.4cqw);transform:translateX(-50%);height:6.4cqw;width:19.6cqw;background:var(--rb,var(--sc));color:#f5eddc;display:flex;align-items:center;justify-content:center;gap:.9cqw;clip-path:polygon(0 0,100% 0,95% 50%,100% 100%,0 100%,5% 50%);filter:drop-shadow(0 0 .25cqw rgba(0,0,0,.55))}
+.cface.loan .rib svg{width:4.5cqw;height:4.5cqw}
+.cmpslip.loanview{flex-direction:column;align-items:center}
+.cmpslip.loanview .cface{width:min(250px,80vw)}
+/* a loaner on your line: the approved F2 piece in the steel edge, its photo, and its kind along the top */
+.lpiece.loan{border:0;padding:3px;background:linear-gradient(140deg,#3a3f45,#69717a 40%,#4a5057 65%,#2e3338)}
+.lpiece .lpph{display:block;width:100%;height:100%;border-radius:2px;background:#333 center/cover no-repeat;filter:grayscale(1)}
+.lpiece .nm{position:absolute;left:3px;right:3px;top:3px;height:11px;border-radius:2px 2px 0 0;background:linear-gradient(rgba(10,8,5,.75),transparent);font:600 7px/11px var(--display);letter-spacing:.06em;color:#f5eddc;text-transform:uppercase;padding:0 3px;white-space:nowrap;overflow:hidden;text-align:left}
 @media (prefers-reduced-motion:reduce){.tele.go,.epiece.target{animation:none}.hand,.hcard{transition:none}}
 @media (min-width:600px){.cmprun{max-width:480px;margin:0 auto;border-left:1px solid #2a241d;border-right:1px solid #2a241d}}
