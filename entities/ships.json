@@ -10990,7 +10990,7 @@
   "name": "USS Orestes (AGP-10)",
   "kind": "U.S. Navy motor torpedo boat tender",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q10386354",
   "source": "https://en.wikipedia.org/wiki/USS_Orestes_(AGP-10)",
   "note": "The hull number title redirects to the article USS Orestes; id keeps the hull number as the registry does for ships."
  },
@@ -11274,9 +11274,9 @@
   "name": "USS S-44 (SS-155)",
   "kind": "S class submarine",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q11242278",
   "source": "https://en.wikipedia.org/wiki/USS_S-44_(SS-155)",
-  "note": "Title taken from the link in the Kako article; the Wikidata check was rate limited, so confirm it."
+  "note": "Title taken from the link in the Kako article; the Wikidata check was rate limited, so confirm it. Wikidata item for the enwiki article USS S-44, a 1923 S class submarine."
  },
  "ship-uss-sailfish-ss-192": {
   "name": "USS Sailfish (SS-192)",
