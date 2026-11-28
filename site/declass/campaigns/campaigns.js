@@ -5,7 +5,7 @@
 //
 // The rules are not here: every rule lives in engine.js, the same file the server uses to replay each
 // finished run before it is saved or ranked. This page only shows the state and records the choices.
-import * as E from './engine.js';
+import * as E from './engine.js?v=053cebec'; // the version tag changes whenever the rules do, so a cached copy is never paired with a new page
 
 const D = () => window.Declass;
 const $ = id => document.getElementById(id);
@@ -119,13 +119,14 @@ const ET = { timeZone: 'America/New_York' };
 const dayMonth = iso => new Date(iso).toLocaleDateString('en-GB', { ...ET, day: 'numeric', month: 'long' });
 const waveDate = d => new Date(d + 'T12:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
 const shortDate = d => new Date(d + 'T12:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'long', timeZone: 'UTC' });
-const sideName = () => DATA.campaign.side === 'axis' ? 'the defenders' : 'Britain';
+const sideName = () => W().side || (DATA.campaign.side === 'axis' ? 'the defenders' : 'Britain');
 
 // ---------- data ----------
 const wanted = () => LIVE || (D() && D().cmpPreview());
 function load(force) {
   if (!wanted()) return Promise.resolve(null);
   if (loading && !force) return loading;
+  loadArt();
   loading = D().api('campaign').then(d => { DATA = d; return d; }).catch(e => { loading = null; throw e; });
   return loading;
 }
@@ -135,6 +136,31 @@ function engineCampaign() {
   return { id: c.id, side: c.side, year: c.year, startResolve: c.startResolve, chapters: DATA.chapters.filter(ch => ch.released) };
 }
 const chapterN = n => DATA.chapters.find(c => c.n === n);
+
+// ---------- each campaign's own words and art (27 Nov 2026) ----------
+// A campaign file can carry a words block, and each chapter its own, so the board talks about the Channel
+// in August 1940 and the perimeter at Bastogne. The Battle of Britain's words are the defaults.
+const WORDS = {
+  theme: 'air', side: '', these: 'these raids', raid: 'RAID', raider: 'raider',
+  farL: 'BOULOGNE', farR: 'CALAIS', chan: 'THE CHANNEL', coastL: 'FOLKESTONE', coastR: 'DOVER',
+  massing: 'Hostiles massing over France', plotted: 'Hostiles plotted over the Channel',
+  block: 'Scramble your fighters to block them.', arm: 'Arm your fighters and send them up.',
+  arrive: 'flies in', sweep: 'joins on a fighter sweep',
+};
+const W = () => ({ ...WORDS, ...((DATA && DATA.campaign && DATA.campaign.words) || {}), ...((CH && CH.words) || {}) });
+// The enemy photo pieces, the drawn tables, and the marks (Card Design chat, 9 Nov 2026), read from their
+// manifests once. A unit or table with no art yet keeps the grey stand in.
+const ART = { pieces: {}, tables: {}, marks: {}, ready: false, loading: null };
+function loadArt() {
+  if (ART.loading) return ART.loading;
+  const get = (file, key, into) => fetch(`/declass/campaigns/${file}`).then(r => r.json()).then(d => (d[key] || []).forEach(x => { into[x[key.slice(0, -1)]] = x; })).catch(() => {});
+  ART.loading = Promise.all([get('pieces/pieces.json', 'pieces', ART.pieces), get('tables/tables.json', 'tables', ART.tables), get('marks/marks.json', 'marks', ART.marks)]).then(() => { ART.ready = true; });
+  return ART.loading;
+}
+const pieceOf = u => (u && u.piece && ART.pieces[u.piece]) || null;
+const tableOf = () => ART.tables[(CH && CH.table) || (DATA && DATA.campaign && DATA.campaign.table)] || null;
+const MOON = '<svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.33,2.51 A10,10 0 1 0 21.50,15.61 A8,8 0 0 1 12.33,2.51 Z" fill="currentColor"/></svg>';
+const twistText = t => (t && (t.text || t.rule)) || '';
 // Ranks (build session 5): percentiles only, no names. Provisional until the month ends, when each
 // chapter's rank settles and Intel is paid by band.
 const lastDay = () => DATA && DATA.monthEnds ? new Date(Date.parse(DATA.monthEnds) - 3600000).toLocaleDateString('en-GB', { ...ET, day: 'numeric', month: 'long' }) : null;
@@ -211,19 +237,32 @@ function drawCampaign() {
   if (!d || d.status !== 'open') { $('cmpBody').innerHTML = `<p class="cmpline">${d && d.status === 'signin' ? 'Sign in on the Declass home page to play.' : 'Coming soon.'}</p>`; return; }
   $('cmpBack').hidden = false;
   const c = d.campaign;
-  const month = new Date(Date.UTC(c.year, (d.chapters[0].opensAt ? new Date(d.chapters[0].opensAt).getUTCMonth() : 7), 15)).toLocaleDateString('en-GB', { month: 'long', timeZone: 'UTC' });
-  let html = `<p class="cmpkicker">${esc(month)} ${c.year} · This month's campaign</p><h2 class="cmptitle">${esc(c.title)}</h2>`;
+  let html = `<p class="cmpkicker">${esc(historyMonths(d))} · This month's campaign</p><h2 class="cmptitle">${esc(c.title)}</h2>`;
+  if (d.previews && d.previews.length > 1) html += `<div class="cmppick"><span>PREVIEW · PICK A CAMPAIGN</span>${d.previews.map(p => `<button type="button" class="btn alt${p.id === c.id ? ' on' : ''}" data-pick="${esc(p.id)}" aria-pressed="${p.id === c.id}">${esc(p.title)}</button>`).join('')}</div>`;
   if (runHere()) html += `<button class="cmpresume" id="cmpResume" type="button"><b>Back to your run</b><span>Chapter ${RUN.chapter}: ${esc(chapterN(RUN.chapter).name)} · run ${RUN.runNo} of ${d.runsPerDay} today</span></button>`;
   html += `<div class="chaps">${d.chapters.map(chapterTileHTML).join('')}</div>`;
   html += `<p class="cmpsmall">A new chapter opens on the 1st, 11th, and 21st. Win a chapter to open the next one. ${d.runsPerDay} runs a day for each chapter; every run counts, and your best of the day is the one ranked.</p>`;
   $('cmpBody').innerHTML = html;
   const r = $('cmpResume'); if (r) r.onclick = () => resumeRun();
+  $('cmpBody').querySelectorAll('[data-pick]').forEach(b => { b.onclick = () => {
+    try { localStorage.setItem('declass_cmp_pick', b.dataset.pick); } catch (e) {}
+    $('cmpBody').innerHTML = '<p class="cmpline">Opening the campaign…</p>';
+    load(true).then(drawCampaign).catch(() => { $('cmpBody').innerHTML = '<p class="cmpline">The campaign could not be opened. Try again in a moment.</p>'; });
+  }; });
   $('cmpBody').querySelectorAll('[data-ch]').forEach(b => { b.onclick = () => {
     const ch = chapterN(Number(b.dataset.ch));
     if (!ch.released) { D().toast(`Chapter ${ch.n} opens ${dayMonth(ch.opensAt)}.`); return; }
     if (!ch.unlocked) { D().toast(`Win chapter ${ch.n - 1} to open chapter ${ch.n}.`); return; }
     openChapter(ch.n);
   }; });
+}
+// The months the history covers, from the released waves ("August 1940", "December 1944 to January 1945").
+function historyMonths(d) {
+  const dates = d.chapters.flatMap(ch => (ch.waves || []).map(w => w.date)).sort();
+  const mo = iso => new Date(iso + 'T12:00:00Z').toLocaleDateString('en-GB', { month: 'long', year: 'numeric', timeZone: 'UTC' });
+  if (!dates.length) return new Date(Date.UTC(d.campaign.year, (d.campaign.month || 1) - 1, 15)).toLocaleDateString('en-GB', { month: 'long', year: 'numeric', timeZone: 'UTC' });
+  const a = mo(dates[0]), b = mo(dates[dates.length - 1]);
+  return a === b ? a : `${a} to ${b}`;
 }
 function chapterTileHTML(ch) {
   let state, cls;
@@ -248,7 +287,7 @@ function openChapter(n) {
     <ol class="cfiles">${ch.waves.map((w, i) => `<li><span class="fdate">${esc(waveDate(w.date))}</span><b>${esc(w.name)}</b><span class="fwho">${w.units.map(u => esc(u.name)).join(' · ')}</span></li>`).join('')}</ol>
     <p class="cmpsmall">Each file is one enemy wave. Clear it and the file ends; the next wave attacks in the very next raid. Clear all three to win.</p>
     <div class="cmark"><span>THE MARK TO BEAT · A RESOLVE OF ${ch.benchmark}</span><p>You start at a Resolve of ${c.startResolve}. Attacks you don't block take it down; Home Front cards raise it, up to ${E.RULES.resolveCap}. What is left when the last wave breaks is your score.</p></div>`;
-  if (ch.twist) html += `<div class="ctwist"><span>THIS CHAPTER'S TWIST · ${esc(ch.twist.name.toUpperCase())}</span><p>${esc(ch.twist.text)}</p></div>`;
+  if (ch.twist) html += `<div class="ctwist"><span>THIS CHAPTER'S TWIST · ${esc(ch.twist.name.toUpperCase())}</span><p>${esc(twistText(ch.twist))}</p></div>`;
   html += rankBoxHTML(ch);
   html += `<p class="cbranch">${br.map(b => svgI(b, 'bi')).join('')}This is ${br.length === 1 ? 'an ' + branchWords(br) : 'a ' + branchWords(br)} campaign. Machines and operations need ${branchNeed(br)}.</p>`;
   html += `<p class="cmpsmall">${ch.calm ? `Rounds 1 and 2 are calm: ${esc(ch.calm.text)} The first raid comes in round 3.` : ''}</p>`;
@@ -463,8 +502,10 @@ function sndLoad() {
   SND.loading = Promise.all(names.map(n => fetch(sndUrl(n)).then(r => r.arrayBuffer()).then(a => new Promise((ok, no) => ctx.decodeAudioData(a, ok, no))).then(b => { SND.buf[n] = b; }).catch(() => {})));
   return SND.loading;
 }
+// Brian's set is the air war's. In a land campaign the aircraft cues stay quiet until a land set is made.
+const AIR_ONLY = new Set(['siren', 'stuka', 'bigraid', 'sweep', 'scramble', 'dive', 'arrival', 'climb', 'downed']);
 function sfx(key, delay, vol) {
-  if (!SND.on) return; const ctx = sndCtx(); if (!ctx) return;
+  if (!SND.on) return; if (AIR_ONLY.has(key) && W().theme === 'land') return; const ctx = sndCtx(); if (!ctx) return;
   const list = SFX[key]; if (!list) return;
   const name = list[Math.floor(Math.random() * list.length)];
   const go = () => {
@@ -543,11 +584,14 @@ function playRun(isNew) {
   rebuild(); LIFT = null; PICK = null;
   D().show('sCmpRun');
   humSync();
-  drawRun();
-  if (ST.over) { endScreen(); return; }
-  if (ST.phase === 'opening') openingHand();
-  else if (E.calm(ST)) tele('ALL QUIET', allQuietLines());
-  else if (ST.phase === 'enemy') tele('RAID INBOUND', raidLines());
+  const go = () => {
+    drawRun();
+    if (ST.over) { endScreen(); return; }
+    if (ST.phase === 'opening') openingHand();
+    else if (E.calm(ST)) tele('ALL QUIET', allQuietLines());
+    else if (ST.phase === 'enemy') tele(`${W().raid} INBOUND`, raidLines());
+  };
+  if (ART.ready) go(); else loadArt().then(go);
 }
 const deckCard = i => { const d = RUN.deck[i], inf = d.card ? D().card(d.card) : null; return { ...ST.cards[i], title: d.title || (inf ? inf.title : 'Card'), card: d.card, loaner: Boolean(d.loaner), short: inf ? inf.short : d.title }; };
 const mName = m => { const c = deckCard(m.card); return c.short || c.title; };
@@ -555,7 +599,7 @@ const machineOf = uid => ST.line.find(m => m.uid === uid);
 const unitOf = uid => ST.units.find(u => u.uid === uid);
 // "Ju 87 Stukas over the convoy" -> ["Ju 87", "Stukas over the convoy"]: the type in Oswald, the role in type.
 const unitWords = u => { const m = String(u.name).match(/^(\S+ \d+\S*)\s*(.*)$/); return m ? [m[1], m[2]] : [u.name, '']; };
-const uName = u => u ? (u.escort ? `the ${unitWords(u)[0]} escort` : `the ${u.name}`) : 'the raid';
+const uName = u => u ? (u.escort && unitWords(u)[1] ? `the ${unitWords(u)[0]} escort` : `the ${u.name}`) : 'the raid';
 function waveLabel() {
   const w = CH.waves[ST.wave];
   return `Wave ${ST.wave + 1} of ${CH.waves.length} · Round ${ST.round} · ${waveDate(w.date)}`;
@@ -566,24 +610,37 @@ function forecast() {
   const s = E.copy(ST), r = E.act(engineCampaign(), s, { a: ST.phase === 'enemy' ? 'lock' : 'end' });
   return r.ok ? { st: s, ev: s.events } : null;
 }
+// With a moon raider coming in, the board can't use the real outcome without giving its attack away, so
+// it works out the worst case instead: every hidden attack at the biggest number in its script.
+function worstForecast() {
+  if (ST.phase !== 'enemy' || !E.alive(ST).some(u => E.hidden(ST, u) && E.raiding(ST, u))) return null;
+  const s = E.copy(ST);
+  for (const u of E.alive(s)) if (E.hidden(s, u) && s.delays[u.uid] == null) u.delayedNext = E.upTo(u);
+  const r = E.act(engineCampaign(), s, { a: 'lock' });
+  return r.ok ? { st: s, ev: s.events } : null;
+}
 function topBarHTML() {
   const raid = ST.phase === 'enemy', opening = ST.phase === 'opening';
-  const lamp = ST.over ? (ST.over.won ? 'WAVES BROKEN' : 'RESOLVE GONE') : opening ? 'OPENING HAND' : raid ? 'THE RAID' : 'YOUR TURN';
+  const lamp = ST.over ? (ST.over.won ? 'WAVES BROKEN' : 'RESOLVE GONE') : opening ? 'OPENING HAND' : raid ? `THE ${W().raid}` : 'YOUR TURN';
   const sub = opening || E.calm(ST) ? `Calm · first raid in round ${ST.calmRounds + 1}` : waveLabel();
   const sup = raid || ST.over ? '–' : `${ST.supply}/${E.supplyFor(ST, ST.round)}`;
   return `<div class="tote"><div class="ttile res" id="cmpRes" role="button" tabindex="-1">${svgI('heart')}<b>${ST.resolve}</b><small>Resolve</small></div>
     <div class="tlamp ${raid ? 'red' : 'amber'}"><b>${lamp}</b><small>${esc(sub)}</small></div>
-    <div class="ttile sup"><b>${sup}</b><small>Supply</small></div></div>`;
+    <div class="ttile sup${ST.rules.supplyMax < E.RULES.supplyMax ? ' cut' : ''}"><b>${sup}</b><small>${ST.rules.supplyMax < E.RULES.supplyMax ? `Supply · max ${ST.rules.supplyMax}` : 'Supply'}</small></div></div>`;
 }
 function enemyPieceHTML(u, where, inN) {
   let tab;
-  if (where === 'far') tab = `<span class="etab wait">IN ${inN}</span>`;
+  const night = E.hidden(ST, u);
+  if (where === 'far') tab = `<span class="etab wait">${night ? MOON : ''}IN ${inN}</span>`;
+  else if (night && ST.delays[u.uid] == null) tab = `<span class="etab night">${MOON}?</span>`;
   else if (ST.delays[u.uid] != null) tab = `<span class="etab held">${svgI('ultimatum')}${E.nextAttack(u) + 1} next</span>`;
   else if (u.delayedNext != null && ST.phase !== 'enemy') tab = `<span class="etab atk">▼ ${u.delayedNext}</span>`;
   else { const nx = E.nextAttack(u); tab = nx > 0 ? `<span class="etab atk">▼ ${nx}</span>` : '<span class="etab climb">CLIMB</span>'; }
-  const [type, role] = unitWords(u);
+  const [type, role] = unitWords(u), pc = pieceOf(u);
+  const label = role ? (u.escort ? 'Escort' : role) : u.name; // "Ju 87 Stukas" splits into type and role; "Volksgrenadier screen" stays whole
   const target = (PICK && where === 'chan' && validTargets().includes(u.uid)) || (where === 'chan' && AIM.units[u.uid]);
-  return `<button type="button" class="epiece ${where}${u.escort ? ' esc' : ''}${target ? ' target' : ''}${ST.delays[u.uid] != null ? ' heldoff' : ''}" ${where === 'chan' ? `data-u="${u.uid}"` : 'disabled'} aria-label="${esc(u.name)}, Strength ${u.st}">${tab}<span class="eplaque">${u.st}</span><span class="ephoto" data-piece="${esc(u.piece || '')}"><i>${esc(type)}</i></span><span class="ename">${esc(u.escort ? 'Escort' : role || type)}</span>${u.airfield ? '<span class="eair">AIRFIELD</span>' : ''}</button>`;
+  const photo = pc ? `<img src="/declass/campaigns/pieces/${esc(pc.file)}" alt="" draggable="false">` : `<i>${esc(type)}</i>`;
+  return `<button type="button" class="epiece ${where}${u.escort ? ' esc' : ''}${night ? ' night' : ''}${target ? ' target' : ''}${ST.delays[u.uid] != null ? ' heldoff' : ''}" ${where === 'chan' ? `data-u="${u.uid}"` : 'disabled'} aria-label="${esc(u.name)}, Strength ${u.st}${night ? ', next attack hidden' : ''}">${tab}<span class="eplaque">${u.st}</span><span class="ephoto${pc ? ' pic' : ''}" data-piece="${esc(u.piece || '')}">${photo}</span><span class="ename">${esc(label)}</span>${u.airfield ? '<span class="eair">AIRFIELD</span>' : ''}</button>`;
 }
 function linePieceHTML(m, where) {
   const c = deckCard(m.card), max = ST.cards[m.card].value, atk = E.opValue(ST, m);
@@ -602,6 +659,11 @@ function plaqueFor(u, fc) {
   if (!fc) return '';
   if (ST.phase === 'enemy') {
     if (ST.delays[u.uid] != null) return `<div class="plq gold"><b>HELD OFF</b><span>Back next round as ${E.nextAttack(u) + 1}</span></div>`;
+    if (E.hidden(ST, u)) { // the night assault: the blockers' armor against "?", never the real number
+      const bs = blockersOf(u); if (!bs.length) return '';
+      const sum = bs.reduce((a, m) => a + m.arm, 0), n = E.upTo(u);
+      return `<div class="plq night"><b><em>?</em> vs <i>${bs.map(m => m.arm).join('+')}</i></b><span>UP TO ${n} · ${sum >= n ? 'STOPPED, WHATEVER IT IS' : `STOPS UP TO ${sum}`}</span></div>`;
+    }
     const e = fc.ev.find(x => x.unit === u.uid && (x.t === 'attack' || x.t === 'climb'));
     if (!e) return '';
     if (e.t === 'climb') return '<div class="plq"><b>CLIMB</b><span>No attack this raid</span></div>';
@@ -619,19 +681,25 @@ function plaqueFor(u, fc) {
   return `<div class="plq atk"><b><em>${hits.map(h => E.opValue(ST, machineOf(h.machine))).join('+')}</em> vs ${from}</b><span>${tail}</span></div>`;
 }
 // Where each raider's damage lands if nobody blocks it: a red plaque on the coast.
-function throughFor(u, fc) {
+const blockersOf = u => (ST.blocks[u.uid] || []).map(machineOf).filter(Boolean);
+function throughFor(u, fc, fcw) {
   if (!fc || ST.phase !== 'enemy') return '';
+  if (E.hidden(ST, u)) {
+    if (blockersOf(u).length || ST.delays[u.uid] != null || !fcw) return '';
+    const w = fcw.ev.find(x => x.unit === u.uid && x.t === 'attack');
+    return `<div class="thru"><i></i><div class="plq red night"><b>UP TO ${E.upTo(u)}</b><span>THROUGH · ${w ? `RESOLVE AS LOW AS ${w.resolve[1]}` : 'IF IT ATTACKS'}</span></div></div>`;
+  }
   const e = fc.ev.find(x => x.unit === u.uid && x.t === 'attack');
   if (!e || e.blocks.length || !e.through) return '';
   const g = fc.ev.find(x => x.t === 'ground' && x.unit === u.uid);
   return `<div class="thru"><i></i><div class="plq red"><b>${e.through} THROUGH</b><span>RESOLVE ${e.resolve[0]} TO ${e.resolve[1]}${g ? ` · ${esc(mName(machineOf(g.machine)).toUpperCase())} ${g.from} TO ${g.to} ON THE GROUND` : ''}</span></div></div>`;
 }
-function columnsHTML(fc) {
+function columnsHTML(fc, fcw) {
   const units = E.alive(ST);
   return units.map(u => {
     const ids = ST.phase === 'enemy' ? (ST.blocks[u.uid] || []) : ST.line.filter(m => m.mode === 'attack' && m.target === u.uid).map(m => m.uid);
     const ms = ids.map(machineOf).filter(Boolean);
-    return `<div class="col">${enemyPieceHTML(u, 'chan')}${plaqueFor(u, fc)}<div class="cms">${ms.map(m => linePieceHTML(m, 'col')).join('')}</div>${throughFor(u, fc)}</div>`;
+    return `<div class="col">${enemyPieceHTML(u, 'chan')}${plaqueFor(u, fc)}<div class="cms">${ms.map(m => linePieceHTML(m, 'col')).join('')}</div>${throughFor(u, fc, fcw)}</div>`;
   }).join('');
 }
 function farHTML() {
@@ -652,8 +720,12 @@ function handHTML() {
     return `<button class="hcard${why ? ' dark' : ' lit'}${LIFT === i ? ' up' : ''}${raid && c.keyword === 'ultimatum' && !why ? ' ult' : ''}" type="button" data-h="${i}" style="--r:${rot}deg" aria-label="${esc(c.title)}">${cardFaceHTML(c, 'hand')}</button>`;
   }).join('');
 }
-function forecastText(fc) {
+function forecastText(fc, fcw) {
   if (!fc || ST.over) return '';
+  if (ST.phase === 'enemy' && fcw) {
+    const lo = fcw.st.resolve;
+    return lo <= 0 ? `Resolve ${ST.resolve} to 0 at worst: the run could end` : lo === ST.resolve ? `Resolve stays ${ST.resolve}` : `Resolve ${ST.resolve} to as low as ${lo}`;
+  }
   if (ST.phase === 'enemy') {
     const lost = fc.st.resolve <= 0;
     return lost ? `Resolve ${ST.resolve} to 0: the run ends` : fc.st.resolve === ST.resolve ? `Resolve stays ${ST.resolve}` : `Resolve ${ST.resolve} to ${fc.st.resolve}`;
@@ -667,7 +739,8 @@ function drawRun() {
   if (LIFT != null && !ST.hand.includes(LIFT)) LIFT = null;
   AIM = aimOf(LIFT);
   const calm = E.calm(ST) || ST.phase === 'opening';
-  const fc = forecast();
+  const fc = forecast(), fcw = worstForecast(), tb = tableOf(), w = W();
+  const names = (l, r) => tb ? '' : `<span class="pname l">${esc(l)}</span><span class="pname r">${esc(r)}</span>`;
   const slots = [];
   const away = new Set(ST.phase === 'enemy' ? Object.values(ST.blocks).flat() : ST.phase === 'yours' ? ST.line.filter(m => m.mode === 'attack').map(m => m.uid) : []);
   let slotLit = false;
@@ -677,15 +750,15 @@ function drawRun() {
     else slots.push(away.has(m.uid) ? '<div class="lslot gone"></div>' : linePieceHTML(m, 'line'));
   }
   const btn = ST.phase === 'enemy' ? 'Lock in blocks' : calm ? 'End turn' : 'End turn: attack';
-  const ft = forecastText(fc);
+  const ft = forecastText(fc, fcw);
   $('cmpRun').innerHTML = `${topBarHTML()}
-    <div class="plot">
-      <div class="band far"><span class="pname l">BOULOGNE</span><span class="pname r">CALAIS</span><div class="erow">${farHTML()}</div></div>
-      <div class="band chan${PICK ? ' picking' : ''}"><span class="compass" aria-hidden="true"><i>S</i></span><span class="chname">THE CHANNEL</span><div class="cols n${Math.min(5, E.alive(ST).length)}">${calm ? '' : columnsHTML(fc)}</div>
-        ${PICK ? `<p class="pickhint">${ST.phase === 'enemy' ? 'Tap a raider to block it' : 'Tap a raider to attack it'} · <button type="button" id="cmpUnpick">Cancel</button></p>` : ''}
+    <div class="plot${tb ? ' mapped' : ''}"${tb ? ` style="background-image:url('/declass/campaigns/tables/${esc(tb.file)}')"` : ''}>
+      <div class="band far">${names(w.farL, w.farR)}<div class="erow">${farHTML()}</div></div>
+      <div class="band chan${PICK ? ' picking' : ''}">${tb ? '' : `<span class="compass" aria-hidden="true"><i>S</i></span><span class="chname">${esc(w.chan)}</span>`}<div class="cols n${Math.min(5, E.alive(ST).length)}">${calm ? '' : columnsHTML(fc, fcw)}</div>
+        ${PICK ? `<p class="pickhint">Tap ${w.raider === 'attacker' ? 'an' : 'a'} ${esc(w.raider)} to ${ST.phase === 'enemy' ? 'block' : 'attack'} it · <button type="button" id="cmpUnpick">Cancel</button></p>` : ''}
         <div class="tele" id="cmpTele" hidden></div>
         <div class="actbar">${ft ? `<span class="fcast">${esc(ft)}</span>` : ''}<button class="rmenu" id="cmpMenu" type="button" aria-label="Round menu">☰</button><button class="actbtn${ST.phase === 'enemy' ? ' raid' : ''}" id="cmpAct" type="button"${['enemy', 'yours'].includes(ST.phase) ? '' : ' disabled'}>${btn}</button></div></div>
-      <div class="band coast"><span class="pname l">FOLKESTONE</span><span class="pname r">DOVER</span><div class="lrow">${slots.join('')}</div></div>
+      <div class="band coast">${names(w.coastL, w.coastR)}<div class="lrow">${slots.join('')}</div></div>
     </div>
     <div class="hand${ST.phase === 'enemy' ? ' down' : ''}" id="cmpHand">${handHTML()}</div>
     <div class="liftbox" id="cmpLift" hidden></div>
@@ -704,7 +777,7 @@ function drawRun() {
 // ---------- sending machines up ----------
 function validTargets() {
   const m = PICK && machineOf(PICK); if (!m) return [];
-  if (ST.phase === 'enemy') return E.alive(ST).filter(u => E.incoming(ST, u) > 0).map(u => u.uid);
+  if (ST.phase === 'enemy') return E.alive(ST).filter(u => E.raiding(ST, u)).map(u => u.uid);
   return E.targetsFor(ST, m).map(u => u.uid);
 }
 function tapMachine(uid, inColumn) {
@@ -725,7 +798,7 @@ function tapMachine(uid, inColumn) {
 }
 function tapUnit(uid) {
   if (LIFT != null) { if (AIM.units[uid]) { playAim(AIM.units[uid]); return; } LIFT = null; drawRun(); return; }
-  if (PICK) { if (validTargets().includes(uid)) sendUp(uid); else D().toast(ST.phase === 'yours' ? 'Escorts must be attacked first.' : 'That raider is not attacking in this raid.'); return; }
+  if (PICK) { if (validTargets().includes(uid)) sendUp(uid); else D().toast(ST.phase === 'yours' ? 'Escorts must be attacked first.' : `That ${W().raider} is not attacking this round.`); return; }
   unitInfo(uid);
 }
 function sendUp(uid) {
@@ -736,13 +809,16 @@ function sendUp(uid) {
 }
 function unitInfo(uid) {
   const u = unitOf(uid); if (!u) return;
-  const nx = E.nextAttack(u), held = ST.delays[u.uid] != null;
-  const move = held ? `Held off by your Ultimatum. It comes back next round with an attack of ${nx + 1}.` : nx > 0 ? `Its next move: an attack of ${nx}${ST.phase === 'enemy' ? ' in this raid' : ' in the next raid'}.` : 'Its next move: a climb, with no attack.';
+  const nx = E.nextAttack(u), held = ST.delays[u.uid] != null, pc = pieceOf(u);
+  const move = held ? `Held off by your Ultimatum. It comes back next round with an attack of ${nx + 1}.` : E.hidden(ST, u) ? `Its next move is hidden in the dark. Its attacks run up to ${E.upTo(u)}.` : nx > 0 ? `Its next move: an attack of ${nx}${ST.phase === 'enemy' ? ' in this raid' : ' in the next raid'}.` : 'Its next move: a climb, with no attack.';
   D().sheet(`<div class="sheettop"><span class="howstamp">Enemy unit</span><button class="howx" data-close aria-label="Close">✕</button></div>
+    ${pc ? `<img class="ubig" src="/declass/campaigns/pieces/${esc(pc.fileLarge || pc.file)}" alt="${esc(pc.alt || pc.machine)}">` : ''}
     <h2>${esc(u.name)}</h2><p class="sheetline">Strength ${u.st} of ${u.max}. ${esc(move)}</p>
     ${u.escort ? '<p class="sheetnote">An escort: your attacks must go at escorts first, until every escort is down or already has enough coming at it.</p>' : ''}
-    ${u.airfield ? `<p class="sheetnote">${esc(CH.twist ? CH.twist.text : 'It goes for your airfields.')}</p>` : ''}
-    <p class="sheetnote">Strength is the raid's fighting strength. Each hit takes it down; at 0 the raider is out of the fight.</p>`);
+    ${u.airfield ? `<p class="sheetnote">${esc(CH.twist ? twistText(CH.twist) : 'It goes for your airfields.')}</p>` : ''}
+    ${E.hidden(ST, u) ? `<p class="sheetnote">${MOON} ${esc(twistText(CH.twist))}</p>` : ''}
+    <p class="sheetnote">Strength is its fighting strength. Each hit takes it down; at 0 it is out of the fight.</p>
+    ${pc ? `<p class="sheetnote credit">${esc(pc.machine)}${pc.variant ? ' ' + esc(pc.variant) : ''}. Photo: ${esc(pc.credit)}.</p>` : ''}`);
 }
 
 // ---------- the action button ----------
@@ -762,29 +838,31 @@ function act() {
     if (cleared) newWave();
     phaseSounds(cleared ? 0 : heard);
     if (ST.phase === 'yours') tele(E.calm(ST) ? 'ALL QUIET' : 'YOUR TURN', E.calm(ST) ? allQuietLines() : turnLines(before.resolve, ev));
-    else if (ST.phase === 'enemy') tele('RAID INBOUND', (before.phase === 'yours' ? strikeLines(ev) : []).concat(raidLines()));
+    else if (ST.phase === 'enemy') tele(`${W().raid} INBOUND`, (before.phase === 'yours' ? strikeLines(ev) : []).concat(raidLines()));
   };
   if (cleared) debrief(cleared.wave, next); else next();
 }
 function raidLines() {
   const coming = E.alive(ST).filter(u => E.incoming(ST, u) > 0);
-  return [`Hostiles plotted over the Channel: ${hostileNames(coming.length ? coming : E.alive(ST))}.`, 'Scramble your fighters to block them.'];
+  const night = coming.filter(u => E.hidden(ST, u));
+  return [`${W().plotted}: ${hostileNames(coming.length ? coming : E.alive(ST))}.`, night.length ? `In the dark, ${night.map(uName).join(' and ')} could hit for up to ${Math.max(...night.map(E.upTo))}.` : W().block];
 }
 function turnLines(r0, ev) {
   const lost = r0 - ST.resolve, out = [];
   out.push(lost > 0 ? `The raid is over. It cost you ${lost} Resolve.` : 'The raid is over. Your blocks held: Resolve stays at ' + ST.resolve + '.');
   const down = ev.filter(e => e.t === 'attack' && e.hitBack && e.hitBack.to <= 0).map(e => uName(unitOf(e.unit)));
   const ko = ev.filter(e => e.t === 'knockedOut').map(e => deckCard(e.card).short || deckCard(e.card).title);
+  ev.filter(e => (e.t === 'attack' || e.t === 'climb') && E.hidden(ST, unitOf(e.unit) || {})).forEach(e => out.push(e.t === 'climb' ? `Out of the dark: ${unitOf(e.unit).name}, no attack.` : `Out of the dark: ${unitOf(e.unit).name} hit with ${e.attack}.`));
   if (down.length) out.push(`Attrition: ${down.join(' and ')} went down hitting your blockers.`);
   if (ko.length) out.push(`Knocked out: ${ko.join(', ')}.`);
-  out.push('Arm your fighters and send them up.');
+  out.push(W().arm);
   return out.slice(0, 3);
 }
 function strikeLines(ev) {
   const by = new Map();
   ev.filter(e => e.t === 'strike').forEach(e => { const g = by.get(e.unit) || { from: e.from, to: e.to }; g.to = e.to; by.set(e.unit, g); });
   const parts = [...by].map(([uid, g]) => g.to <= 0 ? `${uName(unitOf(uid))} destroyed` : `${uName(unitOf(uid))} Strength ${g.from} to ${g.to}`);
-  const arr = ev.filter(e => e.t === 'arrive').map(e => `${uName(unitOf(e.unit))} ${e.why === 'sweep' ? 'joins on a fighter sweep' : 'flies in'}`);
+  const arr = ev.filter(e => e.t === 'arrive').map(e => `${uName(unitOf(e.unit))} ${e.why === 'sweep' ? W().sweep : W().arrive}`);
   const out = [];
   if (parts.length) out.push(`Your attacks: ${parts.join('; ')}.`);
   if (arr.length) out.push(arr.join('; ').replace(/^t/, 'T') + '.');
@@ -807,9 +885,9 @@ function debrief(k, then) {
 }
 function newWave() {
   const w = CH.waves[ST.wave];
-  const lines = E.alive(ST).map(u => { const nx = E.nextAttack(u); return `${u.name}: Strength ${u.st}, ${nx > 0 ? 'attacks ' + nx : 'climbs'} first.`; });
+  const lines = E.alive(ST).map(u => { const nx = E.nextAttack(u); return `${u.name}: Strength ${u.st}, ${E.hidden(ST, u) ? 'its first move hidden' : nx > 0 ? 'attacks ' + nx + ' first' : 'climbs first'}.`; });
   D().toast(`${w.name} is coming in.`);
-  tele('NEW RAID PLOTTED', [`${waveDate(w.date)}, ${w.name}.`].concat(lines).slice(0, 3));
+  tele(`NEW ${W().raid} PLOTTED`, [`${waveDate(w.date)}, ${w.name}.`].concat(lines).slice(0, 3));
 }
 function endScreen() {
   const o = $('cmpOver'), ov = ST.over, w = CH.waves[Math.min(ST.wave, CH.waves.length - 1)];
@@ -817,7 +895,7 @@ function endScreen() {
   let head, verdict, more = '';
   if (ov.won) {
     head = ov.resolve > bench ? 'YOU HELD BETTER THAN HISTORY' : ov.resolve === bench ? 'YOU MATCHED HISTORY' : 'HISTORY HELD BETTER';
-    verdict = `In real history, ${sideName()} came through these raids at a Resolve of ${bench}. You came through at ${ov.resolve}, in ${ov.rounds} rounds.`;
+    verdict = `In real history, ${sideName()} came through ${W().these} at a Resolve of ${bench}. You came through at ${ov.resolve}, in ${ov.rounds} rounds.`;
   } else {
     head = 'YOUR RESOLVE RAN OUT';
     verdict = `It ran out in wave ${ST.wave + 1} of ${CH.waves.length}, ${w.name}, in round ${ov.rounds}. You broke ${ov.wavesCleared} wave${ov.wavesCleared === 1 ? '' : 's'} and took down ${Math.round(ov.destroyed * 100)}% of this one.`;
@@ -874,7 +952,7 @@ function openingHand() {
   $('ohMull').onclick = () => { if (!ST.mulliganed && choose({ a: 'mulligan' })) { sfx('mulligan'); openingHand(); } };
 }
 function hostileNames(list) { return [...new Set(list.map(u => unitWords(u)[0]))].join(', '); }
-function allQuietLines() { return [`Hostiles massing over France: ${hostileNames(E.alive(ST))}.`, 'Build your line before they come.']; }
+function allQuietLines() { return [`${W().massing}: ${hostileNames(E.alive(ST))}.`, 'Build your line before they come.']; }
 let teleT = 0;
 function tele(head, lines) {
   const t = $('cmpTele'); if (!t) return;
@@ -969,16 +1047,21 @@ function pieceInfo(uid) {
 function cabinet() {
   const out = [], fc = forecast(), al = E.alive(ST);
   if (ST.phase === 'enemy') {
-    const total = al.reduce((a, u) => a + E.incoming(ST, u), 0);
-    out.push(`This raid brings ${total} attack in all. Your Resolve is ${ST.resolve}.`);
-    const big = Math.max(0, ...al.map(u => E.incoming(ST, u))), best = Math.max(0, ...ST.line.filter(E.canBlock).map(m => m.arm));
-    if (big > best && big) out.push(`The biggest attack, ${big}, is more than any one machine can take. Send two up together.`);
-    if (fc) fc.ev.filter(e => e.t === 'attack' && e.blocks.length && e.through).forEach(e => out.push(`Your block on ${uName(unitOf(e.unit))} falls short: ${e.through} still gets through.`));
+    // A moon raider counts at the most it can hit for, and the advice never gives its real attack away.
+    const night = al.filter(u => E.hidden(ST, u) && E.raiding(ST, u) && ST.delays[u.uid] == null);
+    const atk = u => (night.includes(u) ? E.upTo(u) : E.incoming(ST, u));
+    const total = al.reduce((a, u) => a + atk(u), 0);
+    out.push(`This raid brings ${night.length ? 'up to ' : ''}${total} attack in all. Your Resolve is ${ST.resolve}.`);
+    const big = Math.max(0, ...al.map(atk)), best = Math.max(0, ...ST.line.filter(E.canBlock).map(m => m.arm));
+    if (big > best && big) out.push(`The biggest attack${night.some(u => atk(u) === big) ? ' could be' : ','} ${big}, more than any one machine can take. Send two up together.`);
+    night.forEach(u => { const sum = blockersOf(u).reduce((a, m) => a + m.arm, 0); out.push(sum >= E.upTo(u) ? `Your block on ${uName(u)} stops it, whatever it turns out to be.` : `${uName(u).replace(/^t/, 'T')} attacks in the dark, up to ${E.upTo(u)}. ${sum ? `Your block stops up to ${sum}.` : 'You won\'t see it until it lands.'}`); });
+    if (fc) fc.ev.filter(e => e.t === 'attack' && e.blocks.length && e.through && !night.some(u => u.uid === e.unit)).forEach(e => out.push(`Your block on ${uName(unitOf(e.unit))} falls short: ${e.through} still gets through.`));
     if (ST.hand.some(i => ST.cards[i].keyword === 'ultimatum' && !E.whyNot(engineCampaign(), ST, i))) out.push('You hold an Ultimatum. It can hold off one attack of 5 or less in this raid.');
   } else if (ST.phase === 'yours') {
-    const next = al.reduce((a, u) => a + E.coming(ST, u), 0);
+    const dark = al.filter(u => E.hidden(ST, u) && E.coming(ST, u) >= 0 && ST.round + 1 > ST.calmRounds);
+    const next = al.reduce((a, u) => a + (dark.includes(u) ? E.upTo(u) : E.coming(ST, u)), 0);
     const kept = ST.line.filter(m => m.mode !== 'attack').reduce((a, m) => a + m.arm, 0);
-    if (!E.calm(ST)) out.push(`The next raid brings ${next} attack. You are keeping back ${kept} armor. Your Resolve is ${ST.resolve}.`);
+    if (!E.calm(ST)) out.push(`The next raid brings ${dark.length ? 'up to ' : ''}${next} attack. You are keeping back ${kept} armor. Your Resolve is ${ST.resolve}.`);
     else out.push(`The first raid comes in round ${ST.calmRounds + 1}. Build your line and arm it while it is quiet.`);
     if (fc) {
       fc.ev.filter(e => e.t === 'arrive' && e.why === 'early').forEach(e => out.push(`Clearing the sky brings ${uName(fc.st.units.find(u => u.uid === e.unit))} in early. It attacks in the next raid.`));

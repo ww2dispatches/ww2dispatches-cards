@@ -64,7 +64,7 @@ export function newRun(campaign, chapterN, deck, seed, rules = RULES) {
   const st = {
     v: ENGINE_VERSION, campaignId: campaign.id, chapter: chapterN, seed: String(seed),
     rng: hashSeed(campaign.id + '|' + chapterN + '|' + seed),
-    rules: { ...rules, startResolve: campaign.startResolve ?? rules.startResolve },
+    rules: { ...rules, startResolve: campaign.startResolve ?? rules.startResolve, supplyMax: supplyCap(ch, rules) },
     calmRounds: ch.calm ? ch.calm.rounds : 0, twist: ch.twist ? ch.twist.id : null,
     cards: deck.map(c => ({ series: c.series, value: c.value, branches: c.branches || [], keyword: c.keyword || null })),
     round: 1, phase: 'opening', wave: 0, waveRounds: 0, uid: 1,
@@ -77,10 +77,17 @@ export function newRun(campaign, chapterN, deck, seed, rules = RULES) {
   st.supply = supplyFor(st, 1);
   return st;
 }
+// Twist: cut off (January 2027 chapter 2). The chapter's Supply never rises above 6 (or the twist's own
+// supplyMax), so the big cards come late or not at all.
+export const CUT_OFF_SUPPLY = 6;
+function supplyCap(ch, rules) {
+  if (ch.twist && ch.twist.id === 'cut_off') return Math.min(rules.supplyMax, ch.twist.supplyMax || CUT_OFF_SUPPLY);
+  return rules.supplyMax;
+}
 function waveOf(campaign, st) { return chapterOf(campaign, st.chapter).waves[st.wave]; }
 function freshUnit(st, u) {
   return { uid: 'u' + (st.uid++), id: u.id, name: u.name, piece: u.piece || null, st: u.strength, max: u.strength,
-    script: u.script.slice(), i: 0, delayedNext: null, escort: !!u.escort, airfield: !!u.airfield };
+    script: u.script.slice(), i: 0, delayedNext: null, escort: !!u.escort, airfield: !!u.airfield, night: !!u.night };
 }
 function dealOpening(st) {
   st.draw = shuffle(st, st.cards.map((_, i) => i));
@@ -105,6 +112,15 @@ export function calm(st) { return st.wave === 0 && st.round <= st.calmRounds; }
 export function incoming(st, u) { if (st.phase !== 'enemy' || u.st <= 0 || st.delays[u.uid] != null) return 0; return nextAttack(u); }
 // the attack coming in the next raid (0 if that raid is still a calm round)
 export function coming(st, u) { if (u.st <= 0 || st.delays[u.uid] != null || st.round + 1 <= st.calmRounds) return 0; return nextAttack(u); }
+// Twist: night assault (January 2027 chapter 3). A raider marked with a moon hides its next move until it
+// lands. The rules are the same; only what the player is shown changes, so the page asks hidden() before
+// showing a number, and shows upTo() (the biggest attack in its script) instead. An Ultimatum can't hold
+// off a hidden attack.
+export const hidden = (st, u) => st.twist === 'night_assault' && !!u.night;
+export const upTo = u => Math.max(0, ...u.script);
+// Can machines go up under this raider in this raid? A hidden raider can be blocked even when its move
+// turns out to be a climb, so the board never gives the secret away.
+export function raiding(st, u) { return incoming(st, u) > 0 || (st.phase === 'enemy' && u.st > 0 && st.delays[u.uid] == null && hidden(st, u)); }
 export const canBlock = m => m.state === 'ready';
 export const canAttack = (st, m) => m.state === 'ready' && m.op != null && !m.fresh && !calm(st);
 export function blockersOf(st, uid) { return (st.blocks[uid] || []).map(id => machine(st, id)).filter(Boolean); }
@@ -125,7 +141,7 @@ export function lendable(campaign, st) {
   return st.draw.filter(i => { const c = st.cards[i]; return c.series === 'blue' && c.value <= REACH.lend && fitsChapter(ch, c); });
 }
 export const evacuable = st => st.lost.filter(i => st.cards[i].value <= REACH.evac);
-export function ultimatumTargets(st) { return st.phase === 'enemy' ? alive(st).filter(u => incoming(st, u) > 0 && incoming(st, u) <= REACH.ultimatum) : []; }
+export function ultimatumTargets(st) { return st.phase === 'enemy' ? alive(st).filter(u => !hidden(st, u) && incoming(st, u) > 0 && incoming(st, u) <= REACH.ultimatum) : []; }
 
 // Why a card in hand can't be played right now ('' if it can). The page shows the reason; the engine
 // refuses the same play for the same reason.
@@ -148,7 +164,10 @@ export function whyNot(campaign, st, i) {
     if (c.keyword === 'lend') { if (st.line.length >= st.rules.line) return 'Your line is full.'; if (!lendable(campaign, st).length) return `No machine of ${REACH.lend} or less left in your deck.`; }
     else if (c.keyword === 'evac') { if (!evacuable(st).length) return `No knocked out machine of ${REACH.evac} or less to bring back.`; }
     else if (c.keyword === 'backchannel') { if (!st.draw.length) return 'Your deck is empty.'; }
-    else if (c.keyword === 'ultimatum') { if (!ultimatumTargets(st).length) return `No attack of ${REACH.ultimatum} or less is coming in this raid.`; }
+    else if (c.keyword === 'ultimatum') {
+      if (!ultimatumTargets(st).length) return alive(st).some(u => hidden(st, u) && raiding(st, u)) && !alive(st).some(u => !hidden(st, u) && incoming(st, u) > 0)
+        ? 'An Ultimatum can\'t hold off a night assault.' : `No attack of ${REACH.ultimatum} or less is coming in this raid.`;
+    }
     else return 'This Statecraft card has no keyword yet.';
   }
   if (c.series === 'home' && st.resolve >= st.rules.resolveCap && !st.line.some(m => m.arm < st.cards[m.card].value)) return 'Resolve is full and no machine needs repair.';
@@ -207,7 +226,7 @@ export function act(campaign, st, ch) {
   }
   if (a === 'block') {
     if (st.phase !== 'enemy') return no('Blocks are chosen when the raid comes in.');
-    const u = unit(st, ch.unit); if (!u || incoming(st, u) <= 0) return no('That unit is not attacking.');
+    const u = unit(st, ch.unit); if (!u || !raiding(st, u)) return no('That unit is not attacking.');
     const ms = (ch.machines || []).map(id => machine(st, id));
     if (ms.some(m => !m || !canBlock(m)) || new Set(ch.machines).size !== ms.length) return no('Only Ready machines can block.');
     for (const k of Object.keys(st.blocks)) { st.blocks[k] = st.blocks[k].filter(id => !ch.machines.includes(id)); if (!st.blocks[k].length) delete st.blocks[k]; }
@@ -259,7 +278,10 @@ function resolveRaid(campaign, st) {
       ev.push({ t: 'heldOff', unit: u.uid, attack: a, back: a + 1, card: st.delays[u.uid] }); continue;
     }
     let a; if (u.delayedNext != null) { a = u.delayedNext; u.delayedNext = null; } else { a = scriptAtk(u); u.i++; }
-    if (a <= 0) { ev.push({ t: 'climb', unit: u.uid }); continue; }
+    if (a <= 0) { // a climb: no attack. Machines sent up under a hidden raider that climbed still went up, so they are Rearming.
+      const up = blockersOf(st, u.uid); up.forEach(m => { m.state = 'blocked'; });
+      ev.push({ t: 'climb', unit: u.uid, blocks: up.map(m => ({ machine: m.uid, from: m.arm, to: m.arm })) }); continue;
+    }
     const bs = blockersOf(st, u.uid).filter(m => m.arm > 0);
     let left = a, hit = 0; const parts = [];
     for (const m of bs) { const b = m.arm, take = Math.min(left, m.arm); m.arm -= take; left -= take; m.state = 'blocked'; parts.push({ machine: m.uid, from: b, to: m.arm }); hit += opValue(st, m); }

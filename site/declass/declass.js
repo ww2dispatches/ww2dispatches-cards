@@ -36,6 +36,9 @@
     cmpPreview = localStorage.getItem('declass_cmp') || '';
   } catch (e) {}
 
+  // The campaign a preview tester picked on the month screen (27 Nov 2026), read fresh on every call.
+  const cmpPick = () => { try { return localStorage.getItem('declass_cmp_pick') || ''; } catch (e) { return ''; } };
+
   // Full screen card with zoom (29 Oct 2026): on for everyone after Brian's phone trial.
   const zoomTrial = true;
   try { localStorage.removeItem('declass_zoom'); } catch (e) {}
@@ -52,7 +55,7 @@
   function api(path, body) {
     return fetch('/api/' + path, {
       method: body ? 'POST' : 'GET',
-      headers: Object.assign({ 'x-declass-key': testerKey }, icpPreview ? { 'x-intercept-preview': '1' } : {}, cmpPreview ? { 'x-campaigns-preview': '1' } : {}, body ? { 'content-type': 'application/json' } : {}),
+      headers: Object.assign({ 'x-declass-key': testerKey }, icpPreview ? { 'x-intercept-preview': '1' } : {}, cmpPreview ? Object.assign({ 'x-campaigns-preview': '1' }, cmpPick() ? { 'x-campaigns-pick': cmpPick() } : {}) : {}, body ? { 'content-type': 'application/json' } : {}),
       body: body ? JSON.stringify(body) : undefined,
       credentials: 'same-origin',
     }).then(r => r.json().catch(() => ({})).then(d => { if (!r.ok) throw new Error(d.error || String(r.status)); return d; }));

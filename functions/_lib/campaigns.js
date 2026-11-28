@@ -4,6 +4,7 @@
 // anything. No result from the page is ever trusted.
 import * as E from '../../site/declass/campaigns/engine.js';
 import battleOfBritain from '../_data/campaigns/1940-08-battle-of-britain.json';
+import bastogne from '../_data/campaigns/1944-12-bastogne.json';
 import schedule from '../_data/campaigns/schedule.json';
 import loanerData from '../_data/loaners.json';
 import { findCard } from './catalog.js';
@@ -32,7 +33,8 @@ export const bandOf = top => top <= 5 ? 'top5' : top <= 25 ? 'top25' : top <= 50
 export const BAND_NAME = { top5: 'top 5%', top25: 'top 25%', top50: 'top 50%', finished: 'won the chapter' };
 const won_at = row => Boolean(row && row.won_at);        // a finished run is a few hundred choices; anything far past that is refused
 
-const CAMPAIGNS = new Map([battleOfBritain].map(c => [c.id, c]));
+// Every campaign file, registered here. Add each month's file shortly before its month (the repo is public).
+const CAMPAIGNS = new Map([battleOfBritain, bastogne].map(c => [c.id, c]));
 export const LOANERS = loanerData.loaners;
 const LOANER_BY_ID = new Map(LOANERS.map(l => [l.id, l]));
 
@@ -43,15 +45,20 @@ export function campaignsOpen(env, request, player) {
 }
 
 // Which campaign runs in the month of moment t (Eastern), and the year it runs in. schedule.json maps
-// "YYYY-MM" to a campaign id. Before launch a tester previewing gets the reference campaign with every
-// chapter open, so the page can be played on preview at any time of year.
-export function campaignFor(t, preview = false) {
+// "YYYY-MM" to a campaign id. Before launch a tester previewing gets a campaign with every chapter open, so
+// the page can be played on preview at any time of year: schedule.preview by default, or the one the page
+// picked (the x-campaigns-pick header, from the preview switch on the month screen).
+export function campaignFor(t, preview = false, pick = null) {
   const day = gameDay(t), ym = day.slice(0, 7);
   const id = schedule.months[ym];
   if (id && CAMPAIGNS.has(id)) return { campaign: CAMPAIGNS.get(id), year: ym.slice(0, 4), preview: false };
-  if (preview && CAMPAIGNS.has(schedule.preview)) return { campaign: CAMPAIGNS.get(schedule.preview), year: ym.slice(0, 4), preview: true };
+  const pid = pick && CAMPAIGNS.has(pick) ? pick : schedule.preview;
+  if (preview && CAMPAIGNS.has(pid)) return { campaign: CAMPAIGNS.get(pid), year: ym.slice(0, 4), preview: true };
   return null;
 }
+export const pickOf = request => (request && request.headers && request.headers.get('x-campaigns-pick')) || null;
+// The campaigns a preview tester can switch between, newest history first.
+export const previewList = () => [...CAMPAIGNS.values()].map(c => ({ id: c.id, title: c.title })).sort((a, b) => b.id.localeCompare(a.id));
 // A chapter opens at midnight Eastern on its date. In preview every chapter is open.
 export function chapterOpensAt(slot, ch) {
   if (slot.preview) return null;
@@ -154,7 +161,7 @@ export function publicChapter(slot, ch, t, progress) {
   const unlocked = released && (ch.n === 1 || Boolean(prev && prev.won_at));
   const mine = progress.get(ch.n);
   const out = { n: ch.n, name: ch.name, opensAt: chapterOpensAt(slot, ch), released, unlocked, won: Boolean(mine && mine.won_at), best: mine ? mine.best : null };
-  if (released) Object.assign(out, { branches: ch.branches, twist: ch.twist, intro: ch.intro, calm: ch.calm, benchmark: ch.benchmark, sweep: ch.sweep, waves: ch.waves });
+  if (released) Object.assign(out, { table: ch.table || null, words: ch.words || null, branches: ch.branches, twist: ch.twist, intro: ch.intro, calm: ch.calm, benchmark: ch.benchmark, sweep: ch.sweep, waves: ch.waves });
   return out;
 }
 export async function progressOf(db, playerId, slot) {

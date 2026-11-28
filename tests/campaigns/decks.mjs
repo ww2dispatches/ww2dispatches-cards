@@ -17,3 +17,8 @@ export const STATECRAFT_HEAVY = [
   H(2), H(3), H(1), H(4),
   S(1, 'backchannel'), S(2, 'ultimatum'), S(2, 'backchannel'), S(3, 'lend'), S(3, 'evac'), S(4, 'lend'), S(4, 'ultimatum'),
 ];
+
+// The same two decks with every machine and operation on land, for the January land chapters.
+const toLand = d => d.map(c => (c.series === 'blue' || c.series === 'battle' ? { ...c, branches: ['land'] } : c));
+export const LAND_LINE = toLand(FIGHTER_COMMAND);
+export const LAND_STATECRAFT = toLand(STATECRAFT_HEAVY);

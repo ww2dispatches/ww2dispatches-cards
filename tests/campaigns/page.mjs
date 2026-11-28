@@ -6,6 +6,10 @@
 // end screen and that the server replayed and saved it. Fails on any page error. SHOTS=<dir> saves a screenshot of each step.
 import { cookie } from '../declass/cookie.mjs';
 import { DatabaseSync } from 'node:sqlite';
+import bastogne from '../../functions/_data/campaigns/1944-12-bastogne.json' with { type: 'json' };
+import loanerData from '../../functions/_data/loaners.json' with { type: 'json' };
+import * as E from '../../site/declass/campaigns/engine.js';
+import { playRun } from './bot.mjs';
 const { chromium } = await import(process.env.PLAYWRIGHT || 'playwright');
 const BASE = 'http://localhost:8799', P = 'B' + 'x'.repeat(31);
 const db = new DatabaseSync(process.env.DB);
@@ -35,6 +39,8 @@ await page.goto(BASE + '/declass?key=t');
 await page.waitForSelector('#sHome.on', { timeout: 15000 });
 await page.waitForTimeout(800);
 ok(!(await page.$('#cmpTile')), 'no Campaigns door without the preview setting');
+// These checks play the reference campaign; the January checks at the end switch with the preview picker.
+await page.evaluate(() => localStorage.setItem('declass_cmp_pick', '1940-08-battle-of-britain'));
 await page.goto(BASE + '/declass?campaigns=preview');
 await page.waitForSelector('#cmpTile', { timeout: 15000 });
 ok(/Chapter 1/.test(await text('#cmpTile')), 'the door names the open chapter');
@@ -205,6 +211,114 @@ if (payout && payout.intel > 0) {
 } else {
   // a lost run ranked below the top half pays nothing (the last band needs a win), so no notice
   ok(payout && payout.band === 'none' && await page.$eval('#sheet', el => el.hidden), 'a lost run outside the top half settles with no payout and no notice');
+}
+
+// ---------- January 2027 on the preview (27 Nov 2026): the picker, the art, the words, both twists ----------
+const BAS = bastogne.id, YEAR = new Date().toLocaleDateString('en-CA', { timeZone: 'America/New_York' }).slice(0, 4);
+for (const t of ['campaign_runs', 'campaign_progress', 'campaign_day_best']) db.prepare(`DELETE FROM ${t} WHERE player_id = ? AND campaign_id = ?`).run(P, BAS);
+await page.goto(BASE + '/declass');
+await page.waitForSelector('#cmpTile', { timeout: 15000 });
+await page.click('#cmpTile');
+await page.waitForSelector(`[data-pick="${BAS}"]`);
+await page.click(`[data-pick="${BAS}"]`);
+await page.waitForFunction(() => /Nuts!/.test(document.querySelector('.cmptitle') && document.querySelector('.cmptitle').textContent));
+ok(/December 1944 to January 1945/.test(await text('.cmpkicker')), 'the preview picker opens January, dated December 1944 to January 1945');
+await shot('jan-month');
+await page.click('[data-ch="1"]');
+ok(/the garrison came through the siege at a Resolve of 6/.test(await text('#cmpBody')) && /land and air campaign/.test(await text('#cmpBody')), 'the Bastogne briefing: the mark to beat, land and air');
+await shot('jan-chapter');
+await page.click('#chGo');
+await page.click('#dkSug1');
+ok(/^20/.test(await text('.dkn')), 'a suggested January deck of 20');
+await page.click('#dkStart');
+await page.click('#cmpStartGo');
+await page.waitForSelector('.ohand');
+await page.click('#ohKeep');
+await page.waitForSelector('#cmpTele:not([hidden])');
+ok(/The enemy is massing beyond the perimeter/.test(await text('#cmpTele')), 'January words on the teleprinter');
+ok(Boolean(await page.$('.plot.mapped')) && /bastogne_perimeter\.svg/.test(await page.$eval('.plot', e => e.style.backgroundImage)), 'the Bastogne table lies under the bands');
+ok(!(await page.$('.plot .pname')) && !(await page.$('.plot .chname')), 'no Channel place names on a drawn table');
+await page.waitForFunction(() => { const im = [...document.querySelectorAll('.band.far .ephoto.pic img')]; return im.length && im.every(i => i.complete && i.naturalWidth > 0); }, null, { timeout: 8000 }).catch(() => {});
+ok(await page.$$eval('.band.far .ephoto.pic img', els => els.length === 2 && els.every(i => i.complete && i.naturalWidth > 0)), 'the enemy photo pieces load (half track and StuG)');
+await shot('jan-calm');
+await page.click('#cmpTele').catch(() => {});
+await page.click('.band.far .epiece >> nth=0').catch(() => {});
+const leave = async () => { await page.click('#cmpMenu'); await page.click('#mLeave'); await page.click('#mLeaveGo'); await page.waitForSelector('#chGo', { timeout: 8000 }).catch(() => {}); };
+await leave();
+
+// Chapters 2 and 3 open as if chapters 1 and 2 were won, then runs are started through the page's own api
+for (const n of [1, 2]) db.prepare("INSERT INTO campaign_progress (player_id, campaign_id, year, chapter, won_at, best, best_day) VALUES (?, ?, ?, ?, '2026-11-20T18:00:00Z', 1000000, '2026-11-20') ON CONFLICT DO UPDATE SET won_at = excluded.won_at").run(P, BAS, YEAR, n);
+const LO = loanerData.loaners, LAND = LO.filter(l => l.branches.includes('land')).map(l => ({ loaner: l.id }));
+const REST = LO.filter(l => l.series === 'home' || l.series === 'state').map(l => ({ loaner: l.id }));
+const landDeck = [...LAND.slice(0, 12), ...REST].slice(0, 20);
+const startVia = chN => page.evaluate(([c, d]) => window.Declass.api('campaign/start', { chapter: c, deck: d }), [chN, landDeck]);
+const resumeWith = async (chN, s, choices) => {
+  await page.evaluate(r => localStorage.setItem('declass_cmp_run', JSON.stringify(r)), { campaignId: BAS, chapter: chN, ticket: s.ticket, seed: s.seed, deck: s.deck, choices, runNo: s.runNo, day: null, started: Date.now() });
+  await page.goto(BASE + '/declass');
+  await page.waitForSelector('#cmpTile', { timeout: 15000 });
+  await page.click('#cmpTile');
+  await page.waitForSelector('#cmpResume');
+  await page.click('#cmpResume');
+  await page.waitForSelector('.plot');
+  await page.click('#cmpTele').catch(() => {});
+};
+// Cut off: Supply never above 6
+{
+  const s = await startVia(2);
+  ok(s && s.seed && s.deck.length === 20, 'a land loaner deck starts chapter 2');
+  const r = playRun(bastogne, 2, s.deck, s.seed);
+  const st = E.newRun(bastogne, 2, s.deck, s.seed); let k = 0;
+  for (; k < r.choices.length && !(st.phase === 'yours' && st.round >= 6); k++) E.act(bastogne, st, r.choices[k]);
+  await resumeWith(2, s, r.choices.slice(0, k));
+  ok(/max 6/.test(await text('.ttile.sup')) && (st.round < 6 || /\/6/.test(await text('.ttile.sup'))), 'Cut off: the Supply tile says max 6: ' + (await text('.ttile.sup')) + ' in round ' + st.round);
+  await shot('jan-cutoff');
+  await page.click('#cmpMenu');
+  ok(/THE JOINT CHIEFS ADVISE/.test(await text('#sheetCard')), 'the War Cabinet is the Joint Chiefs');
+  await page.click('#sheet [data-close]');
+  ok(Boolean(await page.$('.plot.mapped')) && /alsace_moder\.svg/.test(await page.$eval('.plot', e => e.style.backgroundImage)), 'chapter 2 has the Alsace table');
+  await leave();
+}
+// Night assault: find a raid with a moon raider coming in, then look at the board before and after Lock in
+{
+  let found = null;
+  for (let tries = 0; tries < 15 && !found; tries++) {
+    const s = await startVia(3);
+    const r = playRun(bastogne, 3, s.deck, s.seed);
+    const st = E.newRun(bastogne, 3, s.deck, s.seed);
+    for (let k = 0; k < r.choices.length; k++) {
+      if (st.phase === 'enemy' && !st.choices && E.alive(st).some(u => E.hidden(st, u) && E.raiding(st, u) && E.nextAttack(u) > 0) && st.line.some(E.canBlock) && !Object.keys(st.blocks).length) { found = { s, choices: r.choices.slice(0, k), st: E.copy(st) }; break; }
+      E.act(bastogne, st, r.choices[k]);
+    }
+  }
+  ok(Boolean(found), 'a raid with a moon raider attacking was found');
+  if (found) {
+    await resumeWith(3, found.s, found.choices);
+    const moon = E.alive(found.st).find(u => E.hidden(found.st, u) && E.raiding(found.st, u));
+    const real = E.nextAttack(moon);
+    ok(/^\s*\?\s*$/.test(await page.$eval('.epiece.night .etab', e => e.textContent)), 'the moon raider shows "?" for its attack');
+    ok(/as low as|at worst|stays/.test(await text('.fcast')), 'the forecast gives the worst case: ' + (await text('.fcast')));
+    const thru = await page.$$eval('.plq.night', els => els.map(e => e.textContent).join(' | '));
+    ok(/UP TO \d+\s*THROUGH/.test(thru), 'an unblocked moon raider shows UP TO N, THROUGH: ' + thru);
+    await shot('jan-night');
+    await page.click('#cmpMenu');
+    const cab = await text('#sheetCard');
+    ok(/up to/.test(cab) && !new RegExp(`falls short: ${real} `).test(cab), 'the War Cabinet counts it as up to N and never names the real attack');
+    await page.click('#sheet [data-close]');
+    await page.click(`.epiece.night`);
+    ok(/hidden in the dark/.test(await text('#sheetCard')) && /Photo:/.test(await text('#sheetCard')), 'the unit sheet says its move is hidden, and credits the photo');
+    await page.click('#sheet [data-close]');
+    await page.click('.lrow .lpiece.can >> nth=0');
+    if (await page.$('.epiece.night.target')) await page.click('.epiece.night.target');
+    const plq = await page.$$eval('.col .plq.night', els => els.map(e => e.textContent).join(' | '));
+    ok(/\?\s*vs/.test(plq) && /UP TO \d+/.test(plq), 'a block on the moon raider reads "? vs" and UP TO N: ' + plq);
+    await shot('jan-night-block');
+    await page.click('#cmpAct');
+    await page.waitForSelector('#cmpTele:not([hidden])').catch(() => {});
+    const tl = await text('#cmpTele');
+    ok(new RegExp(`Out of the dark: .* hit with ${real}\\.`).test(tl), 'after Lock in, the teleprinter says what came out of the dark: ' + tl);
+    await shot('jan-night-after');
+    await leave();
+  }
 }
 ok(errs.length === 0, 'no page errors: ' + errs.join(' | '));
 await b.close();

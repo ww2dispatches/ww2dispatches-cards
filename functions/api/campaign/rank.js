@@ -10,7 +10,7 @@ export async function onRequestGet({ request, env }) {
   const player = await signedInPlayer(env, request);
   if (!player) return fail(401, 'sign in');
   if (!C.campaignsOpen(env, request, player)) return fail(403, 'coming soon');
-  const slot = C.campaignFor(t, !C.CAMPAIGNS_LIVE);
+  const slot = C.campaignFor(t, !C.CAMPAIGNS_LIVE, C.pickOf(request));
   if (!slot) return fail(409, 'no campaign');
   const chN = Number(new URL(request.url).searchParams.get('chapter'));
   if (!slot.campaign.chapters.some(c => c.n === chN)) return fail(400, 'bad chapter');

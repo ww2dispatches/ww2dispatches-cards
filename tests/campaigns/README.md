@@ -80,3 +80,28 @@ Build session 5, part 1 (7 Nov 2026): ranks on the chapter screens and end scree
 payout. Server checks add the month end (midnight Eastern on the 1st), the bands, paying once even with
 three loads at once, the Intel log, and no payout without a run: 51 passed. The page check adds the rank
 on the end screen and the month end results on the home screen: 39 passed.
+
+## January 2027 on the preview (27 Nov 2026)
+
+Bastogne and the North Wind (`functions/_data/campaigns/1944-12-bastogne.json`) is registered and is now
+the default preview campaign. A preview tester can switch campaigns on the month screen; the page sends the
+pick as `x-campaigns-pick`, and a run is always finished against its own campaign. The server and page
+checks were written for the Battle of Britain, so they send that pick; the January checks switch over.
+
+* **Engine:** both campaign files checked (gentle first waves, one or two branches, known twists). The two
+  January twists: Cut off (Supply never above 6) and Night assault (a moon raider's next move is hidden,
+  an Ultimatum can't hold it off, machines can still go up under it and are Rearming even if it climbs).
+  Land versions of the two test decks; the January win rates must land near the planning chat's figures.
+* **Server:** January is the default preview, the picker switches it, both campaigns are listed, each
+  chapter carries its table and words, a land and air run in chapter 1 and a land run in chapter 2 are
+  replayed and saved, and an air deck is refused in the land chapters.
+* **Page:** the picker, the Bastogne table and photo pieces, the January words, the Cut off Supply tile,
+  and a raid with a moon raider: "?" on its tab, the worst case forecast, UP TO N plaques, the War Cabinet
+  saying "up to", the unit sheet with its photo credit, and the reveal after Lock in.
+
+27 Nov 2026: engine 369 passed, server 65 passed, page 60 passed, 0 failed. January win rates for the
+line deck and the Statecraft heavy deck: chapter 1 about 90% / 51%, chapter 2 about 47% / 13%, chapter 3
+about 31% / 4%.
+
+The local database must be fresh for the server check (it counts runs); a simple way is to delete every
+row from every table between runs.

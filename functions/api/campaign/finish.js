@@ -24,7 +24,7 @@ export async function onRequestPost({ request, env }) {
   const run = await db.prepare('SELECT * FROM campaign_runs WHERE id = ? AND player_id = ?').bind(runId, player.id).first();
   if (!run) return fail(404, 'no such run');
   if (run.status !== 'play') return json({ result: 'already', run: publicRun(run) });
-  const slot = C.campaignFor(new Date(run.started_at), !C.CAMPAIGNS_LIVE);
+  const slot = C.campaignFor(new Date(run.started_at), !C.CAMPAIGNS_LIVE, run.campaign_id);
   if (!slot || slot.campaign.id !== run.campaign_id) return fail(409, 'campaign over');
   const { campaign } = slot;
 

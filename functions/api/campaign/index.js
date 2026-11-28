@@ -10,10 +10,10 @@ export async function onRequestGet({ request, env }) {
   const t = now(env, request);
   const player = await signedInPlayer(env, request);
   if (!C.campaignsOpen(env, request, player)) return json({ status: 'soon' });
-  const slot = C.campaignFor(t, !C.CAMPAIGNS_LIVE);
+  const slot = C.campaignFor(t, !C.CAMPAIGNS_LIVE, C.pickOf(request));
   if (!slot) return json({ status: 'none' });
   const { campaign } = slot, day = C.gameDay(t);
-  const base = { status: 'open', day, runsPerDay: C.runsPerDay(request), campaign: { id: campaign.id, title: campaign.title, council: campaign.council, side: campaign.side, year: campaign.year, startResolve: campaign.startResolve, table: campaign.table } };
+  const base = { status: 'open', day, runsPerDay: C.runsPerDay(request), campaign: { id: campaign.id, title: campaign.title, month: campaign.month, council: campaign.council, side: campaign.side, year: campaign.year, startResolve: campaign.startResolve, table: campaign.table, words: campaign.words || null }, previews: slot.preview ? C.previewList() : null };
   if (!player) return json({ ...base, status: 'signin', chapters: campaign.chapters.map(ch => C.publicChapter(slot, ch, t, new Map())) });
   const db = env.DB;
   await C.ensureTables(db);

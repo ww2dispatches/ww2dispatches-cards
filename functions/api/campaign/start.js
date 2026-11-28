@@ -14,7 +14,7 @@ export async function onRequestPost({ request, env }) {
   if (!C.campaignsOpen(env, request, player)) return fail(403, 'coming soon');
   let body;
   try { body = await request.json(); } catch { return fail(400, 'bad request'); }
-  const slot = C.campaignFor(t, !C.CAMPAIGNS_LIVE);
+  const slot = C.campaignFor(t, !C.CAMPAIGNS_LIVE, C.pickOf(request));
   if (!slot) return fail(409, 'no campaign');
   const { campaign } = slot, chN = Number(body && body.chapter);
   const ch = campaign.chapters.find(c => c.n === chN);

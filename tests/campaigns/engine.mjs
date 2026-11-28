@@ -2,8 +2,10 @@
 //   node --import ./tests/declass/json-loader.mjs tests/campaigns/engine.mjs
 // Plain node, no server. Uses the real Battle of Britain campaign file and made up test decks.
 import campaign from '../../functions/_data/campaigns/1940-08-battle-of-britain.json' with { type: 'json' };
+const CAMPAIGN_BOB = campaign;
+import bastogne from '../../functions/_data/campaigns/1944-12-bastogne.json' with { type: 'json' };
 import * as E from '../../site/declass/campaigns/engine.js';
-import { FIGHTER_COMMAND, STATECRAFT_HEAVY } from './decks.mjs';
+import { FIGHTER_COMMAND, STATECRAFT_HEAVY, LAND_LINE, LAND_STATECRAFT } from './decks.mjs';
 import { playRun } from './bot.mjs';
 
 let pass = 0, fail = 0;
@@ -11,12 +13,16 @@ const ok = (c, msg) => { if (c) pass++; else { fail++; console.log('FAIL:', msg)
 const act = (st, c) => E.act(campaign, st, c);
 const find = (st, pred) => st.hand.find(i => pred(st.cards[i]));
 
-// The campaign file
+// The campaign files
+for (const campaign of [CAMPAIGN_BOB, bastogne]) {
 ok(campaign.format === 1 && campaign.chapters.length === 3, 'campaign file has three chapters');
 for (const ch of campaign.chapters) {
   ok(ch.waves.length === 3, `chapter ${ch.n} has three waves`);
   for (const w of ch.waves) for (const u of [...w.units, ...w.reinforcements.map(r => r.unit)]) ok(u.script.every(a => a >= 0 && a <= 7) && u.strength >= 1 && u.strength <= 7, `${u.name} is on the 1 to 7 scale`);
-  const w1 = ch.waves[0]; ok(Math.max(...w1.units.flatMap(u => u.script)) <= 2 && !w1.reinforcements.length, `chapter ${ch.n}: the first wave stays gentle`);
+  const w1 = ch.waves[0]; ok(Math.max(...w1.units.flatMap(u => u.script)) <= 2 && !w1.reinforcements.length, `${campaign.id} chapter ${ch.n}: the first wave stays gentle`);
+  ok(ch.branches.length >= 1 && ch.branches.length <= 2, `${campaign.id} chapter ${ch.n}: one or two branches`);
+  ok(!ch.twist || ['airfield_raids', 'cut_off', 'night_assault'].includes(ch.twist.id) && (ch.twist.text || ch.twist.rule), `${campaign.id} chapter ${ch.n}: a twist the engine knows, with its rule in words`);
+}
 }
 
 // Deck checks
@@ -128,6 +134,68 @@ ok(rates[1].fc >= 0.65 && rates[1].fc <= 0.92, 'chapter 1 near the bench (about 
 ok(rates[2].fc >= 0.35 && rates[2].fc <= 0.62, 'chapter 2 near the bench (about 45 to 50%)');
 ok(rates[3].fc >= 0.18 && rates[3].fc <= 0.42, 'chapter 3 near the bench (about 30%)');
 ok(rates[2].sc < rates[2].fc, 'the Statecraft heavy deck is harder');
+
+
+// January 2027: Bastogne and the North Wind
+{
+  const jact = (st, c) => E.act(bastogne, st, c);
+  ok(E.deckProblems(bastogne, 1, LAND_LINE).length === 0 && E.deckProblems(bastogne, 1, FIGHTER_COMMAND).length === 0, 'chapter 1 takes land or air decks');
+  ok(E.deckProblems(bastogne, 2, LAND_LINE).length === 0 && E.deckProblems(bastogne, 2, FIGHTER_COMMAND).length === 12, 'chapters 2 and 3 are land only: an air deck loses its 12 machines and operations');
+  // Cut off: Supply rises to 6 and stops there
+  const c = E.newRun(bastogne, 2, LAND_LINE, 'cut-1');
+  ok(c.rules.supplyMax === 6 && E.supplyFor(c, 5) === 6 && E.supplyFor(c, 9) === 6 && E.supplyFor(c, 4) === 5, 'cut off: Supply goes 2, 3, 4, 5, 6 and never above 6');
+  ok(E.newRun(bastogne, 1, LAND_LINE, 'cut-1').rules.supplyMax === 7 && E.newRun(bastogne, 3, LAND_LINE, 'cut-1').rules.supplyMax === 7, 'chapters 1 and 3 keep the cap of 7');
+  let maxSupply = 0;
+  for (let s = 0; s < 40; s++) { const r = playRun(bastogne, 2, LAND_LINE, 'cutp-' + s); const st = E.newRun(bastogne, 2, LAND_LINE, 'cutp-' + s); for (const ch of r.choices) { jact(st, ch); maxSupply = Math.max(maxSupply, st.supply); } }
+  ok(maxSupply === 6, `cut off holds through whole runs (highest Supply seen ${maxSupply})`);
+  // Night assault: find the moon unit in wave 2 of chapter 3
+  const n = E.newRun(bastogne, 3, LAND_LINE, 'night-1');
+  ok(n.twist === 'night_assault' && n.units.every(u => !E.hidden(n, u)), 'night assault: wave 1 has no moon raiders');
+  const w2 = { ...n, wave: 1, units: bastogne.chapters[2].waves[1].units.map((u, k) => ({ uid: 'x' + k, id: u.id, name: u.name, st: u.strength, max: u.strength, script: u.script.slice(), i: 0, delayedNext: null, escort: !!u.escort, night: !!u.night })) };
+  const moon = w2.units.find(u => u.night), fj = w2.units.find(u => !u.night);
+  ok(moon && E.hidden(w2, moon) && !E.hidden(w2, fj) && E.upTo(moon) === 6, 'the night assault unit is hidden, up to 6; the paratroopers are not');
+  ok(!E.hidden(E.newRun(campaign, 1, FIGHTER_COMMAND, 'n'), { night: true }), 'a moon means nothing outside the night assault chapter');
+  // Play the real chapter to the second wave and test the moon raider in a raid
+  let tested = 0, blockedClimb = 0, ultRefused = 0;
+  for (let s = 0; s < 200 && tested < 20; s++) {
+    const r = playRun(bastogne, 3, LAND_LINE, 'nb-' + s);
+    const st = E.newRun(bastogne, 3, LAND_LINE, 'nb-' + s);
+    for (const ch of r.choices) {
+      if (st.phase === 'enemy') {
+        const m = E.alive(st).find(u => E.hidden(st, u) && st.delays[u.uid] == null);
+        if (m) {
+          tested++;
+          ok(!E.ultimatumTargets(st).includes(m), 'an Ultimatum never targets a moon raider');
+          const ul = st.cards.findIndex(c => c.keyword === 'ultimatum');
+          const fake = E.copy(st); fake.hand.push(ul); fake.scUsed = false;
+          if (E.act(bastogne, fake, { a: 'ultimatum', card: ul, unit: m.uid }).ok === false) ultRefused++;
+          const ready = st.line.filter(E.canBlock);
+          if (E.nextAttack(m) === 0 && ready.length) {
+            const t = E.copy(st);
+            ok(E.act(bastogne, t, { a: 'block', unit: m.uid, machines: [ready[0].uid] }).ok, 'machines can go up under a moon raider even when it climbs');
+            E.act(bastogne, t, { a: 'lock' });
+            const mm = t.line.find(x => x.uid === ready[0].uid);
+            if (mm) { blockedClimb++; ok(mm.state === 'blocked' || t.phase !== 'yours', 'a machine sent up under a climbing moon raider is Rearming'); }
+          }
+        }
+      }
+      jact(st, ch);
+    }
+  }
+  ok(tested >= 10 && ultRefused === tested, `moon raiders seen in ${tested} raids, an Ultimatum refused every time`);
+  ok(blockedClimb > 0, `blocks on a climbing moon raider checked (${blockedClimb})`);
+  // Replay still matches with the new twists
+  for (const ch of [2, 3]) { const r = playRun(bastogne, ch, LAND_LINE, 'rp-' + ch); const re = E.replay(bastogne, ch, LAND_LINE, 'rp-' + ch, r.choices); ok(re.ok && JSON.stringify(re.result) === JSON.stringify(r.state.over), `chapter ${ch} replays to the same result`); }
+  // Win rates near the planning chat's (Bastogne doc: line deck 83%, 44%, 29%; Statecraft heavy 50%, 13%, 2%)
+  const jr = (ch, deck, n) => { let w = 0; for (let s = 0; s < n; s++) if (playRun(bastogne, ch, deck, `jbot-${ch}-${s}`).state.over.won) w++; return w / n; };
+  const NJ = Number(process.env.RUNS || 400), j = {};
+  for (const ch of [1, 2, 3]) j[ch] = { line: jr(ch, LAND_LINE, NJ), sc: jr(ch, LAND_STATECRAFT, NJ) };
+  console.log('January win rates over', NJ, 'runs:', JSON.stringify(j));
+  ok(j[1].line >= 0.72 && j[1].line <= 0.93, 'January chapter 1 near the planning figure (about 83%)');
+  ok(j[2].line >= 0.32 && j[2].line <= 0.56, 'January chapter 2 near the planning figure (about 44%)');
+  ok(j[3].line >= 0.18 && j[3].line <= 0.40, 'January chapter 3 near the planning figure (about 29%)');
+  ok(j[1].sc < j[1].line && j[2].sc < j[2].line, 'the Statecraft heavy deck is harder in January too');
+}
 
 // Scores order every run
 ok(E.score({ won: true, resolve: 1, rounds: 20 }) > E.score({ won: false, wavesCleared: 2, destroyed: 0.99 }), 'every win ranks above every loss');

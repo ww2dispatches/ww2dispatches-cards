@@ -6,6 +6,7 @@ import { cookie } from '../declass/cookie.mjs';
 import { DatabaseSync } from 'node:sqlite';
 import campaign from '../../functions/_data/campaigns/1940-08-battle-of-britain.json' with { type: 'json' };
 import loaners from '../../functions/_data/loaners.json' with { type: 'json' };
+import bastogne from '../../functions/_data/campaigns/1944-12-bastogne.json' with { type: 'json' };
 import * as E from '../../site/declass/campaigns/engine.js';
 import { playRun } from './bot.mjs';
 const BASE = 'http://localhost:8799';
@@ -15,7 +16,8 @@ const ok = (cond, msg) => { if (cond) pass++; else { failN++; console.log('FAIL:
 const id = p => p + 'x'.repeat(32 - p.length);
 for (const p of ['C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9']) db.prepare("INSERT OR IGNORE INTO players (id, created_at, tester) VALUES (?, '2026-11-01T00:00:00Z', 1)").run(id(p));
 async function req(path, { player, now, body, headers = {} } = {}) {
-  const h = { 'x-declass-key': 't', ...headers };
+  // The reference campaign: these checks were written for it (the preview default is now January's).
+  const h = { 'x-declass-key': 't', 'x-campaigns-pick': campaign.id, ...headers };
   if (player) h.cookie = cookie(id(player));
   if (now) h['x-declass-now'] = now;
   if (body) { h['content-type'] = 'application/json'; h.origin = BASE; }
@@ -191,6 +193,48 @@ const play = async (p, ch, now = NOW, deck = DECK, cheat = null) => {
   const v = await req('campaign', { player: 'D0', now: NOW });
   const ch1 = v.data.chapters[0];
   ok(ch1.rank && ch1.rank.month && ch1.rank.month.top >= 1 && v.data.bands && v.data.bands.top5 === C.BAND_INTEL.top5, 'the campaign view shows the chapter rank and the bands');
+}
+
+// January 2027 on the preview (27 Nov 2026): the default preview campaign, the picker, and a land run
+{
+  for (const p of ['J0', 'J1']) db.prepare("INSERT OR IGNORE INTO players (id, created_at, tester) VALUES (?, '2026-11-01T00:00:00Z', 1)").run(id(p));
+  const J = { 'x-campaigns-pick': '' };
+  const v = await req('campaign', { player: 'J0', now: NOW, headers: J });
+  ok(v.data.campaign && v.data.campaign.id === bastogne.id && v.data.campaign.council === 'THE JOINT CHIEFS ADVISE', 'the preview opens on January by default');
+  ok(v.data.previews && v.data.previews.map(p => p.id).includes(campaign.id) && v.data.previews.map(p => p.id).includes(bastogne.id), 'the preview lists both campaigns to pick from');
+  ok(v.data.chapters.every(c => c.released && c.table && c.words && c.words.side) && v.data.campaign.words.theme === 'land', 'each chapter carries its own table and words');
+  ok(v.data.chapters[1].twist.id === 'cut_off' && v.data.chapters[2].twist.id === 'night_assault', 'both January twists are served');
+  const b = await req('campaign', { player: 'J0', now: NOW });
+  ok(b.data.campaign.id === campaign.id, 'the pick header switches the preview to the Battle of Britain');
+  const bad = await req('campaign', { player: 'J0', now: NOW, headers: { 'x-campaigns-pick': 'no-such-campaign' } });
+  ok(bad.data.campaign.id === bastogne.id, 'an unknown pick falls back to the default preview');
+  // A deck of loaners for chapter 1 (land and air): land loaners, air to fill
+  const LAND = loaners.loaners.filter(l => l.branches.includes('land')).map(l => ({ loaner: l.id }));
+  const deck1 = [...LAND.slice(0, 8), ...DECK.slice(0, 12)];
+  const s = await req('campaign/start', { player: 'J0', now: NOW, headers: J, body: { chapter: 1, deck: deck1 } });
+  ok(s.status === 200 && s.data.deck.length === 20, 'a mixed land and air deck starts in Bastogne chapter 1');
+  const sea = await req('campaign/start', { player: 'J1', now: NOW, headers: J, body: { chapter: 1, deck: [...deck1.slice(0, 19), { loaner: 'a-corvette' }] } });
+  ok(sea.status === 400, 'a sea loaner is refused in a land and air chapter');
+  if (s.status === 200) {
+    const r = playRun(bastogne, 1, s.data.deck, s.data.seed);
+    // finished while the page has switched the preview back to the Battle of Britain: the run keeps its own campaign
+    const f = await req('campaign/finish', { player: 'J0', now: NOW, body: { ticket: s.data.ticket, choices: r.choices } });
+    ok((f.data.result === 'won' || f.data.result === 'lost') && f.data.outcome && f.data.outcome.resolve === r.state.over.resolve, 'the server replays a January run through its own campaign file: ' + JSON.stringify(f.data.result));
+  }
+  // Chapter 2 is land only, with Cut off: play it as a tester with chapter 1 won
+  db.prepare("INSERT INTO campaign_progress (player_id, campaign_id, year, chapter, won_at, best, best_day) VALUES (?, ?, '2026', 1, '2026-11-07T18:00:00Z', 1000000, '2026-11-07') ON CONFLICT DO UPDATE SET won_at = excluded.won_at").run(id('J1'), bastogne.id);
+  const air = await req('campaign/start', { player: 'J1', now: NOW, headers: J, body: { chapter: 2, deck: DECK } });
+  ok(air.status === 400 && air.data.problems.some(x => /land/.test(x)), 'an air deck is refused in the land chapter, with the reason');
+  const deck2 = [...LAND.slice(0, 12), ...DECK.filter(p => ['home', 'state'].includes(L[p.loaner].series))].slice(0, 20);
+  const s2 = await req('campaign/start', { player: 'J1', now: NOW, headers: J, body: { chapter: 2, deck: deck2 } });
+  ok(s2.status === 200, 'a land deck of loaners starts chapter 2');
+  if (s2.status === 200) {
+    const r2 = playRun(bastogne, 2, s2.data.deck, s2.data.seed);
+    const f2 = await req('campaign/finish', { player: 'J1', now: NOW, headers: J, body: { ticket: s2.data.ticket, choices: r2.choices } });
+    ok(f2.data.result === 'won' || f2.data.result === 'lost', 'a Cut off run is replayed and saved');
+    const cheat = JSON.parse(JSON.stringify(r2.choices));
+    ok(E.replay(bastogne, 2, s2.data.deck, s2.data.seed, cheat).state.rules.supplyMax === 6, 'the replay holds Supply at 6');
+  }
 }
 console.log(`${pass} passed, ${failN} failed`);
 process.exit(failN ? 1 : 0);

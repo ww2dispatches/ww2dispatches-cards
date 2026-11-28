@@ -252,6 +252,8 @@ body.cmpon{overflow:hidden}
 .thru i{flex:1;width:0;border-left:2.5px dashed #c0392b;margin-bottom:-2px}
 .thru i::after{content:"";display:block}
 .thru .plq{position:relative}
+/* Two raiders getting through side by side: every second plaque sits higher so they never cover each other. */
+.col:nth-child(even) .thru{bottom:58px}
 .lpiece{color:inherit;font:inherit;padding:0}
 .lpiece.can{box-shadow:0 0 0 2px #e7c37a,0 3px 6px rgba(0,0,0,.45)}
 .lpiece.picked{transform:translateY(-8px);box-shadow:0 0 0 3px #f0c46a,0 6px 12px rgba(0,0,0,.5)}
@@ -288,5 +290,27 @@ body.cmpon{overflow:hidden}
 .dbf .dn{background:rgba(26,22,18,.06);color:#1A1612}
 .dbf .btn{display:block;width:100%;margin:12px 0 0}
 .dbf .btn:disabled{opacity:.5}
+/* Each campaign's own art (27 Nov 2026): the drawn table under the bands, the enemy photo pieces, the moon. */
+.plot.mapped{background-color:#cdbf98;background-size:100% 100%;background-position:center;background-repeat:no-repeat}
+.plot.mapped .band.far{background:linear-gradient(180deg,rgba(205,191,152,.55),rgba(205,191,152,.2) 82%,rgba(205,191,152,0))}
+.plot.mapped .band.coast{background:linear-gradient(0deg,rgba(205,191,152,.6),rgba(205,191,152,.25) 80%,rgba(205,191,152,0))}
+.epiece .ephoto.pic{background:#2a2f34}
+.epiece .ephoto.pic img{width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(1) contrast(1.05)}
+.ubig{display:block;width:100%;max-height:220px;object-fit:cover;border-radius:3px;margin:4px 0 10px;filter:grayscale(1)}
+.sheetnote.credit{font-size:12px}
+.moon{width:10px;height:10px;flex:none}
+.etab.night{background:#1f2a3c;color:#EDE4CF;display:flex;align-items:center;gap:2px}
+.etab.wait .moon{margin-right:2px;vertical-align:-1px}
+.epiece.night{border-color:#4d6a96;box-shadow:0 0 0 1px #1f2a3c,0 3px 6px rgba(0,0,0,.45)}
+.epiece.night .eplaque{background:#1f2a3c}
+.plq.night{outline-color:#1f2a3c;border-color:#a9c1ea}.plq.night b em{color:#a9c1ea}
+.plq.red.night{outline-color:#a8261c;border-color:#ff8a78}
+.sheetnote .moon{width:13px;height:13px;vertical-align:-2px;color:#4d6a96}
+.ttile.sup.cut{border-color:#ff8a78}
+.ttile.sup.cut small{font-size:8px;letter-spacing:.02em}
+.cmppick{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:8px 0 4px;padding:8px;border:1px dashed rgba(237,228,207,.35);border-radius:4px}
+.cmppick span{flex:1 0 100%;font-family:var(--type);font-size:10px;letter-spacing:.12em;color:#b9ad92}
+.cmppick .btn{flex:1 1 40%;font-size:13px;padding:8px 6px;margin:0}
+.cmppick .btn.on{outline:2px solid #f0c46a}
 @media (prefers-reduced-motion:reduce){.tele.go,.epiece.target{animation:none}.hand,.hcard{transition:none}}
 @media (min-width:600px){.cmprun{max-width:480px;margin:0 auto;border-left:1px solid #2a241d;border-right:1px solid #2a241d}}

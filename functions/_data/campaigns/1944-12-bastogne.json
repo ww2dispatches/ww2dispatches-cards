@@ -1,0 +1,511 @@
+{
+ "format": 1,
+ "id": "1944-12-bastogne",
+ "title": "Nuts! Bastogne and the North Wind",
+ "month": 1,
+ "year": 1944,
+ "side": "allied",
+ "council": "THE JOINT CHIEFS ADVISE",
+ "table": "bastogne_perimeter",
+ "startResolve": 10,
+ "words": {
+  "theme": "land",
+  "raid": "ATTACK",
+  "raider": "attacker",
+  "block": "Send your line forward to meet them.",
+  "arm": "Arm your line and strike back.",
+  "arrive": "moves up",
+  "sweep": "probes the line"
+ },
+ "chapters": [
+  {
+   "n": 1,
+   "name": "The Siege of Bastogne",
+   "opens": "01-01",
+   "branches": [
+    "land",
+    "air"
+   ],
+   "table": "bastogne_perimeter",
+   "twist": null,
+   "words": {
+    "side": "the garrison",
+    "these": "the siege",
+    "massing": "The enemy is massing beyond the perimeter",
+    "plotted": "Attacks reported on the perimeter"
+   },
+   "intro": "December 1944. The German offensive in the Ardennes has surrounded Bastogne, the crossroads town held by the 101st Airborne and the armor that reached it first. Fog and snow keep the supply planes away. Three days will test the garrison: a demand to surrender, the day the skies cleared, and the Christmas attack. In real history, the garrison came through the siege at a Resolve of 6. That is the mark to beat.",
+   "calm": {
+    "rounds": 2,
+    "text": "The ring closes around Bastogne while the panzer columns swing past toward the Meuse."
+   },
+   "benchmark": 6,
+   "sweep": {
+    "every": 4,
+    "unit": {
+     "id": "vg_probe",
+     "name": "Volksgrenadier probe",
+     "piece": "halftrack",
+     "strength": 2,
+     "script": [
+      1
+     ],
+     "escort": true
+    }
+   },
+   "waves": [
+    {
+     "date": "1944-12-22",
+     "name": "The surrender demand",
+     "benchmark": 7,
+     "units": [
+      {
+       "id": "vg_screen",
+       "name": "Volksgrenadier screen",
+       "piece": "halftrack",
+       "strength": 2,
+       "script": [
+        1
+       ],
+       "escort": true
+      },
+      {
+       "id": "vg_assault",
+       "name": "Volksgrenadiers with assault guns",
+       "piece": "stug",
+       "strength": 3,
+       "script": [
+        2,
+        1
+       ]
+      }
+     ],
+     "reinforcements": [],
+     "debrief": "Under a white flag, German officers carried a written demand that the encircled town surrender. Brigadier General Anthony McAuliffe, acting commander of the 101st Airborne, answered with one word: \"Nuts!\" Bad weather turned back the supply drop planned for that day, and ammunition inside the perimeter was running low.",
+     "compare": "Bastogne was surrounded and short of ammunition, but it would not surrender."
+    },
+    {
+     "date": "1944-12-23",
+     "name": "The skies clear",
+     "benchmark": 7,
+     "units": [
+      {
+       "id": "pg_screen",
+       "name": "Panzergrenadier screen",
+       "piece": "halftrack",
+       "strength": 3,
+       "script": [
+        2
+       ],
+       "escort": true
+      },
+      {
+       "id": "marvie",
+       "name": "Panzergrenadiers and tanks at Marvie",
+       "piece": "panzer4",
+       "strength": 4,
+       "script": [
+        0,
+        5,
+        2
+       ]
+      }
+     ],
+     "reinforcements": [
+      {
+       "after": 3,
+       "unit": {
+        "id": "vg_west",
+        "name": "Volksgrenadiers with assault guns",
+        "piece": "stug",
+        "strength": 4,
+        "script": [
+         2,
+         2
+        ]
+       }
+      }
+     ],
+     "debrief": "At first light pathfinders dropped into the perimeter and set up radar beacons, and soon C 47s were dropping ammunition, food, and medicine, with fighter bombers overhead. That evening panzergrenadiers and tanks struck Marvie from the southeast in one of the most critical attacks of the siege. By morning both sides claimed to hold the village.",
+     "compare": "Supplies were falling from the sky, and Marvie was holding."
+    },
+    {
+     "date": "1944-12-25",
+     "name": "Christmas Day",
+     "benchmark": 6,
+     "units": [
+      {
+       "id": "vg_champs",
+       "name": "Volksgrenadiers at Champs",
+       "piece": "halftrack",
+       "strength": 3,
+       "script": [
+        2,
+        2
+       ],
+       "escort": true
+      },
+      {
+       "id": "pz4_hemroulle",
+       "name": "Panzer IVs toward Hemroulle",
+       "piece": "panzer4",
+       "strength": 4,
+       "script": [
+        3,
+        3
+       ]
+      }
+     ],
+     "reinforcements": [
+      {
+       "after": 3,
+       "unit": {
+        "id": "pg_west",
+        "name": "Panzergrenadiers west of Hemroulle",
+        "piece": "halftrack",
+        "strength": 4,
+        "script": [
+         0,
+         5,
+         2
+        ]
+       }
+      }
+     ],
+     "debrief": "Before dawn on Christmas Day, a battle group of the newly arrived 15th Panzergrenadier Division struck the western edge of the perimeter at Champs and Hemroulle. Its tanks broke through, but the line closed behind them, and tank destroyers and bazooka teams knocked out all eighteen. The next afternoon the tanks of Lieutenant Colonel Creighton Abrams's battalion of the 4th Armored Division broke through from the south, and the siege was lifted.",
+     "compare": "The Christmas attack was broken, and Patton's tanks were a day away."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "name": "Hatten and Rittershoffen",
+   "opens": "01-11",
+   "branches": [
+    "land"
+   ],
+   "table": "alsace_moder",
+   "twist": {
+    "id": "cut_off",
+    "name": "Cut off",
+    "text": "Your Supply never rises above 6: the men in Hatten can only be supplied from the air."
+   },
+   "words": {
+    "side": "the Americans",
+    "these": "Hatten and Rittershoffen",
+    "massing": "The enemy is massing north of the Maginot Line",
+    "plotted": "Attacks reported on the villages"
+   },
+   "intro": "January 1945. While the Bulge is still being fought in Belgium, a second German offensive, Nordwind, strikes the US Seventh Army in Alsace. Its strongest blow falls on two farming villages on the old Maginot Line, Hatten and Rittershoffen, held by green infantry and the 14th Armored Division. Snow and fog keep the fighter bombers on the ground. In real history, the Americans came through Hatten and Rittershoffen at a Resolve of 4. That is the mark to beat.",
+   "calm": {
+    "rounds": 2,
+    "text": "Panzers gather north of the old Maginot Line as the Americans settle into the villages behind it."
+   },
+   "benchmark": 4,
+   "sweep": {
+    "every": 4,
+    "unit": {
+     "id": "pg_probe",
+     "name": "Panzergrenadier probe",
+     "piece": "halftrack",
+     "strength": 2,
+     "script": [
+      1
+     ],
+     "escort": true
+    }
+   },
+   "waves": [
+    {
+     "date": "1945-01-09",
+     "name": "The Maginot casemates",
+     "benchmark": 8,
+     "units": [
+      {
+       "id": "pg_casemates",
+       "name": "Panzergrenadiers at the casemates",
+       "piece": "halftrack",
+       "strength": 3,
+       "script": [
+        1,
+        1
+       ],
+       "escort": true
+      },
+      {
+       "id": "pz_pillboxes",
+       "name": "Tanks against the pillboxes",
+       "piece": "panzer4",
+       "strength": 3,
+       "script": [
+        2,
+        2
+       ]
+      }
+     ],
+     "reinforcements": [],
+     "debrief": "Flares and an artillery barrage opened the attack on Hatten and Rittershoffen. Panzergrenadiers and tanks broke into the old Maginot casemates north of Hatten, where green infantry of the 42nd Division held out in the pillboxes. The corps commander sent in his last reserve, the 14th Armored Division.",
+     "compare": "The forward pillboxes were falling, and the last reserve was on its way."
+    },
+    {
+     "date": "1945-01-11",
+     "name": "Cut off in Hatten",
+     "benchmark": 6,
+     "units": [
+      {
+       "id": "pg_screen2",
+       "name": "Panzergrenadier screen",
+       "piece": "halftrack",
+       "strength": 4,
+       "script": [
+        2
+       ],
+       "escort": true
+      },
+      {
+       "id": "pz_ritt",
+       "name": "Tanks at Rittershoffen",
+       "piece": "panzer4",
+       "strength": 4,
+       "script": [
+        0,
+        5,
+        2
+       ]
+      }
+     ],
+     "reinforcements": [
+      {
+       "after": 3,
+       "unit": {
+        "id": "pg_road",
+        "name": "Panzergrenadiers on the Hatten road",
+        "piece": "halftrack",
+        "strength": 4,
+        "script": [
+         2,
+         2
+        ]
+       }
+      }
+     ],
+     "debrief": "Before dawn a panzer division struck Rittershoffen with tanks and infantry behind a heavy barrage. By nightfall the Germans held the road between the two villages, and a battalion of the 79th Division in Hatten was completely cut off. It was supplied by air drop until the tanks of the 14th Armored fought their way in on the night of 13 January.",
+     "compare": "A battalion was cut off in Hatten, but the villages held."
+    },
+    {
+     "date": "1945-01-15",
+     "name": "The roughest day",
+     "benchmark": 4,
+     "units": [
+      {
+       "id": "pg_streets",
+       "name": "Panzergrenadiers in the streets",
+       "piece": "halftrack",
+       "strength": 4,
+       "script": [
+        2,
+        4
+       ],
+       "escort": true
+      },
+      {
+       "id": "panthers_dawn",
+       "name": "Panthers at dawn",
+       "piece": "panther",
+       "strength": 5,
+       "script": [
+        0,
+        7,
+        2
+       ]
+      }
+     ],
+     "reinforcements": [
+      {
+       "after": 3,
+       "unit": {
+        "id": "pz4_hatten",
+        "name": "Panzer IVs in Hatten",
+        "piece": "panzer4",
+        "strength": 4,
+        "script": [
+         4,
+         4
+        ]
+       }
+      }
+     ],
+     "debrief": "At five in the morning the Germans opened a new assault, remembered by the men in Hatten as the roughest day of the battle. The fight went from house to house, with almost every building contested, and a German jet bomber was seen over the area for the first time. The villages held until the Americans were ordered back to the Moder River on 21 January.",
+     "compare": "Hatten and Rittershoffen were in ruins, but the line held."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "name": "The Moder River",
+   "opens": "01-21",
+   "branches": [
+    "land"
+   ],
+   "table": "alsace_moder",
+   "twist": {
+    "id": "night_assault",
+    "name": "Night assault",
+    "text": "Raiders marked with a moon hide their next attack until it lands: you choose blockers without knowing its size, and an Ultimatum can't hold it off."
+   },
+   "words": {
+    "side": "the Americans",
+    "these": "the last assault",
+    "massing": "The enemy is massing across the Moder",
+    "plotted": "Attacks reported on the river line"
+   },
+   "intro": "Late January 1945. After eleven days in Hatten and Rittershoffen, the Seventh Army falls back through the snow to a shorter line on the Moder River, in front of the city of Haguenau. Across the river the Germans gather three divisions for one last attempt to break through, and they will come at night. In real history, the Americans came through the last assault at a Resolve of 3. That is the mark to beat.",
+   "calm": {
+    "rounds": 2,
+    "text": "In heavy snow and on icy roads the line falls back to the Moder, and the Germans are slow to follow."
+   },
+   "benchmark": 3,
+   "sweep": {
+    "every": 4,
+    "unit": {
+     "id": "vg_patrol",
+     "name": "Volksgrenadier patrol",
+     "piece": "halftrack",
+     "strength": 2,
+     "script": [
+      1
+     ],
+     "escort": true
+    }
+   },
+   "waves": [
+    {
+     "date": "1945-01-23",
+     "name": "Contact on the Moder",
+     "benchmark": 7,
+     "units": [
+      {
+       "id": "patrols",
+       "name": "Patrols across the Moder",
+       "piece": "halftrack",
+       "strength": 3,
+       "script": [
+        1,
+        1
+       ],
+       "escort": true
+      },
+      {
+       "id": "vg_probe_river",
+       "name": "Volksgrenadiers probing the river line",
+       "piece": "stug",
+       "strength": 3,
+       "script": [
+        2,
+        2
+       ]
+      }
+     ],
+     "reinforcements": [],
+     "debrief": "The withdrawal had taken the Germans by surprise, and not until the morning of 23 January did the 222nd Infantry of the 42nd Division make contact on its new line. All that day and the next, patrols reported the enemy building up strength across the river. Haguenau and the open country behind it were the prize.",
+     "compare": "The line was back on the Moder, and the enemy was massing across the river."
+    },
+    {
+     "date": "1945-01-24",
+     "name": "Across the Moder",
+     "benchmark": 5,
+     "units": [
+      {
+       "id": "fj_screen",
+       "name": "Paratroopers across the river",
+       "piece": "halftrack",
+       "strength": 4,
+       "script": [
+        2,
+        2
+       ],
+       "escort": true
+      },
+      {
+       "id": "night_assault_unit",
+       "name": "Night assault on the Ohlungen Forest",
+       "piece": "stug",
+       "strength": 5,
+       "script": [
+        0,
+        6,
+        2
+       ],
+       "night": true
+      }
+     ],
+     "reinforcements": [
+      {
+       "after": 3,
+       "unit": {
+        "id": "pg_night",
+        "name": "Panzergrenadiers in the dark",
+        "piece": "halftrack",
+        "strength": 4,
+        "script": [
+         3,
+         3
+        ]
+       }
+      }
+     ],
+     "debrief": "In bitter cold, with a foot of snow on the ground and no moon, paratroopers, Volksgrenadiers, and panzergrenadiers struck the green 222nd Infantry along the Moder and at the edge of the Ohlungen Forest. Through the night came barrage after barrage, often twenty minutes long. Some platoons were cut off and had to work their way back through the woods.",
+     "compare": "The Germans were across the river in the dark."
+    },
+    {
+     "date": "1945-01-25",
+     "name": "The Ohlungen Forest",
+     "benchmark": 3,
+     "units": [
+      {
+       "id": "pg_factory",
+       "name": "Panzergrenadiers at the factory",
+       "piece": "halftrack",
+       "strength": 4,
+       "script": [
+        2,
+        4
+       ],
+       "escort": true
+      },
+      {
+       "id": "tanks_factory",
+       "name": "Tanks behind the factory",
+       "piece": "panzer4",
+       "strength": 5,
+       "script": [
+        4,
+        4
+       ],
+       "night": true
+      }
+     ],
+     "reinforcements": [
+      {
+       "after": 3,
+       "unit": {
+        "id": "last_push",
+        "name": "The last push toward Haguenau",
+        "piece": "panther",
+        "strength": 5,
+        "script": [
+         0,
+         7,
+         2
+        ],
+        "night": true
+       }
+      }
+     ],
+     "debrief": "The 222nd held, and a counterattack with tanks drove the Germans out of a factory they had taken on the American bank. The German offensive was halted on 25 January, the day reinforcements from the Ardennes began to arrive, and the regiment later received the Presidential Unit Citation. Nordwind, the last major German offensive in the West, was over, and the same day the Battle of the Bulge came to its official end.",
+     "compare": "The North Wind had blown itself out."
+    }
+   ]
+  }
+ ]
+}
