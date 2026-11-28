@@ -2,7 +2,7 @@
 
 For a fresh Campaign Series: The Map Room session that has the five R2 values in its environment. Written 27 Nov 2026 by the Map Room chat, which ran the fact check. Read it all before touching Buffer.
 
-**Who posts (Brian, 27 Nov 2026):** this Claude Code session, "Bulge Map Room upload readiness" on claude.ai/code (Default environment, which holds the R2 values), owns every Map Room upload and Buffer post. The Map Room Project chat checks the clips and hands off here; it never schedules. Prep was done 27 Nov: R2 sweep, all six Buffer channels and the Schedule Board all pass. Still needed: the Bulge Clips folder shared with this session through the Claude desktop app.
+**Who posts (Brian, 27 Nov 2026):** the Claude Code session "Map Room Buffer Publisher" on claude.ai/code (first named "Bulge Map Room upload readiness") (Default environment, which holds the R2 values), owns every Map Room upload and Buffer post. The Map Room Project chat checks the clips and hands off here; it never schedules. Prep was done 27 Nov: R2 sweep, all six Buffer channels and the Schedule Board all pass. Still needed: the Bulge Clips folder shared with this session through the Claude desktop app.
 
 ## Where things stand
 * **The fact check is closed. All 30 days pass** (`campaign-series/bulge-1944/verify/FACTCHECK.md`, Closed). Don't redo it, and never change a record's position or line.
@@ -15,7 +15,7 @@ For a fresh Campaign Series: The Map Room session that has the five R2 values in
 2. Stage the clips from OneDrive (the device bridge), and watch Days 1 to 5 yourself before Brian does: a contact strip of frames plus a full play. Check the key card size on a phone sized frame, the tab and strip are clear, the sound is the Ops room bed, and nothing reads TEST.
 3. Brian's Gate 2.
 4. Upload each approved clip with `python3 renderer/media.py put videos/map-room/bulge-1944/day-NN.mp4` (copy the clip to that repo path first; renders are never committed). Use the link it prints. A re-render gets a new name (`-r2`), never an overwrite.
-5. Schedule in batches: Days 1 to 5 after Gate 2, then the rest. Record the six Buffer ids in each day record under `buffer` {x, instagram, threads, facebook, youtube, tiktok}, then commit and push (pull and rebase main first).
+5. Schedule in batches: Days 1 to 5 after Gate 2, then the rest. Record the six Buffer ids in each day record under `buffer` {x, instagram, threads, facebook, youtube, tiktok}, then commit and push to main itself, not to the session's own claude/ branch (pull and rebase main first), since the Campaigns reminder on 11 Dec reads the ids from main.
 6. Put each clip on the Schedule Board (below).
 7. Final check (below), then tell Brian in a few lines.
 
