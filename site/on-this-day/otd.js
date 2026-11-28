@@ -25,9 +25,9 @@
   }
 
   // ---------- a date page ----------
-  var ad = $(".adpage");
+  var ad = $(".daypage");
   if (ad) {
-    var rows = $$(".ad-row", ad), empty = $(".ad-empty", ad);
+    var rows = $$(".dd-row", ad), empty = $(".dd-empty", ad);
     chipsFor(ad, function (s) {
       var shown = 0;
       rows.forEach(function (r) { var on = !s || r.dataset.s === s; r.hidden = !on; if (on) shown++; });

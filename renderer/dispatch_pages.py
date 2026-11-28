@@ -199,7 +199,7 @@ def build_page(d, prev, nxt, same_day):
 
 
 LENGTHS = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-DOT = '<span class="ad-dot" style="background:{c}"></span>'
+DOT = '<span class="dd-dot" style="background:{c}"></span>'
 
 
 def timeline():
@@ -229,32 +229,32 @@ def build_date_page(md, lst, bank):
         c2 = ("One has a full dispatch. Open its card to read it." if len(live) == 1 else f"{len(live)} have a full dispatch. Open a card to read it.") if live \
             else "No dispatch has been posted for this date yet."
         gate = (f' data-release="{ats[k - 1]}"' if k else "") + (f' data-until="{ats[k]}"' if k < len(ats) else "")
-        counts.append(f'<div class="ad-count"{gate}><p class="ad-c1">{esc(c1)}</p><p class="ad-c2">{esc(c2)}</p></div>')
+        counts.append(f'<div class="dd-count"{gate}><p class="dd-c1">{esc(c1)}</p><p class="dd-c2">{esc(c2)}</p></div>')
     rows = []
     for x in lst:
         rows.append((x["hist"].year, 0, x["num"],
-                     f'<li class="ad-row" data-release="{x["at"]}" data-s="{esc(x["skey"])}"><a class="ad-card" href="{x["url"]}">'
+                     f'<li class="dd-row" data-release="{x["at"]}" data-s="{esc(x["skey"])}"><a class="dd-card" href="{x["url"]}">'
                      f'<img src="{esc(x["thumb"])}" alt="" width="60" height="75" loading="lazy">'
-                     f'<span class="ad-cb"><span class="ad-k">{DOT.format(c=x["color"])}{esc(x["series"])}, {x["hist"].year}, No. {x["num"]}</span>'
-                     f'<span class="ad-ct">{esc(x["r"]["title"])}</span><span class="ad-go">Read the dispatch</span></span></a></li>'))
+                     f'<span class="dd-cb"><span class="dd-k">{DOT.format(c=x["color"])}{esc(x["series"])}, {x["hist"].year}, No. {x["num"]}</span>'
+                     f'<span class="dd-ct">{esc(x["r"]["title"])}</span><span class="dd-go">Read the dispatch</span></span></a></li>'))
     for i, (yr, sk, title) in enumerate(bank):
         name, _c, color = sp.SERIES.get(sk, sp.SERIES["battle"])
-        rows.append((yr, 1, i, f'<li class="ad-row" data-s="{esc(sk)}"><span class="ad-y">{yr}</span>{DOT.format(c=color)}'
-                               f'<span class="ad-t">{esc(title)}<span class="sr">, {esc(name)}</span></span></li>'))
+        rows.append((yr, 1, i, f'<li class="dd-row" data-s="{esc(sk)}"><span class="dd-y">{yr}</span>{DOT.format(c=color)}'
+                               f'<span class="dd-t">{esc(title)}<span class="sr">, {esc(name)}</span></span></li>'))
     rows.sort(key=lambda r: (r[0], r[1], r[2]))
-    chips = ('<div class="chips ad-chips" role="group" aria-label="Filter by series"><button class="toggle" type="button" data-s="" aria-pressed="true">All series</button>'
+    chips = ('<div class="chips dd-chips" role="group" aria-label="Filter by series"><button class="toggle" type="button" data-s="" aria-pressed="true">All series</button>'
              + "".join(f'<button class="toggle" type="button" data-s="{k}" aria-pressed="false"><span class="swatch" style="background:{c}"></span>{esc(n)}</button>'
                        for k, (n, _x, c) in sp.SERIES.items()) + '</div>')
     m = int(md[:2])
-    body = f"""<main class="adpage">
-  <div class="ad-wrap">
+    body = f"""<main class="daypage">
+  <div class="dd-wrap">
     <a class="backlink" href="/on-this-day/?m={m}">{BACK} {sp.MONTHS[m - 1]} calendar</a>
-    <h1 class="ad-h"><span class="ad-d">{esc(label)}</span><span class="ad-w">in World War II</span></h1>
+    <h1 class="dd-h"><span class="dd-d">{esc(label)}</span><span class="dd-w">in World War II</span></h1>
     {"".join(counts)}
     {chips}
-    <h2 class="ad-div"><span>On this day</span></h2>
-    <ol class="ad-list">{"".join(r[3] for r in rows)}</ol>
-    <p class="ad-empty" hidden>No events in this series on this date.</p>
+    <h2 class="dd-div"><span>On this day</span></h2>
+    <ol class="dd-list">{"".join(r[3] for r in rows)}</ol>
+    <p class="dd-empty" hidden>No events in this series on this date.</p>
   </div>
 </main>"""
     url = day_url(md)
