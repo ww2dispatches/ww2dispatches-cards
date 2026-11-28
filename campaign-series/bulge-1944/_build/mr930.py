@@ -44,7 +44,7 @@ def J(d): return M(d+" 1945")
 MR[17]=dict(asOf="2400 hrs, 1 Jan 1945",map=J("2 Jan"),line=JLINES[17],lineSources=[J("2 Jan"),C+", pp. 648 to 650",MD+", pp. 22 to 26"],
  set=[st("6abr",(4.97,50.26),[J("2 Jan"),MD+", p. 26"])],
  moves=[mv("lw","air_mission",None,1,["Operation Bodenplatte, 1 January 1945: some 900 German aircraft strike Allied airfields in Belgium and the Netherlands. "+MD+", p. 25 (the Luftwaffe's New Year's Day attack)",J("2 Jan")],target=[5.45,50.42],enters="east",label="Air Strike"),
-        mv("3ad","leave",None,2,[J("2 Jan"),"The 2 Jan map shows the 3d Armored in an assembly area near Hamoir, out of the line before the 3 January attack",C+", ch. XXIII (CCA's fighting south of Manhay runs 22 to 31 December)"],why="Pulled out of the line to an assembly area near Hamoir, ready for the 3 January attack.")],
+        mv("3ad","leave",None,2,[J("2 Jan"),"The 2 Jan map shows the 3d Armored in an assembly area near Hamoir, out of the line before the 3 January attack",C+", ch. XXIII (CCA's fighting south of Manhay runs 22 to 31 December)"],why="Pulled out of the line to an assembly area near Hamoir, ready for the 3 January attack.",toward="north")],
  shifts=[sh("84id",(5.29,50.24),[J("2 Jan")]),sh("2ad",(5.32,50.36),[J("2 Jan")]),sh("11ad",(5.55,49.975),[J("2 Jan")])],
  tonight="The Luftwaffe's last great blow lands on the airfields, far behind the front.")
 MR[18]=dict(asOf="2400 hrs, 2 Jan 1945",map=J("3 Jan"),line=JLINES[18],lineSources=[J("3 Jan"),MD+", pp. 26 to 27"],
