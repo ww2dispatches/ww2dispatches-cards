@@ -54,27 +54,8 @@ const ICON = {
 const ROLE_ICON = { blue: 'shield', battle: 'swords', home: 'heart', state: 'rings' };
 const svgI = (k, cls) => `<svg class="${cls || 'ci'}" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">${ICON[k] || ''}</svg>`;
 
-// The value seal (Card Design doc: A1 position, W1 ribbon seal): the number and role icon in the top half,
-// a ribbon in the series color with the branches, or the keyword on Statecraft (which shows no number).
-function sealHTML(c) {
-  const col = SER[c.series] ? SER[c.series].col : '#555';
-  const state = c.series === 'state', home = c.series === 'home';
-  const top = state
-    ? `<svg x="34" y="12" width="32" height="32" viewBox="0 0 24 24" fill="#EDE4CF" style="color:#EDE4CF">${ICON.rings}</svg>`
-    : home
-      ? `<text x="50" y="44" text-anchor="middle" class="sn">${c.value}</text><svg x="38" y="47" width="24" height="24" viewBox="0 0 24 24" fill="#EDE4CF">${ICON.heart}</svg>`
-      : `<text x="40" y="46" text-anchor="middle" class="sn">${c.value}</text><svg x="52" y="20" width="27" height="27" viewBox="0 0 24 24" fill="#EDE4CF" style="color:#EDE4CF">${ICON[ROLE_ICON[c.series]]}</svg>`;
-  let rib = '';
-  const marks = state ? (c.keyword ? [c.keyword] : []) : home ? [] : (c.branches || []).filter(b => BRANCH[b]);
-  if (!home) {
-    const w = 15, gap = 3, tot = marks.length * w + (marks.length - 1) * gap, x0 = 50 - tot / 2;
-    rib = `<path d="M-2 56h104l-5 10 5 10H-2l5-10z" fill="${col}" stroke="rgba(0,0,0,.18)" stroke-width="1"/>` +
-      marks.map((m, k) => `<svg x="${x0 + k * (w + gap)}" y="58.5" width="${w}" height="${w}" viewBox="0 0 24 24" fill="#EDE4CF" style="color:#EDE4CF">${ICON[m] || ''}</svg>`).join('');
-  }
-  // No SVG filters here: a filter defined inside a hidden screen blanks every seal that points at it.
-  return `<svg class="cseal" viewBox="-4 -2 108 92" aria-hidden="true">
-    <circle cx="50" cy="44" r="40" fill="${col}"/><circle cx="50" cy="44" r="35.5" fill="none" stroke="#EDE4CF" stroke-width="1.6" opacity=".75"/>${top}${rib}</svg>`;
-}
+// The value seal is the approved cream medallion with its ribbon (W1 seal and the 5 Nov Statecraft seal),
+// the same on dossier cards and loaners: slipSealHTML below, with the .bseal, .rs, .sc, and .rib rules.
 
 // A card as the page shows it: a dossier card ({card}) or a loaner ({loaner}).
 function cardOf(pick) {
@@ -85,7 +66,8 @@ const imgOf = c => { const inf = c && c.card ? D().card(c.card) : c && c.id && !
 function cardFaceHTML(c, cls) {
   // A dossier card is its posted picture with the seal drawn over it; a loaner is the photo slip.
   if (c.loaner) return loanerFaceHTML(c, cls);
-  return `<div class="cface own ${cls || ''}"><img src="${esc(imgOf(c))}" alt="" draggable="false" loading="lazy">${c.value >= 1 ? sealHTML(c) : ''}</div>`;
+  const col = SER[c.series] ? SER[c.series].col : '#555';
+  return `<div class="cface own ${cls || ''}" style="--sc:${col};--rb:${col}"><img src="${esc(imgOf(c))}" alt="" draggable="false" loading="lazy">${c.value >= 1 ? slipSealHTML(c) : ''}</div>`;
 }
 
 // ---------- the loaner card: the photo slip (approved by Brian 27 Nov 2026, Campaigns Card Design chat) ----------
@@ -765,7 +747,7 @@ function handHTML() {
   return ST.hand.map((i, k) => {
     const c = deckCard(i), why = E.whyNot(camp, ST, i);
     const rot = n > 1 ? (k - (n - 1) / 2) * Math.min(6, 26 / n) : 0;
-    return `<button class="hcard${why ? ' dark' : ' lit'}${LIFT === i ? ' up' : ''}${raid && c.keyword === 'ultimatum' && !why ? ' ult' : ''}" type="button" data-h="${i}" style="--r:${rot}deg" aria-label="${esc(c.title)}">${cardFaceHTML(c, 'hand')}</button>`;
+    return `<button class="hcard${why ? ' dark' : ' lit'}${LIFT === i ? ' up' : ''}${raid && c.keyword === 'ultimatum' && !why ? ' ult' : ''}" type="button" data-h="${i}" style="--r:${rot}deg" aria-label="${esc(c.title)}">${cardFaceHTML(c, 'inhand')}</button>`;
   }).join('');
 }
 function forecastText(fc, fcw) {

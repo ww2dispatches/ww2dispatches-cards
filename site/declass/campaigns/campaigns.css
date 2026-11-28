@@ -105,9 +105,6 @@ span.dchip{cursor:default}
 /* one card face: a dossier card with the seal drawn over it, or a loaner slip */
 .cface{container-type:inline-size;position:relative;display:block;width:100%;aspect-ratio:4/5;border-radius:3px;overflow:hidden;background:#d8ccb0;box-shadow:0 2px 6px rgba(0,0,0,.4)}
 .cface.own img{display:block;width:100%;height:100%;object-fit:cover}
-.cface .cseal{position:absolute;left:53.8%;top:.4%;width:26%;transform:translateX(-50%);overflow:visible;filter:drop-shadow(0 1px 1px rgba(0,0,0,.3))}
-.cseal .sn{font-family:var(--display);font-weight:700;font-size:36px;fill:#EDE4CF}
-.cface.hand .cseal{width:40%}.cface.open .cseal,.cface.md .cseal{width:34%}
 
 /* ---------- a run: the plotting table ---------- */
 body.cmpon{overflow:hidden}
@@ -325,17 +322,18 @@ body.cmpon{overflow:hidden}
 .cface.loan .foot{position:absolute;left:4.5%;right:4.5%;bottom:2.5%;display:flex;justify-content:space-between;align-items:flex-end;gap:2cqw;margin:0;text-align:left;line-height:1} /* margin, align: undo Declass's own .foot */
 .cface.loan .foot b{font:700 6cqw/1 var(--display);flex:none}
 .cface.loan .foot span{font:2.6cqw var(--type);color:#4a4036;text-align:right;white-space:nowrap;overflow:hidden;min-width:0}
-/* the seal and ribbon, copied from the approved mockup (W1 seal and the 5 Nov Statecraft seal) */
-.cface.loan{--cx:calc(53.8% + 8.7cqw)}
-.cface.loan .bseal{position:absolute;z-index:5;left:53.8%;top:.2%;width:17.4cqw;height:17.4cqw;border-radius:50%;overflow:hidden;border:.7cqw solid var(--sc);box-shadow:0 .6cqw 1.4cqw rgba(0,0,0,.35);background:radial-gradient(circle at 40% 30%,#f5eddc,#e8ddc5 75%,#dccfb2);color:var(--sc)}
-.cface.loan .bseal .top{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0;border:0;gap:0} /* padding, border, gap: undo Declass's own .top */
-.cface.loan .bseal .top b{font:700 6.2cqw/1 var(--display)}
-.cface.loan .bseal .top svg{width:6.6cqw;height:6.6cqw}
-.cface.loan .rs .top{top:5%;bottom:auto;height:46%;flex-direction:row;gap:.6cqw}
-.cface.loan .rs .top svg{width:6cqw;height:6cqw}
-.cface.loan .bseal.sc .top{top:3%;height:48%}.cface.loan .bseal.sc .top svg{width:8cqw;height:8cqw}
-.cface.loan .rib{position:absolute;z-index:6;left:var(--cx);top:calc(.2% + 8.4cqw);transform:translateX(-50%);height:6.4cqw;width:19.6cqw;background:var(--rb,var(--sc));color:#f5eddc;display:flex;align-items:center;justify-content:center;gap:.9cqw;clip-path:polygon(0 0,100% 0,95% 50%,100% 100%,0 100%,5% 50%);filter:drop-shadow(0 0 .25cqw rgba(0,0,0,.55))}
-.cface.loan .rib svg{width:4.5cqw;height:4.5cqw}
+/* the seal and ribbon on every card, dossier and loaner, copied from the approved mockup (W1 seal and the
+   5 Nov Statecraft seal; Brian, 27 Nov 2026: the cream medallion across the board) */
+.cface{--cx:calc(53.8% + 8.7cqw);isolation:isolate}
+.cface .bseal{position:absolute;z-index:5;left:53.8%;top:.2%;width:17.4cqw;height:17.4cqw;border-radius:50%;overflow:hidden;border:.7cqw solid var(--sc);box-shadow:0 .6cqw 1.4cqw rgba(0,0,0,.35);background:radial-gradient(circle at 40% 30%,#f5eddc,#e8ddc5 75%,#dccfb2);color:var(--sc)}
+.cface .bseal .top{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0;border:0;gap:0} /* padding, border, gap: undo Declass's own .top */
+.cface .bseal .top b{font:700 6.2cqw/1 var(--display)}
+.cface .bseal .top svg{width:6.6cqw;height:6.6cqw}
+.cface .rs .top{top:5%;bottom:auto;height:46%;flex-direction:row;gap:.6cqw}
+.cface .rs .top svg{width:6cqw;height:6cqw}
+.cface .bseal.sc .top{top:3%;height:48%}.cface .bseal.sc .top svg{width:8cqw;height:8cqw}
+.cface .rib{position:absolute;z-index:6;left:var(--cx);top:calc(.2% + 8.4cqw);transform:translateX(-50%);height:6.4cqw;width:19.6cqw;background:var(--rb,var(--sc));color:#f5eddc;display:flex;align-items:center;justify-content:center;gap:.9cqw;clip-path:polygon(0 0,100% 0,95% 50%,100% 100%,0 100%,5% 50%);filter:drop-shadow(0 0 .25cqw rgba(0,0,0,.55))}
+.cface .rib svg{width:4.5cqw;height:4.5cqw}
 .cmpslip.loanview{flex-direction:column;align-items:center}
 .cmpslip.loanview .cface{width:min(250px,80vw)}
 /* a loaner on your line: the approved F2 piece in the steel edge, its photo, and its kind along the top */
