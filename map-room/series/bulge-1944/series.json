@@ -3,6 +3,10 @@
  "name": "The Bulge",
  "days": 30,
  "blockKm": 10,
+ "rear": {
+  "allied": "west",
+  "axis": "east"
+ },
  "balcony": {
   "center": [
    5.66,

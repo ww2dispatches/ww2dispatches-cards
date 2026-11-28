@@ -104,6 +104,10 @@ def check(s):
             if 'fate' in m:
                 if mv != 'leave': E(f'{who}: fate belongs to a leave only')
                 elif m['fate'] not in D.FATES: E(f"{who}: fate must be withdrawn, destroyed or surrendered (not {m['fate']})")
+            if 'toward' in m:
+                if mv != 'leave': E(f'{who}: toward belongs to a leave only')
+                elif m['toward'] not in D.COMPASS: E(f"{who}: toward must be one of the eight compass points, written out (north, northeast, east ...), not {m['toward']}")
+                elif m.get('fate', 'withdrawn') != 'withdrawn': E(f'{who}: toward is for a withdrawal; a destroyed or surrendered unit gets the X, no arrow')
             if m.get('drives') and mv != 'advance': E(f'{who}: only an advance drives another block')
             for dv in m.get('drives', []):
                 x = dv.get('unit')
