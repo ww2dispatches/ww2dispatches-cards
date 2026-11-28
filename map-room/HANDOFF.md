@@ -29,7 +29,7 @@ Written by the Map Room chat: what to build or fix and why, one item each, dated
   1. **Turn steering off** for advance, fall_back and arrive: always the straight path. Keep the pass through check (all three move types, plus the driven end spot check); a blocked path is an error again, never a detour. Keep the route code if you like, unused.
   2. **`leave` never moves:** the block fades where it stands over about half a second, no rake. New optional field `fate`: `withdrawn` (default, a plain fade), `destroyed` or `surrendered` (the pencil X you built, then the block and X fade). The checker accepts only those three values. Drop the "no clear way out" note.
   3. Every leave in the Bulge is a withdrawal (Days 6, 8, 17, 18, 20, 24, 26), so no record changes are needed; they all take the plain fade.
-  4. Run the checker on the Bulge, then **re-render Days 6 to 10** and stop for Brian. Note in Done whether any later day now fails the straight line check, so it can go to the Campaign Series chat before its batch.
+  4. Run the checker on the Bulge, then **re-render only Days 6 and 8** (the two days with a leave; Brian checked Days 7, 9 and 10 and they stay as rendered) and stop for Brian. Note in Done whether any later day now fails the straight line check, so it can go to the Campaign Series chat before its batch.
 
 ## Done
 Written by the desktop: what changed, the commit, where the test clip is.
