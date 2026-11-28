@@ -88,6 +88,8 @@ def rake_angle(direction, angles=RAKE_ANGLES):
     """the rake comes from behind the move: its pole points opposite to the direction of travel; nearest render"""
     a = math.degrees(math.atan2(-direction[1], -direction[0])) % 360
     return min(angles, key=lambda r: min(abs(r - a), 360 - abs(r - a)))
+STEER = False                                # straight lines only (FORMAT.md, Brian 28 Nov 2026): routes.py is kept, unused
+FATES = ('withdrawn', 'destroyed', 'surrendered'); STRUCK = ('destroyed', 'surrendered')   # a leave's fate; struck ones get the pencil X
 EDGE_STEP = {'north': (0, 1), 'south': (0, -1), 'east': (1, 0), 'west': (-1, 0)}
 REAR = {'allied': 'west', 'axis': 'east'}    # a leave heads for its own side's rear edge (series.json `rear` overrides)
 def frame_px(X, Y):
@@ -200,7 +202,7 @@ class Day:
     def alpha(self, p, t):
         """how solid block p is at time t: a block struck off with the X fades with it"""
         s = self.slot(p['id'])
-        if not s or s.get('how') != 'strike' or t < s['fade'][0]: return 1.0
+        if not s or s.get('how') not in ('strike', 'fade') or t < s['fade'][0]: return 1.0
         return max(0.0, 1 - ease((t - s['fade'][0]) / (s['fade'][1] - s['fade'][0])))
     def anchor(self, p):
         """where the block's sprite is rendered: its first resting place, in a table cell"""
@@ -249,10 +251,13 @@ class Day:
         return p['_route']
     def _find_route(self, p):
         mv = p['move']; obs = self.obstacles(p)
+        if mv == 'surrender' and not STEER:                # a leave never travels: it fades where it stands
+            a = self.rest_from(p); return a, a, None, ('strike' if p.get('fate') in STRUCK else 'fade')
         if mv == 'arrive': a, b = self.arrive_start(p), self.snap_to(p)
         elif mv == 'surrender': a, b = self.rest_from(p), self.surrender_end(p)
         else: a, b = self.rest_from(p), self.snap_to(p)
         if R.straight_clear(a, b, obs, BS): return a, b, None, 'straight'
+        if not STEER: return a, b, None, 'blocked'         # straight lines only: drawn straight, and the checker fails it
         bounds = grid_bounds()
         if mv == 'surrender':
             e = self.rear(p); path = R.find(a, obs, BS, allowed_fn(e), region=lambda X, Y: past_edge(e, X, Y), bounds=bounds, cost=route_cost)
@@ -306,8 +311,11 @@ class Day:
                 s.update(phases=[p1, p2], track=(tk0, tk1), fade=(p2['t_end'], p2['t_end'] + B['air_fade']), t_done=p2['t_done'])
                 self.events.append((p2['t_end'], 'wipe', B['air_fade']))
                 t = p2['t_done'] + 0.2
+            elif mv == 'surrender' and self.route(p)[3] == 'fade':
+                # withdrawn: the block fades where it stands, no rake, no sound
+                s.update(how='fade', fade=(t, t + 0.5), t_done=t + 0.5); t = s['t_done'] + B['mark_gap']
             elif mv == 'surrender' and self.route(p)[3] == 'strike':
-                # no way out: the red grease pencil strikes an X across the block, then block and X fade together
+                # destroyed or surrendered: the red grease pencil strikes an X across the block, then block and X fade together
                 sp = self.pencil_speed(); X = self.strike_x(p); strokes = []; u = t
                 for a, b in X:
                     dur = min(0.9, max(0.3, math.hypot(b[0] - a[0], b[1] - a[1]) / sp))
@@ -371,7 +379,7 @@ class Day:
             elif t < p2['t_end']: k = ease((t - p2['t_move']) / B['rake_move']); a, b = p2['a'], p2['b']
             else: return None
             return (a[0] + (b[0] - a[0]) * k, a[1] + (b[1] - a[1]) * k)
-        if s.get('how') == 'strike': return self.rest_from(p) if t < s['fade'][1] else None
+        if s.get('how') in ('strike', 'fade'): return self.rest_from(p) if t < s['fade'][1] else None
         if mv == 'arrive' and t < s['t_move']: return s['a']
         return self.along(s, ease((t - s['t_move']) / B['rake_move']))
     def rake(self, t):

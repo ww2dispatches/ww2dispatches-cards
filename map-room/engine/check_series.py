@@ -101,6 +101,9 @@ def check(s):
                 else: E(f'{who}: needs to')
             if mv == 'arrive' and m.get('enters') not in ('north', 'south', 'east', 'west'): E(f'{who}: arrive needs enters (north, south, east or west)')
             if mv == 'leave' and not m.get('why'): E(f'{who}: leave needs why')
+            if 'fate' in m:
+                if mv != 'leave': E(f'{who}: fate belongs to a leave only')
+                elif m['fate'] not in D.FATES: E(f"{who}: fate must be withdrawn, destroyed or surrendered (not {m['fate']})")
             if m.get('drives') and mv != 'advance': E(f'{who}: only an advance drives another block')
             for dv in m.get('drives', []):
                 x = dv.get('unit')
@@ -150,11 +153,10 @@ def check(s):
 MOVE_NAME = {'advance': 'advance', 'fall_back': 'fall_back', 'arrive': 'arrive', 'surrender': 'leave'}
 
 def drawn_moves(s, i):
-    """(errors, notes): day i's slides tested on the path the engine draws. The day's close table is built as the
-    renderer builds it (series.compile, then day.Day with that table), so every move has gone through the route
-    finder (routes.py), and every block's place is sampled through each slide: blocks that moved earlier are met where
-    they now stand, and a block's own driven blocks go with it. A leave with no way out gets the pencil X (a note);
-    any other move with no clear route is an error."""
+    """(errors, notes): day i's slides tested on the path the engine draws (straight lines only, FORMAT.md). The day's
+    close table is built as the renderer builds it (series.compile, then day.Day with that table), and every block's
+    place is sampled through each advance, fall back and arrive: blocks that moved earlier are met where they now stand,
+    and a block's own driven blocks go with it. A leave never travels, so it has nothing to test."""
     import tempfile
     errs, notes = [], []
     with tempfile.TemporaryDirectory() as tmp:
@@ -168,8 +170,7 @@ def drawn_moves(s, i):
         sl = d.slot(p['id']); mv = p['move']
         if sl is None or mv not in MOVE_NAME: continue
         who = f"{MOVE_NAME[mv]} {p['id']}"
-        if sl.get('how') == 'strike': notes.append(f'{who}: no clear way out; struck off with the pencil X'); continue
-        if sl.get('how') == 'blocked': errs.append(f'{who}: no clear route past the other blocks; check the positions'); continue
+        if sl.get('how') in ('strike', 'fade'): continue
         mine = {q['id'] for q in ground if q['move'] == 'driven' and q.get('by') == p['id']}
         for k in range(1, 80):                                      # the start may be off the frame, the end is its spot
             t = sl['t_move'] + (sl['t_end'] - sl['t_move']) * k / 80; a = d.pos(p, t)
