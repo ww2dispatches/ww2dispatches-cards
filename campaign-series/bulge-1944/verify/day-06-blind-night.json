@@ -1,0 +1,29 @@
+{
+ "day": 6,
+ "date": "1944-12-22",
+ "map": "LOC 12th Army Group situation map, 22 Dec 1944",
+ "part": "blind second read",
+ "table": "night",
+ "passed": true,
+ "toleranceKm": 10.0,
+ "units": [
+  {
+   "unit": "18vg",
+   "result": "record [6.11, 50.28]  reader [6.22, 50.31]  9 km  ok  note: Hatched infantry box with XX and 18, east of the St Vith pocket.",
+   "km": 8.5
+  },
+  {
+   "unit": "106id",
+   "result": "not on the table at this time in the record",
+   "km": null
+  }
+ ],
+ "line": {
+  "worstKm": 5.6,
+  "over": []
+ },
+ "readerNotes": {
+  "line": "Traced along the heavy ticked line from the top edge, around Aachen and Monschau, the Elsenborn shoulder, west past the 30th and 82d, around the St Vith pocket (7th Armored and 106th), west along the salient tip near La Roche and back southeast past Bastogne, then through Luxembourg to the Moselle and southeast to the east edge. Points are sampled evenly along the line."
+ },
+ "sentBack": []
+}

@@ -1,0 +1,31 @@
+{
+ "day": 21,
+ "date": "1945-01-06",
+ "map": "LOC 12th Army Group situation map, 6 Jan 1945",
+ "part": "blind second read",
+ "table": "night",
+ "passed": false,
+ "toleranceKm": 10.0,
+ "units": [
+  {
+   "unit": "6abr",
+   "result": "record [5.2, 50.1]  reader [5.17, 50.21]  12 km  DIFFERS  note: Dashed XX box marked AB with 6 (+) beside it, just north of Rochefort; the dashed outline fits a British (21 Army Group) unit.",
+   "km": 12.4
+  },
+  {
+   "unit": "2pz",
+   "result": "record [5.36, 50.1]  reader [5.33, 50.08]  3 km  ok  note: Hatched XX box with an armor oval inside, numbered 2, east of the line south east of Rochefort. The similar hatched box above it near 5.36E 50.15N is numbered 9.",
+   "km": 3.1
+  }
+ ],
+ "line": {
+  "worstKm": 4.3,
+  "over": []
+ },
+ "readerNotes": {
+  "line": "In the west the ticked line meets the heavy east west army group boundary near 5.24E 50.15N; the heavy unticked line running west from there is the boundary and was not counted. North end where the heavy line comes down near the Maas at about 5.84E; the Westwall hatching near Aachen was not used. The south east end leaves the east edge near Saarlautern; a heavy line running south from there toward Metz looks like a boundary and was not followed. Line thinned to 38 points."
+ },
+ "sentBack": [
+  "6abr"
+ ]
+}

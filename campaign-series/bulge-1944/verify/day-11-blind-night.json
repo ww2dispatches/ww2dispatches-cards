@@ -1,0 +1,24 @@
+{
+ "day": 11,
+ "date": "1944-12-27",
+ "map": "LOC 12th Army Group situation map, 27 Dec 1944",
+ "part": "blind second read",
+ "table": "night",
+ "passed": true,
+ "toleranceKm": 10.0,
+ "units": [
+  {
+   "unit": "4ad",
+   "result": "record [5.69, 49.905]  reader [5.69, 49.86]  5 km  ok  note: Armor oval marked 4 with XX, just south of the Bastogne corridor near Martelange.",
+   "km": 5.0
+  }
+ ],
+ "line": {
+  "worstKm": 7.3,
+  "over": []
+ },
+ "readerNotes": {
+  "line": "Line read from the heavy ticked line. North end taken where it comes down along the Maas side at about 5.84E; the double hatched Westwall band near Aachen was not used. Bastogne shown as a salient joined to the south by the 4th Armored corridor. South east end leaves the east edge near Saarlautern; a second heavy line running south from there toward Metz looks like a boundary and was not followed."
+ },
+ "sentBack": []
+}

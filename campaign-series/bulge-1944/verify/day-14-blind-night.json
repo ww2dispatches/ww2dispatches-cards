@@ -1,0 +1,24 @@
+{
+ "day": 14,
+ "date": "1944-12-30",
+ "map": "LOC 12th Army Group situation map, 30 Dec 1944",
+ "part": "blind second read",
+ "table": "night",
+ "passed": true,
+ "toleranceKm": 10.0,
+ "units": [
+  {
+   "unit": "11ad",
+   "result": "record [5.525, 49.95]  reader [5.52, 49.95]  0 km  ok  note: Open armor oval marked 11 with XX, just south of the front line south west of Bastogne. A hatched box marked 11? near 5.57E 50.17N is German (11th Panzer), not this unit.",
+   "km": 0.4
+  }
+ ],
+ "line": {
+  "worstKm": 9.2,
+  "over": []
+ },
+ "readerNotes": {
+  "line": "Western tip of the bulge about 4.96E 50.18N at the army group boundary. North end where the heavy line comes down near the Maas at about 5.84E; the Westwall hatching near Aachen was not used. The south east end leaves the east edge near Saarlautern; a heavy line running south from there toward Metz looks like a boundary and was not followed. Line thinned to 38 points."
+ },
+ "sentBack": []
+}

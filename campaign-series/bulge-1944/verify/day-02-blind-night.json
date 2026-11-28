@@ -1,0 +1,31 @@
+{
+ "day": 2,
+ "date": "1944-12-18",
+ "map": "LOC 12th Army Group situation map, 18 Dec 1944",
+ "part": "blind second read",
+ "table": "night",
+ "passed": false,
+ "toleranceKm": 10.0,
+ "units": [
+  {
+   "unit": "6pa",
+   "result": "record [5.98, 50.4]  reader [6.38, 50.53]  32 km  DIFFERS  note: No Sixth Panzer Army (army level) symbol is drawn on this map. The only matching symbol is the hatched armor box marked 1 SS (1st SS Panzer Division) south of Monschau, behind the German side of the line, so this is the 1 SS box position. Unsure it represents the Peiper spearhead, which this map does not show farther west.",
+   "km": 32.0
+  },
+  {
+   "unit": "7ad",
+   "result": "record [5.93, 50.3]  reader [5.86, 50.29]  5 km  ok  note: Unhatched armor box with XX and 7, west of St Vith area, south of Stavelot.",
+   "km": 5.1
+  }
+ ],
+ "line": {
+  "worstKm": 5.3,
+  "over": []
+ },
+ "readerNotes": {
+  "line": "Traced along the heavy ticked line from the top edge, around Aachen, down past Monschau, around the Butgenbach and Malmedy shoulder, west to Stavelot, back east past the 106th, then south through Luxembourg to the Moselle and southeast to the east edge. Points are sampled evenly along the line."
+ },
+ "sentBack": [
+  "6pa"
+ ]
+}

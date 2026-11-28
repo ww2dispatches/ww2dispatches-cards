@@ -1,0 +1,128 @@
+{
+ "day": 17,
+ "date": "1945-01-02",
+ "map": "LOC 12th Army Group situation map, 2 Jan 1945",
+ "part": "blind second read",
+ "table": "night",
+ "passed": false,
+ "toleranceKm": 10.0,
+ "units": [
+  {
+   "unit": "101ab",
+   "result": "record [5.715, 50.005]  reader [5.68, 50.03]  4 km  ok  note: AB box labelled 101 inside the Bastogne perimeter",
+   "km": 3.7
+  },
+  {
+   "unit": "11ad",
+   "result": "record [5.54, 49.97]  reader [5.54, 49.95]  2 km  ok  note: armor oval labelled 11",
+   "km": 2.2
+  },
+  {
+   "unit": "15pg",
+   "result": "record [5.62, 50.1]  reader [5.58, 50.05]  6 km  ok  note: hatched division labelled 15",
+   "km": 6.2
+  },
+  {
+   "unit": "18vg",
+   "result": "record [6.17, 50.28]  reader [6.02, 50.39]  16 km  DIFFERS  note: hatched division labelled 18",
+   "km": 16.2
+  },
+  {
+   "unit": "26vg",
+   "result": "record [5.87, 49.97]  reader [5.65, 50.08]  20 km  DIFFERS  note: hatched division labelled 26",
+   "km": 19.9
+  },
+  {
+   "unit": "28id",
+   "result": "record [5.5, 49.82]  reader [5.45, 49.83]  4 km  ok  note: infantry box labelled 28 (-)",
+   "km": 3.7
+  },
+  {
+   "unit": "2ad",
+   "result": "record [5.32, 50.36]  reader [5.19, 50.35]  9 km  ok  note: armor oval labelled 2, north of the bulge tip",
+   "km": 9.4
+  },
+  {
+   "unit": "2pz",
+   "result": "record [5.26, 50.12]  reader [5.36, 50.11]  7 km  ok  note: hatched armor labelled '2 ?' (map itself carries the question mark)",
+   "km": 7.2
+  },
+  {
+   "unit": "30id",
+   "result": "record [5.97, 50.49]  reader [5.91, 50.43]  8 km  ok  note: infantry box labelled 30 (+)",
+   "km": 7.9
+  },
+  {
+   "unit": "3ad",
+   "result": "record [5.6, 50.33]  reader [5.33, 50.48]  25 km  DIFFERS  note: armor oval labelled 3 (\u00b1)",
+   "km": 25.5
+  },
+  {
+   "unit": "4ad",
+   "result": "record [5.69, 49.905]  reader [5.68, 49.94]  4 km  ok  note: armor oval labelled 4, south of Bastogne",
+   "km": 3.9
+  },
+  {
+   "unit": "6abr",
+   "result": "record [4.97, 50.26]  reader [4.93, 50.25]  3 km  ok  note: dashed AB box labelled 6 (+) near Dinant; British identity inferred from the AB 6 label",
+   "km": 3.1
+  },
+  {
+   "unit": "6ad",
+   "result": "record [5.835, 49.88]  reader [5.68, 49.97]  15 km  DIFFERS  note: armor oval labelled 6, just above the 4",
+   "km": 14.9
+  },
+  {
+   "unit": "6pa",
+   "result": "NOT FOUND by the reader (No hatched XXXX symbol for Sixth Panzer Army is drawn anywhere on the map; only corps (I SS, LXVI, etc.) and divisions (including 1 SS) appear. Only German army symbol seen is FIFTEENTH near Koln.)",
+   "km": null
+  },
+  {
+   "unit": "7a",
+   "result": "NOT FOUND by the reader (No hatched XXXX symbol for Seventh Army is drawn on the map; only unlabelled or hard to read hatched corps boxes near Wittlich and divisions on the southern flank.)",
+   "km": null
+  },
+  {
+   "unit": "82ab",
+   "result": "record [5.75, 50.36]  reader [5.75, 50.36]  0 km  ok  note: AB box labelled 82",
+   "km": 0.0
+  },
+  {
+   "unit": "84id",
+   "result": "record [5.29, 50.24]  reader [5.33, 50.26]  4 km  ok  note: infantry box labelled 84 (+)",
+   "km": 3.6
+  },
+  {
+   "unit": "9pz",
+   "result": "record [5.435, 50.191]  reader [5.35, 50.15]  8 km  ok  note: hatched armor labelled 9",
+   "km": 7.6
+  },
+  {
+   "unit": "iii",
+   "result": "record [5.99, 49.87]  reader [5.86, 49.73]  18 km  DIFFERS  note: XXX box labelled III",
+   "km": 18.1
+  },
+  {
+   "unit": "v",
+   "result": "record [6.2, 50.47]  reader [6.07, 50.67]  24 km  DIFFERS  note: XXX box labelled V near Eupen",
+   "km": 24.0
+  }
+ ],
+ "line": {
+  "worstKm": 5.2,
+  "over": []
+ },
+ "readerNotes": {
+  "line": "Line enters at the north near Roermond, runs down past Aachen to Monschau, west along the north shoulder of the bulge to its tip east of Dinant, back east along the south shoulder with the Bastogne salient poking north around 5.66 to 5.77E, then east to Echternach, south along the Moselle and Saar, leaving the east edge near 49.25N. The unticked line running south from St Avold is a boundary, not the front. Points near the Bastogne salient and the double hatched Westwall band near Monschau are approximate to about 0.02 degrees."
+ },
+ "sentBack": [
+  "18vg",
+  "26vg",
+  "3ad",
+  "6ad",
+  "6pa",
+  "7a",
+  "iii",
+  "v"
+ ]
+}

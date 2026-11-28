@@ -1,0 +1,31 @@
+{
+ "day": 12,
+ "date": "1944-12-28",
+ "map": "LOC 12th Army Group situation map, 28 Dec 1944",
+ "part": "blind second read",
+ "table": "night",
+ "passed": false,
+ "toleranceKm": 10.0,
+ "units": [
+  {
+   "unit": "26vg",
+   "result": "record [5.87, 50.0]  reader [5.87, 50.02]  2 km  ok  note: Hatched (German) XX box numbered 26, north east of Bastogne. A separate open box numbered 26 near 5.95E 49.88N is the US 26th Infantry Division, not this unit.",
+   "km": 2.2
+  },
+  {
+   "unit": "iii",
+   "result": "record [5.99, 49.87]  reader [5.89, 49.72]  18 km  DIFFERS  note: XXX corps headquarters box marked III with flag staff, near Arlon. Small III labels on the corps boundary ticks were not used.",
+   "km": 18.1
+  }
+ ],
+ "line": {
+  "worstKm": 7.2,
+  "over": []
+ },
+ "readerNotes": {
+  "line": "North end where the heavy line comes down near the Maas at about 5.84E; Westwall hatching near Aachen not used. Bastogne is a salient open to the south. The south east end leaves the east edge near Saarlautern; a heavy line running south from there toward Metz looks like a boundary and was not followed. Line thinned to 38 points."
+ },
+ "sentBack": [
+  "iii"
+ ]
+}

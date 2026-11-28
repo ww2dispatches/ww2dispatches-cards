@@ -1,0 +1,26 @@
+{
+ "day": 1,
+ "date": "1944-12-17",
+ "map": "LOC 12th Army Group situation map, 17 Dec 1944",
+ "part": "blind second read",
+ "table": "night",
+ "passed": false,
+ "toleranceKm": 10.0,
+ "units": [
+  {
+   "unit": "2pz",
+   "result": "record [6.12, 50.07]  reader [6.37, 49.99]  20 km  DIFFERS  note: Hatched armor box with XX and number 2, just south of Neuerburg, east of the hatched penetration band.",
+   "km": 19.9
+  }
+ ],
+ "line": {
+  "worstKm": 6.2,
+  "over": []
+ },
+ "readerNotes": {
+  "line": "Traced along the heavy ticked line from the top edge north of Geilenkirchen, around Aachen and the Monschau and Losheim area, down through Luxembourg to the Moselle and southeast to the east edge near Saarlautern. Points are sampled evenly along the traced line; small jogs between samples are smoothed."
+ },
+ "sentBack": [
+  "2pz"
+ ]
+}

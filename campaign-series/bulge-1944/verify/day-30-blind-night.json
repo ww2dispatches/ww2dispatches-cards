@@ -1,0 +1,24 @@
+{
+ "day": 30,
+ "date": "1945-01-15",
+ "map": "LOC 12th Army Group situation map, 15 Jan 1945",
+ "part": "blind second read",
+ "table": "night",
+ "passed": true,
+ "toleranceKm": 10.0,
+ "units": [
+  {
+   "unit": "3ad",
+   "result": "record [5.74, 50.255]  reader [5.79, 50.22]  5 km  ok  note: Armor oval box marked 3 (+), next to the 2 (+) armor box, just north of the front line north of Houffalize.",
+   "km": 5.3
+  }
+ ],
+ "line": {
+  "worstKm": 6.6,
+  "over": []
+ },
+ "readerNotes": {
+  "line": "Traced along the heavy ticked line: enters at the top near 5.92E, dips west to about 5.78E then runs east along about 51.0N, down the Roer past Duren to Monschau, west along about 50.4N past Stavelot, down to a shallow western point near 5.63E 50.12N on the Ourthe where the Twelfth and Twenty One boundary meets it, then southeast past Bastogne and along the Sauer, down the Moselle to Remich, then along the Saar past Merzig and off the east edge near 49.21N. The army group boundary and the straight unticked boundary running southwest from the Saar toward St. Avold are left out. Points were sampled at even spacing along the line."
+ },
+ "sentBack": []
+}

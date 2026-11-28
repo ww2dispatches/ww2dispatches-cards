@@ -1,0 +1,34 @@
+{
+ "day": 7,
+ "date": "1944-12-23",
+ "map": "LOC 12th Army Group situation map, 23 Dec 1944",
+ "part": "blind second read",
+ "table": "night",
+ "passed": true,
+ "toleranceKm": 10.0,
+ "units": [
+  {
+   "unit": "4ad",
+   "result": "record [5.765, 49.8]  reader [5.76, 49.8]  0 km  ok  note: Unhatched armor box with XX and 4 north of Arlon, west end of the III Corps front. Not the infantry 4 box under XII Corps near Luxembourg city.",
+   "km": 0.4
+  },
+  {
+   "unit": "iii",
+   "result": "record [5.95, 49.8]  reader [5.89, 49.75]  7 km  ok  note: Corps box (XXX) marked III north of Arlon; position is the middle of the box, not the flag staff foot.",
+   "km": 7.0
+  },
+  {
+   "unit": "26vg",
+   "result": "record [5.84, 49.92]  reader [5.83, 49.96]  4 km  ok  note: Hatched infantry box with XX and 26 near Wiltz, north of the line. Not the unhatched US 26 box beside it to the south.",
+   "km": 4.5
+  }
+ ],
+ "line": {
+  "worstKm": 9.5,
+  "over": []
+ },
+ "readerNotes": {
+  "line": "Traced along the heavy ticked line from the top edge, around Aachen and Monschau, the Elsenborn shoulder, west past the 30th and 82d, around the St Vith pocket, west along the salient tip near La Roche and back southeast past Bastogne, east along the III Corps front south of Wiltz to the Sauer and Moselle, then southeast to the east edge in the Saar. The heavy unticked line running south from near Saarlautern to the bottom edge is a boundary and was not followed. Points are sampled evenly along the line."
+ },
+ "sentBack": []
+}

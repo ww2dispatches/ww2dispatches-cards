@@ -1,0 +1,31 @@
+{
+ "day": 8,
+ "date": "1944-12-24",
+ "map": "LOC 12th Army Group situation map, 24 Dec 1944",
+ "part": "blind second read",
+ "table": "night",
+ "passed": false,
+ "toleranceKm": 10.0,
+ "units": [
+  {
+   "unit": "7ad",
+   "result": "not on the table at this time in the record",
+   "km": null
+  },
+  {
+   "unit": "2pz",
+   "result": "record [5.47, 50.215]  reader [5.74, 50.09]  24 km  DIFFERS  note: Hatched box with XX and 2 just south of Houffalize, beside the 560 box. A grid label covers the top of the box so the armor oval is not clearly visible; no other 2 symbol is drawn nearer the tip of the bulge.",
+   "km": 23.7
+  }
+ ],
+ "line": {
+  "worstKm": 8.7,
+  "over": []
+ },
+ "readerNotes": {
+  "line": "Traced along the heavy ticked line from the top edge, around Aachen and Monschau, the Elsenborn shoulder, west past the 30th to the Ambleve, around the Manhay and Vielsalm sector, west to the salient tip, back southeast past Bastogne (not drawn as a ring), east along the III Corps front to the Sauer and Moselle, then southeast to the east edge in the Saar. A short narrow tongue of the line west of Stoumont near La Gleize was cut across rather than followed to its tip. The unticked army group boundary that meets the line near the tip was not followed."
+ },
+ "sentBack": [
+  "2pz"
+ ]
+}

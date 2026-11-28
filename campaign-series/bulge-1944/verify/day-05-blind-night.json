@@ -1,0 +1,26 @@
+{
+ "day": 5,
+ "date": "1944-12-21",
+ "map": "LOC 12th Army Group situation map, 21 Dec 1944",
+ "part": "blind second read",
+ "table": "night",
+ "passed": false,
+ "toleranceKm": 10.0,
+ "units": [
+  {
+   "unit": "2pz",
+   "result": "record [5.8, 50.1]  reader [6.02, 50.05]  17 km  DIFFERS  note: Hatched box with XX and 2 near Clervaux, between the 560 and Lehr boxes, east of the Bastogne front. The armor oval inside the box is faint, so the type is read mostly from position and number.",
+   "km": 16.7
+  }
+ ],
+ "line": {
+  "worstKm": 4.6,
+  "over": []
+ },
+ "readerNotes": {
+  "line": "Traced along the heavy ticked line from the top edge, around Aachen and Monschau, the Elsenborn shoulder, west to the 30th and 82d, around the St Vith salient (7th Armored and 106th inside), then around the German salient that reaches west to the La Roche area, back east of Bastogne, through Luxembourg to the Moselle and southeast to the east edge. Points are sampled evenly along the line."
+ },
+ "sentBack": [
+  "2pz"
+ ]
+}

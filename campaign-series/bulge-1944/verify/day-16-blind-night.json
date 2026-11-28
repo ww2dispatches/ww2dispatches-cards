@@ -1,0 +1,26 @@
+{
+ "day": 16,
+ "date": "1945-01-01",
+ "map": "LOC 12th Army Group situation map, 1 Jan 1945",
+ "part": "blind second read",
+ "table": "night",
+ "passed": false,
+ "toleranceKm": 10.0,
+ "units": [
+  {
+   "unit": "6ad",
+   "result": "record [5.835, 49.88]  reader [5.67, 49.98]  16 km  DIFFERS  note: Open armor oval with XX and the number 6 beside it, just south east of Bastogne inside the Bastogne salient.",
+   "km": 16.2
+  }
+ ],
+ "line": {
+  "worstKm": 9.2,
+  "over": []
+ },
+ "readerNotes": {
+  "line": "Western tip of the bulge about 4.93E 50.19N at the army group boundary. North end where the heavy line comes down near the Maas at about 5.84E; the Westwall hatching near Aachen was not used. The south east end leaves the east edge near Saarlautern; a heavy line running south from there toward Metz looks like a boundary and was not followed. Line thinned to 38 points."
+ },
+ "sentBack": [
+  "6ad"
+ ]
+}

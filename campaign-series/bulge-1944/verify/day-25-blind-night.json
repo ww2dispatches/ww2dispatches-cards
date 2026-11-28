@@ -1,0 +1,26 @@
+{
+ "day": 25,
+ "date": "1945-01-10",
+ "map": "LOC 12th Army Group situation map, 10 Jan 1945",
+ "part": "blind second read",
+ "table": "night",
+ "passed": false,
+ "toleranceKm": 10.0,
+ "units": [
+  {
+   "unit": "26vg",
+   "result": "record [5.93, 50.02]  reader [5.69, 50.11]  20 km  DIFFERS  note: Hatched infantry box marked 26 (division) just south of the Ourthe near Houffalize, inside the bulge.",
+   "km": 19.8
+  }
+ ],
+ "line": {
+  "worstKm": 5.7,
+  "over": []
+ },
+ "readerNotes": {
+  "line": "Traced along the heavy ticked line: enters at the top near 5.89E, dips west to about 5.77E then runs east along about 51.0N, down the Roer past Duren to Monschau, west along about 50.4N to Stavelot, around the bulge tip west of St. Hubert, back east south of Bastogne and along the Sauer, down the Moselle to Remich, then along the Saar past Merzig and off the east edge near 49.22N. The straight unticked line running southwest from the Saar toward St. Avold is a boundary and was left out. Points were sampled at even spacing along the line, so small wiggles between points are smoothed."
+ },
+ "sentBack": [
+  "26vg"
+ ]
+}

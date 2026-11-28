@@ -1,0 +1,31 @@
+{
+ "day": 26,
+ "date": "1945-01-11",
+ "map": "LOC 12th Army Group situation map, 11 Jan 1945",
+ "part": "blind second read",
+ "table": "night",
+ "passed": false,
+ "toleranceKm": 10.0,
+ "units": [
+  {
+   "unit": "2pz",
+   "result": "not on the table at this time in the record",
+   "km": null
+  },
+  {
+   "unit": "15pg",
+   "result": "record [5.72, 50.16]  reader [5.6, 50.08]  12 km  DIFFERS  note: Hatched box marked 15 (division) north of the 3 box, between St. Hubert and Bastogne inside the bulge. The inner symbol is hard to read, but the number fits.",
+   "km": 12.3
+  }
+ ],
+ "line": {
+  "worstKm": 5.7,
+  "over": []
+ },
+ "readerNotes": {
+  "line": "Traced along the heavy ticked line: enters at the top near 5.9E, dips west to about 5.77E then runs east along about 51.0N, down the Roer past Duren to Monschau, west along about 50.4N to Stavelot, around the bulge tip west of St. Hubert, back east past Bastogne and along the Sauer, down the Moselle to Remich, then along the Saar past Merzig and off the east edge near 49.21N. The straight unticked line running southwest from the Saar toward St. Avold is a boundary and was left out. Points were sampled at even spacing along the line."
+ },
+ "sentBack": [
+  "15pg"
+ ]
+}

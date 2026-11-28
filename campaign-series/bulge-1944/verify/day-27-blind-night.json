@@ -1,0 +1,24 @@
+{
+ "day": 27,
+ "date": "1945-01-12",
+ "map": "LOC 12th Army Group situation map, 12 Jan 1945",
+ "part": "blind second read",
+ "table": "night",
+ "passed": true,
+ "toleranceKm": 10.0,
+ "units": [
+  {
+   "unit": "51hd",
+   "result": "record [5.56, 50.195]  reader [5.44, 50.23]  9 km  ok  note: Unsure. A dashed (British) division box near Marche, inside the XXX Corps area, shows only the digit 5; a second digit, if any, falls where the 5.5E grid line and the Ourthe cross and cannot be read. No other box labeled 51 appears anywhere on the map. A division box at the far west edge near 4.4E 50.9N is cut off and unreadable. Treat this as a possible, not confirmed, match.",
+   "km": 9.4
+  }
+ ],
+ "line": {
+  "worstKm": 4.9,
+  "over": []
+ },
+ "readerNotes": {
+  "line": "Traced along the heavy ticked line: enters at the top near 5.91E, dips west to about 5.78E then runs east along about 51.0N, down the Roer past Duren to Monschau, west along about 50.4N to Stavelot, around the shrinking bulge tip near St. Hubert, back east past Bastogne and along the Sauer, down the Moselle to Remich, then along the Saar past Merzig and off the east edge near 49.22N. The straight unticked line running southwest from the Saar toward St. Avold is a boundary and was left out. Points were sampled at even spacing along the line."
+ },
+ "sentBack": []
+}

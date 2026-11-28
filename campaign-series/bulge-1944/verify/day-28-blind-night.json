@@ -1,0 +1,121 @@
+{
+ "day": 28,
+ "date": "1945-01-13",
+ "map": "LOC 12th Army Group situation map, 13 Jan 1945",
+ "part": "blind second read",
+ "table": "night",
+ "passed": false,
+ "toleranceKm": 10.0,
+ "units": [
+  {
+   "unit": "101ab",
+   "result": "record [5.715, 50.005]  reader [5.72, 50.04]  4 km  ok",
+   "km": 3.9
+  },
+  {
+   "unit": "15pg",
+   "result": "record [5.72, 50.16]  reader [5.73, 50.14]  2 km  ok  note: Hatched division box numbered 15 with panzer grenadier style fill.",
+   "km": 2.3
+  },
+  {
+   "unit": "17ab",
+   "result": "record [5.565, 50.0]  reader [5.54, 50.03]  4 km  ok",
+   "km": 3.8
+  },
+  {
+   "unit": "18vg",
+   "result": "record [6.17, 50.28]  reader [6.04, 50.38]  14 km  DIFFERS",
+   "km": 14.4
+  },
+  {
+   "unit": "26vg",
+   "result": "record [5.93, 50.02]  reader [5.74, 50.11]  17 km  DIFFERS",
+   "km": 16.8
+  },
+  {
+   "unit": "2ad",
+   "result": "record [5.45, 50.285]  reader [5.67, 50.24]  16 km  DIFFERS  note: Armor oval box labelled 2(+).",
+   "km": 16.5
+  },
+  {
+   "unit": "30id",
+   "result": "record [5.97, 50.49]  reader [5.92, 50.43]  8 km  ok",
+   "km": 7.5
+  },
+  {
+   "unit": "3ad",
+   "result": "record [5.64, 50.315]  reader [5.7, 50.28]  6 km  ok  note: Armor oval box labelled 3(+).",
+   "km": 5.8
+  },
+  {
+   "unit": "4ad",
+   "result": "record [5.69, 49.905]  reader [5.72, 50.0]  11 km  DIFFERS  note: Division box numbered 4 just south of the 101st; inner symbol partly crossed by a boundary line, looks like an armor oval. Not the infantry 4 near Luxembourg at about 6.31E 49.77N.",
+   "km": 10.7
+  },
+  {
+   "unit": "51hd",
+   "result": "record [5.56, 50.195]  reader [5.5, 50.2]  4 km  ok  note: Dashed British style box with XX, number reads 51, partly obscured.",
+   "km": 4.3
+  },
+  {
+   "unit": "6abr",
+   "result": "record [5.2, 50.1]  reader [5.26, 50.12]  5 km  ok  note: Dashed box marked AB 6(+).",
+   "km": 4.8
+  },
+  {
+   "unit": "6ad",
+   "result": "record [5.835, 49.88]  reader [5.72, 49.95]  11 km  DIFFERS",
+   "km": 11.3
+  },
+  {
+   "unit": "6pa",
+   "result": "NOT FOUND by the reader (No Sixth Panzer Army (XXXX) symbol or Peiper group visible anywhere on the map; German army boxes are only partly shown at the clipped east edge (one reads FI..., i.e. Fifth).)",
+   "km": null
+  },
+  {
+   "unit": "7a",
+   "result": "NOT FOUND by the reader (No Seventh Army (XXXX) symbol visible; only its corps (LIII, LXXX, LXXXV) boxes appear near 6.4E to 6.8E, 49.9N to 50.0N. Army level boxes are cut off at the east edge.)",
+   "km": null
+  },
+  {
+   "unit": "82ab",
+   "result": "record [5.8, 50.39]  reader [5.8, 50.49]  11 km  DIFFERS",
+   "km": 11.1
+  },
+  {
+   "unit": "84id",
+   "result": "record [5.29, 50.24]  reader [5.56, 50.26]  19 km  DIFFERS",
+   "km": 19.4
+  },
+  {
+   "unit": "iii",
+   "result": "record [5.99, 49.87]  reader [5.87, 49.73]  18 km  DIFFERS  note: Corps box III with flag staff to Arlon; position is the box middle.",
+   "km": 17.7
+  },
+  {
+   "unit": "v",
+   "result": "record [6.2, 50.47]  reader [6.11, 50.58]  14 km  DIFFERS  note: Corps box V.",
+   "km": 13.8
+  }
+ ],
+ "line": {
+  "worstKm": 5.2,
+  "over": []
+ },
+ "readerNotes": {
+  "line": "Enters at the north edge near the Maas (5.88E 51.17N), runs east along 51.0N past Geilenkirchen, then down the Roer past Duren to Monschau. The bulge: north shoulder near Malmedy and Stavelot, west tip near 5.30E 50.09N (narrow salient between the 6th Airborne and the 51st), south side past Bastogne, then east along the Sauer and down the Moselle, leaving the east edge near 6.85E 49.21N. Around Aachen and Monschau the heavy front line runs beside the hatched Westwall band and can be confused with it; I followed the plain heavy ticked line. The heavy line across 50.15N to 50.17N west of Marche is the army group boundary, not the front."
+ },
+ "sentBack": [
+  "18vg",
+  "26vg",
+  "2ad",
+  "4ad",
+  "6ad",
+  "6pa",
+  "7a",
+  "82ab",
+  "84id",
+  "iii",
+  "v"
+ ]
+}

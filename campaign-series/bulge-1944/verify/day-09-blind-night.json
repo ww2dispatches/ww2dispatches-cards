@@ -1,0 +1,78 @@
+{
+ "day": 9,
+ "date": "1944-12-25",
+ "map": "LOC 12th Army Group situation map, 25 Dec 1944",
+ "part": "blind second read",
+ "table": "night",
+ "passed": false,
+ "toleranceKm": 10.0,
+ "units": [
+  {
+   "unit": "2pz",
+   "result": "record [5.02, 50.235]  reader [5.34, 50.16]  24 km  DIFFERS  note: Hatched box with XX and 2 at the west tip of the bulge, south of the 9 box, near the Twenty One and Twelfth Army Group boundary. The inside of the box is blotted, so the armor oval cannot be confirmed.",
+   "km": 24.3
+  },
+  {
+   "unit": "2ad",
+   "result": "record [5.13, 50.32]  reader [5.28, 50.38]  13 km  DIFFERS  note: Unhatched armor box with XX and 2 west of the VII Corps box, northwest of the bulge tip.",
+   "km": 12.6
+  }
+ ],
+ "line": {
+  "worstKm": 23.1,
+  "over": [
+   [
+    5.16,
+    50.23,
+    10
+   ],
+   [
+    5.12,
+    50.24,
+    13
+   ],
+   [
+    5.08,
+    50.26,
+    17
+   ],
+   [
+    5.03,
+    50.25,
+    20
+   ],
+   [
+    4.98,
+    50.25,
+    23
+   ],
+   [
+    4.97,
+    50.22,
+    23
+   ],
+   [
+    5.03,
+    50.22,
+    19
+   ],
+   [
+    5.08,
+    50.22,
+    15
+   ],
+   [
+    5.12,
+    50.2,
+    12
+   ]
+  ]
+ },
+ "readerNotes": {
+  "line": "Traced along the heavy ticked line from the top edge, around Aachen and Monschau, the Elsenborn shoulder, west past Stavelot and Manhay, around the west tip of the bulge, back east along the southern side past Bastogne, east along the III Corps front to the Sauer and Moselle, then southeast to the east edge in the Saar. Bastogne is drawn as a separate closed ring around the 101st (centered near 5.72E 50.04N); it is not part of this line and is not included in the points. Points are sampled evenly along the line."
+ },
+ "sentBack": [
+  "2pz",
+  "2ad"
+ ]
+}

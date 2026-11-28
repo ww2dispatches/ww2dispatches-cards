@@ -1,0 +1,29 @@
+{
+ "day": 19,
+ "date": "1945-01-04",
+ "map": "LOC 12th Army Group situation map, 4 Jan 1945",
+ "part": "blind second read",
+ "table": "night",
+ "passed": true,
+ "toleranceKm": 10.0,
+ "units": [
+  {
+   "unit": "2ad",
+   "result": "record [5.45, 50.285]  reader [5.55, 50.3]  7 km  ok  note: Armor oval with XX marked 2(+), just north of the line near Hotton; the box is partly covered by a grid label.",
+   "km": 7.3
+  },
+  {
+   "unit": "3ad",
+   "result": "record [5.64, 50.315]  reader [5.64, 50.33]  2 km  ok  note: Armor oval with XX marked 3 with (+) above, north of the line between Hotton and Manhay (box center reads about 50.325N).",
+   "km": 1.7
+  }
+ ],
+ "line": {
+  "worstKm": 9.2,
+  "over": []
+ },
+ "readerNotes": {
+  "line": "In the west the ticked line meets the heavy east west army group boundary near 5.21E 50.16N; the heavy unticked line running west from there is the boundary and was not counted. North end where the heavy line comes down near the Maas at about 5.84E; the Westwall hatching near Aachen was not used. The south east end leaves the east edge near Saarlautern; a heavy line running south from there toward Metz looks like a boundary and was not followed. Line thinned to 38 points."
+ },
+ "sentBack": []
+}
