@@ -57,3 +57,6 @@ Days 1 to 23 can render now; none of the fixes above touch them. Days 24 to 30 r
     * **(a) Recommended:** remove the Day 26 fall_back and give the 82nd a Day 27 **shift** to about [5.76, 50.48]. That is 14 km, inside the 15 km shift limit and within one block of the 12 Jan symbol.
     * **(b)** Keep the fall_back on Day 26, but only if your source dates the relief to 10 January or earlier. Then name it in the move's sources as a history over map exception, like Bure.
   * Either way, Days 24, 25 and 28 to 30 look the same, so only Days 26 and 27 wait.
+
+# Closed (Map Room chat, 27 Nov 2026)
+**All 30 days pass.** The 82nd Airborne is now 7.2 km from the 11 Jan map on Day 26 and 3.5 km from the 12 Jan map on Day 27. Ready to render. Named exceptions: the German divisions and the corps and army blocks (by design); history over map for Celles (Day 9), the Bastogne ring, La Roche, Bure and the 82nd's relief date; crowding for the 84th (Days 24 to 26 and 30), the 3rd Armored (Day 28) and the 4th Armored (Day 28).
