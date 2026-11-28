@@ -94,12 +94,12 @@ He retired as a captain in 1963 and in 1987 published his own account, Shinano! 
 
 Each morning brought a new dispatch. Catch up on any you missed:
 
-* No. 080, The Road of Life opens: [Read on X](LINK_80)
-* No. 083, The flag over Strasbourg: [Read on X](LINK_83)
-* No. 086, B-29s strike Tokyo from Saipan: [Read on X](LINK_86)
-* No. 089, Kamikazes hit four carriers: [Read on X](LINK_89)
-* No. 092, Butch O'Hare's last flight: [Read on X](LINK_92)
-* No. 095, France sinks its own fleet: [Read on X](LINK_95)
+* No. 080, The Road of Life opens: [Read on X](https://x.com/ww2dispatches/status/2124518789572108761)
+* No. 083, The flag over Strasbourg: [Read on X](https://x.com/ww2dispatches/status/2124881595211415967)
+* No. 086, B-29s strike Tokyo from Saipan: [Read on X](https://x.com/ww2dispatches/status/2125244064987587041)
+* No. 089, Kamikazes hit four carriers: [Read on X](https://x.com/ww2dispatches/status/2125606865727791256)
+* No. 092, Butch O'Hare's last flight: [Read on X](https://x.com/ww2dispatches/status/2125969839931965773)
+* No. 095, France sinks its own fleet: [Read on X](https://x.com/ww2dispatches/status/2126331816479007208)
 * No. 098, The Big Three meet at Tehran: [Read on X](https://x.com/ww2dispatches)
 
 ---
