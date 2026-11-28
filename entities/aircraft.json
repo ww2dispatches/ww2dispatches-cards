@@ -1,0 +1,1724 @@
+{
+ "aircraft-airspeed-horsa": {
+  "name": "Airspeed Horsa",
+  "kind": "British troop carrying glider",
+  "nation": "Britain",
+  "wikidata": "Q409210",
+  "source": "https://en.wikipedia.org/wiki/Airspeed_Horsa"
+ },
+ "aircraft-airspeed-oxford": {
+  "name": "Airspeed Oxford",
+  "kind": "twin engine trainer",
+  "nation": "Britain",
+  "wikidata": "Q409219",
+  "source": "https://en.wikipedia.org/wiki/Airspeed_Oxford"
+ },
+ "aircraft-akutan-zero": {
+  "name": "Akutan Zero",
+  "kind": "single captured Mitsubishi A6M2 Zero flown by Tadayoshi Koga",
+  "nation": "Japan",
+  "wikidata": "Q1200046",
+  "source": "https://en.wikipedia.org/wiki/Akutan_Zero",
+  "aka": [
+   "Koga's Zero"
+  ]
+ },
+ "aircraft-algernon-iv": {
+  "name": "B-25C \"Algernon IV\" (41-12485)",
+  "kind": "single named B-25C Mitchell, 90th Bomb Squadron, 3rd Bomb Group",
+  "nation": "US",
+  "wikidata": null,
+  "source": "https://pacificwrecks.com/aircraft/b-25/41-12485.html",
+  "note": "No Wikipedia article; id from the aircraft's nickname. Source is Pacific Wrecks. Earns its own entity because the reserved 18 Jan 2027 5 p.m. card is about her."
+ },
+ "aircraft-arado-ar-196": {
+  "name": "Arado Ar 196",
+  "kind": "German shipborne reconnaissance floatplane",
+  "nation": "Germany",
+  "wikidata": "Q163170",
+  "source": "https://en.wikipedia.org/wiki/Arado_Ar_196"
+ },
+ "aircraft-arado-ar-234-blitz": {
+  "name": "Arado Ar 234 Blitz",
+  "kind": "German jet reconnaissance bomber",
+  "nation": "Germany",
+  "wikidata": "Q157335",
+  "source": "https://en.wikipedia.org/wiki/Arado_Ar_234_Blitz",
+  "aka": [
+   "Ar 234"
+  ]
+ },
+ "aircraft-armstrong-whitworth-whitley": {
+  "name": "Armstrong Whitworth Whitley",
+  "kind": "British medium bomber",
+  "nation": "Britain",
+  "wikidata": "Q689463",
+  "source": "https://en.wikipedia.org/wiki/Armstrong_Whitworth_Whitley"
+ },
+ "aircraft-avro-anson": {
+  "name": "Avro Anson",
+  "kind": "British twin engine trainer and patrol aircraft",
+  "nation": "Britain",
+  "wikidata": "Q791469",
+  "source": "https://en.wikipedia.org/wiki/Avro_Anson"
+ },
+ "aircraft-avro-lancaster": {
+  "name": "Avro Lancaster",
+  "kind": "British four engine heavy bomber",
+  "nation": "Britain",
+  "wikidata": "Q203622",
+  "source": "https://en.wikipedia.org/wiki/Avro_Lancaster"
+ },
+ "aircraft-avro-lancastrian": {
+  "name": "Avro Lancastrian",
+  "kind": "airliner converted from the Lancaster bomber",
+  "nation": "Britain",
+  "wikidata": "Q791456",
+  "source": "https://en.wikipedia.org/wiki/Avro_Lancastrian"
+ },
+ "aircraft-avro-manchester": {
+  "name": "Avro Manchester",
+  "kind": "twin engine heavy bomber",
+  "nation": "Britain",
+  "wikidata": "Q672994",
+  "source": "https://en.wikipedia.org/wiki/Avro_Manchester"
+ },
+ "aircraft-avro-tudor": {
+  "name": "Avro Tudor",
+  "kind": "piston engined airliner",
+  "nation": "Britain",
+  "wikidata": "Q791511",
+  "source": "https://en.wikipedia.org/wiki/Avro_Tudor"
+ },
+ "aircraft-avro-york": {
+  "name": "Avro York",
+  "kind": "four engine transport aircraft",
+  "nation": "Britain",
+  "wikidata": "Q538968",
+  "source": "https://en.wikipedia.org/wiki/Avro_York"
+ },
+ "aircraft-b-29-dauntless-dotty": {
+  "name": "Dauntless Dotty",
+  "kind": "individual B-29 Superfortress",
+  "nation": "US",
+  "wikidata": "Q16820640",
+  "source": "https://en.wikipedia.org/wiki/Dauntless_Dotty",
+  "note": "A single named aircraft, the lead plane of the 24 November 1944 Tokyo raid."
+ },
+ "aircraft-b-29-superfortress": {
+  "name": "Boeing B-29 Superfortress",
+  "kind": "heavy bomber",
+  "nation": "US",
+  "wikidata": "Q184870",
+  "source": "https://en.wikipedia.org/wiki/Boeing_B-29_Superfortress",
+  "aka": [
+   "B-29"
+  ]
+ },
+ "aircraft-bachem-ba-349-natter": {
+  "name": "Bachem Ba 349 Natter",
+  "kind": "Vertical launch rocket interceptor",
+  "nation": "Germany",
+  "wikidata": "Q249954",
+  "source": "https://en.wikipedia.org/wiki/Bachem_Ba_349_Natter"
+ },
+ "aircraft-bell-47": {
+  "name": "Bell 47",
+  "kind": "light helicopter",
+  "nation": "US",
+  "wikidata": "Q312540",
+  "source": "https://en.wikipedia.org/wiki/Bell_47"
+ },
+ "aircraft-bell-p-39-airacobra": {
+  "name": "Bell P 39 Airacobra",
+  "kind": "fighter aircraft",
+  "nation": "US",
+  "wikidata": "Q385778",
+  "source": "https://en.wikipedia.org/wiki/Bell_P-39_Airacobra",
+  "aka": [
+   "P 39",
+   "Airacobra"
+  ]
+ },
+ "aircraft-bell-p-59-airacomet": {
+  "name": "Bell P-59 Airacomet",
+  "kind": "US jet fighter",
+  "nation": "US",
+  "wikidata": "Q278162",
+  "source": "https://en.wikipedia.org/wiki/Bell_P-59_Airacomet"
+ },
+ "aircraft-bell-x-1": {
+  "name": "Bell X-1",
+  "kind": "rocket powered research aircraft",
+  "nation": "US",
+  "wikidata": "Q223365",
+  "source": "https://en.wikipedia.org/wiki/Bell_X-1",
+  "aka": [
+   "XS-1"
+  ]
+ },
+ "aircraft-blackburn-skua": {
+  "name": "Blackburn Skua",
+  "kind": "Fleet Air Arm dive bomber and fighter",
+  "nation": "Britain",
+  "wikidata": "Q536742",
+  "source": "https://en.wikipedia.org/wiki/Blackburn_Skua"
+ },
+ "aircraft-bockscar": {
+  "name": "Bockscar",
+  "kind": "B-29 that dropped Fat Man on Nagasaki",
+  "nation": "US",
+  "wikidata": "Q697041",
+  "source": "https://en.wikipedia.org/wiki/Bockscar"
+ },
+ "aircraft-boeing-247": {
+  "name": "Boeing 247",
+  "kind": "twin engine all metal airliner",
+  "nation": "US",
+  "wikidata": "Q729331",
+  "source": "https://en.wikipedia.org/wiki/Boeing_247"
+ },
+ "aircraft-boeing-314-clipper": {
+  "name": "Boeing 314 Clipper",
+  "kind": "long range flying boat airliner",
+  "nation": "US",
+  "wikidata": "Q890166",
+  "source": "https://en.wikipedia.org/wiki/Boeing_314_Clipper"
+ },
+ "aircraft-boeing-b-17-flying-fortress": {
+  "name": "Boeing B-17 Flying Fortress",
+  "kind": "heavy bomber",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Boeing_B-17_Flying_Fortress",
+  "wikidata": "Q185000",
+  "aka": [
+   "B-17",
+   "Flying Fortress"
+  ]
+ },
+ "aircraft-boeing-b-47-stratojet": {
+  "name": "Boeing B-47 Stratojet",
+  "kind": "jet bomber",
+  "nation": "US",
+  "wikidata": "Q467649",
+  "source": "https://en.wikipedia.org/wiki/Boeing_B-47_Stratojet",
+  "aka": [
+   "XB-47"
+  ]
+ },
+ "aircraft-boeing-b-50-superfortress": {
+  "name": "Boeing B-50 Superfortress",
+  "kind": "American strategic bomber",
+  "nation": "US",
+  "wikidata": "Q578959",
+  "source": "https://en.wikipedia.org/wiki/Boeing_B-50_Superfortress"
+ },
+ "aircraft-boeing-p-26-peashooter": {
+  "name": "Boeing P-26 Peashooter",
+  "kind": "fighter",
+  "nation": "US",
+  "wikidata": "Q890209",
+  "source": "https://en.wikipedia.org/wiki/Boeing_P-26_Peashooter",
+  "aka": [
+   "P-26"
+  ]
+ },
+ "aircraft-boeing-xb-38-flying-fortress": {
+  "name": "Boeing XB-38 Flying Fortress",
+  "kind": "experimental B-17E with Allison V-12 engines, converted by Vega",
+  "nation": "US",
+  "wikidata": "Q579575",
+  "source": "https://en.wikipedia.org/wiki/Boeing_XB-38_Flying_Fortress",
+  "aka": [
+   "Vega XB-38"
+  ]
+ },
+ "aircraft-bristol-beaufighter": {
+  "name": "Bristol Beaufighter",
+  "kind": "British twin engine heavy fighter and strike aircraft",
+  "nation": "Britain",
+  "wikidata": "Q831463",
+  "source": "https://en.wikipedia.org/wiki/Bristol_Beaufighter"
+ },
+ "aircraft-bristol-beaufort": {
+  "name": "Bristol Beaufort",
+  "kind": "torpedo bomber",
+  "nation": "Britain",
+  "wikidata": "Q534270",
+  "source": "https://en.wikipedia.org/wiki/Bristol_Beaufort"
+ },
+ "aircraft-bristol-blenheim": {
+  "name": "Bristol Blenheim",
+  "kind": "light bomber and night fighter",
+  "nation": "Britain",
+  "wikidata": "Q330417",
+  "source": "https://en.wikipedia.org/wiki/Bristol_Blenheim"
+ },
+ "aircraft-bristol-bombay": {
+  "name": "Bristol Bombay",
+  "kind": "British transport and bomber aircraft",
+  "nation": "Britain",
+  "wikidata": "Q917889",
+  "source": "https://en.wikipedia.org/wiki/Bristol_Bombay"
+ },
+ "aircraft-bristol-brabazon": {
+  "name": "Bristol Brabazon",
+  "kind": "British prototype airliner",
+  "nation": "Britain",
+  "wikidata": "Q917893",
+  "source": "https://en.wikipedia.org/wiki/Bristol_Brabazon"
+ },
+ "aircraft-caproni-ca-161": {
+  "name": "Caproni Ca.161",
+  "kind": "Italian high altitude record biplane",
+  "nation": "Italy",
+  "wikidata": "Q3657941",
+  "source": "https://en.wikipedia.org/wiki/Caproni_Ca.161"
+ },
+ "aircraft-china-clipper": {
+  "name": "China Clipper",
+  "kind": "Martin M 130 flying boat, NC14716",
+  "nation": "US",
+  "wikidata": "Q16258108",
+  "source": "https://en.wikipedia.org/wiki/China_Clipper",
+  "note": "The single named aircraft; the type is aircraft-martin-m-130."
+ },
+ "aircraft-consolidated-b-24-liberator": {
+  "name": "Consolidated B-24 Liberator",
+  "kind": "heavy bomber",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Consolidated_B-24_Liberator",
+  "wikidata": "Q220759",
+  "aka": [
+   "B-24"
+  ]
+ },
+ "aircraft-consolidated-b-32-dominator": {
+  "name": "Consolidated B-32 Dominator",
+  "kind": "US heavy bomber",
+  "nation": "US",
+  "wikidata": "Q1127567",
+  "source": "https://en.wikipedia.org/wiki/Consolidated_B-32_Dominator"
+ },
+ "aircraft-consolidated-c-87-liberator-express": {
+  "name": "Consolidated C-87 Liberator Express",
+  "kind": "transport version of the B-24",
+  "nation": "US",
+  "wikidata": "Q2559443",
+  "source": "https://en.wikipedia.org/wiki/Consolidated_C-87_Liberator_Express"
+ },
+ "aircraft-consolidated-pb4y-2-privateer": {
+  "name": "Consolidated PB4Y-2 Privateer",
+  "kind": "US Navy patrol bomber",
+  "nation": "US",
+  "wikidata": "Q1127585",
+  "source": "https://en.wikipedia.org/wiki/Consolidated_PB4Y-2_Privateer"
+ },
+ "aircraft-consolidated-pby-catalina": {
+  "name": "Consolidated PBY Catalina",
+  "kind": "American flying boat",
+  "nation": "US",
+  "wikidata": "Q648864",
+  "source": "https://en.wikipedia.org/wiki/Consolidated_PBY_Catalina",
+  "aka": [
+   "Black Cat"
+  ]
+ },
+ "aircraft-convair-b-36-peacemaker": {
+  "name": "Convair B-36 Peacemaker",
+  "kind": "US six engined intercontinental bomber",
+  "nation": "US",
+  "wikidata": "Q332657",
+  "source": "https://en.wikipedia.org/wiki/Convair_B-36_Peacemaker",
+  "aka": [
+   "B-36"
+  ]
+ },
+ "aircraft-curtiss-bf2c-goshawk": {
+  "name": "Curtiss BF2C Goshawk",
+  "kind": "Biplane fighter bomber, exported as the Hawk III",
+  "nation": "US",
+  "wikidata": "Q3007836",
+  "source": "https://en.wikipedia.org/wiki/Curtiss_BF2C_Goshawk",
+  "aka": [
+   "Hawk III"
+  ]
+ },
+ "aircraft-curtiss-f11c-goshawk": {
+  "name": "Curtiss Hawk II",
+  "kind": "biplane fighter",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Curtiss_F11C_Goshawk",
+  "wikidata": "Q717394",
+  "aka": [
+   "Curtiss F11C Goshawk"
+  ]
+ },
+ "aircraft-curtiss-p-40-warhawk": {
+  "name": "Curtiss P-40 Warhawk",
+  "kind": "American fighter",
+  "nation": "US",
+  "wikidata": "Q206409",
+  "source": "https://en.wikipedia.org/wiki/Curtiss_P-40_Warhawk"
+ },
+ "aircraft-curtiss-sb2c-helldiver": {
+  "name": "Curtiss SB2C Helldiver",
+  "kind": "dive bomber",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Curtiss_SB2C_Helldiver",
+  "wikidata": "Q918312",
+  "aka": [
+   "Helldiver"
+  ]
+ },
+ "aircraft-curtiss-wright-xp-55-ascender": {
+  "name": "Curtiss-Wright XP-55 Ascender",
+  "kind": "experimental canard pusher fighter",
+  "nation": "US",
+  "wikidata": "Q548865",
+  "source": "https://en.wikipedia.org/wiki/Curtiss-Wright_XP-55_Ascender"
+ },
+ "aircraft-de-havilland-comet": {
+  "name": "de Havilland Comet",
+  "kind": "jet airliner",
+  "nation": "Britain",
+  "wikidata": "Q26159",
+  "source": "https://en.wikipedia.org/wiki/De_Havilland_Comet",
+  "aka": [
+   "DH.106 Comet"
+  ]
+ },
+ "aircraft-de-havilland-dh-108": {
+  "name": "de Havilland DH 108",
+  "kind": "experimental jet",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/De_Havilland_DH_108",
+  "wikidata": "Q1050321"
+ },
+ "aircraft-de-havilland-mosquito": {
+  "name": "de Havilland Mosquito",
+  "kind": "fighter bomber",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/de_Havilland_Mosquito",
+  "wikidata": "Q221344",
+  "aka": [
+   "Mosquito"
+  ]
+ },
+ "aircraft-de-havilland-vampire": {
+  "name": "de Havilland Vampire",
+  "kind": "British jet fighter",
+  "nation": "Britain",
+  "wikidata": "Q179835",
+  "source": "https://en.wikipedia.org/wiki/De_Havilland_Vampire",
+  "aka": [
+   "Sea Vampire"
+  ],
+  "note": "'de Havilland Sea Vampire' redirects to this article."
+ },
+ "aircraft-dfs-230": {
+  "name": "DFS 230",
+  "kind": "German assault glider",
+  "nation": "Germany",
+  "wikidata": "Q681491",
+  "source": "https://en.wikipedia.org/wiki/DFS_230"
+ },
+ "aircraft-dornier-do-18": {
+  "name": "Dornier Do 18",
+  "kind": "German flying boat",
+  "nation": "Germany",
+  "wikidata": "Q697344",
+  "source": "https://en.wikipedia.org/wiki/Dornier_Do_18"
+ },
+ "aircraft-dornier-do-19": {
+  "name": "Dornier Do 19",
+  "kind": "German four engine heavy bomber prototype",
+  "nation": "Germany",
+  "wikidata": "Q589505",
+  "source": "https://en.wikipedia.org/wiki/Dornier_Do_19"
+ },
+ "aircraft-dornier-do-217": {
+  "name": "Dornier Do 217",
+  "kind": "bomber",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Dornier_Do_217",
+  "wikidata": "Q126966",
+  "aka": [
+   "Do 217"
+  ]
+ },
+ "aircraft-dornier-do-335": {
+  "name": "Dornier Do 335",
+  "kind": "German push pull heavy fighter",
+  "nation": "Germany",
+  "wikidata": "Q167286",
+  "source": "https://en.wikipedia.org/wiki/Dornier_Do_335",
+  "aka": [
+   "Do 335 Pfeil",
+   "Arrow"
+  ]
+ },
+ "aircraft-douglas-a-1-skyraider": {
+  "name": "Douglas A-1 Skyraider",
+  "kind": "carrier attack bomber",
+  "nation": "US",
+  "wikidata": "Q266066",
+  "source": "https://en.wikipedia.org/wiki/Douglas_A-1_Skyraider",
+  "aka": [
+   "AD Skyraider",
+   "XBT2D-1 Dauntless II"
+  ]
+ },
+ "aircraft-douglas-a-20-havoc": {
+  "name": "Douglas A-20 Havoc",
+  "kind": "light bomber, the Boston in RAF service",
+  "nation": "US",
+  "wikidata": "Q939344",
+  "source": "https://en.wikipedia.org/wiki/Douglas_A-20_Havoc",
+  "aka": [
+   "Boston",
+   "DB-7"
+  ]
+ },
+ "aircraft-douglas-a-26-invader": {
+  "name": "Douglas A-26 Invader",
+  "kind": "twin engine attack bomber",
+  "nation": "US",
+  "wikidata": "Q562167",
+  "source": "https://en.wikipedia.org/wiki/Douglas_A-26_Invader"
+ },
+ "aircraft-douglas-b-18-bolo": {
+  "name": "Douglas B-18 Bolo",
+  "kind": "Twin engine bomber",
+  "nation": "US",
+  "wikidata": "Q1252035",
+  "source": "https://en.wikipedia.org/wiki/Douglas_B-18_Bolo"
+ },
+ "aircraft-douglas-c-47-skytrain": {
+  "name": "Douglas C-47 Skytrain",
+  "kind": "military transport aircraft",
+  "nation": "US",
+  "wikidata": "Q714326",
+  "source": "https://en.wikipedia.org/wiki/Douglas_C-47_Skytrain",
+  "aka": [
+   "Dakota"
+  ]
+ },
+ "aircraft-douglas-c-54-skymaster": {
+  "name": "Douglas C 54 Skymaster",
+  "kind": "four engine military transport",
+  "nation": "US",
+  "wikidata": "Q1252107",
+  "source": "https://en.wikipedia.org/wiki/Douglas_C-54_Skymaster"
+ },
+ "aircraft-douglas-d-558-1-skystreak": {
+  "name": "Douglas D-558-1 Skystreak",
+  "kind": "jet research aircraft",
+  "nation": "US",
+  "wikidata": "Q1252156",
+  "source": "https://en.wikipedia.org/wiki/Douglas_D-558-1_Skystreak"
+ },
+ "aircraft-douglas-dc-2": {
+  "name": "Douglas DC-2",
+  "kind": "airliner",
+  "nation": "US",
+  "wikidata": "Q142591",
+  "source": "https://en.wikipedia.org/wiki/Douglas_DC-2"
+ },
+ "aircraft-douglas-dc-3": {
+  "name": "Douglas DC-3",
+  "kind": "airliner type",
+  "nation": "US",
+  "wikidata": "Q190211",
+  "source": "https://en.wikipedia.org/wiki/Douglas_DC-3"
+ },
+ "aircraft-douglas-dc-6": {
+  "name": "Douglas DC-6",
+  "kind": "four engine piston transport, prototype XC-112A",
+  "nation": "US",
+  "wikidata": "Q503761",
+  "source": "https://en.wikipedia.org/wiki/Douglas_DC-6",
+  "aka": [
+   "XC-112A",
+   "C-118 Liftmaster",
+   "R6D"
+  ]
+ },
+ "aircraft-douglas-sbd-dauntless": {
+  "name": "Douglas SBD Dauntless",
+  "kind": "U.S. Navy dive bomber",
+  "nation": "US",
+  "wikidata": "Q118070",
+  "source": "https://en.wikipedia.org/wiki/Douglas_SBD_Dauntless",
+  "aka": [
+   "Dauntless",
+   "SBD"
+  ]
+ },
+ "aircraft-douglas-tbd-devastator": {
+  "name": "Douglas TBD Devastator",
+  "kind": "carrier torpedo bomber",
+  "nation": "US",
+  "wikidata": "Q611939",
+  "source": "https://en.wikipedia.org/wiki/Douglas_TBD_Devastator"
+ },
+ "aircraft-english-electric-canberra": {
+  "name": "English Electric Canberra",
+  "kind": "jet medium bomber",
+  "nation": "Britain",
+  "wikidata": "Q520964",
+  "source": "https://en.wikipedia.org/wiki/English_Electric_Canberra"
+ },
+ "aircraft-enola-gay": {
+  "name": "Enola Gay",
+  "kind": "single named B-29 Superfortress",
+  "nation": "US",
+  "wikidata": "Q204424",
+  "source": "https://en.wikipedia.org/wiki/Enola_Gay"
+ },
+ "aircraft-fairey-albacore": {
+  "name": "Fairey Albacore",
+  "kind": "carrier aircraft",
+  "nation": "Britain",
+  "wikidata": "Q1393140",
+  "source": "https://en.wikipedia.org/wiki/Fairey_Albacore"
+ },
+ "aircraft-fairey-barracuda": {
+  "name": "Fairey Barracuda",
+  "kind": "carrier torpedo and dive bomber",
+  "nation": "Britain",
+  "wikidata": "Q671838",
+  "source": "https://en.wikipedia.org/wiki/Fairey_Barracuda"
+ },
+ "aircraft-fairey-battle": {
+  "name": "Fairey Battle",
+  "kind": "British single engine light bomber",
+  "nation": "Britain",
+  "wikidata": "Q1330167",
+  "source": "https://en.wikipedia.org/wiki/Fairey_Battle"
+ },
+ "aircraft-fairey-firefly": {
+  "name": "Fairey Firefly",
+  "kind": "carrier fighter and reconnaissance aircraft",
+  "nation": "Britain",
+  "wikidata": "Q994007",
+  "source": "https://en.wikipedia.org/wiki/Fairey_Firefly"
+ },
+ "aircraft-fairey-swordfish": {
+  "name": "Fairey Swordfish",
+  "kind": "British biplane torpedo bomber",
+  "nation": "Britain",
+  "wikidata": "Q674079",
+  "source": "https://en.wikipedia.org/wiki/Fairey_Swordfish"
+ },
+ "aircraft-farman-f-220": {
+  "name": "Farman F.220",
+  "kind": "four engine bomber and airliner family",
+  "nation": "France",
+  "wikidata": "Q1396812",
+  "source": "https://en.wikipedia.org/wiki/Farman_F.220",
+  "note": "Includes the NC.223.4 Jules Verne"
+ },
+ "aircraft-flak-bait": {
+  "name": "Flak-Bait",
+  "kind": "B-26B Marauder, single aircraft",
+  "nation": "US",
+  "wikidata": "Q5457073",
+  "source": "https://en.wikipedia.org/wiki/Flak-Bait"
+ },
+ "aircraft-focke-achgelis-fa-330": {
+  "name": "Focke-Achgelis Fa 330",
+  "kind": "rotor kite towed by U-boats",
+  "nation": "Germany",
+  "wikidata": "Q564171",
+  "source": "https://en.wikipedia.org/wiki/Focke-Achgelis_Fa_330",
+  "aka": [
+   "Bachstelze"
+  ]
+ },
+ "aircraft-focke-wulf-fw-190": {
+  "name": "Focke-Wulf Fw 190",
+  "kind": "German fighter",
+  "nation": "Germany",
+  "wikidata": "Q34775",
+  "source": "https://en.wikipedia.org/wiki/Focke-Wulf_Fw_190"
+ },
+ "aircraft-focke-wulf-fw-200-condor": {
+  "name": "Focke-Wulf Fw 200 Condor",
+  "kind": "long range bomber",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Focke-Wulf_Fw_200_Condor",
+  "wikidata": "Q157485",
+  "aka": [
+   "Fw 200"
+  ]
+ },
+ "aircraft-focke-wulf-fw-61": {
+  "name": "Focke-Wulf Fw 61",
+  "kind": "twin rotor helicopter",
+  "nation": "Germany",
+  "wikidata": "Q1435037",
+  "source": "https://en.wikipedia.org/wiki/Focke-Wulf_Fw_61"
+ },
+ "aircraft-fokker-d-viii": {
+  "name": "Fokker D.VIII",
+  "kind": "WWI fighter",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Fokker_D.VIII",
+  "wikidata": "Q705192"
+ },
+ "aircraft-fokker-d-xxi": {
+  "name": "Fokker D.XXI",
+  "kind": "Dutch built fighter flown by Finland",
+  "nation": "Netherlands",
+  "wikidata": "Q838601",
+  "source": "https://en.wikipedia.org/wiki/Fokker_D.XXI"
+ },
+ "aircraft-gloster-e-28-39": {
+  "name": "Gloster E.28/39",
+  "kind": "British experimental jet aircraft",
+  "nation": "Britain",
+  "wikidata": null,
+  "source": "https://en.wikipedia.org/wiki/Gloster_E.28/39",
+  "aka": [
+   "Gloster Whittle",
+   "Gloster Pioneer"
+  ]
+ },
+ "aircraft-gloster-meteor": {
+  "name": "Gloster Meteor",
+  "kind": "jet fighter",
+  "nation": "Britain",
+  "wikidata": "Q140318",
+  "source": "https://en.wikipedia.org/wiki/Gloster_Meteor"
+ },
+ "aircraft-grumman-f4f-wildcat": {
+  "name": "Grumman F4F Wildcat",
+  "kind": "carrier fighter",
+  "nation": "US",
+  "wikidata": "Q334612",
+  "source": "https://en.wikipedia.org/wiki/Grumman_F4F_Wildcat"
+ },
+ "aircraft-grumman-f6f-hellcat": {
+  "name": "Grumman F6F Hellcat",
+  "kind": "carrier fighter",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Grumman_F6F_Hellcat",
+  "wikidata": "Q465903",
+  "aka": [
+   "Hellcat"
+  ]
+ },
+ "aircraft-grumman-tbf-avenger": {
+  "name": "Grumman TBF Avenger",
+  "kind": "American carrier torpedo bomber",
+  "nation": "US",
+  "wikidata": "Q734103",
+  "source": "https://en.wikipedia.org/wiki/Grumman_TBF_Avenger",
+  "aka": [
+   "TBM Avenger"
+  ]
+ },
+ "aircraft-handley-page-h-p-42": {
+  "name": "Handley Page H.P.42",
+  "kind": "four engine biplane airliner",
+  "nation": "Britain",
+  "wikidata": "Q1326565",
+  "source": "https://en.wikipedia.org/wiki/Handley_Page_H.P.42"
+ },
+ "aircraft-handley-page-halifax": {
+  "name": "Handley Page Halifax",
+  "kind": "heavy bomber",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/Handley_Page_Halifax",
+  "wikidata": "Q502034",
+  "aka": [
+   "Halifax"
+  ]
+ },
+ "aircraft-handley-page-hampden": {
+  "name": "Handley Page Hampden",
+  "kind": "twin engine medium bomber",
+  "nation": "Britain",
+  "wikidata": "Q617016",
+  "source": "https://en.wikipedia.org/wiki/Handley_Page_Hampden"
+ },
+ "aircraft-handley-page-heyford": {
+  "name": "Handley Page Heyford",
+  "kind": "British biplane bomber",
+  "nation": "Britain",
+  "wikidata": "Q1499781",
+  "source": "https://en.wikipedia.org/wiki/Handley_Page_Heyford"
+ },
+ "aircraft-hawker-audax": {
+  "name": "Hawker Audax",
+  "kind": "biplane army cooperation aircraft",
+  "nation": "Britain",
+  "wikidata": "Q1591653",
+  "source": "https://en.wikipedia.org/wiki/Hawker_Audax"
+ },
+ "aircraft-hawker-hurricane": {
+  "name": "Hawker Hurricane",
+  "kind": "British single seat fighter",
+  "nation": "Britain",
+  "wikidata": "Q194251",
+  "source": "https://en.wikipedia.org/wiki/Hawker_Hurricane"
+ },
+ "aircraft-hawker-typhoon": {
+  "name": "Hawker Typhoon",
+  "kind": "fighter bomber",
+  "nation": "Britain",
+  "wikidata": "Q662123",
+  "source": "https://en.wikipedia.org/wiki/Hawker_Typhoon"
+ },
+ "aircraft-heinkel-he-100": {
+  "name": "Heinkel He 100",
+  "kind": "German prototype fighter, 1939 world speed record holder",
+  "nation": "Germany",
+  "wikidata": "Q642550",
+  "source": "https://en.wikipedia.org/wiki/Heinkel_He_100",
+  "aka": [
+   "He 112U"
+  ]
+ },
+ "aircraft-heinkel-he-111": {
+  "name": "Heinkel He 111",
+  "kind": "bomber",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Heinkel_He_111",
+  "wikidata": "Q154532",
+  "aka": [
+   "He 111"
+  ]
+ },
+ "aircraft-heinkel-he-162-volksjager": {
+  "name": "Heinkel He 162 Volksjäger",
+  "kind": "single jet light fighter",
+  "nation": "Germany",
+  "wikidata": "Q156878",
+  "source": "https://en.wikipedia.org/wiki/Heinkel_He_162_Volksj%C3%A4ger",
+  "aka": [
+   "He 162",
+   "Heinkel He 162",
+   "Spatz"
+  ]
+ },
+ "aircraft-heinkel-he-176": {
+  "name": "Heinkel He 176",
+  "kind": "German experimental rocket aircraft",
+  "nation": "Germany",
+  "wikidata": "Q704025",
+  "source": "https://en.wikipedia.org/wiki/Heinkel_He_176"
+ },
+ "aircraft-heinkel-he-177-greif": {
+  "name": "Heinkel He 177",
+  "kind": "heavy bomber",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Heinkel_He_177_Greif",
+  "wikidata": "Q316321"
+ },
+ "aircraft-heinkel-he-178": {
+  "name": "Heinkel He 178",
+  "kind": "experimental jet aircraft",
+  "nation": "Germany",
+  "wikidata": "Q161540",
+  "source": "https://en.wikipedia.org/wiki/Heinkel_He_178"
+ },
+ "aircraft-heinkel-he-280": {
+  "name": "Heinkel He 280",
+  "kind": "jet fighter prototype",
+  "nation": "Germany",
+  "wikidata": "Q698685",
+  "source": "https://en.wikipedia.org/wiki/Heinkel_He_280"
+ },
+ "aircraft-hot-stuff-aircraft": {
+  "name": "Hot Stuff",
+  "kind": "B-24D Liberator 41-23728, 93rd Bomb Group",
+  "nation": "US",
+  "wikidata": "Q28457962",
+  "source": "https://en.wikipedia.org/wiki/Hot_Stuff_(aircraft)"
+ },
+ "aircraft-hughes-h-4-hercules": {
+  "name": "Hughes H-4 Hercules",
+  "kind": "flying boat",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Hughes_H-4_Hercules",
+  "wikidata": "Q667443",
+  "aka": [
+   "Spruce Goose"
+  ]
+ },
+ "aircraft-ilyushin-db-3": {
+  "name": "Ilyushin DB-3",
+  "kind": "Soviet twin engine bomber",
+  "nation": "Soviet Union",
+  "wikidata": "Q1112841",
+  "source": "https://en.wikipedia.org/wiki/Ilyushin_DB-3"
+ },
+ "aircraft-interstate-tdr": {
+  "name": "Interstate TDR-1",
+  "kind": "assault drone",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Interstate_TDR",
+  "wikidata": "Q564117",
+  "aka": [
+   "TDR-1"
+  ]
+ },
+ "aircraft-junkers-ju-52": {
+  "name": "Junkers Ju 52",
+  "kind": "German three engine transport aircraft",
+  "nation": "Germany",
+  "wikidata": "Q26066",
+  "source": "https://en.wikipedia.org/wiki/Junkers_Ju_52"
+ },
+ "aircraft-junkers-ju-87": {
+  "name": "Junkers Ju 87 Stuka",
+  "kind": "dive bomber",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Junkers_Ju_87",
+  "wikidata": "Q26795",
+  "aka": [
+   "Stuka"
+  ]
+ },
+ "aircraft-junkers-ju-88": {
+  "name": "Junkers Ju 88",
+  "kind": "bomber",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Junkers_Ju_88",
+  "wikidata": "Q155661",
+  "aka": [
+   "Ju 88"
+  ]
+ },
+ "aircraft-k-class-blimp": {
+  "name": "K-class blimp",
+  "kind": "Navy patrol airship type",
+  "nation": "US",
+  "wikidata": "Q564098",
+  "source": "https://en.wikipedia.org/wiki/K-class_blimp",
+  "aka": [
+   "K-ship"
+  ]
+ },
+ "aircraft-kaleva-airplane": {
+  "name": "Kaleva",
+  "kind": "Aero O/Y Junkers Ju 52 airliner, OH-ALL",
+  "nation": "Finland",
+  "wikidata": "Q1464299",
+  "source": "https://en.wikipedia.org/wiki/Kaleva_(airplane)",
+  "aka": [
+   "Aero Flight 1631"
+  ]
+ },
+ "aircraft-kamikaze-1937-aircraft": {
+  "name": "Kamikaze (J-BAAI)",
+  "kind": "single named record flight airplane, Ki-15 prototype",
+  "nation": "Japan",
+  "wikidata": "Q16248496",
+  "source": "https://en.wikipedia.org/wiki/Kamikaze_(1937_aircraft)",
+  "aka": [
+   "Kamikaze-go"
+  ]
+ },
+ "aircraft-kawanishi-h8k": {
+  "name": "Kawanishi H8K",
+  "kind": "Imperial Japanese Navy flying boat",
+  "nation": "Japan",
+  "wikidata": "Q696220",
+  "source": "https://en.wikipedia.org/wiki/Kawanishi_H8K",
+  "aka": [
+   "Emily"
+  ]
+ },
+ "aircraft-kawanishi-n1k": {
+  "name": "Kawanishi N1K",
+  "kind": "fighter, Shiden and Shiden Kai",
+  "nation": "Japan",
+  "wikidata": "Q843413",
+  "source": "https://en.wikipedia.org/wiki/Kawanishi_N1K",
+  "aka": [
+   "George",
+   "Shiden Kai"
+  ]
+ },
+ "aircraft-kawasaki-ki-48": {
+  "name": "Kawasaki Ki 48",
+  "kind": "Imperial Japanese Army twin engine light bomber",
+  "nation": "Japan",
+  "wikidata": "Q703175",
+  "source": "https://en.wikipedia.org/wiki/Kawasaki_Ki-48",
+  "aka": [
+   "Lily"
+  ]
+ },
+ "aircraft-l-8": {
+  "name": "L-8",
+  "kind": "US Navy blimp, the 1942 ghost blimp",
+  "nation": "US",
+  "wikidata": "Q27902725",
+  "source": "https://en.wikipedia.org/wiki/L-8",
+  "note": "Single named airship; earns its own entity because the story is about her."
+ },
+ "aircraft-lady-be-good-aircraft": {
+  "name": "Lady Be Good (aircraft)",
+  "kind": "B-24D Liberator lost in the Libyan desert in April 1943",
+  "nation": "US",
+  "wikidata": "Q432131",
+  "source": "https://en.wikipedia.org/wiki/Lady_Be_Good_(aircraft)",
+  "aka": [
+   "Lady Be Good"
+  ]
+ },
+ "aircraft-lockheed-constellation": {
+  "name": "Lockheed Constellation",
+  "kind": "four engine airliner and transport",
+  "nation": "US",
+  "wikidata": "Q677122",
+  "source": "https://en.wikipedia.org/wiki/Lockheed_Constellation",
+  "aka": [
+   "C-69",
+   "Connie"
+  ]
+ },
+ "aircraft-lockheed-hudson": {
+  "name": "Lockheed Hudson",
+  "kind": "light bomber and transport",
+  "nation": "US",
+  "wikidata": "Q1328822",
+  "source": "https://en.wikipedia.org/wiki/Lockheed_Hudson"
+ },
+ "aircraft-lockheed-p-38-lightning": {
+  "name": "Lockheed P-38 Lightning",
+  "kind": "fighter",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Lockheed_P-38_Lightning",
+  "wikidata": "Q172913",
+  "aka": [
+   "P-38"
+  ]
+ },
+ "aircraft-lockheed-p-80-shooting-star": {
+  "name": "Lockheed P-80 Shooting Star",
+  "kind": "jet fighter",
+  "nation": "US",
+  "wikidata": "Q751759",
+  "source": "https://en.wikipedia.org/wiki/Lockheed_P-80_Shooting_Star",
+  "aka": [
+   "XP-80",
+   "Lulu-Belle",
+   "F-80"
+  ]
+ },
+ "aircraft-lockheed-r6v-constitution": {
+  "name": "Lockheed R6V Constitution",
+  "kind": "double deck Navy transport",
+  "nation": "US",
+  "wikidata": "Q1807103",
+  "source": "https://en.wikipedia.org/wiki/Lockheed_R6V_Constitution",
+  "aka": [
+   "XR6O Constitution",
+   "R6O"
+  ]
+ },
+ "aircraft-lockheed-ventura": {
+  "name": "Lockheed Ventura",
+  "kind": "patrol bomber",
+  "nation": "US",
+  "wikidata": "Q1867622",
+  "source": "https://en.wikipedia.org/wiki/Lockheed_Ventura"
+ },
+ "aircraft-lucky-lady-ii": {
+  "name": "Lucky Lady II",
+  "kind": "B-50A, first nonstop round the world flight",
+  "nation": "US",
+  "wikidata": "Q1873715",
+  "source": "https://en.wikipedia.org/wiki/Lucky_Lady_II"
+ },
+ "aircraft-lz-129-hindenburg": {
+  "name": "LZ 129 Hindenburg",
+  "kind": "German passenger airship",
+  "nation": "Germany",
+  "wikidata": "Q217964",
+  "source": "https://en.wikipedia.org/wiki/LZ_129_Hindenburg",
+  "aka": [
+   "Hindenburg"
+  ]
+ },
+ "aircraft-lz-130-graf-zeppelin": {
+  "name": "LZ 130 Graf Zeppelin",
+  "kind": "Hindenburg class rigid airship",
+  "nation": "Germany",
+  "wikidata": "Q557119",
+  "source": "https://en.wikipedia.org/wiki/LZ_130_Graf_Zeppelin",
+  "aka": [
+   "Graf Zeppelin II"
+  ]
+ },
+ "aircraft-macchi-c-202-folgore": {
+  "name": "Macchi C.202 Folgore",
+  "kind": "Italian fighter",
+  "nation": "Italy",
+  "wikidata": "Q5975",
+  "source": "https://en.wikipedia.org/wiki/Macchi_C.202_Folgore"
+ },
+ "aircraft-macchi-m-c-72": {
+  "name": "Macchi M.C.72",
+  "kind": "experimental racing floatplane",
+  "nation": "Italy",
+  "wikidata": "Q1066331",
+  "source": "https://en.wikipedia.org/wiki/Macchi_M.C.72"
+ },
+ "aircraft-martin-b-26-marauder": {
+  "name": "Martin B-26 Marauder",
+  "kind": "American twin engine medium bomber",
+  "nation": "US",
+  "wikidata": "Q836438",
+  "source": "https://en.wikipedia.org/wiki/Martin_B-26_Marauder"
+ },
+ "aircraft-martin-jrm-mars": {
+  "name": "Martin JRM Mars",
+  "kind": "U.S. Navy four engine transport flying boat",
+  "nation": "US",
+  "wikidata": "Q1501559",
+  "source": "https://en.wikipedia.org/wiki/Martin_JRM_Mars",
+  "aka": [
+   "Mars",
+   "Caroline Mars",
+   "Marshall Mars"
+  ]
+ },
+ "aircraft-martin-m-130": {
+  "name": "Martin M-130",
+  "kind": "flying boat airliner",
+  "nation": "US",
+  "wikidata": "Q615402",
+  "source": "https://en.wikipedia.org/wiki/Martin_M-130",
+  "note": "Philippine Clipper (NC14715) crashed 21 Jan 1943, Pan Am Flight V-1104"
+ },
+ "aircraft-martin-pbm-mariner": {
+  "name": "Martin PBM Mariner",
+  "kind": "American patrol flying boat",
+  "nation": "US",
+  "wikidata": "Q1538864",
+  "source": "https://en.wikipedia.org/wiki/Martin_PBM_Mariner"
+ },
+ "aircraft-mcdonnell-fh-phantom": {
+  "name": "McDonnell XFD-1 Phantom",
+  "kind": "jet fighter",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/McDonnell_FH_Phantom",
+  "wikidata": "Q550166",
+  "aka": [
+   "FD-1 Phantom",
+   "FH Phantom"
+  ]
+ },
+ "aircraft-mcdonnell-xf-85-goblin": {
+  "name": "McDonnell XF-85 Goblin",
+  "kind": "experimental parasite fighter",
+  "nation": "US",
+  "wikidata": "Q605165",
+  "source": "https://en.wikipedia.org/wiki/McDonnell_XF-85_Goblin"
+ },
+ "aircraft-memphis-belle-aircraft": {
+  "name": "Memphis Belle",
+  "kind": "B-17F Flying Fortress",
+  "nation": "US",
+  "wikidata": "Q1920153",
+  "source": "https://en.wikipedia.org/wiki/Memphis_Belle_(aircraft)"
+ },
+ "aircraft-messerschmitt-bf-108-taifun": {
+  "name": "Messerschmitt Bf 108 Taifun",
+  "kind": "liaison and touring aircraft",
+  "nation": "Germany",
+  "wikidata": "Q39942",
+  "source": "https://en.wikipedia.org/wiki/Messerschmitt_Bf_108_Taifun",
+  "aka": [
+   "Bf 108"
+  ]
+ },
+ "aircraft-messerschmitt-bf-109": {
+  "name": "Messerschmitt Bf 109",
+  "kind": "German single engine fighter",
+  "nation": "Germany",
+  "wikidata": "Q155639",
+  "source": "https://en.wikipedia.org/wiki/Messerschmitt_Bf_109",
+  "aka": [
+   "Me 109"
+  ]
+ },
+ "aircraft-messerschmitt-bf-110": {
+  "name": "Messerschmitt Bf 110",
+  "kind": "German twin engine heavy fighter",
+  "nation": "Germany",
+  "wikidata": "Q155642",
+  "source": "https://en.wikipedia.org/wiki/Messerschmitt_Bf_110"
+ },
+ "aircraft-messerschmitt-me-163-komet": {
+  "name": "Messerschmitt Me 163 Komet",
+  "kind": "German rocket powered interceptor",
+  "nation": "Germany",
+  "wikidata": "Q155360",
+  "source": "https://en.wikipedia.org/wiki/Messerschmitt_Me_163_Komet",
+  "aka": [
+   "Me 163"
+  ]
+ },
+ "aircraft-messerschmitt-me-210": {
+  "name": "Messerschmitt Me 210",
+  "kind": "heavy fighter",
+  "nation": "Germany",
+  "source": "https://en.wikipedia.org/wiki/Messerschmitt_Me_210",
+  "wikidata": "Q313597"
+ },
+ "aircraft-messerschmitt-me-262": {
+  "name": "Messerschmitt Me 262",
+  "kind": "twin jet fighter",
+  "nation": "Germany",
+  "wikidata": "Q140254",
+  "source": "https://en.wikipedia.org/wiki/Messerschmitt_Me_262",
+  "aka": [
+   "Schwalbe"
+  ]
+ },
+ "aircraft-mikoyan-gurevich-mig-9": {
+  "name": "Mikoyan-Gurevich MiG-9",
+  "kind": "Soviet jet fighter",
+  "nation": "Soviet Union",
+  "wikidata": "Q270839",
+  "source": "https://en.wikipedia.org/wiki/Mikoyan-Gurevich_MiG-9",
+  "aka": [
+   "I-300"
+  ]
+ },
+ "aircraft-mistel": {
+  "name": "Mistel",
+  "kind": "German composite aircraft, unmanned bomber with fighter on top",
+  "nation": "Germany",
+  "wikidata": "Q626371",
+  "source": "https://en.wikipedia.org/wiki/Mistel"
+ },
+ "aircraft-mitsubishi-a6m-zero": {
+  "name": "Mitsubishi A6M Zero",
+  "kind": "fighter",
+  "nation": "Japan",
+  "source": "https://en.wikipedia.org/wiki/Mitsubishi_A6M_Zero",
+  "wikidata": "Q40156",
+  "aka": [
+   "Zero"
+  ]
+ },
+ "aircraft-mitsubishi-a7m-reppu": {
+  "name": "Mitsubishi A7M Reppu",
+  "kind": "Japanese Navy carrier fighter prototype, the Zero's planned successor",
+  "nation": "Japan",
+  "wikidata": "Q696575",
+  "source": "https://en.wikipedia.org/wiki/Mitsubishi_A7M_Repp%C5%AB",
+  "aka": [
+   "A7M",
+   "Reppū",
+   "Sam"
+  ]
+ },
+ "aircraft-mitsubishi-g3m": {
+  "name": "Mitsubishi G3M",
+  "kind": "navy medium bomber",
+  "nation": "Japan",
+  "wikidata": "Q696356",
+  "source": "https://en.wikipedia.org/wiki/Mitsubishi_G3M",
+  "aka": [
+   "Nell"
+  ]
+ },
+ "aircraft-mitsubishi-g4m": {
+  "name": "Mitsubishi G4M Betty",
+  "kind": "medium bomber",
+  "nation": "Japan",
+  "source": "https://en.wikipedia.org/wiki/Mitsubishi_G4M",
+  "wikidata": "Q697583",
+  "aka": [
+   "Betty"
+  ]
+ },
+ "aircraft-mitsubishi-j8m-shusui": {
+  "name": "Mitsubishi J8M Shusui",
+  "kind": "Japanese rocket powered interceptor",
+  "nation": "Japan",
+  "wikidata": "Q118964",
+  "source": "https://en.wikipedia.org/wiki/Mitsubishi_J8M_Sh%C5%ABsui",
+  "aka": [
+   "Shūsui",
+   "Ki-200"
+  ]
+ },
+ "aircraft-mitsubishi-ki-15": {
+  "name": "Mitsubishi Ki-15",
+  "kind": "Japanese reconnaissance aircraft",
+  "nation": "Japan",
+  "wikidata": "Q76843",
+  "source": "https://en.wikipedia.org/wiki/Mitsubishi_Ki-15",
+  "aka": [
+   "Karigane"
+  ]
+ },
+ "aircraft-mitsubishi-ki-21": {
+  "name": "Mitsubishi Ki-21",
+  "kind": "Japanese twin engine bomber",
+  "nation": "Japan",
+  "wikidata": "Q1253358",
+  "source": "https://en.wikipedia.org/wiki/Mitsubishi_Ki-21",
+  "aka": [
+   "Sally"
+  ]
+ },
+ "aircraft-nakajima-b6n-tenzan": {
+  "name": "Nakajima B6N Jill",
+  "kind": "torpedo bomber",
+  "nation": "Japan",
+  "source": "https://en.wikipedia.org/wiki/Nakajima_B6N_Tenzan",
+  "wikidata": "Q696483",
+  "aka": [
+   "Jill"
+  ]
+ },
+ "aircraft-nakajima-c6n-saiun": {
+  "name": "Nakajima C6N Myrt",
+  "kind": "reconnaissance aircraft",
+  "nation": "Japan",
+  "source": "https://en.wikipedia.org/wiki/Nakajima_C6N_Saiun",
+  "wikidata": "Q650283",
+  "aka": [
+   "Myrt"
+  ]
+ },
+ "aircraft-nakajima-ki-115-tsurugi": {
+  "name": "Nakajima Ki-115 Tsurugi",
+  "kind": "Japanese Army special attack aircraft",
+  "nation": "Japan",
+  "wikidata": "Q2734245",
+  "source": "https://en.wikipedia.org/wiki/Nakajima_Ki-115_Tsurugi",
+  "aka": [
+   "Ki-115",
+   "Tsurugi"
+  ]
+ },
+ "aircraft-nakajima-kikka": {
+  "name": "Nakajima Kikka",
+  "kind": "Japanese twin jet attack aircraft prototype",
+  "nation": "Japan",
+  "wikidata": "Q534773",
+  "source": "https://en.wikipedia.org/wiki/Nakajima_Kikka"
+ },
+ "aircraft-noorduyn-norseman": {
+  "name": "Noorduyn Norseman",
+  "kind": "utility transport (UC-64 in USAAF service)",
+  "nation": "Canada",
+  "wikidata": "Q535726",
+  "source": "https://en.wikipedia.org/wiki/Noorduyn_Norseman",
+  "aka": [
+   "UC-64 Norseman"
+  ]
+ },
+ "aircraft-north-american-b-25-mitchell": {
+  "name": "North American B-25 Mitchell",
+  "kind": "medium bomber",
+  "nation": "United States",
+  "source": "https://en.wikipedia.org/wiki/North_American_B-25_Mitchell",
+  "wikidata": "Q502117",
+  "aka": [
+   "B-25"
+  ]
+ },
+ "aircraft-north-american-f-86-sabre": {
+  "name": "North American F 86 Sabre",
+  "kind": "jet fighter",
+  "nation": "US",
+  "wikidata": "Q153826",
+  "source": "https://en.wikipedia.org/wiki/North_American_F-86_Sabre",
+  "aka": [
+   "F 86 Sabre"
+  ]
+ },
+ "aircraft-north-american-p-51-mustang": {
+  "name": "North American P-51 Mustang",
+  "kind": "fighter aircraft",
+  "nation": "US",
+  "wikidata": "Q192075",
+  "source": "https://en.wikipedia.org/wiki/North_American_P-51_Mustang",
+  "aka": [
+   "P-51",
+   "Mustang",
+   "P-51B"
+  ]
+ },
+ "aircraft-north-american-t-6-texan": {
+  "name": "North American T-6 Texan",
+  "kind": "single engine advanced trainer",
+  "nation": "US",
+  "wikidata": "Q40021",
+  "source": "https://en.wikipedia.org/wiki/North_American_T-6_Texan",
+  "aka": [
+   "AT-6",
+   "Harvard"
+  ]
+ },
+ "aircraft-northrop-f-89-scorpion": {
+  "name": "Northrop F-89 Scorpion",
+  "kind": "Jet all weather interceptor",
+  "nation": "US",
+  "wikidata": "Q842481",
+  "source": "https://en.wikipedia.org/wiki/Northrop_F-89_Scorpion",
+  "aka": [
+   "XP-89",
+   "XF-89"
+  ]
+ },
+ "aircraft-northrop-p-61-black-widow": {
+  "name": "Northrop P-61 Black Widow",
+  "kind": "Night fighter",
+  "nation": "US",
+  "wikidata": "Q913657",
+  "source": "https://en.wikipedia.org/wiki/Northrop_P-61_Black_Widow"
+ },
+ "aircraft-northrop-yb-49": {
+  "name": "Northrop YB-49",
+  "kind": "jet flying wing bomber prototype",
+  "nation": "US",
+  "wikidata": "Q1194075",
+  "source": "https://en.wikipedia.org/wiki/Northrop_YB-49"
+ },
+ "aircraft-osoaviakhim-1": {
+  "name": "Osoaviakhim-1",
+  "kind": "Soviet stratospheric balloon",
+  "nation": "Soviet Union",
+  "wikidata": "Q4338183",
+  "source": "https://en.wikipedia.org/wiki/Osoaviakhim-1"
+ },
+ "aircraft-pacific-clipper": {
+  "name": "Pacific Clipper",
+  "kind": "Pan American Boeing 314 flying boat, first commercial round the world flight",
+  "nation": "US",
+  "wikidata": "Q7122350",
+  "source": "https://en.wikipedia.org/wiki/Pacific_Clipper"
+ },
+ "aircraft-piaggio-p-108": {
+  "name": "Piaggio P.108",
+  "kind": "Italian four engine heavy bomber",
+  "nation": "Italy",
+  "wikidata": "Q1540052",
+  "source": "https://en.wikipedia.org/wiki/Piaggio_P.108"
+ },
+ "aircraft-piasecki-pv-2": {
+  "name": "Piasecki PV-2",
+  "kind": "experimental single rotor helicopter",
+  "nation": "US",
+  "wikidata": "Q3012908",
+  "source": "https://en.wikipedia.org/wiki/Piasecki_PV-2"
+ },
+ "aircraft-piper-j-3-cub": {
+  "name": "Piper J-3 Cub",
+  "kind": "light aircraft, US Army L-4 Grasshopper",
+  "nation": "US",
+  "wikidata": "Q1162019",
+  "source": "https://en.wikipedia.org/wiki/Piper_J-3_Cub"
+ },
+ "aircraft-polikarpov-i-5": {
+  "name": "Polikarpov I-5",
+  "kind": "Soviet biplane fighter",
+  "nation": "Soviet Union",
+  "wikidata": "Q1188481",
+  "source": "https://en.wikipedia.org/wiki/Polikarpov_I-5"
+ },
+ "aircraft-pzl-p-11": {
+  "name": "PZL P.11",
+  "kind": "Polish fighter aircraft",
+  "nation": "Poland",
+  "wikidata": "Q826709",
+  "source": "https://en.wikipedia.org/wiki/PZL_P.11"
+ },
+ "aircraft-pzl-p-24": {
+  "name": "PZL P.24",
+  "kind": "fighter",
+  "nation": "Poland",
+  "wikidata": "Q1050716",
+  "source": "https://en.wikipedia.org/wiki/PZL_P.24",
+  "note": "Flown by the Greek air force in 1940"
+ },
+ "aircraft-republic-p-47-thunderbolt": {
+  "name": "Republic P-47 Thunderbolt",
+  "kind": "fighter",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Republic_P-47_Thunderbolt",
+  "wikidata": "Q207089",
+  "aka": [
+   "P-47",
+   "Thunderbolt"
+  ]
+ },
+ "aircraft-ryan-fr-fireball": {
+  "name": "Ryan FR-1 Fireball",
+  "kind": "mixed power fighter",
+  "nation": "US",
+  "source": "https://en.wikipedia.org/wiki/Ryan_FR_Fireball",
+  "wikidata": "Q1629446",
+  "aka": [
+   "FR-1 Fireball"
+  ]
+ },
+ "aircraft-savoia-marchetti-s-55": {
+  "name": "Savoia-Marchetti S.55",
+  "kind": "twin hull flying boat",
+  "nation": "Italy",
+  "wikidata": "Q1620128",
+  "source": "https://en.wikipedia.org/wiki/Savoia-Marchetti_S.55"
+ },
+ "aircraft-savoia-marchetti-sm-79-sparviero": {
+  "name": "Savoia-Marchetti SM.79 Sparviero",
+  "kind": "Italian trimotor bomber and torpedo bomber",
+  "nation": "Italy",
+  "wikidata": "Q1146174",
+  "source": "https://en.wikipedia.org/wiki/Savoia-Marchetti_SM.79_Sparviero",
+  "aka": [
+   "SM.79"
+  ]
+ },
+ "aircraft-short-empire": {
+  "name": "Short Empire",
+  "kind": "flying boat airliner",
+  "nation": "Britain",
+  "wikidata": "Q1371974",
+  "source": "https://en.wikipedia.org/wiki/Short_Empire"
+ },
+ "aircraft-short-stirling": {
+  "name": "Short Stirling",
+  "kind": "heavy bomber",
+  "nation": "Britain",
+  "wikidata": "Q875139",
+  "source": "https://en.wikipedia.org/wiki/Short_Stirling"
+ },
+ "aircraft-short-sunderland": {
+  "name": "Short Sunderland",
+  "kind": "flying boat patrol bomber",
+  "nation": "Britain",
+  "wikidata": "Q617547",
+  "source": "https://en.wikipedia.org/wiki/Short_Sunderland"
+ },
+ "aircraft-sikorsky-h-5": {
+  "name": "Sikorsky H-5",
+  "kind": "helicopter",
+  "nation": "US",
+  "wikidata": "Q1810661",
+  "source": "https://en.wikipedia.org/wiki/Sikorsky_H-5",
+  "aka": [
+   "Sikorsky S-51",
+   "R-5",
+   "HO3S"
+  ]
+ },
+ "aircraft-sikorsky-r-4": {
+  "name": "Sikorsky R-4",
+  "kind": "helicopter",
+  "nation": "US",
+  "wikidata": "Q564179",
+  "source": "https://en.wikipedia.org/wiki/Sikorsky_R-4",
+  "aka": [
+   "HNS-1 Hoverfly"
+  ]
+ },
+ "aircraft-stinson-reliant": {
+  "name": "Stinson Reliant",
+  "kind": "light utility monoplane",
+  "nation": "US",
+  "wikidata": "Q1808822",
+  "source": "https://en.wikipedia.org/wiki/Stinson_Reliant"
+ },
+ "aircraft-straight-flush": {
+  "name": "Straight Flush",
+  "kind": "509th Composite Group Silverplate B-29",
+  "nation": "US",
+  "wikidata": "Q7621009",
+  "source": "https://en.wikipedia.org/wiki/Straight_Flush",
+  "note": "A single named aircraft; its own entity because the Tokyo pumpkin bomb story is about its mission."
+ },
+ "aircraft-supermarine-spitfire": {
+  "name": "Supermarine Spitfire",
+  "kind": "fighter",
+  "nation": "Britain",
+  "source": "https://en.wikipedia.org/wiki/Supermarine_Spitfire",
+  "wikidata": "Q29190",
+  "aka": [
+   "Spitfire"
+  ]
+ },
+ "aircraft-supermarine-spitfire-prototype-k5054": {
+  "name": "Supermarine Spitfire prototype K5054",
+  "kind": "single aircraft, the Spitfire prototype",
+  "nation": "Britain",
+  "wikidata": "Q55634256",
+  "source": "https://en.wikipedia.org/wiki/Supermarine_Spitfire_prototype_K5054",
+  "aka": [
+   "K5054",
+   "Vickers-Supermarine Type 300"
+  ]
+ },
+ "aircraft-tupolev-ant-20": {
+  "name": "Tupolev ANT-20",
+  "kind": "eight engine Soviet propaganda airliner",
+  "nation": "Soviet Union",
+  "wikidata": "Q433102",
+  "source": "https://en.wikipedia.org/wiki/Tupolev_ANT-20",
+  "aka": [
+   "Maxim Gorky"
+  ]
+ },
+ "aircraft-tupolev-ant-25": {
+  "name": "Tupolev ANT-25",
+  "kind": "Soviet long range record aircraft",
+  "nation": "Soviet Union",
+  "wikidata": "Q433095",
+  "source": "https://en.wikipedia.org/wiki/Tupolev_ANT-25"
+ },
+ "aircraft-tupolev-sb": {
+  "name": "Tupolev SB",
+  "kind": "Soviet twin engine bomber",
+  "nation": "Soviet Union",
+  "wikidata": "Q616241",
+  "source": "https://en.wikipedia.org/wiki/Tupolev_SB"
+ },
+ "aircraft-vickers-vespa": {
+  "name": "Vickers Vespa",
+  "kind": "British army cooperation biplane",
+  "nation": "Britain",
+  "wikidata": "Q3442954",
+  "source": "https://en.wikipedia.org/wiki/Vickers_Vespa"
+ },
+ "aircraft-vickers-vildebeest": {
+  "name": "Vickers Vildebeest",
+  "kind": "British biplane torpedo bomber",
+  "nation": "Britain",
+  "wikidata": "Q1852682",
+  "source": "https://en.wikipedia.org/wiki/Vickers_Vildebeest"
+ },
+ "aircraft-vickers-viscount": {
+  "name": "Vickers Viscount",
+  "kind": "British four engine turboprop airliner",
+  "nation": "Britain",
+  "wikidata": "Q1137051",
+  "source": "https://en.wikipedia.org/wiki/Vickers_Viscount"
+ },
+ "aircraft-vickers-wellington": {
+  "name": "Vickers Wellington",
+  "kind": "British twin engine bomber",
+  "nation": "Britain",
+  "wikidata": "Q850244",
+  "source": "https://en.wikipedia.org/wiki/Vickers_Wellington"
+ },
+ "aircraft-vought-f4u-corsair": {
+  "name": "Vought F4U Corsair",
+  "kind": "fighter aircraft",
+  "nation": "United States",
+  "source": "https://en.wikipedia.org/wiki/Vought_F4U_Corsair",
+  "wikidata": "Q465806",
+  "aka": [
+   "Corsair"
+  ]
+ },
+ "aircraft-vought-os2u-kingfisher": {
+  "name": "Vought OS2U Kingfisher",
+  "kind": "observation floatplane",
+  "nation": "US",
+  "wikidata": "Q1858886",
+  "source": "https://en.wikipedia.org/wiki/Vought_OS2U_Kingfisher"
+ },
+ "aircraft-waco-cg-4": {
+  "name": "Waco CG-4",
+  "kind": "U.S. military glider",
+  "nation": "US",
+  "wikidata": "Q1752671",
+  "source": "https://en.wikipedia.org/wiki/Waco_CG-4"
+ },
+ "aircraft-winnie-mae": {
+  "name": "Winnie Mae",
+  "kind": "Lockheed Vega flown by Wiley Post",
+  "nation": "US",
+  "wikidata": "Q31079534",
+  "source": "https://en.wikipedia.org/wiki/Winnie_Mae"
+ },
+ "aircraft-wright-flyer": {
+  "name": "Wright Flyer",
+  "kind": "first powered airplane",
+  "nation": "US",
+  "wikidata": "Q688605",
+  "source": "https://en.wikipedia.org/wiki/Wright_Flyer",
+  "aka": [
+   "1903 Wright Flyer"
+  ]
+ },
+ "aircraft-yakovlev-yak-1": {
+  "name": "Yakovlev Yak-1",
+  "kind": "Soviet fighter aircraft",
+  "nation": "Soviet Union",
+  "wikidata": "Q505673",
+  "source": "https://en.wikipedia.org/wiki/Yakovlev_Yak-1"
+ },
+ "aircraft-yakovlev-yak-15": {
+  "name": "Yakovlev Yak-15",
+  "kind": "Soviet jet fighter",
+  "nation": "Soviet Union",
+  "wikidata": "Q837734",
+  "source": "https://en.wikipedia.org/wiki/Yakovlev_Yak-15"
+ },
+ "aircraft-yankee-clipper-flying-boat": {
+  "name": "Yankee Clipper",
+  "kind": "Pan Am Boeing 314 flying boat",
+  "nation": "US",
+  "wikidata": "Q131198257",
+  "source": "https://en.wikipedia.org/wiki/Yankee_Clipper_(flying_boat)"
+ },
+ "aircraft-yokosuka-d4y-suisei": {
+  "name": "Yokosuka D4Y Suisei",
+  "kind": "carrier dive bomber",
+  "nation": "Japan",
+  "wikidata": "Q247036",
+  "source": "https://en.wikipedia.org/wiki/Yokosuka_D4Y_Suisei",
+  "aka": [
+   "Judy"
+  ]
+ },
+ "aircraft-yokosuka-e14y": {
+  "name": "Yokosuka E14Y",
+  "kind": "submarine launched floatplane",
+  "nation": "Japan",
+  "wikidata": "Q1778381",
+  "source": "https://en.wikipedia.org/wiki/Yokosuka_E14Y",
+  "aka": [
+   "Glen"
+  ]
+ },
+ "aircraft-yokosuka-k5y": {
+  "name": "Yokosuka K5Y",
+  "kind": "Japanese navy biplane trainer, used for kamikaze attacks in 1945",
+  "nation": "Japan",
+  "wikidata": "Q288324",
+  "source": "https://en.wikipedia.org/wiki/Yokosuka_K5Y"
+ },
+ "aircraft-yokosuka-mxy-7-ohka": {
+  "name": "Ohka",
+  "kind": "rocket powered suicide aircraft",
+  "nation": "Japan",
+  "source": "https://en.wikipedia.org/wiki/Yokosuka_MXY-7_Ohka",
+  "wikidata": "Q635990"
+ },
+ "aircraft-yokosuka-p1y-ginga": {
+  "name": "Yokosuka P1Y Ginga",
+  "kind": "Japanese navy twin engine bomber",
+  "nation": "Japan",
+  "wikidata": "Q391456",
+  "source": "https://en.wikipedia.org/wiki/Yokosuka_P1Y_Ginga",
+  "aka": [
+   "Frances"
+  ]
+ }
+}
