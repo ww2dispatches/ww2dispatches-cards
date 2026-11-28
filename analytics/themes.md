@@ -48,9 +48,11 @@ Any other nation is written by name (for example "Philippines", "Poland", "Canad
 
 ## lens (one)
 Whose side of the war the card is told from, for the Declass Campaigns decks (Campaigns Sides and Decks doc).
-us · commonwealth · soviet · other_allied · axis_germany · axis_japan · axis_italy · civilian_neutral
+us · commonwealth · soviet · other_allied · axis_germany · axis_japan · axis_italy · axis_romania · axis_hungary · vichy_france · civilian_neutral
 
 Pick the side the card's subject belongs to, not the side that wins: a U-boat crew's story is axis_germany, Kearny's sailors are us. British, Canadian, Australian, Indian, and other Commonwealth forces are commonwealth; Free French, Polish, Chinese, Dutch, and other Allied forces are other_allied. Civilians are civilian_neutral when the card is about them as civilians (the Blitz, Hamburg, a neutral country); a nation's home front program (rationing, war bonds, the draft) takes that nation's lens. Added 7 Nov 2026 by Brian's decision (Campaigns chat). The research run sets it on every new dispatch; the Campaigns backfill adds it to the older ones.
+
+axis_romania and axis_hungary are the Romanian and Hungarian governments and forces while each was in the Axis (Romania 23 November 1940 to 23 August 1944; Hungary from 20 November 1940, with the Debrecen government from December 1944 as other_allied); before and after, those countries keep the lens that fits. They count as Axis side, like the other axis_ values. vichy_france is the Vichy government, its leaders and its forces, July 1940 to August 1944; it is not an Axis value and goes in no deck by itself. Victims of persecution by any of them keep civilian_neutral. Added 27 Nov 2026 by Brian's decision (Index clean pass); for now used in the date bank only.
 
 ## video (Living Cards and Story Cards only)
 * **kind:** Living Card · Story Card

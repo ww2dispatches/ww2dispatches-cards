@@ -16,7 +16,7 @@ SERIES = {"Battle Lines", "Home Front", "Blueprint", "Statecraft"}
 THEATERS = {"Western Europe", "Eastern Front", "Mediterranean and North Africa", "Atlantic",
             "Pacific", "China Burma India", "home front", "worldwide"}
 LENSES = {"us", "commonwealth", "soviet", "other_allied", "axis_germany", "axis_japan",
-          "axis_italy", "civilian_neutral"}
+          "axis_italy", "axis_romania", "axis_hungary", "vichy_france", "civilian_neutral"}
 ROLES = {"subject", "involved", "mentioned"}
 DAYS = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 DASH = re.compile("[‒–—―]| - ")
