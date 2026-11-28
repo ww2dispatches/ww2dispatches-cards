@@ -4484,11 +4484,12 @@
   "source": "https://en.wikipedia.org/wiki/Bombing_of_Barcelona"
  },
  "op-bombing-of-belgrade-in-world-war-ii": {
-  "name": "Bombing of Belgrade in World War II",
+  "name": "Bombing of Belgrade (1941)",
   "kind": "air raids on Belgrade",
   "nation": "Yugoslavia",
-  "wikidata": "Q105468269",
-  "source": "https://en.wikipedia.org/wiki/Bombing_of_Belgrade_in_World_War_II"
+  "wikidata": "Q472100",
+  "source": "https://en.wikipedia.org/wiki/German_bombing_of_Belgrade",
+  "note": "The earlier source and Q number were a disambiguation page; every use is the German raid of April 1941, so it points to that article."
  },
  "op-bombing-of-berlin-in-world-war-ii": {
   "name": "Bombing of Berlin in World War II",
@@ -5771,14 +5772,14 @@
   "name": "Convoys HX 229/SC 122",
   "kind": "North Atlantic convoy battle, March 1943",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q2311064",
   "source": "https://en.wikipedia.org/wiki/Convoys_HX_229/SC_122"
  },
  "op-convoys-ons-18-on-202": {
   "name": "Convoys ONS 18 and ON 202",
   "kind": "North Atlantic convoy battle, September 1943",
   "nation": "Britain",
-  "wikidata": null,
+  "wikidata": "Q3689901",
   "source": "https://en.wikipedia.org/wiki/Convoys_ONS_18/ON_202",
   "aka": [
    "Convoys ONS 18/ON 202"
@@ -8898,8 +8899,8 @@
   "name": "Magnuson Act",
   "kind": "law",
   "nation": "US",
-  "wikidata": "Q134088287",
-  "source": "https://en.wikipedia.org/wiki/Magnuson_Act",
+  "wikidata": "Q505852",
+  "source": "https://en.wikipedia.org/wiki/Chinese_Exclusion_Repeal_Act",
   "aka": [
    "Chinese Exclusion Repeal Act"
   ]
@@ -9879,8 +9880,8 @@
   "name": "Odesa massacre",
   "kind": "Romanian massacre of Jews in Odessa, October 1941",
   "nation": "Romania",
-  "wikidata": "Q29652766",
-  "source": "https://en.wikipedia.org/wiki/Odesa_massacre",
+  "wikidata": "Q707508",
+  "source": "https://en.wikipedia.org/wiki/1941_Odessa_massacre",
   "aka": [
    "Odessa massacre"
   ]
@@ -10022,12 +10023,13 @@
   "name": "Operation Attila",
   "kind": "German plan to occupy Vichy France, Directive No. 19",
   "nation": "Germany",
-  "wikidata": "Q7096770",
+  "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Operation_Attila",
   "aka": [
    "Directive No. 19",
    "Undertaking Attila"
-  ]
+  ],
+  "note": "The Q number once given here was a Wikimedia disambiguation page, so it was cleared; no single item confirmed. Case Anton (Q691565) is the 1942 occupation that grew from it, not the 1940 plan."
  },
  "op-operation-avalanche": {
   "name": "Operation Avalanche",

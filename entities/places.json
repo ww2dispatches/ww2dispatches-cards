@@ -436,10 +436,10 @@
   "name": "Aprilia",
   "kind": "Italian model town on the Albano road, the Factory of the Anzio battles",
   "nation": "Italy",
-  "wikidata": "Q622062",
-  "source": "https://en.wikipedia.org/wiki/Aprilia",
-  "lat": null,
-  "lon": null,
+  "wikidata": "Q128052",
+  "source": "https://en.wikipedia.org/wiki/Aprilia,_Lazio",
+  "lat": 41.583333333,
+  "lon": 12.65,
   "aka": [
    "The Factory"
   ]
@@ -2354,10 +2354,10 @@
   "name": "Chambois",
   "kind": "village in Normandy",
   "nation": "France",
-  "wikidata": "Q25990740",
-  "source": "https://en.wikipedia.org/wiki/Chambois",
-  "lat": null,
-  "lon": null
+  "wikidata": "Q1048755",
+  "source": "https://en.wikipedia.org/wiki/Chambois,_Orne",
+  "lat": 48.805,
+  "lon": 0.105277777
  },
  "place-champs-elysees": {
   "name": "Champs-Elysees",
@@ -3587,8 +3587,8 @@
   "nation": "Iran",
   "source": "https://en.wikipedia.org/wiki/Embassy_of_Russia,_Tehran",
   "wikidata": "Q109932629",
-  "lat": null,
-  "lon": null,
+  "lat": 35.69861,
+  "lon": 51.41417,
   "aka": [
    "Soviet Embassy"
   ]
@@ -3859,10 +3859,10 @@
   "name": "Fort Belvedere",
   "kind": "country house in Windsor Great Park",
   "nation": "Britain",
-  "wikidata": "Q5470797",
-  "source": "https://en.wikipedia.org/wiki/Fort_Belvedere",
-  "lat": null,
-  "lon": null
+  "wikidata": "Q1438460",
+  "source": "https://en.wikipedia.org/wiki/Fort_Belvedere,_Surrey",
+  "lat": 51.404444444,
+  "lon": -0.612111111
  },
  "place-fort-de-koenigsmacker": {
   "name": "Fort Koenigsmacker",
@@ -3988,10 +3988,10 @@
   "name": "Fort Stanton",
   "kind": "fort and internment camp, New Mexico",
   "nation": "US",
-  "wikidata": "Q135510549",
-  "source": "https://en.wikipedia.org/wiki/Fort_Stanton",
-  "lat": null,
-  "lon": null
+  "wikidata": "Q5472089",
+  "source": "https://en.wikipedia.org/wiki/Fort_Stanton_(New_Mexico)",
+  "lat": 33.496083,
+  "lon": -105.5239
  },
  "place-fort-stevens-oregon": {
   "name": "Fort Stevens (Oregon)",
@@ -5659,13 +5659,14 @@
   "name": "Isley Field, Saipan",
   "kind": "airfield",
   "nation": "Northern Mariana Islands",
-  "wikidata": null,
-  "source": "https://en.wikipedia.org/wiki/Isely_Field",
-  "lat": null,
-  "lon": null,
+  "wikidata": "Q1257667",
+  "source": "https://en.wikipedia.org/wiki/Saipan_International_Airport",
+  "lat": 15.118888888,
+  "lon": 145.729444444,
   "aka": [
    "Isely Field"
-  ]
+  ],
+  "note": "Isley Field is today Saipan International Airport; Q number and coordinates are that airport's."
  },
  "place-islington": {
   "name": "Islington",
@@ -6578,10 +6579,10 @@
   "name": "Kotelnikovo",
   "kind": "town southwest of Stalingrad",
   "nation": "Soviet Union",
-  "wikidata": "Q2856384",
-  "source": "https://en.wikipedia.org/wiki/Kotelnikovo",
-  "lat": null,
-  "lon": null
+  "wikidata": "Q155426",
+  "source": "https://en.wikipedia.org/wiki/Kotelnikovo,_Volgograd_Oblast",
+  "lat": 47.633333333,
+  "lon": 43.133333333
  },
  "place-kovno-ghetto": {
   "name": "Kovno Ghetto",
@@ -8824,10 +8825,11 @@
   "name": "Nakajima Musashino plant",
   "kind": "aircraft engine factory",
   "nation": "Japan",
-  "wikidata": "Q1476227",
+  "wikidata": null,
   "source": "https://en.wikipedia.org/wiki/Nakajima_Aircraft_Company",
   "lat": null,
-  "lon": null
+  "lon": null,
+  "note": "The Q number once given here (Q1476227) is the Nakajima company, not the plant, so it was cleared; the plant has no Wikidata item confirmed."
  },
  "place-musgrave-harbour": {
   "name": "Musgrave Harbour",
@@ -9247,13 +9249,13 @@
   "lon": 22.1333
  },
  "place-nordhausen": {
-  "lat": null,
-  "lon": null,
+  "lat": 51.505,
+  "lon": 10.791111111,
   "name": "Nordhausen",
   "kind": "town in Thuringia",
   "nation": "Germany",
-  "wikidata": "Q355479",
-  "source": "https://en.wikipedia.org/wiki/Nordhausen"
+  "wikidata": "Q7033",
+  "source": "https://en.wikipedia.org/wiki/Nordhausen,_Thuringia"
  },
  "place-north-american-aerospace-museum": {
   "name": "Evergreen Aviation and Space Museum",
@@ -10055,10 +10057,11 @@
   "name": "Municipal Stadium, Philadelphia",
   "kind": "stadium",
   "nation": "US",
-  "wikidata": null,
+  "wikidata": "Q2390739",
   "source": "https://en.wikipedia.org/wiki/John_F._Kennedy_Stadium_(Philadelphia)",
-  "lat": null,
-  "lon": null
+  "lat": 39.9014,
+  "lon": -75.1719,
+  "note": "Renamed John F. Kennedy Stadium in 1964."
  },
  "place-philadelphia-naval-shipyard": {
   "name": "Philadelphia Naval Shipyard",
@@ -11853,10 +11856,10 @@
   "name": "Shubert Theatre",
   "kind": "Broadway theatre in New York",
   "nation": "US",
-  "wikidata": "Q7504543",
-  "source": "https://en.wikipedia.org/wiki/Shubert_Theatre",
-  "lat": null,
-  "lon": null
+  "wikidata": "Q1797756",
+  "source": "https://en.wikipedia.org/wiki/Shubert_Theatre_(Broadway)",
+  "lat": 40.758055555,
+  "lon": -73.987222222
  },
  "place-shumshu": {
   "name": "Shumshu",
@@ -13458,10 +13461,10 @@
   "name": "Tulle",
   "kind": "town, Correze",
   "nation": "France",
-  "wikidata": "Q4467425",
-  "source": "https://en.wikipedia.org/wiki/Tulle",
-  "lat": null,
-  "lon": null
+  "wikidata": "Q157713",
+  "source": "https://en.wikipedia.org/wiki/Tulle,_Corr%C3%A8ze",
+  "lat": 45.267777777,
+  "lon": 1.770555555
  },
  "place-turin": {
   "name": "Turin",
