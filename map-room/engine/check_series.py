@@ -9,6 +9,17 @@ SHORT = re.compile(r'\b(Div|Inf|Pz|Abn|Armd|Arm|Bn|Regt|Rgt|Bde|CCA|CCB|CCR|Co|B
 TYPES = {'infantry', 'armor', 'artillery', 'airborne', 'fighter', 'medium_bomber', 'heavy_bomber', 'transport',
          'carrier', 'battleship', 'destroyer', 'submarine', 'landing_craft'}
 AIR = {'fighter', 'medium_bomber', 'heavy_bomber', 'transport'}
+# the strip lines must fit on one line (Brian, 28 Nov 2026): ov.html shrinks them from 50 px to 40 px, then draws them
+# 40 px in from each side of the 1080 px frame, so at 40 px Oswald Bold, letter spacing 0, they get 1000 px
+STRIP_W = 1000
+DEFAULT_TONIGHT = 'The line tonight. It moves again tomorrow.'      # ov_shoot.py's default closing line
+_strip_font = None
+def strip_width(text):
+    global _strip_font
+    if _strip_font is None:
+        from PIL import ImageFont
+        _strip_font = ImageFont.truetype(os.path.join(HERE, '..', 'fonts', 'oswald700.ttf'), 40)
+    return _strip_font.getlength(text)
 
 def roster_errors(s):
     out = []
@@ -117,6 +128,9 @@ def check(s):
             sourced(f"set {st.get('unit')}", st.get('sources'), False, own_only=(i == 0))
             if st.get('unit') in s.units and s.units[st['unit']]['type'] in AIR: E(f"set {st['unit']}: aircraft are not kept on the table; they appear only on their air_mission day")
         if i > 0 and mr.get('lineStart'): E('lineStart belongs to day 1 only')
+        for what, text in (('subtitle (the opening strip)', d['rec'].get('subtitle') or ''), ('tonight (the closing strip)', mr.get('tonight') or DEFAULT_TONIGHT)):
+            w = strip_width(text)
+            if w > STRIP_W: E(f'{what} is {w:.0f} px wide at 40 px Oswald Bold; it must fit in {STRIP_W} px on one line: "{text}"')
         # sides, spacing, the table
         for when, true, shown, l, pk in (('morning', d['am_true'], d['am'], d['lineAM'], d['pocketsAM']), ('night', d['pm_true'], d['pm'], line, d['pockets'])):
             if not l: continue

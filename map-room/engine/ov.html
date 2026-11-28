@@ -40,6 +40,9 @@ async function go(){
   const sub=q.get("sub");
   for(;fs>40*s;fs-=1*s){ctx.font=`700 ${fs}px Oswald`; if(ctx.measureText(sub).width<=innerW) break;}
   ctx.font=`700 ${fs}px Oswald`;
+  if(ctx.measureText(sub).width>innerW+0.5){   // never clip silently: paint the error frame ov_shoot.py stops on
+    ctx.fillStyle="#ff00ff"; ctx.fillRect(0,0,W,H); ctx.fillStyle="#000"; ctx.font="700 60px Oswald";
+    ctx.fillText("STRIP TOO WIDE",80,960); document.title="done"; return;}
   const stripH=(24+fs/s*1.05+12+26+22)*s, sy=H-lift-stripH;
   paper(ctx,0,sy,W,stripH,s); ctx.fillStyle=INK; ctx.fillText(sub,padX,sy+24*s+fs*.86);
   const ly=sy+stripH-22*s-4*s; ctx.font=`400 ${26*s}px "Special Elite"`; ctx.fillText(q.get("bl"),padX,ly);

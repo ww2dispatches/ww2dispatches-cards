@@ -24,6 +24,9 @@ def shoot(out, **q):
                         '--allow-file-access-from-files', '--default-background-color=00000000', '--force-device-scale-factor=1',
                         '--window-size=1080,1920', '--virtual-time-budget=4000', f'--screenshot={out}', url],
                        check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    px = cv2.imread(out, cv2.IMREAD_UNCHANGED)[0, 0]              # ov.html paints the frame magenta when a strip won't fit
+    if len(px) >= 3 and tuple(int(v) for v in px[:3]) == (255, 0, 255):
+        os.remove(out); raise SystemExit(f'{out}: the strip text is wider than the frame at 40 px; shorten it: "{q.get("sub")}"')
     print('wrote', out)
 
 tab = dict(cap='CAMPAIGN SERIES · THE MAP ROOM', name=NAME.upper(), day=f'DAY {N} OF {OF}')
